@@ -2,6 +2,7 @@
    Inserted into template.html before the "share code" block by build.py.
    Uses: S, save, $, esc, M, agg, efficiency, ENTRY_H, LEVELS, levelOfHours, CONV, STUDY_FACTOR, pct. */
 const SCHOOL_OPTS = __SCHOOLS__;
+const EXAMS = __EXAMS__;
 const LANG_VI = {Anh:'tiếng Anh',Nga:'tiếng Nga',Phap:'tiếng Pháp',Trung:'tiếng Trung',Duc:'tiếng Đức',Nhat:'tiếng Nhật',Han:'tiếng Hàn'};
 const LANG_NAME = {Anh:'Anh',Nga:'Nga',Phap:'Pháp',Trung:'Trung',Duc:'Đức',Nhat:'Nhật',Han:'Hàn'};
 /* Chuyên paper score ↔ guided hours (inferred from teacher/centre ratings of paper difficulty; ±half a band). */
@@ -43,42 +44,54 @@ function schoolInputs(){
     toan:val(P.toan,8), van:val(P.van,8), toanSet:P.toan!=null&&P.toan!=='', vanSet:P.van!=null&&P.van!=='',
     achSo, achCnn, acSo:val(P.acSo,Math.min(10,achSo+2.5)), acCnn:val(P.acCnn,Math.min(9.5,achCnn))};
 }
-/* total, cut-off spread and chance for one option */
-function evalOption(o,I){
+/* total, cut-off spread and chance for one option; bump = extra points needed (NV2 rule) */
+function evalOption(o,I,bump){
+  bump=bump||0;
   const mean=o.cut.reduce((a,b)=>a+b,0)/o.cut.length;
-  const sdCut=o.cut.length>2?Math.sqrt(o.cut.reduce((s,c)=>s+(c-mean)*(c-mean),0)/(o.cut.length-1)):o.sdDefault;
+  const sample=o.cut.length>1?Math.sqrt(o.cut.reduce((s,c)=>s+(c-mean)*(c-mean),0)/(o.cut.length-1)):0;
+  const sdCut=o.cut.length>2?sample:Math.max(o.sdDefault||1.3,sample);
   let total,sdInd,acSlope,ach,ac;
   if(o.f==='so'){ach=I.achSo;ac=I.acSo;total=I.toan+I.van+ac+2*ach;sdInd=1.5;acSlope=ac<10?1:0}
   else if(o.f==='cnn'){ach=I.achCnn;ac=I.acCnn;total=I.toan+I.van+ac+2*ach;sdInd=1.5;acSlope=ac<9.5?1:0}
   else{ach=I.achSo;ac=I.acSo;total=2*ach+ac;sdInd=1.3;acSlope=ac<10?1:0}
   const sdProj=(2+acSlope)*I.E.sd;
   const sd=Math.sqrt(sdCut*sdCut+sdInd*sdInd+sdProj*sdProj);
-  const p=phi((total-mean)/sd);
-  const need80=mean+0.84*sd;
+  const bar=mean+bump;
+  const p=phi((total-bar)/sd);
+  const need80=bar+0.84*sd;
   const tvNeed=o.f==='sp'?null:need80-(ac+2*ach);
   const cls=p>=0.8?'good':p>=0.5?'hi':p>=0.2?'warn':'bad';
   const lab=p>=0.8?'An toàn':p>=0.5?'Vừa sức':p>=0.2?'Thử thách':'Còn xa';
-  return {o,mean,sdCut,total,p,need80,tvNeed,cls,lab,max:o.f==='sp'?30:50};
+  return {o,mean,sdCut,total,p,need80,tvNeed,cls,lab,bump,max:o.f==='sp'?30:50};
 }
-/* exams are separate events; within an exam the student may list up to o.nv options */
-function portfolio(rows){
-  const byExam={};rows.forEach(r=>{(byExam[r.o.exam]=byExam[r.o.exam]||[]).push(r)});
+/* One suggestion per exam. The three exams are on different days, so a student can sit all of them.
+   Within one exam every option uses the same scores: the chance of at least one place = the best single chance. */
+function portfolio(rows,I,langs){
+  const rank=r=>{const i=langs.indexOf(r.o.lang);return i<0?99:i};
+  const pickBest=list=>{const ok=list.filter(r=>r.p>=0.5).sort((a,b)=>rank(a)-rank(b)||b.mean-a.mean);return ok[0]||list.slice().sort((a,b)=>b.p-a.p)[0]};
   const plan=[];
-  Object.entries(byExam).forEach(([ex,list])=>{
-    const nv=list[0].o.nv||1;
-    const sorted=list.slice().sort((a,b)=>b.p-a.p);
-    // aim: the most selective option the child still has ≥50% on, then the safest as back-up
-    const ambitious=list.filter(r=>r.p>=0.5).sort((a,b)=>a.mean===b.mean?b.p-a.p:b.mean-a.mean)[0]||sorted[0];
-    const picks=[ambitious];
-    if(nv>1){const rest=list.filter(r=>r!==ambitious);const safe=rest.filter(r=>r.p>=0.8).sort((a,b)=>b.mean-a.mean)[0]||rest.sort((a,b)=>b.p-a.p)[0];if(safe&&safe.p>ambitious.p)picks.push(safe)}
-    // within one exam every option uses the same scores, so the chance of getting at least one = the best single chance
-    plan.push({exam:ex,label:list[0].o.examLabel,picks,p:Math.max(...picks.map(r=>r.p))});
+  ['so','sp','cnn'].forEach(ex=>{
+    const list=rows.filter(r=>r.o.exam===ex);if(!list.length)return;
+    let picks=[];
+    if(ex==='so'){
+      const anh=list.filter(r=>r.o.group==='nv');
+      const nv1=pickBest(anh);if(!nv1)return;picks.push(Object.assign({},nv1,{role:'Nguyện vọng 1'}));
+      // NV2 is a back-up: only schools with a lower cut-off than NV1, judged with the extra 1 point
+      const others=anh.filter(r=>r.o.sk!==nv1.o.sk&&r.mean<nv1.mean).map(r=>evalOption(r.o,I,1.0));
+      const nv2=others.filter(r=>r.p>=0.8).sort((a,b)=>b.mean-a.mean)[0]||others.sort((a,b)=>b.p-a.p)[0];
+      if(nv2)picks.push(Object.assign({},nv2,{role:'Nguyện vọng 2 (phải hơn điểm chuẩn 1 điểm)'}));
+      const schools=picks.map(r=>r.o.sk);
+      list.filter(r=>r.o.group==='extra'&&schools.includes(r.o.sk)).forEach(r=>picks.push(Object.assign({},r,{role:'Đăng ký thêm, xét bằng điểm chuyên Anh'})));
+    }else{
+      const b=pickBest(list);if(b)picks.push(Object.assign({},b,{role:'Lớp đăng ký'}));
+    }
+    plan.push({exam:ex,label:(EXAMS[ex]||{}).label||ex,date:(EXAMS[ex]||{}).date||'',picks,p:Math.max(...picks.map(r=>r.p))});
   });
-  plan.sort((a,b)=>b.p-a.p);
-  // add exams until the chance of at least one place reaches 90% (exams are correlated, so this is optimistic)
-  const chosen=[];let miss=1;
-  for(const e of plan){if(e.p<0.05)continue;chosen.push(e);miss*=(1-e.p);if(1-miss>=0.9&&chosen.length>=2)break}
-  return {plan,chosen,pAny:1-miss};
+  // the exams are on different days: sit every exam where the best class gives a real chance (≥20%)
+  const chosen=plan.filter(e=>e.p>=0.2);
+  chosen.forEach(e=>{e.tier=e.p>=0.5?'Nên thi':'Có thể thử'});
+  const pAny=1-chosen.reduce((m,e)=>m*(1-e.p),1);
+  return {plan,chosen,pAny};
 }
 function vSchool(){
   S.school=Object.assign(blankSchool(),S.school||{});const P=S.school;
@@ -98,8 +111,8 @@ function vSchool(){
    <div class="langs"><p class="small"><b>Em sẵn sàng học thêm ngoại ngữ nào ở cấp 3?</b> Các lớp tiếng Nga, Pháp, Trung, Đức, Nhật, Hàn ở nhiều trường nhận thí sinh thi môn chuyên bằng tiếng Anh. Học sinh đỗ sẽ học ngoại ngữ đó làm môn chuyên suốt 3 năm, nên chỉ đánh dấu khi em thật sự muốn.</p>
    ${langs.map(l=>`<label class="chk"><input type="checkbox" value="${l}" ${P.langs.includes(l)?'checked':''} ${l==='Anh'?'disabled':''}> ${LANG_NAME[l]}</label>`).join('')}</div>
   </div>
-  <div class="card"><h3>2. Khả năng đỗ từng lớp</h3><div class="tbl-wrap"><table class="stable"><thead><tr><th>Trường · lớp</th><th>Điểm dự kiến của em</th><th>Điểm chuẩn các năm</th><th>Khả năng</th><th>Toán + Văn cần để an toàn</th></tr></thead><tbody id="sRows"></tbody></table></div>
-   <p class="small muted">An toàn: khoảng 80% trở lên · Vừa sức: 50–80% · Thử thách: 20–50% · Còn xa: dưới 20%. "Toán + Văn cần để an toàn" là tổng hai môn để có khoảng 80% khả năng đỗ, với điểm Anh như trên.</p></div>
+  <div class="card"><h3>2. Khả năng đỗ từng lớp</h3><div class="slist" id="sRows"></div>
+   <p class="small muted">An toàn: khoảng 80% trở lên · Vừa sức: 50–80% · Thử thách: 20–50% · Còn xa: dưới 20%. "Toán + Văn cần" là tổng hai môn để có khoảng 80% khả năng đỗ, với điểm Anh như trên.</p></div>
   <div id="sPlan"></div>
   <details class="card"><summary>Cách trang tính</summary><div class="small" id="sHow"></div></details>
   </section>`;
@@ -119,17 +132,18 @@ function vSchool(){
   const drawRows=()=>{
     const I=schoolInputs();
     const rows=SCHOOL_OPTS.filter(o=>P.langs.includes(o.lang)).map(o=>evalOption(o,I)).sort((a,b)=>b.p-a.p);
-    $('#sRows').innerHTML=rows.map(r=>`<tr><td><b>${esc(r.o.school)}</b><br><span class="small">Lớp ${esc(r.o.cls)}${r.o.lang!=='Anh'?' · thi môn chuyên bằng tiếng Anh':''}</span>${r.o.note?`<br><span class="small muted">${esc(r.o.note)}</span>`:''}</td><td class="num">${fmtN(r1(r.total))}<span class="muted">/${r.max}</span></td><td class="num">${r.o.cut.map(fmtN).join(' · ')}<br><span class="small muted">trung bình ${fmtN(r2(r.mean))}</span></td><td><span class="pill ${r.cls}">${r.lab}</span><br><span class="small muted">khoảng ${Math.round(r.p*100)}%</span></td><td class="num">${r.tvNeed==null?'<span class="small muted">không xét Toán, Văn</span>':r.tvNeed>20?'<span class="small">trên 20: chưa đủ dù Toán, Văn tối đa</span>':fmtN(r1(Math.max(0,r.tvNeed)))+'<span class="muted">/20</span>'}</td></tr>`).join('')||'<tr><td colspan="5">Chưa có lớp nào phù hợp với lựa chọn ngoại ngữ.</td></tr>';
-    const PF=portfolio(rows);
+    $('#sRows').innerHTML=rows.map(r=>{const lo=Math.min(...r.o.cut),hi=Math.max(...r.o.cut);return `<div class="srow"><div class="sp"><span class="pill ${r.cls}">${r.lab}</span><span class="pc">${Math.round(r.p*100)}%</span></div><div><b>${esc(r.o.school)}</b> <span class="small">· lớp ${esc(r.o.cls)}${r.o.lang!=='Anh'&&r.o.f==='so'?' (xét bằng điểm chuyên Anh)':''}</span>
+      <div class="sfacts"><span>Điểm dự kiến của em <b>${fmtN(r1(r.total))}</b>/${r.max}</span><span>Điểm chuẩn trung bình <b>${fmtN(r2(r.mean))}</b> <span class="muted">(${r.o.years[0]}–${r.o.years[r.o.years.length-1]}: ${fmtN(lo)}–${fmtN(hi)})</span></span><span>${r.tvNeed==null?'Không xét Toán, Văn':r.tvNeed>20?'Toán + Văn: chưa đủ dù đạt tối đa':'Toán + Văn cần <b>'+fmtN(r1(Math.max(0,r.tvNeed)))+'</b>/20'}</span></div>${r.o.note?`<div class="small muted">${esc(r.o.note)}</div>`:''}</div></div>`}).join('')||'<p>Chưa có lớp nào phù hợp với lựa chọn ngoại ngữ.</p>';
+    const PF=portfolio(rows,I,P.langs);
     const n=PF.chosen.length;
-    const lines=PF.chosen.map(e=>`<li><b>${esc(e.label)}</b>: ${e.picks.map((r,i)=>`${e.picks.length>1?'nguyện vọng '+(i+1)+' ':''}${esc(r.o.school)} – lớp ${esc(r.o.cls)} (${r.lab.toLowerCase()}, khoảng ${Math.round(r.p*100)}%)`).join('; ')}</li>`).join('');
+    const lines=PF.chosen.map(e=>`<li><span class="pill ${e.tier==='Nên thi'?'good':'warn'}">${e.tier}</span> <b>${esc(e.label)}</b>${e.date?` <span class="small">(${esc(e.date)})</span>`:''}<ul>${e.picks.map(r=>`<li>${esc(r.role)}: ${esc(r.o.school)} – lớp ${esc(r.o.cls)} · ${r.lab.toLowerCase()}, khoảng ${Math.round(r.p*100)}%</li>`).join('')}</ul></li>`).join('');
     const pAny=Math.round(PF.pAny*100);
     const cls=PF.pAny>=0.85?'good':PF.pAny>=0.6?'warn':'bad';
     const tv=I.toanSet&&I.vanSet?'':' Điểm Toán, Văn đang là mốc gợi ý; khi bố mẹ nhập điểm thật, gợi ý sẽ thay đổi.';
     $('#sPlan').innerHTML=`<div class="verdict ${cls}"><p class="eyebrow">Gợi ý đăng ký</p><h3>${n?`Nên dự ${n} kỳ thi`:'Chưa có kỳ thi nào đủ khả năng'}</h3>
-     ${n?`<ul>${lines}</ul><p>Với bộ lựa chọn này, khả năng đỗ ít nhất một lớp chuyên khoảng <b>${pAny}%</b>. Các kỳ thi có liên quan đến nhau (em làm tốt ở kỳ này thường cũng làm tốt ở kỳ khác), nên con số thật có thể thấp hơn một chút.</p>`:'<p>Với điểm hiện tại, chưa lớp nào có trên 5% khả năng. Hãy xem cột "Toán + Văn cần để an toàn" và tab Lộ trình để biết cần tăng phần nào.</p>'}
-     <p class="small">Cách chọn: mỗi kỳ thi lấy lớp khó nhất mà em vẫn có từ 50% khả năng; nếu kỳ thi cho đăng ký 2 nguyện vọng thì nguyện vọng 2 là lớp khó nhất mà em có từ 80% khả năng. Dừng thêm kỳ thi khi khả năng đỗ ít nhất một lớp đạt khoảng 90%.${tv}</p></div>`;
-    $('#sHow').innerHTML=`<p>Điểm xét tuyển: các trường của Sở Hà Nội và Chuyên Ngoại ngữ tính Toán + Văn + Anh chung + Anh chuyên × 2 (thang 50). Chuyên Sư phạm từ 2025 tính Anh chuyên × 2 + Anh chung (thang 30).</p><p>Khả năng đỗ so điểm dự kiến của em với điểm chuẩn trung bình các năm, có tính ba loại dao động: điểm chuẩn thay đổi theo năm, điểm của em thay đổi theo ngày thi (khoảng 1,5 điểm tổng), và sai số của dự báo trình độ.</p><p>Điểm Anh chuyên được quy từ trình độ: đề Sở khoảng 6 điểm ở B2, 7 ở B2+, 8 ở C1; đề Chuyên Ngoại ngữ khoảng 6 ở B2, 7 ở B2+/C1, 8 ở C1. Anh chung đề Sở giả định cao hơn Anh chuyên 2,5 điểm (tối đa 10), đề Chuyên Ngoại ngữ bằng Anh chuyên. Đây là các suy luận từ nhận định độ khó đề, sai số khoảng nửa bậc.</p><p>Điểm chuẩn lấy từ báo chí và trang tổng hợp tuyển sinh; năm sau có thể khác.</p>`;
+     ${n?`<ul>${lines}</ul><p>Với bộ lựa chọn này, khả năng đỗ ít nhất một lớp chuyên khoảng <b>${pAny}%</b>. Các kỳ thi có liên quan đến nhau (em làm tốt ở kỳ này thường cũng làm tốt ở kỳ khác), nên con số thật có thể thấp hơn một chút.</p>${PF.pAny<0.85?'<p><b>Khả năng này chưa đủ chắc.</b> Cả nhà nên đăng ký thêm nguyện vọng trường THPT không chuyên, và xem cột "Toán + Văn cần để an toàn" để biết cần tăng phần nào.</p>':''}`:'<p>Với điểm hiện tại, chưa lớp nào có trên 5% khả năng. Hãy xem cột "Toán + Văn cần để an toàn" và tab Lộ trình để biết cần tăng phần nào.</p>'}
+     <p class="small">Cách chọn: ở mỗi kỳ thi, trang ưu tiên lớp tiếng Anh, rồi đến các ngoại ngữ em đã đánh dấu, và chọn lớp có điểm chuẩn cao nhất mà em vẫn có từ 50% khả năng. Ở kỳ thi của Sở, nguyện vọng 2 là trường dự phòng: điểm chuẩn thấp hơn nguyện vọng 1, và là trường cao nhất trong số đó mà em vẫn có từ 80% khả năng sau khi cộng thêm 1 điểm theo quy định. Ba kỳ thi diễn ra vào các ngày khác nhau, nên em dự được cả ba. Trang gợi ý dự mọi kỳ thi mà em có từ 20% khả năng trở lên: từ 50% là \"nên thi\", 20–50% là \"có thể thử\". Nếu khả năng đỗ ít nhất một lớp dưới 85%, cả nhà nên chuẩn bị thêm nguyện vọng trường THPT không chuyên.${tv}</p></div>`;
+    $('#sHow').innerHTML=`<p>Điểm xét tuyển: các trường của Sở Hà Nội và Chuyên Ngoại ngữ tính Toán + Văn + Anh chung + Anh chuyên × 2 (thang 50). Chuyên Sư phạm từ 2025 tính Anh chuyên × 2 + Anh chung (thang 30).</p><p>Khả năng đỗ so điểm dự kiến của em với điểm chuẩn trung bình các năm, có tính ba loại dao động: điểm chuẩn thay đổi theo năm, điểm của em thay đổi theo ngày thi (khoảng 1,5 điểm tổng), và sai số của dự báo trình độ.</p><p>Điểm Anh chuyên được quy từ trình độ: đề Sở khoảng 6 điểm ở B2, 7 ở B2+, 8 ở C1; đề Chuyên Ngoại ngữ khoảng 6 ở B2, 7 ở B2+/C1, 8 ở C1. Anh chung đề Sở giả định cao hơn Anh chuyên 2,5 điểm (tối đa 10), đề Chuyên Ngoại ngữ bằng Anh chuyên. Đây là các suy luận từ nhận định độ khó đề, sai số khoảng nửa bậc.</p><p>Lớp Trung, Nga ở Amsterdam, Chu Văn An, Nguyễn Huệ và lớp Pháp ở Nguyễn Huệ xét bằng điểm chuyên Anh khi em đăng ký thêm. Ở Chuyên Ngoại ngữ, môn chuyên thi bằng tiếng Anh dùng được cho mọi lớp. Các lớp Pháp, Nhật của Amsterdam và Chu Văn An, lớp Hàn của Chu Văn An bắt buộc thi môn chuyên bằng chính ngoại ngữ đó, nên trang chưa tính.</p><p>Năm 2026 Sở Hà Nội có thêm vòng sơ tuyển; bố mẹ cần đọc quy chế năm con thi để biết điều kiện cụ thể. Ngày nhận hồ sơ nhập học của các trường thường trùng nhau, nên cả nhà nên quyết thứ tự ưu tiên trước khi có điểm.</p><p>Điểm chuẩn lấy từ báo chí và trang tổng hợp tuyển sinh, giai đoạn 2022–2026; năm sau có thể khác.</p>`;
   };
   draw();
   $('#sGrade').onchange=e=>{P.grade=+e.target.value;save();$('#sEng').dataset.on='';draw()};
