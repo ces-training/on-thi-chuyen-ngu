@@ -83,7 +83,7 @@ function applyAiResult(u){
   S.days[n]=Object.assign(S.days[n]||{},{paper:{ticks,correct:u.score,total:u.total,by,writing:{},self:(prev&&prev.self)||{},at:Date.parse(u.ts)||Date.now(),source:'ai',uploadId:u.id,updated:u.updated,wscore:res.writing?res.writing.score:null}});
   save();
 }
-function updateBadge(){const b=document.querySelector('#tabs button[data-view="share"]');if(!b)return;b.innerHTML='Trao đổi với cô'+(CLOUD.unseen?` <span class="badge">${CLOUD.unseen}</span>`:'')}
+function updateBadge(){const b=document.querySelector('#tabs button[data-view="share"] .tb');if(!b)return;b.innerHTML=CLOUD.unseen?`<span class="badge">${CLOUD.unseen}</span>`:''}
 
 /* ---- chụp và gửi bài giấy ---- */
 function compressImage(file){
@@ -95,7 +95,7 @@ function compressImage(file){
 }
 function uploadCardHTML(n){
   const ups=CLOUD.uploads.filter(u=>u.day===n).sort((a,b)=>a.ts<b.ts?1:-1);const last=ups[0];
-  return `<div class="up-box"><h3>Bước 3 · Chụp bài giấy để được chấm</h3>
+  return `<div class="up-box"><h3 class="ih">${em('camera-with-flash')}Bước 3 · Chụp bài giấy để được chấm</h3>
    <p class="small">Chụp rõ từng trang bài làm buổi ${n} (tối đa 6 ảnh), đủ sáng, thẳng trang, không che chữ. Chỉ chụp trang bài làm. Máy sẽ đọc bài, chấm, nhận xét và gửi kết quả cho cô.</p>
    <div class="row"><label class="btn" for="upFiles">Chọn hoặc chụp ảnh</label><input type="file" id="upFiles" accept="image/*" capture="environment" multiple hidden><button class="btn hi" id="upSend" disabled>Gửi chấm</button><span class="small" id="upMsg"></span></div>
    <div class="thumbs" id="upThumbs"></div>

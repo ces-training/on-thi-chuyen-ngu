@@ -7,55 +7,159 @@
 <meta name="description" content="Công thức xét tuyển, điểm chuẩn 2024–2026, bảng điểm học sinh đỗ, kinh nghiệm và tài liệu ôn thi vào các lớp chuyên ngữ ở Hà Nội.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
-:root{--bg:#f3f6f8;--surface:#fff;--surface2:#e9eff3;--ink:#11314a;--muted:#566c7e;--line:#d3dde5;--hi:#ffc83d;--hi-soft:#fff1c7;--hi-ink:#4a3500;--accent:#16618b;--accent-soft:#dcebf4;--good:#1b8556;--good-bg:#e1f3e9;--warn:#a86b10;--warn-bg:#fcefd6}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a24;--surface:#152634;--surface2:#1c3142;--ink:#e4edf4;--muted:#9db0c0;--line:#2a4256;--hi:#ffcf55;--hi-soft:#3a3115;--hi-ink:#ffe7a6;--accent:#6fb6e0;--accent-soft:#1d3a50;--good:#5cc993;--good-bg:#16352a;--warn:#f0b65a;--warn-bg:#3a2c13}}
-:root[data-theme="dark"]{--bg:#0e1a24;--surface:#152634;--surface2:#1c3142;--ink:#e4edf4;--muted:#9db0c0;--line:#2a4256;--hi:#ffcf55;--hi-soft:#3a3115;--hi-ink:#ffe7a6;--accent:#6fb6e0;--accent-soft:#1d3a50;--good:#5cc993;--good-bg:#16352a;--warn:#f0b65a;--warn-bg:#3a2c13}
+/*BRAND*/
+/* Bộ nhận diện dùng chung cho mọi trang. Sửa ở đây rồi chạy build.py; không sửa trực tiếp trong trang đã dựng.
+   Ý tưởng: sổ ô li xanh + huy hiệu vàng. Nền giấy kẻ ô, thanh đầu trang màu xanh đặc vụ, nút bấm nổi khối như phím,
+   ô tiến độ 3 màu (chưa làm / làm dở / xong) luôn đi kèm chữ hoặc biểu tượng, không dùng màu đơn thuần. */
+:root{
+  --paper:#F2F5FC; --grid:#E1E7F4; --surface:#FFFFFF; --surface2:#EEF1FA;
+  --ink:#151521; --ink-2:#4A4C53; --line:#D6DCEA; --line-strong:#B7BFD5;
+  --agent:#2638C4; --agent-deep:#18248A; --agent-tint:#E8ECFF; --on-agent:#FFFFFF;
+  --bar:#2638C4; --bar-ink:#FFFFFF; --bar-ink-2:rgba(255,255,255,.8); --bar-on:#FFFFFF; --bar-on-ink:#2638C4;
+  --gold:#FCC539; --gold-deep:#C9961A; --gold-tint:#FFF4D1; --gold-ink:#3D2E00;
+  --signal:#F8551A; --signal-text:#C8481A; --signal-tint:#FEE9E5;
+  --good:#3C6D4A; --good-bg:#E3F7E3; --good-edge:#579F6C;
+  --bad:#BE2626; --bad-bg:#FFEBEB;
+  --warn:#8A5A00; --warn-bg:#FFF3D1;
+  --t-none:#ECEDF1; --t-none-edge:#A3A5AE; --t-part:#FEE7AD; --t-part-edge:#E0A200; --t-done:#BCEBBB; --t-done-edge:#579F6C;
+  --f-display:"Bricolage Grotesque","Plus Jakarta Sans",system-ui,sans-serif;
+  --f-body:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r-card:14px; --r-ctl:10px;
+  /* tên cũ, giữ để mã cũ còn chạy */
+  --bg:var(--paper); --muted:var(--ink-2); --accent:var(--agent); --accent-soft:var(--agent-tint);
+  --hi:var(--gold); --hi-soft:var(--gold-tint); --hi-ink:var(--gold-ink);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#12131F; --grid:#1A1C2C; --surface:#1E2030; --surface2:#272A3E;
+  --ink:#EDEDEE; --ink-2:#B5B6C2; --line:#33364D; --line-strong:#4C5070;
+  --agent:#8DA2FF; --agent-deep:#4C5BC4; --agent-tint:#25285A; --on-agent:#0E1030;
+  --bar:#1B2170; --bar-ink:#FFFFFF; --bar-ink-2:rgba(255,255,255,.78); --bar-on:#EDEDEE; --bar-on-ink:#1B2170;
+  --gold-deep:#9C7410; --gold-tint:#3A3015; --gold-ink:#FFE7A6;
+  --signal-text:#FF8A5C; --signal-tint:#3A1E14;
+  --good:#7CC48C; --good-bg:#17301F; --good-edge:#72BB82;
+  --bad:#F98B8B; --bad-bg:#3A1A1C; --warn:#F0B65A; --warn-bg:#3A2C13;
+  --t-none:#262939; --t-none-edge:#565A74; --t-part:#4D3D0E; --t-part-edge:#E0A200; --t-done:#1D4429; --t-done-edge:#72BB82;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12131F; --grid:#1A1C2C; --surface:#1E2030; --surface2:#272A3E;
+  --ink:#EDEDEE; --ink-2:#B5B6C2; --line:#33364D; --line-strong:#4C5070;
+  --agent:#8DA2FF; --agent-deep:#4C5BC4; --agent-tint:#25285A; --on-agent:#0E1030;
+  --bar:#1B2170; --bar-ink:#FFFFFF; --bar-ink-2:rgba(255,255,255,.78); --bar-on:#EDEDEE; --bar-on-ink:#1B2170;
+  --gold-deep:#9C7410; --gold-tint:#3A3015; --gold-ink:#FFE7A6;
+  --signal-text:#FF8A5C; --signal-tint:#3A1E14;
+  --good:#7CC48C; --good-bg:#17301F; --good-edge:#72BB82;
+  --bad:#F98B8B; --bad-bg:#3A1A1C; --warn:#F0B65A; --warn-bg:#3A2C13;
+  --t-none:#262939; --t-none-edge:#565A74; --t-part:#4D3D0E; --t-part-edge:#E0A200; --t-done:#1D4429; --t-done-edge:#72BB82;
+  color-scheme:dark}
+
 *{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  background-color:var(--paper);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px;background-position:-1px -1px}
+h1,h2,h3{font-family:var(--f-display);line-height:1.12;text-wrap:balance;margin:0;letter-spacing:-.01em}
+h1{font-weight:800}
+h2{font-size:1.75rem;font-weight:800}
+h3{font-size:1.18rem;font-weight:700}
+p{margin:0}
+a{color:var(--agent);text-underline-offset:3px}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--agent);outline-offset:2px;border-radius:6px}
+
+/* thanh đầu trang */
+.hq{background:var(--bar);color:var(--bar-ink)}
+.hq a{color:var(--bar-ink)}
+.logo{display:inline-flex;flex:none;border-radius:50%;text-decoration:none}
+.logo svg{display:block;width:46px;height:46px}
+
+/* nút bấm: nổi khối, ấn xuống khi bấm */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;border:0;border-radius:var(--r-ctl);padding:10px 20px;margin-bottom:4px;
+  font-weight:700;cursor:pointer;text-decoration:none;background:var(--agent);color:var(--on-agent);box-shadow:0 4px 0 var(--agent-deep);
+  transition:transform .12s ease-out,box-shadow .12s ease-out}
+.btn:hover{transform:translateY(-1px);box-shadow:0 5px 0 var(--agent-deep)}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--agent-deep)}
+.btn.hi{background:var(--gold);color:#151521;box-shadow:0 4px 0 var(--gold-deep)}
+.btn.hi:hover{box-shadow:0 5px 0 var(--gold-deep)}.btn.hi:active{box-shadow:0 1px 0 var(--gold-deep)}
+.btn.ghost{background:var(--surface);color:var(--ink);box-shadow:inset 0 0 0 2px var(--line-strong),0 4px 0 var(--line-strong)}
+.btn.ghost:hover{box-shadow:inset 0 0 0 2px var(--agent),0 5px 0 var(--agent-deep)}
+.btn.ghost:active{box-shadow:inset 0 0 0 2px var(--agent),0 1px 0 var(--agent-deep)}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+
+/* mặt giấy, nhãn, con dấu */
+.card{background:var(--surface);border:2px solid var(--line);border-radius:var(--r-card);padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;font-size:.8rem;font-weight:700;background:var(--surface2);color:var(--ink)}
+.pill.good{background:var(--good-bg);color:var(--good)}
+.pill.bad{background:var(--bad-bg);color:var(--bad)}
+.pill.warn{background:var(--warn-bg);color:var(--warn)}
+.pill.hi{background:var(--gold-tint);color:var(--gold-ink)}
+.stamp{display:inline-block;font-family:var(--f-mono);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--good);border:2.5px solid currentColor;border-radius:8px;padding:2px 10px;transform:rotate(-6deg);opacity:.92}
+.stamp.part{color:var(--warn)}
+.muted{color:var(--ink-2)}
+.small{font-size:.88rem}
+.mono{font-family:var(--f-mono)}
+.notice{background:var(--gold-tint);color:var(--gold-ink);border-radius:var(--r-ctl);padding:12px 14px;font-size:.92rem}
+
+table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{font-size:.82rem;font-weight:700;color:var(--ink-2);background:var(--surface2)}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+/*/BRAND*/
+/* Trang số liệu: dải xanh đầu trang, mục lục dạng nút, mỗi phần là một tờ giấy trắng; bảng số dùng chữ đơn cách để dễ so cột. */
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Be Vietnam Pro",system-ui,sans-serif}
-a{color:var(--accent)}
-main{max-width:960px;margin:0 auto;padding:32px 16px 72px}
-.back{font-size:.9rem;text-decoration:none}
-h1{font:800 clamp(1.9rem,5vw,2.6rem)/1.15 "Baloo 2",sans-serif;margin:10px 0 8px}
-h1 span{background:linear-gradient(transparent 62%,var(--hi) 62%)}
-h2{font:700 1.55rem/1.2 "Baloo 2",sans-serif;margin:0 0 6px;scroll-margin-top:16px}
-h3{font-size:1.05rem;margin:18px 0 6px}
-.lead{color:var(--muted);max-width:68ch;margin:0 0 18px}
-.meta{font-size:.85rem;color:var(--muted)}
-nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 26px}
-nav.toc a{text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.88rem;font-weight:600;color:var(--ink)}
-nav.toc a:hover{border-color:var(--accent)}
-section{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 22px 18px;margin-bottom:20px}
+body{line-height:1.65}
+.hero{padding:22px 16px 30px}
+.hero .in{max-width:960px;margin:0 auto;position:relative;padding-right:170px}
+.hero .art{position:absolute;right:0;bottom:-6px;width:160px;height:150px}
+.hero .art img{position:absolute;filter:drop-shadow(0 8px 0 rgba(0,0,0,.18))}
+.hero .art .b1{width:120px;right:0;bottom:0}.hero .art .b2{width:80px;left:0;top:0}
+@media (max-width:640px){.hero .in{padding-right:0}.hero .art{position:static;width:auto;height:auto;display:flex;gap:8px;margin-top:6px}.hero .art img{position:static;width:56px!important}}
+.hero .back{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;font-weight:600;text-decoration:none;color:var(--bar-ink-2)}
+.hero .back svg{width:30px;height:30px}
+.hero h1{font-size:clamp(2rem,5.5vw,3rem);line-height:1.05;letter-spacing:-.02em;margin:14px 0 10px}
+.hero p{color:var(--bar-ink-2);max-width:68ch}
+main{max-width:992px;margin:0 auto;padding:22px 16px 72px}
+h2{font-size:1.6rem;margin:0 0 8px;scroll-margin-top:16px}
+h3{font-size:1.1rem;margin:20px 0 6px}
+.meta{font-size:.88rem;color:var(--ink-2)}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 26px}
+nav.toc a{text-decoration:none;background:var(--surface);border:2px solid var(--line-strong);border-radius:999px;padding:5px 13px;font-size:.88rem;font-weight:600;color:var(--ink);box-shadow:0 3px 0 var(--line-strong)}
+nav.toc a:hover{border-color:var(--agent);color:var(--agent)}
+section{background:var(--surface);border:2px solid var(--line);border-radius:var(--r-card);padding:22px 22px 18px;margin-bottom:22px}
 section > p:first-of-type{margin-top:0}
+section p{margin:0 0 10px}
 .tw{overflow-x:auto;margin:10px 0 6px;-webkit-overflow-scrolling:touch}
-table{border-collapse:collapse;width:100%;font-size:.92rem}
-th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);font-weight:700;background:var(--surface2)}
-td.n,th.n{text-align:right;font-family:"JetBrains Mono",ui-monospace,monospace;white-space:nowrap}
-td.n b{color:var(--accent)}
-.note{background:var(--hi-soft);color:var(--hi-ink);border-radius:10px;padding:10px 14px;font-size:.9rem;margin:12px 0}
-.est{display:inline-block;font-size:.72rem;font-weight:700;background:var(--warn-bg);color:var(--warn);border-radius:999px;padding:1px 8px;vertical-align:middle}
-.src{font-size:.82rem;color:var(--muted)}
-.src a{color:var(--muted)}
+th,td{vertical-align:top}
+td.n,th.n{text-align:right;font-family:var(--f-mono);white-space:nowrap}
+td.n b{color:var(--agent)}
+.note{background:var(--gold-tint);color:var(--gold-ink);border-radius:var(--r-ctl);padding:10px 14px;font-size:.9rem;margin:12px 0}
+.est{display:inline-block;font-size:.74rem;font-weight:700;background:var(--signal-tint);color:var(--signal-text);border-radius:999px;padding:1px 8px;vertical-align:middle}
+.src{font-size:.82rem;color:var(--ink-2)}
+.src a{color:var(--ink-2)}
 ul{padding-left:20px}
 li{margin:3px 0}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-.box{border:1px solid var(--line);border-radius:12px;padding:12px 14px}
-.box b.big{font:700 1.5rem/1.1 "Baloo 2",sans-serif;display:block}
+.box{border:2px solid var(--line);border-radius:12px;padding:12px 14px}
+.box b.big{font-family:var(--f-display);font-weight:800;font-size:1.6rem;line-height:1.1;display:block}
 .lvl{font-weight:700}
-.cta{display:inline-block;margin-top:6px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:8px 14px}
-@media (prefers-color-scheme:dark){.cta{color:#0e1a24}}
-footer{font-size:.85rem;color:var(--muted);margin-top:26px}
+.cta{display:inline-flex;align-items:center;min-height:44px;margin:6px 0 4px;background:var(--agent);color:var(--on-agent);text-decoration:none;font-weight:700;border-radius:var(--r-ctl);padding:8px 16px;box-shadow:0 4px 0 var(--agent-deep)}
+footer{font-size:.85rem;color:var(--ink-2);margin-top:26px}
 @media (max-width:560px){section{padding:16px 14px}table{font-size:.86rem}th,td{padding:7px 8px}}
 </style>
 </head>
 <body>
+<header class="hq hero"><div class="in">
+<a class="back" href="../"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#FCC539" stroke="#151521" stroke-width="2.5"/><path d="M24 13.5l3.1 6.6 7.2.8-5.4 4.9 1.5 7.1L24 29.3l-6.4 3.6 1.5-7.1-5.4-4.9 7.2-.8z" fill="#151521"/></svg>Ôn thi chuyên ngữ</a>
+<h1>Tuyển sinh chuyên ngữ Hà Nội</h1>
+<div class="art" aria-hidden="true"><img class="b1" src="../assets/emoji/classical-building.webp" alt=""><img class="b2" src="../assets/emoji/bar-chart.webp" alt=""></div>
+<p>Tổng hợp công thức xét tuyển, điểm chuẩn 2024–2026, bảng điểm của học sinh đỗ, kinh nghiệm ôn thi và tài liệu được khuyên dùng cho các lớp chuyên ngữ ở Hà Nội. Số liệu lấy từ văn bản của trường, báo chí và chia sẻ công khai của học sinh, phụ huynh; mỗi bảng đều ghi nguồn.</p>
+</div></header>
 <main>
-<a class="back" href="../">← Ôn thi chuyên ngữ</a>
-<h1><span>Tuyển sinh chuyên ngữ Hà Nội</span></h1>
-<p class="lead">Tổng hợp công thức xét tuyển, điểm chuẩn 2024–2026, bảng điểm của học sinh đỗ, kinh nghiệm ôn thi và tài liệu được khuyên dùng cho các lớp chuyên ngữ ở Hà Nội. Số liệu lấy từ văn bản của trường, báo chí và chia sẻ công khai của học sinh, phụ huynh; mỗi bảng đều ghi nguồn.</p>
 <p class="meta">Cập nhật ngày 21/10/2026. Phần ghi <span class="est">ước tính</span> là tính toán của trang, không phải số liệu chính thức.</p>
 <nav class="toc" aria-label="Mục lục">
  <a href="#cong-thuc">1. Công thức xét tuyển</a><a href="#diem-chuan">2. Điểm chuẩn</a><a href="#lop-khac">3. Lớp ngôn ngữ khác</a><a href="#muc-diem">4. Mức điểm cần</a><a href="#bang-diem">5. Học sinh đỗ báo cáo</a><a href="#kinh-nghiem">6. Kinh nghiệm</a><a href="#tai-lieu">7. Tài liệu</a><a href="#nguon">8. Nguồn và lưu ý</a>

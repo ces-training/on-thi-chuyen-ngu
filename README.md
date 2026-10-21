@@ -24,6 +24,7 @@ Khi `src/chuyen-anh-14-ngay/config.json` chưa có `apiUrl`, trang học sinh v�
 - Giao diện và cách tính lộ trình nằm trong `src/chuyen-anh-14-ngay/template.html`.
 - Sau khi sửa, chạy `python3 src/chuyen-anh-14-ngay/build.py`. Lệnh này dựng lại `chuyen-anh-14-ngay/index.html`, `co/index.html` và `apps-script/Keys.gs`. Sau đó commit và push.
 - GitHub Pages tự cập nhật trang sau mỗi lần push lên nhánh `main` (thường mất 1–2 phút).
+- Màu, phông chữ và nút bấm dùng chung cho mọi trang nằm trong `src/brand/brand.css`. `build.py` chép tệp này vào trang học sinh, trang của cô, và vào khối giữa `/*BRAND*/ … /*/BRAND*/` của trang chủ và trang tuyển sinh.
 - `gen_doc.py` tạo bản markdown của tập bài in (thư mục `doc/`), không kèm đáp án.
 
 ## Lưu ý

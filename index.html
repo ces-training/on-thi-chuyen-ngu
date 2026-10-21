@@ -7,45 +7,159 @@
 <meta name="description" content="Học liệu ôn thi chuyên ngữ vào lớp 10: website tự luyện kèm tập bài in.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
-:root{--bg:#f3f6f8;--surface:#fff;--ink:#11314a;--muted:#566c7e;--line:#d3dde5;--hi:#ffc83d;--accent:#16618b;--accent-soft:#dcebf4}
-@media (prefers-color-scheme:dark){:root{--bg:#0e1a24;--surface:#152635;--ink:#e6eef4;--muted:#9bb0c0;--line:#28404f;--hi:#ffc83d;--accent:#7cc1e8;--accent-soft:#1c3a50}}
+/*BRAND*/
+/* Bộ nhận diện dùng chung cho mọi trang. Sửa ở đây rồi chạy build.py; không sửa trực tiếp trong trang đã dựng.
+   Ý tưởng: sổ ô li xanh + huy hiệu vàng. Nền giấy kẻ ô, thanh đầu trang màu xanh đặc vụ, nút bấm nổi khối như phím,
+   ô tiến độ 3 màu (chưa làm / làm dở / xong) luôn đi kèm chữ hoặc biểu tượng, không dùng màu đơn thuần. */
+:root{
+  --paper:#F2F5FC; --grid:#E1E7F4; --surface:#FFFFFF; --surface2:#EEF1FA;
+  --ink:#151521; --ink-2:#4A4C53; --line:#D6DCEA; --line-strong:#B7BFD5;
+  --agent:#2638C4; --agent-deep:#18248A; --agent-tint:#E8ECFF; --on-agent:#FFFFFF;
+  --bar:#2638C4; --bar-ink:#FFFFFF; --bar-ink-2:rgba(255,255,255,.8); --bar-on:#FFFFFF; --bar-on-ink:#2638C4;
+  --gold:#FCC539; --gold-deep:#C9961A; --gold-tint:#FFF4D1; --gold-ink:#3D2E00;
+  --signal:#F8551A; --signal-text:#C8481A; --signal-tint:#FEE9E5;
+  --good:#3C6D4A; --good-bg:#E3F7E3; --good-edge:#579F6C;
+  --bad:#BE2626; --bad-bg:#FFEBEB;
+  --warn:#8A5A00; --warn-bg:#FFF3D1;
+  --t-none:#ECEDF1; --t-none-edge:#A3A5AE; --t-part:#FEE7AD; --t-part-edge:#E0A200; --t-done:#BCEBBB; --t-done-edge:#579F6C;
+  --f-display:"Bricolage Grotesque","Plus Jakarta Sans",system-ui,sans-serif;
+  --f-body:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r-card:14px; --r-ctl:10px;
+  /* tên cũ, giữ để mã cũ còn chạy */
+  --bg:var(--paper); --muted:var(--ink-2); --accent:var(--agent); --accent-soft:var(--agent-tint);
+  --hi:var(--gold); --hi-soft:var(--gold-tint); --hi-ink:var(--gold-ink);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#12131F; --grid:#1A1C2C; --surface:#1E2030; --surface2:#272A3E;
+  --ink:#EDEDEE; --ink-2:#B5B6C2; --line:#33364D; --line-strong:#4C5070;
+  --agent:#8DA2FF; --agent-deep:#4C5BC4; --agent-tint:#25285A; --on-agent:#0E1030;
+  --bar:#1B2170; --bar-ink:#FFFFFF; --bar-ink-2:rgba(255,255,255,.78); --bar-on:#EDEDEE; --bar-on-ink:#1B2170;
+  --gold-deep:#9C7410; --gold-tint:#3A3015; --gold-ink:#FFE7A6;
+  --signal-text:#FF8A5C; --signal-tint:#3A1E14;
+  --good:#7CC48C; --good-bg:#17301F; --good-edge:#72BB82;
+  --bad:#F98B8B; --bad-bg:#3A1A1C; --warn:#F0B65A; --warn-bg:#3A2C13;
+  --t-none:#262939; --t-none-edge:#565A74; --t-part:#4D3D0E; --t-part-edge:#E0A200; --t-done:#1D4429; --t-done-edge:#72BB82;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12131F; --grid:#1A1C2C; --surface:#1E2030; --surface2:#272A3E;
+  --ink:#EDEDEE; --ink-2:#B5B6C2; --line:#33364D; --line-strong:#4C5070;
+  --agent:#8DA2FF; --agent-deep:#4C5BC4; --agent-tint:#25285A; --on-agent:#0E1030;
+  --bar:#1B2170; --bar-ink:#FFFFFF; --bar-ink-2:rgba(255,255,255,.78); --bar-on:#EDEDEE; --bar-on-ink:#1B2170;
+  --gold-deep:#9C7410; --gold-tint:#3A3015; --gold-ink:#FFE7A6;
+  --signal-text:#FF8A5C; --signal-tint:#3A1E14;
+  --good:#7CC48C; --good-bg:#17301F; --good-edge:#72BB82;
+  --bad:#F98B8B; --bad-bg:#3A1A1C; --warn:#F0B65A; --warn-bg:#3A2C13;
+  --t-none:#262939; --t-none-edge:#565A74; --t-part:#4D3D0E; --t-part-edge:#E0A200; --t-done:#1D4429; --t-done-edge:#72BB82;
+  color-scheme:dark}
+
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Be Vietnam Pro",system-ui,sans-serif}
-main{max-width:720px;margin:0 auto;padding:48px 16px 64px}
-h1{font:800 clamp(2rem,6vw,2.8rem)/1.1 "Baloo 2",sans-serif;margin:0 0 8px}
-h1 span{background:linear-gradient(transparent 62%,var(--hi) 62%)}
-.lead{color:var(--muted);margin:0 0 32px;max-width:52ch}
-a.card{display:block;text-decoration:none;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-bottom:16px;transition:border-color .15s,transform .15s}
-a.card:hover{border-color:var(--accent);transform:translateY(-2px)}
-.tag{display:inline-block;font-size:.8rem;font-weight:600;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:2px 10px;margin-bottom:8px}
-.card h2{font:700 1.4rem/1.2 "Baloo 2",sans-serif;margin:0 0 6px}
-.card p{margin:0;color:var(--muted)}
-.go{margin-top:12px;font-weight:600;color:var(--accent)}
-footer{margin-top:40px;font-size:.85rem;color:var(--muted)}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  background-color:var(--paper);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px;background-position:-1px -1px}
+h1,h2,h3{font-family:var(--f-display);line-height:1.12;text-wrap:balance;margin:0;letter-spacing:-.01em}
+h1{font-weight:800}
+h2{font-size:1.75rem;font-weight:800}
+h3{font-size:1.18rem;font-weight:700}
+p{margin:0}
+a{color:var(--agent);text-underline-offset:3px}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--agent);outline-offset:2px;border-radius:6px}
+
+/* thanh đầu trang */
+.hq{background:var(--bar);color:var(--bar-ink)}
+.hq a{color:var(--bar-ink)}
+.logo{display:inline-flex;flex:none;border-radius:50%;text-decoration:none}
+.logo svg{display:block;width:46px;height:46px}
+
+/* nút bấm: nổi khối, ấn xuống khi bấm */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;border:0;border-radius:var(--r-ctl);padding:10px 20px;margin-bottom:4px;
+  font-weight:700;cursor:pointer;text-decoration:none;background:var(--agent);color:var(--on-agent);box-shadow:0 4px 0 var(--agent-deep);
+  transition:transform .12s ease-out,box-shadow .12s ease-out}
+.btn:hover{transform:translateY(-1px);box-shadow:0 5px 0 var(--agent-deep)}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--agent-deep)}
+.btn.hi{background:var(--gold);color:#151521;box-shadow:0 4px 0 var(--gold-deep)}
+.btn.hi:hover{box-shadow:0 5px 0 var(--gold-deep)}.btn.hi:active{box-shadow:0 1px 0 var(--gold-deep)}
+.btn.ghost{background:var(--surface);color:var(--ink);box-shadow:inset 0 0 0 2px var(--line-strong),0 4px 0 var(--line-strong)}
+.btn.ghost:hover{box-shadow:inset 0 0 0 2px var(--agent),0 5px 0 var(--agent-deep)}
+.btn.ghost:active{box-shadow:inset 0 0 0 2px var(--agent),0 1px 0 var(--agent-deep)}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+
+/* mặt giấy, nhãn, con dấu */
+.card{background:var(--surface);border:2px solid var(--line);border-radius:var(--r-card);padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;font-size:.8rem;font-weight:700;background:var(--surface2);color:var(--ink)}
+.pill.good{background:var(--good-bg);color:var(--good)}
+.pill.bad{background:var(--bad-bg);color:var(--bad)}
+.pill.warn{background:var(--warn-bg);color:var(--warn)}
+.pill.hi{background:var(--gold-tint);color:var(--gold-ink)}
+.stamp{display:inline-block;font-family:var(--f-mono);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--good);border:2.5px solid currentColor;border-radius:8px;padding:2px 10px;transform:rotate(-6deg);opacity:.92}
+.stamp.part{color:var(--warn)}
+.muted{color:var(--ink-2)}
+.small{font-size:.88rem}
+.mono{font-family:var(--f-mono)}
+.notice{background:var(--gold-tint);color:var(--gold-ink);border-radius:var(--r-ctl);padding:12px 14px;font-size:.92rem}
+
+table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{font-size:.82rem;font-weight:700;color:var(--ink-2);background:var(--surface2)}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+/*/BRAND*/
+/* Trang chủ: dải xanh lớn với huy hiệu, bên dưới là các tập hồ sơ (mỗi bộ học liệu một tập, có nhãn kẹp ở mép trên). */
+.hero{padding:48px 16px 72px}
+.hero .in{max-width:760px;margin:0 auto;display:flex;gap:28px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,7vw,3.6rem);line-height:1;letter-spacing:-.02em}
+.hero p{margin-top:14px;max-width:46ch;color:var(--bar-ink-2);font-size:1.06rem}
+.art{position:relative;width:220px;height:190px;flex:none}
+.art img{position:absolute;filter:drop-shadow(0 8px 0 rgba(0,0,0,.18))}
+.art .a1{width:150px;left:30px;top:10px}.art .a2{width:92px;left:0;bottom:0}.art .a3{width:84px;right:0;top:0;transform:rotate(12deg)}.art .a4{width:56px;right:10px;bottom:16px}
+@media (prefers-reduced-motion:no-preference){.art .a3{animation:fly 4s ease-in-out infinite}@keyframes fly{50%{transform:rotate(12deg) translate(4px,-8px)}}}
+.fic{position:absolute;right:18px;top:-30px;width:88px;height:88px;filter:drop-shadow(0 6px 0 rgba(21,21,33,.14))}
+a.file h2,a.file p{padding-right:84px}
+main{max-width:792px;margin:-44px auto 0;padding:0 16px 64px;display:flex;flex-direction:column;gap:28px}
+a.file{position:relative;display:block;text-decoration:none;color:inherit;background:var(--surface);border:2px solid var(--line-strong);border-radius:4px var(--r-card) var(--r-card) var(--r-card);padding:22px 22px 20px;margin-top:22px;
+  box-shadow:0 5px 0 var(--line-strong);transition:transform .12s ease-out,box-shadow .12s ease-out,border-color .12s}
+a.file:hover{transform:translateY(-2px);border-color:var(--agent);box-shadow:0 7px 0 var(--agent-deep)}
+a.file:active{transform:translateY(3px);box-shadow:0 2px 0 var(--agent-deep)}
+.tab{position:absolute;left:-2px;bottom:100%;background:var(--surface);border:2px solid var(--line-strong);border-bottom:0;border-radius:10px 10px 0 0;padding:3px 14px 2px;font-size:.82rem;font-weight:700;color:var(--ink-2)}
+a.file:hover .tab{border-color:var(--agent)}
+.file.gold{background:var(--gold-tint)}.file.gold .tab{background:var(--gold-tint)}
+.file h2{font-size:1.6rem;margin-bottom:6px}
+.file p{color:var(--ink-2);max-width:56ch}
+.go{display:inline-flex;margin-top:14px;font-weight:700;color:var(--agent)}
+.facts{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+footer{max-width:792px;margin:0 auto;padding:0 16px 48px;font-size:.88rem;color:var(--ink-2)}
+@media (max-width:560px){.hero{padding:24px 16px 64px}.hero .in{flex-direction:column-reverse;align-items:flex-start;gap:8px}.art{width:170px;height:120px}.art .a1{width:100px;left:22px;top:6px}.art .a2{width:62px}.art .a3{width:58px}.art .a4{width:40px}.fic{width:64px;height:64px;top:-22px;right:12px}a.file h2,a.file p{padding-right:44px}}
 </style>
 </head>
 <body>
+<header class="hq hero"><div class="in">
+  <div>
+    <h1>Ôn thi chuyên ngữ</h1>
+    <p>Học liệu tự luyện cho học sinh lớp 6–9 chuẩn bị thi vào lớp 10 các trường chuyên ngữ ở Hà Nội. Mỗi bộ gồm một trang web và một tập bài in dùng song song.</p>
+  </div>
+  <div class="art" aria-hidden="true"><img class="a1" src="assets/emoji/graduation-cap.webp" alt=""><img class="a2" src="assets/emoji/hundred-points.webp" alt=""><img class="a3" src="assets/emoji/rocket.webp" alt=""><img class="a4" src="assets/emoji/sparkles.webp" alt=""></div>
+</div></header>
 <main>
-  <h1><span>Ôn thi chuyên ngữ</span></h1>
-  <p class="lead">Các bộ học liệu tự luyện cho học sinh từ lớp 6 trở lên, chuẩn bị cho kỳ thi vào lớp 10 các trường chuyên ngữ ở Hà Nội. Mỗi bộ gồm một trang web và một tập bài in dùng song song.</p>
-
-  <a class="card" href="chuyen-anh-14-ngay/">
-    <span class="tag">Tiếng Anh · Lớp 7 · 14 buổi</span>
+  <a class="file" href="chuyen-anh-14-ngay/">
+    <span class="tab">Tiếng Anh · lớp 7</span><img class="fic" src="assets/emoji/books.webp" alt="">
     <h2>Chuyên Anh 14 Ngày</h2>
     <p>Kiểm tra đầu vào, 14 buổi học có ôn xoắn ốc, bài kiểm tra sau 2 tuần và lộ trình đến kỳ thi vào 10.</p>
-    <p class="go">Vào học →</p>
+    <div class="facts"><span class="pill">30 câu đầu vào</span><span class="pill">14 buổi × 40 phút</span><span class="pill">Chụp bài giấy để chấm</span></div>
+    <span class="go">Vào học</span>
   </a>
-
-  <a class="card" href="tuyen-sinh/">
-    <span class="tag">Số liệu tuyển sinh · 2024–2026</span>
+  <a class="file gold" href="tuyen-sinh/">
+    <span class="tab">Số liệu 2024–2026</span><img class="fic" src="assets/emoji/bar-chart.webp" alt="">
     <h2>Tuyển sinh chuyên ngữ Hà Nội</h2>
     <p>Công thức xét tuyển, điểm chuẩn các lớp chuyên ngữ, bảng điểm học sinh đỗ, kinh nghiệm và tài liệu ôn thi.</p>
-    <p class="go">Xem số liệu →</p>
+    <span class="go">Xem số liệu</span>
   </a>
-
-  <footer>Kết quả học được lưu trên trình duyệt của máy đang dùng.</footer>
 </main>
+<footer>Giáo viên: <a href="co/">trang theo dõi học sinh</a>.</footer>
 </body>
 </html>

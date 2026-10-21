@@ -19,7 +19,8 @@ api = json.dumps(os.environ.get("API_URL_OVERRIDE", cfg.get("apiUrl", "")))
 
 sj = json.load(open(here / "schools.json", encoding="utf-8"))
 school_js = (here / "school.js").read_text(encoding="utf-8").replace("__SCHOOLS__", json.dumps(sj["options"], ensure_ascii=False)).replace("__EXAMS__", json.dumps(sj["exams"], ensure_ascii=False))
-body = (here / "template.html").read_text(encoding="utf-8").replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
+brand = (repo / "src" / "brand" / "brand.css").read_text(encoding="utf-8")
+body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
 page = (
     "<!doctype html>\n<html lang=\"vi\">\n<head>\n<meta charset=\"utf-8\">\n"
     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
@@ -33,10 +34,17 @@ print("built", out, len(page.encode()), "bytes")
 # ---- trang của cô ----
 themes = json.dumps([{"day": d["day"], "theme": d.get("theme_vi", "")} for d in days], ensure_ascii=False)
 co_tpl = (here.parent / "co" / "template.html").read_text(encoding="utf-8")
-co = co_tpl.replace("__API_URL__", api).replace("__THEMES__", themes)
+co = co_tpl.replace("/*__BRAND_CSS__*/", brand).replace("__API_URL__", api).replace("__THEMES__", themes)
 (repo / "co").mkdir(exist_ok=True)
 (repo / "co" / "index.html").write_text(co, encoding="utf-8")
 print("built", repo / "co" / "index.html")
+
+# ---- trang viết tay (trang chủ, tuyển sinh): làm mới khối CSS dùng chung giữa hai dấu /*BRAND*/ … /*/BRAND*/ ----
+for f in [repo / "index.html", repo / "tuyen-sinh" / "index.html"]:
+    t = f.read_text(encoding="utf-8")
+    t2 = re.sub(r"/\*BRAND\*/.*?/\*/BRAND\*/", lambda m: "/*BRAND*/\n" + brand + "/*/BRAND*/", t, flags=re.S)
+    if t2 != t:
+        f.write_text(t2, encoding="utf-8"); print("brand css ->", f)
 
 # ---- đáp án cho máy chủ chấm bài ----
 SECTION_NAMES = {"A_vocab": "A · Từ vựng", "B_grammar": "B · Ngữ pháp", "C_wordform": "C · Cấu tạo từ", "D_exam": "D · Dạng bài thi chuyên",
