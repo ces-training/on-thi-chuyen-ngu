@@ -117,6 +117,19 @@ textarea{min-height:110px;font-family:var(--f-mono);font-size:.8rem}
 .bar .fill{height:100%;background:var(--accent);border-radius:99px}
 .bar .v{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
 .tbl-wrap{overflow-x:auto}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:8px 0}
+.fld{display:flex;flex-direction:column;gap:4px;font-weight:600;font-size:.92rem}
+.fld input,.fld select{font:inherit;font-weight:500;padding:8px 10px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink)}
+.fld input:focus,.fld select:focus{outline:2px solid var(--accent);outline-offset:1px}
+.fld input::placeholder{color:var(--muted);opacity:1}
+.fld .hint{font-weight:400;font-size:.8rem;color:var(--muted)}
+.fld .hint.sug{color:var(--hi-ink);background:var(--hi-soft);border-radius:6px;padding:2px 6px}
+.langs{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;margin-top:10px}
+.langs p{flex-basis:100%;margin:0}
+.chk{display:inline-flex;gap:6px;align-items:center;font-weight:600}
+.stable td{vertical-align:top}
+.stable .num{font-family:var(--f-mono);white-space:nowrap}
+
 table{border-collapse:collapse;width:100%;font-size:.9rem;font-variant-numeric:tabular-nums}
 th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
 th{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
@@ -157,6 +170,7 @@ details>summary{cursor:pointer;font-weight:700}
       <button role="tab" data-view="days">14 ngày</button>
       <button role="tab" data-view="progress">Tiến bộ</button>
       <button role="tab" data-view="plan">Lộ trình &amp; khả thi</button>
+      <button role="tab" data-view="school">Chọn trường</button>
       <button role="tab" data-view="share">Gửi cô</button>
     </nav>
   </div>
@@ -271,7 +285,7 @@ function dayStatus(n){const d=S.days[n];if(!d)return'none';if(d.web&&d.paper)ret
 
 /* ---------- views ---------- */
 let VIEW='start', CUR_DAY=null;
-const views={start:vStart,diag:vDiag,days:vDays,progress:vProgress,plan:vPlan,share:vShare};
+const views={start:vStart,diag:vDiag,days:vDays,progress:vProgress,plan:vPlan,school:vSchool,share:vShare};
 function go(v,opt){VIEW=v;if(opt&&opt.day)CUR_DAY=opt.day;document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.view===v?'true':'false'));views[v]();renderHello();try{window.scrollTo({top:0})}catch(e){}}
 document.getElementById('tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(b)go(b.dataset.view)});
 function renderHello(){$('#hello').innerHTML=S.name?`Chào <strong>${esc(S.name)}</strong>`:''}
@@ -575,6 +589,8 @@ function vPlan(){
   $('#minR').oninput=e=>{S.plan.min=+e.target.value;$('#minO').textContent=S.plan.min;draw();save()};
   $('#dpwR').oninput=e=>{S.plan.dpw=+e.target.value;$('#dpwO').textContent=S.plan.dpw;draw();save()};
 }
+
+/*__SCHOOL_JS__*/
 
 /* ----- share code ----- */
 async function pack(obj){

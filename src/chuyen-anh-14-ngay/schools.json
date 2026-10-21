@@ -1,0 +1,11 @@
+{
+  "_note": "Điểm chuẩn lớp chuyên. f = công thức: so = Toán+Văn+Anh chung+Anh chuyên×2 (/50, đề Sở HN); cnn = như trên nhưng đề Chuyên Ngoại ngữ (/50, từ 2025); sp = Anh chuyên×2+Anh chung (/30, Chuyên Sư phạm từ 2025). cut = điểm chuẩn theo năm (cũ → mới). Cập nhật mỗi năm sau khi có điểm chuẩn mới.",
+  "options": [
+    {"id":"ams-anh","school":"THPT chuyên Hà Nội – Amsterdam","cls":"chuyên Anh","lang":"Anh","f":"so","exam":"so","examLabel":"Kỳ thi của Sở GD&ĐT Hà Nội","nv":2,"years":[2022,2023,2024,2025,2026],"cut":[42.75,42.4,40.75,41.15,41.9]},
+    {"id":"cva-anh","school":"THPT Chu Văn An","cls":"chuyên Anh","lang":"Anh","f":"so","exam":"so","examLabel":"Kỳ thi của Sở GD&ĐT Hà Nội","nv":2,"years":[2022,2023,2024,2025,2026],"cut":[40.85,40.25,37.5,37.15,38]},
+    {"id":"nh-anh","school":"THPT chuyên Nguyễn Huệ","cls":"chuyên Anh","lang":"Anh","f":"so","exam":"so","examLabel":"Kỳ thi của Sở GD&ĐT Hà Nội","nv":2,"years":[2022,2023,2024,2025,2026],"cut":[39.5,39.3,37.25,36.65,36.65]},
+    {"id":"st-anh","school":"THPT Sơn Tây","cls":"chuyên Anh","lang":"Anh","f":"so","exam":"so","examLabel":"Kỳ thi của Sở GD&ĐT Hà Nội","nv":2,"years":[2022,2023,2024,2025,2026],"cut":[33.55,34.25,32.8,30.45,31.9]},
+    {"id":"cnn-anh","school":"THPT Chuyên Ngoại ngữ (ĐHNN – ĐHQGHN)","cls":"tiếng Anh","lang":"Anh","f":"cnn","exam":"cnn","examLabel":"Kỳ thi riêng của Chuyên Ngoại ngữ","nv":1,"years":[2025,2026],"cut":[34.7,34.34],"sdDefault":1.3,"note":"Thang 50 từ 2025; độ dao động lấy theo các năm trước."},
+    {"id":"sp-anh","school":"THPT Chuyên ĐHSP Hà Nội","cls":"chuyên Anh","lang":"Anh","f":"sp","exam":"sp","examLabel":"Kỳ thi riêng của Chuyên Sư phạm","nv":1,"years":[2025,2026],"cut":[21,22.4],"sdDefault":1.0,"note":"Từ 2025 xét Anh chuyên × 2 + Anh chung (thang 30); mỗi bài phải từ 3,5."}
+  ]
+}
