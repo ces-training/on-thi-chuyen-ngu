@@ -182,6 +182,102 @@ details>summary{cursor:pointer;font-weight:700}
 #main[data-v="share"]{--ic:url(../assets/emoji/woman-teacher.webp)}
 @media (max-width:520px){.day .di{width:24px;height:24px}.dh-ic{width:60px;height:60px}.card.next{gap:14px}.next-ic img{width:64px;height:64px}
   #main[data-v] .view>div:first-child:not([class]){padding-right:72px}#main[data-v] .view>div:first-child:not([class])::after{width:60px;height:60px}}
+/* ===== video ===== */
+.yt{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;max-width:720px}
+.yt-btn{all:unset;cursor:pointer;display:block;width:100%;height:100%;position:relative}
+.yt-btn img{width:100%;height:100%;object-fit:cover;display:block;opacity:.92}
+.yt-play{position:absolute;inset:0;margin:auto;width:76px;height:54px;border-radius:14px;background:#e62117;color:#fff;font-size:26px;display:grid;place-items:center;box-shadow:0 4px 0 #9b120c}
+.yt-btn:hover .yt-play{transform:scale(1.06)}.yt-btn:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.yt iframe{width:100%;height:100%;border:0;display:block}
+.gsum ul{margin:6px 0;padding-left:20px}.gsum li{margin:3px 0}
+/* ===== game ===== */
+.g-tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}
+.g-tab{display:flex;align-items:center;gap:10px;text-align:left;border:2px solid var(--line);background:var(--surface);border-radius:12px;padding:8px 10px;cursor:pointer;color:var(--ink);box-shadow:0 3px 0 var(--line);min-height:56px}
+.g-tab img{width:30px;height:30px;flex:none}.g-tab .g-tt{display:flex;flex-direction:column;min-width:0;flex:1}.g-tab small{color:var(--ink-2);font-size:.76rem;line-height:1.25}
+.g-tab[aria-selected="true"]{border-color:var(--agent);background:var(--agent-tint);box-shadow:0 3px 0 var(--agent-deep)}
+.g-stars{white-space:nowrap;font-size:.95rem;letter-spacing:1px}.g-stars b{color:var(--line-strong)}.g-stars b.on{color:var(--gold);text-shadow:0 1px 0 var(--gold-deep)}
+.g-box{border:2px solid var(--agent);border-radius:16px;background:linear-gradient(180deg,var(--agent-tint),var(--surface) 140px);padding:14px;min-height:320px;display:flex;flex-direction:column;gap:8px}
+.g-head{display:flex;align-items:center;gap:10px}.g-name{font-family:var(--f-display);font-weight:800;font-size:1.15rem;color:var(--agent)}
+.g-meta{margin-left:auto;font-family:var(--f-mono);font-size:.85rem;font-weight:700;background:var(--surface);border:2px solid var(--line);border-radius:999px;padding:2px 10px}
+.g-mute{border:0;background:none;font-size:1.1rem;cursor:pointer;min-width:36px;min-height:36px}
+.g-stage{flex:1;display:flex;flex-direction:column;justify-content:center}
+.g-prog{font-size:.82rem;font-weight:700;color:var(--ink-2);text-align:center;margin-bottom:6px}
+.g-q{font-size:1.15rem;font-weight:600;text-align:center;margin:6px 0 12px;white-space:pre-wrap}
+.g-bar{height:8px;border-radius:99px;background:var(--surface2);overflow:hidden;margin-bottom:6px}.g-bar i{display:block;height:100%;background:var(--signal);transition:width .25s linear}
+.g-fb{text-align:center;min-height:1.5em;margin-top:8px}
+.g-match{display:grid;grid-template-columns:1fr 1fr;gap:10px}.g-col{display:flex;flex-direction:column;gap:8px}
+.g-tile,.g-opt,.g-bin,.g-let,.g-word,.g-card,.g-yes,.g-no,.x-line{font:inherit;color:var(--ink);cursor:pointer;border:2px solid var(--line-strong);background:var(--surface);border-radius:12px;box-shadow:0 3px 0 var(--line-strong);transition:transform .1s,background-color .15s,border-color .15s}
+.g-tile{padding:10px 12px;min-height:48px;text-align:left;font-weight:600;font-size:.95rem}
+.g-tile.alt{font-weight:500;font-size:.9rem}
+.g-tile.sel,.g-word:hover,.g-opt:hover,.g-bin:hover{border-color:var(--agent);background:var(--agent-tint)}
+.g-tile.ok,.g-opt.ok,.g-bin.ok,.g-card.ok .b{border-color:var(--good-edge);background:var(--good-bg);color:var(--good);box-shadow:0 3px 0 var(--good-edge)}
+.g-tile.ok{opacity:.75}
+.g-tile.bad,.g-opt.bad,.g-bin.bad{border-color:var(--bad);background:var(--bad-bg);animation:shake .35s}
+@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.g-flip{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+@media (max-width:520px){.g-flip{grid-template-columns:repeat(3,1fr)}}
+.g-card{position:relative;min-height:84px;padding:0;overflow:hidden;perspective:600px}
+.g-card .f,.g-card .b{position:absolute;inset:0;display:grid;place-items:center;padding:6px;text-align:center;backface-visibility:hidden;transition:transform .35s;border-radius:10px;font-size:.85rem;line-height:1.25}
+.g-card .f{background:var(--agent);color:#fff;font-family:var(--f-display);font-size:1.6rem;font-weight:800;background-image:radial-gradient(circle at 30% 30%,rgba(255,255,255,.18) 0 18%,transparent 19%)}
+.g-card .b{transform:rotateY(180deg);background:var(--surface);font-weight:600}.g-card .b.a{color:var(--agent);font-size:.95rem}
+.g-card.up .f{transform:rotateY(180deg)}.g-card.up .b{transform:rotateY(0)}
+.g-ana,.g-unj,.g-sort,.g-quiz,.g-tf{display:flex;flex-direction:column;gap:10px;align-items:stretch}
+.g-clue{text-align:center;font-size:1.15rem;font-weight:700}
+.g-slots{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.g-slot{width:38px;height:46px;border-bottom:3px solid var(--line-strong);display:grid;place-items:center;font-family:var(--f-display);font-size:1.5rem;font-weight:800;text-transform:lowercase}
+.g-slot.full{border-color:var(--agent);color:var(--agent)}
+.g-slots.ok .g-slot{border-color:var(--good-edge);color:var(--good)}.g-slots.bad{animation:shake .35s}.g-slots.bad .g-slot{color:var(--bad)}
+.g-letters{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.g-let{width:46px;height:50px;font-family:var(--f-display);font-size:1.4rem;font-weight:800;background:var(--gold);color:#151521;border-color:#151521;box-shadow:0 4px 0 #151521}
+.g-let:disabled{opacity:.2;cursor:default}
+.g-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:520px){.g-opts{grid-template-columns:1fr}}
+.g-opt{min-height:54px;padding:10px;font-weight:600;font-size:1rem}
+.g-opt:nth-child(1){border-color:#2638C4}.g-opt:nth-child(2){border-color:#E83FA4}.g-opt:nth-child(3){border-color:#E0A200}.g-opt:nth-child(4){border-color:#579F6C}
+.g-sortcard{align-self:center;max-width:460px;width:100%;text-align:center;font-size:1.12rem;font-weight:600;background:var(--surface);border:2px solid var(--ink);border-radius:14px;padding:18px 16px;box-shadow:0 5px 0 var(--ink)}
+.g-bins{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.g-bin{min-height:70px;padding:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}.g-bin span{font-size:.75rem;color:var(--ink-2)}
+.g-line{min-height:58px;border:2px dashed var(--line-strong);border-radius:12px;padding:8px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;background:var(--surface)}
+.g-line.ok{border-color:var(--good-edge);background:var(--good-bg)}.g-line.bad{border-color:var(--bad);animation:shake .35s}
+.g-pool{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.g-word{padding:6px 12px;min-height:40px;font-weight:600}.g-word.in{background:var(--agent-tint);border-color:var(--agent)}.g-word:disabled{opacity:.25;cursor:default}
+.g-tfb{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.g-yes,.g-no{min-height:64px;font-size:1.2rem;font-weight:800}
+.g-yes{background:var(--good-bg);border-color:var(--good-edge);color:var(--good);box-shadow:0 4px 0 var(--good-edge)}
+.g-no{background:var(--bad-bg);border-color:var(--bad);color:var(--bad);box-shadow:0 4px 0 var(--bad)}
+.g-end{text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px}.g-end img{width:72px;height:72px}
+.g-end .g-stars{font-size:2rem}
+@media (prefers-reduced-motion:no-preference){.g-end img{animation:pop .5s ease-out}@keyframes pop{0%{transform:scale(.4)}70%{transform:scale(1.15)}100%{transform:scale(1)}}}
+/* ===== dạng bài thi ===== */
+.x-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.x-tab{font:inherit;font-weight:700;border:2px solid var(--line-strong);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer;min-height:40px}
+.x-tab[aria-selected="true"]{background:var(--agent);color:var(--on-agent);border-color:var(--agent)}
+#examBox{display:flex;flex-direction:column;gap:12px}
+.x-intro{background:var(--surface2);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.x-tip{background:var(--gold-tint);color:var(--gold-ink);border-radius:8px;padding:6px 10px}
+.x-form{display:flex;flex-direction:column;gap:14px}
+.x-seg{text-decoration:underline 2px;text-underline-offset:4px}.x-seg sub{font-size:.7rem;font-weight:800;color:var(--agent);margin-left:1px}
+.qtext u{text-decoration-thickness:2px}.opt u{text-decoration-thickness:2px;text-underline-offset:3px}
+.row-opts{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}
+.x-gap{color:var(--agent);background:var(--agent-tint);border-radius:6px;padding:0 4px}
+.x-text{line-height:2.1}
+.x-inwrap{white-space:nowrap}.x-in{font:inherit;width:9.5em;max-width:60vw;border:0;border-bottom:2px solid var(--agent);background:var(--agent-tint);border-radius:6px 6px 0 0;padding:2px 6px;margin:0 3px;color:var(--ink)}
+.x-text input.x-in{width:9.5em;max-width:60vw;min-height:0;border:0;border-bottom:2px solid var(--agent);background:var(--surface);border-radius:6px 6px 0 0;padding:2px 6px;margin:0 3px;box-shadow:none}
+.x-text input.x-in.ok{background:var(--good-bg);border-color:var(--good-edge)}.x-text input.x-in.bad{background:var(--bad-bg);border-color:var(--bad)}
+.g-ana p{text-align:center}
+.x-tr .x-in{width:100%;max-width:none;margin:4px 0;padding:8px 10px;border:2px solid var(--line-strong);border-radius:10px;background:var(--surface)}
+.x-in.ok{border-color:var(--good-edge);background:var(--good-bg)}.x-in.bad{border-color:var(--bad);background:var(--bad-bg)}
+.x-base{font-style:normal;font-weight:800;font-size:.8rem;color:var(--signal-text)}
+.x-tr{display:flex;flex-direction:column;gap:2px;font-weight:600}
+.x-key{font-family:var(--f-mono);font-weight:700;background:var(--ink);color:var(--surface);border-radius:6px;padding:1px 8px}
+.x-heads{background:var(--surface2);border-radius:10px;padding:10px 10px 10px 34px;margin:0}.x-heads li{margin:2px 0}
+.x-sel{font:inherit;padding:6px 8px;border:2px solid var(--line-strong);border-radius:8px;background:var(--surface);color:var(--ink)}.x-sel.ok{border-color:var(--good-edge)}.x-sel.bad{border-color:var(--bad)}
+.x-listen{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.x-fblist{list-style:none;padding:0;margin:0;display:grid;gap:4px}.x-fblist .good{color:var(--good)}.x-fblist .bad{color:var(--bad)}
+.x-order ol{padding-left:22px;display:grid;gap:6px;margin:6px 0}
+.x-built{min-height:40px}.x-pool{display:grid;gap:6px}
+.x-line{text-align:left;padding:8px 12px;width:100%;font-weight:500}.x-line.fixed{opacity:.8;cursor:default}.x-line.ok{border-color:var(--good-edge);background:var(--good-bg)}.x-line.bad{border-color:var(--bad);background:var(--bad-bg)}
+.isl{display:grid;gap:10px;padding-left:20px;margin:0}
 @media (prefers-reduced-motion:no-preference){.fill{transition:width .5s ease}}
 </style>
 
@@ -347,12 +443,13 @@ function vStart(){
     <p class="small muted">${cloudOn()?'Kết quả được lưu trên máy này và tự gửi cho cô.':'Kết quả được lưu trên chính máy/trình duyệt em đang dùng. Hãy luôn mở trang này trên cùng một máy.'}</p>
   </div>
   <div class="card">
-    <h3>Mỗi buổi em làm theo 4 bước</h3>
+    <h3>Mỗi buổi em làm theo 5 bước</h3>
     <ol class="steps">
-      <li><div><b>Học và làm bài trên giấy</b> (khoảng 30 phút): từ mới, ngữ pháp, cấu tạo từ, dạng bài thi chuyên, bài đọc, đoạn viết và phần ôn xoắn ốc.</div></li>
-      <li><div><b>Gấp tập giấy lại, làm phần Kiểm tra trên web</b> (khoảng 10 phút). Đây là câu mới, không trùng với bài trên giấy.</div></li>
-      <li><div>${cloudOn()?'<b>Chụp bài giấy gửi lên</b>: máy chấm, nhận xét và gửi kết quả cho cô. Câu nào em chưa đồng ý thì nhắn cô.':'<b>Chữa bài giấy</b> bằng đáp án trên web, tích những câu em làm đúng.'}</div></li>
-      <li><div><b>Tự kiểm đoạn viết</b> theo danh sách tiêu chí, rồi đọc đoạn văn mẫu.</div></li>
+      <li><div><b>Xem video ngữ pháp và chơi 3 game</b> ôn từ mới, cụm động từ và ngữ pháp của buổi (khoảng 15 phút).</div></li>
+      <li><div><b>Làm quen 1–2 dạng bài của đề thi thật</b>, số câu rút gọn, có giải thích (khoảng 10 phút).</div></li>
+      <li><div><b>Tải bài tập giấy của ngày</b>, in ra và làm trên giấy (khoảng 30 phút).</div></li>
+      <li><div><b>Gấp giấy lại, làm Kiểm tra nhanh cuối buổi</b> trên web (khoảng 5 phút). Câu sai sẽ quay lại ở các buổi sau.</div></li>
+      <li><div>${cloudOn()?'<b>Chụp bài giấy gửi lên</b>: máy chấm, nhận xét và gửi kết quả cho cô. Câu nào em chưa đồng ý thì nhắn cô.':'<b>Chữa bài giấy</b> bằng đáp án trên web, tích những câu em làm đúng, rồi tự kiểm đoạn viết.'}</div></li>
     </ol>
     <div class="row"><button class="btn ghost" id="goPlan">Xem lộ trình đến kỳ thi</button></div>
   </div></section>`;
@@ -420,6 +517,37 @@ function vDays(){
   $('#dayStrip').onclick=e=>{const b=e.target.closest('.day');if(b){CUR_DAY=+b.dataset.d;vDays()}};
   renderDay(d);
 }
+/* ----- học trên web: video, game, dạng bài thi, iSLCollective, bài giấy PDF ----- */
+const pad2=n=>String(n).padStart(2,'0');
+function gPill(n){const g=(S.days[n]||{}).games||{};const k=Object.keys(g).length;const t=gamesForDay(n).length;return `<span class="pill ${k>=t?'good':''}">${k>=t?'✓ ':''}Game ${k}/${t}</span>`}
+function xPill(n){const W=(C.web&&C.web[n])||{};const t=(W.exam||[]).length;if(!t)return '';const x=(S.days[n]||{}).exam||{};const k=Object.keys(x).length;return `<span class="pill ${k>=t?'good':''}">${k>=t?'✓ ':''}Dạng bài thi ${k}/${t}</span>`}
+function learnHTML(n){const D=DAYS[n-1];const W=(C.web&&C.web[n])||{};const MD=(C.media&&C.media[n])||{};const games=gamesForDay(n);const ex=W.exam||[];const rec=S.days[n]||{};const gs=rec.games||{},xs=rec.exam||{};
+  const g=D.grammar;let h='';
+  h+=`<div class="card" id="vidCard"><h3 class="ih">${em('television')}Bước 1 · ${g?'Xem video ngữ pháp':'Xem video ôn tập'}</h3>${g?`<p><b>${esc(g.title)}</b></p>`:''}
+    ${MD.video?`<div class="yt" data-id="${esc(MD.video.id)}"><button type="button" class="yt-btn" aria-label="Phát video ${esc(MD.video.title)}"><img src="https://i.ytimg.com/vi/${esc(MD.video.id)}/hqdefault.jpg" alt="" loading="lazy"><span class="yt-play">▶</span></button></div><p class="small muted">${esc(MD.video.title)} · ${esc(MD.video.channel||'')}${MD.video.why_vi?' — '+esc(MD.video.why_vi):''}</p>`:'<p class="small muted">Video của buổi này đang được cô chọn.</p>'}
+    ${g?`<details class="gsum"><summary>Tóm tắt ngữ pháp bằng tiếng Việt</summary><ul>${g.rule_vi.map(r=>`<li>${esc(r)}</li>`).join('')}</ul><p class="ex">${g.examples.map(esc).join(' · ')}</p>${g.common_mistake_vi?`<p class="t-note">Lỗi hay gặp: ${esc(g.common_mistake_vi)}</p>`:''}</details>`:''}</div>`;
+  h+=`<div class="card" id="gameCard"><h3 class="ih">${em('video-game')}Bước 2 · Chơi game ôn từ và ngữ pháp</h3><div class="g-tabs" role="tablist">${games.map((gm,i)=>{const r=gs[gm.key];return `<button type="button" role="tab" class="g-tab" data-g="${i}" aria-selected="${i===0}">${em(G_ICON[gm.type]||'sparkles','',28)}<span class="g-tt"><b>${esc(G_NAME[gm.type])}</b><small>${esc(gm.title)}</small></span>${r?gStarHTML(r.stars||0):''}</button>`}).join('')}</div><div class="g-box" id="gameBox"></div></div>`;
+  if(ex.length)h+=`<div class="card" id="examCard"><h3 class="ih">${em('bullseye')}Bước 3 · Làm quen dạng bài thi thật</h3><div class="x-tabs">${ex.map((b,i)=>{const r=xs[b.format];return `<button type="button" class="x-tab" data-x="${i}" aria-selected="${i===0}">${esc(X_FMT[b.format]||b.format)}${r?` <span class="pill ${r.correct/r.total>=.6?'good':'warn'}">${r.correct}/${r.total}</span>`:''}</button>`}).join('')}</div><div id="examBox"></div></div>`;
+  if(MD.isl&&MD.isl.length)h+=`<div class="card"><h3 class="ih">${em('rocket')}Chơi thêm trên iSLCollective</h3><p class="small muted">Bài tương tác cùng chủ điểm trên trang iSLCollective (mở tab mới, không bắt buộc).</p><ul class="isl">${MD.isl.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> <span class="pill">${x.kind==='video'?'Video tương tác':x.kind==='game'?'Game':'Bài tập online'}</span>${x.note_vi?`<br><span class="small muted">${esc(x.note_vi)}</span>`:''}</li>`).join('')}</ul></div>`;
+  h+=`<div class="card hi-card" id="pdfCard"><h3 class="ih">${em('memo')}Bước 4 · Làm bài trên giấy</h3><p>In bài tập giấy của buổi ${n}, làm trong khoảng ${D.minutes||30} phút, không mở web trong lúc làm.</p><div class="row"><a class="btn hi" href="pdf/buoi-${pad2(n)}.pdf" download="Buoi-${pad2(n)}-${esc(D.theme_en||'').replace(/[^A-Za-z]+/g,'-')}.pdf">⬇ Tải bài tập giấy của ngày</a><a class="btn ghost" href="pdf/buoi-${pad2(n)}.pdf" target="_blank" rel="noopener">Mở xem</a></div></div>`;
+  return h}
+function wireLearn(n){
+  const yt=$('#vidCard .yt-btn');if(yt)yt.onclick=()=>{const id=yt.parentElement.dataset.id;yt.parentElement.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0" title="Video ngữ pháp" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;S.days[n]=Object.assign(S.days[n]||{},{video:Date.now()});save()};
+  const games=gamesForDay(n);const gb=$('#gameBox');
+  const openG=i=>{document.querySelectorAll('#gameCard .g-tab').forEach(b=>b.setAttribute('aria-selected',+b.dataset.g===i?'true':'false'));const gm=games[i];
+    renderGame(gb,gm,r=>{const rec=S.days[n]=S.days[n]||{};rec.games=rec.games||{};const old=rec.games[gm.key]||{plays:0,best:0,stars:0};
+      rec.games[gm.key]={type:gm.type,plays:old.plays+1,best:Math.max(old.best,r.score),total:r.total,stars:Math.max(old.stars||0,r.stars),last:r.score,ms:r.ms,at:Date.now()};save();
+      const tab=document.querySelector(`#gameCard .g-tab[data-g="${i}"]`);if(tab){const st=tab.querySelector('.g-stars');if(st)st.remove();tab.insertAdjacentHTML('beforeend',gStarHTML(rec.games[gm.key].stars))}
+      const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')})};
+  $('#gameCard .g-tabs').onclick=e=>{const b=e.target.closest('.g-tab');if(b)openG(+b.dataset.g)};
+  if(games.length)openG(0);
+  const W=(C.web&&C.web[n])||{};const ex=W.exam||[];const xb=$('#examBox');
+  if(xb){const openX=i=>{document.querySelectorAll('#examCard .x-tab').forEach(b=>b.setAttribute('aria-selected',+b.dataset.x===i?'true':'false'));const B=ex[i];
+      renderExam(xb,B,null,r=>{const rec=S.days[n]=S.days[n]||{};rec.exam=rec.exam||{};rec.exam[B.format]={correct:r.correct,total:r.total,at:Date.now()};save();
+        const tab=document.querySelector(`#examCard .x-tab[data-x="${i}"]`);if(tab)tab.innerHTML=esc(X_FMT[B.format]||B.format)+` <span class="pill ${r.correct/r.total>=.6?'good':'warn'}">${r.correct}/${r.total}</span>`;
+        const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')})};
+    $('#examCard .x-tabs').onclick=e=>{const b=e.target.closest('.x-tab');if(b)openX(+b.dataset.x)};openX(0)}
+}
 function renderDay(n){
   const D=DAYS[n-1];const rec=S.days[n]||{};
   const wk=rec.web;const pp=rec.paper;
@@ -427,11 +555,13 @@ function renderDay(n){
   const q=dueQueue(n);
   const stp=dayStatus(n);
   body.innerHTML=`<div class="card"><div class="dayhead">${dayIcon(n,'dh-ic',80)}<div class="dh-t"><p class="eyebrow">Buổi ${String(n).padStart(2,'0')}/14${D.type==='review'?' · Ôn tập':''}</p><h2>${esc(D.theme_vi)}</h2></div>${stp==='done'?'<span class="stamp">Xong</span>':stp==='part'?'<span class="stamp part">Đang làm</span>':''}</div><p class="lead">${esc(D.goal_vi||'')}</p>
-   <div class="row">${pill(wk,'Kiểm tra web')}${pill(pp,'Bài giấy')}</div></div>
-   <div class="card"><div class="row" style="justify-content:space-between"><h3 class="ih">${em('brain')}Bước 2 · Kiểm tra trên web</h3><span class="small muted">${(D.web_check||[]).length+(wk?0:q.length)} câu · gấp tập giấy lại</span></div>
+   <div class="row">${gPill(n)}${xPill(n)}${pill(wk,'Kiểm tra cuối buổi')}${pill(pp,'Bài giấy')}</div></div>
+   ${learnHTML(n)}
+   <div class="card" id="checkCard"><div class="row" style="justify-content:space-between"><h3 class="ih">${em('brain')}Bước 5 · Kiểm tra nhanh cuối buổi</h3><span class="small muted">${(D.web_check||[]).length+(wk?0:q.length)} câu · gấp tập giấy lại</span></div>
    ${wk?`<p class="score">${wk.correct/wk.total>=0.8?em('party-popper','',40):wk.correct/wk.total>=0.6?em('sparkles','',40):em('flexed-biceps','',40)}<span>Em đúng <b>${wk.correct}/${wk.total}</b> câu.</span></p>`:''}
    <form id="webForm"></form></div>
    <div class="card" id="paperCard"></div>`;
+  wireLearn(n);
   // web check
   const form=$('#webForm');
   let items, reviewIds;
@@ -482,10 +612,10 @@ function renderPaperKey(n,unlocked){
 }
 function renderPaperKeyLocal(n,unlocked,card){
   const D=DAYS[n-1];const rec=S.days[n]||{};
-  if(!unlocked){card.innerHTML=`<h3 class="ih">${em('locked')}Bước 3 · Chữa bài giấy</h3><p class="muted">Đáp án bài giấy sẽ mở sau khi em làm xong phần Kiểm tra trên web, để em kiểm tra trí nhớ trước.</p>`;return}
+  if(!unlocked){card.innerHTML=`<h3 class="ih">${em('locked')}Bước 6 · Chữa bài giấy</h3><p class="muted">Đáp án bài giấy sẽ mở sau khi em làm xong Kiểm tra nhanh cuối buổi, để em kiểm tra trí nhớ trước.</p>`;return}
   const P=D.paper;const order=Object.keys(SECTION_NAMES).filter(k=>P[k]);
   const saved=(rec.paper&&rec.paper.ticks)||{};
-  let html=`<div class="row" style="justify-content:space-between"><h3 class="ih">${em('memo')}Bước 3 · Chữa bài giấy</h3>${rec.paper?`<span class="pill good">Đúng ${rec.paper.correct}/${rec.paper.total}</span>`:''}</div><p class="small muted">Đối chiếu từng câu, tích vào câu em làm đúng, rồi bấm Lưu.</p><form id="paperForm" class="key-section">`;
+  let html=`<div class="row" style="justify-content:space-between"><h3 class="ih">${em('memo')}Bước 6 · Chữa bài giấy</h3>${rec.paper?`<span class="pill good">Đúng ${rec.paper.correct}/${rec.paper.total}</span>`:''}</div><p class="small muted">Đối chiếu từng câu, tích vào câu em làm đúng, rồi bấm Lưu.</p><form id="paperForm" class="key-section">`;
   order.forEach(k=>{const sec=P[k];html+=`<h3 style="margin-top:10px;font-size:1.05rem">${SECTION_NAMES[k]}</h3>`;
     (sec.items||[]).forEach(it=>{const id=it.id;html+=`<label class="key-item"><input type="checkbox" name="${esc(id)}" id="pk_${esc(id)}" ${saved[id]?'checked':''}><span><span class="small muted">${esc(id.replace(/^d\d+/,'').replace(/^([A-Z]\d?)_?(\d+)$/,'$1.$2'))}</span> ${esc(it.q)}<br><span class="key-ans">→ ${esc(keyAnswer(it))}</span></span></label>`})});
   const F=P.F_writing;
@@ -639,6 +769,8 @@ function vPlan(){
   $('#dpwR').oninput=e=>{S.plan.dpw=+e.target.value;$('#dpwO').textContent=S.plan.dpw;draw();save()};
 }
 
+/*__GAMES_JS__*/
+/*__EXAM_JS__*/
 /*__SCHOOL_JS__*/
 
 /*__CLOUD_JS__*/
@@ -657,7 +789,7 @@ async function unpack(code){
 }
 function summary(){
   const A=agg();const eff=efficiency(A);const entry=S.diag;
-  const days={};for(let i=1;i<=14;i++){const r=S.days[i];if(r)days[i]=[r.web?r.web.correct:null,r.web?r.web.total:null,r.paper?r.paper.correct:null,r.paper?r.paper.total:null,r.web?r.web.at:(r.paper?r.paper.at:null)]}
+  const days={};for(let i=1;i<=14;i++){const r=S.days[i];if(r){const g=Object.values(r.games||{}),x=Object.values(r.exam||{});days[i]=[r.web?r.web.correct:null,r.web?r.web.total:null,r.paper?r.paper.correct:null,r.paper?r.paper.total:null,r.web?r.web.at:(r.paper?r.paper.at:(g.length?Math.max(...g.map(y=>y.at)):null)),g.reduce((t,y)=>t+(y.stars||0),0),g.length,x.length?x.reduce((t,y)=>t+y.correct,0):null,x.length?x.reduce((t,y)=>t+y.total,0):null]}}
   const wrong=Object.entries(S.queue).map(([id,q])=>[id,q.wrong||1]);
   return {v:1,n:S.name,d:S.diag&&{t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands},f:S.final&&{t:S.final.total,o:S.final.of,l:S.final.level,b:S.final.bands},days,sk:A.skills,rt:A.retry,mq:A.mastered,q:wrong,p:S.plan,e:eff.f,sd:A.studyDays,sp:A.span,at:Date.now()};
 }

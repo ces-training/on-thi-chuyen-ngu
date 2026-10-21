@@ -1,0 +1,60 @@
+{
+  "day": 9,
+  "grammar_games": {
+    "sort": {
+      "title_vi": "Từ nào đi với many / a few, từ nào đi với much / a little?",
+      "groups": [
+        {"name": "many / a few + …", "items": ["ingredients", "festivals", "recipes", "dishes", "spring rolls"]},
+        {"name": "much / a little + …", "items": ["sugar", "information", "fish sauce", "advice", "bread"]}
+      ]
+    },
+    "unjumble": [
+      {"sentence": "How many guests are coming to the festival?", "hint_vi": "How many + danh từ đếm được số nhiều."},
+      {"sentence": "We only need a little sugar for this recipe.", "hint_vi": "a little + danh từ không đếm được (sugar)."},
+      {"sentence": "My grandma gave me some useful advice about cooking.", "hint_vi": "advice không đếm được → dùng some, không dùng an."},
+      {"sentence": "There are plenty of local dishes to try in Huế.", "hint_vi": "plenty of dùng được với danh từ đếm được số nhiều."},
+      {"sentence": "Very few tourists know about this tiny village.", "hint_vi": "few (không có a) = rất ít, nghĩa tiêu cực."}
+    ],
+    "truefalse": [
+      {"s": "Can you give me an information about the festival?", "ok": false, "fix": "Can you give me some information about the festival?", "why_vi": "information không đếm được → không dùng an; dùng some."},
+      {"s": "There are a few bananas in the fridge.", "ok": true, "fix": "There are a few bananas in the fridge.", "why_vi": "Đúng: bananas đếm được số nhiều → a few."},
+      {"s": "How much eggs do we need for the cake?", "ok": false, "fix": "How many eggs do we need for the cake?", "why_vi": "eggs đếm được số nhiều → How many, không dùng How much."},
+      {"s": "The moon looks beautiful during the Mid-Autumn Festival.", "ok": true, "fix": "The moon looks beautiful during the Mid-Autumn Festival.", "why_vi": "Đúng: chỉ có một mặt trăng → the moon."},
+      {"s": "I'd like a little milk in my tea, please.", "ok": true, "fix": "I'd like a little milk in my tea, please.", "why_vi": "Đúng: milk không đếm được → a little."},
+      {"s": "My mum bought two breads at the bakery.", "ok": false, "fix": "My mum bought two loaves of bread at the bakery.", "why_vi": "bread không đếm được, không thêm -s; dùng two loaves of bread."},
+      {"s": "We usually have the breakfast at 6:30.", "ok": false, "fix": "We usually have breakfast at 6:30.", "why_vi": "Không dùng mạo từ trước tên bữa ăn: have breakfast."},
+      {"s": "There is plenty of food for everyone at the party.", "ok": true, "fix": "There is plenty of food for everyone at the party.", "why_vi": "Đúng: plenty of + food (không đếm được) + động từ số ít is."}
+    ]
+  },
+  "exam": [
+    {
+      "format": "synonym",
+      "title_vi": "Từ đồng nghĩa",
+      "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu tìm từ đồng nghĩa: mỗi câu có một từ hoặc cụm từ VIẾT HOA, em chọn A, B, C hoặc D có nghĩa gần nhất.",
+      "tip_vi": "Mẹo: thay từng đáp án vào chỗ từ viết hoa; đáp án đúng giữ nguyên nghĩa câu. Cẩn thận với từ chỉ liên quan chủ đề nhưng khác nghĩa.",
+      "kind": "mcq",
+      "items": [
+        {"q": "We have RUN OUT OF rice, so someone has to go to the market.", "options": ["bought plenty of", "used up all the", "cooked a little", "forgotten to buy"], "answer": 1, "explain_vi": "run out of = hết sạch, tức là đã dùng hết (used up all the)."},
+        {"q": "Phở is one of the most POPULAR dishes in Việt Nam.", "options": ["expensive", "traditional", "liked by many people", "difficult to cook"], "answer": 2, "explain_vi": "popular = được nhiều người yêu thích. 'traditional' (truyền thống) là nghĩa khác."},
+        {"q": "My aunt PREPARED a delicious meal for the whole family.", "options": ["ate", "made", "ordered", "bought"], "answer": 1, "explain_vi": "prepare a meal = chuẩn bị, nấu một bữa ăn, gần nghĩa với make a meal."},
+        {"q": "The flower festival in Đà Lạt ATTRACTS thousands of visitors every year.", "options": ["draws", "sends", "refuses", "surprises"], "answer": 0, "explain_vi": "attract = thu hút; draw (visitors/crowds) cũng có nghĩa thu hút người đến."},
+        {"q": "The soup tasted rather BLAND, so I added some fish sauce and pepper.", "options": ["too spicy", "very sweet", "too salty", "without much flavour"], "answer": 3, "explain_vi": "bland = nhạt, ít hương vị; vì vậy mới phải thêm nước mắm và tiêu."}
+      ]
+    },
+    {
+      "format": "open_cloze",
+      "title_vi": "Điền từ vào đoạn văn (không có lựa chọn)",
+      "intro_vi": "Đề chuyên Anh của Sở thường có bài điền một từ vào đoạn văn mà không cho sẵn lựa chọn. Từ cần điền hay là mạo từ, giới từ, lượng từ hoặc trợ động từ.",
+      "tip_vi": "Mẹo: nhìn từ ngay sau chỗ trống. Danh từ số ít đếm được cần a/an/the; danh từ số nhiều đi với many/few; trước buổi trong ngày dùng in.",
+      "kind": "gap_text",
+      "text": "Have you ever tried bánh cuốn? It is [1] traditional dish from the north of Việt Nam, and many people in Hà Nội eat it [2] the morning. How [3] main ingredients do you need to make it? Only four: rice flour, water, minced pork and mushrooms. The cook spreads a thin layer of rice batter on a cloth over a pot of boiling water. After a [4] seconds, the soft rice sheet is ready. It is filled with pork and mushrooms, then rolled up. Bánh cuốn is served with fried shallots, fresh herbs and a small bowl of dipping sauce. [5] sauce is made from fish sauce, sugar, lime and water, and it gives the dish its special flavour. If you visit Hà Nội, try it at a local market!",
+      "items": [
+        {"answer": "a", "accept": [], "explain_vi": "Danh từ đếm được số ít, nhắc lần đầu: a traditional dish."},
+        {"answer": "in", "accept": ["during"], "explain_vi": "Buổi trong ngày đi với in: in the morning."},
+        {"answer": "many", "accept": [], "explain_vi": "ingredients là danh từ đếm được số nhiều → How many."},
+        {"answer": "few", "accept": [], "explain_vi": "seconds đếm được số nhiều → a few seconds (vài giây)."},
+        {"answer": "The", "accept": ["the", "This", "this"], "explain_vi": "Nước chấm đã được nhắc ở câu trước → dùng The sauce (This sauce cũng được)."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "day": 11,
+  "grammar_games": {
+    "sort": {
+      "title_vi": "Mỗi cụm cần who, which hay whose?",
+      "groups": [
+        {"name": "who", "items": ["the singer ___ won the contest", "my aunt, ___ lives in Đà Nẵng", "a friend ___ never tells lies"]},
+        {"name": "which", "items": ["the phone ___ I bought last week", "the dog ___ barks every night", "a film ___ made everyone cry"]},
+        {"name": "whose", "items": ["a girl ___ dad is a pilot", "the neighbour ___ cat sleeps in our garden", "students ___ projects won prizes"]}
+      ]
+    },
+    "unjumble": [
+      {"sentence": "Nam is the boy whose sister plays for our team.", "hint_vi": "whose + danh từ (chỉ sở hữu)"},
+      {"sentence": "This is the park where we often play badminton.", "hint_vi": "where thay cho nơi chốn"},
+      {"sentence": "I trust friends who keep their promises.", "hint_vi": "who thay cho người"},
+      {"sentence": "My grandfather, who is very generous, loves helping others.", "hint_vi": "Mệnh đề không xác định nằm giữa hai dấu phẩy"},
+      {"sentence": "The person that I look up to most is my aunt.", "hint_vi": "that trong mệnh đề xác định + look up to"}
+    ],
+    "truefalse": [
+      {"s": "Mr Hải, that teaches us PE, is very strict.", "ok": false, "fix": "Mr Hải, who teaches us PE, is very strict.", "why_vi": "Sau dấu phẩy (mệnh đề không xác định) không dùng that; nói về người thì dùng who."},
+      {"s": "The girl who sits behind me always shares her pencils.", "ok": true, "fix": "The girl who sits behind me always shares her pencils.", "why_vi": "who thay cho người (the girl); mệnh đề xác định nên không có dấu phẩy."},
+      {"s": "This is the house which my grandparents live.", "ok": false, "fix": "This is the house where my grandparents live.", "why_vi": "Sau chỗ trống là câu đủ ý (my grandparents live) và thay cho nơi chốn → where."},
+      {"s": "I know a boy who father is a pilot.", "ok": false, "fix": "I know a boy whose father is a pilot.", "why_vi": "'father của cậu bé' là sở hữu → whose + danh từ."},
+      {"s": "The cake that Lan made was delicious.", "ok": true, "fix": "The cake that Lan made was delicious.", "why_vi": "that thay cho vật trong mệnh đề xác định (không dấu phẩy) là đúng."},
+      {"s": "Đà Lạt, which is famous for its flowers, is cool all year round.", "ok": true, "fix": "Đà Lạt, which is famous for its flowers, is cool all year round.", "why_vi": "which thay cho địa danh làm chủ ngữ (which is famous…), đặt giữa hai dấu phẩy."},
+      {"s": "The man which helped us was very kind.", "ok": false, "fix": "The man who helped us was very kind.", "why_vi": "the man là người → who (hoặc that), không dùng which."},
+      {"s": "We visited the school where my mum used to teach.", "ok": true, "fix": "We visited the school where my mum used to teach.", "why_vi": "where thay cho nơi chốn (the school), sau đó là câu đầy đủ."}
+    ]
+  },
+  "exam": [
+    {
+      "format": "antonym",
+      "title_vi": "Từ trái nghĩa",
+      "intro_vi": "Đề chuyên Chuyên Ngoại ngữ có 4 câu tìm từ trái nghĩa: mỗi câu có một từ hoặc cụm từ VIẾT HOA, em chọn A, B, C hoặc D có nghĩa NGƯỢC lại.",
+      "tip_vi": "Mẹo: đề luôn cài một từ ĐỒNG nghĩa để bẫy. Hiểu nghĩa từ in hoa trong câu trước, rồi mới tìm từ ngược nghĩa.",
+      "kind": "mcq",
+      "items": [
+        {"q": "Linh was very PATIENT with her little brother while he was learning to read.", "options": ["calm", "gentle", "impatient", "careful"], "answer": 2, "explain_vi": "patient (kiên nhẫn) >< impatient (thiếu kiên nhẫn). 'calm', 'gentle' gần nghĩa, không phải trái nghĩa."},
+        {"q": "All my classmates SUPPORTED my idea for the class trip.", "options": ["agreed with", "opposed", "came up with", "looked up to"], "answer": 1, "explain_vi": "support (ủng hộ) >< oppose (phản đối). 'agreed with' là đồng nghĩa – bẫy!"},
+        {"q": "Minh felt CONFIDENT before his speaking test because he had practised a lot.", "options": ["nervous", "relaxed", "proud", "ready"], "answer": 0, "explain_vi": "confident (tự tin) >< nervous (lo lắng, hồi hộp)."},
+        {"q": "Most students TRUST Ms Hoa because she always keeps her promises.", "options": ["rely on", "believe in", "look up to", "doubt"], "answer": 3, "explain_vi": "trust (tin tưởng) >< doubt (nghi ngờ). 'rely on', 'believe in' gần nghĩa với trust."},
+        {"q": "Mai and her best friend ARGUE about small things almost every day.", "options": ["quarrel", "agree", "disagree", "complain"], "answer": 1, "explain_vi": "argue (cãi nhau) >< agree (đồng ý, nhất trí). 'quarrel', 'disagree' cùng nghĩa với argue."}
+      ]
+    },
+    {
+      "format": "sentence_combining",
+      "title_vi": "Nối câu",
+      "intro_vi": "Đề chuyên Chuyên Ngoại ngữ có 5 câu nối câu: cho hai câu, em chọn A, B, C hoặc D là câu nối đúng và giữ nguyên nghĩa. Mệnh đề quan hệ là cách nối gặp rất nhiều.",
+      "tip_vi": "Mẹo: loại ngay đáp án có 'that' sau dấu phẩy, đáp án lặp lại đại từ (him, it, there) và đáp án dùng sai who/which/whose/where.",
+      "kind": "mcq",
+      "items": [
+        {"q": "Mr Tùng is our new neighbour. His dog barks all night.", "options": ["Mr Tùng, whose dog barks all night, is our new neighbour.", "Mr Tùng, who dog barks all night, is our new neighbour.", "Mr Tùng, that his dog barks all night, is our new neighbour.", "Mr Tùng, whose his dog barks all night, is our new neighbour."], "answer": 0, "explain_vi": "His dog → whose dog (sở hữu). Không thêm 'his' sau whose, không dùng that sau dấu phẩy."},
+        {"q": "Đà Nẵng is a beautiful city. I spent my summer holiday there.", "options": ["Đà Nẵng, which I spent my summer holiday, is a beautiful city.", "Đà Nẵng, where I spent my summer holiday, is a beautiful city.", "Đà Nẵng, that I spent my summer holiday there, is a beautiful city.", "Đà Nẵng, where I spent my summer holiday there, is a beautiful city."], "answer": 1, "explain_vi": "there (ở đó) → where. Đã dùng where thì bỏ 'there'; dùng which thì phải có 'in'."},
+        {"q": "The girl is very honest. She found my wallet.", "options": ["The girl which found my wallet is very honest.", "The girl, that found my wallet, is very honest.", "The girl found my wallet who is very honest.", "The girl who found my wallet is very honest."], "answer": 3, "explain_vi": "She → who, đặt ngay sau 'the girl'. Mệnh đề xác định nên không có dấu phẩy."},
+        {"q": "The film made me cry. I watched it last night.", "options": ["The film which I watched it last night made me cry.", "The film who I watched last night made me cry.", "The film which I watched last night made me cry.", "The film I watched last night it made me cry."], "answer": 2, "explain_vi": "it → which (vật). Đã có which thì bỏ 'it'; who chỉ dùng cho người."},
+        {"q": "Hùng's father is a firefighter. Everyone in our street looks up to him.", "options": ["Hùng's father, that everyone in our street looks up to, is a firefighter.", "Hùng's father, who everyone in our street looks up to, is a firefighter.", "Hùng's father, who everyone in our street looks up to him, is a firefighter.", "Hùng's father, whose everyone in our street looks up to, is a firefighter."], "answer": 1, "explain_vi": "him → who (giới từ 'to' vẫn đứng cuối). Không dùng that sau dấu phẩy, không lặp lại 'him'."}
+      ]
+    }
+  ]
+}

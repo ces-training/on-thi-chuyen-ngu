@@ -1,0 +1,51 @@
+{
+  "day": 14,
+  "grammar_games": {
+    "sort": {
+      "title_vi": "Xếp mỗi câu vào đúng chủ điểm ngữ pháp đã học",
+      "groups": [
+        {"name": "Passive voice", "items": ["Mooncakes are sold everywhere before the Mid-Autumn Festival.", "The exhibition was opened by the mayor.", "These songs were composed by a teenager."]},
+        {"name": "Conditionals", "items": ["If I were taller, I'd play basketball.", "If it's sunny tomorrow, we'll have a picnic.", "Water boils if you heat it to 100°C."]},
+        {"name": "Relative clauses", "items": ["The girl who won the prize is my cousin.", "Huế, which was the old capital, is beautiful.", "That's the café where we first met."]}
+      ]
+    },
+    "unjumble": [
+      {"sentence": "She told us that she was going to the museum.", "hint_vi": "Câu tường thuật (buổi 12): told + người nghe + that, lùi thì."},
+      {"sentence": "Nam decided to take part in the singing contest.", "hint_vi": "decide + to V (buổi 13); take part in = tham gia."},
+      {"sentence": "Have you ever been to an art exhibition?", "hint_vi": "Hiện tại hoàn thành với ever (buổi 3)."},
+      {"sentence": "The man whose car was stolen called the police.", "hint_vi": "whose + danh từ = của người đó (buổi 11)."},
+      {"sentence": "We were having dinner when the lights went out.", "hint_vi": "Quá khứ tiếp diễn bị quá khứ đơn cắt ngang (buổi 2)."}
+    ],
+    "truefalse": [
+      {"s": "The Mid-Autumn Festival is celebrated in September or October.", "ok": true, "fix": "The Mid-Autumn Festival is celebrated in September or October.", "why_vi": "Đúng: bị động hiện tại đơn (buổi 8), is + V3."},
+      {"s": "She said me that she was tired.", "ok": false, "fix": "She told me that she was tired.", "why_vi": "Có người nghe (me) thì dùng told, không dùng said (buổi 12)."},
+      {"s": "The singer whose songs I love is coming to Hà Nội.", "ok": true, "fix": "The singer whose songs I love is coming to Hà Nội.", "why_vi": "Đúng: whose + danh từ chỉ sở hữu (buổi 11)."},
+      {"s": "Đà Nẵng, that is in central Việt Nam, has beautiful beaches.", "ok": false, "fix": "Đà Nẵng, which is in central Việt Nam, has beautiful beaches.", "why_vi": "Mệnh đề có dấu phẩy không dùng that; nơi chốn làm chủ ngữ → which (buổi 11)."},
+      {"s": "If it rains this afternoon, we will stay inside.", "ok": true, "fix": "If it rains this afternoon, we will stay inside.", "why_vi": "Đúng: điều kiện loại 1, If + hiện tại đơn, will + V (buổi 10)."},
+      {"s": "We have lived in Hà Nội since five years.", "ok": false, "fix": "We have lived in Hà Nội for five years.", "why_vi": "Khoảng thời gian dùng for; since đi với mốc thời gian (buổi 3)."},
+      {"s": "There isn't much traffic on Sunday mornings.", "ok": true, "fix": "There isn't much traffic on Sunday mornings.", "why_vi": "Đúng: traffic không đếm được → much (buổi 9)."},
+      {"s": "He avoided to answer my question.", "ok": false, "fix": "He avoided answering my question.", "why_vi": "avoid + V-ing, không dùng to V (buổi 5 và 13)."}
+    ]
+  },
+  "exam": [
+    {
+      "format": "mixed",
+      "title_vi": "Đề thi thu nhỏ",
+      "intro_vi": "10 câu trộn các dạng đã luyện: phát âm, trọng âm, hoàn thành câu, đồng nghĩa, trái nghĩa, hội thoại, tìm lỗi sai, câu gần nghĩa, nối câu – giống đề Chuyên Ngoại ngữ và đề chung vào 10.",
+      "tip_vi": "Mẹo: đọc nhãn đầu câu để biết dạng bài, áp dụng mẹo của dạng đó. Câu nào khó thì đánh dấu, làm câu dễ trước.",
+      "kind": "mcq",
+      "items": [
+        {"format": "pronunciation", "q": "[Phát âm] Chọn từ có phần gạch chân phát âm khác các từ còn lại.", "options": ["rehears[[es]]", "compos[[es]]", "admir[[es]]", "analys[[es]]"], "answer": 2, "explain_vi": "admires đọc /z/ (kết thúc bằng âm hữu thanh); rehearses, composes, analyses đọc /ɪz/ vì kết thúc bằng âm /s/ hoặc /z/."},
+        {"format": "stress", "q": "[Trọng âm] Chọn từ có trọng âm khác các từ còn lại.", "options": ["respect", "support", "argue", "admire"], "answer": 2, "explain_vi": "argue nhấn âm 1 (AR-gue); respect, support, admire nhấn âm 2."},
+        {"format": "sentence_completion", "q": "[Hoàn thành câu] This beautiful song ______ by a 15-year-old student last year.", "options": ["composed", "was composed", "is composed", "has composed"], "answer": 1, "explain_vi": "Bài hát được sáng tác (bị động), 'last year' → quá khứ đơn: was composed (buổi 8, 13)."},
+        {"format": "synonym", "q": "[Đồng nghĩa] Many young artists LOOK UP TO this famous painter.", "options": ["look after", "admire", "argue with", "look for"], "answer": 1, "explain_vi": "look up to = kính trọng, ngưỡng mộ = admire (buổi 11, 13)."},
+        {"format": "antonym", "q": "[Trái nghĩa] Our neighbour is very GENEROUS; he often gives us fruit from his garden.", "options": ["kind", "honest", "mean", "friendly"], "answer": 2, "explain_vi": "generous = hào phóng; trái nghĩa là mean = keo kiệt (buổi 11)."},
+        {"format": "dialogue_completion", "q": "[Hội thoại] A: What would you do if you won the art competition?\nB: ______", "options": ["I'm taking part in it.", "Yes, I would.", "I won it last year.", "I would buy a new set of paints."], "answer": 3, "explain_vi": "Câu hỏi loại 2 What would you do if...? → trả lời I would + V (buổi 10)."},
+        {"format": "error_id", "q": "[Tìm lỗi sai] The scientists didn't have much evidences to support their theory.", "options": ["didn't have", "much", "evidences", "support"], "answer": 2, "explain_vi": "evidence không đếm được, không thêm -s → much evidence (buổi 9, 12)."},
+        {"format": "closest_meaning", "q": "[Câu gần nghĩa] 'I will help you with your project,' my brother said to me.", "options": ["My brother told me that he would help me with my project.", "My brother told me that I would help him with his project.", "My brother said me that he will help me with my project.", "My brother told me that he helps me with my project."], "answer": 0, "explain_vi": "Tường thuật: will → would, I → he, your → my; có người nghe thì dùng told me (buổi 12)."},
+        {"format": "sentence_combining", "q": "[Nối câu] I have a friend. His father is a famous composer.", "options": ["I have a friend who father is a famous composer.", "I have a friend whose father is a famous composer.", "I have a friend which father is a famous composer.", "I have a friend whose his father is a famous composer."], "answer": 1, "explain_vi": "His father → whose father (sở hữu); sau whose không dùng thêm his (buổi 11)."},
+        {"format": "sentence_completion", "q": "[Hoàn thành câu] Remember ______ off the lights before you leave the classroom.", "options": ["switching", "to switch", "switch", "switched"], "answer": 1, "explain_vi": "remember to V = nhớ phải làm (việc chưa làm); switch off = tắt (buổi 4, 13)."}
+      ]
+    }
+  ]
+}

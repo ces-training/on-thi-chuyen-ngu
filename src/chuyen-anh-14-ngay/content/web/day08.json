@@ -1,0 +1,60 @@
+{
+  "day": 8,
+  "grammar_games": {
+    "sort": {
+      "title_vi": "Xếp mỗi câu vào đúng nhóm: bị động hiện tại đơn, bị động quá khứ đơn hay câu chủ động",
+      "groups": [
+        {"name": "Present simple passive", "items": ["Coffee is grown in the Central Highlands.", "These cartoons are watched by millions of kids.", "The school gate is locked at 6 p.m."]},
+        {"name": "Past simple passive", "items": ["The film was made in South Korea.", "Two new libraries were opened last year.", "My phone was stolen on the bus."]},
+        {"name": "Active voice", "items": ["The reporter interviewed our head teacher.", "Millions of people watch this show.", "My mum writes articles for a magazine."]}
+      ]
+    },
+    "unjumble": [
+      {"sentence": "Most football matches are broadcast live on this channel.", "hint_vi": "Bị động hiện tại đơn: are + V3 (broadcast – broadcast – broadcast)."},
+      {"sentence": "This article was written by a famous journalist.", "hint_vi": "Bị động quá khứ đơn có 'by + người làm'."},
+      {"sentence": "Was this video made by your classmates?", "hint_vi": "Câu hỏi bị động quá khứ: Was + chủ ngữ + V3 + by...?"},
+      {"sentence": "Mobile phones are not allowed in the exam room.", "hint_vi": "Phủ định bị động hiện tại: are not + V3."},
+      {"sentence": "The concert wasn't broadcast live because of the storm.", "hint_vi": "Phủ định bị động quá khứ: wasn't + V3."}
+    ],
+    "truefalse": [
+      {"s": "The magazine is publish every month.", "ok": false, "fix": "The magazine is published every month.", "why_vi": "Bị động cần be + V3: is published, không phải is publish."},
+      {"s": "My bike was repaired by my dad yesterday.", "ok": true, "fix": "My bike was repaired by my dad yesterday.", "why_vi": "Đúng: 'yesterday' → quá khứ; chủ ngữ số ít → was + V3."},
+      {"s": "The prizes gave to the best students last Friday.", "ok": false, "fix": "The prizes were given to the best students last Friday.", "why_vi": "Giải thưởng không tự trao → bị động; chủ ngữ số nhiều, quá khứ → were given."},
+      {"s": "These cakes are made by my grandmother.", "ok": true, "fix": "These cakes are made by my grandmother.", "why_vi": "Đúng: chủ ngữ số nhiều → are + V3 (made)."},
+      {"s": "Long Biên Bridge was build in 1902.", "ok": false, "fix": "Long Biên Bridge was built in 1902.", "why_vi": "V3 của build là built (build – built – built)."},
+      {"s": "Is breakfast served at 7 a.m. in this hotel?", "ok": true, "fix": "Is breakfast served at 7 a.m. in this hotel?", "why_vi": "Đúng: câu hỏi bị động hiện tại đơn, đưa 'is' lên đầu câu."},
+      {"s": "These shoes was made in Việt Nam.", "ok": false, "fix": "These shoes were made in Việt Nam.", "why_vi": "'These shoes' số nhiều → were, không dùng was."},
+      {"s": "The posters weren't printed on time.", "ok": true, "fix": "The posters weren't printed on time.", "why_vi": "Đúng: phủ định bị động quá khứ, số nhiều → weren't + V3."}
+    ]
+  },
+  "exam": [
+    {
+      "format": "sentence_completion",
+      "title_vi": "Hoàn thành câu",
+      "intro_vi": "Đề Chuyên Ngoại ngữ có 10 câu hoàn thành câu (chọn A, B, C, D); phần Ngôn ngữ của đề Sở cũng có nhiều câu như vậy, kiểm tra ngữ pháp, từ vựng, cụm cố định như make/do.",
+      "tip_vi": "Mẹo: đọc cả câu, tìm dấu hiệu (thời gian, chủ ngữ là người hay vật) rồi mới nhìn đáp án. Cụm make/do thì phải học thuộc.",
+      "kind": "mcq",
+      "items": [
+        {"q": "Please don't ______ any noise in the studio – the show is broadcast live.", "options": ["do", "make", "give", "take"], "answer": 1, "explain_vi": "Cụm cố định: make (a) noise = gây ồn. Không nói 'do noise'."},
+        {"q": "Don't worry about winning the contest. Just ______ your best.", "options": ["make", "take", "do", "give"], "answer": 2, "explain_vi": "Cụm cố định: do your best = cố gắng hết sức."},
+        {"q": "The first Vietnamese-language newspaper, Gia Định báo, ______ in 1865.", "options": ["published", "was published", "is published", "has published"], "answer": 1, "explain_vi": "Tờ báo được xuất bản (bị động), mốc 1865 là quá khứ → was published."},
+        {"q": "Nguyễn Nhật Ánh's novel 'Mắt biếc' ______ into a film in 2019.", "options": ["made", "has made", "is made", "was made"], "answer": 3, "explain_vi": "Cuốn tiểu thuyết được chuyển thể thành phim (bị động), năm 2019 → was made into a film."},
+        {"q": "I only read news on ______ websites that always check their facts.", "options": ["creative", "reliable", "attractive", "expensive"], "answer": 1, "explain_vi": "reliable = đáng tin cậy; trang web luôn kiểm tra thông tin thì đáng tin."}
+      ]
+    },
+    {
+      "format": "error_id",
+      "title_vi": "Tìm lỗi sai",
+      "intro_vi": "Đề chung vào lớp 10 thường có vài câu tìm lỗi sai: mỗi câu có 4 phần gạch chân A, B, C, D, em chọn phần sai. Lỗi hay gặp: thì, bị động, hoà hợp chủ ngữ – động từ.",
+      "tip_vi": "Mẹo: tìm động từ chính trước. Hỏi: chủ ngữ số ít hay nhiều? Chủ ngữ tự làm hay được làm? Đúng dạng V3 chưa?",
+      "kind": "mcq",
+      "items": [
+        {"q": "These advertisements are design to make children want more toys.", "options": ["advertisements", "are design", "to make", "more toys"], "answer": 1, "explain_vi": "Bị động cần V3: are designed (được thiết kế), không phải are design."},
+        {"q": "The article was wrote by a student who came across the story online.", "options": ["was wrote", "a student", "came across", "online"], "answer": 0, "explain_vi": "V3 của write là written → was written. 'wrote' là quá khứ đơn, không dùng sau 'was'."},
+        {"q": "My sister always does a lot of mistakes when she types messages quickly.", "options": ["always", "does", "when she types", "quickly"], "answer": 1, "explain_vi": "Cụm cố định: make a mistake (mắc lỗi) → makes. Không nói 'do mistakes'."},
+        {"q": "In my opinion, this website is more reliable than that one because its news are checked carefully.", "options": ["In my opinion", "more reliable", "news are", "carefully"], "answer": 2, "explain_vi": "'news' là danh từ không đếm được, đi với động từ số ít → its news is checked."},
+        {"q": "Last weekend, two football matches was broadcast live on VTV.", "options": ["Last weekend", "football matches", "was broadcast", "on VTV"], "answer": 2, "explain_vi": "Chủ ngữ 'two football matches' số nhiều → were broadcast, không dùng was."}
+      ]
+    }
+  ]
+}

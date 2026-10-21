@@ -1,0 +1,72 @@
+{
+  "day": 3,
+  "grammar_games": {
+    "sort": {
+      "title_vi": "Xếp mỗi câu vào đúng thì",
+      "groups": [
+        {"name": "Present perfect", "items": [
+          "We have recycled 50 kg of paper so far.",
+          "Have you ever planted a tree?",
+          "They haven't cleaned the beach yet.",
+          "I have just thrown away the old boxes.",
+          "The river has been dirty since 2015."
+        ]},
+        {"name": "Past simple", "items": [
+          "We planted trees last Sunday.",
+          "The storm destroyed many houses in 2020.",
+          "I visited Cuc Phuong two years ago.",
+          "When did you start recycling?",
+          "Lan picked up rubbish in the park yesterday."
+        ]}
+      ]
+    },
+    "unjumble": [
+      {"sentence": "Have you ever seen a sea turtle?", "hint_vi": "Câu hỏi hiện tại hoàn thành với ever"},
+      {"sentence": "We have used cloth bags since last year.", "hint_vi": "since + mốc thời gian"},
+      {"sentence": "The factory closed three years ago because of pollution.", "hint_vi": "… ago → quá khứ đơn"},
+      {"sentence": "We haven't recycled our old batteries yet.", "hint_vi": "yet đứng cuối câu phủ định"},
+      {"sentence": "Many species of frogs have disappeared from this area.", "hint_vi": "Hiện tại hoàn thành: kết quả còn đến bây giờ"}
+    ],
+    "truefalse": [
+      {"s": "We have cleaned the beach last weekend.", "ok": false, "fix": "We cleaned the beach last weekend.", "why_vi": "Có thời gian xác định (last weekend) → quá khứ đơn."},
+      {"s": "The air in Hanoi has become more polluted in recent years.", "ok": true, "fix": "The air in Hanoi has become more polluted in recent years.", "why_vi": "'in recent years' (những năm gần đây) đi với hiện tại hoàn thành."},
+      {"s": "My dad has worked at a recycling centre for ten years.", "ok": true, "fix": "My dad has worked at a recycling centre for ten years.", "why_vi": "for + khoảng thời gian, việc vẫn còn tiếp diễn → hiện tại hoàn thành."},
+      {"s": "I have lived here since five years.", "ok": false, "fix": "I have lived here for five years.", "why_vi": "five years là khoảng thời gian → dùng for, không dùng since."},
+      {"s": "Have you finished your science poster yet?", "ok": true, "fix": "Have you finished your science poster yet?", "why_vi": "yet đứng cuối câu hỏi hiện tại hoàn thành."},
+      {"s": "She hasn't already sorted the rubbish.", "ok": false, "fix": "She hasn't sorted the rubbish yet.", "why_vi": "Câu phủ định dùng yet ở cuối câu, không dùng already."},
+      {"s": "When have you started saving water?", "ok": false, "fix": "When did you start saving water?", "why_vi": "Câu hỏi với When hỏi thời điểm cụ thể → quá khứ đơn."},
+      {"s": "Look! Someone has thrown rubbish into the lake.", "ok": true, "fix": "Look! Someone has thrown rubbish into the lake.", "why_vi": "Việc vừa xảy ra, kết quả nhìn thấy ngay bây giờ → hiện tại hoàn thành."}
+    ]
+  },
+  "exam": [
+    {
+      "format": "antonym",
+      "title_vi": "Từ trái nghĩa",
+      "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu chọn từ/cụm từ TRÁI nghĩa với phần VIẾT HOA trong câu. Hôm nay em làm 5 câu.",
+      "tip_vi": "Hiểu nghĩa phần VIẾT HOA trước. Đề thường cài một đáp án ĐỒNG nghĩa làm bẫy, em loại nó ra trước.",
+      "kind": "mcq",
+      "items": [
+        {"q": "Many people still THROW AWAY plastic bottles after using them only once.", "options": ["keep", "drop", "dump", "break"], "answer": 0, "explain_vi": "throw away (vứt đi) >< keep (giữ lại). 'dump' gần nghĩa với throw away nên là bẫy."},
+        {"q": "The flood caused SERIOUS damage to the village.", "options": ["minor", "heavy", "terrible", "natural"], "answer": 0, "explain_vi": "serious (nghiêm trọng) >< minor (nhỏ, không đáng kể). heavy, terrible gần nghĩa với serious."},
+        {"q": "This national park PROTECTS many rare species.", "options": ["destroys", "saves", "guards", "shelters"], "answer": 0, "explain_vi": "protect (bảo vệ) >< destroy (phá huỷ). saves, guards, shelters đều gần nghĩa với protect."},
+        {"q": "The number of tigers in the wild has DECREASED over the last 100 years.", "options": ["risen", "fallen", "dropped", "changed"], "answer": 0, "explain_vi": "decrease (giảm) >< rise (tăng). fallen, dropped cùng nghĩa 'giảm' nên là bẫy."},
+        {"q": "This kind of mushroom is HARMLESS, so you can eat it.", "options": ["poisonous", "natural", "delicious", "safe"], "answer": 0, "explain_vi": "harmless (vô hại) >< poisonous (có độc). 'safe' đồng nghĩa với harmless."}
+      ]
+    },
+    {
+      "format": "word_formation",
+      "title_vi": "Dạng đúng của từ",
+      "intro_vi": "Đề Sở chuyên Anh Hà Nội có câu viết dạng đúng của từ cho sẵn trong phần kiến thức ngôn ngữ, đôi khi đặt trong một đoạn văn. Hôm nay em làm 5 chỗ trống.",
+      "tip_vi": "Xác định loại từ cần điền: trước danh từ là tính từ, sau a/an/the là danh từ. Nhớ đổi chính tả: fame → famous.",
+      "kind": "gap_text",
+      "text": "Our school is next to a small lake. Ten years ago, the lake was [1] for its pink lotus flowers. Then a factory was built nearby, and the water became [2] to fish and plants. Last year, our class started an [3] project to save the lake. Since then, we have collected bags and bags of rubbish, and we have asked visitors not to be [4] with their waste. Fish have come back, and a [5] newspaper has even written about our work.",
+      "items": [
+        {"answer": "famous", "accept": [], "base": "FAME", "explain_vi": "be famous for = nổi tiếng vì. fame bỏ -e, thêm -ous."},
+        {"answer": "poisonous", "accept": [], "base": "POISON", "explain_vi": "Sau 'became' cần tính từ: poison + -ous = poisonous (có độc)."},
+        {"answer": "environmental", "accept": [], "base": "ENVIRONMENT", "explain_vi": "Trước danh từ 'project' cần tính từ: environment + -al. Mạo từ 'an' hợp với từ bắt đầu bằng nguyên âm."},
+        {"answer": "careless", "accept": [], "base": "CARE", "explain_vi": "Nhắc khách đừng cẩu thả với rác: care + -less = careless (đuôi đã học ở buổi 2)."},
+        {"answer": "national", "accept": [], "base": "NATION", "explain_vi": "Trước danh từ 'newspaper' cần tính từ: nation + -al = national (toàn quốc)."}
+      ]
+    }
+  ]
+}

@@ -13,14 +13,21 @@ repo = here.parent.parent
 
 days = [json.load(open(here / f"content/day{n:02d}.json", encoding="utf-8")) for n in range(1, 15)]
 tests = json.load(open(here / "content/tests.json", encoding="utf-8"))
-blob = json.dumps({"days": days, "tests": tests}, ensure_ascii=False).replace("</", "<\\/")
+web = {}
+for n in range(1, 15):
+    p = here / f"content/web/day{n:02d}.json"
+    if p.exists():
+        w = json.load(open(p, encoding="utf-8")); web[n] = {"grammar_games": w.get("grammar_games", {}), "exam": w.get("exam", [])}
+mp = here / "content/web/media.json"
+media = json.load(open(mp, encoding="utf-8")) if mp.exists() else {}
+blob = json.dumps({"days": days, "tests": tests, "web": web, "media": media}, ensure_ascii=False).replace("</", "<\\/")
 cfg = json.load(open(here / "config.json", encoding="utf-8"))
 api = json.dumps(os.environ.get("API_URL_OVERRIDE", cfg.get("apiUrl", "")))
 
 sj = json.load(open(here / "schools.json", encoding="utf-8"))
 school_js = (here / "school.js").read_text(encoding="utf-8").replace("__SCHOOLS__", json.dumps(sj["options"], ensure_ascii=False)).replace("__EXAMS__", json.dumps(sj["exams"], ensure_ascii=False))
 brand = (repo / "src" / "brand" / "brand.css").read_text(encoding="utf-8")
-body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
+body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
 page = (
     "<!doctype html>\n<html lang=\"vi\">\n<head>\n<meta charset=\"utf-8\">\n"
     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"

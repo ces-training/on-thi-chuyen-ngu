@@ -1,0 +1,63 @@
+{
+  "day": 7,
+  "grammar_games": {
+    "sort": {
+      "title_vi": "Xếp mỗi câu vào đúng thì (ôn buổi 2–4)",
+      "groups": [
+        {"name": "Past continuous", "items": [
+          "At 9 p.m. yesterday, we were watching TV.",
+          "While Dad was cooking, I was reading.",
+          "They were waiting for the bus."
+        ]},
+        {"name": "Present perfect", "items": [
+          "I have already finished my project.",
+          "She has been abroad twice.",
+          "We haven't eaten lunch yet."
+        ]},
+        {"name": "Future (will / be going to / present continuous)", "items": [
+          "We're going to visit Hue next summer.",
+          "I think robots will do our housework one day.",
+          "I'm meeting Lan at 5 p.m. tomorrow."
+        ]}
+      ]
+    },
+    "unjumble": [
+      {"sentence": "We were having dinner when the power went off.", "hint_vi": "Quá khứ tiếp diễn + when + quá khứ đơn (buổi 2)"},
+      {"sentence": "Have you ever travelled abroad with your family?", "hint_vi": "Hiện tại hoàn thành với ever (buổi 3)"},
+      {"sentence": "I'm going to take up the guitar next month.", "hint_vi": "be going to: dự định có từ trước (buổi 4)"},
+      {"sentence": "It was such a boring film that I fell asleep.", "hint_vi": "such + a + tính từ + danh từ + that (buổi 5)"},
+      {"sentence": "You don't have to bring your own lunch.", "hint_vi": "don't have to = không cần phải (buổi 6)"}
+    ],
+    "truefalse": [
+      {"s": "She is owning two cats and a dog.", "ok": false, "fix": "She owns two cats and a dog.", "why_vi": "own là động từ trạng thái, không chia -ing (buổi 1)."},
+      {"s": "I was doing my homework when my friend called.", "ok": true, "fix": "I was doing my homework when my friend called.", "why_vi": "Việc đang diễn ra (was doing) bị việc khác xen vào (called) (buổi 2)."},
+      {"s": "We have moved to Hanoi in 2019.", "ok": false, "fix": "We moved to Hanoi in 2019.", "why_vi": "Có mốc thời gian xác định (in 2019) → quá khứ đơn (buổi 3)."},
+      {"s": "I'm sure you will pass the test.", "ok": true, "fix": "I'm sure you will pass the test.", "why_vi": "Dự đoán theo ý kiến cá nhân (I'm sure) → will + V (buổi 4)."},
+      {"s": "Hoa is more taller than her sister.", "ok": false, "fix": "Hoa is taller than her sister.", "why_vi": "Tính từ ngắn chỉ thêm -er, không dùng thêm more (buổi 5)."},
+      {"s": "You mustn't use your phone during the exam.", "ok": true, "fix": "You mustn't use your phone during the exam.", "why_vi": "mustn't + V = bị cấm (buổi 6)."},
+      {"s": "This is the most interesting book I have ever read.", "ok": true, "fix": "This is the most interesting book I have ever read.", "why_vi": "So sánh nhất của tính từ dài (the most) + hiện tại hoàn thành với ever."},
+      {"s": "He is enough old to drive a car.", "ok": false, "fix": "He is old enough to drive a car.", "why_vi": "enough đứng SAU tính từ: old enough to V (buổi 5)."}
+    ]
+  },
+  "exam": [
+    {
+      "format": "mixed",
+      "title_vi": "Đề thi thu nhỏ",
+      "intro_vi": "Đề thật trộn nhiều dạng: đề Chuyên Ngoại ngữ có 60 câu trắc nghiệm, đề chung có ngữ âm, trọng âm, hội thoại, viết lại câu. Bài này gồm 10 câu trộn các dạng của buổi 1–6.",
+      "tip_vi": "Đọc nhãn [ ] để biết dạng bài trước. Câu nào chưa chắc thì làm câu khác trước rồi quay lại.",
+      "kind": "mcq",
+      "items": [
+        {"format": "sentence_completion", "q": "[Hoàn thành câu] Phong ______ on his maths homework at the moment, so please don't disturb him.", "options": ["concentrates", "is concentrating", "concentrated", "has concentrated"], "answer": 1, "explain_vi": "'at the moment' → hiện tại tiếp diễn (buổi 1)."},
+        {"format": "pronunciation", "q": "[Phát âm] Chọn từ có phần gạch chân phát âm khác các từ còn lại.", "options": ["devic[[es]]", "souvenir[[s]]", "journey[[s]]", "passenger[[s]]"], "answer": 0, "explain_vi": "device tận cùng bằng âm /s/ nên devices đọc /ɪz/; ba từ kia đọc /z/."},
+        {"format": "stress", "q": "[Trọng âm] Chọn từ có trọng âm khác các từ còn lại.", "options": ["habit", "diet", "journey", "explore"], "answer": 3, "explain_vi": "explore /ɪkˈsplɔː/ là động từ, nhấn âm 2; habit, diet, journey là danh từ nhấn âm 1."},
+        {"format": "synonym", "q": "[Đồng nghĩa] Our flight to Da Nang was DELAYED because of the heavy storm.", "options": ["held up", "cancelled", "crowded", "booked"], "answer": 0, "explain_vi": "delayed (bị hoãn, đến muộn) ≈ held up. 'cancelled' là bị huỷ hẳn, khác nghĩa."},
+        {"format": "antonym", "q": "[Trái nghĩa] This street is always CROWDED on Saturday evenings.", "options": ["empty", "busy", "full", "noisy"], "answer": 0, "explain_vi": "crowded (đông đúc) >< empty (vắng). busy, full gần nghĩa với crowded nên là bẫy."},
+        {"format": "dialogue_completion", "q": "[Hội thoại] A: I've had a headache all morning.\nB: ______", "options": ["You should lie down for a while.", "Congratulations!", "Yes, please. I'd love to.", "It doesn't matter."], "answer": 0, "explain_vi": "Bạn bị đau đầu → đưa lời khuyên với should (buổi 6)."},
+        {"format": "dialogue_completion", "q": "[Hội thoại] A: Would you like to come to my birthday party on Sunday?\nB: ______", "options": ["I'd love to. What time does it start?", "Yes, I do.", "No, I wouldn't like.", "I'm going to have a party."], "answer": 0, "explain_vi": "Nhận lời mời 'Would you like to…?' → I'd love to. 'Yes, I do' không hợp với câu hỏi Would."},
+        {"format": "closest_meaning", "q": "[Câu gần nghĩa] I started learning English five years ago.", "options": ["I have learnt English for five years.", "I learnt English five years ago.", "I haven't learnt English for five years.", "I have learnt English since five years."], "answer": 0, "explain_vi": "started … ago = have + V3 + for + khoảng thời gian (buổi 3). 'since five years' sai."},
+        {"format": "closest_meaning", "q": "[Câu gần nghĩa] The bag was so heavy that Lan couldn't carry it.", "options": ["The bag was too heavy for Lan to carry.", "The bag was heavy enough for Lan to carry.", "Lan was strong enough to carry the bag.", "It was such heavy bag that Lan couldn't carry it."], "answer": 0, "explain_vi": "so … that … couldn't = too … for sb to V (buổi 5). Câu cuối thiếu 'a'."},
+        {"format": "sentence_completion", "q": "[Hoàn thành câu] My dad used to smoke, but he ______ it up three years ago.", "options": ["gave", "took", "set", "dropped"], "answer": 0, "explain_vi": "give up = từ bỏ thói quen (buổi 2); 'three years ago' → quá khứ đơn gave."}
+      ]
+    }
+  ]
+}

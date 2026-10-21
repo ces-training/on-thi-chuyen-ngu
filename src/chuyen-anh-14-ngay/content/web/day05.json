@@ -1,0 +1,231 @@
+{
+  "day": 5,
+  "grammar_games": {
+    "sort": {
+      "title_vi": "Chỗ trống cần too, so hay such? Xếp mỗi câu vào đúng nhóm.",
+      "groups": [
+        {
+          "name": "too (+ adj + to V)",
+          "items": [
+            "I'm ___ tired to go jogging tonight.",
+            "The soup was ___ salty for me to eat.",
+            "It's ___ late to drink coffee now."
+          ]
+        },
+        {
+          "name": "so (+ adj/adv + that)",
+          "items": [
+            "Vinh ran ___ fast that he won the race.",
+            "I was ___ hungry that I ate three bowls.",
+            "She has ___ much energy that she never stops."
+          ]
+        },
+        {
+          "name": "such (+ a/an + adj + N + that)",
+          "items": [
+            "It was ___ a long walk that my legs hurt.",
+            "We had ___ fun that we didn't want to leave.",
+            "These are ___ juicy mangoes that I want more."
+          ]
+        }
+      ]
+    },
+    "unjumble": [
+      {
+        "sentence": "My grandpa is fitter than most young people I know.",
+        "hint_vi": "So sánh hơn của tính từ ngắn: fit → fitter than"
+      },
+      {
+        "sentence": "Swimming is one of the best ways to stay fit.",
+        "hint_vi": "So sánh nhất: one of the best + danh từ số nhiều"
+      },
+      {
+        "sentence": "He isn't old enough to work out at the gym.",
+        "hint_vi": "adj + enough + to V"
+      },
+      {
+        "sentence": "This salad is too big for me to finish.",
+        "hint_vi": "too + adj + for sb + to V"
+      },
+      {
+        "sentence": "The match was so tiring that I went to bed early.",
+        "hint_vi": "so + adj + that + mệnh đề"
+      }
+    ],
+    "truefalse": [
+      {
+        "s": "My brother is enough tall to play basketball.",
+        "ok": false,
+        "fix": "My brother is tall enough to play basketball.",
+        "why_vi": "enough đứng SAU tính từ: tall enough."
+      },
+      {
+        "s": "Cycling is more healthier than taking the bus.",
+        "ok": false,
+        "fix": "Cycling is healthier than taking the bus.",
+        "why_vi": "healthier đã là so sánh hơn, không thêm more."
+      },
+      {
+        "s": "This is the most nutritious breakfast I have ever had.",
+        "ok": true,
+        "fix": "This is the most nutritious breakfast I have ever had.",
+        "why_vi": "Tính từ dài → the most + adj; thường đi với 'I have ever…'."
+      },
+      {
+        "s": "It was such a long race that many runners gave up.",
+        "ok": true,
+        "fix": "It was such a long race that many runners gave up.",
+        "why_vi": "such + a + adj + danh từ số ít + that."
+      },
+      {
+        "s": "We don't have enough time to cook a proper dinner.",
+        "ok": true,
+        "fix": "We don't have enough time to cook a proper dinner.",
+        "why_vi": "enough đứng TRƯỚC danh từ: enough time."
+      },
+      {
+        "s": "The weather was so hot that we couldn't work out outside.",
+        "ok": true,
+        "fix": "The weather was so hot that we couldn't work out outside.",
+        "why_vi": "so + tính từ (không có danh từ đi sau) + that."
+      },
+      {
+        "s": "My cold is badder than it was yesterday.",
+        "ok": false,
+        "fix": "My cold is worse than it was yesterday.",
+        "why_vi": "bad là bất quy tắc: bad – worse – the worst."
+      },
+      {
+        "s": "It was so a delicious soup that I had two bowls.",
+        "ok": false,
+        "fix": "It was such a delicious soup that I had two bowls.",
+        "why_vi": "Có a + adj + danh từ → dùng such, không dùng so."
+      }
+    ]
+  },
+  "exam": [
+    {
+      "format": "closest_meaning",
+      "title_vi": "Chọn câu gần nghĩa nhất",
+      "intro_vi": "Đề Chuyên Ngoại ngữ có 5 câu chọn câu gần nghĩa nhất với câu cho sẵn, mỗi câu 4 lựa chọn. Câu gốc hay dùng so sánh, too/enough, so/such; đáp án là cách nói khác giữ nguyên nghĩa.",
+      "tip_vi": "Mẹo: tách câu gốc thành từng ý nhỏ (ai hơn ai, làm được hay không), loại câu bị đảo nghĩa và câu sai ngữ pháp như 'such heavy'.",
+      "kind": "mcq",
+      "items": [
+        {
+          "q": "My brother doesn't run as fast as I do.",
+          "options": [
+            "My brother runs faster than me.",
+            "I run faster than my brother.",
+            "My brother and I run equally fast.",
+            "I don't run as fast as my brother."
+          ],
+          "answer": 1,
+          "explain_vi": "not as fast as = chậm hơn. Anh trai chạy chậm hơn em → em chạy nhanh hơn: I run faster than my brother."
+        },
+        {
+          "q": "The bag was so heavy that Lan couldn't lift it.",
+          "options": [
+            "The bag was heavy enough for Lan to lift.",
+            "The bag was such heavy that Lan couldn't lift it.",
+            "Lan was strong enough to lift the bag.",
+            "The bag was too heavy for Lan to lift."
+          ],
+          "answer": 3,
+          "explain_vi": "so … that + couldn't = too … for sb to V. 'such heavy' sai vì such cần danh từ đi sau."
+        },
+        {
+          "q": "I have never eaten such a nutritious meal.",
+          "options": [
+            "This is the most nutritious meal I have ever eaten.",
+            "I have eaten more nutritious meals than this.",
+            "This meal is less nutritious than other meals I have eaten.",
+            "I never eat nutritious meals."
+          ],
+          "answer": 0,
+          "explain_vi": "never … such a + adj + N = đây là … nhất từng: the most nutritious meal I have ever eaten."
+        },
+        {
+          "q": "Thu is not tall enough to reach the top shelf.",
+          "options": [
+            "Thu is tall enough to reach the top shelf.",
+            "Thu is too short to reach the top shelf.",
+            "Thu is so tall that she can reach the top shelf.",
+            "The top shelf is too low for Thu to reach."
+          ],
+          "answer": 1,
+          "explain_vi": "not tall enough to = too short to: không đủ cao nên không với tới."
+        },
+        {
+          "q": "Fast food is less healthy than home-cooked food.",
+          "options": [
+            "Fast food is as healthy as home-cooked food.",
+            "Fast food is healthier than home-cooked food.",
+            "Home-cooked food is healthier than fast food.",
+            "Home-cooked food is not as healthy as fast food."
+          ],
+          "answer": 2,
+          "explain_vi": "A less healthy than B = B healthier than A. Đổi chủ ngữ thì đổi less thành dạng so sánh hơn."
+        }
+      ]
+    },
+    {
+      "format": "transformation",
+      "title_vi": "Viết lại câu",
+      "intro_vi": "Đề Sở chuyên Anh Hà Nội có phần viết lại câu bắt đầu bằng từ cho sẵn, giữ nguyên nghĩa; đề chung vào 10 cũng có dạng này. Hôm nay em luyện 5 câu với so sánh, too/enough, so/such.",
+      "tip_vi": "Mẹo: viết xong đọc lại cả câu mới và so với câu gốc: nghĩa có giữ nguyên không, thì có đúng không, chủ ngữ mới đã hợp chưa?",
+      "kind": "transform",
+      "items": [
+        {
+          "q": "This test is easier than the last one.",
+          "start": "The last test was",
+          "answer": "more difficult than this one",
+          "accept": [
+            "harder than this one",
+            "more difficult than this test",
+            "harder than this test",
+            "more difficult than this",
+            "harder than this"
+          ],
+          "explain_vi": "Đổi chủ ngữ thì dùng tính từ trái nghĩa: easier ↔ more difficult / harder."
+        },
+        {
+          "q": "My little brother is too short to ride this roller coaster.",
+          "start": "My little brother isn't",
+          "answer": "tall enough to ride this roller coaster",
+          "accept": [
+            "tall enough to ride it"
+          ],
+          "explain_vi": "too + adj + to V = not + adj trái nghĩa + enough + to V: too short → not tall enough."
+        },
+        {
+          "q": "The film was so boring that I fell asleep.",
+          "start": "It was",
+          "answer": "such a boring film that I fell asleep",
+          "accept": [],
+          "explain_vi": "so + adj + that = such + a + adj + N + that: such a boring film that…"
+        },
+        {
+          "q": "Nobody in my family cooks as well as my grandma.",
+          "start": "My grandma is the",
+          "answer": "best cook in my family",
+          "accept": [
+            "best cook in the family",
+            "best cook in our family"
+          ],
+          "explain_vi": "Không ai bằng bà → bà giỏi nhất: the best cook (good/well → best)."
+        },
+        {
+          "q": "The exercise was too difficult for me to do.",
+          "start": "The exercise was so",
+          "answer": "difficult that I couldn't do it",
+          "accept": [
+            "difficult that I could not do it",
+            "difficult that I wasn't able to do it",
+            "difficult that I was not able to do it"
+          ],
+          "explain_vi": "too … for me to V = so … that I couldn't V + it. Nhớ thêm tân ngữ 'it' sau do."
+        }
+      ]
+    }
+  ]
+}
