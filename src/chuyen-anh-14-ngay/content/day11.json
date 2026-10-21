@@ -1,0 +1,595 @@
+{
+ "day": 11,
+ "type": "normal",
+ "theme_en": "People & relationships",
+ "theme_vi": "Con người và các mối quan hệ",
+ "goal_vi": "Hôm nay em sẽ học các từ để miêu tả tính cách con người và các mối quan hệ quanh em. Em cũng sẽ học mệnh đề quan hệ với who, which, that, whose, where để nối câu thật gọn và hay!",
+ "minutes": 30,
+ "vocab": [
+  {
+   "id": "d11v1",
+   "word": "personality",
+   "pos": "n",
+   "ipa": "/ˌpɜːsəˈnæləti/",
+   "meaning_vi": "tính cách",
+   "example": "My sister has a warm and friendly personality.",
+   "family": "personal (adj), person (n)"
+  },
+  {
+   "id": "d11v2",
+   "word": "generous",
+   "pos": "adj",
+   "ipa": "/ˈdʒenərəs/",
+   "meaning_vi": "hào phóng, rộng lượng",
+   "example": "It was generous of you to share your lunch with me.",
+   "family": "generosity (n), generously (adv)"
+  },
+  {
+   "id": "d11v3",
+   "word": "honest",
+   "pos": "adj",
+   "ipa": "/ˈɒnɪst/",
+   "meaning_vi": "trung thực, thật thà",
+   "example": "Please be honest and tell me what you really think.",
+   "family": "honesty (n), dishonest (adj), honestly (adv)"
+  },
+  {
+   "id": "d11v4",
+   "word": "support",
+   "pos": "v, n",
+   "ipa": "/səˈpɔːt/",
+   "meaning_vi": "ủng hộ, hỗ trợ; sự ủng hộ",
+   "example": "My friends always support me when I feel nervous.",
+   "family": "supportive (adj), supporter (n)"
+  },
+  {
+   "id": "d11v5",
+   "word": "argue",
+   "pos": "v",
+   "ipa": "/ˈɑːɡjuː/",
+   "meaning_vi": "cãi nhau, tranh cãi (with sb, about sth)",
+   "example": "The twins often argue about which TV programme to watch.",
+   "family": "argument (n)"
+  },
+  {
+   "id": "d11v6",
+   "word": "trust",
+   "pos": "v, n",
+   "ipa": "/trʌst/",
+   "meaning_vi": "tin tưởng; lòng tin",
+   "example": "I trust my best friend completely.",
+   "family": "trustworthy (adj), distrust (v, n)"
+  },
+  {
+   "id": "d11v7",
+   "word": "sympathetic",
+   "pos": "adj",
+   "ipa": "/ˌsɪmpəˈθetɪk/",
+   "meaning_vi": "biết cảm thông, thông cảm",
+   "example": "Our teacher was very sympathetic when my grandmother was ill.",
+   "family": "sympathy (n), sympathise (v)"
+  },
+  {
+   "id": "d11v8",
+   "word": "respect",
+   "pos": "v, n",
+   "ipa": "/rɪˈspekt/",
+   "meaning_vi": "tôn trọng, kính trọng; sự tôn trọng",
+   "example": "We should respect other people's opinions.",
+   "family": "respectful (adj), disrespect (n)"
+  }
+ ],
+ "phrasal": [
+  {
+   "id": "d11p1",
+   "phrase": "get on (well) with",
+   "meaning_vi": "hoà hợp, có quan hệ tốt với (ai)",
+   "example": "I get on well with my new classmates."
+  },
+  {
+   "id": "d11p2",
+   "phrase": "look up to",
+   "meaning_vi": "kính trọng, ngưỡng mộ (ai)",
+   "example": "Many young players look up to their team captain."
+  }
+ ],
+ "grammar": {
+  "id": "d11g",
+  "title": "Relative clauses: who, which, that, whose, where (defining & non-defining)",
+  "rule_vi": [
+   "who = người; which = vật/con vật; that = người hoặc vật (chỉ dùng trong mệnh đề XÁC ĐỊNH).",
+   "whose + danh từ = 'của người/vật đó' (sở hữu): the boy whose bike was stolen.",
+   "where = nơi mà (thay cho địa điểm): the town where I was born.",
+   "Mệnh đề XÁC ĐỊNH: cần thiết để biết ta nói về ai/cái gì, KHÔNG có dấu phẩy: The girl who sits next to me is Mai.",
+   "Mệnh đề KHÔNG XÁC ĐỊNH: chỉ thêm thông tin, đặt giữa hai dấu phẩy, KHÔNG dùng 'that': My father, who is a doctor, works at night."
+  ],
+  "examples": [
+   "The teacher who teaches us music can play five instruments.",
+   "I have a friend whose brother is a famous footballer.",
+   "Hội An, which is in central Vietnam, is famous for its lanterns."
+  ],
+  "common_mistake_vi": "Không dùng 'that' sau dấu phẩy. Sai: My mum, that is a nurse, works very hard. Đúng: My mum, who is a nurse, works very hard."
+ },
+ "wordform": {
+  "id": "d11w",
+  "focus": "-ence/-ance (n), -ent/-ant (adj)",
+  "rule_vi": "Nhiều tính từ đuôi -ent có danh từ đuôi -ence, và tính từ đuôi -ant có danh từ đuôi -ance (patient → patience, important → importance). Em nhìn vị trí trong câu để biết cần tính từ hay danh từ.",
+  "examples": [
+   [
+    "patient",
+    "patience"
+   ],
+   [
+    "confident",
+    "confidence"
+   ],
+   [
+    "different",
+    "difference"
+   ],
+   [
+    "important",
+    "importance"
+   ],
+   [
+    "silent",
+    "silence"
+   ],
+   [
+    "distant",
+    "distance"
+   ]
+  ]
+ },
+ "paper": {
+  "A_vocab": {
+   "instruction_vi": "Chọn từ thích hợp trong khung để điền vào chỗ trống. Mỗi từ dùng một lần, có 2 từ thừa. Em nhớ đổi dạng từ nếu cần (thêm -s, -ed...) nhé.",
+   "bank": [
+    "personality",
+    "generous",
+    "honest",
+    "support",
+    "argue",
+    "trust",
+    "sympathetic",
+    "respect"
+   ],
+   "items": [
+    {
+     "id": "d11A1",
+     "q": "Linh has a cheerful ______; she can make everyone laugh.",
+     "answer": "personality",
+     "tag": "d11v1"
+    },
+    {
+     "id": "d11A2",
+     "q": "Be ______ with me – did you eat the last piece of cake?",
+     "answer": "honest",
+     "tag": "d11v3"
+    },
+    {
+     "id": "d11A3",
+     "q": "My parents always come to my football matches to ______ me and cheer for my team.",
+     "answer": "support",
+     "tag": "d11v4"
+    },
+    {
+     "id": "d11A4",
+     "q": "My brother and I sometimes ______ about who can use the computer first.",
+     "answer": "argue",
+     "tag": "d11v5"
+    },
+    {
+     "id": "d11A5",
+     "q": "You can ______ Hoa with your secrets; she never tells anyone.",
+     "answer": "trust",
+     "tag": "d11v6"
+    },
+    {
+     "id": "d11A6",
+     "q": "Students show ______ to their teachers by standing up when they come into the classroom.",
+     "answer": "respect",
+     "tag": "d11v8"
+    }
+   ]
+  },
+  "B_grammar": {
+   "instruction_vi": "Điền who, which, that, whose hoặc where vào chỗ trống. Nếu có hai đáp án đúng, em chỉ cần viết một. Chú ý: sau dấu phẩy thì không dùng 'that' nhé!",
+   "items": [
+    {
+     "id": "d11B1",
+     "q": "My grandmother, ______ is eighty years old, still walks to the market every day.",
+     "answer": "who",
+     "tag": "d11g"
+    },
+    {
+     "id": "d11B2",
+     "q": "This is the small village ______ my father grew up.",
+     "answer": "where",
+     "accept": [
+      "in which"
+     ],
+     "tag": "d11g"
+    },
+    {
+     "id": "d11B3",
+     "q": "I have a classmate ______ mother is a famous singer.",
+     "answer": "whose",
+     "tag": "d11g"
+    },
+    {
+     "id": "d11B4",
+     "q": "Ha Long Bay, ______ has nearly two thousand islands, attracts many visitors every year.",
+     "answer": "which",
+     "tag": "d11g"
+    },
+    {
+     "id": "d11B5",
+     "q": "The boy ______ sits next to me is very good at maths.",
+     "answer": "who",
+     "accept": [
+      "that"
+     ],
+     "tag": "d11g"
+    },
+    {
+     "id": "d11B6",
+     "q": "The book ______ you lent me was really interesting.",
+     "answer": "which",
+     "accept": [
+      "that"
+     ],
+     "tag": "d11g"
+    }
+   ]
+  },
+  "C_wordform": {
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Em xem chỗ trống cần danh từ (-ence/-ance) hay tính từ (-ent/-ant) nhé.",
+   "items": [
+    {
+     "id": "d11C1",
+     "q": "Thank you for your ______. I know you waited a long time. (PATIENT)",
+     "answer": "patience",
+     "tag": "d11w"
+    },
+    {
+     "id": "d11C2",
+     "q": "Mai answered the interview questions with great ______. (CONFIDENT)",
+     "answer": "confidence",
+     "tag": "d11w"
+    },
+    {
+     "id": "d11C3",
+     "q": "Can you see any ______ between these two pictures? (DIFFERENT)",
+     "answer": "difference",
+     "tag": "d11w"
+    },
+    {
+     "id": "d11C4",
+     "q": "Good friends are very ______ in our lives. (IMPORTANCE)",
+     "answer": "important",
+     "tag": "d11w"
+    }
+   ]
+  },
+  "D_exam": {
+   "format": "antonym",
+   "instruction_vi": "Chọn từ/cụm từ có nghĩa TRÁI NGƯỢC với phần viết IN HOA (A, B, C hoặc D). Mẹo: em hãy hiểu nghĩa từ in hoa trước, rồi tìm từ có nghĩa ngược lại – cẩn thận đừng chọn nhầm từ đồng nghĩa nhé!",
+   "items": [
+    {
+     "id": "d11D1",
+     "q": "My best friend is very GENEROUS; she always shares her snacks with everyone.",
+     "options": [
+      "kind",
+      "mean",
+      "rich",
+      "honest"
+     ],
+     "answer": "B",
+     "tag": "fmt:antonym"
+    },
+    {
+     "id": "d11D2",
+     "q": "Mai and her younger sister usually GET ON WELL WITH each other.",
+     "options": [
+      "look up to",
+      "take care of",
+      "agree with",
+      "often quarrel with"
+     ],
+     "answer": "D",
+     "tag": "fmt:antonym"
+    },
+    {
+     "id": "d11D3",
+     "q": "Everyone in the class RESPECTS Mr Long because he is fair to all students.",
+     "options": [
+      "looks down on",
+      "looks up to",
+      "admires",
+      "supports"
+     ],
+     "answer": "A",
+     "tag": "fmt:antonym"
+    },
+    {
+     "id": "d11D4",
+     "q": "The nurse was very SYMPATHETIC when I hurt my arm.",
+     "options": [
+      "friendly",
+      "gentle",
+      "uncaring",
+      "worried"
+     ],
+     "answer": "C",
+     "tag": "fmt:antonym"
+    }
+   ]
+  },
+  "E_reading": {
+   "id": "d11r",
+   "title": "The Bench Under the Mango Tree",
+   "instruction_vi": "Đọc đoạn văn rồi làm bài. Câu 1–2: chọn True (đúng), False (sai) hoặc Not Given (bài không nói đến). Câu 3–4: chọn A, B, C hoặc D.",
+   "text": "In my grandparents' village, there is an old wooden bench under a mango tree, where the neighbours meet every evening. My grandfather, who is seventy-five, sits there with his best friend, Mr Sáu. The two men have very different personalities. Grandpa is quiet and patient, while Mr Sáu loves telling jokes. They sometimes argue about football, but they have never stopped being friends. Last summer, Mr Sáu fell ill and could not leave his house for a month. Grandpa visited him every day, carrying a flask of hot tea and the newspaper. 'A real friend is someone who stays when life is difficult,' he told me. I look up to my grandfather because he is generous with his time and always honest, even when the truth is hard to hear. When I grow up, I hope I will have a friend whose friendship lasts as long as theirs – more than sixty years.",
+   "items": [
+    {
+     "id": "d11E1",
+     "kind": "tfng",
+     "q": "Grandpa and Mr Sáu have similar personalities.",
+     "answer": "False",
+     "tag": "d11r"
+    },
+    {
+     "id": "d11E2",
+     "kind": "tfng",
+     "q": "Mr Sáu is younger than the writer's grandfather.",
+     "answer": "Not Given",
+     "tag": "d11r"
+    },
+    {
+     "id": "d11E3",
+     "kind": "mcq",
+     "q": "What did Grandpa do when Mr Sáu was ill?",
+     "options": [
+      "He sent him letters.",
+      "He visited him every day.",
+      "He took him to hospital.",
+      "He called a doctor."
+     ],
+     "answer": "B",
+     "tag": "d11r"
+    },
+    {
+     "id": "d11E4",
+     "kind": "mcq",
+     "q": "How long have the two men been friends?",
+     "options": [
+      "more than sixty years",
+      "seventy-five years",
+      "about a month",
+      "since last summer"
+     ],
+     "answer": "A",
+     "tag": "d11r"
+    }
+   ]
+  },
+  "F_writing": {
+   "task_en": "Write about a person you look up to. Who is this person? What is his/her personality like? Why do you respect him/her? Use at least two relative clauses (who, which, whose, where).",
+   "task_vi": "Viết về một người mà em kính trọng/ngưỡng mộ: người đó là ai, tính cách thế nào, vì sao em kính trọng họ. Dùng ít nhất hai mệnh đề quan hệ nhé.",
+   "min_words": 50,
+   "model": "The person I look up to most is my aunt Hương, who is a primary school teacher in a mountain village. She has a kind and patient personality. Every morning she rides her motorbike along a road which is narrow and dangerous, but she never complains. She is also very generous: she often buys books for children whose families are poor. I respect her because she always puts other people first.",
+   "checklist_vi": [
+    "Em đã giới thiệu người đó là ai và vì sao em kính trọng họ chưa?",
+    "Em đã dùng ít nhất 2 mệnh đề quan hệ, và không dùng 'that' sau dấu phẩy chưa?",
+    "Em đã dùng ít nhất 3 từ mới về tính cách (generous, honest, sympathetic...) chưa?",
+    "Em đã viết đủ 50 từ trở lên chưa?"
+   ]
+  },
+  "G_review": {
+   "instruction_vi": "Ôn xoắn ốc – em làm 4 câu ôn lại kiến thức của các buổi trước nhé. Chữ cái gợi ý (nếu có) là chữ cái đầu của đáp án.",
+   "items": [
+    {
+     "id": "d11G1",
+     "q": "My sister is going to a______ for a job at the new library.",
+     "answer": "apply",
+     "from_day": 10,
+     "tag": "d10v6"
+    },
+    {
+     "id": "d11G2",
+     "q": "If I ______ (have) wings, I would fly to school every day.",
+     "answer": "had",
+     "from_day": 10,
+     "tag": "d10g"
+    },
+    {
+     "id": "d11G3",
+     "q": "While I was tidying my room, I came ______ an old photo of my parents.",
+     "answer": "across",
+     "from_day": 8,
+     "tag": "d8p2"
+    },
+    {
+     "id": "d11G4",
+     "q": "The box was ______ heavy for me to carry, so my dad helped me. (too / enough)",
+     "answer": "too",
+     "from_day": 5,
+     "tag": "d5g"
+    }
+   ]
+  }
+ },
+ "web_check": [
+  {
+   "id": "d11q1",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "My uncle is very ______. Last year he gave a lot of money to help children in flooded areas.",
+   "options": [
+    "honest",
+    "lazy",
+    "jealous",
+    "generous"
+   ],
+   "answer": 3,
+   "explain_vi": "'generous' = hào phóng – sẵn sàng cho đi tiền bạc, thời gian.",
+   "tag": "d11v2"
+  },
+  {
+   "id": "d11q2",
+   "type": "text",
+   "skill": "vocab",
+   "q": "I really look ______ to my grandfather. He is wise, kind and hard-working.",
+   "answer": "up",
+   "accept": [],
+   "explain_vi": "'look up to sb' = kính trọng, ngưỡng mộ ai đó.",
+   "tag": "d11p2"
+  },
+  {
+   "id": "d11q3",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "Do you get ______ well with your new neighbours?",
+   "options": [
+    "on",
+    "over",
+    "up",
+    "off"
+   ],
+   "answer": 0,
+   "explain_vi": "'get on well with sb' = hoà hợp với ai. 'get over' = vượt qua (bệnh, nỗi buồn).",
+   "tag": "d11p1"
+  },
+  {
+   "id": "d11q4",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "That's the café ______ my parents first met.",
+   "options": [
+    "which",
+    "who",
+    "where",
+    "whose"
+   ],
+   "answer": 2,
+   "explain_vi": "Chỗ trống thay cho địa điểm (the café) và sau đó là một câu đầy đủ (my parents first met) → where.",
+   "tag": "d11g"
+  },
+  {
+   "id": "d11q5",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "My English teacher, ______ comes from Australia, tells very funny stories.",
+   "options": [
+    "that",
+    "who",
+    "which",
+    "whose"
+   ],
+   "answer": 1,
+   "explain_vi": "Mệnh đề có dấu phẩy (không xác định) nói về người → who. Không dùng 'that' sau dấu phẩy.",
+   "tag": "d11g"
+  },
+  {
+   "id": "d11q6",
+   "type": "text",
+   "skill": "grammar",
+   "q": "I met a girl ______ dream is to become an astronaut.",
+   "answer": "whose",
+   "accept": [],
+   "explain_vi": "'whose dream' = ước mơ của cô bé ấy → dùng whose + danh từ để chỉ sở hữu.",
+   "tag": "d11g"
+  },
+  {
+   "id": "d11q7",
+   "type": "mcq",
+   "skill": "wordform",
+   "q": "Her ______ in herself helped her win the speaking contest. (CONFIDENT)",
+   "options": [
+    "confident",
+    "confidently",
+    "confide",
+    "confidence"
+   ],
+   "answer": 3,
+   "explain_vi": "Sau tính từ sở hữu 'Her' cần danh từ: confident → confidence.",
+   "tag": "d11w"
+  },
+  {
+   "id": "d11q8",
+   "type": "text",
+   "skill": "wordform",
+   "q": "Learning to play the piano takes a long time, so you have to be ______. (PATIENCE)",
+   "answer": "patient",
+   "accept": [],
+   "explain_vi": "Sau 'be' cần tính từ: patience (n) → patient (adj) = kiên nhẫn.",
+   "tag": "d11w"
+  },
+  {
+   "id": "d11q9",
+   "type": "mcq",
+   "skill": "exam",
+   "q": "Choose the word OPPOSITE in meaning to the word in CAPITALS: Tuấn is an HONEST boy; he never cheats in tests.",
+   "options": [
+    "truthful",
+    "brave",
+    "dishonest",
+    "polite"
+   ],
+   "answer": 2,
+   "explain_vi": "honest (trung thực) >< dishonest (không trung thực). 'truthful' là từ đồng nghĩa – bẫy hay gặp!",
+   "tag": "fmt:antonym"
+  },
+  {
+   "id": "d11q10",
+   "type": "mcq",
+   "skill": "review",
+   "from_day": 10,
+   "q": "If I ______ you, I would say sorry to her.",
+   "options": [
+    "am",
+    "will be",
+    "be",
+    "were"
+   ],
+   "answer": 3,
+   "explain_vi": "Câu điều kiện loại 2 (lời khuyên): If I were you, I would...",
+   "tag": "d10g"
+  },
+  {
+   "id": "d11q11",
+   "type": "mcq",
+   "skill": "review",
+   "from_day": 8,
+   "q": "This newspaper ______ every morning at 4 a.m.",
+   "options": [
+    "prints",
+    "is printed",
+    "printed",
+    "is printing"
+   ],
+   "answer": 1,
+   "explain_vi": "Tờ báo không tự in được → câu bị động hiện tại đơn: is + V3 (is printed).",
+   "tag": "d8g"
+  },
+  {
+   "id": "d11q12",
+   "type": "text",
+   "skill": "review",
+   "from_day": 5,
+   "q": "This is the ______ (healthy) breakfast I have ever eaten!",
+   "answer": "healthiest",
+   "accept": [
+    "most healthy"
+   ],
+   "explain_vi": "So sánh nhất với tính từ ngắn đuôi -y: healthy → the healthiest.",
+   "tag": "d5g"
+  }
+ ],
+ "can_do_vi": [
+  "Em có thể miêu tả tính cách một người bằng các từ generous, honest, sympathetic...",
+  "Em có thể dùng who, which, that, whose, where để nối câu, và biết khi nào không được dùng 'that'.",
+  "Em có thể đổi giữa tính từ -ent/-ant và danh từ -ence/-ance, và tìm từ trái nghĩa trong bài thi."
+ ]
+}

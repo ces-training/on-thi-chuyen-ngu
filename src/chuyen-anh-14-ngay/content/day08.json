@@ -1,0 +1,590 @@
+{
+ "day": 8,
+ "type": "normal",
+ "theme_en": "Media & communication",
+ "theme_vi": "Truyền thông",
+ "goal_vi": "Hôm nay em sẽ học các từ về báo chí, truyền hình, quảng cáo và cách dùng câu bị động ở thì hiện tại đơn và quá khứ đơn. Em cũng sẽ luyện cách phân biệt 'make' và 'do' – một 'bẫy' rất quen thuộc trong đề thi chuyên đấy!",
+ "minutes": 30,
+ "vocab": [
+  {
+   "id": "d8v1",
+   "word": "article",
+   "pos": "n",
+   "ipa": "/ˈɑːtɪkl/",
+   "meaning_vi": "bài báo, bài viết",
+   "example": "I read an article about healthy eating in today's newspaper.",
+   "family": "articles (n, số nhiều)"
+  },
+  {
+   "id": "d8v2",
+   "word": "audience",
+   "pos": "n",
+   "ipa": "/ˈɔːdiəns/",
+   "meaning_vi": "khán giả, thính giả, người xem",
+   "example": "The audience laughed at every joke in the show.",
+   "family": "audiences (n, số nhiều)"
+  },
+  {
+   "id": "d8v3",
+   "word": "broadcast",
+   "pos": "v, n",
+   "ipa": "/ˈbrɔːdkɑːst/",
+   "meaning_vi": "phát sóng (trên TV, radio); chương trình phát sóng",
+   "example": "The concert will be broadcast live on the radio.",
+   "family": "broadcast – broadcast – broadcast (v, bất quy tắc); broadcaster (n)"
+  },
+  {
+   "id": "d8v4",
+   "word": "advertise",
+   "pos": "v",
+   "ipa": "/ˈædvətaɪz/",
+   "meaning_vi": "quảng cáo",
+   "example": "The shop advertises its new phones on TV and on social media.",
+   "family": "advertisement / advert (n), advertiser (n), advertising (n)"
+  },
+  {
+   "id": "d8v5",
+   "word": "reliable",
+   "pos": "adj",
+   "ipa": "/rɪˈlaɪəbl/",
+   "meaning_vi": "đáng tin cậy",
+   "example": "Is this website a reliable source of information?",
+   "family": "rely (v), unreliable (adj), reliability (n)"
+  },
+  {
+   "id": "d8v6",
+   "word": "opinion",
+   "pos": "n",
+   "ipa": "/əˈpɪnjən/",
+   "meaning_vi": "ý kiến, quan điểm",
+   "example": "In my opinion, reading the news every day is a good habit.",
+   "family": "in my opinion (cụm từ: theo ý kiến của tôi)"
+  },
+  {
+   "id": "d8v7",
+   "word": "inform",
+   "pos": "v",
+   "ipa": "/ɪnˈfɔːm/",
+   "meaning_vi": "thông báo, cung cấp thông tin",
+   "example": "The school informed parents about the change of timetable.",
+   "family": "information (n), informative (adj)"
+  },
+  {
+   "id": "d8v8",
+   "word": "influence",
+   "pos": "n, v",
+   "ipa": "/ˈɪnfluəns/",
+   "meaning_vi": "sự ảnh hưởng; ảnh hưởng đến",
+   "example": "Advertisements can influence what children want to buy.",
+   "family": "influential (adj); have an influence on (cụm từ)"
+  }
+ ],
+ "phrasal": [
+  {
+   "id": "d8p1",
+   "phrase": "find out",
+   "meaning_vi": "tìm ra, phát hiện ra (thông tin)",
+   "example": "I searched online to find out when the film starts."
+  },
+  {
+   "id": "d8p2",
+   "phrase": "come across",
+   "meaning_vi": "tình cờ gặp, tình cờ thấy",
+   "example": "While I was tidying my room, I came across some old photos."
+  }
+ ],
+ "grammar": {
+  "id": "d8g",
+  "title": "Passive voice (present simple, past simple)",
+  "rule_vi": [
+   "Câu bị động dùng khi ta quan tâm đến việc/vật được làm hơn là người làm: S + be + V3/V-ed (+ by + người làm).",
+   "Hiện tại đơn bị động: am / is / are + V3. Ví dụ: The news is broadcast every evening.",
+   "Quá khứ đơn bị động: was / were + V3. Ví dụ: This article was written by a student.",
+   "Phủ định: thêm 'not' sau be (isn't / aren't / wasn't / weren't + V3). Câu hỏi: đưa be lên đầu câu (Is it made...? Was it built...?).",
+   "Chỉ dùng 'by + người làm' khi thông tin đó quan trọng; nếu người làm không rõ hoặc không quan trọng (people, someone, they) thì bỏ đi."
+  ],
+  "examples": [
+   "English is spoken in many countries.",
+   "The school magazine is published twice a year.",
+   "The match was watched by millions of fans.",
+   "These letters weren't sent last week."
+  ],
+  "common_mistake_vi": "Quên động từ 'be' hoặc quên chia V3: ✗ The article written by Nam. / ✗ English is speak here. → ✓ The article was written by Nam. / ✓ English is spoken here. Nhớ học thuộc V3 của động từ bất quy tắc (write – wrote – written, speak – spoke – spoken)."
+ },
+ "wordform": {
+  "id": "d8w",
+  "focus": "-able/-ible, -ive",
+  "rule_vi": "Thêm -able/-ible vào động từ hoặc danh từ để tạo tính từ mang nghĩa 'có thể… được' hoặc 'có tính chất…' (rely → reliable: y đổi thành i). Thêm -ive vào động từ để tạo tính từ chỉ đặc điểm (create → creative: bỏ e trước khi thêm -ive).",
+  "examples": [
+   [
+    "rely",
+    "reliable"
+   ],
+   [
+    "access",
+    "accessible"
+   ],
+   [
+    "create",
+    "creative"
+   ],
+   [
+    "expense",
+    "expensive"
+   ]
+  ]
+ },
+ "paper": {
+  "A_vocab": {
+   "instruction_vi": "Em chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, và có 2 từ không cần dùng đến nhé.",
+   "bank": [
+    "article",
+    "audience",
+    "broadcast",
+    "reliable",
+    "opinion",
+    "find out",
+    "advertise",
+    "influence"
+   ],
+   "items": [
+    {
+     "id": "d8A1",
+     "q": "I read an interesting ______ in the newspaper about a boy who built a robot from rubbish.",
+     "answer": "article",
+     "tag": "d8v1"
+    },
+    {
+     "id": "d8A2",
+     "q": "When the concert ended, the whole ______ stood up and clapped for five minutes.",
+     "answer": "audience",
+     "tag": "d8v2"
+    },
+    {
+     "id": "d8A3",
+     "q": "The TV channel is going to ______ the football final live tonight, so millions of people can watch it at home.",
+     "answer": "broadcast",
+     "tag": "d8v3"
+    },
+    {
+     "id": "d8A4",
+     "q": "Online encyclopedias are useful, but they aren't always ______, so you should check the facts in other places too.",
+     "answer": "reliable",
+     "tag": "d8v5"
+    },
+    {
+     "id": "d8A5",
+     "q": "In my ______, children under ten shouldn't have their own smartphones.",
+     "answer": "opinion",
+     "tag": "d8v6"
+    },
+    {
+     "id": "d8A6",
+     "q": "I want to ______ what time the museum opens, so I'm going to check its website.",
+     "answer": "find out",
+     "tag": "d8p1"
+    }
+   ]
+  },
+  "B_grammar": {
+   "instruction_vi": "Em viết dạng bị động đúng của động từ trong ngoặc (hiện tại đơn hoặc quá khứ đơn). Nhớ nhìn dấu hiệu thời gian và xem chủ ngữ số ít hay số nhiều nhé.",
+   "items": [
+    {
+     "id": "d8B1",
+     "q": "English ______ (speak) in many countries around the world.",
+     "answer": "is spoken",
+     "tag": "d8g"
+    },
+    {
+     "id": "d8B2",
+     "q": "The evening news ______ (watch) by millions of people every day.",
+     "answer": "is watched",
+     "tag": "d8g"
+    },
+    {
+     "id": "d8B3",
+     "q": "This article ______ (write) by a 13-year-old student last month.",
+     "answer": "was written",
+     "tag": "d8g"
+    },
+    {
+     "id": "d8B4",
+     "q": "The school newspaper ______ (not publish) last week because the printer was broken.",
+     "answer": "wasn't published",
+     "accept": [
+      "was not published"
+     ],
+     "tag": "d8g"
+    },
+    {
+     "id": "d8B5",
+     "q": "Hundreds of advertisements ______ (show) on TV every day.",
+     "answer": "are shown",
+     "tag": "d8g"
+    },
+    {
+     "id": "d8B6",
+     "q": "The match was cancelled, and the fans ______ (inform) by text message an hour before it started.",
+     "answer": "were informed",
+     "tag": "d8g"
+    }
+   ]
+  },
+  "C_wordform": {
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Gợi ý: hôm nay cả 4 chỗ trống đều cần TÍNH TỪ (đuôi -able, -ible hoặc -ive).",
+   "items": [
+    {
+     "id": "d8C1",
+     "q": "This TV programme is very ______; I learnt a lot of useful facts about the ocean. (INFORM)",
+     "answer": "informative",
+     "tag": "d8w"
+    },
+    {
+     "id": "d8C2",
+     "q": "The new sofa is so ______ that I fell asleep on it. (COMFORT)",
+     "answer": "comfortable",
+     "tag": "d8w"
+    },
+    {
+     "id": "d8C3",
+     "q": "It isn't ______ to believe everything you read on social media. (SENSE)",
+     "answer": "sensible",
+     "tag": "d8w"
+    },
+    {
+     "id": "d8C4",
+     "q": "The poster for the school play was so ______ that everyone stopped to look at it. (ATTRACT)",
+     "answer": "attractive",
+     "tag": "d8w"
+    }
+   ]
+  },
+  "D_exam": {
+   "format": "sentence_completion",
+   "instruction_vi": "Em chọn đáp án A, B, C hoặc D để hoàn thành câu. Mẹo: 'make' thường đi với việc tạo ra cái gì mới (make a cake, make friends, make a phone call); 'do' thường đi với công việc, nhiệm vụ (do homework, do the shopping, do exercise). Có một số cụm em phải học thuộc lòng nhé!",
+   "items": [
+    {
+     "id": "d8D1",
+     "q": "Before writing the article, the students had to ______ some research on the Internet.",
+     "options": [
+      "do",
+      "make",
+      "take",
+      "get"
+     ],
+     "answer": "A",
+     "tag": "fmt:sentence_completion"
+    },
+    {
+     "id": "d8D2",
+     "q": "The reporter ______ a serious mistake: she wrote the wrong name under the photo.",
+     "options": [
+      "did",
+      "took",
+      "got",
+      "made"
+     ],
+     "answer": "D",
+     "tag": "fmt:sentence_completion"
+    },
+    {
+     "id": "d8D3",
+     "q": "It took the editors a long time to ______ a decision about which photo to put on the front page.",
+     "options": [
+      "say",
+      "make",
+      "do",
+      "put"
+     ],
+     "answer": "B",
+     "tag": "fmt:sentence_completion"
+    },
+    {
+     "id": "d8D4",
+     "q": "Could you ______ me a favour and share our class video on your page?",
+     "options": [
+      "make",
+      "give",
+      "do",
+      "take"
+     ],
+     "answer": "C",
+     "tag": "fmt:sentence_completion"
+    }
+   ]
+  },
+  "E_reading": {
+   "id": "d8r",
+   "title": "Can You Believe Everything You Read?",
+   "text": "Every day, millions of articles and videos are shared on social media. Some of them are useful, but others are not reliable at all. Last month, Mai came across a post which said that drinking cold water after meals was dangerous. She was worried, so she showed it to her mum. Her mum said they should find out who wrote it. After a few minutes of searching, they discovered that the post was made by a company that wanted to advertise its own herbal tea.\n\nMai's teacher says that young people are easily influenced by what they see online. She gives her class three simple tips. First, check who wrote the information. Second, look for the same story on a well-known news website. Third, ask an adult if you are not sure. \"The Internet is a wonderful place to learn,\" she says, \"but you have to think before you believe.\"",
+   "items": [
+    {
+     "id": "d8E1",
+     "kind": "tfng",
+     "q": "The post about cold water was written by a doctor.",
+     "answer": "False",
+     "tag": "d8r"
+    },
+    {
+     "id": "d8E2",
+     "kind": "tfng",
+     "q": "Mai's teacher writes articles for a news website.",
+     "answer": "Not Given",
+     "tag": "d8r"
+    },
+    {
+     "id": "d8E3",
+     "kind": "mcq",
+     "q": "Why was the post about cold water written?",
+     "options": [
+      "To warn people about a disease",
+      "To help sell a product",
+      "To share a teacher's opinion",
+      "To inform students about the news"
+     ],
+     "answer": "B",
+     "tag": "d8r"
+    },
+    {
+     "id": "d8E4",
+     "kind": "mcq",
+     "q": "Which of these is NOT one of the teacher's tips?",
+     "options": [
+      "Check who wrote the information.",
+      "Look for the story on a well-known news website.",
+      "Ask an adult if you are not sure.",
+      "Share the post with your friends first."
+     ],
+     "answer": "D",
+     "tag": "d8r"
+    }
+   ]
+  },
+  "F_writing": {
+   "task_en": "Write a short paragraph (50–70 words) about how you get news and information. Which media do you use (TV, newspapers, websites, social media)? Which one do you think is the most reliable, and why? Use at least one passive sentence and two words from today's lesson.",
+   "task_vi": "Em viết một đoạn văn ngắn (50–70 từ) kể em thường lấy tin tức, thông tin từ đâu (TV, báo, trang web, mạng xã hội). Theo em, nguồn nào đáng tin cậy nhất và vì sao? Em nhớ dùng ít nhất 1 câu bị động và 2 từ mới của bài hôm nay nhé.",
+   "min_words": 50,
+   "model": "I usually get news from TV and the Internet. Every evening, the news is broadcast on TV, and my family watches it together. I also read articles on news websites, but I don't trust everything on social media because many posts are written by people who want to advertise something. In my opinion, TV news is the most reliable because the information is checked carefully.",
+   "checklist_vi": [
+    "Em đã kể ra các nguồn tin em dùng và chọn ra một nguồn đáng tin cậy nhất, có giải thích lý do chưa?",
+    "Em đã viết ít nhất 1 câu bị động đúng công thức be + V3 chưa?",
+    "Em đã dùng ít nhất 2 từ mới của bài hôm nay chưa?",
+    "Em đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
+   ]
+  },
+  "G_review": {
+   "instruction_vi": "Ôn xoắn ốc – Em làm theo gợi ý trong ngoặc ở mỗi câu để ôn lại bài các buổi 6, 5 và 2 nhé. Câu nào chưa chắc, em mở lại bài cũ xem lại cũng được!",
+   "items": [
+    {
+     "id": "d8G1",
+     "q": "Because of the thick fog, our flight was ______ for three hours. (DELAY)",
+     "answer": "delayed",
+     "from_day": 6,
+     "tag": "d6v5"
+    },
+    {
+     "id": "d8G2",
+     "q": "You ______ (should / mustn't) take photos in this room of the museum. Look at the sign: 'NO CAMERAS'!",
+     "answer": "mustn't",
+     "accept": [
+      "must not"
+     ],
+     "from_day": 6,
+     "tag": "d6g"
+    },
+    {
+     "id": "d8G3",
+     "q": "It took my brother a whole week to ______ his cold. (cụm động từ 2 từ, nghĩa là 'khỏi bệnh, bình phục')",
+     "answer": "get over",
+     "from_day": 5,
+     "tag": "d5p2"
+    },
+    {
+     "id": "d8G4",
+     "q": "My grandparents ______ (live) in the countryside, but now they live with us in the city. (Dùng 'used to')",
+     "answer": "used to live",
+     "from_day": 2,
+     "tag": "d2g"
+    }
+   ]
+  }
+ },
+ "web_check": [
+  {
+   "id": "d8q1",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "Many companies ______ their products on social media because lots of young people use it.",
+   "options": [
+    "inform",
+    "advertise",
+    "influence",
+    "broadcast"
+   ],
+   "answer": 1,
+   "explain_vi": "advertise = quảng cáo (sản phẩm).",
+   "tag": "d8v4"
+  },
+  {
+   "id": "d8q2",
+   "type": "text",
+   "skill": "vocab",
+   "q": "Điền 1 động từ bắt đầu bằng 'i', nghĩa là 'thông báo, báo cho biết': Please ______ your teacher if you can't come to class tomorrow.",
+   "answer": "inform",
+   "accept": [
+    "inform"
+   ],
+   "explain_vi": "inform somebody = thông báo cho ai biết.",
+   "tag": "d8v7"
+  },
+  {
+   "id": "d8q3",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "My older sister has had a big ______ on me; I started reading novels because of her.",
+   "options": [
+    "opinion",
+    "audience",
+    "influence",
+    "article"
+   ],
+   "answer": 2,
+   "explain_vi": "have an influence on somebody = có ảnh hưởng đến ai.",
+   "tag": "d8v8"
+  },
+  {
+   "id": "d8q4",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "Our school magazine ______ by students in Year 8 and Year 9.",
+   "options": [
+    "is written",
+    "writes",
+    "wrote",
+    "is writing"
+   ],
+   "answer": 0,
+   "explain_vi": "Tạp chí không tự viết được → bị động hiện tại đơn: is written.",
+   "tag": "d8g"
+  },
+  {
+   "id": "d8q5",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "These photos ______ by my grandfather fifty years ago.",
+   "options": [
+    "took",
+    "are taken",
+    "were taken",
+    "have taken"
+   ],
+   "answer": 2,
+   "explain_vi": "'fifty years ago' → quá khứ; ảnh được chụp → bị động: were taken.",
+   "tag": "d8g"
+  },
+  {
+   "id": "d8q6",
+   "type": "text",
+   "skill": "grammar",
+   "q": "Điền dạng bị động của động từ trong ngoặc: The winners of the singing contest ______ (announce) on the radio yesterday.",
+   "answer": "were announced",
+   "accept": [
+    "were announced"
+   ],
+   "explain_vi": "'yesterday' → quá khứ đơn; 'winners' số nhiều → were + V3.",
+   "tag": "d8g"
+  },
+  {
+   "id": "d8q7",
+   "type": "mcq",
+   "skill": "wordform",
+   "q": "Playing sports helps you stay ______ and healthy. (ACT)",
+   "options": [
+    "action",
+    "actor",
+    "actively",
+    "active"
+   ],
+   "answer": 3,
+   "explain_vi": "Sau 'stay' cần tính từ: act + ive = active.",
+   "tag": "d8w"
+  },
+  {
+   "id": "d8q8",
+   "type": "text",
+   "skill": "wordform",
+   "q": "Viết dạng đúng của từ in hoa: Our trip to the zoo was really ______; we had a great time. (ENJOY)",
+   "answer": "enjoyable",
+   "accept": [
+    "enjoyable"
+   ],
+   "explain_vi": "Sau 'was really' cần tính từ: enjoy + able = enjoyable (thú vị).",
+   "tag": "d8w"
+  },
+  {
+   "id": "d8q9",
+   "type": "mcq",
+   "skill": "exam",
+   "q": "Mum, can I go out to play now? I've already ______ the washing-up.",
+   "options": [
+    "made",
+    "taken",
+    "had",
+    "done"
+   ],
+   "answer": 3,
+   "explain_vi": "do the washing-up = rửa bát (công việc nhà đi với 'do').",
+   "tag": "fmt:sentence_completion"
+  },
+  {
+   "id": "d8q10",
+   "type": "mcq",
+   "skill": "review",
+   "from_day": 6,
+   "q": "We ______ off for the airport at 4 a.m. to catch the early flight.",
+   "options": [
+    "set",
+    "took",
+    "got",
+    "went"
+   ],
+   "answer": 0,
+   "explain_vi": "set off = khởi hành, lên đường.",
+   "tag": "d6p1"
+  },
+  {
+   "id": "d8q11",
+   "type": "text",
+   "skill": "review",
+   "from_day": 5,
+   "q": "Điền 1 động từ, nghĩa là 'tránh': You should ______ eating too many sweets if you want healthy teeth.",
+   "answer": "avoid",
+   "accept": [
+    "avoid"
+   ],
+   "explain_vi": "avoid + V-ing = tránh làm gì.",
+   "tag": "d5v8"
+  },
+  {
+   "id": "d8q12",
+   "type": "mcq",
+   "skill": "review",
+   "from_day": 2,
+   "q": "My dad ______ golf last year, and now he plays every Sunday.",
+   "options": [
+    "gave up",
+    "took up",
+    "set off",
+    "dropped out"
+   ],
+   "answer": 1,
+   "explain_vi": "take up = bắt đầu một sở thích mới (quá khứ: took up).",
+   "tag": "d2p1"
+  }
+ ],
+ "can_do_vi": [
+  "Em có thể dùng 8 từ mới và 2 cụm động từ (find out, come across) để nói về tin tức và truyền thông.",
+  "Em có thể viết câu bị động ở thì hiện tại đơn và quá khứ đơn (is written, was broadcast).",
+  "Em có thể tạo tính từ đuôi -able/-ible/-ive và chọn đúng 'make' hay 'do' trong các cụm từ quen thuộc."
+ ]
+}

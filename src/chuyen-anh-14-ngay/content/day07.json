@@ -1,0 +1,657 @@
+{
+ "day": 7,
+ "type": "review",
+ "theme_en": "Review 1",
+ "theme_vi": "Vòng ôn 1 (buổi 1–6)",
+ "goal_vi": "Hôm nay không có bài mới đâu em ạ – mình cùng ôn lại toàn bộ từ vựng, ngữ pháp và các dạng bài thi của 6 buổi đầu tiên. Em làm chậm rãi, câu nào chưa chắc thì đánh dấu lại để xem lại bài cũ nhé!",
+ "minutes": 35,
+ "paper": {
+  "R1_vocab": {
+   "instruction_vi": "Em chọn từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, có 2 từ thừa. Gợi ý: đọc kỹ cả câu để chọn đúng loại từ nhé.",
+   "bank": [
+    "assignment",
+    "concentrate",
+    "spare",
+    "enthusiastic",
+    "recycle",
+    "species",
+    "rely",
+    "convenient",
+    "nutritious",
+    "destination",
+    "injury",
+    "crowded"
+   ],
+   "items": [
+    {
+     "id": "d7R1_1",
+     "q": "It's hard to ______ on my homework when my little brother is watching TV in the same room.",
+     "answer": "concentrate",
+     "from_day": 1,
+     "tag": "d1v4"
+    },
+    {
+     "id": "d7R1_2",
+     "q": "Ms Hoa asked us to hand in our history ______ by Friday. It's a two-page report about our town.",
+     "answer": "assignment",
+     "from_day": 1,
+     "tag": "d1v2"
+    },
+    {
+     "id": "d7R1_3",
+     "q": "What do you like doing in your ______ time? – I usually play badminton with my dad.",
+     "answer": "spare",
+     "from_day": 2,
+     "tag": "d2v4"
+    },
+    {
+     "id": "d7R1_4",
+     "q": "Nam is very ______ about football; he never misses a match on TV.",
+     "answer": "enthusiastic",
+     "from_day": 2,
+     "tag": "d2v3"
+    },
+    {
+     "id": "d7R1_5",
+     "q": "Instead of throwing away old bottles, we can ______ them to make new things.",
+     "answer": "recycle",
+     "from_day": 3,
+     "tag": "d3v4"
+    },
+    {
+     "id": "d7R1_6",
+     "q": "Many ______ of birds are in danger because people are cutting down the forests where they live.",
+     "answer": "species",
+     "from_day": 3,
+     "tag": "d3v5"
+    },
+    {
+     "id": "d7R1_7",
+     "q": "These days, many students ______ on the Internet to find information for their projects and hardly use library books.",
+     "answer": "rely",
+     "from_day": 4,
+     "tag": "d4v5"
+    },
+    {
+     "id": "d7R1_8",
+     "q": "Online shopping is very ______ because you can buy things without leaving home.",
+     "answer": "convenient",
+     "from_day": 4,
+     "tag": "d4v8"
+    },
+    {
+     "id": "d7R1_9",
+     "q": "Fruit and vegetables are very ______, so you should eat some every day.",
+     "answer": "nutritious",
+     "from_day": 5,
+     "tag": "d5v4"
+    },
+    {
+     "id": "d7R1_10",
+     "q": "Our final ______ was Đà Nẵng, but we stopped in Huế for one night on the way.",
+     "answer": "destination",
+     "from_day": 6,
+     "tag": "d6v2"
+    }
+   ]
+  },
+  "R2_grammar": {
+   "instruction_vi": "Em viết dạng đúng của động từ trong ngoặc, hoặc chọn từ đúng trong ngoặc. Nhớ tìm 'dấu hiệu' về thời gian trong câu trước khi chia động từ nhé.",
+   "items": [
+    {
+     "id": "d7R2_1",
+     "q": "Look! The children ______ (play) in the rain without their raincoats.",
+     "answer": "are playing",
+     "accept": [
+      "'re playing"
+     ],
+     "from_day": 1,
+     "tag": "d1g"
+    },
+    {
+     "id": "d7R2_2",
+     "q": "I ______ (not understand) this question. Can you explain it again, please?",
+     "answer": "don't understand",
+     "accept": [
+      "do not understand"
+     ],
+     "from_day": 1,
+     "tag": "d1g"
+    },
+    {
+     "id": "d7R2_3",
+     "q": "While I ______ (walk) to school this morning, I saw a beautiful rainbow.",
+     "answer": "was walking",
+     "from_day": 2,
+     "tag": "d2g"
+    },
+    {
+     "id": "d7R2_4",
+     "q": "My dad ______ (collect) stamps when he was a boy, but he stopped many years ago. (Dùng 'used to')",
+     "answer": "used to collect",
+     "from_day": 2,
+     "tag": "d2g"
+    },
+    {
+     "id": "d7R2_5",
+     "q": "I ______ (already / finish) my science project, so I can relax this weekend.",
+     "answer": "have already finished",
+     "accept": [
+      "'ve already finished"
+     ],
+     "from_day": 3,
+     "tag": "d3g"
+    },
+    {
+     "id": "d7R2_6",
+     "q": "We ______ (go) to Tràng An with our class two years ago.",
+     "answer": "went",
+     "from_day": 3,
+     "tag": "d3g"
+    },
+    {
+     "id": "d7R2_7",
+     "q": "Look at those dark clouds! It ______ (rain) very soon.",
+     "answer": "is going to rain",
+     "accept": [
+      "'s going to rain"
+     ],
+     "from_day": 4,
+     "tag": "d4g"
+    },
+    {
+     "id": "d7R2_8",
+     "q": "I ______ (meet) my cousin at the airport at 3 p.m. tomorrow – we arranged it last week.",
+     "answer": "am meeting",
+     "accept": [
+      "'m meeting",
+      "am going to meet",
+      "'m going to meet"
+     ],
+     "from_day": 4,
+     "tag": "d4g"
+    },
+    {
+     "id": "d7R2_9",
+     "q": "This year's maths test was ______ (easy) than last year's, so most of us got good marks.",
+     "answer": "easier",
+     "from_day": 5,
+     "tag": "d5g"
+    },
+    {
+     "id": "d7R2_10",
+     "q": "You ______ (mustn't / don't have to) wear a uniform on Saturdays – you can wear whatever you like.",
+     "answer": "don't have to",
+     "accept": [
+      "do not have to"
+     ],
+     "from_day": 6,
+     "tag": "d6g"
+    }
+   ]
+  },
+  "R3_wordform": {
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Em xác định trước: chỗ trống cần danh từ, tính từ hay trạng từ?",
+   "items": [
+    {
+     "id": "d7R3_1",
+     "q": "Thanks to my teacher's ______, I finally found the courage to join the English speaking contest. (ENCOURAGE)",
+     "answer": "encouragement",
+     "from_day": 1,
+     "tag": "d1w"
+    },
+    {
+     "id": "d7R3_2",
+     "q": "My brother is so ______; he has lost his phone twice this month. (CARE)",
+     "answer": "careless",
+     "from_day": 2,
+     "tag": "d2w"
+    },
+    {
+     "id": "d7R3_3",
+     "q": "The north of Việt Nam is very ______, so many roads there have sharp bends. (MOUNTAIN)",
+     "answer": "mountainous",
+     "from_day": 3,
+     "tag": "d3w"
+    },
+    {
+     "id": "d7R3_4",
+     "q": "The children listened ______ while the teacher read them a story. (QUIET)",
+     "answer": "quietly",
+     "from_day": 4,
+     "tag": "d4w"
+    },
+    {
+     "id": "d7R3_5",
+     "q": "It is ______ to swim across this river; it's far too wide and the water moves too fast. (POSSIBLE)",
+     "answer": "impossible",
+     "from_day": 5,
+     "tag": "d5w"
+    },
+    {
+     "id": "d7R3_6",
+     "q": "My sister wants to become a ______ and study life in the ocean. (SCIENCE)",
+     "answer": "scientist",
+     "from_day": 6,
+     "tag": "d6w"
+    }
+   ]
+  },
+  "R4_exam": {
+   "instruction_vi": "Mỗi câu là một dạng bài thi khác nhau mà em đã học. Em đọc kỹ yêu cầu ngắn ở đầu mỗi câu rồi khoanh A, B, C hoặc D nhé.",
+   "items": [
+    {
+     "id": "d7R4_1",
+     "format": "sentence_completion",
+     "q": "[Sentence completion] I missed three lessons because I was ill, so now I have to work hard to ______ with my classmates.",
+     "options": [
+      "drop out",
+      "catch up",
+      "give up",
+      "take up"
+     ],
+     "answer": "B",
+     "from_day": 1,
+     "tag": "fmt:sentence_completion"
+    },
+    {
+     "id": "d7R4_2",
+     "format": "synonym",
+     "q": "[Synonym] Choose the word CLOSEST in meaning to the words in CAPITALS: My grandfather TOOK UP painting after he retired.",
+     "options": [
+      "stopped",
+      "sold",
+      "hated",
+      "started"
+     ],
+     "answer": "D",
+     "from_day": 2,
+     "tag": "fmt:synonym"
+    },
+    {
+     "id": "d7R4_3",
+     "format": "antonym",
+     "q": "[Antonym] Choose the word OPPOSITE in meaning to the word in CAPITALS: We should REDUCE the amount of plastic we use every day.",
+     "options": [
+      "lower",
+      "recycle",
+      "increase",
+      "cut"
+     ],
+     "answer": "C",
+     "from_day": 3,
+     "tag": "fmt:antonym"
+    },
+    {
+     "id": "d7R4_4",
+     "format": "dialogue",
+     "q": "[Dialogue completion] Lan: \"Shall we go to the cinema on Saturday afternoon?\" – Minh: \"______\"",
+     "options": [
+      "Sorry, I'm visiting my grandparents that day.",
+      "Yes, I went there last week.",
+      "No, I didn't.",
+      "I'm going to the cinema right now."
+     ],
+     "answer": "A",
+     "from_day": 4,
+     "tag": "fmt:dialogue_completion"
+    },
+    {
+     "id": "d7R4_5",
+     "format": "transformation",
+     "q": "[Closest meaning] Choose the sentence CLOSEST in meaning to: \"No one in my class runs faster than Huy.\"",
+     "options": [
+      "Huy is slower than everyone in my class.",
+      "Some of my classmates run faster than Huy.",
+      "Huy is the fastest runner in my class.",
+      "Huy doesn't run as fast as my classmates."
+     ],
+     "answer": "C",
+     "from_day": 5,
+     "tag": "fmt:sentence_transformation"
+    },
+    {
+     "id": "d7R4_6",
+     "format": "cloze",
+     "q": "[Cloze] My aunt works abroad, so she doesn't often come home. But when she does, she always brings us lovely ______ from the countries she has visited.",
+     "options": [
+      "passengers",
+      "souvenirs",
+      "destinations",
+      "journeys"
+     ],
+     "answer": "B",
+     "from_day": 6,
+     "tag": "fmt:cloze"
+    }
+   ]
+  },
+  "E_reading": {
+   "id": "d7r",
+   "title": "Lan's New Wheels",
+   "text": "When Lan started Year 7, she spent most of her spare time in front of a screen. She played games on her tablet until late at night, and in the morning she felt too tired to concentrate in class. Her marks in maths began to fall.\n\nThen her school started a cycling club. Lan's teacher encouraged her to join, and although she was nervous at first, she soon became one of its most enthusiastic members. Every Saturday the club cycles to a different place near Hà Nội. Last month they explored a village that is famous for its pottery.\n\nCycling has changed Lan's life in many ways. She has more energy, she sleeps better, and her marks have improved. She has also learnt that bikes do not cause air pollution, so now she rides to school every day instead of asking her dad to drive her. \"I still play games sometimes,\" she says, \"but I always switch off my tablet at nine o'clock.\"",
+   "items": [
+    {
+     "id": "d7E1",
+     "kind": "tfng",
+     "q": "Lan used to find it difficult to concentrate at school.",
+     "answer": "True",
+     "from_day": 1,
+     "tag": "d7r"
+    },
+    {
+     "id": "d7E2",
+     "kind": "tfng",
+     "q": "Lan felt confident when she first joined the cycling club.",
+     "answer": "False",
+     "from_day": 2,
+     "tag": "d7r"
+    },
+    {
+     "id": "d7E3",
+     "kind": "tfng",
+     "q": "The cycling club has more than twenty members.",
+     "answer": "Not Given",
+     "from_day": 2,
+     "tag": "d7r"
+    },
+    {
+     "id": "d7E4",
+     "kind": "mcq",
+     "q": "Where did the club go last month?",
+     "options": [
+      "To a museum in the city centre",
+      "To a school in Hà Nội",
+      "To a village known for its pottery",
+      "To a farm near the river"
+     ],
+     "answer": "C",
+     "from_day": 6,
+     "tag": "d7r"
+    },
+    {
+     "id": "d7E5",
+     "kind": "mcq",
+     "q": "Why does Lan ride her bike to school now?",
+     "options": [
+      "Because bikes don't pollute the air.",
+      "Because her dad has sold his car.",
+      "Because it is faster than going by car.",
+      "Because her teacher told her to."
+     ],
+     "answer": "A",
+     "from_day": 3,
+     "tag": "d7r"
+    }
+   ]
+  },
+  "F_writing": {
+   "task_en": "Write an email (80–100 words) to your English penfriend, Alex. Tell Alex about a new hobby or a healthy habit you have started: what you used to do before, what you do now, and what you are going to do next. Use at least four words or phrasal verbs from Days 1–6.",
+   "task_vi": "Em viết một email (80–100 từ) cho bạn qua thư người nước ngoài tên Alex, kể về một sở thích mới hoặc một thói quen tốt em vừa bắt đầu: trước đây em thường làm gì (used to), bây giờ em làm gì, và sắp tới em dự định làm gì (be going to). Em dùng ít nhất 4 từ hoặc cụm động từ đã học ở buổi 1–6 nhé.",
+   "min_words": 80,
+   "model": "Hi Alex,\n\nHow are you? I want to tell you about my new hobby. I used to spend most of my spare time on my phone, and I often felt too tired to concentrate in class. Two months ago, I took up badminton. Now I play with my dad three times a week, and I have much more energy than before. Next month I'm going to enter a school competition – wish me luck! What do you do in your free time? Write back soon.\n\nBest wishes,\nMinh",
+   "checklist_vi": [
+    "Email của em có lời chào mở đầu (Hi Alex,) và lời chào kết thúc (Best wishes, + tên) chưa?",
+    "Em đã dùng đúng 3 mốc thời gian: trước đây (used to / quá khứ đơn), bây giờ (hiện tại đơn / hiện tại hoàn thành), sắp tới (be going to) chưa?",
+    "Em đã dùng ít nhất 4 từ hoặc cụm động từ của buổi 1–6 chưa? Em gạch chân chúng nhé.",
+    "Em đã viết đủ 80 từ, kiểm tra chính tả và chữ cái viết hoa đầu câu chưa?"
+   ]
+  },
+  "self_check_vi": [
+   "Em đã thuộc và dùng được 8 từ mới của mỗi buổi 1–6 (ví dụ: curriculum, enthusiastic, species, convenient, nutritious, souvenir).",
+   "Em phân biệt được hiện tại đơn và hiện tại tiếp diễn, và biết động từ chỉ trạng thái (know, like, understand) không dùng ở dạng tiếp diễn.",
+   "Em biết dùng quá khứ tiếp diễn với 'while/when', dùng 'used to' để nói về thói quen trong quá khứ.",
+   "Em phân biệt được hiện tại hoàn thành và quá khứ đơn, và dùng đúng will / be going to / hiện tại tiếp diễn cho tương lai.",
+   "Em dùng đúng so sánh hơn, so sánh nhất, too/enough, so/such và các động từ khuyết thiếu can/could/must/have to/should.",
+   "Em nhận ra được các dạng bài: điền câu, đồng nghĩa, trái nghĩa, hoàn thành hội thoại, câu gần nghĩa nhất và điền từ vào đoạn văn."
+  ]
+ },
+ "web_check": [
+  {
+   "id": "d7q1",
+   "type": "mcq",
+   "skill": "vocab",
+   "from_day": 1,
+   "q": "Science is my favourite subject in the school ______; we have it four times a week.",
+   "options": [
+    "knowledge",
+    "curriculum",
+    "assignment",
+    "membership"
+   ],
+   "answer": 1,
+   "explain_vi": "curriculum = chương trình học (gồm các môn học trong trường).",
+   "tag": "d1v1"
+  },
+  {
+   "id": "d7q2",
+   "type": "mcq",
+   "skill": "vocab",
+   "from_day": 1,
+   "q": "Tuấn ______ of the swimming team because the training started too early in the morning.",
+   "options": [
+    "dropped out",
+    "caught up",
+    "set off",
+    "worked out"
+   ],
+   "answer": 0,
+   "explain_vi": "drop out (of) = rời bỏ, bỏ ngang (một đội, khoá học, trường học).",
+   "tag": "d1p2"
+  },
+  {
+   "id": "d7q3",
+   "type": "text",
+   "skill": "grammar",
+   "from_day": 1,
+   "q": "Điền dạng đúng của động từ trong ngoặc: The sun ______ (rise) in the east.",
+   "answer": "rises",
+   "accept": [
+    "rises"
+   ],
+   "explain_vi": "Sự thật hiển nhiên → hiện tại đơn; chủ ngữ 'the sun' số ít → rises.",
+   "tag": "d1g"
+  },
+  {
+   "id": "d7q4",
+   "type": "mcq",
+   "skill": "vocab",
+   "from_day": 2,
+   "q": "The ______ fee for the chess club is 200,000 đồng a year.",
+   "options": [
+    "leisure",
+    "challenge",
+    "membership",
+    "collection"
+   ],
+   "answer": 2,
+   "explain_vi": "membership fee = phí thành viên (để tham gia câu lạc bộ).",
+   "tag": "d2v8"
+  },
+  {
+   "id": "d7q5",
+   "type": "mcq",
+   "skill": "grammar",
+   "from_day": 2,
+   "q": "I ______ a shower when the phone rang.",
+   "options": [
+    "took",
+    "was taking",
+    "am taking",
+    "have taken"
+   ],
+   "answer": 1,
+   "explain_vi": "Hành động đang xảy ra (quá khứ tiếp diễn) thì một hành động khác xen vào (quá khứ đơn).",
+   "tag": "d2g"
+  },
+  {
+   "id": "d7q6",
+   "type": "text",
+   "skill": "wordform",
+   "from_day": 2,
+   "q": "Viết dạng đúng của từ in hoa: This old map is ______ now; most of the roads have changed. (USE)",
+   "answer": "useless",
+   "accept": [
+    "useless"
+   ],
+   "explain_vi": "Bản đồ cũ, đường đã thay đổi hết → vô dụng: use + less = useless.",
+   "tag": "d2w"
+  },
+  {
+   "id": "d7q7",
+   "type": "mcq",
+   "skill": "vocab",
+   "from_day": 3,
+   "q": "My family is trying to ______ on plastic bags by taking cloth bags to the market.",
+   "options": [
+    "throw away",
+    "give up",
+    "switch off",
+    "cut down"
+   ],
+   "answer": 3,
+   "explain_vi": "cut down on = cắt giảm (dùng ít đi).",
+   "tag": "d3p1"
+  },
+  {
+   "id": "d7q8",
+   "type": "mcq",
+   "skill": "grammar",
+   "from_day": 3,
+   "q": "My sister ______ in Đà Nẵng since 2020.",
+   "options": [
+    "lives",
+    "lived",
+    "has lived",
+    "is living"
+   ],
+   "answer": 2,
+   "explain_vi": "'since 2020' → hành động bắt đầu trong quá khứ, kéo dài tới nay → hiện tại hoàn thành.",
+   "tag": "d3g"
+  },
+  {
+   "id": "d7q9",
+   "type": "text",
+   "skill": "vocab",
+   "from_day": 3,
+   "q": "Điền 1 động từ bắt đầu bằng 'p', nghĩa là 'bảo vệ': National parks help to ______ rare animals and plants.",
+   "answer": "protect",
+   "accept": [
+    "protect"
+   ],
+   "explain_vi": "protect = bảo vệ; sau 'must' dùng động từ nguyên thể.",
+   "tag": "d3v2"
+  },
+  {
+   "id": "d7q10",
+   "type": "mcq",
+   "skill": "vocab",
+   "from_day": 4,
+   "q": "You should ______ the apps on your phone regularly so that they work properly.",
+   "options": [
+    "update",
+    "invent",
+    "rely",
+    "access"
+   ],
+   "answer": 0,
+   "explain_vi": "update = cập nhật (để ứng dụng chạy tốt).",
+   "tag": "d4v7"
+  },
+  {
+   "id": "d7q11",
+   "type": "mcq",
+   "skill": "grammar",
+   "from_day": 4,
+   "q": "\"Oh no, I've left my umbrella at home!\" – \"Don't worry. I ______ lend you mine.\"",
+   "options": [
+    "was",
+    "will",
+    "am",
+    "did"
+   ],
+   "answer": 1,
+   "explain_vi": "Quyết định / lời đề nghị giúp đỡ ngay lúc nói → will.",
+   "tag": "d4g"
+  },
+  {
+   "id": "d7q12",
+   "type": "text",
+   "skill": "wordform",
+   "from_day": 4,
+   "q": "Viết dạng đúng của từ in hoa: The old man walked ______ across the busy road. (SLOW)",
+   "answer": "slowly",
+   "accept": [
+    "slowly"
+   ],
+   "explain_vi": "Bổ nghĩa cho động từ 'walked' → cần trạng từ: slow + ly.",
+   "tag": "d4w"
+  },
+  {
+   "id": "d7q13",
+   "type": "mcq",
+   "skill": "grammar",
+   "from_day": 5,
+   "q": "My little sister isn't old ______ to ride a bike on the main road.",
+   "options": [
+    "too",
+    "so",
+    "enough",
+    "such"
+   ],
+   "answer": 2,
+   "explain_vi": "tính từ + enough + to V: old enough to ride.",
+   "tag": "d5g"
+  },
+  {
+   "id": "d7q14",
+   "type": "text",
+   "skill": "wordform",
+   "from_day": 5,
+   "q": "Viết dạng đúng của từ in hoa: Sitting in front of a screen all day is an ______ habit. (HEALTHY)",
+   "answer": "unhealthy",
+   "accept": [
+    "unhealthy"
+   ],
+   "explain_vi": "Ngồi trước màn hình cả ngày là thói quen không tốt cho sức khoẻ → un + healthy = unhealthy.",
+   "tag": "d5w"
+  },
+  {
+   "id": "d7q15",
+   "type": "mcq",
+   "skill": "vocab",
+   "from_day": 6,
+   "q": "My uncle often travels ______ for work; he has been to Japan, Korea and France.",
+   "options": [
+    "crowded",
+    "delay",
+    "souvenir",
+    "abroad"
+   ],
+   "answer": 3,
+   "explain_vi": "travel abroad = đi nước ngoài (abroad là trạng từ).",
+   "tag": "d6v7"
+  },
+  {
+   "id": "d7q16",
+   "type": "mcq",
+   "skill": "vocab",
+   "from_day": 6,
+   "q": "We are really looking forward to ______ our cousins in Huế this summer.",
+   "options": [
+    "visiting",
+    "visit",
+    "be visiting",
+    "visited"
+   ],
+   "answer": 0,
+   "explain_vi": "look forward to + V-ing ('to' ở đây là giới từ).",
+   "tag": "d6p2"
+  }
+ ],
+ "can_do_vi": [
+  "Em có thể nhớ lại và dùng đúng từ vựng, cụm động từ của 6 chủ đề: trường học, sở thích, môi trường, công nghệ, sức khoẻ, du lịch.",
+  "Em có thể chọn đúng thì (hiện tại, quá khứ, hiện tại hoàn thành, tương lai) dựa vào dấu hiệu trong câu.",
+  "Em có thể nhận ra và làm được 6 dạng câu hỏi trắc nghiệm hay gặp trong đề thi chuyên."
+ ]
+}

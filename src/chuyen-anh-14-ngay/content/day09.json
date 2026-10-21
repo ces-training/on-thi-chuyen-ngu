@@ -1,0 +1,141 @@
+{
+  "day": 9,
+  "type": "normal",
+  "theme_en": "Food & culture",
+  "theme_vi": "Ẩm thực và văn hoá",
+  "goal_vi": "Hôm nay em sẽ học các từ về món ăn, lễ hội và phong tục, cùng cách dùng danh từ đếm được/không đếm được, much/many/a few/a little/plenty of và mạo từ a/an/the. Em cũng sẽ luyện dạng bài tìm từ đồng nghĩa – chuẩn bị một chút đồ ăn vặt rồi mình bắt đầu nhé!",
+  "minutes": 30,
+  "vocab": [
+    {"id": "d9v1", "word": "tradition", "pos": "n", "ipa": "/trəˈdɪʃn/", "meaning_vi": "truyền thống", "example": "It is a tradition in my family to visit our grandparents on the first day of Tết.", "family": "traditional (adj), traditionally (adv)"},
+    {"id": "d9v2", "word": "festival", "pos": "n", "ipa": "/ˈfestɪvl/", "meaning_vi": "lễ hội", "example": "The Mid-Autumn Festival is my little sister's favourite time of the year.", "family": "festive (adj), festivals (n, số nhiều)"},
+    {"id": "d9v3", "word": "ingredient", "pos": "n", "ipa": "/ɪnˈɡriːdiənt/", "meaning_vi": "nguyên liệu (để nấu món ăn)", "example": "The main ingredients of bánh chưng are sticky rice, green beans and pork.", "family": "ingredients (n, số nhiều)"},
+    {"id": "d9v4", "word": "recipe", "pos": "n", "ipa": "/ˈresəpi/", "meaning_vi": "công thức nấu ăn", "example": "My grandma never uses a recipe; she cooks everything from memory.", "family": "recipes (n, số nhiều); recipe book (sách dạy nấu ăn)"},
+    {"id": "d9v5", "word": "flavour", "pos": "n", "ipa": "/ˈfleɪvə(r)/", "meaning_vi": "hương vị", "example": "This ice cream comes in three flavours: mango, coconut and chocolate.", "family": "flavoured (adj); Anh-Mỹ viết: flavor"},
+    {"id": "d9v6", "word": "custom", "pos": "n", "ipa": "/ˈkʌstəm/", "meaning_vi": "phong tục, tập quán", "example": "Giving lucky money to children at Tết is an old Vietnamese custom.", "family": "customs (n, số nhiều; còn có nghĩa 'hải quan')"},
+    {"id": "d9v7", "word": "celebrate", "pos": "v", "ipa": "/ˈselɪbreɪt/", "meaning_vi": "tổ chức ăn mừng, kỷ niệm", "example": "We celebrated my brother's birthday with a big family dinner.", "family": "celebration (n)"},
+    {"id": "d9v8", "word": "local", "pos": "adj", "ipa": "/ˈləʊkl/", "meaning_vi": "(thuộc về) địa phương", "example": "When I travel, I always try the local food.", "family": "locally (adv); locals (n: người dân địa phương)"}
+  ],
+  "phrasal": [
+    {"id": "d9p1", "phrase": "eat out", "meaning_vi": "đi ăn ở ngoài (nhà hàng, quán ăn)", "example": "My family usually eats out on Saturday evenings."},
+    {"id": "d9p2", "phrase": "run out of", "meaning_vi": "hết, cạn (cái gì)", "example": "We've run out of fish sauce, so I have to go to the shop."}
+  ],
+  "grammar": {
+    "id": "d9g",
+    "title": "Countable/uncountable nouns; much/many/a few/a little/plenty of; articles a/an/the/zero",
+    "rule_vi": [
+      "Danh từ đếm được có số ít/số nhiều (an egg – two eggs). Danh từ không đếm được không có số nhiều, không dùng a/an và đi với động từ số ít (rice, water, bread, information, advice, money).",
+      "many / a few + danh từ đếm được số nhiều (many eggs, a few apples). much / a little + danh từ không đếm được (much sugar, a little salt). plenty of / a lot of dùng được với cả hai loại.",
+      "a few / a little = một ít (đủ dùng, nghĩa tích cực). few / little (không có 'a') = rất ít, gần như không có (nghĩa tiêu cực).",
+      "a/an: nhắc đến lần đầu, danh từ đếm được số ít (an onion, a festival). the: vật đã được nhắc đến, hoặc chỉ có một (the sun, the best dish).",
+      "Mạo từ rỗng (không dùng mạo từ): khi nói chung chung về danh từ số nhiều hoặc không đếm được (Children love sweets. Rice is grown in Asia.), và trước tên bữa ăn (have breakfast)."
+    ],
+    "examples": [
+      "There isn't much milk left, but we have plenty of eggs.",
+      "Add a little salt and a few spring onions.",
+      "I bought a cake and a bottle of juice. The cake was delicious.",
+      "Rice is the main food in many Asian countries."
+    ],
+    "common_mistake_vi": "Dùng a/an hoặc thêm -s cho danh từ không đếm được: ✗ She gave me an advice. / ✗ two breads → ✓ She gave me some advice / a piece of advice. ✓ two loaves of bread / two pieces of bread."
+  },
+  "wordform": {
+    "id": "d9w",
+    "focus": "-ness, -ity",
+    "rule_vi": "Thêm -ness hoặc -ity vào tính từ để tạo danh từ. Với -ness: y đổi thành i (happy → happiness). Với -ity: thường bỏ e hoặc đổi chút chính tả (pure → purity, able → ability).",
+    "examples": [["kind", "kindness"], ["happy", "happiness"], ["popular", "popularity"], ["able", "ability"], ["dark", "darkness"]]
+  },
+  "paper": {
+    "A_vocab": {
+      "instruction_vi": "Em chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, và có 2 từ không cần dùng đến nhé.",
+      "bank": ["tradition", "festival", "ingredients", "recipe", "flavour", "celebrate", "local", "ran out of"],
+      "items": [
+        {"id": "d9A1", "q": "Making bánh chưng together before Tết is an important ______ in many Vietnamese families.", "answer": "tradition", "tag": "d9v1"},
+        {"id": "d9A2", "q": "To make this pancake, you only need three ______: flour, eggs and milk.", "answer": "ingredients", "tag": "d9v3"},
+        {"id": "d9A3", "q": "My aunt gave me her ______ for chicken curry, so now I can cook it myself.", "answer": "recipe", "tag": "d9v4"},
+        {"id": "d9A4", "q": "I love the ______ of fresh mint in my spring rolls.", "answer": "flavour", "accept": ["flavor"], "tag": "d9v5"},
+        {"id": "d9A5", "q": "When we went to Hội An, we ate at a small restaurant that served only ______ dishes like cao lầu.", "answer": "local", "tag": "d9v8"},
+        {"id": "d9A6", "q": "Halfway through the party, we ______ ice, so Dad drove to the shop to buy some more.", "answer": "ran out of", "tag": "d9p2"}
+      ]
+    },
+    "B_grammar": {
+      "instruction_vi": "Em chọn từ đúng trong ngoặc. Nếu không cần mạo từ, em viết dấu '–' (gạch ngang) nhé. Gợi ý: trước tiên hãy xác định danh từ sau chỗ trống là đếm được hay không đếm được.",
+      "items": [
+        {"id": "d9B1", "q": "How ______ (much / many) sugar do you put in your coffee?", "answer": "much", "tag": "d9g"},
+        {"id": "d9B2", "q": "There were ______ (much / many) people at the flower festival last Sunday.", "answer": "many", "tag": "d9g"},
+        {"id": "d9B3", "q": "The soup tastes a bit bland. Can you add ______ (a few / a little) salt?", "answer": "a little", "tag": "d9g"},
+        {"id": "d9B4", "q": "I've invited ______ (a few / a little) friends to my birthday party – just four or five.", "answer": "a few", "tag": "d9g"},
+        {"id": "d9B5", "q": "Yesterday I ate ______ (a / an / the) orange and a banana. ______ (A / An / The) orange was very sweet. (Viết 2 đáp án, cách nhau bởi dấu phẩy)", "answer": "an, The", "accept": ["an, the", "an,The", "an,the", "an The", "an the"], "tag": "d9g"},
+        {"id": "d9B6", "q": "In my opinion, ______ (a / the / –) vegetables are good for everyone, so we should eat them every day.", "answer": "–", "accept": ["-", "x", "no article", "zero article", "0", "Ø"], "tag": "d9g"}
+      ]
+    },
+    "C_wordform": {
+      "instruction_vi": "Viết dạng đúng của từ in hoa. Gợi ý: cả 4 chỗ trống đều cần DANH TỪ đuôi -ness hoặc -ity.",
+      "items": [
+        {"id": "d9C1", "q": "Thank you for your ______. You helped me a lot when I was ill. (KIND)", "answer": "kindness", "tag": "d9w"},
+        {"id": "d9C2", "q": "The ______ of phở has spread around the world; you can find it in London, Paris and Tokyo. (POPULAR)", "answer": "popularity", "tag": "d9w"},
+        {"id": "d9C3", "q": "My little brother has a great ______ to remember the names of all the dishes on a menu. (ABLE)", "answer": "ability", "tag": "d9w"},
+        {"id": "d9C4", "q": "The children's faces were full of ______ when they saw the lanterns at the festival. (HAPPY)", "answer": "happiness", "tag": "d9w"}
+      ]
+    },
+    "D_exam": {
+      "format": "synonym",
+      "instruction_vi": "Em chọn từ hoặc cụm từ A, B, C hoặc D có nghĩa GẦN NHẤT với từ in hoa trong câu. Mẹo: thử thay từng đáp án vào câu xem câu có giữ nguyên nghĩa không nhé.",
+      "items": [
+        {"id": "d9D1", "q": "In some countries, it is a CUSTOM to take off your shoes before entering a house.", "options": ["habit of one person", "rule of the school", "traditional way of doing something", "kind of clothes"], "answer": "C", "tag": "fmt:synonym"},
+        {"id": "d9D2", "q": "Our family CELEBRATED Grandpa's 80th birthday with a big party.", "options": ["forgot", "marked", "planned", "missed"], "answer": "B", "tag": "fmt:synonym"},
+        {"id": "d9D3", "q": "We often EAT OUT on Friday evenings because everyone is too tired to cook.", "options": ["have a meal at a restaurant", "eat everything on the plate", "have a picnic in the garden", "eat less food than usual"], "answer": "A", "tag": "fmt:synonym"},
+        {"id": "d9D4", "q": "This dish has a very strong FLAVOUR of ginger.", "options": ["colour", "price", "smell only", "taste"], "answer": "D", "tag": "fmt:synonym"}
+      ]
+    },
+    "E_reading": {
+      "id": "d9r",
+      "title": "Grandma's Kitchen at Tết",
+      "text": "For Linh, the best part of Tết is not the lucky money. It is the two days before the festival, when the whole family gathers in her grandmother's kitchen in Nam Định. It is a family tradition: everyone has a job. The men wash the banana leaves, the children carry water, and Grandma prepares the ingredients for bánh chưng – sticky rice, green beans, pork and a little pepper.\n\nGrandma has never written down her recipe. \"It is in my hands,\" she says. This year, Linh decided to learn it. She watched carefully and wrote every step in a notebook. Her first cake was not perfectly square, but everyone said it had a wonderful flavour.\n\nThe cakes are boiled for about ten hours, so the family takes turns to watch the fire through the night. Linh's cousins tell stories and sing songs. \"We don't eat out much at Tết,\" Linh says. \"Food made together just tastes better.\"",
+      "items": [
+        {"id": "d9E1", "kind": "tfng", "q": "Linh's grandmother keeps her recipe for bánh chưng in a notebook.", "answer": "False", "tag": "d9r"},
+        {"id": "d9E2", "kind": "tfng", "q": "Linh's first bánh chưng tasted good even though its shape was not perfect.", "answer": "True", "tag": "d9r"},
+        {"id": "d9E3", "kind": "mcq", "q": "What do the children do in the kitchen?", "options": ["They wash the banana leaves.", "They prepare the pork.", "They carry water.", "They watch the fire alone."], "answer": "C", "tag": "d9r"},
+        {"id": "d9E4", "kind": "mcq", "q": "What does Linh mean when she says \"Food made together just tastes better\"?", "options": ["Restaurant food is too expensive at Tết.", "Cooking with her family makes the food more special.", "Her grandmother is the best cook in Nam Định.", "Bánh chưng should always be boiled for ten hours."], "answer": "B", "tag": "d9r"}
+      ]
+    },
+    "F_writing": {
+      "task_en": "Write a short paragraph (50–70 words) about a traditional dish from your family or your hometown. Say what the main ingredients are, when people usually eat it, and why you like it. Use much/many/a few/a little at least once and two words from today's lesson.",
+      "task_vi": "Em viết một đoạn văn ngắn (50–70 từ) giới thiệu một món ăn truyền thống của gia đình hoặc quê hương em: nguyên liệu chính là gì, mọi người thường ăn vào dịp nào, và vì sao em thích món đó. Em dùng ít nhất 1 lần much/many/a few/a little và 2 từ mới của bài hôm nay nhé.",
+      "min_words": 50,
+      "model": "My favourite traditional dish is bún chả, a local speciality of Hà Nội. The main ingredients are rice noodles, grilled pork and fresh herbs. You also need a little sugar, garlic and fish sauce to make the dipping sauce. Many people eat it for lunch, and my family often eats out at a small bún chả shop near our house. I love its smoky flavour!",
+      "checklist_vi": [
+        "Em đã nêu tên món ăn, nguyên liệu chính, dịp ăn và lý do em thích chưa?",
+        "Em đã dùng đúng much/many/a few/a little với danh từ đếm được và không đếm được chưa?",
+        "Em đã dùng ít nhất 2 từ mới của bài hôm nay và kiểm tra mạo từ a/an/the chưa?",
+        "Em đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
+      ]
+    },
+    "G_review": {
+      "instruction_vi": "Ôn xoắn ốc – Em làm theo gợi ý trong ngoặc ở mỗi câu để ôn lại bài các buổi 8, 6 và 3 nhé. Câu nào chưa chắc, em mở lại bài cũ xem lại cũng được!",
+      "items": [
+        {"id": "d9G1", "q": "The famous Hà Nội Opera House ______ (build) by the French in the early 20th century.", "answer": "was built", "from_day": 8, "tag": "d8g"},
+        {"id": "d9G2", "q": "While I was looking for a recipe online, I ______ a video about street food in Thailand. (cụm động từ ở thì quá khứ, nghĩa là 'tình cờ thấy')", "answer": "came across", "from_day": 8, "tag": "d8p2"},
+        {"id": "d9G3", "q": "Hundreds of ______ were waiting at the station when the train finally arrived. (từ của buổi 6, bắt đầu bằng 'p', nghĩa là 'hành khách')", "answer": "passengers", "from_day": 6, "tag": "d6v6"},
+        {"id": "d9G4", "q": "I ______ (not / finish) my lunch yet, so I can't go out to play.", "answer": "haven't finished", "accept": ["have not finished"], "from_day": 3, "tag": "d3g"}
+      ]
+    }
+  },
+  "web_check": [
+    {"id": "d9q1", "type": "mcq", "skill": "vocab", "q": "Every year, our town holds a food ______ where people can try dishes from all over Việt Nam.", "options": ["recipe", "custom", "festival", "ingredient"], "answer": 2, "explain_vi": "food festival = lễ hội ẩm thực.", "tag": "d9v2"},
+    {"id": "d9q2", "type": "text", "skill": "vocab", "q": "Điền 1 động từ bắt đầu bằng 'c', nghĩa là 'ăn mừng, tổ chức kỷ niệm': How do people in your country ______ the New Year?", "answer": "celebrate", "accept": ["celebrate"], "explain_vi": "celebrate = ăn mừng, tổ chức (một dịp đặc biệt).", "tag": "d9v7"},
+    {"id": "d9q3", "type": "mcq", "skill": "vocab", "q": "Mum is too busy to cook tonight, so we're going to ______ at the noodle shop near the park.", "options": ["eat out", "run out", "set off", "find out"], "answer": 0, "explain_vi": "eat out = đi ăn ở ngoài, không nấu ở nhà.", "tag": "d9p1"},
+    {"id": "d9q4", "type": "mcq", "skill": "grammar", "q": "Could you give me ______ advice about what to cook for my parents' anniversary?", "options": ["an", "many", "a few", "some"], "answer": 3, "explain_vi": "advice là danh từ không đếm được → không dùng an / many / a few; dùng some advice.", "tag": "d9g"},
+    {"id": "d9q5", "type": "mcq", "skill": "grammar", "q": "Hurry up! We only have ______ minutes before the film starts.", "options": ["a little", "much", "a few", "little"], "answer": 2, "explain_vi": "minutes là danh từ đếm được số nhiều → a few minutes (một vài phút).", "tag": "d9g"},
+    {"id": "d9q6", "type": "text", "skill": "grammar", "q": "Điền một mạo từ (a, an hoặc the): Look at ______ moon! It's so bright tonight.", "answer": "the", "accept": ["the"], "explain_vi": "Chỉ có duy nhất một mặt trăng → dùng the.", "tag": "d9g"},
+    {"id": "d9q7", "type": "mcq", "skill": "wordform", "q": "There is a strong ______ between these two soups; both use rice noodles, beef and fresh herbs. (SIMILAR)", "options": ["similar", "similarity", "similarly", "similarness"], "answer": 1, "explain_vi": "Sau 'a strong' cần danh từ: similar + ity = similarity (sự giống nhau). Không có từ 'similarness'.", "tag": "d9w"},
+    {"id": "d9q8", "type": "text", "skill": "wordform", "q": "Viết dạng đúng của từ in hoa: After the long walk, I felt a strange ______ in my legs. (WEAK)", "answer": "weakness", "accept": ["weakness"], "explain_vi": "Sau 'a strange' cần danh từ: weak + ness = weakness (sự yếu, mệt).", "tag": "d9w"},
+    {"id": "d9q9", "type": "mcq", "skill": "exam", "q": "Choose the word CLOSEST in meaning to the word in CAPITALS: We bought some LOCAL fruit at the market in Đà Lạt.", "options": ["imported", "expensive", "fresh", "from the area"], "answer": 3, "explain_vi": "local = thuộc địa phương, tức là 'from the area' (của vùng đó).", "tag": "fmt:synonym"},
+    {"id": "d9q10", "type": "mcq", "skill": "review", "from_day": 8, "q": "The singing competition ______ on TV every Saturday night.", "options": ["broadcasts", "is broadcast", "was broadcasting", "broadcasted"], "answer": 1, "explain_vi": "Cuộc thi được phát sóng → bị động hiện tại đơn: is broadcast (V3 của broadcast vẫn là broadcast).", "tag": "d8g"},
+    {"id": "d9q11", "type": "mcq", "skill": "review", "from_day": 6, "q": "When we arrived at the bus station, we ______ wait for an hour because the bus was late.", "options": ["must", "should", "had to", "can"], "answer": 2, "explain_vi": "Việc bắt buộc do hoàn cảnh trong quá khứ → had to (must không có dạng quá khứ).", "tag": "d6g"},
+    {"id": "d9q12", "type": "text", "skill": "review", "from_day": 3, "q": "Điền 1 động từ bắt đầu bằng 'r', nghĩa là 'giảm bớt': We can ______ waste by bringing our own lunch boxes to school.", "answer": "reduce", "accept": ["reduce"], "explain_vi": "reduce = giảm bớt; sau 'can' dùng động từ nguyên thể.", "tag": "d3v7"}
+  ],
+  "can_do_vi": [
+    "Em có thể dùng 8 từ mới và 2 cụm động từ (eat out, run out of) để nói về món ăn, lễ hội và phong tục.",
+    "Em có thể phân biệt danh từ đếm được/không đếm được, dùng đúng much/many/a few/a little/plenty of và mạo từ a/an/the.",
+    "Em có thể tạo danh từ đuôi -ness/-ity và tìm từ đồng nghĩa trong bài thi."
+  ]
+}

@@ -1,0 +1,589 @@
+{
+ "day": 2,
+ "type": "normal",
+ "theme_en": "Hobbies & free time",
+ "theme_vi": "Sở thích",
+ "goal_vi": "Hôm nay em sẽ học cách kể về sở thích và thời gian rảnh, đồng thời luyện thì quá khứ đơn, quá khứ tiếp diễn và cấu trúc used to. Em cũng làm quen với dạng bài tìm từ đồng nghĩa trong đề thi chuyên nhé!",
+ "minutes": 30,
+ "vocab": [
+  {
+   "id": "d2v1",
+   "word": "leisure",
+   "pos": "n",
+   "ipa": "/ˈleʒə(r)/",
+   "meaning_vi": "thời gian rảnh rỗi, sự thư giãn",
+   "example": "In her leisure time, my mum enjoys gardening.",
+   "family": "leisurely (adj)"
+  },
+  {
+   "id": "d2v2",
+   "word": "collect",
+   "pos": "v",
+   "ipa": "/kəˈlekt/",
+   "meaning_vi": "sưu tầm, thu thập",
+   "example": "My cousin collects old coins from different countries.",
+   "family": "collection (n), collector (n)"
+  },
+  {
+   "id": "d2v3",
+   "word": "enthusiastic",
+   "pos": "adj",
+   "ipa": "/ɪnˌθjuːziˈæstɪk/",
+   "meaning_vi": "nhiệt tình, hăng hái (enthusiastic about sth)",
+   "example": "Tuan is very enthusiastic about photography.",
+   "family": "enthusiasm (n), enthusiastically (adv)"
+  },
+  {
+   "id": "d2v4",
+   "word": "spare",
+   "pos": "adj",
+   "ipa": "/speə(r)/",
+   "meaning_vi": "rảnh rỗi, dư ra (spare time = thời gian rảnh)",
+   "example": "What do you like doing in your spare time?",
+   "family": "spare (v): dành ra"
+  },
+  {
+   "id": "d2v5",
+   "word": "challenge",
+   "pos": "n",
+   "ipa": "/ˈtʃælɪndʒ/",
+   "meaning_vi": "thử thách",
+   "example": "Climbing that mountain was a real challenge for me.",
+   "family": "challenge (v), challenging (adj)"
+  },
+  {
+   "id": "d2v6",
+   "word": "creative",
+   "pos": "adj",
+   "ipa": "/kriˈeɪtɪv/",
+   "meaning_vi": "sáng tạo",
+   "example": "Making comics is a creative hobby.",
+   "family": "create (v), creativity (n), creation (n)"
+  },
+  {
+   "id": "d2v7",
+   "word": "relax",
+   "pos": "v",
+   "ipa": "/rɪˈlæks/",
+   "meaning_vi": "thư giãn, nghỉ ngơi",
+   "example": "I relax by listening to music after school.",
+   "family": "relaxation (n), relaxed (adj), relaxing (adj)"
+  },
+  {
+   "id": "d2v8",
+   "word": "membership",
+   "pos": "n",
+   "ipa": "/ˈmembəʃɪp/",
+   "meaning_vi": "tư cách hội viên; thẻ hội viên",
+   "example": "A year's membership of the swimming club costs 500,000 dong.",
+   "family": "member (n)"
+  }
+ ],
+ "phrasal": [
+  {
+   "id": "d2p1",
+   "phrase": "take up",
+   "meaning_vi": "bắt đầu một sở thích / hoạt động mới",
+   "example": "Last year my grandpa took up yoga, and now he does it every morning."
+  },
+  {
+   "id": "d2p2",
+   "phrase": "give up",
+   "meaning_vi": "từ bỏ (một thói quen, hoạt động)",
+   "example": "Don't give up learning the guitar just because it's difficult at first."
+  }
+ ],
+ "grammar": {
+  "id": "d2g",
+  "title": "Past simple vs past continuous; used to",
+  "rule_vi": [
+   "Quá khứ đơn (S + V-ed / V2): hành động đã xảy ra và kết thúc trong quá khứ. Dấu hiệu: yesterday, last week, ago, in 2020…",
+   "Quá khứ tiếp diễn (S + was/were + V-ing): hành động đang diễn ra tại một thời điểm trong quá khứ (at 8 p.m. yesterday, at that time).",
+   "Khi một hành động đang diễn ra (quá khứ tiếp diễn) thì một hành động khác xen vào (quá khứ đơn): I was reading when the phone rang. Với while thường dùng quá khứ tiếp diễn.",
+   "used to + V (nguyên mẫu): thói quen / trạng thái trong quá khứ, nay không còn nữa. Phủ định: didn't use to + V; câu hỏi: Did you use to + V?"
+  ],
+  "examples": [
+   "I was drawing a picture when the lights went out.",
+   "While my sister was playing the piano, my dad was cooking dinner.",
+   "We used to go fishing every summer, but now we prefer camping.",
+   "Did you use to collect stickers when you were small?"
+  ],
+  "common_mistake_vi": "Sai: I didn't used to like vegetables. → Đúng: I didn't use to like vegetables. (sau did / didn't dùng 'use to', không có -d)."
+ },
+ "wordform": {
+  "id": "d2w",
+  "focus": "-ful, -less",
+  "rule_vi": "Thêm -ful vào danh từ để tạo tính từ mang nghĩa 'có nhiều …' (care → careful), thêm -less để tạo tính từ mang nghĩa 'không có …' (care → careless). Chú ý: beauty → beautiful (y → i).",
+  "examples": [
+   [
+    "use",
+    "useful / useless"
+   ],
+   [
+    "care",
+    "careful / careless"
+   ],
+   [
+    "help",
+    "helpful / helpless"
+   ],
+   [
+    "beauty",
+    "beautiful"
+   ],
+   [
+    "hope",
+    "hopeful / hopeless"
+   ],
+   [
+    "end",
+    "endless"
+   ]
+  ]
+ },
+ "paper": {
+  "A_vocab": {
+   "instruction_vi": "Em chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ed, -ing…) nếu cần nhé!",
+   "bank": [
+    "leisure",
+    "collect",
+    "enthusiastic",
+    "spare",
+    "challenge",
+    "relax",
+    "membership",
+    "take up"
+   ],
+   "items": [
+    {
+     "id": "d2A1",
+     "q": "Many people go to the park at the weekend for ______ activities like cycling and kite flying.",
+     "answer": "leisure",
+     "tag": "d2v1"
+    },
+    {
+     "id": "d2A2",
+     "q": "My little brother loves stamps. He has ______ more than 300 of them!",
+     "answer": "collected",
+     "tag": "d2v2"
+    },
+    {
+     "id": "d2A3",
+     "q": "The new members of the drama club are really ______ about the show. They want to practise every day.",
+     "answer": "enthusiastic",
+     "tag": "d2v3"
+    },
+    {
+     "id": "d2A4",
+     "q": "Learning to swim at the age of 40 was a big ______ for my aunt, but she did it.",
+     "answer": "challenge",
+     "tag": "d2v5"
+    },
+    {
+     "id": "d2A5",
+     "q": "After a long day at school, I usually ______ by reading comics on the sofa.",
+     "answer": "relax",
+     "tag": "d2v7"
+    },
+    {
+     "id": "d2A6",
+     "q": "Your ______ card lets you borrow up to five books from the library at a time.",
+     "answer": "membership",
+     "tag": "d2v8"
+    }
+   ]
+  },
+  "B_grammar": {
+   "instruction_vi": "Em chia động từ trong ngoặc ở thì quá khứ đơn, quá khứ tiếp diễn, hoặc dùng used to cho đúng nhé.",
+   "items": [
+    {
+     "id": "d2B1",
+     "q": "I ______ (watch) a cartoon when my mum called me for dinner.",
+     "answer": "was watching",
+     "tag": "d2g"
+    },
+    {
+     "id": "d2B2",
+     "q": "Yesterday Hoa ______ (buy) a new sketchbook for her art class.",
+     "answer": "bought",
+     "tag": "d2g"
+    },
+    {
+     "id": "d2B3",
+     "q": "At 9 o'clock last night, my brothers ______ (play) chess in the living room.",
+     "answer": "were playing",
+     "tag": "d2g"
+    },
+    {
+     "id": "d2B4",
+     "q": "While we ______ (walk) home, it started to rain heavily.",
+     "answer": "were walking",
+     "tag": "d2g"
+    },
+    {
+     "id": "d2B5",
+     "q": "My dad ______ (use to / play) the guitar in a band, but he stopped when I was born.",
+     "answer": "used to play",
+     "tag": "d2g"
+    },
+    {
+     "id": "d2B6",
+     "q": "Minh ______ (not / use to / like) reading, but now he reads a book every week.",
+     "answer": "didn't use to like",
+     "accept": [
+      "did not use to like"
+     ],
+     "tag": "d2g"
+    }
+   ]
+  },
+  "C_wordform": {
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Gợi ý: hôm nay mình dùng đuôi -ful hoặc -less.",
+   "items": [
+    {
+     "id": "d2C1",
+     "q": "This website is very ______. It has lots of tips for beginners who want to draw. (USE)",
+     "answer": "useful",
+     "tag": "d2w"
+    },
+    {
+     "id": "d2C2",
+     "q": "Be ______ with those scissors! They are very sharp. (CARE)",
+     "answer": "careful",
+     "tag": "d2w"
+    },
+    {
+     "id": "d2C3",
+     "q": "I tried to fix the old kite, but it was ______. It was broken in too many places. (HOPE)",
+     "answer": "hopeless",
+     "tag": "d2w"
+    },
+    {
+     "id": "d2C4",
+     "q": "We saw a ______ sunset from the top of the hill. (BEAUTY)",
+     "answer": "beautiful",
+     "tag": "d2w"
+    }
+   ]
+  },
+  "D_exam": {
+   "format": "synonym",
+   "instruction_vi": "Dạng bài từ đồng nghĩa: em chọn đáp án (A, B, C hoặc D) có nghĩa GẦN NHẤT với từ / cụm từ VIẾT IN HOA trong câu.",
+   "items": [
+    {
+     "id": "d2D1",
+     "q": "Lan has been KEEN ON painting since she was five.",
+     "options": [
+      "tired of",
+      "interested in",
+      "afraid of",
+      "good at"
+     ],
+     "answer": "B",
+     "tag": "fmt:synonym"
+    },
+    {
+     "id": "d2D2",
+     "q": "My grandmother decided to TAKE UP knitting after she retired.",
+     "options": [
+      "start",
+      "stop",
+      "teach",
+      "sell"
+     ],
+     "answer": "A",
+     "tag": "fmt:synonym"
+    },
+    {
+     "id": "d2D3",
+     "q": "I don't have much SPARE time during the exam season.",
+     "options": [
+      "busy",
+      "school",
+      "free",
+      "short"
+     ],
+     "answer": "C",
+     "tag": "fmt:synonym"
+    },
+    {
+     "id": "d2D4",
+     "q": "The children were very ENTHUSIASTIC about the new robot club.",
+     "options": [
+      "worried",
+      "bored",
+      "careful",
+      "excited"
+     ],
+     "answer": "D",
+     "tag": "fmt:synonym"
+    }
+   ]
+  },
+  "E_reading": {
+   "id": "d2r",
+   "title": "Grandpa's Box of Stamps",
+   "text": "When my grandfather was a boy, he didn't have a phone or a computer. In his spare time, he used to collect stamps. Every time a letter arrived at his house, he carefully cut out the stamp and kept it in an old biscuit box.\n\nLast Sunday, I was helping him clean his room when I found the box under his bed. Inside, there were hundreds of stamps from more than forty countries. Some had pictures of birds and flowers, and others showed famous buildings.\n\nGrandpa told me that he gave up his hobby when he started work because he was too busy. 'But I never threw the box away,' he said with a smile.\n\nNow we are sorting the stamps together on Sunday afternoons. It is a slow job, but it is very relaxing. I have even decided to take up stamp collecting myself, and I hope one day my collection will be as big as his.",
+   "items": [
+    {
+     "id": "d2E1",
+     "kind": "tfng",
+     "q": "The writer found the box while cleaning Grandpa's room.",
+     "answer": "True",
+     "tag": "d2r"
+    },
+    {
+     "id": "d2E2",
+     "kind": "tfng",
+     "q": "Grandpa's favourite stamps are the ones with pictures of birds.",
+     "answer": "Not Given",
+     "tag": "d2r"
+    },
+    {
+     "id": "d2E3",
+     "kind": "mcq",
+     "q": "Why did Grandpa stop collecting stamps?",
+     "options": [
+      "He lost his biscuit box.",
+      "He had no free time after he started working.",
+      "He didn't like stamps any more.",
+      "His letters stopped arriving."
+     ],
+     "answer": "B",
+     "tag": "d2r"
+    },
+    {
+     "id": "d2E4",
+     "kind": "mcq",
+     "q": "What does the writer plan to do?",
+     "options": [
+      "throw the old box away",
+      "sell Grandpa's stamps",
+      "start his or her own stamp collection",
+      "visit forty countries"
+     ],
+     "answer": "C",
+     "tag": "d2r"
+    }
+   ]
+  },
+  "F_writing": {
+   "task_en": "Write a paragraph (50–70 words) about a hobby you used to have or one you took up recently. Say when and how you started it and why you like (or liked) it.",
+   "task_vi": "Viết một đoạn văn (50–70 từ) về một sở thích em từng có trước đây hoặc mới bắt đầu gần đây: em bắt đầu khi nào, như thế nào, và vì sao em thích nó.",
+   "min_words": 50,
+   "model": "When I was in grade 4, I used to collect stickers, but last year I took up drawing comics. It started one rainy afternoon. I was sitting at home and feeling bored when I found an empty notebook. I drew a funny cat, and my sister laughed a lot. Drawing is a creative hobby, and it helps me relax after school. I want to make my own comic book one day.",
+   "checklist_vi": [
+    "Em có dùng thì quá khứ đơn để kể chuyện đã xảy ra không?",
+    "Em có dùng ít nhất 1 câu quá khứ tiếp diễn hoặc 1 câu với used to không?",
+    "Em có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 2 (ví dụ: spare, creative, relax, take up…) không?",
+    "Đoạn văn đủ 50 từ và có câu nêu lý do (because / so)."
+   ]
+  },
+  "G_review": {
+   "instruction_vi": "Ôn xoắn ốc – mình quay lại kiến thức của buổi 1 (Trường học) để nhớ lâu hơn nhé. Em điền từ thích hợp hoặc chia động từ trong ngoặc.",
+   "items": [
+    {
+     "id": "d2G1",
+     "q": "I can't ______ on my homework when my brother is playing loud music. (Gợi ý: c__________)",
+     "answer": "concentrate",
+     "from_day": 1,
+     "tag": "d1v4"
+    },
+    {
+     "id": "d2G2",
+     "q": "Be quiet, please! The baby ______ (sleep).",
+     "answer": "is sleeping",
+     "accept": [
+      "'s sleeping"
+     ],
+     "from_day": 1,
+     "tag": "d1g"
+    },
+    {
+     "id": "d2G3",
+     "q": "Our teacher gave us a clear ______ of the new grammar rule. (EXPLAIN)",
+     "answer": "explanation",
+     "from_day": 1,
+     "tag": "d1w"
+    },
+    {
+     "id": "d2G4",
+     "q": "He ______ out of the football team because he hurt his leg. (Gợi ý: một động từ ở quá khứ)",
+     "answer": "dropped",
+     "from_day": 1,
+     "tag": "d1p2"
+    }
+   ]
+  }
+ },
+ "web_check": [
+  {
+   "id": "d2q1",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "Mia loves making things with paper and paint. She is a very ______ girl.",
+   "options": [
+    "spare",
+    "creative",
+    "leisure",
+    "enthusiasm"
+   ],
+   "answer": 1,
+   "explain_vi": "creative = sáng tạo, là tính từ đứng sau 'a very' và trước danh từ 'girl'.",
+   "tag": "d2v6"
+  },
+  {
+   "id": "d2q2",
+   "type": "text",
+   "skill": "vocab",
+   "q": "If you have some s______ time this weekend, let's go cycling together. (Viết cả từ)",
+   "answer": "spare",
+   "explain_vi": "spare time = thời gian rảnh.",
+   "tag": "d2v4"
+  },
+  {
+   "id": "d2q3",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "Learning a new language is hard, but you shouldn't ______ after only one week.",
+   "options": [
+    "take up",
+    "catch up",
+    "look up",
+    "give up"
+   ],
+   "answer": 3,
+   "explain_vi": "give up = bỏ cuộc, từ bỏ.",
+   "tag": "d2p2"
+  },
+  {
+   "id": "d2q4",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "Linh ______ her bike when she saw a cat in the middle of the road.",
+   "options": [
+    "rode",
+    "was riding",
+    "rides",
+    "is riding"
+   ],
+   "answer": 1,
+   "explain_vi": "Hành động đang diễn ra (was riding) thì có hành động khác xen vào (saw).",
+   "tag": "d2g"
+  },
+  {
+   "id": "d2q5",
+   "type": "text",
+   "skill": "grammar",
+   "q": "When I was little, I ______ (use to / be) afraid of the dark. (Viết 3 từ)",
+   "answer": "used to be",
+   "explain_vi": "used to + V nguyên mẫu: trạng thái trong quá khứ, nay không còn nữa.",
+   "tag": "d2g"
+  },
+  {
+   "id": "d2q6",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "What ______ you doing at 7 p.m. last Saturday?",
+   "options": [
+    "did",
+    "are",
+    "was",
+    "were"
+   ],
+   "answer": 3,
+   "explain_vi": "Thời điểm cụ thể trong quá khứ → quá khứ tiếp diễn; chủ ngữ 'you' đi với were.",
+   "tag": "d2g"
+  },
+  {
+   "id": "d2q7",
+   "type": "mcq",
+   "skill": "wordform",
+   "q": "The boy felt ______ when he saw the big dog because he couldn't run away.",
+   "options": [
+    "helpful",
+    "help",
+    "helpless",
+    "helping"
+   ],
+   "answer": 2,
+   "explain_vi": "helpless = bất lực, không tự giúp mình được.",
+   "tag": "d2w"
+  },
+  {
+   "id": "d2q8",
+   "type": "text",
+   "skill": "wordform",
+   "q": "You made a lot of ______ mistakes because you didn't check your test. (CARE)",
+   "answer": "careless",
+   "explain_vi": "careless = cẩu thả. Không kiểm tra bài → lỗi do cẩu thả.",
+   "tag": "d2w"
+  },
+  {
+   "id": "d2q9",
+   "type": "mcq",
+   "skill": "exam",
+   "q": "Choose the word CLOSEST in meaning to the word in capitals: Listening to soft music helps me RELAX before bed.",
+   "options": [
+    "rest",
+    "wake",
+    "work",
+    "hurry"
+   ],
+   "answer": 0,
+   "explain_vi": "relax ≈ rest (nghỉ ngơi, thư giãn).",
+   "tag": "fmt:synonym"
+  },
+  {
+   "id": "d2q10",
+   "type": "mcq",
+   "skill": "review",
+   "q": "Ms Lan always ______ her students to read English books in the summer holiday.",
+   "options": [
+    "encourages",
+    "improves",
+    "concentrates",
+    "attends"
+   ],
+   "answer": 0,
+   "explain_vi": "encourage sb to do sth = khuyến khích ai làm gì (từ buổi 1).",
+   "from_day": 1,
+   "tag": "d1v8"
+  },
+  {
+   "id": "d2q11",
+   "type": "text",
+   "skill": "review",
+   "q": "Lan can't come to the phone now. She ______ (have) a bath.",
+   "answer": "is having",
+   "accept": [
+    "'s having"
+   ],
+   "explain_vi": "have a bath = tắm (hành động) nên chia -ing được; 'now' → hiện tại tiếp diễn (buổi 1).",
+   "from_day": 1,
+   "tag": "d1g"
+  },
+  {
+   "id": "d2q12",
+   "type": "mcq",
+   "skill": "review",
+   "q": "I was ill for a week, so I need to ______ with the lessons I missed.",
+   "options": [
+    "drop out",
+    "catch up",
+    "give up",
+    "take up"
+   ],
+   "answer": 1,
+   "explain_vi": "catch up with = bắt kịp, theo kịp (buổi 1).",
+   "from_day": 1,
+   "tag": "d1p1"
+  }
+ ],
+ "can_do_vi": [
+  "Em có thể nói về sở thích và thời gian rảnh bằng 8 từ mới, cùng take up và give up.",
+  "Em có thể kể chuyện quá khứ bằng quá khứ đơn và quá khứ tiếp diễn, và nói về thói quen cũ với used to.",
+  "Em có thể tạo tính từ với -ful và -less.",
+  "Em có thể làm dạng bài tìm từ đồng nghĩa trong đề thi chuyên."
+ ]
+}

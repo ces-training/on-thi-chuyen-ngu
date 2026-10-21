@@ -1,0 +1,605 @@
+{
+ "day": 10,
+ "type": "normal",
+ "theme_en": "Work & jobs",
+ "theme_vi": "Công việc và nghề nghiệp",
+ "goal_vi": "Hôm nay em sẽ học các từ để nói về nghề nghiệp và ước mơ tương lai của mình. Em cũng sẽ làm quen với câu điều kiện loại 0, 1, 2 – một chủ điểm rất hay gặp trong đề thi chuyên đấy!",
+ "minutes": 30,
+ "vocab": [
+  {
+   "id": "d10v1",
+   "word": "career",
+   "pos": "n",
+   "ipa": "/kəˈrɪə(r)/",
+   "meaning_vi": "sự nghiệp, nghề nghiệp (lâu dài)",
+   "example": "My aunt had a long career as a nurse.",
+   "family": "career-minded (adj)"
+  },
+  {
+   "id": "d10v2",
+   "word": "skill",
+   "pos": "n",
+   "ipa": "/skɪl/",
+   "meaning_vi": "kỹ năng",
+   "example": "Cooking is a useful skill for everyone.",
+   "family": "skilful (adj), skilled (adj), unskilled (adj)"
+  },
+  {
+   "id": "d10v3",
+   "word": "employ",
+   "pos": "v",
+   "ipa": "/ɪmˈplɔɪ/",
+   "meaning_vi": "thuê, tuyển dụng (ai đó làm việc)",
+   "example": "The new hotel will employ fifty local people.",
+   "family": "employer (n), employee (n), employment (n), unemployed (adj)"
+  },
+  {
+   "id": "d10v4",
+   "word": "experience",
+   "pos": "n",
+   "ipa": "/ɪkˈspɪəriəns/",
+   "meaning_vi": "kinh nghiệm; trải nghiệm",
+   "example": "She has three years of experience in teaching.",
+   "family": "experienced (adj), inexperienced (adj)"
+  },
+  {
+   "id": "d10v5",
+   "word": "responsible",
+   "pos": "adj",
+   "ipa": "/rɪˈspɒnsəbl/",
+   "meaning_vi": "có trách nhiệm; chịu trách nhiệm (for)",
+   "example": "Who is responsible for cleaning the classroom today?",
+   "family": "responsibility (n), irresponsible (adj)"
+  },
+  {
+   "id": "d10v6",
+   "word": "apply",
+   "pos": "v",
+   "ipa": "/əˈplaɪ/",
+   "meaning_vi": "nộp đơn, ứng tuyển (for)",
+   "example": "My brother applied for a job at a bookshop.",
+   "family": "application (n), applicant (n)"
+  },
+  {
+   "id": "d10v7",
+   "word": "colleague",
+   "pos": "n",
+   "ipa": "/ˈkɒliːɡ/",
+   "meaning_vi": "đồng nghiệp",
+   "example": "Dad often talks about his colleagues at dinner.",
+   "family": "colleagues (n, số nhiều)"
+  },
+  {
+   "id": "d10v8",
+   "word": "ambition",
+   "pos": "n",
+   "ipa": "/æmˈbɪʃn/",
+   "meaning_vi": "hoài bão, khát vọng",
+   "example": "Her ambition is to become a pilot.",
+   "family": "ambitious (adj)"
+  }
+ ],
+ "phrasal": [
+  {
+   "id": "d10p1",
+   "phrase": "carry on",
+   "meaning_vi": "tiếp tục (làm gì) – carry on + V-ing / carry on with sth",
+   "example": "Please carry on working while I make a phone call."
+  },
+  {
+   "id": "d10p2",
+   "phrase": "turn down",
+   "meaning_vi": "từ chối (lời mời, lời đề nghị); vặn nhỏ (âm lượng)",
+   "example": "He turned down the job because it was too far from home."
+  }
+ ],
+ "grammar": {
+  "id": "d10g",
+  "title": "Conditionals type 0, 1, 2",
+  "rule_vi": [
+   "Loại 0 – sự thật luôn đúng: If + hiện tại đơn, hiện tại đơn. (If you heat ice, it melts.)",
+   "Loại 1 – việc có thể xảy ra ở hiện tại/tương lai: If + hiện tại đơn, will/can + V nguyên mẫu.",
+   "Loại 2 – việc không có thật hoặc khó xảy ra ở hiện tại: If + quá khứ đơn, would/could + V nguyên mẫu.",
+   "Ở loại 2, động từ 'be' dùng 'were' cho mọi ngôi (If I were you...). 'was' cũng gặp trong văn nói, nhưng khi làm bài thi em nên chọn 'were'.",
+   "Mệnh đề If có thể đứng trước hoặc sau. Nếu đứng trước thì có dấu phẩy: If it rains, we'll stay home. = We'll stay home if it rains."
+  ],
+  "examples": [
+   "If you mix blue and yellow, you get green.",
+   "If you finish your homework early, we will go to the park.",
+   "If I had a lot of money, I would build a library for my village."
+  ],
+  "common_mistake_vi": "Không dùng 'will' trong mệnh đề If. Sai: If it will rain tomorrow, we will stay at home. Đúng: If it rains tomorrow, we will stay at home."
+ },
+ "wordform": {
+  "id": "d10w",
+  "focus": "-ise, -ify, -en",
+  "rule_vi": "Thêm -ise, -ify hoặc -en vào sau tính từ/danh từ để tạo ra ĐỘNG TỪ (nghĩa: làm cho...). Tiếng Anh-Anh viết -ise (realise), tiếng Anh-Mỹ viết -ize (realize) – cả hai đều đúng.",
+  "examples": [
+   [
+    "modern",
+    "modernise"
+   ],
+   [
+    "real",
+    "realise"
+   ],
+   [
+    "pure",
+    "purify"
+   ],
+   [
+    "class",
+    "classify"
+   ],
+   [
+    "wide",
+    "widen"
+   ],
+   [
+    "short",
+    "shorten"
+   ]
+  ]
+ },
+ "paper": {
+  "A_vocab": {
+   "instruction_vi": "Chọn từ thích hợp trong khung để điền vào chỗ trống. Mỗi từ dùng một lần, có 2 từ thừa nhé.",
+   "bank": [
+    "ambition",
+    "employs",
+    "responsible",
+    "apply",
+    "skills",
+    "career",
+    "colleague",
+    "carry on"
+   ],
+   "items": [
+    {
+     "id": "d10A1",
+     "q": "My uncle's ______ is to open his own restaurant one day.",
+     "answer": "ambition",
+     "tag": "d10v8"
+    },
+    {
+     "id": "d10A2",
+     "q": "The factory near my house ______ more than three hundred workers.",
+     "answer": "employs",
+     "tag": "d10v3"
+    },
+    {
+     "id": "d10A3",
+     "q": "Who is ______ for feeding the cat while we are on holiday?",
+     "answer": "responsible",
+     "tag": "d10v5"
+    },
+    {
+     "id": "d10A4",
+     "q": "If you want to join the school newspaper, you need to ______ for a place before Friday.",
+     "answer": "apply",
+     "tag": "d10v6"
+    },
+    {
+     "id": "d10A5",
+     "q": "Good communication ______ are important in almost every job.",
+     "answer": "skills",
+     "tag": "d10v2"
+    },
+    {
+     "id": "d10A6",
+     "q": "She had a long and successful ______ in banking before she retired.",
+     "answer": "career",
+     "tag": "d10v1"
+    }
+   ]
+  },
+  "B_grammar": {
+   "instruction_vi": "Chia động từ trong ngoặc theo câu điều kiện loại 0, 1 hoặc 2. Em nhìn kỹ động từ ở vế còn lại để đoán loại câu nhé.",
+   "items": [
+    {
+     "id": "d10B1",
+     "q": "If you heat ice, it ______ (melt).",
+     "answer": "melts",
+     "tag": "d10g"
+    },
+    {
+     "id": "d10B2",
+     "q": "If it rains tomorrow, we ______ (play) indoors.",
+     "answer": "will play",
+     "accept": [
+      "'ll play"
+     ],
+     "tag": "d10g"
+    },
+    {
+     "id": "d10B3",
+     "q": "If I ______ (be) taller, I would join the basketball team.",
+     "answer": "were",
+     "accept": [
+      "was"
+     ],
+     "tag": "d10g"
+    },
+    {
+     "id": "d10B4",
+     "q": "If Nam ______ (not hurry), he will miss the bus.",
+     "answer": "doesn't hurry",
+     "accept": [
+      "does not hurry"
+     ],
+     "tag": "d10g"
+    },
+    {
+     "id": "d10B5",
+     "q": "If I had more free time, I ______ (learn) to play the guitar.",
+     "answer": "would learn",
+     "accept": [
+      "'d learn"
+     ],
+     "tag": "d10g"
+    },
+    {
+     "id": "d10B6",
+     "q": "Plants die if they ______ (not get) enough water.",
+     "answer": "don't get",
+     "accept": [
+      "do not get"
+     ],
+     "tag": "d10g"
+    }
+   ]
+  },
+  "C_wordform": {
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Gợi ý: hôm nay các đáp án đều là động từ đuôi -ise, -ify hoặc -en.",
+   "items": [
+    {
+     "id": "d10C1",
+     "q": "The city plans to ______ the road because the traffic is getting heavier. (WIDE)",
+     "answer": "widen",
+     "tag": "d10w"
+    },
+    {
+     "id": "d10C2",
+     "q": "Scientists ______ animals into different groups, such as mammals and birds. (CLASS)",
+     "answer": "classify",
+     "tag": "d10w"
+    },
+    {
+     "id": "d10C3",
+     "q": "I didn't ______ how late it was until my mum called me. (REAL)",
+     "answer": "realise",
+     "accept": [
+      "realize"
+     ],
+     "tag": "d10w"
+    },
+    {
+     "id": "d10C4",
+     "q": "Can you ______ this report? It's too long for our presentation. (SHORT)",
+     "answer": "shorten",
+     "tag": "d10w"
+    }
+   ]
+  },
+  "D_exam": {
+   "format": "dialogue",
+   "instruction_vi": "Hoàn thành đoạn hội thoại: chọn câu đáp phù hợp nhất (A, B, C hoặc D). Mẹo: em hãy đọc kỹ câu của người thứ nhất và tự hỏi 'người ta đang chúc, mời, xin lỗi hay kể chuyện?'.",
+   "items": [
+    {
+     "id": "d10D1",
+     "q": "Lan: 'I've got a job interview tomorrow and I'm really nervous.' – Minh: '______'",
+     "options": [
+      "Good luck! I'm sure you'll do well.",
+      "Congratulations on your new job!",
+      "Never mind. It doesn't matter.",
+      "Yes, I'd love to."
+     ],
+     "answer": "A",
+     "tag": "fmt:dialogue_completion"
+    },
+    {
+     "id": "d10D2",
+     "q": "Teacher: 'Would you like to help organise the school career day?' – Student: '______'",
+     "options": [
+      "No, I don't like you.",
+      "Yes, I'd be happy to. What do I need to do?",
+      "I'm fine, thank you.",
+      "It's very kind of me."
+     ],
+     "answer": "B",
+     "tag": "fmt:dialogue_completion"
+    },
+    {
+     "id": "d10D3",
+     "q": "Hùng: 'Sorry, shall I stop reading here?' – Teacher: '______'",
+     "options": [
+      "Yes, please turn it down.",
+      "You're welcome.",
+      "Same to you.",
+      "No, please carry on. You're doing well."
+     ],
+     "answer": "D",
+     "tag": "fmt:dialogue_completion"
+    },
+    {
+     "id": "d10D4",
+     "q": "Linh: 'They offered me a part-time job, but I turned it down.' – Nga: '______'",
+     "options": [
+      "Great! When do you start?",
+      "Yes, please.",
+      "Really? Why did you say no?",
+      "Let's turn it down together."
+     ],
+     "answer": "C",
+     "tag": "fmt:dialogue_completion"
+    }
+   ]
+  },
+  "E_reading": {
+   "id": "d10r",
+   "title": "Two Weeks at the Animal Clinic",
+   "instruction_vi": "Đọc đoạn văn rồi làm bài. Câu 1–2: chọn True (đúng), False (sai) hoặc Not Given (bài không nói đến). Câu 3–4: chọn A, B, C hoặc D.",
+   "text": "Last summer, fifteen-year-old Khoa spent two weeks helping at a small animal clinic near his home. He did not get paid, but he wanted some real experience because his ambition is to become a vet. On his first morning, the head vet, Dr Thu, gave him one simple rule: 'If you are not sure, ask.' Khoa was responsible for cleaning the cages and feeding the cats. It was not exciting work, but he soon learned an important skill: staying calm when animals were frightened. Dr Thu's colleagues were friendly and always explained what they were doing. One afternoon, a dog arrived with a badly injured leg, and Khoa watched the whole team work together for over an hour. That evening he told his parents, 'If I worked there every day, I would learn so much!' At the end of the two weeks, the clinic invited him to come back next summer. He did not turn the offer down.",
+   "items": [
+    {
+     "id": "d10E1",
+     "kind": "tfng",
+     "q": "Khoa received money for his work at the clinic.",
+     "answer": "False",
+     "tag": "d10r"
+    },
+    {
+     "id": "d10E2",
+     "kind": "tfng",
+     "q": "Khoa already has a pet dog at home.",
+     "answer": "Not Given",
+     "tag": "d10r"
+    },
+    {
+     "id": "d10E3",
+     "kind": "mcq",
+     "q": "What was Khoa's main job at the clinic?",
+     "options": [
+      "treating injured animals",
+      "answering the phone",
+      "cleaning the cages and feeding the cats",
+      "training dogs"
+     ],
+     "answer": "C",
+     "tag": "d10r"
+    },
+    {
+     "id": "d10E4",
+     "kind": "mcq",
+     "q": "'He did not turn the offer down' means that Khoa ______.",
+     "options": [
+      "refused to go back",
+      "forgot about the offer",
+      "made the music quieter",
+      "accepted the invitation"
+     ],
+     "answer": "D",
+     "tag": "d10r"
+    }
+   ]
+  },
+  "F_writing": {
+   "task_en": "Write about a job you would like to do in the future. Say why you want this job, what skills it needs, and what you will do to get it. Use at least one conditional sentence.",
+   "task_vi": "Viết về một nghề em muốn làm trong tương lai: vì sao em thích nghề đó, nghề đó cần kỹ năng gì, và em sẽ làm gì để đạt được ước mơ. Dùng ít nhất một câu điều kiện nhé.",
+   "min_words": 50,
+   "model": "When I grow up, I want to be a doctor. My ambition is to help sick people in my town. A good doctor needs many skills, for example, listening carefully and staying calm. If I study hard at school, I will get into a good medical university. If I were a doctor now, I would visit poor villages and treat people for free. I know it is a long journey, but I will carry on.",
+   "checklist_vi": [
+    "Em đã nói rõ nghề em muốn làm và lý do chưa?",
+    "Em đã dùng ít nhất 3 từ mới của hôm nay (career, skill, ambition, experience...)?",
+    "Câu điều kiện của em đã đúng thì chưa? (If + hiện tại đơn → will; If + quá khứ đơn → would)",
+    "Em đã viết đủ 50 từ trở lên chưa?"
+   ]
+  },
+  "G_review": {
+   "instruction_vi": "Ôn xoắn ốc – em làm 4 câu ôn lại kiến thức của các buổi trước nhé. Chữ cái gợi ý (nếu có) là chữ cái đầu của đáp án.",
+   "items": [
+    {
+     "id": "d10G1",
+     "q": "Rice, eggs and spring onions are the main ______ in this fried rice dish. (i______)",
+     "answer": "ingredients",
+     "from_day": 9,
+     "tag": "d9v3"
+    },
+    {
+     "id": "d10G2",
+     "q": "There isn't ______ milk left in the fridge. (much / many)",
+     "answer": "much",
+     "from_day": 9,
+     "tag": "d9g"
+    },
+    {
+     "id": "d10G3",
+     "q": "I'm looking forward to ______ (see) my grandparents next week.",
+     "answer": "seeing",
+     "from_day": 6,
+     "tag": "d6p2"
+    },
+    {
+     "id": "d10G4",
+     "q": "Be careful! You ______ (drop) those plates!",
+     "answer": "are going to drop",
+     "accept": [
+      "'re going to drop"
+     ],
+     "from_day": 4,
+     "tag": "d4g"
+    }
+   ]
+  }
+ },
+ "web_check": [
+  {
+   "id": "d10q1",
+   "type": "text",
+   "skill": "vocab",
+   "q": "The hotel wants a receptionist with at least one year of e______.",
+   "answer": "experience",
+   "accept": [],
+   "explain_vi": "'experience' = kinh nghiệm (danh từ không đếm được). 'one year of experience' = một năm kinh nghiệm.",
+   "tag": "d10v4"
+  },
+  {
+   "id": "d10q2",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "My mum often has lunch with her ______ from the office.",
+   "options": [
+    "careers",
+    "colleagues",
+    "ambitions",
+    "skills"
+   ],
+   "answer": 1,
+   "explain_vi": "'colleagues' = đồng nghiệp – những người làm cùng cơ quan với mẹ.",
+   "tag": "d10v7"
+  },
+  {
+   "id": "d10q3",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "Minh was offered a part-time job, but he ______ because it was too far from his home.",
+   "options": [
+    "turned it down",
+    "carried it on",
+    "turned down it",
+    "applied it"
+   ],
+   "answer": 0,
+   "explain_vi": "'turn down' = từ chối. Khi tân ngữ là đại từ (it), đại từ phải đứng giữa: turn it down (không nói turn down it).",
+   "tag": "d10p2"
+  },
+  {
+   "id": "d10q4",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "If you press this button, the machine ______.",
+   "options": [
+    "stopped",
+    "would stop",
+    "stopping",
+    "stops"
+   ],
+   "answer": 3,
+   "explain_vi": "Câu điều kiện loại 0 (sự thật luôn đúng): If + hiện tại đơn, hiện tại đơn → stops.",
+   "tag": "d10g"
+  },
+  {
+   "id": "d10q5",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "If I ______ ten million dong, I would buy a new bike.",
+   "options": [
+    "have",
+    "will have",
+    "had",
+    "am having"
+   ],
+   "answer": 2,
+   "explain_vi": "Vế sau có 'would buy' → câu điều kiện loại 2: If + quá khứ đơn → had.",
+   "tag": "d10g"
+  },
+  {
+   "id": "d10q6",
+   "type": "text",
+   "skill": "grammar",
+   "q": "If Lan ______ (study) hard, she will pass the test.",
+   "answer": "studies",
+   "accept": [],
+   "explain_vi": "Câu điều kiện loại 1: If + hiện tại đơn. Chủ ngữ số ít 'Lan' → studies (y → ies).",
+   "tag": "d10g"
+  },
+  {
+   "id": "d10q7",
+   "type": "mcq",
+   "skill": "wordform",
+   "q": "We need to ______ the river water before we drink it. (PURE)",
+   "options": [
+    "purify",
+    "pureness",
+    "purely",
+    "purity"
+   ],
+   "answer": 0,
+   "explain_vi": "Sau 'need to' cần động từ. pure + -ify → purify (làm sạch).",
+   "tag": "d10w"
+  },
+  {
+   "id": "d10q8",
+   "type": "text",
+   "skill": "wordform",
+   "q": "This photo is too dark. Can you ______ it a little? (BRIGHT)",
+   "answer": "brighten",
+   "accept": [],
+   "explain_vi": "Sau 'Can you' cần động từ. bright + -en → brighten (làm sáng lên).",
+   "tag": "d10w"
+  },
+  {
+   "id": "d10q9",
+   "type": "mcq",
+   "skill": "exam",
+   "q": "A: 'If you need any help with your application form, just ask me.' – B: '______'",
+   "options": [
+    "You're welcome.",
+    "Yes, I am.",
+    "Not at all.",
+    "Thanks, that's very kind of you."
+   ],
+   "answer": 3,
+   "explain_vi": "Khi ai đó đề nghị giúp mình, ta cảm ơn: 'Thanks, that's very kind of you.' 'You're welcome' là câu đáp lại lời cảm ơn.",
+   "tag": "fmt:dialogue_completion"
+  },
+  {
+   "id": "d10q10",
+   "type": "mcq",
+   "skill": "review",
+   "from_day": 9,
+   "q": "We've run ______ sugar, so I can't make the cake.",
+   "options": [
+    "out",
+    "off",
+    "out of",
+    "down of"
+   ],
+   "answer": 2,
+   "explain_vi": "'run out of + danh từ' = hết (cái gì). Phải có đủ 'out of'.",
+   "tag": "d9p2"
+  },
+  {
+   "id": "d10q11",
+   "type": "mcq",
+   "skill": "review",
+   "from_day": 6,
+   "q": "You ______ wear a seat belt in the car. It's the law.",
+   "options": [
+    "can",
+    "would",
+    "must",
+    "could"
+   ],
+   "answer": 2,
+   "explain_vi": "'must' diễn tả sự bắt buộc (luật lệ). 'can/could' chỉ khả năng hoặc sự cho phép.",
+   "tag": "d6g"
+  },
+  {
+   "id": "d10q12",
+   "type": "text",
+   "skill": "review",
+   "from_day": 4,
+   "q": "Please s______ off the lights when you leave the room.",
+   "answer": "switch",
+   "accept": [],
+   "explain_vi": "'switch off' = tắt (đèn, máy). Câu mệnh lệnh dùng động từ nguyên mẫu: switch.",
+   "tag": "d4p1"
+  }
+ ],
+ "can_do_vi": [
+  "Em có thể nói về nghề nghiệp và ước mơ của mình bằng các từ career, skill, ambition, experience...",
+  "Em có thể dùng đúng câu điều kiện loại 0, 1 và 2.",
+  "Em có thể tạo động từ bằng đuôi -ise, -ify, -en và chọn câu đáp phù hợp trong hội thoại."
+ ]
+}

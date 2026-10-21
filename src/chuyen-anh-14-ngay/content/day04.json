@@ -1,0 +1,613 @@
+{
+ "day": 4,
+ "type": "normal",
+ "theme_en": "Technology",
+ "theme_vi": "Công nghệ",
+ "goal_vi": "Hôm nay em sẽ học các từ về công nghệ và ba cách nói về tương lai: will, be going to và hiện tại tiếp diễn. Em cũng sẽ luyện dạng bài hoàn thành hội thoại, rất gần với cách người ta nói chuyện hằng ngày đấy!",
+ "minutes": 30,
+ "vocab": [
+  {
+   "id": "d4v1",
+   "word": "device",
+   "pos": "n",
+   "ipa": "/dɪˈvaɪs/",
+   "meaning_vi": "thiết bị, dụng cụ",
+   "example": "Phones, tablets and smartwatches are all digital devices.",
+   "family": "devices (n, số nhiều)"
+  },
+  {
+   "id": "d4v2",
+   "word": "invent",
+   "pos": "v",
+   "ipa": "/ɪnˈvent/",
+   "meaning_vi": "phát minh, sáng chế",
+   "example": "Who invented the first robot?",
+   "family": "invention (n), inventor (n), inventive (adj)"
+  },
+  {
+   "id": "d4v3",
+   "word": "access",
+   "pos": "n, v",
+   "ipa": "/ˈækses/",
+   "meaning_vi": "(n) quyền / cơ hội sử dụng (access to sth); (v) truy cập",
+   "example": "All students have access to the computer room after school.",
+   "family": "accessible (adj)"
+  },
+  {
+   "id": "d4v4",
+   "word": "digital",
+   "pos": "adj",
+   "ipa": "/ˈdɪdʒɪtl/",
+   "meaning_vi": "kỹ thuật số",
+   "example": "My dad reads digital books on his tablet.",
+   "family": "digitally (adv)"
+  },
+  {
+   "id": "d4v5",
+   "word": "rely",
+   "pos": "v",
+   "ipa": "/rɪˈlaɪ/",
+   "meaning_vi": "dựa vào, phụ thuộc vào (rely on sb/sth)",
+   "example": "Many people rely on maps on their phones when they travel.",
+   "family": "reliable (adj), reliance (n)"
+  },
+  {
+   "id": "d4v6",
+   "word": "screen",
+   "pos": "n",
+   "ipa": "/skriːn/",
+   "meaning_vi": "màn hình",
+   "example": "Don't sit too close to the TV screen.",
+   "family": "screen time (n): thời gian dùng thiết bị điện tử"
+  },
+  {
+   "id": "d4v7",
+   "word": "update",
+   "pos": "v, n",
+   "ipa": "/ˌʌpˈdeɪt/",
+   "meaning_vi": "(v) cập nhật; (n) bản cập nhật",
+   "example": "You should update your apps to fix problems.",
+   "family": "up-to-date (adj)"
+  },
+  {
+   "id": "d4v8",
+   "word": "convenient",
+   "pos": "adj",
+   "ipa": "/kənˈviːniənt/",
+   "meaning_vi": "tiện lợi, thuận tiện",
+   "example": "Online shopping is convenient because you don't have to leave home.",
+   "family": "convenience (n), inconvenient (adj)"
+  }
+ ],
+ "phrasal": [
+  {
+   "id": "d4p1",
+   "phrase": "switch off",
+   "meaning_vi": "tắt (đèn, máy móc, thiết bị)",
+   "example": "Please switch off your phones before the test begins."
+  },
+  {
+   "id": "d4p2",
+   "phrase": "keep up with",
+   "meaning_vi": "theo kịp, cập nhật kịp (tin tức, xu hướng, người khác)",
+   "example": "New phones come out so fast that it's hard to keep up with them."
+  }
+ ],
+ "grammar": {
+  "id": "d4g",
+  "title": "Future: will, be going to, present continuous for arrangements",
+  "rule_vi": [
+   "will + V: quyết định ngay lúc nói, lời hứa, lời đề nghị giúp đỡ, và dự đoán theo ý kiến cá nhân (I think, I'm sure, probably). Phủ định: won't + V.",
+   "be going to + V: dự định đã có từ TRƯỚC lúc nói; hoặc dự đoán có căn cứ nhìn thấy ở hiện tại (Look at those clouds! It's going to rain.).",
+   "Hiện tại tiếp diễn (am/is/are + V-ing): kế hoạch đã sắp xếp cụ thể (đã mua vé, đã hẹn người, đã đặt lịch), thường có thời gian trong tương lai đi kèm.",
+   "Mẹo nhớ: will = quyết định / dự đoán 'trong đầu'; going to = dự định / dấu hiệu 'trước mắt'; hiện tại tiếp diễn = lịch hẹn 'trong sổ'."
+  ],
+  "examples": [
+   "A: My laptop isn't working. B: Don't worry, I'll help you.",
+   "I've saved enough money. I'm going to buy a new pair of headphones.",
+   "We're visiting the science museum on Sunday. Dad has booked the tickets.",
+   "I think people will travel in flying cars one day."
+  ],
+  "common_mistake_vi": "Sai: I've saved enough money, so I will buy a new bike next week. → Đúng: … so I'm going to buy a new bike next week. (dự định đã có từ trước nên dùng be going to)."
+ },
+ "wordform": {
+  "id": "d4w",
+  "focus": "-ly (adverbs)",
+  "rule_vi": "Thêm -ly vào tính từ để tạo trạng từ chỉ cách thức (làm việc gì NHƯ THẾ NÀO). Chú ý chính tả: easy → easily (y → i), gentle → gently (-le → -ly), automatic → automatically (-ic → -ically). Ngoại lệ: good → well, fast → fast, hard → hard.",
+  "examples": [
+   [
+    "quick",
+    "quickly"
+   ],
+   [
+    "easy",
+    "easily"
+   ],
+   [
+    "careful",
+    "carefully"
+   ],
+   [
+    "gentle",
+    "gently"
+   ],
+   [
+    "automatic",
+    "automatically"
+   ],
+   [
+    "regular",
+    "regularly"
+   ]
+  ]
+ },
+ "paper": {
+  "A_vocab": {
+   "instruction_vi": "Em chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ed…) nếu cần nhé!",
+   "bank": [
+    "device",
+    "invent",
+    "access",
+    "digital",
+    "rely",
+    "screen",
+    "update",
+    "switch off"
+   ],
+   "items": [
+    {
+     "id": "d4A1",
+     "q": "Smartwatches, tablets and laptops are all electronic ______.",
+     "answer": "devices",
+     "tag": "d4v1"
+    },
+    {
+     "id": "d4A2",
+     "q": "Nobody knows exactly who ______ the first kite, but it was more than 2,000 years ago.",
+     "answer": "invented",
+     "tag": "d4v2"
+    },
+    {
+     "id": "d4A3",
+     "q": "In some mountain villages, children still don't have ______ to the Internet.",
+     "answer": "access",
+     "tag": "d4v3"
+    },
+    {
+     "id": "d4A4",
+     "q": "Some students ______ on calculators too much and forget how to do simple maths in their heads.",
+     "answer": "rely",
+     "tag": "d4v5"
+    },
+    {
+     "id": "d4A5",
+     "q": "My eyes hurt after I looked at the computer ______ for three hours.",
+     "answer": "screen",
+     "tag": "d4v6"
+    },
+    {
+     "id": "d4A6",
+     "q": "Please ______ the fans when you leave the classroom to save electricity.",
+     "answer": "switch off",
+     "tag": "d4p1"
+    }
+   ]
+  },
+  "B_grammar": {
+   "instruction_vi": "Em chia động từ trong ngoặc ở dạng tương lai phù hợp: will, be going to, hoặc hiện tại tiếp diễn. Đọc kỹ ngữ cảnh để biết đó là quyết định tức thì, dự định, dấu hiệu hay lịch hẹn nhé!",
+   "items": [
+    {
+     "id": "d4B1",
+     "q": "Look at those black clouds! It ______ (rain).",
+     "answer": "is going to rain",
+     "accept": [
+      "'s going to rain"
+     ],
+     "tag": "d4g"
+    },
+    {
+     "id": "d4B2",
+     "q": "I've already bought the tickets. We ______ (watch) the new robot film at the cinema at 7 p.m. on Saturday.",
+     "answer": "are watching",
+     "accept": [
+      "'re watching",
+      "are going to watch",
+      "'re going to watch"
+     ],
+     "tag": "d4g"
+    },
+    {
+     "id": "d4B3",
+     "q": "A: The phone's ringing. B: Don't get up. I ______ (answer) it.",
+     "answer": "will answer",
+     "accept": [
+      "'ll answer"
+     ],
+     "tag": "d4g"
+    },
+    {
+     "id": "d4B4",
+     "q": "I think robots ______ (do) most of our housework in the future.",
+     "answer": "will do",
+     "accept": [
+      "'ll do",
+      "are going to do",
+      "'re going to do"
+     ],
+     "tag": "d4g"
+    },
+    {
+     "id": "d4B5",
+     "q": "I decided last week what to do in the holidays. I ______ (learn) to code this summer.",
+     "answer": "am going to learn",
+     "accept": [
+      "'m going to learn"
+     ],
+     "tag": "d4g"
+    },
+    {
+     "id": "d4B6",
+     "q": "Sorry, Mum. I promise I ______ (not / be) late again.",
+     "answer": "won't be",
+     "accept": [
+      "will not be"
+     ],
+     "tag": "d4g"
+    }
+   ]
+  },
+  "C_wordform": {
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Gợi ý: hôm nay mình biến tính từ thành trạng từ với đuôi -ly.",
+   "items": [
+    {
+     "id": "d4C1",
+     "q": "This app helps you find information ______. (QUICK)",
+     "answer": "quickly",
+     "tag": "d4w"
+    },
+    {
+     "id": "d4C2",
+     "q": "My grandma learned to use a smartphone quite ______. (EASY)",
+     "answer": "easily",
+     "tag": "d4w"
+    },
+    {
+     "id": "d4C3",
+     "q": "The lights in this building switch off ______ when nobody is in the room. (AUTOMATIC)",
+     "answer": "automatically",
+     "tag": "d4w"
+    },
+    {
+     "id": "d4C4",
+     "q": "You should update your apps ______ to keep your phone safe. (REGULAR)",
+     "answer": "regularly",
+     "tag": "d4w"
+    }
+   ]
+  },
+  "D_exam": {
+   "format": "dialogue_completion",
+   "instruction_vi": "Dạng bài hoàn thành hội thoại: em chọn câu trả lời (A, B, C hoặc D) phù hợp nhất để hoàn thành mỗi đoạn hội thoại. Hãy nghĩ xem người thật sẽ đáp lại như thế nào nhé!",
+   "items": [
+    {
+     "id": "d4D1",
+     "q": "Nam: 'Why do you always use this e-dictionary?' – Lan: '______'",
+     "options": [
+      "Yes, I like it very much.",
+      "I bought it last year.",
+      "Because it's quick and convenient.",
+      "It's on my desk."
+     ],
+     "answer": "C",
+     "tag": "fmt:dialogue_completion"
+    },
+    {
+     "id": "d4D2",
+     "q": "Mai: 'Thanks so much for helping me update my phone.' – Hung: '______'",
+     "options": [
+      "It's my pleasure.",
+      "Yes, I do.",
+      "That's a good idea.",
+      "I'm afraid not."
+     ],
+     "answer": "A",
+     "tag": "fmt:dialogue_completion"
+    },
+    {
+     "id": "d4D3",
+     "q": "Tuan: 'What are you doing this weekend?' – Linh: '______'",
+     "options": [
+      "I usually play tennis.",
+      "I did my homework.",
+      "Yes, I'm free.",
+      "I'm visiting my cousins in Hai Phong."
+     ],
+     "answer": "D",
+     "tag": "fmt:dialogue_completion"
+    },
+    {
+     "id": "d4D4",
+     "q": "Phong: 'I think tablets will replace paper books in schools one day.' – Ha: '______ Paper books are still very useful.'",
+     "options": [
+      "Me too!",
+      "I'm not so sure about that.",
+      "That's right, I agree.",
+      "Congratulations!"
+     ],
+     "answer": "B",
+     "tag": "fmt:dialogue_completion"
+    }
+   ]
+  },
+  "E_reading": {
+   "id": "d4r",
+   "title": "A Week Without Screens",
+   "text": "Next Monday, the students of class 7A are starting an unusual challenge: a week without screens. For seven days, they won't use phones, tablets or computers in their free time. They can still use digital devices for homework, but only for one hour a day.\n\nThe idea came from their form teacher, Mr Quang. Last month, he asked the class how much time they spent in front of a screen. The answer surprised everyone: on average, more than five hours a day.\n\n'Technology is convenient, but many of us rely on it too much,' Mr Quang says. 'I want my students to discover what else they can do.'\n\nThe students have already made plans. Ha is going to teach her little brother to play chess, and Duc is going to cycle to his grandparents' farm. Some students are nervous. 'I'm sure I'll miss my games,' says Long. 'But it's only a week. I think I'll survive!'\n\nAt the end of the challenge, each student will write about how they felt.",
+   "items": [
+    {
+     "id": "d4E1",
+     "kind": "tfng",
+     "q": "During the challenge, students cannot use any devices at all, even for homework.",
+     "answer": "False",
+     "tag": "d4r"
+    },
+    {
+     "id": "d4E2",
+     "kind": "tfng",
+     "q": "Mr Quang got the idea for the challenge from another school.",
+     "answer": "Not Given",
+     "tag": "d4r"
+    },
+    {
+     "id": "d4E3",
+     "kind": "mcq",
+     "q": "On average, how much time did the students spend in front of a screen each day?",
+     "options": [
+      "more than five hours",
+      "one hour",
+      "about three hours",
+      "seven hours"
+     ],
+     "answer": "A",
+     "tag": "d4r"
+    },
+    {
+     "id": "d4E4",
+     "kind": "mcq",
+     "q": "How does Long feel about the challenge?",
+     "options": [
+      "It will be easy because he doesn't like games.",
+      "It will be difficult, but he can do it.",
+      "It is a bad idea and he won't take part.",
+      "It should last longer than a week."
+     ],
+     "answer": "B",
+     "tag": "d4r"
+    }
+   ]
+  },
+  "F_writing": {
+   "task_en": "Imagine your class is having a 'Day Without Screens' next Saturday. Write a paragraph (50–70 words) about what you are going to do that day and how you think you will feel.",
+   "task_vi": "Hãy tưởng tượng lớp em tổ chức 'Ngày không màn hình' vào thứ Bảy tới. Viết một đoạn văn (50–70 từ) kể em định làm gì vào ngày đó và em nghĩ mình sẽ cảm thấy thế nào.",
+   "min_words": 50,
+   "model": "Next Saturday, my class is having a 'Day Without Screens', so I'm going to switch off my phone in the morning. First, I'm going to help my mum in the garden. Then I will read the comic book my friend lent me. In the afternoon, I'm meeting Tuan at the park to play badminton. I think I'll miss my games a little, but I'm sure it will be a fun day.",
+   "checklist_vi": [
+    "Em có dùng be going to để nói về dự định không?",
+    "Em có dùng hiện tại tiếp diễn cho một lịch hẹn cụ thể (có giờ / có người hẹn) không?",
+    "Em có dùng will (I think / I'm sure … will) để dự đoán cảm xúc của mình không?",
+    "Em có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 4, và đoạn văn đủ 50 từ không?"
+   ]
+  },
+  "G_review": {
+   "instruction_vi": "Ôn xoắn ốc – em ôn lại buổi 3 (Môi trường) và buổi 1 (Trường học) nhé. Điền từ thích hợp hoặc chia động từ trong ngoặc.",
+   "items": [
+    {
+     "id": "d4G1",
+     "q": "Instead of throwing old newspapers away, we should ______ them. (Gợi ý: r______)",
+     "answer": "recycle",
+     "from_day": 3,
+     "tag": "d3v4"
+    },
+    {
+     "id": "d4G2",
+     "q": "I ______ (not / see) my uncle since last Tết.",
+     "answer": "haven't seen",
+     "accept": [
+      "have not seen"
+     ],
+     "from_day": 3,
+     "tag": "d3g"
+    },
+    {
+     "id": "d4G3",
+     "q": "More than 500 people ______ the school concert last night. (Gợi ý: a______, chia ở quá khứ)",
+     "answer": "attended",
+     "from_day": 1,
+     "tag": "d1v5"
+    },
+    {
+     "id": "d4G4",
+     "q": "Lan usually takes the bus, but today she ______ (walk) to school because the weather is so nice.",
+     "answer": "is walking",
+     "accept": [
+      "'s walking"
+     ],
+     "from_day": 1,
+     "tag": "d1g"
+    }
+   ]
+  }
+ },
+ "web_check": [
+  {
+   "id": "d4q1",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "Most people now take ______ photos with their phones instead of using old film cameras.",
+   "options": [
+    "convenient",
+    "screen",
+    "digital",
+    "electric"
+   ],
+   "answer": 2,
+   "explain_vi": "digital photos = ảnh kỹ thuật số.",
+   "tag": "d4v4"
+  },
+  {
+   "id": "d4q2",
+   "type": "text",
+   "skill": "vocab",
+   "q": "My phone asks me to u______ my apps almost every week. (Viết cả từ)",
+   "answer": "update",
+   "explain_vi": "update = cập nhật (ứng dụng, phần mềm, thông tin).",
+   "tag": "d4v7"
+  },
+  {
+   "id": "d4q3",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "Grandpa reads the news online every morning because he wants to ______ what is happening in the world.",
+   "options": [
+    "switch off",
+    "keep up with",
+    "take up",
+    "throw away"
+   ],
+   "answer": 1,
+   "explain_vi": "keep up with = theo kịp, cập nhật kịp (tin tức).",
+   "tag": "d4p2"
+  },
+  {
+   "id": "d4q4",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "A: I'm so thirsty. B: Wait here. I ______ you some water.",
+   "options": [
+    "'ll get",
+    "get",
+    "am got",
+    "getting"
+   ],
+   "answer": 0,
+   "explain_vi": "Quyết định / lời đề nghị ngay lúc nói → will ('ll) + V.",
+   "tag": "d4g"
+  },
+  {
+   "id": "d4q5",
+   "type": "text",
+   "skill": "grammar",
+   "q": "My cousins ______ (come) to stay with us next weekend. Mum has already prepared their room.",
+   "answer": "are coming",
+   "accept": [
+    "'re coming",
+    "are going to come",
+    "'re going to come"
+   ],
+   "explain_vi": "Kế hoạch đã sắp xếp (đã chuẩn bị phòng) → hiện tại tiếp diễn.",
+   "tag": "d4g"
+  },
+  {
+   "id": "d4q6",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "My sister has bought her plane ticket. She ______ to Da Nang tomorrow morning.",
+   "options": [
+    "flew",
+    "fly",
+    "has flown",
+    "is flying"
+   ],
+   "answer": 3,
+   "explain_vi": "Đã mua vé = kế hoạch đã sắp xếp → hiện tại tiếp diễn.",
+   "tag": "d4g"
+  },
+  {
+   "id": "d4q7",
+   "type": "mcq",
+   "skill": "wordform",
+   "q": "Please speak ______. The baby is sleeping.",
+   "options": [
+    "quiet",
+    "quietly",
+    "quietness",
+    "quieter"
+   ],
+   "answer": 1,
+   "explain_vi": "Bổ nghĩa cho động từ 'speak' cần trạng từ: quiet → quietly.",
+   "tag": "d4w"
+  },
+  {
+   "id": "d4q8",
+   "type": "text",
+   "skill": "wordform",
+   "q": "Hold the baby bird ______. It's very small. (GENTLE)",
+   "answer": "gently",
+   "explain_vi": "gentle → gently (-le → -ly). Trạng từ bổ nghĩa cho 'hold'.",
+   "tag": "d4w"
+  },
+  {
+   "id": "d4q9",
+   "type": "mcq",
+   "skill": "exam",
+   "q": "A: 'Would you like me to show you how to use this app?' B: '______'",
+   "options": [
+    "No, I wouldn't like.",
+    "Yes, I like apps.",
+    "Yes, I'd love that. Thanks!",
+    "You're welcome."
+   ],
+   "answer": 2,
+   "explain_vi": "Đáp lại lời đề nghị giúp đỡ: 'Yes, I'd love that. Thanks!' / 'Yes, please.'",
+   "tag": "fmt:dialogue_completion"
+  },
+  {
+   "id": "d4q10",
+   "type": "mcq",
+   "skill": "review",
+   "q": "We ______ this washing machine for ten years, and it still works well.",
+   "options": [
+    "had",
+    "are having",
+    "have had",
+    "have"
+   ],
+   "answer": 2,
+   "explain_vi": "Bắt đầu trong quá khứ, vẫn còn đến nay (for ten years, still works) → hiện tại hoàn thành (buổi 3).",
+   "from_day": 3,
+   "tag": "d3g"
+  },
+  {
+   "id": "d4q11",
+   "type": "text",
+   "skill": "review",
+   "q": "I need to r______ for my English test tomorrow, so I can't go out tonight. (Viết cả từ)",
+   "answer": "revise",
+   "explain_vi": "revise = ôn bài (buổi 1).",
+   "from_day": 1,
+   "tag": "d1v3"
+  },
+  {
+   "id": "d4q12",
+   "type": "mcq",
+   "skill": "review",
+   "q": "Thanks for your ______. Your kind words helped me finish the race.",
+   "options": [
+    "encourage",
+    "encouraging",
+    "encouraged",
+    "encouragement"
+   ],
+   "answer": 3,
+   "explain_vi": "Sau 'your' cần danh từ: encourage → encouragement (đuôi -ment, buổi 1).",
+   "from_day": 1,
+   "tag": "d1w"
+  }
+ ],
+ "can_do_vi": [
+  "Em có thể nói về công nghệ bằng 8 từ mới và 2 cụm động từ switch off, keep up with.",
+  "Em có thể chọn đúng will, be going to hoặc hiện tại tiếp diễn khi nói về tương lai.",
+  "Em có thể biến tính từ thành trạng từ với đuôi -ly và viết đúng chính tả.",
+  "Em có thể chọn câu đáp lại phù hợp trong dạng bài hoàn thành hội thoại."
+ ]
+}

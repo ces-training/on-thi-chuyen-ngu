@@ -1,0 +1,594 @@
+{
+ "day": 3,
+ "type": "normal",
+ "theme_en": "Environment",
+ "theme_vi": "Môi trường",
+ "goal_vi": "Hôm nay em sẽ học các từ quan trọng về môi trường và luyện cách phân biệt thì hiện tại hoàn thành với quá khứ đơn. Em cũng sẽ làm quen với dạng bài tìm từ trái nghĩa – một dạng rất hay gặp trong đề thi chuyên đấy!",
+ "minutes": 30,
+ "vocab": [
+  {
+   "id": "d3v1",
+   "word": "pollution",
+   "pos": "n",
+   "ipa": "/pəˈluːʃn/",
+   "meaning_vi": "sự ô nhiễm",
+   "example": "Air pollution is a serious problem in many big cities.",
+   "family": "pollute (v), polluted (adj)"
+  },
+  {
+   "id": "d3v2",
+   "word": "protect",
+   "pos": "v",
+   "ipa": "/prəˈtekt/",
+   "meaning_vi": "bảo vệ (protect sb/sth from sth)",
+   "example": "Sunglasses protect your eyes from strong sunlight.",
+   "family": "protection (n), protective (adj)"
+  },
+  {
+   "id": "d3v3",
+   "word": "waste",
+   "pos": "n, v",
+   "ipa": "/weɪst/",
+   "meaning_vi": "(n) rác thải, sự lãng phí; (v) lãng phí",
+   "example": "Don't waste water when you brush your teeth.",
+   "family": "wasteful (adj)"
+  },
+  {
+   "id": "d3v4",
+   "word": "recycle",
+   "pos": "v",
+   "ipa": "/ˌriːˈsaɪkl/",
+   "meaning_vi": "tái chế",
+   "example": "Our school recycles paper, cans and plastic bottles.",
+   "family": "recycling (n), recyclable (adj)"
+  },
+  {
+   "id": "d3v5",
+   "word": "species",
+   "pos": "n",
+   "ipa": "/ˈspiːʃiːz/",
+   "meaning_vi": "loài (sinh vật); số ít và số nhiều giống nhau",
+   "example": "There are many species of birds in Cuc Phuong National Park.",
+   "family": "species (n, số nhiều)"
+  },
+  {
+   "id": "d3v6",
+   "word": "climate",
+   "pos": "n",
+   "ipa": "/ˈklaɪmət/",
+   "meaning_vi": "khí hậu",
+   "example": "Climate change is making summers hotter.",
+   "family": "climatic (adj)"
+  },
+  {
+   "id": "d3v7",
+   "word": "reduce",
+   "pos": "v",
+   "ipa": "/rɪˈdjuːs/",
+   "meaning_vi": "giảm, làm giảm",
+   "example": "We can reduce rubbish by using cloth bags.",
+   "family": "reduction (n)"
+  },
+  {
+   "id": "d3v8",
+   "word": "harmful",
+   "pos": "adj",
+   "ipa": "/ˈhɑːmfl/",
+   "meaning_vi": "có hại (harmful to sb/sth)",
+   "example": "Smoke from cars is harmful to our health.",
+   "family": "harm (n, v), harmless (adj)"
+  }
+ ],
+ "phrasal": [
+  {
+   "id": "d3p1",
+   "phrase": "cut down (on)",
+   "meaning_vi": "cắt giảm (lượng dùng cái gì)",
+   "example": "My family is trying to cut down on electricity by switching off unused lights."
+  },
+  {
+   "id": "d3p2",
+   "phrase": "throw away",
+   "meaning_vi": "vứt đi, vứt bỏ",
+   "example": "Please don't throw away those boxes. We can use them for our art project."
+  }
+ ],
+ "grammar": {
+  "id": "d3g",
+  "title": "Present perfect vs past simple (for, since, already, yet, ever, never)",
+  "rule_vi": [
+   "Hiện tại hoàn thành (S + have/has + V3/V-ed): việc đã xảy ra nhưng KHÔNG nói rõ thời gian, hoặc còn liên quan tới hiện tại. Dấu hiệu: already, yet, ever, never, just, so far, recently.",
+   "Hiện tại hoàn thành + for / since: việc bắt đầu trong quá khứ và vẫn còn tiếp diễn. for + khoảng thời gian (for three years); since + mốc thời gian (since 2020, since I was six).",
+   "Quá khứ đơn (S + V2/V-ed): việc đã kết thúc ở thời điểm XÁC ĐỊNH trong quá khứ. Dấu hiệu: yesterday, last…, … ago, in 2019, when I was…",
+   "Vị trí: already / just / ever / never đứng giữa have/has và V3; yet đứng cuối câu phủ định và câu hỏi."
+  ],
+  "examples": [
+   "I have already sorted the rubbish, so you don't need to do it.",
+   "We planted these trees in 2021. They have grown very tall since then.",
+   "Have you ever visited a recycling centre?",
+   "The students haven't finished their poster yet."
+  ],
+  "common_mistake_vi": "Sai: I have visited Ha Long Bay last summer. → Đúng: I visited Ha Long Bay last summer. (có thời gian xác định 'last summer' thì dùng quá khứ đơn)."
+ },
+ "wordform": {
+  "id": "d3w",
+  "focus": "-al, -ous",
+  "rule_vi": "Thêm -al hoặc -ous vào sau danh từ để tạo tính từ. Chú ý chính tả: nature → natural (bỏ -e), fame → famous (bỏ -e), mystery → mysterious (y → i).",
+  "examples": [
+   [
+    "environment",
+    "environmental"
+   ],
+   [
+    "nature",
+    "natural"
+   ],
+   [
+    "industry",
+    "industrial"
+   ],
+   [
+    "danger",
+    "dangerous"
+   ],
+   [
+    "poison",
+    "poisonous"
+   ],
+   [
+    "fame",
+    "famous"
+   ]
+  ]
+ },
+ "paper": {
+  "A_vocab": {
+   "instruction_vi": "Em chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ed…) nếu cần nhé!",
+   "bank": [
+    "pollution",
+    "protect",
+    "waste",
+    "recycle",
+    "species",
+    "climate",
+    "reduce",
+    "throw away"
+   ],
+   "items": [
+    {
+     "id": "d3A1",
+     "q": "The smoke from factories and motorbikes causes a lot of air ______.",
+     "answer": "pollution",
+     "tag": "d3v1"
+    },
+    {
+     "id": "d3A2",
+     "q": "We must ______ the forests because thousands of animals live there.",
+     "answer": "protect",
+     "tag": "d3v2"
+    },
+    {
+     "id": "d3A3",
+     "q": "Glass bottles can be ______ and made into new bottles.",
+     "answer": "recycled",
+     "tag": "d3v4"
+    },
+    {
+     "id": "d3A4",
+     "q": "The Saola is one of the rarest animal ______ in the world. Very few people have seen one.",
+     "answer": "species",
+     "tag": "d3v5"
+    },
+    {
+     "id": "d3A5",
+     "q": "Northern Vietnam has a ______ with four seasons: spring, summer, autumn and winter.",
+     "answer": "climate",
+     "tag": "d3v6"
+    },
+    {
+     "id": "d3A6",
+     "q": "Please don't ______ your old clothes. We can give them to children who need them.",
+     "answer": "throw away",
+     "tag": "d3p2"
+    }
+   ]
+  },
+  "B_grammar": {
+   "instruction_vi": "Em chia động từ trong ngoặc ở thì hiện tại hoàn thành hoặc quá khứ đơn. Hãy tìm từ dấu hiệu trước khi chia nhé!",
+   "items": [
+    {
+     "id": "d3B1",
+     "q": "I ______ (never / see) a real panda in my life.",
+     "answer": "have never seen",
+     "accept": [
+      "'ve never seen"
+     ],
+     "tag": "d3g"
+    },
+    {
+     "id": "d3B2",
+     "q": "Our class ______ (plant) fifty trees in the school garden last spring.",
+     "answer": "planted",
+     "tag": "d3g"
+    },
+    {
+     "id": "d3B3",
+     "q": "My family ______ (live) in this town since 2018.",
+     "answer": "has lived",
+     "accept": [
+      "'s lived",
+      "has been living",
+      "'s been living"
+     ],
+     "tag": "d3g"
+    },
+    {
+     "id": "d3B4",
+     "q": "Ten years ago, the river near my house ______ (be) very clean.",
+     "answer": "was",
+     "tag": "d3g"
+    },
+    {
+     "id": "d3B5",
+     "q": "The students ______ (not / start) their recycling project yet.",
+     "answer": "haven't started",
+     "accept": [
+      "have not started"
+     ],
+     "tag": "d3g"
+    },
+    {
+     "id": "d3B6",
+     "q": "Look! I ______ (already / sort) the rubbish into three bins.",
+     "answer": "have already sorted",
+     "accept": [
+      "'ve already sorted"
+     ],
+     "tag": "d3g"
+    }
+   ]
+  },
+  "C_wordform": {
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Gợi ý: hôm nay mình dùng đuôi -al hoặc -ous.",
+   "items": [
+    {
+     "id": "d3C1",
+     "q": "Plastic in the ocean is a big ______ problem. (ENVIRONMENT)",
+     "answer": "environmental",
+     "tag": "d3w"
+    },
+    {
+     "id": "d3C2",
+     "q": "Don't eat those mushrooms! Some of them are ______. (POISON)",
+     "answer": "poisonous",
+     "tag": "d3w"
+    },
+    {
+     "id": "d3C3",
+     "q": "Forests, rivers and minerals are important ______ resources. (NATURE)",
+     "answer": "natural",
+     "tag": "d3w"
+    },
+    {
+     "id": "d3C4",
+     "q": "Ha Long Bay is ______ for its thousands of limestone islands. (FAME)",
+     "answer": "famous",
+     "tag": "d3w"
+    }
+   ]
+  },
+  "D_exam": {
+   "format": "antonym",
+   "instruction_vi": "Dạng bài từ trái nghĩa: em chọn đáp án (A, B, C hoặc D) có nghĩa NGƯỢC LẠI với từ VIẾT IN HOA. Cẩn thận: thường có một đáp án đồng nghĩa để 'bẫy' em đấy!",
+   "items": [
+    {
+     "id": "d3D1",
+     "q": "The city wants to REDUCE the number of plastic bags used in markets.",
+     "options": [
+      "lower",
+      "cut",
+      "increase",
+      "collect"
+     ],
+     "answer": "C",
+     "tag": "fmt:antonym"
+    },
+    {
+     "id": "d3D2",
+     "q": "Some cleaning products are HARMFUL to fish and other water animals.",
+     "options": [
+      "harmless",
+      "dangerous",
+      "poisonous",
+      "famous"
+     ],
+     "answer": "A",
+     "tag": "fmt:antonym"
+    },
+    {
+     "id": "d3D3",
+     "q": "After the factory opened, the water in the lake became very POLLUTED.",
+     "options": [
+      "dirty",
+      "deep",
+      "cold",
+      "clean"
+     ],
+     "answer": "D",
+     "tag": "fmt:antonym"
+    },
+    {
+     "id": "d3D4",
+     "q": "My mum is always CAREFUL to switch off the lights when she leaves a room.",
+     "options": [
+      "attentive",
+      "careless",
+      "happy",
+      "quick"
+     ],
+     "answer": "B",
+     "tag": "fmt:antonym"
+    }
+   ]
+  },
+  "E_reading": {
+   "id": "d3r",
+   "title": "The Green Team",
+   "text": "Two years ago, five students at Sunflower Secondary School started a club called the Green Team. Since then, the club has grown to more than sixty members.\n\nThe Green Team began with a simple idea: reduce the amount of plastic at school. The members put recycling bins in every classroom and asked students to bring their own water bottles. As a result, the school has cut down on plastic waste by almost half.\n\nLast month, the club organised a clean-up day at a lake near the school. Volunteers collected 200 kilograms of rubbish in just three hours.\n\n'We haven't solved every problem yet,' says Khanh, the club leader. 'But we have shown that young people can protect their environment.'\n\nThe club's next plan is to grow vegetables on the school roof. The head teacher has already agreed, and the first seeds arrived last week. Khanh hopes that the school canteen will use the vegetables in students' lunches next year.",
+   "items": [
+    {
+     "id": "d3E1",
+     "kind": "tfng",
+     "q": "The Green Team had five members when it started.",
+     "answer": "True",
+     "tag": "d3r"
+    },
+    {
+     "id": "d3E2",
+     "kind": "tfng",
+     "q": "The school does not use any plastic now.",
+     "answer": "False",
+     "tag": "d3r"
+    },
+    {
+     "id": "d3E3",
+     "kind": "mcq",
+     "q": "How long did the volunteers spend collecting rubbish at the lake?",
+     "options": [
+      "three hours",
+      "two years",
+      "one month",
+      "one week"
+     ],
+     "answer": "A",
+     "tag": "d3r"
+    },
+    {
+     "id": "d3E4",
+     "kind": "mcq",
+     "q": "What is the Green Team going to do next?",
+     "options": [
+      "build a new lake",
+      "put bins in every classroom",
+      "find sixty new members",
+      "grow vegetables on the school roof"
+     ],
+     "answer": "D",
+     "tag": "d3r"
+    }
+   ]
+  },
+  "F_writing": {
+   "task_en": "Write a paragraph (50–70 words) about what you and your family have done to protect the environment. Give at least one example of something you did recently.",
+   "task_vi": "Viết một đoạn văn (50–70 từ) kể về những việc em và gia đình đã làm để bảo vệ môi trường. Nêu ít nhất một việc cụ thể em đã làm gần đây.",
+   "min_words": 50,
+   "model": "My family has tried hard to protect the environment. We have stopped using plastic bags, and my mum always takes a cloth bag to the market. We have also cut down on electricity by switching off lights we don't need. Last weekend, my brother and I collected old newspapers and took them to a recycling shop. I haven't planted a tree yet, but I want to do it soon.",
+   "checklist_vi": [
+    "Em có dùng thì hiện tại hoàn thành (have/has + V3) ít nhất 2 lần không?",
+    "Em có dùng thì quá khứ đơn với thời gian xác định (last weekend, yesterday…) ít nhất 1 lần không?",
+    "Em có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 3 không?",
+    "Đoạn văn đủ 50 từ và các V3 được viết đúng chính tả (seen, taken, done…)."
+   ]
+  },
+  "G_review": {
+   "instruction_vi": "Ôn xoắn ốc – em ôn lại từ và ngữ pháp của buổi 2 (Sở thích) và buổi 1 (Trường học) nhé. Điền từ thích hợp hoặc chia động từ trong ngoặc.",
+   "items": [
+    {
+     "id": "d3G1",
+     "q": "My cousin likes to ______ toy cars. He has more than a hundred of them now. (Gợi ý: c______)",
+     "answer": "collect",
+     "from_day": 2,
+     "tag": "d2v2"
+    },
+    {
+     "id": "d3G2",
+     "q": "While Mum ______ (cook) dinner, I was setting the table.",
+     "answer": "was cooking",
+     "from_day": 2,
+     "tag": "d2g"
+    },
+    {
+     "id": "d3G3",
+     "q": "My grandpa is 80 years old, but he still ______ (go) jogging every morning.",
+     "answer": "goes",
+     "from_day": 1,
+     "tag": "d1g"
+    },
+    {
+     "id": "d3G4",
+     "q": "Reading books helps us gain ______ about the world. (KNOW)",
+     "answer": "knowledge",
+     "from_day": 1,
+     "tag": "d1v6"
+    }
+   ]
+  }
+ },
+ "web_check": [
+  {
+   "id": "d3q1",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "Turn off the tap while you brush your teeth. Don't ______ water!",
+   "options": [
+    "reduce",
+    "recycle",
+    "waste",
+    "protect"
+   ],
+   "answer": 2,
+   "explain_vi": "waste = lãng phí. Không để nước chảy là để không lãng phí nước.",
+   "tag": "d3v3"
+  },
+  {
+   "id": "d3q2",
+   "type": "text",
+   "skill": "vocab",
+   "q": "The doctor told my dad to cut ______ on salt and sugar. (Điền 1 từ)",
+   "answer": "down",
+   "explain_vi": "cut down on sth = cắt giảm lượng dùng cái gì.",
+   "tag": "d3p1"
+  },
+  {
+   "id": "d3q3",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "Too much time in the sun without a hat can be ______ to your skin.",
+   "options": [
+    "harmful",
+    "harmless",
+    "helpful",
+    "careful"
+   ],
+   "answer": 0,
+   "explain_vi": "harmful to sth = có hại cho cái gì.",
+   "tag": "d3v8"
+  },
+  {
+   "id": "d3q4",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "Minh loves Da Lat. He ______ there three times so far.",
+   "options": [
+    "went",
+    "has been",
+    "goes",
+    "was going"
+   ],
+   "answer": 1,
+   "explain_vi": "'so far' (cho đến nay) → hiện tại hoàn thành.",
+   "tag": "d3g"
+  },
+  {
+   "id": "d3q5",
+   "type": "text",
+   "skill": "grammar",
+   "q": "A big tree ______ (fall) down in our street during the storm last night.",
+   "answer": "fell",
+   "explain_vi": "'last night' là thời gian xác định trong quá khứ → quá khứ đơn; fall – fell – fallen.",
+   "tag": "d3g"
+  },
+  {
+   "id": "d3q6",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "I have known my best friend ______ we were in grade 1.",
+   "options": [
+    "for",
+    "ago",
+    "yet",
+    "since"
+   ],
+   "answer": 3,
+   "explain_vi": "since + mốc thời gian / mệnh đề (since we were in grade 1).",
+   "tag": "d3g"
+  },
+  {
+   "id": "d3q7",
+   "type": "mcq",
+   "skill": "wordform",
+   "q": "Swimming in this part of the river is ______ because the water moves very fast.",
+   "options": [
+    "danger",
+    "dangerous",
+    "dangerously",
+    "endanger"
+   ],
+   "answer": 1,
+   "explain_vi": "Sau 'is' cần tính từ: danger → dangerous.",
+   "tag": "d3w"
+  },
+  {
+   "id": "d3q8",
+   "type": "text",
+   "skill": "wordform",
+   "q": "Thai Nguyen is an ______ city with many big factories. (INDUSTRY)",
+   "answer": "industrial",
+   "explain_vi": "Trước danh từ 'city' cần tính từ: industry → industrial (y → i, thêm -al).",
+   "tag": "d3w"
+  },
+  {
+   "id": "d3q9",
+   "type": "mcq",
+   "skill": "exam",
+   "q": "Choose the word OPPOSITE in meaning to the word in capitals: This kind of frog is very RARE in Vietnam.",
+   "options": [
+    "unusual",
+    "small",
+    "common",
+    "special"
+   ],
+   "answer": 2,
+   "explain_vi": "rare (hiếm) >< common (phổ biến). 'unusual' gần nghĩa với rare nên là bẫy.",
+   "tag": "fmt:antonym"
+  },
+  {
+   "id": "d3q10",
+   "type": "mcq",
+   "skill": "review",
+   "q": "My uncle decided to ______ running to get fitter, and now he runs 5 km every day.",
+   "options": [
+    "give up",
+    "take up",
+    "drop out",
+    "throw away"
+   ],
+   "answer": 1,
+   "explain_vi": "take up = bắt đầu một sở thích / hoạt động mới (buổi 2).",
+   "from_day": 2,
+   "tag": "d2p1"
+  },
+  {
+   "id": "d3q11",
+   "type": "text",
+   "skill": "review",
+   "q": "The head teacher made an important ______ about the school trip this morning. (ANNOUNCE)",
+   "answer": "announcement",
+   "explain_vi": "Sau 'an important' cần danh từ: announce → announcement (đuôi -ment, buổi 1).",
+   "from_day": 1,
+   "tag": "d1w"
+  },
+  {
+   "id": "d3q12",
+   "type": "mcq",
+   "skill": "review",
+   "q": "I ______ the answer to question 5. It's 'recycle'!",
+   "options": [
+    "am knowing",
+    "knows",
+    "know",
+    "knowing"
+   ],
+   "answer": 2,
+   "explain_vi": "know là động từ trạng thái, không chia -ing; chủ ngữ 'I' nên dùng 'know' (buổi 1).",
+   "from_day": 1,
+   "tag": "d1g"
+  }
+ ],
+ "can_do_vi": [
+  "Em có thể nói về các vấn đề môi trường bằng 8 từ mới và 2 cụm động từ cut down (on), throw away.",
+  "Em có thể chọn đúng thì hiện tại hoàn thành hoặc quá khứ đơn, và dùng đúng for / since / already / yet / ever / never.",
+  "Em có thể tạo tính từ với -al và -ous.",
+  "Em có thể làm dạng bài tìm từ trái nghĩa và tránh được đáp án 'bẫy' đồng nghĩa."
+ ]
+}

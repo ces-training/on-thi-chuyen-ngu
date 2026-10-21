@@ -1,0 +1,589 @@
+{
+ "day": 13,
+ "type": "normal",
+ "theme_en": "Arts & entertainment",
+ "theme_vi": "Nghệ thuật và giải trí",
+ "goal_vi": "Hôm nay em sẽ bước vào thế giới nghệ thuật với âm nhạc, hội hoạ và sân khấu. Em cũng sẽ học khi nào dùng V-ing, khi nào dùng to V – một chủ điểm 'nhỏ mà có võ' trong đề thi chuyên!",
+ "minutes": 30,
+ "vocab": [
+  {
+   "id": "d13v1",
+   "word": "performance",
+   "pos": "n",
+   "ipa": "/pəˈfɔːməns/",
+   "meaning_vi": "buổi biểu diễn; màn trình diễn",
+   "example": "The band gave an amazing performance last night.",
+   "family": "perform (v), performer (n)"
+  },
+  {
+   "id": "d13v2",
+   "word": "exhibition",
+   "pos": "n",
+   "ipa": "/ˌeksɪˈbɪʃn/",
+   "meaning_vi": "cuộc triển lãm",
+   "example": "There is an exhibition of children's paintings at the museum this week.",
+   "family": "exhibit (v, n)"
+  },
+  {
+   "id": "d13v3",
+   "word": "talented",
+   "pos": "adj",
+   "ipa": "/ˈtæləntɪd/",
+   "meaning_vi": "có tài, tài năng",
+   "example": "Lan is a talented singer; she has won three competitions.",
+   "family": "talent (n)"
+  },
+  {
+   "id": "d13v4",
+   "word": "imagination",
+   "pos": "n",
+   "ipa": "/ɪˌmædʒɪˈneɪʃn/",
+   "meaning_vi": "trí tưởng tượng",
+   "example": "Children often have a wonderful imagination.",
+   "family": "imagine (v), imaginative (adj)"
+  },
+  {
+   "id": "d13v5",
+   "word": "compose",
+   "pos": "v",
+   "ipa": "/kəmˈpəʊz/",
+   "meaning_vi": "sáng tác (nhạc)",
+   "example": "He composed this song for his mother's birthday.",
+   "family": "composer (n), composition (n)"
+  },
+  {
+   "id": "d13v6",
+   "word": "admire",
+   "pos": "v",
+   "ipa": "/ədˈmaɪə(r)/",
+   "meaning_vi": "ngưỡng mộ; chiêm ngưỡng, ngắm nhìn (với sự thích thú)",
+   "example": "I admire people who can play the piano.",
+   "family": "admiration (n), admirable (adj)"
+  },
+  {
+   "id": "d13v7",
+   "word": "rehearse",
+   "pos": "v",
+   "ipa": "/rɪˈhɜːs/",
+   "meaning_vi": "diễn tập, tập dượt",
+   "example": "The actors rehearsed the last scene again and again.",
+   "family": "rehearsal (n)"
+  },
+  {
+   "id": "d13v8",
+   "word": "inspire",
+   "pos": "v",
+   "ipa": "/ɪnˈspaɪə(r)/",
+   "meaning_vi": "truyền cảm hứng",
+   "example": "My art teacher inspired me to keep drawing.",
+   "family": "inspiration (n), inspiring (adj)"
+  }
+ ],
+ "phrasal": [
+  {
+   "id": "d13p1",
+   "phrase": "put on",
+   "meaning_vi": "tổ chức, dàn dựng (buổi biểu diễn, triển lãm); (cũng có nghĩa: mặc vào)",
+   "example": "Our class is putting on a play for Teachers' Day."
+  },
+  {
+   "id": "d13p2",
+   "phrase": "take part in",
+   "meaning_vi": "tham gia (hoạt động, cuộc thi)",
+   "example": "More than fifty students took part in the drawing competition."
+  }
+ ],
+ "grammar": {
+  "id": "d13g",
+  "title": "Gerund vs to-infinitive",
+  "rule_vi": [
+   "Động từ + V-ing: enjoy, finish, mind, avoid, practise, keep, suggest, can't stand. (I enjoy dancing.)",
+   "Động từ + to V: decide, want, hope, plan, agree, refuse, learn, manage, promise. (She decided to join the choir.)",
+   "Sau giới từ luôn dùng V-ing: interested in painting, good at singing, look forward to seeing.",
+   "stop / remember / try + cả hai nhưng KHÁC NGHĨA: stop doing = ngừng hẳn việc đang làm; stop to do = dừng lại ĐỂ làm việc khác. remember doing = nhớ là ĐÃ làm (quá khứ); remember to do = nhớ PHẢI làm (chưa làm). try doing = thử làm xem sao; try to do = cố gắng làm.",
+   "like, love, hate, start, begin + V-ing hoặc to V đều được, nghĩa gần như không đổi."
+  ],
+  "examples": [
+   "My brother practises playing the violin every evening.",
+   "We stopped to buy some water on the way to the concert.",
+   "Remember to turn off your phone during the performance."
+  ],
+  "common_mistake_vi": "Nhầm stop doing và stop to do. 'He stopped to talk' = anh ấy dừng lại (việc đang làm) để nói chuyện. 'He stopped talking' = anh ấy thôi không nói nữa. Em hỏi: việc sau stop là việc bị bỏ đi (V-ing) hay mục đích mới (to V)?"
+ },
+ "wordform": {
+  "id": "d13w",
+  "focus": "-ure, -age, -ance (nouns)",
+  "rule_vi": "Thêm -ure, -age hoặc -ance vào động từ để tạo DANH TỪ. Chú ý thay đổi chính tả: please → pleasure (bỏ e), marry → marriage (y → i).",
+  "examples": [
+   [
+    "please",
+    "pleasure"
+   ],
+   [
+    "fail",
+    "failure"
+   ],
+   [
+    "sign",
+    "signature"
+   ],
+   [
+    "store",
+    "storage"
+   ],
+   [
+    "marry",
+    "marriage"
+   ],
+   [
+    "perform",
+    "performance"
+   ],
+   [
+    "appear",
+    "appearance"
+   ]
+  ]
+ },
+ "paper": {
+  "A_vocab": {
+   "instruction_vi": "Chọn từ thích hợp trong khung để điền vào chỗ trống. Mỗi từ dùng một lần, có 2 từ thừa nhé.",
+   "bank": [
+    "performance",
+    "exhibition",
+    "talented",
+    "imagination",
+    "composed",
+    "admire",
+    "rehearse",
+    "inspired"
+   ],
+   "items": [
+    {
+     "id": "d13A1",
+     "q": "We went to an ______ of old photographs of Hà Nội at the city museum.",
+     "answer": "exhibition",
+     "tag": "d13v2"
+    },
+    {
+     "id": "d13A2",
+     "q": "Mozart ______ his first piece of music when he was only five years old.",
+     "answer": "composed",
+     "tag": "d13v5"
+    },
+    {
+     "id": "d13A3",
+     "q": "My cousin is a very ______ dancer; she has won many competitions.",
+     "answer": "talented",
+     "tag": "d13v3"
+    },
+    {
+     "id": "d13A4",
+     "q": "The actors have to ______ every evening this week before the big show on Saturday.",
+     "answer": "rehearse",
+     "tag": "d13v7"
+    },
+    {
+     "id": "d13A5",
+     "q": "The students gave a wonderful ______ of a traditional folk song.",
+     "answer": "performance",
+     "tag": "d13v1"
+    },
+    {
+     "id": "d13A6",
+     "q": "Many tourists stop to ______ the beautiful paintings on the walls of the old temple.",
+     "answer": "admire",
+     "tag": "d13v6"
+    }
+   ]
+  },
+  "B_grammar": {
+   "instruction_vi": "Viết dạng đúng của động từ trong ngoặc: V-ing hoặc to V. Với stop và remember, em đọc kỹ cả câu để hiểu nghĩa nhé.",
+   "items": [
+    {
+     "id": "d13B1",
+     "q": "My sister enjoys ______ (draw) cartoons in her free time.",
+     "answer": "drawing",
+     "tag": "d13g"
+    },
+    {
+     "id": "d13B2",
+     "q": "Our class has decided ______ (put) on a play at the end of the school year.",
+     "answer": "to put",
+     "tag": "d13g"
+    },
+    {
+     "id": "d13B3",
+     "q": "Please remember ______ (bring) your costume to the rehearsal tomorrow.",
+     "answer": "to bring",
+     "tag": "d13g"
+    },
+    {
+     "id": "d13B4",
+     "q": "Tom stopped ______ (play) the piano because his fingers were tired.",
+     "answer": "playing",
+     "tag": "d13g"
+    },
+    {
+     "id": "d13B5",
+     "q": "On the way to the theatre, we stopped ______ (buy) some flowers for the singer.",
+     "answer": "to buy",
+     "tag": "d13g"
+    },
+    {
+     "id": "d13B6",
+     "q": "I remember ______ (see) this cartoon when I was five; it was my favourite.",
+     "answer": "seeing",
+     "tag": "d13g"
+    }
+   ]
+  },
+  "C_wordform": {
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Gợi ý: hôm nay các đáp án đều là danh từ đuôi -ure, -age hoặc -ance.",
+   "items": [
+    {
+     "id": "d13C1",
+     "q": "It gives me great ______ to welcome you all to our school concert. (PLEASE)",
+     "answer": "pleasure",
+     "tag": "d13w"
+    },
+    {
+     "id": "d13C2",
+     "q": "Our first show was a complete ______; only five people came to watch it. (FAIL)",
+     "answer": "failure",
+     "tag": "d13w"
+    },
+    {
+     "id": "d13C3",
+     "q": "The famous singer's surprise ______ on stage made the audience scream with joy. (APPEAR)",
+     "answer": "appearance",
+     "tag": "d13w"
+    },
+    {
+     "id": "d13C4",
+     "q": "The theatre needs more ______ space for its old costumes. (STORE)",
+     "answer": "storage",
+     "tag": "d13w"
+    }
+   ]
+  },
+  "D_exam": {
+   "format": "cloze",
+   "instruction_vi": "Đọc đoạn văn và chọn đáp án đúng (A, B, C hoặc D) cho mỗi chỗ trống. Mẹo: em đọc cả câu trước và sau chỗ trống, vì đáp án có thể phụ thuộc vào từ đứng sau đó.",
+   "text": "Every year, our school (1) ______ a talent show in December. Students who want to take (2) ______ must sign up two months before. This year, my friend Vy decided (3) ______ a song that she wrote herself. She practised (4) ______ it every evening, and on the night of the show, everyone cheered loudly.",
+   "items": [
+    {
+     "id": "d13D1",
+     "q": "(1) Every year, our school ______ a talent show in December.",
+     "options": [
+      "takes off",
+      "puts on",
+      "turns down",
+      "gets over"
+     ],
+     "answer": "B",
+     "tag": "fmt:cloze"
+    },
+    {
+     "id": "d13D2",
+     "q": "(2) Students who want to take ______ must sign up two months before.",
+     "options": [
+      "place",
+      "turn",
+      "care",
+      "part"
+     ],
+     "answer": "D",
+     "tag": "fmt:cloze"
+    },
+    {
+     "id": "d13D3",
+     "q": "(3) This year, my friend Vy decided ______ a song that she wrote herself.",
+     "options": [
+      "to perform",
+      "performing",
+      "perform",
+      "performed"
+     ],
+     "answer": "A",
+     "tag": "fmt:cloze"
+    },
+    {
+     "id": "d13D4",
+     "q": "(4) She practised ______ it every evening.",
+     "options": [
+      "to sing",
+      "sing",
+      "singing",
+      "sang"
+     ],
+     "answer": "C",
+     "tag": "fmt:cloze"
+    }
+   ]
+  },
+  "E_reading": {
+   "id": "d13r",
+   "title": "The Paper Puppet Show",
+   "instruction_vi": "Đọc đoạn văn rồi làm bài. Câu 1–2: chọn True (đúng), False (sai) hoặc Not Given (bài không nói đến). Câu 3–4: chọn A, B, C hoặc D.",
+   "text": "Every spring, the students at Hòa Bình Secondary School put on a show for their families. This year, the Year 7 class chose to tell an old folk story using only shadows and paper puppets. Their teacher, Ms Diệp, encouraged them to use their imagination instead of buying expensive costumes. Quân, a talented pianist, composed the music himself, while the others made the puppets from old boxes and newspapers. For six weeks, the class rehearsed every Friday afternoon. At first, things went badly: the puppets kept falling apart, and some students wanted to give up. But Ms Diệp reminded them that every failure teaches us something. On the night of the performance, the hall was completely full. When the lights came back on, the audience stood up and clapped for several minutes. Afterwards, a parent who works at the city museum invited the class to show their puppets in an exhibition next month.",
+   "items": [
+    {
+     "id": "d13E1",
+     "kind": "tfng",
+     "q": "Quân wrote the music for the show.",
+     "answer": "True",
+     "tag": "d13r"
+    },
+    {
+     "id": "d13E2",
+     "kind": "tfng",
+     "q": "The class rehearsed every day for six weeks.",
+     "answer": "False",
+     "tag": "d13r"
+    },
+    {
+     "id": "d13E3",
+     "kind": "mcq",
+     "q": "What problem did the class have at first?",
+     "options": [
+      "The hall was too small.",
+      "Quân refused to play the piano.",
+      "Ms Diệp was ill.",
+      "The puppets kept falling apart."
+     ],
+     "answer": "D",
+     "tag": "d13r"
+    },
+    {
+     "id": "d13E4",
+     "kind": "mcq",
+     "q": "What will happen next month?",
+     "options": [
+      "The puppets will be shown in a museum exhibition.",
+      "The class will perform the show again.",
+      "Ms Diệp will leave the school.",
+      "The parents will make new puppets."
+     ],
+     "answer": "A",
+     "tag": "d13r"
+    }
+   ]
+  },
+  "F_writing": {
+   "task_en": "Write about a show, concert or exhibition that you took part in or watched. What was it? What did you enjoy about it? How did you feel? Use at least two verbs followed by V-ing or to V (enjoy, decide, hope, remember...).",
+   "task_vi": "Viết về một buổi biểu diễn, buổi hoà nhạc hoặc triển lãm mà em đã tham gia hoặc xem: đó là sự kiện gì, em thích điều gì, cảm xúc của em ra sao. Dùng ít nhất hai động từ đi với V-ing hoặc to V nhé.",
+   "min_words": 50,
+   "model": "Last month, I took part in our school's English Day. My class decided to put on a short play about a lazy king, and I played the king! We rehearsed every lunchtime for two weeks, and I really enjoyed working with my friends. On the day, I was nervous, but I tried not to look at the audience. When the play finished, everyone clapped loudly. I hope to perform again next year because it inspired me to be more confident.",
+   "checklist_vi": [
+    "Em đã nói rõ đó là sự kiện gì và cảm xúc của em chưa?",
+    "Em đã dùng ít nhất 2 động từ + V-ing / to V đúng (enjoy doing, decide to do...) chưa?",
+    "Em đã dùng ít nhất 3 từ mới hôm nay (performance, rehearse, talented, inspire...) chưa?",
+    "Em đã viết đủ 50 từ trở lên chưa?"
+   ]
+  },
+  "G_review": {
+   "instruction_vi": "Ôn xoắn ốc – em làm 4 câu ôn lại kiến thức của các buổi trước nhé. Chữ cái gợi ý (nếu có) là chữ cái đầu của đáp án.",
+   "items": [
+    {
+     "id": "d13G1",
+     "q": "Last month, our class c______ out a survey about how much time students spend on their phones.",
+     "answer": "carried",
+     "from_day": 12,
+     "tag": "d12p1"
+    },
+    {
+     "id": "d13G2",
+     "q": "'I am hungry,' said Bình. → Bình said that he ______ hungry.",
+     "answer": "was",
+     "from_day": 12,
+     "tag": "d12g"
+    },
+    {
+     "id": "d13G3",
+     "q": "The new shopping centre will e______ about two hundred people from our town.",
+     "answer": "employ",
+     "from_day": 10,
+     "tag": "d10v3"
+    },
+    {
+     "id": "d13G4",
+     "q": "The train to Lào Cai was d______ by forty minutes because of a landslide.",
+     "answer": "delayed",
+     "from_day": 6,
+     "tag": "d6v5"
+    }
+   ]
+  }
+ },
+ "web_check": [
+  {
+   "id": "d13q1",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "The writer of this book has an amazing ______; she creates magical worlds with dragons and talking trees.",
+   "options": [
+    "exhibition",
+    "imagination",
+    "performance",
+    "ambition"
+   ],
+   "answer": 1,
+   "explain_vi": "'imagination' = trí tưởng tượng – khả năng nghĩ ra những điều không có thật.",
+   "tag": "d13v4"
+  },
+  {
+   "id": "d13q2",
+   "type": "text",
+   "skill": "vocab",
+   "q": "Our school is going to put ______ a concert to raise money for the library.",
+   "answer": "on",
+   "accept": [],
+   "explain_vi": "'put on a concert/show/play' = tổ chức, dàn dựng một buổi biểu diễn.",
+   "tag": "d13p1"
+  },
+  {
+   "id": "d13q3",
+   "type": "mcq",
+   "skill": "vocab",
+   "q": "Her grandmother's beautiful paintings ______ her to become an artist.",
+   "options": [
+    "admired",
+    "rehearsed",
+    "composed",
+    "inspired"
+   ],
+   "answer": 3,
+   "explain_vi": "'inspire sb to do sth' = truyền cảm hứng cho ai làm gì.",
+   "tag": "d13v8"
+  },
+  {
+   "id": "d13q4",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "Would you mind ______ the window? It's cold in here.",
+   "options": [
+    "close",
+    "to close",
+    "closing",
+    "closed"
+   ],
+   "answer": 2,
+   "explain_vi": "'mind' luôn đi với V-ing: Would you mind closing...?",
+   "tag": "d13g"
+  },
+  {
+   "id": "d13q5",
+   "type": "mcq",
+   "skill": "grammar",
+   "q": "Please remember ______ the lights when you leave the hall.",
+   "options": [
+    "to switch off",
+    "switching off",
+    "switch off",
+    "switched off"
+   ],
+   "answer": 0,
+   "explain_vi": "'remember to do' = nhớ phải làm (việc chưa làm, trong tương lai).",
+   "tag": "d13g"
+  },
+  {
+   "id": "d13q6",
+   "type": "text",
+   "skill": "grammar",
+   "q": "Lan hopes ______ (become) a famous singer one day.",
+   "answer": "to become",
+   "accept": [],
+   "explain_vi": "'hope' đi với to V: hope to become.",
+   "tag": "d13g"
+  },
+  {
+   "id": "d13q7",
+   "type": "mcq",
+   "skill": "wordform",
+   "q": "Purple is a ______ of red and blue. (MIX)",
+   "options": [
+    "mixer",
+    "mixed",
+    "mixture",
+    "mixing"
+   ],
+   "answer": 2,
+   "explain_vi": "Sau 'a' và trước 'of' cần danh từ chỉ hỗn hợp: mix + -ure → mixture. ('mixer' là máy trộn.)",
+   "tag": "d13w"
+  },
+  {
+   "id": "d13q8",
+   "type": "text",
+   "skill": "wordform",
+   "q": "After the concert, the pianist wrote her ______ on my programme. (SIGN)",
+   "answer": "signature",
+   "accept": [],
+   "explain_vi": "Sau tính từ sở hữu 'her' cần danh từ: sign + -ature → signature (chữ ký).",
+   "tag": "d13w"
+  },
+  {
+   "id": "d13q9",
+   "type": "mcq",
+   "skill": "exam",
+   "q": "Choose the best answer for the gap: 'The concert was fantastic. The band played so well that nobody wanted it ______.'",
+   "options": [
+    "ending",
+    "to end",
+    "end",
+    "ended"
+   ],
+   "answer": 1,
+   "explain_vi": "Cấu trúc 'want sb/sth to do sth' → wanted it to end.",
+   "tag": "fmt:cloze"
+  },
+  {
+   "id": "d13q10",
+   "type": "mcq",
+   "skill": "review",
+   "from_day": 12,
+   "q": "Scientists are still looking for ______ that there is life on other planets.",
+   "options": [
+    "theory",
+    "evidence",
+    "laboratory",
+    "experiment"
+   ],
+   "answer": 1,
+   "explain_vi": "'evidence' = bằng chứng. Các nhà khoa học đang tìm bằng chứng cho thấy có sự sống.",
+   "tag": "d12v5"
+  },
+  {
+   "id": "d13q11",
+   "type": "mcq",
+   "skill": "review",
+   "from_day": 10,
+   "q": "If I won the singing contest, I ______ very happy.",
+   "options": [
+    "would be",
+    "will be",
+    "am",
+    "was"
+   ],
+   "answer": 0,
+   "explain_vi": "Vế If dùng quá khứ đơn (won) → câu điều kiện loại 2: would + V nguyên mẫu.",
+   "tag": "d10g"
+  },
+  {
+   "id": "d13q12",
+   "type": "text",
+   "skill": "review",
+   "from_day": 6,
+   "q": "There were so many tourists that the beach was very c______.",
+   "answer": "crowded",
+   "accept": [],
+   "explain_vi": "'crowded' = đông đúc, chật kín người.",
+   "tag": "d6v3"
+  }
+ ],
+ "can_do_vi": [
+  "Em có thể nói về âm nhạc, hội hoạ và sân khấu bằng các từ performance, exhibition, talented, rehearse...",
+  "Em có thể chọn đúng V-ing hay to V sau các động từ thường gặp, và hiểu sự khác nhau của stop/remember/try.",
+  "Em có thể tạo danh từ đuôi -ure, -age, -ance và làm bài đọc điền từ (cloze) 4 chỗ trống."
+ ]
+}

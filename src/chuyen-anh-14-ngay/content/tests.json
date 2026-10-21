@@ -1,0 +1,942 @@
+{
+ "diagnostic": {
+  "title_vi": "Bài kiểm tra đầu vào",
+  "minutes": 25,
+  "passages": [
+   {
+    "id": "diagP1",
+    "level": "A2",
+    "text": "Hi Nam,\nI'm staying with my cousins at the beach this week. Every morning we swim before breakfast, because the sea is calm then. In the afternoon it's too hot, so we stay inside and play board games. Yesterday we went on a boat trip and saw three dolphins! I'm coming home on Saturday by train. See you at football practice on Sunday.\nMinh"
+   },
+   {
+    "id": "diagP2",
+    "level": "B1",
+    "text": "When Linh was twelve, she noticed that many families in her building had shelves full of books that nobody read any more. So she put a small wooden box next to the lift with a sign: 'Take a book, leave a book.' At first, only her neighbours on the third floor used it. Then a man from the ground floor built a second shelf, and children started leaving notes inside the books to say what they thought of them. Two years later, the box holds more than two hundred books. Linh says the best part is not the books themselves but the conversations people now have in the lift."
+   },
+   {
+    "id": "diagP3",
+    "level": "B2",
+    "text": "For years, parents have complained that teenagers are lazy because they stay in bed until noon at weekends. Scientists, however, now believe that the problem is not laziness but biology. During adolescence, the body starts to produce melatonin, the hormone that makes us sleepy, about two hours later in the evening than it did in childhood. As a result, a fourteen-year-old who goes to bed at ten may simply lie awake, unable to fall asleep. Some schools have responded by pushing back the start of lessons, and the early results are promising: students arrive more alert, and fewer of them doze off in class. Critics argue that a later start only moves the problem, since teenagers will just go to bed even later. So far, though, the figures do not support this view."
+   }
+  ],
+  "items": [
+   {
+    "id": "diag01",
+    "level": "A2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "My sister ______ to school by bus every day.",
+    "options": [
+     "go",
+     "goes",
+     "going",
+     "is go"
+    ],
+    "answer": 1,
+    "explain_vi": "Thói quen hằng ngày (every day) dùng hiện tại đơn; chủ ngữ số ít 'My sister' nên động từ thêm -es: goes."
+   },
+   {
+    "id": "diag02",
+    "level": "A2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "We ______ at home last weekend because it was raining.",
+    "options": [
+     "was",
+     "are",
+     "were",
+     "did"
+    ],
+    "answer": 2,
+    "explain_vi": "'last weekend' là quá khứ; chủ ngữ 'We' đi với 'were' (không dùng 'was')."
+   },
+   {
+    "id": "diag03",
+    "level": "A2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "My birthday is ______ 14th May.",
+    "options": [
+     "in",
+     "at",
+     "by",
+     "on"
+    ],
+    "answer": 3,
+    "explain_vi": "Trước ngày cụ thể (14th May) dùng giới từ 'on'. 'in' dùng cho tháng/năm, 'at' cho giờ."
+   },
+   {
+    "id": "diag04",
+    "level": "A2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "This is Tom's bag, and that one is ______ too.",
+    "options": [
+     "his",
+     "him",
+     "he",
+     "he's"
+    ],
+    "answer": 0,
+    "explain_vi": "Cần đại từ sở hữu đứng một mình (= của cậu ấy): 'his'. 'him' là tân ngữ, 'he's' = he is."
+   },
+   {
+    "id": "diag05",
+    "level": "A2",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "I'm hungry. Can I have a ______ of bread?",
+    "options": [
+     "glass",
+     "bowl",
+     "slice",
+     "bottle"
+    ],
+    "answer": 2,
+    "explain_vi": "'a slice of bread' = một lát bánh mì. 'glass' và 'bottle' dùng cho đồ uống, 'bowl' cho cơm/súp."
+   },
+   {
+    "id": "diag06",
+    "level": "A2",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "Please ______ the door. It's cold in here.",
+    "options": [
+     "wear",
+     "close",
+     "make",
+     "turn"
+    ],
+    "answer": 1,
+    "explain_vi": "Trời lạnh nên cần 'close the door' (đóng cửa). 'wear' là mặc, 'make' là làm ra."
+   },
+   {
+    "id": "diag07",
+    "level": "A2",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "My grandfather is 80, but he is still very ______. He walks five kilometres every day.",
+    "options": [
+     "tired",
+     "lazy",
+     "ill",
+     "active"
+    ],
+    "answer": 3,
+    "explain_vi": "Ông vẫn đi bộ 5 km mỗi ngày nên ông rất 'active' (năng động). Ba từ còn lại trái nghĩa với ý câu."
+   },
+   {
+    "id": "diag08",
+    "level": "A2",
+    "skill": "wordform",
+    "type": "text",
+    "q": "It's very ______ today, so take your umbrella. (RAIN)",
+    "answer": "rainy",
+    "accept": [
+     "rainy"
+    ],
+    "explain_vi": "Sau 'very' cần tính từ. rain (mưa) + -y → rainy (có mưa)."
+   },
+   {
+    "id": "diag09",
+    "level": "A2",
+    "skill": "reading",
+    "type": "mcq",
+    "passage": "diagP1",
+    "q": "Why do Minh and his cousins swim before breakfast?",
+    "options": [
+     "It is too hot in the morning.",
+     "They have breakfast at the beach.",
+     "The sea is calm at that time.",
+     "They want to see dolphins."
+    ],
+    "answer": 2,
+    "explain_vi": "Bài viết: 'we swim before breakfast, because the sea is calm then'. Trời nóng là vào buổi chiều, không phải buổi sáng."
+   },
+   {
+    "id": "diag10",
+    "level": "A2",
+    "skill": "reading",
+    "type": "mcq",
+    "passage": "diagP1",
+    "q": "What will Minh do on Sunday?",
+    "options": [
+     "Travel home by train",
+     "Go on a boat trip",
+     "Play board games",
+     "Go to football practice"
+    ],
+    "answer": 3,
+    "explain_vi": "'See you at football practice on Sunday.' Về nhà bằng tàu là thứ Bảy, đi thuyền là hôm qua."
+   },
+   {
+    "id": "diag11",
+    "level": "B1",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "You've finished your homework, ______?",
+    "options": [
+     "didn't you",
+     "haven't you",
+     "don't you",
+     "have you"
+    ],
+    "answer": 1,
+    "explain_vi": "Câu hỏi đuôi: vế trước khẳng định 'You've (= have) finished' → đuôi phủ định cùng trợ động từ: 'haven't you?'."
+   },
+   {
+    "id": "diag12",
+    "level": "B1",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "______ the heavy rain, the match still went ahead.",
+    "options": [
+     "Although",
+     "However",
+     "Despite",
+     "Because"
+    ],
+    "answer": 2,
+    "explain_vi": "Sau chỗ trống là cụm danh từ 'the heavy rain' → dùng 'Despite'. 'Although' phải đi với một mệnh đề (S + V)."
+   },
+   {
+    "id": "diag13",
+    "level": "B1",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "A: I don't like horror films.\nB: ______ do I. They're too scary.",
+    "options": [
+     "Neither",
+     "So",
+     "Too",
+     "Either"
+    ],
+    "answer": 0,
+    "explain_vi": "Đồng ý với câu phủ định dùng 'Neither + trợ động từ + S' (Neither do I = Tớ cũng không). 'So do I' chỉ dùng sau câu khẳng định."
+   },
+   {
+    "id": "diag14",
+    "level": "B1",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "By the time we arrived at the cinema, the film ______.",
+    "options": [
+     "has started",
+     "started",
+     "was starting",
+     "had started"
+    ],
+    "answer": 3,
+    "explain_vi": "'By the time + quá khứ đơn' → hành động xảy ra trước đó dùng quá khứ hoàn thành: had started."
+   },
+   {
+    "id": "diag15",
+    "level": "B1",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "Please ______ attention to the instructions before you start the test.",
+    "options": [
+     "keep",
+     "pay",
+     "take",
+     "make"
+    ],
+    "answer": 1,
+    "explain_vi": "Cụm cố định: 'pay attention (to)' = chú ý (đến)."
+   },
+   {
+    "id": "diag16",
+    "level": "B1",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "Could you ______ my cat while I'm on holiday next week?",
+    "options": [
+     "look for",
+     "look up",
+     "look after",
+     "look into"
+    ],
+    "answer": 2,
+    "explain_vi": "'look after' = chăm sóc. 'look for' = tìm kiếm, 'look up' = tra cứu, 'look into' = điều tra."
+   },
+   {
+    "id": "diag17",
+    "level": "B1",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "I'm afraid I can't come to your party. I've got a bad ______ and I can't stop coughing.",
+    "options": [
+     "cold",
+     "pain",
+     "ache",
+     "temperature"
+    ],
+    "answer": 0,
+    "explain_vi": "'have a bad cold' = bị cảm nặng, hợp với 'ho không ngừng'. 'ache' phải ghép (headache...), không nói 'a bad temperature'."
+   },
+   {
+    "id": "diag18",
+    "level": "B1",
+    "skill": "wordform",
+    "type": "text",
+    "q": "Their ______ began in Grade 1, and they are still best friends today. (FRIEND)",
+    "answer": "friendship",
+    "accept": [
+     "friendship"
+    ],
+    "explain_vi": "Sau 'Their' cần danh từ. friend + -ship → friendship (tình bạn)."
+   },
+   {
+    "id": "diag19",
+    "level": "B1",
+    "skill": "reading",
+    "type": "mcq",
+    "passage": "diagP2",
+    "q": "Why did Linh start the book box?",
+    "options": [
+     "Her school asked her to do it.",
+     "The library near her building had closed.",
+     "She wanted to sell her old books.",
+     "Many families had books they no longer read."
+    ],
+    "answer": 3,
+    "explain_vi": "Câu đầu: các gia đình có 'shelves full of books that nobody read any more' – sách không ai đọc nữa. Các ý khác không có trong bài."
+   },
+   {
+    "id": "diag20",
+    "level": "B1",
+    "skill": "reading",
+    "type": "mcq",
+    "passage": "diagP2",
+    "q": "What does Linh like most about the project?",
+    "options": [
+     "The large number of books",
+     "The way neighbours now talk to each other",
+     "The notes that children leave in the books",
+     "The second shelf built by a neighbour"
+    ],
+    "answer": 1,
+    "explain_vi": "Câu cuối: 'the best part is not the books themselves but the conversations people now have' – điều Linh thích nhất là mọi người trò chuyện với nhau."
+   },
+   {
+    "id": "diag21",
+    "level": "B2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "Hardly ______ the house when it started to pour with rain.",
+    "options": [
+     "we had left",
+     "had we left",
+     "have we left",
+     "we left"
+    ],
+    "answer": 1,
+    "explain_vi": "Đảo ngữ: 'Hardly + had + S + V3 ... when ...' (vừa mới ... thì ...). Sau 'Hardly' đứng đầu câu phải đảo trợ động từ 'had'."
+   },
+   {
+    "id": "diag22",
+    "level": "B2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "I'd rather you ______ tell anyone about this yet.",
+    "options": [
+     "don't",
+     "won't",
+     "didn't",
+     "wouldn't"
+    ],
+    "answer": 2,
+    "explain_vi": "'would rather + S + quá khứ đơn' dùng để nói mong muốn về người khác ở hiện tại/tương lai → didn't tell."
+   },
+   {
+    "id": "diag23",
+    "level": "B2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "She ______ have seen me. She walked straight past without saying hello.",
+    "options": [
+     "can't",
+     "shouldn't",
+     "needn't",
+     "wouldn't"
+    ],
+    "answer": 0,
+    "explain_vi": "Suy đoán chắc chắn KHÔNG xảy ra trong quá khứ: 'can't have + V3' (chắc hẳn đã không ...)."
+   },
+   {
+    "id": "diag24",
+    "level": "B2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "It's high time we ______ for the airport, or we'll miss the flight.",
+    "options": [
+     "leave",
+     "will leave",
+     "are leaving",
+     "left"
+    ],
+    "answer": 3,
+    "explain_vi": "'It's (high) time + S + quá khứ đơn' = đã đến lúc phải làm gì → left."
+   },
+   {
+    "id": "diag25",
+    "level": "B2",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "The concert was ______ off because the singer had lost her voice.",
+    "options": [
+     "called",
+     "dropped",
+     "given",
+     "broken"
+    ],
+    "answer": 0,
+    "explain_vi": "'call off' = huỷ bỏ (sự kiện). 'drop off' = ngủ gật/cho xuống xe, 'give off' = toả ra, 'break off' = cắt đứt."
+   },
+   {
+    "id": "diag26",
+    "level": "B2",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "After months of training, the team finally ______ their goal of playing in the final.",
+    "options": [
+     "won",
+     "earned",
+     "gained",
+     "achieved"
+    ],
+    "answer": 3,
+    "explain_vi": "Kết hợp từ: 'achieve a goal' = đạt được mục tiêu. Không nói 'win/earn/gain a goal' với nghĩa này."
+   },
+   {
+    "id": "diag27",
+    "level": "B2",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "Lan ______ a lot of effort into her science project, and it really showed.",
+    "options": [
+     "put",
+     "made",
+     "did",
+     "gave"
+    ],
+    "answer": 0,
+    "explain_vi": "Cụm cố định: 'put effort into something' = dồn công sức vào. ('make an effort' không đi với 'into'.)"
+   },
+   {
+    "id": "diag28",
+    "level": "B2",
+    "skill": "wordform",
+    "type": "text",
+    "q": "There must be a ______. I ordered tea, not coffee. (UNDERSTAND)",
+    "answer": "misunderstanding",
+    "accept": [
+     "misunderstanding"
+    ],
+    "explain_vi": "Sau 'a' cần danh từ, nghĩa là sự hiểu lầm: mis- + understand + -ing → misunderstanding."
+   },
+   {
+    "id": "diag29",
+    "level": "B2",
+    "skill": "reading",
+    "type": "mcq",
+    "passage": "diagP3",
+    "q": "According to the passage, why do many teenagers find it hard to fall asleep early?",
+    "options": [
+     "Their bodies start producing a sleep hormone later in the evening.",
+     "They spend too long looking at their phones at night.",
+     "Their schools start lessons too late in the morning.",
+     "They are lazier than they were as children."
+    ],
+    "answer": 0,
+    "explain_vi": "Bài viết: cơ thể tiết hormone melatonin muộn hơn khoảng 2 tiếng. Bài phủ nhận ý 'lười', và không nhắc đến điện thoại."
+   },
+   {
+    "id": "diag30",
+    "level": "B2",
+    "skill": "reading",
+    "type": "mcq",
+    "passage": "diagP3",
+    "q": "What is the writer's attitude towards later school start times?",
+    "options": [
+     "completely against them",
+     "worried about how much they cost",
+     "generally positive about them",
+     "sure that they will fail in the long term"
+    ],
+    "answer": 2,
+    "explain_vi": "Tác giả gọi kết quả là 'promising' và nói số liệu 'do not support' ý kiến phản đối → thái độ nhìn chung là tích cực."
+   }
+  ]
+ },
+ "final": {
+  "title_vi": "Bài kiểm tra sau 2 tuần",
+  "minutes": 25,
+  "passages": [
+   {
+    "id": "finP1",
+    "level": "A2",
+    "text": "Dear Grandma,\nThank you for the birthday present! I wear the blue jacket every day because our classroom is very cold in the morning. On Saturday, Mum took me and four friends to the zoo for my party. We saw two baby elephants and then ate pizza in the park. Next month I'm visiting you with Dad. Can we go fishing again?\nLove,\nHoa"
+   },
+   {
+    "id": "finP2",
+    "level": "B1",
+    "text": "Last year, Quân's class turned an empty corner of the school yard into a vegetable garden. The idea came from their science teacher, who wanted students to see where food really comes from. At first, many students thought gardening would be boring, and insects ate most of the first tomatoes. Instead of giving up, the class asked a farmer for advice and planted flowers between the vegetables to keep the insects away. This spring, they grew enough lettuce to sell at the school fair. Quân says the money was nice, but he is prouder that his classmates now argue about whose turn it is to water the plants."
+   },
+   {
+    "id": "finP3",
+    "level": "B2",
+    "text": "Many students believe they can do their homework while chatting with friends online, and some even claim it helps them stay calm. Psychologists are not convinced. Their studies show that the brain does not really do two things at once; instead, it switches quickly between tasks, and every switch costs a little time and attention. Over an evening, these small losses add up, so homework that should take one hour may take ninety minutes, and the work is often less accurate. Interestingly, the people who consider themselves good at multitasking tend to perform worst in tests. This does not mean phones must be banned from bedrooms. A simple rule, such as checking messages only after finishing each subject, seems to bring most of the benefits without making teenagers feel cut off from their friends."
+   }
+  ],
+  "items": [
+   {
+    "id": "fin01",
+    "level": "A2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "______ your brother like ice cream?",
+    "options": [
+     "Is",
+     "Do",
+     "Are",
+     "Does"
+    ],
+    "answer": 3,
+    "explain_vi": "Câu hỏi hiện tại đơn với động từ thường 'like', chủ ngữ số ít 'your brother' → dùng 'Does'."
+   },
+   {
+    "id": "fin02",
+    "level": "A2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "I ______ my keys yesterday, so I couldn't open the door.",
+    "options": [
+     "lose",
+     "losed",
+     "lost",
+     "losing"
+    ],
+    "answer": 2,
+    "explain_vi": "'yesterday' → quá khứ đơn. 'lose' là động từ bất quy tắc: lose – lost – lost."
+   },
+   {
+    "id": "fin03",
+    "level": "A2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "The film starts ______ 7.30, so please don't be late.",
+    "options": [
+     "at",
+     "in",
+     "on",
+     "by"
+    ],
+    "answer": 0,
+    "explain_vi": "Trước giờ cụ thể (7.30) dùng giới từ 'at'."
+   },
+   {
+    "id": "fin04",
+    "level": "A2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "These are my sister's shoes. Please give them to ______.",
+    "options": [
+     "she",
+     "her",
+     "hers",
+     "herself"
+    ],
+    "answer": 1,
+    "explain_vi": "Sau giới từ 'to' cần đại từ tân ngữ: 'her'. 'she' là chủ ngữ, 'hers' = của cô ấy."
+   },
+   {
+    "id": "fin05",
+    "level": "A2",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "I'm thirsty. Can I have a ______ of orange juice, please?",
+    "options": [
+     "slice",
+     "loaf",
+     "piece",
+     "glass"
+    ],
+    "answer": 3,
+    "explain_vi": "Đồ uống dùng 'a glass of' (một cốc). 'slice/piece' dùng cho đồ ăn, 'loaf' là ổ bánh mì."
+   },
+   {
+    "id": "fin06",
+    "level": "A2",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "It's raining outside. Don't forget to take your ______.",
+    "options": [
+     "sunglasses",
+     "umbrella",
+     "scarf",
+     "gloves"
+    ],
+    "answer": 1,
+    "explain_vi": "Trời mưa thì mang 'umbrella' (ô). Các đồ còn lại không dùng để che mưa."
+   },
+   {
+    "id": "fin07",
+    "level": "A2",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "My little brother is very ______. He always smiles and talks to new people.",
+    "options": [
+     "quiet",
+     "shy",
+     "friendly",
+     "sleepy"
+    ],
+    "answer": 2,
+    "explain_vi": "Luôn cười và nói chuyện với người mới → 'friendly' (thân thiện). 'quiet' và 'shy' trái nghĩa với ý câu."
+   },
+   {
+    "id": "fin08",
+    "level": "A2",
+    "skill": "wordform",
+    "type": "text",
+    "q": "It's ______ today, so let's go to the park and fly a kite. (WIND)",
+    "answer": "windy",
+    "accept": [
+     "windy"
+    ],
+    "explain_vi": "Sau 'It's' cần tính từ chỉ thời tiết. wind (gió) + -y → windy (có gió)."
+   },
+   {
+    "id": "fin09",
+    "level": "A2",
+    "skill": "reading",
+    "type": "mcq",
+    "passage": "finP1",
+    "q": "Why does Hoa wear the blue jacket every day?",
+    "options": [
+     "Her classroom is cold in the morning.",
+     "Blue is her favourite colour.",
+     "Her mum told her to wear it.",
+     "She wants to wear it to the zoo."
+    ],
+    "answer": 0,
+    "explain_vi": "Bài viết: 'I wear the blue jacket every day because our classroom is very cold in the morning.'"
+   },
+   {
+    "id": "fin10",
+    "level": "A2",
+    "skill": "reading",
+    "type": "mcq",
+    "passage": "finP1",
+    "q": "What does Hoa want to do next month?",
+    "options": [
+     "Visit the zoo again",
+     "Go fishing with Grandma",
+     "Have another party",
+     "Eat pizza in the park"
+    ],
+    "answer": 1,
+    "explain_vi": "'Next month I'm visiting you ... Can we go fishing again?' Đi sở thú và ăn pizza là thứ Bảy vừa rồi."
+   },
+   {
+    "id": "fin11",
+    "level": "B1",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "Your parents haven't met my teacher yet, ______?",
+    "options": [
+     "have they",
+     "haven't they",
+     "did they",
+     "do they"
+    ],
+    "answer": 0,
+    "explain_vi": "Vế trước phủ định 'haven't met' → câu hỏi đuôi khẳng định cùng trợ động từ: 'have they?'."
+   },
+   {
+    "id": "fin12",
+    "level": "B1",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "______ she was very tired, she carried on studying until midnight.",
+    "options": [
+     "Despite",
+     "However",
+     "Although",
+     "In spite"
+    ],
+    "answer": 2,
+    "explain_vi": "Sau chỗ trống là mệnh đề 'she was very tired' (S + V) → dùng 'Although'. 'Despite/In spite of' đi với danh từ/V-ing."
+   },
+   {
+    "id": "fin13",
+    "level": "B1",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "A: I've never been abroad.\nB: ______ have I. I'd love to go one day.",
+    "options": [
+     "So",
+     "Neither",
+     "Either",
+     "Also"
+    ],
+    "answer": 1,
+    "explain_vi": "'never' mang nghĩa phủ định → đồng ý dùng 'Neither have I' (Tớ cũng chưa từng)."
+   },
+   {
+    "id": "fin14",
+    "level": "B1",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "When I got to the station, the train ______, so I had to wait an hour for the next one.",
+    "options": [
+     "has already left",
+     "already leaves",
+     "would already leave",
+     "had already left"
+    ],
+    "answer": 3,
+    "explain_vi": "Tàu rời đi TRƯỚC khi tôi đến (một hành động quá khứ khác) → quá khứ hoàn thành: had already left."
+   },
+   {
+    "id": "fin15",
+    "level": "B1",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "I always ______ a lot of mistakes when I write in a hurry.",
+    "options": [
+     "do",
+     "make",
+     "take",
+     "have"
+    ],
+    "answer": 1,
+    "explain_vi": "Kết hợp từ: 'make a mistake' = mắc lỗi (không dùng 'do a mistake')."
+   },
+   {
+    "id": "fin16",
+    "level": "B1",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "We've ______ milk, so I'll go to the shop and buy some more.",
+    "options": [
+     "run into",
+     "run after",
+     "run out of",
+     "run over"
+    ],
+    "answer": 2,
+    "explain_vi": "'run out of' = hết (thứ gì). 'run into' = tình cờ gặp, 'run after' = đuổi theo, 'run over' = cán qua."
+   },
+   {
+    "id": "fin17",
+    "level": "B1",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "Eating fruit, vegetables and some protein every day is part of a ______ diet.",
+    "options": [
+     "fair",
+     "equal",
+     "even",
+     "balanced"
+    ],
+    "answer": 3,
+    "explain_vi": "Kết hợp từ: 'a balanced diet' = chế độ ăn cân bằng. Không nói 'fair/equal/even diet'."
+   },
+   {
+    "id": "fin18",
+    "level": "B1",
+    "skill": "wordform",
+    "type": "text",
+    "q": "To use the swimming pool, you need a ______ card. (MEMBER)",
+    "answer": "membership",
+    "accept": [
+     "membership"
+    ],
+    "explain_vi": "Cần danh từ: member + -ship → membership (tư cách hội viên); 'membership card' = thẻ hội viên."
+   },
+   {
+    "id": "fin19",
+    "level": "B1",
+    "skill": "reading",
+    "type": "mcq",
+    "passage": "finP2",
+    "q": "Whose idea was the vegetable garden?",
+    "options": [
+     "The students'",
+     "A farmer's",
+     "Their science teacher's",
+     "Quân's parents'"
+    ],
+    "answer": 2,
+    "explain_vi": "'The idea came from their science teacher'. Người nông dân chỉ cho lời khuyên sau đó."
+   },
+   {
+    "id": "fin20",
+    "level": "B1",
+    "skill": "reading",
+    "type": "mcq",
+    "passage": "finP2",
+    "q": "What is Quân most proud of?",
+    "options": [
+     "The money they made at the fair",
+     "The tomatoes they grew in the first year",
+     "The flowers they planted between the vegetables",
+     "How keen his classmates now are to look after the plants"
+    ],
+    "answer": 3,
+    "explain_vi": "Câu cuối: tiền thì vui, nhưng Quân tự hào hơn vì các bạn giờ tranh nhau tưới cây – tức là ai cũng muốn chăm vườn."
+   },
+   {
+    "id": "fin21",
+    "level": "B2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "No sooner ______ onto the stage than the audience began to cheer.",
+    "options": [
+     "had she stepped",
+     "she had stepped",
+     "has she stepped",
+     "she stepped"
+    ],
+    "answer": 0,
+    "explain_vi": "Đảo ngữ: 'No sooner + had + S + V3 ... than ...' (vừa mới ... thì ...)."
+   },
+   {
+    "id": "fin22",
+    "level": "B2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "I'd rather you ______ your phone during dinner.",
+    "options": [
+     "don't use",
+     "didn't use",
+     "won't use",
+     "wouldn't use"
+    ],
+    "answer": 1,
+    "explain_vi": "'would rather + S + quá khứ đơn' khi muốn người khác làm/không làm gì → didn't use."
+   },
+   {
+    "id": "fin23",
+    "level": "B2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "The experiment ______ have gone wrong. The results look perfect.",
+    "options": [
+     "hadn't",
+     "needn't",
+     "can't",
+     "wouldn't"
+    ],
+    "answer": 2,
+    "explain_vi": "Suy đoán chắc chắn điều gì KHÔNG xảy ra trong quá khứ: 'can't have + V3'."
+   },
+   {
+    "id": "fin24",
+    "level": "B2",
+    "skill": "grammar",
+    "type": "mcq",
+    "q": "It's about time you ______ your room. It's a complete mess!",
+    "options": [
+     "tidy",
+     "will tidy",
+     "are tidying",
+     "tidied"
+    ],
+    "answer": 3,
+    "explain_vi": "'It's (about/high) time + S + quá khứ đơn' = đã đến lúc phải làm gì → tidied."
+   },
+   {
+    "id": "fin25",
+    "level": "B2",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "After weeks of failed experiments, the team finally ______ a cheaper way to clean the water.",
+    "options": [
+     "came across",
+     "came up with",
+     "came down with",
+     "came round to"
+    ],
+    "answer": 1,
+    "explain_vi": "'come up with' = nghĩ ra (ý tưởng, giải pháp). 'come across' = tình cờ thấy, 'come down with' = bị ốm, 'come round to' = dần chấp nhận (ý kiến)."
+   },
+   {
+    "id": "fin26",
+    "level": "B2",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "The new school rules will ______ effect next Monday.",
+    "options": [
+     "make",
+     "get",
+     "do",
+     "take"
+    ],
+    "answer": 3,
+    "explain_vi": "Cụm cố định: 'take effect' = bắt đầu có hiệu lực."
+   },
+   {
+    "id": "fin27",
+    "level": "B2",
+    "skill": "vocab",
+    "type": "mcq",
+    "q": "She ______ most of her free time to helping at the animal shelter.",
+    "options": [
+     "devotes",
+     "spends",
+     "uses",
+     "takes"
+    ],
+    "answer": 0,
+    "explain_vi": "'devote time to + V-ing' = dành (hết lòng) thời gian cho việc gì. 'spend time' đi với 'on' hoặc V-ing, không đi với 'to'."
+   },
+   {
+    "id": "fin28",
+    "level": "B2",
+    "skill": "wordform",
+    "type": "text",
+    "q": "Sorry, I ______ the question, so my answer was completely wrong. (UNDERSTAND)",
+    "answer": "misunderstood",
+    "accept": [
+     "misunderstood"
+    ],
+    "explain_vi": "Cần động từ quá khứ mang nghĩa 'hiểu sai': mis- + understand → misunderstand → quá khứ: misunderstood."
+   },
+   {
+    "id": "fin29",
+    "level": "B2",
+    "skill": "reading",
+    "type": "mcq",
+    "passage": "finP3",
+    "q": "According to psychologists, what happens when we try to do two things at the same time?",
+    "options": [
+     "The brain moves rapidly from one task to the other.",
+     "The brain does both tasks equally well.",
+     "We become calmer and more focused.",
+     "We completely forget the first task."
+    ],
+    "answer": 0,
+    "explain_vi": "Bài viết: 'the brain does not really do two things at once; instead, it switches quickly between tasks'."
+   },
+   {
+    "id": "fin30",
+    "level": "B2",
+    "skill": "reading",
+    "type": "mcq",
+    "passage": "finP3",
+    "q": "What is the writer's view on phones and homework?",
+    "options": [
+     "Phones should be banned from bedrooms.",
+     "Students who multitask get the best results.",
+     "A sensible rule works better than a total ban.",
+     "Messages should always be answered quickly."
+    ],
+    "answer": 2,
+    "explain_vi": "Tác giả nói không cần cấm điện thoại; một quy tắc đơn giản (xem tin nhắn sau mỗi môn) mang lại phần lớn lợi ích."
+   }
+  ]
+ }
+}

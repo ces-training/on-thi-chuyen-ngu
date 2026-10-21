@@ -1,0 +1,625 @@
+{
+ "day": 14,
+ "type": "review",
+ "theme_en": "Review 2",
+ "theme_vi": "Vòng ôn 2 (buổi 8–13, kèm ôn lại buổi 1–6)",
+ "goal_vi": "Chúc mừng em đã đi đến buổi cuối cùng! Hôm nay em sẽ ôn lại từ vựng, ngữ pháp và các dạng bài thi của buổi 8–13, kèm một số câu từ buổi 1–6, để thấy mình đã tiến bộ thế nào.",
+ "minutes": 35,
+ "paper": {
+  "R1_vocab": {
+   "instruction_vi": "Điền một từ thích hợp vào mỗi chỗ trống. Chữ cái đầu của từ đã được cho sẵn. Các từ này em đều đã học trong 13 buổi vừa qua đấy!",
+   "items": [
+    {
+     "id": "d14R1_1",
+     "q": "The a______ clapped and cheered loudly at the end of the concert.",
+     "answer": "audience",
+     "from_day": 8,
+     "tag": "d8v2"
+    },
+    {
+     "id": "d14R1_2",
+     "q": "Not everything on the Internet is true, so always check that your source is r______.",
+     "answer": "reliable",
+     "from_day": 8,
+     "tag": "d8v5"
+    },
+    {
+     "id": "d14R1_3",
+     "q": "Which f______ of ice cream do you like best – chocolate, mango or green tea?",
+     "answer": "flavour",
+     "accept": [
+      "flavor"
+     ],
+     "from_day": 9,
+     "tag": "d9v5"
+    },
+    {
+     "id": "d14R1_4",
+     "q": "Working at the summer camp was a great e______ for me. I learnt how to look after younger children.",
+     "answer": "experience",
+     "from_day": 10,
+     "tag": "d10v4"
+    },
+    {
+     "id": "d14R1_5",
+     "q": "I can't t______ him any more because he has lied to me twice.",
+     "answer": "trust",
+     "from_day": 11,
+     "tag": "d11v6"
+    },
+    {
+     "id": "d14R1_6",
+     "q": "Scientists have done a lot of r______ on how sleep affects our memory.",
+     "answer": "research",
+     "from_day": 12,
+     "tag": "d12v3"
+    },
+    {
+     "id": "d14R1_7",
+     "q": "We need to r______ the dance one more time before the show starts.",
+     "answer": "rehearse",
+     "from_day": 13,
+     "tag": "d13v7"
+    },
+    {
+     "id": "d14R1_8",
+     "q": "My little sister is very e______ about her ballet classes; she talks about them all the time.",
+     "answer": "enthusiastic",
+     "from_day": 2,
+     "tag": "d2v3"
+    },
+    {
+     "id": "d14R1_9",
+     "q": "Old newspapers can be r______ and turned into new paper.",
+     "answer": "recycled",
+     "from_day": 3,
+     "tag": "d3v4"
+    },
+    {
+     "id": "d14R1_10",
+     "q": "My dentist told me to a______ fizzy drinks because they contain so much sugar.",
+     "answer": "avoid",
+     "from_day": 5,
+     "tag": "d5v8"
+    }
+   ]
+  },
+  "R2_grammar": {
+   "instruction_vi": "Hoàn thành câu: chia động từ trong ngoặc hoặc chọn từ đúng trong ngoặc. Mỗi câu ôn một chủ điểm ngữ pháp khác nhau – em đọc kỹ dấu hiệu trong câu nhé.",
+   "items": [
+    {
+     "id": "d14R2_1",
+     "q": "Bánh mì ______ (sell) on almost every street corner in Hà Nội.",
+     "answer": "is sold",
+     "from_day": 8,
+     "tag": "d8g"
+    },
+    {
+     "id": "d14R2_2",
+     "q": "There are only ______ eggs left, so let's buy some more. (a few / a little)",
+     "answer": "a few",
+     "from_day": 9,
+     "tag": "d9g"
+    },
+    {
+     "id": "d14R2_3",
+     "q": "If you ______ (not water) the plants, they will die.",
+     "answer": "don't water",
+     "accept": [
+      "do not water"
+     ],
+     "from_day": 10,
+     "tag": "d10g"
+    },
+    {
+     "id": "d14R2_4",
+     "q": "If I ______ (know) the answer, I would tell you, but I don't.",
+     "answer": "knew",
+     "from_day": 10,
+     "tag": "d10g"
+    },
+    {
+     "id": "d14R2_5",
+     "q": "That's the hospital ______ I was born. (which / where)",
+     "answer": "where",
+     "from_day": 11,
+     "tag": "d11g"
+    },
+    {
+     "id": "d14R2_6",
+     "q": "'I am reading a comic,' said Mai. → Mai said that she ______ a comic.",
+     "answer": "was reading",
+     "from_day": 12,
+     "tag": "d12g"
+    },
+    {
+     "id": "d14R2_7",
+     "q": "My dad has promised ______ (take) me to the art exhibition on Saturday.",
+     "answer": "to take",
+     "from_day": 13,
+     "tag": "d13g"
+    },
+    {
+     "id": "d14R2_8",
+     "q": "Listen! Somebody ______ (knock) at the door.",
+     "answer": "is knocking",
+     "accept": [
+      "'s knocking"
+     ],
+     "from_day": 1,
+     "tag": "d1g"
+    },
+    {
+     "id": "d14R2_9",
+     "q": "I ______ (watch) TV when the phone rang.",
+     "answer": "was watching",
+     "from_day": 2,
+     "tag": "d2g"
+    },
+    {
+     "id": "d14R2_10",
+     "q": "We ______ (live) in this flat since 2020.",
+     "answer": "have lived",
+     "accept": [
+      "'ve lived",
+      "have been living",
+      "'ve been living"
+     ],
+     "from_day": 3,
+     "tag": "d3g"
+    }
+   ]
+  },
+  "R3_wordform": {
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Bước 1: xem chỗ trống cần danh từ, tính từ, trạng từ hay động từ. Bước 2: chọn hậu tố phù hợp. Bước 3: kiểm tra nghĩa khẳng định hay phủ định.",
+   "items": [
+    {
+     "id": "d14R3_1",
+     "q": "Thank you for the ______ talk about staying safe online; we learnt a lot. (INFORM)",
+     "answer": "informative",
+     "from_day": 8,
+     "tag": "d8w"
+    },
+    {
+     "id": "d14R3_2",
+     "q": "The ______ of the villagers surprised us when our car broke down in the countryside. (KIND)",
+     "answer": "kindness",
+     "from_day": 9,
+     "tag": "d9w"
+    },
+    {
+     "id": "d14R3_3",
+     "q": "The ______ from my house to school is about two kilometres. (DISTANT)",
+     "answer": "distance",
+     "from_day": 11,
+     "tag": "d11w"
+    },
+    {
+     "id": "d14R3_4",
+     "q": "Our class won first prize for the best dance ______. (PERFORM)",
+     "answer": "performance",
+     "from_day": 13,
+     "tag": "d13w"
+    },
+    {
+     "id": "d14R3_5",
+     "q": "Be ______ when you cross the road near the market. (CARE)",
+     "answer": "careful",
+     "from_day": 2,
+     "tag": "d2w"
+    },
+    {
+     "id": "d14R3_6",
+     "q": "It's ______ to finish all this homework in just ten minutes! (POSSIBLE)",
+     "answer": "impossible",
+     "from_day": 5,
+     "tag": "d5w"
+    }
+   ]
+  },
+  "R4_exam": {
+   "instruction_vi": "Đây là 6 câu trắc nghiệm theo các dạng bài thi em đã làm quen. Đọc kỹ yêu cầu ở đầu mỗi câu rồi chọn A, B, C hoặc D.",
+   "items": [
+    {
+     "id": "d14R4_1",
+     "format": "completion",
+     "q": "Choose the best answer: Could you ______ me a favour and hold this bag for a minute?",
+     "options": [
+      "make",
+      "do",
+      "give",
+      "take"
+     ],
+     "answer": "B",
+     "from_day": 8,
+     "tag": "fmt:sentence_completion"
+    },
+    {
+     "id": "d14R4_2",
+     "format": "synonym",
+     "q": "Choose the word CLOSEST in meaning to the word in CAPITALS: The CUSTOM of giving lucky money at Tết makes children very happy.",
+     "options": [
+      "festival",
+      "recipe",
+      "flavour",
+      "tradition"
+     ],
+     "answer": "D",
+     "from_day": 9,
+     "tag": "fmt:synonym"
+    },
+    {
+     "id": "d14R4_3",
+     "format": "dialogue",
+     "q": "Choose the best reply: A: 'I'm going to apply for a summer job at the zoo.' – B: '______'",
+     "options": [
+      "No, thanks.",
+      "Here you are.",
+      "That sounds exciting! Good luck.",
+      "I'm sorry to hear that."
+     ],
+     "answer": "C",
+     "from_day": 10,
+     "tag": "fmt:dialogue_completion"
+    },
+    {
+     "id": "d14R4_4",
+     "format": "antonym",
+     "q": "Choose the word OPPOSITE in meaning to the word in CAPITALS: Mai and her brother often ARGUE about small things.",
+     "options": [
+      "agree",
+      "quarrel",
+      "fight",
+      "disagree"
+     ],
+     "answer": "A",
+     "from_day": 11,
+     "tag": "fmt:antonym"
+    },
+    {
+     "id": "d14R4_5",
+     "format": "transformation",
+     "q": "Choose the sentence CLOSEST in meaning: My sister is taller than me.",
+     "options": [
+      "I am taller than my sister.",
+      "I am as tall as my sister.",
+      "My sister is shorter than me.",
+      "I am not as tall as my sister."
+     ],
+     "answer": "D",
+     "from_day": 5,
+     "tag": "fmt:sentence_transformation"
+    },
+    {
+     "id": "d14R4_6",
+     "format": "cloze",
+     "q": "Choose the best word for the gap: Last summer we went on a long ______ by train from Hà Nội to Huế. It took almost fourteen hours.",
+     "options": [
+      "destination",
+      "souvenir",
+      "journey",
+      "passenger"
+     ],
+     "answer": "C",
+     "from_day": 6,
+     "tag": "fmt:cloze"
+    }
+   ]
+  },
+  "E_reading": {
+   "id": "d14r",
+   "title": "A Festival of Ideas",
+   "instruction_vi": "Đọc đoạn văn rồi làm bài. Câu 1–3: chọn True (đúng), False (sai) hoặc Not Given (bài không nói đến). Câu 4–5: chọn A, B, C hoặc D.",
+   "text": "Every year, Lê Lợi Secondary School holds a 'Festival of Ideas', where students show projects which combine science, art and culture. This year, the winning team was a group of four Year 7 students whose project was about street food. First, they carried out a survey of 120 people at a local market to find out which dishes were the most popular. When they analysed the results, they discovered that most people preferred traditional dishes, like phở and bánh cuốn, to fast food. However, many cooks said they were worried that young people were no longer interested in learning the old recipes. So the team came up with a creative solution: they filmed five grandmothers cooking their favourite dishes and put the videos online. In just two months, the videos were watched more than ten thousand times. One of the judges said that the project had inspired her to cook with her own mother again. The team now hope to turn their videos into a short book.",
+   "items": [
+    {
+     "id": "d14E1",
+     "kind": "tfng",
+     "q": "The winning team had five members.",
+     "answer": "False",
+     "tag": "d14r"
+    },
+    {
+     "id": "d14E2",
+     "kind": "tfng",
+     "q": "The students asked 120 people questions at a market.",
+     "answer": "True",
+     "tag": "d14r"
+    },
+    {
+     "id": "d14E3",
+     "kind": "tfng",
+     "q": "The grandmothers were paid for appearing in the videos.",
+     "answer": "Not Given",
+     "tag": "d14r"
+    },
+    {
+     "id": "d14E4",
+     "kind": "mcq",
+     "q": "According to the survey, most people ______.",
+     "options": [
+      "preferred fast food",
+      "never ate street food",
+      "preferred traditional dishes",
+      "wanted to learn new recipes"
+     ],
+     "answer": "C",
+     "tag": "d14r"
+    },
+    {
+     "id": "d14E5",
+     "kind": "mcq",
+     "q": "Why did the team film the grandmothers?",
+     "options": [
+      "to win money for the school",
+      "to help young people learn the old recipes",
+      "because the judges asked them to",
+      "to advertise the market"
+     ],
+     "answer": "B",
+     "tag": "d14r"
+    }
+   ]
+  },
+  "F_writing": {
+   "task_en": "Write an email to an English-speaking friend about a festival, show or exhibition you went to recently. Say what it was, what you saw or did there, and why your friend would enjoy it. Use at least one passive sentence, one relative clause and one conditional sentence.",
+   "task_vi": "Viết một email cho một người bạn nói tiếng Anh, kể về một lễ hội, buổi biểu diễn hoặc triển lãm em đã đi gần đây: đó là sự kiện gì, em đã xem/làm gì, và vì sao bạn ấy sẽ thích. Dùng ít nhất một câu bị động, một mệnh đề quan hệ và một câu điều kiện.",
+   "min_words": 80,
+   "model": "Hi Jack,\nHow are you? Last weekend I went to the Mid-Autumn Festival in my neighbourhood with my cousin, who is visiting from Đà Nẵng. The streets were decorated with colourful lanterns, which were made by local children. We watched an amazing lion dance performance and ate mooncakes with lots of different flavours. My favourite was green tea! I also took part in a drawing competition and won second prize. If you visited Vietnam in September, I would take you there. I'm sure you would love it.\nWrite back soon,\nNam",
+   "checklist_vi": [
+    "Email của em có lời chào mở đầu và lời chào kết thúc chưa?",
+    "Em đã có ít nhất 1 câu bị động (was/were + V3), 1 mệnh đề quan hệ (who/which/where...) và 1 câu điều kiện chưa?",
+    "Em đã dùng ít nhất 4 từ đã học trong các buổi 8–13 chưa?",
+    "Em đã viết đủ 80 từ trở lên và kiểm tra lại chính tả chưa?"
+   ]
+  },
+  "self_check_vi": [
+   "Em đã thuộc 48 từ vựng và 12 cụm động từ của buổi 8–13, và nhớ lại được từ của buổi 1–6.",
+   "Em có thể dùng câu bị động thì hiện tại đơn và quá khứ đơn.",
+   "Em có thể dùng đúng câu điều kiện loại 0, 1, 2 và mệnh đề quan hệ who/which/that/whose/where.",
+   "Em có thể chuyển câu trực tiếp sang câu tường thuật và chọn đúng V-ing hay to V.",
+   "Em có thể tạo từ với các hậu tố -able/-ive, -ness/-ity, -ise/-ify/-en, -ence/-ance, -ure/-age.",
+   "Em đã làm quen với 6 dạng bài thi: điền từ, đồng nghĩa, trái nghĩa, hội thoại, câu đồng nghĩa và điền từ vào đoạn văn."
+  ]
+ },
+ "web_check": [
+  {
+   "id": "d14q1",
+   "type": "mcq",
+   "skill": "vocab",
+   "from_day": 8,
+   "q": "Can you ______ what time the museum opens on Sunday?",
+   "options": [
+    "come across",
+    "find out",
+    "carry out",
+    "turn down"
+   ],
+   "answer": 1,
+   "explain_vi": "'find out' = tìm ra, tìm hiểu (thông tin). 'come across' = tình cờ gặp/thấy.",
+   "tag": "d8p1"
+  },
+  {
+   "id": "d14q2",
+   "type": "text",
+   "skill": "vocab",
+   "from_day": 9,
+   "q": "We don't cook on Sundays; we usually eat ______ at a restaurant near our house.",
+   "answer": "out",
+   "accept": [],
+   "explain_vi": "'eat out' = đi ăn ở ngoài (nhà hàng, quán ăn).",
+   "tag": "d9p1"
+  },
+  {
+   "id": "d14q3",
+   "type": "mcq",
+   "skill": "vocab",
+   "from_day": 10,
+   "q": "Don't stop now! ______ reading – the story is just getting interesting.",
+   "options": [
+    "Turn down",
+    "Look up to",
+    "Carry on",
+    "Put on"
+   ],
+   "answer": 2,
+   "explain_vi": "'carry on + V-ing' = tiếp tục làm gì.",
+   "tag": "d10p1"
+  },
+  {
+   "id": "d14q4",
+   "type": "text",
+   "skill": "vocab",
+   "from_day": 13,
+   "q": "More than two hundred runners took ______ in the charity race.",
+   "answer": "part",
+   "accept": [],
+   "explain_vi": "'take part in' = tham gia (cuộc thi, hoạt động).",
+   "tag": "d13p2"
+  },
+  {
+   "id": "d14q5",
+   "type": "mcq",
+   "skill": "grammar",
+   "from_day": 8,
+   "q": "Our school ______ in 1998, so it is quite new.",
+   "options": [
+    "built",
+    "is built",
+    "was built",
+    "were built"
+   ],
+   "answer": 2,
+   "explain_vi": "Bị động quá khứ đơn (in 1998); chủ ngữ số ít 'Our school' → was built.",
+   "tag": "d8g"
+  },
+  {
+   "id": "d14q6",
+   "type": "mcq",
+   "skill": "grammar",
+   "from_day": 12,
+   "q": "My mum ______ that she would be home late.",
+   "options": [
+    "told",
+    "talked",
+    "said",
+    "spoke"
+   ],
+   "answer": 2,
+   "explain_vi": "Không có người nghe sau chỗ trống → dùng said (say that...). 'told' phải có người nghe: told me that...",
+   "tag": "d12g"
+  },
+  {
+   "id": "d14q7",
+   "type": "text",
+   "skill": "grammar",
+   "from_day": 13,
+   "q": "Nam finished ______ (paint) the picture just before midnight.",
+   "answer": "painting",
+   "accept": [],
+   "explain_vi": "'finish' luôn đi với V-ing: finish painting.",
+   "tag": "d13g"
+  },
+  {
+   "id": "d14q8",
+   "type": "mcq",
+   "skill": "grammar",
+   "from_day": 11,
+   "q": "Đà Lạt, ______ is in the mountains, is cool all year round.",
+   "options": [
+    "which",
+    "that",
+    "where",
+    "who"
+   ],
+   "answer": 0,
+   "explain_vi": "Sau chỗ trống là động từ 'is' (thiếu chủ ngữ) → dùng which. Không dùng 'that' sau dấu phẩy; 'where' cần cả một câu đầy đủ phía sau.",
+   "tag": "d11g"
+  },
+  {
+   "id": "d14q9",
+   "type": "mcq",
+   "skill": "wordform",
+   "from_day": 9,
+   "q": "Some villages in the mountains still have no ______. (ELECTRIC)",
+   "options": [
+    "electric",
+    "electrical",
+    "electrically",
+    "electricity"
+   ],
+   "answer": 3,
+   "explain_vi": "Sau 'no' cần danh từ: electric → electricity (điện).",
+   "tag": "d9w"
+  },
+  {
+   "id": "d14q10",
+   "type": "text",
+   "skill": "wordform",
+   "from_day": 10,
+   "q": "Our school website looks very old. We need to ______ it. (MODERN)",
+   "answer": "modernise",
+   "accept": [
+    "modernize"
+   ],
+   "explain_vi": "Sau 'need to' cần động từ: modern + -ise → modernise (hiện đại hoá).",
+   "tag": "d10w"
+  },
+  {
+   "id": "d14q11",
+   "type": "mcq",
+   "skill": "exam",
+   "from_day": 8,
+   "q": "Choose the best answer: I'm sorry, I ______ a mistake when I wrote your name.",
+   "options": [
+    "did",
+    "took",
+    "made",
+    "had"
+   ],
+   "answer": 2,
+   "explain_vi": "Kết hợp cố định: make a mistake (mắc lỗi). Không nói 'do a mistake'.",
+   "tag": "fmt:sentence_completion"
+  },
+  {
+   "id": "d14q12",
+   "type": "mcq",
+   "skill": "vocab",
+   "from_day": 1,
+   "q": "I find it difficult to ______ in class when I haven't had enough sleep.",
+   "options": [
+    "attend",
+    "concentrate",
+    "revise",
+    "encourage"
+   ],
+   "answer": 1,
+   "explain_vi": "'concentrate on sth' = tập trung vào việc gì.",
+   "tag": "d1v4"
+  },
+  {
+   "id": "d14q13",
+   "type": "text",
+   "skill": "grammar",
+   "from_day": 3,
+   "q": "I have never ______ (see) snow in my life.",
+   "answer": "seen",
+   "accept": [],
+   "explain_vi": "Hiện tại hoàn thành: have + V3. see → seen.",
+   "tag": "d3g"
+  },
+  {
+   "id": "d14q14",
+   "type": "mcq",
+   "skill": "vocab",
+   "from_day": 2,
+   "q": "My cousin ______ chess when she was eight, and now she plays in competitions.",
+   "options": [
+    "gave up",
+    "set off",
+    "worked out",
+    "took up"
+   ],
+   "answer": 3,
+   "explain_vi": "'take up' = bắt đầu một sở thích mới (quá khứ: took up). 'give up' = từ bỏ – ngược nghĩa với câu.",
+   "tag": "d2p1"
+  },
+  {
+   "id": "d14q15",
+   "type": "mcq",
+   "skill": "grammar",
+   "from_day": 6,
+   "q": "You ______ touch the paintings in the museum. It's not allowed.",
+   "options": [
+    "mustn't",
+    "don't have to",
+    "can",
+    "should"
+   ],
+   "answer": 0,
+   "explain_vi": "'mustn't' = cấm, không được phép. 'don't have to' = không cần phải (nhưng làm cũng được).",
+   "tag": "d6g"
+  },
+  {
+   "id": "d14q16",
+   "type": "mcq",
+   "skill": "grammar",
+   "from_day": 5,
+   "q": "The water isn't warm ______ for swimming today.",
+   "options": [
+    "too",
+    "so",
+    "enough",
+    "such"
+   ],
+   "answer": 2,
+   "explain_vi": "'enough' đứng SAU tính từ: warm enough (đủ ấm). 'too' đứng trước tính từ.",
+   "tag": "d5g"
+  }
+ ],
+ "can_do_vi": [
+  "Em có thể dùng từ vựng về truyền thông, ẩm thực, nghề nghiệp, con người, khoa học và nghệ thuật.",
+  "Em có thể dùng câu bị động, câu điều kiện, mệnh đề quan hệ, câu tường thuật và V-ing/to V.",
+  "Em có thể làm 6 dạng câu hỏi trắc nghiệm hay gặp trong đề thi chuyên Anh."
+ ]
+}
