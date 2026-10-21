@@ -1,0 +1,4 @@
+{
+  "_note": "apiUrl = địa chỉ Ứng dụng web của Google Apps Script (kết thúc bằng /exec). Để trống thì trang chạy như cũ, chỉ lưu trên máy.",
+  "apiUrl": ""
+}

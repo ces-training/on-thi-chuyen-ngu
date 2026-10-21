@@ -117,6 +117,29 @@ textarea{min-height:110px;font-family:var(--f-mono);font-size:.8rem}
 .bar .fill{height:100%;background:var(--accent);border-radius:99px}
 .bar .v{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
 .tbl-wrap{overflow-x:auto}
+.sync{display:inline-block;margin-left:10px;font-size:.78rem;font-weight:600;color:var(--muted)}
+.sync.ok{color:var(--good)}.sync.bad{color:var(--bad)}
+.badge{display:inline-block;min-width:18px;padding:0 5px;border-radius:999px;background:var(--bad);color:#fff;font-size:.72rem;line-height:18px;text-align:center}
+.mono{font-family:var(--f-mono)}
+.hi-card{border-color:var(--hi);background:var(--hi-soft)}
+.up-box h3{margin-top:0}
+.thumbs{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.thumbs img{width:84px;height:110px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+.ai-res{border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.ai-res h4{margin:6px 0 0;font-size:1rem}
+.ai-list{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.ai-item{border-left:4px solid var(--line);padding:6px 10px;background:var(--surface2);border-radius:6px}
+.ai-item.bad{border-left-color:var(--bad)}.ai-item.unk{border-left-color:var(--warn)}.ai-item.ok{border-left-color:var(--good)}
+.linkbtn{background:none;border:0;padding:0;margin-top:4px;color:var(--accent);font:inherit;font-size:.85rem;font-weight:600;cursor:pointer;text-decoration:underline}
+.thread{display:flex;flex-direction:column;gap:6px;margin:6px 0}
+.msg{max-width:85%;padding:8px 12px;border-radius:12px;background:var(--surface2)}
+.msg.from-s{align-self:flex-end;background:var(--accent-soft)}
+.msg.from-t{align-self:flex-start;background:var(--hi-soft);color:var(--hi-ink)}
+.t-note{background:var(--hi-soft);color:var(--hi-ink);border-radius:10px;padding:8px 12px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.up-row{border-top:1px solid var(--line);padding:10px 0}.up-row summary{cursor:pointer}
+.selfkey{margin-top:14px;border-top:1px dashed var(--line);padding-top:10px}.selfkey summary{cursor:pointer;font-weight:600}
+textarea{width:100%;font:inherit;padding:8px 10px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink)}
+
 .sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:8px 0}
 .fld{display:flex;flex-direction:column;gap:4px;font-weight:600;font-size:.92rem}
 .fld input,.fld select{font:inherit;font-weight:500;padding:8px 10px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink)}
@@ -177,7 +200,7 @@ details>summary{cursor:pointer;font-weight:700}
       <button role="tab" data-view="progress">Tiến bộ</button>
       <button role="tab" data-view="plan">Lộ trình &amp; khả thi</button>
       <button role="tab" data-view="school">Chọn trường</button>
-      <button role="tab" data-view="share">Gửi cô</button>
+      <button role="tab" data-view="share">Trao đổi với cô</button>
     </nav>
   </div>
 </header>
@@ -196,10 +219,11 @@ const $ = (s,el=document)=>el.querySelector(s);
 const esc = s => String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 /* ---------- state ---------- */
-function blank(){return {name:'',diag:null,final:null,days:{},queue:{},mastered:{},plan:{min:40,dpw:6},created:Date.now()}}
+function blank(){return {name:'',code:'',student:null,diag:null,final:null,days:{},queue:{},mastered:{},plan:{min:40,dpw:6},created:Date.now()}}
 let S = blank();
 try{const raw=localStorage.getItem(KEY); if(raw){S=Object.assign(blank(),JSON.parse(raw));}}catch(e){}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+function saveLocal(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+function save(){S.savedAt=Date.now();saveLocal();scheduleSync()}
 
 /* ---------- item index ---------- */
 const ITEM = {};
@@ -291,10 +315,10 @@ function dayStatus(n){const d=S.days[n];if(!d)return'none';if(d.web&&d.paper)ret
 
 /* ---------- views ---------- */
 let VIEW='start', CUR_DAY=null;
-const views={start:vStart,diag:vDiag,days:vDays,progress:vProgress,plan:vPlan,school:vSchool,share:vShare};
+const views={start:vStart,diag:vDiag,days:vDays,progress:vProgress,plan:vPlan,school:vSchool,share:()=>cloudOn()?vShareCloud():vShare()};
 function go(v,opt){VIEW=v;if(opt&&opt.day)CUR_DAY=opt.day;document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.view===v?'true':'false'));views[v]();renderHello();try{window.scrollTo({top:0})}catch(e){}}
 document.getElementById('tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(b)go(b.dataset.view)});
-function renderHello(){$('#hello').innerHTML=S.name?`Chào <strong>${esc(S.name)}</strong>`:''}
+function renderHello(){$('#hello').innerHTML=(S.name?`Chào <strong>${esc(S.name)}</strong>`:'')+(typeof syncLabel==='function'?syncLabel():'')}
 const M=()=>$('#main');
 
 function nextDay(){for(let i=1;i<=14;i++){if(dayStatus(i)!=='done')return i}return 14}
@@ -311,17 +335,18 @@ function vStart(){
       <p class="small muted">Vòng tròn nét đứt là buổi ôn tập (buổi 7 và 14). Màu xanh: xong cả giấy và web. Màu vàng: mới xong một phần.</p>
     </div>
   </div>
+  ${loginCard()}
   <div class="card">
     <h3>Tên em là gì?</h3>
     <div class="row"><input type="text" id="nameInput" maxlength="40" placeholder="Ví dụ: Minh Anh" value="${esc(S.name)}" style="max-width:320px"><button class="btn" id="saveName">Lưu tên</button></div>
-    <p class="small muted">Kết quả được lưu trên chính máy/trình duyệt em đang dùng. Hãy luôn mở trang này trên cùng một máy.</p>
+    <p class="small muted">${cloudOn()?'Kết quả được lưu trên máy này và tự gửi cho cô.':'Kết quả được lưu trên chính máy/trình duyệt em đang dùng. Hãy luôn mở trang này trên cùng một máy.'}</p>
   </div>
   <div class="card">
     <h3>Mỗi buổi em làm theo 4 bước</h3>
     <ol class="steps">
       <li><div><b>Học và làm bài trên giấy</b> (khoảng 30 phút): từ mới, ngữ pháp, cấu tạo từ, dạng bài thi chuyên, bài đọc, đoạn viết và phần ôn xoắn ốc.</div></li>
       <li><div><b>Gấp tập giấy lại, làm phần Kiểm tra trên web</b> (khoảng 10 phút). Đây là câu mới, không trùng với bài trên giấy.</div></li>
-      <li><div><b>Chữa bài giấy</b> bằng đáp án trên web, tích những câu em làm đúng.</div></li>
+      <li><div>${cloudOn()?'<b>Chụp bài giấy gửi lên</b>: máy chấm, nhận xét và gửi kết quả cho cô. Câu nào em chưa đồng ý thì nhắn cô.':'<b>Chữa bài giấy</b> bằng đáp án trên web, tích những câu em làm đúng.'}</div></li>
       <li><div><b>Tự kiểm đoạn viết</b> theo danh sách tiêu chí, rồi đọc đoạn văn mẫu.</div></li>
     </ol>
     <div class="row">${S.diag?`<button class="btn hi" id="goDay">Vào buổi ${nd}</button>`:'<button class="btn hi" id="goDiag">Làm bài kiểm tra đầu vào (25 phút)</button>'}<button class="btn ghost" id="goPlan">Xem lộ trình đến kỳ thi</button></div>
@@ -331,6 +356,7 @@ function vStart(){
   const gd=$('#goDiag');if(gd)gd.onclick=()=>go('diag');
   const gy=$('#goDay');if(gy)gy.onclick=()=>go('days',{day:nd});
   $('#goPlan').onclick=()=>go('plan');
+  wireLogin();
 }
 
 /* ----- tests (diagnostic / final) ----- */
@@ -438,7 +464,19 @@ function keyAnswer(it){
   return it.answer+(it.accept&&it.accept.length?` (chấp nhận: ${it.accept.join(', ')})`:'');
 }
 function renderPaperKey(n,unlocked){
-  const D=DAYS[n-1];const card=$('#paperCard');const rec=S.days[n]||{};
+  if(cloudOn()&&unlocked){
+    const card=$('#paperCard');
+    card.innerHTML=uploadCardHTML(n)+`<details class="selfkey" id="selfKey"><summary>Không chụp được ảnh? Tự chấm bằng đáp án</summary><p class="small muted">Nếu em mở đáp án trước khi chụp bài, cô sẽ thấy ghi chú này.</p><div id="selfKeyBody"></div></details>`;
+    wireUpload(n);
+    const det=$('#selfKey');
+    det.addEventListener('toggle',()=>{if(det.open&&!$('#selfKeyBody').dataset.on){$('#selfKeyBody').dataset.on='1';const r=S.days[n]||{};if(!r.keyOpenedAt){S.days[n]=Object.assign(r,{keyOpenedAt:Date.now()});save()}renderPaperKeyLocal(n,true,$('#selfKeyBody'))}});
+    if(!CLOUD.at)loadMy().then(()=>{if(VIEW==='days'&&CUR_DAY===n){const box=$('#upResult');const u=CLOUD.uploads.filter(x=>x.day===n).sort((a,b)=>a.ts<b.ts?1:-1)[0];if(box&&u){box.innerHTML=uploadResultHTML(u);wireResult(box)}}}).catch(()=>{});
+    return;
+  }
+  renderPaperKeyLocal(n,unlocked,$('#paperCard'));
+}
+function renderPaperKeyLocal(n,unlocked,card){
+  const D=DAYS[n-1];const rec=S.days[n]||{};
   if(!unlocked){card.innerHTML=`<h3>Bước 3 · Chữa bài giấy</h3><p class="muted">Đáp án bài giấy sẽ mở sau khi em làm xong phần Kiểm tra trên web, để em kiểm tra trí nhớ trước.</p>`;return}
   const P=D.paper;const order=Object.keys(SECTION_NAMES).filter(k=>P[k]);
   const saved=(rec.paper&&rec.paper.ticks)||{};
@@ -598,6 +636,8 @@ function vPlan(){
 
 /*__SCHOOL_JS__*/
 
+/*__CLOUD_JS__*/
+
 /* ----- share code ----- */
 async function pack(obj){
   const json=JSON.stringify(obj);
@@ -622,15 +662,16 @@ function vShare(){
   <div class="card"><div class="row"><button class="btn hi" id="mk">Tạo mã kết quả</button><button class="btn ghost" id="cp" disabled>Sao chép mã</button><span class="small muted" id="cpMsg"></span></div><div class="code" id="codeBox" hidden></div></div>
   <details class="card" id="teacher"><summary>Dành cho cô và bố mẹ: xem kết quả từ mã</summary>
    <p class="small muted">Dán mã em gửi vào ô dưới đây.</p><textarea id="codeIn" placeholder="Dán mã kết quả"></textarea><div class="row"><button class="btn" id="rd">Xem báo cáo</button><span class="small muted" id="rdMsg"></span></div><div id="report"></div></details>
-  <div class="card"><h3>Làm lại từ đầu</h3><p class="small muted">Xóa toàn bộ kết quả trên máy này. Chỉ dùng khi đổi sang một học sinh khác.</p><div class="row"><button class="btn ghost" id="rs1">Xóa kết quả</button><button class="btn" id="rs2" hidden>Chắc chắn xóa</button></div></div>
+  ${resetCardHTML()}
   </section>`;
   let code='';
   $('#mk').onclick=async()=>{code=await pack(summary());$('#codeBox').hidden=false;$('#codeBox').textContent=code;$('#cp').disabled=false};
   $('#cp').onclick=async()=>{try{await navigator.clipboard.writeText(code);$('#cpMsg').textContent='Đã sao chép.'}catch(e){const r=document.createRange();r.selectNodeContents($('#codeBox'));const s=getSelection();s.removeAllRanges();s.addRange(r);$('#cpMsg').textContent='Đã bôi đen mã, em bấm sao chép trên máy nhé.'}};
   $('#rd').onclick=async()=>{try{const o=await unpack($('#codeIn').value);$('#report').innerHTML=reportHTML(o);$('#rdMsg').textContent=''}catch(e){$('#rdMsg').textContent='Mã không đọc được. Kiểm tra em đã sao chép đủ mã chưa.'}};
-  $('#rs1').onclick=()=>{$('#rs2').hidden=false};
-  $('#rs2').onclick=()=>{S=blank();save();go('start')};
+  wireReset();
 }
+function resetCardHTML(){return `<div class="card"><h3>Làm lại từ đầu</h3><p class="small muted">Xóa toàn bộ kết quả trên máy này. Chỉ dùng khi đổi sang một học sinh khác.${cloudOn()?' Kết quả đã gửi cho cô vẫn được giữ.':''}</p><div class="row"><button class="btn ghost" id="rs1">Xóa kết quả</button><button class="btn" id="rs2" hidden>Chắc chắn xóa</button></div></div>`}
+function wireReset(){$('#rs1').onclick=()=>{$('#rs2').hidden=false};$('#rs2').onclick=()=>{S=blank();saveLocal();go('start')}}
 function reportHTML(o){
   const lv=k=>(LEVELS.find(l=>l.k===k)||{name:'—'}).name;
   const rows=Object.entries(o.days||{}).map(([d,r])=>`<tr><td>${d}</td><td>${esc(DAYS[d-1].theme_vi)}</td><td>${r[0]!=null?r[0]+'/'+r[1]:'—'}</td><td>${r[2]!=null?r[2]+'/'+r[3]:'—'}</td><td>${r[4]?new Date(r[4]).toLocaleDateString('vi-VN'):'—'}</td></tr>`).join('');
@@ -650,5 +691,6 @@ function reportHTML(o){
 
 /* ---------- boot ---------- */
 go(S.diag?(dayStatus(1)==='none'?'start':'days'):'start');
+if(cloudOn()){loadMy().catch(()=>{});if(!S.syncedAt||(S.savedAt||0)>S.syncedAt)doSync()}
 })();
 </script>
