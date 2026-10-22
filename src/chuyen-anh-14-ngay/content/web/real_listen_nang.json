@@ -1,0 +1,893 @@
+{
+ "1": {
+  "yt": "f2O6mQkFiiw",
+  "start": 30,
+  "end": 270,
+  "title": "How to practice effectively...for just about anything - Annie Bosler and Don Greene",
+  "channel": "TED-Ed",
+  "source_url": "https://ed.ted.com/lessons/how-to-practice-effectively-for-just-about-anything-annie-bosler-and-don-greene",
+  "transcript_url": "https://podcasts.happyscribe.com/ted-talks-daily/how-to-practice-effectively-a6654186-9870-45d0-ae5a-3fb0b7194865",
+  "level": "B2",
+  "topic_match_vi": "Đúng chủ đề học tập: cách luyện tập và tập trung khi học, có số liệu nghiên cứu về học sinh, sinh viên.",
+  "intro_vi": "Em sẽ nghe bài TED-Ed về cách luyện tập hiệu quả; chú ý các con số (số sinh viên, số phút tập trung) và kết quả của các nghiên cứu.",
+  "items": [
+   {
+    "type": "mcq",
+    "q": "According to the speakers, myelin is similar to...",
+    "options": [
+     "the grey matter that processes information",
+     "insulation on electrical cables",
+     "the memory stored in our muscles"
+    ],
+    "answer": 1,
+    "explain_vi": "Bài nghe: ==Myelin is similar to insulation on electrical cables== → đáp án **B**. __Grey matter và muscle memory đều được nhắc tới nhưng không phải thứ được so sánh với myelin.__"
+   },
+   {
+    "type": "gap",
+    "q": "In one study, researchers observed ______ students studying.",
+    "answer": "260",
+    "accept": [
+     "two hundred and sixty",
+     "two hundred sixty"
+    ],
+    "explain_vi": "Bài nghe: ==researchers observed 260 students studying== → điền **260**. __Chỗ trống là số thì em ghi ngay bằng chữ số khi nghe để khỏi quên.__"
+   },
+   {
+    "type": "gap",
+    "q": "On average, the students stayed on task for only ______ minutes at a time.",
+    "answer": "6",
+    "accept": [
+     "six"
+    ],
+    "explain_vi": "==able to stay on task for only six minutes at a time== → **6**. __Từ only cho thấy người nói nhấn mạnh thời gian tập trung rất ngắn.__"
+   },
+   {
+    "type": "mcq",
+    "q": "Which was the biggest cause of distraction for the students?",
+    "options": [
+     "Laptops",
+     "Smartphones",
+     "Facebook"
+    ],
+    "answer": 2,
+    "explain_vi": "==Laptops, smartphones and particularly Facebook== → từ **particularly** chỉ thứ gây xao nhãng nhất: **Facebook**. __Cả ba đều được nhắc, em phải bắt từ nhấn mạnh như particularly, especially.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What did the basketball study show?",
+    "options": [
+     "Experienced players who only practised in their heads improved almost as much as those who practised physically",
+     "Physical practice was much more effective than mental practice",
+     "Only beginners improved after mental practice"
+    ],
+    "answer": 0,
+    "explain_vi": "Nhóm A tập thật, nhóm B chỉ tập trong đầu, và ==The intermediate and experienced players in both groups had improved by nearly the same amount== → **A**. __B là điều ta hay đoán trước, nhưng bài nghe nói ngược lại.__"
+   }
+  ]
+ },
+ "2": {
+  "yt": "R0JKCYZ8hng",
+  "start": 0,
+  "end": 235,
+  "title": "How playing an instrument benefits your brain - Anita Collins",
+  "channel": "TED-Ed",
+  "source_url": "https://www.ted.com/talks/anita_collins_how_playing_an_instrument_benefits_your_brain",
+  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/905658/how-playing-an-instrument-benefits-yo-8734375/",
+  "level": "B2",
+  "topic_match_vi": "Sở thích chơi nhạc cụ và lợi ích của nó với não bộ.",
+  "intro_vi": "Em sẽ nghe bài TED-Ed giải thích vì sao chơi nhạc cụ tốt cho não; chú ý các phép so sánh và những kỹ năng não được rèn luyện.",
+  "items": [
+   {
+    "type": "gap",
+    "q": "Playing music is the brain's equivalent of a full-body ______.",
+    "answer": "workout",
+    "accept": [
+     "work-out",
+     "work out"
+    ],
+    "explain_vi": "Bài nghe: ==playing music is the brain's equivalent of a full-body workout== → **workout**. __Sau full-body cần một danh từ; nhớ cụm cố định full-body workout.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What is the most obvious difference between listening to music and playing it?",
+    "options": [
+     "Playing requires a better memory",
+     "Playing requires more attention to detail",
+     "Playing requires fine motor skills"
+    ],
+    "answer": 2,
+    "explain_vi": "==the latter requires fine motor skills== (the latter là playing) → **C**. __Memory và attention to detail xuất hiện ở đoạn sau, khi nói về lợi ích khác.__"
+   },
+   {
+    "type": "mcq",
+    "q": "More activity in the corpus callosum allows messages to...",
+    "options": [
+     "get across the brain faster and through more diverse routes",
+     "be stored with only one tag",
+     "stay in one side of the brain"
+    ],
+    "answer": 0,
+    "explain_vi": "==allowing messages to get across the brain faster and through more diverse routes== → **A**. __B sai vì bài nói mỗi ký ức được gắn nhiều tag (multiple tags).__"
+   },
+   {
+    "type": "gap",
+    "q": "Executive function includes planning, strategizing and attention to ______.",
+    "answer": "detail",
+    "accept": [
+     "details"
+    ],
+    "explain_vi": "==planning, strategizing, and attention to detail== → **detail**. __Cụm attention to detail rất hay gặp trong đề, em nên học thuộc.__"
+   },
+   {
+    "type": "mcq",
+    "q": "The speaker compares the way musicians store memories to...",
+    "options": [
+     "fireworks going off",
+     "a full-body workout",
+     "a good Internet search engine"
+    ],
+    "answer": 2,
+    "explain_vi": "Nhạc công gắn nhiều tag cho mỗi ký ức, ==like a good Internet search engine== → **C**. __Fireworks và workout cũng là phép so sánh trong bài nhưng nói về chuyện khác.__"
+   }
+  ]
+ },
+ "3": {
+  "yt": "_6xlNyWPpB8",
+  "start": 0,
+  "end": 220,
+  "title": "What really happens to the plastic you throw away - Emma Bryce",
+  "channel": "TED-Ed",
+  "source_url": "https://www.ted.com/talks/emma_bryce_what_really_happens_to_the_plastic_you_throw_away",
+  "transcript_url": "https://www.ted.com/podcasts/ted-climate-what-happens-to-the-plastic-you-throw-away-transcript",
+  "level": "B2",
+  "topic_match_vi": "Đúng chủ đề môi trường: rác thải nhựa, bãi rác, ô nhiễm đại dương và tái chế.",
+  "intro_vi": "Em sẽ nghe câu chuyện về ba chai nhựa với ba số phận khác nhau; chú ý con số, tên địa điểm và điều xảy ra với từng chai.",
+  "items": [
+   {
+    "type": "mcq",
+    "q": "Where were the plastic bottles 'conceived'?",
+    "options": [
+     "in a recycling plant",
+     "in a landfill",
+     "in an oil refinery"
+    ],
+    "answer": 2,
+    "explain_vi": "==The heroes of our story were conceived in an oil refinery== → **C**. __Recycling plant và landfill là nơi các chai kết thúc hành trình, không phải nơi bắt đầu.__"
+   },
+   {
+    "type": "gap",
+    "q": "It could take bottle number one about ______ years to decompose.",
+    "answer": "1,000",
+    "accept": [
+     "1000",
+     "a thousand",
+     "one thousand"
+    ],
+    "explain_vi": "==It could take our first bottle an agonizing 1,000 years to decompose== → **1,000**. __Gặp số lớn, em ghi ngay bằng chữ số.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What is 'leachate'?",
+    "options": [
+     "a harmful liquid formed when rainwater flows through the waste",
+     "the plastic pellets made from oil and gas",
+     "the cloudy plastic soup in the ocean"
+    ],
+    "answer": 0,
+    "explain_vi": "Nước mưa chảy qua rác và hút các chất tan trong nước, tạo thành ==a harmful stew called leachate== → **A**. __Plastic soup là hình ảnh ở đại dương (chai số hai), em đừng nhầm.__"
+   },
+   {
+    "type": "gap",
+    "q": "Bottle number two ends up in the Great Pacific Garbage ______.",
+    "answer": "Patch",
+    "accept": [
+     "patch"
+    ],
+    "explain_vi": "Bài nghe: ==the Great Pacific Garbage Patch== → **Patch**. __Đây là tên riêng nên các từ đều viết hoa.__"
+   },
+   {
+    "type": "mcq",
+    "q": "How do toxins from ocean plastic reach humans?",
+    "options": [
+     "through groundwater near landfills",
+     "through fish such as tuna, which people then eat",
+     "through seabirds that get entangled in the plastic"
+    ],
+    "answer": 1,
+    "explain_vi": "Chất độc đi ==up the food chain== tới cá ngừ (tuna), ==which are then eaten by us== → **B**. __Groundwater là chuyện ở bãi rác; seabirds bị mắc kẹt chứ không truyền độc cho người.__"
+   }
+  ]
+ },
+ "4": {
+  "yt": "t7Xr3AsBEK4",
+  "start": 10,
+  "end": 250,
+  "title": "Connected, but alone? | Sherry Turkle",
+  "channel": "TED",
+  "source_url": "https://www.ted.com/talks/sherry_turkle_alone_together",
+  "transcript_url": "https://podcasts.happyscribe.com/happy-scribe-s-favorites/connected-but-alone-sherry-turkle-2d8e081a-67d5-4cac-8384-4f99e65ef0f0",
+  "level": "B2-C1",
+  "topic_match_vi": "Công nghệ: điện thoại di động thay đổi cách con người giao tiếp và tập trung (phần mở đầu bài TED).",
+  "intro_vi": "Em sẽ nghe phần mở đầu bài TED của nhà tâm lý học Sherry Turkle về điện thoại di động; chú ý các con số, ví dụ về cách mọi người dùng điện thoại và cảm xúc của bà.",
+  "items": [
+   {
+    "type": "mcq",
+    "q": "How did the speaker feel when she got her daughter's text?",
+    "options": [
+     "It made her nervous before her talk",
+     "It reminded her of her first TED talk",
+     "It was like getting a hug"
+    ],
+    "answer": 2,
+    "explain_vi": "Con gái nhắn 'Mom, you will rock' và bà nói ==It was like getting a hug== → **C**. __TED talk đầu tiên được nhắc ngay sau đó nhưng không phải cảm xúc khi nhận tin nhắn.__"
+   },
+   {
+    "type": "gap",
+    "q": "In 1996, when she gave her first TED talk, her daughter Rebecca was ______ years old.",
+    "answer": "5",
+    "accept": [
+     "five"
+    ],
+    "explain_vi": "==1996, when I gave my first TED talk, Rebecca was five years old== → **5**. __Đừng nhầm với 20, tuổi hiện nay của con gái, được nói ở câu sau.__"
+   },
+   {
+    "type": "gap",
+    "q": "Over the past ______ years, she has studied technologies of mobile communication.",
+    "answer": "15",
+    "accept": [
+     "fifteen"
+    ],
+    "explain_vi": "==Over the past 15 years, I've studied technologies of mobile communication== → **15**. __Bài có nhiều số (1996, 5, 20, 15), em ghi từng số kèm từ khoá.__"
+   },
+   {
+    "type": "mcq",
+    "q": "According to the speaker, the little devices in our pockets...",
+    "options": [
+     "only change what we do",
+     "change not only what we do but also who we are",
+     "help us make eye contact while we text"
+    ],
+    "answer": 1,
+    "explain_vi": "==they don't only change what we do, they change who we are== → **B**. __A chỉ đúng một nửa; C là 'kỹ năng mới' bà nói với giọng mỉa mai.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What do children complain about?",
+    "options": [
+     "not having their parents' full attention",
+     "not being allowed to text during classes",
+     "not having their own phones"
+    ],
+    "answer": 0,
+    "explain_vi": "Bố mẹ nhắn tin cả lúc ăn sáng, ăn tối nên ==their children complain about not having their parents' full attention== → **A**. __B lấy từ during classes, nhưng câu đó nói về người lớn và sinh viên.__"
+   }
+  ]
+ },
+ "5": {
+  "yt": "BHY0FxzoKZE",
+  "start": 0,
+  "end": 240,
+  "title": "The Brain-Changing Benefits of Exercise | Wendy Suzuki | TED",
+  "channel": "TED",
+  "source_url": "https://www.ted.com/talks/wendy_suzuki_the_brain_changing_benefits_of_exercise",
+  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/758146/the-brain-changing-benefits-of-exerci-5841002/",
+  "level": "B2-C1",
+  "topic_match_vi": "Sức khoẻ: vận động thể chất có lợi cho não bộ (phần mở đầu bài TED).",
+  "intro_vi": "Em sẽ nghe phần mở đầu bài TED của nhà thần kinh học Wendy Suzuki về lợi ích của vận động với não; chú ý tên các vùng não và chức năng của chúng.",
+  "items": [
+   {
+    "type": "gap",
+    "q": "Exercise can protect your brain from conditions like depression, Alzheimer's disease or ______.",
+    "answer": "dementia",
+    "accept": [],
+    "explain_vi": "==like depression, Alzheimer's disease or dementia== → **dementia** (chứng sa sút trí tuệ). __Với chuỗi liệt kê A, B or C, chỗ trống thường là mục cuối sau or.__"
+   },
+   {
+    "type": "mcq",
+    "q": "Which part of the brain is right behind your forehead?",
+    "options": [
+     "the hippocampus",
+     "the prefrontal cortex",
+     "the temporal lobe"
+    ],
+    "answer": 1,
+    "explain_vi": "==The first is the prefrontal cortex, right behind your forehead== → **B**. __Hippocampus nằm trong temporal lobe; cả hai được nhắc ngay sau nên dễ gây nhiễu.__"
+   },
+   {
+    "type": "gap",
+    "q": "The prefrontal cortex is critical for decision-making, focus, attention and your ______.",
+    "answer": "personality",
+    "accept": [],
+    "explain_vi": "==decision-making, focus, attention and your personality== → **personality**. __Sau your cần danh từ; nghe kỹ từ cuối của chuỗi liệt kê.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What is the hippocampus important for?",
+    "options": [
+     "making decisions and focusing",
+     "forming and keeping new long-term memories for facts and events",
+     "recording the activity of single brain cells"
+    ],
+    "answer": 1,
+    "explain_vi": "Hippocampus giúp ==form and retain new long-term memories for facts and events== → **B**. __A là chức năng của prefrontal cortex; C là việc bà làm trong phòng thí nghiệm.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What 'very unusual' thing did she do a few years ago?",
+    "options": [
+     "She started recording individual brain cells",
+     "She became a professor of neuroscience",
+     "She completely switched her research program"
+    ],
+    "answer": 2,
+    "explain_vi": "==I did something very unusual in science== rồi ==I decided to completely switch my research program== → **C**. __A và B là việc bà đã làm từ trước, không phải điều bất thường.__"
+   }
+  ]
+ },
+ "6": {
+  "yt": "gRvmFkkNwYk",
+  "start": 0,
+  "end": 235,
+  "title": "Tackling Overtourism - Behind the News",
+  "channel": "Behind the News",
+  "source_url": "https://learnenglishteens.britishcouncil.org/study-break/video-zone/tackling-overtourism",
+  "transcript_url": "https://learnenglishteens.britishcouncil.org/study-break/video-zone/tackling-overtourism",
+  "level": "B2",
+  "topic_match_vi": "Du lịch: tác hại của du lịch quá tải và các giải pháp (thuế du khách, giới hạn khách); có hội thoại tiểu phẩm và lời phóng viên.",
+  "intro_vi": "Em sẽ nghe bản tin Behind the News (Úc) có tiểu phẩm ở đại lý du lịch về tình trạng du lịch quá tải; chú ý tên địa danh, con số và các giải pháp được nêu.",
+  "items": [
+   {
+    "type": "gap",
+    "q": "Tourists have damaged famous sites, from the pyramids of Ancient Egypt to Angkor Wat in ______.",
+    "answer": "Cambodia",
+    "accept": [
+     "cambodia"
+    ],
+    "explain_vi": "==From the pyramids of Ancient Egypt to Angkor Wat in Cambodia== → **Cambodia**. __Tên nước viết hoa chữ cái đầu; Angkor Wat ở ngay cạnh Việt Nam.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What does the real estate agent say about the rentals?",
+    "options": [
+     "Most of them are cheap for local workers",
+     "They are only open to tourists in summer",
+     "More than half of them are holiday rentals"
+    ],
+    "answer": 2,
+    "explain_vi": "==More than half of the rentals are holiday rentals== → **C**. __Ngay sau đó bài nói người dân khó thuê nhà, nên A sai.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What problem does overtourism cause for local people in places like Majorca?",
+    "options": [
+     "They have to pay a tourist tax",
+     "It has become really hard for them to buy or rent a house",
+     "Their traditional festivals have been banned"
+    ],
+    "answer": 1,
+    "explain_vi": "==it's become really hard for locals to buy a house or rent== → **B**. __Tourist tax do du khách trả, không phải người dân địa phương.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What is a 'tourist tax'?",
+    "options": [
+     "a small fee paid by travellers when they visit certain holiday destinations",
+     "a limit on the number of visitors to famous sites",
+     "a fine for tourists who damage monuments"
+    ],
+    "answer": 0,
+    "explain_vi": "==a small fee paid by travellers when they visit certain holiday destinations== → **A**. __B cũng là một giải pháp trong bài, nhưng đó là giới hạn số khách chứ không phải thuế.__"
+   },
+   {
+    "type": "gap",
+    "q": "Visitors to Bali will have to pay $______.",
+    "answer": "15",
+    "accept": [
+     "fifteen"
+    ],
+    "explain_vi": "==visitors to Bali will have to pay $15== → **15**. __Chú ý ký hiệu tiền và con số đi ngay sau tên địa danh.__"
+   }
+  ]
+ },
+ "7": {
+  "yt": "MMmOLN5zBLY",
+  "start": 0,
+  "end": 240,
+  "title": "The benefits of a bilingual brain - Mia Nacamulli",
+  "channel": "TED-Ed",
+  "source_url": "https://www.ted.com/talks/mia_nacamulli_the_benefits_of_a_bilingual_brain",
+  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/807611/the-benefits-of-a-bilingual-brain-mia-6326576/",
+  "level": "B2",
+  "topic_match_vi": "Ôn buổi 1 (học tập): học ngoại ngữ và lợi ích của việc biết hai ngôn ngữ, rất gần với học sinh ôn chuyên Anh.",
+  "intro_vi": "Em sẽ nghe bài TED-Ed về lợi ích của bộ não song ngữ; chú ý ba kiểu người song ngữ trong gia đình Gabriella và những thay đổi trong não.",
+  "items": [
+   {
+    "type": "gap",
+    "q": "Gabriella's family moves to the US from Peru when she is ______ years old.",
+    "answer": "2",
+    "accept": [
+     "two"
+    ],
+    "explain_vi": "==from Peru when she's two-years old== → **2**. __Peru là thông tin gây nhiễu; câu hỏi chỉ cần tuổi.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What type of bilingual is Gabriella's teenage brother likely to be?",
+    "options": [
+     "a compound bilingual",
+     "a coordinate bilingual",
+     "a subordinate bilingual"
+    ],
+    "answer": 1,
+    "explain_vi": "==Her teenage brother, on the other hand, might be a coordinate bilingual== → **B**. __Compound là Gabriella, subordinate là bố mẹ: em ghi tên người kèm kiểu song ngữ.__"
+   },
+   {
+    "type": "gap",
+    "q": "Brain imaging shows that the brain's left ______ is more dominant.",
+    "answer": "hemisphere",
+    "accept": [],
+    "explain_vi": "==the brain's left hemisphere is more dominant== → **hemisphere** (bán cầu não). __Khi nói về não, sau left hoặc right thường là hemisphere.__"
+   },
+   {
+    "type": "mcq",
+    "q": "Which benefit of being bilingual is mentioned?",
+    "options": [
+     "It can help delay diseases like Alzheimer's and dementia",
+     "It always makes people smarter",
+     "It removes all emotional bias in adults"
+    ],
+    "answer": 0,
+    "explain_vi": "==can also help delay the onset of diseases, like Alzheimer's and dementia== → **A**. __Cẩn thận với từ tuyệt đối như always, all: bài chỉ nói less emotional bias.__"
+   },
+   {
+    "type": "mcq",
+    "q": "How was bilingualism seen before the 1960s?",
+    "options": [
+     "as a sign of intelligence",
+     "as normal for most children",
+     "as a handicap"
+    ],
+    "answer": 2,
+    "explain_vi": "==Before the 1960s, bilingualism was considered a handicap== → **C**. __Mốc thời gian 1960s cho biết đây là quan điểm cũ, ngày nay đã khác.__"
+   }
+  ]
+ },
+ "8": {
+  "yt": "cSKGa_7XJkg",
+  "start": 0,
+  "end": 225,
+  "title": "How false news can spread - Noah Tavlin",
+  "channel": "TED-Ed",
+  "source_url": "https://milunesco.unaoc.org/mil-resources/how-false-news-can-spread",
+  "transcript_url": "https://www.lingq.com/tr/online-ingilizce-%C3%B6%C4%9Fren/courses/561494/how-false-news-can-spread-noah-tavlin-3476936/",
+  "level": "B2",
+  "topic_match_vi": "Đúng chủ đề truyền thông: tin giả lan truyền qua báo chí, wiki và mạng; lời khuyên kiểm tra nguồn tin.",
+  "intro_vi": "Em sẽ nghe bài TED-Ed về cách tin giả lan truyền qua hiện tượng 'circular reporting'; chú ý các ví dụ, năm và con số trong bài.",
+  "items": [
+   {
+    "type": "mcq",
+    "q": "What does the speaker say about the quote 'A lie can travel halfway around the world...'?",
+    "options": [
+     "It was first printed by Reuters",
+     "It comes from a joke article in a medical journal",
+     "Mark Twain may never have said it"
+    ],
+    "answer": 2,
+    "explain_vi": "==There's reason to doubt that Mark Twain ever said this at all== → **C**. __Reuters và tạp chí y khoa có trong bài nhưng thuộc các ví dụ khác.__"
+   },
+   {
+    "type": "mcq",
+    "q": "In circular reporting, what does publication A do after publication B reprints its false story?",
+    "options": [
+     "It cites publication B as the source",
+     "It checks the facts with publication B",
+     "It removes the story"
+    ],
+    "answer": 0,
+    "explain_vi": "==publication A then cites B as the source== → **A**. __Hãy hình dung vòng tròn: A dẫn B, B lại lấy từ A, nên tin sai trông như đã được kiểm chứng.__"
+   },
+   {
+    "type": "gap",
+    "q": "A single pseudoscientific paper published in ______ started an anti-vaccination movement.",
+    "answer": "1998",
+    "accept": [],
+    "explain_vi": "==the 1998 publication of a single pseudoscientific paper== → **1998**. __Năm thường được đọc là nineteen ninety-eight; em viết bằng chữ số.__"
+   },
+   {
+    "type": "gap",
+    "q": "The joke article has been referenced in serious science publications over ______ times.",
+    "answer": "400",
+    "accept": [
+     "four hundred"
+    ],
+    "explain_vi": "==referenced in serious science publications over 400 times== → **400**. __Over nghĩa là hơn, nhưng chỗ trống chỉ cần con số.__"
+   },
+   {
+    "type": "mcq",
+    "q": "Which piece of advice does the speaker give?",
+    "options": [
+     "Trust a fact if many websites repeat it",
+     "Use wiki pages for quick information",
+     "Trace the original source of a report"
+    ],
+    "answer": 2,
+    "explain_vi": "Lời khuyên cuối bài có ==tracing the original source of a report== → **C**. __A và B chính là nguyên nhân gây ra circular reporting được nói trong bài.__"
+   }
+  ]
+ },
+ "9": {
+  "yt": "LaLvVc1sS20",
+  "start": 0,
+  "end": 185,
+  "title": "The history of tea - Shunan Teng",
+  "channel": "TED-Ed",
+  "source_url": "https://www.ted.com/talks/shunan_teng_the_history_of_tea",
+  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/289211/the-history-of-tea-shunan-teng-1085597/",
+  "level": "B2",
+  "topic_match_vi": "Ẩm thực và văn hoá: lịch sử trà và văn hoá uống trà ở Trung Quốc, Nhật Bản, châu Âu.",
+  "intro_vi": "Em sẽ nghe bài TED-Ed về lịch sử của trà từ Trung Quốc tới Nhật Bản và châu Âu; chú ý các năm, con số, tên người và tên nước.",
+  "items": [
+   {
+    "type": "gap",
+    "q": "According to legend, Shennong accidentally poisoned himself ______ times.",
+    "answer": "72",
+    "accept": [
+     "seventy-two",
+     "seventy two"
+    ],
+    "explain_vi": "==the weary divine farmer Shennong accidentally poisoned himself 72 times== → **72**. __Seventy-two dễ nghe nhầm với seventeen, em chú ý âm cuối.__"
+   },
+   {
+    "type": "mcq",
+    "q": "According to archaeological evidence, when was tea first cultivated?",
+    "options": [
+     "as early as 6,000 years ago",
+     "about 1,500 years ago",
+     "in the 9th century"
+    ],
+    "answer": 0,
+    "explain_vi": "==tea was first cultivated there as early as 6,000 years ago== → **A**. __1,500 năm trước là lúc trà thành đồ uống; thế kỷ 9 là khi trà sang Nhật.__"
+   },
+   {
+    "type": "mcq",
+    "q": "Who brought the first tea plant to Japan?",
+    "options": [
+     "Dutch traders",
+     "a Japanese monk",
+     "Queen Catherine of Braganza"
+    ],
+    "answer": 1,
+    "explain_vi": "==a Japanese monk brought the first tea plant to Japan== → **B**. __Thương nhân Hà Lan đưa trà sang châu Âu, còn Catherine là quý tộc Bồ Đào Nha lấy vua Anh.__"
+   },
+   {
+    "type": "gap",
+    "q": "Tea was one of three essential Chinese export goods, along with porcelain and ______.",
+    "answer": "silk",
+    "accept": [],
+    "explain_vi": "==three essential Chinese export goods, along with porcelain and silk== → **silk**. __Trong chuỗi liệt kê, từ cần điền thường nằm ngay sau and.__"
+   },
+   {
+    "type": "gap",
+    "q": "By 1700, tea in Europe sold for ______ times the price of coffee.",
+    "answer": "10",
+    "accept": [
+     "ten"
+    ],
+    "explain_vi": "==By 1700, tea in Europe sold for ten times the price of coffee== → **10**. __Đừng nhầm với các năm 1700, 1661 xuất hiện gần đó.__"
+   }
+  ]
+ },
+ "10": {
+  "yt": "rrkrvAUbU9Y",
+  "start": 85,
+  "end": 260,
+  "title": "The puzzle of motivation | Dan Pink | TED",
+  "channel": "TED",
+  "source_url": "https://www.youtube.com/watch?v=rrkrvAUbU9Y",
+  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/110040/dan-pink-the-puzzle-of-motivation-288977/",
+  "level": "B2-C1",
+  "topic_match_vi": "Công việc: động lực và tiền thưởng trong công việc, qua 'bài toán cây nến' và một thí nghiệm nổi tiếng.",
+  "intro_vi": "Em sẽ nghe Dan Pink kể về 'bài toán cây nến' và một thí nghiệm về tiền thưởng; chú ý năm, cách giải bài toán và kết quả bất ngờ.",
+  "items": [
+   {
+    "type": "gap",
+    "q": "The candle problem was created in ______ by Karl Duncker.",
+    "answer": "1945",
+    "accept": [],
+    "explain_vi": "Bài nghe: ==created in 1945== bởi Karl Duncker → **1945**. __Năm thường được nói ngay trước tên người, em ghi lại ngay.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What does the speaker say about melting the side of the candle and sticking it to the wall?",
+    "options": [
+     "It is the solution most people find after 5 to 10 minutes",
+     "It is an awesome idea, but it doesn't work",
+     "It only works if you use the thumbtacks too"
+    ],
+    "answer": 1,
+    "explain_vi": "Người nói nhận xét ==It's an awesome idea. Doesn't work.== → **B**. __A là câu ngay sau đó, nói về lời giải thật: dùng chiếc hộp đựng đinh.__"
+   },
+   {
+    "type": "gap",
+    "q": "The solution is to see the box not only as a container for the tacks but also as a ______ for the candle.",
+    "answer": "platform",
+    "accept": [],
+    "explain_vi": "==as a platform for the candle== → **platform**. __Vượt qua functional fixedness nghĩa là nhìn đồ vật với một chức năng mới.__"
+   },
+   {
+    "type": "mcq",
+    "q": "Glucksberg told the first group he was timing them in order to...",
+    "options": [
+     "decide who would win 20 dollars",
+     "find the fastest person in the room",
+     "establish norms for how long the problem usually takes"
+    ],
+    "answer": 2,
+    "explain_vi": "Với nhóm thứ nhất: ==I'm going to time you to establish norms== → **C**. __A và B là lời hứa thưởng dành cho nhóm thứ hai.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What was the result for the group that was offered money?",
+    "options": [
+     "They solved the problem three and a half minutes faster",
+     "They took, on average, three and a half minutes longer",
+     "They solved it in the same time as the other group"
+    ],
+    "answer": 1,
+    "explain_vi": "==It took them, on average, three and a half minutes longer== → **B**. __Kết quả ngược với điều ta đoán; nghe rõ longer chứ không phải faster.__"
+   }
+  ]
+ },
+ "11": {
+  "yt": "c0KYU2j0TM4",
+  "start": 0,
+  "end": 215,
+  "title": "The power of introverts | Susan Cain | TED",
+  "channel": "TED",
+  "source_url": "https://www.youtube.com/watch?v=c0KYU2j0TM4",
+  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/58847/susan-cain-the-power-of-introverts-226855/",
+  "level": "B2",
+  "topic_match_vi": "Con người và các mối quan hệ: tính cách hướng nội, áp lực phải hoà đồng với bạn bè (câu chuyện trại hè ở đầu bài TED).",
+  "intro_vi": "Em sẽ nghe Susan Cain kể chuyện lần đầu đi trại hè khi còn nhỏ; chú ý điều cô tưởng tượng, điều thực sự xảy ra và lời khuyên của người phụ trách trại.",
+  "items": [
+   {
+    "type": "gap",
+    "q": "She went to summer camp for the first time when she was ______ years old.",
+    "answer": "9",
+    "accept": [
+     "nine"
+    ],
+    "explain_vi": "==When I was nine years old I went off to summer camp for the first time== → **9**. __Câu đầu của bài thường chứa đáp án câu đầu tiên, em tập trung ngay từ đầu.__"
+   },
+   {
+    "type": "mcq",
+    "q": "Before camp, what did she imagine it would be like?",
+    "options": [
+     "girls sitting together in a cabin, reading books",
+     "a noisy party with a cheer every day",
+     "a place where everyone learns to be outgoing"
+    ],
+    "answer": 0,
+    "explain_vi": "==I had a vision of 10 girls sitting in a cabin cozily reading books== → **A**. __B là trại hè trong thực tế, không phải điều cô tưởng tượng.__"
+   },
+   {
+    "type": "gap",
+    "q": "The coolest girl in the bunk asked her: 'Why are you being so ______?'",
+    "answer": "mellow",
+    "accept": [],
+    "explain_vi": "==Why are you being so mellow?== → **mellow** (trầm lặng), trái nghĩa với rowdy. __Người nói giải thích nghĩa ngay sau đó, em nghe tiếp để chắc chắn.__"
+   },
+   {
+    "type": "mcq",
+    "q": "The counselor said they should all work very hard to be...",
+    "options": [
+     "rowdy",
+     "outgoing",
+     "mellow"
+    ],
+    "answer": 1,
+    "explain_vi": "Người phụ trách ==said we should all work very hard to be outgoing== → **B**. __Rowdy có trong bài cổ vũ, mellow là lời cô bạn: cả ba từ đều xuất hiện nên phải nghe đúng người nói.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What did she do with her books?",
+    "options": [
+     "She read them every evening after the cheer",
+     "She gave them to the coolest girl in the bunk",
+     "She put them in their suitcase under her bed for the rest of the summer"
+    ],
+    "answer": 2,
+    "explain_vi": "==I put them under my bed, and there they stayed for the rest of the summer== → **C**. __Cô còn nói mình thấy có lỗi (guilty) với những cuốn sách.__"
+   }
+  ]
+ },
+ "12": {
+  "yt": "XPDVmBg5DeE",
+  "start": 0,
+  "end": 235,
+  "title": "How does laser eye surgery work? - Dan Reinstein",
+  "channel": "TED-Ed",
+  "source_url": "https://www.ted.com/talks/dan_reinstein_how_does_laser_eye_surgery_work",
+  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/561494/how-does-laser-eye-surgery-work-dan-r-3389935/",
+  "level": "B2-C1",
+  "topic_match_vi": "Khoa học và phát minh: lịch sử và nguyên lý của phát minh phẫu thuật mắt bằng laser.",
+  "intro_vi": "Em sẽ nghe bài TED-Ed về phát minh phẫu thuật mắt bằng laser; chú ý năm, tên các tật khúc xạ và cách tia laser hoạt động.",
+  "items": [
+   {
+    "type": "gap",
+    "q": "In ______, a Spanish eye doctor, Jose Ignacio Barraquer Moner, was fed up with glasses.",
+    "answer": "1948",
+    "accept": [],
+    "explain_vi": "==In 1948, Spanish ophthalmologist Jose Ignacio Barraquer Moner was fed up with glasses== → **1948**. __Câu mở đầu có năm và tên người; em ghi năm trước.__"
+   },
+   {
+    "type": "mcq",
+    "q": "In people with myopia (short-sightedness), a steep cornea focuses light...",
+    "options": [
+     "just short of the retina",
+     "too far beyond the retina",
+     "with two different curvatures"
+    ],
+    "answer": 0,
+    "explain_vi": "==a steep cornea focuses light just short of the retina== → **A**. __B là viễn thị (hyperopia), C là loạn thị (astigmatism): ba tật được nói liền nhau.__"
+   },
+   {
+    "type": "gap",
+    "q": "By an adult's mid-______, the lens is too large to focus well (presbyopia).",
+    "answer": "40s",
+    "accept": [
+     "40's",
+     "forties",
+     "40"
+    ],
+    "explain_vi": "==By an adult's mid-40's, the lens is too large== → **40s**. __Mid-40s nghĩa là khoảng giữa tuổi 40; đây là tật lão thị.__"
+   },
+   {
+    "type": "mcq",
+    "q": "How accurate are excimer lasers?",
+    "options": [
+     "accurate enough to replace glasses in one minute",
+     "accurate enough to make the lens smaller",
+     "accurate enough to etch words into a human hair"
+    ],
+    "answer": 2,
+    "explain_vi": "==These tools are accurate enough to etch words into a human hair== → **C**. __Câu so sánh bằng hình ảnh như vậy rất hay được hỏi trong đề.__"
+   },
+   {
+    "type": "gap",
+    "q": "This process usually takes less than ______ seconds for each eye.",
+    "answer": "30",
+    "accept": [
+     "thirty"
+    ],
+    "explain_vi": "==This process usually takes less than 30 seconds for each eye== → **30**. __Chú ý đơn vị seconds và cụm for each eye.__"
+   }
+  ]
+ },
+ "13": {
+  "yt": "r9LCwI5iErE",
+  "start": 0,
+  "end": 215,
+  "title": "The transformative power of classical music | Benjamin Zander | TED",
+  "channel": "TED",
+  "source_url": "https://www.ted.com/talks/benjamin_zander_the_transformative_power_of_classical_music",
+  "transcript_url": "https://www.benjaminzander.org/uploads/2020/07/TED_-The-transformative-power-of-classical-music-Transcript.pdf",
+  "level": "B2",
+  "topic_match_vi": "Nghệ thuật: nhạc trưởng nói về nhạc cổ điển và minh hoạ bằng đàn piano cách một cậu bé tiến bộ khi học đàn.",
+  "intro_vi": "Em sẽ nghe nhạc trưởng Benjamin Zander kể chuyện hai người bán giày rồi chơi piano minh hoạ một cậu bé học đàn qua từng năm; chú ý chi tiết câu chuyện và điều thực sự thay đổi.",
+  "items": [
+   {
+    "type": "gap",
+    "q": "The two salesmen went to Africa to find out if there was any opportunity for selling ______.",
+    "answer": "shoes",
+    "accept": [],
+    "explain_vi": "==any opportunity for selling shoes== → **shoes**. __Từ shoes lặp lại trong cả hai bức điện, em có thể kiểm tra lại.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What did the second salesman write?",
+    "options": [
+     "Situation hopeless. They don't wear shoes.",
+     "Glorious opportunity. They don't have any shoes yet.",
+     "Send more shoes to Manchester."
+    ],
+    "answer": 1,
+    "explain_vi": "Người thứ hai viết ==Glorious opportunity. They don't have any shoes yet.== → **B**. __A là bức điện của người thứ nhất; nghe thứ tự one of them và the other one.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What usually happens when the child is ten?",
+    "options": [
+     "He gets a new teacher",
+     "He usually gives up",
+     "He becomes passionate about music"
+    ],
+    "answer": 1,
+    "explain_vi": "==At that point, they usually give up.== → **B**. __A và C là những lý do Zander nêu ra rồi bác bỏ khi nói về cậu bé 11 tuổi.__"
+   },
+   {
+    "type": "gap",
+    "q": "The nine-year-old put an impulse on every ______ notes.",
+    "answer": "4",
+    "accept": [
+     "four"
+    ],
+    "explain_vi": "==The nine-year-old put an impulse on every four notes.== → **4**. __Dãy số tăng dần (1, 2, 4, 8 nốt): em ghi bảng nhỏ tuổi kèm số.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What really changed when the boy was eleven?",
+    "options": [
+     "He got a new teacher",
+     "He became passionate and engaged",
+     "He put just one impulse on the whole phrase"
+    ],
+    "answer": 2,
+    "explain_vi": "==What actually happened was the impulses were reduced== và ==one impulse on the whole phrase== → **C**. __Từ actually báo hiệu thông tin thật, gạt bỏ các giả định trước đó.__"
+   }
+  ]
+ },
+ "14": {
+  "yt": "3NE_OoO-N54",
+  "start": 0,
+  "end": 235,
+  "title": "Earworms: Those songs that get stuck in your head - Elizabeth Hellmuth Margulis",
+  "channel": "TED-Ed",
+  "source_url": "https://www.ted.com/talks/elizabeth_margulis_earworms_those_songs_that_get_stuck_in_your_head",
+  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/561494/earworms-those-songs-that-get-stuck-i-3389992/",
+  "level": "B2",
+  "topic_match_vi": "Ôn buổi 12–13: khoa học về âm nhạc (bài hát cứ lặp lại trong đầu), có nhắc tới công nghệ ghi âm và phát minh máy hát.",
+  "intro_vi": "Em sẽ nghe bài TED-Ed về 'earworm', những giai điệu cứ lặp lại trong đầu; chú ý số liệu, nguyên nhân và phép so sánh của người nói.",
+  "items": [
+   {
+    "type": "gap",
+    "q": "Over ______% of people get earworms at least once a week.",
+    "answer": "90",
+    "accept": [
+     "ninety"
+    ],
+    "explain_vi": "==Over 90% of people are plagued by earworms at least once a week== → **90**. __Có hai số liệu liền nhau, em ghi kèm từ khoá once a week và several times a day.__"
+   },
+   {
+    "type": "mcq",
+    "q": "How many people experience earworms several times a day?",
+    "options": [
+     "about a quarter",
+     "over 90%",
+     "about half"
+    ],
+    "answer": 0,
+    "explain_vi": "==about a quarter of people experience them several times a day== → **A**. __90% là số người gặp ít nhất mỗi tuần một lần, không phải nhiều lần mỗi ngày.__"
+   },
+   {
+    "type": "gap",
+    "q": "Songs tend to get stuck when we listen to them recently and ______.",
+    "answer": "repeatedly",
+    "accept": [],
+    "explain_vi": "==Songs tend to get stuck when we listen to them recently and repeatedly== → **repeatedly**. __And nối với recently, nên chỗ trống cũng là trạng từ đuôi ly.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What does the example from 1876 suggest?",
+    "options": [
+     "Earworms were first caused by the phonograph",
+     "Earworms are a basic psychological phenomenon, not just a result of modern technology",
+     "Only great historical figures had earworms"
+    ],
+    "answer": 1,
+    "explain_vi": "Năm 1876 còn trước khi có máy hát, nên ==earworms seem to be a basic psychological phenomenon== → **B**. __Câu hỏi về ví dụ thường hỏi người nói muốn chứng minh điều gì.__"
+   },
+   {
+    "type": "mcq",
+    "q": "The speaker says a tune is sort of like...",
+    "options": [
+     "a watercolor",
+     "a habit",
+     "a recording"
+    ],
+    "answer": 1,
+    "explain_vi": "==In this way, a tune is sort of like a habit.== → **B**. __Watercolors chỉ xuất hiện trong câu hỏi tu từ, không phải phép so sánh với giai điệu.__"
+   }
+  ]
+ }
+}
