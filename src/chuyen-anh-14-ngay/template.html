@@ -856,7 +856,7 @@ const MOTTOS=[
  ['boss','Kỳ thi còn xa? Chính vì thế hôm nay chỉ cần 40 phút.'],
  ['dino','Cô không cần em hoàn hảo. Cô cần em quay lại vào ngày mai.']];
 let MOTTO_I=Math.floor(Date.now()/864e5)%MOTTOS.length;
-function mottoHTML(){return `<img src="${PEEP('boss')}" alt="" class="mt-peep"><div class="mt-body"><p class="mt-t">Thử 14 ngày để xác định khả năng theo lộ trình chuyên ngữ</p></div>`}
+function mottoHTML(){return `<img src="${PEEP('sus')}" alt="" class="mt-peep"><div class="mt-body"><p class="mt-t">Thử 14 ngày để xác định khả năng theo lộ trình chuyên ngữ</p></div>`}
 function wireMotto(){const b=$('#mtNext');if(b)b.onclick=()=>{MOTTO_I=(MOTTO_I+1)%MOTTOS.length;const box=$('#motto');box.innerHTML=mottoHTML();box.classList.remove('flip');void box.offsetWidth;box.classList.add('flip');wireMotto()}}
 function dashHTML(nd){
   const D=DAYS[nd-1];const qs=questState(nd);const noDiag=!S.diag;let steps=Q_STEPS.filter(s=>qs[s.k]);
