@@ -503,6 +503,22 @@ nav.tabs button[aria-selected="true"] .dd .dd-f.dd-t{fill:#FFD23F}
 .dh-ic{filter:none;color:var(--ink)}
 .stat .si{color:var(--ink)}
 @media (max-width:520px){.days{gap:10px 6px}.day .di{width:26px;height:26px}.day b{font-size:1.1rem}}
+
+/* châm ngôn + chú thích vẽ tay */
+.dash{grid-template-areas:"head head" "motto motto" "quest side" "path more"}
+.motto{grid-area:motto;position:relative;display:flex;align-items:center;gap:14px;background:#FFF3B0;color:#14303A;border-radius:4px;padding:12px 56px 12px 112px;min-height:96px;transform:rotate(-.8deg);box-shadow:4px 6px 0 rgba(10,40,48,.22);max-width:760px}
+.motto::after{content:"";position:absolute;top:-10px;right:60px;width:80px;height:22px;background:rgba(158,214,226,.85);transform:rotate(5deg)}
+.mt-peep{position:absolute;left:4px;bottom:-6px;height:118px;filter:var(--stk);transform:rotate(-4deg)}
+.mt-k{font-family:var(--f-hand);font-size:1rem;color:#4A5F66;margin:0;line-height:1}
+.mt-t{font-family:var(--f-display);font-weight:700;font-size:1.22rem;line-height:1.3;margin:2px 0 0}
+.mt-next{all:unset;cursor:pointer;position:absolute;right:12px;top:50%;margin-top:-20px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#14303A;background:#fff;box-shadow:0 3px 0 rgba(10,40,48,.2)}
+.mt-next:hover{transform:rotate(-30deg)}
+.mt-next:focus-visible{outline:3px solid var(--agent);outline-offset:2px}
+@media (prefers-reduced-motion:no-preference){.motto.flip{animation:flip .45s ease-out}.mt-next{transition:transform .25s}}
+@keyframes flip{0%{transform:rotate(-.8deg) scaleY(.2);opacity:.2}100%{transform:rotate(-.8deg) scaleY(1);opacity:1}}
+.qt .callout{position:absolute;right:8px;top:6px;font-family:var(--f-hand);font-size:1.15rem;color:#14303A;display:flex;flex-direction:column;align-items:flex-end;line-height:1;transform:rotate(6deg);z-index:1;pointer-events:none}
+.qt .callout svg{width:44px;height:28px;transform:scaleX(-1) rotate(10deg);margin-top:-2px}
+@media (max-width:860px){.dash{grid-template-areas:"head" "motto" "quest" "side" "path" "more"}.motto{padding:12px 54px 12px 96px;min-height:92px}.mt-peep{height:104px}.mt-t{font-size:1.05rem}}
 @media (max-width:420px){.paper{padding:18px 14px}.qt .lbl{font-size:1.12rem}.pdots{gap:8px 5px}.ask{width:124px;height:124px}.ask img{height:118px;left:12px}}
 </style>
 
@@ -719,11 +735,33 @@ function streakDays(){const ds=new Set();const add=t=>{if(t)ds.add(new Date(t).t
 function starsTotal(){return Object.values(S.days).reduce((t,r)=>t+Object.values((r&&r.games)||{}).reduce((a,y)=>a+(y.stars||0),0),0)}
 const STAR_P='m12 3 2.7 5.6 6.1.8-4.4 4.3 1 6.1L12 17l-5.4 2.8 1-6.1-4.4-4.3 6.1-.8Z';
 const starSVG=(on,i)=>`<svg viewBox="0 0 24 24" class="${on?'on':''}" style="animation-delay:${i*.08}s" aria-hidden="true"><path d="${STAR_P}" fill="${on?'#FFD23F':'none'}" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>`;
+
+/* châm ngôn kiểu teen: hài hước nhưng đúng, đổi mỗi ngày, bấm để đổi câu khác */
+const MOTTOS=[
+ ['sleepy','40 phút mỗi ngày thôi. Ngủ nướng để dành cuối tuần.'],
+ ['chaos','Nghe lần 1 để hoảng. Nghe lần 2 để làm. Bình thường mà.'],
+ ['sus','Chọn C vì "cảm thấy đúng"? Đọc lại giải thích đi, chỗ gạch chân là mẹo đấy.'],
+ ['dino','Chuỗi 3 ngày: khởi động. 7 ngày: thói quen. 14 ngày: huyền thoại.'],
+ ['boss','Chuyên Anh không chọn người giỏi nhất. Nó chọn người không bỏ giữa chừng.'],
+ ['wow','Mỗi ngôi sao trong game = một nơ-ron vừa đi tập gym.'],
+ ['sus','Câu sai sẽ quay lại sau 1, 3 và 6 buổi. Vòng xoắn này thù dai lắm.'],
+ ['chaos','Present perfect: việc đã xong, hậu quả vẫn còn. Giống bài tập em quên làm hôm qua.'],
+ ['sleepy','Học xong rồi lướt mạng. Đừng lướt mạng xong rồi... mới học.'],
+ ['dino','Từ mới giống trà sữa: ngày một ly là nghiện.'],
+ ['boss','Không ai giỏi tiếng Anh từ buổi 1. Kể cả cô.'],
+ ['wow','Đọc to một câu tiếng Anh. Con mèo nhà em sẽ nể em hơn.'],
+ ['sus','"Gần đúng" trong đề chuyên nghĩa là sai. Soi kỹ đuôi -s, -ed nhé.'],
+ ['chaos','Làm bài giấy bằng bút chì: sai thì tẩy, đừng xé vở.'],
+ ['boss','Kỳ thi còn xa? Chính vì thế hôm nay chỉ cần 40 phút.'],
+ ['dino','Cô không cần em hoàn hảo. Cô cần em quay lại vào ngày mai.']];
+let MOTTO_I=Math.floor(Date.now()/864e5)%MOTTOS.length;
+function mottoHTML(){const [pp,t]=MOTTOS[MOTTO_I];return `<img src="${PEEP(pp)}" alt="" class="mt-peep"><div class="mt-body"><p class="mt-k">châm ngôn hôm nay</p><p class="mt-t">${esc(t)}</p></div><button type="button" class="mt-next" id="mtNext" aria-label="Đổi châm ngôn khác"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.5-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.5 4.5L20 16M20 20v-4h-4"/></svg></button>`}
+function wireMotto(){const b=$('#mtNext');if(b)b.onclick=()=>{MOTTO_I=(MOTTO_I+1)%MOTTOS.length;const box=$('#motto');box.innerHTML=mottoHTML();box.classList.remove('flip');void box.offsetWidth;box.classList.add('flip');wireMotto()}}
 function dashHTML(nd){
   const D=DAYS[nd-1];const qs=questState(nd);const steps=Q_STEPS.filter(s=>qs[s.k]);const doneN=steps.filter(s=>qs[s.k].done).length;
   const first=steps.find(s=>!qs[s.k].done);const rot=[-1.2,.8,-.6,1,-1,.6];
   const tiles=steps.map((s,i)=>{const st=qs[s.k];const now=first===s;
-    const tag=st.done?'<span class="st">XONG</span>':now?'<span class="st go">LÀM TIẾP</span>':st.part?`<span class="st go">${st.txt}</span>`:'';
+    const tag=st.done?'<span class="st">XONG</span>':now?'<span class="st go">LÀM TIẾP</span><span class="callout" aria-hidden="true">đây nè!<svg viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 8c14-2 30 4 38 22"/><path d="M36 28l8 3 2-9"/></svg></span>':st.part?`<span class="st go">${st.txt}</span>`:'';
     return `<button type="button" class="qt${now?' now':''}${st.done?' done':''}" data-card="${s.card}" style="--c:${s.c};--r:${rot[i]}deg"><img src="${PEEP(s.peep)}" alt="" loading="lazy" decoding="async">${tag}<span class="lbl">${i+1} · ${s.label}${st.txt&&!st.done?` <small>${st.txt}</small>`:''}</span></button>`}).join('');
   const sk=streakDays(),stars=starsTotal(),left=Math.max(0,Math.ceil((MILESTONES[2].date-Date.now())/864e5));
   const L=S.diag&&LEVELS.find(l=>l.k===S.diag.level),t=curTrack();
@@ -735,6 +773,7 @@ function dashHTML(nd){
     <span class="chip y"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="${STAR_P}" fill="#fff" stroke="#3D2E00" stroke-width="1.8" stroke-linejoin="round"/></svg>${stars} sao từ game</span>
     <span class="chip">Thi vào 10: còn ${left} ngày</span>
   </div>
+  <div class="motto" id="motto" aria-live="polite">${mottoHTML()}</div>
   <section class="paper tape quest" aria-labelledby="qTitle">
     <div class="q-head"><h2 id="qTitle">Nhiệm vụ hôm nay</h2><span class="q-sub">Buổi ${nd} · ${esc(D.theme_vi)}</span>
       <span class="q-stars" role="img" aria-label="Đã xong ${doneN} trên ${steps.length} bước">${steps.map((s,i)=>starSVG(i<doneN,i)).join('')}</span></div>
@@ -756,7 +795,7 @@ function dashHTML(nd){
 function wireDash(nd){
   M().querySelectorAll('.qt').forEach(b=>b.onclick=()=>{const id=b.dataset.card;go('days',{day:nd});setTimeout(()=>{const c=document.getElementById(id);if(c)c.scrollIntoView({behavior:'smooth',block:'start'})},80)});
   M().querySelectorAll('.pd').forEach(b=>b.onclick=()=>go('days',{day:+b.dataset.d}));
-  $('#dashGo').onclick=()=>go('days',{day:nd});$('#dashProg').onclick=()=>go('progress');$('#dashAsk').onclick=()=>go('share');
+  $('#dashGo').onclick=()=>go('days',{day:nd});wireMotto();$('#dashProg').onclick=()=>go('progress');$('#dashAsk').onclick=()=>go('share');
 }
 function vStart(){
   const nd=nextDay();
