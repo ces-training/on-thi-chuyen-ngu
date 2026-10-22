@@ -40,9 +40,9 @@
      "lang": "Anh",
      "quota": {},
      "applicants": {},
-     "cut": {"2022": null, "2023": null, "2024": null, "2025": 30, "2026": 31},
-     "scale": {"2025": 50, "2026": 50},
-     "note": "2025: 30, bằng lớp Văn và cao nhất trường. 2026: 31, sau lớp Văn (31,25); điểm chuẩn các lớp tăng 0,5–1,5 so với 2025 (Mực Tím; tuyensinh247 ghi cùng số). Chưa có chỉ tiêu riêng lớp Anh (tổng 210 chỉ tiêu cho 7 lớp năm 2025)."
+     "cut": {"2022": null, "2023": 32, "2024": null, "2025": 30, "2026": 31},
+     "scale": {"2023": 50, "2025": 50, "2026": 50},
+     "note": "2023: 32 (bảng 'Điểm chuẩn lớp 10 chuyên Khoa học Huế' trên doctailieu đặt trong mục 2023, không ghi năm trong tiêu đề — năm là suy ra; cùng bảng: Văn 34, Toán 28, Hóa 28, Tin 27, Lý 26, Sinh 24). 2024: tuyensinh247 và doctailieu không có số. 2025: 30, bằng lớp Văn và cao nhất trường. 2026: 31, sau lớp Văn (31,25); điểm chuẩn các lớp tăng 0,5–1,5 so với 2025 (Mực Tím; tuyensinh247 ghi cùng số). Năm 2026 trường mở thêm lớp chuyên Nhật (26), Trung (27,5), Sử (25,5), Địa (25) theo bảng tuyensinh247 — chưa xác minh từ trường; lớp Nhật/Trung có xét bằng điểm Anh hay không chưa rõ. Chưa có chỉ tiêu riêng lớp Anh (tổng 210 chỉ tiêu cho 7 lớp năm 2025)."
     }
    ]
   }
@@ -56,7 +56,9 @@
  "gaps": [
   "Lịch thi 2026, đơn vị ra đề và việc có thi chung bài môn chung với Sở Huế hay không",
   "Cấu trúc đề chuyên Anh, thời gian làm bài, có nghe/nói hay không; chưa có đề mẫu",
-  "Điểm chuẩn chuyên Anh 2022–2024",
+  "Điểm chuẩn chuyên Anh 2022 và 2024 (2023 = 32 chỉ có trên doctailieu, năm suy ra)",
+  "Xác minh lớp chuyên Nhật/Trung mới năm 2026 (tuyensinh247) và cách xét (có dùng điểm Anh không)",
+  "Lịch thi 2026 của trường (kỳ thi Sở Huế diễn ra 27–29/5/2026; trường công bố điểm chuẩn 13/6/2026 — trước Sở 1 ngày — gợi ý thi riêng nhưng chưa có văn bản)",
   "Chỉ tiêu và số hồ sơ lớp chuyên Anh từng năm",
   "Bài chia sẻ kinh nghiệm",
   "Kế hoạch 2027"
@@ -66,6 +68,8 @@
   {"title": "Mực Tím (Tuổi Trẻ) 16/6/2025 – 30 là điểm chuẩn cao nhất vào lớp 10 Trường THPT chuyên Khoa học Huế năm 2025", "url": "https://muctim.tuoitre.vn/30-la-diem-chuan-cao-nhat-vao-lop-10-truong-thpt-chuyen-khoa-hoc-hue-nam-2025-101250616123656654.htm"},
   {"title": "tuyensinh247 – Điểm chuẩn vào lớp 10 Huế (Quốc Học, Khoa học Huế)", "url": "https://diemthi.tuyensinh247.com/dc-lop10/hue-p7.html"},
   {"title": "Đại biểu Nhân dân – Huế công bố điểm chuẩn vào lớp 10 năm học 2026-2027 (Quốc Học)", "url": "https://daibieunhandan.vn/hue-cong-bo-diem-chuan-vao-lop-10-nam-hoc-2026-2027-10420504.html"},
-  {"title": "Hoa Học Trò – Huế công bố điểm chuẩn vào lớp 10 năm 2025 (Quốc Học)", "url": "https://hoahoctro.tienphong.vn/hue-cong-bo-diem-chuan-vao-lop-10-nam-2025-diem-chuyen-anh-cao-ngat-nguong-post1752047.tpo"}
+  {"title": "Hoa Học Trò – Huế công bố điểm chuẩn vào lớp 10 năm 2025 (Quốc Học)", "url": "https://hoahoctro.tienphong.vn/hue-cong-bo-diem-chuan-vao-lop-10-nam-2025-diem-chuyen-anh-cao-ngat-nguong-post1752047.tpo"},
+  {"title": "Doctailieu – Điểm chuẩn vào lớp 10 Thừa Thiên Huế (có bảng chuyên Khoa học Huế 2023)", "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-thua-thien-hue"},
+  {"title": "Dienmaycholon – Điểm chuẩn lớp 10 thành phố Huế (ghi Khoa học Huế có đề thi và thang điểm riêng)", "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-thanh-pho-hue"}
  ]
 }

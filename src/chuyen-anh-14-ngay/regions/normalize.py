@@ -106,18 +106,31 @@ def build_exam(raw, key, label, warnings, slug):
     formula = {"w": {k: v for k, v in w.items() if v}, "paper": key, "text": (ov or {}).get("text") or F.get("text"), "max": mx}
     return formula, paper, m3
 
-def options_for(raw, key, slug, warnings):
+def options_for(raw, key, slug, warnings, fmax=None):
     out = []
     for s in raw.get("schools") or []:
+        if "đã dừng" in s["name"] or "dừng tuyển" in s["name"]:
+            continue  # lớp chuyên không còn tuyển: chỉ hiện ở trang tỉnh, không đưa vào gợi ý trường
         sk = slugify(short(s["name"]))[:28] or "sch"
-        for c in s.get("classes") or []:
+        nAnh = sum(1 for c in s.get("classes") or [] if c.get("lang") == "Anh")
+        for ci, c in enumerate(s.get("classes") or []):
             lang = LANG.get(c.get("lang"), None)
             if not lang:
                 continue
             if lang != "Anh" and not c.get("admit_by_english"):
                 continue
             ys, cs, ref = year_cuts(c)
-            out.append({"id": f"{key}-{sk}-{lang.lower()}", "sk": f"{key}-{sk}", "school": s["name"],
+            if fmax:
+                keep = [(y, v) for y, v in zip(ys, cs) if v <= fmax]
+                if len(keep) < len(cs):
+                    warnings.append(f"{slug}: {s['name']} lớp {lang}: bỏ điểm chuẩn vượt thang {fmax}")
+                ys, cs = [y for y, _ in keep], [v for _, v in keep]
+            campus = None
+            if lang == "Anh" and nAnh > 1:
+                m = re.search(r"cơ sở ([A-ZĐÂĂÔƠƯÊ][^\s(,;.–]*(?: [A-ZĐÂĂÔƠƯÊ][^\s(,;.–]*)*)", c.get("note") or "")
+                campus = m.group(1) if m else f"lớp {ci + 1}"
+            sfx = ("-" + slugify(campus)) if campus else ""
+            out.append({"id": f"{key}-{sk}-{lang.lower()}{sfx}", "sk": f"{key}-{sk}{sfx}", "school": s["name"] + (f" – cơ sở {campus}" if campus and not campus.startswith("lớp") else (f" ({campus})" if campus else "")),
                         "area": s.get("old_province"), "cls": "chuyên " + {"Phap": "Pháp", "Nhat": "Nhật", "Han": "Hàn", "Duc": "Đức"}.get(lang, lang),
                         "lang": lang, "f": key, "exam": key, "group": "nv" if lang == "Anh" else "extra",
                         "years": ys, "cut": cs, "scale": ref, "quota": c.get("quota"), "note": c.get("note")})
@@ -141,7 +154,7 @@ def main():
             "papers": {"so": paper}, "formulas": {"so": f}, "m3_label": m3,
             "exams": {"so": {"label": f"Kỳ thi của Sở GD&ĐT {meta['name']}", "date": ex26.get("dates") or "", "rule": raw.get("nv_rule") or ""}},
             "nv2_exam": None, "nv_rule": raw.get("nv_rule"),
-            "options": options_for(raw, "so", slug, warnings),
+            "options": options_for(raw, "so", slug, warnings, f.get("max")),
             "paper": paper, "exam_2026": ex26, "plan_2027": raw.get("plan_2027"),
             "stories": raw.get("stories") or [], "prep_tips": raw.get("prep_tips") or [],
             "confidence": raw.get("confidence"), "gaps": raw.get("gaps") or [], "sources": raw.get("sources") or [],
@@ -155,7 +168,7 @@ def main():
         f, paper, _ = build_exam(raw, uslug, raw.get("so") or uslug, warnings, uslug)
         R["papers"][uslug] = paper; R["formulas"][uslug] = f
         R["exams"][uslug] = {"label": f"Kỳ thi riêng của {raw.get('so')}", "date": (raw.get("exam_2026") or {}).get("dates") or "", "rule": raw.get("nv_rule") or ""}
-        R["options"] += options_for(raw, uslug, uslug, warnings)
+        R["options"] += options_for(raw, uslug, uslug, warnings, f.get("max"))
         R.setdefault("uni", []).append({"slug": uslug, "name": raw.get("so"), "paper": paper, "stories": raw.get("stories") or [],
                                         "prep_tips": raw.get("prep_tips") or [], "sources": raw.get("sources") or [], "formula_raw": raw.get("formula"),
                                         "schools_raw": raw.get("schools"), "exam_2026": raw.get("exam_2026"), "gaps": raw.get("gaps") or []})

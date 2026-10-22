@@ -3,23 +3,24 @@
   "slug": "lao-cai",
   "merged_from": ["Lào Cai", "Yên Bái"],
   "exam_2026": {
-    "dates": "27–29/5/2026 (26/5 làm thủ tục). 27/5 sáng Ngữ văn 120'; 27/5 chiều Ngoại ngữ (Tiếng Anh hoặc Tiếng Trung) 60'; 28/5 sáng Toán 90'; 28/5 chiều các môn chuyên (KHTN1/2/3, Tin, LS-ĐL1/2, Tiếng Anh, Tiếng Trung) 150'; 29/5 sáng chuyên Toán, chuyên Ngữ văn 150'. Ngày 29/5 còn có buổi 'thi nói các môn ngoại ngữ' (5' chuẩn bị, 3' trả lời) — nguồn ghi đối tượng là 'các thí sinh không thi Toán, Ngữ văn', chưa rõ có áp dụng cho chuyên Anh hay không.",
-    "organisation": "Một kỳ thi chung cho cả tỉnh mới (Lào Cai + Yên Bái cũ) vào THPT công lập, THPT chuyên và PTDTNT; không giới hạn tuyển sinh theo địa giới hành chính (CV 621/BGDĐT-GDPT). Hai trường chuyên (Chuyên Lào Cai, Chuyên Nguyễn Tất Thành) tuyển riêng, thí sinh chọn 1 trường.",
+    "dates": "27–29/5/2026 (26/5 làm thủ tục). 27/5 sáng Ngữ văn 120'; 27/5 chiều Ngoại ngữ (Tiếng Anh hoặc Tiếng Trung) 60'; 28/5 sáng Toán 90'; 28/5 chiều các môn chuyên (KHTN1/2/3, Tin, LS-ĐL1/2, Tiếng Anh, Tiếng Trung) 150'; 29/5 sáng chuyên Toán, chuyên Ngữ văn 150'. Ngày 29/5 còn có buổi 'thi nói các môn ngoại ngữ' (5' chuẩn bị, 3' trả lời) — năm 2025 Chuyên Lào Cai đã có 'thi nói môn chuyên ngoại ngữ' ngày 6/6 (Báo Lào Cai 5/6/2025), nên khả năng cao phần nói áp dụng cho chuyên Anh/Trung – chưa có văn bản xác nhận cách tính điểm phần nói. Điểm thi công bố 9/6/2026; điểm chuẩn chuyên công bố ~10/6/2026.",
+    "organisation": "Một kỳ thi chung cho cả tỉnh mới (Lào Cai + Yên Bái cũ) vào THPT công lập, THPT chuyên và PTDTNT; không giới hạn tuyển sinh theo địa giới hành chính (CV 621/BGDĐT-GDPT). Hai trường chuyên (Chuyên Lào Cai, Chuyên Nguyễn Tất Thành) tuyển riêng, mỗi trường 420 HS/12 lớp, thí sinh chọn 1 trường.",
     "common_subjects": ["Toán", "Ngữ văn", "Ngoại ngữ (Tiếng Anh hoặc Tiếng Trung)"],
-    "notes": "Môn thứ ba là Ngoại ngữ (Tiếng Anh/Tiếng Trung), trắc nghiệm 60'; Toán trắc nghiệm 90'; Ngữ văn tự luận. Hơn 23.930 thí sinh thi môn tiếng Anh chiều 27/5/2026. Điểm chuẩn chuyên công bố 10/6/2026 (theo tuyensinh247). Kết quả công bố trước 20/7/2026."
+    "notes": "Môn thứ ba là Ngoại ngữ (Tiếng Anh/Tiếng Trung), trắc nghiệm 60'; Toán trắc nghiệm 90'; Ngữ văn tự luận. 23.987 thí sinh đăng ký (tỷ lệ dự thi 99,75%), 66 hội đồng thi; chỉ tiêu lớp 10 toàn tỉnh ~20.260. Năm 2025 (trước sáp nhập): Lào Cai thi 3–6/6/2025, Chuyên Lào Cai 457 thí sinh dự thi chuyên (chiều 5/6) cho 385 chỉ tiêu/11 lớp; Yên Bái: Chuyên Nguyễn Tất Thành thi chuyên 3–4/6/2025 (Anh/Trung chiều 3/6), >630 thí sinh đăng ký, 419 trúng tuyển."
   },
   "plan_2027": null,
   "formula": {
-    "text": "Năm 2026: Điểm xét tuyển = Ngữ văn + Toán + Tiếng Anh (chung) + 3 × điểm môn chuyên",
+    "text": "Năm 2026: Điểm xét tuyển = Ngữ văn + Toán + Tiếng Anh (chung) + 3 × điểm môn chuyên (thang 60) – áp dụng chung cho Chuyên Lào Cai và Chuyên Nguyễn Tất Thành.",
     "parts": ["Toán", "Ngữ văn", "Tiếng Anh (chung)", "Anh chuyên×3"],
     "max": 60,
     "conditions": "Kết quả học tập và rèn luyện THCS từ Khá trở lên; bài chuyên ≥ 5,0; mỗi bài còn lại ≥ 2,0. Hòa điểm: ưu tiên điểm bài chuyên, rồi điểm môn tương ứng lớp 9, rồi điểm TB lớp 9.",
     "formula_by_year": {
-      "2024": "Chưa tìm được văn bản 2024 (điểm chuẩn Chuyên Lào Cai 2024 cao nhất 38, phù hợp thang 50 nhưng chưa xác minh)",
-      "2026": "Văn + Toán + Anh + 3 × chuyên (thang 60) — áp dụng chung cho Chuyên Lào Cai và Chuyên Nguyễn Tất Thành"
+      "2024": "Chuyên Lào Cai: chưa có văn bản; điểm chuẩn Anh 38 phù hợp thang 50 (chuyên ×2 như 2025). Chuyên Nguyễn Tất Thành (Yên Bái): điểm chuẩn Anh 48,1 – phù hợp thang 60 (chuyên ×3 như 2025) – suy đoán.",
+      "2025": "Chuyên Lào Cai: ĐXT = 3 bài chung (hệ số 1) + bài chuyên ×2, thang 50 (Phương án tuyển sinh, Báo Lào Cai 30/4/2025); thủ khoa chuyên Anh 46,3/50. Chuyên Nguyễn Tất Thành (Yên Bái): chuyên ×3, thang 60 – suy từ thủ khoa Lý 57 = 10 + 10 + 8,5 + 3×9,5 (Báo Lào Cai 2/7/2025); thủ khoa chuyên Anh 54,7/60.",
+      "2026": "Văn + Toán + Anh + 3 × chuyên (thang 60) — chung cho hai trường; Chuyên Lào Cai đổi từ ×2 (2025) sang ×3."
     }
   },
-  "nv_rule": "Đăng ký tối đa 2 lớp chuyên trong MỘT trường chuyên (Chuyên Lào Cai hoặc Chuyên Nguyễn Tất Thành, không được cả hai). Lớp chuyên Tiếng Trung của Chuyên Nguyễn Tất Thành cho thí sinh thi bài chuyên Tiếng Trung hoặc bài chuyên Tiếng Anh (chung đề chuyên Anh), ưu tiên xét thí sinh thi Tiếng Trung trước — tức có xét lớp Trung bằng điểm Anh. Trượt chuyên được dùng điểm bài không chuyên xét vào THPT công lập/PTDTNT theo điều kiện, địa bàn.",
+  "nv_rule": "Đăng ký tối đa 2 lớp chuyên trong MỘT trường chuyên (Chuyên Lào Cai hoặc Chuyên Nguyễn Tất Thành, không được cả hai). Lớp chuyên Tiếng Trung của Chuyên Nguyễn Tất Thành cho thí sinh thi bài chuyên Tiếng Trung hoặc bài chuyên Tiếng Anh (chung đề chuyên Anh), ưu tiên xét thí sinh thi Tiếng Trung trước — tức có xét lớp Trung bằng điểm Anh (Yên Bái 2025 cũng cho chọn một trong hai bài Anh/Trung – CV 222 Yên Bái). Trượt chuyên được dùng điểm bài không chuyên xét vào THPT công lập/PTDTNT theo điều kiện, địa bàn.",
   "chuyen_paper": {
     "minutes": 150,
     "scale": 10,
@@ -27,7 +28,7 @@
     "essay_words": null,
     "sections": [],
     "difficulty": null,
-    "difficulty_evidence": "Không tìm thấy đề chuyên Anh Lào Cai hay Yên Bái công khai, cũng không có nhận xét độ khó.",
+    "difficulty_evidence": "Không tìm thấy đề chuyên Anh Lào Cai hay Yên Bái công khai. Thí sinh chuyên Anh Chuyên Lào Cai 2025 nhận xét 'một số câu khó đã được ôn trên lớp'; Báo Lào Cai: đề chuyên có tính phân hóa, phù hợp thí sinh chuyên (5/6/2025). Có phần thi nói ngoại ngữ (5' chuẩn bị, 3' trả lời) ngày 6/6/2025 và 29/5/2026. Thủ khoa chuyên Anh 2025 Nguyễn Minh Tuân: luyện 4 kỹ năng, xem phim luyện nghe nói, viết nhiều.",
     "sample_links": []
   },
   "schools": [
@@ -38,19 +39,19 @@
       "classes": [
         {
           "lang": "Anh",
-          "quota": {"2026": 70},
+          "quota": {"2025": 70, "2026": 70},
           "applicants": {},
           "cut": {"2022": null, "2023": null, "2024": 38, "2025": null, "2026": 44.1},
-          "scale": {"2026": 60},
-          "note": "2026: 2 lớp chuyên Anh (420 HS/12 lớp ⇒ 35/lớp, nguồn không ghi riêng số chỉ tiêu từng lớp); điểm chuẩn NV1 44,1 trên thang 60 (hệ số 3). 2024: 38 (tuyensinh247, Hoatieu), thang điểm 2024 chưa xác minh. Tham khảo 2018: 36,15."
+          "scale": {"2024": 50, "2025": 50, "2026": 60},
+          "note": "2026: 2 lớp chuyên Anh (420 HS/12 lớp ⇒ 35/lớp); điểm chuẩn NV1 44,1 trên thang 60 (hệ số 3) (tuyensinh247). 2025: 2 lớp ≤35 HS, thang 50 (chuyên ×2), thủ khoa chuyên Anh Nguyễn Minh Tuân 46,3 – điểm chuẩn chưa tìm được. 2024: 38 (tuyensinh247, Hoatieu, Báo Lào Cai) – thang 50 suy theo công thức 2025. Tham khảo 2018: 36,15."
         },
         {
           "lang": "Trung",
           "admit_by_english": null,
-          "quota": {"2026": 35},
+          "quota": {"2025": 35, "2026": 35},
           "cut": {"2024": 32.5, "2026": 47.24},
-          "scale": {"2026": 60},
-          "note": "1 lớp chuyên Tiếng Trung; 2026 điểm chuẩn 47,24 cao hơn chuyên Anh (44,1). 2024: 32,5. Tham khảo 2018: 31."
+          "scale": {"2024": 50, "2026": 60},
+          "note": "1 lớp chuyên Tiếng Trung; 2026 điểm chuẩn 47,24 cao hơn chuyên Anh (44,1). 2024: 32,5. Tham khảo 2018: 31. Thi bài chuyên Tiếng Trung riêng (lịch 2025, 2026)."
         }
       ]
     },
@@ -63,40 +64,53 @@
           "lang": "Anh",
           "quota": {"2026": 70},
           "applicants": {},
-          "cut": {"2022": null, "2023": null, "2024": null, "2025": null, "2026": null},
-          "scale": {"2026": 60},
-          "note": "2026: 2 lớp chuyên Anh trong 12 lớp/420 HS. Không tìm được điểm chuẩn năm nào."
+          "cut": {"2022": null, "2023": null, "2024": 48.1, "2025": null, "2026": null},
+          "scale": {"2024": 60, "2025": 60, "2026": 60},
+          "note": "2024: 48,10 – cao nhất trường (Lý 45, Sử 44,75, Địa 44,5, Văn 42,5; doctailieu) – thang 60 suy từ công thức ×3 năm 2025. 2025: thủ khoa chuyên Anh Vũ Long Nhật 54,7/60, >630 thí sinh đăng ký, 419 trúng tuyển toàn trường (Báo Lào Cai 2/7/2025) – điểm chuẩn chưa tìm được. 2026: 2 lớp chuyên Anh trong 12 lớp/420 HS; điểm chuẩn chưa tìm được (tuyensinh247 không có trang Yên Bái sau sáp nhập)."
         },
         {
           "lang": "Trung",
           "admit_by_english": true,
           "quota": {"2026": 35},
           "cut": {},
-          "note": "1 lớp chuyên Tiếng Trung; thí sinh được dùng bài chuyên Tiếng Trung hoặc bài chuyên Tiếng Anh, ưu tiên thí sinh thi Tiếng Trung."
+          "note": "1 lớp chuyên Tiếng Trung; thí sinh được dùng bài chuyên Tiếng Trung hoặc bài chuyên Tiếng Anh, ưu tiên thí sinh thi Tiếng Trung (2025: CV 222 Yên Bái cho chọn một trong hai bài). 2025 thủ khoa Tiếng Trung 48,1/60 – thấp nhất các lớp."
         }
       ]
     }
   ],
-  "stories": [],
-  "prep_tips": [
-    "Từ 2026 bài chuyên hệ số 3 (thang 60): bài chuyên Anh 150 phút chiếm một nửa tổng điểm (tuyensinh247, thông tin tuyển sinh Lào Cai 2026).",
-    "Bài chuyên phải đạt ≥ 5,0 mới được xét — mức sàn cao hơn nhiều tỉnh lân cận (≥ 2,0) (thông tin tuyển sinh 2026).",
-    "Ở Chuyên Nguyễn Tất Thành, thi chuyên Anh vẫn có cơ hội vào lớp chuyên Trung bằng điểm bài chuyên Anh (sau thí sinh thi Tiếng Trung) — nên đăng ký Trung làm lớp thứ hai nếu phù hợp (thông tin tuyển sinh 2026).",
-    "Chỉ được chọn một trong hai trường chuyên: so sánh điểm chuẩn từng trường trước khi nộp hồ sơ (năm 2026 Chuyên Lào Cai: Anh 44,1/60, Trung 47,24/60)."
+  "stories": [
+    {"title": "Tỏa sáng trí tuệ – các thủ khoa kỳ thi vào lớp 10 Chuyên Lào Cai 2025", "who": "học sinh", "year": 2025, "school": "THPT Chuyên Lào Cai", "summary": "Nguyễn Minh Tuân (THCS Kim Tân) thủ khoa chuyên Anh với 46,3/50. Em có 4 năm trong đội tuyển, xem phim để luyện nghe nói, viết nhiều để mở rộng vốn từ và dùng AI để bài viết mạch lạc hơn. Lời khuyên: học chắc trên lớp, ôn đều, dùng tài liệu trực tuyến để phát triển đủ bốn kỹ năng.", "takeaways": ["Luyện cả 4 kỹ năng vì Chuyên Lào Cai có cả thi nói ngoại ngữ.", "Xem phim/nghe tiếng Anh thường xuyên để luyện nghe nói tự nhiên.", "Viết nhiều, dùng công cụ AI để sửa mạch lạc nhưng phải tự viết trước."], "url": "https://baolaocai.vn/toa-sang-tri-tue-post648190.html"},
+    {"title": "419 học sinh đỗ vào lớp 10 Trường THPT Chuyên Nguyễn Tất Thành (2025)", "who": "báo", "year": 2025, "school": "THPT Chuyên Nguyễn Tất Thành", "summary": "Hơn 630 thí sinh đăng ký, 419 trúng tuyển 10 lớp chuyên. Thủ khoa chuyên Anh Vũ Long Nhật 54,7/60; thủ khoa chuyên Lý 57 (Toán 10, Anh 10, Văn 8,5, chuyên 9,5×3). Thủ khoa Tiếng Trung chỉ 48,1.", "takeaways": ["Ở Nguyễn Tất Thành môn chung Toán/Anh 10 điểm là mức của thủ khoa – môn chung quyết định thứ hạng.", "Lớp Tiếng Trung có mặt bằng điểm thấp hơn chuyên Anh ~6 điểm – lựa chọn dự phòng hợp lý."], "url": "https://baolaocai.vn/419-hoc-sinh-do-vao-lop-10-truong-thpt-chuyen-nguyen-tat-thanh-post647772.html"}
   ],
-  "confidence": "low",
+  "prep_tips": [
+    "Từ 2026 bài chuyên hệ số 3 (thang 60) ở cả hai trường: bài chuyên Anh 150 phút chiếm một nửa tổng điểm; điểm chuẩn Chuyên Lào Cai 44,1/60 tương đương ví dụ 8+8+9 môn chung + 6,4 bài chuyên (tuyensinh247, thông tin tuyển sinh Lào Cai 2026).",
+    "Bài chuyên phải đạt ≥ 5,0 mới được xét — mức sàn cao hơn nhiều tỉnh lân cận (≥ 2,0 hoặc 3,0) (thông tin tuyển sinh 2026).",
+    "Có phần thi nói ngoại ngữ (5 phút chuẩn bị, 3 phút trả lời) – luyện nói theo chủ đề, trình bày ngắn gọn có cấu trúc (lịch thi 2025, 2026; thủ khoa 2025 khuyên luyện đủ 4 kỹ năng).",
+    "Ở Chuyên Nguyễn Tất Thành, thi chuyên Anh vẫn có cơ hội vào lớp chuyên Trung bằng điểm bài chuyên Anh (sau thí sinh thi Tiếng Trung) — nên đăng ký Trung làm lớp thứ hai nếu phù hợp (thông tin tuyển sinh 2026).",
+    "Chỉ được chọn một trong hai trường chuyên: so sánh điểm chuẩn từng trường trước khi nộp hồ sơ (2026 Chuyên Lào Cai: Anh 44,1/60, Trung 47,24/60; 2024 Nguyễn Tất Thành Anh 48,1/60 cao nhất trường).",
+    "Môn Toán chung thi trắc nghiệm 90', Ngoại ngữ trắc nghiệm 60' – luyện tốc độ trắc nghiệm cho môn chung (lịch thi 2026)."
+  ],
+  "confidence": "medium",
   "gaps": [
-    "Toàn bộ điểm chuẩn Chuyên Nguyễn Tất Thành (Yên Bái cũ) 2022–2026.",
-    "Điểm chuẩn chuyên Anh Chuyên Lào Cai 2022, 2023, 2025; thang điểm/công thức 2022–2025 của cả hai trường.",
-    "Cấu trúc, đề mẫu, độ khó bài chuyên Anh; có hay không phần thi nói trong chuyên Anh 2026.",
-    "Văn bản gốc kế hoạch tuyển sinh 2026 của Sở (chỉ đọc qua tuyensinh247).",
+    "Điểm chuẩn chuyên Anh Chuyên Nguyễn Tất Thành 2022, 2023, 2025, 2026; Chuyên Lào Cai 2022, 2023, 2025 (kết quả 2025 chỉ có thủ khoa).",
+    "Văn bản gốc xác nhận công thức/thang điểm 2024 hai trường và cách tính điểm phần thi nói ngoại ngữ.",
+    "Cấu trúc, đề mẫu, độ khó bài chuyên Anh (có nghe không, bài viết bao nhiêu từ).",
+    "Văn bản gốc kế hoạch tuyển sinh 2026 của Sở (chỉ đọc qua tuyensinh247, Báo Lào Cai).",
     "Số thí sinh đăng ký chuyên Anh từng trường.",
-    "Kế hoạch 2027.",
-    "Không tìm thấy chia sẻ kinh nghiệm thật."
+    "Kế hoạch 2027."
   ],
   "sources": [
     {"title": "Tuyensinh247 – Tuyển sinh lớp 10 Lào Cai 2026", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/lao-cai-p9.html"},
-    {"title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 Lào Cai", "url": "https://diemthi.tuyensinh247.com/dc-lop10/lao-cai-p9.html"},
+    {"title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 Lào Cai (Chuyên Lào Cai 2024, 2026)", "url": "https://diemthi.tuyensinh247.com/dc-lop10/lao-cai-p9.html"},
+    {"title": "Báo Lào Cai – Phương án tuyển sinh lớp 10 THPT Chuyên Lào Cai 2025 (công thức ×2, 11 lớp/385 HS)", "url": "https://baolaocai.vn/phuong-an-tuyen-sinh-lop-10-thpt-chuyen-lao-cai-post401072.html"},
+    {"title": "Báo Lào Cai – Hơn 450 thí sinh dự thi vào lớp 10 Trường THPT Chuyên Lào Cai (2025, thi nói ngoại ngữ)", "url": "https://baolaocai.vn/hon-450-thi-sinh-du-thi-vao-lop-10-truong-thpt-chuyen-lao-cai-post402896.html"},
+    {"title": "Báo Lào Cai – Tỏa sáng trí tuệ (thủ khoa chuyên Anh Chuyên Lào Cai 2025)", "url": "https://baolaocai.vn/toa-sang-tri-tue-post648190.html"},
+    {"title": "Báo Lào Cai – 419 học sinh đỗ vào lớp 10 Trường THPT Chuyên Nguyễn Tất Thành (2025)", "url": "https://baolaocai.vn/419-hoc-sinh-do-vao-lop-10-truong-thpt-chuyen-nguyen-tat-thanh-post647772.html"},
+    {"title": "Báo Lào Cai – CHÍNH THỨC: Lào Cai công bố kết quả kỳ thi và điểm chuẩn vào lớp 10 THPT (9/6/2026)", "url": "https://baolaocai.vn/chinh-thuc-lao-cai-cong-bo-ket-qua-ky-thi-va-diem-chuan-vao-lop-10-thpt-post901223.html"},
+    {"title": "Báo Lào Cai – Tuyển sinh vào lớp 10: Khi những nỗ lực được gọi tên (2026)", "url": "https://baolaocai.vn/tuyen-sinh-vao-lop-10-khi-nhung-no-luc-duoc-goi-ten-post901332.html"},
+    {"title": "Báo Lào Cai – Trường THPT Chuyên Lào Cai công bố điểm chuẩn vào lớp 10 năm 2024", "url": "https://baolaocai.vn/truong-thpt-chuyen-lao-cai-cong-bo-diem-chuan-vao-lop-10-nam-2024-post386254.html"},
+    {"title": "Công văn 222 hướng dẫn tổ chức tuyển sinh giáo dục trung học 2025-2026 tỉnh Yên Bái (lịch thi chuyên, bài Anh/Trung)", "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2025/NNL/06062025/cong-van-222-huong-dan-to-chuc-tuyen-sinh-giao-duc-trung-hoc-2025-2026-tinh-yen-bai.pdf"},
+    {"title": "Điểm chuẩn lớp 10 tỉnh Yên Bái (Chuyên Nguyễn Tất Thành 2024) – Đọc tài liệu", "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-yen-bai"},
     {"title": "Hoatieu – Điểm thi tuyển sinh lớp 10 Lào Cai (điểm chuẩn Chuyên Lào Cai 2024, 2018)", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-lao-cai-208896"},
     {"title": "Báo Lào Cai – 26 địa phương công bố môn thi thứ ba lớp 10 năm 2026 (06/3/2026)", "url": "https://baolaocai.vn/26-dia-phuong-cong-bo-mon-thi-thu-ba-lop-10-nam-2026-nhieu-noi-du-kien-lich-thi-post895130.html"},
     {"title": "VietJack – Đề thi Tiếng Anh vào lớp 10 Lào Cai 2026", "url": "https://vietjack.com/de-thi-vao-lop-10-mon-tieng-anh/de-thi-tieng-anh-vao-lop-10-nam-2026-lao-cai.jsp"},

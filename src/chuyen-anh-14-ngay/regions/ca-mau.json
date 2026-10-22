@@ -18,7 +18,7 @@
    "ac_cap": 10,
    "ac_label": "Anh chung (đề chung)",
    "difficulty": null,
-   "difficulty_evidence": "Chưa tìm được đề chuyên Anh của Phan Ngọc Hiển hay Bạc Liêu các năm 2022–2026, hoặc nhận xét về độ khó.",
+   "difficulty_evidence": "Chưa tìm được đề chuyên Anh của Phan Ngọc Hiển hay Bạc Liêu các năm 2022–2026 hoặc nhận xét về độ khó. Gián tiếp: điểm chuẩn chuyên Anh Phan Ngọc Hiển thấp (24,3–32,4/50 giai đoạn 2021–2025) và năm 2024 trường không tuyển đủ chỉ tiêu do điểm thi thấp (Thanh Niên) → mức cạnh tranh thấp hơn nhiều tỉnh khác, chưa suy ra được độ khó đề. Springboard.vn liệt kê có đề chính thức chuyên Anh Cà Mau 2026 nhưng chưa đọc được nội dung.",
    "minutes": 150,
    "has_listening": true,
    "essay_words": null,
@@ -27,10 +27,18 @@
      "format": "listening",
      "items": null,
      "points": null,
-     "note": "Kế hoạch 2026: Tiếng Anh chuyên có thêm phần nghe; chưa có đề cụ thể"
+     "note": "Kế hoạch 2025 và 2026 của Cà Mau: Tiếng Anh chuyên thi tự luận, có thêm phần nghe; chưa có đề cụ thể"
+    },
+    {
+     "format": "other",
+     "items": null,
+     "points": null,
+     "note": "Phần viết tự luận (các dạng chưa xác minh)"
     }
    ],
-   "sample_links": []
+   "sample_links": [
+    "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/"
+   ]
   }
  },
  "formulas": {
@@ -50,12 +58,12 @@
  "exams": {
   "so": {
    "label": "Kỳ thi của Sở GD&ĐT Cà Mau",
-   "date": "Nhận hồ sơ chuyên 01–13/6/2026; thi tuyển 26–28/6/2026; chấm 29/6–04/7; xét tuyển và công bố kết quả chuyên 06/7/2026; phúc khảo 07–13/7/2026.",
-   "rule": "Chưa tìm được quy định số nguyện vọng chuyên năm 2026 (trang kế hoạch có nhắc nhưng không nêu cụ thể). Chỉ có lớp chuyên Tiếng Anh, không có lớp chuyên ngoại ngữ khác."
+   "date": "Nhận hồ sơ chuyên 01–13/6/2026; thi 26–28/6/2026: 26/6 sáng Ngữ văn (120'), chiều Toán (120'); 27/6 sáng Tiếng Anh chung (90'), chiều chuyên Văn, chuyên Toán (150'); 28/6 sáng chuyên Lý, Hóa, Tiếng Anh (150'), chiều chuyên Sinh, Sử, Địa, Tin (150'). Chấm 29/6–04/7; công bố kết quả chuyên 06/7/2026; phúc khảo xong trước 13/7/2026.",
+   "rule": "2026: chưa tìm được quy định số nguyện vọng chuyên. Thực tế các năm trước ở Phan Ngọc Hiển có NV1 và NV2 (NV2 là nguyện vọng chuyển sang lớp chuyên khác cùng trường, điểm chuẩn NV2 cao hơn NV1 ~2–3 điểm; chuyên Anh 2024: NV1 24,30, NV2 26,65). Chuyên Bạc Liêu 2024 cũng có NV2 ở Sử, Địa, Tin. Chỉ có lớp chuyên Tiếng Anh, không có lớp chuyên ngoại ngữ khác ở cả hai trường."
   }
  },
  "nv2_exam": null,
- "nv_rule": "Chưa tìm được quy định số nguyện vọng chuyên năm 2026 (trang kế hoạch có nhắc nhưng không nêu cụ thể). Chỉ có lớp chuyên Tiếng Anh, không có lớp chuyên ngoại ngữ khác.",
+ "nv_rule": "2026: chưa tìm được quy định số nguyện vọng chuyên. Thực tế các năm trước ở Phan Ngọc Hiển có NV1 và NV2 (NV2 là nguyện vọng chuyển sang lớp chuyên khác cùng trường, điểm chuẩn NV2 cao hơn NV1 ~2–3 điểm; chuyên Anh 2024: NV1 24,30, NV2 26,65). Chuyên Bạc Liêu 2024 cũng có NV2 ở Sử, Địa, Tin. Chỉ có lớp chuyên Tiếng Anh, không có lớp chuyên ngoại ngữ khác ở cả hai trường.",
  "options": [
   {
    "id": "so-chuyen-phan-ngoc-hien-anh",
@@ -67,13 +75,26 @@
    "f": "so",
    "exam": "so",
    "group": "nv",
-   "years": [],
-   "cut": [],
-   "scale": null,
+   "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cut": [
+    32.4,
+    27.25,
+    30.65,
+    24.3,
+    25.8
+   ],
+   "scale": 50,
    "quota": {
+    "2025": 70,
     "2026": 70
    },
-   "note": "2026: 2 lớp Tiếng Anh, tối đa 35 HS/lớp; toàn trường tối đa 350 HS (tuyensinh247). Chưa tìm được điểm chuẩn năm nào."
+   "note": "NV1. 2024: NV1 24,30 / NV2 26,65 (Giáo dục & Thời đại 24/6/2024). 2025: 25,8 (dienmaycholon). 2021–2023: Download.vn. Toàn trường: 2024 601 thí sinh/350 chỉ tiêu, tuyển 341; 2025 455 thí sinh/350; 2026 712 thí sinh/350. 2 lớp Tiếng Anh (≤35 HS/lớp). Điểm chuẩn 2026 (công bố 6/7/2026) chưa tìm được trên web."
   },
   {
    "id": "so-chuyen-bac-lieu-anh",
@@ -89,9 +110,10 @@
    "cut": [],
    "scale": null,
    "quota": {
+    "2025": 35,
     "2026": 35
    },
-   "note": "2026: 1 lớp Tiếng Anh, tối đa 35 HS; toàn trường tối đa 315 HS (tuyensinh247). Chưa tìm được điểm chuẩn năm nào."
+   "note": "2024: NV1 74,25 – cao nhất trường cùng chuyên Toán (Hoatieu, Download.vn); thang điểm năm 2024 chưa xác minh (chắc chắn > 50, công thức Bạc Liêu cũ chưa tìm được). 2025: Sở Bạc Liêu công bố 3/6/2025 nhưng các trang tổng hợp không ghi số. 2026: 1 lớp Tiếng Anh ≤35 HS, toàn trường 315 chỉ tiêu/557 thí sinh; điểm chuẩn chưa tìm được."
   }
  ],
  "paper": {
@@ -101,7 +123,7 @@
   "ac_cap": 10,
   "ac_label": "Anh chung (đề chung)",
   "difficulty": null,
-  "difficulty_evidence": "Chưa tìm được đề chuyên Anh của Phan Ngọc Hiển hay Bạc Liêu các năm 2022–2026, hoặc nhận xét về độ khó.",
+  "difficulty_evidence": "Chưa tìm được đề chuyên Anh của Phan Ngọc Hiển hay Bạc Liêu các năm 2022–2026 hoặc nhận xét về độ khó. Gián tiếp: điểm chuẩn chuyên Anh Phan Ngọc Hiển thấp (24,3–32,4/50 giai đoạn 2021–2025) và năm 2024 trường không tuyển đủ chỉ tiêu do điểm thi thấp (Thanh Niên) → mức cạnh tranh thấp hơn nhiều tỉnh khác, chưa suy ra được độ khó đề. Springboard.vn liệt kê có đề chính thức chuyên Anh Cà Mau 2026 nhưng chưa đọc được nội dung.",
   "minutes": 150,
   "has_listening": true,
   "essay_words": null,
@@ -110,37 +132,73 @@
     "format": "listening",
     "items": null,
     "points": null,
-    "note": "Kế hoạch 2026: Tiếng Anh chuyên có thêm phần nghe; chưa có đề cụ thể"
+    "note": "Kế hoạch 2025 và 2026 của Cà Mau: Tiếng Anh chuyên thi tự luận, có thêm phần nghe; chưa có đề cụ thể"
+   },
+   {
+    "format": "other",
+    "items": null,
+    "points": null,
+    "note": "Phần viết tự luận (các dạng chưa xác minh)"
    }
   ],
-  "sample_links": []
+  "sample_links": [
+   "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/"
+  ]
  },
  "exam_2026": {
-  "dates": "Nhận hồ sơ chuyên 01–13/6/2026; thi tuyển 26–28/6/2026; chấm 29/6–04/7; xét tuyển và công bố kết quả chuyên 06/7/2026; phúc khảo 07–13/7/2026.",
-  "organisation": "Sở GD&ĐT Cà Mau (tỉnh mới) chỉ tổ chức thi tuyển vào 2 trường chuyên (Phan Ngọc Hiển – Cà Mau cũ, Bạc Liêu – Bạc Liêu cũ) theo một lịch chung; toàn bộ trường THPT công lập, DTNT, GDTX xét tuyển (không thi). Mỗi trường chuyên có chỉ tiêu và điểm chuẩn riêng. Chưa tìm được nguồn xác nhận hai trường dùng chung đề chuyên Anh.",
+  "dates": "Nhận hồ sơ chuyên 01–13/6/2026; thi 26–28/6/2026: 26/6 sáng Ngữ văn (120'), chiều Toán (120'); 27/6 sáng Tiếng Anh chung (90'), chiều chuyên Văn, chuyên Toán (150'); 28/6 sáng chuyên Lý, Hóa, Tiếng Anh (150'), chiều chuyên Sinh, Sử, Địa, Tin (150'). Chấm 29/6–04/7; công bố kết quả chuyên 06/7/2026; phúc khảo xong trước 13/7/2026.",
+  "organisation": "Sở GD&ĐT Cà Mau (tỉnh mới) tổ chức một kỳ thi chung, cùng lịch, cho 2 trường chuyên tại 2 điểm thi: Phan Ngọc Hiển (712 thí sinh, chỉ tiêu ≤ 350) và Bạc Liêu (557 thí sinh, chỉ tiêu ≤ 315); tổng 1.269 thí sinh. Toàn bộ trường THPT công lập, DTNT, GDTX xét tuyển (không thi). Mỗi trường chuyên có chỉ tiêu và điểm chuẩn riêng. Chưa tìm được nguồn nói rõ hai điểm thi dùng chung đề, nhưng cùng Sở, cùng lịch, cùng ngày giờ thi (Công lý 26/6/2026).",
   "common_subjects": [
    "Ngữ văn",
    "Toán",
    "Tiếng Anh"
   ],
-  "notes": "Chỉ thí sinh dự thi chuyên mới thi 3 môn chung. Ngữ văn, Toán 120 phút; Tiếng Anh chung 90 phút (50% trắc nghiệm, 50% tự luận); môn chuyên 150 phút; Tiếng Anh chuyên có thêm phần nghe. Điểm bài thi thang 10, làm tròn 0,25."
+  "notes": "Chỉ thí sinh dự thi chuyên mới thi 3 môn chung. Tiếng Anh chung 90 phút (50% trắc nghiệm, 50% tự luận); môn chuyên 150 phút; Tiếng Anh chuyên tự luận có thêm phần nghe; Tin học chuyên 2026 thi lập trình trên máy. Điểm bài thi thang 10, làm tròn 0,25. Năm 2025 (trước sáp nhập): Cà Mau cũ thi 12–14/6/2025, 455 thí sinh/350 chỉ tiêu (chọi 1,3), chuyên Anh sáng 14/6; Bạc Liêu cũ thi 22–24/5/2025 (hơn 7.000 thí sinh toàn tỉnh vì mọi trường đều thi), chuyên Bạc Liêu 9 lớp/315, công bố điểm tối 3/6/2025. Năm 2024 Cà Mau cũ: 601 thí sinh/350 chỉ tiêu, tuyển được 341 (chuyên Sử thiếu 10 vì điểm thấp)."
  },
  "plan_2027": null,
- "stories": [],
- "prep_tips": [
-  "Tiếng Anh chung ở Cà Mau dài 90 phút với 50% tự luận (dài hơn nhiều tỉnh khác) – luyện cả phần viết tự luận ở bài chung (tuyensinh247 2026).",
-  "Đề chuyên Anh có phần nghe – cần luyện nghe thường xuyên (tuyensinh247 2026).",
-  "Điều kiện: học lực, rèn luyện cả năm các lớp THCS từ Khá trở lên và mọi bài thi > 2,0 – giữ học bạ ổn định từ lớp 6 (tuyensinh247 2026).",
-  "Phan Ngọc Hiển có 70 chỉ tiêu chuyên Anh, gấp đôi chuyên Bạc Liêu (35) (tuyensinh247 2026)."
+ "stories": [
+  {
+   "title": "Cà Mau: Không tuyển đủ chỉ tiêu lớp 10 trường chuyên do điểm thi thấp",
+   "who": "báo",
+   "year": 2024,
+   "school": "THPT chuyên Phan Ngọc Hiển",
+   "summary": "Kỳ thi 2024 có 601 thí sinh đăng ký cho 350 chỉ tiêu nhưng trường chỉ tuyển được 341 vì điểm thi thấp và có thí sinh bị điểm liệt; chuyên Anh lấy 24,30 (NV1), 26,65 (NV2) trên thang 50.",
+   "takeaways": [
+    "Tỷ lệ chọi ở Cà Mau thấp (1,3–1,7) nhưng vẫn phải vượt ngưỡng mọi bài > 2,0 và đạt điểm xét tối thiểu",
+    "Điểm chuẩn thấp không có nghĩa đề dễ – nhiều thí sinh không đạt"
+   ],
+   "url": "https://thanhnien.vn/ca-mau-khong-tuyen-du-chi-tieu-lop-10-truong-chuyen-do-diem-thi-thap-185240624190343527.htm"
+  },
+  {
+   "title": "Tỷ lệ 'chọi' vào lớp 10 trường chuyên ở Cà Mau '1 chọi 1,3'",
+   "who": "báo",
+   "year": 2025,
+   "school": "THPT chuyên Phan Ngọc Hiển",
+   "summary": "Năm 2025 chỉ 455 học sinh dự thi cho 350 chỉ tiêu (giảm hơn 100 so với 2024). Chuyên Anh thi sáng 14/6, tự luận có phần nghe; Tiếng Anh chung 50% trắc nghiệm, 50% tự luận.",
+   "takeaways": [
+    "Chuyên Anh là lớp duy nhất có 2 lớp (70 chỉ tiêu) nên cơ hội rộng hơn các môn khác",
+    "Luyện cả nghe và viết tự luận vì đề chuyên Anh Cà Mau có nghe"
+   ],
+   "url": "https://giaoducthoidai.vn/ty-le-choi-vao-lop-10-truong-chuyen-o-ca-mau-1-choi-13-post735271.html"
+  }
  ],
- "confidence": "low",
+ "prep_tips": [
+  "Tiếng Anh chung ở Cà Mau dài 90 phút với 50% tự luận (dài hơn nhiều tỉnh khác) – luyện cả phần viết tự luận ở bài chung (tuyensinh247 2026, Giáo dục & Thời đại 2025).",
+  "Đề chuyên Anh tự luận có phần nghe – luyện nghe thường xuyên (kế hoạch 2025, 2026).",
+  "Điều kiện: học lực, rèn luyện cả năm các lớp THCS từ Khá trở lên và mọi bài thi > 2,0 – giữ học bạ ổn định từ lớp 6 (tuyensinh247 2026).",
+  "Điểm chuẩn chuyên Anh Phan Ngọc Hiển 2021–2025 chỉ 24–32/50, năm 2024 trường còn thiếu chỉ tiêu: mục tiêu thực tế là ~6/10 mỗi bài; đạt 7/10 đều 4 bài (35/50) là gần như chắc đỗ (Download.vn, Giáo dục & Thời đại).",
+  "Phan Ngọc Hiển có 70 chỉ tiêu chuyên Anh, gấp đôi chuyên Bạc Liêu (35) (tuyensinh247 2026).",
+  "Kỳ thi cuối tháng 6 (26–28/6/2026), muộn hơn hầu hết các tỉnh – có thêm gần 1 tháng ôn sau khi kết thúc năm học (Công lý 2026)."
+ ],
+ "confidence": "medium",
  "gaps": [
-  "Không tìm được điểm chuẩn chuyên Anh năm nào (2022–2026) của chuyên Phan Ngọc Hiển và chuyên Bạc Liêu.",
-  "Không có đề chuyên Anh và nhận xét độ khó của hai trường.",
-  "Thiếu quy định nguyện vọng chuyên năm 2026 và số thí sinh đăng ký.",
-  "Không rõ hai trường dùng chung đề chuyên năm 2026 hay không.",
+  "Điểm chuẩn chuyên Anh 2026 của cả hai trường (công bố 6/7/2026 nhưng chưa có trang web nào đăng số).",
+  "Chuyên Bạc Liêu: điểm chuẩn 2022, 2023, 2025 và công thức/thang điểm của Bạc Liêu cũ (điểm 2024 = 74,25 cho thấy thang > 50).",
+  "Không có đề chuyên Anh và nhận xét độ khó của hai trường; cấu trúc chi tiết (số câu, điểm phần nghe, bài viết).",
+  "Quy định nguyện vọng chuyên năm 2026 và số thí sinh đăng ký riêng lớp chuyên Anh.",
+  "Không rõ hai điểm thi dùng chung đề chuyên Anh năm 2026 hay không.",
   "Kế hoạch 2027 chưa tìm thấy.",
-  "Không tìm được bài chia sẻ kinh nghiệm ôn thi chuyên Anh thật."
+  "Chưa có chia sẻ ôn thi của học sinh/giáo viên (chỉ có bài báo)."
  ],
  "sources": [
   {
@@ -150,6 +208,50 @@
   {
    "title": "Tuyensinh247 – Điểm chuẩn lớp 10 Cà Mau",
    "url": "https://diemthi.tuyensinh247.com/dc-lop10/ca-mau-p30.html"
+  },
+  {
+   "title": "Công lý – Cà Mau bắt đầu kỳ thi tuyển sinh vào lớp 10 THPT chuyên (26/6/2026)",
+   "url": "https://congly.vn/ca-mau-bat-dau-ky-thi-tuyen-sinh-vao-lop-10-thpt-chuyen-527702.html"
+  },
+  {
+   "title": "Giáo dục & Thời đại – Cà Mau công bố danh sách trúng tuyển lớp 10 chuyên (2024, điểm chuẩn NV1/NV2)",
+   "url": "https://giaoducthoidai.vn/ca-mau-cong-bo-danh-sach-thi-sinh-trung-tuyen-vao-cac-lop-10-chuyen-post688815.html"
+  },
+  {
+   "title": "Giáo dục & Thời đại – Tỷ lệ chọi vào lớp 10 trường chuyên ở Cà Mau 1 chọi 1,3 (2025)",
+   "url": "https://giaoducthoidai.vn/ty-le-choi-vao-lop-10-truong-chuyen-o-ca-mau-1-choi-13-post735271.html"
+  },
+  {
+   "title": "Thanh Niên – Cà Mau không tuyển đủ chỉ tiêu lớp 10 trường chuyên do điểm thi thấp (2024)",
+   "url": "https://thanhnien.vn/ca-mau-khong-tuyen-du-chi-tieu-lop-10-truong-chuyen-do-diem-thi-thap-185240624190343527.htm"
+  },
+  {
+   "title": "Download.vn – Điểm chuẩn lớp 10 Cà Mau (Phan Ngọc Hiển 2021–2023, công thức 2022)",
+   "url": "https://download.vn/diem-chuan-lop-10-ca-mau-60733"
+  },
+  {
+   "title": "Điện máy Chợ Lớn – Điểm chuẩn lớp 10 Cà Mau (Phan Ngọc Hiển 2024, 2025)",
+   "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-tinh-ca-mau"
+  },
+  {
+   "title": "Hoatieu – Điểm thi tuyển sinh lớp 10 Bạc Liêu 2025 (điểm chuẩn chuyên Bạc Liêu 2024)",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-bac-lieu-209168"
+  },
+  {
+   "title": "Download.vn – Điểm chuẩn vào 10 Bạc Liêu (chuyên Bạc Liêu 2024)",
+   "url": "https://download.vn/diem-chuan-lop-10-bac-lieu-60599"
+  },
+  {
+   "title": "Báo Quốc tế – Bạc Liêu công bố điểm thi, điểm chuẩn lớp 10 (2025)",
+   "url": "https://baoquocte.vn/bac-lieu-cong-bo-diem-thi-diem-chuan-lop-10-316580.html"
+  },
+  {
+   "title": "Bnews – Điểm thi và điểm chuẩn vào lớp 10 năm 2025 tại Bạc Liêu",
+   "url": "https://bnews.vn/diem-thi-va-diem-chuan-vao-lop-10-nam-2025-tai-bac-lieu/376102.html"
+  },
+  {
+   "title": "Thư viện Pháp luật – Lịch thi, chỉ tiêu chuyên Bạc Liêu 2025-2026 (KH 32/KH-UBND)",
+   "url": "https://thuvienphapluat.vn/phap-luat/lich-thi-tuyen-sinh-lop-10-bac-lieu-20252026-chi-tieu-tuyen-sinh-lop-10-truong-thpt-chuyen-bac-lieu-206384.html"
   },
   {
    "title": "Hoatieu – Điểm thi tuyển sinh lớp 10 năm 2026 Cà Mau",
@@ -162,6 +264,10 @@
   {
    "title": "Hoatieu – Lịch thi vào 10 năm 2026-2027",
    "url": "https://hoatieu.vn/phap-luat/lich-thi-tuyen-sinh-lop-10-213450"
+  },
+  {
+   "title": "Springboard – Tuyển tập đề chính thức chuyên Anh 2026 (có Cà Mau)",
+   "url": "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/"
   }
  ],
  "formula_raw": {
@@ -175,8 +281,9 @@
   "max": 50,
   "conditions": "2026: có hộ khẩu thường trú hoặc tạm trú tại Cà Mau; kết quả rèn luyện, học tập cả năm các lớp THCS từ Khá trở lên; thi đủ các bài, không vi phạm quy chế; mọi bài thi > 2,0 điểm.",
   "formula_by_year": {
-   "2021": "Cà Mau cũ: tổng 3 môn chung (hệ số 1) + môn chuyên (hệ số 2); không môn nào ≤ 2,00 (Hoatieu).",
-   "2022-2025": "Chưa tìm được văn bản riêng của Cà Mau cũ và Bạc Liêu cũ."
+   "2021-2025 (Cà Mau cũ – Phan Ngọc Hiển)": "3 môn chung (hệ số 1) + môn chuyên (hệ số 2), thang 50; không môn nào ≤ 2,00 (Hoatieu 2021; Download.vn 2022; Giáo dục & Thời đại 2024).",
+   "2024-2025 (Bạc Liêu cũ – chuyên Bạc Liêu)": "CHƯA RÕ hệ số. Điểm chuẩn 2024 của chuyên Bạc Liêu lên tới 74,25 (Toán, Tiếng Anh) nên thang điểm phải lớn hơn 50 (có thể 3 môn chung ×2 + chuyên ×2 = 80, chưa có văn bản xác nhận). Kế hoạch 32/KH-UBND Bạc Liêu 2025 chỉ ghi 'điểm tổng các môn thi, mỗi môn thang 10', điểm ưu tiên/khuyến khích cộng vào điểm từng môn; mọi bài > 0.",
+   "2026": "Toàn tỉnh mới: Văn + Toán + Anh + chuyên × 2, thang 50 (tuyensinh247, kế hoạch Sở)."
   }
  },
  "schools_raw": [
@@ -188,20 +295,27 @@
     {
      "lang": "Anh",
      "quota": {
+      "2025": 70,
       "2026": 70
      },
      "applicants": {},
      "cut": {
-      "2022": null,
-      "2023": null,
-      "2024": null,
-      "2025": null,
+      "2021": 32.4,
+      "2022": 27.25,
+      "2023": 30.65,
+      "2024": 24.3,
+      "2025": 25.8,
       "2026": null
      },
      "scale": {
+      "2021": 50,
+      "2022": 50,
+      "2023": 50,
+      "2024": 50,
+      "2025": 50,
       "2026": 50
      },
-     "note": "2026: 2 lớp Tiếng Anh, tối đa 35 HS/lớp; toàn trường tối đa 350 HS (tuyensinh247). Chưa tìm được điểm chuẩn năm nào."
+     "note": "NV1. 2024: NV1 24,30 / NV2 26,65 (Giáo dục & Thời đại 24/6/2024). 2025: 25,8 (dienmaycholon). 2021–2023: Download.vn. Toàn trường: 2024 601 thí sinh/350 chỉ tiêu, tuyển 341; 2025 455 thí sinh/350; 2026 712 thí sinh/350. 2 lớp Tiếng Anh (≤35 HS/lớp). Điểm chuẩn 2026 (công bố 6/7/2026) chưa tìm được trên web."
     }
    ]
   },
@@ -213,24 +327,34 @@
     {
      "lang": "Anh",
      "quota": {
+      "2025": 35,
       "2026": 35
      },
      "applicants": {},
      "cut": {
       "2022": null,
       "2023": null,
-      "2024": null,
+      "2024": 74.25,
       "2025": null,
       "2026": null
      },
      "scale": {
+      "2024": null,
       "2026": 50
      },
-     "note": "2026: 1 lớp Tiếng Anh, tối đa 35 HS; toàn trường tối đa 315 HS (tuyensinh247). Chưa tìm được điểm chuẩn năm nào."
+     "note": "2024: NV1 74,25 – cao nhất trường cùng chuyên Toán (Hoatieu, Download.vn); thang điểm năm 2024 chưa xác minh (chắc chắn > 50, công thức Bạc Liêu cũ chưa tìm được). 2025: Sở Bạc Liêu công bố 3/6/2025 nhưng các trang tổng hợp không ghi số. 2026: 1 lớp Tiếng Anh ≤35 HS, toàn trường 315 chỉ tiêu/557 thí sinh; điểm chuẩn chưa tìm được."
     }
    ]
   }
  ],
- "goals": [],
- "goal_default": null
+ "goals": [
+  {
+   "k": "so-chuyen-phan-ngoc-hien",
+   "name": "chuyên Phan Ngọc Hiển",
+   "score": 3.8,
+   "paper": "so",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "so-chuyen-phan-ngoc-hien"
 }

@@ -8,7 +8,7 @@
  "edition": "Bản Gia Lai",
  "exam_md": [
   6,
-  1
+  28
  ],
  "papers": {
   "so": {
@@ -18,9 +18,9 @@
    "ac_cap": 10,
    "ac_label": "Anh chung (đề chung)",
    "difficulty": null,
-   "difficulty_evidence": "Chưa tìm được nguồn.",
-   "minutes": null,
-   "has_listening": null,
+   "difficulty_evidence": "Gia Lai cũ (Hùng Vương) 2024: 'Đề thi theo hình thức tự luận, riêng môn Tiếng Anh chuyên có thêm phần thi kỹ năng nghe' (Báo Gia Lai 14/6/2024). Bình Định cũ: chưa tìm được mô tả hoặc đề. 2026 chung đề cả tỉnh, 150 phút. Chưa có đề mẫu công khai hay nhận xét độ khó; mức điểm chuẩn Anh 36–38/50 ở LQĐ và Hùng Vương (thủ khoa 44–45) cho thấy thí sinh đỗ đạt ≈ 7–7,5/10 mỗi bài.",
+   "minutes": 150,
+   "has_listening": true,
    "essay_words": null,
    "sections": [],
    "sample_links": []
@@ -29,23 +29,26 @@
  "formulas": {
   "so": {
    "w": {
-    "ach": 2
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 2.0
    },
    "paper": "so",
-   "text": null,
-   "max": null
+   "text": "ĐXTC (điểm xét tuyển chuyên) = Ngữ văn + Toán + Tiếng Anh (hệ số 1) + điểm bài thi môn chuyên × 2 (thang 50). Lớp chuyên Anh: môn chuyên là bài Tiếng Anh chuyên 150 phút.",
+   "max": 50
   }
  },
  "m3_label": null,
  "exams": {
   "so": {
    "label": "Kỳ thi của Sở GD&ĐT Gia Lai",
-   "date": "",
-   "rule": "Chưa xác minh."
+   "date": "27–28/6/2026 (muộn nhất cả nước): sáng 27/6 Ngữ văn 120' (8h00); chiều 27/6 Tiếng Anh 60' (14h00); sáng 28/6 Toán 120' (8h00); chiều 28/6 môn chuyên 150' (14h00–16h30). Đăng ký trực tuyến 20–30/5/2026. Kết quả chấm thi trước 7/7 (dự kiến 6/7); điểm chuẩn và danh sách trúng tuyển 14/7/2026; hoàn thành tuyển sinh trước 20/7/2026 (Kế hoạch và Công văn hướng dẫn 13/3/2026 của Sở GD&ĐT Gia Lai).",
+   "rule": "2026: thí sinh thi chuyên xếp hạng theo ĐXTC; trượt chuyên được xét tiếp vào các nguyện vọng trường công lập đã đăng ký (NV sau có điểm chuẩn cao hơn NV trước cùng trường ít nhất 1,5 điểm). Văn bản đọc được không ghi rõ được đăng ký mấy lớp chuyên/mấy trường chuyên — cần xác minh. Cả 3 trường chỉ có lớp chuyên Anh, không có lớp Pháp/Trung/Nhật (tuyensinh247 2023–2026; Phụ lục III 2026). Lê Quý Đôn và Chu Văn An trước đây có hệ không chuyên (2022: LQĐ 90, CVA có lớp không chuyên 23,5; 2023 LQĐ 30, CVA 26,75)."
   }
  },
  "nv2_exam": null,
- "nv_rule": "Chưa xác minh.",
+ "nv_rule": "2026: thí sinh thi chuyên xếp hạng theo ĐXTC; trượt chuyên được xét tiếp vào các nguyện vọng trường công lập đã đăng ký (NV sau có điểm chuẩn cao hơn NV trước cùng trường ít nhất 1,5 điểm). Văn bản đọc được không ghi rõ được đăng ký mấy lớp chuyên/mấy trường chuyên — cần xác minh. Cả 3 trường chỉ có lớp chuyên Anh, không có lớp Pháp/Trung/Nhật (tuyensinh247 2023–2026; Phụ lục III 2026). Lê Quý Đôn và Chu Văn An trước đây có hệ không chuyên (2022: LQĐ 90, CVA có lớp không chuyên 23,5; 2023 LQĐ 30, CVA 26,75).",
  "options": [
   {
    "id": "so-chuyen-hung-vuong-anh",
@@ -57,11 +60,19 @@
    "f": "so",
    "exam": "so",
    "group": "nv",
-   "years": [],
-   "cut": [],
-   "scale": null,
-   "quota": {},
-   "note": "Tên trường theo đầu bài; chưa xác minh được trong phiên này."
+   "years": [
+    2026
+   ],
+   "cut": [
+    37.25
+   ],
+   "scale": 50,
+   "quota": {
+    "2024": 70,
+    "2025": 70,
+    "2026": 70
+   },
+   "note": "Trường tuyển 13 lớp/455 chỉ tiêu, 2 lớp Anh (≤35/lớp) các năm 2024–2026. 2024: 410 thí sinh đăng ký chuyên Anh (đông nhất trường), thủ khoa Anh 45,1 (Nguyễn Phạm An Bình, THCS Lý Tự Trọng); 2025: thủ khoa Anh 44,95 (Cao Tiến Hoàn, THCS Trần Phú); 2023: thủ khoa Anh 43,65 (Trần Hiếu Ngân). Điểm chuẩn 2022–2025 chỉ nằm trong file PDF danh sách trúng tuyển từng lớp trên Báo Gia Lai, chưa đọc được; tuyensinh247 2025 không có dòng Anh. 2026: 37,25 (hoatieu, theo Sở GD&ĐT Gia Lai)."
   },
   {
    "id": "so-chuyen-le-quy-don-anh",
@@ -73,11 +84,26 @@
    "f": "so",
    "exam": "so",
    "group": "nv",
-   "years": [],
-   "cut": [],
-   "scale": null,
-   "quota": {},
-   "note": "Tên trường theo đầu bài; chưa xác minh được trong phiên này. Lớp Pháp/Trung (nếu có): chưa rõ."
+   "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    32.5,
+    37.6,
+    38.2,
+    36.0,
+    37.95
+   ],
+   "scale": 50,
+   "quota": {
+    "2025": 70,
+    "2026": 70
+   },
+   "note": "2022: 32,5 (Thanh Niên; 230 trúng tuyển chuyên + 90 không chuyên). 2023: 37,6; 2024: 38,2 (tuyensinh247; Mực Tím 2024). 2025: 36 NV1, 70 chỉ tiêu, trường tuyển 330 (fptshop; Dân trí 20/6/2025 — điểm dự kiến). 2026: 37,95 — cao nhất trong 3 trường chuyên tỉnh mới (hoatieu). 2026 có 2 lớp Anh (Phụ lục III)."
   },
   {
    "id": "so-chuyen-chu-van-an-anh",
@@ -89,11 +115,26 @@
    "f": "so",
    "exam": "so",
    "group": "nv",
-   "years": [],
-   "cut": [],
-   "scale": null,
-   "quota": {},
-   "note": "Tên trường theo đầu bài; chưa xác minh được địa điểm và lớp chuyên Anh."
+   "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    29.25,
+    32.25,
+    35.2,
+    34.1,
+    34.25
+   ],
+   "scale": 50,
+   "quota": {
+    "2025": 35,
+    "2026": 35
+   },
+   "note": "Trường chuyên thứ hai của Bình Định cũ, đặt tại thị xã Hoài Nhơn (Thanh Niên 2022). 2022: 29,25 (253 trúng tuyển cả trường). 2023: 32,25; 2024: 35,2 (tuyensinh247). 2025: 34,1 NV1, 35 chỉ tiêu, trường tuyển 254 (fptshop, Dân trí). 2026: 34,25 (hoatieu); 1 lớp Anh. Thấp hơn Lê Quý Đôn 2–5 điểm — lựa chọn vừa sức ở khu vực bắc Bình Định cũ."
   }
  ],
  "paper": {
@@ -103,33 +144,100 @@
   "ac_cap": 10,
   "ac_label": "Anh chung (đề chung)",
   "difficulty": null,
-  "difficulty_evidence": "Chưa tìm được nguồn.",
-  "minutes": null,
-  "has_listening": null,
+  "difficulty_evidence": "Gia Lai cũ (Hùng Vương) 2024: 'Đề thi theo hình thức tự luận, riêng môn Tiếng Anh chuyên có thêm phần thi kỹ năng nghe' (Báo Gia Lai 14/6/2024). Bình Định cũ: chưa tìm được mô tả hoặc đề. 2026 chung đề cả tỉnh, 150 phút. Chưa có đề mẫu công khai hay nhận xét độ khó; mức điểm chuẩn Anh 36–38/50 ở LQĐ và Hùng Vương (thủ khoa 44–45) cho thấy thí sinh đỗ đạt ≈ 7–7,5/10 mỗi bài.",
+  "minutes": 150,
+  "has_listening": true,
   "essay_words": null,
   "sections": [],
   "sample_links": []
  },
  "exam_2026": {
-  "dates": null,
-  "organisation": "chưa xác minh",
-  "common_subjects": [],
-  "notes": "Theo Thư viện Pháp luật: trường THPT tuyển sinh bằng thi tuyển công bố kết quả chấm thi trước 07/7/2026; trường tuyển bằng xét tuyển hoàn thành trước 20/7/2026. Như vậy năm 2026 có cả thi tuyển và xét tuyển trong tỉnh mới. Năm 2025, Gia Lai cũ tuyển công lập bằng xét tuyển, còn Bình Định cũ thi tuyển (Dân trí)."
+  "dates": "27–28/6/2026 (muộn nhất cả nước): sáng 27/6 Ngữ văn 120' (8h00); chiều 27/6 Tiếng Anh 60' (14h00); sáng 28/6 Toán 120' (8h00); chiều 28/6 môn chuyên 150' (14h00–16h30). Đăng ký trực tuyến 20–30/5/2026. Kết quả chấm thi trước 7/7 (dự kiến 6/7); điểm chuẩn và danh sách trúng tuyển 14/7/2026; hoàn thành tuyển sinh trước 20/7/2026 (Kế hoạch và Công văn hướng dẫn 13/3/2026 của Sở GD&ĐT Gia Lai).",
+  "organisation": "một kỳ thi chung cho cả tỉnh mới: một lịch thi, một kế hoạch cho 47 trường THPT trong Phụ lục I và cả 3 trường chuyên (Hùng Vương – Pleiku, Lê Quý Đôn – Quy Nhơn, Chu Văn An – Hoài Nhơn); văn bản không nói tách khu vực Gia Lai cũ/Bình Định cũ. Hiểu là chung đề toàn tỉnh.",
+  "common_subjects": [
+   "Ngữ văn",
+   "Toán",
+   "Tiếng Anh"
+  ],
+  "notes": "Năm đầu sau sáp nhập Gia Lai + Bình Định. Trước 2026 hai tỉnh cũ rất khác nhau: Gia Lai cũ chỉ thi tuyển với thí sinh vào chuyên Hùng Vương (công lập xét tuyển; 2024: 1.325 thí sinh thi 6–8/6, Tiếng Anh đông nhất 410; 2025: 928 thí sinh), còn Bình Định cũ thi tuyển toàn tỉnh (2025: 18.084 thí sinh, 880 thi thêm môn chuyên vào Lê Quý Đôn và Chu Văn An). Chỉ tiêu 2026: Hùng Vương 13 lớp chuyên (Toán 2, Anh 2…); Lê Quý Đôn 10 lớp (Anh 2); Chu Văn An 9 lớp (Anh 1); mỗi lớp ≤ 35 (Công văn hướng dẫn 13/3/2026, Phụ lục III). Tiếng Anh chung 60 phút."
  },
  "plan_2027": null,
  "stories": [],
- "prep_tips": [],
- "confidence": "low",
+ "prep_tips": [
+  "Gia Lai 2026 thi muộn nhất cả nước (27–28/6) — học sinh có thêm ~1 tháng ôn so với Nghệ An/Hà Tĩnh; nhưng cũng là tỉnh có ngưỡng kép: bài chuyên ≥ 5, mỗi bài khác ≥ 3, tổng ≥ 22 (Kế hoạch Sở GD&ĐT Gia Lai 2026).",
+  "Từ 2026 ba trường chuyên thi chung đề, cùng thang 50: Lê Quý Đôn 37,95 > Hùng Vương 37,25 > Chu Văn An 34,25 — có thể so sánh trực tiếp để chọn trường (hoatieu).",
+  "Môn chuyên chỉ ×2 (20/50): ba môn chung chiếm 60% — mục tiêu ≥ 8 Toán/Văn/Anh chung và ≥ 7 bài chuyên để đạt ~38.",
+  "Đề chuyên Anh Hùng Vương có phần nghe (Báo Gia Lai 2024) — luyện nghe dù đề chung không có.",
+  "Chuyên Anh Hùng Vương là lớp đông thí sinh nhất trường (410/1.325 năm 2024, 2 lớp 70 chỉ tiêu ≈ chọi 1:6) — cạnh tranh cao nhất tỉnh Gia Lai cũ.",
+  "Tiêu chí phụ khi bằng điểm: điểm bài chuyên rồi điểm sơ tuyển và điểm TB lớp 9 — giữ học bạ lớp 9 tốt."
+ ],
+ "confidence": "medium",
  "gaps": [
-  "Gần như toàn bộ dữ liệu: hết hạn mức WebSearch của lượt làm việc trước khi nghiên cứu sở này, cần chạy lại.",
-  "Ngày thi 2026, cách tổ chức (đề chung hay theo khu vực Gia Lai cũ/Bình Định cũ), môn thi chung.",
-  "Công thức xét tuyển chuyên 2022–2026 của cả hai tỉnh cũ, điều kiện, NV.",
-  "Chỉ tiêu và điểm chuẩn chuyên Anh ở Hùng Vương, Lê Quý Đôn (Quy Nhơn), Chu Văn An 2022–2026.",
-  "Xác minh danh sách trường chuyên và lớp ngoại ngữ khác (Pháp/Trung/Nhật).",
-  "Cấu trúc và độ khó đề chuyên Anh, đề mẫu.",
-  "Chia sẻ kinh nghiệm, kế hoạch 2027."
+  "Điểm chuẩn chuyên Anh Hùng Vương 2022–2025 (chỉ có trong PDF danh sách trúng tuyển trên Báo Gia Lai, chưa đọc được)",
+  "Đề chuyên Anh (cấu trúc, điểm từng phần, độ dài bài viết) của cả Gia Lai cũ và Bình Định cũ; chưa ước được CEFR",
+  "Số lớp chuyên/trường chuyên được đăng ký 2026 và cơ chế NV2 chuyên (văn bản đọc được chưa ghi)",
+  "Số thí sinh đăng ký chuyên Anh từng trường 2025–2026; điểm chuẩn chính thức 2026 (hoatieu ghi theo Sở, công bố 14/7)",
+  "Văn bản Bình Định cũ 2022–2024 về công thức/hệ số (hiện suy từ mức điểm; 2025 có công thức ×2 trên fptshop)",
+  "Chia sẻ kinh nghiệm thủ khoa chuyên Anh (chỉ có tên và điểm thủ khoa Hùng Vương 2023–2025)",
+  "Kế hoạch 2027"
  ],
  "sources": [
+  {
+   "title": "Sở GD&ĐT Gia Lai: Kế hoạch tổ chức kỳ thi tuyển sinh lớp 10 năm học 2026-2027 (lịch thi, công thức ĐXTC, điều kiện)",
+   "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2026/NTKL/27052026/KH-2593.pdf"
+  },
+  {
+   "title": "Sở GD&ĐT Gia Lai: Công văn hướng dẫn tuyển sinh lớp 10 năm học 2026-2027 ngày 13/3/2026 (chỉ tiêu lớp chuyên 3 trường, mốc thời gian)",
+   "url": "https://cdn.thuvienphapluat.vn//uploads/Hoidapphapluat/2026/NTKL/25062026/Cong-van-1236.pdf"
+  },
+  {
+   "title": "Hoatieu: Điểm chuẩn lớp 10 Gia Lai 2026 (3 trường chuyên, theo Sở GD&ĐT)",
+   "url": "https://hoatieu.vn/diem-chuan-lop-10-gia-lai-209065"
+  },
+  {
+   "title": "Báo Lâm Đồng: Điểm thi lớp 10 năm 2026 tại Gia Lai (công thức chuyên, điểm Anh 2023–2025)",
+   "url": "https://baolamdong.vn/diem-thi-lop-10-nam-2026-tai-gia-lai-445806.html"
+  },
+  {
+   "title": "Tuyensinh247: Điểm chuẩn lớp 10 Gia Lai 2023–2025 (Hùng Vương, Lê Quý Đôn, Chu Văn An)",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/gia-lai-p10.html"
+  },
+  {
+   "title": "Dân trí 20/6/2025: Bình Định công bố số lượng trúng tuyển và điểm chuẩn dự kiến vào lớp 10",
+   "url": "https://dantri.com.vn/giao-duc/binh-dinh-cong-bo-so-luong-trung-tuyen-va-diem-chuan-du-kien-vao-lop-10-20250620103249665.htm"
+  },
+  {
+   "title": "FPT Shop: Điểm chuẩn lớp 10 Bình Định 2025 (công thức ×2, chỉ tiêu từng lớp LQĐ/CVA)",
+   "url": "https://fptshop.com.vn/tin-tuc/danh-gia/diem-chuan-lop-10-binh-dinh-2025-181194"
+  },
+  {
+   "title": "Mực Tím 16/6/2024: Công bố điểm chuẩn tuyển sinh lớp 10 tỉnh Bình Định",
+   "url": "https://muctim.tuoitre.vn/cong-bo-diem-chuan-tuyen-sinh-lop-10-tinh-binh-dinh-101240616171413737.htm"
+  },
+  {
+   "title": "Thanh Niên 24/6/2022: Điểm chuẩn trúng tuyển vào trường THPT công lập và hệ chuyên Bình Định",
+   "url": "https://thanhnien.vn/diem-chuan-trung-tuyen-vao-truong-thpt-cong-lap-va-he-chuyen-binh-dinh-1851471770.htm"
+  },
+  {
+   "title": "Báo Gia Lai 14/6/2024: Gia Lai công bố điểm thi vào lớp 10 Trường THPT chuyên Hùng Vương (1.325 thí sinh, 410 thi Anh, đề Anh chuyên có nghe)",
+   "url": "https://baogialai.com.vn/gia-lai-cong-bo-diem-thi-vao-lop-10-truong-thpt-chuyen-hung-vuong-post281339.html"
+  },
+  {
+   "title": "Báo Gia Lai 2024: Trường THPT chuyên Hùng Vương công bố kết quả tuyển sinh lớp 10 năm học 2024-2025 (thủ khoa, chỉ tiêu)",
+   "url": "https://baogialai.com.vn/truong-thpt-chuyen-hung-vuong-cong-bo-danh-sach-thi-sinh-trung-tuyen-vao-lop-10-nam-hoc-2024-2025-post284391.html"
+  },
+  {
+   "title": "Báo Gia Lai 23/6/2025: Công bố danh sách trúng tuyển vào lớp 10 Trường THPT chuyên Hùng Vương (928 thí sinh, thủ khoa)",
+   "url": "https://baogialai.com.vn/cong-bo-danh-sach-trung-tuyen-vao-lop-10-truong-thpt-chuyen-hung-vuong-post329424.html"
+  },
+  {
+   "title": "Báo Gia Lai 12/7/2023: Công bố kết quả trúng tuyển vào lớp 10 Trường THPT chuyên Hùng Vương",
+   "url": "https://baogialai.com.vn/cong-bo-ket-qua-trung-tuyen-vao-lop-10-truong-thpt-chuyen-hung-vuong-post242722.html"
+  },
+  {
+   "title": "Hoatieu: Điểm thi tuyển sinh lớp 10 Gia Lai (2024 chỉ thi tuyển với thí sinh vào Hùng Vương)",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-gia-lai-209171"
+  },
   {
    "title": "Thư viện Pháp luật – Lịch công bố điểm thi vào 10 2026-2027 của 34 tỉnh thành",
    "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/lich-cong-bo-diem-thi-vao-10-2026-2027-cua-34-tinh-thanh-ngay-nao-138090187.html"
@@ -140,11 +248,22 @@
   }
  ],
  "formula_raw": {
-  "text": null,
-  "parts": [],
-  "max": null,
-  "conditions": null,
-  "formula_by_year": {}
+  "text": "ĐXTC (điểm xét tuyển chuyên) = Ngữ văn + Toán + Tiếng Anh (hệ số 1) + điểm bài thi môn chuyên × 2 (thang 50). Lớp chuyên Anh: môn chuyên là bài Tiếng Anh chuyên 150 phút.",
+  "parts": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh (chung)",
+   "Anh chuyên×2"
+  ],
+  "max": 50,
+  "conditions": "2026: dự thi đủ, không vi phạm quy chế; bài môn chuyên ≥ 5,00; mỗi bài còn lại ≥ 3,00; ĐXTC ≥ 22,0. Xếp từ cao xuống; bằng điểm xét lần lượt: điểm bài chuyên, điểm sơ tuyển, điểm TB môn chuyên lớp 9, điểm TB các môn lớp 9; còn bằng nhau Giám đốc Sở quyết định. Trượt chuyên được chuyển sang các NV trường công lập đã đăng ký.",
+  "formula_by_year": {
+   "2022": "Bình Định: điểm chuẩn Anh LQĐ 32,5; CVA 29,25 (Thanh Niên 24/6/2022) — mức điểm phù hợp thang 50; văn bản hệ số chưa đọc được. Gia Lai (Hùng Vương): chưa tìm được điểm chuẩn.",
+   "2023": "Bình Định: Anh LQĐ 37,6; CVA 32,25 (tuyensinh247). Gia Lai: Hùng Vương 385 trúng tuyển lớp chuyên + 80 không chuyên; thủ khoa Anh 43,65 (Báo Gia Lai 12/7/2023); điểm chuẩn không công bố trên báo.",
+   "2024": "Bình Định: Anh LQĐ 38,2; CVA 35,2 (tuyensinh247). Gia Lai: Hùng Vương thủ khoa Anh 45,1/50 (Báo Gia Lai 2024); công thức 'tổng điểm xét tuyển' thang 50.",
+   "2025": "Bình Định (fptshop, Dân trí 20/6/2025): Điểm xét tuyển = Toán + Ngữ văn + môn thứ ba + môn chuyên × 2; Anh LQĐ 36 (70 chỉ tiêu), CVA 34,1 (35 chỉ tiêu). Gia Lai: Hùng Vương thủ khoa Anh 44,95; điểm chuẩn không có trên báo.",
+   "2026": "ĐXTC = Văn + Toán + Anh + môn chuyên × 2; chuyên ≥ 5, bài khác ≥ 3, ĐXTC ≥ 22 (Kế hoạch tuyển sinh 2026-2027 Sở GD&ĐT Gia Lai; hoatieu, Báo Lâm Đồng ghi cùng công thức)"
+  }
  },
  "schools_raw": [
   {
@@ -154,17 +273,27 @@
    "classes": [
     {
      "lang": "Anh",
-     "quota": {},
-     "applicants": {},
+     "quota": {
+      "2024": 70,
+      "2025": 70,
+      "2026": 70
+     },
+     "applicants": {
+      "2024": 410
+     },
      "cut": {
       "2022": null,
       "2023": null,
       "2024": null,
       "2025": null,
-      "2026": null
+      "2026": 37.25
      },
-     "scale": {},
-     "note": "Tên trường theo đầu bài; chưa xác minh được trong phiên này."
+     "scale": {
+      "2024": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "Trường tuyển 13 lớp/455 chỉ tiêu, 2 lớp Anh (≤35/lớp) các năm 2024–2026. 2024: 410 thí sinh đăng ký chuyên Anh (đông nhất trường), thủ khoa Anh 45,1 (Nguyễn Phạm An Bình, THCS Lý Tự Trọng); 2025: thủ khoa Anh 44,95 (Cao Tiến Hoàn, THCS Trần Phú); 2023: thủ khoa Anh 43,65 (Trần Hiếu Ngân). Điểm chuẩn 2022–2025 chỉ nằm trong file PDF danh sách trúng tuyển từng lớp trên Báo Gia Lai, chưa đọc được; tuyensinh247 2025 không có dòng Anh. 2026: 37,25 (hoatieu, theo Sở GD&ĐT Gia Lai)."
     }
    ]
   },
@@ -175,42 +304,82 @@
    "classes": [
     {
      "lang": "Anh",
-     "quota": {},
+     "quota": {
+      "2025": 70,
+      "2026": 70
+     },
      "applicants": {},
      "cut": {
-      "2022": null,
-      "2023": null,
-      "2024": null,
-      "2025": null,
-      "2026": null
+      "2022": 32.5,
+      "2023": 37.6,
+      "2024": 38.2,
+      "2025": 36.0,
+      "2026": 37.95
      },
-     "scale": {},
-     "note": "Tên trường theo đầu bài; chưa xác minh được trong phiên này. Lớp Pháp/Trung (nếu có): chưa rõ."
+     "scale": {
+      "2022": 50,
+      "2023": 50,
+      "2024": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "2022: 32,5 (Thanh Niên; 230 trúng tuyển chuyên + 90 không chuyên). 2023: 37,6; 2024: 38,2 (tuyensinh247; Mực Tím 2024). 2025: 36 NV1, 70 chỉ tiêu, trường tuyển 330 (fptshop; Dân trí 20/6/2025 — điểm dự kiến). 2026: 37,95 — cao nhất trong 3 trường chuyên tỉnh mới (hoatieu). 2026 có 2 lớp Anh (Phụ lục III)."
     }
    ]
   },
   {
    "name": "THPT chuyên Chu Văn An",
    "old_province": "Bình Định",
-   "city": null,
+   "city": "Hoài Nhơn",
    "classes": [
     {
      "lang": "Anh",
-     "quota": {},
+     "quota": {
+      "2025": 35,
+      "2026": 35
+     },
      "applicants": {},
      "cut": {
-      "2022": null,
-      "2023": null,
-      "2024": null,
-      "2025": null,
-      "2026": null
+      "2022": 29.25,
+      "2023": 32.25,
+      "2024": 35.2,
+      "2025": 34.1,
+      "2026": 34.25
      },
-     "scale": {},
-     "note": "Tên trường theo đầu bài; chưa xác minh được địa điểm và lớp chuyên Anh."
+     "scale": {
+      "2022": 50,
+      "2023": 50,
+      "2024": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "Trường chuyên thứ hai của Bình Định cũ, đặt tại thị xã Hoài Nhơn (Thanh Niên 2022). 2022: 29,25 (253 trúng tuyển cả trường). 2023: 32,25; 2024: 35,2 (tuyensinh247). 2025: 34,1 NV1, 35 chỉ tiêu, trường tuyển 254 (fptshop, Dân trí). 2026: 34,25 (hoatieu); 1 lớp Anh. Thấp hơn Lê Quý Đôn 2–5 điểm — lựa chọn vừa sức ở khu vực bắc Bình Định cũ."
     }
    ]
   }
  ],
- "goals": [],
- "goal_default": null
+ "goals": [
+  {
+   "k": "so-chuyen-hung-vuong",
+   "name": "chuyên Hùng Vương",
+   "score": 6.8,
+   "paper": "so",
+   "need_tv_more": false
+  },
+  {
+   "k": "so-chuyen-le-quy-don",
+   "name": "chuyên Lê Quý Đôn",
+   "score": 6.8,
+   "paper": "so",
+   "need_tv_more": false
+  },
+  {
+   "k": "so-chuyen-chu-van-an",
+   "name": "chuyên Chu Văn An",
+   "score": 5.8,
+   "paper": "so",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "so-chuyen-le-quy-don"
 }

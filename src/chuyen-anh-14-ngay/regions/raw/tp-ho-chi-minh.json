@@ -3,7 +3,7 @@
  "slug": "tp-ho-chi-minh",
  "merged_from": ["TP. Hồ Chí Minh", "Bình Dương", "Bà Rịa – Vũng Tàu"],
  "exam_2026": {
-  "dates": "1–2/6/2026 (Sở 'chốt' ngày 19/3/2026, sớm hơn khoảng 1 tuần so với 2025). Môn chuyên 150 phút thi trong cùng đợt; buổi cụ thể của môn chuyên chưa xác minh được (năm 2025 ở TP.HCM cũ: môn chuyên chiều 7/6). Điểm chuẩn chuyên công bố 19/6/2026; xác nhận nhập học chuyên khoảng 19–23/6.",
+  "dates": "1–2/6/2026 (Sở 'chốt' ngày 19/3/2026, sớm hơn khoảng 1 tuần so với 2025): 1/6 sáng Ngữ văn (120'), chiều Ngoại ngữ (90'); 2/6 sáng Toán (120'), chiều môn chuyên/bài tích hợp (150'). Đáp án chính thức công bố 5/6; điểm thi từ 9–12/6; điểm chuẩn chuyên 19/6/2026; xác nhận nhập học chuyên online 19–23/6. Năm 2025 TP.HCM cũ: môn chuyên chiều 7/6/2025.",
   "organisation": "Một kỳ thi chung cho cả TP mới (3 khu vực: KV1 = TP.HCM cũ, KV2 = Bình Dương cũ, KV3 = Bà Rịa – Vũng Tàu cũ), một hệ thống đăng ký ts10.hcm.edu.vn; 4 trường chuyên (Lê Hồng Phong, Trần Đại Nghĩa, Hùng Vương, Lê Quý Đôn) cùng công thức và lần đầu tuyển sinh toàn quốc. Báo Tiền Phong dẫn ý kiến hiệu trưởng: học sinh KV2, KV3 'chưa thật sự quen với cấu trúc đề thi của TPHCM mới' – tức năm 2026 hai khu vực này làm đề theo cấu trúc TP.HCM.",
   "common_subjects": ["Toán", "Ngữ văn", "Ngoại ngữ"],
   "notes": "Toán, Ngữ văn 120 phút; Ngoại ngữ 90 phút; môn chuyên 150 phút. Đề chung theo hướng tự luận/vận dụng, chủ yếu kiến thức lớp 8–9 CT GDPT 2018; Sở công bố cấu trúc đề từ 10/2025. 151.254 thí sinh, 242 điểm thi, trong đó 16 điểm thi cho thí sinh dự thi chuyên và tiếng Anh tích hợp. Tỷ lệ chọi 2026: LHP 5.738 hồ sơ/805 chỉ tiêu (7,13; 2025: 4,9); TĐN 2.521/525 (~4,8; 2025: 3,5); Hùng Vương 1.526/455 (3,35); Lê Quý Đôn 1.325/525 (2,52). Năm 2025 (trước sáp nhập) 3 tỉnh thi riêng: TP.HCM 6–7/6/2025; Bình Dương 28–29/5/2025; BR-VT 5–7/6/2025 (chuyên Anh BR-VT có phần nói)."
@@ -26,12 +26,27 @@
  "chuyen_paper": {
   "minutes": 150,
   "scale": 10,
-  "has_listening": null,
-  "essay_words": null,
-  "sections": [],
-  "difficulty": null,
-  "difficulty_evidence": "Chưa tìm được nguồn mô tả cấu trúc chi tiết và nhận xét độ khó đề chuyên Anh TP.HCM. Các nguồn chỉ nói: bài chuyên 150 phút, theo chương trình THCS 'có phân hóa để tuyển học sinh năng khiếu'. Gián tiếp: điểm chuẩn chuyên Anh LHP/TĐN ổn định 34,25–37,25/50 giai đoạn 2022–2026. Đề chung Ngoại ngữ 90 phút: 4 phần, 40 câu (tuyensinh247). Năm 2025 BR-VT (Lê Quý Đôn): bài chuyên Anh gồm viết 120 phút + nói (3 phút chuẩn bị, 2 phút trả lời, ghi âm, tối đa 1,0 điểm); Bình Dương 2025: bài chuyên 150 phút, tự luận.",
-  "sample_links": []
+  "has_listening": false,
+  "essay_words": 220,
+  "sections": [
+   {"format": "sentence_completion", "items": 20, "points": null, "note": "I. Use of English – A: MCQ chọn đáp án điền vào chỗ trống (ngữ pháp, từ vựng, thành ngữ, cụm động từ). Điểm ghi trên đề 2025: cả phần I = 30/110"},
+   {"format": "open_cloze", "items": 20, "points": null, "note": "I. Use of English – B: điền từ vào 2 đoạn văn (10 chỗ trống/đoạn)"},
+   {"format": "reading_mcq", "items": 10, "points": null, "note": "II. Reading – A: đọc hiểu trắc nghiệm. Cả phần II = 35/110 trên đề 2025"},
+   {"format": "gap_text", "items": 5, "points": null, "note": "II. Reading – B: ghép câu A–G vào chỗ trống (2 câu thừa)"},
+   {"format": "cloze", "items": 20, "points": null, "note": "II. Reading – C: điền từ (chọn/điền) vào 2 đoạn văn"},
+   {"format": "other", "items": 14, "points": null, "note": "II. Reading – câu 67–80: trắc nghiệm + ghép câu/đoạn (bài đọc dài)"},
+   {"format": "error_id", "items": 5, "points": null, "note": "III. Tìm và sửa 5 lỗi trong đoạn văn ~9 dòng (5/110)"},
+   {"format": "word_formation", "items": 10, "points": null, "note": "IV. Chia dạng đúng của từ trong ngoặc (10/110)"},
+   {"format": "key_word", "items": 10, "points": null, "note": "V. Writing – viết lại câu dùng từ gợi ý, 3–10 từ (20/110)"},
+   {"format": "essay", "items": 1, "points": null, "note": "Bài luận 200–220 từ (đề 2025: giới trẻ và kiến thức lịch sử) (10/110). Tổng 110 điểm thô trên đề, quy về thang 10"}
+  ],
+  "difficulty": "B2+",
+  "difficulty_evidence": "Đề chuyên Anh chính thức của Sở TP.HCM thi 7/6/2025 (springboard.vn đăng kèm đáp án tham khảo): 150 phút, KHÔNG có phần nghe và không có ngữ âm; ~115 câu: Use of English (MCQ 20 + open cloze 2 đoạn 20), Reading (MCQ 10, ghép câu 5, điền từ 20, bài dài 14 câu), sửa lỗi 5, word form 10, viết lại câu 10 (3–10 từ), bài luận 200–220 từ; tỉ trọng điểm thô 30/35/5/10/20/10 trên tổng 110. Springboard ước độ khó B2+ đến C1: nhiều thành ngữ, cụm động từ, từ vựng học thuật, ngữ pháp nâng cao. Đề 2026 (chiều 2/6/2026, 150 phút) chưa có bản công khai trên web; Tiền Phong 2026 dẫn hiệu trưởng: học sinh KV Bình Dương, BR-VT cũ 'chưa quen cấu trúc đề TP.HCM' nên điểm giảm, tức đề 2026 giữ cấu trúc TP.HCM. Gián tiếp: điểm chuẩn chuyên Anh LHP/TĐN ổn định 34,25–37,25/50 giai đoạn 2022–2026. Đề chung Ngoại ngữ 90 phút: 40 câu, 4 phần (ngữ âm 1đ; từ vựng–ngữ pháp–giao tiếp 3đ; word form, viết cụm/viết câu 4đ; đọc điền từ + đọc hiểu 3đ – tuyensinh247, VUS). Năm 2025 BR-VT (Lê Quý Đôn): bài chuyên Anh gồm viết 120 phút + nói (3 phút chuẩn bị, 2 phút trả lời, ghi âm, tối đa 1,0 điểm); Bình Dương 2025: bài chuyên 150 phút, tự luận. Tham khảo thêm: PTNK (ĐHQG, thi riêng) công bố đề minh họa chuyên Anh 2026: 130 câu, 150 phút, không nghe, không essay, Language Use 4đ – Reading 2,5đ – Writing (word form, sửa lỗi, viết lại câu) 3,5đ (PLO 24/3/2026).",
+  "sample_links": [
+   "https://springboard.vn/de-thi-chuyen-anh-10-tphcm-2025-2026/",
+   "https://tailieudieuky.com/baiviet/document/de-chuyen-anh-tp-hcm-2025-2026-dap-an/",
+   "https://image.plo.vn/Uploaded/2026/yrfjpybfjpy/2026_03_24/de-thi-tieng-anh-chuyen-3607.pdf"
+  ]
  },
  "schools": [
   {
@@ -109,24 +124,24 @@
   {"title": "Một trong hai thủ khoa kỳ thi tuyển sinh vào lớp 10 ở TPHCM học tiếng Anh tích hợp", "who": "báo", "year": 2025, "school": "THPT chuyên Trần Đại Nghĩa (trúng chuyên Toán)", "summary": "Lữ Trần Quỳnh Lan (THCS Trần Quốc Toản 1) đồng thủ khoa 28,75 điểm (Anh 9,5), học chương trình tích hợp Đề án 5695. Em luyện tiếng Anh hằng ngày với giáo viên nước ngoài, bạn bè và một website tích hợp AI.", "takeaways": ["Chia thời gian đều cho cả 3 môn chung vì mỗi môn đều tính vào điểm xét chuyên", "Dùng tiếng Anh hằng ngày (nói với giáo viên, bạn bè, công cụ AI), không chỉ làm đề", "Nắm chắc kiến thức nền trước rồi mới làm bài nâng cao"], "url": "https://giaoduc.net.vn/mot-trong-hai-thu-khoa-ky-thi-tuyen-sinh-vao-lop-10-o-tphcm-hoc-tieng-anh-tich-hop-post252291.gd"},
   {"title": "Lí giải điểm chuẩn trường chuyên TPHCM biến động trái chiều", "who": "báo", "year": 2026, "school": "Hùng Vương, Lê Quý Đôn", "summary": "Một hiệu trưởng giải thích: đề năm 2026 'vừa sức' nên điểm khu vực trung tâm tăng, còn học sinh Bình Dương, Bà Rịa – Vũng Tàu cũ chưa quen cấu trúc đề TP.HCM nên điểm chuẩn chuyên Anh ở Hùng Vương, Lê Quý Đôn giảm.", "takeaways": ["Học sinh khu vực Bình Dương, BR-VT cũ nên luyện đúng cấu trúc đề TP.HCM, đừng ôn theo đề tỉnh cũ", "Đặt nguyện vọng cẩn thận: trúng nguyện vọng nào phải học nguyện vọng đó"], "url": "https://tienphong.vn/li-giai-diem-chuan-truong-chuyen-tphcm-bien-dong-trai-chieu-post1852580.html"},
   {"title": "Điểm chuẩn lớp 10 chuyên TPHCM: Những môn từng có biên độ lệch đến 10 điểm", "who": "báo", "year": 2026, "school": "4 trường chuyên TP.HCM", "summary": "Dân trí tổng hợp điểm chuẩn nhiều năm: chuyên Anh 2025 ở LHP 35,5 (Đề án 35,75), TĐN Đề án 35, Hùng Vương 34,4, Lê Quý Đôn 36,1. Tỷ lệ chọi năm 2026 tăng mạnh (LHP từ 4,9 lên 7,13).", "takeaways": ["Điểm chuẩn có thể dao động vài điểm mỗi năm, nên đặt mục tiêu cao hơn điểm chuẩn năm gần nhất 1–2 điểm"], "url": "https://dantri.com.vn/giao-duc/diem-chuan-lop-10-chuyen-tphcm-nhung-mon-tung-co-bien-do-lech-den-10-diem-20260618235424544.htm"},
+  {"title": "Top 11 học sinh cao điểm nhất kỳ thi lớp 10 TP.HCM 2026 đến từ những trường nào?", "who": "báo", "year": 2026, "school": "nhiều trường (hầu hết đỗ lớp 10 chuyên)", "summary": "11 thí sinh cao điểm nhất đều từ 28,75/30 trở lên (gồm ưu tiên); Nguyễn Đăng Phúc (TH&THCS Hồng Ngọc) là người duy nhất đạt 10 Tiếng Anh và 10 Toán. Trịnh Gia Kiệt (THCS Nguyễn Du, Q.1; Anh 9,5) đỗ chuyên Tin LHP và PTNK, chia sẻ cách học: học chủ động, rút 'công thức' cho từng dạng bài, hỏi ngay khi chưa hiểu.", "takeaways": ["3 môn chung gần tuyệt đối (28–29/30) là nền của mọi thủ khoa chuyên – không bỏ bê Toán, Văn", "Rút 'công thức' cho từng dạng bài rồi luyện theo dạng", "Không giấu dốt: hỏi thầy cô, bạn bè ngay"], "url": "https://tuoitre.vn/top-11-hoc-sinh-cao-diem-nhat-ky-thi-lop-10-tphcm-2026-den-tu-nhung-truong-nao-100260621165544972.htm"},
   {"title": "Năm 2025 TPHCM dừng tuyển sinh hàng loạt lớp 10 chuyên", "who": "báo", "year": 2025, "school": "Nguyễn Thượng Hiền, Gia Định, Mạc Đĩnh Chi, Nguyễn Hữu Huân", "summary": "Bốn trường THPT thường bỏ 22 lớp chuyên (khoảng 770 học sinh mỗi năm) để thực hiện quy chế trường chuyên. Lớp chuyên chỉ còn ở trường chuyên, nên suất vào chuyên Anh ít hơn hẳn so với trước 2025.", "takeaways": ["Không còn 'lưới an toàn' chuyên Anh ở trường thường, nên cân nhắc thêm lớp tiếng Anh tích hợp hoặc thi PTNK"], "url": "https://baodautu.vn/nam-2025-tphcm-dung-tuyen-sinh-hang-loat-lop-10-chuyen-d234497.html"}
  ],
  "prep_tips": [
   "Bài chuyên Anh nhân hệ số 2 (20/50 điểm, tức 40% điểm xét), nhưng 3 môn chung vẫn chiếm 30/50, nên không được bỏ Toán, Văn (Tiền Phong 2026, công thức Sở).",
   "Mọi bài thi phải trên 2 điểm mới được xét chuyên, nên tránh để một môn quá yếu (công văn tuyển sinh chuyên 2025).",
-  "Luyện bài 150 phút liên tục cho môn chuyên; môn Ngoại ngữ chung 90 phút gồm 4 phần, 40 câu (Sở TP.HCM, tuyensinh247).",
+  "Đề chuyên Anh TP.HCM (2025) KHÔNG có nghe, không ngữ âm: ~115 câu trong 150 phút, nặng nhất là Use of English (40 câu) và Reading (49 câu) – luyện tốc độ đọc và open cloze; Writing gồm 10 câu viết lại (3–10 từ) + bài luận 200–220 từ (springboard.vn, đề Sở 7/6/2025).",
+  "Luyện bài 150 phút liên tục cho môn chuyên (thi chiều 2/6, ngay sau buổi Toán sáng); môn Ngoại ngữ chung 90 phút gồm 4 phần, 40 câu (Sở TP.HCM, tuyensinh247).",
   "Học sinh học chương trình tích hợp 5695 có thể chọn lớp chuyên Anh Đề án 5695 ở LHP/TĐN, nhưng bài thi gồm cả Toán và Khoa học tự nhiên bằng tiếng Anh, và điểm chuẩn thường cao hơn lớp chuyên Anh thường 0,75–1,5 điểm (SGGP 2024, bảng điểm chuẩn 2024–2026).",
   "Học sinh khu vực Bình Dương, BR-VT cũ: năm 2026 đề theo cấu trúc TP.HCM, không còn đề tỉnh cũ (bài nói của BR-VT 2025 không còn được nhắc), nên luyện đề TP.HCM (Tiền Phong 2026).",
   "Mục tiêu tham khảo năm 2026: LHP/TĐN chuyên Anh khoảng 36,25/50 (trung bình khoảng 7,25/10 mỗi đơn vị điểm); Hùng Vương 32,25; Lê Quý Đôn 33,25 (tuyensinh247, Thư viện Pháp luật)."
  ],
  "confidence": "medium",
  "gaps": [
-  "Cấu trúc đề chuyên Anh TP.HCM (các phần, số câu, điểm, có nghe hay không, độ dài bài viết) và nhận xét độ khó theo CEFR: chưa tìm được nguồn, nên chuyen_paper.sections để trống và has_listening = null.",
-  "Đề và đáp án chuyên Anh các năm (sample_links) chưa thu thập được.",
+  "Cấu trúc đề chuyên Anh 2026 (chỉ có đề 2025 công khai; điểm từng phần trên đề 2025 ghi theo thang thô 110, chưa rõ cách quy về 10); đáp án chính thức của Sở cho đề chuyên Anh chưa thấy đăng; đề 2022–2024 chưa thu thập.",
   "Điểm chuẩn NV2 năm 2023 (LHP, TĐN) và điểm Pháp, Trung, Nhật năm 2023; điểm chuyên Anh 2022–2023 của 4 trường thường có lớp chuyên.",
   "Điểm chuẩn chuyên Anh 2022 của Hùng Vương (Bình Dương) và Lê Quý Đôn (BR-VT); NV2 các năm 2023–2025 của hai trường này.",
   "Số hồ sơ theo từng lớp chuyên Anh (chỉ có số theo trường).",
-  "Buổi thi cụ thể của môn chuyên năm 2026.",
   "Kế hoạch tuyển sinh 2027: mới thấy tiêu đề bài (Tuổi Trẻ 25/8/2026), chưa đọc được nội dung.",
   "Chưa có chia sẻ ôn thi chuyên Anh của học sinh hoặc giáo viên; 4 mục stories hiện chủ yếu là bài báo (hết lượt tìm kiếm web trong phiên này)."
  ],
@@ -165,6 +180,14 @@
   {"title": "PLO – TP.HCM công bố chỉ tiêu tuyển sinh lớp 10 năm học 2026-2027", "url": "https://plo.vn/tphcm-cong-bo-chi-tieu-tuyen-sinh-lop-10-nam-hoc-2026-2027-post904958.html"},
   {"title": "Báo Hà Tĩnh – Tuyển sinh lớp 10 THPT chuyên Hùng Vương khu vực Bình Dương 2026-2027", "url": "https://baohatinh.vn/tv/tuyen-sinh-lop-10-thpt-chuyen-hung-vuong-khu-vuc-binh-duong-2026-2027-37474.html"},
   {"title": "Giáo dục Việt Nam – Thủ khoa vào lớp 10 TPHCM 2025 học tiếng Anh tích hợp", "url": "https://giaoduc.net.vn/mot-trong-hai-thu-khoa-ky-thi-tuyen-sinh-vao-lop-10-o-tphcm-hoc-tieng-anh-tich-hop-post252291.gd"},
+  {"title": "Springboard – Đề thi chuyên Anh 10 TP.HCM 2025–2026 (đề Sở 7/6/2025, cấu trúc, đáp án tham khảo)", "url": "https://springboard.vn/de-thi-chuyen-anh-10-tphcm-2025-2026/"},
+  {"title": "Tài liệu diệu kỳ – Đề chuyên Anh TP.HCM 2025-2026 & đáp án", "url": "https://tailieudieuky.com/baiviet/document/de-chuyen-anh-tp-hcm-2025-2026-dap-an/"},
+  {"title": "PLO – Đề minh họa chuyên Anh PTNK 2026 (PDF, tham khảo dạng bài)", "url": "https://image.plo.vn/Uploaded/2026/yrfjpybfjpy/2026_03_24/de-thi-tieng-anh-chuyen-3607.pdf"},
+  {"title": "Báo Lào Cai – Đáp án chính thức các môn thi lớp 10 TP.HCM 2026 (lịch thi từng buổi, môn chuyên chiều 2/6)", "url": "https://baolaocai.vn/dap-an-chinh-thuc-cac-mon-thi-lop-10-tphcm-2026-moi-nhat-post901046.html"},
+  {"title": "VUS – Đề thi tuyển sinh lớp 10 môn Anh 2026 của 34 tỉnh (cấu trúc đề chung TP.HCM 2026)", "url": "https://vus.edu.vn/blog-vus/de-thi-tuyen-sinh-lop-10-mon-anh-2026"},
+  {"title": "VnExpress – Điểm chuẩn lớp 10 chuyên TP HCM năm 2026 (phân cực 3 khu vực, tỷ lệ chọi)", "url": "https://vnexpress.net/diem-chuan-lop-10-chuyen-tp-hcm-nam-2026-5087443.html"},
+  {"title": "Tuổi Trẻ – Top 11 học sinh cao điểm nhất kỳ thi lớp 10 TP.HCM 2026", "url": "https://tuoitre.vn/top-11-hoc-sinh-cao-diem-nhat-ky-thi-lop-10-tphcm-2026-den-tu-nhung-truong-nao-100260621165544972.htm"},
+  {"title": "Tuyensinh247 – Thông tin tuyển sinh lớp 10 TP.HCM 2026 (cấu trúc đề chung, kế hoạch 2027)", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/ho-chi-minh-p23.html"},
   {"title": "Tuổi Trẻ – trang chủ đề tuyển sinh lớp 10 (tiêu đề bài phương án 2027, dự thảo thi 2 môn)", "url": "https://tuoitre.vn/plo/tuyen-sinh-lop-10-tag105466.html"},
   {"title": "Thư viện Pháp luật – chủ đề thi vào lớp 10 (đề xuất thi 2 môn)", "url": "https://thuvienphapluat.vn/phap-luat/chu-de/thi-vao-lop-10"}
  ]

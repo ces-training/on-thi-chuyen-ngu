@@ -1,0 +1,81 @@
+{
+  "so": "Tuyên Quang",
+  "slug": "tuyen-quang",
+  "merged_from": ["Tuyên Quang", "Hà Giang"],
+  "exam_2026": {
+    "dates": "27–28/5/2026 (QĐ 555/QĐ-UBND ngày 26/3/2026 của UBND tỉnh Tuyên Quang). Ngày 27/5: sáng Toán (90', 7h30) và Khoa học tự nhiên (90', 10h00), chiều Ngữ văn (120', 14h30) – ba môn chung cho mọi thí sinh; ngày 28/5: môn chuyên (văn bản không ghi buổi/giờ). Kết quả trường chuyên công bố trước 10/7/2026 (CV 1133/SGDĐT-QLCL ngày 08/4/2026).",
+    "organisation": "Một kế hoạch, một lịch thi và một bộ môn thi chung cho cả tỉnh mới; tuyển sinh trên địa bàn toàn tỉnh. Hai trường chuyên được giao chỉ tiêu riêng: THPT Chuyên Tuyên Quang (490 HS/14 lớp) và THPT Chuyên Hà Giang (350 HS/10 lớp). Văn bản không nói rõ hai trường dùng chung đề chuyên hay có được đăng ký cả hai trường không (cùng sở, cùng ngày thi 28/5 nên khả năng cao là đề chung và chỉ thi được một trường – chưa xác nhận).",
+    "common_subjects": ["Toán", "Ngữ văn", "Khoa học tự nhiên"],
+    "notes": "ĐẶC BIỆT: môn thi thứ ba năm 2026 là Khoa học tự nhiên (trắc nghiệm), KHÔNG phải Tiếng Anh – thí sinh chuyên Anh chỉ thi tiếng Anh ở bài chuyên. Lớp chuyên Tiếng Anh và Tiếng Trung (Chuyên Hà Giang) đều thi môn chuyên Tiếng Anh. Năm 2025 (trước sáp nhập) Tuyên Quang thi 3 môn chung Toán, Văn, Tiếng Anh; Chuyên Tuyên Quang thi 2–3/6/2025, 751 thí sinh đăng ký (937 lượt đăng ký môn chuyên vì được đăng ký nhiều lớp). Lưu ý khác: tháng 6–8/2026 Trường THPT Chuyên Tuyên Quang là tâm điểm vụ 146–147 điểm 10 Toán bất thường ở kỳ thi TỐT NGHIỆP THPT 2026, 326 thí sinh phải thi lại – không liên quan kỳ thi lớp 10 nhưng ảnh hưởng uy tín trường."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": "Năm 2026: ĐXTch = Toán + Ngữ văn + Khoa học tự nhiên + 2 × Điểm môn chuyên (mỗi bài thang 10, làm tròn 2 chữ số thập phân). Thang 50.",
+    "parts": ["Toán", "Ngữ văn", "Khoa học tự nhiên", "Anh chuyên×2"],
+    "max": 50,
+    "conditions": "Kết quả rèn luyện và học tập cả năm lớp 7, 8, 9 từ Khá trở lên; thường trú hoặc tốt nghiệp THCS tại Tuyên Quang (QĐ 555/QĐ-UBND). Điểm liệt/điểm sàn môn chuyên chưa tìm được (nằm trong CV 1133/SGDĐT-QLCL chưa đọc được bản đầy đủ).",
+    "formula_by_year": {
+      "2024": "Chưa tìm được văn bản; điểm chuẩn cao nhất 36,25 (Văn) phù hợp thang 50 với chuyên ×2 – chưa xác minh.",
+      "2025": "Chưa tìm được văn bản; 3 môn chung là Toán, Văn, Tiếng Anh; điểm chuẩn cao nhất 35,25 (Văn), chuyên Anh 34,85 – phù hợp thang 50 (chuyên ×2) – chưa xác minh.",
+      "2026": "ĐXTch = T + V + KHTN + 2×Mch, thang 50 (CV 1133/SGDĐT-QLCL qua Thư viện Pháp luật). Áp dụng chung cả Chuyên Tuyên Quang và Chuyên Hà Giang."
+    }
+  },
+  "nv_rule": "Năm 2025 Chuyên Tuyên Quang cho đăng ký nhiều lớp chuyên (751 thí sinh nhưng 937 lượt đăng ký môn chuyên – Giáo dục & Thời đại 16/6/2025). Năm 2026: lớp Tiếng Anh và Tiếng Trung (Hà Giang) cùng thi bài chuyên Tiếng Anh; lớp Tin học thi Tin hoặc Toán chuyên (30–60% chỉ tiêu xét từ môn Tin). Số nguyện vọng chuyên 2026, cách xét NV2 và có được đăng ký cả hai trường chuyên không: chưa tìm được. Thí sinh trượt chuyên được chuyển điểm 3 môn chung để xét THPT khác.",
+  "chuyen_paper": {
+    "minutes": null,
+    "scale": 10,
+    "has_listening": null,
+    "essay_words": null,
+    "sections": [],
+    "difficulty": null,
+    "difficulty_evidence": "Chưa tìm được đề chuyên Anh Tuyên Quang/Hà Giang hay nhận xét độ khó. QĐ 555/QĐ-UBND chỉ ghi: mỗi môn chuyên có một đề riêng theo chương trình THCS; Sở hướng dẫn hình thức thi, cấu trúc đề (CV 1133/SGDĐT-QLCL – chưa đọc được).",
+    "sample_links": []
+  },
+  "schools": [
+    {
+      "name": "THPT Chuyên Tuyên Quang",
+      "old_province": "Tuyên Quang",
+      "city": "Phường Minh Xuân (TP Tuyên Quang cũ)",
+      "classes": [
+        {"lang": "Anh", "quota": {"2024": 70, "2025": 70, "2026": 70}, "applicants": {"2025": 185}, "cut": {"2022": null, "2023": null, "2024": 31.65, "2025": 34.85, "2026": 32.75}, "scale": {"2026": 50}, "note": "2 lớp chuyên Anh × 35 HS (2024: 420 HS/12 lớp; 2026: 490 HS/14 lớp). 2025: 185 lượt đăng ký chuyên Anh cho 70 chỉ tiêu (~2,6 chọi), điểm chuẩn 34,85 đứng thứ 2 sau Văn (35,25). 2026: 32,75 (tuyensinh247; thang 50 với 3 môn chung Toán, Văn, KHTN + chuyên×2). 2024: 31,65 (dienmaycholon, tuyensinh247). Thang điểm 2024–2025 chưa xác minh (nhiều khả năng 50)."}
+      ]
+    },
+    {
+      "name": "THPT Chuyên Hà Giang",
+      "old_province": "Hà Giang",
+      "city": "Phường Hà Giang 1 (TP Hà Giang cũ)",
+      "classes": [
+        {"lang": "Anh", "quota": {"2026": 35}, "applicants": {}, "cut": {"2022": null, "2023": null, "2024": 31.7, "2025": null, "2026": 33.75}, "scale": {"2026": 50}, "note": "2026: 10 lớp chuyên/350 HS, mỗi môn 1 lớp 35 HS (QĐ 555/QĐ-UBND); điểm chuẩn Anh 33,75 cao nhất trường (tuyensinh247). 2024: 31,7 (tuyensinh247). 2025: tuyensinh247 để trống, Hoatieu 'đang cập nhật'."},
+        {"lang": "Trung", "admit_by_english": true, "quota": {"2026": 35}, "cut": {"2026": 31.7}, "note": "Lớp chuyên Tiếng Trung thi bài chuyên Tiếng Anh (QĐ 555/QĐ-UBND 2026). Điểm chuẩn 2026: 31,7 (tuyensinh247). Chỉ Chuyên Hà Giang có lớp Trung; Chuyên Tuyên Quang không có."}
+      ]
+    }
+  ],
+  "stories": [],
+  "prep_tips": [
+    "Năm 2026 môn chung thứ ba là Khoa học tự nhiên, không phải Tiếng Anh: điểm tiếng Anh chỉ nằm ở bài chuyên (×2 = 20/50) – học sinh chuyên Anh vẫn phải ôn KHTN (Lý–Hóa–Sinh trắc nghiệm 90') để không mất 10 điểm môn chung (QĐ 555/QĐ-UBND; CV 1133/SGDĐT-QLCL).",
+    "Điểm chuẩn chuyên Anh 3 năm ở Chuyên Tuyên Quang 31,65 → 34,85 → 32,75 (thang 50): để chắc đỗ cần tổng ~35, tức trung bình ~7/10 mỗi thành phần hoặc bài chuyên ≥ 8 nếu môn chung yếu (tuyensinh247, GD&TĐ).",
+    "Chuyên Hà Giang có thêm lớp Tiếng Trung tuyển bằng bài chuyên Tiếng Anh với điểm chuẩn thấp hơn chuyên Anh 2 điểm (31,7 so với 33,75 năm 2026) – phương án dự phòng cho học sinh giỏi tiếng Anh ở khu vực Hà Giang cũ (QĐ 555/QĐ-UBND; tuyensinh247).",
+    "Lịch thi 2026 dồn trong 2 ngày (27–28/5), môn chuyên thi ngay hôm sau 3 môn chung – luyện sức bền làm bài nhiều ngày liên tiếp."
+  ],
+  "confidence": "medium",
+  "gaps": [
+    "Điểm chuẩn chuyên Anh 2022, 2023 cả hai trường; 2025 Chuyên Hà Giang; thang điểm/công thức 2022–2025 (chưa có văn bản gốc)",
+    "Cấu trúc đề chuyên Anh (CV 1133/SGDĐT-QLCL 08/4/2026 chưa đọc được bản đầy đủ), đề mẫu, nhận xét độ khó, thời gian làm bài môn chuyên",
+    "Số nguyện vọng chuyên 2026, có được đăng ký cả hai trường chuyên không, hai trường dùng chung đề hay không, điểm liệt",
+    "Số thí sinh đăng ký chuyên Anh 2026 từng trường",
+    "Kế hoạch 2027; chia sẻ kinh nghiệm thật của học sinh/giáo viên (hết hạn mức tìm kiếm)"
+  ],
+  "sources": [
+    {"title": "Quyết định 555/QĐ-UBND 2026 phê duyệt Kế hoạch tuyển sinh THCS, THPT, GDTX Tuyên Quang 2026-2027 – Thư viện Pháp luật", "url": "https://thuvienphapluat.vn/van-ban/Giao-duc/Quyet-dinh-555-QD-UBND-2026-ke-hoach-Tuyen-sinh-trung-hoc-co-so-Tuyen-Quang-699315.aspx"},
+    {"title": "Công bố điểm thi vào lớp 10 Tuyên Quang 2026-2027 khi nào (CV 1133/SGDĐT-QLCL, công thức ĐXTch) – Thư viện Pháp luật", "url": "https://thuvienphapluat.vn/phap-luat/ho-tro-phap-luat/cong-bo-diem-thi-vao-lop-10-tuyen-quang-nam-2026-2027-khi-nao-thoi-gian-co-diem-thi-tuyen-sinh-lop--638195-267228.html"},
+    {"title": "Lịch thi tuyển sinh lớp 10 Tuyên Quang 2026-2027 – Thư viện Pháp luật", "url": "https://thuvienphapluat.vn/phap-luat/lich-thi-tuyen-sinh-lop-10-tinh-tuyen-quang-20262027-ngay-may-cac-mon-thi-vao-lop-10-tinh-tuyen-qua-261276.html"},
+    {"title": "Thông tin tuyển sinh lớp 10 Tuyên Quang 2026 – tuyensinh247", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/tuyen-quang-p62.html"},
+    {"title": "Điểm chuẩn vào lớp 10 Tuyên Quang 2026 và 3 năm gần đây (Chuyên Tuyên Quang, Chuyên Hà Giang) – tuyensinh247", "url": "https://diemthi.tuyensinh247.com/dc-lop10/tuyen-quang-p62.html"},
+    {"title": "Điểm chuẩn vào lớp 10 Trường THPT Chuyên Tuyên Quang cao nhất 35,25 điểm (2025) – Giáo dục & Thời đại", "url": "https://giaoducthoidai.vn/cong-bo-diem-chuan-vao-lop-10-truong-thpt-chuyen-tuyen-quang-post735929.html"},
+    {"title": "Điểm chuẩn lớp 10 tỉnh Tuyên Quang (2024, 2025) – Điện máy Chợ Lớn", "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-tinh-tuyen-quang"},
+    {"title": "Điểm thi tuyển sinh lớp 10 Tuyên Quang – Hoatieu", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-tuyen-quang-209047"},
+    {"title": "Điểm thi tuyển sinh lớp 10 Hà Giang 2024 – Hoatieu", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-ha-giang-209045"},
+    {"title": "Tuyên Quang, Phú Thọ và Vĩnh Phúc lần lượt công bố điểm chuẩn lớp 10 (2024) – Báo Đầu tư", "url": "https://baodautu.vn/tuyen-quang-phu-tho-va-vinh-phuc-lan-luot-cong-bo-diem-chuan-lop-10-d219039.html"},
+    {"title": "Thi lại ở Chuyên Tuyên Quang không còn điểm 10 môn Toán (vụ thi tốt nghiệp 2026) – Nông nghiệp Môi trường", "url": "https://nongnghiepmoitruong.vn/thi-lai-o-chuyen-tuyen-quang-khong-con-diem-10-mon-toan-d826863.html"}
+  ]
+}

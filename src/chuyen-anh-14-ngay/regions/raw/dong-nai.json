@@ -3,40 +3,56 @@
  "slug": "dong-nai",
  "merged_from": ["Đồng Nai", "Bình Phước"],
  "exam_2026": {
-  "dates": "28–29/5/2026: sáng 28/5 Toán (120 phút); chiều 28/5 Tiếng Anh (60 phút); sáng 29/5 Ngữ văn (120 phút); chiều 29/5 môn chuyên (150 phút).",
-  "organisation": "Sở Đồng Nai mới ban hành một lịch thi chung cho toàn tỉnh, áp dụng cho cả trường công lập thi tuyển và trường chuyên. Ba trường chuyên (Lương Thế Vinh, Quang Trung, Bình Long) được công bố cùng một bảng điểm chuẩn 2026. Thí sinh thi chuyên dự thi tại cụm thi của trường chuyên đã đăng ký. Chưa có nguồn nói rõ đề chuyên Anh có chung cho cả 3 trường hay không.",
+  "dates": "28–29/5/2026: sáng 28/5 Toán (120 phút, 8h00); chiều 28/5 Tiếng Anh (60 phút, 14h00); sáng 29/5 Ngữ văn (120 phút); chiều 29/5 môn chuyên (150 phút, 14h00). Ba trường chuyên công bố danh sách dự kiến trúng tuyển tối 7/6/2026; Sở công bố điểm thi và điểm chuẩn 8/6/2026 (kế hoạch ghi 10/6).",
+  "organisation": "một đề chung cho cả tỉnh mới — Sở GD&ĐT Đồng Nai (mới) ban hành một kế hoạch, một lịch thi cho toàn tỉnh (hơn 30.000 thí sinh, 44 điểm thi). Ba trường chuyên (Lương Thế Vinh – Tam Hiệp, Quang Trung – Đồng Xoài, Bình Long – Bình Long) tuyển toàn tỉnh, thí sinh thi tại cụm thi của trường chuyên đã đăng ký. Đề chuyên Anh 2026 (29/5/2026) dùng chung cho cả 3 trường (springboard.vn); điểm chuẩn công bố riêng từng trường.",
   "common_subjects": ["Toán", "Ngữ văn", "Tiếng Anh"],
-  "notes": "Chỉ 24 trường công lập (có áp lực đăng ký) thi tuyển; các trường còn lại xét tuyển theo kết quả THCS. Tiếng Anh chung gồm trắc nghiệm và tự luận, 60 phút. Năm 2025 (trước sáp nhập): Đồng Nai thi 29–30/5/2025 (theo Hoatieu, cần đối chiếu). Bình Phước 2025: các bài thi tự luận, thang 10, không làm tròn; chuyên Anh có thêm phần nghe."
+  "notes": "Chỉ 21–24 trường công lập có áp lực đăng ký thi tuyển; các trường còn lại xét học bạ. Tiếng Anh chung: thi viết, trắc nghiệm + tự luận, 60 phút. Chỉ tiêu chuyên 2026: Lương Thế Vinh 12 lớp/431 (chuyên Anh 2 lớp/72, cộng 34 chỉ tiêu 'Anh sang Địa'); Quang Trung 8 lớp/350; Bình Long 7 lớp/315. Năm 2025 (trước sáp nhập): Đồng Nai cũ thi 29–30/5/2025 (môn chuyên chiều 30/5), điểm xét chuyên = tổng các bài không nhân hệ số, mỗi bài ≥ 4,0; Bình Phước cũ (KH 325/KH-SGDĐT 24/1/2025): thi 3 ngày, chuyên Anh sáng ngày thứ ba, 150 phút, tự luận có phần nghe, công thức chuyên ×2, mỗi bài > 2, chỉ tiêu chuyên Anh 35/trường."
  },
  "plan_2027": "Chưa tìm được kế hoạch 2027 của Sở Đồng Nai. Cấp Bộ: dự thảo thông tư (lấy ý kiến khoảng 9/2026) đề xuất thi vào lớp 10 công lập chỉ 2 môn Toán, Ngữ văn; chưa rõ ảnh hưởng tới trường chuyên.",
  "formula": {
-  "text": "Nguồn mâu thuẫn. Thông tin tuyển sinh 2026 của Sở (bản trên tuyensinh247): 'Điểm xét tuyển vào lớp chuyên là tổng số điểm các bài thi không nhân hệ số' (tức Toán + Văn + Anh + Môn chuyên, tối đa 40). Hoatieu: tổng điểm các bài thi môn chung + điểm bài thi môn chuyên × 2 (tối đa 50). Bình Phước 2025: Toán + Ngữ văn + Tiếng Anh + Môn chuyên × 2.",
-  "parts": ["Toán", "Ngữ văn", "Tiếng Anh (chung)", "Anh chuyên (hệ số 1 hoặc 2 – chưa xác minh)"],
-  "max": null,
-  "conditions": "Lương Thế Vinh (nội dung chủ yếu năm 2025): đủ 4 bài thi, mỗi bài từ 4,0 trở lên; bằng điểm thì xét điểm trung bình cả năm lớp 9, rồi điểm trung bình môn chuyên. Bình Phước 2025: không cộng điểm ưu tiên, khuyến khích khi xét chuyên.",
+  "text": "2026 (thực tế): Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Tiếng Anh (chung) + Môn chuyên × 2, thang 50; không cộng ưu tiên, khuyến khích. Bằng chứng: thí sinh Lê Gia Vinh (chuyên Anh LTV 2026) Toán 9 + Anh 10 + Văn 8,75 + chuyên 7,6×2 = 42,95 (Vietbao); thủ khoa toàn trường 47 điểm (VietNamNet). Văn bản kế hoạch 2026 của Sở lại ghi 'tổng số điểm các bài thi không nhân hệ số' – mâu thuẫn với kết quả thực tế, có thể bài chuyên được quy về thang 20.",
+  "parts": ["Toán", "Ngữ văn", "Tiếng Anh (chung)", "Anh chuyên×2"],
+  "max": 50,
+  "conditions": "2026: chỉ chọn một trường chuyên; không cộng ưu tiên, khuyến khích cho trường chuyên; kế hoạch 2026 không nêu điểm tối thiểu. Lương Thế Vinh 2025: đủ 4 bài thi, mỗi bài ≥ 4,0; bằng điểm xét ĐTB cả năm lớp 9 rồi ĐTB môn chuyên. Bình Phước 2025: mỗi bài > 2,0; lớp 9 rèn luyện, học tập từ Khá; không cộng ưu tiên.",
   "formula_by_year": {
-   "2025": "Đồng Nai cũ: chưa thống nhất giữa các nguồn (×1 hay ×2 môn chuyên). Bình Phước cũ (Quang Trung, Bình Long): Toán + Văn + Anh + chuyên×2, thang 50.",
-   "2026": "Theo văn bản của Sở trên tuyensinh247: tổng các bài thi không nhân hệ số; chưa đối chiếu được với văn bản gốc."
+   "2024": "Đồng Nai cũ (LTV): điểm chuẩn chuyên Anh 37,65, Toán 38,75 → thang 50 (chuyên ×2) – chưa đọc được văn bản gốc.",
+   "2025": "Đồng Nai cũ (LTV): 'tổng điểm các bài thi môn chung + điểm bài thi môn chuyên' (không hệ số), mỗi bài ≥ 4,0 → thang 40 (công văn dự thảo 2/2025 của Sở Đồng Nai; điểm chuẩn chuyên Anh 31,5/40). Bình Phước cũ (Quang Trung, Bình Long): Văn + Toán + Anh + chuyên×2, thang 50 (KH 325/KH-SGDĐT).",
+   "2026": "Toàn tỉnh mới: thực tế chuyên ×2, thang 50 (kiểm chứng bằng điểm thí sinh 42,95 và thủ khoa 47); kế hoạch Sở ghi 'không nhân hệ số'."
   }
  },
- "nv_rule": "2026: chỉ được chọn MỘT trường chuyên (Lương Thế Vinh, Quang Trung hoặc Bình Long). Có nguyện vọng bổ sung chuyển lớp: Tiếng Anh → Địa lí, Ngữ văn → Lịch sử, Toán → Tin học (vì vậy có điểm chuẩn 'Anh – Địa': LTV 2025 30,30; 2026 36,5). Ngoài chuyên, nguyện vọng vào trường thi tuyển: tối đa 3 (một số phường Biên Hòa cũ), 2 (khu vực phía Bắc, tức Bình Phước cũ) hoặc 1 (các xã, phường còn lại). Không có lớp chuyên ngoại ngữ khác ngoài tiếng Anh.",
+ "nv_rule": "2026: chỉ được chọn MỘT trường chuyên (Lương Thế Vinh, Quang Trung hoặc Bình Long); nguyện vọng chuyên không tính vào số nguyện vọng thường. Nguyện vọng bổ sung chuyển lớp: Tiếng Anh → Địa lí, Ngữ văn → Lịch sử, Toán → Tin học (có điểm chuẩn riêng: LTV 'Anh sang Địa' 2025 30,30/40; 2026 36,5/50 với 34 chỉ tiêu). Ngoài chuyên, nguyện vọng vào trường thi tuyển: tối đa 3 (một số phường Biên Hòa cũ), 2 (khu vực phía Bắc – Bình Phước cũ) hoặc 1. Không có lớp chuyên ngoại ngữ khác ngoài Tiếng Anh. Bình Phước cũ 2025: chọn 2 môn chuyên theo thứ tự ưu tiên (khác buổi), ưu tiên 2 phải cao hơn ít nhất 1,0 điểm.",
  "chuyen_paper": {
   "minutes": 150,
   "scale": 10,
-  "has_listening": null,
+  "has_listening": false,
   "essay_words": null,
-  "sections": [],
-  "difficulty": null,
-  "difficulty_evidence": "Chưa có nguồn nhận xét đề chuyên Anh Đồng Nai. Bình Phước 2025: chuyên Anh tự luận, có phần nghe (tuyensinh247, trang Quang Trung, Bình Long). Điểm chuẩn chuyên Anh của Lương Thế Vinh dao động mạnh: 31,5 (2025) → 38,55 (2026).",
-  "sample_links": []
+  "sections": [
+   {"format": "sentence_completion", "items": null, "points": null, "note": "Lexico-Grammar (tổng 3,0 điểm): MCQ ngữ pháp – từ vựng"},
+   {"format": "dialogue_completion", "items": null, "points": null, "note": "trong khối Lexico-Grammar"},
+   {"format": "error_id", "items": null, "points": null, "note": "trong khối Lexico-Grammar"},
+   {"format": "word_formation", "items": null, "points": null, "note": "trong khối Lexico-Grammar"},
+   {"format": "open_cloze", "items": null, "points": null, "note": "Reading & Use of English (tổng 4,0 điểm): open cloze"},
+   {"format": "cloze", "items": null, "points": null, "note": "multiple-choice cloze"},
+   {"format": "gap_text", "items": null, "points": null, "note": "gapped text / chèn câu"},
+   {"format": "reading_mcq", "items": null, "points": null, "note": "bài đọc dài"},
+   {"format": "transformation", "items": null, "points": null, "note": "Writing (tổng 3,0 điểm): viết lại câu"},
+   {"format": "guided_writing", "items": null, "points": null, "note": "guided writing"},
+   {"format": "essay", "items": 1, "points": null, "note": "bài luận; số từ chưa rõ"}
+  ],
+  "difficulty": "B2+",
+  "difficulty_evidence": "Springboard.vn phân tích đề chính thức Đồng Nai 2026 (29/5/2026, 81 câu, 150 phút; Lexico-Grammar 3,0 – Reading & Use of English 4,0 – Writing 3,0): KHÔNG có phần nghe và không còn ngữ âm; độ khó 'B2 vững đến gần C1', đòi hỏi chính xác ngữ pháp, word form, collocation, phrasal verb và theo dõi lập luận bài đọc, ít từ hiếm. Đề 2025 (Đồng Nai cũ): Phonology 0,5 – Lexico-Grammar 3,5 – Reading 3,2, 96 câu; đề 2024: Phonology 1,0 – Lexico-Grammar 3,0 – Reading 3,0. Bình Phước cũ 2025: chuyên Anh tự luận CÓ phần nghe (KH 325) – học sinh khu vực Bình Phước cũ từ 2026 làm đề Đồng Nai không nghe.",
+  "sample_links": [
+   "https://springboard.vn/de-thi-chuyen-anh-dong-nai-2026/",
+   "https://drive.google.com/drive/folders/1PkqY-eiGJaKafrxVGl_9sUttCDCULV_q"
+  ]
  },
  "schools": [
   {
    "name": "THPT chuyên Lương Thế Vinh",
    "old_province": "Đồng Nai",
-   "city": "Biên Hòa (cũ)",
+   "city": "Biên Hòa (cũ) – phường Tam Hiệp",
    "classes": [
-    {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {"2022": 36.25, "2023": 37.45, "2024": null, "2025": 31.5, "2026": 38.55}, "scale": {"2022": null, "2023": null, "2025": null, "2026": null}, "note": "NV1. 2021: 36,5. Nguyện vọng chuyển Anh → Địa: 2025 30,30; 2026 36,5. Toàn trường 385 chỉ tiêu chuyên (năm của số liệu chưa rõ). Thang điểm chưa xác định do nguồn mâu thuẫn về hệ số môn chuyên."}
+    {"lang": "Anh", "quota": {"2026": 72}, "applicants": {}, "cut": {"2022": 36.25, "2023": 37.45, "2024": 37.65, "2025": 31.5, "2026": 38.55}, "scale": {"2022": 50, "2023": 50, "2024": 50, "2025": 40, "2026": 50}, "note": "NV1. 2026: 38,55 – cao nhất trường (tuyensinh247, Tuổi Trẻ); dienmaycholon ghi 38,85 (lệch). 2024: 37,65 (dienmaycholon). 2025: 31,50 trên thang 40 (công thức không hệ số năm 2025 – Thư viện Pháp luật, công văn Sở). 2021: 36,5. Nguyện vọng chuyển Anh → Địa: 2024 Địa NV1 34,2/NV2 35,5; 2025 30,30; 2026 36,5 (34 chỉ tiêu). Thang 2022–2024 suy từ mức điểm (chưa có văn bản)."}
    ]
   },
   {
@@ -44,7 +60,7 @@
    "old_province": "Bình Phước",
    "city": "Đồng Xoài (cũ)",
    "classes": [
-    {"lang": "Anh", "quota": {"2025": 35}, "applicants": {}, "cut": {"2025": 37.25, "2026": 35.45}, "scale": {"2025": 50, "2026": null}, "note": "NV1. 2025 thi theo đề Bình Phước (chuyên Anh có phần nghe, công thức ×2). 2026 thi theo kỳ thi của Sở Đồng Nai mới."}
+    {"lang": "Anh", "quota": {"2025": 35}, "applicants": {}, "cut": {"2021": 38.3, "2022": null, "2023": null, "2024": null, "2025": 37.25, "2026": 35.45}, "scale": {"2021": 50, "2025": 50, "2026": 50}, "note": "NV1. 2025 thi theo đề Bình Phước (có nghe, chuyên ×2, KH 325). 2026 thi đề Đồng Nai mới. 2021: NV1 38,3/NV2 39,3; 2019: 37,75; 2018: 33,2 (doctailieu). tuyensinh247 không có 2022–2024."}
    ]
   },
   {
@@ -52,32 +68,46 @@
    "old_province": "Bình Phước",
    "city": "Bình Long (cũ)",
    "classes": [
-    {"lang": "Anh", "quota": {"2025": 35}, "applicants": {}, "cut": {"2025": 34.75, "2026": 34.2}, "scale": {"2025": 50, "2026": null}, "note": "NV1. 2025 thi theo đề Bình Phước."}
+    {"lang": "Anh", "quota": {"2025": 35}, "applicants": {}, "cut": {"2021": 35.5, "2022": null, "2023": null, "2024": null, "2025": 34.75, "2026": 34.2}, "scale": {"2021": 50, "2025": 50, "2026": 50}, "note": "NV1. 2025 thi theo đề Bình Phước. 2021: 35,5; 2020: 38,875; 2019: 35,75 (Hoatieu, doctailieu). 2022–2024 chưa tìm được."}
    ]
   }
  ],
- "stories": [],
- "prep_tips": [
-  "Môn chuyên 150 phút thi ngay chiều hôm sau buổi Ngữ văn (chiều 29/5/2026), nên luyện sức bền làm bài hai ngày liền (lịch thi 2026 của Sở).",
-  "Tiếng Anh chung chỉ có 60 phút, gồm trắc nghiệm và tự luận, nên luyện tốc độ (thông tin tuyển sinh 2026 của Sở).",
-  "Ở Lương Thế Vinh, theo quy định gần nhất tìm được, mỗi bài thi phải từ 4,0 trở lên, nên không được bỏ Toán, Văn (tuyensinh247, trang LTV).",
-  "Học sinh khu vực Bình Phước cũ: năm 2025 đề chuyên Anh tỉnh cũ có phần nghe; chưa rõ năm 2026 còn hay không, nên vẫn luyện nghe (tuyensinh247, trang Quang Trung, Bình Long).",
-  "Có thể đăng ký nguyện vọng bổ sung chuyển từ chuyên Anh sang chuyên Địa để tăng cơ hội vào trường chuyên (thông tin tuyển sinh 2026)."
+ "stories": [
+  {"title": "Nam sinh từng là 'Chủ tịch Quốc hội trẻ em' ghi dấu ấn ở kỳ thi lớp 10 chuyên", "who": "học sinh", "year": 2026, "school": "THPT chuyên Lương Thế Vinh (chuyên Anh)", "summary": "Lê Gia Vinh (THCS Hùng Vương, Trảng Bom) đạt 42,95 điểm xét tuyển (Toán 9, Tiếng Anh 10, Văn 8,75, chuyên Anh 7,6), thuộc top 5 chuyên Anh LTV 2026. Em nhiều năm đạt giải IOE, chủ yếu tự học: luyện nghe, đọc tài liệu nước ngoài, xem chương trình và đọc sách tiếng Anh.", "takeaways": ["Tự học là chính, không phụ thuộc học thêm", "Luyện nghe, đọc tài liệu gốc tiếng Anh hằng ngày", "Giữ chắc 3 môn chung: 9 Toán + 10 Anh + 8,75 Văn đóng góp 27,75/42,95 điểm", "Coi các kỳ thi (IOE…) là cơ hội học, không chạy theo áp lực giải"], "url": "https://vietbao.vn/nam-sinh-tung-la-chu-tich-quoc-hoi-tre-em-ghi-dau-an-o-ky-thi-lop-10-chuyen-595538.html"},
+  {"title": "Điểm chuẩn lớp 10 trường chuyên đầu tiên ở Đồng Nai, thủ khoa 47 điểm", "who": "báo", "year": 2026, "school": "THPT chuyên Lương Thế Vinh", "summary": "LTV công bố điểm chuẩn và danh sách dự kiến trúng tuyển ngày 7–8/6/2026; thủ khoa Nguyễn Mi Nga (chuyên Hóa) 47/50 điểm. Chuyên Anh 38,55 là lớp cao nhất.", "takeaways": ["Thang điểm thực tế là 50 (chuyên nhân 2) dù kế hoạch ghi 'không nhân hệ số'", "Chuyên Anh LTV là lớp lấy điểm cao nhất năm 2026"], "url": "https://vietnamnet.vn/diem-chuan-lop-10-truong-chuyen-dau-tien-o-dong-nai-thu-khoa-47-diem-2523650.html"}
  ],
- "confidence": "low",
+ "prep_tips": [
+  "Đề chuyên Anh Đồng Nai 2026 KHÔNG có nghe và không còn ngữ âm: tập trung Use of English (3,0), Reading (4,0: open cloze, MC cloze, gapped text, bài đọc dài) và Writing (3,0: viết lại câu, guided writing, essay) (springboard.vn).",
+  "Đề chuẩn B2+/gần C1 với collocation, phrasal verb, word form đòi hỏi chính xác – luyện word formation và sửa lỗi hằng ngày (springboard.vn).",
+  "Điểm xét = Toán + Văn + Anh + chuyên×2 (thang 50): ví dụ thực tế 2026: 9 + 8,75 + 10 + 7,6×2 = 42,95; điểm chuẩn LTV 38,55 nên cần trung bình ~7,7/10 mỗi đơn vị (Vietbao, tuyensinh247).",
+  "Môn chuyên thi chiều 29/5 ngay sau buổi Văn buổi sáng – luyện sức bền 2 ngày thi liền (kế hoạch 2026).",
+  "Chỉ được chọn một trường chuyên; có nguyện vọng bổ sung Anh → Địa (LTV 2026: 36,5, 34 chỉ tiêu) làm lưới an toàn (kế hoạch 2026, tuyensinh247).",
+  "Học sinh khu vực Bình Phước cũ: đề 2025 có nghe và cấu trúc khác, từ 2026 làm đề Đồng Nai (không nghe) – ôn theo đề LTV/Đồng Nai các năm (KH 325 Bình Phước; springboard.vn)."
+ ],
+ "confidence": "medium",
  "gaps": [
-  "Công thức 2026 (môn chuyên hệ số 1 hay 2) và thang điểm: các nguồn mâu thuẫn.",
-  "Điểm chuẩn chuyên Anh LTV 2024; Quang Trung, Bình Long 2022–2024; NV2 các năm.",
-  "Chỉ tiêu và số hồ sơ lớp chuyên Anh 2026 của từng trường.",
-  "Cấu trúc đề chuyên Anh Đồng Nai (các phần, có nghe hay không năm 2026), độ khó theo CEFR, đề mẫu.",
-  "Đề chuyên Anh 2026 chung hay riêng cho khu vực Bình Phước cũ.",
-  "Không có chia sẻ hay kinh nghiệm ôn thi nào (hết lượt tìm kiếm web trong phiên).",
-  "Kế hoạch 2027 của Sở."
+  "Văn bản chính thức giải thích thang điểm 2026 (kế hoạch ghi 'không nhân hệ số' nhưng điểm thực tế theo thang 50).",
+  "Điểm chuẩn chuyên Anh Quang Trung, Bình Long 2022–2024; NV2 các năm; số hồ sơ chuyên Anh 2026 từng trường; chỉ tiêu chuyên Anh 2026 của Quang Trung, Bình Long.",
+  "Số câu từng phần và số từ bài luận của đề chuyên Anh 2026 (springboard chỉ cho điểm khối); đề 2022–2023.",
+  "Kế hoạch 2027 của Sở.",
+  "Chưa có chia sẻ của giáo viên về đề chuyên Anh Đồng Nai."
  ],
  "sources": [
+  {"title": "Sở GD&ĐT Đồng Nai – Kế hoạch thi tuyển sinh lớp 10 năm 2026 (PDF, dongnai.gov.vn)", "url": "https://dongnai.gov.vn/uploads/binhphuoc/news/2026_02/00_kehoachthituyensinh10_nam2026_0223_end-1.pdf"},
+  {"title": "Sở GD&ĐT Đồng Nai – Công văn (dự thảo) hướng dẫn tuyển sinh lớp 10 năm học 2025-2026", "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/TLV/22-02-2025/Cong-van-633-SGDDT-Dong-Nai.pdf"},
+  {"title": "Sở GD&ĐT Bình Phước – Kế hoạch 325/KH-SGDĐT tuyển sinh lớp 10 năm học 2025-2026", "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/NTTX/170225/KH-325.pdf"},
+  {"title": "Springboard – Đề chuyên Anh Đồng Nai 2026 (cấu trúc, nhận xét độ khó)", "url": "https://springboard.vn/de-thi-chuyen-anh-dong-nai-2026/"},
+  {"title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 năm 2026 THPT chuyên Lương Thế Vinh", "url": "https://thi.tuyensinh247.com/diem-chuan-vao-lop-10-nam-2026-thpt-chuyen-luong-the-vinh-dong-nai-c22a89907.html"},
+  {"title": "Tuổi Trẻ – Đồng Nai công bố điểm thi và điểm chuẩn tuyển sinh lớp 10 (8/6/2026)", "url": "https://tuoitre.vn/dong-nai-cong-bo-diem-thi-va-diem-chuan-tuyen-sinh-lop-10-20260608195137255.htm"},
+  {"title": "VietNamNet – Điểm chuẩn lớp 10 trường chuyên đầu tiên ở Đồng Nai, thủ khoa 47 điểm", "url": "https://vietnamnet.vn/diem-chuan-lop-10-truong-chuyen-dau-tien-o-dong-nai-thu-khoa-47-diem-2523650.html"},
+  {"title": "Vietbao – Nam sinh từng là 'Chủ tịch Quốc hội trẻ em' ghi dấu ấn ở kỳ thi lớp 10 chuyên", "url": "https://vietbao.vn/nam-sinh-tung-la-chu-tich-quoc-hoi-tre-em-ghi-dau-an-o-ky-thi-lop-10-chuyen-595538.html"},
+  {"title": "Thư viện Pháp luật – Điểm chuẩn vào lớp 10 Đồng Nai 2025-2026 (chuyên LTV 2025)", "url": "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/thong-tin-huu-ich/86989/diem-chuan-vao-lop-10-tinh-dong-nai-nam-hoc-2025-2026"},
+  {"title": "Điện máy Chợ Lớn – Điểm chuẩn lớp 10 Đồng Nai (LTV 2024–2026)", "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-tinh-dong-nai"},
   {"title": "Tuyensinh247 – Thông tin tuyển sinh lớp 10 Đồng Nai (2026)", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/dong-nai-p48.html"},
   {"title": "Tuyensinh247 – Điểm chuẩn lớp 10 Đồng Nai (các trường chuyên)", "url": "https://diemthi.tuyensinh247.com/dc-lop10/dong-nai-p48.html"},
-  {"title": "Tuyensinh247 – bảng điểm chuẩn chuyên (trang Bình Phước, gộp vào Đồng Nai)", "url": "https://diemthi.tuyensinh247.com/dc-lop10/binh-phuoc-p56.html"},
+  {"title": "Tuyensinh247 – bảng điểm chuẩn chuyên Quang Trung, Bình Long (trang Bình Phước)", "url": "https://diemthi.tuyensinh247.com/dc-lop10/binh-phuoc-p56.html"},
+  {"title": "Hoatieu – Điểm thi tuyển sinh lớp 10 Bình Phước 2024 (điểm chuẩn chuyên Bình Long 2020–2021, công thức)", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-binh-phuoc-208920"},
+  {"title": "Doctailieu – Điểm chuẩn lớp 10 Bình Phước (chuyên Quang Trung, Bình Long 2018–2021)", "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-binh-phuoc"},
   {"title": "Tuyensinh247 – THPT chuyên Lương Thế Vinh", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-luong-the-vinh-1948.html"},
   {"title": "Tuyensinh247 – THPT chuyên Quang Trung", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-quang-trung-1954.html"},
   {"title": "Tuyensinh247 – THPT chuyên Bình Long", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-binh-long-1958.html"},

@@ -9,22 +9,99 @@
  "edition": "Bản Vĩnh Long",
  "exam_md": [
   7,
-  3
+  1
  ],
  "papers": {
   "so": {
-   "map": "B2",
+   "map": "B2+",
    "label": "đề chuyên Anh của Sở Vĩnh Long",
    "ac_add": 2.5,
    "ac_cap": 10,
    "ac_label": "Anh chung (đề chung)",
-   "difficulty": null,
-   "difficulty_evidence": "Chưa tìm được đề chuyên Anh của Nguyễn Bỉnh Khiêm, Bến Tre hay Nguyễn Thiện Thành (2022–2026) hoặc nhận xét về độ khó. Thời lượng 150 phút lấy theo hướng dẫn thi Trà Vinh 2025; năm 2026 chưa xác nhận.",
-   "minutes": 150,
-   "has_listening": null,
-   "essay_words": null,
-   "sections": [],
-   "sample_links": []
+   "difficulty": "B2+",
+   "difficulty_evidence": "Đề chuyên Anh NBK 2024 (thi 1/6/2024, 120 phút, 4 phần: Listening 2 – Use of Language 3 – Reading 3 – Writing 2, 80 câu + đoạn văn 120–150 từ): springboard.vn nhận xét 'đề khó, dành cho học sinh năng lực cao', từ vựng nâng cao (specter, abhor, hovel, pagan), bài đọc dài ~650–900 từ đòi hỏi suy luận, nghe tốc độ tự nhiên → ước B2+ đến C1. Đề Bến Tre 2025 (120 phút; Listening 1,5 – Phonetics 0,5 – Lexico-Grammar 2,5 – Reading 2,5 – Writing 3,0; essay 180–200 từ) dạng bài tương tự, mức B2. Năm 2026 chuyên Anh toàn tỉnh mới thi 120 phút (Báo Vĩnh Long) – cấu trúc đề 2026 chưa xem được (springboard có liệt kê đề Vĩnh Long 2026). Điểm chuẩn chuyên Anh 2026 chỉ 28,3–30,7/50 (thấp hơn Bến Tre 2025 35,67/50) cho thấy đề 2026 khó hơn hoặc mặt bằng chung thấp.",
+   "minutes": 120,
+   "has_listening": true,
+   "essay_words": 150,
+   "sections": [
+    {
+     "format": "listening",
+     "items": 20,
+     "points": 2.0,
+     "note": "Đề NBK 2024: 3 phần (5 hội thoại ngắn MCQ; điền từ/cụm từ 8 câu; thảo luận radio MCQ 7 câu), nghe 2 lần. Đề Bến Tre 2025: 10 câu, 1,5 điểm (MCQ 5 + điền ≤2 từ 5)"
+    },
+    {
+     "format": "pronunciation",
+     "items": 2,
+     "points": 0.2,
+     "note": "NBK 2024 và Bến Tre 2025 đều có"
+    },
+    {
+     "format": "stress",
+     "items": 2,
+     "points": 0.2,
+     "note": "Bến Tre 2025: 3 câu 0,3"
+    },
+    {
+     "format": "sentence_completion",
+     "items": 16,
+     "points": 1.6,
+     "note": "MCQ ngữ pháp – từ vựng (NBK 2024: 16 câu; Bến Tre 2025: 10 câu 1,0)"
+    },
+    {
+     "format": "other",
+     "items": 5,
+     "points": 0.5,
+     "note": "Điền giới từ/tiểu từ (NBK 2024). Bến Tre 2025 thay bằng closest/opposite meaning 5 câu"
+    },
+    {
+     "format": "word_formation",
+     "items": 5,
+     "points": 0.5,
+     "note": "NBK 2024: 5 câu; Bến Tre 2025: 10 câu 1,0"
+    },
+    {
+     "format": "cloze",
+     "items": 6,
+     "points": 0.6,
+     "note": "NBK 2024: MC cloze 6 câu; Bến Tre 2025: open cloze 10 câu 1,0"
+    },
+    {
+     "format": "reading_mcq",
+     "items": 8,
+     "points": 0.8,
+     "note": "NBK 2024: trích tiểu thuyết ~900 từ, 8 câu; Bến Tre 2025: 2 bài đọc, 10 câu 1,0"
+    },
+    {
+     "format": "gap_text",
+     "items": 6,
+     "points": 0.6,
+     "note": "NBK 2024: điền câu bị lược (A–F)"
+    },
+    {
+     "format": "matching_headings",
+     "items": 10,
+     "points": 1.0,
+     "note": "NBK 2024: ghép 10 ý với 4 đoạn A–D; Bến Tre 2025: 5 câu 0,5"
+    },
+    {
+     "format": "key_word",
+     "items": 5,
+     "points": 1.0,
+     "note": "Viết lại câu dùng từ cho sẵn, 2–5 từ (NBK 2024; Bến Tre 2025: 3–5 từ, 1,0)"
+    },
+    {
+     "format": "paragraph_writing",
+     "items": 1,
+     "points": 1.0,
+     "note": "NBK 2024: đoạn văn 120–150 từ (1,0). Bến Tre 2025: bài luận 180–200 từ (2,0) – nên essay_words có thể 150–200 tuỳ đề"
+    }
+   ],
+   "sample_links": [
+    "https://springboard.vn/de-thi-chuyen-anh-10-chuyen-vinh-long-2024-2025/",
+    "https://springboard.vn/wp-content/uploads/2025/03/De-Chuyen-Anh-Nguyen-Binh-Khiem-Vinh-Long-24-25.pdf",
+    "https://springboard.vn/de-thi-chuyen-anh-10-ben-tre-2025-2026/"
+   ]
   }
  },
  "formulas": {
@@ -36,7 +113,7 @@
     "ach": 2.0
    },
    "paper": "so",
-   "text": "Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Tiếng Anh (hệ số 1) + Môn chuyên × 2; không cộng điểm ưu tiên.",
+   "text": "2026: Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Tiếng Anh (hệ số 1) + Môn chuyên × 2; không cộng điểm ưu tiên.",
    "max": 50
   }
  },
@@ -44,12 +121,12 @@
  "exams": {
   "so": {
    "label": "Kỳ thi của Sở GD&ĐT Vĩnh Long",
-   "date": "Thi tuyển vào 3 trường chuyên dự kiến 02–03/7/2026; công bố kết quả trước 31/7/2026 (tuyensinh247; Hoatieu cũng ghi lịch 2–3/7).",
-   "rule": "Trường chuyên: chưa tìm được quy định số nguyện vọng chuyên năm 2026. Trường không chuyên (xét tuyển): tối đa 3 nguyện vọng vào các trường khác nhau, xét NV1 trước (đủ 90% chỉ tiêu) rồi NV2, NV3. Trúng chuyên thì không chuyển sang công lập không chuyên. Trà Vinh 2025: mỗi thí sinh chỉ nộp 1 bộ hồ sơ vào 1 trường, 1 môn chuyên; trượt chuyên được dùng kết quả để đăng ký trường THPT theo địa bàn."
+   "date": "Làm thủ tục 1/7/2026; thi 2–3/7/2026: 2/7 sáng Ngữ văn (120'), chiều Tiếng Anh chung (60'); 3/7 sáng Toán (120'), chiều môn chuyên – chuyên Tiếng Anh 120 phút, các môn chuyên khác 150 phút. Chấm từ 6/7; Sở công bố điểm chuẩn 3 trường chuyên ngày 22/7/2026 (Báo Vĩnh Long).",
+   "rule": "2026: chỉ được đăng ký dự thi vào MỘT trường chuyên (Báo Vĩnh Long 4/5/2026); chưa rõ có được 2 môn chuyên/NV2 hay không. Trường không chuyên (xét tuyển): tối đa 3 nguyện vọng, xét NV1 trước (90% chỉ tiêu) rồi NV2, NV3. Trúng chuyên thì không chuyển sang công lập không chuyên. Không có lớp chuyên ngoại ngữ khác ngoài Tiếng Anh ở cả 3 trường. Trà Vinh 2025: 1 bộ hồ sơ, 1 trường, 1 môn chuyên; trượt chuyên dùng kết quả đăng ký trường THPT theo địa bàn."
   }
  },
  "nv2_exam": null,
- "nv_rule": "Trường chuyên: chưa tìm được quy định số nguyện vọng chuyên năm 2026. Trường không chuyên (xét tuyển): tối đa 3 nguyện vọng vào các trường khác nhau, xét NV1 trước (đủ 90% chỉ tiêu) rồi NV2, NV3. Trúng chuyên thì không chuyển sang công lập không chuyên. Trà Vinh 2025: mỗi thí sinh chỉ nộp 1 bộ hồ sơ vào 1 trường, 1 môn chuyên; trượt chuyên được dùng kết quả để đăng ký trường THPT theo địa bàn.",
+ "nv_rule": "2026: chỉ được đăng ký dự thi vào MỘT trường chuyên (Báo Vĩnh Long 4/5/2026); chưa rõ có được 2 môn chuyên/NV2 hay không. Trường không chuyên (xét tuyển): tối đa 3 nguyện vọng, xét NV1 trước (90% chỉ tiêu) rồi NV2, NV3. Trúng chuyên thì không chuyển sang công lập không chuyên. Không có lớp chuyên ngoại ngữ khác ngoài Tiếng Anh ở cả 3 trường. Trà Vinh 2025: 1 bộ hồ sơ, 1 trường, 1 môn chuyên; trượt chuyên dùng kết quả đăng ký trường THPT theo địa bàn.",
  "options": [
   {
    "id": "so-chuyen-nguyen-binh-khiem-anh",
@@ -68,8 +145,10 @@
     30.7
    ],
    "scale": 50,
-   "quota": {},
-   "note": "2026: 30,7 (tuyensinh247), cao nhất trong 3 trường chuyên của tỉnh. 2025: 33,50, thứ hai sau chuyên Toán 36,75 (Điện máy Chợ Lớn, tổng hợp, chưa có nguồn chính thức thứ hai)."
+   "quota": {
+    "2026": 35
+   },
+   "note": "2026: 30,7/50 (tuyensinh247; Báo Vĩnh Long 22/7/2026), cao nhất trong 3 trường; chỉ tiêu Anh + Toán 70 (ước 35 mỗi lớp). 2025: 38,4/60 (Báo Vĩnh Long 21/7/2025, công thức chuyên ×3; Toán 39, Tin 37,33, Hóa 36,5) – dienmaycholon ghi 33,5 (Toán 36,75), lệch, dùng số báo địa phương. 2023: 37,95/60 (516 thí sinh, 314 trúng tuyển; Lý 42,75, Toán 39). 2022: trường 'tuyển theo quy định', không công bố điểm chuẩn (doctailieu). 2019: 40,25; 2018: 42,95. 2024 chưa tìm được."
   },
   {
    "id": "so-chuyen-ben-tre-anh",
@@ -82,16 +161,20 @@
    "exam": "so",
    "group": "nv",
    "years": [
+    2024,
+    2025,
     2026
    ],
    "cut": [
+    36.35,
+    35.67,
     29.14
    ],
    "scale": 50,
    "quota": {
     "2026": 70
    },
-   "note": "2026: 70 chỉ tiêu (CafeF/Tuổi Trẻ). Điểm chuẩn 29,14 (tuyensinh247; các môn khác của bảng này khớp với số Tuổi Trẻ đưa tin: Hóa 33, Sinh 32, Văn 31,5, Địa 15,5)."
+   "note": "2026: 29,14 (tuyensinh247; Tuổi Trẻ). 2025: 35,67 – cao nhất trường (Báo Vĩnh Long 9/7/2025; 512 thí sinh/284 chỉ tiêu, 267 trúng tuyển; Toán 32,55). 2024: 36,35 (Hoatieu; Toán 1 38,8; Tin 41,5). 2022–2023 chưa tìm được."
   },
   {
    "id": "so-chuyen-nguyen-thien-thanh-anh",
@@ -110,33 +193,113 @@
     28.3
    ],
    "scale": 50,
-   "quota": {},
-   "note": "2026: 28,3 (tuyensinh247). Năm 2025 thi chuyên chiều 6/6/2025, 150 phút."
+   "quota": {
+    "2025": 35,
+    "2026": 35
+   },
+   "note": "2026: 28,3 (tuyensinh247; Toán 29,5 cao nhất, Sử 15 thấp nhất), tuyển đủ 35. Trà Vinh cũ không công bố 'điểm chuẩn' theo cách thông thường – xét theo chỉ tiêu, kết quả chuyên 2025 đăng trên sgddt.travinh.gov.vn tối 18/6/2025 (460 thí sinh/295 chỉ tiêu) nhưng các trang tổng hợp không có số. 2021–2024: download.vn ghi 'xét theo chỉ tiêu', không có điểm."
   }
  ],
  "paper": {
-  "map": "B2",
+  "map": "B2+",
   "label": "đề chuyên Anh của Sở Vĩnh Long",
   "ac_add": 2.5,
   "ac_cap": 10,
   "ac_label": "Anh chung (đề chung)",
-  "difficulty": null,
-  "difficulty_evidence": "Chưa tìm được đề chuyên Anh của Nguyễn Bỉnh Khiêm, Bến Tre hay Nguyễn Thiện Thành (2022–2026) hoặc nhận xét về độ khó. Thời lượng 150 phút lấy theo hướng dẫn thi Trà Vinh 2025; năm 2026 chưa xác nhận.",
-  "minutes": 150,
-  "has_listening": null,
-  "essay_words": null,
-  "sections": [],
-  "sample_links": []
+  "difficulty": "B2+",
+  "difficulty_evidence": "Đề chuyên Anh NBK 2024 (thi 1/6/2024, 120 phút, 4 phần: Listening 2 – Use of Language 3 – Reading 3 – Writing 2, 80 câu + đoạn văn 120–150 từ): springboard.vn nhận xét 'đề khó, dành cho học sinh năng lực cao', từ vựng nâng cao (specter, abhor, hovel, pagan), bài đọc dài ~650–900 từ đòi hỏi suy luận, nghe tốc độ tự nhiên → ước B2+ đến C1. Đề Bến Tre 2025 (120 phút; Listening 1,5 – Phonetics 0,5 – Lexico-Grammar 2,5 – Reading 2,5 – Writing 3,0; essay 180–200 từ) dạng bài tương tự, mức B2. Năm 2026 chuyên Anh toàn tỉnh mới thi 120 phút (Báo Vĩnh Long) – cấu trúc đề 2026 chưa xem được (springboard có liệt kê đề Vĩnh Long 2026). Điểm chuẩn chuyên Anh 2026 chỉ 28,3–30,7/50 (thấp hơn Bến Tre 2025 35,67/50) cho thấy đề 2026 khó hơn hoặc mặt bằng chung thấp.",
+  "minutes": 120,
+  "has_listening": true,
+  "essay_words": 150,
+  "sections": [
+   {
+    "format": "listening",
+    "items": 20,
+    "points": 2.0,
+    "note": "Đề NBK 2024: 3 phần (5 hội thoại ngắn MCQ; điền từ/cụm từ 8 câu; thảo luận radio MCQ 7 câu), nghe 2 lần. Đề Bến Tre 2025: 10 câu, 1,5 điểm (MCQ 5 + điền ≤2 từ 5)"
+   },
+   {
+    "format": "pronunciation",
+    "items": 2,
+    "points": 0.2,
+    "note": "NBK 2024 và Bến Tre 2025 đều có"
+   },
+   {
+    "format": "stress",
+    "items": 2,
+    "points": 0.2,
+    "note": "Bến Tre 2025: 3 câu 0,3"
+   },
+   {
+    "format": "sentence_completion",
+    "items": 16,
+    "points": 1.6,
+    "note": "MCQ ngữ pháp – từ vựng (NBK 2024: 16 câu; Bến Tre 2025: 10 câu 1,0)"
+   },
+   {
+    "format": "other",
+    "items": 5,
+    "points": 0.5,
+    "note": "Điền giới từ/tiểu từ (NBK 2024). Bến Tre 2025 thay bằng closest/opposite meaning 5 câu"
+   },
+   {
+    "format": "word_formation",
+    "items": 5,
+    "points": 0.5,
+    "note": "NBK 2024: 5 câu; Bến Tre 2025: 10 câu 1,0"
+   },
+   {
+    "format": "cloze",
+    "items": 6,
+    "points": 0.6,
+    "note": "NBK 2024: MC cloze 6 câu; Bến Tre 2025: open cloze 10 câu 1,0"
+   },
+   {
+    "format": "reading_mcq",
+    "items": 8,
+    "points": 0.8,
+    "note": "NBK 2024: trích tiểu thuyết ~900 từ, 8 câu; Bến Tre 2025: 2 bài đọc, 10 câu 1,0"
+   },
+   {
+    "format": "gap_text",
+    "items": 6,
+    "points": 0.6,
+    "note": "NBK 2024: điền câu bị lược (A–F)"
+   },
+   {
+    "format": "matching_headings",
+    "items": 10,
+    "points": 1.0,
+    "note": "NBK 2024: ghép 10 ý với 4 đoạn A–D; Bến Tre 2025: 5 câu 0,5"
+   },
+   {
+    "format": "key_word",
+    "items": 5,
+    "points": 1.0,
+    "note": "Viết lại câu dùng từ cho sẵn, 2–5 từ (NBK 2024; Bến Tre 2025: 3–5 từ, 1,0)"
+   },
+   {
+    "format": "paragraph_writing",
+    "items": 1,
+    "points": 1.0,
+    "note": "NBK 2024: đoạn văn 120–150 từ (1,0). Bến Tre 2025: bài luận 180–200 từ (2,0) – nên essay_words có thể 150–200 tuỳ đề"
+   }
+  ],
+  "sample_links": [
+   "https://springboard.vn/de-thi-chuyen-anh-10-chuyen-vinh-long-2024-2025/",
+   "https://springboard.vn/wp-content/uploads/2025/03/De-Chuyen-Anh-Nguyen-Binh-Khiem-Vinh-Long-24-25.pdf",
+   "https://springboard.vn/de-thi-chuyen-anh-10-ben-tre-2025-2026/"
+  ]
  },
  "exam_2026": {
-  "dates": "Thi tuyển vào 3 trường chuyên dự kiến 02–03/7/2026; công bố kết quả trước 31/7/2026 (tuyensinh247; Hoatieu cũng ghi lịch 2–3/7).",
-  "organisation": "Sở GD&ĐT Vĩnh Long tổ chức chung một kế hoạch cho cả tỉnh mới: chỉ 3 trường chuyên (Nguyễn Bỉnh Khiêm, Bến Tre, Nguyễn Thiện Thành) thi tuyển; mọi trường THPT/DTNT không chuyên xét tuyển bằng học bạ THCS (không thi). Mỗi trường chuyên xét điểm chuẩn riêng. Chưa tìm được nguồn xác nhận 3 trường dùng chung một đề chuyên Anh.",
+  "dates": "Làm thủ tục 1/7/2026; thi 2–3/7/2026: 2/7 sáng Ngữ văn (120'), chiều Tiếng Anh chung (60'); 3/7 sáng Toán (120'), chiều môn chuyên – chuyên Tiếng Anh 120 phút, các môn chuyên khác 150 phút. Chấm từ 6/7; Sở công bố điểm chuẩn 3 trường chuyên ngày 22/7/2026 (Báo Vĩnh Long).",
+  "organisation": "Sở GD&ĐT Vĩnh Long tổ chức một kỳ thi chung (cùng ngày, cùng lịch) cho 3 trường chuyên: Nguyễn Bỉnh Khiêm (Vĩnh Long cũ), Bến Tre (Bến Tre cũ), Nguyễn Thiện Thành (Trà Vinh cũ); 1.962 thí sinh đăng ký, mỗi thí sinh chỉ được đăng ký MỘT trường chuyên. Mọi trường THPT/DTNT không chuyên xét tuyển học bạ (không thi). Mỗi trường chuyên có điểm chuẩn riêng. Chưa có nguồn khẳng định 3 trường dùng chung một đề chuyên Anh (nhiều khả năng có, vì cùng Sở, cùng buổi thi).",
   "common_subjects": [
    "Toán",
    "Ngữ văn",
    "Tiếng Anh"
   ],
-  "notes": "Toán, Ngữ văn tự luận; Tiếng Anh chung thi trắc nghiệm; môn chuyên tự luận, Tin học thi lập trình. Tổng chỉ tiêu chuyên 31 lớp / 990 HS. Chuyên Bến Tre tuyển 368 HS, trong đó chuyên Anh 70. Năm 2026 có tranh luận vì chuyên Bến Tre nhận cả thí sinh chuyên Sử được 2,25 điểm do thiếu thí sinh (Tuổi Trẻ, CafeF 28/7/2026)."
+  "notes": "Toán, Ngữ văn tự luận; Tiếng Anh chung trắc nghiệm 60'; môn chuyên tự luận, Tin học thi lập trình. Tổng chỉ tiêu 990/31 lớp: Bến Tre 380/11 lớp (chuyên Anh 70, chung chỉ tiêu 70 với Toán), Nguyễn Bỉnh Khiêm 315/11 lớp (chuyên Anh + Toán 70), Nguyễn Thiện Thành 295/9 lớp (chuyên Anh 35). Kết quả 2026: NBK tuyển 315, NTT 289 (chỉ thiếu chuyên Sử 19/25), Bến Tre 368. Năm 2025 (trước sáp nhập): Vĩnh Long cũ thi chuyên NBK cuối 6–đầu 7/2025 (điểm thi 5/7, kết quả 21/7/2025), chuyên Anh 120 phút, chuyên hệ số 3; Bến Tre cũ: 512 thí sinh/284 chỉ tiêu, chuyên Anh 120 phút có nghe, hệ số 2; Trà Vinh cũ thi 5–6/6/2025, 460 thí sinh/295 chỉ tiêu, sơ tuyển trước, hệ số 2 + ưu tiên."
  },
  "plan_2027": null,
  "stories": [
@@ -151,21 +314,36 @@
     "Điều kiện chỉ cần môn chuyên > 2,0 nhưng điểm chuẩn thực tế quanh 29–31/50"
    ],
    "url": "https://cafef.vn/thi-sinh-chi-dat-225-diem-van-vao-truong-chuyen-lanh-dao-so-gddt-tinh-vinh-long-len-tieng-188260728143737659.chn"
+  },
+  {
+   "title": "Vĩnh Long công bố điểm chuẩn vào lớp 10 các trường THPT chuyên năm học 2026-2027",
+   "who": "báo",
+   "year": 2026,
+   "school": "3 trường chuyên Vĩnh Long",
+   "summary": "Sở công bố ngày 22/7/2026: NBK tuyển 315 (cao nhất Sinh 33,75, chuyên Anh 30,7), NTT tuyển 289 (Toán 29,5 cao nhất), Bến Tre tuyển 368 (Hóa 33 cao nhất). 1.962 thí sinh dự thi 2–3/7/2026, chuyên Anh thi 120 phút.",
+   "takeaways": [
+    "Điểm chuẩn chuyên Anh 2026 thấp hơn hẳn các năm trước của từng tỉnh cũ – đề/thang điểm mới, không so sánh trực tiếp",
+    "Chuyên Anh thi 120 phút trong khi các môn chuyên khác 150 phút – luyện tốc độ"
+   ],
+   "url": "https://baovinhlong.com.vn/xa-hoi/giao-duc-dao-tao/202607/vinh-long-cong-bo-diem-chuan-vao-lop-10-cac-truong-thpt-chuyen-nam-hoc-2026-2027-a712f20/"
   }
  ],
  "prep_tips": [
-  "Tiếng Anh chung thi trắc nghiệm, môn chuyên nhân 2 – điểm chuẩn chuyên Anh 2026 chỉ 28,3–30,7/50, nên mục tiêu thực tế là đạt chắc 7+ môn chuyên và không hụt Toán, Văn (tuyensinh247).",
+  "Đề chuyên Anh khu vực này (NBK 2024, Bến Tre 2025) có nghe 1,5–2 điểm với dạng điền từ ≤2 từ, có ngữ âm/trọng âm, word formation, cloze, ghép đoạn, điền câu, viết lại câu và đoạn văn/bài luận 120–200 từ – luyện đủ dạng (springboard.vn).",
+  "Chuyên Anh 2026 thi 120 phút (ngắn hơn các môn chuyên khác 150 phút) – luyện làm trọn đề ~80 câu + bài viết trong 120 phút (Báo Vĩnh Long 2/7/2026).",
+  "Tiếng Anh chung thi trắc nghiệm 60', môn chuyên nhân 2 – điểm chuẩn chuyên Anh 2026 chỉ 28,3–30,7/50, nên mục tiêu thực tế là đạt chắc 6,5–7 môn chuyên và không hụt Toán, Văn (tuyensinh247, Báo Vĩnh Long).",
   "Điều kiện dự thi: ĐTB môn Tiếng Anh lớp 9 ≥ 8,0 và học lực lớp 9 Khá trở lên – giữ điểm học bạ ngay từ lớp 9 (tuyensinh247).",
-  "Không được cộng điểm ưu tiên vào điểm xét chuyên – chỉ có điểm thi (tuyensinh247)."
+  "Không được cộng điểm ưu tiên vào điểm xét chuyên – chỉ có điểm thi (tuyensinh247).",
+  "Chỉ được đăng ký một trường chuyên: NBK lấy điểm cao nhất (30,7), Bến Tre 29,14 nhưng 70 chỉ tiêu, NTT 28,3 với 35 chỉ tiêu (Báo Vĩnh Long 2026)."
  ],
- "confidence": "low",
+ "confidence": "medium",
  "gaps": [
   "Kế hoạch tuyển sinh 2027 chưa tìm thấy.",
-  "Không có đề chuyên Anh của 3 trường (2022–2026), nên chưa có cấu trúc, số câu, phần nghe, bài viết hay độ khó.",
-  "Thiếu điểm chuẩn chuyên Anh 2022–2025 của chuyên Bến Tre và Nguyễn Thiện Thành; 2022–2024 của Nguyễn Bỉnh Khiêm.",
-  "Không rõ năm 2026 ba trường chuyên dùng chung đề hay đề riêng, cũng như quy định số nguyện vọng chuyên.",
-  "Thiếu chỉ tiêu chuyên Anh của Nguyễn Bỉnh Khiêm, Nguyễn Thiện Thành và số thí sinh đăng ký.",
-  "Không tìm được bài chia sẻ kinh nghiệm ôn thi chuyên Anh thật nào của học sinh/giáo viên ở 3 tỉnh cũ."
+  "Cấu trúc đề chuyên Anh chung 2026 (chưa xem được đề; springboard có liệt kê 'Vĩnh Long' trong tuyển tập 2026).",
+  "Điểm chuẩn chuyên Anh NBK 2022, 2024; Bến Tre 2022–2023; Nguyễn Thiện Thành 2022–2025 (Trà Vinh cũ không công bố điểm chuẩn rộng rãi).",
+  "Không rõ năm 2026 ba trường chuyên dùng chung đề hay đề riêng; số môn chuyên/NV2 được đăng ký.",
+  "Chỉ tiêu chuyên Anh riêng của NBK 2026 (báo chỉ ghi 'Toán + Anh 70') và số thí sinh đăng ký từng trường, từng lớp.",
+  "Chưa có chia sẻ kinh nghiệm thật của học sinh/giáo viên (chỉ có bài báo)."
  ],
  "sources": [
   {
@@ -179,6 +357,62 @@
   {
    "title": "Tuyensinh247 – Điểm chuẩn chuyên Bến Tre",
    "url": "https://diemthi.tuyensinh247.com/dc-lop10/ben-tre-p44.html"
+  },
+  {
+   "title": "Tuyensinh247 – THPT chuyên Nguyễn Thiện Thành (điểm chuẩn 2026)",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-nguyen-thien-thanh-4197.html"
+  },
+  {
+   "title": "Báo Vĩnh Long – Vĩnh Long công bố điểm chuẩn vào lớp 10 các trường THPT chuyên 2026-2027 (22/7/2026)",
+   "url": "https://baovinhlong.com.vn/xa-hoi/giao-duc-dao-tao/202607/vinh-long-cong-bo-diem-chuan-vao-lop-10-cac-truong-thpt-chuyen-nam-hoc-2026-2027-a712f20/"
+  },
+  {
+   "title": "Báo Vĩnh Long – Gần 2.000 thí sinh bắt đầu dự thi tuyển sinh lớp 10 THPT chuyên (2/7/2026)",
+   "url": "https://baovinhlong.com.vn/xa-hoi/giao-duc-dao-tao/202607/gan-2000-thi-sinh-bat-dau-du-thi-tuyen-sinh-lop-10-thpt-chuyen-ad3221e/"
+  },
+  {
+   "title": "Báo Vĩnh Long – Vĩnh Long tuyển 990 học sinh vào lớp 10 các trường THPT chuyên 2026-2027 (4/5/2026)",
+   "url": "https://baovinhlong.com.vn/xa-hoi/giao-duc-dao-tao/202605/vinh-long-tuyen-990-hoc-sinh-vao-lop-10-cac-truong-thpt-chuyen-nam-hoc-2026-2027-80f32f8/"
+  },
+  {
+   "title": "Báo Vĩnh Long – 276 học sinh trúng tuyển vào lớp 10 chuyên Nguyễn Bỉnh Khiêm (2025)",
+   "url": "https://baovinhlong.com.vn/xa-hoi/giao-duc-dao-tao/202507/276-hoc-sinh-trung-tuyen-vao-lop-10-truong-thpt-chuyen-nguyen-binh-khiem-0b83e8d/"
+  },
+  {
+   "title": "Báo Vĩnh Long – Công bố điểm trúng tuyển vào lớp 10 chuyên Nguyễn Bỉnh Khiêm (2023)",
+   "url": "https://baovinhlong.com.vn/xa-hoi/giao-duc-dao-tao/202306/cong-bo-diem-trung-tuyen-vao-lop-10-truong-thpt-chuyen-nguyen-binh-khiem-3169409/"
+  },
+  {
+   "title": "Báo Vĩnh Long – Điểm chuẩn lớp 10 2025-2026 các trường THPT khu vực Bến Tre cũ (chuyên Bến Tre 2025)",
+   "url": "https://baovinhlong.com.vn/xa-hoi/giao-duc-dao-tao/202507/diem-chuan-tuyen-sinh-lop-10-nam-hoc-2025-2026-cua-cac-truong-thpt-khu-vuc-ben-tre-cu-8d320ab/"
+  },
+  {
+   "title": "Hoatieu – Điểm thi tuyển sinh lớp 10 Bến Tre 2025 (điểm chuẩn chuyên Bến Tre 2024, công thức)",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-ben-tre-208868"
+  },
+  {
+   "title": "Mực Tím (Tuổi Trẻ) – Trà Vinh công bố điểm thi, điểm chuẩn lớp 10 (2025, công thức chuyên NTT)",
+   "url": "https://muctim.tuoitre.vn/tra-vinh-cong-bo-diem-thi-diem-chuan-lop-10-101250624003920111.htm"
+  },
+  {
+   "title": "Mực Tím – Trà Vinh công bố điểm thi lớp 10 2025 các trường chuyên biệt",
+   "url": "https://muctim.tuoitre.vn/tra-vinh-cong-bo-diem-thi-lop-10-nam-2025-cac-truong-chuyen-biet-101250619093855384.htm"
+  },
+  {
+   "title": "Springboard – Đề chuyên Anh Nguyễn Bỉnh Khiêm Vĩnh Long 2024-2025 (cấu trúc, nhận xét)",
+   "url": "https://springboard.vn/de-thi-chuyen-anh-10-chuyen-vinh-long-2024-2025/"
+  },
+  {
+   "title": "Springboard – Đề chuyên Anh Bến Tre 2025-2026",
+   "url": "https://springboard.vn/de-thi-chuyen-anh-10-ben-tre-2025-2026/"
+  },
+  {
+   "title": "Doctailieu – Điểm chuẩn lớp 10 Vĩnh Long (NBK 2023, 2018–2019)",
+   "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-vinh-long"
+  },
+  {
+   "title": "Download.vn – Điểm chuẩn vào 10 Trà Vinh",
+   "url": "https://download.vn/diem-chuan-lop-10-tra-vinh-60594"
   },
   {
    "title": "CafeF (theo Tuổi Trẻ) – Thí sinh chỉ đạt 2,25 điểm vẫn vào trường chuyên",
@@ -202,7 +436,7 @@
   }
  ],
  "formula_raw": {
-  "text": "Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Tiếng Anh (hệ số 1) + Môn chuyên × 2; không cộng điểm ưu tiên.",
+  "text": "2026: Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Tiếng Anh (hệ số 1) + Môn chuyên × 2; không cộng điểm ưu tiên.",
   "parts": [
    "Toán",
    "Ngữ văn",
@@ -212,7 +446,10 @@
   "max": 50,
   "conditions": "2026: hạnh kiểm và học lực lớp 9 từ Khá trở lên; ĐTB cả năm lớp 9 môn đăng ký chuyên ≥ 8,0 (Ngữ văn ≥ 7,5); điểm từng môn chung > 1,0, môn chuyên > 2,0; dự thi đủ, không vi phạm quy chế. Trúng tuyển chuyên thì không được chuyển nguyện vọng sang trường không chuyên.",
   "formula_by_year": {
-   "2025": "Trà Vinh cũ (Nguyễn Thiện Thành): ĐXT = Văn + Toán + Tiếng Anh + điểm môn chuyên (đã tính hệ số) + ưu tiên/khuyến khích; mọi bài > 2,0; có sơ tuyển 15–25/5/2025. Vĩnh Long cũ, Bến Tre cũ: chưa tìm được văn bản."
+   "2023": "Vĩnh Long cũ (NBK): Văn + Toán + Anh (hệ số 1) + môn chuyên × 3, thang 60 (Báo Vĩnh Long 19/6/2023).",
+   "2024": "Bến Tre cũ: (môn chuyên × 2) + tổng 3 môn chung, thang 50; môn chung > 1,0, môn chuyên > 2,0 (Hoatieu). Vĩnh Long cũ: hệ số 3 (như 2023, 2025) – đề chuyên Anh NBK 1/6/2024 thi 120 phút.",
+   "2025": "Vĩnh Long cũ (NBK): Văn + Toán + Anh + chuyên × 3, thang 60 (Báo Vĩnh Long 21/7/2025). Bến Tre cũ: chuyên × 2, thang 50. Trà Vinh cũ (NTT): Văn + Toán + Anh + chuyên × 2 + ưu tiên/khuyến khích; mọi bài > 2,0; có sơ tuyển (Mực Tím).",
+   "2026": "Toàn tỉnh mới: chuyên × 2, thang 50, không ưu tiên (tuyensinh247)."
   }
  },
  "schools_raw": [
@@ -223,19 +460,23 @@
    "classes": [
     {
      "lang": "Anh",
-     "quota": {},
+     "quota": {
+      "2026": 35
+     },
      "applicants": {},
      "cut": {
       "2022": null,
-      "2023": null,
+      "2023": 37.95,
       "2024": null,
-      "2025": 33.5,
+      "2025": 38.4,
       "2026": 30.7
      },
      "scale": {
+      "2023": 60,
+      "2025": 60,
       "2026": 50
      },
-     "note": "2026: 30,7 (tuyensinh247), cao nhất trong 3 trường chuyên của tỉnh. 2025: 33,50, thứ hai sau chuyên Toán 36,75 (Điện máy Chợ Lớn, tổng hợp, chưa có nguồn chính thức thứ hai)."
+     "note": "2026: 30,7/50 (tuyensinh247; Báo Vĩnh Long 22/7/2026), cao nhất trong 3 trường; chỉ tiêu Anh + Toán 70 (ước 35 mỗi lớp). 2025: 38,4/60 (Báo Vĩnh Long 21/7/2025, công thức chuyên ×3; Toán 39, Tin 37,33, Hóa 36,5) – dienmaycholon ghi 33,5 (Toán 36,75), lệch, dùng số báo địa phương. 2023: 37,95/60 (516 thí sinh, 314 trúng tuyển; Lý 42,75, Toán 39). 2022: trường 'tuyển theo quy định', không công bố điểm chuẩn (doctailieu). 2019: 40,25; 2018: 42,95. 2024 chưa tìm được."
     }
    ]
   },
@@ -253,14 +494,16 @@
      "cut": {
       "2022": null,
       "2023": null,
-      "2024": null,
-      "2025": null,
+      "2024": 36.35,
+      "2025": 35.67,
       "2026": 29.14
      },
      "scale": {
+      "2024": 50,
+      "2025": 50,
       "2026": 50
      },
-     "note": "2026: 70 chỉ tiêu (CafeF/Tuổi Trẻ). Điểm chuẩn 29,14 (tuyensinh247; các môn khác của bảng này khớp với số Tuổi Trẻ đưa tin: Hóa 33, Sinh 32, Văn 31,5, Địa 15,5)."
+     "note": "2026: 29,14 (tuyensinh247; Tuổi Trẻ). 2025: 35,67 – cao nhất trường (Báo Vĩnh Long 9/7/2025; 512 thí sinh/284 chỉ tiêu, 267 trúng tuyển; Toán 32,55). 2024: 36,35 (Hoatieu; Toán 1 38,8; Tin 41,5). 2022–2023 chưa tìm được."
     }
    ]
   },
@@ -271,7 +514,10 @@
    "classes": [
     {
      "lang": "Anh",
-     "quota": {},
+     "quota": {
+      "2025": 35,
+      "2026": 35
+     },
      "applicants": {},
      "cut": {
       "2022": null,
@@ -283,23 +529,23 @@
      "scale": {
       "2026": 50
      },
-     "note": "2026: 28,3 (tuyensinh247). Năm 2025 thi chuyên chiều 6/6/2025, 150 phút."
+     "note": "2026: 28,3 (tuyensinh247; Toán 29,5 cao nhất, Sử 15 thấp nhất), tuyển đủ 35. Trà Vinh cũ không công bố 'điểm chuẩn' theo cách thông thường – xét theo chỉ tiêu, kết quả chuyên 2025 đăng trên sgddt.travinh.gov.vn tối 18/6/2025 (460 thí sinh/295 chỉ tiêu) nhưng các trang tổng hợp không có số. 2021–2024: download.vn ghi 'xét theo chỉ tiêu', không có điểm."
     }
    ]
   }
  ],
  "goals": [
   {
-   "k": "so-chuyen-nguyen-binh-khiem",
-   "name": "chuyên Nguyễn Bỉnh Khiêm",
-   "score": 4.6,
+   "k": "so-chuyen-ben-tre",
+   "name": "chuyên Bến Tre",
+   "score": 6.3,
    "paper": "so",
    "need_tv_more": false
   },
   {
-   "k": "so-chuyen-ben-tre",
-   "name": "chuyên Bến Tre",
-   "score": 4.1,
+   "k": "so-chuyen-nguyen-binh-khiem",
+   "name": "chuyên Nguyễn Bỉnh Khiêm",
+   "score": 4.6,
    "paper": "so",
    "need_tv_more": false
   },
@@ -311,5 +557,5 @@
    "need_tv_more": false
   }
  ],
- "goal_default": "so-chuyen-ben-tre"
+ "goal_default": "so-chuyen-nguyen-binh-khiem"
 }

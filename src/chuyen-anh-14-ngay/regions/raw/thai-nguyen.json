@@ -3,22 +3,25 @@
   "slug": "thai-nguyen",
   "merged_from": ["Thái Nguyên", "Bắc Kạn"],
   "exam_2026": {
-    "dates": "Theo Kế hoạch 2362/KH-BCĐ (12/5/2026): 27/5/2026 sáng Ngữ văn (120'), chiều Toán (120'); 28/5 sáng Tiếng Anh chung (60'); 29/5 sáng môn chuyên Ngữ văn, Toán, Tiếng Anh (150'); 29/5 chiều môn chuyên Lịch sử, Địa lí, Tiếng Nga, Tiếng Pháp, Tiếng Trung Quốc, Tiếng Hàn Quốc, Vật lí, Hóa học, Sinh học, Tin học (150'); 30/5 dự phòng. Đăng ký dự thi 19–23/4/2026; điều chỉnh nguyện vọng 6–7/5/2026; công bố điểm thi và điểm chuẩn trước 02/7/2026.",
-    "organisation": "Một kế hoạch và một lịch thi cho toàn tỉnh mới (Ban Chỉ đạo tuyển sinh tỉnh Thái Nguyên). Hai trường chuyên có hai hội đồng coi thi riêng: THPT Chuyên Thái Nguyên (phường Phan Đình Phùng) và THPT Chuyên Bắc Kạn (thi tại Trường THCS Bắc Kạn, phường Bắc Kạn). Văn bản không nói rõ hai trường dùng chung đề chuyên hay không (cùng sở, cùng lịch nên khả năng cao là đề chung – chưa xác nhận) và có được đăng ký cả hai trường không.",
+    "dates": "Theo Kế hoạch 2362/KH-BCĐ (12/5/2026): 27/5/2026 sáng Ngữ văn (120'), chiều Toán (120'); 28/5 sáng Tiếng Anh chung (60'); 29/5 sáng môn chuyên Ngữ văn, Toán, Tiếng Anh (150'); 29/5 chiều môn chuyên Lịch sử, Địa lí, Tiếng Nga, Tiếng Pháp, Tiếng Trung Quốc, Tiếng Hàn Quốc, Vật lí, Hóa học, Sinh học, Tin học (150'); 30/5 dự phòng. Đăng ký dự thi 19–23/4/2026; điều chỉnh nguyện vọng 6–7/5/2026; điểm chuẩn chuyên công bố 16/6/2026 (trước hạn 02/7).",
+    "organisation": "Một kế hoạch và một lịch thi cho toàn tỉnh mới (Ban Chỉ đạo tuyển sinh tỉnh Thái Nguyên). Hai trường chuyên có hai hội đồng coi thi riêng: THPT Chuyên Thái Nguyên (phường Phan Đình Phùng) và THPT Chuyên Bắc Kạn (thi tại Trường THCS Bắc Kạn, phường Bắc Kạn); điểm chuẩn hai trường được Sở phê duyệt cùng ngày 16/6/2026 và công bố chung. Văn bản không nói rõ hai trường dùng chung đề chuyên hay không (cùng sở, cùng lịch nên khả năng cao là đề chung – chưa xác nhận) và có được đăng ký cả hai trường không.",
     "common_subjects": ["Toán", "Ngữ văn", "Tiếng Anh"],
-    "notes": "Năm 2025 (trước sáp nhập) Thái Nguyên thi đại trà 3–5/6/2025, chuyên 6–7/6/2025 (dự kiến); Bắc Kạn thi 3–5/6/2025 (dự kiến). FPT Shop/Hoatieu ghi lịch 2026 là 26–28/5 – không khớp kế hoạch chính thức 2362/KH-BCĐ, dùng kế hoạch chính thức. Cấu trúc đề 2026 theo QĐ 89/QĐ-SGDĐT ngày 30/01/2026 (chưa đọc được)."
+    "notes": "2026: Chuyên Thái Nguyên 1.808 thí sinh đăng ký / 490 trúng tuyển (13 lớp chuyên, ~27%); Chuyên Bắc Kạn 521 đăng ký / 176 trúng tuyển (33,78%). Năm 2025 (trước sáp nhập) Thái Nguyên thi đại trà 3–5/6/2025, chuyên 6–7/6/2025; Bắc Kạn thi 3–5/6/2025. Năm 2022 Chuyên Thái Nguyên: 1.451 thí sinh/2.066 lượt đăng ký môn chuyên (Anh 358 lượt cao nhất), môn chuyên 180 phút, đề chuyên Anh tách 120' trắc nghiệm + 60' tự luận. Năm 2023: 1.625 thí sinh/390 chỉ tiêu, chuyên Anh 286 đăng ký/60 chỉ tiêu. FPT Shop/Hoatieu ghi lịch 2026 là 26–28/5 – không khớp kế hoạch chính thức, dùng 2362/KH-BCĐ. Cấu trúc đề 2026 theo QĐ 89/QĐ-SGDĐT ngày 30/01/2026 (chưa đọc được)."
   },
   "plan_2027": null,
   "formula": {
-    "text": null,
-    "parts": [],
-    "max": null,
-    "conditions": "Điều kiện dự thi trường chuyên: xếp loại học tập và rèn luyện cả năm các lớp THCS từ Khá trở lên (KH 2362/KH-BCĐ 2026). Công thức xét tuyển chuyên không có trong văn bản đã đọc.",
+    "text": "Lớp chuyên Tiếng Anh/Nga/Pháp/Trung (và Hàn): ĐXT = Toán×1 + Ngữ văn×1 + Tiếng Anh (chung)×2 + Môn chuyên×3 (mỗi bài thang 10). Thang 70. Không cộng điểm ưu tiên/khuyến khích.",
+    "parts": ["Toán", "Ngữ văn", "Tiếng Anh (chung)×2", "Anh chuyên×3"],
+    "max": 70,
+    "conditions": "Dự thi đủ các môn, mỗi bài ≥ 4,0 (dưới 4,0 là điểm liệt). Điều kiện dự thi: xếp loại học tập và rèn luyện các lớp THCS từ Khá trở lên (KH 2362/KH-BCĐ 2026). Bằng điểm ở suất cuối: xét lần lượt điểm thi môn chuyên → ĐTB môn chuyên lớp 9 → ĐTB các môn lớp 9 (VietnamNet 16/6/2026; Báo Thái Nguyên 16/6/2023). Hệ số theo nhóm lớp: lớp Văn/Sử/Địa thì Văn×2; lớp Toán/Lý/Hóa/Sinh/Tin thì Toán×2; lớp ngoại ngữ thì Tiếng Anh×2; môn chuyên luôn ×3.",
     "formula_by_year": {
-      "note": "Chưa tìm được công thức. Điểm chuẩn Chuyên Thái Nguyên các năm 52–57 (2020, 2021, 2024) vượt 50, nên thang tối đa lớn hơn 50 (môn chuyên có thể nhân hệ số 3 hoặc có thêm thành phần) – chưa xác minh."
+      "2022": "Tổng điểm bài không chuyên + điểm môn chuyên×3 (Báo Thái Nguyên 10/6/2022) – chưa rõ môn chung nào ×2.",
+      "2023": "Mỗi môn ≥ 4,0; xét tổng điểm từ cao xuống (Báo Thái Nguyên 16/6/2023); điểm chuẩn Anh 58,55 phù hợp thang 70.",
+      "2024-2025": "Điểm chuẩn Anh 55,4 (2024), 56,55 (2025) – thang 70 (cùng công thức, chưa có văn bản riêng).",
+      "2026": "Toán + Văn + Anh×2 + chuyên×3 = 70 cho lớp ngoại ngữ; mỗi bài ≥ 4,0; không điểm ưu tiên (VietnamNet, Dân Việt 16/6/2026; tuyensinh247). Áp dụng cho cả Chuyên Bắc Kạn? – bài báo không nói rõ, điểm chuẩn Bắc Kạn 38–49,7 phù hợp cả thang 70."
     }
   },
-  "nv_rule": "Một học sinh có thể đăng ký thi hai môn chuyên (theo lịch thi: môn buổi sáng 29/5 + môn buổi chiều 29/5, ví dụ Anh + Pháp/Trung/Nga/Hàn hoặc Anh + Lý/Hóa...). Nguyện vọng 2 chỉ được đăng ký vào trường THPT không chuyên có chỉ tiêu NVT2. Đặc biệt: thí sinh thi vào lớp chuyên Tiếng Nga, Pháp, Trung Quốc, Hàn Quốc thi bài chuyên là Tiếng Anh (đề riêng dành cho các lớp chuyên này), không thi bằng ngoại ngữ đó (KH 2362/KH-BCĐ).",
+  "nv_rule": "Một học sinh có thể đăng ký thi hai môn chuyên khác buổi (sáng 29/5: Văn, Toán, Anh; chiều 29/5: Sử, Địa, Nga, Pháp, Trung, Hàn, Lý, Hóa, Sinh, Tin) – ví dụ Anh + Pháp/Trung/Nga/Hàn. Nguyện vọng 2 chỉ được đăng ký vào trường THPT không chuyên có chỉ tiêu NVT2. Thí sinh thi vào lớp chuyên Tiếng Nga, Pháp, Trung Quốc, Hàn Quốc thi bài chuyên là Tiếng Anh (đề riêng dành cho các lớp này), không thi bằng ngoại ngữ đó (KH 2362/KH-BCĐ). Trượt chuyên dùng điểm Toán, Văn, Anh chung xét NV1, NV2 vào THPT công lập/tư thục.",
   "chuyen_paper": {
     "minutes": 150,
     "scale": 10,
@@ -33,9 +36,11 @@
       {"format": "other", "items": 8, "points": 0.8, "note": "Chọn cụm động từ (phrasal verbs)."},
       {"format": "reading_mcq", "items": 10, "points": 1.0, "note": "Bản tài liệu ghi phần Reading 2 bài × 10 câu nhưng chỉ hiển thị 1 bài; phần trắc nghiệm tổng 70 câu/7 điểm, đề 100 câu – phần tự luận 3 điểm (khoảng 30 câu) không hiển thị được."}
     ],
-    "difficulty": null,
-    "difficulty_evidence": "Chưa có nhận xét độ khó. Đề chuyên Anh 2025 (theo QĐ 1655) là 100 câu ngắn, không nghe, không có bài luận; phần lớn trắc nghiệm ngữ pháp – từ vựng (phrasal verbs, giới từ, tìm lỗi) nên thiên về kiến thức ngôn ngữ hơn kỹ năng viết. Đề chuyên cho lớp Nga/Pháp/Trung (cũng bằng tiếng Anh) có 70 câu trắc nghiệm + 30 câu tự luận (word formation 10, open cloze 10, viết lại câu 5, key word 5), tỉ lệ nhận biết 10% – thông hiểu 30% – vận dụng 50% – vận dụng cao 10%.",
-    "sample_links": []
+    "difficulty": "B2",
+    "difficulty_evidence": "Ước tính: đề chuyên Anh 2025 (QĐ 1655) 100 câu/150', không nghe, không luận; 70% trắc nghiệm ngữ pháp – từ vựng (phrasal verbs, giới từ, tìm lỗi), 30% tự luận ngắn (word formation, open cloze, viết lại câu) – kiểm tra kiến thức ngôn ngữ sâu hơn kỹ năng sản sinh, mức B2. Năm 2022 đề từng dài 180' (120' trắc nghiệm + 60' tự luận). Điểm chuẩn chuyên Anh 59,9/70 (2026) với 1.808 thí sinh cho thấy cạnh tranh cao nhưng bài chuyên đạt ~8–8,5 là đủ. Chưa có nhận xét của giáo viên về đề thật. Tuyensinh247 (2026): đề chuyên Anh gồm trắc nghiệm và tự luận, 150'.",
+    "sample_links": [
+      "https://www.studocu.vn/vn/document/truong-dai-hoc-ngoai-thuong/english/cau-truc-de-thi-tuyen-sinh-lop-10-mon-tieng-anh-2025-2026-so-gddt-thai-nguyen/128779345"
+    ]
   },
   "schools": [
     {
@@ -43,11 +48,11 @@
       "old_province": "Thái Nguyên",
       "city": "Phường Phan Đình Phùng (TP Thái Nguyên cũ)",
       "classes": [
-        {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {"2020": 52.35, "2021": 55.45, "2022": null, "2023": null, "2024": 55.4, "2025": null, "2026": null}, "scale": {}, "note": "Nguồn: Hoatieu (bảng 2022, 2023, 2025, 2026 chỉ có dạng ảnh). Thang điểm chưa rõ (>50)."},
-        {"lang": "Trung", "admit_by_english": true, "cut": {"2020": 51.6, "2021": 57.2, "2024": 53.75}, "note": "Thi bài chuyên Tiếng Anh (đề dành cho lớp Nga/Pháp/Trung/Hàn) – KH 2362/KH-BCĐ 2026."},
-        {"lang": "Pháp", "admit_by_english": true, "cut": {"2020": 47.59, "2021": 56.9}, "note": "Thi bài chuyên Tiếng Anh (đề riêng)."},
-        {"lang": "Nga", "admit_by_english": true, "cut": {"2020": 42.89, "2021": 53.7}, "note": "Thi bài chuyên Tiếng Anh (đề riêng)."},
-        {"lang": "Hàn", "admit_by_english": true, "cut": {}, "note": "Môn chuyên Tiếng Hàn Quốc xuất hiện trong lịch thi 2026; chưa rõ thuộc trường nào và chỉ tiêu."}
+        {"lang": "Anh", "quota": {"2022": 70, "2023": 60, "2026": 70}, "applicants": {"2022": 358, "2023": 286}, "cut": {"2020": 52.35, "2021": 55.45, "2022": null, "2023": 58.55, "2024": 55.4, "2025": 56.55, "2026": 59.9}, "scale": {"2023": 70, "2024": 70, "2025": 70, "2026": 70}, "note": "Thang 70 (Toán + Văn + Anh×2 + chuyên×3). 2026: 59,90 – cao nhất toàn tỉnh, 70 chỉ tiêu (2 lớp), 1.808 thí sinh toàn trường (VietnamNet, Dân Việt 16/6/2026). 2025: 56,55; 2024: 55,40 (tuyensinh247, dienmaycholon, Hoatieu). 2023: 58,55 – 286 đăng ký/60 chỉ tiêu, tỉ lệ 20,98% (Báo Thái Nguyên 16/6/2023). 2022: 358 lượt đăng ký chuyên Anh (cao nhất), điểm chuẩn chưa tìm được. 2020–2021: Hoatieu (thang chưa xác minh)."},
+        {"lang": "Trung", "admit_by_english": true, "quota": {"2023": 30, "2026": 35}, "applicants": {"2022": 140, "2023": 150}, "cut": {"2020": 51.6, "2021": 57.2, "2023": 56.25, "2024": 53.75, "2025": 57.5, "2026": 53.6}, "note": "Thi bài chuyên Tiếng Anh (đề dành cho lớp Nga/Pháp/Trung/Hàn). 2025: 57,5 cao nhất trường. Thang 70."},
+        {"lang": "Pháp", "admit_by_english": true, "quota": {"2023": 30}, "applicants": {"2022": 190, "2023": 122}, "cut": {"2020": 47.59, "2021": 56.9, "2023": 55.9, "2024": 50.45, "2025": 54.0, "2026": 50.75}, "note": "Thi bài chuyên Tiếng Anh (đề riêng). Thang 70."},
+        {"lang": "Nga", "admit_by_english": true, "quota": {"2023": 30}, "applicants": {"2022": 160, "2023": 115}, "cut": {"2020": 42.89, "2021": 53.7, "2023": 51.2, "2024": 50.4, "2025": 50.75, "2026": 50.95}, "note": "Thi bài chuyên Tiếng Anh (đề riêng). Lớp ngoại ngữ có điểm chuẩn thấp nhất. Thang 70."},
+        {"lang": "Hàn", "admit_by_english": true, "quota": {"2026": 35}, "cut": {"2026": 49.5}, "note": "Lớp mới từ 2026 (13 lớp chuyên), thi bài chuyên Tiếng Anh; điểm chuẩn 49,5 – thấp nhất trường năm 2026 (tuyensinh247)."}
       ]
     },
     {
@@ -55,29 +60,38 @@
       "old_province": "Bắc Kạn",
       "city": "Phường Bắc Kạn (TP Bắc Kạn cũ)",
       "classes": [
-        {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {}, "scale": {}, "note": "Không tìm được điểm chuẩn (Hoatieu ghi 'đang cập nhật'). Năm 2026 thi tại hội đồng riêng đặt ở Trường THCS Bắc Kạn."}
+        {"lang": "Anh", "quota": {"2026": 35}, "applicants": {}, "cut": {"2022": null, "2023": null, "2024": null, "2025": null, "2026": 49.7}, "scale": {}, "note": "2026: 49,70 – cao nhất trường (Toán 44,75, Lý 44,25, Sinh 43,89, Văn 42,25, Địa 39,5, Hóa 38,5, Sử 38); trường 521 đăng ký/176 trúng tuyển, 8 lớp chuyên, chuyên Anh 35 trúng tuyển (Dân Việt, VietnamNet 16/6/2026). Thang điểm chưa xác nhận bằng văn bản (cùng sở nên khả năng thang 70). Không tìm được điểm chuẩn 2022–2025 (Hoatieu 'đang cập nhật', tuyensinh247 không có trang Bắc Kạn). Năm 2026 thi tại hội đồng riêng đặt ở Trường THCS Bắc Kạn. Trường không có lớp chuyên ngoại ngữ khác."}
       ]
     }
   ],
   "stories": [],
   "prep_tips": [
+    "Lớp ngoại ngữ ở Thái Nguyên tính Tiếng Anh chung ×2 và chuyên ×3 (50/70 điểm là tiếng Anh): điểm chuẩn chuyên Anh 59,9/70 (2026) nghĩa là ví dụ Toán 8 + Văn 8 + Anh chung 9,5×2 + chuyên 8,3×3 – cần gần tuyệt đối bài Anh chung 60' trắc nghiệm (VietnamNet 16/6/2026).",
     "Đề chuyên Anh Thái Nguyên (cấu trúc 2025) không có phần nghe và trọng tâm là trắc nghiệm ngữ pháp – từ vựng: 10 câu giới từ/tiểu từ, 8 câu phrasal verbs, 10 câu tìm lỗi sai – nên học kỹ phrasal verbs, giới từ đi kèm và luyện tìm lỗi (QĐ 1655/QĐ-SGDĐT, bản Studocu).",
     "100 câu trong 150 phút: luyện tốc độ khoảng 1,5 phút/câu, làm nhanh phần phát âm – trọng âm để dành thời gian cho đọc hiểu và tự luận.",
-    "Muốn vào lớp chuyên Nga/Pháp/Trung/Hàn vẫn thi bằng tiếng Anh (đề riêng, thi chiều 29/5) – học sinh giỏi tiếng Anh có thể đăng ký thêm môn chuyên này để có cơ hội thứ hai (KH 2362/KH-BCĐ 2026).",
+    "Mỗi bài thi phải ≥ 4,0 (kể cả Toán, Văn) – không được bỏ môn chung; không có điểm ưu tiên nên chỉ điểm thi quyết định.",
+    "Muốn vào lớp chuyên Nga/Pháp/Trung/Hàn vẫn thi bằng tiếng Anh (đề riêng, thi chiều 29/5) – học sinh giỏi tiếng Anh có thể đăng ký thêm môn chuyên này để có cơ hội thứ hai: điểm chuẩn Nga/Pháp/Hàn 2026 chỉ 49,5–51 so với Anh 59,9 (KH 2362/KH-BCĐ; tuyensinh247).",
+    "Chuyên Bắc Kạn: điểm chuẩn Anh 49,7 thấp hơn Chuyên Thái Nguyên 10 điểm với tỉ lệ đỗ 33,78% – học sinh khu vực Bắc Kạn cũ có cơ hội cao hơn (Dân Việt 16/6/2026).",
     "Đề cho lớp Nga/Pháp/Trung có 30 câu tự luận: word formation, open cloze, viết lại câu, viết lại câu với từ cho sẵn – các dạng này cũng nên luyện cho đề chuyên Anh."
   ],
-  "confidence": "low",
+  "confidence": "medium",
   "gaps": [
-    "Công thức điểm xét tuyển chuyên và thang điểm (điểm chuẩn >50)",
-    "Điểm chuẩn chuyên Anh/Trung/Pháp/Nga 2022, 2023, 2025, 2026 của Chuyên Thái Nguyên (chỉ có dạng ảnh trên Hoatieu)",
-    "Toàn bộ dữ liệu Chuyên Bắc Kạn (điểm chuẩn, chỉ tiêu, lớp chuyên ngoại ngữ)",
-    "Chỉ tiêu từng lớp chuyên ngoại ngữ, số thí sinh",
-    "Cấu trúc đề 2026 (QĐ 89/QĐ-SGDĐT 30/01/2026) và phần tự luận đề chuyên Anh; đề mẫu, nhận xét độ khó",
+    "Điểm chuẩn chuyên Anh 2022 Chuyên Thái Nguyên; toàn bộ 2022–2025 Chuyên Bắc Kạn; văn bản xác nhận công thức/thang điểm áp dụng cho Bắc Kạn",
+    "Số thí sinh đăng ký chuyên Anh 2024–2026",
+    "Cấu trúc đề 2026 (QĐ 89/QĐ-SGDĐT 30/01/2026) và phần tự luận đề chuyên Anh; đề mẫu thật, nhận xét độ khó của giáo viên",
     "Hai trường chuyên dùng chung đề hay không, được đăng ký cả hai trường không",
-    "Kế hoạch 2027, chia sẻ kinh nghiệm thật (ngân sách tìm kiếm web đã hết giữa chừng nên chưa tìm được)"
+    "Kế hoạch 2027; chia sẻ kinh nghiệm thật (chưa tìm được bài về thủ khoa chuyên Anh Thái Nguyên)"
   ],
   "sources": [
     {"title": "Kế hoạch 2362/KH-BCĐ tuyển sinh THPT năm học 2026-2027 tỉnh Thái Nguyên", "url": "https://storage-vnportal.vnpt.vn/gov-tnn/10087/FileQuanTriTinTuc/document (12)-750393.pdf"},
+    {"title": "Điểm chuẩn vào lớp 10 chuyên Tiếng Anh cao nhất, chạm mốc 59,90 tại Thái Nguyên (công thức hệ số, Bắc Kạn) – VietnamNet 16/6/2026", "url": "https://vietnamnet.vn/diem-chuan-vao-lop-10-chuyen-tieng-anh-cao-nhat-cham-moc-59-90-tai-thai-nguyen-2526492.html"},
+    {"title": "Gần 700 thí sinh đỗ trường chuyên ở Thái Nguyên, điểm chuẩn cao nhất đạt 59,9 (chỉ tiêu Bắc Kạn) – Dân Việt 16/6/2026", "url": "https://thegioitiepthi.danviet.vn/gan-700-thi-sinh-do-truong-chuyen-o-thai-nguyen-diem-chuan-cao-nhat-dat-599-d1435700.html"},
+    {"title": "Thái Nguyên công bố điểm chuẩn vào lớp 10, cao nhất 25 điểm (2026) – Tiền Phong", "url": "https://tienphong.vn/thai-nguyen-cong-bo-diem-chuan-vao-lop-10-cao-nhat-25-diem-post1852404.tpo"},
+    {"title": "Thái Nguyên công bố điểm chuẩn lớp 10 chuyên 2023 (bảng đăng ký/chỉ tiêu/điểm chuẩn từng môn) – Báo Thái Nguyên", "url": "https://baothainguyen.vn/giao-duc/tuyen-sinh/202306/thai-nguyen-cong-bo-diem-chuan-lop-10-chuyen-4882063"},
+    {"title": "Hoàn thành kỳ thi tuyển sinh vào Trường THPT Chuyên Thái Nguyên 2022 (số đăng ký, cấu trúc thi) – Báo Thái Nguyên", "url": "https://baothainguyen.vn/giao-duc/202206/hoan-thanh-ky-thi-tuyen-sinh-vao-truong-thpt-chuyen-thai-nguyen-367F90F"},
+    {"title": "Điểm chuẩn vào lớp 10 Thái Nguyên 2026 và 3 năm gần đây – tuyensinh247", "url": "https://diemthi.tuyensinh247.com/dc-lop10/thai-nguyen-p11.html"},
+    {"title": "Thông tin tuyển sinh Trường THPT Chuyên Thái Nguyên 2026 – tuyensinh247", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-thai-nguyen-1000.html"},
+    {"title": "Điểm chuẩn lớp 10 tỉnh Thái Nguyên (2024, 2025) – Điện máy Chợ Lớn", "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-tinh-thai-nguyen"},
     {"title": "Cấu trúc đề thi tuyển sinh lớp 10 môn Tiếng Anh 2025-2026 (Sở GDĐT Thái Nguyên) – Studocu", "url": "https://www.studocu.vn/vn/document/truong-dai-hoc-ngoai-thuong/english/cau-truc-de-thi-tuyen-sinh-lop-10-mon-tieng-anh-2025-2026-so-gddt-thai-nguyen/128779345"},
     {"title": "Điểm thi tuyển sinh lớp 10 Thái Nguyên – Hoatieu", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-thai-nguyen-208980"},
     {"title": "Điểm chuẩn lớp 10 Bắc Kạn – Hoatieu", "url": "https://hoatieu.vn/diem-chuan-lop-10-bac-kan-209106"},

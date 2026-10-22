@@ -4,8 +4,8 @@
  "merged_from": [],
  "edition": "Bản Cao Bằng",
  "exam_md": [
-  4,
-  20
+  7,
+  4
  ],
  "papers": {
   "so": {
@@ -40,7 +40,7 @@
  "exams": {
   "so": {
    "label": "Kỳ thi của Sở GD&ĐT Cao Bằng",
-   "date": "4 ngày thi, nguồn mâu thuẫn về tháng: thông báo của Trường THPT Chuyên Cao Bằng (ký 20/4/2026) in ngày 01–04/7/2026; FPT Shop tổng hợp lịch thi 2026 ghi 1–4/6/2026. Văn bản trường là nguồn gốc nên ưu tiên tháng 7 (cùng văn bản có chỗ chưa khớp: buổi làm thủ tục 14h00 ngày 01/7 trùng ngày thi Văn); thi tốt nghiệp THPT 2026 ở Cao Bằng là 10–13/6/2026 (CV 1235 Sở GD&ĐT Cao Bằng), nên lịch thi lớp 10 đầu tháng 7 là khả dĩ. Thứ tự: ngày 1 sáng Ngữ văn (120'); ngày 2 sáng Toán (120'), chiều Tiếng Anh chung (60'); ngày 3 chiều môn chuyên buổi 1 (Toán, Ngữ văn, Sinh học – 150'); ngày 4 sáng môn chuyên buổi 2 (Vật lí, Hóa học, Tiếng Anh, Lịch sử – 150').",
+   "date": "01–04/7/2026 (thông báo của Trường THPT Chuyên Cao Bằng ký 20/4/2026). Xác nhận gián tiếp tháng 7: Sở GD&ĐT công bố điểm thi và điểm chuẩn ngày 12–13/7/2026 (CV 2531/SGDĐT-QLCLCNTT; trường nhận đơn phúc khảo 13–17/7/2026) và Báo Cao Bằng đưa tin '760 lượt thí sinh hoàn thành các môn thi chuyên' đầu tháng 7 – lịch 1–4/6 của FPT Shop là sai. Cùng văn bản trường có chỗ chưa khớp: buổi làm thủ tục 14h00 ngày 01/7 trùng ngày thi Văn; thi tốt nghiệp THPT 2026 ở Cao Bằng là 10–13/6/2026 (CV 1235 Sở GD&ĐT Cao Bằng). Thứ tự: ngày 1 sáng Ngữ văn (120'); ngày 2 sáng Toán (120'), chiều Tiếng Anh chung (60'); ngày 3 chiều môn chuyên buổi 1 (Toán, Ngữ văn, Sinh học – 150'); ngày 4 sáng môn chuyên buổi 2 (Vật lí, Hóa học, Tiếng Anh, Lịch sử – 150').",
    "rule": "Đăng ký tối đa 2 môn chuyên, hai môn phải thi khác buổi (buổi 1: Toán, Văn, Sinh; buổi 2: Lý, Hóa, Anh, Sử) – nên không thể ghép Anh với Lý/Hóa/Sử. Trúng NV1 thì không xét NV2. Không được đổi nguyện vọng sau 01/6/2026. Trường chỉ có lớp chuyên Tiếng Anh (không có lớp chuyên ngoại ngữ khác)."
   }
  },
@@ -73,7 +73,7 @@
     "2025": 70,
     "2026": 70
    },
-   "note": "2026: 2 lớp chuyên Tiếng Anh × 35 HS (8 lớp chuyên toàn trường). 2022: không quá 35 HS/lớp chuyên Anh (CV 633). 2025: danh sách trúng tuyển 70 HS, ĐXT cao nhất 42,75, thấp nhất 32,20 (đây là ĐXT thấp nhất trong danh sách, không phải điểm chuẩn công bố chính thức). 2024: 31,8 (tuyensinh247, hoatieu). 2021: 36,25 (hoatieu) – thang 50 suy theo công thức, chưa xác minh công thức 2021."
+   "note": "2026: 2 lớp chuyên Tiếng Anh × 35 HS (8 lớp chuyên toàn trường); 760 lượt thí sinh thi các môn chuyên (Báo Cao Bằng, bị chặn robots); điểm chuẩn công bố 12–13/7/2026 nhưng chỉ ở dạng ảnh trên trang trường và Hoatieu, PDF phụ lục 1 chỉ có 28 trường THPT thường – chưa đọc được số. 2022: không quá 35 HS/lớp chuyên Anh (CV 633). 2025: danh sách trúng tuyển 70 HS, ĐXT cao nhất 42,75, thấp nhất 32,20 (đây là ĐXT thấp nhất trong danh sách, không phải điểm chuẩn công bố chính thức). 2024: 31,8 – đứng thứ 4/7 lớp chuyên (Văn 36; Toán 35,5; Hóa 35; Lý 30,25; Sinh 27,75; Sử 23,25) (tuyensinh247, hoatieu, dienmaycholon). 2021: 36,25 – cao nhất trường (Văn 33,75; Toán 32,75; Lý 30,75; Hóa 30; Sinh 26,5) (hoatieu) – thang 50 suy theo công thức, chưa xác minh công thức 2021. 2022, 2023: không nguồn nào có."
   }
  ],
  "paper": {
@@ -91,7 +91,7 @@
   "sample_links": []
  },
  "exam_2026": {
-  "dates": "4 ngày thi, nguồn mâu thuẫn về tháng: thông báo của Trường THPT Chuyên Cao Bằng (ký 20/4/2026) in ngày 01–04/7/2026; FPT Shop tổng hợp lịch thi 2026 ghi 1–4/6/2026. Văn bản trường là nguồn gốc nên ưu tiên tháng 7 (cùng văn bản có chỗ chưa khớp: buổi làm thủ tục 14h00 ngày 01/7 trùng ngày thi Văn); thi tốt nghiệp THPT 2026 ở Cao Bằng là 10–13/6/2026 (CV 1235 Sở GD&ĐT Cao Bằng), nên lịch thi lớp 10 đầu tháng 7 là khả dĩ. Thứ tự: ngày 1 sáng Ngữ văn (120'); ngày 2 sáng Toán (120'), chiều Tiếng Anh chung (60'); ngày 3 chiều môn chuyên buổi 1 (Toán, Ngữ văn, Sinh học – 150'); ngày 4 sáng môn chuyên buổi 2 (Vật lí, Hóa học, Tiếng Anh, Lịch sử – 150').",
+  "dates": "01–04/7/2026 (thông báo của Trường THPT Chuyên Cao Bằng ký 20/4/2026). Xác nhận gián tiếp tháng 7: Sở GD&ĐT công bố điểm thi và điểm chuẩn ngày 12–13/7/2026 (CV 2531/SGDĐT-QLCLCNTT; trường nhận đơn phúc khảo 13–17/7/2026) và Báo Cao Bằng đưa tin '760 lượt thí sinh hoàn thành các môn thi chuyên' đầu tháng 7 – lịch 1–4/6 của FPT Shop là sai. Cùng văn bản trường có chỗ chưa khớp: buổi làm thủ tục 14h00 ngày 01/7 trùng ngày thi Văn; thi tốt nghiệp THPT 2026 ở Cao Bằng là 10–13/6/2026 (CV 1235 Sở GD&ĐT Cao Bằng). Thứ tự: ngày 1 sáng Ngữ văn (120'); ngày 2 sáng Toán (120'), chiều Tiếng Anh chung (60'); ngày 3 chiều môn chuyên buổi 1 (Toán, Ngữ văn, Sinh học – 150'); ngày 4 sáng môn chuyên buổi 2 (Vật lí, Hóa học, Tiếng Anh, Lịch sử – 150').",
   "organisation": "Tỉnh không sáp nhập; một kỳ thi, một trường chuyên duy nhất (THPT Chuyên Cao Bằng), thi tại trường chuyên (Tổ Hòa Chung 4, phường Tân Giang).",
   "common_subjects": [
    "Toán",
@@ -110,13 +110,12 @@
  ],
  "confidence": "low",
  "gaps": [
-  "Điểm chuẩn chuyên Anh chính thức 2022, 2023, 2026 (2025 chỉ có ĐXT thấp nhất trong danh sách trúng tuyển)",
-  "Số thí sinh đăng ký chuyên Anh các năm",
-  "Cấu trúc chi tiết đề chuyên Anh (số phần, số câu, có nghe hay không, độ dài bài viết) và đề mẫu",
+  "Điểm chuẩn chuyên Anh chính thức 2022, 2023, 2026 (2026 đã công bố 13/7/2026 nhưng chỉ dạng ảnh – thptchuyencaobang.edu.vn bài 425 và Hoatieu; 2025 chỉ có ĐXT thấp nhất trong danh sách trúng tuyển; 2022–2023 không nguồn nào có kể cả tuyensinh247, Hoatieu, dienmaycholon)",
+  "Số thí sinh đăng ký chuyên Anh các năm (Báo Cao Bằng 2026 '760 lượt thí sinh…' bị chặn robots)",
+  "Cấu trúc chi tiết đề chuyên Anh (số phần, số câu, có nghe hay không, độ dài bài viết) và đề mẫu – không có trang nào đăng đề chuyên Anh Cao Bằng (chỉ có đề Tiếng Anh chung)",
   "Nhận xét độ khó đề chuyên Anh",
   "Kế hoạch tuyển sinh 2027",
-  "Chia sẻ/kinh nghiệm thực tế của học sinh/giáo viên Cao Bằng",
-  "Xác minh tháng thi 2026 (thông báo trường in 01–04/7, FPT Shop ghi 1–4/6); bài Báo Cao Bằng '760 lượt thí sinh hoàn thành các môn thi chuyên… 2026-2027' (có thể chứa số thí sinh chuyên Anh) bị chặn robots, không đọc được"
+  "Chia sẻ/kinh nghiệm thực tế của học sinh/giáo viên Cao Bằng"
  ],
  "sources": [
   {
@@ -158,6 +157,22 @@
   {
    "title": "Kỳ thi tuyển sinh lớp 10 THPT diễn ra từ ngày 3-5/6/2025 – Tuyên giáo Cao Bằng",
    "url": "https://tuyengiaocaobang.vn/index.php/diem-bao/ky-thi-tuyen-sinh-lop-10-truong-thpt-dien-ra-tu-ngay-3-5-6-2025-1826.html"
+  },
+  {
+   "title": "Thông báo điểm thi, điểm chuẩn và hướng dẫn phúc khảo kỳ thi tuyển sinh lớp 10 năm học 2026-2027 (13/7/2026) – Trường THPT Chuyên Cao Bằng",
+   "url": "https://thptchuyencaobang.edu.vn/index.php/tin-nha-truong/thong-bao-diem-thi-diem-chuan-va-huong-dan-phuc-khao-ky-thi-tuyen-sinh-lop-10-truong-thpt-nam-hoc-2026-2027-425.html"
+  },
+  {
+   "title": "Thông báo tuyển sinh lớp 10 THPT Chuyên Cao Bằng năm học 2026-2027 (21/4/2026) – Trường THPT Chuyên Cao Bằng",
+   "url": "https://thptchuyencaobang.edu.vn/index.php/tin-nha-truong/thong-bao-tuyen-sinh-lop-10-thpt-chuyen-cao-bang-nam-hoc-2026-2027-414.html"
+  },
+  {
+   "title": "760 lượt thí sinh hoàn thành các môn thi chuyên tuyển sinh lớp 10 Trường THPT Chuyên 2026-2027 – Báo Cao Bằng (bị chặn robots)",
+   "url": "https://baocaobang.vn/760-luot-thi-sinh-hoan-thanh-cac-mon-thi-chuyen-tuyen-sinh-lop-10-truong-thpt-chuyen-nam-hoc-2026-20-3189922.html"
+  },
+  {
+   "title": "Điểm chuẩn lớp 10 Cao Bằng (2021, 2024) – Điện máy Chợ Lớn",
+   "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-cao-bang"
   }
  ],
  "formula_raw": {
@@ -203,7 +218,7 @@
       "2025": 50,
       "2026": 50
      },
-     "note": "2026: 2 lớp chuyên Tiếng Anh × 35 HS (8 lớp chuyên toàn trường). 2022: không quá 35 HS/lớp chuyên Anh (CV 633). 2025: danh sách trúng tuyển 70 HS, ĐXT cao nhất 42,75, thấp nhất 32,20 (đây là ĐXT thấp nhất trong danh sách, không phải điểm chuẩn công bố chính thức). 2024: 31,8 (tuyensinh247, hoatieu). 2021: 36,25 (hoatieu) – thang 50 suy theo công thức, chưa xác minh công thức 2021."
+     "note": "2026: 2 lớp chuyên Tiếng Anh × 35 HS (8 lớp chuyên toàn trường); 760 lượt thí sinh thi các môn chuyên (Báo Cao Bằng, bị chặn robots); điểm chuẩn công bố 12–13/7/2026 nhưng chỉ ở dạng ảnh trên trang trường và Hoatieu, PDF phụ lục 1 chỉ có 28 trường THPT thường – chưa đọc được số. 2022: không quá 35 HS/lớp chuyên Anh (CV 633). 2025: danh sách trúng tuyển 70 HS, ĐXT cao nhất 42,75, thấp nhất 32,20 (đây là ĐXT thấp nhất trong danh sách, không phải điểm chuẩn công bố chính thức). 2024: 31,8 – đứng thứ 4/7 lớp chuyên (Văn 36; Toán 35,5; Hóa 35; Lý 30,25; Sinh 27,75; Sử 23,25) (tuyensinh247, hoatieu, dienmaycholon). 2021: 36,25 – cao nhất trường (Văn 33,75; Toán 32,75; Lý 30,75; Hóa 30; Sinh 26,5) (hoatieu) – thang 50 suy theo công thức, chưa xác minh công thức 2021. 2022, 2023: không nguồn nào có."
     }
    ]
   }

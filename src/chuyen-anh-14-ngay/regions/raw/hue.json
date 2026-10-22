@@ -3,29 +3,46 @@
   "slug": "hue",
   "merged_from": ["Thừa Thiên Huế"],
   "exam_2026": {
-    "dates": null,
+    "dates": "27, 28 và 29/5/2026 (Kế hoạch kèm QĐ 932/QĐ-UBND TP Huế; Thư viện Pháp luật). Theo mô hình các năm 2023–2024: ngày 1 làm thủ tục, ngày 2 thi 3 môn chung (Ngữ văn 120' 8h00; Toán 120' 13h30; Ngoại ngữ 60' 16h30), ngày 3 thi môn chuyên (Tiếng Anh chuyên 120' từ 8h00; Toán/Văn chuyên 150'), thi nói ngoại ngữ chuyên sáng hôm sau. Tuyensinh247 ghi Quốc Học thi chuyên ngày 29/5/2026. Điểm chuẩn công bố 14–15/6/2026.",
     "organisation": "một đề chung cho cả thành phố (Huế không sáp nhập; trước 2025 là tỉnh Thừa Thiên Huế, trực thuộc TW từ 1/1/2025)",
     "common_subjects": ["Toán", "Ngữ văn", "Ngoại ngữ"],
-    "notes": "Môn thứ ba năm 2026 là Ngoại ngữ (LSVN, Znews). Hơn 18.000 học sinh dự thi lớp 10, tăng khoảng 5.000 so với năm trước. Điểm chuẩn công bố 15/6/2026; phúc khảo trong 7 ngày, thí sinh chỉ đăng ký chuyên nộp phúc khảo tại trường chuyên; tra cứu tại tracuudiem.thuathienhue.edu.vn (Đại biểu Nhân dân). Chưa tìm được ngày thi cụ thể."
+    "notes": "Môn thứ ba năm 2026 là Ngoại ngữ (LSVN, Znews); thí sinh được chọn thi Tiếng Anh, Tiếng Pháp hoặc Tiếng Nhật ở bài ngoại ngữ chung. Hơn 18.000 học sinh dự thi lớp 10, tăng khoảng 5.000 so với năm trước. Phúc khảo trong 7 ngày, thí sinh chỉ đăng ký chuyên nộp tại trường chuyên; tra cứu tại tracuudiem.thuathienhue.edu.vn (Đại biểu Nhân dân, Mực Tím). Quốc Học tuyển không phân biệt địa bàn (toàn quốc). THPT Chuyên Khoa học Huế (thuộc ĐH Khoa học – ĐH Huế) thi riêng, xem file chuyen-khoa-hoc-hue."
   },
   "plan_2027": null,
   "formula": {
-    "text": null,
-    "parts": [],
-    "max": null,
-    "conditions": null,
-    "formula_by_year": {}
+    "text": "Điểm xét tuyển = Toán + Ngữ văn + Ngoại ngữ (bài chung, hệ số 1) + điểm môn chuyên × 2 (thang 50). Lớp chuyên Anh: môn chuyên là bài Tiếng Anh chuyên 4 kỹ năng (nghe, nói, đọc, viết).",
+    "parts": ["Toán", "Ngữ văn", "Ngoại ngữ (chung)", "Anh chuyên×2"],
+    "max": 50,
+    "conditions": "Điểm bài thi theo thang 10, lẻ đến 0,25. Các bài thi đều phải đạt trên 2,0 điểm; dự thi đủ, không vi phạm quy chế. Điều kiện dự thi: rèn luyện và học tập cả 4 năm THCS từ Khá trở lên. Năm 2023 còn vòng sơ tuyển (thang 100: giải thưởng ≤40, xếp loại 4 năm ≤40, xếp loại tốt nghiệp ≤20; ngưỡng 30 điểm cho Tiếng Anh/Pháp/Nhật/Văn/Sử/Địa, 35 cho Toán/KHTN/Tin). Không cộng điểm ưu tiên cho Quốc Học (kế hoạch 2025, chú thích 3). Bằng điểm ở cuối: ưu tiên NVC1, rồi điểm môn chuyên cao hơn, rồi điểm TB cả năm lớp 9.",
+    "formula_by_year": {
+      "2023": "Toán + Văn + Ngoại ngữ (hệ số 1) + chuyên × 2; mọi bài > 2,0 (Hướng dẫn 1022/HD-SGDĐT 7/4/2023)",
+      "2024": "như 2023 (Hướng dẫn tuyển sinh đầu cấp 2024-2025 Thừa Thiên Huế)",
+      "2025": "chưa đọc được công thức trong Kế hoạch kèm QĐ 797/QĐ-UBND 24/3/2025; mức điểm chuẩn 37,2 phù hợp thang 50",
+      "2026": "Toán + Ngữ văn + Ngoại ngữ + môn chuyên × 2 (tuyensinh247 dẫn kế hoạch 2026; trang ghi nhầm 'Môn Văn + Môn Toán + Môn Ngữ Văn' — hiểu là 3 môn chung)"
+    }
   },
-  "nv_rule": "Chưa tìm được quy định chi tiết. Quốc Học có 3 lớp chuyên ngoại ngữ: Anh, Pháp, Nhật. Chưa xác minh được lớp Pháp/Nhật có xét bằng bài thi tiếng Anh hay không. Ngoài trường chuyên, các trường công lập Hai Bà Trưng, Nguyễn Huệ, Nguyễn Trường Tộ có điểm chuẩn riêng theo ngoại ngữ (Anh, Pháp, Nhật) — năm 2026 Hai Bà Trưng: Anh 32,25, Nhật 29,5; Nguyễn Huệ: Anh 30, Pháp 24,35, Nhật 22,2.",
+  "nv_rule": "2026 (và 2025): 'Mỗi học sinh được đăng ký dự tuyển 01 nguyện vọng vào 01 lớp chuyên' — không còn nguyện vọng chuyên 2. Trước đó (2023, 2024): tối đa 2 nguyện vọng chuyên (NVC1, NVC2) trong 11 môn; thí sinh NVC1 Tiếng Anh được đăng ký NVC2 vào lớp Pháp hoặc Nhật (xét đồng thời, chỉ xét NVC2 khi trượt NVC1) — tức lớp Pháp/Nhật khi đó có nhận thí sinh dùng điểm Tiếng Anh chuyên qua NVC2. Lớp chuyên Pháp và Nhật thi bài chuyên riêng bằng tiếng Pháp/tiếng Nhật (120 phút + thi nói), không dùng đề Tiếng Anh chuyên cho NV1. Chuyên Tin thi Toán thay thế. Quốc Học tối đa 14 lớp (2024: 2 Toán, 2 Anh, 1 Văn, 1 Pháp, 1 Nhật, các lớp KHTN và Sử-Địa ghép), 420 chỉ tiêu (2023). Ngoài trường chuyên, các trường công lập Hai Bà Trưng, Nguyễn Huệ, Nguyễn Trường Tộ có điểm chuẩn riêng theo ngoại ngữ (Anh, Pháp, Nhật) — năm 2026 Hai Bà Trưng: Anh 32,25, Nhật 29,5; Nguyễn Huệ: Anh 30, Pháp 24,35, Nhật 22,2.",
   "chuyen_paper": {
-    "minutes": null,
-    "scale": null,
-    "has_listening": null,
-    "essay_words": null,
-    "sections": [],
-    "difficulty": null,
-    "difficulty_evidence": "Chưa đọc được đề chuyên Anh Quốc Học (Vietjack có đề chuyên Anh Thừa Thiên Huế 2025 nhưng không truy cập được trong phiên này).",
-    "sample_links": []
+    "minutes": 120,
+    "scale": 10,
+    "has_listening": true,
+    "essay_words": 250,
+    "sections": [
+      {"format": "listening", "items": 20, "points": 2.0, "note": "Part 1 (10 câu): điền form, trắc nghiệm, ghép (hội thoại văn phòng du lịch); Part 2 (10 câu): hoàn thành câu 1 từ/cụm ngắn (chương trình radio). Mỗi phần nghe 2 lần"},
+      {"format": "sentence_completion", "items": 30, "points": 1.5, "note": "Vocabulary and Grammar: 30 câu trắc nghiệm A–D gồm idiom, collocation, ngữ pháp, synonym/antonym"},
+      {"format": "open_cloze", "items": 12, "points": 1.2, "note": "Reading part 1: điền 1 từ (bài 'Culture shock')"},
+      {"format": "reading_mcq", "items": 8, "points": 0.8, "note": "Reading part 2: đọc hiểu A–D"},
+      {"format": "cloze", "items": 10, "points": 1.0, "note": "Reading part 3: chọn A–D điền chỗ trống"},
+      {"format": "transformation", "items": 5, "points": 0.5, "note": "Writing part 1: viết lại câu giữ nghĩa"},
+      {"format": "key_word", "items": 5, "points": 0.5, "note": "Writing part 2: dùng 3–5 từ kể cả từ cho sẵn"},
+      {"format": "essay", "items": 1, "points": 1.0, "note": "Writing part 3: bài luận 200–250 từ (2025: 'As long as you are in good health, nothing else matters')"},
+      {"format": "other", "items": 1, "points": 1.5, "note": "Thi nói riêng buổi khác, thu âm bằng phần mềm (hướng dẫn Sở 2023, 2024). Bài viết 2025 cộng lại 8,5 điểm nên phần nói ước 1,5 điểm — suy luận, chưa có văn bản ghi tỉ trọng"}
+    ],
+    "difficulty": "B2",
+    "difficulty_evidence": "Ước từ đề chuyên Anh Huế 2025-2026 (springboard.vn): bài 120 phút, nghe kiểu PET/FCE (điền form, hoàn thành câu), 30 câu từ vựng–ngữ pháp có idiom/phrasal verb nâng cao, 3 bài đọc, essay 200–250 từ chỉ 1,0 điểm; thời gian ngắn hơn (120') và tỉ trọng viết thấp hơn đề Quảng Trị/Hà Nội. Chưa có nhận xét báo chí. Sở mô tả: 'môn Ngoại ngữ chuyên được áp dụng các hình thức phù hợp để đánh giá cả 04 kỹ năng: nghe, nói, đọc, viết' (hướng dẫn 2024).",
+    "sample_links": [
+      "https://springboard.vn/de-thi-chuyen-anh-10-hue-2025-2026/"
+    ]
   },
   "schools": [
     {
@@ -35,45 +52,59 @@
       "classes": [
         {
           "lang": "Anh",
-          "quota": {},
+          "quota": {"2024": 70},
           "applicants": {},
-          "cut": {"2022": null, "2023": 38.8, "2024": 37.8, "2025": null, "2026": 37.6},
-          "scale": {},
-          "note": "2026 = 37,6, cao nhất trong các lớp chuyên Quốc Học (Đại biểu Nhân dân 15/6/2026). 2023 và 2024 lấy từ hoatieu (ghi theo năm học '2023-2024' = 38,8 và '2024-2025' = 37,8 — hiểu là năm tuyển sinh 2023 và 2024). Năm cũ: 2021 = 36,1; 2020 = 38,20. Thang điểm chưa xác minh từ văn bản (mức điểm gợi ý thang 50)."
+          "cut": {"2022": 37.1, "2023": 38.8, "2024": 37.8, "2025": 37.2, "2026": 37.6},
+          "scale": {"2022": 50, "2023": 50, "2024": 50, "2025": 50, "2026": 50},
+          "note": "Chuyên Anh là lớp có điểm chuẩn cao nhất Quốc Học 2022, 2023, 2024, 2026 (2025: 37,2 theo tuyensinh247/Hoa Học Trò, cao nhất trường). 2022 = 37,10 NV1 (doctailieu, hocmai). Năm cũ: 2021 = 36,1; 2020 = 38,20; 2019 = 35,10. Quota 70 = 2 lớp × 35 (suy từ biên chế 2 lớp Anh trong hướng dẫn 2024, chưa có văn bản ghi số). Nguồn 2023–2024: hoatieu/doctailieu (bảng 'năm học 2023-2024' công bố 17/6/2023 = kỳ thi 2023; 'năm học 2024-2025' công bố 16/6/2024 = kỳ thi 2024)."
         },
         {
           "lang": "Pháp",
-          "admit_by_english": null,
-          "cut": {"2023": 38.6, "2024": 35.46, "2026": 36.48},
-          "note": "Hoatieu: 2021 = 36,61; 2020 = 34,08. 2026 theo Đại biểu Nhân dân."
+          "admit_by_english": false,
+          "cut": {"2022": 36.06, "2023": 38.6, "2024": 35.46, "2025": 33.35, "2026": 36.48},
+          "note": "Thi bài Tiếng Pháp chuyên riêng (120' + nói). 2023–2024 nhận thêm thí sinh NVC2 từ Tiếng Anh; từ 2025 chỉ 1 NV. Năm cũ: 2021 = 36,61; 2020 = 34,08. Nguồn: doctailieu, tuyensinh247, Mực Tím 2026."
         },
         {
           "lang": "Nhật",
-          "admit_by_english": null,
-          "cut": {"2023": 35.29, "2024": 33.86, "2026": 33.3},
-          "note": "Hoatieu: 2021 = 32,71; 2020 = 33,06. 2026 theo Đại biểu Nhân dân."
+          "admit_by_english": false,
+          "cut": {"2022": 34.98, "2023": 35.29, "2024": 33.86, "2025": 32.55, "2026": 33.3},
+          "note": "Thi bài Tiếng Nhật chuyên riêng (120' + nói). 2023–2024 nhận thêm NVC2 từ Tiếng Anh. Năm cũ: 2021 = 32,71; 2020 = 33,06. Nguồn: doctailieu, tuyensinh247, Đại biểu Nhân dân 2026."
         }
       ]
     }
   ],
   "stories": [],
   "prep_tips": [
-    "Chuyên Anh là lớp có điểm chuẩn cao nhất Quốc Học năm 2026 (37,6), cao hơn cả chuyên Tin, Toán — cạnh tranh lớn nhất trong trường (Đại biểu Nhân dân)."
+    "Chuyên Anh là lớp có điểm chuẩn cao nhất Quốc Học hầu hết các năm (37,1–38,8/50) — cần trung bình ~7,5/10 mỗi bài kể cả bài chuyên nhân đôi (tuyensinh247, doctailieu).",
+    "Bài chuyên Anh chỉ 120 phút (ngắn hơn chuẩn 150' của nhiều tỉnh) với 30 câu từ vựng–ngữ pháp và 3 bài đọc: luyện tốc độ làm bài; essay 200–250 từ chỉ 1 điểm nên không dồn quá nhiều thời gian cho viết (đề 2025 trên springboard).",
+    "Có thi nói thu âm bằng máy tính vào buổi riêng — luyện nói theo chủ đề và quen với việc nói trước micro (hướng dẫn Sở 2023, 2024).",
+    "Từ 2025 chỉ được 1 nguyện vọng chuyên: không còn 'cửa phụ' Pháp/Nhật bằng điểm Anh như 2023–2024 — chọn lớp dứt khoát; học sinh Huế có thể thi thêm THPT Chuyên Khoa học Huế (điểm chuẩn Anh 30–32/50, kỳ thi riêng) làm phương án dự phòng (tuyensinh247 2026, Mực Tím).",
+    "Mọi bài thi phải trên 2,0 và điều kiện học lực 4 năm THCS từ Khá — giữ học bạ ổn định từ lớp 6.",
+    "Lịch 2026: 27–29/5 (sớm hơn 2023–2025 khoảng 1 tuần) — ôn xong chương trình trước giữa tháng 5."
   ],
-  "confidence": "low",
+  "confidence": "medium",
   "gaps": [
-    "Công thức xét tuyển, hệ số môn chuyên, thang điểm, điều kiện của Quốc Học các năm",
-    "Ngày thi 2026 cụ thể và ngày thi môn chuyên",
-    "Điểm chuẩn chuyên Anh 2022 và 2025",
-    "Chỉ tiêu, số thí sinh đăng ký lớp chuyên Anh/Pháp/Nhật",
-    "Cấu trúc đề, độ khó, đề mẫu chuyên Anh Quốc Học",
-    "Lớp Pháp, Nhật có nhận bài thi tiếng Anh không; quy định NV2",
-    "Câu chuyện ôn thi (chưa tìm được — hết lượt tìm kiếm trong phiên)",
+    "Chỉ tiêu và số thí sinh đăng ký lớp chuyên Anh/Pháp/Nhật từng năm (chỉ có '14 lớp, 420 chỉ tiêu' 2023 và biên chế 2 lớp Anh 2024)",
+    "Lịch thi chi tiết từng buổi năm 2026 (chỉ có 27–29/5 và 'chuyên ngày 29/5') và tỉ trọng điểm thi nói trong bài chuyên Anh",
+    "Công thức trong văn bản 2025 (QĐ 797/QĐ-UBND) — chưa đọc được phần công thức",
+    "Nhận xét báo chí/giáo viên về độ khó đề chuyên Anh Quốc Học; đề các năm 2022–2024, 2026",
+    "Câu chuyện/kinh nghiệm thủ khoa chuyên Anh Quốc Học (9 lượt tìm không ra bài riêng)",
     "Kế hoạch 2027"
   ],
   "sources": [
-    {"title": "Đại biểu Nhân dân: Huế công bố điểm chuẩn vào lớp 10 năm học 2026-2027", "url": "https://daibieunhandan.vn/hue-cong-bo-diem-chuan-vao-lop-10-nam-hoc-2026-2027-10420504.html"},
+    {"title": "Đại biểu Nhân dân 15/6/2026: Huế công bố điểm chuẩn vào lớp 10 năm học 2026-2027", "url": "https://daibieunhandan.vn/hue-cong-bo-diem-chuan-vao-lop-10-nam-hoc-2026-2027-10420504.html"},
+    {"title": "Mực Tím 14/6/2026: Điểm chuẩn lớp 10 TP Huế: Hai Bà Trưng dẫn đầu, chuyên Anh Quốc Học lấy 37,6", "url": "https://muctim.tuoitre.vn/diem-chuan-lop-10-tp-hue-truong-thpt-hai-ba-trung-dan-dau-chuyen-anh-quoc-hoc-lay-376-diem-101260614130220942.htm"},
+    {"title": "Tuyensinh247: Điểm chuẩn vào lớp 10 Huế 2026 và 3 năm gần đây (Quốc Học, Khoa học Huế)", "url": "https://diemthi.tuyensinh247.com/dc-lop10/hue-p7.html"},
+    {"title": "Tuyensinh247: Thông tin tuyển sinh lớp 10 Huế 2026 (công thức, điều kiện, NV, lịch)", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/hue-p7.html"},
+    {"title": "Thư viện Pháp luật: Lịch thi vào lớp 10 Huế 2026-2027 (27–29/5/2026, QĐ 932/QĐ-UBND)", "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/lich-thi-vao-lop-10-hue-20262027-ngay-nao-138084649.html"},
+    {"title": "Sở GD&ĐT Thừa Thiên Huế: Hướng dẫn tuyển sinh đầu cấp năm học 2024-2025 (công thức, NV, lịch thi, mô tả bài ngoại ngữ chuyên)", "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/N%C4%90BT/hd-tuyen-sinh-dau-cap-nh-2024-2025-tinh-thua-thien-hue.pdf"},
+    {"title": "Sở GD&ĐT Thừa Thiên Huế: Hướng dẫn 1022/HD-SGDĐT 7/4/2023 tuyển sinh đầu cấp 2023-2024 (sơ tuyển, công thức, 420 chỉ tiêu)", "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/LNH/tuyen-sinh-hue.pdf"},
+    {"title": "UBND TP Huế: Kế hoạch tuyển sinh THPT năm học 2025-2026 kèm QĐ 797/QĐ-UBND 24/3/2025", "url": "https://tuongtac.hue.gov.vn/UploadFiles/PhanAnh/2025/05/00.00.h57797qdubnd2025pl3_signed.pdf"},
+    {"title": "Doctailieu: Điểm chuẩn vào lớp 10 Thừa Thiên Huế 2017–2024 (Quốc Học, Khoa học Huế 2023)", "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-thua-thien-hue"},
+    {"title": "Hocmai: Điểm chuẩn thi vào 10 Thừa Thiên Huế 2022", "url": "https://hoctot.hocmai.vn/diem-chuan-thi-vao-10-nam-thua-thien-hue.html"},
     {"title": "Hoatieu: Điểm chuẩn lớp 10 Thừa Thiên Huế các năm", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-thua-thien-hue-208982"},
+    {"title": "Springboard: Đề thi và đáp án chuyên Anh 10 thành phố Huế 2025-2026", "url": "https://springboard.vn/de-thi-chuyen-anh-10-hue-2025-2026/"},
+    {"title": "Dienmaycholon: Điểm chuẩn lớp 10 thành phố Huế (tổng hợp 2024–2026)", "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-thanh-pho-hue"},
     {"title": "LSVN: Nhiều địa phương công bố môn thi thứ ba vào lớp 10 năm học 2026-2027", "url": "https://lsvn.vn/nhieu-dia-phuong-cong-bo-mon-thi-thu-ba-vao-lop-10-nam-hoc-2026-2027-a169644.html"},
     {"title": "Znews: Nhiều địa phương đã công bố môn thi thứ ba vào lớp 10", "url": "https://znews.vn/nhieu-dia-phuong-da-cong-bo-mon-thi-thu-ba-vao-lop-10-ha-noi-bao-gio-post1622708.html"}
   ]

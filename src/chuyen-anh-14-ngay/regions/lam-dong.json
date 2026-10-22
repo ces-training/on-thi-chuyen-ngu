@@ -19,12 +19,15 @@
    "ac_cap": 10,
    "ac_label": "Anh chung (đề chung)",
    "difficulty": null,
-   "difficulty_evidence": "Chưa tìm được đề hoặc nhận xét. Đề chuyên Anh Thăng Long được mô tả là kết hợp trắc nghiệm và tự luận (tuyensinh247). Cấu trúc đề do Công văn 1763/SGDĐT-GDTrH (10/10/2024) quy định – chưa đọc được nội dung.",
+   "difficulty_evidence": "Chưa đọc được đề hoặc nhận xét. Đề chuyên Anh Thăng Long được mô tả là kết hợp trắc nghiệm và tự luận (tuyensinh247). Cấu trúc đề do Công văn 1763/SGDĐT-GDTrH (10/10/2024, 'Hướng dẫn nội dung thi chuyên') và 'Thông báo thay đổi cấu trúc nội dung một số môn thi tuyển sinh vào lớp 10 THPT chuyên từ năm học 2025-2026' (13/2/2025) của Sở Lâm Đồng quy định – hai file .docx trên lamdong.edu.vn không đọc được bằng công cụ hiện có. Gián tiếp 2026: điểm chuẩn chuyên Anh 4 trường 33,95–38,45/50; thủ khoa chuyên Anh Trần Hưng Đạo 42,85/50, báo ghi 'nhiều thí sinh chuyên Anh trên 40 điểm'. Đắk Nông cũ 2024: đề chuyên Anh trắc nghiệm + tự luận 150' kèm bài nói 5 phút.",
    "minutes": 150,
    "has_listening": null,
    "essay_words": null,
    "sections": [],
-   "sample_links": []
+   "sample_links": [
+    "https://lamdong.edu.vn/Files/Eoffices_V3/2024/10/10/06.10.2024. HUONG DAN NOI THI CHUYEN V4.docx",
+    "https://lamdong.edu.vn/Files/Eoffices_V3/2025/2/13/Thong bao thay doi cau truc noi dung mot so mon thi tuyen sinh vao lop 10 THPT chuyen tu nam hoc 2025  2026.docx"
+   ]
   }
  },
  "formulas": {
@@ -44,12 +47,12 @@
  "exams": {
   "so": {
    "label": "Kỳ thi của Sở GD&ĐT Lâm Đồng",
-   "date": "1–4/7/2026. 1/7 sáng: làm thủ tục; 2/7 sáng: Ngữ văn (120 phút); 2/7 chiều: Tiếng Anh chung (60 phút, trắc nghiệm); 3/7 sáng: Toán (90 phút); 3/7 chiều: chuyên Toán, Lý, Hóa, Văn, Tiếng Pháp (150 phút); 4/7 sáng: chuyên Tin, Sinh, Địa, Sử, Tiếng Anh (150 phút). Đăng ký online 25–29/5; chấm 6–15/7; công bố điểm 16/7; phúc khảo 17–22/7; xét tuyển 23–24/7; xong trước 31/7/2026.",
-   "rule": "Mỗi thí sinh được đăng ký tối đa 2 môn chuyên trong CÙNG một trường chuyên (2 môn phải thi khác buổi): môn thứ nhất là NV1, môn thứ hai là NV2; đỗ NV1 thì không xét NV2. Được đăng ký thêm tối đa 2 trường THPT không chuyên (xét tuyển học bạ; NV2 cao hơn NV1 từ 1 đến 3 điểm). Lớp Tiếng Pháp (chỉ có ở Thăng Long): ưu tiên thí sinh thi chuyên Pháp; còn thiếu chỉ tiêu mới xét thí sinh thi chuyên Tiếng Anh. Thí sinh có thể đăng ký cả chuyên Pháp (3/7 chiều) và chuyên Anh (4/7 sáng) vì khác buổi."
+   "date": "1–4/7/2026. 1/7 sáng: làm thủ tục; 2/7 sáng: Ngữ văn (120 phút); 2/7 chiều: Tiếng Anh chung (60 phút, trắc nghiệm); 3/7 sáng: Toán (90 phút); 3/7 chiều: chuyên Toán, Lý, Hóa, Văn, Tiếng Pháp (150 phút); 4/7 sáng: chuyên Tin, Sinh, Địa, Sử, Tiếng Anh (150 phút). Đăng ký online 25–29/5; chấm 6–15/7; Sở công bố điểm thi 13/7/2026 (sớm hơn kế hoạch 16/7); phúc khảo 14–17/7; xét tuyển 23–24/7; Sở công bố kết quả Trần Hưng Đạo ngày 30/7/2026; xong trước 31/7/2026.",
+   "rule": "Mỗi thí sinh được đăng ký tối đa 2 môn chuyên trong CÙNG một trường chuyên (2 môn phải thi khác buổi): môn thứ nhất là NV1, môn thứ hai là NV2; đỗ NV1 thì không xét NV2. Được đăng ký thêm tối đa 2 trường THPT không chuyên (xét tuyển học bạ; NV2 cao hơn NV1 từ 1 đến 3 điểm). Lớp Tiếng Pháp (chỉ có ở Thăng Long): ưu tiên thí sinh thi chuyên Pháp; còn thiếu chỉ tiêu mới xét thí sinh thi chuyên Tiếng Anh. Thí sinh có thể đăng ký cả chuyên Pháp (3/7 chiều) và chuyên Anh (4/7 sáng) vì khác buổi. Đắk Nông cũ 2024: chỉ 1 nguyện vọng môn chuyên."
   }
  },
  "nv2_exam": null,
- "nv_rule": "Mỗi thí sinh được đăng ký tối đa 2 môn chuyên trong CÙNG một trường chuyên (2 môn phải thi khác buổi): môn thứ nhất là NV1, môn thứ hai là NV2; đỗ NV1 thì không xét NV2. Được đăng ký thêm tối đa 2 trường THPT không chuyên (xét tuyển học bạ; NV2 cao hơn NV1 từ 1 đến 3 điểm). Lớp Tiếng Pháp (chỉ có ở Thăng Long): ưu tiên thí sinh thi chuyên Pháp; còn thiếu chỉ tiêu mới xét thí sinh thi chuyên Tiếng Anh. Thí sinh có thể đăng ký cả chuyên Pháp (3/7 chiều) và chuyên Anh (4/7 sáng) vì khác buổi.",
+ "nv_rule": "Mỗi thí sinh được đăng ký tối đa 2 môn chuyên trong CÙNG một trường chuyên (2 môn phải thi khác buổi): môn thứ nhất là NV1, môn thứ hai là NV2; đỗ NV1 thì không xét NV2. Được đăng ký thêm tối đa 2 trường THPT không chuyên (xét tuyển học bạ; NV2 cao hơn NV1 từ 1 đến 3 điểm). Lớp Tiếng Pháp (chỉ có ở Thăng Long): ưu tiên thí sinh thi chuyên Pháp; còn thiếu chỉ tiêu mới xét thí sinh thi chuyên Tiếng Anh. Thí sinh có thể đăng ký cả chuyên Pháp (3/7 chiều) và chuyên Anh (4/7 sáng) vì khác buổi. Đắk Nông cũ 2024: chỉ 1 nguyện vọng môn chuyên.",
  "options": [
   {
    "id": "so-chuyen-thang-long-anh",
@@ -71,7 +74,7 @@
    "quota": {
     "2026": null
    },
-   "note": "Tổng chỉ tiêu trường 2025: 315, có 491 hồ sơ thi chuyên (mọi môn). Thang 2024–2025 chưa xác minh."
+   "note": "NV1 (tuyensinh247). Tổng chỉ tiêu trường 2025: 315, có 491 hồ sơ thi chuyên (mọi môn). Thang 2024–2025 chưa xác minh."
   },
   {
    "id": "so-chuyen-thang-long-phap",
@@ -115,7 +118,7 @@
    "quota": {
     "2026": null
    },
-   "note": "Tổng chỉ tiêu trường 2025: 245, 471 thí sinh đăng ký (mọi môn). Không có lớp Pháp."
+   "note": "NV1 (tuyensinh247). Tổng chỉ tiêu trường 2025: 245, 471 thí sinh đăng ký (mọi môn). Không có lớp Pháp."
   },
   {
    "id": "so-chuyen-tran-hung-dao-anh",
@@ -127,13 +130,24 @@
    "f": "so",
    "exam": "so",
    "group": "nv",
-   "years": [],
-   "cut": [],
-   "scale": null,
+   "years": [
+    2020,
+    2021,
+    2025,
+    2026
+   ],
+   "cut": [
+    32.1,
+    36.8,
+    36.35,
+    33.95
+   ],
+   "scale": 50,
    "quota": {
-    "2026": null
+    "2025": 70,
+    "2026": 70
    },
-   "note": "Năm 2026 có lớp chuyên Tiếng Anh, tuyển toàn tỉnh mới; trường là một điểm thi chung. Chưa tìm được điểm chuẩn năm nào."
+   "note": "2026: 33,95 – cao nhất trường (Thanh Niên 30/7/2026; thủ khoa chuyên Anh Võ Lê Xuyến Chi 42,85; 385 trúng tuyển/11 lớp, chuyên Anh 2 lớp). 2025: 36,35 (Mực Tím/Tuổi Trẻ 21/6/2025, 2 lớp/70 chỉ tiêu; Sinh 38,4 cao nhất) – webtuyensinh.com ghi 35,2 (lệch, dùng số Tuổi Trẻ). 2021: 36,80 (405 trúng tuyển/789 thí sinh); 2020: 32,10 (Hoatieu). 2022–2024 chưa tìm được (Hoatieu chỉ có ảnh). 2025 trở về trước thi đề Bình Thuận (công thức ×2, thang 50); 2026 thi đề chung Lâm Đồng."
   },
   {
    "id": "so-chuyen-nguyen-chi-thanh-anh",
@@ -145,13 +159,17 @@
    "f": "so",
    "exam": "so",
    "group": "nv",
-   "years": [],
-   "cut": [],
-   "scale": null,
+   "years": [
+    2021
+   ],
+   "cut": [
+    37.7
+   ],
+   "scale": 50,
    "quota": {
     "2026": null
    },
-   "note": "Năm 2026 có lớp chuyên Tiếng Anh, tuyển toàn tỉnh mới. Chưa tìm được điểm chuẩn năm nào."
+   "note": "2021: 37,70 – cao nhất trường (Download.vn). 2024: thủ khoa toàn trường là thủ khoa chuyên Anh Hoàng Minh Ánh 45,40/50 (Toán 9, Văn 9, Anh 9,8, chuyên Anh 8,8) – điểm chuẩn 2024 chỉ đăng trên trang trường (không truy cập được). 2022, 2023, 2025, 2026 chưa tìm được; Sở Lâm Đồng công bố kết quả 4 trường cuối 7/2026 nhưng chưa thấy số của NCT trên web. Đắk Nông cũ 2024 có thêm bài nói tiếng Anh 5 phút."
   }
  ],
  "paper": {
@@ -161,22 +179,25 @@
   "ac_cap": 10,
   "ac_label": "Anh chung (đề chung)",
   "difficulty": null,
-  "difficulty_evidence": "Chưa tìm được đề hoặc nhận xét. Đề chuyên Anh Thăng Long được mô tả là kết hợp trắc nghiệm và tự luận (tuyensinh247). Cấu trúc đề do Công văn 1763/SGDĐT-GDTrH (10/10/2024) quy định – chưa đọc được nội dung.",
+  "difficulty_evidence": "Chưa đọc được đề hoặc nhận xét. Đề chuyên Anh Thăng Long được mô tả là kết hợp trắc nghiệm và tự luận (tuyensinh247). Cấu trúc đề do Công văn 1763/SGDĐT-GDTrH (10/10/2024, 'Hướng dẫn nội dung thi chuyên') và 'Thông báo thay đổi cấu trúc nội dung một số môn thi tuyển sinh vào lớp 10 THPT chuyên từ năm học 2025-2026' (13/2/2025) của Sở Lâm Đồng quy định – hai file .docx trên lamdong.edu.vn không đọc được bằng công cụ hiện có. Gián tiếp 2026: điểm chuẩn chuyên Anh 4 trường 33,95–38,45/50; thủ khoa chuyên Anh Trần Hưng Đạo 42,85/50, báo ghi 'nhiều thí sinh chuyên Anh trên 40 điểm'. Đắk Nông cũ 2024: đề chuyên Anh trắc nghiệm + tự luận 150' kèm bài nói 5 phút.",
   "minutes": 150,
   "has_listening": null,
   "essay_words": null,
   "sections": [],
-  "sample_links": []
+  "sample_links": [
+   "https://lamdong.edu.vn/Files/Eoffices_V3/2024/10/10/06.10.2024. HUONG DAN NOI THI CHUYEN V4.docx",
+   "https://lamdong.edu.vn/Files/Eoffices_V3/2025/2/13/Thong bao thay doi cau truc noi dung mot so mon thi tuyen sinh vao lop 10 THPT chuyen tu nam hoc 2025  2026.docx"
+  ]
  },
  "exam_2026": {
-  "dates": "1–4/7/2026. 1/7 sáng: làm thủ tục; 2/7 sáng: Ngữ văn (120 phút); 2/7 chiều: Tiếng Anh chung (60 phút, trắc nghiệm); 3/7 sáng: Toán (90 phút); 3/7 chiều: chuyên Toán, Lý, Hóa, Văn, Tiếng Pháp (150 phút); 4/7 sáng: chuyên Tin, Sinh, Địa, Sử, Tiếng Anh (150 phút). Đăng ký online 25–29/5; chấm 6–15/7; công bố điểm 16/7; phúc khảo 17–22/7; xét tuyển 23–24/7; xong trước 31/7/2026.",
-  "organisation": "một đề chung cho cả tỉnh mới — Sở GD&ĐT Lâm Đồng tổ chức một kỳ thi chung cho 4 trường chuyên (Thăng Long, Bảo Lộc, Trần Hưng Đạo, Nguyễn Chí Thanh) tại 6 điểm thi; tổng chỉ tiêu 1.295. Thi chuyên là kỳ thi duy nhất: tất cả trường THPT công lập không chuyên và PTDTNT xét tuyển theo kết quả 4 năm THCS.",
+  "dates": "1–4/7/2026. 1/7 sáng: làm thủ tục; 2/7 sáng: Ngữ văn (120 phút); 2/7 chiều: Tiếng Anh chung (60 phút, trắc nghiệm); 3/7 sáng: Toán (90 phút); 3/7 chiều: chuyên Toán, Lý, Hóa, Văn, Tiếng Pháp (150 phút); 4/7 sáng: chuyên Tin, Sinh, Địa, Sử, Tiếng Anh (150 phút). Đăng ký online 25–29/5; chấm 6–15/7; Sở công bố điểm thi 13/7/2026 (sớm hơn kế hoạch 16/7); phúc khảo 14–17/7; xét tuyển 23–24/7; Sở công bố kết quả Trần Hưng Đạo ngày 30/7/2026; xong trước 31/7/2026.",
+  "organisation": "một đề chung cho cả tỉnh mới — Sở GD&ĐT Lâm Đồng tổ chức một kỳ thi chung cho 4 trường chuyên (Thăng Long, Bảo Lộc, Trần Hưng Đạo, Nguyễn Chí Thanh) tại 6 điểm thi; tổng chỉ tiêu 1.295. Thi chuyên là kỳ thi duy nhất: tất cả trường THPT công lập không chuyên và PTDTNT xét tuyển theo kết quả 4 năm THCS. Mỗi trường có điểm chuẩn riêng.",
   "common_subjects": [
    "Ngữ văn",
    "Toán",
    "Tiếng Anh"
   ],
-  "notes": "Kế hoạch: QĐ 1074/QĐ-UBND (30/3/2026), CV 1687/SGDĐT-QLCL (15/4/2026); môn thứ 3 là Tiếng Anh (CV 649/SGDĐT-QLCL). 3.780 đăng ký/3.600 dự thi các bài không chuyên; 4.880 lượt đăng ký/4.493 lượt dự thi môn chuyên (mỗi thí sinh được thi tối đa 2 môn chuyên). Phúc khảo: 279 bài trắc nghiệm Tiếng Anh, 5 bài thay đổi điểm (một phần do lỗi nhận dạng phiếu). Vùng tuyển (theo dự thảo QĐ): Trần Hưng Đạo và Nguyễn Chí Thanh tuyển toàn tỉnh; Thăng Long và Bảo Lộc tuyển theo danh sách xã/phường (Địa, Sử, Pháp của Thăng Long tuyển toàn tỉnh) – cần đối chiếu văn bản chính thức."
+  "notes": "Kế hoạch: QĐ 1074/QĐ-UBND (30/3/2026), CV 1687/SGDĐT-QLCL (15/4/2026); môn thứ 3 là Tiếng Anh (CV 649/SGDĐT-QLCL). 3.780 đăng ký/3.600 dự thi các bài không chuyên; 4.880 lượt đăng ký/4.493 lượt dự thi môn chuyên (mỗi thí sinh được thi tối đa 2 môn chuyên). Phúc khảo: 279 bài trắc nghiệm Tiếng Anh, 5 bài thay đổi điểm. Trần Hưng Đạo 2026: 11 lớp/385 chỉ tiêu (chuyên Anh 2 lớp/70). Vùng tuyển (dự thảo QĐ): Trần Hưng Đạo và Nguyễn Chí Thanh tuyển toàn tỉnh; Thăng Long và Bảo Lộc tuyển theo danh sách xã/phường. Năm 2025 (trước sáp nhập): Bình Thuận cũ – Trần Hưng Đạo 385 chỉ tiêu/11 lớp, công bố điểm 17/6, điểm chuẩn 21/6/2025, công thức Toán + Văn + Anh + chuyên×2, mọi bài ≥ 3,0; Đắk Nông cũ 2024 – thi 6–8/6/2024: Văn, Toán tự luận 120', Tiếng Anh trắc nghiệm 60', chuyên 150' (trắc nghiệm + tự luận), sáng 8/6 thi NÓI tiếng Anh 5 phút/thí sinh; công bố trúng tuyển 24/6/2024."
  },
  "plan_2027": null,
  "stories": [
@@ -188,26 +209,50 @@
    "summary": "Báo Lâm Đồng tổng kết kỳ thi chuyên 1–4/7/2026: 4.493 lượt dự thi môn chuyên tại 6 điểm thi. Có 279 bài trắc nghiệm Tiếng Anh xin phúc khảo; 5 bài thay đổi điểm, nguyên nhân gồm cộng sai và lỗi phần mềm nhận dạng đáp án.",
    "takeaways": [
     "Bài Tiếng Anh chung là trắc nghiệm chấm máy – luyện tô phiếu rõ, đúng ô",
-    "Nếu điểm bất thường, nên làm đơn phúc khảo (17–19/7)"
+    "Nếu điểm bất thường, nên làm đơn phúc khảo (14–17/7)"
    ],
    "url": "https://baolamdong.vn/ky-thi-tuyen-sinh-lop-10-thpt-chuyen-tinh-lam-dong-dien-ra-nghiem-tuc-dung-quy-che-457957.html"
+  },
+  {
+   "title": "385 học sinh trúng tuyển vào Trường THPT chuyên Trần Hưng Đạo - Bình Thuận",
+   "who": "báo",
+   "year": 2026,
+   "school": "THPT chuyên Trần Hưng Đạo",
+   "summary": "Sở GD&ĐT Lâm Đồng công bố 30/7/2026: Trần Hưng Đạo tuyển 385 HS/11 lớp; chuyên Anh lấy điểm cao nhất trường 33,95/50, thủ khoa chuyên Anh Võ Lê Xuyến Chi 42,85, 'nhiều thí sinh chuyên Anh trên 40 điểm'; thủ khoa toàn trường chuyên Tin 46,30.",
+   "takeaways": [
+    "Ở Phan Thiết, chuyên Anh là lớp cạnh tranh nhất năm 2026",
+    "Tốp đầu chuyên Anh đạt 40+/50, tức trung bình 8+/10 mỗi bài – cần mạnh đều cả 3 môn chung"
+   ],
+   "url": "https://thanhnien.vn/385-hoc-sinh-trung-tuyen-vao-truong-thpt-chuyen-tran-hung-dao-binh-thuan-185260730131829825.htm"
+  },
+  {
+   "title": "Những gương mặt thủ khoa THPT chuyên Nguyễn Chí Thanh (2024)",
+   "who": "báo",
+   "year": 2024,
+   "school": "THPT chuyên Nguyễn Chí Thanh",
+   "summary": "Hoàng Minh Ánh là thủ khoa toàn trường và thủ khoa chuyên Anh với 45,40 điểm: Toán 9, Ngữ văn 9, Tiếng Anh 9,8, chuyên Anh 8,8 (×2). Năm 2024 Đắk Nông cũ còn tổ chức thi nói tiếng Anh riêng (8/6/2024).",
+   "takeaways": [
+    "Công thức Đắk Nông cũ: 3 môn chung + chuyên×2 – điểm 3 môn chung 27,8/30 góp 61% tổng điểm thủ khoa",
+    "Luyện cả kỹ năng nói nếu địa phương tổ chức thi nói"
+   ],
+   "url": "https://pgddaksong.edu.vn/nhung-guong-mat-thu-khoa-thpt-chuyen-nguyen-chi-thanh.html"
   }
  ],
  "prep_tips": [
   "Bài chuyên Anh chấm thang 20 trên tổng 50 → chiếm 40% điểm xét; Tiếng Anh chung 60 phút trắc nghiệm (tuyensinh247; Thông báo 116 Sở GD&ĐT Lâm Đồng).",
   "Có thể đăng ký 2 môn chuyên cùng trường: học sinh giỏi Anh ở Đà Lạt có thể thi cả chuyên Pháp (3/7 chiều) và chuyên Anh (4/7 sáng), hoặc ghép chuyên Anh với môn khác (tuyensinh247).",
-  "Ngưỡng tham khảo 2026: Thăng Long chuyên Anh 38,45/50, Bảo Lộc 34,95/50 (tuyensinh247).",
+  "Ngưỡng tham khảo 2026: Thăng Long 38,45/50, Bảo Lộc 34,95/50, Trần Hưng Đạo 33,95/50 (tuyensinh247, Thanh Niên); Trần Hưng Đạo và Nguyễn Chí Thanh tuyển toàn tỉnh nên học sinh Đà Lạt/Bảo Lộc có thêm lựa chọn.",
+  "Học sinh khu vực Bình Thuận cũ, Đắk Nông cũ: từ 2026 thi đề chung Lâm Đồng, thang chuyên 20 (không còn ×2) và không còn bài nói riêng như Đắk Nông 2024 – ôn theo đề Thăng Long/Lâm Đồng (công văn Đắk Nông 2024; kế hoạch Lâm Đồng 2026).",
   "Kỳ thi rơi vào đầu tháng 7 (muộn hơn nhiều tỉnh) – có thêm khoảng 1 tháng ôn sau khi kết thúc năm học lớp 9 (lịch 2026)."
  ],
- "confidence": "low",
+ "confidence": "medium",
  "gaps": [
-  "Toàn bộ điểm chuẩn chuyên Anh của THPT chuyên Trần Hưng Đạo (Bình Thuận cũ) và THPT chuyên Nguyễn Chí Thanh (Đắk Nông cũ) 2022–2026.",
-  "Điểm chuẩn Thăng Long, Bảo Lộc 2022–2023; điểm chuẩn chuyên Pháp Thăng Long 2025 (nguồn lệch 18,85 vs 35,2).",
-  "Chỉ tiêu riêng lớp Anh/Pháp từng trường năm 2026 (Phụ lục V QĐ 1074 chưa đọc được).",
-  "Cấu trúc đề chuyên Anh (CV 1763/SGDĐT-GDTrH) – chưa có số phần, có nghe hay không, link đề.",
-  "Công thức tuyển chuyên của Bình Thuận cũ và Đắk Nông cũ (2022–2025); thang điểm Lâm Đồng cũ 2024–2025.",
+  "Điểm chuẩn chuyên Anh Nguyễn Chí Thanh 2022–2026 (chỉ có 2021 và thủ khoa 2024); Trần Hưng Đạo 2022–2024; Thăng Long, Bảo Lộc 2022–2023; chuyên Pháp Thăng Long 2025 (nguồn lệch 18,85 vs 35,2).",
+  "Chỉ tiêu riêng lớp Anh/Pháp của Thăng Long, Bảo Lộc, Nguyễn Chí Thanh năm 2026 (Phụ lục V QĐ 1074 chưa đọc được).",
+  "Cấu trúc đề chuyên Anh (CV 1763/SGDĐT-GDTrH 10/10/2024 và thông báo thay đổi cấu trúc 13/2/2025 – hai file .docx không đọc được; cần tải và đọc ở lượt sau) – chưa có số phần, có nghe hay không, link đề.",
+  "Công thức tuyển chuyên của Bình Thuận cũ 2022–2024 (chỉ có bản Hoatieu) và Đắk Nông cũ (QĐ 375/QĐ-SGDĐT); thang điểm Lâm Đồng cũ 2024–2025.",
   "Kế hoạch 2027 chưa công bố (tính đến 10/2026).",
-  "Chia sẻ kinh nghiệm của học sinh/giáo viên chưa tìm được (ngân sách tìm kiếm dùng hết)."
+  "Chưa có chia sẻ kinh nghiệm trực tiếp của học sinh/giáo viên (chỉ có bài báo về thủ khoa)."
  ],
  "sources": [
   {
@@ -215,7 +260,7 @@
    "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/lam-dong-p6.html"
   },
   {
-   "title": "Tuyensinh247 – Điểm chuẩn lớp 10 Lâm Đồng",
+   "title": "Tuyensinh247 – Điểm chuẩn lớp 10 Lâm Đồng (Thăng Long, Bảo Lộc 2024–2026)",
    "url": "https://diemthi.tuyensinh247.com/dc-lop10/lam-dong-p6.html"
   },
   {
@@ -225,6 +270,50 @@
   {
    "title": "Tuyensinh247 – THPT chuyên Bảo Lộc",
    "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-bao-loc-1352.html"
+  },
+  {
+   "title": "Thanh Niên – 385 học sinh trúng tuyển vào THPT chuyên Trần Hưng Đạo (30/7/2026)",
+   "url": "https://thanhnien.vn/385-hoc-sinh-trung-tuyen-vao-truong-thpt-chuyen-tran-hung-dao-binh-thuan-185260730131829825.htm"
+  },
+  {
+   "title": "Mực Tím (Tuổi Trẻ) – Đã có điểm chuẩn lớp 10 chuyên Trần Hưng Đạo, Bình Thuận (2025)",
+   "url": "https://muctim.tuoitre.vn/da-co-diem-chuan-lop-10-cua-truong-thpt-chuyen-tran-hung-dao-binh-thuan-101250621134305609.htm"
+  },
+  {
+   "title": "Webtuyensinh – Điểm chuẩn chuyên Trần Hưng Đạo 2025-2026",
+   "url": "https://webtuyensinh.com/diem-chuan-tuyen-sinh-lop-10-thpt-chuyen-tran-hung-dao-nam-hoc-2025-2026/"
+  },
+  {
+   "title": "Hoatieu – Điểm thi tuyển sinh lớp 10 Bình Thuận 2025 (điểm chuẩn chuyên THĐ 2020, 2021, công thức)",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-binh-thuan-208905"
+  },
+  {
+   "title": "Phòng GD&ĐT Đắk Song – Những gương mặt thủ khoa THPT chuyên Nguyễn Chí Thanh (2024)",
+   "url": "https://pgddaksong.edu.vn/nhung-guong-mat-thu-khoa-thpt-chuyen-nguyen-chi-thanh.html"
+  },
+  {
+   "title": "Sở GD&ĐT Đắk Nông – Công văn hướng dẫn tuyển sinh lớp 10 năm 2024 (lịch thi, bài nói tiếng Anh)",
+   "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/NDBT/cong-van-huong-dan-tuyen-sinh-lop-10-dak-nong-2024.pdf"
+  },
+  {
+   "title": "Download.vn – Điểm chuẩn vào 10 Đắk Nông (chuyên Nguyễn Chí Thanh 2021)",
+   "url": "https://download.vn/diem-chuan-lop-10-dak-nong-60632"
+  },
+  {
+   "title": "Sở GD&ĐT Lâm Đồng – Công bố điểm thi tuyển sinh lớp 10 THPT chuyên 2026-2027 (13/7/2026)",
+   "url": "https://lamdong.edu.vn/vi/sgddetail/?param=lam-dong-cong-bo-diem-thi-tuyen-sinh-vao-lop-10-thpt-chuyen-nam-hoc-2026-2027"
+  },
+  {
+   "title": "Sở GD&ĐT Lâm Đồng – Hướng dẫn nội dung thi chuyên (10/10/2024, .docx)",
+   "url": "https://lamdong.edu.vn/Files/Eoffices_V3/2024/10/10/06.10.2024. HUONG DAN NOI THI CHUYEN V4.docx"
+  },
+  {
+   "title": "Sở GD&ĐT Lâm Đồng – Thông báo thay đổi cấu trúc nội dung một số môn thi chuyên từ 2025-2026 (.docx)",
+   "url": "https://lamdong.edu.vn/Files/Eoffices_V3/2025/2/13/Thong bao thay doi cau truc noi dung mot so mon thi tuyen sinh vao lop 10 THPT chuyen tu nam hoc 2025  2026.docx"
+  },
+  {
+   "title": "Thư viện Pháp luật – Điểm chuẩn lớp 10 Lâm Đồng 2026-2027 công bố ngày nào (lịch CV 1687)",
+   "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/diem-chuan-lop-10-tai-lam-dong-nam-2026-2027-duoc-cong-bo-ngay-nao-138093720.html"
   },
   {
    "title": "LuatVietnam – Dự thảo QĐ UBND Lâm Đồng phê duyệt kế hoạch tuyển sinh 2026-2027",
@@ -266,9 +355,10 @@
   "max": 50,
   "conditions": "Dự thi đủ các bài, không vi phạm quy chế; rèn luyện và học tập các năm THCS từ Khá trở lên. Xét từ cao xuống đến hết chỉ tiêu. Hòa điểm: điểm bài chuyên → ĐTB môn chuyên lớp 9 → ĐTB các môn lớp 9. Một nguồn (Luật Minh Khuê) nêu ngưỡng tối thiểu 2,0 bài không chuyên và 4,0 bài chuyên nhưng chưa có văn bản xác nhận.",
   "formula_by_year": {
-   "2026": "Văn + Toán + Anh + chuyên (thang 20), tổng 50 (tuyensinh247; dự thảo QĐ UBND Lâm Đồng 3/2026).",
+   "2026": "Văn + Toán + Anh + chuyên (thang 20), tổng 50 (tuyensinh247; dự thảo QĐ UBND Lâm Đồng 3/2026). Kiểm chứng: thủ khoa chuyên Anh Trần Hưng Đạo 2026 đạt 42,85/50.",
    "2024–2025 (Lâm Đồng cũ)": "Tổng điểm các bài không chuyên + điểm bài chuyên tương ứng (tuyensinh247, trang trường); thang của bài chuyên chưa xác minh. Thời lượng 2025: Toán 90', Văn 120', Anh 60', chuyên 150' (Thông báo 116 Sở GD&ĐT Lâm Đồng).",
-   "Bình Thuận cũ, Đắk Nông cũ": "Chưa tìm được."
+   "2021–2025 (Bình Thuận cũ – Trần Hưng Đạo)": "ĐXT = Toán + Ngữ văn + Tiếng Anh + môn chuyên × 2, thang 50; mọi bài thi ≥ 3,0; hòa điểm xét bài chuyên rồi ĐTB môn chuyên lớp 9 (Hoatieu).",
+   "2024 (Đắk Nông cũ – Nguyễn Chí Thanh)": "Toán + Văn + Anh + chuyên × 2, thang 50 (kiểm chứng: thủ khoa chuyên Anh 2024 Hoàng Minh Ánh 9 + 9 + 9,8 + 8,8×2 = 45,40). Có thêm bài thi nói tiếng Anh riêng (chưa rõ có tính vào điểm xét). Công thức chính thức ở QĐ 375/QĐ-SGDĐT Đắk Nông (chưa đọc được)."
   }
  },
  "schools_raw": [
@@ -293,7 +383,7 @@
      "scale": {
       "2026": 50
      },
-     "note": "Tổng chỉ tiêu trường 2025: 315, có 491 hồ sơ thi chuyên (mọi môn). Thang 2024–2025 chưa xác minh."
+     "note": "NV1 (tuyensinh247). Tổng chỉ tiêu trường 2025: 315, có 491 hồ sơ thi chuyên (mọi môn). Thang 2024–2025 chưa xác minh."
     },
     {
      "lang": "Pháp",
@@ -335,7 +425,7 @@
      "scale": {
       "2026": 50
      },
-     "note": "Tổng chỉ tiêu trường 2025: 245, 471 thí sinh đăng ký (mọi môn). Không có lớp Pháp."
+     "note": "NV1 (tuyensinh247). Tổng chỉ tiêu trường 2025: 245, 471 thí sinh đăng ký (mọi môn). Không có lớp Pháp."
     }
    ]
   },
@@ -347,18 +437,26 @@
     {
      "lang": "Anh",
      "quota": {
-      "2026": null
+      "2025": 70,
+      "2026": 70
      },
      "applicants": {},
      "cut": {
+      "2020": 32.1,
+      "2021": 36.8,
       "2022": null,
       "2023": null,
       "2024": null,
-      "2025": null,
-      "2026": null
+      "2025": 36.35,
+      "2026": 33.95
      },
-     "scale": {},
-     "note": "Năm 2026 có lớp chuyên Tiếng Anh, tuyển toàn tỉnh mới; trường là một điểm thi chung. Chưa tìm được điểm chuẩn năm nào."
+     "scale": {
+      "2020": 50,
+      "2021": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "2026: 33,95 – cao nhất trường (Thanh Niên 30/7/2026; thủ khoa chuyên Anh Võ Lê Xuyến Chi 42,85; 385 trúng tuyển/11 lớp, chuyên Anh 2 lớp). 2025: 36,35 (Mực Tím/Tuổi Trẻ 21/6/2025, 2 lớp/70 chỉ tiêu; Sinh 38,4 cao nhất) – webtuyensinh.com ghi 35,2 (lệch, dùng số Tuổi Trẻ). 2021: 36,80 (405 trúng tuyển/789 thí sinh); 2020: 32,10 (Hoatieu). 2022–2024 chưa tìm được (Hoatieu chỉ có ảnh). 2025 trở về trước thi đề Bình Thuận (công thức ×2, thang 50); 2026 thi đề chung Lâm Đồng."
     }
    ]
   },
@@ -374,14 +472,17 @@
      },
      "applicants": {},
      "cut": {
+      "2021": 37.7,
       "2022": null,
       "2023": null,
       "2024": null,
       "2025": null,
       "2026": null
      },
-     "scale": {},
-     "note": "Năm 2026 có lớp chuyên Tiếng Anh, tuyển toàn tỉnh mới. Chưa tìm được điểm chuẩn năm nào."
+     "scale": {
+      "2021": 50
+     },
+     "note": "2021: 37,70 – cao nhất trường (Download.vn). 2024: thủ khoa toàn trường là thủ khoa chuyên Anh Hoàng Minh Ánh 45,40/50 (Toán 9, Văn 9, Anh 9,8, chuyên Anh 8,8) – điểm chuẩn 2024 chỉ đăng trên trang trường (không truy cập được). 2022, 2023, 2025, 2026 chưa tìm được; Sở Lâm Đồng công bố kết quả 4 trường cuối 7/2026 nhưng chưa thấy số của NCT trên web. Đắk Nông cũ 2024 có thêm bài nói tiếng Anh 5 phút."
     }
    ]
   }
@@ -395,6 +496,20 @@
    "need_tv_more": false
   },
   {
+   "k": "so-chuyen-nguyen-chi-thanh",
+   "name": "chuyên Nguyễn Chí Thanh",
+   "score": 7.0,
+   "paper": "so",
+   "need_tv_more": false
+  },
+  {
+   "k": "so-chuyen-tran-hung-dao",
+   "name": "chuyên Trần Hưng Đạo",
+   "score": 6.3,
+   "paper": "so",
+   "need_tv_more": false
+  },
+  {
    "k": "so-chuyen-bao-loc",
    "name": "chuyên Bảo Lộc",
    "score": 6.0,
@@ -402,5 +517,5 @@
    "need_tv_more": false
   }
  ],
- "goal_default": "so-chuyen-bao-loc"
+ "goal_default": "so-chuyen-tran-hung-dao"
 }

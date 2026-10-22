@@ -18,13 +18,95 @@
    "ac_add": 2.5,
    "ac_cap": 10,
    "ac_label": "Anh chung (đề chung)",
-   "difficulty": null,
-   "difficulty_evidence": "Chưa tìm được đề chuyên Anh Hùng Vương/Vĩnh Phúc/Hoàng Văn Thụ hoặc nhận xét độ khó. Hoatieu chỉ cho biết bộ đề chuyên Anh toàn quốc có đề thật của Phú Thọ và Vĩnh Phúc (file khóa).",
+   "difficulty": "B2",
+   "difficulty_evidence": "Ước tính từ cấu trúc đề Phú Thọ 2025 (springboard.vn): 90 câu + 1 đoạn 120–150 từ trong 150', có nghe (1/10 điểm), tỉ trọng từ vựng–ngữ pháp 3/10, đọc 3/10, viết 2,5/10; bài viết chỉ là đoạn văn ngắn nên nhẹ hơn đề Hà Nội/TP.HCM – mức B2. Tuyensinh247 (2026): đề chuyên Anh 'trắc nghiệm kết hợp tự luận, gồm Nghe, Đọc, Viết và Từ vựng – Ngữ pháp'. Năm 2026 đề chung của Sở Phú Thọ mới được lãnh đạo Chuyên Hoàng Văn Thụ nhận xét khó hơn đề Hòa Bình cũ (giaoduc.net.vn). Chưa có nhận xét giáo viên về đề chuyên Anh cụ thể.",
    "minutes": 150,
-   "has_listening": null,
-   "essay_words": null,
-   "sections": [],
-   "sample_links": []
+   "has_listening": true,
+   "essay_words": 150,
+   "sections": [
+    {
+     "format": "listening",
+     "items": 10,
+     "points": 1.0,
+     "note": "Đề Phú Thọ 2025 (dùng chung cho lớp chuyên Anh và chuyên Pháp): 5 câu trắc nghiệm bài nói về nghiên cứu sau đại học + 5 câu điền thông tin (≤3 từ/số) bài hướng dẫn du lịch."
+    },
+    {
+     "format": "pronunciation",
+     "items": 3,
+     "points": 0.3,
+     "note": "Câu 11–13; cả phần ngữ âm 0,5 điểm."
+    },
+    {
+     "format": "stress",
+     "items": 2,
+     "points": 0.2,
+     "note": "Câu 14–15."
+    },
+    {
+     "format": "sentence_completion",
+     "items": 20,
+     "points": 2.0,
+     "note": "Trắc nghiệm từ vựng – ngữ pháp, câu 16–35."
+    },
+    {
+     "format": "word_formation",
+     "items": 5,
+     "points": 0.5,
+     "note": "Câu 36–40."
+    },
+    {
+     "format": "error_id",
+     "items": 5,
+     "points": 0.5,
+     "note": "Tìm và sửa 5 lỗi trong đoạn văn, câu 41–45."
+    },
+    {
+     "format": "cloze",
+     "items": 10,
+     "points": 1.0,
+     "note": "Điền từ trắc nghiệm A–D vào đoạn văn, câu 46–55."
+    },
+    {
+     "format": "open_cloze",
+     "items": 10,
+     "points": 1.0,
+     "note": "Điền một từ, câu 56–65."
+    },
+    {
+     "format": "reading_mcq",
+     "items": 10,
+     "points": 1.0,
+     "note": "Đọc hiểu câu 66–75 (điểm suy ra từ tổng)."
+    },
+    {
+     "format": "dialogue_order",
+     "items": 5,
+     "points": 0.5,
+     "note": "Sắp xếp câu thành đoạn/bức thư hoàn chỉnh, câu 76–80."
+    },
+    {
+     "format": "transformation",
+     "items": 5,
+     "points": 0.5,
+     "note": "Viết lại câu, câu 81–85 (điểm suy ra)."
+    },
+    {
+     "format": "key_word",
+     "items": 5,
+     "points": 0.5,
+     "note": "Viết lại câu với từ gợi ý (3–6 từ), câu 86–90."
+    },
+    {
+     "format": "paragraph_writing",
+     "items": 1,
+     "points": 1.0,
+     "note": "Đoạn văn 120–150 từ (2025: lợi ích của trò chơi dân gian với học sinh)."
+    }
+   ],
+   "sample_links": [
+    "https://springboard.vn/de-thi-chuyen-anh-10-phu-tho-2025-2026/",
+    "https://hoatieu.vn/bo-de-thi-vao-10-chuyen-anh-toan-quoc-235247"
+   ]
   }
  },
  "formulas": {
@@ -36,7 +118,7 @@
     "ach": 3.0
    },
    "paper": "so",
-   "text": "Chuyên Hùng Vương (2024): ĐXTC = Toán + Ngữ văn + Tiếng Anh + 3 × Điểm môn chuyên (mỗi bài thang 10). Công thức năm 2026 cho tỉnh mới chưa tìm được.",
+   "text": "Năm 2026 (cả 3 trường): ĐXTC = Toán + Ngữ văn + Tiếng Anh (hệ số 1) + 3 × Điểm môn chuyên (mỗi bài thang 10, lấy 2 chữ số thập phân). Thang 60.",
    "max": 60
   }
  },
@@ -44,12 +126,12 @@
  "exams": {
   "so": {
    "label": "Kỳ thi của Sở GD&ĐT Phú Thọ",
-   "date": "01–03/6/2026 (QĐ 406/QĐ-UBND năm 2026): 01/6 sáng Ngữ văn, chiều Tiếng Anh; 02/6 sáng Toán; 03/6 sáng môn chuyên (150 phút).",
-   "rule": "Hùng Vương (2024): thí sinh lớp chuyên Pháp thi bài 'Tiếng Anh (chuyên Tiếng Pháp)' buổi chiều, tách khỏi bài chuyên Anh buổi sáng – tức có thể thi cả chuyên Anh và chuyên Pháp (2 môn chuyên khác buổi), lớp Pháp tuyển bằng bài tiếng Anh. Chuyên Vĩnh Phúc: lớp chuyên Pháp có điểm chuẩn NV1 và NV2 riêng (NV2 cao hơn), cho thấy thí sinh chuyên Anh trượt có thể được xét NV2 vào chuyên Pháp. Năm 2026 lịch chỉ có một buổi thi chuyên (sáng 3/6) nên khả năng chỉ thi được một môn chuyên – chưa xác nhận."
+   "date": "01–03/6/2026 (QĐ 406/QĐ-UBND năm 2026): 01/6 sáng Ngữ văn (120'), chiều Tiếng Anh (60'); 02/6 sáng Toán (120'); 03/6 sáng môn chuyên (150', phát đề 8h00). Điểm chuẩn chuyên công bố 22/6/2026.",
+   "rule": "2026: chỉ được đăng ký MỘT lớp chuyên (Hiệu trưởng Hoàng Văn Thụ, giaoduc.net.vn 26/6/2026); lớp chuyên Pháp (Hùng Vương, Vĩnh Phúc, Hoàng Văn Thụ), Trung (Hùng Vương, Hoàng Văn Thụ), Hàn (Hùng Vương), Nhật (Vĩnh Phúc), Nga (Hoàng Văn Thụ) tuyển bằng bài chuyên Tiếng Anh; riêng Hoàng Văn Thụ các lớp Pháp/Trung/Nga cho chọn thi bài chuyên Toán HOẶC Tiếng Anh, có hai mức điểm chuẩn riêng. Trước 2026: Vĩnh Phúc xét NV2 giữa các lớp chuyên (Pháp, Nhật, Tin có điểm NV2 cao hơn NV1); Hùng Vương 2024 bài 'Tiếng Anh (chuyên Pháp)' thi khác buổi với chuyên Anh."
   }
  },
  "nv2_exam": null,
- "nv_rule": "Hùng Vương (2024): thí sinh lớp chuyên Pháp thi bài 'Tiếng Anh (chuyên Tiếng Pháp)' buổi chiều, tách khỏi bài chuyên Anh buổi sáng – tức có thể thi cả chuyên Anh và chuyên Pháp (2 môn chuyên khác buổi), lớp Pháp tuyển bằng bài tiếng Anh. Chuyên Vĩnh Phúc: lớp chuyên Pháp có điểm chuẩn NV1 và NV2 riêng (NV2 cao hơn), cho thấy thí sinh chuyên Anh trượt có thể được xét NV2 vào chuyên Pháp. Năm 2026 lịch chỉ có một buổi thi chuyên (sáng 3/6) nên khả năng chỉ thi được một môn chuyên – chưa xác nhận.",
+ "nv_rule": "2026: chỉ được đăng ký MỘT lớp chuyên (Hiệu trưởng Hoàng Văn Thụ, giaoduc.net.vn 26/6/2026); lớp chuyên Pháp (Hùng Vương, Vĩnh Phúc, Hoàng Văn Thụ), Trung (Hùng Vương, Hoàng Văn Thụ), Hàn (Hùng Vương), Nhật (Vĩnh Phúc), Nga (Hoàng Văn Thụ) tuyển bằng bài chuyên Tiếng Anh; riêng Hoàng Văn Thụ các lớp Pháp/Trung/Nga cho chọn thi bài chuyên Toán HOẶC Tiếng Anh, có hai mức điểm chuẩn riêng. Trước 2026: Vĩnh Phúc xét NV2 giữa các lớp chuyên (Pháp, Nhật, Tin có điểm NV2 cao hơn NV1); Hùng Vương 2024 bài 'Tiếng Anh (chuyên Pháp)' thi khác buổi với chuyên Anh.",
  "options": [
   {
    "id": "so-chuyen-hung-vuong-anh",
@@ -62,16 +144,25 @@
    "exam": "so",
    "group": "nv",
    "years": [
-    2022
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
    ],
    "cut": [
-    44.55
+    44.55,
+    47.1,
+    37.5,
+    41.5,
+    45.6
    ],
    "scale": 60,
    "quota": {
-    "2022": 30
+    "2022": 30,
+    "2026": 35
    },
-   "note": "2022: 44,55 (Hoatieu), mỗi lớp chuyên 30 HS. 2024 cả trường điểm xét tuyển 34,05–44,4 (không có riêng chuyên Anh). Thang 60 cho 2022 là suy theo công thức 2024 – chưa xác minh."
+   "note": "2026: 45,60 – cao nhất trường, 35 trúng tuyển (giaoduc.net.vn 22/6/2026; tuyensinh247). 2025: 41,50; 2024: 37,50 (tuyensinh247, dienmaycholon; trước đây file ghi nhầm là 'không có riêng chuyên Anh' – đã sửa). 2023: 47,10 cao nhất trường (giaoduc.net.vn 22/6/2023). 2022: 44,55 (Hoatieu). Thang 60 xác nhận cho 2024–2026 (công thức ×3); 2022–2023 suy đoán."
   },
   {
    "id": "so-chuyen-hung-vuong-phap",
@@ -84,14 +175,62 @@
    "exam": "so",
    "group": "extra",
    "years": [
-    2022
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
    ],
    "cut": [
-    44.75
+    44.75,
+    44.6,
+    37.5,
+    39.35,
+    42.7
    ],
    "scale": null,
    "quota": null,
-   "note": "Thi bài Tiếng Anh dành cho lớp chuyên Pháp (2024)."
+   "note": "Thi bài chuyên Tiếng Anh. 2026: 42,70 (tuyển thêm ĐXT 42,60). 2024: 37,5 (tuyensinh247; một bảng khác ghi 37,05)."
+  },
+  {
+   "id": "so-chuyen-hung-vuong-trung",
+   "sk": "so-chuyen-hung-vuong",
+   "school": "THPT Chuyên Hùng Vương",
+   "area": "Phú Thọ",
+   "cls": "chuyên Trung",
+   "lang": "Trung",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2026
+   ],
+   "cut": [
+    43.7
+   ],
+   "scale": null,
+   "quota": null,
+   "note": "Lớp mới xuất hiện trong bảng điểm chuẩn 2026 (tuyển thêm 43,60)."
+  },
+  {
+   "id": "so-chuyen-hung-vuong-han",
+   "sk": "so-chuyen-hung-vuong",
+   "school": "THPT Chuyên Hùng Vương",
+   "area": "Phú Thọ",
+   "cls": "chuyên Hàn",
+   "lang": "Han",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2026
+   ],
+   "cut": [
+    43.9
+   ],
+   "scale": null,
+   "quota": null,
+   "note": "Lớp mới xuất hiện trong bảng điểm chuẩn 2026."
   },
   {
    "id": "so-chuyen-vinh-phuc-anh",
@@ -104,16 +243,64 @@
    "exam": "so",
    "group": "nv",
    "years": [
-    2023,
-    2024
+    2025,
+    2026
    ],
    "cut": [
-    41.88,
-    44.25
+    44.09,
+    45.45
+   ],
+   "scale": 60,
+   "quota": {},
+   "note": "2026: 45,45 (tuyensinh247; toàn trường 1.502 hồ sơ/525 chỉ tiêu, thủ khoa 56/60). 2025: 44,09 – thang 60 suy từ thủ khoa (Nhân Dân). 2024: 44,25; 2023: 41,88 (Hoatieu; chỉ tiêu trường 490 năm 2024, 535 năm 2023) – thang điểm 2023–2024 chưa xác minh. Lưu ý: tuyensinh247 trang Phú Thọ/Hòa Bình gắn nhầm bảng 2024 của Vĩnh Phúc (Anh 44,25; Sinh, Văn 46; Sử 40) cho Chuyên Hoàng Văn Thụ – Báo Đầu tư 1/7/2024 xác nhận đó là Vĩnh Phúc."
+  },
+  {
+   "id": "so-chuyen-vinh-phuc-phap",
+   "sk": "so-chuyen-vinh-phuc",
+   "school": "THPT Chuyên Vĩnh Phúc",
+   "area": "Vĩnh Phúc",
+   "cls": "chuyên Pháp",
+   "lang": "Phap",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    38.65,
+    41.5,
+    38.09,
+    44.2
    ],
    "scale": null,
-   "quota": {},
-   "note": "Hoatieu. Tổng chỉ tiêu trường 535 (2023), 490 (2024). Thang điểm chưa rõ."
+   "quota": null,
+   "note": "Điểm NV1; NV2: 41,75 (2023), 43,85 (2024), 38,69 (2025). 2026 chỉ có NV1."
+  },
+  {
+   "id": "so-chuyen-vinh-phuc-nhat",
+   "sk": "so-chuyen-vinh-phuc",
+   "school": "THPT Chuyên Vĩnh Phúc",
+   "area": "Vĩnh Phúc",
+   "cls": "chuyên Nhật",
+   "lang": "Nhat",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2025,
+    2026
+   ],
+   "cut": [
+    39.59,
+    45.65
+   ],
+   "scale": null,
+   "quota": null,
+   "note": "NV1; NV2 2025: 42,19. Lớp chuyên Nhật chỉ có ở Vĩnh Phúc."
   },
   {
    "id": "so-chuyen-hoang-van-thu-anh",
@@ -125,11 +312,91 @@
    "f": "so",
    "exam": "so",
    "group": "nv",
-   "years": [],
-   "cut": [],
-   "scale": null,
+   "years": [
+    2026
+   ],
+   "cut": [
+    37.75
+   ],
+   "scale": 60,
    "quota": {},
-   "note": "Chưa tìm được dữ liệu."
+   "note": "2026: 37,75 trên thang 60 – đứng thứ 2 trường sau Pháp (Toán) 39,25 (giaoduc.net.vn, tuyensinh247); trường 860 hồ sơ/525 chỉ tiêu. 2025: 37 (tuyensinh247; thang Hòa Bình cũ chưa rõ, có điểm ưu tiên). 2022: 37,5; 2020: 36 (Hoatieu Hòa Bình). 2024: tuyensinh247 ghi 44,25 nhưng là số của Chuyên Vĩnh Phúc gắn nhầm – để null."
+  },
+  {
+   "id": "so-chuyen-hoang-van-thu-phap",
+   "sk": "so-chuyen-hoang-van-thu",
+   "school": "THPT Chuyên Hoàng Văn Thụ",
+   "area": "Hòa Bình",
+   "cls": "chuyên Pháp",
+   "lang": "Phap",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2020,
+    2022,
+    2025,
+    2026
+   ],
+   "cut": [
+    32,
+    36.25,
+    33,
+    28.05
+   ],
+   "scale": null,
+   "quota": null,
+   "note": "2026: thi bài Anh 28,05 / thi bài Toán 39,25 (hai mức). 2025: 33."
+  },
+  {
+   "id": "so-chuyen-hoang-van-thu-trung",
+   "sk": "so-chuyen-hoang-van-thu",
+   "school": "THPT Chuyên Hoàng Văn Thụ",
+   "area": "Hòa Bình",
+   "cls": "chuyên Trung",
+   "lang": "Trung",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2020,
+    2022,
+    2025
+   ],
+   "cut": [
+    36.5,
+    39,
+    39.5
+   ],
+   "scale": null,
+   "quota": null,
+   "note": "2026 chỉ có mức thi bài Toán 46,75 (cao nhất trường); mức thi bài Anh không có trong bảng. 2025: 39,5; 2022: 39 (cao nhất các lớp ngoại ngữ)."
+  },
+  {
+   "id": "so-chuyen-hoang-van-thu-nga",
+   "sk": "so-chuyen-hoang-van-thu",
+   "school": "THPT Chuyên Hoàng Văn Thụ",
+   "area": "Hòa Bình",
+   "cls": "chuyên Nga",
+   "lang": "Nga",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2020,
+    2022,
+    2025,
+    2026
+   ],
+   "cut": [
+    28.25,
+    34.75,
+    27.75,
+    26.5
+   ],
+   "scale": null,
+   "quota": null,
+   "note": "2026: thi bài Anh 26,5 / thi bài Toán 40,75. Điểm chuẩn thấp nhất các lớp ngoại ngữ."
   }
  ],
  "paper": {
@@ -138,44 +405,211 @@
   "ac_add": 2.5,
   "ac_cap": 10,
   "ac_label": "Anh chung (đề chung)",
-  "difficulty": null,
-  "difficulty_evidence": "Chưa tìm được đề chuyên Anh Hùng Vương/Vĩnh Phúc/Hoàng Văn Thụ hoặc nhận xét độ khó. Hoatieu chỉ cho biết bộ đề chuyên Anh toàn quốc có đề thật của Phú Thọ và Vĩnh Phúc (file khóa).",
+  "difficulty": "B2",
+  "difficulty_evidence": "Ước tính từ cấu trúc đề Phú Thọ 2025 (springboard.vn): 90 câu + 1 đoạn 120–150 từ trong 150', có nghe (1/10 điểm), tỉ trọng từ vựng–ngữ pháp 3/10, đọc 3/10, viết 2,5/10; bài viết chỉ là đoạn văn ngắn nên nhẹ hơn đề Hà Nội/TP.HCM – mức B2. Tuyensinh247 (2026): đề chuyên Anh 'trắc nghiệm kết hợp tự luận, gồm Nghe, Đọc, Viết và Từ vựng – Ngữ pháp'. Năm 2026 đề chung của Sở Phú Thọ mới được lãnh đạo Chuyên Hoàng Văn Thụ nhận xét khó hơn đề Hòa Bình cũ (giaoduc.net.vn). Chưa có nhận xét giáo viên về đề chuyên Anh cụ thể.",
   "minutes": 150,
-  "has_listening": null,
-  "essay_words": null,
-  "sections": [],
-  "sample_links": []
+  "has_listening": true,
+  "essay_words": 150,
+  "sections": [
+   {
+    "format": "listening",
+    "items": 10,
+    "points": 1.0,
+    "note": "Đề Phú Thọ 2025 (dùng chung cho lớp chuyên Anh và chuyên Pháp): 5 câu trắc nghiệm bài nói về nghiên cứu sau đại học + 5 câu điền thông tin (≤3 từ/số) bài hướng dẫn du lịch."
+   },
+   {
+    "format": "pronunciation",
+    "items": 3,
+    "points": 0.3,
+    "note": "Câu 11–13; cả phần ngữ âm 0,5 điểm."
+   },
+   {
+    "format": "stress",
+    "items": 2,
+    "points": 0.2,
+    "note": "Câu 14–15."
+   },
+   {
+    "format": "sentence_completion",
+    "items": 20,
+    "points": 2.0,
+    "note": "Trắc nghiệm từ vựng – ngữ pháp, câu 16–35."
+   },
+   {
+    "format": "word_formation",
+    "items": 5,
+    "points": 0.5,
+    "note": "Câu 36–40."
+   },
+   {
+    "format": "error_id",
+    "items": 5,
+    "points": 0.5,
+    "note": "Tìm và sửa 5 lỗi trong đoạn văn, câu 41–45."
+   },
+   {
+    "format": "cloze",
+    "items": 10,
+    "points": 1.0,
+    "note": "Điền từ trắc nghiệm A–D vào đoạn văn, câu 46–55."
+   },
+   {
+    "format": "open_cloze",
+    "items": 10,
+    "points": 1.0,
+    "note": "Điền một từ, câu 56–65."
+   },
+   {
+    "format": "reading_mcq",
+    "items": 10,
+    "points": 1.0,
+    "note": "Đọc hiểu câu 66–75 (điểm suy ra từ tổng)."
+   },
+   {
+    "format": "dialogue_order",
+    "items": 5,
+    "points": 0.5,
+    "note": "Sắp xếp câu thành đoạn/bức thư hoàn chỉnh, câu 76–80."
+   },
+   {
+    "format": "transformation",
+    "items": 5,
+    "points": 0.5,
+    "note": "Viết lại câu, câu 81–85 (điểm suy ra)."
+   },
+   {
+    "format": "key_word",
+    "items": 5,
+    "points": 0.5,
+    "note": "Viết lại câu với từ gợi ý (3–6 từ), câu 86–90."
+   },
+   {
+    "format": "paragraph_writing",
+    "items": 1,
+    "points": 1.0,
+    "note": "Đoạn văn 120–150 từ (2025: lợi ích của trò chơi dân gian với học sinh)."
+   }
+  ],
+  "sample_links": [
+   "https://springboard.vn/de-thi-chuyen-anh-10-phu-tho-2025-2026/",
+   "https://hoatieu.vn/bo-de-thi-vao-10-chuyen-anh-toan-quoc-235247"
+  ]
  },
  "exam_2026": {
-  "dates": "01–03/6/2026 (QĐ 406/QĐ-UBND năm 2026): 01/6 sáng Ngữ văn, chiều Tiếng Anh; 02/6 sáng Toán; 03/6 sáng môn chuyên (150 phút).",
-  "organisation": "Một kế hoạch tuyển sinh và một lịch thi chung cho cả tỉnh Phú Thọ mới (QĐ 406/QĐ-UBND); báo chí đưa 'gợi ý đáp án môn Ngữ văn thi vào lớp 10 tỉnh Phú Thọ năm 2026' như một đề chung. Chưa tìm được văn bản nói rõ ba trường chuyên (Hùng Vương, Vĩnh Phúc, Hoàng Văn Thụ) dùng chung đề chuyên hay tuyển riêng theo khu vực tỉnh cũ, và có được đăng ký nhiều trường chuyên không.",
+  "dates": "01–03/6/2026 (QĐ 406/QĐ-UBND năm 2026): 01/6 sáng Ngữ văn (120'), chiều Tiếng Anh (60'); 02/6 sáng Toán (120'); 03/6 sáng môn chuyên (150', phát đề 8h00). Điểm chuẩn chuyên công bố 22/6/2026.",
+  "organisation": "Một kỳ thi, một đề chung do Sở GD&ĐT Phú Thọ (mới) ra cho cả ba trường chuyên Hùng Vương, Vĩnh Phúc, Hoàng Văn Thụ (giaoduc.net.vn 26/6/2026: 'kỳ thi dùng đề chung của Sở'). Mỗi trường xét tuyển riêng theo chỉ tiêu của mình; năm 2026 thí sinh chỉ được đăng ký MỘT nguyện vọng lớp chuyên (theo Hiệu trưởng Chuyên Hoàng Văn Thụ, trước đây Hòa Bình cho nhiều nguyện vọng). Bỏ điểm ưu tiên, bỏ cộng điểm (khác Hòa Bình cũ).",
   "common_subjects": [
    "Toán",
    "Ngữ văn",
    "Tiếng Anh"
   ],
-  "notes": "Năm 2025 (trước sáp nhập): Phú Thọ thi 3–5/6/2025; Vĩnh Phúc thi 3 môn chung 1–2/6/2025, môn chuyên 3/6/2025; Hòa Bình chưa rõ. Năm 2024 Hùng Vương: chung 6–7/6/2024, chuyên 8/6/2024."
+  "notes": "Năm 2026 là năm đầu thi chung sau sáp nhập: Vĩnh Phúc 1.502 hồ sơ/525 chỉ tiêu, Hoàng Văn Thụ 860 hồ sơ/525 chỉ tiêu; thủ khoa Chuyên Vĩnh Phúc 56/60. Điểm chuẩn Hoàng Văn Thụ tụt mạnh (25–39) so với Hùng Vương, Vĩnh Phúc (đều >40) vì đề chung khó hơn đề Hòa Bình cũ và không còn điểm cộng. Năm 2025 (trước sáp nhập): Phú Thọ thi 3–5/6/2025; Vĩnh Phúc thi chung 1–2/6, chuyên 3/6/2025 (18.538 thí sinh toàn tỉnh); Hòa Bình công bố điểm 11–12/6/2025. Năm 2024 Hùng Vương: chung 6–7/6, chuyên 8/6/2024."
  },
  "plan_2027": null,
- "stories": [],
- "prep_tips": [
-  "Ở Hùng Vương môn chuyên nhân hệ số 3 (30/60 điểm) – bài chuyên Anh quyết định một nửa điểm xét tuyển (Kế hoạch tuyển sinh Phú Thọ 2024).",
-  "Năm 2026 thi chuyên chỉ một buổi sáng 3/6, ngay sau 2 ngày thi chung – cần luyện thể lực làm bài 150 phút liên tiếp sau các bài chung (QĐ 406/QĐ-UBND qua Hoatieu).",
-  "Lớp chuyên Pháp ở Hùng Vương và Vĩnh Phúc tuyển bằng tiếng Anh/xét NV2 – học sinh chuyên Anh có thể dùng làm phương án dự phòng."
+ "stories": [
+  {
+   "title": "Điểm chuẩn vào trường chuyên ở Phú Thọ có sự chênh lệch lớn, lãnh đạo trường chia sẻ",
+   "who": "báo",
+   "year": 2026,
+   "school": "THPT Chuyên Hoàng Văn Thụ",
+   "summary": "Năm đầu thi chung đề của Sở Phú Thọ mới, điểm chuẩn Hoàng Văn Thụ chỉ 25–39 trong khi Hùng Vương, Vĩnh Phúc đều trên 40. Hiệu trưởng giải thích: đề chung khó hơn đề Hòa Bình cũ, bỏ điểm ưu tiên, chỉ còn một nguyện vọng chuyên, và lớp Nga/Pháp/Trung được chọn thi Anh thay Toán.",
+   "takeaways": [
+    "Điểm chuẩn các năm trước 2026 của Hoàng Văn Thụ không so sánh được với 2026 – nhìn vào 2026 trở đi.",
+    "Chỉ được một nguyện vọng chuyên nên chọn trường/lớp phải cân nhắc kỹ điểm chuẩn từng trường.",
+    "Học sinh khu vực Hòa Bình cũ: cùng một đề, điểm chuẩn Hoàng Văn Thụ thấp hơn Hùng Vương ~8 điểm – cơ hội đỗ cao hơn nếu chấp nhận học xa."
+   ],
+   "url": "https://giaoduc.net.vn/diem-chuan-vao-truong-chuyen-o-phu-tho-co-su-chenh-lech-lon-lanh-dao-truong-chia-se-post260875.gd"
+  },
+  {
+   "title": "Vĩnh Phúc: Một trường có 5 thủ khoa, 12 á khoa trong kỳ thi tuyển sinh THPT chuyên (2025)",
+   "who": "báo",
+   "year": 2025,
+   "school": "THPT Chuyên Vĩnh Phúc",
+   "summary": "Thủ khoa toàn kỳ thi 2025 Nguyễn Hà Anh (THCS Yên Lạc) đạt 54,64/60 với Toán 9,5, Văn 8,75, Anh 9,75, chuyên Anh 8,88 – thí sinh chuyên Anh đứng đầu toàn trường. Thủ khoa chuyên Anh cũng từ THCS Yên Lạc; THCS Vĩnh Yên có 5 thủ khoa.",
+   "takeaways": [
+    "Muốn đứng đầu chuyên Anh Vĩnh Phúc cần ba môn chung gần tuyệt đối (28/30) vì bài chuyên khó đạt trên 9.",
+    "Bài chuyên Anh 8,88 đã là thủ khoa – đề chuyên Anh Vĩnh Phúc có độ phân hóa cao."
+   ],
+   "url": "https://nhandan.vn/ocop/vinh-phuc-mot-truong-co-5-thu-khoa-12-a-khoa-trong-ky-thi-tuyen-sinh-truong-trung-hoc-pho-thong-chuyen-post886894.html"
+  }
  ],
- "confidence": "low",
+ "prep_tips": [
+  "Môn chuyên nhân hệ số 3 (30/60) ở cả ba trường từ 2026 – bài chuyên Anh quyết định một nửa điểm; điểm chuẩn Hùng Vương/Vĩnh Phúc ~45,5/60 nghĩa là cần ví dụ 8+8+8,5 môn chung và ≥7 bài chuyên (tuyensinh247; giaoduc.net.vn 2026).",
+  "Đề Phú Thọ 2025 có phần nghe 10 câu (1 điểm) – luyện nghe điền thông tin ≤3 từ, khác nhiều tỉnh miền núi không thi nghe (springboard.vn).",
+  "Phần viết chỉ là đoạn văn 120–150 từ (1 điểm) + 15 câu viết lại/sắp xếp (1,5 điểm): dành thời gian luyện transformation và key word hơn là viết luận dài (đề 2025).",
+  "Từ vựng – ngữ pháp chiếm 3/10 (20 câu MCQ, 5 word formation, 5 sửa lỗi) và đọc 3/10 (cloze MCQ, open cloze, đọc hiểu) – 60% điểm nằm ở hai khối này (đề 2025).",
+  "Năm 2026 chỉ một nguyện vọng chuyên, bài chung ≥2, bài chuyên ≥3 mới được xét; không có điểm ưu tiên (tuyensinh247; giaoduc.net.vn).",
+  "Lớp Pháp/Trung/Hàn (Hùng Vương), Pháp/Nhật (Vĩnh Phúc), Pháp/Trung/Nga (Hoàng Văn Thụ) đều tuyển bằng bài chuyên Anh với điểm chuẩn thấp hơn chuyên Anh 1–3 điểm – phương án thay thế cho học sinh giỏi tiếng Anh.",
+  "Thi chuyên sáng 3/6 ngay sau 2 ngày thi chung – luyện làm đề 150 phút liên tục (QĐ 406/QĐ-UBND)."
+ ],
+ "confidence": "medium",
  "gaps": [
-  "Cách tổ chức 2026 sau sáp nhập: ba trường chuyên thi chung đề chuyên hay riêng, đăng ký nhiều trường được không, công thức 2026",
-  "Điểm chuẩn chuyên Anh 2023–2026 Hùng Vương; 2022, 2025, 2026 Chuyên Vĩnh Phúc; toàn bộ Chuyên Hoàng Văn Thụ (có lớp chuyên Anh/Pháp/Trung không)",
-  "Công thức xét tuyển Chuyên Vĩnh Phúc và Hoàng Văn Thụ trước sáp nhập",
-  "Chỉ tiêu, số thí sinh chuyên Anh từng trường",
-  "Cấu trúc đề chuyên Anh, đề mẫu, nhận xét độ khó",
-  "Kế hoạch 2027, chia sẻ kinh nghiệm thật (ngân sách tìm kiếm web đã hết giữa chừng nên chưa tìm được)"
+  "Điểm chuẩn chuyên Anh 2022 Chuyên Vĩnh Phúc; 2023, 2024 Chuyên Hoàng Văn Thụ (tuyensinh247 gắn nhầm số Vĩnh Phúc); thang điểm 2023–2024 Vĩnh Phúc, 2020–2025 Hoàng Văn Thụ (công thức Hòa Bình cũ)",
+  "Chỉ tiêu chuyên Anh từng trường 2025–2026 (chỉ biết Hùng Vương 2026: 35 trúng tuyển), số thí sinh đăng ký chuyên Anh",
+  "Đề chuyên Anh 2026 (đề chung Sở Phú Thọ mới) và nhận xét độ khó của giáo viên; đề Vĩnh Phúc/Hòa Bình các năm trước",
+  "Văn bản gốc quy định số nguyện vọng chuyên 2026 (mới có lời Hiệu trưởng Hoàng Văn Thụ)",
+  "Kế hoạch 2027; chia sẻ kinh nghiệm của chính học sinh đỗ chuyên Anh (chưa tìm được bài phỏng vấn trực tiếp)"
  ],
  "sources": [
   {
+   "title": "Điểm chuẩn vào lớp 10 Phú Thọ 2026 và 3 năm gần đây (Hùng Vương, Vĩnh Phúc, Hoàng Văn Thụ) – tuyensinh247",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/phu-tho-p47.html"
+  },
+  {
+   "title": "Thông tin tuyển sinh lớp 10 Phú Thọ 2026 (công thức ĐXTC, điều kiện, lịch thi) – tuyensinh247",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/phu-tho-p47.html"
+  },
+  {
+   "title": "Sở GD&ĐT Phú Thọ công bố điểm chuẩn vào 10 trường PTDTNT, THPT chuyên (22/6/2026) – Giáo dục Việt Nam",
+   "url": "https://giaoduc.net.vn/so-gddt-phu-tho-cong-bo-diem-chuan-vao-10-truong-pho-thong-dan-toc-noi-tru-thpt-chuyen-post260853.gd"
+  },
+  {
+   "title": "Điểm chuẩn vào trường chuyên ở Phú Thọ có sự chênh lệch lớn, lãnh đạo trường chia sẻ (26/6/2026) – Giáo dục Việt Nam",
+   "url": "https://giaoduc.net.vn/diem-chuan-vao-truong-chuyen-o-phu-tho-co-su-chenh-lech-lon-lanh-dao-truong-chia-se-post260875.gd"
+  },
+  {
+   "title": "Phú Thọ công bố điểm trúng tuyển vào lớp 10 năm học 2023-2024 – Giáo dục Việt Nam",
+   "url": "https://giaoduc.net.vn/phu-tho-cong-bo-diem-trung-tuyen-vao-lop-10-nam-hoc-2023-2024-post236136.gd"
+  },
+  {
+   "title": "Kế hoạch tuyển sinh vào lớp 10 THPT Phú Thọ năm học 2025-2026 (KH 458) – Thư viện Pháp luật",
+   "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2025/NTKL/07032025/KH-458.pdf"
+  },
+  {
    "title": "Kế hoạch tuyển sinh THPT Phú Thọ năm học 2024-2025 (bản PDF – Thư viện Pháp luật)",
    "url": "https://cdn.thuvienphapluat.vn/uploads/tintuc/2024/04/13/tuyen-sinh-thpt-phu-tho-chinh-thuc.pdf"
+  },
+  {
+   "title": "Đề thi chuyên Anh vào 10 Phú Thọ 2025-2026 (cấu trúc đề) – Springboard",
+   "url": "https://springboard.vn/de-thi-chuyen-anh-10-phu-tho-2025-2026/"
+  },
+  {
+   "title": "Điểm chuẩn lớp 10 tỉnh Phú Thọ (Hùng Vương 2024–2026) – Điện máy Chợ Lớn",
+   "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-tinh-phu-tho"
+  },
+  {
+   "title": "Điểm chuẩn vào lớp 10 Vĩnh Phúc (Chuyên Vĩnh Phúc 2025–2026) – tuyensinh247",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/vinh-phuc-p60.html"
+  },
+  {
+   "title": "Điểm thi tuyển sinh lớp 10 Vĩnh Phúc (Chuyên Vĩnh Phúc 2023, 2024) – Hoatieu",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-vinh-phuc-209041"
+  },
+  {
+   "title": "Vĩnh Phúc: Một trường có 5 thủ khoa, 12 á khoa trong kỳ thi tuyển sinh THPT chuyên (2025) – Nhân Dân",
+   "url": "https://nhandan.vn/ocop/vinh-phuc-mot-truong-co-5-thu-khoa-12-a-khoa-trong-ky-thi-tuyen-sinh-truong-trung-hoc-pho-thong-chuyen-post886894.html"
+  },
+  {
+   "title": "Tuyên Quang, Phú Thọ và Vĩnh Phúc lần lượt công bố điểm chuẩn lớp 10 (2024) – Báo Đầu tư",
+   "url": "https://baodautu.vn/tuyen-quang-phu-tho-va-vinh-phuc-lan-luot-cong-bo-diem-chuan-lop-10-d219039.html"
+  },
+  {
+   "title": "Điểm chuẩn vào lớp 10 Hòa Bình (Chuyên Hoàng Văn Thụ 2025–2026) – tuyensinh247",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/hoa-binh-p8.html"
+  },
+  {
+   "title": "Điểm thi tuyển sinh lớp 10 Hòa Bình (Chuyên Hoàng Văn Thụ 2020, 2022) – Hoatieu",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-hoa-binh-209156"
   },
   {
    "title": "Điểm thi tuyển sinh lớp 10 Phú Thọ – Hoatieu",
@@ -186,28 +620,16 @@
    "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-phu-tho-208856"
   },
   {
-   "title": "Điểm thi tuyển sinh lớp 10 Vĩnh Phúc – Hoatieu",
-   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-vinh-phuc-209041"
-  },
-  {
-   "title": "Đề thi vào 10 môn Anh Vĩnh Phúc – Hoatieu",
-   "url": "https://hoatieu.vn/de-thi-vao-10-mon-anh-vinh-phuc-co-dap-an-225326"
-  },
-  {
    "title": "Bộ đề thi vào 10 chuyên Anh toàn quốc – Hoatieu",
    "url": "https://hoatieu.vn/bo-de-thi-vao-10-chuyen-anh-toan-quoc-235247"
   },
   {
    "title": "Lịch thi vào lớp 10 năm học 2025-2026 của 63 tỉnh – LuatVietnam",
    "url": "https://luatvietnam.vn/giao-duc/lich-thi-vao-lop-10-cua-63-tinh-thanh-nam-hoc-2025-2026-886-101296-article.html"
-  },
-  {
-   "title": "Lịch thi vào lớp 10 năm 2026 – FPT Shop",
-   "url": "https://fptshop.com.vn/tin-tuc/danh-gia/lich-thi-vao-lop-10-nam-2025-cua-63-tinh-175950"
   }
  ],
  "formula_raw": {
-  "text": "Chuyên Hùng Vương (2024): ĐXTC = Toán + Ngữ văn + Tiếng Anh + 3 × Điểm môn chuyên (mỗi bài thang 10). Công thức năm 2026 cho tỉnh mới chưa tìm được.",
+  "text": "Năm 2026 (cả 3 trường): ĐXTC = Toán + Ngữ văn + Tiếng Anh (hệ số 1) + 3 × Điểm môn chuyên (mỗi bài thang 10, lấy 2 chữ số thập phân). Thang 60.",
   "parts": [
    "Toán",
    "Ngữ văn",
@@ -215,11 +637,12 @@
    "Anh chuyên×3"
   ],
   "max": 60,
-  "conditions": "Chưa tìm được điều kiện điểm sàn/điểm liệt cho lớp chuyên.",
+  "conditions": "2026: học lực và rèn luyện lớp 9 từ Khá trở lên; mỗi bài thi chung ≥ 2,0; bài môn chuyên ≥ 3,0; không cộng điểm ưu tiên/khuyến khích. Xét từ cao xuống thấp đến hết chỉ tiêu từng lớp; trúng tuyển chuyên thì không xét THPT công lập/PTDTNT (tuyensinh247; giaoduc.net.vn). Hùng Vương 2025: yêu cầu học tập và rèn luyện lớp 9 mức Tốt (KH tuyển sinh Phú Thọ 2025).",
   "formula_by_year": {
-   "2024": "Hùng Vương: ĐXTC = ĐT + ĐV + ĐA + 3ĐC, thang 60 (Kế hoạch tuyển sinh Phú Thọ 2024-2025).",
-   "Vĩnh Phúc (trước 2025)": "Công thức chuyên chưa rõ; tuyển sinh công lập Vĩnh Phúc tính Văn, Toán hệ số 2 + Anh hệ số 1 (Hoatieu).",
-   "2026": null
+   "2023": "Hùng Vương: chưa có văn bản; điểm chuẩn Anh 47,1 phù hợp thang 60 (chuyên ×3) – suy đoán.",
+   "2024": "Hùng Vương: ĐXTC = ĐT + ĐV + ĐA + 3ĐC, thang 60 (Kế hoạch tuyển sinh Phú Thọ 2024-2025). Vĩnh Phúc: công thức chưa có văn bản (điểm chuẩn Anh 44,25).",
+   "2025": "Hùng Vương: 3 môn chung hệ số 1 + môn chuyên hệ số 3, thang 60 (KH tuyển sinh Phú Thọ 2025-2026). Vĩnh Phúc: cũng ×3 thang 60 – suy từ thủ khoa 54,64 = 9,5 + 8,75 + 9,75 + 3×8,88 (Nhân Dân 14/6/2025). Hòa Bình (Hoàng Văn Thụ): có cộng điểm ưu tiên, ngưỡng môn chuyên khác (giaoduc.net.vn) – công thức chưa rõ.",
+   "2026": "Cả ba trường: Toán + Văn + Anh + 3×chuyên, thang 60; chung ≥2,0, chuyên ≥3,0; không điểm ưu tiên (tuyensinh247; giaoduc.net.vn)."
   }
  },
  "schools_raw": [
@@ -231,29 +654,53 @@
     {
      "lang": "Anh",
      "quota": {
-      "2022": 30
+      "2022": 30,
+      "2026": 35
      },
      "applicants": {},
      "cut": {
       "2022": 44.55,
-      "2023": null,
-      "2024": null,
-      "2025": null,
-      "2026": null
+      "2023": 47.1,
+      "2024": 37.5,
+      "2025": 41.5,
+      "2026": 45.6
      },
      "scale": {
       "2022": 60,
-      "2024": 60
+      "2023": 60,
+      "2024": 60,
+      "2025": 60,
+      "2026": 60
      },
-     "note": "2022: 44,55 (Hoatieu), mỗi lớp chuyên 30 HS. 2024 cả trường điểm xét tuyển 34,05–44,4 (không có riêng chuyên Anh). Thang 60 cho 2022 là suy theo công thức 2024 – chưa xác minh."
+     "note": "2026: 45,60 – cao nhất trường, 35 trúng tuyển (giaoduc.net.vn 22/6/2026; tuyensinh247). 2025: 41,50; 2024: 37,50 (tuyensinh247, dienmaycholon; trước đây file ghi nhầm là 'không có riêng chuyên Anh' – đã sửa). 2023: 47,10 cao nhất trường (giaoduc.net.vn 22/6/2023). 2022: 44,55 (Hoatieu). Thang 60 xác nhận cho 2024–2026 (công thức ×3); 2022–2023 suy đoán."
     },
     {
      "lang": "Pháp",
      "admit_by_english": true,
      "cut": {
-      "2022": 44.75
+      "2022": 44.75,
+      "2023": 44.6,
+      "2024": 37.5,
+      "2025": 39.35,
+      "2026": 42.7
      },
-     "note": "Thi bài Tiếng Anh dành cho lớp chuyên Pháp (2024)."
+     "note": "Thi bài chuyên Tiếng Anh. 2026: 42,70 (tuyển thêm ĐXT 42,60). 2024: 37,5 (tuyensinh247; một bảng khác ghi 37,05)."
+    },
+    {
+     "lang": "Trung",
+     "admit_by_english": true,
+     "cut": {
+      "2026": 43.7
+     },
+     "note": "Lớp mới xuất hiện trong bảng điểm chuẩn 2026 (tuyển thêm 43,60)."
+    },
+    {
+     "lang": "Hàn",
+     "admit_by_english": true,
+     "cut": {
+      "2026": 43.9
+     },
+     "note": "Lớp mới xuất hiện trong bảng điểm chuẩn 2026."
     }
    ]
   },
@@ -267,56 +714,120 @@
      "quota": {},
      "applicants": {},
      "cut": {
+      "2022": null,
       "2023": 41.88,
       "2024": 44.25,
-      "2025": null,
-      "2026": null
+      "2025": 44.09,
+      "2026": 45.45
      },
-     "scale": {},
-     "note": "Hoatieu. Tổng chỉ tiêu trường 535 (2023), 490 (2024). Thang điểm chưa rõ."
+     "scale": {
+      "2025": 60,
+      "2026": 60
+     },
+     "note": "2026: 45,45 (tuyensinh247; toàn trường 1.502 hồ sơ/525 chỉ tiêu, thủ khoa 56/60). 2025: 44,09 – thang 60 suy từ thủ khoa (Nhân Dân). 2024: 44,25; 2023: 41,88 (Hoatieu; chỉ tiêu trường 490 năm 2024, 535 năm 2023) – thang điểm 2023–2024 chưa xác minh. Lưu ý: tuyensinh247 trang Phú Thọ/Hòa Bình gắn nhầm bảng 2024 của Vĩnh Phúc (Anh 44,25; Sinh, Văn 46; Sử 40) cho Chuyên Hoàng Văn Thụ – Báo Đầu tư 1/7/2024 xác nhận đó là Vĩnh Phúc."
     },
     {
      "lang": "Pháp",
-     "admit_by_english": null,
+     "admit_by_english": true,
      "cut": {
       "2023": 38.65,
-      "2024": 41.5
+      "2024": 41.5,
+      "2025": 38.09,
+      "2026": 44.2
      },
-     "note": "Điểm NV1; NV2: 41,75 (2023), 43,85 (2024)."
+     "note": "Điểm NV1; NV2: 41,75 (2023), 43,85 (2024), 38,69 (2025). 2026 chỉ có NV1."
+    },
+    {
+     "lang": "Nhật",
+     "admit_by_english": true,
+     "cut": {
+      "2025": 39.59,
+      "2026": 45.65
+     },
+     "note": "NV1; NV2 2025: 42,19. Lớp chuyên Nhật chỉ có ở Vĩnh Phúc."
     }
    ]
   },
   {
    "name": "THPT Chuyên Hoàng Văn Thụ",
    "old_province": "Hòa Bình",
-   "city": "Hòa Bình (TP cũ)",
+   "city": "Phường Hòa Bình (TP Hòa Bình cũ)",
    "classes": [
     {
      "lang": "Anh",
      "quota": {},
      "applicants": {},
-     "cut": {},
-     "scale": {},
-     "note": "Chưa tìm được dữ liệu."
+     "cut": {
+      "2020": 36,
+      "2022": 37.5,
+      "2023": null,
+      "2024": null,
+      "2025": 37,
+      "2026": 37.75
+     },
+     "scale": {
+      "2026": 60
+     },
+     "note": "2026: 37,75 trên thang 60 – đứng thứ 2 trường sau Pháp (Toán) 39,25 (giaoduc.net.vn, tuyensinh247); trường 860 hồ sơ/525 chỉ tiêu. 2025: 37 (tuyensinh247; thang Hòa Bình cũ chưa rõ, có điểm ưu tiên). 2022: 37,5; 2020: 36 (Hoatieu Hòa Bình). 2024: tuyensinh247 ghi 44,25 nhưng là số của Chuyên Vĩnh Phúc gắn nhầm – để null."
+    },
+    {
+     "lang": "Pháp",
+     "admit_by_english": true,
+     "cut": {
+      "2020": 32,
+      "2022": 36.25,
+      "2025": 33,
+      "2026": 28.05
+     },
+     "note": "2026: thi bài Anh 28,05 / thi bài Toán 39,25 (hai mức). 2025: 33."
+    },
+    {
+     "lang": "Trung",
+     "admit_by_english": true,
+     "cut": {
+      "2020": 36.5,
+      "2022": 39,
+      "2025": 39.5,
+      "2026": null
+     },
+     "note": "2026 chỉ có mức thi bài Toán 46,75 (cao nhất trường); mức thi bài Anh không có trong bảng. 2025: 39,5; 2022: 39 (cao nhất các lớp ngoại ngữ)."
+    },
+    {
+     "lang": "Nga",
+     "admit_by_english": true,
+     "cut": {
+      "2020": 28.25,
+      "2022": 34.75,
+      "2025": 27.75,
+      "2026": 26.5
+     },
+     "note": "2026: thi bài Anh 26,5 / thi bài Toán 40,75. Điểm chuẩn thấp nhất các lớp ngoại ngữ."
     }
    ]
   }
  ],
  "goals": [
   {
-   "k": "so-chuyen-hung-vuong",
-   "name": "Chuyên Hùng Vương",
+   "k": "so-chuyen-vinh-phuc",
+   "name": "Chuyên Vĩnh Phúc",
    "score": 7.0,
    "paper": "so",
    "need_tv_more": false
   },
   {
-   "k": "so-chuyen-vinh-phuc",
-   "name": "Chuyên Vĩnh Phúc",
-   "score": 6.6,
+   "k": "so-chuyen-hung-vuong",
+   "name": "Chuyên Hùng Vương",
+   "score": 6.7,
+   "paper": "so",
+   "need_tv_more": false
+  },
+  {
+   "k": "so-chuyen-hoang-van-thu",
+   "name": "Chuyên Hoàng Văn Thụ",
+   "score": 5.3,
    "paper": "so",
    "need_tv_more": false
   }
  ],
- "goal_default": "so-chuyen-vinh-phuc"
+ "goal_default": "so-chuyen-hung-vuong"
 }

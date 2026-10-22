@@ -3,28 +3,34 @@
   "slug": "quang-ngai",
   "merged_from": ["Quảng Ngãi", "Kon Tum"],
   "exam_2026": {
-    "dates": "Môn chung: sáng 31/5/2026 Ngữ văn 120' (từ 7h30); chiều 31/5/2026 Toán 120' (từ 14h00); sáng 1/6/2026 Tiếng Anh 90' (từ 7h30). Ngày thi môn chuyên: chưa xác minh. Công bố điểm thi 16/6/2026.",
-    "organisation": "chưa xác minh (lịch thi môn chung giống nhau cả tỉnh theo Kế hoạch 721/KH-SGDĐT ngày 13/4/2026, nhưng chưa rõ đề chuyên chung hay riêng cho Lê Khiết và Nguyễn Tất Thành)",
+    "dates": "31/5–2/6/2026 (QĐ 931/QĐ-UBND Quảng Ngãi; tuyensinh247 ghi '30/5 – 1,2/6'). Môn chung: sáng 31/5 Ngữ văn 120' (7h30); chiều 31/5 Toán 120' (14h00); sáng 1/6 Tiếng Anh 90' (7h30); môn chuyên 150' — theo kế hoạch của một trường THPT dẫn KH 721/KH-SGDĐT; ngày thi môn chuyên không ghi rõ trong văn bản đọc được (suy ra 2/6). Điểm thi và điểm chuẩn dự kiến công bố 16/6/2026.",
+    "organisation": "một kỳ thi chung cho cả tỉnh mới: 'Tổ chức 01 kỳ thi tuyển sinh vào lớp 10 THPT chung cho: các trường PTDTNT, các trường THPT chuyên' và các trường công lập thi tuyển (QĐ 931/QĐ-UBND 2026). Hai trường chuyên Lê Khiết và Nguyễn Tất Thành đều có địa bàn tuyển sinh 'Toàn tỉnh', cùng lịch, cùng 4 môn thi (Văn, Toán, Anh, môn chuyên) — hiểu là chung đề.",
     "common_subjects": ["Ngữ văn", "Toán", "Tiếng Anh"],
-    "notes": "Lịch thi lấy từ kế hoạch tuyển sinh của một trường THPT công lập trong tỉnh (Trường THPT Trần Hưng Đạo, Đăk Hà — khu vực Kon Tum cũ), dẫn Kế hoạch 721/KH-SGDĐT ngày 13/4/2026 và Công văn 1316/SGDĐT-GDTrH ngày 01/4/2026 của Sở GDĐT Quảng Ngãi. Môn Tiếng Anh chung 90 phút. Năm 2025, Kon Tum cũ tuyển sinh công lập bằng xét tuyển (Dân trí)."
+    "notes": "Năm đầu sau sáp nhập Quảng Ngãi + Kon Tum. Hai trường chuyên: Lê Khiết (TP Quảng Ngãi, 420 chỉ tiêu 2026) và Nguyễn Tất Thành (Kon Tum, 350 chỉ tiêu 2026) — Phụ lục 3 QĐ 931. Trước 2026: Quảng Ngãi cũ thi 3 môn chung + chuyên (Lê Khiết tự tổ chức xét duyệt 24/6/2024); Kon Tum cũ: công lập xét tuyển, riêng chuyên Nguyễn Tất Thành thi tuyển (2022: 2–3/6, 668 thí sinh; 2024: 4–6/6). Môn Tiếng Anh chung 2026 làm 90 phút."
   },
   "plan_2027": null,
   "formula": {
-    "text": null,
-    "parts": [],
-    "max": null,
-    "conditions": null,
-    "formula_by_year": {}
+    "text": "Điểm xét tuyển vào lớp chuyên = Ngữ văn + Toán + Tiếng Anh (hệ số 1) + điểm môn chuyên × 2 (thang 50). Lớp chuyên Anh: môn chuyên là bài Tiếng Anh chuyên 150 phút.",
+    "parts": ["Toán", "Ngữ văn", "Tiếng Anh (chung)", "Anh chuyên×2"],
+    "max": 50,
+    "conditions": "2026 (QĐ 931): thi đủ 4 bài; mỗi bài không chuyên > 2,0 và tổng 3 bài không chuyên ≥ 15,0; bài môn chuyên > 4,0; kết quả rèn luyện và học tập cả năm các lớp THCS từ Khá trở lên; thường trú hoặc học THCS trong tỉnh. Xét từ cao xuống đến đủ chỉ tiêu từng lớp. Kon Tum cũ 2024 (KH 52): bài chung ≥ 2,0, bài chuyên ≥ 3,5; tốt nghiệp THCS Khá trở lên.",
+    "formula_by_year": {
+      "2022": "Lê Khiết: điểm trúng tuyển Anh 38,8 (thang 50 suy từ mức điểm). Nguyễn Tất Thành (Kon Tum): 34,60; chưa đọc được văn bản hệ số",
+      "2023": "Lê Khiết: Anh 37,90, chỉ tiêu 70 (hoatieu). Nguyễn Tất Thành: Anh 37,85, 36 trúng tuyển (QĐ 317 Sở GD&ĐT Kon Tum 22/6/2023)",
+      "2024": "Kon Tum (KH 52/KH-SGDĐT 2/4/2024): Điểm xét tuyển = (Toán + Ngữ văn + Tiếng Anh) + môn chuyên × 2; chỉ tiêu Anh 35/315. Quảng Ngãi: Lê Khiết Anh 39,4 — văn bản hệ số chưa đọc được, mức điểm phù hợp thang 50",
+      "2025": "Hai tỉnh cũ thi riêng trước sáp nhập; Lê Khiết Anh 38,65 (dự kiến NV1, Cổng TTĐT Quảng Ngãi 18/6/2025); Nguyễn Tất Thành Anh 28,3 (tuyensinh247)",
+      "2026": "Ngữ văn + Toán + Tiếng Anh + môn chuyên × 2 (QĐ 931/QĐ-UBND Quảng Ngãi, kế hoạch 2026-2027)"
+    }
   },
-  "nv_rule": "Chưa xác minh cho lớp chuyên. Công lập 2026: tối đa 2 nguyện vọng vào trường THPT công lập/PTDTNT trong tỉnh.",
+  "nv_rule": "2026: tối đa 3 nguyện vọng — 1 NV vào một lớp chuyên (của Lê Khiết hoặc Nguyễn Tất Thành) + tối đa 2 NV vào trường THPT/PTDTNT trong tỉnh; xét NV chuyên trước, trượt chuyên thì dùng điểm 3 môn chung (+ ưu tiên, khuyến khích) xét 2 NV còn lại. Kon Tum cũ 2024: được đăng ký tối đa 2 lớp chuyên (NV1, NV2) và phải thi môn chuyên tương ứng. Cả hai trường chỉ có lớp chuyên Anh, không có lớp Pháp/Trung/Nhật (tuyensinh247 2024–2026; KH 52 Kon Tum 2024: 9 lớp chuyên gồm Toán, Tin, Lý, Hóa, Sinh, Văn, Sử, Địa, Anh). Lê Khiết còn hệ không chuyên (2022: 81 chỉ tiêu, điểm 23,2; 2023: 80, điểm 23,25).",
   "chuyen_paper": {
-    "minutes": null,
-    "scale": null,
+    "minutes": 150,
+    "scale": 10,
     "has_listening": null,
     "essay_words": null,
     "sections": [],
     "difficulty": null,
-    "difficulty_evidence": "Chưa tìm được đề chuyên Anh Lê Khiết hoặc Nguyễn Tất Thành, cũng chưa có nhận xét nào.",
+    "difficulty_evidence": "Chưa tìm được đề chuyên Anh Lê Khiết hoặc Nguyễn Tất Thành. Mô tả chính thức Kon Tum 2024: môn chuyên Tiếng Anh 'trắc nghiệm khách quan kết hợp tự luận', 150 phút (KH 52); Quảng Ngãi 2026: môn chuyên 150 phút (QĐ 931). Chưa rõ có phần nghe. Mức điểm chuẩn Lê Khiết 38–39,4/50 (cao nhất trường nhiều năm) cho thấy thí sinh đỗ đạt ≈ 7,5–8/10 mỗi bài.",
     "sample_links": []
   },
   "schools": [
@@ -33,7 +39,14 @@
       "old_province": "Quảng Ngãi",
       "city": "Quảng Ngãi",
       "classes": [
-        {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {"2022": null, "2023": null, "2024": null, "2025": 38.65, "2026": null}, "scale": {}, "note": "2025: 38,65 là điểm chuẩn DỰ KIẾN nguyện vọng 1 (Cổng TTĐT tỉnh Quảng Ngãi, 18/6/2025). Thang điểm chưa rõ. Lớp chuyên ngoại ngữ khác (Pháp/Trung…): chưa xác minh."}
+        {
+          "lang": "Anh",
+          "quota": {"2023": 70},
+          "applicants": {},
+          "cut": {"2022": 38.8, "2023": 37.9, "2024": 39.4, "2025": 38.65, "2026": 39.4},
+          "scale": {"2022": 50, "2023": 50, "2024": 50, "2025": 50, "2026": 50},
+          "note": "Chuyên Anh là lớp có điểm chuẩn cao nhất Lê Khiết hầu hết các năm (2022: 38,8; 2023: 37,90 với 70 chỉ tiêu; 2024: 39,4; 2025: 38,65 là điểm DỰ KIẾN NV1 theo Cổng TTĐT tỉnh 18/6/2025; 2026: 39,4 dự kiến công bố 16/6 — tuyensinh247). Năm cũ: 2021 = 37,7. Tổng chỉ tiêu trường 2022: 352 chuyên + 81 không chuyên; 2026: 420. Thang 50 suy từ công thức ×2 (văn bản 2026) và mức điểm; chưa đọc được văn bản Quảng Ngãi 2022–2025."
+        }
       ]
     },
     {
@@ -41,28 +54,46 @@
       "old_province": "Kon Tum",
       "city": "Kon Tum",
       "classes": [
-        {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {"2022": null, "2023": null, "2024": null, "2025": null, "2026": null}, "scale": {}, "note": "Tên trường theo đầu bài; chưa tìm được nguồn trong phiên này (hết hạn mức tìm kiếm)."}
+        {
+          "lang": "Anh",
+          "quota": {"2022": 30, "2024": 35},
+          "applicants": {},
+          "cut": {"2022": 34.6, "2023": 37.85, "2024": null, "2025": 28.3, "2026": 34.65},
+          "scale": {"2022": 50, "2023": 50, "2025": 50, "2026": 50},
+          "note": "2022: 34,60 (doctailieu; 668 thí sinh cả trường, chỉ tiêu Anh 30 — Báo Kon Tum). 2023: 37,85, 36 trúng tuyển, cao nhất trường (QĐ 317 Sở GD&ĐT Kon Tum, Thư viện Pháp luật). 2024: chưa tìm được (hoatieu/doctailieu chỉ có ảnh); chỉ tiêu Anh 35/315 (KH 52). 2025: 28,3 — giảm mạnh (tuyensinh247). 2026: 34,65 dự kiến (tuyensinh247). Năm cũ: 2021 = 37,05; 2020 = 33,20. Điểm chuẩn thấp hơn Lê Khiết 5–10 điểm cùng thang 50 — từ 2026 cùng đề, là lựa chọn 'vừa sức' trong tỉnh mới."
+        }
       ]
     }
   ],
   "stories": [],
   "prep_tips": [
-    "Môn Tiếng Anh chung 2026 làm trong 90 phút, dài hơn nhiều tỉnh khác (thường 60 phút), nên luyện đề chung đủ 90 phút (nguồn: kế hoạch tuyển sinh THPT Trần Hưng Đạo dẫn KH 721/KH-SGDĐT)."
+    "Từ 2026 cả tỉnh thi chung 1 kỳ, 1 NV chuyên: so sánh điểm chuẩn cùng thang — Lê Khiết Anh 39,4 vs Nguyễn Tất Thành 34,65 (2026); học sinh khu vực Kon Tum cũ có thể chọn Nguyễn Tất Thành để tăng khả năng đỗ (QĐ 931; tuyensinh247).",
+    "Môn chuyên chỉ ×2 và có ngưỡng kép: mỗi bài chung > 2, tổng 3 bài chung ≥ 15, bài chuyên > 4 — cần đều cả Toán, Văn (QĐ 931/2026).",
+    "Điểm chuẩn chuyên Anh Lê Khiết 5 năm ổn định 37,9–39,4/50: mục tiêu ≥ 8/10 mỗi bài chung và ≥ 8 bài chuyên.",
+    "Môn Tiếng Anh chung 2026 làm trong 90 phút, dài hơn nhiều tỉnh (60 phút) — luyện đề chung đủ 90 phút (KH 721/KH-SGDĐT dẫn trong kế hoạch THPT Trần Hưng Đạo).",
+    "Bài chuyên Anh 150 phút, trắc nghiệm kết hợp tự luận (KH 52 Kon Tum 2024) — luyện cả phần viết tự luận."
   ],
-  "confidence": "low",
+  "confidence": "medium",
   "gaps": [
-    "Hầu hết dữ liệu: hết hạn mức WebSearch của lượt làm việc trước khi nghiên cứu sở này, cần chạy lại.",
-    "Công thức xét tuyển chuyên (hệ số môn chuyên), điều kiện, NV chuyên 2026.",
-    "Ngày thi môn chuyên 2026; đề chuyên chung hay riêng 2 khu vực.",
-    "Chỉ tiêu và điểm chuẩn chuyên Anh Lê Khiết 2022–2024, 2026 (2025 mới có số dự kiến).",
-    "Toàn bộ dữ liệu THPT chuyên Nguyễn Tất Thành (Kon Tum).",
-    "Cấu trúc và độ khó đề chuyên Anh, link đề mẫu.",
-    "Lớp chuyên Pháp/Trung/Nhật nếu có.",
-    "Chia sẻ kinh nghiệm ôn thi.",
-    "Kế hoạch 2027."
+    "Đề chuyên Anh Lê Khiết/Nguyễn Tất Thành các năm: cấu trúc từng phần, có nghe không, độ dài bài viết, nhận xét độ khó (chưa tìm thấy trên springboard/hoatieu/doctailieu)",
+    "Điểm chuẩn chuyên Anh Nguyễn Tất Thành 2024; chỉ tiêu riêng lớp Anh 2025–2026 của cả hai trường; số thí sinh đăng ký",
+    "Ngày thi môn chuyên 2026 ghi rõ trong văn bản (hiện suy ra 2/6)",
+    "Văn bản Quảng Ngãi cũ 2022–2025 về công thức/hệ số (hiện chỉ có 2026 và Kon Tum 2024)",
+    "Chia sẻ kinh nghiệm thủ khoa chuyên Anh Lê Khiết/Nguyễn Tất Thành (9 lượt tìm không ra)",
+    "Kế hoạch 2027"
   ],
   "sources": [
+    {"title": "LuatVietnam: QĐ 931/QĐ-UBND Quảng Ngãi phê duyệt kế hoạch tuyển sinh lớp 10 năm học 2026-2027 (lịch, công thức, điều kiện, NV, chỉ tiêu)", "url": "https://luatvietnam.vn/giao-duc/quyet-dinh-931-qd-ubnd-quang-ngai-phe-duyet-ke-hoach-tuyen-sinh-lop-10-nam-hoc-2026-2027-430177-d2.html"},
+    {"title": "Tuyensinh247: Thông tin tuyển sinh lớp 10 Quảng Ngãi 2026", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/quang-ngai-p40.html"},
+    {"title": "Tuyensinh247: Điểm chuẩn lớp 10 Quảng Ngãi 2024–2026 (Lê Khiết, Nguyễn Tất Thành)", "url": "https://diemthi.tuyensinh247.com/dc-lop10/quang-ngai-p40.html"},
+    {"title": "Tuyensinh247: Điểm chuẩn lớp 10 Kon Tum (Nguyễn Tất Thành 2025–2026)", "url": "https://diemthi.tuyensinh247.com/dc-lop10/kon-tum-p58.html"},
+    {"title": "Hoatieu: Điểm thi tuyển sinh lớp 10 Quảng Ngãi (điểm chuẩn Lê Khiết 2021–2023, chỉ tiêu 2023)", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-quang-ngai-208873"},
+    {"title": "Doctailieu: Điểm chuẩn tuyển sinh vào lớp 10 tỉnh Kon Tum (Nguyễn Tất Thành 2020–2022)", "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-kon-tum"},
+    {"title": "Thư viện Pháp luật: Điểm chuẩn tuyển sinh lớp 10 tỉnh Kon Tum năm 2023-2024 (QĐ 317, Nguyễn Tất Thành)", "url": "https://thuvienphapluat.vn/phap-luat/diem-chuan-tuyen-sinh-lop-10-tinh-kon-tum-nam-20232024-trinh-tu-xet-tuyen-vao-cac-truong-thpt-tinh--96044.html"},
+    {"title": "Sở GD&ĐT Kon Tum: Kế hoạch 52/KH-SGDĐT 2/4/2024 tuyển sinh năm học 2024-2025 (công thức ×2, chỉ tiêu Anh 35, lịch 4–6/6)", "url": "https://cdn.thuvienphapluat.vn/uploads/phapluat/2022-2/TVA/KH-52-Tuyen-sinh-24-25-kon-tum.pdf"},
+    {"title": "Báo Kon Tum 6/2022: Kỳ thi vào lớp 10 Trường THPT chuyên Nguyễn Tất Thành diễn ra an toàn, nghiêm túc (668 thí sinh, chỉ tiêu 2022)", "url": "https://www.baokontum.com.vn/xa-hoi/ky-thi-vao-lop-10-truong-thpt-chuyen-nguyen-tat-thanh-dien-ra-an-toan-nghiem-tuc-24053.html"},
     {"title": "Cổng TTĐT tỉnh Quảng Ngãi – Dự kiến điểm chuẩn vào lớp 10 THPT năm học 2025-2026", "url": "https://quangngai.gov.vn/tin-tuc/tin-tu-cac-so-ban-nganh-huyen-thanh-pho/du-kien-diem-chuan-vao-lop-102.html"},
+    {"title": "Sở GDĐT Quảng Ngãi: Công văn 6/2024 về công bố điểm thi và lịch duyệt tuyển sinh (Lê Khiết duyệt 24/6/2024)", "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/DLA/diem-chuan-lop-10-quang-ngai.pdf"},
     {"title": "Kế hoạch tuyển sinh vào lớp 10 năm học 2026-2027 (THPT Trần Hưng Đạo, dẫn KH 721/KH-SGDĐT)", "url": "https://dakha.quangngai.gov.vn/upload/2007063/20260423/Kế%20hoạch%20tuyển%20sinh%20vào%20lớp%2010,%20năm%20học%202026-2027%20..pdf"},
     {"title": "Thanh Niên – Tra cứu điểm thi lớp 10, điểm chuẩn năm 2026 của 34 tỉnh thành", "url": "https://thanhnien.vn/tra-cuu-diem-thi-lop-10-diem-chuan-nam-2026-cua-34-tinh-thanh-185260617171726818.htm"},
     {"title": "Dân trí – Công bố điểm thi, điểm chuẩn lớp 10: lịch chi tiết của 63 tỉnh (2025)", "url": "https://dantri.com.vn/giao-duc/cong-bo-diem-thi-diem-chuan-lop-10-lich-chi-tiet-cua-63-tinh-20250603114245583.htm"}

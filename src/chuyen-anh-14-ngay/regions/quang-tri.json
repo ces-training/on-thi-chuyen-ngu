@@ -7,45 +7,119 @@
  ],
  "edition": "Bản Quảng Trị",
  "exam_md": [
-  6,
-  1
+  5,
+  27
  ],
  "papers": {
   "so": {
-   "map": "B2",
+   "map": "B2+",
    "label": "đề chuyên Anh của Sở Quảng Trị",
    "ac_add": 2.5,
    "ac_cap": 10,
    "ac_label": "Anh chung (đề chung)",
-   "difficulty": null,
-   "difficulty_evidence": null,
-   "minutes": null,
-   "has_listening": null,
-   "essay_words": null,
-   "sections": [],
-   "sample_links": []
+   "difficulty": "B2+",
+   "difficulty_evidence": "Ước từ đề Lê Quý Đôn 2024 và 2025 (springboard.vn): cấu trúc nghe 4 phần kiểu FCE/CAE (điền ghi chú bài giảng), nhiều cụm từ cố định nâng cao (scarcely, virtually, slim chances), 5 bài đọc dài kể cả matching headings, essay 250 từ, có thi nói — tương đương B2+ (FCE cao). Chưa có nhận xét báo chí. Lưu ý: đề Võ Nguyên Giáp (Quảng Bình cũ) trước 2026 chưa đọc được; từ 2026 toàn tỉnh dùng chung mô tả '4 kỹ năng nghe, đọc, viết, nói'.",
+   "minutes": 150,
+   "has_listening": true,
+   "essay_words": 250,
+   "sections": [
+    {
+     "format": "listening",
+     "items": 25,
+     "points": 2.5,
+     "note": "4 part (2025) / 3 part (2024): trả lời ngắn ≤3–4 từ (5 câu), True/False (6), trắc nghiệm (6–10), điền ≤2 từ vào ghi chú bài giảng (8); mỗi bài nghe phát 2 lần"
+    },
+    {
+     "format": "sentence_completion",
+     "items": 10,
+     "points": 0.5,
+     "note": "Lexico-grammar part 1: trắc nghiệm A–D từ vựng/ngữ pháp"
+    },
+    {
+     "format": "error_id",
+     "items": 5,
+     "points": 0.5,
+     "note": "Tìm và sửa lỗi gạch chân A–D"
+    },
+    {
+     "format": "word_formation",
+     "items": 5,
+     "points": 0.5,
+     "note": "Chia dạng từ cho sẵn"
+    },
+    {
+     "format": "open_cloze",
+     "items": 10,
+     "points": 0.5,
+     "note": "Reading part 1: điền 1 từ"
+    },
+    {
+     "format": "cloze",
+     "items": 10,
+     "points": 0.5,
+     "note": "Reading part 2: chọn A–D"
+    },
+    {
+     "format": "reading_mcq",
+     "items": 5,
+     "points": 0.5,
+     "note": "Đọc hiểu trắc nghiệm"
+    },
+    {
+     "format": "matching_headings",
+     "items": 15,
+     "points": 1.0,
+     "note": "Part 4: ghép câu hỏi với người/trường (10 câu, 0,5đ); Part 5: ghép tiêu đề với đoạn 8 chọn 5 (2024) hoặc điền câu vào chỗ trống có 1 câu thừa (2025) (5 câu, 0,5đ)"
+    },
+    {
+     "format": "key_word",
+     "items": 5,
+     "points": 0.5,
+     "note": "Viết lại câu với từ cho sẵn, 3–5 từ"
+    },
+    {
+     "format": "essay",
+     "items": 1,
+     "points": 2.0,
+     "note": "Bài luận quan điểm ~250 từ (2024: 'Vocational training should be included in the secondary school curriculum')"
+    },
+    {
+     "format": "other",
+     "items": 1,
+     "points": 1.0,
+     "note": "Thi nói riêng buổi chiều: 10 đề, 5 phút chuẩn bị + ≤5 phút nói; chiếm 10% tổng điểm bài chuyên (Công văn 902/2024). Bài viết 9,0 điểm (Nghe 2,5 – Từ vựng/ngữ pháp 1,5 – Đọc 2,5 – Viết 2,5) + nói 1,0 = 10"
+    }
+   ],
+   "sample_links": [
+    "https://springboard.vn/de-thi-chuyen-anh-le-quy-don-quang-tri-2024-2025/",
+    "https://springboard.vn/de-thi-chuyen-anh-10-quang-tri-2025-2026/",
+    "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-truong-thpt-chuyen-quang-binh-232924"
+   ]
   }
  },
  "formulas": {
   "so": {
    "w": {
-    "ach": 2
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 2.0
    },
    "paper": "so",
-   "text": null,
-   "max": null
+   "text": "Tổng điểm xét tuyển = Toán + Ngữ văn + Tiếng Anh (hệ số 1) + điểm môn chuyên × 2 (thang 50). Với lớp chuyên Anh: môn chuyên là bài Tiếng Anh chuyên (nói chiếm 10% bài chuyên).",
+   "max": 50
   }
  },
  "m3_label": null,
  "exams": {
   "so": {
    "label": "Kỳ thi của Sở GD&ĐT Quảng Trị",
-   "date": "",
-   "rule": ""
+   "date": "25–27/5/2026: chiều 25/5 Toán 90' (14h30); sáng 26/5 Ngữ văn 120' (7h30); chiều 26/5 Tiếng Anh 60' (14h30); sáng 27/5 các môn chuyên 150'; chiều 27/5 thi nói Tiếng Anh chuyên (từ 13h45). Điểm thi công bố 6/6/2026; điểm chuẩn chuyên và công lập trước 13/7/2026 (Báo Lào Cai dẫn kế hoạch Sở; tuyensinh247).",
+   "rule": "Tối đa 3 nguyện vọng cho thí sinh thi chuyên: NV1 bắt buộc một trong 9 môn chuyên (Toán, Lý, Hóa, Sinh, Tin, Anh, Văn, Sử, Địa); NV2 theo cặp môn — Toán/Lý → Tin; Hóa → Sinh; Văn/Anh → Sử hoặc Địa (chỉ xét khi trượt NV1 và lớp NV2 còn chỉ tiêu); NV3: một trường THPT công lập khác (chỉ dùng khi không đỗ chuyên). Quy định này của Quảng Trị cũ từ 2024 (Công văn 902/SGDĐT-QLCLCNTT 19/4/2024) và áp dụng toàn tỉnh mới 2026. Cả hai trường chuyên chỉ có lớp chuyên Anh, không có lớp Pháp/Trung/Nhật (tuyensinh247 2024–2026). Thực tế 2024 LQĐ: 60 trúng tuyển NV1 chuyên Anh; vài thí sinh Anh trượt NV1 đỗ NV2 Sử (36,35) / Địa (35,80)."
   }
  },
  "nv2_exam": null,
- "nv_rule": null,
+ "nv_rule": "Tối đa 3 nguyện vọng cho thí sinh thi chuyên: NV1 bắt buộc một trong 9 môn chuyên (Toán, Lý, Hóa, Sinh, Tin, Anh, Văn, Sử, Địa); NV2 theo cặp môn — Toán/Lý → Tin; Hóa → Sinh; Văn/Anh → Sử hoặc Địa (chỉ xét khi trượt NV1 và lớp NV2 còn chỉ tiêu); NV3: một trường THPT công lập khác (chỉ dùng khi không đỗ chuyên). Quy định này của Quảng Trị cũ từ 2024 (Công văn 902/SGDĐT-QLCLCNTT 19/4/2024) và áp dụng toàn tỉnh mới 2026. Cả hai trường chuyên chỉ có lớp chuyên Anh, không có lớp Pháp/Trung/Nhật (tuyensinh247 2024–2026). Thực tế 2024 LQĐ: 60 trúng tuyển NV1 chuyên Anh; vài thí sinh Anh trượt NV1 đỗ NV2 Sử (36,35) / Địa (35,80).",
  "options": [
   {
    "id": "so-chuyen-le-quy-don-quang-tri-anh",
@@ -57,66 +131,206 @@
    "f": "so",
    "exam": "so",
    "group": "nv",
-   "years": [],
-   "cut": [],
-   "scale": null,
-   "quota": {},
-   "note": "Chưa tìm được số liệu có nguồn. Tên trường theo brief, chưa tự xác minh qua nguồn."
+   "years": [
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    36.4,
+    34.4,
+    36.2
+   ],
+   "scale": 50,
+   "quota": {
+    "2024": 60
+   },
+   "note": "2024: 36,40 NV1, 60 trúng tuyển (thông báo trúng tuyển lần 2 ngày 19/6/2024 — văn bản gốc); tuyensinh247 ghi 36,9 (có thể là đợt 1) — mâu thuẫn, lấy số văn bản. 2025: 34,4 (tuyensinh247; trang dienmaycholon ghi 37,55 nhưng bảng bị lệch cột, không tin cậy). 2026: 36,2 (tuyensinh247). Năm cũ: 2021 = 33,45, cao nhất trường (hoatieu). Chuyên Anh thường là lớp có điểm chuẩn cao nhất hoặc nhì trường."
   },
   {
-   "id": "so-chuyen-vo-nguyen-giap-quang--anh",
-   "sk": "so-chuyen-vo-nguyen-giap-quang-",
-   "school": "THPT chuyên Võ Nguyên Giáp (Quảng Bình)",
+   "id": "so-chuyen-vo-nguyen-giap-anh",
+   "sk": "so-chuyen-vo-nguyen-giap",
+   "school": "THPT chuyên Võ Nguyên Giáp",
    "area": "Quảng Bình",
    "cls": "chuyên Anh",
    "lang": "Anh",
    "f": "so",
    "exam": "so",
    "group": "nv",
-   "years": [],
-   "cut": [],
-   "scale": null,
+   "years": [
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    34.75,
+    36.05,
+    38.7
+   ],
+   "scale": 50,
    "quota": {},
-   "note": "Chưa tìm được số liệu có nguồn. Tên trường theo brief, chưa tự xác minh qua nguồn."
+   "note": "2024: 34,75 (hoatieu dẫn thông báo Sở GDĐT Quảng Bình năm học 2024-2025). 2025: 36,05; 2026: 38,7 — cao nhất trong hai trường chuyên của tỉnh mới (tuyensinh247). 2025 có 585 thí sinh đăng ký thi vào trường (hoatieu). Thang 50 suy từ mức điểm; chưa đọc được văn bản Quảng Bình 2024–2025."
   }
  ],
  "paper": {
-  "map": "B2",
+  "map": "B2+",
   "label": "đề chuyên Anh của Sở Quảng Trị",
   "ac_add": 2.5,
   "ac_cap": 10,
   "ac_label": "Anh chung (đề chung)",
-  "difficulty": null,
-  "difficulty_evidence": null,
-  "minutes": null,
-  "has_listening": null,
-  "essay_words": null,
-  "sections": [],
-  "sample_links": []
+  "difficulty": "B2+",
+  "difficulty_evidence": "Ước từ đề Lê Quý Đôn 2024 và 2025 (springboard.vn): cấu trúc nghe 4 phần kiểu FCE/CAE (điền ghi chú bài giảng), nhiều cụm từ cố định nâng cao (scarcely, virtually, slim chances), 5 bài đọc dài kể cả matching headings, essay 250 từ, có thi nói — tương đương B2+ (FCE cao). Chưa có nhận xét báo chí. Lưu ý: đề Võ Nguyên Giáp (Quảng Bình cũ) trước 2026 chưa đọc được; từ 2026 toàn tỉnh dùng chung mô tả '4 kỹ năng nghe, đọc, viết, nói'.",
+  "minutes": 150,
+  "has_listening": true,
+  "essay_words": 250,
+  "sections": [
+   {
+    "format": "listening",
+    "items": 25,
+    "points": 2.5,
+    "note": "4 part (2025) / 3 part (2024): trả lời ngắn ≤3–4 từ (5 câu), True/False (6), trắc nghiệm (6–10), điền ≤2 từ vào ghi chú bài giảng (8); mỗi bài nghe phát 2 lần"
+   },
+   {
+    "format": "sentence_completion",
+    "items": 10,
+    "points": 0.5,
+    "note": "Lexico-grammar part 1: trắc nghiệm A–D từ vựng/ngữ pháp"
+   },
+   {
+    "format": "error_id",
+    "items": 5,
+    "points": 0.5,
+    "note": "Tìm và sửa lỗi gạch chân A–D"
+   },
+   {
+    "format": "word_formation",
+    "items": 5,
+    "points": 0.5,
+    "note": "Chia dạng từ cho sẵn"
+   },
+   {
+    "format": "open_cloze",
+    "items": 10,
+    "points": 0.5,
+    "note": "Reading part 1: điền 1 từ"
+   },
+   {
+    "format": "cloze",
+    "items": 10,
+    "points": 0.5,
+    "note": "Reading part 2: chọn A–D"
+   },
+   {
+    "format": "reading_mcq",
+    "items": 5,
+    "points": 0.5,
+    "note": "Đọc hiểu trắc nghiệm"
+   },
+   {
+    "format": "matching_headings",
+    "items": 15,
+    "points": 1.0,
+    "note": "Part 4: ghép câu hỏi với người/trường (10 câu, 0,5đ); Part 5: ghép tiêu đề với đoạn 8 chọn 5 (2024) hoặc điền câu vào chỗ trống có 1 câu thừa (2025) (5 câu, 0,5đ)"
+   },
+   {
+    "format": "key_word",
+    "items": 5,
+    "points": 0.5,
+    "note": "Viết lại câu với từ cho sẵn, 3–5 từ"
+   },
+   {
+    "format": "essay",
+    "items": 1,
+    "points": 2.0,
+    "note": "Bài luận quan điểm ~250 từ (2024: 'Vocational training should be included in the secondary school curriculum')"
+   },
+   {
+    "format": "other",
+    "items": 1,
+    "points": 1.0,
+    "note": "Thi nói riêng buổi chiều: 10 đề, 5 phút chuẩn bị + ≤5 phút nói; chiếm 10% tổng điểm bài chuyên (Công văn 902/2024). Bài viết 9,0 điểm (Nghe 2,5 – Từ vựng/ngữ pháp 1,5 – Đọc 2,5 – Viết 2,5) + nói 1,0 = 10"
+   }
+  ],
+  "sample_links": [
+   "https://springboard.vn/de-thi-chuyen-anh-le-quy-don-quang-tri-2024-2025/",
+   "https://springboard.vn/de-thi-chuyen-anh-10-quang-tri-2025-2026/",
+   "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-truong-thpt-chuyen-quang-binh-232924"
+  ]
  },
  "exam_2026": {
-  "dates": null,
-  "organisation": "Chưa xác minh là một đề chung hay theo từng khu vực tỉnh cũ. Thư viện Pháp luật đưa ra một lịch chung cho tỉnh Quảng Trị mới (Quảng Bình + Quảng Trị).",
+  "dates": "25–27/5/2026: chiều 25/5 Toán 90' (14h30); sáng 26/5 Ngữ văn 120' (7h30); chiều 26/5 Tiếng Anh 60' (14h30); sáng 27/5 các môn chuyên 150'; chiều 27/5 thi nói Tiếng Anh chuyên (từ 13h45). Điểm thi công bố 6/6/2026; điểm chuẩn chuyên và công lập trước 13/7/2026 (Báo Lào Cai dẫn kế hoạch Sở; tuyensinh247).",
+  "organisation": "một kỳ thi chung cho cả tỉnh mới (Quảng Bình cũ + Quảng Trị cũ): cùng lịch thi, cùng quy chế (Toán–Văn–Anh + môn chuyên), 60 hội đồng coi thi, hơn 25.000 thí sinh; 1.768 thí sinh đăng ký thi vào 2 trường chuyên Võ Nguyên Giáp và Lê Quý Đôn (Nhân Dân 25/5/2026). Nguồn không nói rõ 'một đề chung' nhưng cùng Sở ra đề, cùng ngày giờ thi nên hiểu là đề chung.",
   "common_subjects": [
    "Toán",
    "Ngữ văn",
    "Tiếng Anh"
   ],
-  "notes": "Môn thứ ba năm 2026 là Tiếng Anh/Ngoại ngữ, công bố trước 24/02/2026 (LSVN). Lịch chung theo Thư viện Pháp luật: kết quả chấm thi dự kiến 8h00 ngày 06/6/2026; phúc khảo xong trước 16h30 ngày 24/6; xét tuyển trường chuyên và PT DTNT tỉnh xong trước 11h00 ngày 25/6; công lập trước 11h00 ngày 27/6; kết quả tuyển bổ sung đợt 2 ngày 04/7/2026. Ngày thi cụ thể chưa tìm được."
+  "notes": "Năm đầu tổ chức sau sáp nhập (mô hình chính quyền 2 cấp). Tiếng Anh chung 60 phút chỉ đọc–viết; Tiếng Anh chuyên là bài riêng, 4 kỹ năng nghe–đọc–viết–nói (Nhân Dân; tuyensinh247). Trường chuyên: xét bằng thi tuyển; công lập không chuyên: thi + xét kết hợp, mỗi thí sinh chỉ 1 NV công lập. Thí sinh đỗ trường chuyên không được nộp vào trường công lập khác."
  },
  "plan_2027": null,
  "stories": [],
- "prep_tips": [],
- "confidence": "low",
+ "prep_tips": [
+  "Đề chuyên Anh Quảng Trị có THI NÓI riêng (10% điểm, 5 phút chuẩn bị + 5 phút nói) — điểm khác biệt lớn so với hầu hết tỉnh; luyện nói theo chủ đề từ sớm (Công văn 902/2024, kế hoạch 2026).",
+  "Bài viết 9 điểm chia đều Nghe 2,5 – Đọc 2,5 – Viết 2,5, từ vựng/ngữ pháp chỉ 1,5: khác đề Hà Nội/TP.HCM, kỹ năng nghe và đọc dài quyết định (đề LQĐ 2024, 2025 trên springboard).",
+  "Essay 250 từ chiếm 2/10 điểm — bằng toàn bộ phần ngữ pháp + sửa lỗi + word form cộng lại; luyện viết luận quan điểm hằng tuần.",
+  "Hệ số chuyên chỉ ×2 (20/50) và mọi bài phải ≥ 4: ba môn chung chiếm 60% tổng điểm — không được bỏ Toán, Văn.",
+  "Lịch 2026 rất sớm (25–27/5) — lộ trình ôn cho 2027 nên xong trước giữa tháng 5.",
+  "Điểm TB lớp 9 môn Tiếng Anh phải ≥ 8,0 mới được dự thi chuyên Anh (điều kiện 2026)."
+ ],
+ "confidence": "medium",
  "gaps": [
-  "Cách tổ chức 2026 sau sáp nhập (một đề chung hay hai khu vực Quảng Bình/Quảng Trị cũ), ngày thi",
-  "Công thức xét tuyển, điểm chuẩn chuyên Anh 2022–2026 của cả hai trường chuyên",
-  "Lớp chuyên ngoại ngữ khác (nếu có), chỉ tiêu, số thí sinh",
-  "Cấu trúc đề, độ khó chuyên Anh của từng trường (2025 trở về trước là hai đề riêng của hai tỉnh cũ)",
-  "Câu chuyện ôn thi",
-  "Lý do: hết hạn mức tìm kiếm web của lượt làm việc (200 lượt dùng chung) trước khi kịp nghiên cứu sở này — cần chạy lại"
+  "Điểm chuẩn chuyên Anh 2022 và 2023 của cả hai trường (hoatieu 2023 chỉ có ảnh; chưa tìm được văn bản Sở)",
+  "Chỉ tiêu chuyên Anh từng năm (2026 'theo Quyết định giao chỉ tiêu của Giám đốc Sở' — chưa có số); số thí sinh đăng ký riêng từng trường 2026 (chỉ có tổng 1.768)",
+  "Văn bản Quảng Bình cũ 2022–2025 về công thức/hệ số và cấu trúc đề chuyên Anh Võ Nguyên Giáp (đề 2025 trên hoatieu khoá phí)",
+  "Xác nhận chính thức 'một đề chung' 2026 từ văn bản Sở (hiện suy từ cùng lịch, cùng quy chế)",
+  "Câu chuyện/kinh nghiệm thủ khoa chuyên Anh Quảng Trị/Quảng Bình (chưa tìm được qua 9 lượt tìm)",
+  "Kế hoạch 2027"
  ],
  "sources": [
+  {
+   "title": "Nhân Dân 25/5/2026: Quảng Trị: Hơn 25.000 thí sinh tự tin dự kỳ thi tuyển sinh lớp 10",
+   "url": "https://nhandan.vn/ocop/quang-tri-hon-25000-thi-sinh-tu-tin-du-ky-thi-tuyen-sinh-lop-10-trung-hoc-pho-thong-post964482.html"
+  },
+  {
+   "title": "Báo Lào Cai 5/6/2026: Lịch công bố điểm thi, điểm chuẩn lớp 10 Quảng Trị 2026",
+   "url": "https://baolaocai.vn/lich-cong-bo-diem-thi-diem-chuan-lop-10-quang-tri-2026-moi-nhat-post901087.html"
+  },
+  {
+   "title": "Tuyensinh247: Thông tin tuyển sinh lớp 10 Quảng Trị 2026 (công thức, điều kiện, NV, lịch thi, mô tả bài Anh chuyên)",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/quang-tri-p2.html"
+  },
+  {
+   "title": "Tuyensinh247: Điểm chuẩn các trường chuyên tại Quảng Trị 2024–2026",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/quang-tri-p2.html"
+  },
+  {
+   "title": "THPT chuyên Lê Quý Đôn Quảng Trị: Thông báo điểm trúng tuyển lần 2 năm học 2024-2025 (19/6/2024)",
+   "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/VMK/diem-chuan-chuyen-le-quy-don-quang-tri.pdf"
+  },
+  {
+   "title": "Sở GDĐT Quảng Trị: Công văn 902/SGDĐT-QLCLCNTT 19/4/2024 hướng dẫn tuyển sinh lớp 10 (NV chuyên, thi nói 10%)",
+   "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2024/NTK/thang-6/quang-tri.pdf"
+  },
+  {
+   "title": "Hoatieu: Điểm chuẩn lớp 10 Quảng Bình 2024–2025 (chuyên Võ Nguyên Giáp)",
+   "url": "https://hoatieu.vn/diem-chuan-lop-10-quang-binh-209051"
+  },
+  {
+   "title": "Hoatieu: Điểm thi tuyển sinh lớp 10 Quảng Trị (điểm chuẩn LQĐ 2021)",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-quang-tri-208954"
+  },
+  {
+   "title": "Springboard: Đề thi Chuyên Anh 10, Chuyên Lê Quý Đôn – Quảng Trị 2024-2025",
+   "url": "https://springboard.vn/de-thi-chuyen-anh-le-quy-don-quang-tri-2024-2025/"
+  },
+  {
+   "title": "Springboard: Đề thi Chuyên Anh 10 Quảng Trị 2025-2026",
+   "url": "https://springboard.vn/de-thi-chuyen-anh-10-quang-tri-2025-2026/"
+  },
+  {
+   "title": "Hoatieu: Đáp án đề thi lớp 10 môn Anh THPT Chuyên Quảng Bình 2025-2026 (khoá phí)",
+   "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-truong-thpt-chuyen-quang-binh-232924"
+  },
   {
    "title": "Thư viện Pháp luật: Lịch công bố điểm thi vào 10 2026 của 34 tỉnh thành",
    "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/lich-cong-bo-diem-thi-vao-10-2026-2027-cua-34-tinh-thanh-ngay-nao-138090187.html"
@@ -124,18 +338,23 @@
   {
    "title": "LSVN: Nhiều địa phương công bố môn thi thứ ba vào lớp 10 năm học 2026-2027",
    "url": "https://lsvn.vn/nhieu-dia-phuong-cong-bo-mon-thi-thu-ba-vao-lop-10-nam-hoc-2026-2027-a169644.html"
-  },
-  {
-   "title": "LSVN: Thêm nhiều địa phương chốt môn thi thứ ba vào lớp 10",
-   "url": "https://lsvn.vn/them-nhieu-dia-phuong-chot-mon-thi-thu-ba-vao-lop-10-a169993.html"
   }
  ],
  "formula_raw": {
-  "text": null,
-  "parts": [],
-  "max": null,
-  "conditions": null,
-  "formula_by_year": {}
+  "text": "Tổng điểm xét tuyển = Toán + Ngữ văn + Tiếng Anh (hệ số 1) + điểm môn chuyên × 2 (thang 50). Với lớp chuyên Anh: môn chuyên là bài Tiếng Anh chuyên (nói chiếm 10% bài chuyên).",
+  "parts": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh (chung)",
+   "Anh chuyên×2"
+  ],
+  "max": 50,
+  "conditions": "Mỗi bài thi (kể cả môn chuyên) ≥ 4,0 điểm; nếu thiếu chỉ tiêu Giám đốc Sở có thể hạ nhưng không dưới 3,0. Điều kiện dự thi chuyên: học lực/rèn luyện lớp 9 từ Khá; điểm TB lớp 9 môn Tiếng Anh ≥ 8,0 (Văn ≥ 7,5; Toán, Tin, Anh, Lý, Hóa, Sinh ≥ 8,0; Sử, Địa ≥ 7,5). Khi bằng điểm: xét điểm môn chuyên, rồi điểm TB lớp 9 Toán/Văn/Anh, rồi điểm TB môn chuyên (tuyensinh247 dẫn kế hoạch 2026). Cộng điểm khuyến khích cho giải cấp tỉnh/quốc gia (hoatieu, Quảng Bình 2025).",
+  "formula_by_year": {
+   "2024": "Quảng Trị cũ (Lê Quý Đôn): điều kiện mọi môn ≥ 4; điểm chuẩn Anh 36,40/50 → phù hợp hệ số 2 (thông báo trúng tuyển lần 2, 19/6/2024). Quảng Bình cũ (Võ Nguyên Giáp): điểm chuẩn Anh 34,75 — thang/hệ số chưa xác minh từ văn bản, mức điểm phù hợp thang 50.",
+   "2025": "Hai tỉnh cũ thi riêng (trước sáp nhập 1/7/2025). Điểm chuẩn Anh LQĐ 34,4; VNG 36,05 — phù hợp thang 50; chưa đọc được văn bản.",
+   "2026": "Tổng điểm môn chung + môn chuyên × 2; mọi bài ≥ 4,0 (tuyensinh247 dẫn kế hoạch tuyển sinh Quảng Trị 2026)"
+  }
  },
  "schools_raw": [
   {
@@ -145,22 +364,28 @@
    "classes": [
     {
      "lang": "Anh",
-     "quota": {},
+     "quota": {
+      "2024": 60
+     },
      "applicants": {},
      "cut": {
       "2022": null,
       "2023": null,
-      "2024": null,
-      "2025": null,
-      "2026": null
+      "2024": 36.4,
+      "2025": 34.4,
+      "2026": 36.2
      },
-     "scale": {},
-     "note": "Chưa tìm được số liệu có nguồn. Tên trường theo brief, chưa tự xác minh qua nguồn."
+     "scale": {
+      "2024": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "2024: 36,40 NV1, 60 trúng tuyển (thông báo trúng tuyển lần 2 ngày 19/6/2024 — văn bản gốc); tuyensinh247 ghi 36,9 (có thể là đợt 1) — mâu thuẫn, lấy số văn bản. 2025: 34,4 (tuyensinh247; trang dienmaycholon ghi 37,55 nhưng bảng bị lệch cột, không tin cậy). 2026: 36,2 (tuyensinh247). Năm cũ: 2021 = 33,45, cao nhất trường (hoatieu). Chuyên Anh thường là lớp có điểm chuẩn cao nhất hoặc nhì trường."
     }
    ]
   },
   {
-   "name": "THPT chuyên Võ Nguyên Giáp (Quảng Bình)",
+   "name": "THPT chuyên Võ Nguyên Giáp",
    "old_province": "Quảng Bình",
    "city": "Đồng Hới",
    "classes": [
@@ -171,16 +396,35 @@
      "cut": {
       "2022": null,
       "2023": null,
-      "2024": null,
-      "2025": null,
-      "2026": null
+      "2024": 34.75,
+      "2025": 36.05,
+      "2026": 38.7
      },
-     "scale": {},
-     "note": "Chưa tìm được số liệu có nguồn. Tên trường theo brief, chưa tự xác minh qua nguồn."
+     "scale": {
+      "2024": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "2024: 34,75 (hoatieu dẫn thông báo Sở GDĐT Quảng Bình năm học 2024-2025). 2025: 36,05; 2026: 38,7 — cao nhất trong hai trường chuyên của tỉnh mới (tuyensinh247). 2025 có 585 thí sinh đăng ký thi vào trường (hoatieu). Thang 50 suy từ mức điểm; chưa đọc được văn bản Quảng Bình 2024–2025."
     }
    ]
   }
  ],
- "goals": [],
- "goal_default": null
+ "goals": [
+  {
+   "k": "so-chuyen-vo-nguyen-giap",
+   "name": "chuyên Võ Nguyên Giáp",
+   "score": 6.7,
+   "paper": "so",
+   "need_tv_more": false
+  },
+  {
+   "k": "so-chuyen-le-quy-don-quang-tri",
+   "name": "chuyên Lê Quý Đôn (Quảng Trị)",
+   "score": 6.2,
+   "paper": "so",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "so-chuyen-le-quy-don-quang-tri"
 }

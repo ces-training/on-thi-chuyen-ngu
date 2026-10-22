@@ -4,8 +4,8 @@
  "merged_from": [],
  "edition": "Bản Hà Tĩnh",
  "exam_md": [
-  6,
-  1
+  5,
+  26
  ],
  "papers": {
   "so": {
@@ -15,9 +15,9 @@
    "ac_cap": 10,
    "ac_label": "Anh chung (đề chung)",
    "difficulty": null,
-   "difficulty_evidence": null,
-   "minutes": null,
-   "has_listening": null,
+   "difficulty_evidence": "Hướng dẫn tổ chức thi của Sở (2024): bài Tiếng Anh chuyên 'kết hợp trắc nghiệm với tự luận và kiểm tra kỹ năng nghe', 150 phút. Chưa tìm được đề chuyên Anh Hà Tĩnh công khai hoặc nhận xét độ khó. Tham khảo: thủ khoa chuyên Anh 2026 (IELTS 8.5) đạt 8,42 môn chuyên — gợi ý đề khó, điểm 9+ hiếm.",
+   "minutes": 150,
+   "has_listening": true,
    "essay_words": null,
    "sections": [],
    "sample_links": []
@@ -26,39 +26,111 @@
  "formulas": {
   "so": {
    "w": {
-    "ach": 2
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 3.0
    },
    "paper": "so",
-   "text": null,
-   "max": null
+   "text": "Điểm xét tuyển lớp chuyên = Ngữ văn + Toán + Tiếng Anh (hệ số 1) + điểm môn chuyên × 3 (thang 60). Lớp chuyên Pháp và chuyên Trung xét bằng bài thi Tiếng Anh chuyên (môn thay thế).",
+   "max": 60
   }
  },
  "m3_label": null,
  "exams": {
   "so": {
    "label": "Kỳ thi của Sở GD&ĐT Hà Tĩnh",
-   "date": "",
-   "rule": ""
+   "date": "25–26/5/2026 (Báo Hà Tĩnh 5/6/2026). Theo mô hình các năm trước: ngày 1 thi 3 môn chung (Ngữ văn 90', Tiếng Anh 60', Toán 90'), ngày 2 thi môn chuyên 150' (năm 2024: 6/6 chung, 7/6 chuyên; năm 2023: 6–7/6). Điểm chuẩn dự kiến công bố 5/6/2026, điểm trúng tuyển chính thức 9/7/2026.",
+   "rule": "Mỗi thí sinh được dự thi tối đa 2 môn chuyên và đăng ký 2 nguyện vọng trường THPT không chuyên (hướng dẫn 2024; năm 2025 ghi tối đa 3 NV không chuyên). Thí sinh thi Tiếng Anh chuyên được đăng ký tối đa 3 nguyện vọng xếp thứ tự vào các lớp chuyên Anh, Pháp, Trung (NV1 ưu tiên cao nhất); lớp Pháp và Trung không thi tiếng Pháp/Trung mà dùng bài Tiếng Anh chuyên làm môn thay thế. Điểm chuẩn lớp Pháp/Trung thường kèm điều kiện 'có đăng ký nguyện vọng vào lớp đó'."
   }
  },
  "nv2_exam": null,
- "nv_rule": null,
+ "nv_rule": "Mỗi thí sinh được dự thi tối đa 2 môn chuyên và đăng ký 2 nguyện vọng trường THPT không chuyên (hướng dẫn 2024; năm 2025 ghi tối đa 3 NV không chuyên). Thí sinh thi Tiếng Anh chuyên được đăng ký tối đa 3 nguyện vọng xếp thứ tự vào các lớp chuyên Anh, Pháp, Trung (NV1 ưu tiên cao nhất); lớp Pháp và Trung không thi tiếng Pháp/Trung mà dùng bài Tiếng Anh chuyên làm môn thay thế. Điểm chuẩn lớp Pháp/Trung thường kèm điều kiện 'có đăng ký nguyện vọng vào lớp đó'.",
  "options": [
   {
    "id": "so-chuyen-ha-tinh-anh",
    "sk": "so-chuyen-ha-tinh",
-   "school": "THPT chuyên Hà Tĩnh",
+   "school": "THPT Chuyên Hà Tĩnh",
    "area": "Hà Tĩnh",
    "cls": "chuyên Anh",
    "lang": "Anh",
    "f": "so",
    "exam": "so",
    "group": "nv",
-   "years": [],
-   "cut": [],
+   "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    46.04,
+    45.3,
+    47.39,
+    47.15,
+    46.46
+   ],
+   "scale": 60,
+   "quota": {
+    "2023": 70,
+    "2024": 70,
+    "2025": 70,
+    "2026": 70
+   },
+   "note": "2 lớp chuyên Anh/năm (≤35 HS mỗi lớp → quota 70 là suy từ số lớp, chưa có văn bản ghi số). Điều kiện kèm theo: mọi bài thi ≥ 5,00; 2024 ghi thêm 'đăng ký NV1 vào lớp chuyên Tiếng Anh'. Năm cũ: 2021 không đọc được; 2020 = 45,09; 2019 = 45,49; 2018 = 48,2. 2026 = điểm dự kiến 5/6 và chính thức 9/7 đều 46,46. Nguồn: doctailieu (2022, 2024), tuyensinh247 (2023–2026), Báo Hà Tĩnh (2026)."
+  },
+  {
+   "id": "so-chuyen-ha-tinh-phap",
+   "sk": "so-chuyen-ha-tinh",
+   "school": "THPT Chuyên Hà Tĩnh",
+   "area": "Hà Tĩnh",
+   "cls": "chuyên Pháp",
+   "lang": "Phap",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    43.07,
+    43.85,
+    45.5,
+    43.45,
+    46.45
+   ],
    "scale": null,
-   "quota": {},
-   "note": "Chưa tìm được số liệu có nguồn đọc được (file PDF điểm chuẩn Hà Tĩnh 2023 trên doctailieu là ảnh/binary, không đọc được)."
+   "quota": null,
+   "note": "Xét bằng bài Tiếng Anh chuyên; điều kiện 'có đăng ký nguyện vọng vào lớp chuyên Pháp'. Năm cũ: 2020 = 42,25; 2019 = 43,99. Nguồn: doctailieu, tuyensinh247, Báo Hà Tĩnh 9/7/2026."
+  },
+  {
+   "id": "so-chuyen-ha-tinh-trung",
+   "sk": "so-chuyen-ha-tinh",
+   "school": "THPT Chuyên Hà Tĩnh",
+   "area": "Hà Tĩnh",
+   "cls": "chuyên Trung",
+   "lang": "Trung",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    47.39,
+    47.15,
+    46.45
+   ],
+   "scale": null,
+   "quota": null,
+   "note": "Lớp mới từ 2024, xét bằng bài Tiếng Anh chuyên. 2024 và 2025 tuyensinh247 ghi bằng đúng điểm chuyên Anh (47,39; 47,15) — doctailieu 2024 cũng ghi '≥ 47,39' cho Trung nên có thể đúng, nhưng nên xác minh thêm. 2026 = 46,45 (Báo Hà Tĩnh)."
   }
  ],
  "paper": {
@@ -68,73 +140,221 @@
   "ac_cap": 10,
   "ac_label": "Anh chung (đề chung)",
   "difficulty": null,
-  "difficulty_evidence": null,
-  "minutes": null,
-  "has_listening": null,
+  "difficulty_evidence": "Hướng dẫn tổ chức thi của Sở (2024): bài Tiếng Anh chuyên 'kết hợp trắc nghiệm với tự luận và kiểm tra kỹ năng nghe', 150 phút. Chưa tìm được đề chuyên Anh Hà Tĩnh công khai hoặc nhận xét độ khó. Tham khảo: thủ khoa chuyên Anh 2026 (IELTS 8.5) đạt 8,42 môn chuyên — gợi ý đề khó, điểm 9+ hiếm.",
+  "minutes": 150,
+  "has_listening": true,
   "essay_words": null,
   "sections": [],
   "sample_links": []
  },
  "exam_2026": {
-  "dates": null,
+  "dates": "25–26/5/2026 (Báo Hà Tĩnh 5/6/2026). Theo mô hình các năm trước: ngày 1 thi 3 môn chung (Ngữ văn 90', Tiếng Anh 60', Toán 90'), ngày 2 thi môn chuyên 150' (năm 2024: 6/6 chung, 7/6 chuyên; năm 2023: 6–7/6). Điểm chuẩn dự kiến công bố 5/6/2026, điểm trúng tuyển chính thức 9/7/2026.",
   "organisation": "một đề chung cho cả tỉnh (Hà Tĩnh không sáp nhập)",
   "common_subjects": [
    "Toán",
    "Ngữ văn",
    "Tiếng Anh"
   ],
-  "notes": "Môn thứ ba năm 2026 là Tiếng Anh/Ngoại ngữ, công bố trước 24/02/2026 (LSVN). Chưa tìm được ngày thi, lịch môn chuyên, chỉ tiêu THPT chuyên Hà Tĩnh."
+  "notes": "Năm 2026: hơn 21.000 thí sinh đăng ký thi lớp 10, gần 1.500 đăng ký THPT Chuyên Hà Tĩnh (2025: khoảng 1.100 / gần 19.000; 2023: 1.094 / gần 17.000). Chuyên Hà Tĩnh tuyển 13 lớp, 455 chỉ tiêu (mỗi lớp ≤ 35): 2 Toán, 2 Anh, 1 mỗi lớp Lý, Hóa, Sinh, Tin, Văn, Sử, Địa, Pháp, Trung. Lớp Trung mới có từ 2024 (năm 2023 chỉ 12 lớp, chưa có Trung). Môn Tiếng Anh chung 60 phút, 40 câu trắc nghiệm, thang 10 (hocmai)."
  },
  "plan_2027": null,
- "stories": [],
- "prep_tips": [],
- "confidence": "low",
+ "stories": [
+  {
+   "title": "Nữ sinh Hà Tĩnh giành thủ khoa lớp 10 chuyên Anh, từng đạt IELTS 8.5 ở tuổi 14",
+   "who": "học sinh",
+   "year": 2026,
+   "school": "THPT Chuyên Hà Tĩnh (từ THCS Sông Trí)",
+   "summary": "Lê Thùy Phương đỗ thủ khoa chuyên Anh 2026 với 53,26 điểm (Anh chung 10, Anh chuyên 8,42, Toán 8,75, Văn 9,25). Em học tiếng Anh từ 3 tuổi qua phim, nhạc; mỗi ngày học 4–5 tiếng chia đều 4 kỹ năng thay vì chỉ cày đề.",
+   "takeaways": [
+    "Nghe podcast, video nhiều giọng khác nhau để quen phần nghe",
+    "Tập nghĩ và diễn đạt trực tiếp bằng tiếng Anh, không dịch từ tiếng Việt",
+    "Viết là kỹ năng khó nhất: viết mỗi ngày, đọc bài mẫu, nhờ giáo viên chữa sau mỗi bài",
+    "Chọn bài đọc, truyện theo sở thích để tích từ vựng",
+    "Điểm chuyên 8,42 của thủ khoa cho thấy đề chuyên khó — không cần tuyệt đối, cần chắc ba môn chung"
+   ],
+   "url": "https://vietbao.vn/nu-sinh-ha-tinh-gianh-thu-khoa-lop-10-chuyen-anh-tung-dat-ielts-85-o-tuoi-14-595408.html"
+  },
+  {
+   "title": "Đôi bạn ở thị xã Kỳ Anh cùng thủ khoa vào lớp 10 THPT Chuyên Hà Tĩnh",
+   "who": "học sinh",
+   "year": 2022,
+   "school": "THPT Chuyên Hà Tĩnh (lớp Hóa, Lý)",
+   "summary": "Hai học sinh THCS Sông Trí đỗ thủ khoa chuyên Hóa (52,5) và chuyên Lý (53,5) năm 2022. Bài báo minh họa công thức Văn + Toán + Anh + chuyên×3 và cách tự học: học trước chương trình, chia nhỏ tài liệu, xen kẽ môn.",
+   "takeaways": [
+    "Tự học và đặt mục tiêu, phương pháp rõ để tránh nhàm chán",
+    "Chia tài liệu thành phần nhỏ, học xen kẽ các môn",
+    "Xin giáo viên đề luyện tập, tìm bài tập trên mạng"
+   ],
+   "url": "https://baohatinh.vn/doi-ban-o-thi-xa-ky-anh-cung-thu-khoa-vao-lop-10-thpt-chuyen-ha-tinh-post233590.html"
+  }
+ ],
+ "prep_tips": [
+  "Môn chuyên nhân 3 (30/60 điểm) và phải ≥ 5: mỗi 0,5 điểm chuyên = 1,5 điểm xét tuyển — ưu tiên luyện đề chuyên (Báo Hà Tĩnh 2026).",
+  "Điểm chuẩn chuyên Anh 5 năm dao động 45,3–47,4/60: cần trung bình ~7,8/10 mỗi bài nếu chuyên ≈ chung; thực tế thủ khoa 2026 đạt 10 Anh chung, 8,42 chuyên — ba môn chung phải gần tuyệt đối (Vietbao, tuyensinh247).",
+  "Bài chuyên Anh 150 phút gồm trắc nghiệm + tự luận + nghe (hướng dẫn Sở 2024): luyện nghe và viết luận, không chỉ trắc nghiệm.",
+  "Thi tiếng Anh chuyên được đăng ký tới 3 nguyện vọng Anh/Pháp/Trung — lớp Pháp thường thấp hơn Anh 1–3 điểm (2022–2025), là 'cửa dự phòng' tốt (hướng dẫn Sở, doctailieu).",
+  "Lịch 2026 sớm (25–26/5) so với 2023–2024 (6–7/6): lộ trình ôn cho 2027 nên hoàn thành trước giữa tháng 5."
+ ],
+ "confidence": "medium",
  "gaps": [
-  "Toàn bộ dữ liệu chính: ngày thi 2026, công thức, điểm chuẩn chuyên Anh 2022–2026, chỉ tiêu, cấu trúc đề chuyên Anh, câu chuyện ôn thi",
-  "Chưa xác minh THPT chuyên Hà Tĩnh có lớp chuyên ngoại ngữ khác (Pháp, Trung…) hay không",
-  "Học sinh Hà Tĩnh có thường thi thêm THPT chuyên ĐH Vinh không (chưa có nguồn)",
-  "Lý do: hết hạn mức tìm kiếm web của lượt làm việc (200 lượt dùng chung) trước khi kịp nghiên cứu sở này — cần chạy lại"
+  "Chưa tìm được đề chuyên Anh Hà Tĩnh (các năm) để mô tả cấu trúc từng phần, số câu, độ dài bài viết; chưa ước được CEFR",
+  "Chưa có số thí sinh đăng ký/chỉ tiêu riêng từng lớp chuyên Anh (chỉ có tổng 1.500 đăng ký trường chuyên 2026, 13 lớp/455 chỉ tiêu)",
+  "Điểm chuẩn chuyên Trung 2024–2025 trùng chuyên Anh — cần xác minh từ văn bản Sở",
+  "Lịch thi môn chuyên 2026 (ngày 26/5?) chưa đọc được từ văn bản gốc",
+  "Kế hoạch 2027"
  ],
  "sources": [
   {
-   "title": "LSVN: Nhiều địa phương công bố môn thi thứ ba vào lớp 10 năm học 2026-2027",
-   "url": "https://lsvn.vn/nhieu-dia-phuong-cong-bo-mon-thi-thu-ba-vao-lop-10-nam-hoc-2026-2027-a169644.html"
+   "title": "Báo Hà Tĩnh 5/6/2026: Hà Tĩnh công bố dự kiến điểm chuẩn vào lớp 10 năm học 2026-2027",
+   "url": "https://baohatinh.vn/ha-tinh-cong-bo-du-kien-diem-chuan-vao-lop-10-nam-hoc-2026-2027-post311771.html"
   },
   {
-   "title": "LSVN: Thêm nhiều địa phương chốt môn thi thứ ba vào lớp 10",
-   "url": "https://lsvn.vn/them-nhieu-dia-phuong-chot-mon-thi-thu-ba-vao-lop-10-a169993.html"
+   "title": "Báo Hà Tĩnh 9/7/2026: Hà Tĩnh điều chỉnh chỉ tiêu tuyển sinh vào lớp 10 và công bố điểm chuẩn các trường",
+   "url": "https://baohatinh.vn/ha-tinh-dieu-chinh-chi-tieu-tuyen-sinh-vao-lop-10-va-cong-bo-diem-chuan-cac-truong-post313652.html"
+  },
+  {
+   "title": "Mực Tím 5/6/2026: Đã có điểm chuẩn dự kiến tuyển sinh lớp 10 Hà Tĩnh năm 2026",
+   "url": "https://muctim.tuoitre.vn/da-co-diem-chuan-du-kien-tuyen-sinh-lop-10-ha-tinh-nam-2026-101260605132412251.htm"
+  },
+  {
+   "title": "Tuyensinh247: Điểm chuẩn vào lớp 10 Hà Tĩnh 2026 và 3 năm gần đây",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/ha-tinh-p15.html"
+  },
+  {
+   "title": "Tuyensinh247 20/6/2023: Hà Tĩnh công bố điểm chuẩn vào lớp 10 năm 2023",
+   "url": "https://thi.tuyensinh247.com/ha-tinh-cong-bo-diem-chuan-vao-lop-10-nam-2023-c22a76620.html"
+  },
+  {
+   "title": "Doctailieu: Điểm chuẩn tuyển sinh vào lớp 10 tỉnh Hà Tĩnh (2018–2024)",
+   "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-ha-tinh"
+  },
+  {
+   "title": "Báo Hà Tĩnh 15/7/2024: Hà Tĩnh công bố điểm chuẩn vào lớp 10 THPT",
+   "url": "https://baohatinh.vn/ha-tinh-cong-bo-diem-chuan-vao-lop-10-thpt-post270122.html"
+  },
+  {
+   "title": "Cổng TTĐT Hà Tĩnh: Điểm chuẩn lớp 10 tỉnh Hà Tĩnh năm 2024",
+   "url": "https://hatinh.gov.vn/vi/bai-viet/diem-chuan-lop-10-tinh-ha-tinh-nam-2024"
+  },
+  {
+   "title": "Báo Hà Tĩnh 20/6/2023: Hà Tĩnh công bố điểm chuẩn vào các trường THPT",
+   "url": "https://baohatinh.vn/ha-tinh-cong-bo-diem-chuan-vao-cac-truong-thpt-post250249.html"
+  },
+  {
+   "title": "Báo Hà Tĩnh 18/6/2022: Kết quả thi tuyển sinh vào lớp 10 THPT năm học 2022-2023",
+   "url": "https://baohatinh.vn/ket-qua-thi-tuyen-sinh-vao-lop-10-thpt-nam-hoc-2022-2023-post233361.html"
+  },
+  {
+   "title": "Sở GD&ĐT Hà Tĩnh: Hướng dẫn tổ chức thi tuyển sinh lớp 10 năm học 2024-2025 (lịch thi, thời gian, mô tả bài chuyên Anh)",
+   "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/NHPT/Huong-dan-to-chuc-thi-tuyen-sinh-ha-tinh.pdf"
+  },
+  {
+   "title": "Sở GD&ĐT Hà Tĩnh: Hướng dẫn tổ chức thi tuyển sinh lớp 10 năm 2025 (môn thay thế Pháp/Trung, điểm ưu tiên)",
+   "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2025/TAN/hatinhc.pdf"
+  },
+  {
+   "title": "Hocmai: Đề thi tiếng Anh (chung) vào 10 Hà Tĩnh 2026 và nhận xét",
+   "url": "https://huongnghiep.hocmai.vn/ha-tinh-anh-2026"
+  },
+  {
+   "title": "Hoatieu: Điểm chuẩn lớp 10 Hà Tĩnh các năm",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-ha-tinh-208599"
+  },
+  {
+   "title": "Vietbao 14/6/2026: Nữ sinh Hà Tĩnh giành thủ khoa lớp 10 chuyên Anh, từng đạt IELTS 8.5 ở tuổi 14",
+   "url": "https://vietbao.vn/nu-sinh-ha-tinh-gianh-thu-khoa-lop-10-chuyen-anh-tung-dat-ielts-85-o-tuoi-14-595408.html"
+  },
+  {
+   "title": "Báo Hà Tĩnh 26/6/2022: Đôi bạn ở thị xã Kỳ Anh cùng thủ khoa vào lớp 10 THPT Chuyên Hà Tĩnh",
+   "url": "https://baohatinh.vn/doi-ban-o-thi-xa-ky-anh-cung-thu-khoa-vao-lop-10-thpt-chuyen-ha-tinh-post233590.html"
+  },
+  {
+   "title": "LSVN: Nhiều địa phương công bố môn thi thứ ba vào lớp 10 năm học 2026-2027",
+   "url": "https://lsvn.vn/nhieu-dia-phuong-cong-bo-mon-thi-thu-ba-vao-lop-10-nam-hoc-2026-2027-a169644.html"
   }
  ],
  "formula_raw": {
-  "text": null,
-  "parts": [],
-  "max": null,
-  "conditions": null,
-  "formula_by_year": {}
+  "text": "Điểm xét tuyển lớp chuyên = Ngữ văn + Toán + Tiếng Anh (hệ số 1) + điểm môn chuyên × 3 (thang 60). Lớp chuyên Pháp và chuyên Trung xét bằng bài thi Tiếng Anh chuyên (môn thay thế).",
+  "parts": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh (chung)",
+   "Anh chuyên×3"
+  ],
+  "max": 60,
+  "conditions": "Điểm tất cả các bài thi (chung và chuyên) từ 5,00 trở lên; môn chuyên ≥ 5 (Báo Hà Tĩnh các năm 2022–2026). Một số lớp (Toán, Văn, Anh, Trung, Pháp) có tiêu chí phụ khi bằng điểm ở ngưỡng (điểm môn chuyên, điểm TB môn lớp 9…). Điểm ưu tiên cộng vào mỗi môn theo thang 10: nhóm 1 +2,0; nhóm 2 +1,5; nhóm 3 +1,0; khuyến khích giải nhất/nhì/ba +1,5/+1,0/+0,5 (hướng dẫn 2025). Điểm bài thi theo thang 10.",
+  "formula_by_year": {
+   "2022": "Văn + Anh + Toán + môn chuyên × 3 (Báo Hà Tĩnh 18/6/2022)",
+   "2023": "Toán + Văn + Anh (hệ số 1) + chuyên × 3; môn chuyên ≥ 5 (Báo Hà Tĩnh 20/6/2023)",
+   "2024": "như 2023 (Báo Hà Tĩnh 15/7/2024, hatinh.gov.vn)",
+   "2025": "như 2024 (hướng dẫn tổ chức thi 2025 dẫn QĐ 537/QĐ-UBND 14/3/2025; thang điểm chuẩn 47,15 phù hợp hệ số 3)",
+   "2026": "Môn không chuyên hệ số 1, môn chuyên hệ số 3, môn chuyên ≥ 5 (Báo Hà Tĩnh 5/6/2026). Kiểm chứng: thủ khoa chuyên Anh 2026 Văn 9,25 + Toán 8,75 + Anh 10 + chuyên 8,42×3 = 53,26 (Vietbao 14/6/2026). Lưu ý: bảng tổng hợp trên hoatieu ghi 'chuyên × 2' cho 2026 — mâu thuẫn với báo địa phương và phép kiểm thủ khoa, coi là sai."
+  }
  },
  "schools_raw": [
   {
-   "name": "THPT chuyên Hà Tĩnh",
+   "name": "THPT Chuyên Hà Tĩnh",
    "old_province": "Hà Tĩnh",
    "city": "Hà Tĩnh",
    "classes": [
     {
      "lang": "Anh",
-     "quota": {},
+     "quota": {
+      "2023": 70,
+      "2024": 70,
+      "2025": 70,
+      "2026": 70
+     },
      "applicants": {},
      "cut": {
-      "2022": null,
-      "2023": null,
-      "2024": null,
-      "2025": null,
-      "2026": null
+      "2022": 46.04,
+      "2023": 45.3,
+      "2024": 47.39,
+      "2025": 47.15,
+      "2026": 46.46
      },
-     "scale": {},
-     "note": "Chưa tìm được số liệu có nguồn đọc được (file PDF điểm chuẩn Hà Tĩnh 2023 trên doctailieu là ảnh/binary, không đọc được)."
+     "scale": {
+      "2022": 60,
+      "2023": 60,
+      "2024": 60,
+      "2025": 60,
+      "2026": 60
+     },
+     "note": "2 lớp chuyên Anh/năm (≤35 HS mỗi lớp → quota 70 là suy từ số lớp, chưa có văn bản ghi số). Điều kiện kèm theo: mọi bài thi ≥ 5,00; 2024 ghi thêm 'đăng ký NV1 vào lớp chuyên Tiếng Anh'. Năm cũ: 2021 không đọc được; 2020 = 45,09; 2019 = 45,49; 2018 = 48,2. 2026 = điểm dự kiến 5/6 và chính thức 9/7 đều 46,46. Nguồn: doctailieu (2022, 2024), tuyensinh247 (2023–2026), Báo Hà Tĩnh (2026)."
+    },
+    {
+     "lang": "Pháp",
+     "admit_by_english": true,
+     "cut": {
+      "2022": 43.07,
+      "2023": 43.85,
+      "2024": 45.5,
+      "2025": 43.45,
+      "2026": 46.45
+     },
+     "note": "Xét bằng bài Tiếng Anh chuyên; điều kiện 'có đăng ký nguyện vọng vào lớp chuyên Pháp'. Năm cũ: 2020 = 42,25; 2019 = 43,99. Nguồn: doctailieu, tuyensinh247, Báo Hà Tĩnh 9/7/2026."
+    },
+    {
+     "lang": "Trung",
+     "admit_by_english": true,
+     "cut": {
+      "2024": 47.39,
+      "2025": 47.15,
+      "2026": 46.45
+     },
+     "note": "Lớp mới từ 2024, xét bằng bài Tiếng Anh chuyên. 2024 và 2025 tuyensinh247 ghi bằng đúng điểm chuyên Anh (47,39; 47,15) — doctailieu 2024 cũng ghi '≥ 47,39' cho Trung nên có thể đúng, nhưng nên xác minh thêm. 2026 = 46,45 (Báo Hà Tĩnh)."
     }
    ]
   }
  ],
- "goals": [],
- "goal_default": null
+ "goals": [
+  {
+   "k": "so-chuyen-ha-tinh",
+   "name": "Chuyên Hà Tĩnh",
+   "score": 7.5,
+   "paper": "so",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "so-chuyen-ha-tinh"
 }
