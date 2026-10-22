@@ -24,7 +24,13 @@ ml = here / "content/web/media_listen.json"
 media_listen = json.load(open(ml, encoding="utf-8")) if ml.exists() else {}
 mv = here / "content/web/media_vi.json"
 media_vi = json.load(open(mv, encoding="utf-8")) if mv.exists() else {}
-blob = json.dumps({"days": days, "tests": tests, "web": web, "media": media, "media_vi": media_vi, "media_listen": media_listen}, ensure_ascii=False).replace("</", "<\\/")
+# file nghe do tools/gemini/gen_audio.py tạo: "NN/track/partN" -> {file, seconds}; chưa có thì trang dùng giọng đọc của trình duyệt
+au = repo / "chuyen-anh-14-ngay" / "audio" / "manifest.json"
+audio = json.load(open(au, encoding="utf-8")) if au.exists() else None
+C = {"days": days, "tests": tests, "web": web, "media": media, "media_vi": media_vi, "media_listen": media_listen}
+if audio:
+    C["audio"] = audio
+blob = json.dumps(C, ensure_ascii=False).replace("</", "<\\/")
 cfg = json.load(open(here / "config.json", encoding="utf-8"))
 api = json.dumps(os.environ.get("API_URL_OVERRIDE", cfg.get("apiUrl", "")))
 

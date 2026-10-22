@@ -1,0 +1,84 @@
+{
+  "_ghi_chu": "8 nhân vật cho trang web. Sửa mô tả tiếng Anh tuỳ ý (prompt gửi cho Gemini). 'portrait_outfit' = trang phục trong ảnh chân dung (uniform/casual). 'pick' = số ảnh chân dung cô chọn (1 hoặc 2) để làm ảnh mẫu cho bảng tư thế; để null thì dùng ảnh 1. 'color' = màu nền avatar tròn.",
+  "model": "gemini-nano-banana-2.1",
+  "candidates": 2,
+  "style": "A bright, saturated editorial magazine cut-out photograph. Photorealistic: it must look like a real photo of a real teenager, sharp focus, soft even studio lighting, vivid colours, natural skin texture.",
+  "background": "Background: a perfectly flat, uniform pure chroma-key green (#00FF00) filling the whole frame, with no shadows, no gradient, no floor, no background objects and no vignette. Leave clear green space above the head and on both sides of the body. Nothing green or green-tinted on the person (no green clothes, accessories or props). No text, no logo, no watermark, no border.",
+  "original": "This is an original fictional person who must not resemble any real actor, singer, influencer or public figure.",
+  "uniform_girl": "a Vietnamese secondary school uniform: a crisp white short-sleeved collared shirt tucked into a navy-blue knee-length pleated skirt, a small school badge on the chest pocket",
+  "uniform_boy": "a Vietnamese secondary school uniform: a crisp white short-sleeved collared shirt tucked into navy-blue trousers, a small school badge on the chest pocket",
+  "poses": [
+    ["waving", "waving hello with one hand raised, big friendly smile"],
+    ["thumbsup", "giving an enthusiastic thumbs up"],
+    ["phone", "holding a smartphone in one hand and looking at it with a smile"],
+    ["headphones", "wearing over-ear headphones, eyes half closed, happily listening"],
+    ["notebook", "writing in a small notebook held in one hand, pen in the other hand, concentrating"],
+    ["idea", "pointing one index finger straight up as if having a great idea, eyebrows raised"]
+  ],
+  "characters": [
+    {
+      "id": "linh", "name": "Linh", "gender": "girl", "age": 14, "color": "#FFD166",
+      "look": "a cheerful Vietnamese girl with long straight black hair in a high ponytail, a round face, warm tan skin and a bright confident smile",
+      "personality": "the energetic class monitor who loves organising things",
+      "uniform_extra": "a red Young Pioneer scarf tied neatly at the collar",
+      "casual": "a sunny yellow hoodie, light-blue jeans and white trainers",
+      "portrait_outfit": "uniform", "pick": null
+    },
+    {
+      "id": "mai", "name": "Mai", "gender": "girl", "age": 13, "color": "#FF8FAB",
+      "look": "a playful Vietnamese girl with a short chin-length black bob, a straight fringe and two colourful hair clips, light skin and dimples",
+      "personality": "the creative one who doodles and loves art",
+      "uniform_extra": "",
+      "casual": "a pink-and-white striped T-shirt, denim overall shorts and a small orange crossbody bag",
+      "portrait_outfit": "casual", "pick": null
+    },
+    {
+      "id": "vy", "name": "Vy", "gender": "girl", "age": 15, "color": "#9BB1FF",
+      "look": "a calm, bookish Vietnamese girl with very long black hair in a single side braid, gentle eyes, fair skin and a soft smile",
+      "personality": "the quiet bookworm who always has a novel with her",
+      "uniform_extra": "",
+      "casual": "a lavender knitted cardigan over a white T-shirt, a navy midi skirt and canvas shoes",
+      "portrait_outfit": "uniform", "pick": null
+    },
+    {
+      "id": "an", "name": "An", "gender": "girl", "age": 14, "color": "#4CC9F0",
+      "look": "a sporty Vietnamese girl with shoulder-length wavy dark-brown hair held back by a sports headband, sun-kissed skin and an athletic build",
+      "personality": "the sporty one who plays badminton and volleyball",
+      "uniform_extra": "",
+      "casual": "a bright blue sports jacket over a white T-shirt, black track trousers with a white side stripe and running shoes",
+      "portrait_outfit": "casual", "pick": null
+    },
+    {
+      "id": "nam", "name": "Nam", "gender": "boy", "age": 14, "color": "#F77F00",
+      "look": "a funny Vietnamese boy with short spiky black hair, a wide grin, slightly chubby cheeks and tan skin",
+      "personality": "the class joker who makes everyone laugh",
+      "uniform_extra": "a red Young Pioneer scarf tied at the collar",
+      "casual": "an orange graphic T-shirt with a simple abstract pattern (no words), khaki cargo shorts and blue sneakers",
+      "portrait_outfit": "uniform", "pick": null
+    },
+    {
+      "id": "minh", "name": "Minh", "gender": "boy", "age": 15, "color": "#90BE6D",
+      "look": "a thoughtful Vietnamese boy with neat side-parted black hair and round black-framed glasses, slim build, light skin",
+      "personality": "the clever, bookish student who loves science and English",
+      "uniform_extra": "",
+      "casual": "a navy-and-white checked shirt over a grey T-shirt, beige chinos and brown loafers",
+      "portrait_outfit": "uniform", "pick": null
+    },
+    {
+      "id": "khoa", "name": "Khoa", "gender": "boy", "age": 15, "color": "#EF476F",
+      "look": "a tall, sporty Vietnamese boy with a short buzz cut, broad shoulders, tanned skin and a confident relaxed smile",
+      "personality": "the football captain, friendly and energetic",
+      "uniform_extra": "",
+      "casual": "a red football shirt with white trim (no logos or numbers), black shorts and white football socks with trainers",
+      "portrait_outfit": "casual", "pick": null
+    },
+    {
+      "id": "bao", "name": "Bảo", "gender": "boy", "age": 13, "color": "#B388EB",
+      "look": "a curious younger Vietnamese boy with fluffy medium-length black hair falling over his forehead, big bright eyes and fair skin",
+      "personality": "the tech-loving gamer who is always curious",
+      "uniform_extra": "",
+      "casual": "a purple zip-up hoodie over a white T-shirt, dark jeans and high-top sneakers, a small backpack on one shoulder",
+      "portrait_outfit": "casual", "pick": null
+    }
+  ]
+}
