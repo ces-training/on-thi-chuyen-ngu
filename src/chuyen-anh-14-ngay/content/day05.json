@@ -163,37 +163,43 @@
           "id": "d5A1",
           "q": "My grandpa changed his ______: he now eats less salt and more vegetables.",
           "answer": "diet",
-          "tag": "d5v1"
+          "tag": "d5v1",
+          "explain_vi": "Ông ==eats less salt and more vegetables== → thay đổi chế độ ăn: **diet**. __Sau 'his' cần một danh từ; đọc cả câu để chọn nghĩa.__"
         },
         {
           "id": "d5A2",
           "q": "Staying up late to play games is a bad ______. You should go to bed earlier.",
           "answer": "habit",
-          "tag": "d5v3"
+          "tag": "d5v3",
+          "explain_vi": "==Staying up late to play games== là việc lặp lại → **a bad habit** (thói quen xấu). __Sau 'a bad' cần danh từ số ít.__"
         },
         {
           "id": "d5A3",
           "q": "Brown rice is more ______ than white rice because it has more vitamins.",
           "answer": "nutritious",
-          "tag": "d5v4"
+          "tag": "d5v4",
+          "explain_vi": "Có ==more ... than== và ==more vitamins== → cần tính từ **nutritious** (bổ dưỡng). __Thấy more ... than thì chỗ trống là tính từ dài.__"
         },
         {
           "id": "d5A4",
           "q": "The footballer had a serious leg ______, so he couldn't play for two months.",
           "answer": "injury",
-          "tag": "d5v5"
+          "tag": "d5v5",
+          "explain_vi": "==couldn't play for two months== vì chân bị thương → **injury** (chấn thương). __Sau 'a serious leg' cần một danh từ.__"
         },
         {
           "id": "d5A5",
           "q": "I didn't eat breakfast this morning, so I had no ______ during the PE lesson.",
           "answer": "energy",
-          "tag": "d5v6"
+          "tag": "d5v6",
+          "explain_vi": "==I didn't eat breakfast this morning== nên không có sức → **energy**. __Cụm 'have no energy' nghĩa là mệt, không còn sức.__"
         },
         {
           "id": "d5A6",
           "q": "Thu was very sad when her cat died, but she slowly ______ it.",
           "answer": "got over",
-          "tag": "d5p2"
+          "tag": "d5p2",
+          "explain_vi": "Thu rất buồn ==but she slowly== vượt qua được → **get over**; câu ở quá khứ nên chia **got over**. __Nhớ chia động từ theo thì của câu.__"
         }
       ]
     },
@@ -204,37 +210,43 @@
           "id": "d5B1",
           "q": "Walking is ______ (good) for your health than sitting all day.",
           "answer": "better",
-          "tag": "d5g"
+          "tag": "d5g",
+          "explain_vi": "Có ==than== → so sánh hơn; good là bất quy tắc → **better**. __good/well → better → the best; không viết 'gooder'.__"
         },
         {
           "id": "d5B2",
           "q": "Mount Fansipan is ______ (high) mountain in Vietnam.",
           "answer": "the highest",
-          "tag": "d5g"
+          "tag": "d5g",
+          "explain_vi": "==in Vietnam== (cao nhất cả nước) → so sánh nhất: **the highest**. __Đừng quên 'the' trước so sánh nhất.__"
         },
         {
           "id": "d5B3",
           "q": "Fruit is ______ (healthy) than sweets.",
           "answer": "healthier",
-          "tag": "d5g"
+          "tag": "d5g",
+          "explain_vi": "Có ==than== → so sánh hơn; healthy tận cùng -y → đổi y thành i rồi thêm -er: **healthier**. __Không viết 'more healthier'.__"
         },
         {
           "id": "d5B4",
           "q": "My little brother is only five. He is ______ young to join the football club. (too / enough)",
           "answer": "too",
-          "tag": "d5g"
+          "tag": "d5g",
+          "explain_vi": "==only five== nên còn quá nhỏ để vào câu lạc bộ → **too + adj + to V**. __enough phải đứng sau tính từ (young enough), không đứng trước.__"
         },
         {
           "id": "d5B5",
           "q": "It was ______ a delicious salad that I asked for more. (so / such)",
           "answer": "such",
-          "tag": "d5g"
+          "tag": "d5g",
+          "explain_vi": "Sau chỗ trống là ==a delicious salad== (a + tính từ + danh từ) → **such**. __so chỉ đi với tính từ đứng một mình: so delicious that.__"
         },
         {
           "id": "d5B6",
           "q": "You aren't strong ______ to lift that heavy box on your own. (too / enough)",
           "answer": "enough",
-          "tag": "d5g"
+          "tag": "d5g",
+          "explain_vi": "Chỗ trống đứng sau ==strong== và trước ==to lift== → **adj + enough + to V**. __too luôn đứng trước tính từ, nên ở vị trí này chỉ có enough.__"
         }
       ]
     },
@@ -245,25 +257,29 @@
           "id": "d5C1",
           "q": "Eating fast food every day is very ______. (HEALTHY)",
           "answer": "unhealthy",
-          "tag": "d5w"
+          "tag": "d5w",
+          "explain_vi": "Ăn đồ ăn nhanh ==every day== thì không tốt cho sức khoẻ → **unhealthy** (un- + healthy). __Đọc nghĩa cả câu để biết có cần nghĩa phủ định không.__"
         },
         {
           "id": "d5C2",
           "q": "Running 10 km on my first day of training was ______! I could only run 2 km. (POSSIBLE)",
           "answer": "impossible",
-          "tag": "d5w"
+          "tag": "d5w",
+          "explain_vi": "Chỉ chạy được ==I could only run 2 km== nên 10 km là không thể → **impossible** (im- trước p). __Câu sau thường là bằng chứng cho nghĩa phủ định.__"
         },
         {
           "id": "d5C3",
           "q": "Children who sit in front of screens all day are often ______ and get tired easily. (ACTIVE)",
           "answer": "inactive",
-          "tag": "d5w"
+          "tag": "d5w",
+          "explain_vi": "Ngồi trước màn hình ==all day== và ==get tired easily== → ít vận động: **inactive** (in- + active). __active đi với tiền tố in-, không dùng un-.__"
         },
         {
           "id": "d5C4",
           "q": "I ______ broccoli, but my mum says it is good for me. (LIKE)",
           "answer": "dislike",
-          "tag": "d5w"
+          "tag": "d5w",
+          "explain_vi": "==but my mum says it is good for me== → em không thích bông cải: **dislike** (dis- + like). __Chỗ trống đứng sau 'I' nên cần động từ.__"
         }
       ]
     },
@@ -281,7 +297,8 @@
             "Some students in his class are taller than Nam."
           ],
           "answer": "B",
-          "tag": "fmt:sentence_transformation"
+          "tag": "fmt:sentence_transformation",
+          "explain_vi": "==taller than any other student== nghĩa là cao hơn mọi bạn → **B: the tallest student**. __'than any other + danh từ số ít' luôn đổi được sang so sánh nhất.__"
         },
         {
           "id": "d5D2",
@@ -293,7 +310,8 @@
             "We swam in the water although it was cold."
           ],
           "answer": "C",
-          "tag": "fmt:sentence_transformation"
+          "tag": "fmt:sentence_transformation",
+          "explain_vi": "==too cold for us to swim in== nghĩa là không đủ ấm để bơi → **C: wasn't warm enough**. __Đổi too + adj sang not + tính từ trái nghĩa + enough. A và B đảo nghĩa.__"
         },
         {
           "id": "d5D3",
@@ -305,7 +323,8 @@
             "My mum doesn't do any exercise except yoga."
           ],
           "answer": "A",
-          "tag": "fmt:sentence_transformation"
+          "tag": "fmt:sentence_transformation",
+          "explain_vi": "==no other exercise is as relaxing as yoga== → yoga thư giãn nhất: **A: the most relaxing exercise**. __D sai vì câu gốc không nói mẹ chỉ tập yoga.__"
         },
         {
           "id": "d5D4",
@@ -317,7 +336,8 @@
             "It was such an exciting match that nobody left early."
           ],
           "answer": "D",
-          "tag": "fmt:sentence_transformation"
+          "tag": "fmt:sentence_transformation",
+          "explain_vi": "==so exciting that== đổi thành **D: such an exciting match that**. __Đổi so sang such phải thêm a/an + danh từ; A, C đảo nghĩa.__"
         }
       ]
     },
@@ -331,14 +351,16 @@
           "kind": "tfng",
           "q": "Vinh decided to sign up for the race without anyone's help.",
           "answer": "False",
-          "tag": "d5r"
+          "tag": "d5r",
+          "explain_vi": "Bài viết ==Vinh's best friend, Khoa, persuaded him to sign up== → có bạn thuyết phục, nên câu này **False**. __Gặp 'without anyone's help', em tìm xem có ai giúp không.__"
         },
         {
           "id": "d5E2",
           "kind": "tfng",
           "q": "Vinh's PE teacher helped him to plan his training.",
           "answer": "Not Given",
-          "tag": "d5r"
+          "tag": "d5r",
+          "explain_vi": "Bài chỉ nói ==With Khoa's help, Vinh started to work out==, không nhắc tới thầy thể dục → **Not Given**. __Bài không có thông tin thì chọn Not Given, đừng tự đoán.__"
         },
         {
           "id": "d5E3",
@@ -351,7 +373,8 @@
             "He gave up running."
           ],
           "answer": "C",
-          "tag": "d5r"
+          "tag": "d5r",
+          "explain_vi": "==After two months, he hurt his ankle and had to rest for ten days== → **C. He got an injury**. __'hurt his ankle' được nói lại bằng từ 'injury'.__"
         },
         {
           "id": "d5E4",
@@ -364,7 +387,8 @@
             "Vinh could not finish it."
           ],
           "answer": "A",
-          "tag": "d5r"
+          "tag": "d5r",
+          "explain_vi": "==he finished in 31 minutes, faster than Khoa== → **A. Vinh finished before Khoa**. __'faster than' nghĩa là về đích trước.__"
         }
       ]
     },
@@ -388,7 +412,8 @@
           "q": "Online shopping is very ______ because you can buy things at any time of day. (Gợi ý: c__________)",
           "answer": "convenient",
           "from_day": 4,
-          "tag": "d4v8"
+          "tag": "d4v8",
+          "explain_vi": "==you can buy things at any time of day== → tiện lợi: **convenient** (buổi 4). __Sau 'very' cần tính từ.__"
         },
         {
           "id": "d5G2",
@@ -398,21 +423,24 @@
             "'m going to join"
           ],
           "from_day": 4,
-          "tag": "d4g"
+          "tag": "d4g",
+          "explain_vi": "==I've decided== → dự định đã quyết từ trước → **be going to: am going to join**. __Quyết định ngay lúc nói mới dùng will.__"
         },
         {
           "id": "d5G3",
           "q": "My uncle had to ______ smoking because it was making him ill. (Điền 2 từ: một cụm động từ)",
           "answer": "give up",
           "from_day": 2,
-          "tag": "d2p2"
+          "tag": "d2p2",
+          "explain_vi": "Chú bỏ thuốc ==because it was making him ill== → **give up** (từ bỏ); sau had to giữ nguyên dạng. __give up + V-ing: bỏ một thói quen.__"
         },
         {
           "id": "d5G4",
           "q": "Eating well and sleeping enough can ______ your memory. (Gợi ý: i______)",
           "answer": "improve",
           "from_day": 1,
-          "tag": "d1v7"
+          "tag": "d1v7",
+          "explain_vi": "Ăn tốt, ngủ đủ ==can== giúp trí nhớ tốt hơn → **improve** (động từ nguyên thể sau can). __Sau can/should/must luôn dùng động từ nguyên thể.__"
         }
       ]
     }
@@ -430,7 +458,7 @@
         "stop to"
       ],
       "answer": 0,
-      "explain_vi": "avoid + V-ing = tránh làm gì. 'refuse' phải đi với to V, còn 'stop to' + V nghĩa là dừng lại để làm việc khác.",
+      "explain_vi": "Sau chỗ trống là ==eating== (V-ing) → cần **avoid + V-ing** (tránh làm gì). __'refuse' đi với to V, còn 'stop to V' là dừng lại để làm việc khác, nên đều sai.__",
       "tag": "d5v8"
     },
     {
@@ -439,7 +467,7 @@
       "skill": "vocab",
       "q": "My older sister w______ out at the gym every Tuesday and Thursday. (Viết cả từ, chú ý chia động từ)",
       "answer": "works",
-      "explain_vi": "work out = tập luyện; chủ ngữ 'My older sister' số ít, thói quen → works.",
+      "explain_vi": "**work out** nghĩa là tập luyện. Chủ ngữ ==My older sister== số ít, có ==every Tuesday and Thursday== chỉ thói quen → **works**. __Nhớ thêm -s khi chủ ngữ là ngôi ba số ít.__",
       "tag": "d5p1"
     },
     {
@@ -454,7 +482,7 @@
         "injured"
       ],
       "answer": 1,
-      "explain_vi": "a balanced diet = chế độ ăn cân bằng, có đủ các nhóm thực phẩm với lượng phù hợp. 'energy' là danh từ nên không đứng trước 'diet' được.",
+      "explain_vi": "**a balanced diet** là chế độ ăn cân bằng, gồm ==the right amounts of different kinds of food==. __'energy' là danh từ nên không đứng trước 'diet' như tính từ được.__",
       "tag": "d5v7"
     },
     {
@@ -469,7 +497,7 @@
         "better"
       ],
       "answer": 2,
-      "explain_vi": "So sánh nhất của good: the best.",
+      "explain_vi": "Có ==in our town== (so với cả thị trấn) → so sánh nhất; good → **the best**. __So sánh nhất luôn có 'the'; 'best' thiếu the, 'better' là so sánh hơn.__",
       "tag": "d5g"
     },
     {
@@ -478,7 +506,7 @@
       "skill": "grammar",
       "q": "Swimming in the sea is ______ (dangerous) than swimming in a pool.",
       "answer": "more dangerous",
-      "explain_vi": "Tính từ dài → more + adj + than.",
+      "explain_vi": "Có ==than== → so sánh hơn. dangerous là tính từ dài → **more dangerous**. __Tính từ từ 3 âm tiết trở lên dùng more, không thêm -er.__",
       "tag": "d5g"
     },
     {
@@ -493,7 +521,7 @@
         "so"
       ],
       "answer": 3,
-      "explain_vi": "so + adj + that …; 'tired' là tính từ không có danh từ đi kèm nên dùng so, không dùng such.",
+      "explain_vi": "Có ==that I fell asleep== và sau chỗ trống chỉ có tính từ ==tired== → **so + adj + that**. __such cần danh từ đi kèm; too đi với 'to V', không đi với that.__",
       "tag": "d5g"
     },
     {
@@ -508,7 +536,7 @@
         "imhappy"
       ],
       "answer": 2,
-      "explain_vi": "happy → unhappy (tiền tố un-).",
+      "explain_vi": "happy thêm tiền tố **un-** → **unhappy** (không vui), hợp với ==lost the final match==. __dis-, in-, im- không đi với happy; em nên học thuộc theo cặp từ.__",
       "tag": "d5w"
     },
     {
@@ -517,7 +545,7 @@
       "skill": "wordform",
       "q": "Don't be so ______! The doctor will see you in five minutes. (PATIENT)",
       "answer": "impatient",
-      "explain_vi": "patient bắt đầu bằng p → impatient (thiếu kiên nhẫn).",
+      "explain_vi": "patient bắt đầu bằng chữ ==p== nên dùng tiền tố **im-** → **impatient** (thiếu kiên nhẫn). __Mẹo: trước p và m thường dùng im- (impossible, impolite).__",
       "tag": "d5w"
     },
     {
@@ -532,7 +560,7 @@
         "Exercise is not good for me."
       ],
       "answer": 2,
-      "explain_vi": "'không tập thể dục đủ' = 'cần tập nhiều hơn'. Chú ý cụm take exercise = tập thể dục; exercise (sự tập luyện) là danh từ không đếm được.",
+      "explain_vi": "==don't take enough exercise== nghĩa là tập chưa đủ → **I need to take more exercise**. __'too much' là ngược nghĩa; 'every day' và 'not good for me' thêm ý mới, loại ngay.__",
       "tag": "fmt:sentence_transformation"
     },
     {
@@ -547,7 +575,7 @@
         "update"
       ],
       "answer": 0,
-      "explain_vi": "rely on sth = dựa vào cái gì (buổi 4).",
+      "explain_vi": "Sau chỗ trống có ==on the Internet== → **rely on** (dựa vào). __access, invent, update dùng thẳng với tân ngữ, không cần on.__",
       "from_day": 4,
       "tag": "d4v5"
     },
@@ -557,7 +585,7 @@
       "skill": "review",
       "q": "I ______ (read) in bed when I heard a strange noise outside.",
       "answer": "was reading",
-      "explain_vi": "Hành động đang diễn ra (quá khứ tiếp diễn) thì một hành động khác xen vào (heard) – buổi 2.",
+      "explain_vi": "==when I heard== một tiếng động xen vào việc đang làm → **quá khứ tiếp diễn: was reading**. __Việc dài đang diễn ra dùng was/were + V-ing, việc ngắn xen vào dùng quá khứ đơn.__",
       "from_day": 2,
       "tag": "d2g"
     },
@@ -573,7 +601,7 @@
         "encourage"
       ],
       "answer": 2,
-      "explain_vi": "concentrate on sth = tập trung vào việc gì (buổi 1).",
+      "explain_vi": "Có ==on your homework== và TV đang bật → **concentrate on** (tập trung vào). __attend không đi với on; revise, encourage sai nghĩa.__",
       "from_day": 1,
       "tag": "d1v4"
     }

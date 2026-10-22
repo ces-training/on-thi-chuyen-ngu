@@ -14,14 +14,16 @@
      "q": "The a______ clapped and cheered loudly at the end of the concert.",
      "answer": "audience",
      "from_day": 8,
-     "tag": "d8v2"
+     "tag": "d8v2",
+     "explain_vi": "==clapped and cheered loudly== là việc của người xem → **audience** (khán giả). __Chữ cái đầu cho sẵn giúp em thu hẹp lựa chọn.__"
     },
     {
      "id": "d14R1_2",
      "q": "Not everything on the Internet is true, so always check that your source is r______.",
      "answer": "reliable",
      "from_day": 8,
-     "tag": "d8v5"
+     "tag": "d8v5",
+     "explain_vi": "==Not everything on the Internet is true== → cần nguồn **reliable** (đáng tin cậy). __Sau is cần tính từ.__"
     },
     {
      "id": "d14R1_3",
@@ -31,56 +33,64 @@
       "flavor"
      ],
      "from_day": 9,
-     "tag": "d9v5"
+     "tag": "d9v5",
+     "explain_vi": "==chocolate, mango or green tea== là các vị kem → **flavour** (hương vị). __Viết flavor kiểu Mỹ cũng đúng.__"
     },
     {
      "id": "d14R1_4",
      "q": "Working at the summer camp was a great e______ for me. I learnt how to look after younger children.",
      "answer": "experience",
      "from_day": 10,
-     "tag": "d10v4"
+     "tag": "d10v4",
+     "explain_vi": "Sau ==a great== cần danh từ; ==I learnt how to look after younger children== → **experience** (trải nghiệm)."
     },
     {
      "id": "d14R1_5",
      "q": "I can't t______ him any more because he has lied to me twice.",
      "answer": "trust",
      "from_day": 11,
-     "tag": "d11v6"
+     "tag": "d11v6",
+     "explain_vi": "==because he has lied to me twice== → không thể tin nữa → **trust** (tin tưởng). __Sau can't là động từ nguyên mẫu.__"
     },
     {
      "id": "d14R1_6",
      "q": "Scientists have done a lot of r______ on how sleep affects our memory.",
      "answer": "research",
      "from_day": 12,
-     "tag": "d12v3"
+     "tag": "d12v3",
+     "explain_vi": "**do research on**: nghiên cứu về; dấu hiệu ==Scientists have done a lot of==. __research không đếm được: a lot of research.__"
     },
     {
      "id": "d14R1_7",
      "q": "We need to r______ the dance one more time before the show starts.",
      "answer": "rehearse",
      "from_day": 13,
-     "tag": "d13v7"
+     "tag": "d13v7",
+     "explain_vi": "Sau ==need to== cần động từ; tập lại ==one more time before the show starts== → **rehearse** (tập dượt)."
     },
     {
      "id": "d14R1_8",
      "q": "My little sister is very e______ about her ballet classes; she talks about them all the time.",
      "answer": "enthusiastic",
      "from_day": 2,
-     "tag": "d2v3"
+     "tag": "d2v3",
+     "explain_vi": "**be enthusiastic about**: hào hứng, say mê; dấu hiệu ==she talks about them all the time==. __Nhớ giới từ about.__"
     },
     {
      "id": "d14R1_9",
      "q": "Old newspapers can be r______ and turned into new paper.",
      "answer": "recycled",
      "from_day": 3,
-     "tag": "d3v4"
+     "tag": "d3v4",
+     "explain_vi": "==can be== + V3 (bị động), giấy cũ được ==turned into new paper== → **recycled** (tái chế). __Sau can be cần V3.__"
     },
     {
      "id": "d14R1_10",
      "q": "My dentist told me to a______ fizzy drinks because they contain so much sugar.",
      "answer": "avoid",
      "from_day": 5,
-     "tag": "d5v8"
+     "tag": "d5v8",
+     "explain_vi": "==because they contain so much sugar== → nên tránh → **avoid**. __Sau told me to cần động từ nguyên mẫu.__"
     }
    ]
   },
@@ -92,14 +102,16 @@
      "q": "Bánh mì ______ (sell) on almost every street corner in Hà Nội.",
      "answer": "is sold",
      "from_day": 8,
-     "tag": "d8g"
+     "tag": "d8g",
+     "explain_vi": "Bánh mì được bán → **bị động hiện tại đơn: is + V3** → **is sold**. Dấu hiệu ==on almost every street corner== là sự thật chung. __Chủ ngữ không tự làm hành động → bị động.__"
     },
     {
      "id": "d14R2_2",
      "q": "There are only ______ eggs left, so let's buy some more. (a few / a little)",
      "answer": "a few",
      "from_day": 9,
-     "tag": "d9g"
+     "tag": "d9g",
+     "explain_vi": "==eggs== đếm được, số nhiều → **a few**. __a little dùng với danh từ không đếm được (a little milk).__"
     },
     {
      "id": "d14R2_3",
@@ -109,35 +121,40 @@
       "do not water"
      ],
      "from_day": 10,
-     "tag": "d10g"
+     "tag": "d10g",
+     "explain_vi": "Vế kia có ==will die== → **điều kiện loại 1: If + hiện tại đơn** → **don't water**. __Vế If không dùng will.__"
     },
     {
      "id": "d14R2_4",
      "q": "If I ______ (know) the answer, I would tell you, but I don't.",
      "answer": "knew",
      "from_day": 10,
-     "tag": "d10g"
+     "tag": "d10g",
+     "explain_vi": "Vế kia có ==would tell== và ==but I don't== → **điều kiện loại 2: If + quá khứ đơn** → **knew**. __Loại 2 nói điều không có thật ở hiện tại.__"
     },
     {
      "id": "d14R2_5",
      "q": "That's the hospital ______ I was born. (which / where)",
      "answer": "where",
      "from_day": 11,
-     "tag": "d11g"
+     "tag": "d11g",
+     "explain_vi": "==the hospital== là nơi chốn, sau chỗ trống là câu đủ ==I was born== → **where**. __which cần phía sau thiếu chủ ngữ hoặc tân ngữ.__"
     },
     {
      "id": "d14R2_6",
      "q": "'I am reading a comic,' said Mai. → Mai said that she ______ a comic.",
      "answer": "was reading",
      "from_day": 12,
-     "tag": "d12g"
+     "tag": "d12g",
+     "explain_vi": "Tường thuật lùi thì: ==am reading== → **was reading** (hiện tại tiếp diễn → quá khứ tiếp diễn). __Nhớ đổi I → she, am → was.__"
     },
     {
      "id": "d14R2_7",
      "q": "My dad has promised ______ (take) me to the art exhibition on Saturday.",
      "answer": "to take",
      "from_day": 13,
-     "tag": "d13g"
+     "tag": "d13g",
+     "explain_vi": "==promised== + **to V** → **to take**. __promise, decide, hope + to V.__"
     },
     {
      "id": "d14R2_8",
@@ -147,14 +164,16 @@
       "'s knocking"
      ],
      "from_day": 1,
-     "tag": "d1g"
+     "tag": "d1g",
+     "explain_vi": "==Listen!== → việc đang xảy ra → **hiện tại tiếp diễn: is knocking**. __Look!, Listen! là dấu hiệu của thì hiện tại tiếp diễn.__"
     },
     {
      "id": "d14R2_9",
      "q": "I ______ (watch) TV when the phone rang.",
      "answer": "was watching",
      "from_day": 2,
-     "tag": "d2g"
+     "tag": "d2g",
+     "explain_vi": "Việc đang diễn ra thì bị cắt ngang ==when the phone rang== → **quá khứ tiếp diễn: was watching**. __Việc dài dùng was/were V-ing, việc ngắn chen vào dùng quá khứ đơn.__"
     },
     {
      "id": "d14R2_10",
@@ -166,7 +185,8 @@
       "'ve been living"
      ],
      "from_day": 3,
-     "tag": "d3g"
+     "tag": "d3g",
+     "explain_vi": "Có ==since 2020== → **hiện tại hoàn thành: have lived**. __Thấy since/for + thời gian, nghĩ ngay tới HTHT.__"
     }
    ]
   },
@@ -178,42 +198,48 @@
      "q": "Thank you for the ______ talk about staying safe online; we learnt a lot. (INFORM)",
      "answer": "informative",
      "from_day": 8,
-     "tag": "d8w"
+     "tag": "d8w",
+     "explain_vi": "Giữa ==the== và danh từ ==talk== cần **tính từ**: inform + -ative → **informative** (bổ ích). Dấu hiệu ==we learnt a lot==."
     },
     {
      "id": "d14R3_2",
      "q": "The ______ of the villagers surprised us when our car broke down in the countryside. (KIND)",
      "answer": "kindness",
      "from_day": 9,
-     "tag": "d9w"
+     "tag": "d9w",
+     "explain_vi": "Sau ==The== và trước ==of the villagers== cần **danh từ**: kind + -ness → **kindness** (lòng tốt). __Mẹo: the … of thì chỗ trống là danh từ.__"
     },
     {
      "id": "d14R3_3",
      "q": "The ______ from my house to school is about two kilometres. (DISTANT)",
      "answer": "distance",
      "from_day": 11,
-     "tag": "d11w"
+     "tag": "d11w",
+     "explain_vi": "Sau ==The== và trước ==from my house to school== cần **danh từ**: distant → **distance** (khoảng cách). __Đổi -ant thành -ance để được danh từ.__"
     },
     {
      "id": "d14R3_4",
      "q": "Our class won first prize for the best dance ______. (PERFORM)",
      "answer": "performance",
      "from_day": 13,
-     "tag": "d13w"
+     "tag": "d13w",
+     "explain_vi": "Sau ==the best dance== cần **danh từ**: perform + -ance → **performance** (tiết mục). __dance performance là danh từ ghép.__"
     },
     {
      "id": "d14R3_5",
      "q": "Be ______ when you cross the road near the market. (CARE)",
      "answer": "careful",
      "from_day": 2,
-     "tag": "d2w"
+     "tag": "d2w",
+     "explain_vi": "Sau ==Be== cần **tính từ**: care + -ful → **careful** (cẩn thận). __Câu mệnh lệnh Be + tính từ.__"
     },
     {
      "id": "d14R3_6",
      "q": "It's ______ to finish all this homework in just ten minutes! (POSSIBLE)",
      "answer": "impossible",
      "from_day": 5,
-     "tag": "d5w"
+     "tag": "d5w",
+     "explain_vi": "==in just ten minutes!== → không thể làm xong → nghĩa phủ định: **impossible**. __Bước 3: kiểm tra nghĩa khẳng định hay phủ định.__"
     }
    ]
   },
@@ -232,7 +258,8 @@
      ],
      "answer": "B",
      "from_day": 8,
-     "tag": "fmt:sentence_completion"
+     "tag": "fmt:sentence_completion",
+     "explain_vi": "Kết hợp cố định **do sb a favour** (giúp ai một việc) → **B. do**; dấu hiệu ==a favour==. __make đi với a mistake, a decision.__"
     },
     {
      "id": "d14R4_2",
@@ -246,7 +273,8 @@
      ],
      "answer": "D",
      "from_day": 9,
-     "tag": "fmt:synonym"
+     "tag": "fmt:synonym",
+     "explain_vi": "**CUSTOM** (phong tục) gần nghĩa nhất với **D. tradition**; ví dụ ==giving lucky money at Tết==. __festival là lễ hội, không phải phong tục.__"
     },
     {
      "id": "d14R4_3",
@@ -260,7 +288,8 @@
      ],
      "answer": "C",
      "from_day": 10,
-     "tag": "fmt:dialogue_completion"
+     "tag": "fmt:dialogue_completion",
+     "explain_vi": "A báo tin vui ==apply for a summer job at the zoo== → khích lệ: **C. That sounds exciting! Good luck.** __I'm sorry to hear that dùng cho tin buồn.__"
     },
     {
      "id": "d14R4_4",
@@ -274,7 +303,8 @@
      ],
      "answer": "A",
      "from_day": 11,
-     "tag": "fmt:antonym"
+     "tag": "fmt:antonym",
+     "explain_vi": "**ARGUE** (cãi nhau) trái nghĩa với **A. agree** (đồng ý). __quarrel, fight, disagree gần nghĩa với argue – đề hỏi TRÁI nghĩa.__"
     },
     {
      "id": "d14R4_5",
@@ -288,7 +318,8 @@
      ],
      "answer": "D",
      "from_day": 5,
-     "tag": "fmt:sentence_transformation"
+     "tag": "fmt:sentence_transformation",
+     "explain_vi": "==My sister is taller than me== nghĩa là em thấp hơn chị → **D. I am not as tall as my sister.** __not as … as là không bằng; A và C đảo ngược nghĩa.__"
     },
     {
      "id": "d14R4_6",
@@ -302,7 +333,8 @@
      ],
      "answer": "C",
      "from_day": 6,
-     "tag": "fmt:cloze"
+     "tag": "fmt:cloze",
+     "explain_vi": "==by train from Hà Nội to Huế== mất ==almost fourteen hours== → chuyến đi dài: **C. journey**. __destination là điểm đến, passenger là hành khách.__"
     }
    ]
   },
@@ -317,21 +349,24 @@
      "kind": "tfng",
      "q": "The winning team had five members.",
      "answer": "False",
-     "tag": "d14r"
+     "tag": "d14r",
+     "explain_vi": "Bài viết: ==a group of four Year 7 students== → nhóm có 4 người, không phải 5 → **False**. __Số 5 trong bài là five grandmothers – bẫy.__"
     },
     {
      "id": "d14E2",
      "kind": "tfng",
      "q": "The students asked 120 people questions at a market.",
      "answer": "True",
-     "tag": "d14r"
+     "tag": "d14r",
+     "explain_vi": "Bài viết: ==they carried out a survey of 120 people at a local market== → **True**. __carried out a survey được diễn đạt lại thành asked questions.__"
     },
     {
      "id": "d14E3",
      "kind": "tfng",
      "q": "The grandmothers were paid for appearing in the videos.",
      "answer": "Not Given",
-     "tag": "d14r"
+     "tag": "d14r",
+     "explain_vi": "Bài chỉ nói ==they filmed five grandmothers cooking their favourite dishes==, không nhắc đến việc trả tiền → **Not Given**. __Không suy đoán điều bài không nói.__"
     },
     {
      "id": "d14E4",
@@ -344,7 +379,8 @@
       "wanted to learn new recipes"
      ],
      "answer": "C",
-     "tag": "d14r"
+     "tag": "d14r",
+     "explain_vi": "Bài viết: ==most people preferred traditional dishes, like phở and bánh cuốn, to fast food== → **C. preferred traditional dishes**."
     },
     {
      "id": "d14E5",
@@ -357,7 +393,8 @@
       "to advertise the market"
      ],
      "answer": "B",
-     "tag": "d14r"
+     "tag": "d14r",
+     "explain_vi": "Đầu bếp lo ==young people were no longer interested in learning the old recipes==, nên nhóm quay video → **B. to help young people learn the old recipes**. __Từ 'So' báo hiệu nguyên nhân – kết quả.__"
     }
    ]
   },
@@ -396,7 +433,7 @@
     "turn down"
    ],
    "answer": 1,
-   "explain_vi": "'find out' = tìm ra, tìm hiểu (thông tin). 'come across' = tình cờ gặp/thấy.",
+   "explain_vi": "**find out**: tìm hiểu, tìm ra thông tin; dấu hiệu ==what time the museum opens==. __come across là tình cờ gặp/thấy, không hợp.__",
    "tag": "d8p1"
   },
   {
@@ -407,7 +444,7 @@
    "q": "We don't cook on Sundays; we usually eat ______ at a restaurant near our house.",
    "answer": "out",
    "accept": [],
-   "explain_vi": "'eat out' = đi ăn ở ngoài (nhà hàng, quán ăn).",
+   "explain_vi": "**eat out**: đi ăn ở ngoài → điền **out**; dấu hiệu ==We don't cook== và ==at a restaurant==.",
    "tag": "d9p1"
   },
   {
@@ -423,7 +460,7 @@
     "Put on"
    ],
    "answer": 2,
-   "explain_vi": "'carry on + V-ing' = tiếp tục làm gì.",
+   "explain_vi": "**carry on + V-ing**: tiếp tục làm gì → **Carry on** reading; dấu hiệu ==Don't stop now!== __Turn down là từ chối/vặn nhỏ.__",
    "tag": "d10p1"
   },
   {
@@ -434,7 +471,7 @@
    "q": "More than two hundred runners took ______ in the charity race.",
    "answer": "part",
    "accept": [],
-   "explain_vi": "'take part in' = tham gia (cuộc thi, hoạt động).",
+   "explain_vi": "**take part in**: tham gia → điền **part**; dấu hiệu ==in the charity race==. __Đừng nhầm với take place (diễn ra).__",
    "tag": "d13p2"
   },
   {
@@ -450,7 +487,7 @@
     "were built"
    ],
    "answer": 2,
-   "explain_vi": "Bị động quá khứ đơn (in 1998); chủ ngữ số ít 'Our school' → was built.",
+   "explain_vi": "==in 1998== → quá khứ đơn; trường được xây → bị động; chủ ngữ số ít ==Our school== → **was built**. __Chủ ngữ là vật chịu tác động thì nghĩ tới bị động.__",
    "tag": "d8g"
   },
   {
@@ -466,7 +503,7 @@
     "spoke"
    ],
    "answer": 2,
-   "explain_vi": "Không có người nghe sau chỗ trống → dùng said (say that...). 'told' phải có người nghe: told me that...",
+   "explain_vi": "Sau chỗ trống là ==that==, không có người nghe → **said** (say that…). __told phải có người nghe: told me that…__",
    "tag": "d12g"
   },
   {
@@ -477,7 +514,7 @@
    "q": "Nam finished ______ (paint) the picture just before midnight.",
    "answer": "painting",
    "accept": [],
-   "explain_vi": "'finish' luôn đi với V-ing: finish painting.",
+   "explain_vi": "==finished== + **V-ing** → **painting**. __finish, enjoy, avoid, mind + V-ing.__",
    "tag": "d13g"
   },
   {
@@ -493,7 +530,7 @@
     "who"
    ],
    "answer": 0,
-   "explain_vi": "Sau chỗ trống là động từ 'is' (thiếu chủ ngữ) → dùng which. Không dùng 'that' sau dấu phẩy; 'where' cần cả một câu đầy đủ phía sau.",
+   "explain_vi": "Sau chỗ trống là động từ ==is== (thiếu chủ ngữ), có dấu phẩy → **which**. __Không dùng that sau dấu phẩy; where cần cả mệnh đề đầy đủ phía sau.__",
    "tag": "d11g"
   },
   {
@@ -509,7 +546,7 @@
     "electricity"
    ],
    "answer": 3,
-   "explain_vi": "Sau 'no' cần danh từ: electric → electricity (điện).",
+   "explain_vi": "Sau ==no== cần **danh từ**: electric → **electricity** (điện). __electrical là tính từ, không đứng một mình sau no.__",
    "tag": "d9w"
   },
   {
@@ -522,7 +559,7 @@
    "accept": [
     "modernize"
    ],
-   "explain_vi": "Sau 'need to' cần động từ: modern + -ise → modernise (hiện đại hoá).",
+   "explain_vi": "Sau ==need to== cần **động từ**: modern + -ise → **modernise** (hiện đại hoá). __Viết modernize kiểu Mỹ cũng đúng.__",
    "tag": "d10w"
   },
   {
@@ -538,7 +575,7 @@
     "had"
    ],
    "answer": 2,
-   "explain_vi": "Kết hợp cố định: make a mistake (mắc lỗi). Không nói 'do a mistake'.",
+   "explain_vi": "Kết hợp cố định **make a mistake** (mắc lỗi) → **made**; dấu hiệu ==a mistake==. __Không nói 'do a mistake'.__",
    "tag": "fmt:sentence_completion"
   },
   {
@@ -554,7 +591,7 @@
     "encourage"
    ],
    "answer": 1,
-   "explain_vi": "'concentrate on sth' = tập trung vào việc gì.",
+   "explain_vi": "**concentrate**: tập trung; dấu hiệu ==in class when I haven't had enough sleep==. __attend là tham dự, revise là ôn bài – không hợp nghĩa.__",
    "tag": "d1v4"
   },
   {
@@ -565,7 +602,7 @@
    "q": "I have never ______ (see) snow in my life.",
    "answer": "seen",
    "accept": [],
-   "explain_vi": "Hiện tại hoàn thành: have + V3. see → seen.",
+   "explain_vi": "==have never== → **hiện tại hoàn thành: have + V3** → **seen**. __see – saw – seen: nhớ bảng động từ bất quy tắc.__",
    "tag": "d3g"
   },
   {
@@ -581,7 +618,7 @@
     "took up"
    ],
    "answer": 3,
-   "explain_vi": "'take up' = bắt đầu một sở thích mới (quá khứ: took up). 'give up' = từ bỏ – ngược nghĩa với câu.",
+   "explain_vi": "**take up**: bắt đầu một sở thích → **took up**; dấu hiệu ==now she plays in competitions==. __gave up (từ bỏ) ngược nghĩa với câu.__",
    "tag": "d2p1"
   },
   {
@@ -597,7 +634,7 @@
     "should"
    ],
    "answer": 0,
-   "explain_vi": "'mustn't' = cấm, không được phép. 'don't have to' = không cần phải (nhưng làm cũng được).",
+   "explain_vi": "==It's not allowed== → cấm → **mustn't**. __don't have to là không cần phải, khác hẳn với cấm.__",
    "tag": "d6g"
   },
   {
@@ -613,7 +650,7 @@
     "such"
    ],
    "answer": 2,
-   "explain_vi": "'enough' đứng SAU tính từ: warm enough (đủ ấm). 'too' đứng trước tính từ.",
+   "explain_vi": "**enough** đứng SAU tính từ: ==warm== **enough** (đủ ấm). __too đứng trước tính từ: too cold.__",
    "tag": "d5g"
   }
  ],

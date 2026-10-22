@@ -10,7 +10,8 @@
       "Mooncakes are sold everywhere before the Mid-Autumn Festival.",
       "The exhibition was opened by the mayor.",
       "These songs were composed by a teenager."
-     ]
+     ],
+     "rule_vi": "Các câu có **be + V3**: ==are sold, was opened, were composed== – chủ ngữ chịu tác động. __Dấu hiệu thường gặp: by + người làm.__"
     },
     {
      "name": "Conditionals",
@@ -18,7 +19,8 @@
       "If I were taller, I'd play basketball.",
       "If it's sunny tomorrow, we'll have a picnic.",
       "Water boils if you heat it to 100°C."
-     ]
+     ],
+     "rule_vi": "Các câu đều có ==If== → **câu điều kiện**: loại 2 (If I were…, I'd…), loại 1 (If it's…, we'll…), loại 0 (sự thật: boils if…). __Xem thì của hai vế để biết loại.__"
     },
     {
      "name": "Relative clauses",
@@ -26,30 +28,36 @@
       "The girl who won the prize is my cousin.",
       "Huế, which was the old capital, is beautiful.",
       "That's the café where we first met."
-     ]
+     ],
+     "rule_vi": "Có ==who, which, where== nối hai ý → **mệnh đề quan hệ**. __who cho người, which cho vật, where cho nơi chốn.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "She told us that she was going to the museum.",
-    "hint_vi": "Câu tường thuật (buổi 12): told + người nghe + that, lùi thì."
+    "hint_vi": "Câu tường thuật (buổi 12): told + người nghe + that, lùi thì.",
+    "why_vi": "Câu tường thuật: **told + người nghe (us) + that** + câu lùi thì ==she was going==. __told luôn có người nghe ngay sau.__"
    },
    {
     "sentence": "Nam decided to take part in the singing contest.",
-    "hint_vi": "decide + to V (buổi 13); take part in = tham gia."
+    "hint_vi": "decide + to V (buổi 13); take part in = tham gia.",
+    "why_vi": "**decide + to V**: ==decided to take part in== + cuộc thi. __take part in: tham gia.__"
    },
    {
     "sentence": "Have you ever been to an art exhibition?",
-    "hint_vi": "Hiện tại hoàn thành với ever (buổi 3)."
+    "hint_vi": "Hiện tại hoàn thành với ever (buổi 3).",
+    "why_vi": "Câu hỏi hiện tại hoàn thành: **Have + chủ ngữ + ever + V3** → ==Have you ever been to==. __ever đứng giữa chủ ngữ và V3.__"
    },
    {
     "sentence": "The man whose car was stolen called the police.",
-    "hint_vi": "whose + danh từ = của người đó (buổi 11)."
+    "hint_vi": "whose + danh từ = của người đó (buổi 11).",
+    "why_vi": "**whose + danh từ** ==whose car was stolen== đứng ngay sau ==The man==, rồi mới tới động từ chính ==called==. __Tìm động từ chính trước khi xếp.__"
    },
    {
     "sentence": "We were having dinner when the lights went out.",
-    "hint_vi": "Quá khứ tiếp diễn bị quá khứ đơn cắt ngang (buổi 2)."
+    "hint_vi": "Quá khứ tiếp diễn bị quá khứ đơn cắt ngang (buổi 2).",
+    "why_vi": "**Quá khứ tiếp diễn** ==were having dinner== bị cắt ngang bởi quá khứ đơn ==when the lights went out==. __Việc dài dùng was/were V-ing.__"
    }
   ],
   "truefalse": [
@@ -57,49 +65,49 @@
     "s": "The Mid-Autumn Festival is celebrated in September or October.",
     "ok": true,
     "fix": "The Mid-Autumn Festival is celebrated in September or October.",
-    "why_vi": "Đúng: bị động hiện tại đơn (buổi 8), is + V3."
+    "why_vi": "**Đúng**: bị động hiện tại đơn ==is celebrated== (is + V3). __Lễ hội 'được tổ chức' → bị động.__"
    },
    {
     "s": "She said me that she was tired.",
     "ok": false,
     "fix": "She told me that she was tired.",
-    "why_vi": "Có người nghe (me) thì dùng told, không dùng said (buổi 12)."
+    "why_vi": "**Sai**: có người nghe ==me== → dùng **told me**, không dùng said me. __said that…, told sb that…__"
    },
    {
     "s": "The singer whose songs I love is coming to Hà Nội.",
     "ok": true,
     "fix": "The singer whose songs I love is coming to Hà Nội.",
-    "why_vi": "Đúng: whose + danh từ chỉ sở hữu (buổi 11)."
+    "why_vi": "**Đúng**: ==whose songs== – whose + danh từ chỉ sở hữu (bài hát của ca sĩ)."
    },
    {
     "s": "Đà Nẵng, that is in central Việt Nam, has beautiful beaches.",
     "ok": false,
     "fix": "Đà Nẵng, which is in central Việt Nam, has beautiful beaches.",
-    "why_vi": "Mệnh đề có dấu phẩy không dùng that; nơi chốn làm chủ ngữ → which (buổi 11)."
+    "why_vi": "**Sai**: mệnh đề có dấu phẩy không dùng ==that== → **which is in central Việt Nam**. __Sau dấu phẩy, nghĩ tới which/who.__"
    },
    {
     "s": "If it rains this afternoon, we will stay inside.",
     "ok": true,
     "fix": "If it rains this afternoon, we will stay inside.",
-    "why_vi": "Đúng: điều kiện loại 1, If + hiện tại đơn, will + V (buổi 10)."
+    "why_vi": "**Đúng**: điều kiện loại 1, ==If it rains== (hiện tại đơn), **will + V** (will stay)."
    },
    {
     "s": "We have lived in Hà Nội since five years.",
     "ok": false,
     "fix": "We have lived in Hà Nội for five years.",
-    "why_vi": "Khoảng thời gian dùng for; since đi với mốc thời gian (buổi 3)."
+    "why_vi": "**Sai**: ==five years== là khoảng thời gian → dùng **for**. __since + mốc (since 2020), for + khoảng (for five years).__"
    },
    {
     "s": "There isn't much traffic on Sunday mornings.",
     "ok": true,
     "fix": "There isn't much traffic on Sunday mornings.",
-    "why_vi": "Đúng: traffic không đếm được → much (buổi 9)."
+    "why_vi": "**Đúng**: ==traffic== không đếm được → **much**. __many đi với danh từ đếm được số nhiều.__"
    },
    {
     "s": "He avoided to answer my question.",
     "ok": false,
     "fix": "He avoided answering my question.",
-    "why_vi": "avoid + V-ing, không dùng to V (buổi 5 và 13)."
+    "why_vi": "**Sai**: **avoid + V-ing** → avoided answering, không dùng ==avoided to answer==. __avoid, enjoy, finish + V-ing.__"
    }
   ]
  },
@@ -121,7 +129,7 @@
       "analys[[es]]"
      ],
      "answer": 2,
-     "explain_vi": "admires đọc /z/ (kết thúc bằng âm hữu thanh); rehearses, composes, analyses đọc /ɪz/ vì kết thúc bằng âm /s/ hoặc /z/."
+     "explain_vi": "**admires** đọc /z/ vì admire tận cùng bằng âm hữu thanh; ==rehearses, composes, analyses== đọc /ɪz/ vì tận cùng âm /s/ hoặc /z/. __Sau âm /s/, /z/, /ʃ/, /tʃ/ thì -es đọc /ɪz/.__"
     },
     {
      "format": "stress",
@@ -133,7 +141,7 @@
       "admire"
      ],
      "answer": 2,
-     "explain_vi": "argue nhấn âm 1 (AR-gue); respect, support, admire nhấn âm 2."
+     "explain_vi": "**argue** nhấn âm 1 (AR-gue); ==respect, support, admire== nhấn âm 2. __Động từ 2 âm tiết thường nhấn âm 2, argue là ngoại lệ.__"
     },
     {
      "format": "sentence_completion",
@@ -145,7 +153,7 @@
       "has composed"
      ],
      "answer": 1,
-     "explain_vi": "Bài hát được sáng tác (bị động), 'last year' → quá khứ đơn: was composed (buổi 8, 13)."
+     "explain_vi": "Bài hát được sáng tác → bị động; ==last year== → quá khứ: **was composed**. __Chủ ngữ là vật + by + người làm → nghĩ tới bị động.__"
     },
     {
      "format": "synonym",
@@ -157,7 +165,7 @@
       "look for"
      ],
      "answer": 1,
-     "explain_vi": "look up to = kính trọng, ngưỡng mộ = admire (buổi 11, 13)."
+     "explain_vi": "**LOOK UP TO** (kính trọng, ngưỡng mộ) đồng nghĩa với **admire**. __look after: chăm sóc; look for: tìm – đừng chọn vì giống chữ look.__"
     },
     {
      "format": "antonym",
@@ -169,7 +177,7 @@
       "friendly"
      ],
      "answer": 2,
-     "explain_vi": "generous = hào phóng; trái nghĩa là mean = keo kiệt (buổi 11)."
+     "explain_vi": "**GENEROUS** (hào phóng), dấu hiệu ==he often gives us fruit==; trái nghĩa là **mean** (keo kiệt). __kind, friendly gần nghĩa, không phải trái nghĩa.__"
     },
     {
      "format": "dialogue_completion",
@@ -181,7 +189,7 @@
       "I would buy a new set of paints."
      ],
      "answer": 3,
-     "explain_vi": "Câu hỏi loại 2 What would you do if...? → trả lời I would + V (buổi 10)."
+     "explain_vi": "Câu hỏi loại 2 ==What would you do if…?== → trả lời **I would + V**: **I would buy a new set of paints.** __Yes, I would không trả lời câu hỏi What.__"
     },
     {
      "format": "error_id",
@@ -193,7 +201,7 @@
       "support"
      ],
      "answer": 2,
-     "explain_vi": "evidence không đếm được, không thêm -s → much evidence (buổi 9, 12)."
+     "explain_vi": "==evidence== không đếm được, không thêm -s → **much evidence**; lỗi ở **evidences**. __much chỉ đi với danh từ không đếm được – cũng là gợi ý.__"
     },
     {
      "format": "closest_meaning",
@@ -205,7 +213,7 @@
       "My brother told me that he helps me with my project."
      ],
      "answer": 0,
-     "explain_vi": "Tường thuật: will → would, I → he, your → my; có người nghe thì dùng told me (buổi 12)."
+     "explain_vi": "Tường thuật: ==will → would, I → he, your → my==; có người nghe → **told me** → đáp án **A**. __C sai vì said me và không lùi thì.__"
     },
     {
      "format": "sentence_combining",
@@ -217,7 +225,7 @@
       "I have a friend whose his father is a famous composer."
      ],
      "answer": 1,
-     "explain_vi": "His father → whose father (sở hữu); sau whose không dùng thêm his (buổi 11)."
+     "explain_vi": "==His father== chỉ sở hữu → **whose father**; sau whose không thêm his. __who, which không đứng trước danh từ chỉ sở hữu.__"
     },
     {
      "format": "sentence_completion",
@@ -229,7 +237,7 @@
       "switched"
      ],
      "answer": 1,
-     "explain_vi": "remember to V = nhớ phải làm (việc chưa làm); switch off = tắt (buổi 4, 13)."
+     "explain_vi": "==before you leave==: việc chưa làm → **remember to V** → **to switch** off. __remember V-ing là nhớ việc đã làm.__"
     }
    ]
   }
@@ -252,7 +260,7 @@
       "song[[s]]"
      ],
      "answer": 3,
-     "explain_vi": "songs đọc /z/ vì 'song' tận cùng bằng âm hữu thanh /ŋ/. artists, cakes, shops tận cùng bằng /t/, /k/, /p/ nên -s đọc /s/ (buổi 1)."
+     "explain_vi": "**songs** đọc /z/ vì song tận cùng bằng âm hữu thanh /ŋ/; ==artists, cakes, shops== tận cùng /t/, /k/, /p/ nên đọc /s/. __Âm cuối vô thanh p, t, k, f → -s đọc /s/.__"
     },
     {
      "format": "stress",
@@ -264,7 +272,7 @@
       "music"
      ],
      "answer": 1,
-     "explain_vi": "perform nhấn âm 2 (per-FORM). artist, concert, music nhấn âm 1 – phần lớn danh từ 2 âm tiết nhấn âm 1 (buổi 2)."
+     "explain_vi": "**perform** nhấn âm 2 (per-FORM); ==artist, concert, music== nhấn âm 1. __Danh từ 2 âm tiết thường nhấn âm 1, động từ thường nhấn âm 2.__"
     },
     {
      "format": "sentence_completion",
@@ -276,7 +284,7 @@
       "paints"
      ],
      "answer": 0,
-     "explain_vi": "Bức tranh được vẽ (bị động), có 'last year' → quá khứ: was + V3 → was painted (buổi 8)."
+     "explain_vi": "Bức tranh được vẽ → bị động; ==last year== → **was painted** (was + V3). __Thấy by + người làm thì nghĩ tới bị động.__"
     },
     {
      "format": "synonym",
@@ -288,7 +296,7 @@
       "funny"
      ],
      "answer": 2,
-     "explain_vi": "honest = thật thà = truthful (luôn nói thật). Vế sau 'never tells lies' là gợi ý (buổi 11)."
+     "explain_vi": "**HONEST** (thật thà) đồng nghĩa với **truthful**. Gợi ý: ==she never tells lies==. __Đọc vế sau dấu chấm phẩy để đoán nghĩa.__"
     },
     {
      "format": "antonym",
@@ -300,7 +308,7 @@
       "noisy"
      ],
      "answer": 0,
-     "explain_vi": "crowded = đông đúc; trái nghĩa là empty = vắng tanh. full, busy gần nghĩa với crowded (buổi 6)."
+     "explain_vi": "**CROWDED** (đông đúc) trái nghĩa với **empty** (vắng tanh). __full, busy gần nghĩa với crowded – đề hỏi TRÁI nghĩa.__"
     },
     {
      "format": "dialogue_completion",
@@ -312,7 +320,7 @@
       "You're welcome."
      ],
      "answer": 3,
-     "explain_vi": "Đáp lại lời cảm ơn: You're welcome (Không có gì). 'Yes, please' dùng để nhận lời mời (buổi 4, 10)."
+     "explain_vi": "Đáp lại ==Thank you for helping me== → **You're welcome** (Không có gì). __Yes, please dùng để nhận lời mời.__"
     },
     {
      "format": "error_id",
@@ -324,7 +332,7 @@
       "school show"
      ],
      "answer": 1,
-     "explain_vi": "enjoy + V-ing → enjoys dancing, không dùng 'to dance' (buổi 13)."
+     "explain_vi": "==enjoys== + **V-ing** → enjoys dancing; lỗi sai ở **to dance**. __enjoy không bao giờ đi với to V.__"
     },
     {
      "format": "closest_meaning",
@@ -336,7 +344,7 @@
       "Nam said that he didn't live in Huế."
      ],
      "answer": 2,
-     "explain_vi": "live → lived; I → he; thành phố vẫn là Huế và câu vẫn khẳng định (buổi 12)."
+     "explain_vi": "Tường thuật: ==live → lived, I → he==, Huế giữ nguyên → **Nam said that he lived in Huế.** __Loại A (đổi thành phố), D (đổi sang phủ định).__"
     },
     {
      "format": "sentence_combining",
@@ -348,7 +356,7 @@
       "This is my friend whose can sing very well."
      ],
      "answer": 0,
-     "explain_vi": "'my friend' là người → dùng who. which cho vật, where cho nơi chốn, whose + danh từ (buổi 11)."
+     "explain_vi": "==my friend== là người, làm chủ ngữ → **who**. __which cho vật, where cho nơi chốn, whose + danh từ.__"
     },
     {
      "format": "sentence_completion",
@@ -360,7 +368,7 @@
       "goes"
      ],
      "answer": 2,
-     "explain_vi": "Điều kiện loại 1: If + hiện tại đơn (are), will + V nguyên mẫu → will go (buổi 10)."
+     "explain_vi": "==If you are free== (hiện tại đơn) → **điều kiện loại 1: will + V** → **will go**."
     }
    ]
   }
@@ -383,7 +391,7 @@
       "[[ch]]orus"
      ],
      "answer": 2,
-     "explain_vi": "challenge đọc /tʃ/. character, chemist, chorus là từ gốc Hy Lạp nên 'ch' đọc /k/."
+     "explain_vi": "**challenge** đọc /tʃ/; ==character, chemist, chorus== gốc Hy Lạp nên ch đọc /k/. __Nhớ nhóm ch đọc /k/: school, stomach, chemist…__"
     },
     {
      "format": "stress",
@@ -395,7 +403,7 @@
       "biology"
      ],
      "answer": 0,
-     "explain_vi": "scientific nhấn âm 3 (đuôi -ic: trọng âm ngay trước -ic: scien-TIF-ic). experiment, photographer, biology nhấn âm 2."
+     "explain_vi": "**scientific** nhấn âm 3 (scien-TIF-ic) vì trọng âm rơi ngay trước đuôi ==-ic==; experiment, photographer, biology nhấn âm 2. __Đuôi -ic, -tion: nhấn âm ngay trước.__"
     },
     {
      "format": "sentence_completion",
@@ -407,7 +415,7 @@
       "few"
      ],
      "answer": 1,
-     "explain_vi": "evidence không đếm được → little/a little. Vế sau 'don't trust' cho thấy nghĩa tiêu cực (gần như không có) → little (buổi 9)."
+     "explain_vi": "==evidence== không đếm được → little/a little; ==most scientists don't trust the advert== → gần như không có → **little**. __a little mang nghĩa tích cực (có một ít).__"
     },
     {
      "format": "synonym",
@@ -419,7 +427,7 @@
       "devised"
      ],
      "answer": 3,
-     "explain_vi": "come up with = nghĩ ra = devise. 'searched for' chỉ là tìm kiếm, chưa chắc tìm ra; rejected = bác bỏ (buổi 12)."
+     "explain_vi": "**CAME UP WITH** (nghĩ ra) đồng nghĩa với **devised**; dấu hiệu ==finally== và ==a solution==. __searched for chỉ là tìm, chưa chắc tìm ra.__"
     },
     {
      "format": "antonym",
@@ -431,7 +439,7 @@
       "support"
      ],
      "answer": 0,
-     "explain_vi": "praise = lời khen ngợi; trái nghĩa là criticism = lời chỉ trích. admiration, support gần nghĩa với praise."
+     "explain_vi": "**PRAISE** (khen ngợi) trái nghĩa với **criticism** (chỉ trích). __admiration, support gần nghĩa với praise – đề hỏi TRÁI nghĩa.__"
     },
     {
      "format": "dialogue_completion",
@@ -443,7 +451,7 @@
       "Never mind."
      ],
      "answer": 1,
-     "explain_vi": "Would you mind…? = Bạn có phiền không? Đồng ý thì đáp 'Not at all' (không phiền gì) rồi đưa vở: Here you are."
+     "explain_vi": "==Would you mind if…?== nghĩa là 'Bạn có phiền không?'; đồng ý thì đáp **Not at all. Here you are.** __Trả lời Yes nghĩa là CÓ phiền – dễ nhầm.__"
     },
     {
      "format": "error_id",
@@ -455,7 +463,7 @@
       "into"
      ],
      "answer": 0,
-     "explain_vi": "Mệnh đề không xác định (giữa hai dấu phẩy) không dùng 'that' → which was built (buổi 11). Các phần bị động đều đúng (buổi 8)."
+     "explain_vi": "Mệnh đề giữa hai dấu phẩy ==, that was built in 1910,== không dùng that → lỗi ở **that**, sửa thành which. __Các phần bị động còn lại đều đúng.__"
     },
     {
      "format": "closest_meaning",
@@ -467,7 +475,7 @@
       "The director advised the actors to rehearse more before the show."
      ],
      "answer": 3,
-     "explain_vi": "should = lời khuyên → advise sb to do sth. Các câu khác sai nghĩa: cấm tập, đã tập đủ, hay hỏi (buổi 12, 13)."
+     "explain_vi": "==You should rehearse more== là lời khuyên → **advise sb to do sth** → đáp án **D**. __A là cấm, B là đã tập đủ, C là câu hỏi – sai nghĩa.__"
     },
     {
      "format": "sentence_combining",
@@ -479,7 +487,7 @@
       "Born in Huế, millions of people love the singer's songs."
      ],
      "answer": 2,
-     "explain_vi": "Her songs → whose songs (sở hữu). A đổi nghĩa; B dùng 'that' sau dấu phẩy; D sai chủ ngữ (millions of people không sinh ở Huế) (buổi 11)."
+     "explain_vi": "==Her songs== → **whose songs** → đáp án **C**. __A đổi nghĩa, B dùng that sau dấu phẩy, D sai chủ ngữ.__"
     },
     {
      "format": "sentence_completion",
@@ -491,7 +499,7 @@
       "provided"
      ],
      "answer": 0,
-     "explain_vi": "unless = if … not: không được vào nếu KHÔNG xuất trình thẻ. if / as long as / provided làm câu thành vô lý (buổi 10)."
+     "explain_vi": "==You won't be allowed into the exhibition== nếu KHÔNG xuất trình thẻ → **unless** (if … not). __if, as long as, provided làm câu vô lý.__"
     }
    ]
   }
@@ -504,13 +512,15 @@
     "id": "d14H1",
     "q": "Throwing rubbish into the river is an act of complete ______. (RESPONSIBLE)",
     "answer": "irresponsibility",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Sau tính từ ==complete== cần **danh từ**; vứt rác xuống sông là vô trách nhiệm: ir + responsible + -ity → **irresponsibility**. __Đổi -ible thành -ibility.__"
    },
    {
     "id": "d14H2",
     "q": "The audience waited ______ for the band to come on stage; the concert was already an hour late. (PATIENT)",
     "answer": "impatiently",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Bổ nghĩa cho động từ ==waited== cần **trạng từ**; ==already an hour late== → sốt ruột: **impatiently**. __Tiền tố phủ định của patient là im-.__"
    },
    {
     "id": "d14H3",
@@ -520,7 +530,8 @@
      "had been stolen the previous day",
      "had been stolen the day before by somebody",
      "had been stolen by somebody the day before"
-    ]
+    ],
+    "explain_vi": "==Somebody stole my bike yesterday==: chủ ngữ mới là his bike → bị động, lùi thì thành **had been stolen**; yesterday → **the day before**. __Lùi thì: quá khứ đơn → quá khứ hoàn thành.__"
    },
    {
     "id": "d14H4",
@@ -533,7 +544,8 @@
      "had enough money, I'd be able to buy a ticket for the concert",
      "had enough money, I would buy a ticket for the concert",
      "had enough money, I'd buy a ticket for the concert"
-    ]
+    ],
+    "explain_vi": "Sự thật hiện tại ==I don't have enough money, so I can't buy== → **điều kiện loại 2**: If I **had enough money, I could buy a ticket for the concert**. __Đổi phủ định thành khẳng định.__"
    },
    {
     "id": "d14H5",
@@ -544,7 +556,8 @@
      "hit",
      "take"
     ],
-    "answer": "B"
+    "answer": "B",
+    "explain_vi": "Kết hợp cố định **strike a balance** (giữ cân bằng) → **B**; dấu hiệu ==between schoolwork and hobbies==. __Học thuộc cả cụm, đừng dịch từng chữ.__"
    },
    {
     "id": "d14H6",
@@ -555,7 +568,8 @@
      "run across",
      "run out of"
     ],
-    "answer": "D"
+    "answer": "D",
+    "explain_vi": "**run out of**: hết, cạn → **D**; dấu hiệu ==we can't make pancakes==. __run into: tình cờ gặp; run over: cán qua.__"
    }
   ]
  },
@@ -676,7 +690,7 @@
        "Noodle soup"
       ],
       "answer": 1,
-      "explain_vi": "Tom nói: \"My class is making spring rolls.\""
+      "explain_vi": "Tom: ==My class is making spring rolls== → **Spring rolls**. __Mango juice là của lớp Mai – bẫy.__"
      },
      {
       "q": "Whose recipe is Tom's class using?",
@@ -687,7 +701,7 @@
        "Mai's"
       ],
       "answer": 2,
-      "explain_vi": "Tom nói: \"We're using my grandmother's recipe.\""
+      "explain_vi": "Tom: ==We're using my grandmother's recipe== → **His grandmother's**."
      },
      {
       "q": "Where will Mai's class buy the mangoes?",
@@ -698,7 +712,7 @@
        "At a market near them"
       ],
       "answer": 3,
-      "explain_vi": "Mai nói: \"we're going to the local market on Friday\" (local = ở gần, địa phương)."
+      "explain_vi": "Mai: ==we're going to the local market on Friday== → **At a market near them** (local: ở gần). __Đáp án thường diễn đạt lại từ trong bài.__"
      },
      {
       "q": "What happened at the festival last year?",
@@ -709,7 +723,7 @@
        "The band didn't come."
       ],
       "answer": 0,
-      "explain_vi": "Tom nói: \"Last year, we had no cups left after only one hour.\""
+      "explain_vi": "Tom: ==Last year, we had no cups left after only one hour== → **They didn't have enough cups.**"
      },
      {
       "q": "Who will get the money from the festival?",
@@ -720,7 +734,7 @@
        "Tom's class"
       ],
       "answer": 2,
-      "explain_vi": "Mai hỏi và Tom xác nhận: tiền \"goes to the children's hospital\"."
+      "explain_vi": "Mai hỏi, Tom xác nhận tiền ==goes to the children's hospital== → **A children's hospital**."
      }
     ]
    },
@@ -733,24 +747,24 @@
      {
       "answer": "Thursday",
       "accept": [],
-      "explain_vi": "\"Next Thursday is our Careers Day\"."
+      "explain_vi": "==Next Thursday is our Careers Day== → **Thursday**. __Wednesday là hạn nộp câu hỏi – đừng nhầm.__"
      },
      {
       "answer": "journalist",
       "accept": [],
-      "explain_vi": "\"a doctor, a chef, a journalist and a scientist\"."
+      "explain_vi": "==a doctor, a chef, a journalist and a scientist== → **journalist**. __Chú ý chính tả journalist.__"
      },
      {
       "answer": "hall",
       "accept": [
        "the hall"
       ],
-      "explain_vi": "\"The talks are in the school hall\"."
+      "explain_vi": "==The talks are in the school hall== → **hall**."
      },
      {
       "answer": "teacher",
       "accept": [],
-      "explain_vi": "\"Give it to your class teacher before Wednesday\"."
+      "explain_vi": "==Give it to your class teacher before Wednesday== → **teacher**."
      },
      {
       "answer": "photos",
@@ -758,7 +772,7 @@
        "photographs",
        "pictures"
       ],
-      "explain_vi": "\"try some skills yourself, like cooking or taking photos\"."
+      "explain_vi": "==like cooking or taking photos== → **photos**. __photographs, pictures cũng được chấp nhận.__"
      }
     ]
    }
@@ -837,7 +851,7 @@
        "To learn how to cook British food"
       ],
       "answer": 0,
-      "explain_vi": "Linh: \"I'm writing an article for our school magazine\"."
+      "explain_vi": "Linh: ==I'm writing an article for our school magazine== → **To write something for the school magazine**."
      },
      {
       "q": "How long has Mr Brown lived in Vietnam?",
@@ -848,7 +862,7 @@
        "Ten years"
       ],
       "answer": 2,
-      "explain_vi": "Ông nói seven rồi sửa: \"I mean nine\". Eight là tuổi của con trai ông."
+      "explain_vi": "Ông nói seven rồi sửa ==I mean nine== → **Nine years**. __Eight là tuổi con trai ông – bẫy số.__"
      },
      {
       "q": "What was Mr Brown's first job in Vietnam?",
@@ -859,7 +873,7 @@
        "An English teacher"
       ],
       "answer": 3,
-      "explain_vi": "\"I first came here to teach English.\" Sau đó ông mới chuyển sang nấu ăn."
+      "explain_vi": "==I first came here to teach English== → **An English teacher**. __Từ first báo hiệu công việc đầu tiên.__"
      },
      {
       "q": "What do customers say about his lemongrass pie?",
@@ -870,7 +884,7 @@
        "It is a traditional British dish."
       ],
       "answer": 1,
-      "explain_vi": "\"Customers say it has a really unusual flavour\" (unusual = lạ, khác thường)."
+      "explain_vi": "==Customers say it has a really unusual flavour== → **It tastes different from other food.** (unusual: lạ, khác thường)"
      },
      {
       "q": "What advice does Mr Brown give to students?",
@@ -881,7 +895,7 @@
        "Read as many recipes as possible."
       ],
       "answer": 2,
-      "explain_vi": "\"Get as much experience as you can... Real skills matter more than certificates.\""
+      "explain_vi": "==Get as much experience as you can== → **Get practical experience in a kitchen.** __Ông nói kỹ năng quan trọng hơn bằng cấp, nên loại phương án certificate.__"
      }
     ]
    },
@@ -896,24 +910,24 @@
       "accept": [
        "two hundred"
       ],
-      "explain_vi": "\"People here have made lanterns for more than 200 years\"."
+      "explain_vi": "==People here have made lanterns for more than 200 years== → **200**."
      },
      {
       "answer": "paper",
       "accept": [],
-      "explain_vi": "\"They're made from bamboo and coloured paper\"."
+      "explain_vi": "==They're made from bamboo and coloured paper== → **paper**."
      },
      {
       "answer": "lake",
       "accept": [
        "the lake"
       ],
-      "explain_vi": "Nhà hàng bên sông đóng cửa, \"we'll eat at the one by the lake instead\"."
+      "explain_vi": "Nhà hàng bên sông đóng cửa, ==we'll eat at the one by the lake instead== → **lake**. __Cẩn thận chỗ người nói sửa lại: river là bẫy.__"
      },
      {
       "answer": "music",
       "accept": [],
-      "explain_vi": "\"a short performance of traditional music\"."
+      "explain_vi": "==a short performance of traditional music== → **music**."
      },
      {
       "answer": "30,000",
@@ -922,7 +936,7 @@
        "30 000",
        "thirty thousand"
       ],
-      "explain_vi": "\"the small ones cost 30,000 dong each\"."
+      "explain_vi": "==the small ones cost 30,000 dong each== → **30,000**."
      }
     ]
    }
@@ -1005,7 +1019,7 @@
        "His parents don't want him to do it."
       ],
       "answer": 2,
-      "explain_vi": "Nam: \"there's a catch. It's unpaid, whereas my uncle would pay me quite well.\""
+      "explain_vi": "Nam: ==It's unpaid, whereas my uncle would pay me quite well== → **He won't earn any money from it.** __unpaid: không được trả lương.__"
      },
      {
       "q": "Why does Linh believe Nam's uncle will accept his decision?",
@@ -1016,7 +1030,7 @@
        "He wants Nam to go to university."
       ],
       "answer": 0,
-      "explain_vi": "Linh: \"He's always been so generous and understanding\". Nam lại nói chú luôn thiếu người vào hè."
+      "explain_vi": "Linh: ==He's always been so generous and understanding== → **He is a kind and understanding person.** __Chuyện chú thiếu người vào hè là điều Nam lo, không phải đáp án.__"
      },
      {
       "q": "What will Nam's work at the newspaper involve?",
@@ -1027,7 +1041,7 @@
        "Checking if online stories can be trusted"
       ],
       "answer": 3,
-      "explain_vi": "Biên tập viên nói Nam sẽ \"checking whether stories people share online are reliable\" (reliable = đáng tin)."
+      "explain_vi": "Nam: ==I'd be checking whether stories people share online are reliable== → **Checking if online stories can be trusted** (reliable: đáng tin)."
      },
      {
       "q": "What does Linh's story about her brother show?",
@@ -1038,7 +1052,7 @@
        "Adverts on social media are usually reliable."
       ],
       "answer": 1,
-      "explain_vi": "Câu chuyện minh hoạ ý của Nam: nhiều bạn trẻ \"believe everything they come across on social media\"."
+      "explain_vi": "Chuyện em trai minh hoạ ý ==lots of teenagers believe everything they come across on social media== → **Young people often trust things online too easily.**"
      },
      {
       "q": "What is Nam most likely to do this summer?",
@@ -1049,7 +1063,7 @@
        "Look for a better-paid job"
       ],
       "answer": 2,
-      "explain_vi": "Nam định học ở báo buổi sáng và \"suggest working in the evenings\" ở nhà hàng."
+      "explain_vi": "Nam học ở báo ba buổi sáng và sẽ ==suggest working in the evenings instead== → **Do both, at different times of day**. __Câu hỏi most likely: nghe quyết định cuối cùng.__"
      }
     ]
    },
@@ -1064,14 +1078,14 @@
       "accept": [
        "recipe"
       ],
-      "explain_vi": "\"she was worried that the old family recipes would be forgotten\"."
+      "explain_vi": "==she was worried that the old family recipes would be forgotten== → **recipes**."
      },
      {
       "answer": "seeds",
       "accept": [
        "seed"
       ],
-      "explain_vi": "\"how to make sweet soup with lotus seeds\"."
+      "explain_vi": "==how to make sweet soup with lotus seeds== → **seeds**."
      },
      {
       "answer": "80,000",
@@ -1080,19 +1094,19 @@
        "80 000",
        "eighty thousand"
       ],
-      "explain_vi": "50 là số người xem video đầu; hiện kênh có \"more than 80,000 followers\"."
+      "explain_vi": "50 là số người xem video đầu; ==her channel has more than 80,000 followers== → **80,000**. __Nghe kỹ từ khoá followers trong ghi chú.__"
      },
      {
       "answer": "honesty",
       "accept": [],
-      "explain_vi": "\"Mai believes the secret of her success is honesty.\""
+      "explain_vi": "==Mai believes the secret of her success is honesty== → **honesty**. __Ghi danh từ, không ghi tính từ honest.__"
      },
      {
       "answer": "farmers",
       "accept": [
        "farmer"
       ],
-      "explain_vi": "\"Mai now works with local farmers, who supply the fresh ingredients\"."
+      "explain_vi": "==Mai now works with local farmers, who supply the fresh ingredients== → **farmers**."
      }
     ]
    }

@@ -163,37 +163,43 @@
      "id": "d13A1",
      "q": "We went to an ______ of old photographs of Hà Nội at the city museum.",
      "answer": "exhibition",
-     "tag": "d13v2"
+     "tag": "d13v2",
+     "explain_vi": "Sau ==an== và trước ==of old photographs== cần danh từ → **exhibition** (triển lãm). __Mẹo: 'an' báo hiệu từ sau bắt đầu bằng nguyên âm.__"
     },
     {
      "id": "d13A2",
      "q": "Mozart ______ his first piece of music when he was only five years old.",
      "answer": "composed",
-     "tag": "d13v5"
+     "tag": "d13v5",
+     "explain_vi": "==his first piece of music== → soạn nhạc: **composed** (compose: sáng tác). __Gặp music, song, piece thì nghĩ tới compose.__"
     },
     {
      "id": "d13A3",
      "q": "My cousin is a very ______ dancer; she has won many competitions.",
      "answer": "talented",
-     "tag": "d13v3"
+     "tag": "d13v3",
+     "explain_vi": "Giữa ==a very== và ==dancer== cần **tính từ**; đã thắng nhiều giải → **talented** (tài năng)."
     },
     {
      "id": "d13A4",
      "q": "The actors have to ______ every evening this week before the big show on Saturday.",
      "answer": "rehearse",
-     "tag": "d13v7"
+     "tag": "d13v7",
+     "explain_vi": "Sau ==have to== cần động từ nguyên mẫu; tập ==every evening this week before the big show== → **rehearse** (tập dượt). __Sau to/have to chọn từ ở dạng nguyên mẫu.__"
     },
     {
      "id": "d13A5",
      "q": "The students gave a wonderful ______ of a traditional folk song.",
      "answer": "performance",
-     "tag": "d13v1"
+     "tag": "d13v1",
+     "explain_vi": "Sau ==a wonderful== cần **danh từ**; ==of a traditional folk song== → **performance** (phần trình diễn)."
     },
     {
      "id": "d13A6",
      "q": "Many tourists stop to ______ the beautiful paintings on the walls of the old temple.",
      "answer": "admire",
-     "tag": "d13v6"
+     "tag": "d13v6",
+     "explain_vi": "Sau ==stop to== cần động từ nguyên mẫu; khách dừng lại ngắm tranh → **admire** (chiêm ngưỡng). __Loại inspired, composed vì không ở dạng nguyên mẫu.__"
     }
    ]
   },
@@ -204,37 +210,43 @@
      "id": "d13B1",
      "q": "My sister enjoys ______ (draw) cartoons in her free time.",
      "answer": "drawing",
-     "tag": "d13g"
+     "tag": "d13g",
+     "explain_vi": "==enjoys== + **V-ing** → **drawing**. __Mẹo: enjoy, like, love + V-ing khi nói về sở thích.__"
     },
     {
      "id": "d13B2",
      "q": "Our class has decided ______ (put) on a play at the end of the school year.",
      "answer": "to put",
-     "tag": "d13g"
+     "tag": "d13g",
+     "explain_vi": "==decided== + **to V** → **to put** (put on a play: dựng một vở kịch). __decide, hope, plan, promise + to V.__"
     },
     {
      "id": "d13B3",
      "q": "Please remember ______ (bring) your costume to the rehearsal tomorrow.",
      "answer": "to bring",
-     "tag": "d13g"
+     "tag": "d13g",
+     "explain_vi": "Có ==tomorrow==: việc chưa làm, phải nhớ để làm → **remember to V: to bring**. __Hỏi: việc đó xảy ra chưa? Chưa thì dùng to V.__"
     },
     {
      "id": "d13B4",
      "q": "Tom stopped ______ (play) the piano because his fingers were tired.",
      "answer": "playing",
-     "tag": "d13g"
+     "tag": "d13g",
+     "explain_vi": "==because his fingers were tired==: Tom thôi không chơi nữa → **stop V-ing** (ngừng việc đang làm): **playing**. __stop to V là dừng lại để làm việc khác.__"
     },
     {
      "id": "d13B5",
      "q": "On the way to the theatre, we stopped ______ (buy) some flowers for the singer.",
      "answer": "to buy",
-     "tag": "d13g"
+     "tag": "d13g",
+     "explain_vi": "==On the way to the theatre==: đang đi thì dừng lại để mua hoa → **stop to V** → **to buy**. __Mẹo: 'dừng lại ĐỂ…' thì dùng to V.__"
     },
     {
      "id": "d13B6",
      "q": "I remember ______ (see) this cartoon when I was five; it was my favourite.",
      "answer": "seeing",
-     "tag": "d13g"
+     "tag": "d13g",
+     "explain_vi": "==when I was five==: việc đã xảy ra, giờ nhớ lại → **remember V-ing** → **seeing**. __Việc đã làm rồi → V-ing; việc chưa làm → to V.__"
     }
    ]
   },
@@ -245,25 +257,29 @@
      "id": "d13C1",
      "q": "It gives me great ______ to welcome you all to our school concert. (PLEASE)",
      "answer": "pleasure",
-     "tag": "d13w"
+     "tag": "d13w",
+     "explain_vi": "Sau ==great== cần **danh từ**: please + -ure → **pleasure** (niềm vui). __Nhớ bỏ e cuối: please → pleasure.__"
     },
     {
      "id": "d13C2",
      "q": "Our first show was a complete ______; only five people came to watch it. (FAIL)",
      "answer": "failure",
-     "tag": "d13w"
+     "tag": "d13w",
+     "explain_vi": "Sau ==a complete== cần **danh từ**: fail + -ure → **failure** (thất bại). Dấu hiệu ==only five people came to watch it==."
     },
     {
      "id": "d13C3",
      "q": "The famous singer's surprise ______ on stage made the audience scream with joy. (APPEAR)",
      "answer": "appearance",
-     "tag": "d13w"
+     "tag": "d13w",
+     "explain_vi": "==The famous singer's surprise== là chủ ngữ của ==made==, nên cần **danh từ**: appear + -ance → **appearance** (sự xuất hiện). __Tìm động từ chính để biết chỗ trống thuộc chủ ngữ.__"
     },
     {
      "id": "d13C4",
      "q": "The theatre needs more ______ space for its old costumes. (STORE)",
      "answer": "storage",
-     "tag": "d13w"
+     "tag": "d13w",
+     "explain_vi": "Chỗ trống đứng trước danh từ ==space== tạo danh từ ghép: store + -age → **storage** (lưu trữ). __Bỏ e cuối của store trước khi thêm -age.__"
     }
    ]
   },
@@ -282,7 +298,8 @@
       "gets over"
      ],
      "answer": "B",
-     "tag": "fmt:cloze"
+     "tag": "fmt:cloze",
+     "explain_vi": "**B. puts on**: tổ chức một buổi biểu diễn, hợp với ==a talent show==. __takes off (cất cánh), turns down (từ chối), gets over (vượt qua) không hợp nghĩa.__"
     },
     {
      "id": "d13D2",
@@ -294,7 +311,8 @@
       "part"
      ],
      "answer": "D",
-     "tag": "fmt:cloze"
+     "tag": "fmt:cloze",
+     "explain_vi": "Cụm cố định **take part (in)**: tham gia → **D. part**. Dấu hiệu ==must sign up== (đăng ký). __take place là 'diễn ra', dễ nhầm.__"
     },
     {
      "id": "d13D3",
@@ -306,7 +324,8 @@
       "performed"
      ],
      "answer": "A",
-     "tag": "fmt:cloze"
+     "tag": "fmt:cloze",
+     "explain_vi": "==decided== + **to V** → **A. to perform**. __Thấy decide, nghĩ ngay tới to V.__"
     },
     {
      "id": "d13D4",
@@ -318,7 +337,8 @@
       "sang"
      ],
      "answer": "C",
-     "tag": "fmt:cloze"
+     "tag": "fmt:cloze",
+     "explain_vi": "==practised== + **V-ing** → **C. singing**. __practise, enjoy, avoid, finish + V-ing.__"
     }
    ]
   },
@@ -333,14 +353,16 @@
      "kind": "tfng",
      "q": "Quân wrote the music for the show.",
      "answer": "True",
-     "tag": "d13r"
+     "tag": "d13r",
+     "explain_vi": "Bài viết: ==Quân, a talented pianist, composed the music himself== → composed nghĩa là sáng tác, tức là viết nhạc → **True**. __Đề hay đổi từ: composed thành wrote.__"
     },
     {
      "id": "d13E2",
      "kind": "tfng",
      "q": "The class rehearsed every day for six weeks.",
      "answer": "False",
-     "tag": "d13r"
+     "tag": "d13r",
+     "explain_vi": "Bài viết: ==the class rehearsed every Friday afternoon== – chỉ chiều thứ Sáu, không phải mọi ngày → **False**. __Từ chỉ tần suất (every day, every Friday) hay là bẫy.__"
     },
     {
      "id": "d13E3",
@@ -353,7 +375,8 @@
       "The puppets kept falling apart."
      ],
      "answer": "D",
-     "tag": "d13r"
+     "tag": "d13r",
+     "explain_vi": "Bài viết: ==At first, things went badly: the puppets kept falling apart== → **D. The puppets kept falling apart.** __Từ 'at first' trong câu hỏi giúp em tìm đúng câu.__"
     },
     {
      "id": "d13E4",
@@ -366,7 +389,8 @@
       "The parents will make new puppets."
      ],
      "answer": "A",
-     "tag": "d13r"
+     "tag": "d13r",
+     "explain_vi": "Bài viết: ==invited the class to show their puppets in an exhibition next month==, người mời làm ở bảo tàng → **A**. __Tìm cụm 'next month' trong bài để định vị nhanh.__"
     }
    ]
   },
@@ -390,28 +414,32 @@
      "q": "Last month, our class c______ out a survey about how much time students spend on their phones.",
      "answer": "carried",
      "from_day": 12,
-     "tag": "d12p1"
+     "tag": "d12p1",
+     "explain_vi": "**carry out a survey**: tiến hành khảo sát; có ==Last month== → quá khứ → **carried**. __Đổi y thành i rồi thêm -ed: carry → carried.__"
     },
     {
      "id": "d13G2",
      "q": "'I am hungry,' said Bình. → Bình said that he ______ hungry.",
      "answer": "was",
      "from_day": 12,
-     "tag": "d12g"
+     "tag": "d12g",
+     "explain_vi": "Câu tường thuật lùi thì: ==I am hungry== → **he was hungry**. __Mẹo: am/is → was, are → were.__"
     },
     {
      "id": "d13G3",
      "q": "The new shopping centre will e______ about two hundred people from our town.",
      "answer": "employ",
      "from_day": 10,
-     "tag": "d10v3"
+     "tag": "d10v3",
+     "explain_vi": "Sau ==will== cần **động từ nguyên mẫu**: **employ** (tuyển, thuê người làm). Dấu hiệu ==two hundred people from our town==."
     },
     {
      "id": "d13G4",
      "q": "The train to Lào Cai was d______ by forty minutes because of a landslide.",
      "answer": "delayed",
      "from_day": 6,
-     "tag": "d6v5"
+     "tag": "d6v5",
+     "explain_vi": "==by forty minutes because of a landslide== → tàu bị trễ: bị động **was delayed**, điền **delayed**. __be delayed by + thời gian: bị trễ bao lâu.__"
     }
    ]
   }
@@ -429,7 +457,7 @@
     "ambition"
    ],
    "answer": 1,
-   "explain_vi": "'imagination' = trí tưởng tượng – khả năng nghĩ ra những điều không có thật.",
+   "explain_vi": "Vế sau ==she creates magical worlds with dragons and talking trees== nói về óc sáng tạo → **imagination** (trí tưởng tượng). __Mẹo: vế sau dấu chấm phẩy thường giải thích cho chỗ trống.__",
    "tag": "d13v4"
   },
   {
@@ -439,7 +467,7 @@
    "q": "Our school is going to put ______ a concert to raise money for the library.",
    "answer": "on",
    "accept": [],
-   "explain_vi": "'put on a concert/show/play' = tổ chức, dàn dựng một buổi biểu diễn.",
+   "explain_vi": "**put on a concert/show/play**: tổ chức, dàn dựng một buổi biểu diễn → điền **on**. Dấu hiệu: ==a concert== đứng ngay sau. __Học cả cụm put on + sự kiện.__",
    "tag": "d13p1"
   },
   {
@@ -454,7 +482,7 @@
     "inspired"
    ],
    "answer": 3,
-   "explain_vi": "'inspire sb to do sth' = truyền cảm hứng cho ai làm gì.",
+   "explain_vi": "Cấu trúc **inspire sb to do sth** (truyền cảm hứng cho ai làm gì): ==her to become an artist== → **inspired**. __admired, composed không đi với 'sb to do'.__",
    "tag": "d13v8"
   },
   {
@@ -469,7 +497,7 @@
     "closed"
    ],
    "answer": 2,
-   "explain_vi": "'mind' luôn đi với V-ing: Would you mind closing...?",
+   "explain_vi": "==Would you mind== luôn đi với **V-ing** → **closing**. __Mẹo: mind, enjoy, avoid, finish + V-ing.__",
    "tag": "d13g"
   },
   {
@@ -484,7 +512,7 @@
     "switched off"
    ],
    "answer": 0,
-   "explain_vi": "'remember to do' = nhớ phải làm (việc chưa làm, trong tương lai).",
+   "explain_vi": "==remember== + **to V**: nhớ phải làm việc chưa làm → **to switch off**. Dấu hiệu ==when you leave== là việc sắp tới. __remember V-ing là nhớ lại việc đã làm.__",
    "tag": "d13g"
   },
   {
@@ -494,7 +522,7 @@
    "q": "Lan hopes ______ (become) a famous singer one day.",
    "answer": "to become",
    "accept": [],
-   "explain_vi": "'hope' đi với to V: hope to become.",
+   "explain_vi": "==hope== đi với **to V** → **to become**. __Mẹo: động từ chỉ mong muốn, dự định (hope, want, decide, plan) thường + to V.__",
    "tag": "d13g"
   },
   {
@@ -509,7 +537,7 @@
     "mixing"
    ],
    "answer": 2,
-   "explain_vi": "Sau 'a' và trước 'of' cần danh từ chỉ hỗn hợp: mix + -ure → mixture. ('mixer' là máy trộn.)",
+   "explain_vi": "Sau ==a== và trước ==of== cần **danh từ**: mix + -ure → **mixture** (hỗn hợp). __'mixer' là máy trộn, không hợp nghĩa màu sắc.__",
    "tag": "d13w"
   },
   {
@@ -519,7 +547,7 @@
    "q": "After the concert, the pianist wrote her ______ on my programme. (SIGN)",
    "answer": "signature",
    "accept": [],
-   "explain_vi": "Sau tính từ sở hữu 'her' cần danh từ: sign + -ature → signature (chữ ký).",
+   "explain_vi": "Sau tính từ sở hữu ==her== cần **danh từ**: sign + -ature → **signature** (chữ ký). __Nhìn từ đứng trước chỗ trống để đoán từ loại.__",
    "tag": "d13w"
   },
   {
@@ -534,7 +562,7 @@
     "ended"
    ],
    "answer": 1,
-   "explain_vi": "Cấu trúc 'want sb/sth to do sth' → wanted it to end.",
+   "explain_vi": "Cấu trúc **want sb/sth to do sth** → ==wanted it== **to end**. __Mẹo: want + tân ngữ + to V, không dùng V-ing.__",
    "tag": "fmt:cloze"
   },
   {
@@ -550,7 +578,7 @@
     "experiment"
    ],
    "answer": 1,
-   "explain_vi": "'evidence' = bằng chứng. Các nhà khoa học đang tìm bằng chứng cho thấy có sự sống.",
+   "explain_vi": "Tìm thứ chứng minh ==that there is life on other planets== → **evidence** (bằng chứng). __theory là giả thuyết, experiment là thí nghiệm – không hợp nghĩa.__",
    "tag": "d12v5"
   },
   {
@@ -566,7 +594,7 @@
     "was"
    ],
    "answer": 0,
-   "explain_vi": "Vế If dùng quá khứ đơn (won) → câu điều kiện loại 2: would + V nguyên mẫu.",
+   "explain_vi": "Vế If dùng quá khứ đơn ==won== → **câu điều kiện loại 2: would + V** → **would be**. __Mẹo: If + quá khứ đơn thì vế kia có would.__",
    "tag": "d10g"
   },
   {
@@ -577,7 +605,7 @@
    "q": "There were so many tourists that the beach was very c______.",
    "answer": "crowded",
    "accept": [],
-   "explain_vi": "'crowded' = đông đúc, chật kín người.",
+   "explain_vi": "==so many tourists== → bãi biển **crowded** (đông đúc, chật kín người). __Cấu trúc so … that: vế sau là kết quả của vế trước.__",
    "tag": "d6v3"
   }
  ],

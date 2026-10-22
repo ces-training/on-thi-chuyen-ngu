@@ -12,7 +12,8 @@
       "practise",
       "can't stand",
       "be interested in"
-     ]
+     ],
+     "rule_vi": "==enjoy, avoid, practise, can't stand== luôn đi với **V-ing**; ==be interested in== có giới từ in nên cũng **+ V-ing**. __Mẹo: sau giới từ luôn dùng V-ing.__"
     },
     {
      "name": "+ to V",
@@ -22,30 +23,36 @@
       "refuse",
       "manage",
       "promise"
-     ]
+     ],
+     "rule_vi": "==decide, hope, refuse, manage, promise== đều đi với **to V** (decide to join, promise to help). __Mẹo: động từ chỉ dự định, mong muốn, lời hứa thường + to V.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "My little brother enjoys drawing cartoon characters after school.",
-    "hint_vi": "enjoy + V-ing"
+    "hint_vi": "enjoy + V-ing",
+    "why_vi": "Chủ ngữ ==My little brother== + ==enjoys== + **V-ing (drawing)** + tân ngữ + thời gian ở cuối. __enjoy + V-ing.__"
    },
    {
     "sentence": "We hope to visit the art exhibition this weekend.",
-    "hint_vi": "hope + to V"
+    "hint_vi": "hope + to V",
+    "why_vi": "==We hope== + **to V (to visit)** + tân ngữ ==the art exhibition==, thời gian ==this weekend== ở cuối câu. __Trạng từ thời gian thường đứng cuối.__"
    },
    {
     "sentence": "She is really good at playing the đàn tranh.",
-    "hint_vi": "Sau giới từ (at) dùng V-ing"
+    "hint_vi": "Sau giới từ (at) dùng V-ing",
+    "why_vi": "Cấu trúc **be good at + V-ing**: ==is really good at playing==; really đứng trước tính từ good. __Sau giới từ at dùng V-ing.__"
    },
    {
     "sentence": "We stopped to take photos of the colourful lanterns.",
-    "hint_vi": "stop + to V = dừng lại để làm việc khác"
+    "hint_vi": "stop + to V = dừng lại để làm việc khác",
+    "why_vi": "**stop + to V** (dừng lại để làm việc khác): ==stopped to take photos of== + danh từ. __Tính từ colourful đứng trước danh từ lanterns.__"
    },
    {
     "sentence": "My parents agreed to take me to the concert.",
-    "hint_vi": "agree + to V"
+    "hint_vi": "agree + to V",
+    "why_vi": "Chủ ngữ ==My parents== + **agreed to + V**: agreed to take me to the concert. __take sb to + nơi chốn: đưa ai đến đâu.__"
    }
   ],
   "truefalse": [
@@ -53,49 +60,49 @@
     "s": "I enjoy to paint landscapes in my free time.",
     "ok": false,
     "fix": "I enjoy painting landscapes in my free time.",
-    "why_vi": "enjoy luôn đi với V-ing: enjoy painting."
+    "why_vi": "**Sai**: ==enjoy to paint== phải là **enjoy painting**. __enjoy luôn + V-ing.__"
    },
    {
     "s": "Linh has decided to enter the poetry competition.",
     "ok": true,
     "fix": "Linh has decided to enter the poetry competition.",
-    "why_vi": "decide + to V: decided to enter. Câu đúng."
+    "why_vi": "**Đúng**: ==decided to enter==, decide + to V. __Nhớ: decide, hope, plan + to V.__"
    },
    {
     "s": "We are looking forward to see the new musical.",
     "ok": false,
     "fix": "We are looking forward to seeing the new musical.",
-    "why_vi": "'to' trong look forward to là giới từ, nên sau nó dùng V-ing."
+    "why_vi": "**Sai**: 'to' trong ==look forward to== là giới từ → **looking forward to seeing**. __Đừng nhầm giới từ to với to V.__"
    },
    {
     "s": "Would you mind turning the music down a little?",
     "ok": true,
     "fix": "Would you mind turning the music down a little?",
-    "why_vi": "mind + V-ing: Would you mind turning…? Câu đúng."
+    "why_vi": "**Đúng**: ==Would you mind turning==, mind + V-ing."
    },
    {
     "s": "The band refused playing without their drummer.",
     "ok": false,
     "fix": "The band refused to play without their drummer.",
-    "why_vi": "refuse + to V: refused to play."
+    "why_vi": "**Sai**: ==refused playing== phải là **refused to play** (refuse + to V). __refuse, agree, promise + to V.__"
    },
    {
     "s": "Mai stopped to admire a painting near the door.",
     "ok": true,
     "fix": "Mai stopped to admire a painting near the door.",
-    "why_vi": "stop to do = dừng lại ĐỂ làm việc khác (ngắm bức tranh). Câu đúng."
+    "why_vi": "**Đúng**: ==stopped to admire== – dừng lại ĐỂ ngắm bức tranh (stop + to V). __stop V-ing là thôi không làm nữa.__"
    },
    {
     "s": "Remember locking the door before you go to the concert.",
     "ok": false,
     "fix": "Remember to lock the door before you go to the concert.",
-    "why_vi": "Việc chưa làm, phải nhớ để làm → remember to do."
+    "why_vi": "**Sai**: việc chưa làm, cần nhớ để làm → **Remember to lock**, không dùng ==Remember locking==. __remember V-ing là nhớ việc đã làm.__"
    },
    {
     "s": "My sister is interested in designing costumes for the theatre.",
     "ok": true,
     "fix": "My sister is interested in designing costumes for the theatre.",
-    "why_vi": "Sau giới từ in dùng V-ing: interested in designing. Câu đúng."
+    "why_vi": "**Đúng**: sau giới từ ==interested in== dùng **V-ing** → designing. __Sau giới từ luôn là V-ing.__"
    }
   ]
  },
@@ -116,7 +123,7 @@
       "listened"
      ],
      "answer": 2,
-     "explain_vi": "enjoy + V-ing → enjoyed listening."
+     "explain_vi": "==enjoyed== + **V-ing** → **listening** (listen to music). __enjoy luôn đi với V-ing.__"
     },
     {
      "options": [
@@ -126,7 +133,7 @@
       "played"
      ],
      "answer": 1,
-     "explain_vi": "manage + to V (xoay xở làm được) → managed to play."
+     "explain_vi": "==managed== + **to V** (xoay xở làm được) → **to play**. __manage, decide, hope + to V.__"
     },
     {
      "options": [
@@ -136,7 +143,7 @@
       "inspired"
      ],
      "answer": 1,
-     "explain_vi": "'a piece of her own' = bản nhạc của chính Hân → cô ấy đã sáng tác (composed) nó."
+     "explain_vi": "==a piece of her own== là bản nhạc của chính Hân → cô ấy đã sáng tác: **composed**. __exhibited, admired, inspired không mang nghĩa 'viết ra'.__"
     },
     {
      "options": [
@@ -146,7 +153,7 @@
       "put on"
      ],
      "answer": 3,
-     "explain_vi": "put on a concert = tổ chức một buổi hoà nhạc. 'took part' phải có 'in' mới đúng."
+     "explain_vi": "**put on a concert**: tổ chức buổi hoà nhạc; ==to raise money for poor children== cho thấy CLB là bên tổ chức. __took part sai vì phải có 'in'.__"
     },
     {
      "options": [
@@ -156,7 +163,7 @@
       "performed"
      ],
      "answer": 0,
-     "explain_vi": "'to' trong look forward to là giới từ → sau nó dùng V-ing: performing."
+     "explain_vi": "==looking forward to==: 'to' là giới từ → sau nó dùng **V-ing**: **performing**. __Đừng nhầm 'to' này với to V.__"
     }
    ]
   },
@@ -174,7 +181,7 @@
     "A: Great! We're going to rehearse every Thursday after school. Can you come this week?",
     "B: Sure. I'll remember to bring my guitar. See you on Thursday!"
    ],
-   "explain_vi": "B từ chối diễn và hỏi việc khác → A đề nghị sáng tác nhạc, hỏi 'You play the guitar, don't you?' → B 'Yes, I do' → A hẹn lịch tập → B nhận lời."
+   "explain_vi": "B ngại diễn, hỏi việc khác → A nhờ sáng tác và hỏi ==You play the guitar, don't you?== → B ==Yes, I do== → A **hẹn tập thứ Năm** → B **nhận lời, nhớ mang đàn**. __Mẹo: tìm cặp câu hỏi đuôi – câu trả lời trước.__"
   }
  ],
  "exam_easy": [
@@ -194,7 +201,7 @@
       "draws"
      ],
      "answer": 0,
-     "explain_vi": "Sau 'enjoy' luôn dùng V-ing: enjoy drawing (thích vẽ)."
+     "explain_vi": "Sau ==enjoy== luôn dùng **V-ing** → **drawing** (thích vẽ). __Nhìn từ ngay trước chỗ trống để chọn dạng.__"
     },
     {
      "options": [
@@ -204,7 +211,7 @@
       "bored"
      ],
      "answer": 1,
-     "explain_vi": "Câu sau nói thầy vẽ một con ngựa đẹp chỉ trong hai phút → thầy rất tài năng (talented)."
+     "explain_vi": "Câu sau: ==He can draw a beautiful horse in only two minutes!== → thầy rất **talented** (tài năng). __Đọc câu tiếp theo để tìm lý do.__"
     },
     {
      "options": [
@@ -214,7 +221,7 @@
       "sat down"
      ],
      "answer": 2,
-     "explain_vi": "put on an exhibition = tổ chức một cuộc triển lãm. Các cụm khác: thức dậy, tắt, ngồi xuống – không hợp nghĩa."
+     "explain_vi": "**put on an exhibition**: tổ chức triển lãm; dấu hiệu ==an exhibition at the town library==. __got up, turned off, sat down không đi với 'exhibition'.__"
     },
     {
      "options": [
@@ -224,7 +231,7 @@
       "admire"
      ],
      "answer": 3,
-     "explain_vi": "stopped to admire = dừng lại để ngắm nhìn (stop + to V: dừng lại để làm việc khác). Khách xem tranh, không nấu, giặt hay bán."
+     "explain_vi": "==stopped to== + động từ nguyên mẫu; khách dừng lại để ngắm tranh → **admire**. __cook, wash, sell không hợp với 'our pictures'.__"
     },
     {
      "options": [
@@ -234,7 +241,7 @@
       "took"
      ],
      "answer": 1,
-     "explain_vi": "Sau 'want' dùng to V: want to take part in = muốn tham gia."
+     "explain_vi": "Sau ==want== dùng **to V** → **to take** part in (muốn tham gia). __want + to V, không dùng V-ing.__"
     }
    ]
   },
@@ -252,7 +259,7 @@
     "A: At seven o'clock. Let's meet at the school gate at half past six.",
     "B: OK. See you there!"
    ],
-   "explain_vi": "Hỏi có rảnh không → 'Yes, I am. Why?' → nói lý do, mời đi xem → nhận lời, hỏi giờ → nói giờ, hẹn chỗ gặp → chào."
+   "explain_vi": "==Are you free on Saturday evening?== → ==Yes, I am. Why?== → A mời đi xem → B hỏi ==What time does it start?== → A ==At seven o'clock== → B **OK. See you there!** __Mẹo: câu hỏi nào thì tìm câu trả lời ngay sau.__"
   }
  ],
  "exam_plus": [
@@ -272,7 +279,7 @@
       "took after"
      ],
      "answer": 2,
-     "explain_vi": "take up = bắt đầu học/chơi (sở thích, nhạc cụ). take on = nhận việc; take over = tiếp quản; take after = giống (người thân)."
+     "explain_vi": "**take up**: bắt đầu học/chơi (nhạc cụ, sở thích) → ==the cello at the age of eleven==. __take on: nhận việc; take over: tiếp quản; take after: giống người thân.__"
     },
     {
      "options": [
@@ -282,7 +289,7 @@
       "applied"
      ],
      "answer": 1,
-     "explain_vi": "compete in a competition = thi đấu trong cuộc thi. entered/attended không cần 'in' (entered a competition); apply phải đi với 'for'."
+     "explain_vi": "Sau chỗ trống có ==in a national competition== → **competed** (compete in). __entered, attended không cần 'in'; applied đi với 'for'.__"
     },
     {
      "options": [
@@ -292,7 +299,7 @@
       "shaken"
      ],
      "answer": 0,
-     "explain_vi": "stop sb/sth (from) doing = ngăn ai/cái gì làm gì: couldn't stop her hands shaking = không ngăn được tay mình run."
+     "explain_vi": "**stop sb/sth (from) doing**: ngăn ai/cái gì làm gì → ==couldn't stop her hands== **shaking** (không giữ được tay khỏi run). __Khác với stop to V (dừng lại để làm việc khác).__"
     },
     {
      "options": [
@@ -302,7 +309,7 @@
       "ovation"
      ],
      "answer": 3,
-     "explain_vi": "Kết hợp cố định: a standing ovation = khán giả đứng dậy vỗ tay. Không nói 'standing applause/praise'."
+     "explain_vi": "Kết hợp cố định **a standing ovation**: khán giả đứng dậy vỗ tay; ==lasted almost two minutes==. __Không nói 'standing applause/praise' – học thuộc cả cụm.__"
     },
     {
      "options": [
@@ -312,7 +319,7 @@
       "stood"
      ],
      "answer": 1,
-     "explain_vi": "Việc đứng trên sân khấu đã xảy ra rồi → forget doing (quên việc đã làm). forget to do = quên việc phải làm."
+     "explain_vi": "==will never forget== việc đứng trên sân khấu lần đầu – việc đã xảy ra → **forget V-ing** → **standing**. __forget to V là quên việc phải làm.__"
     }
    ]
   },
@@ -330,7 +337,7 @@
     "A: Not at all – student tickets are only 80,000 đồng. But apparently they're selling out fast.",
     "B: Then we'd better not wait. Remind me to book two seats when I get home tonight."
    ],
-   "explain_vi": "'I did' đáp 'Did you know' → 'That's exactly why' nối 'hard to follow' → 'Not at all' đáp câu hỏi giá vé → 'Then…' nối 'selling out fast'."
+   "explain_vi": "==I did== đáp ==Did you know== → ==That's exactly why== nối ý 'hard to follow' → ==Not at all== đáp câu hỏi giá vé → ==Then we'd better not wait== nối 'selling out fast'. **Thứ tự: hỏi – đáp – lý do – giá vé – đặt vé.** __Mẹo: lần theo từ quy chiếu That, Then.__"
   }
  ],
  "paper_plus": {
@@ -341,13 +348,15 @@
     "id": "d13H1",
     "q": "The concert was cancelled after the sudden ______ of the lead singer, who was found two days later at his parents' house. (APPEAR)",
     "answer": "disappearance",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Sau ==the sudden== cần **danh từ**; ca sĩ được tìm thấy ==two days later== → biến mất: dis + appear + -ance → **disappearance**. __Đọc hết câu để biết có cần tiền tố phủ định.__"
    },
    {
     "id": "d13H2",
     "q": "The stage design was rather ______; the director had simply copied it from an old production. (IMAGINE)",
     "answer": "unimaginative",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Sau ==rather== cần **tính từ**; ==the director had simply copied it== → thiếu sáng tạo: un + imagine + -ative → **unimaginative**. __Bỏ e của imagine trước -ative.__"
    },
    {
     "id": "d13H3",
@@ -357,7 +366,8 @@
      "having told Hoa the ending of the film",
      "telling her the ending of the film",
      "having told her the ending of the film"
-    ]
+    ],
+    "explain_vi": "Đã kể rồi và tiếc ==I wish I hadn't== → **regret V-ing**: I regret **telling Hoa the ending of the film**. __regret to V là 'rất tiếc phải báo', khác nghĩa.__"
    },
    {
     "id": "d13H4",
@@ -373,7 +383,8 @@
      "they put on a play for Teachers' Day",
      "they should put on a play for Teachers' Day",
      "putting a play on for Teachers' Day"
-    ]
+    ],
+    "explain_vi": "==Why don't we…?== là lời gợi ý → **suggest + V-ing**: Minh suggested **putting on a play for Teachers' Day**. __Không viết 'suggested to put'.__"
    },
    {
     "id": "d13H5",
@@ -384,7 +395,8 @@
      "put up with",
      "catch up with"
     ],
-    "answer": "A"
+    "answer": "A",
+    "explain_vi": "**A. live up to**: đáp ứng được (kỳ vọng), dấu hiệu ==high expectations==. __come up with: nghĩ ra; put up with: chịu đựng; catch up with: đuổi kịp.__"
    },
    {
     "id": "d13H6",
@@ -395,7 +407,8 @@
      "butterflies",
      "frogs"
     ],
-    "answer": "C"
+    "answer": "C",
+    "explain_vi": "Thành ngữ **have butterflies in one's stomach**: bồn chồn, hồi hộp → **C**. Dấu hiệu ==so nervous==. __Học thành ngữ theo cả cụm.__"
    }
   ]
  },
@@ -514,7 +527,7 @@
        "Dance with his friends"
       ],
       "answer": 2,
-      "explain_vi": "Nam nói: \"I'm going to play the guitar with my band.\""
+      "explain_vi": "Nam: ==I'm going to play the guitar with my band== → **Play the guitar**. __Không chọn Sing: Linh mới là người thích hát.__"
      },
      {
       "q": "Who wrote the song?",
@@ -525,7 +538,7 @@
        "The music teacher"
       ],
       "answer": 1,
-      "explain_vi": "Nam nói: \"A song that my friend Tom composed\" (compose = sáng tác)."
+      "explain_vi": "Nam: ==A song that my friend Tom composed== → **Nam's friend Tom**. __composed nghĩa là sáng tác, tức là viết bài hát.__"
      },
      {
       "q": "When does Nam's band rehearse?",
@@ -536,7 +549,7 @@
        "On Tuesday and Thursday"
       ],
       "answer": 3,
-      "explain_vi": "Nam nói: \"Every Tuesday and Thursday after school\"."
+      "explain_vi": "Nam: ==Every Tuesday and Thursday after school== → **On Tuesday and Thursday**. __Nghe kỹ, Tuesday và Thursday rất dễ nhầm.__"
      },
      {
       "q": "Why doesn't Linh want to sing at the concert?",
@@ -547,7 +560,7 @@
        "She doesn't like music."
       ],
       "answer": 0,
-      "explain_vi": "Linh nói: \"I'm too nervous to sing on stage.\""
+      "explain_vi": "Linh: ==I'm too nervous to sing on stage== → **She feels nervous on stage.** __too … to V: quá … đến nỗi không thể.__"
      },
      {
       "q": "What will the ticket money be used for?",
@@ -558,7 +571,7 @@
        "A class trip"
       ],
       "answer": 2,
-      "explain_vi": "Nam nói: \"all the money goes to the school library.\""
+      "explain_vi": "Nam: ==all the money goes to the school library== → **The school library**."
      }
     ]
    },
@@ -573,33 +586,33 @@
       "accept": [
        "sixty"
       ],
-      "explain_vi": "\"more than 60 students have taken part\"."
+      "explain_vi": "==more than 60 students have taken part== → **60**. __Ghi bằng chữ số cho nhanh.__"
      },
      {
       "answer": "5",
       "accept": [
        "five"
       ],
-      "explain_vi": "\"the photos are in Room 5, next to the library\"."
+      "explain_vi": "==the photos are in Room 5, next to the library== → **5**."
      },
      {
       "answer": "paper",
       "accept": [],
-      "explain_vi": "\"models made from recycled paper\"."
+      "explain_vi": "==models made from recycled paper== → **paper**. __Ghi chú thường giữ nguyên các từ quanh chỗ trống.__"
      },
      {
       "answer": "garden",
       "accept": [
        "the garden"
       ],
-      "explain_vi": "\"a short performance in the garden\"."
+      "explain_vi": "==a short performance in the garden== → **garden**. __Nghe từ 'performance' là biết sắp tới đáp án.__"
      },
      {
       "answer": "box",
       "accept": [
        "the box"
       ],
-      "explain_vi": "\"put the card in the box at the door\"."
+      "explain_vi": "==put the card in the box at the door== → **box**."
      }
     ]
    }
@@ -678,7 +691,7 @@
        "He has a piano lesson."
       ],
       "answer": 2,
-      "explain_vi": "Tom: \"it'll be really crowded on the first day\" (crowded = đông người). Mai mới là người học piano."
+      "explain_vi": "Tom: ==it'll be really crowded on the first day== → **There will be too many people.** __Bẫy: người học piano là Mai, không phải Tom.__"
      },
      {
       "q": "When will they go to the exhibition?",
@@ -689,7 +702,7 @@
        "On Sunday afternoon"
       ],
       "answer": 3,
-      "explain_vi": "Tom muốn đi sáng Chủ nhật nhưng Mai bận học piano, nên chốt: \"Sunday afternoon it is.\""
+      "explain_vi": "Tom muốn sáng Chủ nhật, Mai bận học piano, nên chốt ==Sunday afternoon it is== → **On Sunday afternoon**. __Chú ý chỗ người nói đổi ý.__"
      },
      {
       "q": "How much does a student ticket cost?",
@@ -700,7 +713,7 @@
        "It's free."
       ],
       "answer": 0,
-      "explain_vi": "Mai nói 50,000 rồi sửa: đó là giá người lớn; \"For students, it's 30,000.\""
+      "explain_vi": "Mai sửa lại: 50,000 là vé người lớn, ==For students, it's 30,000== → **30,000 dong**. __Cẩn thận chỗ người nói sửa thông tin.__"
      },
      {
       "q": "What does Mai admire about some artists?",
@@ -711,7 +724,7 @@
        "How young they are"
       ],
       "answer": 1,
-      "explain_vi": "Mai: \"artists who paint with so much imagination\" (imagination = trí tưởng tượng, sáng tạo)."
+      "explain_vi": "Mai: ==artists who paint with so much imagination== → giàu trí tưởng tượng → **How creative they are**."
      },
      {
       "q": "What does Tom remind Mai to do?",
@@ -722,7 +735,7 @@
        "Get to the museum early"
       ],
       "answer": 2,
-      "explain_vi": "Tom: \"remember to bring your student card on Sunday\". Câu lạc bộ mỹ thuật chỉ là lời gợi ý."
+      "explain_vi": "Tom: ==remember to bring your student card on Sunday== → **Take her student card**. __Gợi ý vào CLB mỹ thuật chỉ là thông tin gây nhiễu.__"
      }
     ]
    },
@@ -735,19 +748,19 @@
      {
       "answer": "Thursday",
       "accept": [],
-      "explain_vi": "Thầy nói Friday rồi sửa: \"not Friday... it's Thursday\"."
+      "explain_vi": "Thầy nói Friday rồi sửa: ==Oh, sorry, not Friday== … ==it's Thursday== → **Thursday**. __Luôn nghe hết câu, người nói hay sửa lại.__"
      },
      {
       "answer": "2",
       "accept": [
        "two"
       ],
-      "explain_vi": "\"Each rehearsal lasts 2 hours\"."
+      "explain_vi": "==Each rehearsal lasts 2 hours== → **2**."
      },
      {
       "answer": "lines",
       "accept": [],
-      "explain_vi": "\"Try to learn your lines before the first rehearsal\"."
+      "explain_vi": "==Try to learn your lines before the first rehearsal== → **lines** (lời thoại). __Từ 'learn' trong ghi chú báo hiệu sắp tới đáp án.__"
      },
      {
       "answer": "mother",
@@ -755,12 +768,12 @@
        "mum",
        "mom"
       ],
-      "explain_vi": "\"Linh's mother, who works as a designer, has kindly offered to help us\"."
+      "explain_vi": "==Linh's mother, who works as a designer, has kindly offered to help us== → **mother**. __Viết mum hoặc mom cũng được.__"
      },
      {
       "answer": "clothes",
       "accept": [],
-      "explain_vi": "\"She needs lots of old clothes\"."
+      "explain_vi": "==She needs lots of old clothes== → **clothes**. __Chú ý chính tả: clothes có -es.__"
      }
     ]
    }
@@ -843,7 +856,7 @@
        "Annoyed with Anna for asking"
       ],
       "answer": 1,
-      "explain_vi": "Nam: \"I'm in two minds about it\" (phân vân, chưa quyết định được)."
+      "explain_vi": "Nam: ==I'm in two minds about it== (phân vân) → **Unable to decide whether to enter**. __Thành ngữ in two minds: chưa quyết được.__"
      },
      {
       "q": "Why did Nam feel comfortable playing at his cousin's wedding?",
@@ -854,7 +867,7 @@
        "He was playing a famous piece."
       ],
       "answer": 2,
-      "explain_vi": "Nam: \"Most of the guests were my relatives, so I didn't feel like anyone was judging me.\""
+      "explain_vi": "Nam: ==Most of the guests were my relatives== → **He knew most of the people listening.** __relatives (họ hàng) được diễn đạt lại thành người quen.__"
      },
      {
       "q": "What does Anna think about Nam's plan to write his own music?",
@@ -865,7 +878,7 @@
        "It's less interesting than a famous piece."
       ],
       "answer": 0,
-      "explain_vi": "Anna: \"That's quite ambitious with only three weeks to go\" (tham vọng, khó kịp)."
+      "explain_vi": "Anna: ==That's quite ambitious with only three weeks to go== → **It's a lot to manage in such a short time.** __Câu hỏi về ý kiến: nghe lời nhận xét ngay sau kế hoạch.__"
      },
      {
       "q": "What gave Nam the idea for his music?",
@@ -876,7 +889,7 @@
        "Rain falling on his house"
       ],
       "answer": 3,
-      "explain_vi": "Nam: \"It was inspired by the sound of rain on our roof.\""
+      "explain_vi": "Nam: ==It was inspired by the sound of rain on our roof== → **Rain falling on his house**."
      },
      {
       "q": "Why does Anna want to perform with Nam rather than alone?",
@@ -887,7 +900,7 @@
        "Her teacher advised her to."
       ],
       "answer": 1,
-      "explain_vi": "Anna: \"I'd enjoy playing with someone much more. Performing alone last year was quite lonely.\""
+      "explain_vi": "Anna: ==I'd enjoy playing with someone much more. Performing alone last year was quite lonely.== → **She thinks it would be more enjoyable.** __Việc Anna từng đoạt giải nhì chỉ là thông tin gây nhiễu.__"
      }
     ]
    },
@@ -900,26 +913,26 @@
      {
       "answer": "design",
       "accept": [],
-      "explain_vi": "\"not the singing... but the stage design\". Phần hát chỉ là thông tin gây nhiễu."
+      "explain_vi": "==not the singing, although that was strong, but the stage design== → **design**. __Bẫy not A but B: đáp án là B.__"
      },
      {
       "answer": "lanterns",
       "accept": [
        "lantern"
       ],
-      "explain_vi": "\"used hundreds of paper lanterns to create the river\"."
+      "explain_vi": "==used hundreds of paper lanterns to create the river== → **lanterns**."
      },
      {
       "answer": "18",
       "accept": [
        "eighteen"
       ],
-      "explain_vi": "\"The cast are all aged between 12 and 18\"."
+      "explain_vi": "==The cast are all aged between 12 and 18== → **18**."
      },
      {
       "answer": "length",
       "accept": [],
-      "explain_vi": "\"The only real weakness... is the length\". 40 phút là thời gian bị thừa."
+      "explain_vi": "==The only real weakness, in my opinion, is the length== → **length**. __40 phút chỉ là phần bị thừa, không phải đáp án.__"
      },
      {
       "answer": "90,000",
@@ -928,7 +941,7 @@
        "90 000",
        "ninety thousand"
       ],
-      "explain_vi": "Giá vé 150,000 là vé thường; \"students pay only 90,000\"."
+      "explain_vi": "Vé thường 150,000; ==students pay only 90,000== → **90,000**. __Nghe rõ đối tượng: vé học sinh khác vé thường.__"
      }
     ]
    }

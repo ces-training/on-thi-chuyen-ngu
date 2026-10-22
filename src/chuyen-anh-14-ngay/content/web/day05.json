@@ -10,7 +10,8 @@
       "I'm ___ tired to go jogging tonight.",
       "The soup was ___ salty for me to eat.",
       "It's ___ late to drink coffee now."
-     ]
+     ],
+     "rule_vi": "**too + adj + to V** (hoặc for sb + to V): quá … nên không thể. Dấu hiệu: sau tính từ có ==to go==, ==for me to eat==. __Thấy 'to V' phía sau, nghĩ ngay tới too.__"
     },
     {
      "name": "so (+ adj/adv + that)",
@@ -18,7 +19,8 @@
       "Vinh ran ___ fast that he won the race.",
       "I was ___ hungry that I ate three bowls.",
       "She has ___ much energy that she never stops."
-     ]
+     ],
+     "rule_vi": "**so + adj/adv + that**: quá … đến nỗi. Dấu hiệu: sau chỗ trống là tính từ, trạng từ hoặc ==much== rồi tới ==that==. __Không có danh từ ngay sau chỗ trống → dùng so.__"
     },
     {
      "name": "such (+ a/an + adj + N + that)",
@@ -26,30 +28,36 @@
       "It was ___ a long walk that my legs hurt.",
       "We had ___ fun that we didn't want to leave.",
       "These are ___ juicy mangoes that I want more."
-     ]
+     ],
+     "rule_vi": "**such + (a/an) + adj + danh từ + that**. Dấu hiệu: có danh từ như ==a long walk==, ==fun==, ==juicy mangoes==. __Danh từ không đếm được hoặc số nhiều thì bỏ a/an.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "My grandpa is fitter than most young people I know.",
-    "hint_vi": "So sánh hơn của tính từ ngắn: fit → fitter than"
+    "hint_vi": "So sánh hơn của tính từ ngắn: fit → fitter than",
+    "why_vi": "Chủ ngữ + is + **fitter than** + người được so sánh. fit gấp đôi t: ==fitter==. __Tính từ ngắn tận cùng phụ âm–nguyên âm–phụ âm thì gấp đôi phụ âm cuối.__"
    },
    {
     "sentence": "Swimming is one of the best ways to stay fit.",
-    "hint_vi": "So sánh nhất: one of the best + danh từ số nhiều"
+    "hint_vi": "So sánh nhất: one of the best + danh từ số nhiều",
+    "why_vi": "**one of the best + danh từ số nhiều**: ==one of the best ways== rồi tới to stay fit. __Sau 'one of' luôn là danh từ số nhiều.__"
    },
    {
     "sentence": "He isn't old enough to work out at the gym.",
-    "hint_vi": "adj + enough + to V"
+    "hint_vi": "adj + enough + to V",
+    "why_vi": "**adj + enough + to V**: ==old enough to work out==; isn't đứng ngay sau He. __enough đứng sau tính từ.__"
    },
    {
     "sentence": "This salad is too big for me to finish.",
-    "hint_vi": "too + adj + for sb + to V"
+    "hint_vi": "too + adj + for sb + to V",
+    "why_vi": "**too + adj + for sb + to V**: ==too big for me to finish==. __'for me' nằm giữa tính từ và 'to V'.__"
    },
    {
     "sentence": "The match was so tiring that I went to bed early.",
-    "hint_vi": "so + adj + that + mệnh đề"
+    "hint_vi": "so + adj + that + mệnh đề",
+    "why_vi": "**so + adj + that + mệnh đề**: ==so tiring that== I went to bed early. __Sau that là một câu đầy đủ chủ ngữ + động từ.__"
    }
   ],
   "truefalse": [
@@ -57,49 +65,49 @@
     "s": "My brother is enough tall to play basketball.",
     "ok": false,
     "fix": "My brother is tall enough to play basketball.",
-    "why_vi": "enough đứng SAU tính từ: tall enough."
+    "why_vi": "Sai. ==enough tall== → **tall enough**: enough đứng SAU tính từ. __Nhớ: adj + enough, nhưng enough + danh từ.__"
    },
    {
     "s": "Cycling is more healthier than taking the bus.",
     "ok": false,
     "fix": "Cycling is healthier than taking the bus.",
-    "why_vi": "healthier đã là so sánh hơn, không thêm more."
+    "why_vi": "Sai. ==more healthier== thừa more → **healthier than**. __Đã có -er thì không thêm more.__"
    },
    {
     "s": "This is the most nutritious breakfast I have ever had.",
     "ok": true,
     "fix": "This is the most nutritious breakfast I have ever had.",
-    "why_vi": "Tính từ dài → the most + adj; thường đi với 'I have ever…'."
+    "why_vi": "Đúng. Tính từ dài ==nutritious== → **the most nutritious**, hay đi với ==I have ever had==. __Gặp 'I have ever…' thường là so sánh nhất.__"
    },
    {
     "s": "It was such a long race that many runners gave up.",
     "ok": true,
     "fix": "It was such a long race that many runners gave up.",
-    "why_vi": "such + a + adj + danh từ số ít + that."
+    "why_vi": "Đúng. ==such a long race that== theo đúng mẫu **such + a + adj + danh từ số ít + that**."
    },
    {
     "s": "We don't have enough time to cook a proper dinner.",
     "ok": true,
     "fix": "We don't have enough time to cook a proper dinner.",
-    "why_vi": "enough đứng TRƯỚC danh từ: enough time."
+    "why_vi": "Đúng. ==enough time==: **enough đứng TRƯỚC danh từ**. __Với tính từ thì ngược lại: old enough.__"
    },
    {
     "s": "The weather was so hot that we couldn't work out outside.",
     "ok": true,
     "fix": "The weather was so hot that we couldn't work out outside.",
-    "why_vi": "so + tính từ (không có danh từ đi sau) + that."
+    "why_vi": "Đúng. Sau so chỉ có tính từ ==hot== (không có danh từ) → **so + adj + that**."
    },
    {
     "s": "My cold is badder than it was yesterday.",
     "ok": false,
     "fix": "My cold is worse than it was yesterday.",
-    "why_vi": "bad là bất quy tắc: bad – worse – the worst."
+    "why_vi": "Sai. ==badder== không có; bad là bất quy tắc → **worse** (bad – worse – the worst). __Học thuộc good/better, bad/worse, far/further.__"
    },
    {
     "s": "It was so a delicious soup that I had two bowls.",
     "ok": false,
     "fix": "It was such a delicious soup that I had two bowls.",
-    "why_vi": "Có a + adj + danh từ → dùng such, không dùng so."
+    "why_vi": "Sai. Có ==a delicious soup== (a + tính từ + danh từ) → phải dùng **such**, không dùng so. __so đứng trước tính từ một mình, such đứng trước cụm danh từ.__"
    }
   ]
  },
@@ -120,7 +128,7 @@
       "I don't run as fast as my brother."
      ],
      "answer": 1,
-     "explain_vi": "not as fast as = chậm hơn. Anh trai chạy chậm hơn em → em chạy nhanh hơn: I run faster than my brother."
+     "explain_vi": "==doesn't run as fast as I do== nghĩa là anh chạy chậm hơn em → **I run faster than my brother**. __Đổi chủ ngữ thì đảo chiều so sánh; A bị ngược nghĩa.__"
     },
     {
      "q": "The bag was so heavy that Lan couldn't lift it.",
@@ -131,7 +139,7 @@
       "The bag was too heavy for Lan to lift."
      ],
      "answer": 3,
-     "explain_vi": "so … that + couldn't = too … for sb to V. 'such heavy' sai vì such cần danh từ đi sau."
+     "explain_vi": "==so heavy that Lan couldn't lift it== → **too heavy for Lan to lift**. __'such heavy' sai vì such phải có danh từ đi sau.__"
     },
     {
      "q": "I have never eaten such a nutritious meal.",
@@ -142,7 +150,7 @@
       "I never eat nutritious meals."
      ],
      "answer": 0,
-     "explain_vi": "never … such a + adj + N = đây là … nhất từng: the most nutritious meal I have ever eaten."
+     "explain_vi": "==never ... such a nutritious meal== → bữa ăn bổ nhất từng ăn: **the most nutritious meal I have ever eaten**. __never + such a ↔ the most … ever.__"
     },
     {
      "q": "Thu is not tall enough to reach the top shelf.",
@@ -153,7 +161,7 @@
       "The top shelf is too low for Thu to reach."
      ],
      "answer": 1,
-     "explain_vi": "not tall enough to = too short to: không đủ cao nên không với tới."
+     "explain_vi": "==not tall enough to reach== → **too short to reach**: không đủ cao nên không với tới. __D sai: kệ thấp thì lại với được.__"
     },
     {
      "q": "Fast food is less healthy than home-cooked food.",
@@ -164,7 +172,7 @@
       "Home-cooked food is not as healthy as fast food."
      ],
      "answer": 2,
-     "explain_vi": "A less healthy than B = B healthier than A. Đổi chủ ngữ thì đổi less thành dạng so sánh hơn."
+     "explain_vi": "==less healthy than== → đảo hai vế: **Home-cooked food is healthier than fast food**. __D cũng ngược nghĩa vì nói fast food tốt hơn.__"
     }
    ]
   },
@@ -186,7 +194,7 @@
       "more difficult than this",
       "harder than this"
      ],
-     "explain_vi": "Đổi chủ ngữ thì dùng tính từ trái nghĩa: easier ↔ more difficult / harder."
+     "explain_vi": "==easier than the last one== → đổi chủ ngữ thì dùng tính từ trái nghĩa: **more difficult / harder than this one**. __Đổi chủ ngữ là phải đổi chiều so sánh.__"
     },
     {
      "q": "My little brother is too short to ride this roller coaster.",
@@ -195,14 +203,14 @@
      "accept": [
       "tall enough to ride it"
      ],
-     "explain_vi": "too + adj + to V = not + adj trái nghĩa + enough + to V: too short → not tall enough."
+     "explain_vi": "==too short to ride== → **not tall enough to ride**: too + adj thành not + tính từ trái nghĩa + enough. __enough đứng sau tall.__"
     },
     {
      "q": "The film was so boring that I fell asleep.",
      "start": "It was",
      "answer": "such a boring film that I fell asleep",
      "accept": [],
-     "explain_vi": "so + adj + that = such + a + adj + N + that: such a boring film that…"
+     "explain_vi": "==so boring that== → **such a boring film that I fell asleep**. __Câu mới bắt đầu 'It was' nên phải thêm a + danh từ film.__"
     },
     {
      "q": "Nobody in my family cooks as well as my grandma.",
@@ -212,7 +220,7 @@
       "best cook in the family",
       "best cook in our family"
      ],
-     "explain_vi": "Không ai bằng bà → bà giỏi nhất: the best cook (good/well → best)."
+     "explain_vi": "==Nobody ... cooks as well as my grandma== → bà nấu ngon nhất: **the best cook in my family**. __Sau 'the best' cần danh từ cook (người nấu).__"
     },
     {
      "q": "The exercise was too difficult for me to do.",
@@ -223,7 +231,7 @@
       "difficult that I wasn't able to do it",
       "difficult that I was not able to do it"
      ],
-     "explain_vi": "too … for me to V = so … that I couldn't V + it. Nhớ thêm tân ngữ 'it' sau do."
+     "explain_vi": "==too difficult for me to do== → **so difficult that I couldn't do it**. __Nhớ thêm tân ngữ 'it' sau do và dùng couldn't vì câu ở quá khứ.__"
     }
    ]
   }
@@ -245,7 +253,7 @@
       "Minh and Nam are the same height."
      ],
      "answer": 1,
-     "explain_vi": "Minh cao hơn Nam nghĩa là Nam thấp hơn Minh. Đổi chủ ngữ (Nam lên đầu) thì đổi taller thành từ ngược nghĩa: shorter."
+     "explain_vi": "==Minh is taller than Nam== → Nam thấp hơn Minh: **Nam is shorter than Minh**. __Đưa Nam lên đầu thì đổi taller thành shorter.__"
     },
     {
      "q": "The tea is too hot to drink.",
@@ -256,7 +264,7 @@
       "I drink hot tea every day."
      ],
      "answer": 1,
-     "explain_vi": "too hot to drink = nóng quá, chưa uống được. Nghĩa giống: chưa đủ nguội để uống = isn't cool enough to drink."
+     "explain_vi": "==too hot to drink== nghĩa là chưa uống được → **isn't cool enough to drink**. __Câu A 'cool enough' là ngược nghĩa, để ý chữ isn't.__"
     },
     {
      "q": "Hoa is the best swimmer in our class.",
@@ -267,7 +275,7 @@
       "Hoa is a bad swimmer."
      ],
      "answer": 0,
-     "explain_vi": "the best swimmer = bơi giỏi nhất, tức là bơi giỏi hơn mọi bạn khác: better than everyone else."
+     "explain_vi": "==the best swimmer== là bơi giỏi nhất → **swims better than everyone else**. __C ngược nghĩa vì nói mọi người bơi giỏi hơn Hoa.__"
     },
     {
      "q": "It was such a cold day that we stayed at home.",
@@ -278,7 +286,7 @@
       "It was a hot day, so we stayed at home."
      ],
      "answer": 2,
-     "explain_vi": "such a cold day that … = so cold that …: trời lạnh quá nên cả nhà ở nhà. Các câu khác đổi nghĩa (warm, went out, hot)."
+     "explain_vi": "==such a cold day that== → **so cold that we stayed at home**. __Các câu khác đổi nghĩa (warm, went out, hot), loại ngay.__"
     },
     {
      "q": "Cycling is healthier than watching TV.",
@@ -289,7 +297,7 @@
       "Watching TV isn't as healthy as cycling."
      ],
      "answer": 3,
-     "explain_vi": "Đạp xe tốt cho sức khoẻ hơn xem TV, nghĩa là xem TV không tốt bằng đạp xe: not as healthy as."
+     "explain_vi": "==healthier than watching TV== → xem TV không tốt bằng: **isn't as healthy as cycling**. __Dùng not as … as thì giữ được tính từ healthy.__"
     }
    ]
   },
@@ -307,7 +315,7 @@
      "accept": [
       "taller than her"
      ],
-     "explain_vi": "Lan thấp hơn chị → chị cao hơn Lan. Đổi chủ ngữ thì đổi shorter thành taller."
+     "explain_vi": "==Lan is shorter than her sister== → chị cao hơn: **taller than Lan**. __Đổi chủ ngữ thì đổi tính từ sang nghĩa ngược lại.__"
     },
     {
      "q": "My shoes are too small for me to wear.",
@@ -318,14 +326,14 @@
       "large enough for me to wear",
       "large enough to wear"
      ],
-     "explain_vi": "too small = not big enough. Nhớ: enough đứng SAU tính từ: big enough, không viết enough big."
+     "explain_vi": "==too small== → **not big enough for me to wear**. __enough đứng SAU tính từ: big enough.__"
     },
     {
      "q": "The cake was so delicious that I ate three pieces.",
      "start": "It was",
      "answer": "such a delicious cake that I ate three pieces",
      "accept": [],
-     "explain_vi": "so + tính từ + that → such + a + tính từ + danh từ + that. Phải thêm danh từ cake và mạo từ a."
+     "explain_vi": "==so delicious that== → **such a delicious cake that**. __Phải thêm mạo từ a và danh từ cake.__"
     },
     {
      "q": "No one in my class is as tall as Đức.",
@@ -337,7 +345,7 @@
       "tallest boy in my class",
       "tallest pupil in my class"
      ],
-     "explain_vi": "Không ai cao bằng Đức → Đức cao nhất: the tallest (tính từ ngắn thêm -est)."
+     "explain_vi": "==No one ... as tall as Đức== → **the tallest student in my class**. __Tính từ ngắn thêm -est.__"
     },
     {
      "q": "I am not old enough to drive a car.",
@@ -346,7 +354,7 @@
      "accept": [
       "young to drive"
      ],
-     "explain_vi": "not old enough = too young: chưa đủ tuổi = còn quá nhỏ. Sau too + tính từ là to + động từ."
+     "explain_vi": "==not old enough== → **too young to drive a car**. __Sau too + tính từ là to + động từ.__"
     }
    ]
   }
@@ -368,7 +376,7 @@
       "Quang is as fit as most of the players in the team."
      ],
      "answer": 2,
-     "explain_vi": "hardly anyone = hầu như không ai. Hầu như không ai khoẻ bằng Quang → Quang khoẻ hơn gần như tất cả: fitter than almost everyone else."
+     "explain_vi": "==Hardly anyone ... as fit as Quang== → hầu như không ai khoẻ bằng Quang → **fitter than almost everyone else**. __hardly anyone là gần như không ai, đừng hiểu thành 'ai cũng'.__"
     },
     {
      "q": "The more you exercise, the more energy you will have.",
@@ -379,7 +387,7 @@
       "However much you exercise, your energy stays the same."
      ],
      "answer": 0,
-     "explain_vi": "the more …, the more … = càng … càng …: tập càng nhiều càng có sức → If you exercise more, you will have more energy."
+     "explain_vi": "==The more ..., the more ...== nghĩa là càng … càng … → **If you exercise more, you will have more energy**. __B sai vì đổi more thành less.__"
     },
     {
      "q": "There weren't enough doctors to treat all the injured fans.",
@@ -390,7 +398,7 @@
       "Not all the doctors were needed to treat the injured fans."
      ],
      "answer": 0,
-     "explain_vi": "not enough + danh từ đếm được = too few + danh từ. 'too little doctors' sai vì little chỉ đi với danh từ không đếm được."
+     "explain_vi": "==weren't enough doctors== → **too few doctors** (danh từ đếm được). __'too little' chỉ đi với danh từ không đếm được nên B sai.__"
     },
     {
      "q": "The instructions were too complicated for the patients to follow.",
@@ -401,7 +409,7 @@
       "The patients were such complicated that they couldn't follow the instructions."
      ],
      "answer": 1,
-     "explain_vi": "too … for sb to V = so … that sb couldn't V + them. Câu cuối sai vì such không đứng một mình trước tính từ."
+     "explain_vi": "==too complicated for the patients to follow== → **so complicated that the patients couldn't follow them**. __D sai: such không đứng trước tính từ một mình.__"
     },
     {
      "q": "My grandmother's health is not nearly as good as it used to be.",
@@ -412,7 +420,7 @@
       "My grandmother's health is much worse than it used to be."
      ],
      "answer": 3,
-     "explain_vi": "not nearly as good as = kém xa, tức là much worse. 'slightly worse' (hơi kém) sai mức độ; 'almost as good' là bẫy vì nearly ≈ almost."
+     "explain_vi": "==not nearly as good as== là kém xa → **much worse**. __Bẫy: 'slightly worse' sai mức độ; 'almost as good' lừa vì nearly giống almost.__"
     }
    ]
   },
@@ -430,7 +438,7 @@
      "accept": [
       "his injury fast enough to play in the final"
      ],
-     "explain_vi": "recover from = get over. too slowly = not quickly enough; enough đứng sau trạng từ: quickly enough."
+     "explain_vi": "==recovered from== đổi thành get over; ==too slowly== → **his injury quickly enough to play in the final**. __enough đứng sau trạng từ: quickly enough.__"
     },
     {
      "q": "She is the most energetic person I have ever met.",
@@ -448,7 +456,7 @@
       "met anyone as energetic as she is",
       "met anybody more energetic"
      ],
-     "explain_vi": "the most … I have ever met = I have never met such a(n) … / a more … person. Chú ý an trước energetic (nguyên âm)."
+     "explain_vi": "==the most energetic person I have ever met== → **met such an energetic person**. __energetic bắt đầu bằng nguyên âm nên dùng an.__"
     },
     {
      "q": "As my grandfather gets older, he finds it harder to walk long distances.",
@@ -459,14 +467,14 @@
       "the harder it is for him to walk long distances",
       "the more difficult it is for him to walk long distances"
      ],
-     "explain_vi": "So sánh kép (càng … càng …): The + so sánh hơn + S + V, the + so sánh hơn + S + V. Vế sau cũng cần the."
+     "explain_vi": "==As ... gets older, ... harder== → so sánh kép: **the harder he finds it to walk long distances**. __Cả hai vế đều phải có the + so sánh hơn.__"
     },
     {
      "q": "The doctor's advice was so useful that I followed it immediately.",
      "start": "The doctor gave me",
      "answer": "such useful advice that I followed it immediately",
      "accept": [],
-     "explain_vi": "advice không đếm được nên dùng such + tính từ + danh từ, KHÔNG có a: such useful advice (không viết such a useful advice)."
+     "explain_vi": "==advice== không đếm được → **such useful advice that**, không có a. __Không viết 'such a useful advice'; information, news cũng vậy.__"
     },
     {
      "q": "In our club, no exercise is as tiring as the hill run.",
@@ -476,7 +484,7 @@
       "more tiring than any other exercise in our club",
       "the most tiring exercise of all in our club"
      ],
-     "explain_vi": "no … as tiring as X = X is the most tiring … hoặc more tiring than any other … (any other + danh từ số ít)."
+     "explain_vi": "==no exercise is as tiring as the hill run== → **the most tiring exercise in our club**. __Cũng có thể viết more tiring than any other exercise.__"
     }
    ]
   }
@@ -489,13 +497,15 @@
     "id": "d5H1",
     "q": "The doctor said that my grandfather's heart problems were caused by years of ______. (ACTIVE)",
     "answer": "inactivity",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Sau ==years of== cần **danh từ**: active → inactive → **inactivity** (sự ít vận động). __Từ đổi hai lần: thêm tiền tố phủ định rồi đổi sang danh từ.__"
    },
    {
     "id": "d5H2",
     "q": "Eating a heavy meal late at night can have some ______ effects on your sleep. (DESIRE)",
     "answer": "undesirable",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Trước danh từ ==effects== cần tính từ; ăn khuya có hại → nghĩa phủ định: **undesirable**. __desire → desirable → undesirable.__"
    },
    {
     "id": "d5H3",
@@ -505,7 +515,8 @@
      "more regularly than anyone else in the club",
      "more regularly than any other member of the club",
      "more regularly than any other club member"
-    ]
+    ],
+    "explain_vi": "==Nobody ... works out as regularly as my uncle== → **more regularly than anybody else in the club**. __Phải có 'else' hoặc 'other' để không so sánh chú với chính mình.__"
    },
    {
     "id": "d5H4",
@@ -515,7 +526,8 @@
      "large enough for all the members to use at the same time",
      "big enough for all members to use at the same time",
      "large enough for all members to use at the same time"
-    ]
+    ],
+    "explain_vi": "==too small for all the members to use== → **isn't big enough for all the members to use at the same time**. __too + adj ↔ not + tính từ trái nghĩa + enough.__"
    },
    {
     "id": "d5H5",
@@ -526,7 +538,8 @@
      "weather",
      "cloud"
     ],
-    "answer": "C"
+    "answer": "C",
+    "explain_vi": "Thành ngữ **under the weather** (C) nghĩa là hơi mệt, không khoẻ; khớp với ==After a week in bed with flu==. __Thành ngữ phải học nguyên cụm, không đoán từng từ.__"
    },
    {
     "id": "d5H6",
@@ -537,7 +550,8 @@
      "accept",
      "adjust"
     ],
-    "answer": "B"
+    "answer": "B",
+    "explain_vi": "**adopt a lifestyle** (B) là theo một lối sống mới, khớp với ==no more fizzy drinks and no more late nights==. __Dễ nhầm: adapt là thích nghi, adjust là điều chỉnh.__"
    }
   ]
  },
@@ -656,7 +670,7 @@
        "He wanted to lose weight."
       ],
       "answer": 1,
-      "explain_vi": "Nam nói: \"I got up too late to eat.\""
+      "explain_vi": "Nam nói: ==I got up too late to eat.== → **He got up too late**. __Câu hỏi Why → nghe lý do ngay sau chỗ nói không ăn sáng.__"
      },
      {
       "q": "What does Nam usually have for breakfast?",
@@ -667,7 +681,7 @@
        "Nothing at all"
       ],
       "answer": 2,
-      "explain_vi": "Nam: \"Usually just a sweet cake and a cup of milk tea.\" Trứng, bánh mì, phở là bữa sáng của Linh."
+      "explain_vi": "Nam: ==Usually just a sweet cake and a cup of milk tea.== → **A sweet cake and milk tea**. __Trứng, bánh mì, phở là bữa sáng của Linh: nghe rõ ai nói.__"
      },
      {
       "q": "What does Linh say about breakfast?",
@@ -678,7 +692,7 @@
        "It makes you tired."
       ],
       "answer": 0,
-      "explain_vi": "Linh nói: \"Breakfast gives you energy for the whole morning.\""
+      "explain_vi": "Linh nói: ==Breakfast gives you energy for the whole morning.== → **It gives you energy**."
      },
      {
       "q": "When does Nam play football?",
@@ -689,7 +703,7 @@
        "On Sundays"
       ],
       "answer": 3,
-      "explain_vi": "Nam: \"I play football on Sundays, that's all.\""
+      "explain_vi": "Nam: ==I play football on Sundays, that's all.== → **On Sundays**. __Thứ Ba, thứ Năm là ngày Linh chạy bộ, đừng nhầm.__"
      },
      {
       "q": "When will Nam go jogging with Linh?",
@@ -700,7 +714,7 @@
        "On Saturday"
       ],
       "answer": 1,
-      "explain_vi": "Linh chạy thứ Ba và thứ Năm, nhưng Nam nói: \"I'll come on Thursday.\""
+      "explain_vi": "Linh chạy thứ Ba và thứ Năm, nhưng Nam nói: ==Okay, I'll come on Thursday.== → **On Thursday**. __Nghe câu trả lời cuối của người được rủ.__"
      }
     ]
    },
@@ -713,35 +727,35 @@
      {
       "answer": "doctor",
       "accept": [],
-      "explain_vi": "Thầy nói: \"a doctor is coming to talk to us about healthy food.\""
+      "explain_vi": "Thầy nói: ==a doctor is coming to talk to us about healthy food.== → **doctor**. __Sau 'a' cần danh từ chỉ người.__"
      },
      {
       "answer": "notebook",
       "accept": [
        "a notebook"
       ],
-      "explain_vi": "Thầy nói: \"Please bring a notebook.\""
+      "explain_vi": "==Please bring a notebook== → **notebook**. __Có thể viết 'a notebook' cũng được.__"
      },
      {
       "answer": "2",
       "accept": [
        "two"
       ],
-      "explain_vi": "Thầy nói: \"It's only 2 kilometres long.\""
+      "explain_vi": "==It's only 2 kilometres long.== → **2** (hoặc two)."
      },
      {
       "answer": "trainers",
       "accept": [
        "trainer"
       ],
-      "explain_vi": "Thầy nói: \"Please wear trainers, not sandals.\" Không đi dép."
+      "explain_vi": "==Please wear trainers, not sandals.== → **trainers**. __Cẩn thận chữ 'not': sandals là thứ không được đi.__"
      },
      {
       "answer": "canteen",
       "accept": [
        "the canteen"
       ],
-      "explain_vi": "Thầy nói: \"a fruit party in the canteen.\""
+      "explain_vi": "==On Friday, we're having a fruit party in the canteen.== → **canteen**."
      }
     ]
    }
@@ -820,7 +834,7 @@
        "On Friday"
       ],
       "answer": 2,
-      "explain_vi": "Tom nói Monday rồi sửa lại: \"Well, actually, it was Tuesday.\""
+      "explain_vi": "Tom nói Monday rồi sửa: ==Well, actually, it was Tuesday.== → **On Tuesday**. __Thông tin sau 'actually' mới là đáp án.__"
      },
      {
       "q": "For how long does Tom have to stop playing basketball?",
@@ -831,7 +845,7 @@
        "A month"
       ],
       "answer": 0,
-      "explain_vi": "Bác sĩ nói: \"I can't play for three weeks.\" Một tuần là Tom tưởng lúc đầu; hai tuần là thời gian tới trận đấu."
+      "explain_vi": "Tom kể bác sĩ nói: ==I can't play for three weeks.== → **Three weeks**. __Một tuần là Tom tưởng lúc đầu; hai tuần là lúc có trận đấu.__"
      },
      {
       "q": "What did the doctor tell Tom to do?",
@@ -842,7 +856,7 @@
        "Eat healthier food"
       ],
       "answer": 3,
-      "explain_vi": "\"The doctor also told me to eat more nutritious food\" = ăn uống lành mạnh hơn. Bơi là gợi ý của Mai."
+      "explain_vi": "==The doctor also told me to eat more nutritious food== → **Eat healthier food**. __Bơi là gợi ý của Mai, không phải của bác sĩ.__"
      },
      {
       "q": "Why did Mai's dad go swimming?",
@@ -853,7 +867,7 @@
        "He wanted to lose weight."
       ],
       "answer": 1,
-      "explain_vi": "Mai: \"He said it was much gentler than running.\" Gentler = nhẹ nhàng hơn với cơ thể."
+      "explain_vi": "Mai: ==He said it was much gentler than running.== → **It was easier on his body than running**. __'gentler' được nói lại thành 'easier on his body'.__"
      },
      {
       "q": "What will Tom do on Friday?",
@@ -864,7 +878,7 @@
        "Start basketball practice again"
       ],
       "answer": 2,
-      "explain_vi": "Tom: \"I'll ask him on Friday\" (hỏi bác sĩ về việc bơi). Đi bơi với Mai là cuối tuần sau."
+      "explain_vi": "Tom: ==I'll ask him on Friday== (hỏi bác sĩ về việc bơi) → **Ask the doctor about swimming**. __Đi bơi với Mai là cuối tuần sau, không phải thứ Sáu.__"
      }
     ]
    },
@@ -879,35 +893,35 @@
       "accept": [
        "six"
       ],
-      "explain_vi": "Anna nói: \"lasts for 6 weeks.\""
+      "explain_vi": "Anna nói: ==The course starts in June and lasts for 6 weeks.== → **6**."
      },
      {
       "answer": "trainer",
       "accept": [
        "a trainer"
       ],
-      "explain_vi": "Anna nói: \"you'll work out in the gym with a trainer.\""
+      "explain_vi": "==you'll work out in the gym with a trainer== → **trainer**. __Ở đây trainer là huấn luyện viên, không phải giày.__"
      },
      {
       "answer": "dancing",
       "accept": [
        "dance"
       ],
-      "explain_vi": "Anna nói yoga rồi sửa lại: \"It's swimming or dancing.\" Yoga chỉ dành cho người lớn."
+      "explain_vi": "Anna nói yoga rồi sửa: ==It's swimming or dancing.== → **dancing**. __Nghe 'sorry, I made a mistake' là biết thông tin sắp đổi.__"
      },
      {
       "answer": "towel",
       "accept": [
        "a towel"
       ],
-      "explain_vi": "Anna nói: \"bring a water bottle and a towel.\""
+      "explain_vi": "==Every student must bring a water bottle and a towel.== → **towel**."
      },
      {
       "answer": "yoghurt",
       "accept": [
        "yogurt"
       ],
-      "explain_vi": "Anna nói: \"usually fruit and yoghurt.\" Không mang khoai tây chiên, nước ngọt."
+      "explain_vi": "==usually fruit and yoghurt== → **yoghurt** (viết yogurt cũng được). __Crisps và sweet drinks là đồ không được mang, đừng nhầm.__"
      }
     ]
    }
@@ -994,7 +1008,7 @@
        "It is always too crowded."
       ],
       "answer": 1,
-      "explain_vi": "Nam: \"it's far more expensive than I expected\" = đắt hơn cậu nghĩ."
+      "explain_vi": "Nam: ==it's far more expensive than I expected== → **It costs more than he thought**. __Đắt hơn dự tính, không phải xa nhà.__"
      },
      {
       "q": "According to Nam's coach, what is Nam's main weakness?",
@@ -1005,7 +1019,7 @@
        "He doesn't eat a balanced diet."
       ],
       "answer": 2,
-      "explain_vi": "\"He thinks I'm strong enough, but I get out of breath too quickly\": thiếu sức bền, không phải thiếu sức mạnh."
+      "explain_vi": "==He thinks I'm strong enough, but I get out of breath too quickly== → **He gets tired too quickly during a match**. __Ý sau 'but' mới là điểm yếu; A sai vì Nam đủ khoẻ.__"
      },
      {
       "q": "When Anna says \"I felt exactly the same at first\", she means that",
@@ -1016,7 +1030,7 @@
        "she also watched football late at night."
       ],
       "answer": 0,
-      "explain_vi": "Cô đáp lại câu Nam than \"far too early... I can hardly get up at seven\": lúc đầu cô cũng thấy dậy sớm rất khó."
+      "explain_vi": "Anna đáp lại câu Nam than ==That's far too early for me. I can hardly get up at seven.== → **she also found getting up early difficult**. __Xem câu ngay trước để hiểu 'the same' là gì.__"
      },
      {
       "q": "What does Anna say is \"the real secret\"?",
@@ -1027,7 +1041,7 @@
        "Sleeping earlier at night"
       ],
       "answer": 3,
-      "explain_vi": "Anna: \"You have to go to bed earlier. That's the real secret.\" Ăn chuối chỉ là lời dặn thêm."
+      "explain_vi": "Anna: ==You have to go to bed earlier. That's the real secret.== → **Sleeping earlier at night**. __Ăn chuối chỉ là lời dặn thêm.__"
      },
      {
       "q": "What can we infer about Nam at the end of the conversation?",
@@ -1038,7 +1052,7 @@
        "He will join the gym after the trials."
       ],
       "answer": 2,
-      "explain_vi": "Nam: \"I'll give it a try for a week\" – thử một tuần. Cậu nói rõ không bỏ hẳn video bóng đá."
+      "explain_vi": "Nam: ==I'll give it a try for a week== → **He has agreed to try the running club for a short time**. __A sai vì Nam nói không bỏ hẳn video bóng đá.__"
      }
     ]
    },
@@ -1053,31 +1067,31 @@
       "accept": [
        "sixty"
       ],
-      "explain_vi": "Bác sĩ: \"for any workout shorter than 60 minutes, plain water is perfectly enough.\" Số 30 là ý kiến bị bác bỏ."
+      "explain_vi": "==for any workout shorter than 60 minutes, plain water is perfectly enough== → **60**. __Số 30 là ý kiến bị bác bỏ bằng 'but in fact'.__"
      },
      {
       "answer": "8",
       "accept": [
        "eight"
       ],
-      "explain_vi": "Bác sĩ: \"one bottle can have as much as 8 teaspoons.\""
+      "explain_vi": "==one bottle can have as much as 8 teaspoons== → **8**."
      },
      {
       "answer": "sleep",
       "accept": [],
-      "explain_vi": "Bác sĩ: \"caffeine, which can seriously damage your sleep.\""
+      "explain_vi": "==caffeine, which can seriously damage your sleep== → **sleep**."
      },
      {
       "answer": "concentrate",
       "accept": [],
-      "explain_vi": "\"Earlier signs, such as headaches, or ... you suddenly can't concentrate.\" Khát nước là dấu hiệu muộn."
+      "explain_vi": "==such as headaches, or finding that you suddenly can't concentrate== → **concentrate**. __Khát nước là dấu hiệu muộn, không phải dấu hiệu sớm.__"
      },
      {
       "answer": "banana",
       "accept": [
        "a banana"
       ],
-      "explain_vi": "\"my top recommendation is a banana and a glass of milk.\" Sô-cô-la chỉ \"không tệ\"."
+      "explain_vi": "==my top recommendation is a banana and a glass of milk== → **banana**. __Chocolate chỉ 'không tệ', không phải lựa chọn tốt nhất.__"
      }
     ]
    }
