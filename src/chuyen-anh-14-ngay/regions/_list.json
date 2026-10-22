@@ -1,0 +1,247 @@
+[
+ {
+  "slug": "ha-noi",
+  "name": "Hà Nội",
+  "merged_from": []
+ },
+ {
+  "slug": "hue",
+  "name": "Huế",
+  "merged_from": []
+ },
+ {
+  "slug": "lai-chau",
+  "name": "Lai Châu",
+  "merged_from": []
+ },
+ {
+  "slug": "dien-bien",
+  "name": "Điện Biên",
+  "merged_from": []
+ },
+ {
+  "slug": "son-la",
+  "name": "Sơn La",
+  "merged_from": []
+ },
+ {
+  "slug": "lang-son",
+  "name": "Lạng Sơn",
+  "merged_from": []
+ },
+ {
+  "slug": "quang-ninh",
+  "name": "Quảng Ninh",
+  "merged_from": []
+ },
+ {
+  "slug": "thanh-hoa",
+  "name": "Thanh Hóa",
+  "merged_from": []
+ },
+ {
+  "slug": "nghe-an",
+  "name": "Nghệ An",
+  "merged_from": []
+ },
+ {
+  "slug": "ha-tinh",
+  "name": "Hà Tĩnh",
+  "merged_from": []
+ },
+ {
+  "slug": "cao-bang",
+  "name": "Cao Bằng",
+  "merged_from": []
+ },
+ {
+  "slug": "tuyen-quang",
+  "name": "Tuyên Quang",
+  "merged_from": [
+   "Tuyên Quang",
+   "Hà Giang"
+  ]
+ },
+ {
+  "slug": "lao-cai",
+  "name": "Lào Cai",
+  "merged_from": [
+   "Lào Cai",
+   "Yên Bái"
+  ]
+ },
+ {
+  "slug": "thai-nguyen",
+  "name": "Thái Nguyên",
+  "merged_from": [
+   "Thái Nguyên",
+   "Bắc Kạn"
+  ]
+ },
+ {
+  "slug": "phu-tho",
+  "name": "Phú Thọ",
+  "merged_from": [
+   "Phú Thọ",
+   "Vĩnh Phúc",
+   "Hòa Bình"
+  ]
+ },
+ {
+  "slug": "bac-ninh",
+  "name": "Bắc Ninh",
+  "merged_from": [
+   "Bắc Ninh",
+   "Bắc Giang"
+  ]
+ },
+ {
+  "slug": "hung-yen",
+  "name": "Hưng Yên",
+  "merged_from": [
+   "Hưng Yên",
+   "Thái Bình"
+  ]
+ },
+ {
+  "slug": "hai-phong",
+  "name": "Hải Phòng",
+  "merged_from": [
+   "Hải Phòng",
+   "Hải Dương"
+  ]
+ },
+ {
+  "slug": "ninh-binh",
+  "name": "Ninh Bình",
+  "merged_from": [
+   "Ninh Bình",
+   "Hà Nam",
+   "Nam Định"
+  ]
+ },
+ {
+  "slug": "quang-tri",
+  "name": "Quảng Trị",
+  "merged_from": [
+   "Quảng Trị",
+   "Quảng Bình"
+  ]
+ },
+ {
+  "slug": "da-nang",
+  "name": "Đà Nẵng",
+  "merged_from": [
+   "Đà Nẵng",
+   "Quảng Nam"
+  ]
+ },
+ {
+  "slug": "quang-ngai",
+  "name": "Quảng Ngãi",
+  "merged_from": [
+   "Quảng Ngãi",
+   "Kon Tum"
+  ]
+ },
+ {
+  "slug": "gia-lai",
+  "name": "Gia Lai",
+  "merged_from": [
+   "Gia Lai",
+   "Bình Định"
+  ]
+ },
+ {
+  "slug": "khanh-hoa",
+  "name": "Khánh Hòa",
+  "merged_from": [
+   "Khánh Hòa",
+   "Ninh Thuận"
+  ]
+ },
+ {
+  "slug": "lam-dong",
+  "name": "Lâm Đồng",
+  "merged_from": [
+   "Lâm Đồng",
+   "Đắk Nông",
+   "Bình Thuận"
+  ]
+ },
+ {
+  "slug": "dak-lak",
+  "name": "Đắk Lắk",
+  "merged_from": [
+   "Đắk Lắk",
+   "Phú Yên"
+  ]
+ },
+ {
+  "slug": "tp-ho-chi-minh",
+  "name": "TP. Hồ Chí Minh",
+  "merged_from": [
+   "TP. Hồ Chí Minh",
+   "Bình Dương",
+   "Bà Rịa – Vũng Tàu"
+  ]
+ },
+ {
+  "slug": "dong-nai",
+  "name": "Đồng Nai",
+  "merged_from": [
+   "Đồng Nai",
+   "Bình Phước"
+  ]
+ },
+ {
+  "slug": "tay-ninh",
+  "name": "Tây Ninh",
+  "merged_from": [
+   "Tây Ninh",
+   "Long An"
+  ]
+ },
+ {
+  "slug": "can-tho",
+  "name": "Cần Thơ",
+  "merged_from": [
+   "Cần Thơ",
+   "Sóc Trăng",
+   "Hậu Giang"
+  ]
+ },
+ {
+  "slug": "vinh-long",
+  "name": "Vĩnh Long",
+  "merged_from": [
+   "Vĩnh Long",
+   "Bến Tre",
+   "Trà Vinh"
+  ]
+ },
+ {
+  "slug": "dong-thap",
+  "name": "Đồng Tháp",
+  "merged_from": [
+   "Đồng Tháp",
+   "Tiền Giang"
+  ]
+ },
+ {
+  "slug": "ca-mau",
+  "name": "Cà Mau",
+  "merged_from": [
+   "Cà Mau",
+   "Bạc Liêu"
+  ]
+ },
+ {
+  "slug": "an-giang",
+  "name": "An Giang",
+  "merged_from": [
+   "An Giang",
+   "Kiên Giang"
+  ]
+ }
+]

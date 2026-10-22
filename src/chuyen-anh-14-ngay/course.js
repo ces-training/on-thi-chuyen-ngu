@@ -73,20 +73,22 @@ const PHASES=[
   writing:'Bài luận có phản biện (nêu và bác ý kiến ngược), ví dụ cụ thể, từ vựng chủ đề. Khoảng 250 từ trong 35 phút, chấm hai vòng như giai đoạn trước.',
   how:'Video nạp ý và từ ở buổi mở mỗi cụm chủ đề (BBC 6 Minute English, TED-Ed). Game Tăng tốc cho cụm động từ, thành ngữ, từ hay nhầm. Ưu tiên các cụm chủ đề đã ra bài luận Sở và Chuyên Ngoại ngữ.'}
 ];
+/* GĐ4 theo sở: Hà Nội giữ nguyên; sở khác dựng từ cấu trúc đề của sở (regions/<slug>.json → paper) */
+function examTasks(){const RG=REG();if(RG.slug==='ha-noi')return EXAM_PHASE.tasks;const P=(RG.paper||{});const ex=Object.values(RG.exams||{});
+  return [`Mỗi tuần 1 đề chuyên Anh của sở ${RG.name} trọn bộ${P.minutes?` (${P.minutes} phút${P.has_listening?', có nghe':''})`:''}, làm đúng giờ trên giấy`,
+    ...(ex.length>1?[`Xen kẽ đề của ${ex.slice(1).map(e=>e.label.replace(/^Kỳ thi riêng của /,'')).join(', ')} nếu cậu thi thêm`]:[]),
+    'Đề tiếng Anh chung của sở: bài lấy trọn điểm','Buổi chữa đề: câu sai vào sổ lỗi sai và quay lại theo vòng 1–3–6 buổi','Tuần cuối 2–3 đề']}
 const EXAM_PHASE={name:'Luyện đề',
   tasks:['Mỗi tuần 1 đề chuyên Anh Sở trọn bộ (120 phút, có nghe), làm đúng giờ trên giấy, nghe bằng file trên web','Xen kẽ đề Chuyên Ngoại ngữ (90 phút, 60 câu + bài luận) và Chuyên Sư phạm (tự luận, viết đoạn)','Đề chung của Sở 40 câu: bài lấy trọn điểm','Buổi chữa đề: câu sai vào sổ lỗi sai và quay lại theo vòng 1–3–6 buổi','Tuần cuối 2–3 đề'],
   speed:'Tốc độ cần đạt: 30–40 giây một câu trắc nghiệm ngữ pháp–từ vựng, 12–15 phút một bài đọc dài, 35 phút bài luận 250 từ.',
   how:'Không dùng game. Đề in có phiếu trả lời giống thật; chụp gửi máy chấm, cô chấm bài luận.'};
 /* Đích theo trường: điểm Anh chuyên cần để có khoảng 80% khả năng đỗ với Toán 8, Văn 8 (khung mục 2), đổi ra giờ học bằng đúng thang của tab Chọn trường */
-const GOALS=[
- {k:'ams',name:'Amsterdam',score:8.7,kind:'so'},
- {k:'cva',name:'Chu Văn An',score:7.4,kind:'so'},
- {k:'nh',name:'Nguyễn Huệ',score:7.1,kind:'so'},
- {k:'cnn',name:'Chuyên Ngoại ngữ',score:6.7,kind:'cnn'},
- {k:'st',name:'Sơn Tây',score:5.4,kind:'so'}];
-function hoursFromScore(s,kind){const p=SCORE_MAP[kind];if(s<=p[0][1])return p[0][0]*s/p[0][1];
+/* lấy theo sở cậu chọn: regions/<slug>.json → goals [{k,name,score,paper}] */
+function goalsList(){const G=REG().goals;return G&&G.length?G:[{k:'b2',name:'Mức B2',score:6,paper:Object.keys(regionPapers())[0]}]}
+function hoursFromScore(s,kind){const p=pmap(kind);if(s<=p[0][1])return p[0][0]*s/p[0][1];
   for(let i=1;i<p.length;i++){if(s<=p[i][1]){const a=p[i-1],b=p[i];return a[0]+(b[0]-a[0])*(s-a[1])/(b[1]-a[1])}}return p[p.length-1][0]}
-function goalH(k){const g=GOALS.find(x=>x.k===k)||GOALS[1];return Math.round(hoursFromScore(g.score,g.kind))}
+function goalPick(k){const G=goalsList();return G.find(x=>x.k===k)||G.find(x=>x.k===REG().goal_default)||G[Math.min(1,G.length-1)]}
+function goalH(k){const g=goalPick(k);const pp=regionPapers()[g.paper]||{map:g.paper};return Math.round(hoursFromScore(g.score,pp.map||'so'))}
 function lvName(h){const L=levelOfHours(h);const nx=LEVELS[LEVELS.indexOf(L)+1];if(L.k==='preA2')return 'Dưới A2';if(L.k==='C1')return h>=790?'C1+':'C1';const f=(h-L.h)/(nx.h-L.h);return f>0.6?L.name+'–'+nx.name:f>=0.25?L.name+' vững':L.name}
 const CLS_OPTS=[[0,'Tự học ở nhà với web'],[1.5,'Thêm lớp CES 1,5 giờ/tuần'],[3,'Thêm lớp CES 3 giờ/tuần'],[4.5,'Thêm lớp CES 4,5 giờ/tuần']];
 const fmtD=d=>String(d.getMonth()+1).padStart(2,'0')+'/'+d.getFullYear();
@@ -144,13 +146,13 @@ function courseCalc(o){
   return {start,exam,g4,gain,chW,perCh,phases,end,req,before,hExam,hChot,g4Ch,status,reqMin,wBefore:wTo(g4)};
 }
 function courseInputs(){
-  S.course=Object.assign({goal:'cva',lv:null},S.course||{});
+  S.course=Object.assign({goal:REG().goal_default||'cva',lv:null},S.course||{});if(!goalsList().some(g=>g.k===S.course.goal))S.course.goal=goalPick(S.course.goal).k;
   if(S.plan.cls==null)S.plan.cls=0;
   const A=agg(),eff=efficiency(A);
   const tested=S.final&&S.final.hours>(S.diag?S.diag.hours:0)?S.final:S.diag;
   const lv=S.course.lv||(tested&&tested.level)||null;
   const entryH=lv?(ENTRY_H[lv]!=null?ENTRY_H[lv]:(LEVELS.find(l=>l.k===lv)||{h:220}).h):null;
-  const o={grade:gradeNow(),entryH,lv,tested,targetH:goalH(S.course.goal),goal:GOALS.find(g=>g.k===S.course.goal)||GOALS[1],min:S.plan.min,dpw:S.plan.dpw,cls:S.plan.cls,eff:eff.f,effFrom:eff.from};
+  const o={grade:gradeNow(),entryH,lv,tested,targetH:goalH(S.course.goal),goal:goalPick(S.course.goal),min:S.plan.min,dpw:S.plan.dpw,cls:S.plan.cls,eff:eff.f,effFrom:eff.from};
   o.prof=learnerProfile(o);o.extraCh=o.prof.extraCh;return o;
 }
 /* chủ điểm ngữ pháp của một giai đoạn, rải đều vào các chặng (chặng củng cố của nhóm "chậm mà chắc" để trống) */
@@ -219,7 +221,7 @@ function phaseCard(ph,i,R,o,first){
 function lockedPhase(P){return `<div class="card ph locked" style="--pc:${P.c}"><div class="ph-s"><span class="ph-n">GĐ${P.k}</span><span class="ph-t"><b>${esc(P.name)}</b> · ${esc(P.band)}<br><span class="small">${esc(P.blurb)}</span><br><span class="small muted">${doodle('lock','lk',20)} Cậu có đi qua giai đoạn này không, mất bao lâu: mở khoá sau bài đầu vào</span></span></div></div>`}
 function chotCard(R){return `<div class="card ph chot"><div class="ph-s"><span class="ph-n">Chốt<br>trường</span><span class="ph-t"><b>Mốc chốt trường</b> · ${R.g4.toLocaleDateString('vi-VN')}${(()=>{const t=tetDate(R.g4.getFullYear());return t?`, trước Tết (${t.toLocaleDateString('vi-VN')}) ít nhất một tuần`:''})()}<br><span class="small muted">Cậu làm bài thi thử trọn bộ đề Sở và đề Chuyên Ngoại ngữ ở CES. Cô, cậu và bố mẹ cùng nhìn điểm thi thử để chọn trường và nguyện vọng. Từ đây đích đã rõ, năm lớp 9 nhẹ đầu hơn hẳn.</span></span></div></div>`}
 function examCard(R){return `<details class="card ph" style="--pc:#FFD23F"><summary><span class="ph-n">GĐ4</span><span class="ph-t"><b>Luyện đề</b> · ${fmtD(R.g4>R.start?R.g4:R.start)} – ${fmtD(R.exam)}<br><span class="small muted">khoảng ${R.g4Ch} chặng, ai cũng đi qua, dù đang ở level nào</span></span></summary>
-     <div class="ph-b"><p>Không học chủ điểm mới. Lịch nhẹ hơn các giai đoạn trước để cậu còn sức cho thi học kỳ và Toán, Văn; thời gian tiếng Anh dành cho làm đề, chữa đề và giữ phong độ.</p><ul>${EXAM_PHASE.tasks.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><p>${esc(EXAM_PHASE.speed)}</p><p>${esc(EXAM_PHASE.how)}</p></div></details>`}
+     <div class="ph-b"><p>Không học chủ điểm mới. Lịch nhẹ hơn các giai đoạn trước để cậu còn sức cho thi học kỳ và Toán, Văn; thời gian tiếng Anh dành cho làm đề, chữa đề và giữ phong độ.</p><ul>${examTasks().map(t=>`<li>${esc(t)}</li>`).join('')}</ul><p>${esc(EXAM_PHASE.speed)}</p><p>${esc(EXAM_PHASE.how)}</p></div></details>`}
 function howCard(){return `<details class="card"><summary>Trang tính thế nào</summary><div class="small">
      <p>Giờ học chuẩn theo khung Cambridge: A2 khoảng 190 giờ, B1 375, B2 550, C1 750. Mức cần của mỗi trường lấy từ điểm Anh chuyên cần để có khoảng 80% khả năng đỗ khi Toán 8, Văn 8, đổi ra giờ học bằng cùng thang với tab Chọn trường.</p>
      <p>Mỗi giờ tự học tính bằng 0,6 giờ học chuẩn, nhân hệ số tốc độ đo từ chính các buổi cậu đã làm; mỗi giờ học trên lớp ở CES tính bằng 0,8 giờ; trừ 15% thời gian cho nghỉ lễ, thi học kỳ, ốm.</p>
@@ -235,7 +237,8 @@ function vCourse(){
   <div class="card"><h3>Thông tin của cậu</h3>
    <div class="sgrid">
     <label class="fld">Cậu đang học lớp<select id="cGrade">${[6,7,8,9].map(g=>`<option value="${g}" ${o0.grade===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label>
-    <label class="fld">Trường cậu nhắm<select id="cGoal">${GOALS.map(g=>`<option value="${g.k}" ${S.course.goal===g.k?'selected':''}>${esc(g.name)} (cần khoảng ${esc(lvName(goalH(g.k)))})</option>`).join('')}</select></label>
+    ${regionPickerHTML('cRegion')}
+    <label class="fld">Trường cậu nhắm<select id="cGoal">${goalsList().map(g=>`<option value="${g.k}" ${S.course.goal===g.k?'selected':''}>${esc(g.name)} (cần khoảng ${esc(lvName(goalH(g.k)))})</option>`).join('')}</select></label>
     <label class="fld">Học trên lớp ở CES<select id="cCls">${CLS_OPTS.map(([v,n])=>`<option value="${v}" ${o0.cls===v?'selected':''}>${esc(n)}</option>`).join('')}</select></label>
     <label class="fld">Trình độ của cậu<select id="cLv">${lvOpts.map(([k,n])=>`<option value="${k}" ${(S.course.lv||'')===k?'selected':''}>${esc(n)}</option>`).join('')}</select><span class="hint">Nên để theo bài đầu vào. Chỉ chọn tay khi cô đã kiểm tra trình độ của cậu.</span></label>
    </div>
@@ -266,7 +269,7 @@ function vCourse(){
     const cur=o.lv?(LEVELS.find(l=>l.k===o.lv)||{name:lvName(o.entryH)}).name:lvName(o.entryH),tgt=lvName(o.targetH);
     const LD=loadTag(reqR,o.grade);
     const headByLoad=LD.t==='nhẹ nhàng'?'Nhích thêm vài phút là về đúng hẹn':LD.t==='hơi nhiều'?'Thêm chút nhịp là kịp':'Đích này cần thêm vài combo nữa';
-    const alt=GOALS.filter(g=>g.k!==o.goal.k&&goalH(g.k)<o.targetH&&goalH(g.k)<=R.hChot).sort((a,b)=>goalH(b.k)-goalH(a.k))[0];
+    const alt=goalsList().filter(g=>g.k!==o.goal.k&&goalH(g.k)<o.targetH&&goalH(g.k)<=R.hChot).sort((a,b)=>goalH(b.k)-goalH(a.k))[0];
     let head,msg,vc;
     if(R.status==='done'){vc='good';head=`Cậu đã chạm mức của ${gName}`;msg=`Ngầu đấy! Từ giờ có hai hướng: nhắm một trường cao hơn cho vui, hoặc giữ phong độ và vào luyện đề sớm.`}
     else if(R.status==='good'){vc='good';head='Đúng đường rồi, cứ thế mà đi!';msg=`Với ${o.min} phút × ${o.dpw} buổi/tuần${o.cls?` và ${String(o.cls).replace('.',',')} giờ trên lớp`:''}, cậu dự kiến chạm mức của ${gName} (${tgt}) khoảng <b>${fmtD(R.end)}</b>, trước mốc chốt trường ${fmtD(R.g4)}. Tức là năm lớp 9 chỉ việc luyện đề, khỏi chạy nước rút.`}
@@ -296,6 +299,7 @@ function vCourse(){
   $('#cGrade').onchange=e=>{setGrade(+e.target.value);save();draw()};
   $('#cLv').onchange=e=>{S.course.lv=e.target.value||null;save();draw()};
   $('#cGoal').onchange=e=>{S.course.goal=e.target.value;save();draw()};
+  wireRegionPicker('cRegion',()=>vCourse());
   $('#cCls').onchange=e=>{S.plan.cls=+e.target.value;save();draw()};
   $('#cMin').oninput=e=>{S.plan.min=+e.target.value;$('#cMinO').textContent=S.plan.min;save();draw()};
   $('#cDpw').oninput=e=>{S.plan.dpw=+e.target.value;$('#cDpwO').textContent=S.plan.dpw;save();draw()};

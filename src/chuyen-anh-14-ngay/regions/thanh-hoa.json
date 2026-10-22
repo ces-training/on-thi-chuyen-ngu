@@ -1,0 +1,517 @@
+{
+ "slug": "thanh-hoa",
+ "name": "Thanh Hóa",
+ "merged_from": [],
+ "edition": "Bản Thanh Hóa",
+ "exam_md": [
+  6,
+  6
+ ],
+ "papers": {
+  "so": {
+   "map": "B2+",
+   "label": "đề chuyên Anh của Sở Thanh Hóa",
+   "ac_add": 2.5,
+   "ac_cap": 10,
+   "ac_label": "Anh chung (đề chung)",
+   "difficulty": "B2+",
+   "difficulty_evidence": "Ước lượng từ cấu trúc đề 2025 (nghe kiểu IELTS/FCE, gapped text, key word transformation, luận 200–220 từ) — chưa có báo nào xếp CEFR. Mức điểm cho thấy đề khó: thủ khoa chuyên Anh 2026 chỉ đạt 7,5 môn chuyên (Sức khỏe cộng đồng/Báo Thanh Hóa), thủ khoa 2023 đạt 9,2 (Công lý); thủ khoa Tin 2025 có IELTS 7.0 đạt 10 Anh chung.",
+   "minutes": 150,
+   "has_listening": true,
+   "essay_words": 210,
+   "sections": [
+    {
+     "format": "true_false",
+     "items": 5,
+     "points": 0.5,
+     "note": "Listening part 1: True/False (đề 2025: bản tin về cá mập). Toàn đề chấm thang 100 rồi quy về 10; phần nghe 20/100 = 2,0 điểm."
+    },
+    {
+     "format": "listening",
+     "items": 10,
+     "points": 1.0,
+     "note": "Listening part 2: điền tối đa 2 từ (gap-fill, bài nói về in 3D)"
+    },
+    {
+     "format": "listening",
+     "items": 5,
+     "points": 0.5,
+     "note": "Listening part 3: trắc nghiệm A–D (hội thoại giữa hai chuyên gia dinh dưỡng). Mỗi phần nghe 2 lần"
+    },
+    {
+     "format": "pronunciation",
+     "items": 3,
+     "points": 0.3,
+     "note": "Chọn từ có phần gạch chân phát âm khác"
+    },
+    {
+     "format": "stress",
+     "items": 2,
+     "points": 0.2,
+     "note": "Chọn từ có trọng âm khác"
+    },
+    {
+     "format": "other",
+     "items": 5,
+     "points": 0.5,
+     "note": "Chia động từ trong ngoặc (verb forms)"
+    },
+    {
+     "format": "word_formation",
+     "items": 5,
+     "points": 0.5,
+     "note": "Cho dạng đúng của từ trong ngoặc"
+    },
+    {
+     "format": "error_id",
+     "items": 5,
+     "points": 0.5,
+     "note": "Tìm và sửa lỗi trong đoạn văn"
+    },
+    {
+     "format": "sentence_completion",
+     "items": 10,
+     "points": 1.0,
+     "note": "Trắc nghiệm A–D ngữ pháp/từ vựng"
+    },
+    {
+     "format": "open_cloze",
+     "items": 8,
+     "points": 0.8,
+     "note": "Điền 1 từ vào đoạn văn"
+    },
+    {
+     "format": "cloze",
+     "items": 8,
+     "points": 0.8,
+     "note": "Chọn từ đúng điền vào đoạn văn (multiple-choice cloze)"
+    },
+    {
+     "format": "reading_mcq",
+     "items": 8,
+     "points": 0.8,
+     "note": "Đọc hiểu trắc nghiệm"
+    },
+    {
+     "format": "gap_text",
+     "items": 6,
+     "points": 0.6,
+     "note": "Chọn câu/đoạn A–G điền vào chỗ trống (thừa 1 phương án)"
+    },
+    {
+     "format": "transformation",
+     "items": 10,
+     "points": 1.0,
+     "note": "Viết lại câu cùng nghĩa, gồm cả dạng có từ gợi ý (key word); nguồn ghi 5+5 câu, nhãn điểm chưa nhất quán"
+    },
+    {
+     "format": "essay",
+     "items": 1,
+     "points": 1.0,
+     "note": "Bài luận 200–220 từ; đề 2025: giới trẻ biết về ngôi sao nhiều hơn lịch sử dân tộc — tác động và giải pháp"
+    }
+   ],
+   "sample_links": [
+    "https://springboard.vn/?p=4265",
+    "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-thanh-hoa-208698",
+    "https://vietjack.com/de-thi-vao-lop-10-mon-tieng-anh/de-thi-chuyen-tieng-anh-vao-lop-10.jsp"
+   ]
+  }
+ },
+ "formulas": {
+  "so": {
+   "w": {
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 2.0
+   },
+   "paper": "so",
+   "text": "Điểm xét tuyển (ĐXT) = Toán + Ngữ văn + Tiếng Anh (chung) + Anh chuyên × 2 (năm 2026, thang 50). Năm 2025 môn chuyên nhân hệ số 3 (thang 60).",
+   "max": 50
+  }
+ },
+ "m3_label": null,
+ "exams": {
+  "so": {
+   "label": "Kỳ thi của Sở GD&ĐT Thanh Hóa",
+   "date": "05–06/6/2026 (thí sinh làm thủ tục 04/6/2026)",
+   "rule": "Chỉ được đăng ký 1 nguyện vọng vào 1 lớp chuyên của THPT chuyên Lam Sơn. Thí sinh thi chuyên được đăng ký thêm NV1, NV2 vào THPT công lập (hoặc thêm 1 NV DTNT + 2 NV công lập nếu đủ điều kiện DTNT); trượt chuyên thì dùng điểm 3 môn chung để xét công lập. Thứ tự xét: Lam Sơn → DTNT → công lập. Trúng tuyển Lam Sơn và đã xác nhận nhập học thì không được xét tiếp. Lam Sơn không có lớp chuyên ngoại ngữ khác ngoài tiếng Anh. Không tìm được nguồn về tỉ lệ học sinh Thanh Hóa thi thêm các trường chuyên thuộc đại học (Chuyên ĐH Vinh, các trường chuyên ở Hà Nội)."
+  }
+ },
+ "nv2_exam": null,
+ "nv_rule": "Chỉ được đăng ký 1 nguyện vọng vào 1 lớp chuyên của THPT chuyên Lam Sơn. Thí sinh thi chuyên được đăng ký thêm NV1, NV2 vào THPT công lập (hoặc thêm 1 NV DTNT + 2 NV công lập nếu đủ điều kiện DTNT); trượt chuyên thì dùng điểm 3 môn chung để xét công lập. Thứ tự xét: Lam Sơn → DTNT → công lập. Trúng tuyển Lam Sơn và đã xác nhận nhập học thì không được xét tiếp. Lam Sơn không có lớp chuyên ngoại ngữ khác ngoài tiếng Anh. Không tìm được nguồn về tỉ lệ học sinh Thanh Hóa thi thêm các trường chuyên thuộc đại học (Chuyên ĐH Vinh, các trường chuyên ở Hà Nội).",
+ "options": [
+  {
+   "id": "so-chuyn-lam-sn-anh",
+   "sk": "so-chuyn-lam-sn",
+   "school": "THPT chuyên Lam Sơn",
+   "area": "Thanh Hóa",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2022,
+    2023,
+    2024,
+    2026
+   ],
+   "cut": [
+    37.7,
+    39.0,
+    37.4,
+    38.15
+   ],
+   "scale": 50,
+   "quota": {
+    "2022": 70,
+    "2023": 70,
+    "2024": 70,
+    "2025": 70,
+    "2026": 70
+   },
+   "note": "2 lớp × 35 HS mỗi năm. 2022 là điểm DỰ KIẾN do Sở công bố (Thương hiệu & Công luận), chưa thấy bản chính thức. 2025 thang 60 vì môn chuyên × 3 — không so sánh trực tiếp với các năm khác. Tổng thí sinh dự thi Lam Sơn: 1.412 (2022), 1.562 (2023), ~1.200 (2025), 1.313 (2026) — không có số riêng cho chuyên Anh. Thủ khoa chuyên Anh: 2023 Lê Minh Đức 44,2 (chuyên 9,2); 2024 Lê Thị Hoàng Hà 41,05; 2026 Trần Phương Anh 42,75 (Anh chung 10, chuyên 7,5)."
+  }
+ ],
+ "paper": {
+  "map": "B2+",
+  "label": "đề chuyên Anh của Sở Thanh Hóa",
+  "ac_add": 2.5,
+  "ac_cap": 10,
+  "ac_label": "Anh chung (đề chung)",
+  "difficulty": "B2+",
+  "difficulty_evidence": "Ước lượng từ cấu trúc đề 2025 (nghe kiểu IELTS/FCE, gapped text, key word transformation, luận 200–220 từ) — chưa có báo nào xếp CEFR. Mức điểm cho thấy đề khó: thủ khoa chuyên Anh 2026 chỉ đạt 7,5 môn chuyên (Sức khỏe cộng đồng/Báo Thanh Hóa), thủ khoa 2023 đạt 9,2 (Công lý); thủ khoa Tin 2025 có IELTS 7.0 đạt 10 Anh chung.",
+  "minutes": 150,
+  "has_listening": true,
+  "essay_words": 210,
+  "sections": [
+   {
+    "format": "true_false",
+    "items": 5,
+    "points": 0.5,
+    "note": "Listening part 1: True/False (đề 2025: bản tin về cá mập). Toàn đề chấm thang 100 rồi quy về 10; phần nghe 20/100 = 2,0 điểm."
+   },
+   {
+    "format": "listening",
+    "items": 10,
+    "points": 1.0,
+    "note": "Listening part 2: điền tối đa 2 từ (gap-fill, bài nói về in 3D)"
+   },
+   {
+    "format": "listening",
+    "items": 5,
+    "points": 0.5,
+    "note": "Listening part 3: trắc nghiệm A–D (hội thoại giữa hai chuyên gia dinh dưỡng). Mỗi phần nghe 2 lần"
+   },
+   {
+    "format": "pronunciation",
+    "items": 3,
+    "points": 0.3,
+    "note": "Chọn từ có phần gạch chân phát âm khác"
+   },
+   {
+    "format": "stress",
+    "items": 2,
+    "points": 0.2,
+    "note": "Chọn từ có trọng âm khác"
+   },
+   {
+    "format": "other",
+    "items": 5,
+    "points": 0.5,
+    "note": "Chia động từ trong ngoặc (verb forms)"
+   },
+   {
+    "format": "word_formation",
+    "items": 5,
+    "points": 0.5,
+    "note": "Cho dạng đúng của từ trong ngoặc"
+   },
+   {
+    "format": "error_id",
+    "items": 5,
+    "points": 0.5,
+    "note": "Tìm và sửa lỗi trong đoạn văn"
+   },
+   {
+    "format": "sentence_completion",
+    "items": 10,
+    "points": 1.0,
+    "note": "Trắc nghiệm A–D ngữ pháp/từ vựng"
+   },
+   {
+    "format": "open_cloze",
+    "items": 8,
+    "points": 0.8,
+    "note": "Điền 1 từ vào đoạn văn"
+   },
+   {
+    "format": "cloze",
+    "items": 8,
+    "points": 0.8,
+    "note": "Chọn từ đúng điền vào đoạn văn (multiple-choice cloze)"
+   },
+   {
+    "format": "reading_mcq",
+    "items": 8,
+    "points": 0.8,
+    "note": "Đọc hiểu trắc nghiệm"
+   },
+   {
+    "format": "gap_text",
+    "items": 6,
+    "points": 0.6,
+    "note": "Chọn câu/đoạn A–G điền vào chỗ trống (thừa 1 phương án)"
+   },
+   {
+    "format": "transformation",
+    "items": 10,
+    "points": 1.0,
+    "note": "Viết lại câu cùng nghĩa, gồm cả dạng có từ gợi ý (key word); nguồn ghi 5+5 câu, nhãn điểm chưa nhất quán"
+   },
+   {
+    "format": "essay",
+    "items": 1,
+    "points": 1.0,
+    "note": "Bài luận 200–220 từ; đề 2025: giới trẻ biết về ngôi sao nhiều hơn lịch sử dân tộc — tác động và giải pháp"
+   }
+  ],
+  "sample_links": [
+   "https://springboard.vn/?p=4265",
+   "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-thanh-hoa-208698",
+   "https://vietjack.com/de-thi-vao-lop-10-mon-tieng-anh/de-thi-chuyen-tieng-anh-vao-lop-10.jsp"
+  ]
+ },
+ "exam_2026": {
+  "dates": "05–06/6/2026 (thí sinh làm thủ tục 04/6/2026)",
+  "organisation": "một đề chung cho cả tỉnh (Thanh Hóa không sáp nhập); thi chung kỳ với tuyển sinh công lập và THPT DTNT",
+  "common_subjects": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh"
+  ],
+  "notes": "Ngữ văn 120', Toán 120', Tiếng Anh chung 60'; môn chuyên 150', chuyên Anh có thêm phần nghe, chuyên Tin thi lập trình trên máy tính. Sở công bố tiếng Anh là môn thứ ba ngày 15/01/2026. Kế hoạch theo QĐ 811/QĐ-UBND ngày 24/3/2026. 51.366 thí sinh đăng ký toàn tỉnh, trong đó 1.313 thí sinh đăng ký thi chuyên Lam Sơn (Báo Văn hóa). Chuyên Lam Sơn chỉ tiêu 12 lớp/420 HS, chuyên Anh 2 lớp (70 HS)."
+ },
+ "plan_2027": null,
+ "stories": [
+  {
+   "title": "Bí quyết của thủ khoa tiếng Anh Trường THPT Chuyên Lam Sơn",
+   "who": "báo",
+   "year": 2023,
+   "school": "THPT chuyên Lam Sơn",
+   "summary": "Lê Minh Đức (THCS Vạn Hà, Thiệu Hóa) đỗ thủ khoa lớp chuyên Anh với 44,2 điểm (Anh chuyên 9,2; Anh chung 9,8). Em học từ nhỏ qua nghe – nhắc lại, xem chương trình và phim tiếng Anh, học thêm qua khóa online và YouTube, và đạt giải Nhì HSG tỉnh tiếng Anh hai năm liền (lớp 8, 9).",
+   "takeaways": [
+    "Muốn giỏi tiếng Anh phải nghe tốt; muốn viết tốt phải đọc nhiều",
+    "Kết hợp học ở trường, trung tâm và tự học online/YouTube, xem phim, đọc truyện tiếng Anh",
+    "Thi HSG tỉnh môn Anh lớp 8–9 là bước luyện tốt cho đề chuyên"
+   ],
+   "url": "https://congly.vn/bi-quyet-cua-thu-khoa-tieng-anh-truong-thpt-chuyen-lam-son-380696.html"
+  },
+  {
+   "title": "Giành ngôi thủ khoa chuyên Lam Sơn với hai điểm 10",
+   "who": "báo",
+   "year": 2025,
+   "school": "THPT chuyên Lam Sơn",
+   "summary": "Lê Nguyễn Minh Hiếu (THCS Trần Mai Ninh) thủ khoa toàn trường 57,25/60 (thi chuyên Tin), đạt 10 môn tiếng Anh chung. Em học từ vựng IELTS từ lớp 8, có IELTS 7.0, và luyện nhiều đề nên thấy bài thi tiếng Anh nhẹ nhàng.",
+   "takeaways": [
+    "Học từ vựng IELTS từ lớp 8 giúp xử lý tốt phần tiếng Anh chung (hệ số 1 nhưng ảnh hưởng tổng điểm)",
+    "Làm 3–4 đề/ngày giai đoạn nước rút và chữa kỹ từng đề",
+    "Học nhóm 2–3 bạn qua video call để phát hiện lỗ hổng kiến thức"
+   ],
+   "url": "https://vnexpress.net/gianh-ngoi-thu-khoa-chuyen-lam-son-voi-hai-diem-10-4904307.html"
+  },
+  {
+   "title": "Thủ khoa Trường THPT Chuyên Lam Sơn năm học 2026-2027",
+   "who": "báo",
+   "year": 2026,
+   "school": "THPT chuyên Lam Sơn",
+   "summary": "Thủ khoa lớp chuyên Anh 2026 là Trần Phương Anh (THCS Triệu Thị Trinh, Triệu Sơn) với 42,75 điểm, trong đó tiếng Anh chung 10 nhưng Anh chuyên chỉ 7,5. Điều này cho thấy đề chuyên Anh Lam Sơn rất khó, chênh lệch lớn so với đề chung.",
+   "takeaways": [
+    "Đạt 7–7,5 môn Anh chuyên đã có thể ở nhóm đầu; không cần tuyệt đối",
+    "Điểm tối đa ở môn Anh chung và Toán/Văn ổn định là yếu tố quyết định"
+   ],
+   "url": "https://baothanhhoa.vn/thu-khoa-truong-thpt-chuyen-lam-son-nam-hoc-2026-2027-co-mon-chuyen-dat-diem-gan-tuyet-doi-292894.htm"
+  },
+  {
+   "title": "Những thủ khoa đầu vào Trường THPT chuyên Lam Sơn năm học 2023-2024 (longform)",
+   "who": "báo",
+   "year": 2023,
+   "school": "THPT chuyên Lam Sơn",
+   "summary": "Báo Thanh Hóa giới thiệu các thủ khoa 2023; Hà Anh Tiến (thủ khoa kép, chuyên Tin) đạt 9,6 tiếng Anh chung, từng đạt giải Nhì HSG tỉnh tiếng Anh lớp 8 và 9. THCS Trần Mai Ninh có 32 học sinh đỗ lớp chuyên Anh — nhiều nhất trong các môn của trường này.",
+   "takeaways": [
+    "Tiếng Anh có thể tự học qua nhiều kênh; tra cứu thêm tài liệu và làm thêm bài tập trên mạng",
+    "Hỏi bạn bè, thầy cô ngay khi chưa hiểu"
+   ],
+   "url": "https://baothanhhoa.vn/longform--nhung-thu-khoa-dau-vao-truong-thpt-chuyen-lam-son-nam-hoc-2023-2024-188018.htm"
+  }
+ ],
+ "prep_tips": [
+  "Luyện nghe 3 dạng: True/False, điền tối đa 2 từ, trắc nghiệm hội thoại học thuật — phần nghe chiếm 20/100 điểm đề chuyên (đề 2025, Springboard).",
+  "Ôn kỹ dạng gapped text (chọn câu A–G điền đoạn) và key word transformation — hai dạng kiểu Cambridge FCE/CAE có trong đề 2025.",
+  "Luyện viết luận 200–220 từ về vấn đề xã hội (nguyên nhân – tác động – giải pháp) trong 150 phút tổng thời gian.",
+  "Đừng xem nhẹ 3 môn chung: điểm chuẩn chuyên Anh 2026 là 38,15/50 và thủ khoa có Anh chung 10 nhưng Anh chuyên chỉ 7,5 — Toán, Văn, Anh chung kéo tổng điểm (Báo Thanh Hóa 2026).",
+  "Điều kiện cứng: môn chuyên phải ≥ 5,0 và mỗi môn chung ≥ 3,0 mới được xét (QĐ phương án tuyển sinh Thanh Hóa)."
+ ],
+ "confidence": "medium",
+ "gaps": [
+  "Số thí sinh đăng ký riêng lớp chuyên Anh Lam Sơn (tỉ lệ chọi) các năm",
+  "Điểm chuẩn chính thức 2022 (mới có điểm dự kiến 37,70)",
+  "Kế hoạch tuyển sinh 2027 của Thanh Hóa (chưa công bố tại thời điểm 23/10/2026)",
+  "Cấu trúc đề chuyên Anh 2026 (mới có chi tiết đề 2025); mức CEFR là ước lượng",
+  "Văn bản 2024 nêu rõ hệ số môn chuyên (suy ra là ×2)",
+  "Nguồn luatminhkhue ghi chuyên Anh 2023 = 45,95 mâu thuẫn với Thanh Niên (39) — đã dùng số của Thanh Niên"
+ ],
+ "sources": [
+  {
+   "title": "Tuổi Trẻ: Tuyển sinh vào lớp 10 THPT tại Thanh Hóa diễn ra ngày 5 và 6-6 (2026)",
+   "url": "https://tuoitre.vn/tuyen-sinh-vao-lop-10-thpt-tai-thanh-hoa-dien-ra-ngay-5-va-6-6-20260325111830267.htm"
+  },
+  {
+   "title": "Tuyensinh247: Thanh Hoá chốt lịch thi lớp 10 năm học 2026-2027",
+   "url": "https://thi.tuyensinh247.com/thanh-hoa-chot-lich-thi-lop-10-nam-hoc-2026-2027-c22a88940.html"
+  },
+  {
+   "title": "Báo Văn hóa: Thanh Hóa tăng gần 8.000 thí sinh thi lớp 10 năm 2026",
+   "url": "https://baovanhoa.vn/doi-song/thanh-hoa-tang-gan-8000-thi-sinh-thi-lop-10-nam-2026-227386.html"
+  },
+  {
+   "title": "Đại biểu Nhân dân: Thanh Hóa công bố môn thi thứ ba vào lớp 10 là tiếng Anh",
+   "url": "https://daibieunhandan.vn/thanh-hoa-cong-bo-mon-thi-thu-ba-vao-lop-10-la-tieng-anh-10403974.html"
+  },
+  {
+   "title": "Giáo dục & Thời đại: Sở GD&ĐT Thanh Hóa công bố điểm chuẩn vào lớp 10 (2026)",
+   "url": "https://giaoduc.net.vn/so-gddt-thanh-hoa-cong-bo-diem-chuan-vao-lop-10-thpt-ham-rong-cao-nhat-256-post261007.gd"
+  },
+  {
+   "title": "Sức khỏe cộng đồng: Thanh Hóa công bố điểm chuẩn lớp 10 chuyên Lam Sơn, thủ khoa đạt 47,81 điểm",
+   "url": "https://suckhoecongdongonline.vn/thanh-hoa-lo-dien-thu-khoa-truong-thpt-chuyen-lam-son-nam-hoc-2026-2027"
+  },
+  {
+   "title": "Báo Thanh Hóa: Thủ khoa Trường THPT Chuyên Lam Sơn năm học 2026-2027",
+   "url": "https://baothanhhoa.vn/thu-khoa-truong-thpt-chuyen-lam-son-nam-hoc-2026-2027-co-mon-chuyen-dat-diem-gan-tuyet-doi-292894.htm"
+  },
+  {
+   "title": "Tuổi Trẻ (Mực Tím): Điểm chuẩn chuyên Lam Sơn 2025 cao nhất 49,40",
+   "url": "https://muctim.tuoitre.vn/thanh-hoa-cong-bo-diem-chuan-lop-10-truong-thpt-chuyen-lam-son-cao-nhat-4940-diem-101250618102029423.htm"
+  },
+  {
+   "title": "Thanh Tra: Thanh Hóa công bố phương án thi vào lớp 10 THPT công lập và chuyên Lam Sơn (2025)",
+   "url": "https://thanhtra.com.vn/giao-duc-A6BAEB6CD/thanh-hoa-cong-bo-phuong-an-thi-vao-lop-10-thpt-cong-lap-va-chuyen-lam-son-6a62565d1.html"
+  },
+  {
+   "title": "VnEconomy: Thanh Hóa công bố phương án tuyển sinh lớp 10 (2025)",
+   "url": "https://vneconomy.vn/thanh-hoa-cong-bo-phuong-an-tuyen-sinh-lop-10.htm"
+  },
+  {
+   "title": "Thương hiệu & Công luận: Thông tin chính thức tuyển sinh Lam Sơn 2025-2026",
+   "url": "https://thuonghieucongluan.com.vn/thong-tin-chinh-thuc-ve-tuyen-sinh-lop-10-vao-truong-thpt-chuyen-lam-son-nam-hoc-2025-2026-a258105.html"
+  },
+  {
+   "title": "Thanh Niên: Điểm trúng tuyển Trường THPT chuyên Lam Sơn (2024)",
+   "url": "https://thanhnien.vn/diem-trung-tuyen-truong-thpt-chuyen-lam-son-la-bao-nhieu-185240606161224836.htm"
+  },
+  {
+   "title": "Thanh Niên: Công bố điểm trúng tuyển vào lớp 10 Trường chuyên Lam Sơn (2023)",
+   "url": "https://thanhnien.vn/cong-bo-diem-trung-tuyen-vao-lop-10-truong-chuyen-lam-son-185230602103524071.htm"
+  },
+  {
+   "title": "Thương hiệu & Công luận: Dự kiến điểm trúng tuyển Lam Sơn 2022-2023",
+   "url": "https://thuonghieucongluan.com.vn/thanh-hoa-cong-bo-du-kien-diem-trung-tuyen-vao-lop-10-truong-thpt-chuyen-lam-son-nam-hoc-2022-2023-a173204.html"
+  },
+  {
+   "title": "UBND Thanh Hóa: Quyết định phê duyệt phương án tuyển sinh lớp 10 năm học 2022-2023",
+   "url": "https://qppl.thanhhoa.gov.vn/vbpq_thanhhoa.nsf/98D5E36CF4A2818347258814000E434B/$file/DT-VBDTPT895939258-3-20221647915833375_tungdt_26-03-2022-08-58-46_signed.pdf"
+  },
+  {
+   "title": "Tuyensinh247: Điểm chuẩn lớp 10 Thanh Hóa 3 năm gần đây",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/thanh-hoa-p38.html"
+  },
+  {
+   "title": "VnExpress: Đáp án đề thi vào lớp 10 THPT chuyên Lam Sơn 2025",
+   "url": "https://vnexpress.net/dap-an-de-thi-vao-lop-10-thpt-chuyen-lam-son-thanh-hoa-2025-4894746.html"
+  },
+  {
+   "title": "Springboard: Đề thi và đáp án chuyên Anh Thanh Hóa 2025-2026",
+   "url": "https://springboard.vn/?p=4265"
+  },
+  {
+   "title": "Công lý: Bí quyết của thủ khoa tiếng Anh Trường THPT Chuyên Lam Sơn",
+   "url": "https://congly.vn/bi-quyet-cua-thu-khoa-tieng-anh-truong-thpt-chuyen-lam-son-380696.html"
+  },
+  {
+   "title": "VnExpress: Giành ngôi thủ khoa chuyên Lam Sơn với hai điểm 10",
+   "url": "https://vnexpress.net/gianh-ngoi-thu-khoa-chuyen-lam-son-voi-hai-diem-10-4904307.html"
+  },
+  {
+   "title": "Báo Thanh Hóa: Longform những thủ khoa đầu vào Lam Sơn 2023-2024",
+   "url": "https://baothanhhoa.vn/longform--nhung-thu-khoa-dau-vao-truong-thpt-chuyen-lam-son-nam-hoc-2023-2024-188018.htm"
+  }
+ ],
+ "formula_raw": {
+  "text": "Điểm xét tuyển (ĐXT) = Toán + Ngữ văn + Tiếng Anh (chung) + Anh chuyên × 2 (năm 2026, thang 50). Năm 2025 môn chuyên nhân hệ số 3 (thang 60).",
+  "parts": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh (chung)",
+   "Anh chuyên×2"
+  ],
+  "max": 50,
+  "conditions": "Dự thi đủ 4 bài, không vi phạm quy chế; mỗi môn chung ≥ 3,0; môn chuyên (chưa nhân hệ số) ≥ 5,0; hạnh kiểm, học lực các lớp THCS từ khá trở lên; hộ khẩu Thanh Hóa (trường hợp khác do Giám đốc Sở quyết định). Xét từ cao xuống thấp; bằng điểm xét lần lượt: điểm môn chuyên, giải HSG tỉnh môn chuyên, ĐTB lớp 9 môn chuyên…",
+  "formula_by_year": {
+   "2022": "Toán + Văn + Anh chung (hệ số 1) + môn chuyên × 2; thang 50 (QĐ phê duyệt phương án tuyển sinh 2022)",
+   "2023": "Toán + Văn + Anh chung + môn chuyên × 2; thang 50 (Thanh Niên 02/6/2023)",
+   "2024": "Như 2023 (môn chuyên × 2, thang 50) — báo không nêu lại, suy ra từ phương án các năm 2023 và 2026",
+   "2025": "Toán + Văn + Anh chung + môn chuyên × 3; thang 60 (Thanh Tra, VnEconomy 3/2025; thủ khoa 2025 đạt 57,25/60 theo VnExpress)",
+   "2026": "Toán + Văn + Anh chung + môn chuyên × 2; thang 50 (tuyensinh247 tổng hợp kế hoạch 2026; Sức khỏe cộng đồng: thủ khoa chuyên Anh 42,75 = gồm Anh chung 10 và Anh chuyên 7,5)"
+  }
+ },
+ "schools_raw": [
+  {
+   "name": "THPT chuyên Lam Sơn",
+   "old_province": "Thanh Hóa",
+   "city": "Thanh Hóa (phường Hạc Thành)",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2022": 70,
+      "2023": 70,
+      "2024": 70,
+      "2025": 70,
+      "2026": 70
+     },
+     "applicants": {
+      "2026": null
+     },
+     "cut": {
+      "2022": 37.7,
+      "2023": 39.0,
+      "2024": 37.4,
+      "2025": 46.15,
+      "2026": 38.15
+     },
+     "scale": {
+      "2022": 50,
+      "2023": 50,
+      "2024": 50,
+      "2025": 60,
+      "2026": 50
+     },
+     "note": "2 lớp × 35 HS mỗi năm. 2022 là điểm DỰ KIẾN do Sở công bố (Thương hiệu & Công luận), chưa thấy bản chính thức. 2025 thang 60 vì môn chuyên × 3 — không so sánh trực tiếp với các năm khác. Tổng thí sinh dự thi Lam Sơn: 1.412 (2022), 1.562 (2023), ~1.200 (2025), 1.313 (2026) — không có số riêng cho chuyên Anh. Thủ khoa chuyên Anh: 2023 Lê Minh Đức 44,2 (chuyên 9,2); 2024 Lê Thị Hoàng Hà 41,05; 2026 Trần Phương Anh 42,75 (Anh chung 10, chuyên 7,5)."
+    }
+   ]
+  }
+ ],
+ "goals": [
+  {
+   "k": "so-chuyn-lam-sn",
+   "name": "chuyên Lam Sơn",
+   "score": 7.0,
+   "paper": "so",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "so-chuyn-lam-sn"
+}

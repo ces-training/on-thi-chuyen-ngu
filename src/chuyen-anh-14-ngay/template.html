@@ -320,6 +320,7 @@ u.tip{text-decoration:underline 2px var(--signal);text-underline-offset:3px}
 #examBox{display:flex;flex-direction:column;gap:12px}
 .x-intro{background:var(--surface2);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
 .x-tip{background:var(--gold-tint);color:var(--gold-ink);border-radius:8px;padding:6px 10px}
+.x-reg{background:var(--agent-tint,#E6F3F6);border-left:4px solid var(--agent);border-radius:8px;padding:6px 10px}
 .x-form{display:flex;flex-direction:column;gap:14px}
 .x-seg{text-decoration:underline 2px;text-underline-offset:4px}.x-seg sub{font-size:.7rem;font-weight:800;color:var(--agent);margin-left:1px}
 .qtext u{text-decoration-thickness:2px}.opt u{text-decoration-thickness:2px;text-underline-offset:3px}
@@ -796,7 +797,7 @@ const TET={2027:[1,6],2028:[0,26],2029:[1,13],2030:[1,3],2031:[0,23],2032:[1,11]
 function tetDate(y){const t=TET[y];return t?new Date(y,t[0],t[1]):null}
 function chotDate(g){const e=examDateFor(g),c=new Date(e.getFullYear(),e.getMonth()-CHOT_MONTHS,1),t=tetDate(c.getFullYear());
   if(t){const b=new Date(t.getTime()-7*864e5);if(b<c)return b}return c}
-function goalNow(){const k=(S.course&&S.course.goal)||'cva';const G=GOALS.find(x=>x.k===k)||GOALS[1];return {k:G.k,h:goalH(G.k),name:G.name}}
+function goalNow(){const G=goalPick(S.course&&S.course.goal);return {k:G.k,h:goalH(G.k),name:G.name}}
 /* mốc chuẩn của CES, tính ngược từ mốc chốt theo mức cần của trường cậu nhắm:
    đích từ C1 → B1 Tết lớp 7, B2 Tết lớp 8; đích B2–B2+ → B1 hết lớp 7, B2 hết lớp 8 */
 function MS(){const g=gradeNow(),Y=examDateFor(g).getFullYear(),G=goalNow(),hi=G.h>=750,out=[];
@@ -1021,6 +1022,7 @@ function vStart(){
     <h3>Tớ là Hùng, còn cậu?</h3>
     <p class="small">Hùng trong "Hùng dũng", chứ không phải Hùng trong "Hùng hổ" nhé. Tớ sẽ đi cùng cậu suốt chặng này. Cho tớ biết tên để tớ gọi cho thân.</p>
     <div class="row"><input type="text" id="nameInput" maxlength="40" placeholder="Ví dụ: Minh Anh" value="${esc(S.name)}" style="max-width:320px"><button class="btn" id="saveName">Lưu tên</button></div>
+    <div class="sgrid" style="margin-top:8px">${regionPickerHTML('stRegion')}</div><p class="small muted">Tớ tính trường, công thức xét tuyển và lịch thi theo nơi cậu thi.</p>
     <p class="small muted">${cloudOn()?'Kết quả được lưu trên máy này và tự gửi cho cô.':'Kết quả được lưu trên chính máy/trình duyệt cậu đang dùng. Hãy luôn mở trang này trên cùng một máy.'}</p>
   </div>
   <div class="card">
@@ -1035,6 +1037,7 @@ function vStart(){
     <div class="row"><button class="btn ghost" id="goPlan">Xem lộ trình đến kỳ thi</button></div>
   </div></div></section>`;
   $('#saveName').onclick=()=>{S.name=$('#nameInput').value.trim();save();renderHello();$('#saveName').textContent='Đã lưu'};
+  wireRegionPicker('stRegion');
   const gd=$('#goDiag');if(gd)gd.onclick=()=>go('diag');
   const gy=$('#goDay');if(gy)gy.onclick=()=>go('days',{day:nd});
   wireDash(nd);
@@ -1397,8 +1400,8 @@ function vPlan(){
   const entry=S.final&&S.final.hours>(S.diag?S.diag.hours:0)?S.final:S.diag;
   const entryH=entry?entry.hours:null;
   M().innerHTML=`<section class="view">
-  <div><p class="eyebrow">Chỉ tính môn tiếng Anh</p><h2>Đường lên level của cậu</h2><p class="lead">Đề chuyên Anh Hà Nội dùng từ vựng chủ yếu ở B2, câu "phân loại" ở C1. CES chốt level và trường vào tháng ${chotDate(gradeNow()).getMonth()+1} năm lớp 9, sớm hơn kỳ thi ${CHOT_MONTHS} tháng, để năm cuối cấp cậu nhẹ đầu. Các mốc dưới đây tính ngược từ đó, theo trường cậu nhắm.</p></div>
-  <div class="card"><div class="sgrid"><label class="fld">Cậu đang học lớp<select id="pGrade">${[6,7,8,9].map(g=>`<option value="${g}" ${gradeNow()===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label><label class="fld">Trường cậu nhắm<select id="pGoal">${GOALS.map(g=>`<option value="${g.k}" ${goalNow().k===g.k?'selected':''}>${esc(g.name)} (cần khoảng ${esc(lvName(goalH(g.k)))})</option>`).join('')}</select></label><label class="fld">Học trên lớp ở CES<select id="pCls">${[[0,'Không (tự học)'],[1.5,'1,5 giờ/tuần'],[3,'3 giờ/tuần'],[4.5,'4,5 giờ/tuần']].map(([v,n])=>`<option value="${v}" ${(S.plan.cls||0)===v?'selected':''}>${n}</option>`).join('')}</select></label></div>
+  <div><p class="eyebrow">Chỉ tính môn tiếng Anh</p><h2>Đường lên level của cậu</h2><p class="lead">${regionKey()==='ha-noi'?'Đề chuyên Anh Hà Nội dùng từ vựng chủ yếu ở B2, câu "phân loại" ở C1.':`Đề chuyên Anh ${esc(REG().name)} ước khoảng mức ${esc(Object.values(regionPapers())[0].map)} (theo nhận xét đề các năm gần đây).`} CES chốt level và trường vào tháng ${chotDate(gradeNow()).getMonth()+1} năm lớp 9, sớm hơn kỳ thi ${CHOT_MONTHS} tháng, để năm cuối cấp cậu nhẹ đầu. Các mốc dưới đây tính ngược từ đó, theo trường cậu nhắm.</p></div>
+  <div class="card"><div class="sgrid"><label class="fld">Cậu đang học lớp<select id="pGrade">${[6,7,8,9].map(g=>`<option value="${g}" ${gradeNow()===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label><label class="fld">Trường cậu nhắm<select id="pGoal">${goalsList().map(g=>`<option value="${g.k}" ${goalNow().k===g.k?'selected':''}>${esc(g.name)} (cần khoảng ${esc(lvName(goalH(g.k)))})</option>`).join('')}</select></label><label class="fld">Học trên lớp ở CES<select id="pCls">${[[0,'Không (tự học)'],[1.5,'1,5 giờ/tuần'],[3,'3 giờ/tuần'],[4.5,'4,5 giờ/tuần']].map(([v,n])=>`<option value="${v}" ${(S.plan.cls||0)===v?'selected':''}>${n}</option>`).join('')}</select></label></div>
   <div class="row"><button class="btn ghost" id="toCourse">Sau 14 ngày học gì? Xem bản đồ theo giai đoạn</button></div></div>
   ${entry?`<div class="card"><h3>Cậu học bao nhiêu thì đi được tới đâu?</h3>
    <div class="sim">
@@ -1462,7 +1465,7 @@ function summary(){
   const A=agg();const eff=efficiency(A);const entry=S.diag;
   const days={};for(let i=1;i<=14;i++){const r=S.days[i];if(r){const g=Object.values(r.games||{}),x=Object.values(r.exam||{});days[i]=[r.web?r.web.correct:null,r.web?r.web.total:null,r.paper?r.paper.correct:null,r.paper?r.paper.total:null,r.web?r.web.at:(r.paper?r.paper.at:(g.length?Math.max(...g.map(y=>y.at)):null)),g.reduce((t,y)=>t+(y.stars||0),0),g.length,x.length?x.reduce((t,y)=>t+y.correct,0):null,x.length?x.reduce((t,y)=>t+y.total,0):null,...(()=>{const l=Object.values(r.listen||{});return l.length?[l.reduce((t,y)=>t+y.correct,0),l.reduce((t,y)=>t+y.total,0)]:[null,null]})()]}}
   const wrong=Object.entries(S.queue).map(([id,q])=>[id,q.wrong||1]);
-  return {v:1,n:S.name,d:S.diag&&{t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands,u:S.diag.dur,k:S.diag.blank},f:S.final&&{t:S.final.total,o:S.final.of,l:S.final.level,b:S.final.bands,u:S.final.dur,k:S.final.blank},days,sk:A.skills,rt:A.retry,mq:A.mastered,q:wrong,p:S.plan,g:gradeNow(),gl:goalNow().k,e:eff.f,sd:A.studyDays,sp:A.span,tr:curTrack(),sc:S.school&&{toan:S.school.toan,van:S.school.van,mode:S.school.mode,langs:S.school.langs,achSo:S.school.achSo,achCnn:S.school.achCnn,acSo:S.school.acSo,acCnn:S.school.acCnn},cs:S.course,at:Date.now()};
+  return {v:1,n:S.name,d:S.diag&&{t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands,u:S.diag.dur,k:S.diag.blank},f:S.final&&{t:S.final.total,o:S.final.of,l:S.final.level,b:S.final.bands,u:S.final.dur,k:S.final.blank},days,sk:A.skills,rt:A.retry,mq:A.mastered,q:wrong,p:S.plan,g:gradeNow(),gl:goalNow().k,e:eff.f,sd:A.studyDays,sp:A.span,tr:curTrack(),rg:regionKey(),sc:S.school&&{toan:S.school.toan,van:S.school.van,m3:S.school.m3,mode:S.school.mode,langs:S.school.langs,ach:S.school.ach,ac:S.school.ac},cs:S.course,at:Date.now()};
 }
 function vShare(){
   M().innerHTML=`<section class="view">
@@ -1489,7 +1492,7 @@ function reportHTML(o){
   const sk=Object.entries(o.sk||{}).map(([k,v])=>bar(SKILL_VI[k]||k,v[0],v[1])).join('');
   const weak=(o.q||[]).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([id,w])=>{const it=ITEM[id];return it?`<li>Buổi ${it.day} · ${esc(it.q)} <span class="muted">(sai ${w} lần, đáp án: ${esc(answerText(it))})</span></li>`:''}).join('');
   const entryH=o.d?ENTRY_H[o.d.l]:null;
-  let need='';if(entryH){const cl=(o.p&&o.p.cls)||0;const gk=o.gl||'cva',gn=(GOALS.find(x=>x.k===gk)||GOALS[1]).name,cd=chotDate(o.g||7);const r=requiredMin(entryH,goalH(gk),o.e||1,cd,(o.p&&o.p.dpw)||6,cl);need=`Lớp ${o.g||7}, nhắm ${gn}. Ước tính cần khoảng ${isFinite(r)?Math.ceil(r/5)*5:'—'} phút tự học/ngày × ${(o.p&&o.p.dpw)||6} ngày/tuần${cl?' cộng '+String(cl).replace('.',',')+' giờ học trên lớp':''} để đạt mức cần trước mốc chốt trường ${String(cd.getMonth()+1).padStart(2,'0')}/${cd.getFullYear()}.`}
+  let need='';if(entryH){const cl=(o.p&&o.p.cls)||0;const gk=o.gl||'cva',gn=goalPick(gk).name,cd=chotDate(o.g||7);const r=requiredMin(entryH,goalH(gk),o.e||1,cd,(o.p&&o.p.dpw)||6,cl);need=`Lớp ${o.g||7}, nhắm ${gn}. Ước tính cần khoảng ${isFinite(r)?Math.ceil(r/5)*5:'—'} phút tự học/ngày × ${(o.p&&o.p.dpw)||6} ngày/tuần${cl?' cộng '+String(cl).replace('.',',')+' giờ học trên lớp':''} để đạt mức cần trước mốc chốt trường ${String(cd.getMonth()+1).padStart(2,'0')}/${cd.getFullYear()}.`}
   return `<div class="card" style="margin-top:12px"><h3>${esc(o.n||'Học sinh')}</h3>
    <p>Đầu vào: <b>${o.d?o.d.t+'/'+o.d.o+' · '+lv(o.d.l):'chưa làm'}</b> · Đầu ra: <b>${o.f?o.f.t+'/'+o.f.o+' · '+lv(o.f.l):'chưa làm'}</b></p>
    <p class="small">Học ${o.sd||0} ngày trong ${o.sp||0} ngày · Câu từng sai làm lại đúng ${o.rt&&o.rt[1]?Math.round(100*o.rt[0]/o.rt[1])+'%':'—'} · Đã nhớ chắc ${o.mq||0} câu · Hệ số hiệu quả ${o.e||1} · Lịch đang chọn ${o.p?o.p.min+' phút × '+o.p.dpw+' ngày':'—'}</p>
@@ -1503,6 +1506,9 @@ function reportHTML(o){
 /*__REPORT_JS__*/
 /*__PREVIEW_JS__*/
 /* ---------- boot ---------- */
+/* ?so=<slug>: mở thẳng bộ ôn của một sở (từ trang Chuyên Anh các tỉnh) */
+try{const qs=new URLSearchParams(location.search).get('so');if(qs&&REGIONS[qs]&&S.region!==qs){S.region=qs;S.course=Object.assign({},S.course||{});if(!goalsList().some(g=>g.k===S.course.goal))S.course.goal=REG().goal_default||goalsList()[0].k;saveLocal()}}catch(e){}
+renderBrand();
 if(!bootReport())go(S.diag?(dayStatus(1)==='none'?'start':'days'):'start');
 if(cloudOn()){loadMy().catch(()=>{});if(!S.syncedAt||(S.savedAt||0)>S.syncedAt)doSync()}
 })();

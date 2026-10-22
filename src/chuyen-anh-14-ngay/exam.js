@@ -12,6 +12,11 @@ function xSpeak(text,btn,state){const synth=window.speechSynthesis;if(!synth||!w
   u.onend=()=>{btn.disabled=state.plays>=2;btn.textContent=state.plays>=2?'Đã nghe 2 lần':'▶ Nghe lần 2'};
   state.plays++;btn.disabled=true;btn.textContent='Đang phát…';synth.speak(u)}
 
+/* dạng bài này có trong đề chuyên Anh của sở cậu chọn không (regions/<slug>.json → paper.sections) */
+function regionFmtLine(fm){const RG=REG();if(RG.slug==='ha-noi'||!RG.paper||!RG.paper.sections||!RG.paper.sections.length||fm==='mixed')return '';
+  const alias={closest_meaning:['closest_meaning','transformation','key_word'],transformation:['transformation','key_word','sentence_combining'],cloze:['cloze','open_cloze'],word_formation:['word_formation'],reading_mcq:['reading_mcq','true_false','matching_headings']};
+  const keys=alias[fm]||[fm];const hit=RG.paper.sections.filter(x=>keys.includes(x.format));
+  return `<p class="x-reg small">${hit.length?`<b>Đề chuyên Anh ${esc(RG.name)}</b> có dạng này${hit[0].items?`: khoảng ${hit.reduce((t,x)=>t+(x.items||0),0)} câu`:''}.`:`Đề chuyên Anh ${esc(RG.name)} gần đây không có đúng dạng này; vẫn nên luyện vì nó rèn cùng kỹ năng.`}</p>`}
 function renderExam(box,B,saved,onDone){
   const kind=B.kind,items=B.items||[];
   const perm=it=>B.format==='error_id'||!it.options?[0,1,2,3]:G_SHUF([0,1,2,3].slice(0,it.options.length));
@@ -37,7 +42,7 @@ function renderExam(box,B,saved,onDone){
   }else if(kind==='order'){
     body+=`<div class="x-order"><p class="small muted">Lượt đầu đã đặt sẵn. Chạm các lượt lời còn lại theo đúng thứ tự; chạm lượt đã xếp để bỏ ra.</p><ol class="x-built"></ol><div class="x-pool"></div></div>`;
   }
-  box.innerHTML=`<div class="x-intro"><p class="eyebrow">${esc(X_FMT[B.format]||B.format)}</p><h3>${esc(B.title_vi||'')}</h3><p class="small">${esc(B.intro_vi||'')}</p>${B.tip_vi?`<p class="x-tip small">${esc(B.tip_vi)}</p>`:''}</div>
+  box.innerHTML=`<div class="x-intro"><p class="eyebrow">${esc(X_FMT[B.format]||B.format)}</p><h3>${esc(B.title_vi||'')}</h3><p class="small">${regionKey()!=='ha-noi'?'<b>Ở Hà Nội:</b> ':''}${esc(B.intro_vi||'')}</p>${regionFmtLine(B.format)}${B.tip_vi?`<p class="x-tip small">${esc(B.tip_vi)}</p>`:''}</div>
    <form class="x-form">${body}<div class="sticky-submit"><button class="btn hi" type="submit">Chấm bài</button><span class="small muted x-msg"></span></div></form>`;
   const form=box.querySelector('form');wireOptionHighlight(form);
   // nghe

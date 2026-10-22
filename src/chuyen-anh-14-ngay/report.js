@@ -89,12 +89,12 @@ function reportBody(){
    <li><span>Hệ số tốc độ học (1 = trung bình)</span><b>${String(eff.f).replace('.',',')}</b></li><li><span>Tuyến lộ trình phù hợp</span><b>${P.stage==='live'?PACE_NAME[P.pace]:'Chưa đủ 3 buổi'}</b></li></ul>
    <p class="small muted">${rhythmLine()}</p></div>`;
   /* 3. khả năng đỗ */
-  S.school=Object.assign(blankSchool(),S.school||{});S.school.grade=g;const I=schoolInputs();
-  const rows=SCHOOL_OPTS.filter(x=>S.school.langs.includes(x.lang)).map(x=>evalOption(x,I)).sort((a,b)=>b.p-a.p);
+  schoolP();S.school.grade=g;const I=schoolInputs();
+  const rows=regionOpts().filter(x=>S.school.langs.includes(x.lang)&&x.cut&&x.cut.length).map(x=>evalOption(x,I)).sort((a,b)=>b.p-a.p);
   const PF=portfolio(rows,I,S.school.langs);
   const top=rows.filter(r=>r.o.lang==='Anh').slice(0,6);
-  const s3=`<div class="card rp-sec"><h3>3. Khả năng đỗ (tính cả Toán, Văn)</h3>
-   <p>Toán <b>${fmtN(I.toan)}</b>${I.toanSet?'':' (mốc gợi ý)'} · Văn <b>${fmtN(I.van)}</b>${I.vanSet?'':' (mốc gợi ý)'} · Anh chuyên đề Sở dự báo lúc thi khoảng <b>${fmtN(r1(I.achSo))}</b>, đề Chuyên Ngoại ngữ <b>${fmtN(r1(I.achCnn))}</b>.${I.toanSet&&I.vanSet?'':' <span class="muted">Toán, Văn đang để áng chừng; gia đình nhập điểm thật ở tab Chọn trường để kết quả sát hơn.</span>'}</p>
+  const s3=`<div class="card rp-sec"><h3>3. Khả năng đỗ ở ${esc(REG().name)} (tính cả Toán, Văn)</h3>
+   <p>Toán <b>${fmtN(I.toan)}</b>${I.toanSet?'':' (mốc gợi ý)'} · Văn <b>${fmtN(I.van)}</b>${I.vanSet?'':' (mốc gợi ý)'} · Anh chuyên dự báo lúc thi: ${Object.entries(regionPapers()).map(([k,pp])=>`${esc(pp.label)} khoảng <b>${fmtN(r1(I.ach[k]))}</b>`).join(', ')}.${I.toanSet&&I.vanSet?'':' <span class="muted">Toán, Văn đang để áng chừng; gia đình nhập điểm thật ở tab Chọn trường để kết quả sát hơn.</span>'}</p>
    <div class="tbl-wrap"><table class="rp-tbl"><thead><tr><th>Trường · lớp</th><th>Khả năng</th><th>Điểm dự kiến / điểm chuẩn TB</th></tr></thead><tbody>${top.map(r=>`<tr><td>${esc(r.o.school)} · ${esc(r.o.cls)}</td><td><span class="pill ${r.cls}">${r.lab}</span> ${Math.round(r.p*100)}%</td><td>${fmtN(r1(r.total))} / ${fmtN(r2(r.mean))} (thang ${r.max})</td></tr>`).join('')}</tbody></table></div>
    ${PF.chosen.length?`<p><b>Gợi ý đăng ký:</b> ${PF.chosen.map(e=>`${esc(e.label)} (${e.picks.map(r=>esc(r.o.school)).join(', ')})`).join('; ')}. Khả năng đỗ ít nhất một lớp chuyên khoảng <b>${Math.round(PF.pAny*100)}%</b>.</p>`:''}
    <p class="small muted">Dự báo này giả định giữ lịch học hiện tại (${S.plan.min} phút × ${S.plan.dpw} ngày/tuần${S.plan.cls?`, cộng ${String(S.plan.cls).replace('.',',')} giờ lớp CES/tuần`:''}) tới ngày thi.</p></div>`;
@@ -130,7 +130,7 @@ views.report=vReport;
 function sFromSummary(o){const st=blank();st.name=o.n||'';
   const t=x=>x&&{total:x.t,of:x.o,level:x.l,bands:x.b,hours:ENTRY_H[x.l]!=null?ENTRY_H[x.l]:220,dur:x.u,blank:x.k,answers:{}};
   st.diag=t(o.d);st.final=t(o.f);if(o.p)st.plan=Object.assign({min:40,dpw:6,cls:0},o.p);
-  st.school=Object.assign(blankSchool(),o.sc||{},{grade:o.g||7});st.course=Object.assign({goal:o.gl||'cva',lv:null},o.cs||{});
+  st.region=o.rg||'ha-noi';st.school=Object.assign(blankSchool(),o.sc||{},{grade:o.g||7});st.course=Object.assign({goal:o.gl||'cva',lv:null},o.cs||{});
   if(o.tr&&o.d&&o.tr!==trackFromLevel(o.d.l))st.track=o.tr;
   st.stats={retry:o.rt||[0,0],spiral:[0,0]};for(let i=0;i<(o.mq||0);i++)st.mastered['m'+i]=1;
   (o.q||[]).forEach(([id,w])=>{st.queue[id]={stage:0,due:99,wrong:w}});

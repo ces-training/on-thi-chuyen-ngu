@@ -1,0 +1,78 @@
+{
+  "so": "Cao Bằng",
+  "slug": "cao-bang",
+  "merged_from": ["Cao Bằng"],
+  "exam_2026": {
+    "dates": "Theo thông báo tuyển sinh của Trường THPT Chuyên Cao Bằng (4/2026): 01/7/2026 sáng Ngữ văn (120'); 02/7/2026 sáng Toán (120'), chiều Tiếng Anh chung (60'); 03/7/2026 chiều môn chuyên buổi 1 (Toán, Ngữ văn, Sinh học – 150'); 04/7/2026 sáng môn chuyên buổi 2 (Vật lí, Hóa học, Tiếng Anh, Lịch sử – 150').",
+    "organisation": "Tỉnh không sáp nhập; một kỳ thi, một trường chuyên duy nhất (THPT Chuyên Cao Bằng), thi tại trường chuyên (Tổ Hòa Chung 4, phường Tân Giang).",
+    "common_subjects": ["Toán", "Ngữ văn", "Tiếng Anh"],
+    "notes": "Theo Công văn 228/SGDĐT-QLCLCNTT (22/01/2026): trường chuyên thi Toán, Ngữ văn, Tiếng Anh + 1 môn chuyên; trường THPT thường và PTDTNT tỉnh thi 3 môn. Toán, Văn tự luận 120'; Tiếng Anh chung trắc nghiệm 60'; môn chuyên 150', riêng Tiếng Anh chuyên kết hợp trắc nghiệm + tự luận. Lịch thi đầu tháng 7 muộn hơn hẳn 2025 (3–5/6/2025) – lấy theo văn bản của trường, nên đối chiếu thêm."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": "ĐXT = Toán + Ngữ văn + Tiếng Anh (chung) + Điểm môn chuyên × 2 (các bài chấm thang 10, ĐXT làm tròn 2 chữ số thập phân). Không cộng điểm ưu tiên/khuyến khích.",
+    "parts": ["Toán", "Ngữ văn", "Tiếng Anh (chung)", "Anh chuyên×2"],
+    "max": 50,
+    "conditions": "Dự đủ các bài thi; mỗi môn chung ≥ 1,0; môn chuyên ≥ 2,0. Điều kiện dự tuyển: hạnh kiểm/rèn luyện và học lực/học tập các năm THCS từ Khá; ĐTB môn chuyên đăng ký năm lớp 9 ≥ 7,0; thường trú/tạm trú tại Cao Bằng. Bằng điểm ưu tiên: điểm môn chuyên cao hơn → giải HSG tỉnh lớp 9 đúng môn → ĐTB môn chuyên lớp 9 → ĐTB các môn lớp 9.",
+    "formula_by_year": {
+      "2025": "Danh sách trúng tuyển chuyên Anh 2025 cho thấy ĐXT = Toán + Văn + Anh + 2×chuyên (vd 9,25 + 8,75 + 9,75 + 2×7,50 = 42,75), thang 50.",
+      "2026": "ĐXT = Toán + Ngữ văn + Tiếng Anh + môn chuyên×2 (thang 50) – theo thông báo tuyển sinh 2026-2027 của trường."
+    }
+  },
+  "nv_rule": "Đăng ký tối đa 2 môn chuyên, hai môn phải thi khác buổi (buổi 1: Toán, Văn, Sinh; buổi 2: Lý, Hóa, Anh, Sử) – nên không thể ghép Anh với Lý/Hóa/Sử. Trúng NV1 thì không xét NV2. Không được đổi nguyện vọng sau 01/6/2026. Trường chỉ có lớp chuyên Tiếng Anh (không có lớp chuyên ngoại ngữ khác).",
+  "chuyen_paper": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": null,
+    "essay_words": null,
+    "sections": [],
+    "difficulty": null,
+    "difficulty_evidence": "Chưa tìm được đề chuyên Anh Cao Bằng công khai hay nhận xét của giáo viên/báo. Văn bản sở chỉ nêu: 150 phút, kết hợp trắc nghiệm và tự luận, nội dung trong phạm vi chương trình THCS (CV 633/SGD&ĐT-QLCLCNTT năm 2022; thông báo 2026).",
+    "sample_links": []
+  },
+  "schools": [
+    {
+      "name": "THPT Chuyên Cao Bằng",
+      "old_province": "Cao Bằng",
+      "city": "Phường Tân Giang (TP Cao Bằng cũ)",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {"2022": 35, "2025": 70, "2026": 70},
+          "applicants": {},
+          "cut": {"2021": 36.25, "2022": null, "2023": null, "2024": 31.8, "2025": 32.2, "2026": null},
+          "scale": {"2021": 50, "2024": 50, "2025": 50, "2026": 50},
+          "note": "2026: 2 lớp chuyên Tiếng Anh × 35 HS (8 lớp chuyên toàn trường). 2022: không quá 35 HS/lớp chuyên Anh (CV 633). 2025: danh sách trúng tuyển 70 HS, ĐXT cao nhất 42,75, thấp nhất 32,20 (đây là ĐXT thấp nhất trong danh sách, không phải điểm chuẩn công bố chính thức). 2024: 31,8 (tuyensinh247, hoatieu). 2021: 36,25 (hoatieu) – thang 50 suy theo công thức, chưa xác minh công thức 2021."
+        }
+      ]
+    }
+  ],
+  "stories": [],
+  "prep_tips": [
+    "Thi chuyên Anh 150 phút, kết hợp trắc nghiệm và tự luận, chấm thang 10 nhưng nhân hệ số 2 – môn chuyên chiếm 20/50 điểm, nên ôn kỹ cả phần tự luận (viết lại câu, viết đoạn/bài) (thông báo tuyển sinh 2026 Trường THPT Chuyên Cao Bằng).",
+    "Ba môn chung Toán, Văn, Anh cộng 30/50 điểm: thí sinh trúng tuyển chuyên Anh 2025 thường đạt 8–9,75 ở môn chung, nên không thể bỏ Toán và Văn (danh sách trúng tuyển chuyên Anh 2025).",
+    "Môn Tiếng Anh chung là trắc nghiệm 60 phút – luyện tốc độ làm trắc nghiệm theo đề tuyển sinh 10 Cao Bằng (Công văn 228/SGDĐT-QLCLCNTT; thông báo trường).",
+    "Chuyên Anh thi buổi 2 cùng Lý, Hóa, Sử: nếu muốn đăng ký 2 môn chuyên, chỉ ghép được Anh với Toán, Văn hoặc Sinh."
+  ],
+  "confidence": "low",
+  "gaps": [
+    "Điểm chuẩn chuyên Anh chính thức 2022, 2023, 2026 (2025 chỉ có ĐXT thấp nhất trong danh sách trúng tuyển)",
+    "Số thí sinh đăng ký chuyên Anh các năm",
+    "Cấu trúc chi tiết đề chuyên Anh (số phần, số câu, có nghe hay không, độ dài bài viết) và đề mẫu",
+    "Nhận xét độ khó đề chuyên Anh",
+    "Kế hoạch tuyển sinh 2027",
+    "Chia sẻ/kinh nghiệm thực tế của học sinh/giáo viên Cao Bằng",
+    "Xác minh lại lịch thi 2026 (01–04/7/2026) bằng nguồn báo chí; bài Báo Cao Bằng '760 lượt thí sinh hoàn thành các môn thi chuyên… 2026-2027' không truy cập được"
+  ],
+  "sources": [
+    {"title": "Thông báo tuyển sinh lớp 10 chuyên năm học 2026-2027 – Trường THPT Chuyên Cao Bằng", "url": "https://thptchuyencaobang.edu.vn/uploads/news/2026_04/tb-ts-10-chuyen-nam-hoc-26-27.pdf"},
+    {"title": "Danh sách trúng tuyển lớp chuyên Tiếng Anh 2025-2026 – Trường THPT Chuyên Cao Bằng", "url": "https://thptchuyencaobang.edu.vn/uploads/news/2025_07/tieng-anh.pdf"},
+    {"title": "Quyết định trúng tuyển vào lớp 10 Trường THPT Chuyên Cao Bằng năm học 2025-2026", "url": "https://thptchuyencaobang.edu.vn/index.php/tin-nha-truong/quyet-dinh-trung-tuyen-vao-lop-10-truong-thpt-chuyen-cao-bang-nam-hoc-2025-2026-346.html"},
+    {"title": "Kế hoạch tuyển sinh lớp 10 Cao Bằng 2026 – tuyensinh247", "url": "https://thi.tuyensinh247.com/ke-hoach-tuyen-sinh-lop-10-cao-bang-2026-c22a88985.html"},
+    {"title": "Các môn thi vào lớp 10 2026-2027 Cao Bằng (CV 228/SGDĐT-QLCLCNTT) – Thư viện Pháp luật", "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/cac-mon-thi-vao-lop-10-20262027-cao-bang-may-mon-138078725.html"},
+    {"title": "Điểm chuẩn lớp 10 Cao Bằng – tuyensinh247", "url": "https://diemthi.tuyensinh247.com/dc-lop10/cao-bang-p25.html"},
+    {"title": "Điểm chuẩn lớp 10 Cao Bằng – Hoatieu", "url": "https://hoatieu.vn/diem-chuan-lop-10-cao-bang-209108"},
+    {"title": "CV 633/SGD&ĐT-QLCLCNTT hướng dẫn tuyển sinh 10 năm học 2022-2023 – Sở GD&ĐT Cao Bằng", "url": "https://storage-vnportal.vnpt.vn/cbg-ubnd/sitefolders/sgddt/4974/2022/t4/633.pdf"},
+    {"title": "Kỳ thi tuyển sinh lớp 10 THPT diễn ra từ ngày 3-5/6/2025 – Tuyên giáo Cao Bằng", "url": "https://tuyengiaocaobang.vn/index.php/diem-bao/ky-thi-tuyen-sinh-lop-10-truong-thpt-dien-ra-tu-ngay-3-5-6-2025-1826.html"}
+  ]
+}

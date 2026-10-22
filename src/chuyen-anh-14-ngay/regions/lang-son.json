@@ -1,0 +1,248 @@
+{
+ "slug": "lang-son",
+ "name": "Lạng Sơn",
+ "merged_from": [],
+ "edition": "Bản Lạng Sơn",
+ "exam_md": [
+  5,
+  28
+ ],
+ "papers": {
+  "so": {
+   "map": "B2",
+   "label": "đề chuyên Anh của Sở Lạng Sơn",
+   "ac_add": 2.5,
+   "ac_cap": 10,
+   "ac_label": "Anh chung (đề chung)",
+   "difficulty": null,
+   "difficulty_evidence": "Chưa tìm được đề chuyên Anh Chu Văn An Lạng Sơn công khai hay nhận xét độ khó.",
+   "minutes": 150,
+   "has_listening": null,
+   "essay_words": null,
+   "sections": [],
+   "sample_links": []
+  }
+ },
+ "formulas": {
+  "so": {
+   "w": {
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 2.0
+   },
+   "paper": "so",
+   "text": "Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Tiếng Anh (chung) + Điểm môn chuyên × 2 (môn chuyên hệ số 2, thang 10 mỗi bài). Công thức đầy đủ do Giám đốc Sở quy định; nguồn công khai chỉ khẳng định môn chuyên hệ số 2.",
+   "max": 50
+  }
+ },
+ "m3_label": null,
+ "exams": {
+  "so": {
+   "label": "Kỳ thi của Sở GD&ĐT Lạng Sơn",
+   "date": "Dự kiến 26–28/5/2026 (QĐ 389/QĐ-UBND). Theo lịch tuyensinh247: 26/5 sáng Ngữ văn, chiều Tiếng Anh; 27/5 sáng Toán; môn chuyên 150 phút. Ngày thi môn chuyên: tuyensinh247 ghi chiều 27/5, còn Báo Đại Đoàn Kết (27/5/2026) ghi chiều 27/5 thí sinh làm thủ tục dự thi môn chuyên – tức thi chuyên khả năng là ngày 28/5.",
+   "rule": "Chưa tìm được văn bản công khai về số nguyện vọng chuyên. Có dấu hiệu xét chuyển NV2 từ chuyên Anh sang chuyên Trung: năm 2022 chuyên Trung có điểm chuẩn riêng 31,50 cho thí sinh 'từ chuyên Anh NV2 sang' (doctailieu). Năm 2026 nguồn tuyển của mỗi lớp ghi 'HS đăng ký NV1 chuyên Tiếng Anh/Tiếng Trung' (vndoc)."
+  }
+ },
+ "nv2_exam": null,
+ "nv_rule": "Chưa tìm được văn bản công khai về số nguyện vọng chuyên. Có dấu hiệu xét chuyển NV2 từ chuyên Anh sang chuyên Trung: năm 2022 chuyên Trung có điểm chuẩn riêng 31,50 cho thí sinh 'từ chuyên Anh NV2 sang' (doctailieu). Năm 2026 nguồn tuyển của mỗi lớp ghi 'HS đăng ký NV1 chuyên Tiếng Anh/Tiếng Trung' (vndoc).",
+ "options": [
+  {
+   "id": "so-chuyn-chu-vn-an-lng-sn--anh",
+   "sk": "so-chuyn-chu-vn-an-lng-sn-",
+   "school": "THPT Chuyên Chu Văn An (Lạng Sơn)",
+   "area": "Lạng Sơn",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2022,
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    36.75,
+    35.95,
+    36.95,
+    37.5
+   ],
+   "scale": 50,
+   "quota": {
+    "2025": 70,
+    "2026": 70
+   },
+   "note": "2 lớp chuyên Anh (70 HS) trong tổng 12 lớp chuyên/420 HS. 2026: 37,50 (langson.gov.vn, tuyensinh247, vndoc). 2025: 36,95; 2024: 35,95 (tuyensinh247, vietjack, dienmaycholon). 2022: 36,75 (doctailieu). 2023: 40,9 chỉ có trên vietjack, chưa đối chiếu được, thang điểm 2023 chưa rõ. Thang 50 là suy từ công thức môn chuyên ×2, chưa có văn bản gốc."
+  }
+ ],
+ "paper": {
+  "map": "B2",
+  "label": "đề chuyên Anh của Sở Lạng Sơn",
+  "ac_add": 2.5,
+  "ac_cap": 10,
+  "ac_label": "Anh chung (đề chung)",
+  "difficulty": null,
+  "difficulty_evidence": "Chưa tìm được đề chuyên Anh Chu Văn An Lạng Sơn công khai hay nhận xét độ khó.",
+  "minutes": 150,
+  "has_listening": null,
+  "essay_words": null,
+  "sections": [],
+  "sample_links": []
+ },
+ "exam_2026": {
+  "dates": "Dự kiến 26–28/5/2026 (QĐ 389/QĐ-UBND). Theo lịch tuyensinh247: 26/5 sáng Ngữ văn, chiều Tiếng Anh; 27/5 sáng Toán; môn chuyên 150 phút. Ngày thi môn chuyên: tuyensinh247 ghi chiều 27/5, còn Báo Đại Đoàn Kết (27/5/2026) ghi chiều 27/5 thí sinh làm thủ tục dự thi môn chuyên – tức thi chuyên khả năng là ngày 28/5.",
+  "organisation": "Tỉnh không sáp nhập; một trường chuyên (THPT Chuyên Chu Văn An, TP Lạng Sơn cũ). 3 bài chung cùng đề, cùng lịch với tuyển sinh công lập không chuyên, cộng 1 bài môn chuyên.",
+  "common_subjects": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh"
+  ],
+  "notes": "Toán trắc nghiệm + tự luận 120'; Ngữ văn tự luận 120'; Tiếng Anh chung trắc nghiệm + tự luận 60'. 11.410 thí sinh đăng ký toàn tỉnh năm 2026. Không quy đổi chứng chỉ ngoại ngữ quốc tế thành điểm bài thi môn chuyên ngoại ngữ. Điểm chuẩn chuyên công bố 09/6/2026. Năm 2025 thi 5–7/6/2025 (chuyên chiều 6/6 và sáng 7/6)."
+ },
+ "plan_2027": null,
+ "stories": [],
+ "prep_tips": [
+  "Môn chuyên Anh 150 phút, hệ số 2 – chiếm 20/50 điểm xét tuyển; điểm chuẩn chuyên Anh ổn định quanh 36–37,5/50 (2022, 2024–2026), nên mục tiêu an toàn là trung bình ~7,5/10 mỗi phần (tuyensinh247, vndoc).",
+  "Bài Tiếng Anh chung của Lạng Sơn có cả trắc nghiệm và tự luận, 60 phút – vẫn cần luyện viết câu/đoạn ngắn ngay trong bài chung (QĐ 389/QĐ-UBND).",
+  "Lớp chuyên Trung lấy điểm thấp hơn chuyên Anh 4–6 điểm (2024–2026) và từng nhận thí sinh NV2 từ chuyên Anh (2022) – học sinh có nền tiếng Trung có thể cân nhắc (doctailieu, tuyensinh247).",
+  "Không quy đổi IELTS/chứng chỉ quốc tế thành điểm bài chuyên – vẫn phải thi đủ bài chuyên Anh (QĐ 389/QĐ-UBND)."
+ ],
+ "confidence": "medium",
+ "gaps": [
+  "Văn bản gốc công thức xét tuyển chuyên (hệ số, điều kiện điểm sàn) của Sở Lạng Sơn",
+  "Xác minh điểm chuẩn 2023 (40,9 chuyên Anh – nguồn duy nhất vietjack) và thang điểm năm 2023",
+  "Số thí sinh đăng ký chuyên Anh/Trung, tỉ lệ chọi",
+  "Cấu trúc đề chuyên Anh (phần, số câu, nghe, bài luận) và đề mẫu; nhận xét độ khó",
+  "Số nguyện vọng chuyên được đăng ký năm 2026",
+  "Kế hoạch tuyển sinh 2027",
+  "Chia sẻ kinh nghiệm thực tế (không tìm được; ngân sách tìm kiếm đã hết khi đang tìm)"
+ ],
+ "sources": [
+  {
+   "title": "Quyết định 389/QĐ-UBND Lạng Sơn 2026 – Kế hoạch tuyển sinh THPT năm học 2026-2027 (LuatVietnam)",
+   "url": "https://luatvietnam.vn/giao-duc/quyet-dinh-389-qd-ubnd-lang-son-2026-phe-duyet-ke-hoach-tuyen-sinh-thpt-nam-hoc-2026-2027-427987-d2.html"
+  },
+  {
+   "title": "Thi vào lớp 10 Lạng Sơn mấy môn 2026-2027 – Thư viện Pháp luật",
+   "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/thi-vao-lop-10-lang-son-may-mon-20262027-138083585.html"
+  },
+  {
+   "title": "Lạng Sơn công bố kết quả thi tuyển sinh lớp 10 và điểm chuẩn THPT Chuyên Chu Văn An năm học 2026-2027 – Cổng TTĐT tỉnh",
+   "url": "https://langson.gov.vn/thong-tin-chi-dao-dieu-hanh/lang-son-cong-bo-ket-qua-thi-tuyen-sinh-lop-10-va-diem-chuan-truong-thpt-chuyen-chu-van-an-nam-hoc-2026-2027.html"
+  },
+  {
+   "title": "Điểm chuẩn vào lớp 10 Lạng Sơn – tuyensinh247",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/lang-son-p63.html"
+  },
+  {
+   "title": "Lịch thi và thông tin tuyển sinh 10 Lạng Sơn – tuyensinh247",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/lang-son-p63.html"
+  },
+  {
+   "title": "Điểm chuẩn lớp 10 Lạng Sơn năm 2026 – VnDoc",
+   "url": "https://vndoc.com/diem-chuan-lop-10-lang-son-236593"
+  },
+  {
+   "title": "Điểm chuẩn lớp 10 Lạng Sơn – Đọc tài liệu",
+   "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-lang-son"
+  },
+  {
+   "title": "Điểm chuẩn vào 10 Lạng Sơn 3 năm gần đây – VietJack",
+   "url": "https://vietjack.com/tuyen-sinh/diem-chuan-vao-10-cac-truong-cong-lap-tai-lang-son.jsp"
+  },
+  {
+   "title": "Điểm chuẩn lớp 10 Lạng Sơn – Điện máy Chợ Lớn",
+   "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-lang-son"
+  },
+  {
+   "title": "Lạng Sơn thay đổi cách tính điểm xét tuyển lớp 10 năm 2025 – Báo Thanh tra",
+   "url": "https://thanhtra.com.vn/giao-duc-A6BAEB6CD/lang-son-thay-doi-cach-tinh-diem-xet-tuyen-trong-ky-thi-tuyen-sinh-lop-10-thpt-nam-2025-5085a33ba.html"
+  },
+  {
+   "title": "Lạng Sơn: hơn 99% thí sinh dự thi ngày đầu thi vào lớp 10 năm 2025 – Báo Thanh tra",
+   "url": "https://thanhtra.com.vn/giao-duc-A6BAEB6CD/lang-son-hon-99-thi-sinh-tham-gia-thi-trong-ngay-dau-thi-vao-lop-10-thpt-nam-2025-5085a6c4e.html"
+  },
+  {
+   "title": "Lạng Sơn: hơn 11.300 thí sinh hoàn thành kỳ thi tuyển sinh vào lớp 10 – Đại Đoàn Kết",
+   "url": "https://daidoanket.vn/lang-son-hon-11-300-thi-sinh-hoan-thanh-ky-thi-tuyen-sinh-vao-lop-10.html"
+  },
+  {
+   "title": "Lạng Sơn công bố điểm thi và điểm chuẩn vào lớp 10 Chuyên Chu Văn An (2025) – Giáo dục Thủ đô",
+   "url": "https://giaoducthudo.giaoducthoidai.vn/lang-son-cong-bo-diem-thi-va-diem-chuan-vao-lop-10-chuyen-chu-van-an-180362.html"
+  }
+ ],
+ "formula_raw": {
+  "text": "Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Tiếng Anh (chung) + Điểm môn chuyên × 2 (môn chuyên hệ số 2, thang 10 mỗi bài). Công thức đầy đủ do Giám đốc Sở quy định; nguồn công khai chỉ khẳng định môn chuyên hệ số 2.",
+  "parts": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh (chung)",
+   "Anh chuyên×2"
+  ],
+  "max": 50,
+  "conditions": "Đối tượng, điều kiện dự tuyển, hệ số và nguyên tắc xét do Sở GD&ĐT quy định (QĐ 389/QĐ-UBND 2026). Không quy đổi chứng chỉ quốc tế.",
+  "formula_by_year": {
+   "2025": "Từ 2025 Lạng Sơn bỏ nhân hệ số ở các bài thi chung (công lập: tổng 3 bài, mỗi bài hệ số 1) – Báo Thanh tra. Môn chuyên vẫn hệ số 2 (dienmaycholon).",
+   "2023": "Vietjack ghi điểm chuẩn 2023 chuyên Anh 40,9 / chuyên Trung 40 – cao bất thường so với 2022 và 2024, có thể do công thức/thang điểm khác (trước 2025 các bài chung có nhân hệ số); chưa xác minh."
+  }
+ },
+ "schools_raw": [
+  {
+   "name": "THPT Chuyên Chu Văn An (Lạng Sơn)",
+   "old_province": "Lạng Sơn",
+   "city": "TP Lạng Sơn (cũ)",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2025": 70,
+      "2026": 70
+     },
+     "applicants": {},
+     "cut": {
+      "2022": 36.75,
+      "2023": 40.9,
+      "2024": 35.95,
+      "2025": 36.95,
+      "2026": 37.5
+     },
+     "scale": {
+      "2022": 50,
+      "2024": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "2 lớp chuyên Anh (70 HS) trong tổng 12 lớp chuyên/420 HS. 2026: 37,50 (langson.gov.vn, tuyensinh247, vndoc). 2025: 36,95; 2024: 35,95 (tuyensinh247, vietjack, dienmaycholon). 2022: 36,75 (doctailieu). 2023: 40,9 chỉ có trên vietjack, chưa đối chiếu được, thang điểm 2023 chưa rõ. Thang 50 là suy từ công thức môn chuyên ×2, chưa có văn bản gốc."
+    },
+    {
+     "lang": "Trung",
+     "admit_by_english": false,
+     "quota": {
+      "2025": 35,
+      "2026": 35
+     },
+     "cut": {
+      "2022": 30.8,
+      "2023": 40,
+      "2024": 30.55,
+      "2025": 31.05,
+      "2026": 33.55
+     },
+     "note": "1 lớp chuyên Tiếng Trung (35 HS), thi bài chuyên Tiếng Trung. 2022 có thêm mức 31,50 cho thí sinh chuyển từ NV2 chuyên Anh sang – tức năm đó có xét chuyên Trung bằng kết quả thi chuyên Anh (NV2). 2023: 40 (vietjack, chưa xác minh)."
+    }
+   ]
+  }
+ ],
+ "goals": [
+  {
+   "k": "so-chuyn-chu-vn-an-lng-sn-",
+   "name": "Chuyên Chu Văn An (Lạng Sơn)",
+   "score": 6.6,
+   "paper": "so",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "so-chuyn-chu-vn-an-lng-sn-"
+}

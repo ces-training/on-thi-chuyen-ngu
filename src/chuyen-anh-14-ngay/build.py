@@ -42,8 +42,18 @@ blob = json.dumps(C, ensure_ascii=False).replace("</", "<\\/")
 cfg = json.load(open(here / "config.json", encoding="utf-8"))
 api = json.dumps(os.environ.get("API_URL_OVERRIDE", cfg.get("apiUrl", "")))
 
-sj = json.load(open(here / "schools.json", encoding="utf-8"))
-school_js = (here / "school.js").read_text(encoding="utf-8").replace("__SCHOOLS__", json.dumps(sj["options"], ensure_ascii=False)).replace("__EXAMS__", json.dumps(sj["exams"], ensure_ascii=False))
+# vùng tuyển sinh: regions/<slug>.json (đã chuẩn hoá); _list.json là 34 tỉnh/thành mới
+rdir = here / "regions"
+REG = {p.stem: json.load(open(p, encoding="utf-8")) for p in sorted(rdir.glob("*.json")) if not p.name.startswith("_")}
+CALC_KEYS = ["slug", "name", "merged_from", "edition", "exam_md", "papers", "formulas", "m3_label", "exams", "nv2_exam", "nv_rule", "options", "goals", "goal_default", "formula_note"]
+def calc_view(r):
+    v = {k: r[k] for k in CALC_KEYS if k in r}
+    v["papers"] = {k: {kk: pv[kk] for kk in ("map", "label", "ac_add", "ac_cap", "ac_label") if kk in pv} for k, pv in r.get("papers", {}).items()}
+    if r.get("paper"):
+        v["paper"] = {"sections": [{"format": x.get("format"), "items": x.get("items")} for x in r["paper"].get("sections") or []]}
+    return v
+RLIST = [dict(r, has=r["slug"] in REG) for r in json.load(open(rdir / "_list.json", encoding="utf-8"))]
+school_js = (here / "school.js").read_text(encoding="utf-8").replace("__REGIONS__", json.dumps({k: calc_view(v) for k, v in REG.items()}, ensure_ascii=False)).replace("__REGION_LIST__", json.dumps(RLIST, ensure_ascii=False))
 brand = (repo / "src" / "brand" / "brand.css").read_text(encoding="utf-8")
 body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__COURSE_JS__*/", (here / "course.js").read_text(encoding="utf-8")).replace("/*__MAP_JS__*/", (here / "map.js").read_text(encoding="utf-8")).replace("/*__REPORT_JS__*/", (here / "report.js").read_text(encoding="utf-8")).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8") + "\n" + (here / "games2.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
 page = (
@@ -108,3 +118,18 @@ js = "/* Tạo tự động bởi build.py từ nội dung 14 buổi. Không s�
 (repo / "apps-script").mkdir(exist_ok=True)
 (repo / "apps-script" / "Keys.gs").write_text(js, encoding="utf-8")
 print("built", repo / "apps-script" / "Keys.gs", sum(len(s["items"]) for k in keys.values() for s in k["sections"]), "câu")
+
+# ---- trang Chuyên Anh 34 tỉnh, thành (tinh/index.html): đọc toàn bộ regions/<slug>.json ----
+import datetime
+FMT = {"listening": "Nghe", "pronunciation": "Phát âm", "stress": "Trọng âm", "sentence_completion": "Hoàn thành câu", "synonym": "Đồng nghĩa", "antonym": "Trái nghĩa",
+       "dialogue_completion": "Hoàn thành hội thoại", "error_id": "Tìm lỗi sai", "sentence_combining": "Kết hợp câu", "closest_meaning": "Câu gần nghĩa nhất", "reading_mcq": "Đọc hiểu (trắc nghiệm)",
+       "cloze": "Điền từ vào đoạn văn (có lựa chọn)", "open_cloze": "Điền từ tự do", "word_formation": "Cấu tạo từ", "transformation": "Viết lại câu", "key_word": "Viết lại câu với từ cho sẵn",
+       "matching_headings": "Nối tiêu đề với đoạn", "dialogue_order": "Sắp xếp hội thoại", "essay": "Viết bài luận", "paragraph_writing": "Viết đoạn văn", "guided_writing": "Viết theo gợi ý",
+       "translation": "Dịch", "true_false": "Đúng / Sai", "gap_text": "Điền câu vào đoạn", "other": "Dạng khác"}
+TINH_KEYS = ["exam_2026", "plan_2027", "formula_raw", "nv_rule", "schools_raw", "paper", "prep_tips", "stories", "uni", "gaps", "sources", "confidence"]
+tdata = {"list": RLIST, "fmt": FMT, "updated": datetime.date.today().strftime("%d/%m/%Y"),
+         "regions": {k: {kk: v.get(kk) for kk in TINH_KEYS} for k, v in REG.items() if k != "ha-noi"}}
+ttpl = (here.parent / "tinh" / "template.html").read_text(encoding="utf-8")
+(repo / "tinh").mkdir(exist_ok=True)
+(repo / "tinh" / "index.html").write_text(ttpl.replace("/*__BRAND_CSS__*/", brand).replace("__DATA__", json.dumps(tdata, ensure_ascii=False).replace("</", "<\\/")), encoding="utf-8")
+print("built", repo / "tinh" / "index.html", len(REG) - 1, "sở có dữ liệu")
