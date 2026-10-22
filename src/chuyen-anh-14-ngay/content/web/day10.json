@@ -115,7 +115,7 @@
   {
    "format": "dialogue_completion",
    "title_vi": "Hoàn thành hội thoại",
-   "intro_vi": "Đề Chuyên Ngoại ngữ có 6 câu hoàn thành hội thoại; đề chung vào lớp 10 cũng có câu chọn lời đáp phù hợp. Em đọc lời người A rồi chọn câu B đáp lại tự nhiên nhất.",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 6 câu hoàn thành hội thoại; đề chung vào lớp 10 cũng có câu chọn lời đáp phù hợp. Bạn đọc lời người A rồi chọn câu B đáp lại tự nhiên nhất.",
    "tip_vi": "Mẹo: xác định A đang làm gì (khen, nhờ, xin lỗi, khuyên, hỏi ý kiến) rồi chọn câu đáp đúng chức năng, không chỉ đúng ngữ pháp.",
    "kind": "mcq",
    "items": [
@@ -179,7 +179,7 @@
   {
    "format": "listening",
    "title_vi": "Nghe và điền ghi chú",
-   "intro_vi": "Phần nghe của đề chuyên Anh của Sở có 20 câu; một dạng hay gặp là nghe một thông báo rồi điền từ hoặc số vào phiếu ghi chú. Ở đây em nghe 1 bài và điền 5 chỗ trống.",
+   "intro_vi": "Phần nghe của đề chuyên Anh của Sở có 20 câu; một dạng hay gặp là nghe một thông báo rồi điền từ hoặc số vào phiếu ghi chú. Ở đây bạn nghe 1 bài và điền 5 chỗ trống.",
    "tip_vi": "Mẹo: đọc phiếu ghi chú trước khi nghe, đoán chỗ trống cần số, tên hay danh từ. Viết số bằng chữ số, kiểm tra chính tả.",
    "kind": "gap_text",
    "script": "Good morning, everyone. This is an announcement from the school office about our Career Day. This year, Career Day will be held on Saturday the 14th of November in the school hall. It starts at half past eight and finishes at half past eleven. More than twenty guests will come to talk about their jobs, including a pilot, a chef, two doctors and a famous game designer. If you want to ask the guests questions, please prepare them before the day. There will also be a special workshop on how to write a CV. Places are limited to 40 students, so if you want to join, you need to apply before Wednesday. To apply, just send an email to Ms Hoa, the school librarian. Students who help at the event will receive a certificate. Please wear your school uniform on the day. If it rains, the outdoor activities will move to the sports hall. Thank you, and we hope to see you there!",
@@ -219,7 +219,7 @@
   {
    "format": "dialogue_completion",
    "title_vi": "Hoàn thành hội thoại",
-   "intro_vi": "Dạng này có trong đề Chuyên Ngoại ngữ và đề chung vào lớp 10. Em đọc câu của người A rồi chọn câu trả lời của người B hợp nhất. Mỗi câu chỉ có một đáp án đúng.",
+   "intro_vi": "Dạng này có trong đề Chuyên Ngoại ngữ và đề chung vào lớp 10. Bạn đọc câu của người A rồi chọn câu trả lời của người B hợp nhất. Mỗi câu chỉ có một đáp án đúng.",
    "tip_vi": "Mẹo: câu hỏi 'What…?' cần câu trả lời có thông tin, không trả lời Yes/No. Ai cảm ơn thì đáp 'You're welcome'; ai chúc mình thì đáp 'Thank you'.",
    "kind": "mcq",
    "items": [
@@ -283,7 +283,7 @@
   {
    "format": "listening",
    "title_vi": "Nghe và điền ghi chú",
-   "intro_vi": "Phần nghe trong đề chuyên Anh của Sở có dạng nghe rồi điền vào phiếu ghi chú. Bài nghe ở đây ngắn và chậm. Em nghe rồi điền một từ hoặc một số vào 5 chỗ trống.",
+   "intro_vi": "Phần nghe trong đề chuyên Anh của Sở có dạng nghe rồi điền vào phiếu ghi chú. Bài nghe ở đây ngắn và chậm. Bạn nghe rồi điền một từ hoặc một số vào 5 chỗ trống.",
    "tip_vi": "Mẹo: đọc 5 dòng ghi chú trước khi nghe, đoán chỗ nào cần số, chỗ nào cần danh từ. Số thì viết bằng chữ số, ví dụ 7.",
    "kind": "gap_text",
    "script": "Hello, everyone. My name is Lan. Today I want to tell you about my mother's job. My mother is a nurse. She works at a big hospital in the city centre. She starts work at seven o'clock in the morning. She goes to work by bus. Her job is not easy. She looks after sick children. She works five days a week, from Monday to Friday. She loves her job because she likes helping people. My mother always says, if you want to be a good nurse, you must be kind and patient. I want to be a nurse too. If I study hard, I will go to a medical school. Thank you for listening.",
@@ -391,7 +391,7 @@
   {
    "format": "listening",
    "title_vi": "Nghe và điền ghi chú",
-   "intro_vi": "Bài nghe khó trong đề chuyên thường có thông tin gây nhiễu: người nói nhắc một chi tiết rồi sửa lại. Em nghe bài dài hơn và điền 5 chỗ trống, mỗi chỗ một từ hoặc một số.",
+   "intro_vi": "Bài nghe khó trong đề chuyên thường có thông tin gây nhiễu: người nói nhắc một chi tiết rồi sửa lại. Bạn nghe bài dài hơn và điền 5 chỗ trống, mỗi chỗ một từ hoặc một số.",
    "tip_vi": "Mẹo: chú ý các từ báo sửa thông tin như 'but', 'not', 'has been moved', 'rather than'. Thông tin đúng thường đến sau những từ này.",
    "kind": "gap_text",
    "script": "Good afternoon, and welcome to the job corner on Youth Radio. Today we have news about the Green City Summer Internship, which is open to students aged fifteen to eighteen. Interns will spend four weeks working at the city's recycling centre. The organisers first planned to start on the first of July, but because of the exams, the start date has been moved to the eighth. Interns will work from Monday to Thursday, not on Fridays as many people expected, and they will receive a small allowance of fifty thousand dong a day, plus a free lunch. The organisers are looking for young people who are responsible and good at teamwork. You don't need any previous experience. If you are interested, you should apply online rather than by post, and the deadline is the twentieth of June. If a lot of people apply, the best candidates will be invited to an interview, which will take place at the City Library, not at the recycling centre. So, if I were you, I would start my application today!",

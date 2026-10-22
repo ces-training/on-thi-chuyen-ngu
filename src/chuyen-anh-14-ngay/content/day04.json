@@ -3,7 +3,7 @@
  "type": "normal",
  "theme_en": "Technology",
  "theme_vi": "Công nghệ",
- "goal_vi": "Hôm nay em sẽ học các từ về công nghệ và ba cách nói về tương lai: will, be going to và hiện tại tiếp diễn. Em cũng sẽ luyện dạng bài hoàn thành hội thoại, rất gần với cách người ta nói chuyện hằng ngày đấy!",
+ "goal_vi": "Hôm nay bạn sẽ học các từ về công nghệ và ba cách nói về tương lai: will, be going to và hiện tại tiếp diễn. Bạn cũng sẽ luyện dạng bài hoàn thành hội thoại, rất gần với cách người ta nói chuyện hằng ngày đấy!",
  "minutes": 30,
  "vocab": [
   {
@@ -143,7 +143,7 @@
  },
  "paper": {
   "A_vocab": {
-   "instruction_vi": "Em chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ed…) nếu cần nhé!",
+   "instruction_vi": "Bạn chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ed…) nếu cần nhé!",
    "bank": [
     "device",
     "invent",
@@ -200,7 +200,7 @@
    ]
   },
   "B_grammar": {
-   "instruction_vi": "Em chia động từ trong ngoặc ở dạng tương lai phù hợp: will, be going to, hoặc hiện tại tiếp diễn. Đọc kỹ ngữ cảnh để biết đó là quyết định tức thì, dự định, dấu hiệu hay lịch hẹn nhé!",
+   "instruction_vi": "Bạn chia động từ trong ngoặc ở dạng tương lai phù hợp: will, be going to, hoặc hiện tại tiếp diễn. Đọc kỹ ngữ cảnh để biết đó là quyết định tức thì, dự định, dấu hiệu hay lịch hẹn nhé!",
    "items": [
     {
      "id": "d4B1",
@@ -303,7 +303,7 @@
   },
   "D_exam": {
    "format": "dialogue_completion",
-   "instruction_vi": "Dạng bài hoàn thành hội thoại: em chọn câu trả lời (A, B, C hoặc D) phù hợp nhất để hoàn thành mỗi đoạn hội thoại. Hãy nghĩ xem người thật sẽ đáp lại như thế nào nhé!",
+   "instruction_vi": "Dạng bài hoàn thành hội thoại: bạn chọn câu trả lời (A, B, C hoặc D) phù hợp nhất để hoàn thành mỗi đoạn hội thoại. Hãy nghĩ xem người thật sẽ đáp lại như thế nào nhé!",
    "items": [
     {
      "id": "d4D1",
@@ -412,18 +412,18 @@
   },
   "F_writing": {
    "task_en": "Imagine your class is having a 'Day Without Screens' next Saturday. Write a paragraph (50–70 words) about what you are going to do that day and how you think you will feel.",
-   "task_vi": "Hãy tưởng tượng lớp em tổ chức 'Ngày không màn hình' vào thứ Bảy tới. Viết một đoạn văn (50–70 từ) kể em định làm gì vào ngày đó và em nghĩ mình sẽ cảm thấy thế nào.",
+   "task_vi": "Hãy tưởng tượng lớp bạn tổ chức 'Ngày không màn hình' vào thứ Bảy tới. Viết một đoạn văn (50–70 từ) kể bạn định làm gì vào ngày đó và bạn nghĩ mình sẽ cảm thấy thế nào.",
    "min_words": 50,
    "model": "Next Saturday, my class is having a 'Day Without Screens', so I'm going to switch off my phone in the morning. First, I'm going to help my mum in the garden. Then I will read the comic book my friend lent me. In the afternoon, I'm meeting Tuan at the park to play badminton. I think I'll miss my games a little, but I'm sure it will be a fun day.",
    "checklist_vi": [
-    "Em có dùng be going to để nói về dự định không?",
-    "Em có dùng hiện tại tiếp diễn cho một lịch hẹn cụ thể (có giờ / có người hẹn) không?",
-    "Em có dùng will (I think / I'm sure … will) để dự đoán cảm xúc của mình không?",
-    "Em có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 4, và đoạn văn đủ 50 từ không?"
+    "Bạn có dùng be going to để nói về dự định không?",
+    "Bạn có dùng hiện tại tiếp diễn cho một lịch hẹn cụ thể (có giờ / có người hẹn) không?",
+    "Bạn có dùng will (I think / I'm sure … will) để dự đoán cảm xúc của mình không?",
+    "Bạn có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 4, và đoạn văn đủ 50 từ không?"
    ]
   },
   "G_review": {
-   "instruction_vi": "Ôn xoắn ốc – em ôn lại buổi 3 (Môi trường) và buổi 1 (Trường học) nhé. Điền từ thích hợp hoặc chia động từ trong ngoặc.",
+   "instruction_vi": "Ôn xoắn ốc – bạn ôn lại buổi 3 (Môi trường) và buổi 1 (Trường học) nhé. Điền từ thích hợp hoặc chia động từ trong ngoặc.",
    "items": [
     {
      "id": "d4G1",
@@ -450,7 +450,7 @@
      "answer": "attended",
      "from_day": 1,
      "tag": "d1v5",
-     "explain_vi": "==last night== → quá khứ đơn: attend → **attended** (tham dự). __Gợi ý “chia ở quá khứ” nhắc em thêm -ed.__"
+     "explain_vi": "==last night== → quá khứ đơn: attend → **attended** (tham dự). __Gợi ý “chia ở quá khứ” nhắc bạn thêm -ed.__"
     },
     {
      "id": "d4G4",
@@ -488,7 +488,7 @@
    "skill": "vocab",
    "q": "My phone asks me to u______ my apps almost every week. (Viết cả từ)",
    "answer": "update",
-   "explain_vi": "Chữ đầu ==u== và ==my apps== → **update** (cập nhật ứng dụng, phần mềm). __Điện thoại hay nhắc em “update apps”, rất dễ nhớ.__",
+   "explain_vi": "Chữ đầu ==u== và ==my apps== → **update** (cập nhật ứng dụng, phần mềm). __Điện thoại hay nhắc bạn “update apps”, rất dễ nhớ.__",
    "tag": "d4v7"
   },
   {
@@ -633,9 +633,9 @@
   }
  ],
  "can_do_vi": [
-  "Em có thể nói về công nghệ bằng 8 từ mới và 2 cụm động từ switch off, keep up with.",
-  "Em có thể chọn đúng will, be going to hoặc hiện tại tiếp diễn khi nói về tương lai.",
-  "Em có thể biến tính từ thành trạng từ với đuôi -ly và viết đúng chính tả.",
-  "Em có thể chọn câu đáp lại phù hợp trong dạng bài hoàn thành hội thoại."
+  "Bạn có thể nói về công nghệ bằng 8 từ mới và 2 cụm động từ switch off, keep up with.",
+  "Bạn có thể chọn đúng will, be going to hoặc hiện tại tiếp diễn khi nói về tương lai.",
+  "Bạn có thể biến tính từ thành trạng từ với đuôi -ly và viết đúng chính tả.",
+  "Bạn có thể chọn câu đáp lại phù hợp trong dạng bài hoàn thành hội thoại."
  ]
 }

@@ -9,7 +9,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/minecraft-taught-school",
   "level": "A2",
   "topic_match_vi": "Phóng sự về một trường ở Thuỵ Điển dạy bằng Minecraft trong giờ học: đúng chủ đề trường học, môn học.",
-  "intro_vi": "Em sẽ nghe phóng sự CBBC về một trường học ở Thuỵ Điển dùng trò chơi Minecraft trong giờ học; hãy chú ý tên nước, các môn học và ý kiến của học sinh.",
+  "intro_vi": "Bạn sẽ nghe phóng sự CBBC về một trường học ở Thuỵ Điển dùng trò chơi Minecraft trong giờ học; hãy chú ý tên nước, các môn học và ý kiến của học sinh.",
   "items": [
    {
     "type": "mcq",
@@ -20,7 +20,7 @@
      "England"
     ],
     "answer": 1,
-    "explain_vi": "Phóng viên nói ==\"The game started life here in Sweden\"== → đáp án **Sweden**. __Started life nghĩa là ra đời; em nghe tên nước ngay sau cụm này.__"
+    "explain_vi": "Phóng viên nói ==\"The game started life here in Sweden\"== → đáp án **Sweden**. __Started life nghĩa là ra đời; bạn nghe tên nước ngay sau cụm này.__"
    },
    {
     "type": "gap",
@@ -29,7 +29,7 @@
     "accept": [
      "math"
     ],
-    "explain_vi": "Học sinh kể ==\"science, social studies and maths\"== → điền **maths**. __Danh sách thường kết thúc bằng and + từ cuối, em chờ nghe từ sau and.__"
+    "explain_vi": "Học sinh kể ==\"science, social studies and maths\"== → điền **maths**. __Danh sách thường kết thúc bằng and + từ cuối, bạn chờ nghe từ sau and.__"
    },
    {
     "type": "mcq",
@@ -58,7 +58,7 @@
      "learning maths"
     ],
     "answer": 0,
-    "explain_vi": "Bạn ấy nói ==\"I do not enjoy just building houses\"== và thấy việc đó ==\"kind of boring\"== → **building houses**. __Câu hỏi có NOT: em tìm câu phủ định do not enjoy.__"
+    "explain_vi": "Bạn ấy nói ==\"I do not enjoy just building houses\"== và thấy việc đó ==\"kind of boring\"== → **building houses**. __Câu hỏi có NOT: bạn tìm câu phủ định do not enjoy.__"
    }
   ]
  },
@@ -72,7 +72,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/meet-great-britains-junior-gymnastics-star-scarlett",
   "level": "A2+",
   "topic_match_vi": "Vận động viên thể dục dụng cụ nhí kể về buổi tập và việc cân bằng giữa tập luyện với học: sở thích, thể thao, thời gian rảnh.",
-  "intro_vi": "Em sẽ nghe Scarlett, vận động viên thể dục dụng cụ trẻ của đội tuyển Anh, kể về buổi tập; hãy chú ý việc cô làm đầu tiên, số ngày tập mỗi tuần và điều cô thích nhất.",
+  "intro_vi": "Bạn sẽ nghe Scarlett, vận động viên thể dục dụng cụ trẻ của đội tuyển Anh, kể về buổi tập; hãy chú ý việc cô làm đầu tiên, số ngày tập mỗi tuần và điều cô thích nhất.",
   "items": [
    {
     "type": "mcq",
@@ -105,7 +105,7 @@
      "competing in finals"
     ],
     "answer": 1,
-    "explain_vi": "Cô kể ==\"I was always scared to go backwards on the beam when I was younger\"== → **go backwards on the beam**. __Scared to + động từ: em nghe hành động ngay sau.__"
+    "explain_vi": "Cô kể ==\"I was always scared to go backwards on the beam when I was younger\"== → **go backwards on the beam**. __Scared to + động từ: bạn nghe hành động ngay sau.__"
    },
    {
     "type": "gap",
@@ -137,7 +137,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/plastic-ocean-campaigner",
   "level": "A2",
   "topic_match_vi": "Cậu bé 12 tuổi làm phim kêu gọi bớt dùng nhựa để bảo vệ rùa biển: đúng chủ đề môi trường, rác thải nhựa.",
-  "intro_vi": "Em sẽ nghe phóng sự Behind the News (Úc) về Arlian, cậu bé chống rác nhựa; hãy chú ý tuổi của cậu, con số về rác nhựa và lí do rùa biển gặp nguy hiểm.",
+  "intro_vi": "Bạn sẽ nghe phóng sự Behind the News (Úc) về Arlian, cậu bé chống rác nhựa; hãy chú ý tuổi của cậu, con số về rác nhựa và lí do rùa biển gặp nguy hiểm.",
   "items": [
    {
     "type": "gap",
@@ -202,7 +202,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/robots-cook-clean-chat",
   "level": "A2+",
   "topic_match_vi": "Phóng sự về rô-bốt trên phà, rô-bốt làm việc nhà và cửa hàng rô-bốt: đúng chủ đề công nghệ.",
-  "intro_vi": "Em sẽ nghe phóng sự Newsround về các loại rô-bốt mới trên phà, trong nhà và trong cửa hàng; hãy chú ý tên rô-bốt, tên nước và ý kiến của phóng viên.",
+  "intro_vi": "Bạn sẽ nghe phóng sự Newsround về các loại rô-bốt mới trên phà, trong nhà và trong cửa hàng; hãy chú ý tên rô-bốt, tên nước và ý kiến của phóng viên.",
   "items": [
    {
     "type": "mcq",
@@ -222,7 +222,7 @@
     "accept": [
      "kai"
     ],
-    "explain_vi": "Bài nghe: ==\"Named Kai\"== → **Kai**. __Tên riêng ngắn, em nghe ngay sau từ named.__"
+    "explain_vi": "Bài nghe: ==\"Named Kai\"== → **Kai**. __Tên riêng ngắn, bạn nghe ngay sau từ named.__"
    },
    {
     "type": "mcq",
@@ -233,7 +233,7 @@
      "chores"
     ],
     "answer": 2,
-    "explain_vi": "Bài nghe: ==\"who hate chores\"== → **chores** (việc nhà). __Các việc kể tiếp như nấu ăn, là quần áo cũng giúp em đoán đúng.__"
+    "explain_vi": "Bài nghe: ==\"who hate chores\"== → **chores** (việc nhà). __Các việc kể tiếp như nấu ăn, là quần áo cũng giúp bạn đoán đúng.__"
    },
    {
     "type": "gap",
@@ -267,7 +267,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/yoga-day",
   "level": "A2",
   "topic_match_vi": "Học sinh tập yoga và chuyên gia nói về lợi ích sức khoẻ: đúng chủ đề sức khoẻ, tập luyện.",
-  "intro_vi": "Em sẽ nghe phóng sự Behind the News về Ngày Quốc tế Yoga ở một trường học; hãy chú ý cảm nhận của học sinh, nơi yoga ra đời và năm có ngày yoga.",
+  "intro_vi": "Bạn sẽ nghe phóng sự Behind the News về Ngày Quốc tế Yoga ở một trường học; hãy chú ý cảm nhận của học sinh, nơi yoga ra đời và năm có ngày yoga.",
   "items": [
    {
     "type": "mcq",
@@ -316,7 +316,7 @@
     "q": "In ______, the UN decided to have a special day for yoga.",
     "answer": "2015",
     "accept": [],
-    "explain_vi": "Bài nghe: ==\"in 2015, the UN decided\"== → **2015**. __Năm này đọc là twenty fifteen; em nên luyện nghe cách đọc năm.__"
+    "explain_vi": "Bài nghe: ==\"in 2015, the UN decided\"== → **2015**. __Năm này đọc là twenty fifteen; bạn nên luyện nghe cách đọc năm.__"
    }
   ]
  },
@@ -330,7 +330,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/meet-kids-racing-electric-cars",
   "level": "A2+",
   "topic_match_vi": "Các bạn nhỏ tự lắp và đua xe điện: hàng xóm gần của chủ đề du lịch và đi lại (phương tiện giao thông).",
-  "intro_vi": "Em sẽ nghe phóng sự Newsround về các bạn nhỏ tự làm và đua xe điện ở trường đua Rockingham; hãy chú ý các con số: thời gian, số pin và giá tiền.",
+  "intro_vi": "Bạn sẽ nghe phóng sự Newsround về các bạn nhỏ tự làm và đua xe điện ở trường đua Rockingham; hãy chú ý các con số: thời gian, số pin và giá tiền.",
   "items": [
    {
     "type": "mcq",
@@ -395,7 +395,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/one-million-plastic-pick",
   "level": "A2",
   "topic_match_vi": "Ôn buổi 3 (môi trường: rác nhựa) và buổi 4 (công nghệ: dùng app để ghi lại rác nhặt được).",
-  "intro_vi": "Em sẽ nghe Amy và Ali của nhóm Kids Against Plastic kêu gọi nhặt một triệu mẩu rác nhựa; hãy chú ý nơi có rác, điều Amy nói về nhựa và cách ghi lại rác đã nhặt.",
+  "intro_vi": "Bạn sẽ nghe Amy và Ali của nhóm Kids Against Plastic kêu gọi nhặt một triệu mẩu rác nhựa; hãy chú ý nơi có rác, điều Amy nói về nhựa và cách ghi lại rác đã nhặt.",
   "items": [
    {
     "type": "gap",
@@ -456,7 +456,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/safer-internet-day-positive-change-online",
   "level": "A2+",
   "topic_match_vi": "Học sinh tranh luận về trí tuệ nhân tạo, cách mọi người cư xử trên mạng: chủ đề truyền thông, giao tiếp trực tuyến.",
-  "intro_vi": "Em sẽ nghe các bạn học sinh Anh nói về cuộc sống trên mạng trong Ngày Internet An toàn; chú ý câu nhận định người dẫn đọc ra và lí do mỗi bạn đồng ý hay không.",
+  "intro_vi": "Bạn sẽ nghe các bạn học sinh Anh nói về cuộc sống trên mạng trong Ngày Internet An toàn; chú ý câu nhận định người dẫn đọc ra và lí do mỗi bạn đồng ý hay không.",
   "items": [
    {
     "type": "gap",
@@ -517,7 +517,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/celebrating-holi",
   "level": "A2",
   "topic_match_vi": "Bạn nhỏ giới thiệu đền Hindu, bữa ăn chung và lễ hội Holi: chủ đề ẩm thực và văn hoá (đoạn đầu: đền và bữa ăn).",
-  "intro_vi": "Em sẽ nghe một bạn nhỏ giới thiệu ngôi đền Hindu trong ngày lễ Holi; trong đoạn này, chú ý việc phải làm khi vào đền, những thứ có trong đền và bữa ăn.",
+  "intro_vi": "Bạn sẽ nghe một bạn nhỏ giới thiệu ngôi đền Hindu trong ngày lễ Holi; trong đoạn này, chú ý việc phải làm khi vào đền, những thứ có trong đền và bữa ăn.",
   "items": [
    {
     "type": "mcq",
@@ -580,7 +580,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/women-male-careers",
   "level": "A2+",
   "topic_match_vi": "Bốn phụ nữ làm lính cứu hoả, đóng tàu ngầm, lái tàu, quản lí xây dựng trả lời câu hỏi của học sinh: đúng chủ đề công việc, nghề nghiệp.",
-  "intro_vi": "Em sẽ nghe bốn phụ nữ làm những nghề thường được cho là của nam giới trả lời câu hỏi của học sinh; chú ý tên nghề, số năm làm việc và độ tuổi bắt đầu học nghề.",
+  "intro_vi": "Bạn sẽ nghe bốn phụ nữ làm những nghề thường được cho là của nam giới trả lời câu hỏi của học sinh; chú ý tên nghề, số năm làm việc và độ tuổi bắt đầu học nghề.",
   "items": [
    {
     "type": "mcq",
@@ -641,7 +641,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/reach-out",
   "level": "A2",
   "topic_match_vi": "Phim ngắn về chống bắt nạt, giúp đỡ và tìm người tin cậy: chủ đề con người và các mối quan hệ (bạn bè, gia đình, thầy cô).",
-  "intro_vi": "Em sẽ nghe đoạn phim của tổ chức Anti-Bullying Alliance về chống bắt nạt và giúp đỡ bạn bè; chú ý những câu ngắn nói bắt nạt là gì và em có thể tìm ai để giúp.",
+  "intro_vi": "Bạn sẽ nghe đoạn phim của tổ chức Anti-Bullying Alliance về chống bắt nạt và giúp đỡ bạn bè; chú ý những câu ngắn nói bắt nạt là gì và bạn có thể tìm ai để giúp.",
   "items": [
    {
     "type": "mcq",
@@ -688,7 +688,7 @@
      "nobody"
     ],
     "answer": 0,
-    "explain_vi": "Bài nghe: ==\"parents and carers, friends, teachers\"== → **bố mẹ, người chăm sóc, bạn bè, thầy cô**. __Carers là người chăm sóc em.__"
+    "explain_vi": "Bài nghe: ==\"parents and carers, friends, teachers\"== → **bố mẹ, người chăm sóc, bạn bè, thầy cô**. __Carers là người chăm sóc bạn.__"
    }
   ]
  },
@@ -702,7 +702,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/facts-about-bumblebees",
   "level": "A2",
   "topic_match_vi": "Giải thích khoa học về ong nghệ và sự thụ phấn: chủ đề khoa học (sinh học, thực vật).",
-  "intro_vi": "Em sẽ nghe đoạn giới thiệu khoa học ngắn về ong nghệ và sự thụ phấn; chú ý con số, tên các loại quả và từ khoá pollination.",
+  "intro_vi": "Bạn sẽ nghe đoạn giới thiệu khoa học ngắn về ong nghệ và sự thụ phấn; chú ý con số, tên các loại quả và từ khoá pollination.",
   "items": [
    {
     "type": "gap",
@@ -765,7 +765,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/taylor-swift-eras-tour",
   "level": "A2+",
   "topic_match_vi": "Phóng viên nhí và người hâm mộ nói về buổi hoà nhạc của Taylor Swift: đúng chủ đề nghệ thuật, giải trí (âm nhạc).",
-  "intro_vi": "Em sẽ nghe phóng viên nhí Cairi của Newsround đi xem buổi hoà nhạc Eras Tour của Taylor Swift; chú ý tên thành phố, nơi cắm trại, album yêu thích và cảm nhận của người hâm mộ.",
+  "intro_vi": "Bạn sẽ nghe phóng viên nhí Cairi của Newsround đi xem buổi hoà nhạc Eras Tour của Taylor Swift; chú ý tên thành phố, nơi cắm trại, album yêu thích và cảm nhận của người hâm mộ.",
   "items": [
    {
     "type": "gap",
@@ -774,7 +774,7 @@
     "accept": [
      "edinburgh"
     ],
-    "explain_vi": "Cairi nói ==\"I live in Edinburgh\"== → **Edinburgh**. __Tên thành phố khó viết, em nhìn lại tên trong tiêu đề bài để viết đúng.__"
+    "explain_vi": "Cairi nói ==\"I live in Edinburgh\"== → **Edinburgh**. __Tên thành phố khó viết, bạn nhìn lại tên trong tiêu đề bài để viết đúng.__"
    },
    {
     "type": "mcq",
@@ -828,7 +828,7 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/roald-dahl-quick-bio",
   "level": "A2",
   "topic_match_vi": "Tiểu sử nhà văn Roald Dahl: ôn buổi 13 (nghệ thuật, văn học), buổi 10 (nghề: phi công, điệp viên) và buổi 11 (con người).",
-  "intro_vi": "Em sẽ nghe tiểu sử ngắn của nhà văn Roald Dahl; chú ý năm sinh, các công việc ông làm trước khi viết sách và các con số về sách của ông.",
+  "intro_vi": "Bạn sẽ nghe tiểu sử ngắn của nhà văn Roald Dahl; chú ý năm sinh, các công việc ông làm trước khi viết sách và các con số về sách của ông.",
   "items": [
    {
     "type": "mcq",

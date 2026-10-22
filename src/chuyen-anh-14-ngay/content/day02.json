@@ -3,7 +3,7 @@
  "type": "normal",
  "theme_en": "Hobbies & free time",
  "theme_vi": "Sở thích",
- "goal_vi": "Hôm nay em sẽ học cách kể về sở thích và thời gian rảnh, đồng thời luyện thì quá khứ đơn, quá khứ tiếp diễn và cấu trúc used to. Em cũng làm quen với dạng bài tìm từ đồng nghĩa trong đề thi chuyên nhé!",
+ "goal_vi": "Hôm nay bạn sẽ học cách kể về sở thích và thời gian rảnh, đồng thời luyện thì quá khứ đơn, quá khứ tiếp diễn và cấu trúc used to. Bạn cũng làm quen với dạng bài tìm từ đồng nghĩa trong đề thi chuyên nhé!",
  "minutes": 30,
  "vocab": [
   {
@@ -143,7 +143,7 @@
  },
  "paper": {
   "A_vocab": {
-   "instruction_vi": "Em chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ed, -ing…) nếu cần nhé!",
+   "instruction_vi": "Bạn chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ed, -ing…) nếu cần nhé!",
    "bank": [
     "leisure",
     "collect",
@@ -188,7 +188,7 @@
      "q": "After a long day at school, I usually ______ by reading comics on the sofa.",
      "answer": "relax",
      "tag": "d2v7",
-     "explain_vi": "==After a long day at school== em **thư giãn: relax**; sau ==usually== với chủ ngữ I giữ **nguyên mẫu**. __Mẹo: relax by doing sth là thư giãn bằng cách làm gì.__"
+     "explain_vi": "==After a long day at school== bạn **thư giãn: relax**; sau ==usually== với chủ ngữ I giữ **nguyên mẫu**. __Mẹo: relax by doing sth là thư giãn bằng cách làm gì.__"
     },
     {
      "id": "d2A6",
@@ -200,7 +200,7 @@
    ]
   },
   "B_grammar": {
-   "instruction_vi": "Em chia động từ trong ngoặc ở thì quá khứ đơn, quá khứ tiếp diễn, hoặc dùng used to cho đúng nhé.",
+   "instruction_vi": "Bạn chia động từ trong ngoặc ở thì quá khứ đơn, quá khứ tiếp diễn, hoặc dùng used to cho đúng nhé.",
    "items": [
     {
      "id": "d2B1",
@@ -284,7 +284,7 @@
   },
   "D_exam": {
    "format": "synonym",
-   "instruction_vi": "Dạng bài từ đồng nghĩa: em chọn đáp án (A, B, C hoặc D) có nghĩa GẦN NHẤT với từ / cụm từ VIẾT IN HOA trong câu.",
+   "instruction_vi": "Dạng bài từ đồng nghĩa: bạn chọn đáp án (A, B, C hoặc D) có nghĩa GẦN NHẤT với từ / cụm từ VIẾT IN HOA trong câu.",
    "items": [
     {
      "id": "d2D1",
@@ -323,7 +323,7 @@
      ],
      "answer": "C",
      "tag": "fmt:synonym",
-     "explain_vi": "**spare time ≈ free time** → **C. free**. ==during the exam season== em bận nên ít thời gian rảnh. __Bẫy: busy là nghĩa ngược lại.__"
+     "explain_vi": "**spare time ≈ free time** → **C. free**. ==during the exam season== bạn bận nên ít thời gian rảnh. __Bẫy: busy là nghĩa ngược lại.__"
     },
     {
      "id": "d2D4",
@@ -393,18 +393,18 @@
   },
   "F_writing": {
    "task_en": "Write a paragraph (50–70 words) about a hobby you used to have or one you took up recently. Say when and how you started it and why you like (or liked) it.",
-   "task_vi": "Viết một đoạn văn (50–70 từ) về một sở thích em từng có trước đây hoặc mới bắt đầu gần đây: em bắt đầu khi nào, như thế nào, và vì sao em thích nó.",
+   "task_vi": "Viết một đoạn văn (50–70 từ) về một sở thích bạn từng có trước đây hoặc mới bắt đầu gần đây: bạn bắt đầu khi nào, như thế nào, và vì sao bạn thích nó.",
    "min_words": 50,
    "model": "When I was in grade 4, I used to collect stickers, but last year I took up drawing comics. It started one rainy afternoon. I was sitting at home and feeling bored when I found an empty notebook. I drew a funny cat, and my sister laughed a lot. Drawing is a creative hobby, and it helps me relax after school. I want to make my own comic book one day.",
    "checklist_vi": [
-    "Em có dùng thì quá khứ đơn để kể chuyện đã xảy ra không?",
-    "Em có dùng ít nhất 1 câu quá khứ tiếp diễn hoặc 1 câu với used to không?",
-    "Em có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 2 (ví dụ: spare, creative, relax, take up…) không?",
+    "Bạn có dùng thì quá khứ đơn để kể chuyện đã xảy ra không?",
+    "Bạn có dùng ít nhất 1 câu quá khứ tiếp diễn hoặc 1 câu với used to không?",
+    "Bạn có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 2 (ví dụ: spare, creative, relax, take up…) không?",
     "Đoạn văn đủ 50 từ và có câu nêu lý do (because / so)."
    ]
   },
   "G_review": {
-   "instruction_vi": "Ôn xoắn ốc – mình quay lại kiến thức của buổi 1 (Trường học) để nhớ lâu hơn nhé. Em điền từ thích hợp hoặc chia động từ trong ngoặc.",
+   "instruction_vi": "Ôn xoắn ốc – mình quay lại kiến thức của buổi 1 (Trường học) để nhớ lâu hơn nhé. Bạn điền từ thích hợp hoặc chia động từ trong ngoặc.",
    "items": [
     {
      "id": "d2G1",
@@ -609,9 +609,9 @@
   }
  ],
  "can_do_vi": [
-  "Em có thể nói về sở thích và thời gian rảnh bằng 8 từ mới, cùng take up và give up.",
-  "Em có thể kể chuyện quá khứ bằng quá khứ đơn và quá khứ tiếp diễn, và nói về thói quen cũ với used to.",
-  "Em có thể tạo tính từ với -ful và -less.",
-  "Em có thể làm dạng bài tìm từ đồng nghĩa trong đề thi chuyên."
+  "Bạn có thể nói về sở thích và thời gian rảnh bằng 8 từ mới, cùng take up và give up.",
+  "Bạn có thể kể chuyện quá khứ bằng quá khứ đơn và quá khứ tiếp diễn, và nói về thói quen cũ với used to.",
+  "Bạn có thể tạo tính từ với -ful và -less.",
+  "Bạn có thể làm dạng bài tìm từ đồng nghĩa trong đề thi chuyên."
  ]
 }

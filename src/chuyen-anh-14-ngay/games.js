@@ -20,7 +20,7 @@ function renderGame(box,spec,onDone){
   const timer=setInterval(()=>{if(!box.isConnected){clearInterval(timer);return}const s=Math.floor((Date.now()-t0)/1000);tmEl.textContent=Math.floor(s/60)+':'+String(s%60).padStart(2,'0')},1000);
   const add=(d)=>{score+=d;scEl.textContent=score};
   const finish=(sc,tot,extra)=>{clearInterval(timer);const ms=Date.now()-t0;const st=gStars(sc,tot);
-    stage.innerHTML=`<div class="g-end">${st>=2?em('party-popper','',72):em('flexed-biceps','',72)}<h3>${st===3?'Xuất sắc!':st===2?'Tốt lắm!':'Cố thêm chút nữa nhé!'}</h3>${gStarHTML(st)}<p>Em đúng <b>${sc}/${tot}</b> · ${Math.round(ms/1000)} giây${extra?' · '+extra:''}</p><div class="row" style="justify-content:center"><button class="btn hi g-again" type="button">Chơi lại</button></div></div>`;
+    stage.innerHTML=`<div class="g-end">${st>=2?em('party-popper','',72):em('flexed-biceps','',72)}<h3>${st===3?'Xuất sắc!':st===2?'Tốt lắm!':'Cố thêm chút nữa nhé!'}</h3>${gStarHTML(st)}<p>Bạn đúng <b>${sc}/${tot}</b> · ${Math.round(ms/1000)} giây${extra?' · '+extra:''}</p><div class="row" style="justify-content:center"><button class="btn hi g-again" type="button">Chơi lại</button></div></div>`;
     const rv=gReview(spec);if(rv)stage.querySelector('.g-end').insertAdjacentHTML('beforeend',`<details class="g-review"><summary>Xem lại đáp án và giải thích</summary>${rv}</details>`);
     stage.querySelector('.g-again').onclick=()=>renderGame(box,spec,onDone);
     onDone&&onDone({score:sc,total:tot,ms,stars:st})};
@@ -147,7 +147,7 @@ const G_CFG={
 /* Mỗi buổi một bộ 3 game khác nhau; hai buổi liền nhau không lặp loại game; buổi 1–8, 10 và 14 đều mở một loại game mới. */
 const G_PLAN={1:['match','sort','quiz'],2:['flip','unjumble','hangman'],3:['anagram','truefalse','whack'],4:['balloon','sort','match'],5:['wordsearch','truefalse','quiz'],6:['crossword','unjumble','flip'],7:['openbox','quiz','whack'],
   8:['dictation','sort','anagram'],9:['hangman','truefalse','balloon'],10:['missing','unjumble','wordsearch'],11:['whack','openbox','crossword'],12:['flip','sort','dictation'],13:['balloon','truefalse','anagram'],14:['wheel','unjumble','match']};
-const G_HOW={hangman:'Đọc nghĩa, chạm từng chữ cái để đoán từ. Mỗi lần đoán sai em mất một quả bóng bay.',whack:'Đọc nghĩa ở trên, đập (chạm) vào con chuột mang đúng từ tiếng Anh. Chạm nhầm không mất điểm nhưng mất thời gian.',
+const G_HOW={hangman:'Đọc nghĩa, chạm từng chữ cái để đoán từ. Mỗi lần đoán sai bạn mất một quả bóng bay.',whack:'Đọc nghĩa ở trên, đập (chạm) vào con chuột mang đúng từ tiếng Anh. Chạm nhầm không mất điểm nhưng mất thời gian.',
   balloon:'Bóng bay đang bay lên! Chạm quả bóng mang đáp án đúng trước khi nó bay mất.',wordsearch:'Tìm các từ của buổi học trong bảng chữ theo nghĩa cho sẵn.',crossword:'Điền từ tiếng Anh theo nghĩa vào ô chữ; các từ giao nhau ở những chữ cái chung.',
   openbox:'Chọn hộp bất kỳ. Mỗi hộp là một câu hỏi; có hộp quà +2 điểm và hộp nhân đôi điểm.',dictation:'Bấm nghe, rồi gõ lại từ cho đúng chính tả. Có thể nghe lại và nghe từ trong câu.',missing:'Chạm một từ trong khung rồi chạm vào chỗ trống phù hợp trong câu.',wheel:'Quay vòng và làm thử thách vừa quay được: nghĩa của từ, chính tả hoặc đúng hay sai.'};
 function gTrack(){return S.track||trackFromLevel(S.diag&&S.diag.level)}
@@ -164,7 +164,7 @@ function gamesForDay(n){const tr=gTrack();const cfg=G_CFG[tr]||G_CFG.chuan;const
     else if(t==='flip')g={title:'Lật thẻ tìm cặp',how:'Lật hai thẻ một lượt. Tìm thẻ từ tiếng Anh và thẻ nghĩa đi với nhau. Càng ít lượt càng nhiều sao.',items:P.v.map(x=>({a:x.word,b:x.meaning_vi})).concat(P.p.map(x=>({a:x.phrase,b:x.meaning_vi})))};
     else if(t==='anagram')g={title:'Xếp chữ thành từ',how:'Đọc nghĩa, chạm các chữ cái theo đúng thứ tự để ghép thành từ tiếng Anh.'+(cfg.firstLetter?' Chữ cái đầu đã được xếp sẵn.':''),items:P.v.filter(x=>/^[a-z]+$/i.test(x.word)).map(x=>({a:x.word.toLowerCase(),b:x.meaning_vi,c:tr==='nang'?'':(x.ipa||'')}))};
     else if(t==='quiz')g={title:'Đố nhanh từ vựng',how:cfg.qtime+' giây mỗi câu. Đúng 3 câu liền được thưởng điểm.',items:gQuizItems(P.v,cfg.gapOnly)};
-    else if(t==='sort'&&GG.sort)g={title:GG.sort.title_vi||'Phân nhóm',how:'Mỗi thẻ hiện ra, em chạm vào nhóm đúng của nó.',groups:GG.sort.groups};
+    else if(t==='sort'&&GG.sort)g={title:GG.sort.title_vi||'Phân nhóm',how:'Mỗi thẻ hiện ra, bạn chạm vào nhóm đúng của nó.',groups:GG.sort.groups};
     else if(t==='unjumble'&&GG.unjumble)g={title:'Xếp từ thành câu',how:'Chạm các từ theo đúng thứ tự để thành câu đúng ngữ pháp. Chạm từ đã xếp để bỏ ra. Được thử 2 lần.',items:GG.unjumble.map(u=>({sentence:u.sentence,hint:tr==='nang'?'':u.hint_vi,why:u.why_vi}))};
     else if(t==='truefalse'&&GG.truefalse)g={title:'Câu này đúng hay sai?',how:cfg.tftime+' giây mỗi câu. Đọc nhanh và quyết định câu đúng hay sai ngữ pháp.',items:GG.truefalse.map(x=>({s:x.s,ok:x.ok,fix:x.fix,why:x.why_vi}))};
     else if(t==='openbox')g={title:'Mở hộp bí mật',how:G_HOW.openbox,pool:tfPool.concat(gQuizItems(P.v,cfg.gapOnly).map(q=>Object.assign({kind:'mcq'},q))),cfg:Object.assign({},cfg,{n:tr==='nen'?6:tr==='nang'?10:8})};

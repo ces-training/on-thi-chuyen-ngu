@@ -3,7 +3,7 @@
   "type": "normal",
   "theme_en": "Food & culture",
   "theme_vi": "Ẩm thực và văn hoá",
-  "goal_vi": "Hôm nay em sẽ học các từ về món ăn, lễ hội và phong tục, cùng cách dùng danh từ đếm được/không đếm được, much/many/a few/a little/plenty of và mạo từ a/an/the. Em cũng sẽ luyện dạng bài tìm từ đồng nghĩa – chuẩn bị một chút đồ ăn vặt rồi mình bắt đầu nhé!",
+  "goal_vi": "Hôm nay bạn sẽ học các từ về món ăn, lễ hội và phong tục, cùng cách dùng danh từ đếm được/không đếm được, much/many/a few/a little/plenty of và mạo từ a/an/the. Bạn cũng sẽ luyện dạng bài tìm từ đồng nghĩa – chuẩn bị một chút đồ ăn vặt rồi mình bắt đầu nhé!",
   "minutes": 30,
   "vocab": [
     {"id": "d9v1", "word": "tradition", "pos": "n", "ipa": "/trəˈdɪʃn/", "meaning_vi": "truyền thống", "example": "It is a tradition in my family to visit our grandparents on the first day of Tết.", "family": "traditional (adj), traditionally (adv)"},
@@ -45,7 +45,7 @@
   },
   "paper": {
     "A_vocab": {
-      "instruction_vi": "Em chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, và có 2 từ không cần dùng đến nhé.",
+      "instruction_vi": "Bạn chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, và có 2 từ không cần dùng đến nhé.",
       "bank": ["tradition", "festival", "ingredients", "recipe", "flavour", "celebrate", "local", "ran out of"],
       "items": [
         {"id": "d9A1", "q": "Making bánh chưng together before Tết is an important ______ in many Vietnamese families.", "answer": "tradition", "tag": "d9v1", "explain_vi": "Việc gói bánh chưng cùng nhau ==before Tết== là phong tục lâu đời → **tradition**. __Sau 'an important' cần danh từ.__"},
@@ -57,7 +57,7 @@
       ]
     },
     "B_grammar": {
-      "instruction_vi": "Em chọn từ đúng trong ngoặc. Nếu không cần mạo từ, em viết dấu '–' (gạch ngang) nhé. Gợi ý: trước tiên hãy xác định danh từ sau chỗ trống là đếm được hay không đếm được.",
+      "instruction_vi": "Bạn chọn từ đúng trong ngoặc. Nếu không cần mạo từ, bạn viết dấu '–' (gạch ngang) nhé. Gợi ý: trước tiên hãy xác định danh từ sau chỗ trống là đếm được hay không đếm được.",
       "items": [
         {"id": "d9B1", "q": "How ______ (much / many) sugar do you put in your coffee?", "answer": "much", "tag": "d9g", "explain_vi": "==sugar== là danh từ không đếm được → **How much**. __How many chỉ đi với danh từ đếm được số nhiều.__"},
         {"id": "d9B2", "q": "There were ______ (much / many) people at the flower festival last Sunday.", "answer": "many", "tag": "d9g", "explain_vi": "==people== là danh từ đếm được số nhiều → **many**. __people đã là số nhiều, không thêm -s.__"},
@@ -78,7 +78,7 @@
     },
     "D_exam": {
       "format": "synonym",
-      "instruction_vi": "Em chọn từ hoặc cụm từ A, B, C hoặc D có nghĩa GẦN NHẤT với từ in hoa trong câu. Mẹo: thử thay từng đáp án vào câu xem câu có giữ nguyên nghĩa không nhé.",
+      "instruction_vi": "Bạn chọn từ hoặc cụm từ A, B, C hoặc D có nghĩa GẦN NHẤT với từ in hoa trong câu. Mẹo: thử thay từng đáp án vào câu xem câu có giữ nguyên nghĩa không nhé.",
       "items": [
         {"id": "d9D1", "q": "In some countries, it is a CUSTOM to take off your shoes before entering a house.", "options": ["habit of one person", "rule of the school", "traditional way of doing something", "kind of clothes"], "answer": "C", "tag": "fmt:synonym", "explain_vi": "**custom**: phong tục, cách làm truyền thống → **C. traditional way of doing something**. Dấu hiệu ==In some countries==. __habit là thói quen của một người, không phải cả nước.__"},
         {"id": "d9D2", "q": "Our family CELEBRATED Grandpa's 80th birthday with a big party.", "options": ["forgot", "marked", "planned", "missed"], "answer": "B", "tag": "fmt:synonym", "explain_vi": "**celebrate** một dịp (==Grandpa's 80th birthday==) gần nghĩa với **B. marked** (đánh dấu, kỷ niệm). __forgot/missed là nghĩa ngược lại.__"},
@@ -99,18 +99,18 @@
     },
     "F_writing": {
       "task_en": "Write a short paragraph (50–70 words) about a traditional dish from your family or your hometown. Say what the main ingredients are, when people usually eat it, and why you like it. Use much/many/a few/a little at least once and two words from today's lesson.",
-      "task_vi": "Em viết một đoạn văn ngắn (50–70 từ) giới thiệu một món ăn truyền thống của gia đình hoặc quê hương em: nguyên liệu chính là gì, mọi người thường ăn vào dịp nào, và vì sao em thích món đó. Em dùng ít nhất 1 lần much/many/a few/a little và 2 từ mới của bài hôm nay nhé.",
+      "task_vi": "Bạn viết một đoạn văn ngắn (50–70 từ) giới thiệu một món ăn truyền thống của gia đình hoặc quê hương em: nguyên liệu chính là gì, mọi người thường ăn vào dịp nào, và vì sao bạn thích món đó. Bạn dùng ít nhất 1 lần much/many/a few/a little và 2 từ mới của bài hôm nay nhé.",
       "min_words": 50,
       "model": "My favourite traditional dish is bún chả, a local speciality of Hà Nội. The main ingredients are rice noodles, grilled pork and fresh herbs. You also need a little sugar, garlic and fish sauce to make the dipping sauce. Many people eat it for lunch, and my family often eats out at a small bún chả shop near our house. I love its smoky flavour!",
       "checklist_vi": [
-        "Em đã nêu tên món ăn, nguyên liệu chính, dịp ăn và lý do em thích chưa?",
-        "Em đã dùng đúng much/many/a few/a little với danh từ đếm được và không đếm được chưa?",
-        "Em đã dùng ít nhất 2 từ mới của bài hôm nay và kiểm tra mạo từ a/an/the chưa?",
-        "Em đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
+        "Bạn đã nêu tên món ăn, nguyên liệu chính, dịp ăn và lý do bạn thích chưa?",
+        "Bạn đã dùng đúng much/many/a few/a little với danh từ đếm được và không đếm được chưa?",
+        "Bạn đã dùng ít nhất 2 từ mới của bài hôm nay và kiểm tra mạo từ a/an/the chưa?",
+        "Bạn đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
       ]
     },
     "G_review": {
-      "instruction_vi": "Ôn xoắn ốc – Em làm theo gợi ý trong ngoặc ở mỗi câu để ôn lại bài các buổi 8, 6 và 3 nhé. Câu nào chưa chắc, em mở lại bài cũ xem lại cũng được!",
+      "instruction_vi": "Ôn xoắn ốc – Bạn làm theo gợi ý trong ngoặc ở mỗi câu để ôn lại bài các buổi 8, 6 và 3 nhé. Câu nào chưa chắc, bạn mở lại bài cũ xem lại cũng được!",
       "items": [
         {"id": "d9G1", "q": "The famous Hà Nội Opera House ______ (build) by the French in the early 20th century.", "answer": "was built", "from_day": 8, "tag": "d8g", "explain_vi": "Nhà hát được xây ==by the French in the early 20th century== → **bị động quá khứ: was built**. __Học thuộc: build – built – built.__"},
         {"id": "d9G2", "q": "While I was looking for a recipe online, I ______ a video about street food in Thailand. (cụm động từ ở thì quá khứ, nghĩa là 'tình cờ thấy')", "answer": "came across", "from_day": 8, "tag": "d8p2", "explain_vi": "**come across**: tình cờ thấy; ==While I was looking for== là quá khứ → **came across**. __Việc xen vào (tình cờ thấy) dùng quá khứ đơn.__"},
@@ -134,8 +134,8 @@
     {"id": "d9q12", "type": "text", "skill": "review", "from_day": 3, "q": "Điền 1 động từ bắt đầu bằng 'r', nghĩa là 'giảm bớt': We can ______ waste by bringing our own lunch boxes to school.", "answer": "reduce", "accept": ["reduce"], "explain_vi": "**reduce**: giảm bớt → ==reduce waste==. __Sau 'can' dùng động từ nguyên thể.__", "tag": "d3v7"}
   ],
   "can_do_vi": [
-    "Em có thể dùng 8 từ mới và 2 cụm động từ (eat out, run out of) để nói về món ăn, lễ hội và phong tục.",
-    "Em có thể phân biệt danh từ đếm được/không đếm được, dùng đúng much/many/a few/a little/plenty of và mạo từ a/an/the.",
-    "Em có thể tạo danh từ đuôi -ness/-ity và tìm từ đồng nghĩa trong bài thi."
+    "Bạn có thể dùng 8 từ mới và 2 cụm động từ (eat out, run out of) để nói về món ăn, lễ hội và phong tục.",
+    "Bạn có thể phân biệt danh từ đếm được/không đếm được, dùng đúng much/many/a few/a little/plenty of và mạo từ a/an/the.",
+    "Bạn có thể tạo danh từ đuôi -ness/-ity và tìm từ đồng nghĩa trong bài thi."
   ]
 }

@@ -115,7 +115,7 @@
   {
    "format": "dialogue_completion",
    "title_vi": "Hoàn thành hội thoại",
-   "intro_vi": "Đề Chuyên Ngoại ngữ có 6 câu hoàn thành hội thoại; đề chung vào 10 cũng có câu chọn lời đáp phù hợp. Mỗi câu là một trao đổi ngắn A–B, em chọn lời đáp tự nhiên nhất.",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 6 câu hoàn thành hội thoại; đề chung vào 10 cũng có câu chọn lời đáp phù hợp. Mỗi câu là một trao đổi ngắn A–B, bạn chọn lời đáp tự nhiên nhất.",
    "tip_vi": "Mẹo: xác định câu của A dùng để làm gì (mời, xin phép, gợi ý, kể sự cố…) rồi chọn lời đáp đúng chức năng, không chỉ đúng ngữ pháp.",
    "kind": "mcq",
    "items": [
@@ -179,7 +179,7 @@
   {
    "format": "listening",
    "title_vi": "Nghe và điền ghi chú",
-   "intro_vi": "Đề Sở chuyên Anh Hà Nội có phần nghe 20 câu, thường có dạng nghe rồi điền ghi chú hoặc bảng (một hai từ hoặc một con số). Ở đây em làm bản rút gọn 5 chỗ trống.",
+   "intro_vi": "Đề Sở chuyên Anh Hà Nội có phần nghe 20 câu, thường có dạng nghe rồi điền ghi chú hoặc bảng (một hai từ hoặc một con số). Ở đây bạn làm bản rút gọn 5 chỗ trống.",
    "tip_vi": "Mẹo: đọc ghi chú trước khi nghe, đoán chỗ trống cần gì (nơi chốn, con số, đồ vật). Cẩn thận chi tiết bị sửa như 'not … like last year'.",
    "kind": "gap_text",
    "script": "Good morning, everyone. This is Mr Long from the computer club with some news about this year's Technology Fair. The fair is taking place next Saturday in the school library, not in the sports hall like last year. It opens at nine o'clock in the morning and finishes at half past three. This year, students from twelve schools are coming, and they are going to show 25 robots and other devices that they have invented. If you want to try the robots, you must bring your student card, so please don't forget it. There will also be a coding competition in the afternoon. Teams can have up to four members. The winning team will get a new tablet for their class, and everyone who takes part will receive a free T-shirt. If you'd like to join the competition, please write your name on the list outside Room 12 before Wednesday. I'm sure it will be a great day. See you there!",
@@ -228,7 +228,7 @@
   {
    "format": "dialogue_completion",
    "title_vi": "Hoàn thành hội thoại",
-   "intro_vi": "Dạng hoàn thành hội thoại: có một câu của bạn A, em chọn câu đáp lại của bạn B cho hợp. Đề Chuyên Ngoại ngữ có 6 câu dạng này. Hôm nay em làm 5 câu ngắn.",
+   "intro_vi": "Dạng hoàn thành hội thoại: có một câu của bạn A, bạn chọn câu đáp lại của bạn B cho hợp. Đề Chuyên Ngoại ngữ có 6 câu dạng này. Hôm nay bạn làm 5 câu ngắn.",
    "tip_vi": "Tự hỏi: A đang làm gì – xin mượn đồ, khoe tin vui, kể chuyện không may hay hỏi kế hoạch? Rồi chọn câu đáp đúng việc đó.",
    "kind": "mcq",
    "items": [
@@ -292,7 +292,7 @@
   {
    "format": "listening",
    "title_vi": "Nghe và điền ghi chú",
-   "intro_vi": "Dạng nghe và điền ghi chú: em nghe một thông báo ngắn rồi điền 1 từ hoặc 1 con số vào chỗ trống. Đề Sở chuyên Anh có phần nghe như vậy. Bài này nói chậm, câu ngắn.",
+   "intro_vi": "Dạng nghe và điền ghi chú: bạn nghe một thông báo ngắn rồi điền 1 từ hoặc 1 con số vào chỗ trống. Đề Sở chuyên Anh có phần nghe như vậy. Bài này nói chậm, câu ngắn.",
    "tip_vi": "Đọc ghi chú trước khi nghe. Đoán chỗ trống cần gì: thứ trong tuần, giờ, số phòng hay đồ vật. Con số viết bằng chữ số (4, 8).",
    "kind": "gap_text",
    "script": "Hello, everyone. I'm Ms Mai, and I teach computer studies. Next week, our school is starting a new computer club. The club meets every Tuesday. It starts at four o'clock in the afternoon and finishes at half past five. We are meeting in Room 8, on the second floor. In the club, you are going to learn how to make a simple game. The club is free. You need to bring a notebook and a pen. You don't need a laptop, because there are twenty computers in the room. If you want to join, please tell your class teacher before Friday. I'm sure it will be fun. Thank you!",
@@ -327,7 +327,7 @@
      "accept": [
       "computer game"
      ],
-     "explain_vi": "Nghe: ==“learn how to make a simple game”== → **game**. __Phiếu đã có “a simple”, em chỉ điền 1 từ.__"
+     "explain_vi": "Nghe: ==“learn how to make a simple game”== → **game**. __Phiếu đã có “a simple”, bạn chỉ điền 1 từ.__"
     },
     {
      "answer": "notebook",
@@ -343,7 +343,7 @@
   {
    "format": "dialogue_completion",
    "title_vi": "Hoàn thành hội thoại",
-   "intro_vi": "Câu hội thoại phân loại thường có lời đáp 'nghe đúng' nhưng sai chức năng hoặc sai sắc thái (Would you mind…?, I couldn't agree more, make it). Hôm nay em làm 5 câu như vậy.",
+   "intro_vi": "Câu hội thoại phân loại thường có lời đáp 'nghe đúng' nhưng sai chức năng hoặc sai sắc thái (Would you mind…?, I couldn't agree more, make it). Hôm nay bạn làm 5 câu như vậy.",
    "tip_vi": "Đọc cả phần sau chỗ trống nếu có. Nhớ cách đáp chuẩn: Would you mind…? → Sorry, I'll…; lời khen → cảm ơn; Shall I…? → That would be a great help.",
    "kind": "mcq",
    "items": [
@@ -688,7 +688,7 @@
      {
       "answer": "science",
       "accept": [],
-      "explain_vi": "==“You can use it in your English and science lessons.”== → **science**. __English đã có trên phiếu, em điền môn còn lại.__"
+      "explain_vi": "==“You can use it in your English and science lessons.”== → **science**. __English đã có trên phiếu, bạn điền môn còn lại.__"
      },
      {
       "answer": "evening",
@@ -702,21 +702,21 @@
       "accept": [
        "student number"
       ],
-      "explain_vi": "==“Your password is your student number”== → **number**. __Phiếu đã có “student”, em chỉ điền number.__"
+      "explain_vi": "==“Your password is your student number”== → **number**. __Phiếu đã có “student”, bạn chỉ điền number.__"
      },
      {
       "answer": "6",
       "accept": [
        "six"
       ],
-      "explain_vi": "==“take it to Mr Nam in Room 6”== → **6**. __Em có thể viết 6 hoặc six.__"
+      "explain_vi": "==“take it to Mr Nam in Room 6”== → **6**. __Bạn có thể viết 6 hoặc six.__"
      },
      {
       "answer": "Thursdays",
       "accept": [
        "Thursday"
       ],
-      "explain_vi": "==“He is there on Tuesdays and Thursdays.”== → **Thursdays**. __Tuesdays đã in sẵn, em điền ngày còn lại.__"
+      "explain_vi": "==“He is there on Tuesdays and Thursdays.”== → **Thursdays**. __Tuesdays đã in sẵn, bạn điền ngày còn lại.__"
      }
     ]
    }
@@ -863,7 +863,7 @@
        "a photo",
        "photograph"
       ],
-      "explain_vi": "==“Just come to the main desk and bring a photo.”== → **photo**. __Phiếu đã có “a”, em chỉ điền photo.__"
+      "explain_vi": "==“Just come to the main desk and bring a photo.”== → **photo**. __Phiếu đã có “a”, bạn chỉ điền photo.__"
      },
      {
       "answer": "4",
@@ -1028,7 +1028,7 @@
       "accept": [
        "smart watch"
       ],
-      "explain_vi": "==“My first idea was a smart watch, but my grandmother refused to wear it.”== → **watch**. __Phiếu đã có “smart”, em chỉ điền watch.__"
+      "explain_vi": "==“My first idea was a smart watch, but my grandmother refused to wear it.”== → **watch**. __Phiếu đã có “smart”, bạn chỉ điền watch.__"
      },
      {
       "answer": "phone",
@@ -1054,7 +1054,7 @@
       "accept": [
        "small light"
       ],
-      "explain_vi": "==“Next year, we're going to add a small light”== → **light**. __Phiếu đã có “a small”, em chỉ điền light.__"
+      "explain_vi": "==“Next year, we're going to add a small light”== → **light**. __Phiếu đã có “a small”, bạn chỉ điền light.__"
      }
     ]
    }

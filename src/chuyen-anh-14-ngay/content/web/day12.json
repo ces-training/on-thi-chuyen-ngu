@@ -186,14 +186,14 @@
       "that he'd found that old coin in his garden the previous day",
       "he'd found that old coin in his garden the previous day"
      ],
-     "explain_vi": "==found== → **had found**; I/my → he/his; this → that; ==yesterday== → **the day before** (hoặc the previous day). __Có 4 chỗ phải đổi – em kiểm tra từng chỗ.__"
+     "explain_vi": "==found== → **had found**; I/my → he/his; this → that; ==yesterday== → **the day before** (hoặc the previous day). __Có 4 chỗ phải đổi – bạn kiểm tra từng chỗ.__"
     }
    ]
   },
   {
    "format": "reading_mcq",
    "title_vi": "Đọc hiểu",
-   "intro_vi": "Đề chuyên có bài đọc hiểu chọn A, B, C, D: đề Chuyên Ngoại ngữ có 8 câu, đề Sở có phần Đọc 25 câu gồm nhiều bài. Hôm nay em làm bản rút gọn: 1 bài đọc, 5 câu.",
+   "intro_vi": "Đề chuyên có bài đọc hiểu chọn A, B, C, D: đề Chuyên Ngoại ngữ có 8 câu, đề Sở có phần Đọc 25 câu gồm nhiều bài. Hôm nay bạn làm bản rút gọn: 1 bài đọc, 5 câu.",
    "tip_vi": "Mẹo: đọc câu hỏi trước, gạch từ khoá rồi tìm đoạn chứa thông tin. Đáp án đúng thường nói lại bằng từ khác, ít khi chép nguyên văn.",
    "kind": "mcq",
    "passage": "Đức is thirteen and lives with his grandmother in a small town in Thanh Hoá. A few years ago, his grandmother's eyes became weak, and she often walked into tables and doors. One evening, after she fell and hurt her knee, Đức decided that he had to do something to help her.\n\nHe came up with the idea of a walking stick which could 'see' for her. With some help from his science teacher, he fixed a small sensor to the bottom of an old stick. When the stick came close to something, it made a loud beep. However, his first experiment did not go well. The stick beeped at everything, even at a sleeping cat or a leaf on the floor. Đức felt like giving up, but his teacher told him that every inventor made mistakes before a breakthrough.\n\nFor the next two months, Đức carried out more tests in the school laboratory and changed the sensor many times. Then his grandmother told him that the beeping embarrassed her when she went to the market. So Đức made the stick vibrate gently in her hand instead.\n\nLast spring, his invention won second prize at a science fair for students in his province. Now his grandmother walks to the market on her own every morning. Đức says that his next goal is to make the stick cheap enough for every elderly person in his town.",
@@ -260,7 +260,7 @@
   {
    "format": "transformation",
    "title_vi": "Viết lại câu (câu tường thuật)",
-   "intro_vi": "Đề chuyên có bài viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn. Hôm nay em chuyển lời nói trực tiếp sang câu tường thuật. Câu ngắn, mỗi câu chỉ cần đổi 2–3 chỗ.",
+   "intro_vi": "Đề chuyên có bài viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn. Hôm nay bạn chuyển lời nói trực tiếp sang câu tường thuật. Câu ngắn, mỗi câu chỉ cần đổi 2–3 chỗ.",
    "tip_vi": "Mẹo: 3 bước: (1) đổi I/my/we → he/she/his/her/they; (2) lùi thì: am → was, like → liked, can → could, will → would; (3) có người nghe thì dùng told.",
    "kind": "transform",
    "items": [
@@ -316,7 +316,7 @@
   {
    "format": "reading_mcq",
    "title_vi": "Đọc hiểu",
-   "intro_vi": "Đề chuyên có bài đọc rồi chọn A, B, C hoặc D. Bài hôm nay ngắn, câu đơn giản, có 5 câu hỏi. Em không cần hiểu hết từng từ, chỉ cần tìm đúng câu chứa thông tin.",
+   "intro_vi": "Đề chuyên có bài đọc rồi chọn A, B, C hoặc D. Bài hôm nay ngắn, câu đơn giản, có 5 câu hỏi. Bạn không cần hiểu hết từng từ, chỉ cần tìm đúng câu chứa thông tin.",
    "tip_vi": "Mẹo: đọc câu hỏi trước, tìm từ khoá (Bin, every hour, at first…) trong bài, rồi đọc thật kỹ câu đó và câu ngay sau nó.",
    "kind": "mcq",
    "passage": "Mai is twelve years old, and she loves science. Her favourite room at school is the laboratory. Last month, her science teacher, Mr Nam, gave the class a project. 'Find a problem at home and try to solve it,' he said.\n\nMai thought about her little brother, Bin. Bin is five, and he never drinks enough water. He often has headaches in the afternoon. So Mai came up with an idea: a 'talking bottle'. She put a small speaker on an old water bottle. Every hour, the bottle says, 'Hello, Bin! It's time to drink some water!'\n\nAt first, Bin was scared of the bottle, and he hid it under his bed. But after two days, he started to love it. Now he drinks six glasses of water every day, and his headaches have stopped. Mai's mother told her that Bin was much healthier now.\n\nMai showed her bottle to the class. Her friends laughed and clapped. Mr Nam said that it was a simple but clever invention. Next year, Mai wants to make a talking bottle for her grandfather too, because he often forgets to drink water.",
@@ -341,7 +341,7 @@
       "It calls Mai's mother."
      ],
      "answer": 0,
-     "explain_vi": "Mỗi giờ chai nói ==\"It's time to drink some water!\"== → **A**: nhắc Bin uống nước. __Từ khoá 'every hour' giúp em tìm đúng câu.__"
+     "explain_vi": "Mỗi giờ chai nói ==\"It's time to drink some water!\"== → **A**: nhắc Bin uống nước. __Từ khoá 'every hour' giúp bạn tìm đúng câu.__"
     },
     {
      "q": "How did Bin feel about the bottle at first?",
@@ -408,7 +408,7 @@
       "they'd discovered the fossils there two weeks before",
       "they'd discovered the fossils there two weeks earlier"
      ],
-     "explain_vi": "==discovered== → **had discovered**; we → they; these → those; here → there; ==ago== → **before** (earlier). __Có 5 chỗ phải đổi – em đếm lại cho đủ.__"
+     "explain_vi": "==discovered== → **had discovered**; we → they; these → those; here → there; ==ago== → **before** (earlier). __Có 5 chỗ phải đổi – bạn đếm lại cho đủ.__"
     },
     {
      "q": "'I have been analysing these samples since this morning,' said Dr Thu.",
@@ -797,7 +797,7 @@
      {
       "answer": "air",
       "accept": [],
-      "explain_vi": "==\"simple experiments with water and air\"== → **air**. __Ghi chú có sẵn 'water and', em chỉ cần nghe từ đi sau.__"
+      "explain_vi": "==\"simple experiments with water and air\"== → **air**. __Ghi chú có sẵn 'water and', bạn chỉ cần nghe từ đi sau.__"
      },
      {
       "answer": "notebook",
@@ -941,7 +941,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Em nghe lời thuyết minh ở một bảo tàng khoa học về chiếc lò vi sóng đầu tiên. Điền vào ghi chú, mỗi chỗ 1–2 từ hoặc 1 con số.",
+    "intro_vi": "Bạn nghe lời thuyết minh ở một bảo tàng khoa học về chiếc lò vi sóng đầu tiên. Điền vào ghi chú, mỗi chỗ 1–2 từ hoặc 1 con số.",
     "script": "Hello, and welcome to the Hall of Inventions. Some of the greatest breakthroughs in science happened by accident, and the object in front of you is a good example. In 1945, an American engineer called Percy Spencer was carrying out research on radar machines. One day, he noticed that the chocolate bar in his pocket had melted. He was curious, so he did a simple experiment. Some stories say he tested an egg first, but in fact, the first food he tried was popcorn, and it popped all over his laboratory! The egg came later, and it exploded. Two years after that, the first microwave oven went on sale. It wasn't small like the ones in our kitchens today. It was almost two metres tall and weighed about 340 kilograms. It was also very expensive, so at first it was mainly bought by restaurants. Now, please walk through to the next room.",
     "text": "THE FIRST MICROWAVE OVEN\n• Percy Spencer's job: [1]\n• What melted in his pocket: a [2]\n• First food he tested: [3]\n• Weight of the first oven: about [4] kilograms\n• At first, mainly bought by: [5]",
     "items": [
@@ -1141,7 +1141,7 @@
      {
       "answer": "evidence",
       "accept": [],
-      "explain_vi": "==\"how carefully Linh had recorded her evidence\"== → **evidence**. __Ghi chú dùng lại 'recorded her', em nghe từ ngay sau.__"
+      "explain_vi": "==\"how carefully Linh had recorded her evidence\"== → **evidence**. __Ghi chú dùng lại 'recorded her', bạn nghe từ ngay sau.__"
      },
      {
       "answer": "used again",

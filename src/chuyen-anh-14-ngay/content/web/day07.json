@@ -344,7 +344,7 @@
       "My brother and I are the same age."
      ],
      "answer": 2,
-     "explain_vi": "==My brother is older than me== → em nhỏ tuổi hơn anh: **I am younger than my brother.** __Đổi chủ ngữ thì đổi older thành younger.__"
+     "explain_vi": "==My brother is older than me== → bạn nhỏ tuổi hơn anh: **I am younger than my brother.** __Đổi chủ ngữ thì đổi older thành younger.__"
     },
     {
      "format": "closest_meaning",
@@ -626,7 +626,7 @@
   "nen": {
    "part1": {
     "title_vi": "Phần 1 · Hội thoại",
-    "intro_vi": "Em nghe Linh và Nam nói về kế hoạch cuối tuần: bài tập, sở thích mới và ngày tái chế. Chọn đáp án đúng.",
+    "intro_vi": "Bạn nghe Linh và Nam nói về kế hoạch cuối tuần: bài tập, sở thích mới và ngày tái chế. Chọn đáp án đúng.",
     "speakers": [
      {
       "name": "Linh",
@@ -739,7 +739,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Em nghe cô Green thông báo về các câu lạc bộ mùa hè của trường. Điền một từ hoặc một con số vào mỗi chỗ trống.",
+    "intro_vi": "Bạn nghe cô Green thông báo về các câu lạc bộ mùa hè của trường. Điền một từ hoặc một con số vào mỗi chỗ trống.",
     "script": "Good morning, everyone. This is Mrs Green with some news about our summer clubs. This summer, the school is starting three new clubs. The photography club meets on Tuesday afternoons in the library. Please bring your own camera or phone. The cooking club is on Thursdays, in the school kitchen. You'll learn to make nutritious food for your family. The third club is the robot club. It meets on Saturday mornings in the computer room. Only 20 students can join, so sign up early! To join a club, write your name on the list outside the teachers' room before Friday. Have a lovely summer!",
     "text": "SUMMER CLUBS\n• Photography club: Tuesday afternoons in the [1]\n• Bring your own [2] or phone\n• Cooking club: in the school [3]\n• Robot club: only [4] students\n• Sign up: write your name on the list before [5]",
     "items": [
@@ -755,7 +755,7 @@
       "accept": [
        "a camera"
       ],
-      "explain_vi": "==Please bring your own camera or phone.== → **camera**. __Chữ 'or phone' sau chỗ trống giúp em nhận ra câu cần nghe.__"
+      "explain_vi": "==Please bring your own camera or phone.== → **camera**. __Chữ 'or phone' sau chỗ trống giúp bạn nhận ra câu cần nghe.__"
      },
      {
       "answer": "kitchen",
@@ -780,7 +780,7 @@
   "chuan": {
    "part1": {
     "title_vi": "Phần 1 · Hội thoại",
-    "intro_vi": "Em nghe Mai và Tom nói về việc ôn thi và điện thoại. Chú ý chỗ người nói đổi ý hoặc sửa lại. Chọn đáp án đúng.",
+    "intro_vi": "Bạn nghe Mai và Tom nói về việc ôn thi và điện thoại. Chú ý chỗ người nói đổi ý hoặc sửa lại. Chọn đáp án đúng.",
     "speakers": [
      {
       "name": "Mai",
@@ -901,7 +901,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Em nghe giới thiệu chương trình hè Summer Challenge. Có một chỗ người nói sửa lại thông tin. Điền 1–2 từ hoặc một con số.",
+    "intro_vi": "Bạn nghe giới thiệu chương trình hè Summer Challenge. Có một chỗ người nói sửa lại thông tin. Điền 1–2 từ hoặc một con số.",
     "script": "Hi, everyone. I'm Anna from the City Youth Centre, and I'm here to tell you about our Summer Challenge programme. It's for students aged twelve to fifteen, and it runs for four weeks in July. Every week has a different theme. In week one, you'll explore the city's old streets and learn about their history. In week two, we'll go to the countryside to plant trees and learn how to protect the environment. Week three is our creative week. You'll work in teams to make a short film, using only your phones. And in the final week, we'll have a sports day. Oh, sorry, I need to correct that. The sports day was last year. This year, the final week is a cooking competition. Places are limited to 40 students, so please register soon. You can do it at our office or on our website.",
     "text": "SUMMER CHALLENGE (July)\n• Week 1: explore the city's old [1]\n• Week 2: plant [2] in the countryside\n• Week 3: make a short [3] with your phone\n• Week 4: a [4] competition\n• Number of places: [5]",
     "items": [
@@ -942,7 +942,7 @@
   "nang": {
    "part1": {
     "title_vi": "Phần 1 · Hội thoại",
-    "intro_vi": "Em nghe Anna và Nam nói về việc Nam định rời câu lạc bộ tranh biện. Câu hỏi về ý kiến, thái độ và suy luận.",
+    "intro_vi": "Bạn nghe Anna và Nam nói về việc Nam định rời câu lạc bộ tranh biện. Câu hỏi về ý kiến, thái độ và suy luận.",
     "speakers": [
      {
       "name": "Anna",
@@ -1063,7 +1063,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Em nghe hướng dẫn viên ở Vườn quốc gia Cúc Phương dặn dò trước chuyến đi bộ. Có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
+    "intro_vi": "Bạn nghe hướng dẫn viên ở Vườn quốc gia Cúc Phương dặn dò trước chuyến đi bộ. Có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
     "script": "Good morning, and welcome to Cuc Phuong National Park, the oldest national park in Vietnam. I'm Mai, and I'll be your guide on today's walk. Before we start, a few rules. First, you mustn't leave any rubbish in the forest. Even small things like sweet wrappers can be harmful to animals, so please carry your waste with you until we reach the bins at the visitor centre. Second, the forest is home to hundreds of species of birds, so please keep your voices down. Now, some of you have asked whether we'll see the park's rare monkeys. Unfortunately, they're extremely shy, so you probably won't see them in the wild. However, you can see them up close at the rescue centre. Your printed programme says we'll go there before lunch, but in fact we'll visit it after lunch. As for phones, there's no signal in most of the forest, so you can't rely on online maps. Stay close to the group and follow the red signs, not the yellow ones, which are for the longer trail. Our walk takes about 3 hours, and the path is quite steep in places, so make sure you're wearing proper shoes.",
     "text": "CUC PHUONG FOREST WALK\n• Carry your rubbish to the bins at the [1]\n• Rare monkeys: see them at the [2]\n• We visit them: [3] lunch\n• Follow the [4] signs\n• Length of walk: about [5] hours",
     "items": [

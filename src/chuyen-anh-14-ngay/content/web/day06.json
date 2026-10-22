@@ -498,7 +498,7 @@
   "nen": {
    "part1": {
     "title_vi": "Phần 1 · Hội thoại",
-    "intro_vi": "Em nghe Tom hỏi Mai về chuyến đi Sa Pa của gia đình Mai. Chọn đáp án đúng cho mỗi câu hỏi.",
+    "intro_vi": "Bạn nghe Tom hỏi Mai về chuyến đi Sa Pa của gia đình Mai. Chọn đáp án đúng cho mỗi câu hỏi.",
     "speakers": [
      {
       "name": "Tom",
@@ -611,7 +611,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Em nghe hướng dẫn viên nói trên xe buýt trong chuyến đi Vịnh Hạ Long. Điền một từ hoặc một con số vào mỗi chỗ trống.",
+    "intro_vi": "Bạn nghe hướng dẫn viên nói trên xe buýt trong chuyến đi Vịnh Hạ Long. Điền một từ hoặc một con số vào mỗi chỗ trống.",
     "script": "Good morning, everyone. My name is Linh, and I'm your tour guide today. Welcome to our trip to Ha Long Bay. The journey from Hanoi takes about 3 hours. We're going to stop once, at a restaurant, for a short break. When we arrive, we'll get on a boat and explore the bay. We'll also visit a big cave. It's very dark inside, so you should bring a torch. Please stay with the group and don't touch the rocks. At lunchtime, we'll have seafood on the boat. At the end of the day, you can buy souvenirs at the market near the harbour. Have a great day!",
     "text": "HA LONG BAY TRIP\n• Journey time: about [1] hours\n• Short break at a [2]\n• In the cave: bring a [3]\n• Lunch: [4] on the boat\n• Buy souvenirs at the [5] near the harbour",
     "items": [
@@ -634,7 +634,7 @@
       "accept": [
        "a torch"
       ],
-      "explain_vi": "==It's very dark inside, so you should bring a torch.== → **torch** (đèn pin). __Lý do 'very dark' giúp em đoán trước đồ cần mang.__"
+      "explain_vi": "==It's very dark inside, so you should bring a torch.== → **torch** (đèn pin). __Lý do 'very dark' giúp bạn đoán trước đồ cần mang.__"
      },
      {
       "answer": "seafood",
@@ -775,7 +775,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Em nghe thầy Brown thông báo về chuyến đi Singapore của trường. Có một thông tin bị thay đổi. Điền 1–2 từ hoặc một con số.",
+    "intro_vi": "Bạn nghe thầy Brown thông báo về chuyến đi Singapore của trường. Có một thông tin bị thay đổi. Điền 1–2 từ hoặc một con số.",
     "script": "Good afternoon, everyone. This is Mr Brown with some important information about next month's school trip to Singapore. We're setting off very early on Monday morning, so please be at the school gate by half past five. The bus to the airport leaves at six o'clock. Everyone must bring their passport, and you have to give a copy of it to your class teacher by this Friday. Oh, sorry, I've just been told that the date has changed. Please give it to her by Wednesday instead. You don't have to bring much money, because all meals are paid for. But you can bring up to 50 dollars for souvenirs. We're staying at a hotel near the Science Centre, so we'll be able to walk there. Finally, the weather is hot and wet, so you should pack an umbrella and light clothes.",
     "text": "SCHOOL TRIP TO SINGAPORE\n• Meet at the school [1] by half past five\n• Copy of passport to class teacher by [2]\n• Money for souvenirs: up to [3] dollars\n• Hotel is near the [4]\n• Pack: an [5] and light clothes",
     "items": [
@@ -817,7 +817,7 @@
   "nang": {
    "part1": {
     "title_vi": "Phần 1 · Hội thoại",
-    "intro_vi": "Em nghe Linh và Tom bàn chọn điểm đến cho chuyến đi của lớp. Câu hỏi về ý kiến, thái độ và suy luận.",
+    "intro_vi": "Bạn nghe Linh và Tom bàn chọn điểm đến cho chuyến đi của lớp. Câu hỏi về ý kiến, thái độ và suy luận.",
     "speakers": [
      {
       "name": "Linh",
@@ -946,7 +946,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Em nghe hướng dẫn viên giới thiệu tour xe buýt tham quan London. Có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
+    "intro_vi": "Bạn nghe hướng dẫn viên giới thiệu tour xe buýt tham quan London. Có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
     "script": "Good morning, everyone, and welcome aboard the Riverside Explorer, the sightseeing bus that takes you to London's most famous places. My name is Tom, and I'll be your guide today. Before we set off, here's some useful information. Your ticket is valid for 24 hours, so you can get off at any stop, explore the area, and then catch a later bus. Normally, a bus comes every 15 minutes, but because of roadworks this week, you may have to wait up to 30 minutes, so please be patient. Our first stop is the Tower of London. If you want to go inside, you'd better buy your tickets online, because the queues at the gate can be extremely long. Next, we'll cross the river to the London Eye. Many visitors assume it offers the best view of the city. It's certainly impressive, but it's also very expensive. If you'd rather save your money, the roof garden of the city library gives you an almost equally stunning view, and it's completely free. Finally, please don't leave bags on your seat when you get off. Anything left behind is taken to our office at Victoria Station, not to the police. Enjoy the tour!",
     "text": "RIVERSIDE EXPLORER BUS TOUR\n• Ticket valid for: [1] hours\n• This week: wait up to [2] minutes for a bus\n• Tower of London: buy tickets [3]\n• Free view: roof garden of the city [4]\n• Lost bags: taken to our office at [5]",
     "items": [

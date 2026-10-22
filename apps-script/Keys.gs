@@ -322,9 +322,9 @@ var PAPER_KEYS = {
    "task": "Write a paragraph (50–70 words) about your school life. Say what you usually do at school and what you are doing or learning this week.",
    "min_words": 50,
    "checklist": [
-    "Em có dùng ít nhất 2 câu thì hiện tại đơn để nói về thói quen không?",
-    "Em có dùng ít nhất 2 câu thì hiện tại tiếp diễn để nói về việc tuần này / lúc này không?",
-    "Em có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 1 không?",
+    "Bạn có dùng ít nhất 2 câu thì hiện tại đơn để nói về thói quen không?",
+    "Bạn có dùng ít nhất 2 câu thì hiện tại tiếp diễn để nói về việc tuần này / lúc này không?",
+    "Bạn có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 1 không?",
     "Đoạn văn đủ 50 từ; mỗi câu bắt đầu bằng chữ hoa và kết thúc bằng dấu chấm."
    ]
   }
@@ -645,9 +645,9 @@ var PAPER_KEYS = {
    "task": "Write a paragraph (50–70 words) about a hobby you used to have or one you took up recently. Say when and how you started it and why you like (or liked) it.",
    "min_words": 50,
    "checklist": [
-    "Em có dùng thì quá khứ đơn để kể chuyện đã xảy ra không?",
-    "Em có dùng ít nhất 1 câu quá khứ tiếp diễn hoặc 1 câu với used to không?",
-    "Em có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 2 (ví dụ: spare, creative, relax, take up…) không?",
+    "Bạn có dùng thì quá khứ đơn để kể chuyện đã xảy ra không?",
+    "Bạn có dùng ít nhất 1 câu quá khứ tiếp diễn hoặc 1 câu với used to không?",
+    "Bạn có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 2 (ví dụ: spare, creative, relax, take up…) không?",
     "Đoạn văn đủ 50 từ và có câu nêu lý do (because / so)."
    ]
   }
@@ -976,9 +976,9 @@ var PAPER_KEYS = {
    "task": "Write a paragraph (50–70 words) about what you and your family have done to protect the environment. Give at least one example of something you did recently.",
    "min_words": 50,
    "checklist": [
-    "Em có dùng thì hiện tại hoàn thành (have/has + V3) ít nhất 2 lần không?",
-    "Em có dùng thì quá khứ đơn với thời gian xác định (last weekend, yesterday…) ít nhất 1 lần không?",
-    "Em có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 3 không?",
+    "Bạn có dùng thì hiện tại hoàn thành (have/has + V3) ít nhất 2 lần không?",
+    "Bạn có dùng thì quá khứ đơn với thời gian xác định (last weekend, yesterday…) ít nhất 1 lần không?",
+    "Bạn có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 3 không?",
     "Đoạn văn đủ 50 từ và các V3 được viết đúng chính tả (seen, taken, done…)."
    ]
   }
@@ -1317,10 +1317,10 @@ var PAPER_KEYS = {
    "task": "Imagine your class is having a 'Day Without Screens' next Saturday. Write a paragraph (50–70 words) about what you are going to do that day and how you think you will feel.",
    "min_words": 50,
    "checklist": [
-    "Em có dùng be going to để nói về dự định không?",
-    "Em có dùng hiện tại tiếp diễn cho một lịch hẹn cụ thể (có giờ / có người hẹn) không?",
-    "Em có dùng will (I think / I'm sure … will) để dự đoán cảm xúc của mình không?",
-    "Em có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 4, và đoạn văn đủ 50 từ không?"
+    "Bạn có dùng be going to để nói về dự định không?",
+    "Bạn có dùng hiện tại tiếp diễn cho một lịch hẹn cụ thể (có giờ / có người hẹn) không?",
+    "Bạn có dùng will (I think / I'm sure … will) để dự đoán cảm xúc của mình không?",
+    "Bạn có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 4, và đoạn văn đủ 50 từ không?"
    ]
   }
  },
@@ -1640,10 +1640,10 @@ var PAPER_KEYS = {
    "task": "Write a paragraph (50–70 words) comparing your healthy and unhealthy habits. Say which habit you want to change and why.",
    "min_words": 50,
    "checklist": [
-    "Em có dùng ít nhất 1 câu so sánh hơn và 1 câu so sánh nhất không?",
-    "Em có dùng ít nhất 1 cấu trúc too / enough hoặc so / such … that không?",
-    "Em có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 5 không?",
-    "Đoạn văn đủ 50 từ và có nêu lý do (because …) vì sao em muốn thay đổi."
+    "Bạn có dùng ít nhất 1 câu so sánh hơn và 1 câu so sánh nhất không?",
+    "Bạn có dùng ít nhất 1 cấu trúc too / enough hoặc so / such … that không?",
+    "Bạn có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 5 không?",
+    "Đoạn văn đủ 50 từ và có nêu lý do (because …) vì sao bạn muốn thay đổi."
    ]
   }
  },
@@ -1983,10 +1983,10 @@ var PAPER_KEYS = {
    "task": "Write a short paragraph (50–70 words) about a trip you have taken or would like to take. Say where you went (or want to go), how you travelled, and what you did (or want to do) there. Use at least one modal verb (can, could, must, have to, should) and two words from today's lesson.",
    "min_words": 50,
    "checklist": [
-    "Em đã nói rõ đi đâu, đi bằng gì và làm gì ở đó chưa?",
-    "Em đã dùng ít nhất 1 động từ khuyết thiếu (can/could/must/have to/should) và theo sau là động từ nguyên thể không 'to' chưa?",
-    "Em đã dùng ít nhất 2 từ mới của bài hôm nay chưa?",
-    "Em đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
+    "Bạn đã nói rõ đi đâu, đi bằng gì và làm gì ở đó chưa?",
+    "Bạn đã dùng ít nhất 1 động từ khuyết thiếu (can/could/must/have to/should) và theo sau là động từ nguyên thể không 'to' chưa?",
+    "Bạn đã dùng ít nhất 2 từ mới của bài hôm nay chưa?",
+    "Bạn đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
    ]
   }
  },
@@ -2385,10 +2385,10 @@ var PAPER_KEYS = {
    "task": "Write an email (80–100 words) to your English penfriend, Alex. Tell Alex about a new hobby or a healthy habit you have started: what you used to do before, what you do now, and what you are going to do next. Use at least four words or phrasal verbs from Days 1–6.",
    "min_words": 80,
    "checklist": [
-    "Email của em có lời chào mở đầu (Hi Alex,) và lời chào kết thúc (Best wishes, + tên) chưa?",
-    "Em đã dùng đúng 3 mốc thời gian: trước đây (used to / quá khứ đơn), bây giờ (hiện tại đơn / hiện tại hoàn thành), sắp tới (be going to) chưa?",
-    "Em đã dùng ít nhất 4 từ hoặc cụm động từ của buổi 1–6 chưa? Em gạch chân chúng nhé.",
-    "Em đã viết đủ 80 từ, kiểm tra chính tả và chữ cái viết hoa đầu câu chưa?"
+    "Email của bạn có lời chào mở đầu (Hi Alex,) và lời chào kết thúc (Best wishes, + tên) chưa?",
+    "Bạn đã dùng đúng 3 mốc thời gian: trước đây (used to / quá khứ đơn), bây giờ (hiện tại đơn / hiện tại hoàn thành), sắp tới (be going to) chưa?",
+    "Bạn đã dùng ít nhất 4 từ hoặc cụm động từ của buổi 1–6 chưa? Bạn gạch chân chúng nhé.",
+    "Bạn đã viết đủ 80 từ, kiểm tra chính tả và chữ cái viết hoa đầu câu chưa?"
    ]
   }
  },
@@ -2709,10 +2709,10 @@ var PAPER_KEYS = {
    "task": "Write a short paragraph (50–70 words) about how you get news and information. Which media do you use (TV, newspapers, websites, social media)? Which one do you think is the most reliable, and why? Use at least one passive sentence and two words from today's lesson.",
    "min_words": 50,
    "checklist": [
-    "Em đã kể ra các nguồn tin em dùng và chọn ra một nguồn đáng tin cậy nhất, có giải thích lý do chưa?",
-    "Em đã viết ít nhất 1 câu bị động đúng công thức be + V3 chưa?",
-    "Em đã dùng ít nhất 2 từ mới của bài hôm nay chưa?",
-    "Em đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
+    "Bạn đã kể ra các nguồn tin bạn dùng và chọn ra một nguồn đáng tin cậy nhất, có giải thích lý do chưa?",
+    "Bạn đã viết ít nhất 1 câu bị động đúng công thức be + V3 chưa?",
+    "Bạn đã dùng ít nhất 2 từ mới của bài hôm nay chưa?",
+    "Bạn đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
    ]
   }
  },
@@ -3051,10 +3051,10 @@ var PAPER_KEYS = {
    "task": "Write a short paragraph (50–70 words) about a traditional dish from your family or your hometown. Say what the main ingredients are, when people usually eat it, and why you like it. Use much/many/a few/a little at least once and two words from today's lesson.",
    "min_words": 50,
    "checklist": [
-    "Em đã nêu tên món ăn, nguyên liệu chính, dịp ăn và lý do em thích chưa?",
-    "Em đã dùng đúng much/many/a few/a little với danh từ đếm được và không đếm được chưa?",
-    "Em đã dùng ít nhất 2 từ mới của bài hôm nay và kiểm tra mạo từ a/an/the chưa?",
-    "Em đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
+    "Bạn đã nêu tên món ăn, nguyên liệu chính, dịp ăn và lý do bạn thích chưa?",
+    "Bạn đã dùng đúng much/many/a few/a little với danh từ đếm được và không đếm được chưa?",
+    "Bạn đã dùng ít nhất 2 từ mới của bài hôm nay và kiểm tra mạo từ a/an/the chưa?",
+    "Bạn đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
    ]
   }
  },
@@ -3397,10 +3397,10 @@ var PAPER_KEYS = {
    "task": "Write about a job you would like to do in the future. Say why you want this job, what skills it needs, and what you will do to get it. Use at least one conditional sentence.",
    "min_words": 50,
    "checklist": [
-    "Em đã nói rõ nghề em muốn làm và lý do chưa?",
-    "Em đã dùng ít nhất 3 từ mới của hôm nay (career, skill, ambition, experience...)?",
-    "Câu điều kiện của em đã đúng thì chưa? (If + hiện tại đơn → will; If + quá khứ đơn → would)",
-    "Em đã viết đủ 50 từ trở lên chưa?"
+    "Bạn đã nói rõ nghề bạn muốn làm và lý do chưa?",
+    "Bạn đã dùng ít nhất 3 từ mới của hôm nay (career, skill, ambition, experience...)?",
+    "Câu điều kiện của bạn đã đúng thì chưa? (If + hiện tại đơn → will; If + quá khứ đơn → would)",
+    "Bạn đã viết đủ 50 từ trở lên chưa?"
    ]
   }
  },
@@ -3733,10 +3733,10 @@ var PAPER_KEYS = {
    "task": "Write about a person you look up to. Who is this person? What is his/her personality like? Why do you respect him/her? Use at least two relative clauses (who, which, whose, where).",
    "min_words": 50,
    "checklist": [
-    "Em đã giới thiệu người đó là ai và vì sao em kính trọng họ chưa?",
-    "Em đã dùng ít nhất 2 mệnh đề quan hệ, và không dùng 'that' sau dấu phẩy chưa?",
-    "Em đã dùng ít nhất 3 từ mới về tính cách (generous, honest, sympathetic...) chưa?",
-    "Em đã viết đủ 50 từ trở lên chưa?"
+    "Bạn đã giới thiệu người đó là ai và vì sao bạn kính trọng họ chưa?",
+    "Bạn đã dùng ít nhất 2 mệnh đề quan hệ, và không dùng 'that' sau dấu phẩy chưa?",
+    "Bạn đã dùng ít nhất 3 từ mới về tính cách (generous, honest, sympathetic...) chưa?",
+    "Bạn đã viết đủ 50 từ trở lên chưa?"
    ]
   }
  },
@@ -4065,10 +4065,10 @@ var PAPER_KEYS = {
    "task": "Write about an invention that you think is very important. What is it? How does it help people? What would life be like without it? Report one thing that somebody (a parent, a teacher) said about it.",
    "min_words": 50,
    "checklist": [
-    "Em đã nêu tên phát minh và nói nó giúp ích thế nào chưa?",
-    "Em đã có ít nhất 1 câu tường thuật đúng (said that / told me that + lùi thì) chưa?",
-    "Em đã dùng ít nhất 3 từ mới hôm nay (invent, discover, research, breakthrough...) chưa?",
-    "Em đã viết đủ 50 từ trở lên chưa?"
+    "Bạn đã nêu tên phát minh và nói nó giúp ích thế nào chưa?",
+    "Bạn đã có ít nhất 1 câu tường thuật đúng (said that / told me that + lùi thì) chưa?",
+    "Bạn đã dùng ít nhất 3 từ mới hôm nay (invent, discover, research, breakthrough...) chưa?",
+    "Bạn đã viết đủ 50 từ trở lên chưa?"
    ]
   }
  },
@@ -4391,10 +4391,10 @@ var PAPER_KEYS = {
    "task": "Write about a show, concert or exhibition that you took part in or watched. What was it? What did you enjoy about it? How did you feel? Use at least two verbs followed by V-ing or to V (enjoy, decide, hope, remember...).",
    "min_words": 50,
    "checklist": [
-    "Em đã nói rõ đó là sự kiện gì và cảm xúc của em chưa?",
-    "Em đã dùng ít nhất 2 động từ + V-ing / to V đúng (enjoy doing, decide to do...) chưa?",
-    "Em đã dùng ít nhất 3 từ mới hôm nay (performance, rehearse, talented, inspire...) chưa?",
-    "Em đã viết đủ 50 từ trở lên chưa?"
+    "Bạn đã nói rõ đó là sự kiện gì và cảm xúc của bạn chưa?",
+    "Bạn đã dùng ít nhất 2 động từ + V-ing / to V đúng (enjoy doing, decide to do...) chưa?",
+    "Bạn đã dùng ít nhất 3 từ mới hôm nay (performance, rehearse, talented, inspire...) chưa?",
+    "Bạn đã viết đủ 50 từ trở lên chưa?"
    ]
   }
  },
@@ -4788,10 +4788,10 @@ var PAPER_KEYS = {
    "task": "Write an email to an English-speaking friend about a festival, show or exhibition you went to recently. Say what it was, what you saw or did there, and why your friend would enjoy it. Use at least one passive sentence, one relative clause and one conditional sentence.",
    "min_words": 80,
    "checklist": [
-    "Email của em có lời chào mở đầu và lời chào kết thúc chưa?",
-    "Em đã có ít nhất 1 câu bị động (was/were + V3), 1 mệnh đề quan hệ (who/which/where...) và 1 câu điều kiện chưa?",
-    "Em đã dùng ít nhất 4 từ đã học trong các buổi 8–13 chưa?",
-    "Em đã viết đủ 80 từ trở lên và kiểm tra lại chính tả chưa?"
+    "Email của bạn có lời chào mở đầu và lời chào kết thúc chưa?",
+    "Bạn đã có ít nhất 1 câu bị động (was/were + V3), 1 mệnh đề quan hệ (who/which/where...) và 1 câu điều kiện chưa?",
+    "Bạn đã dùng ít nhất 4 từ đã học trong các buổi 8–13 chưa?",
+    "Bạn đã viết đủ 80 từ trở lên và kiểm tra lại chính tả chưa?"
    ]
   }
  }

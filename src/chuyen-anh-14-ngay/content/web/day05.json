@@ -128,7 +128,7 @@
       "I don't run as fast as my brother."
      ],
      "answer": 1,
-     "explain_vi": "==doesn't run as fast as I do== nghĩa là anh chạy chậm hơn em → **I run faster than my brother**. __Đổi chủ ngữ thì đảo chiều so sánh; A bị ngược nghĩa.__"
+     "explain_vi": "==doesn't run as fast as I do== nghĩa là anh chạy chậm hơn bạn → **I run faster than my brother**. __Đổi chủ ngữ thì đảo chiều so sánh; A bị ngược nghĩa.__"
     },
     {
      "q": "The bag was so heavy that Lan couldn't lift it.",
@@ -179,7 +179,7 @@
   {
    "format": "transformation",
    "title_vi": "Viết lại câu",
-   "intro_vi": "Đề Sở chuyên Anh Hà Nội có phần viết lại câu bắt đầu bằng từ cho sẵn, giữ nguyên nghĩa; đề chung vào 10 cũng có dạng này. Hôm nay em luyện 5 câu với so sánh, too/enough, so/such.",
+   "intro_vi": "Đề Sở chuyên Anh Hà Nội có phần viết lại câu bắt đầu bằng từ cho sẵn, giữ nguyên nghĩa; đề chung vào 10 cũng có dạng này. Hôm nay bạn luyện 5 câu với so sánh, too/enough, so/such.",
    "tip_vi": "Mẹo: viết xong đọc lại cả câu mới và so với câu gốc: nghĩa có giữ nguyên không, thì có đúng không, chủ ngữ mới đã hợp chưa?",
    "kind": "transform",
    "items": [
@@ -240,7 +240,7 @@
   {
    "format": "closest_meaning",
    "title_vi": "Chọn câu gần nghĩa nhất",
-   "intro_vi": "Đề Chuyên Ngoại ngữ có dạng đọc một câu rồi chọn câu A, B, C hoặc D có nghĩa giống nhất. Bản này câu ngắn, từ quen; em chỉ cần chú ý ai hơn ai, làm được hay không.",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có dạng đọc một câu rồi chọn câu A, B, C hoặc D có nghĩa giống nhất. Bản này câu ngắn, từ quen; bạn chỉ cần chú ý ai hơn ai, làm được hay không.",
    "tip_vi": "Mẹo: gạch chân từ so sánh (taller, the best, too, enough). Nếu đổi chủ ngữ thì đổi tính từ sang nghĩa ngược lại: taller → shorter.",
    "kind": "mcq",
    "items": [
@@ -304,7 +304,7 @@
   {
    "format": "transformation",
    "title_vi": "Viết lại câu",
-   "intro_vi": "Đề Sở chuyên Anh Hà Nội và đề chung vào 10 có phần viết lại câu, phần đầu câu mới cho sẵn. Bản này câu ngắn: em chỉ cần đổi so sánh, too/enough hoặc so/such.",
+   "intro_vi": "Đề Sở chuyên Anh Hà Nội và đề chung vào 10 có phần viết lại câu, phần đầu câu mới cho sẵn. Bản này câu ngắn: bạn chỉ cần đổi so sánh, too/enough hoặc so/such.",
    "tip_vi": "Mẹo: too + tính từ = not + tính từ ngược nghĩa + enough (too small = not big enough). such cần a + tính từ + danh từ.",
    "kind": "transform",
    "items": [
@@ -607,7 +607,7 @@
   "nen": {
    "part1": {
     "title_vi": "Phần 1 · Hội thoại",
-    "intro_vi": "Em nghe Linh và Nam nói chuyện về bữa sáng và việc tập thể dục. Chọn đáp án đúng cho mỗi câu hỏi.",
+    "intro_vi": "Bạn nghe Linh và Nam nói chuyện về bữa sáng và việc tập thể dục. Chọn đáp án đúng cho mỗi câu hỏi.",
     "speakers": [
      {
       "name": "Linh",
@@ -720,7 +720,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Em nghe thầy giáo thể dục thông báo về Tuần lễ Sức khoẻ của trường. Điền một từ hoặc một con số vào mỗi chỗ trống.",
+    "intro_vi": "Bạn nghe thầy giáo thể dục thông báo về Tuần lễ Sức khoẻ của trường. Điền một từ hoặc một con số vào mỗi chỗ trống.",
     "script": "Hello, everyone. This is Mr Brown, your sports teacher. Next week is our school Health Week, and we've got lots of fun activities for you. On Monday morning, a doctor is coming to talk to us about healthy food. Please bring a notebook, because you'll need to write down some tips. On Wednesday afternoon, there's a fun run around the school. It's only 2 kilometres long, so it isn't too hard for anyone. Please wear trainers, not sandals. On Friday, we're having a fruit party in the canteen. Every student should bring one piece of fruit. If you have any questions, come and see me in the sports hall. Thank you!",
     "text": "SCHOOL HEALTH WEEK\n• Monday: a [1] talks about healthy food\n• Bring: a [2]\n• Wednesday: fun run, [3] kilometres\n• Wear: [4]\n• Friday: fruit party in the [5]",
     "items": [
@@ -763,7 +763,7 @@
   "chuan": {
    "part1": {
     "title_vi": "Phần 1 · Hội thoại",
-    "intro_vi": "Em nghe Mai hỏi thăm Tom về chấn thương ở chân. Chú ý: có chỗ người nói nói nhầm rồi sửa lại. Chọn đáp án đúng.",
+    "intro_vi": "Bạn nghe Mai hỏi thăm Tom về chấn thương ở chân. Chú ý: có chỗ người nói nói nhầm rồi sửa lại. Chọn đáp án đúng.",
     "speakers": [
      {
       "name": "Mai",
@@ -884,7 +884,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Em nghe giới thiệu khoá thể dục mùa hè cho tuổi teen. Có một chỗ người nói sửa lại thông tin. Điền 1–2 từ hoặc một con số.",
+    "intro_vi": "Bạn nghe giới thiệu khoá thể dục mùa hè cho tuổi teen. Có một chỗ người nói sửa lại thông tin. Điền 1–2 từ hoặc một con số.",
     "script": "Hello and welcome to Green Park Sports Centre. My name is Anna, and I'm going to tell you about our summer fitness course for teenagers. The course starts in June and lasts for 6 weeks. Classes are on Mondays, Wednesdays and Fridays, early in the morning, because it's too hot to exercise in the afternoon. In the first hour, you'll work out in the gym with a trainer. After that, you can choose swimming or yoga. Oh, sorry, I made a mistake. It's swimming or dancing. Yoga classes are only for adults this summer. Every student must bring a water bottle and a towel. Please don't bring crisps or sweet drinks. We give everyone a free, nutritious snack after class, usually fruit and yoghurt. To sign up, just fill in a form at the reception desk.",
     "text": "SUMMER FITNESS COURSE\n• Length: [1] weeks\n• First hour: work out in the gym with a [2]\n• After that: swimming or [3]\n• Bring: a water bottle and a [4]\n• Free snack: fruit and [5]",
     "items": [
@@ -929,7 +929,7 @@
   "nang": {
    "part1": {
     "title_vi": "Phần 1 · Hội thoại",
-    "intro_vi": "Em nghe Anna và Nam bàn cách lấy lại thể lực trước buổi tuyển cầu thủ bóng đá. Câu hỏi về ý kiến, thái độ và suy luận.",
+    "intro_vi": "Bạn nghe Anna và Nam bàn cách lấy lại thể lực trước buổi tuyển cầu thủ bóng đá. Câu hỏi về ý kiến, thái độ và suy luận.",
     "speakers": [
      {
       "name": "Anna",
@@ -1058,7 +1058,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Em nghe bác sĩ nói với học sinh về đồ uống khi tập thể thao. Bài có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
+    "intro_vi": "Bạn nghe bác sĩ nói với học sinh về đồ uống khi tập thể thao. Bài có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
     "script": "Good morning, everyone. I'm Doctor Anna Green, and I work with young athletes. Today I'd like to talk about something most of you do every day without thinking: drinking. Many teenagers believe that sports drinks are the best choice after exercise. Some people say you need them after just 30 minutes of sport, but in fact, for any workout shorter than 60 minutes, plain water is perfectly enough. Sports drinks contain so much sugar that one bottle can have as much as 8 teaspoons. Energy drinks are even worse, because they also contain caffeine, which can seriously damage your sleep. Now, most people think the first sign that you need water is feeling thirsty. Actually, by then your body is already short of water. So watch out for earlier signs, such as headaches, or finding that you suddenly can't concentrate. And what should you eat after training? Many of you reach for crisps or a cake. Chocolate isn't a terrible choice, surprisingly, but my top recommendation is a banana and a glass of milk. It's cheap, quick and far more nutritious than most snacks.",
     "text": "DRINKS AND EXERCISE\n• Plain water is enough for workouts shorter than [1] minutes\n• One bottle of sports drink: up to [2] teaspoons of sugar\n• Caffeine in energy drinks can damage your [3]\n• Early warning signs: headaches, being unable to [4]\n• Best snack after training: a [5] and a glass of milk",
     "items": [

@@ -3,11 +3,11 @@
  "type": "review",
  "theme_en": "Review 2",
  "theme_vi": "Vòng ôn 2 (buổi 8–13, kèm ôn lại buổi 1–6)",
- "goal_vi": "Chúc mừng em đã đi đến buổi cuối cùng! Hôm nay em sẽ ôn lại từ vựng, ngữ pháp và các dạng bài thi của buổi 8–13, kèm một số câu từ buổi 1–6, để thấy mình đã tiến bộ thế nào.",
+ "goal_vi": "Chúc mừng bạn đã đi đến buổi cuối cùng! Hôm nay bạn sẽ ôn lại từ vựng, ngữ pháp và các dạng bài thi của buổi 8–13, kèm một số câu từ buổi 1–6, để thấy mình đã tiến bộ thế nào.",
  "minutes": 35,
  "paper": {
   "R1_vocab": {
-   "instruction_vi": "Điền một từ thích hợp vào mỗi chỗ trống. Chữ cái đầu của từ đã được cho sẵn. Các từ này em đều đã học trong 13 buổi vừa qua đấy!",
+   "instruction_vi": "Điền một từ thích hợp vào mỗi chỗ trống. Chữ cái đầu của từ đã được cho sẵn. Các từ này bạn đều đã học trong 13 buổi vừa qua đấy!",
    "items": [
     {
      "id": "d14R1_1",
@@ -15,7 +15,7 @@
      "answer": "audience",
      "from_day": 8,
      "tag": "d8v2",
-     "explain_vi": "==clapped and cheered loudly== là việc của người xem → **audience** (khán giả). __Chữ cái đầu cho sẵn giúp em thu hẹp lựa chọn.__"
+     "explain_vi": "==clapped and cheered loudly== là việc của người xem → **audience** (khán giả). __Chữ cái đầu cho sẵn giúp bạn thu hẹp lựa chọn.__"
     },
     {
      "id": "d14R1_2",
@@ -95,7 +95,7 @@
    ]
   },
   "R2_grammar": {
-   "instruction_vi": "Hoàn thành câu: chia động từ trong ngoặc hoặc chọn từ đúng trong ngoặc. Mỗi câu ôn một chủ điểm ngữ pháp khác nhau – em đọc kỹ dấu hiệu trong câu nhé.",
+   "instruction_vi": "Hoàn thành câu: chia động từ trong ngoặc hoặc chọn từ đúng trong ngoặc. Mỗi câu ôn một chủ điểm ngữ pháp khác nhau – bạn đọc kỹ dấu hiệu trong câu nhé.",
    "items": [
     {
      "id": "d14R2_1",
@@ -244,7 +244,7 @@
    ]
   },
   "R4_exam": {
-   "instruction_vi": "Đây là 6 câu trắc nghiệm theo các dạng bài thi em đã làm quen. Đọc kỹ yêu cầu ở đầu mỗi câu rồi chọn A, B, C hoặc D.",
+   "instruction_vi": "Đây là 6 câu trắc nghiệm theo các dạng bài thi bạn đã làm quen. Đọc kỹ yêu cầu ở đầu mỗi câu rồi chọn A, B, C hoặc D.",
    "items": [
     {
      "id": "d14R4_1",
@@ -319,7 +319,7 @@
      "answer": "D",
      "from_day": 5,
      "tag": "fmt:sentence_transformation",
-     "explain_vi": "==My sister is taller than me== nghĩa là em thấp hơn chị → **D. I am not as tall as my sister.** __not as … as là không bằng; A và C đảo ngược nghĩa.__"
+     "explain_vi": "==My sister is taller than me== nghĩa là bạn thấp hơn chị → **D. I am not as tall as my sister.** __not as … as là không bằng; A và C đảo ngược nghĩa.__"
     },
     {
      "id": "d14R4_6",
@@ -400,23 +400,23 @@
   },
   "F_writing": {
    "task_en": "Write an email to an English-speaking friend about a festival, show or exhibition you went to recently. Say what it was, what you saw or did there, and why your friend would enjoy it. Use at least one passive sentence, one relative clause and one conditional sentence.",
-   "task_vi": "Viết một email cho một người bạn nói tiếng Anh, kể về một lễ hội, buổi biểu diễn hoặc triển lãm em đã đi gần đây: đó là sự kiện gì, em đã xem/làm gì, và vì sao bạn ấy sẽ thích. Dùng ít nhất một câu bị động, một mệnh đề quan hệ và một câu điều kiện.",
+   "task_vi": "Viết một email cho một người bạn nói tiếng Anh, kể về một lễ hội, buổi biểu diễn hoặc triển lãm bạn đã đi gần đây: đó là sự kiện gì, bạn đã xem/làm gì, và vì sao bạn ấy sẽ thích. Dùng ít nhất một câu bị động, một mệnh đề quan hệ và một câu điều kiện.",
    "min_words": 80,
    "model": "Hi Jack,\nHow are you? Last weekend I went to the Mid-Autumn Festival in my neighbourhood with my cousin, who is visiting from Đà Nẵng. The streets were decorated with colourful lanterns, which were made by local children. We watched an amazing lion dance performance and ate mooncakes with lots of different flavours. My favourite was green tea! I also took part in a drawing competition and won second prize. If you visited Vietnam in September, I would take you there. I'm sure you would love it.\nWrite back soon,\nNam",
    "checklist_vi": [
-    "Email của em có lời chào mở đầu và lời chào kết thúc chưa?",
-    "Em đã có ít nhất 1 câu bị động (was/were + V3), 1 mệnh đề quan hệ (who/which/where...) và 1 câu điều kiện chưa?",
-    "Em đã dùng ít nhất 4 từ đã học trong các buổi 8–13 chưa?",
-    "Em đã viết đủ 80 từ trở lên và kiểm tra lại chính tả chưa?"
+    "Email của bạn có lời chào mở đầu và lời chào kết thúc chưa?",
+    "Bạn đã có ít nhất 1 câu bị động (was/were + V3), 1 mệnh đề quan hệ (who/which/where...) và 1 câu điều kiện chưa?",
+    "Bạn đã dùng ít nhất 4 từ đã học trong các buổi 8–13 chưa?",
+    "Bạn đã viết đủ 80 từ trở lên và kiểm tra lại chính tả chưa?"
    ]
   },
   "self_check_vi": [
-   "Em đã thuộc 48 từ vựng và 12 cụm động từ của buổi 8–13, và nhớ lại được từ của buổi 1–6.",
-   "Em có thể dùng câu bị động thì hiện tại đơn và quá khứ đơn.",
-   "Em có thể dùng đúng câu điều kiện loại 0, 1, 2 và mệnh đề quan hệ who/which/that/whose/where.",
-   "Em có thể chuyển câu trực tiếp sang câu tường thuật và chọn đúng V-ing hay to V.",
-   "Em có thể tạo từ với các hậu tố -able/-ive, -ness/-ity, -ise/-ify/-en, -ence/-ance, -ure/-age.",
-   "Em đã làm quen với 6 dạng bài thi: điền từ, đồng nghĩa, trái nghĩa, hội thoại, câu đồng nghĩa và điền từ vào đoạn văn."
+   "Bạn đã thuộc 48 từ vựng và 12 cụm động từ của buổi 8–13, và nhớ lại được từ của buổi 1–6.",
+   "Bạn có thể dùng câu bị động thì hiện tại đơn và quá khứ đơn.",
+   "Bạn có thể dùng đúng câu điều kiện loại 0, 1, 2 và mệnh đề quan hệ who/which/that/whose/where.",
+   "Bạn có thể chuyển câu trực tiếp sang câu tường thuật và chọn đúng V-ing hay to V.",
+   "Bạn có thể tạo từ với các hậu tố -able/-ive, -ness/-ity, -ise/-ify/-en, -ence/-ance, -ure/-age.",
+   "Bạn đã làm quen với 6 dạng bài thi: điền từ, đồng nghĩa, trái nghĩa, hội thoại, câu đồng nghĩa và điền từ vào đoạn văn."
   ]
  },
  "web_check": [
@@ -655,8 +655,8 @@
   }
  ],
  "can_do_vi": [
-  "Em có thể dùng từ vựng về truyền thông, ẩm thực, nghề nghiệp, con người, khoa học và nghệ thuật.",
-  "Em có thể dùng câu bị động, câu điều kiện, mệnh đề quan hệ, câu tường thuật và V-ing/to V.",
-  "Em có thể làm 6 dạng câu hỏi trắc nghiệm hay gặp trong đề thi chuyên Anh."
+  "Bạn có thể dùng từ vựng về truyền thông, ẩm thực, nghề nghiệp, con người, khoa học và nghệ thuật.",
+  "Bạn có thể dùng câu bị động, câu điều kiện, mệnh đề quan hệ, câu tường thuật và V-ing/to V.",
+  "Bạn có thể làm 6 dạng câu hỏi trắc nghiệm hay gặp trong đề thi chuyên Anh."
  ]
 }

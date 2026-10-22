@@ -246,8 +246,8 @@
   {
    "format": "mixed",
    "title_vi": "Đề thi thu nhỏ",
-   "intro_vi": "10 câu trộn các dạng em đã luyện trong 13 buổi: phát âm, trọng âm, hoàn thành câu, đồng nghĩa, trái nghĩa, hội thoại, tìm lỗi sai, câu gần nghĩa, nối câu. Câu ngắn, từ quen thuộc.",
-   "tip_vi": "Mẹo: đọc nhãn trong ngoặc vuông để biết dạng bài. Gạch bỏ trước những đáp án em chắc chắn sai, rồi chọn trong các đáp án còn lại.",
+   "intro_vi": "10 câu trộn các dạng bạn đã luyện trong 13 buổi: phát âm, trọng âm, hoàn thành câu, đồng nghĩa, trái nghĩa, hội thoại, tìm lỗi sai, câu gần nghĩa, nối câu. Câu ngắn, từ quen thuộc.",
+   "tip_vi": "Mẹo: đọc nhãn trong ngoặc vuông để biết dạng bài. Gạch bỏ trước những đáp án bạn chắc chắn sai, rồi chọn trong các đáp án còn lại.",
    "kind": "mcq",
    "items": [
     {
@@ -740,7 +740,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Em nghe bản tin trên đài phát thanh của trường về Ngày hội nghề nghiệp. Điền vào ghi chú, mỗi chỗ 1 từ.",
+    "intro_vi": "Bạn nghe bản tin trên đài phát thanh của trường về Ngày hội nghề nghiệp. Điền vào ghi chú, mỗi chỗ 1 từ.",
     "script": "Good morning, everyone. This is Nam from the school radio with some news. Next Thursday is our Careers Day. Four visitors will come to talk about their jobs. There will be a doctor, a chef, a journalist and a scientist. The talks are in the school hall and start at nine o'clock. If you want to ask the visitors a question, please write it on a piece of paper. Give it to your class teacher before Wednesday. In the afternoon, you can try some skills yourself, like cooking or taking photos. This is a great chance to think about your future career, so don't miss it. That's all for today. Have a nice day!",
     "text": "CAREERS DAY\n• Day: next [1]\n• Visitors: a doctor, a chef, a [2] and a scientist\n• Talks: in the school [3]\n• Questions: give them to your class [4]\n• Afternoon: try cooking or taking [5]",
     "items": [

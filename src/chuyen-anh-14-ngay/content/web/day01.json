@@ -110,7 +110,7 @@
   {
    "format": "sentence_completion",
    "title_vi": "Hoàn thành câu",
-   "intro_vi": "Đề Chuyên Ngoại ngữ có 10 câu hoàn thành câu (chọn A, B, C hoặc D). Đề Sở chuyên Anh cũng có dạng này trong phần kiến thức ngôn ngữ. Hôm nay em làm 5 câu.",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 10 câu hoàn thành câu (chọn A, B, C hoặc D). Đề Sở chuyên Anh cũng có dạng này trong phần kiến thức ngôn ngữ. Hôm nay bạn làm 5 câu.",
    "tip_vi": "Đọc hết câu trước khi chọn. Tìm từ dấu hiệu (now, every day, Look!) và giới từ đi sau chỗ trống.",
    "kind": "mcq",
    "items": [
@@ -174,7 +174,7 @@
   {
    "format": "pronunciation",
    "title_vi": "Phát âm đuôi -s/-es",
-   "intro_vi": "Đề chung vào lớp 10 thường mở đầu bằng câu ngữ âm: chọn từ có phần gạch chân phát âm khác. Đuôi -s/-es là chủ điểm rất hay gặp. Hôm nay em làm 5 câu.",
+   "intro_vi": "Đề chung vào lớp 10 thường mở đầu bằng câu ngữ âm: chọn từ có phần gạch chân phát âm khác. Đuôi -s/-es là chủ điểm rất hay gặp. Hôm nay bạn làm 5 câu.",
    "tip_vi": "Nhìn âm CUỐI của từ gốc: /s, z, ʃ, tʃ, dʒ/ → /ɪz/; /p, t, k, f, θ/ → /s/; các âm còn lại → /z/.",
    "kind": "mcq",
    "items": [
@@ -240,7 +240,7 @@
   {
    "format": "sentence_completion",
    "title_vi": "Hoàn thành câu",
-   "intro_vi": "Dạng hoàn thành câu: mỗi câu có một chỗ trống và 4 đáp án A, B, C, D. Em chọn MỘT đáp án đúng. Đề Chuyên Ngoại ngữ có 10 câu dạng này. Hôm nay em làm 5 câu ngắn.",
+   "intro_vi": "Dạng hoàn thành câu: mỗi câu có một chỗ trống và 4 đáp án A, B, C, D. Bạn chọn MỘT đáp án đúng. Đề Chuyên Ngoại ngữ có 10 câu dạng này. Hôm nay bạn làm 5 câu ngắn.",
    "tip_vi": "Đọc cả câu, tìm từ dấu hiệu như now, Look!, every day, on Mondays. Thử đặt từng đáp án vào chỗ trống rồi đọc lại cả câu.",
    "kind": "mcq",
    "items": [
@@ -304,7 +304,7 @@
   {
    "format": "pronunciation",
    "title_vi": "Phát âm đuôi -s/-es",
-   "intro_vi": "Dạng phát âm: em chọn từ có phần gạch chân đọc KHÁC ba từ còn lại. Hôm nay là đuôi -s/-es, có 3 cách đọc: /s/, /z/ và /ɪz/. Đề chung vào lớp 10 hay có câu này.",
+   "intro_vi": "Dạng phát âm: bạn chọn từ có phần gạch chân đọc KHÁC ba từ còn lại. Hôm nay là đuôi -s/-es, có 3 cách đọc: /s/, /z/ và /ɪz/. Đề chung vào lớp 10 hay có câu này.",
    "tip_vi": "Đọc to từ gốc, nghe âm cuối: s, x, sh, ch → /ɪz/; p, t, k, f → /s/; các âm còn lại → /z/.",
    "kind": "mcq",
    "items": [
@@ -370,7 +370,7 @@
   {
    "format": "sentence_completion",
    "title_vi": "Hoàn thành câu",
-   "intro_vi": "Trong 10 câu hoàn thành câu của đề Chuyên Ngoại ngữ luôn có vài câu phân loại: 4 đáp án đều 'nghe quen', khác nhau ở cụm từ cố định hoặc nghĩa của động từ trạng thái. Hôm nay em làm 5 câu như vậy.",
+   "intro_vi": "Trong 10 câu hoàn thành câu của đề Chuyên Ngoại ngữ luôn có vài câu phân loại: 4 đáp án đều 'nghe quen', khác nhau ở cụm từ cố định hoặc nghĩa của động từ trạng thái. Hôm nay bạn làm 5 câu như vậy.",
    "tip_vi": "Đừng chọn vì 'nghe quen'. Kiểm tra từ đi kèm (giới từ, tân ngữ) và nghĩa cả câu; với see, think, have hãy xác định đó là nghĩa trạng thái hay hành động.",
    "kind": "mcq",
    "items": [
@@ -434,7 +434,7 @@
   {
    "format": "pronunciation",
    "title_vi": "Phát âm đuôi -s/-es",
-   "intro_vi": "Câu phát âm khó trong đề thường đánh bẫy bằng chính tả: chữ cái cuối khác với âm cuối (ph, gh, que, e câm, f → ves). Hôm nay em làm 5 câu như vậy.",
+   "intro_vi": "Câu phát âm khó trong đề thường đánh bẫy bằng chính tả: chữ cái cuối khác với âm cuối (ph, gh, que, e câm, f → ves). Hôm nay bạn làm 5 câu như vậy.",
    "tip_vi": "Đừng nhìn chữ cái cuối mà nghĩ ÂM cuối: paragraph tận cùng /f/, weigh tận cùng nguyên âm, breathe tận cùng /ð/.",
    "kind": "mcq",
    "items": [
@@ -1016,7 +1016,7 @@
        "It would make her give up the drama club."
       ],
       "answer": 1,
-      "explain_vi": "Linh nói trung tâm học ==“the same curriculum as my school”== và học đến chín giờ tối nên ==“no energy left”== → **ít điều mới và làm em quá mệt**. __Mẹo: đáp án đúng thường diễn đạt lại bằng từ khác.__"
+      "explain_vi": "Linh nói trung tâm học ==“the same curriculum as my school”== và học đến chín giờ tối nên ==“no energy left”== → **ít điều mới và làm bạn quá mệt**. __Mẹo: đáp án đúng thường diễn đạt lại bằng từ khác.__"
      },
      {
       "q": "How does Nam first react to the idea of a study group?",
@@ -1049,7 +1049,7 @@
        "It will help her feel confident in the speaking test."
       ],
       "answer": 3,
-      "explain_vi": "==“performing builds confidence, and I'll need plenty of that for the speaking test”== → **giúp em tự tin khi thi nói**. __Bẫy: người thuyết phục là cô giáo, không phải mẹ.__"
+      "explain_vi": "==“performing builds confidence, and I'll need plenty of that for the speaking test”== → **giúp bạn tự tin khi thi nói**. __Bẫy: người thuyết phục là cô giáo, không phải mẹ.__"
      },
      {
       "q": "What does Nam suggest?",

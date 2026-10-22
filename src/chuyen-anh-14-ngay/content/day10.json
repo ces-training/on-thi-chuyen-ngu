@@ -3,7 +3,7 @@
  "type": "normal",
  "theme_en": "Work & jobs",
  "theme_vi": "Công việc và nghề nghiệp",
- "goal_vi": "Hôm nay em sẽ học các từ để nói về nghề nghiệp và ước mơ tương lai của mình. Em cũng sẽ làm quen với câu điều kiện loại 0, 1, 2 – một chủ điểm rất hay gặp trong đề thi chuyên đấy!",
+ "goal_vi": "Hôm nay bạn sẽ học các từ để nói về nghề nghiệp và ước mơ tương lai của mình. Bạn cũng sẽ làm quen với câu điều kiện loại 0, 1, 2 – một chủ điểm rất hay gặp trong đề thi chuyên đấy!",
  "minutes": 30,
  "vocab": [
   {
@@ -100,7 +100,7 @@
    "Loại 0 – sự thật luôn đúng: If + hiện tại đơn, hiện tại đơn. (If you heat ice, it melts.)",
    "Loại 1 – việc có thể xảy ra ở hiện tại/tương lai: If + hiện tại đơn, will/can + V nguyên mẫu.",
    "Loại 2 – việc không có thật hoặc khó xảy ra ở hiện tại: If + quá khứ đơn, would/could + V nguyên mẫu.",
-   "Ở loại 2, động từ 'be' dùng 'were' cho mọi ngôi (If I were you...). 'was' cũng gặp trong văn nói, nhưng khi làm bài thi em nên chọn 'were'.",
+   "Ở loại 2, động từ 'be' dùng 'were' cho mọi ngôi (If I were you...). 'was' cũng gặp trong văn nói, nhưng khi làm bài thi bạn nên chọn 'were'.",
    "Mệnh đề If có thể đứng trước hoặc sau. Nếu đứng trước thì có dấu phẩy: If it rains, we'll stay home. = We'll stay home if it rains."
   ],
   "examples": [
@@ -200,7 +200,7 @@
    ]
   },
   "B_grammar": {
-   "instruction_vi": "Chia động từ trong ngoặc theo câu điều kiện loại 0, 1 hoặc 2. Em nhìn kỹ động từ ở vế còn lại để đoán loại câu nhé.",
+   "instruction_vi": "Chia động từ trong ngoặc theo câu điều kiện loại 0, 1 hoặc 2. Bạn nhìn kỹ động từ ở vế còn lại để đoán loại câu nhé.",
    "items": [
     {
      "id": "d10B1",
@@ -299,7 +299,7 @@
   },
   "D_exam": {
    "format": "dialogue",
-   "instruction_vi": "Hoàn thành đoạn hội thoại: chọn câu đáp phù hợp nhất (A, B, C hoặc D). Mẹo: em hãy đọc kỹ câu của người thứ nhất và tự hỏi 'người ta đang chúc, mời, xin lỗi hay kể chuyện?'.",
+   "instruction_vi": "Hoàn thành đoạn hội thoại: chọn câu đáp phù hợp nhất (A, B, C hoặc D). Mẹo: bạn hãy đọc kỹ câu của người thứ nhất và tự hỏi 'người ta đang chúc, mời, xin lỗi hay kể chuyện?'.",
    "items": [
     {
      "id": "d10D1",
@@ -409,18 +409,18 @@
   },
   "F_writing": {
    "task_en": "Write about a job you would like to do in the future. Say why you want this job, what skills it needs, and what you will do to get it. Use at least one conditional sentence.",
-   "task_vi": "Viết về một nghề em muốn làm trong tương lai: vì sao em thích nghề đó, nghề đó cần kỹ năng gì, và em sẽ làm gì để đạt được ước mơ. Dùng ít nhất một câu điều kiện nhé.",
+   "task_vi": "Viết về một nghề bạn muốn làm trong tương lai: vì sao bạn thích nghề đó, nghề đó cần kỹ năng gì, và bạn sẽ làm gì để đạt được ước mơ. Dùng ít nhất một câu điều kiện nhé.",
    "min_words": 50,
    "model": "When I grow up, I want to be a doctor. My ambition is to help sick people in my town. A good doctor needs many skills, for example, listening carefully and staying calm. If I study hard at school, I will get into a good medical university. If I were a doctor now, I would visit poor villages and treat people for free. I know it is a long journey, but I will carry on.",
    "checklist_vi": [
-    "Em đã nói rõ nghề em muốn làm và lý do chưa?",
-    "Em đã dùng ít nhất 3 từ mới của hôm nay (career, skill, ambition, experience...)?",
-    "Câu điều kiện của em đã đúng thì chưa? (If + hiện tại đơn → will; If + quá khứ đơn → would)",
-    "Em đã viết đủ 50 từ trở lên chưa?"
+    "Bạn đã nói rõ nghề bạn muốn làm và lý do chưa?",
+    "Bạn đã dùng ít nhất 3 từ mới của hôm nay (career, skill, ambition, experience...)?",
+    "Câu điều kiện của bạn đã đúng thì chưa? (If + hiện tại đơn → will; If + quá khứ đơn → would)",
+    "Bạn đã viết đủ 50 từ trở lên chưa?"
    ]
   },
   "G_review": {
-   "instruction_vi": "Ôn xoắn ốc – em làm 4 câu ôn lại kiến thức của các buổi trước nhé. Chữ cái gợi ý (nếu có) là chữ cái đầu của đáp án.",
+   "instruction_vi": "Ôn xoắn ốc – bạn làm 4 câu ôn lại kiến thức của các buổi trước nhé. Chữ cái gợi ý (nếu có) là chữ cái đầu của đáp án.",
    "items": [
     {
      "id": "d10G1",
@@ -626,8 +626,8 @@
   }
  ],
  "can_do_vi": [
-  "Em có thể nói về nghề nghiệp và ước mơ của mình bằng các từ career, skill, ambition, experience...",
-  "Em có thể dùng đúng câu điều kiện loại 0, 1 và 2.",
-  "Em có thể tạo động từ bằng đuôi -ise, -ify, -en và chọn câu đáp phù hợp trong hội thoại."
+  "Bạn có thể nói về nghề nghiệp và ước mơ của mình bằng các từ career, skill, ambition, experience...",
+  "Bạn có thể dùng đúng câu điều kiện loại 0, 1 và 2.",
+  "Bạn có thể tạo động từ bằng đuôi -ise, -ify, -en và chọn câu đáp phù hợp trong hội thoại."
  ]
 }

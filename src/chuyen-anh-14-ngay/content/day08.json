@@ -3,7 +3,7 @@
  "type": "normal",
  "theme_en": "Media & communication",
  "theme_vi": "Truyền thông",
- "goal_vi": "Hôm nay em sẽ học các từ về báo chí, truyền hình, quảng cáo và cách dùng câu bị động ở thì hiện tại đơn và quá khứ đơn. Em cũng sẽ luyện cách phân biệt 'make' và 'do' – một 'bẫy' rất quen thuộc trong đề thi chuyên đấy!",
+ "goal_vi": "Hôm nay bạn sẽ học các từ về báo chí, truyền hình, quảng cáo và cách dùng câu bị động ở thì hiện tại đơn và quá khứ đơn. Bạn cũng sẽ luyện cách phân biệt 'make' và 'do' – một 'bẫy' rất quen thuộc trong đề thi chuyên đấy!",
  "minutes": 30,
  "vocab": [
   {
@@ -136,7 +136,7 @@
  },
  "paper": {
   "A_vocab": {
-   "instruction_vi": "Em chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, và có 2 từ không cần dùng đến nhé.",
+   "instruction_vi": "Bạn chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, và có 2 từ không cần dùng đến nhé.",
    "bank": [
     "article",
     "audience",
@@ -153,7 +153,7 @@
      "q": "I read an interesting ______ in the newspaper about a boy who built a robot from rubbish.",
      "answer": "article",
      "tag": "d8v1",
-     "explain_vi": "Thứ em đọc ==in the newspaper== là bài báo → **article**. __Sau 'an interesting' cần danh từ bắt đầu bằng nguyên âm.__"
+     "explain_vi": "Thứ bạn đọc ==in the newspaper== là bài báo → **article**. __Sau 'an interesting' cần danh từ bắt đầu bằng nguyên âm.__"
     },
     {
      "id": "d8A2",
@@ -181,7 +181,7 @@
      "q": "In my ______, children under ten shouldn't have their own smartphones.",
      "answer": "opinion",
      "tag": "d8v6",
-     "explain_vi": "Cụm cố định **in my opinion**: theo ý kiến của tôi. __Em dùng cụm này để mở đầu ý kiến trong bài viết.__"
+     "explain_vi": "Cụm cố định **in my opinion**: theo ý kiến của tôi. __Bạn dùng cụm này để mở đầu ý kiến trong bài viết.__"
     },
     {
      "id": "d8A6",
@@ -193,7 +193,7 @@
    ]
   },
   "B_grammar": {
-   "instruction_vi": "Em viết dạng bị động đúng của động từ trong ngoặc (hiện tại đơn hoặc quá khứ đơn). Nhớ nhìn dấu hiệu thời gian và xem chủ ngữ số ít hay số nhiều nhé.",
+   "instruction_vi": "Bạn viết dạng bị động đúng của động từ trong ngoặc (hiện tại đơn hoặc quá khứ đơn). Nhớ nhìn dấu hiệu thời gian và xem chủ ngữ số ít hay số nhiều nhé.",
    "items": [
     {
      "id": "d8B1",
@@ -277,7 +277,7 @@
   },
   "D_exam": {
    "format": "sentence_completion",
-   "instruction_vi": "Em chọn đáp án A, B, C hoặc D để hoàn thành câu. Mẹo: 'make' thường đi với việc tạo ra cái gì mới (make a cake, make friends, make a phone call); 'do' thường đi với công việc, nhiệm vụ (do homework, do the shopping, do exercise). Có một số cụm em phải học thuộc lòng nhé!",
+   "instruction_vi": "Bạn chọn đáp án A, B, C hoặc D để hoàn thành câu. Mẹo: 'make' thường đi với việc tạo ra cái gì mới (make a cake, make friends, make a phone call); 'do' thường đi với công việc, nhiệm vụ (do homework, do the shopping, do exercise). Có một số cụm bạn phải học thuộc lòng nhé!",
    "items": [
     {
      "id": "d8D1",
@@ -329,7 +329,7 @@
      ],
      "answer": "C",
      "tag": "fmt:sentence_completion",
-     "explain_vi": "Cụm cố định **do somebody a favour** (giúp ai một việc) → ==Could you … me a favour== chọn **C. do**. __Cụm này không theo quy tắc chung, em phải học thuộc.__"
+     "explain_vi": "Cụm cố định **do somebody a favour** (giúp ai một việc) → ==Could you … me a favour== chọn **C. do**. __Cụm này không theo quy tắc chung, bạn phải học thuộc.__"
     }
    ]
   },
@@ -386,18 +386,18 @@
   },
   "F_writing": {
    "task_en": "Write a short paragraph (50–70 words) about how you get news and information. Which media do you use (TV, newspapers, websites, social media)? Which one do you think is the most reliable, and why? Use at least one passive sentence and two words from today's lesson.",
-   "task_vi": "Em viết một đoạn văn ngắn (50–70 từ) kể em thường lấy tin tức, thông tin từ đâu (TV, báo, trang web, mạng xã hội). Theo em, nguồn nào đáng tin cậy nhất và vì sao? Em nhớ dùng ít nhất 1 câu bị động và 2 từ mới của bài hôm nay nhé.",
+   "task_vi": "Bạn viết một đoạn văn ngắn (50–70 từ) kể bạn thường lấy tin tức, thông tin từ đâu (TV, báo, trang web, mạng xã hội). Theo bạn, nguồn nào đáng tin cậy nhất và vì sao? Bạn nhớ dùng ít nhất 1 câu bị động và 2 từ mới của bài hôm nay nhé.",
    "min_words": 50,
    "model": "I usually get news from TV and the Internet. Every evening, the news is broadcast on TV, and my family watches it together. I also read articles on news websites, but I don't trust everything on social media because many posts are written by people who want to advertise something. In my opinion, TV news is the most reliable because the information is checked carefully.",
    "checklist_vi": [
-    "Em đã kể ra các nguồn tin em dùng và chọn ra một nguồn đáng tin cậy nhất, có giải thích lý do chưa?",
-    "Em đã viết ít nhất 1 câu bị động đúng công thức be + V3 chưa?",
-    "Em đã dùng ít nhất 2 từ mới của bài hôm nay chưa?",
-    "Em đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
+    "Bạn đã kể ra các nguồn tin bạn dùng và chọn ra một nguồn đáng tin cậy nhất, có giải thích lý do chưa?",
+    "Bạn đã viết ít nhất 1 câu bị động đúng công thức be + V3 chưa?",
+    "Bạn đã dùng ít nhất 2 từ mới của bài hôm nay chưa?",
+    "Bạn đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
    ]
   },
   "G_review": {
-   "instruction_vi": "Ôn xoắn ốc – Em làm theo gợi ý trong ngoặc ở mỗi câu để ôn lại bài các buổi 6, 5 và 2 nhé. Câu nào chưa chắc, em mở lại bài cũ xem lại cũng được!",
+   "instruction_vi": "Ôn xoắn ốc – Bạn làm theo gợi ý trong ngoặc ở mỗi câu để ôn lại bài các buổi 6, 5 và 2 nhé. Câu nào chưa chắc, bạn mở lại bài cũ xem lại cũng được!",
    "items": [
     {
      "id": "d8G1",
@@ -611,8 +611,8 @@
   }
  ],
  "can_do_vi": [
-  "Em có thể dùng 8 từ mới và 2 cụm động từ (find out, come across) để nói về tin tức và truyền thông.",
-  "Em có thể viết câu bị động ở thì hiện tại đơn và quá khứ đơn (is written, was broadcast).",
-  "Em có thể tạo tính từ đuôi -able/-ible/-ive và chọn đúng 'make' hay 'do' trong các cụm từ quen thuộc."
+  "Bạn có thể dùng 8 từ mới và 2 cụm động từ (find out, come across) để nói về tin tức và truyền thông.",
+  "Bạn có thể viết câu bị động ở thì hiện tại đơn và quá khứ đơn (is written, was broadcast).",
+  "Bạn có thể tạo tính từ đuôi -able/-ible/-ive và chọn đúng 'make' hay 'do' trong các cụm từ quen thuộc."
  ]
 }

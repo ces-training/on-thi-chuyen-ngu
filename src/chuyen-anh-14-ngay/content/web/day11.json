@@ -115,7 +115,7 @@
   {
    "format": "antonym",
    "title_vi": "Từ trái nghĩa",
-   "intro_vi": "Đề chuyên Chuyên Ngoại ngữ có 4 câu tìm từ trái nghĩa: mỗi câu có một từ hoặc cụm từ VIẾT HOA, em chọn A, B, C hoặc D có nghĩa NGƯỢC lại.",
+   "intro_vi": "Đề chuyên Chuyên Ngoại ngữ có 4 câu tìm từ trái nghĩa: mỗi câu có một từ hoặc cụm từ VIẾT HOA, bạn chọn A, B, C hoặc D có nghĩa NGƯỢC lại.",
    "tip_vi": "Mẹo: đề luôn cài một từ ĐỒNG nghĩa để bẫy. Hiểu nghĩa từ in hoa trong câu trước, rồi mới tìm từ ngược nghĩa.",
    "kind": "mcq",
    "items": [
@@ -150,7 +150,7 @@
       "ready"
      ],
      "answer": 0,
-     "explain_vi": "==CONFIDENT== (tự tin) >< **nervous** (lo lắng, hồi hộp). Vế ==he had practised a lot== giúp em hiểu nghĩa. __relaxed, ready gần nghĩa với confident.__"
+     "explain_vi": "==CONFIDENT== (tự tin) >< **nervous** (lo lắng, hồi hộp). Vế ==he had practised a lot== giúp bạn hiểu nghĩa. __relaxed, ready gần nghĩa với confident.__"
     },
     {
      "q": "Most students TRUST Ms Hoa because she always keeps her promises.",
@@ -179,7 +179,7 @@
   {
    "format": "sentence_combining",
    "title_vi": "Nối câu",
-   "intro_vi": "Đề chuyên Chuyên Ngoại ngữ có 5 câu nối câu: cho hai câu, em chọn A, B, C hoặc D là câu nối đúng và giữ nguyên nghĩa. Mệnh đề quan hệ là cách nối gặp rất nhiều.",
+   "intro_vi": "Đề chuyên Chuyên Ngoại ngữ có 5 câu nối câu: cho hai câu, bạn chọn A, B, C hoặc D là câu nối đúng và giữ nguyên nghĩa. Mệnh đề quan hệ là cách nối gặp rất nhiều.",
    "tip_vi": "Mẹo: loại ngay đáp án có 'that' sau dấu phẩy, đáp án lặp lại đại từ (him, it, there) và đáp án dùng sai who/which/whose/where.",
    "kind": "mcq",
    "items": [
@@ -245,7 +245,7 @@
   {
    "format": "antonym",
    "title_vi": "Từ trái nghĩa",
-   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu tìm từ trái nghĩa. Em tìm từ VIẾT HOA trong câu, rồi chọn A, B, C hoặc D có nghĩa NGƯỢC lại với từ đó.",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu tìm từ trái nghĩa. Bạn tìm từ VIẾT HOA trong câu, rồi chọn A, B, C hoặc D có nghĩa NGƯỢC lại với từ đó.",
    "tip_vi": "Mẹo: nhiều từ trái nghĩa chỉ cần thêm un- hoặc dis- (kind → unkind). Cẩn thận: đề hay cài một từ CÙNG nghĩa để bẫy.",
    "kind": "mcq",
    "items": [
@@ -309,7 +309,7 @@
   {
    "format": "sentence_combining",
    "title_vi": "Nối câu",
-   "intro_vi": "Đề Chuyên Ngoại ngữ có câu nối câu. Em đọc hai câu ngắn rồi chọn câu nối bằng who, which, where hoặc whose sao cho đúng ngữ pháp và giữ nguyên nghĩa.",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có câu nối câu. Bạn đọc hai câu ngắn rồi chọn câu nối bằng who, which, where hoặc whose sao cho đúng ngữ pháp và giữ nguyên nghĩa.",
    "tip_vi": "Mẹo: người → who; vật → which; nơi chốn → where; 'của ai' → whose. Đã dùng who/which/where thì bỏ he, she, it, there.",
    "kind": "mcq",
    "items": [
@@ -1102,7 +1102,7 @@
      {
       "answer": "understanding",
       "accept": [],
-      "explain_vi": "==\"The aim of a discussion is understanding, not victory.\"== → **understanding**. __Ghi chú có sẵn 'not victory' giúp em biết chỗ cần nghe.__"
+      "explain_vi": "==\"The aim of a discussion is understanding, not victory.\"== → **understanding**. __Ghi chú có sẵn 'not victory' giúp bạn biết chỗ cần nghe.__"
      }
     ]
    }
