@@ -645,5 +645,500 @@
    "My … (mum / grandfather / teacher) told me that …",
    "Without it, life would be …"
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Mai và Tom nói chuyện về hội chợ khoa học của trường. Nghe và chọn đáp án đúng cho 5 câu hỏi.",
+    "speakers": [
+     {
+      "name": "Mai",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Tom. Are you ready for the school science fair on Friday?"
+     },
+     {
+      "s": 1,
+      "t": "Almost. My group is doing an experiment with plants and light."
+     },
+     {
+      "s": 0,
+      "t": "That sounds interesting. What did you find out?"
+     },
+     {
+      "s": 1,
+      "t": "Well, we put one plant near the window and one plant in a dark cupboard. After two weeks, the plant in the cupboard was yellow and very small."
+     },
+     {
+      "s": 0,
+      "t": "So plants need light to grow well. That's good evidence!"
+     },
+     {
+      "s": 1,
+      "t": "Yes. Our teacher, Mr Brown, said he was very pleased with our work. What about your group?"
+     },
+     {
+      "s": 0,
+      "t": "We're making a small car that runs on solar power."
+     },
+     {
+      "s": 1,
+      "t": "Cool! Does it work?"
+     },
+     {
+      "s": 0,
+      "t": "Actually, it only works on sunny days. So we're testing it in the playground at lunchtime tomorrow."
+     },
+     {
+      "s": 1,
+      "t": "Great. Can I come and watch?"
+     }
+    ],
+    "items": [
+     {
+      "q": "What is Tom's experiment about?",
+      "options": [
+       "Plants and water",
+       "Plants and light",
+       "Cars and the sun",
+       "Animals and food"
+      ],
+      "answer": 1,
+      "explain_vi": "Tom nói: \"My group is doing an experiment with plants and light.\""
+     },
+     {
+      "q": "What happened to the plant in the cupboard?",
+      "options": [
+       "It grew taller than the other plant.",
+       "It got lots of new leaves.",
+       "It died after two days.",
+       "It became yellow and very small."
+      ],
+      "answer": 3,
+      "explain_vi": "Tom nói: \"the plant in the cupboard was yellow and very small.\""
+     },
+     {
+      "q": "What did Mr Brown say?",
+      "options": [
+       "He was happy with the group's work.",
+       "The group should do the experiment again.",
+       "The plants needed more water.",
+       "The group was late with the project."
+      ],
+      "answer": 0,
+      "explain_vi": "Câu tường thuật: \"Mr Brown said he was very pleased with our work\" (pleased = happy)."
+     },
+     {
+      "q": "What is Mai's group making?",
+      "options": [
+       "A robot",
+       "A plant pot",
+       "A car that uses energy from the sun",
+       "A kite"
+      ],
+      "answer": 2,
+      "explain_vi": "Mai nói: \"a small car that runs on solar power\" (solar power = năng lượng mặt trời)."
+     },
+     {
+      "q": "Where will Mai's group test their invention tomorrow?",
+      "options": [
+       "In the science lab",
+       "In the school hall",
+       "At Tom's house",
+       "In the playground"
+      ],
+      "answer": 3,
+      "explain_vi": "Mai nói: \"we're testing it in the playground at lunchtime tomorrow.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Cô Lan giới thiệu câu lạc bộ khoa học mới của trường. Nghe và điền vào ghi chú, mỗi chỗ 1 từ hoặc 1 con số.",
+    "script": "Good morning, everyone. This is Miss Lan from the science department. I'd like to tell you about our new Science Club. The club meets every Wednesday afternoon in the school laboratory. In the first month, we'll carry out simple experiments with water and air. After that, you'll come up with your own ideas for small inventions. The club is free, but please bring a notebook to every meeting. There are only 24 places, so don't wait too long. If you'd like to join, please write your name on the list outside the library before Friday. Thank you!",
+    "text": "SCIENCE CLUB\n• Day: every [1] afternoon\n• Place: the school [2]\n• First month: experiments with water and [3]\n• Bring to every meeting: a [4]\n• Number of places: [5]",
+    "items": [
+     {
+      "answer": "Wednesday",
+      "accept": [],
+      "explain_vi": "\"The club meets every Wednesday afternoon\"."
+     },
+     {
+      "answer": "laboratory",
+      "accept": [
+       "the laboratory",
+       "lab"
+      ],
+      "explain_vi": "\"in the school laboratory\"."
+     },
+     {
+      "answer": "air",
+      "accept": [],
+      "explain_vi": "\"simple experiments with water and air\"."
+     },
+     {
+      "answer": "notebook",
+      "accept": [
+       "a notebook"
+      ],
+      "explain_vi": "\"please bring a notebook to every meeting\"."
+     },
+     {
+      "answer": "24",
+      "accept": [
+       "twenty-four",
+       "twenty four"
+      ],
+      "explain_vi": "\"There are only 24 places\"."
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nam kể cho Anna về chuyến thăm một phòng thí nghiệm ở trường đại học. Nghe và chọn đáp án đúng. Chú ý chỗ người nói sửa lại thông tin.",
+    "speakers": [
+     {
+      "name": "Anna",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hey Nam, how was the trip to the university yesterday?"
+     },
+     {
+      "s": 1,
+      "t": "Brilliant, actually. We visited a laboratory where scientists do research on clean water. They're trying to make a cheap filter for families in the countryside."
+     },
+     {
+      "s": 0,
+      "t": "Oh, that's useful. Did they let you try anything?"
+     },
+     {
+      "s": 1,
+      "t": "Yes! A scientist called Doctor Ha showed us a simple experiment. We poured muddy water through paper. Oh no, sorry, that's wrong. It was through sand and small stones."
+     },
+     {
+      "s": 0,
+      "t": "And did the water come out clean?"
+     },
+     {
+      "s": 1,
+      "t": "Much cleaner, but Doctor Ha told us it still wasn't safe to drink. She said we would need to boil it first."
+     },
+     {
+      "s": 0,
+      "t": "Interesting. Did she say anything about her research?"
+     },
+     {
+      "s": 1,
+      "t": "She said her team had worked on the filter for three years. And she told us they had finally made a real breakthrough a few months ago."
+     },
+     {
+      "s": 0,
+      "t": "Wow. Would you like to work in a lab like that one day?"
+     },
+     {
+      "s": 1,
+      "t": "Maybe. I used to want to be a doctor, but now I'm thinking about chemistry."
+     },
+     {
+      "s": 0,
+      "t": "Well, then you'd better start revising for our chemistry test on Monday. Oh, wait, it's on Tuesday, not Monday."
+     },
+     {
+      "s": 1,
+      "t": "Oh no, I'd completely forgotten about it! Thanks for reminding me."
+     }
+    ],
+    "items": [
+     {
+      "q": "What are the scientists in the laboratory working on?",
+      "options": [
+       "New kinds of medicine",
+       "A way to make water safer",
+       "Better ways to grow rice",
+       "Machines for farmers"
+      ],
+      "answer": 1,
+      "explain_vi": "Nam nói họ \"do research on clean water\" và làm \"a cheap filter\" (máy lọc) cho các gia đình."
+     },
+     {
+      "q": "What did the students pour the muddy water through?",
+      "options": [
+       "Paper and sand",
+       "Paper only",
+       "Cloth and small stones",
+       "Sand and stones"
+      ],
+      "answer": 3,
+      "explain_vi": "Nam nói \"through paper\" rồi sửa lại: \"It was through sand and small stones.\""
+     },
+     {
+      "q": "What did Doctor Ha say about the water after the experiment?",
+      "options": [
+       "It had to be boiled before anyone drank it.",
+       "It was clean enough to drink straight away.",
+       "It was dirtier than before.",
+       "It should be tested in another lab."
+      ],
+      "answer": 0,
+      "explain_vi": "Tường thuật: \"it still wasn't safe to drink. She said we would need to boil it first.\""
+     },
+     {
+      "q": "How long has Doctor Ha's team worked on the filter?",
+      "options": [
+       "A few months",
+       "One year",
+       "Three years",
+       "Ten years"
+      ],
+      "answer": 2,
+      "explain_vi": "\"her team had worked on the filter for three years\". \"A few months ago\" là lúc có bước đột phá."
+     },
+     {
+      "q": "When is the chemistry test?",
+      "options": [
+       "On Monday",
+       "On Tuesday",
+       "Tomorrow",
+       "Next Friday"
+      ],
+      "answer": 1,
+      "explain_vi": "Anna nói Monday rồi sửa: \"it's on Tuesday, not Monday.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe lời thuyết minh ở một bảo tàng khoa học về chiếc lò vi sóng đầu tiên. Điền vào ghi chú, mỗi chỗ 1–2 từ hoặc 1 con số.",
+    "script": "Hello, and welcome to the Hall of Inventions. Some of the greatest breakthroughs in science happened by accident, and the object in front of you is a good example. In 1945, an American engineer called Percy Spencer was carrying out research on radar machines. One day, he noticed that the chocolate bar in his pocket had melted. He was curious, so he did a simple experiment. Many people think he tested an egg first, but in fact, the first food he tried was popcorn, and it popped all over his laboratory! The egg came later, and it exploded. Two years after that, the first microwave oven went on sale. It wasn't small like the ones in our kitchens today. It was almost two metres tall and weighed about 340 kilograms. It was also very expensive, so at first it was mainly bought by restaurants. Now, please walk through to the next room.",
+    "text": "THE FIRST MICROWAVE OVEN\n• Percy Spencer's job: [1]\n• What melted in his pocket: a [2]\n• First food he tested: [3]\n• Weight of the first oven: about [4] kilograms\n• At first, mainly bought by: [5]",
+    "items": [
+     {
+      "answer": "engineer",
+      "accept": [
+       "an engineer"
+      ],
+      "explain_vi": "\"an American engineer called Percy Spencer\"."
+     },
+     {
+      "answer": "chocolate bar",
+      "accept": [
+       "chocolate"
+      ],
+      "explain_vi": "\"the chocolate bar in his pocket had melted\"."
+     },
+     {
+      "answer": "popcorn",
+      "accept": [],
+      "explain_vi": "Nhiều người nghĩ là trứng, \"but in fact, the first food he tried was popcorn\"."
+     },
+     {
+      "answer": "340",
+      "accept": [
+       "three hundred and forty"
+      ],
+      "explain_vi": "\"weighed about 340 kilograms\". \"Two metres\" là chiều cao."
+     },
+     {
+      "answer": "restaurants",
+      "accept": [
+       "restaurant"
+      ],
+      "explain_vi": "\"at first it was mainly bought by restaurants\"."
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Linh và Ben chọn đề tài cho cuộc thi khoa học. Nghe và chọn đáp án đúng. Có câu hỏi về ý kiến, thái độ và suy luận.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Ben",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Ben, we really need to decide on our project for the science competition. The plan has to be in by next Monday."
+     },
+     {
+      "s": 1,
+      "t": "I know. I was thinking we could test which drinks damage teeth the most. You know, putting eggshells in cola, orange juice and milk."
+     },
+     {
+      "s": 0,
+      "t": "It's a fun experiment, but honestly, almost every school does that one. The judges must be tired of it by now."
+     },
+     {
+      "s": 1,
+      "t": "Fair point. So what did you have in mind?"
+     },
+     {
+      "s": 0,
+      "t": "Well, I read an article about plastic in rivers. What if we collected water from the lake near school and analysed how much tiny plastic is in it?"
+     },
+     {
+      "s": 1,
+      "t": "That's much more original. But we'd need a proper microscope, wouldn't we?"
+     },
+     {
+      "s": 0,
+      "t": "Actually, I asked Mr Brown yesterday. He said we could use the one in the school laboratory, as long as he was there with us."
+     },
+     {
+      "s": 1,
+      "t": "That's good news. But collecting samples every day would take ages, and I've got football training three evenings a week."
+     },
+     {
+      "s": 0,
+      "t": "We wouldn't need to go every day. Mr Brown told me two samples a week would be enough, as long as we collected them at the same time of day."
+     },
+     {
+      "s": 1,
+      "t": "Hmm, OK. I'm still a bit worried, though. What if we don't find any plastic at all?"
+     },
+     {
+      "s": 0,
+      "t": "Then that's still evidence! Mr Brown said a result we didn't expect could be just as interesting as one we did."
+     },
+     {
+      "s": 1,
+      "t": "True. Right, I'm convinced, let's forget the teeth idea. Should we ask Mai to join us? She's brilliant at drawing graphs."
+     },
+     {
+      "s": 0,
+      "t": "Good idea, but she told me she'd already joined another team. Maybe we could ask Nam instead."
+     },
+     {
+      "s": 1,
+      "t": "Sure, I'll text him tonight."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why does Linh reject Ben's first idea?",
+      "options": [
+       "It would cost too much money.",
+       "It is too common to impress the judges.",
+       "It could be dangerous for their teeth.",
+       "It would take too long to finish."
+      ],
+      "answer": 1,
+      "explain_vi": "Linh: \"almost every school does that one. The judges must be tired of it\" (quá phổ biến)."
+     },
+     {
+      "q": "What did Mr Brown say about the microscope?",
+      "options": [
+       "They could take it home for a week.",
+       "They would have to buy their own.",
+       "They could use it only if he was present.",
+       "It was too old to be useful."
+      ],
+      "answer": 2,
+      "explain_vi": "Tường thuật: \"we could use the one in the school laboratory, as long as he was there with us.\""
+     },
+     {
+      "q": "Why is Ben unsure about collecting samples at first?",
+      "options": [
+       "He thinks the lake is too far from school.",
+       "He doesn't like going near water.",
+       "He thinks Linh won't help him.",
+       "He already has regular sports commitments."
+      ],
+      "answer": 3,
+      "explain_vi": "Ben: \"I've got football training three evenings a week.\""
+     },
+     {
+      "q": "What is Mr Brown's opinion about unexpected results?",
+      "options": [
+       "They can be as valuable as expected ones.",
+       "They show the experiment has gone wrong.",
+       "They should be left out of the report.",
+       "They only happen to beginners."
+      ],
+      "answer": 0,
+      "explain_vi": "\"a result we didn't expect could be just as interesting as one we did.\""
+     },
+     {
+      "q": "What can we understand about Mai?",
+      "options": [
+       "She is going to draw the graphs for them.",
+       "She doesn't get on well with Ben.",
+       "She is already working with another group.",
+       "She will contact Nam tonight."
+      ],
+      "answer": 2,
+      "explain_vi": "Linh: \"she told me she'd already joined another team.\" Người nhắn tin cho Nam là Ben."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe chương trình phát thanh về một nhà phát minh 15 tuổi. Điền ghi chú, mỗi chỗ 1–2 từ hoặc 1 con số. Cẩn thận thông tin gây nhiễu.",
+    "script": "Welcome back to Young Minds, the programme about teenagers who think like scientists. Today we're talking about fifteen-year-old Linh from Da Nang, who has come up with a clever way to keep vegetables fresh for longer. Linh's grandmother sells vegetables at a local market, and Linh noticed that she was throwing away a lot of spinach every week. At first, Linh guessed it was about a quarter, but when she weighed it, it was almost a third. Her first idea was to use plastic bags, but she soon realised they would only add to the waste problem. Instead, she carried out a series of experiments with natural materials. She tested banana leaves, rice straw and coconut fibre, and coconut fibre kept the vegetables fresh for the longest. Spinach wrapped in it stayed fresh for 5 days, compared with just 2 days without it. Her teacher told us that the most impressive thing was not the result itself, but how carefully Linh had recorded her evidence, including the tests that failed. Linh's next step is to find out whether the wrappers can be washed and used again.",
+    "text": "YOUNG INVENTOR: LINH, AGE 15\n• Grandmother threw away almost a [1] of her spinach\n• Best material: [2]\n• Spinach stayed fresh for [3] days\n• Teacher praised how carefully Linh recorded her [4]\n• Next step: test whether the wrappers can be washed and [5]",
+    "items": [
+     {
+      "answer": "third",
+      "accept": [
+       "a third"
+      ],
+      "explain_vi": "Linh đoán \"a quarter\" nhưng khi cân thì \"it was almost a third\"."
+     },
+     {
+      "answer": "coconut fibre",
+      "accept": [
+       "coconut fiber"
+      ],
+      "explain_vi": "Thử lá chuối, rơm, xơ dừa; \"coconut fibre kept the vegetables fresh for the longest\"."
+     },
+     {
+      "answer": "5",
+      "accept": [
+       "five"
+      ],
+      "explain_vi": "\"stayed fresh for 5 days, compared with just 2 days without it\"."
+     },
+     {
+      "answer": "evidence",
+      "accept": [],
+      "explain_vi": "\"how carefully Linh had recorded her evidence\"."
+     },
+     {
+      "answer": "used again",
+      "accept": [
+       "reused",
+       "re-used"
+      ],
+      "explain_vi": "\"whether the wrappers can be washed and used again\"."
+     }
+    ]
+   }
+  }
  }
 }

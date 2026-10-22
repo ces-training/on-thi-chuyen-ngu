@@ -588,5 +588,499 @@
    "However, I have a bad habit: I …",
    "I want to change this habit because …"
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Em nghe Linh và Nam nói chuyện về bữa sáng và việc tập thể dục. Chọn đáp án đúng cho mỗi câu hỏi.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Nam. You look so tired this morning. Are you OK?"
+     },
+     {
+      "s": 1,
+      "t": "I'm fine, but I didn't have breakfast today. I got up too late to eat."
+     },
+     {
+      "s": 0,
+      "t": "Oh no. Breakfast gives you energy for the whole morning. What do you usually eat?"
+     },
+     {
+      "s": 1,
+      "t": "Usually just a sweet cake and a cup of milk tea."
+     },
+     {
+      "s": 0,
+      "t": "Well, that's not very nutritious. I always have some eggs and bread, or a bowl of pho."
+     },
+     {
+      "s": 1,
+      "t": "Eggs are easier to cook than pho. Maybe I'll try that."
+     },
+     {
+      "s": 0,
+      "t": "Good idea. And do you do any exercise?"
+     },
+     {
+      "s": 1,
+      "t": "Not much, actually. I play football on Sundays, that's all."
+     },
+     {
+      "s": 0,
+      "t": "Why don't you come jogging with me in the park? I go every Tuesday and Thursday after school."
+     },
+     {
+      "s": 1,
+      "t": "OK, I'll come on Thursday. Thanks, Linh!"
+     }
+    ],
+    "items": [
+     {
+      "q": "Why didn't Nam have breakfast today?",
+      "options": [
+       "He wasn't hungry.",
+       "He got up too late.",
+       "There was no food at home.",
+       "He wanted to lose weight."
+      ],
+      "answer": 1,
+      "explain_vi": "Nam nói: \"I got up too late to eat.\""
+     },
+     {
+      "q": "What does Nam usually have for breakfast?",
+      "options": [
+       "A bowl of pho",
+       "Eggs and bread",
+       "A sweet cake and milk tea",
+       "Nothing at all"
+      ],
+      "answer": 2,
+      "explain_vi": "Nam: \"Usually just a sweet cake and a cup of milk tea.\" Trứng, bánh mì, phở là bữa sáng của Linh."
+     },
+     {
+      "q": "What does Linh say about breakfast?",
+      "options": [
+       "It gives you energy.",
+       "It takes too long to cook.",
+       "It is not important.",
+       "It makes you tired."
+      ],
+      "answer": 0,
+      "explain_vi": "Linh nói: \"Breakfast gives you energy for the whole morning.\""
+     },
+     {
+      "q": "When does Nam play football?",
+      "options": [
+       "Every day",
+       "After school",
+       "On Tuesdays",
+       "On Sundays"
+      ],
+      "answer": 3,
+      "explain_vi": "Nam: \"I play football on Sundays, that's all.\""
+     },
+     {
+      "q": "When will Nam go jogging with Linh?",
+      "options": [
+       "On Tuesday",
+       "On Thursday",
+       "On Sunday",
+       "On Saturday"
+      ],
+      "answer": 1,
+      "explain_vi": "Linh chạy thứ Ba và thứ Năm, nhưng Nam nói: \"I'll come on Thursday.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe thầy giáo thể dục thông báo về Tuần lễ Sức khoẻ của trường. Điền một từ hoặc một con số vào mỗi chỗ trống.",
+    "script": "Hello, everyone. This is Mr Brown, your sports teacher. Next week is our school Health Week, and we've got lots of fun activities for you. On Monday morning, a doctor is coming to talk to us about healthy food. Please bring a notebook, because you'll need to write down some tips. On Wednesday afternoon, there's a fun run around the school. It's only 2 kilometres long, so it isn't too hard for anyone. Please wear trainers, not sandals. On Friday, we're having a fruit party in the canteen. Every student should bring one piece of fruit. If you have any questions, come and see me in the sports hall. Thank you!",
+    "text": "SCHOOL HEALTH WEEK\n• Monday: a [1] talks about healthy food\n• Bring: a [2]\n• Wednesday: fun run, [3] kilometres\n• Wear: [4]\n• Friday: fruit party in the [5]",
+    "items": [
+     {
+      "answer": "doctor",
+      "accept": [],
+      "explain_vi": "Thầy nói: \"a doctor is coming to talk to us about healthy food.\""
+     },
+     {
+      "answer": "notebook",
+      "accept": [
+       "a notebook"
+      ],
+      "explain_vi": "Thầy nói: \"Please bring a notebook.\""
+     },
+     {
+      "answer": "2",
+      "accept": [
+       "two"
+      ],
+      "explain_vi": "Thầy nói: \"It's only 2 kilometres long.\""
+     },
+     {
+      "answer": "trainers",
+      "accept": [
+       "trainer"
+      ],
+      "explain_vi": "Thầy nói: \"Please wear trainers, not sandals.\" Không đi dép."
+     },
+     {
+      "answer": "canteen",
+      "accept": [
+       "the canteen"
+      ],
+      "explain_vi": "Thầy nói: \"a fruit party in the canteen.\""
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Em nghe Mai hỏi thăm Tom về chấn thương ở chân. Chú ý: có chỗ người nói nói nhầm rồi sửa lại. Chọn đáp án đúng.",
+    "speakers": [
+     {
+      "name": "Mai",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Tom! Why are you walking so slowly? What happened?"
+     },
+     {
+      "s": 1,
+      "t": "Oh, I hurt my ankle at basketball practice on Monday. Well, actually, it was Tuesday. I jumped for the ball and landed badly."
+     },
+     {
+      "s": 0,
+      "t": "Ouch! Is it serious? Have you seen a doctor?"
+     },
+     {
+      "s": 1,
+      "t": "Yes, my mum took me. At first I thought I'd only need a week off, but the doctor said I can't play for three weeks."
+     },
+     {
+      "s": 0,
+      "t": "Three weeks? But the school match is in two weeks. That's so soon."
+     },
+     {
+      "s": 1,
+      "t": "I know. My ankle won't be strong enough to play by then. The coach is going to ask Ben to take my place."
+     },
+     {
+      "s": 0,
+      "t": "That's a shame. So what are you doing to get over it?"
+     },
+     {
+      "s": 1,
+      "t": "I rest it a lot and put ice on it. The doctor also told me to eat more nutritious food, like fish and green vegetables, so it gets better faster."
+     },
+     {
+      "s": 0,
+      "t": "My dad had the same injury last year. When it started to feel better, he went swimming. He said it was much gentler than running."
+     },
+     {
+      "s": 1,
+      "t": "Swimming? That's a good idea. I'm so bored at home, doing nothing."
+     },
+     {
+      "s": 0,
+      "t": "Why don't you come to the pool with me next weekend? Well, ask your doctor first, of course."
+     },
+     {
+      "s": 1,
+      "t": "Sure. I'll ask him on Friday, when I go back for a check."
+     }
+    ],
+    "items": [
+     {
+      "q": "When did Tom hurt his ankle?",
+      "options": [
+       "On Monday",
+       "At the weekend",
+       "On Tuesday",
+       "On Friday"
+      ],
+      "answer": 2,
+      "explain_vi": "Tom nói Monday rồi sửa lại: \"Well, actually, it was Tuesday.\""
+     },
+     {
+      "q": "For how long does Tom have to stop playing basketball?",
+      "options": [
+       "Three weeks",
+       "One week",
+       "Two weeks",
+       "A month"
+      ],
+      "answer": 0,
+      "explain_vi": "Bác sĩ nói: \"I can't play for three weeks.\" Một tuần là Tom tưởng lúc đầu; hai tuần là thời gian tới trận đấu."
+     },
+     {
+      "q": "What did the doctor tell Tom to do?",
+      "options": [
+       "Go swimming every day",
+       "Play only short games",
+       "Stop eating fish",
+       "Eat healthier food"
+      ],
+      "answer": 3,
+      "explain_vi": "\"The doctor also told me to eat more nutritious food\" = ăn uống lành mạnh hơn. Bơi là gợi ý của Mai."
+     },
+     {
+      "q": "Why did Mai's dad go swimming?",
+      "options": [
+       "It was cheaper than going to the gym.",
+       "It was easier on his body than running.",
+       "His doctor told him to.",
+       "He wanted to lose weight."
+      ],
+      "answer": 1,
+      "explain_vi": "Mai: \"He said it was much gentler than running.\" Gentler = nhẹ nhàng hơn với cơ thể."
+     },
+     {
+      "q": "What will Tom do on Friday?",
+      "options": [
+       "Play in the school match",
+       "Go to the pool with Mai",
+       "Ask the doctor about swimming",
+       "Start basketball practice again"
+      ],
+      "answer": 2,
+      "explain_vi": "Tom: \"I'll ask him on Friday\" (hỏi bác sĩ về việc bơi). Đi bơi với Mai là cuối tuần sau."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe giới thiệu khoá thể dục mùa hè cho tuổi teen. Có một chỗ người nói sửa lại thông tin. Điền 1–2 từ hoặc một con số.",
+    "script": "Hello and welcome to Green Park Sports Centre. My name is Anna, and I'm going to tell you about our summer fitness course for teenagers. The course starts in June and lasts for 6 weeks. Classes are on Mondays, Wednesdays and Fridays, early in the morning, because it's too hot to exercise in the afternoon. In the first hour, you'll work out in the gym with a trainer. After that, you can choose swimming or yoga. Oh, sorry, I made a mistake. It's swimming or dancing. Yoga classes are only for adults this summer. Every student must bring a water bottle and a towel. Please don't bring crisps or sweet drinks. We give everyone a free, nutritious snack after class, usually fruit and yoghurt. To sign up, just fill in a form at the reception desk.",
+    "text": "SUMMER FITNESS COURSE\n• Length: [1] weeks\n• First hour: work out in the gym with a [2]\n• After that: swimming or [3]\n• Bring: a water bottle and a [4]\n• Free snack: fruit and [5]",
+    "items": [
+     {
+      "answer": "6",
+      "accept": [
+       "six"
+      ],
+      "explain_vi": "Anna nói: \"lasts for 6 weeks.\""
+     },
+     {
+      "answer": "trainer",
+      "accept": [
+       "a trainer"
+      ],
+      "explain_vi": "Anna nói: \"you'll work out in the gym with a trainer.\""
+     },
+     {
+      "answer": "dancing",
+      "accept": [
+       "dance"
+      ],
+      "explain_vi": "Anna nói yoga rồi sửa lại: \"It's swimming or dancing.\" Yoga chỉ dành cho người lớn."
+     },
+     {
+      "answer": "towel",
+      "accept": [
+       "a towel"
+      ],
+      "explain_vi": "Anna nói: \"bring a water bottle and a towel.\""
+     },
+     {
+      "answer": "yoghurt",
+      "accept": [
+       "yogurt"
+      ],
+      "explain_vi": "Anna nói: \"usually fruit and yoghurt.\" Không mang khoai tây chiên, nước ngọt."
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Em nghe Anna và Nam bàn cách lấy lại thể lực trước buổi tuyển cầu thủ bóng đá. Câu hỏi về ý kiến, thái độ và suy luận.",
+    "speakers": [
+     {
+      "name": "Anna",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "So, Nam, have you decided how you're going to get fit before the football trials?"
+     },
+     {
+      "s": 1,
+      "t": "Well, I was going to join that new gym near the market, but honestly, it's far more expensive than I expected."
+     },
+     {
+      "s": 0,
+      "t": "And to be honest, I'm not sure a gym is the best choice for football anyway. You need stamina more than big muscles."
+     },
+     {
+      "s": 1,
+      "t": "That's what my coach said, actually. He thinks I'm strong enough, but I get out of breath too quickly in the second half of a match."
+     },
+     {
+      "s": 0,
+      "t": "Then why don't you come to the running club? We meet in the park by the lake at six o'clock every morning."
+     },
+     {
+      "s": 1,
+      "t": "Six o'clock? That's far too early for me. I can hardly get up at seven."
+     },
+     {
+      "s": 0,
+      "t": "I felt exactly the same at first, believe me. But after a couple of weeks, it became a habit, and now I have more energy at school than I used to."
+     },
+     {
+      "s": 1,
+      "t": "Really? I always assumed that getting up early would make me sleepier in class."
+     },
+     {
+      "s": 0,
+      "t": "Only if you stay up late on your phone. You have to go to bed earlier. That's the real secret."
+     },
+     {
+      "s": 1,
+      "t": "Hmm, that's the hard part. I usually watch football highlights until midnight."
+     },
+     {
+      "s": 0,
+      "t": "Well, it's up to you. But the trials are in a month, so you haven't got much time."
+     },
+     {
+      "s": 1,
+      "t": "You're right. OK, I'll give it a try for a week and see how I feel. But I'm not giving up my football videos completely! Maybe just on weekdays."
+     },
+     {
+      "s": 0,
+      "t": "Deal. Oh, and don't come without eating anything. Last week a new boy felt dizzy halfway round the lake."
+     },
+     {
+      "s": 1,
+      "t": "Don't worry. I'll have a banana before I leave."
+     }
+    ],
+    "items": [
+     {
+      "q": "What problem does Nam mention about the gym?",
+      "options": [
+       "It is too far from his house.",
+       "It costs more than he thought.",
+       "It doesn't open early enough.",
+       "It is always too crowded."
+      ],
+      "answer": 1,
+      "explain_vi": "Nam: \"it's far more expensive than I expected\" = đắt hơn cậu nghĩ."
+     },
+     {
+      "q": "According to Nam's coach, what is Nam's main weakness?",
+      "options": [
+       "He isn't strong enough.",
+       "He is often late for practice.",
+       "He gets tired too quickly during a match.",
+       "He doesn't eat a balanced diet."
+      ],
+      "answer": 2,
+      "explain_vi": "\"He thinks I'm strong enough, but I get out of breath too quickly\": thiếu sức bền, không phải thiếu sức mạnh."
+     },
+     {
+      "q": "When Anna says \"I felt exactly the same at first\", she means that",
+      "options": [
+       "she also found getting up early difficult.",
+       "she used to love running in the morning.",
+       "she was also worried about the football trials.",
+       "she also watched football late at night."
+      ],
+      "answer": 0,
+      "explain_vi": "Cô đáp lại câu Nam than \"far too early... I can hardly get up at seven\": lúc đầu cô cũng thấy dậy sớm rất khó."
+     },
+     {
+      "q": "What does Anna say is \"the real secret\"?",
+      "options": [
+       "Getting up at seven",
+       "Running with friends",
+       "Eating before running",
+       "Sleeping earlier at night"
+      ],
+      "answer": 3,
+      "explain_vi": "Anna: \"You have to go to bed earlier. That's the real secret.\" Ăn chuối chỉ là lời dặn thêm."
+     },
+     {
+      "q": "What can we infer about Nam at the end of the conversation?",
+      "options": [
+       "He will stop watching football videos completely.",
+       "He thinks the running club is a waste of time.",
+       "He has agreed to try the running club for a short time.",
+       "He will join the gym after the trials."
+      ],
+      "answer": 2,
+      "explain_vi": "Nam: \"I'll give it a try for a week\" – thử một tuần. Cậu nói rõ không bỏ hẳn video bóng đá."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe bác sĩ nói với học sinh về đồ uống khi tập thể thao. Bài có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
+    "script": "Good morning, everyone. I'm Doctor Anna Green, and I work with young athletes. Today I'd like to talk about something most of you do every day without thinking: drinking. Many teenagers believe that sports drinks are the best choice after exercise. Some people say you need them after just 30 minutes of sport, but in fact, for any workout shorter than 60 minutes, plain water is perfectly enough. Sports drinks contain so much sugar that one bottle can have as much as 8 teaspoons. Energy drinks are even worse, because they also contain caffeine, which can seriously damage your sleep. Now, most people think the first sign that you need water is feeling thirsty. Actually, by then your body is already short of water. So watch out for earlier signs, such as headaches, or finding that you suddenly can't concentrate. And what should you eat after training? Many of you reach for crisps or a cake. Chocolate isn't a terrible choice, surprisingly, but my top recommendation is a banana and a glass of milk. It's cheap, quick and far more nutritious than most snacks.",
+    "text": "DRINKS AND EXERCISE\n• Plain water is enough for workouts shorter than [1] minutes\n• One bottle of sports drink: up to [2] teaspoons of sugar\n• Caffeine in energy drinks can damage your [3]\n• Early warning signs: headaches, being unable to [4]\n• Best snack after training: a [5] and a glass of milk",
+    "items": [
+     {
+      "answer": "60",
+      "accept": [
+       "sixty"
+      ],
+      "explain_vi": "Bác sĩ: \"for any workout shorter than 60 minutes, plain water is perfectly enough.\" Số 30 là ý kiến bị bác bỏ."
+     },
+     {
+      "answer": "8",
+      "accept": [
+       "eight"
+      ],
+      "explain_vi": "Bác sĩ: \"one bottle can have as much as 8 teaspoons.\""
+     },
+     {
+      "answer": "sleep",
+      "accept": [],
+      "explain_vi": "Bác sĩ: \"caffeine, which can seriously damage your sleep.\""
+     },
+     {
+      "answer": "concentrate",
+      "accept": [],
+      "explain_vi": "\"Earlier signs, such as headaches, or ... you suddenly can't concentrate.\" Khát nước là dấu hiệu muộn."
+     },
+     {
+      "answer": "banana",
+      "accept": [
+       "a banana"
+      ],
+      "explain_vi": "\"my top recommendation is a banana and a glass of milk.\" Sô-cô-la chỉ \"không tệ\"."
+     }
+    ]
+   }
+  }
  }
 }

@@ -20,9 +20,11 @@ for n in range(1, 15):
         w = json.load(open(p, encoding="utf-8")); web[n] = {k: w[k] for k in ("grammar_games", "exam", "exam_easy", "exam_plus", "paper_plus", "listening") if k in w}
 mp = here / "content/web/media.json"
 media = json.load(open(mp, encoding="utf-8")) if mp.exists() else {}
+ml = here / "content/web/media_listen.json"
+media_listen = json.load(open(ml, encoding="utf-8")) if ml.exists() else {}
 mv = here / "content/web/media_vi.json"
 media_vi = json.load(open(mv, encoding="utf-8")) if mv.exists() else {}
-blob = json.dumps({"days": days, "tests": tests, "web": web, "media": media, "media_vi": media_vi}, ensure_ascii=False).replace("</", "<\\/")
+blob = json.dumps({"days": days, "tests": tests, "web": web, "media": media, "media_vi": media_vi, "media_listen": media_listen}, ensure_ascii=False).replace("</", "<\\/")
 cfg = json.load(open(here / "config.json", encoding="utf-8"))
 api = json.dumps(os.environ.get("API_URL_OVERRIDE", cfg.get("apiUrl", "")))
 

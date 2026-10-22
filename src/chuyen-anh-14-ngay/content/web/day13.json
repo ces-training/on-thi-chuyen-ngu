@@ -446,5 +446,492 @@
    "I really enjoyed … (+ V-ing) because …",
    "I hope to … again next year."
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Linh và Nam nói chuyện về buổi hoà nhạc của trường. Nghe và chọn đáp án đúng cho 5 câu hỏi.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Nam! Are you going to take part in the school concert next week?"
+     },
+     {
+      "s": 1,
+      "t": "Yes, I am. I'm going to play the guitar with my band."
+     },
+     {
+      "s": 0,
+      "t": "Great! What song are you going to play?"
+     },
+     {
+      "s": 1,
+      "t": "A song that my friend Tom composed. It's about the summer holidays."
+     },
+     {
+      "s": 0,
+      "t": "That sounds fun. When do you rehearse?"
+     },
+     {
+      "s": 1,
+      "t": "Every Tuesday and Thursday after school, in the music room."
+     },
+     {
+      "s": 0,
+      "t": "I love singing, but I'm too nervous to sing on stage."
+     },
+     {
+      "s": 1,
+      "t": "Then why don't you help with the posters? You're really good at drawing."
+     },
+     {
+      "s": 0,
+      "t": "Good idea! I enjoy drawing much more than singing in front of people. How much are the tickets?"
+     },
+     {
+      "s": 1,
+      "t": "They're 20,000 dong each, and all the money goes to the school library."
+     }
+    ],
+    "items": [
+     {
+      "q": "What will Nam do at the concert?",
+      "options": [
+       "Sing a song",
+       "Play the piano",
+       "Play the guitar",
+       "Dance with his friends"
+      ],
+      "answer": 2,
+      "explain_vi": "Nam nói: \"I'm going to play the guitar with my band.\""
+     },
+     {
+      "q": "Who wrote the song?",
+      "options": [
+       "Nam",
+       "Nam's friend Tom",
+       "Linh",
+       "The music teacher"
+      ],
+      "answer": 1,
+      "explain_vi": "Nam nói: \"A song that my friend Tom composed\" (compose = sáng tác)."
+     },
+     {
+      "q": "When does Nam's band rehearse?",
+      "options": [
+       "At the weekend",
+       "On Monday and Wednesday",
+       "Every day after school",
+       "On Tuesday and Thursday"
+      ],
+      "answer": 3,
+      "explain_vi": "Nam nói: \"Every Tuesday and Thursday after school\"."
+     },
+     {
+      "q": "Why doesn't Linh want to sing at the concert?",
+      "options": [
+       "She feels nervous on stage.",
+       "She can't sing very well.",
+       "She is too busy.",
+       "She doesn't like music."
+      ],
+      "answer": 0,
+      "explain_vi": "Linh nói: \"I'm too nervous to sing on stage.\""
+     },
+     {
+      "q": "What will the ticket money be used for?",
+      "options": [
+       "A new music room",
+       "New guitars for the band",
+       "The school library",
+       "A class trip"
+      ],
+      "answer": 2,
+      "explain_vi": "Nam nói: \"all the money goes to the school library.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe lời chào mừng ở triển lãm mỹ thuật của trường. Nghe và điền vào ghi chú, mỗi chỗ 1 từ hoặc 1 con số.",
+    "script": "Hello, everyone, and welcome to our school art exhibition. This year, more than 60 students have taken part. You can see paintings, photos and models made from recycled paper. The paintings are in the main hall, and the photos are in Room 5, next to the library. Please don't touch the models, because they break very easily. At four o'clock, the school dance club will give a short performance in the garden. Before you leave, please vote for your favourite picture. Write its number on a card and put the card in the box at the door. The winner will get a set of art books. Thank you, and enjoy the exhibition!",
+    "text": "SCHOOL ART EXHIBITION\n• Number of students: more than [1]\n• Photos: in Room [2]\n• Models: made from recycled [3]\n• Dance performance: in the [4]\n• To vote: put your card in the [5] at the door",
+    "items": [
+     {
+      "answer": "60",
+      "accept": [
+       "sixty"
+      ],
+      "explain_vi": "\"more than 60 students have taken part\"."
+     },
+     {
+      "answer": "5",
+      "accept": [
+       "five"
+      ],
+      "explain_vi": "\"the photos are in Room 5, next to the library\"."
+     },
+     {
+      "answer": "paper",
+      "accept": [],
+      "explain_vi": "\"models made from recycled paper\"."
+     },
+     {
+      "answer": "garden",
+      "accept": [
+       "the garden"
+      ],
+      "explain_vi": "\"a short performance in the garden\"."
+     },
+     {
+      "answer": "box",
+      "accept": [
+       "the box"
+      ],
+      "explain_vi": "\"put the card in the box at the door\"."
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Tom rủ Mai đi xem một triển lãm tranh vào cuối tuần. Nghe và chọn đáp án đúng. Chú ý chỗ người nói đổi ý hoặc sửa lại.",
+    "speakers": [
+     {
+      "name": "Mai",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 1,
+      "t": "Mai, do you fancy doing something this weekend? There's a new exhibition of Vietnamese paintings at the city museum."
+     },
+     {
+      "s": 0,
+      "t": "Oh, I'd love to see it. Is it on Saturday?"
+     },
+     {
+      "s": 1,
+      "t": "Well, it opens on Saturday, but it'll be really crowded on the first day. I'd rather go on Sunday morning."
+     },
+     {
+      "s": 0,
+      "t": "Sunday morning is fine. Oh, wait, I've got my piano lesson then. How about Sunday afternoon?"
+     },
+     {
+      "s": 1,
+      "t": "OK, Sunday afternoon it is. Do you know how much the tickets are?"
+     },
+     {
+      "s": 0,
+      "t": "I think they're 50,000 dong. No, sorry, that's the price for adults. For students, it's 30,000."
+     },
+     {
+      "s": 1,
+      "t": "Not bad. My art teacher saw some of the paintings last month. She said the ones by a young artist from Hue were amazing."
+     },
+     {
+      "s": 0,
+      "t": "I really admire artists who paint with so much imagination. I'd love to try painting like that one day."
+     },
+     {
+      "s": 1,
+      "t": "Why don't you join the art club at school? They put on an exhibition every summer."
+     },
+     {
+      "s": 0,
+      "t": "Maybe. I'm not sure I'm talented enough, though."
+     },
+     {
+      "s": 1,
+      "t": "Don't worry, everyone starts as a beginner. And remember to bring your student card on Sunday, or you'll have to pay the full price!"
+     },
+     {
+      "s": 0,
+      "t": "Good point. I'll put it in my bag tonight."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why doesn't Tom want to go on Saturday?",
+      "options": [
+       "The museum is closed.",
+       "Tickets are more expensive that day.",
+       "There will be too many people.",
+       "He has a piano lesson."
+      ],
+      "answer": 2,
+      "explain_vi": "Tom: \"it'll be really crowded on the first day\" (crowded = đông người). Mai mới là người học piano."
+     },
+     {
+      "q": "When will they go to the exhibition?",
+      "options": [
+       "On Saturday morning",
+       "On Saturday afternoon",
+       "On Sunday morning",
+       "On Sunday afternoon"
+      ],
+      "answer": 3,
+      "explain_vi": "Tom muốn đi sáng Chủ nhật nhưng Mai bận học piano, nên chốt: \"Sunday afternoon it is.\""
+     },
+     {
+      "q": "How much does a student ticket cost?",
+      "options": [
+       "30,000 dong",
+       "50,000 dong",
+       "80,000 dong",
+       "It's free."
+      ],
+      "answer": 0,
+      "explain_vi": "Mai nói 50,000 rồi sửa: đó là giá người lớn; \"For students, it's 30,000.\""
+     },
+     {
+      "q": "What does Mai admire about some artists?",
+      "options": [
+       "How fast they work",
+       "How creative they are",
+       "How famous they are",
+       "How young they are"
+      ],
+      "answer": 1,
+      "explain_vi": "Mai: \"artists who paint with so much imagination\" (imagination = trí tưởng tượng, sáng tạo)."
+     },
+     {
+      "q": "What does Tom remind Mai to do?",
+      "options": [
+       "Join the art club",
+       "Book the tickets online",
+       "Take her student card",
+       "Get to the museum early"
+      ],
+      "answer": 2,
+      "explain_vi": "Tom: \"remember to bring your student card on Sunday\". Câu lạc bộ mỹ thuật chỉ là lời gợi ý."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Thầy giáo câu lạc bộ kịch dặn dò học sinh trước khi tập vở kịch mới. Điền vào ghi chú, mỗi chỗ 1–2 từ hoặc 1 con số.",
+    "script": "OK, everyone, listen carefully, please. As you know, our drama club is putting on a play called The Magic Forest at the end of term. Rehearsals start next Monday, and we'll rehearse three times a week, on Monday, Wednesday and Friday. Oh, sorry, not Friday. I've just checked the hall timetable, and it's Thursday. Each rehearsal lasts 2 hours, so please don't plan anything else after school on those days. Try to learn your lines before the first rehearsal, and don't forget to bring your script every time. If you can't come, remember to send me a message. We also need some help with the costumes. Linh's mother, who works as a designer, has kindly offered to help us. She needs lots of old clothes, so please bring any that you don't wear any more. Right, any questions?",
+    "text": "DRAMA CLUB: THE MAGIC FOREST\n• Rehearsal days: Monday, Wednesday and [1]\n• Each rehearsal lasts: [2] hours\n• Before the first rehearsal: learn your [3]\n• Help with costumes: Linh's [4]\n• Please bring: old [5]",
+    "items": [
+     {
+      "answer": "Thursday",
+      "accept": [],
+      "explain_vi": "Thầy nói Friday rồi sửa: \"not Friday... it's Thursday\"."
+     },
+     {
+      "answer": "2",
+      "accept": [
+       "two"
+      ],
+      "explain_vi": "\"Each rehearsal lasts 2 hours\"."
+     },
+     {
+      "answer": "lines",
+      "accept": [],
+      "explain_vi": "\"Try to learn your lines before the first rehearsal\"."
+     },
+     {
+      "answer": "mother",
+      "accept": [
+       "mum",
+       "mom"
+      ],
+      "explain_vi": "\"Linh's mother, who works as a designer, has kindly offered to help us\"."
+     },
+     {
+      "answer": "clothes",
+      "accept": [],
+      "explain_vi": "\"She needs lots of old clothes\"."
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Anna và Nam bàn chuyện tham gia cuộc thi tài năng của trường. Nghe và chọn đáp án đúng. Có câu hỏi về cảm xúc, ý kiến và suy luận.",
+    "speakers": [
+     {
+      "name": "Anna",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Nam, have you signed up for the talent show yet? The list closes on Friday."
+     },
+     {
+      "s": 1,
+      "t": "Not yet. To be honest, I'm in two minds about it. I've been practising the violin a lot, but performing in front of the whole school is a different thing."
+     },
+     {
+      "s": 0,
+      "t": "Come on, you're one of the most talented players I know. Remember playing at your cousin's wedding? Everyone loved it."
+     },
+     {
+      "s": 1,
+      "t": "That was different. Most of the guests were my relatives, so I didn't feel like anyone was judging me."
+     },
+     {
+      "s": 0,
+      "t": "Fair enough. But what's the worst that could happen?"
+     },
+     {
+      "s": 1,
+      "t": "I could forget the notes halfway through! Anyway, if I did enter, I'd want to play something original rather than a famous piece."
+     },
+     {
+      "s": 0,
+      "t": "You mean compose your own music? That's quite ambitious with only three weeks to go."
+     },
+     {
+      "s": 1,
+      "t": "I know. Actually, I started writing something last month. It was inspired by the sound of rain on our roof. But it's only half finished."
+     },
+     {
+      "s": 0,
+      "t": "Then why not play it with someone else? I could play the piano with you, and we could rehearse at my house."
+     },
+     {
+      "s": 1,
+      "t": "Really? That would make me feel much less nervous. But wouldn't you rather enter on your own? You won second prize last year."
+     },
+     {
+      "s": 0,
+      "t": "Honestly, I'd enjoy playing with someone much more. Performing alone last year was quite lonely."
+     },
+     {
+      "s": 1,
+      "t": "All right, you've persuaded me. Let's give it a go. I'll finish the piece this weekend."
+     },
+     {
+      "s": 0,
+      "t": "Great! I'll put our names on the list tomorrow morning."
+     }
+    ],
+    "items": [
+     {
+      "q": "How does Nam feel about the talent show at the beginning?",
+      "options": [
+       "Sure that he will win",
+       "Unable to decide whether to enter",
+       "Not interested in it at all",
+       "Annoyed with Anna for asking"
+      ],
+      "answer": 1,
+      "explain_vi": "Nam: \"I'm in two minds about it\" (phân vân, chưa quyết định được)."
+     },
+     {
+      "q": "Why did Nam feel comfortable playing at his cousin's wedding?",
+      "options": [
+       "He had practised the piece for months.",
+       "Anna was playing with him.",
+       "He knew most of the people listening.",
+       "He was playing a famous piece."
+      ],
+      "answer": 2,
+      "explain_vi": "Nam: \"Most of the guests were my relatives, so I didn't feel like anyone was judging me.\""
+     },
+     {
+      "q": "What does Anna think about Nam's plan to write his own music?",
+      "options": [
+       "It's a lot to manage in such a short time.",
+       "It's too easy for a talented player.",
+       "It will certainly win a prize.",
+       "It's less interesting than a famous piece."
+      ],
+      "answer": 0,
+      "explain_vi": "Anna: \"That's quite ambitious with only three weeks to go\" (tham vọng, khó kịp)."
+     },
+     {
+      "q": "What gave Nam the idea for his music?",
+      "options": [
+       "A song he heard at the wedding",
+       "A famous violin piece",
+       "A piece Anna played last year",
+       "Rain falling on his house"
+      ],
+      "answer": 3,
+      "explain_vi": "Nam: \"It was inspired by the sound of rain on our roof.\""
+     },
+     {
+      "q": "Why does Anna want to perform with Nam rather than alone?",
+      "options": [
+       "She doesn't want to win again.",
+       "She thinks it would be more enjoyable.",
+       "She needs more practice on the piano.",
+       "Her teacher advised her to."
+      ],
+      "answer": 1,
+      "explain_vi": "Anna: \"I'd enjoy playing with someone much more. Performing alone last year was quite lonely.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe một bài nhận xét trên đài về vở nhạc kịch mới của nhà hát thiếu nhi. Điền ghi chú, mỗi chỗ 1–2 từ hoặc 1 con số.",
+    "script": "Good evening, and welcome to Arts Weekly. This week I went to see Moonlight River, a new musical put on by the City Youth Theatre. The story follows a young girl who travels along a river to find her lost brother. What impressed me most was not the singing, although that was strong, but the stage design. Instead of expensive scenery, the designers used hundreds of paper lanterns to create the river, and the effect was magical. The music was composed by a student who is still at secondary school, which is remarkable when you consider how complex some of the songs are. The cast are all aged between 12 and 18, and they have clearly spent months rehearsing. The only real weakness, in my opinion, is the length. At almost three hours, the show is about 40 minutes too long, and some younger members of the audience were getting restless by the end. Tickets cost 150,000 dong, but students pay only 90,000. Overall, I'd strongly recommend it.",
+    "text": "REVIEW: MOONLIGHT RIVER\n• What impressed the reviewer most: the stage [1]\n• The river was made from paper [2]\n• Age of the cast: between 12 and [3]\n• Main weakness: the [4] of the show\n• Student ticket: [5] dong",
+    "items": [
+     {
+      "answer": "design",
+      "accept": [],
+      "explain_vi": "\"not the singing... but the stage design\". Phần hát chỉ là thông tin gây nhiễu."
+     },
+     {
+      "answer": "lanterns",
+      "accept": [
+       "lantern"
+      ],
+      "explain_vi": "\"used hundreds of paper lanterns to create the river\"."
+     },
+     {
+      "answer": "18",
+      "accept": [
+       "eighteen"
+      ],
+      "explain_vi": "\"The cast are all aged between 12 and 18\"."
+     },
+     {
+      "answer": "length",
+      "accept": [],
+      "explain_vi": "\"The only real weakness... is the length\". 40 phút là thời gian bị thừa."
+     },
+     {
+      "answer": "90,000",
+      "accept": [
+       "90000",
+       "90 000",
+       "ninety thousand"
+      ],
+      "explain_vi": "Giá vé 150,000 là vé thường; \"students pay only 90,000\"."
+     }
+    ]
+   }
+  }
  }
 }
