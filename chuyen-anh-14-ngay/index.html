@@ -806,7 +806,11 @@ function classF(){return 0.8} // 1 giờ học trên lớp ở CES ≈ 0,8 giờ
 /* Mốc chốt: đạt trình độ cần và chốt trường sớm hơn ngày thi CHOT_MONTHS tháng (CES chốt 4 tháng, tức 1/2 năm lớp 9),
    vì năm cuối cấp các em nhiều việc; sau mốc này chỉ luyện đề, không học kiến thức mới. */
 const CHOT_MONTHS=4;
-function chotDate(g){const e=examDateFor(g);return new Date(e.getFullYear(),e.getMonth()-CHOT_MONTHS,1)}
+/* Mùng 1 Tết âm lịch; bài thi thử chốt trường làm trước Tết ít nhất 1 tuần để kỳ nghỉ không làm lệch kết quả */
+const TET={2027:[1,6],2028:[0,26],2029:[1,13],2030:[1,3],2031:[0,23],2032:[1,11]};
+function tetDate(y){const t=TET[y];return t?new Date(y,t[0],t[1]):null}
+function chotDate(g){const e=examDateFor(g),c=new Date(e.getFullYear(),e.getMonth()-CHOT_MONTHS,1),t=tetDate(c.getFullYear());
+  if(t){const b=new Date(t.getTime()-7*864e5);if(b<c)return b}return c}
 function goalNow(){const k=(S.course&&S.course.goal)||'cva';const G=GOALS.find(x=>x.k===k)||GOALS[1];return {k:G.k,h:goalH(G.k),name:G.name}}
 /* mốc chuẩn của CES, tính ngược từ mốc chốt theo mức cần của trường em nhắm:
    đích từ C1 → B1 Tết lớp 7, B2 Tết lớp 8; đích B2–B2+ → B1 hết lớp 7, B2 hết lớp 8 */
@@ -2272,7 +2276,7 @@ function vCourse(){
     <h3 class="sec">Các giai đoạn em sẽ học</h3>
     <div class="card ph done0"><div class="ph-s"><span class="ph-n">GĐ0</span><span class="ph-t"><b>Chẩn đoán 14 ngày</b> · em đang ở đây (${nd}/14 buổi)<br><span class="small muted">Đo trình độ, khả năng nhớ, thời gian học và dạng bài em thích. Hết 14 ngày cô gửi hồ sơ và lộ trình đề xuất cho bố mẹ.</span></span></div></div>
     ${R.phases.map((p,i)=>phaseCard(p,i,R,o,i===0)).join('')||'<div class="card"><p>Em đã đạt mức cần cho trường này, nên không cần giai đoạn nâng trình độ. Em có thể chọn trường cao hơn, hoặc vào luyện đề sớm.</p></div>'}
-    <div class="card ph chot"><div class="ph-s"><span class="ph-n">Chốt<br>trường</span><span class="ph-t"><b>Mốc chốt trường</b> · ${R.g4.toLocaleDateString('vi-VN')}, sớm hơn kỳ thi ${CHOT_MONTHS} tháng<br><span class="small muted">Em làm bài thi thử trọn bộ đề Sở và đề Chuyên Ngoại ngữ ở CES. Cô và bố mẹ dùng điểm thi thử, điểm Toán, Văn (tab Chọn trường) để chốt trường và nguyện vọng. Từ đây đích không đổi nữa.</span></span></div></div>
+    <div class="card ph chot"><div class="ph-s"><span class="ph-n">Chốt<br>trường</span><span class="ph-t"><b>Mốc chốt trường</b> · ${R.g4.toLocaleDateString('vi-VN')}, sớm hơn kỳ thi khoảng ${CHOT_MONTHS} tháng${(()=>{const t=tetDate(R.g4.getFullYear());return t?`, trước Tết (${t.toLocaleDateString('vi-VN')}) ít nhất một tuần`:''})()}<br><span class="small muted">Em làm bài thi thử trọn bộ đề Sở và đề Chuyên Ngoại ngữ ở CES. Cô và bố mẹ dùng điểm thi thử, điểm Toán, Văn (tab Chọn trường) để chốt trường và nguyện vọng. Từ đây đích không đổi nữa.</span></span></div></div>
     <details class="card ph" style="--pc:#FFD23F"><summary><span class="ph-n">GĐ4</span><span class="ph-t"><b>Luyện đề</b> · ${fmtD(R.g4>R.start?R.g4:R.start)} – ${fmtD(R.exam)}<br><span class="small muted">khoảng ${R.g4Ch} chặng, chung cho mọi học sinh, dù đang ở mức nào</span></span></summary>
      <div class="ph-b"><p>Không học chủ điểm mới. Mỗi tuần nhẹ hơn các giai đoạn trước để em còn sức cho thi học kỳ và Toán, Văn; toàn bộ thời gian tiếng Anh dành cho làm đề, chữa đề và giữ phong độ.</p><ul>${EXAM_PHASE.tasks.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><p>${esc(EXAM_PHASE.speed)}</p><p>${esc(EXAM_PHASE.how)}</p></div></details>
     <details class="card"><summary>Trang tính thế nào</summary><div class="small">
