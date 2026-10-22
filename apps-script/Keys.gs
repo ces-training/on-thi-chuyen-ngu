@@ -255,6 +255,67 @@ var PAPER_KEYS = {
       "answer": "mine"
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d1H1",
+      "label": "H.1",
+      "q": "Many students found the news that the entrance exam would be harder very ______. (COURAGE)",
+      "answer": "discouraging"
+     },
+     {
+      "id": "d1H2",
+      "label": "H.2",
+      "q": "Visiting the science museum was a highly ______ experience for the whole class. (EDUCATE)",
+      "answer": "educational"
+     },
+     {
+      "id": "d1H3",
+      "label": "H.3",
+      "q": "I find it hard to concentrate when the room is noisy. → I have difficulty ______",
+      "answer": "concentrating when the room is noisy",
+      "accept": [
+       "in concentrating when the room is noisy"
+      ]
+     },
+     {
+      "id": "d1H4",
+      "label": "H.4",
+      "q": "What's your opinion of the new curriculum? → What do you ______?",
+      "answer": "think of the new curriculum",
+      "accept": [
+       "think about the new curriculum"
+      ]
+     },
+     {
+      "id": "d1H5",
+      "label": "H.5",
+      "q": "Our teacher encourages us to ______ our own ideas for projects instead of copying from the Internet.",
+      "answer": "C",
+      "options": [
+       "catch up with",
+       "put up with",
+       "come up with",
+       "keep up with"
+      ]
+     },
+     {
+      "id": "d1H6",
+      "label": "H.6",
+      "q": "We had to learn the whole poem ______ for the speaking test.",
+      "answer": "B",
+      "options": [
+       "in mind",
+       "by heart",
+       "at heart",
+       "with heart"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -516,6 +577,68 @@ var PAPER_KEYS = {
       "answer": "dropped"
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d2H1",
+      "label": "H.1",
+      "q": "The whole class clapped ______ when Minh finished his magic trick. (ENTHUSIASM)",
+      "answer": "enthusiastically"
+     },
+     {
+      "id": "d2H2",
+      "label": "H.2",
+      "q": "Many students found the drawing task dull and ______, so they quickly lost interest. (IMAGINE)",
+      "answer": "unimaginative"
+     },
+     {
+      "id": "d2H3",
+      "label": "H.3",
+      "q": "Tuan started playing badminton two years ago. → Tuan took ______",
+      "answer": "up badminton two years ago",
+      "accept": [
+       "up playing badminton two years ago"
+      ]
+     },
+     {
+      "id": "d2H4",
+      "label": "H.4",
+      "q": "The phone rang in the middle of my piano practice. → I was ______",
+      "answer": "practising the piano when the phone rang",
+      "accept": [
+       "practicing the piano when the phone rang",
+       "doing my piano practice when the phone rang"
+      ]
+     },
+     {
+      "id": "d2H5",
+      "label": "H.5",
+      "q": "My grandmother has green ______; every plant in her garden grows beautifully.",
+      "answer": "B",
+      "options": [
+       "hands",
+       "fingers",
+       "feet",
+       "eyes"
+      ]
+     },
+     {
+      "id": "d2H6",
+      "label": "H.6",
+      "q": "After a stressful week of exams, I just want to ______ my hair down and watch films all weekend.",
+      "answer": "C",
+      "options": [
+       "put",
+       "take",
+       "let",
+       "get"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -785,6 +908,68 @@ var PAPER_KEYS = {
       "answer": "knowledge"
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d3H1",
+      "label": "H.1",
+      "q": "The ______ of the hills around the village has led to more landslides in the rainy season. (FOREST)",
+      "answer": "deforestation"
+     },
+     {
+      "id": "d3H2",
+      "label": "H.2",
+      "q": "Most of the packaging in this shop is ______, so customers can put it in the blue recycling bins. (CYCLE)",
+      "answer": "recyclable"
+     },
+     {
+      "id": "d3H3",
+      "label": "H.3",
+      "q": "The last time I saw a firefly was five years ago. → I haven't ______",
+      "answer": "seen a firefly for five years",
+      "accept": [
+       "seen a firefly in five years",
+       "seen any fireflies for five years"
+      ]
+     },
+     {
+      "id": "d3H4",
+      "label": "H.4",
+      "q": "This is the first time I have visited a recycling plant. → I have never ______",
+      "answer": "visited a recycling plant before",
+      "accept": [
+       "been to a recycling plant before"
+      ]
+     },
+     {
+      "id": "d3H5",
+      "label": "H.5",
+      "q": "Cutting down rainforests ______ a serious threat to many rare species.",
+      "answer": "C",
+      "options": [
+       "makes",
+       "takes",
+       "poses",
+       "does"
+      ]
+     },
+     {
+      "id": "d3H6",
+      "label": "H.6",
+      "q": "The saola is a critically ______ species that lives in the Truong Son mountains.",
+      "answer": "B",
+      "options": [
+       "dangerous",
+       "endangered",
+       "extinct",
+       "threatening"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -1068,6 +1253,64 @@ var PAPER_KEYS = {
       ]
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d4H1",
+      "label": "H.1",
+      "q": "Some apps collect users' personal data ______, without asking for permission. (LEGAL)",
+      "answer": "illegally"
+     },
+     {
+      "id": "d4H2",
+      "label": "H.2",
+      "q": "Thanks to its powerful processor, the new laptop runs even the biggest games ______. (EFFORT)",
+      "answer": "effortlessly"
+     },
+     {
+      "id": "d4H3",
+      "label": "H.3",
+      "q": "I've arranged to meet the IT technician at 3 p.m. tomorrow. → I'm ______",
+      "answer": "meeting the IT technician at 3 p.m. tomorrow",
+      "accept": [
+       "seeing the IT technician at 3 p.m. tomorrow"
+      ]
+     },
+     {
+      "id": "d4H4",
+      "label": "H.4",
+      "q": "I'm sure the new app will be popular with teenagers. → The new app is bound ______",
+      "answer": "to be popular with teenagers"
+     },
+     {
+      "id": "d4H5",
+      "label": "H.5",
+      "q": "With new gadgets coming out every month, it's hard to ______ pace with the latest technology.",
+      "answer": "A",
+      "options": [
+       "keep",
+       "catch",
+       "hold",
+       "stay"
+      ]
+     },
+     {
+      "id": "d4H6",
+      "label": "H.6",
+      "q": "Please don't forget to ______ up your files before you update the software.",
+      "answer": "C",
+      "options": [
+       "save",
+       "make",
+       "back",
+       "put"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -1326,6 +1569,71 @@ var PAPER_KEYS = {
       "answer": "improve"
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d5H1",
+      "label": "H.1",
+      "q": "The doctor said that my grandfather's heart problems were caused by years of ______. (ACTIVE)",
+      "answer": "inactivity"
+     },
+     {
+      "id": "d5H2",
+      "label": "H.2",
+      "q": "Eating a heavy meal late at night can have some ______ effects on your sleep. (DESIRE)",
+      "answer": "undesirable"
+     },
+     {
+      "id": "d5H3",
+      "label": "H.3",
+      "q": "Nobody in the club works out as regularly as my uncle. → My uncle works out ______",
+      "answer": "more regularly than anybody else in the club",
+      "accept": [
+       "more regularly than anyone else in the club",
+       "more regularly than any other member of the club",
+       "more regularly than any other club member"
+      ]
+     },
+     {
+      "id": "d5H4",
+      "label": "H.4",
+      "q": "The gym is too small for all the members to use at the same time. → The gym isn't ______",
+      "answer": "big enough for all the members to use at the same time",
+      "accept": [
+       "large enough for all the members to use at the same time",
+       "big enough for all members to use at the same time",
+       "large enough for all members to use at the same time"
+      ]
+     },
+     {
+      "id": "d5H5",
+      "label": "H.5",
+      "q": "After a week in bed with flu, Hùng was still feeling a bit under the ______, so he didn't go to football practice.",
+      "answer": "C",
+      "options": [
+       "rain",
+       "sky",
+       "weather",
+       "cloud"
+      ]
+     },
+     {
+      "id": "d5H6",
+      "label": "H.6",
+      "q": "After his check-up, my dad decided to ______ a healthier lifestyle: no more fizzy drinks and no more late nights.",
+      "answer": "B",
+      "options": [
+       "adapt",
+       "adopt",
+       "accept",
+       "adjust"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -1605,6 +1913,70 @@ var PAPER_KEYS = {
       ]
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d6H1",
+      "label": "H.1",
+      "q": "In winter, the mountain village is almost ______ because heavy snow often blocks the only road. (ACCESS)",
+      "answer": "inaccessible"
+     },
+     {
+      "id": "d6H2",
+      "label": "H.2",
+      "q": "Climbers must be well prepared, as the weather on Fansipan can be extremely ______. (PREDICT)",
+      "answer": "unpredictable"
+     },
+     {
+      "id": "d6H3",
+      "label": "H.3",
+      "q": "We booked our train tickets in advance, but it wasn't necessary because the train was half empty. → We needn't ______",
+      "answer": "have booked our train tickets in advance",
+      "accept": [
+       "have booked our tickets in advance",
+       "have booked the train tickets in advance",
+       "have booked them in advance"
+      ]
+     },
+     {
+      "id": "d6H4",
+      "label": "H.4",
+      "q": "The pilot succeeded in landing the plane safely despite the strong wind. → Although the wind was strong, the pilot was ______",
+      "answer": "able to land the plane safely",
+      "accept": [
+       "able to land it safely",
+       "successful in landing the plane safely"
+      ]
+     },
+     {
+      "id": "d6H5",
+      "label": "H.5",
+      "q": "We'd better ______ before dawn if we want to reach the top of the mountain by lunchtime.",
+      "answer": "D",
+      "options": [
+       "set up",
+       "set back",
+       "set in",
+       "set out"
+      ]
+     },
+     {
+      "id": "d6H6",
+      "label": "H.6",
+      "q": "Travelling around Southeast Asia with her grandparents was a once-in-a-______ experience for my cousin.",
+      "answer": "B",
+      "options": [
+       "life",
+       "lifetime",
+       "living",
+       "lifestyle"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -1940,6 +2312,73 @@ var PAPER_KEYS = {
       ]
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d7H1",
+      "label": "H.1",
+      "q": "Many parents worry that their children waste hours on ______ activities such as scrolling through social media. (PRODUCT)",
+      "answer": "unproductive"
+     },
+     {
+      "id": "d7H2",
+      "label": "H.2",
+      "q": "Our school canteen has switched to paper straws and other ______ friendly products. (ENVIRONMENT)",
+      "answer": "environmentally"
+     },
+     {
+      "id": "d7H3",
+      "label": "H.3",
+      "q": "I last saw my cousin when she moved to Australia two years ago. → I haven't ______",
+      "answer": "seen my cousin since she moved to Australia two years ago",
+      "accept": [
+       "seen my cousin since she moved to Australia",
+       "seen her since she moved to Australia two years ago",
+       "seen her since she moved to Australia",
+       "seen my cousin for two years"
+      ]
+     },
+     {
+      "id": "d7H4",
+      "label": "H.4",
+      "q": "My town is much noisier now than it was in the past. → My town didn't ______",
+      "answer": "use to be so noisy",
+      "accept": [
+       "use to be as noisy",
+       "use to be this noisy",
+       "use to be as noisy as it is now",
+       "use to be so noisy as it is now"
+      ]
+     },
+     {
+      "id": "d7H5",
+      "label": "H.5",
+      "q": "If you keep ______ your revision until the night before the test, you won't remember everything.",
+      "answer": "C",
+      "options": [
+       "setting off",
+       "taking off",
+       "putting off",
+       "giving off"
+      ]
+     },
+     {
+      "id": "d7H6",
+      "label": "H.6",
+      "q": "Studying abroad for a year really ______ my horizons; I learnt to see things from many different points of view.",
+      "answer": "B",
+      "options": [
+       "enlarged",
+       "broadened",
+       "lengthened",
+       "increased"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -2201,6 +2640,69 @@ var PAPER_KEYS = {
       "answer": "used to live"
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d8H1",
+      "label": "H.1",
+      "q": "Teachers have stopped recommending that website because its information is often ______. (RELY)",
+      "answer": "unreliable"
+     },
+     {
+      "id": "d8H2",
+      "label": "H.2",
+      "q": "The drink advert was banned for being ______: it suggested that the drink could cure serious illnesses. (LEAD)",
+      "answer": "misleading"
+     },
+     {
+      "id": "d8H3",
+      "label": "H.3",
+      "q": "Who wrote this article about plastic waste? → Who was ______",
+      "answer": "this article about plastic waste written by?",
+      "accept": [
+       "this article about plastic waste written by",
+       "this article written by?",
+       "this article written by"
+      ]
+     },
+     {
+      "id": "d8H4",
+      "label": "H.4",
+      "q": "Someone gave the journalist some secret documents last week. → The journalist ______",
+      "answer": "was given some secret documents last week",
+      "accept": [
+       "was given some secret documents last week by someone"
+      ]
+     },
+     {
+      "id": "d8H5",
+      "label": "H.5",
+      "q": "The story about the singer's secret wedding ______ the headlines for weeks.",
+      "answer": "A",
+      "options": [
+       "hit",
+       "won",
+       "took",
+       "reached"
+      ]
+     },
+     {
+      "id": "d8H6",
+      "label": "H.6",
+      "q": "The company had to ______ its new advertisement after many parents complained that it was harmful to children.",
+      "answer": "C",
+      "options": [
+       "take after",
+       "take over",
+       "take down",
+       "take up"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -2477,6 +2979,72 @@ var PAPER_KEYS = {
       ]
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d9H1",
+      "label": "H.1",
+      "q": "The ______ of the new menu surprised the restaurant owners; hardly anyone ordered from it. (POPULAR)",
+      "answer": "unpopularity"
+     },
+     {
+      "id": "d9H2",
+      "label": "H.2",
+      "q": "The judges praised the young chef's ______; nobody had ever thought of putting mango in phở before. (CREATE)",
+      "answer": "creativity",
+      "accept": [
+       "creativeness"
+      ]
+     },
+     {
+      "id": "d9H3",
+      "label": "H.3",
+      "q": "Very few people came to the festival because of the rain. → Hardly ______",
+      "answer": "anyone came to the festival because of the rain.",
+      "accept": [
+       "anyone came to the festival because of the rain",
+       "anybody came to the festival because of the rain.",
+       "anybody came to the festival because of the rain"
+      ]
+     },
+     {
+      "id": "d9H4",
+      "label": "H.4",
+      "q": "There is hardly any sugar left in the jar. → We have almost run ______",
+      "answer": "out of sugar.",
+      "accept": [
+       "out of sugar"
+      ]
+     },
+     {
+      "id": "d9H5",
+      "label": "H.5",
+      "q": "The smell of Grandma's bánh chưng was so wonderful that it made my mouth ______.",
+      "answer": "A",
+      "options": [
+       "water",
+       "wet",
+       "melt",
+       "run"
+      ]
+     },
+     {
+      "id": "d9H6",
+      "label": "H.6",
+      "q": "Every family has its own way of making nem, and Mum's recipe has been ______ from generation to generation.",
+      "answer": "A",
+      "options": [
+       "passed down",
+       "passed out",
+       "given up",
+       "taken over"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -2753,6 +3321,76 @@ var PAPER_KEYS = {
       ]
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d10H1",
+      "label": "H.1",
+      "q": "______ among young people has risen sharply since several factories in the area closed down. (EMPLOY)",
+      "answer": "Unemployment",
+      "accept": [
+       "unemployment"
+      ]
+     },
+     {
+      "id": "d10H2",
+      "label": "H.2",
+      "q": "Many school leavers have ______ expectations about their first salary, so they are often disappointed when they receive their first payslip. (REAL)",
+      "answer": "unrealistic"
+     },
+     {
+      "id": "d10H3",
+      "label": "H.3",
+      "q": "I don't have enough experience, so I can't apply for the job. → If I ______",
+      "answer": "had enough experience, I could apply for the job.",
+      "accept": [
+       "had enough experience, I could apply for the job",
+       "had enough experience, I would be able to apply for the job.",
+       "had enough experience, I would be able to apply for the job",
+       "had enough experience, I'd be able to apply for the job.",
+       "had enough experience, I'd be able to apply for the job"
+      ]
+     },
+     {
+      "id": "d10H4",
+      "label": "H.4",
+      "q": "Work harder or you won't get a pay rise. → Unless ______",
+      "answer": "you work harder, you won't get a pay rise.",
+      "accept": [
+       "you work harder, you won't get a pay rise",
+       "you work harder, you will not get a pay rise.",
+       "you work harder, you will not get a pay rise"
+      ]
+     },
+     {
+      "id": "d10H5",
+      "label": "H.5",
+      "q": "After months of searching, Hà finally ______ a job at an international school.",
+      "answer": "A",
+      "options": [
+       "landed",
+       "hit",
+       "caught",
+       "reached"
+      ]
+     },
+     {
+      "id": "d10H6",
+      "label": "H.6",
+      "q": "Because of falling sales, the company had to ______ two hundred workers last month.",
+      "answer": "A",
+      "options": [
+       "lay off",
+       "take on",
+       "put off",
+       "give up"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -3017,6 +3655,78 @@ var PAPER_KEYS = {
       "answer": "too"
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d11H1",
+      "label": "H.1",
+      "q": "Most teenagers want more ______ from their parents; they like making their own decisions. (DEPEND)",
+      "answer": "independence"
+     },
+     {
+      "id": "d11H2",
+      "label": "H.2",
+      "q": "Mai kept checking her watch and tapping her foot ______; her best friend was already half an hour late. (PATIENT)",
+      "answer": "impatiently"
+     },
+     {
+      "id": "d11H3",
+      "label": "H.3",
+      "q": "I admire my grandfather more than anyone else. → The person ______",
+      "answer": "I admire most is my grandfather.",
+      "accept": [
+       "I admire most is my grandfather",
+       "I admire the most is my grandfather.",
+       "I admire the most is my grandfather",
+       "who I admire most is my grandfather.",
+       "who I admire most is my grandfather",
+       "whom I admire most is my grandfather.",
+       "whom I admire most is my grandfather",
+       "that I admire most is my grandfather.",
+       "that I admire most is my grandfather",
+       "who I admire the most is my grandfather.",
+       "whom I admire the most is my grandfather.",
+       "that I admire the most is my grandfather."
+      ]
+     },
+     {
+      "id": "d11H4",
+      "label": "H.4",
+      "q": "My best friend wants to become a nurse. Her parents are both doctors. → My best friend, ______",
+      "answer": "whose parents are both doctors, wants to become a nurse.",
+      "accept": [
+       "whose parents are both doctors, wants to become a nurse"
+      ]
+     },
+     {
+      "id": "d11H5",
+      "label": "H.5",
+      "q": "Lan is outgoing and loves music, just like her mother – she really ______ her.",
+      "answer": "A",
+      "options": [
+       "takes after",
+       "looks after",
+       "takes over",
+       "looks for"
+      ]
+     },
+     {
+      "id": "d11H6",
+      "label": "H.6",
+      "q": "Nam and Huy argue now and then, but they have been as thick as ______ since primary school.",
+      "answer": "A",
+      "options": [
+       "thieves",
+       "bricks",
+       "brothers",
+       "friends"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -3284,6 +3994,71 @@ var PAPER_KEYS = {
       "answer": "have to"
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d12H1",
+      "label": "H.1",
+      "q": "The first results turned out to be ______, so the team had to repeat the whole experiment. (RELY)",
+      "answer": "unreliable"
+     },
+     {
+      "id": "d12H2",
+      "label": "H.2",
+      "q": "So far, the new theory has not been tested ______; it exists only on paper. (EXPERIMENT)",
+      "answer": "experimentally"
+     },
+     {
+      "id": "d12H3",
+      "label": "H.3",
+      "q": "'We haven't found any evidence yet,' the detectives told the journalist. → The detectives told the journalist ______",
+      "answer": "that they hadn't found any evidence yet",
+      "accept": [
+       "that they had not found any evidence yet",
+       "they hadn't found any evidence yet",
+       "they had not found any evidence yet"
+      ]
+     },
+     {
+      "id": "d12H4",
+      "label": "H.4",
+      "q": "This is the cleverest solution that anyone has ever come up with. → Nobody has ever ______",
+      "answer": "come up with a cleverer solution than this",
+      "accept": [
+       "come up with a cleverer solution than this one",
+       "come up with such a clever solution",
+       "come up with such a clever solution before"
+      ]
+     },
+     {
+      "id": "d12H5",
+      "label": "H.5",
+      "q": "After months of failure, the team finally ______ a breakthrough in their search for a cure.",
+      "answer": "B",
+      "options": [
+       "did",
+       "made",
+       "took",
+       "got"
+      ]
+     },
+     {
+      "id": "d12H6",
+      "label": "H.6",
+      "q": "The idea seemed crazy at first, but in the end it ______ to be a brilliant invention.",
+      "answer": "A",
+      "options": [
+       "turned out",
+       "carried out",
+       "found out",
+       "came out"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -3539,6 +4314,77 @@ var PAPER_KEYS = {
       "answer": "delayed"
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d13H1",
+      "label": "H.1",
+      "q": "The concert was cancelled after the sudden ______ of the lead singer, who was found two days later at his parents' house. (APPEAR)",
+      "answer": "disappearance"
+     },
+     {
+      "id": "d13H2",
+      "label": "H.2",
+      "q": "The stage design was rather ______; the director had simply copied it from an old production. (IMAGINE)",
+      "answer": "unimaginative"
+     },
+     {
+      "id": "d13H3",
+      "label": "H.3",
+      "q": "I told Hoa the ending of the film, and now I wish I hadn't. → I regret ______",
+      "answer": "telling Hoa the ending of the film",
+      "accept": [
+       "having told Hoa the ending of the film",
+       "telling her the ending of the film",
+       "having told her the ending of the film"
+      ]
+     },
+     {
+      "id": "d13H4",
+      "label": "H.4",
+      "q": "'Why don't we put on a play for Teachers' Day?' said Minh. → Minh suggested ______",
+      "answer": "putting on a play for Teachers' Day",
+      "accept": [
+       "that we put on a play for Teachers' Day",
+       "that we should put on a play for Teachers' Day",
+       "we put on a play for Teachers' Day",
+       "we should put on a play for Teachers' Day",
+       "that they put on a play for Teachers' Day",
+       "that they should put on a play for Teachers' Day",
+       "they put on a play for Teachers' Day",
+       "they should put on a play for Teachers' Day",
+       "putting a play on for Teachers' Day"
+      ]
+     },
+     {
+      "id": "d13H5",
+      "label": "H.5",
+      "q": "Unfortunately, the band's new album didn't ______ their fans' high expectations.",
+      "answer": "A",
+      "options": [
+       "live up to",
+       "come up with",
+       "put up with",
+       "catch up with"
+      ]
+     },
+     {
+      "id": "d13H6",
+      "label": "H.6",
+      "q": "Lan was so nervous before her first performance that she had ______ in her stomach.",
+      "answer": "C",
+      "options": [
+       "bees",
+       "birds",
+       "butterflies",
+       "frogs"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {
@@ -3868,6 +4714,74 @@ var PAPER_KEYS = {
       ]
      }
     ]
+   },
+   {
+    "key": "H_plus",
+    "name": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)",
+    "items": [
+     {
+      "id": "d14H1",
+      "label": "H.1",
+      "q": "Throwing rubbish into the river is an act of complete ______. (RESPONSIBLE)",
+      "answer": "irresponsibility"
+     },
+     {
+      "id": "d14H2",
+      "label": "H.2",
+      "q": "The audience waited ______ for the band to come on stage; the concert was already an hour late. (PATIENT)",
+      "answer": "impatiently"
+     },
+     {
+      "id": "d14H3",
+      "label": "H.3",
+      "q": "'Somebody stole my bike yesterday,' Nam told me. → Nam told me that his bike ______",
+      "answer": "had been stolen the day before",
+      "accept": [
+       "had been stolen the previous day",
+       "had been stolen the day before by somebody",
+       "had been stolen by somebody the day before"
+      ]
+     },
+     {
+      "id": "d14H4",
+      "label": "H.4",
+      "q": "I don't have enough money, so I can't buy a ticket for the concert. → If I ______",
+      "answer": "had enough money, I could buy a ticket for the concert",
+      "accept": [
+       "had enough money I could buy a ticket for the concert",
+       "had enough money, I would be able to buy a ticket for the concert",
+       "had enough money I would be able to buy a ticket for the concert",
+       "had enough money, I'd be able to buy a ticket for the concert",
+       "had enough money, I would buy a ticket for the concert",
+       "had enough money, I'd buy a ticket for the concert"
+      ]
+     },
+     {
+      "id": "d14H5",
+      "label": "H.5",
+      "q": "It isn't always easy to ______ a balance between schoolwork and hobbies.",
+      "answer": "B",
+      "options": [
+       "make",
+       "strike",
+       "hit",
+       "take"
+      ]
+     },
+     {
+      "id": "d14H6",
+      "label": "H.6",
+      "q": "We have ______ eggs, so we can't make pancakes this morning.",
+      "answer": "D",
+      "options": [
+       "run over",
+       "run into",
+       "run across",
+       "run out of"
+      ]
+     }
+    ],
+    "track": "nang"
    }
   ],
   "writing": {

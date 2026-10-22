@@ -53,6 +53,8 @@ ol.items li{margin:0 0 7px;break-inside:avoid}
 .check li::before{content:"☐  ";font-size:11pt}
 .sec{break-inside:auto}
 .end{margin-top:12px;padding:8px 12px;border:2px solid #2638C4;border-radius:10px;font-size:9.5pt}
+.hint{font-size:8.5pt;color:#8A5A00;font-style:italic}
+.gloss{background:#FFF4D1;border-radius:8px;padding:6px 10px;font-size:9.5pt;margin:6px 0;line-height:1.6}
 .name{display:flex;gap:18px;font-size:9.5pt;margin-bottom:8px}.name span{flex:1;border-bottom:1px dotted #151521}
 """
 
@@ -64,11 +66,15 @@ def mcq(items, start=1):
         o.append(f'<li>{gap(it["q"])}' + (f'<div class="opts{" long" if long else ""}">' + "".join(f"<span>{'ABCD'[j]}. {E(x)}</span>" for j, x in enumerate(opts)) + "</div>" if opts else "") + "</li>")
     return f'<ol class="items" start="{start}">' + "".join(o) + "</ol>"
 
-def gaps(items):
-    return '<ol class="items">' + "".join(f"<li>{gap(it['q'])}</li>" for it in items) + "</ol>"
+def gaps(items, hints=None):
+    hints = hints or {}
+    return '<ol class="items">' + "".join(f"<li>{gap(it['q'])}" + (f' <span class="hint">({E(hints[it["id"]])})</span>' if it.get("id") in hints else "") + "</li>" for it in items) + "</ol>"
 
-def reading(R):
+TRACK_NAME = {"nen": "Nền tảng", "chuan": "Chuẩn", "nang": "Nâng cao"}
+
+def reading(R, gloss=None):
     h = f'<h3>{E(R.get("title",""))}</h3><div class="passage">{E(R["text"].strip())}</div>'
+    if gloss: h += '<div class="gloss"><b>Từ khó:</b> ' + " · ".join(f"<b>{E(a)}</b> = {E(b)}" for a, b in gloss) + "</div>"
     tf = [it for it in R["items"] if it.get("kind") == "tfng"]
     mc = [it for it in R["items"] if it.get("kind") != "tfng"]
     if tf:
@@ -77,20 +83,35 @@ def reading(R):
         h += '<p class="ins">Chọn đáp án đúng.</p>' + mcq(mc, len(tf) + 1)
     return h
 
-def writing(F):
-    n = 10 if F.get("min_words", 50) >= 80 else 8
-    return (f'<p>{E(F.get("task_vi",""))}</p><p class="ex">{E(F.get("task_en",""))} (ít nhất {F.get("min_words",50)} từ)</p>'
-            + '<div class="lines">' + "<div></div>" * n + '</div><p class="ins" style="margin-top:6px">Tự kiểm trước khi xem đoạn mẫu trên web:</p><ul class="check">'
+def writing(F, tr="chuan", starters=None):
+    mw = F.get("min_words", 50) + (-20 if tr == "nen" else 20 if tr == "nang" else 0)
+    n = 10 if mw >= 80 else 8
+    extra = ""
+    if tr == "nen" and starters: extra = '<div class="gloss"><b>Gợi ý câu mở đầu:</b><br>' + "<br>".join(E(x) for x in starters) + "</div>"
+    if tr == "nang": extra = '<div class="gloss"><b>Yêu cầu thêm (Nâng cao):</b> dùng ít nhất 2 cấu trúc ngữ pháp và 3 từ mới của buổi, có câu chủ đề và câu kết.</div>'
+    return (f'<p>{E(F.get("task_vi",""))}</p><p class="ex">{E(F.get("task_en",""))} (ít nhất {mw} từ)</p>' + extra +
+            '<div class="lines">' + "<div></div>" * n + '</div><p class="ins" style="margin-top:6px">Tự kiểm trước khi xem đoạn mẫu trên web:</p><ul class="check">'
             + "".join(f"<li>{E(c)}</li>" for c in F.get("checklist_vi", [])) + "</ul>")
 
-def head(d):
+def head(d, tr="chuan"):
     n = d["day"]
-    return (f'<div class="top"><div class="badge">{n:02d}</div><div><h1>Buổi {n} · {E(d["theme_vi"])}</h1><p>Chuyên Anh 14 Ngày · {E(d.get("theme_en",""))} · khoảng {d.get("minutes",30)} phút làm trên giấy</p></div></div>'
+    return (f'<div class="top"><div class="badge">{n:02d}</div><div><h1>Buổi {n} · {E(d["theme_vi"])}</h1><p>Chuyên Anh 14 Ngày · {E(d.get("theme_en",""))} · bản {TRACK_NAME[tr]} · khoảng {d.get("minutes",30) + (10 if tr == "nang" else 0)} phút làm trên giấy</p></div></div>'
             '<div class="name"><span>Họ tên: </span><span>Ngày làm: </span><span>Thời gian làm: ……… phút</span></div>'
             f'<p class="ins">{E(d.get("goal_vi",""))}</p>')
 
-def normal(d):
-    P = d["paper"]; h = head(d)
+def plus_section(W):
+    PP = (W or {}).get("paper_plus")
+    if not PP: return ""
+    its = PP["items"]
+    h = f'<h3>{E(PP.get("title_vi","H. Thử thách nâng cao"))}</h3><p class="ins">{E(PP.get("instruction_vi",""))}</p><ol class="items">'
+    for it in its:
+        opts = it.get("options")
+        h += f"<li>{gap(it['q'])}" + ('<div class="opts' + (" long" if any(len(o) > 28 for o in opts) else "") + '">' + "".join(f"<span>{'ABCD'[j]}. {E(o)}</span>" for j, o in enumerate(opts)) + "</div>" if opts else "") + "</li>"
+    return h + "</ol>"
+
+def normal(d, tr="chuan", W=None):
+    W = W or {}; EZ = W.get("paper_easy", {}) if tr == "nen" else {}
+    P = d["paper"]; h = head(d, tr)
     h += '<h2>1. Từ mới</h2><table><tr><th>Từ</th><th>Phát âm</th><th>Nghĩa</th><th>Họ từ</th><th>Ví dụ</th></tr>'
     for v in d["vocab"]:
         h += f'<tr><td class="w">{E(v["word"])} <small>({E(v.get("pos",""))})</small></td><td class="ipa">{E(v.get("ipa",""))}</td><td>{E(v["meaning_vi"])}</td><td>{E(v.get("family",""))}</td><td class="ex">{E(v["example"])}</td></tr>'
@@ -103,39 +124,50 @@ def normal(d):
     h += f'<h2>3. Cấu tạo từ: {E(w["focus"])}</h2><p>{E(w["rule_vi"])}</p><div class="wf">' + "".join(f"<span>{E(a)} → <b>{E(b)}</b></span>" for a, b in w["examples"]) + "</div>"
     h += "<h2>4. Bài tập</h2>"
     A = P["A_vocab"]; h += f'<h3>A. Từ vựng</h3><p class="ins">{E(A["instruction_vi"])}</p>'
-    if A.get("bank"): h += '<div class="bank">' + "   ·   ".join(E(x) for x in A["bank"]) + "</div>"
+    if A.get("bank"):
+        mean = {v["word"].lower(): v["meaning_vi"] for v in d.get("vocab", [])} | {p["phrase"].split(" (")[0].lower(): p["meaning_vi"] for p in d.get("phrasal", [])}
+        h += '<div class="bank">' + "   ·   ".join(E(x) + (f' <span class="hint">({E(mean[x.lower()])})</span>' if tr == "nen" and x.lower() in mean else "") for x in A["bank"]) + "</div>"
     h += gaps(A["items"])
     B = P["B_grammar"]; h += f'<h3>B. Ngữ pháp</h3><p class="ins">{E(B["instruction_vi"])}</p>' + gaps(B["items"])
-    Cc = P["C_wordform"]; h += f'<h3>C. Cấu tạo từ</h3><p class="ins">{E(Cc["instruction_vi"])}</p>' + gaps(Cc["items"])
+    Cc = P["C_wordform"]; h += f'<h3>C. Cấu tạo từ</h3><p class="ins">{E(Cc["instruction_vi"])}</p>' + gaps(Cc["items"], EZ.get("hints"))
     D = P["D_exam"]; h += f'<h3>D. Dạng bài thi chuyên</h3><p class="ins">{E(D["instruction_vi"])}</p>'
     if D.get("text"): h += f'<div class="passage">{gap(D["text"])}</div>'
     h += mcq(D["items"])
-    h += "<h3>E. Đọc hiểu</h3>" + reading(P["E_reading"])
-    h += "<h3>F. Viết</h3>" + writing(P["F_writing"])
+    h += "<h3>E. Đọc hiểu</h3>" + reading(P["E_reading"], EZ.get("reading_gloss"))
+    h += "<h3>F. Viết</h3>" + writing(P["F_writing"], tr, EZ.get("writing_starters"))
     G = P.get("G_review")
     if G: h += f'<h3>G. Ôn xoắn ốc</h3><p class="ins">{E(G["instruction_vi"])}</p>' + gaps(G["items"])
+    if tr == "nang": h += plus_section(W)
     h += f'<div class="end">Xong bài giấy: mở web, buổi {d["day"]}, làm <b>Kiểm tra nhanh cuối buổi</b>, rồi chụp bài này gửi chấm (hoặc tự chấm bằng đáp án trên web).</div>'
     return h
 
-def review(d):
-    P = d["paper"]; h = head(d)
+def review(d, tr="chuan", W=None):
+    W = W or {}; EZ = W.get("paper_easy", {}) if tr == "nen" else {}
+    P = d["paper"]; h = head(d, tr)
     names = {"R1_vocab": "R1. Từ vựng", "R2_grammar": "R2. Ngữ pháp", "R3_wordform": "R3. Cấu tạo từ", "R4_exam": "R4. Dạng bài thi chuyên"}
     for k, t in names.items():
-        S = P[k]; h += f'<h3>{t}</h3><p class="ins">{E(S["instruction_vi"])}</p>' + (mcq(S["items"]) if k == "R4_exam" else gaps(S["items"]))
-    h += "<h3>E. Đọc hiểu</h3>" + reading(P["E_reading"])
-    h += "<h3>F. Viết</h3>" + writing(P["F_writing"])
+        S = P[k]; h += f'<h3>{t}</h3><p class="ins">{E(S["instruction_vi"])}</p>' + (mcq(S["items"]) if k == "R4_exam" else gaps(S["items"], EZ.get("hints") if k == "R3_wordform" else None))
+    h += "<h3>E. Đọc hiểu</h3>" + reading(P["E_reading"], EZ.get("reading_gloss"))
+    h += "<h3>F. Viết</h3>" + writing(P["F_writing"], tr, EZ.get("writing_starters"))
+    if tr == "nang": h += plus_section(W)
     h += "<h3>Tự đánh giá</h3><ul class='check'>" + "".join(f"<li>{E(s)}</li>" for s in P.get("self_check_vi", [])) + "</ul>"
     h += f'<div class="end">Xong bài giấy: mở web, buổi {d["day"]}, làm <b>Kiểm tra nhanh cuối buổi</b>' + (", rồi làm <b>Bài kiểm tra sau 2 tuần</b> ở mục Tiến bộ." if d["day"] == 14 else ".") + "</div>"
     return h
 
 FONT = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap">'
 jobs = []
+only = sys.argv[1:]  # ví dụ: python3 gen_pdf.py 1 2
 for n in range(1, 15):
+    if only and str(n) not in only: continue
     d = json.load(open(src / f"content/day{n:02d}.json", encoding="utf-8"))
-    body = review(d) if d["type"] == "review" else normal(d)
-    page = f'<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Buổi {n} · {E(d["theme_vi"])}</title>{FONT}<style>{CSS}</style></head><body>{body}</body></html>'
-    hp = tmp / f"buoi-{n:02d}.html"; hp.write_text(page, encoding="utf-8")
-    jobs.append([str(hp), str(out / f"buoi-{n:02d}.pdf"), f"Buổi {n} · {d['theme_vi']}"])
+    wp = src / f"content/web/day{n:02d}.json"
+    W = json.load(open(wp, encoding="utf-8")) if wp.exists() else {}
+    for tr in ("nen", "chuan", "nang"):
+        body = review(d, tr, W) if d["type"] == "review" else normal(d, tr, W)
+        page = f'<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Buổi {n} · {E(d["theme_vi"])} · {TRACK_NAME[tr]}</title>{FONT}<style>{CSS}</style></head><body>{body}</body></html>'
+        suf = "" if tr == "chuan" else "-" + tr
+        hp = tmp / f"buoi-{n:02d}{suf}.html"; hp.write_text(page, encoding="utf-8")
+        jobs.append([str(hp), str(out / f"buoi-{n:02d}{suf}.pdf"), f"Buổi {n} · {d['theme_vi']} · bản {TRACK_NAME[tr]}"])
 (tmp / "jobs.json").write_text(json.dumps(jobs, ensure_ascii=False), encoding="utf-8")
 r = subprocess.run(["node", str(here / "print.js"), str(tmp / "jobs.json")], cwd=os.environ.get("PW_CWD", str(here)))
 sys.exit(r.returncode)

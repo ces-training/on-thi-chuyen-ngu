@@ -1,71 +1,598 @@
 {
-  "day": 1,
-  "grammar_games": {
-    "sort": {
-      "title_vi": "Xếp mỗi câu vào đúng thì",
-      "groups": [
-        {"name": "Present simple", "items": [
-          "Our school day starts at 7 a.m.",
-          "I usually revise on Sunday evenings.",
-          "Do you know the answer?",
-          "She attends the art club every Friday.",
-          "This old laptop belongs to my dad."
-        ]},
-        {"name": "Present continuous", "items": [
-          "Be quiet! Mai is concentrating on her test.",
-          "We are learning about rivers this month.",
-          "Look! Nam is drawing on the board.",
-          "My English is improving these days.",
-          "Listen! The teacher is explaining the rule."
-        ]}
-      ]
-    },
-    "unjumble": [
-      {"sentence": "My sister is revising for her history test now.", "hint_vi": "Hiện tại tiếp diễn với now"},
-      {"sentence": "Our teacher often gives us a lot of homework.", "hint_vi": "Hiện tại đơn với often"},
-      {"sentence": "I don't understand why this answer is wrong.", "hint_vi": "understand là động từ trạng thái"},
-      {"sentence": "Are you having lunch in the canteen today?", "hint_vi": "Câu hỏi hiện tại tiếp diễn; have lunch là hành động"},
-      {"sentence": "Tuan rarely concentrates when the classroom is noisy.", "hint_vi": "Hiện tại đơn với rarely"}
-    ],
-    "truefalse": [
-      {"s": "I am knowing all the students in my class.", "ok": false, "fix": "I know all the students in my class.", "why_vi": "know là động từ trạng thái, không chia -ing."},
-      {"s": "Look! The teacher is coming into the room.", "ok": true, "fix": "Look! The teacher is coming into the room.", "why_vi": "'Look!' báo hiệu việc đang xảy ra lúc nói → hiện tại tiếp diễn."},
-      {"s": "My brother go to the library every Sunday.", "ok": false, "fix": "My brother goes to the library every Sunday.", "why_vi": "Thói quen → hiện tại đơn; chủ ngữ số ít nên go → goes."},
-      {"s": "We are studying a new topic in science this week.", "ok": true, "fix": "We are studying a new topic in science this week.", "why_vi": "'this week' chỉ việc tạm thời quanh hiện tại → hiện tại tiếp diễn."},
-      {"s": "She is wanting to join the English club.", "ok": false, "fix": "She wants to join the English club.", "why_vi": "want là động từ trạng thái, không chia -ing."},
-      {"s": "The school bus leaves at 6.45 every morning.", "ok": true, "fix": "The school bus leaves at 6.45 every morning.", "why_vi": "Lịch trình cố định, lặp lại mỗi sáng → hiện tại đơn."},
-      {"s": "Listen! Somebody sings in the next room.", "ok": false, "fix": "Listen! Somebody is singing in the next room.", "why_vi": "'Listen!' cho biết việc đang diễn ra ngay lúc nói → hiện tại tiếp diễn."},
-      {"s": "I think this exercise is too difficult for us.", "ok": true, "fix": "I think this exercise is too difficult for us.", "why_vi": "think = cho rằng (nêu ý kiến) → dùng hiện tại đơn."}
-    ]
-  },
-  "exam": [
+ "day": 1,
+ "grammar_games": {
+  "sort": {
+   "title_vi": "Xếp mỗi câu vào đúng thì",
+   "groups": [
     {
-      "format": "sentence_completion",
-      "title_vi": "Hoàn thành câu",
-      "intro_vi": "Đề Chuyên Ngoại ngữ có 10 câu hoàn thành câu (chọn A, B, C hoặc D). Đề Sở chuyên Anh cũng có dạng này trong phần kiến thức ngôn ngữ. Hôm nay em làm 5 câu.",
-      "tip_vi": "Đọc hết câu trước khi chọn. Tìm từ dấu hiệu (now, every day, Look!) và giới từ đi sau chỗ trống.",
-      "kind": "mcq",
-      "items": [
-        {"q": "I can't concentrate because my neighbours ______ a party right now.", "options": ["have", "are having", "has", "had"], "answer": 1, "explain_vi": "'right now' → hiện tại tiếp diễn. have a party (tổ chức tiệc) là hành động nên chia -ing được."},
-        {"q": "My grandfather has a wide ______ of Vietnamese history, so he can answer almost any question.", "options": ["knowledge", "curriculum", "assignment", "attendance"], "answer": 0, "explain_vi": "a wide knowledge of sth = hiểu biết rộng về điều gì."},
-        {"q": "Two players ______ of the school volleyball team after they moved to another city.", "options": ["dropped out", "caught up", "took up", "got on"], "answer": 0, "explain_vi": "drop out of sth = rời bỏ (đội, câu lạc bộ). Chỉ 'dropped out' đi được với 'of'."},
-        {"q": "This dictionary ______ to my sister, so please ask her before you use it.", "options": ["belongs", "is belonging", "belong", "are belonging"], "answer": 0, "explain_vi": "belong là động từ trạng thái, không chia -ing; chủ ngữ số ít → belongs."},
-        {"q": "What ______ of the new school uniform? Do you like it?", "options": ["do you think", "are you thinking", "you think", "think you"], "answer": 0, "explain_vi": "Hỏi ý kiến (think = cho rằng) → hiện tại đơn: What do you think of…?"}
-      ]
+     "name": "Present simple",
+     "items": [
+      "Our school day starts at 7 a.m.",
+      "I usually revise on Sunday evenings.",
+      "Do you know the answer?",
+      "She attends the art club every Friday.",
+      "This old laptop belongs to my dad."
+     ]
     },
     {
-      "format": "pronunciation",
-      "title_vi": "Phát âm đuôi -s/-es",
-      "intro_vi": "Đề chung vào lớp 10 thường mở đầu bằng câu ngữ âm: chọn từ có phần gạch chân phát âm khác. Đuôi -s/-es là chủ điểm rất hay gặp. Hôm nay em làm 5 câu.",
-      "tip_vi": "Nhìn âm CUỐI của từ gốc: /s, z, ʃ, tʃ, dʒ/ → /ɪz/; /p, t, k, f, θ/ → /s/; các âm còn lại → /z/.",
-      "kind": "mcq",
-      "items": [
-        {"q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.", "options": ["revis[[es]]", "attend[[s]]", "improv[[es]]", "learn[[s]]"], "answer": 0, "explain_vi": "revise tận cùng bằng âm /z/ nên revises đọc /ɪz/; ba từ kia đọc /z/."},
-        {"q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.", "options": ["test[[s]]", "book[[s]]", "lesson[[s]]", "student[[s]]"], "answer": 2, "explain_vi": "lesson tận cùng bằng /n/ (âm hữu thanh) nên lessons đọc /z/; tests, books, students đọc /s/."},
-        {"q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.", "options": ["class[[es]]", "watch[[es]]", "box[[es]]", "go[[es]]"], "answer": 3, "explain_vi": "goes đọc /z/; classes, watches, boxes đọc /ɪz/ vì tận cùng bằng s, ch, x."},
-        {"q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.", "options": ["chang[[es]]", "sentenc[[es]]", "encourag[[es]]", "laugh[[s]]"], "answer": 3, "explain_vi": "laugh tận cùng bằng âm /f/ (viết là gh) nên laughs đọc /s/; ba từ kia tận cùng ge, ce nên đọc /ɪz/."},
-        {"q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.", "options": ["subject[[s]]", "assignment[[s]]", "club[[s]]", "month[[s]]"], "answer": 2, "explain_vi": "club tận cùng bằng /b/ (hữu thanh) nên clubs đọc /z/; subjects, assignments, months đọc /s/."}
-      ]
+     "name": "Present continuous",
+     "items": [
+      "Be quiet! Mai is concentrating on her test.",
+      "We are learning about rivers this month.",
+      "Look! Nam is drawing on the board.",
+      "My English is improving these days.",
+      "Listen! The teacher is explaining the rule."
+     ]
     }
+   ]
+  },
+  "unjumble": [
+   {
+    "sentence": "My sister is revising for her history test now.",
+    "hint_vi": "Hiện tại tiếp diễn với now"
+   },
+   {
+    "sentence": "Our teacher often gives us a lot of homework.",
+    "hint_vi": "Hiện tại đơn với often"
+   },
+   {
+    "sentence": "I don't understand why this answer is wrong.",
+    "hint_vi": "understand là động từ trạng thái"
+   },
+   {
+    "sentence": "Are you having lunch in the canteen today?",
+    "hint_vi": "Câu hỏi hiện tại tiếp diễn; have lunch là hành động"
+   },
+   {
+    "sentence": "Tuan rarely concentrates when the classroom is noisy.",
+    "hint_vi": "Hiện tại đơn với rarely"
+   }
+  ],
+  "truefalse": [
+   {
+    "s": "I am knowing all the students in my class.",
+    "ok": false,
+    "fix": "I know all the students in my class.",
+    "why_vi": "know là động từ trạng thái, không chia -ing."
+   },
+   {
+    "s": "Look! The teacher is coming into the room.",
+    "ok": true,
+    "fix": "Look! The teacher is coming into the room.",
+    "why_vi": "'Look!' báo hiệu việc đang xảy ra lúc nói → hiện tại tiếp diễn."
+   },
+   {
+    "s": "My brother go to the library every Sunday.",
+    "ok": false,
+    "fix": "My brother goes to the library every Sunday.",
+    "why_vi": "Thói quen → hiện tại đơn; chủ ngữ số ít nên go → goes."
+   },
+   {
+    "s": "We are studying a new topic in science this week.",
+    "ok": true,
+    "fix": "We are studying a new topic in science this week.",
+    "why_vi": "'this week' chỉ việc tạm thời quanh hiện tại → hiện tại tiếp diễn."
+   },
+   {
+    "s": "She is wanting to join the English club.",
+    "ok": false,
+    "fix": "She wants to join the English club.",
+    "why_vi": "want là động từ trạng thái, không chia -ing."
+   },
+   {
+    "s": "The school bus leaves at 6.45 every morning.",
+    "ok": true,
+    "fix": "The school bus leaves at 6.45 every morning.",
+    "why_vi": "Lịch trình cố định, lặp lại mỗi sáng → hiện tại đơn."
+   },
+   {
+    "s": "Listen! Somebody sings in the next room.",
+    "ok": false,
+    "fix": "Listen! Somebody is singing in the next room.",
+    "why_vi": "'Listen!' cho biết việc đang diễn ra ngay lúc nói → hiện tại tiếp diễn."
+   },
+   {
+    "s": "I think this exercise is too difficult for us.",
+    "ok": true,
+    "fix": "I think this exercise is too difficult for us.",
+    "why_vi": "think = cho rằng (nêu ý kiến) → dùng hiện tại đơn."
+   }
   ]
+ },
+ "exam": [
+  {
+   "format": "sentence_completion",
+   "title_vi": "Hoàn thành câu",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 10 câu hoàn thành câu (chọn A, B, C hoặc D). Đề Sở chuyên Anh cũng có dạng này trong phần kiến thức ngôn ngữ. Hôm nay em làm 5 câu.",
+   "tip_vi": "Đọc hết câu trước khi chọn. Tìm từ dấu hiệu (now, every day, Look!) và giới từ đi sau chỗ trống.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "I can't concentrate because my neighbours ______ a party right now.",
+     "options": [
+      "have",
+      "are having",
+      "has",
+      "had"
+     ],
+     "answer": 1,
+     "explain_vi": "'right now' → hiện tại tiếp diễn. have a party (tổ chức tiệc) là hành động nên chia -ing được."
+    },
+    {
+     "q": "My grandfather has a wide ______ of Vietnamese history, so he can answer almost any question.",
+     "options": [
+      "knowledge",
+      "curriculum",
+      "assignment",
+      "attendance"
+     ],
+     "answer": 0,
+     "explain_vi": "a wide knowledge of sth = hiểu biết rộng về điều gì."
+    },
+    {
+     "q": "Two players ______ of the school volleyball team after they moved to another city.",
+     "options": [
+      "dropped out",
+      "caught up",
+      "took up",
+      "got on"
+     ],
+     "answer": 0,
+     "explain_vi": "drop out of sth = rời bỏ (đội, câu lạc bộ). Chỉ 'dropped out' đi được với 'of'."
+    },
+    {
+     "q": "This dictionary ______ to my sister, so please ask her before you use it.",
+     "options": [
+      "belongs",
+      "is belonging",
+      "belong",
+      "are belonging"
+     ],
+     "answer": 0,
+     "explain_vi": "belong là động từ trạng thái, không chia -ing; chủ ngữ số ít → belongs."
+    },
+    {
+     "q": "What ______ of the new school uniform? Do you like it?",
+     "options": [
+      "do you think",
+      "are you thinking",
+      "you think",
+      "think you"
+     ],
+     "answer": 0,
+     "explain_vi": "Hỏi ý kiến (think = cho rằng) → hiện tại đơn: What do you think of…?"
+    }
+   ]
+  },
+  {
+   "format": "pronunciation",
+   "title_vi": "Phát âm đuôi -s/-es",
+   "intro_vi": "Đề chung vào lớp 10 thường mở đầu bằng câu ngữ âm: chọn từ có phần gạch chân phát âm khác. Đuôi -s/-es là chủ điểm rất hay gặp. Hôm nay em làm 5 câu.",
+   "tip_vi": "Nhìn âm CUỐI của từ gốc: /s, z, ʃ, tʃ, dʒ/ → /ɪz/; /p, t, k, f, θ/ → /s/; các âm còn lại → /z/.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "revis[[es]]",
+      "attend[[s]]",
+      "improv[[es]]",
+      "learn[[s]]"
+     ],
+     "answer": 0,
+     "explain_vi": "revise tận cùng bằng âm /z/ nên revises đọc /ɪz/; ba từ kia đọc /z/."
+    },
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "test[[s]]",
+      "book[[s]]",
+      "lesson[[s]]",
+      "student[[s]]"
+     ],
+     "answer": 2,
+     "explain_vi": "lesson tận cùng bằng /n/ (âm hữu thanh) nên lessons đọc /z/; tests, books, students đọc /s/."
+    },
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "class[[es]]",
+      "watch[[es]]",
+      "box[[es]]",
+      "go[[es]]"
+     ],
+     "answer": 3,
+     "explain_vi": "goes đọc /z/; classes, watches, boxes đọc /ɪz/ vì tận cùng bằng s, ch, x."
+    },
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "chang[[es]]",
+      "sentenc[[es]]",
+      "encourag[[es]]",
+      "laugh[[s]]"
+     ],
+     "answer": 3,
+     "explain_vi": "laugh tận cùng bằng âm /f/ (viết là gh) nên laughs đọc /s/; ba từ kia tận cùng ge, ce nên đọc /ɪz/."
+    },
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "subject[[s]]",
+      "assignment[[s]]",
+      "club[[s]]",
+      "month[[s]]"
+     ],
+     "answer": 2,
+     "explain_vi": "club tận cùng bằng /b/ (hữu thanh) nên clubs đọc /z/; subjects, assignments, months đọc /s/."
+    }
+   ]
+  }
+ ],
+ "exam_easy": [
+  {
+   "format": "sentence_completion",
+   "title_vi": "Hoàn thành câu",
+   "intro_vi": "Dạng hoàn thành câu: mỗi câu có một chỗ trống và 4 đáp án A, B, C, D. Em chọn MỘT đáp án đúng. Đề Chuyên Ngoại ngữ có 10 câu dạng này. Hôm nay em làm 5 câu ngắn.",
+   "tip_vi": "Đọc cả câu, tìm từ dấu hiệu như now, Look!, every day, on Mondays. Thử đặt từng đáp án vào chỗ trống rồi đọc lại cả câu.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "Look! Our teacher ______ into the classroom.",
+     "options": [
+      "comes",
+      "is coming",
+      "come",
+      "came"
+     ],
+     "answer": 1,
+     "explain_vi": "'Look!' cho biết việc đang xảy ra ngay lúc nói → hiện tại tiếp diễn: is coming. 'came' là quá khứ, không hợp với Look!"
+    },
+    {
+     "q": "We ______ English on Mondays and Thursdays.",
+     "options": [
+      "have",
+      "are having",
+      "having",
+      "has"
+     ],
+     "answer": 0,
+     "explain_vi": "Lịch học lặp lại mỗi tuần (on Mondays and Thursdays) → hiện tại đơn. Chủ ngữ We nên dùng have, không thêm -s."
+    },
+    {
+     "q": "I ______ this word. What does it mean?",
+     "options": [
+      "am not knowing",
+      "not know",
+      "don't know",
+      "doesn't know"
+     ],
+     "answer": 2,
+     "explain_vi": "know là động từ trạng thái, không chia -ing. Chủ ngữ I nên dùng don't know (doesn't chỉ dùng với he, she, it)."
+    },
+    {
+     "q": "I read English stories every day to ______ my English.",
+     "options": [
+      "concentrate",
+      "improve",
+      "attend",
+      "belong"
+     ],
+     "answer": 1,
+     "explain_vi": "improve my English = làm tiếng Anh của mình tốt hơn. concentrate cần 'on'; attend là 'tham dự'; belong là 'thuộc về'."
+    },
+    {
+     "q": "My cousin is 15. She ______ Chu Van An High School.",
+     "options": [
+      "learns",
+      "studies",
+      "goes",
+      "attends"
+     ],
+     "answer": 3,
+     "explain_vi": "attend + tên trường = đi học ở trường đó. 'goes' phải có 'to' (goes to); learns, studies không đi thẳng với tên trường."
+    }
+   ]
+  },
+  {
+   "format": "pronunciation",
+   "title_vi": "Phát âm đuôi -s/-es",
+   "intro_vi": "Dạng phát âm: em chọn từ có phần gạch chân đọc KHÁC ba từ còn lại. Hôm nay là đuôi -s/-es, có 3 cách đọc: /s/, /z/ và /ɪz/. Đề chung vào lớp 10 hay có câu này.",
+   "tip_vi": "Đọc to từ gốc, nghe âm cuối: s, x, sh, ch → /ɪz/; p, t, k, f → /s/; các âm còn lại → /z/.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "cat[[s]]",
+      "dog[[s]]",
+      "pen[[s]]",
+      "bag[[s]]"
+     ],
+     "answer": 0,
+     "explain_vi": "cat tận cùng bằng âm /t/ (vô thanh) nên cats đọc /s/. dogs, pens, bags tận cùng bằng âm hữu thanh nên đọc /z/."
+    },
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "bus[[es]]",
+      "play[[s]]",
+      "dish[[es]]",
+      "match[[es]]"
+     ],
+     "answer": 1,
+     "explain_vi": "buses, dishes, matches tận cùng bằng s, sh, ch nên đuôi đọc /ɪz/ (thêm một âm tiết). plays chỉ đọc /z/."
+    },
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "desk[[s]]",
+      "map[[s]]",
+      "chair[[s]]",
+      "cup[[s]]"
+     ],
+     "answer": 2,
+     "explain_vi": "desks, maps, cups tận cùng bằng /k/, /p/ nên đọc /s/. chair tận cùng bằng nguyên âm nên chairs đọc /z/."
+    },
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "read[[s]]",
+      "wash[[es]]",
+      "swim[[s]]",
+      "sing[[s]]"
+     ],
+     "answer": 1,
+     "explain_vi": "wash tận cùng bằng sh /ʃ/ nên washes đọc /ɪz/. reads, swims, sings đọc /z/."
+    },
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "help[[s]]",
+      "like[[s]]",
+      "run[[s]]",
+      "get[[s]]"
+     ],
+     "answer": 2,
+     "explain_vi": "run tận cùng bằng /n/ (hữu thanh) nên runs đọc /z/. helps, likes, gets tận cùng bằng /p/, /k/, /t/ nên đọc /s/."
+    }
+   ]
+  }
+ ],
+ "exam_plus": [
+  {
+   "format": "sentence_completion",
+   "title_vi": "Hoàn thành câu",
+   "intro_vi": "Trong 10 câu hoàn thành câu của đề Chuyên Ngoại ngữ luôn có vài câu phân loại: 4 đáp án đều 'nghe quen', khác nhau ở cụm từ cố định hoặc nghĩa của động từ trạng thái. Hôm nay em làm 5 câu như vậy.",
+   "tip_vi": "Đừng chọn vì 'nghe quen'. Kiểm tra từ đi kèm (giới từ, tân ngữ) và nghĩa cả câu; với see, think, have hãy xác định đó là nghĩa trạng thái hay hành động.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "I ______ what you mean, but I still don't think the new rule is fair.",
+     "options": [
+      "see",
+      "am seeing",
+      "have been seeing",
+      "was seeing"
+     ],
+     "answer": 0,
+     "explain_vi": "see ở đây nghĩa là 'hiểu' (I see what you mean) – nghĩa trạng thái nên không chia tiếp diễn."
+    },
+    {
+     "q": "At the moment, my friends and I ______ of setting up a study group for the final exams.",
+     "options": [
+      "think",
+      "are thinking",
+      "have thought",
+      "thought"
+     ],
+     "answer": 1,
+     "explain_vi": "think of + V-ing = đang cân nhắc → nghĩa hành động nên chia -ing được; 'At the moment' → hiện tại tiếp diễn."
+    },
+    {
+     "q": "Students who don't ______ attention in class often struggle to keep up later.",
+     "options": [
+      "give",
+      "take",
+      "pay",
+      "draw"
+     ],
+     "answer": 2,
+     "explain_vi": "Cụm cố định: pay attention (to) = chú ý. give, take không đi với attention theo nghĩa này; draw attention = thu hút sự chú ý."
+    },
+    {
+     "q": "Because of money problems, a few students ______ before they reached grade 9.",
+     "options": [
+      "turned out",
+      "gave in",
+      "broke down",
+      "dropped out"
+     ],
+     "answer": 3,
+     "explain_vi": "drop out = bỏ học giữa chừng. turned out = hoá ra, gave in = chịu thua, broke down = hỏng hoặc suy sụp."
+    },
+    {
+     "q": "My grandfather is extremely ______ about birds and plants, so we often ask him questions on our walks.",
+     "options": [
+      "known",
+      "knowledgeable",
+      "knowing",
+      "acknowledged"
+     ],
+     "answer": 1,
+     "explain_vi": "knowledgeable about sth = hiểu biết nhiều về. known (được biết đến), knowing (ra vẻ biết), acknowledged (được công nhận) sai nghĩa."
+    }
+   ]
+  },
+  {
+   "format": "pronunciation",
+   "title_vi": "Phát âm đuôi -s/-es",
+   "intro_vi": "Câu phát âm khó trong đề thường đánh bẫy bằng chính tả: chữ cái cuối khác với âm cuối (ph, gh, que, e câm, f → ves). Hôm nay em làm 5 câu như vậy.",
+   "tip_vi": "Đừng nhìn chữ cái cuối mà nghĩ ÂM cuối: paragraph tận cùng /f/, weigh tận cùng nguyên âm, breathe tận cùng /ð/.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "paragraph[[s]]",
+      "technique[[s]]",
+      "attempt[[s]]",
+      "achieve[[s]]"
+     ],
+     "answer": 3,
+     "explain_vi": "achieve tận cùng bằng /v/ (hữu thanh) nên achieves đọc /z/. paragraphs (ph = /f/), techniques (que = /k/), attempts đọc /s/."
+    },
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "bridg[[es]]",
+      "practis[[es]]",
+      "breath[[es]]",
+      "relax[[es]]"
+     ],
+     "answer": 2,
+     "explain_vi": "breathe tận cùng bằng /ð/, chữ e câm, nên breathes chỉ đọc /z/. bridges, practises, relaxes đọc /ɪz/."
+    },
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "chef[[s]]",
+      "shelv[[es]]",
+      "belief[[s]]",
+      "cliff[[s]]"
+     ],
+     "answer": 1,
+     "explain_vi": "shelf → shelves: f đổi thành v (hữu thanh) nên đuôi đọc /z/. chefs, beliefs, cliffs vẫn tận cùng /f/ nên đọc /s/."
+    },
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "cough[[s]]",
+      "graph[[s]]",
+      "weigh[[s]]",
+      "photograph[[s]]"
+     ],
+     "answer": 2,
+     "explain_vi": "weigh có gh câm, tận cùng bằng nguyên âm /eɪ/ nên weighs đọc /z/. coughs, graphs, photographs: gh, ph đọc /f/ nên đuôi là /s/."
+    },
+    {
+     "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
+     "options": [
+      "advis[[es]]",
+      "argu[[es]]",
+      "continu[[es]]",
+      "rescu[[es]]"
+     ],
+     "answer": 0,
+     "explain_vi": "advise tận cùng bằng /z/ nên advises đọc /ɪz/. argues, continues, rescues tận cùng nguyên âm /uː/ nên chỉ đọc /z/."
+    }
+   ]
+  }
+ ],
+ "paper_plus": {
+  "title_vi": "H. Thử thách nâng cao",
+  "instruction_vi": "Thử thách dành cho học sinh mức Nâng cao. Câu 1–2: viết dạng đúng của từ in hoa (có thể phải đổi 2 lần hoặc thêm tiền tố). Câu 3–4: viết tiếp câu sau sao cho nghĩa không đổi. Câu 5–6: chọn A, B, C hoặc D.",
+  "items": [
+   {
+    "id": "d1H1",
+    "q": "Many students found the news that the entrance exam would be harder very ______. (COURAGE)",
+    "answer": "discouraging",
+    "accept": []
+   },
+   {
+    "id": "d1H2",
+    "q": "Visiting the science museum was a highly ______ experience for the whole class. (EDUCATE)",
+    "answer": "educational",
+    "accept": []
+   },
+   {
+    "id": "d1H3",
+    "q": "I find it hard to concentrate when the room is noisy. → I have difficulty ______",
+    "answer": "concentrating when the room is noisy",
+    "accept": [
+     "in concentrating when the room is noisy"
+    ]
+   },
+   {
+    "id": "d1H4",
+    "q": "What's your opinion of the new curriculum? → What do you ______?",
+    "answer": "think of the new curriculum",
+    "accept": [
+     "think about the new curriculum"
+    ]
+   },
+   {
+    "id": "d1H5",
+    "q": "Our teacher encourages us to ______ our own ideas for projects instead of copying from the Internet.",
+    "options": [
+     "catch up with",
+     "put up with",
+     "come up with",
+     "keep up with"
+    ],
+    "answer": "C",
+    "accept": []
+   },
+   {
+    "id": "d1H6",
+    "q": "We had to learn the whole poem ______ for the speaking test.",
+    "options": [
+     "in mind",
+     "by heart",
+     "at heart",
+     "with heart"
+    ],
+    "answer": "B",
+    "accept": []
+   }
+  ]
+ },
+ "paper_easy": {
+  "hints": {
+   "d1C1": "danh từ (sau 'the clear')",
+   "d1C2": "danh từ (sau 'a big')",
+   "d1C3": "danh từ không đếm được",
+   "d1C4": "danh từ (sau 'words of')"
+  },
+  "reading_gloss": [
+   [
+    "instead of",
+    "thay vì"
+   ],
+   [
+    "memorising",
+    "học thuộc lòng"
+   ],
+   [
+    "model",
+    "mô hình"
+   ],
+   [
+    "engineer",
+    "kỹ sư"
+   ],
+   [
+    "present",
+    "trình bày (dự án)"
+   ],
+   [
+    "method",
+    "phương pháp"
+   ],
+   [
+    "shy",
+    "nhút nhát"
+   ],
+   [
+    "rarely",
+    "hiếm khi"
+   ]
+  ],
+  "writing_starters": [
+   "Every day, I usually …",
+   "My favourite subject is … because …",
+   "This week, I am …",
+   "At the moment, I am learning …"
+  ]
+ }
 }

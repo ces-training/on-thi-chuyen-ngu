@@ -1,123 +1,649 @@
 {
-  "day": 12,
-  "grammar_games": {
-    "sort": {
-      "title_vi": "Khi tường thuật (said…), mỗi câu nói lùi sang thì nào?",
-      "groups": [
-        {"name": "Past simple (liked, was…)", "items": ["'I like chemistry.'", "'My brother is a scientist.'", "'We don't have any evidence.'"]},
-        {"name": "Past continuous (was doing)", "items": ["'I am writing a report.'", "'They are carrying out tests.'", "'We are waiting for the results.'"]},
-        {"name": "Past perfect (had done)", "items": ["'I have lost my notebook.'", "'She discovered a new star.'", "'We have finished the experiment.'"]}
-      ]
-    },
-    "unjumble": [
-      {"sentence": "She told me that she had finished her homework.", "hint_vi": "tell + người nghe + that; lùi thì sang quá khứ hoàn thành"},
-      {"sentence": "The scientist said that the results were very surprising.", "hint_vi": "said + that; are → were"},
-      {"sentence": "Nam told us that he would come up with a plan.", "hint_vi": "will → would; told + us"},
-      {"sentence": "My teacher said she was proud of our research.", "hint_vi": "said (không có người nghe); có thể bỏ that"},
-      {"sentence": "They said they could not find any evidence.", "hint_vi": "can't → could not"}
-    ],
-    "truefalse": [
-      {"s": "Minh said me that he had a new laptop.", "ok": false, "fix": "Minh told me that he had a new laptop.", "why_vi": "say không đi thẳng với người nghe. Có 'me' thì dùng told me (hoặc said to me)."},
-      {"s": "The teacher told us that the lab was closed.", "ok": true, "fix": "The teacher told us that the lab was closed.", "why_vi": "tell + người nghe (us) + that + mệnh đề đã lùi thì (was): đúng."},
-      {"s": "Hoa said that she will visit the museum the following day.", "ok": false, "fix": "Hoa said that she would visit the museum the following day.", "why_vi": "Câu tường thuật đã lùi thời gian (the following day) nên will → would."},
-      {"s": "Dr Phong said that he had discovered a new kind of plant.", "ok": true, "fix": "Dr Phong said that he had discovered a new kind of plant.", "why_vi": "Lời gốc dùng quá khứ đơn (discovered) hoặc hiện tại hoàn thành → lùi thành had discovered."},
-      {"s": "My brother told that he was doing an experiment.", "ok": false, "fix": "My brother said that he was doing an experiment.", "why_vi": "tell phải có người nghe (told me/us…). Không có người nghe thì dùng said."},
-      {"s": "They said that they were working in the laboratory then.", "ok": true, "fix": "They said that they were working in the laboratory then.", "why_vi": "are working → were working; now → then. Câu đúng."},
-      {"s": "'I love physics,' said Nam. → Nam said that I loved physics.", "ok": false, "fix": "'I love physics,' said Nam. → Nam said that he loved physics.", "why_vi": "Phải đổi đại từ theo người nói: Nam nói 'I' → he."},
-      {"s": "'I will call you tomorrow,' Linh told me. → Linh told me that she would call me the next day.", "ok": true, "fix": "'I will call you tomorrow,' Linh told me. → Linh told me that she would call me the next day.", "why_vi": "will → would; I → she; you → me; tomorrow → the next day. Đủ cả 4 thay đổi."}
-    ]
-  },
-  "exam": [
+ "day": 12,
+ "grammar_games": {
+  "sort": {
+   "title_vi": "Khi tường thuật (said…), mỗi câu nói lùi sang thì nào?",
+   "groups": [
     {
-      "format": "transformation",
-      "title_vi": "Viết lại câu (câu tường thuật)",
-      "intro_vi": "Phần Viết của đề chuyên Anh Sở Hà Nội có bài viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn. Chuyển sang câu tường thuật là dạng rất hay gặp.",
-      "tip_vi": "Mẹo: kiểm tra đủ 4 việc: lùi thì, đổi đại từ (I → he/she), đổi trạng từ thời gian (tomorrow → the next day), dùng đúng say/tell.",
-      "kind": "transform",
-      "items": [
-        {
-          "q": "'I am reading a book about famous inventors,' said Khang.",
-          "start": "Khang said",
-          "answer": "that he was reading a book about famous inventors",
-          "accept": ["he was reading a book about famous inventors"],
-          "explain_vi": "am reading → was reading; I → he. Có thể bỏ 'that'."
-        },
-        {
-          "q": "'We will carry out the experiment next week,' the students said.",
-          "start": "The students said",
-          "answer": "that they would carry out the experiment the following week",
-          "accept": [
-            "they would carry out the experiment the following week",
-            "that they'd carry out the experiment the following week",
-            "they'd carry out the experiment the following week",
-            "that they would carry out the experiment the next week",
-            "they would carry out the experiment the next week",
-            "that they'd carry out the experiment the next week",
-            "they'd carry out the experiment the next week"
-          ],
-          "explain_vi": "will → would; we → they; next week → the following week (hoặc the next week)."
-        },
-        {
-          "q": "'I can't come to the science fair,' Ngọc told her teacher.",
-          "start": "Ngọc told her teacher",
-          "answer": "that she couldn't come to the science fair",
-          "accept": [
-            "that she could not come to the science fair",
-            "she couldn't come to the science fair",
-            "she could not come to the science fair",
-            "that she couldn't go to the science fair",
-            "that she could not go to the science fair",
-            "she couldn't go to the science fair",
-            "she could not go to the science fair"
-          ],
-          "explain_vi": "can't → couldn't; I → she. Đã có người nghe (her teacher) nên dùng told."
-        },
-        {
-          "q": "'I have analysed the water samples,' said Dr Lan.",
-          "start": "Dr Lan said",
-          "answer": "that she had analysed the water samples",
-          "accept": [
-            "she had analysed the water samples",
-            "that she'd analysed the water samples",
-            "she'd analysed the water samples",
-            "that she had analyzed the water samples",
-            "she had analyzed the water samples",
-            "that she'd analyzed the water samples",
-            "she'd analyzed the water samples"
-          ],
-          "explain_vi": "Hiện tại hoàn thành (have analysed) → quá khứ hoàn thành (had analysed); I → she."
-        },
-        {
-          "q": "'I found this old coin in my garden yesterday,' Grandpa said to me.",
-          "start": "Grandpa told me",
-          "answer": "that he had found that old coin in his garden the day before",
-          "accept": [
-            "he had found that old coin in his garden the day before",
-            "that he'd found that old coin in his garden the day before",
-            "he'd found that old coin in his garden the day before",
-            "that he had found that old coin in his garden the previous day",
-            "he had found that old coin in his garden the previous day",
-            "that he'd found that old coin in his garden the previous day",
-            "he'd found that old coin in his garden the previous day"
-          ],
-          "explain_vi": "found → had found; I/my → he/his; this → that; yesterday → the day before (the previous day)."
-        }
-      ]
+     "name": "Past simple (liked, was…)",
+     "items": [
+      "'I like chemistry.'",
+      "'My brother is a scientist.'",
+      "'We don't have any evidence.'"
+     ]
     },
     {
-      "format": "reading_mcq",
-      "title_vi": "Đọc hiểu",
-      "intro_vi": "Đề chuyên có bài đọc hiểu chọn A, B, C, D: đề Chuyên Ngoại ngữ có 8 câu, đề Sở có phần Đọc 25 câu gồm nhiều bài. Hôm nay em làm bản rút gọn: 1 bài đọc, 5 câu.",
-      "tip_vi": "Mẹo: đọc câu hỏi trước, gạch từ khoá rồi tìm đoạn chứa thông tin. Đáp án đúng thường nói lại bằng từ khác, ít khi chép nguyên văn.",
-      "kind": "mcq",
-      "passage": "Đức is thirteen and lives with his grandmother in a small town in Thanh Hoá. A few years ago, his grandmother's eyes became weak, and she often walked into tables and doors. One evening, after she fell and hurt her knee, Đức decided that he had to do something to help her.\n\nHe came up with the idea of a walking stick which could 'see' for her. With some help from his science teacher, he fixed a small sensor to the bottom of an old stick. When the stick came close to something, it made a loud beep. However, his first experiment did not go well. The stick beeped at everything, even at a sleeping cat or a leaf on the floor. Đức felt like giving up, but his teacher told him that every inventor made mistakes before a breakthrough.\n\nFor the next two months, Đức carried out more tests in the school laboratory and changed the sensor many times. Then his grandmother told him that the beeping embarrassed her when she went to the market. So Đức made the stick vibrate gently in her hand instead.\n\nLast spring, his invention won second prize at a science fair for students in his province. Now his grandmother walks to the market on her own every morning. Đức says that his next goal is to make the stick cheap enough for every elderly person in his town.",
-      "items": [
-        {"q": "Why did Đức decide to make the walking stick?", "options": ["His teacher asked him to do a science project.", "He wanted to win a prize at the science fair.", "His grandmother often walked into things and got hurt.", "His grandmother wanted to go to the market more often."], "answer": 2, "explain_vi": "Đoạn 1: bà mắt kém, hay va vào bàn, cửa và bị ngã đau đầu gối, nên Đức quyết định giúp bà."},
-        {"q": "What was the problem with the first stick?", "options": ["It was too heavy for his grandmother.", "It beeped even at very small things.", "It broke after the first test.", "It was too expensive to make."], "answer": 1, "explain_vi": "Đoạn 2: 'The stick beeped at everything, even at a sleeping cat or a leaf' – kêu cả với vật rất nhỏ."},
-        {"q": "What did Đức's teacher tell him when the first experiment failed?", "options": ["Every inventor makes mistakes before a big success.", "He should stop working on the stick.", "The sensor was too expensive to buy.", "He needed a bigger laboratory."], "answer": 0, "explain_vi": "Câu tường thuật: 'his teacher told him that every inventor made mistakes before a breakthrough'. breakthrough ≈ big success."},
-        {"q": "Why did Đức make the stick vibrate instead of beeping?", "options": ["The beep was too quiet to hear in the market.", "The vibrating stick was cheaper to make.", "His teacher said that vibration was safer.", "His grandmother felt embarrassed by the noise."], "answer": 3, "explain_vi": "Đoạn 3: bà nói tiếng bíp làm bà ngại (embarrassed) khi đi chợ, nên Đức đổi sang rung."},
-        {"q": "What is the passage mainly about?", "options": ["How to look after elderly people with weak eyes", "A boy who invented something to help his grandmother", "A science fair for students in Thanh Hoá", "Why sensors are useful in modern life"], "answer": 1, "explain_vi": "Cả bài kể về Đức và chiếc gậy cậu sáng chế cho bà. Các đáp án khác chỉ là chi tiết nhỏ hoặc không có trong bài."}
-      ]
+     "name": "Past continuous (was doing)",
+     "items": [
+      "'I am writing a report.'",
+      "'They are carrying out tests.'",
+      "'We are waiting for the results.'"
+     ]
+    },
+    {
+     "name": "Past perfect (had done)",
+     "items": [
+      "'I have lost my notebook.'",
+      "'She discovered a new star.'",
+      "'We have finished the experiment.'"
+     ]
     }
+   ]
+  },
+  "unjumble": [
+   {
+    "sentence": "She told me that she had finished her homework.",
+    "hint_vi": "tell + người nghe + that; lùi thì sang quá khứ hoàn thành"
+   },
+   {
+    "sentence": "The scientist said that the results were very surprising.",
+    "hint_vi": "said + that; are → were"
+   },
+   {
+    "sentence": "Nam told us that he would come up with a plan.",
+    "hint_vi": "will → would; told + us"
+   },
+   {
+    "sentence": "My teacher said she was proud of our research.",
+    "hint_vi": "said (không có người nghe); có thể bỏ that"
+   },
+   {
+    "sentence": "They said they could not find any evidence.",
+    "hint_vi": "can't → could not"
+   }
+  ],
+  "truefalse": [
+   {
+    "s": "Minh said me that he had a new laptop.",
+    "ok": false,
+    "fix": "Minh told me that he had a new laptop.",
+    "why_vi": "say không đi thẳng với người nghe. Có 'me' thì dùng told me (hoặc said to me)."
+   },
+   {
+    "s": "The teacher told us that the lab was closed.",
+    "ok": true,
+    "fix": "The teacher told us that the lab was closed.",
+    "why_vi": "tell + người nghe (us) + that + mệnh đề đã lùi thì (was): đúng."
+   },
+   {
+    "s": "Hoa said that she will visit the museum the following day.",
+    "ok": false,
+    "fix": "Hoa said that she would visit the museum the following day.",
+    "why_vi": "Câu tường thuật đã lùi thời gian (the following day) nên will → would."
+   },
+   {
+    "s": "Dr Phong said that he had discovered a new kind of plant.",
+    "ok": true,
+    "fix": "Dr Phong said that he had discovered a new kind of plant.",
+    "why_vi": "Lời gốc dùng quá khứ đơn (discovered) hoặc hiện tại hoàn thành → lùi thành had discovered."
+   },
+   {
+    "s": "My brother told that he was doing an experiment.",
+    "ok": false,
+    "fix": "My brother said that he was doing an experiment.",
+    "why_vi": "tell phải có người nghe (told me/us…). Không có người nghe thì dùng said."
+   },
+   {
+    "s": "They said that they were working in the laboratory then.",
+    "ok": true,
+    "fix": "They said that they were working in the laboratory then.",
+    "why_vi": "are working → were working; now → then. Câu đúng."
+   },
+   {
+    "s": "'I love physics,' said Nam. → Nam said that I loved physics.",
+    "ok": false,
+    "fix": "'I love physics,' said Nam. → Nam said that he loved physics.",
+    "why_vi": "Phải đổi đại từ theo người nói: Nam nói 'I' → he."
+   },
+   {
+    "s": "'I will call you tomorrow,' Linh told me. → Linh told me that she would call me the next day.",
+    "ok": true,
+    "fix": "'I will call you tomorrow,' Linh told me. → Linh told me that she would call me the next day.",
+    "why_vi": "will → would; I → she; you → me; tomorrow → the next day. Đủ cả 4 thay đổi."
+   }
   ]
+ },
+ "exam": [
+  {
+   "format": "transformation",
+   "title_vi": "Viết lại câu (câu tường thuật)",
+   "intro_vi": "Phần Viết của đề chuyên Anh Sở Hà Nội có bài viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn. Chuyển sang câu tường thuật là dạng rất hay gặp.",
+   "tip_vi": "Mẹo: kiểm tra đủ 4 việc: lùi thì, đổi đại từ (I → he/she), đổi trạng từ thời gian (tomorrow → the next day), dùng đúng say/tell.",
+   "kind": "transform",
+   "items": [
+    {
+     "q": "'I am reading a book about famous inventors,' said Khang.",
+     "start": "Khang said",
+     "answer": "that he was reading a book about famous inventors",
+     "accept": [
+      "he was reading a book about famous inventors"
+     ],
+     "explain_vi": "am reading → was reading; I → he. Có thể bỏ 'that'."
+    },
+    {
+     "q": "'We will carry out the experiment next week,' the students said.",
+     "start": "The students said",
+     "answer": "that they would carry out the experiment the following week",
+     "accept": [
+      "they would carry out the experiment the following week",
+      "that they'd carry out the experiment the following week",
+      "they'd carry out the experiment the following week",
+      "that they would carry out the experiment the next week",
+      "they would carry out the experiment the next week",
+      "that they'd carry out the experiment the next week",
+      "they'd carry out the experiment the next week"
+     ],
+     "explain_vi": "will → would; we → they; next week → the following week (hoặc the next week)."
+    },
+    {
+     "q": "'I can't come to the science fair,' Ngọc told her teacher.",
+     "start": "Ngọc told her teacher",
+     "answer": "that she couldn't come to the science fair",
+     "accept": [
+      "that she could not come to the science fair",
+      "she couldn't come to the science fair",
+      "she could not come to the science fair",
+      "that she couldn't go to the science fair",
+      "that she could not go to the science fair",
+      "she couldn't go to the science fair",
+      "she could not go to the science fair"
+     ],
+     "explain_vi": "can't → couldn't; I → she. Đã có người nghe (her teacher) nên dùng told."
+    },
+    {
+     "q": "'I have analysed the water samples,' said Dr Lan.",
+     "start": "Dr Lan said",
+     "answer": "that she had analysed the water samples",
+     "accept": [
+      "she had analysed the water samples",
+      "that she'd analysed the water samples",
+      "she'd analysed the water samples",
+      "that she had analyzed the water samples",
+      "she had analyzed the water samples",
+      "that she'd analyzed the water samples",
+      "she'd analyzed the water samples"
+     ],
+     "explain_vi": "Hiện tại hoàn thành (have analysed) → quá khứ hoàn thành (had analysed); I → she."
+    },
+    {
+     "q": "'I found this old coin in my garden yesterday,' Grandpa said to me.",
+     "start": "Grandpa told me",
+     "answer": "that he had found that old coin in his garden the day before",
+     "accept": [
+      "he had found that old coin in his garden the day before",
+      "that he'd found that old coin in his garden the day before",
+      "he'd found that old coin in his garden the day before",
+      "that he had found that old coin in his garden the previous day",
+      "he had found that old coin in his garden the previous day",
+      "that he'd found that old coin in his garden the previous day",
+      "he'd found that old coin in his garden the previous day"
+     ],
+     "explain_vi": "found → had found; I/my → he/his; this → that; yesterday → the day before (the previous day)."
+    }
+   ]
+  },
+  {
+   "format": "reading_mcq",
+   "title_vi": "Đọc hiểu",
+   "intro_vi": "Đề chuyên có bài đọc hiểu chọn A, B, C, D: đề Chuyên Ngoại ngữ có 8 câu, đề Sở có phần Đọc 25 câu gồm nhiều bài. Hôm nay em làm bản rút gọn: 1 bài đọc, 5 câu.",
+   "tip_vi": "Mẹo: đọc câu hỏi trước, gạch từ khoá rồi tìm đoạn chứa thông tin. Đáp án đúng thường nói lại bằng từ khác, ít khi chép nguyên văn.",
+   "kind": "mcq",
+   "passage": "Đức is thirteen and lives with his grandmother in a small town in Thanh Hoá. A few years ago, his grandmother's eyes became weak, and she often walked into tables and doors. One evening, after she fell and hurt her knee, Đức decided that he had to do something to help her.\n\nHe came up with the idea of a walking stick which could 'see' for her. With some help from his science teacher, he fixed a small sensor to the bottom of an old stick. When the stick came close to something, it made a loud beep. However, his first experiment did not go well. The stick beeped at everything, even at a sleeping cat or a leaf on the floor. Đức felt like giving up, but his teacher told him that every inventor made mistakes before a breakthrough.\n\nFor the next two months, Đức carried out more tests in the school laboratory and changed the sensor many times. Then his grandmother told him that the beeping embarrassed her when she went to the market. So Đức made the stick vibrate gently in her hand instead.\n\nLast spring, his invention won second prize at a science fair for students in his province. Now his grandmother walks to the market on her own every morning. Đức says that his next goal is to make the stick cheap enough for every elderly person in his town.",
+   "items": [
+    {
+     "q": "Why did Đức decide to make the walking stick?",
+     "options": [
+      "His teacher asked him to do a science project.",
+      "He wanted to win a prize at the science fair.",
+      "His grandmother often walked into things and got hurt.",
+      "His grandmother wanted to go to the market more often."
+     ],
+     "answer": 2,
+     "explain_vi": "Đoạn 1: bà mắt kém, hay va vào bàn, cửa và bị ngã đau đầu gối, nên Đức quyết định giúp bà."
+    },
+    {
+     "q": "What was the problem with the first stick?",
+     "options": [
+      "It was too heavy for his grandmother.",
+      "It beeped even at very small things.",
+      "It broke after the first test.",
+      "It was too expensive to make."
+     ],
+     "answer": 1,
+     "explain_vi": "Đoạn 2: 'The stick beeped at everything, even at a sleeping cat or a leaf' – kêu cả với vật rất nhỏ."
+    },
+    {
+     "q": "What did Đức's teacher tell him when the first experiment failed?",
+     "options": [
+      "Every inventor makes mistakes before a big success.",
+      "He should stop working on the stick.",
+      "The sensor was too expensive to buy.",
+      "He needed a bigger laboratory."
+     ],
+     "answer": 0,
+     "explain_vi": "Câu tường thuật: 'his teacher told him that every inventor made mistakes before a breakthrough'. breakthrough ≈ big success."
+    },
+    {
+     "q": "Why did Đức make the stick vibrate instead of beeping?",
+     "options": [
+      "The beep was too quiet to hear in the market.",
+      "The vibrating stick was cheaper to make.",
+      "His teacher said that vibration was safer.",
+      "His grandmother felt embarrassed by the noise."
+     ],
+     "answer": 3,
+     "explain_vi": "Đoạn 3: bà nói tiếng bíp làm bà ngại (embarrassed) khi đi chợ, nên Đức đổi sang rung."
+    },
+    {
+     "q": "What is the passage mainly about?",
+     "options": [
+      "How to look after elderly people with weak eyes",
+      "A boy who invented something to help his grandmother",
+      "A science fair for students in Thanh Hoá",
+      "Why sensors are useful in modern life"
+     ],
+     "answer": 1,
+     "explain_vi": "Cả bài kể về Đức và chiếc gậy cậu sáng chế cho bà. Các đáp án khác chỉ là chi tiết nhỏ hoặc không có trong bài."
+    }
+   ]
+  }
+ ],
+ "exam_easy": [
+  {
+   "format": "transformation",
+   "title_vi": "Viết lại câu (câu tường thuật)",
+   "intro_vi": "Đề chuyên có bài viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn. Hôm nay em chuyển lời nói trực tiếp sang câu tường thuật. Câu ngắn, mỗi câu chỉ cần đổi 2–3 chỗ.",
+   "tip_vi": "Mẹo: 3 bước: (1) đổi I/my/we → he/she/his/her/they; (2) lùi thì: am → was, like → liked, can → could, will → would; (3) có người nghe thì dùng told.",
+   "kind": "transform",
+   "items": [
+    {
+     "q": "'I like my science teacher,' said Linh.",
+     "start": "Linh said",
+     "answer": "that she liked her science teacher",
+     "accept": [
+      "she liked her science teacher"
+     ],
+     "explain_vi": "Hiện tại đơn (like) → quá khứ đơn (liked). I → she, my → her. Có thể bỏ 'that'."
+    },
+    {
+     "q": "'I am drawing a rocket,' said Kiên.",
+     "start": "Kiên said",
+     "answer": "that he was drawing a rocket",
+     "accept": [
+      "he was drawing a rocket"
+     ],
+     "explain_vi": "Hiện tại tiếp diễn (am drawing) → quá khứ tiếp diễn (was drawing). I → he."
+    },
+    {
+     "q": "'We can see the moon,' the children said.",
+     "start": "The children said",
+     "answer": "that they could see the moon",
+     "accept": [
+      "they could see the moon"
+     ],
+     "explain_vi": "can → could. We → they (vì người kể không ở trong nhóm các bạn nhỏ)."
+    },
+    {
+     "q": "'My brother has a new robot,' Lan told me.",
+     "start": "Lan told me",
+     "answer": "that her brother had a new robot",
+     "accept": [
+      "her brother had a new robot"
+     ],
+     "explain_vi": "has → had (lùi thì). My → her (vì Lan là con gái). Đã có người nghe 'me' nên dùng told."
+    },
+    {
+     "q": "'I will help you with your maths,' Dad said to me.",
+     "start": "Dad told me",
+     "answer": "that he would help me with my maths",
+     "accept": [
+      "that he'd help me with my maths",
+      "he would help me with my maths",
+      "he'd help me with my maths"
+     ],
+     "explain_vi": "will → would. I → he (bố), you → me, your → my. said to me = told me."
+    }
+   ]
+  },
+  {
+   "format": "reading_mcq",
+   "title_vi": "Đọc hiểu",
+   "intro_vi": "Đề chuyên có bài đọc rồi chọn A, B, C hoặc D. Bài hôm nay ngắn, câu đơn giản, có 5 câu hỏi. Em không cần hiểu hết từng từ, chỉ cần tìm đúng câu chứa thông tin.",
+   "tip_vi": "Mẹo: đọc câu hỏi trước, tìm từ khoá (Bin, every hour, at first…) trong bài, rồi đọc thật kỹ câu đó và câu ngay sau nó.",
+   "kind": "mcq",
+   "passage": "Mai is twelve years old, and she loves science. Her favourite room at school is the laboratory. Last month, her science teacher, Mr Nam, gave the class a project. 'Find a problem at home and try to solve it,' he said.\n\nMai thought about her little brother, Bin. Bin is five, and he never drinks enough water. He often has headaches in the afternoon. So Mai came up with an idea: a 'talking bottle'. She put a small speaker on an old water bottle. Every hour, the bottle says, 'Hello, Bin! It's time to drink some water!'\n\nAt first, Bin was scared of the bottle, and he hid it under his bed. But after two days, he started to love it. Now he drinks six glasses of water every day, and his headaches have stopped. Mai's mother told her that Bin was much healthier now.\n\nMai showed her bottle to the class. Her friends laughed and clapped. Mr Nam said that it was a simple but clever invention. Next year, Mai wants to make a talking bottle for her grandfather too, because he often forgets to drink water.",
+   "items": [
+    {
+     "q": "What was Bin's problem?",
+     "options": [
+      "He didn't like his sister.",
+      "He was often late for school.",
+      "He didn't drink enough water.",
+      "He was afraid of the dark."
+     ],
+     "answer": 2,
+     "explain_vi": "Đoạn 2: 'he never drinks enough water' – Bin không bao giờ uống đủ nước, nên hay đau đầu."
+    },
+    {
+     "q": "What does the bottle do every hour?",
+     "options": [
+      "It tells Bin to drink water.",
+      "It plays music for Bin.",
+      "It cleans the water.",
+      "It calls Mai's mother."
+     ],
+     "answer": 0,
+     "explain_vi": "Đoạn 2: mỗi giờ chiếc chai nói 'It's time to drink some water!' – nhắc Bin uống nước."
+    },
+    {
+     "q": "How did Bin feel about the bottle at first?",
+     "options": [
+      "happy",
+      "scared",
+      "hungry",
+      "bored"
+     ],
+     "answer": 1,
+     "explain_vi": "Đoạn 3: 'At first, Bin was scared of the bottle' – lúc đầu Bin sợ chiếc chai, còn giấu nó dưới gầm giường."
+    },
+    {
+     "q": "What did Mr Nam say about the bottle?",
+     "options": [
+      "It was too expensive.",
+      "It was very noisy.",
+      "It needed a bigger speaker.",
+      "It was simple but clever."
+     ],
+     "answer": 3,
+     "explain_vi": "Đoạn 4, câu tường thuật: 'Mr Nam said that it was a simple but clever invention' – đơn giản mà thông minh."
+    },
+    {
+     "q": "What is the best title for the passage?",
+     "options": [
+      "A Day at the Zoo",
+      "Mai's Talking Bottle",
+      "Bin's New Bed",
+      "How to Cook Rice"
+     ],
+     "answer": 1,
+     "explain_vi": "Cả bài kể về chiếc chai biết nói Mai làm cho em trai. Các tên khác không đúng nội dung bài."
+    }
+   ]
+  }
+ ],
+ "exam_plus": [
+  {
+   "format": "transformation",
+   "title_vi": "Viết lại câu (câu tường thuật)",
+   "intro_vi": "Câu tường thuật dùng để phân loại trong đề chuyên thường gài nhiều bẫy cùng lúc: thì hoàn thành tiếp diễn, this/here/ago, must, câu bị động, mệnh đề until. Sai một chi tiết là mất điểm cả câu.",
+   "tip_vi": "Mẹo: gạch chân mọi chỗ cần đổi trong câu gốc (đại từ, thì, this/these, here, ago, tomorrow) rồi đánh dấu từng chỗ sau khi viết xong.",
+   "kind": "transform",
+   "items": [
+    {
+     "q": "'We discovered these fossils here two weeks ago,' the researchers told the reporter.",
+     "start": "The researchers told the reporter",
+     "answer": "that they had discovered those fossils there two weeks before",
+     "accept": [
+      "that they had discovered those fossils there two weeks earlier",
+      "that they had discovered the fossils there two weeks before",
+      "that they had discovered the fossils there two weeks earlier",
+      "that they'd discovered those fossils there two weeks before",
+      "that they'd discovered those fossils there two weeks earlier",
+      "that they'd discovered the fossils there two weeks before",
+      "that they'd discovered the fossils there two weeks earlier",
+      "they had discovered those fossils there two weeks before",
+      "they had discovered those fossils there two weeks earlier",
+      "they had discovered the fossils there two weeks before",
+      "they had discovered the fossils there two weeks earlier",
+      "they'd discovered those fossils there two weeks before",
+      "they'd discovered those fossils there two weeks earlier",
+      "they'd discovered the fossils there two weeks before",
+      "they'd discovered the fossils there two weeks earlier"
+     ],
+     "explain_vi": "discovered → had discovered; we → they; these → those; here → there; ago → before (earlier)."
+    },
+    {
+     "q": "'I have been analysing these samples since this morning,' said Dr Thu.",
+     "start": "Dr Thu said",
+     "answer": "that she had been analysing those samples since that morning",
+     "accept": [
+      "that she had been analysing the samples since that morning",
+      "that she had been analyzing those samples since that morning",
+      "that she had been analyzing the samples since that morning",
+      "that she'd been analysing those samples since that morning",
+      "that she'd been analysing the samples since that morning",
+      "that she'd been analyzing those samples since that morning",
+      "that she'd been analyzing the samples since that morning",
+      "she had been analysing those samples since that morning",
+      "she had been analysing the samples since that morning",
+      "she had been analyzing those samples since that morning",
+      "she had been analyzing the samples since that morning",
+      "she'd been analysing those samples since that morning",
+      "she'd been analysing the samples since that morning",
+      "she'd been analyzing those samples since that morning",
+      "she'd been analyzing the samples since that morning"
+     ],
+     "explain_vi": "have been analysing → had been analysing; I → she; these → those; this morning → that morning."
+    },
+    {
+     "q": "'You must wear safety glasses in the lab,' the teacher told us.",
+     "start": "The teacher told us",
+     "answer": "that we had to wear safety glasses in the lab",
+     "accept": [
+      "that we had to wear safety glasses in the laboratory",
+      "that we must wear safety glasses in the lab",
+      "that we must wear safety glasses in the laboratory",
+      "we had to wear safety glasses in the lab",
+      "we had to wear safety glasses in the laboratory",
+      "we must wear safety glasses in the lab",
+      "we must wear safety glasses in the laboratory"
+     ],
+     "explain_vi": "must → had to (giữ nguyên must cũng được chấp nhận); you → we vì người nghe là 'us'."
+    },
+    {
+     "q": "'The results of the experiment will be announced tomorrow,' the head teacher said.",
+     "start": "The head teacher said",
+     "answer": "that the results of the experiment would be announced the next day",
+     "accept": [
+      "that the results of the experiment would be announced the following day",
+      "the results of the experiment would be announced the next day",
+      "the results of the experiment would be announced the following day"
+     ],
+     "explain_vi": "Bị động tương lai will be announced → would be announced; tomorrow → the next day / the following day."
+    },
+    {
+     "q": "'I'm not going to give up until I come up with a solution,' said Nam.",
+     "start": "Nam said",
+     "answer": "that he wasn't going to give up until he came up with a solution",
+     "accept": [
+      "that he wasn't going to give up until he had come up with a solution",
+      "that he wasn't going to give up until he'd come up with a solution",
+      "that he was not going to give up until he came up with a solution",
+      "that he was not going to give up until he had come up with a solution",
+      "that he was not going to give up until he'd come up with a solution",
+      "he wasn't going to give up until he came up with a solution",
+      "he wasn't going to give up until he had come up with a solution",
+      "he wasn't going to give up until he'd come up with a solution",
+      "he was not going to give up until he came up with a solution",
+      "he was not going to give up until he had come up with a solution",
+      "he was not going to give up until he'd come up with a solution"
+     ],
+     "explain_vi": "am not going to → was not going to; come → came (hoặc had come); I → he. Mệnh đề sau until cũng phải lùi thì."
+    }
+   ]
+  },
+  {
+   "format": "reading_mcq",
+   "title_vi": "Đọc hiểu",
+   "intro_vi": "Bài đọc ở đề Chuyên Ngoại ngữ có những câu phân loại: hỏi nghĩa của từ trong ngữ cảnh, ý chính của một đoạn, điều tác giả ngụ ý. Bài hôm nay khoảng 250 từ, từ vựng mức B2.",
+   "tip_vi": "Mẹo: phương án sai thường lấy từ trong bài nhưng nói quá lên (most, always, rarely) hoặc ngược ý. Đối chiếu từng chữ với câu gốc trong bài.",
+   "kind": "mcq",
+   "passage": "Many people imagine that great inventions are always the result of careful planning. In reality, some of the most useful breakthroughs happened almost by accident.\n\nIn 1945, an American engineer named Percy Spencer was carrying out tests on radar equipment when he noticed that the chocolate bar in his pocket had melted. Instead of simply complaining about his ruined snack, Spencer became curious. He placed some popcorn kernels near the machine and watched them pop all over the laboratory. This observation eventually led to the microwave oven. The first models, however, were nearly two metres tall and far too expensive for ordinary families, so it was many years before microwaves became a common sight in kitchens.\n\nA similar story took place in 1968, when a chemist called Spencer Silver was trying to develop an extremely strong glue. What he produced instead was so weak that paper stuck with it could be removed easily without leaving a mark. For years, nobody could think of a use for it. Then a colleague, Art Fry, came up with the idea of using it to make bookmarks that would not fall out of his songbook. The result was the sticky note, which can now be found in offices all over the world.\n\nThese stories suggest that luck alone is not enough. Both men turned their accidents into inventions because they paid attention to unexpected results rather than dismissing them as failures.",
+   "items": [
+    {
+     "q": "What does the writer suggest in the first paragraph?",
+     "options": [
+      "Most great inventions are the result of luck.",
+      "Not every important invention is carefully planned.",
+      "Careful planning is a waste of time for inventors.",
+      "Accidental discoveries are rarely useful."
+     ],
+     "answer": 1,
+     "explain_vi": "'some of the most useful breakthroughs happened almost by accident' → không phải phát minh nào cũng được lên kế hoạch. A nói quá (most)."
+    },
+    {
+     "q": "According to the passage, why did it take a long time for microwave ovens to become common in homes?",
+     "options": [
+      "People believed they were dangerous.",
+      "They could only be used to make popcorn.",
+      "The early models were too large and costly.",
+      "Spencer refused to sell his invention."
+     ],
+     "answer": 2,
+     "explain_vi": "'nearly two metres tall and far too expensive for ordinary families' = quá to và quá đắt (costly). A, D bài không nhắc."
+    },
+    {
+     "q": "What was surprising about the glue that Spencer Silver produced?",
+     "options": [
+      "It was much stronger than he had planned.",
+      "It left marks on everything it touched.",
+      "It held paper only lightly and could be removed cleanly.",
+      "It was invented by his colleague, Art Fry."
+     ],
+     "answer": 2,
+     "explain_vi": "'so weak that paper ... could be removed easily without leaving a mark' – keo dính nhẹ, gỡ ra không để lại vết. A, B ngược ý bài."
+    },
+    {
+     "q": "The word 'dismissing' in the last paragraph is closest in meaning to",
+     "options": [
+      "refusing to take them seriously",
+      "explaining them in detail",
+      "reporting them to others",
+      "repeating them carefully"
+     ],
+     "answer": 0,
+     "explain_vi": "dismiss sth as… = gạt bỏ, coi là không đáng quan tâm. Đối lập với 'paid attention to' ngay trước đó."
+    },
+    {
+     "q": "What is the main point of the last paragraph?",
+     "options": [
+      "Luck is the most important quality an inventor can have.",
+      "Both inventors became rich because of their mistakes.",
+      "Scientists should try hard to avoid failures.",
+      "Inventors succeed when they pay attention to unexpected results."
+     ],
+     "answer": 3,
+     "explain_vi": "'luck alone is not enough… they paid attention to unexpected results'. A trái ý bài; B bài không nhắc; C ngược thông điệp."
+    }
+   ]
+  }
+ ],
+ "paper_plus": {
+  "title_vi": "H. Thử thách nâng cao",
+  "instruction_vi": "Dành cho mức Nâng cao. Câu 1–2: viết dạng đúng của từ in hoa (có thể phải thêm cả tiền tố lẫn hậu tố). Câu 3–4: viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn. Câu 5–6: chọn A, B, C hoặc D.",
+  "items": [
+   {
+    "id": "d12H1",
+    "q": "The first results turned out to be ______, so the team had to repeat the whole experiment. (RELY)",
+    "answer": "unreliable",
+    "accept": []
+   },
+   {
+    "id": "d12H2",
+    "q": "So far, the new theory has not been tested ______; it exists only on paper. (EXPERIMENT)",
+    "answer": "experimentally",
+    "accept": []
+   },
+   {
+    "id": "d12H3",
+    "q": "'We haven't found any evidence yet,' the detectives told the journalist. → The detectives told the journalist ______",
+    "answer": "that they hadn't found any evidence yet",
+    "accept": [
+     "that they had not found any evidence yet",
+     "they hadn't found any evidence yet",
+     "they had not found any evidence yet"
+    ]
+   },
+   {
+    "id": "d12H4",
+    "q": "This is the cleverest solution that anyone has ever come up with. → Nobody has ever ______",
+    "answer": "come up with a cleverer solution than this",
+    "accept": [
+     "come up with a cleverer solution than this one",
+     "come up with such a clever solution",
+     "come up with such a clever solution before"
+    ]
+   },
+   {
+    "id": "d12H5",
+    "q": "After months of failure, the team finally ______ a breakthrough in their search for a cure.",
+    "options": [
+     "did",
+     "made",
+     "took",
+     "got"
+    ],
+    "answer": "B"
+   },
+   {
+    "id": "d12H6",
+    "q": "The idea seemed crazy at first, but in the end it ______ to be a brilliant invention.",
+    "options": [
+     "turned out",
+     "carried out",
+     "found out",
+     "came out"
+    ],
+    "answer": "A"
+   }
+  ]
+ },
+ "paper_easy": {
+  "hints": {
+   "d12C1": "danh từ số nhiều (chỉ người)",
+   "d12C2": "danh từ",
+   "d12C3": "trạng từ",
+   "d12C4": "tính từ (nghĩa phủ định)"
+  },
+  "reading_gloss": [
+   [
+    "noticed",
+    "nhận thấy"
+   ],
+   [
+    "evidence",
+    "bằng chứng"
+   ],
+   [
+    "collected",
+    "thu thập, lấy (mẫu)"
+   ],
+   [
+    "measure",
+    "đo"
+   ],
+   [
+    "analysed",
+    "phân tích"
+   ],
+   [
+    "heavy rain",
+    "mưa to"
+   ],
+   [
+    "local council",
+    "chính quyền địa phương"
+   ],
+   [
+    "a step forward",
+    "một bước tiến"
+   ]
+  ],
+  "writing_starters": [
+   "I think the most important invention is …",
+   "It helps people … / Before it was invented, people …",
+   "My … (mum / grandfather / teacher) told me that …",
+   "Without it, life would be …"
+  ]
+ }
 }

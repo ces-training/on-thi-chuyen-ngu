@@ -1,62 +1,450 @@
 {
-  "day": 13,
-  "grammar_games": {
-    "sort": {
-      "title_vi": "Động từ/cụm từ nào đi với V-ing, cái nào đi với to V?",
-      "groups": [
-        {"name": "+ V-ing", "items": ["enjoy", "avoid", "practise", "can't stand", "be interested in"]},
-        {"name": "+ to V", "items": ["decide", "hope", "refuse", "manage", "promise"]}
-      ]
-    },
-    "unjumble": [
-      {"sentence": "My little brother enjoys drawing cartoon characters after school.", "hint_vi": "enjoy + V-ing"},
-      {"sentence": "We hope to visit the art exhibition this weekend.", "hint_vi": "hope + to V"},
-      {"sentence": "She is really good at playing the đàn tranh.", "hint_vi": "Sau giới từ (at) dùng V-ing"},
-      {"sentence": "We stopped to take photos of the colourful lanterns.", "hint_vi": "stop + to V = dừng lại để làm việc khác"},
-      {"sentence": "My parents agreed to take me to the concert.", "hint_vi": "agree + to V"}
-    ],
-    "truefalse": [
-      {"s": "I enjoy to paint landscapes in my free time.", "ok": false, "fix": "I enjoy painting landscapes in my free time.", "why_vi": "enjoy luôn đi với V-ing: enjoy painting."},
-      {"s": "Linh has decided to enter the poetry competition.", "ok": true, "fix": "Linh has decided to enter the poetry competition.", "why_vi": "decide + to V: decided to enter. Câu đúng."},
-      {"s": "We are looking forward to see the new musical.", "ok": false, "fix": "We are looking forward to seeing the new musical.", "why_vi": "'to' trong look forward to là giới từ, nên sau nó dùng V-ing."},
-      {"s": "Would you mind turning the music down a little?", "ok": true, "fix": "Would you mind turning the music down a little?", "why_vi": "mind + V-ing: Would you mind turning…? Câu đúng."},
-      {"s": "The band refused playing without their drummer.", "ok": false, "fix": "The band refused to play without their drummer.", "why_vi": "refuse + to V: refused to play."},
-      {"s": "Mai stopped to admire a painting near the door.", "ok": true, "fix": "Mai stopped to admire a painting near the door.", "why_vi": "stop to do = dừng lại ĐỂ làm việc khác (ngắm bức tranh). Câu đúng."},
-      {"s": "Remember locking the door before you go to the concert.", "ok": false, "fix": "Remember to lock the door before you go to the concert.", "why_vi": "Việc chưa làm, phải nhớ để làm → remember to do."},
-      {"s": "My sister is interested in designing costumes for the theatre.", "ok": true, "fix": "My sister is interested in designing costumes for the theatre.", "why_vi": "Sau giới từ in dùng V-ing: interested in designing. Câu đúng."}
-    ]
-  },
-  "exam": [
+ "day": 13,
+ "grammar_games": {
+  "sort": {
+   "title_vi": "Động từ/cụm từ nào đi với V-ing, cái nào đi với to V?",
+   "groups": [
     {
-      "format": "cloze",
-      "title_vi": "Điền từ vào đoạn văn",
-      "intro_vi": "Đề chuyên Chuyên Ngoại ngữ có 8 câu điền từ vào đoạn văn: mỗi chỗ trống chọn A, B, C hoặc D. Các câu kiểm tra cả từ vựng, cụm động từ và ngữ pháp.",
-      "tip_vi": "Mẹo: đọc cả câu và từ ngay trước, ngay sau chỗ trống (giới từ 'to', 'at'…) để biết cần V-ing, to V hay một từ hợp nghĩa.",
-      "kind": "cloze_mcq",
-      "text": "My cousin Hân has always enjoyed [1] to traditional Vietnamese music. Two years ago, she started lessons on the đàn bầu, an instrument with only one string. At first, it was so difficult that she wanted to give up, but her teacher kept encouraging her. After six months, she managed [2] some simple folk songs, and everyone in her family was amazed. Last spring, Hân even played a short piece of her own. She had [3] it for her grandmother's birthday. Then, in December, her music club [4] a concert at the city theatre to raise money for poor children. Hân was nervous, but the audience stood up and clapped for a long time. After the show, several teenagers told her that she had inspired them to learn a traditional instrument too. Now Hân is looking forward to [5] at a music festival in Huế next summer.",
-      "items": [
-        {"options": ["listen", "to listen", "listening", "listened"], "answer": 2, "explain_vi": "enjoy + V-ing → enjoyed listening."},
-        {"options": ["playing", "to play", "play", "played"], "answer": 1, "explain_vi": "manage + to V (xoay xở làm được) → managed to play."},
-        {"options": ["exhibited", "composed", "admired", "inspired"], "answer": 1, "explain_vi": "'a piece of her own' = bản nhạc của chính Hân → cô ấy đã sáng tác (composed) nó."},
-        {"options": ["took part", "gave up", "turned down", "put on"], "answer": 3, "explain_vi": "put on a concert = tổ chức một buổi hoà nhạc. 'took part' phải có 'in' mới đúng."},
-        {"options": ["performing", "perform", "to perform", "performed"], "answer": 0, "explain_vi": "'to' trong look forward to là giới từ → sau nó dùng V-ing: performing."}
-      ]
+     "name": "+ V-ing",
+     "items": [
+      "enjoy",
+      "avoid",
+      "practise",
+      "can't stand",
+      "be interested in"
+     ]
     },
     {
-      "format": "dialogue_order",
-      "title_vi": "Sắp xếp hội thoại",
-      "intro_vi": "Đề thi chung vào lớp 10 Chuyên Ngoại ngữ có bài 5 câu sắp xếp các lượt lời thành đoạn hội thoại hợp lý. Hôm nay em sắp xếp 6 lượt lời; lượt đầu tiên đã cho sẵn.",
-      "tip_vi": "Mẹo: tìm cặp hỏi – đáp (câu hỏi đuôi → Yes, I do), và từ nối như Well, Great, Sure để biết lượt nào đi sau lượt nào.",
-      "kind": "order",
-      "lines": [
-        "A: Hi Minh! Our English club is putting on a short musical for the school open day. Do you want to take part?",
-        "B: I'd love to, but I'm not very good at acting. What else can I do?",
-        "A: Well, we still need someone to compose a few songs for the show. You play the guitar, don't you?",
-        "B: Yes, I do. I really enjoy writing my own songs, so I'd be happy to try.",
-        "A: Great! We're going to rehearse every Thursday after school. Can you come this week?",
-        "B: Sure. I'll remember to bring my guitar. See you on Thursday!"
-      ],
-      "explain_vi": "B từ chối diễn và hỏi việc khác → A đề nghị sáng tác nhạc, hỏi 'You play the guitar, don't you?' → B 'Yes, I do' → A hẹn lịch tập → B nhận lời."
+     "name": "+ to V",
+     "items": [
+      "decide",
+      "hope",
+      "refuse",
+      "manage",
+      "promise"
+     ]
     }
+   ]
+  },
+  "unjumble": [
+   {
+    "sentence": "My little brother enjoys drawing cartoon characters after school.",
+    "hint_vi": "enjoy + V-ing"
+   },
+   {
+    "sentence": "We hope to visit the art exhibition this weekend.",
+    "hint_vi": "hope + to V"
+   },
+   {
+    "sentence": "She is really good at playing the đàn tranh.",
+    "hint_vi": "Sau giới từ (at) dùng V-ing"
+   },
+   {
+    "sentence": "We stopped to take photos of the colourful lanterns.",
+    "hint_vi": "stop + to V = dừng lại để làm việc khác"
+   },
+   {
+    "sentence": "My parents agreed to take me to the concert.",
+    "hint_vi": "agree + to V"
+   }
+  ],
+  "truefalse": [
+   {
+    "s": "I enjoy to paint landscapes in my free time.",
+    "ok": false,
+    "fix": "I enjoy painting landscapes in my free time.",
+    "why_vi": "enjoy luôn đi với V-ing: enjoy painting."
+   },
+   {
+    "s": "Linh has decided to enter the poetry competition.",
+    "ok": true,
+    "fix": "Linh has decided to enter the poetry competition.",
+    "why_vi": "decide + to V: decided to enter. Câu đúng."
+   },
+   {
+    "s": "We are looking forward to see the new musical.",
+    "ok": false,
+    "fix": "We are looking forward to seeing the new musical.",
+    "why_vi": "'to' trong look forward to là giới từ, nên sau nó dùng V-ing."
+   },
+   {
+    "s": "Would you mind turning the music down a little?",
+    "ok": true,
+    "fix": "Would you mind turning the music down a little?",
+    "why_vi": "mind + V-ing: Would you mind turning…? Câu đúng."
+   },
+   {
+    "s": "The band refused playing without their drummer.",
+    "ok": false,
+    "fix": "The band refused to play without their drummer.",
+    "why_vi": "refuse + to V: refused to play."
+   },
+   {
+    "s": "Mai stopped to admire a painting near the door.",
+    "ok": true,
+    "fix": "Mai stopped to admire a painting near the door.",
+    "why_vi": "stop to do = dừng lại ĐỂ làm việc khác (ngắm bức tranh). Câu đúng."
+   },
+   {
+    "s": "Remember locking the door before you go to the concert.",
+    "ok": false,
+    "fix": "Remember to lock the door before you go to the concert.",
+    "why_vi": "Việc chưa làm, phải nhớ để làm → remember to do."
+   },
+   {
+    "s": "My sister is interested in designing costumes for the theatre.",
+    "ok": true,
+    "fix": "My sister is interested in designing costumes for the theatre.",
+    "why_vi": "Sau giới từ in dùng V-ing: interested in designing. Câu đúng."
+   }
   ]
+ },
+ "exam": [
+  {
+   "format": "cloze",
+   "title_vi": "Điền từ vào đoạn văn",
+   "intro_vi": "Đề chuyên Chuyên Ngoại ngữ có 8 câu điền từ vào đoạn văn: mỗi chỗ trống chọn A, B, C hoặc D. Các câu kiểm tra cả từ vựng, cụm động từ và ngữ pháp.",
+   "tip_vi": "Mẹo: đọc cả câu và từ ngay trước, ngay sau chỗ trống (giới từ 'to', 'at'…) để biết cần V-ing, to V hay một từ hợp nghĩa.",
+   "kind": "cloze_mcq",
+   "text": "My cousin Hân has always enjoyed [1] to traditional Vietnamese music. Two years ago, she started lessons on the đàn bầu, an instrument with only one string. At first, it was so difficult that she wanted to give up, but her teacher kept encouraging her. After six months, she managed [2] some simple folk songs, and everyone in her family was amazed. Last spring, Hân even played a short piece of her own. She had [3] it for her grandmother's birthday. Then, in December, her music club [4] a concert at the city theatre to raise money for poor children. Hân was nervous, but the audience stood up and clapped for a long time. After the show, several teenagers told her that she had inspired them to learn a traditional instrument too. Now Hân is looking forward to [5] at a music festival in Huế next summer.",
+   "items": [
+    {
+     "options": [
+      "listen",
+      "to listen",
+      "listening",
+      "listened"
+     ],
+     "answer": 2,
+     "explain_vi": "enjoy + V-ing → enjoyed listening."
+    },
+    {
+     "options": [
+      "playing",
+      "to play",
+      "play",
+      "played"
+     ],
+     "answer": 1,
+     "explain_vi": "manage + to V (xoay xở làm được) → managed to play."
+    },
+    {
+     "options": [
+      "exhibited",
+      "composed",
+      "admired",
+      "inspired"
+     ],
+     "answer": 1,
+     "explain_vi": "'a piece of her own' = bản nhạc của chính Hân → cô ấy đã sáng tác (composed) nó."
+    },
+    {
+     "options": [
+      "took part",
+      "gave up",
+      "turned down",
+      "put on"
+     ],
+     "answer": 3,
+     "explain_vi": "put on a concert = tổ chức một buổi hoà nhạc. 'took part' phải có 'in' mới đúng."
+    },
+    {
+     "options": [
+      "performing",
+      "perform",
+      "to perform",
+      "performed"
+     ],
+     "answer": 0,
+     "explain_vi": "'to' trong look forward to là giới từ → sau nó dùng V-ing: performing."
+    }
+   ]
+  },
+  {
+   "format": "dialogue_order",
+   "title_vi": "Sắp xếp hội thoại",
+   "intro_vi": "Đề thi chung vào lớp 10 Chuyên Ngoại ngữ có bài 5 câu sắp xếp các lượt lời thành đoạn hội thoại hợp lý. Hôm nay em sắp xếp 6 lượt lời; lượt đầu tiên đã cho sẵn.",
+   "tip_vi": "Mẹo: tìm cặp hỏi – đáp (câu hỏi đuôi → Yes, I do), và từ nối như Well, Great, Sure để biết lượt nào đi sau lượt nào.",
+   "kind": "order",
+   "lines": [
+    "A: Hi Minh! Our English club is putting on a short musical for the school open day. Do you want to take part?",
+    "B: I'd love to, but I'm not very good at acting. What else can I do?",
+    "A: Well, we still need someone to compose a few songs for the show. You play the guitar, don't you?",
+    "B: Yes, I do. I really enjoy writing my own songs, so I'd be happy to try.",
+    "A: Great! We're going to rehearse every Thursday after school. Can you come this week?",
+    "B: Sure. I'll remember to bring my guitar. See you on Thursday!"
+   ],
+   "explain_vi": "B từ chối diễn và hỏi việc khác → A đề nghị sáng tác nhạc, hỏi 'You play the guitar, don't you?' → B 'Yes, I do' → A hẹn lịch tập → B nhận lời."
+  }
+ ],
+ "exam_easy": [
+  {
+   "format": "cloze",
+   "title_vi": "Điền từ vào đoạn văn",
+   "intro_vi": "Đề chuyên có bài đọc đoạn văn và chọn A, B, C hoặc D cho mỗi chỗ trống. Đoạn văn hôm nay ngắn, từ quen thuộc, có 5 chỗ trống về từ vựng và V-ing / to V.",
+   "tip_vi": "Mẹo: nhìn từ ngay TRƯỚC chỗ trống: enjoy → V-ing; want → to V; stopped to … = dừng lại để làm gì. Rồi đọc lại cả câu.",
+   "kind": "cloze_mcq",
+   "text": "My name is Nga, and I love art. Every Saturday, I go to a drawing club near my house. I really enjoy [1] pictures of animals and flowers there. Our teacher, Mr Long, is very [2]. He can draw a beautiful horse in only two minutes!\n\nLast month, our club [3] an exhibition at the town library. Each student chose three pictures for it. I chose a picture of my cat, a picture of the sea and a picture of my grandmother. On the first day, a lot of people came, and many visitors stopped to [4] our pictures. My parents were very proud of me.\n\nNext month, I want [5] part in a drawing competition for students in our city. I am a bit nervous, but I am also very excited!",
+   "items": [
+    {
+     "options": [
+      "drawing",
+      "draw",
+      "drew",
+      "draws"
+     ],
+     "answer": 0,
+     "explain_vi": "Sau 'enjoy' luôn dùng V-ing: enjoy drawing (thích vẽ)."
+    },
+    {
+     "options": [
+      "lazy",
+      "talented",
+      "hungry",
+      "bored"
+     ],
+     "answer": 1,
+     "explain_vi": "Câu sau nói thầy vẽ một con ngựa đẹp chỉ trong hai phút → thầy rất tài năng (talented)."
+    },
+    {
+     "options": [
+      "got up",
+      "turned off",
+      "put on",
+      "sat down"
+     ],
+     "answer": 2,
+     "explain_vi": "put on an exhibition = tổ chức một cuộc triển lãm. Các cụm khác: thức dậy, tắt, ngồi xuống – không hợp nghĩa."
+    },
+    {
+     "options": [
+      "cook",
+      "wash",
+      "sell",
+      "admire"
+     ],
+     "answer": 3,
+     "explain_vi": "stopped to admire = dừng lại để ngắm nhìn (stop + to V: dừng lại để làm việc khác). Khách xem tranh, không nấu, giặt hay bán."
+    },
+    {
+     "options": [
+      "take",
+      "to take",
+      "taking",
+      "took"
+     ],
+     "answer": 1,
+     "explain_vi": "Sau 'want' dùng to V: want to take part in = muốn tham gia."
+    }
+   ]
+  },
+  {
+   "format": "dialogue_order",
+   "title_vi": "Sắp xếp hội thoại",
+   "intro_vi": "Đề thi chung vào lớp 10 Chuyên Ngoại ngữ có bài sắp xếp các lượt lời thành đoạn hội thoại. Hôm nay em xếp 6 lượt lời ngắn; lượt đầu tiên đã cho sẵn.",
+   "tip_vi": "Mẹo: tìm câu hỏi rồi tìm câu trả lời của nó. Ví dụ: 'Are you free?' → 'Yes, I am.'; 'What time…?' → 'At seven o'clock.'",
+   "kind": "order",
+   "lines": [
+    "A: Hi Lan! Are you free on Saturday evening?",
+    "B: Yes, I am. Why?",
+    "A: My brother is singing in a music show at school. Do you want to come?",
+    "B: I'd love to! What time does it start?",
+    "A: At seven o'clock. Let's meet at the school gate at half past six.",
+    "B: OK. See you there!"
+   ],
+   "explain_vi": "Hỏi có rảnh không → 'Yes, I am. Why?' → nói lý do, mời đi xem → nhận lời, hỏi giờ → nói giờ, hẹn chỗ gặp → chào."
+  }
+ ],
+ "exam_plus": [
+  {
+   "format": "cloze",
+   "title_vi": "Điền từ vào đoạn văn",
+   "intro_vi": "Trong 8 câu điền từ của đề Chuyên Ngoại ngữ, câu phân loại thường hỏi cụm động từ gần nghĩa (take up / take on), kết hợp từ cố định và nghĩa khác nhau của V-ing / to V.",
+   "tip_vi": "Mẹo: với forget/remember/stop, hỏi: việc đó đã xảy ra chưa? Với kết hợp từ, chỉ một phương án đi được với từ đứng cạnh, đừng dịch từng chữ.",
+   "kind": "cloze_mcq",
+   "text": "When Bảo Anh first [1] the cello at the age of eleven, few people expected her to stick with it. The instrument was almost as tall as she was, and her fingers hurt after every lesson. However, she was determined, and she rarely missed a chance to practise. Her teacher, who had played in an orchestra for thirty years, kept reminding her that talent meant nothing without hard work.\n\nAt fifteen, she [2] in a national competition for young musicians. On the day, she was so nervous that she couldn't stop her hands [3], but as soon as she started playing, her fear disappeared. When she finished, the audience gave her a standing [4] that lasted almost two minutes. Since then, she has been invited to perform at concerts all over the country. Yet she says she will never forget [5] on that stage for the first time, with her heart beating faster than the music.",
+   "items": [
+    {
+     "options": [
+      "took on",
+      "took over",
+      "took up",
+      "took after"
+     ],
+     "answer": 2,
+     "explain_vi": "take up = bắt đầu học/chơi (sở thích, nhạc cụ). take on = nhận việc; take over = tiếp quản; take after = giống (người thân)."
+    },
+    {
+     "options": [
+      "entered",
+      "competed",
+      "attended",
+      "applied"
+     ],
+     "answer": 1,
+     "explain_vi": "compete in a competition = thi đấu trong cuộc thi. entered/attended không cần 'in' (entered a competition); apply phải đi với 'for'."
+    },
+    {
+     "options": [
+      "shaking",
+      "to shake",
+      "shake",
+      "shaken"
+     ],
+     "answer": 0,
+     "explain_vi": "stop sb/sth (from) doing = ngăn ai/cái gì làm gì: couldn't stop her hands shaking = không ngăn được tay mình run."
+    },
+    {
+     "options": [
+      "applause",
+      "praise",
+      "admiration",
+      "ovation"
+     ],
+     "answer": 3,
+     "explain_vi": "Kết hợp cố định: a standing ovation = khán giả đứng dậy vỗ tay. Không nói 'standing applause/praise'."
+    },
+    {
+     "options": [
+      "to stand",
+      "standing",
+      "stand",
+      "stood"
+     ],
+     "answer": 1,
+     "explain_vi": "Việc đứng trên sân khấu đã xảy ra rồi → forget doing (quên việc đã làm). forget to do = quên việc phải làm."
+    }
+   ]
+  },
+  {
+   "format": "dialogue_order",
+   "title_vi": "Sắp xếp hội thoại",
+   "intro_vi": "Ở đề chung vào 10 Chuyên Ngoại ngữ, bài sắp xếp hội thoại khó thường không có cặp hỏi – đáp rõ ràng; em phải dựa vào từ quy chiếu (that, this one, then, in that case).",
+   "tip_vi": "Mẹo: tìm từ trỏ ngược về lượt trước: 'That's exactly why…', 'this one', 'Then…'. Lượt chứa từ đó phải đứng ngay sau lượt nói về điều được nhắc tới.",
+   "kind": "order",
+   "lines": [
+    "A: Did you know the city theatre is putting on a new version of 'Romeo and Juliet' next month?",
+    "B: I did, but to be honest, I'm not really into Shakespeare. I find the language really hard to follow.",
+    "A: That's exactly why you should see this one. The director has set the story in modern Hà Nội, and the actors speak everyday Vietnamese.",
+    "B: Really? In that case, it might be worth seeing. Are the tickets expensive?",
+    "A: Not at all – student tickets are only 80,000 đồng. But apparently they're selling out fast.",
+    "B: Then we'd better not wait. Remind me to book two seats when I get home tonight."
+   ],
+   "explain_vi": "'I did' đáp 'Did you know' → 'That's exactly why' nối 'hard to follow' → 'Not at all' đáp câu hỏi giá vé → 'Then…' nối 'selling out fast'."
+  }
+ ],
+ "paper_plus": {
+  "title_vi": "H. Thử thách nâng cao",
+  "instruction_vi": "Dành cho mức Nâng cao. Câu 1–2: viết dạng đúng của từ in hoa (có thể phải thêm cả tiền tố lẫn hậu tố). Câu 3–4: viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn. Câu 5–6: chọn A, B, C hoặc D.",
+  "items": [
+   {
+    "id": "d13H1",
+    "q": "The concert was cancelled after the sudden ______ of the lead singer, who was found two days later at his parents' house. (APPEAR)",
+    "answer": "disappearance",
+    "accept": []
+   },
+   {
+    "id": "d13H2",
+    "q": "The stage design was rather ______; the director had simply copied it from an old production. (IMAGINE)",
+    "answer": "unimaginative",
+    "accept": []
+   },
+   {
+    "id": "d13H3",
+    "q": "I told Hoa the ending of the film, and now I wish I hadn't. → I regret ______",
+    "answer": "telling Hoa the ending of the film",
+    "accept": [
+     "having told Hoa the ending of the film",
+     "telling her the ending of the film",
+     "having told her the ending of the film"
+    ]
+   },
+   {
+    "id": "d13H4",
+    "q": "'Why don't we put on a play for Teachers' Day?' said Minh. → Minh suggested ______",
+    "answer": "putting on a play for Teachers' Day",
+    "accept": [
+     "that we put on a play for Teachers' Day",
+     "that we should put on a play for Teachers' Day",
+     "we put on a play for Teachers' Day",
+     "we should put on a play for Teachers' Day",
+     "that they put on a play for Teachers' Day",
+     "that they should put on a play for Teachers' Day",
+     "they put on a play for Teachers' Day",
+     "they should put on a play for Teachers' Day",
+     "putting a play on for Teachers' Day"
+    ]
+   },
+   {
+    "id": "d13H5",
+    "q": "Unfortunately, the band's new album didn't ______ their fans' high expectations.",
+    "options": [
+     "live up to",
+     "come up with",
+     "put up with",
+     "catch up with"
+    ],
+    "answer": "A"
+   },
+   {
+    "id": "d13H6",
+    "q": "Lan was so nervous before her first performance that she had ______ in her stomach.",
+    "options": [
+     "bees",
+     "birds",
+     "butterflies",
+     "frogs"
+    ],
+    "answer": "C"
+   }
+  ]
+ },
+ "paper_easy": {
+  "hints": {
+   "d13C1": "danh từ (đuôi -ure)",
+   "d13C2": "danh từ (đuôi -ure)",
+   "d13C3": "danh từ (đuôi -ance)",
+   "d13C4": "danh từ (đuôi -age)"
+  },
+  "reading_gloss": [
+   [
+    "folk story",
+    "truyện dân gian"
+   ],
+   [
+    "shadows",
+    "những cái bóng"
+   ],
+   [
+    "puppets",
+    "con rối"
+   ],
+   [
+    "encouraged",
+    "khuyến khích, động viên"
+   ],
+   [
+    "costumes",
+    "trang phục biểu diễn"
+   ],
+   [
+    "falling apart",
+    "bị rời ra từng mảnh"
+   ],
+   [
+    "reminded",
+    "nhắc nhở"
+   ],
+   [
+    "clapped",
+    "vỗ tay"
+   ]
+  ],
+  "writing_starters": [
+   "Last …, I went to / took part in …",
+   "It was a … (show / concert / exhibition) at …",
+   "I really enjoyed … (+ V-ing) because …",
+   "I hope to … again next year."
+  ]
+ }
 }

@@ -30,7 +30,7 @@ function renderGame(box,spec,onDone){
 const G_PLAY={
   /* Nối cặp: chạm một ô bên trái rồi chạm nghĩa đúng bên phải */
   match(spec,A){
-    const pairs=G_SHUF(spec.items).slice(0,6);let sel=null,done=0,sc=0;const missed=new Set();const total=pairs.length;
+    const pairs=G_SHUF(spec.items).slice(0,(spec.cfg||{}).pairs||6);let sel=null,done=0,sc=0;const missed=new Set();const total=pairs.length;
     const L=pairs.map((p,i)=>({i,t:p.a})),R=G_SHUF(pairs.map((p,i)=>({i,t:p.b})));
     A.stage.innerHTML=`<div class="g-match"><div class="g-col">${L.map(x=>`<button type="button" class="g-tile" data-side="L" data-i="${x.i}">${esc(x.t)}</button>`).join('')}</div><div class="g-col">${R.map(x=>`<button type="button" class="g-tile alt" data-side="R" data-i="${x.i}">${esc(x.t)}</button>`).join('')}</div></div>`;
     A.stage.onclick=e=>{const b=e.target.closest('.g-tile');if(!b||b.disabled)return;
@@ -41,7 +41,7 @@ const G_PLAY={
   },
   /* Lật thẻ: tìm các cặp từ – nghĩa */
   flip(spec,A){
-    const pairs=G_SHUF(spec.items).slice(0,6);const cards=G_SHUF(pairs.flatMap((p,i)=>[{i,t:p.a,k:'a'},{i,t:p.b,k:'b'}]));
+    const pairs=G_SHUF(spec.items).slice(0,(spec.cfg||{}).pairs||6);const cards=G_SHUF(pairs.flatMap((p,i)=>[{i,t:p.a,k:'a'},{i,t:p.b,k:'b'}]));
     let open=[],moves=0,found=0,lock=false;
     A.stage.innerHTML=`<div class="g-flip">${cards.map((c,j)=>`<button type="button" class="g-card" data-j="${j}" aria-label="Thẻ ${j+1}"><span class="f">?</span><span class="b ${c.k}">${esc(c.t)}</span></button>`).join('')}</div><p class="small muted g-moves">Số lượt lật: 0</p>`;
     A.stage.onclick=e=>{const b=e.target.closest('.g-card');if(!b||lock||b.classList.contains('up'))return;b.classList.add('up');open.push(b);
@@ -52,10 +52,10 @@ const G_PLAY={
   },
   /* Xếp chữ: chạm các chữ cái theo đúng thứ tự để ghép từ */
   anagram(spec,A){
-    const qs=G_SHUF(spec.items).slice(0,5);let k=0,sc=0;
+    const qs=G_SHUF(spec.items).slice(0,(spec.cfg||{}).n||5);let k=0,sc=0;
     const next=()=>{if(k>=qs.length)return A.finish(sc,qs.length);const q=qs[k];const word=q.a;let letters=G_SHUF(word.split('').map((c,i)=>({c,i})));
       if(letters.map(x=>x.c).join('')===word&&word.length>2)letters=letters.reverse();
-      let built=[],miss=0,hint=0;
+      let built=[],miss=0,hint=0;if((spec.cfg||{}).firstLetter){const x=letters.find(y=>y.c===word[0]);if(x)built.push(x)}
       const draw=()=>{A.stage.innerHTML=`<div class="g-ana"><p class="g-prog">Từ ${k+1}/${qs.length}</p><p class="g-clue">${esc(q.b)}</p>${q.c?`<p class="small muted">${esc(q.c)}</p>`:''}
         <div class="g-slots">${word.split('').map((c,i)=>`<span class="g-slot ${built[i]?'full':''}">${built[i]?esc(built[i].c):''}</span>`).join('')}</div>
         <div class="g-letters">${letters.map((x,j)=>`<button type="button" class="g-let" data-j="${j}" ${built.includes(x)?'disabled':''}>${esc(x.c)}</button>`).join('')}</div>
@@ -72,11 +72,11 @@ const G_PLAY={
   },
   /* Đố nhanh: 4 lựa chọn, 15 giây mỗi câu, đúng liên tiếp được thưởng */
   quiz(spec,A){
-    const qs=G_SHUF(spec.items).slice(0,spec.n||8);let k=0,sc=0,streak=0,tm=null;
-    const next=()=>{clearInterval(tm);if(k>=qs.length)return A.finish(sc,qs.length,'chuỗi dài nhất '+best);const q=qs[k];const opts=G_SHUF(q.options.map((t,i)=>({t,ok:i===q.answer})));let left=15;
+    const QT=(spec.cfg||{}).qtime||15;const qs=G_SHUF(spec.items).slice(0,(spec.cfg||{}).n||8);let k=0,sc=0,streak=0,tm=null;
+    const next=()=>{clearInterval(tm);if(k>=qs.length)return A.finish(sc,qs.length,'chuỗi dài nhất '+best);const q=qs[k];const opts=G_SHUF(q.options.map((t,i)=>({t,ok:i===q.answer})));let left=QT;
       A.stage.innerHTML=`<div class="g-quiz"><div class="g-bar"><i style="width:100%"></i></div><p class="g-prog">Câu ${k+1}/${qs.length}${streak>=2?` · 🔥 ${streak} câu liền`:''}</p><p class="g-q">${esc(q.q)}</p><div class="g-opts">${opts.map((o,j)=>`<button type="button" class="g-opt" data-j="${j}">${esc(o.t)}</button>`).join('')}</div><p class="g-fb small"></p></div>`;
       const bar=A.stage.querySelector('.g-bar i');
-      tm=setInterval(()=>{left-=.25;bar.style.width=Math.max(0,left/15*100)+'%';if(left<=0){clearInterval(tm);answer(-1)}},250);
+      tm=setInterval(()=>{left-=.25;bar.style.width=Math.max(0,left/QT*100)+'%';if(left<=0){clearInterval(tm);answer(-1)}},250);
       const answer=j=>{clearInterval(tm);const bs=A.stage.querySelectorAll('.g-opt');bs.forEach((b,i)=>{b.disabled=true;if(opts[i].ok)b.classList.add('ok');else if(i===j)b.classList.add('bad')});
         const ok=j>=0&&opts[j].ok;gBeep(ok);if(ok){streak++;best=Math.max(best,streak);sc++;A.add(1+(streak>=3?1:0))}else streak=0;
         A.stage.querySelector('.g-fb').innerHTML=(ok?'✓ Đúng! ':j<0?'⏰ Hết giờ. ':'✗ Chưa đúng. ')+(q.explain?esc(q.explain):'');k++;setTimeout(next,ok?900:1800)};
@@ -95,7 +95,7 @@ const G_PLAY={
   },
   /* Xếp câu: chạm các từ theo đúng thứ tự */
   unjumble(spec,A){
-    const qs=G_SHUF(spec.items).slice(0,5);let k=0,sc=0;
+    const qs=G_SHUF(spec.items).slice(0,(spec.cfg||{}).un||5);let k=0,sc=0;
     const next=()=>{if(k>=qs.length)return A.finish(sc,qs.length);const q=qs[k];const words=q.sentence.trim().split(/\s+/);let pool=G_SHUF(words.map((w,i)=>({w,i})));
       if(pool.every((x,i)=>x.i===i))pool=pool.reverse();let built=[],tries=0;
       const draw=()=>{A.stage.innerHTML=`<div class="g-unj"><p class="g-prog">Câu ${k+1}/${qs.length}</p>${q.hint?`<p class="small muted">Gợi ý: ${esc(q.hint)}</p>`:''}
@@ -115,10 +115,10 @@ const G_PLAY={
   },
   /* Đúng hay sai: 8 giây mỗi câu */
   truefalse(spec,A){
-    const qs=G_SHUF(spec.items).slice(0,8);let k=0,sc=0,tm=null;
-    const next=()=>{clearInterval(tm);if(k>=qs.length)return A.finish(sc,qs.length);const q=qs[k];let left=10;
+    const TT=(spec.cfg||{}).tftime||10;const qs=G_SHUF(spec.items).slice(0,8);let k=0,sc=0,tm=null;
+    const next=()=>{clearInterval(tm);if(k>=qs.length)return A.finish(sc,qs.length);const q=qs[k];let left=TT;
       A.stage.innerHTML=`<div class="g-tf"><div class="g-bar"><i style="width:100%"></i></div><p class="g-prog">Câu ${k+1}/${qs.length}</p><p class="g-q">${esc(q.s)}</p><div class="g-tfb"><button type="button" class="g-yes" data-v="1">✓ Đúng</button><button type="button" class="g-no" data-v="0">✗ Sai</button></div><p class="g-fb small"></p></div>`;
-      const bar=A.stage.querySelector('.g-bar i');tm=setInterval(()=>{left-=.25;bar.style.width=Math.max(0,left/10*100)+'%';if(left<=0){clearInterval(tm);ans(null)}},250);
+      const bar=A.stage.querySelector('.g-bar i');tm=setInterval(()=>{left-=.25;bar.style.width=Math.max(0,left/TT*100)+'%';if(left<=0){clearInterval(tm);ans(null)}},250);
       const ans=v=>{clearInterval(tm);A.stage.querySelectorAll('.g-tfb button').forEach(b=>b.disabled=true);const ok=v!==null&&(v===1)===q.ok;gBeep(ok);if(ok){sc++;A.add(1)}
         A.stage.querySelector('.g-fb').innerHTML=(ok?'✓ Đúng rồi! ':v===null?'⏰ Hết giờ. ':'✗ Chưa đúng. ')+(q.ok?'Câu này đúng.':'Sửa: <b>'+esc(q.fix)+'</b>')+(q.why?'<br>'+esc(q.why):'');k++;setTimeout(next,ok&&q.ok?1100:2600)};
       A.stage.querySelector('.g-tfb').onclick=e=>{const b=e.target.closest('button');if(b&&!b.disabled)ans(+b.dataset.v)}};
@@ -126,29 +126,47 @@ const G_PLAY={
   }
 };
 
-/* ===== Sinh dữ liệu game cho từng buổi ===== */
-const G_PLAN={1:['match','sort','quiz'],2:['flip','unjumble','anagram'],3:['anagram','truefalse','matchwf'],4:['quiz','sort','flip'],5:['match','truefalse','unjumble'],6:['flip','sort','anagram'],
-  7:['quiz','matchwf','truefalse'],8:['anagram','unjumble','matchwf'],9:['match','sort','quiz'],10:['flip','truefalse','anagram'],11:['quiz','unjumble','matchwf'],12:['match','sort','flip'],13:['anagram','truefalse','quiz'],14:['flip','unjumble','quiz']};
+/* ===== Sinh dữ liệu game cho từng buổi, theo mức của con ===== */
+const G_CFG={
+  nen:{pairs:5,n:5,un:4,qtime:22,tftime:15,lives:8,speed:1300,roundMs:9000,dur:9,size:8,max:8,diag:false,showWords:true,firstLetter:true,hintMeaning:true,extra:0,autoFill:true,useGap:false},
+  chuan:{pairs:6,n:7,un:5,qtime:15,tftime:10,lives:6,speed:1000,roundMs:7000,dur:7,size:9,max:9,diag:false,showWords:true,firstLetter:false,hintMeaning:true,extra:1},
+  nang:{pairs:8,n:9,un:5,qtime:10,tftime:7,lives:5,speed:750,roundMs:5500,dur:5.5,size:10,max:11,diag:true,showWords:false,firstLetter:false,hintMeaning:false,extra:2,gapOnly:true}};
+/* Mỗi buổi một bộ 3 game khác nhau; hai buổi liền nhau không lặp loại game; buổi 1–8, 10 và 14 đều mở một loại game mới. */
+const G_PLAN={1:['match','sort','quiz'],2:['flip','unjumble','hangman'],3:['anagram','truefalse','whack'],4:['balloon','sort','match'],5:['wordsearch','truefalse','quiz'],6:['crossword','unjumble','flip'],7:['openbox','quiz','whack'],
+  8:['dictation','sort','anagram'],9:['hangman','truefalse','balloon'],10:['missing','unjumble','wordsearch'],11:['whack','openbox','crossword'],12:['flip','sort','dictation'],13:['balloon','truefalse','anagram'],14:['wheel','unjumble','match']};
+const G_HOW={hangman:'Đọc nghĩa, chạm từng chữ cái để đoán từ. Mỗi lần đoán sai em mất một quả bóng bay.',whack:'Đọc nghĩa ở trên, đập (chạm) vào con chuột mang đúng từ tiếng Anh. Chạm nhầm không mất điểm nhưng mất thời gian.',
+  balloon:'Bóng bay đang bay lên! Chạm quả bóng mang đáp án đúng trước khi nó bay mất.',wordsearch:'Tìm các từ của buổi học trong bảng chữ theo nghĩa cho sẵn.',crossword:'Điền từ tiếng Anh theo nghĩa vào ô chữ; các từ giao nhau ở những chữ cái chung.',
+  openbox:'Chọn hộp bất kỳ. Mỗi hộp là một câu hỏi; có hộp quà +2 điểm và hộp nhân đôi điểm.',dictation:'Bấm nghe, rồi gõ lại từ cho đúng chính tả. Có thể nghe lại và nghe từ trong câu.',missing:'Chạm một từ trong khung rồi chạm vào chỗ trống phù hợp trong câu.',wheel:'Quay vòng và làm thử thách vừa quay được: nghĩa của từ, chính tả hoặc đúng hay sai.'};
+function gTrack(){return S.track||trackFromLevel(S.diag&&S.diag.level)}
 function gPool(n){const D=DAYS[n-1];if(D.vocab)return {v:D.vocab,p:D.phrasal||[],w:(D.wordform&&D.wordform.examples)||[]};
   const from=n===7?[1,2,3,4,5,6]:[8,9,10,11,12,13];const v=[],p=[],w=[];from.forEach(i=>{const d=DAYS[i-1];(d.vocab||[]).slice(0,3).forEach(x=>v.push(x));(d.phrasal||[]).slice(0,1).forEach(x=>p.push(x));((d.wordform&&d.wordform.examples)||[]).slice(0,2).forEach(x=>w.push(x))});return {v,p,w}}
-function gQuizItems(v){const words=v.map(x=>x.word);return v.map(x=>{const re=new RegExp('\\b'+x.word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b','i');const distract=G_SHUF(words.filter(w=>w!==x.word)).slice(0,3);
-  const options=[x.word,...distract];if(re.test(x.example))return {q:x.example.replace(re,'______'),options,answer:0,explain:x.word+' = '+x.meaning_vi};
-  return {q:'Từ nào có nghĩa là "'+x.meaning_vi+'"?',options,answer:0,explain:x.example}})}
-function gamesForDay(n){const P=gPool(n);const W=(C.web&&C.web[n])||{};const GG=W.grammar_games||{};const out=[];
-  (G_PLAN[n]||['match','quiz','flip']).forEach((t,idx)=>{const key=t+idx;
-    if(t==='match')out.push({type:'match',key,title:'Nối từ với nghĩa',how:'Chạm một từ bên trái, rồi chạm nghĩa đúng bên phải. Nối đúng ngay lần đầu mới được điểm.',items:P.v.map(x=>({a:x.word,b:x.meaning_vi})).concat(P.p.map(x=>({a:x.phrase,b:x.meaning_vi})))});
-    else if(t==='matchwf')out.push({type:'match',key,title:'Nối từ gốc với từ mới',how:'Chạm từ gốc, rồi chạm từ được tạo ra từ nó (cấu tạo từ).',items:P.w.map(x=>({a:x[0],b:x[1]}))});
-    else if(t==='flip')out.push({type:'flip',key,title:'Lật thẻ tìm cặp',how:'Lật hai thẻ một lượt. Tìm thẻ từ tiếng Anh và thẻ nghĩa đi với nhau. Càng ít lượt càng nhiều sao.',items:P.v.map(x=>({a:x.word,b:x.meaning_vi})).concat(P.p.map(x=>({a:x.phrase,b:x.meaning_vi})))});
-    else if(t==='anagram')out.push({type:'anagram',key,title:'Xếp chữ thành từ',how:'Đọc nghĩa, chạm các chữ cái theo đúng thứ tự để ghép thành từ tiếng Anh.',items:P.v.filter(x=>/^[a-z]+$/i.test(x.word)).map(x=>({a:x.word.toLowerCase(),b:x.meaning_vi,c:x.ipa||''}))});
-    else if(t==='quiz')out.push({type:'quiz',key,title:'Đố nhanh từ vựng',how:'15 giây mỗi câu. Đúng 3 câu liền được thưởng điểm.',items:gQuizItems(P.v)});
-    else if(t==='sort'&&GG.sort)out.push({type:'sort',key,title:GG.sort.title_vi||'Phân nhóm',how:'Mỗi thẻ hiện ra, em chạm vào nhóm đúng của nó.',groups:GG.sort.groups});
-    else if(t==='unjumble'&&GG.unjumble)out.push({type:'unjumble',key,title:'Xếp từ thành câu',how:'Chạm các từ theo đúng thứ tự để thành câu đúng ngữ pháp. Chạm từ đã xếp để bỏ ra. Được thử 2 lần.',items:GG.unjumble.map(u=>({sentence:u.sentence,hint:u.hint_vi}))});
-    else if(t==='truefalse'&&GG.truefalse)out.push({type:'truefalse',key,title:'Câu này đúng hay sai?',how:'10 giây mỗi câu. Đọc nhanh và quyết định câu đúng hay sai ngữ pháp.',items:GG.truefalse.map(x=>({s:x.s,ok:x.ok,fix:x.fix,why:x.why_vi}))});
-  });
-  // buổi chưa có dữ liệu ngữ pháp: thay bằng game từ vựng khác
-  if(out.length<3){const have=new Set(out.map(o=>o.type));['quiz','flip','anagram','match'].forEach(t=>{if(out.length<3&&!have.has(t)){have.add(t);const s=gamesForDayFallback(P,t);if(s)out.push(s)}})}
+function gQuizItems(v,gapOnly){const words=v.map(x=>x.word);const out=[];v.forEach(x=>{const re=new RegExp('\\b'+x.word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b','i');const distract=G_SHUF(words.filter(w=>w!==x.word)).slice(0,3);
+  const options=[x.word,...distract];if(re.test(x.example))out.push({q:x.example.replace(re,'______'),options,answer:0,explain:x.word+' = '+x.meaning_vi});
+  else if(!gapOnly)out.push({q:'Từ nào có nghĩa là "'+x.meaning_vi+'"?',options,answer:0,explain:x.example})});return out.length>=4?out:gQuizItems(v,false)}
+function gamesForDay(n){const tr=gTrack();const cfg=G_CFG[tr]||G_CFG.chuan;const P=gPool(n);const W=(C.web&&C.web[n])||{};const GG=W.grammar_games||{};const out=[];
+  const V=P.v.map(x=>({w:x.word,m:x.meaning_vi,ex:x.example,ipa:x.ipa}));const VP=V.concat(P.p.map(x=>({w:x.phrase,m:x.meaning_vi,ex:x.example})));
+  const tfPool=(GG.truefalse||[]).map(x=>({kind:'tf',s:x.s,ok:x.ok,fix:x.fix}));const seen=new Set();for(let d=1;d<n;d++)(G_PLAN[d]||[]).forEach(t=>seen.add(t));
+  (G_PLAN[n]||['match','quiz','flip']).forEach((t,idx)=>{const key=t+idx;const base={type:t,key,cfg,isNew:!seen.has(t)};let g=null;
+    if(t==='match')g={title:'Nối từ với nghĩa',how:'Chạm một từ bên trái, rồi chạm nghĩa đúng bên phải. Nối đúng ngay lần đầu mới được điểm.',items:P.v.map(x=>({a:x.word,b:x.meaning_vi})).concat(P.p.map(x=>({a:x.phrase,b:x.meaning_vi}))).concat(tr==='nang'?P.w.map(x=>({a:x[0],b:x[1]})):[])};
+    else if(t==='flip')g={title:'Lật thẻ tìm cặp',how:'Lật hai thẻ một lượt. Tìm thẻ từ tiếng Anh và thẻ nghĩa đi với nhau. Càng ít lượt càng nhiều sao.',items:P.v.map(x=>({a:x.word,b:x.meaning_vi})).concat(P.p.map(x=>({a:x.phrase,b:x.meaning_vi})))};
+    else if(t==='anagram')g={title:'Xếp chữ thành từ',how:'Đọc nghĩa, chạm các chữ cái theo đúng thứ tự để ghép thành từ tiếng Anh.'+(cfg.firstLetter?' Chữ cái đầu đã được xếp sẵn.':''),items:P.v.filter(x=>/^[a-z]+$/i.test(x.word)).map(x=>({a:x.word.toLowerCase(),b:x.meaning_vi,c:tr==='nang'?'':(x.ipa||'')}))};
+    else if(t==='quiz')g={title:'Đố nhanh từ vựng',how:cfg.qtime+' giây mỗi câu. Đúng 3 câu liền được thưởng điểm.',items:gQuizItems(P.v,cfg.gapOnly)};
+    else if(t==='sort'&&GG.sort)g={title:GG.sort.title_vi||'Phân nhóm',how:'Mỗi thẻ hiện ra, em chạm vào nhóm đúng của nó.',groups:GG.sort.groups};
+    else if(t==='unjumble'&&GG.unjumble)g={title:'Xếp từ thành câu',how:'Chạm các từ theo đúng thứ tự để thành câu đúng ngữ pháp. Chạm từ đã xếp để bỏ ra. Được thử 2 lần.',items:GG.unjumble.map(u=>({sentence:u.sentence,hint:tr==='nang'?'':u.hint_vi}))};
+    else if(t==='truefalse'&&GG.truefalse)g={title:'Câu này đúng hay sai?',how:cfg.tftime+' giây mỗi câu. Đọc nhanh và quyết định câu đúng hay sai ngữ pháp.',items:GG.truefalse.map(x=>({s:x.s,ok:x.ok,fix:x.fix,why:x.why_vi}))};
+    else if(t==='openbox')g={title:'Mở hộp bí mật',how:G_HOW.openbox,pool:tfPool.concat(gQuizItems(P.v,cfg.gapOnly).map(q=>Object.assign({kind:'mcq'},q))),cfg:Object.assign({},cfg,{n:tr==='nen'?6:tr==='nang'?10:8})};
+    else if(t==='wheel')g={title:'Vòng quay may mắn',how:G_HOW.wheel,items:V,pool:tfPool,cfg:Object.assign({},cfg,{n:tr==='nen'?5:tr==='nang'?8:6})};
+    else if(['hangman','wordsearch','crossword','dictation','missing'].includes(t))g={title:G_NAME[t],how:G_HOW[t],items:V};
+    else if(t==='whack'||t==='balloon')g={title:G_NAME[t],how:G_HOW[t],items:tr==='nen'?V:VP};
+    if(g)out.push(Object.assign(base,g))});
+  /* Game vận động: buổi 3, 7, 11 nghiêng đầu; buổi 5, 9, 13 bước sang trái/phải */
+  const MO={3:'tilt',7:'tilt',11:'tilt',5:'lean',9:'lean',13:'lean'};
+  if(MO[n]){const voc=G_SHUF(V).slice(0,6).map(x=>{const o=G_SHUF(V.filter(y=>y!==x))[0];const L0=Math.random()<.5;return {q:'Từ nào có nghĩa là: '+x.m+'?',L:L0?x.w:o.w,R:L0?o.w:x.w,ans:L0?'L':'R',why:x.w+' = '+x.m}});
+    const tfs=(GG.truefalse||[]).map(x=>({q:x.s,L:'✓ Đúng',R:'✗ Sai',ans:x.ok?'L':'R',why:x.ok?'Câu này đúng.':'Sửa: '+x.fix}));
+    out.push({type:'motion',key:'motion'+n,mode:MO[n],title:MO[n]==='tilt'?'Nghiêng đầu chọn đáp án':'Bước sang trái – phải',how:'Game vận động: chọn đáp án bằng cách '+(MO[n]==='tilt'?'nghiêng đầu':'bước người')+' sang trái hoặc phải. Không có camera thì bấm nút.',items:G_SHUF(voc).slice(0,4).concat(G_SHUF(tfs).slice(0,4)),cfg:Object.assign({},cfg,{mn:8,mtime:tr==='nen'?10:tr==='nang'?6:8}),isNew:n===3||n===5}) }
+  if(out.length<3){const have=new Set(out.map(o=>o.type));['quiz','flip','anagram','match'].forEach(t=>{if(out.length<3&&!have.has(t)){have.add(t);const s=gamesForDayFallback(P,t);if(s)out.push(Object.assign(s,{cfg}))}})}
   return out}
-function gamesForDayFallback(P,t){const k=t+'f';if(t==='quiz')return {type:'quiz',key:k,title:'Đố nhanh từ vựng',how:'15 giây mỗi câu.',items:gQuizItems(P.v)};
+function gamesForDayFallback(P,t){const k=t+'f';if(t==='quiz')return {type:'quiz',key:k,title:'Đố nhanh từ vựng',how:'Trả lời nhanh trước khi hết giờ.',items:gQuizItems(P.v)};
   if(t==='flip')return {type:'flip',key:k,title:'Lật thẻ tìm cặp',how:'Lật hai thẻ một lượt để tìm cặp từ – nghĩa.',items:P.v.map(x=>({a:x.word,b:x.meaning_vi}))};
   if(t==='anagram')return {type:'anagram',key:k,title:'Xếp chữ thành từ',how:'Chạm các chữ cái theo đúng thứ tự.',items:P.v.filter(x=>/^[a-z]+$/i.test(x.word)).map(x=>({a:x.word.toLowerCase(),b:x.meaning_vi}))};
   return {type:'match',key:k,title:'Nối từ với nghĩa',how:'Chạm từ rồi chạm nghĩa.',items:P.v.map(x=>({a:x.word,b:x.meaning_vi}))}}

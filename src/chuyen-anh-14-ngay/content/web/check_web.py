@@ -5,11 +5,14 @@ def err(f, m):
     print(f"{f}: {m}"); return 1
 
 def check(path):
-    bad = 0
     try:
         d = json.load(open(path, encoding="utf-8"))
     except Exception as e:
         return err(path, f"JSON lỗi: {e}")
+    return check_obj(d, path, full=True)
+
+def check_obj(d, path, full=False):
+    bad = 0
     n = d.get("day")
     if not isinstance(n, int) or not 1 <= n <= 14: bad += err(path, "thiếu 'day' 1–14")
     g = d.get("grammar_games", {})
@@ -74,6 +77,30 @@ def check(path):
             if len(e.get("lines", [])) != 6: bad += err(path, "order: cần 6 lượt lời")
         else:
             bad += err(path, f"kind lạ: {k}")
+    if not full:
+        return bad
+    for key in ("exam_easy", "exam_plus"):
+        if key in d:
+            base = [(e.get("format"), e.get("kind")) for e in ex]
+            got = [(e.get("format"), e.get("kind")) for e in d[key]]
+            if base != got: bad += err(path, f"{key}: dạng/kind phải giống exam: {got} vs {base}")
+            sub = dict(d); sub["exam"] = d[key]; sub.pop("exam_easy", None); sub.pop("exam_plus", None)
+            import io, contextlib
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf): b2 = check_obj(sub, f"{path}#{key}")
+            if b2: print(buf.getvalue().strip()); bad += b2
+        else:
+            bad += err(path, f"thiếu {key}")
+    pp = d.get("paper_plus")
+    if not pp or len(pp.get("items", [])) != 6: bad += err(path, "paper_plus: cần 6 câu")
+    else:
+        for i, it in enumerate(pp["items"], 1):
+            if it.get("id") != f"d{n}H{i}": bad += err(path, f"paper_plus: id phải là d{n}H{i}")
+            if not it.get("q") or not it.get("answer"): bad += err(path, "paper_plus: thiếu q/answer")
+            if it.get("options") and (len(it["options"]) != 4 or it["answer"] not in "ABCD"): bad += err(path, "paper_plus: options 4, answer A–D")
+    pe = d.get("paper_easy")
+    if not pe or not pe.get("hints") or not 6 <= len(pe.get("reading_gloss", [])) <= 8 or not 3 <= len(pe.get("writing_starters", [])) <= 4:
+        bad += err(path, "paper_easy: cần hints, 6–8 reading_gloss, 3–4 writing_starters")
     if not bad: print(f"{path}: OK")
     return bad
 

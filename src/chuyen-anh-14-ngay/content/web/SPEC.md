@@ -76,3 +76,25 @@ Quy ước riêng:
 Buổi 7 và 14 vẫn có `grammar_games` nhưng ôn lại ngữ pháp của các buổi trước (sort trộn nhiều chủ điểm, unjumble và truefalse lấy từ các buổi trước).
 
 Tệp phải là JSON hợp lệ (UTF-8, không chú thích). Kiểm tra bằng `python3 -c "import json;json.load(open('dayNN.json'))"` và chạy `python3 check_web.py dayNN.json` (nếu có) trước khi báo xong.
+
+## Bản theo mức (bổ sung 22/10/2026)
+
+Học sinh được xếp 1 trong 3 mức theo bài đầu vào: **Nền tảng** (dưới A2, A2), **Chuẩn** (A2+, B1), **Nâng cao** (B1+, B2 trở lên). Phần `exam` ở trên là bản **Chuẩn**. Thêm vào mỗi `dayNN.json` các khoá sau (giữ nguyên mọi khoá cũ):
+
+```json
+{
+  "exam_easy": [ … cùng các dạng (format, kind) như "exam", mỗi dạng 5 câu, mức A2: câu ngắn, từ quen, phương án nhiễu khác hẳn nhau, giải thích kỹ hơn … ],
+  "exam_plus": [ … cùng các dạng như "exam", mỗi dạng 5 câu, mức B1+–B2: từ khó hơn (B2), phương án nhiễu gần nghĩa, cấu trúc phức tạp hơn, gần độ khó đề chuyên thật … ],
+  "paper_plus": {"title_vi": "H. Thử thách nâng cao", "instruction_vi": "…", "items": [
+      {"id": "d3H1", "q": "… ______ … (CARE)", "answer": "carelessness", "accept": []},
+      {"id": "d3H2", "q": "…", "options": ["…","…","…","…"], "answer": "B"}
+  ]},
+  "paper_easy": {"hints": {"d3C1": "danh từ", "d3C2": "tính từ"}, "reading_gloss": [["pollution", "sự ô nhiễm"]], "writing_starters": ["In my free time, I …", "…"]}
+}
+```
+
+- `exam_easy` / `exam_plus`: cùng số phần tử, cùng `format` và `kind` theo đúng thứ tự như `exam` (buổi 7 và 14: một khối `mixed`, 10 câu). Nội dung MỚI, không trùng câu với `exam`, `paper`, `web_check`. `intro_vi` và `tip_vi` viết lại cho hợp mức (mức Nền tảng có thể nói rõ hơn, mức Nâng cao nói về câu phân loại trong đề thật). Listening: `exam_easy` nói chậm, câu ngắn, 100–140 từ; `exam_plus` 160–200 từ, có thông tin gây nhiễu.
+- `paper_plus` (bài giấy, chỉ học sinh Nâng cao làm): 6 câu mức B1+–B2 nối tiếp chủ đề và ngữ pháp của buổi: 2 câu cấu tạo từ khó (đổi 2 lần, hoặc tiền tố + hậu tố), 2 câu viết lại câu (câu mới cho sẵn phần đầu trong `q`, ví dụ `"q": "It was such a hot day that we stayed inside. → The day was ______"`), 2 câu trắc nghiệm cụm động từ/collocation/thành ngữ (`options` 4, `answer` là chữ "A"–"D"). `id` dạng `dNH1`…`dNH6`. `answer` đầy đủ, `accept` liệt kê biến thể đúng.
+- `paper_easy` (gợi ý in kèm cho học sinh Nền tảng): `hints` cho từng câu của phần C (cấu tạo từ; buổi ôn: phần R3) nói từ loại cần điền ("danh từ", "tính từ", "trạng từ", "động từ", "danh từ số nhiều"…); `reading_gloss`: 6–8 từ khó trong bài đọc E kèm nghĩa tiếng Việt; `writing_starters`: 3–4 câu mở đầu gợi ý cho bài viết F.
+
+Kiểm tra: `python3 check_web.py dayNN.json` (đã kiểm cả các khoá mới).

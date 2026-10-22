@@ -1,60 +1,521 @@
 {
-  "day": 9,
-  "grammar_games": {
-    "sort": {
-      "title_vi": "Từ nào đi với many / a few, từ nào đi với much / a little?",
-      "groups": [
-        {"name": "many / a few + …", "items": ["ingredients", "festivals", "recipes", "dishes", "spring rolls"]},
-        {"name": "much / a little + …", "items": ["sugar", "information", "fish sauce", "advice", "bread"]}
-      ]
-    },
-    "unjumble": [
-      {"sentence": "How many guests are coming to the festival?", "hint_vi": "How many + danh từ đếm được số nhiều."},
-      {"sentence": "We only need a little sugar for this recipe.", "hint_vi": "a little + danh từ không đếm được (sugar)."},
-      {"sentence": "My grandma gave me some useful advice about cooking.", "hint_vi": "advice không đếm được → dùng some, không dùng an."},
-      {"sentence": "There are plenty of local dishes to try in Huế.", "hint_vi": "plenty of dùng được với danh từ đếm được số nhiều."},
-      {"sentence": "Very few tourists know about this tiny village.", "hint_vi": "few (không có a) = rất ít, nghĩa tiêu cực."}
-    ],
-    "truefalse": [
-      {"s": "Can you give me an information about the festival?", "ok": false, "fix": "Can you give me some information about the festival?", "why_vi": "information không đếm được → không dùng an; dùng some."},
-      {"s": "There are a few bananas in the fridge.", "ok": true, "fix": "There are a few bananas in the fridge.", "why_vi": "Đúng: bananas đếm được số nhiều → a few."},
-      {"s": "How much eggs do we need for the cake?", "ok": false, "fix": "How many eggs do we need for the cake?", "why_vi": "eggs đếm được số nhiều → How many, không dùng How much."},
-      {"s": "The moon looks beautiful during the Mid-Autumn Festival.", "ok": true, "fix": "The moon looks beautiful during the Mid-Autumn Festival.", "why_vi": "Đúng: chỉ có một mặt trăng → the moon."},
-      {"s": "I'd like a little milk in my tea, please.", "ok": true, "fix": "I'd like a little milk in my tea, please.", "why_vi": "Đúng: milk không đếm được → a little."},
-      {"s": "My mum bought two breads at the bakery.", "ok": false, "fix": "My mum bought two loaves of bread at the bakery.", "why_vi": "bread không đếm được, không thêm -s; dùng two loaves of bread."},
-      {"s": "We usually have the breakfast at 6:30.", "ok": false, "fix": "We usually have breakfast at 6:30.", "why_vi": "Không dùng mạo từ trước tên bữa ăn: have breakfast."},
-      {"s": "There is plenty of food for everyone at the party.", "ok": true, "fix": "There is plenty of food for everyone at the party.", "why_vi": "Đúng: plenty of + food (không đếm được) + động từ số ít is."}
-    ]
-  },
-  "exam": [
+ "day": 9,
+ "grammar_games": {
+  "sort": {
+   "title_vi": "Từ nào đi với many / a few, từ nào đi với much / a little?",
+   "groups": [
     {
-      "format": "synonym",
-      "title_vi": "Từ đồng nghĩa",
-      "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu tìm từ đồng nghĩa: mỗi câu có một từ hoặc cụm từ VIẾT HOA, em chọn A, B, C hoặc D có nghĩa gần nhất.",
-      "tip_vi": "Mẹo: thay từng đáp án vào chỗ từ viết hoa; đáp án đúng giữ nguyên nghĩa câu. Cẩn thận với từ chỉ liên quan chủ đề nhưng khác nghĩa.",
-      "kind": "mcq",
-      "items": [
-        {"q": "We have RUN OUT OF rice, so someone has to go to the market.", "options": ["bought plenty of", "used up all the", "cooked a little", "forgotten to buy"], "answer": 1, "explain_vi": "run out of = hết sạch, tức là đã dùng hết (used up all the)."},
-        {"q": "Phở is one of the most POPULAR dishes in Việt Nam.", "options": ["expensive", "traditional", "liked by many people", "difficult to cook"], "answer": 2, "explain_vi": "popular = được nhiều người yêu thích. 'traditional' (truyền thống) là nghĩa khác."},
-        {"q": "My aunt PREPARED a delicious meal for the whole family.", "options": ["ate", "made", "ordered", "bought"], "answer": 1, "explain_vi": "prepare a meal = chuẩn bị, nấu một bữa ăn, gần nghĩa với make a meal."},
-        {"q": "The flower festival in Đà Lạt ATTRACTS thousands of visitors every year.", "options": ["draws", "sends", "refuses", "surprises"], "answer": 0, "explain_vi": "attract = thu hút; draw (visitors/crowds) cũng có nghĩa thu hút người đến."},
-        {"q": "The soup tasted rather BLAND, so I added some fish sauce and pepper.", "options": ["too spicy", "very sweet", "too salty", "without much flavour"], "answer": 3, "explain_vi": "bland = nhạt, ít hương vị; vì vậy mới phải thêm nước mắm và tiêu."}
-      ]
+     "name": "many / a few + …",
+     "items": [
+      "ingredients",
+      "festivals",
+      "recipes",
+      "dishes",
+      "spring rolls"
+     ]
     },
     {
-      "format": "open_cloze",
-      "title_vi": "Điền từ vào đoạn văn (không có lựa chọn)",
-      "intro_vi": "Đề chuyên Anh của Sở thường có bài điền một từ vào đoạn văn mà không cho sẵn lựa chọn. Từ cần điền hay là mạo từ, giới từ, lượng từ hoặc trợ động từ.",
-      "tip_vi": "Mẹo: nhìn từ ngay sau chỗ trống. Danh từ số ít đếm được cần a/an/the; danh từ số nhiều đi với many/few; trước buổi trong ngày dùng in.",
-      "kind": "gap_text",
-      "text": "Have you ever tried bánh cuốn? It is [1] traditional dish from the north of Việt Nam, and many people in Hà Nội eat it [2] the morning. How [3] main ingredients do you need to make it? Only four: rice flour, water, minced pork and mushrooms. The cook spreads a thin layer of rice batter on a cloth over a pot of boiling water. After a [4] seconds, the soft rice sheet is ready. It is filled with pork and mushrooms, then rolled up. Bánh cuốn is served with fried shallots, fresh herbs and a small bowl of dipping sauce. [5] sauce is made from fish sauce, sugar, lime and water, and it gives the dish its special flavour. If you visit Hà Nội, try it at a local market!",
-      "items": [
-        {"answer": "a", "accept": [], "explain_vi": "Danh từ đếm được số ít, nhắc lần đầu: a traditional dish."},
-        {"answer": "in", "accept": ["during"], "explain_vi": "Buổi trong ngày đi với in: in the morning."},
-        {"answer": "many", "accept": [], "explain_vi": "ingredients là danh từ đếm được số nhiều → How many."},
-        {"answer": "few", "accept": [], "explain_vi": "seconds đếm được số nhiều → a few seconds (vài giây)."},
-        {"answer": "The", "accept": ["the", "This", "this"], "explain_vi": "Nước chấm đã được nhắc ở câu trước → dùng The sauce (This sauce cũng được)."}
-      ]
+     "name": "much / a little + …",
+     "items": [
+      "sugar",
+      "information",
+      "fish sauce",
+      "advice",
+      "bread"
+     ]
     }
+   ]
+  },
+  "unjumble": [
+   {
+    "sentence": "How many guests are coming to the festival?",
+    "hint_vi": "How many + danh từ đếm được số nhiều."
+   },
+   {
+    "sentence": "We only need a little sugar for this recipe.",
+    "hint_vi": "a little + danh từ không đếm được (sugar)."
+   },
+   {
+    "sentence": "My grandma gave me some useful advice about cooking.",
+    "hint_vi": "advice không đếm được → dùng some, không dùng an."
+   },
+   {
+    "sentence": "There are plenty of local dishes to try in Huế.",
+    "hint_vi": "plenty of dùng được với danh từ đếm được số nhiều."
+   },
+   {
+    "sentence": "Very few tourists know about this tiny village.",
+    "hint_vi": "few (không có a) = rất ít, nghĩa tiêu cực."
+   }
+  ],
+  "truefalse": [
+   {
+    "s": "Can you give me an information about the festival?",
+    "ok": false,
+    "fix": "Can you give me some information about the festival?",
+    "why_vi": "information không đếm được → không dùng an; dùng some."
+   },
+   {
+    "s": "There are a few bananas in the fridge.",
+    "ok": true,
+    "fix": "There are a few bananas in the fridge.",
+    "why_vi": "Đúng: bananas đếm được số nhiều → a few."
+   },
+   {
+    "s": "How much eggs do we need for the cake?",
+    "ok": false,
+    "fix": "How many eggs do we need for the cake?",
+    "why_vi": "eggs đếm được số nhiều → How many, không dùng How much."
+   },
+   {
+    "s": "The moon looks beautiful during the Mid-Autumn Festival.",
+    "ok": true,
+    "fix": "The moon looks beautiful during the Mid-Autumn Festival.",
+    "why_vi": "Đúng: chỉ có một mặt trăng → the moon."
+   },
+   {
+    "s": "I'd like a little milk in my tea, please.",
+    "ok": true,
+    "fix": "I'd like a little milk in my tea, please.",
+    "why_vi": "Đúng: milk không đếm được → a little."
+   },
+   {
+    "s": "My mum bought two breads at the bakery.",
+    "ok": false,
+    "fix": "My mum bought two loaves of bread at the bakery.",
+    "why_vi": "bread không đếm được, không thêm -s; dùng two loaves of bread."
+   },
+   {
+    "s": "We usually have the breakfast at 6:30.",
+    "ok": false,
+    "fix": "We usually have breakfast at 6:30.",
+    "why_vi": "Không dùng mạo từ trước tên bữa ăn: have breakfast."
+   },
+   {
+    "s": "There is plenty of food for everyone at the party.",
+    "ok": true,
+    "fix": "There is plenty of food for everyone at the party.",
+    "why_vi": "Đúng: plenty of + food (không đếm được) + động từ số ít is."
+   }
   ]
+ },
+ "exam": [
+  {
+   "format": "synonym",
+   "title_vi": "Từ đồng nghĩa",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu tìm từ đồng nghĩa: mỗi câu có một từ hoặc cụm từ VIẾT HOA, em chọn A, B, C hoặc D có nghĩa gần nhất.",
+   "tip_vi": "Mẹo: thay từng đáp án vào chỗ từ viết hoa; đáp án đúng giữ nguyên nghĩa câu. Cẩn thận với từ chỉ liên quan chủ đề nhưng khác nghĩa.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "We have RUN OUT OF rice, so someone has to go to the market.",
+     "options": [
+      "bought plenty of",
+      "used up all the",
+      "cooked a little",
+      "forgotten to buy"
+     ],
+     "answer": 1,
+     "explain_vi": "run out of = hết sạch, tức là đã dùng hết (used up all the)."
+    },
+    {
+     "q": "Phở is one of the most POPULAR dishes in Việt Nam.",
+     "options": [
+      "expensive",
+      "traditional",
+      "liked by many people",
+      "difficult to cook"
+     ],
+     "answer": 2,
+     "explain_vi": "popular = được nhiều người yêu thích. 'traditional' (truyền thống) là nghĩa khác."
+    },
+    {
+     "q": "My aunt PREPARED a delicious meal for the whole family.",
+     "options": [
+      "ate",
+      "made",
+      "ordered",
+      "bought"
+     ],
+     "answer": 1,
+     "explain_vi": "prepare a meal = chuẩn bị, nấu một bữa ăn, gần nghĩa với make a meal."
+    },
+    {
+     "q": "The flower festival in Đà Lạt ATTRACTS thousands of visitors every year.",
+     "options": [
+      "draws",
+      "sends",
+      "refuses",
+      "surprises"
+     ],
+     "answer": 0,
+     "explain_vi": "attract = thu hút; draw (visitors/crowds) cũng có nghĩa thu hút người đến."
+    },
+    {
+     "q": "The soup tasted rather BLAND, so I added some fish sauce and pepper.",
+     "options": [
+      "too spicy",
+      "very sweet",
+      "too salty",
+      "without much flavour"
+     ],
+     "answer": 3,
+     "explain_vi": "bland = nhạt, ít hương vị; vì vậy mới phải thêm nước mắm và tiêu."
+    }
+   ]
+  },
+  {
+   "format": "open_cloze",
+   "title_vi": "Điền từ vào đoạn văn (không có lựa chọn)",
+   "intro_vi": "Đề chuyên Anh của Sở thường có bài điền một từ vào đoạn văn mà không cho sẵn lựa chọn. Từ cần điền hay là mạo từ, giới từ, lượng từ hoặc trợ động từ.",
+   "tip_vi": "Mẹo: nhìn từ ngay sau chỗ trống. Danh từ số ít đếm được cần a/an/the; danh từ số nhiều đi với many/few; trước buổi trong ngày dùng in.",
+   "kind": "gap_text",
+   "text": "Have you ever tried bánh cuốn? It is [1] traditional dish from the north of Việt Nam, and many people in Hà Nội eat it [2] the morning. How [3] main ingredients do you need to make it? Only four: rice flour, water, minced pork and mushrooms. The cook spreads a thin layer of rice batter on a cloth over a pot of boiling water. After a [4] seconds, the soft rice sheet is ready. It is filled with pork and mushrooms, then rolled up. Bánh cuốn is served with fried shallots, fresh herbs and a small bowl of dipping sauce. [5] sauce is made from fish sauce, sugar, lime and water, and it gives the dish its special flavour. If you visit Hà Nội, try it at a local market!",
+   "items": [
+    {
+     "answer": "a",
+     "accept": [],
+     "explain_vi": "Danh từ đếm được số ít, nhắc lần đầu: a traditional dish."
+    },
+    {
+     "answer": "in",
+     "accept": [
+      "during"
+     ],
+     "explain_vi": "Buổi trong ngày đi với in: in the morning."
+    },
+    {
+     "answer": "many",
+     "accept": [],
+     "explain_vi": "ingredients là danh từ đếm được số nhiều → How many."
+    },
+    {
+     "answer": "few",
+     "accept": [],
+     "explain_vi": "seconds đếm được số nhiều → a few seconds (vài giây)."
+    },
+    {
+     "answer": "The",
+     "accept": [
+      "the",
+      "This",
+      "this"
+     ],
+     "explain_vi": "Nước chấm đã được nhắc ở câu trước → dùng The sauce (This sauce cũng được)."
+    }
+   ]
+  }
+ ],
+ "exam_easy": [
+  {
+   "format": "synonym",
+   "title_vi": "Từ đồng nghĩa",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu tìm từ đồng nghĩa. Mỗi câu có một từ VIẾT HOA. Em chọn A, B, C hoặc D có nghĩa giống nhất với từ đó.",
+   "tip_vi": "Mẹo: đọc cả câu để đoán nghĩa từ viết hoa, rồi thay từng đáp án vào chỗ đó. Đáp án nào làm câu vẫn giữ nguyên nghĩa là đúng.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "This fish soup is DELICIOUS. Can I have some more?",
+     "options": [
+      "very tasty",
+      "very old",
+      "very cold",
+      "very cheap"
+     ],
+     "answer": 0,
+     "explain_vi": "delicious = rất ngon, giống 'very tasty'. Người nói muốn ăn thêm, nên món ăn phải ngon."
+    },
+    {
+     "q": "Bánh mì is a FAMOUS dish from Việt Nam.",
+     "options": [
+      "new",
+      "cheap",
+      "well-known",
+      "small"
+     ],
+     "answer": 2,
+     "explain_vi": "famous = nổi tiếng, nhiều người biết đến, giống 'well-known'. Các từ còn lại nghĩa khác hẳn: mới, rẻ, nhỏ."
+    },
+    {
+     "q": "The lantern festival in our town BEGINS at seven o'clock in the evening.",
+     "options": [
+      "ends",
+      "starts",
+      "stops",
+      "closes"
+     ],
+     "answer": 1,
+     "explain_vi": "begin = bắt đầu, giống 'start'. 'ends', 'stops', 'closes' đều có nghĩa là kết thúc, dừng lại."
+    },
+    {
+     "q": "Could you GIVE me the salt, please?",
+     "options": [
+      "sell",
+      "cook",
+      "eat",
+      "pass"
+     ],
+     "answer": 3,
+     "explain_vi": "Trên bàn ăn, nhờ ai đưa giúp đồ gì ta nói 'pass me the salt' = give me the salt (đưa cho tôi lọ muối)."
+    },
+    {
+     "q": "The night market is always BUSY at the weekend.",
+     "options": [
+      "full of people",
+      "quiet",
+      "closed",
+      "clean"
+     ],
+     "answer": 0,
+     "explain_vi": "Chợ 'busy' = đông người, nhộn nhịp, tức là 'full of people'. 'quiet' (yên tĩnh) là nghĩa ngược lại."
+    }
+   ]
+  },
+  {
+   "format": "open_cloze",
+   "title_vi": "Điền từ vào đoạn văn (không có lựa chọn)",
+   "intro_vi": "Dạng này có một đoạn văn với các chỗ trống và không cho sẵn lựa chọn. Em tự điền MỘT từ, thường là a/an/the, much/many hoặc giới từ như in, on, at, of.",
+   "tip_vi": "Mẹo: nhìn từ ngay sau chỗ trống: danh từ số ít, số nhiều hay không đếm được? Vật đã được nhắc đến trước đó thì dùng 'the'.",
+   "kind": "gap_text",
+   "text": "Hi! I'm Nam and I live in [1] small town near Huế. Every Sunday morning, I go to the market with my mum. She buys a lot [2] vegetables, some fish and a bag of rice. Last Sunday, I bought [3] apple and a banana with my pocket money. Then Mum asked me, \"How [4] money have you got left?\" I had only two thousand dong! When we got home, I gave [5] apple to my little sister and ate the banana myself.",
+   "items": [
+    {
+     "answer": "a",
+     "accept": [],
+     "explain_vi": "town là danh từ đếm được số ít, nhắc đến lần đầu, 'small' bắt đầu bằng phụ âm → a small town."
+    },
+    {
+     "answer": "of",
+     "accept": [],
+     "explain_vi": "Cụm cố định: a lot of + danh từ (a lot of vegetables = rất nhiều rau)."
+    },
+    {
+     "answer": "an",
+     "accept": [
+      "one"
+     ],
+     "explain_vi": "apple bắt đầu bằng nguyên âm 'a', là danh từ đếm được số ít, nhắc đến lần đầu → an apple."
+    },
+    {
+     "answer": "much",
+     "accept": [],
+     "explain_vi": "money là danh từ không đếm được → How much money (bao nhiêu tiền)."
+    },
+    {
+     "answer": "the",
+     "accept": [],
+     "explain_vi": "Quả táo này đã được nhắc đến ở câu trước (an apple) → lần sau dùng the apple."
+    }
+   ]
+  }
+ ],
+ "exam_plus": [
+  {
+   "format": "synonym",
+   "title_vi": "Từ đồng nghĩa",
+   "intro_vi": "Ở đề Chuyên Ngoại ngữ, các câu đồng nghĩa khó thường dùng từ B2, cụm động từ hoặc thành ngữ; phương án nhiễu gần nghĩa hoặc cùng chủ đề. Đây là những câu phân loại học sinh giỏi.",
+   "tip_vi": "Mẹo: so sắc thái (khen hay chê), cách kết hợp từ và ngữ pháp (đếm được hay không). Phương án gần nghĩa nhưng lệch sắc thái là bẫy chính.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "This small family restaurant in Hội An is RENOWNED for its cao lầu.",
+     "options": [
+      "notorious",
+      "criticised",
+      "celebrated",
+      "recommended"
+     ],
+     "answer": 2,
+     "explain_vi": "renowned = nổi tiếng (nghĩa tốt) = celebrated. 'notorious' cũng là nổi tiếng nhưng vì điều xấu – bẫy sắc thái."
+    },
+    {
+     "q": "Our school canteen serves PLENTY OF fresh vegetables every day.",
+     "options": [
+      "a great deal of",
+      "a large number of",
+      "a variety of",
+      "a lack of"
+     ],
+     "answer": 1,
+     "explain_vi": "plenty of = rất nhiều. vegetables đếm được số nhiều → a large number of. 'a great deal of' chỉ đi với danh từ không đếm được."
+    },
+    {
+     "q": "After the long walk, the hungry children POLISHED OFF the whole plate of spring rolls in minutes.",
+     "options": [
+      "quickly finished",
+      "carefully cleaned",
+      "shared out",
+      "nicely decorated"
+     ],
+     "answer": 0,
+     "explain_vi": "polish off (food) = ăn sạch thật nhanh. 'carefully cleaned' là bẫy vì 'polish' còn có nghĩa đánh bóng."
+    },
+    {
+     "q": "Tết customs VARY from region to region, so a family meal in Huế may look quite different from one in Hà Nội.",
+     "options": [
+      "survive",
+      "spread",
+      "develop",
+      "differ"
+     ],
+     "answer": 3,
+     "explain_vi": "vary = khác nhau, thay đổi tuỳ nơi = differ. Vế sau 'look quite different' xác nhận nghĩa này."
+    },
+    {
+     "q": "Many young chefs are trying to PRESERVE the cooking traditions of their grandparents' generation.",
+     "options": [
+      "abandon",
+      "maintain",
+      "promote",
+      "modernise"
+     ],
+     "answer": 1,
+     "explain_vi": "preserve = gìn giữ, bảo tồn = maintain. 'promote' (quảng bá) gần chủ đề nhưng khác nghĩa; 'abandon' là trái nghĩa."
+    }
+   ]
+  },
+  {
+   "format": "open_cloze",
+   "title_vi": "Điền từ vào đoạn văn (không có lựa chọn)",
+   "intro_vi": "Bài điền từ không có lựa chọn trong đề Sở và Chuyên Ngoại ngữ thường có vài chỗ trống phân loại: lượng từ nghĩa phủ định (few/little), cụm cố định (a great deal of), giới từ đi kèm.",
+   "tip_vi": "Mẹo: đọc cả câu trước và sau chỗ trống để biết nghĩa tích cực hay phủ định, và tìm cụm từ cố định, đừng chỉ nhìn từ ngay sau.",
+   "kind": "gap_text",
+   "text": "Street food is [1] essential part of daily life in Việt Nam. Walk down almost any street in Hà Nội and you will find someone selling bún, xôi or bánh mì from a tiny stall on the pavement. Very [2] of these vendors have ever had any formal training; most of them simply learned their recipes from their parents. Even so, they put a great [3] of effort into every bowl, and their dishes are by no means lacking [4] flavour. In recent years, [5] popularity of street food tours has grown so rapidly that they are now one of the city's top attractions for foreign visitors.",
+   "items": [
+    {
+     "answer": "an",
+     "accept": [],
+     "explain_vi": "part đếm được số ít, chưa xác định; 'essential' bắt đầu bằng nguyên âm → an essential part."
+    },
+    {
+     "answer": "few",
+     "accept": [],
+     "explain_vi": "Very few of + danh từ số nhiều = rất ít (phủ định). Vế sau 'most of them simply learned…' cho thấy hầu như không ai được đào tạo."
+    },
+    {
+     "answer": "deal",
+     "accept": [],
+     "explain_vi": "Cụm cố định: a great deal of + danh từ không đếm được (effort) = rất nhiều."
+    },
+    {
+     "answer": "in",
+     "accept": [],
+     "explain_vi": "Cụm: lacking in sth = thiếu cái gì. 'by no means lacking in flavour' = không hề thiếu hương vị."
+    },
+    {
+     "answer": "the",
+     "accept": [],
+     "explain_vi": "popularity được xác định bởi 'of street food tours' → the popularity of…"
+    }
+   ]
+  }
+ ],
+ "paper_plus": {
+  "title_vi": "H. Thử thách nâng cao",
+  "instruction_vi": "Câu 1–2: viết dạng đúng của từ in hoa (có thể phải đổi từ 2 lần hoặc thêm tiền tố). Câu 3–4: viết tiếp câu thứ hai sao cho nghĩa không đổi. Câu 5–6: khoanh A, B, C hoặc D.",
+  "items": [
+   {
+    "id": "d9H1",
+    "q": "The ______ of the new menu surprised the restaurant owners; hardly anyone ordered from it. (POPULAR)",
+    "answer": "unpopularity",
+    "accept": []
+   },
+   {
+    "id": "d9H2",
+    "q": "The judges praised the young chef's ______; nobody had ever thought of putting mango in phở before. (CREATE)",
+    "answer": "creativity",
+    "accept": [
+     "creativeness"
+    ]
+   },
+   {
+    "id": "d9H3",
+    "q": "Very few people came to the festival because of the rain. → Hardly ______",
+    "answer": "anyone came to the festival because of the rain.",
+    "accept": [
+     "anyone came to the festival because of the rain",
+     "anybody came to the festival because of the rain.",
+     "anybody came to the festival because of the rain"
+    ]
+   },
+   {
+    "id": "d9H4",
+    "q": "There is hardly any sugar left in the jar. → We have almost run ______",
+    "answer": "out of sugar.",
+    "accept": [
+     "out of sugar"
+    ]
+   },
+   {
+    "id": "d9H5",
+    "q": "The smell of Grandma's bánh chưng was so wonderful that it made my mouth ______.",
+    "options": [
+     "water",
+     "wet",
+     "melt",
+     "run"
+    ],
+    "answer": "A"
+   },
+   {
+    "id": "d9H6",
+    "q": "Every family has its own way of making nem, and Mum's recipe has been ______ from generation to generation.",
+    "options": [
+     "passed down",
+     "passed out",
+     "given up",
+     "taken over"
+    ],
+    "answer": "A"
+   }
+  ]
+ },
+ "paper_easy": {
+  "hints": {
+   "d9C1": "danh từ (sau 'your'; thêm đuôi -ness)",
+   "d9C2": "danh từ (sau 'The'; thêm đuôi -ity)",
+   "d9C3": "danh từ (sau 'a great'; thêm đuôi -ity)",
+   "d9C4": "danh từ (sau 'full of'; y đổi thành i + -ness)"
+  },
+  "reading_gloss": [
+   [
+    "gathers",
+    "tụ họp, quây quần"
+   ],
+   [
+    "banana leaves",
+    "lá chuối (lá để gói bánh)"
+   ],
+   [
+    "sticky rice",
+    "gạo nếp"
+   ],
+   [
+    "green beans",
+    "đậu xanh"
+   ],
+   [
+    "pepper",
+    "hạt tiêu"
+   ],
+   [
+    "square",
+    "hình vuông"
+   ],
+   [
+    "boiled",
+    "luộc, nấu trong nước sôi"
+   ],
+   [
+    "take turns",
+    "thay phiên nhau"
+   ]
+  ],
+  "writing_starters": [
+   "My favourite traditional dish is …",
+   "The main ingredients are … and a little …",
+   "People usually eat it at/on …",
+   "I like it because …"
+  ]
+ }
 }

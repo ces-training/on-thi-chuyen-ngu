@@ -1,72 +1,529 @@
 {
-  "day": 3,
-  "grammar_games": {
-    "sort": {
-      "title_vi": "Xếp mỗi câu vào đúng thì",
-      "groups": [
-        {"name": "Present perfect", "items": [
-          "We have recycled 50 kg of paper so far.",
-          "Have you ever planted a tree?",
-          "They haven't cleaned the beach yet.",
-          "I have just thrown away the old boxes.",
-          "The river has been dirty since 2015."
-        ]},
-        {"name": "Past simple", "items": [
-          "We planted trees last Sunday.",
-          "The storm destroyed many houses in 2020.",
-          "I visited Cuc Phuong two years ago.",
-          "When did you start recycling?",
-          "Lan picked up rubbish in the park yesterday."
-        ]}
-      ]
-    },
-    "unjumble": [
-      {"sentence": "Have you ever seen a sea turtle?", "hint_vi": "Câu hỏi hiện tại hoàn thành với ever"},
-      {"sentence": "We have used cloth bags since last year.", "hint_vi": "since + mốc thời gian"},
-      {"sentence": "The factory closed three years ago because of pollution.", "hint_vi": "… ago → quá khứ đơn"},
-      {"sentence": "We haven't recycled our old batteries yet.", "hint_vi": "yet đứng cuối câu phủ định"},
-      {"sentence": "Many species of frogs have disappeared from this area.", "hint_vi": "Hiện tại hoàn thành: kết quả còn đến bây giờ"}
-    ],
-    "truefalse": [
-      {"s": "We have cleaned the beach last weekend.", "ok": false, "fix": "We cleaned the beach last weekend.", "why_vi": "Có thời gian xác định (last weekend) → quá khứ đơn."},
-      {"s": "The air in Hanoi has become more polluted in recent years.", "ok": true, "fix": "The air in Hanoi has become more polluted in recent years.", "why_vi": "'in recent years' (những năm gần đây) đi với hiện tại hoàn thành."},
-      {"s": "My dad has worked at a recycling centre for ten years.", "ok": true, "fix": "My dad has worked at a recycling centre for ten years.", "why_vi": "for + khoảng thời gian, việc vẫn còn tiếp diễn → hiện tại hoàn thành."},
-      {"s": "I have lived here since five years.", "ok": false, "fix": "I have lived here for five years.", "why_vi": "five years là khoảng thời gian → dùng for, không dùng since."},
-      {"s": "Have you finished your science poster yet?", "ok": true, "fix": "Have you finished your science poster yet?", "why_vi": "yet đứng cuối câu hỏi hiện tại hoàn thành."},
-      {"s": "She hasn't already sorted the rubbish.", "ok": false, "fix": "She hasn't sorted the rubbish yet.", "why_vi": "Câu phủ định dùng yet ở cuối câu, không dùng already."},
-      {"s": "When have you started saving water?", "ok": false, "fix": "When did you start saving water?", "why_vi": "Câu hỏi với When hỏi thời điểm cụ thể → quá khứ đơn."},
-      {"s": "Look! Someone has thrown rubbish into the lake.", "ok": true, "fix": "Look! Someone has thrown rubbish into the lake.", "why_vi": "Việc vừa xảy ra, kết quả nhìn thấy ngay bây giờ → hiện tại hoàn thành."}
-    ]
-  },
-  "exam": [
+ "day": 3,
+ "grammar_games": {
+  "sort": {
+   "title_vi": "Xếp mỗi câu vào đúng thì",
+   "groups": [
     {
-      "format": "antonym",
-      "title_vi": "Từ trái nghĩa",
-      "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu chọn từ/cụm từ TRÁI nghĩa với phần VIẾT HOA trong câu. Hôm nay em làm 5 câu.",
-      "tip_vi": "Hiểu nghĩa phần VIẾT HOA trước. Đề thường cài một đáp án ĐỒNG nghĩa làm bẫy, em loại nó ra trước.",
-      "kind": "mcq",
-      "items": [
-        {"q": "Many people still THROW AWAY plastic bottles after using them only once.", "options": ["keep", "drop", "dump", "break"], "answer": 0, "explain_vi": "throw away (vứt đi) >< keep (giữ lại). 'dump' gần nghĩa với throw away nên là bẫy."},
-        {"q": "The flood caused SERIOUS damage to the village.", "options": ["minor", "heavy", "terrible", "natural"], "answer": 0, "explain_vi": "serious (nghiêm trọng) >< minor (nhỏ, không đáng kể). heavy, terrible gần nghĩa với serious."},
-        {"q": "This national park PROTECTS many rare species.", "options": ["destroys", "saves", "guards", "shelters"], "answer": 0, "explain_vi": "protect (bảo vệ) >< destroy (phá huỷ). saves, guards, shelters đều gần nghĩa với protect."},
-        {"q": "The number of tigers in the wild has DECREASED over the last 100 years.", "options": ["risen", "fallen", "dropped", "changed"], "answer": 0, "explain_vi": "decrease (giảm) >< rise (tăng). fallen, dropped cùng nghĩa 'giảm' nên là bẫy."},
-        {"q": "This kind of mushroom is HARMLESS, so you can eat it.", "options": ["poisonous", "natural", "delicious", "safe"], "answer": 0, "explain_vi": "harmless (vô hại) >< poisonous (có độc). 'safe' đồng nghĩa với harmless."}
-      ]
+     "name": "Present perfect",
+     "items": [
+      "We have recycled 50 kg of paper so far.",
+      "Have you ever planted a tree?",
+      "They haven't cleaned the beach yet.",
+      "I have just thrown away the old boxes.",
+      "The river has been dirty since 2015."
+     ]
     },
     {
-      "format": "word_formation",
-      "title_vi": "Dạng đúng của từ",
-      "intro_vi": "Đề Sở chuyên Anh Hà Nội có câu viết dạng đúng của từ cho sẵn trong phần kiến thức ngôn ngữ, đôi khi đặt trong một đoạn văn. Hôm nay em làm 5 chỗ trống.",
-      "tip_vi": "Xác định loại từ cần điền: trước danh từ là tính từ, sau a/an/the là danh từ. Nhớ đổi chính tả: fame → famous.",
-      "kind": "gap_text",
-      "text": "Our school is next to a small lake. Ten years ago, the lake was [1] for its pink lotus flowers. Then a factory was built nearby, and the water became [2] to fish and plants. Last year, our class started an [3] project to save the lake. Since then, we have collected bags and bags of rubbish, and we have asked visitors not to be [4] with their waste. Fish have come back, and a [5] newspaper has even written about our work.",
-      "items": [
-        {"answer": "famous", "accept": [], "base": "FAME", "explain_vi": "be famous for = nổi tiếng vì. fame bỏ -e, thêm -ous."},
-        {"answer": "poisonous", "accept": [], "base": "POISON", "explain_vi": "Sau 'became' cần tính từ: poison + -ous = poisonous (có độc)."},
-        {"answer": "environmental", "accept": [], "base": "ENVIRONMENT", "explain_vi": "Trước danh từ 'project' cần tính từ: environment + -al. Mạo từ 'an' hợp với từ bắt đầu bằng nguyên âm."},
-        {"answer": "careless", "accept": [], "base": "CARE", "explain_vi": "Nhắc khách đừng cẩu thả với rác: care + -less = careless (đuôi đã học ở buổi 2)."},
-        {"answer": "national", "accept": [], "base": "NATION", "explain_vi": "Trước danh từ 'newspaper' cần tính từ: nation + -al = national (toàn quốc)."}
-      ]
+     "name": "Past simple",
+     "items": [
+      "We planted trees last Sunday.",
+      "The storm destroyed many houses in 2020.",
+      "I visited Cuc Phuong two years ago.",
+      "When did you start recycling?",
+      "Lan picked up rubbish in the park yesterday."
+     ]
     }
+   ]
+  },
+  "unjumble": [
+   {
+    "sentence": "Have you ever seen a sea turtle?",
+    "hint_vi": "Câu hỏi hiện tại hoàn thành với ever"
+   },
+   {
+    "sentence": "We have used cloth bags since last year.",
+    "hint_vi": "since + mốc thời gian"
+   },
+   {
+    "sentence": "The factory closed three years ago because of pollution.",
+    "hint_vi": "… ago → quá khứ đơn"
+   },
+   {
+    "sentence": "We haven't recycled our old batteries yet.",
+    "hint_vi": "yet đứng cuối câu phủ định"
+   },
+   {
+    "sentence": "Many species of frogs have disappeared from this area.",
+    "hint_vi": "Hiện tại hoàn thành: kết quả còn đến bây giờ"
+   }
+  ],
+  "truefalse": [
+   {
+    "s": "We have cleaned the beach last weekend.",
+    "ok": false,
+    "fix": "We cleaned the beach last weekend.",
+    "why_vi": "Có thời gian xác định (last weekend) → quá khứ đơn."
+   },
+   {
+    "s": "The air in Hanoi has become more polluted in recent years.",
+    "ok": true,
+    "fix": "The air in Hanoi has become more polluted in recent years.",
+    "why_vi": "'in recent years' (những năm gần đây) đi với hiện tại hoàn thành."
+   },
+   {
+    "s": "My dad has worked at a recycling centre for ten years.",
+    "ok": true,
+    "fix": "My dad has worked at a recycling centre for ten years.",
+    "why_vi": "for + khoảng thời gian, việc vẫn còn tiếp diễn → hiện tại hoàn thành."
+   },
+   {
+    "s": "I have lived here since five years.",
+    "ok": false,
+    "fix": "I have lived here for five years.",
+    "why_vi": "five years là khoảng thời gian → dùng for, không dùng since."
+   },
+   {
+    "s": "Have you finished your science poster yet?",
+    "ok": true,
+    "fix": "Have you finished your science poster yet?",
+    "why_vi": "yet đứng cuối câu hỏi hiện tại hoàn thành."
+   },
+   {
+    "s": "She hasn't already sorted the rubbish.",
+    "ok": false,
+    "fix": "She hasn't sorted the rubbish yet.",
+    "why_vi": "Câu phủ định dùng yet ở cuối câu, không dùng already."
+   },
+   {
+    "s": "When have you started saving water?",
+    "ok": false,
+    "fix": "When did you start saving water?",
+    "why_vi": "Câu hỏi với When hỏi thời điểm cụ thể → quá khứ đơn."
+   },
+   {
+    "s": "Look! Someone has thrown rubbish into the lake.",
+    "ok": true,
+    "fix": "Look! Someone has thrown rubbish into the lake.",
+    "why_vi": "Việc vừa xảy ra, kết quả nhìn thấy ngay bây giờ → hiện tại hoàn thành."
+   }
   ]
+ },
+ "exam": [
+  {
+   "format": "antonym",
+   "title_vi": "Từ trái nghĩa",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu chọn từ/cụm từ TRÁI nghĩa với phần VIẾT HOA trong câu. Hôm nay em làm 5 câu.",
+   "tip_vi": "Hiểu nghĩa phần VIẾT HOA trước. Đề thường cài một đáp án ĐỒNG nghĩa làm bẫy, em loại nó ra trước.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "Many people still THROW AWAY plastic bottles after using them only once.",
+     "options": [
+      "keep",
+      "drop",
+      "dump",
+      "break"
+     ],
+     "answer": 0,
+     "explain_vi": "throw away (vứt đi) >< keep (giữ lại). 'dump' gần nghĩa với throw away nên là bẫy."
+    },
+    {
+     "q": "The flood caused SERIOUS damage to the village.",
+     "options": [
+      "minor",
+      "heavy",
+      "terrible",
+      "natural"
+     ],
+     "answer": 0,
+     "explain_vi": "serious (nghiêm trọng) >< minor (nhỏ, không đáng kể). heavy, terrible gần nghĩa với serious."
+    },
+    {
+     "q": "This national park PROTECTS many rare species.",
+     "options": [
+      "destroys",
+      "saves",
+      "guards",
+      "shelters"
+     ],
+     "answer": 0,
+     "explain_vi": "protect (bảo vệ) >< destroy (phá huỷ). saves, guards, shelters đều gần nghĩa với protect."
+    },
+    {
+     "q": "The number of tigers in the wild has DECREASED over the last 100 years.",
+     "options": [
+      "risen",
+      "fallen",
+      "dropped",
+      "changed"
+     ],
+     "answer": 0,
+     "explain_vi": "decrease (giảm) >< rise (tăng). fallen, dropped cùng nghĩa 'giảm' nên là bẫy."
+    },
+    {
+     "q": "This kind of mushroom is HARMLESS, so you can eat it.",
+     "options": [
+      "poisonous",
+      "natural",
+      "delicious",
+      "safe"
+     ],
+     "answer": 0,
+     "explain_vi": "harmless (vô hại) >< poisonous (có độc). 'safe' đồng nghĩa với harmless."
+    }
+   ]
+  },
+  {
+   "format": "word_formation",
+   "title_vi": "Dạng đúng của từ",
+   "intro_vi": "Đề Sở chuyên Anh Hà Nội có câu viết dạng đúng của từ cho sẵn trong phần kiến thức ngôn ngữ, đôi khi đặt trong một đoạn văn. Hôm nay em làm 5 chỗ trống.",
+   "tip_vi": "Xác định loại từ cần điền: trước danh từ là tính từ, sau a/an/the là danh từ. Nhớ đổi chính tả: fame → famous.",
+   "kind": "gap_text",
+   "text": "Our school is next to a small lake. Ten years ago, the lake was [1] for its pink lotus flowers. Then a factory was built nearby, and the water became [2] to fish and plants. Last year, our class started an [3] project to save the lake. Since then, we have collected bags and bags of rubbish, and we have asked visitors not to be [4] with their waste. Fish have come back, and a [5] newspaper has even written about our work.",
+   "items": [
+    {
+     "answer": "famous",
+     "accept": [],
+     "base": "FAME",
+     "explain_vi": "be famous for = nổi tiếng vì. fame bỏ -e, thêm -ous."
+    },
+    {
+     "answer": "poisonous",
+     "accept": [],
+     "base": "POISON",
+     "explain_vi": "Sau 'became' cần tính từ: poison + -ous = poisonous (có độc)."
+    },
+    {
+     "answer": "environmental",
+     "accept": [],
+     "base": "ENVIRONMENT",
+     "explain_vi": "Trước danh từ 'project' cần tính từ: environment + -al. Mạo từ 'an' hợp với từ bắt đầu bằng nguyên âm."
+    },
+    {
+     "answer": "careless",
+     "accept": [],
+     "base": "CARE",
+     "explain_vi": "Nhắc khách đừng cẩu thả với rác: care + -less = careless (đuôi đã học ở buổi 2)."
+    },
+    {
+     "answer": "national",
+     "accept": [],
+     "base": "NATION",
+     "explain_vi": "Trước danh từ 'newspaper' cần tính từ: nation + -al = national (toàn quốc)."
+    }
+   ]
+  }
+ ],
+ "exam_easy": [
+  {
+   "format": "antonym",
+   "title_vi": "Từ trái nghĩa",
+   "intro_vi": "Dạng từ trái nghĩa: em chọn đáp án có nghĩa NGƯỢC LẠI với từ VIẾT HOA (ví dụ hot >< cold). Đề Chuyên Ngoại ngữ có 4 câu dạng này. Hôm nay em làm 5 câu dễ.",
+   "tip_vi": "Dịch nhanh từ VIẾT HOA sang tiếng Việt rồi nghĩ từ ngược nghĩa. Nếu thấy đáp án CÙNG nghĩa với từ VIẾT HOA, đó là bẫy!",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "The beach was very CLEAN after the volunteers picked up all the rubbish.",
+     "options": [
+      "big",
+      "dirty",
+      "new",
+      "quiet"
+     ],
+     "answer": 1,
+     "explain_vi": "clean (sạch) >< dirty (bẩn). Tình nguyện viên đã nhặt hết rác nên bãi biển sạch."
+    },
+    {
+     "q": "We have planted MANY trees in our school garden.",
+     "options": [
+      "big",
+      "green",
+      "few",
+      "old"
+     ],
+     "answer": 2,
+     "explain_vi": "many (nhiều) >< few (ít). big, green, old không nói về số lượng."
+    },
+    {
+     "q": "My street has become very NOISY since the new market opened.",
+     "options": [
+      "busy",
+      "dirty",
+      "modern",
+      "quiet"
+     ],
+     "answer": 3,
+     "explain_vi": "noisy (ồn ào) >< quiet (yên tĩnh). busy (đông đúc, nhộn nhịp) gần nghĩa với noisy nên là bẫy."
+    },
+    {
+     "q": "Please TURN OFF the lights when you leave the classroom.",
+     "options": [
+      "turn on",
+      "switch off",
+      "close",
+      "clean"
+     ],
+     "answer": 0,
+     "explain_vi": "turn off (tắt) >< turn on (bật). switch off cùng nghĩa với turn off nên là bẫy."
+    },
+    {
+     "q": "It was very HOT in Hanoi last summer.",
+     "options": [
+      "warm",
+      "sunny",
+      "cold",
+      "dry"
+     ],
+     "answer": 2,
+     "explain_vi": "hot (nóng) >< cold (lạnh). warm (ấm) chỉ là nóng ít hơn, không phải trái nghĩa."
+    }
+   ]
+  },
+  {
+   "format": "word_formation",
+   "title_vi": "Dạng đúng của từ",
+   "intro_vi": "Dạng đúng của từ: em đổi từ in hoa thành từ đúng (thường là thêm đuôi) để điền vào chỗ trống trong đoạn văn. Đề Sở chuyên Anh có dạng này. Hôm nay có 5 chỗ trống.",
+   "tip_vi": "Trước danh từ cần tính từ (a … park → national park). Sau is, are, was, were thường là tính từ. Đuôi hôm nay: -al, -ous, -ful.",
+   "kind": "gap_text",
+   "text": "Last month, our class visited Cuc Phuong. It is a big [1] park about 120 km from Hanoi. I have never seen so many tall trees before! The guide said, 'Some snakes here are [2], so please stay on the path.' We were very [3] and nobody touched the animals. We also learned about some [4] problems, like forest fires and rubbish. It was a [5] day!",
+   "items": [
+    {
+     "answer": "national",
+     "accept": [],
+     "base": "NATION",
+     "explain_vi": "Trước danh từ 'park' cần tính từ: nation + -al = national. national park = vườn quốc gia."
+    },
+    {
+     "answer": "dangerous",
+     "accept": [],
+     "base": "DANGER",
+     "explain_vi": "Sau 'are' cần tính từ: danger + -ous = dangerous (nguy hiểm). Vì vậy mọi người phải đi trên đường mòn."
+    },
+    {
+     "answer": "careful",
+     "accept": [],
+     "base": "CARE",
+     "explain_vi": "Sau 'were very' cần tính từ. Không ai chạm vào con vật → cẩn thận: care + -ful = careful."
+    },
+    {
+     "answer": "environmental",
+     "accept": [],
+     "base": "ENVIRONMENT",
+     "explain_vi": "Trước danh từ 'problems' cần tính từ: environment + -al = environmental (thuộc về môi trường)."
+    },
+    {
+     "answer": "wonderful",
+     "accept": [],
+     "base": "WONDER",
+     "explain_vi": "Sau 'a' và trước danh từ 'day' cần tính từ: wonder + -ful = wonderful (tuyệt vời)."
+    }
+   ]
+  }
+ ],
+ "exam_plus": [
+  {
+   "format": "antonym",
+   "title_vi": "Từ trái nghĩa",
+   "intro_vi": "Câu trái nghĩa phân loại thường dùng từ B2 hoặc cụm động từ, và cài 2–3 đáp án ĐỒNG nghĩa với từ VIẾT HOA để bẫy. Hôm nay em làm 5 câu như vậy.",
+   "tip_vi": "Loại hết các đáp án đồng nghĩa trước. Đáp án còn lại phải ngược nghĩa thật sự, không chỉ 'khác nghĩa'.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "The government has introduced STRICT rules to limit air pollution in big cities.",
+     "options": [
+      "tough",
+      "harsh",
+      "lenient",
+      "severe"
+     ],
+     "answer": 2,
+     "explain_vi": "strict (nghiêm ngặt) >< lenient (dễ dãi, khoan dung). tough, harsh, severe đều gần nghĩa với strict."
+    },
+    {
+     "q": "Thanks to last month's clean-up, the lake is FREE FROM plastic waste for the first time in years.",
+     "options": [
+      "clear of",
+      "full of",
+      "rid of",
+      "short of"
+     ],
+     "answer": 1,
+     "explain_vi": "free from (không có) >< full of (đầy). clear of, rid of cùng nghĩa 'không còn'; short of = thiếu, không phải trái nghĩa."
+    },
+    {
+     "q": "The new factory has had a DETRIMENTAL effect on the river near our village.",
+     "options": [
+      "damaging",
+      "harmful",
+      "negative",
+      "beneficial"
+     ],
+     "answer": 3,
+     "explain_vi": "detrimental (gây hại) >< beneficial (có lợi). damaging, harmful, negative đều đồng nghĩa với detrimental."
+    },
+    {
+     "q": "Our club SET UP a recycling point at the school gate last year.",
+     "options": [
+      "closed down",
+      "started",
+      "put up",
+      "built"
+     ],
+     "answer": 0,
+     "explain_vi": "set up (lập ra) >< close down (đóng cửa, giải thể). started, put up, built đều gần nghĩa với set up."
+    },
+    {
+     "q": "In recent years, fresh water has become SCARCE in some parts of the Mekong Delta.",
+     "options": [
+      "rare",
+      "limited",
+      "plentiful",
+      "precious"
+     ],
+     "answer": 2,
+     "explain_vi": "scarce (khan hiếm) >< plentiful (dồi dào). rare, limited gần nghĩa; precious (quý giá) không phải trái nghĩa."
+    }
+   ]
+  },
+  {
+   "format": "word_formation",
+   "title_vi": "Dạng đúng của từ",
+   "intro_vi": "Câu cấu tạo từ khó trong đề Sở chuyên Anh thường bắt đổi từ 2 lần (drama → dramatic → dramatically) hoặc có chính tả đặc biệt. Hôm nay em làm 5 chỗ trống như vậy.",
+   "tip_vi": "Xác định loại từ cần điền, rồi soát chính tả: disaster → disastrous (mất e), -ic → -ically. Nhớ cụm cố định như environmentally friendly.",
+   "kind": "gap_text",
+   "text": "Over the last twenty years, the beach in my hometown has changed [1]. Hotels and restaurants have appeared everywhere, and the effect on the sea has been [2]: in 2019, thousands of dead fish washed up on the sand. Since then, local people have tried to live in a more [3] friendly way. Volunteers have organised [4] clean-ups, and last year the town launched an [5] plan to ban single-use plastic by 2030.",
+   "items": [
+    {
+     "answer": "dramatically",
+     "accept": [],
+     "base": "DRAMA",
+     "explain_vi": "Bổ nghĩa cho động từ 'has changed' cần trạng từ: drama → dramatic → dramatically (-ic → -ically)."
+    },
+    {
+     "answer": "disastrous",
+     "accept": [],
+     "base": "DISASTER",
+     "explain_vi": "Sau 'has been' cần tính từ: disaster + -ous, bỏ e → disastrous (không viết disasterous)."
+    },
+    {
+     "answer": "environmentally",
+     "accept": [],
+     "base": "ENVIRONMENT",
+     "explain_vi": "Cụm cố định environmentally friendly (thân thiện với môi trường): trạng từ bổ nghĩa cho tính từ friendly."
+    },
+    {
+     "answer": "numerous",
+     "accept": [
+      "innumerable"
+     ],
+     "base": "NUMBER",
+     "explain_vi": "Trước danh từ số nhiều 'clean-ups' cần tính từ: number → numerous (rất nhiều)."
+    },
+    {
+     "answer": "ambitious",
+     "accept": [],
+     "base": "AMBITION",
+     "explain_vi": "Sau 'an' và trước danh từ 'plan' cần tính từ: ambition → ambitious (đầy tham vọng)."
+    }
+   ]
+  }
+ ],
+ "paper_plus": {
+  "title_vi": "H. Thử thách nâng cao",
+  "instruction_vi": "Thử thách dành cho học sinh mức Nâng cao. Câu 1–2: viết dạng đúng của từ in hoa (có thể phải đổi 2 lần hoặc thêm tiền tố). Câu 3–4: viết tiếp câu sau sao cho nghĩa không đổi. Câu 5–6: chọn A, B, C hoặc D.",
+  "items": [
+   {
+    "id": "d3H1",
+    "q": "The ______ of the hills around the village has led to more landslides in the rainy season. (FOREST)",
+    "answer": "deforestation",
+    "accept": []
+   },
+   {
+    "id": "d3H2",
+    "q": "Most of the packaging in this shop is ______, so customers can put it in the blue recycling bins. (CYCLE)",
+    "answer": "recyclable",
+    "accept": []
+   },
+   {
+    "id": "d3H3",
+    "q": "The last time I saw a firefly was five years ago. → I haven't ______",
+    "answer": "seen a firefly for five years",
+    "accept": [
+     "seen a firefly in five years",
+     "seen any fireflies for five years"
+    ]
+   },
+   {
+    "id": "d3H4",
+    "q": "This is the first time I have visited a recycling plant. → I have never ______",
+    "answer": "visited a recycling plant before",
+    "accept": [
+     "been to a recycling plant before"
+    ]
+   },
+   {
+    "id": "d3H5",
+    "q": "Cutting down rainforests ______ a serious threat to many rare species.",
+    "options": [
+     "makes",
+     "takes",
+     "poses",
+     "does"
+    ],
+    "answer": "C",
+    "accept": []
+   },
+   {
+    "id": "d3H6",
+    "q": "The saola is a critically ______ species that lives in the Truong Son mountains.",
+    "options": [
+     "dangerous",
+     "endangered",
+     "extinct",
+     "threatening"
+    ],
+    "answer": "B",
+    "accept": []
+   }
+  ]
+ },
+ "paper_easy": {
+  "hints": {
+   "d3C1": "tính từ (trước danh từ 'problem')",
+   "d3C2": "tính từ (sau 'are')",
+   "d3C3": "tính từ (trước danh từ 'resources')",
+   "d3C4": "tính từ (sau 'is', trước 'for')"
+  },
+  "reading_gloss": [
+   [
+    "members",
+    "thành viên"
+   ],
+   [
+    "recycling bins",
+    "thùng rác tái chế"
+   ],
+   [
+    "as a result",
+    "kết quả là"
+   ],
+   [
+    "organised",
+    "đã tổ chức"
+   ],
+   [
+    "volunteers",
+    "tình nguyện viên"
+   ],
+   [
+    "solved",
+    "đã giải quyết"
+   ],
+   [
+    "head teacher",
+    "hiệu trưởng"
+   ],
+   [
+    "seeds",
+    "hạt giống"
+   ]
+  ],
+  "writing_starters": [
+   "My family has …",
+   "We have stopped …",
+   "Last weekend, I …",
+   "I haven't … yet, but I want to …"
+  ]
+ }
 }

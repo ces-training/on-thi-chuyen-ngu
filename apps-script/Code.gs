@@ -223,10 +223,30 @@ function processPending() {
     .slice(0, 3).forEach(function (r) { try { gradeUpload_(r.id); } catch (e) {} });
 }
 
+/* Mức học của con (Nền tảng / Chuẩn / Nâng cao): lấy từ bản tóm tắt web gửi lên, nếu không có thì suy từ trình độ đầu vào.
+   Phần chỉ dành cho một mức (ví dụ H · Thử thách nâng cao) bị bỏ khỏi đáp án với học sinh mức khác. */
+function trackOf_(code) {
+  var st = getStudent_(code); if (!st) return 'chuan';
+  var sum = parse_(st.summary, {}) || {};
+  if (sum.tr) return sum.tr;
+  var l = st.entryLevel;
+  if (!l) return 'chuan';
+  if (l === 'preA2' || l === 'A2') return 'nen';
+  if (l === 'A2+' || l === 'B1') return 'chuan';
+  return 'nang';
+}
+function keyForStudent_(key, code) {
+  if (!key) return key;
+  var tr = trackOf_(code);
+  var k = JSON.parse(JSON.stringify(key));
+  k.sections = k.sections.filter(function (s) { return !s.track || s.track === tr; });
+  return k;
+}
+
 function gradeUpload_(id) {
   var row = find_('uploads', 'id', id);
   if (!row) throw new Error('no_upload');
-  var key = PAPER_KEYS[String(row.day)];
+  var key = keyForStudent_(PAPER_KEYS[String(row.day)], row.code);
   if (!key) throw new Error('no_key');
   update_('uploads', row._row, { status: 'grading', tries: Number(row.tries || 0) + 1, updated: now_() });
   try {

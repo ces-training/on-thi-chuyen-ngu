@@ -1,196 +1,483 @@
 {
-  "day": 6,
-  "grammar_games": {
-    "sort": {
-      "title_vi": "Chỗ trống cần mustn't, don't have to hay should? Xếp mỗi câu vào đúng nhóm.",
-      "groups": [
-        {
-          "name": "mustn't (bị cấm)",
-          "items": [
-            "Visitors ___ touch the paintings. It's against the rules.",
-            "You ___ cross the road when the light is red.",
-            "You ___ feed the animals at the zoo."
-          ]
-        },
-        {
-          "name": "don't have to (không cần, không bắt buộc)",
-          "items": [
-            "It's Sunday, so I ___ get up early.",
-            "The museum is free. You ___ buy a ticket.",
-            "The hotel is near. We ___ take a taxi."
-          ]
-        },
-        {
-          "name": "should (nên – lời khuyên)",
-          "items": [
-            "It's very sunny. You ___ wear a hat.",
-            "You look tired. You ___ have a rest.",
-            "Hội An is beautiful. You ___ visit it."
-          ]
-        }
-      ]
-    },
-    "unjumble": [
-      {
-        "sentence": "Our flight was delayed, so we had to wait.",
-        "hint_vi": "had to: quá khứ của have to / must"
-      },
-      {
-        "sentence": "You should buy a souvenir for your grandparents.",
-        "hint_vi": "should + V: lời khuyên"
-      },
-      {
-        "sentence": "Passengers mustn't use their phones during take-off.",
-        "hint_vi": "mustn't + V: cấm"
-      },
-      {
-        "sentence": "Will you be able to explore the old town tomorrow?",
-        "hint_vi": "will be able to: 'có thể' ở tương lai"
-      },
-      {
-        "sentence": "You don't have to bring food on the journey.",
-        "hint_vi": "don't have to: không cần"
-      }
-    ],
-    "truefalse": [
-      {
-        "s": "She can speaks three languages.",
-        "ok": false,
-        "fix": "She can speak three languages.",
-        "why_vi": "Sau can là động từ nguyên thể, không chia: can speak."
-      },
-      {
-        "s": "Yesterday we must leave the hotel at 6 a.m.",
-        "ok": false,
-        "fix": "Yesterday we had to leave the hotel at 6 a.m.",
-        "why_vi": "must không có dạng quá khứ; quá khứ dùng had to."
-      },
-      {
-        "s": "You don't have to bring a towel. The hotel gives you one.",
-        "ok": true,
-        "fix": "You don't have to bring a towel. The hotel gives you one.",
-        "why_vi": "Khách sạn có sẵn khăn → không cần mang: don't have to."
-      },
-      {
-        "s": "You should to book your train tickets early.",
-        "ok": false,
-        "fix": "You should book your train tickets early.",
-        "why_vi": "Sau should không dùng to: should book."
-      },
-      {
-        "s": "Drivers mustn't use their phones while they are driving.",
-        "ok": true,
-        "fix": "Drivers mustn't use their phones while they are driving.",
-        "why_vi": "Luật cấm → mustn't + V."
-      },
-      {
-        "s": "After two hours, we were able to find the way back to our hotel.",
-        "ok": true,
-        "fix": "After two hours, we were able to find the way back to our hotel.",
-        "why_vi": "Làm được việc khó trong một lần cụ thể ở quá khứ → was/were able to."
-      },
-      {
-        "s": "We mustn't go to school on Sunday because there are no lessons.",
-        "ok": false,
-        "fix": "We don't have to go to school on Sunday because there are no lessons.",
-        "why_vi": "Không có tiết học → không cần đi (don't have to), chứ không phải bị cấm (mustn't)."
-      },
-      {
-        "s": "My cousin couldn't come to the party last weekend because she was ill.",
-        "ok": true,
-        "fix": "My cousin couldn't come to the party last weekend because she was ill.",
-        "why_vi": "Không thể làm gì trong quá khứ → couldn't + V."
-      }
-    ]
-  },
-  "exam": [
+ "day": 6,
+ "grammar_games": {
+  "sort": {
+   "title_vi": "Chỗ trống cần mustn't, don't have to hay should? Xếp mỗi câu vào đúng nhóm.",
+   "groups": [
     {
-      "format": "cloze",
-      "title_vi": "Điền từ vào đoạn văn",
-      "intro_vi": "Đề Chuyên Ngoại ngữ có 8 câu điền từ vào đoạn văn, mỗi chỗ 4 lựa chọn; đề chung vào 10 cũng có dạng này. Chỗ trống kiểm tra từ vựng, ngữ pháp và dạng từ.",
-      "tip_vi": "Mẹo: đọc lướt cả đoạn trước, rồi xét cả câu chứa chỗ trống: cần từ loại gì, có hợp nghĩa với câu trước và sau không.",
-      "kind": "cloze_mcq",
-      "text": "Last summer, my family went abroad for the first time. Our [1] was Singapore, a small but very modern country. On the day we left, there was a two-hour [2] at Nội Bài Airport because of bad weather, so we had to sit in a [3] waiting room with hundreds of other passengers. When we finally arrived, we were tired, but we couldn't wait to explore the city. Singapore has some strict rules. For example, passengers mustn't eat or drink on the trains, or they will [4] pay a big fine. Luckily, the trains are clean and fast, so we were [5] to visit many places in just four days. Before we flew home, I bought a small key ring as a souvenir for my best friend. I'm already looking forward to our next trip!",
-      "items": [
-        {
-          "options": [
-            "journey",
-            "destination",
-            "passenger",
-            "souvenir"
-          ],
-          "answer": 1,
-          "explain_vi": "destination = điểm đến. Singapore là nơi cả nhà đến, không phải 'chuyến đi' (journey)."
-        },
-        {
-          "options": [
-            "journey",
-            "traffic",
-            "delay",
-            "destination"
-          ],
-          "answer": 2,
-          "explain_vi": "a two-hour delay = chậm trễ hai tiếng; có 'because of bad weather' và 'had to sit… waiting'."
-        },
-        {
-          "options": [
-            "crowd",
-            "crowded",
-            "crowding",
-            "crowdedly"
-          ],
-          "answer": 1,
-          "explain_vi": "Trước danh từ 'waiting room' cần tính từ: crowded (đông đúc). crowd là danh từ."
-        },
-        {
-          "options": [
-            "must",
-            "should",
-            "can",
-            "have to"
-          ],
-          "answer": 3,
-          "explain_vi": "Sau will không dùng must/should/can; tương lai của 'phải' là will have to."
-        },
-        {
-          "options": [
-            "can",
-            "able",
-            "possible",
-            "could"
-          ],
-          "answer": 1,
-          "explain_vi": "Cấu trúc was/were able to + V = đã có thể làm được. Không nói 'were can' hay 'were possible to'."
-        }
-      ]
+     "name": "mustn't (bị cấm)",
+     "items": [
+      "Visitors ___ touch the paintings. It's against the rules.",
+      "You ___ cross the road when the light is red.",
+      "You ___ feed the animals at the zoo."
+     ]
     },
     {
-      "format": "matching_headings",
-      "title_vi": "Nối tiêu đề với đoạn văn",
-      "intro_vi": "Phần đọc 25 câu của đề Sở chuyên Anh Hà Nội có thể có dạng nối tiêu đề với đoạn văn: mỗi đoạn một tiêu đề, luôn có tiêu đề thừa. Ở đây có 4 đoạn và 6 tiêu đề.",
-      "tip_vi": "Mẹo: tìm ý chính của cả đoạn, chú ý từ nối However, but. Loại tiêu đề chỉ trùng một từ mà sai ý (đoạn nói dangerous, tiêu đề nói safe).",
-      "kind": "matching",
-      "paragraphs": [
-        "Flying is the fastest way to travel between big cities. A flight from Hà Nội to Hồ Chí Minh City takes only about two hours. However, you have to arrive at the airport early, and flights are sometimes delayed by bad weather. Tickets can also be expensive before Tết, so you should book early.",
-        "If you are not in a hurry, the train is a great choice. The journey is slow, but you can walk around, sleep in a comfortable bed and enjoy beautiful views of rice fields, mountains and the sea. Many travellers say the train ride is part of the holiday, not just a way to get there.",
-        "Some young travellers prefer to explore the countryside by motorbike. They can stop wherever they like and visit small villages that buses never reach. But riding on mountain roads can be dangerous. Riders must always wear a helmet, and they shouldn't travel alone in case they have an accident.",
-        "Sleeper buses are the cheapest way to travel long distances. Passengers lie on narrow beds, and the bus travels through the night, so you don't have to pay for a hotel. However, the buses are often crowded, and tall people may find the beds too short to sleep comfortably."
-      ],
-      "headings": [
-        "Save money while you sleep",
-        "A safe way to see small villages",
-        "Fast, but not always on time",
-        "Why trains are faster than planes",
-        "Freedom, but with some danger",
-        "Enjoy the journey, not just the destination"
-      ],
-      "answer": [
-        2,
-        5,
-        4,
-        0
-      ],
-      "explain_vi": "Đoạn 1: nhanh nhất nhưng có thể delayed. Đoạn 2: chậm nhưng được ngắm cảnh. Đoạn 3: tự do nhưng dangerous. Đoạn 4: rẻ nhất, khỏi trả tiền khách sạn."
+     "name": "don't have to (không cần, không bắt buộc)",
+     "items": [
+      "It's Sunday, so I ___ get up early.",
+      "The museum is free. You ___ buy a ticket.",
+      "The hotel is near. We ___ take a taxi."
+     ]
+    },
+    {
+     "name": "should (nên – lời khuyên)",
+     "items": [
+      "It's very sunny. You ___ wear a hat.",
+      "You look tired. You ___ have a rest.",
+      "Hội An is beautiful. You ___ visit it."
+     ]
     }
+   ]
+  },
+  "unjumble": [
+   {
+    "sentence": "Our flight was delayed, so we had to wait.",
+    "hint_vi": "had to: quá khứ của have to / must"
+   },
+   {
+    "sentence": "You should buy a souvenir for your grandparents.",
+    "hint_vi": "should + V: lời khuyên"
+   },
+   {
+    "sentence": "Passengers mustn't use their phones during take-off.",
+    "hint_vi": "mustn't + V: cấm"
+   },
+   {
+    "sentence": "Will you be able to explore the old town tomorrow?",
+    "hint_vi": "will be able to: 'có thể' ở tương lai"
+   },
+   {
+    "sentence": "You don't have to bring food on the journey.",
+    "hint_vi": "don't have to: không cần"
+   }
+  ],
+  "truefalse": [
+   {
+    "s": "She can speaks three languages.",
+    "ok": false,
+    "fix": "She can speak three languages.",
+    "why_vi": "Sau can là động từ nguyên thể, không chia: can speak."
+   },
+   {
+    "s": "Yesterday we must leave the hotel at 6 a.m.",
+    "ok": false,
+    "fix": "Yesterday we had to leave the hotel at 6 a.m.",
+    "why_vi": "must không có dạng quá khứ; quá khứ dùng had to."
+   },
+   {
+    "s": "You don't have to bring a towel. The hotel gives you one.",
+    "ok": true,
+    "fix": "You don't have to bring a towel. The hotel gives you one.",
+    "why_vi": "Khách sạn có sẵn khăn → không cần mang: don't have to."
+   },
+   {
+    "s": "You should to book your train tickets early.",
+    "ok": false,
+    "fix": "You should book your train tickets early.",
+    "why_vi": "Sau should không dùng to: should book."
+   },
+   {
+    "s": "Drivers mustn't use their phones while they are driving.",
+    "ok": true,
+    "fix": "Drivers mustn't use their phones while they are driving.",
+    "why_vi": "Luật cấm → mustn't + V."
+   },
+   {
+    "s": "After two hours, we were able to find the way back to our hotel.",
+    "ok": true,
+    "fix": "After two hours, we were able to find the way back to our hotel.",
+    "why_vi": "Làm được việc khó trong một lần cụ thể ở quá khứ → was/were able to."
+   },
+   {
+    "s": "We mustn't go to school on Sunday because there are no lessons.",
+    "ok": false,
+    "fix": "We don't have to go to school on Sunday because there are no lessons.",
+    "why_vi": "Không có tiết học → không cần đi (don't have to), chứ không phải bị cấm (mustn't)."
+   },
+   {
+    "s": "My cousin couldn't come to the party last weekend because she was ill.",
+    "ok": true,
+    "fix": "My cousin couldn't come to the party last weekend because she was ill.",
+    "why_vi": "Không thể làm gì trong quá khứ → couldn't + V."
+   }
   ]
+ },
+ "exam": [
+  {
+   "format": "cloze",
+   "title_vi": "Điền từ vào đoạn văn",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 8 câu điền từ vào đoạn văn, mỗi chỗ 4 lựa chọn; đề chung vào 10 cũng có dạng này. Chỗ trống kiểm tra từ vựng, ngữ pháp và dạng từ.",
+   "tip_vi": "Mẹo: đọc lướt cả đoạn trước, rồi xét cả câu chứa chỗ trống: cần từ loại gì, có hợp nghĩa với câu trước và sau không.",
+   "kind": "cloze_mcq",
+   "text": "Last summer, my family went abroad for the first time. Our [1] was Singapore, a small but very modern country. On the day we left, there was a two-hour [2] at Nội Bài Airport because of bad weather, so we had to sit in a [3] waiting room with hundreds of other passengers. When we finally arrived, we were tired, but we couldn't wait to explore the city. Singapore has some strict rules. For example, passengers mustn't eat or drink on the trains, or they will [4] pay a big fine. Luckily, the trains are clean and fast, so we were [5] to visit many places in just four days. Before we flew home, I bought a small key ring as a souvenir for my best friend. I'm already looking forward to our next trip!",
+   "items": [
+    {
+     "options": [
+      "journey",
+      "destination",
+      "passenger",
+      "souvenir"
+     ],
+     "answer": 1,
+     "explain_vi": "destination = điểm đến. Singapore là nơi cả nhà đến, không phải 'chuyến đi' (journey)."
+    },
+    {
+     "options": [
+      "journey",
+      "traffic",
+      "delay",
+      "destination"
+     ],
+     "answer": 2,
+     "explain_vi": "a two-hour delay = chậm trễ hai tiếng; có 'because of bad weather' và 'had to sit… waiting'."
+    },
+    {
+     "options": [
+      "crowd",
+      "crowded",
+      "crowding",
+      "crowdedly"
+     ],
+     "answer": 1,
+     "explain_vi": "Trước danh từ 'waiting room' cần tính từ: crowded (đông đúc). crowd là danh từ."
+    },
+    {
+     "options": [
+      "must",
+      "should",
+      "can",
+      "have to"
+     ],
+     "answer": 3,
+     "explain_vi": "Sau will không dùng must/should/can; tương lai của 'phải' là will have to."
+    },
+    {
+     "options": [
+      "can",
+      "able",
+      "possible",
+      "could"
+     ],
+     "answer": 1,
+     "explain_vi": "Cấu trúc was/were able to + V = đã có thể làm được. Không nói 'were can' hay 'were possible to'."
+    }
+   ]
+  },
+  {
+   "format": "matching_headings",
+   "title_vi": "Nối tiêu đề với đoạn văn",
+   "intro_vi": "Phần đọc 25 câu của đề Sở chuyên Anh Hà Nội có thể có dạng nối tiêu đề với đoạn văn: mỗi đoạn một tiêu đề, luôn có tiêu đề thừa. Ở đây có 4 đoạn và 6 tiêu đề.",
+   "tip_vi": "Mẹo: tìm ý chính của cả đoạn, chú ý từ nối However, but. Loại tiêu đề chỉ trùng một từ mà sai ý (đoạn nói dangerous, tiêu đề nói safe).",
+   "kind": "matching",
+   "paragraphs": [
+    "Flying is the fastest way to travel between big cities. A flight from Hà Nội to Hồ Chí Minh City takes only about two hours. However, you have to arrive at the airport early, and flights are sometimes delayed by bad weather. Tickets can also be expensive before Tết, so you should book early.",
+    "If you are not in a hurry, the train is a great choice. The journey is slow, but you can walk around, sleep in a comfortable bed and enjoy beautiful views of rice fields, mountains and the sea. Many travellers say the train ride is part of the holiday, not just a way to get there.",
+    "Some young travellers prefer to explore the countryside by motorbike. They can stop wherever they like and visit small villages that buses never reach. But riding on mountain roads can be dangerous. Riders must always wear a helmet, and they shouldn't travel alone in case they have an accident.",
+    "Sleeper buses are the cheapest way to travel long distances. Passengers lie on narrow beds, and the bus travels through the night, so you don't have to pay for a hotel. However, the buses are often crowded, and tall people may find the beds too short to sleep comfortably."
+   ],
+   "headings": [
+    "Save money while you sleep",
+    "A safe way to see small villages",
+    "Fast, but not always on time",
+    "Why trains are faster than planes",
+    "Freedom, but with some danger",
+    "Enjoy the journey, not just the destination"
+   ],
+   "answer": [
+    2,
+    5,
+    4,
+    0
+   ],
+   "explain_vi": "Đoạn 1: nhanh nhất nhưng có thể delayed. Đoạn 2: chậm nhưng được ngắm cảnh. Đoạn 3: tự do nhưng dangerous. Đoạn 4: rẻ nhất, khỏi trả tiền khách sạn."
+  }
+ ],
+ "exam_easy": [
+  {
+   "format": "cloze",
+   "title_vi": "Điền từ vào đoạn văn",
+   "intro_vi": "Đề Chuyên Ngoại ngữ và đề chung vào 10 có bài đọc đoạn văn, mỗi chỗ trống chọn 1 trong 4 từ. Bản này đoạn văn ngắn, câu đơn giản, các lựa chọn khác nghĩa rõ ràng.",
+   "tip_vi": "Mẹo: đọc cả câu có chỗ trống và câu ngay sau nó. Thử đặt từng lựa chọn vào rồi đọc to: câu nào nghe hợp nghĩa nhất?",
+   "kind": "cloze_mcq",
+   "text": "Last summer, my family took a trip to Cát Bà Island. We [1] off very early in the morning to catch the boat. The boat was slow, but the sea was calm and blue. There were many [2] on the boat, and some of them were tourists from Korea. When we arrived, we [3] to wait for a bus because our hotel was far from the port. On the second day, we went for a walk in the national park. My dad said that we [4] stay on the path because it is easy to get lost there. In the evening, we went to the night market. I bought a T-shirt as a [5] for my best friend, Mai. It was a wonderful trip, and I want to go back next year.",
+   "items": [
+    {
+     "options": [
+      "set",
+      "kept",
+      "did",
+      "put"
+     ],
+     "answer": 0,
+     "explain_vi": "set off = khởi hành, lên đường. Cả nhà lên đường từ sáng sớm để kịp chuyến tàu thuỷ."
+    },
+    {
+     "options": [
+      "passengers",
+      "souvenirs",
+      "journeys",
+      "destinations"
+     ],
+     "answer": 0,
+     "explain_vi": "passengers = hành khách. Câu sau nói 'some of them were tourists', nên chỗ trống là người đi trên tàu."
+    },
+    {
+     "options": [
+      "must",
+      "had",
+      "should",
+      "can"
+     ],
+     "answer": 1,
+     "explain_vi": "Sau chỗ trống có 'to wait', nên cần had to (đã phải). must, should, can không đi với to."
+    },
+    {
+     "options": [
+      "should",
+      "don't have to",
+      "can't",
+      "mustn't"
+     ],
+     "answer": 0,
+     "explain_vi": "Bố khuyên đi đúng đường mòn vì dễ bị lạc → should (nên). mustn't và can't nghĩa là không được đi trên đường mòn, ngược ý."
+    },
+    {
+     "options": [
+      "passenger",
+      "souvenir",
+      "ticket",
+      "journey"
+     ],
+     "answer": 1,
+     "explain_vi": "a souvenir = quà lưu niệm. Mua áo làm quà cho bạn thân sau chuyến đi."
+    }
+   ]
+  },
+  {
+   "format": "matching_headings",
+   "title_vi": "Nối tiêu đề với đoạn văn",
+   "intro_vi": "Đề Sở chuyên Anh Hà Nội có thể có bài nối tiêu đề với đoạn văn, luôn có tiêu đề thừa. Bản này có 4 đoạn ngắn, mỗi đoạn một bạn kể về cách đi lại, và 6 tiêu đề.",
+   "tip_vi": "Mẹo: đọc từng đoạn, tự hỏi 'Bạn này nói về phương tiện gì? Thích hay không thích điều gì?' rồi tìm tiêu đề có cùng ý.",
+   "kind": "matching",
+   "paragraphs": [
+    "I go to school by bus every day. The bus is cheap, and I can read a book on the way. But in the morning the bus is often very crowded, and I have to stand. Sometimes I can't find a seat for the whole journey.",
+    "I ride my bike to school. It is good exercise, and it doesn't make the air dirty. I don't have to wait for anybody. When it rains, I have to wear a raincoat, but I still love cycling every day.",
+    "Last year I travelled to another country for the first time. We flew to Singapore. The plane was very fast, and the journey took only three hours. The flight attendants gave us food and drinks. I looked out of the window and saw the clouds below us.",
+    "My grandparents live in Huế, so we often visit them by train. The trip is long, but I can sleep in a bed and walk around. I like to watch the rice fields and the sea from the window. It is my favourite way to travel."
+   ],
+   "headings": [
+    "Good for my body and the air",
+    "Lost at the airport",
+    "Cheap but full of people",
+    "A long ride with nice views",
+    "The fastest way to get to school",
+    "My first flight to another country"
+   ],
+   "answer": [
+    2,
+    0,
+    5,
+    3
+   ],
+   "explain_vi": "Đoạn 1: xe buýt rẻ nhưng đông (crowded). Đoạn 2: xe đạp tốt cho sức khoẻ, không làm bẩn không khí. Đoạn 3: lần đầu đi máy bay ra nước ngoài. Đoạn 4: tàu chậm nhưng cảnh đẹp."
+  }
+ ],
+ "exam_plus": [
+  {
+   "format": "cloze",
+   "title_vi": "Điền từ vào đoạn văn",
+   "intro_vi": "Trong đề Chuyên Ngoại ngữ, câu phân loại của bài điền từ thường hỏi từ gần nghĩa (trip/travel/voyage), cụm động từ và collocation như make the best of. Bản này luyện đúng kiểu đó.",
+   "tip_vi": "Mẹo: khi 4 lựa chọn gần nghĩa, xét từ đi kèm ngay sau chỗ trống (giới từ, to V, danh từ) và loại từ không kết hợp được.",
+   "kind": "cloze_mcq",
+   "text": "Travelling abroad on a tight budget is not as difficult as many people think. Last summer, my cousin Linh spent three weeks backpacking around Thailand and Malaysia, and the whole [1] cost her less than a new phone. Her secret was careful planning. She booked her flights months in advance, and instead of staying in hotels, she slept in cheap hostels, where she [2] friends with travellers from all over the world. Of course, not everything went smoothly. On her way to Penang, her train was [3] up by a landslide, and she had to spend a night at a tiny station in the middle of nowhere. Her phone battery was almost dead, but she was [4] to borrow a charger from another passenger and call her parents. Linh says the experience taught her to stay calm and [5] the best of every situation. Now she is already saving up for her next adventure.",
+   "items": [
+    {
+     "options": [
+      "travel",
+      "voyage",
+      "trip",
+      "excursion"
+     ],
+     "answer": 2,
+     "explain_vi": "the whole trip = cả chuyến đi. travel là danh từ không đếm được, voyage là chuyến đi biển dài, excursion là chuyến tham quan ngắn trong ngày."
+    },
+    {
+     "options": [
+      "did",
+      "made",
+      "got",
+      "took"
+     ],
+     "answer": 1,
+     "explain_vi": "Collocation: make friends (with sb) = kết bạn. Không nói do/get/take friends."
+    },
+    {
+     "options": [
+      "held",
+      "put",
+      "kept",
+      "set"
+     ],
+     "answer": 0,
+     "explain_vi": "be held up = bị chậm trễ, bị kẹt lại (đồng nghĩa delayed). put up, kept up, set up không mang nghĩa này."
+    },
+    {
+     "options": [
+      "able",
+      "capable",
+      "possible",
+      "succeeded"
+     ],
+     "answer": 0,
+     "explain_vi": "was able to + V = đã làm được. capable đi với of + V-ing; possible không dùng cho chủ ngữ chỉ người; succeed đi với in."
+    },
+    {
+     "options": [
+      "make",
+      "do",
+      "take",
+      "have"
+     ],
+     "answer": 0,
+     "explain_vi": "Thành ngữ make the best of sth = cố tận dụng tốt nhất một hoàn cảnh không thuận lợi."
+    }
+   ]
+  },
+  {
+   "format": "matching_headings",
+   "title_vi": "Nối tiêu đề với đoạn văn",
+   "intro_vi": "Trong đề Sở chuyên Anh, câu nối tiêu đề khó thường có tiêu đề thừa dùng lại từ khoá của đoạn nhưng sai ý chính. Bản này có 4 đoạn mức B2 và 2 tiêu đề bẫy như vậy.",
+   "tip_vi": "Mẹo: tìm câu chủ đề và các từ đổi hướng (In reality, Rather than). Cẩn thận với tiêu đề lặp đúng một từ trong đoạn nhưng nói điều ngược lại.",
+   "kind": "matching",
+   "paragraphs": [
+    "Many travellers assume that booking everything at the last minute will save them money. In reality, the opposite is usually true. Airlines raise their prices as the departure date approaches, and the best rooms are often taken weeks in advance, especially during public holidays such as Tết.",
+    "Packing light is an art. Experienced backpackers rarely carry more than seven kilograms, which means they can avoid baggage fees and move freely on crowded buses. Instead of bringing a different outfit for every day, they choose a few clothes that can be mixed, matched and washed easily.",
+    "Delays are an unavoidable part of travel, but how you react to them makes a huge difference. Rather than getting angry with airline staff, who are rarely responsible, use the extra time to explore the airport, catch up on your reading or simply rest before the journey continues.",
+    "Respecting local customs is just as important as visiting famous sights. In many temples, visitors must cover their shoulders and knees, and they are not supposed to point their feet at statues. A little research before you set off can save you from embarrassing mistakes."
+   ],
+   "headings": [
+    "How to complain about flight delays successfully",
+    "Why less luggage means more freedom",
+    "Doing your homework on local traditions",
+    "The hidden cost of waiting too long",
+    "Famous temples every tourist must see",
+    "Making the most of unexpected waits"
+   ],
+   "answer": [
+    3,
+    1,
+    5,
+    2
+   ],
+   "explain_vi": "Đoạn 1: đặt vé sát ngày lại đắt hơn. Đoạn 2: hành lý gọn thì tự do hơn. Đoạn 3: tận dụng thời gian chờ, không phàn nàn. Đoạn 4: tìm hiểu phong tục trước khi đi."
+  }
+ ],
+ "paper_plus": {
+  "title_vi": "H. Thử thách nâng cao",
+  "instruction_vi": "Câu 1–2: viết dạng đúng của từ in hoa (thêm cả tiền tố và hậu tố). Câu 3–4: viết tiếp câu mới sao cho nghĩa không đổi. Câu 5–6: chọn A, B, C hoặc D.",
+  "items": [
+   {
+    "id": "d6H1",
+    "q": "In winter, the mountain village is almost ______ because heavy snow often blocks the only road. (ACCESS)",
+    "answer": "inaccessible",
+    "accept": []
+   },
+   {
+    "id": "d6H2",
+    "q": "Climbers must be well prepared, as the weather on Fansipan can be extremely ______. (PREDICT)",
+    "answer": "unpredictable",
+    "accept": []
+   },
+   {
+    "id": "d6H3",
+    "q": "We booked our train tickets in advance, but it wasn't necessary because the train was half empty. → We needn't ______",
+    "answer": "have booked our train tickets in advance",
+    "accept": [
+     "have booked our tickets in advance",
+     "have booked the train tickets in advance",
+     "have booked them in advance"
+    ]
+   },
+   {
+    "id": "d6H4",
+    "q": "The pilot succeeded in landing the plane safely despite the strong wind. → Although the wind was strong, the pilot was ______",
+    "answer": "able to land the plane safely",
+    "accept": [
+     "able to land it safely",
+     "successful in landing the plane safely"
+    ]
+   },
+   {
+    "id": "d6H5",
+    "q": "We'd better ______ before dawn if we want to reach the top of the mountain by lunchtime.",
+    "options": [
+     "set up",
+     "set back",
+     "set in",
+     "set out"
+    ],
+    "answer": "D"
+   },
+   {
+    "id": "d6H6",
+    "q": "Travelling around Southeast Asia with her grandparents was a once-in-a-______ experience for my cousin.",
+    "options": [
+     "life",
+     "lifetime",
+     "living",
+     "lifestyle"
+    ],
+    "answer": "B"
+   }
+  ]
+ },
+ "paper_easy": {
+  "hints": {
+   "d6C1": "danh từ số nhiều (chỉ người, sau 'Thousands of foreign')",
+   "d6C2": "danh từ chỉ người (nghề nghiệp, sau 'a')",
+   "d6C3": "danh từ chỉ người (sau 'a keen')",
+   "d6C4": "danh từ số nhiều (chỉ người, sau 'more than 5,000')"
+  },
+  "reading_gloss": [
+   [
+    "instead of",
+    "thay vì"
+   ],
+   [
+    "countryside",
+    "vùng nông thôn"
+   ],
+   [
+    "delayed",
+    "bị hoãn, đến muộn"
+   ],
+   [
+    "a pack of cards",
+    "một bộ bài"
+   ],
+   [
+    "sleeping cabin",
+    "khoang giường nằm"
+   ],
+   [
+    "elderly couple",
+    "cặp vợ chồng lớn tuổi"
+   ],
+   [
+    "local dialect",
+    "tiếng địa phương"
+   ],
+   [
+    "rice fields",
+    "cánh đồng lúa"
+   ]
+  ],
+  "writing_starters": [
+   "Last summer, my family went to …",
+   "We travelled by … because …",
+   "When we arrived, we …",
+   "If you visit …, you should …"
+  ]
+ }
 }

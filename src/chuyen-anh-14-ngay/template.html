@@ -248,6 +248,67 @@ details>summary{cursor:pointer;font-weight:700}
 .g-end{text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px}.g-end img{width:72px;height:72px}
 .g-end .g-stars{font-size:2rem}
 @media (prefers-reduced-motion:no-preference){.g-end img{animation:pop .5s ease-out}@keyframes pop{0%{transform:scale(.4)}70%{transform:scale(1.15)}100%{transform:scale(1)}}}
+@media (max-width:520px){.g-tabs{grid-template-columns:1fr 1fr}.g-tab small{display:none}.g-tab{min-height:48px;padding:6px 8px}.g-meta{font-size:.75rem;white-space:nowrap}.g-name{font-size:1rem}}
+.g-new{font-style:normal;font-size:.65rem;font-weight:800;background:var(--signal);color:#151521;border-radius:999px;padding:1px 7px;margin-left:4px;vertical-align:middle}
+.trackbar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;background:var(--agent-tint);border-radius:10px;padding:8px 12px;font-size:.92rem}
+.trackbar select{font:inherit;padding:4px 8px;border:2px solid var(--line-strong);border-radius:8px;background:var(--surface);color:var(--ink);margin-left:4px}
+.trackbar .muted{flex-basis:100%}
+/* đoán chữ */
+.g-hang,.g-dict,.g-miss,.g-ws,.g-cw,.g-ob,.g-wheel,.g-whack,.g-bal{display:flex;flex-direction:column;gap:10px}
+.g-lives{text-align:center;font-size:1.4rem;letter-spacing:2px}.g-lives .lost{filter:grayscale(1);opacity:.25}
+.g-keys{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;max-width:560px;margin:0 auto;width:100%}
+.g-key{font:inherit;font-weight:800;min-height:42px;border:2px solid var(--line-strong);border-radius:8px;background:var(--surface);color:var(--ink);box-shadow:0 3px 0 var(--line-strong);cursor:pointer;text-transform:lowercase}
+.g-key:disabled{opacity:.25;cursor:default}
+/* đập chuột */
+.g-holes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:460px;margin:0 auto;width:100%}
+.g-hole{position:relative;height:96px;border:0;border-radius:50% 50% 14px 14px/30% 30% 14px 14px;background:radial-gradient(ellipse at 50% 85%,#5b3a1e 0 38%,#7a5230 39% 60%,transparent 61%),var(--t-done);overflow:hidden;cursor:pointer;box-shadow:inset 0 -6px 0 rgba(0,0,0,.12)}
+.g-mole{position:absolute;left:50%;bottom:-70px;transform:translateX(-50%);width:84%;min-height:56px;border-radius:40px 40px 10px 10px;background:#9b6b43;color:#fff;font-weight:800;font-size:.85rem;display:grid;place-items:center;padding:6px 4px;text-align:center;transition:bottom .15s ease-out;box-shadow:0 -3px 0 #6e4626 inset}
+.g-mole::before{content:"• •";position:absolute;top:4px;left:0;right:0;font-size:.7rem;letter-spacing:6px;color:#151521}
+.g-hole.up .g-mole{bottom:10px}.g-hole.hit .g-mole{background:var(--good);bottom:10px}.g-hole.miss .g-mole{background:var(--bad)}
+/* bóng bay */
+.g-sky{position:relative;height:300px;border-radius:12px;background:linear-gradient(180deg,#bfe3ff,#eaf6ff);overflow:hidden}
+.g-ball{position:absolute;bottom:-110px;width:22%;aspect-ratio:4/5;border:0;border-radius:50% 50% 46% 46%;background:var(--c);color:#fff;font-weight:800;font-size:.9rem;cursor:pointer;padding:6px;display:grid;place-items:center;text-align:center;box-shadow:inset -8px -10px 0 rgba(0,0,0,.15);animation:rise linear forwards}
+.g-ball::after{content:"";position:absolute;bottom:-26px;left:50%;width:1px;height:26px;background:#555}
+.g-ball span{overflow-wrap:anywhere;line-height:1.15}
+@keyframes rise{from{bottom:-110px}to{bottom:340px}}
+.g-ball.pop{animation-play-state:paused;transform:scale(1.3);opacity:0;transition:transform .2s,opacity .2s}.g-ball.bad{opacity:.15;transform:none}
+@media (prefers-reduced-motion:reduce){.g-ball{animation-duration:1ms!important;bottom:60px!important}}
+/* tìm từ */
+.g-grid{display:grid;gap:3px;max-width:480px;margin:0 auto;width:100%}
+.g-cell{aspect-ratio:1;border:1.5px solid var(--line);border-radius:6px;background:var(--surface);font:inherit;font-weight:800;font-size:clamp(.75rem,3.4vw,1.05rem);color:var(--ink);cursor:pointer;padding:0}
+.g-cell.sel{background:var(--gold);color:#151521}.g-cell.ok{background:var(--good-bg);color:var(--good);border-color:var(--good-edge)}.g-cell.show{background:var(--warn-bg)}.g-cell.bad{background:var(--bad-bg)}
+.g-clues{margin:0;padding-left:22px;display:grid;gap:3px;font-size:.92rem}.g-clues li.ok{color:var(--good)}
+/* ô chữ */
+.g-cwgrid{display:grid;gap:2px;justify-content:center;max-width:100%;overflow-x:auto}
+.g-xc{position:relative;width:34px;height:34px}.g-xe{width:34px;height:34px}
+.g-xc i{position:absolute;top:1px;left:3px;font-size:.6rem;font-style:normal;font-weight:800;color:var(--agent)}
+.g-xc input{width:100%;height:100%;border:2px solid var(--ink);border-radius:4px;text-align:center;font:inherit;font-weight:800;text-transform:uppercase;background:var(--surface);color:var(--ink);padding:0}
+.g-xc input.ok{background:var(--good-bg)}.g-xc input.bad{background:var(--bad-bg)}
+.g-cwclues{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;font-size:.92rem}.g-cwclues ul{margin:4px 0;padding-left:18px}
+/* mở hộp */
+.g-boxes{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:480px;margin:0 auto;width:100%}
+.g-boxi{aspect-ratio:1;border:2px solid #151521;border-radius:12px;background:var(--gold);color:#151521;font-family:var(--f-display);font-weight:800;font-size:1.5rem;cursor:pointer;box-shadow:0 5px 0 #151521}
+.g-boxi.open{background:var(--surface2);color:var(--ink-2);box-shadow:none;transform:translateY(4px);cursor:default}
+/* nghe và viết, điền từ */
+.g-type{font:inherit;font-size:1.2rem;text-align:center;max-width:320px;margin:0 auto;width:100%;padding:10px;border:2px solid var(--line-strong);border-radius:10px;background:var(--surface);color:var(--ink)}
+.g-type.ok{border-color:var(--good-edge);background:var(--good-bg)}.g-type.bad{border-color:var(--bad);background:var(--bad-bg)}
+.g-bank{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;border:2px dashed var(--line-strong);border-radius:12px;padding:8px}
+.g-chip{font:inherit;font-weight:700;padding:6px 12px;border:2px solid var(--agent);border-radius:999px;background:var(--surface);color:var(--agent);cursor:pointer}
+.g-chip.sel{background:var(--agent);color:var(--on-agent)}.g-chip:disabled{opacity:.3;cursor:default}
+.g-msent{display:grid;gap:8px;padding-left:22px;margin:0}
+.g-blank{font:inherit;font-weight:700;min-width:7em;border:0;border-bottom:2px solid var(--agent);background:var(--agent-tint);border-radius:6px 6px 0 0;padding:2px 8px;cursor:pointer;color:var(--ink)}
+.g-blank.ok{background:var(--good-bg);border-color:var(--good-edge)}.g-blank.bad{background:var(--bad-bg);border-color:var(--bad)}
+/* vòng quay */
+.g-wwrap{position:relative;width:min(300px,80vw);margin:0 auto}.g-wsvg{display:block;width:100%;height:auto}
+.g-wptr{position:absolute;top:-6px;left:50%;transform:translateX(-50%);font-size:1.6rem;color:var(--signal);z-index:2;text-shadow:0 2px 0 #151521}
+.g-mo{display:flex;flex-direction:column;gap:10px}.g-mo-intro{text-align:center;display:flex;flex-direction:column;gap:8px;align-items:center}.g-mo-intro p{max-width:60ch}
+.g-mo-row{display:grid;grid-template-columns:1fr minmax(0,240px) 1fr;gap:10px;align-items:center}
+.g-mo-opt{min-height:120px;border:3px solid var(--line-strong);border-radius:16px;background:var(--surface);color:var(--ink);font:inherit;font-size:1.15rem;font-weight:800;display:flex;align-items:center;justify-content:center;gap:10px;padding:10px;cursor:pointer;box-shadow:0 5px 0 var(--line-strong);transition:transform .15s,background-color .15s}
+.g-mo-opt .arr{font-size:1.8rem;color:var(--agent)}.g-mo-opt.lean{transform:scale(1.06);border-color:var(--agent);background:var(--agent-tint)}
+.g-mo-opt.ok{border-color:var(--good-edge);background:var(--good-bg)}.g-mo-opt.bad{border-color:var(--bad);background:var(--bad-bg)}
+.g-mo-cam{position:relative}.g-mo-cam video{width:100%;border-radius:12px;transform:scaleX(-1);display:block;background:#000}
+.g-mo-meter{position:relative;height:10px;border-radius:99px;background:var(--surface2);margin-top:6px}.g-mo-meter i{position:absolute;top:-3px;left:50%;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:var(--signal)}
+@media (max-width:620px){.g-mo-row{grid-template-columns:1fr 1fr}.g-mo-cam{grid-column:1/-1;grid-row:1;max-width:220px;margin:0 auto}}
 /* ===== dạng bài thi ===== */
 .x-tabs{display:flex;gap:8px;flex-wrap:wrap}
 .x-tab{font:inherit;font-weight:700;border:2px solid var(--line-strong);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer;min-height:40px}
@@ -338,6 +399,14 @@ const LEVELS=[
   {k:'B2+',name:'B2+',h:650},{k:'C1',name:'C1',h:750}];
 const ENTRY_H={'preA2':140,'A2':220,'A2+':300,'B1':400,'B1+':490,'B2':580};
 function levelOfHours(h){let L=LEVELS[0];for(const l of LEVELS){if(h>=l.h)L=l}return L}
+/* ----- mức học theo bài đầu vào ----- */
+const TRACKS={nen:{name:'Nền tảng',desc:'game chậm hơn, có gợi ý; bài dạng đề mức A2; bài giấy kèm trang gợi ý'},chuan:{name:'Chuẩn',desc:'nội dung A2+–B1 như thiết kế gốc'},nang:{name:'Nâng cao',desc:'game nhanh hơn, ít gợi ý; bài dạng đề mức B1+–B2; bài giấy thêm phần thử thách H'}};
+function trackFromLevel(l){if(!l)return 'chuan';if(l==='preA2'||l==='A2')return 'nen';if(l==='A2+'||l==='B1')return 'chuan';return 'nang'}
+function curTrack(){return S.track||trackFromLevel(S.diag&&S.diag.level)}
+function examFor(n){const W=(C.web&&C.web[n])||{};const t=curTrack();return (t==='nen'&&W.exam_easy&&W.exam_easy.length?W.exam_easy:t==='nang'&&W.exam_plus&&W.exam_plus.length?W.exam_plus:W.exam)||[]}
+function trackBar(){const t=curTrack();const L=S.diag&&LEVELS.find(l=>l.k===S.diag.level);
+  return `<div class="trackbar"><span>Mức của em: <b>${TRACKS[t].name}</b>${S.track?' (em tự chọn)':L?' (theo bài đầu vào: '+esc(L.name)+')':' (chưa làm bài đầu vào)'}</span><label class="small">Đổi mức <select id="trackSel">${Object.entries(TRACKS).map(([k,v])=>`<option value="${k}" ${k===t?'selected':''}>${v.name}</option>`).join('')}</select></label><span class="small muted">${esc(TRACKS[t].desc)}</span></div>`}
+function wireTrack(after){const sel=$('#trackSel');if(sel)sel.onchange=()=>{const v=sel.value;S.track=v===trackFromLevel(S.diag&&S.diag.level)?null:v;save();after()}}
 function levelFromBands(a,b,c){
   if(a<5) return 'preA2';
   if(b<4) return 'A2';
@@ -485,7 +554,8 @@ function resultCard(r,title){
   return `<div class="card"><p class="eyebrow">${title}</p>
   <div class="row"><h2>${r.total}/${r.of} câu đúng</h2><span class="pill hi">Ước tính: ${L.name}</span></div>
   <div class="bars">${['A2','B1','B2'].map(k=>bar('Câu mức '+k,b[k][0],b[k][1])).join('')}</div>
-  <p class="small muted">Đây là ước tính từ 30 câu, đủ để chọn lộ trình, chưa thay được bài thi chứng chỉ.</p></div>`;
+  <p class="small muted">Đây là ước tính từ 30 câu, đủ để chọn lộ trình, chưa thay được bài thi chứng chỉ.</p>
+  ${title==='Kết quả đầu vào'?`<p class="notice">Game, bài dạng đề thi và bài giấy của 14 buổi được chỉnh theo mức <b>${TRACKS[trackFromLevel(r.level)].name}</b>: ${esc(TRACKS[trackFromLevel(r.level)].desc)}.</p>`:''}</div>`;
 }
 function bar(label,a,b){const p=b?Math.round(100*a/b):0;return `<div class="bar"><span>${esc(label)}</span><div class="track"><div class="fill" style="width:${p}%"></div></div><span class="v">${a}/${b}</span></div>`}
 function wireTest(kind){
@@ -520,20 +590,21 @@ function vDays(){
 /* ----- học trên web: video, game, dạng bài thi, iSLCollective, bài giấy PDF ----- */
 const pad2=n=>String(n).padStart(2,'0');
 function gPill(n){const g=(S.days[n]||{}).games||{};const k=Object.keys(g).length;const t=gamesForDay(n).length;return `<span class="pill ${k>=t?'good':''}">${k>=t?'✓ ':''}Game ${k}/${t}</span>`}
-function xPill(n){const W=(C.web&&C.web[n])||{};const t=(W.exam||[]).length;if(!t)return '';const x=(S.days[n]||{}).exam||{};const k=Object.keys(x).length;return `<span class="pill ${k>=t?'good':''}">${k>=t?'✓ ':''}Dạng bài thi ${k}/${t}</span>`}
-function learnHTML(n){const D=DAYS[n-1];const W=(C.web&&C.web[n])||{};const MD=(C.media&&C.media[n])||{};const games=gamesForDay(n);const ex=W.exam||[];const rec=S.days[n]||{};const gs=rec.games||{},xs=rec.exam||{};
+function xPill(n){const t=examFor(n).length;if(!t)return '';const x=(S.days[n]||{}).exam||{};const k=Object.keys(x).length;return `<span class="pill ${k>=t?'good':''}">${k>=t?'✓ ':''}Dạng bài thi ${k}/${t}</span>`}
+function learnHTML(n){const D=DAYS[n-1];const W=(C.web&&C.web[n])||{};const MD=(C.media&&C.media[n])||{};const games=gamesForDay(n);const ex=examFor(n);const rec=S.days[n]||{};const tr=curTrack();const gs=rec.games||{},xs=rec.exam||{};
   const g=D.grammar;let h='';
-  const vids=[];if(MD.video)vids.push(Object.assign({lang:'en'},MD.video));((C.media_vi||{})[n]||[]).forEach(v=>vids.push(Object.assign({lang:'vi'},v)));
+  const vids=[];if(MD.video)vids.push(Object.assign({lang:'en'},MD.video));((C.media_vi||{})[n]||[]).forEach(v=>vids.push(Object.assign({lang:'vi'},v)));if(tr==='nen')vids.sort((a,b)=>(a.lang==='vi'?0:1)-(b.lang==='vi'?0:1));
   const vidHTML=v=>`<div class="yt" data-id="${esc(v.id)}"><button type="button" class="yt-btn" aria-label="Phát video ${esc(v.title)}"><img src="https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.visibility='hidden'"><span class="yt-play">▶</span></button></div><p class="small muted">${esc(v.title)} · ${esc(v.channel||'')}${v.minutes?' · '+v.minutes+' phút':''} · <a href="https://www.youtube.com/watch?v=${encodeURIComponent(v.id)}" target="_blank" rel="noopener">Mở trên YouTube</a>${(v.why_vi||v.note_vi)?'<br>'+esc(v.why_vi||v.note_vi):''}</p>`;
   h+=`<div class="card" id="vidCard"><h3 class="ih">${em('television')}Bước 1 · ${g?'Xem video ngữ pháp':'Xem video ôn tập'}</h3>${g?`<p><b>${esc(g.title)}</b></p>`:''}
     ${vids.length>1?`<div class="x-tabs v-tabs">${vids.map((v,i)=>`<button type="button" class="x-tab" data-v="${i}" aria-selected="${i===0}">${v.lang==='vi'?'Cô giáo Việt Nam giảng'+(vids.filter(x=>x.lang==='vi').length>1?' '+(vids.filter(x=>x.lang==='vi').indexOf(v)+1):''):'Giảng bằng tiếng Anh'}</button>`).join('')}</div>`:''}
     <div id="vidBox">${vids.length?vidHTML(vids[0]):'<p class="small muted">Video của buổi này đang được cô chọn.</p>'}</div>
     ${g?`<details class="gsum"><summary>Tóm tắt ngữ pháp bằng tiếng Việt</summary><ul>${g.rule_vi.map(r=>`<li>${esc(r)}</li>`).join('')}</ul><p class="ex">${g.examples.map(esc).join(' · ')}</p>${g.common_mistake_vi?`<p class="t-note">Lỗi hay gặp: ${esc(g.common_mistake_vi)}</p>`:''}</details>`:''}</div>`;
   learnHTML.vids=vids;learnHTML.vidHTML=vidHTML;
-  h+=`<div class="card" id="gameCard"><h3 class="ih">${em('video-game')}Bước 2 · Chơi game ôn từ và ngữ pháp</h3><div class="g-tabs" role="tablist">${games.map((gm,i)=>{const r=gs[gm.key];return `<button type="button" role="tab" class="g-tab" data-g="${i}" aria-selected="${i===0}">${em(G_ICON[gm.type]||'sparkles','',28)}<span class="g-tt"><b>${esc(G_NAME[gm.type])}</b><small>${esc(gm.title)}</small></span>${r?gStarHTML(r.stars||0):''}</button>`}).join('')}</div><div class="g-box" id="gameBox"></div></div>`;
+  h+=`<div class="card" id="gameCard"><h3 class="ih">${em('video-game')}Bước 2 · Chơi game ôn từ và ngữ pháp</h3><div class="g-tabs" role="tablist">${games.map((gm,i)=>{const r=gs[gm.key];return `<button type="button" role="tab" class="g-tab" data-g="${i}" aria-selected="${i===0}">${em(G_ICON[gm.type]||'sparkles','',28)}<span class="g-tt"><b>${esc(G_NAME[gm.type])}${gm.isNew?' <i class="g-new">Mới</i>':''}</b><small>${esc(gm.title)}</small></span>${r?gStarHTML(r.stars||0):''}</button>`}).join('')}</div><div class="g-box" id="gameBox"></div></div>`;
   if(ex.length)h+=`<div class="card" id="examCard"><h3 class="ih">${em('bullseye')}Bước 3 · Làm quen dạng bài thi thật</h3><div class="x-tabs">${ex.map((b,i)=>{const r=xs[b.format];return `<button type="button" class="x-tab" data-x="${i}" aria-selected="${i===0}">${esc(X_FMT[b.format]||b.format)}${r?` <span class="pill ${r.correct/r.total>=.6?'good':'warn'}">${r.correct}/${r.total}</span>`:''}</button>`}).join('')}</div><div id="examBox"></div></div>`;
   if(MD.isl&&MD.isl.length)h+=`<div class="card"><h3 class="ih">${em('rocket')}Chơi thêm trên iSLCollective</h3><p class="small muted">Bài tương tác cùng chủ điểm trên trang iSLCollective (mở tab mới, không bắt buộc).</p><ul class="isl">${MD.isl.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> <span class="pill">${x.kind==='video'?'Video tương tác':x.kind==='game'?'Game':'Bài tập online'}</span>${x.note_vi?`<br><span class="small muted">${esc(x.note_vi)}</span>`:''}</li>`).join('')}</ul></div>`;
-  h+=`<div class="card hi-card" id="pdfCard"><h3 class="ih">${em('memo')}Bước 4 · Làm bài trên giấy</h3><p>In bài tập giấy của buổi ${n}, làm trong khoảng ${D.minutes||30} phút, không mở web trong lúc làm.</p><div class="row"><a class="btn hi" href="pdf/buoi-${pad2(n)}.pdf" download="Buoi-${pad2(n)}-${esc(D.theme_en||'').replace(/[^A-Za-z]+/g,'-')}.pdf">⬇ Tải bài tập giấy của ngày</a><a class="btn ghost" href="pdf/buoi-${pad2(n)}.pdf" target="_blank" rel="noopener">Mở xem</a></div></div>`;
+  const pf=t=>`pdf/buoi-${pad2(n)}${t==='chuan'?'':'-'+t}.pdf`;const others=Object.keys(TRACKS).filter(t=>t!==tr);
+  h+=`<div class="card hi-card" id="pdfCard"><h3 class="ih">${em('memo')}Bước 4 · Làm bài trên giấy</h3><p>In bài tập giấy của buổi ${n} (bản <b>${TRACKS[tr].name}</b>), làm trong khoảng ${D.minutes||30}${tr==='nang'?'–40':''} phút, không mở web trong lúc làm.${tr==='nen'?' Bản này có thêm một trang gợi ý: từ loại cần điền, nghĩa từ khó trong bài đọc và câu mở đầu cho bài viết.':tr==='nang'?' Bản này có thêm phần H. Thử thách nâng cao (6 câu mức B1+–B2).':''}</p><div class="row"><a class="btn hi" href="${pf(tr)}" download="Buoi-${pad2(n)}-${tr}.pdf">⬇ Tải bài tập giấy của ngày</a><a class="btn ghost" href="${pf(tr)}" target="_blank" rel="noopener">Mở xem</a></div><p class="small muted">Bản khác: ${others.map(t=>`<a href="${pf(t)}" target="_blank" rel="noopener">${TRACKS[t].name}</a>`).join(' · ')}</p></div>`;
   return h}
 function wireLearn(n){
   const wireYt=()=>{const yt=$('#vidCard .yt-btn');if(yt)yt.onclick=()=>{const id=yt.parentElement.dataset.id;yt.parentElement.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0" title="Video ngữ pháp" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;S.days[n]=Object.assign(S.days[n]||{},{video:Date.now()});save()}};wireYt();
@@ -546,7 +617,7 @@ function wireLearn(n){
       const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')})};
   $('#gameCard .g-tabs').onclick=e=>{const b=e.target.closest('.g-tab');if(b)openG(+b.dataset.g)};
   if(games.length)openG(0);
-  const W=(C.web&&C.web[n])||{};const ex=W.exam||[];const xb=$('#examBox');
+  const ex=examFor(n);const xb=$('#examBox');
   if(xb){const openX=i=>{document.querySelectorAll('#examCard .x-tab').forEach(b=>b.setAttribute('aria-selected',+b.dataset.x===i?'true':'false'));const B=ex[i];
       renderExam(xb,B,null,r=>{const rec=S.days[n]=S.days[n]||{};rec.exam=rec.exam||{};rec.exam[B.format]={correct:r.correct,total:r.total,at:Date.now()};save();
         const tab=document.querySelector(`#examCard .x-tab[data-x="${i}"]`);if(tab)tab.innerHTML=esc(X_FMT[B.format]||B.format)+` <span class="pill ${r.correct/r.total>=.6?'good':'warn'}">${r.correct}/${r.total}</span>`;
@@ -560,13 +631,13 @@ function renderDay(n){
   const q=dueQueue(n);
   const stp=dayStatus(n);
   body.innerHTML=`<div class="card"><div class="dayhead">${dayIcon(n,'dh-ic',80)}<div class="dh-t"><p class="eyebrow">Buổi ${String(n).padStart(2,'0')}/14${D.type==='review'?' · Ôn tập':''}</p><h2>${esc(D.theme_vi)}</h2></div>${stp==='done'?'<span class="stamp">Xong</span>':stp==='part'?'<span class="stamp part">Đang làm</span>':''}</div><p class="lead">${esc(D.goal_vi||'')}</p>
-   <div class="row">${gPill(n)}${xPill(n)}${pill(wk,'Kiểm tra cuối buổi')}${pill(pp,'Bài giấy')}</div></div>
+   <div class="row">${gPill(n)}${xPill(n)}${pill(wk,'Kiểm tra cuối buổi')}${pill(pp,'Bài giấy')}</div>${trackBar()}</div>
    ${learnHTML(n)}
    <div class="card" id="checkCard"><div class="row" style="justify-content:space-between"><h3 class="ih">${em('brain')}Bước 5 · Kiểm tra nhanh cuối buổi</h3><span class="small muted">${(D.web_check||[]).length+(wk?0:q.length)} câu · gấp tập giấy lại</span></div>
    ${wk?`<p class="score">${wk.correct/wk.total>=0.8?em('party-popper','',40):wk.correct/wk.total>=0.6?em('sparkles','',40):em('flexed-biceps','',40)}<span>Em đúng <b>${wk.correct}/${wk.total}</b> câu.</span></p>`:''}
    <form id="webForm"></form></div>
    <div class="card" id="paperCard"></div>`;
-  wireLearn(n);
+  wireLearn(n);wireTrack(()=>renderDay(n));
   // web check
   const form=$('#webForm');
   let items, reviewIds;
@@ -598,7 +669,7 @@ function updateQueue(it,ok,day,isReview){
   if(isReview){S.stats.retry[1]++;if(ok)S.stats.retry[0]++}
   if(it.skill==='review'||it.from_day){S.stats.spiral[1]++;if(ok)S.stats.spiral[0]++}
 }
-const SECTION_NAMES={A_vocab:'A · Từ vựng',B_grammar:'B · Ngữ pháp',C_wordform:'C · Cấu tạo từ',D_exam:'D · Dạng bài thi chuyên',E_reading:'E · Đọc hiểu',G_review:'G · Ôn xoắn ốc',R1_vocab:'R1 · Từ vựng',R2_grammar:'R2 · Ngữ pháp',R3_wordform:'R3 · Cấu tạo từ',R4_exam:'R4 · Dạng bài thi chuyên'};
+const SECTION_NAMES={A_vocab:'A · Từ vựng',B_grammar:'B · Ngữ pháp',C_wordform:'C · Cấu tạo từ',D_exam:'D · Dạng bài thi chuyên',E_reading:'E · Đọc hiểu',G_review:'G · Ôn xoắn ốc',R1_vocab:'R1 · Từ vựng',R2_grammar:'R2 · Ngữ pháp',R3_wordform:'R3 · Cấu tạo từ',R4_exam:'R4 · Dạng bài thi chuyên',H_plus:'H · Thử thách nâng cao'};
 function keyAnswer(it){
   if(it.options&&typeof it.answer==='string'&&/^[A-D]$/.test(it.answer)){const i='ABCD'.indexOf(it.answer);return it.answer+'. '+(it.options[i]||'')}
   return it.answer+(it.accept&&it.accept.length?` (chấp nhận: ${it.accept.join(', ')})`:'');
@@ -618,7 +689,7 @@ function renderPaperKey(n,unlocked){
 function renderPaperKeyLocal(n,unlocked,card){
   const D=DAYS[n-1];const rec=S.days[n]||{};
   if(!unlocked){card.innerHTML=`<h3 class="ih">${em('locked')}Bước 6 · Chữa bài giấy</h3><p class="muted">Đáp án bài giấy sẽ mở sau khi em làm xong Kiểm tra nhanh cuối buổi, để em kiểm tra trí nhớ trước.</p>`;return}
-  const P=D.paper;const order=Object.keys(SECTION_NAMES).filter(k=>P[k]);
+  const PP=((C.web&&C.web[n])||{}).paper_plus;const P=curTrack()==='nang'&&PP?Object.assign({},D.paper,{H_plus:PP}):D.paper;const order=Object.keys(SECTION_NAMES).filter(k=>P[k]);
   const saved=(rec.paper&&rec.paper.ticks)||{};
   let html=`<div class="row" style="justify-content:space-between"><h3 class="ih">${em('memo')}Bước 6 · Chữa bài giấy</h3>${rec.paper?`<span class="pill good">Đúng ${rec.paper.correct}/${rec.paper.total}</span>`:''}</div><p class="small muted">Đối chiếu từng câu, tích vào câu em làm đúng, rồi bấm Lưu.</p><form id="paperForm" class="key-section">`;
   order.forEach(k=>{const sec=P[k];html+=`<h3 style="margin-top:10px;font-size:1.05rem">${SECTION_NAMES[k]}</h3>`;
@@ -796,7 +867,7 @@ function summary(){
   const A=agg();const eff=efficiency(A);const entry=S.diag;
   const days={};for(let i=1;i<=14;i++){const r=S.days[i];if(r){const g=Object.values(r.games||{}),x=Object.values(r.exam||{});days[i]=[r.web?r.web.correct:null,r.web?r.web.total:null,r.paper?r.paper.correct:null,r.paper?r.paper.total:null,r.web?r.web.at:(r.paper?r.paper.at:(g.length?Math.max(...g.map(y=>y.at)):null)),g.reduce((t,y)=>t+(y.stars||0),0),g.length,x.length?x.reduce((t,y)=>t+y.correct,0):null,x.length?x.reduce((t,y)=>t+y.total,0):null]}}
   const wrong=Object.entries(S.queue).map(([id,q])=>[id,q.wrong||1]);
-  return {v:1,n:S.name,d:S.diag&&{t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands},f:S.final&&{t:S.final.total,o:S.final.of,l:S.final.level,b:S.final.bands},days,sk:A.skills,rt:A.retry,mq:A.mastered,q:wrong,p:S.plan,e:eff.f,sd:A.studyDays,sp:A.span,at:Date.now()};
+  return {v:1,n:S.name,d:S.diag&&{t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands},f:S.final&&{t:S.final.total,o:S.final.of,l:S.final.level,b:S.final.bands},days,sk:A.skills,rt:A.retry,mq:A.mastered,q:wrong,p:S.plan,e:eff.f,sd:A.studyDays,sp:A.span,tr:curTrack(),at:Date.now()};
 }
 function vShare(){
   M().innerHTML=`<section class="view">

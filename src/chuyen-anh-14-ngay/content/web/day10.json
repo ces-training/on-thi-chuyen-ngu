@@ -1,62 +1,544 @@
 {
-  "day": 10,
-  "grammar_games": {
-    "sort": {
-      "title_vi": "Xếp mỗi câu vào đúng loại câu điều kiện",
-      "groups": [
-        {"name": "Type 0", "items": ["If you freeze water, it turns into ice.", "If people don't sleep, they get tired.", "Chocolate melts if you leave it in the sun."]},
-        {"name": "Type 1", "items": ["If you apply early, you'll get an interview.", "If Mai practises more, she will win.", "We'll miss the bus if we don't hurry."]},
-        {"name": "Type 2", "items": ["If I were rich, I'd travel the world.", "If I had wings, I would fly to school.", "She would apply if she spoke English."]}
-      ]
-    },
-    "unjumble": [
-      {"sentence": "If you work hard, you will have a successful career.", "hint_vi": "Loại 1: If + hiện tại đơn, will + V."},
-      {"sentence": "If I were you, I would apply for that job.", "hint_vi": "Loại 2 khuyên bảo: If I were you, I would..."},
-      {"sentence": "If you drop an egg, it usually breaks.", "hint_vi": "Loại 0: điều luôn xảy ra, hai vế đều hiện tại đơn."},
-      {"sentence": "What would you do if you lost your job?", "hint_vi": "Câu hỏi loại 2: What would you do if + quá khứ đơn?"},
-      {"sentence": "You will get the job if you have more experience.", "hint_vi": "Loại 1, mệnh đề if đứng sau nên không có dấu phẩy."}
-    ],
-    "truefalse": [
-      {"s": "If it will be sunny tomorrow, we'll go to the beach.", "ok": false, "fix": "If it is sunny tomorrow, we'll go to the beach.", "why_vi": "Không dùng will trong mệnh đề if; dùng hiện tại đơn: If it is sunny."},
-      {"s": "If I were a teacher, I would never give homework.", "ok": true, "fix": "If I were a teacher, I would never give homework.", "why_vi": "Đúng: loại 2 (điều không có thật), If + were, would + V."},
-      {"s": "If babies are hungry, they cry.", "ok": true, "fix": "If babies are hungry, they cry.", "why_vi": "Đúng: loại 0 nói điều luôn xảy ra, hai vế đều hiện tại đơn."},
-      {"s": "If I have a million dollars, I would buy a house by the sea.", "ok": false, "fix": "If I had a million dollars, I would buy a house by the sea.", "why_vi": "Vế sau có would → loại 2, vế if phải chia quá khứ đơn: had."},
-      {"s": "If Lan gets the job, she will move to Đà Nẵng.", "ok": true, "fix": "If Lan gets the job, she will move to Đà Nẵng.", "why_vi": "Đúng: loại 1, If + hiện tại đơn (gets), will + V."},
-      {"s": "My mum would be happy if I tidy my room every day.", "ok": false, "fix": "My mum would be happy if I tidied my room every day.", "why_vi": "Vế chính có would → loại 2, vế if dùng quá khứ đơn: tidied."},
-      {"s": "If I were you, I will apply for the job.", "ok": false, "fix": "If I were you, I would apply for the job.", "why_vi": "If I were you là loại 2 → vế sau dùng would, không dùng will."},
-      {"s": "If you leave ice cream in the sun, it melts.", "ok": true, "fix": "If you leave ice cream in the sun, it melts.", "why_vi": "Đúng: loại 0 (sự thật hiển nhiên), hai vế hiện tại đơn."}
-    ]
-  },
-  "exam": [
+ "day": 10,
+ "grammar_games": {
+  "sort": {
+   "title_vi": "Xếp mỗi câu vào đúng loại câu điều kiện",
+   "groups": [
     {
-      "format": "dialogue_completion",
-      "title_vi": "Hoàn thành hội thoại",
-      "intro_vi": "Đề Chuyên Ngoại ngữ có 6 câu hoàn thành hội thoại; đề chung vào lớp 10 cũng có câu chọn lời đáp phù hợp. Em đọc lời người A rồi chọn câu B đáp lại tự nhiên nhất.",
-      "tip_vi": "Mẹo: xác định A đang làm gì (khen, nhờ, xin lỗi, khuyên, hỏi ý kiến) rồi chọn câu đáp đúng chức năng, không chỉ đúng ngữ pháp.",
-      "kind": "mcq",
-      "items": [
-        {"q": "A: I've just been offered a place at the summer art camp!\nB: ______", "options": ["Never mind. Better luck next time.", "Congratulations! You really deserve it.", "That's a pity.", "Yes, I'd love to."], "answer": 1, "explain_vi": "A báo tin vui → B chúc mừng: Congratulations! 'Never mind' và 'That's a pity' dùng cho tin buồn."},
-        {"q": "A: Would you mind helping me with my job application form?\nB: ______", "options": ["Yes, I'd mind.", "You're welcome.", "Not at all. Let me have a look.", "No, thanks. I can do it myself."], "answer": 2, "explain_vi": "Would you mind...? = Bạn có phiền...? Đồng ý giúp thì nói 'Not at all' (không phiền gì)."},
-        {"q": "A: If I were you, I'd ask the teacher for some advice.\nB: ______", "options": ["That's a good idea. Thanks.", "Me neither.", "Same to you.", "I'm afraid I can't come."], "answer": 0, "explain_vi": "A đưa lời khuyên → B cảm ơn và đồng ý: That's a good idea. Thanks."},
-        {"q": "A: I'm sorry, I can't finish the report today. My computer has broken down.\nB: ______", "options": ["Well done! Good job.", "Yes, I'd love to.", "You're welcome.", "Never mind. You can send it to me tomorrow."], "answer": 3, "explain_vi": "A xin lỗi → B thông cảm: Never mind (không sao). 'You're welcome' là đáp lời cảm ơn."},
-        {"q": "A: What would you do if you were offered a job abroad?\nB: ______", "options": ["Yes, I would.", "I would accept it. It would be a great experience.", "I will go there last year.", "I'm working abroad now."], "answer": 1, "explain_vi": "Câu hỏi What would you do if...? (loại 2) → trả lời bằng I would + V. 'Yes, I would' không trả lời câu hỏi What."}
-      ]
+     "name": "Type 0",
+     "items": [
+      "If you freeze water, it turns into ice.",
+      "If people don't sleep, they get tired.",
+      "Chocolate melts if you leave it in the sun."
+     ]
     },
     {
-      "format": "listening",
-      "title_vi": "Nghe và điền ghi chú",
-      "intro_vi": "Phần nghe của đề chuyên Anh của Sở có 20 câu; một dạng hay gặp là nghe một thông báo rồi điền từ hoặc số vào phiếu ghi chú. Ở đây em nghe 1 bài và điền 5 chỗ trống.",
-      "tip_vi": "Mẹo: đọc phiếu ghi chú trước khi nghe, đoán chỗ trống cần số, tên hay danh từ. Viết số bằng chữ số, kiểm tra chính tả.",
-      "kind": "gap_text",
-      "script": "Good morning, everyone. This is an announcement from the school office about our Career Day. This year, Career Day will be held on Saturday the 14th of November in the school hall. It starts at half past eight and finishes at half past eleven. More than twenty guests will come to talk about their jobs, including a pilot, a chef, two doctors and a famous game designer. If you want to ask the guests questions, please prepare them before the day. There will also be a special workshop on how to write a CV. Places are limited to 40 students, so if you want to join, you need to apply before Wednesday. To apply, just send an email to Ms Hoa, the school librarian. Students who help at the event will receive a certificate. Please wear your school uniform on the day. If it rains, the outdoor activities will move to the sports hall. Thank you, and we hope to see you there!",
-      "text": "CAREER DAY\n• Date: Saturday, [1] November\n• Place: the school [2]\n• More than 20 guests, e.g. a pilot, a chef and a game [3]\n• CV workshop: only [4] places – apply before Wednesday\n• To apply: email Ms Hoa, the school [5]",
-      "items": [
-        {"answer": "14", "accept": ["14th"], "explain_vi": "Bài nói: 'Saturday the 14th of November' → điền 14."},
-        {"answer": "hall", "accept": [], "explain_vi": "Bài nói: 'in the school hall' (hội trường trường)."},
-        {"answer": "designer", "accept": [], "explain_vi": "Bài nói: 'a famous game designer' (nhà thiết kế trò chơi)."},
-        {"answer": "40", "accept": [], "explain_vi": "Bài nói: 'Places are limited to 40 students' → 40 chỗ. Đừng nhầm với 'twenty guests'."},
-        {"answer": "librarian", "accept": [], "explain_vi": "Bài nói: 'Ms Hoa, the school librarian' (cô thủ thư)."}
-      ]
+     "name": "Type 1",
+     "items": [
+      "If you apply early, you'll get an interview.",
+      "If Mai practises more, she will win.",
+      "We'll miss the bus if we don't hurry."
+     ]
+    },
+    {
+     "name": "Type 2",
+     "items": [
+      "If I were rich, I'd travel the world.",
+      "If I had wings, I would fly to school.",
+      "She would apply if she spoke English."
+     ]
     }
+   ]
+  },
+  "unjumble": [
+   {
+    "sentence": "If you work hard, you will have a successful career.",
+    "hint_vi": "Loại 1: If + hiện tại đơn, will + V."
+   },
+   {
+    "sentence": "If I were you, I would apply for that job.",
+    "hint_vi": "Loại 2 khuyên bảo: If I were you, I would..."
+   },
+   {
+    "sentence": "If you drop an egg, it usually breaks.",
+    "hint_vi": "Loại 0: điều luôn xảy ra, hai vế đều hiện tại đơn."
+   },
+   {
+    "sentence": "What would you do if you lost your job?",
+    "hint_vi": "Câu hỏi loại 2: What would you do if + quá khứ đơn?"
+   },
+   {
+    "sentence": "You will get the job if you have more experience.",
+    "hint_vi": "Loại 1, mệnh đề if đứng sau nên không có dấu phẩy."
+   }
+  ],
+  "truefalse": [
+   {
+    "s": "If it will be sunny tomorrow, we'll go to the beach.",
+    "ok": false,
+    "fix": "If it is sunny tomorrow, we'll go to the beach.",
+    "why_vi": "Không dùng will trong mệnh đề if; dùng hiện tại đơn: If it is sunny."
+   },
+   {
+    "s": "If I were a teacher, I would never give homework.",
+    "ok": true,
+    "fix": "If I were a teacher, I would never give homework.",
+    "why_vi": "Đúng: loại 2 (điều không có thật), If + were, would + V."
+   },
+   {
+    "s": "If babies are hungry, they cry.",
+    "ok": true,
+    "fix": "If babies are hungry, they cry.",
+    "why_vi": "Đúng: loại 0 nói điều luôn xảy ra, hai vế đều hiện tại đơn."
+   },
+   {
+    "s": "If I have a million dollars, I would buy a house by the sea.",
+    "ok": false,
+    "fix": "If I had a million dollars, I would buy a house by the sea.",
+    "why_vi": "Vế sau có would → loại 2, vế if phải chia quá khứ đơn: had."
+   },
+   {
+    "s": "If Lan gets the job, she will move to Đà Nẵng.",
+    "ok": true,
+    "fix": "If Lan gets the job, she will move to Đà Nẵng.",
+    "why_vi": "Đúng: loại 1, If + hiện tại đơn (gets), will + V."
+   },
+   {
+    "s": "My mum would be happy if I tidy my room every day.",
+    "ok": false,
+    "fix": "My mum would be happy if I tidied my room every day.",
+    "why_vi": "Vế chính có would → loại 2, vế if dùng quá khứ đơn: tidied."
+   },
+   {
+    "s": "If I were you, I will apply for the job.",
+    "ok": false,
+    "fix": "If I were you, I would apply for the job.",
+    "why_vi": "If I were you là loại 2 → vế sau dùng would, không dùng will."
+   },
+   {
+    "s": "If you leave ice cream in the sun, it melts.",
+    "ok": true,
+    "fix": "If you leave ice cream in the sun, it melts.",
+    "why_vi": "Đúng: loại 0 (sự thật hiển nhiên), hai vế hiện tại đơn."
+   }
   ]
+ },
+ "exam": [
+  {
+   "format": "dialogue_completion",
+   "title_vi": "Hoàn thành hội thoại",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 6 câu hoàn thành hội thoại; đề chung vào lớp 10 cũng có câu chọn lời đáp phù hợp. Em đọc lời người A rồi chọn câu B đáp lại tự nhiên nhất.",
+   "tip_vi": "Mẹo: xác định A đang làm gì (khen, nhờ, xin lỗi, khuyên, hỏi ý kiến) rồi chọn câu đáp đúng chức năng, không chỉ đúng ngữ pháp.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "A: I've just been offered a place at the summer art camp!\nB: ______",
+     "options": [
+      "Never mind. Better luck next time.",
+      "Congratulations! You really deserve it.",
+      "That's a pity.",
+      "Yes, I'd love to."
+     ],
+     "answer": 1,
+     "explain_vi": "A báo tin vui → B chúc mừng: Congratulations! 'Never mind' và 'That's a pity' dùng cho tin buồn."
+    },
+    {
+     "q": "A: Would you mind helping me with my job application form?\nB: ______",
+     "options": [
+      "Yes, I'd mind.",
+      "You're welcome.",
+      "Not at all. Let me have a look.",
+      "No, thanks. I can do it myself."
+     ],
+     "answer": 2,
+     "explain_vi": "Would you mind...? = Bạn có phiền...? Đồng ý giúp thì nói 'Not at all' (không phiền gì)."
+    },
+    {
+     "q": "A: If I were you, I'd ask the teacher for some advice.\nB: ______",
+     "options": [
+      "That's a good idea. Thanks.",
+      "Me neither.",
+      "Same to you.",
+      "I'm afraid I can't come."
+     ],
+     "answer": 0,
+     "explain_vi": "A đưa lời khuyên → B cảm ơn và đồng ý: That's a good idea. Thanks."
+    },
+    {
+     "q": "A: I'm sorry, I can't finish the report today. My computer has broken down.\nB: ______",
+     "options": [
+      "Well done! Good job.",
+      "Yes, I'd love to.",
+      "You're welcome.",
+      "Never mind. You can send it to me tomorrow."
+     ],
+     "answer": 3,
+     "explain_vi": "A xin lỗi → B thông cảm: Never mind (không sao). 'You're welcome' là đáp lời cảm ơn."
+    },
+    {
+     "q": "A: What would you do if you were offered a job abroad?\nB: ______",
+     "options": [
+      "Yes, I would.",
+      "I would accept it. It would be a great experience.",
+      "I will go there last year.",
+      "I'm working abroad now."
+     ],
+     "answer": 1,
+     "explain_vi": "Câu hỏi What would you do if...? (loại 2) → trả lời bằng I would + V. 'Yes, I would' không trả lời câu hỏi What."
+    }
+   ]
+  },
+  {
+   "format": "listening",
+   "title_vi": "Nghe và điền ghi chú",
+   "intro_vi": "Phần nghe của đề chuyên Anh của Sở có 20 câu; một dạng hay gặp là nghe một thông báo rồi điền từ hoặc số vào phiếu ghi chú. Ở đây em nghe 1 bài và điền 5 chỗ trống.",
+   "tip_vi": "Mẹo: đọc phiếu ghi chú trước khi nghe, đoán chỗ trống cần số, tên hay danh từ. Viết số bằng chữ số, kiểm tra chính tả.",
+   "kind": "gap_text",
+   "script": "Good morning, everyone. This is an announcement from the school office about our Career Day. This year, Career Day will be held on Saturday the 14th of November in the school hall. It starts at half past eight and finishes at half past eleven. More than twenty guests will come to talk about their jobs, including a pilot, a chef, two doctors and a famous game designer. If you want to ask the guests questions, please prepare them before the day. There will also be a special workshop on how to write a CV. Places are limited to 40 students, so if you want to join, you need to apply before Wednesday. To apply, just send an email to Ms Hoa, the school librarian. Students who help at the event will receive a certificate. Please wear your school uniform on the day. If it rains, the outdoor activities will move to the sports hall. Thank you, and we hope to see you there!",
+   "text": "CAREER DAY\n• Date: Saturday, [1] November\n• Place: the school [2]\n• More than 20 guests, e.g. a pilot, a chef and a game [3]\n• CV workshop: only [4] places – apply before Wednesday\n• To apply: email Ms Hoa, the school [5]",
+   "items": [
+    {
+     "answer": "14",
+     "accept": [
+      "14th"
+     ],
+     "explain_vi": "Bài nói: 'Saturday the 14th of November' → điền 14."
+    },
+    {
+     "answer": "hall",
+     "accept": [],
+     "explain_vi": "Bài nói: 'in the school hall' (hội trường trường)."
+    },
+    {
+     "answer": "designer",
+     "accept": [],
+     "explain_vi": "Bài nói: 'a famous game designer' (nhà thiết kế trò chơi)."
+    },
+    {
+     "answer": "40",
+     "accept": [],
+     "explain_vi": "Bài nói: 'Places are limited to 40 students' → 40 chỗ. Đừng nhầm với 'twenty guests'."
+    },
+    {
+     "answer": "librarian",
+     "accept": [],
+     "explain_vi": "Bài nói: 'Ms Hoa, the school librarian' (cô thủ thư)."
+    }
+   ]
+  }
+ ],
+ "exam_easy": [
+  {
+   "format": "dialogue_completion",
+   "title_vi": "Hoàn thành hội thoại",
+   "intro_vi": "Dạng này có trong đề Chuyên Ngoại ngữ và đề chung vào lớp 10. Em đọc câu của người A rồi chọn câu trả lời của người B hợp nhất. Mỗi câu chỉ có một đáp án đúng.",
+   "tip_vi": "Mẹo: câu hỏi 'What…?' cần câu trả lời có thông tin, không trả lời Yes/No. Ai cảm ơn thì đáp 'You're welcome'; ai chúc mình thì đáp 'Thank you'.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "A: What does your father do?\nB: ______",
+     "options": [
+      "He's fine, thanks.",
+      "He likes football.",
+      "He's a bus driver.",
+      "He's forty years old."
+     ],
+     "answer": 2,
+     "explain_vi": "'What does your father do?' là hỏi về nghề nghiệp → trả lời nghề: He's a bus driver. 'He's fine' trả lời câu hỏi sức khoẻ."
+    },
+    {
+     "q": "A: Thanks for helping me fill in this form.\nB: ______",
+     "options": [
+      "Good luck!",
+      "You're welcome.",
+      "Yes, please.",
+      "I'm sorry."
+     ],
+     "answer": 1,
+     "explain_vi": "A cảm ơn → B đáp lại lời cảm ơn: You're welcome (không có gì)."
+    },
+    {
+     "q": "A: What will you do if it rains on Sunday?\nB: ______",
+     "options": [
+      "I'll stay at home and read books.",
+      "Yes, it will.",
+      "I stayed at home.",
+      "It's very hot today."
+     ],
+     "answer": 0,
+     "explain_vi": "Câu hỏi 'What will you do if…?' (điều kiện loại 1) → trả lời bằng I'll (I will) + động từ. Không trả lời Yes/No, không dùng quá khứ."
+    },
+    {
+     "q": "A: I want to be a vet when I grow up.\nB: ______",
+     "options": [
+      "Yes, I'd love to.",
+      "No, thank you.",
+      "I'm sorry to hear that.",
+      "That's great! You really love animals."
+     ],
+     "answer": 3,
+     "explain_vi": "A kể về ước mơ nghề nghiệp (bác sĩ thú y) → B khen, động viên: That's great! 'Yes, I'd love to' dùng để nhận lời mời."
+    },
+    {
+     "q": "A: Good luck with your job interview tomorrow!\nB: ______",
+     "options": [
+      "You're welcome.",
+      "Here you are.",
+      "Thank you! I'll do my best.",
+      "Yes, I am."
+     ],
+     "answer": 2,
+     "explain_vi": "Ai chúc mình may mắn thì mình cảm ơn: Thank you! 'You're welcome' là câu đáp lại lời cảm ơn, không phải lời chúc."
+    }
+   ]
+  },
+  {
+   "format": "listening",
+   "title_vi": "Nghe và điền ghi chú",
+   "intro_vi": "Phần nghe trong đề chuyên Anh của Sở có dạng nghe rồi điền vào phiếu ghi chú. Bài nghe ở đây ngắn và chậm. Em nghe rồi điền một từ hoặc một số vào 5 chỗ trống.",
+   "tip_vi": "Mẹo: đọc 5 dòng ghi chú trước khi nghe, đoán chỗ nào cần số, chỗ nào cần danh từ. Số thì viết bằng chữ số, ví dụ 7.",
+   "kind": "gap_text",
+   "script": "Hello, everyone. My name is Lan. Today I want to tell you about my mother's job. My mother is a nurse. She works at a big hospital in the city centre. She starts work at seven o'clock in the morning. She goes to work by bus. Her job is not easy. She looks after sick children. She works five days a week, from Monday to Friday. She loves her job because she likes helping people. My mother always says, if you want to be a good nurse, you must be kind and patient. I want to be a nurse too. If I study hard, I will go to a medical school. Thank you for listening.",
+   "text": "MY MOTHER'S JOB\n• Job: a [1]\n• Starts work at: [2] a.m.\n• Goes to work by: [3]\n• Works [4] days a week\n• A good nurse must be kind and [5]",
+   "items": [
+    {
+     "answer": "nurse",
+     "accept": [],
+     "explain_vi": "Bài nói: 'My mother is a nurse.' (y tá)."
+    },
+    {
+     "answer": "7",
+     "accept": [
+      "7.00",
+      "7:00",
+      "seven"
+     ],
+     "explain_vi": "Bài nói: 'She starts work at seven o'clock in the morning.' → điền số 7."
+    },
+    {
+     "answer": "bus",
+     "accept": [],
+     "explain_vi": "Bài nói: 'She goes to work by bus.' (đi làm bằng xe buýt)."
+    },
+    {
+     "answer": "5",
+     "accept": [
+      "five"
+     ],
+     "explain_vi": "Bài nói: 'She works five days a week, from Monday to Friday.' → điền số 5."
+    },
+    {
+     "answer": "patient",
+     "accept": [],
+     "explain_vi": "Bài nói: 'you must be kind and patient' (tốt bụng và kiên nhẫn)."
+    }
+   ]
+  }
+ ],
+ "exam_plus": [
+  {
+   "format": "dialogue_completion",
+   "title_vi": "Hoàn thành hội thoại",
+   "intro_vi": "Câu hội thoại khó trong đề Chuyên Ngoại ngữ thường kiểm tra lời đáp lịch sự, thành ngữ giao tiếp và câu bẫy như 'Do you mind…?'. Nhiều phương án nghe tự nhiên, nhưng chỉ một câu hợp ngữ cảnh.",
+   "tip_vi": "Mẹo: với 'Do/Would you mind…?', đáp 'Not at all' là đồng ý. Kiểm tra cả thì: hỏi bằng 'would' thì đáp bằng 'would'.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "A: I'm thinking of turning down the job offer from that tech company.\nB: ______",
+     "options": [
+      "Never mind. There's always next time.",
+      "If I were you, I'd think it over first. It's a great chance.",
+      "If I am you, I will accept it at once.",
+      "Don't mention it. It was my pleasure."
+     ],
+     "answer": 1,
+     "explain_vi": "A đang phân vân → B khuyên: If I were you, I'd… (loại 2). 'If I am you' sai ngữ pháp; 'Never mind' dùng để an ủi khi thất bại."
+    },
+    {
+     "q": "A: Do you mind if I leave work an hour early today? My son is ill.\nB: ______",
+     "options": [
+      "Yes, of course. Go ahead.",
+      "No, you mustn't.",
+      "Never mind. It's not your fault.",
+      "Not at all. I hope he gets better soon."
+     ],
+     "answer": 3,
+     "explain_vi": "Do you mind…? = Bạn có phiền không? Đồng ý thì đáp 'Not at all'. 'Yes, of course' nghĩa là 'có, tôi phiền' nên mâu thuẫn với 'Go ahead'."
+    },
+    {
+     "q": "A: I've been looking for a job for six months, and I'm starting to lose hope.\nB: ______",
+     "options": [
+      "Well done! Keep up the good work.",
+      "Lucky you! I wish I had so much free time.",
+      "Hang in there. Something will turn up soon.",
+      "Same here. I've just got a new job."
+     ],
+     "answer": 2,
+     "explain_vi": "A đang nản → B động viên: Hang in there (cố lên), turn up = xuất hiện. 'Lucky you!' thiếu tế nhị; 'Same here' mâu thuẫn với vế sau."
+    },
+    {
+     "q": "A: What would you do if your boss asked you to work every weekend?\nB: ______",
+     "options": [
+      "I'd probably start looking for another job.",
+      "I'll ask him for a pay rise.",
+      "I would have refused immediately.",
+      "I did it once last year."
+     ],
+     "answer": 0,
+     "explain_vi": "Câu hỏi giả định loại 2 (What would you do if + quá khứ đơn) → đáp bằng I'd (would) + V. 'I'll' là loại 1; 'would have refused' là quá khứ."
+    },
+    {
+     "q": "A: You should apply for the manager position. You're more than qualified.\nB: ______",
+     "options": [
+      "Don't mention it. Any time.",
+      "Congratulations! You deserve it.",
+      "Thanks for the vote of confidence! Maybe I'll give it a go.",
+      "I'd rather you didn't."
+     ],
+     "answer": 2,
+     "explain_vi": "A khuyến khích, khen B đủ năng lực → B cảm ơn sự tin tưởng (vote of confidence) và sẽ thử (give it a go). 'Congratulations' sai vì chưa có kết quả."
+    }
+   ]
+  },
+  {
+   "format": "listening",
+   "title_vi": "Nghe và điền ghi chú",
+   "intro_vi": "Bài nghe khó trong đề chuyên thường có thông tin gây nhiễu: người nói nhắc một chi tiết rồi sửa lại. Em nghe bài dài hơn và điền 5 chỗ trống, mỗi chỗ một từ hoặc một số.",
+   "tip_vi": "Mẹo: chú ý các từ báo sửa thông tin như 'but', 'not', 'has been moved', 'rather than'. Thông tin đúng thường đến sau những từ này.",
+   "kind": "gap_text",
+   "script": "Good afternoon, and welcome to the job corner on Youth Radio. Today we have news about the Green City Summer Internship, which is open to students aged fifteen to eighteen. Interns will spend four weeks working at the city's recycling centre. The organisers first planned to start on the first of July, but because of the exams, the start date has been moved to the eighth. Interns will work from Monday to Thursday, not on Fridays as many people expected, and they will receive a small allowance of fifty thousand dong a day, plus a free lunch. The organisers are looking for young people who are responsible and good at teamwork. You don't need any previous experience. If you are interested, you should apply online rather than by post, and the deadline is the twentieth of June. If a lot of people apply, the best candidates will be invited to an interview, which will take place at the City Library, not at the recycling centre. So, if I were you, I would start my application today!",
+   "text": "GREEN CITY SUMMER INTERNSHIP\n• Age: 15–18\n• Length: [1] weeks\n• Start date: [2] July\n• Working days: Monday to [3]\n• Interns should be responsible and good at [4]\n• Interviews: at the City [5]",
+   "items": [
+    {
+     "answer": "4",
+     "accept": [
+      "four"
+     ],
+     "explain_vi": "Bài nói: 'Interns will spend four weeks working…' → 4 tuần."
+    },
+    {
+     "answer": "8",
+     "accept": [
+      "8th",
+      "eighth"
+     ],
+     "explain_vi": "Ban đầu là ngày 1/7 nhưng 'has been moved to the eighth' → điền 8. Bẫy: ngày 1."
+    },
+    {
+     "answer": "Thursday",
+     "accept": [
+      "thursday"
+     ],
+     "explain_vi": "'from Monday to Thursday, not on Fridays' → Thursday. Bẫy: Friday bị phủ định bằng 'not'."
+    },
+    {
+     "answer": "teamwork",
+     "accept": [
+      "team work",
+      "team-work"
+     ],
+     "explain_vi": "Bài nói: 'responsible and good at teamwork' (làm việc nhóm)."
+    },
+    {
+     "answer": "Library",
+     "accept": [
+      "library"
+     ],
+     "explain_vi": "Phỏng vấn 'at the City Library, not at the recycling centre' → Library."
+    }
+   ]
+  }
+ ],
+ "paper_plus": {
+  "title_vi": "H. Thử thách nâng cao",
+  "instruction_vi": "Câu 1–2: viết dạng đúng của từ in hoa (có thể phải đổi từ 2 lần hoặc thêm tiền tố). Câu 3–4: viết tiếp câu thứ hai sao cho nghĩa không đổi. Câu 5–6: khoanh A, B, C hoặc D.",
+  "items": [
+   {
+    "id": "d10H1",
+    "q": "______ among young people has risen sharply since several factories in the area closed down. (EMPLOY)",
+    "answer": "Unemployment",
+    "accept": [
+     "unemployment"
+    ]
+   },
+   {
+    "id": "d10H2",
+    "q": "Many school leavers have ______ expectations about their first salary, so they are often disappointed when they receive their first payslip. (REAL)",
+    "answer": "unrealistic",
+    "accept": []
+   },
+   {
+    "id": "d10H3",
+    "q": "I don't have enough experience, so I can't apply for the job. → If I ______",
+    "answer": "had enough experience, I could apply for the job.",
+    "accept": [
+     "had enough experience, I could apply for the job",
+     "had enough experience, I would be able to apply for the job.",
+     "had enough experience, I would be able to apply for the job",
+     "had enough experience, I'd be able to apply for the job.",
+     "had enough experience, I'd be able to apply for the job"
+    ]
+   },
+   {
+    "id": "d10H4",
+    "q": "Work harder or you won't get a pay rise. → Unless ______",
+    "answer": "you work harder, you won't get a pay rise.",
+    "accept": [
+     "you work harder, you won't get a pay rise",
+     "you work harder, you will not get a pay rise.",
+     "you work harder, you will not get a pay rise"
+    ]
+   },
+   {
+    "id": "d10H5",
+    "q": "After months of searching, Hà finally ______ a job at an international school.",
+    "options": [
+     "landed",
+     "hit",
+     "caught",
+     "reached"
+    ],
+    "answer": "A"
+   },
+   {
+    "id": "d10H6",
+    "q": "Because of falling sales, the company had to ______ two hundred workers last month.",
+    "options": [
+     "lay off",
+     "take on",
+     "put off",
+     "give up"
+    ],
+    "answer": "A"
+   }
+  ]
+ },
+ "paper_easy": {
+  "hints": {
+   "d10C1": "động từ nguyên mẫu (sau 'plans to'; thêm đuôi -en)",
+   "d10C2": "động từ (chủ ngữ số nhiều 'Scientists'; thêm đuôi -ify)",
+   "d10C3": "động từ nguyên mẫu (sau 'didn't'; thêm đuôi -ise)",
+   "d10C4": "động từ nguyên mẫu (sau 'Can you'; thêm đuôi -en)"
+  },
+  "reading_gloss": [
+   [
+    "clinic",
+    "phòng khám"
+   ],
+   [
+    "get paid",
+    "được trả tiền, được trả lương"
+   ],
+   [
+    "vet",
+    "bác sĩ thú y"
+   ],
+   [
+    "cages",
+    "chuồng, lồng (nhốt con vật)"
+   ],
+   [
+    "calm",
+    "bình tĩnh"
+   ],
+   [
+    "frightened",
+    "sợ hãi"
+   ],
+   [
+    "injured",
+    "bị thương"
+   ],
+   [
+    "offer",
+    "lời đề nghị, lời mời"
+   ]
+  ],
+  "writing_starters": [
+   "When I grow up, I want to be …",
+   "I want this job because …",
+   "A good … needs skills such as …",
+   "If I study hard, I will …"
+  ]
+ }
 }

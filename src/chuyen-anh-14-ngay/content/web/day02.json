@@ -1,72 +1,603 @@
 {
-  "day": 2,
-  "grammar_games": {
-    "sort": {
-      "title_vi": "Xếp mỗi câu vào đúng nhóm ngữ pháp",
-      "groups": [
-        {"name": "Past simple", "items": [
-          "I joined the chess club last month.",
-          "We went camping two weeks ago.",
-          "Hoa won the drawing contest in 2024."
-        ]},
-        {"name": "Past continuous", "items": [
-          "At 8 p.m. yesterday, I was reading comics.",
-          "They were practising the guitar all evening.",
-          "My brother was swimming at that time."
-        ]},
-        {"name": "used to", "items": [
-          "My dad used to play football.",
-          "Did you use to have a pet?",
-          "She didn't use to like painting."
-        ]}
-      ]
-    },
-    "unjumble": [
-      {"sentence": "I was taking photos when it started to rain.", "hint_vi": "Quá khứ tiếp diễn bị quá khứ đơn xen vào"},
-      {"sentence": "My grandfather used to collect old coins.", "hint_vi": "used to + V nguyên mẫu"},
-      {"sentence": "Did you use to play the piano as a child?", "hint_vi": "Câu hỏi: Did + S + use to + V?"},
-      {"sentence": "What were you doing when the teacher came in?", "hint_vi": "Câu hỏi quá khứ tiếp diễn + when + quá khứ đơn"},
-      {"sentence": "She didn't use to enjoy cooking, but now she does.", "hint_vi": "didn't use to + V"}
-    ],
-    "truefalse": [
-      {"s": "We didn't used to have a computer at home.", "ok": false, "fix": "We didn't use to have a computer at home.", "why_vi": "Sau did / didn't dùng 'use to', không có -d."},
-      {"s": "While I was drawing, my sister was listening to music.", "ok": true, "fix": "While I was drawing, my sister was listening to music.", "why_vi": "Hai việc cùng đang diễn ra trong quá khứ → cả hai vế dùng quá khứ tiếp diễn."},
-      {"s": "When the phone rang, I was taking a bath.", "ok": true, "fix": "When the phone rang, I was taking a bath.", "why_vi": "Việc đang diễn ra (was taking) bị việc ngắn (rang) xen vào."},
-      {"s": "I was knowing how to swim when I was six.", "ok": false, "fix": "I knew how to swim when I was six.", "why_vi": "know là động từ trạng thái, không chia tiếp diễn kể cả ở quá khứ."},
-      {"s": "My uncle use to play in a rock band.", "ok": false, "fix": "My uncle used to play in a rock band.", "why_vi": "Câu khẳng định dùng 'used to' (có -d)."},
-      {"s": "Did you use to be afraid of dogs?", "ok": true, "fix": "Did you use to be afraid of dogs?", "why_vi": "Câu hỏi: Did + S + use to + V nguyên mẫu."},
-      {"s": "I was reading when suddenly the lights were going out.", "ok": false, "fix": "I was reading when suddenly the lights went out.", "why_vi": "Hành động ngắn xen vào dùng quá khứ đơn: went out."},
-      {"s": "My mum used to knit, but she gave it up years ago.", "ok": true, "fix": "My mum used to knit, but she gave it up years ago.", "why_vi": "used to: thói quen cũ, nay không còn; 'years ago' → quá khứ đơn gave up."}
-    ]
-  },
-  "exam": [
+ "day": 2,
+ "grammar_games": {
+  "sort": {
+   "title_vi": "Xếp mỗi câu vào đúng nhóm ngữ pháp",
+   "groups": [
     {
-      "format": "synonym",
-      "title_vi": "Từ đồng nghĩa",
-      "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu chọn từ/cụm từ gần nghĩa nhất với phần VIẾT HOA trong câu. Hôm nay em làm 5 câu.",
-      "tip_vi": "Đoán nghĩa phần VIẾT HOA qua ngữ cảnh, rồi thay từng đáp án vào câu. Cẩn thận với đáp án mang nghĩa ngược lại.",
-      "kind": "mcq",
-      "items": [
-        {"q": "Minh GAVE UP playing the piano last year because he found it boring.", "options": ["stopped", "started", "enjoyed", "practised"], "answer": 0, "explain_vi": "give up = từ bỏ ≈ stop. 'started' là nghĩa ngược lại (take up)."},
-        {"q": "Making short videos is a CREATIVE hobby for many teenagers.", "options": ["imaginative", "expensive", "popular", "difficult"], "answer": 0, "explain_vi": "creative (sáng tạo) ≈ imaginative (giàu trí tưởng tượng)."},
-        {"q": "Learning to play chess well was a real CHALLENGE for me.", "options": ["difficult task", "good chance", "great pleasure", "long holiday"], "answer": 0, "explain_vi": "challenge = thử thách, tức là một việc khó (difficult task)."},
-        {"q": "Ha is CRAZY ABOUT K-pop; she knows every song by heart.", "options": ["very keen on", "bored with", "afraid of", "tired of"], "answer": 0, "explain_vi": "crazy about = cực kỳ thích ≈ very keen on. Thuộc mọi bài hát là dấu hiệu rất thích."},
-        {"q": "I usually UNWIND by playing the guitar after a long day at school.", "options": ["relax", "practise", "perform", "study"], "answer": 0, "explain_vi": "unwind = thư giãn ≈ relax. 'after a long day' gợi ý nghỉ ngơi sau khi mệt."}
-      ]
+     "name": "Past simple",
+     "items": [
+      "I joined the chess club last month.",
+      "We went camping two weeks ago.",
+      "Hoa won the drawing contest in 2024."
+     ]
     },
     {
-      "format": "stress",
-      "title_vi": "Trọng âm từ 2 âm tiết",
-      "intro_vi": "Đề chung vào lớp 10 thường có câu chọn từ có trọng âm khác ba từ còn lại. Hôm nay em làm 5 câu với từ 2 âm tiết.",
-      "tip_vi": "Từ 2 âm tiết: danh từ, tính từ thường nhấn âm 1; động từ thường nhấn âm 2. Vẫn có ngoại lệ (practise), nên hãy học thuộc.",
-      "kind": "mcq",
-      "items": [
-        {"q": "Chọn từ có trọng âm khác các từ còn lại.", "options": ["hobby", "leisure", "collect", "member"], "answer": 2, "explain_vi": "collect /kəˈlekt/ nhấn âm 2; hobby, leisure, member nhấn âm 1."},
-        {"q": "Chọn từ có trọng âm khác các từ còn lại.", "options": ["relax", "enjoy", "prefer", "picture"], "answer": 3, "explain_vi": "picture /ˈpɪktʃə/ nhấn âm 1; relax, enjoy, prefer là động từ nhấn âm 2."},
-        {"q": "Chọn từ có trọng âm khác các từ còn lại.", "options": ["challenge", "comic", "puzzle", "guitar"], "answer": 3, "explain_vi": "guitar /ɡɪˈtɑː/ nhấn âm 2 dù là danh từ; challenge, comic, puzzle nhấn âm 1."},
-        {"q": "Chọn từ có trọng âm khác các từ còn lại.", "options": ["garden", "camping", "painting", "compete"], "answer": 3, "explain_vi": "compete /kəmˈpiːt/ là động từ, nhấn âm 2; garden, camping, painting nhấn âm 1."},
-        {"q": "Chọn từ có trọng âm khác các từ còn lại.", "options": ["begin", "become", "invite", "practise"], "answer": 3, "explain_vi": "practise /ˈpræktɪs/ là động từ nhưng nhấn âm 1; begin, become, invite nhấn âm 2."}
-      ]
+     "name": "Past continuous",
+     "items": [
+      "At 8 p.m. yesterday, I was reading comics.",
+      "They were practising the guitar all evening.",
+      "My brother was swimming at that time."
+     ]
+    },
+    {
+     "name": "used to",
+     "items": [
+      "My dad used to play football.",
+      "Did you use to have a pet?",
+      "She didn't use to like painting."
+     ]
     }
+   ]
+  },
+  "unjumble": [
+   {
+    "sentence": "I was taking photos when it started to rain.",
+    "hint_vi": "Quá khứ tiếp diễn bị quá khứ đơn xen vào"
+   },
+   {
+    "sentence": "My grandfather used to collect old coins.",
+    "hint_vi": "used to + V nguyên mẫu"
+   },
+   {
+    "sentence": "Did you use to play the piano as a child?",
+    "hint_vi": "Câu hỏi: Did + S + use to + V?"
+   },
+   {
+    "sentence": "What were you doing when the teacher came in?",
+    "hint_vi": "Câu hỏi quá khứ tiếp diễn + when + quá khứ đơn"
+   },
+   {
+    "sentence": "She didn't use to enjoy cooking, but now she does.",
+    "hint_vi": "didn't use to + V"
+   }
+  ],
+  "truefalse": [
+   {
+    "s": "We didn't used to have a computer at home.",
+    "ok": false,
+    "fix": "We didn't use to have a computer at home.",
+    "why_vi": "Sau did / didn't dùng 'use to', không có -d."
+   },
+   {
+    "s": "While I was drawing, my sister was listening to music.",
+    "ok": true,
+    "fix": "While I was drawing, my sister was listening to music.",
+    "why_vi": "Hai việc cùng đang diễn ra trong quá khứ → cả hai vế dùng quá khứ tiếp diễn."
+   },
+   {
+    "s": "When the phone rang, I was taking a bath.",
+    "ok": true,
+    "fix": "When the phone rang, I was taking a bath.",
+    "why_vi": "Việc đang diễn ra (was taking) bị việc ngắn (rang) xen vào."
+   },
+   {
+    "s": "I was knowing how to swim when I was six.",
+    "ok": false,
+    "fix": "I knew how to swim when I was six.",
+    "why_vi": "know là động từ trạng thái, không chia tiếp diễn kể cả ở quá khứ."
+   },
+   {
+    "s": "My uncle use to play in a rock band.",
+    "ok": false,
+    "fix": "My uncle used to play in a rock band.",
+    "why_vi": "Câu khẳng định dùng 'used to' (có -d)."
+   },
+   {
+    "s": "Did you use to be afraid of dogs?",
+    "ok": true,
+    "fix": "Did you use to be afraid of dogs?",
+    "why_vi": "Câu hỏi: Did + S + use to + V nguyên mẫu."
+   },
+   {
+    "s": "I was reading when suddenly the lights were going out.",
+    "ok": false,
+    "fix": "I was reading when suddenly the lights went out.",
+    "why_vi": "Hành động ngắn xen vào dùng quá khứ đơn: went out."
+   },
+   {
+    "s": "My mum used to knit, but she gave it up years ago.",
+    "ok": true,
+    "fix": "My mum used to knit, but she gave it up years ago.",
+    "why_vi": "used to: thói quen cũ, nay không còn; 'years ago' → quá khứ đơn gave up."
+   }
   ]
+ },
+ "exam": [
+  {
+   "format": "synonym",
+   "title_vi": "Từ đồng nghĩa",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu chọn từ/cụm từ gần nghĩa nhất với phần VIẾT HOA trong câu. Hôm nay em làm 5 câu.",
+   "tip_vi": "Đoán nghĩa phần VIẾT HOA qua ngữ cảnh, rồi thay từng đáp án vào câu. Cẩn thận với đáp án mang nghĩa ngược lại.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "Minh GAVE UP playing the piano last year because he found it boring.",
+     "options": [
+      "stopped",
+      "started",
+      "enjoyed",
+      "practised"
+     ],
+     "answer": 0,
+     "explain_vi": "give up = từ bỏ ≈ stop. 'started' là nghĩa ngược lại (take up)."
+    },
+    {
+     "q": "Making short videos is a CREATIVE hobby for many teenagers.",
+     "options": [
+      "imaginative",
+      "expensive",
+      "popular",
+      "difficult"
+     ],
+     "answer": 0,
+     "explain_vi": "creative (sáng tạo) ≈ imaginative (giàu trí tưởng tượng)."
+    },
+    {
+     "q": "Learning to play chess well was a real CHALLENGE for me.",
+     "options": [
+      "difficult task",
+      "good chance",
+      "great pleasure",
+      "long holiday"
+     ],
+     "answer": 0,
+     "explain_vi": "challenge = thử thách, tức là một việc khó (difficult task)."
+    },
+    {
+     "q": "Ha is CRAZY ABOUT K-pop; she knows every song by heart.",
+     "options": [
+      "very keen on",
+      "bored with",
+      "afraid of",
+      "tired of"
+     ],
+     "answer": 0,
+     "explain_vi": "crazy about = cực kỳ thích ≈ very keen on. Thuộc mọi bài hát là dấu hiệu rất thích."
+    },
+    {
+     "q": "I usually UNWIND by playing the guitar after a long day at school.",
+     "options": [
+      "relax",
+      "practise",
+      "perform",
+      "study"
+     ],
+     "answer": 0,
+     "explain_vi": "unwind = thư giãn ≈ relax. 'after a long day' gợi ý nghỉ ngơi sau khi mệt."
+    }
+   ]
+  },
+  {
+   "format": "stress",
+   "title_vi": "Trọng âm từ 2 âm tiết",
+   "intro_vi": "Đề chung vào lớp 10 thường có câu chọn từ có trọng âm khác ba từ còn lại. Hôm nay em làm 5 câu với từ 2 âm tiết.",
+   "tip_vi": "Từ 2 âm tiết: danh từ, tính từ thường nhấn âm 1; động từ thường nhấn âm 2. Vẫn có ngoại lệ (practise), nên hãy học thuộc.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "hobby",
+      "leisure",
+      "collect",
+      "member"
+     ],
+     "answer": 2,
+     "explain_vi": "collect /kəˈlekt/ nhấn âm 2; hobby, leisure, member nhấn âm 1."
+    },
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "relax",
+      "enjoy",
+      "prefer",
+      "picture"
+     ],
+     "answer": 3,
+     "explain_vi": "picture /ˈpɪktʃə/ nhấn âm 1; relax, enjoy, prefer là động từ nhấn âm 2."
+    },
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "challenge",
+      "comic",
+      "puzzle",
+      "guitar"
+     ],
+     "answer": 3,
+     "explain_vi": "guitar /ɡɪˈtɑː/ nhấn âm 2 dù là danh từ; challenge, comic, puzzle nhấn âm 1."
+    },
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "garden",
+      "camping",
+      "painting",
+      "compete"
+     ],
+     "answer": 3,
+     "explain_vi": "compete /kəmˈpiːt/ là động từ, nhấn âm 2; garden, camping, painting nhấn âm 1."
+    },
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "begin",
+      "become",
+      "invite",
+      "practise"
+     ],
+     "answer": 3,
+     "explain_vi": "practise /ˈpræktɪs/ là động từ nhưng nhấn âm 1; begin, become, invite nhấn âm 2."
+    }
+   ]
+  }
+ ],
+ "exam_easy": [
+  {
+   "format": "synonym",
+   "title_vi": "Từ đồng nghĩa",
+   "intro_vi": "Dạng từ đồng nghĩa: trong câu có một từ VIẾT HOA, em chọn đáp án có nghĩa GIỐNG nó nhất. Đề Chuyên Ngoại ngữ có 4 câu dạng này. Hôm nay em làm 5 câu dễ.",
+   "tip_vi": "Đọc cả câu, đoán nghĩa từ VIẾT HOA, rồi tìm đáp án cùng nghĩa. Cẩn thận: thường có một đáp án mang nghĩa NGƯỢC lại.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "Nam had a lot of FREE time last weekend.",
+     "options": [
+      "busy",
+      "little",
+      "spare",
+      "school"
+     ],
+     "answer": 2,
+     "explain_vi": "free time = spare time (thời gian rảnh). busy (bận) mang nghĩa ngược lại."
+    },
+    {
+     "q": "My dad STARTED yoga last year.",
+     "options": [
+      "gave up",
+      "took up",
+      "put on",
+      "looked at"
+     ],
+     "answer": 1,
+     "explain_vi": "take up = bắt đầu một sở thích mới, giống start. gave up (từ bỏ) là nghĩa ngược lại."
+    },
+    {
+     "q": "Linh was HAPPY when she won the drawing contest.",
+     "options": [
+      "sad",
+      "angry",
+      "tired",
+      "glad"
+     ],
+     "answer": 3,
+     "explain_vi": "glad = happy (vui). sad (buồn), angry (giận), tired (mệt) đều khác nghĩa."
+    },
+    {
+     "q": "My grandma's garden was very BEAUTIFUL in spring.",
+     "options": [
+      "small",
+      "pretty",
+      "old",
+      "dirty"
+     ],
+     "answer": 1,
+     "explain_vi": "pretty = beautiful (đẹp). small (nhỏ), old (cũ), dirty (bẩn) đều khác nghĩa."
+    },
+    {
+     "q": "Tuan stopped his piano lessons because they were too DIFFICULT.",
+     "options": [
+      "hard",
+      "easy",
+      "short",
+      "cheap"
+     ],
+     "answer": 0,
+     "explain_vi": "difficult = hard (khó). easy (dễ) là nghĩa ngược lại, đừng nhầm."
+    }
+   ]
+  },
+  {
+   "format": "stress",
+   "title_vi": "Trọng âm từ 2 âm tiết",
+   "intro_vi": "Dạng trọng âm: em chọn từ có trọng âm (âm được đọc to, mạnh) ở vị trí khác ba từ còn lại. Hôm nay toàn là từ 2 âm tiết quen thuộc.",
+   "tip_vi": "Đọc to từng từ, vỗ tay ở âm đọc mạnh. Nhớ: danh từ, tính từ thường nhấn âm 1; động từ thường nhấn âm 2.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "happy",
+      "begin",
+      "yellow",
+      "football"
+     ],
+     "answer": 1,
+     "explain_vi": "begin /bɪˈɡɪn/ là động từ, nhấn âm 2. happy, yellow, football nhấn âm 1."
+    },
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "enjoy",
+      "relax",
+      "music",
+      "forget"
+     ],
+     "answer": 2,
+     "explain_vi": "music /ˈmjuːzɪk/ là danh từ, nhấn âm 1. enjoy, relax, forget là động từ, nhấn âm 2."
+    },
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "teacher",
+      "hobby",
+      "hotel",
+      "answer"
+     ],
+     "answer": 2,
+     "explain_vi": "hotel /həʊˈtel/ nhấn âm 2 (ngoại lệ, cần nhớ). teacher, hobby, answer nhấn âm 1."
+    },
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "balloon",
+      "swimming",
+      "dancing",
+      "reading"
+     ],
+     "answer": 0,
+     "explain_vi": "balloon /bəˈluːn/ nhấn âm 2. swimming, dancing, reading nhấn âm 1."
+    },
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "visit",
+      "listen",
+      "open",
+      "explain"
+     ],
+     "answer": 3,
+     "explain_vi": "explain /ɪkˈspleɪn/ nhấn âm 2. visit, listen, open là động từ nhưng nhấn âm 1."
+    }
+   ]
+  }
+ ],
+ "exam_plus": [
+  {
+   "format": "synonym",
+   "title_vi": "Từ đồng nghĩa",
+   "intro_vi": "Câu đồng nghĩa phân loại trong đề Chuyên Ngoại ngữ thường dùng từ B2 hoặc cụm động từ, và có 2–3 đáp án na ná nghĩa nhau. Hôm nay em luyện 5 câu như vậy.",
+   "tip_vi": "Thay từng đáp án vào câu: đáp án đúng phải giữ nguyên nghĩa và hợp cả cấu trúc (giới từ đi kèm). Loại đáp án chỉ 'gần gần' nghĩa.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "After he retired, my grandfather DEVOTED most of his time to growing bonsai.",
+     "options": [
+      "spent",
+      "wasted",
+      "dedicated",
+      "saved"
+     ],
+     "answer": 2,
+     "explain_vi": "devote time to sth = dành trọn thời gian cho ≈ dedicate. spent sai cấu trúc (spend time on/doing); wasted, saved sai nghĩa."
+    },
+    {
+     "q": "When he was a teenager, my dad was an AVID collector of football cards.",
+     "options": [
+      "occasional",
+      "enthusiastic",
+      "careless",
+      "professional"
+     ],
+     "answer": 1,
+     "explain_vi": "avid = cực kỳ say mê ≈ enthusiastic. occasional (thỉnh thoảng) gần như ngược nghĩa; professional (chuyên nghiệp) không phải nghĩa của avid."
+    },
+    {
+     "q": "While we were hiking in Sa Pa, we CAME ACROSS a small waterfall that wasn't on our map.",
+     "options": [
+      "looked for",
+      "walked past",
+      "climbed up",
+      "found by chance"
+     ],
+     "answer": 3,
+     "explain_vi": "come across = tình cờ gặp, tình cờ thấy ≈ find by chance. 'wasn't on our map' cho thấy họ không hề định tìm."
+    },
+    {
+     "q": "Fishing was my grandfather's favourite PASTIME when he lived in the countryside.",
+     "options": [
+      "hobby",
+      "habit",
+      "job",
+      "sport"
+     ],
+     "answer": 0,
+     "explain_vi": "pastime = trò tiêu khiển ≈ hobby. habit là thói quen, job là công việc; sport chỉ là một loại hoạt động."
+    },
+    {
+     "q": "Linh PUT OFF her guitar lesson because she had a bad cold.",
+     "options": [
+      "cancelled",
+      "postponed",
+      "prepared",
+      "missed"
+     ],
+     "answer": 1,
+     "explain_vi": "put off = hoãn lại ≈ postpone. cancelled (huỷ hẳn) là bẫy gần nghĩa: put off nghĩa là sẽ học vào lúc khác."
+    }
+   ]
+  },
+  {
+   "format": "stress",
+   "title_vi": "Trọng âm từ 2 âm tiết",
+   "intro_vi": "Câu trọng âm khó trong đề thường chọn từ 'ngoại lệ': động từ nhấn âm 1, danh từ hay tính từ nhấn âm 2. Hôm nay em làm 5 câu có bẫy như vậy.",
+   "tip_vi": "Đừng chỉ dựa vào từ loại. Ghi nhớ ngoại lệ hay gặp (offer, enter, travel, borrow; event, advice, career; polite, unique) và các từ tận cùng /uː/ như cartoon.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "canoe",
+      "cartoon",
+      "bamboo",
+      "climbing"
+     ],
+     "answer": 3,
+     "explain_vi": "climbing /ˈklaɪmɪŋ/ nhấn âm 1. canoe, cartoon, bamboo nhấn âm 2: âm tiết cuối là /uː/ thường nhận trọng âm."
+    },
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "offer",
+      "attend",
+      "enter",
+      "travel"
+     ],
+     "answer": 1,
+     "explain_vi": "attend /əˈtend/ nhấn âm 2. offer, enter, travel là động từ nhưng nhấn âm 1 – ngoại lệ hay bị đánh bẫy."
+    },
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "leisure",
+      "event",
+      "advice",
+      "career"
+     ],
+     "answer": 0,
+     "explain_vi": "leisure /ˈleʒə/ nhấn âm 1. event, advice, career là danh từ nhưng nhấn âm 2."
+    },
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "prefer",
+      "suggest",
+      "borrow",
+      "admire"
+     ],
+     "answer": 2,
+     "explain_vi": "borrow /ˈbɒrəʊ/ nhấn âm 1. prefer, suggest, admire nhấn âm 2 như phần lớn động từ 2 âm tiết."
+    },
+    {
+     "q": "Chọn từ có trọng âm khác các từ còn lại.",
+     "options": [
+      "polite",
+      "unique",
+      "complete",
+      "modern"
+     ],
+     "answer": 3,
+     "explain_vi": "modern /ˈmɒdn/ nhấn âm 1. polite, unique, complete là tính từ nhưng nhấn âm 2."
+    }
+   ]
+  }
+ ],
+ "paper_plus": {
+  "title_vi": "H. Thử thách nâng cao",
+  "instruction_vi": "Thử thách dành cho học sinh mức Nâng cao. Câu 1–2: viết dạng đúng của từ in hoa (có thể phải đổi 2 lần hoặc thêm tiền tố). Câu 3–4: viết tiếp câu sau sao cho nghĩa không đổi. Câu 5–6: chọn A, B, C hoặc D.",
+  "items": [
+   {
+    "id": "d2H1",
+    "q": "The whole class clapped ______ when Minh finished his magic trick. (ENTHUSIASM)",
+    "answer": "enthusiastically",
+    "accept": []
+   },
+   {
+    "id": "d2H2",
+    "q": "Many students found the drawing task dull and ______, so they quickly lost interest. (IMAGINE)",
+    "answer": "unimaginative",
+    "accept": []
+   },
+   {
+    "id": "d2H3",
+    "q": "Tuan started playing badminton two years ago. → Tuan took ______",
+    "answer": "up badminton two years ago",
+    "accept": [
+     "up playing badminton two years ago"
+    ]
+   },
+   {
+    "id": "d2H4",
+    "q": "The phone rang in the middle of my piano practice. → I was ______",
+    "answer": "practising the piano when the phone rang",
+    "accept": [
+     "practicing the piano when the phone rang",
+     "doing my piano practice when the phone rang"
+    ]
+   },
+   {
+    "id": "d2H5",
+    "q": "My grandmother has green ______; every plant in her garden grows beautifully.",
+    "options": [
+     "hands",
+     "fingers",
+     "feet",
+     "eyes"
+    ],
+    "answer": "B",
+    "accept": []
+   },
+   {
+    "id": "d2H6",
+    "q": "After a stressful week of exams, I just want to ______ my hair down and watch films all weekend.",
+    "options": [
+     "put",
+     "take",
+     "let",
+     "get"
+    ],
+    "answer": "C",
+    "accept": []
+   }
+  ]
+ },
+ "paper_easy": {
+  "hints": {
+   "d2C1": "tính từ (nghĩa: có ích)",
+   "d2C2": "tính từ (nghĩa: cẩn thận)",
+   "d2C3": "tính từ (nghĩa: vô vọng, không sửa được)",
+   "d2C4": "tính từ (nhớ đổi y → i)"
+  },
+  "reading_gloss": [
+   [
+    "cut out",
+    "cắt ra"
+   ],
+   [
+    "biscuit box",
+    "hộp bánh quy"
+   ],
+   [
+    "hundreds of",
+    "hàng trăm"
+   ],
+   [
+    "famous",
+    "nổi tiếng"
+   ],
+   [
+    "gave up",
+    "đã từ bỏ"
+   ],
+   [
+    "threw … away",
+    "đã vứt đi (quá khứ của throw away)"
+   ],
+   [
+    "sorting",
+    "phân loại, sắp xếp"
+   ],
+   [
+    "collection",
+    "bộ sưu tập"
+   ]
+  ],
+  "writing_starters": [
+   "When I was small, I used to …",
+   "Last year, I took up …",
+   "It started when I was …",
+   "I like it because …"
+  ]
+ }
 }

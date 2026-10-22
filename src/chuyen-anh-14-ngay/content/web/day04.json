@@ -1,219 +1,553 @@
 {
-  "day": 4,
-  "grammar_games": {
-    "sort": {
-      "title_vi": "Chỗ trống cần will, be going to hay hiện tại tiếp diễn? Xếp mỗi câu vào đúng nhóm.",
-      "groups": [
-        {
-          "name": "will: quyết định ngay, lời hứa, lời đề nghị",
-          "items": [
-            "That bag looks heavy. I ___ (carry) it for you.",
-            "It's dark in here. I ___ (switch) on the light.",
-            "I promise I ___ (not / forget) your birthday."
-          ]
-        },
-        {
-          "name": "be going to: dự đoán có dấu hiệu trước mắt",
-          "items": [
-            "Watch out! You ___ (drop) your new phone!",
-            "My battery is at 1%. It ___ (die) soon.",
-            "Look! That boy ___ (fall) off his bike."
-          ]
-        },
-        {
-          "name": "Hiện tại tiếp diễn: lịch hẹn đã sắp xếp",
-          "items": [
-            "I ___ (meet) Lan at the cinema at 7 tonight.",
-            "I ___ (see) the dentist at 4 p.m. tomorrow.",
-            "Our class ___ (visit) the science museum next Monday."
-          ]
-        }
-      ]
-    },
-    "unjumble": [
-      {
-        "sentence": "My sister is going to buy a new digital camera.",
-        "hint_vi": "be going to: dự định đã có từ trước"
-      },
-      {
-        "sentence": "We are visiting the technology fair on Saturday morning.",
-        "hint_vi": "Hiện tại tiếp diễn: lịch hẹn đã sắp xếp"
-      },
-      {
-        "sentence": "I promise I won't use my phone in class.",
-        "hint_vi": "will: lời hứa (phủ định won't)"
-      },
-      {
-        "sentence": "I think people will rely on robots in the future.",
-        "hint_vi": "will: dự đoán theo ý kiến (I think)"
-      },
-      {
-        "sentence": "Wait a minute, I'll fix your headphones for you.",
-        "hint_vi": "will: đề nghị giúp ngay lúc nói"
-      }
-    ],
-    "truefalse": [
-      {
-        "s": "She going to buy a new laptop next week.",
-        "ok": false,
-        "fix": "She is going to buy a new laptop next week.",
-        "why_vi": "be going to cần có động từ be: she is going to."
-      },
-      {
-        "s": "A: My bag is so heavy. B: I'll carry it for you.",
-        "ok": true,
-        "fix": "A: My bag is so heavy. B: I'll carry it for you.",
-        "why_vi": "Đề nghị giúp ngay lúc nói → will + V."
-      },
-      {
-        "s": "I will to call you when I get home.",
-        "ok": false,
-        "fix": "I will call you when I get home.",
-        "why_vi": "Sau will là động từ nguyên thể không có to."
-      },
-      {
-        "s": "We are flying to Phú Quốc on Saturday. Dad has booked the tickets.",
-        "ok": true,
-        "fix": "We are flying to Phú Quốc on Saturday. Dad has booked the tickets.",
-        "why_vi": "Đã đặt vé = lịch đã sắp xếp → hiện tại tiếp diễn."
-      },
-      {
-        "s": "Look at that man! He will fall into the lake.",
-        "ok": false,
-        "fix": "Look at that man! He is going to fall into the lake.",
-        "why_vi": "Có dấu hiệu nhìn thấy trước mắt (Look!) → be going to."
-      },
-      {
-        "s": "I think computers will become even smaller in the future.",
-        "ok": true,
-        "fix": "I think computers will become even smaller in the future.",
-        "why_vi": "Dự đoán theo ý kiến cá nhân (I think) → will + V."
-      },
-      {
-        "s": "I meet my friends at the computer club tomorrow at 5 p.m.",
-        "ok": false,
-        "fix": "I'm meeting my friends at the computer club tomorrow at 5 p.m.",
-        "why_vi": "Hẹn cụ thể với bạn, có giờ → hiện tại tiếp diễn, không dùng hiện tại đơn."
-      },
-      {
-        "s": "My cousin is going to study coding next year.",
-        "ok": true,
-        "fix": "My cousin is going to study coding next year.",
-        "why_vi": "Dự định cho năm sau → be going to + V."
-      }
-    ]
-  },
-  "exam": [
+ "day": 4,
+ "grammar_games": {
+  "sort": {
+   "title_vi": "Chỗ trống cần will, be going to hay hiện tại tiếp diễn? Xếp mỗi câu vào đúng nhóm.",
+   "groups": [
     {
-      "format": "dialogue_completion",
-      "title_vi": "Hoàn thành hội thoại",
-      "intro_vi": "Đề Chuyên Ngoại ngữ có 6 câu hoàn thành hội thoại; đề chung vào 10 cũng có câu chọn lời đáp phù hợp. Mỗi câu là một trao đổi ngắn A–B, em chọn lời đáp tự nhiên nhất.",
-      "tip_vi": "Mẹo: xác định câu của A dùng để làm gì (mời, xin phép, gợi ý, kể sự cố…) rồi chọn lời đáp đúng chức năng, không chỉ đúng ngữ pháp.",
-      "kind": "mcq",
-      "items": [
-        {
-          "q": "A: Do you mind if I use your charger for a few minutes?\nB: ______",
-          "options": [
-            "Not at all. Go ahead.",
-            "Yes, of course. Here you are.",
-            "Never mind.",
-            "You're welcome."
-          ],
-          "answer": 0,
-          "explain_vi": "'Do you mind if…?' nghĩa là 'Bạn có phiền không?'. Đồng ý thì đáp 'No / Not at all'. Đáp 'Yes' lại thành 'có, mình thấy phiền'."
-        },
-        {
-          "q": "A: Why don't we switch off our phones during dinner tonight?\nB: ______",
-          "options": [
-            "Because we are hungry.",
-            "No, we don't.",
-            "That sounds like a good idea.",
-            "Thank you. Same to you."
-          ],
-          "answer": 2,
-          "explain_vi": "'Why don't we…?' là lời gợi ý, không phải hỏi lý do, nên đáp 'That sounds like a good idea.' Bẫy: 'Because…'."
-        },
-        {
-          "q": "A: Would you like to come to the robot show with us on Sunday?\nB: ______",
-          "options": [
-            "Yes, I would like.",
-            "No, I don't like to.",
-            "Sure. I watched it last Sunday.",
-            "I'd love to, but I'm playing in a football match."
-          ],
-          "answer": 3,
-          "explain_vi": "Từ chối lời mời lịch sự: I'd love to, but + lý do. Lịch đã hẹn nên dùng hiện tại tiếp diễn (I'm playing)."
-        },
-        {
-          "q": "A: Do you think we'll have flying cars in twenty years?\nB: ______",
-          "options": [
-            "Yes, we did.",
-            "I hope so, but I'm not sure.",
-            "In twenty years.",
-            "No, I'm not."
-          ],
-          "answer": 1,
-          "explain_vi": "A hỏi ý kiến về tương lai → đáp bằng ý kiến: 'I hope so, but I'm not sure.' Các câu kia sai thì hoặc sai trợ động từ."
-        },
-        {
-          "q": "A: Oh no! My laptop has just stopped working, and my essay is on it.\nB: ______",
-          "options": [
-            "Congratulations!",
-            "That's very kind of you.",
-            "Don't panic. I'll have a look at it.",
-            "Yes, it has."
-          ],
-          "answer": 2,
-          "explain_vi": "A gặp sự cố → B trấn an và đề nghị giúp ngay lúc nói: will ('ll) + V."
-        }
-      ]
+     "name": "will: quyết định ngay, lời hứa, lời đề nghị",
+     "items": [
+      "That bag looks heavy. I ___ (carry) it for you.",
+      "It's dark in here. I ___ (switch) on the light.",
+      "I promise I ___ (not / forget) your birthday."
+     ]
     },
     {
-      "format": "listening",
-      "title_vi": "Nghe và điền ghi chú",
-      "intro_vi": "Đề Sở chuyên Anh Hà Nội có phần nghe 20 câu, thường có dạng nghe rồi điền ghi chú hoặc bảng (một hai từ hoặc một con số). Ở đây em làm bản rút gọn 5 chỗ trống.",
-      "tip_vi": "Mẹo: đọc ghi chú trước khi nghe, đoán chỗ trống cần gì (nơi chốn, con số, đồ vật). Cẩn thận chi tiết bị sửa như 'not … like last year'.",
-      "kind": "gap_text",
-      "script": "Good morning, everyone. This is Mr Long from the computer club with some news about this year's Technology Fair. The fair is taking place next Saturday in the school library, not in the sports hall like last year. It opens at nine o'clock in the morning and finishes at half past three. This year, students from twelve schools are coming, and they are going to show 25 robots and other devices that they have invented. If you want to try the robots, you must bring your student card, so please don't forget it. There will also be a coding competition in the afternoon. Teams can have up to four members. The winning team will get a new tablet for their class, and everyone who takes part will receive a free T-shirt. If you'd like to join the competition, please write your name on the list outside Room 12 before Wednesday. I'm sure it will be a great day. See you there!",
-      "text": "TECHNOLOGY FAIR\n• Day: next Saturday\n• Place: school [1]\n• Opening time: [2] a.m.\n• Number of robots on show: [3]\n• To try the robots, bring your [4]\n• Prize for the best coding team: a new [5] for the class\n• Sign up: list outside Room 12, before Wednesday",
-      "items": [
-        {
-          "answer": "library",
-          "accept": [],
-          "explain_vi": "Nghe: 'in the school library, not in the sports hall like last year' → library. Sports hall là năm ngoái."
-        },
-        {
-          "answer": "9",
-          "accept": [
-            "9.00",
-            "9:00",
-            "nine"
-          ],
-          "explain_vi": "Nghe: 'It opens at nine o'clock in the morning' → 9. Half past three là giờ đóng cửa."
-        },
-        {
-          "answer": "25",
-          "accept": [
-            "twenty-five",
-            "twenty five"
-          ],
-          "explain_vi": "Nghe: 'they are going to show 25 robots'. Twelve là số trường, không phải số robot."
-        },
-        {
-          "answer": "student card",
-          "accept": [
-            "student-card"
-          ],
-          "explain_vi": "Nghe: 'you must bring your student card' → student card (2 từ)."
-        },
-        {
-          "answer": "tablet",
-          "accept": [
-            "tablet computer"
-          ],
-          "explain_vi": "Nghe: 'The winning team will get a new tablet for their class'. T-shirt là quà cho mọi người tham gia."
-        }
-      ]
+     "name": "be going to: dự đoán có dấu hiệu trước mắt",
+     "items": [
+      "Watch out! You ___ (drop) your new phone!",
+      "My battery is at 1%. It ___ (die) soon.",
+      "Look! That boy ___ (fall) off his bike."
+     ]
+    },
+    {
+     "name": "Hiện tại tiếp diễn: lịch hẹn đã sắp xếp",
+     "items": [
+      "I ___ (meet) Lan at the cinema at 7 tonight.",
+      "I ___ (see) the dentist at 4 p.m. tomorrow.",
+      "Our class ___ (visit) the science museum next Monday."
+     ]
     }
+   ]
+  },
+  "unjumble": [
+   {
+    "sentence": "My sister is going to buy a new digital camera.",
+    "hint_vi": "be going to: dự định đã có từ trước"
+   },
+   {
+    "sentence": "We are visiting the technology fair on Saturday morning.",
+    "hint_vi": "Hiện tại tiếp diễn: lịch hẹn đã sắp xếp"
+   },
+   {
+    "sentence": "I promise I won't use my phone in class.",
+    "hint_vi": "will: lời hứa (phủ định won't)"
+   },
+   {
+    "sentence": "I think people will rely on robots in the future.",
+    "hint_vi": "will: dự đoán theo ý kiến (I think)"
+   },
+   {
+    "sentence": "Wait a minute, I'll fix your headphones for you.",
+    "hint_vi": "will: đề nghị giúp ngay lúc nói"
+   }
+  ],
+  "truefalse": [
+   {
+    "s": "She going to buy a new laptop next week.",
+    "ok": false,
+    "fix": "She is going to buy a new laptop next week.",
+    "why_vi": "be going to cần có động từ be: she is going to."
+   },
+   {
+    "s": "A: My bag is so heavy. B: I'll carry it for you.",
+    "ok": true,
+    "fix": "A: My bag is so heavy. B: I'll carry it for you.",
+    "why_vi": "Đề nghị giúp ngay lúc nói → will + V."
+   },
+   {
+    "s": "I will to call you when I get home.",
+    "ok": false,
+    "fix": "I will call you when I get home.",
+    "why_vi": "Sau will là động từ nguyên thể không có to."
+   },
+   {
+    "s": "We are flying to Phú Quốc on Saturday. Dad has booked the tickets.",
+    "ok": true,
+    "fix": "We are flying to Phú Quốc on Saturday. Dad has booked the tickets.",
+    "why_vi": "Đã đặt vé = lịch đã sắp xếp → hiện tại tiếp diễn."
+   },
+   {
+    "s": "Look at that man! He will fall into the lake.",
+    "ok": false,
+    "fix": "Look at that man! He is going to fall into the lake.",
+    "why_vi": "Có dấu hiệu nhìn thấy trước mắt (Look!) → be going to."
+   },
+   {
+    "s": "I think computers will become even smaller in the future.",
+    "ok": true,
+    "fix": "I think computers will become even smaller in the future.",
+    "why_vi": "Dự đoán theo ý kiến cá nhân (I think) → will + V."
+   },
+   {
+    "s": "I meet my friends at the computer club tomorrow at 5 p.m.",
+    "ok": false,
+    "fix": "I'm meeting my friends at the computer club tomorrow at 5 p.m.",
+    "why_vi": "Hẹn cụ thể với bạn, có giờ → hiện tại tiếp diễn, không dùng hiện tại đơn."
+   },
+   {
+    "s": "My cousin is going to study coding next year.",
+    "ok": true,
+    "fix": "My cousin is going to study coding next year.",
+    "why_vi": "Dự định cho năm sau → be going to + V."
+   }
   ]
+ },
+ "exam": [
+  {
+   "format": "dialogue_completion",
+   "title_vi": "Hoàn thành hội thoại",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 6 câu hoàn thành hội thoại; đề chung vào 10 cũng có câu chọn lời đáp phù hợp. Mỗi câu là một trao đổi ngắn A–B, em chọn lời đáp tự nhiên nhất.",
+   "tip_vi": "Mẹo: xác định câu của A dùng để làm gì (mời, xin phép, gợi ý, kể sự cố…) rồi chọn lời đáp đúng chức năng, không chỉ đúng ngữ pháp.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "A: Do you mind if I use your charger for a few minutes?\nB: ______",
+     "options": [
+      "Not at all. Go ahead.",
+      "Yes, of course. Here you are.",
+      "Never mind.",
+      "You're welcome."
+     ],
+     "answer": 0,
+     "explain_vi": "'Do you mind if…?' nghĩa là 'Bạn có phiền không?'. Đồng ý thì đáp 'No / Not at all'. Đáp 'Yes' lại thành 'có, mình thấy phiền'."
+    },
+    {
+     "q": "A: Why don't we switch off our phones during dinner tonight?\nB: ______",
+     "options": [
+      "Because we are hungry.",
+      "No, we don't.",
+      "That sounds like a good idea.",
+      "Thank you. Same to you."
+     ],
+     "answer": 2,
+     "explain_vi": "'Why don't we…?' là lời gợi ý, không phải hỏi lý do, nên đáp 'That sounds like a good idea.' Bẫy: 'Because…'."
+    },
+    {
+     "q": "A: Would you like to come to the robot show with us on Sunday?\nB: ______",
+     "options": [
+      "Yes, I would like.",
+      "No, I don't like to.",
+      "Sure. I watched it last Sunday.",
+      "I'd love to, but I'm playing in a football match."
+     ],
+     "answer": 3,
+     "explain_vi": "Từ chối lời mời lịch sự: I'd love to, but + lý do. Lịch đã hẹn nên dùng hiện tại tiếp diễn (I'm playing)."
+    },
+    {
+     "q": "A: Do you think we'll have flying cars in twenty years?\nB: ______",
+     "options": [
+      "Yes, we did.",
+      "I hope so, but I'm not sure.",
+      "In twenty years.",
+      "No, I'm not."
+     ],
+     "answer": 1,
+     "explain_vi": "A hỏi ý kiến về tương lai → đáp bằng ý kiến: 'I hope so, but I'm not sure.' Các câu kia sai thì hoặc sai trợ động từ."
+    },
+    {
+     "q": "A: Oh no! My laptop has just stopped working, and my essay is on it.\nB: ______",
+     "options": [
+      "Congratulations!",
+      "That's very kind of you.",
+      "Don't panic. I'll have a look at it.",
+      "Yes, it has."
+     ],
+     "answer": 2,
+     "explain_vi": "A gặp sự cố → B trấn an và đề nghị giúp ngay lúc nói: will ('ll) + V."
+    }
+   ]
+  },
+  {
+   "format": "listening",
+   "title_vi": "Nghe và điền ghi chú",
+   "intro_vi": "Đề Sở chuyên Anh Hà Nội có phần nghe 20 câu, thường có dạng nghe rồi điền ghi chú hoặc bảng (một hai từ hoặc một con số). Ở đây em làm bản rút gọn 5 chỗ trống.",
+   "tip_vi": "Mẹo: đọc ghi chú trước khi nghe, đoán chỗ trống cần gì (nơi chốn, con số, đồ vật). Cẩn thận chi tiết bị sửa như 'not … like last year'.",
+   "kind": "gap_text",
+   "script": "Good morning, everyone. This is Mr Long from the computer club with some news about this year's Technology Fair. The fair is taking place next Saturday in the school library, not in the sports hall like last year. It opens at nine o'clock in the morning and finishes at half past three. This year, students from twelve schools are coming, and they are going to show 25 robots and other devices that they have invented. If you want to try the robots, you must bring your student card, so please don't forget it. There will also be a coding competition in the afternoon. Teams can have up to four members. The winning team will get a new tablet for their class, and everyone who takes part will receive a free T-shirt. If you'd like to join the competition, please write your name on the list outside Room 12 before Wednesday. I'm sure it will be a great day. See you there!",
+   "text": "TECHNOLOGY FAIR\n• Day: next Saturday\n• Place: school [1]\n• Opening time: [2] a.m.\n• Number of robots on show: [3]\n• To try the robots, bring your [4]\n• Prize for the best coding team: a new [5] for the class\n• Sign up: list outside Room 12, before Wednesday",
+   "items": [
+    {
+     "answer": "library",
+     "accept": [],
+     "explain_vi": "Nghe: 'in the school library, not in the sports hall like last year' → library. Sports hall là năm ngoái."
+    },
+    {
+     "answer": "9",
+     "accept": [
+      "9.00",
+      "9:00",
+      "nine"
+     ],
+     "explain_vi": "Nghe: 'It opens at nine o'clock in the morning' → 9. Half past three là giờ đóng cửa."
+    },
+    {
+     "answer": "25",
+     "accept": [
+      "twenty-five",
+      "twenty five"
+     ],
+     "explain_vi": "Nghe: 'they are going to show 25 robots'. Twelve là số trường, không phải số robot."
+    },
+    {
+     "answer": "student card",
+     "accept": [
+      "student-card"
+     ],
+     "explain_vi": "Nghe: 'you must bring your student card' → student card (2 từ)."
+    },
+    {
+     "answer": "tablet",
+     "accept": [
+      "tablet computer"
+     ],
+     "explain_vi": "Nghe: 'The winning team will get a new tablet for their class'. T-shirt là quà cho mọi người tham gia."
+    }
+   ]
+  }
+ ],
+ "exam_easy": [
+  {
+   "format": "dialogue_completion",
+   "title_vi": "Hoàn thành hội thoại",
+   "intro_vi": "Dạng hoàn thành hội thoại: có một câu của bạn A, em chọn câu đáp lại của bạn B cho hợp. Đề Chuyên Ngoại ngữ có 6 câu dạng này. Hôm nay em làm 5 câu ngắn.",
+   "tip_vi": "Tự hỏi: A đang làm gì – xin mượn đồ, khoe tin vui, kể chuyện không may hay hỏi kế hoạch? Rồi chọn câu đáp đúng việc đó.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "A: Can I use your laptop for a minute?\nB: ______",
+     "options": [
+      "Yes, I can.",
+      "Sure. Here you are.",
+      "You're welcome.",
+      "I'm fine, thanks."
+     ],
+     "answer": 1,
+     "explain_vi": "A xin mượn đồ → đồng ý: 'Sure. Here you are.' (Được, của bạn đây). 'Yes, I can' sai vì A hỏi về việc A làm, không hỏi B."
+    },
+    {
+     "q": "A: What are you going to do this weekend?\nB: ______",
+     "options": [
+      "I visited my grandparents.",
+      "Yes, I am.",
+      "I'm going to visit my grandparents.",
+      "At home, thanks."
+     ],
+     "answer": 2,
+     "explain_vi": "A hỏi dự định bằng be going to → B đáp bằng be going to. 'I visited' là quá khứ, sai thì; 'Yes, I am' không trả lời câu hỏi What."
+    },
+    {
+     "q": "A: I've got a new smartwatch for my birthday!\nB: ______",
+     "options": [
+      "Never mind.",
+      "No, thanks.",
+      "Same to you.",
+      "Wow, that's great!"
+     ],
+     "answer": 3,
+     "explain_vi": "A khoe tin vui → B vui cùng: 'Wow, that's great!'. Never mind dùng để an ủi; Same to you dùng để chúc lại."
+    },
+    {
+     "q": "A: Oh no! My phone battery is dead.\nB: ______",
+     "options": [
+      "Here, I'll lend you my charger.",
+      "Yes, it does.",
+      "Congratulations!",
+      "See you later."
+     ],
+     "answer": 0,
+     "explain_vi": "A gặp chuyện không may → B đề nghị giúp ngay lúc nói: I'll + V (will dùng cho lời đề nghị giúp đỡ)."
+    },
+    {
+     "q": "A: Are you free on Sunday?\nB: ______",
+     "options": [
+      "Yes, I was.",
+      "Sorry, I'm visiting my aunt.",
+      "On Sunday.",
+      "No, you aren't."
+     ],
+     "answer": 1,
+     "explain_vi": "B đã có hẹn nên không rảnh. Lịch hẹn dùng hiện tại tiếp diễn: I'm visiting. 'Yes, I was' sai thì; 'No, you aren't' sai chủ ngữ."
+    }
+   ]
+  },
+  {
+   "format": "listening",
+   "title_vi": "Nghe và điền ghi chú",
+   "intro_vi": "Dạng nghe và điền ghi chú: em nghe một thông báo ngắn rồi điền 1 từ hoặc 1 con số vào chỗ trống. Đề Sở chuyên Anh có phần nghe như vậy. Bài này nói chậm, câu ngắn.",
+   "tip_vi": "Đọc ghi chú trước khi nghe. Đoán chỗ trống cần gì: thứ trong tuần, giờ, số phòng hay đồ vật. Con số viết bằng chữ số (4, 8).",
+   "kind": "gap_text",
+   "script": "Hello, everyone. I'm Ms Mai, and I teach computer studies. Next week, our school is starting a new computer club. The club meets every Tuesday. It starts at four o'clock in the afternoon and finishes at half past five. We are meeting in Room 8, on the second floor. In the club, you are going to learn how to make a simple game. The club is free. You need to bring a notebook and a pen. You don't need a laptop, because there are twenty computers in the room. If you want to join, please tell your class teacher before Friday. I'm sure it will be fun. Thank you!",
+   "text": "COMPUTER CLUB\n• Day: every [1]\n• Starts at: [2] p.m.\n• Place: Room [3], second floor\n• You will learn to make a simple [4]\n• Bring: a [5] and a pen\n• To join: tell your class teacher before Friday",
+   "items": [
+    {
+     "answer": "Tuesday",
+     "accept": [
+      "Tuesdays",
+      "tuesday"
+     ],
+     "explain_vi": "Nghe: 'The club meets every Tuesday' → Tuesday."
+    },
+    {
+     "answer": "4",
+     "accept": [
+      "four",
+      "4.00",
+      "4:00"
+     ],
+     "explain_vi": "Nghe: 'It starts at four o'clock in the afternoon' → 4. Half past five là giờ kết thúc."
+    },
+    {
+     "answer": "8",
+     "accept": [
+      "eight"
+     ],
+     "explain_vi": "Nghe: 'We are meeting in Room 8' → 8. Twenty là số máy tính, không phải số phòng."
+    },
+    {
+     "answer": "game",
+     "accept": [
+      "computer game"
+     ],
+     "explain_vi": "Nghe: 'learn how to make a simple game' → game."
+    },
+    {
+     "answer": "notebook",
+     "accept": [
+      "note book"
+     ],
+     "explain_vi": "Nghe: 'You need to bring a notebook and a pen'. Không cần mang laptop."
+    }
+   ]
+  }
+ ],
+ "exam_plus": [
+  {
+   "format": "dialogue_completion",
+   "title_vi": "Hoàn thành hội thoại",
+   "intro_vi": "Câu hội thoại phân loại thường có lời đáp 'nghe đúng' nhưng sai chức năng hoặc sai sắc thái (Would you mind…?, I couldn't agree more, make it). Hôm nay em làm 5 câu như vậy.",
+   "tip_vi": "Đọc cả phần sau chỗ trống nếu có. Nhớ cách đáp chuẩn: Would you mind…? → Sorry, I'll…; lời khen → cảm ơn; Shall I…? → That would be a great help.",
+   "kind": "mcq",
+   "items": [
+    {
+     "q": "A: Would you mind switching off your phone? The film is about to start.\nB: ______",
+     "options": [
+      "Yes, of course.",
+      "Sorry, I'll do it right now.",
+      "Never mind.",
+      "Yes, I'd love to."
+     ],
+     "answer": 1,
+     "explain_vi": "Would you mind + V-ing là lời nhờ lịch sự. Đáp 'Yes, of course' lại thành 'có, tôi thấy phiền'. Lời đáp hợp: xin lỗi và làm ngay (I'll + V)."
+    },
+    {
+     "q": "A: Your presentation on artificial intelligence was brilliant!\nB: ______",
+     "options": [
+      "Thanks, but I couldn't have done it without your help.",
+      "Yes, it was brilliant, wasn't it?",
+      "You're welcome.",
+      "That's a good idea."
+     ],
+     "answer": 0,
+     "explain_vi": "Đáp lời khen: cảm ơn và khiêm tốn. You're welcome dùng để đáp lời cảm ơn; tự khen lại mình là thiếu lịch sự."
+    },
+    {
+     "q": "A: I reckon robots will be teaching us in ten years' time.\nB: ______ Students need real people to inspire them.",
+     "options": [
+      "I couldn't agree more.",
+      "Exactly!",
+      "I doubt it.",
+      "So do I."
+     ],
+     "answer": 2,
+     "explain_vi": "Câu sau của B phản đối ý A → chọn lời không đồng ý: I doubt it. 'I couldn't agree more' nghĩa là RẤT đồng ý, là bẫy."
+    },
+    {
+     "q": "A: Shall I set up the projector for your talk tomorrow?\nB: ______",
+     "options": [
+      "Yes, you shall.",
+      "No, I won't.",
+      "That would be a great help, thanks.",
+      "I'd love to, but I can't."
+     ],
+     "answer": 2,
+     "explain_vi": "Shall I…? là lời đề nghị giúp → nhận lời: That would be a great help. 'I'd love to' dùng để nhận lời MỜI, không đáp lời đề nghị giúp."
+    },
+    {
+     "q": "A: I'm afraid I can't make it to the coding workshop on Saturday.\nB: ______",
+     "options": [
+      "Great! I'll see you there.",
+      "Don't worry, I'm not afraid.",
+      "Never mind. I'll make it for you.",
+      "That's a shame. Maybe next time, then."
+     ],
+     "answer": 3,
+     "explain_vi": "make it = đến được, tham dự được; I'm afraid = rất tiếc. A báo không đến được → B tỏ ý tiếc: That's a shame."
+    }
+   ]
+  },
+  {
+   "format": "listening",
+   "title_vi": "Nghe và điền ghi chú",
+   "intro_vi": "Bài nghe phân loại trong đề Sở có thông tin gây nhiễu: người nói nhắc tới 2–3 khả năng rồi sửa lại (no longer, instead, but). Bài này dài hơn và có nhiều bẫy như vậy.",
+   "tip_vi": "Khi nghe 'no longer', 'originally', 'instead', 'but' thì chờ thông tin MỚI phía sau. Viết số đúng như nghe, kể cả dấu phẩy hàng nghìn.",
+   "kind": "gap_text",
+   "script": "Hello, and thank you for calling Bright Minds Digital Camp. Here is some information about our summer programme. This year, the camp is running from the fifteenth of July to the second of August. Please note that it is no longer held at the City Science Centre. We have moved to Thanh Xuan Youth Club, which has bigger computer rooms. Sessions start at half past eight every morning, but on the first day we'd like everyone to arrive fifteen minutes earlier, at a quarter past eight, to collect their name badges. In the first week, campers are going to learn the basics of coding, and in the second week they are designing their own mobile app. We originally planned a trip to a robot factory, but unfortunately that has been cancelled, so instead we are visiting a technology museum. The full fee is 2,500,000 dong, but students who register before the end of May will pay only 2,100,000. Laptops are provided, but you will need to bring your own headphones. To register, please visit our website. Thank you for calling.",
+   "text": "BRIGHT MINDS DIGITAL CAMP\n• Dates: 15 July – 2 August\n• Place: Thanh Xuan Youth [1]\n• First day: arrive at [2] a.m.\n• Week 2: design a mobile [3]\n• Trip: a technology [4]\n• Fee if you register before the end of May: [5] dong\n• Bring: your own headphones",
+   "items": [
+    {
+     "answer": "Club",
+     "accept": [
+      "club"
+     ],
+     "explain_vi": "Nghe: 'We have moved to Thanh Xuan Youth Club'. City Science Centre là địa điểm cũ (no longer held)."
+    },
+    {
+     "answer": "8.15",
+     "accept": [
+      "8:15",
+      "8.15 a.m.",
+      "quarter past eight",
+      "a quarter past eight"
+     ],
+     "explain_vi": "Ngày đầu đến sớm 15 phút: a quarter past eight = 8.15. Half past eight (8.30) là giờ bắt đầu các ngày khác – bẫy."
+    },
+    {
+     "answer": "app",
+     "accept": [
+      "application"
+     ],
+     "explain_vi": "Tuần 2: 'designing their own mobile app'. Coding là nội dung tuần 1."
+    },
+    {
+     "answer": "museum",
+     "accept": [],
+     "explain_vi": "Chuyến thăm nhà máy robot đã bị huỷ; thay vào đó (instead) là 'a technology museum'."
+    },
+    {
+     "answer": "2,100,000",
+     "accept": [
+      "2100000",
+      "2.100.000",
+      "2 100 000"
+     ],
+     "explain_vi": "Đăng ký trước cuối tháng 5 chỉ trả 2,100,000; 2,500,000 là giá đầy đủ."
+    }
+   ]
+  }
+ ],
+ "paper_plus": {
+  "title_vi": "H. Thử thách nâng cao",
+  "instruction_vi": "Thử thách dành cho học sinh mức Nâng cao. Câu 1–2: viết dạng đúng của từ in hoa (có thể phải đổi 2 lần hoặc thêm tiền tố). Câu 3–4: viết tiếp câu sau sao cho nghĩa không đổi. Câu 5–6: chọn A, B, C hoặc D.",
+  "items": [
+   {
+    "id": "d4H1",
+    "q": "Some apps collect users' personal data ______, without asking for permission. (LEGAL)",
+    "answer": "illegally",
+    "accept": []
+   },
+   {
+    "id": "d4H2",
+    "q": "Thanks to its powerful processor, the new laptop runs even the biggest games ______. (EFFORT)",
+    "answer": "effortlessly",
+    "accept": []
+   },
+   {
+    "id": "d4H3",
+    "q": "I've arranged to meet the IT technician at 3 p.m. tomorrow. → I'm ______",
+    "answer": "meeting the IT technician at 3 p.m. tomorrow",
+    "accept": [
+     "seeing the IT technician at 3 p.m. tomorrow"
+    ]
+   },
+   {
+    "id": "d4H4",
+    "q": "I'm sure the new app will be popular with teenagers. → The new app is bound ______",
+    "answer": "to be popular with teenagers",
+    "accept": []
+   },
+   {
+    "id": "d4H5",
+    "q": "With new gadgets coming out every month, it's hard to ______ pace with the latest technology.",
+    "options": [
+     "keep",
+     "catch",
+     "hold",
+     "stay"
+    ],
+    "answer": "A",
+    "accept": []
+   },
+   {
+    "id": "d4H6",
+    "q": "Please don't forget to ______ up your files before you update the software.",
+    "options": [
+     "save",
+     "make",
+     "back",
+     "put"
+    ],
+    "answer": "C",
+    "accept": []
+   }
+  ]
+ },
+ "paper_easy": {
+  "hints": {
+   "d4C1": "trạng từ (bổ nghĩa cho 'find')",
+   "d4C2": "trạng từ (nhớ đổi y → i)",
+   "d4C3": "trạng từ (-ic → -ically)",
+   "d4C4": "trạng từ (bổ nghĩa cho 'update')"
+  },
+  "reading_gloss": [
+   [
+    "unusual",
+    "khác thường"
+   ],
+   [
+    "challenge",
+    "thử thách"
+   ],
+   [
+    "form teacher",
+    "giáo viên chủ nhiệm"
+   ],
+   [
+    "on average",
+    "trung bình"
+   ],
+   [
+    "surprised",
+    "làm ngạc nhiên"
+   ],
+   [
+    "discover",
+    "khám phá"
+   ],
+   [
+    "nervous",
+    "lo lắng, hồi hộp"
+   ],
+   [
+    "survive",
+    "vượt qua được, sống sót"
+   ]
+  ],
+  "writing_starters": [
+   "Next Saturday, my class is having …",
+   "In the morning, I'm going to …",
+   "In the afternoon, I'm meeting …",
+   "I think I will feel …"
+  ]
+ }
 }

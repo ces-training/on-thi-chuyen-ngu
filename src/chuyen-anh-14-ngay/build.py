@@ -17,7 +17,7 @@ web = {}
 for n in range(1, 15):
     p = here / f"content/web/day{n:02d}.json"
     if p.exists():
-        w = json.load(open(p, encoding="utf-8")); web[n] = {"grammar_games": w.get("grammar_games", {}), "exam": w.get("exam", [])}
+        w = json.load(open(p, encoding="utf-8")); web[n] = {k: w[k] for k in ("grammar_games", "exam", "exam_easy", "exam_plus", "paper_plus") if k in w}
 mp = here / "content/web/media.json"
 media = json.load(open(mp, encoding="utf-8")) if mp.exists() else {}
 mv = here / "content/web/media_vi.json"
@@ -29,7 +29,7 @@ api = json.dumps(os.environ.get("API_URL_OVERRIDE", cfg.get("apiUrl", "")))
 sj = json.load(open(here / "schools.json", encoding="utf-8"))
 school_js = (here / "school.js").read_text(encoding="utf-8").replace("__SCHOOLS__", json.dumps(sj["options"], ensure_ascii=False)).replace("__EXAMS__", json.dumps(sj["exams"], ensure_ascii=False))
 brand = (repo / "src" / "brand" / "brand.css").read_text(encoding="utf-8")
-body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
+body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8") + "\n" + (here / "games2.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
 page = (
     "<!doctype html>\n<html lang=\"vi\">\n<head>\n<meta charset=\"utf-8\">\n"
     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
@@ -57,7 +57,7 @@ for f in [repo / "index.html", repo / "tuyen-sinh" / "index.html"]:
 
 # ---- đáp án cho máy chủ chấm bài ----
 SECTION_NAMES = {"A_vocab": "A · Từ vựng", "B_grammar": "B · Ngữ pháp", "C_wordform": "C · Cấu tạo từ", "D_exam": "D · Dạng bài thi chuyên",
-                 "E_reading": "E · Đọc hiểu", "G_review": "G · Ôn xoắn ốc", "R1_vocab": "R1 · Từ vựng", "R2_grammar": "R2 · Ngữ pháp",
+                 "E_reading": "E · Đọc hiểu", "G_review": "G · Ôn xoắn ốc", "H_plus": "H · Thử thách nâng cao (chỉ học sinh mức Nâng cao)", "R1_vocab": "R1 · Từ vựng", "R2_grammar": "R2 · Ngữ pháp",
                  "R3_wordform": "R3 · Cấu tạo từ", "R4_exam": "R4 · Dạng bài thi chuyên"}
 def label(i):
     s = re.sub(r"^d\d+", "", i)
@@ -66,6 +66,8 @@ keys = {}
 for d in days:
     P = d["paper"]; secs = []
     order = ["A_vocab", "B_grammar", "C_wordform", "D_exam", "E_reading", "G_review"] if "A_vocab" in P else ["R1_vocab", "R2_grammar", "R3_wordform", "R4_exam", "E_reading"]
+    PP = web.get(d["day"], {}).get("paper_plus")
+    if PP: P = dict(P, H_plus=PP); order = order + ["H_plus"]
     for k in order:
         if k not in P: continue
         items = []
@@ -74,7 +76,7 @@ for d in days:
             if it.get("accept"): x["accept"] = it["accept"]
             if it.get("options"): x["options"] = it["options"]
             items.append(x)
-        secs.append({"key": k, "name": SECTION_NAMES[k], "items": items})
+        secs.append({"key": k, "name": SECTION_NAMES[k], "items": items, **({"track": "nang"} if k == "H_plus" else {})})
     F = P.get("F_writing")
     keys[str(d["day"])] = {"day": d["day"], "sections": secs,
                            "writing": {"task": F.get("task_en", ""), "min_words": F.get("min_words", 50), "checklist": F.get("checklist_vi", [])} if F else None}

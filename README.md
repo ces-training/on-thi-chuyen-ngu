@@ -11,6 +11,13 @@ Trang web: https://ces-training.github.io/on-thi-chuyen-ngu/
 | Số liệu tuyển sinh chuyên ngữ Hà Nội | `tuyen-sinh/` | sửa trực tiếp `tuyen-sinh/index.html` |
 | Trang theo dõi của cô | `co/` | `src/co/template.html` |
 
+## Học theo mức của con
+
+- Bài đầu vào xếp con vào 1 trong 3 mức: **Nền tảng** (dưới A2, A2), **Chuẩn** (A2+, B1), **Nâng cao** (B1+ trở lên). Con hoặc cô có thể đổi mức ở đầu mỗi buổi.
+- Theo mức sẽ đổi: độ khó và tốc độ game, bài dạng đề thi (`exam_easy` / `exam` / `exam_plus` trong `content/web/dayNN.json`), video mặc định (Nền tảng xem video tiếng Việt trước), bản PDF bài giấy (`pdf/buoi-NN-nen.pdf`, `buoi-NN.pdf`, `buoi-NN-nang.pdf`) và đáp án máy chấm (phần H chỉ chấm cho mức Nâng cao).
+- Tạo lại PDF sau khi sửa nội dung: `python3 src/chuyen-anh-14-ngay/pdf/gen_pdf.py` (cần Node + Playwright).
+- Game vận động (buổi 3, 5, 7, 9, 11, 13) dùng camera và MediaPipe chạy ngay trong trình duyệt; không có camera thì chơi bằng nút bấm.
+
 ## Máy chủ chấm bài (tuỳ chọn)
 
 Thư mục `apps-script/` chứa máy chủ chạy trên Google Apps Script. Khi bật, kết quả học tự gửi về trang của cô, học sinh chụp bài giấy để máy chấm bằng Claude, và con có thể nhắn cô khi chưa đồng ý với điểm.
