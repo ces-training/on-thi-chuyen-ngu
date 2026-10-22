@@ -844,7 +844,7 @@
       "options": [
        "She puts it in her bag.",
        "She uses it only to check answers.",
-       "She turns the sound off.",
+       "She keeps it on her desk.",
        "She leaves it with her mum."
       ],
       "answer": 3,
@@ -978,7 +978,7 @@
      },
      {
       "s": 1,
-      "t": "I know. OK, how about this? I'll talk to Mr Brown first and see what he suggests. Then I'll decide."
+      "t": "I know. Okay, how about this? I'll talk to Mr Brown first and see what he suggests. Then I'll decide."
      },
      {
       "s": 0,

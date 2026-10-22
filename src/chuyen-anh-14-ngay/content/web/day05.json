@@ -607,7 +607,7 @@
     "script": [
      {
       "s": 0,
-      "t": "Hi Nam. You look so tired this morning. Are you OK?"
+      "t": "Hi Nam. You look so tired this morning. Are you Okay?"
      },
      {
       "s": 1,
@@ -643,7 +643,7 @@
      },
      {
       "s": 1,
-      "t": "OK, I'll come on Thursday. Thanks, Linh!"
+      "t": "Okay, I'll come on Thursday. Thanks, Linh!"
      }
     ],
     "items": [
@@ -973,7 +973,7 @@
      },
      {
       "s": 1,
-      "t": "You're right. OK, I'll give it a try for a week and see how I feel. But I'm not giving up my football videos completely! Maybe just on weekdays."
+      "t": "You're right. Okay, I'll give it a try for a week and see how I feel. But I'm not giving up my football videos completely! Maybe just on weekdays."
      },
      {
       "s": 0,
