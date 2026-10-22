@@ -1,0 +1,107 @@
+{
+  "so": "Ninh Bình",
+  "slug": "ninh-binh",
+  "merged_from": ["Ninh Bình", "Hà Nam", "Nam Định"],
+  "exam_2026": {
+    "dates": "Theo Springboard, kỳ thi chuyên Anh tỉnh Ninh Bình 2026 diễn ra 2 ngày 24–25/5/2026 (có phần Nói). Điểm thi chuyên công bố 05/6, điểm trúng tuyển công lập không chuyên 08/6/2026 (Điện Máy Chợ Lớn tổng hợp). Chưa tìm được lịch chi tiết từng môn từ văn bản Sở.",
+    "organisation": "một đề chung cho cả tỉnh mới: thí sinh tham gia kỳ thi chung do Sở GD&ĐT tổ chức (Luật Minh Khuê tóm tắt kế hoạch); đề Chuyên Anh 2026 dành cho thí sinh vào cả 3 trường Lê Hồng Phong, Lương Văn Tụy, Biên Hòa (Springboard). Chưa có văn bản nói rõ cách xếp nguyện vọng giữa 3 trường.",
+    "common_subjects": ["Toán", "Ngữ văn", "Ngoại ngữ"],
+    "notes": "Chỉ tiêu 2026 (QĐ 130/QĐ-UBND 16/01/2026 và 339/QĐ-UBND 05/02/2026): Chuyên Lương Văn Tụy 13 lớp/455 HS; Chuyên Lê Hồng Phong 16 lớp/560 HS; Chuyên Biên Hòa 10 lớp/350 HS (≤35 HS/lớp). Môn ngoại ngữ chuyên thi đủ 4 kỹ năng, có phần nói trực tiếp với giám khảo."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": "Năm 2026: Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Ngoại ngữ + Điểm bài thi môn chuyên × 3 (bài chuyên hệ số 3).",
+    "parts": ["Toán", "Ngữ văn", "Ngoại ngữ (chung)", "Anh chuyên×3"],
+    "max": 60,
+    "conditions": "Chưa tìm được điều kiện điểm tối thiểu 2026. Căn cứ hệ số 3: Luật Minh Khuê ('bài thi môn chuyên (hệ số 3)') và điểm chuẩn 2026 vượt 50 (chuyên Hóa Lê Hồng Phong 51,7). Điện Máy Chợ Lớn ghi công thức Lương Văn Tụy là môn chuyên × 2 — mâu thuẫn, nhiều khả năng là công thức cũ.",
+    "formula_by_year": {
+      "2024": "Lương Văn Tụy (Ninh Bình cũ): Hoatieu ghi 'Toán + Ngữ văn + Bài thi tổ hợp + môn chuyên × 3' (không ghi năm); Lê Hồng Phong (Nam Định cũ): điểm chuẩn ghi trên thang 10 (chuyên Anh 7,93) — chưa rõ công thức (có thể chỉ tính bài chuyên). Biên Hòa (Hà Nam cũ): chưa tìm được.",
+      "2025": "Lương Văn Tụy: điểm chuẩn chuyên Anh 45 (thang chưa xác định 50 hay 60). Lê Hồng Phong: 47,85. Biên Hòa: 38. Chưa có văn bản công thức từng trường.",
+      "2026": "Chung toàn tỉnh: Toán + Văn + Ngoại ngữ + chuyên × 3 (thang 60)."
+    }
+  },
+  "nv_rule": "Chưa tìm được quy định nguyện vọng chuyên 2026 (số NV chuyên, có được đăng ký nhiều trường chuyên không). Điểm chuẩn 2026 có NV1 và NV2 riêng cho một số lớp (Pháp Lương Văn Tụy NV1 41,4 / NV2 43,55; Nga Biên Hòa NV1 40,85 / NV2 44,9), cho thấy có xét nguyện vọng 2 với điểm cao hơn. Chưa rõ lớp Pháp/Nga xét bằng bài tiếng Anh chuyên hay bài ngoại ngữ riêng.",
+  "chuyen_paper": {
+    "minutes": null,
+    "scale": 10,
+    "has_listening": true,
+    "essay_words": null,
+    "sections": [
+      {"format": "listening", "items": null, "points": 2.0, "note": "Nối người nói với nhận định, hoàn thành tóm tắt, chọn đáp án từ hội thoại/phỏng vấn."},
+      {"format": "sentence_completion", "items": null, "points": 2.0, "note": "Lexico-Grammar 2,0: MCQ điền chỗ trống, word form, sửa lỗi."},
+      {"format": "word_formation", "items": null, "points": null, "note": "Thuộc Lexico-Grammar."},
+      {"format": "error_id", "items": null, "points": null, "note": "Thuộc Lexico-Grammar."},
+      {"format": "cloze", "items": null, "points": 2.5, "note": "Reading 2,5: điền chỗ trống, đọc hiểu MCQ, bài dài nối tiêu đề, Yes/No/Not Given."},
+      {"format": "reading_mcq", "items": null, "points": null, "note": "Thuộc Reading."},
+      {"format": "matching_headings", "items": null, "points": null, "note": "Bài dài nối tiêu đề."},
+      {"format": "true_false", "items": null, "points": null, "note": "Yes/No/Not Given."},
+      {"format": "guided_writing", "items": 1, "points": 2.5, "note": "Writing 2,5 gồm một lá thư ngắn và một bài essay nghị luận (chưa rõ số từ, đề)."},
+      {"format": "essay", "items": 1, "points": null, "note": "Essay nghị luận trong phần Writing."},
+      {"format": "other", "items": null, "points": 1.0, "note": "SPEAKING 1,0 điểm — nói trực tiếp với giám khảo, chấm ý tưởng, tổ chức, độ chính xác ngôn ngữ, phát âm, độ trôi chảy. Mới từ 2026 (đề 2024–2025 không có Nói, thang 9,0: Listening 2, Vocabulary 2, Reading 3, Writing 2 gồm thư + đoạn văn, 150')."}
+    ],
+    "difficulty": "B2+",
+    "difficulty_evidence": "Springboard nhận xét đề Chuyên Anh Ninh Bình 2026 'nghiêng về B2 vững đến cận C1', không quá học thuật hay kiểu Olympic; thử thách là giữ độ chính xác đều ở mọi phần, học sinh lệch kỹ năng dễ mất điểm ở Reading và Lexico-Grammar. Thêm phần Speaking là điểm khác thường so với các tỉnh lân cận. Chưa tìm được nhận xét riêng về đề Lê Hồng Phong (Nam Định cũ) các năm trước.",
+    "sample_links": ["https://springboard.vn/de-thi-chuyen-anh-ninh-binh-2026/"]
+  },
+  "schools": [
+    {
+      "name": "THPT Chuyên Lương Văn Tụy",
+      "old_province": "Ninh Bình",
+      "city": "Ninh Bình",
+      "classes": [
+        {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {"2022": null, "2023": null, "2024": 44.5, "2025": 45, "2026": 46.35}, "scale": {"2026": 60}, "note": "Thang 2024–2025 chưa xác định (50 hoặc 60). Tham khảo 2020: 40,25. Trường 13 lớp/455 HS năm 2026."},
+        {"lang": "Pháp", "admit_by_english": null, "cut": {"2024": 40.15, "2025": 40.40, "2026": 41.4}, "scale": {"2026": 60}, "note": "2025: NV1 40,40 / NV2 43,10 (Hoatieu; tuyensinh247 ghi cặp số này cho lớp Nga — mâu thuẫn). 2026: NV1 41,4 / NV2 43,55. Tham khảo 2020: 30,15."}
+      ]
+    },
+    {
+      "name": "THPT Chuyên Lê Hồng Phong",
+      "old_province": "Nam Định",
+      "city": "Nam Định",
+      "classes": [
+        {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {"2022": null, "2023": null, "2024": 7.93, "2025": 47.85, "2026": 48.5}, "scale": {"2024": 10, "2026": 60}, "note": "2024 ghi 7,93 (tuyensinh247) — có vẻ thang 10/chỉ điểm bài chuyên, chưa xác minh. Thang 2025 chưa xác định. 2026 cao nhất trong 3 trường. Trường 16 lớp/560 HS năm 2026."},
+        {"lang": "Pháp", "admit_by_english": null, "cut": {"2024": 6.6, "2025": 40.6, "2026": 40.45}, "scale": {"2024": 10, "2026": 60}, "note": "Thang 2024 nghi là 10."},
+        {"lang": "Nga", "admit_by_english": null, "cut": {"2024": 5.32, "2025": 36.8, "2026": 43}, "scale": {"2024": 10, "2026": 60}, "note": "Thang 2024 nghi là 10."}
+      ]
+    },
+    {
+      "name": "THPT Chuyên Biên Hòa",
+      "old_province": "Hà Nam",
+      "city": "Phủ Lý",
+      "classes": [
+        {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {"2022": null, "2023": null, "2024": null, "2025": 38, "2026": 45.6}, "scale": {"2026": 60}, "note": "Thang 2025 chưa xác định. Trường 10 lớp/350 HS năm 2026."},
+        {"lang": "Nga", "admit_by_english": null, "cut": {"2025": 35.25, "2026": 40.85}, "scale": {"2026": 60}, "note": "2026: NV1 40,85 / NV2 44,9."}
+      ]
+    }
+  ],
+  "stories": [
+    {"title": "Phân tích đề Chuyên Anh 10 Ninh Bình 2026–2027 (có phần Speaking)", "who": "giáo viên", "year": 2026, "school": "THPT Chuyên Lê Hồng Phong / Lương Văn Tụy / Biên Hòa", "summary": "Springboard phân tích đề chung cho 3 trường chuyên sau sáp nhập, thi 24–25/5/2026: Listening 2,0, Lexico-Grammar 2,0, Reading 2,5, Writing 2,5 (thư + essay) và lần đầu có Speaking 1,0. Đề ở mức B2 vững đến cận C1, cần làm đều mọi phần.", "takeaways": ["Chuẩn bị phần Nói trực tiếp với giám khảo: trình bày ý, tổ chức, phát âm, trôi chảy", "Luyện viết thư ngắn và essay nghị luận", "Không lệch kỹ năng — Reading và Lexico-Grammar là chỗ dễ mất điểm"], "url": "https://springboard.vn/de-thi-chuyen-anh-ninh-binh-2026/"}
+  ],
+  "prep_tips": [
+    "Từ 2026 đề chuyên ngoại ngữ thi đủ 4 kỹ năng, có phần nói trực tiếp với giám khảo (1,0/10 điểm) — cần luyện nói có cấu trúc, phát âm chuẩn (Luật Minh Khuê, Springboard).",
+    "Bài chuyên nhân hệ số 3 (2026): bài chuyên Anh chiếm một nửa điểm xét tuyển (Luật Minh Khuê; điểm chuẩn 2026 tới 51,7).",
+    "Writing gồm cả thư ngắn và essay — ôn cả văn phong thư (formal/informal) lẫn nghị luận (Springboard).",
+    "Reading có nối tiêu đề và Yes/No/Not Given kiểu IELTS (Springboard).",
+    "Chuyên Anh Lê Hồng Phong có điểm chuẩn cao nhất (48,5/60 năm 2026), tiếp theo Lương Văn Tụy 46,35 và Biên Hòa 45,6 (tuyensinh247)."
+  ],
+  "confidence": "low",
+  "gaps": [
+    "Văn bản chính thức kế hoạch tuyển sinh 2026 của Sở GD&ĐT Ninh Bình (PDF trên website các trường không tải được): lịch thi từng môn, điều kiện, quy định nguyện vọng giữa 3 trường chuyên.",
+    "Công thức và thang điểm 2022–2025 của từng trường cũ (Lương Văn Tụy, Lê Hồng Phong, Biên Hòa); mâu thuẫn hệ số 2/3.",
+    "Điểm chuẩn chuyên Anh 2022, 2023 cả 3 trường; Biên Hòa 2024.",
+    "Lớp Trung/Nhật: chưa thấy dữ liệu; chưa rõ lớp Pháp/Nga xét bằng bài nào.",
+    "Chỉ tiêu từng lớp chuyên Anh; số thí sinh đăng ký.",
+    "Thời lượng, số câu, số từ essay đề chuyên Anh 2026; nhận xét về độ khó đề Lê Hồng Phong các năm trước.",
+    "Kế hoạch 2027 chưa có.",
+    "Chia sẻ của thủ khoa/học sinh/giáo viên trường chuyên: chưa tìm được (hết quota tìm kiếm)."
+  ],
+  "sources": [
+    {"title": "Luật Minh Khuê – Chi tiết chỉ tiêu tuyển sinh lớp 10 của 89 trường THPT tỉnh Ninh Bình (2026-2027)", "url": "https://luatminhkhue.vn/chi-tiet-chi-tieu-tuyen-sinh-lop-10-cua-89-truong-thpt-tinh-ninh-binh.aspx"},
+    {"title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 Ninh Bình", "url": "https://diemthi.tuyensinh247.com/dc-lop10/ninh-binh-p16.html"},
+    {"title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 Nam Định", "url": "https://diemthi.tuyensinh247.com/dc-lop10/nam-dinh-p31.html"},
+    {"title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 Hà Nam", "url": "https://diemthi.tuyensinh247.com/dc-lop10/ha-nam-p33.html"},
+    {"title": "Hoatieu – Điểm thi tuyển sinh lớp 10 Ninh Bình (chuyên Lương Văn Tụy 2020, 2025)", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-ninh-binh-208883"},
+    {"title": "Điện Máy Chợ Lớn – Điểm chuẩn lớp 10 tỉnh Ninh Bình 2026", "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-tinh-ninh-binh"},
+    {"title": "Ngôi Sao – Tỉnh có 3 trường chuyên, hơn 200 giải HSG quốc gia", "url": "https://ngoisao.vn/theo-dong-su-kien/tin-nong-trong-ngay/tinh-co-diem-thi-tot-nghiep-thpt-2026-cao-nhat-so-huu-3-truong-chuyen-moi-nam-co-hon-200-giai-hsg-quoc-gia-d487478.html"},
+    {"title": "Springboard – Đề thi Chuyên Anh 10 Ninh Bình 2026-2027", "url": "https://springboard.vn/de-thi-chuyen-anh-ninh-binh-2026/"}
+  ]
+}

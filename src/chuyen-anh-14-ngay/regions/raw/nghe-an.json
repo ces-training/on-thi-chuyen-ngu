@@ -1,0 +1,112 @@
+{
+  "so": "Nghệ An",
+  "slug": "nghe-an",
+  "merged_from": ["Nghệ An"],
+  "exam_2026": {
+    "dates": "Thi chung (Toán, Ngữ văn, Ngoại ngữ): 25–26/5/2026; thi môn chuyên THPT chuyên Phan Bội Châu: dự kiến chiều 28/5/2026. Điểm thi công lập dự kiến 04/6, kết quả chuyên Phan Bội Châu dự kiến 05/6/2026 (phúc khảo chuyên 05–08/6).",
+    "organisation": "một đề chung cho cả tỉnh (Nghệ An không sáp nhập)",
+    "common_subjects": ["Toán", "Ngữ văn", "Ngoại ngữ"],
+    "notes": "Lịch thi sớm hơn mọi năm khoảng 9–10 ngày vì thi tốt nghiệp THPT 2026 diễn ra 11–12/6; Sở từng đề xuất lùi 1 tháng nhưng không chọn. Khoảng 53.000–57.000 thí sinh. Điểm mới 2026: không đăng ký/điều chỉnh nguyện vọng sau khi thi; bỏ lớp tiên tiến. Phan Bội Châu theo Công văn 722/SGD&ĐT-QLCL ngày 20/3/2026: 15 lớp (Toán 1, Toán 2, Lý, Hóa, Sinh, Tin, Văn, Sử, Địa, Anh, Nhật, Trung, Pháp, Nga, Hàn); môn chuyên hệ số 3."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": "Điểm xét tuyển = Toán + Ngữ văn + Ngoại ngữ (bài thi chung, hệ số 1) + môn chuyên × 3 (thang 60). Với lớp Nga, Nhật, Trung, Hàn (và Pháp nếu chọn) môn chuyên là bài Tiếng Anh chuyên.",
+    "parts": ["Toán", "Ngữ văn", "Ngoại ngữ (chung)", "Anh chuyên×3"],
+    "max": 60,
+    "conditions": "Học THCS tại Nghệ An; rèn luyện Tốt và học tập Khá trở lên tất cả các năm THCS; tốt nghiệp THCS; thí sinh ngoài tỉnh do Giám đốc Sở quyết định. Điểm thi theo thang 10. Không tìm được quy định điểm liệt/điểm sàn môn chuyên trong nguồn đã đọc.",
+    "formula_by_year": {
+      "2024": "Không tìm được văn bản; điểm chuẩn chuyên Anh 1 = 50 cho thấy thang > 50 (phù hợp hệ số 3, thang 60) — chưa xác minh",
+      "2025": "Toán + Văn + Ngoại ngữ (hệ số 1) + môn chuyên × 3 (QĐ UBND Nghệ An 3/2025 phê duyệt kế hoạch tuyển sinh 2025-2026)",
+      "2026": "Toán + Văn + Ngoại ngữ (hệ số 1) + môn chuyên × 3 (Công văn 722/SGD&ĐT-QLCL, tóm tắt trên Thư viện Pháp luật). Lưu ý: Báo Lào Cai và Báo Lâm Đồng ghi môn chuyên × 2 — mâu thuẫn; điểm chuẩn 2026 lớp Nga 51,25 > 50 nên hệ số 3 hợp lý hơn"
+    }
+  },
+  "nv_rule": "NV1 phải khớp bài thi chuyên: lớp Anh thi Tiếng Anh; lớp Nga, Nhật, Hàn, Trung thi bằng Tiếng Anh chuyên; lớp Pháp thi Tiếng Pháp hoặc Tiếng Anh (năm 2025: tối đa 35 HS gồm 25 thi tiếng Pháp NV1 và 10 thi tiếng Anh NV1/NV2). NV2: thí sinh thi Tiếng Anh được đăng ký NV2 vào một trong các lớp Nga, Nhật, Hàn, Pháp, Trung. Vì vậy điểm chuẩn các lớp ngoại ngữ khác có dòng riêng '(Anh)' và NV2. Thí sinh còn đăng ký 2 NV vào THPT công lập. Từ 2026 không được điều chỉnh nguyện vọng sau khi thi. Học sinh Nghệ An còn có thể thi THPT chuyên Đại học Vinh (trường chuyên thuộc ĐH, nhóm khác làm) — điểm chuẩn chuyên Anh ĐH Vinh theo tổng hợp: 27,56 (2023), 22 (2024), 33,75 (2025), 40,45 (2026), thang điểm chưa xác minh.",
+  "chuyen_paper": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": true,
+    "essay_words": null,
+    "sections": [],
+    "difficulty": null,
+    "difficulty_evidence": "Chưa tìm được đề hoặc nhận xét đề chuyên Anh Phan Bội Châu. Mô tả chính thức: 'Thi viết, bao gồm câu hỏi tự luận và trắc nghiệm, kiểm tra 03 kỹ năng nghe, đọc, viết và kiến thức ngôn ngữ', 150 phút (tuyensinh247, thông tin tuyển sinh Phan Bội Châu).",
+    "sample_links": []
+  },
+  "schools": [
+    {
+      "name": "THPT chuyên Phan Bội Châu",
+      "old_province": "Nghệ An",
+      "city": "Vinh",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {"2026": null},
+          "applicants": {"2025": null, "2026": null},
+          "cut": {"2022": null, "2023": null, "2024": 50.0, "2025": null, "2026": 47.2},
+          "scale": {"2024": 60, "2025": 60, "2026": 60},
+          "note": "2024 có 2 lớp: Chuyên Anh 1 = 50; Chuyên Anh 2 = 47,10 (tuyensinh247, hoatieu, Báo Lâm Đồng) — ghi Anh 1 vào cut. 2026 = 47,2 (NV1). Năm cũ: 2021 = 49,70; 2020 = 46,88 (hoatieu). Thang 60 cho 2024 là suy luận (chưa thấy văn bản 2024). Công văn 2026 ghi 1 lớp Anh — chưa xác minh số lớp các năm. Tổng thí sinh dự thi chuyên 2025: hơn 1.700."
+        },
+        {
+          "lang": "Pháp",
+          "admit_by_english": true,
+          "cut": {"2024": 37.55, "2026": 41.88},
+          "note": "2026: thi tiếng Pháp NV1 41,88; thi tiếng Anh NV1 42,3, NV2 45,4. 2024: 37,55 (thí sinh thi tiếng Pháp). 2021: 27,80; 2020: 31. Chỉ tiêu 2025: tối đa 35 (25 thi Pháp + 10 thi Anh)."
+        },
+        {
+          "lang": "Nga",
+          "admit_by_english": true,
+          "cut": {"2024": 43.55, "2026": 51.25},
+          "note": "Thi bằng tiếng Anh chuyên. 2026: NV1 51,25, NV2 45,95; dòng 'Nga (Anh)' NV1 43,85, NV2 49,25 (tuyensinh247 — cách tách 2 dòng chưa rõ). 2024: NV1 43,55, NV2 46,10."
+        },
+        {
+          "lang": "Trung",
+          "admit_by_english": true,
+          "cut": {"2024": 44.48, "2026": 48.58},
+          "note": "2026: NV1 48,58; dòng 'Trung (Anh)' 47,4. 2024: NV1 44,48, NV2 46,60."
+        },
+        {
+          "lang": "Nhật",
+          "admit_by_english": true,
+          "cut": {"2024": 45.55, "2026": 50.2},
+          "note": "2026: NV1 50,2; dòng 'Nhật (Anh)' 46. 2024: 45,55."
+        },
+        {
+          "lang": "Hàn",
+          "admit_by_english": true,
+          "cut": {"2026": 41.0},
+          "note": "Lớp chuyên Hàn có trong kế hoạch 2025 và 2026. 2026: NV1 41; dòng 'Hàn (Anh)' NV1 44,55, NV2 46,95."
+        }
+      ]
+    }
+  ],
+  "stories": [],
+  "prep_tips": [
+    "Bài chuyên Anh nhân hệ số 3 (chiếm 30/60 điểm) — đầu tư cho môn chuyên quyết định kết quả (Công văn 722/2026).",
+    "Học sinh giỏi tiếng Anh nên tận dụng NV2 vào lớp Nga/Nhật/Hàn/Pháp/Trung bằng chính bài thi Anh chuyên — có thêm cơ hội vào Phan Bội Châu (QĐ kế hoạch 2025).",
+    "Đề có cả nghe, đọc, viết, kiến thức ngôn ngữ, trắc nghiệm + tự luận trong 150 phút — cần luyện cả phần viết tự luận, không chỉ trắc nghiệm (tuyensinh247).",
+    "Lịch 2026 sớm (thi chung 25–26/5, chuyên 28/5) — lộ trình ôn cho năm 2027 nên tính hoàn thành sớm hơn các tỉnh khác khoảng 1–2 tuần (Tuổi Trẻ)."
+  ],
+  "confidence": "medium",
+  "gaps": [
+    "Điểm chuẩn chuyên Anh Phan Bội Châu 2022, 2023, 2025",
+    "Cấu trúc chi tiết, độ khó, đề mẫu chuyên Anh Phan Bội Châu (chưa tìm được đề)",
+    "Chỉ tiêu và số thí sinh đăng ký từng lớp chuyên ngoại ngữ",
+    "Câu chuyện/kinh nghiệm ôn thi chuyên Anh Phan Bội Châu (chưa tìm được — hết lượt tìm kiếm)",
+    "Văn bản 2024 về hệ số môn chuyên; mâu thuẫn hệ số 2 vs 3 năm 2026 giữa các báo",
+    "Ý nghĩa dòng 'Nga (Anh)', 'Nhật (Anh)'… trong bảng 2026 của tuyensinh247 (có thể là thí sinh thi Anh chuyên vs thi môn ngoại ngữ đó)",
+    "Kế hoạch tuyển sinh 2027"
+  ],
+  "sources": [
+    {"title": "Tuổi Trẻ: Nghệ An chốt ngày tuyển sinh vào lớp 10 (2026)", "url": "https://tuoitre.vn/nghe-an-chot-ngay-tuyen-sinh-vao-lop-10-20260312152205674.htm"},
+    {"title": "Đại biểu Nhân dân: Nghệ An nhiều điểm mới về kỳ thi vào lớp 10 và tốt nghiệp THPT 2026", "url": "https://daibieunhandan.vn/nghe-an-nhieu-diem-moi-ve-ky-thi-vao-lop-10-va-tot-nghiep-thpt-2026-10415893.html"},
+    {"title": "Thư viện Pháp luật: Tra cứu điểm thi vào 10 Nghệ An 2026 (tóm tắt Công văn 722)", "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/ngheaneduvn-tra-cuu-diem-thi-vao-10-nghe-an-2026-2027-chi-tiet-the-nao-138093155.html"},
+    {"title": "Báo Lào Cai: Lịch công bố điểm thi, điểm chuẩn lớp 10 Nghệ An 2026", "url": "https://baolaocai.vn/lich-cong-bo-diem-thi-diem-chuan-lop-10-nghe-an-2026-moi-nhat-post900968.html"},
+    {"title": "UBND Nghệ An: Quyết định phê duyệt kế hoạch tuyển sinh lớp 10 năm học 2025-2026", "url": "https://cdn.lawnet.vn/uploads/giao-duc/MDV/thang-3-2025/qd-842.pdf"},
+    {"title": "Tuyensinh247: Điểm chuẩn lớp 10 Nghệ An 3 năm", "url": "https://diemthi.tuyensinh247.com/dc-lop10/nghe-an-p18.html"},
+    {"title": "Tuyensinh247: Thông tin tuyển sinh THPT chuyên Phan Bội Châu", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-phan-boi-chau-2592.html"},
+    {"title": "Hoatieu: Điểm thi tuyển sinh lớp 10 Nghệ An", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-nghe-an-208719"},
+    {"title": "Báo Lâm Đồng: Điểm thi lớp 10 năm 2026 tại Nghệ An", "url": "https://baolamdong.vn/print/445649.html"},
+    {"title": "Sở GD&ĐT Nghệ An: Thông báo 11/5/2026 về hồ sơ tuyển sinh lớp 10", "url": "https://datafiles.nghean.gov.vn/nan-ubnd/2938/quantritintuc20265/266d95d15689449ba4248acafd365ad3_20260512113936123.pdf"},
+    {"title": "LSVN: Nhiều địa phương công bố môn thi thứ ba vào lớp 10 năm học 2026-2027", "url": "https://lsvn.vn/nhieu-dia-phuong-cong-bo-mon-thi-thu-ba-vao-lop-10-nam-hoc-2026-2027-a169644.html"},
+    {"title": "Thư viện Pháp luật: Lịch công bố điểm thi vào 10 2026 của 34 tỉnh thành", "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/lich-cong-bo-diem-thi-vao-10-2026-2027-cua-34-tinh-thanh-ngay-nao-138090187.html"}
+  ]
+}

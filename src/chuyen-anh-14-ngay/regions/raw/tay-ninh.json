@@ -1,0 +1,58 @@
+{
+ "so": "Tây Ninh",
+ "slug": "tay-ninh",
+ "merged_from": ["Tây Ninh", "Long An"],
+ "exam_2026": {
+  "dates": null,
+  "organisation": null,
+  "common_subjects": [],
+  "notes": "Chưa thu thập được dữ liệu. Trang tuyensinh247 của Tây Ninh (dc-lop10/tay-ninh-p17, tuyen-sinh-lop10/tay-ninh-p17) bị chặn trong phiên này, và đã hết lượt tìm kiếm web."
+ },
+ "plan_2027": "Chưa tìm được kế hoạch của Sở. Cấp Bộ: dự thảo thông tư (lấy ý kiến khoảng 9/2026) đề xuất thi vào lớp 10 công lập chỉ 2 môn Toán, Ngữ văn; chưa rõ ảnh hưởng tới trường chuyên.",
+ "formula": {
+  "text": null,
+  "parts": [],
+  "max": null,
+  "conditions": null,
+  "formula_by_year": {}
+ },
+ "nv_rule": null,
+ "chuyen_paper": {
+  "minutes": null,
+  "scale": null,
+  "has_listening": null,
+  "essay_words": null,
+  "sections": [],
+  "difficulty": null,
+  "difficulty_evidence": null,
+  "sample_links": []
+ },
+ "schools": [
+  {
+   "name": "THPT chuyên Hoàng Lê Kha",
+   "old_province": "Tây Ninh",
+   "city": "Tây Ninh (cũ)",
+   "classes": [
+    {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {}, "scale": {}, "note": "Chưa có dữ liệu."}
+   ]
+  },
+  {
+   "name": "THPT chuyên Long An",
+   "old_province": "Long An",
+   "city": "Tân An (cũ)",
+   "classes": [
+    {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {}, "scale": {}, "note": "Chưa có dữ liệu."}
+   ]
+  }
+ ],
+ "stories": [],
+ "prep_tips": [],
+ "confidence": "low",
+ "gaps": [
+  "Toàn bộ: ngày thi 2026, cách tổ chức (đề chung hay theo khu vực Tây Ninh cũ / Long An cũ), công thức xét chuyên, nguyện vọng, chỉ tiêu, điểm chuẩn chuyên Anh 2022–2026 của Hoàng Lê Kha và chuyên Long An, cấu trúc và độ khó đề chuyên Anh, chia sẻ ôn thi, kế hoạch 2027.",
+  "Nguyên nhân: hết lượt WebSearch dùng chung trong lượt này; trang tuyensinh247 của Tây Ninh không nằm trong danh sách được phép truy cập. Cần làm lại ở lượt sau."
+ ],
+ "sources": [
+  {"title": "Thư viện Pháp luật – chủ đề thi vào lớp 10 (đề xuất thi 2 môn, cấp Bộ)", "url": "https://thuvienphapluat.vn/phap-luat/chu-de/thi-vao-lop-10"}
+ ]
+}

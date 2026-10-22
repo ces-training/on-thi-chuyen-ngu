@@ -143,8 +143,8 @@
  "nv_rule": "Chỉ được đăng ký 1 nguyện vọng vào 1 lớp chuyên của THPT chuyên Lam Sơn. Thí sinh thi chuyên được đăng ký thêm NV1, NV2 vào THPT công lập (hoặc thêm 1 NV DTNT + 2 NV công lập nếu đủ điều kiện DTNT); trượt chuyên thì dùng điểm 3 môn chung để xét công lập. Thứ tự xét: Lam Sơn → DTNT → công lập. Trúng tuyển Lam Sơn và đã xác nhận nhập học thì không được xét tiếp. Lam Sơn không có lớp chuyên ngoại ngữ khác ngoài tiếng Anh. Không tìm được nguồn về tỉ lệ học sinh Thanh Hóa thi thêm các trường chuyên thuộc đại học (Chuyên ĐH Vinh, các trường chuyên ở Hà Nội).",
  "options": [
   {
-   "id": "so-chuyn-lam-sn-anh",
-   "sk": "so-chuyn-lam-sn",
+   "id": "so-chuyen-lam-son-anh",
+   "sk": "so-chuyen-lam-son",
    "school": "THPT chuyên Lam Sơn",
    "area": "Thanh Hóa",
    "cls": "chuyên Anh",
@@ -506,12 +506,12 @@
  ],
  "goals": [
   {
-   "k": "so-chuyn-lam-sn",
+   "k": "so-chuyen-lam-son",
    "name": "chuyên Lam Sơn",
    "score": 7.0,
    "paper": "so",
    "need_tv_more": false
   }
  ],
- "goal_default": "so-chuyn-lam-sn"
+ "goal_default": "so-chuyen-lam-son"
 }

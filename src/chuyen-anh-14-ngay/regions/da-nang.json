@@ -1,0 +1,563 @@
+{
+ "slug": "da-nang",
+ "name": "Đà Nẵng",
+ "merged_from": [
+  "Đà Nẵng",
+  "Quảng Nam"
+ ],
+ "edition": "Bản Đà Nẵng",
+ "exam_md": [
+  5,
+  25
+ ],
+ "papers": {
+  "so": {
+   "map": "B2",
+   "label": "đề chuyên Anh của Sở Đà Nẵng",
+   "ac_add": 2.5,
+   "ac_cap": 10,
+   "ac_label": "Anh chung (đề chung)",
+   "difficulty": "B2",
+   "difficulty_evidence": "ƯỚC LƯỢNG, chưa có nhận xét giáo viên/báo về đề chuyên Anh Đà Nẵng 2026. Căn cứ dạng bài: sửa lỗi, key word transformation, open cloze, word formation, essay 250 từ — tương đương độ khó đề chuyên Anh phổ biến ở mức B2 (có câu khó tới C1). Cấu trúc theo Thông báo 2081/SGDĐT-GDTrH&HSSV (dẫn qua Thư viện Pháp luật), áp dụng cho kỳ thi 2026-2027.",
+   "minutes": 150,
+   "has_listening": false,
+   "essay_words": 250,
+   "sections": [
+    {
+     "format": "sentence_completion",
+     "items": 20,
+     "points": null,
+     "note": "Phần I: trắc nghiệm 4 lựa chọn ngữ pháp/từ vựng. Nguồn ghi 1,0đ/câu nhưng như vậy tổng các phần là 110 > 100 đã công bố; điểm phần này chưa xác định."
+    },
+    {
+     "format": "open_cloze",
+     "items": 10,
+     "points": 10.0,
+     "note": "Phần II: câu đơn lẻ, điền 1 từ vào chỗ trống (short answer)."
+    },
+    {
+     "format": "word_formation",
+     "items": 10,
+     "points": 10.0,
+     "note": "Phần III: biến đổi từ gốc cho sẵn."
+    },
+    {
+     "format": "error_id",
+     "items": 10,
+     "points": 10.0,
+     "note": "Phần IV: tìm và SỬA lỗi từ vựng/ngữ pháp trong mỗi câu."
+    },
+    {
+     "format": "key_word",
+     "items": 10,
+     "points": 10.0,
+     "note": "Phần V: hoàn thành câu với từ cho sẵn sao cho nghĩa không đổi."
+    },
+    {
+     "format": "cloze",
+     "items": 10,
+     "points": 10.0,
+     "note": "Phần VI: đoạn văn, 10 chỗ trống trắc nghiệm 4 lựa chọn."
+    },
+    {
+     "format": "open_cloze",
+     "items": 10,
+     "points": 10.0,
+     "note": "Phần VII: đoạn văn, điền 1 từ thích hợp."
+    },
+    {
+     "format": "reading_mcq",
+     "items": 10,
+     "points": 10.0,
+     "note": "Phần VIII: đọc hiểu dạng trắc nghiệm/nối/điền (matching, gap-fill có thể xuất hiện)."
+    },
+    {
+     "format": "transformation",
+     "items": 10,
+     "points": 5.0,
+     "note": "Phần IX: viết lại câu theo từ gợi ý in hoa hoặc phần mở đầu cho sẵn, 0,5đ/câu."
+    },
+    {
+     "format": "essay",
+     "items": 1,
+     "points": 15.0,
+     "note": "Phần X: bài luận khoảng 250 từ."
+    }
+   ],
+   "sample_links": [
+    "https://thuvienphapluat.vn/hoi-dap-phap-luat/cau-truc-de-thi-vao-lop-10-nam-2026-da-nang-the-nao-138081898.html",
+    "https://storage-vnportal.vnpt.vn/qnm-ubnd/6141/ẢNH/2081.cau truc de tuyen sinh 10-1-8.pdf",
+    "https://doctailieu.com/de-thi-vao-10-mon-tieng-anh-quang-nam"
+   ]
+  }
+ },
+ "formulas": {
+  "so": {
+   "w": {
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 3.0
+   },
+   "paper": "so",
+   "text": "Điểm xét tuyển lớp chuyên = Ngữ văn + Toán + Ngoại ngữ (chung) + Điểm bài thi môn chuyên × 3 (mỗi bài thang 10; không cộng điểm ưu tiên/khuyến khích, không tuyển thẳng năm 2026)",
+   "max": 60
+  }
+ },
+ "m3_label": null,
+ "exams": {
+  "so": {
+   "label": "Kỳ thi của Sở GD&ĐT Đà Nẵng",
+   "date": "23–25/5/2026 (22/5 làm thủ tục). Sáng 23/5 Ngữ văn 120'; chiều 23/5 Ngoại ngữ 60' (từ 14h30); sáng 24/5 Toán 120'; sáng 25/5 môn chuyên 150' (từ 8h00). Công bố điểm thi và điểm chuẩn tối 8/6/2026.",
+   "rule": "2026: tối đa 2 nguyện vọng vào 2 trường chuyên khác nhau trong 3 trường (Lê Quý Đôn, Lê Thánh Tông, Nguyễn Bỉnh Khiêm), nhưng phải CÙNG một lớp chuyên (ví dụ chuyên Anh LQĐ NV1, chuyên Anh LTT NV2). Đồng thời được đăng ký tối đa 2 nguyện vọng trường công lập không chuyên. Không có thông tin xét lớp chuyên Pháp/Nhật bằng điểm Anh (thí sinh Pháp/Nhật thi ngoại ngữ chung bằng tiếng đó). Trước 2026, Quảng Nam cho đăng ký tối đa 2 môn chuyên (khác buổi thi); Đà Nẵng cũ (2018) mỗi học sinh chỉ đăng ký 1 môn chuyên. Cách tính điểm chuẩn NV2 lớp chuyên 2026: chưa tìm được."
+  }
+ },
+ "nv2_exam": null,
+ "nv_rule": "2026: tối đa 2 nguyện vọng vào 2 trường chuyên khác nhau trong 3 trường (Lê Quý Đôn, Lê Thánh Tông, Nguyễn Bỉnh Khiêm), nhưng phải CÙNG một lớp chuyên (ví dụ chuyên Anh LQĐ NV1, chuyên Anh LTT NV2). Đồng thời được đăng ký tối đa 2 nguyện vọng trường công lập không chuyên. Không có thông tin xét lớp chuyên Pháp/Nhật bằng điểm Anh (thí sinh Pháp/Nhật thi ngoại ngữ chung bằng tiếng đó). Trước 2026, Quảng Nam cho đăng ký tối đa 2 môn chuyên (khác buổi thi); Đà Nẵng cũ (2018) mỗi học sinh chỉ đăng ký 1 môn chuyên. Cách tính điểm chuẩn NV2 lớp chuyên 2026: chưa tìm được.",
+ "options": [
+  {
+   "id": "so-chuyen-le-quy-don-anh",
+   "sk": "so-chuyen-le-quy-don",
+   "school": "THPT chuyên Lê Quý Đôn",
+   "area": "Đà Nẵng",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2025,
+    2026
+   ],
+   "cut": [
+    42.7,
+    42.95
+   ],
+   "scale": 60,
+   "quota": {
+    "2025": 35,
+    "2026": 70
+   },
+   "note": "Chỉ tiêu 2026 = 2 lớp/70 theo bảng tuyensinh247 (bảng 12 lớp/395 HS; 395 + 315 + 315 = 1.025 khớp tổng chỉ tiêu 3 trường nên suy ra bảng này là của LQĐ). 2025: 35 HS trúng tuyển, 1.243 thí sinh đăng ký toàn trường. Điểm 2022 là điểm cho học sinh Đà Nẵng (SGGP). Thang 60 có nguồn cho 2025–2026; 2022–2024 rất có thể cũng thang 60 (môn chuyên hệ số 3 từ 2018) nhưng chưa có văn bản năm đó."
+  },
+  {
+   "id": "so-chuyen-nguyen-binh-khiem-anh",
+   "sk": "so-chuyen-nguyen-binh-khiem",
+   "school": "THPT chuyên Nguyễn Bỉnh Khiêm",
+   "area": "Quảng Nam",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2026
+   ],
+   "cut": [
+    38.05
+   ],
+   "scale": 60,
+   "quota": {
+    "2026": 35
+   },
+   "note": "Chỉ tiêu 35/lớp, 9 lớp chuyên (tuyensinh247; 315 suy từ tổng 1.025). Điểm 2025 là kỳ thi riêng của Quảng Nam cũ, thang điểm/công thức chưa xác minh — không so trực tiếp với 2026. 2024: nguồn ghi 'Xét tuyển'/không có số. Chỉ có lớp ngoại ngữ là chuyên Anh."
+  },
+  {
+   "id": "so-chuyen-le-thanh-tong-anh",
+   "sk": "so-chuyen-le-thanh-tong",
+   "school": "THPT chuyên Lê Thánh Tông",
+   "area": "Quảng Nam",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2026
+   ],
+   "cut": [
+    39.55
+   ],
+   "scale": 60,
+   "quota": {
+    "2026": 35
+   },
+   "note": "Điểm 2025 (42,15) chỉ thấy ở một nguồn tổng hợp (dienmaycholon), thang điểm Quảng Nam cũ chưa xác minh. Chỉ tiêu 35/lớp, 9 lớp chuyên. Chỉ có lớp ngoại ngữ là chuyên Anh."
+  }
+ ],
+ "paper": {
+  "map": "B2",
+  "label": "đề chuyên Anh của Sở Đà Nẵng",
+  "ac_add": 2.5,
+  "ac_cap": 10,
+  "ac_label": "Anh chung (đề chung)",
+  "difficulty": "B2",
+  "difficulty_evidence": "ƯỚC LƯỢNG, chưa có nhận xét giáo viên/báo về đề chuyên Anh Đà Nẵng 2026. Căn cứ dạng bài: sửa lỗi, key word transformation, open cloze, word formation, essay 250 từ — tương đương độ khó đề chuyên Anh phổ biến ở mức B2 (có câu khó tới C1). Cấu trúc theo Thông báo 2081/SGDĐT-GDTrH&HSSV (dẫn qua Thư viện Pháp luật), áp dụng cho kỳ thi 2026-2027.",
+  "minutes": 150,
+  "has_listening": false,
+  "essay_words": 250,
+  "sections": [
+   {
+    "format": "sentence_completion",
+    "items": 20,
+    "points": null,
+    "note": "Phần I: trắc nghiệm 4 lựa chọn ngữ pháp/từ vựng. Nguồn ghi 1,0đ/câu nhưng như vậy tổng các phần là 110 > 100 đã công bố; điểm phần này chưa xác định."
+   },
+   {
+    "format": "open_cloze",
+    "items": 10,
+    "points": 10.0,
+    "note": "Phần II: câu đơn lẻ, điền 1 từ vào chỗ trống (short answer)."
+   },
+   {
+    "format": "word_formation",
+    "items": 10,
+    "points": 10.0,
+    "note": "Phần III: biến đổi từ gốc cho sẵn."
+   },
+   {
+    "format": "error_id",
+    "items": 10,
+    "points": 10.0,
+    "note": "Phần IV: tìm và SỬA lỗi từ vựng/ngữ pháp trong mỗi câu."
+   },
+   {
+    "format": "key_word",
+    "items": 10,
+    "points": 10.0,
+    "note": "Phần V: hoàn thành câu với từ cho sẵn sao cho nghĩa không đổi."
+   },
+   {
+    "format": "cloze",
+    "items": 10,
+    "points": 10.0,
+    "note": "Phần VI: đoạn văn, 10 chỗ trống trắc nghiệm 4 lựa chọn."
+   },
+   {
+    "format": "open_cloze",
+    "items": 10,
+    "points": 10.0,
+    "note": "Phần VII: đoạn văn, điền 1 từ thích hợp."
+   },
+   {
+    "format": "reading_mcq",
+    "items": 10,
+    "points": 10.0,
+    "note": "Phần VIII: đọc hiểu dạng trắc nghiệm/nối/điền (matching, gap-fill có thể xuất hiện)."
+   },
+   {
+    "format": "transformation",
+    "items": 10,
+    "points": 5.0,
+    "note": "Phần IX: viết lại câu theo từ gợi ý in hoa hoặc phần mở đầu cho sẵn, 0,5đ/câu."
+   },
+   {
+    "format": "essay",
+    "items": 1,
+    "points": 15.0,
+    "note": "Phần X: bài luận khoảng 250 từ."
+   }
+  ],
+  "sample_links": [
+   "https://thuvienphapluat.vn/hoi-dap-phap-luat/cau-truc-de-thi-vao-lop-10-nam-2026-da-nang-the-nao-138081898.html",
+   "https://storage-vnportal.vnpt.vn/qnm-ubnd/6141/ẢNH/2081.cau truc de tuyen sinh 10-1-8.pdf",
+   "https://doctailieu.com/de-thi-vao-10-mon-tieng-anh-quang-nam"
+  ]
+ },
+ "exam_2026": {
+  "dates": "23–25/5/2026 (22/5 làm thủ tục). Sáng 23/5 Ngữ văn 120'; chiều 23/5 Ngoại ngữ 60' (từ 14h30); sáng 24/5 Toán 120'; sáng 25/5 môn chuyên 150' (từ 8h00). Công bố điểm thi và điểm chuẩn tối 8/6/2026.",
+  "organisation": "một đề chung cho cả thành phố mới (Đà Nẵng + Quảng Nam cũ): một lịch thi, một cấu trúc đề do Sở ban hành, xét chung 3 trường chuyên với tối đa 2 nguyện vọng giữa 3 trường",
+  "common_subjects": [
+   "Ngữ văn",
+   "Toán",
+   "Ngoại ngữ (Tiếng Anh; Tiếng Pháp/Nhật nếu đăng ký lớp chuyên Pháp/Nhật)"
+  ],
+  "notes": "Năm đầu sau sáp nhập: 4.162 thí sinh đăng ký 3 trường chuyên (4.109 dự thi môn chuyên), tổng chỉ tiêu 3 trường chuyên 1.025. 42.981 thí sinh đăng ký 70 trường công lập. Môn ngoại ngữ chung 2026 là đề 60 phút, trắc nghiệm + tự luận, 4 phần (Use of English 4,5đ/18 câu; Reading 3,0đ/12 câu; Communication 0,5đ/2 câu; Writing 2,0đ/4 câu), không có nghe. Tỷ lệ bài Tiếng Anh chung ≥5 điểm: 65,41%; 1.334 điểm 10. Kế hoạch tuyển sinh theo Quyết định 883/QĐ-UBND ngày 13/3/2026 (theo tuyensinh247); lịch thi theo Công văn 1215/SGDĐT-QLCL."
+ },
+ "plan_2027": null,
+ "stories": [
+  {
+   "title": "Quảng Nam: Nữ thủ khoa chia sẻ bí quyết học bài, đi thi đạt điểm cao",
+   "who": "học sinh",
+   "year": 2023,
+   "school": "THPT chuyên Nguyễn Bỉnh Khiêm",
+   "summary": "Nguyễn Thị Mai Huyền (lớp 12/4, chuyên Nguyễn Bỉnh Khiêm) đạt 9,8 Tiếng Anh trong kỳ thi tốt nghiệp THPT 2023. Đây là chia sẻ cấp THPT, không phải thi vào 10, nhưng cho thấy cách học của học sinh trường chuyên này.",
+   "takeaways": [
+    "Lên kế hoạch cụ thể cho từng môn, có giờ ôn, giờ làm đề",
+    "Nắm chắc kiến thức cốt lõi trước khi làm bài nâng cao",
+    "Ghi sổ lỗi sai, làm lại câu sai đến khi không sai nữa",
+    "Giữ tâm lý thoải mái khi vào phòng thi"
+   ],
+   "url": "https://daidoanket.vn/quang-nam-nu-thu-khoa-chia-se-bi-quyet-hoc-bai-de-thi-dat-diem-cao-10256817.html"
+  },
+  {
+   "title": "Vượt qua 2 vòng thi mới đậu vào trường Lê Quý Đôn",
+   "who": "báo",
+   "year": 2018,
+   "school": "THPT chuyên Lê Quý Đôn",
+   "summary": "Bài báo mô tả quy trình tuyển sinh LQĐ Đà Nẵng năm 2018: vòng 1 sơ tuyển hồ sơ (100 điểm), vòng 2 thi 4 môn với môn chuyên hệ số 3. Lớp chuyên ngoại ngữ gồm Anh, Pháp, Nhật. Quy trình nay đã khác nhưng hệ số 3 vẫn giữ.",
+   "takeaways": [
+    "Môn chuyên hệ số 3 đã được giữ nhiều năm, nên bài chuyên Anh quyết định kết quả",
+    "Thành tích HSG lớp 9 từng là điều kiện và nay vẫn là tiêu chí phụ khi bằng điểm"
+   ],
+   "url": "https://giaoduc.net.vn/vuot-qua-2-vong-thi-moi-dau-vao-truong-le-quy-don-post184767.gd"
+  }
+ ],
+ "prep_tips": [
+  "Bài chuyên Anh nhân 3 (30/60 điểm), nên ưu tiên thời gian cho đề chuyên; bài Ngoại ngữ chung 60 phút ở mức cơ bản (nguồn: thethao247, tuyensinh247 2026).",
+  "Đề chuyên 2026 không có nghe: dồn thời gian cho ngữ pháp/từ vựng (Phần I có 20 câu), điền từ, word formation, sửa lỗi và key word transformation (nguồn: Thông báo 2081 qua Thư viện Pháp luật).",
+  "Luyện bài luận khoảng 250 từ trong 30–35 phút; phần luận chiếm 15/100 điểm, là phần nặng nhất (nguồn: cấu trúc đề 2026).",
+  "Dạng sửa lỗi phải SỬA, không chỉ khoanh lỗi; dạng key word phải giữ nguyên nghĩa câu — cần luyện riêng hai dạng này (nguồn: cấu trúc đề 2026).",
+  "Điều kiện cứng: điểm TB môn Tiếng Anh cả năm lớp 9 ≥ 6,5; học lực và hạnh kiểm Khá trở lên; môn chuyên ≥ 3,0 và mỗi môn chung ≥ 2,0 (nguồn: tuyensinh247, thethao247).",
+  "Đặt NV2 sang chuyên Anh của trường chuyên khác (ví dụ LQĐ → LTT/NBK); năm 2026 điểm chuẩn chuyên Anh LQĐ 42,95, LTT 39,55, NBK 38,05 (nguồn: tuyensinh247, thethao247)."
+ ],
+ "confidence": "medium",
+ "gaps": [
+  "Điểm chuẩn chuyên Anh LQĐ năm 2023 (chỉ biết Nhật 48, Hóa 38).",
+  "Công thức và thang điểm xét tuyển chuyên của Quảng Nam cũ (NBK, LTT) 2022–2025; điểm chuẩn chuyên Anh NBK/LTT 2022–2024.",
+  "Điểm chuẩn chuyên Anh LTT 2025 (42,15) chỉ có 1 nguồn tổng hợp.",
+  "Điểm 2024 chuyên Nhật (45,45, trùng 2022) và chuyên Pháp (38,55) cần đối chiếu bảng gốc của Sở (báo đăng dạng ảnh).",
+  "Số thí sinh đăng ký chuyên Anh từng trường; điểm chuẩn NV2 lớp chuyên 2026.",
+  "Phân bổ điểm Phần I đề chuyên Anh 2026 (nguồn ghi tổng 100 nhưng cộng các phần ra 110); đề chuyên Anh 2026 thật và đáp án.",
+  "Nhận xét độ khó đề chuyên Anh của giáo viên/báo (CEFR hiện là ước lượng).",
+  "Kế hoạch tuyển sinh 2027 chưa thấy công bố (tính đến 23/10/2026).",
+  "Chia sẻ kinh nghiệm thi vào chuyên Anh có thật còn ít (mới 2 mục, 1 mục không phải thi vào 10).",
+  "Phiên nghiên cứu hết hạn mức WebSearch giữa chừng — nên tìm thêm ở lần sau."
+ ],
+ "sources": [
+  {
+   "title": "Tuyensinh247 – Tuyển sinh lớp 10 Đà Nẵng 2026 (lịch thi, công thức, NV, chỉ tiêu, điều kiện)",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/da-nang-p24.html"
+  },
+  {
+   "title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 Đà Nẵng 2024–2026",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/da-nang-p24.html"
+  },
+  {
+   "title": "Tuyensinh247 – THPT chuyên Lê Quý Đôn Đà Nẵng",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-le-quy-don-2404.html"
+  },
+  {
+   "title": "Tuyensinh247 – THPT chuyên Nguyễn Bỉnh Khiêm",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-nguyen-binh-khiem-2430.html"
+  },
+  {
+   "title": "Tuyensinh247 – THPT chuyên Lê Thánh Tông",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-le-thanh-tong-4120.html"
+  },
+  {
+   "title": "Thethao247 – Điểm chuẩn vào lớp 10 Đà Nẵng 2026 chính thức",
+   "url": "https://thethao247.vn/494-diem-chuan-vao-lop-10-da-nang-2026-chinh-thuc-phan-chau-trinh-dan-dau-khoi-cong-lap-d423345.html"
+  },
+  {
+   "title": "Điện Máy Chợ Lớn – Điểm chuẩn lớp 10 Đà Nẵng 2026-2027",
+   "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-da-nang"
+  },
+  {
+   "title": "Báo Đà Nẵng – Công bố điểm chuẩn tuyển sinh lớp 10 năm học 2026-2027",
+   "url": "https://baodanang.vn/da-nang-cong-bo-diem-chuan-ky-thi-tuyen-sinh-lop-10-nam-hoc-2026-2027-3339798.html"
+  },
+  {
+   "title": "VietnamPlus – Đà Nẵng công bố điểm chuẩn lớp 10 năm học 2026-2027",
+   "url": "https://www.vietnamplus.vn/da-nang-cong-bo-diem-chuan-tuyen-sinh-lop-10-nam-hoc-2026-2027-post1115299.vnp"
+  },
+  {
+   "title": "Tiền Phong – Thi vào lớp 10 ở Đà Nẵng: Ngữ văn 'trắng' 10",
+   "url": "https://tienphong.vn/thi-vao-lop-10-o-da-nang-ngu-van-trang-10-toan-chi-31-em-dat-diem-tuyet-doi-post1849806.tpo"
+  },
+  {
+   "title": "Thư viện Pháp luật – Cấu trúc đề thi vào lớp 10 năm 2026 Đà Nẵng",
+   "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/cau-truc-de-thi-vao-lop-10-nam-2026-da-nang-the-nao-138081898.html"
+  },
+  {
+   "title": "Sở GDĐT Đà Nẵng – Cấu trúc đề tuyển sinh 10 (Thông báo 2081, phần đề chung)",
+   "url": "https://storage-vnportal.vnpt.vn/qnm-ubnd/6141/ẢNH/2081.cau truc de tuyen sinh 10-1-8.pdf"
+  },
+  {
+   "title": "Thư viện Pháp luật – Đà Nẵng thi vào lớp 10 2026-2027 ngày nào",
+   "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/da-nang-thi-vao-lop-10-20262027-ngay-nao-138085710.html"
+  },
+  {
+   "title": "SGGP – Đà Nẵng công bố điểm chuẩn tuyển sinh lớp 10 năm 2022-2023",
+   "url": "https://www.sggp.org.vn/da-nang-cong-bo-diem-chuan-tuyen-sinh-lop-10-thpt-nam-2022-2023-post641487.html"
+  },
+  {
+   "title": "Nhân Dân – Điểm chuẩn lớp 10 Đà Nẵng 2023 (cao nhất 58,13)",
+   "url": "https://nhandan.vn/diem-chuan-vao-lop-10-cong-lap-tai-da-nang-cao-nhat-la-5813-diem-post758806.html"
+  },
+  {
+   "title": "Công Luận – Đà Nẵng công bố điểm thi lớp 10 và điểm chuẩn vào trường chuyên (2025)",
+   "url": "https://congluan.vn/da-nang-cong-bo-diem-thi-lop-10-va-diem-chuan-vao-truong-chuyen-post295290.html"
+  },
+  {
+   "title": "SGGP – Hơn 11.600 thí sinh Đà Nẵng bước vào kỳ thi lớp 10 năm học 2025-2026",
+   "url": "https://www.sggp.org.vn/hon-11600-thi-sinh-da-nang-buoc-vao-ky-thi-tuyen-sinh-lop-10-thpt-nam-hoc-2025-2026-post797777.html"
+  },
+  {
+   "title": "Tuổi Trẻ – Quảng Nam công bố điểm chuẩn lớp 10 (2025)",
+   "url": "https://muctim.tuoitre.vn/quang-nam-cong-bo-diem-chuan-lop-10-cao-nhat-la-truong-thpt-tran-cao-van-101250618175713528.htm"
+  },
+  {
+   "title": "Giáo dục Việt Nam – Vượt qua 2 vòng thi mới đậu vào trường Lê Quý Đôn (2018)",
+   "url": "https://giaoduc.net.vn/vuot-qua-2-vong-thi-moi-dau-vao-truong-le-quy-don-post184767.gd"
+  },
+  {
+   "title": "Thư viện Pháp luật – Hướng dẫn tuyển sinh 10 Đà Nẵng 2024",
+   "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2024/TTNH/thang3/hd-tuyen-sinh-10.pdf"
+  },
+  {
+   "title": "Đại Đoàn Kết – Nữ thủ khoa Quảng Nam chia sẻ bí quyết",
+   "url": "https://daidoanket.vn/quang-nam-nu-thu-khoa-chia-se-bi-quyet-hoc-bai-de-thi-dat-diem-cao-10256817.html"
+  }
+ ],
+ "formula_raw": {
+  "text": "Điểm xét tuyển lớp chuyên = Ngữ văn + Toán + Ngoại ngữ (chung) + Điểm bài thi môn chuyên × 3 (mỗi bài thang 10; không cộng điểm ưu tiên/khuyến khích, không tuyển thẳng năm 2026)",
+  "parts": [
+   "Ngữ văn",
+   "Toán",
+   "Ngoại ngữ (chung)",
+   "Anh chuyên×3"
+  ],
+  "max": 60,
+  "conditions": "Mỗi bài thi môn chung ≥ 2,0 điểm và bài thi môn chuyên ≥ 3,0 điểm (thethao247). Dự tuyển: hạnh kiểm và học lực lớp 9 từ Khá trở lên; điểm trung bình cả năm lớp 9 môn đăng ký chuyên ≥ 6,50 (tuyensinh247). Thí sinh lớp chuyên Pháp/Nhật thi môn Ngoại ngữ chung bằng chính tiếng Pháp/Nhật. Bằng điểm ở ngưỡng cuối xét tiêu chí phụ (điểm môn chuyên, thành tích HSG lớp 9, điểm TB môn chuyên lớp 9 — theo Công Luận 2025; một số lớp có tiêu chí riêng, ví dụ chuyên Văn LQĐ 2026 cần môn chuyên ≥5,75 và giải HSG thành phố).",
+  "formula_by_year": {
+   "2018": "Đà Nẵng (LQĐ): Toán, Văn, Ngoại ngữ hệ số 1 + môn chuyên hệ số 3; có vòng sơ tuyển hồ sơ 100 điểm (giaoduc.net.vn 2018).",
+   "2025": "Đà Nẵng (LQĐ): ĐXT = Toán + Ngữ văn + Ngoại ngữ + Môn chuyên × 3 + ưu tiên (nếu có) — theo tuyensinh247. Quảng Nam (NBK, LTT): công thức chưa xác minh; thí sinh được đăng ký tối đa 2 môn chuyên khác buổi.",
+   "2026": "Toàn thành phố mới: Văn + Toán + Ngoại ngữ + Chuyên × 3 (max 60), không ưu tiên/khuyến khích."
+  }
+ },
+ "schools_raw": [
+  {
+   "name": "THPT chuyên Lê Quý Đôn",
+   "old_province": "Đà Nẵng",
+   "city": "Đà Nẵng (01 Vũ Văn Dũng, phường An Hải)",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2025": 35,
+      "2026": 70
+     },
+     "applicants": {},
+     "cut": {
+      "2022": 44.83,
+      "2023": null,
+      "2024": 44.38,
+      "2025": 42.7,
+      "2026": 42.95
+     },
+     "scale": {
+      "2025": 60,
+      "2026": 60
+     },
+     "note": "Chỉ tiêu 2026 = 2 lớp/70 theo bảng tuyensinh247 (bảng 12 lớp/395 HS; 395 + 315 + 315 = 1.025 khớp tổng chỉ tiêu 3 trường nên suy ra bảng này là của LQĐ). 2025: 35 HS trúng tuyển, 1.243 thí sinh đăng ký toàn trường. Điểm 2022 là điểm cho học sinh Đà Nẵng (SGGP). Thang 60 có nguồn cho 2025–2026; 2022–2024 rất có thể cũng thang 60 (môn chuyên hệ số 3 từ 2018) nhưng chưa có văn bản năm đó."
+    },
+    {
+     "lang": "Pháp",
+     "admit_by_english": false,
+     "quota": {
+      "2025": 10,
+      "2026": 15
+     },
+     "cut": {
+      "2022": 29.85,
+      "2024": 38.55,
+      "2025": 39.85,
+      "2026": 41.5
+     },
+     "note": "Tuyensinh247 có 2 dòng chuyên Pháp; 38,55 (2024) cần đối chiếu. Thi ngoại ngữ chung bằng tiếng Pháp."
+    },
+    {
+     "lang": "Nhật",
+     "admit_by_english": false,
+     "quota": {
+      "2025": 10,
+      "2026": 15
+     },
+     "cut": {
+      "2022": 45.45,
+      "2023": 48.0,
+      "2024": 45.45,
+      "2025": 42.4,
+      "2026": 43.68
+     },
+     "note": "2023: 48 là điểm chuẩn cao nhất toàn trường (Nhân Dân). Số 2024 (45,45) trùng hệt 2022 — nghi trùng dữ liệu tuyensinh247, cần đối chiếu. 2025: 10 HS trúng tuyển. Thi ngoại ngữ chung bằng tiếng Nhật."
+    }
+   ]
+  },
+  {
+   "name": "THPT chuyên Nguyễn Bỉnh Khiêm",
+   "old_province": "Quảng Nam",
+   "city": "Tam Kỳ (02 Trần Phú, phường Tân Thạnh)",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2026": 35
+     },
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": null,
+      "2024": null,
+      "2025": 41.03,
+      "2026": 38.05
+     },
+     "scale": {
+      "2026": 60
+     },
+     "note": "Chỉ tiêu 35/lớp, 9 lớp chuyên (tuyensinh247; 315 suy từ tổng 1.025). Điểm 2025 là kỳ thi riêng của Quảng Nam cũ, thang điểm/công thức chưa xác minh — không so trực tiếp với 2026. 2024: nguồn ghi 'Xét tuyển'/không có số. Chỉ có lớp ngoại ngữ là chuyên Anh."
+    }
+   ]
+  },
+  {
+   "name": "THPT chuyên Lê Thánh Tông",
+   "old_province": "Quảng Nam",
+   "city": "Hội An (đường Trường Chinh)",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2026": 35
+     },
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": null,
+      "2024": null,
+      "2025": 42.15,
+      "2026": 39.55
+     },
+     "scale": {
+      "2026": 60
+     },
+     "note": "Điểm 2025 (42,15) chỉ thấy ở một nguồn tổng hợp (dienmaycholon), thang điểm Quảng Nam cũ chưa xác minh. Chỉ tiêu 35/lớp, 9 lớp chuyên. Chỉ có lớp ngoại ngữ là chuyên Anh."
+    }
+   ]
+  }
+ ],
+ "goals": [
+  {
+   "k": "so-chuyen-le-quy-don",
+   "name": "chuyên Lê Quý Đôn",
+   "score": 6.5,
+   "paper": "so",
+   "need_tv_more": false
+  },
+  {
+   "k": "so-chuyen-le-thanh-tong",
+   "name": "chuyên Lê Thánh Tông",
+   "score": 5.7,
+   "paper": "so",
+   "need_tv_more": false
+  },
+  {
+   "k": "so-chuyen-nguyen-binh-khiem",
+   "name": "chuyên Nguyễn Bỉnh Khiêm",
+   "score": 5.3,
+   "paper": "so",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "so-chuyen-le-thanh-tong"
+}

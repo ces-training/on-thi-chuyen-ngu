@@ -1,0 +1,292 @@
+{
+ "slug": "khanh-hoa",
+ "name": "Khánh Hòa",
+ "merged_from": [
+  "Khánh Hòa",
+  "Ninh Thuận"
+ ],
+ "edition": "Bản Khánh Hòa",
+ "exam_md": [
+  5,
+  29
+ ],
+ "papers": {
+  "so": {
+   "map": "B2",
+   "label": "đề chuyên Anh của Sở Khánh Hòa",
+   "ac_add": 2.5,
+   "ac_cap": 10,
+   "ac_label": "Anh chung (đề chung)",
+   "difficulty": null,
+   "difficulty_evidence": "Chưa tìm được đề chuyên Anh Lê Quý Đôn Khánh Hòa/Ninh Thuận hay nhận xét của giáo viên. Bài chuyên năm 2026 là tự luận 150 phút (Báo Văn Hóa, Nhân Dân). Điểm chuẩn chuyên Anh Nam Nha Trang 2026 = 47,10/60 trong khi mọi bài phải ≥ 5 → thí sinh đỗ cần trung bình khoảng 7,85/bài quy đổi.",
+   "minutes": 150,
+   "has_listening": null,
+   "essay_words": null,
+   "sections": [],
+   "sample_links": []
+  }
+ },
+ "formulas": {
+  "so": {
+   "w": {
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 3.0
+   },
+   "paper": "so",
+   "text": "Điểm xét tuyển lớp chuyên = Ngữ văn + Toán + Tiếng Anh + Điểm môn chuyên × 3 (mỗi bài thang 10); không cộng điểm ưu tiên, khuyến khích.",
+   "max": 60
+  }
+ },
+ "m3_label": null,
+ "exams": {
+  "so": {
+   "label": "Kỳ thi của Sở GD&ĐT Khánh Hòa",
+   "date": "28–29/5/2026 (tập trung 27/5 chiều). 28/5 sáng: Ngữ văn (tự luận, 120 phút); 28/5 chiều: Toán (trắc nghiệm + tự luận, 120 phút); 29/5 sáng: Tiếng Anh chung (trắc nghiệm + tự luận, 60 phút); 29/5 chiều: môn chuyên (tự luận, 150 phút; Tin học thi lập trình trên máy). Công bố điểm thi 8h ngày 8/6/2026; phúc khảo 14–19/6.",
+   "rule": "2026: mỗi thí sinh chỉ đăng ký 1 trường chuyên (Nam Nha Trang HOẶC Đông Hải) và 1 môn chuyên, kèm 2 nguyện vọng trường công lập không chuyên (NV1, NV2) trong vùng tuyển. Trượt chuyên thì được xét NV1, NV2 như thí sinh khác; đỗ chuyên không được vào trường công lập khác. NV2 trường thường phải cao hơn điểm chuẩn NV1 của trường đó ≥ 1,0. Có vòng bổ sung vào lớp Tin cho thí sinh trượt Toán/Lý/Hóa/Sinh. Không có lớp chuyên Pháp/ngoại ngữ khác ở trường chuyên (chương trình song ngữ Pháp ở THPT Nguyễn Văn Trỗi, không phải trường chuyên)."
+  }
+ },
+ "nv2_exam": null,
+ "nv_rule": "2026: mỗi thí sinh chỉ đăng ký 1 trường chuyên (Nam Nha Trang HOẶC Đông Hải) và 1 môn chuyên, kèm 2 nguyện vọng trường công lập không chuyên (NV1, NV2) trong vùng tuyển. Trượt chuyên thì được xét NV1, NV2 như thí sinh khác; đỗ chuyên không được vào trường công lập khác. NV2 trường thường phải cao hơn điểm chuẩn NV1 của trường đó ≥ 1,0. Có vòng bổ sung vào lớp Tin cho thí sinh trượt Toán/Lý/Hóa/Sinh. Không có lớp chuyên Pháp/ngoại ngữ khác ở trường chuyên (chương trình song ngữ Pháp ở THPT Nguyễn Văn Trỗi, không phải trường chuyên).",
+ "options": [
+  {
+   "id": "so-chuyen-le-quy-don-co-so-nam--anh",
+   "sk": "so-chuyen-le-quy-don-co-so-nam-",
+   "school": "THPT chuyên Lê Quý Đôn – cơ sở Nam Nha Trang",
+   "area": "Khánh Hòa",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2026
+   ],
+   "cut": [
+    47.1
+   ],
+   "scale": 60,
+   "quota": {
+    "2026": null
+   },
+   "note": "2026 là mức cao nhất trường (cùng Tin 46,93). Thang điểm 2022–2025 chưa xác minh (hệ số môn chuyên trước 2026 chưa rõ). 2024 có điều kiện điểm thi Tiếng Anh chuyên ≥ 5,25. 2021 trùng số 2022 trên hoatieu (có thể nhầm). 2025: dienmaycholon và tuyensinh247 cùng ghi 42,55."
+  },
+  {
+   "id": "so-chuyen-le-quy-don-co-so-dong-anh",
+   "sk": "so-chuyen-le-quy-don-co-so-dong",
+   "school": "THPT chuyên Lê Quý Đôn – cơ sở Đông Hải",
+   "area": "Ninh Thuận",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2026
+   ],
+   "cut": [
+    39.25
+   ],
+   "scale": 60,
+   "quota": {
+    "2026": null
+   },
+   "note": "Trước sáp nhập là THPT chuyên Lê Quý Đôn Ninh Thuận (số 2022 = năm học 2022-2023, công thức Ninh Thuận ×2, thang 50). 2026 dùng công thức Khánh Hòa ×3 (thang 60), nên không so sánh trực tiếp với các năm trước. Việc 'Đông Hải' = trường chuyên Ninh Thuận cũ suy ra từ địa danh, nguồn không ghi rõ."
+  }
+ ],
+ "paper": {
+  "map": "B2",
+  "label": "đề chuyên Anh của Sở Khánh Hòa",
+  "ac_add": 2.5,
+  "ac_cap": 10,
+  "ac_label": "Anh chung (đề chung)",
+  "difficulty": null,
+  "difficulty_evidence": "Chưa tìm được đề chuyên Anh Lê Quý Đôn Khánh Hòa/Ninh Thuận hay nhận xét của giáo viên. Bài chuyên năm 2026 là tự luận 150 phút (Báo Văn Hóa, Nhân Dân). Điểm chuẩn chuyên Anh Nam Nha Trang 2026 = 47,10/60 trong khi mọi bài phải ≥ 5 → thí sinh đỗ cần trung bình khoảng 7,85/bài quy đổi.",
+  "minutes": 150,
+  "has_listening": null,
+  "essay_words": null,
+  "sections": [],
+  "sample_links": []
+ },
+ "exam_2026": {
+  "dates": "28–29/5/2026 (tập trung 27/5 chiều). 28/5 sáng: Ngữ văn (tự luận, 120 phút); 28/5 chiều: Toán (trắc nghiệm + tự luận, 120 phút); 29/5 sáng: Tiếng Anh chung (trắc nghiệm + tự luận, 60 phút); 29/5 chiều: môn chuyên (tự luận, 150 phút; Tin học thi lập trình trên máy). Công bố điểm thi 8h ngày 8/6/2026; phúc khảo 14–19/6.",
+  "organisation": "một đề chung cho cả tỉnh mới — Sở GD&ĐT Khánh Hòa tổ chức một kỳ thi toàn tỉnh tại 59 điểm thi (24.853 thí sinh), gồm thi vào THPT chuyên Lê Quý Đôn hai cơ sở (Nam Nha Trang – Khánh Hòa cũ; Đông Hải – Ninh Thuận cũ) và các trường công lập thi tuyển.",
+  "common_subjects": [
+   "Ngữ văn",
+   "Toán",
+   "Tiếng Anh"
+  ],
+  "notes": "Kế hoạch tuyển sinh phê duyệt theo QĐ 816/QĐ-UBND ngày 12/3/2026. Năm đầu tuyển sinh chung sau khi Ninh Thuận nhập vào Khánh Hòa. Chuyên: 525 chỉ tiêu cho 2 cơ sở/2 trường chuyên; 1.897 thí sinh đăng ký thi chuyên (Nhân Dân 27/5/2026). Công lập không chuyên: ~19.045 chỉ tiêu. Một số trường miền núi và PTDTNT xét tuyển."
+ },
+ "plan_2027": null,
+ "stories": [
+  {
+   "title": "Gần 1.900 thí sinh tranh 525 chỉ tiêu chuyên trong kỳ thi chung đầu tiên sau sáp nhập",
+   "who": "báo",
+   "year": 2026,
+   "school": "THPT chuyên Lê Quý Đôn (2 cơ sở)",
+   "summary": "Năm 2026 Khánh Hòa tổ chức một kỳ thi chung cho cả tỉnh mới tại 59 điểm thi; 1.897 học sinh đăng ký thi vào 2 trường chuyên với 525 chỉ tiêu. Bài môn chuyên thi chiều 29/5, sau buổi thi Tiếng Anh chung buổi sáng.",
+   "takeaways": [
+    "Ngày 29/5 thi liền Tiếng Anh chung (sáng) và môn chuyên (chiều) – cần luyện sức bền làm 2 bài tiếng Anh trong 1 ngày",
+    "Chỉ được chọn 1 cơ sở chuyên – cân nhắc mặt bằng điểm: Nam Nha Trang 47,10 vs Đông Hải 39,25 (2026)"
+   ],
+   "url": "https://nhandan.vn/ocop/khanh-hoa-chuan-bi-chu-dao-ky-thi-tuyen-sinh-lop-10-post965086.html"
+  },
+  {
+   "title": "Điểm chuẩn chuyên Anh Nam Nha Trang tăng vọt khi đổi sang hệ số 3",
+   "who": "báo",
+   "year": 2026,
+   "school": "THPT chuyên Lê Quý Đôn – Nam Nha Trang",
+   "summary": "Bảng điểm chuẩn tổng hợp cho thấy chuyên Anh Nam Nha Trang từ 39,5 (2024) và 42,55 (2025) lên 47,10 năm 2026, cao nhất trường; cơ sở Đông Hải lấy 39,25.",
+   "takeaways": [
+    "Với hệ số 3, mỗi 0,25 điểm bài chuyên = 0,75 điểm xét tuyển – bài chuyên Anh quyết định",
+    "Không được có bài nào dưới 5 – không bỏ Toán, Văn"
+   ],
+   "url": "https://hoatieu.vn/diem-chuan-lop-10-khanh-hoa-208440"
+  }
+ ],
+ "prep_tips": [
+  "Bài chuyên nhân hệ số 3 trên tổng 60 → bài chuyên Anh chiếm 50% điểm xét (tuyensinh247 kế hoạch 2026; Luật Minh Khuê).",
+  "Điều kiện cứng: mọi bài ≥ 5,0 và ĐTB Tiếng Anh lớp 9 ≥ 7,0; học Tiếng Anh liên tục 4 năm THCS (tuyensinh247).",
+  "Bài Tiếng Anh chung 2026 gồm trắc nghiệm + tự luận trong 60 phút; bài chuyên là tự luận 150 phút (Báo Văn Hóa, Nhân Dân 5/2026).",
+  "Hòa điểm xét điểm bài chuyên rồi ĐTB môn Anh lớp 9 → 8 → 7 → 6: giữ điểm tổng kết Tiếng Anh cao từ lớp 6 (tuyensinh247)."
+ ],
+ "confidence": "medium",
+ "gaps": [
+  "Cấu trúc đề chuyên Anh Lê Quý Đôn (Khánh Hòa và Ninh Thuận cũ): số phần, có nghe hay không, độ dài bài viết – chưa tìm được; chưa có link đề.",
+  "Điểm chuẩn chuyên Anh Nam Nha Trang 2023; Ninh Thuận cũ 2023, 2024, 2025 (bảng chỉ có trong ảnh).",
+  "Công thức/hệ số chuyên của Khánh Hòa cũ 2022–2025 chưa xác minh, nên thang điểm chuẩn các năm đó để trống.",
+  "Chỉ tiêu riêng lớp Anh từng cơ sở và số thí sinh thi chuyên Anh 2026.",
+  "Kế hoạch 2027 chưa công bố (tính đến 10/2026).",
+  "Chưa tìm được chia sẻ kinh nghiệm của học sinh/giáo viên (ngân sách tìm kiếm dùng hết)."
+ ],
+ "sources": [
+  {
+   "title": "Tuyensinh247 – Thông tin tuyển sinh lớp 10 Khánh Hòa 2026 (mục chuyên)",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/khanh-hoa-p32.html"
+  },
+  {
+   "title": "Tuyensinh247 – Điểm chuẩn lớp 10 Khánh Hòa",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/khanh-hoa-p32.html"
+  },
+  {
+   "title": "Hoatieu – Công bố điểm chuẩn lớp 10 năm 2026 Khánh Hòa",
+   "url": "https://hoatieu.vn/diem-chuan-lop-10-khanh-hoa-208440"
+  },
+  {
+   "title": "Điện máy Chợ Lớn – Điểm chuẩn lớp 10 Khánh Hòa (2024–2026)",
+   "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-tinh-khanh-hoa"
+  },
+  {
+   "title": "Luật Minh Khuê – Nguyên tắc xét tuyển lớp 10 tại Khánh Hòa 2026-2027",
+   "url": "https://luatminhkhue.vn/nguyen-tac-xet-tuyen-lop-10-tai-khanh-hoa-nhu-the-nao.aspx"
+  },
+  {
+   "title": "Thư viện pháp luật – Lịch thi vào 10 Khánh Hòa 2026-2027 (QĐ 816/QĐ-UBND)",
+   "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/lich-thi-vao-10-khanh-hoa-20262027-du-kien-ngay-may-138082861.html"
+  },
+  {
+   "title": "Báo Văn Hóa – Khánh Hòa: hơn 24.800 thí sinh bước vào kỳ thi lớp 10",
+   "url": "https://baovanhoa.vn/doi-song/khanh-hoa-hon-24800-thi-sinh-buoc-vao-ky-thi-tuyen-sinh-lop-10-232146.html"
+  },
+  {
+   "title": "Nhân Dân – Khánh Hòa chuẩn bị chu đáo kỳ thi tuyển sinh lớp 10",
+   "url": "https://nhandan.vn/ocop/khanh-hoa-chuan-bi-chu-dao-ky-thi-tuyen-sinh-lop-10-post965086.html"
+  },
+  {
+   "title": "Báo Lào Cai – Điểm thi, điểm chuẩn lớp 10 Khánh Hòa 2026",
+   "url": "https://baolaocai.vn/diem-thi-diem-chuan-lop-10-khanh-hoa-2026-cong-bo-tu-8h-sang-86-post901213.html"
+  },
+  {
+   "title": "Hoatieu – Điểm chuẩn lớp 10 Ninh Thuận (chuyên Lê Quý Đôn Ninh Thuận)",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-ninh-thuan-208885"
+  }
+ ],
+ "formula_raw": {
+  "text": "Điểm xét tuyển lớp chuyên = Ngữ văn + Toán + Tiếng Anh + Điểm môn chuyên × 3 (mỗi bài thang 10); không cộng điểm ưu tiên, khuyến khích.",
+  "parts": [
+   "Ngữ văn",
+   "Toán",
+   "Tiếng Anh (chung)",
+   "Anh chuyên×3"
+  ],
+  "max": 60,
+  "conditions": "Dự thi đủ các bài, MỌI bài (kể cả bài chuyên) đạt từ 5,0 trở lên; hạnh kiểm/học lực các năm THCS Khá trở lên; học Tiếng Anh liên tục 4 năm THCS; ĐTB cả năm lớp 9 môn Tiếng Anh ≥ 7,0 nếu thi chuyên Anh (Toán/Tin ≥ 8,0; Lý/Hóa/Sinh: KHTN ≥ 8,0). Hòa điểm: điểm thi môn chuyên cao hơn → ĐTB môn chuyên lớp 9 → lớp 8, 7, 6. Năm 2026 một số lớp có thêm điều kiện riêng (ví dụ Toán Nam Nha Trang: điểm thi Toán ≥ 6,5 và ĐTB Toán lớp 9 ≥ 9,8).",
+  "formula_by_year": {
+   "2026": "Văn + Toán + Anh + chuyên×3, tổng 60 (tuyensinh247 tổng hợp kế hoạch 2026; Luật Minh Khuê).",
+   "2022–2025 (Khánh Hòa cũ)": "Chưa xác minh công thức/hệ số. Năm 2024 có điều kiện điểm thi môn chuyên (ví dụ Tiếng Anh chuyên ≥ 5,25).",
+   "2022–2025 (Ninh Thuận cũ)": "Văn + Toán + Anh + môn chuyên×2, mọi bài > 2 (hoatieu, mô tả chung; thang 50)."
+  }
+ },
+ "schools_raw": [
+  {
+   "name": "THPT chuyên Lê Quý Đôn – cơ sở Nam Nha Trang",
+   "old_province": "Khánh Hòa",
+   "city": "Nha Trang (phường Nam Nha Trang)",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2026": null
+     },
+     "applicants": {},
+     "cut": {
+      "2022": 40.0,
+      "2023": null,
+      "2024": 39.5,
+      "2025": 42.55,
+      "2026": 47.1
+     },
+     "scale": {
+      "2026": 60
+     },
+     "note": "2026 là mức cao nhất trường (cùng Tin 46,93). Thang điểm 2022–2025 chưa xác minh (hệ số môn chuyên trước 2026 chưa rõ). 2024 có điều kiện điểm thi Tiếng Anh chuyên ≥ 5,25. 2021 trùng số 2022 trên hoatieu (có thể nhầm). 2025: dienmaycholon và tuyensinh247 cùng ghi 42,55."
+    }
+   ]
+  },
+  {
+   "name": "THPT chuyên Lê Quý Đôn – cơ sở Đông Hải",
+   "old_province": "Ninh Thuận",
+   "city": "Phan Rang – Tháp Chàm cũ (phường Đông Hải)",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2026": null
+     },
+     "applicants": {},
+     "cut": {
+      "2022": 35.06,
+      "2023": null,
+      "2024": null,
+      "2025": null,
+      "2026": 39.25
+     },
+     "scale": {
+      "2022": 50,
+      "2026": 60
+     },
+     "note": "Trước sáp nhập là THPT chuyên Lê Quý Đôn Ninh Thuận (số 2022 = năm học 2022-2023, công thức Ninh Thuận ×2, thang 50). 2026 dùng công thức Khánh Hòa ×3 (thang 60), nên không so sánh trực tiếp với các năm trước. Việc 'Đông Hải' = trường chuyên Ninh Thuận cũ suy ra từ địa danh, nguồn không ghi rõ."
+    }
+   ]
+  }
+ ],
+ "goals": [
+  {
+   "k": "so-chuyen-le-quy-don-co-so-nam-",
+   "name": "chuyên Lê Quý Đôn – cơ sở Nam Nha Trang",
+   "score": 7.6,
+   "paper": "so",
+   "need_tv_more": false
+  },
+  {
+   "k": "so-chuyen-le-quy-don-co-so-dong",
+   "name": "chuyên Lê Quý Đôn – cơ sở Đông Hải",
+   "score": 5.6,
+   "paper": "so",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "so-chuyen-le-quy-don-co-so-dong"
+}

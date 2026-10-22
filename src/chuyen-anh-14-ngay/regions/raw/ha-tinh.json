@@ -1,0 +1,60 @@
+{
+  "so": "Hà Tĩnh",
+  "slug": "ha-tinh",
+  "merged_from": ["Hà Tĩnh"],
+  "exam_2026": {
+    "dates": null,
+    "organisation": "một đề chung cho cả tỉnh (Hà Tĩnh không sáp nhập)",
+    "common_subjects": ["Toán", "Ngữ văn", "Tiếng Anh"],
+    "notes": "Môn thứ ba năm 2026 là Tiếng Anh/Ngoại ngữ, công bố trước 24/02/2026 (LSVN). Chưa tìm được ngày thi, lịch môn chuyên, chỉ tiêu THPT chuyên Hà Tĩnh."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": null,
+    "parts": [],
+    "max": null,
+    "conditions": null,
+    "formula_by_year": {}
+  },
+  "nv_rule": null,
+  "chuyen_paper": {
+    "minutes": null,
+    "scale": null,
+    "has_listening": null,
+    "essay_words": null,
+    "sections": [],
+    "difficulty": null,
+    "difficulty_evidence": null,
+    "sample_links": []
+  },
+  "schools": [
+    {
+      "name": "THPT chuyên Hà Tĩnh",
+      "old_province": "Hà Tĩnh",
+      "city": "Hà Tĩnh",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {},
+          "applicants": {},
+          "cut": {"2022": null, "2023": null, "2024": null, "2025": null, "2026": null},
+          "scale": {},
+          "note": "Chưa tìm được số liệu có nguồn đọc được (file PDF điểm chuẩn Hà Tĩnh 2023 trên doctailieu là ảnh/binary, không đọc được)."
+        }
+      ]
+    }
+  ],
+  "stories": [],
+  "prep_tips": [],
+  "confidence": "low",
+  "gaps": [
+    "Toàn bộ dữ liệu chính: ngày thi 2026, công thức, điểm chuẩn chuyên Anh 2022–2026, chỉ tiêu, cấu trúc đề chuyên Anh, câu chuyện ôn thi",
+    "Chưa xác minh THPT chuyên Hà Tĩnh có lớp chuyên ngoại ngữ khác (Pháp, Trung…) hay không",
+    "Học sinh Hà Tĩnh có thường thi thêm THPT chuyên ĐH Vinh không (chưa có nguồn)",
+    "Lý do: hết hạn mức tìm kiếm web của lượt làm việc (200 lượt dùng chung) trước khi kịp nghiên cứu sở này — cần chạy lại"
+  ],
+  "sources": [
+    {"title": "LSVN: Nhiều địa phương công bố môn thi thứ ba vào lớp 10 năm học 2026-2027", "url": "https://lsvn.vn/nhieu-dia-phuong-cong-bo-mon-thi-thu-ba-vao-lop-10-nam-hoc-2026-2027-a169644.html"},
+    {"title": "LSVN: Thêm nhiều địa phương chốt môn thi thứ ba vào lớp 10", "url": "https://lsvn.vn/them-nhieu-dia-phuong-chot-mon-thi-thu-ba-vao-lop-10-a169993.html"}
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "so": "Cần Thơ",
+  "slug": "can-tho",
+  "merged_from": ["Cần Thơ", "Sóc Trăng", "Hậu Giang"],
+  "exam_2026": {
+    "dates": "28/6/2026 làm thủ tục; 29/6 sáng Ngữ văn (120'), 29/6 chiều Ngoại ngữ (60'); 30/6 sáng Toán (120'); môn chuyên 150 phút chiều 30/6 và sáng 1/7/2026. Công bố điểm thi 11/7; điểm chuẩn chuyên công bố 21/7/2026 (QĐ 2004/QĐ-SGDĐT).",
+    "organisation": "Một kỳ thi chung cho cả TP Cần Thơ mới (cùng lịch, cùng đề các môn chung); thí sinh đăng ký trường chuyên nào thì dự thi tại trường đó; 3 trường chuyên (Lý Tự Trọng, Nguyễn Thị Minh Khai, Vị Thanh) xét điểm chuẩn riêng. Chưa tìm được nguồn xác nhận đề chuyên Anh có dùng chung cho cả 3 trường hay không.",
+    "common_subjects": ["Toán", "Ngữ văn", "Ngoại ngữ (Tiếng Anh hoặc Tiếng Pháp)"],
+    "notes": "Năm đầu TP Cần Thơ vừa thi tuyển (59 trường) vừa xét tuyển (32 trường + GDNN-GDTX). Môn chung Toán và Ngoại ngữ: trắc nghiệm kết hợp tự luận; Ngữ văn tự luận. Tổng chỉ tiêu chuyên theo kế hoạch: Lý Tự Trọng ≤455 (13 lớp), Nguyễn Thị Minh Khai ≤350 (10 lớp), Vị Thanh ≤315 (9 lớp); VietnamPlus đưa con số 989 chỉ tiêu chuyên khi công bố điểm chuẩn. Báo Tuổi Trẻ ghi nhận thí sinh, giáo viên nhận xét đề 2026 tương đối dễ, điểm chuẩn các trường top có thể tăng."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": "ĐXT lớp chuyên = Ngữ văn + Toán + Ngoại ngữ (chung, hệ số 1) + Điểm môn chuyên × 2 + Điểm khuyến khích (nếu có)",
+    "parts": ["Ngữ văn", "Toán", "Ngoại ngữ (chung)", "Anh chuyên×2"],
+    "max": 50,
+    "conditions": "2026: kết quả rèn luyện và học tập cả năm các lớp THCS từ Khá trở lên; tốt nghiệp THCS tại Cần Thơ hoặc cư trú tại Cần Thơ; điểm các môn chung > 2,0 và điểm môn chuyên ≥ 4,0 (theo kế hoạch đăng trên tuyensinh247). Thang 50 chưa tính điểm khuyến khích.",
+    "formula_by_year": {
+      "2025": "Cần Thơ cũ (Lý Tự Trọng, TB 116/TB-THPTCLTT): ĐXT = Văn + NN + Toán + 2×Chuyên + ĐKK; HS ngoài TP cần ĐTB môn chuyên lớp 9 ≥ 8,0; thông báo ghi các bài thi đạt từ 5,0 trở lên (chưa nhân hệ số). Sóc Trăng cũ (NTMK): tổng 4 bài, môn chuyên ×2, không bài nào dưới 5,0, ĐTB môn chuyên lớp 9 ≥ 8,0. Hậu Giang cũ (Vị Thanh): chưa tìm được công thức chính thức.",
+      "2022-2024": "Lý Tự Trọng: chưa tìm được văn bản công thức; điểm chuẩn ở mức 28–38 tương thích thang 50 nhưng chưa xác minh."
+    }
+  },
+  "nv_rule": "2026: tối đa 4 nguyện vọng: NV1 là trường chuyên (đăng ký trường chuyên nào thi tại trường đó, tức chỉ một trường chuyên), NV2–NV3 là trường THPT/DTNT công lập, NV4 là GDNN-GDTX. Trong trường chuyên được đăng ký tối đa 2 môn chuyên (NV chuyên 1 và NV chuyên 2). Năm 2025 (Lý Tự Trọng) chỉ được đăng ký 1 lớp chuyên. Chưa tìm được quy định lớp Pháp/Trung có xét bằng bài thi tiếng Anh hay không.",
+  "chuyen_paper": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": true,
+    "essay_words": 250,
+    "sections": [
+      {"format": "listening", "items": 5, "points": 0.5, "note": "Đề Lý Tự Trọng 2020-2021 (thang 100, quy về 10): Part 1 trắc nghiệm 3 lựa chọn, 5 đoạn hội thoại ngắn, nghe 2 lần"},
+      {"format": "listening", "items": 5, "points": 0.3, "note": "Part 2: trắc nghiệm 4 lựa chọn, hội thoại sinh viên – nhân viên"},
+      {"format": "listening", "items": 10, "points": 1.0, "note": "Part 3: note completion từ phỏng vấn radio, không quá 3 từ (tổng phần nghe đề ghi 20/100 nhưng các phần cộng lại 18)"},
+      {"format": "sentence_completion", "items": 17, "points": 1.7, "note": "Lexico-grammar trắc nghiệm 4 lựa chọn"},
+      {"format": "word_formation", "items": 10, "points": 1.0, "note": "Biến đổi từ gốc in hoa"},
+      {"format": "matching_headings", "items": 6, "points": 0.6, "note": "Ghép 6 đoạn với 9 tiêu đề"},
+      {"format": "reading_mcq", "items": 12, "points": 1.2, "note": "Hai bài đọc trắc nghiệm (5 + 7 câu), chủ đề khoa học: nguồn gốc Mặt Trăng, biến đổi khí hậu"},
+      {"format": "cloze", "items": 5, "points": 0.5, "note": "Trắc nghiệm điền từ (branding)"},
+      {"format": "open_cloze", "items": 10, "points": 1.0, "note": "Điền 1 từ"},
+      {"format": "key_word", "items": 10, "points": 1.0, "note": "Viết lại câu dùng từ cho sẵn, 3–6 từ"},
+      {"format": "essay", "items": 1, "points": 1.0, "note": "Bài luận 200–250 từ, nêu lý do và ví dụ (đề 2020: giới trẻ dành quá nhiều thời gian hưởng thụ cá nhân?)"}
+    ],
+    "difficulty": "B2",
+    "difficulty_evidence": "Ước tính từ cấu trúc đề chuyên Anh Lý Tự Trọng 2020-2021 (nghe kiểu IELTS/Cambridge, matching headings, open cloze, key word transformation, luận 200–250 từ) – tương đương B2 First. Học sinh dự thi chuyên Lý Tự Trọng 2024 nói với VOV đề chuyên 'độ khó, phân hóa cao', bám chương trình THCS. Ngược lại, đề chuyên Anh Sóc Trăng (NTMK) 2025-2026 chỉ 120 phút, có ngữ âm, sửa lỗi, đoạn văn 120–150 từ – mức B1+. Chưa có đề chuyên Anh 2026 của TP Cần Thơ mới để xác định định dạng sau sáp nhập.",
+    "sample_links": [
+      "https://tailieudieuky.com/baiviet/document/de-thi-chuyen-anh-vao-thpt-chuyen-ly-tu-trong-can-tho-nam-hoc-2020-2021/",
+      "https://tailieudieuky.com/document/id=42069122",
+      "https://springboard.vn/de-thi-chuyen-anh-10-soc-trang-2025-2026/"
+    ]
+  },
+  "schools": [
+    {
+      "name": "THPT chuyên Lý Tự Trọng",
+      "old_province": "Cần Thơ",
+      "city": "Cần Thơ",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {"2025": 70, "2026": 70},
+          "applicants": {"2024": 201},
+          "cut": {"2022": 30.55, "2023": 28.15, "2024": 32.5, "2025": 38.05, "2026": 37.1},
+          "scale": {"2025": 50, "2026": 50},
+          "note": "2 lớp × 35. 2024: 201 thí sinh thi môn Tiếng Anh chuyên (VOV) / 70 chỉ tiêu ≈ 1:2,9. 2026: 37,1 (VietnamPlus, Giáo dục & Thời đại). 2025: 38,05 chỉ có nguồn tuyensinh247. Thang 2022–2024 chưa có văn bản xác nhận. Lịch sử cũ: 2019 34,16; 2020 29,5 (doctailieu, hoatieu)."
+        },
+        {
+          "lang": "Pháp",
+          "admit_by_english": null,
+          "quota": {"2025": 35, "2026": 35},
+          "cut": {"2022": 33.6, "2023": 32.55, "2024": 30.69, "2025": 34.44, "2026": 28.86},
+          "note": "1 lớp. 2022: VietnamPlus và doctailieu ghi 33,6; Tuổi Trẻ ghi 30,60. 2024–2026 từ tuyensinh247. Ngoại ngữ chung của Cần Thơ cho chọn Tiếng Anh hoặc Tiếng Pháp."
+        },
+        {
+          "lang": "Trung",
+          "admit_by_english": null,
+          "quota": {"2026": 35},
+          "cut": {"2026": 21.3},
+          "note": "Lớp chuyên Tiếng Trung xuất hiện trong kế hoạch 2026 (năm 2025 tiếng Trung chỉ là ngoại ngữ 2). Điểm chuẩn 21,3 chỉ có nguồn tuyensinh247; chưa rõ thi đề tiếng Trung hay tiếng Anh."
+        }
+      ]
+    },
+    {
+      "name": "THPT chuyên Nguyễn Thị Minh Khai",
+      "old_province": "Sóc Trăng",
+      "city": "Sóc Trăng",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {"2026": 70},
+          "applicants": {},
+          "cut": {"2022": null, "2023": null, "2024": null, "2025": 33.0, "2026": 28.35},
+          "scale": {"2025": 50, "2026": 50},
+          "note": "2026: 2 lớp Tiếng Anh. Điểm chuẩn 2026 KHÔNG CHẮC: tuyensinh247 ghi 28,6 cho NTMK và 28,35 cho Vị Thanh, nhưng VietnamPlus mô tả các điểm Văn 35,15/Hóa 34,85/Toán 33,7 thuộc Vị Thanh, trùng cột mà tuyensinh247 gán cho NTMK, nên nhiều khả năng bảng tuyensinh247 2026 bị đảo nhãn hai trường; ở đây ghi theo cách đảo lại (28,35). 2025: 33,0 (FPT Shop, tuyensinh247; Sóc Trăng cũ, đề riêng 120 phút)."
+        },
+        {
+          "lang": "Trung",
+          "admit_by_english": null,
+          "cut": {"2024": 30},
+          "note": "Chỉ tuyensinh247 ghi chuyên Trung 2024 = 30 cho trường này; chưa có nguồn thứ hai. Kế hoạch 2026 không còn lớp Trung ở NTMK."
+        }
+      ]
+    },
+    {
+      "name": "THPT chuyên Vị Thanh",
+      "old_province": "Hậu Giang",
+      "city": "Vị Thanh",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {"2026": 35},
+          "applicants": {},
+          "cut": {"2022": null, "2023": null, "2024": 35.75, "2025": null, "2026": 28.6},
+          "scale": {"2026": 50},
+          "note": "2024: 35,75, cao nhất trường (Dân Việt, hoatieu, tuyensinh247). 2026: xem ghi chú ở NTMK, có thể là 28,35 nếu bảng tuyensinh247 đúng nhãn. 1 lớp, tối đa 35 HS. Môn chuyên 150 phút (kế hoạch Hậu Giang 2023)."
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "title": "Kỳ thi tuyển sinh lớp 10 TP. Cần Thơ kết thúc nghiêm túc, an toàn",
+      "who": "báo",
+      "year": 2024,
+      "school": "THPT chuyên Lý Tự Trọng",
+      "summary": "716/719 thí sinh dự thi môn chuyên Lý Tự Trọng, trong đó Tiếng Anh đông nhất với 201 thí sinh cho 70 chỉ tiêu. Thí sinh cho biết đề bám chương trình THCS nhưng 'độ khó, phân hóa cao', và các em xử lý được nhờ đã luyện bài tập nâng cao với giáo viên.",
+      "takeaways": ["Chuyên Anh là môn cạnh tranh đông nhất trường – cần chuẩn bị sớm", "Luyện dạng bài nâng cao vượt SGK nhưng vẫn bám kiến thức THCS"],
+      "url": "https://vov.vn/xa-hoi/ky-thi-tuyen-sinh-lop-10-tp-can-tho-ket-thuc-nghiem-tuc-an-toan-post1100196.vov"
+    },
+    {
+      "title": "Thí sinh Cần Thơ vẫn hồi hộp chờ công bố điểm chuẩn vào lớp 10",
+      "who": "báo",
+      "year": 2026,
+      "school": "Các trường chuyên TP Cần Thơ",
+      "summary": "Năm đầu sau sáp nhập, thí sinh và giáo viên nhận xét đề tương đối dễ nên dự báo điểm chuẩn top cao hơn năm trước. Thực tế chuyên Toán Lý Tự Trọng lên 41,2 và chuyên Anh 37,1, trong khi chuyên Anh ở Sóc Trăng và Vị Thanh chỉ quanh 28,5.",
+      "takeaways": ["Đề dễ thì điểm chuẩn tăng – đặt mục tiêu trung bình ≥ 7,5/bài nếu nhắm Lý Tự Trọng", "Chênh lệch điểm chuẩn giữa 3 trường chuyên gần 9 điểm – cân nhắc chọn trường theo sức"],
+      "url": "https://tuoitre.vn/thi-sinh-can-tho-van-hoi-hop-cho-cong-bo-diem-chuan-vao-lop-10-100260715112450803.htm"
+    }
+  ],
+  "prep_tips": [
+    "Môn chuyên nhân hệ số 2 (20/50 điểm) nhưng môn chung bị loại nếu ≤ 2,0 và môn chuyên phải ≥ 4,0 – không bỏ Toán, Văn (kế hoạch 2026, tuyensinh247).",
+    "Đề chuyên Anh Lý Tự Trọng (2020) 150 phút với nghe 3 phần (có note completion ≤ 3 từ), matching headings, open cloze, key word transformation 3–6 từ và luận 200–250 từ – luyện đề dạng Cambridge B2 First/IELTS (tailieudieuky).",
+    "Nếu nhắm NTMK (Sóc Trăng cũ): đề 2025 có ngữ âm (trọng âm, phát âm), sửa lỗi trong đoạn, sắp xếp câu/đoạn và đoạn văn 120–150 từ trong 120 phút – cần ôn cả các dạng này phòng khi đề 2027 giữ định dạng cũ (springboard).",
+    "Môn Ngoại ngữ chung chỉ 60 phút, trắc nghiệm kết hợp tự luận – luyện tốc độ (Tuổi Trẻ 30/3/2026).",
+    "Điểm chuẩn chuyên Anh Lý Tự Trọng dao động mạnh: 28,15 (2023) → 32,5 (2024) → 38,05 (2025) → 37,1 (2026); đặt mục tiêu ≥ 38/50 cho an toàn (tuyensinh247, VietnamPlus)."
+  ],
+  "confidence": "medium",
+  "gaps": [
+    "Kế hoạch tuyển sinh lớp 10 năm 2027 của TP Cần Thơ chưa công bố/chưa tìm thấy.",
+    "Không rõ năm 2026 ba trường chuyên dùng chung một đề chuyên Anh hay đề riêng; chưa có đề chuyên Anh 2026 của TP Cần Thơ.",
+    "Điểm chuẩn chuyên Anh 2026 của NTMK và Vị Thanh có thể bị đảo nhãn (28,35 / 28,6).",
+    "NTMK (Sóc Trăng): thiếu điểm chuẩn chuyên Anh 2022–2024; Vị Thanh: thiếu 2022, 2023, 2025.",
+    "Thiếu số thí sinh đăng ký chuyên Anh 2025, 2026 ở cả 3 trường.",
+    "Chưa rõ lớp chuyên Pháp, Trung của Lý Tự Trọng thi bằng đề ngôn ngữ đó hay đề tiếng Anh.",
+    "Không tìm được bài chia sẻ kinh nghiệm cá nhân của học sinh/giáo viên chuyên Anh ở Cần Thơ, Sóc Trăng, Hậu Giang; hai mục stories là tường thuật báo chí."
+  ],
+  "sources": [
+    {"title": "VietnamPlus – Cần Thơ công bố điểm chuẩn tuyển sinh vào lớp 10 (21/7/2026)", "url": "https://www.vietnamplus.vn/can-tho-cong-bo-diem-chuan-tuyen-sinh-vao-lop-10-post1125509.vnp"},
+    {"title": "Giáo dục & Thời đại – Cần Thơ công bố điểm chuẩn trúng tuyển lớp 10 năm học 2026-2027", "url": "https://giaoduc.net.vn/can-tho-cong-bo-diem-chuan-trung-tuyen-lop-10-nam-hoc-2026-2027-post261574.gd"},
+    {"title": "Tuổi Trẻ – TP Cần Thơ lần đầu chọn hình thức vừa thi tuyển vừa xét tuyển lớp 10", "url": "https://tuoitre.vn/tp-can-tho-lan-dau-chon-hinh-thuc-vua-thi-tuyen-vua-xet-tuyen-lop-10-20260330190050343.htm"},
+    {"title": "Tuổi Trẻ – Thí sinh Cần Thơ vẫn hồi hộp chờ công bố điểm chuẩn", "url": "https://tuoitre.vn/thi-sinh-can-tho-van-hoi-hop-cho-cong-bo-diem-chuan-vao-lop-10-100260715112450803.htm"},
+    {"title": "Tuyensinh247 – Tuyển sinh lớp 10 Cần Thơ 2026", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/can-tho-p12.html"},
+    {"title": "Tuyensinh247 – Điểm chuẩn lớp 10 Cần Thơ", "url": "https://diemthi.tuyensinh247.com/dc-lop10/can-tho-p12.html"},
+    {"title": "Tuyensinh247 – Điểm chuẩn Sóc Trăng", "url": "https://diemthi.tuyensinh247.com/dc-lop10/soc-trang-p45.html"},
+    {"title": "Tuyensinh247 – Điểm chuẩn Hậu Giang", "url": "https://diemthi.tuyensinh247.com/dc-lop10/hau-giang-p4.html"},
+    {"title": "THPT chuyên Lý Tự Trọng – TB 116/TB-THPTCLTT tuyển sinh 2025-2026", "url": "https://chuyenlytutrong.edu.vn/uploads/news/2025_04/116thong-bao-tuyen-sinh-vao-lop-10-thpt-nh-2025-2026_2.pdf"},
+    {"title": "VietnamPlus – Điểm chuẩn Cần Thơ 2022", "url": "https://www.vietnamplus.vn/diem-chuan-tuyen-sinh-lop-10-cua-tp-can-tho-cao-nhat-gan-40-diem-post799471.vnp"},
+    {"title": "Tuổi Trẻ – Điểm chuẩn Cần Thơ 2022 cao nhất 39,30", "url": "https://tuoitre.vn/diem-chuan-tuyen-sinh-lop-10-o-tp-can-tho-cao-nhat-la-3930-diem-20220617200446899.htm"},
+    {"title": "Ban Tuyên giáo Cần Thơ – Điểm chuẩn 2023 cao nhất 37,8", "url": "https://btgdv.cantho.gov.vn/vi/news/hoat-dong-tuyen-giao-va-dan-van/can-tho-cong-bo-diem-chuan-vao-lop-10-thpt-cao-nhat-37-8-diem-1162.html"},
+    {"title": "Doctailieu – Điểm chuẩn lớp 10 Cần Thơ các năm", "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-can-tho"},
+    {"title": "VOV – Kỳ thi tuyển sinh lớp 10 TP. Cần Thơ 2024", "url": "https://vov.vn/xa-hoi/ky-thi-tuyen-sinh-lop-10-tp-can-tho-ket-thuc-nghiem-tuc-an-toan-post1100196.vov"},
+    {"title": "FPT Shop – Điểm chuẩn lớp 10 Sóc Trăng 2025", "url": "https://fptshop.com.vn/tin-tuc/danh-gia/diem-chuan-lop-10-soc-trang-2025-182159"},
+    {"title": "Thư viện Pháp luật – Kế hoạch tuyển sinh lớp 10 Sóc Trăng 2025", "url": "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/thong-tin-huu-ich/86182/ke-hoach-tuyen-sinh-lop-10-nam-2025-soc-trang-de-thi-ngu-van-va-tieng-anh-vao-lop-10-tinh-soc-trang-nam-2025"},
+    {"title": "Dân Việt – Điểm chuẩn lớp 10 Hậu Giang 2024", "url": "https://danviet.vn/cong-bo-diem-chuan-lop-10-nam-2024-2025-hau-giang-tung-truong-chi-tiet-nhat-20240710160409558-d1172283.html"},
+    {"title": "Kế hoạch tuyển sinh 10 Hậu Giang 2023-2024 (THPT Cái Tắc)", "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/LVPD/KH_tuyen_10_nam_23-24_HauGiang.pdf"},
+    {"title": "Tailieudieuky – Đề chuyên Anh Lý Tự Trọng 2020-2021", "url": "https://tailieudieuky.com/baiviet/document/de-thi-chuyen-anh-vao-thpt-chuyen-ly-tu-trong-can-tho-nam-hoc-2020-2021/"},
+    {"title": "Springboard – Đề chuyên Anh Sóc Trăng 2025-2026", "url": "https://springboard.vn/de-thi-chuyen-anh-10-soc-trang-2025-2026/"},
+    {"title": "Hoatieu – Điểm chuẩn lớp 10 Cần Thơ", "url": "https://hoatieu.vn/diem-chuan-lop-10-can-tho-208816"}
+  ]
+}

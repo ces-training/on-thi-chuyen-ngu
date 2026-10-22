@@ -3,10 +3,10 @@
   "slug": "cao-bang",
   "merged_from": ["Cao Bằng"],
   "exam_2026": {
-    "dates": "Theo thông báo tuyển sinh của Trường THPT Chuyên Cao Bằng (4/2026): 01/7/2026 sáng Ngữ văn (120'); 02/7/2026 sáng Toán (120'), chiều Tiếng Anh chung (60'); 03/7/2026 chiều môn chuyên buổi 1 (Toán, Ngữ văn, Sinh học – 150'); 04/7/2026 sáng môn chuyên buổi 2 (Vật lí, Hóa học, Tiếng Anh, Lịch sử – 150').",
+    "dates": "4 ngày thi, nguồn mâu thuẫn về tháng: thông báo của Trường THPT Chuyên Cao Bằng (ký 20/4/2026) in ngày 01–04/7/2026; FPT Shop tổng hợp lịch thi 2026 ghi 1–4/6/2026. Văn bản trường là nguồn gốc nên ưu tiên tháng 7 (cùng văn bản có chỗ chưa khớp: buổi làm thủ tục 14h00 ngày 01/7 trùng ngày thi Văn); thi tốt nghiệp THPT 2026 ở Cao Bằng là 10–13/6/2026 (CV 1235 Sở GD&ĐT Cao Bằng), nên lịch thi lớp 10 đầu tháng 7 là khả dĩ. Thứ tự: ngày 1 sáng Ngữ văn (120'); ngày 2 sáng Toán (120'), chiều Tiếng Anh chung (60'); ngày 3 chiều môn chuyên buổi 1 (Toán, Ngữ văn, Sinh học – 150'); ngày 4 sáng môn chuyên buổi 2 (Vật lí, Hóa học, Tiếng Anh, Lịch sử – 150').",
     "organisation": "Tỉnh không sáp nhập; một kỳ thi, một trường chuyên duy nhất (THPT Chuyên Cao Bằng), thi tại trường chuyên (Tổ Hòa Chung 4, phường Tân Giang).",
     "common_subjects": ["Toán", "Ngữ văn", "Tiếng Anh"],
-    "notes": "Theo Công văn 228/SGDĐT-QLCLCNTT (22/01/2026): trường chuyên thi Toán, Ngữ văn, Tiếng Anh + 1 môn chuyên; trường THPT thường và PTDTNT tỉnh thi 3 môn. Toán, Văn tự luận 120'; Tiếng Anh chung trắc nghiệm 60'; môn chuyên 150', riêng Tiếng Anh chuyên kết hợp trắc nghiệm + tự luận. Lịch thi đầu tháng 7 muộn hơn hẳn 2025 (3–5/6/2025) – lấy theo văn bản của trường, nên đối chiếu thêm."
+    "notes": "Theo Công văn 228/SGDĐT-QLCLCNTT (22/01/2026): trường chuyên thi Toán, Ngữ văn, Tiếng Anh + 1 môn chuyên; trường THPT thường và PTDTNT tỉnh thi 3 môn. Toán, Văn tự luận 120'; Tiếng Anh chung trắc nghiệm 60'; môn chuyên 150', riêng Tiếng Anh chuyên kết hợp trắc nghiệm + tự luận. Năm 2025 thi 3–5/6/2025; năm 2022 thi chuyên Anh sáng 07/6/2022."
   },
   "plan_2027": null,
   "formula": {
@@ -62,7 +62,7 @@
     "Nhận xét độ khó đề chuyên Anh",
     "Kế hoạch tuyển sinh 2027",
     "Chia sẻ/kinh nghiệm thực tế của học sinh/giáo viên Cao Bằng",
-    "Xác minh lại lịch thi 2026 (01–04/7/2026) bằng nguồn báo chí; bài Báo Cao Bằng '760 lượt thí sinh hoàn thành các môn thi chuyên… 2026-2027' không truy cập được"
+    "Xác minh tháng thi 2026 (thông báo trường in 01–04/7, FPT Shop ghi 1–4/6); bài Báo Cao Bằng '760 lượt thí sinh hoàn thành các môn thi chuyên… 2026-2027' (có thể chứa số thí sinh chuyên Anh) bị chặn robots, không đọc được"
   ],
   "sources": [
     {"title": "Thông báo tuyển sinh lớp 10 chuyên năm học 2026-2027 – Trường THPT Chuyên Cao Bằng", "url": "https://thptchuyencaobang.edu.vn/uploads/news/2026_04/tb-ts-10-chuyen-nam-hoc-26-27.pdf"},
@@ -73,6 +73,7 @@
     {"title": "Điểm chuẩn lớp 10 Cao Bằng – tuyensinh247", "url": "https://diemthi.tuyensinh247.com/dc-lop10/cao-bang-p25.html"},
     {"title": "Điểm chuẩn lớp 10 Cao Bằng – Hoatieu", "url": "https://hoatieu.vn/diem-chuan-lop-10-cao-bang-209108"},
     {"title": "CV 633/SGD&ĐT-QLCLCNTT hướng dẫn tuyển sinh 10 năm học 2022-2023 – Sở GD&ĐT Cao Bằng", "url": "https://storage-vnportal.vnpt.vn/cbg-ubnd/sitefolders/sgddt/4974/2022/t4/633.pdf"},
+    {"title": "Lịch thi vào lớp 10 năm 2026 – FPT Shop", "url": "https://fptshop.com.vn/tin-tuc/danh-gia/lich-thi-vao-lop-10-nam-2025-cua-63-tinh-175950"},
     {"title": "Kỳ thi tuyển sinh lớp 10 THPT diễn ra từ ngày 3-5/6/2025 – Tuyên giáo Cao Bằng", "url": "https://tuyengiaocaobang.vn/index.php/diem-bao/ky-thi-tuyen-sinh-lop-10-truong-thpt-dien-ra-tu-ngay-3-5-6-2025-1826.html"}
   ]
 }

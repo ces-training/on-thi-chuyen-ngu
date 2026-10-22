@@ -1,0 +1,296 @@
+{
+ "slug": "dien-bien",
+ "name": "Điện Biên",
+ "merged_from": [],
+ "edition": "Bản Điện Biên",
+ "exam_md": [
+  5,
+  26
+ ],
+ "papers": {
+  "so": {
+   "map": "B2",
+   "label": "đề chuyên Anh của Sở Điện Biên",
+   "ac_add": 2.5,
+   "ac_cap": 10,
+   "ac_label": "Anh chung (đề chung)",
+   "difficulty": null,
+   "difficulty_evidence": "Quy định 2026: 'Môn tiếng Anh thi kiến thức ngôn ngữ và 3 kỹ năng Nghe hiểu, Đọc hiểu, Viết (theo hình thức trắc nghiệm kết hợp tự luận)', 120 phút. Không tìm thấy đề công khai hay nhận xét độ khó.",
+   "minutes": 120,
+   "has_listening": true,
+   "essay_words": null,
+   "sections": [
+    {
+     "format": "listening",
+     "items": null,
+     "points": null,
+     "note": "Nghe hiểu (theo quy định 2026)"
+    },
+    {
+     "format": "other",
+     "items": null,
+     "points": null,
+     "note": "Kiến thức ngôn ngữ (ngữ âm/từ vựng/ngữ pháp – không rõ chi tiết)"
+    },
+    {
+     "format": "reading_mcq",
+     "items": null,
+     "points": null,
+     "note": "Đọc hiểu – dạng cụ thể chưa rõ"
+    },
+    {
+     "format": "other",
+     "items": null,
+     "points": null,
+     "note": "Viết – dạng cụ thể và số từ chưa rõ"
+    }
+   ],
+   "sample_links": []
+  }
+ },
+ "formulas": {
+  "so": {
+   "w": {
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 2.0
+   },
+   "paper": "so",
+   "text": "Tổng điểm xét tuyển = Ngữ văn + Toán + Tiếng Anh (chung) + 2 × điểm môn chuyên",
+   "max": 50
+  }
+ },
+ "m3_label": null,
+ "exams": {
+  "so": {
+   "label": "Kỳ thi của Sở GD&ĐT Điện Biên",
+   "date": "25–26/5/2026. 25/5: Toán 90' (7h30), Tiếng Anh 60' (9h45), Ngữ văn 120' (14h00). 26/5 sáng (7h30, 120'): môn chuyên Toán, Lý, Hóa, Văn, Tiếng Anh, Tiếng Trung, Tin; 26/5 chiều (14h00, 120'): chuyên Sinh, Sử, Địa.",
+   "rule": "Được đăng ký tối đa 2 lớp chuyên thuộc 2 buổi thi khác nhau (Buổi 1: Toán, Lý, Hóa, Văn, Tiếng Anh; Buổi 2: Sinh, Sử, Địa, Tiếng Trung, Tin) — có thể thi cả chuyên Anh và chuyên Trung. Lớp chuyên Tiếng Trung: tối đa 60% chỉ tiêu cho thí sinh thi bài Tiếng Trung, 40% còn lại xét từ thí sinh NV1 chuyên Anh không trúng tuyển (theo điểm từ cao xuống) — tức là có xét lớp ngoại ngữ khác bằng điểm Anh. Trúng chuyên Anh thì không được xét lớp chuyên khác. Nguyện vọng trường: NV1 Chuyên Lê Quý Đôn, NV2 PTDTNT tỉnh, NV3 PTDTNT THPT theo phân vùng, NV4–NV5 hai trường THPT thi tuyển khác."
+  }
+ },
+ "nv2_exam": null,
+ "nv_rule": "Được đăng ký tối đa 2 lớp chuyên thuộc 2 buổi thi khác nhau (Buổi 1: Toán, Lý, Hóa, Văn, Tiếng Anh; Buổi 2: Sinh, Sử, Địa, Tiếng Trung, Tin) — có thể thi cả chuyên Anh và chuyên Trung. Lớp chuyên Tiếng Trung: tối đa 60% chỉ tiêu cho thí sinh thi bài Tiếng Trung, 40% còn lại xét từ thí sinh NV1 chuyên Anh không trúng tuyển (theo điểm từ cao xuống) — tức là có xét lớp ngoại ngữ khác bằng điểm Anh. Trúng chuyên Anh thì không được xét lớp chuyên khác. Nguyện vọng trường: NV1 Chuyên Lê Quý Đôn, NV2 PTDTNT tỉnh, NV3 PTDTNT THPT theo phân vùng, NV4–NV5 hai trường THPT thi tuyển khác.",
+ "options": [
+  {
+   "id": "so-chuyen-le-quy-don-dien-bien-anh",
+   "sk": "so-chuyen-le-quy-don-dien-bien",
+   "school": "THPT chuyên Lê Quý Đôn (Điện Biên)",
+   "area": "Điện Biên",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2024,
+    2026
+   ],
+   "cut": [
+    36.2,
+    38.7
+   ],
+   "scale": 50,
+   "quota": {
+    "2026": 35
+   },
+   "note": "2026 theo tuyensinh247. 2024 theo doctailieu.com (độ tin cậy thấp: cùng trang có dòng '32.30 (Anh)' không giải thích). Năm 2023 chỉ biết 'điểm tuyển cao nhất là môn chuyên Tiếng Anh (38 điểm)' — đây là điểm cao nhất, không phải điểm chuẩn. Tham khảo cũ: 2020: 34,8; 2021: 25,40 (download.vn). Thang 50 năm 2024 là giả định theo công thức hệ số 2."
+  },
+  {
+   "id": "so-chuyen-le-quy-don-dien-bien-trung",
+   "sk": "so-chuyen-le-quy-don-dien-bien",
+   "school": "THPT chuyên Lê Quý Đôn (Điện Biên)",
+   "area": "Điện Biên",
+   "cls": "chuyên Trung",
+   "lang": "Trung",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2024,
+    2026
+   ],
+   "cut": [
+    36.25,
+    34.2
+   ],
+   "scale": 50,
+   "quota": {
+    "2026": 35
+   },
+   "note": "2026: 34,2 (thí sinh thi Tiếng Trung) và 36,7 (xét từ thí sinh NV1 chuyên Anh trượt, tối đa 40% chỉ tiêu). 2024: 36,25 theo doctailieu.com (độ tin cậy thấp). Bài chuyên Tiếng Trung 120' gồm 5 phần: Nghe hiểu, Ngữ âm, Từ vựng–ngữ pháp, Đọc hiểu, Viết."
+  }
+ ],
+ "paper": {
+  "map": "B2",
+  "label": "đề chuyên Anh của Sở Điện Biên",
+  "ac_add": 2.5,
+  "ac_cap": 10,
+  "ac_label": "Anh chung (đề chung)",
+  "difficulty": null,
+  "difficulty_evidence": "Quy định 2026: 'Môn tiếng Anh thi kiến thức ngôn ngữ và 3 kỹ năng Nghe hiểu, Đọc hiểu, Viết (theo hình thức trắc nghiệm kết hợp tự luận)', 120 phút. Không tìm thấy đề công khai hay nhận xét độ khó.",
+  "minutes": 120,
+  "has_listening": true,
+  "essay_words": null,
+  "sections": [
+   {
+    "format": "listening",
+    "items": null,
+    "points": null,
+    "note": "Nghe hiểu (theo quy định 2026)"
+   },
+   {
+    "format": "other",
+    "items": null,
+    "points": null,
+    "note": "Kiến thức ngôn ngữ (ngữ âm/từ vựng/ngữ pháp – không rõ chi tiết)"
+   },
+   {
+    "format": "reading_mcq",
+    "items": null,
+    "points": null,
+    "note": "Đọc hiểu – dạng cụ thể chưa rõ"
+   },
+   {
+    "format": "other",
+    "items": null,
+    "points": null,
+    "note": "Viết – dạng cụ thể và số từ chưa rõ"
+   }
+  ],
+  "sample_links": []
+ },
+ "exam_2026": {
+  "dates": "25–26/5/2026. 25/5: Toán 90' (7h30), Tiếng Anh 60' (9h45), Ngữ văn 120' (14h00). 26/5 sáng (7h30, 120'): môn chuyên Toán, Lý, Hóa, Văn, Tiếng Anh, Tiếng Trung, Tin; 26/5 chiều (14h00, 120'): chuyên Sinh, Sử, Địa.",
+  "organisation": "Toàn tỉnh (Điện Biên không sáp nhập); bài thi chung dùng chung đề với các trường THPT công lập; năm đầu vận hành chính quyền 2 cấp, 32 điểm thi/430 phòng thi",
+  "common_subjects": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh"
+  ],
+  "notes": "9.869 thí sinh đăng ký toàn tỉnh năm 2026. Toán và Tiếng Anh chung thi trắc nghiệm, Ngữ văn tự luận. Hồ sơ chuyên nộp 12/5–18/5/2026; kết quả chuyên công bố trước 16/6/2026; phúc khảo trong 10 ngày. Năm 2025 kỳ thi diễn ra 28–29/5/2025 (9.315 thí sinh); năm 2024 thi từ 4/6/2024."
+ },
+ "plan_2027": null,
+ "stories": [],
+ "prep_tips": [
+  "Bài chuyên Anh chỉ 120 phút (ngắn hơn mức 150 phút phổ biến) và gồm kiến thức ngôn ngữ + Nghe, Đọc, Viết — luyện tốc độ làm bài, có phần nghe (quy định tuyển sinh 2026).",
+  "Thi chuyên Anh (buổi 1) vẫn có thể đăng ký thêm chuyên Trung (buổi 2); ngoài ra thí sinh NV1 chuyên Anh trượt được xét vào 40% chỉ tiêu lớp chuyên Trung bằng điểm Anh — năm 2026 mức này là 36,7 (tuyensinh247).",
+  "Môn Toán chung chỉ 90 phút trắc nghiệm, Tiếng Anh chung 60 phút trắc nghiệm, đều thi buổi sáng 25/5 — chuẩn bị sức để thi liên tiếp (lịch thi 2026).",
+  "Điều kiện sơ tuyển cao: học tập và rèn luyện mức Tốt (không chỉ Khá) — cần giữ học bạ lớp 9 tốt (quy định 2026)."
+ ],
+ "confidence": "low",
+ "gaps": [
+  "Điểm chuẩn chuyên Anh 2022, 2023, 2025 (2025 chỉ có trong ảnh); điểm 2024 từ nguồn thứ cấp có mâu thuẫn.",
+  "Chỉ tiêu chuyên Anh các năm trước 2026; số thí sinh đăng ký.",
+  "Cấu trúc chi tiết, biểu điểm, đề mẫu bài chuyên Anh; thời lượng bài chuyên các năm trước 2026.",
+  "Văn bản gốc của trường/Sở năm 2026 (chỉ đọc được qua tuyensinh247).",
+  "Kế hoạch 2027.",
+  "Không tìm thấy chia sẻ kinh nghiệm thật."
+ ],
+ "sources": [
+  {
+   "title": "Tuyensinh247 – Tuyển sinh lớp 10 Điện Biên 2026",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/dien-bien-p51.html"
+  },
+  {
+   "title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 Điện Biên",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/dien-bien-p51.html"
+  },
+  {
+   "title": "Báo Văn hóa – Điện Biên có 9.869 thí sinh tham gia kì thi tuyển sinh lớp 10 (23/5/2026)",
+   "url": "https://baovanhoa.vn/doi-song/dien-bien-co-9869-thi-sinh-tham-gia-ki-thi-tuyen-sinh-lop-10-230869.html"
+  },
+  {
+   "title": "Thông báo tuyển sinh lớp 10 năm học 2026-2027 – THPT Thanh Chăn (lịch thi chung 25/5/2026)",
+   "url": "https://thptthanhchan.dienbien.edu.vn/uploads/news/2026_02/4-thong-bao-tuyen-sinh-vao-lop-10-nh-2026-2027-d-24.04.2026_15h40p44_signed.pdf"
+  },
+  {
+   "title": "Doctailieu – Điểm chuẩn tuyển sinh vào lớp 10 Điện Biên",
+   "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-dien-bien"
+  },
+  {
+   "title": "Download.vn – Điểm chuẩn vào 10 Điện Biên",
+   "url": "https://download.vn/diem-chuan-lop-10-dien-bien-60477"
+  },
+  {
+   "title": "Hoatieu – Điểm thi tuyển sinh lớp 10 năm 2025 Điện Biên",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-dien-bien-232999"
+  },
+  {
+   "title": "Báo Văn hóa – Hơn 8.100 thí sinh Điện Biên tham gia kỳ thi tuyển sinh vào lớp 10 (04/6/2024)",
+   "url": "https://baovanhoa.vn/doi-song/hon-8100-thi-sinh-dien-bien-tham-gia-ky-thi-tuyen-sinh-vao-lop-10-95652.html"
+  },
+  {
+   "title": "Điện Máy Chợ Lớn – Điểm chuẩn lớp 10 tỉnh Điện Biên (chỉ tiêu 2026: 350 HS/10 lớp)",
+   "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-tinh-dien-bien"
+  }
+ ],
+ "formula_raw": {
+  "text": "Tổng điểm xét tuyển = Ngữ văn + Toán + Tiếng Anh (chung) + 2 × điểm môn chuyên",
+  "parts": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh (chung)",
+   "Anh chuyên×2"
+  ],
+  "max": 50,
+  "conditions": "Sơ tuyển: kết quả học tập và rèn luyện đạt mức Tốt; dự đủ các bài, không vi phạm quy chế, mọi bài thi ≥ 2,0. Hòa điểm: ưu tiên điểm bài chuyên, rồi điểm TB môn chuyên lớp 9. Tuyensinh247 có nêu điểm khuyến khích giải HSG tỉnh (Nhất +1,5; Nhì +1,0; Ba +0,5) theo TT 30/2024 nhưng không rõ có cộng vào điểm xét chuyên hay không.",
+  "formula_by_year": {
+   "2026": "Văn + Toán + Anh + 2 × chuyên (thang 50) — theo thông tin tuyển sinh 2026 trên tuyensinh247 (dẫn Công văn 3119/SGDĐT-GDTrH ngày 14/10/2025)"
+  }
+ },
+ "schools_raw": [
+  {
+   "name": "THPT chuyên Lê Quý Đôn (Điện Biên)",
+   "old_province": "Điện Biên",
+   "city": "Điện Biên Phủ",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2026": 35
+     },
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": null,
+      "2024": 36.2,
+      "2025": null,
+      "2026": 38.7
+     },
+     "scale": {
+      "2024": 50,
+      "2026": 50
+     },
+     "note": "2026 theo tuyensinh247. 2024 theo doctailieu.com (độ tin cậy thấp: cùng trang có dòng '32.30 (Anh)' không giải thích). Năm 2023 chỉ biết 'điểm tuyển cao nhất là môn chuyên Tiếng Anh (38 điểm)' — đây là điểm cao nhất, không phải điểm chuẩn. Tham khảo cũ: 2020: 34,8; 2021: 25,40 (download.vn). Thang 50 năm 2024 là giả định theo công thức hệ số 2."
+    },
+    {
+     "lang": "Trung",
+     "admit_by_english": true,
+     "quota": {
+      "2026": 35
+     },
+     "cut": {
+      "2024": 36.25,
+      "2026": 34.2
+     },
+     "scale": {
+      "2024": 50,
+      "2026": 50
+     },
+     "note": "2026: 34,2 (thí sinh thi Tiếng Trung) và 36,7 (xét từ thí sinh NV1 chuyên Anh trượt, tối đa 40% chỉ tiêu). 2024: 36,25 theo doctailieu.com (độ tin cậy thấp). Bài chuyên Tiếng Trung 120' gồm 5 phần: Nghe hiểu, Ngữ âm, Từ vựng–ngữ pháp, Đọc hiểu, Viết."
+    }
+   ]
+  }
+ ],
+ "goals": [
+  {
+   "k": "so-chuyen-le-quy-don-dien-bien",
+   "name": "chuyên Lê Quý Đôn (Điện Biên)",
+   "score": 6.9,
+   "paper": "so",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "so-chuyen-le-quy-don-dien-bien"
+}

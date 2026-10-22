@@ -1,0 +1,109 @@
+{
+  "so": "Sơn La",
+  "slug": "son-la",
+  "merged_from": ["Sơn La"],
+  "exam_2026": {
+    "dates": "01–02/6/2026: 01/6 sáng Ngữ văn (120'), 01/6 chiều Toán (120'), 02/6 sáng Tiếng Anh chung (60'), 02/6 chiều môn chuyên (150', chỉ thí sinh Chuyên Sơn La). Thí sinh làm thủ tục dự thi 31/5/2026.",
+    "organisation": "Toàn tỉnh (Sơn La không sáp nhập); bài thi chung dùng chung đề với các trường THPT công lập, thi môn chuyên tại Trường THPT Chuyên Sơn La",
+    "common_subjects": ["Toán", "Ngữ văn", "Tiếng Anh"],
+    "notes": "Sở GD&ĐT Sơn La từng đề xuất bài thi thứ ba là bài thi tổ hợp trắc nghiệm (Sử, Địa, KHTN, Tiếng Anh; dự thảo 90 phút, 80 câu, trong đó 30 câu tiếng Anh) nhưng ngày 16/01/2026 quyết định chưa trình UBND tỉnh, giữ Tiếng Anh trắc nghiệm 60 phút. Sở nói sẽ tiếp tục nghiên cứu và chọn thời điểm áp dụng sau (có thể ảnh hưởng năm 2027). Năm 2026 có hơn 19.100 thí sinh toàn tỉnh. Điểm chuẩn dự kiến công bố 27/6/2026."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": "Năm 2026: ĐXT = Toán + Ngữ văn + Tiếng Anh (chung) + 3 × điểm môn chuyên + điểm khuyến khích (giải HSG cấp tỉnh môn chuyên: Nhất +1,5; Nhì +1,0; Ba +0,5)",
+    "parts": ["Toán", "Ngữ văn", "Tiếng Anh (chung)", "Anh chuyên×3"],
+    "max": 60,
+    "conditions": "Kết quả học tập và rèn luyện các năm THCS mức Khá trở lên; phải dự đủ 4 bài thi; mỗi bài thi chung ≥ 3,5, bài thi chuyên ≥ 5,0. Hòa điểm: ưu tiên điểm môn chuyên cao hơn, rồi điểm trung bình lớp 9, 8, 7, 6. Học sinh ngoài tỉnh phải có hộ khẩu/tạm trú Sơn La trước 30/4/2026.",
+    "formula_by_year": {
+      "2024": "Chưa tìm được văn bản 2024; thang 50 (hệ số 2) là giả định theo quy định 2025 và mức điểm chuẩn 2024 (cao nhất 39,15)",
+      "2025": "ĐXT = ĐT + ĐV + ĐA + 2 × ĐC + ĐKK (thang 50 + khuyến khích)",
+      "2026": "ĐXT = ĐT + ĐV + ĐA + 3 × ĐC + ĐKK (thang 60 + khuyến khích) — môn chuyên tăng từ hệ số 2 lên 3"
+    }
+  },
+  "nv_rule": "Tối đa 2 nguyện vọng lớp chuyên. Năm 2026 NV2 bị giới hạn: NV1 Toán → NV2 Tin/Lý/Hóa/Sinh; NV1 Ngữ văn → NV2 Sử/Địa/Tiếng Trung. Không có quy định NV2 cho chuyên Anh (điểm chuẩn Anh 2026 chỉ có NV1). Trúng NV1 thì không xét NV2; điểm chuẩn NV2 cao hơn NV1 2,0 điểm. Nguyện vọng vào Trường THPT Chuyên không tính trong 2 nguyện vọng THPT công lập; trượt chuyên được dùng điểm bài thi chung để xét trường PTDTNT/THPT khác.",
+  "chuyen_paper": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": true,
+    "essay_words": 160,
+    "sections": [
+      {"format": "listening", "items": 5, "points": null, "note": "Đề 2025 – Listening Part 1: chọn tranh (nghe 2 lần)"},
+      {"format": "listening", "items": 5, "points": null, "note": "Listening Part 2: True/False"},
+      {"format": "listening", "items": 8, "points": null, "note": "Listening Part 3: điền form, không quá 2 từ"},
+      {"format": "listening", "items": 7, "points": null, "note": "Listening Part 4: trắc nghiệm A–D"},
+      {"format": "sentence_completion", "items": 15, "points": null, "note": "Lexico-Grammar Part 1: trắc nghiệm A–D"},
+      {"format": "word_formation", "items": 5, "points": null, "note": "Lexico-Grammar Part 2: dạng đúng của từ in hoa"},
+      {"format": "other", "items": 5, "points": null, "note": "Lexico-Grammar Part 3: điền một giới từ hoặc mạo từ"},
+      {"format": "cloze", "items": 5, "points": null, "note": "Reading Part 1: cloze A–D"},
+      {"format": "open_cloze", "items": 5, "points": null, "note": "Reading Part 2: điền 1 từ"},
+      {"format": "reading_mcq", "items": 7, "points": null, "note": "Reading Part 3: đọc hiểu trắc nghiệm (bài 2025 về ChatGPT)"},
+      {"format": "matching_headings", "items": 5, "points": null, "note": "Reading Part 4 Task 1: ghép 5 đoạn A–E với 7 tiêu đề (thừa 2)"},
+      {"format": "other", "items": 3, "points": null, "note": "Reading Part 4 Task 2: summary completion, không quá 2 từ lấy từ bài đọc (câu 73–75)"},
+      {"format": "transformation", "items": 5, "points": null, "note": "Writing Part 1: viết lại câu"},
+      {"format": "guided_writing", "items": 1, "points": null, "note": "Writing Part 2: email thân mật cho lời khuyên, 50–80 từ"},
+      {"format": "paragraph_writing", "items": 1, "points": null, "note": "Writing Part 3: đoạn văn 140–160 từ (đề 2025: hai lợi ích của học trường chuyên)"}
+    ],
+    "difficulty": "B2",
+    "difficulty_evidence": "Ước lượng từ cấu trúc đề 2025 (đề 9 trang, 150 phút: nghe 4 phần 25 câu, matching headings, summary completion, đoạn văn 140–160 từ) — chưa tìm thấy nhận xét của giáo viên/báo về độ khó. Số điểm từng phần không công bố trong nguồn đã đọc.",
+    "sample_links": ["https://springboard.vn/?p=4503"]
+  },
+  "schools": [
+    {
+      "name": "THPT Chuyên Sơn La",
+      "old_province": "Sơn La",
+      "city": "Sơn La",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {"2025": 70, "2026": 70},
+          "applicants": {},
+          "cut": {"2022": null, "2023": null, "2024": 34.10, "2025": null, "2026": 43},
+          "scale": {"2024": 50, "2025": 50, "2026": 60},
+          "note": "2 lớp chuyên Anh (35 HS/lớp) cả 2025 và 2026. 2024 là điểm chuẩn dự kiến NV1 (Báo Lâm Đồng). 2026 là điểm chuẩn dự kiến NV1 công bố 27/6/2026, thang 60 vì môn chuyên hệ số 3 — không so sánh trực tiếp với 2024. Điểm chuẩn chuyên Anh 2025 nằm trong ảnh, không trích được (2025 cao nhất 37,02 chuyên Lý/Hóa, thấp nhất 33,25 chuyên Sử theo Mực Tím)."
+        },
+        {
+          "lang": "Trung",
+          "admit_by_english": null,
+          "quota": {"2026": 35},
+          "cut": {"2026": 36},
+          "scale": {"2026": 60},
+          "note": "Lớp chuyên Tiếng Trung xuất hiện trong thông báo tuyển sinh 2026 (1 lớp, 35 HS); 2025 chưa có. Điểm chuẩn dự kiến 2026: NV1 36, NV2 38 (NV2 dành cho thí sinh NV1 chuyên Ngữ văn). Chưa rõ thí sinh thi bài chuyên Tiếng Trung riêng hay bài nào."
+        }
+      ]
+    }
+  ],
+  "stories": [],
+  "prep_tips": [
+    "Từ 2026 bài chuyên Anh nhân hệ số 3 (thang 60): điểm chuyên Anh quyết định gần một nửa tổng điểm, nên ưu tiên luyện bài chuyên hơn ba môn chung (Công văn 12/SGDĐT-QLCLGD; Thông báo 06/TB-THPTC 2026).",
+    "Bài chuyên 150 phút có phần nghe 4 bài/25 câu, mỗi bài nghe 2 lần, gồm chọn tranh, True/False, điền form ≤2 từ — cần luyện nghe định dạng kiểu Cambridge (đề 2025, springboard.vn).",
+    "Phần đọc có matching headings và summary completion lấy từ trong bài (≤2 từ) — luyện kỹ năng skim/scan và chép đúng chính tả từ bài (đề 2025).",
+    "Viết gồm 5 câu viết lại, email 50–80 từ và đoạn văn 140–160 từ: luyện viết đúng giới hạn số từ, vì đề ghi rõ 'MUST be between' (đề 2025).",
+    "Môn Tiếng Anh chung là trắc nghiệm 60 phút và cần ≥3,5; bài chuyên cần ≥5,0 mới được xét (Thông báo 06/TB-THPTC)."
+  ],
+  "confidence": "medium",
+  "gaps": [
+    "Điểm chuẩn chuyên Anh 2022, 2023, 2025 (2025 chỉ có trong ảnh trên Dân trí/Giáo dục Thủ đô).",
+    "Điểm chuẩn chính thức (sau phúc khảo) 2026; điểm 2026 và 2024 đều là dự kiến.",
+    "Số thí sinh đăng ký chuyên Anh từng năm (tỉ lệ chọi).",
+    "Biểu điểm từng phần của đề chuyên Anh; nhận xét độ khó của giáo viên.",
+    "Hình thức thi của lớp chuyên Tiếng Trung 2026.",
+    "Kế hoạch tuyển sinh 2027 (chưa công bố; có thể quay lại phương án bài thi tổ hợp).",
+    "Không tìm thấy chia sẻ kinh nghiệm thật của học sinh/giáo viên Chuyên Sơn La về chuyên Anh."
+  ],
+  "sources": [
+    {"title": "Thông báo 06/TB-THPTC tuyển sinh lớp 10 Trường THPT Chuyên Sơn La năm học 2026-2027 (07/4/2026)", "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-06/13/thpt-chuyen-son-la.pdf"},
+    {"title": "Báo Văn hóa – Sơn La công bố điểm chuẩn dự kiến vào lớp 10 năm học 2026-2027", "url": "https://baovanhoa.vn/doi-song/son-la-cong-bo-diem-chuan-du-kien-vao-lop-10-nam-hoc-20262027-240921.html"},
+    {"title": "Giáo dục Thủ đô – Sơn La công bố điểm chuẩn dự kiến vào lớp 10 (27/6/2026)", "url": "https://giaoducthudo.giaoducthoidai.vn/son-la-cong-bo-diem-chuan-du-kien-vao-lop-10-216183.html"},
+    {"title": "Dân Việt – Sơn La công bố điểm chuẩn dự kiến vào lớp 10 năm học 2026-2027", "url": "https://trangtraiviet.danviet.vn/son-la-cong-bo-diem-chuan-du-kien-vao-lop-10-nam-hoc-2026-2027-d1438400.html"},
+    {"title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 Sơn La", "url": "https://diemthi.tuyensinh247.com/dc-lop10/son-la-p21.html"},
+    {"title": "Tuyensinh247 – Thông tin tuyển sinh THPT Chuyên Sơn La", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-son-la-874.html"},
+    {"title": "Báo Lâm Đồng – Điểm chuẩn lớp 10 năm 2024-2025 tại Sơn La", "url": "https://baolamdong.vn/diem-chuan-lop-10-nam-2024-2025-tai-son-la-moi-nhat-220552.html"},
+    {"title": "Dân trí – Sơn La công bố điểm thi, điểm chuẩn vào lớp 10: Cao nhất lớp chuyên hóa (2025)", "url": "https://dantri.com.vn/giao-duc/son-la-cong-bo-diem-thi-diem-chuan-vao-lop-10-cao-nhat-lop-chuyen-hoa-20250618233832583.htm"},
+    {"title": "Mực Tím – Xem điểm chuẩn dự kiến lớp 10 của tỉnh Sơn La (2025)", "url": "https://muctim.tuoitre.vn/xem-diem-chuan-du-kien-lop-10-cua-tinh-son-la-101250616221733852.htm"},
+    {"title": "Báo Văn hóa – Hơn 19.100 thí sinh Sơn La hoàn thành ngày thi đầu tiên vào lớp 10 (01/6/2026)", "url": "https://baovanhoa.vn/doi-song/hon-19100-thi-sinh-son-la-hoan-thanh-ngay-thi-dau-tien-vao-lop-10-233386.html"},
+    {"title": "Đại biểu Nhân dân – Sơn La tạm hoãn bài thi tổ hợp thứ ba (17/01/2026)", "url": "https://daibieunhandan.vn/son-la-tam-hoan-bai-thi-to-hop-thu-ba-trong-tuyen-sinh-vao-lop-10-10404048.html"},
+    {"title": "Công văn 12/SGDĐT – chuẩn bị xây dựng KH tuyển sinh 2026-2027 (môn chuyên hệ số 3)", "url": "https://storage-vnportal.vnpt.vn/sla-ubnd/5313/TIN TỨC/12.vv chuan bi trien khai xd kh tuyen sinh vao cac lop dau cap nam hoc_2026-2027.pdf"},
+    {"title": "Znews – Một tỉnh dự kiến thi kiến thức 8 môn để tuyển sinh lớp 10", "url": "https://znews.vn/mot-tinh-du-kien-thi-kien-thuc-8-mon-de-tuyen-sinh-lop-10-post1618337.html"},
+    {"title": "Springboard – Đề thi và đáp án chuyên Anh Sơn La 2025-2026", "url": "https://springboard.vn/?p=4503"}
+  ]
+}

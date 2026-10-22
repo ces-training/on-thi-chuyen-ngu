@@ -1,0 +1,80 @@
+{
+  "so": "Thành phố Huế",
+  "slug": "hue",
+  "merged_from": ["Thừa Thiên Huế"],
+  "exam_2026": {
+    "dates": null,
+    "organisation": "một đề chung cho cả thành phố (Huế không sáp nhập; trước 2025 là tỉnh Thừa Thiên Huế, trực thuộc TW từ 1/1/2025)",
+    "common_subjects": ["Toán", "Ngữ văn", "Ngoại ngữ"],
+    "notes": "Môn thứ ba năm 2026 là Ngoại ngữ (LSVN, Znews). Hơn 18.000 học sinh dự thi lớp 10, tăng khoảng 5.000 so với năm trước. Điểm chuẩn công bố 15/6/2026; phúc khảo trong 7 ngày, thí sinh chỉ đăng ký chuyên nộp phúc khảo tại trường chuyên; tra cứu tại tracuudiem.thuathienhue.edu.vn (Đại biểu Nhân dân). Chưa tìm được ngày thi cụ thể."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": null,
+    "parts": [],
+    "max": null,
+    "conditions": null,
+    "formula_by_year": {}
+  },
+  "nv_rule": "Chưa tìm được quy định chi tiết. Quốc Học có 3 lớp chuyên ngoại ngữ: Anh, Pháp, Nhật. Chưa xác minh được lớp Pháp/Nhật có xét bằng bài thi tiếng Anh hay không. Ngoài trường chuyên, các trường công lập Hai Bà Trưng, Nguyễn Huệ, Nguyễn Trường Tộ có điểm chuẩn riêng theo ngoại ngữ (Anh, Pháp, Nhật) — năm 2026 Hai Bà Trưng: Anh 32,25, Nhật 29,5; Nguyễn Huệ: Anh 30, Pháp 24,35, Nhật 22,2.",
+  "chuyen_paper": {
+    "minutes": null,
+    "scale": null,
+    "has_listening": null,
+    "essay_words": null,
+    "sections": [],
+    "difficulty": null,
+    "difficulty_evidence": "Chưa đọc được đề chuyên Anh Quốc Học (Vietjack có đề chuyên Anh Thừa Thiên Huế 2025 nhưng không truy cập được trong phiên này).",
+    "sample_links": []
+  },
+  "schools": [
+    {
+      "name": "THPT chuyên Quốc Học",
+      "old_province": "Thừa Thiên Huế",
+      "city": "Huế",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {},
+          "applicants": {},
+          "cut": {"2022": null, "2023": 38.8, "2024": 37.8, "2025": null, "2026": 37.6},
+          "scale": {},
+          "note": "2026 = 37,6, cao nhất trong các lớp chuyên Quốc Học (Đại biểu Nhân dân 15/6/2026). 2023 và 2024 lấy từ hoatieu (ghi theo năm học '2023-2024' = 38,8 và '2024-2025' = 37,8 — hiểu là năm tuyển sinh 2023 và 2024). Năm cũ: 2021 = 36,1; 2020 = 38,20. Thang điểm chưa xác minh từ văn bản (mức điểm gợi ý thang 50)."
+        },
+        {
+          "lang": "Pháp",
+          "admit_by_english": null,
+          "cut": {"2023": 38.6, "2024": 35.46, "2026": 36.48},
+          "note": "Hoatieu: 2021 = 36,61; 2020 = 34,08. 2026 theo Đại biểu Nhân dân."
+        },
+        {
+          "lang": "Nhật",
+          "admit_by_english": null,
+          "cut": {"2023": 35.29, "2024": 33.86, "2026": 33.3},
+          "note": "Hoatieu: 2021 = 32,71; 2020 = 33,06. 2026 theo Đại biểu Nhân dân."
+        }
+      ]
+    }
+  ],
+  "stories": [],
+  "prep_tips": [
+    "Chuyên Anh là lớp có điểm chuẩn cao nhất Quốc Học năm 2026 (37,6), cao hơn cả chuyên Tin, Toán — cạnh tranh lớn nhất trong trường (Đại biểu Nhân dân)."
+  ],
+  "confidence": "low",
+  "gaps": [
+    "Công thức xét tuyển, hệ số môn chuyên, thang điểm, điều kiện của Quốc Học các năm",
+    "Ngày thi 2026 cụ thể và ngày thi môn chuyên",
+    "Điểm chuẩn chuyên Anh 2022 và 2025",
+    "Chỉ tiêu, số thí sinh đăng ký lớp chuyên Anh/Pháp/Nhật",
+    "Cấu trúc đề, độ khó, đề mẫu chuyên Anh Quốc Học",
+    "Lớp Pháp, Nhật có nhận bài thi tiếng Anh không; quy định NV2",
+    "Câu chuyện ôn thi (chưa tìm được — hết lượt tìm kiếm trong phiên)",
+    "Kế hoạch 2027"
+  ],
+  "sources": [
+    {"title": "Đại biểu Nhân dân: Huế công bố điểm chuẩn vào lớp 10 năm học 2026-2027", "url": "https://daibieunhandan.vn/hue-cong-bo-diem-chuan-vao-lop-10-nam-hoc-2026-2027-10420504.html"},
+    {"title": "Hoatieu: Điểm chuẩn lớp 10 Thừa Thiên Huế các năm", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-thua-thien-hue-208982"},
+    {"title": "LSVN: Nhiều địa phương công bố môn thi thứ ba vào lớp 10 năm học 2026-2027", "url": "https://lsvn.vn/nhieu-dia-phuong-cong-bo-mon-thi-thu-ba-vao-lop-10-nam-hoc-2026-2027-a169644.html"},
+    {"title": "Znews: Nhiều địa phương đã công bố môn thi thứ ba vào lớp 10", "url": "https://znews.vn/nhieu-dia-phuong-da-cong-bo-mon-thi-thu-ba-vao-lop-10-ha-noi-bao-gio-post1622708.html"}
+  ]
+}

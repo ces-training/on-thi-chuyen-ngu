@@ -48,8 +48,8 @@
  "nv_rule": "Chưa tìm được văn bản công khai về số nguyện vọng chuyên. Có dấu hiệu xét chuyển NV2 từ chuyên Anh sang chuyên Trung: năm 2022 chuyên Trung có điểm chuẩn riêng 31,50 cho thí sinh 'từ chuyên Anh NV2 sang' (doctailieu). Năm 2026 nguồn tuyển của mỗi lớp ghi 'HS đăng ký NV1 chuyên Tiếng Anh/Tiếng Trung' (vndoc).",
  "options": [
   {
-   "id": "so-chuyn-chu-vn-an-lng-sn--anh",
-   "sk": "so-chuyn-chu-vn-an-lng-sn-",
+   "id": "so-chuyen-chu-van-an-lang-son-anh",
+   "sk": "so-chuyen-chu-van-an-lang-son",
    "school": "THPT Chuyên Chu Văn An (Lạng Sơn)",
    "area": "Lạng Sơn",
    "cls": "chuyên Anh",
@@ -237,12 +237,12 @@
  ],
  "goals": [
   {
-   "k": "so-chuyn-chu-vn-an-lng-sn-",
+   "k": "so-chuyen-chu-van-an-lang-son",
    "name": "Chuyên Chu Văn An (Lạng Sơn)",
    "score": 6.6,
    "paper": "so",
    "need_tv_more": false
   }
  ],
- "goal_default": "so-chuyn-chu-vn-an-lng-sn-"
+ "goal_default": "so-chuyen-chu-van-an-lang-son"
 }

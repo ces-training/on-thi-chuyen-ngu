@@ -1,0 +1,114 @@
+{
+  "so": "Vĩnh Long",
+  "slug": "vinh-long",
+  "merged_from": ["Vĩnh Long", "Bến Tre", "Trà Vinh"],
+  "exam_2026": {
+    "dates": "Thi tuyển vào 3 trường chuyên dự kiến 02–03/7/2026; công bố kết quả trước 31/7/2026 (tuyensinh247; Hoatieu cũng ghi lịch 2–3/7).",
+    "organisation": "Sở GD&ĐT Vĩnh Long tổ chức chung một kế hoạch cho cả tỉnh mới: chỉ 3 trường chuyên (Nguyễn Bỉnh Khiêm, Bến Tre, Nguyễn Thiện Thành) thi tuyển; mọi trường THPT/DTNT không chuyên xét tuyển bằng học bạ THCS (không thi). Mỗi trường chuyên xét điểm chuẩn riêng. Chưa tìm được nguồn xác nhận 3 trường dùng chung một đề chuyên Anh.",
+    "common_subjects": ["Toán", "Ngữ văn", "Tiếng Anh"],
+    "notes": "Toán, Ngữ văn tự luận; Tiếng Anh chung thi trắc nghiệm; môn chuyên tự luận, Tin học thi lập trình. Tổng chỉ tiêu chuyên 31 lớp / 990 HS. Chuyên Bến Tre tuyển 368 HS, trong đó chuyên Anh 70. Năm 2026 có tranh luận vì chuyên Bến Tre nhận cả thí sinh chuyên Sử được 2,25 điểm do thiếu thí sinh (Tuổi Trẻ, CafeF 28/7/2026)."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": "Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Tiếng Anh (hệ số 1) + Môn chuyên × 2; không cộng điểm ưu tiên.",
+    "parts": ["Toán", "Ngữ văn", "Tiếng Anh (chung)", "Anh chuyên×2"],
+    "max": 50,
+    "conditions": "2026: hạnh kiểm và học lực lớp 9 từ Khá trở lên; ĐTB cả năm lớp 9 môn đăng ký chuyên ≥ 8,0 (Ngữ văn ≥ 7,5); điểm từng môn chung > 1,0, môn chuyên > 2,0; dự thi đủ, không vi phạm quy chế. Trúng tuyển chuyên thì không được chuyển nguyện vọng sang trường không chuyên.",
+    "formula_by_year": {
+      "2025": "Trà Vinh cũ (Nguyễn Thiện Thành): ĐXT = Văn + Toán + Tiếng Anh + điểm môn chuyên (đã tính hệ số) + ưu tiên/khuyến khích; mọi bài > 2,0; có sơ tuyển 15–25/5/2025. Vĩnh Long cũ, Bến Tre cũ: chưa tìm được văn bản."
+    }
+  },
+  "nv_rule": "Trường chuyên: chưa tìm được quy định số nguyện vọng chuyên năm 2026. Trường không chuyên (xét tuyển): tối đa 3 nguyện vọng vào các trường khác nhau, xét NV1 trước (đủ 90% chỉ tiêu) rồi NV2, NV3. Trúng chuyên thì không chuyển sang công lập không chuyên. Trà Vinh 2025: mỗi thí sinh chỉ nộp 1 bộ hồ sơ vào 1 trường, 1 môn chuyên; trượt chuyên được dùng kết quả để đăng ký trường THPT theo địa bàn.",
+  "chuyen_paper": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": null,
+    "essay_words": null,
+    "sections": [],
+    "difficulty": null,
+    "difficulty_evidence": "Chưa tìm được đề chuyên Anh của Nguyễn Bỉnh Khiêm, Bến Tre hay Nguyễn Thiện Thành (2022–2026) hoặc nhận xét về độ khó. Thời lượng 150 phút lấy theo hướng dẫn thi Trà Vinh 2025; năm 2026 chưa xác nhận.",
+    "sample_links": []
+  },
+  "schools": [
+    {
+      "name": "THPT chuyên Nguyễn Bỉnh Khiêm",
+      "old_province": "Vĩnh Long",
+      "city": "Vĩnh Long",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {},
+          "applicants": {},
+          "cut": {"2022": null, "2023": null, "2024": null, "2025": 33.5, "2026": 30.7},
+          "scale": {"2026": 50},
+          "note": "2026: 30,7 (tuyensinh247), cao nhất trong 3 trường chuyên của tỉnh. 2025: 33,50, thứ hai sau chuyên Toán 36,75 (Điện máy Chợ Lớn, tổng hợp, chưa có nguồn chính thức thứ hai)."
+        }
+      ]
+    },
+    {
+      "name": "THPT chuyên Bến Tre",
+      "old_province": "Bến Tre",
+      "city": "Bến Tre",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {"2026": 70},
+          "applicants": {},
+          "cut": {"2022": null, "2023": null, "2024": null, "2025": null, "2026": 29.14},
+          "scale": {"2026": 50},
+          "note": "2026: 70 chỉ tiêu (CafeF/Tuổi Trẻ). Điểm chuẩn 29,14 (tuyensinh247; các môn khác của bảng này khớp với số Tuổi Trẻ đưa tin: Hóa 33, Sinh 32, Văn 31,5, Địa 15,5)."
+        }
+      ]
+    },
+    {
+      "name": "THPT chuyên Nguyễn Thiện Thành",
+      "old_province": "Trà Vinh",
+      "city": "Trà Vinh",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {},
+          "applicants": {},
+          "cut": {"2022": null, "2023": null, "2024": null, "2025": null, "2026": 28.3},
+          "scale": {"2026": 50},
+          "note": "2026: 28,3 (tuyensinh247). Năm 2025 thi chuyên chiều 6/6/2025, 150 phút."
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "title": "Thí sinh chỉ đạt 2,25 điểm vẫn vào trường chuyên: Lãnh đạo Sở GD&ĐT tỉnh Vĩnh Long lên tiếng",
+      "who": "báo",
+      "year": 2026,
+      "school": "THPT chuyên Bến Tre",
+      "summary": "Năm đầu sau sáp nhập, lớp chuyên Sử, Địa của chuyên Bến Tre ít người đăng ký nên nhận cả thí sinh điểm môn chuyên rất thấp (2,25–5). Trong khi đó chuyên Anh và chuyên Toán là hai lớp đông nhất, mỗi lớp 70 chỉ tiêu, điểm chuẩn chuyên Anh 29,14.",
+      "takeaways": ["Chuyên Anh là lớp cạnh tranh – không trông chờ thiếu thí sinh như Sử, Địa", "Điều kiện chỉ cần môn chuyên > 2,0 nhưng điểm chuẩn thực tế quanh 29–31/50"],
+      "url": "https://cafef.vn/thi-sinh-chi-dat-225-diem-van-vao-truong-chuyen-lanh-dao-so-gddt-tinh-vinh-long-len-tieng-188260728143737659.chn"
+    }
+  ],
+  "prep_tips": [
+    "Tiếng Anh chung thi trắc nghiệm, môn chuyên nhân 2 – điểm chuẩn chuyên Anh 2026 chỉ 28,3–30,7/50, nên mục tiêu thực tế là đạt chắc 7+ môn chuyên và không hụt Toán, Văn (tuyensinh247).",
+    "Điều kiện dự thi: ĐTB môn Tiếng Anh lớp 9 ≥ 8,0 và học lực lớp 9 Khá trở lên – giữ điểm học bạ ngay từ lớp 9 (tuyensinh247).",
+    "Không được cộng điểm ưu tiên vào điểm xét chuyên – chỉ có điểm thi (tuyensinh247)."
+  ],
+  "confidence": "low",
+  "gaps": [
+    "Kế hoạch tuyển sinh 2027 chưa tìm thấy.",
+    "Không có đề chuyên Anh của 3 trường (2022–2026), nên chưa có cấu trúc, số câu, phần nghe, bài viết hay độ khó.",
+    "Thiếu điểm chuẩn chuyên Anh 2022–2025 của chuyên Bến Tre và Nguyễn Thiện Thành; 2022–2024 của Nguyễn Bỉnh Khiêm.",
+    "Không rõ năm 2026 ba trường chuyên dùng chung đề hay đề riêng, cũng như quy định số nguyện vọng chuyên.",
+    "Thiếu chỉ tiêu chuyên Anh của Nguyễn Bỉnh Khiêm, Nguyễn Thiện Thành và số thí sinh đăng ký.",
+    "Không tìm được bài chia sẻ kinh nghiệm ôn thi chuyên Anh thật nào của học sinh/giáo viên ở 3 tỉnh cũ."
+  ],
+  "sources": [
+    {"title": "Tuyensinh247 – Tuyển sinh lớp 10 Vĩnh Long 2026", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/vinh-long-p39.html"},
+    {"title": "Tuyensinh247 – Điểm chuẩn lớp 10 Vĩnh Long", "url": "https://diemthi.tuyensinh247.com/dc-lop10/vinh-long-p39.html"},
+    {"title": "Tuyensinh247 – Điểm chuẩn chuyên Bến Tre", "url": "https://diemthi.tuyensinh247.com/dc-lop10/ben-tre-p44.html"},
+    {"title": "CafeF (theo Tuổi Trẻ) – Thí sinh chỉ đạt 2,25 điểm vẫn vào trường chuyên", "url": "https://cafef.vn/thi-sinh-chi-dat-225-diem-van-vao-truong-chuyen-lanh-dao-so-gddt-tinh-vinh-long-len-tieng-188260728143737659.chn"},
+    {"title": "Điện máy Chợ Lớn – Điểm chuẩn lớp 10 tỉnh Vĩnh Long", "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-tinh-vinh-long"},
+    {"title": "Sở GD&ĐT Trà Vinh – Hướng dẫn thi tuyển sinh lớp 10 năm học 2025-2026", "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2025/TAN/travin.pdf"},
+    {"title": "Luật sư Việt Nam – Nhiều địa phương sử dụng phương thức xét tuyển vào lớp 10", "url": "https://lsvn.vn/nhieu-dia-phuong-su-dung-phuong-thuc-xet-tuyen-vao-lop-10-a171186.html"},
+    {"title": "Hoatieu – Lịch thi vào 10 năm 2026-2027", "url": "https://hoatieu.vn/phap-luat/lich-thi-tuyen-sinh-lop-10-213450"}
+  ]
+}

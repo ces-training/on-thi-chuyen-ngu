@@ -1,0 +1,62 @@
+{
+  "so": "Quảng Ninh",
+  "slug": "quang-ninh",
+  "merged_from": ["Quảng Ninh"],
+  "exam_2026": {
+    "dates": "Hoatieu và FPT Shop (bảng tổng hợp lịch thi 2026) cùng ghi 3–5/7/2026; chưa đối chiếu được với văn bản Sở GD&ĐT Quảng Ninh. Ngày thi môn chuyên chưa rõ.",
+    "organisation": "Tỉnh không sáp nhập; một trường chuyên (THPT Chuyên Hạ Long). Thi 3 môn chung + môn chuyên.",
+    "common_subjects": ["Toán", "Ngữ văn", "Ngoại ngữ (Tiếng Anh, Tiếng Pháp hoặc Tiếng Trung)"],
+    "notes": "Quảng Ninh cho chọn môn ngoại ngữ chung là Anh, Pháp hoặc Trung (Hoatieu, lịch thi 2026-2027). Năm 2025 dự kiến thi 1–3/6/2025 gồm 3 môn chung và môn chuyên (LuatVietnam)."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": null,
+    "parts": [],
+    "max": null,
+    "conditions": "Bảng điểm chuẩn Chuyên Hạ Long 2023 có các tiêu chí phụ khi bằng điểm: điểm thi chuyên, ĐTB môn chuyên lớp 9, ĐTB các môn lớp 9, và 'điểm sơ tuyển'. Năm 2022 xét chỉ số phụ là điểm trung bình từng năm cấp THCS. Công thức xét tuyển chưa tìm được.",
+    "formula_by_year": {}
+  },
+  "nv_rule": "Bảng điểm chuẩn Chuyên Hạ Long 2023 chia cột NV1/NV2 cho từng lớp chuyên – có xét nguyện vọng 2 giữa các lớp chuyên. Chi tiết (số nguyện vọng, xét chuyên Trung bằng điểm Anh hay không) chưa tìm được.",
+  "chuyen_paper": {
+    "minutes": null,
+    "scale": null,
+    "has_listening": null,
+    "essay_words": null,
+    "sections": [],
+    "difficulty": null,
+    "difficulty_evidence": "Chưa tìm được đề chuyên Anh Hạ Long hay nhận xét độ khó.",
+    "sample_links": []
+  },
+  "schools": [
+    {
+      "name": "THPT Chuyên Hạ Long",
+      "old_province": "Quảng Ninh",
+      "city": "Hạ Long",
+      "classes": [
+        {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {"2020": 37.9, "2022": 45.25, "2023": null, "2024": null, "2025": 38.45, "2026": null}, "scale": {}, "note": "Hoatieu: 2025 là điểm chuẩn sơ bộ, cao nhất toàn trường; 2022: 45,25 (cả trường 470 HS trúng tuyển); 2020: 37,90. Bảng 2023 (PDF Sở) bị lỗi trích xuất, không ghép được số với môn. Thang điểm chưa rõ – mức chênh 2022 (45,25) và 2025 (38,45) có thể do đổi công thức."},
+        {"lang": "Trung", "admit_by_english": null, "cut": {"2020": 24.05}, "note": "Có lớp chuyên Trung (bảng điểm chuẩn 2023 có cột Trung)."}
+      ]
+    }
+  ],
+  "stories": [],
+  "prep_tips": [
+    "Chuyên Anh là lớp có điểm chuẩn sơ bộ cao nhất Chuyên Hạ Long năm 2025 (38,45) và năm 2022 (45,25) – cạnh tranh nhất trường (Hoatieu).",
+    "Khi bằng điểm, Chuyên Hạ Long xét điểm thi chuyên rồi đến điểm trung bình môn chuyên lớp 9 – cần giữ điểm học bạ môn Anh cao (bảng điểm chuẩn 2023 Sở GD&ĐT Quảng Ninh)."
+  ],
+  "confidence": "low",
+  "gaps": [
+    "Công thức xét tuyển chuyên và thang điểm; điểm sơ tuyển là gì",
+    "Điểm chuẩn chuyên Anh 2023, 2024, 2026 (và chính thức 2025); điểm chuẩn chuyên Trung các năm; có lớp chuyên Pháp/Nhật không",
+    "Chỉ tiêu, số thí sinh chuyên Anh",
+    "Xác minh lịch thi 2026 (3–5/7 theo trang tổng hợp) và ngày thi chuyên",
+    "Cấu trúc đề chuyên Anh, đề mẫu, độ khó",
+    "Kế hoạch 2027, chia sẻ kinh nghiệm thật (ngân sách tìm kiếm web đã hết trước khi bắt đầu tỉnh này)"
+  ],
+  "sources": [
+    {"title": "Điểm thi tuyển sinh lớp 10 Quảng Ninh – Hoatieu", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-quang-ninh-208780"},
+    {"title": "Bảng điểm chuẩn xét tuyển lớp 10 Trường THPT Chuyên Hạ Long 2023 (PDF – Thư viện Pháp luật)", "url": "https://cdn.thuvienphapluat.vn//uploads/tintuc/2023/06/24/diem-chuan-quang-ninh.pdf"},
+    {"title": "Lịch thi vào 10 năm 2026-2027 – Hoatieu", "url": "https://hoatieu.vn/phap-luat/lich-thi-tuyen-sinh-lop-10-213450"},
+    {"title": "Lịch thi vào lớp 10 năm 2026 – FPT Shop", "url": "https://fptshop.com.vn/tin-tuc/danh-gia/lich-thi-vao-lop-10-nam-2025-cua-63-tinh-175950"},
+    {"title": "Lịch thi vào lớp 10 năm học 2025-2026 của 63 tỉnh – LuatVietnam", "url": "https://luatvietnam.vn/giao-duc/lich-thi-vao-lop-10-cua-63-tinh-thanh-nam-hoc-2025-2026-886-101296-article.html"}
+  ]
+}

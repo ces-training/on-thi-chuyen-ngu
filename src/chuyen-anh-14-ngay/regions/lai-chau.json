@@ -1,0 +1,231 @@
+{
+ "slug": "lai-chau",
+ "name": "Lai Châu",
+ "merged_from": [],
+ "edition": "Bản Lai Châu",
+ "exam_md": [
+  5,
+  26
+ ],
+ "papers": {
+  "so": {
+   "map": "B2",
+   "label": "đề chuyên Anh của Sở Lai Châu",
+   "ac_add": 2.5,
+   "ac_cap": 10,
+   "ac_label": "Anh chung (đề chung)",
+   "difficulty": null,
+   "difficulty_evidence": "Chỉ biết bài chuyên Tiếng Anh thi 'tự luận kết hợp với trắc nghiệm khách quan', 150 phút, thang 10, hệ số 2. Không tìm thấy đề, đáp án hay nhận xét độ khó công khai.",
+   "minutes": 150,
+   "has_listening": null,
+   "essay_words": null,
+   "sections": [],
+   "sample_links": []
+  }
+ },
+ "formulas": {
+  "so": {
+   "w": {
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 2.0
+   },
+   "paper": "so",
+   "text": "Điểm xét tuyển = Toán + Ngữ văn + Tiếng Anh (chung, hệ số 1) + 2 × điểm bài thi chuyên. Không cộng điểm ưu tiên, khuyến khích.",
+   "max": 50
+  }
+ },
+ "m3_label": null,
+ "exams": {
+  "so": {
+   "label": "Kỳ thi của Sở GD&ĐT Lai Châu",
+   "date": "25–26/5/2026 (24/5 chiều làm thủ tục). Bài chung: 25/5 sáng Ngữ văn 120', 25/5 chiều Tiếng Anh 60' trắc nghiệm, 26/5 sáng Toán 120'. Ngày giờ bài chuyên theo hướng dẫn của Sở (văn bản trường không ghi riêng).",
+   "rule": "Mỗi thí sinh chỉ đăng ký 1 lớp chuyên (ngoại lệ: NV1 chuyên Toán được đăng ký NV2 chuyên Tin). Trúng tuyển chuyên thì phải học lớp đó, không được xét PTDTNT/THPT khác. Trượt chuyên thì hồ sơ và điểm bài chung chuyển sang nguyện vọng trường tiếp theo (tổng tối đa 6 nguyện vọng trường, chuyên Toán tối đa 7). Học sinh đã tuyển thẳng vào PTDTNT/THPT phải để trường đó làm NV2. Không có lớp chuyên ngoại ngữ nào khác ngoài Tiếng Anh."
+  }
+ },
+ "nv2_exam": null,
+ "nv_rule": "Mỗi thí sinh chỉ đăng ký 1 lớp chuyên (ngoại lệ: NV1 chuyên Toán được đăng ký NV2 chuyên Tin). Trúng tuyển chuyên thì phải học lớp đó, không được xét PTDTNT/THPT khác. Trượt chuyên thì hồ sơ và điểm bài chung chuyển sang nguyện vọng trường tiếp theo (tổng tối đa 6 nguyện vọng trường, chuyên Toán tối đa 7). Học sinh đã tuyển thẳng vào PTDTNT/THPT phải để trường đó làm NV2. Không có lớp chuyên ngoại ngữ nào khác ngoài Tiếng Anh.",
+ "options": [
+  {
+   "id": "so-chuyen-le-quy-don-lai-chau-anh",
+   "sk": "so-chuyen-le-quy-don-lai-chau",
+   "school": "THPT chuyên Lê Quý Đôn (Lai Châu)",
+   "area": "Lai Châu",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    37.6,
+    38.2,
+    39.25,
+    31.4
+   ],
+   "scale": 50,
+   "quota": {
+    "2022": 70,
+    "2024": 70,
+    "2025": 35,
+    "2026": 70
+   },
+   "note": "Chỉ tiêu dao động 1–2 lớp: 2025 chỉ 1 lớp (35) và chuyên Anh có điểm chuẩn cao nhất trường (39,25, dự kiến trước phúc khảo); 2026 tăng lại 2 lớp (70) và chuyên Anh có điểm chuẩn thấp nhất trường (31,4, dự kiến trước phúc khảo). 2023 (37,6) lấy từ bảng của Báo Lâm Đồng; thang 50 năm 2023 suy theo các KH 2022/2024 cùng hệ số 2."
+  }
+ ],
+ "paper": {
+  "map": "B2",
+  "label": "đề chuyên Anh của Sở Lai Châu",
+  "ac_add": 2.5,
+  "ac_cap": 10,
+  "ac_label": "Anh chung (đề chung)",
+  "difficulty": null,
+  "difficulty_evidence": "Chỉ biết bài chuyên Tiếng Anh thi 'tự luận kết hợp với trắc nghiệm khách quan', 150 phút, thang 10, hệ số 2. Không tìm thấy đề, đáp án hay nhận xét độ khó công khai.",
+  "minutes": 150,
+  "has_listening": null,
+  "essay_words": null,
+  "sections": [],
+  "sample_links": []
+ },
+ "exam_2026": {
+  "dates": "25–26/5/2026 (24/5 chiều làm thủ tục). Bài chung: 25/5 sáng Ngữ văn 120', 25/5 chiều Tiếng Anh 60' trắc nghiệm, 26/5 sáng Toán 120'. Ngày giờ bài chuyên theo hướng dẫn của Sở (văn bản trường không ghi riêng).",
+  "organisation": "Toàn tỉnh (Lai Châu không sáp nhập); bài thi chung dùng chung đề, thi cùng thời gian với các trường PTDTNT và THPT thi tuyển; 12 hội đồng thi đặt tại xã/phường",
+  "common_subjects": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh"
+  ],
+  "notes": "Tổng chỉ tiêu lớp 10 toàn tỉnh 7.722; THPT chuyên Lê Quý Đôn 315 chỉ tiêu (9 lớp). Đến 5/5/2026 có 7.882 thí sinh đăng ký. Thi tuyển áp dụng cho Chuyên Lê Quý Đôn, các trường PTDTNT, THPT Chu Văn An và THPT Quyết Thắng; các trường khác xét tuyển. Điểm chuẩn dự kiến (trước phúc khảo) các lớp chuyên 2026: 31,4–37,5."
+ },
+ "plan_2027": null,
+ "stories": [],
+ "prep_tips": [
+  "Điểm chuẩn chuyên Anh biến động mạnh theo chỉ tiêu (35 chỉ tiêu năm 2025: 39,25; 70 chỉ tiêu năm 2026: 31,4) — theo dõi số lớp chuyên Anh trong thông báo tuyển sinh hằng năm (tháng 4) để ước lượng mục tiêu điểm.",
+  "Không cộng điểm ưu tiên/khuyến khích vào điểm xét tuyển chuyên, và mỗi bài cần ≥ 2,0 — điểm bài chuyên ×2 là yếu tố quyết định (KH tuyển sinh 2024, 2025).",
+  "Tiếng Anh chung là trắc nghiệm 60 phút; bài chuyên 150 phút gồm cả trắc nghiệm và tự luận — luyện cả hai dạng (Thông báo tuyển sinh 2026).",
+  "Chỉ được đăng ký 1 lớp chuyên: chọn chuyên Anh là không có NV2 lớp chuyên khác, nên đăng ký kèm NV trường PTDTNT/THPT phù hợp làm dự phòng (Thông báo tuyển sinh 2026)."
+ ],
+ "confidence": "medium",
+ "gaps": [
+  "Điểm chuẩn chuyên Anh 2022; điểm chuẩn chính thức sau phúc khảo 2025 và 2026 (đang dùng số dự kiến).",
+  "Số thí sinh đăng ký chuyên Anh (tỉ lệ chọi).",
+  "Cấu trúc chi tiết, đề mẫu và độ khó bài chuyên Anh (không tìm thấy đề công khai).",
+  "Ngày thi riêng của bài chuyên năm 2026.",
+  "Kế hoạch 2027.",
+  "Không tìm thấy chia sẻ kinh nghiệm thật của học sinh/giáo viên.",
+  "Không xác minh được phường/địa chỉ mới của trường sau sắp xếp đơn vị hành chính."
+ ],
+ "sources": [
+  {
+   "title": "Thông báo tuyển sinh vào lớp 10 THPT chuyên Lê Quý Đôn năm học 2026-2027 (13/4/2026)",
+   "url": "https://doanket.laichau.gov.vn/upload/103883/fck/adminlaichau25/4_10%20Th%C3%B4ng%20b%C3%A1o%20tuy%E1%BB%83n%20sinh%20v%C3%A0o%20l%E1%BB%9Bp%2010%20THPT%20chuy%C3%AAn%20L%C3%AA%20Qu%C3%BD%20%C4%90%C3%B4n%20n%C4%83m%20h%E1%BB%8Dc%202025-2026.pdf"
+  },
+  {
+   "title": "Tuyensinh247 – Tuyển sinh lớp 10 Lai Châu 2026",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/lai-chau-p1.html"
+  },
+  {
+   "title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 Lai Châu",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/lai-chau-p1.html"
+  },
+  {
+   "title": "Vietbao – 9 tỉnh, thành công bố điểm chuẩn lớp 10 năm 2026 (16/6/2026)",
+   "url": "https://vietbao.vn/9-tinh-thanh-cong-bo-diem-chuan-lop-10-nam-2026-cao-nhat-4714-diem-595707.html"
+  },
+  {
+   "title": "Báo Lâm Đồng – Điểm thi lớp 10 năm 2026 tại Lai Châu (08/6/2026)",
+   "url": "https://baolamdong.vn/print/445654.html"
+  },
+  {
+   "title": "HOCMAI Hướng nghiệp – Tỉnh đầu tiên công bố điểm chuẩn lớp 10 năm 2025 (Lai Châu)",
+   "url": "https://huongnghiep.hocmai.vn/?p=22729"
+  },
+  {
+   "title": "Báo Văn hóa – Lai Châu chuẩn bị chu đáo cho kì tuyển sinh lớp 10 năm học 2026-2027",
+   "url": "https://baovanhoa.vn/doi-song/lai-chau-chuan-bi-chu-dao-cho-ki-tuyen-sinh-lop-10-nam-hoc-2026-2027-227602.html"
+  },
+  {
+   "title": "KH tuyển sinh lớp 10 năm học 2025-2026 tỉnh Lai Châu (kèm QĐ 461/QĐ-UBND)",
+   "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2025/NTKL/11032025/KH-kem-theo-QD-461.pdf"
+  },
+  {
+   "title": "LuatVietnam – KH 1565/KH-UBND tuyển sinh lớp 10 năm học 2024-2025 tỉnh Lai Châu",
+   "url": "https://luatvietnam.vn/giao-duc/ke-hoach-1565-kh-ubnd-lai-chau-2024-tuyen-sinh-vao-lop-10-nam-hoc-2024-2025-tren-dia-ban-tinh-lai-chau-321811-d2.html"
+  },
+  {
+   "title": "KH 1175/KH-UBND tuyển sinh lớp 10 năm học 2022-2023 tỉnh Lai Châu",
+   "url": "https://phongtho.laichau.gov.vn/upload/104578/20220527/2_KH_1175_UBND_tuyen_sinh_vao_lop_10_nam_hoc_2022-2023_b6b06_94127.pdf"
+  },
+  {
+   "title": "KH tuyển sinh lớp 10 năm học 2026-2027 (THPT Đoàn Kết, có thứ tự xét Chuyên Lê Quý Đôn)",
+   "url": "https://doanket.laichau.gov.vn/upload/103883/20260410/KE_HOACH_TS_10_NH_2026-2027_3ccb7.pdf"
+  }
+ ],
+ "formula_raw": {
+  "text": "Điểm xét tuyển = Toán + Ngữ văn + Tiếng Anh (chung, hệ số 1) + 2 × điểm bài thi chuyên. Không cộng điểm ưu tiên, khuyến khích.",
+  "parts": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh (chung)",
+   "Anh chuyên×2"
+  ],
+  "max": 50,
+  "conditions": "Cư trú tại Lai Châu (bản thân hoặc cha mẹ/người giám hộ); kết quả học tập và rèn luyện cả năm lớp 9 từ Khá trở lên; dự đủ 4 bài thi; mỗi bài thi chung và chuyên ≥ 2,0. Các năm 2021, 2022, 2024 có thêm điều kiện điểm TB môn Tiếng Anh cả năm lớp 9 ≥ 6,5 với chuyên Anh (chưa thấy điều kiện này trong văn bản 2026). Hòa điểm: ưu tiên giải KHKT quốc gia, giải HSG tỉnh, giải KHKT tỉnh, điểm bài chuyên, điểm TB môn lớp 9…",
+  "formula_by_year": {
+   "2022": "Chung hệ số 1 + chuyên hệ số 2 (thang 50) – KH 1175/KH-UBND",
+   "2024": "Chung hệ số 1 + chuyên hệ số 2 (thang 50), không cộng ưu tiên – KH 1565/KH-UBND",
+   "2025": "Chung hệ số 1 + chuyên hệ số 2 (thang 50), không cộng ưu tiên, khuyến khích – KH kèm QĐ 461/QĐ-UBND",
+   "2026": "Chung hệ số 1 + chuyên hệ số 2 (thang 50) – Thông báo tuyển sinh Trường THPT chuyên Lê Quý Đôn 13/4/2026"
+  }
+ },
+ "schools_raw": [
+  {
+   "name": "THPT chuyên Lê Quý Đôn (Lai Châu)",
+   "old_province": "Lai Châu",
+   "city": "Lai Châu",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2022": 70,
+      "2024": 70,
+      "2025": 35,
+      "2026": 70
+     },
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": 37.6,
+      "2024": 38.2,
+      "2025": 39.25,
+      "2026": 31.4
+     },
+     "scale": {
+      "2022": 50,
+      "2023": 50,
+      "2024": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "Chỉ tiêu dao động 1–2 lớp: 2025 chỉ 1 lớp (35) và chuyên Anh có điểm chuẩn cao nhất trường (39,25, dự kiến trước phúc khảo); 2026 tăng lại 2 lớp (70) và chuyên Anh có điểm chuẩn thấp nhất trường (31,4, dự kiến trước phúc khảo). 2023 (37,6) lấy từ bảng của Báo Lâm Đồng; thang 50 năm 2023 suy theo các KH 2022/2024 cùng hệ số 2."
+    }
+   ]
+  }
+ ],
+ "goals": [
+  {
+   "k": "so-chuyen-le-quy-don-lai-chau",
+   "name": "chuyên Lê Quý Đôn (Lai Châu)",
+   "score": 7.2,
+   "paper": "so",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "so-chuyen-le-quy-don-lai-chau"
+}

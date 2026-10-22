@@ -1,0 +1,115 @@
+{
+ "so": "Trường Phổ thông Năng khiếu, ĐHQG-HCM",
+ "slug": "ptnk",
+ "merged_from": [],
+ "exam_2026": {
+  "dates": "23–24/5/2026. Thứ Bảy 23/5: sáng Ngữ văn (100 phút), Tiếng Anh không chuyên (60 phút, bắt đầu 10g10); chiều Toán (120 phút, 14g10). Chủ nhật 24/5: sáng môn chuyên Tiếng Anh/Lý/Hóa/Sinh/Tin (150 phút, phát đề 7g30, làm bài 7g40); chiều môn chuyên Toán, Ngữ văn (150 phút).",
+  "organisation": "Kỳ thi riêng do trường tổ chức (không thuộc kỳ thi của Sở GD&ĐT TP.HCM), từ 2026 tuyển sinh toàn quốc. Hai cơ sở: An Đông (153 Nguyễn Chí Thanh, Quận 5 cũ; 245 chỉ tiêu, 7 lớp) và Đông Hòa (khu đô thị ĐHQG-HCM, Dĩ An cũ/Thủ Đức; 350 chỉ tiêu, 10 lớp liên ngành, có nội trú).",
+  "common_subjects": ["Toán", "Ngữ văn", "Tiếng Anh"],
+  "notes": "Năm 2026 có 4.707 thí sinh đăng ký (tăng khoảng 1.200 so với 2025), tỉ lệ chọi chung khoảng 1/7,9; tổng chỉ tiêu 595 (VTC 21/5/2026). Kết quả và điểm chuẩn công bố 10/6/2026, phúc khảo trực tuyến 10–12/6/2026 (Tiền Phong). Thí sinh được thi tối đa 2 môn chuyên khác nhóm (nhóm 1: Toán, Ngữ văn; nhóm 2: Tiếng Anh, Lý, Hóa, Sinh, Tin), nên có thể thi chuyên Anh kèm chuyên Toán hoặc chuyên Văn."
+ },
+ "plan_2027": null,
+ "formula": {
+  "text": "Điểm xét tuyển = Toán + Ngữ văn + Tiếng Anh (không chuyên) + Tiếng Anh chuyên × 2. Mỗi bài thang 10.",
+  "parts": ["Toán", "Ngữ văn", "Tiếng Anh (chung)", "Anh chuyên×2"],
+  "max": 50,
+  "conditions": "Dự tuyển: tốt nghiệp THCS, xếp loại tốt nghiệp từ khá; hạnh kiểm/rèn luyện và học lực/học tập cả năm các lớp THCS từ khá; tuổi vào lớp 10 là 15 (KH 67/KH-PTNK 2025). Trúng tuyển: dự đủ 3 bài không chuyên và ít nhất 1 bài chuyên, không vi phạm quy chế, các bài thi của tổ hợp xét tuyển đều lớn hơn 2 điểm, đạt điểm chuẩn do Hội đồng tuyển sinh quyết định.",
+  "formula_by_year": {
+   "2022": "3 bài không chuyên hệ số 1 + môn chuyên hệ số 2, thang 10 mỗi bài (cùng cấu trúc; VOH 2022 không ghi lại công thức, suy từ các năm 2023–2026)",
+   "2023": "Toán + Tiếng Anh + Ngữ văn (hệ số 1) + môn chuyên hệ số 2, các bài thang 10 (VnEconomy 13/6/2023)",
+   "2024": "Như 2023: bài không chuyên hệ số 1, bài chuyên hệ số 2, thang 10 (PLO 2024)",
+   "2025": "Như 2024; quy định 'các bài thi của tổ hợp xét tuyển tương ứng đều đạt điểm lớn hơn 2' (KH 67/KH-PTNK ngày 24/3/2025)",
+   "2026": "Như 2025 (Tiền Phong 20/3/2026; VTC 21/5/2026)"
+  }
+ },
+ "nv_rule": "Được đăng ký tối đa 2 môn chuyên thuộc 2 nhóm khác nhau (nhóm 1: Toán, Ngữ văn; nhóm 2: Tiếng Anh, Vật lý, Hóa học, Sinh học, Tin học). Được đăng ký nhiều nguyện vọng (lớp chuyên × cơ sở) xếp theo thứ tự ưu tiên; nguyện vọng chỉ hợp lệ nếu tổ hợp xét tuyển khớp với các môn đã thi. Xét theo điểm, không phân biệt thứ tự nguyện vọng; thí sinh chỉ trúng 1 nguyện vọng ưu tiên cao nhất đạt điểm chuẩn. Như vậy một thí sinh thi chuyên Anh có thể đặt NV lớp Anh An Đông rồi lớp Anh-liên ngành Đông Hòa. Trường chỉ có lớp chuyên tiếng Anh, không có lớp ngoại ngữ khác. Học sinh đã nhập học PTNK bị rút khỏi danh sách xét tuyển các trường công lập của Sở TP.HCM (CV hướng dẫn tuyển sinh chuyên 2025 của Sở TP.HCM).",
+ "chuyen_paper": {
+  "minutes": 150,
+  "scale": 10,
+  "has_listening": false,
+  "essay_words": null,
+  "sections": [
+   {"format": "sentence_completion", "items": 40, "points": 2.0, "note": "Part 1 Language Use – Grammar & Vocabulary trắc nghiệm (câu 1–40, 0,05 điểm/câu)"},
+   {"format": "cloze", "items": 20, "points": 1.0, "note": "Guided cloze trắc nghiệm (câu 41–60)"},
+   {"format": "open_cloze", "items": 20, "points": 1.0, "note": "Open cloze, điền 1 từ (câu 61–80), viết vào phiếu tự luận"},
+   {"format": "reading_mcq", "items": 8, "points": 0.8, "note": "Reading passage 1, trắc nghiệm (câu 81–88, 0,1 điểm/câu)"},
+   {"format": "gap_text", "items": 7, "points": 0.7, "note": "Reading passage 2: 7 đoạn bị bỏ, chọn từ 9 đoạn (2 đoạn thừa)"},
+   {"format": "true_false", "items": 5, "points": 0.5, "note": "Reading passage 3: True/False/Not Given (câu 96–100)"},
+   {"format": "other", "items": 5, "points": 0.5, "note": "Reading passage 3: summary completion, không quá 2 từ (câu 101–105)"},
+   {"format": "word_formation", "items": 10, "points": 1.0, "note": "Writing – cấu tạo từ (câu 106–115)"},
+   {"format": "error_id", "items": 5, "points": 0.5, "note": "Tìm và sửa 5 lỗi sai (câu 116–120)"},
+   {"format": "key_word", "items": 10, "points": 2.0, "note": "Viết lại câu dùng từ cho sẵn, 3–8 từ (câu 121–130, 0,2 điểm/câu)"}
+  ],
+  "difficulty": "C1",
+  "difficulty_evidence": "Springboard (phân tích đề 2026, trung tâm luyện thi): 130 câu/150 phút, không có nghe, nói và bài luận; độ khó 'nghiêng rõ về C1', nhỉnh hơn hai năm trước; cấu trúc gần như giữ nguyên từ 2024–2025, chủ đề bài đọc thời sự hơn (nội dung do AI tạo, bảo tàng, chữ viết tay, thư viện cộng đồng). Phổ điểm 2024 (PLO): 1.251 thí sinh thi Anh chuyên, điểm trung bình 3,30, trung vị 2,95; chỉ 59 em (4,7%) đạt từ 6,5 và 4 em (0,3%) đạt từ 8; 209 em (16,7%) dưới 2. Cùng năm, Anh không chuyên (3.719 thí sinh) trung bình 4,65.",
+  "sample_links": [
+   "https://drive.google.com/drive/folders/1rz7xTb_IDfeuCoIqrt-UEEfl0kCF9jq6 (đề chính thức 2026 trường công bố, theo Tuổi Trẻ 2/6/2026)",
+   "https://springboard.vn/de-thi-chuyen-anh-ptnk-2026/",
+   "https://image.plo.vn/Uploaded/2026/yrfjpybfjpy/2026_03_24/de-thi-tieng-anh-chuyen-3607.pdf (PDF đề tiếng Anh chuyên do PLO đăng 24/3/2026, nhiều khả năng là đề minh họa 2026; chưa mở để xác nhận)"
+  ]
+ },
+ "schools": [
+  {
+   "name": "Trường Phổ thông Năng khiếu (ĐHQG-HCM)",
+   "old_province": "TP. Hồ Chí Minh",
+   "city": "TP. Hồ Chí Minh (cơ sở An Đông – Quận 5 cũ; cơ sở Đông Hòa – khu đô thị ĐHQG, Dĩ An/Thủ Đức cũ)",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {"2024": 35, "2025": 35, "2026": 35},
+     "applicants": {},
+     "cut": {"2022": 32.6, "2023": 31.6, "2024": 32.4, "2025": 32.7, "2026": 32.6},
+     "scale": {"2022": 50, "2023": 50, "2024": 50, "2025": 50, "2026": 50},
+     "note": "Lớp chuyên Anh cơ sở An Đông (trước gọi cơ sở 1, Quận 5). 2022: VOH ghi 32,6 (giảm từ 35,3 năm 2021); Giáo dục Việt Nam ghi 32,6 trong bài nhưng 32,26 ở tóm tắt – lấy 32,6. Năm 2022 cơ sở 1 có 2 lớp Anh (VOH). 2025: Báo Văn hóa chỉ ghi 'Tiếng Anh 32,7', không nêu cơ sở; vì là mức cao nên nhiều khả năng là An Đông – cần đối chiếu bảng gốc. Tham khảo: 2020 là 35,5; 2021 là 35,3 (SGGP). Số đăng ký chuyên Anh 2024 (cả 2 cơ sở): hơn 1.300 cho 105 chỉ tiêu, khoảng 1/12 (Tuổi Trẻ 10/5/2024)."
+    },
+    {
+     "lang": "Anh",
+     "quota": {"2024": 70, "2025": 70, "2026": 70},
+     "applicants": {},
+     "cut": {"2022": null, "2023": 28.2, "2024": 27.1, "2025": null, "2026": 28.6},
+     "scale": {"2023": 50, "2024": 50, "2026": 50},
+     "note": "Lớp Tiếng Anh – liên ngành, cơ sở Đông Hòa (trước gọi cơ sở 2/Thủ Đức), 2 lớp. Thí sinh chuyên Anh có thể đặt nguyện vọng vào cả hai cơ sở. Tham khảo: 2020 là 30,0; 2021 là 29,6 (SGGP). Chưa tìm được điểm chuẩn 2022 và 2025 của lớp này (bảng gốc là ảnh)."
+    }
+   ]
+  }
+ ],
+ "stories": [],
+ "prep_tips": [
+  "Đề không có nghe, nói và bài luận dài: dồn thời gian vào Use of English. 80/130 câu (4 điểm) là ngữ pháp – từ vựng, guided cloze và open cloze (Springboard, đề 2026).",
+  "Viết lại câu với từ cho sẵn chỉ có 10 câu nhưng chiếm 2 điểm (0,2 điểm/câu), gấp 4 lần một câu trắc nghiệm: luyện key word transformation kiểu Cambridge C1 Advanced (Springboard, đề 2026).",
+  "Phần đọc có dạng của kỳ thi Cambridge/IELTS: gapped text 7 đoạn (có 2 đoạn thừa), True/False/Not Given, summary completion không quá 2 từ. Nên luyện đúng các dạng này (Springboard, đề 2026).",
+  "Thời gian khoảng 1,15 phút/câu (130 câu/150 phút); phần trắc nghiệm câu 1–60 tô phiếu riêng, câu 61–130 viết vào phiếu tự luận (Springboard, đề 2026).",
+  "Đề rất khó so với mặt bằng: năm 2024 điểm Anh chuyên trung bình 3,30 và chỉ 4,7% thí sinh đạt từ 6,5 (PLO). Khoảng 6–7 điểm Anh chuyên đã là mức cạnh tranh. Điểm chuẩn lớp Anh An Đông 31,6–32,7/50 trong 2023–2026, nên Toán, Văn và Anh không chuyên phải đều.",
+  "Toán và Văn chiếm 2/5 tổng điểm, và mỗi bài phải trên 2 điểm. Không được bỏ hai môn này khi ôn chuyên Anh (KH 67/KH-PTNK 2025)."
+ ],
+ "confidence": "medium",
+ "gaps": [
+  "Điểm chuẩn lớp Anh-liên ngành (Đông Hòa) năm 2022 và 2025: bảng gốc là ảnh, chưa đọc được",
+  "Năm 2025, nguồn không ghi rõ mức 32,7 thuộc cơ sở nào",
+  "Số thí sinh đăng ký riêng lớp chuyên Anh năm 2025, 2026",
+  "Cấu trúc đề chuyên Anh mới lấy từ phân tích của trung tâm (Springboard), chưa đối chiếu văn bản cấu trúc đề chính thức của trường",
+  "Chưa có bài chia sẻ kinh nghiệm của thủ khoa/học sinh đỗ chuyên Anh PTNK",
+  "Kế hoạch tuyển sinh 2027: chưa thấy công bố (tính đến 23/10/2026)"
+ ],
+ "sources": [
+  {"title": "Tiền Phong 10/6/2026 – Trường đầu tiên tại TPHCM công bố điểm chuẩn lớp 10 (bảng 2026 theo cơ sở)", "url": "https://tienphong.vn/truong-dau-tien-tai-tphcm-cong-bo-diem-chuan-lop-10-post1850215.tpo"},
+  {"title": "Tiền Phong 20/3/2026 – Trường chuyên 'hot' của TPHCM thi riêng, tuyển sinh toàn quốc", "url": "https://tienphong.vn/truong-chuyen-hot-cua-tphcm-thi-rieng-tuyen-sinh-toan-quoc-post1828880.html"},
+  {"title": "VTC 21/5/2026 – Thí sinh đăng ký thi lớp 10 Trường PTNK tăng vọt", "url": "https://vtcnews.vn/thi-sinh-dang-ky-thi-lop-10-truong-pho-thong-nang-khieu-tai-tp-hcm-tang-vot-ar1019336.html"},
+  {"title": "HOCMAI – Tuyển sinh lớp 10 PTNK 2026 (lịch thi chi tiết)", "url": "https://huongnghiep.hocmai.vn/tuyen-sinh-lop-10-truong-pho-thong-nang-khieu-dhqg-hcm-2026-toan-bo-thong-tin-quan-trong-danh-cho-si-tu"},
+  {"title": "Tuổi Trẻ 2/6/2026 – Trường PTNK công bố đề thi lớp 10", "url": "https://tuoitre.vn/truong-pho-thong-nang-khieu-cong-bo-de-thi-lop-10-20260602164123911.htm"},
+  {"title": "Springboard – Phân tích đề thi chuyên Anh PTNK 2026", "url": "https://springboard.vn/de-thi-chuyen-anh-ptnk-2026/"},
+  {"title": "Báo Văn hóa 11/6/2025 – Trường chuyên đầu tiên ở TP.HCM công bố điểm chuẩn lớp 10 (2025)", "url": "https://baovanhoa.vn/doi-song/truong-chuyen-dau-tien-o-tphcm-cong-bo-diem-thi-diem-chuan-lop-10-142013.html"},
+  {"title": "KH 67/KH-PTNK ngày 24/3/2025 – Kế hoạch tuyển sinh lớp 10 năm 2025", "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/NTMH/02052025/Ke-hoach-67.pdf"},
+  {"title": "VOH 10/6/2024 – Trường PTNK công bố điểm xét tuyển lớp 10 (2024, cả hai cơ sở)", "url": "https://voh.com.vn/giao-duc/truong-pho-thong-nang-khieu-cong-bo-diem-xet-tuyen-lop-10-531894.html"},
+  {"title": "PLO 2024 – Điểm chuẩn vào lớp 10 PTNK cao nhất là 33,75", "url": "https://plo.vn/diem-chuan-vao-lop-10-truong-pho-thong-nang-khieu-cao-nhat-la-3375-post794911.html"},
+  {"title": "PLO 2024 – Phổ điểm các môn thi vào lớp 10 PTNK", "url": "https://plo.vn/pho-diem-cac-mon-thi-vao-lop-10-truong-pho-thong-nang-khieu-post794996.html"},
+  {"title": "Tuổi Trẻ 10/5/2024 – Thi lớp 10 PTNK: tuyển 595, đăng ký 4.000", "url": "https://tuoitre.vn/thi-lop-10-truong-pho-thong-nang-khieu-tuyen-595-dang-ky-4-000-20240510103451462.htm"},
+  {"title": "SGGP 12/6/2023 – Môn Hóa dẫn đầu điểm xét tuyển vào lớp 10 PTNK (2023, cả hai cơ sở)", "url": "https://www.sggp.org.vn/mon-hoa-dan-dau-diem-xet-tuyen-vao-lop-10-truong-pho-thong-nang-khieu-post693347.html"},
+  {"title": "VnEconomy 13/6/2023 – Nhiều trường chuyên công bố điểm chuẩn vào lớp 10", "url": "https://vneconomy.vn/nhieu-truong-chuyen-cong-bo-diem-chuan-vao-lop-10.htm"},
+  {"title": "VOH 18/6/2022 – Trường PTNK công bố điểm chuẩn (2022)", "url": "https://voh.com.vn/giao-duc/truong-pho-thong-nang-khieu-dhqg-hcm-cong-bo-diem-chuan-438493.html"},
+  {"title": "Giáo dục Việt Nam 18/6/2022 – Trường PTNK công bố điểm chuẩn lớp 10", "url": "https://giaoduc.net.vn/truong-pho-thong-nang-khieu-dai-hoc-quoc-gia-tphcm-cong-bo-diem-chuan-lop-10-post227382.gd"},
+  {"title": "SGGP 3/8/2021 – Công bố điểm chuẩn vào lớp 10 PTNK (2021)", "url": "https://www.sggp.org.vn/cong-bo-diem-chuan-tuyen-sinh-vao-lop-10-truong-pho-thong-nang-khieu-dhqg-tphcm-751360.html"},
+  {"title": "SGGP 28/7/2020 – PTNK công bố điểm chuẩn vào lớp 10 (2020)", "url": "https://www.sggp.org.vn/truong-pho-thong-nang-khieu-dhqg-tphcm-cong-bo-diem-chuan-vao-lop-10-post563147.html"},
+  {"title": "Sở GD&ĐT TP.HCM – Hướng dẫn tuyển sinh lớp 10 THPT chuyên 2025-2026", "url": "https://cdn.thuvienphapluat.vn/uploads/tintuc/2025/04/29/2228-ts10-chuyen.pdf"}
+ ]
+}

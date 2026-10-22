@@ -1,0 +1,4 @@
+{
+ "chuyen-dh-vinh": {"chuyen-dh-vinh": {"w": {"toan": 1, "van": 1, "ac": 1, "ach": 3}, "max": 60, "text": "Điểm xét tuyển = Anh chuyên (thang 20) × 1,5 + Toán + Ngữ văn + Tiếng Anh (vòng I), thang 60. Trang quy Anh chuyên về thang 10 nên hệ số tương đương × 3."}},
+ "lam-dong": {"so": {"w": {"toan": 1, "van": 1, "ac": 1, "ach": 2}, "max": 50, "text": "Điểm xét tuyển lớp chuyên = Ngữ văn + Toán + Tiếng Anh (mỗi bài thang 10) + bài thi môn chuyên (thang 20). Trang quy Anh chuyên về thang 10 nên hệ số tương đương × 2."}}
+}

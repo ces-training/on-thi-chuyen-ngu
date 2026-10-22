@@ -1,0 +1,109 @@
+{
+  "so": "Hải Phòng",
+  "slug": "hai-phong",
+  "merged_from": ["Hải Phòng", "Hải Dương"],
+  "exam_2026": {
+    "dates": "31/5/2026 – 02/6/2026 (3 ngày, sớm hơn mọi năm); chấm thi 4–9/6/2026. Điểm chuẩn chuyên công bố tối 26/6/2026; danh sách trúng tuyển từ 14h00 ngày 29/6; nhập học 30/6 – 17h00 ngày 03/7/2026.",
+    "organisation": "một đề chung cho cả thành phố mới: một kỳ thi chung, tuyển sinh 'không còn phân biệt địa giới hành chính'; 92 hội đồng thi (2 hội đồng thi chuyên), ~3.000 phòng thi. Theo Springboard, đề Chuyên Anh 2026 dùng chung cho thí sinh vào THPT Chuyên Trần Phú và THPT Chuyên Nguyễn Trãi (Hải Dương cũ).",
+    "common_subjects": ["Toán", "Ngữ văn", "Tiếng Anh"],
+    "notes": "70.626 học sinh lớp 9 (+7.288 so với 2025); chỉ tiêu công lập 48.611 (68,8%). Chỉ tiêu chuyên 2026: Chuyên Trần Phú 630 HS/18 lớp; Chuyên Nguyễn Trãi 455 HS/13 lớp. Đăng ký hoàn toàn trực tuyến, tối đa 8 nguyện vọng (lớp chuyên, công lập không chuyên, ngoài công lập)."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": "Năm 2026: ĐXTC = Tổng điểm các bài thi không chuyên Toán + Ngữ văn + Tiếng Anh (hệ số 1) + Điểm bài thi chuyên × 3.",
+    "parts": ["Toán", "Ngữ văn", "Tiếng Anh (chung)", "Anh chuyên×3"],
+    "max": 60,
+    "conditions": "Năm 2026 chưa tìm được điều kiện điểm tối thiểu. Năm 2025: Trần Phú yêu cầu mỗi bài > 2,0; Nguyễn Trãi yêu cầu không bài nào ≤ 1,0. Trượt chuyên thì điểm 3 bài chung được dùng xét công lập.",
+    "formula_by_year": {
+      "2022": "Trần Phú (Hải Phòng cũ): chưa có văn bản; tin 2022 có 'điểm sơ tuyển' + điểm môn chuyên + điểm xét tuyển (đợt 2 chuyên Anh 39,2, điều kiện điểm môn chuyên 5,9).",
+      "2023": "Trần Phú: tổng bài thi không chuyên (hệ số 1) + bài chuyên (hệ số 2), thang 50; lớp Nga/Pháp/Trung/Hàn xét bằng bài Tiếng Anh chuyên hệ số 2; lớp Nhật xét bằng bài Tiếng Nhật chuyên; mỗi bài > 2,0.",
+      "2024": "Trần Phú: tổng 3 bài không chuyên + chuyên × 2 (thang 50). Nguyễn Trãi (Hải Dương cũ): Toán, Văn, Anh hệ số 1 + chuyên hệ số 3 (thang 60).",
+      "2025": "Trần Phú: ĐXT = tổng các bài không chuyên (hệ số 1) + bài chuyên (hệ số 2), thang 50; mỗi bài > 2,0. Nguyễn Trãi: Toán, Ngữ văn, Tiếng Anh hệ số 1, bài chuyên hệ số 3 (thang 60); không bài nào ≤ 1,0.",
+      "2026": "Chung toàn thành phố: tổng bài không chuyên + chuyên × 3 (thang 60)."
+    }
+  },
+  "nv_rule": "2026: tối đa 8 nguyện vọng gồm cả lớp chuyên, công lập, ngoài công lập (chi tiết số NV chuyên năm 2026 chưa tìm được). Theo trang tuyển sinh tuyensinh247 (năm ghi không rõ, có thể là quy định 2026): Chuyên Trần Phú lớp Pháp, Nhật, Hàn tuyển tối đa 50% chỉ tiêu bằng bài thi ngoại ngữ đó, phần còn lại bằng bài Tiếng Anh chuyên — khớp với việc điểm chuẩn 2026 có dòng 'Pháp (Anh)', 'Hàn (Anh)'; Nguyễn Trãi xét lớp Anh, Pháp, Nga, Trung, Hàn bằng bài Tiếng Anh chuyên. Năm 2025: Trần Phú cho đăng ký tối đa 3 môn chuyên không trùng buổi, tối đa 5 NV chuyên (+2 NV công lập = 7); Nguyễn Trãi cho tối đa 2 bài chuyên không cùng buổi, thí sinh thi Anh chuyên xếp thứ tự lớp Anh → Pháp → Nga.",
+  "chuyen_paper": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": true,
+    "essay_words": 150,
+    "sections": [
+      {"format": "listening", "items": null, "points": 2.0, "note": "20/100. Part 1 MCQ hội thoại (chuyến đi Pháp); Part 2 True/False (self-access centre); Part 3 note completion ≤3 từ (đa dạng sinh học đại dương)."},
+      {"format": "sentence_completion", "items": null, "points": 3.5, "note": "Lexico-Grammar 35/100 (phần nặng nhất): Part 1 MCQ idioms, phrasal verbs, collocations, subjunctive, đảo ngữ điều kiện, discourse markers; Part 2 cloze 2 đoạn ngắn; Part 3 error_id 5 lỗi; Part 4 word formation (câu rời + đoạn văn du lịch)."},
+      {"format": "cloze", "items": null, "points": null, "note": "Thuộc Lexico-Grammar Part 2."},
+      {"format": "error_id", "items": 5, "points": null, "note": "Tìm và sửa 5 lỗi trong đoạn văn về peer pressure."},
+      {"format": "word_formation", "items": null, "points": null, "note": "Lexico-Grammar Part 4."},
+      {"format": "open_cloze", "items": null, "points": 2.0, "note": "Reading 20/100: Part 1 open cloze (autism); Part 2 gapped text (hyperglots); Part 3 đọc hiểu (nữ doanh nhân)."},
+      {"format": "gap_text", "items": null, "points": null, "note": "Reading Part 2."},
+      {"format": "reading_mcq", "items": null, "points": null, "note": "Reading Part 3."},
+      {"format": "key_word", "items": null, "points": 2.5, "note": "Writing 25/100: Part 1 key word transformation (tối đa 6 từ); Part 2 viết lại câu không có từ gợi ý; Part 3 đoạn văn."},
+      {"format": "transformation", "items": null, "points": null, "note": "Writing Part 2."},
+      {"format": "paragraph_writing", "items": 1, "points": null, "note": "Đoạn văn ~150 từ: cha mẹ có nên cho con tham gia các quyết định liên quan đến bản thân."}
+    ],
+    "difficulty": "B2+",
+    "difficulty_evidence": "Springboard đánh giá đề Chuyên Anh Hải Phòng 2026 'nằm trong khoảng B2 vững đến cận C1', phù hợp kỳ thi chuyên cạnh tranh; phần Lexico-Grammar chiếm 35% với idioms, phrasal verbs, đảo ngữ, giả định. Chưa tìm được nhận xét báo chí riêng về đề Trần Phú các năm trước (đề Trần Phú vốn được giới luyện thi coi là khó) — không ghi số liệu.",
+    "sample_links": ["https://springboard.vn/de-thi-chuyen-anh-hai-phong-2026/"]
+  },
+  "schools": [
+    {
+      "name": "THPT Chuyên Trần Phú",
+      "old_province": "Hải Phòng",
+      "city": "Hải Phòng",
+      "classes": [
+        {"lang": "Anh", "quota": {"2025": 70}, "applicants": {}, "cut": {"2022": null, "2023": null, "2024": 38, "2025": 39.55, "2026": 47.75}, "scale": {"2024": 50, "2025": 50, "2026": 60}, "note": "2 lớp (70 HS) năm 2025. 2026 là lớp có điểm chuẩn cao nhất trường. Tham khảo: 2020 = 37,30; 2022 đợt 2 = 39,2 (1 HS, điều kiện điểm môn chuyên 5,9) — điểm NV1 2022, 2023 chưa tìm được."},
+        {"lang": "Pháp", "admit_by_english": false, "quota": {"2025": 70}, "cut": {"2024": 28.77, "2025": 28.01, "2026": 30.75}, "scale": {"2024": 50, "2025": 50, "2026": 60}, "note": "Điểm này là xét bằng bài Tiếng Pháp chuyên. Trang trường tuyensinh247 ghi Pháp 2024 = 34,7 và 2025 = 36,8 (có thể là xét bằng bài Anh) — mâu thuẫn, cần kiểm tra. 2026 có thêm dòng 'Pháp (xét bằng Anh)' = 46,45 (thang 60)."},
+        {"lang": "Trung", "admit_by_english": true, "quota": {"2025": 35}, "cut": {"2024": 36.3, "2025": 38.2, "2026": 46.45}, "scale": {"2024": 50, "2025": 50, "2026": 60}, "note": "Xét bằng bài Tiếng Anh chuyên."},
+        {"lang": "Nga", "admit_by_english": true, "quota": {"2025": 35}, "cut": {"2024": 33.75, "2025": 35.65, "2026": 43.7}, "scale": {"2024": 50, "2025": 50, "2026": 60}, "note": "Xét bằng bài Tiếng Anh chuyên. Trang trường ghi 2024 = 33,7."},
+        {"lang": "Nhật", "admit_by_english": false, "quota": {"2025": 35}, "cut": {"2024": 35.95, "2025": 37.7, "2026": 43.1}, "scale": {"2024": 50, "2025": 50, "2026": 60}, "note": "2023: xét bằng bài Tiếng Nhật chuyên; quy định mới (tuyensinh247): tối đa 50% chỉ tiêu bằng tiếng Nhật chuyên, còn lại bằng Anh chuyên."},
+        {"lang": "Hàn", "admit_by_english": false, "quota": {"2025": 35}, "cut": {"2024": 35.25, "2025": 37.05, "2026": 32.2}, "scale": {"2024": 50, "2025": 50, "2026": 60}, "note": "2026: 32,2 là xét bằng bài Tiếng Hàn chuyên; dòng 'Hàn (xét bằng Anh)' = 45,75."}
+      ]
+    },
+    {
+      "name": "THPT Chuyên Nguyễn Trãi",
+      "old_province": "Hải Dương",
+      "city": "Hải Dương",
+      "classes": [
+        {"lang": "Anh", "quota": {"2025": 32}, "applicants": {}, "cut": {"2022": null, "2023": null, "2024": 46.1, "2025": 47.9, "2026": 47.6}, "scale": {"2024": 60, "2025": 60, "2026": 60}, "note": "2025: 12 lớp × 32 HS. 2026 lớp Anh có điểm chuẩn cao nhất trường."},
+        {"lang": "Pháp", "admit_by_english": true, "quota": {"2025": 32}, "cut": {"2024": 44.4, "2025": 45.15, "2026": 42.55}, "scale": {"2024": 60, "2025": 60, "2026": 60}, "note": "Xét bằng bài Tiếng Anh chuyên (thứ tự Anh → Pháp → Nga)."},
+        {"lang": "Nga", "admit_by_english": true, "quota": {"2025": 32}, "cut": {"2024": 41.4, "2025": 42.5, "2026": 40.25}, "scale": {"2024": 60, "2025": 60, "2026": 60}, "note": "Xét bằng bài Tiếng Anh chuyên."},
+        {"lang": "Trung", "admit_by_english": true, "cut": {"2026": 44.75}, "scale": {"2026": 60}, "note": "Chỉ có số liệu 2026 (có thể là lớp mới)."}
+      ]
+    }
+  ],
+  "stories": [
+    {"title": "Phân tích đề Chuyên Anh 10 Hải Phòng 2026–2027", "who": "giáo viên", "year": 2026, "school": "THPT Chuyên Trần Phú / THPT Chuyên Nguyễn Trãi", "summary": "Springboard phân tích đề chung cho hai trường chuyên: 150 phút, Listening 20, Lexico-Grammar 35, Reading 20, Writing 25; đánh giá B2 vững đến cận C1. Phần từ vựng – ngữ pháp nặng với idioms, phrasal verbs, đảo ngữ.", "takeaways": ["Ôn kỹ idioms, phrasal verbs, collocations và cấu trúc đảo ngữ/giả định", "Luyện key word transformation giới hạn 6 từ", "Luyện viết đoạn ~150 từ về chủ đề gia đình – quyền trẻ em"], "url": "https://springboard.vn/de-thi-chuyen-anh-hai-phong-2026/"},
+    {"title": "Hải Phòng công bố điểm chuẩn lớp 10 năm 2026: chuyên Anh cao nhất cả hai trường", "who": "báo", "year": 2026, "school": "THPT Chuyên Trần Phú / THPT Chuyên Nguyễn Trãi", "summary": "Báo Giáo dục Việt Nam đưa tin điểm chuẩn chuyên Trần Phú từ 30,75 (Pháp) đến 47,75 (Anh), Nguyễn Trãi từ 37 (Địa) đến 47,60 (Anh), theo công thức mới bài chuyên hệ số 3.", "takeaways": ["Chuyên Anh là lớp cạnh tranh nhất ở cả hai trường", "Với hệ số 3, mỗi 1 điểm bài chuyên = 3 điểm xét tuyển — bài chuyên quyết định"], "url": "https://giaoduc.net.vn/hai-phong-cong-bo-diem-chuan-vao-lop-10-truong-thpt-ngo-quyen-cao-nhat-he-khong-chuyen-post260932.gd"},
+    {"title": "Hải Phòng: Nhiều đổi mới trong kỳ thi tuyển sinh vào lớp 10", "who": "báo", "year": 2026, "school": null, "summary": "Phó Giám đốc Sở GDĐT Phạm Hồng Quân công bố kỳ thi 2026 là năm đầu sau sáp nhập, thi sớm hơn (31/5–2/6), đăng ký trực tuyến, tối đa 8 nguyện vọng, không phân biệt địa giới; Chuyên Trần Phú tuyển 630, Chuyên Nguyễn Trãi 455.", "takeaways": ["Học sinh vùng Hải Dương cũ có thể đăng ký Trần Phú và ngược lại", "Lịch thi sớm — cần hoàn tất ôn trước cuối tháng 5"], "url": "https://baophapluat.vn/hai-phong-nhieu-doi-moi-trong-ky-thi-tuyen-sinh-vao-lop-10.html"}
+  ],
+  "prep_tips": [
+    "Bài chuyên nhân hệ số 3 (2026): ưu tiên tối đa bài Anh chuyên; với Nguyễn Trãi cũ đã áp dụng hệ số 3 từ trước (Báo Giáo dục VN, tuyensinh247).",
+    "Lexico-Grammar chiếm 35% đề 2026: luyện idioms, phrasal verbs, collocations, đảo ngữ, câu giả định, discourse markers (Springboard).",
+    "Writing chỉ là đoạn ~150 từ cộng key word (≤6 từ) và transformation — luyện viết ngắn gọn, chính xác (Springboard).",
+    "Thi Anh chuyên mở cửa nhiều lớp: ở Nguyễn Trãi xét Anh → Pháp → Nga (và Trung 2026); ở Trần Phú xét Trung, Nga, và một phần Pháp/Nhật/Hàn bằng bài Anh (tuyensinh247, CV Sở HP 2023).",
+    "Lịch thi 2026 bắt đầu 31/5 — sớm hơn các năm trước (Báo Pháp luật)."
+  ],
+  "confidence": "medium",
+  "gaps": [
+    "Điểm chuẩn chuyên Anh NV1 2022, 2023 của Trần Phú và Nguyễn Trãi (tuyensinh247 chỉ có 2024–2026; các trang khác là ảnh).",
+    "Văn bản chính thức quy định NV chuyên 2026 (số NV chuyên, số bài chuyên được thi) và điều kiện điểm tối thiểu 2026.",
+    "Số câu từng phần đề chuyên Anh 2026; cấu trúc đề Trần Phú/Nguyễn Trãi các năm trước.",
+    "Mâu thuẫn điểm chuẩn chuyên Pháp Trần Phú 2024–2025 (28,77/28,01 vs 34,7/36,8).",
+    "Trang tuyensinh247 ghi 'năm học 2027-2028' với Trần Phú 19 lớp/665 HS và Nguyễn Trãi 14 lớp/490 HS — chưa xác minh là kế hoạch 2027, không ghi vào plan_2027.",
+    "Số thí sinh đăng ký chuyên Anh/tỉ lệ chọi.",
+    "Chia sẻ của thủ khoa/học sinh thật: chưa tìm được (hết quota tìm kiếm)."
+  ],
+  "sources": [
+    {"title": "Báo Pháp luật VN – Hải Phòng: Nhiều đổi mới trong kỳ thi tuyển sinh vào lớp 10 (24/4/2026)", "url": "https://baophapluat.vn/hai-phong-nhieu-doi-moi-trong-ky-thi-tuyen-sinh-vao-lop-10.html"},
+    {"title": "Nhân Dân – Chuẩn bị kỹ lưỡng cho kỳ thi tuyển sinh lớp 10 THPT", "url": "https://nhandan.vn/chuan-bi-ky-luong-cho-ky-thi-tuyen-sinh-lop-10-trung-hoc-pho-thong-post958680.html"},
+    {"title": "Giáo dục Việt Nam – Hải Phòng công bố điểm chuẩn vào lớp 10 (26/6/2026)", "url": "https://giaoduc.net.vn/hai-phong-cong-bo-diem-chuan-vao-lop-10-truong-thpt-ngo-quyen-cao-nhat-he-khong-chuyen-post260932.gd"},
+    {"title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 Hải Phòng", "url": "https://diemthi.tuyensinh247.com/dc-lop10/hai-phong-p28.html"},
+    {"title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 Hải Dương", "url": "https://diemthi.tuyensinh247.com/dc-lop10/hai-duong-p34.html"},
+    {"title": "Tuyensinh247 – Thông tin tuyển sinh lớp 10 Hải Phòng", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/hai-phong-p28.html"},
+    {"title": "Tuyensinh247 – THPT Chuyên Trần Phú", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-tran-phu-2722.html"},
+    {"title": "Tuyensinh247 – THPT Chuyên Nguyễn Trãi", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-nguyen-trai-2763.html"},
+    {"title": "Sở GDĐT Hải Phòng – Công văn tuyển sinh 2023-2024 (thuvienphapluat)", "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/LTT/hai-phong-2.pdf"},
+    {"title": "Hoatieu – Điểm chuẩn vào 10 Hải Phòng (2020, 2022)", "url": "https://hoatieu.vn/diem-chuan-lop-10-hai-phong-208782"},
+    {"title": "Springboard – Đề thi Chuyên Anh 10 Hải Phòng 2026-2027", "url": "https://springboard.vn/de-thi-chuyen-anh-hai-phong-2026/"}
+  ]
+}

@@ -1,0 +1,575 @@
+{
+ "slug": "hung-yen",
+ "name": "Hưng Yên",
+ "merged_from": [
+  "Hưng Yên",
+  "Thái Bình"
+ ],
+ "edition": "Bản Hưng Yên",
+ "exam_md": [
+  5,
+  24
+ ],
+ "papers": {
+  "so": {
+   "map": "B2+",
+   "label": "đề chuyên Anh của Sở Hưng Yên",
+   "ac_add": 2.5,
+   "ac_cap": 10,
+   "ac_label": "Anh chung (đề chung)",
+   "difficulty": "B2+",
+   "difficulty_evidence": "Springboard nhận xét đề Chuyên Anh Hưng Yên 2026 'nghiêng về B2 vững đến C1'; độ khó nằm ở yêu cầu làm đều tay hơn là vài câu đánh đố; Reading Part 3 (FOMO/JOMO) và matching headings dễ mất điểm. Đề chuyên Thái Bình 2025 (tuyensinh247): tự luận kết hợp trắc nghiệm, 3 kỹ năng nghe – đọc – viết, 150'. Chưa tìm được nhận xét báo chí riêng về đề chuyên Thái Bình các năm trước.",
+   "minutes": 150,
+   "has_listening": true,
+   "essay_words": 250,
+   "sections": [
+    {
+     "format": "listening",
+     "items": null,
+     "points": 2.5,
+     "note": "4 dạng: hoàn thành bảng, điền từ từ độc thoại, chọn đáp án sau phỏng vấn, True/False/Not Given về chữ viết tay."
+    },
+    {
+     "format": "sentence_completion",
+     "items": null,
+     "points": 2.0,
+     "note": "Vocabulary & Grammar 2,0: MCQ ngữ pháp – từ vựng, word form trong đoạn (Celine Dion), sửa lỗi trong đoạn (giấc ngủ)."
+    },
+    {
+     "format": "word_formation",
+     "items": null,
+     "points": null,
+     "note": "Thuộc phần Vocabulary & Grammar."
+    },
+    {
+     "format": "error_id",
+     "items": null,
+     "points": null,
+     "note": "Thuộc phần Vocabulary & Grammar."
+    },
+    {
+     "format": "open_cloze",
+     "items": null,
+     "points": 3.0,
+     "note": "Reading 3,0: open cloze (quảng cáo), MCQ cloze (trí nhớ), bài dài FOMO/JOMO, chèn câu (fast fashion), matching headings (crowding)."
+    },
+    {
+     "format": "cloze",
+     "items": null,
+     "points": null,
+     "note": "MCQ cloze."
+    },
+    {
+     "format": "reading_mcq",
+     "items": null,
+     "points": null,
+     "note": "Bài đọc dài FOMO/JOMO — dễ mất điểm."
+    },
+    {
+     "format": "gap_text",
+     "items": null,
+     "points": null,
+     "note": "Chèn câu vào bài (fast fashion)."
+    },
+    {
+     "format": "matching_headings",
+     "items": null,
+     "points": null,
+     "note": "Nối tiêu đề — dễ mất điểm."
+    },
+    {
+     "format": "transformation",
+     "items": null,
+     "points": 2.5,
+     "note": "Writing 2,5: viết lại câu, biến đổi từ, essay."
+    },
+    {
+     "format": "key_word",
+     "items": null,
+     "points": null,
+     "note": "Word transformation."
+    },
+    {
+     "format": "essay",
+     "items": 1,
+     "points": null,
+     "note": "Essay ~250 từ: người trẻ dành nhiều thời gian trong thế giới ảo hơn đời thực."
+    }
+   ],
+   "sample_links": [
+    "https://springboard.vn/de-thi-chuyen-anh-hung-yen-2026/"
+   ]
+  }
+ },
+ "formulas": {
+  "so": {
+   "w": {
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 2.0
+   },
+   "paper": "so",
+   "text": "Chưa tìm được văn bản 2026. Năm 2025 cả hai trường (Chuyên Hưng Yên, Chuyên Thái Bình): Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Tiếng Anh + bài thi môn chuyên × 2. Điểm chuẩn 2026 hai trường (chuyên Anh 38,2 và 36,65; cao nhất 43,75) nằm trong thang 50, phù hợp công thức này.",
+   "max": 50
+  }
+ },
+ "m3_label": null,
+ "exams": {
+  "so": {
+   "label": "Kỳ thi của Sở GD&ĐT Hưng Yên",
+   "date": "24/5/2026 chiều: làm thủ tục. 25/5 sáng: Ngữ văn (tự luận, 120'); 25/5 chiều: Toán (trắc nghiệm, 90'). 26/5 sáng: Tiếng Anh (trắc nghiệm, 60'); 26/5 chiều: môn chuyên (tự luận, 150'; Tin học lập trình trên máy). Điểm thi/điểm chuẩn dự kiến công bố trước 10/6/2026.",
+   "rule": "2026: thí sinh chuyên đăng ký 1 trường chuyên + 1 trường công lập không chuyên bất kỳ trong tỉnh. Lớp Pháp, Trung, Hàn (Chuyên Thái Bình) thi bài Tiếng Anh chuyên. Năm 2025 ở Chuyên Thái Bình: thí sinh chuyên Anh được đăng ký thêm 1 lớp chuyên Trung, Pháp hoặc Hàn (xét bằng cùng bài Anh chuyên); các môn khác chỉ 1 lớp; trúng NV trước không xét NV sau. Chuyên Hưng Yên chỉ có lớp chuyên Anh trong các ngoại ngữ."
+  }
+ },
+ "nv2_exam": null,
+ "nv_rule": "2026: thí sinh chuyên đăng ký 1 trường chuyên + 1 trường công lập không chuyên bất kỳ trong tỉnh. Lớp Pháp, Trung, Hàn (Chuyên Thái Bình) thi bài Tiếng Anh chuyên. Năm 2025 ở Chuyên Thái Bình: thí sinh chuyên Anh được đăng ký thêm 1 lớp chuyên Trung, Pháp hoặc Hàn (xét bằng cùng bài Anh chuyên); các môn khác chỉ 1 lớp; trúng NV trước không xét NV sau. Chuyên Hưng Yên chỉ có lớp chuyên Anh trong các ngoại ngữ.",
+ "options": [
+  {
+   "id": "so-chuyen-hung-yen-anh",
+   "sk": "so-chuyen-hung-yen",
+   "school": "THPT Chuyên Hưng Yên",
+   "area": "Hưng Yên",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    41.4,
+    40.45,
+    38.2
+   ],
+   "scale": 50,
+   "quota": {},
+   "note": "Chỉ có lớp chuyên Anh trong các ngoại ngữ. Thang 2026 suy theo công thức 2025 (chưa xác minh văn bản 2026). Chỉ tiêu lớp chưa tìm được."
+  },
+  {
+   "id": "so-chuyen-thai-binh-anh",
+   "sk": "so-chuyen-thai-binh",
+   "school": "THPT Chuyên Thái Bình",
+   "area": "Thái Bình",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    36.9,
+    36.95,
+    36.65
+   ],
+   "scale": 50,
+   "quota": {
+    "2025": 70
+   },
+   "note": "2025: 2 lớp chuyên Anh (35 HS/lớp); trường có 15 lớp/525 HS. Thang 2026 suy theo công thức 2025."
+  },
+  {
+   "id": "so-chuyen-thai-binh-phap",
+   "sk": "so-chuyen-thai-binh",
+   "school": "THPT Chuyên Thái Bình",
+   "area": "Thái Bình",
+   "cls": "chuyên Pháp",
+   "lang": "Phap",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    33.8,
+    32.6,
+    35.95
+   ],
+   "scale": 50,
+   "quota": {
+    "2025": 35
+   },
+   "note": "Thi bài Tiếng Anh chuyên."
+  },
+  {
+   "id": "so-chuyen-thai-binh-trung",
+   "sk": "so-chuyen-thai-binh",
+   "school": "THPT Chuyên Thái Bình",
+   "area": "Thái Bình",
+   "cls": "chuyên Trung",
+   "lang": "Trung",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    32.7,
+    35.75,
+    37.1
+   ],
+   "scale": 50,
+   "quota": {
+    "2025": 35
+   },
+   "note": "Thi bài Tiếng Anh chuyên."
+  },
+  {
+   "id": "so-chuyen-thai-binh-han",
+   "sk": "so-chuyen-thai-binh",
+   "school": "THPT Chuyên Thái Bình",
+   "area": "Thái Bình",
+   "cls": "chuyên Hàn",
+   "lang": "Han",
+   "f": "so",
+   "exam": "so",
+   "group": "extra",
+   "years": [
+    2024,
+    2025,
+    2026
+   ],
+   "cut": [
+    32.8,
+    33.7,
+    36.45
+   ],
+   "scale": 50,
+   "quota": {
+    "2025": 35
+   },
+   "note": "Thi bài Tiếng Anh chuyên."
+  }
+ ],
+ "paper": {
+  "map": "B2+",
+  "label": "đề chuyên Anh của Sở Hưng Yên",
+  "ac_add": 2.5,
+  "ac_cap": 10,
+  "ac_label": "Anh chung (đề chung)",
+  "difficulty": "B2+",
+  "difficulty_evidence": "Springboard nhận xét đề Chuyên Anh Hưng Yên 2026 'nghiêng về B2 vững đến C1'; độ khó nằm ở yêu cầu làm đều tay hơn là vài câu đánh đố; Reading Part 3 (FOMO/JOMO) và matching headings dễ mất điểm. Đề chuyên Thái Bình 2025 (tuyensinh247): tự luận kết hợp trắc nghiệm, 3 kỹ năng nghe – đọc – viết, 150'. Chưa tìm được nhận xét báo chí riêng về đề chuyên Thái Bình các năm trước.",
+  "minutes": 150,
+  "has_listening": true,
+  "essay_words": 250,
+  "sections": [
+   {
+    "format": "listening",
+    "items": null,
+    "points": 2.5,
+    "note": "4 dạng: hoàn thành bảng, điền từ từ độc thoại, chọn đáp án sau phỏng vấn, True/False/Not Given về chữ viết tay."
+   },
+   {
+    "format": "sentence_completion",
+    "items": null,
+    "points": 2.0,
+    "note": "Vocabulary & Grammar 2,0: MCQ ngữ pháp – từ vựng, word form trong đoạn (Celine Dion), sửa lỗi trong đoạn (giấc ngủ)."
+   },
+   {
+    "format": "word_formation",
+    "items": null,
+    "points": null,
+    "note": "Thuộc phần Vocabulary & Grammar."
+   },
+   {
+    "format": "error_id",
+    "items": null,
+    "points": null,
+    "note": "Thuộc phần Vocabulary & Grammar."
+   },
+   {
+    "format": "open_cloze",
+    "items": null,
+    "points": 3.0,
+    "note": "Reading 3,0: open cloze (quảng cáo), MCQ cloze (trí nhớ), bài dài FOMO/JOMO, chèn câu (fast fashion), matching headings (crowding)."
+   },
+   {
+    "format": "cloze",
+    "items": null,
+    "points": null,
+    "note": "MCQ cloze."
+   },
+   {
+    "format": "reading_mcq",
+    "items": null,
+    "points": null,
+    "note": "Bài đọc dài FOMO/JOMO — dễ mất điểm."
+   },
+   {
+    "format": "gap_text",
+    "items": null,
+    "points": null,
+    "note": "Chèn câu vào bài (fast fashion)."
+   },
+   {
+    "format": "matching_headings",
+    "items": null,
+    "points": null,
+    "note": "Nối tiêu đề — dễ mất điểm."
+   },
+   {
+    "format": "transformation",
+    "items": null,
+    "points": 2.5,
+    "note": "Writing 2,5: viết lại câu, biến đổi từ, essay."
+   },
+   {
+    "format": "key_word",
+    "items": null,
+    "points": null,
+    "note": "Word transformation."
+   },
+   {
+    "format": "essay",
+    "items": 1,
+    "points": null,
+    "note": "Essay ~250 từ: người trẻ dành nhiều thời gian trong thế giới ảo hơn đời thực."
+   }
+  ],
+  "sample_links": [
+   "https://springboard.vn/de-thi-chuyen-anh-hung-yen-2026/"
+  ]
+ },
+ "exam_2026": {
+  "dates": "24/5/2026 chiều: làm thủ tục. 25/5 sáng: Ngữ văn (tự luận, 120'); 25/5 chiều: Toán (trắc nghiệm, 90'). 26/5 sáng: Tiếng Anh (trắc nghiệm, 60'); 26/5 chiều: môn chuyên (tự luận, 150'; Tin học lập trình trên máy). Điểm thi/điểm chuẩn dự kiến công bố trước 10/6/2026.",
+  "organisation": "một đề chung cho cả tỉnh mới: Sở tổ chức một kỳ thi tuyển sinh lớp 10 chung cho trường chuyên và công lập, không phân vùng tuyển sinh; 56 hội đồng thi, 1.918 phòng thi; THPT Chuyên Hưng Yên và THPT Chuyên Thái Bình mỗi trường là 2 điểm thi. Springboard có một đề Chuyên Anh tỉnh Hưng Yên 2026 (thi 26/5/2026); chưa có văn bản nói rõ hai trường dùng cùng một đề chuyên.",
+  "common_subjects": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh"
+  ],
+  "notes": "Gần 43.000 thí sinh (42.688 đăng ký), trong đó 2.223 đăng ký vào trường THPT chuyên. Đề thi theo chương trình lớp 9 GDPT 2018 (sửa đổi 2025), thang 10."
+ },
+ "plan_2027": null,
+ "stories": [
+  {
+   "title": "Phân tích đề Chuyên Anh 10 tỉnh Hưng Yên 2026–2027",
+   "who": "giáo viên",
+   "year": 2026,
+   "school": "THPT Chuyên Hưng Yên",
+   "summary": "Springboard phân tích đề thi ngày 26/5/2026: Listening 2,5, Vocabulary & Grammar 2,0, Reading 3,0, Writing 2,5 (essay 250 từ về thế giới ảo). Đề ở mức B2 vững đến C1, khó vì đòi hỏi làm đều tay.",
+   "takeaways": [
+    "Luyện matching headings và bài đọc dài kiểu FOMO/JOMO",
+    "Luyện nghe True/False/Not Given",
+    "Tập essay 250 từ về chủ đề công nghệ – lối sống giới trẻ"
+   ],
+   "url": "https://springboard.vn/de-thi-chuyen-anh-hung-yen-2026/"
+  },
+  {
+   "title": "Hưng Yên: gần 43.000 thí sinh làm thủ tục dự thi vào lớp 10",
+   "who": "báo",
+   "year": 2026,
+   "school": null,
+   "summary": "Năm đầu sau sáp nhập, toàn tỉnh có gần 43.000 thí sinh, trong đó 2.223 thí sinh đăng ký vào trường THPT chuyên; thi 24–26/5/2026, môn chuyên chiều 26/5.",
+   "takeaways": [
+    "Môn chuyên thi ngay sau bài Tiếng Anh chung cùng ngày — luyện sức bền làm 2 bài tiếng Anh trong một ngày"
+   ],
+   "url": "https://thuonghieucongluan.com.vn/hung-yen-gan-43-000-thi-sinh-lam-thu-tuc-du-thi-vao-lop-10-thpt-a319785.html"
+  }
+ ],
+ "prep_tips": [
+  "Ngày 26/5/2026 thí sinh thi Tiếng Anh chung (sáng, 60') rồi môn chuyên (chiều, 150') — luyện làm hai đề liên tiếp trong một ngày (tuyensinh247, Thương hiệu & Công luận).",
+  "Reading chiếm 3/10 điểm với matching headings, chèn câu, bài dài — đây là phần phân loại (Springboard).",
+  "Listening 2,5/10 có True/False/Not Given và điền bảng — luyện nghe học thuật kiểu IELTS (Springboard).",
+  "Ở Chuyên Thái Bình, một bài Anh chuyên dùng xét cả lớp Anh và một lớp Pháp/Trung/Hàn — đăng ký thêm lớp phụ để tăng cơ hội (tuyensinh247, quy định 2025).",
+  "Chuyên Hưng Yên chỉ có lớp chuyên Anh; điểm chuẩn chuyên Anh Hưng Yên cũ cao hơn Thái Bình cũ ~1,5–4,5 điểm (2024–2026, tuyensinh247)."
+ ],
+ "confidence": "medium",
+ "gaps": [
+  "Văn bản công thức xét tuyển chuyên 2026 (đang giả định giữ công thức 2025).",
+  "Điểm chuẩn chuyên Anh 2022, 2023 của cả hai trường (chỉ có hình ảnh trên các trang tổng hợp).",
+  "Chỉ tiêu lớp chuyên Anh Chuyên Hưng Yên; chỉ tiêu 2026 của Chuyên Thái Bình.",
+  "Đề chuyên Anh 2026 có dùng chung cho Chuyên Thái Bình không; số câu từng phần.",
+  "Nhận xét báo chí/giáo viên về độ khó đề chuyên Thái Bình các năm trước (đề Thái Bình nổi tiếng khó — chưa tìm được nguồn cụ thể).",
+  "Kế hoạch 2027 chưa có.",
+  "Chia sẻ của thủ khoa/học sinh thật: chưa tìm được (hết quota tìm kiếm)."
+ ],
+ "sources": [
+  {
+   "title": "Tuyensinh247 – Thông tin tuyển sinh lớp 10 Hưng Yên 2026",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/hung-yen-p5.html"
+  },
+  {
+   "title": "Tuyensinh247 – Điểm chuẩn vào lớp 10 Hưng Yên",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/hung-yen-p5.html"
+  },
+  {
+   "title": "Tuyensinh247 – THPT Chuyên Thái Bình",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-thai-binh-1852.html"
+  },
+  {
+   "title": "Tuyensinh247 – THPT Chuyên Hưng Yên",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/thpt-chuyen-hung-yen-1846.html"
+  },
+  {
+   "title": "Hoatieu – Điểm chuẩn lớp 10 Hưng Yên (công thức 2025)",
+   "url": "https://hoatieu.vn/diem-chuan-lop-10-hung-yen-209063"
+  },
+  {
+   "title": "Thương hiệu & Công luận – Hưng Yên gần 43.000 thí sinh làm thủ tục dự thi vào lớp 10",
+   "url": "https://thuonghieucongluan.com.vn/hung-yen-gan-43-000-thi-sinh-lam-thu-tuc-du-thi-vao-lop-10-thpt-a319785.html"
+  },
+  {
+   "title": "Báo Lào Cai – Lịch công bố điểm thi, điểm chuẩn lớp 10 Hưng Yên 2026",
+   "url": "https://baolaocai.vn/lich-cong-bo-diem-thi-diem-chuan-lop-10-hung-yen-2026-moi-nhat-post901088.html"
+  },
+  {
+   "title": "Springboard – Đề thi Chuyên Anh 10 tỉnh Hưng Yên 2026-2027",
+   "url": "https://springboard.vn/de-thi-chuyen-anh-hung-yen-2026/"
+  }
+ ],
+ "formula_raw": {
+  "text": "Chưa tìm được văn bản 2026. Năm 2025 cả hai trường (Chuyên Hưng Yên, Chuyên Thái Bình): Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Tiếng Anh + bài thi môn chuyên × 2. Điểm chuẩn 2026 hai trường (chuyên Anh 38,2 và 36,65; cao nhất 43,75) nằm trong thang 50, phù hợp công thức này.",
+  "parts": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh (chung)",
+   "Anh chuyên×2"
+  ],
+  "max": 50,
+  "conditions": "2025: mỗi bài thi phải > 2,0 (Thái Bình) / tối thiểu 2,0 (Hưng Yên). 2026: thí sinh chuyên cần kết quả rèn luyện và học tập các năm THCS từ mức Khá trở lên.",
+  "formula_by_year": {
+   "2024": "Hưng Yên cũ và Thái Bình cũ: chưa đọc được văn bản; điểm chuẩn (41,4 và 36,9) cùng dải thang 50.",
+   "2025": "Hưng Yên cũ: 4 bài, Văn–Toán–Anh hệ số 1, môn chuyên hệ số 2, mỗi bài ≥ 2,0 (Hoatieu). Thái Bình cũ: tổng điểm các bài thi đại trà + bài chuyên (hệ số 2); mỗi bài > 2,0.",
+   "2026": "Chưa xác minh — giả định giữ công thức 2025 (thang 50)."
+  }
+ },
+ "schools_raw": [
+  {
+   "name": "THPT Chuyên Hưng Yên",
+   "old_province": "Hưng Yên",
+   "city": "Hưng Yên",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {},
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": null,
+      "2024": 41.4,
+      "2025": 40.45,
+      "2026": 38.2
+     },
+     "scale": {
+      "2024": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "Chỉ có lớp chuyên Anh trong các ngoại ngữ. Thang 2026 suy theo công thức 2025 (chưa xác minh văn bản 2026). Chỉ tiêu lớp chưa tìm được."
+    }
+   ]
+  },
+  {
+   "name": "THPT Chuyên Thái Bình",
+   "old_province": "Thái Bình",
+   "city": "Thái Bình",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2025": 70
+     },
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": null,
+      "2024": 36.9,
+      "2025": 36.95,
+      "2026": 36.65
+     },
+     "scale": {
+      "2024": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "2025: 2 lớp chuyên Anh (35 HS/lớp); trường có 15 lớp/525 HS. Thang 2026 suy theo công thức 2025."
+    },
+    {
+     "lang": "Pháp",
+     "admit_by_english": true,
+     "quota": {
+      "2025": 35
+     },
+     "cut": {
+      "2024": 33.8,
+      "2025": 32.6,
+      "2026": 35.95
+     },
+     "scale": {
+      "2024": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "Thi bài Tiếng Anh chuyên."
+    },
+    {
+     "lang": "Trung",
+     "admit_by_english": true,
+     "quota": {
+      "2025": 35
+     },
+     "cut": {
+      "2024": 32.7,
+      "2025": 35.75,
+      "2026": 37.1
+     },
+     "scale": {
+      "2024": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "Thi bài Tiếng Anh chuyên."
+    },
+    {
+     "lang": "Hàn",
+     "admit_by_english": true,
+     "quota": {
+      "2025": 35
+     },
+     "cut": {
+      "2024": 32.8,
+      "2025": 33.7,
+      "2026": 36.45
+     },
+     "scale": {
+      "2024": 50,
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "Thi bài Tiếng Anh chuyên."
+    }
+   ]
+  }
+ ],
+ "goals": [
+  {
+   "k": "so-chuyen-hung-yen",
+   "name": "Chuyên Hưng Yên",
+   "score": 7.9,
+   "paper": "so",
+   "need_tv_more": false
+  },
+  {
+   "k": "so-chuyen-thai-binh",
+   "name": "Chuyên Thái Bình",
+   "score": 6.5,
+   "paper": "so",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "so-chuyen-thai-binh"
+}

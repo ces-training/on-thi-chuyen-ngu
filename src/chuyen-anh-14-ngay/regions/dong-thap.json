@@ -1,0 +1,327 @@
+{
+ "slug": "dong-thap",
+ "name": "Đồng Tháp",
+ "merged_from": [
+  "Đồng Tháp",
+  "Tiền Giang"
+ ],
+ "edition": "Bản Đồng Tháp",
+ "exam_md": [
+  5,
+  27
+ ],
+ "papers": {
+  "so": {
+   "map": "B2",
+   "label": "đề chuyên Anh của Sở Đồng Tháp",
+   "ac_add": 2.5,
+   "ac_cap": 10,
+   "ac_label": "Anh chung (đề chung)",
+   "difficulty": null,
+   "difficulty_evidence": "Chưa tìm được đề chuyên Anh Nguyễn Quang Diêu, Nguyễn Đình Chiểu hay Tiền Giang các năm 2022–2026, cũng như nhận xét đề. Chỉ biết hình thức: trắc nghiệm + nghe + luận, 150 phút.",
+   "minutes": 150,
+   "has_listening": true,
+   "essay_words": null,
+   "sections": [
+    {
+     "format": "listening",
+     "items": null,
+     "points": null,
+     "note": "Kế hoạch 2026 nêu đề chuyên Anh gồm trắc nghiệm, nghe và viết luận; chưa có đề cụ thể"
+    },
+    {
+     "format": "essay",
+     "items": 1,
+     "points": null,
+     "note": "Có bài viết luận; độ dài chưa rõ"
+    }
+   ],
+   "sample_links": []
+  }
+ },
+ "formulas": {
+  "so": {
+   "w": {
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 2.0
+   },
+   "paper": "so",
+   "text": "Điểm xét tuyển lớp chuyên = Ngữ văn + Toán + Tiếng Anh (hệ số 1) + Điểm môn chuyên × 2",
+   "max": 50
+  }
+ },
+ "m3_label": null,
+ "exams": {
+  "so": {
+   "label": "Kỳ thi của Sở GD&ĐT Đồng Tháp",
+   "date": "27/5/2026: Ngữ văn (sáng, 120'), Tiếng Anh và Toán (chiều; Tiếng Anh 60', Toán 90'); 28/5/2026 sáng: môn chuyên 150 phút (bắt đầu 07:25). Kết quả công bố trước 31/7/2026.",
+   "rule": "2026: mỗi học sinh đăng ký 1 lớp chuyên (1 trường), nộp 1 hồ sơ duy nhất tại trường chuyên; nếu không trúng chuyên được xét tối đa 3 trường THPT công lập theo thứ tự NV1–NV3. Năm 2025 (Đồng Tháp cũ) được chọn 2 môn chuyên: xét môn chuyên 1 trước, trượt mới xét môn chuyên 2. Không có lớp chuyên ngoại ngữ khác ngoài tiếng Anh."
+  }
+ },
+ "nv2_exam": null,
+ "nv_rule": "2026: mỗi học sinh đăng ký 1 lớp chuyên (1 trường), nộp 1 hồ sơ duy nhất tại trường chuyên; nếu không trúng chuyên được xét tối đa 3 trường THPT công lập theo thứ tự NV1–NV3. Năm 2025 (Đồng Tháp cũ) được chọn 2 môn chuyên: xét môn chuyên 1 trước, trượt mới xét môn chuyên 2. Không có lớp chuyên ngoại ngữ khác ngoài tiếng Anh.",
+ "options": [
+  {
+   "id": "so-chuyen-nguyen-quang-dieu-anh",
+   "sk": "so-chuyen-nguyen-quang-dieu",
+   "school": "THPT chuyên Nguyễn Quang Diêu",
+   "area": "Đồng Tháp",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2025,
+    2026
+   ],
+   "cut": [
+    35.3,
+    35
+   ],
+   "scale": 50,
+   "quota": {
+    "2025": 35
+   },
+   "note": "Nguồn: tuyensinh247. 2025: mỗi trường 1 lớp chuyên mỗi môn, tối đa 35 HS (Tuổi Trẻ); riêng Toán, Anh, Tin không quá 2 lớp."
+  },
+  {
+   "id": "so-chuyen-nguyen-dinh-chieu-anh",
+   "sk": "so-chuyen-nguyen-dinh-chieu",
+   "school": "THPT chuyên Nguyễn Đình Chiểu",
+   "area": "Đồng Tháp",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2025,
+    2026
+   ],
+   "cut": [
+    26.9,
+    31.7
+   ],
+   "scale": 50,
+   "quota": {
+    "2025": 35
+   },
+   "note": "Nguồn: tuyensinh247 (một số ô 2025 của trường này trùng với Nguyễn Quang Diêu, ví dụ Toán 36 và Lý 29,25 – cần kiểm chứng)."
+  },
+  {
+   "id": "so-chuyen-tien-giang-anh",
+   "sk": "so-chuyen-tien-giang",
+   "school": "THPT chuyên Tiền Giang",
+   "area": "Tiền Giang",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2026
+   ],
+   "cut": [
+    36.2
+   ],
+   "scale": 50,
+   "quota": {},
+   "note": "Nguồn: tuyensinh247. 2026: 36,2, cao nhất chuyên Anh toàn tỉnh mới. Thang 2024 (Tiền Giang cũ) chưa xác minh."
+  }
+ ],
+ "paper": {
+  "map": "B2",
+  "label": "đề chuyên Anh của Sở Đồng Tháp",
+  "ac_add": 2.5,
+  "ac_cap": 10,
+  "ac_label": "Anh chung (đề chung)",
+  "difficulty": null,
+  "difficulty_evidence": "Chưa tìm được đề chuyên Anh Nguyễn Quang Diêu, Nguyễn Đình Chiểu hay Tiền Giang các năm 2022–2026, cũng như nhận xét đề. Chỉ biết hình thức: trắc nghiệm + nghe + luận, 150 phút.",
+  "minutes": 150,
+  "has_listening": true,
+  "essay_words": null,
+  "sections": [
+   {
+    "format": "listening",
+    "items": null,
+    "points": null,
+    "note": "Kế hoạch 2026 nêu đề chuyên Anh gồm trắc nghiệm, nghe và viết luận; chưa có đề cụ thể"
+   },
+   {
+    "format": "essay",
+    "items": 1,
+    "points": null,
+    "note": "Có bài viết luận; độ dài chưa rõ"
+   }
+  ],
+  "sample_links": []
+ },
+ "exam_2026": {
+  "dates": "27/5/2026: Ngữ văn (sáng, 120'), Tiếng Anh và Toán (chiều; Tiếng Anh 60', Toán 90'); 28/5/2026 sáng: môn chuyên 150 phút (bắt đầu 07:25). Kết quả công bố trước 31/7/2026.",
+  "organisation": "Một kế hoạch tuyển sinh chung cho tỉnh Đồng Tháp mới (QĐ 238/QĐ-SGDĐT ngày 20/3/2026), thi tuyển cho cả trường công lập và 3 trường chuyên (Nguyễn Quang Diêu, Nguyễn Đình Chiểu, Tiền Giang), cùng lịch thi; mỗi trường chuyên xét điểm chuẩn riêng. Chưa tìm được nguồn xác nhận cả tỉnh dùng chung một đề chuyên Anh.",
+  "common_subjects": [
+   "Ngữ văn",
+   "Toán",
+   "Tiếng Anh"
+  ],
+  "notes": "Ngữ văn tự luận 120'; Toán trắc nghiệm 90'; Tiếng Anh trắc nghiệm 60' (theo tuyensinh247 2026). Môn chuyên Tiếng Anh gồm trắc nghiệm, nghe và viết luận. Lớp chuyên chỉ mở khi có ≥ 45 thí sinh đăng ký; 45–89 thí sinh thì mở 1 lớp tối đa 35 HS. Năm 2025 Đồng Tháp cũ quay lại thi tuyển công lập sau 3 năm xét tuyển."
+ },
+ "plan_2027": null,
+ "stories": [],
+ "prep_tips": [
+  "Điều kiện riêng của Đồng Tháp: tổng 3 môn chung (chưa nhân hệ số) phải ≥ 15 – học sinh chuyên Anh phải đạt trung bình ≥ 5 cả Toán và Văn (tuyensinh247 2026).",
+  "Đề chuyên Anh có phần nghe và viết luận trong 150 phút – luyện nghe và viết luận đều đặn, không chỉ ngữ pháp trắc nghiệm (tuyensinh247 2026).",
+  "Tiếng Anh chung chỉ 60 phút trắc nghiệm, thi cùng buổi chiều với Toán – luyện tốc độ làm bài (tuyensinh247 2026).",
+  "Điểm chuẩn chuyên Anh 2026: Tiền Giang 36,2 > Nguyễn Quang Diêu 35 > Nguyễn Đình Chiểu 31,7 – chỉ được chọn 1 trường, cân nhắc theo sức (tuyensinh247)."
+ ],
+ "confidence": "low",
+ "gaps": [
+  "Kế hoạch tuyển sinh 2027 chưa tìm thấy.",
+  "Không có đề chuyên Anh của 3 trường các năm 2022–2026, nên thiếu cấu trúc chi tiết và độ khó.",
+  "Thiếu điểm chuẩn chuyên Anh 2022–2024 của Nguyễn Quang Diêu, Nguyễn Đình Chiểu; 2022, 2023, 2025 của chuyên Tiền Giang. Toàn bộ số điểm hiện có chỉ từ tuyensinh247.",
+  "Không rõ năm 2026 cả tỉnh dùng chung đề chuyên Anh hay không.",
+  "Thiếu chỉ tiêu chuyên Anh 2026 từng trường và số thí sinh đăng ký.",
+  "Không tìm được bài chia sẻ kinh nghiệm ôn thi chuyên Anh thật ở Đồng Tháp, Tiền Giang."
+ ],
+ "sources": [
+  {
+   "title": "Tuyensinh247 – Tuyển sinh lớp 10 Đồng Tháp 2026",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/dong-thap-p19.html"
+  },
+  {
+   "title": "Tuyensinh247 – Điểm chuẩn lớp 10 Đồng Tháp",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/dong-thap-p19.html"
+  },
+  {
+   "title": "Tuổi Trẻ – Đồng Tháp thi tuyển sinh lớp 10 sau 3 năm, cách tính điểm ra sao?",
+   "url": "https://tuoitre.vn/dong-thap-thi-tuyen-sinh-lop-10-sau-3-nam-cach-tinh-diem-ra-sao-20250328173032117.htm"
+  },
+  {
+   "title": "Hoatieu – Đáp án đề thi tuyển sinh lớp 10 môn Anh Đồng Tháp 2026",
+   "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-dong-thap-nam-208764"
+  },
+  {
+   "title": "Hoatieu – Lịch thi vào 10 năm 2026-2027",
+   "url": "https://hoatieu.vn/phap-luat/lich-thi-tuyen-sinh-lop-10-213450"
+  }
+ ],
+ "formula_raw": {
+  "text": "Điểm xét tuyển lớp chuyên = Ngữ văn + Toán + Tiếng Anh (hệ số 1) + Điểm môn chuyên × 2",
+  "parts": [
+   "Ngữ văn",
+   "Toán",
+   "Tiếng Anh (chung)",
+   "Anh chuyên×2"
+  ],
+  "max": 50,
+  "conditions": "2026: mỗi bài thi ≥ 2,00 và tổng 3 bài không chuyên (chưa nhân hệ số) ≥ 15,00. Xếp hạng khi bằng điểm: điểm môn chuyên → ĐTB môn chuyên lớp 9 → ĐTB các môn lớp 9 → tổng Văn + Toán.",
+  "formula_by_year": {
+   "2025": "Đồng Tháp cũ: tổng điểm các môn không chuyên (hệ số 1) + môn chuyên (hệ số 2) (Tuổi Trẻ 28/3/2025).",
+   "2026": "Trang tuyensinh247 ghi 'tổng ba bài không chuyên + điểm bài chuyên' mà không nêu hệ số; điểm chuẩn 2026 lên tới 40,7 cho thấy vẫn nhân 2 (thang 50) – cần đối chiếu QĐ 238/QĐ-SGDĐT."
+  }
+ },
+ "schools_raw": [
+  {
+   "name": "THPT chuyên Nguyễn Quang Diêu",
+   "old_province": "Đồng Tháp",
+   "city": "Cao Lãnh",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2025": 35
+     },
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": null,
+      "2024": null,
+      "2025": 35.3,
+      "2026": 35
+     },
+     "scale": {
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "Nguồn: tuyensinh247. 2025: mỗi trường 1 lớp chuyên mỗi môn, tối đa 35 HS (Tuổi Trẻ); riêng Toán, Anh, Tin không quá 2 lớp."
+    }
+   ]
+  },
+  {
+   "name": "THPT chuyên Nguyễn Đình Chiểu",
+   "old_province": "Đồng Tháp",
+   "city": "Sa Đéc",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2025": 35
+     },
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": null,
+      "2024": null,
+      "2025": 26.9,
+      "2026": 31.7
+     },
+     "scale": {
+      "2025": 50,
+      "2026": 50
+     },
+     "note": "Nguồn: tuyensinh247 (một số ô 2025 của trường này trùng với Nguyễn Quang Diêu, ví dụ Toán 36 và Lý 29,25 – cần kiểm chứng)."
+    }
+   ]
+  },
+  {
+   "name": "THPT chuyên Tiền Giang",
+   "old_province": "Tiền Giang",
+   "city": "Mỹ Tho",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {},
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": null,
+      "2024": 34.41,
+      "2025": null,
+      "2026": 36.2
+     },
+     "scale": {
+      "2026": 50
+     },
+     "note": "Nguồn: tuyensinh247. 2026: 36,2, cao nhất chuyên Anh toàn tỉnh mới. Thang 2024 (Tiền Giang cũ) chưa xác minh."
+    }
+   ]
+  }
+ ],
+ "goals": [
+  {
+   "k": "so-chuyen-tien-giang",
+   "name": "chuyên Tiền Giang",
+   "score": 6.5,
+   "paper": "so",
+   "need_tv_more": false
+  },
+  {
+   "k": "so-chuyen-nguyen-quang-dieu",
+   "name": "chuyên Nguyễn Quang Diêu",
+   "score": 6.1,
+   "paper": "so",
+   "need_tv_more": false
+  },
+  {
+   "k": "so-chuyen-nguyen-dinh-chieu",
+   "name": "chuyên Nguyễn Đình Chiểu",
+   "score": 4.2,
+   "paper": "so",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "so-chuyen-nguyen-quang-dieu"
+}

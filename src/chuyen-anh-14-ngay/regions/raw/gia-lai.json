@@ -1,0 +1,72 @@
+{
+  "so": "Gia Lai",
+  "slug": "gia-lai",
+  "merged_from": ["Gia Lai", "Bình Định"],
+  "exam_2026": {
+    "dates": null,
+    "organisation": "chưa xác minh",
+    "common_subjects": [],
+    "notes": "Theo Thư viện Pháp luật: trường THPT tuyển sinh bằng thi tuyển công bố kết quả chấm thi trước 07/7/2026; trường tuyển bằng xét tuyển hoàn thành trước 20/7/2026. Như vậy năm 2026 có cả thi tuyển và xét tuyển trong tỉnh mới. Năm 2025, Gia Lai cũ tuyển công lập bằng xét tuyển, còn Bình Định cũ thi tuyển (Dân trí)."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": null,
+    "parts": [],
+    "max": null,
+    "conditions": null,
+    "formula_by_year": {}
+  },
+  "nv_rule": "Chưa xác minh.",
+  "chuyen_paper": {
+    "minutes": null,
+    "scale": null,
+    "has_listening": null,
+    "essay_words": null,
+    "sections": [],
+    "difficulty": null,
+    "difficulty_evidence": "Chưa tìm được nguồn.",
+    "sample_links": []
+  },
+  "schools": [
+    {
+      "name": "THPT chuyên Hùng Vương",
+      "old_province": "Gia Lai",
+      "city": "Pleiku",
+      "classes": [
+        {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {"2022": null, "2023": null, "2024": null, "2025": null, "2026": null}, "scale": {}, "note": "Tên trường theo đầu bài; chưa xác minh được trong phiên này."}
+      ]
+    },
+    {
+      "name": "THPT chuyên Lê Quý Đôn",
+      "old_province": "Bình Định",
+      "city": "Quy Nhơn",
+      "classes": [
+        {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {"2022": null, "2023": null, "2024": null, "2025": null, "2026": null}, "scale": {}, "note": "Tên trường theo đầu bài; chưa xác minh được trong phiên này. Lớp Pháp/Trung (nếu có): chưa rõ."}
+      ]
+    },
+    {
+      "name": "THPT chuyên Chu Văn An",
+      "old_province": "Bình Định",
+      "city": null,
+      "classes": [
+        {"lang": "Anh", "quota": {}, "applicants": {}, "cut": {"2022": null, "2023": null, "2024": null, "2025": null, "2026": null}, "scale": {}, "note": "Tên trường theo đầu bài; chưa xác minh được địa điểm và lớp chuyên Anh."}
+      ]
+    }
+  ],
+  "stories": [],
+  "prep_tips": [],
+  "confidence": "low",
+  "gaps": [
+    "Gần như toàn bộ dữ liệu: hết hạn mức WebSearch của lượt làm việc trước khi nghiên cứu sở này, cần chạy lại.",
+    "Ngày thi 2026, cách tổ chức (đề chung hay theo khu vực Gia Lai cũ/Bình Định cũ), môn thi chung.",
+    "Công thức xét tuyển chuyên 2022–2026 của cả hai tỉnh cũ, điều kiện, NV.",
+    "Chỉ tiêu và điểm chuẩn chuyên Anh ở Hùng Vương, Lê Quý Đôn (Quy Nhơn), Chu Văn An 2022–2026.",
+    "Xác minh danh sách trường chuyên và lớp ngoại ngữ khác (Pháp/Trung/Nhật).",
+    "Cấu trúc và độ khó đề chuyên Anh, đề mẫu.",
+    "Chia sẻ kinh nghiệm, kế hoạch 2027."
+  ],
+  "sources": [
+    {"title": "Thư viện Pháp luật – Lịch công bố điểm thi vào 10 2026-2027 của 34 tỉnh thành", "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/lich-cong-bo-diem-thi-vao-10-2026-2027-cua-34-tinh-thanh-ngay-nao-138090187.html"},
+    {"title": "Dân trí – Công bố điểm thi, điểm chuẩn lớp 10: lịch chi tiết của 63 tỉnh (2025)", "url": "https://dantri.com.vn/giao-duc/cong-bo-diem-thi-diem-chuan-lop-10-lich-chi-tiet-cua-63-tinh-20250603114245583.htm"}
+  ]
+}

@@ -1,0 +1,236 @@
+{
+ "slug": "ca-mau",
+ "name": "Cà Mau",
+ "merged_from": [
+  "Cà Mau",
+  "Bạc Liêu"
+ ],
+ "edition": "Bản Cà Mau",
+ "exam_md": [
+  6,
+  13
+ ],
+ "papers": {
+  "so": {
+   "map": "B2",
+   "label": "đề chuyên Anh của Sở Cà Mau",
+   "ac_add": 2.5,
+   "ac_cap": 10,
+   "ac_label": "Anh chung (đề chung)",
+   "difficulty": null,
+   "difficulty_evidence": "Chưa tìm được đề chuyên Anh của Phan Ngọc Hiển hay Bạc Liêu các năm 2022–2026, hoặc nhận xét về độ khó.",
+   "minutes": 150,
+   "has_listening": true,
+   "essay_words": null,
+   "sections": [
+    {
+     "format": "listening",
+     "items": null,
+     "points": null,
+     "note": "Kế hoạch 2026: Tiếng Anh chuyên có thêm phần nghe; chưa có đề cụ thể"
+    }
+   ],
+   "sample_links": []
+  }
+ },
+ "formulas": {
+  "so": {
+   "w": {
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 2.0
+   },
+   "paper": "so",
+   "text": "Điểm xét tuyển lớp chuyên = Ngữ văn + Toán + Tiếng Anh (hệ số 1) + Điểm môn chuyên × 2",
+   "max": 50
+  }
+ },
+ "m3_label": null,
+ "exams": {
+  "so": {
+   "label": "Kỳ thi của Sở GD&ĐT Cà Mau",
+   "date": "Nhận hồ sơ chuyên 01–13/6/2026; thi tuyển 26–28/6/2026; chấm 29/6–04/7; xét tuyển và công bố kết quả chuyên 06/7/2026; phúc khảo 07–13/7/2026.",
+   "rule": "Chưa tìm được quy định số nguyện vọng chuyên năm 2026 (trang kế hoạch có nhắc nhưng không nêu cụ thể). Chỉ có lớp chuyên Tiếng Anh, không có lớp chuyên ngoại ngữ khác."
+  }
+ },
+ "nv2_exam": null,
+ "nv_rule": "Chưa tìm được quy định số nguyện vọng chuyên năm 2026 (trang kế hoạch có nhắc nhưng không nêu cụ thể). Chỉ có lớp chuyên Tiếng Anh, không có lớp chuyên ngoại ngữ khác.",
+ "options": [
+  {
+   "id": "so-chuyen-phan-ngoc-hien-anh",
+   "sk": "so-chuyen-phan-ngoc-hien",
+   "school": "THPT chuyên Phan Ngọc Hiển",
+   "area": "Cà Mau",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [],
+   "cut": [],
+   "scale": null,
+   "quota": {
+    "2026": 70
+   },
+   "note": "2026: 2 lớp Tiếng Anh, tối đa 35 HS/lớp; toàn trường tối đa 350 HS (tuyensinh247). Chưa tìm được điểm chuẩn năm nào."
+  },
+  {
+   "id": "so-chuyen-bac-lieu-anh",
+   "sk": "so-chuyen-bac-lieu",
+   "school": "THPT chuyên Bạc Liêu",
+   "area": "Bạc Liêu",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [],
+   "cut": [],
+   "scale": null,
+   "quota": {
+    "2026": 35
+   },
+   "note": "2026: 1 lớp Tiếng Anh, tối đa 35 HS; toàn trường tối đa 315 HS (tuyensinh247). Chưa tìm được điểm chuẩn năm nào."
+  }
+ ],
+ "paper": {
+  "map": "B2",
+  "label": "đề chuyên Anh của Sở Cà Mau",
+  "ac_add": 2.5,
+  "ac_cap": 10,
+  "ac_label": "Anh chung (đề chung)",
+  "difficulty": null,
+  "difficulty_evidence": "Chưa tìm được đề chuyên Anh của Phan Ngọc Hiển hay Bạc Liêu các năm 2022–2026, hoặc nhận xét về độ khó.",
+  "minutes": 150,
+  "has_listening": true,
+  "essay_words": null,
+  "sections": [
+   {
+    "format": "listening",
+    "items": null,
+    "points": null,
+    "note": "Kế hoạch 2026: Tiếng Anh chuyên có thêm phần nghe; chưa có đề cụ thể"
+   }
+  ],
+  "sample_links": []
+ },
+ "exam_2026": {
+  "dates": "Nhận hồ sơ chuyên 01–13/6/2026; thi tuyển 26–28/6/2026; chấm 29/6–04/7; xét tuyển và công bố kết quả chuyên 06/7/2026; phúc khảo 07–13/7/2026.",
+  "organisation": "Sở GD&ĐT Cà Mau (tỉnh mới) chỉ tổ chức thi tuyển vào 2 trường chuyên (Phan Ngọc Hiển – Cà Mau cũ, Bạc Liêu – Bạc Liêu cũ) theo một lịch chung; toàn bộ trường THPT công lập, DTNT, GDTX xét tuyển (không thi). Mỗi trường chuyên có chỉ tiêu và điểm chuẩn riêng. Chưa tìm được nguồn xác nhận hai trường dùng chung đề chuyên Anh.",
+  "common_subjects": [
+   "Ngữ văn",
+   "Toán",
+   "Tiếng Anh"
+  ],
+  "notes": "Chỉ thí sinh dự thi chuyên mới thi 3 môn chung. Ngữ văn, Toán 120 phút; Tiếng Anh chung 90 phút (50% trắc nghiệm, 50% tự luận); môn chuyên 150 phút; Tiếng Anh chuyên có thêm phần nghe. Điểm bài thi thang 10, làm tròn 0,25."
+ },
+ "plan_2027": null,
+ "stories": [],
+ "prep_tips": [
+  "Tiếng Anh chung ở Cà Mau dài 90 phút với 50% tự luận (dài hơn nhiều tỉnh khác) – luyện cả phần viết tự luận ở bài chung (tuyensinh247 2026).",
+  "Đề chuyên Anh có phần nghe – cần luyện nghe thường xuyên (tuyensinh247 2026).",
+  "Điều kiện: học lực, rèn luyện cả năm các lớp THCS từ Khá trở lên và mọi bài thi > 2,0 – giữ học bạ ổn định từ lớp 6 (tuyensinh247 2026).",
+  "Phan Ngọc Hiển có 70 chỉ tiêu chuyên Anh, gấp đôi chuyên Bạc Liêu (35) (tuyensinh247 2026)."
+ ],
+ "confidence": "low",
+ "gaps": [
+  "Không tìm được điểm chuẩn chuyên Anh năm nào (2022–2026) của chuyên Phan Ngọc Hiển và chuyên Bạc Liêu.",
+  "Không có đề chuyên Anh và nhận xét độ khó của hai trường.",
+  "Thiếu quy định nguyện vọng chuyên năm 2026 và số thí sinh đăng ký.",
+  "Không rõ hai trường dùng chung đề chuyên năm 2026 hay không.",
+  "Kế hoạch 2027 chưa tìm thấy.",
+  "Không tìm được bài chia sẻ kinh nghiệm ôn thi chuyên Anh thật."
+ ],
+ "sources": [
+  {
+   "title": "Tuyensinh247 – Tuyển sinh lớp 10 Cà Mau 2026-2027",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/ca-mau-p30.html"
+  },
+  {
+   "title": "Tuyensinh247 – Điểm chuẩn lớp 10 Cà Mau",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/ca-mau-p30.html"
+  },
+  {
+   "title": "Hoatieu – Điểm thi tuyển sinh lớp 10 năm 2026 Cà Mau",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-ca-mau-209109"
+  },
+  {
+   "title": "Luật sư Việt Nam – Nhiều địa phương sử dụng phương thức xét tuyển vào lớp 10",
+   "url": "https://lsvn.vn/nhieu-dia-phuong-su-dung-phuong-thuc-xet-tuyen-vao-lop-10-a171186.html"
+  },
+  {
+   "title": "Hoatieu – Lịch thi vào 10 năm 2026-2027",
+   "url": "https://hoatieu.vn/phap-luat/lich-thi-tuyen-sinh-lop-10-213450"
+  }
+ ],
+ "formula_raw": {
+  "text": "Điểm xét tuyển lớp chuyên = Ngữ văn + Toán + Tiếng Anh (hệ số 1) + Điểm môn chuyên × 2",
+  "parts": [
+   "Ngữ văn",
+   "Toán",
+   "Tiếng Anh (chung)",
+   "Anh chuyên×2"
+  ],
+  "max": 50,
+  "conditions": "2026: có hộ khẩu thường trú hoặc tạm trú tại Cà Mau; kết quả rèn luyện, học tập cả năm các lớp THCS từ Khá trở lên; thi đủ các bài, không vi phạm quy chế; mọi bài thi > 2,0 điểm.",
+  "formula_by_year": {
+   "2021": "Cà Mau cũ: tổng 3 môn chung (hệ số 1) + môn chuyên (hệ số 2); không môn nào ≤ 2,00 (Hoatieu).",
+   "2022-2025": "Chưa tìm được văn bản riêng của Cà Mau cũ và Bạc Liêu cũ."
+  }
+ },
+ "schools_raw": [
+  {
+   "name": "THPT chuyên Phan Ngọc Hiển",
+   "old_province": "Cà Mau",
+   "city": "Cà Mau",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2026": 70
+     },
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": null,
+      "2024": null,
+      "2025": null,
+      "2026": null
+     },
+     "scale": {
+      "2026": 50
+     },
+     "note": "2026: 2 lớp Tiếng Anh, tối đa 35 HS/lớp; toàn trường tối đa 350 HS (tuyensinh247). Chưa tìm được điểm chuẩn năm nào."
+    }
+   ]
+  },
+  {
+   "name": "THPT chuyên Bạc Liêu",
+   "old_province": "Bạc Liêu",
+   "city": "Bạc Liêu",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {
+      "2026": 35
+     },
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": null,
+      "2024": null,
+      "2025": null,
+      "2026": null
+     },
+     "scale": {
+      "2026": 50
+     },
+     "note": "2026: 1 lớp Tiếng Anh, tối đa 35 HS; toàn trường tối đa 315 HS (tuyensinh247). Chưa tìm được điểm chuẩn năm nào."
+    }
+   ]
+  }
+ ],
+ "goals": [],
+ "goal_default": null
+}

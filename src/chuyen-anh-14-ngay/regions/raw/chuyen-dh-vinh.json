@@ -1,0 +1,93 @@
+{
+ "so": "THPT Chuyên Đại học Vinh (Trường Đại học Vinh)",
+ "slug": "chuyen-dh-vinh",
+ "merged_from": [],
+ "exam_2026": {
+  "dates": "Dự kiến: 29/5/2026 làm thủ tục; 30/5/2026 thi vòng I (Toán, Ngữ văn, Tiếng Anh); 31/5/2026 thi môn chuyên (Báo Nghệ An). Năm 2025: 11/6 sáng Toán 90 phút, Tiếng Anh 60 phút trắc nghiệm; chiều Ngữ văn 120 phút; 12/6 môn chuyên 150 phút (TB tuyển sinh 2025).",
+  "organisation": "Kỳ thi riêng do Trường Đại học Vinh tổ chức, tách khỏi kỳ thi của Sở GD&ĐT Nghệ An (học sinh có thể dự thêm kỳ thi vào THPT chuyên Phan Bội Châu của Sở). Có vòng sơ tuyển hồ sơ trước khi thi.",
+  "common_subjects": ["Toán", "Ngữ văn", "Tiếng Anh"],
+  "notes": "Năm 2026 trường giảm chỉ tiêu từ 315 xuống 245 (7 lớp × 35); lớp Toán và lớp Anh mỗi lớp giảm từ 2 lớp xuống 1 lớp (Báo Nghệ An). Năm 2025 lớp Anh có 3 lớp (105 chỉ tiêu) theo TB tuyển sinh 2025. Năm 2026 có 1.732 hồ sơ, lớp Anh nhiều nhất với 504 hồ sơ cho 35 chỉ tiêu, khoảng 1/14,4 (Báo Nghệ An 6/7/2026). Điểm chuẩn công bố 6/7/2026."
+ },
+ "plan_2027": null,
+ "formula": {
+  "text": "Điểm xét tuyển = Điểm bài thi môn chuyên × 1,5 + tổng điểm 3 bài thi vòng I (Toán, Tiếng Anh, Ngữ văn). Năm 2025 bài chuyên chấm thang 20, các bài vòng I thang 10.",
+  "parts": ["Toán", "Ngữ văn", "Tiếng Anh (chung)", "Anh chuyên×1,5 (thang 20)"],
+  "max": 60,
+  "conditions": "Dự tuyển: tốt nghiệp THCS; kết quả học tập và rèn luyện cả 4 năm THCS từ Khá; điểm trung bình môn chuyên ở THCS từ 7,0; phải qua sơ tuyển (2026). Trúng tuyển: dự đủ các bài vòng I và bài chuyên, không vi phạm quy chế; xét từ cao xuống thấp đến hết chỉ tiêu. Khi bằng điểm, ưu tiên lần lượt: điểm bài chuyên, giải HSG cấp tỉnh lớp 9 đúng môn, điểm trung bình môn chuyên THCS (TB 2025).",
+  "formula_by_year": {
+   "2024": "Điểm bài thi tổng hợp + điểm môn chuyên × 1,5 (Giáo dục và Thời đại 3/7/2024). Không rõ thang của bài tổng hợp và bài chuyên, nên điểm chuẩn 2024 không so trực tiếp được với 2025–2026.",
+   "2025": "Môn chuyên (thang 20) × 1,5 + Toán + Ngữ văn + Tiếng Anh vòng I (mỗi bài thang 10), tối đa 60 (TB tuyển sinh 2025; Công dân & Khuyến học 24/6/2025)",
+   "2026": "Như 2025: môn chuyên × 1,5 + tổng 3 bài vòng I (Báo Nghệ An; website trường). Văn bản 2026 xem được không nêu lại thang 20 của bài chuyên; mức tối đa 60 là theo TB 2025."
+  }
+ },
+ "nv_rule": "Mỗi hồ sơ đăng ký 1 môn chuyên. Sau khi nộp lệ phí không đổi được nguyện vọng; muốn đổi phải làm hồ sơ mới (TB 2025). Chưa thấy quy định nguyện vọng 2 giữa các lớp chuyên. Trường chỉ có lớp chuyên tiếng Anh, không có lớp ngoại ngữ khác. Kỳ thi tách khỏi kỳ thi của Sở Nghệ An, nên học sinh có thể thi cả Chuyên ĐH Vinh và Chuyên Phan Bội Châu.",
+ "chuyen_paper": {
+  "minutes": 150,
+  "scale": 20,
+  "has_listening": true,
+  "essay_words": 250,
+  "sections": [
+   {"format": "listening", "items": 8, "points": null, "note": "Nghe phần 1: 8 tình huống ngắn, chọn A/B/C. Cả phần nghe 3 phần, khoảng 25 câu, 50/200 điểm thô (Springboard, đề 2026)"},
+   {"format": "listening", "items": 7, "points": null, "note": "Nghe phần 2: bài nói về các điểm du lịch thay thế, 7 câu trắc nghiệm"},
+   {"format": "listening", "items": 10, "points": null, "note": "Nghe phần 3: hoàn thành 10 câu, không quá 3 từ và/hoặc một số (chủ đề upcycling)"},
+   {"format": "other", "items": null, "points": null, "note": "Từ vựng – ngữ pháp, 40/200 điểm thô: trắc nghiệm, sửa lỗi sai, cấu tạo từ. Nguồn không ghi số câu từng dạng"},
+   {"format": "reading_mcq", "items": null, "points": null, "note": "Đọc phần 1 (chủ đề freelancing). Cả phần đọc 60/200 điểm thô, nặng nhất đề"},
+   {"format": "true_false", "items": null, "points": null, "note": "Đọc phần 2 (chủ đề dầu mỏ): Yes/No/Not Given, hoàn thành câu, nối thông tin với người"},
+   {"format": "open_cloze", "items": null, "points": null, "note": "Đọc phần 3: điền từ tự do (chủ đề telemedicine)"},
+   {"format": "gap_text", "items": 7, "points": null, "note": "Đọc phần 4: điền 7 câu vào văn bản, có 1 câu thừa (chủ đề thời tiết)"},
+   {"format": "transformation", "items": 10, "points": null, "note": "Viết lại câu, 10 câu. Cả phần viết 50/200 điểm thô"},
+   {"format": "essay", "items": 1, "points": null, "note": "Bài luận ít nhất 250 từ (2026: y tế nên miễn phí do nhà nước chi hay do cá nhân trả)"}
+  ],
+  "difficulty": "B2+",
+  "difficulty_evidence": "Springboard (trung tâm luyện thi, bài 30/6/2026) đánh giá đề 2026 hợp với người học 'đang chuyển từ B2 lên C1', nặng về ngữ pháp phức tạp, đọc học thuật và viết chính xác. Tổng điểm thô 200: nghe 50, từ vựng – ngữ pháp 40, đọc 60, viết 50. Nguồn không nói lấy đề từ đâu.",
+  "sample_links": ["https://springboard.vn/de-thi-chuyen-anh-dai-hoc-vinh-2026/"]
+ },
+ "schools": [
+  {
+   "name": "THPT Chuyên Đại học Vinh",
+   "old_province": "Nghệ An",
+   "city": "Vinh",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {"2025": 105, "2026": 35},
+     "applicants": {"2026": 504},
+     "cut": {"2022": null, "2023": null, "2024": 22, "2025": 33.75, "2026": 40.45},
+     "scale": {"2025": 60, "2026": 60},
+     "note": "2026: 40,45 (Báo Nghệ An, website trường); điểm chuẩn tăng mạnh vì lớp Anh giảm từ 3 lớp xuống 1. 2025: 33,75 chỉ thấy ở tuyensinh247 (báo chí 2025 đăng bảng dạng ảnh), khớp với khoảng 26–35 mà Báo Nghệ An nêu cho các lớp năm 2025. 2024: 22 điểm, công thức 'bài thi tổng hợp + môn chuyên × 1,5', thang chưa rõ; lớp Anh có tỉ lệ chọi trên 1/6 (Giáo dục và Thời đại). Tham khảo: 2020 là 21,62 (Hoatieu). Mức tối đa 60 năm 2026 là theo thang của năm 2025."
+    }
+   ]
+  }
+ ],
+ "stories": [],
+ "prep_tips": [
+  "Đề có nghe 3 phần (khoảng 25 câu, 1/4 tổng điểm), gồm dạng điền không quá 3 từ: phải luyện nghe đều, không chỉ ngữ pháp (Springboard, đề 2026).",
+  "Đọc chiếm phần nặng nhất (60/200), có các dạng kiểu IELTS/Cambridge: Yes/No/Not Given, nối thông tin với người, gapped text, open cloze (Springboard, đề 2026).",
+  "Có bài luận nghị luận ít nhất 250 từ cùng 10 câu viết lại: cần luyện viết luận có người chữa (Springboard, đề 2026).",
+  "Bài chuyên nhân 1,5, thang 20, nên chiếm 30/60 điểm; Toán, Văn, Anh vòng I chiếm nửa còn lại (TB 2025). Muốn được xét phải có điểm trung bình môn Anh THCS từ 7,0 và qua sơ tuyển.",
+  "Năm 2026 lớp Anh chỉ còn 35 chỉ tiêu cho 504 hồ sơ (Báo Nghệ An). Nên đăng ký thêm kỳ thi chuyên Phan Bội Châu của Sở Nghệ An làm phương án song song."
+ ],
+ "confidence": "medium",
+ "gaps": [
+  "Điểm chuẩn chuyên Anh 2022, 2023",
+  "Thang điểm và cấu trúc bài 'tổng hợp' năm 2024, nên không so được điểm chuẩn 2024 với 2025–2026",
+  "Điểm chuẩn 2025 (33,75) chỉ có từ tuyensinh247, chưa đối chiếu với bảng gốc của trường",
+  "Thông báo tuyển sinh 2026 gốc của trường (quy định nguyện vọng, thang bài chuyên)",
+  "Văn bản cấu trúc đề chuyên Anh chính thức; số câu và điểm từng phần chỉ có từ phân tích của Springboard",
+  "Số hồ sơ chuyên Anh 2024, 2025; chỉ tiêu chuyên Anh 2022–2024",
+  "Chưa có bài chia sẻ kinh nghiệm của học sinh đỗ chuyên Anh ĐH Vinh",
+  "Kế hoạch 2027 chưa thấy công bố (tính đến 23/10/2026)"
+ ],
+ "sources": [
+  {"title": "Báo Nghệ An 6/7/2026 – Công bố điểm chuẩn Trường THPT chuyên – Trường ĐH Vinh", "url": "https://baonghean.vn/cong-bo-diem-chuan-truong-thpt-chuyen-truong-dai-hoc-vinh-va-diem-phuc-khao-lop-10-10343227.html"},
+  {"title": "Website Trường THPT Chuyên ĐH Vinh – Công bố điểm chuẩn vào lớp 10 năm học 2026-2027", "url": "https://truongthptchuyen.vinhuni.edu.vn/tin-tuc-su-kien/seo/chinh-thuc-cong-bo-diem-chuan-vao-lop-10-truong-thpt-chuyen-nam-hoc-2026-2027-144985"},
+  {"title": "Báo Nghệ An – Trường THPT Chuyên ĐH Vinh giảm chỉ tiêu tuyển sinh vào lớp 10 năm 2026", "url": "https://baonghean.vn/truong-thpt-chuyen-dai-hoc-vinh-giam-chi-tieu-tuyen-sinh-vao-lop-10-nam-2026-10327373.html"},
+  {"title": "Truyền hình Nghệ An 7/2026 – Công bố điểm chuẩn Trường THPT chuyên – ĐH Vinh", "url": "https://truyenhinhnghean.vn/giao-duc/202607/cong-bo-diem-chuan-truong-thpt-chuyen-truong-dai-hoc-vinh-va-diem-phuc-khao-lop-10-a293700/"},
+  {"title": "Thông báo tuyển sinh lớp 10 THPT chuyên 2025 – Trường ĐH Vinh", "url": "https://tuyensinhchuyen.vinhuni.edu.vn/thpt/tbchuyen2025.pdf"},
+  {"title": "Công dân & Khuyến học 24/6/2025 – Điểm chuẩn vào lớp 10 THPT chuyên ĐH Vinh", "url": "https://congdankhuyenhoc.vn/diem-chuan-vao-lop-10-truong-trung-hoc-pho-thong-chuyen-dai-hoc-vinh-179250624094422709.htm"},
+  {"title": "Giáo dục và Thời đại 3/7/2024 – Trường THPT chuyên ĐH Vinh công bố điểm chuẩn vào lớp 10", "url": "https://giaoducthoidai.vn/truong-thpt-chuyen-dai-hoc-vinh-cong-bo-diem-chuan-vao-lop-10-post690158.html"},
+  {"title": "tuyensinh247 – Điểm chuẩn lớp 10 Nghệ An (Chuyên ĐH Vinh 2024–2026)", "url": "https://diemthi.tuyensinh247.com/dc-lop10/nghe-an-p18.html"},
+  {"title": "Hoatieu – Điểm thi tuyển sinh lớp 10 Nghệ An (điểm chuẩn Chuyên ĐH Vinh 2020)", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-nghe-an-208719"},
+  {"title": "Springboard 30/6/2026 – Đề thi chuyên Anh ĐH Vinh 2026", "url": "https://springboard.vn/de-thi-chuyen-anh-dai-hoc-vinh-2026/"}
+ ]
+}

@@ -1,0 +1,355 @@
+{
+ "slug": "hue",
+ "name": "Huế",
+ "merged_from": [],
+ "edition": "Bản Huế",
+ "exam_md": [
+  6,
+  1
+ ],
+ "papers": {
+  "so": {
+   "map": "B2",
+   "label": "đề chuyên Anh của Sở Huế",
+   "ac_add": 2.5,
+   "ac_cap": 10,
+   "ac_label": "Anh chung (đề chung)",
+   "difficulty": null,
+   "difficulty_evidence": "Chưa đọc được đề chuyên Anh Quốc Học (Vietjack có đề chuyên Anh Thừa Thiên Huế 2025 nhưng không truy cập được trong phiên này).",
+   "minutes": null,
+   "has_listening": null,
+   "essay_words": null,
+   "sections": [],
+   "sample_links": []
+  },
+  "chuyen-khoa-hoc-hue": {
+   "map": "B2",
+   "label": "đề chuyên Anh THPT Chuyên Khoa học Huế (Trường ĐH Khoa học, Đại học Huế)",
+   "ac_add": 2.5,
+   "ac_cap": 10,
+   "ac_label": "Anh chung (đề chung)",
+   "difficulty": null,
+   "difficulty_evidence": "Chưa tìm được đề hay nhận xét đề chuyên Anh của trường.",
+   "minutes": null,
+   "has_listening": null,
+   "essay_words": null,
+   "sections": [],
+   "sample_links": []
+  }
+ },
+ "formulas": {
+  "so": {
+   "w": {
+    "ach": 2
+   },
+   "paper": "so",
+   "text": null,
+   "max": null
+  },
+  "chuyen-khoa-hoc-hue": {
+   "w": {
+    "toan": 1.0,
+    "van": 1.0,
+    "ac": 1.0,
+    "ach": 2.0
+   },
+   "paper": "chuyen-khoa-hoc-hue",
+   "text": "Điểm xét tuyển = Ngữ văn + Toán + Tiếng Anh + điểm môn chuyên × 2. Không cộng điểm ưu tiên.",
+   "max": 50
+  }
+ },
+ "m3_label": null,
+ "exams": {
+  "so": {
+   "label": "Kỳ thi của Sở GD&ĐT Huế",
+   "date": "",
+   "rule": "Chưa tìm được quy định chi tiết. Quốc Học có 3 lớp chuyên ngoại ngữ: Anh, Pháp, Nhật. Chưa xác minh được lớp Pháp/Nhật có xét bằng bài thi tiếng Anh hay không. Ngoài trường chuyên, các trường công lập Hai Bà Trưng, Nguyễn Huệ, Nguyễn Trường Tộ có điểm chuẩn riêng theo ngoại ngữ (Anh, Pháp, Nhật) — năm 2026 Hai Bà Trưng: Anh 32,25, Nhật 29,5; Nguyễn Huệ: Anh 30, Pháp 24,35, Nhật 22,2."
+  },
+  "chuyen-khoa-hoc-hue": {
+   "label": "Kỳ thi riêng của THPT Chuyên Khoa học Huế (Trường ĐH Khoa học, Đại học Huế)",
+   "date": "",
+   "rule": "Năm 2026 xét chung nguyện vọng 1 và nguyện vọng 2 vào các lớp chuyên của trường. Thí sinh chỉ được xét nguyện vọng 2 khi không trúng nguyện vọng 1. Khi bằng điểm ở chỉ tiêu cuối, ưu tiên lần lượt: điểm thi môn chuyên của lớp NV1, điểm trung bình môn đó lớp 9, điểm trung bình chung lớp 9 (Mực Tím 2026). Trường chỉ có lớp chuyên Anh, không có lớp ngoại ngữ khác."
+  }
+ },
+ "nv2_exam": null,
+ "nv_rule": "Chưa tìm được quy định chi tiết. Quốc Học có 3 lớp chuyên ngoại ngữ: Anh, Pháp, Nhật. Chưa xác minh được lớp Pháp/Nhật có xét bằng bài thi tiếng Anh hay không. Ngoài trường chuyên, các trường công lập Hai Bà Trưng, Nguyễn Huệ, Nguyễn Trường Tộ có điểm chuẩn riêng theo ngoại ngữ (Anh, Pháp, Nhật) — năm 2026 Hai Bà Trưng: Anh 32,25, Nhật 29,5; Nguyễn Huệ: Anh 30, Pháp 24,35, Nhật 22,2.",
+ "options": [
+  {
+   "id": "so-chuyen-quoc-hoc-anh",
+   "sk": "so-chuyen-quoc-hoc",
+   "school": "THPT chuyên Quốc Học",
+   "area": "Thừa Thiên Huế",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2023,
+    2024,
+    2026
+   ],
+   "cut": [
+    38.8,
+    37.8,
+    37.6
+   ],
+   "scale": null,
+   "quota": {},
+   "note": "2026 = 37,6, cao nhất trong các lớp chuyên Quốc Học (Đại biểu Nhân dân 15/6/2026). 2023 và 2024 lấy từ hoatieu (ghi theo năm học '2023-2024' = 38,8 và '2024-2025' = 37,8 — hiểu là năm tuyển sinh 2023 và 2024). Năm cũ: 2021 = 36,1; 2020 = 38,20. Thang điểm chưa xác minh từ văn bản (mức điểm gợi ý thang 50)."
+  },
+  {
+   "id": "chuyen-khoa-hoc-hue-chuyen-khoa-hoc-hue-anh",
+   "sk": "chuyen-khoa-hoc-hue-chuyen-khoa-hoc-hue",
+   "school": "THPT Chuyên Khoa học Huế",
+   "area": "Thừa Thiên Huế (nay là TP Huế)",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "chuyen-khoa-hoc-hue",
+   "exam": "chuyen-khoa-hoc-hue",
+   "group": "nv",
+   "years": [
+    2025,
+    2026
+   ],
+   "cut": [
+    30,
+    31
+   ],
+   "scale": 50,
+   "quota": {},
+   "note": "2025: 30, bằng lớp Văn và cao nhất trường. 2026: 31, sau lớp Văn (31,25); điểm chuẩn các lớp tăng 0,5–1,5 so với 2025 (Mực Tím; tuyensinh247 ghi cùng số). Chưa có chỉ tiêu riêng lớp Anh (tổng 210 chỉ tiêu cho 7 lớp năm 2025)."
+  }
+ ],
+ "paper": {
+  "map": "B2",
+  "label": "đề chuyên Anh của Sở Huế",
+  "ac_add": 2.5,
+  "ac_cap": 10,
+  "ac_label": "Anh chung (đề chung)",
+  "difficulty": null,
+  "difficulty_evidence": "Chưa đọc được đề chuyên Anh Quốc Học (Vietjack có đề chuyên Anh Thừa Thiên Huế 2025 nhưng không truy cập được trong phiên này).",
+  "minutes": null,
+  "has_listening": null,
+  "essay_words": null,
+  "sections": [],
+  "sample_links": []
+ },
+ "exam_2026": {
+  "dates": null,
+  "organisation": "một đề chung cho cả thành phố (Huế không sáp nhập; trước 2025 là tỉnh Thừa Thiên Huế, trực thuộc TW từ 1/1/2025)",
+  "common_subjects": [
+   "Toán",
+   "Ngữ văn",
+   "Ngoại ngữ"
+  ],
+  "notes": "Môn thứ ba năm 2026 là Ngoại ngữ (LSVN, Znews). Hơn 18.000 học sinh dự thi lớp 10, tăng khoảng 5.000 so với năm trước. Điểm chuẩn công bố 15/6/2026; phúc khảo trong 7 ngày, thí sinh chỉ đăng ký chuyên nộp phúc khảo tại trường chuyên; tra cứu tại tracuudiem.thuathienhue.edu.vn (Đại biểu Nhân dân). Chưa tìm được ngày thi cụ thể."
+ },
+ "plan_2027": null,
+ "stories": [],
+ "prep_tips": [
+  "Chuyên Anh là lớp có điểm chuẩn cao nhất Quốc Học năm 2026 (37,6), cao hơn cả chuyên Tin, Toán — cạnh tranh lớn nhất trong trường (Đại biểu Nhân dân)."
+ ],
+ "confidence": "low",
+ "gaps": [
+  "Công thức xét tuyển, hệ số môn chuyên, thang điểm, điều kiện của Quốc Học các năm",
+  "Ngày thi 2026 cụ thể và ngày thi môn chuyên",
+  "Điểm chuẩn chuyên Anh 2022 và 2025",
+  "Chỉ tiêu, số thí sinh đăng ký lớp chuyên Anh/Pháp/Nhật",
+  "Cấu trúc đề, độ khó, đề mẫu chuyên Anh Quốc Học",
+  "Lớp Pháp, Nhật có nhận bài thi tiếng Anh không; quy định NV2",
+  "Câu chuyện ôn thi (chưa tìm được — hết lượt tìm kiếm trong phiên)",
+  "Kế hoạch 2027"
+ ],
+ "sources": [
+  {
+   "title": "Đại biểu Nhân dân: Huế công bố điểm chuẩn vào lớp 10 năm học 2026-2027",
+   "url": "https://daibieunhandan.vn/hue-cong-bo-diem-chuan-vao-lop-10-nam-hoc-2026-2027-10420504.html"
+  },
+  {
+   "title": "Hoatieu: Điểm chuẩn lớp 10 Thừa Thiên Huế các năm",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-thua-thien-hue-208982"
+  },
+  {
+   "title": "LSVN: Nhiều địa phương công bố môn thi thứ ba vào lớp 10 năm học 2026-2027",
+   "url": "https://lsvn.vn/nhieu-dia-phuong-cong-bo-mon-thi-thu-ba-vao-lop-10-nam-hoc-2026-2027-a169644.html"
+  },
+  {
+   "title": "Znews: Nhiều địa phương đã công bố môn thi thứ ba vào lớp 10",
+   "url": "https://znews.vn/nhieu-dia-phuong-da-cong-bo-mon-thi-thu-ba-vao-lop-10-ha-noi-bao-gio-post1622708.html"
+  }
+ ],
+ "formula_raw": {
+  "text": null,
+  "parts": [],
+  "max": null,
+  "conditions": null,
+  "formula_by_year": {}
+ },
+ "schools_raw": [
+  {
+   "name": "THPT chuyên Quốc Học",
+   "old_province": "Thừa Thiên Huế",
+   "city": "Huế",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {},
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": 38.8,
+      "2024": 37.8,
+      "2025": null,
+      "2026": 37.6
+     },
+     "scale": {},
+     "note": "2026 = 37,6, cao nhất trong các lớp chuyên Quốc Học (Đại biểu Nhân dân 15/6/2026). 2023 và 2024 lấy từ hoatieu (ghi theo năm học '2023-2024' = 38,8 và '2024-2025' = 37,8 — hiểu là năm tuyển sinh 2023 và 2024). Năm cũ: 2021 = 36,1; 2020 = 38,20. Thang điểm chưa xác minh từ văn bản (mức điểm gợi ý thang 50)."
+    },
+    {
+     "lang": "Pháp",
+     "admit_by_english": null,
+     "cut": {
+      "2023": 38.6,
+      "2024": 35.46,
+      "2026": 36.48
+     },
+     "note": "Hoatieu: 2021 = 36,61; 2020 = 34,08. 2026 theo Đại biểu Nhân dân."
+    },
+    {
+     "lang": "Nhật",
+     "admit_by_english": null,
+     "cut": {
+      "2023": 35.29,
+      "2024": 33.86,
+      "2026": 33.3
+     },
+     "note": "Hoatieu: 2021 = 32,71; 2020 = 33,06. 2026 theo Đại biểu Nhân dân."
+    }
+   ]
+  }
+ ],
+ "uni": [
+  {
+   "slug": "chuyen-khoa-hoc-hue",
+   "name": "THPT Chuyên Khoa học Huế (Trường ĐH Khoa học, Đại học Huế)",
+   "paper": {
+    "map": "B2",
+    "label": "đề chuyên Anh THPT Chuyên Khoa học Huế (Trường ĐH Khoa học, Đại học Huế)",
+    "ac_add": 2.5,
+    "ac_cap": 10,
+    "ac_label": "Anh chung (đề chung)",
+    "difficulty": null,
+    "difficulty_evidence": "Chưa tìm được đề hay nhận xét đề chuyên Anh của trường.",
+    "minutes": null,
+    "has_listening": null,
+    "essay_words": null,
+    "sections": [],
+    "sample_links": []
+   },
+   "stories": [],
+   "prep_tips": [
+    "Điểm chuẩn lớp Anh khoảng 30–31/50, thấp hơn khá nhiều so với chuyên Anh Quốc Học (37,2–37,6). Đây là phương án vừa sức cho học sinh Huế và miền Trung (Mực Tím, Hoa Học Trò).",
+    "Môn chuyên nhân 2 nhưng Toán, Văn, Anh chung vẫn chiếm 3/5 tổng điểm, và mỗi bài chung phải đạt từ 2 điểm (Mực Tím 2026)."
+   ],
+   "sources": [
+    {
+     "title": "Mực Tím (Tuổi Trẻ) 13/6/2026 – Đã có điểm chuẩn vào lớp 10 Trường THPT chuyên Khoa học Huế: cao nhất 31,25",
+     "url": "https://muctim.tuoitre.vn/da-co-diem-chuan-vao-lop-10-truong-thpt-chuyen-khoa-hoc-hue-cao-nhat-3125-diem-101260613170857065.htm"
+    },
+    {
+     "title": "Mực Tím (Tuổi Trẻ) 16/6/2025 – 30 là điểm chuẩn cao nhất vào lớp 10 Trường THPT chuyên Khoa học Huế năm 2025",
+     "url": "https://muctim.tuoitre.vn/30-la-diem-chuan-cao-nhat-vao-lop-10-truong-thpt-chuyen-khoa-hoc-hue-nam-2025-101250616123656654.htm"
+    },
+    {
+     "title": "tuyensinh247 – Điểm chuẩn vào lớp 10 Huế (Quốc Học, Khoa học Huế)",
+     "url": "https://diemthi.tuyensinh247.com/dc-lop10/hue-p7.html"
+    },
+    {
+     "title": "Đại biểu Nhân dân – Huế công bố điểm chuẩn vào lớp 10 năm học 2026-2027 (Quốc Học)",
+     "url": "https://daibieunhandan.vn/hue-cong-bo-diem-chuan-vao-lop-10-nam-hoc-2026-2027-10420504.html"
+    },
+    {
+     "title": "Hoa Học Trò – Huế công bố điểm chuẩn vào lớp 10 năm 2025 (Quốc Học)",
+     "url": "https://hoahoctro.tienphong.vn/hue-cong-bo-diem-chuan-vao-lop-10-nam-2025-diem-chuyen-anh-cao-ngat-nguong-post1752047.tpo"
+    }
+   ],
+   "formula_raw": {
+    "text": "Điểm xét tuyển = Ngữ văn + Toán + Tiếng Anh + điểm môn chuyên × 2. Không cộng điểm ưu tiên.",
+    "parts": [
+     "Toán",
+     "Ngữ văn",
+     "Tiếng Anh (chung)",
+     "Anh chuyên×2"
+    ],
+    "max": 50,
+    "conditions": "Dự đủ các bài thi, không bị kỷ luật hủy kết quả; mỗi bài thi vòng 1 (môn chung) từ 2 điểm trở lên (Mực Tím 2026). Mức tối đa 50 suy từ hệ số và thang 10 mỗi bài; nguồn không ghi rõ thang.",
+    "formula_by_year": {
+     "2025": "Ngữ văn + Toán + Tiếng Anh + môn chuyên × 2 (Mực Tím 16/6/2025)",
+     "2026": "Toán + Ngữ văn + Tiếng Anh (hệ số 1) + môn chuyên hệ số 2, không cộng điểm ưu tiên (Mực Tím 13/6/2026)"
+    }
+   },
+   "schools_raw": [
+    {
+     "name": "THPT Chuyên Khoa học Huế",
+     "old_province": "Thừa Thiên Huế (nay là TP Huế)",
+     "city": "Huế",
+     "classes": [
+      {
+       "lang": "Anh",
+       "quota": {},
+       "applicants": {},
+       "cut": {
+        "2022": null,
+        "2023": null,
+        "2024": null,
+        "2025": 30,
+        "2026": 31
+       },
+       "scale": {
+        "2025": 50,
+        "2026": 50
+       },
+       "note": "2025: 30, bằng lớp Văn và cao nhất trường. 2026: 31, sau lớp Văn (31,25); điểm chuẩn các lớp tăng 0,5–1,5 so với 2025 (Mực Tím; tuyensinh247 ghi cùng số). Chưa có chỉ tiêu riêng lớp Anh (tổng 210 chỉ tiêu cho 7 lớp năm 2025)."
+      }
+     ]
+    }
+   ],
+   "exam_2026": {
+    "dates": null,
+    "organisation": "Trường trực thuộc Trường ĐH Khoa học – Đại học Huế, không thuộc Sở GD&ĐT Huế (Tuổi Trẻ/Mực Tím 2025, 2026). Điểm chuẩn 2026 công bố ngày 13/6/2026. Chưa xác minh trường thi riêng hay dùng chung bài thi môn chung với kỳ thi của Sở Huế.",
+    "common_subjects": [
+     "Toán",
+     "Ngữ văn",
+     "Tiếng Anh"
+    ],
+    "notes": "Năm 2025 trường tuyển 210 học sinh cho 7 lớp chuyên, giảm 40 so với 2024. Các lớp chuyên năm 2025: Toán, Tin học, Vật lí, Hóa học, Sinh học, Ngữ văn, Tiếng Anh (Mực Tím 16/6/2025). Huế không sáp nhập; lớp chuyên Anh khác của địa phương là THPT chuyên Quốc Học (thuộc Sở), điểm chuẩn chuyên Anh 37,2 (2025) và 37,6 (2026)."
+   },
+   "gaps": [
+    "Lịch thi 2026, đơn vị ra đề và việc có thi chung bài môn chung với Sở Huế hay không",
+    "Cấu trúc đề chuyên Anh, thời gian làm bài, có nghe/nói hay không; chưa có đề mẫu",
+    "Điểm chuẩn chuyên Anh 2022–2024",
+    "Chỉ tiêu và số hồ sơ lớp chuyên Anh từng năm",
+    "Bài chia sẻ kinh nghiệm",
+    "Kế hoạch 2027"
+   ]
+  }
+ ],
+ "goals": [
+  {
+   "k": "so-chuyen-quoc-hoc",
+   "name": "chuyên Quốc Học",
+   "score": 9.3,
+   "paper": "so",
+   "need_tv_more": true
+  },
+  {
+   "k": "chuyen-khoa-hoc-hue-chuyen-khoa-hoc-hue",
+   "name": "Chuyên Khoa học Huế",
+   "score": 4.6,
+   "paper": "chuyen-khoa-hoc-hue",
+   "need_tv_more": false
+  }
+ ],
+ "goal_default": "chuyen-khoa-hoc-hue-chuyen-khoa-hoc-hue"
+}

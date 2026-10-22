@@ -1,0 +1,207 @@
+{
+ "slug": "quang-ngai",
+ "name": "Quảng Ngãi",
+ "merged_from": [
+  "Quảng Ngãi",
+  "Kon Tum"
+ ],
+ "edition": "Bản Quảng Ngãi",
+ "exam_md": [
+  5,
+  31
+ ],
+ "papers": {
+  "so": {
+   "map": "B2",
+   "label": "đề chuyên Anh của Sở Quảng Ngãi",
+   "ac_add": 2.5,
+   "ac_cap": 10,
+   "ac_label": "Anh chung (đề chung)",
+   "difficulty": null,
+   "difficulty_evidence": "Chưa tìm được đề chuyên Anh Lê Khiết hoặc Nguyễn Tất Thành, cũng chưa có nhận xét nào.",
+   "minutes": null,
+   "has_listening": null,
+   "essay_words": null,
+   "sections": [],
+   "sample_links": []
+  }
+ },
+ "formulas": {
+  "so": {
+   "w": {
+    "ach": 2
+   },
+   "paper": "so",
+   "text": null,
+   "max": null
+  }
+ },
+ "m3_label": null,
+ "exams": {
+  "so": {
+   "label": "Kỳ thi của Sở GD&ĐT Quảng Ngãi",
+   "date": "Môn chung: sáng 31/5/2026 Ngữ văn 120' (từ 7h30); chiều 31/5/2026 Toán 120' (từ 14h00); sáng 1/6/2026 Tiếng Anh 90' (từ 7h30). Ngày thi môn chuyên: chưa xác minh. Công bố điểm thi 16/6/2026.",
+   "rule": "Chưa xác minh cho lớp chuyên. Công lập 2026: tối đa 2 nguyện vọng vào trường THPT công lập/PTDTNT trong tỉnh."
+  }
+ },
+ "nv2_exam": null,
+ "nv_rule": "Chưa xác minh cho lớp chuyên. Công lập 2026: tối đa 2 nguyện vọng vào trường THPT công lập/PTDTNT trong tỉnh.",
+ "options": [
+  {
+   "id": "so-chuyen-le-khiet-anh",
+   "sk": "so-chuyen-le-khiet",
+   "school": "THPT chuyên Lê Khiết",
+   "area": "Quảng Ngãi",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [
+    2025
+   ],
+   "cut": [
+    38.65
+   ],
+   "scale": null,
+   "quota": {},
+   "note": "2025: 38,65 là điểm chuẩn DỰ KIẾN nguyện vọng 1 (Cổng TTĐT tỉnh Quảng Ngãi, 18/6/2025). Thang điểm chưa rõ. Lớp chuyên ngoại ngữ khác (Pháp/Trung…): chưa xác minh."
+  },
+  {
+   "id": "so-chuyen-nguyen-tat-thanh-anh",
+   "sk": "so-chuyen-nguyen-tat-thanh",
+   "school": "THPT chuyên Nguyễn Tất Thành",
+   "area": "Kon Tum",
+   "cls": "chuyên Anh",
+   "lang": "Anh",
+   "f": "so",
+   "exam": "so",
+   "group": "nv",
+   "years": [],
+   "cut": [],
+   "scale": null,
+   "quota": {},
+   "note": "Tên trường theo đầu bài; chưa tìm được nguồn trong phiên này (hết hạn mức tìm kiếm)."
+  }
+ ],
+ "paper": {
+  "map": "B2",
+  "label": "đề chuyên Anh của Sở Quảng Ngãi",
+  "ac_add": 2.5,
+  "ac_cap": 10,
+  "ac_label": "Anh chung (đề chung)",
+  "difficulty": null,
+  "difficulty_evidence": "Chưa tìm được đề chuyên Anh Lê Khiết hoặc Nguyễn Tất Thành, cũng chưa có nhận xét nào.",
+  "minutes": null,
+  "has_listening": null,
+  "essay_words": null,
+  "sections": [],
+  "sample_links": []
+ },
+ "exam_2026": {
+  "dates": "Môn chung: sáng 31/5/2026 Ngữ văn 120' (từ 7h30); chiều 31/5/2026 Toán 120' (từ 14h00); sáng 1/6/2026 Tiếng Anh 90' (từ 7h30). Ngày thi môn chuyên: chưa xác minh. Công bố điểm thi 16/6/2026.",
+  "organisation": "chưa xác minh (lịch thi môn chung giống nhau cả tỉnh theo Kế hoạch 721/KH-SGDĐT ngày 13/4/2026, nhưng chưa rõ đề chuyên chung hay riêng cho Lê Khiết và Nguyễn Tất Thành)",
+  "common_subjects": [
+   "Ngữ văn",
+   "Toán",
+   "Tiếng Anh"
+  ],
+  "notes": "Lịch thi lấy từ kế hoạch tuyển sinh của một trường THPT công lập trong tỉnh (Trường THPT Trần Hưng Đạo, Đăk Hà — khu vực Kon Tum cũ), dẫn Kế hoạch 721/KH-SGDĐT ngày 13/4/2026 và Công văn 1316/SGDĐT-GDTrH ngày 01/4/2026 của Sở GDĐT Quảng Ngãi. Môn Tiếng Anh chung 90 phút. Năm 2025, Kon Tum cũ tuyển sinh công lập bằng xét tuyển (Dân trí)."
+ },
+ "plan_2027": null,
+ "stories": [],
+ "prep_tips": [
+  "Môn Tiếng Anh chung 2026 làm trong 90 phút, dài hơn nhiều tỉnh khác (thường 60 phút), nên luyện đề chung đủ 90 phút (nguồn: kế hoạch tuyển sinh THPT Trần Hưng Đạo dẫn KH 721/KH-SGDĐT)."
+ ],
+ "confidence": "low",
+ "gaps": [
+  "Hầu hết dữ liệu: hết hạn mức WebSearch của lượt làm việc trước khi nghiên cứu sở này, cần chạy lại.",
+  "Công thức xét tuyển chuyên (hệ số môn chuyên), điều kiện, NV chuyên 2026.",
+  "Ngày thi môn chuyên 2026; đề chuyên chung hay riêng 2 khu vực.",
+  "Chỉ tiêu và điểm chuẩn chuyên Anh Lê Khiết 2022–2024, 2026 (2025 mới có số dự kiến).",
+  "Toàn bộ dữ liệu THPT chuyên Nguyễn Tất Thành (Kon Tum).",
+  "Cấu trúc và độ khó đề chuyên Anh, link đề mẫu.",
+  "Lớp chuyên Pháp/Trung/Nhật nếu có.",
+  "Chia sẻ kinh nghiệm ôn thi.",
+  "Kế hoạch 2027."
+ ],
+ "sources": [
+  {
+   "title": "Cổng TTĐT tỉnh Quảng Ngãi – Dự kiến điểm chuẩn vào lớp 10 THPT năm học 2025-2026",
+   "url": "https://quangngai.gov.vn/tin-tuc/tin-tu-cac-so-ban-nganh-huyen-thanh-pho/du-kien-diem-chuan-vao-lop-102.html"
+  },
+  {
+   "title": "Kế hoạch tuyển sinh vào lớp 10 năm học 2026-2027 (THPT Trần Hưng Đạo, dẫn KH 721/KH-SGDĐT)",
+   "url": "https://dakha.quangngai.gov.vn/upload/2007063/20260423/Kế%20hoạch%20tuyển%20sinh%20vào%20lớp%2010,%20năm%20học%202026-2027%20..pdf"
+  },
+  {
+   "title": "Thanh Niên – Tra cứu điểm thi lớp 10, điểm chuẩn năm 2026 của 34 tỉnh thành",
+   "url": "https://thanhnien.vn/tra-cuu-diem-thi-lop-10-diem-chuan-nam-2026-cua-34-tinh-thanh-185260617171726818.htm"
+  },
+  {
+   "title": "Dân trí – Công bố điểm thi, điểm chuẩn lớp 10: lịch chi tiết của 63 tỉnh (2025)",
+   "url": "https://dantri.com.vn/giao-duc/cong-bo-diem-thi-diem-chuan-lop-10-lich-chi-tiet-cua-63-tinh-20250603114245583.htm"
+  }
+ ],
+ "formula_raw": {
+  "text": null,
+  "parts": [],
+  "max": null,
+  "conditions": null,
+  "formula_by_year": {}
+ },
+ "schools_raw": [
+  {
+   "name": "THPT chuyên Lê Khiết",
+   "old_province": "Quảng Ngãi",
+   "city": "Quảng Ngãi",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {},
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": null,
+      "2024": null,
+      "2025": 38.65,
+      "2026": null
+     },
+     "scale": {},
+     "note": "2025: 38,65 là điểm chuẩn DỰ KIẾN nguyện vọng 1 (Cổng TTĐT tỉnh Quảng Ngãi, 18/6/2025). Thang điểm chưa rõ. Lớp chuyên ngoại ngữ khác (Pháp/Trung…): chưa xác minh."
+    }
+   ]
+  },
+  {
+   "name": "THPT chuyên Nguyễn Tất Thành",
+   "old_province": "Kon Tum",
+   "city": "Kon Tum",
+   "classes": [
+    {
+     "lang": "Anh",
+     "quota": {},
+     "applicants": {},
+     "cut": {
+      "2022": null,
+      "2023": null,
+      "2024": null,
+      "2025": null,
+      "2026": null
+     },
+     "scale": {},
+     "note": "Tên trường theo đầu bài; chưa tìm được nguồn trong phiên này (hết hạn mức tìm kiếm)."
+    }
+   ]
+  }
+ ],
+ "goals": [
+  {
+   "k": "so-chuyen-le-khiet",
+   "name": "chuyên Lê Khiết",
+   "score": 9.3,
+   "paper": "so",
+   "need_tv_more": true
+  }
+ ],
+ "goal_default": "so-chuyen-le-khiet"
+}

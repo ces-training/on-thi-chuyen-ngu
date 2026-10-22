@@ -1,0 +1,160 @@
+{
+  "so": "Đắk Lắk",
+  "slug": "dak-lak",
+  "merged_from": ["Đắk Lắk", "Phú Yên"],
+  "exam_2026": {
+    "dates": "1–2/6/2026 (Sở công bố lịch ngày 4/5/2026). 1/6 sáng: Ngữ văn (tự luận, 120 phút); 1/6 chiều: Ngoại ngữ chung – Tiếng Anh hoặc Tiếng Pháp (trắc nghiệm, 60 phút); 2/6 sáng: Toán (tự luận, 120 phút); 2/6 chiều: các môn chuyên (có Tiếng Anh, Tiếng Pháp).",
+    "organisation": "một đề chung cho cả tỉnh mới — Sở GD&ĐT Đắk Lắk tổ chức thi và xét tuyển tập trung cho 5 trường thi tuyển (THPT chuyên Nguyễn Du, THPT chuyên Lương Văn Chánh, PTDTNT N'Trang Lơng, PTDTNT Đam San, PTDTNT Phú Yên); trường chỉ tham gia coi thi.",
+    "common_subjects": ["Toán", "Ngữ văn", "Ngoại ngữ (Tiếng Anh hoặc Tiếng Pháp)"],
+    "notes": "Năm đầu sau sáp nhập: theo Kế hoạch 100/KH-UBND (31/3/2026), các trường THPT công lập không chuyên chuyển sang XÉT TUYỂN (không thi), chỉ 5 trường chuyên biệt thi tuyển. Hướng dẫn của Sở: Công văn 1185 (29/4/2026). Đăng ký online 15–19/5/2026. Điểm chuẩn chuyên công bố theo QĐ 766/QĐ-SGDĐT ngày 21/6/2026; 1.225 HS trúng tuyển vào 5 trường chuyên biệt. Đăng ký 2026: Nguyễn Du 1.317 hồ sơ/350 chỉ tiêu (Tiếng Anh 274 hồ sơ – môn đông nhất); Lương Văn Chánh 928 hồ sơ/350 chỉ tiêu (Tiếng Anh 204 hồ sơ/35 chỉ tiêu)."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": "Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Ngoại ngữ (chung) + Điểm môn chuyên × 2 (mỗi bài thang 10).",
+    "parts": ["Toán", "Ngữ văn", "Tiếng Anh/Tiếng Pháp (chung)", "Môn chuyên×2"],
+    "max": 50,
+    "conditions": "Dự thi đủ các bài, không vi phạm quy chế; mọi bài thi phải trên 2,0 điểm (không có điểm sàn riêng cho môn chuyên — năm 2026 có HS đỗ lớp Pháp với điểm chuyên 2,2). Vòng 1 sơ tuyển: rèn luyện và học tập 4 năm THCS đạt Khá trở lên. Xét từ cao xuống đến hết chỉ tiêu. Hòa điểm: ưu tiên điểm môn chuyên cao hơn, rồi giải HSG cấp tỉnh môn đó, rồi ĐTB lớp 9.",
+    "formula_by_year": {
+      "2022–2025 (Đắk Lắk cũ – Nguyễn Du)": "Như trên: Toán + Văn + Ngoại ngữ + môn chuyên×2, thang 10/bài, tổng 50; mọi bài > 2,0 (Báo Đắk Lắk 2024; tuyensinh247 2025).",
+      "2022–2025 (Phú Yên cũ – Lương Văn Chánh)": "Chưa tìm được văn bản công thức. Điều kiện 2025: 3 bài không chuyên > 2,0 và bài chuyên ≥ 5,0. Đề chuyên Anh 2024 chấm thang 20 điểm. Thang tổng điểm chuẩn chưa xác minh.",
+      "2026": "Công thức Đắk Lắk áp dụng chung cho cả hai trường (Tiền Phong, Thanh Tra, VietNamNet 7/2026)."
+    }
+  },
+  "nv_rule": "2026: thí sinh vào trường thi tuyển được đăng ký 3 nguyện vọng = 1 trường chuyên/chuyên biệt + 2 trường THPT công lập xét tuyển trong địa bàn; chỉ đăng ký 1 môn chuyên (NV chuyên 1), có thể có NV chuyên 2 theo hướng dẫn Sở. Năm 2026 tại Nguyễn Du chỉ lớp Tiếng Pháp có NV2: lấy thí sinh thi chuyên Tiếng Anh trượt xuống (điểm chuẩn NV2 = 34,45). Tại Lương Văn Chánh lớp Địa, Sử, Tin nhận NV2; có mức NV2 xét theo điểm thi Tiếng Anh = 32,6. Năm 2025 (Nguyễn Du): chuyên Anh được chọn NV2 là Lịch sử hoặc Tiếng Pháp; điểm chuẩn NV2 ≥ NV1 + 1,0; đã đỗ NV1 thì không xét NV2; đỗ chuyên không được xét trường THPT khác. Có xét lớp Pháp bằng điểm Anh: CÓ (Nguyễn Du).",
+  "chuyen_paper": {
+    "minutes": 150,
+    "scale": null,
+    "has_listening": true,
+    "essay_words": 150,
+    "sections": [
+      {"format": "listening", "items": 6, "points": 1.5, "note": "Đề LVC Phú Yên 2024 (thang 20): nghe chọn A/B/C, nghe 2 lần"},
+      {"format": "listening", "items": 10, "points": 2.5, "note": "Đề LVC 2024: điền tối đa 2 từ, nghe 2 lần"},
+      {"format": "sentence_completion", "items": 8, "points": 2.0, "note": "Đề LVC 2024: trắc nghiệm ngữ pháp – từ vựng A–D"},
+      {"format": "error_id", "items": null, "points": 2.0, "note": "Đề LVC 2024: tìm từ thừa/sai theo dòng, đánh √ dòng đúng"},
+      {"format": "word_formation", "items": 8, "points": 2.0, "note": "Đề LVC 2024"},
+      {"format": "cloze", "items": 8, "points": 2.0, "note": "Đề LVC 2024: đọc điền trắc nghiệm"},
+      {"format": "reading_mcq", "items": 8, "points": 2.0, "note": "Đề LVC 2024"},
+      {"format": "open_cloze", "items": 8, "points": 2.0, "note": "Đề LVC 2024: điền 1 từ (điểm suy từ tổng)"},
+      {"format": "transformation", "items": 4, "points": 1.0, "note": "Đề LVC 2024: viết lại câu giữ nghĩa"},
+      {"format": "key_word", "items": 4, "points": 1.0, "note": "Đề LVC 2024: viết lại câu với từ cho sẵn"},
+      {"format": "essay", "items": 1, "points": 2.0, "note": "Đề LVC 2024: đoạn/bài ~150 từ nêu quan điểm (lời động viên có lợi cho cá nhân và xã hội?)"}
+    ],
+    "difficulty": "B2",
+    "difficulty_evidence": "ƯỚC LƯỢNG, chưa có nhận xét CEFR chính thức: đề LVC Phú Yên 2024 dùng dạng bài kiểu B2 First (word formation, key word transformation, open cloze, error id) với từ vựng như 'transcend', 'disrepair' và đảo ngữ. Đề chuyên Anh Nguyễn Du 2025: 150 phút, kết hợp trắc nghiệm + tự luận, gồm nghe – đọc – viết (tuyensinh247). Thí sinh 2024 nhận xét đề chuyên Anh Nguyễn Du khó nhưng phù hợp, phần nghe khó nhất (Báo Đắk Lắk). Cấu trúc đề chung của Sở năm 2026 (dùng chung cho cả 2 trường) chưa tìm được.",
+    "sample_links": [
+      "https://springboard.vn/de-thi-chuyen-anh-luong-van-chanh-phu-yen-2024-2025/"
+    ]
+  },
+  "schools": [
+    {
+      "name": "THPT chuyên Nguyễn Du",
+      "old_province": "Đắk Lắk",
+      "city": "Buôn Ma Thuột (phường Tân An)",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {"2026": null},
+          "applicants": {"2024": 213, "2026": 274},
+          "cut": {"2022": 37.8, "2023": 35.45, "2024": 36.3, "2025": 36.11, "2026": 35.8},
+          "scale": {"2022": 50, "2023": 50, "2024": 50, "2025": 50, "2026": 50},
+          "note": "Trường tuyển 350 HS/10 lớp (35 HS/lớp) năm 2025 và 2026, nhưng chưa thấy văn bản ghi chỉ tiêu riêng lớp Anh. 2026: dienmaycholon ghi 35,8, vietjack ghi 36 → cần đối chiếu QĐ 766/QĐ-SGDĐT. 2024 (36,3) chỉ có ở dienmaycholon (độ tin cậy trung bình). 2022 từ doctailieu. Số thí sinh 2024 là số dự thi chiều 8/6/2024 (giảm 137 so với 2023). Lịch sử điểm chuẩn cũ: 2018: 35,00; 2019: 34; 2020: 32,25; 2021: 35,20."
+        },
+        {
+          "lang": "Pháp",
+          "admit_by_english": true,
+          "quota": {"2026": 35},
+          "applicants": {"2024": 16},
+          "cut": {"2022": 27.45, "2023": 26.75, "2025": 24.06, "2026": 19.9},
+          "scale": {"2022": 50, "2023": 50, "2025": 50, "2026": 50},
+          "note": "Trước đây là lớp 'Anh–Pháp' tuyển cả thí sinh thi chuyên Anh và chuyên Pháp: điểm chuẩn diện thi Anh 2022: 35,6; 2023: 34,00; 2024: 30,05; 2025: 34,96 (nguồn tổng hợp). 2026: NV1 (thi chuyên Pháp) 19,9; NV2 xét từ chuyên Anh xuống 34,45. 2026 có 35 HS trúng tuyển lớp Pháp, 21 em (60%) điểm chuyên dưới 5. Số 2023 (26,75) đọc từ bảng bị lỗi định dạng."
+        }
+      ]
+    },
+    {
+      "name": "THPT chuyên Lương Văn Chánh",
+      "old_province": "Phú Yên",
+      "city": "Tuy Hòa (phường Tuy Hòa)",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {"2023": 70, "2025": 70, "2026": 35},
+          "applicants": {"2026": 204},
+          "cut": {"2021": 29.5, "2022": 34.0, "2023": 28.75, "2024": null, "2025": 34.45, "2026": 33.7},
+          "scale": {"2022": null, "2023": null, "2025": null, "2026": 50},
+          "note": "2023 và 2025 có 2 lớp Anh (35 HS/lớp); 2026 chỉ còn 1 lớp Anh (35 chỉ tiêu, 204 hồ sơ ≈ 1/5,8; hiệu trưởng nói 'gần 1/7') vì trường mở thêm lớp Sử, Địa. 2026 chuyên Anh có điểm chuẩn cao nhất trường (33,7). Thang điểm các năm Phú Yên cũ chưa xác minh (đề chuyên Anh 2024 chấm thang 20)."
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "title": "Đề chuyên Anh khó, phần nghe là khó nhất",
+      "who": "học sinh",
+      "year": 2024,
+      "school": "THPT chuyên Nguyễn Du",
+      "summary": "Thí sinh Nguyễn Diệu Châu (THCS Đoàn Thị Điểm, Buôn Ma Thuột) xác định trước đề chuyên Anh sẽ khó và coi đây là lần thử sức. Em thấy đề khó nhưng phù hợp yêu cầu lớp chuyên, phần nghe là khó nhất. Báo cũng ghi nhận số đăng ký chuyên Anh năm 2024 giảm 137 so với năm trước.",
+      "takeaways": ["Luyện nghe dạng điền từ và trắc nghiệm thường xuyên – đây là phần thí sinh thấy khó nhất", "Ôn với tâm thế làm đề khó, giữ bình tĩnh để hoàn thành các phần còn lại"],
+      "url": "https://baodaklak.vn/xa-hoi/202406/ky-thi-tuyen-sinh-vao-lop-10-thpt-nam-hoc-2024-2025-de-thi-mon-chuyen-kho-dat-diem-cao-5e115ad/"
+    },
+    {
+      "title": "Chuyên Anh đông thí sinh nhất cả hai trường năm đầu sáp nhập",
+      "who": "báo",
+      "year": 2026,
+      "school": "THPT chuyên Nguyễn Du, THPT chuyên Lương Văn Chánh",
+      "summary": "Năm 2026 Tiếng Anh là môn chuyên có nhiều hồ sơ nhất ở Nguyễn Du (274) và ở Lương Văn Chánh có 204 hồ sơ cho 35 chỉ tiêu. Hiệu trưởng hai trường nhận xét xu hướng chọn môn chuyên đang thay đổi, khoa học tự nhiên tăng.",
+      "takeaways": ["Lớp chuyên Anh LVC năm 2026 chỉ còn 1 lớp (35 chỉ tiêu) thay vì 2 lớp – cạnh tranh gắt hơn", "Cân nhắc NV2 vào lớp Pháp (Nguyễn Du) nếu thi chuyên Anh"],
+      "url": "https://giaoducthoidai.vn/nghi-dinh-179-tac-dong-den-xu-huong-chon-mon-chuyen-cua-hoc-sinh-o-dak-lak-post779504.html"
+    },
+    {
+      "title": "Điểm chuyên 2,2 vẫn đỗ lớp Pháp – vì không có điểm sàn môn chuyên",
+      "who": "báo",
+      "year": 2026,
+      "school": "THPT chuyên Nguyễn Du",
+      "summary": "Lớp chuyên Pháp Nguyễn Du lấy 19,9/50 điểm; 21/35 em trúng tuyển có điểm chuyên dưới 5, thấp nhất 2,2. Lãnh đạo trường giải thích lớp ít thí sinh, Sở xét theo quy chế chỉ cần mọi bài trên 2 điểm.",
+      "takeaways": ["Ở Đắk Lắk không có điểm sàn riêng môn chuyên (khác Khánh Hòa ≥5); mọi bài chỉ cần > 2", "Học sinh thi chuyên Anh có thể vào lớp Pháp qua NV2 (năm 2026 lấy 34,45)"],
+      "url": "https://tienphong.vn/diem-let-det-van-do-truong-chuyen-o-dak-lak-post1862546.tpo"
+    }
+  ],
+  "prep_tips": [
+    "Môn chuyên nhân hệ số 2 trên tổng 50 → bài chuyên Anh chiếm 40% điểm xét; 3 môn chung vẫn chiếm 30/50, không được bỏ Toán/Văn (Tiền Phong, Thanh Tra 7/2026).",
+    "Bài Tiếng Anh chung là trắc nghiệm 60 phút; bài chuyên 150 phút kết hợp trắc nghiệm và tự luận, có nghe (Báo Đắk Lắk 5/2026; tuyensinh247).",
+    "Luyện nghe 2 dạng: chọn đáp án và điền tối đa 2 từ; mỗi bài nghe 2 lần (đề LVC 2024, springboard.vn).",
+    "Luyện các dạng kiểu B2 First: word formation, key word transformation, open cloze, tìm lỗi theo dòng; viết đoạn nêu quan điểm ~150 từ (đề LVC 2024).",
+    "Ngưỡng tham khảo năm 2026: Nguyễn Du ~36/50 (≈7,2 điểm/bài quy đổi), Lương Văn Chánh 33,7/50 (vietjack, dienmaycholon, Báo Đắk Lắk 22/6/2026)."
+  ],
+  "confidence": "medium",
+  "gaps": [
+    "Điểm chuẩn chuyên Anh Nguyễn Du 2026 lệch giữa các nguồn (35,8 vs 36); chưa đọc được QĐ 766/QĐ-SGDĐT (bảng trong ảnh, web Sở chặn).",
+    "Điểm chuẩn chuyên Anh Lương Văn Chánh 2024 chưa tìm được.",
+    "Công thức và thang điểm xét tuyển chuyên của Phú Yên cũ (2022–2025) chưa xác minh.",
+    "Cấu trúc đề chuyên Anh chung của Sở Đắk Lắk năm 2026 (số câu, điểm từng phần) chưa tìm được; cấu trúc ghi ở trên là đề LVC Phú Yên 2024.",
+    "Đề chuyên Anh Nguyễn Du các năm (link đề + đáp án) chưa tìm được.",
+    "Chỉ tiêu riêng lớp chuyên Anh Nguyễn Du chưa có văn bản; kế hoạch 2027 chưa công bố (tính đến 10/2026).",
+    "Ngân sách tìm kiếm dùng hết nên chưa tìm thêm chia sẻ kinh nghiệm của học sinh."
+  ],
+  "sources": [
+    {"title": "Báo Đắk Lắk – Kỳ thi lớp 10 trường chuyên biệt 1–2/6/2026 (lịch thi)", "url": "https://baodaklak.vn/van-hoa-xa-hoi/giao-duc/202605/ky-thi-tuyen-sinh-vao-lop-10-thpt-nam-hoc-2026-2027-danh-cho-cac-truong-chuyen-biet-dien-ra-vao-ngay-1-va-26-36a6df7/"},
+    {"title": "Báo Đắk Lắk – 1.225 học sinh trúng tuyển vào 5 trường chuyên biệt (22/6/2026)", "url": "https://baodaklak.vn/van-hoa-xa-hoi/giao-duc/202606/dak-lak-1225-hoc-sinh-trung-tuyen-vao-lop-10-o-5-truong-chuyen-biet-a96017c/"},
+    {"title": "GD&TĐ – Đắk Lắk chốt lịch thi tuyển lớp 10 năm học 2026-2027", "url": "https://giaoducthoidai.vn/dak-lak-chot-lich-thi-tuyen-vao-lop-10-nam-hoc-2026-2027-post776541.html"},
+    {"title": "GD&TĐ – Nghị định 179 tác động xu hướng chọn môn chuyên ở Đắk Lắk", "url": "https://giaoducthoidai.vn/nghi-dinh-179-tac-dong-den-xu-huong-chon-mon-chuyen-cua-hoc-sinh-o-dak-lak-post779504.html"},
+    {"title": "Dân trí – Học sinh Đắk Lắk không phải thi vào lớp 10 công lập 2026-2027", "url": "https://dantri.com.vn/giao-duc/hoc-sinh-dak-lak-khong-phai-thi-vao-lop-10-cong-lap-2026-2027-20260331104124218.htm"},
+    {"title": "VOV – Tuyển sinh lớp 10 ở Đắk Lắk: thi tuyển trường chuyên biệt, xét tuyển diện rộng", "url": "https://vov.gov.vn/tuyen-sinh-lop-10-o-dak-lak-thi-tuyen-vao-truong-chuyen-biet-xet-tuyen-dien-rong-dtnew-1137745?keyDevice=true"},
+    {"title": "VietNamNet – Hiệu trưởng lý giải thí sinh 3 điểm/môn đỗ chuyên Lương Văn Chánh", "url": "https://vietnamnet.vn/hieu-truong-ly-giai-thi-sinh-3-diem-mon-do-lop-10-thpt-chuyen-luong-van-chanh-2539092.html"},
+    {"title": "Tiền Phong – Điểm lẹt đẹt vẫn đỗ trường chuyên ở Đắk Lắk (25/7/2026)", "url": "https://tienphong.vn/diem-let-det-van-do-truong-chuyen-o-dak-lak-post1862546.tpo"},
+    {"title": "Thanh Tra – Đọc lạ Đắk Lắk: sốc với điểm chuẩn vào trường chuyên", "url": "https://thanhtra.com.vn/giao-duc-A6BAEB6CD/doc-la-dak-lak-soc-voi-diem-chuan-vao-truong-chuyen-ab6de4ba7.html"},
+    {"title": "Thư viện pháp luật – Lịch thi vào lớp 10 Đắk Lắk 2026-2027 (Kế hoạch 100/KH-UBND)", "url": "https://thuvienphapluat.vn/phap-luat/ho-tro-phap-luat/chi-tiet-lich-thi-vao-lop-10-dak-lak-2026-2027-tat-ca-cac-mon-cac-mon-thi-vao-lop-10-dak-lak-2026-2-389512-271845.html"},
+    {"title": "Báo Đắk Lắk – Kỳ thi lớp 10 năm 2024: đề thi môn chuyên khó đạt điểm cao", "url": "https://baodaklak.vn/xa-hoi/202406/ky-thi-tuyen-sinh-vao-lop-10-thpt-nam-hoc-2024-2025-de-thi-mon-chuyen-kho-dat-diem-cao-5e115ad/"},
+    {"title": "Tuyensinh247 – Thông tin tuyển sinh THPT chuyên Nguyễn Du", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/truong-thpt-chuyen-nguyen-du-1487.html"},
+    {"title": "Tuyensinh247 – Thông tin tuyển sinh lớp 10 Đắk Lắk", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/dak-lak-p57.html"},
+    {"title": "Tuyensinh247 – Điểm chuẩn lớp 10 Đắk Lắk", "url": "https://diemthi.tuyensinh247.com/dc-lop10/dak-lak-p57.html"},
+    {"title": "Tuyensinh247 – THPT chuyên Lương Văn Chánh", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10-truong/truong-thpt-chuyen-luong-van-chanh-1488.html"},
+    {"title": "VietJack – Điểm chuẩn chuyên Nguyễn Du (Đắk Lắk)", "url": "https://vietjack.com/tuyen-sinh/diem-chuan-vao-10-truong-thpt-chuyen-nguyen-du-dak-lak.jsp"},
+    {"title": "Điện máy Chợ Lớn – Điểm chuẩn lớp 10 Đắk Lắk (tổng hợp 2024–2026)", "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-tinh-dak-lak"},
+    {"title": "Đọc tài liệu – Điểm chuẩn lớp 10 Đắk Lắk (chuyên Nguyễn Du 2018–2023)", "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-dak-lak"},
+    {"title": "Tuổi Trẻ – Công bố điểm chuẩn vào lớp 10 trường chuyên ở Phú Yên (2025)", "url": "https://tuoitre.vn/cong-bo-diem-chuan-vao-lop-10-truong-chuyen-o-phu-yen-lop-chuyen-tin-bi-thieu-hoc-sinh-20250610100837137.htm"},
+    {"title": "Phú Yên online – Điểm chuẩn chuyên Lương Văn Chánh 2025", "url": "https://phuyen.baodaklak.vn/xa-hoi/202506/cong-bo-diem-chuan-trung-tuyen-vao-lop-10-truong-thpt-chuyen-luong-van-chanh-1fd2dd8/"},
+    {"title": "Phú Yên online – Điểm chuẩn lớp 10 năm học 2023-2024", "url": "https://phuyen.baodaklak.vn/79/299696/cong-bo-diem-chuan-trung-tuyen-vao-lop-10-nam-hoc-2023-2024.html"},
+    {"title": "Download.vn – Điểm chuẩn vào 10 Phú Yên (LVC 2021–2023)", "url": "https://download.vn/diem-chuan-lop-10-phu-yen-60539"},
+    {"title": "Springboard – Đề thi chuyên Anh Lương Văn Chánh Phú Yên 2024", "url": "https://springboard.vn/de-thi-chuyen-anh-luong-van-chanh-phu-yen-2024-2025/"}
+  ]
+}

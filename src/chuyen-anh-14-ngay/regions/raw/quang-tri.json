@@ -1,0 +1,78 @@
+{
+  "so": "Quảng Trị",
+  "slug": "quang-tri",
+  "merged_from": ["Quảng Trị", "Quảng Bình"],
+  "exam_2026": {
+    "dates": null,
+    "organisation": "Chưa xác minh là một đề chung hay theo từng khu vực tỉnh cũ. Thư viện Pháp luật đưa ra một lịch chung cho tỉnh Quảng Trị mới (Quảng Bình + Quảng Trị).",
+    "common_subjects": ["Toán", "Ngữ văn", "Tiếng Anh"],
+    "notes": "Môn thứ ba năm 2026 là Tiếng Anh/Ngoại ngữ, công bố trước 24/02/2026 (LSVN). Lịch chung theo Thư viện Pháp luật: kết quả chấm thi dự kiến 8h00 ngày 06/6/2026; phúc khảo xong trước 16h30 ngày 24/6; xét tuyển trường chuyên và PT DTNT tỉnh xong trước 11h00 ngày 25/6; công lập trước 11h00 ngày 27/6; kết quả tuyển bổ sung đợt 2 ngày 04/7/2026. Ngày thi cụ thể chưa tìm được."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": null,
+    "parts": [],
+    "max": null,
+    "conditions": null,
+    "formula_by_year": {}
+  },
+  "nv_rule": null,
+  "chuyen_paper": {
+    "minutes": null,
+    "scale": null,
+    "has_listening": null,
+    "essay_words": null,
+    "sections": [],
+    "difficulty": null,
+    "difficulty_evidence": null,
+    "sample_links": []
+  },
+  "schools": [
+    {
+      "name": "THPT chuyên Lê Quý Đôn (Quảng Trị)",
+      "old_province": "Quảng Trị",
+      "city": "Đông Hà",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {},
+          "applicants": {},
+          "cut": {"2022": null, "2023": null, "2024": null, "2025": null, "2026": null},
+          "scale": {},
+          "note": "Chưa tìm được số liệu có nguồn. Tên trường theo brief, chưa tự xác minh qua nguồn."
+        }
+      ]
+    },
+    {
+      "name": "THPT chuyên Võ Nguyên Giáp (Quảng Bình)",
+      "old_province": "Quảng Bình",
+      "city": "Đồng Hới",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {},
+          "applicants": {},
+          "cut": {"2022": null, "2023": null, "2024": null, "2025": null, "2026": null},
+          "scale": {},
+          "note": "Chưa tìm được số liệu có nguồn. Tên trường theo brief, chưa tự xác minh qua nguồn."
+        }
+      ]
+    }
+  ],
+  "stories": [],
+  "prep_tips": [],
+  "confidence": "low",
+  "gaps": [
+    "Cách tổ chức 2026 sau sáp nhập (một đề chung hay hai khu vực Quảng Bình/Quảng Trị cũ), ngày thi",
+    "Công thức xét tuyển, điểm chuẩn chuyên Anh 2022–2026 của cả hai trường chuyên",
+    "Lớp chuyên ngoại ngữ khác (nếu có), chỉ tiêu, số thí sinh",
+    "Cấu trúc đề, độ khó chuyên Anh của từng trường (2025 trở về trước là hai đề riêng của hai tỉnh cũ)",
+    "Câu chuyện ôn thi",
+    "Lý do: hết hạn mức tìm kiếm web của lượt làm việc (200 lượt dùng chung) trước khi kịp nghiên cứu sở này — cần chạy lại"
+  ],
+  "sources": [
+    {"title": "Thư viện Pháp luật: Lịch công bố điểm thi vào 10 2026 của 34 tỉnh thành", "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/lich-cong-bo-diem-thi-vao-10-2026-2027-cua-34-tinh-thanh-ngay-nao-138090187.html"},
+    {"title": "LSVN: Nhiều địa phương công bố môn thi thứ ba vào lớp 10 năm học 2026-2027", "url": "https://lsvn.vn/nhieu-dia-phuong-cong-bo-mon-thi-thu-ba-vao-lop-10-nam-hoc-2026-2027-a169644.html"},
+    {"title": "LSVN: Thêm nhiều địa phương chốt môn thi thứ ba vào lớp 10", "url": "https://lsvn.vn/them-nhieu-dia-phuong-chot-mon-thi-thu-ba-vao-lop-10-a169993.html"}
+  ]
+}

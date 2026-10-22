@@ -1,0 +1,123 @@
+{
+  "so": "An Giang",
+  "slug": "an-giang",
+  "merged_from": ["An Giang", "Kiên Giang"],
+  "exam_2026": {
+    "dates": "02/6/2026 sáng Ngữ văn (120'), chiều Tiếng Anh (60'); 03/6/2026 sáng Toán (120'), chiều môn chuyên (150').",
+    "organisation": "Một đề chung cho cả tỉnh mới: Sở GD&ĐT An Giang ra đề tất cả các môn, mỗi môn chuyên một đề, áp dụng cho 3 trường chuyên (Thoại Ngọc Hầu, Thủ Khoa Nghĩa – An Giang cũ; Huỳnh Mẫn Đạt – Kiên Giang cũ). Mỗi trường xét điểm chuẩn riêng.",
+    "common_subjects": ["Ngữ văn", "Toán", "Tiếng Anh"],
+    "notes": "Ngữ văn tự luận; Tiếng Anh chung 100% trắc nghiệm 60'; Toán 70% tự luận + 30% trắc nghiệm. Đề bám chương trình THCS, chủ yếu lớp 9. Trường chuyên không tuyển thẳng. Năm 2025 (trước sáp nhập) Kiên Giang thi riêng 14–15/6/2025, An Giang thi chuyên Anh ngày 03/6/2025."
+  },
+  "plan_2027": null,
+  "formula": {
+    "text": "Điểm xét tuyển lớp chuyên = Ngữ văn + Toán + Tiếng Anh (hệ số 1) + Điểm môn chuyên × 2",
+    "parts": ["Ngữ văn", "Toán", "Tiếng Anh (chung)", "Anh chuyên×2"],
+    "max": 50,
+    "conditions": "2024 (An Giang cũ): phải qua vòng sơ tuyển; dự thi đủ, không vi phạm quy chế; mọi bài thi > 2,0; xếp hạng khi bằng điểm: điểm môn chuyên → điểm sơ tuyển → ĐTB môn chuyên lớp 9 → ĐTB cả năm lớp 9. 2026: học sinh mọi THCS trong tỉnh được đăng ký chuyên; học sinh ngoài tỉnh phải dự tuyển vào trường trên địa bàn.",
+    "formula_by_year": {
+      "2024": "An Giang cũ: ĐXT = (Văn + Toán + Tiếng Anh) + Chuyên×2 (Kế hoạch tuyển sinh 2024-2025).",
+      "2026": "Giữ nguyên: Văn + Toán + Tiếng Anh + Chuyên×2 (tuyensinh247)."
+    }
+  },
+  "nv_rule": "2026: mỗi học sinh đăng ký 1 nguyện vọng chuyên (1 môn chuyên, 1 trường) và được chọn thêm 2 nguyện vọng vào trường THPT công lập (NV2 theo địa bàn tuyển sinh). Đăng ký vào Thoại Ngọc Hầu và Thủ Khoa Nghĩa không phụ thuộc địa bàn. Không có lớp chuyên ngoại ngữ khác ngoài tiếng Anh. 2024: thứ tự trường chuyên → NV1 (bất kỳ THPT công lập) → NV2 (theo địa bàn).",
+  "chuyen_paper": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": true,
+    "essay_words": 220,
+    "sections": [
+      {"format": "true_false", "items": 5, "points": null, "note": "Đề An Giang 2025-2026 (Sở ra đề), Listening Part 1 nghe 2 lần; tổng 3 phần nghe 15 câu = 2,0 điểm"},
+      {"format": "listening", "items": 5, "points": null, "note": "Listening Part 2: trắc nghiệm A/B/C"},
+      {"format": "listening", "items": 5, "points": null, "note": "Listening Part 3: điền không quá 3 từ và/hoặc số"},
+      {"format": "sentence_completion", "items": 10, "points": null, "note": "Lexico-grammar trắc nghiệm A–D; phần B tổng 20 câu = 2,0 điểm"},
+      {"format": "error_id", "items": 5, "points": null, "note": "Tìm lỗi sai phần gạch chân A–D"},
+      {"format": "word_formation", "items": 5, "points": null, "note": "Điền dạng đúng của từ"},
+      {"format": "open_cloze", "items": 5, "points": null, "note": "Reading: điền 1 từ; phần C tổng 20 câu = 3,0 điểm"},
+      {"format": "gap_text", "items": 5, "points": null, "note": "Điền câu vào đoạn văn, thừa 1 câu"},
+      {"format": "reading_mcq", "items": 5, "points": null, "note": "Đọc hiểu trắc nghiệm"},
+      {"format": "cloze", "items": 5, "points": null, "note": "Trắc nghiệm điền từ A–D"},
+      {"format": "transformation", "items": 5, "points": null, "note": "Writing: viết lại câu tự do; phần D tổng 3,0 điểm"},
+      {"format": "key_word", "items": 5, "points": null, "note": "Viết lại câu với từ cho sẵn, 2–5 từ"},
+      {"format": "paragraph_writing", "items": 1, "points": null, "note": "Đoạn văn 180–220 từ, đồng ý/không đồng ý: 'Volunteering is the best way to improve a community'"}
+    ],
+    "difficulty": "B1+",
+    "difficulty_evidence": "Đề chuyên Anh An Giang 2025-2026 (7 trang, 150 phút, thang 10: Listening 2,0 – Lexico-grammar 2,0 – Reading 3,0 – Writing 3,0). Có dạng B2 như key word transformation 2–5 từ, gapped sentences, open cloze, đoạn 180–220 từ, nhưng Springboard ghi các bài đọc được chuyển thể từ nguồn mức A2, nên tổng thể ước B1+ đến B2. Đây là ước tính từ cấu trúc, không có nhận xét của giáo viên/báo. Kế hoạch 2024 ghi phần nghe dài 15–20 phút.",
+    "sample_links": [
+      "https://springboard.vn/de-thi-chuyen-anh-10-an-giang-2025-2026/"
+    ]
+  },
+  "schools": [
+    {
+      "name": "THPT chuyên Thoại Ngọc Hầu",
+      "old_province": "An Giang",
+      "city": "Long Xuyên",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {"2024": 70},
+          "applicants": {},
+          "cut": {"2022": null, "2023": null, "2024": 39.3, "2025": 39.7, "2026": 34.35},
+          "scale": {"2024": 50, "2025": 50, "2026": 50},
+          "note": "2024: 39,30, 2 lớp/70 HS (thông báo điểm chuẩn của Sở, PDF trên Thư viện Pháp luật). 2025, 2026 chỉ có nguồn tuyensinh247. Năm 2026 giảm khoảng 5 điểm."
+        }
+      ]
+    },
+    {
+      "name": "THPT chuyên Thủ Khoa Nghĩa",
+      "old_province": "An Giang",
+      "city": "Châu Đốc",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {"2024": 70},
+          "applicants": {},
+          "cut": {"2022": null, "2023": null, "2024": 31.3, "2025": 27.9, "2026": 27.55},
+          "scale": {"2024": 50, "2025": 50, "2026": 50},
+          "note": "2024: 31,3, 2 lớp/70 HS (thông báo của Sở). 2025, 2026 chỉ có nguồn tuyensinh247."
+        }
+      ]
+    },
+    {
+      "name": "THPT chuyên Huỳnh Mẫn Đạt",
+      "old_province": "Kiên Giang",
+      "city": "Rạch Giá",
+      "classes": [
+        {
+          "lang": "Anh",
+          "quota": {},
+          "applicants": {},
+          "cut": {"2022": null, "2023": null, "2024": null, "2025": null, "2026": null},
+          "scale": {},
+          "note": "Có trong danh sách trường chuyên An Giang 2026 (tuyensinh247), nhưng chưa tìm được điểm chuẩn, chỉ tiêu hay đề chuyên Anh năm nào. Bảng điểm chuẩn An Giang trên tuyensinh247 không có trường này."
+        }
+      ]
+    }
+  ],
+  "stories": [],
+  "prep_tips": [
+    "Đề chuyên Anh do Sở ra, dùng chung cả tỉnh; phần Reading và Writing mỗi phần 3/10 điểm – ưu tiên đọc hiểu (gapped sentences, open cloze) và viết (springboard, đề 2025).",
+    "Luyện viết đoạn/bài nghị luận 180–220 từ dạng agree/disagree, và key word transformation 2–5 từ (đề 2025).",
+    "Phần nghe 3 dạng: True/False, trắc nghiệm A/B/C, điền ≤ 3 từ/số, mỗi bài nghe 2 lần, tổng 15–20 phút (đề 2025; kế hoạch 2024).",
+    "Tiếng Anh chung 100% trắc nghiệm 60 phút – luyện tốc độ trắc nghiệm (tuyensinh247 2026).",
+    "Chênh lệch giữa hai trường rất lớn: chuyên Anh 2026 Thoại Ngọc Hầu 34,35 so với Thủ Khoa Nghĩa 27,55; chỉ được 1 nguyện vọng chuyên nên chọn trường theo sức (tuyensinh247)."
+  ],
+  "confidence": "medium",
+  "gaps": [
+    "Huỳnh Mẫn Đạt (Kiên Giang cũ): không có điểm chuẩn, chỉ tiêu, đề chuyên Anh năm nào.",
+    "Thiếu điểm chuẩn chuyên Anh 2022, 2023 của Thoại Ngọc Hầu và Thủ Khoa Nghĩa; 2025–2026 chỉ có nguồn tuyensinh247.",
+    "Chưa có đề chuyên Anh 2026 (sau sáp nhập) để xác nhận định dạng có giữ như 2025.",
+    "Thiếu chỉ tiêu 2025, 2026 và số thí sinh đăng ký chuyên Anh.",
+    "Kế hoạch 2027 chưa tìm thấy.",
+    "Không tìm được bài chia sẻ kinh nghiệm ôn thi chuyên Anh thật ở An Giang, Kiên Giang."
+  ],
+  "sources": [
+    {"title": "Tuyensinh247 – Tuyển sinh lớp 10 An Giang 2026-2027", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/an-giang-p53.html"},
+    {"title": "Tuyensinh247 – Điểm chuẩn lớp 10 An Giang", "url": "https://diemthi.tuyensinh247.com/dc-lop10/an-giang-p53.html"},
+    {"title": "Sở GD&ĐT An Giang – Thông báo điểm chuẩn vào trường chuyên 2024 (PDF)", "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2024/NTKL/03072024/thong_bao_diem_chuan_vao_truong_chuyen_an-giang.pdf"},
+    {"title": "Kế hoạch tuyển sinh lớp 10 An Giang 2024-2025 (PDF)", "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2024/LTN/thang6/tuyen-sinh-lop10-an-giang.pdf"},
+    {"title": "Springboard – Đề thi chuyên Anh 10 An Giang 2025-2026", "url": "https://springboard.vn/de-thi-chuyen-anh-10-an-giang-2025-2026/"},
+    {"title": "Hoatieu – Đáp án đề Toán An Giang 2026 (lịch thi, môn thi)", "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-toan-an-giang-208573"},
+    {"title": "Thư viện Pháp luật – Môn thi thứ 3 vào 10 An Giang", "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/mon-thi-thu-3-vao-10-nam-2026-an-giang-la-mon-gi-138081494.html"},
+    {"title": "Hoatieu – Điểm thi tuyển sinh lớp 10 Kiên Giang 2025", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-kien-giang-208870"}
+  ]
+}
