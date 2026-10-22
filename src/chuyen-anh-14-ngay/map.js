@@ -21,6 +21,7 @@ function mapDefs(){return `<defs>
  <filter id="mpPencil" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="${ST.freq}" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="${ST.disp}"/></filter>
  <filter id="mpWash" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="${ST.fill==='wash'?18:10}"/><feGaussianBlur stdDeviation="${ST.fill==='wash'?1.6:.6}"/></filter>
  <filter id="mpGrain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="5"/><feColorMatrix values="0 0 0 0 0.1  0 0 0 0 0.09  0 0 0 0 0.08  0 0 0 1.4 -0.55"/></filter>
+ <linearGradient id="mpFade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".3" stop-color="#fff" stop-opacity="1"/></linearGradient><mask id="mpFadeM" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#mpFade)"/></mask>
  <pattern id="mpHatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="7" stroke="${ST.ink}" stroke-width="1" stroke-opacity=".55"/></pattern>
  <pattern id="mpHatchX" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><line x1="0" y1="0" x2="0" y2="9" stroke="${ST.ink}" stroke-width=".9" stroke-opacity=".45"/></pattern>
  <pattern id="mpHatchY" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line x1="0" y1="0" x2="0" y2="9" stroke="${ST.ink}" stroke-width=".9" stroke-opacity=".4"/></pattern>
@@ -47,9 +48,8 @@ function mpGround(sc){const r=mpRand(sc.seed);
   ${sc.water?wash(`M-20 ${HZ-4} H1020 V${HZ+26} H-20 Z`,sc.water,.6)+pen2(`M40 ${HZ+8} q20 -4 40 0 M180 ${HZ+14} q20 -4 40 0 M610 ${HZ+10} q24 -4 48 0 M820 ${HZ+16} q20 -4 40 0`):''}
   ${wash(`M-20 ${HZ+26} Q130 ${HZ-6} 300 ${HZ+20} Q420 ${HZ+36} 520 ${HZ+30} Q760 ${HZ+4} 1020 ${HZ+24} V${MAP_H+20} H-20 Z`,sc.hill,.5)}
   ${pen(`M-10 ${HZ+26} Q130 ${HZ-6} 300 ${HZ+20} Q420 ${HZ+36} 520 ${HZ+30} Q760 ${HZ+4} 1010 ${HZ+24}`)}
-  ${wash(`M-20 ${HZ+120} Q180 ${HZ+60} 420 ${HZ+104} Q540 ${HZ+124} 660 ${HZ+150} L660 ${MAP_H+20} H-20 Z`,sc.hill2||sc.hill,.55)}${pen(`M-10 ${HZ+120} Q180 ${HZ+60} 420 ${HZ+104}`)}
-  ${wash(`M380 ${HZ+150} Q480 ${HZ+110} 600 ${HZ+90} Q800 ${HZ+40} 1020 ${HZ+80} V${MAP_H+20} H380 Z`,sc.hill2||sc.hill,.55)}${pen(`M600 ${HZ+90} Q800 ${HZ+40} 1010 ${HZ+80}`)}
-  <rect x="0" y="${HZ+140}" width="1000" height="${MAP_H}" fill="url(#mpHatchX)" opacity="${(.15+ST.xh).toFixed(2)}"/>${ST.xh>.4?`<rect x="0" y="${HZ+40}" width="1000" height="${MAP_H}" fill="url(#mpHatchY)" opacity="${(ST.xh-.1).toFixed(2)}"/>`:""}
+  ${wash(`M-20 ${HZ+120} Q180 ${HZ+60} 420 ${HZ+104} Q520 ${HZ+112} 600 ${HZ+90} Q800 ${HZ+40} 1020 ${HZ+80} V${MAP_H+20} H-20 Z`,sc.hill2||sc.hill,.55)}${pen(`M-10 ${HZ+120} Q180 ${HZ+60} 420 ${HZ+104}`)}${pen(`M600 ${HZ+90} Q800 ${HZ+40} 1010 ${HZ+80}`)}
+  <rect x="0" y="${HZ+60}" width="1000" height="${MAP_H}" mask="url(#mpFadeM)" fill="url(#mpHatchX)" opacity="${(.15+ST.xh).toFixed(2)}"/>${ST.xh>.4?`<rect x="0" y="${HZ+20}" width="1000" height="${MAP_H}" mask="url(#mpFadeM)" fill="url(#mpHatchY)" opacity="${(ST.xh-.1).toFixed(2)}"/>`:""}
   ${mpGrass(r,46,[20,HZ+50,980,MAP_H-10])}
   ${mpTree(70,HZ+150,1.2,sc.tree)}${mpTree(330,HZ+95,.8,'')}${mpTree(950,HZ+165,1.4,sc.tree)}${mpTree(735,HZ+70,.7,sc.tree)}`}
 /* ---- các cảnh: danh lam vẽ chì, tô màu vài chỗ ---- */
@@ -116,7 +116,7 @@ const SCENES={
   ${pen2('M700 206 V184 M730 206 V168 M760 206 V156 M790 206 V150 M820 206 V148 M850 206 V152 M880 206 V160 M910 206 V172 M940 206 V188')}`},
  agra:{name:'Đền Taj Mahal · Ấn Độ',seed:113,style:'water',tone:'nóng',sky:'#F2C6CF',hill:'#E6D7A7',hill2:'#DCC98F',tree:'#B9C47E',draw:()=>`
   ${wash('M750 236 V170 H890 V236 Z M770 170 Q770 110 820 96 Q870 110 870 170 Z','#F6DCE2',.7)}
-  ${pen('M690 252 V236 H950 V252 M750 236 V170 H890 V236 M770 170 Q770 110 820 96 Q870 110 870 170 M820 96 V72 M816 80 h8')}
+  ${pen('M690 252 V236 H950 V252 M750 236 V170 H890 V236 M770 170 Q770 110 820 96 Q870 110 870 170 M820 96 V86 M816 86 Q820 78 824 86 M820 80 V68')}
   ${pen('M800 236 V196 Q820 168 840 196 V236 M762 228 V204 Q770 192 778 204 V228 M862 228 V204 Q870 192 878 204 V228')}
   ${pen('M752 170 Q752 150 764 146 Q776 150 776 170 M864 170 Q864 150 876 146 Q888 150 888 170')}
   ${pen('M700 236 V124 H710 V236 M698 124 Q705 110 712 124 M930 236 V124 H940 V236 M928 124 Q935 110 942 124')}
@@ -142,8 +142,9 @@ const U0=(ROAD_PTS.find(p=>p.y<=MAP_H-40)||{u:0.1}).u;
 const roadW=u=>210*Math.pow(1-u,1.6)+5;
 function roadSVG(){const L=[],R=[];ROAD_PTS.forEach(p=>{const q=roadAt(p.u),w=roadW(p.u)/2;L.push([q.x+q.nx*w,q.y+q.ny*w]);R.push([q.x-q.nx*w,q.y-q.ny*w])});
   const f=a=>a.map(p=>p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' L');
-  return `<path d="M${f(L)} L${f(R.reverse())} Z" fill="${ST.paper}"/><path d="M${f(L)} L${f(R.slice().reverse())} Z" fill="#E6DCC6" opacity=".45"/><path d="M${f(L)} L${f(R.slice().reverse())} Z" fill="url(#mpHatchX)" opacity=".25"/>
-   <path d="M${f(L)}" ${penAttr(ST.w)} filter="url(#mpPencil)"/><path d="M${f(R.slice().reverse())}" ${penAttr(ST.w)} filter="url(#mpPencil)"/>
+  const P=`M${f(L)} L${f(R.slice().reverse())} Z`;
+  return `<path d="${P}" fill="${ST.paper}"/><path d="${P}" fill="#E6DCC6" opacity=".45"/><path d="${P}" fill="url(#mpHatchX)" opacity=".25"/>
+   <path d="M${f(L)}" ${penAttr(ST.w)} filter="url(#mpPencil)"/><path d="M${f(R)}" ${penAttr(ST.w)} filter="url(#mpPencil)"/>
    <path d="M${ROAD_PTS.map(p=>p.x.toFixed(1)+' '+p.y.toFixed(1)).join(' L')}" fill="none" stroke="#D9A21B" stroke-width="3" stroke-dasharray="16 14" stroke-linecap="round" opacity=".85"/>`}
 /* 14 biển số: gần to, xa nhỏ, xen kẽ hai bên đường */
 function signShape(kind,r){
