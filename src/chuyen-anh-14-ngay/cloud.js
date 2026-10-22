@@ -172,6 +172,7 @@ function vShareCloud(){
     <div class="row"><button class="btn" id="syncNow">Gửi ngay</button><span class="small muted">Trang tự gửi sau mỗi lần cậu làm bài; nút này để gửi lại khi mạng chập chờn.</span></div></div>
    <div class="card"><h3>Bài giấy đã chấm</h3><div id="cloudUps"><p class="muted">Đang tải…</p></div></div>
    <div class="card"><h3>Nhắn cô</h3><div class="thread" id="genThread"></div><textarea id="genMsg" rows="3" placeholder="Cậu muốn hỏi cô điều gì?"></textarea><div class="row"><button class="btn hi" id="genSend">Gửi cô</button><span class="small" id="genInfo"></span></div></div>
+   ${reportCardHTML()}
    ${resetCardHTML()}</section>`;
   CLOUD.unseen=0;updateBadge();
   $('#syncNow').onclick=async()=>{await doSync();go('share')};

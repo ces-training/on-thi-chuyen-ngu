@@ -21,7 +21,7 @@ Cả quá trình mất khoảng 20 phút. Chỉ cần làm một lần.
 1. Dùng tài khoản Google của trung tâm, tạo một Google Sheet mới tên `Chuyên Anh 14 Ngày – dữ liệu`.
 2. Trong Sheet, vào **Tiện ích mở rộng → Apps Script**.
 3. Xoá hết nội dung tệp `Mã.gs` có sẵn, rồi dán toàn bộ nội dung tệp [`Code.gs`](Code.gs).
-4. Bấm dấu **+** cạnh "Tệp", chọn **Tập lệnh** và đặt tên `Keys`. Dán toàn bộ nội dung tệp [`Keys.gs`](Keys.gs) (đáp án 410 câu của 14 buổi).
+4. Bấm dấu **+** cạnh "Tệp", chọn **Tập lệnh** và đặt tên `Keys`. Dán toàn bộ nội dung tệp [`Keys.gs`](Keys.gs) (đáp án 494 câu của 14 buổi).
 5. Bấm biểu tượng 💾 để lưu.
 
 ## 3. Nhập khoá và mã PIN (2 phút)

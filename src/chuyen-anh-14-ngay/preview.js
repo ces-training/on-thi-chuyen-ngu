@@ -12,13 +12,13 @@ const PV_SC=[
   {k:'nhanh',t:'Đã học 6 buổi · đúng nhiều, học đều'},
   {k:'nhip',t:'Đã học 6 buổi · nhịp ổn'},
   {k:'cham',t:'Đã học 6 buổi · sai nhiều, học ngắt quãng'},
-  {k:'xong',t:'Xong cả 14 buổi và bài sau 2 tuần'}
+  {k:'xong',t:'Xong cả 14 buổi và bài đầu ra'}
 ];
 /* xác suất làm đúng theo mức A2/B1/B2 của bài kiểm tra, độ đúng trên web, số buổi, khoảng cách ngày */
 const PV_P={phac:{b:[.9,.6,.2],acc:0,n:0,gap:1,st:null},
   nhanh:{b:[1,.9,.6],acc:.92,n:6,gap:1,st:{retry:[9,10],spiral:[9,10]}},
   nhip:{b:[.9,.7,.3],acc:.72,n:6,gap:1,st:{retry:[6,10],spiral:[7,10]}},
-  cham:{b:[.7,.4,.1],acc:.48,n:6,gap:3,st:{retry:[3,10],spiral:[4,10]}},
+  cham:{b:[.7,.4,.1],acc:.42,n:6,gap:3,st:{retry:[3,10],spiral:[4,10]}},
   xong:{b:[.9,.7,.3],acc:.78,n:14,gap:1,st:{retry:[7,10],spiral:[8,10]},fin:[1,.8,.5]}};
 function pvRand(seed){let a=seed>>>0;return()=>{a=(a+0x6D2B79F5)>>>0;let t=a;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return((t^(t>>>14))>>>0)/4294967296}}
 function pvAns(it,ok){if(ok)return it.type==='mcq'?it.answer:(Array.isArray(it.answer)?it.answer[0]:it.answer);
@@ -153,7 +153,7 @@ function pvTestHTML(kind){const T=TESTS[kind];
   return `<div class="card pv-head"><p class="eyebrow">${T.minutes} phút · ${T.items.length} câu</p><h2>${esc(T.title_vi)}</h2></div>`+
    pvSec('Bài đọc',(T.passages||[]).map(p=>`<p class="small"><b>${esc(p.id)}</b> · mức ${esc(p.level)}</p><div class="passage pv-pass">${esc(p.text)}</div>`).join(''),true)+
    ['A2','B1','B2'].map(L=>pvSec(`Câu mức ${L}`,`<ol class="pv-qs">${T.items.filter(i=>i.level===L).map(pvQ).join('')}</ol>`,true)).join('')}
-function vCatalog(){const tabs=[['diag','Đầu vào']].concat(DAYS.map(d=>['d'+d.day,'B'+d.day])).concat([['final','Sau 2 tuần']]);
+function vCatalog(){const tabs=[['diag','Đầu vào']].concat(DAYS.map(d=>['d'+d.day,'B'+d.day])).concat([['final','Đầu ra']]);
   M().innerHTML=`<section class="pv-cat"><div class="card"><p class="eyebrow">Bản cho giáo viên</p><h2>Toàn bộ nội dung và đáp án</h2>
    <p class="small muted">Mọi câu hỏi trên web, bài giấy, game và bài nghe của từng buổi, kèm đáp án và giải thích đúng như học sinh thấy. Bấm từng mục để mở, hoặc dùng nút In để in hay lưu PDF.</p>
    <div class="pv-chips" role="tablist">${tabs.map(([k,t])=>`<button type="button" class="pv-chip" data-k="${k}" aria-selected="${k===PV_CAT}">${t}${k[0]==='d'&&k!=='diag'?`<small>${esc(DAYS[+k.slice(1)-1].theme_vi)}</small>`:''}</button>`).join('')}</div>

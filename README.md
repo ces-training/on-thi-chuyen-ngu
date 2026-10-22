@@ -28,6 +28,11 @@ Khi `src/chuyen-anh-14-ngay/config.json` chưa có `apiUrl`, trang học sinh v�
 ## Cách sửa nội dung
 
 - Bản đồ 14 ngày ở trang chủ (`src/chuyen-anh-14-ngay/map.js`): con đường uốn từ gần ra xa với 14 biển buổi học; nền là phong cảnh vẽ chì tô màu nước của 8 nơi (Paris, London, Phú Sĩ, Hạ Long, Giza, New York, Sydney, Taj Mahal), mỗi lần mở trang chọn ngẫu nhiên một cảnh khác lần trước. Thêm cảnh mới: thêm một mục vào `SCENES` (mỗi cảnh có `style` là một trong 8 kiểu vẽ ở `STYLES` và `tone` nóng / lạnh / trung tính).
+- Nhịp học, độ chắc của bài đầu vào và báo cáo thử 14 buổi (`src/chuyen-anh-14-ngay/report.js`):
+  - 14 buổi học liền hoặc 1–2 ngày một buổi, khoảng 3 tuần; nhịp tính theo khoảng cách trung bình giữa các buổi (≤ 2,2 ngày và không nghỉ quá 5 ngày là đều), chuỗi giữ lửa không đứt khi nghỉ 1 ngày.
+  - Bài đầu vào/đầu ra ghi thời gian làm và số câu bỏ trống; độ chắc (cao/vừa/thấp) tính bằng cách dịch điểm mỗi mức ±1 câu, kèm cờ khi làm quá nhanh hoặc câu khó đúng nhiều hơn câu dễ.
+  - Sau 3 buổi, nếu độ đúng web 3 buổi gần nhất ≥ 85% hoặc < 50%, Hùng gợi ý đổi mức (Nền tảng / Chuẩn / Nâng cao).
+  - Báo cáo thử 14 buổi (tab Tiến bộ, Trao đổi với cô): nền tảng, khả năng học, khả năng đỗ (có Toán, Văn), lộ trình nếu theo và tóm tắt để cô tư vấn. Cô xem được từ mã kết quả, hoặc từ trang theo dõi (mở `xem-truoc.html#bc=<mã>`).
 - Bản xem trước cho giáo viên: `chuyen-anh-14-ngay/xem-truoc.html` (build.py dựng từ cùng template, mã ở `src/chuyen-anh-14-ngay/preview.js`). Thanh dưới đáy chọn tình huống học sinh giả lập (mới vào, bản phác, tuyến nhanh, giữ nhịp, chậm mà chắc, xong 14 buổi), chọn lớp, mở mọi buổi; tab "Nội dung (cô)" liệt kê mọi câu hỏi, bài giấy, game, bài nghe của 14 buổi và 2 bài kiểm tra kèm đáp án. Dữ liệu lưu ở khoá riêng `chuyenAnh14_preview`, không đồng bộ lên máy chủ. Trang theo dõi của cô có nút dẫn tới.
 - Học theo thứ tự: buổi n mở khi đã có bài đầu vào và đã xong Kiểm tra cuối buổi của buổi n-1 (`dayOpen` trong `template.html`). Chưa làm bài đầu vào thì mỗi lần mở trang hiện popup, thu nhỏ được thành nút ở góc, chỉ mất khi làm xong bài đầu vào.
 

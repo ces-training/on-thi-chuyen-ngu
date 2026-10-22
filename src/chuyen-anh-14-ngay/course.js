@@ -111,7 +111,7 @@ function learnerProfile(o){
   if(stage==='live'){
     if(acc>=0.8&&(ret==null||ret>=0.7))pace='fast';
     else if(acc<0.6||(ret!=null&&ret<0.5))pace='careful';
-    if(A.span>=4)habit=reg>=0.75?'regular':'patchy';
+    const RH=rhythm(A);if(RH.state!=='new')habit=RH.state; // 1 buổi mỗi 1–2 ngày vẫn là đều (đã hứa với phụ huynh: khoảng 3 tuần xong 14 buổi)
   }
   const rs=Object.keys(S.days).map(Number).sort((a,b)=>a-b).map(d=>S.days[d]).filter(r=>r&&r.web&&r.web.total);
   let trend=null;if(rs.length>=5){const f=x=>x.reduce((s,r)=>s+r.web.correct,0)/x.reduce((s,r)=>s+r.web.total,0);trend=f(rs.slice(-3))-f(rs.slice(0,-3))}
@@ -188,12 +188,12 @@ const PACE_SHORT={fast:'Có cửa ra sớm và 20% câu thử thách cho cậu.'
 function profileCard(o){
   const P=o.prof;
   if(P.stage==='draft')return `<div class="card prof"><p class="eyebrow">Lộ trình đang chỉnh theo cậu</p><h3>Bản phác đầu tiên</h3><p>Bản đồ này mới dựa trên bài đầu vào. Làm thêm ${3-P.nWeb} buổi nữa là tớ bắt đầu hiểu cách cậu học: đúng bao nhiêu, nhớ lâu cỡ nào, học có đều không. Rồi lộ trình tự chỉnh cho vừa với cậu.</p></div>`;
-  const chips=`<div class="pchips"><span><b>${pctTxt(P.acc)}</b> câu đúng trên web</span>${P.ret!=null?`<span><b>${pctTxt(P.ret)}</b> câu từng sai làm lại đúng</span>`:''}<span><b>${P.A.studyDays}/${P.A.span||P.A.studyDays}</b> ngày có học</span>${P.trend!=null&&Math.abs(P.trend)>=0.03?`<span><b>${P.trend>=0?'+':''}${Math.round(P.trend*100)}%</b> 3 buổi gần nhất</span>`:''}</div>`;
+  const chips=`<div class="pchips"><span><b>${pctTxt(P.acc)}</b> câu đúng trên web</span>${P.ret!=null?`<span><b>${pctTxt(P.ret)}</b> câu từng sai làm lại đúng</span>`:''}<span><b>${rhythm(P.A).sessions}</b> buổi · ${esc(rhythm(P.A).gapTxt||'mới bắt đầu')}</span>${P.trend!=null&&Math.abs(P.trend)>=0.03?`<span><b>${P.trend>=0?'+':''}${Math.round(P.trend*100)}%</b> 3 buổi gần nhất</span>`:''}</div>`;
   let extra='';
   if(P.trend!=null&&P.trend>=0.08)extra+='<p>3 buổi gần đây cậu đúng nhiều hơn hẳn trước đó. Đúng kiểu "lên tay" rồi đấy!</p>';
   if(P.trend!=null&&P.trend<=-0.08)extra+='<p>3 buổi gần đây khó hơn một chút. Bình thường thôi, bài cũng đang khó dần. Thử đọc lại phần giải thích ở các câu sai trước buổi sau nhé.</p>';
-  if(P.habit==='regular')extra+=`<p>Chuỗi học đều: ${P.A.studyDays}/${P.A.span} ngày. Giữ lửa nha!</p>`;
-  if(P.habit==='patchy')extra+=`<p>Cậu học ${P.A.studyDays}/${P.A.span} ngày. Mẹo tớ hay dùng: chọn một khung giờ cố định, buổi ngắn 20–35 phút mà đều sẽ "ăn" hơn buổi dài mà ngắt quãng.</p>`;
+  if(P.habit==='regular')extra+=`<p>Nhịp học đều: ${esc(rhythm(P.A).gapTxt)}. Giữ lửa nha!</p>`;
+  if(P.habit==='patchy')extra+=`<p>Nhịp hiện tại: ${esc(rhythm(P.A).gapTxt)}${rhythm(P.A).maxGap>RH_BREAK?`, có lần nghỉ ${rhythm(P.A).maxGap} ngày`:''}. Mẹo tớ hay dùng: chọn vài khung giờ cố định trong tuần, 1 buổi mỗi 1–2 ngày là vừa đẹp; buổi ngắn mà đều sẽ "ăn" hơn buổi dài mà ngắt quãng.</p>`;
   return `<div class="card prof"><p class="eyebrow">Lộ trình đang chỉnh theo cậu</p><h3>${P.pace==='fast'?'Tuyến nhanh':P.pace==='careful'?'Tuyến chậm mà chắc':'Tuyến giữ nhịp'}</h3>${chips}<div class="hung-say">${hungFig('sm')}<div><p>${PACE_TXT[P.pace]}</p>${extra}</div></div><p class="small muted">Hồ sơ này cập nhật sau mỗi buổi. Cậu học khác đi thì lộ trình cũng đổi theo.</p></div>`;
 }
 function phaseCard(ph,i,R,o,first){
@@ -223,7 +223,7 @@ function examCard(R){return `<details class="card ph" style="--pc:#FFD23F"><summ
 function howCard(){return `<details class="card"><summary>Trang tính thế nào</summary><div class="small">
      <p>Giờ học chuẩn theo khung Cambridge: A2 khoảng 190 giờ, B1 375, B2 550, C1 750. Mức cần của mỗi trường lấy từ điểm Anh chuyên cần để có khoảng 80% khả năng đỗ khi Toán 8, Văn 8, đổi ra giờ học bằng cùng thang với tab Chọn trường.</p>
      <p>Mỗi giờ tự học tính bằng 0,6 giờ học chuẩn, nhân hệ số tốc độ đo từ chính các buổi cậu đã làm; mỗi giờ học trên lớp ở CES tính bằng 0,8 giờ; trừ 15% thời gian cho nghỉ lễ, thi học kỳ, ốm.</p>
-     <p>Hồ sơ học cập nhật sau mỗi buổi: tỉ lệ câu đúng, tỉ lệ câu từng sai làm lại đúng, số ngày có học. Đúng nhiều và nhớ lâu thì có thêm câu thử thách và cửa ra sớm; sai hoặc quên nhiều thì có thêm chặng củng cố; học ngắt quãng thì tớ gợi ý buổi ngắn mà đều.</p>
+     <p>Hồ sơ học cập nhật sau mỗi buổi: tỉ lệ câu đúng, tỉ lệ câu từng sai làm lại đúng, nhịp học (1 buổi mỗi 1–2 ngày là đều). Đúng nhiều và nhớ lâu thì có thêm câu thử thách và cửa ra sớm; sai hoặc quên nhiều thì có thêm chặng củng cố; học ngắt quãng thì tớ gợi ý buổi ngắn mà đều.</p>
      <p>Mốc chốt trường là 1/2 năm lớp 9, hoặc một tuần trước Tết nếu Tết đến sớm hơn. Cậu vào ở giai đoạn nào thì bắt đầu từ giai đoạn đó, không học lại giai đoạn trước.</p>
      <p>Mọi con số là ước tính để định hướng, không phải cam kết, và sẽ đổi khi cậu học.</p></div></details>`}
 function vCourse(){
