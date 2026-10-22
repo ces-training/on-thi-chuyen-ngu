@@ -12,7 +12,8 @@
       "Do you know the answer?",
       "She attends the art club every Friday.",
       "This old laptop belongs to my dad."
-     ]
+     ],
+     "rule_vi": "Các câu nói về **thói quen, lịch trình, sự thật** hoặc dùng **động từ trạng thái**. Dấu hiệu: ==usually, every Friday, at 7 a.m.==, know, belong. __Mẹo: thấy know, belong là xếp vào nhóm này ngay.__"
     },
     {
      "name": "Present continuous",
@@ -22,30 +23,36 @@
       "Look! Nam is drawing on the board.",
       "My English is improving these days.",
       "Listen! The teacher is explaining the rule."
-     ]
+     ],
+     "rule_vi": "Các câu nói về việc **đang xảy ra lúc nói** hoặc **tạm thời**: am/is/are + V-ing. Dấu hiệu: ==Look!, Listen!, Be quiet!, this month, these days==. __Mẹo: tìm be + V-ing trong câu.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "My sister is revising for her history test now.",
-    "hint_vi": "Hiện tại tiếp diễn với now"
+    "hint_vi": "Hiện tại tiếp diễn với now",
+    "why_vi": "**S + is + V-ing + tân ngữ + now**: ==My sister is revising for her history test now.== __Mẹo: now thường đứng cuối câu.__"
    },
    {
     "sentence": "Our teacher often gives us a lot of homework.",
-    "hint_vi": "Hiện tại đơn với often"
+    "hint_vi": "Hiện tại đơn với often",
+    "why_vi": "Trạng từ tần suất ==often== đứng **trước động từ thường**: **Our teacher often gives us…** (give sb sth). __Nhớ: often đứng sau be nhưng trước động từ thường.__"
    },
    {
     "sentence": "I don't understand why this answer is wrong.",
-    "hint_vi": "understand là động từ trạng thái"
+    "hint_vi": "understand là động từ trạng thái",
+    "why_vi": "**I don't understand** (động từ trạng thái, thì đơn) + ==why this answer is wrong== (why + S + V). __Bẫy: trong mệnh đề why không đảo thành why is this answer.__"
    },
    {
     "sentence": "Are you having lunch in the canteen today?",
-    "hint_vi": "Câu hỏi hiện tại tiếp diễn; have lunch là hành động"
+    "hint_vi": "Câu hỏi hiện tại tiếp diễn; have lunch là hành động",
+    "why_vi": "Câu hỏi hiện tại tiếp diễn: **Are + you + V-ing…?** → ==Are you having lunch in the canteen today?== __Mẹo: today đứng cuối câu.__"
    },
    {
     "sentence": "Tuan rarely concentrates when the classroom is noisy.",
-    "hint_vi": "Hiện tại đơn với rarely"
+    "hint_vi": "Hiện tại đơn với rarely",
+    "why_vi": "Trạng từ ==rarely== đứng **trước động từ thường**: **Tuan rarely concentrates**, rồi đến mệnh đề when. __Mẹo: rarely mang nghĩa phủ định nhưng động từ vẫn thêm -s.__"
    }
   ],
   "truefalse": [
@@ -53,49 +60,49 @@
     "s": "I am knowing all the students in my class.",
     "ok": false,
     "fix": "I know all the students in my class.",
-    "why_vi": "know là động từ trạng thái, không chia -ing."
+    "why_vi": "**know** là động từ trạng thái, không chia -ing → **I know all the students**. ==am knowing== sai. __Nhớ nhóm know, like, want, need.__"
    },
    {
     "s": "Look! The teacher is coming into the room.",
     "ok": true,
     "fix": "Look! The teacher is coming into the room.",
-    "why_vi": "'Look!' báo hiệu việc đang xảy ra lúc nói → hiện tại tiếp diễn."
+    "why_vi": "==Look!== báo hiệu việc đang xảy ra lúc nói → **is coming** (hiện tại tiếp diễn) là đúng. __Mẹo: Look!, Listen! đi với V-ing.__"
    },
    {
     "s": "My brother go to the library every Sunday.",
     "ok": false,
     "fix": "My brother goes to the library every Sunday.",
-    "why_vi": "Thói quen → hiện tại đơn; chủ ngữ số ít nên go → goes."
+    "why_vi": "==every Sunday== → thói quen → hiện tại đơn; My brother số ít nên **go → goes**. __Mẹo: luôn kiểm tra chủ ngữ số ít để thêm -s/-es.__"
    },
    {
     "s": "We are studying a new topic in science this week.",
     "ok": true,
     "fix": "We are studying a new topic in science this week.",
-    "why_vi": "'this week' chỉ việc tạm thời quanh hiện tại → hiện tại tiếp diễn."
+    "why_vi": "==this week== chỉ việc tạm thời quanh hiện tại → **are studying** là đúng. __Mẹo: this week, these days → hiện tại tiếp diễn.__"
    },
    {
     "s": "She is wanting to join the English club.",
     "ok": false,
     "fix": "She wants to join the English club.",
-    "why_vi": "want là động từ trạng thái, không chia -ing."
+    "why_vi": "**want** là động từ trạng thái → **She wants**, không viết ==is wanting==. __Đừng chia -ing với want, need, like.__"
    },
    {
     "s": "The school bus leaves at 6.45 every morning.",
     "ok": true,
     "fix": "The school bus leaves at 6.45 every morning.",
-    "why_vi": "Lịch trình cố định, lặp lại mỗi sáng → hiện tại đơn."
+    "why_vi": "==leaves at 6.45 every morning== là lịch trình cố định → **hiện tại đơn leaves** là đúng. __Nhớ: giờ tàu xe chạy dùng hiện tại đơn.__"
    },
    {
     "s": "Listen! Somebody sings in the next room.",
     "ok": false,
     "fix": "Listen! Somebody is singing in the next room.",
-    "why_vi": "'Listen!' cho biết việc đang diễn ra ngay lúc nói → hiện tại tiếp diễn."
+    "why_vi": "==Listen!== → việc đang diễn ra → **is singing**, không dùng sings. __Mẹo: Listen! kéo theo be + V-ing.__"
    },
    {
     "s": "I think this exercise is too difficult for us.",
     "ok": true,
     "fix": "I think this exercise is too difficult for us.",
-    "why_vi": "think = cho rằng (nêu ý kiến) → dùng hiện tại đơn."
+    "why_vi": "==I think== ở đây nghĩa là **cho rằng** (nêu ý kiến) → **hiện tại đơn** là đúng. __Nhớ: think nghĩa “đang suy nghĩ” mới chia -ing.__"
    }
   ]
  },
@@ -116,7 +123,7 @@
       "had"
      ],
      "answer": 1,
-     "explain_vi": "'right now' → hiện tại tiếp diễn. have a party (tổ chức tiệc) là hành động nên chia -ing được."
+     "explain_vi": "==right now== → **hiện tại tiếp diễn: are having** (my neighbours số nhiều). ==have a party== là hành động nên chia -ing được. __Bẫy: has sai vì chủ ngữ số nhiều.__"
     },
     {
      "q": "My grandfather has a wide ______ of Vietnamese history, so he can answer almost any question.",
@@ -127,7 +134,7 @@
       "attendance"
      ],
      "answer": 0,
-     "explain_vi": "a wide knowledge of sth = hiểu biết rộng về điều gì."
+     "explain_vi": "Cụm ==a wide … of Vietnamese history== → **a wide knowledge of sth**: hiểu biết rộng. ==can answer almost any question== khẳng định nghĩa này. __Mẹo: học cả cụm a wide knowledge of.__"
     },
     {
      "q": "Two players ______ of the school volleyball team after they moved to another city.",
@@ -138,7 +145,7 @@
       "got on"
      ],
      "answer": 0,
-     "explain_vi": "drop out of sth = rời bỏ (đội, câu lạc bộ). Chỉ 'dropped out' đi được với 'of'."
+     "explain_vi": "Có ==of the school volleyball team== → **drop out of**: rời bỏ đội. caught up đi với with; took up, got on không hợp nghĩa. __Mẹo: nhìn giới từ sau chỗ trống để loại phương án.__"
     },
     {
      "q": "This dictionary ______ to my sister, so please ask her before you use it.",
@@ -149,7 +156,7 @@
       "are belonging"
      ],
      "answer": 0,
-     "explain_vi": "belong là động từ trạng thái, không chia -ing; chủ ngữ số ít → belongs."
+     "explain_vi": "**belong** là động từ trạng thái, không chia -ing; ==This dictionary== số ít → **belongs**. __Nhớ: belong to sb (thuộc về ai) luôn dùng thì đơn.__"
     },
     {
      "q": "What ______ of the new school uniform? Do you like it?",
@@ -160,7 +167,7 @@
       "think you"
      ],
      "answer": 0,
-     "explain_vi": "Hỏi ý kiến (think = cho rằng) → hiện tại đơn: What do you think of…?"
+     "explain_vi": "Hỏi ý kiến ==Do you like it?== → think nghĩa **cho rằng** → **What do you think of…?** (hiện tại đơn). __Bẫy: you think, think you sai vì câu hỏi cần trợ động từ do.__"
     }
    ]
   },
@@ -180,7 +187,7 @@
       "learn[[s]]"
      ],
      "answer": 0,
-     "explain_vi": "revise tận cùng bằng âm /z/ nên revises đọc /ɪz/; ba từ kia đọc /z/."
+     "explain_vi": "revise tận cùng bằng âm ==/z/== → **revises đọc /ɪz/**; attends, improves, learns đọc /z/. __Mẹo: -se đọc /z/ hoặc /s/ thì đuôi -es đọc /ɪz/.__"
     },
     {
      "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
@@ -191,7 +198,7 @@
       "student[[s]]"
      ],
      "answer": 2,
-     "explain_vi": "lesson tận cùng bằng /n/ (âm hữu thanh) nên lessons đọc /z/; tests, books, students đọc /s/."
+     "explain_vi": "lesson tận cùng bằng ==/n/== (hữu thanh) → **lessons đọc /z/**; tests, books, students tận cùng /t/, /k/ nên đọc /s/. __Mẹo: âm cuối vô thanh p, t, k, f → /s/.__"
     },
     {
      "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
@@ -202,7 +209,7 @@
       "go[[es]]"
      ],
      "answer": 3,
-     "explain_vi": "goes đọc /z/; classes, watches, boxes đọc /ɪz/ vì tận cùng bằng s, ch, x."
+     "explain_vi": "==go== tận cùng bằng nguyên âm → **goes đọc /z/**; classes, watches, boxes tận cùng s, ch, x nên đọc /ɪz/. __Bẫy: goes viết -es nhưng không đọc /ɪz/.__"
     },
     {
      "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
@@ -213,7 +220,7 @@
       "laugh[[s]]"
      ],
      "answer": 3,
-     "explain_vi": "laugh tận cùng bằng âm /f/ (viết là gh) nên laughs đọc /s/; ba từ kia tận cùng ge, ce nên đọc /ɪz/."
+     "explain_vi": "laugh tận cùng âm ==/f/== (viết gh) → **laughs đọc /s/**; changes, sentences, encourages tận cùng /dʒ/, /s/ nên đọc /ɪz/. __Nghe âm, đừng nhìn chữ: gh ở đây đọc /f/.__"
     },
     {
      "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
@@ -224,7 +231,7 @@
       "month[[s]]"
      ],
      "answer": 2,
-     "explain_vi": "club tận cùng bằng /b/ (hữu thanh) nên clubs đọc /z/; subjects, assignments, months đọc /s/."
+     "explain_vi": "club tận cùng ==/b/== (hữu thanh) → **clubs đọc /z/**; subjects, assignments, months tận cùng /t/, /θ/ nên đọc /s/. __Mẹo: th trong month là /θ/ vô thanh → /s/.__"
     }
    ]
   }
@@ -246,7 +253,7 @@
       "came"
      ],
      "answer": 1,
-     "explain_vi": "'Look!' cho biết việc đang xảy ra ngay lúc nói → hiện tại tiếp diễn: is coming. 'came' là quá khứ, không hợp với Look!"
+     "explain_vi": "==Look!== → việc đang xảy ra lúc nói → **is coming**. came là quá khứ, comes là thói quen, đều không hợp. __Mẹo: Look! đứng đầu câu gần như luôn đi với V-ing.__"
     },
     {
      "q": "We ______ English on Mondays and Thursdays.",
@@ -257,7 +264,7 @@
       "has"
      ],
      "answer": 0,
-     "explain_vi": "Lịch học lặp lại mỗi tuần (on Mondays and Thursdays) → hiện tại đơn. Chủ ngữ We nên dùng have, không thêm -s."
+     "explain_vi": "==on Mondays and Thursdays== → lịch học lặp lại → **hiện tại đơn**; chủ ngữ We → **have**. __Bẫy: has chỉ dùng với he, she, it.__"
     },
     {
      "q": "I ______ this word. What does it mean?",
@@ -268,7 +275,7 @@
       "doesn't know"
      ],
      "answer": 2,
-     "explain_vi": "know là động từ trạng thái, không chia -ing. Chủ ngữ I nên dùng don't know (doesn't chỉ dùng với he, she, it)."
+     "explain_vi": "**know** là động từ trạng thái, không chia -ing; chủ ngữ ==I== → **don't know**. __Bẫy: doesn't chỉ dùng với he, she, it.__"
     },
     {
      "q": "I read English stories every day to ______ my English.",
@@ -279,7 +286,7 @@
       "belong"
      ],
      "answer": 1,
-     "explain_vi": "improve my English = làm tiếng Anh của mình tốt hơn. concentrate cần 'on'; attend là 'tham dự'; belong là 'thuộc về'."
+     "explain_vi": "==to … my English== → làm tiếng Anh tốt hơn: **improve**. concentrate phải có on; attend là tham dự; belong là thuộc về. __Mẹo: thử đặt từng từ vào câu rồi đọc lại.__"
     },
     {
      "q": "My cousin is 15. She ______ Chu Van An High School.",
@@ -290,7 +297,7 @@
       "attends"
      ],
      "answer": 3,
-     "explain_vi": "attend + tên trường = đi học ở trường đó. 'goes' phải có 'to' (goes to); learns, studies không đi thẳng với tên trường."
+     "explain_vi": "**attend + tên trường**: đi học ở trường đó → **attends**. ==goes== phải có to (goes to); learns, studies không đi thẳng với tên trường. __Nhớ: attend không cần giới từ.__"
     }
    ]
   },
@@ -310,7 +317,7 @@
       "bag[[s]]"
      ],
      "answer": 0,
-     "explain_vi": "cat tận cùng bằng âm /t/ (vô thanh) nên cats đọc /s/. dogs, pens, bags tận cùng bằng âm hữu thanh nên đọc /z/."
+     "explain_vi": "cat tận cùng ==/t/== (vô thanh) → **cats đọc /s/**; dogs, pens, bags tận cùng âm hữu thanh nên đọc /z/. __Mẹo: đặt tay lên cổ, đọc âm cuối mà cổ không rung là âm vô thanh.__"
     },
     {
      "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
@@ -321,7 +328,7 @@
       "match[[es]]"
      ],
      "answer": 1,
-     "explain_vi": "buses, dishes, matches tận cùng bằng s, sh, ch nên đuôi đọc /ɪz/ (thêm một âm tiết). plays chỉ đọc /z/."
+     "explain_vi": "buses, dishes, matches tận cùng ==s, sh, ch== → đọc /ɪz/; **plays chỉ đọc /z/**. __Mẹo: đuôi /ɪz/ làm từ dài thêm một âm tiết, đọc to là nghe ra.__"
     },
     {
      "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
@@ -332,7 +339,7 @@
       "cup[[s]]"
      ],
      "answer": 2,
-     "explain_vi": "desks, maps, cups tận cùng bằng /k/, /p/ nên đọc /s/. chair tận cùng bằng nguyên âm nên chairs đọc /z/."
+     "explain_vi": "desks, maps, cups tận cùng ==/k/, /p/== → /s/; chair tận cùng nguyên âm → **chairs đọc /z/**. __Mẹo: tận cùng bằng nguyên âm thì đọc /z/.__"
     },
     {
      "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
@@ -343,7 +350,7 @@
       "sing[[s]]"
      ],
      "answer": 1,
-     "explain_vi": "wash tận cùng bằng sh /ʃ/ nên washes đọc /ɪz/. reads, swims, sings đọc /z/."
+     "explain_vi": "wash tận cùng ==sh /ʃ/== → **washes đọc /ɪz/**; reads, swims, sings đọc /z/. __Nhớ nhóm s, x, sh, ch, ge → /ɪz/.__"
     },
     {
      "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
@@ -354,7 +361,7 @@
       "get[[s]]"
      ],
      "answer": 2,
-     "explain_vi": "run tận cùng bằng /n/ (hữu thanh) nên runs đọc /z/. helps, likes, gets tận cùng bằng /p/, /k/, /t/ nên đọc /s/."
+     "explain_vi": "run tận cùng ==/n/== (hữu thanh) → **runs đọc /z/**; helps, likes, gets tận cùng /p/, /k/, /t/ nên đọc /s/. __Mẹo: tìm từ lạc nhóm bằng âm cuối của từ gốc.__"
     }
    ]
   }
@@ -376,7 +383,7 @@
       "was seeing"
      ],
      "answer": 0,
-     "explain_vi": "see ở đây nghĩa là 'hiểu' (I see what you mean) – nghĩa trạng thái nên không chia tiếp diễn."
+     "explain_vi": "==I … what you mean== → **see** nghĩa là **hiểu** (nghĩa trạng thái) → dùng thì đơn: **see**. __Bẫy: am seeing nghĩa là đang gặp ai, không hợp ở đây.__"
     },
     {
      "q": "At the moment, my friends and I ______ of setting up a study group for the final exams.",
@@ -387,7 +394,7 @@
       "thought"
      ],
      "answer": 1,
-     "explain_vi": "think of + V-ing = đang cân nhắc → nghĩa hành động nên chia -ing được; 'At the moment' → hiện tại tiếp diễn."
+     "explain_vi": "==At the moment== + ==think of + V-ing== (đang cân nhắc, nghĩa hành động) → **are thinking**. __Nhớ: think nghĩa “cho rằng” dùng thì đơn, nghĩa “đang cân nhắc” mới chia -ing.__"
     },
     {
      "q": "Students who don't ______ attention in class often struggle to keep up later.",
@@ -398,7 +405,7 @@
       "draw"
      ],
      "answer": 2,
-     "explain_vi": "Cụm cố định: pay attention (to) = chú ý. give, take không đi với attention theo nghĩa này; draw attention = thu hút sự chú ý."
+     "explain_vi": "Cụm cố định **pay attention (to)**: chú ý → ==don't … attention in class==. draw attention là thu hút sự chú ý; give, take không hợp. __Mẹo: học cụm theo cặp động từ + danh từ.__"
     },
     {
      "q": "Because of money problems, a few students ______ before they reached grade 9.",
@@ -409,7 +416,7 @@
       "dropped out"
      ],
      "answer": 3,
-     "explain_vi": "drop out = bỏ học giữa chừng. turned out = hoá ra, gave in = chịu thua, broke down = hỏng hoặc suy sụp."
+     "explain_vi": "==Because of money problems== → học sinh **bỏ học giữa chừng: dropped out**. turned out (hoá ra), gave in (chịu thua), broke down (hỏng) sai nghĩa. __Mẹo: dùng nguyên nhân trong câu để chọn nghĩa.__"
     },
     {
      "q": "My grandfather is extremely ______ about birds and plants, so we often ask him questions on our walks.",
@@ -420,7 +427,7 @@
       "acknowledged"
      ],
      "answer": 1,
-     "explain_vi": "knowledgeable about sth = hiểu biết nhiều về. known (được biết đến), knowing (ra vẻ biết), acknowledged (được công nhận) sai nghĩa."
+     "explain_vi": "Sau ==extremely== cần **tính từ**, lại có ==about birds and plants== → **knowledgeable about**: hiểu biết nhiều về. known, knowing, acknowledged sai nghĩa. __Mẹo: vế sau (we often ask him questions) xác nhận nghĩa hiểu biết.__"
     }
    ]
   },
@@ -440,7 +447,7 @@
       "achieve[[s]]"
      ],
      "answer": 3,
-     "explain_vi": "achieve tận cùng bằng /v/ (hữu thanh) nên achieves đọc /z/. paragraphs (ph = /f/), techniques (que = /k/), attempts đọc /s/."
+     "explain_vi": "achieve tận cùng ==/v/== (hữu thanh) → **achieves đọc /z/**; paragraphs (ph đọc /f/), techniques (que đọc /k/), attempts đọc /s/. __Nghĩ tới âm cuối, đừng nhìn chữ cái cuối.__"
     },
     {
      "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
@@ -451,7 +458,7 @@
       "relax[[es]]"
      ],
      "answer": 2,
-     "explain_vi": "breathe tận cùng bằng /ð/, chữ e câm, nên breathes chỉ đọc /z/. bridges, practises, relaxes đọc /ɪz/."
+     "explain_vi": "breathe tận cùng ==/ð/==, e câm → **breathes đọc /z/**; bridges, practises, relaxes tận cùng /dʒ/, /s/, /ks/ nên đọc /ɪz/. __Bẫy: breath (danh từ) khác breathe (động từ).__"
     },
     {
      "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
@@ -462,7 +469,7 @@
       "cliff[[s]]"
      ],
      "answer": 1,
-     "explain_vi": "shelf → shelves: f đổi thành v (hữu thanh) nên đuôi đọc /z/. chefs, beliefs, cliffs vẫn tận cùng /f/ nên đọc /s/."
+     "explain_vi": "shelf → shelves: ==f đổi thành v== (hữu thanh) → **shelves đọc /z/**; chefs, beliefs, cliffs giữ /f/ nên đọc /s/. __Nhớ: f đổi thành ves thì đuôi đọc /z/.__"
     },
     {
      "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
@@ -473,7 +480,7 @@
       "photograph[[s]]"
      ],
      "answer": 2,
-     "explain_vi": "weigh có gh câm, tận cùng bằng nguyên âm /eɪ/ nên weighs đọc /z/. coughs, graphs, photographs: gh, ph đọc /f/ nên đuôi là /s/."
+     "explain_vi": "weigh có ==gh câm==, tận cùng nguyên âm /eɪ/ → **weighs đọc /z/**; coughs, graphs, photographs có gh, ph đọc /f/ nên đọc /s/. __Mẹo: gh lúc câm, lúc đọc /f/, phải nhớ từng từ.__"
     },
     {
      "q": "Chọn từ có phần gạch chân phát âm khác các từ còn lại.",
@@ -484,7 +491,7 @@
       "rescu[[es]]"
      ],
      "answer": 0,
-     "explain_vi": "advise tận cùng bằng /z/ nên advises đọc /ɪz/. argues, continues, rescues tận cùng nguyên âm /uː/ nên chỉ đọc /z/."
+     "explain_vi": "advise tận cùng ==/z/== → **advises đọc /ɪz/**; argues, continues, rescues tận cùng /uː/ nên chỉ đọc /z/. __Bẫy: -ues không thêm âm tiết, còn -ses thì thêm.__"
     }
    ]
   }
@@ -497,13 +504,15 @@
     "id": "d1H1",
     "q": "Many students found the news that the entrance exam would be harder very ______. (COURAGE)",
     "answer": "discouraging",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Tin đề thi khó hơn làm học sinh **nản**; sau ==very== cần **tính từ** chỉ tính chất sự việc: courage → **discouraging**. __Mẹo: đổi 2 lần: thêm tiền tố dis- và đuôi -ing.__"
    },
    {
     "id": "d1H2",
     "q": "Visiting the science museum was a highly ______ experience for the whole class. (EDUCATE)",
     "answer": "educational",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Sau ==a highly== và trước ==experience== cần **tính từ**: educate → education → **educational** (mang tính giáo dục). __Mẹo: trạng từ + chỗ trống + danh từ → tính từ.__"
    },
    {
     "id": "d1H3",
@@ -511,7 +520,8 @@
     "answer": "concentrating when the room is noisy",
     "accept": [
      "in concentrating when the room is noisy"
-    ]
+    ],
+    "explain_vi": "**have difficulty (in) + V-ing**: gặp khó khăn khi làm gì → ==I have difficulty concentrating when the room is noisy.== __Nhớ: sau difficulty dùng V-ing, không dùng to V.__"
    },
    {
     "id": "d1H4",
@@ -519,7 +529,8 @@
     "answer": "think of the new curriculum",
     "accept": [
      "think about the new curriculum"
-    ]
+    ],
+    "explain_vi": "==What's your opinion of…?== tương đương **What do you think of…?** → **think of the new curriculum**. __Mẹo: opinion of đổi thành think of hoặc think about, giữ nguyên phần còn lại.__"
    },
    {
     "id": "d1H5",
@@ -531,7 +542,8 @@
      "keep up with"
     ],
     "answer": "C",
-    "accept": []
+    "accept": [],
+    "explain_vi": "**come up with**: nghĩ ra → ==come up with our own ideas== → **C**. catch up with là bắt kịp, put up with là chịu đựng, keep up with là theo kịp. __Mẹo: ideas hay đi với come up with.__"
    },
    {
     "id": "d1H6",
@@ -543,7 +555,8 @@
      "with heart"
     ],
     "answer": "B",
-    "accept": []
+    "accept": [],
+    "explain_vi": "**learn by heart**: học thuộc lòng → ==learn the whole poem by heart== → **B**. in mind, at heart, with heart không đi với learn theo nghĩa này. __Nhớ cụm learn sth by heart.__"
    }
   ]
  },
@@ -662,7 +675,7 @@
        "He is going to the computer room."
       ],
       "answer": 1,
-      "explain_vi": "Tom nói: 'I'm looking for the library right now.'"
+      "explain_vi": "Tom nói: ==“I'm looking for the library right now.”== → **He is looking for the library.** __Mẹo: câu hỏi có right now thì nghe chỗ có V-ing.__"
      },
      {
       "q": "Where is the library?",
@@ -673,7 +686,7 @@
        "On the third floor"
       ],
       "answer": 3,
-      "explain_vi": "Linh nói: 'The library is on the third floor, next to the computer room.'"
+      "explain_vi": "Linh nói: ==“The library is on the third floor”== → **On the third floor**. __Chú ý số thứ tự: third là thứ ba.__"
      },
      {
       "q": "Why does Linh like going to the library?",
@@ -684,7 +697,7 @@
        "It opens early."
       ],
       "answer": 0,
-      "explain_vi": "Linh nói: 'It's very quiet, so I can concentrate.'"
+      "explain_vi": "==“It's very quiet, so I can concentrate.”== → Linh thích vì **It is quiet there.** __Mẹo: nghe từ so, because để bắt lý do.__"
      },
      {
       "q": "What time does school start?",
@@ -695,7 +708,7 @@
        "At half past seven"
       ],
       "answer": 2,
-      "explain_vi": "Linh nói: 'It starts at seven o'clock.' Quarter to seven là giờ học sinh đến."
+      "explain_vi": "Linh nói: ==“It starts at seven o'clock.”== → **At seven o'clock**. __Bẫy: a quarter to seven là giờ học sinh đến, không phải giờ vào học.__"
      },
      {
       "q": "What will Tom do on Friday?",
@@ -706,7 +719,7 @@
        "Do a history test"
       ],
       "answer": 1,
-      "explain_vi": "Linh giới thiệu câu lạc bộ tiếng Việt chiều thứ Sáu, Tom nói: 'I'll go on Friday.'"
+      "explain_vi": "Linh nhắc câu lạc bộ tiếng Việt chiều thứ Sáu, Tom đáp ==“I'll go on Friday.”== → **Go to a Vietnamese club**. __Mẹo: đáp án thường nằm ở câu trả lời của người được hỏi.__"
      }
     ]
    },
@@ -722,7 +735,7 @@
        "Thursdays",
        "on Thursday"
       ],
-      "explain_vi": "Cô nói: 'The classes are on Thursday afternoons.'"
+      "explain_vi": "Cô nói: ==“The classes are on Thursday afternoons.”== → **Thursday**. __Nhớ viết hoa tên thứ.__"
      },
      {
       "answer": "15",
@@ -730,14 +743,14 @@
        "fifteen",
        "room 15"
       ],
-      "explain_vi": "Cô nói: 'We are meeting in Room 15, on the first floor.'"
+      "explain_vi": "==“We are meeting in Room 15, on the first floor.”== → **15**. __Bẫy: first floor là tầng, đừng nhầm với số phòng.__"
      },
      {
       "answer": "dictionary",
       "accept": [
        "a dictionary"
       ],
-      "explain_vi": "Cô nói: 'Please bring your workbook and a dictionary.'"
+      "explain_vi": "==“Please bring your workbook and a dictionary.”== → **dictionary**. __Mẹo: workbook đã có sẵn trong đề, chỉ điền từ còn thiếu.__"
      },
      {
       "answer": "emails",
@@ -745,14 +758,14 @@
        "email",
        "an email"
       ],
-      "explain_vi": "Cô nói: 'In the first class, we are going to practise writing emails.'"
+      "explain_vi": "==“we are going to practise writing emails”== → **emails**. __Kiểm tra chính tả trước khi nộp.__"
      },
      {
       "answer": "20",
       "accept": [
        "twenty"
       ],
-      "explain_vi": "Cô nói: 'there are only 20 places.'"
+      "explain_vi": "==“there are only 20 places”== → **20**. __Mẹo: viết bằng chữ số cho nhanh, đỡ sai chính tả.__"
      }
     ]
    }
@@ -831,7 +844,7 @@
        "He forgot to do his homework."
       ],
       "answer": 2,
-      "explain_vi": "Nam nói: 'I was ill for a whole week, so I really need to catch up.'"
+      "explain_vi": "Nam nói: ==“I was ill for a whole week, so I really need to catch up.”== → **He missed a week because he was sick.** __Mẹo: ill và sick cùng nghĩa, đề hay đổi sang từ đồng nghĩa.__"
      },
      {
       "q": "When must students hand in the maths assignment?",
@@ -842,7 +855,7 @@
        "On Wednesday"
       ],
       "answer": 1,
-      "explain_vi": "Mai nói Thursday rồi sửa lại: 'It's due on Friday now.' Monday là ngày thầy giao bài."
+      "explain_vi": "Mai nói Thursday rồi sửa: ==“It's due on Friday now.”== → **On Friday**. __Cẩn thận chỗ người nói sửa lại; Monday là ngày thầy giao bài.__"
      },
      {
       "q": "What is Miss Anna asking the class to do this month?",
@@ -853,7 +866,7 @@
        "Borrow books from the library"
       ],
       "answer": 2,
-      "explain_vi": "'she's asking us to keep a reading diary instead. You write a few lines about your book every evening.'"
+      "explain_vi": "==“You write a few lines about your book every evening.”== → **Write about their reading every day**. __Bẫy: test every Monday là việc cũ, tháng này không còn.__"
      },
      {
       "q": "Where will most of the revision classes take place?",
@@ -864,7 +877,7 @@
        "In Mr Brown's classroom"
       ],
       "answer": 0,
-      "explain_vi": "'the first one is in the library, but after that, it's in Room 20' → các buổi sau ở phòng 20."
+      "explain_vi": "==“the first one is in the library, but after that, it's in Room 20”== → phần lớn các buổi ở **Room 20**. __Chú ý chữ most trong câu hỏi.__"
      },
      {
       "q": "What is Nam going to do after school?",
@@ -875,7 +888,7 @@
        "Speak to his football coach"
       ],
       "answer": 3,
-      "explain_vi": "Mai gợi ý hỏi huấn luyện viên; Nam nói: 'I'll talk to him after school.'"
+      "explain_vi": "Mai gợi ý hỏi huấn luyện viên, Nam nói ==“I'll talk to him after school.”== → **Speak to his football coach**. __Mẹo: xem đại từ him thay cho ai.__"
      }
     ]
    },
@@ -891,14 +904,14 @@
        "4th",
        "4"
       ],
-      "explain_vi": "Cô nói 'third floor' rồi sửa: 'it's on the fourth floor'."
+      "explain_vi": "Cô nói third rồi sửa: ==“it's on the fourth floor”== → **fourth**. __Luôn nghe hết câu vì người nói hay đính chính.__"
      },
      {
       "answer": "5",
       "accept": [
        "five"
       ],
-      "explain_vi": "'borrow five books at a time instead of three' → 5, không phải 3."
+      "explain_vi": "==“borrow five books at a time instead of three”== → **5**. __Bẫy: three là số cũ; instead of đánh dấu thông tin bị thay.__"
      },
      {
       "answer": "front desk",
@@ -906,21 +919,21 @@
        "desk",
        "the front desk"
       ],
-      "explain_vi": "'Just ask at the front desk and show your student card.'"
+      "explain_vi": "==“Just ask at the front desk”== → **front desk**. __Mẹo: sau the thường là danh từ hoặc cụm danh từ.__"
      },
      {
       "answer": "notes",
       "accept": [
        "note"
       ],
-      "explain_vi": "'a free workshop on how to take good notes'."
+      "explain_vi": "==“a free workshop on how to take good notes”== → **notes**. __Nhớ cụm take notes: ghi chép.__"
      },
      {
       "answer": "Saturday",
       "accept": [
        "Saturdays"
       ],
-      "explain_vi": "'So on Saturday morning, I'm running a free workshop'. Thursday là hạn đăng ký."
+      "explain_vi": "==“So on Saturday morning, I'm running a free workshop”== → **Saturday**. __Bẫy: Thursday là hạn đăng ký.__"
      }
     ]
    }
@@ -1003,7 +1016,7 @@
        "It would make her give up the drama club."
       ],
       "answer": 1,
-      "explain_vi": "Linh nói trung tâm học 'the same curriculum as my school' và kết thúc lúc chín giờ tối nên 'no energy left'."
+      "explain_vi": "Linh nói trung tâm học ==“the same curriculum as my school”== và học đến chín giờ tối nên ==“no energy left”== → **ít điều mới và làm em quá mệt**. __Mẹo: đáp án đúng thường diễn đạt lại bằng từ khác.__"
      },
      {
       "q": "How does Nam first react to the idea of a study group?",
@@ -1014,7 +1027,7 @@
        "He says Linh's mum will never agree."
       ],
       "answer": 0,
-      "explain_vi": "Nam hỏi 'can you really concentrate…?' và kể nhóm của anh 'spent most of the time chatting' → nghi ngờ."
+      "explain_vi": "Nam hỏi ==“can you really concentrate…?”== và kể nhóm của anh ==“spent most of the time chatting”== → **nghi ngờ các bạn sẽ không tập trung**. __Chú ý giọng nghi ngờ của người nói.__"
      },
      {
       "q": "Which rule has the study group agreed on?",
@@ -1025,7 +1038,7 @@
        "They meet every evening."
       ],
       "answer": 2,
-      "explain_vi": "'Phones stay in our bags' → không dùng điện thoại. Nghỉ mỗi 45 phút, gặp hai lần mỗi tuần."
+      "explain_vi": "==“Phones stay in our bags”== → **Nobody uses a phone during sessions.** __Bẫy: nghỉ mỗi 45 phút chứ không phải nửa tiếng; gặp hai lần mỗi tuần.__"
      },
      {
       "q": "Why has Linh decided to stay in the drama club?",
@@ -1036,7 +1049,7 @@
        "It will help her feel confident in the speaking test."
       ],
       "answer": 3,
-      "explain_vi": "Cô giáo nói 'performing builds confidence, and I'll need plenty of that for the speaking test'."
+      "explain_vi": "==“performing builds confidence, and I'll need plenty of that for the speaking test”== → **giúp em tự tin khi thi nói**. __Bẫy: người thuyết phục là cô giáo, không phải mẹ.__"
      },
      {
       "q": "What does Nam suggest?",
@@ -1047,7 +1060,7 @@
        "Asking her teacher to choose for her"
       ],
       "answer": 1,
-      "explain_vi": "'Try the study group for a month. If your practice test results don't improve, then go to the centre.'"
+      "explain_vi": "==“Try the study group for a month. If your practice test results don't improve, then go to the centre.”== → **thử nhóm học và đánh giá bằng kết quả**. __Mẹo: chú ý câu sau here's my suggestion.__"
      }
     ]
    },
@@ -1060,14 +1073,14 @@
      {
       "answer": "Singapore",
       "accept": [],
-      "explain_vi": "Trước đây là Malaysia, 'but this year we're working with a school in Singapore'."
+      "explain_vi": "Trước đây là Malaysia, ==“but this year we're working with a school in Singapore”== → **Singapore**. __Mẹo: thông tin sau but thường là đáp án.__"
      },
      {
       "answer": "2",
       "accept": [
        "two"
       ],
-      "explain_vi": "'used to last three weeks… so it's now two weeks'."
+      "explain_vi": "==“used to last three weeks… so it's now two weeks”== → **2**. __Bẫy: used to chỉ điều trước kia, nay không còn đúng.__"
      },
      {
       "answer": "host family",
@@ -1076,19 +1089,19 @@
        "a host family",
        "family"
       ],
-      "explain_vi": "'you won't be staying in a hotel. Instead, each of you will live with a host family'."
+      "explain_vi": "==“Instead, each of you will live with a host family”== → **host family**. __Mẹo: instead báo hiệu thông tin đúng thay cho hotel.__"
      },
      {
       "answer": "12",
       "accept": [
        "twelve"
       ],
-      "explain_vi": "'only 12 places, compared with 15 last year' → năm nay 12."
+      "explain_vi": "==“only 12 places, compared with 15 last year”== → **12**. __Bẫy: 15 là số năm ngoái, đề hỏi năm nay.__"
      },
      {
       "answer": "encouraged",
       "accept": [],
-      "explain_vi": "Không phải môn học yêu thích: 'It's about a person who has encouraged you to learn.'"
+      "explain_vi": "Không phải môn học yêu thích: ==“It's about a person who has encouraged you to learn.”== → **encouraged**. __Mẹo: nghe tiếp sau Actually, đó là thông tin đúng.__"
      }
     ]
    }

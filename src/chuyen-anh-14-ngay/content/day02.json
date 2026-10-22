@@ -159,37 +159,43 @@
      "id": "d2A1",
      "q": "Many people go to the park at the weekend for ______ activities like cycling and kite flying.",
      "answer": "leisure",
-     "tag": "d2v1"
+     "tag": "d2v1",
+     "explain_vi": "Trước danh từ ==activities== cần từ bổ nghĩa; cycling, kite flying là hoạt động **giải trí: leisure**. __Mẹo: leisure activities, leisure time là cụm hay gặp.__"
     },
     {
      "id": "d2A2",
      "q": "My little brother loves stamps. He has ______ more than 300 of them!",
      "answer": "collected",
-     "tag": "d2v2"
+     "tag": "d2v2",
+     "explain_vi": "Sau ==He has== cần **quá khứ phân từ** → **collected** (sưu tầm). ==loves stamps== gợi ý sưu tầm tem. __Nhớ đổi dạng từ: has + V-ed.__"
     },
     {
      "id": "d2A3",
      "q": "The new members of the drama club are really ______ about the show. They want to practise every day.",
      "answer": "enthusiastic",
-     "tag": "d2v3"
+     "tag": "d2v3",
+     "explain_vi": "Sau ==really== cần **tính từ**; ==want to practise every day== → rất **hào hứng: enthusiastic**. __Mẹo: be enthusiastic about sth.__"
     },
     {
      "id": "d2A4",
      "q": "Learning to swim at the age of 40 was a big ______ for my aunt, but she did it.",
      "answer": "challenge",
-     "tag": "d2v5"
+     "tag": "d2v5",
+     "explain_vi": "==a big== + danh từ; học bơi ở tuổi 40 là việc khó → **challenge** (thử thách). __Mẹo: but she did it cho thấy đó là việc khó nhưng đã vượt qua.__"
     },
     {
      "id": "d2A5",
      "q": "After a long day at school, I usually ______ by reading comics on the sofa.",
      "answer": "relax",
-     "tag": "d2v7"
+     "tag": "d2v7",
+     "explain_vi": "==After a long day at school== em **thư giãn: relax**; sau ==usually== với chủ ngữ I giữ **nguyên mẫu**. __Mẹo: relax by doing sth là thư giãn bằng cách làm gì.__"
     },
     {
      "id": "d2A6",
      "q": "Your ______ card lets you borrow up to five books from the library at a time.",
      "answer": "membership",
-     "tag": "d2v8"
+     "tag": "d2v8",
+     "explain_vi": "Trước danh từ ==card== cần danh từ ghép: **membership card** (thẻ thành viên). __Mẹo: borrow books from the library gợi ý thẻ thành viên thư viện.__"
     }
    ]
   },
@@ -200,31 +206,36 @@
      "id": "d2B1",
      "q": "I ______ (watch) a cartoon when my mum called me for dinner.",
      "answer": "was watching",
-     "tag": "d2g"
+     "tag": "d2g",
+     "explain_vi": "==when my mum called== là việc ngắn xen vào → việc đang diễn ra dùng **quá khứ tiếp diễn: was watching**. __Mẹo: S + was/were V-ing + when + quá khứ đơn.__"
     },
     {
      "id": "d2B2",
      "q": "Yesterday Hoa ______ (buy) a new sketchbook for her art class.",
      "answer": "bought",
-     "tag": "d2g"
+     "tag": "d2g",
+     "explain_vi": "==Yesterday== → **quá khứ đơn**; buy là động từ bất quy tắc → **bought**. __Nhớ: buy – bought – bought.__"
     },
     {
      "id": "d2B3",
      "q": "At 9 o'clock last night, my brothers ______ (play) chess in the living room.",
      "answer": "were playing",
-     "tag": "d2g"
+     "tag": "d2g",
+     "explain_vi": "==At 9 o'clock last night== (thời điểm cụ thể trong quá khứ) → **quá khứ tiếp diễn**; my brothers số nhiều → **were playing**. __Mẹo: at + giờ + last night → was/were V-ing.__"
     },
     {
      "id": "d2B4",
      "q": "While we ______ (walk) home, it started to rain heavily.",
      "answer": "were walking",
-     "tag": "d2g"
+     "tag": "d2g",
+     "explain_vi": "==While== + việc đang diễn ra, ==it started to rain== là việc xen vào → **were walking** (chủ ngữ we). __Mẹo: while thường đi với quá khứ tiếp diễn.__"
     },
     {
      "id": "d2B5",
      "q": "My dad ______ (use to / play) the guitar in a band, but he stopped when I was born.",
      "answer": "used to play",
-     "tag": "d2g"
+     "tag": "d2g",
+     "explain_vi": "Thói quen trong quá khứ nay đã dừng: ==but he stopped== → **used to play**. __Nhớ: used to + V nguyên mẫu.__"
     },
     {
      "id": "d2B6",
@@ -233,7 +244,8 @@
      "accept": [
       "did not use to like"
      ],
-     "tag": "d2g"
+     "tag": "d2g",
+     "explain_vi": "Phủ định của used to: **didn't use to + V** → **didn't use to like**; ==but now he reads== cho thấy đã thay đổi. __Bẫy: sau didn't viết use, không có -d.__"
     }
    ]
   },
@@ -244,25 +256,29 @@
      "id": "d2C1",
      "q": "This website is very ______. It has lots of tips for beginners who want to draw. (USE)",
      "answer": "useful",
-     "tag": "d2w"
+     "tag": "d2w",
+     "explain_vi": "Sau ==very== cần **tính từ**; trang web có ==lots of tips== → **useful** (hữu ích). __Mẹo: -ful nghĩa là “có nhiều”.__"
     },
     {
      "id": "d2C2",
      "q": "Be ______ with those scissors! They are very sharp. (CARE)",
      "answer": "careful",
-     "tag": "d2w"
+     "tag": "d2w",
+     "explain_vi": "Sau ==Be== cần **tính từ**; kéo ==very sharp== → phải **careful** (cẩn thận). __Mẹo: Be careful! là câu cảnh báo quen thuộc.__"
     },
     {
      "id": "d2C3",
      "q": "I tried to fix the old kite, but it was ______. It was broken in too many places. (HOPE)",
      "answer": "hopeless",
-     "tag": "d2w"
+     "tag": "d2w",
+     "explain_vi": "==broken in too many places== → không còn hy vọng sửa được → **hopeless**. __Mẹo: kết quả xấu, bế tắc → nghĩ tới đuôi -less.__"
     },
     {
      "id": "d2C4",
      "q": "We saw a ______ sunset from the top of the hill. (BEAUTY)",
      "answer": "beautiful",
-     "tag": "d2w"
+     "tag": "d2w",
+     "explain_vi": "Giữa ==a== và danh từ ==sunset== cần **tính từ**: beauty → **beautiful** (y đổi thành i). __Nhớ chính tả: beautiful, không viết beautyful.__"
     }
    ]
   },
@@ -280,7 +296,8 @@
       "good at"
      ],
      "answer": "B",
-     "tag": "fmt:synonym"
+     "tag": "fmt:synonym",
+     "explain_vi": "**keen on ≈ interested in** (thích, quan tâm) → **B**. ==since she was five== cho thấy sở thích lâu dài; tired of, afraid of sai nghĩa. __Mẹo: học từ đồng nghĩa theo cặp.__"
     },
     {
      "id": "d2D2",
@@ -292,7 +309,8 @@
       "sell"
      ],
      "answer": "A",
-     "tag": "fmt:synonym"
+     "tag": "fmt:synonym",
+     "explain_vi": "**take up ≈ start** (bắt đầu một sở thích) → **A**. ==after she retired== bà có thời gian bắt đầu việc mới. __Bẫy: stop là nghĩa của give up.__"
     },
     {
      "id": "d2D3",
@@ -304,7 +322,8 @@
       "short"
      ],
      "answer": "C",
-     "tag": "fmt:synonym"
+     "tag": "fmt:synonym",
+     "explain_vi": "**spare time ≈ free time** → **C. free**. ==during the exam season== em bận nên ít thời gian rảnh. __Bẫy: busy là nghĩa ngược lại.__"
     },
     {
      "id": "d2D4",
@@ -316,7 +335,8 @@
       "excited"
      ],
      "answer": "D",
-     "tag": "fmt:synonym"
+     "tag": "fmt:synonym",
+     "explain_vi": "**enthusiastic ≈ excited** (hào hứng) → **D**. ==about the new robot club== nói về cảm xúc với điều mới. __Mẹo: loại bored, worried vì mang nghĩa tiêu cực.__"
     }
    ]
   },
@@ -330,14 +350,16 @@
      "kind": "tfng",
      "q": "The writer found the box while cleaning Grandpa's room.",
      "answer": "True",
-     "tag": "d2r"
+     "tag": "d2r",
+     "explain_vi": "Bài viết: ==I was helping him clean his room when I found the box under his bed.== → **True**. __Mẹo: câu hỏi diễn đạt lại ý bằng while cleaning.__"
     },
     {
      "id": "d2E2",
      "kind": "tfng",
      "q": "Grandpa's favourite stamps are the ones with pictures of birds.",
      "answer": "Not Given",
-     "tag": "d2r"
+     "tag": "d2r",
+     "explain_vi": "Bài chỉ nói ==Some had pictures of birds and flowers==, không nói ông thích tem nào nhất → **Not Given**. __Mẹo: từ favourite không có trong bài → nghĩ tới Not Given.__"
     },
     {
      "id": "d2E3",
@@ -350,7 +372,8 @@
       "His letters stopped arriving."
      ],
      "answer": "B",
-     "tag": "d2r"
+     "tag": "d2r",
+     "explain_vi": "==he gave up his hobby when he started work because he was too busy== → **B**: không còn thời gian rảnh. __Mẹo: too busy ứng với had no free time.__"
     },
     {
      "id": "d2E4",
@@ -363,7 +386,8 @@
       "visit forty countries"
      ],
      "answer": "C",
-     "tag": "d2r"
+     "tag": "d2r",
+     "explain_vi": "==I have even decided to take up stamp collecting myself== → **C**: tự bắt đầu bộ sưu tầm tem. __Mẹo: decided to, hope cho biết dự định.__"
     }
    ]
   },
@@ -387,7 +411,8 @@
      "q": "I can't ______ on my homework when my brother is playing loud music. (Gợi ý: c__________)",
      "answer": "concentrate",
      "from_day": 1,
-     "tag": "d1v4"
+     "tag": "d1v4",
+     "explain_vi": "==can't … on my homework== → **concentrate on**: tập trung vào; khớp với gợi ý chữ c. __Ôn buổi 1: concentrate on sth.__"
     },
     {
      "id": "d2G2",
@@ -397,21 +422,24 @@
       "'s sleeping"
      ],
      "from_day": 1,
-     "tag": "d1g"
+     "tag": "d1g",
+     "explain_vi": "==Be quiet, please!== → em bé **đang ngủ** → **is sleeping**. __Mẹo: câu nhắc giữ im lặng báo hiệu hiện tại tiếp diễn.__"
     },
     {
      "id": "d2G3",
      "q": "Our teacher gave us a clear ______ of the new grammar rule. (EXPLAIN)",
      "answer": "explanation",
      "from_day": 1,
-     "tag": "d1w"
+     "tag": "d1w",
+     "explain_vi": "Sau ==a clear== cần **danh từ**: explain → **explanation**. __Nhớ chính tả: explanation, không viết explaination.__"
     },
     {
      "id": "d2G4",
      "q": "He ______ out of the football team because he hurt his leg. (Gợi ý: một động từ ở quá khứ)",
      "answer": "dropped",
      "from_day": 1,
-     "tag": "d1p2"
+     "tag": "d1p2",
+     "explain_vi": "==out of the football team== + ==hurt his leg== (quá khứ) → **drop out of** chia quá khứ: **dropped** (nhân đôi p). __Nhớ: drop → dropped.__"
     }
    ]
   }
@@ -429,7 +457,7 @@
     "enthusiasm"
    ],
    "answer": 1,
-   "explain_vi": "creative = sáng tạo, là tính từ đứng sau 'a very' và trước danh từ 'girl'.",
+   "explain_vi": "Sau ==a very== và trước danh từ ==girl== cần **tính từ** → **creative** (sáng tạo). leisure, enthusiasm là danh từ; spare (rảnh) sai nghĩa. __Mẹo: making things with paper and paint gợi ý sáng tạo.__",
    "tag": "d2v6"
   },
   {
@@ -438,7 +466,7 @@
    "skill": "vocab",
    "q": "If you have some s______ time this weekend, let's go cycling together. (Viết cả từ)",
    "answer": "spare",
-   "explain_vi": "spare time = thời gian rảnh.",
+   "explain_vi": "Cụm **spare time**: thời gian rảnh → ==some spare time this weekend==. __Mẹo: chữ cái gợi ý s + time → nghĩ ngay tới spare.__",
    "tag": "d2v4"
   },
   {
@@ -453,7 +481,7 @@
     "give up"
    ],
    "answer": 3,
-   "explain_vi": "give up = bỏ cuộc, từ bỏ.",
+   "explain_vi": "==hard, but you shouldn't … after only one week== → đừng **bỏ cuộc: give up**. take up là bắt đầu, look up là tra cứu. __Mẹo: but báo hiệu ý ngược với hard.__",
    "tag": "d2p2"
   },
   {
@@ -468,7 +496,7 @@
     "is riding"
    ],
    "answer": 1,
-   "explain_vi": "Hành động đang diễn ra (was riding) thì có hành động khác xen vào (saw).",
+   "explain_vi": "==when she saw a cat== là việc ngắn xen vào → việc đang diễn ra dùng **quá khứ tiếp diễn: was riding**. __Mẹo: when + quá khứ đơn xen vào việc đang diễn ra.__",
    "tag": "d2g"
   },
   {
@@ -477,7 +505,7 @@
    "skill": "grammar",
    "q": "When I was little, I ______ (use to / be) afraid of the dark. (Viết 3 từ)",
    "answer": "used to be",
-   "explain_vi": "used to + V nguyên mẫu: trạng thái trong quá khứ, nay không còn nữa.",
+   "explain_vi": "==When I was little== + trạng thái cũ nay không còn → **used to + V nguyên mẫu: used to be**. __Nhớ: câu khẳng định viết used (có -d).__",
    "tag": "d2g"
   },
   {
@@ -492,7 +520,7 @@
     "were"
    ],
    "answer": 3,
-   "explain_vi": "Thời điểm cụ thể trong quá khứ → quá khứ tiếp diễn; chủ ngữ 'you' đi với were.",
+   "explain_vi": "==at 7 p.m. last Saturday== (thời điểm cụ thể trong quá khứ) + ==doing== → **quá khứ tiếp diễn**; chủ ngữ you → **were**. __Bẫy: did không đi với V-ing.__",
    "tag": "d2g"
   },
   {
@@ -507,7 +535,7 @@
     "helping"
    ],
    "answer": 2,
-   "explain_vi": "helpless = bất lực, không tự giúp mình được.",
+   "explain_vi": "==couldn't run away== → cậu bé thấy **bất lực: helpless**. helpful (hữu ích) sai nghĩa; help, helping không phải tính từ chỉ cảm giác. __Mẹo: -less mang nghĩa “không có”.__",
    "tag": "d2w"
   },
   {
@@ -516,7 +544,7 @@
    "skill": "wordform",
    "q": "You made a lot of ______ mistakes because you didn't check your test. (CARE)",
    "answer": "careless",
-   "explain_vi": "careless = cẩu thả. Không kiểm tra bài → lỗi do cẩu thả.",
+   "explain_vi": "==didn't check your test== → lỗi do **cẩu thả: careless**. careful là cẩn thận, ngược nghĩa. __Mẹo: đọc lý do trong câu để chọn -ful hay -less.__",
    "tag": "d2w"
   },
   {
@@ -531,7 +559,7 @@
     "hurry"
    ],
    "answer": 0,
-   "explain_vi": "relax ≈ rest (nghỉ ngơi, thư giãn).",
+   "explain_vi": "**relax ≈ rest** (nghỉ ngơi). ==soft music … before bed== gợi ý thư giãn; wake, work, hurry ngược nghĩa. __Mẹo: loại các từ trái nghĩa trước.__",
    "tag": "fmt:synonym"
   },
   {
@@ -546,7 +574,7 @@
     "attends"
    ],
    "answer": 0,
-   "explain_vi": "encourage sb to do sth = khuyến khích ai làm gì (từ buổi 1).",
+   "explain_vi": "==her students to read== → **encourage sb to do sth** → **encourages** (Ms Lan số ít). __Ôn buổi 1: encourage luôn đi với to V.__",
    "from_day": 1,
    "tag": "d1v8"
   },
@@ -559,7 +587,7 @@
    "accept": [
     "'s having"
    ],
-   "explain_vi": "have a bath = tắm (hành động) nên chia -ing được; 'now' → hiện tại tiếp diễn (buổi 1).",
+   "explain_vi": "==now== → hiện tại tiếp diễn; ==have a bath== (tắm) là hành động nên chia -ing được → **is having**. __Nhớ: have nghĩa “có” mới không chia -ing.__",
    "from_day": 1,
    "tag": "d1g"
   },
@@ -575,7 +603,7 @@
     "take up"
    ],
    "answer": 1,
-   "explain_vi": "catch up with = bắt kịp, theo kịp (buổi 1).",
+   "explain_vi": "==need to … with the lessons I missed== → **catch up with**: bắt kịp. drop out là bỏ học, give up là bỏ cuộc. __Ôn buổi 1: catch up with sth/sb.__",
    "from_day": 1,
    "tag": "d1p1"
   }

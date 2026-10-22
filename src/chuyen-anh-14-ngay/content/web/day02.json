@@ -10,7 +10,8 @@
       "I joined the chess club last month.",
       "We went camping two weeks ago.",
       "Hoa won the drawing contest in 2024."
-     ]
+     ],
+     "rule_vi": "Việc **đã xong** tại thời điểm xác định trong quá khứ: V-ed hoặc V2. Dấu hiệu: ==last month, two weeks ago, in 2024==. __Mẹo: thấy ago, last, in + năm → quá khứ đơn.__"
     },
     {
      "name": "Past continuous",
@@ -18,7 +19,8 @@
       "At 8 p.m. yesterday, I was reading comics.",
       "They were practising the guitar all evening.",
       "My brother was swimming at that time."
-     ]
+     ],
+     "rule_vi": "Việc **đang diễn ra** tại một thời điểm hoặc suốt một khoảng thời gian trong quá khứ: was/were + V-ing. Dấu hiệu: ==At 8 p.m. yesterday, all evening, at that time==. __Mẹo: tìm was/were + V-ing.__"
     },
     {
      "name": "used to",
@@ -26,30 +28,36 @@
       "My dad used to play football.",
       "Did you use to have a pet?",
       "She didn't use to like painting."
-     ]
+     ],
+     "rule_vi": "**used to + V**: thói quen, trạng thái cũ nay không còn. Câu hỏi và phủ định dùng ==Did … use to==, ==didn't use to==. __Nhớ: sau did bỏ -d.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "I was taking photos when it started to rain.",
-    "hint_vi": "Quá khứ tiếp diễn bị quá khứ đơn xen vào"
+    "hint_vi": "Quá khứ tiếp diễn bị quá khứ đơn xen vào",
+    "why_vi": "**S + was + V-ing + when + quá khứ đơn**: ==I was taking photos== rồi ==when it started to rain==. __Mẹo: việc dài đứng trước, việc xen vào đứng sau when.__"
    },
    {
     "sentence": "My grandfather used to collect old coins.",
-    "hint_vi": "used to + V nguyên mẫu"
+    "hint_vi": "used to + V nguyên mẫu",
+    "why_vi": "**S + used to + V nguyên mẫu + tân ngữ**: ==My grandfather used to collect old coins.== __Mẹo: tính từ old đứng trước danh từ coins.__"
    },
    {
     "sentence": "Did you use to play the piano as a child?",
-    "hint_vi": "Câu hỏi: Did + S + use to + V?"
+    "hint_vi": "Câu hỏi: Did + S + use to + V?",
+    "why_vi": "Câu hỏi: **Did + S + use to + V…?** → ==Did you use to play the piano as a child?== __Nhớ: sau Did viết use, không có -d.__"
    },
    {
     "sentence": "What were you doing when the teacher came in?",
-    "hint_vi": "Câu hỏi quá khứ tiếp diễn + when + quá khứ đơn"
+    "hint_vi": "Câu hỏi quá khứ tiếp diễn + when + quá khứ đơn",
+    "why_vi": "Câu hỏi quá khứ tiếp diễn: **What + were + you + V-ing**, rồi ==when the teacher came in== (quá khứ đơn). __Mẹo: từ để hỏi đứng đầu, rồi đến were + you.__"
    },
    {
     "sentence": "She didn't use to enjoy cooking, but now she does.",
-    "hint_vi": "didn't use to + V"
+    "hint_vi": "didn't use to + V",
+    "why_vi": "**S + didn't use to + V**, sau đó ==but now she does== để nói hiện tại đã khác. __Nhớ: viết didn't use to, không viết didn't used to.__"
    }
   ],
   "truefalse": [
@@ -57,49 +65,49 @@
     "s": "We didn't used to have a computer at home.",
     "ok": false,
     "fix": "We didn't use to have a computer at home.",
-    "why_vi": "Sau did / didn't dùng 'use to', không có -d."
+    "why_vi": "Sau ==didn't== dùng **use to** (không có -d): **We didn't use to have…** __Bẫy rất hay gặp trong đề tìm lỗi sai.__"
    },
    {
     "s": "While I was drawing, my sister was listening to music.",
     "ok": true,
     "fix": "While I was drawing, my sister was listening to music.",
-    "why_vi": "Hai việc cùng đang diễn ra trong quá khứ → cả hai vế dùng quá khứ tiếp diễn."
+    "why_vi": "==While== nối hai việc cùng đang diễn ra trong quá khứ → cả hai vế dùng **quá khứ tiếp diễn**, câu đúng. __Mẹo: while hay đi với hai hành động song song.__"
    },
    {
     "s": "When the phone rang, I was taking a bath.",
     "ok": true,
     "fix": "When the phone rang, I was taking a bath.",
-    "why_vi": "Việc đang diễn ra (was taking) bị việc ngắn (rang) xen vào."
+    "why_vi": "Việc đang diễn ra ==was taking== bị việc ngắn ==rang== xen vào → **câu đúng**. __Mẹo: when + quá khứ đơn, vế kia dùng was/were V-ing.__"
    },
    {
     "s": "I was knowing how to swim when I was six.",
     "ok": false,
     "fix": "I knew how to swim when I was six.",
-    "why_vi": "know là động từ trạng thái, không chia tiếp diễn kể cả ở quá khứ."
+    "why_vi": "**know** là động từ trạng thái, không chia tiếp diễn kể cả ở quá khứ → **I knew how to swim**. ==was knowing== sai. __Nhớ: know, like, want không đi với -ing.__"
    },
    {
     "s": "My uncle use to play in a rock band.",
     "ok": false,
     "fix": "My uncle used to play in a rock band.",
-    "why_vi": "Câu khẳng định dùng 'used to' (có -d)."
+    "why_vi": "Câu khẳng định dùng **used to** (có -d): **My uncle used to play**. ==use to== chỉ đi sau did/didn't. __Mẹo: không có did thì phải có -d.__"
    },
    {
     "s": "Did you use to be afraid of dogs?",
     "ok": true,
     "fix": "Did you use to be afraid of dogs?",
-    "why_vi": "Câu hỏi: Did + S + use to + V nguyên mẫu."
+    "why_vi": "Đúng cấu trúc câu hỏi **Did + S + use to + V**: ==Did you use to be afraid of dogs?== __Nhớ: sau Did viết use.__"
    },
    {
     "s": "I was reading when suddenly the lights were going out.",
     "ok": false,
     "fix": "I was reading when suddenly the lights went out.",
-    "why_vi": "Hành động ngắn xen vào dùng quá khứ đơn: went out."
+    "why_vi": "Việc ngắn, bất ngờ (==suddenly==) xen vào dùng **quá khứ đơn: went out**, không dùng were going out. __Mẹo: suddenly hầu như luôn đi với quá khứ đơn.__"
    },
    {
     "s": "My mum used to knit, but she gave it up years ago.",
     "ok": true,
     "fix": "My mum used to knit, but she gave it up years ago.",
-    "why_vi": "used to: thói quen cũ, nay không còn; 'years ago' → quá khứ đơn gave up."
+    "why_vi": "**used to knit**: thói quen cũ nay không còn; ==years ago== → quá khứ đơn **gave up**, câu đúng. __Mẹo: used to + V nguyên mẫu.__"
    }
   ]
  },
@@ -120,7 +128,7 @@
       "practised"
      ],
      "answer": 0,
-     "explain_vi": "give up = từ bỏ ≈ stop. 'started' là nghĩa ngược lại (take up)."
+     "explain_vi": "**give up ≈ stop** (từ bỏ) → **stopped**. ==because he found it boring== cho thấy Minh đã thôi chơi. started là nghĩa của take up, ngược nghĩa. __Mẹo: dùng lý do trong câu để kiểm tra nghĩa.__"
     },
     {
      "q": "Making short videos is a CREATIVE hobby for many teenagers.",
@@ -131,7 +139,7 @@
       "difficult"
      ],
      "answer": 0,
-     "explain_vi": "creative (sáng tạo) ≈ imaginative (giàu trí tưởng tượng)."
+     "explain_vi": "**creative** (sáng tạo) **≈ imaginative** (giàu trí tưởng tượng). ==Making short videos== là hoạt động sáng tạo. __Bẫy: popular hợp với câu nhưng không đồng nghĩa với creative.__"
     },
     {
      "q": "Learning to play chess well was a real CHALLENGE for me.",
@@ -142,7 +150,7 @@
       "long holiday"
      ],
      "answer": 0,
-     "explain_vi": "challenge = thử thách, tức là một việc khó (difficult task)."
+     "explain_vi": "**challenge**: thử thách, tức là **difficult task**. ==Learning to play chess well== là việc khó. __Mẹo: thay đáp án vào chỗ từ in hoa xem câu có giữ nghĩa không.__"
     },
     {
      "q": "Ha is CRAZY ABOUT K-pop; she knows every song by heart.",
@@ -153,7 +161,7 @@
       "tired of"
      ],
      "answer": 0,
-     "explain_vi": "crazy about = cực kỳ thích ≈ very keen on. Thuộc mọi bài hát là dấu hiệu rất thích."
+     "explain_vi": "**crazy about ≈ very keen on** (cực kỳ thích). ==knows every song by heart== là dấu hiệu rất thích. __Bẫy: bored with, tired of ngược nghĩa.__"
     },
     {
      "q": "I usually UNWIND by playing the guitar after a long day at school.",
@@ -164,7 +172,7 @@
       "study"
      ],
      "answer": 0,
-     "explain_vi": "unwind = thư giãn ≈ relax. 'after a long day' gợi ý nghỉ ngơi sau khi mệt."
+     "explain_vi": "**unwind ≈ relax** (thư giãn). ==after a long day at school== gợi ý nghỉ ngơi. __Mẹo: practise, study là làm việc, trái với thư giãn.__"
     }
    ]
   },
@@ -184,7 +192,7 @@
       "member"
      ],
      "answer": 2,
-     "explain_vi": "collect /kəˈlekt/ nhấn âm 2; hobby, leisure, member nhấn âm 1."
+     "explain_vi": "**collect** ==/kəˈlekt/== **nhấn âm 2**; hobby, leisure, member là danh từ 2 âm tiết nhấn âm 1. __Mẹo: phần lớn danh từ 2 âm tiết nhấn âm 1, động từ nhấn âm 2.__"
     },
     {
      "q": "Chọn từ có trọng âm khác các từ còn lại.",
@@ -195,7 +203,7 @@
       "picture"
      ],
      "answer": 3,
-     "explain_vi": "picture /ˈpɪktʃə/ nhấn âm 1; relax, enjoy, prefer là động từ nhấn âm 2."
+     "explain_vi": "**picture** ==/ˈpɪktʃə/== là danh từ, **nhấn âm 1**; relax, enjoy, prefer là động từ nhấn âm 2. __Mẹo: xét từ loại trước, từ khác loại hay là đáp án.__"
     },
     {
      "q": "Chọn từ có trọng âm khác các từ còn lại.",
@@ -206,7 +214,7 @@
       "guitar"
      ],
      "answer": 3,
-     "explain_vi": "guitar /ɡɪˈtɑː/ nhấn âm 2 dù là danh từ; challenge, comic, puzzle nhấn âm 1."
+     "explain_vi": "**guitar** ==/ɡɪˈtɑː/== **nhấn âm 2** dù là danh từ; challenge, comic, puzzle nhấn âm 1. __Nhớ guitar là ngoại lệ hay ra thi.__"
     },
     {
      "q": "Chọn từ có trọng âm khác các từ còn lại.",
@@ -217,7 +225,7 @@
       "compete"
      ],
      "answer": 3,
-     "explain_vi": "compete /kəmˈpiːt/ là động từ, nhấn âm 2; garden, camping, painting nhấn âm 1."
+     "explain_vi": "**compete** ==/kəmˈpiːt/== là động từ, **nhấn âm 2**; garden, camping, painting nhấn âm 1. __Mẹo: đuôi -ing không bao giờ nhận trọng âm.__"
     },
     {
      "q": "Chọn từ có trọng âm khác các từ còn lại.",
@@ -228,7 +236,7 @@
       "practise"
      ],
      "answer": 3,
-     "explain_vi": "practise /ˈpræktɪs/ là động từ nhưng nhấn âm 1; begin, become, invite nhấn âm 2."
+     "explain_vi": "**practise** ==/ˈpræktɪs/== là động từ nhưng **nhấn âm 1**; begin, become, invite nhấn âm 2. __Mẹo: tiền tố be-, in- thường không nhận trọng âm.__"
     }
    ]
   }
@@ -250,7 +258,7 @@
       "school"
      ],
      "answer": 2,
-     "explain_vi": "free time = spare time (thời gian rảnh). busy (bận) mang nghĩa ngược lại."
+     "explain_vi": "**free time ≈ spare time** (thời gian rảnh) → **spare**. ==busy== (bận) ngược nghĩa. __Mẹo: nhớ cặp free time và spare time.__"
     },
     {
      "q": "My dad STARTED yoga last year.",
@@ -261,7 +269,7 @@
       "looked at"
      ],
      "answer": 1,
-     "explain_vi": "take up = bắt đầu một sở thích mới, giống start. gave up (từ bỏ) là nghĩa ngược lại."
+     "explain_vi": "**take up**: bắt đầu một sở thích mới, giống ==STARTED== → **took up**. gave up (từ bỏ) ngược nghĩa. __Bẫy: take up và give up dễ nhầm, hãy học thành cặp.__"
     },
     {
      "q": "Linh was HAPPY when she won the drawing contest.",
@@ -272,7 +280,7 @@
       "glad"
      ],
      "answer": 3,
-     "explain_vi": "glad = happy (vui). sad (buồn), angry (giận), tired (mệt) đều khác nghĩa."
+     "explain_vi": "**glad ≈ happy** (vui). ==won the drawing contest== → cảm xúc vui. sad, angry, tired khác nghĩa. __Mẹo: dùng tình huống trong câu để đoán cảm xúc.__"
     },
     {
      "q": "My grandma's garden was very BEAUTIFUL in spring.",
@@ -283,7 +291,7 @@
       "dirty"
      ],
      "answer": 1,
-     "explain_vi": "pretty = beautiful (đẹp). small (nhỏ), old (cũ), dirty (bẩn) đều khác nghĩa."
+     "explain_vi": "**pretty ≈ beautiful** (đẹp). ==in spring== khu vườn nở hoa. small, old, dirty khác nghĩa. __Mẹo: pretty ở đây là tính từ, nghĩa là xinh đẹp.__"
     },
     {
      "q": "Tuan stopped his piano lessons because they were too DIFFICULT.",
@@ -294,7 +302,7 @@
       "cheap"
      ],
      "answer": 0,
-     "explain_vi": "difficult = hard (khó). easy (dễ) là nghĩa ngược lại, đừng nhầm."
+     "explain_vi": "**difficult ≈ hard** (khó). Tuấn ==stopped his piano lessons== vì quá khó. __Bẫy: easy là nghĩa ngược lại.__"
     }
    ]
   },
@@ -314,7 +322,7 @@
       "football"
      ],
      "answer": 1,
-     "explain_vi": "begin /bɪˈɡɪn/ là động từ, nhấn âm 2. happy, yellow, football nhấn âm 1."
+     "explain_vi": "**begin** ==/bɪˈɡɪn/== là động từ, **nhấn âm 2**; happy, yellow, football nhấn âm 1. __Mẹo: danh từ ghép như football nhấn âm 1.__"
     },
     {
      "q": "Chọn từ có trọng âm khác các từ còn lại.",
@@ -325,7 +333,7 @@
       "forget"
      ],
      "answer": 2,
-     "explain_vi": "music /ˈmjuːzɪk/ là danh từ, nhấn âm 1. enjoy, relax, forget là động từ, nhấn âm 2."
+     "explain_vi": "**music** ==/ˈmjuːzɪk/== là danh từ, **nhấn âm 1**; enjoy, relax, forget là động từ nhấn âm 2. __Mẹo: tìm từ khác từ loại với 3 từ kia.__"
     },
     {
      "q": "Chọn từ có trọng âm khác các từ còn lại.",
@@ -336,7 +344,7 @@
       "answer"
      ],
      "answer": 2,
-     "explain_vi": "hotel /həʊˈtel/ nhấn âm 2 (ngoại lệ, cần nhớ). teacher, hobby, answer nhấn âm 1."
+     "explain_vi": "**hotel** ==/həʊˈtel/== **nhấn âm 2** (ngoại lệ); teacher, hobby, answer nhấn âm 1. __Nhớ hotel là ngoại lệ, cần học thuộc.__"
     },
     {
      "q": "Chọn từ có trọng âm khác các từ còn lại.",
@@ -347,7 +355,7 @@
       "reading"
      ],
      "answer": 0,
-     "explain_vi": "balloon /bəˈluːn/ nhấn âm 2. swimming, dancing, reading nhấn âm 1."
+     "explain_vi": "**balloon** ==/bəˈluːn/== **nhấn âm 2**; swimming, dancing, reading nhấn âm 1. __Mẹo: âm tiết cuối có -oo- thường nhận trọng âm.__"
     },
     {
      "q": "Chọn từ có trọng âm khác các từ còn lại.",
@@ -358,7 +366,7 @@
       "explain"
      ],
      "answer": 3,
-     "explain_vi": "explain /ɪkˈspleɪn/ nhấn âm 2. visit, listen, open là động từ nhưng nhấn âm 1."
+     "explain_vi": "**explain** ==/ɪkˈspleɪn/== **nhấn âm 2**; visit, listen, open là động từ nhưng nhấn âm 1. __Mẹo: đọc to từng từ để nghe âm nhấn.__"
     }
    ]
   }
@@ -380,7 +388,7 @@
       "saved"
      ],
      "answer": 2,
-     "explain_vi": "devote time to sth = dành trọn thời gian cho ≈ dedicate. spent sai cấu trúc (spend time on/doing); wasted, saved sai nghĩa."
+     "explain_vi": "**devote time to sth ≈ dedicate** (dành trọn cho) → **dedicated**. ==most of his time to== cho thấy cấu trúc time to. spent sai cấu trúc (spend time on); wasted, saved sai nghĩa. __Mẹo: kiểm tra cả giới từ đi kèm.__"
     },
     {
      "q": "When he was a teenager, my dad was an AVID collector of football cards.",
@@ -391,7 +399,7 @@
       "professional"
      ],
      "answer": 1,
-     "explain_vi": "avid = cực kỳ say mê ≈ enthusiastic. occasional (thỉnh thoảng) gần như ngược nghĩa; professional (chuyên nghiệp) không phải nghĩa của avid."
+     "explain_vi": "**avid**: cực kỳ say mê **≈ enthusiastic**. ==AVID collector== là người sưu tầm nhiệt tình. occasional gần như ngược nghĩa. __Bẫy: professional không phải nghĩa của avid.__"
     },
     {
      "q": "While we were hiking in Sa Pa, we CAME ACROSS a small waterfall that wasn't on our map.",
@@ -402,7 +410,7 @@
       "found by chance"
      ],
      "answer": 3,
-     "explain_vi": "come across = tình cờ gặp, tình cờ thấy ≈ find by chance. 'wasn't on our map' cho thấy họ không hề định tìm."
+     "explain_vi": "**come across**: tình cờ thấy **≈ found by chance**. ==wasn't on our map== cho thấy họ không định tìm. __Bẫy: looked for là chủ động tìm.__"
     },
     {
      "q": "Fishing was my grandfather's favourite PASTIME when he lived in the countryside.",
@@ -413,7 +421,7 @@
       "sport"
      ],
      "answer": 0,
-     "explain_vi": "pastime = trò tiêu khiển ≈ hobby. habit là thói quen, job là công việc; sport chỉ là một loại hoạt động."
+     "explain_vi": "**pastime**: trò tiêu khiển **≈ hobby**. ==Fishing== là hoạt động lúc rảnh. habit là thói quen, job là công việc. __Mẹo: pastime ghép từ pass + time, tức là cách cho thời gian trôi qua.__"
     },
     {
      "q": "Linh PUT OFF her guitar lesson because she had a bad cold.",
@@ -424,7 +432,7 @@
       "missed"
      ],
      "answer": 1,
-     "explain_vi": "put off = hoãn lại ≈ postpone. cancelled (huỷ hẳn) là bẫy gần nghĩa: put off nghĩa là sẽ học vào lúc khác."
+     "explain_vi": "**put off**: hoãn lại **≈ postponed**. ==because she had a bad cold== → học vào lúc khác. __Bẫy: cancelled là huỷ hẳn, nghĩa khác.__"
     }
    ]
   },
@@ -444,7 +452,7 @@
       "climbing"
      ],
      "answer": 3,
-     "explain_vi": "climbing /ˈklaɪmɪŋ/ nhấn âm 1. canoe, cartoon, bamboo nhấn âm 2: âm tiết cuối là /uː/ thường nhận trọng âm."
+     "explain_vi": "**climbing** ==/ˈklaɪmɪŋ/== **nhấn âm 1**; canoe, cartoon, bamboo tận cùng /uː/ nên nhấn âm 2. __Mẹo: âm tiết cuối có -oo- hay nhận trọng âm.__"
     },
     {
      "q": "Chọn từ có trọng âm khác các từ còn lại.",
@@ -455,7 +463,7 @@
       "travel"
      ],
      "answer": 1,
-     "explain_vi": "attend /əˈtend/ nhấn âm 2. offer, enter, travel là động từ nhưng nhấn âm 1 – ngoại lệ hay bị đánh bẫy."
+     "explain_vi": "**attend** ==/əˈtend/== **nhấn âm 2**; offer, enter, travel là động từ nhưng nhấn âm 1. __Bẫy: đừng áp dụng máy móc quy tắc động từ nhấn âm 2.__"
     },
     {
      "q": "Chọn từ có trọng âm khác các từ còn lại.",
@@ -466,7 +474,7 @@
       "career"
      ],
      "answer": 0,
-     "explain_vi": "leisure /ˈleʒə/ nhấn âm 1. event, advice, career là danh từ nhưng nhấn âm 2."
+     "explain_vi": "**leisure** ==/ˈleʒə/== **nhấn âm 1**; event, advice, career là danh từ nhưng nhấn âm 2. __Mẹo: âm tiết đầu đọc yếu /ɪ/, /ə/ thường không nhận trọng âm.__"
     },
     {
      "q": "Chọn từ có trọng âm khác các từ còn lại.",
@@ -477,7 +485,7 @@
       "admire"
      ],
      "answer": 2,
-     "explain_vi": "borrow /ˈbɒrəʊ/ nhấn âm 1. prefer, suggest, admire nhấn âm 2 như phần lớn động từ 2 âm tiết."
+     "explain_vi": "**borrow** ==/ˈbɒrəʊ/== **nhấn âm 1**; prefer, suggest, admire nhấn âm 2 như phần lớn động từ 2 âm tiết. __Nhớ borrow, offer, open, visit là ngoại lệ.__"
     },
     {
      "q": "Chọn từ có trọng âm khác các từ còn lại.",
@@ -488,7 +496,7 @@
       "modern"
      ],
      "answer": 3,
-     "explain_vi": "modern /ˈmɒdn/ nhấn âm 1. polite, unique, complete là tính từ nhưng nhấn âm 2."
+     "explain_vi": "**modern** ==/ˈmɒdn/== **nhấn âm 1**; polite, unique, complete là tính từ nhưng nhấn âm 2. __Mẹo: âm tiết cuối có nguyên âm dài thường nhận trọng âm.__"
     }
    ]
   }
@@ -501,13 +509,15 @@
     "id": "d2H1",
     "q": "The whole class clapped ______ when Minh finished his magic trick. (ENTHUSIASM)",
     "answer": "enthusiastically",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Bổ nghĩa cho động từ ==clapped== cần **trạng từ**: enthusiasm → enthusiastic → **enthusiastically**. __Mẹo: tính từ đuôi -ic thêm -ally.__"
    },
    {
     "id": "d2H2",
     "q": "Many students found the drawing task dull and ______, so they quickly lost interest. (IMAGINE)",
     "answer": "unimaginative",
-    "accept": []
+    "accept": [],
+    "explain_vi": "==dull and== + tính từ nghĩa tiêu cực, lại có ==lost interest== → **unimaginative** (thiếu sáng tạo): imagine → imaginative → thêm un-. __Mẹo: and nối hai từ cùng sắc thái.__"
    },
    {
     "id": "d2H3",
@@ -515,7 +525,8 @@
     "answer": "up badminton two years ago",
     "accept": [
      "up playing badminton two years ago"
-    ]
+    ],
+    "explain_vi": "**take up**: bắt đầu một sở thích, thay cho ==started playing== → **Tuan took up badminton two years ago.** __Nhớ giữ nguyên two years ago.__"
    },
    {
     "id": "d2H4",
@@ -524,7 +535,8 @@
     "accept": [
      "practicing the piano when the phone rang",
      "doing my piano practice when the phone rang"
-    ]
+    ],
+    "explain_vi": "Việc đang diễn ra (luyện piano) bị ==The phone rang== xen vào → **I was practising the piano when the phone rang.** __Mẹo: in the middle of → was/were V-ing + when.__"
    },
    {
     "id": "d2H5",
@@ -536,7 +548,8 @@
      "eyes"
     ],
     "answer": "B",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Thành ngữ **have green fingers**: giỏi trồng cây → **B**. ==every plant in her garden grows beautifully== xác nhận nghĩa. __Nhớ: Anh-Anh dùng green fingers, Anh-Mỹ dùng green thumb.__"
    },
    {
     "id": "d2H6",
@@ -548,7 +561,8 @@
      "get"
     ],
     "answer": "C",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Thành ngữ **let your hair down**: thả lỏng, xả hơi → **C. let**. ==After a stressful week of exams== gợi ý muốn nghỉ ngơi. __Mẹo: học thành ngữ nguyên cụm, không đoán từng từ.__"
    }
   ]
  },
@@ -667,7 +681,7 @@
        "Collecting stamps"
       ],
       "answer": 1,
-      "explain_vi": "Nam nói: 'I was painting a picture in my room'."
+      "explain_vi": "Nam nói: ==“I was painting a picture in my room”== → **Painting a picture**. __Mẹo: câu hỏi was doing thì nghe chỗ was + V-ing.__"
      },
      {
       "q": "Why did Nam stop collecting stamps?",
@@ -678,7 +692,7 @@
        "He had no spare time."
       ],
       "answer": 0,
-      "explain_vi": "Nam nói: 'I gave it up last year. It was too expensive.'"
+      "explain_vi": "==“I gave it up last year. It was too expensive.”== → **It cost too much money.** __Mẹo: đáp án diễn đạt lại ý too expensive.__"
      },
      {
       "q": "When did Nam start painting?",
@@ -689,7 +703,7 @@
        "Yesterday"
       ],
       "answer": 2,
-      "explain_vi": "Nam nói: 'I took it up last month.' Last year là lúc bỏ sưu tầm tem."
+      "explain_vi": "==“I took it up last month.”== → **Last month**. __Bẫy: last year là lúc bỏ sưu tầm tem.__"
      },
      {
       "q": "What does Mai usually do on Sunday mornings?",
@@ -700,7 +714,7 @@
        "She goes swimming."
       ],
       "answer": 3,
-      "explain_vi": "Mai nói: 'I go to the pool every Sunday morning.'"
+      "explain_vi": "Mai nói: ==“I go to the pool every Sunday morning.”== → **She goes swimming.** __Mẹo: pool gợi ý bơi.__"
      },
      {
       "q": "How much is Nam's first art class?",
@@ -711,7 +725,7 @@
        "It is half price."
       ],
       "answer": 0,
-      "explain_vi": "Nam nói: 'the first class is free!'"
+      "explain_vi": "==“the first class is free!”== → **It is free.** __Nhớ: free ở đây là miễn phí, không phải rảnh.__"
      }
     ]
    },
@@ -726,7 +740,7 @@
       "accept": [
        "Wednesdays"
       ],
-      "explain_vi": "'The photography club meets on Wednesdays'."
+      "explain_vi": "==“The photography club meets on Wednesdays”== → **Wednesday**. __Bẫy: Monday là câu lạc bộ nấu ăn, Friday là cờ vua.__"
      },
      {
       "answer": "200,000",
@@ -734,7 +748,7 @@
        "200000",
        "200.000"
       ],
-      "explain_vi": "'Membership costs 200,000 dong for the whole summer.'"
+      "explain_vi": "==“Membership costs 200,000 dong for the whole summer.”== → **200,000**. __Mẹo: ghi số ngay khi nghe.__"
      },
      {
       "answer": "phone",
@@ -742,21 +756,21 @@
        "a phone",
        "mobile phone"
       ],
-      "explain_vi": "'you need to bring a camera or a phone'."
+      "explain_vi": "==“you need to bring a camera or a phone”== → **phone**. __Mẹo: camera đã có trong đề, chỉ điền từ còn thiếu.__"
      },
      {
       "answer": "team",
       "accept": [
        "city team"
       ],
-      "explain_vi": "'He used to play chess for the city team.'"
+      "explain_vi": "==“He used to play chess for the city team.”== → **team**. __Mẹo: city đã có sẵn, chỉ điền một từ.__"
      },
      {
       "answer": "desk",
       "accept": [
        "front desk"
       ],
-      "explain_vi": "'please fill in a form at the front desk'."
+      "explain_vi": "==“please fill in a form at the front desk”== → **desk**. __Mẹo: front đã có trong đề, không cần viết lại.__"
      }
     ]
    }
@@ -835,7 +849,7 @@
        "She is making a film."
       ],
       "answer": 1,
-      "explain_vi": "Linh nói: 'It's for my school project on hobbies in the past.'"
+      "explain_vi": "Linh nói: ==“It's for my school project on hobbies in the past.”== → **She needs them for a school project.** __Mẹo: lý do thường nằm ở câu It's for…__"
      },
      {
       "q": "What did Grandpa and his friends make their kites from?",
@@ -846,7 +860,7 @@
        "Bamboo and paper"
       ],
       "answer": 3,
-      "explain_vi": "Ông nói: 'from bamboo and old newspapers' → tre và giấy báo."
+      "explain_vi": "Ông nói: ==“from bamboo and old newspapers”== → **Bamboo and paper**. __Bẫy: không có cloth; newspapers chính là giấy.__"
      },
      {
       "q": "What did Grandpa collect?",
@@ -857,7 +871,7 @@
        "Old newspapers"
       ],
       "answer": 0,
-      "explain_vi": "Ông định nói stamps rồi sửa: 'My brother collected stamps. I collected old coins.'"
+      "explain_vi": "Ông định nói stamps rồi sửa: ==“My brother collected stamps. I collected old coins.”== → **Old coins**. __Cẩn thận chỗ người nói sửa lại.__"
      },
      {
       "q": "What happened to Grandpa's collection?",
@@ -868,7 +882,7 @@
        "He still keeps it in a box."
       ],
       "answer": 2,
-      "explain_vi": "'When I was moving house, I lost the box, and I never found it.'"
+      "explain_vi": "==“When I was moving house, I lost the box”== → **He lost it when he was moving house.** __Mẹo: never found it giúp loại đáp án còn giữ hộp.__"
      },
      {
       "q": "Which hobby did Grandpa start recently?",
@@ -879,7 +893,7 @@
        "Taking photos"
       ],
       "answer": 1,
-      "explain_vi": "'last year, I took up gardening'. Cờ vua thì ông chơi từ lâu ('like I always have')."
+      "explain_vi": "==“last year, I took up gardening”== → **Gardening**. __Bẫy: cờ vua ông chơi từ lâu (like I always have).__"
      }
     ]
    },
@@ -894,33 +908,33 @@
       "accept": [
        "Sundays"
       ],
-      "explain_vi": "Anna nói Saturday rồi sửa: 'Oh, sorry, I mean Sunday mornings.'"
+      "explain_vi": "Anna nói Saturday rồi sửa: ==“Oh, sorry, I mean Sunday mornings.”== → **Sunday**. __Cẩn thận chỗ người nói sửa lại.__"
      },
      {
       "answer": "13",
       "accept": [
        "thirteen"
       ],
-      "explain_vi": "'Climbers must be at least 13 years old.'"
+      "explain_vi": "==“Climbers must be at least 13 years old.”== → **13**. __Mẹo: at least ứng với minimum trong đề.__"
      },
      {
       "answer": "shoes",
       "accept": [
        "special shoes"
       ],
-      "explain_vi": "'You don't need special shoes, because we lend them to all beginners.'"
+      "explain_vi": "==“we lend them to all beginners”== (them là giày) → **shoes**. __Mẹo: lend và borrow là hai mặt của cùng một việc.__"
      },
      {
       "answer": "swimming pool",
       "accept": [
        "pool"
       ],
-      "explain_vi": "'It gives you one course and free use of the swimming pool.'"
+      "explain_vi": "==“free use of the swimming pool”== → **swimming pool**. __Mẹo: chép đúng cụm sau free use of.__"
      },
      {
       "answer": "online",
       "accept": [],
-      "explain_vi": "'Your first session is free, but you need to book it online.'"
+      "explain_vi": "==“you need to book it online”== → **online**. __Nhớ: book online là đặt chỗ trên mạng.__"
      }
     ]
    }
@@ -1007,7 +1021,7 @@
        "He still feels nervous on a climbing wall."
       ],
       "answer": 1,
-      "explain_vi": "'I used to be, actually' → trước đây sợ; ở Sa Pa leo tường 'and I loved it'."
+      "explain_vi": "==“I used to be, actually”== → trước đây sợ; ở Sa Pa thì ==“I loved it”== → **hồi nhỏ sợ, giờ thì không**. __Mẹo: used to báo hiệu điều đã thay đổi.__"
      },
      {
       "q": "What is Tom's main concern about the climbing club?",
@@ -1018,7 +1032,7 @@
        "His cousin isn't a member."
       ],
       "answer": 2,
-      "explain_vi": "Tom nói: 'Mainly the cost.' Giày chỉ là chi tiết phụ, sau đó câu lạc bộ cho mượn."
+      "explain_vi": "Tom nói: ==“Mainly the cost.”== → **It is expensive.** __Bẫy: giày chỉ là chi tiết phụ, câu lạc bộ còn cho mượn.__"
      },
      {
       "q": "According to Tom, why did he give up the guitar?",
@@ -1029,7 +1043,7 @@
        "He wanted to take up climbing."
       ],
       "answer": 1,
-      "explain_vi": "Tom bác ý của Anna: 'the teacher kept making us play the same boring songs. It wasn't that I lost interest.'"
+      "explain_vi": "Tom bác Anna: ==“the same boring songs. It wasn't that I lost interest.”== → **bài học lặp lại, nhàm chán**. __Bẫy: lost interest là ý của Anna, Tom phủ nhận.__"
      },
      {
       "q": "Why does Tom prefer climbing to photography?",
@@ -1040,7 +1054,7 @@
        "Climbing is more demanding, and he can take photos by himself."
       ],
       "answer": 3,
-      "explain_vi": "'It's a real challenge… Photography is relaxing, but I can do that on my own anyway.'"
+      "explain_vi": "==“It's a real challenge… Photography is relaxing, but I can do that on my own anyway.”== → **leo núi thử thách hơn, chụp ảnh thì tự làm được**. __Mẹo: demanding ứng với a real challenge.__"
      },
      {
       "q": "How will Tom most likely pay for the club?",
@@ -1051,7 +1065,7 @@
        "With help from his cousin"
       ],
       "answer": 0,
-      "explain_vi": "Anna nhắc khoản tiết kiệm mua điện thoại, Tom nói 'I don't really need a new one' rồi quyết định đăng ký."
+      "explain_vi": "Anna nhắc tiền tiết kiệm mua điện thoại, Tom đáp ==“I don't really need a new one.”== → **With money he was saving for a phone**. __Mẹo: câu hỏi most likely cần suy luận từ cả đoạn.__"
      }
     ]
    },
@@ -1067,7 +1081,7 @@
        "aunt",
        "aunts"
       ],
-      "explain_vi": "'while I was waiting for the rain to stop at my aunt's house'."
+      "explain_vi": "==“at my aunt's house”== → **aunt's**. __Nhớ viết sở hữu cách 's.__"
      },
      {
       "answer": "cafe",
@@ -1075,7 +1089,7 @@
        "café",
        "small cafe"
       ],
-      "explain_vi": "Lớp học khoá cửa cuối tuần 'so instead we meet in a small cafe near Hoan Kiem Lake'."
+      "explain_vi": "Lớp học khoá cửa cuối tuần ==“so instead we meet in a small cafe”== → **cafe**. __Mẹo: instead báo hiệu thông tin đúng.__"
      },
      {
       "answer": "32",
@@ -1083,19 +1097,19 @@
        "thirty two",
        "thirty-two"
       ],
-      "explain_vi": "'We started with just five members, and now there are 32 of us.'"
+      "explain_vi": "==“and now there are 32 of us”== → **32**. __Bẫy: five là số thành viên lúc đầu.__"
      },
      {
       "answer": "Monopoly",
       "accept": [],
-      "explain_vi": "Không phải cờ vua: 'the game everyone fights over is actually Monopoly'."
+      "explain_vi": "Không phải cờ vua: ==“the game everyone fights over is actually Monopoly”== → **Monopoly**. __Mẹo: actually thường đưa ra thông tin đúng.__"
      },
      {
       "answer": "drink",
       "accept": [
        "a drink"
       ],
-      "explain_vi": "'we ask everyone to buy a drink to support the cafe'."
+      "explain_vi": "==“we ask everyone to buy a drink to support the cafe”== → **drink**. __Mẹo: chỗ trống sau a cần danh từ số ít.__"
      }
     ]
    }

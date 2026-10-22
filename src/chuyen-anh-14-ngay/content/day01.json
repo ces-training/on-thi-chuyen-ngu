@@ -47,42 +47,42 @@
       "instruction_vi": "Em chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ing…) nếu cần nhé!",
       "bank": ["curriculum","assignment","revise","concentrate","attend","knowledge","catch up","drop out"],
       "items": [
-        {"id":"d1A1","q":"Our school has changed its ______: now all students learn coding from grade 6.","answer":"curriculum","tag":"d1v1"},
-        {"id":"d1A2","q":"I can't go to the cinema tonight. I have to finish my geography ______ and hand it in tomorrow morning.","answer":"assignment","tag":"d1v2"},
-        {"id":"d1A3","q":"Before an exam, I always ______ my notes carefully.","answer":"revise","tag":"d1v3"},
-        {"id":"d1A4","q":"Phong found it hard to ______ during the lesson because the boy behind him kept whispering.","answer":"concentrate","tag":"d1v4"},
-        {"id":"d1A5","q":"Reading newspapers is a great way to increase your general ______.","answer":"knowledge","tag":"d1v6"},
-        {"id":"d1A6","q":"Mai was ill for a week, so now she is working extra hard to ______ with the rest of the class.","answer":"catch up","tag":"d1p1"}
+        {"id":"d1A1","q":"Our school has changed its ______: now all students learn coding from grade 6.","answer":"curriculum","tag":"d1v1","explain_vi":"Trường thay đổi để ==now all students learn coding== → đổi **chương trình học: curriculum**. Sau ==its== cần danh từ. __Mẹo: phần sau dấu hai chấm giải thích nghĩa của chỗ trống.__"},
+        {"id":"d1A2","q":"I can't go to the cinema tonight. I have to finish my geography ______ and hand it in tomorrow morning.","answer":"assignment","tag":"d1v2","explain_vi":"==finish my geography … and hand it in== → bài được giao phải nộp: **assignment**. __Mẹo: hand in (nộp) hay đi với assignment.__"},
+        {"id":"d1A3","q":"Before an exam, I always ______ my notes carefully.","answer":"revise","tag":"d1v3","explain_vi":"==Before an exam== em xem lại ghi chép → **revise** (ôn tập). Sau ==always== với chủ ngữ I giữ **nguyên mẫu**. __Mẹo: revise for a test, revise my notes là cụm hay gặp.__"},
+        {"id":"d1A4","q":"Phong found it hard to ______ during the lesson because the boy behind him kept whispering.","answer":"concentrate","tag":"d1v4","explain_vi":"Bạn phía sau ==kept whispering== nên Phong khó **tập trung: concentrate**. Sau ==found it hard to== dùng V nguyên mẫu. __Mẹo: sau to luôn dùng động từ nguyên mẫu.__"},
+        {"id":"d1A5","q":"Reading newspapers is a great way to increase your general ______.","answer":"knowledge","tag":"d1v6","explain_vi":"==increase your general== + danh từ → **knowledge** (kiến thức, hiểu biết). __Nhớ: knowledge không đếm được, không thêm -s.__"},
+        {"id":"d1A6","q":"Mai was ill for a week, so now she is working extra hard to ______ with the rest of the class.","answer":"catch up","tag":"d1p1","explain_vi":"Mai ==was ill for a week== nên giờ phải **catch up** (bắt kịp) ==with the rest of the class==. __Mẹo: thấy nghỉ ốm + with the class, nghĩ ngay tới catch up with.__"}
       ]
     },
     "B_grammar": {
       "instruction_vi": "Em chia động từ trong ngoặc ở thì hiện tại đơn hoặc hiện tại tiếp diễn. Để ý các từ dấu hiệu và các động từ chỉ trạng thái nhé!",
       "items": [
-        {"id":"d1B1","q":"Look! The children ______ (play) football in the rain.","answer":"are playing","accept":["'re playing"],"tag":"d1g"},
-        {"id":"d1B2","q":"My brother ______ (go) to the library every Saturday morning.","answer":"goes","tag":"d1g"},
-        {"id":"d1B3","q":"I ______ (not understand) this grammar rule. Could you explain it again?","answer":"don't understand","accept":["do not understand"],"tag":"d1g"},
-        {"id":"d1B4","q":"This week our class ______ (practise) for the school English festival.","answer":"is practising","accept":["is practicing","'s practising"],"tag":"d1g"},
-        {"id":"d1B5","q":"Nam ______ (want) to become a science teacher in the future.","answer":"wants","tag":"d1g"},
-        {"id":"d1B6","q":"Please speak quietly! Grandma ______ (have) a rest in her room.","answer":"is having","accept":["'s having"],"tag":"d1g"}
+        {"id":"d1B1","q":"Look! The children ______ (play) football in the rain.","answer":"are playing","accept":["'re playing"],"tag":"d1g","explain_vi":"==Look!== → việc đang xảy ra → **hiện tại tiếp diễn**: The children (số nhiều) **are playing**. __Mẹo: Look!, Listen! đứng đầu câu là dấu hiệu V-ing.__"},
+        {"id":"d1B2","q":"My brother ______ (go) to the library every Saturday morning.","answer":"goes","tag":"d1g","explain_vi":"==every Saturday morning== → thói quen → **hiện tại đơn**; My brother số ít, go thêm -es → **goes**. __Nhớ: go, do, watch, wash thêm -es.__"},
+        {"id":"d1B3","q":"I ______ (not understand) this grammar rule. Could you explain it again?","answer":"don't understand","accept":["do not understand"],"tag":"d1g","explain_vi":"**understand** là động từ trạng thái → **không chia -ing**. Chủ ngữ ==I==, phủ định → **don't understand**. __Bẫy: không viết am not understanding.__"},
+        {"id":"d1B4","q":"This week our class ______ (practise) for the school English festival.","answer":"is practising","accept":["is practicing","'s practising"],"tag":"d1g","explain_vi":"==This week== chỉ việc **tạm thời quanh hiện tại** → **is practising** (our class xem như số ít). __Mẹo: this week, these days, at the moment → hiện tại tiếp diễn.__"},
+        {"id":"d1B5","q":"Nam ______ (want) to become a science teacher in the future.","answer":"wants","tag":"d1g","explain_vi":"**want** là động từ trạng thái nên dùng **hiện tại đơn**; ==Nam== số ít → **wants**. __Nhớ nhóm want, need, like, know không chia -ing.__"},
+        {"id":"d1B6","q":"Please speak quietly! Grandma ______ (have) a rest in her room.","answer":"is having","accept":["'s having"],"tag":"d1g","explain_vi":"==Please speak quietly!== → bà **đang** nghỉ → **is having**. ==have a rest== là hành động nên chia -ing được. __Nhớ: have (có) không -ing, nhưng have a rest, have lunch thì được.__"}
       ]
     },
     "C_wordform": {
       "instruction_vi": "Viết dạng đúng của từ in hoa để hoàn thành câu.",
       "items": [
-        {"id":"d1C1","q":"Thank you for the clear ______. Now I understand the exercise. (EXPLAIN)","answer":"explanation","tag":"d1w"},
-        {"id":"d1C2","q":"There has been a big ______ in her English since she joined the club. (IMPROVE)","answer":"improvement","tag":"d1w"},
-        {"id":"d1C3","q":"Students can find ______ about the summer courses on the school website. (INFORM)","answer":"information","tag":"d1w"},
-        {"id":"d1C4","q":"A few words of ______ from her teacher gave Linh more confidence. (ENCOURAGE)","answer":"encouragement","tag":"d1w"}
+        {"id":"d1C1","q":"Thank you for the clear ______. Now I understand the exercise. (EXPLAIN)","answer":"explanation","tag":"d1w","explain_vi":"Sau ==the clear== cần **danh từ**: explain → **explanation** (thêm -ation). __Chú ý chính tả: explanation, không viết explaination.__"},
+        {"id":"d1C2","q":"There has been a big ______ in her English since she joined the club. (IMPROVE)","answer":"improvement","tag":"d1w","explain_vi":"Sau ==a big== cần **danh từ**: improve → **improvement** (thêm -ment). __Mẹo: a/the + tính từ + chỗ trống → danh từ.__"},
+        {"id":"d1C3","q":"Students can find ______ about the summer courses on the school website. (INFORM)","answer":"information","tag":"d1w","explain_vi":"Động từ ==find== cần tân ngữ là **danh từ**: inform → **information**. __Nhớ: information không đếm được, không thêm -s.__"},
+        {"id":"d1C4","q":"A few words of ______ from her teacher gave Linh more confidence. (ENCOURAGE)","answer":"encouragement","tag":"d1w","explain_vi":"Sau ==A few words of== cần **danh từ**: encourage → **encouragement** (giữ -e, thêm -ment). __Mẹo: of + chỗ trống thường là danh từ.__"}
       ]
     },
     "D_exam": {
       "format": "sentence_completion",
       "instruction_vi": "Đây là dạng hoàn thành câu trong đề thi chuyên. Em chọn đáp án đúng nhất (A, B, C hoặc D) để hoàn thành mỗi câu.",
       "items": [
-        {"id":"d1D1","q":"Students who want to join the school trip must ______ the meeting on Friday afternoon.","options":["come","go","participate","attend"],"answer":"D","tag":"fmt:sentence_completion"},
-        {"id":"d1D2","q":"My sister can't talk on the phone right now. She ______ for her history test.","options":["revises","revise","is revising","was revising"],"answer":"C","tag":"fmt:sentence_completion"},
-        {"id":"d1D3","q":"Our teacher always ______ us to read English stories in our free time.","options":["makes","encourages","suggests","lets"],"answer":"B","tag":"fmt:sentence_completion"},
-        {"id":"d1D4","q":"If you miss too many lessons, it is hard to ______ with your classmates.","options":["catch up","drop out","keep on","take up"],"answer":"A","tag":"fmt:sentence_completion"}
+        {"id":"d1D1","q":"Students who want to join the school trip must ______ the meeting on Friday afternoon.","options":["come","go","participate","attend"],"answer":"D","tag":"fmt:sentence_completion","explain_vi":"**attend the meeting**: tham dự cuộc họp; attend không cần giới từ → **D**. come, go phải có to; participate phải có in. __Mẹo: chỗ trống ngay trước danh từ → chọn động từ không cần giới từ.__"},
+        {"id":"d1D2","q":"My sister can't talk on the phone right now. She ______ for her history test.","options":["revises","revise","is revising","was revising"],"answer":"C","tag":"fmt:sentence_completion","explain_vi":"==can't talk on the phone right now== → việc đang diễn ra → **C. is revising**. was revising là quá khứ, revises là thói quen nên sai. __Mẹo: tìm từ dấu hiệu thời gian trước khi chọn thì.__"},
+        {"id":"d1D3","q":"Our teacher always ______ us to read English stories in our free time.","options":["makes","encourages","suggests","lets"],"answer":"B","tag":"fmt:sentence_completion","explain_vi":"Sau chỗ trống là ==us to read== → **encourage sb to do sth** → **B. encourages**. makes, lets đi với V không to; suggest không dùng suggest sb to do. __Mẹo: nhìn cấu trúc sau chỗ trống để loại đáp án.__"},
+        {"id":"d1D4","q":"If you miss too many lessons, it is hard to ______ with your classmates.","options":["catch up","drop out","keep on","take up"],"answer":"A","tag":"fmt:sentence_completion","explain_vi":"==miss too many lessons== → khó **bắt kịp** các bạn: **A. catch up** (with). drop out là bỏ học, take up là bắt đầu một sở thích. __Nhớ: catch up with + người hoặc bài vở.__"}
       ]
     },
     "E_reading": {
@@ -90,10 +90,10 @@
       "title": "A New Way to Learn",
       "text": "At Green Hill Secondary School, Monday mornings look different this year. Instead of sitting in rows and listening to the teacher, students in grade 7 work in small groups on projects. The school changed part of its curriculum last summer because teachers wanted students to learn by doing, not only by memorising.\n\nThis month, the students are studying rivers. One group is building a model of a river, while another group is interviewing an engineer online. Each group has to present its project at the end of the month.\n\nMs Hoa, a science teacher, says the new method encourages shy students to share their ideas. 'Some students rarely speak in a normal lesson, but in a small group they feel safer,' she explains.\n\nNot everyone likes the change, however. A few parents worry that projects take too much time and that their children have less time to revise for exams. The school plans to ask parents for their opinions in December.",
       "items": [
-        {"id":"d1E1","kind":"tfng","q":"All the parents are happy with the new way of learning.","answer":"False","tag":"d1r"},
-        {"id":"d1E2","kind":"tfng","q":"Students in grade 6 also do group projects at Green Hill.","answer":"Not Given","tag":"d1r"},
-        {"id":"d1E3","kind":"mcq","q":"What are the grade 7 students studying this month?","options":["engineers","rivers","models","exams"],"answer":"B","tag":"d1r"},
-        {"id":"d1E4","kind":"mcq","q":"According to Ms Hoa, why do shy students speak more during project work?","options":["They get higher marks.","The teacher asks them more questions.","They are more interested in rivers.","They feel safer in a small group."],"answer":"D","tag":"d1r"}
+        {"id":"d1E1","kind":"tfng","q":"All the parents are happy with the new way of learning.","answer":"False","tag":"d1r","explain_vi":"Bài viết: ==A few parents worry that projects take too much time== → không phải tất cả phụ huynh đều hài lòng → **False**. __Mẹo: chữ All trong câu hỏi hay là bẫy, hãy tìm câu nói ngược lại.__"},
+        {"id":"d1E2","kind":"tfng","q":"Students in grade 6 also do group projects at Green Hill.","answer":"Not Given","tag":"d1r","explain_vi":"Bài chỉ nói về ==students in grade 7==, hoàn toàn không nhắc tới lớp 6 → **Not Given**. __Phân biệt: bài nói ngược lại là False; bài không nhắc tới là Not Given.__"},
+        {"id":"d1E3","kind":"mcq","q":"What are the grade 7 students studying this month?","options":["engineers","rivers","models","exams"],"answer":"B","tag":"d1r","explain_vi":"==This month, the students are studying rivers.== → **B. rivers**. models, engineers chỉ là hoạt động của từng nhóm. __Mẹo: tìm từ khoá this month trong bài.__"},
+        {"id":"d1E4","kind":"mcq","q":"According to Ms Hoa, why do shy students speak more during project work?","options":["They get higher marks.","The teacher asks them more questions.","They are more interested in rivers.","They feel safer in a small group."],"answer":"D","tag":"d1r","explain_vi":"Cô Hoa nói: ==in a small group they feel safer== → **D. They feel safer in a small group.** __Mẹo: câu hỏi có According to Ms Hoa, hãy tìm lời cô trong dấu nháy.__"}
       ]
     },
     "F_writing": {
@@ -111,26 +111,26 @@
     "G_review": {
       "instruction_vi": "Khởi động – hôm nay là buổi đầu nên mình ôn lại vài kiến thức cơ bản (A2) trước nhé. Em điền từ hoặc dạng đúng vào chỗ trống.",
       "items": [
-        {"id":"d1G1","q":"There ______ (be) thirty-two students in my class.","answer":"are","from_day":0,"tag":"a2:be"},
-        {"id":"d1G2","q":"We went to the zoo ______ Sunday morning. (in / on / at)","answer":"on","from_day":0,"tag":"a2:prepositions"},
-        {"id":"d1G3","q":"How many ______ (child) are there in your family?","answer":"children","from_day":0,"tag":"a2:plurals"},
-        {"id":"d1G4","q":"Lan's bag is red, and ______ (I) is blue.","answer":"mine","from_day":0,"tag":"a2:pronouns"}
+        {"id":"d1G1","q":"There ______ (be) thirty-two students in my class.","answer":"are","from_day":0,"tag":"a2:be","explain_vi":"Danh từ sau chỗ trống là ==thirty-two students== (số nhiều) → **are**. __Mẹo: There + be chia theo danh từ đứng ngay sau.__"},
+        {"id":"d1G2","q":"We went to the zoo ______ Sunday morning. (in / on / at)","answer":"on","from_day":0,"tag":"a2:prepositions","explain_vi":"Trước **thứ trong tuần** (kể cả buổi của thứ đó) dùng **on** → ==on Sunday morning==. __Nhớ: in the morning, nhưng on Sunday morning.__"},
+        {"id":"d1G3","q":"How many ______ (child) are there in your family?","answer":"children","from_day":0,"tag":"a2:plurals","explain_vi":"==How many== + danh từ số nhiều; child có số nhiều bất quy tắc → **children**. __Bẫy: không viết childs.__"},
+        {"id":"d1G4","q":"Lan's bag is red, and ______ (I) is blue.","answer":"mine","from_day":0,"tag":"a2:pronouns","explain_vi":"Thay cho ==my bag== dùng **đại từ sở hữu: mine**. __Mẹo: sau chỗ trống không có danh từ → dùng mine, yours, his, hers.__"}
       ]
     }
   },
   "web_check": [
-    {"id":"d1q1","type":"mcq","skill":"vocab","q":"All students must ______ school from Monday to Friday.","options":["attend","arrive","go","present"],"answer":0,"explain_vi":"attend school = đi học (đều đặn). 'arrive' và 'go' cần giới từ (arrive at, go to).","tag":"d1v5"},
-    {"id":"d1q2","type":"mcq","skill":"vocab","q":"My handwriting was messy, but it has ______ a lot since I started practising every day.","options":["encouraged","revised","improved","concentrated"],"answer":2,"explain_vi":"improve = tiến bộ, tốt lên. Chữ viết 'đã tiến bộ nhiều'.","tag":"d1v7"},
-    {"id":"d1q3","type":"text","skill":"vocab","q":"My parents always e______ me to try new things, even when I am afraid of failing. (Viết cả từ)","answer":"encourage","explain_vi":"encourage sb to do sth = khuyến khích ai làm gì. Chủ ngữ 'My parents' số nhiều nên không thêm -s.","tag":"d1v8"},
-    {"id":"d1q4","type":"mcq","skill":"vocab","q":"Because of his family's money problems, the boy had to ______ school at the age of 14.","options":["catch up with","look after","drop out of","get on with"],"answer":2,"explain_vi":"drop out of school = bỏ học giữa chừng.","tag":"d1p2"},
-    {"id":"d1q5","type":"mcq","skill":"grammar","q":"Listen! Someone ______ the piano in the music room.","options":["plays","is playing","play","has played"],"answer":1,"explain_vi":"'Listen!' cho biết việc đang xảy ra ngay lúc nói → hiện tại tiếp diễn.","tag":"d1g"},
-    {"id":"d1q6","type":"text","skill":"grammar","q":"Water ______ (boil) at 100°C.","answer":"boils","explain_vi":"Sự thật hiển nhiên → hiện tại đơn; chủ ngữ số ít thêm -s.","tag":"d1g"},
-    {"id":"d1q7","type":"mcq","skill":"grammar","q":"I ______ what you mean now. Thanks for explaining!","options":["understand","am understanding","understanding","am understand"],"answer":0,"explain_vi":"understand là động từ trạng thái, không chia -ing dù có 'now'.","tag":"d1g"},
-    {"id":"d1q8","type":"text","skill":"grammar","q":"Hurry up! Your friends ______ (wait) for you outside.","answer":"are waiting","accept":["'re waiting"],"explain_vi":"'Hurry up!' → việc đang diễn ra lúc nói → hiện tại tiếp diễn.","tag":"d1g"},
-    {"id":"d1q9","type":"mcq","skill":"grammar","q":"Which sentence is correct?","options":["This book is belonging to my teacher.","My dad is owning a small shop.","I am needing a new pencil.","She is having a shower at the moment."],"answer":3,"explain_vi":"belong, own, need là động từ trạng thái. 'have a shower' (tắm) là hành động nên chia -ing được.","tag":"d1g"},
-    {"id":"d1q10","type":"mcq","skill":"wordform","q":"Getting the top score in the final test was a great ______ for Hung.","options":["achieve","achievement","achieving","achievation"],"answer":1,"explain_vi":"Sau 'a great' cần danh từ: achieve → achievement.","tag":"d1w"},
-    {"id":"d1q11","type":"text","skill":"wordform","q":"Every child has the right to a good ______. (EDUCATE)","answer":"education","explain_vi":"Sau 'a good' cần danh từ: educate → education (bỏ -e, thêm -ion).","tag":"d1w"},
-    {"id":"d1q12","type":"mcq","skill":"exam","q":"I have a lot of ______ to do tonight, so I can't go out.","options":["homeworks","assignment","task","homework"],"answer":3,"explain_vi":"homework là danh từ không đếm được: a lot of homework, không thêm -s. 'assignment' và 'task' đếm được nên phải ở số nhiều.","tag":"fmt:sentence_completion"}
+    {"id":"d1q1","type":"mcq","skill":"vocab","q":"All students must ______ school from Monday to Friday.","options":["attend","arrive","go","present"],"answer":0,"explain_vi":"**attend school**: đi học (đều đặn), attend đi thẳng với tân ngữ. ==arrive== và ==go== phải có giới từ (arrive at, go to) nên sai. __Mẹo: chỗ trống đứng ngay trước danh từ thì chọn động từ không cần giới từ.__","tag":"d1v5"},
+    {"id":"d1q2","type":"mcq","skill":"vocab","q":"My handwriting was messy, but it has ______ a lot since I started practising every day.","options":["encouraged","revised","improved","concentrated"],"answer":2,"explain_vi":"Có ==has … a lot since I started practising every day== → chữ viết **đã tiến bộ: improved**. encouraged (khuyến khích), revised (ôn), concentrated (tập trung) không hợp nghĩa. __Mẹo: dịch nhanh cả câu rồi thử từng đáp án.__","tag":"d1v7"},
+    {"id":"d1q3","type":"text","skill":"vocab","q":"My parents always e______ me to try new things, even when I am afraid of failing. (Viết cả từ)","answer":"encourage","explain_vi":"Cấu trúc ==encourage sb to do sth== (khuyến khích ai làm gì) → **encourage**. Chủ ngữ ==My parents== số nhiều nên **không thêm -s**. __Nhớ kiểm tra chủ ngữ trước khi thêm -s.__","tag":"d1v8"},
+    {"id":"d1q4","type":"mcq","skill":"vocab","q":"Because of his family's money problems, the boy had to ______ school at the age of 14.","options":["catch up with","look after","drop out of","get on with"],"answer":2,"explain_vi":"Có ==money problems== và ==at the age of 14== → cậu bé phải **drop out of school** (bỏ học giữa chừng). catch up with là bắt kịp, look after là chăm sóc. __Mẹo: đọc nguyên nhân trong câu để đoán nghĩa cụm động từ.__","tag":"d1p2"},
+    {"id":"d1q5","type":"mcq","skill":"grammar","q":"Listen! Someone ______ the piano in the music room.","options":["plays","is playing","play","has played"],"answer":1,"explain_vi":"==Listen!== báo hiệu việc **đang xảy ra lúc nói** → **hiện tại tiếp diễn: is playing**. __Mẹo: Look!, Listen!, Be quiet! thường đi với be + V-ing.__","tag":"d1g"},
+    {"id":"d1q6","type":"text","skill":"grammar","q":"Water ______ (boil) at 100°C.","answer":"boils","explain_vi":"Nước sôi ở ==100°C== là **sự thật hiển nhiên** → **hiện tại đơn**; chủ ngữ Water số ít → **boils**. __Mẹo: sự thật khoa học luôn dùng hiện tại đơn.__","tag":"d1g"},
+    {"id":"d1q7","type":"mcq","skill":"grammar","q":"I ______ what you mean now. Thanks for explaining!","options":["understand","am understanding","understanding","am understand"],"answer":0,"explain_vi":"**understand** là **động từ trạng thái**, không chia -ing dù có ==now== → **I understand**. __Bẫy: thấy now đừng vội chọn V-ing, kiểm tra động từ trước đã.__","tag":"d1g"},
+    {"id":"d1q8","type":"text","skill":"grammar","q":"Hurry up! Your friends ______ (wait) for you outside.","answer":"are waiting","accept":["'re waiting"],"explain_vi":"==Hurry up!== cho biết các bạn **đang đợi ngay lúc này** → **hiện tại tiếp diễn: are waiting** (chủ ngữ số nhiều Your friends). __Mẹo: câu giục giã đứng trước thường báo hiệu V-ing.__","tag":"d1g"},
+    {"id":"d1q9","type":"mcq","skill":"grammar","q":"Which sentence is correct?","options":["This book is belonging to my teacher.","My dad is owning a small shop.","I am needing a new pencil.","She is having a shower at the moment."],"answer":3,"explain_vi":"**belong, own, need** là động từ trạng thái nên 3 câu đầu sai. ==have a shower== (tắm) là hành động, lại có ==at the moment== → **She is having a shower** đúng. __Nhớ: have nghĩa “có” không chia -ing; have nghĩa “ăn, tắm, nghỉ” thì được.__","tag":"d1g"},
+    {"id":"d1q10","type":"mcq","skill":"wordform","q":"Getting the top score in the final test was a great ______ for Hung.","options":["achieve","achievement","achieving","achievation"],"answer":1,"explain_vi":"Sau ==a great== cần **danh từ** → **achievement** (achieve + -ment). Không có từ achievation. __Mẹo: a/an + tính từ + chỗ trống → điền danh từ.__","tag":"d1w"},
+    {"id":"d1q11","type":"text","skill":"wordform","q":"Every child has the right to a good ______. (EDUCATE)","answer":"education","explain_vi":"Sau ==a good== cần **danh từ**: educate → **education** (bỏ -e, thêm -ion). __Nhớ đổi chính tả khi thêm -tion.__","tag":"d1w"},
+    {"id":"d1q12","type":"mcq","skill":"exam","q":"I have a lot of ______ to do tonight, so I can't go out.","options":["homeworks","assignment","task","homework"],"answer":3,"explain_vi":"**homework** là danh từ **không đếm được**: ==a lot of homework==, không thêm -s. assignment, task đếm được nên phải ở số nhiều mới đúng. __Bẫy: không bao giờ viết homeworks.__","tag":"fmt:sentence_completion"}
   ],
   "can_do_vi": [
     "Em có thể dùng đúng 8 từ mới và 2 cụm động từ về chủ đề trường học.",
