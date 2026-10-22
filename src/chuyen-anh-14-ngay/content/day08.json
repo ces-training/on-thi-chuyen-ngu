@@ -152,37 +152,43 @@
      "id": "d8A1",
      "q": "I read an interesting ______ in the newspaper about a boy who built a robot from rubbish.",
      "answer": "article",
-     "tag": "d8v1"
+     "tag": "d8v1",
+     "explain_vi": "Thứ em đọc ==in the newspaper== là bài báo → **article**. __Sau 'an interesting' cần danh từ bắt đầu bằng nguyên âm.__"
     },
     {
      "id": "d8A2",
      "q": "When the concert ended, the whole ______ stood up and clapped for five minutes.",
      "answer": "audience",
-     "tag": "d8v2"
+     "tag": "d8v2",
+     "explain_vi": "Những người ==stood up and clapped== ở buổi hoà nhạc là khán giả → **audience**. __audience là cả nhóm người xem/nghe, hay đi với 'the whole'.__"
     },
     {
      "id": "d8A3",
      "q": "The TV channel is going to ______ the football final live tonight, so millions of people can watch it at home.",
      "answer": "broadcast",
-     "tag": "d8v3"
+     "tag": "d8v3",
+     "explain_vi": "==live tonight== và ==watch it at home== → phát sóng trực tiếp: **broadcast**. __Sau 'going to' cần động từ nguyên thể.__"
     },
     {
      "id": "d8A4",
      "q": "Online encyclopedias are useful, but they aren't always ______, so you should check the facts in other places too.",
      "answer": "reliable",
-     "tag": "d8v5"
+     "tag": "d8v5",
+     "explain_vi": "Sau ==aren't always== cần **tính từ**: **reliable** (đáng tin cậy); vế ==check the facts in other places== xác nhận nghĩa. __Trong khung chỉ reliable là tính từ.__"
     },
     {
      "id": "d8A5",
      "q": "In my ______, children under ten shouldn't have their own smartphones.",
      "answer": "opinion",
-     "tag": "d8v6"
+     "tag": "d8v6",
+     "explain_vi": "Cụm cố định **in my opinion**: theo ý kiến của tôi. __Em dùng cụm này để mở đầu ý kiến trong bài viết.__"
     },
     {
      "id": "d8A6",
      "q": "I want to ______ what time the museum opens, so I'm going to check its website.",
      "answer": "find out",
-     "tag": "d8p1"
+     "tag": "d8p1",
+     "explain_vi": "**find out**: tìm hiểu, biết được thông tin; ==check its website== cho thấy đang đi tìm thông tin. __Sau 'want to' cần động từ nguyên thể.__"
     }
    ]
   },
@@ -193,19 +199,22 @@
      "id": "d8B1",
      "q": "English ______ (speak) in many countries around the world.",
      "answer": "is spoken",
-     "tag": "d8g"
+     "tag": "d8g",
+     "explain_vi": "Tiếng Anh không tự nói được → **bị động hiện tại đơn: is spoken**; đây là sự thật chung ==in many countries==. __Nhớ V3 bất quy tắc: speak – spoke – spoken.__"
     },
     {
      "id": "d8B2",
      "q": "The evening news ______ (watch) by millions of people every day.",
      "answer": "is watched",
-     "tag": "d8g"
+     "tag": "d8g",
+     "explain_vi": "==every day== → hiện tại đơn; bản tin được xem ==by millions of people== → **is watched**. __'The evening news' đi với is, dù news có đuôi -s.__"
     },
     {
      "id": "d8B3",
      "q": "This article ______ (write) by a 13-year-old student last month.",
      "answer": "was written",
-     "tag": "d8g"
+     "tag": "d8g",
+     "explain_vi": "==last month== → quá khứ; bài báo được viết ==by a 13-year-old student== → **was written**. __V3 của write là written, không phải wrote.__"
     },
     {
      "id": "d8B4",
@@ -214,19 +223,22 @@
      "accept": [
       "was not published"
      ],
-     "tag": "d8g"
+     "tag": "d8g",
+     "explain_vi": "==last week== → quá khứ; chủ ngữ số ít, câu phủ định → **wasn't published** (was not + V3). __Phủ định bị động: thêm not ngay sau was/were.__"
     },
     {
      "id": "d8B5",
      "q": "Hundreds of advertisements ______ (show) on TV every day.",
      "answer": "are shown",
-     "tag": "d8g"
+     "tag": "d8g",
+     "explain_vi": "==every day== → hiện tại đơn; ==Hundreds of advertisements== số nhiều → **are shown**. __Chủ ngữ số nhiều đi với are, không dùng is.__"
     },
     {
      "id": "d8B6",
      "q": "The match was cancelled, and the fans ______ (inform) by text message an hour before it started.",
      "answer": "were informed",
-     "tag": "d8g"
+     "tag": "d8g",
+     "explain_vi": "Vế trước có ==was cancelled== → quá khứ; ==the fans== số nhiều, được thông báo → **were informed**. __'by text message' là dấu hiệu câu bị động.__"
     }
    ]
   },
@@ -237,25 +249,29 @@
      "id": "d8C1",
      "q": "This TV programme is very ______; I learnt a lot of useful facts about the ocean. (INFORM)",
      "answer": "informative",
-     "tag": "d8w"
+     "tag": "d8w",
+     "explain_vi": "Sau ==very== cần **tính từ**: inform + ative → **informative** (bổ ích, nhiều thông tin); ==learnt a lot of useful facts== xác nhận nghĩa. __Đừng nhầm với informed (được thông báo).__"
     },
     {
      "id": "d8C2",
      "q": "The new sofa is so ______ that I fell asleep on it. (COMFORT)",
      "answer": "comfortable",
-     "tag": "d8w"
+     "tag": "d8w",
+     "explain_vi": "Sau ==so … that== cần **tính từ**: comfort + able → **comfortable**. __Giữ nguyên 'comfort' rồi thêm -able.__"
     },
     {
      "id": "d8C3",
      "q": "It isn't ______ to believe everything you read on social media. (SENSE)",
      "answer": "sensible",
-     "tag": "d8w"
+     "tag": "d8w",
+     "explain_vi": "Cấu trúc ==It isn't … to believe== → cần **tính từ**: **sensible** (khôn ngoan, hợp lý). __Bỏ 'e' cuối của sense rồi thêm -ible.__"
     },
     {
      "id": "d8C4",
      "q": "The poster for the school play was so ______ that everyone stopped to look at it. (ATTRACT)",
      "answer": "attractive",
-     "tag": "d8w"
+     "tag": "d8w",
+     "explain_vi": "Sau ==so … that== cần **tính từ**: attract + ive → **attractive** (thu hút); ==everyone stopped to look== xác nhận nghĩa. __Đuôi -ive hay gặp: active, attractive, informative.__"
     }
    ]
   },
@@ -273,7 +289,8 @@
       "get"
      ],
      "answer": "A",
-     "tag": "fmt:sentence_completion"
+     "tag": "fmt:sentence_completion",
+     "explain_vi": "Cụm cố định **do research** (tìm tài liệu, nghiên cứu) → ==some research== đi với **A. do**. __Không nói 'make research'.__"
     },
     {
      "id": "d8D2",
@@ -285,7 +302,8 @@
       "made"
      ],
      "answer": "D",
-     "tag": "fmt:sentence_completion"
+     "tag": "fmt:sentence_completion",
+     "explain_vi": "Cụm cố định **make a mistake** (mắc lỗi) → **D. made**; lỗi chính là ==she wrote the wrong name==. __Không nói 'did a mistake'.__"
     },
     {
      "id": "d8D3",
@@ -297,7 +315,8 @@
       "put"
      ],
      "answer": "B",
-     "tag": "fmt:sentence_completion"
+     "tag": "fmt:sentence_completion",
+     "explain_vi": "Cụm cố định **make a decision** (ra quyết định) → ==a decision== đi với **B. make**. __Học theo cặp: make a decision, make a choice, make a plan.__"
     },
     {
      "id": "d8D4",
@@ -309,7 +328,8 @@
       "take"
      ],
      "answer": "C",
-     "tag": "fmt:sentence_completion"
+     "tag": "fmt:sentence_completion",
+     "explain_vi": "Cụm cố định **do somebody a favour** (giúp ai một việc) → ==Could you … me a favour== chọn **C. do**. __Cụm này không theo quy tắc chung, em phải học thuộc.__"
     }
    ]
   },
@@ -323,14 +343,16 @@
      "kind": "tfng",
      "q": "The post about cold water was written by a doctor.",
      "answer": "False",
-     "tag": "d8r"
+     "tag": "d8r",
+     "explain_vi": "Bài viết: ==they discovered that the post was made by a company that wanted to advertise its own herbal tea== → người viết là một công ty, không phải bác sĩ → **False**. __Bài nói ngược lại câu hỏi thì chọn False.__"
     },
     {
      "id": "d8E2",
      "kind": "tfng",
      "q": "Mai's teacher writes articles for a news website.",
      "answer": "Not Given",
-     "tag": "d8r"
+     "tag": "d8r",
+     "explain_vi": "Bài chỉ nói ==She gives her class three simple tips==, không nhắc cô viết bài cho trang tin nào → **Not Given**. __Không tìm thấy thông tin trong bài thì chọn Not Given, đừng đoán.__"
     },
     {
      "id": "d8E3",
@@ -343,7 +365,8 @@
       "To inform students about the news"
      ],
      "answer": "B",
-     "tag": "d8r"
+     "tag": "d8r",
+     "explain_vi": "Bài viết: ==a company that wanted to advertise its own herbal tea== → bài đăng nhằm bán sản phẩm: **B. To help sell a product**. __advertise (quảng cáo) gần nghĩa với 'help sell'.__"
     },
     {
      "id": "d8E4",
@@ -356,7 +379,8 @@
       "Share the post with your friends first."
      ],
      "answer": "D",
-     "tag": "d8r"
+     "tag": "d8r",
+     "explain_vi": "Ba mẹo của cô: ==check who wrote the information==, ==look for the same story on a well-known news website==, ==ask an adult if you are not sure==. Không có ý chia sẻ bài → **D**. __Câu hỏi NOT: đánh dấu từng ý có trong bài, ý còn lại là đáp án.__"
     }
    ]
   },
@@ -380,7 +404,8 @@
      "q": "Because of the thick fog, our flight was ______ for three hours. (DELAY)",
      "answer": "delayed",
      "from_day": 6,
-     "tag": "d6v5"
+     "tag": "d6v5",
+     "explain_vi": "Sau ==was== cần **V3** (bị động) → **delayed** (bị hoãn); ==Because of the thick fog== là nguyên nhân. __delay là động từ có quy tắc, chỉ cần thêm -ed.__"
     },
     {
      "id": "d8G2",
@@ -390,21 +415,24 @@
       "must not"
      ],
      "from_day": 6,
-     "tag": "d6g"
+     "tag": "d6g",
+     "explain_vi": "Biển ==NO CAMERAS== là lệnh cấm → **mustn't** (không được phép). __should chỉ là lời khuyên, không dùng cho biển cấm.__"
     },
     {
      "id": "d8G3",
      "q": "It took my brother a whole week to ______ his cold. (cụm động từ 2 từ, nghĩa là 'khỏi bệnh, bình phục')",
      "answer": "get over",
      "from_day": 5,
-     "tag": "d5p2"
+     "tag": "d5p2",
+     "explain_vi": "**get over**: khỏi bệnh, bình phục → ==get over his cold==. __Cấu trúc 'It took sb + thời gian + to V' nên dùng động từ nguyên thể.__"
     },
     {
      "id": "d8G4",
      "q": "My grandparents ______ (live) in the countryside, but now they live with us in the city. (Dùng 'used to')",
      "answer": "used to live",
      "from_day": 2,
-     "tag": "d2g"
+     "tag": "d2g",
+     "explain_vi": "Vế sau ==but now they live with us== → trạng thái trong quá khứ nay không còn → **used to live**. __used to + V nguyên thể, không thêm -ed cho live.__"
     }
    ]
   }
@@ -422,7 +450,7 @@
     "broadcast"
    ],
    "answer": 1,
-   "explain_vi": "advertise = quảng cáo (sản phẩm).",
+   "explain_vi": "**advertise** là quảng cáo; thứ được quảng cáo là ==their products==. __inform đi với người, broadcast dùng cho chương trình TV/radio, nên loại hai từ này.__",
    "tag": "d8v4"
   },
   {
@@ -434,7 +462,7 @@
    "accept": [
     "inform"
    ],
-   "explain_vi": "inform somebody = thông báo cho ai biết.",
+   "explain_vi": "**inform somebody**: thông báo cho ai biết → ==inform your teacher==. __Nhớ: inform + người, không cần 'to'.__",
    "tag": "d8v7"
   },
   {
@@ -449,7 +477,7 @@
     "article"
    ],
    "answer": 2,
-   "explain_vi": "have an influence on somebody = có ảnh hưởng đến ai.",
+   "explain_vi": "Cụm **have an influence on somebody**: có ảnh hưởng đến ai. Dấu hiệu: ==on me== và ==because of her==. __Thấy 'a big … on + người', nghĩ ngay tới influence.__",
    "tag": "d8v8"
   },
   {
@@ -464,7 +492,7 @@
     "is writing"
    ],
    "answer": 0,
-   "explain_vi": "Tạp chí không tự viết được → bị động hiện tại đơn: is written.",
+   "explain_vi": "Tạp chí không tự viết, nó được viết ==by students== → **bị động hiện tại đơn: is written**. __Thấy 'by + người làm' là dấu hiệu bị động.__",
    "tag": "d8g"
   },
   {
@@ -479,7 +507,7 @@
     "have taken"
    ],
    "answer": 2,
-   "explain_vi": "'fifty years ago' → quá khứ; ảnh được chụp → bị động: were taken.",
+   "explain_vi": "==fifty years ago== → quá khứ; ảnh được chụp ==by my grandfather== → **were taken**. __'These photos' số nhiều nên dùng were, không dùng was.__",
    "tag": "d8g"
   },
   {
@@ -491,7 +519,7 @@
    "accept": [
     "were announced"
    ],
-   "explain_vi": "'yesterday' → quá khứ đơn; 'winners' số nhiều → were + V3.",
+   "explain_vi": "==yesterday== → quá khứ đơn; ==The winners== số nhiều → **were announced** (were + V3). __Làm 2 bước: chọn thì trước, rồi chọn was hay were.__",
    "tag": "d8g"
   },
   {
@@ -506,7 +534,7 @@
     "active"
    ],
    "answer": 3,
-   "explain_vi": "Sau 'stay' cần tính từ: act + ive = active.",
+   "explain_vi": "Sau ==stay== cần **tính từ**: act + ive → **active**, đi cặp với tính từ 'healthy'. __Thấy 'and + tính từ' thì chỗ trống cũng là tính từ.__",
    "tag": "d8w"
   },
   {
@@ -518,7 +546,7 @@
    "accept": [
     "enjoyable"
    ],
-   "explain_vi": "Sau 'was really' cần tính từ: enjoy + able = enjoyable (thú vị).",
+   "explain_vi": "Sau ==was really== cần **tính từ**: enjoy + able → **enjoyable** (thú vị). __Đuôi -able hay mang nghĩa 'đáng…, có thể…'.__",
    "tag": "d8w"
   },
   {
@@ -533,7 +561,7 @@
     "done"
    ],
    "answer": 3,
-   "explain_vi": "do the washing-up = rửa bát (công việc nhà đi với 'do').",
+   "explain_vi": "Cụm cố định **do the washing-up** (rửa bát); có ==I've already== nên dùng V3 của do: **done**. __Việc nhà thường đi với do: do the shopping, do the cleaning.__",
    "tag": "fmt:sentence_completion"
   },
   {
@@ -549,7 +577,7 @@
     "went"
    ],
    "answer": 0,
-   "explain_vi": "set off = khởi hành, lên đường.",
+   "explain_vi": "**set off**: khởi hành, lên đường; ==for the airport at 4 a.m.== cho thấy việc xuất phát. __Cụm 'set off for + nơi đến' rất hay gặp.__",
    "tag": "d6p1"
   },
   {
@@ -562,7 +590,7 @@
    "accept": [
     "avoid"
    ],
-   "explain_vi": "avoid + V-ing = tránh làm gì.",
+   "explain_vi": "**avoid + V-ing**: tránh làm gì → ==avoid eating== too many sweets. __Sau avoid luôn dùng V-ing, không dùng to V.__",
    "tag": "d5v8"
   },
   {
@@ -578,7 +606,7 @@
     "dropped out"
    ],
    "answer": 1,
-   "explain_vi": "take up = bắt đầu một sở thích mới (quá khứ: took up).",
+   "explain_vi": "**take up**: bắt đầu một sở thích mới; ==last year== → quá khứ **took up**, và ==now he plays every Sunday==. __gave up nghĩa ngược lại (bỏ), không hợp với 'now he plays'.__",
    "tag": "d2p1"
   }
  ],

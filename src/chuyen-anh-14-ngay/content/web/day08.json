@@ -10,7 +10,8 @@
       "Coffee is grown in the Central Highlands.",
       "These cartoons are watched by millions of kids.",
       "The school gate is locked at 6 p.m."
-     ]
+     ],
+     "rule_vi": "**is/are + V3**, nói về việc thường xuyên hoặc sự thật: ==is grown==, ==are watched==, ==is locked==. __Chủ ngữ là vật không tự làm được → nghĩ tới bị động.__"
     },
     {
      "name": "Past simple passive",
@@ -18,7 +19,8 @@
       "The film was made in South Korea.",
       "Two new libraries were opened last year.",
       "My phone was stolen on the bus."
-     ]
+     ],
+     "rule_vi": "**was/were + V3**, việc đã xảy ra: ==was made==, ==were opened last year==, ==was stolen==. __Thấy was/were đứng trước V3 là nhận ra ngay.__"
     },
     {
      "name": "Active voice",
@@ -26,30 +28,36 @@
       "The reporter interviewed our head teacher.",
       "Millions of people watch this show.",
       "My mum writes articles for a magazine."
-     ]
+     ],
+     "rule_vi": "Chủ ngữ **tự làm hành động**, không có be + V3: ==The reporter interviewed==, ==Millions of people watch==, ==My mum writes==. __Câu chủ động có người làm đứng đầu câu.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "Most football matches are broadcast live on this channel.",
-    "hint_vi": "Bị động hiện tại đơn: are + V3 (broadcast – broadcast – broadcast)."
+    "hint_vi": "Bị động hiện tại đơn: are + V3 (broadcast – broadcast – broadcast).",
+    "why_vi": "**Chủ ngữ + are + V3 + live + nơi chốn**: Most football matches ==are broadcast live== on this channel. __live (trực tiếp) đứng ngay sau động từ.__"
    },
    {
     "sentence": "This article was written by a famous journalist.",
-    "hint_vi": "Bị động quá khứ đơn có 'by + người làm'."
+    "hint_vi": "Bị động quá khứ đơn có 'by + người làm'.",
+    "why_vi": "**Chủ ngữ + was + V3 + by + người làm**: This article ==was written by== a famous journalist. __Cụm danh từ: mạo từ + tính từ + danh từ (a famous journalist).__"
    },
    {
     "sentence": "Was this video made by your classmates?",
-    "hint_vi": "Câu hỏi bị động quá khứ: Was + chủ ngữ + V3 + by...?"
+    "hint_vi": "Câu hỏi bị động quá khứ: Was + chủ ngữ + V3 + by...?",
+    "why_vi": "Câu hỏi bị động quá khứ: **Was + chủ ngữ + V3 + by…?** → ==Was this video made by== your classmates? __Đưa was lên đầu, không dùng Did.__"
    },
    {
     "sentence": "Mobile phones are not allowed in the exam room.",
-    "hint_vi": "Phủ định bị động hiện tại: are not + V3."
+    "hint_vi": "Phủ định bị động hiện tại: are not + V3.",
+    "why_vi": "Phủ định bị động: **are not + V3** → Mobile phones ==are not allowed== in the exam room. __not đứng giữa are và V3.__"
    },
    {
     "sentence": "The concert wasn't broadcast live because of the storm.",
-    "hint_vi": "Phủ định bị động quá khứ: wasn't + V3."
+    "hint_vi": "Phủ định bị động quá khứ: wasn't + V3.",
+    "why_vi": "**wasn't + V3** rồi mới đến lý do: The concert ==wasn't broadcast live== ==because of the storm==. __because of + danh từ, đặt ở cuối câu.__"
    }
   ],
   "truefalse": [
@@ -57,49 +65,49 @@
     "s": "The magazine is publish every month.",
     "ok": false,
     "fix": "The magazine is published every month.",
-    "why_vi": "Bị động cần be + V3: is published, không phải is publish."
+    "why_vi": "Bị động cần **be + V3**: ==is publish== sai → **is published**. __Kiểm tra động từ sau is/are đã ở dạng V3 chưa.__"
    },
    {
     "s": "My bike was repaired by my dad yesterday.",
     "ok": true,
     "fix": "My bike was repaired by my dad yesterday.",
-    "why_vi": "Đúng: 'yesterday' → quá khứ; chủ ngữ số ít → was + V3."
+    "why_vi": "Đúng: ==yesterday== → quá khứ; chủ ngữ ==My bike== số ít → **was repaired**."
    },
    {
     "s": "The prizes gave to the best students last Friday.",
     "ok": false,
     "fix": "The prizes were given to the best students last Friday.",
-    "why_vi": "Giải thưởng không tự trao → bị động; chủ ngữ số nhiều, quá khứ → were given."
+    "why_vi": "Giải thưởng không tự trao → bị động; ==last Friday== và chủ ngữ số nhiều → **were given**. __Thiếu 'be' trong câu bị động là lỗi hay gặp.__"
    },
    {
     "s": "These cakes are made by my grandmother.",
     "ok": true,
     "fix": "These cakes are made by my grandmother.",
-    "why_vi": "Đúng: chủ ngữ số nhiều → are + V3 (made)."
+    "why_vi": "Đúng: ==These cakes== số nhiều → **are made** (are + V3). __by + người làm cho biết ai làm bánh.__"
    },
    {
     "s": "Long Biên Bridge was build in 1902.",
     "ok": false,
     "fix": "Long Biên Bridge was built in 1902.",
-    "why_vi": "V3 của build là built (build – built – built)."
+    "why_vi": "V3 của build là built → ==was build== sửa thành **was built**. __Học thuộc: build – built – built.__"
    },
    {
     "s": "Is breakfast served at 7 a.m. in this hotel?",
     "ok": true,
     "fix": "Is breakfast served at 7 a.m. in this hotel?",
-    "why_vi": "Đúng: câu hỏi bị động hiện tại đơn, đưa 'is' lên đầu câu."
+    "why_vi": "Đúng: câu hỏi bị động hiện tại đơn **Is + chủ ngữ + V3?** → ==Is breakfast served==. __Muốn hỏi, đưa is lên đầu câu.__"
    },
    {
     "s": "These shoes was made in Việt Nam.",
     "ok": false,
     "fix": "These shoes were made in Việt Nam.",
-    "why_vi": "'These shoes' số nhiều → were, không dùng was."
+    "why_vi": "==These shoes== số nhiều → **were made**, không dùng was. __These/Those luôn đi với danh từ số nhiều.__"
    },
    {
     "s": "The posters weren't printed on time.",
     "ok": true,
     "fix": "The posters weren't printed on time.",
-    "why_vi": "Đúng: phủ định bị động quá khứ, số nhiều → weren't + V3."
+    "why_vi": "Đúng: phủ định bị động quá khứ, số nhiều → ==weren't printed== (**weren't + V3**)."
    }
   ]
  },
@@ -120,7 +128,7 @@
       "take"
      ],
      "answer": 1,
-     "explain_vi": "Cụm cố định: make (a) noise = gây ồn. Không nói 'do noise'."
+     "explain_vi": "Cụm cố định **make (a) noise**: gây ồn → **make**; ==the show is broadcast live== nên phải giữ im lặng. __Không nói 'do noise'.__"
     },
     {
      "q": "Don't worry about winning the contest. Just ______ your best.",
@@ -131,7 +139,7 @@
       "give"
      ],
      "answer": 2,
-     "explain_vi": "Cụm cố định: do your best = cố gắng hết sức."
+     "explain_vi": "Cụm cố định **do your best**: cố gắng hết sức → ==Just … your best== chọn **do**. __Học kèm: do your best, make an effort.__"
     },
     {
      "q": "The first Vietnamese-language newspaper, Gia Định báo, ______ in 1865.",
@@ -142,7 +150,7 @@
       "has published"
      ],
      "answer": 1,
-     "explain_vi": "Tờ báo được xuất bản (bị động), mốc 1865 là quá khứ → was published."
+     "explain_vi": "Tờ báo được xuất bản → bị động; mốc ==in 1865== là quá khứ → **was published**. __Chủ ngữ là vật và sau chỗ trống không có tân ngữ → nghĩ tới bị động.__"
     },
     {
      "q": "Nguyễn Nhật Ánh's novel 'Mắt biếc' ______ into a film in 2019.",
@@ -153,7 +161,7 @@
       "was made"
      ],
      "answer": 3,
-     "explain_vi": "Cuốn tiểu thuyết được chuyển thể thành phim (bị động), năm 2019 → was made into a film."
+     "explain_vi": "Tiểu thuyết được chuyển thành phim → bị động; ==in 2019== là quá khứ → **was made** (into a film). __has made sai vì có năm cụ thể và câu cần bị động.__"
     },
     {
      "q": "I only read news on ______ websites that always check their facts.",
@@ -164,7 +172,7 @@
       "expensive"
      ],
      "answer": 1,
-     "explain_vi": "reliable = đáng tin cậy; trang web luôn kiểm tra thông tin thì đáng tin."
+     "explain_vi": "**reliable**: đáng tin cậy; dấu hiệu ==always check their facts==. __Đọc vế sau 'that…' để đoán nghĩa của tính từ cần điền.__"
     }
    ]
   },
@@ -184,7 +192,7 @@
       "more toys"
      ],
      "answer": 1,
-     "explain_vi": "Bị động cần V3: are designed (được thiết kế), không phải are design."
+     "explain_vi": "Bị động cần **be + V3**: ==are design== phải sửa thành **are designed**. __Sau is/are/was/were, động từ phải ở dạng V3.__"
     },
     {
      "q": "The article was wrote by a student who came across the story online.",
@@ -195,7 +203,7 @@
       "online"
      ],
      "answer": 0,
-     "explain_vi": "V3 của write là written → was written. 'wrote' là quá khứ đơn, không dùng sau 'was'."
+     "explain_vi": "V3 của write là written → ==was wrote== sửa thành **was written**. __wrote là quá khứ đơn, không đứng sau was.__"
     },
     {
      "q": "My sister always does a lot of mistakes when she types messages quickly.",
@@ -206,7 +214,7 @@
       "quickly"
      ],
      "answer": 1,
-     "explain_vi": "Cụm cố định: make a mistake (mắc lỗi) → makes. Không nói 'do mistakes'."
+     "explain_vi": "Cụm cố định **make a mistake**: mắc lỗi → ==does== sửa thành **makes**. __Không nói 'do mistakes'.__"
     },
     {
      "q": "In my opinion, this website is more reliable than that one because its news are checked carefully.",
@@ -217,7 +225,7 @@
       "carefully"
      ],
      "answer": 2,
-     "explain_vi": "'news' là danh từ không đếm được, đi với động từ số ít → its news is checked."
+     "explain_vi": "**news** là danh từ không đếm được, đi với động từ số ít → ==news are== sửa thành **news is**. __Đuôi -s của news không phải số nhiều.__"
     },
     {
      "q": "Last weekend, two football matches was broadcast live on VTV.",
@@ -228,7 +236,7 @@
       "on VTV"
      ],
      "answer": 2,
-     "explain_vi": "Chủ ngữ 'two football matches' số nhiều → were broadcast, không dùng was."
+     "explain_vi": "Chủ ngữ ==two football matches== số nhiều → **were broadcast**, không dùng was. __Luôn tìm chủ ngữ rồi xem số ít hay số nhiều.__"
     }
    ]
   }
@@ -250,7 +258,7 @@
       "go"
      ],
      "answer": 1,
-     "explain_vi": "Cụm cố định: do homework = làm bài tập về nhà. Không nói make homework."
+     "explain_vi": "Cụm cố định **do homework**: làm bài tập về nhà → ==do my homework==. __Không nói make homework.__"
     },
     {
      "q": "My mum ______ a cake for my birthday every year.",
@@ -261,7 +269,7 @@
       "goes"
      ],
      "answer": 0,
-     "explain_vi": "make a cake = làm bánh (tạo ra một thứ mới). 'does a cake' sai cụm từ."
+     "explain_vi": "**make a cake**: làm bánh (tạo ra thứ mới); ==My mum== số ít nên dùng **makes**. __Tạo ra món ăn, đồ vật thường dùng make.__"
     },
     {
      "q": "English ______ at my school from Grade 1.",
@@ -272,7 +280,7 @@
       "is teaching"
      ],
      "answer": 2,
-     "explain_vi": "Môn tiếng Anh không tự dạy được, nó được dạy → bị động hiện tại đơn: is + V3 (taught)."
+     "explain_vi": "Tiếng Anh không tự dạy được mà được dạy ==at my school== → **is taught** (bị động hiện tại đơn). __Chủ ngữ là vật, sau chỗ trống không có tân ngữ → nghĩ tới bị động.__"
     },
     {
      "q": "The football match ______ on TV last night.",
@@ -283,7 +291,7 @@
       "was shown"
      ],
      "answer": 3,
-     "explain_vi": "Trận đấu được chiếu (bị động), 'last night' là quá khứ → was + V3: was shown."
+     "explain_vi": "==last night== → quá khứ; trận đấu được chiếu → **was shown**. __showed là chủ động, trận đấu không tự chiếu được.__"
     },
     {
      "q": "We watch the news on TV to ______ out what is happening in the world.",
@@ -294,7 +302,7 @@
       "take"
      ],
      "answer": 1,
-     "explain_vi": "find out = tìm hiểu, biết được (thông tin). Xem thời sự để biết chuyện gì đang xảy ra."
+     "explain_vi": "**find out**: tìm hiểu, biết được; thông tin cần biết là ==what is happening in the world==. __Nhớ cụm: find out + what/when/where….__"
     }
    ]
   },
@@ -314,7 +322,7 @@
       "writer"
      ],
      "answer": 1,
-     "explain_vi": "Câu bị động cần be + V3. V3 của write là written → was written, không viết was write."
+     "explain_vi": "Bị động cần **be + V3**: ==was write== sửa thành **was written**. __Học thuộc: write – wrote – written.__"
     },
     {
      "q": "Every day, a lot of letters is sent to the TV station.",
@@ -325,7 +333,7 @@
       "the TV station"
      ],
      "answer": 2,
-     "explain_vi": "Chủ ngữ 'a lot of letters' là số nhiều → are sent, không dùng is sent."
+     "explain_vi": "==a lot of letters== là số nhiều → **are sent**, không dùng is. __Sau 'a lot of', nhìn danh từ để chọn số ít hay số nhiều.__"
     },
     {
      "q": "My little brother always does a big mess when he cooks.",
@@ -336,7 +344,7 @@
       "when he cooks"
      ],
      "answer": 1,
-     "explain_vi": "Cụm cố định: make a mess = bày bừa, làm bừa bộn → makes a big mess. Không dùng do."
+     "explain_vi": "Cụm cố định **make a mess** (bày bừa) → ==does== sửa thành **makes**. __Không nói 'do a mess'.__"
     },
     {
      "q": "Did the cake made by your sister?",
@@ -347,7 +355,7 @@
       "your sister"
      ],
      "answer": 0,
-     "explain_vi": "Câu hỏi bị động quá khứ đưa was lên đầu: Was the cake made by your sister? Không dùng Did với V3."
+     "explain_vi": "Câu hỏi bị động quá khứ: **Was + chủ ngữ + V3** → ==Did the cake made== sửa thành **Was the cake made**. __Did không đi với V3.__"
     },
     {
      "q": "I read an interesting article about robots and learnt a lot of informations.",
@@ -358,7 +366,7 @@
       "informations"
      ],
      "answer": 3,
-     "explain_vi": "information là danh từ không đếm được, không thêm -s → a lot of information."
+     "explain_vi": "**information** là danh từ không đếm được, không thêm -s → ==informations== sửa thành **information**. __news, advice, homework cũng không thêm -s.__"
     }
    ]
   }
@@ -380,7 +388,7 @@
       "persuadable"
      ],
      "answer": 2,
-     "explain_vi": "Sau so cần tính từ mô tả quảng cáo: persuasive (có sức thuyết phục). persuaded là cảm giác của người bị thuyết phục."
+     "explain_vi": "Sau ==so== cần **tính từ** tả quảng cáo: **persuasive** (có sức thuyết phục). __persuaded tả cảm giác của người bị thuyết phục, không dùng cho quảng cáo.__"
     },
     {
      "q": "The president's speech ______ live on all national channels yesterday evening.",
@@ -391,7 +399,7 @@
       "has broadcast"
      ],
      "answer": 1,
-     "explain_vi": "Bài phát biểu được phát sóng → bị động quá khứ. broadcast là động từ bất quy tắc: V3 vẫn là broadcast → was broadcast."
+     "explain_vi": "Bài phát biểu được phát sóng, ==yesterday evening== → **was broadcast** (V3 của broadcast vẫn là broadcast). __was broadcasting là chủ động, không hợp nghĩa.__"
     },
     {
      "q": "The reporter refused to ______ the name of the person who had given her the information.",
@@ -402,7 +410,7 @@
       "advertise"
      ],
      "answer": 1,
-     "explain_vi": "reveal = tiết lộ (tên, bí mật). inform đi với người (inform sb), express dùng cho cảm xúc, ý kiến."
+     "explain_vi": "**reveal**: tiết lộ; dấu hiệu ==refused to … the name==. __inform đi với người, express dùng cho cảm xúc, nên loại hai từ này.__"
     },
     {
      "q": "While doing research for her essay, Mai ______ an old newspaper article that her grandfather had written.",
@@ -413,7 +421,7 @@
       "came over"
      ],
      "answer": 0,
-     "explain_vi": "come across = tình cờ thấy. come up with = nghĩ ra (ý tưởng), come round = ghé thăm, tỉnh lại."
+     "explain_vi": "**come across**: tình cờ thấy; ==While doing research== Mai tình cờ thấy bài báo cũ → **came across**. __come up with là nghĩ ra ý tưởng, dễ nhầm.__"
     },
     {
      "q": "Social media companies should ______ more effort to stop the spread of false information.",
@@ -424,7 +432,7 @@
       "give"
      ],
      "answer": 1,
-     "explain_vi": "Collocation: make an effort = cố gắng, nỗ lực. Không nói do/take/give effort."
+     "explain_vi": "Collocation **make an effort**: cố gắng, nỗ lực → ==more effort== đi với **make**. __Không nói do/take/give effort.__"
     }
    ]
   },
@@ -444,7 +452,7 @@
       "viewers"
      ],
      "answer": 2,
-     "explain_vi": "Chủ ngữ thật là 'The documentary' (số ít); bỏ mệnh đề which… sẽ thấy → was watched."
+     "explain_vi": "Bỏ mệnh đề ==which was filmed in the Arctic== → chủ ngữ thật 'The documentary' số ít → **was watched**. __Chủ ngữ ở xa động từ: gạch bỏ mệnh đề phụ để tìm.__"
     },
     {
      "q": "Many teenagers are influenced from what they see online, so they should be taught to think critically.",
@@ -455,7 +463,7 @@
       "critically"
      ],
      "answer": 0,
-     "explain_vi": "Bị động dùng by để chỉ tác nhân: be influenced by sth. Không dùng from."
+     "explain_vi": "Bị động dùng **by** để chỉ tác nhân: **be influenced by** → ==are influenced from== sai. __Nhớ cụm: be influenced by sb/sth.__"
     },
     {
      "q": "Not all the information that are shared online is reliable, so readers should always check it.",
@@ -466,7 +474,7 @@
       "should always check"
      ],
      "answer": 1,
-     "explain_vi": "that thay cho information (không đếm được, số ít) → that is shared. Động từ chính 'is reliable' cũng cho thấy số ít."
+     "explain_vi": "==that== thay cho information (không đếm được) → **that is shared**; động từ chính ==is reliable== cũng số ít. __Danh từ không đếm được luôn đi với động từ số ít.__"
     },
     {
      "q": "The winner of the photo contest, which was organised by a local newspaper, was chose by readers.",
@@ -477,7 +485,7 @@
       "was chose"
      ],
      "answer": 3,
-     "explain_vi": "V3 của choose là chosen → was chosen. chose là quá khứ đơn, không dùng sau was."
+     "explain_vi": "V3 của choose là chosen → ==was chose== sửa thành **was chosen**. __chose là quá khứ đơn, không đứng sau was.__"
     },
     {
      "q": "Every advertisement on children's channels are checked carefully before it is broadcast.",
@@ -488,7 +496,7 @@
       "before it is broadcast"
      ],
      "answer": 1,
-     "explain_vi": "every + danh từ số ít đi với động từ số ít → is checked. Đại từ 'it' phía sau cũng cho thấy số ít."
+     "explain_vi": "**every + danh từ số ít** → động từ số ít: **is checked**; đại từ ==it== phía sau cũng cho thấy số ít. __Thấy every/each, chọn is/was.__"
     }
    ]
   }
@@ -501,13 +509,15 @@
     "id": "d8H1",
     "q": "Teachers have stopped recommending that website because its information is often ______. (RELY)",
     "answer": "unreliable",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Thầy cô ==have stopped recommending== trang web → thông tin không đáng tin → thêm tiền tố un-: **unreliable**. __Đọc nghĩa cả câu để biết có cần nghĩa phủ định không.__"
    },
    {
     "id": "d8H2",
     "q": "The drink advert was banned for being ______: it suggested that the drink could cure serious illnesses. (LEAD)",
     "answer": "misleading",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Quảng cáo ==was banned== vì nói sai sự thật (==could cure serious illnesses==) → **misleading**: gây hiểu nhầm (mis- + lead + -ing). __Tiền tố mis- nghĩa là sai, nhầm.__"
    },
    {
     "id": "d8H3",
@@ -517,7 +527,8 @@
      "this article about plastic waste written by",
      "this article written by?",
      "this article written by"
-    ]
+    ],
+    "explain_vi": "Câu hỏi bị động với Who: **Who was + chủ ngữ + V3 + by?** → ==Who was this article about plastic waste written by?== __Đừng quên 'by' ở cuối câu.__"
    },
    {
     "id": "d8H4",
@@ -525,7 +536,8 @@
     "answer": "was given some secret documents last week",
     "accept": [
      "was given some secret documents last week by someone"
-    ]
+    ],
+    "explain_vi": "Đưa người nhận lên làm chủ ngữ: **The journalist was given** + vật; ==last week== → quá khứ nên dùng was. __'by someone' không cần thiết, có thể bỏ.__"
    },
    {
     "id": "d8H5",
@@ -536,7 +548,8 @@
      "took",
      "reached"
     ],
-    "answer": "A"
+    "answer": "A",
+    "explain_vi": "Collocation **hit the headlines**: lên trang nhất, gây chú ý → **A. hit**; ==for weeks== cho thấy tin được nhắc rất lâu. __Đề chuyên hay hỏi collocation, em nên học thuộc.__"
    },
    {
     "id": "d8H6",
@@ -547,7 +560,8 @@
      "take down",
      "take up"
     ],
-    "answer": "C"
+    "answer": "C",
+    "explain_vi": "**take down**: gỡ xuống (bài đăng, quảng cáo) → **C**; lý do là ==many parents complained==. __take up là bắt đầu sở thích, take after là giống ai, dễ nhầm.__"
    }
   ]
  },
@@ -666,7 +680,7 @@
        "Today"
       ],
       "answer": 2,
-      "explain_vi": "Linh nói: \"It was printed yesterday.\""
+      "explain_vi": "Linh nói: ==\"It was printed yesterday.\"== → **Yesterday**. __'last week' là lúc Linh nói chuyện với cầu thủ, đừng nhầm.__"
      },
      {
       "q": "On which page is Linh's article?",
@@ -677,7 +691,7 @@
        "Page 40"
       ],
       "answer": 0,
-      "explain_vi": "Linh nói: \"my article is on page 4.\""
+      "explain_vi": "Linh: ==\"my article is on page 4.\"== → **Page 4**. __Nghe kỹ số: four, fourteen, forty dễ nhầm.__"
      },
      {
       "q": "What is Linh's article about?",
@@ -688,7 +702,7 @@
        "The school library"
       ],
       "answer": 1,
-      "explain_vi": "Linh: \"It's about our school football team.\""
+      "explain_vi": "Linh: ==\"It's about our school football team.\"== → **The school football team**."
      },
      {
       "q": "Who took the photos?",
@@ -699,7 +713,7 @@
        "Mai"
       ],
       "answer": 3,
-      "explain_vi": "Linh: \"They were taken by my friend Mai.\""
+      "explain_vi": "Linh: ==\"They were taken by my friend Mai.\"== → **Mai**. __Câu bị động 'by + người' cho biết ai làm.__"
      },
      {
       "q": "How much does the magazine cost?",
@@ -710,7 +724,7 @@
        "20,000 dong"
       ],
       "answer": 2,
-      "explain_vi": "Linh: \"You don't need to buy it. It's free!\""
+      "explain_vi": "Linh: ==\"You don't need to buy it. It's free!\"== → **Nothing**. __free là miễn phí, tức không mất tiền.__"
      }
     ]
    },
@@ -723,29 +737,29 @@
      {
       "answer": "Saturday",
       "accept": [],
-      "explain_vi": "Anna nói: \"Teen Time is broadcast every Saturday morning.\""
+      "explain_vi": "Anna: ==\"Teen Time is broadcast every Saturday morning\"== → **Saturday**. __Viết hoa chữ cái đầu các thứ trong tuần.__"
      },
      {
       "answer": "school",
       "accept": [],
-      "explain_vi": "Anna nói: \"we talk about music, films, sport and school life.\""
+      "explain_vi": "==\"we talk about music, films, sport and school life\"== → **school**. __Nghe từ đứng ngay trước 'life'.__"
      },
      {
       "answer": "stamp",
       "accept": [
        "stamps"
       ],
-      "explain_vi": "Anna nói: \"he's going to talk about his stamp collection.\""
+      "explain_vi": "==\"he's going to talk about his stamp collection\"== → **stamp**."
      },
      {
       "answer": "website",
       "accept": [],
-      "explain_vi": "Anna nói: \"send us a message on our website, or you can phone us.\""
+      "explain_vi": "==\"send us a message on our website, or you can phone us\"== → **website**. __Đề có 'or by phone' gợi ý vế còn lại.__"
      },
      {
       "answer": "cinema",
       "accept": [],
-      "explain_vi": "Anna nói: \"The best message each week wins two cinema tickets.\""
+      "explain_vi": "==\"The best message each week wins two cinema tickets.\"== → **cinema**."
      }
     ]
    }
@@ -824,7 +838,7 @@
        "In a newspaper"
       ],
       "answer": 0,
-      "explain_vi": "Nam: \"Someone shared it in our class chat group last night.\""
+      "explain_vi": "Nam: ==\"Someone shared it in our class chat group last night.\"== → **In his class chat group**. __School website được nhắc sau, là thông tin nhiễu.__"
      },
      {
       "q": "Why does Mai doubt the video?",
@@ -835,7 +849,7 @@
        "It doesn't say who made it."
       ],
       "answer": 3,
-      "explain_vi": "Video không có tên người làm; Mai: \"A reliable news site always tells you who wrote the story.\""
+      "explain_vi": "Nam nói ==\"there's no name on the video\"==, mà Mai cho rằng trang tin đáng tin luôn ghi người viết → **It doesn't say who made it**. __Nhiều lượt xem không phải lý do Mai nghi ngờ.__"
      },
      {
       "q": "According to Mai, where is important school news posted first?",
@@ -846,7 +860,7 @@
        "On a TV channel"
       ],
       "answer": 1,
-      "explain_vi": "Mai: \"check the school website. Important news is always posted there first.\""
+      "explain_vi": "Mai: ==\"check the school website. Important news is always posted there first.\"== → **On the school website**."
      },
      {
       "q": "When are outdoor sports lessons cancelled?",
@@ -857,7 +871,7 @@
        "Only on Friday"
       ],
       "answer": 2,
-      "explain_vi": "Nam đọc nhầm rồi sửa: \"Oh no, wait, Thursday and Friday.\""
+      "explain_vi": "Nam đọc nhầm rồi sửa: ==\"Oh no, wait, Thursday and Friday.\"== → **On Thursday and Friday**. __Nghe 'wait', 'sorry, I mean' thì thông tin phía sau mới đúng.__"
      },
      {
       "q": "What does Mai want to do next?",
@@ -868,7 +882,7 @@
        "Leave the class chat group"
       ],
       "answer": 1,
-      "explain_vi": "Mai: \"Let's tell the class what's really happening.\""
+      "explain_vi": "Mai: ==\"Let's tell the class what's really happening\"== → **Tell the class the true story**. __Đáp án hay diễn đạt lại: what's really happening là the true story.__"
      }
     ]
    },
@@ -881,31 +895,31 @@
      {
       "answer": "1995",
       "accept": [],
-      "explain_vi": "Thầy nói 1998 rồi sửa: \"Sorry, I mean 1995.\""
+      "explain_vi": "Thầy nói 1998 rồi sửa: ==\"Sorry, I mean 1995.\"== → **1995**. __Nghe 'Sorry, I mean' thì lấy thông tin sau.__"
      },
      {
       "answer": "2",
       "accept": [
        "two"
       ],
-      "explain_vi": "\"watched by about 2 million people.\""
+      "explain_vi": "==\"watched by about 2 million people\"== → **2**."
      },
      {
       "answer": "checked",
       "accept": [],
-      "explain_vi": "\"the newsroom, where the stories are written and checked.\""
+      "explain_vi": "==\"the newsroom, where the stories are written and checked\"== → **checked**. __Điền đúng dạng V3 như trong bài nghe.__"
      },
      {
       "answer": "cooking",
       "accept": [],
-      "explain_vi": "\"Studio B, where our cooking show is filmed.\""
+      "explain_vi": "==\"Studio B, where our cooking show is filmed\"== → **cooking**."
      },
      {
       "answer": "cap",
       "accept": [
        "a cap"
       ],
-      "explain_vi": "\"each of you will be given a free cap as a souvenir.\""
+      "explain_vi": "==\"each of you will be given a free cap as a souvenir\"== → **cap**. __Đề đã có 'a' nên chỉ cần điền cap.__"
      }
     ]
    }
@@ -992,7 +1006,7 @@
        "He saw a gamer he admires wearing them."
       ],
       "answer": 3,
-      "explain_vi": "Tom: \"my favourite gamer wore them in one of his videos, so I just had to have them.\""
+      "explain_vi": "Tom: ==\"my favourite gamer wore them in one of his videos, so I just had to have them\"== → **He saw a gamer he admires wearing them**. __Người anh họ được nhắc sau, là phương án nhiễu.__"
      },
      {
       "q": "What does Anna suggest about the gamer?",
@@ -1003,7 +1017,7 @@
        "He always tells his fans the truth."
       ],
       "answer": 0,
-      "explain_vi": "Anna: \"someone who was probably paid to wear them.\" Câu \"he'd bought them himself\" là lời gamer, Anna không tin."
+      "explain_vi": "Anna: ==\"someone who was probably paid to wear them\"== → **He was probably paid by the brand**. __Câu 'he'd bought them himself' là lời gamer, Anna không tin.__"
      },
      {
       "q": "What is Anna's opinion of advertising?",
@@ -1014,7 +1028,7 @@
        "It only affects people who play games."
       ],
       "answer": 1,
-      "explain_vi": "\"I'm not saying advertising is always bad. It does inform us... we should find out more before we spend.\""
+      "explain_vi": "Anna: ==\"It does inform us about new products. I just think we should find out more before we spend our money.\"== → **It can be useful, but buyers should do some research**. __'not saying… always bad' giúp loại 'always dishonest'.__"
      },
      {
       "q": "Why does Tom mention the phone case?",
@@ -1025,7 +1039,7 @@
        "He wants to buy the same one."
       ],
       "answer": 2,
-      "explain_vi": "Tom nhắc Anna từng xếp hàng 3 tiếng mua ốp điện thoại, ý nói Anna cũng từng làm giống mình."
+      "explain_vi": "Tom hỏi: ==\"weren't you the one who queued for three hours to buy that phone case\"== → ý là **Anna cũng từng làm việc tương tự**. __Câu hỏi 'Why does… mention' hỏi mục đích, không hỏi nội dung.__"
      },
      {
       "q": "What does Tom decide at the end?",
@@ -1036,7 +1050,7 @@
        "To buy cheaper trainers like his cousin's"
       ],
       "answer": 0,
-      "explain_vi": "Tom giữ đôi giày (\"I'm keeping these\") và hứa: \"No more shopping just because of one video\" – lần sau xem đánh giá trước."
+      "explain_vi": "Tom hứa: ==\"No more shopping just because of one video\"==, sau khi Anna dặn xem đánh giá → **To check reviews before buying things in future**. __Tom nói 'I'm keeping these', nên loại phương án trả lại giày.__"
      }
     ]
    },
@@ -1051,19 +1065,19 @@
       "accept": [
        "six"
       ],
-      "explain_vi": "\"some people say twice as fast, but in fact it can be up to 6 times faster.\""
+      "explain_vi": "==\"Some people say twice as fast, but in fact it can be up to 6 times faster\"== → **6**. __'twice' là thông tin nhiễu; nghe 'in fact' để lấy số đúng.__"
      },
      {
       "answer": "published",
       "accept": [],
-      "explain_vi": "\"Who wrote the article, and when was it published?\""
+      "explain_vi": "==\"Who wrote the article, and when was it published?\"== → **published**. __Từ cần điền là V3 vì đứng sau 'was'.__"
      },
      {
       "answer": "2",
       "accept": [
        "two"
       ],
-      "explain_vi": "\"reported by at least 2 other reliable websites\" – trang mạng xã hội không tính."
+      "explain_vi": "==\"reported by at least 2 other reliable websites\"== → **2**. __Trang mạng xã hội không được tính.__"
      },
      {
       "answer": "photos",
@@ -1072,12 +1086,12 @@
        "photographs",
        "pictures"
       ],
-      "explain_vi": "\"Step three... look carefully at the photos.\" Bước này nhiều người hay quên."
+      "explain_vi": "==\"Step three… look carefully at the photos.\"== → **photos**."
      },
      {
       "answer": "share",
       "accept": [],
-      "explain_vi": "\"if you're still not sure, simply don't share it.\""
+      "explain_vi": "==\"if you're still not sure, simply don't share it\"== → **share**. __Đề có 'Don't' nên điền động từ nguyên thể.__"
      }
     ]
    }
