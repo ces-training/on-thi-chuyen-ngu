@@ -10,7 +10,8 @@
       "If you freeze water, it turns into ice.",
       "If people don't sleep, they get tired.",
       "Chocolate melts if you leave it in the sun."
-     ]
+     ],
+     "rule_vi": "**Loại 0**: điều luôn đúng, sự thật; **hai vế đều hiện tại đơn**: ==you freeze water, it turns into ice==. __Thay 'if' bằng 'when' mà nghĩa không đổi là loại 0.__"
     },
     {
      "name": "Type 1",
@@ -18,7 +19,8 @@
       "If you apply early, you'll get an interview.",
       "If Mai practises more, she will win.",
       "We'll miss the bus if we don't hurry."
-     ]
+     ],
+     "rule_vi": "**Loại 1**: việc có thể xảy ra; **If + hiện tại đơn, will + V**: ==you apply early, you'll get==. __Thấy will/'ll ở vế chính là loại 1.__"
     },
     {
      "name": "Type 2",
@@ -26,30 +28,36 @@
       "If I were rich, I'd travel the world.",
       "If I had wings, I would fly to school.",
       "She would apply if she spoke English."
-     ]
+     ],
+     "rule_vi": "**Loại 2**: điều không có thật ở hiện tại; **If + quá khứ đơn, would + V**: ==If I were rich, I'd travel==. __Thấy were/had và would/'d là loại 2.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "If you work hard, you will have a successful career.",
-    "hint_vi": "Loại 1: If + hiện tại đơn, will + V."
+    "hint_vi": "Loại 1: If + hiện tại đơn, will + V.",
+    "why_vi": "**Loại 1: If + hiện tại đơn, will + V** → ==If you work hard==, ==you will have== a successful career. __Mệnh đề if đứng đầu thì có dấu phẩy.__"
    },
    {
     "sentence": "If I were you, I would apply for that job.",
-    "hint_vi": "Loại 2 khuyên bảo: If I were you, I would..."
+    "hint_vi": "Loại 2 khuyên bảo: If I were you, I would...",
+    "why_vi": "Lời khuyên **loại 2: If I were you, I would + V** → ==I would apply for that job==. __Nhớ cụm apply for + công việc.__"
    },
    {
     "sentence": "If you drop an egg, it usually breaks.",
-    "hint_vi": "Loại 0: điều luôn xảy ra, hai vế đều hiện tại đơn."
+    "hint_vi": "Loại 0: điều luôn xảy ra, hai vế đều hiện tại đơn.",
+    "why_vi": "**Loại 0**: hai vế hiện tại đơn; trạng từ ==usually== đứng trước động từ thường: it usually breaks. __Trạng từ tần suất đứng trước động từ thường.__"
    },
    {
     "sentence": "What would you do if you lost your job?",
-    "hint_vi": "Câu hỏi loại 2: What would you do if + quá khứ đơn?"
+    "hint_vi": "Câu hỏi loại 2: What would you do if + quá khứ đơn?",
+    "why_vi": "Câu hỏi **loại 2: What would you do if + quá khứ đơn?** → ==What would you do if you lost your job?== __Câu hỏi đặt What would you do lên đầu.__"
    },
    {
     "sentence": "You will get the job if you have more experience.",
-    "hint_vi": "Loại 1, mệnh đề if đứng sau nên không có dấu phẩy."
+    "hint_vi": "Loại 1, mệnh đề if đứng sau nên không có dấu phẩy.",
+    "why_vi": "**Loại 1**, mệnh đề if đứng sau: ==You will get the job== ==if you have more experience==. __If đứng giữa câu thì không có dấu phẩy.__"
    }
   ],
   "truefalse": [
@@ -57,49 +65,49 @@
     "s": "If it will be sunny tomorrow, we'll go to the beach.",
     "ok": false,
     "fix": "If it is sunny tomorrow, we'll go to the beach.",
-    "why_vi": "Không dùng will trong mệnh đề if; dùng hiện tại đơn: If it is sunny."
+    "why_vi": "Không dùng will trong mệnh đề if → ==If it will be sunny== sửa thành **If it is sunny**. __Vế if của loại 1 luôn ở hiện tại đơn.__"
    },
    {
     "s": "If I were a teacher, I would never give homework.",
     "ok": true,
     "fix": "If I were a teacher, I would never give homework.",
-    "why_vi": "Đúng: loại 2 (điều không có thật), If + were, would + V."
+    "why_vi": "Đúng: **loại 2** (điều không có thật): ==If I were a teacher, I would never give==. __Loại 2 dùng were cho mọi ngôi.__"
    },
    {
     "s": "If babies are hungry, they cry.",
     "ok": true,
     "fix": "If babies are hungry, they cry.",
-    "why_vi": "Đúng: loại 0 nói điều luôn xảy ra, hai vế đều hiện tại đơn."
+    "why_vi": "Đúng: **loại 0** nói điều luôn xảy ra; hai vế đều hiện tại đơn: ==are hungry==, ==cry==."
    },
    {
     "s": "If I have a million dollars, I would buy a house by the sea.",
     "ok": false,
     "fix": "If I had a million dollars, I would buy a house by the sea.",
-    "why_vi": "Vế sau có would → loại 2, vế if phải chia quá khứ đơn: had."
+    "why_vi": "Vế sau có ==would buy== → loại 2, vế if phải chia quá khứ: **If I had**. __Nhìn vế chính để biết loại câu điều kiện.__"
    },
    {
     "s": "If Lan gets the job, she will move to Đà Nẵng.",
     "ok": true,
     "fix": "If Lan gets the job, she will move to Đà Nẵng.",
-    "why_vi": "Đúng: loại 1, If + hiện tại đơn (gets), will + V."
+    "why_vi": "Đúng: **loại 1**, If + hiện tại đơn (==gets==), will + V (==will move==)."
    },
    {
     "s": "My mum would be happy if I tidy my room every day.",
     "ok": false,
     "fix": "My mum would be happy if I tidied my room every day.",
-    "why_vi": "Vế chính có would → loại 2, vế if dùng quá khứ đơn: tidied."
+    "why_vi": "Vế chính có ==would be happy== → loại 2, vế if dùng quá khứ: **tidied**. __Mệnh đề if đứng sau vẫn phải chia đúng loại.__"
    },
    {
     "s": "If I were you, I will apply for the job.",
     "ok": false,
     "fix": "If I were you, I would apply for the job.",
-    "why_vi": "If I were you là loại 2 → vế sau dùng would, không dùng will."
+    "why_vi": "==If I were you== là loại 2 → vế sau dùng **would apply**, không dùng will. __Thuộc lòng cả cụm: If I were you, I would….__"
    },
    {
     "s": "If you leave ice cream in the sun, it melts.",
     "ok": true,
     "fix": "If you leave ice cream in the sun, it melts.",
-    "why_vi": "Đúng: loại 0 (sự thật hiển nhiên), hai vế hiện tại đơn."
+    "why_vi": "Đúng: **loại 0** (sự thật hiển nhiên), hai vế hiện tại đơn: ==leave==, ==melts==."
    }
   ]
  },
@@ -120,7 +128,7 @@
       "Yes, I'd love to."
      ],
      "answer": 1,
-     "explain_vi": "A báo tin vui → B chúc mừng: Congratulations! 'Never mind' và 'That's a pity' dùng cho tin buồn."
+     "explain_vi": "A báo tin vui (==I've just been offered a place==) → B chúc mừng: **Congratulations! You really deserve it.** __Never mind, That's a pity dùng cho tin buồn.__"
     },
     {
      "q": "A: Would you mind helping me with my job application form?\nB: ______",
@@ -131,7 +139,7 @@
       "No, thanks. I can do it myself."
      ],
      "answer": 2,
-     "explain_vi": "Would you mind...? = Bạn có phiền...? Đồng ý giúp thì nói 'Not at all' (không phiền gì)."
+     "explain_vi": "==Would you mind helping me…?== nghĩa là 'Bạn có phiền…?' → đồng ý giúp thì nói **Not at all** (không phiền gì). __Trả lời Yes nghĩa là có phiền, dễ nhầm.__"
     },
     {
      "q": "A: If I were you, I'd ask the teacher for some advice.\nB: ______",
@@ -142,7 +150,7 @@
       "I'm afraid I can't come."
      ],
      "answer": 0,
-     "explain_vi": "A đưa lời khuyên → B cảm ơn và đồng ý: That's a good idea. Thanks."
+     "explain_vi": "A đưa lời khuyên (==If I were you, I'd…==) → B cảm ơn và đồng ý: **That's a good idea. Thanks.** __Same to you dùng để đáp lời chúc.__"
     },
     {
      "q": "A: I'm sorry, I can't finish the report today. My computer has broken down.\nB: ______",
@@ -153,7 +161,7 @@
       "Never mind. You can send it to me tomorrow."
      ],
      "answer": 3,
-     "explain_vi": "A xin lỗi → B thông cảm: Never mind (không sao). 'You're welcome' là đáp lời cảm ơn."
+     "explain_vi": "A xin lỗi (==I'm sorry, I can't finish==) → B thông cảm: **Never mind.** __You're welcome là đáp lời cảm ơn, không phải lời xin lỗi.__"
     },
     {
      "q": "A: What would you do if you were offered a job abroad?\nB: ______",
@@ -164,7 +172,7 @@
       "I'm working abroad now."
      ],
      "answer": 1,
-     "explain_vi": "Câu hỏi What would you do if...? (loại 2) → trả lời bằng I would + V. 'Yes, I would' không trả lời câu hỏi What."
+     "explain_vi": "Câu hỏi ==What would you do if…?== (loại 2) → trả lời **I would + V**: I would accept it. __Câu hỏi What không trả lời bằng Yes/No.__"
     }
    ]
   },
@@ -182,27 +190,27 @@
      "accept": [
       "14th"
      ],
-     "explain_vi": "Bài nói: 'Saturday the 14th of November' → điền 14."
+     "explain_vi": "Bài nói: ==\"Saturday the 14th of November\"== → **14**. __Ngày tháng chỉ cần viết số.__"
     },
     {
      "answer": "hall",
      "accept": [],
-     "explain_vi": "Bài nói: 'in the school hall' (hội trường trường)."
+     "explain_vi": "Bài nói: ==\"in the school hall\"== → **hall** (hội trường). __Sports hall là nơi dự phòng khi trời mưa, đừng nhầm.__"
     },
     {
      "answer": "designer",
      "accept": [],
-     "explain_vi": "Bài nói: 'a famous game designer' (nhà thiết kế trò chơi)."
+     "explain_vi": "Bài nói: ==\"a famous game designer\"== → **designer**. __Đề có sẵn 'game' nên chỉ điền từ sau.__"
     },
     {
      "answer": "40",
      "accept": [],
-     "explain_vi": "Bài nói: 'Places are limited to 40 students' → 40 chỗ. Đừng nhầm với 'twenty guests'."
+     "explain_vi": "Bài nói: ==\"Places are limited to 40 students\"== → **40**. __Đừng nhầm với 'twenty guests'.__"
     },
     {
      "answer": "librarian",
      "accept": [],
-     "explain_vi": "Bài nói: 'Ms Hoa, the school librarian' (cô thủ thư)."
+     "explain_vi": "Bài nói: ==\"Ms Hoa, the school librarian\"== → **librarian** (cô thủ thư)."
     }
    ]
   }
@@ -224,7 +232,7 @@
       "He's forty years old."
      ],
      "answer": 2,
-     "explain_vi": "'What does your father do?' là hỏi về nghề nghiệp → trả lời nghề: He's a bus driver. 'He's fine' trả lời câu hỏi sức khoẻ."
+     "explain_vi": "==What does your father do?== là hỏi nghề nghiệp → **He's a bus driver.** __He's fine trả lời câu hỏi sức khoẻ.__"
     },
     {
      "q": "A: Thanks for helping me fill in this form.\nB: ______",
@@ -235,7 +243,7 @@
       "I'm sorry."
      ],
      "answer": 1,
-     "explain_vi": "A cảm ơn → B đáp lại lời cảm ơn: You're welcome (không có gì)."
+     "explain_vi": "A cảm ơn (==Thanks for helping me==) → đáp lại: **You're welcome.** (không có gì) __Học cặp: Thanks – You're welcome.__"
     },
     {
      "q": "A: What will you do if it rains on Sunday?\nB: ______",
@@ -246,7 +254,7 @@
       "It's very hot today."
      ],
      "answer": 0,
-     "explain_vi": "Câu hỏi 'What will you do if…?' (điều kiện loại 1) → trả lời bằng I'll (I will) + động từ. Không trả lời Yes/No, không dùng quá khứ."
+     "explain_vi": "==What will you do if…?== (loại 1) → trả lời **I'll + V**: I'll stay at home and read books. __Không trả lời Yes/No, không dùng quá khứ.__"
     },
     {
      "q": "A: I want to be a vet when I grow up.\nB: ______",
@@ -257,7 +265,7 @@
       "That's great! You really love animals."
      ],
      "answer": 3,
-     "explain_vi": "A kể về ước mơ nghề nghiệp (bác sĩ thú y) → B khen, động viên: That's great! 'Yes, I'd love to' dùng để nhận lời mời."
+     "explain_vi": "A kể ước mơ ==I want to be a vet== → B khen, động viên: **That's great! You really love animals.** __Yes, I'd love to dùng để nhận lời mời.__"
     },
     {
      "q": "A: Good luck with your job interview tomorrow!\nB: ______",
@@ -268,7 +276,7 @@
       "Yes, I am."
      ],
      "answer": 2,
-     "explain_vi": "Ai chúc mình may mắn thì mình cảm ơn: Thank you! 'You're welcome' là câu đáp lại lời cảm ơn, không phải lời chúc."
+     "explain_vi": "Ai chúc mình (==Good luck!==) thì mình cảm ơn: **Thank you! I'll do my best.** __You're welcome là đáp lời cảm ơn, không đáp lời chúc.__"
     }
    ]
   },
@@ -284,7 +292,7 @@
     {
      "answer": "nurse",
      "accept": [],
-     "explain_vi": "Bài nói: 'My mother is a nurse.' (y tá)."
+     "explain_vi": "Bài nói: ==\"My mother is a nurse.\"== → **nurse** (y tá)."
     },
     {
      "answer": "7",
@@ -293,24 +301,24 @@
       "7:00",
       "seven"
      ],
-     "explain_vi": "Bài nói: 'She starts work at seven o'clock in the morning.' → điền số 7."
+     "explain_vi": "Bài nói: ==\"She starts work at seven o'clock in the morning.\"== → **7**. __Đề có sẵn 'a.m.' nên chỉ điền số.__"
     },
     {
      "answer": "bus",
      "accept": [],
-     "explain_vi": "Bài nói: 'She goes to work by bus.' (đi làm bằng xe buýt)."
+     "explain_vi": "Bài nói: ==\"She goes to work by bus.\"== → **bus**. __by + phương tiện, không có a/the.__"
     },
     {
      "answer": "5",
      "accept": [
       "five"
      ],
-     "explain_vi": "Bài nói: 'She works five days a week, from Monday to Friday.' → điền số 5."
+     "explain_vi": "Bài nói: ==\"She works five days a week, from Monday to Friday.\"== → **5**."
     },
     {
      "answer": "patient",
      "accept": [],
-     "explain_vi": "Bài nói: 'you must be kind and patient' (tốt bụng và kiên nhẫn)."
+     "explain_vi": "Bài nói: ==\"you must be kind and patient\"== → **patient** (kiên nhẫn). __Nghe từ ngay sau 'kind and'.__"
     }
    ]
   }
@@ -332,7 +340,7 @@
       "Don't mention it. It was my pleasure."
      ],
      "answer": 1,
-     "explain_vi": "A đang phân vân → B khuyên: If I were you, I'd… (loại 2). 'If I am you' sai ngữ pháp; 'Never mind' dùng để an ủi khi thất bại."
+     "explain_vi": "A đang phân vân (==I'm thinking of turning down==) → B khuyên: **If I were you, I'd think it over first.** __'If I am you' sai ngữ pháp; Never mind dùng để an ủi.__"
     },
     {
      "q": "A: Do you mind if I leave work an hour early today? My son is ill.\nB: ______",
@@ -343,7 +351,7 @@
       "Not at all. I hope he gets better soon."
      ],
      "answer": 3,
-     "explain_vi": "Do you mind…? = Bạn có phiền không? Đồng ý thì đáp 'Not at all'. 'Yes, of course' nghĩa là 'có, tôi phiền' nên mâu thuẫn với 'Go ahead'."
+     "explain_vi": "==Do you mind if I…?== nghĩa là 'Bạn có phiền không?' → đồng ý thì đáp **Not at all.** __'Yes, of course' nghĩa là có phiền, mâu thuẫn với 'Go ahead'.__"
     },
     {
      "q": "A: I've been looking for a job for six months, and I'm starting to lose hope.\nB: ______",
@@ -354,7 +362,7 @@
       "Same here. I've just got a new job."
      ],
      "answer": 2,
-     "explain_vi": "A đang nản → B động viên: Hang in there (cố lên), turn up = xuất hiện. 'Lucky you!' thiếu tế nhị; 'Same here' mâu thuẫn với vế sau."
+     "explain_vi": "A đang nản (==starting to lose hope==) → B động viên: **Hang in there. Something will turn up soon.** __Lucky you thiếu tế nhị, Same here mâu thuẫn với vế sau.__"
     },
     {
      "q": "A: What would you do if your boss asked you to work every weekend?\nB: ______",
@@ -365,7 +373,7 @@
       "I did it once last year."
      ],
      "answer": 0,
-     "explain_vi": "Câu hỏi giả định loại 2 (What would you do if + quá khứ đơn) → đáp bằng I'd (would) + V. 'I'll' là loại 1; 'would have refused' là quá khứ."
+     "explain_vi": "==What would you do if your boss asked…?== (loại 2) → đáp **I'd + V**: I'd probably start looking for another job. __I'll là loại 1; would have refused là quá khứ.__"
     },
     {
      "q": "A: You should apply for the manager position. You're more than qualified.\nB: ______",
@@ -376,7 +384,7 @@
       "I'd rather you didn't."
      ],
      "answer": 2,
-     "explain_vi": "A khuyến khích, khen B đủ năng lực → B cảm ơn sự tin tưởng (vote of confidence) và sẽ thử (give it a go). 'Congratulations' sai vì chưa có kết quả."
+     "explain_vi": "A khen B ==more than qualified== → B cảm ơn sự tin tưởng: **Thanks for the vote of confidence! Maybe I'll give it a go.** __Congratulations sai vì chưa có kết quả.__"
     }
    ]
   },
@@ -394,7 +402,7 @@
      "accept": [
       "four"
      ],
-     "explain_vi": "Bài nói: 'Interns will spend four weeks working…' → 4 tuần."
+     "explain_vi": "Bài nói: ==\"Interns will spend four weeks\"== → **4**."
     },
     {
      "answer": "8",
@@ -402,14 +410,14 @@
       "8th",
       "eighth"
      ],
-     "explain_vi": "Ban đầu là ngày 1/7 nhưng 'has been moved to the eighth' → điền 8. Bẫy: ngày 1."
+     "explain_vi": "Ngày 1 bị đổi: ==\"the start date has been moved to the eighth\"== → **8**. __Nghe 'has been moved to' để lấy thông tin mới.__"
     },
     {
      "answer": "Thursday",
      "accept": [
       "thursday"
      ],
-     "explain_vi": "'from Monday to Thursday, not on Fridays' → Thursday. Bẫy: Friday bị phủ định bằng 'not'."
+     "explain_vi": "==\"from Monday to Thursday, not on Fridays\"== → **Thursday**. __Friday bị phủ định bằng 'not', là bẫy.__"
     },
     {
      "answer": "teamwork",
@@ -417,14 +425,14 @@
       "team work",
       "team-work"
      ],
-     "explain_vi": "Bài nói: 'responsible and good at teamwork' (làm việc nhóm)."
+     "explain_vi": "Bài nói: ==\"responsible and good at teamwork\"== → **teamwork**. __Đề đã có 'responsible', chỉ điền từ sau 'good at'.__"
     },
     {
      "answer": "Library",
      "accept": [
       "library"
      ],
-     "explain_vi": "Phỏng vấn 'at the City Library, not at the recycling centre' → Library."
+     "explain_vi": "==\"at the City Library, not at the recycling centre\"== → **Library**. __Thông tin sau 'not' là sai, loại ngay.__"
     }
    ]
   }
@@ -439,13 +447,15 @@
     "answer": "Unemployment",
     "accept": [
      "unemployment"
-    ]
+    ],
+    "explain_vi": "Đầu câu cần **danh từ** làm chủ ngữ; nhà máy ==closed down== → nạn thất nghiệp tăng → **Unemployment**. __Nhớ viết hoa vì đứng đầu câu.__"
    },
    {
     "id": "d10H2",
     "q": "Many school leavers have ______ expectations about their first salary, so they are often disappointed when they receive their first payslip. (REAL)",
     "answer": "unrealistic",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Trước ==expectations== cần **tính từ**; ==often disappointed== cho thấy kỳ vọng không thực tế → **unrealistic**. __Họ từ: real, realistic, unrealistic.__"
    },
    {
     "id": "d10H3",
@@ -457,7 +467,8 @@
      "had enough experience, I would be able to apply for the job",
      "had enough experience, I'd be able to apply for the job.",
      "had enough experience, I'd be able to apply for the job"
-    ]
+    ],
+    "explain_vi": "Hiện tại không có thật → **câu điều kiện loại 2**: If + quá khứ, could + V → ==If I had enough experience, I could apply for the job.== __Câu gốc phủ định thì câu If khẳng định.__"
    },
    {
     "id": "d10H4",
@@ -467,7 +478,8 @@
      "you work harder, you won't get a pay rise",
      "you work harder, you will not get a pay rise.",
      "you work harder, you will not get a pay rise"
-    ]
+    ],
+    "explain_vi": "**Unless** nghĩa là 'if … not' → ==Unless you work harder, you won't get a pay rise.== __Sau Unless dùng động từ khẳng định, không thêm not.__"
    },
    {
     "id": "d10H5",
@@ -478,7 +490,8 @@
      "caught",
      "reached"
     ],
-    "answer": "A"
+    "answer": "A",
+    "explain_vi": "Collocation **land a job**: kiếm được việc (sau khi tìm vất vả) → **A. landed**; dấu hiệu ==After months of searching==. __Học thuộc: land a job, get a job.__"
    },
    {
     "id": "d10H6",
@@ -489,7 +502,8 @@
      "put off",
      "give up"
     ],
-    "answer": "A"
+    "answer": "A",
+    "explain_vi": "**lay off**: cho nghỉ việc vì công ty khó khăn → **A**; lý do là ==falling sales==. __take on là tuyển thêm, nghĩa ngược lại.__"
    }
   ]
  },
@@ -608,7 +622,7 @@
        "a vet"
       ],
       "answer": 3,
-      "explain_vi": "Mai nói: \"I want to be a vet. I love animals.\""
+      "explain_vi": "Mai nói: ==\"I want to be a vet. I love animals.\"== → **a vet**. __Chef là ước mơ của Nam, đừng nhầm người.__"
      },
      {
       "q": "What pets does Mai have?",
@@ -619,7 +633,7 @@
        "three dogs"
       ],
       "answer": 0,
-      "explain_vi": "\"I have two cats and a dog at home.\""
+      "explain_vi": "Mai: ==\"I have two cats and a dog at home.\"== → **two cats and a dog**. __Nghe kỹ số lượng đi với từng con vật.__"
      },
      {
       "q": "How long does Mai need to study at university?",
@@ -630,7 +644,7 @@
        "seven years"
       ],
       "answer": 2,
-      "explain_vi": "\"Yes, about five years at university.\""
+      "explain_vi": "Mai: ==\"Yes, about five years at university.\"== → **five years**."
      },
      {
       "q": "When does Nam cook for his family?",
@@ -641,7 +655,7 @@
        "on holidays"
       ],
       "answer": 0,
-      "explain_vi": "Nam: \"I cook dinner for my family every Sunday.\""
+      "explain_vi": "Nam: ==\"I cook dinner for my family every Sunday.\"== → **every Sunday**."
      },
      {
       "q": "Where would Nam like to open a restaurant?",
@@ -652,7 +666,7 @@
        "next to Mai's house"
       ],
       "answer": 1,
-      "explain_vi": "\"If I had enough money, I would open one next to our school.\""
+      "explain_vi": "Nam: ==\"If I had enough money, I would open one next to our school.\"== → **next to their school**. __'our school' trong bài thành 'their school' trong đáp án.__"
      }
     ]
    },
@@ -667,29 +681,29 @@
       "accept": [
        "zoo keeper"
       ],
-      "explain_vi": "\"She is a zookeeper.\""
+      "explain_vi": "==\"She is a zookeeper.\"== → **zookeeper**. __Viết liền hoặc tách 'zoo keeper' đều được.__"
      },
      {
       "answer": "monkeys",
       "accept": [],
-      "explain_vi": "\"She is responsible for the elephants and the monkeys.\""
+      "explain_vi": "==\"she is responsible for the elephants and the monkeys\"== → **monkeys**. __Đề có 'the elephants' nên điền con vật còn lại.__"
      },
      {
       "answer": "12",
       "accept": [
        "twelve"
       ],
-      "explain_vi": "\"My aunt has worked there for 12 years.\""
+      "explain_vi": "==\"My aunt has worked there for 12 years\"== → **12**. __Đừng nhầm với 'five o'clock' (giờ dậy).__"
      },
      {
       "answer": "carefully",
       "accept": [],
-      "explain_vi": "\"The most important skill in her job is watching carefully.\""
+      "explain_vi": "==\"the most important skill in her job is watching carefully\"== → **carefully**."
      },
      {
       "answer": "elephant",
       "accept": [],
-      "explain_vi": "\"She will show me the baby elephant.\""
+      "explain_vi": "==\"she will show me the baby elephant\"== → **elephant**."
      }
     ]
    }
@@ -768,7 +782,7 @@
        "babysitting his little cousins"
       ],
       "answer": 0,
-      "explain_vi": "Trại hè cho trẻ nhỏ cần người giúp: chơi trò chơi với các em và giúp giờ ăn trưa."
+      "explain_vi": "Tom nói trại hè cần người giúp, việc chính là ==\"play games with them and help at lunchtime\"== → **looking after young children at a camp**. __Gom ý cả đoạn, không chỉ một từ.__"
      },
      {
       "q": "Why does Linh think Tom would be good at the job?",
@@ -779,7 +793,7 @@
        "He is good at cooking lunch."
       ],
       "answer": 2,
-      "explain_vi": "Linh: \"You're great with your little cousins, so you'd be perfect.\""
+      "explain_vi": "Linh: ==\"you're great with your little cousins, so you'd be perfect\"== → **He gets on well with his young cousins.** __Mr Brown chưa giới thiệu gì, chỉ là người Tom sẽ nhờ.__"
      },
      {
       "q": "How much will Tom earn for a full day?",
@@ -790,7 +804,7 @@
        "250,000 dong"
       ],
       "answer": 2,
-      "explain_vi": "Tom đọc nhầm 100,000 rồi sửa: 150,000 cả ngày, 100,000 là buổi sáng."
+      "explain_vi": "Tom đọc nhầm rồi sửa: ==\"It's 150,000 for a full day and 100,000 for a morning.\"== → **150,000 dong**. __Nghe 'sorry, I read it wrong' thì lấy số sau.__"
      },
      {
       "q": "What does Tom need from Mr Brown?",
@@ -801,7 +815,7 @@
        "a letter to support his application"
       ],
       "answer": 3,
-      "explain_vi": "\"They want a letter from a teacher. I'm going to ask Mr Brown tomorrow.\""
+      "explain_vi": "Tom: ==\"they want a letter from a teacher. I'm going to ask Mr Brown tomorrow.\"== → **a letter to support his application**."
      },
      {
       "q": "What do we learn about the deadline?",
@@ -812,7 +826,7 @@
        "The camp has changed it to Monday."
       ],
       "answer": 1,
-      "explain_vi": "Hạn chót là \"this Friday, so I can't wait any longer\"."
+      "explain_vi": "Tom: ==\"This Friday, so I can't wait any longer.\"== → **Tom has only a few days left to apply.** __Đáp án diễn đạt lại ý, không lặp từ của bài.__"
      }
     ]
    },
@@ -827,14 +841,14 @@
       "accept": [
        "front desk"
       ],
-      "explain_vi": "\"Always sign in at the front desk..., not at the back door.\""
+      "explain_vi": "==\"always sign in at the front desk… not at the back door\"== → **desk**. __Thông tin sau 'not' là sai.__"
      },
      {
       "answer": "second",
       "accept": [
        "2nd"
       ],
-      "explain_vi": "\"The children's corner on the second floor.\""
+      "explain_vi": "==\"the children's corner on the second floor\"== → **second**."
      },
      {
       "answer": "T-shirt",
@@ -842,19 +856,19 @@
        "t shirt",
        "tshirt"
       ],
-      "explain_vi": "\"Please wear the green T-shirt we gave you, not your school uniform.\""
+      "explain_vi": "==\"Please wear the green T-shirt we gave you, not your school uniform.\"== → **T-shirt**."
      },
      {
       "answer": "6",
       "accept": [
        "six"
       ],
-      "explain_vi": "\"My colleague Anna, who has worked here for 6 years.\""
+      "explain_vi": "==\"my colleague Anna, who has worked here for 6 years\"== → **6**. __Giờ nghỉ đổi từ 12:30 sang 1:00, không liên quan câu này.__"
      },
      {
       "answer": "book",
       "accept": [],
-      "explain_vi": "\"You'll get a free book every month until the end of the year.\""
+      "explain_vi": "==\"you'll get a free book every month\"== → **book**."
      }
     ]
    }
@@ -941,7 +955,7 @@
        "She had chosen the studio because of her parents."
       ],
       "answer": 0,
-      "explain_vi": "Mai đoán: \"she took the bank job. It must pay much better.\" Nhưng thực tế chị ấy từ chối."
+      "explain_vi": "Mai đoán: ==\"she took the bank job. It must pay much better.\"== → **She had chosen the job with the higher salary.** __Câu hỏi hỏi lời đoán của Mai, không phải sự thật.__"
      },
      {
       "q": "How did the cousin's parents react to her choice?",
@@ -952,7 +966,7 @@
        "Both of them supported her immediately."
       ],
       "answer": 1,
-      "explain_vi": "\"Her dad was [upset], at first... But her mum supported her from the start.\""
+      "explain_vi": "==\"Her dad was, at first… But her mum supported her from the start.\"== → **Her father disagreed at first, but her mother supported her.** __Chú ý 'at first' và 'from the start'.__"
      },
      {
       "q": "According to the cousin, what is the main advantage of working at the studio?",
@@ -963,7 +977,7 @@
        "She will develop a wider range of skills."
       ],
       "answer": 3,
-      "explain_vi": "Studio chỉ có mười hai người, \"everyone does a bit of everything\" nên học được nhiều hơn."
+      "explain_vi": "Ở studio chỉ có 12 người, ==\"everyone does a bit of everything\"== → **She will develop a wider range of skills.** __Lương cao hơn là ở ngân hàng, loại A.__"
      },
      {
       "q": "What is Mai's attitude towards the cousin by the end of the conversation?",
@@ -974,7 +988,7 @@
        "She is not really interested."
       ],
       "answer": 0,
-      "explain_vi": "Lúc đầu Mai thấy rủi ro, nhưng cuối cùng nói: \"I admire her. I'm not sure I'd be that brave.\""
+      "explain_vi": "Cuối bài Mai nói: ==\"I admire her. I'm not sure I'd be that brave.\"== → **She admires her courage.** __Hỏi thái độ cuối bài thì nghe câu cuối của người đó.__"
      },
      {
       "q": "What can we learn about Nam?",
@@ -985,7 +999,7 @@
        "He plans to join his cousin at the studio."
       ],
       "answer": 2,
-      "explain_vi": "Nam: \"I'd rather earn less and enjoy what I do.\""
+      "explain_vi": "Nam: ==\"I'd rather earn less and enjoy what I do.\"== → **He values enjoying his work more than a high salary.** __I'd rather A (than B): thích A hơn B.__"
      }
     ]
    },
@@ -1000,27 +1014,27 @@
       "accept": [
        "sixteen"
       ],
-      "explain_vi": "\"I started my first business when I was 16.\" 24 là tuổi hiện nay."
+      "explain_vi": "==\"I started my first business when I was 16.\"== → **16**. __24 là tuổi hiện nay, là thông tin nhiễu.__"
      },
      {
       "answer": "notebooks",
       "accept": [],
-      "explain_vi": "Không phải quần áo: \"I actually made handmade notebooks.\""
+      "explain_vi": "Không phải quần áo: ==\"I actually made handmade notebooks\"== → **notebooks**. __'Many people think… but actually' báo hiệu thông tin bị sửa.__"
      },
      {
       "answer": "low",
       "accept": [],
-      "explain_vi": "\"My biggest mistake was setting my prices too low.\""
+      "explain_vi": "==\"My biggest mistake was setting my prices too low.\"== → **low**."
      },
      {
       "answer": "shop",
       "accept": [],
-      "explain_vi": "\"A colleague of my mum's, who ran a small shop, gave me some great advice.\""
+      "explain_vi": "==\"a colleague of my mum's, who ran a small shop\"== → **shop**."
      },
      {
       "answer": "help",
       "accept": [],
-      "explain_vi": "Không phải làm chăm hơn: \"It would be to ask for help earlier.\""
+      "explain_vi": "Không phải làm chăm hơn: ==\"It would be to ask for help earlier.\"== → **help**. __'it wouldn't be… It would be…' cho biết đáp án nằm ở vế sau.__"
      }
     ]
    }

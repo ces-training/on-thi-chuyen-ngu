@@ -1,613 +1,641 @@
 {
- "day": 6,
- "type": "normal",
- "theme_en": "Travel & transport",
- "theme_vi": "Du lịch và đi lại",
- "goal_vi": "Hôm nay em sẽ học 8 từ mới và 2 cụm động từ về du lịch, đi lại, cùng cách dùng can/could/be able to, must/have to và should. Em cũng sẽ làm quen với dạng bài điền từ vào đoạn văn – một dạng rất hay gặp trong đề thi chuyên, cố lên em nhé!",
- "minutes": 30,
- "vocab": [
-  {
-   "id": "d6v1",
-   "word": "journey",
-   "pos": "n",
-   "ipa": "/ˈdʒɜːni/",
-   "meaning_vi": "chuyến đi, hành trình (quãng đường di chuyển từ nơi này đến nơi khác)",
-   "example": "The journey from Hà Nội to Đà Nẵng takes about sixteen hours by train.",
-   "family": "journeys (n, số nhiều)"
-  },
-  {
-   "id": "d6v2",
-   "word": "destination",
-   "pos": "n",
-   "ipa": "/ˌdestɪˈneɪʃn/",
-   "meaning_vi": "điểm đến, nơi đến",
-   "example": "Hội An is a popular destination for tourists from all over the world.",
-   "family": "destinations (n, số nhiều); holiday destination (cụm từ: điểm đến du lịch)"
-  },
-  {
-   "id": "d6v3",
-   "word": "crowded",
-   "pos": "adj",
-   "ipa": "/ˈkraʊdɪd/",
-   "meaning_vi": "đông đúc, chật ních người",
-   "example": "The bus was so crowded that we had to stand all the way.",
-   "family": "crowd (n, v)"
-  },
-  {
-   "id": "d6v4",
-   "word": "explore",
-   "pos": "v",
-   "ipa": "/ɪkˈsplɔː(r)/",
-   "meaning_vi": "khám phá, thám hiểm",
-   "example": "We spent the whole afternoon exploring the old town on foot.",
-   "family": "explorer (n), exploration (n)"
-  },
-  {
-   "id": "d6v5",
-   "word": "delay",
-   "pos": "n, v",
-   "ipa": "/dɪˈleɪ/",
-   "meaning_vi": "sự chậm trễ; làm chậm trễ, hoãn",
-   "example": "Our flight was delayed for two hours because of the storm.",
-   "family": "delayed (adj)"
-  },
-  {
-   "id": "d6v6",
-   "word": "passenger",
-   "pos": "n",
-   "ipa": "/ˈpæsɪndʒə(r)/",
-   "meaning_vi": "hành khách",
-   "example": "All passengers must wear a seat belt during the flight.",
-   "family": "passengers (n, số nhiều)"
-  },
-  {
-   "id": "d6v7",
-   "word": "abroad",
-   "pos": "adv",
-   "ipa": "/əˈbrɔːd/",
-   "meaning_vi": "ở nước ngoài, ra nước ngoài",
-   "example": "My cousin is studying abroad in Australia.",
-   "family": "go abroad, study abroad, travel abroad (không dùng ✗ go to abroad)"
-  },
-  {
-   "id": "d6v8",
-   "word": "souvenir",
-   "pos": "n",
-   "ipa": "/ˌsuːvəˈnɪə(r)/",
-   "meaning_vi": "quà lưu niệm",
-   "example": "I bought a small silk lantern as a souvenir for my grandma.",
-   "family": "souvenirs (n, số nhiều); souvenir shop (cửa hàng lưu niệm)"
-  }
- ],
- "phrasal": [
-  {
-   "id": "d6p1",
-   "phrase": "set off",
-   "meaning_vi": "khởi hành, lên đường",
-   "example": "We set off at 5 a.m. to avoid the heavy traffic."
-  },
-  {
-   "id": "d6p2",
-   "phrase": "look forward to",
-   "meaning_vi": "mong chờ, háo hức chờ đợi (+ danh từ / V-ing)",
-   "example": "I'm really looking forward to visiting Sa Pa next month."
-  }
- ],
- "grammar": {
-  "id": "d6g",
-  "title": "Modals: can/could/be able to; must/have to; should",
-  "rule_vi": [
-   "can / could + V (nguyên thể): chỉ khả năng hoặc xin phép. can = hiện tại, could = quá khứ. Ví dụ: She could read when she was four.",
-   "be able to + V: cũng nghĩa là 'có thể', nhưng dùng được ở mọi thì (will be able to, have been able to). Khi nói đã làm được một việc khó trong một lần cụ thể ở quá khứ, dùng was/were able to.",
-   "must + V: bắt buộc (người nói thấy cần, hoặc luật, biển báo). mustn't + V = CẤM. have to + V: bắt buộc do hoàn cảnh, quy định bên ngoài; quá khứ là had to.",
-   "don't have to + V = KHÔNG CẦN phải làm (không bắt buộc) – khác hẳn với mustn't (cấm làm).",
-   "should / shouldn't + V: đưa ra lời khuyên (nên / không nên)."
+  "day": 6,
+  "type": "normal",
+  "theme_en": "Travel & transport",
+  "theme_vi": "Du lịch và đi lại",
+  "goal_vi": "Hôm nay em sẽ học 8 từ mới và 2 cụm động từ về du lịch, đi lại, cùng cách dùng can/could/be able to, must/have to và should. Em cũng sẽ làm quen với dạng bài điền từ vào đoạn văn – một dạng rất hay gặp trong đề thi chuyên, cố lên em nhé!",
+  "minutes": 30,
+  "vocab": [
+    {
+      "id": "d6v1",
+      "word": "journey",
+      "pos": "n",
+      "ipa": "/ˈdʒɜːni/",
+      "meaning_vi": "chuyến đi, hành trình (quãng đường di chuyển từ nơi này đến nơi khác)",
+      "example": "The journey from Hà Nội to Đà Nẵng takes about sixteen hours by train.",
+      "family": "journeys (n, số nhiều)"
+    },
+    {
+      "id": "d6v2",
+      "word": "destination",
+      "pos": "n",
+      "ipa": "/ˌdestɪˈneɪʃn/",
+      "meaning_vi": "điểm đến, nơi đến",
+      "example": "Hội An is a popular destination for tourists from all over the world.",
+      "family": "destinations (n, số nhiều); holiday destination (cụm từ: điểm đến du lịch)"
+    },
+    {
+      "id": "d6v3",
+      "word": "crowded",
+      "pos": "adj",
+      "ipa": "/ˈkraʊdɪd/",
+      "meaning_vi": "đông đúc, chật ních người",
+      "example": "The bus was so crowded that we had to stand all the way.",
+      "family": "crowd (n, v)"
+    },
+    {
+      "id": "d6v4",
+      "word": "explore",
+      "pos": "v",
+      "ipa": "/ɪkˈsplɔː(r)/",
+      "meaning_vi": "khám phá, thám hiểm",
+      "example": "We spent the whole afternoon exploring the old town on foot.",
+      "family": "explorer (n), exploration (n)"
+    },
+    {
+      "id": "d6v5",
+      "word": "delay",
+      "pos": "n, v",
+      "ipa": "/dɪˈleɪ/",
+      "meaning_vi": "sự chậm trễ; làm chậm trễ, hoãn",
+      "example": "Our flight was delayed for two hours because of the storm.",
+      "family": "delayed (adj)"
+    },
+    {
+      "id": "d6v6",
+      "word": "passenger",
+      "pos": "n",
+      "ipa": "/ˈpæsɪndʒə(r)/",
+      "meaning_vi": "hành khách",
+      "example": "All passengers must wear a seat belt during the flight.",
+      "family": "passengers (n, số nhiều)"
+    },
+    {
+      "id": "d6v7",
+      "word": "abroad",
+      "pos": "adv",
+      "ipa": "/əˈbrɔːd/",
+      "meaning_vi": "ở nước ngoài, ra nước ngoài",
+      "example": "My cousin is studying abroad in Australia.",
+      "family": "go abroad, study abroad, travel abroad (không dùng ✗ go to abroad)"
+    },
+    {
+      "id": "d6v8",
+      "word": "souvenir",
+      "pos": "n",
+      "ipa": "/ˌsuːvəˈnɪə(r)/",
+      "meaning_vi": "quà lưu niệm",
+      "example": "I bought a small silk lantern as a souvenir for my grandma.",
+      "family": "souvenirs (n, số nhiều); souvenir shop (cửa hàng lưu niệm)"
+    }
   ],
-  "examples": [
-   "Passengers mustn't smoke on the train.",
-   "We didn't have to queue because we had bought our tickets online.",
-   "After a long search, we were able to find our hotel.",
-   "You should bring a raincoat – it often rains in Đà Lạt."
+  "phrasal": [
+    {
+      "id": "d6p1",
+      "phrase": "set off",
+      "meaning_vi": "khởi hành, lên đường",
+      "example": "We set off at 5 a.m. to avoid the heavy traffic."
+    },
+    {
+      "id": "d6p2",
+      "phrase": "look forward to",
+      "meaning_vi": "mong chờ, háo hức chờ đợi (+ danh từ / V-ing)",
+      "example": "I'm really looking forward to visiting Sa Pa next month."
+    }
   ],
-  "common_mistake_vi": "Sau động từ khuyết thiếu không dùng 'to' và không chia động từ: ✗ She can to speaks English. → ✓ She can speak English. Ngoài ra 'must' không có dạng quá khứ: ✗ Yesterday I must get up early. → ✓ Yesterday I had to get up early."
- },
- "wordform": {
-  "id": "d6w",
-  "focus": "-er, -or, -ist, -ian",
-  "rule_vi": "Thêm -er/-or vào động từ để chỉ người làm việc đó (teach → teacher, visit → visitor). Thêm -ist/-ian vào danh từ để chỉ người làm nghề hoặc giỏi về lĩnh vực đó (tour → tourist, music → musician). Chú ý: travel → traveller (Anh-Anh gấp đôi chữ l).",
-  "examples": [
-   [
-    "travel",
-    "traveller"
-   ],
-   [
-    "visit",
-    "visitor"
-   ],
-   [
-    "tour",
-    "tourist"
-   ],
-   [
-    "music",
-    "musician"
-   ],
-   [
-    "library",
-    "librarian"
-   ]
+  "grammar": {
+    "id": "d6g",
+    "title": "Modals: can/could/be able to; must/have to; should",
+    "rule_vi": [
+      "can / could + V (nguyên thể): chỉ khả năng hoặc xin phép. can = hiện tại, could = quá khứ. Ví dụ: She could read when she was four.",
+      "be able to + V: cũng nghĩa là 'có thể', nhưng dùng được ở mọi thì (will be able to, have been able to). Khi nói đã làm được một việc khó trong một lần cụ thể ở quá khứ, dùng was/were able to.",
+      "must + V: bắt buộc (người nói thấy cần, hoặc luật, biển báo). mustn't + V = CẤM. have to + V: bắt buộc do hoàn cảnh, quy định bên ngoài; quá khứ là had to.",
+      "don't have to + V = KHÔNG CẦN phải làm (không bắt buộc) – khác hẳn với mustn't (cấm làm).",
+      "should / shouldn't + V: đưa ra lời khuyên (nên / không nên)."
+    ],
+    "examples": [
+      "Passengers mustn't smoke on the train.",
+      "We didn't have to queue because we had bought our tickets online.",
+      "After a long search, we were able to find our hotel.",
+      "You should bring a raincoat – it often rains in Đà Lạt."
+    ],
+    "common_mistake_vi": "Sau động từ khuyết thiếu không dùng 'to' và không chia động từ: ✗ She can to speaks English. → ✓ She can speak English. Ngoài ra 'must' không có dạng quá khứ: ✗ Yesterday I must get up early. → ✓ Yesterday I had to get up early."
+  },
+  "wordform": {
+    "id": "d6w",
+    "focus": "-er, -or, -ist, -ian",
+    "rule_vi": "Thêm -er/-or vào động từ để chỉ người làm việc đó (teach → teacher, visit → visitor). Thêm -ist/-ian vào danh từ để chỉ người làm nghề hoặc giỏi về lĩnh vực đó (tour → tourist, music → musician). Chú ý: travel → traveller (Anh-Anh gấp đôi chữ l).",
+    "examples": [
+      [
+        "travel",
+        "traveller"
+      ],
+      [
+        "visit",
+        "visitor"
+      ],
+      [
+        "tour",
+        "tourist"
+      ],
+      [
+        "music",
+        "musician"
+      ],
+      [
+        "library",
+        "librarian"
+      ]
+    ]
+  },
+  "paper": {
+    "A_vocab": {
+      "instruction_vi": "Em chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, và có 2 từ không cần dùng đến nhé.",
+      "bank": [
+        "journey",
+        "destination",
+        "crowded",
+        "passengers",
+        "souvenir",
+        "set off",
+        "explore",
+        "abroad"
+      ],
+      "items": [
+        {
+          "id": "d6A1",
+          "q": "The ______ from my house to my grandparents' village takes three hours by bus.",
+          "answer": "journey",
+          "tag": "d6v1",
+          "explain_vi": "==from my house to my grandparents' village takes three hours== → chuyến đi: **journey**. __journey là quãng đường đi; destination là nơi đến.__"
+        },
+        {
+          "id": "d6A2",
+          "q": "Phú Quốc has become a favourite holiday ______ for many families because of its beautiful beaches.",
+          "answer": "destination",
+          "tag": "d6v2",
+          "explain_vi": "Phú Quốc là nơi nhiều gia đình đến nghỉ: **holiday destination** (điểm đến). Dấu hiệu ==a favourite holiday==. __Sau đó cần danh từ chỉ nơi chốn.__"
+        },
+        {
+          "id": "d6A3",
+          "q": "The market was so ______ on Sunday morning that we could hardly move.",
+          "answer": "crowded",
+          "tag": "d6v3",
+          "explain_vi": "==we could hardly move== → chợ quá đông: **crowded**. __so + tính từ + that: chỗ trống là tính từ.__"
+        },
+        {
+          "id": "d6A4",
+          "q": "The bus driver asked all the ______ to fasten their seat belts.",
+          "answer": "passengers",
+          "tag": "d6v6",
+          "explain_vi": "==The bus driver asked all the== … thắt dây an toàn → người đi xe: **passengers** (số nhiều). __Sau 'all the' với danh từ đếm được thì dùng số nhiều.__"
+        },
+        {
+          "id": "d6A5",
+          "q": "Before we left Huế, I bought a small conical hat as a ______ for my best friend.",
+          "answer": "souvenir",
+          "tag": "d6v8",
+          "explain_vi": "Mua nón lá ==for my best friend== sau chuyến đi → **souvenir** (quà lưu niệm). __'as a' + danh từ số ít.__"
+        },
+        {
+          "id": "d6A6",
+          "q": "We ______ from home at 5 a.m. to get onto the motorway before the traffic got heavy.",
+          "answer": "set off",
+          "tag": "d6p1",
+          "explain_vi": "==from home at 5 a.m.== → khởi hành: **set off**; set là bất quy tắc nên quá khứ vẫn là **set off**. __set – set – set, không thêm -ed.__"
+        }
+      ]
+    },
+    "B_grammar": {
+      "instruction_vi": "Em chọn từ đúng trong ngoặc, hoặc viết dạng đúng của động từ khuyết thiếu trong ngoặc. Nhớ để ý xem câu nói về hiện tại, quá khứ hay tương lai nhé.",
+      "items": [
+        {
+          "id": "d6B1",
+          "q": "You ______ (mustn't / don't have to) buy lunch – it is already included in the tour price, but you can buy snacks if you want.",
+          "answer": "don't have to",
+          "accept": [
+            "do not have to"
+          ],
+          "tag": "d6g",
+          "explain_vi": "Bữa trưa ==already included in the tour price== → không cần mua: **don't have to**. __mustn't là cấm, sai ý vì em vẫn được mua đồ ăn vặt.__"
+        },
+        {
+          "id": "d6B2",
+          "q": "Passengers ______ (mustn't / don't have to) open the doors while the train is moving. It's very dangerous.",
+          "answer": "mustn't",
+          "accept": [
+            "must not"
+          ],
+          "tag": "d6g",
+          "explain_vi": "==It's very dangerous== → cấm mở cửa: **mustn't**. __Luật lệ, việc nguy hiểm → nghĩ tới mustn't.__"
+        },
+        {
+          "id": "d6B3",
+          "q": "Last summer our flight was cancelled, so we ______ (have to) stay at the airport hotel for one night.",
+          "answer": "had to",
+          "tag": "d6g",
+          "explain_vi": "==Last summer== chuyến bay bị huỷ → bắt buộc ở lại: **had to**. __Quá khứ của have to và must đều là had to.__"
+        },
+        {
+          "id": "d6B4",
+          "q": "When my grandfather was young, he ______ (can) ride a bicycle for 50 kilometres without stopping.",
+          "answer": "could",
+          "accept": [
+            "was able to"
+          ],
+          "tag": "d6g",
+          "explain_vi": "==When my grandfather was young== → khả năng trong quá khứ: **could** (hoặc was able to). __can đổi thành could khi nói về quá khứ.__"
+        },
+        {
+          "id": "d6B5",
+          "q": "Don't worry. After a few more lessons, you ______ (be able to) read the train timetable by yourself.",
+          "answer": "will be able to",
+          "accept": [
+            "'ll be able to"
+          ],
+          "tag": "d6g",
+          "explain_vi": "==After a few more lessons== chỉ tương lai → **will be able to**. __can không có dạng tương lai, phải dùng will be able to.__"
+        },
+        {
+          "id": "d6B6",
+          "q": "It's going to be cold in Mộc Châu tonight. You ______ (should / shouldn't) forget your jacket.",
+          "answer": "shouldn't",
+          "accept": [
+            "should not"
+          ],
+          "tag": "d6g",
+          "explain_vi": "==It's going to be cold== → lời khuyên: không nên quên áo: **shouldn't**. __Chú ý 'forget' đã mang nghĩa phủ định; đọc kỹ cả câu.__"
+        }
+      ]
+    },
+    "C_wordform": {
+      "instruction_vi": "Viết dạng đúng của từ in hoa. Gợi ý: hôm nay tất cả đều là danh từ chỉ người – em nhớ xem có cần thêm -s số nhiều không nhé.",
+      "items": [
+        {
+          "id": "d6C1",
+          "q": "Thousands of foreign ______ visit Hạ Long Bay every year. (TOUR)",
+          "answer": "tourists",
+          "tag": "d6w",
+          "explain_vi": "==Thousands of foreign== cần danh từ số nhiều chỉ người: tour → **tourists**. __Thấy 'thousands of' nhớ thêm -s.__"
+        },
+        {
+          "id": "d6C2",
+          "q": "Ms Lan works as a ______ at our school; she always helps us find good books. (LIBRARY)",
+          "answer": "librarian",
+          "tag": "d6w",
+          "explain_vi": "==she always helps us find good books== → người làm thư viện: library → **librarian**. __Sau 'a' cần danh từ chỉ người.__"
+        },
+        {
+          "id": "d6C3",
+          "q": "My uncle is a keen ______. He has been to more than twenty countries. (TRAVEL)",
+          "answer": "traveller",
+          "accept": [
+            "traveler"
+          ],
+          "tag": "d6w",
+          "explain_vi": "==He has been to more than twenty countries== → người hay đi du lịch: **traveller** (Anh-Anh gấp đôi l). __Viết kiểu Anh-Mỹ traveler cũng được.__"
+        },
+        {
+          "id": "d6C4",
+          "q": "The museum welcomed more than 5,000 ______ last weekend. (VISIT)",
+          "answer": "visitors",
+          "tag": "d6w",
+          "explain_vi": "==more than 5,000== → danh từ số nhiều chỉ người: visit → **visitors**. __Đuôi -or cũng chỉ người: visitor, actor.__"
+        }
+      ]
+    },
+    "D_exam": {
+      "format": "cloze",
+      "instruction_vi": "Em đọc đoạn văn rồi chọn đáp án A, B, C hoặc D phù hợp nhất cho mỗi chỗ trống (1)–(4). Mẹo: đọc cả câu trước và sau chỗ trống trước khi chọn nhé!",
+      "text": "Last month my class went on a school trip to Ninh Bình. We (1) ______ off at six o'clock in the morning, and everyone was very excited. The journey took about two hours. When we arrived, we took a boat along the river and (2) ______ several caves. Our teacher told us that we (3) ______ throw rubbish into the water because it would harm the fish. At the end of the day, we were tired but happy. I am already looking forward (4) ______ our next trip!",
+      "items": [
+        {
+          "id": "d6D1",
+          "q": "(1)",
+          "options": [
+            "gave",
+            "set",
+            "made",
+            "turned"
+          ],
+          "answer": "B",
+          "tag": "fmt:cloze",
+          "explain_vi": "Cụm ==off at six o'clock in the morning== → **B. set off** (khởi hành). __gave off, turned off không mang nghĩa lên đường.__"
+        },
+        {
+          "id": "d6D2",
+          "q": "(2)",
+          "options": [
+            "relaxed",
+            "arrived",
+            "explored",
+            "waited"
+          ],
+          "answer": "C",
+          "tag": "fmt:cloze",
+          "explain_vi": "==took a boat along the river and== khám phá mấy hang động → **C. explored**. __relaxed, arrived, waited không đi thẳng với tân ngữ 'several caves'.__"
+        },
+        {
+          "id": "d6D3",
+          "q": "(3)",
+          "options": [
+            "mustn't",
+            "don't have to",
+            "needn't to",
+            "shouldn't to"
+          ],
+          "answer": "A",
+          "tag": "fmt:cloze",
+          "explain_vi": "Ném rác ==because it would harm the fish== → bị cấm: **A. mustn't**. __'needn't to', 'shouldn't to' sai ngữ pháp vì thừa to.__"
+        },
+        {
+          "id": "d6D4",
+          "q": "(4)",
+          "options": [
+            "for",
+            "at",
+            "with",
+            "to"
+          ],
+          "answer": "D",
+          "tag": "fmt:cloze",
+          "explain_vi": "Cụm cố định ==looking forward== + **D. to** + danh từ/V-ing. __Trong look forward to, 'to' là giới từ.__"
+        }
+      ]
+    },
+    "E_reading": {
+      "id": "d6r",
+      "title": "A Train Journey to Remember",
+      "text": "Last summer, Minh and his parents decided to travel from Hà Nội to Huế by train instead of by plane. Minh's father said that flying was faster, but the train would let them see the countryside. They set off on a Friday evening. The station was crowded with passengers carrying heavy bags, and their train was delayed for almost an hour. Minh felt a little bored, but his mother had brought a pack of cards, so they played games while they waited.\n\nThe journey took around thirteen hours. Minh shared a sleeping cabin with his parents and an elderly couple from Quảng Trị. The old man told Minh stories about his village and taught him a few words in the local dialect. In the morning, Minh woke up to see green rice fields and the sea outside the window.\n\nWhen they finally reached their destination, Minh was tired but happy. He says he is already looking forward to his next trip by train.",
+      "items": [
+        {
+          "id": "d6E1",
+          "kind": "tfng",
+          "q": "Minh's father thought that the train was faster than the plane.",
+          "answer": "False",
+          "tag": "d6r",
+          "explain_vi": "Bài viết ==Minh's father said that flying was faster== → bố nghĩ máy bay nhanh hơn, nên **False**. __Câu hỏi đảo ngược thông tin trong bài.__"
+        },
+        {
+          "id": "d6E2",
+          "kind": "tfng",
+          "q": "The elderly couple were travelling to Huế to visit their grandchildren.",
+          "answer": "Not Given",
+          "tag": "d6r",
+          "explain_vi": "Bài chỉ nói ==an elderly couple from Quảng Trị==, không nói họ đi thăm ai → **Not Given**. __Không có thông tin về cháu thì không chọn True hay False.__"
+        },
+        {
+          "id": "d6E3",
+          "kind": "mcq",
+          "q": "Why did the family choose to travel by train?",
+          "options": [
+            "It was cheaper than flying.",
+            "They wanted to see the countryside.",
+            "Minh was afraid of flying.",
+            "There were no flights that day."
+          ],
+          "answer": "B",
+          "tag": "d6r",
+          "explain_vi": "==the train would let them see the countryside== → **B. They wanted to see the countryside**. __Giá vé và việc sợ máy bay không được nhắc tới.__"
+        },
+        {
+          "id": "d6E4",
+          "kind": "mcq",
+          "q": "What did Minh's family do while their train was delayed?",
+          "options": [
+            "They had dinner at the station.",
+            "They read books.",
+            "They went back home.",
+            "They played card games."
+          ],
+          "answer": "D",
+          "tag": "d6r",
+          "explain_vi": "==his mother had brought a pack of cards, so they played games while they waited== → **D. They played card games**."
+        }
+      ]
+    },
+    "F_writing": {
+      "task_en": "Write a short paragraph (50–70 words) about a trip you have taken or would like to take. Say where you went (or want to go), how you travelled, and what you did (or want to do) there. Use at least one modal verb (can, could, must, have to, should) and two words from today's lesson.",
+      "task_vi": "Em viết một đoạn văn ngắn (50–70 từ) kể về một chuyến đi em đã đi hoặc muốn đi: đi đâu, đi bằng phương tiện gì, đã làm gì (hoặc muốn làm gì) ở đó. Em nhớ dùng ít nhất 1 động từ khuyết thiếu và 2 từ mới của bài hôm nay nhé.",
+      "min_words": 50,
+      "model": "Last Tết, my family went to Đà Lạt by coach. We set off very early, but the journey was long because the roads were crowded. In Đà Lạt, we explored the flower gardens and the night market. It was cold, so we had to wear thick jackets. I bought a little wooden horse as a souvenir for my cousin. If you visit Đà Lạt, you should try the hot soy milk there!",
+      "checklist_vi": [
+        "Em đã nói rõ đi đâu, đi bằng gì và làm gì ở đó chưa?",
+        "Em đã dùng ít nhất 1 động từ khuyết thiếu (can/could/must/have to/should) và theo sau là động từ nguyên thể không 'to' chưa?",
+        "Em đã dùng ít nhất 2 từ mới của bài hôm nay chưa?",
+        "Em đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
+      ]
+    },
+    "G_review": {
+      "instruction_vi": "Ôn xoắn ốc – Em làm theo gợi ý trong ngoặc ở mỗi câu để ôn lại kiến thức của các buổi trước nhé. Không nhớ thì em mở lại bài cũ xem cũng được!",
+      "items": [
+        {
+          "id": "d6G1",
+          "q": "My cousin has a very ______ diet: she eats lots of vegetables, fruit, fish and rice. (BALANCE)",
+          "answer": "balanced",
+          "from_day": 5,
+          "tag": "d5v7",
+          "explain_vi": "==lots of vegetables, fruit, fish and rice== → chế độ ăn cân bằng: **balanced** (balance + -ed). __Trước danh từ 'diet' cần tính từ.__"
+        },
+        {
+          "id": "d6G2",
+          "q": "The suitcase was ______ heavy for me to carry up the stairs. (too / enough / so)",
+          "answer": "too",
+          "from_day": 5,
+          "tag": "d5g",
+          "explain_vi": "Sau chỗ trống có ==heavy for me to carry== → **too + adj + for sb + to V**. __so cần that, enough đứng sau tính từ.__"
+        },
+        {
+          "id": "d6G3",
+          "q": "We ______ (never / visit) Cát Bà Island, but we hope to go there next summer.",
+          "answer": "have never visited",
+          "accept": [
+            "'ve never visited"
+          ],
+          "from_day": 3,
+          "tag": "d3g",
+          "explain_vi": "==but we hope to go there next summer== → tới giờ chưa từng đến: **have never visited** (hiện tại hoàn thành). __never đứng giữa have và V3.__"
+        },
+        {
+          "id": "d6G4",
+          "q": "Please be quiet. I ______ (try) to concentrate on my homework.",
+          "answer": "am trying",
+          "accept": [
+            "'m trying"
+          ],
+          "from_day": 1,
+          "tag": "d1g",
+          "explain_vi": "==Please be quiet== → việc đang diễn ra lúc nói: **am trying** (hiện tại tiếp diễn). __Câu mệnh lệnh như Look!, Be quiet! là dấu hiệu tiếp diễn.__"
+        }
+      ]
+    }
+  },
+  "web_check": [
+    {
+      "id": "d6q1",
+      "type": "mcq",
+      "skill": "vocab",
+      "q": "Many young people dream of studying ______ in countries like the UK or Japan.",
+      "options": [
+        "at abroad",
+        "abroad",
+        "to abroad",
+        "in abroad"
+      ],
+      "answer": 1,
+      "explain_vi": "**abroad** là trạng từ nên đứng ngay sau động từ: ==studying abroad==, không có giới từ. __Không viết at/to/in abroad.__",
+      "tag": "d6v7"
+    },
+    {
+      "id": "d6q2",
+      "type": "mcq",
+      "skill": "vocab",
+      "q": "Heavy rain caused a long ______, so the train arrived three hours late.",
+      "options": [
+        "journey",
+        "souvenir",
+        "passenger",
+        "delay"
+      ],
+      "answer": 3,
+      "explain_vi": "==the train arrived three hours late== → sự chậm trễ: **delay**. __Tìm lý do trong câu: mưa lớn làm tàu đến muộn.__",
+      "tag": "d6v5"
+    },
+    {
+      "id": "d6q3",
+      "type": "text",
+      "skill": "vocab",
+      "q": "Điền 1 động từ bắt đầu bằng 'e': On our first day in Hội An, we walked for hours to ______ the old streets and little shops.",
+      "answer": "explore",
+      "accept": [
+        "explore"
+      ],
+      "explain_vi": "Sau ==to== dùng động từ nguyên thể: **explore** (khám phá) phố cổ. __Chữ cái gợi ý 'e' giúp em loại các từ khác.__",
+      "tag": "d6v4"
+    },
+    {
+      "id": "d6q4",
+      "type": "mcq",
+      "skill": "grammar",
+      "q": "Students ______ use their phones during the test. It's against the rules.",
+      "options": [
+        "don't have to",
+        "can",
+        "mustn't",
+        "should"
+      ],
+      "answer": 2,
+      "explain_vi": "==It's against the rules== nghĩa là trái quy định, tức bị cấm → **mustn't**. __don't have to là 'không cần', không phải 'cấm'.__",
+      "tag": "d6g"
+    },
+    {
+      "id": "d6q5",
+      "type": "mcq",
+      "skill": "grammar",
+      "q": "I ______ find my passport this morning, so we nearly missed the flight.",
+      "options": [
+        "couldn't",
+        "can't",
+        "mustn't",
+        "shouldn't"
+      ],
+      "answer": 0,
+      "explain_vi": "==this morning== và ==nearly missed== là chuyện đã qua → **couldn't** (không thể). __can't là hiện tại; mustn't, shouldn't sai nghĩa.__",
+      "tag": "d6g"
+    },
+    {
+      "id": "d6q6",
+      "type": "text",
+      "skill": "grammar",
+      "q": "Điền dạng đúng của 'have to': Yesterday my dad ______ drive me to school because the bus was late.",
+      "answer": "had to",
+      "accept": [
+        "had to"
+      ],
+      "explain_vi": "==Yesterday== → quá khứ của have to là **had to**. __must không có dạng quá khứ, nên quá khứ luôn dùng had to.__",
+      "tag": "d6g"
+    },
+    {
+      "id": "d6q7",
+      "type": "mcq",
+      "skill": "wordform",
+      "q": "The ______ played beautiful music on the piano in the hotel lobby. (MUSIC)",
+      "options": [
+        "musical",
+        "musicist",
+        "musicer",
+        "musician"
+      ],
+      "answer": 3,
+      "explain_vi": "==played beautiful music on the piano== là người chơi nhạc → **musician**. __musical là tính từ; musicist, musicer không có.__",
+      "tag": "d6w"
+    },
+    {
+      "id": "d6q8",
+      "type": "text",
+      "skill": "wordform",
+      "q": "Viết dạng đúng của từ in hoa: Every morning, hundreds of ______ ride their bikes around West Lake. (CYCLE)",
+      "answer": "cyclists",
+      "accept": [
+        "cyclists"
+      ],
+      "explain_vi": "==hundreds of== cần danh từ số nhiều chỉ người: cycle → **cyclists**. __Người làm việc gì đó hay có đuôi -ist: cyclist, scientist.__",
+      "tag": "d6w"
+    },
+    {
+      "id": "d6q9",
+      "type": "mcq",
+      "skill": "exam",
+      "q": "Đọc đoạn văn ngắn và chọn từ đúng cho chỗ trống: 'It was a public holiday, so the beach was extremely ______. There was almost no space to put our towels down.'",
+      "options": [
+        "quiet",
+        "empty",
+        "crowded",
+        "abroad"
+      ],
+      "answer": 2,
+      "explain_vi": "==There was almost no space to put our towels down== → bãi biển rất đông: **crowded**. __Câu sau thường giải thích câu trước; quiet, empty là ngược nghĩa.__",
+      "tag": "fmt:cloze"
+    },
+    {
+      "id": "d6q10",
+      "type": "mcq",
+      "skill": "review",
+      "from_day": 5,
+      "q": "This is ______ interesting book that I finished it in one evening.",
+      "options": [
+        "so",
+        "such an",
+        "such",
+        "so an"
+      ],
+      "answer": 1,
+      "explain_vi": "Sau chỗ trống là ==interesting book== (tính từ + danh từ số ít) → **such an** (an vì interesting bắt đầu bằng nguyên âm). __so không đứng trước 'an'.__",
+      "tag": "d5g"
+    },
+    {
+      "id": "d6q11",
+      "type": "mcq",
+      "skill": "review",
+      "from_day": 3,
+      "q": "Plastic bags are very ______ to sea turtles because the turtles often eat them by mistake and get ill.",
+      "options": [
+        "harmful",
+        "harmless",
+        "helpful",
+        "careful"
+      ],
+      "answer": 0,
+      "explain_vi": "Rùa ==eat them by mistake and get ill== → túi ni-lông có hại: **harmful**. __harmless (vô hại) là bẫy ngược nghĩa.__",
+      "tag": "d3v8"
+    },
+    {
+      "id": "d6q12",
+      "type": "text",
+      "skill": "review",
+      "from_day": 1,
+      "q": "Điền 1 động từ bắt đầu bằng 'a', nghĩa là 'tham dự, có mặt': More than 300 students ______ the school's English festival every year.",
+      "answer": "attend",
+      "accept": [
+        "attend"
+      ],
+      "explain_vi": "==More than 300 students== và ==every year== → hiện tại đơn, chủ ngữ số nhiều: **attend** (tham dự). __attend không cần giới từ: attend the festival.__",
+      "tag": "d1v5"
+    }
+  ],
+  "can_do_vi": [
+    "Em có thể dùng 8 từ mới và 2 cụm động từ (set off, look forward to) để nói về một chuyến đi.",
+    "Em có thể phân biệt mustn't (cấm) và don't have to (không cần), và dùng could/was able to, had to khi nói về quá khứ.",
+    "Em có thể tạo danh từ chỉ người với -er/-or/-ist/-ian và làm bài điền từ vào đoạn văn."
   ]
- },
- "paper": {
-  "A_vocab": {
-   "instruction_vi": "Em chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, và có 2 từ không cần dùng đến nhé.",
-   "bank": [
-    "journey",
-    "destination",
-    "crowded",
-    "passengers",
-    "souvenir",
-    "set off",
-    "explore",
-    "abroad"
-   ],
-   "items": [
-    {
-     "id": "d6A1",
-     "q": "The ______ from my house to my grandparents' village takes three hours by bus.",
-     "answer": "journey",
-     "tag": "d6v1"
-    },
-    {
-     "id": "d6A2",
-     "q": "Phú Quốc has become a favourite holiday ______ for many families because of its beautiful beaches.",
-     "answer": "destination",
-     "tag": "d6v2"
-    },
-    {
-     "id": "d6A3",
-     "q": "The market was so ______ on Sunday morning that we could hardly move.",
-     "answer": "crowded",
-     "tag": "d6v3"
-    },
-    {
-     "id": "d6A4",
-     "q": "The bus driver asked all the ______ to fasten their seat belts.",
-     "answer": "passengers",
-     "tag": "d6v6"
-    },
-    {
-     "id": "d6A5",
-     "q": "Before we left Huế, I bought a small conical hat as a ______ for my best friend.",
-     "answer": "souvenir",
-     "tag": "d6v8"
-    },
-    {
-     "id": "d6A6",
-     "q": "We ______ from home at 5 a.m. to get onto the motorway before the traffic got heavy.",
-     "answer": "set off",
-     "tag": "d6p1"
-    }
-   ]
-  },
-  "B_grammar": {
-   "instruction_vi": "Em chọn từ đúng trong ngoặc, hoặc viết dạng đúng của động từ khuyết thiếu trong ngoặc. Nhớ để ý xem câu nói về hiện tại, quá khứ hay tương lai nhé.",
-   "items": [
-    {
-     "id": "d6B1",
-     "q": "You ______ (mustn't / don't have to) buy lunch – it is already included in the tour price, but you can buy snacks if you want.",
-     "answer": "don't have to",
-     "accept": [
-      "do not have to"
-     ],
-     "tag": "d6g"
-    },
-    {
-     "id": "d6B2",
-     "q": "Passengers ______ (mustn't / don't have to) open the doors while the train is moving. It's very dangerous.",
-     "answer": "mustn't",
-     "accept": [
-      "must not"
-     ],
-     "tag": "d6g"
-    },
-    {
-     "id": "d6B3",
-     "q": "Last summer our flight was cancelled, so we ______ (have to) stay at the airport hotel for one night.",
-     "answer": "had to",
-     "tag": "d6g"
-    },
-    {
-     "id": "d6B4",
-     "q": "When my grandfather was young, he ______ (can) ride a bicycle for 50 kilometres without stopping.",
-     "answer": "could",
-     "accept": [
-      "was able to"
-     ],
-     "tag": "d6g"
-    },
-    {
-     "id": "d6B5",
-     "q": "Don't worry. After a few more lessons, you ______ (be able to) read the train timetable by yourself.",
-     "answer": "will be able to",
-     "accept": [
-      "'ll be able to"
-     ],
-     "tag": "d6g"
-    },
-    {
-     "id": "d6B6",
-     "q": "It's going to be cold in Mộc Châu tonight. You ______ (should / shouldn't) forget your jacket.",
-     "answer": "shouldn't",
-     "accept": [
-      "should not"
-     ],
-     "tag": "d6g"
-    }
-   ]
-  },
-  "C_wordform": {
-   "instruction_vi": "Viết dạng đúng của từ in hoa. Gợi ý: hôm nay tất cả đều là danh từ chỉ người – em nhớ xem có cần thêm -s số nhiều không nhé.",
-   "items": [
-    {
-     "id": "d6C1",
-     "q": "Thousands of foreign ______ visit Hạ Long Bay every year. (TOUR)",
-     "answer": "tourists",
-     "tag": "d6w"
-    },
-    {
-     "id": "d6C2",
-     "q": "Ms Lan works as a ______ at our school; she always helps us find good books. (LIBRARY)",
-     "answer": "librarian",
-     "tag": "d6w"
-    },
-    {
-     "id": "d6C3",
-     "q": "My uncle is a keen ______. He has been to more than twenty countries. (TRAVEL)",
-     "answer": "traveller",
-     "accept": [
-      "traveler"
-     ],
-     "tag": "d6w"
-    },
-    {
-     "id": "d6C4",
-     "q": "The museum welcomed more than 5,000 ______ last weekend. (VISIT)",
-     "answer": "visitors",
-     "tag": "d6w"
-    }
-   ]
-  },
-  "D_exam": {
-   "format": "cloze",
-   "instruction_vi": "Em đọc đoạn văn rồi chọn đáp án A, B, C hoặc D phù hợp nhất cho mỗi chỗ trống (1)–(4). Mẹo: đọc cả câu trước và sau chỗ trống trước khi chọn nhé!",
-   "text": "Last month my class went on a school trip to Ninh Bình. We (1) ______ off at six o'clock in the morning, and everyone was very excited. The journey took about two hours. When we arrived, we took a boat along the river and (2) ______ several caves. Our teacher told us that we (3) ______ throw rubbish into the water because it would harm the fish. At the end of the day, we were tired but happy. I am already looking forward (4) ______ our next trip!",
-   "items": [
-    {
-     "id": "d6D1",
-     "q": "(1)",
-     "options": [
-      "gave",
-      "set",
-      "made",
-      "turned"
-     ],
-     "answer": "B",
-     "tag": "fmt:cloze"
-    },
-    {
-     "id": "d6D2",
-     "q": "(2)",
-     "options": [
-      "relaxed",
-      "arrived",
-      "explored",
-      "waited"
-     ],
-     "answer": "C",
-     "tag": "fmt:cloze"
-    },
-    {
-     "id": "d6D3",
-     "q": "(3)",
-     "options": [
-      "mustn't",
-      "don't have to",
-      "needn't to",
-      "shouldn't to"
-     ],
-     "answer": "A",
-     "tag": "fmt:cloze"
-    },
-    {
-     "id": "d6D4",
-     "q": "(4)",
-     "options": [
-      "for",
-      "at",
-      "with",
-      "to"
-     ],
-     "answer": "D",
-     "tag": "fmt:cloze"
-    }
-   ]
-  },
-  "E_reading": {
-   "id": "d6r",
-   "title": "A Train Journey to Remember",
-   "text": "Last summer, Minh and his parents decided to travel from Hà Nội to Huế by train instead of by plane. Minh's father said that flying was faster, but the train would let them see the countryside. They set off on a Friday evening. The station was crowded with passengers carrying heavy bags, and their train was delayed for almost an hour. Minh felt a little bored, but his mother had brought a pack of cards, so they played games while they waited.\n\nThe journey took around thirteen hours. Minh shared a sleeping cabin with his parents and an elderly couple from Quảng Trị. The old man told Minh stories about his village and taught him a few words in the local dialect. In the morning, Minh woke up to see green rice fields and the sea outside the window.\n\nWhen they finally reached their destination, Minh was tired but happy. He says he is already looking forward to his next trip by train.",
-   "items": [
-    {
-     "id": "d6E1",
-     "kind": "tfng",
-     "q": "Minh's father thought that the train was faster than the plane.",
-     "answer": "False",
-     "tag": "d6r"
-    },
-    {
-     "id": "d6E2",
-     "kind": "tfng",
-     "q": "The elderly couple were travelling to Huế to visit their grandchildren.",
-     "answer": "Not Given",
-     "tag": "d6r"
-    },
-    {
-     "id": "d6E3",
-     "kind": "mcq",
-     "q": "Why did the family choose to travel by train?",
-     "options": [
-      "It was cheaper than flying.",
-      "They wanted to see the countryside.",
-      "Minh was afraid of flying.",
-      "There were no flights that day."
-     ],
-     "answer": "B",
-     "tag": "d6r"
-    },
-    {
-     "id": "d6E4",
-     "kind": "mcq",
-     "q": "What did Minh's family do while their train was delayed?",
-     "options": [
-      "They had dinner at the station.",
-      "They read books.",
-      "They went back home.",
-      "They played card games."
-     ],
-     "answer": "D",
-     "tag": "d6r"
-    }
-   ]
-  },
-  "F_writing": {
-   "task_en": "Write a short paragraph (50–70 words) about a trip you have taken or would like to take. Say where you went (or want to go), how you travelled, and what you did (or want to do) there. Use at least one modal verb (can, could, must, have to, should) and two words from today's lesson.",
-   "task_vi": "Em viết một đoạn văn ngắn (50–70 từ) kể về một chuyến đi em đã đi hoặc muốn đi: đi đâu, đi bằng phương tiện gì, đã làm gì (hoặc muốn làm gì) ở đó. Em nhớ dùng ít nhất 1 động từ khuyết thiếu và 2 từ mới của bài hôm nay nhé.",
-   "min_words": 50,
-   "model": "Last Tết, my family went to Đà Lạt by coach. We set off very early, but the journey was long because the roads were crowded. In Đà Lạt, we explored the flower gardens and the night market. It was cold, so we had to wear thick jackets. I bought a little wooden horse as a souvenir for my cousin. If you visit Đà Lạt, you should try the hot soy milk there!",
-   "checklist_vi": [
-    "Em đã nói rõ đi đâu, đi bằng gì và làm gì ở đó chưa?",
-    "Em đã dùng ít nhất 1 động từ khuyết thiếu (can/could/must/have to/should) và theo sau là động từ nguyên thể không 'to' chưa?",
-    "Em đã dùng ít nhất 2 từ mới của bài hôm nay chưa?",
-    "Em đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
-   ]
-  },
-  "G_review": {
-   "instruction_vi": "Ôn xoắn ốc – Em làm theo gợi ý trong ngoặc ở mỗi câu để ôn lại kiến thức của các buổi trước nhé. Không nhớ thì em mở lại bài cũ xem cũng được!",
-   "items": [
-    {
-     "id": "d6G1",
-     "q": "My cousin has a very ______ diet: she eats lots of vegetables, fruit, fish and rice. (BALANCE)",
-     "answer": "balanced",
-     "from_day": 5,
-     "tag": "d5v7"
-    },
-    {
-     "id": "d6G2",
-     "q": "The suitcase was ______ heavy for me to carry up the stairs. (too / enough / so)",
-     "answer": "too",
-     "from_day": 5,
-     "tag": "d5g"
-    },
-    {
-     "id": "d6G3",
-     "q": "We ______ (never / visit) Cát Bà Island, but we hope to go there next summer.",
-     "answer": "have never visited",
-     "accept": [
-      "'ve never visited"
-     ],
-     "from_day": 3,
-     "tag": "d3g"
-    },
-    {
-     "id": "d6G4",
-     "q": "Please be quiet. I ______ (try) to concentrate on my homework.",
-     "answer": "am trying",
-     "accept": [
-      "'m trying"
-     ],
-     "from_day": 1,
-     "tag": "d1g"
-    }
-   ]
-  }
- },
- "web_check": [
-  {
-   "id": "d6q1",
-   "type": "mcq",
-   "skill": "vocab",
-   "q": "Many young people dream of studying ______ in countries like the UK or Japan.",
-   "options": [
-    "at abroad",
-    "abroad",
-    "to abroad",
-    "in abroad"
-   ],
-   "answer": 1,
-   "explain_vi": "'abroad' là trạng từ nên không đi kèm giới từ: study abroad, go abroad.",
-   "tag": "d6v7"
-  },
-  {
-   "id": "d6q2",
-   "type": "mcq",
-   "skill": "vocab",
-   "q": "Heavy rain caused a long ______, so the train arrived three hours late.",
-   "options": [
-    "journey",
-    "souvenir",
-    "passenger",
-    "delay"
-   ],
-   "answer": 3,
-   "explain_vi": "delay = sự chậm trễ; tàu đến muộn 3 tiếng vì mưa lớn.",
-   "tag": "d6v5"
-  },
-  {
-   "id": "d6q3",
-   "type": "text",
-   "skill": "vocab",
-   "q": "Điền 1 động từ bắt đầu bằng 'e': On our first day in Hội An, we walked for hours to ______ the old streets and little shops.",
-   "answer": "explore",
-   "accept": [
-    "explore"
-   ],
-   "explain_vi": "explore = khám phá; sau 'to' dùng động từ nguyên thể.",
-   "tag": "d6v4"
-  },
-  {
-   "id": "d6q4",
-   "type": "mcq",
-   "skill": "grammar",
-   "q": "Students ______ use their phones during the test. It's against the rules.",
-   "options": [
-    "don't have to",
-    "can",
-    "mustn't",
-    "should"
-   ],
-   "answer": 2,
-   "explain_vi": "'against the rules' = trái quy định → cấm → mustn't.",
-   "tag": "d6g"
-  },
-  {
-   "id": "d6q5",
-   "type": "mcq",
-   "skill": "grammar",
-   "q": "I ______ find my passport this morning, so we nearly missed the flight.",
-   "options": [
-    "couldn't",
-    "can't",
-    "mustn't",
-    "shouldn't"
-   ],
-   "answer": 0,
-   "explain_vi": "Việc xảy ra sáng nay (quá khứ) và nói về khả năng → couldn't.",
-   "tag": "d6g"
-  },
-  {
-   "id": "d6q6",
-   "type": "text",
-   "skill": "grammar",
-   "q": "Điền dạng đúng của 'have to': Yesterday my dad ______ drive me to school because the bus was late.",
-   "answer": "had to",
-   "accept": [
-    "had to"
-   ],
-   "explain_vi": "'Yesterday' → quá khứ của have to là had to (must không có dạng quá khứ).",
-   "tag": "d6g"
-  },
-  {
-   "id": "d6q7",
-   "type": "mcq",
-   "skill": "wordform",
-   "q": "The ______ played beautiful music on the piano in the hotel lobby. (MUSIC)",
-   "options": [
-    "musical",
-    "musicist",
-    "musicer",
-    "musician"
-   ],
-   "answer": 3,
-   "explain_vi": "music → musician (người chơi nhạc). 'musical' là tính từ.",
-   "tag": "d6w"
-  },
-  {
-   "id": "d6q8",
-   "type": "text",
-   "skill": "wordform",
-   "q": "Viết dạng đúng của từ in hoa: Every morning, hundreds of ______ ride their bikes around West Lake. (CYCLE)",
-   "answer": "cyclists",
-   "accept": [
-    "cyclists"
-   ],
-   "explain_vi": "cycle → cyclist (người đi xe đạp); 'hundreds of' nên cần số nhiều: cyclists.",
-   "tag": "d6w"
-  },
-  {
-   "id": "d6q9",
-   "type": "mcq",
-   "skill": "exam",
-   "q": "Đọc đoạn văn ngắn và chọn từ đúng cho chỗ trống: 'It was a public holiday, so the beach was extremely ______. There was almost no space to put our towels down.'",
-   "options": [
-    "quiet",
-    "empty",
-    "crowded",
-    "abroad"
-   ],
-   "answer": 2,
-   "explain_vi": "Câu sau nói 'gần như không còn chỗ' → bãi biển rất đông: crowded.",
-   "tag": "fmt:cloze"
-  },
-  {
-   "id": "d6q10",
-   "type": "mcq",
-   "skill": "review",
-   "from_day": 5,
-   "q": "This is ______ interesting book that I finished it in one evening.",
-   "options": [
-    "so",
-    "such an",
-    "such",
-    "so an"
-   ],
-   "answer": 1,
-   "explain_vi": "such + a/an + (tính từ) + danh từ số ít: such an interesting book.",
-   "tag": "d5g"
-  },
-  {
-   "id": "d6q11",
-   "type": "mcq",
-   "skill": "review",
-   "from_day": 3,
-   "q": "Plastic bags are very ______ to sea turtles because the turtles often eat them by mistake and get ill.",
-   "options": [
-    "harmful",
-    "harmless",
-    "helpful",
-    "careful"
-   ],
-   "answer": 0,
-   "explain_vi": "harmful = có hại; rùa ăn nhầm túi ni-lông và bị ốm.",
-   "tag": "d3v8"
-  },
-  {
-   "id": "d6q12",
-   "type": "text",
-   "skill": "review",
-   "from_day": 1,
-   "q": "Điền 1 động từ bắt đầu bằng 'a', nghĩa là 'tham dự, có mặt': More than 300 students ______ the school's English festival every year.",
-   "answer": "attend",
-   "accept": [
-    "attend"
-   ],
-   "explain_vi": "attend = tham dự; 'every year' + chủ ngữ số nhiều → attend.",
-   "tag": "d1v5"
-  }
- ],
- "can_do_vi": [
-  "Em có thể dùng 8 từ mới và 2 cụm động từ (set off, look forward to) để nói về một chuyến đi.",
-  "Em có thể phân biệt mustn't (cấm) và don't have to (không cần), và dùng could/was able to, had to khi nói về quá khứ.",
-  "Em có thể tạo danh từ chỉ người với -er/-or/-ist/-ian và làm bài điền từ vào đoạn văn."
- ]
 }

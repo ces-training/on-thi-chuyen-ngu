@@ -10,7 +10,8 @@
       "Visitors ___ touch the paintings. It's against the rules.",
       "You ___ cross the road when the light is red.",
       "You ___ feed the animals at the zoo."
-     ]
+     ],
+     "rule_vi": "**mustn't + V**: bị cấm, không được làm. Dấu hiệu: ==against the rules==, đèn đỏ, nội quy sở thú. __Gặp luật lệ, biển báo → nghĩ tới mustn't.__"
     },
     {
      "name": "don't have to (không cần, không bắt buộc)",
@@ -18,7 +19,8 @@
       "It's Sunday, so I ___ get up early.",
       "The museum is free. You ___ buy a ticket.",
       "The hotel is near. We ___ take a taxi."
-     ]
+     ],
+     "rule_vi": "**don't have to + V**: không cần, không bắt buộc. Dấu hiệu: ==It's Sunday==, ==The museum is free==. __Có lý do khiến việc đó không cần thiết → don't have to.__"
     },
     {
      "name": "should (nên – lời khuyên)",
@@ -26,30 +28,36 @@
       "It's very sunny. You ___ wear a hat.",
       "You look tired. You ___ have a rest.",
       "Hội An is beautiful. You ___ visit it."
-     ]
+     ],
+     "rule_vi": "**should + V**: lời khuyên. Dấu hiệu: tình huống như ==It's very sunny==, ==You look tired==. __Người nói gợi ý điều tốt cho mình → should.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "Our flight was delayed, so we had to wait.",
-    "hint_vi": "had to: quá khứ của have to / must"
+    "hint_vi": "had to: quá khứ của have to / must",
+    "why_vi": "Hai vế nối bằng **so**: ==Our flight was delayed== rồi ==we had to wait==. __had to là quá khứ của have to.__"
    },
    {
     "sentence": "You should buy a souvenir for your grandparents.",
-    "hint_vi": "should + V: lời khuyên"
+    "hint_vi": "should + V: lời khuyên",
+    "why_vi": "**You should + V + tân ngữ**: should buy a souvenir rồi ==for your grandparents==. __Sau should là động từ nguyên thể, không có to.__"
    },
    {
     "sentence": "Passengers mustn't use their phones during take-off.",
-    "hint_vi": "mustn't + V: cấm"
+    "hint_vi": "mustn't + V: cấm",
+    "why_vi": "**mustn't + V**: ==Passengers mustn't use their phones==, trạng ngữ ==during take-off== ở cuối. __Trạng ngữ thời gian thường đứng cuối câu.__"
    },
    {
     "sentence": "Will you be able to explore the old town tomorrow?",
-    "hint_vi": "will be able to: 'có thể' ở tương lai"
+    "hint_vi": "will be able to: 'có thể' ở tương lai",
+    "why_vi": "Câu hỏi: **Will + S + be able to + V?** ==Will you be able to explore==… __Đảo Will lên trước chủ ngữ, giữ 'be able to' liền nhau.__"
    },
    {
     "sentence": "You don't have to bring food on the journey.",
-    "hint_vi": "don't have to: không cần"
+    "hint_vi": "don't have to: không cần",
+    "why_vi": "**S + don't have to + V**: ==You don't have to bring food==, thêm ==on the journey== ở cuối. __don't have to nghĩa là không cần.__"
    }
   ],
   "truefalse": [
@@ -57,49 +65,49 @@
     "s": "She can speaks three languages.",
     "ok": false,
     "fix": "She can speak three languages.",
-    "why_vi": "Sau can là động từ nguyên thể, không chia: can speak."
+    "why_vi": "Sai. ==can speaks== → **can speak**: sau can là động từ nguyên thể. __Không thêm -s sau can, must, should.__"
    },
    {
     "s": "Yesterday we must leave the hotel at 6 a.m.",
     "ok": false,
     "fix": "Yesterday we had to leave the hotel at 6 a.m.",
-    "why_vi": "must không có dạng quá khứ; quá khứ dùng had to."
+    "why_vi": "Sai. ==Yesterday we must== → **had to**: must không có dạng quá khứ. __Thấy yesterday, last… thì dùng had to.__"
    },
    {
     "s": "You don't have to bring a towel. The hotel gives you one.",
     "ok": true,
     "fix": "You don't have to bring a towel. The hotel gives you one.",
-    "why_vi": "Khách sạn có sẵn khăn → không cần mang: don't have to."
+    "why_vi": "Đúng. ==The hotel gives you one== → không cần mang: **don't have to**."
    },
    {
     "s": "You should to book your train tickets early.",
     "ok": false,
     "fix": "You should book your train tickets early.",
-    "why_vi": "Sau should không dùng to: should book."
+    "why_vi": "Sai. ==should to book== → **should book**. __should, must, can không đi với to; chỉ have to mới có to.__"
    },
    {
     "s": "Drivers mustn't use their phones while they are driving.",
     "ok": true,
     "fix": "Drivers mustn't use their phones while they are driving.",
-    "why_vi": "Luật cấm → mustn't + V."
+    "why_vi": "Đúng. Luật cấm dùng điện thoại ==while they are driving== → **mustn't + V**."
    },
    {
     "s": "After two hours, we were able to find the way back to our hotel.",
     "ok": true,
     "fix": "After two hours, we were able to find the way back to our hotel.",
-    "why_vi": "Làm được việc khó trong một lần cụ thể ở quá khứ → was/were able to."
+    "why_vi": "Đúng. Làm được việc khó ==After two hours== trong một lần cụ thể ở quá khứ → **were able to**. __Với một lần cụ thể đã làm được, dùng was/were able to.__"
    },
    {
     "s": "We mustn't go to school on Sunday because there are no lessons.",
     "ok": false,
     "fix": "We don't have to go to school on Sunday because there are no lessons.",
-    "why_vi": "Không có tiết học → không cần đi (don't have to), chứ không phải bị cấm (mustn't)."
+    "why_vi": "Sai. ==there are no lessons== → không cần đi: **don't have to**, không phải bị cấm. __mustn't là cấm; don't have to là không cần.__"
    },
    {
     "s": "My cousin couldn't come to the party last weekend because she was ill.",
     "ok": true,
     "fix": "My cousin couldn't come to the party last weekend because she was ill.",
-    "why_vi": "Không thể làm gì trong quá khứ → couldn't + V."
+    "why_vi": "Đúng. ==last weekend== và ==because she was ill== → không thể đến: **couldn't + V**."
    }
   ]
  },
@@ -120,7 +128,7 @@
       "souvenir"
      ],
      "answer": 1,
-     "explain_vi": "destination = điểm đến. Singapore là nơi cả nhà đến, không phải 'chuyến đi' (journey)."
+     "explain_vi": "==Our ... was Singapore== → nơi cả nhà đến: **destination** (điểm đến). __journey là chuyến đi, không phải nơi đến.__"
     },
     {
      "options": [
@@ -130,7 +138,7 @@
       "destination"
      ],
      "answer": 2,
-     "explain_vi": "a two-hour delay = chậm trễ hai tiếng; có 'because of bad weather' và 'had to sit… waiting'."
+     "explain_vi": "==a two-hour== chỗ trống ==because of bad weather== → **delay** (sự chậm trễ). __'had to sit… waiting' cũng là dấu hiệu.__"
     },
     {
      "options": [
@@ -140,7 +148,7 @@
       "crowdedly"
      ],
      "answer": 1,
-     "explain_vi": "Trước danh từ 'waiting room' cần tính từ: crowded (đông đúc). crowd là danh từ."
+     "explain_vi": "Trước danh từ ==waiting room== cần tính từ → **crowded** (đông đúc). __crowd là danh từ, crowdedly không dùng.__"
     },
     {
      "options": [
@@ -150,7 +158,7 @@
       "have to"
      ],
      "answer": 3,
-     "explain_vi": "Sau will không dùng must/should/can; tương lai của 'phải' là will have to."
+     "explain_vi": "Sau ==will== cần động từ nguyên thể → **will have to** (sẽ phải). __Không nói will must, will can: hai động từ khuyết thiếu không đứng liền nhau.__"
     },
     {
      "options": [
@@ -160,7 +168,7 @@
       "could"
      ],
      "answer": 1,
-     "explain_vi": "Cấu trúc was/were able to + V = đã có thể làm được. Không nói 'were can' hay 'were possible to'."
+     "explain_vi": "==were== + chỗ trống + ==to visit== → **were able to** (đã có thể). __Không nói 'were can' hay 'were possible to'.__"
     }
    ]
   },
@@ -190,7 +198,7 @@
     4,
     0
    ],
-   "explain_vi": "Đoạn 1: nhanh nhất nhưng có thể delayed. Đoạn 2: chậm nhưng được ngắm cảnh. Đoạn 3: tự do nhưng dangerous. Đoạn 4: rẻ nhất, khỏi trả tiền khách sạn."
+   "explain_vi": "Đoạn 1: ==flights are sometimes delayed== → **Fast, but not always on time**. Đoạn 2: ==part of the holiday== → **Enjoy the journey**. Đoạn 3: ==dangerous== → **Freedom, but with some danger**. Đoạn 4: ==you don't have to pay for a hotel== → **Save money while you sleep**."
   }
  ],
  "exam_easy": [
@@ -210,7 +218,7 @@
       "put"
      ],
      "answer": 0,
-     "explain_vi": "set off = khởi hành, lên đường. Cả nhà lên đường từ sáng sớm để kịp chuyến tàu thuỷ."
+     "explain_vi": "==off very early in the morning== → **set off** (khởi hành). __kept/did/put off không mang nghĩa lên đường.__"
     },
     {
      "options": [
@@ -220,7 +228,7 @@
       "destinations"
      ],
      "answer": 0,
-     "explain_vi": "passengers = hành khách. Câu sau nói 'some of them were tourists', nên chỗ trống là người đi trên tàu."
+     "explain_vi": "Câu sau ==some of them were tourists== → người đi trên tàu: **passengers**. __Từ 'them' chỉ người, nên loại souvenirs, journeys.__"
     },
     {
      "options": [
@@ -230,7 +238,7 @@
       "can"
      ],
      "answer": 1,
-     "explain_vi": "Sau chỗ trống có 'to wait', nên cần had to (đã phải). must, should, can không đi với to."
+     "explain_vi": "Sau chỗ trống có ==to wait== và chuyện đã qua → **had to** (đã phải). __must, should, can không đi với to.__"
     },
     {
      "options": [
@@ -240,7 +248,7 @@
       "mustn't"
      ],
      "answer": 0,
-     "explain_vi": "Bố khuyên đi đúng đường mòn vì dễ bị lạc → should (nên). mustn't và can't nghĩa là không được đi trên đường mòn, ngược ý."
+     "explain_vi": "==because it is easy to get lost there== → lời khuyên: **should** stay on the path. __mustn't, can't thành 'không được đi trên đường mòn', ngược ý.__"
     },
     {
      "options": [
@@ -250,7 +258,7 @@
       "journey"
      ],
      "answer": 1,
-     "explain_vi": "a souvenir = quà lưu niệm. Mua áo làm quà cho bạn thân sau chuyến đi."
+     "explain_vi": "Mua áo ==for my best friend, Mai== sau chuyến đi → **souvenir** (quà lưu niệm). __'as a' + danh từ chỉ vật.__"
     }
    ]
   },
@@ -280,7 +288,7 @@
     5,
     3
    ],
-   "explain_vi": "Đoạn 1: xe buýt rẻ nhưng đông (crowded). Đoạn 2: xe đạp tốt cho sức khoẻ, không làm bẩn không khí. Đoạn 3: lần đầu đi máy bay ra nước ngoài. Đoạn 4: tàu chậm nhưng cảnh đẹp."
+   "explain_vi": "Đoạn 1: ==very crowded== → **Cheap but full of people**. Đoạn 2: ==doesn't make the air dirty== → **Good for my body and the air**. Đoạn 3: ==for the first time== → **My first flight to another country**. Đoạn 4: ==rice fields and the sea== → **A long ride with nice views**."
   }
  ],
  "exam_plus": [
@@ -300,7 +308,7 @@
       "excursion"
      ],
      "answer": 2,
-     "explain_vi": "the whole trip = cả chuyến đi. travel là danh từ không đếm được, voyage là chuyến đi biển dài, excursion là chuyến tham quan ngắn trong ngày."
+     "explain_vi": "==the whole== + danh từ đếm được → **trip** (chuyến đi). __travel không đếm được; voyage là đi biển dài, excursion là chuyến ngắn trong ngày.__"
     },
     {
      "options": [
@@ -310,7 +318,7 @@
       "took"
      ],
      "answer": 1,
-     "explain_vi": "Collocation: make friends (with sb) = kết bạn. Không nói do/get/take friends."
+     "explain_vi": "Cụm cố định **make friends with** (kết bạn); dấu hiệu ==friends with travellers==. __Không nói do/get/take friends.__"
     },
     {
      "options": [
@@ -320,7 +328,7 @@
       "set"
      ],
      "answer": 0,
-     "explain_vi": "be held up = bị chậm trễ, bị kẹt lại (đồng nghĩa delayed). put up, kept up, set up không mang nghĩa này."
+     "explain_vi": "==her train was ... up by a landslide== → **be held up** (bị kẹt, bị chậm). __held up đồng nghĩa với delayed.__"
     },
     {
      "options": [
@@ -330,7 +338,7 @@
       "succeeded"
      ],
      "answer": 0,
-     "explain_vi": "was able to + V = đã làm được. capable đi với of + V-ing; possible không dùng cho chủ ngữ chỉ người; succeed đi với in."
+     "explain_vi": "==was== + chỗ trống + ==to borrow== → **was able to** (đã làm được). __capable đi với of + V-ing; possible không dùng với chủ ngữ chỉ người.__"
     },
     {
      "options": [
@@ -340,7 +348,7 @@
       "have"
      ],
      "answer": 0,
-     "explain_vi": "Thành ngữ make the best of sth = cố tận dụng tốt nhất một hoàn cảnh không thuận lợi."
+     "explain_vi": "Thành ngữ **make the best of** sth: tận dụng tốt nhất hoàn cảnh khó; ==stay calm and== cho thấy thái độ tích cực. __Học thuộc cả cụm, đừng dịch từng từ.__"
     }
    ]
   },
@@ -370,7 +378,7 @@
     5,
     2
    ],
-   "explain_vi": "Đoạn 1: đặt vé sát ngày lại đắt hơn. Đoạn 2: hành lý gọn thì tự do hơn. Đoạn 3: tận dụng thời gian chờ, không phàn nàn. Đoạn 4: tìm hiểu phong tục trước khi đi."
+   "explain_vi": "Đoạn 1: ==Airlines raise their prices== → **The hidden cost of waiting too long**. Đoạn 2: ==Packing light== → **Why less luggage means more freedom**. Đoạn 3: ==use the extra time== → **Making the most of unexpected waits**. Đoạn 4: ==A little research== → **Doing your homework on local traditions**."
   }
  ],
  "paper_plus": {
@@ -381,13 +389,15 @@
     "id": "d6H1",
     "q": "In winter, the mountain village is almost ______ because heavy snow often blocks the only road. (ACCESS)",
     "answer": "inaccessible",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Tuyết ==often blocks the only road== → không vào được: access → accessible → **inaccessible**. __Sau 'almost' cần tính từ.__"
    },
    {
     "id": "d6H2",
     "q": "Climbers must be well prepared, as the weather on Fansipan can be extremely ______. (PREDICT)",
     "answer": "unpredictable",
-    "accept": []
+    "accept": [],
+    "explain_vi": "==Climbers must be well prepared== vì thời tiết khó đoán: predict → predictable → **unpredictable**. __Sau 'extremely' cần tính từ.__"
    },
    {
     "id": "d6H3",
@@ -397,7 +407,8 @@
      "have booked our tickets in advance",
      "have booked the train tickets in advance",
      "have booked them in advance"
-    ]
+    ],
+    "explain_vi": "Đã đặt vé nhưng ==it wasn't necessary== → **needn't have + V3**: needn't have booked our train tickets in advance. __Cấu trúc này nói việc đã làm rồi nhưng hoá ra không cần.__"
    },
    {
     "id": "d6H4",
@@ -406,7 +417,8 @@
     "accept": [
      "able to land it safely",
      "successful in landing the plane safely"
-    ]
+    ],
+    "explain_vi": "==succeeded in landing== → **was able to land the plane safely**. __succeed in + V-ing ↔ be able to + V (làm được trong một lần cụ thể).__"
    },
    {
     "id": "d6H5",
@@ -417,7 +429,8 @@
      "set in",
      "set out"
     ],
-    "answer": "D"
+    "answer": "D",
+    "explain_vi": "**set out** (D) là khởi hành, lên đường; hợp với ==before dawn== và ==reach the top of the mountain==. __set up là thành lập, set back là làm chậm, set in là bắt đầu (thời tiết xấu).__"
    },
    {
     "id": "d6H6",
@@ -428,7 +441,8 @@
      "living",
      "lifestyle"
     ],
-    "answer": "B"
+    "answer": "B",
+    "explain_vi": "Thành ngữ **once-in-a-lifetime** (B): cả đời chỉ có một lần; đi trước danh từ ==experience==. __life, living, lifestyle không tạo thành cụm này.__"
    }
   ]
  },
@@ -547,7 +561,7 @@
        "She had a sports match."
       ],
       "answer": 1,
-      "explain_vi": "Mai nói: \"I went on a trip to Sa Pa with my family.\""
+      "explain_vi": "Mai nói: ==I went on a trip to Sa Pa with my family.== → **She was on a family trip**. __Câu hỏi Why → nghe lời giải thích đầu tiên của Mai.__"
      },
      {
       "q": "How did Mai's family travel to Sa Pa?",
@@ -558,7 +572,7 @@
        "By car"
       ],
       "answer": 2,
-      "explain_vi": "Mai: \"There's no airport. We went by bus.\""
+      "explain_vi": "Mai: ==There's no airport. We went by bus.== → **By bus**. __Tom đoán 'By plane?' nhưng Mai nói không, đừng chọn theo câu hỏi.__"
      },
      {
       "q": "How long was the journey?",
@@ -569,7 +583,7 @@
        "Six hours"
       ],
       "answer": 3,
-      "explain_vi": "Mai: \"the journey took six hours.\""
+      "explain_vi": "Mai: ==the journey took six hours.== → **Six hours**."
      },
      {
       "q": "Why did Mai wear two jackets?",
@@ -580,7 +594,7 @@
        "Her mum told her to."
       ],
       "answer": 0,
-      "explain_vi": "Mai: \"It was so cold that I had to wear two jackets!\""
+      "explain_vi": "Mai: ==It was so cold that I had to wear two jackets!== → **It was very cold**. __Cấu trúc so … that cho biết lý do.__"
      },
      {
       "q": "What did Mai buy for Tom?",
@@ -591,7 +605,7 @@
        "A map"
       ],
       "answer": 1,
-      "explain_vi": "Mai: \"I bought this bag for you.\""
+      "explain_vi": "Mai: ==I bought this bag for you.== → **A bag**."
      }
     ]
    },
@@ -606,33 +620,33 @@
       "accept": [
        "three"
       ],
-      "explain_vi": "Linh nói: \"The journey from Hanoi takes about 3 hours.\""
+      "explain_vi": "Linh nói: ==The journey from Hanoi takes about 3 hours.== → **3**."
      },
      {
       "answer": "restaurant",
       "accept": [
        "a restaurant"
       ],
-      "explain_vi": "Linh nói: \"We're going to stop once, at a restaurant.\""
+      "explain_vi": "==We're going to stop once, at a restaurant, for a short break.== → **restaurant**."
      },
      {
       "answer": "torch",
       "accept": [
        "a torch"
       ],
-      "explain_vi": "Linh nói: \"It's very dark inside, so you should bring a torch.\""
+      "explain_vi": "==It's very dark inside, so you should bring a torch.== → **torch** (đèn pin). __Lý do 'very dark' giúp em đoán trước đồ cần mang.__"
      },
      {
       "answer": "seafood",
       "accept": [],
-      "explain_vi": "Linh nói: \"we'll have seafood on the boat.\""
+      "explain_vi": "==At lunchtime, we'll have seafood on the boat.== → **seafood**."
      },
      {
       "answer": "market",
       "accept": [
        "the market"
       ],
-      "explain_vi": "Linh nói: \"buy souvenirs at the market near the harbour.\""
+      "explain_vi": "==you can buy souvenirs at the market near the harbour== → **market**. __Đọc trước chữ sau chỗ trống ('near the harbour') để biết cần nghe đoạn nào.__"
      }
     ]
    }
@@ -711,7 +725,7 @@
        "The airport is too far from Hoi An."
       ],
       "answer": 1,
-      "explain_vi": "Anna: \"my mum hates planes\" = mẹ Anna không thích đi máy bay."
+      "explain_vi": "Anna: ==my mum hates planes== → **Her mother doesn't like flying**. __'hates planes' được nói lại thành 'doesn't like flying'.__"
      },
      {
       "q": "How long does the train journey take?",
@@ -722,7 +736,7 @@
        "Two weeks"
       ],
       "answer": 2,
-      "explain_vi": "Nam nói sixteen rồi sửa: \"Sorry, no, I mean seventeen.\""
+      "explain_vi": "Nam nói sixteen rồi sửa: ==Sorry, no, I mean seventeen.== → **Seventeen hours**. __Nghe 'Sorry, no, I mean' là thông tin sắp được sửa.__"
      },
      {
       "q": "What does Nam say about the train tickets?",
@@ -733,7 +747,7 @@
        "Book them well before the trip."
       ],
       "answer": 3,
-      "explain_vi": "Nam: \"you should book at least two weeks before you travel\" = đặt vé sớm."
+      "explain_vi": "==you should book at least two weeks before you travel== → **Book them well before the trip**. __A sai vì Nam nói 'You can do it online'.__"
      },
      {
       "q": "Why doesn't Nam recommend the coach?",
@@ -744,7 +758,7 @@
        "It is too crowded in summer."
       ],
       "answer": 0,
-      "explain_vi": "\"The roads are busy, and there are often long delays.\" Đông khách vào mùa hè là nói về tàu."
+      "explain_vi": "==The roads are busy, and there are often long delays.== → **It is often late because of traffic**. __Đông khách mùa hè là nói về tàu, không phải xe khách.__"
      },
      {
       "q": "What does Nam advise Anna's family to take on the train?",
@@ -755,7 +769,7 @@
        "A map"
       ],
       "answer": 2,
-      "explain_vi": "Nam: \"You'd better bring your own snacks.\" Đồ ăn trên tàu không ngon."
+      "explain_vi": "Nam: ==You'd better bring your own snacks.== → **Their own food**. __You'd better + V là lời khuyên.__"
      }
     ]
    },
@@ -770,19 +784,19 @@
       "accept": [
        "school gate"
       ],
-      "explain_vi": "Thầy nói: \"please be at the school gate by half past five.\""
+      "explain_vi": "Thầy nói: ==please be at the school gate by half past five== → **gate**."
      },
      {
       "answer": "Wednesday",
       "accept": [],
-      "explain_vi": "Ban đầu là Friday, rồi thầy sửa: \"Please give it to her by Wednesday instead.\""
+      "explain_vi": "Ban đầu là Friday, rồi thầy sửa: ==Please give it to her by Wednesday instead.== → **Wednesday**. __Chữ 'instead' báo hiệu thông tin mới thay cho thông tin cũ.__"
      },
      {
       "answer": "50",
       "accept": [
        "fifty"
       ],
-      "explain_vi": "Thầy nói: \"you can bring up to 50 dollars for souvenirs.\""
+      "explain_vi": "==you can bring up to 50 dollars for souvenirs== → **50**."
      },
      {
       "answer": "Science Centre",
@@ -790,12 +804,12 @@
        "science center",
        "the science centre"
       ],
-      "explain_vi": "Thầy nói: \"a hotel near the Science Centre.\""
+      "explain_vi": "==We're staying at a hotel near the Science Centre== → **Science Centre**. __Tên riêng viết hoa chữ cái đầu.__"
      },
      {
       "answer": "umbrella",
       "accept": [],
-      "explain_vi": "Thầy nói: \"you should pack an umbrella and light clothes.\""
+      "explain_vi": "==you should pack an umbrella and light clothes== → **umbrella**. __Mạo từ 'an' trước chỗ trống gợi ý từ bắt đầu bằng nguyên âm.__"
      }
     ]
    }
@@ -882,7 +896,7 @@
        "It is cheaper than Ninh Binh."
       ],
       "answer": 1,
-      "explain_vi": "Linh: \"only because it's the most famous\" = nổi tiếng nhất. Hạ Long thực ra xa hơn."
+      "explain_vi": "Linh: ==only because it's the most famous== → **It is the best-known place**. __'the most famous' được nói lại thành 'best-known'.__"
      },
      {
       "q": "What was Tom's opinion of his trip to Ha Long Bay?",
@@ -893,7 +907,7 @@
        "He thought the boat trip was too expensive."
       ],
       "answer": 2,
-      "explain_vi": "\"The bay itself is amazing, but it was so crowded...\" – cảnh đẹp nhưng quá đông."
+      "explain_vi": "==The bay itself is amazing, but it was so crowded that we could hardly move on the boat.== → **He liked the views but not the crowds**. __B sai: Tom thất vọng vì đông người, không phải vì cảnh.__"
      },
      {
       "q": "What worry does Tom have about the trip to Ninh Binh?",
@@ -904,7 +918,7 @@
        "There are no boat trips there."
       ],
       "answer": 0,
-      "explain_vi": "Tom: \"some people might complain that it's too tiring. Cycling in June isn't exactly relaxing.\""
+      "explain_vi": "Tom: ==some people might complain that it's too tiring. Cycling in June isn't exactly relaxing.== → **Cycling in the heat might be too tiring**. __'June' gợi ý trời nóng.__"
      },
      {
       "q": "Why does Tom like Linh's final plan?",
@@ -915,7 +929,7 @@
        "It gives the class what they wanted, with fewer people around."
       ],
       "answer": 3,
-      "explain_vi": "\"the best of both worlds... still get the boat ride they wanted, without the crowds.\""
+      "explain_vi": "==People would still get the boat ride they wanted, without the crowds.== → **It gives the class what they wanted, with fewer people around**."
      },
      {
       "q": "What does Tom believe will happen when the class sees the photos?",
@@ -926,7 +940,7 @@
        "They will want to cycle all day."
       ],
       "answer": 2,
-      "explain_vi": "Tom: \"Once they've seen them, I doubt anyone will argue\" – chắc sẽ đồng ý với Linh."
+      "explain_vi": "==Once they've seen them, I doubt anyone will argue.== → **They will probably agree with Linh**. __'I doubt anyone will argue' nghĩa là chắc không ai phản đối.__"
      }
     ]
    },
@@ -941,33 +955,33 @@
       "accept": [
        "twenty-four"
       ],
-      "explain_vi": "Tom nói: \"Your ticket is valid for 24 hours.\""
+      "explain_vi": "==Your ticket is valid for 24 hours== → **24**."
      },
      {
       "answer": "30",
       "accept": [
        "thirty"
       ],
-      "explain_vi": "15 phút là bình thường; tuần này \"you may have to wait up to 30 minutes.\""
+      "explain_vi": "15 phút là bình thường; tuần này ==you may have to wait up to 30 minutes== → **30**. __Để ý 'Normally… but': đáp án nằm sau 'but'.__"
      },
      {
       "answer": "online",
       "accept": [],
-      "explain_vi": "Tom: \"you'd better buy your tickets online\" vì xếp hàng ở cổng rất lâu."
+      "explain_vi": "==you'd better buy your tickets online== → **online**. __Lý do: hàng người ở cổng rất dài.__"
      },
      {
       "answer": "library",
       "accept": [
        "city library"
       ],
-      "explain_vi": "\"the roof garden of the city library ... completely free.\" London Eye thì đắt."
+      "explain_vi": "==the roof garden of the city library gives you an almost equally stunning view, and it's completely free== → **library**. __London Eye đẹp nhưng đắt, là bẫy.__"
      },
      {
       "answer": "Victoria Station",
       "accept": [
        "Victoria"
       ],
-      "explain_vi": "\"taken to our office at Victoria Station, not to the police.\""
+      "explain_vi": "==Anything left behind is taken to our office at Victoria Station, not to the police.== → **Victoria Station**. __Thông tin sau 'not' là bẫy.__"
      }
     ]
    }

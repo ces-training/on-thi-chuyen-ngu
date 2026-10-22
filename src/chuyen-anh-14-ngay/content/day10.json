@@ -159,37 +159,43 @@
      "id": "d10A1",
      "q": "My uncle's ______ is to open his own restaurant one day.",
      "answer": "ambition",
-     "tag": "d10v8"
+     "tag": "d10v8",
+     "explain_vi": "Ước mơ ==to open his own restaurant one day== → hoài bão: **ambition**. __Cụm hay gặp: 'My ambition is to + V'.__"
     },
     {
      "id": "d10A2",
      "q": "The factory near my house ______ more than three hundred workers.",
      "answer": "employs",
-     "tag": "d10v3"
+     "tag": "d10v3",
+     "explain_vi": "Nhà máy thuê ==more than three hundred workers== → **employs** (tuyển dụng, thuê). __Chủ ngữ số ít 'The factory' nên động từ có -s.__"
     },
     {
      "id": "d10A3",
      "q": "Who is ______ for feeding the cat while we are on holiday?",
      "answer": "responsible",
-     "tag": "d10v5"
+     "tag": "d10v5",
+     "explain_vi": "Cụm **be responsible for + V-ing**: chịu trách nhiệm làm gì → ==is … for feeding the cat==. __Nhớ giới từ đi kèm: responsible for.__"
     },
     {
      "id": "d10A4",
      "q": "If you want to join the school newspaper, you need to ______ for a place before Friday.",
      "answer": "apply",
-     "tag": "d10v6"
+     "tag": "d10v6",
+     "explain_vi": "Muốn tham gia báo trường thì phải đăng ký → **apply for**; dấu hiệu ==for a place before Friday==. __Sau 'need to' cần động từ nguyên thể.__"
     },
     {
      "id": "d10A5",
      "q": "Good communication ______ are important in almost every job.",
      "answer": "skills",
-     "tag": "d10v2"
+     "tag": "d10v2",
+     "explain_vi": "==Good communication …== → kỹ năng giao tiếp: **skills**. __Động từ 'are' cho biết cần danh từ số nhiều.__"
     },
     {
      "id": "d10A6",
      "q": "She had a long and successful ______ in banking before she retired.",
      "answer": "career",
-     "tag": "d10v1"
+     "tag": "d10v1",
+     "explain_vi": "==long and successful … in banking== → sự nghiệp: **career**. __career là cả quá trình làm nghề, job chỉ là một công việc.__"
     }
    ]
   },
@@ -200,7 +206,8 @@
      "id": "d10B1",
      "q": "If you heat ice, it ______ (melt).",
      "answer": "melts",
-     "tag": "d10g"
+     "tag": "d10g",
+     "explain_vi": "Sự thật khoa học (==If you heat ice==) → **loại 0**, hai vế hiện tại đơn → **melts**. __Chủ ngữ 'it' số ít nên thêm -s.__"
     },
     {
      "id": "d10B2",
@@ -209,7 +216,8 @@
      "accept": [
       "'ll play"
      ],
-     "tag": "d10g"
+     "tag": "d10g",
+     "explain_vi": "==If it rains tomorrow== → **loại 1**: will + V → **will play**. __Có tomorrow và vế if hiện tại đơn, nghĩ ngay tới loại 1.__"
     },
     {
      "id": "d10B3",
@@ -218,7 +226,8 @@
      "accept": [
       "was"
      ],
-     "tag": "d10g"
+     "tag": "d10g",
+     "explain_vi": "Vế sau có ==would join== → **loại 2**: If I **were** (cũng chấp nhận was). __Loại 2 dùng were cho mọi ngôi là chuẩn nhất.__"
     },
     {
      "id": "d10B4",
@@ -227,7 +236,8 @@
      "accept": [
       "does not hurry"
      ],
-     "tag": "d10g"
+     "tag": "d10g",
+     "explain_vi": "Vế sau có ==will miss== → **loại 1**, vế if hiện tại đơn phủ định: **doesn't hurry**. __Nam số ít nên dùng doesn't.__"
     },
     {
      "id": "d10B5",
@@ -236,7 +246,8 @@
      "accept": [
       "'d learn"
      ],
-     "tag": "d10g"
+     "tag": "d10g",
+     "explain_vi": "Vế if có ==had more free time== → **loại 2**: **would learn**. __would + V nguyên thể, không thêm -ed.__"
     },
     {
      "id": "d10B6",
@@ -245,7 +256,8 @@
      "accept": [
       "do not get"
      ],
-     "tag": "d10g"
+     "tag": "d10g",
+     "explain_vi": "Sự thật hiển nhiên (==Plants die==) → **loại 0**, hiện tại đơn phủ định: **don't get**. __Mệnh đề if có thể đứng sau, vẫn chia như bình thường.__"
     }
    ]
   },
@@ -256,13 +268,15 @@
      "id": "d10C1",
      "q": "The city plans to ______ the road because the traffic is getting heavier. (WIDE)",
      "answer": "widen",
-     "tag": "d10w"
+     "tag": "d10w",
+     "explain_vi": "Sau ==plans to== cần **động từ**: wide + -en → **widen** (mở rộng). __Đuôi -en: wide → widen, short → shorten.__"
     },
     {
      "id": "d10C2",
      "q": "Scientists ______ animals into different groups, such as mammals and birds. (CLASS)",
      "answer": "classify",
-     "tag": "d10w"
+     "tag": "d10w",
+     "explain_vi": "Sau chủ ngữ ==Scientists== cần **động từ**: class + -ify → **classify** (phân loại). __Chủ ngữ số nhiều nên động từ không thêm -s.__"
     },
     {
      "id": "d10C3",
@@ -271,13 +285,15 @@
      "accept": [
       "realize"
      ],
-     "tag": "d10w"
+     "tag": "d10w",
+     "explain_vi": "Sau ==didn't== cần **động từ nguyên thể**: real + -ise → **realise** (nhận ra). __realize (Anh – Mỹ) cũng đúng.__"
     },
     {
      "id": "d10C4",
      "q": "Can you ______ this report? It's too long for our presentation. (SHORT)",
      "answer": "shorten",
-     "tag": "d10w"
+     "tag": "d10w",
+     "explain_vi": "Sau ==Can you== cần **động từ**: short + -en → **shorten** (rút ngắn); vì ==It's too long==. __Đọc vế sau để kiểm tra nghĩa.__"
     }
    ]
   },
@@ -295,7 +311,8 @@
       "Yes, I'd love to."
      ],
      "answer": "A",
-     "tag": "fmt:dialogue_completion"
+     "tag": "fmt:dialogue_completion",
+     "explain_vi": "Lan ==really nervous== vì sắp phỏng vấn → động viên: **A. Good luck! I'm sure you'll do well.** __Congratulations chỉ dùng khi đã có kết quả tốt.__"
     },
     {
      "id": "d10D2",
@@ -307,7 +324,8 @@
       "It's very kind of me."
      ],
      "answer": "B",
-     "tag": "fmt:dialogue_completion"
+     "tag": "fmt:dialogue_completion",
+     "explain_vi": "Thầy cô mời giúp (==Would you like to help…?==) → nhận lời: **B. Yes, I'd be happy to.** __'It's very kind of me' sai vì tự khen mình.__"
     },
     {
      "id": "d10D3",
@@ -319,7 +337,8 @@
       "No, please carry on. You're doing well."
      ],
      "answer": "D",
-     "tag": "fmt:dialogue_completion"
+     "tag": "fmt:dialogue_completion",
+     "explain_vi": "Hùng hỏi có nên dừng không (==shall I stop reading==) → bảo đọc tiếp: **D. No, please carry on.** __carry on là tiếp tục; turn it down là từ chối/vặn nhỏ.__"
     },
     {
      "id": "d10D4",
@@ -331,7 +350,8 @@
       "Let's turn it down together."
      ],
      "answer": "C",
-     "tag": "fmt:dialogue_completion"
+     "tag": "fmt:dialogue_completion",
+     "explain_vi": "Linh nói ==I turned it down== (đã từ chối) → hỏi lý do: **C. Really? Why did you say no?** __A sai vì Linh không nhận việc.__"
     }
    ]
   },
@@ -346,14 +366,16 @@
      "kind": "tfng",
      "q": "Khoa received money for his work at the clinic.",
      "answer": "False",
-     "tag": "d10r"
+     "tag": "d10r",
+     "explain_vi": "Bài viết: ==He did not get paid== → Khoa không được trả tiền → **False**. __'get paid' cùng nghĩa với 'receive money'.__"
     },
     {
      "id": "d10E2",
      "kind": "tfng",
      "q": "Khoa already has a pet dog at home.",
      "answer": "Not Given",
-     "tag": "d10r"
+     "tag": "d10r",
+     "explain_vi": "Bài không nhắc Khoa có nuôi chó ở nhà; con chó trong bài là ==a dog arrived with a badly injured leg== ở phòng khám → **Not Given**. __Đừng để từ 'dog' giống nhau đánh lừa.__"
     },
     {
      "id": "d10E3",
@@ -366,7 +388,8 @@
       "training dogs"
      ],
      "answer": "C",
-     "tag": "d10r"
+     "tag": "d10r",
+     "explain_vi": "Bài viết: ==Khoa was responsible for cleaning the cages and feeding the cats.== → **C**. __Chữa vết thương là việc của đội bác sĩ, Khoa chỉ đứng xem.__"
     },
     {
      "id": "d10E4",
@@ -379,7 +402,8 @@
       "accepted the invitation"
      ],
      "answer": "D",
-     "tag": "d10r"
+     "tag": "d10r",
+     "explain_vi": "**turn down** là từ chối; ==He did not turn the offer down== nghĩa là Khoa đã nhận lời → **D. accepted the invitation**. __Câu phủ định của 'từ chối' nghĩa là 'đồng ý'.__"
     }
    ]
   },
@@ -403,21 +427,24 @@
      "q": "Rice, eggs and spring onions are the main ______ in this fried rice dish. (i______)",
      "answer": "ingredients",
      "from_day": 9,
-     "tag": "d9v3"
+     "tag": "d9v3",
+     "explain_vi": "Gạo, trứng, hành là ==the main … in this fried rice dish== → nguyên liệu: **ingredients**. __Chủ ngữ số nhiều và 'are' nên cần danh từ số nhiều.__"
     },
     {
      "id": "d10G2",
      "q": "There isn't ______ milk left in the fridge. (much / many)",
      "answer": "much",
      "from_day": 9,
-     "tag": "d9g"
+     "tag": "d9g",
+     "explain_vi": "==milk== là danh từ không đếm được → **much**. __many chỉ đi với danh từ đếm được số nhiều.__"
     },
     {
      "id": "d10G3",
      "q": "I'm looking forward to ______ (see) my grandparents next week.",
      "answer": "seeing",
      "from_day": 6,
-     "tag": "d6p2"
+     "tag": "d6p2",
+     "explain_vi": "**look forward to + V-ing**: mong chờ làm gì → ==looking forward to seeing==. __'to' ở đây là giới từ, nên dùng V-ing, không dùng V nguyên thể.__"
     },
     {
      "id": "d10G4",
@@ -427,7 +454,8 @@
       "'re going to drop"
      ],
      "from_day": 4,
-     "tag": "d4g"
+     "tag": "d4g",
+     "explain_vi": "Có dấu hiệu ngay trước mắt (==Be careful!==) → dự đoán chắc chắn: **are going to drop**. __Thấy bằng chứng ở hiện tại thì dùng be going to.__"
     }
    ]
   }
@@ -440,7 +468,7 @@
    "q": "The hotel wants a receptionist with at least one year of e______.",
    "answer": "experience",
    "accept": [],
-   "explain_vi": "'experience' = kinh nghiệm (danh từ không đếm được). 'one year of experience' = một năm kinh nghiệm.",
+   "explain_vi": "**experience**: kinh nghiệm (danh từ không đếm được) → ==one year of experience==. __Sau 'of' cần danh từ; experience không thêm -s khi nghĩa là kinh nghiệm.__",
    "tag": "d10v4"
   },
   {
@@ -455,7 +483,7 @@
     "skills"
    ],
    "answer": 1,
-   "explain_vi": "'colleagues' = đồng nghiệp – những người làm cùng cơ quan với mẹ.",
+   "explain_vi": "**colleagues**: đồng nghiệp, người làm cùng cơ quan; dấu hiệu ==from the office==. __careers là sự nghiệp, skills là kỹ năng, không phải người.__",
    "tag": "d10v7"
   },
   {
@@ -470,7 +498,7 @@
     "applied it"
    ],
    "answer": 0,
-   "explain_vi": "'turn down' = từ chối. Khi tân ngữ là đại từ (it), đại từ phải đứng giữa: turn it down (không nói turn down it).",
+   "explain_vi": "**turn down**: từ chối. Tân ngữ là đại từ ==it== phải đứng giữa → **turned it down**. __Không nói 'turned down it'.__",
    "tag": "d10p2"
   },
   {
@@ -485,7 +513,7 @@
     "stops"
    ],
    "answer": 3,
-   "explain_vi": "Câu điều kiện loại 0 (sự thật luôn đúng): If + hiện tại đơn, hiện tại đơn → stops.",
+   "explain_vi": "Sự việc luôn xảy ra (bấm nút thì máy dừng) → **câu điều kiện loại 0**: If + hiện tại đơn, hiện tại đơn → **stops**. Dấu hiệu ==If you press==. __Hai vế cùng hiện tại đơn.__",
    "tag": "d10g"
   },
   {
@@ -500,7 +528,7 @@
     "am having"
    ],
    "answer": 2,
-   "explain_vi": "Vế sau có 'would buy' → câu điều kiện loại 2: If + quá khứ đơn → had.",
+   "explain_vi": "Vế sau có ==would buy== → **loại 2**: If + quá khứ đơn → **had**. __Thấy would ở một vế, vế if chia quá khứ.__",
    "tag": "d10g"
   },
   {
@@ -510,7 +538,7 @@
    "q": "If Lan ______ (study) hard, she will pass the test.",
    "answer": "studies",
    "accept": [],
-   "explain_vi": "Câu điều kiện loại 1: If + hiện tại đơn. Chủ ngữ số ít 'Lan' → studies (y → ies).",
+   "explain_vi": "Vế sau có ==will pass== → **loại 1**: If + hiện tại đơn; 'Lan' số ít → **studies** (y thành ies). __Không dùng will trong vế if.__",
    "tag": "d10g"
   },
   {
@@ -525,7 +553,7 @@
     "purity"
    ],
    "answer": 0,
-   "explain_vi": "Sau 'need to' cần động từ. pure + -ify → purify (làm sạch).",
+   "explain_vi": "Sau ==need to== cần **động từ**: pure + -ify → **purify** (làm sạch). __Đuôi -ify, -en, -ise tạo động từ.__",
    "tag": "d10w"
   },
   {
@@ -535,7 +563,7 @@
    "q": "This photo is too dark. Can you ______ it a little? (BRIGHT)",
    "answer": "brighten",
    "accept": [],
-   "explain_vi": "Sau 'Can you' cần động từ. bright + -en → brighten (làm sáng lên).",
+   "explain_vi": "Sau ==Can you== cần **động từ**: bright + -en → **brighten** (làm sáng lên). __Thêm -en vào tính từ: short → shorten, wide → widen.__",
    "tag": "d10w"
   },
   {
@@ -550,7 +578,7 @@
     "Thanks, that's very kind of you."
    ],
    "answer": 3,
-   "explain_vi": "Khi ai đó đề nghị giúp mình, ta cảm ơn: 'Thanks, that's very kind of you.' 'You're welcome' là câu đáp lại lời cảm ơn.",
+   "explain_vi": "A đề nghị giúp (==just ask me==) → B cảm ơn: **Thanks, that's very kind of you.** __You're welcome dùng để đáp lời cảm ơn, đừng nhầm.__",
    "tag": "fmt:dialogue_completion"
   },
   {
@@ -566,7 +594,7 @@
     "down of"
    ],
    "answer": 2,
-   "explain_vi": "'run out of + danh từ' = hết (cái gì). Phải có đủ 'out of'.",
+   "explain_vi": "Cụm **run out of + danh từ**: hết (cái gì) → ==run out of sugar==. __Phải có đủ 'out of' khi có danh từ phía sau.__",
    "tag": "d9p2"
   },
   {
@@ -582,7 +610,7 @@
     "could"
    ],
    "answer": 2,
-   "explain_vi": "'must' diễn tả sự bắt buộc (luật lệ). 'can/could' chỉ khả năng hoặc sự cho phép.",
+   "explain_vi": "==It's the law.== → bắt buộc theo luật: **must**. __can/could chỉ khả năng hoặc sự cho phép.__",
    "tag": "d6g"
   },
   {
@@ -593,7 +621,7 @@
    "q": "Please s______ off the lights when you leave the room.",
    "answer": "switch",
    "accept": [],
-   "explain_vi": "'switch off' = tắt (đèn, máy). Câu mệnh lệnh dùng động từ nguyên mẫu: switch.",
+   "explain_vi": "**switch off**: tắt (đèn, máy) → ==switch off the lights==. __Câu mệnh lệnh bắt đầu bằng động từ nguyên thể.__",
    "tag": "d4p1"
   }
  ],
