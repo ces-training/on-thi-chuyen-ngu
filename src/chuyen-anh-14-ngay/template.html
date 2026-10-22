@@ -309,6 +309,10 @@ details>summary{cursor:pointer;font-weight:700}
 .g-mo-cam{position:relative}.g-mo-cam video{width:100%;border-radius:12px;transform:scaleX(-1);display:block;background:#000}
 .g-mo-meter{position:relative;height:10px;border-radius:99px;background:var(--surface2);margin-top:6px}.g-mo-meter i{position:absolute;top:-3px;left:50%;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:var(--signal)}
 @media (max-width:620px){.g-mo-row{grid-template-columns:1fr 1fr}.g-mo-cam{grid-column:1/-1;grid-row:1;max-width:220px;margin:0 auto}}
+mark.ev{background:#FFE58A;color:#151521;border-radius:3px;padding:0 2px}
+u.tip{text-decoration:underline 2px var(--signal);text-underline-offset:3px}
+.kx{display:block;font-size:.86rem;color:var(--ink-2);margin-top:2px}
+.g-review{text-align:left;width:100%;max-width:640px;margin-top:6px}.g-review summary{text-align:center}.g-rv{padding-left:20px;display:grid;gap:6px;margin:8px 0;font-size:.9rem}
 /* ===== dạng bài thi ===== */
 .x-tabs{display:flex;gap:8px;flex-wrap:wrap}
 .x-tab{font:inherit;font-weight:700;border:2px solid var(--line-strong);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer;min-height:40px}
@@ -375,6 +379,8 @@ const TESTS = {diag:C.tests.diagnostic, final:C.tests.final};
 const KEY = 'chuyenAnh14_v1';
 const $ = (s,el=document)=>el.querySelector(s);
 const esc = s => String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+/* giải thích có đánh dấu: ==dấu hiệu== → nền vàng, **đáp án/quy tắc** → in đậm, __mẹo__ → gạch chân */
+function fmtVi(t){return esc(t).replace(/==([^=]+?)==/g,'<mark class="ev">$1</mark>').replace(/\*\*([^*]+?)\*\*/g,'<b>$1</b>').replace(/__([^_]+?)__/g,'<u class="tip">$1</u>')}
 
 /* ---------- state ---------- */
 function blank(){return {name:'',code:'',student:null,diag:null,final:null,days:{},queue:{},mastered:{},plan:{min:40,dpw:6},created:Date.now()}}
@@ -459,7 +465,7 @@ function showFeedback(form,it,val){
     q.querySelectorAll('.opt').forEach(o=>{const i=+o.dataset.i;o.classList.remove('sel');if(i===+it.answer)o.classList.add('right');else if(String(i)===String(val))o.classList.add('wrong')});
   }
   q.querySelectorAll('input').forEach(i=>i.disabled=true);
-  q.querySelector('.fbslot').innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Chưa đúng. Đáp án: <b>'+esc(answerText(it))+'</b>'}${it.explain_vi?`<span class="ex">${esc(it.explain_vi)}</span>`:''}</div>`;
+  q.querySelector('.fbslot').innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Chưa đúng. Đáp án: <b>'+esc(answerText(it))+'</b>'}${it.explain_vi?`<span class="ex">${fmtVi(it.explain_vi)}</span>`:''}</div>`;
   return ok;
 }
 function wireOptionHighlight(form){
@@ -707,7 +713,7 @@ function renderPaperKeyLocal(n,unlocked,card){
   const saved=(rec.paper&&rec.paper.ticks)||{};
   let html=`<div class="row" style="justify-content:space-between"><h3 class="ih">${em('memo')}Bước 7 · Chữa bài giấy</h3>${rec.paper?`<span class="pill good">Đúng ${rec.paper.correct}/${rec.paper.total}</span>`:''}</div><p class="small muted">Đối chiếu từng câu, tích vào câu em làm đúng, rồi bấm Lưu.</p><form id="paperForm" class="key-section">`;
   order.forEach(k=>{const sec=P[k];html+=`<h3 style="margin-top:10px;font-size:1.05rem">${SECTION_NAMES[k]}</h3>`;
-    (sec.items||[]).forEach(it=>{const id=it.id;html+=`<label class="key-item"><input type="checkbox" name="${esc(id)}" id="pk_${esc(id)}" ${saved[id]?'checked':''}><span><span class="small muted">${esc(id.replace(/^d\d+/,'').replace(/^([A-Z]\d?)_?(\d+)$/,'$1.$2'))}</span> ${esc(it.q)}<br><span class="key-ans">→ ${esc(keyAnswer(it))}</span></span></label>`})});
+    (sec.items||[]).forEach(it=>{const id=it.id;html+=`<label class="key-item"><input type="checkbox" name="${esc(id)}" id="pk_${esc(id)}" ${saved[id]?'checked':''}><span><span class="small muted">${esc(id.replace(/^d\d+/,'').replace(/^([A-Z]\d?)_?(\d+)$/,'$1.$2'))}</span> ${esc(it.q)}<br><span class="key-ans">→ ${esc(keyAnswer(it))}</span>${it.explain_vi?`<span class="kx">${fmtVi(it.explain_vi)}</span>`:''}</span></label>`})});
   const F=P.F_writing;
   if(F){const wc=(rec.paper&&rec.paper.writing)||{};html+=`<h3 class="ih" style="margin-top:14px;font-size:1.05rem">${em('writing-hand','',30)}F · Đoạn viết (tự kiểm)</h3><p class="small">${esc(F.task_vi||F.task_en)}</p>`;
     (F.checklist_vi||[]).forEach((c,i)=>{html+=`<label class="key-item"><input type="checkbox" name="w${i}" id="pw_${n}_${i}" ${wc['w'+i]?'checked':''}><span>${esc(c)}</span></label>`});

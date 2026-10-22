@@ -163,7 +163,7 @@ G_PLAY.motion=function(spec,A){const L=spec.cfg||{};const tilt=spec.mode!=='lean
     const bar=A.stage.querySelector('.g-bar i');tm=setInterval(()=>{if(state==='center')return;left-=.25;bar.style.width=Math.max(0,left/secs*100)+'%';if(left<=0)choose(null)},250)};
   const choose=s=>{if(state==='done')return;state='done';clearInterval(tm);const q=qs[k];const ok=s===q.ans;gBeep(ok);if(ok){sc++;A.add(1)}
     const opts=A.stage.querySelectorAll('.g-mo-opt');opts.forEach(o=>{if(o.dataset.s===q.ans)o.classList.add('ok');else if(o.dataset.s===s)o.classList.add('bad')});
-    A.stage.querySelector('.g-fb').innerHTML=(ok?'✓ Đúng rồi! ':s===null?'⏰ Hết giờ. ':'✗ Chưa đúng. ')+(q.why?esc(q.why):'');k++;setTimeout(ask,ok?1100:2200)};
+    A.stage.querySelector('.g-fb').innerHTML=(ok?'✓ Đúng rồi! ':s===null?'⏰ Hết giờ. ':'✗ Chưa đúng. ')+(q.why?fmtVi(q.why):'');k++;setTimeout(ask,ok?1100:2200)};
   const loop=async()=>{if(!stream||!A.stage.isConnected){stop();return}try{if(video&&video.readyState>=2){const r=MP_LM.detectForVideo(video,performance.now());const f=r.faceLandmarks&&r.faceLandmarks[0];
       if(f){const a=f[33],b=f[263],nz=f[1];const v=tilt?Math.atan2(b.y-a.y,b.x-a.x)*180/Math.PI:(nz.x-.5)*100;
         if(base===null){calib.push(v);if(calib.length>=15){base=calib.reduce((x,y)=>x+y,0)/calib.length;ask()}}

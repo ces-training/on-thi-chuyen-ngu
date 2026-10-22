@@ -33,7 +33,7 @@
      "is go"
     ],
     "answer": 1,
-    "explain_vi": "Thói quen hằng ngày (every day) dùng hiện tại đơn; chủ ngữ số ít 'My sister' nên động từ thêm -es: goes."
+    "explain_vi": "Có ==every day== → thói quen, dùng **hiện tại đơn**; chủ ngữ số ít 'My sister' → **goes**. __Mẹo: chủ ngữ là he/she/it hoặc một người, động từ thêm -s/-es.__"
    },
    {
     "id": "diag02",
@@ -48,7 +48,7 @@
      "did"
     ],
     "answer": 2,
-    "explain_vi": "'last weekend' là quá khứ; chủ ngữ 'We' đi với 'were' (không dùng 'was')."
+    "explain_vi": "Có ==last weekend== → quá khứ; chủ ngữ 'We' đi với **were**. __Đừng chọn 'was': 'was' chỉ đi với I/he/she/it.__"
    },
    {
     "id": "diag03",
@@ -63,7 +63,7 @@
      "on"
     ],
     "answer": 3,
-    "explain_vi": "Trước ngày cụ thể (14th May) dùng giới từ 'on'. 'in' dùng cho tháng/năm, 'at' cho giờ."
+    "explain_vi": "==14th May== là ngày cụ thể → dùng **on**. __Nhớ: at + giờ, on + ngày/thứ, in + tháng/năm.__"
    },
    {
     "id": "diag04",
@@ -78,7 +78,7 @@
      "he's"
     ],
     "answer": 0,
-    "explain_vi": "Cần đại từ sở hữu đứng một mình (= của cậu ấy): 'his'. 'him' là tân ngữ, 'he's' = he is."
+    "explain_vi": "Chỗ trống đứng một mình ở cuối câu, nghĩa là 'của cậu ấy' → **đại từ sở hữu his**. 'him' là tân ngữ, 'he's' là 'he is'. __Mẹo: sau chỗ trống không có danh từ thì cần đại từ sở hữu.__"
    },
    {
     "id": "diag05",
@@ -93,7 +93,7 @@
      "bottle"
     ],
     "answer": 2,
-    "explain_vi": "'a slice of bread' = một lát bánh mì. 'glass' và 'bottle' dùng cho đồ uống, 'bowl' cho cơm/súp."
+    "explain_vi": "==bread== là đồ ăn cắt được → **a slice of bread** (một lát bánh mì). __'glass' và 'bottle' dùng cho đồ uống, 'bowl' cho cơm/súp.__"
    },
    {
     "id": "diag06",
@@ -108,7 +108,7 @@
      "turn"
     ],
     "answer": 1,
-    "explain_vi": "Trời lạnh nên cần 'close the door' (đóng cửa). 'wear' là mặc, 'make' là làm ra."
+    "explain_vi": "Có ==It's cold in here== → cần đóng cửa: **close the door**. 'wear' là mặc, 'make' là làm ra. __Đọc câu sau chỗ trống để hiểu lý do.__"
    },
    {
     "id": "diag07",
@@ -123,7 +123,7 @@
      "active"
     ],
     "answer": 3,
-    "explain_vi": "Ông vẫn đi bộ 5 km mỗi ngày nên ông rất 'active' (năng động). Ba từ còn lại trái nghĩa với ý câu."
+    "explain_vi": "Có ==He walks five kilometres every day== → ông rất **active** (năng động). __Ba từ còn lại (tired, lazy, ill) trái nghĩa với ý câu, loại ngay.__"
    },
    {
     "id": "diag08",
@@ -135,7 +135,7 @@
     "accept": [
      "rainy"
     ],
-    "explain_vi": "Sau 'very' cần tính từ. rain (mưa) + -y → rainy (có mưa)."
+    "explain_vi": "Sau ==very== cần **tính từ**: rain + -y → **rainy** (có mưa). __Mẹo: thời tiết thường thêm -y: sunny, windy, cloudy.__"
    },
    {
     "id": "diag09",
@@ -151,7 +151,7 @@
      "They want to see dolphins."
     ],
     "answer": 2,
-    "explain_vi": "Bài viết: 'we swim before breakfast, because the sea is calm then'. Trời nóng là vào buổi chiều, không phải buổi sáng."
+    "explain_vi": "Bài đọc: ==\"Every morning we swim before breakfast, because the sea is calm then.\"== → đáp án **The sea is calm at that time**. __Cẩn thận: trời nóng là buổi chiều, không phải buổi sáng.__"
    },
    {
     "id": "diag10",
@@ -167,7 +167,7 @@
      "Go to football practice"
     ],
     "answer": 3,
-    "explain_vi": "'See you at football practice on Sunday.' Về nhà bằng tàu là thứ Bảy, đi thuyền là hôm qua."
+    "explain_vi": "Bài đọc: ==\"See you at football practice on Sunday.\"== → **Go to football practice**. __Về nhà bằng tàu là thứ Bảy, đi thuyền là hôm qua; để ý từ chỉ thời gian.__"
    },
    {
     "id": "diag11",
@@ -182,7 +182,7 @@
      "have you"
     ],
     "answer": 1,
-    "explain_vi": "Câu hỏi đuôi: vế trước khẳng định 'You've (= have) finished' → đuôi phủ định cùng trợ động từ: 'haven't you?'."
+    "explain_vi": "Vế trước khẳng định ==You've finished== (have) → đuôi phủ định cùng trợ động từ: **haven't you?** __Mẹo: tìm trợ động từ ở vế trước rồi đổi dấu, không dùng 'did/do'.__"
    },
    {
     "id": "diag12",
@@ -197,7 +197,7 @@
      "Because"
     ],
     "answer": 2,
-    "explain_vi": "Sau chỗ trống là cụm danh từ 'the heavy rain' → dùng 'Despite'. 'Although' phải đi với một mệnh đề (S + V)."
+    "explain_vi": "Sau chỗ trống là cụm danh từ ==the heavy rain== → **Despite + danh từ**. __'Although' phải đi với mệnh đề (S + V); 'However' đứng riêng và có dấu phẩy.__"
    },
    {
     "id": "diag13",
@@ -212,7 +212,7 @@
      "Either"
     ],
     "answer": 0,
-    "explain_vi": "Đồng ý với câu phủ định dùng 'Neither + trợ động từ + S' (Neither do I = Tớ cũng không). 'So do I' chỉ dùng sau câu khẳng định."
+    "explain_vi": "Câu A phủ định ==don't like== → đồng ý dùng **Neither do I** (tớ cũng không). __'So do I' chỉ dùng sau câu khẳng định.__"
    },
    {
     "id": "diag14",
@@ -227,7 +227,7 @@
      "had started"
     ],
     "answer": 3,
-    "explain_vi": "'By the time + quá khứ đơn' → hành động xảy ra trước đó dùng quá khứ hoàn thành: had started."
+    "explain_vi": "Có ==By the time we arrived== (quá khứ đơn) → việc xảy ra trước đó dùng **quá khứ hoàn thành: had started**. __Mẹo: by the time + quá khứ đơn, vế kia thường là had + V3.__"
    },
    {
     "id": "diag15",
@@ -242,7 +242,7 @@
      "make"
     ],
     "answer": 1,
-    "explain_vi": "Cụm cố định: 'pay attention (to)' = chú ý (đến)."
+    "explain_vi": "Cụm cố định: **pay attention to** (chú ý đến). __Học cả cụm: pay attention, take care, make a decision.__"
    },
    {
     "id": "diag16",
@@ -257,7 +257,7 @@
      "look into"
     ],
     "answer": 2,
-    "explain_vi": "'look after' = chăm sóc. 'look for' = tìm kiếm, 'look up' = tra cứu, 'look into' = điều tra."
+    "explain_vi": "Có ==while I'm on holiday== → nhờ chăm mèo: **look after** (chăm sóc). __'look for' là tìm, 'look up' là tra cứu, 'look into' là điều tra.__"
    },
    {
     "id": "diag17",
@@ -272,7 +272,7 @@
      "temperature"
     ],
     "answer": 0,
-    "explain_vi": "'have a bad cold' = bị cảm nặng, hợp với 'ho không ngừng'. 'ache' phải ghép (headache...), không nói 'a bad temperature'."
+    "explain_vi": "Có ==I can't stop coughing== → **have a bad cold** (bị cảm nặng). __'ache' phải ghép (headache, toothache), không nói 'a bad temperature'.__"
    },
    {
     "id": "diag18",
@@ -284,7 +284,7 @@
     "accept": [
      "friendship"
     ],
-    "explain_vi": "Sau 'Their' cần danh từ. friend + -ship → friendship (tình bạn)."
+    "explain_vi": "Sau tính từ sở hữu ==Their== cần **danh từ**: friend + -ship → **friendship** (tình bạn). __Mẹo: xem từ đứng trước chỗ trống để đoán từ loại.__"
    },
    {
     "id": "diag19",
@@ -300,7 +300,7 @@
      "Many families had books they no longer read."
     ],
     "answer": 3,
-    "explain_vi": "Câu đầu: các gia đình có 'shelves full of books that nobody read any more' – sách không ai đọc nữa. Các ý khác không có trong bài."
+    "explain_vi": "Bài đọc: ==\"many families in her building had shelves full of books that nobody read any more\"== → **Many families had books they no longer read**. __Các ý khác không có trong bài, loại ngay.__"
    },
    {
     "id": "diag20",
@@ -316,7 +316,7 @@
      "The second shelf built by a neighbour"
     ],
     "answer": 1,
-    "explain_vi": "Câu cuối: 'the best part is not the books themselves but the conversations people now have' – điều Linh thích nhất là mọi người trò chuyện với nhau."
+    "explain_vi": "Bài đọc: ==\"the best part is not the books themselves but the conversations people now have in the lift\"== → **The way neighbours now talk to each other**. __Cấu trúc 'not A but B': ý chính nằm ở B.__"
    },
    {
     "id": "diag21",
@@ -331,7 +331,7 @@
      "we left"
     ],
     "answer": 1,
-    "explain_vi": "Đảo ngữ: 'Hardly + had + S + V3 ... when ...' (vừa mới ... thì ...). Sau 'Hardly' đứng đầu câu phải đảo trợ động từ 'had'."
+    "explain_vi": "Có ==Hardly== đứng đầu câu → đảo ngữ: **Hardly + had + S + V3 ... when ...** → **had we left**. __Mẹo: thấy Hardly/No sooner đầu câu, đưa trợ động từ lên trước chủ ngữ.__"
    },
    {
     "id": "diag22",
@@ -346,7 +346,7 @@
      "wouldn't"
     ],
     "answer": 2,
-    "explain_vi": "'would rather + S + quá khứ đơn' dùng để nói mong muốn về người khác ở hiện tại/tương lai → didn't tell."
+    "explain_vi": "Có ==I'd rather you== → **would rather + S + quá khứ đơn** để nói mong muốn về người khác → **didn't**. __Dù nghĩa là hiện tại, vẫn lùi về quá khứ.__"
    },
    {
     "id": "diag23",
@@ -361,7 +361,7 @@
      "wouldn't"
     ],
     "answer": 0,
-    "explain_vi": "Suy đoán chắc chắn KHÔNG xảy ra trong quá khứ: 'can't have + V3' (chắc hẳn đã không ...)."
+    "explain_vi": "Có ==She walked straight past without saying hello== → chắc chắn cô ấy đã không nhìn thấy: **can't have + V3**. __Đừng nhầm 'needn't have' (lẽ ra không cần làm).__"
    },
    {
     "id": "diag24",
@@ -376,7 +376,7 @@
      "left"
     ],
     "answer": 3,
-    "explain_vi": "'It's (high) time + S + quá khứ đơn' = đã đến lúc phải làm gì → left."
+    "explain_vi": "Có ==It's high time== → **It's high time + S + quá khứ đơn** → **left**. __Mẹo: sau 'It's time / It's high time / It's about time + S' luôn dùng quá khứ đơn.__"
    },
    {
     "id": "diag25",
@@ -391,7 +391,7 @@
      "broken"
     ],
     "answer": 0,
-    "explain_vi": "'call off' = huỷ bỏ (sự kiện). 'drop off' = ngủ gật/cho xuống xe, 'give off' = toả ra, 'break off' = cắt đứt."
+    "explain_vi": "Có ==the singer had lost her voice== → buổi diễn bị huỷ: **call off** (huỷ bỏ). __'drop off' là ngủ gật/thả xuống xe, 'give off' là toả ra, 'break off' là cắt đứt.__"
    },
    {
     "id": "diag26",
@@ -406,7 +406,7 @@
      "achieved"
     ],
     "answer": 3,
-    "explain_vi": "Kết hợp từ: 'achieve a goal' = đạt được mục tiêu. Không nói 'win/earn/gain a goal' với nghĩa này."
+    "explain_vi": "Kết hợp từ: **achieve a goal** (đạt được mục tiêu). __'win' đi với trận đấu/giải thưởng; không nói 'earn/gain a goal' với nghĩa này.__"
    },
    {
     "id": "diag27",
@@ -421,7 +421,7 @@
      "gave"
     ],
     "answer": 0,
-    "explain_vi": "Cụm cố định: 'put effort into something' = dồn công sức vào. ('make an effort' không đi với 'into'.)"
+    "explain_vi": "Có ==effort into== → cụm cố định **put effort into something** (dồn công sức vào). __'make an effort' không đi với 'into', nên loại 'made'.__"
    },
    {
     "id": "diag28",
@@ -433,7 +433,7 @@
     "accept": [
      "misunderstanding"
     ],
-    "explain_vi": "Sau 'a' cần danh từ, nghĩa là sự hiểu lầm: mis- + understand + -ing → misunderstanding."
+    "explain_vi": "Sau ==a== cần **danh từ** nghĩa là sự hiểu lầm: mis- + understand + -ing → **misunderstanding**. __Mẹo: tiền tố mis- mang nghĩa 'sai, nhầm'.__"
    },
    {
     "id": "diag29",
@@ -449,7 +449,7 @@
      "They are lazier than they were as children."
     ],
     "answer": 0,
-    "explain_vi": "Bài viết: cơ thể tiết hormone melatonin muộn hơn khoảng 2 tiếng. Bài phủ nhận ý 'lười', và không nhắc đến điện thoại."
+    "explain_vi": "Bài đọc: ==\"the body starts to produce melatonin ... about two hours later in the evening\"== → **cơ thể tiết hormone gây buồn ngủ muộn hơn**. __Bài phủ nhận ý 'lười' và không nhắc tới điện thoại.__"
    },
    {
     "id": "diag30",
@@ -465,7 +465,7 @@
      "sure that they will fail in the long term"
     ],
     "answer": 2,
-    "explain_vi": "Tác giả gọi kết quả là 'promising' và nói số liệu 'do not support' ý kiến phản đối → thái độ nhìn chung là tích cực."
+    "explain_vi": "Bài đọc: ==\"the early results are promising\"== và ==\"the figures do not support this view\"== → thái độ **generally positive**. __Tìm tính từ đánh giá của tác giả để đoán thái độ.__"
    }
   ]
  },
@@ -503,7 +503,7 @@
      "Does"
     ],
     "answer": 3,
-    "explain_vi": "Câu hỏi hiện tại đơn với động từ thường 'like', chủ ngữ số ít 'your brother' → dùng 'Does'."
+    "explain_vi": "Câu hỏi hiện tại đơn với động từ thường ==like==, chủ ngữ số ít 'your brother' → **Does**. __Mẹo: có động từ thường thì dùng Do/Does, không dùng Is/Are.__"
    },
    {
     "id": "fin02",
@@ -518,7 +518,7 @@
      "losing"
     ],
     "answer": 2,
-    "explain_vi": "'yesterday' → quá khứ đơn. 'lose' là động từ bất quy tắc: lose – lost – lost."
+    "explain_vi": "Có ==yesterday== → **quá khứ đơn**; 'lose' bất quy tắc: lose – **lost** – lost. __Không có dạng 'losed'; học thuộc bảng động từ bất quy tắc.__"
    },
    {
     "id": "fin03",
@@ -533,7 +533,7 @@
      "by"
     ],
     "answer": 0,
-    "explain_vi": "Trước giờ cụ thể (7.30) dùng giới từ 'at'."
+    "explain_vi": "==7.30== là giờ cụ thể → dùng **at**. __Nhớ: at + giờ, on + ngày, in + tháng/năm.__"
    },
    {
     "id": "fin04",
@@ -548,7 +548,7 @@
      "herself"
     ],
     "answer": 1,
-    "explain_vi": "Sau giới từ 'to' cần đại từ tân ngữ: 'her'. 'she' là chủ ngữ, 'hers' = của cô ấy."
+    "explain_vi": "Sau giới từ ==to== cần **đại từ tân ngữ: her**. 'she' là chủ ngữ, 'hers' là 'của cô ấy'. __Mẹo: sau giới từ và sau động từ luôn dùng tân ngữ (me, him, her...).__"
    },
    {
     "id": "fin05",
@@ -563,7 +563,7 @@
      "glass"
     ],
     "answer": 3,
-    "explain_vi": "Đồ uống dùng 'a glass of' (một cốc). 'slice/piece' dùng cho đồ ăn, 'loaf' là ổ bánh mì."
+    "explain_vi": "==orange juice== là đồ uống → **a glass of** (một cốc). __'slice/piece' dùng cho đồ ăn, 'loaf' là ổ bánh mì.__"
    },
    {
     "id": "fin06",
@@ -578,7 +578,7 @@
      "gloves"
     ],
     "answer": 1,
-    "explain_vi": "Trời mưa thì mang 'umbrella' (ô). Các đồ còn lại không dùng để che mưa."
+    "explain_vi": "Có ==It's raining outside== → mang **umbrella** (ô). __Các đồ còn lại không dùng để che mưa.__"
    },
    {
     "id": "fin07",
@@ -593,7 +593,7 @@
      "sleepy"
     ],
     "answer": 2,
-    "explain_vi": "Luôn cười và nói chuyện với người mới → 'friendly' (thân thiện). 'quiet' và 'shy' trái nghĩa với ý câu."
+    "explain_vi": "Có ==He always smiles and talks to new people== → **friendly** (thân thiện). __'quiet' và 'shy' trái nghĩa với ý câu, loại trước.__"
    },
    {
     "id": "fin08",
@@ -605,7 +605,7 @@
     "accept": [
      "windy"
     ],
-    "explain_vi": "Sau 'It's' cần tính từ chỉ thời tiết. wind (gió) + -y → windy (có gió)."
+    "explain_vi": "Sau ==It's== cần **tính từ chỉ thời tiết**: wind + -y → **windy** (có gió). __Gợi ý 'fly a kite' cũng cho thấy trời có gió.__"
    },
    {
     "id": "fin09",
@@ -621,7 +621,7 @@
      "She wants to wear it to the zoo."
     ],
     "answer": 0,
-    "explain_vi": "Bài viết: 'I wear the blue jacket every day because our classroom is very cold in the morning.'"
+    "explain_vi": "Bài đọc: ==\"I wear the blue jacket every day because our classroom is very cold in the morning.\"== → **Her classroom is cold in the morning**. __Thấy câu hỏi 'Why', tìm từ 'because' trong bài.__"
    },
    {
     "id": "fin10",
@@ -637,7 +637,7 @@
      "Eat pizza in the park"
     ],
     "answer": 1,
-    "explain_vi": "'Next month I'm visiting you ... Can we go fishing again?' Đi sở thú và ăn pizza là thứ Bảy vừa rồi."
+    "explain_vi": "Bài đọc: ==\"Next month I'm visiting you with Dad. Can we go fishing again?\"== → **Go fishing with Grandma**. __Đi sở thú và ăn pizza là thứ Bảy vừa rồi; để ý mốc thời gian.__"
    },
    {
     "id": "fin11",
@@ -652,7 +652,7 @@
      "do they"
     ],
     "answer": 0,
-    "explain_vi": "Vế trước phủ định 'haven't met' → câu hỏi đuôi khẳng định cùng trợ động từ: 'have they?'."
+    "explain_vi": "Vế trước phủ định ==haven't met== → đuôi khẳng định cùng trợ động từ: **have they?** __Mẹo: 'Your parents' thay bằng 'they'; giữ nguyên trợ động từ 'have'.__"
    },
    {
     "id": "fin12",
@@ -667,7 +667,7 @@
      "In spite"
     ],
     "answer": 2,
-    "explain_vi": "Sau chỗ trống là mệnh đề 'she was very tired' (S + V) → dùng 'Although'. 'Despite/In spite of' đi với danh từ/V-ing."
+    "explain_vi": "Sau chỗ trống là mệnh đề ==she was very tired== (S + V) → **Although**. __'Despite/In spite of' đi với danh từ hoặc V-ing; 'In spite' thiếu 'of'.__"
    },
    {
     "id": "fin13",
@@ -682,7 +682,7 @@
      "Also"
     ],
     "answer": 1,
-    "explain_vi": "'never' mang nghĩa phủ định → đồng ý dùng 'Neither have I' (Tớ cũng chưa từng)."
+    "explain_vi": "Có ==never== → câu mang nghĩa phủ định → đồng ý dùng **Neither have I** (tớ cũng chưa từng). __Đừng chọn 'So': 'So' chỉ dùng sau câu khẳng định.__"
    },
    {
     "id": "fin14",
@@ -697,7 +697,7 @@
      "had already left"
     ],
     "answer": 3,
-    "explain_vi": "Tàu rời đi TRƯỚC khi tôi đến (một hành động quá khứ khác) → quá khứ hoàn thành: had already left."
+    "explain_vi": "Có ==When I got to the station== → tàu rời đi TRƯỚC khi tôi đến → **quá khứ hoàn thành: had already left**. __Việc nào xảy ra trước trong quá khứ thì dùng had + V3.__"
    },
    {
     "id": "fin15",
@@ -712,7 +712,7 @@
      "have"
     ],
     "answer": 1,
-    "explain_vi": "Kết hợp từ: 'make a mistake' = mắc lỗi (không dùng 'do a mistake')."
+    "explain_vi": "Kết hợp từ: **make a mistake** (mắc lỗi). __Lỗi hay gặp: nói 'do a mistake' là sai.__"
    },
    {
     "id": "fin16",
@@ -727,7 +727,7 @@
      "run over"
     ],
     "answer": 2,
-    "explain_vi": "'run out of' = hết (thứ gì). 'run into' = tình cờ gặp, 'run after' = đuổi theo, 'run over' = cán qua."
+    "explain_vi": "Có ==I'll go to the shop and buy some more== → sữa đã hết: **run out of**. __'run into' là tình cờ gặp, 'run after' là đuổi theo, 'run over' là cán qua.__"
    },
    {
     "id": "fin17",
@@ -742,7 +742,7 @@
      "balanced"
     ],
     "answer": 3,
-    "explain_vi": "Kết hợp từ: 'a balanced diet' = chế độ ăn cân bằng. Không nói 'fair/equal/even diet'."
+    "explain_vi": "Kết hợp từ: **a balanced diet** (chế độ ăn cân bằng). __Không nói 'fair/equal/even diet'; học cả cụm.__"
    },
    {
     "id": "fin18",
@@ -754,7 +754,7 @@
     "accept": [
      "membership"
     ],
-    "explain_vi": "Cần danh từ: member + -ship → membership (tư cách hội viên); 'membership card' = thẻ hội viên."
+    "explain_vi": "Chỗ trống đứng trước danh từ ==card== → cần **danh từ ghép**: member + -ship → **membership** (thẻ hội viên). __Mẹo: -ship tạo danh từ: friendship, membership.__"
    },
    {
     "id": "fin19",
@@ -770,7 +770,7 @@
      "Quân's parents'"
     ],
     "answer": 2,
-    "explain_vi": "'The idea came from their science teacher'. Người nông dân chỉ cho lời khuyên sau đó."
+    "explain_vi": "Bài đọc: ==\"The idea came from their science teacher\"== → **Their science teacher's**. __Cẩn thận: người nông dân chỉ cho lời khuyên sau đó.__"
    },
    {
     "id": "fin20",
@@ -786,7 +786,7 @@
      "How keen his classmates now are to look after the plants"
     ],
     "answer": 3,
-    "explain_vi": "Câu cuối: tiền thì vui, nhưng Quân tự hào hơn vì các bạn giờ tranh nhau tưới cây – tức là ai cũng muốn chăm vườn."
+    "explain_vi": "Bài đọc: ==\"he is prouder that his classmates now argue about whose turn it is to water the plants\"== → **các bạn giờ rất muốn chăm cây**. __Tiền thì 'nice' nhưng 'prouder' mới là điều tự hào nhất.__"
    },
    {
     "id": "fin21",
@@ -801,7 +801,7 @@
      "she stepped"
     ],
     "answer": 0,
-    "explain_vi": "Đảo ngữ: 'No sooner + had + S + V3 ... than ...' (vừa mới ... thì ...)."
+    "explain_vi": "Có ==No sooner== đầu câu → đảo ngữ: **No sooner + had + S + V3 ... than ...** → **had she stepped**. __Mẹo: No sooner đi với 'than', Hardly đi với 'when'.__"
    },
    {
     "id": "fin22",
@@ -816,7 +816,7 @@
      "wouldn't use"
     ],
     "answer": 1,
-    "explain_vi": "'would rather + S + quá khứ đơn' khi muốn người khác làm/không làm gì → didn't use."
+    "explain_vi": "Có ==I'd rather you== → **would rather + S + quá khứ đơn** → **didn't use**. __Dù nói về hiện tại, vẫn dùng quá khứ đơn sau chủ ngữ thứ hai.__"
    },
    {
     "id": "fin23",
@@ -831,7 +831,7 @@
      "wouldn't"
     ],
     "answer": 2,
-    "explain_vi": "Suy đoán chắc chắn điều gì KHÔNG xảy ra trong quá khứ: 'can't have + V3'."
+    "explain_vi": "Có ==The results look perfect== → chắc chắn thí nghiệm không hỏng: **can't have + V3**. __'needn't have' là lẽ ra không cần làm, khác nghĩa.__"
    },
    {
     "id": "fin24",
@@ -846,7 +846,7 @@
      "tidied"
     ],
     "answer": 3,
-    "explain_vi": "'It's (about/high) time + S + quá khứ đơn' = đã đến lúc phải làm gì → tidied."
+    "explain_vi": "Có ==It's about time== → **It's about time + S + quá khứ đơn** → **tidied**. __Mẹo: It's time / high time / about time + S luôn đi với quá khứ đơn.__"
    },
    {
     "id": "fin25",
@@ -861,7 +861,7 @@
      "came round to"
     ],
     "answer": 1,
-    "explain_vi": "'come up with' = nghĩ ra (ý tưởng, giải pháp). 'come across' = tình cờ thấy, 'come down with' = bị ốm, 'come round to' = dần chấp nhận (ý kiến)."
+    "explain_vi": "Có ==a cheaper way to clean the water== → nghĩ ra giải pháp: **come up with**. __'come across' là tình cờ thấy, 'come down with' là bị ốm, 'come round to' là dần chấp nhận.__"
    },
    {
     "id": "fin26",
@@ -876,7 +876,7 @@
      "take"
     ],
     "answer": 3,
-    "explain_vi": "Cụm cố định: 'take effect' = bắt đầu có hiệu lực."
+    "explain_vi": "Cụm cố định: **take effect** (bắt đầu có hiệu lực). __Có ==next Monday== → luật mới sẽ bắt đầu áp dụng.__"
    },
    {
     "id": "fin27",
@@ -891,7 +891,7 @@
      "takes"
     ],
     "answer": 0,
-    "explain_vi": "'devote time to + V-ing' = dành (hết lòng) thời gian cho việc gì. 'spend time' đi với 'on' hoặc V-ing, không đi với 'to'."
+    "explain_vi": "Có ==to helping== → **devote time to + V-ing** (dành thời gian cho việc gì). __'spend time' đi với 'on' hoặc V-ing, không đi với 'to'.__"
    },
    {
     "id": "fin28",
@@ -903,7 +903,7 @@
     "accept": [
      "misunderstood"
     ],
-    "explain_vi": "Cần động từ quá khứ mang nghĩa 'hiểu sai': mis- + understand → misunderstand → quá khứ: misunderstood."
+    "explain_vi": "Có ==my answer was completely wrong== → hiểu sai: mis- + understand → **misunderstood** (quá khứ). __Nhớ: understand – understood, nên misunderstand – misunderstood.__"
    },
    {
     "id": "fin29",
@@ -919,7 +919,7 @@
      "We completely forget the first task."
     ],
     "answer": 0,
-    "explain_vi": "Bài viết: 'the brain does not really do two things at once; instead, it switches quickly between tasks'."
+    "explain_vi": "Bài đọc: ==\"the brain does not really do two things at once; instead, it switches quickly between tasks\"== → **The brain moves rapidly from one task to the other**. __'switches quickly' được diễn đạt lại thành 'moves rapidly'.__"
    },
    {
     "id": "fin30",
@@ -935,7 +935,7 @@
      "Messages should always be answered quickly."
     ],
     "answer": 2,
-    "explain_vi": "Tác giả nói không cần cấm điện thoại; một quy tắc đơn giản (xem tin nhắn sau mỗi môn) mang lại phần lớn lợi ích."
+    "explain_vi": "Bài đọc: ==\"This does not mean phones must be banned from bedrooms. A simple rule ... seems to bring most of the benefits\"== → **A sensible rule works better than a total ban**. __Ý kiến tác giả thường nằm ở cuối bài.__"
    }
   ]
  }

@@ -52,18 +52,18 @@ function renderExam(box,B,saved,onDone){
   const grade=()=>{let correct=0,total=0;const answers={};
     if(kind==='mcq'||kind==='cloze_mcq'){items.forEach((it,i)=>{total++;const r=form.querySelector(`input[name="x${i}"]:checked`);const v=r?+r.value:null;answers[i]=v;const ok=v===it.answer;if(ok)correct++;
       const q=form.querySelector(`.x-item[data-i="${i}"]`);q.querySelectorAll('.opt').forEach(o=>{const j=+o.dataset.i;o.classList.remove('sel');if(j===it.answer)o.classList.add('right');else if(j===v)o.classList.add('wrong')});
-      q.querySelectorAll('input').forEach(x=>x.disabled=true);q.querySelector('.fbslot').innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Chưa đúng. Đáp án: <b>'+(B.format==='pronunciation'?xU(it.options[it.answer]):esc(it.options[it.answer]))+'</b>'}${it.explain_vi?`<span class="ex">${esc(it.explain_vi)}</span>`:''}</div>`})}
+      q.querySelectorAll('input').forEach(x=>x.disabled=true);q.querySelector('.fbslot').innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Chưa đúng. Đáp án: <b>'+(B.format==='pronunciation'?xU(it.options[it.answer]):esc(it.options[it.answer]))+'</b>'}${it.explain_vi?`<span class="ex">${fmtVi(it.explain_vi)}</span>`:''}</div>`})}
     else if(kind==='gap_text'){const fbs=[];items.forEach((it,i)=>{total++;const inp=form.querySelector(`.x-in[data-i="${i}"]`);const v=inp.value;answers[i]=v;const ok=xOk(v,it);if(ok)correct++;inp.classList.add(ok?'ok':'bad');inp.disabled=true;
-      fbs.push(`<li class="${ok?'good':'bad'}"><b>(${i+1})</b> ${ok?'✓':'✗ đáp án: <b>'+esc(it.answer)+'</b>'}${it.explain_vi?' – '+esc(it.explain_vi):''}</li>`)});
+      fbs.push(`<li class="${ok?'good':'bad'}"><b>(${i+1})</b> ${ok?'✓':'✗ đáp án: <b>'+esc(it.answer)+'</b>'}${it.explain_vi?' – '+fmtVi(it.explain_vi):''}</li>`)});
       form.querySelector('.x-fbs').innerHTML=`<ul class="x-fblist">${fbs.join('')}</ul>`;const sc=form.querySelector('.x-script');if(sc)sc.hidden=false}
     else if(kind==='transform'){items.forEach((it,i)=>{total++;const inp=form.querySelector(`.x-in[data-i="${i}"]`);const v=inp.value;answers[i]=v;const ok=xOk(v,it);if(ok)correct++;inp.classList.add(ok?'ok':'bad');inp.disabled=true;
-      form.querySelector(`.x-item[data-i="${i}"] .fbslot`).innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Câu đúng: <b>'+esc(it.start+' '+it.answer+(it.end?' '+it.end:''))+'</b>'}${it.explain_vi?`<span class="ex">${esc(it.explain_vi)}</span>`:''}</div>`})}
+      form.querySelector(`.x-item[data-i="${i}"] .fbslot`).innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Câu đúng: <b>'+esc(it.start+' '+it.answer+(it.end?' '+it.end:''))+'</b>'}${it.explain_vi?`<span class="ex">${fmtVi(it.explain_vi)}</span>`:''}</div>`})}
     else if(kind==='matching'){B.paragraphs.forEach((p,i)=>{total++;const s=form.querySelector(`.x-sel[data-i="${i}"]`);const v=s.value===''?null:+s.value;answers[i]=v;const ok=v===B.answer[i];if(ok)correct++;s.disabled=true;s.classList.add(ok?'ok':'bad');
       form.querySelector(`.x-item[data-i="${i}"] .fbslot`).innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Đáp án: <b>'+'ABCDEF'[B.answer[i]]+'. '+esc(B.headings[B.answer[i]])+'</b>'}</div>`});
-      if(B.explain_vi)form.querySelector('.x-msg').insertAdjacentHTML('afterend',`<p class="small">${esc(B.explain_vi)}</p>`)}
+      if(B.explain_vi)form.querySelector('.x-msg').insertAdjacentHTML('afterend',`<p class="small">${fmtVi(B.explain_vi)}</p>`)}
     else if(kind==='order'){const n=B.lines.length-1;total=n;for(let j=1;j<=n;j++){if(ord[j]===j)correct++}answers.order=ord.slice();form.dataset.done='1';
       form.querySelectorAll('.x-built .x-line').forEach((b,j)=>{if(j>0)b.classList.add(ord[j]===j?'ok':'bad')});
-      form.querySelector('.x-pool').innerHTML=`<div class="fb ${correct===n?'good':'bad'}">${correct===n?'Đúng thứ tự!':'Thứ tự đúng:'}<ol>${B.lines.map(l=>`<li>${esc(l)}</li>`).join('')}</ol>${B.explain_vi?`<span class="ex">${esc(B.explain_vi)}</span>`:''}</div>`}
+      form.querySelector('.x-pool').innerHTML=`<div class="fb ${correct===n?'good':'bad'}">${correct===n?'Đúng thứ tự!':'Thứ tự đúng:'}<ol>${B.lines.map(l=>`<li>${esc(l)}</li>`).join('')}</ol>${B.explain_vi?`<span class="ex">${fmtVi(B.explain_vi)}</span>`:''}</div>`}
     return {correct,total,answers}};
   form.addEventListener('submit',e=>{e.preventDefault();if(form.dataset.graded)return;
     if(kind==='order'&&ord.length<B.lines.length){form.querySelector('.x-msg').textContent='Em xếp hết các lượt lời rồi mới chấm nhé.';return}
@@ -112,7 +112,7 @@ function renderListening(box,L,track,saved,onDone){const p1=L.part1,p2=L.part2;
     f.querySelector('.x-msg').innerHTML=`Em đúng <b>${c}/${t}</b>.`;onDone&&onDone(key,{correct:c,total:t})};
   f1.addEventListener('submit',e=>{e.preventDefault();if(f1.dataset.graded)return;let c=0;p1.items.forEach((it,i)=>{const r=f1.querySelector(`input[name="l1_${i}"]:checked`);const v=r?+r.value:null;const ok=v===it.answer;if(ok)c++;
       const q=f1.querySelector(`.x-item[data-i="${i}"]`);q.querySelectorAll('.opt').forEach(o=>{const j=+o.dataset.i;o.classList.remove('sel');if(j===it.answer)o.classList.add('right');else if(j===v)o.classList.add('wrong')});q.querySelectorAll('input').forEach(x=>x.disabled=true);
-      q.querySelector('.fbslot').innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Chưa đúng. Đáp án: <b>'+esc(it.options[it.answer])+'</b>'}${it.explain_vi?`<span class="ex">${esc(it.explain_vi)}</span>`:''}</div>`});fin(f1,c,p1.items.length,'p1')});
+      q.querySelector('.fbslot').innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Chưa đúng. Đáp án: <b>'+esc(it.options[it.answer])+'</b>'}${it.explain_vi?`<span class="ex">${fmtVi(it.explain_vi)}</span>`:''}</div>`});fin(f1,c,p1.items.length,'p1')});
   f2.addEventListener('submit',e=>{e.preventDefault();if(f2.dataset.graded)return;let c=0;const fbs=[];p2.items.forEach((it,i)=>{const inp=f2.querySelector(`.x-in[data-i="${i}"]`);const ok=xOk(inp.value,it);if(ok)c++;inp.classList.add(ok?'ok':'bad');inp.disabled=true;
-      fbs.push(`<li class="${ok?'good':'bad'}"><b>(${i+1})</b> ${ok?'✓':'✗ đáp án: <b>'+esc(it.answer)+'</b>'}${it.explain_vi?' – '+esc(it.explain_vi):''}</li>`)});f2.querySelector('.x-fbs').innerHTML=`<ul class="x-fblist">${fbs.join('')}</ul>`;fin(f2,c,p2.items.length,'p2')});
+      fbs.push(`<li class="${ok?'good':'bad'}"><b>(${i+1})</b> ${ok?'✓':'✗ đáp án: <b>'+esc(it.answer)+'</b>'}${it.explain_vi?' – '+fmtVi(it.explain_vi):''}</li>`)});f2.querySelector('.x-fbs').innerHTML=`<ul class="x-fblist">${fbs.join('')}</ul>`;fin(f2,c,p2.items.length,'p2')});
 }

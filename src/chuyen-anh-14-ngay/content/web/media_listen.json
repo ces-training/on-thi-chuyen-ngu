@@ -1,0 +1,631 @@
+{
+ "1": {
+  "nen": [
+   {
+    "title": "Taking notes",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/taking-notes",
+    "source": "British Council LearnEnglish Teens",
+    "level": "A2",
+    "format_vi": "Đúng/sai + điền từ",
+    "note_vi": "Mark khuyên bạn Clare cách ghi chép bằng từ khoá và hình vẽ để ôn thi môn Lịch sử; gắn với từ vựng học tập, ôn thi."
+   },
+   {
+    "title": "Using colours to do homework",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/using-colours-do-homework",
+    "source": "British Council LearnEnglish Teens",
+    "level": "A2",
+    "format_vi": "Đúng/sai + nối + điền từ",
+    "note_vi": "Một bạn nữ thuyết trình cách dùng màu, giấy nhớ, lịch treo tường để sắp xếp bài tập về nhà.",
+    "alt": true
+   }
+  ],
+  "chuan": [
+   {
+    "title": "Advice for exams",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b1-listening/advice-exams",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B1",
+    "format_vi": "Trắc nghiệm + phân nhóm",
+    "note_vi": "Thầy giáo đưa lời khuyên chuẩn bị cho kì thi (ăn uống, chỗ học, đề cũ, nghỉ giải lao); đúng chủ đề trường học và học tập."
+   },
+   {
+    "title": "Stories of school and education",
+    "url": "https://test-english.com/listening/b1/stories-of-school-and-education-b1-english-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "B1",
+    "format_vi": "Trắc nghiệm (7 câu, video)",
+    "note_vi": "Bốn người kể về trải nghiệm đi học của mình; luyện nghe nhiều người nói như phần nghe đề thi.",
+    "alt": true
+   }
+  ],
+  "nang": [
+   {
+    "title": "How to study",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b2-listening/how-study",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B2",
+    "format_vi": "Đúng/sai + điền từ vựng",
+    "note_vi": "Bài nói trong buổi chào cờ về cách lập thời gian biểu, chỗ học không bị phân tâm, nghỉ ngắn và ghi chép bằng sơ đồ tư duy."
+   },
+   {
+    "title": "How to improve your memory",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b2-listening/how-improve-your-memory",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B2",
+    "format_vi": "Chọn nhiều đáp án + điền từ",
+    "note_vi": "Phỏng vấn trên đài với chuyên gia trí nhớ về cách liên tưởng, hình dung, hát và dạy lại người khác để nhớ bài khi ôn thi.",
+    "alt": true
+   }
+  ]
+ },
+ "2": {
+  "nen": [
+   {
+    "title": "Free time",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/free-time",
+    "source": "British Council LearnEnglish Teens",
+    "level": "A2",
+    "format_vi": "Điền từ + đúng/sai",
+    "note_vi": "Tyrone gọi điện hỏi về câu lạc bộ bóng nước dưới 16 tuổi (giờ tập, giá, cách đăng kí); luyện nghe số và thông tin chi tiết về sở thích."
+   },
+   {
+    "title": "What are your hobbies?",
+    "url": "https://test-english.com/listening/a2/what-are-your-hobbies-a2-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "A2",
+    "format_vi": "Trắc nghiệm (5 câu, video)",
+    "note_vi": "Năm người nói về sở thích; con chọn hai hoạt động mỗi người nhắc tới.",
+    "alt": true
+   }
+  ],
+  "chuan": [
+   {
+    "title": "The weekend",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b1-listening/weekend",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B1",
+    "format_vi": "Chọn nhiều đáp án + trắc nghiệm",
+    "note_vi": "Hai bạn trẻ kể kế hoạch cuối tuần: một bạn đi trung tâm thể thao mạo hiểm, một bạn đi Paris; đúng từ vựng thời gian rảnh."
+   }
+  ],
+  "nang": [
+   {
+    "title": "Sports interviews",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b2-listening/sports-interviews",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B2",
+    "format_vi": "Phân nhóm + trắc nghiệm",
+    "note_vi": "Phỏng vấn trên đài với một vận động viên lướt ván và một vận động viên trượt patin về môn thể thao họ theo đuổi."
+   }
+  ]
+ },
+ "3": {
+  "nen": [
+   {
+    "title": "Problems of the planet",
+    "url": "https://english-practice.net/practice-listening-english-exercises-for-a2-problems-of-the-planet/",
+    "source": "English Practice Online (english-practice.net)",
+    "level": "A2",
+    "format_vi": "Chọn từ đúng + điền bảng nguyên nhân/hậu quả",
+    "note_vi": "Nghe nói về phá rừng, ô nhiễm nước và không khí, rác thải và cách giúp đỡ hành tinh; khớp từ vựng môi trường của buổi học."
+   },
+   {
+    "title": "Weather forecast",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/weather-forecast",
+    "source": "British Council LearnEnglish Teens",
+    "level": "A2",
+    "format_vi": "Nối + điền từ",
+    "note_vi": "Bản tin dự báo thời tiết các vùng trong nước; chỉ liên quan một phần (thời tiết), dùng khi muốn bài nghe dễ và quen giọng Anh.",
+    "alt": true
+   }
+  ],
+  "chuan": [
+   {
+    "title": "Roads made of plastic waste",
+    "url": "https://test-english.com/listening/b1/plastic-roads-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "B1",
+    "format_vi": "Trắc nghiệm (6 câu, video)",
+    "note_vi": "Phóng sự về những con đường làm từ rác nhựa tái chế ở Anh; đúng chủ đề tái chế và rác thải."
+   },
+   {
+    "title": "Our environment",
+    "url": "https://english4real.com/practice/b1_l-our-environment.html",
+    "source": "English4real (english4real.com)",
+    "level": "B1",
+    "format_vi": "Điền từ + trắc nghiệm + nối",
+    "note_vi": "Năm đoạn ngắn: quy trình tái chế chai nhựa, lễ trao giải môi trường, thói quen 'xanh' của các bạn trẻ.",
+    "alt": true
+   }
+  ],
+  "nang": [
+   {
+    "title": "The Maasai and the lions",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b2-listening/maasai-lions",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B2",
+    "format_vi": "Trắc nghiệm + điền từ",
+    "note_vi": "Người Maasai ở Kenya từ săn sư tử chuyển sang bảo vệ sư tử qua dự án Lion Guardians; chủ đề bảo tồn động vật hoang dã."
+   }
+  ]
+ },
+ "4": {
+  "nen": [
+   {
+    "title": "The latest technology",
+    "url": "https://english-practice.net/practice-listening-english-exercises-for-a2-the-latest-technology/",
+    "source": "English Practice Online (english-practice.net)",
+    "level": "A2",
+    "format_vi": "Trắc nghiệm + đúng/sai (4 bài ngắn)",
+    "note_vi": "Bốn đoạn nghe về chiếc laptop mới, lễ hội công nghệ, viết blog và các thông báo hằng ngày; từ vựng công nghệ cơ bản."
+   }
+  ],
+  "chuan": [
+   {
+    "title": "The woman behind the voice of Siri",
+    "url": "https://test-english.com/listening/b1/the-woman-behind-the-voice-of-siri-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "B1",
+    "format_vi": "Trắc nghiệm (7 câu, video)",
+    "note_vi": "Câu chuyện về Susan Bennett, người lồng tiếng cho trợ lí ảo Siri; nối chủ đề công nghệ với đời sống."
+   }
+  ],
+  "nang": [
+   {
+    "title": "The Filter Bubble - part one",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b2-listening/filter-bubble-part-one",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B2",
+    "format_vi": "Đúng/sai + nối",
+    "note_vi": "Giải thích cách các trang web và ứng dụng dùng cookie để cá nhân hoá nội dung ta thấy trên mạng."
+   },
+   {
+    "title": "Life without a cell phone",
+    "url": "https://test-english.com/listening/b2/life-without-cell-phone/",
+    "source": "Test-English (test-english.com)",
+    "level": "B2",
+    "format_vi": "Trắc nghiệm (7 câu, video)",
+    "note_vi": "Hai người kể về cuộc sống có và không có điện thoại di động.",
+    "alt": true
+   }
+  ]
+ },
+ "5": {
+  "nen": [
+   {
+    "title": "Keeping Fit",
+    "url": "https://english4real.com/practice/a2_l1-keeping-fit.html",
+    "source": "English4real (english4real.com)",
+    "level": "A2",
+    "format_vi": "Nối + khoanh đáp án + điền hội thoại",
+    "note_vi": "Mọi người nói về quyết tâm năm mới, môn thể dục yêu thích và thói quen giữ dáng; có luyện 'used to'."
+   }
+  ],
+  "chuan": [
+   {
+    "title": "Sports centres",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b1-listening/sports-centres",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B1",
+    "format_vi": "Trắc nghiệm (2 bài)",
+    "note_vi": "Hai nhân viên giới thiệu hai trung tâm thể thao (lớp tập, bể bơi, phòng tập); từ vựng thể dục, sức khoẻ."
+   },
+   {
+    "title": "How do you keep fit?",
+    "url": "https://test-english.com/listening/b1/how-do-you-keep-fit-b1-english-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "B1",
+    "format_vi": "Trắc nghiệm (6 câu, video)",
+    "note_vi": "Ba người kể cách họ tập luyện để giữ sức khoẻ.",
+    "alt": true
+   }
+  ],
+  "nang": [
+   {
+    "title": "Joining a gym",
+    "url": "https://learnenglish.britishcouncil.org/free-resources/listening/b2/joining-gym",
+    "source": "British Council LearnEnglish",
+    "level": "B2",
+    "format_vi": "Đúng/sai + điền từ (kéo thả)",
+    "note_vi": "Khách hỏi lễ tân phòng gym về phí thành viên, giờ mở cửa, huấn luyện viên; luyện nghe thông tin chi tiết dạng đề thi."
+   }
+  ]
+ },
+ "6": {
+  "nen": [
+   {
+    "title": "Trains and travel",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/trains-travel",
+    "source": "British Council LearnEnglish Teens",
+    "level": "A2",
+    "format_vi": "Nối + trả lời câu hỏi",
+    "note_vi": "Năm đoạn hội thoại và thông báo ở ga tàu: hỏi sân ga, mua vé, xử lí vé sai; đúng chủ đề giao thông."
+   },
+   {
+    "title": "Travelling abroad",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/travelling-abroad",
+    "source": "British Council LearnEnglish Teens",
+    "level": "A2",
+    "format_vi": "Nối + điền từ",
+    "note_vi": "Năm thông báo ở sân bay về chuyến bay bị hoãn, lên máy bay, hạ cánh.",
+    "alt": true
+   }
+  ],
+  "chuan": [
+   {
+    "title": "Where did you stay?",
+    "url": "https://test-english.com/listening/b1/where-did-you-stay-b1-english-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "B1",
+    "format_vi": "Nối người nói với ý (7 câu, video)",
+    "note_vi": "Ba người kể về chỗ ở trong kì nghỉ (ồn ào, vị trí, giá, đồ ăn); dạng nối giống đề thi."
+   }
+  ],
+  "nang": [
+   {
+    "title": "The Hyperloop: the future of transportation?",
+    "url": "https://test-english.com/listening/b1-b2/the-hyperloop/",
+    "source": "Test-English (test-english.com)",
+    "level": "B1+",
+    "format_vi": "Trắc nghiệm (5 câu, video)",
+    "note_vi": "Giới thiệu Hyperloop, phương tiện giao thông tốc độ cao trong tương lai; mức B1+ nên dễ hơn B2 một chút.",
+    "alt": false
+   }
+  ]
+ },
+ "7": {
+  "nen": [
+   {
+    "title": "Giving directions",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/giving-directions",
+    "source": "British Council LearnEnglish Teens",
+    "level": "A2",
+    "format_vi": "Nghe theo bản đồ + điền từ",
+    "note_vi": "Bốn người chỉ đường trên bản đồ thị trấn; ôn từ vựng địa điểm và giao thông (buổi 6) theo dạng bài nghe điền thông tin."
+   },
+   {
+    "title": "Tour of London",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/tour-london",
+    "source": "British Council LearnEnglish Teens",
+    "level": "A2",
+    "format_vi": "Sắp xếp thứ tự + trắc nghiệm",
+    "note_vi": "Hướng dẫn viên xe buýt giới thiệu London thì gặp bão; ôn du lịch, thời tiết, thời gian rảnh.",
+    "alt": true
+   }
+  ],
+  "chuan": [
+   {
+    "title": "Difficult situations",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b1-listening/difficult-situations",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B1",
+    "format_vi": "Điền từ + đúng/sai",
+    "note_vi": "Ba hội thoại ngắn: thi trượt, chó bị xe đâm, bị mất điện thoại; ôn từ vựng trường học, công nghệ và cách an ủi."
+   }
+  ],
+  "nang": [
+   {
+    "title": "High-achieving teenagers",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b2-listening/high-achieving-teenagers",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B2",
+    "format_vi": "Trắc nghiệm + điền từ",
+    "note_vi": "Phỏng vấn tác giả sách về những bạn trẻ nổi tiếng sớm nhờ mạng xã hội; ôn sở thích, công nghệ, học tập."
+   }
+  ]
+ },
+ "8": {
+  "nen": [
+   {
+    "title": "Leaving a message",
+    "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/leaving-message",
+    "source": "British Council LearnEnglish",
+    "level": "A2",
+    "format_vi": "Đúng/sai + sắp xếp thứ tự",
+    "note_vi": "Một người gọi điện để lại lời nhắn kèm số điện thoại và email; luyện nghe chép thông tin như phần điền ghi chú."
+   }
+  ],
+  "chuan": [
+   {
+    "title": "Leaving a message",
+    "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/leaving-message",
+    "source": "British Council LearnEnglish",
+    "level": "A2",
+    "format_vi": "Đúng/sai + sắp xếp thứ tự",
+    "note_vi": "Một người gọi điện để lại lời nhắn kèm số điện thoại và email; luyện nghe chép thông tin như phần điền ghi chú. (Bài mức A2, dễ hơn một chút; dùng tạm vì chưa có bài B1 phù hợp về truyền thông.)"
+   }
+  ],
+  "nang": [
+   {
+    "title": "The Filter Bubble - part two",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b2-listening/filter-bubble-part-two",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B2",
+    "format_vi": "Trắc nghiệm + điền từ",
+    "note_vi": "Cách công cụ tìm kiếm và mạng xã hội lọc tin tức cho ta, và lời khuyên tìm nguồn thông tin đa dạng."
+   },
+   {
+    "title": "Discussing news and media",
+    "url": "https://test-english.com/listening/b2/discussing-news-and-media-b2-english-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "B2",
+    "format_vi": "Đúng/sai (7 câu, video)",
+    "note_vi": "Phỏng vấn một nhà báo về tin tức và truyền thông.",
+    "alt": true
+   }
+  ]
+ },
+ "9": {
+  "nen": [
+   {
+    "title": "Eating out",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/eating-out",
+    "source": "British Council LearnEnglish Teens",
+    "level": "A2",
+    "format_vi": "Đúng/sai + điền từ",
+    "note_vi": "Một cặp đôi gọi món khai vị, món chính và đồ uống với người phục vụ; từ vựng món ăn và gọi món."
+   }
+  ],
+  "chuan": [
+   {
+    "title": "Celebrations",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b1-listening/celebrations",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B1",
+    "format_vi": "Nối + điền từ",
+    "note_vi": "Năm người kể về các dịp sắp tới: tiệc ở trường, lễ hội hoá trang, kỉ niệm ngày cưới, sinh nhật bất ngờ, tiệc đường phố."
+   },
+   {
+    "title": "Burgers made of insects",
+    "url": "https://test-english.com/listening/b1/burgers-made-of-insects-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "B1",
+    "format_vi": "Trắc nghiệm (7 câu, video)",
+    "note_vi": "Phóng sự DW về bánh burger làm từ côn trùng và các công ty sản xuất.",
+    "alt": true
+   }
+  ],
+  "nang": [
+   {
+    "title": "Unusual British festivals",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b2-listening/unusual-british-festivals",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B2",
+    "format_vi": "Đúng/sai + trắc nghiệm",
+    "note_vi": "Giới thiệu các lễ hội lạ ở Anh (lăn pho mát, đua ốc sên) và nguồn gốc của chúng; chủ đề văn hoá."
+   }
+  ]
+ },
+ "10": {
+  "nen": [
+   {
+    "title": "Work",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/work",
+    "source": "British Council LearnEnglish Teens",
+    "level": "A2",
+    "format_vi": "Nối + trắc nghiệm",
+    "note_vi": "Năm người tả công việc của mình: bán hàng, hướng dẫn viên, nha sĩ, phi công, nhân viên bệnh viện; từ vựng nghề nghiệp."
+   }
+  ],
+  "chuan": [
+   {
+    "title": "Work–life balance",
+    "url": "https://learnenglish.britishcouncil.org/free-resources/listening/b1/work-life-balance",
+    "source": "British Council LearnEnglish",
+    "level": "B1",
+    "format_vi": "Trắc nghiệm + phân nhóm",
+    "note_vi": "Phỏng vấn trên đài về việc điện thoại khiến ranh giới giữa giờ làm và giờ nghỉ bị mờ đi."
+   }
+  ],
+  "nang": [
+   {
+    "title": "The best job in the world",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b2-listening/best-job-world",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B2",
+    "format_vi": "Điền từ + nối",
+    "note_vi": "Cơ quan du lịch Úc tuyển sáu 'công việc tốt nhất thế giới' và yêu cầu nộp video 30 giây."
+   },
+   {
+    "title": "How good is your job?",
+    "url": "https://test-english.com/listening/b2/how-good-is-your-job-b2-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "B2",
+    "format_vi": "Trắc nghiệm (7 câu, video)",
+    "note_vi": "Phỏng vấn một người về lương, giờ làm, đồng nghiệp và sự ổn định của công việc.",
+    "alt": true
+   }
+  ]
+ },
+ "11": {
+  "nen": [
+   {
+    "title": "Elisa's family",
+    "url": "https://test-english.com/listening/a2/elisas-family-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "A2",
+    "format_vi": "Đúng/sai (10 câu, video)",
+    "note_vi": "Elisa kể về các thành viên trong gia đình; từ vựng người thân và miêu tả người."
+   },
+   {
+    "title": "Families",
+    "url": "https://english4real.com/practice/a2_l1-families.html",
+    "source": "English4real (english4real.com)",
+    "level": "A2",
+    "format_vi": "Chọn tranh + nối quan hệ + đúng/sai",
+    "note_vi": "Nghe nhận ra người thân và mối quan hệ trong gia đình của người nói.",
+    "alt": true
+   }
+  ],
+  "chuan": [
+   {
+    "title": "Important people",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b1-listening/important-people",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B1",
+    "format_vi": "Điền từ + đúng/sai",
+    "note_vi": "Năm người kể về người quan trọng với mình: hàng xóm, anh trai, bạn thân thời nhỏ; từ vựng tính cách và các mối quan hệ."
+   }
+  ],
+  "nang": [
+   {
+    "title": "My hero",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b2-listening/my-hero",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B2",
+    "format_vi": "Nối + trắc nghiệm",
+    "note_vi": "Bốn người nói về người hùng của mình (Mary Anning, Kailash Satyarthi, Rachel Carson, John Lennon) và lí do ngưỡng mộ."
+   }
+  ]
+ },
+ "12": {
+  "nen": [
+   {
+    "title": "Inventions",
+    "url": "https://english4real.com/practice/a2_l1-inventions.html",
+    "source": "English4real (english4real.com)",
+    "level": "A2",
+    "format_vi": "Nối tranh + khoanh đáp án + có/không",
+    "note_vi": "Hội thoại ngắn về các phát minh hằng ngày, công dụng và lí do chúng ra đời."
+   }
+  ],
+  "chuan": [
+   {
+    "title": "Amazing facts",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b1-listening/amazing-facts",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B1",
+    "format_vi": "Trắc nghiệm + điền từ",
+    "note_vi": "Hai người nói về những sự thật khoa học bất ngờ về cơ thể người (vi khuẩn, tế bào, nguyên tử)."
+   },
+   {
+    "title": "When will humans get to Mars?",
+    "url": "https://test-english.com/listening/b1/humans-mars-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "B1",
+    "format_vi": "Trắc nghiệm (6 câu, video)",
+    "note_vi": "Video về kế hoạch đưa con người lên sao Hoả và những khó khăn của chuyến đi.",
+    "alt": true
+   }
+  ],
+  "nang": [
+   {
+    "title": "New inventions",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b2-listening/new-inventions",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B2",
+    "format_vi": "Đúng/sai + điền từ",
+    "note_vi": "Chương trình radio giới thiệu các phát minh mới: bộ đồ bay, máy lọc nước mặt trời, găng tay dịch ngôn ngữ kí hiệu."
+   },
+   {
+    "title": "A lecture about an experiment",
+    "url": "https://learnenglish.britishcouncil.org/free-resources/listening/b2/lecture-about-experiment",
+    "source": "British Council LearnEnglish",
+    "level": "B2",
+    "format_vi": "Trắc nghiệm + điền từ",
+    "note_vi": "Bài giảng về thí nghiệm 'giọt nhựa đường' kéo dài từ năm 1927.",
+    "alt": true
+   }
+  ]
+ },
+ "13": {
+  "nen": [
+   {
+    "title": "Going to the cinema",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/going-cinema",
+    "source": "British Council LearnEnglish Teens",
+    "level": "A2",
+    "format_vi": "Trắc nghiệm + điền từ",
+    "note_vi": "Mario và Tamara xem lịch chiếu và chọn phim; luyện nghe giờ, tên phim, thể loại."
+   },
+   {
+    "title": "Talking about films",
+    "url": "https://test-english.com/listening/a2/talking-about-films-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "A2",
+    "format_vi": "Trắc nghiệm (7 câu, video)",
+    "note_vi": "Charlie nói cảm nghĩ về bảy thể loại phim; con chọn câu KHÔNG đúng.",
+    "alt": true
+   }
+  ],
+  "chuan": [
+   {
+    "title": "My favourite film",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b1-listening/my-favourite-film",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B1",
+    "format_vi": "Nối + điền từ",
+    "note_vi": "Năm người tả bộ phim yêu thích và lí do; từ vựng thể loại phim, nhận xét."
+   }
+  ],
+  "nang": [
+   {
+    "title": "Film reviews",
+    "url": "https://learnenglish.britishcouncil.org/free-resources/listening/b2/film-reviews",
+    "source": "British Council LearnEnglish",
+    "level": "B2",
+    "format_vi": "Phân nhóm + đúng/sai",
+    "note_vi": "Hai nhà phê bình đưa ý kiến trái ngược về hai bộ phim; luyện nhận ra thái độ người nói."
+   },
+   {
+    "title": "Behind the scenes with an actor",
+    "url": "https://test-english.com/listening/b2/behind-the-scenes-with-an-actor-b2-english-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "B2",
+    "format_vi": "Trắc nghiệm (7 câu, video)",
+    "note_vi": "Một diễn viên kể về bộ phim mới: bối cảnh quay, vai diễn, kĩ xảo.",
+    "alt": true
+   }
+  ]
+ },
+ "14": {
+  "nen": [
+   {
+    "title": "Who's who in the office",
+    "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/whos-who-office",
+    "source": "British Council LearnEnglish",
+    "level": "A2",
+    "format_vi": "Đúng/sai + nối",
+    "note_vi": "Nhân viên mới được giới thiệu từng đồng nghiệp và công việc của họ; ôn nghề nghiệp (buổi 10) và miêu tả người (buổi 11)."
+   },
+   {
+    "title": "Meeting people",
+    "url": "https://english4real.com/practice/a2_l1-meeting-people.html",
+    "source": "English4real (english4real.com)",
+    "level": "A2",
+    "format_vi": "Khoanh đáp án + nối + đúng/sai",
+    "note_vi": "Nói chuyện xã giao ở bữa tiệc và cách chào hỏi ở các nước; ôn giao tiếp và văn hoá.",
+    "alt": true
+   }
+  ],
+  "chuan": [
+   {
+    "title": "Biography of Albert Einstein",
+    "url": "https://test-english.com/listening/b1/biography-albert-einstein-listening-test/",
+    "source": "Test-English (test-english.com)",
+    "level": "B1",
+    "format_vi": "Đúng/sai (7 câu, video)",
+    "note_vi": "Tiểu sử Einstein; ôn cùng lúc khoa học (buổi 12) và con người (buổi 11)."
+   }
+  ],
+  "nang": [
+   {
+    "title": "What's in a name?",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/b2-listening/whats-name",
+    "source": "British Council LearnEnglish Teens",
+    "level": "B2",
+    "format_vi": "Đúng/sai + điền từ",
+    "note_vi": "Hai MC radio bàn về xu hướng đặt tên con theo thiên nhiên, âm nhạc, người nổi tiếng; ôn truyền thông, văn hoá, con người."
+   },
+   {
+    "title": "A digital detox podcast",
+    "url": "https://learnenglish.britishcouncil.org/free-resources/listening/b2/digital-detox-podcast",
+    "source": "British Council LearnEnglish",
+    "level": "B2",
+    "format_vi": "Trắc nghiệm + sắp xếp thứ tự",
+    "note_vi": "Podcast về một người cắt giảm thời gian dùng màn hình; ôn truyền thông và giao tiếp (buổi 8).",
+    "alt": true
+   }
+  ]
+ }
+}
