@@ -582,6 +582,7 @@ html{background:#4AA3B6 url("../assets/bg/khoi-cat.svg") center/cover no-repeat 
 body{background-color:transparent}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){background-image:linear-gradient(rgba(6,20,24,.62),rgba(6,20,24,.62)),url("../assets/bg/khoi-cat.svg")}}
 :root[data-theme="dark"]{background-image:linear-gradient(rgba(6,20,24,.62),rgba(6,20,24,.62)),url("../assets/bg/khoi-cat.svg")}
+.motto .mt-t{font-size:clamp(1.15rem,1.7vw,1.6rem);line-height:1.25}
 .dash-head h1{text-shadow:3px 3px 0 #14303A,0 0 18px rgba(10,40,48,.3)}
 @media (min-width:1100px){
   header.top{width:184px}
@@ -855,7 +856,7 @@ const MOTTOS=[
  ['boss','Kỳ thi còn xa? Chính vì thế hôm nay chỉ cần 40 phút.'],
  ['dino','Cô không cần em hoàn hảo. Cô cần em quay lại vào ngày mai.']];
 let MOTTO_I=Math.floor(Date.now()/864e5)%MOTTOS.length;
-function mottoHTML(){const [pp,t]=MOTTOS[MOTTO_I];return `<img src="${PEEP(pp)}" alt="" class="mt-peep"><div class="mt-body"><p class="mt-k">châm ngôn hôm nay</p><p class="mt-t">${esc(t)}</p></div><button type="button" class="mt-next" id="mtNext" aria-label="Đổi châm ngôn khác"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.5-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.5 4.5L20 16M20 20v-4h-4"/></svg></button>`}
+function mottoHTML(){return `<img src="${PEEP('boss')}" alt="" class="mt-peep"><div class="mt-body"><p class="mt-t">Thử 14 ngày để xác định khả năng theo lộ trình chuyên ngữ</p></div>`}
 function wireMotto(){const b=$('#mtNext');if(b)b.onclick=()=>{MOTTO_I=(MOTTO_I+1)%MOTTOS.length;const box=$('#motto');box.innerHTML=mottoHTML();box.classList.remove('flip');void box.offsetWidth;box.classList.add('flip');wireMotto()}}
 function dashHTML(nd){
   const D=DAYS[nd-1];const qs=questState(nd);const noDiag=!S.diag;let steps=Q_STEPS.filter(s=>qs[s.k]);
@@ -876,7 +877,7 @@ function dashHTML(nd){
     <span class="chip y"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="${STAR_P}" fill="#fff" stroke="#3D2E00" stroke-width="1.8" stroke-linejoin="round"/></svg>${stars} sao từ game</span>
     <span class="chip">Thi vào 10: còn ${left} ngày</span>
   </div>
-  <div class="motto" id="motto" aria-live="polite">${mottoHTML()}</div>
+  <div class="motto" id="motto">${mottoHTML()}</div>
   <section class="paper tape quest" aria-labelledby="qTitle">
     <div class="q-head"><h2 id="qTitle">Nhiệm vụ hôm nay</h2><span class="q-sub">${noDiag?'Việc đầu tiên: bài đầu vào 30 câu (25 phút), rồi vào ':''}Buổi ${nd} · ${esc(D.theme_vi)}</span>
       <span class="q-stars" role="img" aria-label="Đã xong ${doneN} trên ${steps.length} bước">${steps.map((s,i)=>starSVG(i<doneN,i)).join('')}</span></div>
