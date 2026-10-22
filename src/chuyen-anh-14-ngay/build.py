@@ -56,6 +56,14 @@ out = repo / "chuyen-anh-14-ngay" / "index.html"
 out.write_text(page, encoding="utf-8")
 print("built", out, len(page.encode()), "bytes")
 
+# ---- bản xem trước cho giáo viên: cùng trang, mở khoá, có thanh tình huống và mục Toàn bộ nội dung ----
+pv = (page.replace("/*__PREVIEW__*/false", "true", 1)
+        .replace("/*__PREVIEW_JS__*/", (here / "preview.js").read_text(encoding="utf-8"), 1)
+        .replace("<meta charset=\"utf-8\">", "<meta charset=\"utf-8\">\n<meta name=\"robots\" content=\"noindex\">", 1))
+pv = re.sub(r"<title>(.*?)</title>", r"<title>Xem trước cho giáo viên · \1</title>", pv, count=1)
+(repo / "chuyen-anh-14-ngay" / "xem-truoc.html").write_text(pv, encoding="utf-8")
+print("built", repo / "chuyen-anh-14-ngay" / "xem-truoc.html")
+
 # ---- trang của cô ----
 themes = json.dumps([{"day": d["day"], "theme": d.get("theme_vi", "")} for d in days], ensure_ascii=False)
 co_tpl = (here.parent / "co" / "template.html").read_text(encoding="utf-8")

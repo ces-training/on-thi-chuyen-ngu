@@ -1,7 +1,7 @@
 /* ----- kết nối máy chủ của cô (Google Apps Script) -----
    Chèn vào template.html bởi build.py. Dùng: S, save, saveLocal, $, esc, M, go, DAYS, agg, efficiency, summary, LEVELS, renderDay. */
 const API = __API_URL__;
-function cloudOn(){return !!(API&&S.code)}
+function cloudOn(){return !PREVIEW&&!!(API&&S.code)}
 async function api(action,data){
   const r=await fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(Object.assign({action},data||{}))});
   const j=await r.json();
