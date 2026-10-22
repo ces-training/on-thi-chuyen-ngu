@@ -3,7 +3,7 @@
  "type": "normal",
  "theme_en": "Arts & entertainment",
  "theme_vi": "Nghệ thuật và giải trí",
- "goal_vi": "Hôm nay bạn sẽ bước vào thế giới nghệ thuật với âm nhạc, hội hoạ và sân khấu. Bạn cũng sẽ học khi nào dùng V-ing, khi nào dùng to V – một chủ điểm 'nhỏ mà có võ' trong đề thi chuyên!",
+ "goal_vi": "Hôm nay cậu sẽ bước vào thế giới nghệ thuật với âm nhạc, hội hoạ và sân khấu. Cậu cũng sẽ học khi nào dùng V-ing, khi nào dùng to V – một chủ điểm 'nhỏ mà có võ' trong đề thi chuyên!",
  "minutes": 30,
  "vocab": [
   {
@@ -108,7 +108,7 @@
    "We stopped to buy some water on the way to the concert.",
    "Remember to turn off your phone during the performance."
   ],
-  "common_mistake_vi": "Nhầm stop doing và stop to do. 'He stopped to talk' = anh ấy dừng lại (việc đang làm) để nói chuyện. 'He stopped talking' = anh ấy thôi không nói nữa. Bạn hỏi: việc sau stop là việc bị bỏ đi (V-ing) hay mục đích mới (to V)?"
+  "common_mistake_vi": "Nhầm stop doing và stop to do. 'He stopped to talk' = anh ấy dừng lại (việc đang làm) để nói chuyện. 'He stopped talking' = anh ấy thôi không nói nữa. Cậu hỏi: việc sau stop là việc bị bỏ đi (V-ing) hay mục đích mới (to V)?"
  },
  "wordform": {
   "id": "d13w",
@@ -204,7 +204,7 @@
    ]
   },
   "B_grammar": {
-   "instruction_vi": "Viết dạng đúng của động từ trong ngoặc: V-ing hoặc to V. Với stop và remember, bạn đọc kỹ cả câu để hiểu nghĩa nhé.",
+   "instruction_vi": "Viết dạng đúng của động từ trong ngoặc: V-ing hoặc to V. Với stop và remember, cậu đọc kỹ cả câu để hiểu nghĩa nhé.",
    "items": [
     {
      "id": "d13B1",
@@ -285,7 +285,7 @@
   },
   "D_exam": {
    "format": "cloze",
-   "instruction_vi": "Đọc đoạn văn và chọn đáp án đúng (A, B, C hoặc D) cho mỗi chỗ trống. Mẹo: bạn đọc cả câu trước và sau chỗ trống, vì đáp án có thể phụ thuộc vào từ đứng sau đó.",
+   "instruction_vi": "Đọc đoạn văn và chọn đáp án đúng (A, B, C hoặc D) cho mỗi chỗ trống. Mẹo: cậu đọc cả câu trước và sau chỗ trống, vì đáp án có thể phụ thuộc vào từ đứng sau đó.",
    "text": "Every year, our school (1) ______ a talent show in December. Students who want to take (2) ______ must sign up two months before. This year, my friend Vy decided (3) ______ a song that she wrote herself. She practised (4) ______ it every evening, and on the night of the show, everyone cheered loudly.",
    "items": [
     {
@@ -376,7 +376,7 @@
      ],
      "answer": "D",
      "tag": "d13r",
-     "explain_vi": "Bài viết: ==At first, things went badly: the puppets kept falling apart== → **D. The puppets kept falling apart.** __Từ 'at first' trong câu hỏi giúp bạn tìm đúng câu.__"
+     "explain_vi": "Bài viết: ==At first, things went badly: the puppets kept falling apart== → **D. The puppets kept falling apart.** __Từ 'at first' trong câu hỏi giúp cậu tìm đúng câu.__"
     },
     {
      "id": "d13E4",
@@ -396,18 +396,18 @@
   },
   "F_writing": {
    "task_en": "Write about a show, concert or exhibition that you took part in or watched. What was it? What did you enjoy about it? How did you feel? Use at least two verbs followed by V-ing or to V (enjoy, decide, hope, remember...).",
-   "task_vi": "Viết về một buổi biểu diễn, buổi hoà nhạc hoặc triển lãm mà bạn đã tham gia hoặc xem: đó là sự kiện gì, bạn thích điều gì, cảm xúc của bạn ra sao. Dùng ít nhất hai động từ đi với V-ing hoặc to V nhé.",
+   "task_vi": "Viết về một buổi biểu diễn, buổi hoà nhạc hoặc triển lãm mà cậu đã tham gia hoặc xem: đó là sự kiện gì, cậu thích điều gì, cảm xúc của cậu ra sao. Dùng ít nhất hai động từ đi với V-ing hoặc to V nhé.",
    "min_words": 50,
    "model": "Last month, I took part in our school's English Day. My class decided to put on a short play about a lazy king, and I played the king! We rehearsed every lunchtime for two weeks, and I really enjoyed working with my friends. On the day, I was nervous, but I tried not to look at the audience. When the play finished, everyone clapped loudly. I hope to perform again next year because it inspired me to be more confident.",
    "checklist_vi": [
-    "Bạn đã nói rõ đó là sự kiện gì và cảm xúc của bạn chưa?",
-    "Bạn đã dùng ít nhất 2 động từ + V-ing / to V đúng (enjoy doing, decide to do...) chưa?",
-    "Bạn đã dùng ít nhất 3 từ mới hôm nay (performance, rehearse, talented, inspire...) chưa?",
-    "Bạn đã viết đủ 50 từ trở lên chưa?"
+    "Cậu đã nói rõ đó là sự kiện gì và cảm xúc của cậu chưa?",
+    "Cậu đã dùng ít nhất 2 động từ + V-ing / to V đúng (enjoy doing, decide to do...) chưa?",
+    "Cậu đã dùng ít nhất 3 từ mới hôm nay (performance, rehearse, talented, inspire...) chưa?",
+    "Cậu đã viết đủ 50 từ trở lên chưa?"
    ]
   },
   "G_review": {
-   "instruction_vi": "Ôn xoắn ốc – bạn làm 4 câu ôn lại kiến thức của các buổi trước nhé. Chữ cái gợi ý (nếu có) là chữ cái đầu của đáp án.",
+   "instruction_vi": "Ôn xoắn ốc – cậu làm 4 câu ôn lại kiến thức của các buổi trước nhé. Chữ cái gợi ý (nếu có) là chữ cái đầu của đáp án.",
    "items": [
     {
      "id": "d13G1",
@@ -610,8 +610,8 @@
   }
  ],
  "can_do_vi": [
-  "Bạn có thể nói về âm nhạc, hội hoạ và sân khấu bằng các từ performance, exhibition, talented, rehearse...",
-  "Bạn có thể chọn đúng V-ing hay to V sau các động từ thường gặp, và hiểu sự khác nhau của stop/remember/try.",
-  "Bạn có thể tạo danh từ đuôi -ure, -age, -ance và làm bài đọc điền từ (cloze) 4 chỗ trống."
+  "Cậu có thể nói về âm nhạc, hội hoạ và sân khấu bằng các từ performance, exhibition, talented, rehearse...",
+  "Cậu có thể chọn đúng V-ing hay to V sau các động từ thường gặp, và hiểu sự khác nhau của stop/remember/try.",
+  "Cậu có thể tạo danh từ đuôi -ure, -age, -ance và làm bài đọc điền từ (cloze) 4 chỗ trống."
  ]
 }

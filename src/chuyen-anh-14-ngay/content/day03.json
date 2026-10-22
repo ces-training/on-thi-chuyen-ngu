@@ -3,7 +3,7 @@
  "type": "normal",
  "theme_en": "Environment",
  "theme_vi": "Môi trường",
- "goal_vi": "Hôm nay bạn sẽ học các từ quan trọng về môi trường và luyện cách phân biệt thì hiện tại hoàn thành với quá khứ đơn. Bạn cũng sẽ làm quen với dạng bài tìm từ trái nghĩa – một dạng rất hay gặp trong đề thi chuyên đấy!",
+ "goal_vi": "Hôm nay cậu sẽ học các từ quan trọng về môi trường và luyện cách phân biệt thì hiện tại hoàn thành với quá khứ đơn. Cậu cũng sẽ làm quen với dạng bài tìm từ trái nghĩa – một dạng rất hay gặp trong đề thi chuyên đấy!",
  "minutes": 30,
  "vocab": [
   {
@@ -143,7 +143,7 @@
  },
  "paper": {
   "A_vocab": {
-   "instruction_vi": "Bạn chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ed…) nếu cần nhé!",
+   "instruction_vi": "Cậu chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ed…) nếu cần nhé!",
    "bank": [
     "pollution",
     "protect",
@@ -200,7 +200,7 @@
    ]
   },
   "B_grammar": {
-   "instruction_vi": "Bạn chia động từ trong ngoặc ở thì hiện tại hoàn thành hoặc quá khứ đơn. Hãy tìm từ dấu hiệu trước khi chia nhé!",
+   "instruction_vi": "Cậu chia động từ trong ngoặc ở thì hiện tại hoàn thành hoặc quá khứ đơn. Hãy tìm từ dấu hiệu trước khi chia nhé!",
    "items": [
     {
      "id": "d3B1",
@@ -295,7 +295,7 @@
   },
   "D_exam": {
    "format": "antonym",
-   "instruction_vi": "Dạng bài từ trái nghĩa: bạn chọn đáp án (A, B, C hoặc D) có nghĩa NGƯỢC LẠI với từ VIẾT IN HOA. Cẩn thận: thường có một đáp án đồng nghĩa để 'bẫy' bạn đấy!",
+   "instruction_vi": "Dạng bài từ trái nghĩa: cậu chọn đáp án (A, B, C hoặc D) có nghĩa NGƯỢC LẠI với từ VIẾT IN HOA. Cẩn thận: thường có một đáp án đồng nghĩa để 'bẫy' cậu đấy!",
    "items": [
     {
      "id": "d3D1",
@@ -384,7 +384,7 @@
      ],
      "answer": "A",
      "tag": "d3r",
-     "explain_vi": "==Volunteers collected 200 kilograms of rubbish in just three hours.== → **A. three hours**. __two years, one month là các mốc khác trong bài, bạn đọc đúng đoạn nói về hồ.__"
+     "explain_vi": "==Volunteers collected 200 kilograms of rubbish in just three hours.== → **A. three hours**. __two years, one month là các mốc khác trong bài, cậu đọc đúng đoạn nói về hồ.__"
     },
     {
      "id": "d3E4",
@@ -404,18 +404,18 @@
   },
   "F_writing": {
    "task_en": "Write a paragraph (50–70 words) about what you and your family have done to protect the environment. Give at least one example of something you did recently.",
-   "task_vi": "Viết một đoạn văn (50–70 từ) kể về những việc bạn và gia đình đã làm để bảo vệ môi trường. Nêu ít nhất một việc cụ thể bạn đã làm gần đây.",
+   "task_vi": "Viết một đoạn văn (50–70 từ) kể về những việc cậu và gia đình đã làm để bảo vệ môi trường. Nêu ít nhất một việc cụ thể cậu đã làm gần đây.",
    "min_words": 50,
    "model": "My family has tried hard to protect the environment. We have stopped using plastic bags, and my mum always takes a cloth bag to the market. We have also cut down on electricity by switching off lights we don't need. Last weekend, my brother and I collected old newspapers and took them to a recycling shop. I haven't planted a tree yet, but I want to do it soon.",
    "checklist_vi": [
-    "Bạn có dùng thì hiện tại hoàn thành (have/has + V3) ít nhất 2 lần không?",
-    "Bạn có dùng thì quá khứ đơn với thời gian xác định (last weekend, yesterday…) ít nhất 1 lần không?",
-    "Bạn có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 3 không?",
+    "Cậu có dùng thì hiện tại hoàn thành (have/has + V3) ít nhất 2 lần không?",
+    "Cậu có dùng thì quá khứ đơn với thời gian xác định (last weekend, yesterday…) ít nhất 1 lần không?",
+    "Cậu có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 3 không?",
     "Đoạn văn đủ 50 từ và các V3 được viết đúng chính tả (seen, taken, done…)."
    ]
   },
   "G_review": {
-   "instruction_vi": "Ôn xoắn ốc – bạn ôn lại từ và ngữ pháp của buổi 2 (Sở thích) và buổi 1 (Trường học) nhé. Điền từ thích hợp hoặc chia động từ trong ngoặc.",
+   "instruction_vi": "Ôn xoắn ốc – cậu ôn lại từ và ngữ pháp của buổi 2 (Sở thích) và buổi 1 (Trường học) nhé. Điền từ thích hợp hoặc chia động từ trong ngoặc.",
    "items": [
     {
      "id": "d3G1",
@@ -567,7 +567,7 @@
     "special"
    ],
    "answer": 2,
-   "explain_vi": "**rare** (hiếm) >< **common** (phổ biến). __unusual gần nghĩa với rare nên là bẫy; bạn loại đáp án đồng nghĩa trước.__",
+   "explain_vi": "**rare** (hiếm) >< **common** (phổ biến). __unusual gần nghĩa với rare nên là bẫy; cậu loại đáp án đồng nghĩa trước.__",
    "tag": "fmt:antonym"
   },
   {
@@ -614,9 +614,9 @@
   }
  ],
  "can_do_vi": [
-  "Bạn có thể nói về các vấn đề môi trường bằng 8 từ mới và 2 cụm động từ cut down (on), throw away.",
-  "Bạn có thể chọn đúng thì hiện tại hoàn thành hoặc quá khứ đơn, và dùng đúng for / since / already / yet / ever / never.",
-  "Bạn có thể tạo tính từ với -al và -ous.",
-  "Bạn có thể làm dạng bài tìm từ trái nghĩa và tránh được đáp án 'bẫy' đồng nghĩa."
+  "Cậu có thể nói về các vấn đề môi trường bằng 8 từ mới và 2 cụm động từ cut down (on), throw away.",
+  "Cậu có thể chọn đúng thì hiện tại hoàn thành hoặc quá khứ đơn, và dùng đúng for / since / already / yet / ever / never.",
+  "Cậu có thể tạo tính từ với -al và -ous.",
+  "Cậu có thể làm dạng bài tìm từ trái nghĩa và tránh được đáp án 'bẫy' đồng nghĩa."
  ]
 }

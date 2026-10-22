@@ -110,8 +110,8 @@
   {
    "format": "antonym",
    "title_vi": "Từ trái nghĩa",
-   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu chọn từ/cụm từ TRÁI nghĩa với phần VIẾT HOA trong câu. Hôm nay bạn làm 5 câu.",
-   "tip_vi": "Hiểu nghĩa phần VIẾT HOA trước. Đề thường cài một đáp án ĐỒNG nghĩa làm bẫy, bạn loại nó ra trước.",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu chọn từ/cụm từ TRÁI nghĩa với phần VIẾT HOA trong câu. Hôm nay cậu làm 5 câu.",
+   "tip_vi": "Hiểu nghĩa phần VIẾT HOA trước. Đề thường cài một đáp án ĐỒNG nghĩa làm bẫy, cậu loại nó ra trước.",
    "kind": "mcq",
    "items": [
     {
@@ -174,7 +174,7 @@
   {
    "format": "word_formation",
    "title_vi": "Dạng đúng của từ",
-   "intro_vi": "Đề Sở chuyên Anh Hà Nội có câu viết dạng đúng của từ cho sẵn trong phần kiến thức ngôn ngữ, đôi khi đặt trong một đoạn văn. Hôm nay bạn làm 5 chỗ trống.",
+   "intro_vi": "Đề Sở chuyên Anh Hà Nội có câu viết dạng đúng của từ cho sẵn trong phần kiến thức ngôn ngữ, đôi khi đặt trong một đoạn văn. Hôm nay cậu làm 5 chỗ trống.",
    "tip_vi": "Xác định loại từ cần điền: trước danh từ là tính từ, sau a/an/the là danh từ. Nhớ đổi chính tả: fame → famous.",
    "kind": "gap_text",
    "text": "Our school is next to a small lake. Ten years ago, the lake was [1] for its pink lotus flowers. Then a factory was built nearby, and the water became [2] to fish and plants. Last year, our class started an [3] project to save the lake. Since then, we have collected bags and bags of rubbish, and we have asked visitors not to be [4] with their waste. Fish have come back, and a [5] newspaper has even written about our work.",
@@ -216,7 +216,7 @@
   {
    "format": "antonym",
    "title_vi": "Từ trái nghĩa",
-   "intro_vi": "Dạng từ trái nghĩa: bạn chọn đáp án có nghĩa NGƯỢC LẠI với từ VIẾT HOA (ví dụ hot >< cold). Đề Chuyên Ngoại ngữ có 4 câu dạng này. Hôm nay bạn làm 5 câu dễ.",
+   "intro_vi": "Dạng từ trái nghĩa: cậu chọn đáp án có nghĩa NGƯỢC LẠI với từ VIẾT HOA (ví dụ hot >< cold). Đề Chuyên Ngoại ngữ có 4 câu dạng này. Hôm nay cậu làm 5 câu dễ.",
    "tip_vi": "Dịch nhanh từ VIẾT HOA sang tiếng Việt rồi nghĩ từ ngược nghĩa. Nếu thấy đáp án CÙNG nghĩa với từ VIẾT HOA, đó là bẫy!",
    "kind": "mcq",
    "items": [
@@ -280,7 +280,7 @@
   {
    "format": "word_formation",
    "title_vi": "Dạng đúng của từ",
-   "intro_vi": "Dạng đúng của từ: bạn đổi từ in hoa thành từ đúng (thường là thêm đuôi) để điền vào chỗ trống trong đoạn văn. Đề Sở chuyên Anh có dạng này. Hôm nay có 5 chỗ trống.",
+   "intro_vi": "Dạng đúng của từ: cậu đổi từ in hoa thành từ đúng (thường là thêm đuôi) để điền vào chỗ trống trong đoạn văn. Đề Sở chuyên Anh có dạng này. Hôm nay có 5 chỗ trống.",
    "tip_vi": "Trước danh từ cần tính từ (a … park → national park). Sau is, are, was, were thường là tính từ. Đuôi hôm nay: -al, -ous, -ful.",
    "kind": "gap_text",
    "text": "Last month, our class visited Cuc Phuong. It is a big [1] park about 120 km from Hanoi. I have never seen so many tall trees before! The guide said, 'Some snakes here are [2], so please stay on the path.' We were very [3] and nobody touched the animals. We also learned about some [4] problems, like forest fires and rubbish. It was a [5] day!",
@@ -307,7 +307,7 @@
      "answer": "environmental",
      "accept": [],
      "base": "ENVIRONMENT",
-     "explain_vi": "Trước danh từ ==problems== cần **tính từ**: environment + -al → **environmental**. __Ví dụ phía sau (forest fires and rubbish) giúp bạn đoán nghĩa “môi trường”.__"
+     "explain_vi": "Trước danh từ ==problems== cần **tính từ**: environment + -al → **environmental**. __Ví dụ phía sau (forest fires and rubbish) giúp cậu đoán nghĩa “môi trường”.__"
     },
     {
      "answer": "wonderful",
@@ -322,7 +322,7 @@
   {
    "format": "antonym",
    "title_vi": "Từ trái nghĩa",
-   "intro_vi": "Câu trái nghĩa phân loại thường dùng từ B2 hoặc cụm động từ, và cài 2–3 đáp án ĐỒNG nghĩa với từ VIẾT HOA để bẫy. Hôm nay bạn làm 5 câu như vậy.",
+   "intro_vi": "Câu trái nghĩa phân loại thường dùng từ B2 hoặc cụm động từ, và cài 2–3 đáp án ĐỒNG nghĩa với từ VIẾT HOA để bẫy. Hôm nay cậu làm 5 câu như vậy.",
    "tip_vi": "Loại hết các đáp án đồng nghĩa trước. Đáp án còn lại phải ngược nghĩa thật sự, không chỉ 'khác nghĩa'.",
    "kind": "mcq",
    "items": [
@@ -386,7 +386,7 @@
   {
    "format": "word_formation",
    "title_vi": "Dạng đúng của từ",
-   "intro_vi": "Câu cấu tạo từ khó trong đề Sở chuyên Anh thường bắt đổi từ 2 lần (drama → dramatic → dramatically) hoặc có chính tả đặc biệt. Hôm nay bạn làm 5 chỗ trống như vậy.",
+   "intro_vi": "Câu cấu tạo từ khó trong đề Sở chuyên Anh thường bắt đổi từ 2 lần (drama → dramatic → dramatically) hoặc có chính tả đặc biệt. Hôm nay cậu làm 5 chỗ trống như vậy.",
    "tip_vi": "Xác định loại từ cần điền, rồi soát chính tả: disaster → disastrous (mất e), -ic → -ically. Nhớ cụm cố định như environmentally friendly.",
    "kind": "gap_text",
    "text": "Over the last twenty years, the beach in my hometown has changed [1]. Hotels and restaurants have appeared everywhere, and the effect on the sea has been [2]: in 2019, thousands of dead fish washed up on the sand. Since then, local people have tried to live in a more [3] friendly way. Volunteers have organised [4] clean-ups, and last year the town launched an [5] plan to ban single-use plastic by 2030.",
@@ -665,21 +665,21 @@
       "accept": [
        "two"
       ],
-      "explain_vi": "==“Today we're going to walk for two hours.”== → **2**. __Bạn có thể viết số 2 hoặc chữ two.__"
+      "explain_vi": "==“Today we're going to walk for two hours.”== → **2**. __Cậu có thể viết số 2 hoặc chữ two.__"
      },
      {
       "answer": "garden",
       "accept": [
        "bird garden"
       ],
-      "explain_vi": "==“First, we're going to visit the bird garden.”== → **garden**. __Phiếu đã có chữ bird, bạn chỉ cần điền garden.__"
+      "explain_vi": "==“First, we're going to visit the bird garden.”== → **garden**. __Phiếu đã có chữ bird, cậu chỉ cần điền garden.__"
      },
      {
       "answer": "40",
       "accept": [
        "forty"
       ],
-      "explain_vi": "==“There are more than 40 species of birds there.”== → **40**. __“more than” đã in sẵn trên phiếu, bạn chỉ ghi số.__"
+      "explain_vi": "==“There are more than 40 species of birds there.”== → **40**. __“more than” đã in sẵn trên phiếu, cậu chỉ ghi số.__"
      },
      {
       "answer": "lake",
@@ -829,7 +829,7 @@
       "accept": [
        "school gate"
       ],
-      "explain_vi": "==“The bus leaves from the school gate at six o'clock”== → **gate**. __Phiếu đã có “the school”, bạn chỉ điền gate.__"
+      "explain_vi": "==“The bus leaves from the school gate at six o'clock”== → **gate**. __Phiếu đã có “the school”, cậu chỉ điền gate.__"
      },
      {
       "answer": "80",

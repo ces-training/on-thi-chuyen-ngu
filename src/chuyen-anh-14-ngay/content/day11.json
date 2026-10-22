@@ -3,7 +3,7 @@
  "type": "normal",
  "theme_en": "People & relationships",
  "theme_vi": "Con người và các mối quan hệ",
- "goal_vi": "Hôm nay bạn sẽ học các từ để miêu tả tính cách con người và các mối quan hệ quanh em. Bạn cũng sẽ học mệnh đề quan hệ với who, which, that, whose, where để nối câu thật gọn và hay!",
+ "goal_vi": "Hôm nay cậu sẽ học các từ để miêu tả tính cách con người và các mối quan hệ quanh em. Cậu cũng sẽ học mệnh đề quan hệ với who, which, that, whose, where để nối câu thật gọn và hay!",
  "minutes": 30,
  "vocab": [
   {
@@ -113,7 +113,7 @@
  "wordform": {
   "id": "d11w",
   "focus": "-ence/-ance (n), -ent/-ant (adj)",
-  "rule_vi": "Nhiều tính từ đuôi -ent có danh từ đuôi -ence, và tính từ đuôi -ant có danh từ đuôi -ance (patient → patience, important → importance). Bạn nhìn vị trí trong câu để biết cần tính từ hay danh từ.",
+  "rule_vi": "Nhiều tính từ đuôi -ent có danh từ đuôi -ence, và tính từ đuôi -ant có danh từ đuôi -ance (patient → patience, important → importance). Cậu nhìn vị trí trong câu để biết cần tính từ hay danh từ.",
   "examples": [
    [
     "patient",
@@ -143,7 +143,7 @@
  },
  "paper": {
   "A_vocab": {
-   "instruction_vi": "Chọn từ thích hợp trong khung để điền vào chỗ trống. Mỗi từ dùng một lần, có 2 từ thừa. Bạn nhớ đổi dạng từ nếu cần (thêm -s, -ed...) nhé.",
+   "instruction_vi": "Chọn từ thích hợp trong khung để điền vào chỗ trống. Mỗi từ dùng một lần, có 2 từ thừa. Cậu nhớ đổi dạng từ nếu cần (thêm -s, -ed...) nhé.",
    "bank": [
     "personality",
     "generous",
@@ -167,7 +167,7 @@
      "q": "Be ______ with me – did you eat the last piece of cake?",
      "answer": "honest",
      "tag": "d11v3",
-     "explain_vi": "==Be ... with me== rồi hỏi 'có phải bạn ăn miếng bánh cuối không' → cần nói thật: **honest**. __Be honest with sb: hãy thành thật với ai.__"
+     "explain_vi": "==Be ... with me== rồi hỏi 'có phải cậu ăn miếng bánh cuối không' → cần nói thật: **honest**. __Be honest with sb: hãy thành thật với ai.__"
     },
     {
      "id": "d11A3",
@@ -200,7 +200,7 @@
    ]
   },
   "B_grammar": {
-   "instruction_vi": "Điền who, which, that, whose hoặc where vào chỗ trống. Nếu có hai đáp án đúng, bạn chỉ cần viết một. Chú ý: sau dấu phẩy thì không dùng 'that' nhé!",
+   "instruction_vi": "Điền who, which, that, whose hoặc where vào chỗ trống. Nếu có hai đáp án đúng, cậu chỉ cần viết một. Chú ý: sau dấu phẩy thì không dùng 'that' nhé!",
    "items": [
     {
      "id": "d11B1",
@@ -251,12 +251,12 @@
       "that"
      ],
      "tag": "d11g",
-     "explain_vi": "==The book== là vật, làm tân ngữ của 'lent' → **which** (hoặc that). __Không có dấu phẩy, bạn dùng which hay that đều được.__"
+     "explain_vi": "==The book== là vật, làm tân ngữ của 'lent' → **which** (hoặc that). __Không có dấu phẩy, cậu dùng which hay that đều được.__"
     }
    ]
   },
   "C_wordform": {
-   "instruction_vi": "Viết dạng đúng của từ in hoa. Bạn xem chỗ trống cần danh từ (-ence/-ance) hay tính từ (-ent/-ant) nhé.",
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Cậu xem chỗ trống cần danh từ (-ence/-ance) hay tính từ (-ent/-ant) nhé.",
    "items": [
     {
      "id": "d11C1",
@@ -290,7 +290,7 @@
   },
   "D_exam": {
    "format": "antonym",
-   "instruction_vi": "Chọn từ/cụm từ có nghĩa TRÁI NGƯỢC với phần viết IN HOA (A, B, C hoặc D). Mẹo: bạn hãy hiểu nghĩa từ in hoa trước, rồi tìm từ có nghĩa ngược lại – cẩn thận đừng chọn nhầm từ đồng nghĩa nhé!",
+   "instruction_vi": "Chọn từ/cụm từ có nghĩa TRÁI NGƯỢC với phần viết IN HOA (A, B, C hoặc D). Mẹo: cậu hãy hiểu nghĩa từ in hoa trước, rồi tìm từ có nghĩa ngược lại – cẩn thận đừng chọn nhầm từ đồng nghĩa nhé!",
    "items": [
     {
      "id": "d11D1",
@@ -400,18 +400,18 @@
   },
   "F_writing": {
    "task_en": "Write about a person you look up to. Who is this person? What is his/her personality like? Why do you respect him/her? Use at least two relative clauses (who, which, whose, where).",
-   "task_vi": "Viết về một người mà bạn kính trọng/ngưỡng mộ: người đó là ai, tính cách thế nào, vì sao bạn kính trọng họ. Dùng ít nhất hai mệnh đề quan hệ nhé.",
+   "task_vi": "Viết về một người mà cậu kính trọng/ngưỡng mộ: người đó là ai, tính cách thế nào, vì sao cậu kính trọng họ. Dùng ít nhất hai mệnh đề quan hệ nhé.",
    "min_words": 50,
    "model": "The person I look up to most is my aunt Hương, who is a primary school teacher in a mountain village. She has a kind and patient personality. Every morning she rides her motorbike along a road which is narrow and dangerous, but she never complains. She is also very generous: she often buys books for children whose families are poor. I respect her because she always puts other people first.",
    "checklist_vi": [
-    "Bạn đã giới thiệu người đó là ai và vì sao bạn kính trọng họ chưa?",
-    "Bạn đã dùng ít nhất 2 mệnh đề quan hệ, và không dùng 'that' sau dấu phẩy chưa?",
-    "Bạn đã dùng ít nhất 3 từ mới về tính cách (generous, honest, sympathetic...) chưa?",
-    "Bạn đã viết đủ 50 từ trở lên chưa?"
+    "Cậu đã giới thiệu người đó là ai và vì sao cậu kính trọng họ chưa?",
+    "Cậu đã dùng ít nhất 2 mệnh đề quan hệ, và không dùng 'that' sau dấu phẩy chưa?",
+    "Cậu đã dùng ít nhất 3 từ mới về tính cách (generous, honest, sympathetic...) chưa?",
+    "Cậu đã viết đủ 50 từ trở lên chưa?"
    ]
   },
   "G_review": {
-   "instruction_vi": "Ôn xoắn ốc – bạn làm 4 câu ôn lại kiến thức của các buổi trước nhé. Chữ cái gợi ý (nếu có) là chữ cái đầu của đáp án.",
+   "instruction_vi": "Ôn xoắn ốc – cậu làm 4 câu ôn lại kiến thức của các buổi trước nhé. Chữ cái gợi ý (nếu có) là chữ cái đầu của đáp án.",
    "items": [
     {
      "id": "d11G1",
@@ -471,7 +471,7 @@
    "q": "I really look ______ to my grandfather. He is wise, kind and hard-working.",
    "answer": "up",
    "accept": [],
-   "explain_vi": "**look up to sb**: kính trọng, ngưỡng mộ ai → điền **up**. Câu sau ==wise, kind and hard-working== là lý do bạn kính trọng ông. __Học cả cặp: look up to >< look down on.__",
+   "explain_vi": "**look up to sb**: kính trọng, ngưỡng mộ ai → điền **up**. Câu sau ==wise, kind and hard-working== là lý do cậu kính trọng ông. __Học cả cặp: look up to >< look down on.__",
    "tag": "d11p2"
   },
   {
@@ -566,7 +566,7 @@
     "polite"
    ],
    "answer": 2,
-   "explain_vi": "**honest** (trung thực) >< **dishonest** (không trung thực). Vế ==he never cheats in tests== giúp bạn hiểu nghĩa từ in hoa. __'truthful' là từ đồng nghĩa – bẫy hay gặp!__",
+   "explain_vi": "**honest** (trung thực) >< **dishonest** (không trung thực). Vế ==he never cheats in tests== giúp cậu hiểu nghĩa từ in hoa. __'truthful' là từ đồng nghĩa – bẫy hay gặp!__",
    "tag": "fmt:antonym"
   },
   {
@@ -616,8 +616,8 @@
   }
  ],
  "can_do_vi": [
-  "Bạn có thể miêu tả tính cách một người bằng các từ generous, honest, sympathetic...",
-  "Bạn có thể dùng who, which, that, whose, where để nối câu, và biết khi nào không được dùng 'that'.",
-  "Bạn có thể đổi giữa tính từ -ent/-ant và danh từ -ence/-ance, và tìm từ trái nghĩa trong bài thi."
+  "Cậu có thể miêu tả tính cách một người bằng các từ generous, honest, sympathetic...",
+  "Cậu có thể dùng who, which, that, whose, where để nối câu, và biết khi nào không được dùng 'that'.",
+  "Cậu có thể đổi giữa tính từ -ent/-ant và danh từ -ence/-ance, và tìm từ trái nghĩa trong bài thi."
  ]
 }

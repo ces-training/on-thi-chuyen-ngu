@@ -170,7 +170,7 @@
   {
    "format": "dialogue_order",
    "title_vi": "Sắp xếp hội thoại",
-   "intro_vi": "Đề thi chung vào lớp 10 Chuyên Ngoại ngữ có bài 5 câu sắp xếp các lượt lời thành đoạn hội thoại hợp lý. Hôm nay bạn sắp xếp 6 lượt lời; lượt đầu tiên đã cho sẵn.",
+   "intro_vi": "Đề thi chung vào lớp 10 Chuyên Ngoại ngữ có bài 5 câu sắp xếp các lượt lời thành đoạn hội thoại hợp lý. Hôm nay cậu sắp xếp 6 lượt lời; lượt đầu tiên đã cho sẵn.",
    "tip_vi": "Mẹo: tìm cặp hỏi – đáp (câu hỏi đuôi → Yes, I do), và từ nối như Well, Great, Sure để biết lượt nào đi sau lượt nào.",
    "kind": "order",
    "lines": [
@@ -248,7 +248,7 @@
   {
    "format": "dialogue_order",
    "title_vi": "Sắp xếp hội thoại",
-   "intro_vi": "Đề thi chung vào lớp 10 Chuyên Ngoại ngữ có bài sắp xếp các lượt lời thành đoạn hội thoại. Hôm nay bạn xếp 6 lượt lời ngắn; lượt đầu tiên đã cho sẵn.",
+   "intro_vi": "Đề thi chung vào lớp 10 Chuyên Ngoại ngữ có bài sắp xếp các lượt lời thành đoạn hội thoại. Hôm nay cậu xếp 6 lượt lời ngắn; lượt đầu tiên đã cho sẵn.",
    "tip_vi": "Mẹo: tìm câu hỏi rồi tìm câu trả lời của nó. Ví dụ: 'Are you free?' → 'Yes, I am.'; 'What time…?' → 'At seven o'clock.'",
    "kind": "order",
    "lines": [
@@ -326,7 +326,7 @@
   {
    "format": "dialogue_order",
    "title_vi": "Sắp xếp hội thoại",
-   "intro_vi": "Ở đề chung vào 10 Chuyên Ngoại ngữ, bài sắp xếp hội thoại khó thường không có cặp hỏi – đáp rõ ràng; bạn phải dựa vào từ quy chiếu (that, this one, then, in that case).",
+   "intro_vi": "Ở đề chung vào 10 Chuyên Ngoại ngữ, bài sắp xếp hội thoại khó thường không có cặp hỏi – đáp rõ ràng; cậu phải dựa vào từ quy chiếu (that, this one, then, in that case).",
    "tip_vi": "Mẹo: tìm từ trỏ ngược về lượt trước: 'That's exactly why…', 'this one', 'Then…'. Lượt chứa từ đó phải đứng ngay sau lượt nói về điều được nhắc tới.",
    "kind": "order",
    "lines": [
@@ -577,7 +577,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Bạn nghe lời chào mừng ở triển lãm mỹ thuật của trường. Nghe và điền vào ghi chú, mỗi chỗ 1 từ hoặc 1 con số.",
+    "intro_vi": "Cậu nghe lời chào mừng ở triển lãm mỹ thuật của trường. Nghe và điền vào ghi chú, mỗi chỗ 1 từ hoặc 1 con số.",
     "script": "Hello, everyone, and welcome to our school art exhibition. This year, more than 60 students have taken part. You can see paintings, photos and models made from recycled paper. The paintings are in the main hall, and the photos are in Room 5, next to the library. Please don't touch the models, because they break very easily. At four o'clock, the school dance club will give a short performance in the garden. Before you leave, please vote for your favourite picture. Write its number on a card and put the card in the box at the door. The winner will get a set of art books. Thank you, and enjoy the exhibition!",
     "text": "SCHOOL ART EXHIBITION\n• Number of students: more than [1]\n• Photos: in Room [2]\n• Models: made from recycled [3]\n• Dance performance: in the [4]\n• To vote: put your card in the [5] at the door",
     "items": [
@@ -906,7 +906,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Bạn nghe một bài nhận xét trên đài về vở nhạc kịch mới của nhà hát thiếu nhi. Điền ghi chú, mỗi chỗ 1–2 từ hoặc 1 con số.",
+    "intro_vi": "Cậu nghe một bài nhận xét trên đài về vở nhạc kịch mới của nhà hát thiếu nhi. Điền ghi chú, mỗi chỗ 1–2 từ hoặc 1 con số.",
     "script": "Good evening, and welcome to Arts Weekly. This week I went to see Moonlight River, a new musical put on by the City Youth Theatre. The story follows a young girl who travels along a river to find her lost brother. What impressed me most was not the singing, although that was strong, but the stage design. Instead of expensive scenery, the designers used hundreds of paper lanterns to create the river, and the effect was magical. The music was composed by a student who is still at secondary school, which is remarkable when you consider how complex some of the songs are. The cast are all aged between 12 and 18, and they have clearly spent months rehearsing. The only real weakness, in my opinion, is the length. At almost three hours, the show is about 40 minutes too long, and some younger members of the audience were getting restless by the end. Performances start at half past seven every evening except Monday. Tickets cost 150,000 dong, but students pay only 90,000. Overall, I'd strongly recommend it.",
     "text": "REVIEW: MOONLIGHT RIVER\n• What impressed the reviewer most: the stage [1]\n• The river was made from paper [2]\n• Age of the cast: between 12 and [3]\n• Main weakness: the [4] of the show\n• Student ticket: [5] dong",
     "items": [

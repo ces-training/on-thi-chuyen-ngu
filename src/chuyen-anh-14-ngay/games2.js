@@ -93,12 +93,12 @@ Object.assign(G_PLAY,{
       else{const opts=G_SHUF(q.options.map((t,j)=>({t,ok:j===q.answer})));A.stage.innerHTML=`<div class="g-quiz"><p class="g-prog">Hộp ${i+1}</p><p class="g-q">${esc(q.q)}</p><div class="g-opts">${opts.map((o,j)=>`<button type="button" class="g-opt" data-j="${j}">${esc(o.t)}</button>`).join('')}</div><p class="g-fb small"></p></div>`;
         A.stage.querySelector('.g-opts').onclick=e=>{const b=e.target.closest('.g-opt');if(!b)return;const bs=A.stage.querySelectorAll('.g-opt');bs.forEach((x,j)=>{x.disabled=true;if(opts[j].ok)x.classList.add('ok');else if(x===b)x.classList.add('bad')});const ok=opts[+b.dataset.j].ok;A.stage.querySelector('.g-fb').innerHTML=q.explain?esc(q.explain):'';fin(ok)}}};
     draw()},
-  /* Nghe và viết: máy đọc từ, bạn gõ lại cho đúng chính tả */
+  /* Nghe và viết: máy đọc từ, cậu gõ lại cho đúng chính tả */
   dictation(spec,A){const L=spec.cfg||{};const qs=G_SHUF(spec.items.filter(x=>G_WORD(x.w))).slice(0,L.n||6);let k=0,sc=0;
     const next=()=>{if(k>=qs.length)return A.finish(sc,qs.length);const q=qs[k];const w=q.w.toLowerCase();let tries=0;
       A.stage.innerHTML=`<div class="g-dict"><p class="g-prog">Từ ${k+1}/${qs.length}</p><div class="row" style="justify-content:center"><button type="button" class="btn g-say">🔊 Nghe từ</button><button type="button" class="btn ghost g-sayex">Nghe trong câu</button></div>
         ${L.hintMeaning?`<p class="small muted" style="text-align:center">Gợi ý nghĩa: ${esc(q.m)}</p>`:''}${L.firstLetter?`<p class="small muted" style="text-align:center">Bắt đầu bằng "<b>${esc(w[0])}</b>", có ${w.length} chữ cái</p>`:''}
-        <input class="g-type" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Gõ từ bạn nghe được" aria-label="Gõ từ bạn nghe được"><div class="row" style="justify-content:center"><button type="button" class="btn hi g-ok">Kiểm tra</button></div><p class="g-fb small"></p></div>`;
+        <input class="g-type" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Gõ từ cậu nghe được" aria-label="Gõ từ cậu nghe được"><div class="row" style="justify-content:center"><button type="button" class="btn hi g-ok">Kiểm tra</button></div><p class="g-fb small"></p></div>`;
       const say=()=>{if(!gSay(w,.8))A.stage.querySelector('.g-fb').textContent='Máy này không đọc được: nghĩa của từ là "'+q.m+'".'};
       A.stage.querySelector('.g-say').onclick=say;A.stage.querySelector('.g-sayex').onclick=()=>gSay(q.ex||w,.9);setTimeout(say,300);
       const inp=A.stage.querySelector('.g-type');inp.onkeydown=e=>{if(e.key==='Enter')A.stage.querySelector('.g-ok').click()};
@@ -178,5 +178,5 @@ G_PLAY.motion=function(spec,A){const L=spec.cfg||{};const tilt=spec.mode!=='lean
   A.stage.querySelector('.g-cam').onclick=async e=>{const fb=A.stage.querySelector('.g-fb');e.target.disabled=true;fb.textContent='Đang bật camera và tải bộ nhận diện (lần đầu mất vài giây)…';
     try{stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user',width:640,height:480},audio:false});await mpLoad();document.addEventListener('keydown',onKey);view();
       A.stage.querySelector('.g-q').textContent=tilt?'Nhìn thẳng vào camera, giữ đầu thẳng 2 giây để máy làm quen…':'Đứng ở giữa khung hình 2 giây để máy làm quen…';A.stage.querySelector('.g-prog').textContent='Chuẩn bị';loop()}
-    catch(err){stop();e.target.disabled=false;fb.textContent='Không bật được camera hoặc không tải được bộ nhận diện ('+(err&&err.name||'lỗi')+'). Bạn chơi bằng nút bấm nhé.'}};
+    catch(err){stop();e.target.disabled=false;fb.textContent='Không bật được camera hoặc không tải được bộ nhận diện ('+(err&&err.name||'lỗi')+'). Cậu chơi bằng nút bấm nhé.'}};
 };

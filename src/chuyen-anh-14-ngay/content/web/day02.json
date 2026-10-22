@@ -115,7 +115,7 @@
   {
    "format": "synonym",
    "title_vi": "Từ đồng nghĩa",
-   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu chọn từ/cụm từ gần nghĩa nhất với phần VIẾT HOA trong câu. Hôm nay bạn làm 5 câu.",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu chọn từ/cụm từ gần nghĩa nhất với phần VIẾT HOA trong câu. Hôm nay cậu làm 5 câu.",
    "tip_vi": "Đoán nghĩa phần VIẾT HOA qua ngữ cảnh, rồi thay từng đáp án vào câu. Cẩn thận với đáp án mang nghĩa ngược lại.",
    "kind": "mcq",
    "items": [
@@ -179,7 +179,7 @@
   {
    "format": "stress",
    "title_vi": "Trọng âm từ 2 âm tiết",
-   "intro_vi": "Đề chung vào lớp 10 thường có câu chọn từ có trọng âm khác ba từ còn lại. Hôm nay bạn làm 5 câu với từ 2 âm tiết.",
+   "intro_vi": "Đề chung vào lớp 10 thường có câu chọn từ có trọng âm khác ba từ còn lại. Hôm nay cậu làm 5 câu với từ 2 âm tiết.",
    "tip_vi": "Từ 2 âm tiết: danh từ, tính từ thường nhấn âm 1; động từ thường nhấn âm 2. Vẫn có ngoại lệ (practise), nên hãy học thuộc.",
    "kind": "mcq",
    "items": [
@@ -245,7 +245,7 @@
   {
    "format": "synonym",
    "title_vi": "Từ đồng nghĩa",
-   "intro_vi": "Dạng từ đồng nghĩa: trong câu có một từ VIẾT HOA, bạn chọn đáp án có nghĩa GIỐNG nó nhất. Đề Chuyên Ngoại ngữ có 4 câu dạng này. Hôm nay bạn làm 5 câu dễ.",
+   "intro_vi": "Dạng từ đồng nghĩa: trong câu có một từ VIẾT HOA, cậu chọn đáp án có nghĩa GIỐNG nó nhất. Đề Chuyên Ngoại ngữ có 4 câu dạng này. Hôm nay cậu làm 5 câu dễ.",
    "tip_vi": "Đọc cả câu, đoán nghĩa từ VIẾT HOA, rồi tìm đáp án cùng nghĩa. Cẩn thận: thường có một đáp án mang nghĩa NGƯỢC lại.",
    "kind": "mcq",
    "items": [
@@ -309,7 +309,7 @@
   {
    "format": "stress",
    "title_vi": "Trọng âm từ 2 âm tiết",
-   "intro_vi": "Dạng trọng âm: bạn chọn từ có trọng âm (âm được đọc to, mạnh) ở vị trí khác ba từ còn lại. Hôm nay toàn là từ 2 âm tiết quen thuộc.",
+   "intro_vi": "Dạng trọng âm: cậu chọn từ có trọng âm (âm được đọc to, mạnh) ở vị trí khác ba từ còn lại. Hôm nay toàn là từ 2 âm tiết quen thuộc.",
    "tip_vi": "Đọc to từng từ, vỗ tay ở âm đọc mạnh. Nhớ: danh từ, tính từ thường nhấn âm 1; động từ thường nhấn âm 2.",
    "kind": "mcq",
    "items": [
@@ -375,7 +375,7 @@
   {
    "format": "synonym",
    "title_vi": "Từ đồng nghĩa",
-   "intro_vi": "Câu đồng nghĩa phân loại trong đề Chuyên Ngoại ngữ thường dùng từ B2 hoặc cụm động từ, và có 2–3 đáp án na ná nghĩa nhau. Hôm nay bạn luyện 5 câu như vậy.",
+   "intro_vi": "Câu đồng nghĩa phân loại trong đề Chuyên Ngoại ngữ thường dùng từ B2 hoặc cụm động từ, và có 2–3 đáp án na ná nghĩa nhau. Hôm nay cậu luyện 5 câu như vậy.",
    "tip_vi": "Thay từng đáp án vào câu: đáp án đúng phải giữ nguyên nghĩa và hợp cả cấu trúc (giới từ đi kèm). Loại đáp án chỉ 'gần gần' nghĩa.",
    "kind": "mcq",
    "items": [
@@ -439,7 +439,7 @@
   {
    "format": "stress",
    "title_vi": "Trọng âm từ 2 âm tiết",
-   "intro_vi": "Câu trọng âm khó trong đề thường chọn từ 'ngoại lệ': động từ nhấn âm 1, danh từ hay tính từ nhấn âm 2. Hôm nay bạn làm 5 câu có bẫy như vậy.",
+   "intro_vi": "Câu trọng âm khó trong đề thường chọn từ 'ngoại lệ': động từ nhấn âm 1, danh từ hay tính từ nhấn âm 2. Hôm nay cậu làm 5 câu có bẫy như vậy.",
    "tip_vi": "Đừng chỉ dựa vào từ loại. Ghi nhớ ngoại lệ hay gặp (offer, enter, travel, borrow; event, advice, career; polite, unique) và các từ tận cùng /uː/ như cartoon.",
    "kind": "mcq",
    "items": [

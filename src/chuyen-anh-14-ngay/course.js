@@ -1,4 +1,4 @@
-/* ----- Sau 14 ngày: toàn bộ chương trình Chuyên Anh lớp 6–9 ở CES, cá nhân hoá theo dữ liệu của từng bạn -----
+/* ----- Sau 14 ngày: toàn bộ chương trình Chuyên Anh lớp 6–9 ở CES, cá nhân hoá theo dữ liệu của từng cậu -----
    Chèn vào template.html sau school.js bởi build.py.
    Dùng: S, save, $, esc, M, agg, efficiency, LEVELS, ENTRY_H, levelOfHours, CONV, STUDY_FACTOR, DAYS, dayStatus,
          examDateFor, blankSchool, SCORE_MAP, gradeNow, setGrade, classF, go.
@@ -56,17 +56,17 @@ const PHASES=[
   gram:['A2','B1'],
   vocab:'khoảng 2.600 từ, 120 cụm động từ, 150 collocation, 30 thành ngữ, 50 cặp từ hay nhầm',
   tasks:['Hoàn thành câu: phân biệt hai thì, collocation cơ bản','Cấu tạo từ trong câu đơn, đổi 1–2 lần (-tion, -ment, -ness, -able, -ive, -ous; dis-, im-, in-)','Điền từ có gợi ý, đoạn 150–200 từ; điền từ tự do: mạo từ, giới từ, đại từ','Đọc hiểu 300–450 từ, đoán nghĩa từ; nối tiêu đề với đoạn','Nghe 2–3 phút, tốc độ thường','Viết lại câu: bị động, tường thuật, điều kiện loại 1–2, wish','Hội thoại: đề nghị, từ chối lịch sự; phát âm, trọng âm từ 2–3 âm tiết'],
-  writing:'Đoạn văn nêu ý kiến: câu chủ đề, 2–3 lý do, câu kết. 100–150 từ trong 20 phút (bắt đầu từ đoạn 50–70 từ nếu bạn đang dưới A2).',
+  writing:'Đoạn văn nêu ý kiến: câu chủ đề, 2–3 lý do, câu kết. 100–150 từ trong 20 phút (bắt đầu từ đoạn 50–70 từ nếu cậu đang dưới A2).',
   how:'Video ngữ pháp cho mỗi chủ điểm mới (nhóm dưới A2 có thêm video giảng tiếng Việt). Game thẻ nhớ, Săn từ 60 giây, Xưởng ghép từ, Ba rổ âm. In: tập bài của chặng, sổ lỗi sai, sổ từ theo họ từ, bảng tra cứu động từ bất quy tắc.'},
  {k:2,name:'Bắc cầu',band:'B1 → B2',from:375,to:550,gate:'B2',c:'#FFE27A',
   blurb:'Lên đời: đảo ngữ, câu chẻ, viết lại câu kiểu đề chuyên, bài luận 4–5 đoạn. Đích là B2.',
   gram:['B2'],
   vocab:'khoảng 3.800 từ, 250 cụm động từ, 400 collocation, 120 thành ngữ, 100 cặp từ hay nhầm',
   tasks:['Hoàn thành câu: cụm động từ, thành ngữ, phương án gần nghĩa','Cấu tạo từ trong đoạn văn 150–200 từ, đổi 2 lần (care → careless → carelessness)','Điền từ đoạn 200–250 từ; điền từ tự do thêm từ nối, trợ động từ, đại từ quan hệ','Đọc hiểu 500–750 từ: suy luận, từ thay thế; nối thông tin với đoạn, tóm tắt dùng từ trong bài','Nghe 3–4 phút, hai người nói, có bẫy','Viết lại câu: đảo ngữ, câu chẻ, điều kiện loại 3, rút gọn mệnh đề','Đồng nghĩa, trái nghĩa bằng cụm động từ, collocation; trọng âm từ 3–4 âm tiết'],
-  writing:'Bài luận 4–5 đoạn (đồng ý/không đồng ý, ưu–nhược, vấn đề–giải pháp), 200–250 từ trong 40 phút. Mỗi bài chấm hai vòng: máy chấm và gợi ý sửa, bạn viết lại, cô chấm bản viết lại.',
+  writing:'Bài luận 4–5 đoạn (đồng ý/không đồng ý, ưu–nhược, vấn đề–giải pháp), 200–250 từ trong 40 phút. Mỗi bài chấm hai vòng: máy chấm và gợi ý sửa, cậu viết lại, cô chấm bản viết lại.',
   how:'Video cách làm từng dạng bài (Cambridge B2 First) và cách viết bài luận. Game Nối cặp tính giờ, Xếp gạch cho viết lại câu (chỉ lần đầu gặp cấu trúc). In: giấy viết luận có ô đếm từ, bài kiểm tra cuối chặng có phiếu trả lời.'},
  {k:3,name:'Chuyên sâu',band:'B2 → đích',from:550,to:9999,gate:'đích',c:'#BFE6EE',
-  blurb:'Về đích: thành ngữ, cấu tạo từ khó, bài đọc dài, luận có phản biện. Đích là mức của trường bạn chọn.',
+  blurb:'Về đích: thành ngữ, cấu tạo từ khó, bài đọc dài, luận có phản biện. Đích là mức của trường cậu chọn.',
   gram:['C1'],
   vocab:'đến C1: khoảng 5.000 từ, 400 cụm động từ, 700 collocation, 250 thành ngữ, 150 cặp từ hay nhầm',
   tasks:['Hoàn thành câu: thành ngữ ít gặp, sắc thái từ, collocation hẹp','Cấu tạo từ đổi 3 lần, nghĩa phủ định (unforgettable), cặp dễ nhầm (economic/economical)','Điền từ đoạn 250–300 từ; điền từ tự do có cụm cố định, lược bỏ, đảo ngữ','Đọc 750–900 từ: thái độ tác giả, diễn đạt lại ý; tóm tắt bằng từ diễn đạt lại (dạng mới của đề Sở 2024)','Nghe 4–5 phút, nhiều giọng, có tiếng ồn nền như đề Sở','Viết lại câu với từ cho sẵn, dùng thành ngữ, danh từ hoá','Hội thoại có câu nói gián tiếp, thành ngữ; trọng âm từ học thuật 4+ âm tiết'],
@@ -92,14 +92,14 @@ const CLS_OPTS=[[0,'Tự học ở nhà với web'],[1.5,'Thêm lớp CES 1,5 gi
 const fmtD=d=>String(d.getMonth()+1).padStart(2,'0')+'/'+d.getFullYear();
 const WK=7*864e5;
 function packCap(grade){return grade<=7?50:70}
-/* Độ "nặng" của số phút tự học mỗi buổi. Chỉ để gợi ý cách chia buổi, không phán xét bạn.
+/* Độ "nặng" của số phút tự học mỗi buổi. Chỉ để gợi ý cách chia buổi, không phán xét cậu.
    Ngưỡng theo lớp (tài liệu Lộ trình cá nhân hoá): lớp 6–7 nhẹ đến 40 phút, vừa đến 60; lớp 8–9 nhẹ đến 60, vừa đến 90. */
 function loadTag(min,grade){const lo=grade<=7?40:60,hi=grade<=7?60:90;
   if(!isFinite(min))return {c:'',t:'cần thêm giờ trên lớp'};
   return min<=lo?{c:'good',t:'nhẹ nhàng'}:min<=hi?{c:'hi',t:'hơi nhiều'}:{c:'',t:'nên chia 2 hiệp'}}
 const pctTxt=x=>x==null?'—':Math.round(x*100)+'%';
 
-/* Hồ sơ học của từng bạn, lấy từ dữ liệu thật trên trang.
+/* Hồ sơ học của từng cậu, lấy từ dữ liệu thật trên trang.
    stage: none (chưa biết trình độ) · draft (có đầu vào, dưới 3 buổi) · live (từ 3 buổi trở lên)
    pace:  fast (đúng nhiều, nhớ lâu) · steady · careful (sai hoặc quên nhiều)
    habit: regular · patchy · unknown */
@@ -181,63 +181,63 @@ function timelineHTML(R,o){
 }
 /* lời chỉnh lộ trình theo hồ sơ, dùng ở thẻ hồ sơ và ở từng giai đoạn */
 const PACE_TXT={
-  fast:'Bạn đang leo rank khá nhanh: đúng nhiều, nhớ lâu. Vì vậy lộ trình thêm câu thử thách (20% mỗi bài kiểm tra) và mở <b>cửa ra sớm</b>: thấy chắc tay thì làm bài kiểm tra cửa luôn, khỏi chờ hết giai đoạn.',
-  steady:'Nhịp của bạn đang ổn định. Lộ trình giữ công thức chuẩn: 60% bài mới, 30% ôn lại, 10% thử thách nhỏ để não không "ngủ đông".',
-  careful:'Có vài phần còn hơi "trơn tay". Không sao cả, mình đi chậm mà chắc: mỗi giai đoạn có thêm <b>1 chặng củng cố</b>, bài mới ít hơn, ôn nhiều hơn (50% mới, 40% ôn). Câu sai sẽ quay lại cho tới khi bạn thuộc hẳn.'};
-const PACE_SHORT={fast:'Có cửa ra sớm và 20% câu thử thách cho bạn.',steady:'Công thức chuẩn: 60% mới, 30% ôn, 10% thử thách.',careful:'Thêm 1 chặng củng cố ở cuối giai đoạn; 50% mới, 40% ôn.'};
+  fast:'Cậu đang leo rank khá nhanh: đúng nhiều, nhớ lâu. Vì vậy lộ trình thêm câu thử thách (20% mỗi bài kiểm tra) và mở <b>cửa ra sớm</b>: thấy chắc tay thì làm bài kiểm tra cửa luôn, khỏi chờ hết giai đoạn.',
+  steady:'Nhịp của cậu đang ổn định. Lộ trình giữ công thức chuẩn: 60% bài mới, 30% ôn lại, 10% thử thách nhỏ để não không "ngủ đông".',
+  careful:'Có vài phần còn hơi "trơn tay". Không sao cả, tụi mình đi chậm mà chắc: mỗi giai đoạn có thêm <b>1 chặng củng cố</b>, bài mới ít hơn, ôn nhiều hơn (50% mới, 40% ôn). Câu sai sẽ quay lại cho tới khi cậu thuộc hẳn.'};
+const PACE_SHORT={fast:'Có cửa ra sớm và 20% câu thử thách cho cậu.',steady:'Công thức chuẩn: 60% mới, 30% ôn, 10% thử thách.',careful:'Thêm 1 chặng củng cố ở cuối giai đoạn; 50% mới, 40% ôn.'};
 function profileCard(o){
   const P=o.prof;
-  if(P.stage==='draft')return `<div class="card prof"><p class="eyebrow">Lộ trình đang chỉnh theo bạn</p><h3>Bản phác đầu tiên</h3><p>Bản đồ này mới dựa trên bài đầu vào. Làm thêm ${3-P.nWeb} buổi nữa là trang bắt đầu hiểu cách bạn học: đúng bao nhiêu, nhớ lâu cỡ nào, học có đều không. Rồi lộ trình tự chỉnh cho vừa với bạn.</p></div>`;
+  if(P.stage==='draft')return `<div class="card prof"><p class="eyebrow">Lộ trình đang chỉnh theo cậu</p><h3>Bản phác đầu tiên</h3><p>Bản đồ này mới dựa trên bài đầu vào. Làm thêm ${3-P.nWeb} buổi nữa là tớ bắt đầu hiểu cách cậu học: đúng bao nhiêu, nhớ lâu cỡ nào, học có đều không. Rồi lộ trình tự chỉnh cho vừa với cậu.</p></div>`;
   const chips=`<div class="pchips"><span><b>${pctTxt(P.acc)}</b> câu đúng trên web</span>${P.ret!=null?`<span><b>${pctTxt(P.ret)}</b> câu từng sai làm lại đúng</span>`:''}<span><b>${P.A.studyDays}/${P.A.span||P.A.studyDays}</b> ngày có học</span>${P.trend!=null&&Math.abs(P.trend)>=0.03?`<span><b>${P.trend>=0?'+':''}${Math.round(P.trend*100)}%</b> 3 buổi gần nhất</span>`:''}</div>`;
   let extra='';
-  if(P.trend!=null&&P.trend>=0.08)extra+='<p>3 buổi gần đây bạn đúng nhiều hơn hẳn trước đó. Đúng kiểu "lên tay" rồi đấy!</p>';
+  if(P.trend!=null&&P.trend>=0.08)extra+='<p>3 buổi gần đây cậu đúng nhiều hơn hẳn trước đó. Đúng kiểu "lên tay" rồi đấy!</p>';
   if(P.trend!=null&&P.trend<=-0.08)extra+='<p>3 buổi gần đây khó hơn một chút. Bình thường thôi, bài cũng đang khó dần. Thử đọc lại phần giải thích ở các câu sai trước buổi sau nhé.</p>';
   if(P.habit==='regular')extra+=`<p>Chuỗi học đều: ${P.A.studyDays}/${P.A.span} ngày. Giữ lửa nha!</p>`;
-  if(P.habit==='patchy')extra+=`<p>Bạn học ${P.A.studyDays}/${P.A.span} ngày. Mẹo nhỏ: chọn một khung giờ cố định, buổi ngắn 20–35 phút mà đều sẽ "ăn" hơn buổi dài mà ngắt quãng.</p>`;
-  return `<div class="card prof"><p class="eyebrow">Lộ trình đang chỉnh theo bạn</p><h3>${P.pace==='fast'?'Tuyến nhanh':P.pace==='careful'?'Tuyến chậm mà chắc':'Tuyến giữ nhịp'}</h3>${chips}<p>${PACE_TXT[P.pace]}</p>${extra}<p class="small muted">Hồ sơ này cập nhật sau mỗi buổi. Bạn học khác đi thì lộ trình cũng đổi theo.</p></div>`;
+  if(P.habit==='patchy')extra+=`<p>Cậu học ${P.A.studyDays}/${P.A.span} ngày. Mẹo tớ hay dùng: chọn một khung giờ cố định, buổi ngắn 20–35 phút mà đều sẽ "ăn" hơn buổi dài mà ngắt quãng.</p>`;
+  return `<div class="card prof"><p class="eyebrow">Lộ trình đang chỉnh theo cậu</p><h3>${P.pace==='fast'?'Tuyến nhanh':P.pace==='careful'?'Tuyến chậm mà chắc':'Tuyến giữ nhịp'}</h3>${chips}<p>${PACE_TXT[P.pace]}</p>${extra}<p class="small muted">Hồ sơ này cập nhật sau mỗi buổi. Cậu học khác đi thì lộ trình cũng đổi theo.</p></div>`;
 }
 function phaseCard(ph,i,R,o,first){
   const G=gramPlan(ph,o.entryH,o.extraCh);const late=ph.e>R.g4;
   const rows=G.out.map(r=>r.items?`<tr><td>Chặng ${r.a}</td><td>${r.items.map(g=>`${g.n}. ${esc(g.t)}${g.d14?' <span class="pill d14">đã gặp ở buổi '+g.d14+'</span>':''}`).join('<br>')}</td></tr>`:`<tr><td>Chặng ${r.a}${r.b>r.a?'–'+r.b:''}</td><td class="muted">${o.extraCh&&r.b===ph.nCh?'Chặng củng cố: ôn lại cả giai đoạn, gom câu sai, làm lại bài viết':'Luyện sâu: viết lại câu, ôn xoắn ốc, thêm từ theo 12 cụm chủ đề'}</td></tr>`).join('');
   const toName=ph.toH>=o.targetH?lvName(o.targetH):ph.P.gate;
   const ms=MS().find(m=>m.final?ph.toH>=o.targetH:m.h===ph.toH);
-  const msTxt=ms?(()=>{const ok=ph.e<=ms.date;const gap=Math.max(1,Math.round((ph.e-ms.date)/(30.4*864e5)));return `<p class="ms"><span class="pill ${ok?'good':''}">${ok?'đúng mốc':'lệch '+gap+' tháng'}</span> Mốc gợi ý của CES: <b>${esc(ms.target)}</b> trước ${ms.date.toLocaleDateString('vi-VN')} (${esc(ms.label.toLowerCase())}). Dự kiến của bạn: ${fmtD(ph.e)}.${ok?' Đẹp!':ms.final?' Muốn về sớm hơn, xem các cách ở phần "Bạn đang đi thế nào" nhé.':' Lệch mốc giữa đường một chút không sao, miễn kịp mốc chốt trường.'}</p>`})():'';
+  const msTxt=ms?(()=>{const ok=ph.e<=ms.date;const gap=Math.max(1,Math.round((ph.e-ms.date)/(30.4*864e5)));return `<p class="ms"><span class="pill ${ok?'good':''}">${ok?'đúng mốc':'lệch '+gap+' tháng'}</span> Mốc gợi ý của CES: <b>${esc(ms.target)}</b> trước ${ms.date.toLocaleDateString('vi-VN')} (${esc(ms.label.toLowerCase())}). Dự kiến của cậu: ${fmtD(ph.e)}.${ok?' Đẹp!':ms.final?' Muốn về sớm hơn, xem các cách ở phần "Cậu đang đi thế nào" nhé.':' Lệch mốc giữa đường một chút không sao, miễn kịp mốc chốt trường.'}</p>`})():'';
   return `<details class="card ph" ${first?'open':''} style="--pc:${ph.P.c}">
    <summary><span class="ph-n">GĐ${ph.P.k}</span><span class="ph-t"><b>${esc(ph.P.name)}</b> · ${esc(ph.fromH===o.entryH&&o.lv?(LEVELS.find(l=>l.k===o.lv)||{name:lvName(ph.fromH)}).name:lvName(ph.fromH))} → ${esc(toName)}<br><span class="small muted">${fmtD(ph.s)} – ${fmtD(ph.e)} · khoảng ${isFinite(ph.nCh)?ph.nCh:'?'} chặng</span></span>${late?'<span class="pill">sang mùa luyện đề</span>':''}</summary>
    <div class="ph-b">
-    <p>Đích của giai đoạn: <b>${esc(toName)}</b>. Qua bài kiểm tra cửa ra là mở khoá giai đoạn sau. Chưa qua thì có thêm một chặng ôn đúng phần bạn còn lấn cấn.</p>${msTxt}
-    ${o.prof.stage==='live'?`<p class="ms"><b>Chỉnh riêng cho bạn:</b> ${PACE_SHORT[o.prof.pace]}</p>`:''}
+    <p>Đích của giai đoạn: <b>${esc(toName)}</b>. Qua bài kiểm tra cửa ra là mở khoá giai đoạn sau. Chưa qua thì có thêm một chặng ôn đúng phần cậu còn lấn cấn.</p>${msTxt}
+    ${o.prof.stage==='live'?`<p class="ms"><b>Chỉnh riêng cho cậu:</b> ${PACE_SHORT[o.prof.pace]}</p>`:''}
     <h4>Ngữ pháp mới, rải theo chặng</h4>
-    ${G.reviewA2?'<p class="small muted">10 chủ điểm mốc A2 bạn đã có nền, nên không học lại thành bài mới; chúng quay lại trong buổi ôn và bài viết lại câu.</p>':''}
+    ${G.reviewA2?'<p class="small muted">10 chủ điểm mốc A2 cậu đã có nền, nên không học lại thành bài mới; chúng quay lại trong buổi ôn và bài viết lại câu.</p>':''}
     <div class="tbl-wrap"><table class="gp"><tbody>${rows}</tbody></table></div>
-    <h4>Kho từ khi xong giai đoạn</h4><p>${esc(ph.P.vocab)}. Học theo họ từ và theo cụm; mỗi buổi là một trong 12 cụm chủ đề, nên mỗi chặng bạn đi hết một vòng 12 cụm, từ khó dần.</p>
+    <h4>Kho từ khi xong giai đoạn</h4><p>${esc(ph.P.vocab)}. Học theo họ từ và theo cụm; mỗi buổi là một trong 12 cụm chủ đề, nên mỗi chặng cậu đi hết một vòng 12 cụm, từ khó dần.</p>
     <h4>Dạng bài thi ở level này</h4><ul>${ph.P.tasks.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
     <h4>Viết</h4><p>${esc(ph.P.writing)}</p>
     <h4>Học bằng gì</h4><p>${esc(ph.P.how)}</p>
    </div></details>`;
 }
-function lockedPhase(P){return `<div class="card ph locked" style="--pc:${P.c}"><div class="ph-s"><span class="ph-n">GĐ${P.k}</span><span class="ph-t"><b>${esc(P.name)}</b> · ${esc(P.band)}<br><span class="small">${esc(P.blurb)}</span><br><span class="small muted">${doodle('lock','lk',20)} Bạn có đi qua giai đoạn này không, mất bao lâu: mở khoá sau bài đầu vào</span></span></div></div>`}
-function chotCard(R){return `<div class="card ph chot"><div class="ph-s"><span class="ph-n">Chốt<br>trường</span><span class="ph-t"><b>Mốc chốt trường</b> · ${R.g4.toLocaleDateString('vi-VN')}${(()=>{const t=tetDate(R.g4.getFullYear());return t?`, trước Tết (${t.toLocaleDateString('vi-VN')}) ít nhất một tuần`:''})()}<br><span class="small muted">Bạn làm bài thi thử trọn bộ đề Sở và đề Chuyên Ngoại ngữ ở CES. Cô, bạn và bố mẹ cùng nhìn điểm thi thử để chọn trường và nguyện vọng. Từ đây đích đã rõ, năm lớp 9 nhẹ đầu hơn hẳn.</span></span></div></div>`}
+function lockedPhase(P){return `<div class="card ph locked" style="--pc:${P.c}"><div class="ph-s"><span class="ph-n">GĐ${P.k}</span><span class="ph-t"><b>${esc(P.name)}</b> · ${esc(P.band)}<br><span class="small">${esc(P.blurb)}</span><br><span class="small muted">${doodle('lock','lk',20)} Cậu có đi qua giai đoạn này không, mất bao lâu: mở khoá sau bài đầu vào</span></span></div></div>`}
+function chotCard(R){return `<div class="card ph chot"><div class="ph-s"><span class="ph-n">Chốt<br>trường</span><span class="ph-t"><b>Mốc chốt trường</b> · ${R.g4.toLocaleDateString('vi-VN')}${(()=>{const t=tetDate(R.g4.getFullYear());return t?`, trước Tết (${t.toLocaleDateString('vi-VN')}) ít nhất một tuần`:''})()}<br><span class="small muted">Cậu làm bài thi thử trọn bộ đề Sở và đề Chuyên Ngoại ngữ ở CES. Cô, cậu và bố mẹ cùng nhìn điểm thi thử để chọn trường và nguyện vọng. Từ đây đích đã rõ, năm lớp 9 nhẹ đầu hơn hẳn.</span></span></div></div>`}
 function examCard(R){return `<details class="card ph" style="--pc:#FFD23F"><summary><span class="ph-n">GĐ4</span><span class="ph-t"><b>Luyện đề</b> · ${fmtD(R.g4>R.start?R.g4:R.start)} – ${fmtD(R.exam)}<br><span class="small muted">khoảng ${R.g4Ch} chặng, ai cũng đi qua, dù đang ở level nào</span></span></summary>
-     <div class="ph-b"><p>Không học chủ điểm mới. Lịch nhẹ hơn các giai đoạn trước để bạn còn sức cho thi học kỳ và Toán, Văn; thời gian tiếng Anh dành cho làm đề, chữa đề và giữ phong độ.</p><ul>${EXAM_PHASE.tasks.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><p>${esc(EXAM_PHASE.speed)}</p><p>${esc(EXAM_PHASE.how)}</p></div></details>`}
+     <div class="ph-b"><p>Không học chủ điểm mới. Lịch nhẹ hơn các giai đoạn trước để cậu còn sức cho thi học kỳ và Toán, Văn; thời gian tiếng Anh dành cho làm đề, chữa đề và giữ phong độ.</p><ul>${EXAM_PHASE.tasks.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><p>${esc(EXAM_PHASE.speed)}</p><p>${esc(EXAM_PHASE.how)}</p></div></details>`}
 function howCard(){return `<details class="card"><summary>Trang tính thế nào</summary><div class="small">
      <p>Giờ học chuẩn theo khung Cambridge: A2 khoảng 190 giờ, B1 375, B2 550, C1 750. Mức cần của mỗi trường lấy từ điểm Anh chuyên cần để có khoảng 80% khả năng đỗ khi Toán 8, Văn 8, đổi ra giờ học bằng cùng thang với tab Chọn trường.</p>
-     <p>Mỗi giờ tự học tính bằng 0,6 giờ học chuẩn, nhân hệ số tốc độ đo từ chính các buổi bạn đã làm; mỗi giờ học trên lớp ở CES tính bằng 0,8 giờ; trừ 15% thời gian cho nghỉ lễ, thi học kỳ, ốm.</p>
-     <p>Hồ sơ học cập nhật sau mỗi buổi: tỉ lệ câu đúng, tỉ lệ câu từng sai làm lại đúng, số ngày có học. Đúng nhiều và nhớ lâu thì có thêm câu thử thách và cửa ra sớm; sai hoặc quên nhiều thì có thêm chặng củng cố; học ngắt quãng thì trang gợi ý buổi ngắn mà đều.</p>
-     <p>Mốc chốt trường là 1/2 năm lớp 9, hoặc một tuần trước Tết nếu Tết đến sớm hơn. Bạn vào ở giai đoạn nào thì bắt đầu từ giai đoạn đó, không học lại giai đoạn trước.</p>
-     <p>Mọi con số là ước tính để định hướng, không phải cam kết, và sẽ đổi khi bạn học.</p></div></details>`}
+     <p>Mỗi giờ tự học tính bằng 0,6 giờ học chuẩn, nhân hệ số tốc độ đo từ chính các buổi cậu đã làm; mỗi giờ học trên lớp ở CES tính bằng 0,8 giờ; trừ 15% thời gian cho nghỉ lễ, thi học kỳ, ốm.</p>
+     <p>Hồ sơ học cập nhật sau mỗi buổi: tỉ lệ câu đúng, tỉ lệ câu từng sai làm lại đúng, số ngày có học. Đúng nhiều và nhớ lâu thì có thêm câu thử thách và cửa ra sớm; sai hoặc quên nhiều thì có thêm chặng củng cố; học ngắt quãng thì tớ gợi ý buổi ngắn mà đều.</p>
+     <p>Mốc chốt trường là 1/2 năm lớp 9, hoặc một tuần trước Tết nếu Tết đến sớm hơn. Cậu vào ở giai đoạn nào thì bắt đầu từ giai đoạn đó, không học lại giai đoạn trước.</p>
+     <p>Mọi con số là ước tính để định hướng, không phải cam kết, và sẽ đổi khi cậu học.</p></div></details>`}
 function vCourse(){
   const o0=courseInputs();
-  const lvOpts=[['',o0.tested?'Theo bài đầu vào ('+LEVELS.find(l=>l.k===o0.tested.level).name+')':'Chưa có, mình làm bài đầu vào']].concat(LEVELS.filter(l=>l.k!=='C1').map(l=>[l.k,l.name]));
+  const lvOpts=[['',o0.tested?'Theo bài đầu vào ('+LEVELS.find(l=>l.k===o0.tested.level).name+')':'Chưa có, cậu làm bài đầu vào trước nhé']].concat(LEVELS.filter(l=>l.k!=='C1').map(l=>[l.k,l.name]));
   M().innerHTML=`<section class="view course">
-  <div><p class="eyebrow">Sau 14 ngày thì sao?</p><h2>Bản đồ chuyên Anh của bạn</h2>
-  <p class="lead">14 ngày này là chặng "dò đường". Sau đó bạn đi tiếp qua các giai đoạn bên dưới, mỗi giai đoạn gồm nhiều chặng 14 buổi y như bộ bạn đang học. Bản đồ không đóng khung: bạn học thế nào, nó đổi theo thế ấy.</p></div>
-  <div class="card"><h3>Thông tin của bạn</h3>
+  <div><p class="eyebrow">Sau 14 ngày thì sao?</p><h2>Bản đồ chuyên Anh của cậu</h2>
+  <p class="lead">14 ngày này là chặng "dò đường". Sau đó cậu đi tiếp qua các giai đoạn bên dưới, mỗi giai đoạn gồm nhiều chặng 14 buổi y như bộ cậu đang học. Bản đồ không đóng khung: cậu học thế nào, nó đổi theo thế ấy.</p></div>
+  <div class="card"><h3>Thông tin của cậu</h3>
    <div class="sgrid">
-    <label class="fld">Bạn đang học lớp<select id="cGrade">${[6,7,8,9].map(g=>`<option value="${g}" ${o0.grade===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label>
-    <label class="fld">Trường bạn nhắm<select id="cGoal">${GOALS.map(g=>`<option value="${g.k}" ${S.course.goal===g.k?'selected':''}>${esc(g.name)} (cần khoảng ${esc(lvName(goalH(g.k)))})</option>`).join('')}</select></label>
+    <label class="fld">Cậu đang học lớp<select id="cGrade">${[6,7,8,9].map(g=>`<option value="${g}" ${o0.grade===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label>
+    <label class="fld">Trường cậu nhắm<select id="cGoal">${GOALS.map(g=>`<option value="${g.k}" ${S.course.goal===g.k?'selected':''}>${esc(g.name)} (cần khoảng ${esc(lvName(goalH(g.k)))})</option>`).join('')}</select></label>
     <label class="fld">Học trên lớp ở CES<select id="cCls">${CLS_OPTS.map(([v,n])=>`<option value="${v}" ${o0.cls===v?'selected':''}>${esc(n)}</option>`).join('')}</select></label>
-    <label class="fld">Trình độ của bạn<select id="cLv">${lvOpts.map(([k,n])=>`<option value="${k}" ${(S.course.lv||'')===k?'selected':''}>${esc(n)}</option>`).join('')}</select><span class="hint">Nên để theo bài đầu vào. Chỉ chọn tay khi cô đã kiểm tra trình độ của bạn.</span></label>
+    <label class="fld">Trình độ của cậu<select id="cLv">${lvOpts.map(([k,n])=>`<option value="${k}" ${(S.course.lv||'')===k?'selected':''}>${esc(n)}</option>`).join('')}</select><span class="hint">Nên để theo bài đầu vào. Chỉ chọn tay khi cô đã kiểm tra trình độ của cậu.</span></label>
    </div>
    <div class="sim">
     <div class="slider"><label for="cMin">Phút tự học mỗi buổi (giấy + web) <output id="cMinO">${S.plan.min}</output></label><input type="range" id="cMin" min="15" max="120" step="5" value="${S.plan.min}"></div>
@@ -250,13 +250,13 @@ function vCourse(){
   const draw=()=>{
     const o=courseInputs();const P=o.prof;const nd=DAYS.filter(d=>dayStatus(d.day)==='done').length;
     const exam=examDateFor(o.grade),g4=chotDate(o.grade),weeksLeft=Math.round((exam-Date.now())/WK),wChot=Math.max(0,Math.round((g4-Date.now())/WK));
-    const clock=`<div class="card"><h3>Đồng hồ của bạn</h3><div class="kpis"><div><b>${weeksLeft}</b><span>tuần đến kỳ thi (${exam.toLocaleDateString('vi-VN')})</span></div><div><b>${wChot}</b><span>tuần đến mốc chốt trường (${fmtD(g4)})</span></div><div><b>${nd}/14</b><span>buổi dò đường đã xong</span></div></div>`;
+    const clock=`<div class="card"><h3>Đồng hồ của cậu</h3><div class="kpis"><div><b>${weeksLeft}</b><span>tuần đến kỳ thi (${exam.toLocaleDateString('vi-VN')})</span></div><div><b>${wChot}</b><span>tuần đến mốc chốt trường (${fmtD(g4)})</span></div><div><b>${nd}/14</b><span>buổi dò đường đã xong</span></div></div>`;
     if(P.stage==='none'){
       const R0={g4,exam,start:new Date(),g4Ch:Math.max(0,Math.floor((exam-g4)/WK*o.dpw*STUDY_FACTOR/14))};
-      $('#cOut').innerHTML=clock+`<p class="small muted">Đồng hồ chỉ phụ thuộc vào lớp bạn đang học. Phần còn lại phụ thuộc vào chính bạn.</p></div>
-      <div class="card lockbox">${doodle('lock','lk',56)}<div><p class="eyebrow">Còn khoá</p><h3>Lộ trình của riêng bạn</h3><p>Mình chưa biết bạn đang ở đâu, nên chưa vẽ đường vội. Làm bài đầu vào 30 câu (khoảng 25 phút) để mở khoá: bạn đang ở level nào, chặng tiếp theo học gì, mất bao lâu tới trường bạn nhắm, và vài cách đi nhanh hơn nếu bạn muốn.</p><div class="row"><button class="btn hi" id="cDiag">Làm bài đầu vào</button></div></div></div>
+      $('#cOut').innerHTML=clock+`<p class="small muted">Đồng hồ chỉ phụ thuộc vào lớp cậu đang học. Phần còn lại phụ thuộc vào chính cậu.</p></div>
+      <div class="card lockbox">${doodle('lock','lk',56)}<div><p class="eyebrow">Còn khoá</p><h3>Lộ trình của riêng cậu</h3><p>Tớ chưa biết cậu đang ở đâu, nên chưa dám vẽ đường vội. Làm bài đầu vào 30 câu (khoảng 25 phút) để mở khoá: cậu đang ở level nào, chặng tiếp theo học gì, mất bao lâu tới trường cậu nhắm, và vài cách đi nhanh hơn nếu cậu muốn.</p><div class="row"><button class="btn hi" id="cDiag">Làm bài đầu vào</button></div></div></div>
       <h3 class="sec">Các giai đoạn trên bản đồ</h3>
-      <div class="card ph done0"><div class="ph-s"><span class="ph-n">GĐ0</span><span class="ph-t"><b>Dò đường 14 ngày</b> · bạn đang ở đây (${nd}/14 buổi)<br><span class="small muted">Trang đo level, độ nhớ, nhịp học và dạng bài bạn thích. Hết 14 ngày, cô gửi bạn và bố mẹ một lộ trình vừa với bạn.</span></span></div></div>
+      <div class="card ph done0"><div class="ph-s"><span class="ph-n">GĐ0</span><span class="ph-t"><b>Dò đường 14 ngày</b> · cậu đang ở đây (${nd}/14 buổi)<br><span class="small muted">Tớ đo level, độ nhớ, nhịp học và dạng bài cậu thích. Hết 14 ngày, cô gửi cậu và bố mẹ một lộ trình vừa với cậu.</span></span></div></div>
       ${PHASES.map(lockedPhase).join('')}${chotCard(R0)}${examCard(R0)}${howCard()}`;
       const b=$('#cDiag');if(b)b.onclick=()=>go('diag');return;
     }
@@ -268,28 +268,28 @@ function vCourse(){
     const headByLoad=LD.t==='nhẹ nhàng'?'Nhích thêm vài phút là về đúng hẹn':LD.t==='hơi nhiều'?'Thêm chút nhịp là kịp':'Đích này cần thêm vài combo nữa';
     const alt=GOALS.filter(g=>g.k!==o.goal.k&&goalH(g.k)<o.targetH&&goalH(g.k)<=R.hChot).sort((a,b)=>goalH(b.k)-goalH(a.k))[0];
     let head,msg,vc;
-    if(R.status==='done'){vc='good';head=`Bạn đã chạm mức của ${gName}`;msg=`Ngầu đấy! Từ giờ có hai hướng: nhắm một trường cao hơn cho vui, hoặc giữ phong độ và vào luyện đề sớm.`}
-    else if(R.status==='good'){vc='good';head='Đúng đường rồi, cứ thế mà đi!';msg=`Với ${o.min} phút × ${o.dpw} buổi/tuần${o.cls?` và ${String(o.cls).replace('.',',')} giờ trên lớp`:''}, bạn dự kiến chạm mức của ${gName} (${tgt}) khoảng <b>${fmtD(R.end)}</b>, trước mốc chốt trường ${fmtD(R.g4)}. Tức là năm lớp 9 chỉ việc luyện đề, khỏi chạy nước rút.`}
-    else if(R.status==='warn'){vc='warn';head=headByLoad;msg=`Theo nhịp hiện tại, bạn chạm mức của ${gName} khoảng ${fmtD(R.end)}, muộn hơn mốc chốt ${fmtD(R.g4)} một chút. Mình không muốn bạn phải chạy deadline năm lớp 9, nên bên dưới là vài cách về sớm hơn. Chọn cách nào hợp với bạn nhất nhé.`}
-    else{vc='warn';head=headByLoad;msg=`Với nhịp hiện tại, tới mốc chốt bạn đã lên khoảng <b>${esc(lvName(R.hChot))}</b> từ ${esc(cur)} bây giờ: một bước tiến lớn rồi. Để chạm ${esc(tgt)} của ${gName}, bạn có thể ghép thêm giờ học trên lớp, nhích số phút mỗi buổi${alt?`, hoặc đặt một trạm dừng gần hơn trước (ví dụ ${alt.name}) rồi nâng đích sau mỗi chặng`:', hoặc đặt từng trạm dừng nhỏ và nâng đích sau mỗi chặng'}. Tốc độ thật của bạn có khi nhanh hơn dự đoán đấy.`}
-    const reqTxt=R.status==='done'?'':isFinite(reqR)?(()=>{const L=loadTag(reqR,o.grade);return `Để chạm ${esc(tgt)} ${R.before?'trước mốc chốt trường':'trước ngày thi'}, bạn cần khoảng <b>${reqR} phút tự học mỗi buổi</b>, ${o.dpw} buổi/tuần${o.cls?', cộng giờ trên lớp':''}. ${L.t==='nhẹ nhàng'?'Nhẹ nhàng thôi.':L.t==='hơi nhiều'?'Hơi nhiều một chút, giữ lịch cố định là được.':`Con số này khá lớn cho một buổi, nên ${reqR>cap?'ghép thêm giờ trên lớp':'chia thành hai hiệp, nghỉ giữa 10 phút'} sẽ dễ thở hơn.`}`})():`Để chạm ${esc(tgt)} kịp mốc, phần tự học sẽ cần một "trợ thủ": giờ học trên lớp ở CES.`;
+    if(R.status==='done'){vc='good';head=`Cậu đã chạm mức của ${gName}`;msg=`Ngầu đấy! Từ giờ có hai hướng: nhắm một trường cao hơn cho vui, hoặc giữ phong độ và vào luyện đề sớm.`}
+    else if(R.status==='good'){vc='good';head='Đúng đường rồi, cứ thế mà đi!';msg=`Với ${o.min} phút × ${o.dpw} buổi/tuần${o.cls?` và ${String(o.cls).replace('.',',')} giờ trên lớp`:''}, cậu dự kiến chạm mức của ${gName} (${tgt}) khoảng <b>${fmtD(R.end)}</b>, trước mốc chốt trường ${fmtD(R.g4)}. Tức là năm lớp 9 chỉ việc luyện đề, khỏi chạy nước rút.`}
+    else if(R.status==='warn'){vc='warn';head=headByLoad;msg=`Theo nhịp hiện tại, cậu chạm mức của ${gName} khoảng ${fmtD(R.end)}, muộn hơn mốc chốt ${fmtD(R.g4)} một chút. Tớ không muốn cậu phải chạy deadline năm lớp 9, nên bên dưới là vài cách về sớm hơn. Chọn cách nào hợp với cậu nhất nhé.`}
+    else{vc='warn';head=headByLoad;msg=`Với nhịp hiện tại, tới mốc chốt cậu đã lên khoảng <b>${esc(lvName(R.hChot))}</b> từ ${esc(cur)} bây giờ: một bước tiến lớn rồi. Để chạm ${esc(tgt)} của ${gName}, cậu có thể ghép thêm giờ học trên lớp, nhích số phút mỗi buổi${alt?`, hoặc đặt một trạm dừng gần hơn trước (ví dụ ${alt.name}) rồi nâng đích sau mỗi chặng`:', hoặc đặt từng trạm dừng nhỏ và nâng đích sau mỗi chặng'}. Tốc độ thật của cậu có khi nhanh hơn dự đoán đấy.`}
+    const reqTxt=R.status==='done'?'':isFinite(reqR)?(()=>{const L=loadTag(reqR,o.grade);return `Để chạm ${esc(tgt)} ${R.before?'trước mốc chốt trường':'trước ngày thi'}, cậu cần khoảng <b>${reqR} phút tự học mỗi buổi</b>, ${o.dpw} buổi/tuần${o.cls?', cộng giờ trên lớp':''}. ${L.t==='nhẹ nhàng'?'Nhẹ nhàng thôi.':L.t==='hơi nhiều'?'Hơi nhiều một chút, giữ lịch cố định là được.':`Con số này khá lớn cho một buổi, nên ${reqR>cap?'ghép thêm giờ trên lớp':'chia thành hai hiệp, nghỉ giữa 10 phút'} sẽ dễ thở hơn.`}`})():`Để chạm ${esc(tgt)} kịp mốc, phần tự học sẽ cần một "trợ thủ": giờ học trên lớp ở CES.`;
     const opts=CLS_OPTS.map(([c,n])=>{const r=courseCalc(Object.assign({},o,{cls:c}));const m=Math.ceil(r.req/5)*5;const L=loadTag(m,o.grade);return `<tr${c===o.cls?' class="cur"':''}><td>${esc(n)}</td><td>${r.status==='done'?'—':isFinite(m)?m+' phút':'—'}<br><span class="pill ${r.status==='done'?'good':L.c}">${r.status==='done'?'đã chạm mức':L.t}</span></td><td>${esc(lvName(r.hChot))}</td></tr>`}).join('');
     const first=R.phases[0];
-    const firstBox=first?`<div class="card first"><p class="eyebrow">Chặng tiếp theo của bạn</p><h3>GĐ${first.P.k} · ${esc(first.P.name)}, bắt đầu khoảng ${R.start.toLocaleDateString('vi-VN')}</h3>
+    const firstBox=first?`<div class="card first"><p class="eyebrow">Chặng tiếp theo của cậu</p><h3>GĐ${first.P.k} · ${esc(first.P.name)}, bắt đầu khoảng ${R.start.toLocaleDateString('vi-VN')}</h3>
       <p>${(()=>{const g=gramPlan(first,o.entryH,o.extraCh).out.find(r=>r.items);return g?'Ngữ pháp mở màn: '+g.items.map(x=>esc(x.t)).join('; ')+'.':''})()} Mười hai buổi học là 12 cụm chủ đề: ${CLUSTERS.map(esc).join(', ')}. Buổi 7 là trạm ôn, buổi 14 là "trùm cuối" của chặng.</p>
       <p class="small muted">Một chặng mất khoảng ${(Math.round(R.chW*2)/2).toLocaleString('vi-VN')} tuần với ${o.dpw} buổi/tuần (đã trừ ngày nghỉ, thi học kỳ).</p></div>`:'';
     $('#cOut').innerHTML=clock.replace('</div></div>','<div><b>'+nAll+'+'+R.g4Ch+'</b><span>chặng lên level + chặng luyện đề</span></div></div>')+`
      ${timelineHTML(R,o)}
-     <p class="small muted">Dòng trên: các giai đoạn lên level theo tốc độ dự kiến của bạn. Dòng dưới: mùa luyện đề, từ mốc chốt trường đến ngày thi. Ngày tháng được tính lại sau mỗi chặng.</p></div>
-    <div class="verdict ${vc}"><p class="eyebrow">Bạn đang đi thế nào</p><h3>${esc(head)}</h3><p>${msg}</p>${reqTxt?`<p>${reqTxt}</p>`:''}
-     ${R.status!=='done'?`<h4>Các cách đi tới đích</h4><div class="tbl-wrap"><table class="copt"><thead><tr><th>Cách học</th><th>Phút tự học mỗi buổi</th><th>Bạn ở đâu vào mốc chốt (với số phút đang chọn)</th></tr></thead><tbody>${opts}</tbody></table></div>`:''}
-     ${o.grade===9?'<p class="small"><b>Lớp 9 rồi?</b> Mình chơi chiến thuật khác: chốt trường theo điểm thi thử gần nhất, rồi dồn sức vào luyện đề. Phần ngữ pháp, từ vựng còn thiếu học xen trong các buổi chữa đề.</p>':''}
-     ${P.stage==='draft'?'<p class="small">Đây là bản phác dựa trên bài đầu vào. Sau vài buổi, tốc độ thật của bạn sẽ thay vào và bản đồ chỉnh lại.</p>':''}</div>
+     <p class="small muted">Dòng trên: các giai đoạn lên level theo tốc độ dự kiến của cậu. Dòng dưới: mùa luyện đề, từ mốc chốt trường đến ngày thi. Ngày tháng được tính lại sau mỗi chặng.</p></div>
+    <div class="verdict ${vc}"><p class="eyebrow">Cậu đang đi thế nào</p><h3>${esc(head)}</h3><p>${msg}</p>${reqTxt?`<p>${reqTxt}</p>`:''}
+     ${R.status!=='done'?`<h4>Các cách đi tới đích</h4><div class="tbl-wrap"><table class="copt"><thead><tr><th>Cách học</th><th>Phút tự học mỗi buổi</th><th>Cậu ở đâu vào mốc chốt (với số phút đang chọn)</th></tr></thead><tbody>${opts}</tbody></table></div>`:''}
+     ${o.grade===9?'<p class="small"><b>Lớp 9 rồi?</b> Tụi mình chơi chiến thuật khác: chốt trường theo điểm thi thử gần nhất, rồi dồn sức vào luyện đề. Phần ngữ pháp, từ vựng còn thiếu học xen trong các buổi chữa đề.</p>':''}
+     ${P.stage==='draft'?'<p class="small">Đây là bản phác dựa trên bài đầu vào. Sau vài buổi, tốc độ thật của cậu sẽ thay vào và bản đồ chỉnh lại.</p>':''}</div>
     ${profileCard(o)}
     ${firstBox}
-    <h3 class="sec">Các giai đoạn trên bản đồ của bạn</h3>
-    <div class="card ph done0"><div class="ph-s"><span class="ph-n">GĐ0</span><span class="ph-t"><b>Dò đường 14 ngày</b> · bạn đang ở đây (${nd}/14 buổi)<br><span class="small muted">Trang đo level, độ nhớ, nhịp học và dạng bài bạn thích. Hết 14 ngày, cô gửi bạn và bố mẹ một lộ trình vừa với bạn.</span></span></div></div>
-    ${R.phases.map((p,i)=>phaseCard(p,i,R,o,i===0)).join('')||`<div class="card"><p>Bạn đã ở mức của ${gName}, nên không cần giai đoạn lên level nào nữa. Chọn trường cao hơn, hoặc vào luyện đề sớm đều được.</p></div>`}
+    <h3 class="sec">Các giai đoạn trên bản đồ của cậu</h3>
+    <div class="card ph done0"><div class="ph-s"><span class="ph-n">GĐ0</span><span class="ph-t"><b>Dò đường 14 ngày</b> · cậu đang ở đây (${nd}/14 buổi)<br><span class="small muted">Tớ đo level, độ nhớ, nhịp học và dạng bài cậu thích. Hết 14 ngày, cô gửi cậu và bố mẹ một lộ trình vừa với cậu.</span></span></div></div>
+    ${R.phases.map((p,i)=>phaseCard(p,i,R,o,i===0)).join('')||`<div class="card"><p>Cậu đã ở mức của ${gName}, nên không cần giai đoạn lên level nào nữa. Chọn trường cao hơn, hoặc vào luyện đề sớm đều được.</p></div>`}
     ${chotCard(R)}${examCard(R)}${howCard()}`;
   };
   draw();

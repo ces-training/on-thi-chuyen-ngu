@@ -110,7 +110,7 @@
   {
    "format": "synonym",
    "title_vi": "Từ đồng nghĩa",
-   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu tìm từ đồng nghĩa: mỗi câu có một từ hoặc cụm từ VIẾT HOA, bạn chọn A, B, C hoặc D có nghĩa gần nhất.",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu tìm từ đồng nghĩa: mỗi câu có một từ hoặc cụm từ VIẾT HOA, cậu chọn A, B, C hoặc D có nghĩa gần nhất.",
    "tip_vi": "Mẹo: thay từng đáp án vào chỗ từ viết hoa; đáp án đúng giữ nguyên nghĩa câu. Cẩn thận với từ chỉ liên quan chủ đề nhưng khác nghĩa.",
    "kind": "mcq",
    "items": [
@@ -217,7 +217,7 @@
   {
    "format": "synonym",
    "title_vi": "Từ đồng nghĩa",
-   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu tìm từ đồng nghĩa. Mỗi câu có một từ VIẾT HOA. Bạn chọn A, B, C hoặc D có nghĩa giống nhất với từ đó.",
+   "intro_vi": "Đề Chuyên Ngoại ngữ có 4 câu tìm từ đồng nghĩa. Mỗi câu có một từ VIẾT HOA. Cậu chọn A, B, C hoặc D có nghĩa giống nhất với từ đó.",
    "tip_vi": "Mẹo: đọc cả câu để đoán nghĩa từ viết hoa, rồi thay từng đáp án vào chỗ đó. Đáp án nào làm câu vẫn giữ nguyên nghĩa là đúng.",
    "kind": "mcq",
    "items": [
@@ -281,7 +281,7 @@
   {
    "format": "open_cloze",
    "title_vi": "Điền từ vào đoạn văn (không có lựa chọn)",
-   "intro_vi": "Dạng này có một đoạn văn với các chỗ trống và không cho sẵn lựa chọn. Bạn tự điền MỘT từ, thường là a/an/the, much/many hoặc giới từ như in, on, at, of.",
+   "intro_vi": "Dạng này có một đoạn văn với các chỗ trống và không cho sẵn lựa chọn. Cậu tự điền MỘT từ, thường là a/an/the, much/many hoặc giới từ như in, on, at, of.",
    "tip_vi": "Mẹo: nhìn từ ngay sau chỗ trống: danh từ số ít, số nhiều hay không đếm được? Vật đã được nhắc đến trước đó thì dùng 'the'.",
    "kind": "gap_text",
    "text": "Hi! I'm Nam and I live in [1] small town near Huế. Every Sunday morning, I go to the market with my mum. She buys a lot [2] vegetables, some fish and a bag of rice. Last Sunday, I bought [3] apple and a banana with my pocket money. Then Mum asked me, \"How [4] money have you got left?\" I had only two thousand dong! When we got home, I gave [5] apple to my little sister and ate the banana myself.",
@@ -306,7 +306,7 @@
     {
      "answer": "much",
      "accept": [],
-     "explain_vi": "==money== không đếm được → **How much money**. __Tiền là không đếm được, dù bạn đếm được từng tờ.__"
+     "explain_vi": "==money== không đếm được → **How much money**. __Tiền là không đếm được, dù cậu đếm được từng tờ.__"
     },
     {
      "answer": "the",
@@ -467,7 +467,7 @@
      "run"
     ],
     "answer": "A",
-    "explain_vi": "Thành ngữ **make my mouth water**: làm bạn thèm chảy nước miếng → **A. water**; dấu hiệu ==The smell … was so wonderful==. __Thành ngữ phải học thuộc cả cụm.__"
+    "explain_vi": "Thành ngữ **make my mouth water**: làm cậu thèm chảy nước miếng → **A. water**; dấu hiệu ==The smell … was so wonderful==. __Thành ngữ phải học thuộc cả cụm.__"
    },
    {
     "id": "d9H6",

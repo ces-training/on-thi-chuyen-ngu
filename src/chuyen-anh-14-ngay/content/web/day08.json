@@ -179,7 +179,7 @@
   {
    "format": "error_id",
    "title_vi": "Tìm lỗi sai",
-   "intro_vi": "Đề chung vào lớp 10 thường có vài câu tìm lỗi sai: mỗi câu có 4 phần gạch chân A, B, C, D, bạn chọn phần sai. Lỗi hay gặp: thì, bị động, hoà hợp chủ ngữ – động từ.",
+   "intro_vi": "Đề chung vào lớp 10 thường có vài câu tìm lỗi sai: mỗi câu có 4 phần gạch chân A, B, C, D, cậu chọn phần sai. Lỗi hay gặp: thì, bị động, hoà hợp chủ ngữ – động từ.",
    "tip_vi": "Mẹo: tìm động từ chính trước. Hỏi: chủ ngữ số ít hay nhiều? Chủ ngữ tự làm hay được làm? Đúng dạng V3 chưa?",
    "kind": "mcq",
    "items": [
@@ -549,7 +549,7 @@
      "reached"
     ],
     "answer": "A",
-    "explain_vi": "Collocation **hit the headlines**: lên trang nhất, gây chú ý → **A. hit**; ==for weeks== cho thấy tin được nhắc rất lâu. __Đề chuyên hay hỏi collocation, bạn nên học thuộc.__"
+    "explain_vi": "Collocation **hit the headlines**: lên trang nhất, gây chú ý → **A. hit**; ==for weeks== cho thấy tin được nhắc rất lâu. __Đề chuyên hay hỏi collocation, cậu nên học thuộc.__"
    },
    {
     "id": "d8H6",
@@ -617,7 +617,7 @@
   "nen": {
    "part1": {
     "title_vi": "Phần 1 · Hội thoại",
-    "intro_vi": "Bạn nghe Tom và Linh nói về số mới của tạp chí trường. Chọn đáp án đúng cho mỗi câu hỏi.",
+    "intro_vi": "Cậu nghe Tom và Linh nói về số mới của tạp chí trường. Chọn đáp án đúng cho mỗi câu hỏi.",
     "speakers": [
      {
       "name": "Tom",
@@ -730,7 +730,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Bạn nghe lời giới thiệu một chương trình phát thanh mới cho tuổi teen. Điền một từ vào mỗi chỗ trống.",
+    "intro_vi": "Cậu nghe lời giới thiệu một chương trình phát thanh mới cho tuổi teen. Điền một từ vào mỗi chỗ trống.",
     "script": "Hello, everyone, and welcome to Teen Time, a new radio programme for young people. My name is Anna. Teen Time is broadcast every Saturday morning at nine o'clock. In each programme, we talk about music, films, sport and school life. Every week, a student is invited to the studio to tell us about their hobby. This week our guest is Nam, and he's going to talk about his stamp collection. We also want to hear your opinions. You can send us a message on our website, or you can phone us. The best message each week wins two cinema tickets. So stay with us, and let's start the show!",
     "text": "TEEN TIME (radio programme)\n• On air: every [1] morning\n• Topics: music, films, sport and [2] life\n• This week's guest talks about his [3] collection\n• Send your opinions: on our [4] or by phone\n• Prize for the best message: two [5] tickets",
     "items": [
@@ -767,7 +767,7 @@
   "chuan": {
    "part1": {
     "title_vi": "Phần 1 · Hội thoại",
-    "intro_vi": "Bạn nghe Nam và Mai nói về một video lan truyền trên mạng. Chú ý chỗ người nói nhầm rồi sửa. Chọn đáp án đúng.",
+    "intro_vi": "Cậu nghe Nam và Mai nói về một video lan truyền trên mạng. Chú ý chỗ người nói nhầm rồi sửa. Chọn đáp án đúng.",
     "speakers": [
      {
       "name": "Nam",
@@ -888,7 +888,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Bạn nghe lời giới thiệu khi tham quan một đài truyền hình. Có một chỗ người nói sửa lại thông tin. Điền 1–2 từ hoặc một con số.",
+    "intro_vi": "Cậu nghe lời giới thiệu khi tham quan một đài truyền hình. Có một chỗ người nói sửa lại thông tin. Điền 1–2 từ hoặc một con số.",
     "script": "Good morning, everyone, and welcome to City TV. My name is Mr Brown, and I'm going to show you around our studios today. This building was opened in 1998. Sorry, I mean 1995. At first, only one programme was made here each day. Now, more than twenty programmes are produced here every week. Our most popular show is the evening news, which is broadcast live and watched by about 2 million people. In a few minutes, we'll visit the newsroom, where the stories are written and checked. Every fact is checked twice, because our audience needs reliable news. After that, you'll see Studio B, where our cooking show is filmed. Please don't touch the cameras, because they're very expensive. At the end of the tour, each of you will be given a free cap as a souvenir.",
     "text": "CITY TV STUDIO TOUR\n• Building opened in: [1]\n• Evening news watched by about [2] million people\n• Newsroom: stories are written and [3]\n• Studio B: the [4] show is filmed there\n• Free gift: a [5]",
     "items": [
@@ -927,7 +927,7 @@
   "nang": {
    "part1": {
     "title_vi": "Phần 1 · Hội thoại",
-    "intro_vi": "Bạn nghe Anna và Tom nói về đôi giày Tom mua sau khi xem quảng cáo. Câu hỏi về ý kiến, thái độ và suy luận.",
+    "intro_vi": "Cậu nghe Anna và Tom nói về đôi giày Tom mua sau khi xem quảng cáo. Câu hỏi về ý kiến, thái độ và suy luận.",
     "speakers": [
      {
       "name": "Anna",
@@ -1056,7 +1056,7 @@
    },
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
-    "intro_vi": "Bạn nghe một nhà báo nói chuyện với học sinh về tin giả. Có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
+    "intro_vi": "Cậu nghe một nhà báo nói chuyện với học sinh về tin giả. Có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
     "script": "Hello, everyone. My name is Anna Brown, and I've worked as a journalist for over fifteen years. Today I want to talk about fake news, and how you can protect yourselves from it. Research shows that false stories are shared online much faster than true ones. Some people say twice as fast, but in fact it can be up to 6 times faster, because false stories are usually more shocking. So, what can you do? I always teach young people a simple three-step check. Step one: look at the source. Who wrote the article, and when was it published? Many fake stories are actually several years old and are simply shared again. Step two: check whether the same story is reported by at least 2 other reliable websites. I mean real news organisations, not social media pages. Step three, and this is the one most people forget: look carefully at the photos. Some pictures are taken from completely different events, or changed using computer programs. Many of you probably think that all this takes ages, but with practice, it takes just a few minutes. And finally, if you're still not sure, simply don't share it. That's the easiest way to stop false information from spreading.",
     "text": "HOW TO SPOT FAKE NEWS\n• False stories spread up to [1] times faster than true ones\n• Step 1: check who wrote it and when it was [2]\n• Step 2: find the same story on at least [3] other reliable websites\n• Step 3: look carefully at the [4]\n• Still not sure? Don't [5] it",
     "items": [

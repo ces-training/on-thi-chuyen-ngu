@@ -24,7 +24,7 @@ function renderExam(box,B,saved,onDone){
     body+=`<div class="passage x-text">${esc(B.text).replace(/\[(\d+)\]/g,(m,n)=>`<b class="x-gap" data-g="${n-1}">(${n}) ____</b>`)}</div>`;
     body+=items.map((it,i)=>`<div class="q x-item" data-i="${i}"><div class="qhead"><span class="qnum">${i+1}</span></div><div class="opts row-opts">${perm(it).map(j=>`<label class="opt" data-i="${j}"><input type="radio" name="x${i}" value="${j}"><span>${esc(it.options[j])}</span></label>`).join('')}</div><div class="fbslot"></div></div>`).join('');
   }else if(kind==='gap_text'){
-    if(B.format==='listening')body+=`<div class="x-listen"><button type="button" class="btn x-play">▶ Nghe lần 1</button><span class="small muted">Như đề thật, bạn được nghe 2 lần. Đọc trước phần ghi chú bên dưới.</span></div>`;
+    if(B.format==='listening')body+=`<div class="x-listen"><button type="button" class="btn x-play">▶ Nghe lần 1</button><span class="small muted">Như đề thật, cậu được nghe 2 lần. Đọc trước phần ghi chú bên dưới.</span></div>`;
     body+=`<div class="passage x-text">${esc(B.text).replace(/\[(\d+)\]/g,(m,n)=>{const it=items[n-1]||{};return `<span class="x-inwrap"><b>(${n})</b><input class="x-in" data-i="${n-1}" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Chỗ trống ${n}">${it.base?`<i class="x-base">${esc(it.base)}</i>`:''}</span>`})}</div><div class="x-fbs"></div>`;
     if(B.format==='listening')body+=`<details class="x-script" hidden><summary>Xem lời bài nghe</summary><p>${esc(B.script)}</p></details>`;
   }else if(kind==='transform'){
@@ -66,9 +66,9 @@ function renderExam(box,B,saved,onDone){
       form.querySelector('.x-pool').innerHTML=`<div class="fb ${correct===n?'good':'bad'}">${correct===n?'Đúng thứ tự!':'Thứ tự đúng:'}<ol>${B.lines.map(l=>`<li>${esc(l)}</li>`).join('')}</ol>${B.explain_vi?`<span class="ex">${fmtVi(B.explain_vi)}</span>`:''}</div>`}
     return {correct,total,answers}};
   form.addEventListener('submit',e=>{e.preventDefault();if(form.dataset.graded)return;
-    if(kind==='order'&&ord.length<B.lines.length){form.querySelector('.x-msg').textContent='Bạn xếp hết các lượt lời rồi mới chấm nhé.';return}
+    if(kind==='order'&&ord.length<B.lines.length){form.querySelector('.x-msg').textContent='Cậu xếp hết các lượt lời rồi mới chấm nhé.';return}
     form.dataset.graded='1';const r=grade();form.querySelector('button[type=submit]').disabled=true;
-    form.querySelector('.x-msg').innerHTML=`Bạn đúng <b>${r.correct}/${r.total}</b>. <button type="button" class="linkbtn x-redo">Làm lại</button>`;
+    form.querySelector('.x-msg').innerHTML=`Cậu đúng <b>${r.correct}/${r.total}</b>. <button type="button" class="linkbtn x-redo">Làm lại</button>`;
     form.querySelector('.x-redo').onclick=()=>renderExam(box,B,null,onDone);
     if(window.speechSynthesis)try{speechSynthesis.cancel()}catch(_){}
     onDone&&onDone(r)});
@@ -124,7 +124,7 @@ function renderListening(box,L,track,saved,onDone,day){const p1=L.part1,p2=L.par
   const wirePlay=(f,lines,st)=>{const b=f.querySelector('.ls-play'),au=f.querySelector('audio.ls-audio');const tts=()=>lsPlay(lines,track,b,st);b.onclick=()=>au&&!st.noAudio?lsPlayAudio(au,track,b,st,tts):tts()};
   wirePlay(f1,lines1,st1);wirePlay(f2,lines2,st2);
   const fin=(f,c,t,key)=>{f.dataset.graded='1';f.querySelector('button[type=submit]').disabled=true;f.querySelector('.x-script').hidden=false;try{speechSynthesis.cancel()}catch(_){}f.querySelectorAll('audio.ls-audio').forEach(a=>{try{a.pause();a.dispatchEvent(new Event('ended'))}catch(_){}});lsNoise(false);
-    f.querySelector('.x-msg').innerHTML=`Bạn đúng <b>${c}/${t}</b>.`;onDone&&onDone(key,{correct:c,total:t})};
+    f.querySelector('.x-msg').innerHTML=`Cậu đúng <b>${c}/${t}</b>.`;onDone&&onDone(key,{correct:c,total:t})};
   f1.addEventListener('submit',e=>{e.preventDefault();if(f1.dataset.graded)return;let c=0;p1.items.forEach((it,i)=>{const r=f1.querySelector(`input[name="l1_${i}"]:checked`);const v=r?+r.value:null;const ok=v===it.answer;if(ok)c++;
       const q=f1.querySelector(`.x-item[data-i="${i}"]`);q.querySelectorAll('.opt').forEach(o=>{const j=+o.dataset.i;o.classList.remove('sel');if(j===it.answer)o.classList.add('right');else if(j===v)o.classList.add('wrong')});q.querySelectorAll('input').forEach(x=>x.disabled=true);
       q.querySelector('.fbslot').innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Chưa đúng. Đáp án: <b>'+esc(it.options[it.answer])+'</b>'}${it.explain_vi?`<span class="ex">${fmtVi(it.explain_vi)}</span>`:''}</div>`});fin(f1,c,p1.items.length,'p1')});

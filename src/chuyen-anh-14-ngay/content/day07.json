@@ -3,11 +3,11 @@
  "type": "review",
  "theme_en": "Review 1",
  "theme_vi": "Vòng ôn 1 (buổi 1–6)",
- "goal_vi": "Hôm nay không có bài mới đâu bạn ạ – mình cùng ôn lại toàn bộ từ vựng, ngữ pháp và các dạng bài thi của 6 buổi đầu tiên. Bạn làm chậm rãi, câu nào chưa chắc thì đánh dấu lại để xem lại bài cũ nhé!",
+ "goal_vi": "Hôm nay không có bài mới đâu cậu ạ – mình cùng ôn lại toàn bộ từ vựng, ngữ pháp và các dạng bài thi của 6 buổi đầu tiên. Cậu làm chậm rãi, câu nào chưa chắc thì đánh dấu lại để xem lại bài cũ nhé!",
  "minutes": 35,
  "paper": {
   "R1_vocab": {
-   "instruction_vi": "Bạn chọn từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, có 2 từ thừa. Gợi ý: đọc kỹ cả câu để chọn đúng loại từ nhé.",
+   "instruction_vi": "Cậu chọn từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, có 2 từ thừa. Gợi ý: đọc kỹ cả câu để chọn đúng loại từ nhé.",
    "bank": [
     "assignment",
     "concentrate",
@@ -106,7 +106,7 @@
    ]
   },
   "R2_grammar": {
-   "instruction_vi": "Bạn viết dạng đúng của động từ trong ngoặc, hoặc chọn từ đúng trong ngoặc. Nhớ tìm 'dấu hiệu' về thời gian trong câu trước khi chia động từ nhé.",
+   "instruction_vi": "Cậu viết dạng đúng của động từ trong ngoặc, hoặc chọn từ đúng trong ngoặc. Nhớ tìm 'dấu hiệu' về thời gian trong câu trước khi chia động từ nhé.",
    "items": [
     {
      "id": "d7R2_1",
@@ -211,7 +211,7 @@
    ]
   },
   "R3_wordform": {
-   "instruction_vi": "Viết dạng đúng của từ in hoa. Bạn xác định trước: chỗ trống cần danh từ, tính từ hay trạng từ?",
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Cậu xác định trước: chỗ trống cần danh từ, tính từ hay trạng từ?",
    "items": [
     {
      "id": "d7R3_1",
@@ -264,7 +264,7 @@
    ]
   },
   "R4_exam": {
-   "instruction_vi": "Mỗi câu là một dạng bài thi khác nhau mà bạn đã học. Bạn đọc kỹ yêu cầu ngắn ở đầu mỗi câu rồi khoanh A, B, C hoặc D nhé.",
+   "instruction_vi": "Mỗi câu là một dạng bài thi khác nhau mà cậu đã học. Cậu đọc kỹ yêu cầu ngắn ở đầu mỗi câu rồi khoanh A, B, C hoặc D nhé.",
    "items": [
     {
      "id": "d7R4_1",
@@ -424,23 +424,23 @@
   },
   "F_writing": {
    "task_en": "Write an email (80–100 words) to your English penfriend, Alex. Tell Alex about a new hobby or a healthy habit you have started: what you used to do before, what you do now, and what you are going to do next. Use at least four words or phrasal verbs from Days 1–6.",
-   "task_vi": "Bạn viết một email (80–100 từ) cho bạn qua thư người nước ngoài tên Alex, kể về một sở thích mới hoặc một thói quen tốt bạn vừa bắt đầu: trước đây bạn thường làm gì (used to), bây giờ bạn làm gì, và sắp tới bạn dự định làm gì (be going to). Bạn dùng ít nhất 4 từ hoặc cụm động từ đã học ở buổi 1–6 nhé.",
+   "task_vi": "Cậu viết một email (80–100 từ) cho bạn qua thư người nước ngoài tên Alex, kể về một sở thích mới hoặc một thói quen tốt cậu vừa bắt đầu: trước đây cậu thường làm gì (used to), bây giờ cậu làm gì, và sắp tới cậu dự định làm gì (be going to). Cậu dùng ít nhất 4 từ hoặc cụm động từ đã học ở buổi 1–6 nhé.",
    "min_words": 80,
    "model": "Hi Alex,\n\nHow are you? I want to tell you about my new hobby. I used to spend most of my spare time on my phone, and I often felt too tired to concentrate in class. Two months ago, I took up badminton. Now I play with my dad three times a week, and I have much more energy than before. Next month I'm going to enter a school competition – wish me luck! What do you do in your free time? Write back soon.\n\nBest wishes,\nMinh",
    "checklist_vi": [
-    "Email của bạn có lời chào mở đầu (Hi Alex,) và lời chào kết thúc (Best wishes, + tên) chưa?",
-    "Bạn đã dùng đúng 3 mốc thời gian: trước đây (used to / quá khứ đơn), bây giờ (hiện tại đơn / hiện tại hoàn thành), sắp tới (be going to) chưa?",
-    "Bạn đã dùng ít nhất 4 từ hoặc cụm động từ của buổi 1–6 chưa? Bạn gạch chân chúng nhé.",
-    "Bạn đã viết đủ 80 từ, kiểm tra chính tả và chữ cái viết hoa đầu câu chưa?"
+    "Email của cậu có lời chào mở đầu (Hi Alex,) và lời chào kết thúc (Best wishes, + tên) chưa?",
+    "Cậu đã dùng đúng 3 mốc thời gian: trước đây (used to / quá khứ đơn), bây giờ (hiện tại đơn / hiện tại hoàn thành), sắp tới (be going to) chưa?",
+    "Cậu đã dùng ít nhất 4 từ hoặc cụm động từ của buổi 1–6 chưa? Cậu gạch chân chúng nhé.",
+    "Cậu đã viết đủ 80 từ, kiểm tra chính tả và chữ cái viết hoa đầu câu chưa?"
    ]
   },
   "self_check_vi": [
-   "Bạn đã thuộc và dùng được 8 từ mới của mỗi buổi 1–6 (ví dụ: curriculum, enthusiastic, species, convenient, nutritious, souvenir).",
-   "Bạn phân biệt được hiện tại đơn và hiện tại tiếp diễn, và biết động từ chỉ trạng thái (know, like, understand) không dùng ở dạng tiếp diễn.",
-   "Bạn biết dùng quá khứ tiếp diễn với 'while/when', dùng 'used to' để nói về thói quen trong quá khứ.",
-   "Bạn phân biệt được hiện tại hoàn thành và quá khứ đơn, và dùng đúng will / be going to / hiện tại tiếp diễn cho tương lai.",
-   "Bạn dùng đúng so sánh hơn, so sánh nhất, too/enough, so/such và các động từ khuyết thiếu can/could/must/have to/should.",
-   "Bạn nhận ra được các dạng bài: điền câu, đồng nghĩa, trái nghĩa, hoàn thành hội thoại, câu gần nghĩa nhất và điền từ vào đoạn văn."
+   "Cậu đã thuộc và dùng được 8 từ mới của mỗi buổi 1–6 (ví dụ: curriculum, enthusiastic, species, convenient, nutritious, souvenir).",
+   "Cậu phân biệt được hiện tại đơn và hiện tại tiếp diễn, và biết động từ chỉ trạng thái (know, like, understand) không dùng ở dạng tiếp diễn.",
+   "Cậu biết dùng quá khứ tiếp diễn với 'while/when', dùng 'used to' để nói về thói quen trong quá khứ.",
+   "Cậu phân biệt được hiện tại hoàn thành và quá khứ đơn, và dùng đúng will / be going to / hiện tại tiếp diễn cho tương lai.",
+   "Cậu dùng đúng so sánh hơn, so sánh nhất, too/enough, so/such và các động từ khuyết thiếu can/could/must/have to/should.",
+   "Cậu nhận ra được các dạng bài: điền câu, đồng nghĩa, trái nghĩa, hoàn thành hội thoại, câu gần nghĩa nhất và điền từ vào đoạn văn."
   ]
  },
  "web_check": [
@@ -576,7 +576,7 @@
    "accept": [
     "protect"
    ],
-   "explain_vi": "Sau ==help to== dùng động từ nguyên thể → **protect** (bảo vệ). __Gợi ý chữ 'p' và nghĩa 'bảo vệ' giúp bạn chắc chắn.__",
+   "explain_vi": "Sau ==help to== dùng động từ nguyên thể → **protect** (bảo vệ). __Gợi ý chữ 'p' và nghĩa 'bảo vệ' giúp cậu chắc chắn.__",
    "tag": "d3v2"
   },
   {
@@ -687,8 +687,8 @@
   }
  ],
  "can_do_vi": [
-  "Bạn có thể nhớ lại và dùng đúng từ vựng, cụm động từ của 6 chủ đề: trường học, sở thích, môi trường, công nghệ, sức khoẻ, du lịch.",
-  "Bạn có thể chọn đúng thì (hiện tại, quá khứ, hiện tại hoàn thành, tương lai) dựa vào dấu hiệu trong câu.",
-  "Bạn có thể nhận ra và làm được 6 dạng câu hỏi trắc nghiệm hay gặp trong đề thi chuyên."
+  "Cậu có thể nhớ lại và dùng đúng từ vựng, cụm động từ của 6 chủ đề: trường học, sở thích, môi trường, công nghệ, sức khoẻ, du lịch.",
+  "Cậu có thể chọn đúng thì (hiện tại, quá khứ, hiện tại hoàn thành, tương lai) dựa vào dấu hiệu trong câu.",
+  "Cậu có thể nhận ra và làm được 6 dạng câu hỏi trắc nghiệm hay gặp trong đề thi chuyên."
  ]
 }

@@ -3,7 +3,7 @@
   "type": "normal",
   "theme_en": "School & learning",
   "theme_vi": "Trường học và việc học",
-  "goal_vi": "Hôm nay bạn sẽ học 8 từ mới và 2 cụm động từ về trường học, đồng thời phân biệt thì hiện tại đơn với hiện tại tiếp diễn. Đây là buổi đầu tiên, bạn cứ làm từ từ, chắc chắn từng phần nhé!",
+  "goal_vi": "Hôm nay cậu sẽ học 8 từ mới và 2 cụm động từ về trường học, đồng thời phân biệt thì hiện tại đơn với hiện tại tiếp diễn. Đây là buổi đầu tiên, cậu cứ làm từ từ, chắc chắn từng phần nhé!",
   "minutes": 30,
   "vocab": [
     {"id":"d1v1","word":"curriculum","pos":"n","ipa":"/kəˈrɪkjələm/","meaning_vi":"chương trình học, chương trình giảng dạy","example":"Our school curriculum includes art, music and two foreign languages.","family":"curricula (n, số nhiều), curricular (adj)"},
@@ -44,19 +44,19 @@
   },
   "paper": {
     "A_vocab": {
-      "instruction_vi": "Bạn chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ing…) nếu cần nhé!",
+      "instruction_vi": "Cậu chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ing…) nếu cần nhé!",
       "bank": ["curriculum","assignment","revise","concentrate","attend","knowledge","catch up","drop out"],
       "items": [
         {"id":"d1A1","q":"Our school has changed its ______: now all students learn coding from grade 6.","answer":"curriculum","tag":"d1v1","explain_vi":"Trường thay đổi để ==now all students learn coding== → đổi **chương trình học: curriculum**. Sau ==its== cần danh từ. __Mẹo: phần sau dấu hai chấm giải thích nghĩa của chỗ trống.__"},
         {"id":"d1A2","q":"I can't go to the cinema tonight. I have to finish my geography ______ and hand it in tomorrow morning.","answer":"assignment","tag":"d1v2","explain_vi":"==finish my geography … and hand it in== → bài được giao phải nộp: **assignment**. __Mẹo: hand in (nộp) hay đi với assignment.__"},
-        {"id":"d1A3","q":"Before an exam, I always ______ my notes carefully.","answer":"revise","tag":"d1v3","explain_vi":"==Before an exam== bạn xem lại ghi chép → **revise** (ôn tập). Sau ==always== với chủ ngữ I giữ **nguyên mẫu**. __Mẹo: revise for a test, revise my notes là cụm hay gặp.__"},
+        {"id":"d1A3","q":"Before an exam, I always ______ my notes carefully.","answer":"revise","tag":"d1v3","explain_vi":"==Before an exam== cậu xem lại ghi chép → **revise** (ôn tập). Sau ==always== với chủ ngữ I giữ **nguyên mẫu**. __Mẹo: revise for a test, revise my notes là cụm hay gặp.__"},
         {"id":"d1A4","q":"Phong found it hard to ______ during the lesson because the boy behind him kept whispering.","answer":"concentrate","tag":"d1v4","explain_vi":"Bạn phía sau ==kept whispering== nên Phong khó **tập trung: concentrate**. Sau ==found it hard to== dùng V nguyên mẫu. __Mẹo: sau to luôn dùng động từ nguyên mẫu.__"},
         {"id":"d1A5","q":"Reading newspapers is a great way to increase your general ______.","answer":"knowledge","tag":"d1v6","explain_vi":"==increase your general== + danh từ → **knowledge** (kiến thức, hiểu biết). __Nhớ: knowledge không đếm được, không thêm -s.__"},
         {"id":"d1A6","q":"Mai was ill for a week, so now she is working extra hard to ______ with the rest of the class.","answer":"catch up","tag":"d1p1","explain_vi":"Mai ==was ill for a week== nên giờ phải **catch up** (bắt kịp) ==with the rest of the class==. __Mẹo: thấy nghỉ ốm + with the class, nghĩ ngay tới catch up with.__"}
       ]
     },
     "B_grammar": {
-      "instruction_vi": "Bạn chia động từ trong ngoặc ở thì hiện tại đơn hoặc hiện tại tiếp diễn. Để ý các từ dấu hiệu và các động từ chỉ trạng thái nhé!",
+      "instruction_vi": "Cậu chia động từ trong ngoặc ở thì hiện tại đơn hoặc hiện tại tiếp diễn. Để ý các từ dấu hiệu và các động từ chỉ trạng thái nhé!",
       "items": [
         {"id":"d1B1","q":"Look! The children ______ (play) football in the rain.","answer":"are playing","accept":["'re playing"],"tag":"d1g","explain_vi":"==Look!== → việc đang xảy ra → **hiện tại tiếp diễn**: The children (số nhiều) **are playing**. __Mẹo: Look!, Listen! đứng đầu câu là dấu hiệu V-ing.__"},
         {"id":"d1B2","q":"My brother ______ (go) to the library every Saturday morning.","answer":"goes","tag":"d1g","explain_vi":"==every Saturday morning== → thói quen → **hiện tại đơn**; My brother số ít, go thêm -es → **goes**. __Nhớ: go, do, watch, wash thêm -es.__"},
@@ -77,7 +77,7 @@
     },
     "D_exam": {
       "format": "sentence_completion",
-      "instruction_vi": "Đây là dạng hoàn thành câu trong đề thi chuyên. Bạn chọn đáp án đúng nhất (A, B, C hoặc D) để hoàn thành mỗi câu.",
+      "instruction_vi": "Đây là dạng hoàn thành câu trong đề thi chuyên. Cậu chọn đáp án đúng nhất (A, B, C hoặc D) để hoàn thành mỗi câu.",
       "items": [
         {"id":"d1D1","q":"Students who want to join the school trip must ______ the meeting on Friday afternoon.","options":["come","go","participate","attend"],"answer":"D","tag":"fmt:sentence_completion","explain_vi":"**attend the meeting**: tham dự cuộc họp; attend không cần giới từ → **D**. come, go phải có to; participate phải có in. __Mẹo: chỗ trống ngay trước danh từ → chọn động từ không cần giới từ.__"},
         {"id":"d1D2","q":"My sister can't talk on the phone right now. She ______ for her history test.","options":["revises","revise","is revising","was revising"],"answer":"C","tag":"fmt:sentence_completion","explain_vi":"==can't talk on the phone right now== → việc đang diễn ra → **C. is revising**. was revising là quá khứ, revises là thói quen nên sai. __Mẹo: tìm từ dấu hiệu thời gian trước khi chọn thì.__"},
@@ -98,18 +98,18 @@
     },
     "F_writing": {
       "task_en": "Write a paragraph (50–70 words) about your school life. Say what you usually do at school and what you are doing or learning this week.",
-      "task_vi": "Viết một đoạn văn (50–70 từ) về cuộc sống ở trường của em: bạn thường làm gì ở trường, và tuần này bạn đang làm hoặc đang học gì đặc biệt.",
+      "task_vi": "Viết một đoạn văn (50–70 từ) về cuộc sống ở trường của em: cậu thường làm gì ở trường, và tuần này cậu đang làm hoặc đang học gì đặc biệt.",
       "min_words": 50,
       "model": "I usually get up at six o'clock and cycle to school with my best friend. My favourite subject is English because our teacher always encourages us to speak a lot. In the afternoon, I often attend the art club. This week, however, I am not going to the club because I am revising for my maths test. I know it is difficult, but I am trying my best to improve.",
       "checklist_vi": [
-        "Bạn có dùng ít nhất 2 câu thì hiện tại đơn để nói về thói quen không?",
-        "Bạn có dùng ít nhất 2 câu thì hiện tại tiếp diễn để nói về việc tuần này / lúc này không?",
-        "Bạn có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 1 không?",
+        "Cậu có dùng ít nhất 2 câu thì hiện tại đơn để nói về thói quen không?",
+        "Cậu có dùng ít nhất 2 câu thì hiện tại tiếp diễn để nói về việc tuần này / lúc này không?",
+        "Cậu có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 1 không?",
         "Đoạn văn đủ 50 từ; mỗi câu bắt đầu bằng chữ hoa và kết thúc bằng dấu chấm."
       ]
     },
     "G_review": {
-      "instruction_vi": "Khởi động – hôm nay là buổi đầu nên mình ôn lại vài kiến thức cơ bản (A2) trước nhé. Bạn điền từ hoặc dạng đúng vào chỗ trống.",
+      "instruction_vi": "Khởi động – hôm nay là buổi đầu nên mình ôn lại vài kiến thức cơ bản (A2) trước nhé. Cậu điền từ hoặc dạng đúng vào chỗ trống.",
       "items": [
         {"id":"d1G1","q":"There ______ (be) thirty-two students in my class.","answer":"are","from_day":0,"tag":"a2:be","explain_vi":"Danh từ sau chỗ trống là ==thirty-two students== (số nhiều) → **are**. __Mẹo: There + be chia theo danh từ đứng ngay sau.__"},
         {"id":"d1G2","q":"We went to the zoo ______ Sunday morning. (in / on / at)","answer":"on","from_day":0,"tag":"a2:prepositions","explain_vi":"Trước **thứ trong tuần** (kể cả buổi của thứ đó) dùng **on** → ==on Sunday morning==. __Nhớ: in the morning, nhưng on Sunday morning.__"},
@@ -133,9 +133,9 @@
     {"id":"d1q12","type":"mcq","skill":"exam","q":"I have a lot of ______ to do tonight, so I can't go out.","options":["homeworks","assignment","task","homework"],"answer":3,"explain_vi":"**homework** là danh từ **không đếm được**: ==a lot of homework==, không thêm -s. assignment, task đếm được nên phải ở số nhiều mới đúng. __Bẫy: không bao giờ viết homeworks.__","tag":"fmt:sentence_completion"}
   ],
   "can_do_vi": [
-    "Bạn có thể dùng đúng 8 từ mới và 2 cụm động từ về chủ đề trường học.",
-    "Bạn có thể phân biệt thì hiện tại đơn và hiện tại tiếp diễn, và biết động từ nào không chia -ing.",
-    "Bạn có thể tạo danh từ bằng đuôi -tion/-ation và -ment.",
-    "Bạn có thể làm dạng bài hoàn thành câu (trắc nghiệm) trong đề thi chuyên."
+    "Cậu có thể dùng đúng 8 từ mới và 2 cụm động từ về chủ đề trường học.",
+    "Cậu có thể phân biệt thì hiện tại đơn và hiện tại tiếp diễn, và biết động từ nào không chia -ing.",
+    "Cậu có thể tạo danh từ bằng đuôi -tion/-ation và -ment.",
+    "Cậu có thể làm dạng bài hoàn thành câu (trắc nghiệm) trong đề thi chuyên."
   ]
 }

@@ -718,7 +718,7 @@ function trackFromLevel(l){if(!l)return 'chuan';if(l==='preA2'||l==='A2')return 
 function curTrack(){return S.track||trackFromLevel(S.diag&&S.diag.level)}
 function examFor(n){const W=(C.web&&C.web[n])||{};const t=curTrack();return (t==='nen'&&W.exam_easy&&W.exam_easy.length?W.exam_easy:t==='nang'&&W.exam_plus&&W.exam_plus.length?W.exam_plus:W.exam)||[]}
 function trackBar(){const t=curTrack();const L=S.diag&&LEVELS.find(l=>l.k===S.diag.level);
-  return `<div class="trackbar"><span>Mức của em: <b>${TRACKS[t].name}</b>${S.track?' (bạn tự chọn)':L?' (theo bài đầu vào: '+esc(L.name)+')':' (chưa làm bài đầu vào)'}</span><label class="small">Đổi mức <select id="trackSel">${Object.entries(TRACKS).map(([k,v])=>`<option value="${k}" ${k===t?'selected':''}>${v.name}</option>`).join('')}</select></label><span class="small muted">${esc(TRACKS[t].desc)}</span></div>`}
+  return `<div class="trackbar"><span>Mức của em: <b>${TRACKS[t].name}</b>${S.track?' (cậu tự chọn)':L?' (theo bài đầu vào: '+esc(L.name)+')':' (chưa làm bài đầu vào)'}</span><label class="small">Đổi mức <select id="trackSel">${Object.entries(TRACKS).map(([k,v])=>`<option value="${k}" ${k===t?'selected':''}>${v.name}</option>`).join('')}</select></label><span class="small muted">${esc(TRACKS[t].desc)}</span></div>`}
 function wireTrack(after){const sel=$('#trackSel');if(sel)sel.onchange=()=>{const v=sel.value;S.track=v===trackFromLevel(S.diag&&S.diag.level)?null:v;save();after()}}
 function levelFromBands(a,b,c){
   if(a<5) return 'preA2';
@@ -728,12 +728,12 @@ function levelFromBands(a,b,c){
   if(c<7) return 'B1+';
   return 'B2';
 }
-/* mốc theo lớp bạn đang học (khai ở tab Sau 14 ngày hoặc Chọn trường) */
+/* mốc theo lớp cậu đang học (khai ở tab Sau 14 ngày hoặc Chọn trường) */
 function gradeNow(){const g=+((S.school&&S.school.grade)||S.grade);return [6,7,8,9].includes(g)?g:7}
 function setGrade(g){S.school=Object.assign(blankSchool(),S.school||{});S.school.grade=g;S.grade=g}
 function classF(){return 0.8} // 1 giờ học trên lớp ở CES ≈ 0,8 giờ học chuẩn
 /* Mốc chốt: đạt trình độ cần và chốt trường sớm hơn ngày thi CHOT_MONTHS tháng (CES chốt 4 tháng, tức 1/2 năm lớp 9),
-   vì năm cuối cấp các bạn nhiều việc; sau mốc này chỉ luyện đề, không học kiến thức mới. */
+   vì năm cuối cấp các cậu nhiều việc; sau mốc này chỉ luyện đề, không học kiến thức mới. */
 const CHOT_MONTHS=4;
 /* Mùng 1 Tết âm lịch; bài thi thử chốt trường làm trước Tết ít nhất 1 tuần để kỳ nghỉ không làm lệch kết quả */
 const TET={2027:[1,6],2028:[0,26],2029:[1,13],2030:[1,3],2031:[0,23],2032:[1,11]};
@@ -741,7 +741,7 @@ function tetDate(y){const t=TET[y];return t?new Date(y,t[0],t[1]):null}
 function chotDate(g){const e=examDateFor(g),c=new Date(e.getFullYear(),e.getMonth()-CHOT_MONTHS,1),t=tetDate(c.getFullYear());
   if(t){const b=new Date(t.getTime()-7*864e5);if(b<c)return b}return c}
 function goalNow(){const k=(S.course&&S.course.goal)||'cva';const G=GOALS.find(x=>x.k===k)||GOALS[1];return {k:G.k,h:goalH(G.k),name:G.name}}
-/* mốc chuẩn của CES, tính ngược từ mốc chốt theo mức cần của trường bạn nhắm:
+/* mốc chuẩn của CES, tính ngược từ mốc chốt theo mức cần của trường cậu nhắm:
    đích từ C1 → B1 Tết lớp 7, B2 Tết lớp 8; đích B2–B2+ → B1 hết lớp 7, B2 hết lớp 8 */
 function MS(){const g=gradeNow(),Y=examDateFor(g).getFullYear(),G=goalNow(),hi=G.h>=750,out=[];
   [{date:new Date(Y-3,4,31),label:'Hết lớp 6',target:'A2+',h:280},
@@ -766,7 +766,7 @@ function answerText(it){return it.type==='mcq'?it.options[it.answer]:it.answer}
 /* ---------- question rendering ---------- */
 function renderQ(it,idx,opts={}){
   const name='q_'+it.id;
-  const head=`<div class="qhead"><span class="qnum">${idx}</span>${opts.review?'<span class="review-mark">Ôn lại câu bạn từng sai</span>':''}${it.from_day&&!opts.review?`<span class="review-mark">Ôn xoắn ốc · buổi ${it.from_day}</span>`:''}</div>`;
+  const head=`<div class="qhead"><span class="qnum">${idx}</span>${opts.review?'<span class="review-mark">Ôn lại câu cậu từng sai</span>':''}${it.from_day&&!opts.review?`<span class="review-mark">Ôn xoắn ốc · buổi ${it.from_day}</span>`:''}</div>`;
   let body='';
   if(it.type==='mcq'){
     body='<div class="opts">'+it.options.map((o,i)=>`<label class="opt" data-i="${i}"><input type="radio" name="${name}" value="${i}"><span>${esc(o)}</span></label>`).join('')+'</div>';
@@ -854,15 +854,15 @@ const MOTTOS=[
  ['boss','Chuyên Anh không chọn người giỏi nhất. Nó chọn người không bỏ giữa chừng.'],
  ['wow','Mỗi ngôi sao trong game = một nơ-ron vừa đi tập gym.'],
  ['sus','Câu sai sẽ quay lại sau 1, 3 và 6 buổi. Vòng xoắn này thù dai lắm.'],
- ['chaos','Present perfect: việc đã xong, hậu quả vẫn còn. Giống bài tập bạn quên làm hôm qua.'],
+ ['chaos','Present perfect: việc đã xong, hậu quả vẫn còn. Giống bài tập cậu quên làm hôm qua.'],
  ['sleepy','Học xong rồi lướt mạng. Đừng lướt mạng xong rồi... mới học.'],
  ['dino','Từ mới giống trà sữa: ngày một ly là nghiện.'],
  ['boss','Không ai giỏi tiếng Anh từ buổi 1. Kể cả cô.'],
- ['wow','Đọc to một câu tiếng Anh. Con mèo nhà bạn sẽ nể bạn hơn.'],
+ ['wow','Đọc to một câu tiếng Anh. Con mèo nhà cậu sẽ nể cậu hơn.'],
  ['sus','"Gần đúng" trong đề chuyên nghĩa là sai. Soi kỹ đuôi -s, -ed nhé.'],
  ['chaos','Làm bài giấy bằng bút chì: sai thì tẩy, đừng xé vở.'],
  ['boss','Kỳ thi còn xa? Chính vì thế hôm nay chỉ cần 40 phút.'],
- ['dino','Cô không cần bạn hoàn hảo. Cô cần bạn quay lại vào ngày mai.']];
+ ['dino','Cô không cần cậu hoàn hảo. Cô cần cậu quay lại vào ngày mai.']];
 let MOTTO_I=Math.floor(Date.now()/864e5)%MOTTOS.length;
 function mottoHTML(){return `<img src="${PEEP('sus')}" alt="" class="mt-peep"><div class="mt-body"><p class="mt-t">Thử 14 ngày để xác định khả năng theo lộ trình chuyên ngữ</p></div>`}
 function wireMotto(){const b=$('#mtNext');if(b)b.onclick=()=>{MOTTO_I=(MOTTO_I+1)%MOTTOS.length;const box=$('#motto');box.innerHTML=mottoHTML();box.classList.remove('flip');void box.offsetWidth;box.classList.add('flip');wireMotto()}}
@@ -892,15 +892,15 @@ function dashHTML(nd){
     <div class="q-grid">${tiles}</div>
   </section>
   <section class="paper side" aria-labelledby="lvTitle">
-    <p class="hand">${S.name?esc(S.name)+' ơi, mức của bạn là':'mức học của bạn'}</p>
+    <p class="hand">${S.name?esc(S.name)+' ơi, mức của cậu là':'mức học của cậu'}</p>
     <p class="lv" id="lvTitle">${noDiag?'Chưa xếp mức':TRACKS[t].name+(L?' · '+esc(L.name):'')}</p>
-    <p class="small muted">${noDiag?'Làm bài đầu vào 30 câu để trang xếp bạn vào mức Nền tảng, Chuẩn hoặc Nâng cao.':esc(TRACKS[t].desc)}</p>
+    <p class="small muted">${noDiag?'Làm bài đầu vào 30 câu để trang xếp cậu vào mức Nền tảng, Chuẩn hoặc Nâng cao.':esc(TRACKS[t].desc)}</p>
     <div class="collage" aria-hidden="true"><span class="blob"></span><img class="c1" src="${PEEP('mai')}" alt=""><img class="c2" src="${PEEP('tuan')}" alt=""><img class="c3" src="${PEEP('linh')}" alt=""></div>
     <button class="btn hi big" id="dashGo">${noDiag?'Làm bài đầu vào':(doneN?'Học tiếp':'Bắt đầu')+' buổi '+nd}<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
   </section>
   <section class="paper path" aria-labelledby="pTitle"><h2 id="pTitle">Lộ trình 14 ngày</h2><p class="hand">xong ${doneDays}/14 buổi · vòng nét đứt là buổi ôn tập</p><div class="pdots">${dots}</div></section>
   <div class="more">
-    <button type="button" class="tile-prog" id="dashProg"><svg class="tp-ic" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 56h50M14 56V38M28 56V26M42 56V32M56 56V14"/><path d="M12 30 26 18l14 8 16-16"/><path d="M48 10h8v8"/></svg><b>Tiến bộ<br>của bạn</b><span class="hand">điểm mạnh, phần cần ôn, lộ trình đến kỳ thi</span></button>
+    <button type="button" class="tile-prog" id="dashProg"><svg class="tp-ic" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 56h50M14 56V38M28 56V26M42 56V32M56 56V14"/><path d="M12 30 26 18l14 8 16-16"/><path d="M48 10h8v8"/></svg><b>Tiến bộ<br>của cậu</b><span class="hand">điểm mạnh, phần cần ôn, lộ trình đến kỳ thi</span></button>
     <button type="button" class="ask" id="dashAsk" aria-label="Hỏi cô"><img src="${PEEP('ha')}" alt=""><span>Hỏi cô</span></button>
   </div>
   </div>`}
@@ -915,18 +915,19 @@ function vStart(){
   ${dashHTML(nd)}<div class="dash-after">
   ${loginCard()}
   <div class="card">
-    <h3>Tên bạn là gì?</h3>
+    <h3>Tớ là Hùng, còn cậu?</h3>
+    <p class="small">Hùng trong "Hùng dũng", chứ không phải Hùng trong "Hùng hổ" nhé. Tớ sẽ đi cùng cậu suốt chặng này. Cho tớ biết tên để tớ gọi cho thân.</p>
     <div class="row"><input type="text" id="nameInput" maxlength="40" placeholder="Ví dụ: Minh Anh" value="${esc(S.name)}" style="max-width:320px"><button class="btn" id="saveName">Lưu tên</button></div>
-    <p class="small muted">${cloudOn()?'Kết quả được lưu trên máy này và tự gửi cho cô.':'Kết quả được lưu trên chính máy/trình duyệt bạn đang dùng. Hãy luôn mở trang này trên cùng một máy.'}</p>
+    <p class="small muted">${cloudOn()?'Kết quả được lưu trên máy này và tự gửi cho cô.':'Kết quả được lưu trên chính máy/trình duyệt cậu đang dùng. Hãy luôn mở trang này trên cùng một máy.'}</p>
   </div>
   <div class="card">
-    <h3>Mỗi buổi bạn làm theo 5 bước</h3>
+    <h3>Mỗi buổi cậu làm theo 5 bước</h3>
     <ol class="steps">
       <li><div><b>Xem video ngữ pháp và chơi 3 game</b> ôn từ mới, cụm động từ và ngữ pháp của buổi (khoảng 15 phút).</div></li>
       <li><div><b>Làm quen 1–2 dạng bài của đề thi thật và luyện nghe</b> theo khuôn phần nghe đề Sở, số câu rút gọn, có giải thích (khoảng 15 phút).</div></li>
       <li><div><b>Tải bài tập giấy của ngày</b>, in ra và làm trên giấy (khoảng 30 phút).</div></li>
       <li><div><b>Gấp giấy lại, làm Kiểm tra nhanh cuối buổi</b> trên web (khoảng 5 phút). Câu sai sẽ quay lại ở các buổi sau.</div></li>
-      <li><div>${cloudOn()?'<b>Chụp bài giấy gửi lên</b>: máy chấm, nhận xét và gửi kết quả cho cô. Câu nào bạn chưa đồng ý thì nhắn cô.':'<b>Chữa bài giấy</b> bằng đáp án trên web, tích những câu bạn làm đúng, rồi tự kiểm đoạn viết.'}</div></li>
+      <li><div>${cloudOn()?'<b>Chụp bài giấy gửi lên</b>: máy chấm, nhận xét và gửi kết quả cho cô. Câu nào cậu chưa đồng ý thì nhắn cô.':'<b>Chữa bài giấy</b> bằng đáp án trên web, tích những câu cậu làm đúng, rồi tự kiểm đoạn viết.'}</div></li>
     </ol>
     <div class="row"><button class="btn ghost" id="goPlan">Xem lộ trình đến kỳ thi</button></div>
   </div></div></section>`;
@@ -973,13 +974,13 @@ function wireTest(kind){
   if(S[kind]){test.items.forEach(it=>{const v=S[kind].answers[it.id];const q=form.querySelector(`.q[data-id="${it.id}"]`);if(it.type==='mcq'&&v!=null){const r=q.querySelector(`input[value="${v}"]`);if(r)r.checked=true}else if(v!=null){q.querySelector('input').value=v}showFeedback(form,it,v)});return}
   form.addEventListener('submit',e=>{e.preventDefault();
     const ans={};let blank=0;test.items.forEach(it=>{ans[it.id]=readAnswer(form,it);if(ans[it.id]==null||ans[it.id]==='')blank++});
-    if(blank&&!form.dataset.warned){form.dataset.warned='1';$('#testMsg').textContent=`Còn ${blank} câu trống. Bấm Nộp bài lần nữa nếu bạn muốn nộp luôn.`;return}
+    if(blank&&!form.dataset.warned){form.dataset.warned='1';$('#testMsg').textContent=`Còn ${blank} câu trống. Bấm Nộp bài lần nữa nếu cậu muốn nộp luôn.`;return}
     const r=testScore(test,ans);r.answers=ans;S[kind]=r;save();go(kind==='diag'?'diag':'progress');
   });
 }
 function vDiag(){
   const r=S.diag;
-  M().innerHTML=`<section class="view"><div><p class="eyebrow">Trước buổi 1</p><h2>Bài kiểm tra đầu vào</h2><p class="lead">30 câu từ dễ đến khó (mức A2, B1, B2). Bạn làm một mình, không tra từ điển. Câu nào không biết thì cứ bỏ qua, như vậy kết quả mới đúng với sức bạn.</p></div>
+  M().innerHTML=`<section class="view"><div><p class="eyebrow">Trước buổi 1</p><h2>Bài kiểm tra đầu vào</h2><p class="lead">30 câu từ dễ đến khó (mức A2, B1, B2). Cậu làm một mình, không tra từ điển. Câu nào không biết thì cứ bỏ qua, như vậy kết quả mới đúng với sức cậu.</p></div>
   ${r?resultCard(r,'Kết quả đầu vào')+`<div class="row"><button class="btn hi" id="toDays">Bắt đầu buổi 1</button><button class="btn ghost" id="toPlan">Xem lộ trình phù hợp</button></div><details class="card"><summary>Xem lại từng câu</summary>${renderTest('diag')}</details>`:renderTest('diag')}</section>`;
   wireTest('diag');
   if(r){$('#toDays').onclick=()=>go('days',{day:nextDay()});$('#toPlan').onclick=()=>go('plan')}
@@ -1007,11 +1008,11 @@ function renderYtListen(box,R,saved,onDone){
   let plays=0,player=null,graded=!!saved;
   box.innerHTML=`<div class="yl-head"><span class="yl-tag">BẢN GHI THẬT</span><b>${esc(R.title)}</b><span class="small muted">${esc(R.channel||'')} · mức ${esc(R.level||'')}${len?' · khoảng '+mmss(len):''}</span></div>
    <p>${esc(R.intro_vi||'')}</p>
-   <p class="small muted">Đọc câu hỏi trước, rồi bấm nghe. Bạn được nghe <b>2 lần</b> như đi thi; chấm xong thì nghe lại thoải mái.</p>
+   <p class="small muted">Đọc câu hỏi trước, rồi bấm nghe. Cậu được nghe <b>2 lần</b> như đi thi; chấm xong thì nghe lại thoải mái.</p>
    <div class="yl-stage"><div class="yl-frame"><div id="ylPlayer"></div><div class="yl-cover"><svg viewBox="0 0 48 48" width="58" height="58" aria-hidden="true"><path d="M8 27h7v12H8zM33 27h7v12h-7z" fill="#FFD23F" transform="translate(2.6 2.6)"/><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 29v-4.2C9.5 16.4 16 9.6 24 9.6s14.5 6.8 14.5 15.2V29"/><path d="M8.2 27.6c2.4-.4 4.8-.3 7.2.2.4 3.8.4 7.6 0 11.4-2.4.4-4.8.4-7.2 0-.4-3.9-.4-7.7 0-11.6Z"/><path d="M32.6 27.8c2.4-.5 4.8-.6 7.2-.2.4 3.9.4 7.7 0 11.6-2.4.4-4.8.4-7.2 0-.4-3.8-.4-7.6 0-11.4Z"/></g></svg></div></div>
      <div class="yl-ctl"><button type="button" class="btn hi" id="ylPlay">▶ Nghe lần 1</button><span class="small muted" id="ylMsg"></span></div></div>
    <form class="yl-q" id="ylForm">${R.items.map((it,i)=>`<div class="q" data-i="${i}"><div class="qhead"><span class="qnum">${i+1}</span><span class="qtext">${esc(it.q)}</span></div>
-     ${it.type==='mcq'?`<div class="opts">${it.options.map((o,j)=>[Math.random(),j]).sort((a,b)=>a[0]-b[0]).map(([,j])=>`<label class="opt"><input type="radio" name="yl${i}" value="${j}"><span>${esc(it.options[j])}</span></label>`).join('')}</div>`:`<input type="text" name="yl${i}" autocomplete="off" spellcheck="false" placeholder="Viết 1–2 từ hoặc số bạn nghe được" style="max-width:340px">`}
+     ${it.type==='mcq'?`<div class="opts">${it.options.map((o,j)=>[Math.random(),j]).sort((a,b)=>a[0]-b[0]).map(([,j])=>`<label class="opt"><input type="radio" name="yl${i}" value="${j}"><span>${esc(it.options[j])}</span></label>`).join('')}</div>`:`<input type="text" name="yl${i}" autocomplete="off" spellcheck="false" placeholder="Viết 1–2 từ hoặc số cậu nghe được" style="max-width:340px">`}
      <div class="yl-fb" hidden></div></div>`).join('')}
      <div class="row"><button class="btn" type="submit" id="ylSubmit">Chấm bài nghe</button><span class="small muted" id="ylRes"></span></div></form>
    ${R.transcript_url?`<p class="small muted">Lời thoại và bài gốc: <a href="${esc(R.transcript_url)}" target="_blank" rel="noopener">mở trang nguồn</a>${R.source_url&&R.source_url!==R.transcript_url?` · <a href="${esc(R.source_url)}" target="_blank" rel="noopener">trang video</a>`:''}</p>`:''}`;
@@ -1027,7 +1028,7 @@ function renderYtListen(box,R,saved,onDone){
       if(it.type==='mcq'){ok=+v===it.answer;q.querySelectorAll('.opt').forEach((o,j)=>{const inp=o.querySelector('input');inp.disabled=true;if(+inp.value===+v)inp.checked=true;o.classList.toggle('sel',+inp.value===+v);if(+inp.value===it.answer)o.classList.add('right');else if(+inp.value===+v)o.classList.add('wrong')})}
       else{const inp=q.querySelector('input');inp.value=v||'';inp.disabled=true;const a=[it.answer].concat(it.accept||[]).map(normAns);ok=a.includes(normAns(v));inp.classList.add(ok?'ok':'bad')}
       if(ok)c++;const fb=q.querySelector('.yl-fb');fb.hidden=false;fb.className='yl-fb '+(ok?'good':'bad');fb.innerHTML=`<b>${ok?'Đúng rồi.':'Chưa đúng.'}</b> ${it.type==='mcq'?'':`Đáp án: <b>${esc(it.answer)}</b>. `}${fmtVi(it.explain_vi||'')}`});
-    const sb=form.querySelector('#ylSubmit');sb.disabled=true;sb.style.display='none';form.querySelector('#ylRes').innerHTML=`Bạn đúng <b>${c}/${R.items.length}</b> câu.`;return c};
+    const sb=form.querySelector('#ylSubmit');sb.disabled=true;sb.style.display='none';form.querySelector('#ylRes').innerHTML=`Cậu đúng <b>${c}/${R.items.length}</b> câu.`;return c};
   form.onsubmit=e=>{e.preventDefault();if(graded)return;const ans=R.items.map((it,i)=>{if(it.type==='mcq'){const r=form.querySelector(`input[name="yl${i}"]:checked`);return r?+r.value:null}return form.querySelector(`input[name="yl${i}"]`).value.trim()});
     if(ans.some(a=>a==null||a==='')&&!form.dataset.w){form.dataset.w=1;form.querySelector('#ylRes').textContent='Còn câu trống. Bấm Chấm lần nữa để chấm luôn.';return}
     graded=true;const c=show(ans);label();msg.textContent='';onDone&&onDone({correct:c,total:R.items.length,answers:ans});
@@ -1058,7 +1059,7 @@ function learnHTML(n){const D=DAYS[n-1];const W=(C.web&&C.web[n])||{};const MD=(
     ${RL?`<div class="yl" id="ylBox"></div>`:''}
     ${real.length?`<details class="ls-real"${RL?'':' open'}><summary><b>${RL?'Thêm bài nghe thật ở trang khác':'Nghe bài thu âm thật'}</b></summary><p class="small muted">Giọng người bản xứ, mức ${esc(real[0].level||'')} theo chuẩn Cambridge, cùng chủ đề với buổi học. Mở ở tab mới, làm bài trên trang đó, rồi ghi lại số câu đúng để cô theo dõi.</p>
       <ul class="isl">${real.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> <span class="pill">${esc(x.source||'')}${x.level?' · '+esc(x.level):''}</span>${x.format_vi?` <span class="pill">${esc(x.format_vi)}</span>`:''}${x.note_vi?`<br><span class="small muted">${esc(x.note_vi)}</span>`:''}</li>`).join('')}</ul>
-      <div class="row small">Bạn đúng <input type="number" min="0" max="99" id="rlC" class="rl-in" value="${rl?rl.correct:''}" aria-label="Số câu đúng"> / <input type="number" min="1" max="99" id="rlT" class="rl-in" value="${rl?rl.total:''}" aria-label="Tổng số câu"> câu <button type="button" class="btn ghost" id="rlSave">Lưu</button><span id="rlMsg" class="muted">${rl?'Đã lưu':''}</span></div></details>`:''}
+      <div class="row small">Cậu đúng <input type="number" min="0" max="99" id="rlC" class="rl-in" value="${rl?rl.correct:''}" aria-label="Số câu đúng"> / <input type="number" min="1" max="99" id="rlT" class="rl-in" value="${rl?rl.total:''}" aria-label="Tổng số câu"> câu <button type="button" class="btn ghost" id="rlSave">Lưu</button><span id="rlMsg" class="muted">${rl?'Đã lưu':''}</span></div></details>`:''}
     ${ls?`<h3 style="margin-top:6px">${RL?'Luyện thêm theo đúng 2 dạng nghe của đề Sở (máy đọc, chấm ngay)':'Bài nghe luyện trên trang (máy đọc, chấm ngay)'}</h3><div id="lsBox"></div>`:''}</div>`;
   learnHTML.ls=ls;
   if(MD.isl&&MD.isl.length)h+=`<div class="card"><h3 class="ih">${em('rocket')}Chơi thêm trên iSLCollective</h3><p class="small muted">Bài tương tác cùng chủ điểm trên trang iSLCollective (mở tab mới, không bắt buộc).</p><ul class="isl">${MD.isl.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> <span class="pill">${x.kind==='video'?'Video tương tác':x.kind==='game'?'Game':'Bài tập online'}</span>${x.note_vi?`<br><span class="small muted">${esc(x.note_vi)}</span>`:''}</li>`).join('')}</ul></div>`;
@@ -1097,7 +1098,7 @@ function renderDay(n){
    <div class="row">${gPill(n)}${xPill(n)}${lPill(n)}${pill(wk,'Kiểm tra cuối buổi')}${pill(pp,'Bài giấy')}</div>${trackBar()}</div>
    ${learnHTML(n)}
    <div class="card" id="checkCard"><div class="row" style="justify-content:space-between"><h3 class="ih">${em('brain')}Bước 6 · Kiểm tra nhanh cuối buổi</h3><span class="small muted">${(D.web_check||[]).length+(wk?0:q.length)} câu · gấp tập giấy lại</span></div>
-   ${wk?`<p class="score">${wk.correct/wk.total>=0.8?em('party-popper','',40):wk.correct/wk.total>=0.6?em('sparkles','',40):em('flexed-biceps','',40)}<span>Bạn đúng <b>${wk.correct}/${wk.total}</b> câu.</span></p>`:''}
+   ${wk?`<p class="score">${wk.correct/wk.total>=0.8?em('party-popper','',40):wk.correct/wk.total>=0.6?em('sparkles','',40):em('flexed-biceps','',40)}<span>Cậu đúng <b>${wk.correct}/${wk.total}</b> câu.</span></p>`:''}
    <form id="webForm"></form></div>
    <div class="card" id="paperCard"></div>`;
   wireLearn(n);wireTrack(()=>renderDay(n));
@@ -1140,7 +1141,7 @@ function keyAnswer(it){
 function renderPaperKey(n,unlocked){
   if(cloudOn()&&unlocked){
     const card=$('#paperCard');
-    card.innerHTML=uploadCardHTML(n)+`<details class="selfkey" id="selfKey"><summary>Không chụp được ảnh? Tự chấm bằng đáp án</summary><p class="small muted">Nếu bạn mở đáp án trước khi chụp bài, cô sẽ thấy ghi chú này.</p><div id="selfKeyBody"></div></details>`;
+    card.innerHTML=uploadCardHTML(n)+`<details class="selfkey" id="selfKey"><summary>Không chụp được ảnh? Tự chấm bằng đáp án</summary><p class="small muted">Nếu cậu mở đáp án trước khi chụp bài, cô sẽ thấy ghi chú này.</p><div id="selfKeyBody"></div></details>`;
     wireUpload(n);
     const det=$('#selfKey');
     det.addEventListener('toggle',()=>{if(det.open&&!$('#selfKeyBody').dataset.on){$('#selfKeyBody').dataset.on='1';const r=S.days[n]||{};if(!r.keyOpenedAt){S.days[n]=Object.assign(r,{keyOpenedAt:Date.now()});save()}renderPaperKeyLocal(n,true,$('#selfKeyBody'))}});
@@ -1151,10 +1152,10 @@ function renderPaperKey(n,unlocked){
 }
 function renderPaperKeyLocal(n,unlocked,card){
   const D=DAYS[n-1];const rec=S.days[n]||{};
-  if(!unlocked){card.innerHTML=`<h3 class="ih">${em('locked')}Bước 7 · Chữa bài giấy</h3><p class="muted">Đáp án bài giấy sẽ mở sau khi bạn làm xong Kiểm tra nhanh cuối buổi, để bạn kiểm tra trí nhớ trước.</p>`;return}
+  if(!unlocked){card.innerHTML=`<h3 class="ih">${em('locked')}Bước 7 · Chữa bài giấy</h3><p class="muted">Đáp án bài giấy sẽ mở sau khi cậu làm xong Kiểm tra nhanh cuối buổi, để cậu kiểm tra trí nhớ trước.</p>`;return}
   const PP=((C.web&&C.web[n])||{}).paper_plus;const P=curTrack()==='nang'&&PP?Object.assign({},D.paper,{H_plus:PP}):D.paper;const order=Object.keys(SECTION_NAMES).filter(k=>P[k]);
   const saved=(rec.paper&&rec.paper.ticks)||{};
-  let html=`<div class="row" style="justify-content:space-between"><h3 class="ih">${em('memo')}Bước 7 · Chữa bài giấy</h3>${rec.paper?`<span class="pill good">Đúng ${rec.paper.correct}/${rec.paper.total}</span>`:''}</div><p class="small muted">Đối chiếu từng câu, tích vào câu bạn làm đúng, rồi bấm Lưu.</p><form id="paperForm" class="key-section">`;
+  let html=`<div class="row" style="justify-content:space-between"><h3 class="ih">${em('memo')}Bước 7 · Chữa bài giấy</h3>${rec.paper?`<span class="pill good">Đúng ${rec.paper.correct}/${rec.paper.total}</span>`:''}</div><p class="small muted">Đối chiếu từng câu, tích vào câu cậu làm đúng, rồi bấm Lưu.</p><form id="paperForm" class="key-section">`;
   order.forEach(k=>{const sec=P[k];html+=`<h3 style="margin-top:10px;font-size:1.05rem">${SECTION_NAMES[k]}</h3>`;
     (sec.items||[]).forEach(it=>{const id=it.id;html+=`<label class="key-item"><input type="checkbox" name="${esc(id)}" id="pk_${esc(id)}" ${saved[id]?'checked':''}><span><span class="small muted">${esc(id.replace(/^d\d+/,'').replace(/^([A-Z]\d?)_?(\d+)$/,'$1.$2'))}</span> ${esc(it.q)}<br><span class="key-ans">→ ${esc(keyAnswer(it))}</span>${it.explain_vi?`<span class="kx">${fmtVi(it.explain_vi)}</span>`:''}</span></label>`})});
   const F=P.F_writing;
@@ -1171,7 +1172,7 @@ function renderPaperKeyLocal(n,unlocked,card){
     S.days[n]=Object.assign(S.days[n]||{},{paper:{ticks,correct,total,by,writing,self,at:Date.now()}});save();
     $('#paperMsg').textContent=`Đã lưu: đúng ${correct}/${total} câu.`;
     document.querySelectorAll('#dayStrip .day').forEach(b=>{const st=dayStatus(+b.dataset.d);b.classList.toggle('done',st==='done');b.classList.toggle('part',st==='part')});
-    if(n===14&&!S.final){$('#paperMsg').innerHTML+=' Giờ bạn làm <b>Bài kiểm tra sau 2 tuần</b> ở mục Tiến bộ nhé.'}
+    if(n===14&&!S.final){$('#paperMsg').innerHTML+=' Giờ cậu làm <b>Bài kiểm tra sau 2 tuần</b> ở mục Tiến bộ nhé.'}
   });
 }
 
@@ -1198,7 +1199,7 @@ function vProgress(){
   const okDay=n=>{const r=S.days[n];return r&&r.web&&r.web.correct/r.web.total>=0.6};
   const diag=S.diag,fin=S.final;
   M().innerHTML=`<section class="view">
-   <div><p class="eyebrow">Sau ${A.done.length} / 14 buổi</p><h2>Tiến bộ của ${esc(S.name||'bạn')}</h2></div>
+   <div><p class="eyebrow">Sau ${A.done.length} / 14 buổi</p><h2>Tiến bộ của ${esc(S.name||'cậu')}</h2></div>
    <div class="stats">
      <div class="stat">${em('check-mark-button','si',40)}<b>${A.done.length}</b><span>buổi đã xong cả giấy và web</span></div>
      <div class="stat">${em('bullseye','si',40)}<b>${fmtPct(A.web)}</b><span>đúng trong kiểm tra web</span></div>
@@ -1214,9 +1215,9 @@ function vProgress(){
       ${fin?'':`<button class="btn ${A.done.length>=12?'hi':'ghost'}" id="toFinal" ${diag?'':'disabled'}>Làm bài kiểm tra sau 2 tuần</button><p class="small muted">Nên làm sau buổi 14. Đề có cùng độ khó với đề đầu vào.</p>`}
     </div>
    </div>
-   <div class="card"><h3>Sau 2 tuần bạn làm được gì</h3><p class="small muted">Mỗi dòng sáng lên khi bạn xong buổi đó với ít nhất 60% câu web đúng.</p><ul class="cando">${canDo.map(c=>`<li class="${okDay(c.day)?'ok':''}"><span><span class="small muted">Buổi ${c.day} · </span>${esc(c.t)}</span></li>`).join('')}</ul></div>
+   <div class="card"><h3>Sau 2 tuần cậu làm được gì</h3><p class="small muted">Mỗi dòng sáng lên khi cậu xong buổi đó với ít nhất 60% câu web đúng.</p><ul class="cando">${canDo.map(c=>`<li class="${okDay(c.day)?'ok':''}"><span><span class="small muted">Buổi ${c.day} · </span>${esc(c.t)}</span></li>`).join('')}</ul></div>
    <div class="card"><h3>Chi tiết từng buổi</h3><div class="tbl-wrap"><table><thead><tr><th>Buổi</th><th>Chủ đề</th><th>Web</th><th>Giấy</th><th>Ngày làm</th></tr></thead><tbody>${DAYS.map(d=>{const r=S.days[d.day]||{};return `<tr><td>${d.day}</td><td>${esc(d.theme_vi)}</td><td>${r.web?r.web.correct+'/'+r.web.total:'—'}</td><td>${r.paper?r.paper.correct+'/'+r.paper.total:'—'}</td><td>${r.web?new Date(r.web.at).toLocaleDateString('vi-VN'):'—'}</td></tr>`}).join('')}</tbody></table></div></div>
-   <div class="card"><h3>Ôn thêm các câu còn trong vòng</h3><p class="small muted">Những câu bạn từng sai và chưa nhớ chắc. Làm thêm lúc nào cũng được, kể cả sau buổi 14.</p>${A.queue?`<button class="btn" id="extraBtn">Ôn ${Math.min(10,A.queue)} câu ngay</button>`:'<p class="small">Không còn câu nào chờ ôn.</p>'}<form id="extraForm"></form></div>
+   <div class="card"><h3>Ôn thêm các câu còn trong vòng</h3><p class="small muted">Những câu cậu từng sai và chưa nhớ chắc. Làm thêm lúc nào cũng được, kể cả sau buổi 14.</p>${A.queue?`<button class="btn" id="extraBtn">Ôn ${Math.min(10,A.queue)} câu ngay</button>`:'<p class="small">Không còn câu nào chờ ôn.</p>'}<form id="extraForm"></form></div>
    ${fin?'':'<div id="finalSlot"></div>'}
   </section>`;
   const xb=$('#extraBtn');if(xb)xb.onclick=()=>{
@@ -1263,17 +1264,17 @@ function verdict(entryH,eff,A){
   const notes=[];
   if(A.done.length>=3){
     const acc=pct(A.web);
-    notes.push(`Sau ${A.done.length} buổi, bạn đúng ${Math.round(acc*100)}% câu kiểm tra trên web. ${acc>=0.8?'Ngon lành! Lộ trình sẽ thêm câu thử thách cho bạn.':acc>=0.6?'Ổn áp. Đọc kỹ giải thích ở câu sai là điểm còn lên nữa.':'Bài đang hơi "khó nhằn". Không sao: lộ trình sẽ chậm lại một chút để bạn chắc tay.'}`);
-    if(A.retry[1]>=3)notes.push(`Câu từng sai, bạn làm lại đúng ${Math.round(100*pct(A.retry))}%. ${pct(A.retry)>=0.6?'Trí nhớ dài hạn đang chạy tốt.':'Ôn đều mỗi ngày một chút sẽ giúp nhớ lâu hơn là dồn một lần.'}`);
-    notes.push(`Bạn học ${A.studyDays} ngày trong ${A.span} ngày. ${A.studyDays/Math.max(1,A.span)>=0.75?'Chuỗi đều, giữ lửa nha!':'Thử chọn một khung giờ cố định, buổi ngắn mà đều sẽ hiệu quả hơn.'}`);
+    notes.push(`Sau ${A.done.length} buổi, cậu đúng ${Math.round(acc*100)}% câu kiểm tra trên web. ${acc>=0.8?'Ngon lành! Lộ trình sẽ thêm câu thử thách cho cậu.':acc>=0.6?'Ổn áp. Đọc kỹ giải thích ở câu sai là điểm còn lên nữa.':'Bài đang hơi "khó nhằn". Không sao: lộ trình sẽ chậm lại một chút để cậu chắc tay.'}`);
+    if(A.retry[1]>=3)notes.push(`Câu từng sai, cậu làm lại đúng ${Math.round(100*pct(A.retry))}%. ${pct(A.retry)>=0.6?'Trí nhớ dài hạn đang chạy tốt.':'Ôn đều mỗi ngày một chút sẽ giúp nhớ lâu hơn là dồn một lần.'}`);
+    notes.push(`Cậu học ${A.studyDays} ngày trong ${A.span} ngày. ${A.studyDays/Math.max(1,A.span)>=0.75?'Chuỗi đều, giữ lửa nha!':'Tớ hay chọn một khung giờ cố định, buổi ngắn mà đều; cậu thử xem.'}`);
   }
   let vc,head,msg;
-  if(entryH>=last.h){vc='good';head=`Bạn đã chạm mức của ${GL.name}`;msg=`Level hiện tại đã đủ cho ${GL.name}. Giữ nhịp để không tụt, hoặc thử nhắm một trường cao hơn ở tab Sau 14 ngày.`}
-  else if(late){vc='warn';head='Tới mùa chốt trường rồi';msg=`Đây là lúc chốt trường theo level và điểm thi thử hiện tại (tab Chọn trường), rồi dồn sức luyện đề. Nếu vẫn nhắm ${GL.name}, khoảng ${need} phút tự học mỗi ngày đến ngày thi sẽ giúp bạn tiến gần hơn.`}
-  else if(L.t==='nhẹ nhàng'){vc='good';head='Đang đúng nhịp';msg=`Khoảng ${need} phút tự học mỗi ngày, ${dpw} ngày/tuần${clsTxt} là đủ để bạn chạm ${last.target} (mức của ${GL.name}) trước mốc chốt trường. Nhẹ nhàng thôi, giữ đều là được.`}
-  else if(L.t==='hơi nhiều'){vc='warn';head='Thêm chút nhịp là kịp';msg=`Để chạm ${last.target} trước mốc chốt, bạn cần khoảng ${need} phút tự học mỗi ngày, ${dpw} ngày/tuần${clsTxt}. Hơi nhiều một chút: chọn một khung giờ cố định, hoặc ghép thêm giờ trên lớp cho nhẹ.`}
-  else{vc='warn';head='Đích này cần thêm vài combo nữa';msg=`Để chạm ${last.target} của ${GL.name} trước mốc chốt, phần tự học sẽ khá dài (khoảng ${need} phút mỗi ngày). Thay vì cày tới đuối, bạn có thể ghép thêm giờ học trên lớp, đặt một trạm dừng gần hơn rồi nâng đích dần, và xem lại sau mỗi chặng 14 buổi: tốc độ thật của bạn có khi nhanh hơn dự đoán.`}
-  if(min<need&&L.t!=='nên chia 2 hiệp')notes.push(`Bạn đang chọn ${min} phút × ${dpw} ngày. Kéo thanh trượt lên một chút để xem đường dự báo đổi ra sao.`);
+  if(entryH>=last.h){vc='good';head=`Cậu đã chạm mức của ${GL.name}`;msg=`Level hiện tại đã đủ cho ${GL.name}. Giữ nhịp để không tụt, hoặc thử nhắm một trường cao hơn ở tab Sau 14 ngày.`}
+  else if(late){vc='warn';head='Tới mùa chốt trường rồi';msg=`Đây là lúc chốt trường theo level và điểm thi thử hiện tại (tab Chọn trường), rồi dồn sức luyện đề. Nếu vẫn nhắm ${GL.name}, khoảng ${need} phút tự học mỗi ngày đến ngày thi sẽ giúp cậu tiến gần hơn.`}
+  else if(L.t==='nhẹ nhàng'){vc='good';head='Đang đúng nhịp';msg=`Khoảng ${need} phút tự học mỗi ngày, ${dpw} ngày/tuần${clsTxt} là đủ để cậu chạm ${last.target} (mức của ${GL.name}) trước mốc chốt trường. Nhẹ nhàng thôi, giữ đều là được.`}
+  else if(L.t==='hơi nhiều'){vc='warn';head='Thêm chút nhịp là kịp';msg=`Để chạm ${last.target} trước mốc chốt, cậu cần khoảng ${need} phút tự học mỗi ngày, ${dpw} ngày/tuần${clsTxt}. Hơi nhiều một chút: chọn một khung giờ cố định, hoặc ghép thêm giờ trên lớp cho nhẹ.`}
+  else{vc='warn';head='Đích này cần thêm vài combo nữa';msg=`Để chạm ${last.target} của ${GL.name} trước mốc chốt, phần tự học sẽ khá dài (khoảng ${need} phút mỗi ngày). Thay vì cày tới đuối, cậu có thể ghép thêm giờ học trên lớp, đặt một trạm dừng gần hơn rồi nâng đích dần, và xem lại sau mỗi chặng 14 buổi: tốc độ thật của cậu có khi nhanh hơn dự đoán.`}
+  if(min<need&&L.t!=='nên chia 2 hiệp')notes.push(`Cậu đang chọn ${min} phút × ${dpw} ngày. Kéo thanh trượt lên một chút để xem đường dự báo đổi ra sao.`);
   return {cls:vc,head,msg,notes,need};
 }
 function vPlan(){
@@ -1281,27 +1282,27 @@ function vPlan(){
   const entry=S.final&&S.final.hours>(S.diag?S.diag.hours:0)?S.final:S.diag;
   const entryH=entry?entry.hours:null;
   M().innerHTML=`<section class="view">
-  <div><p class="eyebrow">Chỉ tính môn tiếng Anh</p><h2>Đường lên level của bạn</h2><p class="lead">Đề chuyên Anh Hà Nội dùng từ vựng chủ yếu ở B2, câu "phân loại" ở C1. CES chốt level và trường vào tháng ${chotDate(gradeNow()).getMonth()+1} năm lớp 9, sớm hơn kỳ thi ${CHOT_MONTHS} tháng, để năm cuối cấp bạn nhẹ đầu. Các mốc dưới đây tính ngược từ đó, theo trường bạn nhắm.</p></div>
-  <div class="card"><div class="sgrid"><label class="fld">Bạn đang học lớp<select id="pGrade">${[6,7,8,9].map(g=>`<option value="${g}" ${gradeNow()===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label><label class="fld">Trường bạn nhắm<select id="pGoal">${GOALS.map(g=>`<option value="${g.k}" ${goalNow().k===g.k?'selected':''}>${esc(g.name)} (cần khoảng ${esc(lvName(goalH(g.k)))})</option>`).join('')}</select></label><label class="fld">Học trên lớp ở CES<select id="pCls">${[[0,'Không (tự học)'],[1.5,'1,5 giờ/tuần'],[3,'3 giờ/tuần'],[4.5,'4,5 giờ/tuần']].map(([v,n])=>`<option value="${v}" ${(S.plan.cls||0)===v?'selected':''}>${n}</option>`).join('')}</select></label></div>
+  <div><p class="eyebrow">Chỉ tính môn tiếng Anh</p><h2>Đường lên level của cậu</h2><p class="lead">Đề chuyên Anh Hà Nội dùng từ vựng chủ yếu ở B2, câu "phân loại" ở C1. CES chốt level và trường vào tháng ${chotDate(gradeNow()).getMonth()+1} năm lớp 9, sớm hơn kỳ thi ${CHOT_MONTHS} tháng, để năm cuối cấp cậu nhẹ đầu. Các mốc dưới đây tính ngược từ đó, theo trường cậu nhắm.</p></div>
+  <div class="card"><div class="sgrid"><label class="fld">Cậu đang học lớp<select id="pGrade">${[6,7,8,9].map(g=>`<option value="${g}" ${gradeNow()===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label><label class="fld">Trường cậu nhắm<select id="pGoal">${GOALS.map(g=>`<option value="${g.k}" ${goalNow().k===g.k?'selected':''}>${esc(g.name)} (cần khoảng ${esc(lvName(goalH(g.k)))})</option>`).join('')}</select></label><label class="fld">Học trên lớp ở CES<select id="pCls">${[[0,'Không (tự học)'],[1.5,'1,5 giờ/tuần'],[3,'3 giờ/tuần'],[4.5,'4,5 giờ/tuần']].map(([v,n])=>`<option value="${v}" ${(S.plan.cls||0)===v?'selected':''}>${n}</option>`).join('')}</select></label></div>
   <div class="row"><button class="btn ghost" id="toCourse">Sau 14 ngày học gì? Xem bản đồ theo giai đoạn</button></div></div>
-  ${entry?`<div class="card"><h3>Bạn học bao nhiêu thì đi được tới đâu?</h3>
+  ${entry?`<div class="card"><h3>Cậu học bao nhiêu thì đi được tới đâu?</h3>
    <div class="sim">
      <div class="slider"><label for="minR">Phút tự học mỗi ngày (ở nhà, ngoài giờ ở trường) <output id="minO">${S.plan.min}</output></label><input type="range" id="minR" min="15" max="120" step="5" value="${S.plan.min}"></div>
      <div class="slider"><label for="dpwR">Số ngày mỗi tuần <output id="dpwO">${S.plan.dpw}</output></label><input type="range" id="dpwR" min="1" max="7" step="1" value="${S.plan.dpw}"></div>
    </div>
    <div class="chart" id="chart"></div>
-   <div class="tbl-wrap"><table><thead><tr><th>Mốc</th><th>Mốc gợi ý</th><th>Dự báo của bạn</th><th></th></tr></thead><tbody id="mTable"></tbody></table></div>
-   <p class="small muted">Cách tính: giờ học có hướng dẫn theo khung Cambridge (A2 khoảng 190 giờ, B1 375, B2 550, C1 750). Mỗi giờ tự học tính bằng 0,6 giờ học chuẩn, mỗi giờ trên lớp ở CES bằng 0,8 giờ, trừ 15% cho nghỉ lễ và thi học kỳ${eff.from?`, nhân hệ số tốc độ ${eff.f} đo từ chính các buổi bạn đã làm`:''}. Đây là ước tính để định hướng, sẽ đổi khi bạn học.</p>
+   <div class="tbl-wrap"><table><thead><tr><th>Mốc</th><th>Mốc gợi ý</th><th>Dự báo của cậu</th><th></th></tr></thead><tbody id="mTable"></tbody></table></div>
+   <p class="small muted">Cách tính: giờ học có hướng dẫn theo khung Cambridge (A2 khoảng 190 giờ, B1 375, B2 550, C1 750). Mỗi giờ tự học tính bằng 0,6 giờ học chuẩn, mỗi giờ trên lớp ở CES bằng 0,8 giờ, trừ 15% cho nghỉ lễ và thi học kỳ${eff.from?`, nhân hệ số tốc độ ${eff.f} đo từ chính các buổi cậu đã làm`:''}. Đây là ước tính để định hướng, sẽ đổi khi cậu học.</p>
   </div>
-  <div id="verdictSlot"></div>`:`<div class="card lockbox">${doodle('lock','lk',56)}<div><p class="eyebrow">Còn khoá</p><h3>Biểu đồ của riêng bạn</h3><p>Mình chưa biết bạn đang ở level nào, nên chưa vẽ đường vội. Làm bài đầu vào 30 câu (khoảng 25 phút) là biểu đồ, các mốc và lời gợi ý mở khoá ngay.</p><div class="row"><button class="btn hi" id="pDiag">Làm bài đầu vào</button></div></div></div>`}
-  <div class="card"><h3>Sau 14 ngày, bạn sẽ có</h3><ul class="cando">
+  <div id="verdictSlot"></div>`:`<div class="card lockbox">${doodle('lock','lk',56)}<div><p class="eyebrow">Còn khoá</p><h3>Biểu đồ của riêng cậu</h3><p>Tớ chưa biết cậu đang ở level nào, nên chưa dám vẽ đường vội. Làm bài đầu vào 30 câu (khoảng 25 phút) là biểu đồ, các mốc và lời gợi ý mở khoá ngay.</p><div class="row"><button class="btn hi" id="pDiag">Làm bài đầu vào</button></div></div></div>`}
+  <div class="card"><h3>Sau 14 ngày, cậu sẽ có</h3><ul class="cando">
     <li class="ok">96 từ vựng B1–B2 thuộc 12 chủ đề hay gặp trong đề chuyên, mỗi từ kèm cả "gia đình" từ của nó</li>
     <li class="ok">24 cụm động từ (phrasal verbs)</li>
     <li class="ok">12 chủ điểm ngữ pháp B1 và 12 quy tắc cấu tạo từ</li>
     <li class="ok">Làm quen 6 dạng câu của đề chuyên: hoàn thành câu, đồng nghĩa, trái nghĩa, hội thoại, viết lại câu, điền từ đoạn văn</li>
     <li class="ok">12 bài đọc và 14 đoạn viết có tiêu chí tự chấm</li>
-    <li class="ok">Một bức chân dung thật về nhịp học và trí nhớ của bạn, để lộ trình sau đó vừa khít với bạn</li></ul>
-    <p class="small muted">14 ngày chưa đủ để lên hẳn một level (mỗi level cần khoảng 90–200 giờ). Giá trị của 14 ngày là thói quen, và dữ liệu để vẽ đúng đường cho bạn.</p></div>
+    <li class="ok">Một bức chân dung thật về nhịp học và trí nhớ của cậu, để lộ trình sau đó vừa khít với cậu</li></ul>
+    <p class="small muted">14 ngày chưa đủ để lên hẳn một level (mỗi level cần khoảng 90–200 giờ). Giá trị của 14 ngày là thói quen, và dữ liệu để vẽ đúng đường cho cậu.</p></div>
   </section>`;
   const pd=$('#pDiag');if(pd)pd.onclick=()=>go('diag');
   const draw=()=>{
@@ -1310,7 +1311,7 @@ function vPlan(){
     $('#chart').innerHTML=chartSVG(entryH,hpw,eff.f);
     $('#mTable').innerHTML=MS().map(m=>{const h=project(entryH,hpw,eff.f,m.date);const ok=h>=m.h;return `<tr><td>${m.label} (${String(m.date.getMonth()+1).padStart(2,'0')}/${m.date.getFullYear()})</td><td>${m.target}</td><td>${lvName(h)}</td><td><span class="pill ${ok?'good':''}">${ok?'đúng mốc':'cần thêm nhịp'}</span></td></tr>`}).join('');
     const V=verdict(entryH,eff,A);
-    $('#verdictSlot').innerHTML=`<div class="verdict ${V.cls}"><p class="eyebrow">Bạn đang đi thế nào</p><h3>${esc(V.head)}</h3><p>${esc(V.msg)}</p>${V.notes.length?'<ul>'+V.notes.map(n=>'<li>'+esc(n)+'</li>').join('')+'</ul>':''}<p class="small">Điểm xuất phát: ${LEVELS.find(l=>l.k===entry.level).name} (bài ${entry===S.final?'sau 14 ngày':'đầu vào'}). ${A.done.length<3?'Làm thêm vài buổi là lời gợi ý sẽ sát với bạn hơn.':''}</p></div>`;
+    $('#verdictSlot').innerHTML=`<div class="verdict ${V.cls}"><p class="eyebrow">Cậu đang đi thế nào</p><h3>${esc(V.head)}</h3><p>${esc(V.msg)}</p>${V.notes.length?'<ul>'+V.notes.map(n=>'<li>'+esc(n)+'</li>').join('')+'</ul>':''}<p class="small">Điểm xuất phát: ${LEVELS.find(l=>l.k===entry.level).name} (bài ${entry===S.final?'sau 14 ngày':'đầu vào'}). ${A.done.length<3?'Làm thêm vài buổi là lời gợi ý sẽ sát với cậu hơn.':''}</p></div>`;
   };
   draw();
   const on=(id,ev,f)=>{const el=$('#'+id);if(el)el[ev]=f};
@@ -1349,16 +1350,16 @@ function summary(){
 }
 function vShare(){
   M().innerHTML=`<section class="view">
-  <div><p class="eyebrow">Gửi kết quả</p><h2>Gửi kết quả cho cô</h2><p class="lead">Kết quả chỉ nằm trên máy của bạn. Bấm tạo mã, sao chép rồi gửi cho cô qua Zalo hoặc tin nhắn. Mã không chứa thông tin gì ngoài tên bạn và điểm từng buổi.</p></div>
+  <div><p class="eyebrow">Gửi kết quả</p><h2>Gửi kết quả cho cô</h2><p class="lead">Kết quả chỉ nằm trên máy của cậu. Bấm tạo mã, sao chép rồi gửi cho cô qua Zalo hoặc tin nhắn. Mã không chứa thông tin gì ngoài tên cậu và điểm từng buổi.</p></div>
   <div class="card"><div class="row"><button class="btn hi" id="mk">Tạo mã kết quả</button><button class="btn ghost" id="cp" disabled>Sao chép mã</button><span class="small muted" id="cpMsg"></span></div><div class="code" id="codeBox" hidden></div></div>
-  <details class="card" id="teacher"><summary>Dành cho cô và bố mẹ: xem kết quả từ mã</summary>
-   <p class="small muted">Dán mã bạn gửi vào ô dưới đây.</p><textarea id="codeIn" placeholder="Dán mã kết quả"></textarea><div class="row"><button class="btn" id="rd">Xem báo cáo</button><span class="small muted" id="rdMsg"></span></div><div id="report"></div></details>
+  <details class="card" id="teacher"><summary>Dành cho cô giáo và cô chú: xem kết quả từ mã</summary>
+   <p class="small muted">Dán mã cậu gửi vào ô dưới đây.</p><textarea id="codeIn" placeholder="Dán mã kết quả"></textarea><div class="row"><button class="btn" id="rd">Xem báo cáo</button><span class="small muted" id="rdMsg"></span></div><div id="report"></div></details>
   ${resetCardHTML()}
   </section>`;
   let code='';
   $('#mk').onclick=async()=>{code=await pack(summary());$('#codeBox').hidden=false;$('#codeBox').textContent=code;$('#cp').disabled=false};
-  $('#cp').onclick=async()=>{try{await navigator.clipboard.writeText(code);$('#cpMsg').textContent='Đã sao chép.'}catch(e){const r=document.createRange();r.selectNodeContents($('#codeBox'));const s=getSelection();s.removeAllRanges();s.addRange(r);$('#cpMsg').textContent='Đã bôi đen mã, bạn bấm sao chép trên máy nhé.'}};
-  $('#rd').onclick=async()=>{try{const o=await unpack($('#codeIn').value);$('#report').innerHTML=reportHTML(o);$('#rdMsg').textContent=''}catch(e){$('#rdMsg').textContent='Mã không đọc được. Kiểm tra bạn đã sao chép đủ mã chưa.'}};
+  $('#cp').onclick=async()=>{try{await navigator.clipboard.writeText(code);$('#cpMsg').textContent='Đã sao chép.'}catch(e){const r=document.createRange();r.selectNodeContents($('#codeBox'));const s=getSelection();s.removeAllRanges();s.addRange(r);$('#cpMsg').textContent='Đã bôi đen mã, cậu bấm sao chép trên máy nhé.'}};
+  $('#rd').onclick=async()=>{try{const o=await unpack($('#codeIn').value);$('#report').innerHTML=reportHTML(o);$('#rdMsg').textContent=''}catch(e){$('#rdMsg').textContent='Mã không đọc được. Kiểm tra cậu đã sao chép đủ mã chưa.'}};
   wireReset();
 }
 function resetCardHTML(){return `<div class="card"><h3>Làm lại từ đầu</h3><p class="small muted">Xóa toàn bộ kết quả trên máy này. Chỉ dùng khi đổi sang một học sinh khác.${cloudOn()?' Kết quả đã gửi cho cô vẫn được giữ.':''}</p><div class="row"><button class="btn ghost" id="rs1">Xóa kết quả</button><button class="btn" id="rs2" hidden>Chắc chắn xóa</button></div></div>`}

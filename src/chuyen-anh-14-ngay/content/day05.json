@@ -3,7 +3,7 @@
   "type": "normal",
   "theme_en": "Health & fitness",
   "theme_vi": "Sức khoẻ",
-  "goal_vi": "Hôm nay bạn sẽ học các từ về sức khoẻ và luyện so sánh hơn, so sánh nhất, cùng các cấu trúc too / enough / so / such. Bạn cũng làm quen với dạng bài chọn câu gần nghĩa nhất – dạng bài 'khó nhằn' nhưng rất hay gặp trong đề thi chuyên đấy!",
+  "goal_vi": "Hôm nay cậu sẽ học các từ về sức khoẻ và luyện so sánh hơn, so sánh nhất, cùng các cấu trúc too / enough / so / such. Cậu cũng làm quen với dạng bài chọn câu gần nghĩa nhất – dạng bài 'khó nhằn' nhưng rất hay gặp trong đề thi chuyên đấy!",
   "minutes": 30,
   "vocab": [
     {
@@ -147,7 +147,7 @@
   },
   "paper": {
     "A_vocab": {
-      "instruction_vi": "Bạn chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ed…) nếu cần nhé!",
+      "instruction_vi": "Cậu chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần và có 2 từ thừa. Nhớ đổi dạng từ (thêm -s, -ed…) nếu cần nhé!",
       "bank": [
         "diet",
         "exercise",
@@ -204,7 +204,7 @@
       ]
     },
     "B_grammar": {
-      "instruction_vi": "Bạn viết dạng đúng của từ trong ngoặc, hoặc điền too / enough / so / such vào chỗ trống nhé. Mỗi chỗ trống chỉ điền 1–3 từ.",
+      "instruction_vi": "Cậu viết dạng đúng của từ trong ngoặc, hoặc điền too / enough / so / such vào chỗ trống nhé. Mỗi chỗ trống chỉ điền 1–3 từ.",
       "items": [
         {
           "id": "d5B1",
@@ -279,13 +279,13 @@
           "q": "I ______ broccoli, but my mum says it is good for me. (LIKE)",
           "answer": "dislike",
           "tag": "d5w",
-          "explain_vi": "==but my mum says it is good for me== → bạn không thích bông cải: **dislike** (dis- + like). __Chỗ trống đứng sau 'I' nên cần động từ.__"
+          "explain_vi": "==but my mum says it is good for me== → cậu không thích bông cải: **dislike** (dis- + like). __Chỗ trống đứng sau 'I' nên cần động từ.__"
         }
       ]
     },
     "D_exam": {
       "format": "sentence_transformation",
-      "instruction_vi": "Dạng bài chọn câu gần nghĩa nhất: bạn đọc câu cho sẵn, rồi chọn câu (A, B, C hoặc D) có nghĩa GẦN NHẤT với câu đó. Mẹo: so sánh từng ý nhỏ – ai hơn ai, có làm được hay không.",
+      "instruction_vi": "Dạng bài chọn câu gần nghĩa nhất: cậu đọc câu cho sẵn, rồi chọn câu (A, B, C hoặc D) có nghĩa GẦN NHẤT với câu đó. Mẹo: so sánh từng ý nhỏ – ai hơn ai, có làm được hay không.",
       "items": [
         {
           "id": "d5D1",
@@ -352,7 +352,7 @@
           "q": "Vinh decided to sign up for the race without anyone's help.",
           "answer": "False",
           "tag": "d5r",
-          "explain_vi": "Bài viết ==Vinh's best friend, Khoa, persuaded him to sign up== → có bạn thuyết phục, nên câu này **False**. __Gặp 'without anyone's help', bạn tìm xem có ai giúp không.__"
+          "explain_vi": "Bài viết ==Vinh's best friend, Khoa, persuaded him to sign up== → có bạn thuyết phục, nên câu này **False**. __Gặp 'without anyone's help', cậu tìm xem có ai giúp không.__"
         },
         {
           "id": "d5E2",
@@ -394,18 +394,18 @@
     },
     "F_writing": {
       "task_en": "Write a paragraph (50–70 words) comparing your healthy and unhealthy habits. Say which habit you want to change and why.",
-      "task_vi": "Viết một đoạn văn (50–70 từ) so sánh những thói quen tốt và chưa tốt cho sức khoẻ của bạn. Nói bạn muốn thay đổi thói quen nào và vì sao.",
+      "task_vi": "Viết một đoạn văn (50–70 từ) so sánh những thói quen tốt và chưa tốt cho sức khoẻ của cậu. Nói cậu muốn thay đổi thói quen nào và vì sao.",
       "min_words": 50,
       "model": "I think I am healthier than many of my friends because I cycle to school every day and eat a lot of fruit. However, I have one bad habit: I go to bed too late. Last night I played games until midnight, and this morning I was so tired that I couldn't concentrate in class. I want to change this habit because sleep is the best way to get more energy.",
       "checklist_vi": [
-        "Bạn có dùng ít nhất 1 câu so sánh hơn và 1 câu so sánh nhất không?",
-        "Bạn có dùng ít nhất 1 cấu trúc too / enough hoặc so / such … that không?",
-        "Bạn có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 5 không?",
-        "Đoạn văn đủ 50 từ và có nêu lý do (because …) vì sao bạn muốn thay đổi."
+        "Cậu có dùng ít nhất 1 câu so sánh hơn và 1 câu so sánh nhất không?",
+        "Cậu có dùng ít nhất 1 cấu trúc too / enough hoặc so / such … that không?",
+        "Cậu có dùng ít nhất 3 từ mới hoặc cụm động từ của buổi 5 không?",
+        "Đoạn văn đủ 50 từ và có nêu lý do (because …) vì sao cậu muốn thay đổi."
       ]
     },
     "G_review": {
-      "instruction_vi": "Ôn xoắn ốc – bạn ôn lại buổi 4 (Công nghệ), buổi 2 (Sở thích) và buổi 1 (Trường học) nhé. Điền từ thích hợp hoặc chia động từ trong ngoặc.",
+      "instruction_vi": "Ôn xoắn ốc – cậu ôn lại buổi 4 (Công nghệ), buổi 2 (Sở thích) và buổi 1 (Trường học) nhé. Điền từ thích hợp hoặc chia động từ trong ngoặc.",
       "items": [
         {
           "id": "d5G1",
@@ -536,7 +536,7 @@
         "imhappy"
       ],
       "answer": 2,
-      "explain_vi": "happy thêm tiền tố **un-** → **unhappy** (không vui), hợp với ==lost the final match==. __dis-, in-, im- không đi với happy; bạn nên học thuộc theo cặp từ.__",
+      "explain_vi": "happy thêm tiền tố **un-** → **unhappy** (không vui), hợp với ==lost the final match==. __dis-, in-, im- không đi với happy; cậu nên học thuộc theo cặp từ.__",
       "tag": "d5w"
     },
     {
@@ -607,9 +607,9 @@
     }
   ],
   "can_do_vi": [
-    "Bạn có thể nói về sức khoẻ và thói quen bằng 8 từ mới và 2 cụm động từ work out, get over.",
-    "Bạn có thể dùng đúng so sánh hơn, so sánh nhất, too / enough và so / such … that.",
-    "Bạn có thể tạo từ trái nghĩa với tiền tố un-, im-, in-, dis-.",
-    "Bạn có thể chọn câu gần nghĩa nhất với câu cho sẵn trong đề thi chuyên."
+    "Cậu có thể nói về sức khoẻ và thói quen bằng 8 từ mới và 2 cụm động từ work out, get over.",
+    "Cậu có thể dùng đúng so sánh hơn, so sánh nhất, too / enough và so / such … that.",
+    "Cậu có thể tạo từ trái nghĩa với tiền tố un-, im-, in-, dis-.",
+    "Cậu có thể chọn câu gần nghĩa nhất với câu cho sẵn trong đề thi chuyên."
   ]
 }

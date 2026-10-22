@@ -3,7 +3,7 @@
  "type": "normal",
  "theme_en": "Travel & transport",
  "theme_vi": "Du lịch và đi lại",
- "goal_vi": "Hôm nay bạn sẽ học 8 từ mới và 2 cụm động từ về du lịch, đi lại, cùng cách dùng can/could/be able to, must/have to và should. Bạn cũng sẽ làm quen với dạng bài điền từ vào đoạn văn – một dạng rất hay gặp trong đề thi chuyên, cố lên bạn nhé!",
+ "goal_vi": "Hôm nay cậu sẽ học 8 từ mới và 2 cụm động từ về du lịch, đi lại, cùng cách dùng can/could/be able to, must/have to và should. Cậu cũng sẽ làm quen với dạng bài điền từ vào đoạn văn – một dạng rất hay gặp trong đề thi chuyên, cố lên cậu nhé!",
  "minutes": 30,
  "vocab": [
   {
@@ -140,7 +140,7 @@
  },
  "paper": {
   "A_vocab": {
-   "instruction_vi": "Bạn chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, và có 2 từ không cần dùng đến nhé.",
+   "instruction_vi": "Cậu chọn từ hoặc cụm từ trong khung để điền vào chỗ trống. Mỗi từ chỉ dùng một lần, và có 2 từ không cần dùng đến nhé.",
    "bank": [
     "journey",
     "destination",
@@ -197,7 +197,7 @@
    ]
   },
   "B_grammar": {
-   "instruction_vi": "Bạn chọn từ đúng trong ngoặc, hoặc viết dạng đúng của động từ khuyết thiếu trong ngoặc. Nhớ để ý xem câu nói về hiện tại, quá khứ hay tương lai nhé.",
+   "instruction_vi": "Cậu chọn từ đúng trong ngoặc, hoặc viết dạng đúng của động từ khuyết thiếu trong ngoặc. Nhớ để ý xem câu nói về hiện tại, quá khứ hay tương lai nhé.",
    "items": [
     {
      "id": "d6B1",
@@ -207,7 +207,7 @@
       "do not have to"
      ],
      "tag": "d6g",
-     "explain_vi": "Bữa trưa ==already included in the tour price== → không cần mua: **don't have to**. __mustn't là cấm, sai ý vì bạn vẫn được mua đồ ăn vặt.__"
+     "explain_vi": "Bữa trưa ==already included in the tour price== → không cần mua: **don't have to**. __mustn't là cấm, sai ý vì cậu vẫn được mua đồ ăn vặt.__"
     },
     {
      "id": "d6B2",
@@ -259,7 +259,7 @@
    ]
   },
   "C_wordform": {
-   "instruction_vi": "Viết dạng đúng của từ in hoa. Gợi ý: hôm nay tất cả đều là danh từ chỉ người – bạn nhớ xem có cần thêm -s số nhiều không nhé.",
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Gợi ý: hôm nay tất cả đều là danh từ chỉ người – cậu nhớ xem có cần thêm -s số nhiều không nhé.",
    "items": [
     {
      "id": "d6C1",
@@ -296,7 +296,7 @@
   },
   "D_exam": {
    "format": "cloze",
-   "instruction_vi": "Bạn đọc đoạn văn rồi chọn đáp án A, B, C hoặc D phù hợp nhất cho mỗi chỗ trống (1)–(4). Mẹo: đọc cả câu trước và sau chỗ trống trước khi chọn nhé!",
+   "instruction_vi": "Cậu đọc đoạn văn rồi chọn đáp án A, B, C hoặc D phù hợp nhất cho mỗi chỗ trống (1)–(4). Mẹo: đọc cả câu trước và sau chỗ trống trước khi chọn nhé!",
    "text": "Last month my class went on a school trip to Ninh Bình. We (1) ______ off at six o'clock in the morning, and everyone was very excited. The journey took about two hours. When we arrived, we took a boat along the river and (2) ______ several caves. Our teacher told us that we (3) ______ throw rubbish into the water because it would harm the fish. At the end of the day, we were tired but happy. I am already looking forward (4) ______ our next trip!",
    "items": [
     {
@@ -406,18 +406,18 @@
   },
   "F_writing": {
    "task_en": "Write a short paragraph (50–70 words) about a trip you have taken or would like to take. Say where you went (or want to go), how you travelled, and what you did (or want to do) there. Use at least one modal verb (can, could, must, have to, should) and two words from today's lesson.",
-   "task_vi": "Bạn viết một đoạn văn ngắn (50–70 từ) kể về một chuyến đi bạn đã đi hoặc muốn đi: đi đâu, đi bằng phương tiện gì, đã làm gì (hoặc muốn làm gì) ở đó. Bạn nhớ dùng ít nhất 1 động từ khuyết thiếu và 2 từ mới của bài hôm nay nhé.",
+   "task_vi": "Cậu viết một đoạn văn ngắn (50–70 từ) kể về một chuyến đi cậu đã đi hoặc muốn đi: đi đâu, đi bằng phương tiện gì, đã làm gì (hoặc muốn làm gì) ở đó. Cậu nhớ dùng ít nhất 1 động từ khuyết thiếu và 2 từ mới của bài hôm nay nhé.",
    "min_words": 50,
    "model": "Last Tết, my family went to Đà Lạt by coach. We set off very early, but the journey was long because the roads were crowded. In Đà Lạt, we explored the flower gardens and the night market. It was cold, so we had to wear thick jackets. I bought a little wooden horse as a souvenir for my cousin. If you visit Đà Lạt, you should try the hot soy milk there!",
    "checklist_vi": [
-    "Bạn đã nói rõ đi đâu, đi bằng gì và làm gì ở đó chưa?",
-    "Bạn đã dùng ít nhất 1 động từ khuyết thiếu (can/could/must/have to/should) và theo sau là động từ nguyên thể không 'to' chưa?",
-    "Bạn đã dùng ít nhất 2 từ mới của bài hôm nay chưa?",
-    "Bạn đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
+    "Cậu đã nói rõ đi đâu, đi bằng gì và làm gì ở đó chưa?",
+    "Cậu đã dùng ít nhất 1 động từ khuyết thiếu (can/could/must/have to/should) và theo sau là động từ nguyên thể không 'to' chưa?",
+    "Cậu đã dùng ít nhất 2 từ mới của bài hôm nay chưa?",
+    "Cậu đã viết đủ 50 từ, kiểm tra chính tả và dấu chấm câu chưa?"
    ]
   },
   "G_review": {
-   "instruction_vi": "Ôn xoắn ốc – Bạn làm theo gợi ý trong ngoặc ở mỗi câu để ôn lại kiến thức của các buổi trước nhé. Không nhớ thì bạn mở lại bài cũ xem cũng được!",
+   "instruction_vi": "Ôn xoắn ốc – Cậu làm theo gợi ý trong ngoặc ở mỗi câu để ôn lại kiến thức của các buổi trước nhé. Không nhớ thì cậu mở lại bài cũ xem cũng được!",
    "items": [
     {
      "id": "d6G1",
@@ -500,7 +500,7 @@
    "accept": [
     "explore"
    ],
-   "explain_vi": "Sau ==to== dùng động từ nguyên thể: **explore** (khám phá) phố cổ. __Chữ cái gợi ý 'e' giúp bạn loại các từ khác.__",
+   "explain_vi": "Sau ==to== dùng động từ nguyên thể: **explore** (khám phá) phố cổ. __Chữ cái gợi ý 'e' giúp cậu loại các từ khác.__",
    "tag": "d6v4"
   },
   {
@@ -634,8 +634,8 @@
   }
  ],
  "can_do_vi": [
-  "Bạn có thể dùng 8 từ mới và 2 cụm động từ (set off, look forward to) để nói về một chuyến đi.",
-  "Bạn có thể phân biệt mustn't (cấm) và don't have to (không cần), và dùng could/was able to, had to khi nói về quá khứ.",
-  "Bạn có thể tạo danh từ chỉ người với -er/-or/-ist/-ian và làm bài điền từ vào đoạn văn."
+  "Cậu có thể dùng 8 từ mới và 2 cụm động từ (set off, look forward to) để nói về một chuyến đi.",
+  "Cậu có thể phân biệt mustn't (cấm) và don't have to (không cần), và dùng could/was able to, had to khi nói về quá khứ.",
+  "Cậu có thể tạo danh từ chỉ người với -er/-or/-ist/-ian và làm bài điền từ vào đoạn văn."
  ]
 }

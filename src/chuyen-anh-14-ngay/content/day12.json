@@ -3,7 +3,7 @@
  "type": "normal",
  "theme_en": "Science & inventions",
  "theme_vi": "Khoa học và phát minh",
- "goal_vi": "Hôm nay bạn sẽ khám phá thế giới khoa học với những từ như experiment, research, breakthrough. Bạn cũng sẽ học câu tường thuật – cách kể lại lời người khác nói – và ôn tổng hợp tất cả các hậu tố đã học!",
+ "goal_vi": "Hôm nay cậu sẽ khám phá thế giới khoa học với những từ như experiment, research, breakthrough. Cậu cũng sẽ học câu tường thuật – cách kể lại lời người khác nói – và ôn tổng hợp tất cả các hậu tố đã học!",
  "minutes": 30,
  "vocab": [
   {
@@ -113,7 +113,7 @@
  "wordform": {
   "id": "d12w",
   "focus": "Mixed word formation (all suffixes so far)",
-  "rule_vi": "Hôm nay bạn ôn tất cả hậu tố đã học: danh từ (-tion, -ment, -ness, -ity, -ence, -ance, -er/-ist), tính từ (-ful, -less, -al, -ous, -able, -ive), trạng từ (-ly), động từ (-ise, -ify, -en). Bước 1: xem chỗ trống cần loại từ gì. Bước 2: chọn hậu tố phù hợp. Bước 3: kiểm tra nghĩa (khẳng định hay phủ định? số ít hay số nhiều?).",
+  "rule_vi": "Hôm nay cậu ôn tất cả hậu tố đã học: danh từ (-tion, -ment, -ness, -ity, -ence, -ance, -er/-ist), tính từ (-ful, -less, -al, -ous, -able, -ive), trạng từ (-ly), động từ (-ise, -ify, -en). Bước 1: xem chỗ trống cần loại từ gì. Bước 2: chọn hậu tố phù hợp. Bước 3: kiểm tra nghĩa (khẳng định hay phủ định? số ít hay số nhiều?).",
   "examples": [
    [
     "discover",
@@ -143,7 +143,7 @@
  },
  "paper": {
   "A_vocab": {
-   "instruction_vi": "Chọn từ thích hợp trong khung để điền vào chỗ trống. Mỗi từ dùng một lần, có 2 từ thừa. Bạn nhớ đổi dạng từ nếu cần (thêm -s, -ed...) nhé.",
+   "instruction_vi": "Chọn từ thích hợp trong khung để điền vào chỗ trống. Mỗi từ dùng một lần, có 2 từ thừa. Cậu nhớ đổi dạng từ nếu cần (thêm -s, -ed...) nhé.",
    "bank": [
     "experiment",
     "discovered",
@@ -259,7 +259,7 @@
    ]
   },
   "C_wordform": {
-   "instruction_vi": "Viết dạng đúng của từ in hoa. Hôm nay là bài tổng hợp: đáp án có thể là danh từ, tính từ, trạng từ hoặc động từ – bạn xem kỹ vị trí trong câu nhé.",
+   "instruction_vi": "Viết dạng đúng của từ in hoa. Hôm nay là bài tổng hợp: đáp án có thể là danh từ, tính từ, trạng từ hoặc động từ – cậu xem kỹ vị trí trong câu nhé.",
    "items": [
     {
      "id": "d12C1",
@@ -293,7 +293,7 @@
   },
   "D_exam": {
    "format": "transformation",
-   "instruction_vi": "Chọn câu (A, B, C hoặc D) có nghĩa GẦN NHẤT với câu đã cho. Mẹo: bạn kiểm tra cả thì, đại từ và nghĩa khẳng định/phủ định – sai một chi tiết là sai cả câu đấy!",
+   "instruction_vi": "Chọn câu (A, B, C hoặc D) có nghĩa GẦN NHẤT với câu đã cho. Mẹo: cậu kiểm tra cả thì, đại từ và nghĩa khẳng định/phủ định – sai một chi tiết là sai cả câu đấy!",
    "items": [
     {
      "id": "d12D1",
@@ -403,18 +403,18 @@
   },
   "F_writing": {
    "task_en": "Write about an invention that you think is very important. What is it? How does it help people? What would life be like without it? Report one thing that somebody (a parent, a teacher) said about it.",
-   "task_vi": "Viết về một phát minh mà bạn cho là rất quan trọng: nó là gì, giúp ích con người ra sao, cuộc sống sẽ thế nào nếu không có nó. Hãy kể lại (bằng câu tường thuật) một điều mà ai đó (bố mẹ, thầy cô) đã nói về phát minh đó.",
+   "task_vi": "Viết về một phát minh mà cậu cho là rất quan trọng: nó là gì, giúp ích con người ra sao, cuộc sống sẽ thế nào nếu không có nó. Hãy kể lại (bằng câu tường thuật) một điều mà ai đó (bố mẹ, thầy cô) đã nói về phát minh đó.",
    "min_words": 50,
    "model": "I think the washing machine is one of the most important inventions. Before it was invented, people spent hours washing clothes by hand. My grandmother told me that she had to wash clothes in the river when she was young. She said that her hands were often cold and painful. Today, a machine does this job while we study or rest. If we didn't have washing machines, we would have much less free time.",
    "checklist_vi": [
-    "Bạn đã nêu tên phát minh và nói nó giúp ích thế nào chưa?",
-    "Bạn đã có ít nhất 1 câu tường thuật đúng (said that / told me that + lùi thì) chưa?",
-    "Bạn đã dùng ít nhất 3 từ mới hôm nay (invent, discover, research, breakthrough...) chưa?",
-    "Bạn đã viết đủ 50 từ trở lên chưa?"
+    "Cậu đã nêu tên phát minh và nói nó giúp ích thế nào chưa?",
+    "Cậu đã có ít nhất 1 câu tường thuật đúng (said that / told me that + lùi thì) chưa?",
+    "Cậu đã dùng ít nhất 3 từ mới hôm nay (invent, discover, research, breakthrough...) chưa?",
+    "Cậu đã viết đủ 50 từ trở lên chưa?"
    ]
   },
   "G_review": {
-   "instruction_vi": "Ôn xoắn ốc – bạn làm 4 câu ôn lại kiến thức của các buổi trước nhé. Chữ cái gợi ý (nếu có) là chữ cái đầu của đáp án.",
+   "instruction_vi": "Ôn xoắn ốc – cậu làm 4 câu ôn lại kiến thức của các buổi trước nhé. Chữ cái gợi ý (nếu có) là chữ cái đầu của đáp án.",
    "items": [
     {
      "id": "d12G1",
@@ -617,8 +617,8 @@
   }
  ],
  "can_do_vi": [
-  "Bạn có thể nói về khoa học và phát minh bằng các từ experiment, research, evidence, breakthrough...",
-  "Bạn có thể chuyển câu nói trực tiếp sang câu tường thuật, biết lùi thì và dùng đúng say/tell.",
-  "Bạn có thể chọn đúng dạng từ với mọi hậu tố đã học và tìm câu đồng nghĩa trong bài thi."
+  "Cậu có thể nói về khoa học và phát minh bằng các từ experiment, research, evidence, breakthrough...",
+  "Cậu có thể chuyển câu nói trực tiếp sang câu tường thuật, biết lùi thì và dùng đúng say/tell.",
+  "Cậu có thể chọn đúng dạng từ với mọi hậu tố đã học và tìm câu đồng nghĩa trong bài thi."
  ]
 }
