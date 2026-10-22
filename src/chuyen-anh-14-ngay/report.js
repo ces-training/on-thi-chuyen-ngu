@@ -28,20 +28,21 @@ function rhythmLine(){const A=agg(),R=rhythm(A);
   return t}
 
 /* ----- độ chắc của bài đầu vào / đầu ra -----
-   30 câu, mỗi mức 10 câu (9 trắc nghiệm 4 lựa chọn + 1 câu tự điền). Sai số đo khoảng ±1–1,5 câu mỗi mức,
+   Đề mới 45 câu, mỗi mức 15 câu (trắc nghiệm, nghe, câu tự viết); đề cũ 30 câu, mỗi mức 10 câu. Sai số đo khoảng ±1,5 câu mỗi mức,
    nên trang thử dịch mỗi mức ±1 câu: kết quả không đổi → độ chắc cao; đổi sang mức kề → vừa; xa hơn → thấp.
    Thêm cờ: làm quá nhanh, bỏ trống nhiều, câu khó đúng nhiều hơn câu dễ (dấu hiệu đoán). */
 const LV_ORDER=['preA2','A2','A2+','B1','B1+','B2'];
 function placement(r){
-  if(!r||!r.bands)return null;const a=r.bands.A2[0],b=r.bands.B1[0],c=r.bands.B2[0];
-  const set=new Set([levelFromBands(a,b,c)]);
-  [[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]].forEach(([x,y,z])=>set.add(levelFromBands(Math.max(0,a+x),Math.max(0,b+y),Math.max(0,c+z))));
+  if(!r||!r.bands)return null;const a=r.bands.A2[0],b=r.bands.B1[0],c=r.bands.B2[0],na=r.bands.A2[1],nb=r.bands.B1[1],nc=r.bands.B2[1];
+  const set=new Set([levelFromBands(a,b,c,na,nb,nc)]);
+  [[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]].forEach(([x,y,z])=>set.add(levelFromBands(Math.max(0,a+x),Math.max(0,b+y),Math.max(0,c+z),na,nb,nc)));
   const idx=[...set].map(k=>LV_ORDER.indexOf(k)).sort((p,q)=>p-q);const lo=LV_ORDER[idx[0]],hi=LV_ORDER[idx[idx.length-1]];
   let score=idx[idx.length-1]-idx[0]===0?2:idx[idx.length-1]-idx[0]===1?1:0;const flags=[];
-  if(c>b+1||b>a+1){flags.push('Câu khó đúng nhiều hơn câu dễ hơn: có thể có câu đoán trúng.');score--}
-  if(r.dur!=null&&r.dur<8){flags.push(`Làm xong trong ${Math.max(1,Math.round(r.dur))} phút (đề tính khoảng 25 phút).`);score--}
+  if(c/nc>b/nb+0.12||b/nb>a/na+0.12){flags.push('Câu khó đúng nhiều hơn câu dễ hơn: có thể có câu đoán trúng.');score--}
+  const mins=r.of>=40?35:25;if(r.dur!=null&&r.dur<mins*0.3){flags.push(`Làm xong trong ${Math.max(1,Math.round(r.dur))} phút (đề tính khoảng ${mins} phút).`);score--}
+  if(r.noAudio)flags.push('Máy không phát được tiếng nên phần nghe được đọc thay; điểm nghe có thể cao hơn thực tế.');
   if(r.blank!=null&&r.blank>=10)flags.push(`Bỏ trống ${r.blank} câu: kết quả phản ánh đúng phần chắc chắn biết.`);
-  if(c<=3&&b>=7)flags.push('Mức B2 mới đúng ở mức may rủi; mức B1 vững.');
+  if(c/nc<=0.3&&b/nb>=0.7)flags.push('Câu mức B2 mới đúng ít, mức B1 đã vững: đang ở ngưỡng chuyển lên B2.');
   score=Math.max(0,score);
   return {lv:r.level,lo,hi,conf:['thấp','vừa','cao'][score],score,flags,range:lo===hi?LEVELS.find(l=>l.k===lo).name:`${LEVELS.find(l=>l.k===lo).name} – ${LEVELS.find(l=>l.k===hi).name}`}}
 function placementNote(r){const p=placement(r);if(!p)return'';
@@ -59,7 +60,7 @@ function trackSuggestHTML(){const g=trackSuggest();if(!g)return'';const p=Math.r
 
 /* ----- báo cáo thử 14 buổi (cho cô và gia đình) ----- */
 const PACE_NAME={fast:'Tuyến nhanh',steady:'Tuyến giữ nhịp',careful:'Tuyến chậm mà chắc'};
-const SK_RP={vocab:'Từ vựng',grammar:'Ngữ pháp',wordform:'Cấu tạo từ',exam:'Dạng bài thi',reading:'Đọc hiểu',review:'Ôn xoắn ốc',retry:'Câu từng sai làm lại'};
+const SK_RP={listening:'Nghe',cloze:'Điền một từ',transform:'Viết lại câu',vocab:'Từ vựng',grammar:'Ngữ pháp',wordform:'Cấu tạo từ',exam:'Dạng bài thi',reading:'Đọc hiểu',review:'Ôn xoắn ốc',retry:'Câu từng sai làm lại'};
 function rpTestRow(label,r){if(!r)return `<tr><td>${label}</td><td colspan="6" class="muted">Chưa làm</td></tr>`;const p=placement(r);const L=LEVELS.find(l=>l.k===r.level);
   return `<tr><td>${label}</td><td><b>${r.total}/${r.of}</b></td>${['A2','B1','B2'].map(k=>`<td>${r.bands[k][0]}/${r.bands[k][1]}</td>`).join('')}<td><b>${esc(L?L.name:r.level)}</b>${p&&p.lo!==p.hi?`<br><span class="small muted">${esc(p.range)}</span>`:''}</td><td>${p?p.conf:'—'}</td></tr>`}
 function reportBody(){
@@ -151,6 +152,7 @@ function bootReport(){const h=location.hash||'';if(!h.startsWith('#bc='))return 
 .rp-kv{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px}
 .rp-kv li{display:flex;justify-content:space-between;gap:10px;border:2px solid var(--line,#dde);border-radius:10px;padding:8px 12px}.rp-kv b{white-space:nowrap}
 .rp-ph{padding-left:1.4em}.rp-ph li{margin:.25em 0}.rp-advice ul li{margin:.35em 0}.rp-bar{justify-content:space-between;margin-bottom:8px}
+.t-sec{margin:18px 0 10px;padding:10px 14px;border-radius:12px;background:#14303A;color:#fff;line-height:1.5}.t-sec b{font-weight:600}.t-ls{margin:6px 0 8px}.t-ls .ls-txt{margin-top:6px}
 .tsug{margin-top:8px;border-radius:12px;padding:10px 12px;border:2px dashed #14303A;background:#FFF7CC;color:#14303A;display:flex;flex-wrap:wrap;gap:8px;align-items:center}.tsug.down{background:#E8F4F7}
 @media print{.rp-bar,.rp .hung-say,header.top,.gate,.gate-pill,.h-toast,.pv-bar{display:none!important}html,body{background:#fff!important}main.wrap{margin:0!important;max-width:none!important}.rp-sec,.rp-head{break-inside:avoid;box-shadow:none!important}}
 `;document.head.appendChild(st)})();

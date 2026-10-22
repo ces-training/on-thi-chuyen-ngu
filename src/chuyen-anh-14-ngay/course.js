@@ -254,7 +254,7 @@ function vCourse(){
     if(P.stage==='none'){
       const R0={g4,exam,start:new Date(),g4Ch:Math.max(0,Math.floor((exam-g4)/WK*o.dpw*STUDY_FACTOR/14))};
       $('#cOut').innerHTML=clock+`<p class="small muted">Đồng hồ chỉ phụ thuộc vào lớp cậu đang học. Phần còn lại phụ thuộc vào chính cậu.</p></div>
-      <div class="card lockbox">${doodle('lock','lk',56)}<div><p class="eyebrow">Còn khoá</p><h3>Lộ trình của riêng cậu</h3><p>Tớ chưa biết cậu đang ở đâu, nên chưa dám vẽ đường vội. Làm bài đầu vào 30 câu (khoảng 25 phút) để mở khoá: cậu đang ở level nào, chặng tiếp theo học gì, mất bao lâu tới trường cậu nhắm, và vài cách đi nhanh hơn nếu cậu muốn.</p><div class="row"><button class="btn hi" id="cDiag">Làm bài đầu vào</button></div></div></div>
+      <div class="card lockbox">${doodle('lock','lk',56)}<div><p class="eyebrow">Còn khoá</p><h3>Lộ trình của riêng cậu</h3><p>Tớ chưa biết cậu đang ở đâu, nên chưa dám vẽ đường vội. Làm bài đầu vào 45 câu (khoảng 25 phút) để mở khoá: cậu đang ở level nào, chặng tiếp theo học gì, mất bao lâu tới trường cậu nhắm, và vài cách đi nhanh hơn nếu cậu muốn.</p><div class="row"><button class="btn hi" id="cDiag">Làm bài đầu vào</button></div></div></div>
       <h3 class="sec">Các giai đoạn trên bản đồ</h3>
       <div class="card ph done0"><div class="ph-s"><span class="ph-n">GĐ0</span><span class="ph-t"><b>Dò đường 14 ngày</b> · cậu đang ở đây (${nd}/14 buổi)<br><span class="small muted">Tớ đo level, độ nhớ, nhịp học và dạng bài cậu thích. Hết 14 ngày, cô gửi cậu và bố mẹ một lộ trình vừa với cậu.</span></span></div></div>
       ${PHASES.map(lockedPhase).join('')}${chotCard(R0)}${examCard(R0)}${howCard()}`;

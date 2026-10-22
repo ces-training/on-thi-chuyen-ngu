@@ -114,6 +114,7 @@ function pvQ(it,i){const a=it.answer;let ci=-1;
   if(Array.isArray(it.options))ci=typeof a==='number'?a:(typeof a==='string'&&/^[A-H]$/.test(a)?LTR.indexOf(a):it.options.indexOf(a));
   const meta=[it.id,it.level,it.skill,it.from_day!=null?(it.from_day?'ôn từ buổi '+it.from_day:'ôn nền A2'):'',it.passage].filter(Boolean).map(esc).join(' · ');
   return `<li class="pv-q"><div class="pv-qt">${esc(it.q||it.question||it.sentence||'Chỗ trống')}${meta?` <span class="pv-meta">${meta}</span>`:''}</div>
+   ${it.listen?`<div class="passage pv-pass"><b>Lời nghe:</b> ${esc(it.listen)}</div>`:''}
    ${Array.isArray(it.options)?`<ol class="pv-opts" type="A">${it.options.map((o,j)=>`<li class="${j===ci?'ok':''}">${esc(o)}${j===ci?' ✓':''}</li>`).join('')}</ol>`:''}
    ${a!=null&&!Array.isArray(it.options)?`<div class="pv-ans">Đáp án: <b>${esc(pvAnsTxt(it))}</b></div>`:''}
    ${it.hint_vi?`<div class="small muted">Gợi ý: ${fmtVi(it.hint_vi)}</div>`:''}${(it.explain_vi||it.why_vi)?`<div class="pv-ex">${fmtVi(it.explain_vi||it.why_vi)}</div>`:''}</li>`}

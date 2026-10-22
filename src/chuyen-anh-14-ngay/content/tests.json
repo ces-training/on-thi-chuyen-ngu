@@ -1,7 +1,7 @@
 {
  "diagnostic": {
   "title_vi": "Bài kiểm tra đầu vào",
-  "minutes": 25,
+  "minutes": 35,
   "passages": [
    {
     "id": "diagP1",
@@ -21,6 +21,86 @@
   ],
   "items": [
    {
+    "id": "diag31",
+    "level": "A2",
+    "skill": "listening",
+    "type": "mcq",
+    "section": "listen",
+    "listen": "Hello, this is a message for Nam. Football practice on Saturday is not at nine o'clock this week. It starts at half past ten, because the field is busy in the morning. Please bring your own water. See you then!",
+    "q": "What time does football practice start this Saturday?",
+    "options": [
+     "9.00",
+     "10.00",
+     "10.30"
+    ],
+    "answer": 2,
+    "explain_vi": "Người nói: ==not at nine o'clock this week. It starts at half past ten== → **10.30**. __Mẹo: giờ nghe thấy đầu tiên thường là bẫy; chú ý chữ 'not'.__"
+   },
+   {
+    "id": "diag32",
+    "level": "A2",
+    "skill": "listening",
+    "type": "mcq",
+    "section": "listen",
+    "listen": "Good morning, everyone. Today our class is visiting the science museum. The bus leaves at a quarter past eight from the school gate. You don't need to bring lunch, because we're eating at the museum café. But please bring a notebook and a pen.",
+    "q": "What do the students need to bring?",
+    "options": [
+     "their lunch",
+     "a notebook and a pen",
+     "money for the bus"
+    ],
+    "answer": 1,
+    "explain_vi": "==You don't need to bring lunch== nên loại 'their lunch'; ==please bring a notebook and a pen== → **a notebook and a pen**. __Mẹo: 'don't need to' = không cần.__"
+   },
+   {
+    "id": "diag33",
+    "level": "B1",
+    "skill": "listening",
+    "type": "mcq",
+    "section": "listen",
+    "listen": "Hi Mai, it's Linh. I'm really sorry, but I can't meet you at the library this afternoon. My mum has to work late, so I need to look after my little brother. Could we meet tomorrow morning instead? Text me and let me know.",
+    "q": "Why can't Linh meet Mai this afternoon?",
+    "options": [
+     "She has to work late.",
+     "She has to take care of her brother.",
+     "The library is closed."
+    ],
+    "answer": 1,
+    "explain_vi": "Người phải làm muộn là ==My mum==, còn Linh ==need to look after my little brother== → **take care of her brother** (look after = take care of). __Bẫy: 'work late' có trong bài nhưng là việc của mẹ.__"
+   },
+   {
+    "id": "diag34",
+    "level": "B1",
+    "skill": "listening",
+    "type": "mcq",
+    "section": "listen",
+    "listen": "Last year I joined the school drama club. I thought performing in front of people would be really scary, and at first it was. But after a few weeks I realised that what I enjoyed most wasn't being on stage at all. It was working with the others to build the sets and make the costumes.",
+    "q": "What does the speaker enjoy most about the drama club?",
+    "options": [
+     "performing on stage",
+     "making things with the other members",
+     "meeting new people"
+    ],
+    "answer": 1,
+    "explain_vi": "==what I enjoyed most wasn't being on stage== → loại 'performing'; ==working with the others to build the sets and make the costumes== → **making things with the other members**. __Mẹo: câu sau 'But' thường chứa đáp án.__"
+   },
+   {
+    "id": "diag35",
+    "level": "B2",
+    "skill": "listening",
+    "type": "mcq",
+    "section": "listen",
+    "listen": "Many people assume that the best way to remember new words is to repeat them again and again on the same day. In fact, research suggests the opposite. If you wait a little before reviewing a word, and then gradually increase the gap, you are far more likely to recall it weeks later. Cramming feels productive, but most of what you learn that way is quickly forgotten.",
+    "q": "What is the speaker's main point?",
+    "options": [
+     "Repeating words many times in one day works best.",
+     "Reviewing words with growing gaps helps long-term memory.",
+     "Nobody can remember new words for more than a few weeks."
+    ],
+    "answer": 1,
+    "explain_vi": "==In fact, research suggests the opposite== phủ nhận ý đầu; ==gradually increase the gap … far more likely to recall it weeks later== → **growing gaps help long-term memory**. __Mẹo: 'In fact', 'However' báo hiệu quan điểm thật của người nói.__"
+   },
+   {
     "id": "diag01",
     "level": "A2",
     "skill": "grammar",
@@ -33,7 +113,8 @@
      "is go"
     ],
     "answer": 1,
-    "explain_vi": "Có ==every day== → thói quen, dùng **hiện tại đơn**; chủ ngữ số ít 'My sister' → **goes**. __Mẹo: chủ ngữ là he/she/it hoặc một người, động từ thêm -s/-es.__"
+    "explain_vi": "Có ==every day== → thói quen, dùng **hiện tại đơn**; chủ ngữ số ít 'My sister' → **goes**. __Mẹo: chủ ngữ là he/she/it hoặc một người, động từ thêm -s/-es.__",
+    "section": "core"
    },
    {
     "id": "diag02",
@@ -48,7 +129,8 @@
      "did"
     ],
     "answer": 2,
-    "explain_vi": "Có ==last weekend== → quá khứ; chủ ngữ 'We' đi với **were**. __Đừng chọn 'was': 'was' chỉ đi với I/he/she/it.__"
+    "explain_vi": "Có ==last weekend== → quá khứ; chủ ngữ 'We' đi với **were**. __Đừng chọn 'was': 'was' chỉ đi với I/he/she/it.__",
+    "section": "core"
    },
    {
     "id": "diag03",
@@ -63,7 +145,8 @@
      "on"
     ],
     "answer": 3,
-    "explain_vi": "==14th May== là ngày cụ thể → dùng **on**. __Nhớ: at + giờ, on + ngày/thứ, in + tháng/năm.__"
+    "explain_vi": "==14th May== là ngày cụ thể → dùng **on**. __Nhớ: at + giờ, on + ngày/thứ, in + tháng/năm.__",
+    "section": "core"
    },
    {
     "id": "diag04",
@@ -78,7 +161,8 @@
      "he's"
     ],
     "answer": 0,
-    "explain_vi": "Chỗ trống đứng một mình ở cuối câu, nghĩa là 'của cậu ấy' → **đại từ sở hữu his**. 'him' là tân ngữ, 'he's' là 'he is'. __Mẹo: sau chỗ trống không có danh từ thì cần đại từ sở hữu.__"
+    "explain_vi": "Chỗ trống đứng một mình ở cuối câu, nghĩa là 'của cậu ấy' → **đại từ sở hữu his**. 'him' là tân ngữ, 'he's' là 'he is'. __Mẹo: sau chỗ trống không có danh từ thì cần đại từ sở hữu.__",
+    "section": "core"
    },
    {
     "id": "diag05",
@@ -93,7 +177,8 @@
      "bottle"
     ],
     "answer": 2,
-    "explain_vi": "==bread== là đồ ăn cắt được → **a slice of bread** (một lát bánh mì). __'glass' và 'bottle' dùng cho đồ uống, 'bowl' cho cơm/súp.__"
+    "explain_vi": "==bread== là đồ ăn cắt được → **a slice of bread** (một lát bánh mì). __'glass' và 'bottle' dùng cho đồ uống, 'bowl' cho cơm/súp.__",
+    "section": "core"
    },
    {
     "id": "diag06",
@@ -108,7 +193,8 @@
      "turn"
     ],
     "answer": 1,
-    "explain_vi": "Có ==It's cold in here== → cần đóng cửa: **close the door**. 'wear' là mặc, 'make' là làm ra. __Đọc câu sau chỗ trống để hiểu lý do.__"
+    "explain_vi": "Có ==It's cold in here== → cần đóng cửa: **close the door**. 'wear' là mặc, 'make' là làm ra. __Đọc câu sau chỗ trống để hiểu lý do.__",
+    "section": "core"
    },
    {
     "id": "diag07",
@@ -123,7 +209,8 @@
      "active"
     ],
     "answer": 3,
-    "explain_vi": "Có ==He walks five kilometres every day== → ông rất **active** (năng động). __Ba từ còn lại (tired, lazy, ill) trái nghĩa với ý câu, loại ngay.__"
+    "explain_vi": "Có ==He walks five kilometres every day== → ông rất **active** (năng động). __Ba từ còn lại (tired, lazy, ill) trái nghĩa với ý câu, loại ngay.__",
+    "section": "core"
    },
    {
     "id": "diag08",
@@ -135,7 +222,8 @@
     "accept": [
      "rainy"
     ],
-    "explain_vi": "Sau ==very== cần **tính từ**: rain + -y → **rainy** (có mưa). __Mẹo: thời tiết thường thêm -y: sunny, windy, cloudy.__"
+    "explain_vi": "Sau ==very== cần **tính từ**: rain + -y → **rainy** (có mưa). __Mẹo: thời tiết thường thêm -y: sunny, windy, cloudy.__",
+    "section": "core"
    },
    {
     "id": "diag09",
@@ -151,7 +239,8 @@
      "They want to see dolphins."
     ],
     "answer": 2,
-    "explain_vi": "Bài đọc: ==\"Every morning we swim before breakfast, because the sea is calm then.\"== → đáp án **The sea is calm at that time**. __Cẩn thận: trời nóng là buổi chiều, không phải buổi sáng.__"
+    "explain_vi": "Bài đọc: ==\"Every morning we swim before breakfast, because the sea is calm then.\"== → đáp án **The sea is calm at that time**. __Cẩn thận: trời nóng là buổi chiều, không phải buổi sáng.__",
+    "section": "core"
    },
    {
     "id": "diag10",
@@ -167,7 +256,8 @@
      "Go to football practice"
     ],
     "answer": 3,
-    "explain_vi": "Bài đọc: ==\"See you at football practice on Sunday.\"== → **Go to football practice**. __Về nhà bằng tàu là thứ Bảy, đi thuyền là hôm qua; để ý từ chỉ thời gian.__"
+    "explain_vi": "Bài đọc: ==\"See you at football practice on Sunday.\"== → **Go to football practice**. __Về nhà bằng tàu là thứ Bảy, đi thuyền là hôm qua; để ý từ chỉ thời gian.__",
+    "section": "core"
    },
    {
     "id": "diag11",
@@ -182,7 +272,8 @@
      "have you"
     ],
     "answer": 1,
-    "explain_vi": "Vế trước khẳng định ==You've finished== (have) → đuôi phủ định cùng trợ động từ: **haven't you?** __Mẹo: tìm trợ động từ ở vế trước rồi đổi dấu, không dùng 'did/do'.__"
+    "explain_vi": "Vế trước khẳng định ==You've finished== (have) → đuôi phủ định cùng trợ động từ: **haven't you?** __Mẹo: tìm trợ động từ ở vế trước rồi đổi dấu, không dùng 'did/do'.__",
+    "section": "core"
    },
    {
     "id": "diag12",
@@ -197,7 +288,8 @@
      "Because"
     ],
     "answer": 2,
-    "explain_vi": "Sau chỗ trống là cụm danh từ ==the heavy rain== → **Despite + danh từ**. __'Although' phải đi với mệnh đề (S + V); 'However' đứng riêng và có dấu phẩy.__"
+    "explain_vi": "Sau chỗ trống là cụm danh từ ==the heavy rain== → **Despite + danh từ**. __'Although' phải đi với mệnh đề (S + V); 'However' đứng riêng và có dấu phẩy.__",
+    "section": "core"
    },
    {
     "id": "diag13",
@@ -212,7 +304,8 @@
      "Either"
     ],
     "answer": 0,
-    "explain_vi": "Câu A phủ định ==don't like== → đồng ý dùng **Neither do I** (tớ cũng không). __'So do I' chỉ dùng sau câu khẳng định.__"
+    "explain_vi": "Câu A phủ định ==don't like== → đồng ý dùng **Neither do I** (tớ cũng không). __'So do I' chỉ dùng sau câu khẳng định.__",
+    "section": "core"
    },
    {
     "id": "diag14",
@@ -227,7 +320,8 @@
      "had started"
     ],
     "answer": 3,
-    "explain_vi": "Có ==By the time we arrived== (quá khứ đơn) → việc xảy ra trước đó dùng **quá khứ hoàn thành: had started**. __Mẹo: by the time + quá khứ đơn, vế kia thường là had + V3.__"
+    "explain_vi": "Có ==By the time we arrived== (quá khứ đơn) → việc xảy ra trước đó dùng **quá khứ hoàn thành: had started**. __Mẹo: by the time + quá khứ đơn, vế kia thường là had + V3.__",
+    "section": "core"
    },
    {
     "id": "diag15",
@@ -242,7 +336,8 @@
      "make"
     ],
     "answer": 1,
-    "explain_vi": "Cụm cố định: **pay attention to** (chú ý đến). __Học cả cụm: pay attention, take care, make a decision.__"
+    "explain_vi": "Cụm cố định: **pay attention to** (chú ý đến). __Học cả cụm: pay attention, take care, make a decision.__",
+    "section": "core"
    },
    {
     "id": "diag16",
@@ -257,7 +352,8 @@
      "look into"
     ],
     "answer": 2,
-    "explain_vi": "Có ==while I'm on holiday== → nhờ chăm mèo: **look after** (chăm sóc). __'look for' là tìm, 'look up' là tra cứu, 'look into' là điều tra.__"
+    "explain_vi": "Có ==while I'm on holiday== → nhờ chăm mèo: **look after** (chăm sóc). __'look for' là tìm, 'look up' là tra cứu, 'look into' là điều tra.__",
+    "section": "core"
    },
    {
     "id": "diag17",
@@ -272,7 +368,8 @@
      "temperature"
     ],
     "answer": 0,
-    "explain_vi": "Có ==I can't stop coughing== → **have a bad cold** (bị cảm nặng). __'ache' phải ghép (headache, toothache), không nói 'a bad temperature'.__"
+    "explain_vi": "Có ==I can't stop coughing== → **have a bad cold** (bị cảm nặng). __'ache' phải ghép (headache, toothache), không nói 'a bad temperature'.__",
+    "section": "core"
    },
    {
     "id": "diag18",
@@ -284,7 +381,8 @@
     "accept": [
      "friendship"
     ],
-    "explain_vi": "Sau tính từ sở hữu ==Their== cần **danh từ**: friend + -ship → **friendship** (tình bạn). __Mẹo: xem từ đứng trước chỗ trống để đoán từ loại.__"
+    "explain_vi": "Sau tính từ sở hữu ==Their== cần **danh từ**: friend + -ship → **friendship** (tình bạn). __Mẹo: xem từ đứng trước chỗ trống để đoán từ loại.__",
+    "section": "core"
    },
    {
     "id": "diag19",
@@ -300,7 +398,8 @@
      "Many families had books they no longer read."
     ],
     "answer": 3,
-    "explain_vi": "Bài đọc: ==\"many families in her building had shelves full of books that nobody read any more\"== → **Many families had books they no longer read**. __Các ý khác không có trong bài, loại ngay.__"
+    "explain_vi": "Bài đọc: ==\"many families in her building had shelves full of books that nobody read any more\"== → **Many families had books they no longer read**. __Các ý khác không có trong bài, loại ngay.__",
+    "section": "core"
    },
    {
     "id": "diag20",
@@ -316,7 +415,8 @@
      "The second shelf built by a neighbour"
     ],
     "answer": 1,
-    "explain_vi": "Bài đọc: ==\"the best part is not the books themselves but the conversations people now have in the lift\"== → **The way neighbours now talk to each other**. __Cấu trúc 'not A but B': ý chính nằm ở B.__"
+    "explain_vi": "Bài đọc: ==\"the best part is not the books themselves but the conversations people now have in the lift\"== → **The way neighbours now talk to each other**. __Cấu trúc 'not A but B': ý chính nằm ở B.__",
+    "section": "core"
    },
    {
     "id": "diag21",
@@ -331,7 +431,8 @@
      "we left"
     ],
     "answer": 1,
-    "explain_vi": "Có ==Hardly== đứng đầu câu → đảo ngữ: **Hardly + had + S + V3 ... when ...** → **had we left**. __Mẹo: thấy Hardly/No sooner đầu câu, đưa trợ động từ lên trước chủ ngữ.__"
+    "explain_vi": "Có ==Hardly== đứng đầu câu → đảo ngữ: **Hardly + had + S + V3 ... when ...** → **had we left**. __Mẹo: thấy Hardly/No sooner đầu câu, đưa trợ động từ lên trước chủ ngữ.__",
+    "section": "core"
    },
    {
     "id": "diag22",
@@ -346,7 +447,8 @@
      "wouldn't"
     ],
     "answer": 2,
-    "explain_vi": "Có ==I'd rather you== → **would rather + S + quá khứ đơn** để nói mong muốn về người khác → **didn't**. __Dù nghĩa là hiện tại, vẫn lùi về quá khứ.__"
+    "explain_vi": "Có ==I'd rather you== → **would rather + S + quá khứ đơn** để nói mong muốn về người khác → **didn't**. __Dù nghĩa là hiện tại, vẫn lùi về quá khứ.__",
+    "section": "core"
    },
    {
     "id": "diag23",
@@ -361,7 +463,8 @@
      "wouldn't"
     ],
     "answer": 0,
-    "explain_vi": "Có ==She walked straight past without saying hello== → chắc chắn cô ấy đã không nhìn thấy: **can't have + V3**. __Đừng nhầm 'needn't have' (lẽ ra không cần làm).__"
+    "explain_vi": "Có ==She walked straight past without saying hello== → chắc chắn cô ấy đã không nhìn thấy: **can't have + V3**. __Đừng nhầm 'needn't have' (lẽ ra không cần làm).__",
+    "section": "core"
    },
    {
     "id": "diag24",
@@ -376,7 +479,8 @@
      "left"
     ],
     "answer": 3,
-    "explain_vi": "Có ==It's high time== → **It's high time + S + quá khứ đơn** → **left**. __Mẹo: sau 'It's time / It's high time / It's about time + S' luôn dùng quá khứ đơn.__"
+    "explain_vi": "Có ==It's high time== → **It's high time + S + quá khứ đơn** → **left**. __Mẹo: sau 'It's time / It's high time / It's about time + S' luôn dùng quá khứ đơn.__",
+    "section": "core"
    },
    {
     "id": "diag25",
@@ -391,7 +495,8 @@
      "broken"
     ],
     "answer": 0,
-    "explain_vi": "Có ==the singer had lost her voice== → buổi diễn bị huỷ: **call off** (huỷ bỏ). __'drop off' là ngủ gật/thả xuống xe, 'give off' là toả ra, 'break off' là cắt đứt.__"
+    "explain_vi": "Có ==the singer had lost her voice== → buổi diễn bị huỷ: **call off** (huỷ bỏ). __'drop off' là ngủ gật/thả xuống xe, 'give off' là toả ra, 'break off' là cắt đứt.__",
+    "section": "core"
    },
    {
     "id": "diag26",
@@ -406,7 +511,8 @@
      "achieved"
     ],
     "answer": 3,
-    "explain_vi": "Kết hợp từ: **achieve a goal** (đạt được mục tiêu). __'win' đi với trận đấu/giải thưởng; không nói 'earn/gain a goal' với nghĩa này.__"
+    "explain_vi": "Kết hợp từ: **achieve a goal** (đạt được mục tiêu). __'win' đi với trận đấu/giải thưởng; không nói 'earn/gain a goal' với nghĩa này.__",
+    "section": "core"
    },
    {
     "id": "diag27",
@@ -421,7 +527,8 @@
      "gave"
     ],
     "answer": 0,
-    "explain_vi": "Có ==effort into== → cụm cố định **put effort into something** (dồn công sức vào). __'make an effort' không đi với 'into', nên loại 'made'.__"
+    "explain_vi": "Có ==effort into== → cụm cố định **put effort into something** (dồn công sức vào). __'make an effort' không đi với 'into', nên loại 'made'.__",
+    "section": "core"
    },
    {
     "id": "diag28",
@@ -433,7 +540,8 @@
     "accept": [
      "misunderstanding"
     ],
-    "explain_vi": "Sau ==a== cần **danh từ** nghĩa là sự hiểu lầm: mis- + understand + -ing → **misunderstanding**. __Mẹo: tiền tố mis- mang nghĩa 'sai, nhầm'.__"
+    "explain_vi": "Sau ==a== cần **danh từ** nghĩa là sự hiểu lầm: mis- + understand + -ing → **misunderstanding**. __Mẹo: tiền tố mis- mang nghĩa 'sai, nhầm'.__",
+    "section": "core"
    },
    {
     "id": "diag29",
@@ -449,7 +557,8 @@
      "They are lazier than they were as children."
     ],
     "answer": 0,
-    "explain_vi": "Bài đọc: ==\"the body starts to produce melatonin ... about two hours later in the evening\"== → **cơ thể tiết hormone gây buồn ngủ muộn hơn**. __Bài phủ nhận ý 'lười' và không nhắc tới điện thoại.__"
+    "explain_vi": "Bài đọc: ==\"the body starts to produce melatonin ... about two hours later in the evening\"== → **cơ thể tiết hormone gây buồn ngủ muộn hơn**. __Bài phủ nhận ý 'lười' và không nhắc tới điện thoại.__",
+    "section": "core"
    },
    {
     "id": "diag30",
@@ -465,13 +574,142 @@
      "sure that they will fail in the long term"
     ],
     "answer": 2,
-    "explain_vi": "Bài đọc: ==\"the early results are promising\"== và ==\"the figures do not support this view\"== → thái độ **generally positive**. __Tìm tính từ đánh giá của tác giả để đoán thái độ.__"
+    "explain_vi": "Bài đọc: ==\"the early results are promising\"== và ==\"the figures do not support this view\"== → thái độ **generally positive**. __Tìm tính từ đánh giá của tác giả để đoán thái độ.__",
+    "section": "core"
+   },
+   {
+    "id": "diag36",
+    "level": "A2",
+    "skill": "cloze",
+    "type": "text",
+    "section": "write",
+    "q": "I have lived in Hanoi ______ 2015. (điền MỘT từ)",
+    "answer": "since",
+    "accept": [],
+    "explain_vi": "Mốc thời gian cụ thể ==2015== với thì hiện tại hoàn thành → **since**. __Nhớ: since + mốc (2015, Monday); for + khoảng (three years).__"
+   },
+   {
+    "id": "diag37",
+    "level": "A2",
+    "skill": "cloze",
+    "type": "text",
+    "section": "write",
+    "q": "My brother is taller ______ me. (điền MỘT từ)",
+    "answer": "than",
+    "accept": [],
+    "explain_vi": "So sánh hơn ==taller== đi với **than**. __Mẹo: thấy -er hoặc more là nghĩ tới than.__"
+   },
+   {
+    "id": "diag38",
+    "level": "A2",
+    "skill": "wordform",
+    "type": "text",
+    "section": "write",
+    "q": "Be ______ when you cross the road. (CARE)",
+    "answer": "careful",
+    "accept": [],
+    "explain_vi": "Sau ==Be== cần **tính từ**: care + -ful → **careful** (cẩn thận). __Mẹo: -ful = đầy, có: careful, helpful, useful.__"
+   },
+   {
+    "id": "diag39",
+    "level": "B1",
+    "skill": "cloze",
+    "type": "text",
+    "section": "write",
+    "q": "I'm really looking forward ______ seeing you next week. (điền MỘT từ)",
+    "answer": "to",
+    "accept": [],
+    "explain_vi": "Cụm cố định **look forward to + V-ing**. Ở đây ==to== là giới từ nên sau nó là ==seeing==. __Bẫy: không viết 'look forward to see'.__"
+   },
+   {
+    "id": "diag40",
+    "level": "B1",
+    "skill": "wordform",
+    "type": "text",
+    "section": "write",
+    "q": "The weather forecast says there is a strong ______ of rain tomorrow. (POSSIBLE)",
+    "answer": "possibility",
+    "accept": [],
+    "explain_vi": "Sau ==a strong== cần **danh từ**: possible → **possibility** (khả năng). __Mẹo: -ible/-able → -ibility/-ability khi thành danh từ.__"
+   },
+   {
+    "id": "diag41",
+    "level": "B1",
+    "skill": "transform",
+    "type": "text",
+    "section": "write",
+    "q": "Nam started learning the piano three years ago. → Nam has ______ for three years.",
+    "answer": "been learning the piano",
+    "accept": [
+     "been learning piano",
+     "learned the piano",
+     "learnt the piano",
+     "learned piano",
+     "learnt piano",
+     "been learning to play the piano",
+     "been playing the piano"
+    ],
+    "explain_vi": "==started … three years ago== và vẫn còn học → **hiện tại hoàn thành (tiếp diễn)**: Nam has **been learning the piano** for three years. __Mẹo: started … ago → has/have + V3 / been V-ing + for.__"
+   },
+   {
+    "id": "diag42",
+    "level": "B2",
+    "skill": "cloze",
+    "type": "text",
+    "section": "write",
+    "q": "The more you practise, ______ better you become. (điền MỘT từ)",
+    "answer": "the",
+    "accept": [],
+    "explain_vi": "Cấu trúc so sánh kép **The + so sánh hơn …, the + so sánh hơn …**: The more you practise, **the** better you become. __Nhớ: hai vế đều bắt đầu bằng 'the'.__"
+   },
+   {
+    "id": "diag43",
+    "level": "B2",
+    "skill": "wordform",
+    "type": "text",
+    "section": "write",
+    "q": "It is ______ to walk alone here late at night, so please take a taxi. (ADVISE)",
+    "answer": "inadvisable",
+    "accept": [],
+    "explain_vi": "Sau ==It is== cần **tính từ**; ==so please take a taxi== cho thấy nghĩa phủ định → in- + advise + -able → **inadvisable** (không nên). __Mẹo: đọc vế sau để biết cần nghĩa khẳng định hay phủ định.__"
+   },
+   {
+    "id": "diag44",
+    "level": "B2",
+    "skill": "transform",
+    "type": "text",
+    "section": "write",
+    "q": "It's a pity I can't speak French. → I wish ______ French.",
+    "answer": "I could speak",
+    "accept": [
+     "I was able to speak",
+     "I were able to speak",
+     "I spoke",
+     "I knew"
+    ],
+    "explain_vi": "Tiếc điều ở **hiện tại** → **wish + quá khứ đơn**: can't → **could**: I wish **I could speak** French. __Nhớ: wish lùi một thì: can → could, am → were.__"
+   },
+   {
+    "id": "diag45",
+    "level": "B2",
+    "skill": "transform",
+    "type": "text",
+    "section": "write",
+    "q": "People say that the old bridge is dangerous. → The old bridge is said ______ dangerous.",
+    "answer": "to be",
+    "accept": [],
+    "explain_vi": "Câu bị động tường thuật: People say (that) S + V → **S + is said + to V**: The old bridge is said **to be** dangerous. __Nhớ: is said / is believed / is thought + to be.__"
    }
-  ]
+  ],
+  "sections": {
+   "listen": "Phần 1 · Nghe. Mỗi đoạn nghe được tối đa 2 lần. Nghe xong chọn đáp án đúng.",
+   "core": "Phần 2 · Ngữ pháp, từ vựng và đọc hiểu. Chọn đáp án đúng; câu cấu tạo từ thì gõ từ.",
+   "write": "Phần 3 · Tự viết câu trả lời: điền một từ, viết dạng đúng của từ in hoa, viết lại câu sao cho nghĩa không đổi. Câu nào không biết thì cứ bỏ trống."
+  }
  },
  "final": {
   "title_vi": "Bài kiểm tra đầu ra",
-  "minutes": 25,
+  "minutes": 35,
   "passages": [
    {
     "id": "finP1",
@@ -491,6 +729,86 @@
   ],
   "items": [
    {
+    "id": "fin31",
+    "level": "A2",
+    "skill": "listening",
+    "type": "mcq",
+    "section": "listen",
+    "listen": "Hi Lan, it's Mum. I'm going to be home late today, so I won't cook dinner at six as usual. Dad will buy pizza on his way home, and we'll eat at half past seven. Please do your homework first.",
+    "q": "What time will the family have dinner?",
+    "options": [
+     "6.00",
+     "7.00",
+     "7.30"
+    ],
+    "answer": 2,
+    "explain_vi": "==I won't cook dinner at six as usual== → loại 6.00; ==we'll eat at half past seven== → **7.30**. __Mẹo: half past seven = 7.30.__"
+   },
+   {
+    "id": "fin32",
+    "level": "A2",
+    "skill": "listening",
+    "type": "mcq",
+    "section": "listen",
+    "listen": "Welcome to the City Zoo. The zoo is open from eight in the morning until five in the afternoon. Please do not give food to the animals. If you want to see the baby elephant, go to the big house next to the lake.",
+    "q": "Where can visitors see the baby elephant?",
+    "options": [
+     "next to the café",
+     "next to the lake",
+     "near the entrance"
+    ],
+    "answer": 1,
+    "explain_vi": "==go to the big house next to the lake== → **next to the lake**. __Mẹo: nghe kỹ giới từ chỉ vị trí: next to, near, opposite.__"
+   },
+   {
+    "id": "fin33",
+    "level": "B1",
+    "skill": "listening",
+    "type": "mcq",
+    "section": "listen",
+    "listen": "Hi Tuấn, it's Minh. I know we planned to go cycling on Sunday, but the weather forecast says it's going to rain all day. How about going to the swimming pool instead? It's indoors, so the weather won't matter. Call me back.",
+    "q": "Why does Minh want to change their plan?",
+    "options": [
+     "The swimming pool is closing soon.",
+     "It will probably rain on Sunday.",
+     "His bike is broken."
+    ],
+    "answer": 1,
+    "explain_vi": "==the weather forecast says it's going to rain all day== → **It will probably rain on Sunday.** __Mẹo: 'but' báo lý do thay đổi kế hoạch.__"
+   },
+   {
+    "id": "fin34",
+    "level": "B1",
+    "skill": "listening",
+    "type": "mcq",
+    "section": "listen",
+    "listen": "When I started secondary school, I was worried about making friends because I didn't know anyone. In the end, it was the school chess club that helped me most. I'm not a great player, but sitting next to someone for an hour every week is a really easy way to start a conversation.",
+    "q": "How did the chess club help the speaker?",
+    "options": [
+     "It made him a much better player.",
+     "It made it easier to talk to other students.",
+     "It helped him do better in his exams."
+    ],
+    "answer": 1,
+    "explain_vi": "==I'm not a great player== loại đáp án 1; ==a really easy way to start a conversation== → **easier to talk to other students**. __Mẹo: đáp án đúng thường diễn đạt lại ý bằng từ khác.__"
+   },
+   {
+    "id": "fin35",
+    "level": "B2",
+    "skill": "listening",
+    "type": "mcq",
+    "section": "listen",
+    "listen": "A lot of students believe they work best while listening to their favourite songs. However, studies show that music with lyrics actually makes reading tasks harder, because our brain tries to process both sets of words at once. Instrumental music, on the other hand, seems to have little negative effect, and for some people it may even help them stay calm.",
+    "q": "According to the speaker, which statement is true?",
+    "options": [
+     "Any kind of music helps students read better.",
+     "Songs with words can make reading more difficult.",
+     "Instrumental music always improves concentration."
+    ],
+    "answer": 1,
+    "explain_vi": "==music with lyrics actually makes reading tasks harder== → **Songs with words can make reading more difficult.** Đáp án 3 sai vì bài chỉ nói ==may even help== với ==some people==, không phải 'always'. __Bẫy: từ tuyệt đối như always, any thường sai.__"
+   },
+   {
     "id": "fin01",
     "level": "A2",
     "skill": "grammar",
@@ -503,7 +821,8 @@
      "Does"
     ],
     "answer": 3,
-    "explain_vi": "Câu hỏi hiện tại đơn với động từ thường ==like==, chủ ngữ số ít 'your brother' → **Does**. __Mẹo: có động từ thường thì dùng Do/Does, không dùng Is/Are.__"
+    "explain_vi": "Câu hỏi hiện tại đơn với động từ thường ==like==, chủ ngữ số ít 'your brother' → **Does**. __Mẹo: có động từ thường thì dùng Do/Does, không dùng Is/Are.__",
+    "section": "core"
    },
    {
     "id": "fin02",
@@ -518,7 +837,8 @@
      "losing"
     ],
     "answer": 2,
-    "explain_vi": "Có ==yesterday== → **quá khứ đơn**; 'lose' bất quy tắc: lose – **lost** – lost. __Không có dạng 'losed'; học thuộc bảng động từ bất quy tắc.__"
+    "explain_vi": "Có ==yesterday== → **quá khứ đơn**; 'lose' bất quy tắc: lose – **lost** – lost. __Không có dạng 'losed'; học thuộc bảng động từ bất quy tắc.__",
+    "section": "core"
    },
    {
     "id": "fin03",
@@ -533,7 +853,8 @@
      "by"
     ],
     "answer": 0,
-    "explain_vi": "==7.30== là giờ cụ thể → dùng **at**. __Nhớ: at + giờ, on + ngày, in + tháng/năm.__"
+    "explain_vi": "==7.30== là giờ cụ thể → dùng **at**. __Nhớ: at + giờ, on + ngày, in + tháng/năm.__",
+    "section": "core"
    },
    {
     "id": "fin04",
@@ -548,7 +869,8 @@
      "herself"
     ],
     "answer": 1,
-    "explain_vi": "Sau giới từ ==to== cần **đại từ tân ngữ: her**. 'she' là chủ ngữ, 'hers' là 'của cô ấy'. __Mẹo: sau giới từ và sau động từ luôn dùng tân ngữ (me, him, her...).__"
+    "explain_vi": "Sau giới từ ==to== cần **đại từ tân ngữ: her**. 'she' là chủ ngữ, 'hers' là 'của cô ấy'. __Mẹo: sau giới từ và sau động từ luôn dùng tân ngữ (me, him, her...).__",
+    "section": "core"
    },
    {
     "id": "fin05",
@@ -563,7 +885,8 @@
      "glass"
     ],
     "answer": 3,
-    "explain_vi": "==orange juice== là đồ uống → **a glass of** (một cốc). __'slice/piece' dùng cho đồ ăn, 'loaf' là ổ bánh mì.__"
+    "explain_vi": "==orange juice== là đồ uống → **a glass of** (một cốc). __'slice/piece' dùng cho đồ ăn, 'loaf' là ổ bánh mì.__",
+    "section": "core"
    },
    {
     "id": "fin06",
@@ -578,7 +901,8 @@
      "gloves"
     ],
     "answer": 1,
-    "explain_vi": "Có ==It's raining outside== → mang **umbrella** (ô). __Các đồ còn lại không dùng để che mưa.__"
+    "explain_vi": "Có ==It's raining outside== → mang **umbrella** (ô). __Các đồ còn lại không dùng để che mưa.__",
+    "section": "core"
    },
    {
     "id": "fin07",
@@ -593,7 +917,8 @@
      "sleepy"
     ],
     "answer": 2,
-    "explain_vi": "Có ==He always smiles and talks to new people== → **friendly** (thân thiện). __'quiet' và 'shy' trái nghĩa với ý câu, loại trước.__"
+    "explain_vi": "Có ==He always smiles and talks to new people== → **friendly** (thân thiện). __'quiet' và 'shy' trái nghĩa với ý câu, loại trước.__",
+    "section": "core"
    },
    {
     "id": "fin08",
@@ -605,7 +930,8 @@
     "accept": [
      "windy"
     ],
-    "explain_vi": "Sau ==It's== cần **tính từ chỉ thời tiết**: wind + -y → **windy** (có gió). __Gợi ý 'fly a kite' cũng cho thấy trời có gió.__"
+    "explain_vi": "Sau ==It's== cần **tính từ chỉ thời tiết**: wind + -y → **windy** (có gió). __Gợi ý 'fly a kite' cũng cho thấy trời có gió.__",
+    "section": "core"
    },
    {
     "id": "fin09",
@@ -621,7 +947,8 @@
      "She wants to wear it to the zoo."
     ],
     "answer": 0,
-    "explain_vi": "Bài đọc: ==\"I wear the blue jacket every day because our classroom is very cold in the morning.\"== → **Her classroom is cold in the morning**. __Thấy câu hỏi 'Why', tìm từ 'because' trong bài.__"
+    "explain_vi": "Bài đọc: ==\"I wear the blue jacket every day because our classroom is very cold in the morning.\"== → **Her classroom is cold in the morning**. __Thấy câu hỏi 'Why', tìm từ 'because' trong bài.__",
+    "section": "core"
    },
    {
     "id": "fin10",
@@ -637,7 +964,8 @@
      "Eat pizza in the park"
     ],
     "answer": 1,
-    "explain_vi": "Bài đọc: ==\"Next month I'm visiting you with Dad. Can we go fishing again?\"== → **Go fishing with Grandma**. __Đi sở thú và ăn pizza là thứ Bảy vừa rồi; để ý mốc thời gian.__"
+    "explain_vi": "Bài đọc: ==\"Next month I'm visiting you with Dad. Can we go fishing again?\"== → **Go fishing with Grandma**. __Đi sở thú và ăn pizza là thứ Bảy vừa rồi; để ý mốc thời gian.__",
+    "section": "core"
    },
    {
     "id": "fin11",
@@ -652,7 +980,8 @@
      "do they"
     ],
     "answer": 0,
-    "explain_vi": "Vế trước phủ định ==haven't met== → đuôi khẳng định cùng trợ động từ: **have they?** __Mẹo: 'Your parents' thay bằng 'they'; giữ nguyên trợ động từ 'have'.__"
+    "explain_vi": "Vế trước phủ định ==haven't met== → đuôi khẳng định cùng trợ động từ: **have they?** __Mẹo: 'Your parents' thay bằng 'they'; giữ nguyên trợ động từ 'have'.__",
+    "section": "core"
    },
    {
     "id": "fin12",
@@ -667,7 +996,8 @@
      "In spite"
     ],
     "answer": 2,
-    "explain_vi": "Sau chỗ trống là mệnh đề ==she was very tired== (S + V) → **Although**. __'Despite/In spite of' đi với danh từ hoặc V-ing; 'In spite' thiếu 'of'.__"
+    "explain_vi": "Sau chỗ trống là mệnh đề ==she was very tired== (S + V) → **Although**. __'Despite/In spite of' đi với danh từ hoặc V-ing; 'In spite' thiếu 'of'.__",
+    "section": "core"
    },
    {
     "id": "fin13",
@@ -682,7 +1012,8 @@
      "Also"
     ],
     "answer": 1,
-    "explain_vi": "Có ==never== → câu mang nghĩa phủ định → đồng ý dùng **Neither have I** (tớ cũng chưa từng). __Đừng chọn 'So': 'So' chỉ dùng sau câu khẳng định.__"
+    "explain_vi": "Có ==never== → câu mang nghĩa phủ định → đồng ý dùng **Neither have I** (tớ cũng chưa từng). __Đừng chọn 'So': 'So' chỉ dùng sau câu khẳng định.__",
+    "section": "core"
    },
    {
     "id": "fin14",
@@ -697,7 +1028,8 @@
      "had already left"
     ],
     "answer": 3,
-    "explain_vi": "Có ==When I got to the station== → tàu rời đi TRƯỚC khi tôi đến → **quá khứ hoàn thành: had already left**. __Việc nào xảy ra trước trong quá khứ thì dùng had + V3.__"
+    "explain_vi": "Có ==When I got to the station== → tàu rời đi TRƯỚC khi tôi đến → **quá khứ hoàn thành: had already left**. __Việc nào xảy ra trước trong quá khứ thì dùng had + V3.__",
+    "section": "core"
    },
    {
     "id": "fin15",
@@ -712,7 +1044,8 @@
      "have"
     ],
     "answer": 1,
-    "explain_vi": "Kết hợp từ: **make a mistake** (mắc lỗi). __Lỗi hay gặp: nói 'do a mistake' là sai.__"
+    "explain_vi": "Kết hợp từ: **make a mistake** (mắc lỗi). __Lỗi hay gặp: nói 'do a mistake' là sai.__",
+    "section": "core"
    },
    {
     "id": "fin16",
@@ -727,7 +1060,8 @@
      "run over"
     ],
     "answer": 2,
-    "explain_vi": "Có ==I'll go to the shop and buy some more== → sữa đã hết: **run out of**. __'run into' là tình cờ gặp, 'run after' là đuổi theo, 'run over' là cán qua.__"
+    "explain_vi": "Có ==I'll go to the shop and buy some more== → sữa đã hết: **run out of**. __'run into' là tình cờ gặp, 'run after' là đuổi theo, 'run over' là cán qua.__",
+    "section": "core"
    },
    {
     "id": "fin17",
@@ -742,7 +1076,8 @@
      "balanced"
     ],
     "answer": 3,
-    "explain_vi": "Kết hợp từ: **a balanced diet** (chế độ ăn cân bằng). __Không nói 'fair/equal/even diet'; học cả cụm.__"
+    "explain_vi": "Kết hợp từ: **a balanced diet** (chế độ ăn cân bằng). __Không nói 'fair/equal/even diet'; học cả cụm.__",
+    "section": "core"
    },
    {
     "id": "fin18",
@@ -754,7 +1089,8 @@
     "accept": [
      "membership"
     ],
-    "explain_vi": "Chỗ trống đứng trước danh từ ==card== → cần **danh từ ghép**: member + -ship → **membership** (thẻ hội viên). __Mẹo: -ship tạo danh từ: friendship, membership.__"
+    "explain_vi": "Chỗ trống đứng trước danh từ ==card== → cần **danh từ ghép**: member + -ship → **membership** (thẻ hội viên). __Mẹo: -ship tạo danh từ: friendship, membership.__",
+    "section": "core"
    },
    {
     "id": "fin19",
@@ -770,7 +1106,8 @@
      "Quân's parents'"
     ],
     "answer": 2,
-    "explain_vi": "Bài đọc: ==\"The idea came from their science teacher\"== → **Their science teacher's**. __Cẩn thận: người nông dân chỉ cho lời khuyên sau đó.__"
+    "explain_vi": "Bài đọc: ==\"The idea came from their science teacher\"== → **Their science teacher's**. __Cẩn thận: người nông dân chỉ cho lời khuyên sau đó.__",
+    "section": "core"
    },
    {
     "id": "fin20",
@@ -786,7 +1123,8 @@
      "How keen his classmates now are to look after the plants"
     ],
     "answer": 3,
-    "explain_vi": "Bài đọc: ==\"he is prouder that his classmates now argue about whose turn it is to water the plants\"== → **các bạn giờ rất muốn chăm cây**. __Tiền thì 'nice' nhưng 'prouder' mới là điều tự hào nhất.__"
+    "explain_vi": "Bài đọc: ==\"he is prouder that his classmates now argue about whose turn it is to water the plants\"== → **các bạn giờ rất muốn chăm cây**. __Tiền thì 'nice' nhưng 'prouder' mới là điều tự hào nhất.__",
+    "section": "core"
    },
    {
     "id": "fin21",
@@ -801,7 +1139,8 @@
      "she stepped"
     ],
     "answer": 0,
-    "explain_vi": "Có ==No sooner== đầu câu → đảo ngữ: **No sooner + had + S + V3 ... than ...** → **had she stepped**. __Mẹo: No sooner đi với 'than', Hardly đi với 'when'.__"
+    "explain_vi": "Có ==No sooner== đầu câu → đảo ngữ: **No sooner + had + S + V3 ... than ...** → **had she stepped**. __Mẹo: No sooner đi với 'than', Hardly đi với 'when'.__",
+    "section": "core"
    },
    {
     "id": "fin22",
@@ -816,7 +1155,8 @@
      "wouldn't use"
     ],
     "answer": 1,
-    "explain_vi": "Có ==I'd rather you== → **would rather + S + quá khứ đơn** → **didn't use**. __Dù nói về hiện tại, vẫn dùng quá khứ đơn sau chủ ngữ thứ hai.__"
+    "explain_vi": "Có ==I'd rather you== → **would rather + S + quá khứ đơn** → **didn't use**. __Dù nói về hiện tại, vẫn dùng quá khứ đơn sau chủ ngữ thứ hai.__",
+    "section": "core"
    },
    {
     "id": "fin23",
@@ -831,7 +1171,8 @@
      "wouldn't"
     ],
     "answer": 2,
-    "explain_vi": "Có ==The results look perfect== → chắc chắn thí nghiệm không hỏng: **can't have + V3**. __'needn't have' là lẽ ra không cần làm, khác nghĩa.__"
+    "explain_vi": "Có ==The results look perfect== → chắc chắn thí nghiệm không hỏng: **can't have + V3**. __'needn't have' là lẽ ra không cần làm, khác nghĩa.__",
+    "section": "core"
    },
    {
     "id": "fin24",
@@ -846,7 +1187,8 @@
      "tidied"
     ],
     "answer": 3,
-    "explain_vi": "Có ==It's about time== → **It's about time + S + quá khứ đơn** → **tidied**. __Mẹo: It's time / high time / about time + S luôn đi với quá khứ đơn.__"
+    "explain_vi": "Có ==It's about time== → **It's about time + S + quá khứ đơn** → **tidied**. __Mẹo: It's time / high time / about time + S luôn đi với quá khứ đơn.__",
+    "section": "core"
    },
    {
     "id": "fin25",
@@ -861,7 +1203,8 @@
      "came round to"
     ],
     "answer": 1,
-    "explain_vi": "Có ==a cheaper way to clean the water== → nghĩ ra giải pháp: **come up with**. __'come across' là tình cờ thấy, 'come down with' là bị ốm, 'come round to' là dần chấp nhận.__"
+    "explain_vi": "Có ==a cheaper way to clean the water== → nghĩ ra giải pháp: **come up with**. __'come across' là tình cờ thấy, 'come down with' là bị ốm, 'come round to' là dần chấp nhận.__",
+    "section": "core"
    },
    {
     "id": "fin26",
@@ -876,7 +1219,8 @@
      "take"
     ],
     "answer": 3,
-    "explain_vi": "Cụm cố định: **take effect** (bắt đầu có hiệu lực). __Có ==next Monday== → luật mới sẽ bắt đầu áp dụng.__"
+    "explain_vi": "Cụm cố định: **take effect** (bắt đầu có hiệu lực). __Có ==next Monday== → luật mới sẽ bắt đầu áp dụng.__",
+    "section": "core"
    },
    {
     "id": "fin27",
@@ -891,7 +1235,8 @@
      "takes"
     ],
     "answer": 0,
-    "explain_vi": "Có ==to helping== → **devote time to + V-ing** (dành thời gian cho việc gì). __'spend time' đi với 'on' hoặc V-ing, không đi với 'to'.__"
+    "explain_vi": "Có ==to helping== → **devote time to + V-ing** (dành thời gian cho việc gì). __'spend time' đi với 'on' hoặc V-ing, không đi với 'to'.__",
+    "section": "core"
    },
    {
     "id": "fin28",
@@ -903,7 +1248,8 @@
     "accept": [
      "misunderstood"
     ],
-    "explain_vi": "Có ==my answer was completely wrong== → hiểu sai: mis- + understand → **misunderstood** (quá khứ). __Nhớ: understand – understood, nên misunderstand – misunderstood.__"
+    "explain_vi": "Có ==my answer was completely wrong== → hiểu sai: mis- + understand → **misunderstood** (quá khứ). __Nhớ: understand – understood, nên misunderstand – misunderstood.__",
+    "section": "core"
    },
    {
     "id": "fin29",
@@ -919,7 +1265,8 @@
      "We completely forget the first task."
     ],
     "answer": 0,
-    "explain_vi": "Bài đọc: ==\"the brain does not really do two things at once; instead, it switches quickly between tasks\"== → **The brain moves rapidly from one task to the other**. __'switches quickly' được diễn đạt lại thành 'moves rapidly'.__"
+    "explain_vi": "Bài đọc: ==\"the brain does not really do two things at once; instead, it switches quickly between tasks\"== → **The brain moves rapidly from one task to the other**. __'switches quickly' được diễn đạt lại thành 'moves rapidly'.__",
+    "section": "core"
    },
    {
     "id": "fin30",
@@ -935,8 +1282,139 @@
      "Messages should always be answered quickly."
     ],
     "answer": 2,
-    "explain_vi": "Bài đọc: ==\"This does not mean phones must be banned from bedrooms. A simple rule ... seems to bring most of the benefits\"== → **A sensible rule works better than a total ban**. __Ý kiến tác giả thường nằm ở cuối bài.__"
+    "explain_vi": "Bài đọc: ==\"This does not mean phones must be banned from bedrooms. A simple rule ... seems to bring most of the benefits\"== → **A sensible rule works better than a total ban**. __Ý kiến tác giả thường nằm ở cuối bài.__",
+    "section": "core"
+   },
+   {
+    "id": "fin36",
+    "level": "A2",
+    "skill": "cloze",
+    "type": "text",
+    "section": "write",
+    "q": "We have studied English ______ five years. (điền MỘT từ)",
+    "answer": "for",
+    "accept": [],
+    "explain_vi": "Khoảng thời gian ==five years== với thì hiện tại hoàn thành → **for**. __Nhớ: for + khoảng; since + mốc.__"
+   },
+   {
+    "id": "fin37",
+    "level": "A2",
+    "skill": "cloze",
+    "type": "text",
+    "section": "write",
+    "q": "My house is not as big ______ yours. (điền MỘT từ)",
+    "answer": "as",
+    "accept": [],
+    "explain_vi": "So sánh ngang bằng **(not) as + tính từ + as**: not as big **as** yours. __Mẹo: thấy 'as + tính từ' thì chỗ sau cũng là as.__"
+   },
+   {
+    "id": "fin38",
+    "level": "A2",
+    "skill": "wordform",
+    "type": "text",
+    "section": "write",
+    "q": "My uncle is a famous ______. He plays in a big orchestra. (MUSIC)",
+    "answer": "musician",
+    "accept": [],
+    "explain_vi": "Sau ==a famous== cần **danh từ chỉ người**: music + -ian → **musician** (nhạc công). __Mẹo: người làm nghề thường có đuôi -er, -or, -ist, -ian.__"
+   },
+   {
+    "id": "fin39",
+    "level": "B1",
+    "skill": "cloze",
+    "type": "text",
+    "section": "write",
+    "q": "She is very interested ______ learning Japanese. (điền MỘT từ)",
+    "answer": "in",
+    "accept": [],
+    "explain_vi": "Cụm cố định **be interested in + V-ing/N**. __Nhớ thêm: good at, afraid of, keen on.__"
+   },
+   {
+    "id": "fin40",
+    "level": "B1",
+    "skill": "wordform",
+    "type": "text",
+    "section": "write",
+    "q": "There is a strong ______ that the school trip will be cancelled. (PROBABLE)",
+    "answer": "probability",
+    "accept": [],
+    "explain_vi": "Sau ==a strong== cần **danh từ**: probable → **probability** (khả năng xảy ra). __Mẹo: -able → -ability.__"
+   },
+   {
+    "id": "fin41",
+    "level": "B1",
+    "skill": "transform",
+    "type": "text",
+    "section": "write",
+    "q": "Hoa began working at the bookshop two years ago. → Hoa has ______ for two years.",
+    "answer": "been working at the bookshop",
+    "accept": [
+     "been working in the bookshop",
+     "worked at the bookshop",
+     "worked in the bookshop",
+     "been working at the book shop",
+     "worked at the book shop"
+    ],
+    "explain_vi": "==began … two years ago== và vẫn còn làm → **hiện tại hoàn thành (tiếp diễn)**: Hoa has **been working at the bookshop** for two years. __Mẹo: began … ago → has + been V-ing / V3 + for.__"
+   },
+   {
+    "id": "fin42",
+    "level": "B2",
+    "skill": "cloze",
+    "type": "text",
+    "section": "write",
+    "q": "Hardly ______ she sat down when the phone rang. (điền MỘT từ)",
+    "answer": "had",
+    "accept": [],
+    "explain_vi": "Đảo ngữ **Hardly + had + S + V3 … when …**: Hardly **had** she sat down when the phone rang. __Nhớ: Hardly/No sooner đứng đầu câu thì đảo trợ động từ had lên trước chủ ngữ.__"
+   },
+   {
+    "id": "fin43",
+    "level": "B2",
+    "skill": "wordform",
+    "type": "text",
+    "section": "write",
+    "q": "Some of the information on that website is completely ______, so don't believe everything you read. (RELY)",
+    "answer": "unreliable",
+    "accept": [],
+    "explain_vi": "Sau ==completely== cần **tính từ**; ==so don't believe everything== → nghĩa phủ định: un- + rely + -able → **unreliable** (không đáng tin). __Chú ý: rely → reliable (y → i).__"
+   },
+   {
+    "id": "fin44",
+    "level": "B2",
+    "skill": "transform",
+    "type": "text",
+    "section": "write",
+    "q": "I'm sorry I didn't study harder for the test. → I wish ______ harder for the test.",
+    "answer": "I had studied",
+    "accept": [
+     "I'd studied",
+     "I had worked",
+     "I'd worked",
+     "I had revised",
+     "I'd revised"
+    ],
+    "explain_vi": "Tiếc điều trong **quá khứ** → **wish + quá khứ hoàn thành**: I wish **I had studied** harder. __Nhớ: hiện tại → wish + quá khứ đơn; quá khứ → wish + had V3.__"
+   },
+   {
+    "id": "fin45",
+    "level": "B2",
+    "skill": "transform",
+    "type": "text",
+    "section": "write",
+    "q": "Everyone says that the new teacher is very strict. → The new teacher ______ very strict.",
+    "answer": "is said to be",
+    "accept": [
+     "is said to be",
+     "'s said to be"
+    ],
+    "explain_vi": "Câu bị động tường thuật: Everyone says (that) S + V → **S + is said + to V**: The new teacher **is said to be** very strict. __Nhớ: is said / is believed / is thought + to be.__"
    }
-  ]
+  ],
+  "sections": {
+   "listen": "Phần 1 · Nghe. Mỗi đoạn nghe được tối đa 2 lần. Nghe xong chọn đáp án đúng.",
+   "core": "Phần 2 · Ngữ pháp, từ vựng và đọc hiểu. Chọn đáp án đúng; câu cấu tạo từ thì gõ từ.",
+   "write": "Phần 3 · Tự viết câu trả lời: điền một từ, viết dạng đúng của từ in hoa, viết lại câu sao cho nghĩa không đổi. Câu nào không biết thì cứ bỏ trống."
+  }
  }
 }
