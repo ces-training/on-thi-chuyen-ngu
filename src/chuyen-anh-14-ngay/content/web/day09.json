@@ -517,5 +517,489 @@
    "People usually eat it at/on …",
    "I like it because …"
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Linh và Tom chuẩn bị món ăn cho tiệc của lớp. Chọn đáp án đúng cho mỗi câu hỏi.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Tom. Can you help me? I'm making spring rolls for the class party tomorrow."
+     },
+     {
+      "s": 1,
+      "t": "Sure, Linh. I love spring rolls! What do we need?"
+     },
+     {
+      "s": 0,
+      "t": "Well, I have plenty of pork and a few carrots. But we've run out of eggs."
+     },
+     {
+      "s": 1,
+      "t": "Oh no. How many eggs do we need for the party?"
+     },
+     {
+      "s": 0,
+      "t": "Six. And we need a little fish sauce too. There isn't much left in the bottle."
+     },
+     {
+      "s": 1,
+      "t": "OK. Is there a shop near here?"
+     },
+     {
+      "s": 0,
+      "t": "Yes, there's a small market at the end of the street. It's cheaper than the supermarket, too."
+     },
+     {
+      "s": 1,
+      "t": "Great, I'll go there now. Is this your mum's recipe?"
+     },
+     {
+      "s": 0,
+      "t": "No, it's my grandma's. It's a family tradition. We make spring rolls every Tet."
+     },
+     {
+      "s": 1,
+      "t": "Cool. Wait here, I'll be back in ten minutes!"
+     }
+    ],
+    "items": [
+     {
+      "q": "What is Linh making for the class party?",
+      "options": [
+       "noodle soup",
+       "spring rolls",
+       "fried rice",
+       "a birthday cake"
+      ],
+      "answer": 1,
+      "explain_vi": "Linh nói: \"I'm making spring rolls for the class party tomorrow.\""
+     },
+     {
+      "q": "What have they run out of?",
+      "options": [
+       "pork",
+       "carrots",
+       "rice",
+       "eggs"
+      ],
+      "answer": 3,
+      "explain_vi": "\"We've run out of eggs.\" Thịt (pork) thì còn nhiều, cà rốt còn một ít."
+     },
+     {
+      "q": "What does Linh say about the fish sauce?",
+      "options": [
+       "There is only a little left.",
+       "There is plenty in the bottle.",
+       "They don't need any.",
+       "Tom must bring some from home."
+      ],
+      "answer": 0,
+      "explain_vi": "\"There isn't much left in the bottle\" = chỉ còn ít."
+     },
+     {
+      "q": "Where will Tom buy the things they need?",
+      "options": [
+       "at the supermarket",
+       "at the school canteen",
+       "at a small market",
+       "at Linh's grandma's house"
+      ],
+      "answer": 2,
+      "explain_vi": "Linh nói có chợ nhỏ cuối phố, rẻ hơn siêu thị; Tom đáp \"I'll go there now.\""
+     },
+     {
+      "q": "Whose recipe is it?",
+      "options": [
+       "Linh's mum's",
+       "Linh's grandma's",
+       "Tom's grandma's",
+       "Linh's teacher's"
+      ],
+      "answer": 1,
+      "explain_vi": "Tom hỏi có phải công thức của mẹ không; Linh đáp: \"No, it's my grandma's.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe thầy Brown thông báo về buổi tiệc Trung thu ở trường. Điền vào mỗi chỗ trống MỘT hoặc HAI từ, hoặc một con số.",
+    "script": "Hello, everyone. This is Mr Brown from the English club. Next Friday, we are going to celebrate the Mid-Autumn Festival at school. The party will be in the school garden, not in the hall. It starts at four o'clock in the afternoon. Every class will make lanterns, and there will be a lot of mooncakes and fruit. Please bring a plate and a cup from home, because we don't want to use plastic ones. Tickets cost 10,000 dong. We will use the money to buy lanterns for children in a local village. There will also be a lion dance at five o'clock. Please come and enjoy this beautiful tradition with your friends and teachers!",
+    "text": "MID-AUTUMN PARTY\n• Day: next [1]\n• Place: the school [2]\n• Bring from home: a plate and a [3]\n• Ticket: [4] dong\n• The money buys lanterns for children in a [5] village",
+    "items": [
+     {
+      "answer": "Friday",
+      "accept": [],
+      "explain_vi": "\"Next Friday, we are going to celebrate the Mid-Autumn Festival.\""
+     },
+     {
+      "answer": "garden",
+      "accept": [
+       "school garden"
+      ],
+      "explain_vi": "\"The party will be in the school garden, not in the hall.\""
+     },
+     {
+      "answer": "cup",
+      "accept": [
+       "a cup"
+      ],
+      "explain_vi": "\"Please bring a plate and a cup from home.\""
+     },
+     {
+      "answer": "10,000",
+      "accept": [
+       "10000",
+       "10.000"
+      ],
+      "explain_vi": "\"Tickets cost 10,000 dong.\""
+     },
+     {
+      "answer": "local",
+      "accept": [],
+      "explain_vi": "\"...lanterns for children in a local village.\""
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Nam và Anna, bạn người Anh, bàn chuyện đi ăn tối ở Hà Nội. Chọn đáp án đúng cho mỗi câu hỏi.",
+    "speakers": [
+     {
+      "name": "Nam",
+      "voice": "male"
+     },
+     {
+      "name": "Anna",
+      "voice": "female"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "So, Anna, it's your last evening in Hanoi. Shall we eat out tonight?"
+     },
+     {
+      "s": 1,
+      "t": "Definitely! But I don't want to go to the hotel restaurant again. I'd really like to try some local food."
+     },
+     {
+      "s": 0,
+      "t": "Good idea. There's a little place near the lake that sells grilled pork with noodles. It's always full of local people."
+     },
+     {
+      "s": 1,
+      "t": "Sounds perfect. Is it expensive?"
+     },
+     {
+      "s": 0,
+      "t": "Not at all. A bowl costs about 40,000 dong. Oh wait, sorry, it's 50,000 now. They put the price up last month."
+     },
+     {
+      "s": 1,
+      "t": "That's still cheap. What time does it open?"
+     },
+     {
+      "s": 0,
+      "t": "Well, it opens at six in the evening, and it gets really crowded by seven. So let's meet at half past six."
+     },
+     {
+      "s": 1,
+      "t": "OK. Can I bring my sister? She's a vegetarian, so she doesn't eat meat at all."
+     },
+     {
+      "s": 0,
+      "t": "Hmm. Then she won't have much choice. Actually, wait, they have a few dishes with tofu and vegetables, so she'll be fine."
+     },
+     {
+      "s": 1,
+      "t": "Great. Oh, and I want to buy some coffee to take home. My mum loves Vietnamese coffee."
+     },
+     {
+      "s": 0,
+      "t": "There's a coffee shop right next to the restaurant. We can go there after dinner."
+     },
+     {
+      "s": 1,
+      "t": "Perfect. See you at half past six, then!"
+     }
+    ],
+    "items": [
+     {
+      "q": "Why doesn't Anna want to eat at the hotel restaurant tonight?",
+      "options": [
+       "It is too expensive.",
+       "Her sister doesn't like it.",
+       "She wants to try food that local people eat.",
+       "It closes too early."
+      ],
+      "answer": 2,
+      "explain_vi": "Anna nói: \"I'd really like to try some local food.\""
+     },
+     {
+      "q": "How much does a bowl at the restaurant cost now?",
+      "options": [
+       "40,000 dong",
+       "45,000 dong",
+       "50,000 dong",
+       "60,000 dong"
+      ],
+      "answer": 2,
+      "explain_vi": "Nam nói 40,000 rồi sửa lại: \"sorry, it's 50,000 now.\""
+     },
+     {
+      "q": "Why does Nam want to meet at half past six?",
+      "options": [
+       "to get there before it is crowded",
+       "because the restaurant opens then",
+       "because Anna has to pack her bags",
+       "because the coffee shop closes at seven"
+      ],
+      "answer": 0,
+      "explain_vi": "Quán mở lúc sáu giờ nhưng \"gets really crowded by seven\", nên hẹn sáu rưỡi để đến trước khi đông."
+     },
+     {
+      "q": "What does Nam finally say about Anna's sister?",
+      "options": [
+       "She will have to eat meat.",
+       "There is nothing she can eat.",
+       "She should eat at the hotel.",
+       "There are some dishes without meat for her."
+      ],
+      "answer": 3,
+      "explain_vi": "Nam đầu tiên nói \"won't have much choice\" rồi sửa: có vài món đậu phụ và rau."
+     },
+     {
+      "q": "What will they do after dinner?",
+      "options": [
+       "walk around the lake",
+       "buy coffee for Anna's mum",
+       "go back to the hotel",
+       "try another restaurant"
+      ],
+      "answer": 1,
+      "explain_vi": "Anna muốn mua cà phê cho mẹ; Nam: \"We can go there after dinner.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe cô Mai giới thiệu một lớp học nấu món ăn ngày Tết. Điền vào mỗi chỗ trống MỘT hoặc HAI từ, hoặc một con số.",
+    "script": "Good morning, everyone, and welcome to our cooking class. My name is Mai, and today we're going to make a traditional dish for Tet, a square rice cake. First, we'll walk to the local market to buy the ingredients. The main ingredients are sticky rice, green beans and pork, and we wrap them in large green leaves. Please don't buy any rice, because we already have plenty of it in the kitchen. At the market, each group needs to buy half a kilo of pork and a few onions. When we come back, I'll show you how to fold the leaves. Many people think folding is the hardest part, but actually, tying the string is much more difficult! Normally, the cakes have to cook for about 10 hours, so we can't eat the ones we make today. Instead, everyone will take home a cake that I cooked yesterday. Oh, and one more thing. The class finishes at twelve o'clock, not half past twelve as it says on your ticket.",
+    "text": "TET COOKING CLASS\n• Today's dish: a square [1]\n• Each group buys: half a kilo of pork and some [2]\n• Hardest part: tying the [3]\n• Cooking time: about [4] hours\n• Everyone takes home: a cake cooked [5]",
+    "items": [
+     {
+      "answer": "rice cake",
+      "accept": [],
+      "explain_vi": "\"...a traditional dish for Tet, a square rice cake.\""
+     },
+     {
+      "answer": "onions",
+      "accept": [],
+      "explain_vi": "\"Each group needs to buy half a kilo of pork and a few onions.\" Không mua gạo vì đã có sẵn."
+     },
+     {
+      "answer": "string",
+      "accept": [
+       "the string"
+      ],
+      "explain_vi": "Nhiều người nghĩ gói lá khó nhất, \"but actually, tying the string is much more difficult.\""
+     },
+     {
+      "answer": "10",
+      "accept": [
+       "ten"
+      ],
+      "explain_vi": "\"The cakes have to cook for about 10 hours.\""
+     },
+     {
+      "answer": "yesterday",
+      "accept": [],
+      "explain_vi": "\"Everyone will take home a cake that I cooked yesterday.\""
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Mai và Tom chọn món để bán ở hội chợ ẩm thực của trường. Chú ý lý do, ý kiến và thái độ của họ.",
+    "speakers": [
+     {
+      "name": "Mai",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Tom, we really need to decide what to cook for the food fair. This year the theme is food and tradition."
+     },
+     {
+      "s": 1,
+      "t": "Right. What about the square sticky rice cakes your family makes at Tet? They'd be perfect for the theme."
+     },
+     {
+      "s": 0,
+      "t": "They would, but honestly, they take about ten hours to cook. We'd have to start the night before, and my mum would end up doing all the work."
+     },
+     {
+      "s": 1,
+      "t": "Fair enough. Then how about fried spring rolls? Everyone loves them, and they're not too complicated."
+     },
+     {
+      "s": 0,
+      "t": "I thought about that too. The problem is that the school doesn't allow hot oil at the stalls any more. Somebody burned their hand last year."
+     },
+     {
+      "s": 1,
+      "t": "Oh, I didn't know that. So nothing fried, then."
+     },
+     {
+      "s": 0,
+      "t": "Exactly. But we could make fresh rolls instead. You just wrap rice noodles, herbs and shrimp in rice paper. There's no cooking at the stall at all."
+     },
+     {
+      "s": 1,
+      "t": "Hmm, I'm not sure people will find them very exciting. They look a bit plain, don't they?"
+     },
+     {
+      "s": 0,
+      "t": "Not if we make a really good dipping sauce. My grandma's peanut sauce has an amazing flavour. People always ask her for the recipe."
+     },
+     {
+      "s": 1,
+      "t": "OK, you've convinced me. How many should we make? Two hundred?"
+     },
+     {
+      "s": 0,
+      "t": "That sounds like a lot. Last year, the stall next to ours made a hundred and fifty rolls and still had plenty left at the end."
+     },
+     {
+      "s": 1,
+      "t": "Then let's say a hundred and twenty. And I'll design a poster about the custom behind the dish, since the judges care about the tradition part."
+     },
+     {
+      "s": 0,
+      "t": "Brilliant. I'll ask my grandma to teach us the sauce on Sunday."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why does Mai reject the idea of sticky rice cakes?",
+      "options": [
+       "They need far too much time to prepare.",
+       "They don't match the theme of the fair.",
+       "Her mum doesn't know how to make them.",
+       "Tom thinks they are too plain."
+      ],
+      "answer": 0,
+      "explain_vi": "Mai đồng ý bánh hợp chủ đề, nhưng \"they take about ten hours to cook\"."
+     },
+     {
+      "q": "Why can't they sell fried spring rolls?",
+      "options": [
+       "Tom thinks they are too complicated.",
+       "Fried food is bad for students' health.",
+       "Hot oil is no longer allowed at the stalls.",
+       "Most students don't like them."
+      ],
+      "answer": 2,
+      "explain_vi": "\"The school doesn't allow hot oil at the stalls any more.\" Tom nói chúng không phức tạp."
+     },
+     {
+      "q": "How does Tom first feel about the fresh rolls?",
+      "options": [
+       "He thinks they are too difficult to make.",
+       "He worries they may not attract customers.",
+       "He is excited about the idea.",
+       "He thinks they are too expensive."
+      ],
+      "answer": 1,
+      "explain_vi": "Tom: \"I'm not sure people will find them very exciting. They look a bit plain.\""
+     },
+     {
+      "q": "What makes Tom change his mind?",
+      "options": [
+       "the shrimp in the rolls",
+       "the poster about the custom",
+       "the judges' advice",
+       "a sauce made from a family recipe"
+      ],
+      "answer": 3,
+      "explain_vi": "Mai nhắc đến nước chấm lạc của bà, hương vị tuyệt vời; Tom đáp \"you've convinced me\"."
+     },
+     {
+      "q": "Why do they decide to make fewer than two hundred rolls?",
+      "options": [
+       "Two hundred would cost too much money.",
+       "Mai's grandma can only make a hundred and twenty.",
+       "A stall that made a hundred and fifty last year had many left over.",
+       "The judges set a limit for each stall."
+      ],
+      "answer": 2,
+      "explain_vi": "Gian bên cạnh năm ngoái làm 150 cuốn \"and still had plenty left\", nên họ chọn 120."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe giới thiệu tour ẩm thực đêm ở Hội An, chú ý chỗ đổi kế hoạch. Điền vào mỗi chỗ trống MỘT hoặc HAI từ, hoặc một con số.",
+    "script": "Good evening, everyone, and welcome to the Hoi An night food tour. I'm Anna, and I'll be your guide for the next 3 hours. Last week's tour actually took nearly 4, because people kept stopping to take photos, so please try to stay with the group. Our first stop was supposed to be the famous bread shop on the main street. However, it gets extremely crowded after dark, so we'll go there at the very end, and you can take your sandwiches back to the hotel. Instead, we'll begin at a small family restaurant that has served the town's local noodle dish for over sixty years. Many visitors believe the secret of the dish is the pork, but according to the owner, it's actually the water, which comes from an ancient well just outside the town. After that, we'll try a few traditional desserts. If you have any allergies, especially to nuts, please tell me now, because some of the desserts contain peanuts. Finally, a quick word about local customs. It's polite to wait until the oldest person at the table starts eating before you begin. Nobody will be offended if you forget, but people here really appreciate it. Right, let's go!",
+    "text": "HOI AN NIGHT FOOD TOUR\n• Planned length: [1] hours\n• Last stop: the famous [2] shop\n• Secret of the noodle dish: water from an ancient [3]\n• Tell the guide about allergies, especially to [4]\n• Custom: wait for the [5] person at the table to start eating",
+    "items": [
+     {
+      "answer": "3",
+      "accept": [
+       "three"
+      ],
+      "explain_vi": "\"I'll be your guide for the next 3 hours.\" Gần 4 tiếng là tour tuần trước."
+     },
+     {
+      "answer": "bread",
+      "accept": [],
+      "explain_vi": "Hiệu bánh mì lẽ ra là điểm đầu nhưng quá đông, \"so we'll go there at the very end\"."
+     },
+     {
+      "answer": "well",
+      "accept": [
+       "ancient well"
+      ],
+      "explain_vi": "Bí quyết không phải thịt lợn mà là nước \"from an ancient well\"."
+     },
+     {
+      "answer": "nuts",
+      "accept": [
+       "nut",
+       "peanuts"
+      ],
+      "explain_vi": "\"If you have any allergies, especially to nuts, please tell me now.\""
+     },
+     {
+      "answer": "oldest",
+      "accept": [],
+      "explain_vi": "\"Wait until the oldest person at the table starts eating before you begin.\""
+     }
+    ]
+   }
+  }
  }
 }

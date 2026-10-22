@@ -598,5 +598,489 @@
    "I don't trust everything on … because …",
    "In my opinion, … is the most reliable because …"
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Em nghe Tom và Linh nói về số mới của tạp chí trường. Chọn đáp án đúng cho mỗi câu hỏi.",
+    "speakers": [
+     {
+      "name": "Tom",
+      "voice": "male"
+     },
+     {
+      "name": "Linh",
+      "voice": "female"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Linh. What are you reading? Is that the new school magazine?"
+     },
+     {
+      "s": 1,
+      "t": "Yes! It was printed yesterday. Look, my article is on page 4."
+     },
+     {
+      "s": 0,
+      "t": "Wow, well done! What's it about?"
+     },
+     {
+      "s": 1,
+      "t": "It's about our school football team. I talked to all the players last week. They were really friendly."
+     },
+     {
+      "s": 0,
+      "t": "Cool. The photos are great, too. Who took them?"
+     },
+     {
+      "s": 1,
+      "t": "They were taken by my friend Mai. She's really good with a camera."
+     },
+     {
+      "s": 0,
+      "t": "Mai is very talented. How many copies of the magazine are there?"
+     },
+     {
+      "s": 1,
+      "t": "Three hundred. They're given to every class on Friday afternoon, so everyone can read them at the weekend."
+     },
+     {
+      "s": 0,
+      "t": "Can I buy one now? I want to show my brother. He loves football."
+     },
+     {
+      "s": 1,
+      "t": "You don't need to buy it. It's free! Here you are, Tom."
+     }
+    ],
+    "items": [
+     {
+      "q": "When was the magazine printed?",
+      "options": [
+       "Last week",
+       "On Friday",
+       "Yesterday",
+       "Today"
+      ],
+      "answer": 2,
+      "explain_vi": "Linh nói: \"It was printed yesterday.\""
+     },
+     {
+      "q": "On which page is Linh's article?",
+      "options": [
+       "Page 4",
+       "Page 2",
+       "Page 14",
+       "Page 40"
+      ],
+      "answer": 0,
+      "explain_vi": "Linh nói: \"my article is on page 4.\""
+     },
+     {
+      "q": "What is Linh's article about?",
+      "options": [
+       "A famous singer",
+       "The school football team",
+       "A new teacher",
+       "The school library"
+      ],
+      "answer": 1,
+      "explain_vi": "Linh: \"It's about our school football team.\""
+     },
+     {
+      "q": "Who took the photos?",
+      "options": [
+       "Linh",
+       "Tom",
+       "A teacher",
+       "Mai"
+      ],
+      "answer": 3,
+      "explain_vi": "Linh: \"They were taken by my friend Mai.\""
+     },
+     {
+      "q": "How much does the magazine cost?",
+      "options": [
+       "5,000 dong",
+       "10,000 dong",
+       "Nothing",
+       "20,000 dong"
+      ],
+      "answer": 2,
+      "explain_vi": "Linh: \"You don't need to buy it. It's free!\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe lời giới thiệu một chương trình phát thanh mới cho tuổi teen. Điền một từ vào mỗi chỗ trống.",
+    "script": "Hello, everyone, and welcome to Teen Time, a new radio programme for young people. My name is Anna. Teen Time is broadcast every Saturday morning at nine o'clock. In each programme, we talk about music, films, sport and school life. Every week, a student is invited to the studio to tell us about their hobby. This week our guest is Nam, and he's going to talk about his stamp collection. We also want to hear your opinions. You can send us a message on our website, or you can phone us. The best message each week wins two cinema tickets. So stay with us, and let's start the show!",
+    "text": "TEEN TIME (radio programme)\n• On air: every [1] morning\n• Topics: music, films, sport and [2] life\n• This week's guest talks about his [3] collection\n• Send your opinions: on our [4] or by phone\n• Prize for the best message: two [5] tickets",
+    "items": [
+     {
+      "answer": "Saturday",
+      "accept": [],
+      "explain_vi": "Anna nói: \"Teen Time is broadcast every Saturday morning.\""
+     },
+     {
+      "answer": "school",
+      "accept": [],
+      "explain_vi": "Anna nói: \"we talk about music, films, sport and school life.\""
+     },
+     {
+      "answer": "stamp",
+      "accept": [
+       "stamps"
+      ],
+      "explain_vi": "Anna nói: \"he's going to talk about his stamp collection.\""
+     },
+     {
+      "answer": "website",
+      "accept": [],
+      "explain_vi": "Anna nói: \"send us a message on our website, or you can phone us.\""
+     },
+     {
+      "answer": "cinema",
+      "accept": [],
+      "explain_vi": "Anna nói: \"The best message each week wins two cinema tickets.\""
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Em nghe Nam và Mai nói về một video lan truyền trên mạng. Chú ý chỗ người nói nhầm rồi sửa. Chọn đáp án đúng.",
+    "speakers": [
+     {
+      "name": "Nam",
+      "voice": "male"
+     },
+     {
+      "name": "Mai",
+      "voice": "female"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Mai, have you seen this video? It says our school is going to close for a whole week because of the heat."
+     },
+     {
+      "s": 1,
+      "t": "Really? Where did you come across it?"
+     },
+     {
+      "s": 0,
+      "t": "Someone shared it in our class chat group last night. It's been watched more than ten thousand times already."
+     },
+     {
+      "s": 1,
+      "t": "That doesn't mean it's true, though. Who made it?"
+     },
+     {
+      "s": 0,
+      "t": "I'm not sure. It was posted by a page called Hot News Today, but there's no name on the video."
+     },
+     {
+      "s": 1,
+      "t": "Hmm. I've never heard of that page. A reliable news site always tells you who wrote the story."
+     },
+     {
+      "s": 0,
+      "t": "Fair enough. So how can we find out if it's true?"
+     },
+     {
+      "s": 1,
+      "t": "The easiest way is to check the school website. Important news is always posted there first."
+     },
+     {
+      "s": 0,
+      "t": "OK, let me look. Oh! Here's a message from the head teacher. It was written this morning."
+     },
+     {
+      "s": 1,
+      "t": "What does it say?"
+     },
+     {
+      "s": 0,
+      "t": "The school isn't closing. But outdoor sports lessons are cancelled on Wednesday and Thursday. Oh no, wait, Thursday and Friday. It's going to be too hot."
+     },
+     {
+      "s": 1,
+      "t": "See? Only a small part of the story was true. Let's tell the class what's really happening before more people believe that video."
+     }
+    ],
+    "items": [
+     {
+      "q": "Where did Nam first see the video?",
+      "options": [
+       "In his class chat group",
+       "On the school website",
+       "On the TV news",
+       "In a newspaper"
+      ],
+      "answer": 0,
+      "explain_vi": "Nam: \"Someone shared it in our class chat group last night.\""
+     },
+     {
+      "q": "Why does Mai doubt the video?",
+      "options": [
+       "It is too short.",
+       "It has been watched too many times.",
+       "It was made by a teacher.",
+       "It doesn't say who made it."
+      ],
+      "answer": 3,
+      "explain_vi": "Video không có tên người làm; Mai: \"A reliable news site always tells you who wrote the story.\""
+     },
+     {
+      "q": "According to Mai, where is important school news posted first?",
+      "options": [
+       "In the class chat group",
+       "On the school website",
+       "On the notice board",
+       "On a TV channel"
+      ],
+      "answer": 1,
+      "explain_vi": "Mai: \"check the school website. Important news is always posted there first.\""
+     },
+     {
+      "q": "When are outdoor sports lessons cancelled?",
+      "options": [
+       "On Wednesday and Thursday",
+       "For the whole week",
+       "On Thursday and Friday",
+       "Only on Friday"
+      ],
+      "answer": 2,
+      "explain_vi": "Nam đọc nhầm rồi sửa: \"Oh no, wait, Thursday and Friday.\""
+     },
+     {
+      "q": "What does Mai want to do next?",
+      "options": [
+       "Make a new video",
+       "Tell the class the true story",
+       "Complain to the head teacher",
+       "Leave the class chat group"
+      ],
+      "answer": 1,
+      "explain_vi": "Mai: \"Let's tell the class what's really happening.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe lời giới thiệu khi tham quan một đài truyền hình. Có một chỗ người nói sửa lại thông tin. Điền 1–2 từ hoặc một con số.",
+    "script": "Good morning, everyone, and welcome to City TV. My name is Mr Brown, and I'm going to show you around our studios today. This building was opened in 1998. Sorry, I mean 1995. At first, only one programme was made here each day. Now, more than twenty programmes are produced here every week. Our most popular show is the evening news, which is broadcast live and watched by about 2 million people. In a few minutes, we'll visit the newsroom, where the stories are written and checked. Every fact is checked twice, because our audience needs reliable news. After that, you'll see Studio B, where our cooking show is filmed. Please don't touch the cameras, because they're very expensive. At the end of the tour, each of you will be given a free cap as a souvenir.",
+    "text": "CITY TV STUDIO TOUR\n• Building opened in: [1]\n• Evening news watched by about [2] million people\n• Newsroom: stories are written and [3]\n• Studio B: the [4] show is filmed there\n• Free gift: a [5]",
+    "items": [
+     {
+      "answer": "1995",
+      "accept": [],
+      "explain_vi": "Thầy nói 1998 rồi sửa: \"Sorry, I mean 1995.\""
+     },
+     {
+      "answer": "2",
+      "accept": [
+       "two"
+      ],
+      "explain_vi": "\"watched by about 2 million people.\""
+     },
+     {
+      "answer": "checked",
+      "accept": [],
+      "explain_vi": "\"the newsroom, where the stories are written and checked.\""
+     },
+     {
+      "answer": "cooking",
+      "accept": [],
+      "explain_vi": "\"Studio B, where our cooking show is filmed.\""
+     },
+     {
+      "answer": "cap",
+      "accept": [
+       "a cap"
+      ],
+      "explain_vi": "\"each of you will be given a free cap as a souvenir.\""
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Em nghe Anna và Tom nói về đôi giày Tom mua sau khi xem quảng cáo. Câu hỏi về ý kiến, thái độ và suy luận.",
+    "speakers": [
+     {
+      "name": "Anna",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Are those new trainers, Tom? They look expensive."
+     },
+     {
+      "s": 1,
+      "t": "They were. I'd seen them advertised everywhere online, and then my favourite gamer wore them in one of his videos, so I just had to have them."
+     },
+     {
+      "s": 0,
+      "t": "So basically, you were influenced by someone who was probably paid to wear them."
+     },
+     {
+      "s": 1,
+      "t": "Well, maybe. But he said he'd bought them himself."
+     },
+     {
+      "s": 0,
+      "t": "That's what they always say. A lot of those videos are paid for by the brands. They're supposed to tell you, but the message is often so small that nobody notices it."
+     },
+     {
+      "s": 1,
+      "t": "Honestly, I had no idea. But does it really matter? They're good shoes."
+     },
+     {
+      "s": 0,
+      "t": "Are they, though? Did you compare them with anything else before you bought them?"
+     },
+     {
+      "s": 1,
+      "t": "Not really. Actually, my cousin has a pair from a local brand that cost half the price, and he says they're just as comfortable."
+     },
+     {
+      "s": 0,
+      "t": "There you go. Look, I'm not saying advertising is always bad. It does inform us about new products. I just think we should find out more before we spend our money."
+     },
+     {
+      "s": 1,
+      "t": "Fair point. Mind you, weren't you the one who queued for three hours to buy that phone case last month?"
+     },
+     {
+      "s": 0,
+      "t": "Ha! That was different. I'd read about ten reviews first."
+     },
+     {
+      "s": 1,
+      "t": "If you say so. Anyway, I'm keeping these. They do look great."
+     },
+     {
+      "s": 0,
+      "t": "They do. Just promise me you'll check a few reviews before you spend all your savings next time."
+     },
+     {
+      "s": 1,
+      "t": "OK, I promise. No more shopping just because of one video."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why did Tom buy the trainers?",
+      "options": [
+       "His cousin recommended them.",
+       "They were on sale.",
+       "Anna told him they were good.",
+       "He saw a gamer he admires wearing them."
+      ],
+      "answer": 3,
+      "explain_vi": "Tom: \"my favourite gamer wore them in one of his videos, so I just had to have them.\""
+     },
+     {
+      "q": "What does Anna suggest about the gamer?",
+      "options": [
+       "He was probably paid by the brand.",
+       "He bought the trainers with his own money.",
+       "He doesn't really like the trainers.",
+       "He always tells his fans the truth."
+      ],
+      "answer": 0,
+      "explain_vi": "Anna: \"someone who was probably paid to wear them.\" Câu \"he'd bought them himself\" là lời gamer, Anna không tin."
+     },
+     {
+      "q": "What is Anna's opinion of advertising?",
+      "options": [
+       "It should be banned for teenagers.",
+       "It can be useful, but buyers should do some research.",
+       "It is always dishonest.",
+       "It only affects people who play games."
+      ],
+      "answer": 1,
+      "explain_vi": "\"I'm not saying advertising is always bad. It does inform us... we should find out more before we spend.\""
+     },
+     {
+      "q": "Why does Tom mention the phone case?",
+      "options": [
+       "He wants to borrow it.",
+       "He thinks it was too expensive.",
+       "He thinks Anna has done something similar herself.",
+       "He wants to buy the same one."
+      ],
+      "answer": 2,
+      "explain_vi": "Tom nhắc Anna từng xếp hàng 3 tiếng mua ốp điện thoại, ý nói Anna cũng từng làm giống mình."
+     },
+     {
+      "q": "What does Tom decide at the end?",
+      "options": [
+       "To check reviews before buying things in future",
+       "To return the trainers to the shop",
+       "To stop watching the gamer's videos",
+       "To buy cheaper trainers like his cousin's"
+      ],
+      "answer": 0,
+      "explain_vi": "Tom giữ đôi giày (\"I'm keeping these\") và hứa: \"No more shopping just because of one video\" – lần sau xem đánh giá trước."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe một nhà báo nói chuyện với học sinh về tin giả. Có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
+    "script": "Hello, everyone. My name is Anna Brown, and I've worked as a journalist for over fifteen years. Today I want to talk about fake news, and how you can protect yourselves from it. Research shows that false stories are shared online much faster than true ones. Some people say twice as fast, but in fact it can be up to 6 times faster, because false stories are usually more shocking. So, what can you do? I always teach young people a simple three-step check. Step one: look at the source. Who wrote the article, and when was it published? Many fake stories are actually several years old and are simply shared again. Step two: check whether the same story is reported by at least 2 other reliable websites. I mean real news organisations, not social media pages. Step three, and this is the one most people forget: look carefully at the photos. Some pictures are taken from completely different events, or changed using computer programs. Many of you probably think that all this takes ages, but with practice, it takes just a few minutes. And finally, if you're still not sure, simply don't share it. That's the easiest way to stop false information from spreading.",
+    "text": "HOW TO SPOT FAKE NEWS\n• False stories spread up to [1] times faster than true ones\n• Step 1: check who wrote it and when it was [2]\n• Step 2: find the same story on at least [3] other reliable websites\n• Step 3: look carefully at the [4]\n• Still not sure? Don't [5] it",
+    "items": [
+     {
+      "answer": "6",
+      "accept": [
+       "six"
+      ],
+      "explain_vi": "\"some people say twice as fast, but in fact it can be up to 6 times faster.\""
+     },
+     {
+      "answer": "published",
+      "accept": [],
+      "explain_vi": "\"Who wrote the article, and when was it published?\""
+     },
+     {
+      "answer": "2",
+      "accept": [
+       "two"
+      ],
+      "explain_vi": "\"reported by at least 2 other reliable websites\" – trang mạng xã hội không tính."
+     },
+     {
+      "answer": "photos",
+      "accept": [
+       "photo",
+       "photographs",
+       "pictures"
+      ],
+      "explain_vi": "\"Step three... look carefully at the photos.\" Bước này nhiều người hay quên."
+     },
+     {
+      "answer": "share",
+      "accept": [],
+      "explain_vi": "\"if you're still not sure, simply don't share it.\""
+     }
+    ]
+   }
+  }
  }
 }

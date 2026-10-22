@@ -607,5 +607,491 @@
    "He/She often helps people who …",
    "I respect him/her because …"
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Anna và Tom nói về một bức ảnh chụp ở tiệc sinh nhật. Chọn đáp án đúng cho mỗi câu hỏi.",
+    "speakers": [
+     {
+      "name": "Anna",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 1,
+      "t": "Hi Anna. Is that a photo from your birthday party?"
+     },
+     {
+      "s": 0,
+      "t": "Yes, it is. Look, that's my best friend, Mai. She's the girl who is holding the cake."
+     },
+     {
+      "s": 1,
+      "t": "She looks really friendly. What's she like?"
+     },
+     {
+      "s": 0,
+      "t": "She's very generous. She always shares her snacks with everyone, and she gave me a lovely book for my birthday."
+     },
+     {
+      "s": 1,
+      "t": "And who's the boy with glasses? He's laughing."
+     },
+     {
+      "s": 0,
+      "t": "That's Nam. He's the boy whose dog is in the photo too. He's really funny."
+     },
+     {
+      "s": 1,
+      "t": "Do you get on well with him?"
+     },
+     {
+      "s": 0,
+      "t": "Yes, but we sometimes argue about football! He supports a different team from me."
+     },
+     {
+      "s": 1,
+      "t": "Ha! That sounds fun. Where was the party?"
+     },
+     {
+      "s": 0,
+      "t": "At a pizza restaurant near my house. It's the place where we always celebrate birthdays in our family."
+     }
+    ],
+    "items": [
+     {
+      "q": "What is Mai doing in the photo?",
+      "options": [
+       "eating pizza",
+       "holding the cake",
+       "taking a photo",
+       "playing with a dog"
+      ],
+      "answer": 1,
+      "explain_vi": "Anna: \"She's the girl who is holding the cake.\""
+     },
+     {
+      "q": "What is Mai like?",
+      "options": [
+       "funny",
+       "shy",
+       "generous",
+       "honest"
+      ],
+      "answer": 2,
+      "explain_vi": "\"She's very generous. She always shares her snacks.\" Funny là Nam."
+     },
+     {
+      "q": "Which is true about Nam?",
+      "options": [
+       "His dog is in the photo.",
+       "He is Anna's cousin.",
+       "He doesn't like football.",
+       "He is holding the cake."
+      ],
+      "answer": 0,
+      "explain_vi": "\"He's the boy whose dog is in the photo too.\""
+     },
+     {
+      "q": "What do Anna and Nam sometimes argue about?",
+      "options": [
+       "homework",
+       "music",
+       "food",
+       "football"
+      ],
+      "answer": 3,
+      "explain_vi": "\"We sometimes argue about football! He supports a different team.\""
+     },
+     {
+      "q": "Where was the party?",
+      "options": [
+       "at Anna's house",
+       "at a pizza restaurant",
+       "at school",
+       "in a park"
+      ],
+      "answer": 1,
+      "explain_vi": "\"At a pizza restaurant near my house.\" Không phải ở nhà Anna."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe một bạn học sinh nói về người bạn ấy kính trọng. Điền vào mỗi chỗ trống MỘT hoặc HAI từ, hoặc một con số.",
+    "script": "Hello, everyone. Today I'm going to talk about a person I really look up to. It's my grandfather, who lives with my family in Hanoi. He is 75 years old. Before he stopped working, he was a teacher at a village school. He is kind and very honest. He always tells me the truth, even when it's difficult. Every morning, he gets up early and goes for a walk in the park, where he meets his old friends. In the evening, he helps me with my maths homework. He taught me something very important: always respect other people, young or old. I love him very much, and I want to be like him.",
+    "text": "A PERSON I LOOK UP TO\n• Who: my [1]\n• Age: [2]\n• Old job: a teacher at a [3] school\n• Every morning: goes for a walk in the [4]\n• In the evening: helps me with my [5] homework",
+    "items": [
+     {
+      "answer": "grandfather",
+      "accept": [
+       "grandpa"
+      ],
+      "explain_vi": "\"It's my grandfather, who lives with my family.\""
+     },
+     {
+      "answer": "75",
+      "accept": [
+       "seventy five"
+      ],
+      "explain_vi": "\"He is 75 years old.\""
+     },
+     {
+      "answer": "village",
+      "accept": [],
+      "explain_vi": "\"He was a teacher at a village school.\""
+     },
+     {
+      "answer": "park",
+      "accept": [
+       "the park"
+      ],
+      "explain_vi": "\"Goes for a walk in the park, where he meets his old friends.\""
+     },
+     {
+      "answer": "maths",
+      "accept": [
+       "math"
+      ],
+      "explain_vi": "\"He helps me with my maths homework.\""
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Linh kể với Nam về chuyện cãi nhau với bạn thân. Chọn đáp án đúng cho mỗi câu hỏi.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 1,
+      "t": "Linh, you look upset. Is everything OK?"
+     },
+     {
+      "s": 0,
+      "t": "Not really. I had an argument with Mai yesterday."
+     },
+     {
+      "s": 1,
+      "t": "With Mai? But you two never argue. What happened?"
+     },
+     {
+      "s": 0,
+      "t": "Well, I told her a secret about my older sister, and she told someone else. At first, I thought she'd told the whole class, but actually she only told Anna."
+     },
+     {
+      "s": 1,
+      "t": "Still, I understand why you're angry. Trust is really important between friends."
+     },
+     {
+      "s": 0,
+      "t": "Exactly. Now I don't know if I can trust her again. We've been best friends since we were six."
+     },
+     {
+      "s": 1,
+      "t": "Has she said sorry to you yet?"
+     },
+     {
+      "s": 0,
+      "t": "She sent me a long message last night, but I haven't answered it yet."
+     },
+     {
+      "s": 1,
+      "t": "Well, Mai is someone who is usually very honest. Maybe she didn't realise it was a secret."
+     },
+     {
+      "s": 0,
+      "t": "Hmm, maybe. I did tell her at lunchtime, when everyone around us was chatting."
+     },
+     {
+      "s": 1,
+      "t": "So why don't you talk to her face to face after school? Messages can be confusing."
+     },
+     {
+      "s": 0,
+      "t": "You're right. I'll find her in the library, where she always studies after class. Thanks, Nam. You're so sympathetic."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why is Linh upset?",
+      "options": [
+       "Mai forgot her birthday.",
+       "Her friend told someone else her secret.",
+       "Her sister was angry with her.",
+       "Anna laughed at her."
+      ],
+      "answer": 1,
+      "explain_vi": "\"I told her a secret about my older sister, and she told someone else.\""
+     },
+     {
+      "q": "Who did Mai tell?",
+      "options": [
+       "the whole class",
+       "Linh's sister",
+       "Nam",
+       "just one person"
+      ],
+      "answer": 3,
+      "explain_vi": "Linh tưởng Mai kể cả lớp, nhưng \"actually she only told Anna\"."
+     },
+     {
+      "q": "How has Mai tried to say sorry?",
+      "options": [
+       "She wrote Linh a message.",
+       "She phoned Linh.",
+       "She talked to Linh at lunchtime.",
+       "She asked Nam to help."
+      ],
+      "answer": 0,
+      "explain_vi": "\"She sent me a long message last night, but I haven't answered it yet.\""
+     },
+     {
+      "q": "Why does Nam think Mai may not be completely to blame?",
+      "options": [
+       "Anna asked her about the secret.",
+       "She was angry with Linh.",
+       "She might not have known it was a secret.",
+       "She was too busy to listen."
+      ],
+      "answer": 2,
+      "explain_vi": "Nam: \"Maybe she didn't realise it was a secret.\" Linh kể lúc ồn ào giờ ăn trưa."
+     },
+     {
+      "q": "What will Linh do next?",
+      "options": [
+       "reply to Mai's message tonight",
+       "ask Anna to keep the secret",
+       "tell her teacher about it",
+       "speak to Mai in person"
+      ],
+      "answer": 3,
+      "explain_vi": "Nam khuyên nói chuyện trực tiếp; Linh: \"I'll find her in the library.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe thầy Brown giới thiệu chương trình Bạn đồng hành cho học sinh mới. Điền vào mỗi chỗ trống MỘT hoặc HAI từ, hoặc một con số.",
+    "script": "Good morning, everyone. I'm Mr Brown, and I'd like to tell you about our new Buddy Programme. It's for students who have just joined our school and don't know anyone yet. Each new student will have a buddy, an older student who can show them around and answer their questions. We're looking for buddies in grade 8, not grade 9, because grade 9 students need time for their exams. A good buddy is someone who is friendly, patient and, most importantly, sympathetic. You don't need to be the best student in your class. Buddies will meet their new friends twice a week, at lunchtime, in the school library. Oh, sorry, there's a change. Because the library is being painted, the meetings will be in the music room this month. If you'd like to join, please write your name on the list on the door of Room 12 before Friday. Every buddy will also get a free trip to the science museum in May. Thank you!",
+    "text": "BUDDY PROGRAMME\n• Buddies must be in grade [1]\n• Most important quality: [2]\n• Meetings: [3] a week, at lunchtime\n• Meeting place this month: the [4] room\n• To join: write your name on the list on the door of Room [5]",
+    "items": [
+     {
+      "answer": "8",
+      "accept": [
+       "eight"
+      ],
+      "explain_vi": "\"We're looking for buddies in grade 8, not grade 9.\""
+     },
+     {
+      "answer": "sympathetic",
+      "accept": [],
+      "explain_vi": "\"Friendly, patient and, most importantly, sympathetic.\""
+     },
+     {
+      "answer": "twice",
+      "accept": [],
+      "explain_vi": "\"Buddies will meet their new friends twice a week.\""
+     },
+     {
+      "answer": "music",
+      "accept": [
+       "music room"
+      ],
+      "explain_vi": "Thư viện đang sơn, \"the meetings will be in the music room this month\"."
+     },
+     {
+      "answer": "12",
+      "accept": [
+       "twelve"
+      ],
+      "explain_vi": "\"Write your name on the list on the door of Room 12.\""
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Anna và Tom bàn nên bầu ai làm lớp trưởng. Chú ý ý kiến, thái độ và sự thay đổi quyết định.",
+    "speakers": [
+     {
+      "name": "Anna",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Tom, we're voting for the new class monitor tomorrow. Have you decided who to vote for?"
+     },
+     {
+      "s": 1,
+      "t": "I was going to choose Nam. He's the one who organised the class trip last year, and everyone gets on well with him."
+     },
+     {
+      "s": 0,
+      "t": "True, he's really popular. But do you remember that trip? He made every decision himself and never asked for anyone else's opinion."
+     },
+     {
+      "s": 1,
+      "t": "Hmm, that's a fair point. He can be a bit bossy. But he's confident, and a monitor has to speak in front of the teachers."
+     },
+     {
+      "s": 0,
+      "t": "Sure, but confidence isn't everything. I'm thinking of voting for Mai."
+     },
+     {
+      "s": 1,
+      "t": "Mai? She's so quiet, though. I've hardly ever heard her speak in class."
+     },
+     {
+      "s": 0,
+      "t": "She's quiet, but she's the person everyone goes to when they have a problem. When my grandmother was in hospital, she was the only one who noticed I was sad."
+     },
+     {
+      "s": 1,
+      "t": "Really? I didn't know that."
+     },
+     {
+      "s": 0,
+      "t": "And she's completely honest. Remember when our teacher gave the class extra points by mistake? Mai was the one who told her."
+     },
+     {
+      "s": 1,
+      "t": "Oh yes, some people were really annoyed with her! But I suppose that's exactly why people trust her."
+     },
+     {
+      "s": 0,
+      "t": "Exactly. A monitor should be someone that the class respects, not just someone who's good at talking."
+     },
+     {
+      "s": 1,
+      "t": "I see what you mean. But do you think she'd even want the job?"
+     },
+     {
+      "s": 0,
+      "t": "I asked her yesterday. She was nervous, but she said she'd do it if her classmates supported her."
+     },
+     {
+      "s": 1,
+      "t": "Well, in that case, she's got my vote. Let's tell the others at lunch."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why was Tom planning to vote for Nam at first?",
+      "options": [
+       "Nam always listens to other people.",
+       "Nam is popular and has organised an event before.",
+       "Nam is his closest friend.",
+       "Anna advised him to."
+      ],
+      "answer": 1,
+      "explain_vi": "Tom: Nam tổ chức chuyến đi năm ngoái \"and everyone gets on well with him\"."
+     },
+     {
+      "q": "What is Anna's main criticism of Nam?",
+      "options": [
+       "He isn't confident enough.",
+       "He isn't always honest.",
+       "He doesn't consider other people's ideas.",
+       "He made the class trip boring."
+      ],
+      "answer": 2,
+      "explain_vi": "\"He made every decision himself and never asked for anyone else's opinion.\""
+     },
+     {
+      "q": "What does Anna's story about her grandmother show about Mai?",
+      "options": [
+       "She notices how other people feel.",
+       "She is confident in difficult situations.",
+       "She often visits people in hospital.",
+       "She is the most popular girl in class."
+      ],
+      "answer": 0,
+      "explain_vi": "Mai là người duy nhất nhận ra Anna buồn: Mai biết quan tâm, cảm thông."
+     },
+     {
+      "q": "How did some classmates feel when Mai told the teacher about the points?",
+      "options": [
+       "proud of her",
+       "grateful to her",
+       "surprised by the teacher",
+       "unhappy with her"
+      ],
+      "answer": 3,
+      "explain_vi": "Tom: \"some people were really annoyed with her!\" (annoyed = bực mình)."
+     },
+     {
+      "q": "What finally makes Tom decide to vote for Mai?",
+      "options": [
+       "Nam has decided not to stand.",
+       "Mai is willing to do the job if the class supports her.",
+       "Mai promised to speak more in class.",
+       "The teacher recommended Mai."
+      ],
+      "answer": 1,
+      "explain_vi": "Anna kể Mai sẽ nhận \"if her classmates supported her\"; Tom: \"in that case, she's got my vote\"."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe chương trình radio về chuyện tuổi teen cãi nhau với bố mẹ. Điền vào mỗi chỗ trống MỘT hoặc HAI từ, hoặc một con số.",
+    "script": "Welcome back to Teen Talk. Today's topic is something which almost every family experiences: arguments between teenagers and their parents. A recent survey of 500 students in Hanoi found that most teenagers argue with their parents about three times a week. Many people expect the main cause to be school results, but in fact, the most common topic was screen time, followed by housework. Interestingly, the students who argued least were not the ones whose parents were the strictest. They were the ones who ate dinner with their family most evenings, because they had more chances to talk calmly. So what can you do? Our expert, Doctor Anna White, whose book on family relationships came out last year, has three suggestions. First, choose the right moment. Don't start a serious conversation when your parents have just come home from work. Second, listen before you answer, even if you disagree. And third, don't try to win. She says the aim of a discussion is understanding, not victory. If both sides feel respected, trust grows naturally. That's all for today. Next week, we'll be talking about online friendships.",
+    "text": "TEEN TALK: TEENAGERS AND PARENTS\n• Survey: [1] students in Hanoi\n• Most common topic of arguments: [2]\n• Students who argue least usually have [3] with their family\n• Advice 1: choose the right [4]\n• Aim of a discussion: [5], not victory",
+    "items": [
+     {
+      "answer": "500",
+      "accept": [
+       "five hundred"
+      ],
+      "explain_vi": "\"A recent survey of 500 students in Hanoi.\""
+     },
+     {
+      "answer": "screen time",
+      "accept": [],
+      "explain_vi": "Không phải kết quả học tập: \"the most common topic was screen time, followed by housework\"."
+     },
+     {
+      "answer": "dinner",
+      "accept": [],
+      "explain_vi": "Không phải do bố mẹ nghiêm khắc, mà vì \"ate dinner with their family most evenings\"."
+     },
+     {
+      "answer": "moment",
+      "accept": [],
+      "explain_vi": "\"First, choose the right moment.\""
+     },
+     {
+      "answer": "understanding",
+      "accept": [],
+      "explain_vi": "\"The aim of a discussion is understanding, not victory.\""
+     }
+    ]
+   }
+  }
  }
 }

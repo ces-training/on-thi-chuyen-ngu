@@ -599,5 +599,506 @@
    "It started when I was …",
    "I like it because …"
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Mai và Nam nói về sở thích. Chọn đáp án đúng cho 5 câu hỏi.",
+    "speakers": [
+     {
+      "name": "Mai",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Nam. I called you yesterday afternoon, but you didn't answer."
+     },
+     {
+      "s": 1,
+      "t": "Sorry, Mai. I was painting a picture in my room, and my phone was in the kitchen."
+     },
+     {
+      "s": 0,
+      "t": "Painting? I didn't know you liked art. You used to collect stamps, right?"
+     },
+     {
+      "s": 1,
+      "t": "Yes, I used to have about 300 stamps. But I gave it up last year. It was too expensive."
+     },
+     {
+      "s": 0,
+      "t": "So when did you start painting?"
+     },
+     {
+      "s": 1,
+      "t": "I took it up last month. Now I go to an art class every Saturday."
+     },
+     {
+      "s": 0,
+      "t": "Cool! In my spare time, I usually go swimming. I go to the pool every Sunday morning."
+     },
+     {
+      "s": 1,
+      "t": "That's nice. Hey, why don't you come to my art class? It's really creative and fun."
+     },
+     {
+      "s": 0,
+      "t": "Hmm, maybe. Is it expensive?"
+     },
+     {
+      "s": 1,
+      "t": "No, and the first class is free! It's at nine o'clock this Saturday. Let's go together!"
+     }
+    ],
+    "items": [
+     {
+      "q": "What was Nam doing when Mai called him?",
+      "options": [
+       "Swimming",
+       "Painting a picture",
+       "Cooking in the kitchen",
+       "Collecting stamps"
+      ],
+      "answer": 1,
+      "explain_vi": "Nam nói: 'I was painting a picture in my room'."
+     },
+     {
+      "q": "Why did Nam stop collecting stamps?",
+      "options": [
+       "It cost too much money.",
+       "He lost his stamps.",
+       "It was boring.",
+       "He had no spare time."
+      ],
+      "answer": 0,
+      "explain_vi": "Nam nói: 'I gave it up last year. It was too expensive.'"
+     },
+     {
+      "q": "When did Nam start painting?",
+      "options": [
+       "Last year",
+       "Last week",
+       "Last month",
+       "Yesterday"
+      ],
+      "answer": 2,
+      "explain_vi": "Nam nói: 'I took it up last month.' Last year là lúc bỏ sưu tầm tem."
+     },
+     {
+      "q": "What does Mai usually do on Sunday mornings?",
+      "options": [
+       "She goes to an art class.",
+       "She paints pictures.",
+       "She plays with Nam.",
+       "She goes swimming."
+      ],
+      "answer": 3,
+      "explain_vi": "Mai nói: 'I go to the pool every Sunday morning.'"
+     },
+     {
+      "q": "How much is Nam's first art class?",
+      "options": [
+       "It is free.",
+       "It is very expensive.",
+       "Nam doesn't know.",
+       "It is half price."
+      ],
+      "answer": 0,
+      "explain_vi": "Nam nói: 'the first class is free!'"
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe lời giới thiệu các câu lạc bộ hè ở một nhà văn hoá thiếu nhi. Điền 1–2 từ hoặc một con số vào mỗi chỗ trống.",
+    "script": "Hello, everyone, and welcome to Sunshine Youth Centre. This summer, we have three new clubs for teenagers. The cooking club meets on Mondays. The photography club meets on Wednesdays, and the chess club meets on Fridays. All the clubs start at three o'clock in the afternoon. Membership costs 200,000 dong for the whole summer. For the photography club, you need to bring a camera or a phone. Our chess teacher is Mr Brown. He used to play chess for the city team. To join a club, please fill in a form at the front desk. Thank you!",
+    "text": "SUNSHINE YOUTH CENTRE: SUMMER CLUBS\n• Photography club day: [1]\n• Membership for the summer: [2] dong\n• Photography club: bring a camera or a [3]\n• Chess teacher used to play for the city [4]\n• Get a form at the front [5]",
+    "items": [
+     {
+      "answer": "Wednesday",
+      "accept": [
+       "Wednesdays"
+      ],
+      "explain_vi": "'The photography club meets on Wednesdays'."
+     },
+     {
+      "answer": "200,000",
+      "accept": [
+       "200000",
+       "200.000"
+      ],
+      "explain_vi": "'Membership costs 200,000 dong for the whole summer.'"
+     },
+     {
+      "answer": "phone",
+      "accept": [
+       "a phone",
+       "mobile phone"
+      ],
+      "explain_vi": "'you need to bring a camera or a phone'."
+     },
+     {
+      "answer": "team",
+      "accept": [
+       "city team"
+      ],
+      "explain_vi": "'He used to play chess for the city team.'"
+     },
+     {
+      "answer": "desk",
+      "accept": [
+       "front desk"
+      ],
+      "explain_vi": "'please fill in a form at the front desk'."
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Linh phỏng vấn ông về sở thích ngày xưa cho bài dự án ở trường. Nghe và chọn đáp án đúng.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Grandpa",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Grandpa, can I ask you some questions? It's for my school project on hobbies in the past."
+     },
+     {
+      "s": 1,
+      "t": "Of course, Linh. What would you like to know?"
+     },
+     {
+      "s": 0,
+      "t": "What did you use to do in your spare time when you were my age?"
+     },
+     {
+      "s": 1,
+      "t": "Well, we didn't have phones or computers, so we spent a lot of time outside. I used to fly kites with my friends after school. We made them ourselves, from bamboo and old newspapers."
+     },
+     {
+      "s": 0,
+      "t": "That's so creative! Did you have any other hobbies?"
+     },
+     {
+      "s": 1,
+      "t": "I collected, let me think, no, it wasn't stamps. My brother collected stamps. I collected old coins. I had about 200 of them."
+     },
+     {
+      "s": 0,
+      "t": "Wow. Have you still got them?"
+     },
+     {
+      "s": 1,
+      "t": "Sadly, no. When I was moving house, I lost the box, and I never found it."
+     },
+     {
+      "s": 0,
+      "t": "Oh no! And what do you do to relax these days?"
+     },
+     {
+      "s": 1,
+      "t": "I still play chess in the park every morning, like I always have. And last year, I took up gardening."
+     },
+     {
+      "s": 0,
+      "t": "Could I take a photo of your garden for my project?"
+     },
+     {
+      "s": 1,
+      "t": "Sure. Let's go outside now, before it gets dark."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why is Linh asking her grandfather questions?",
+      "options": [
+       "She is writing a letter.",
+       "She needs them for a school project.",
+       "She wants to start a new hobby.",
+       "She is making a film."
+      ],
+      "answer": 1,
+      "explain_vi": "Linh nói: 'It's for my school project on hobbies in the past.'"
+     },
+     {
+      "q": "What did Grandpa and his friends make their kites from?",
+      "options": [
+       "Plastic and paper",
+       "Wood and cloth",
+       "Bamboo and cloth",
+       "Bamboo and paper"
+      ],
+      "answer": 3,
+      "explain_vi": "Ông nói: 'from bamboo and old newspapers' → tre và giấy báo."
+     },
+     {
+      "q": "What did Grandpa collect?",
+      "options": [
+       "Old coins",
+       "Stamps",
+       "Kites",
+       "Old newspapers"
+      ],
+      "answer": 0,
+      "explain_vi": "Ông định nói stamps rồi sửa: 'My brother collected stamps. I collected old coins.'"
+     },
+     {
+      "q": "What happened to Grandpa's collection?",
+      "options": [
+       "He sold it.",
+       "He gave it to his brother.",
+       "He lost it when he was moving house.",
+       "He still keeps it in a box."
+      ],
+      "answer": 2,
+      "explain_vi": "'When I was moving house, I lost the box, and I never found it.'"
+     },
+     {
+      "q": "Which hobby did Grandpa start recently?",
+      "options": [
+       "Playing chess",
+       "Gardening",
+       "Flying kites",
+       "Taking photos"
+      ],
+      "answer": 1,
+      "explain_vi": "'last year, I took up gardening'. Cờ vua thì ông chơi từ lâu ('like I always have')."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe lời giới thiệu các khoá học cuối tuần ở trung tâm. Có thông tin bị sửa lại. Điền 1–2 từ hoặc một con số.",
+    "script": "Good morning, and welcome to Riverside Leisure Centre's open day. I'm Anna, the activities manager. Let me tell you about our weekend courses for teenagers. This term, we have courses in comic drawing, pottery and rock climbing. The comic drawing course is on Saturday mornings. Oh, sorry, I mean Sunday mornings. On Saturdays, the art room is used by the pottery group. If you like a physical challenge, try rock climbing. Climbers must be at least 13 years old. You don't need special shoes, because we lend them to all beginners. Membership costs 300,000 dong a month. It gives you one course and free use of the swimming pool. Your first session is free, but you need to book it online. Finally, we're looking for enthusiastic volunteers to help in our snack bar. Thanks for listening!",
+    "text": "RIVERSIDE LEISURE CENTRE\n• Comic drawing: on [1] mornings\n• Rock climbing: minimum age [2]\n• Beginners can borrow [3]\n• Membership includes free use of the [4]\n• First session: free, book it [5]",
+    "items": [
+     {
+      "answer": "Sunday",
+      "accept": [
+       "Sundays"
+      ],
+      "explain_vi": "Anna nói Saturday rồi sửa: 'Oh, sorry, I mean Sunday mornings.'"
+     },
+     {
+      "answer": "13",
+      "accept": [
+       "thirteen"
+      ],
+      "explain_vi": "'Climbers must be at least 13 years old.'"
+     },
+     {
+      "answer": "shoes",
+      "accept": [
+       "special shoes"
+      ],
+      "explain_vi": "'You don't need special shoes, because we lend them to all beginners.'"
+     },
+     {
+      "answer": "swimming pool",
+      "accept": [
+       "pool"
+      ],
+      "explain_vi": "'It gives you one course and free use of the swimming pool.'"
+     },
+     {
+      "answer": "online",
+      "accept": [],
+      "explain_vi": "'Your first session is free, but you need to book it online.'"
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Anna và Tom bàn chuyện Tom chọn câu lạc bộ nào. Chú ý lý do, thái độ và quyết định cuối cùng của Tom.",
+    "speakers": [
+     {
+      "name": "Anna",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Tom, have you decided which club you're joining this term? The deadline's Friday."
+     },
+     {
+      "s": 1,
+      "t": "Not yet. I'm torn between the climbing club and the photography club."
+     },
+     {
+      "s": 0,
+      "t": "Climbing? I thought you were afraid of heights."
+     },
+     {
+      "s": 1,
+      "t": "I used to be, actually. When I was little, I wouldn't even climb the ladder to the top bunk. But last summer, while we were staying in Sa Pa, my cousin took me to a climbing wall, and I loved it."
+     },
+     {
+      "s": 0,
+      "t": "So what's stopping you?"
+     },
+     {
+      "s": 1,
+      "t": "Mainly the cost. Membership is 1,500,000 dong a term, and you're supposed to buy your own shoes. The photography club is much cheaper, and I've already got a decent camera."
+     },
+     {
+      "s": 0,
+      "t": "Hmm, but would you actually stick with it? Remember the guitar? You were so enthusiastic at first, and then you gave up after two months."
+     },
+     {
+      "s": 1,
+      "t": "That's not fair! I gave up because the teacher kept making us play the same boring songs. It wasn't that I lost interest."
+     },
+     {
+      "s": 0,
+      "t": "Okay, okay. But be honest. Which one excites you more?"
+     },
+     {
+      "s": 1,
+      "t": "Climbing, definitely. It's a real challenge, both physically and mentally. Photography is relaxing, but I can do that on my own anyway."
+     },
+     {
+      "s": 0,
+      "t": "Then that's your answer. As for the money, weren't you saving up for a new phone?"
+     },
+     {
+      "s": 1,
+      "t": "I was, but my phone's working fine. I suppose I don't really need a new one."
+     },
+     {
+      "s": 0,
+      "t": "Exactly. And I've heard the club lends shoes to beginners for the first month, so you wouldn't have to buy them straight away."
+     },
+     {
+      "s": 1,
+      "t": "Really? Well, that settles it, then. I'll sign up tomorrow morning."
+     }
+    ],
+    "items": [
+     {
+      "q": "What do we learn about Tom and heights?",
+      "options": [
+       "He has always been afraid of them.",
+       "He was scared of them as a child but not any more.",
+       "He became afraid of them in Sa Pa.",
+       "He still feels nervous on a climbing wall."
+      ],
+      "answer": 1,
+      "explain_vi": "'I used to be, actually' → trước đây sợ; ở Sa Pa leo tường 'and I loved it'."
+     },
+     {
+      "q": "What is Tom's main concern about the climbing club?",
+      "options": [
+       "It meets on Friday.",
+       "He has no climbing shoes.",
+       "It is expensive.",
+       "His cousin isn't a member."
+      ],
+      "answer": 2,
+      "explain_vi": "Tom nói: 'Mainly the cost.' Giày chỉ là chi tiết phụ, sau đó câu lạc bộ cho mượn."
+     },
+     {
+      "q": "According to Tom, why did he give up the guitar?",
+      "options": [
+       "He lost interest after two months.",
+       "His lessons were repetitive and dull.",
+       "The guitar was too expensive.",
+       "He wanted to take up climbing."
+      ],
+      "answer": 1,
+      "explain_vi": "Tom bác ý của Anna: 'the teacher kept making us play the same boring songs. It wasn't that I lost interest.'"
+     },
+     {
+      "q": "Why does Tom prefer climbing to photography?",
+      "options": [
+       "Climbing is more relaxing.",
+       "His camera is not good enough.",
+       "Anna is in the climbing club.",
+       "Climbing is more demanding, and he can take photos by himself."
+      ],
+      "answer": 3,
+      "explain_vi": "'It's a real challenge… Photography is relaxing, but I can do that on my own anyway.'"
+     },
+     {
+      "q": "How will Tom most likely pay for the club?",
+      "options": [
+       "With money he was saving for a phone",
+       "By selling his camera",
+       "By borrowing from Anna",
+       "With help from his cousin"
+      ],
+      "answer": 0,
+      "explain_vi": "Anna nhắc khoản tiết kiệm mua điện thoại, Tom nói 'I don't really need a new one' rồi quyết định đăng ký."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe một bạn trẻ nói về câu lạc bộ trò chơi cờ bàn bạn ấy lập ra. Có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
+    "script": "Hi, everyone. I'm Mai, and today I'd like to tell you how a rainy afternoon changed my free time. Two years ago, I used to spend most of my leisure time scrolling on my phone. One afternoon, while I was waiting for the rain to stop at my aunt's house, she took out an old board game. We played for three hours, and I didn't check my phone once. That's when I decided to start a board game club. At first, I thought about meeting at school, but the classrooms are locked at weekends, so instead we meet in a small cafe near Hoan Kiem Lake every Sunday afternoon. We started with just five members, and now there are 32 of us. Our members bring their own games, so we have more than 60 to choose from. People often assume chess is our favourite, but the game everyone fights over is actually Monopoly. Membership is completely free, although we ask everyone to buy a drink to support the cafe. If you're looking for a creative way to relax without a screen, come and join us.",
+    "text": "MAI'S BOARD GAME CLUB\n• Mai first played the game at her [1] house\n• Meeting place: a [2] near Hoan Kiem Lake\n• Number of members now: [3]\n• Most popular game: [4]\n• Members are asked to buy a [5]",
+    "items": [
+     {
+      "answer": "aunt's",
+      "accept": [
+       "aunt",
+       "aunts"
+      ],
+      "explain_vi": "'while I was waiting for the rain to stop at my aunt's house'."
+     },
+     {
+      "answer": "cafe",
+      "accept": [
+       "café",
+       "small cafe"
+      ],
+      "explain_vi": "Lớp học khoá cửa cuối tuần 'so instead we meet in a small cafe near Hoan Kiem Lake'."
+     },
+     {
+      "answer": "32",
+      "accept": [
+       "thirty two",
+       "thirty-two"
+      ],
+      "explain_vi": "'We started with just five members, and now there are 32 of us.'"
+     },
+     {
+      "answer": "Monopoly",
+      "accept": [],
+      "explain_vi": "Không phải cờ vua: 'the game everyone fights over is actually Monopoly'."
+     },
+     {
+      "answer": "drink",
+      "accept": [
+       "a drink"
+      ],
+      "explain_vi": "'we ask everyone to buy a drink to support the cafe'."
+     }
+    ]
+   }
+  }
  }
 }

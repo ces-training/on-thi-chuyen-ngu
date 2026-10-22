@@ -608,5 +608,494 @@
    "The … was / were decorated with …",
    "If you came to Vietnam, I would take you to …"
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Mai và Tom nói chuyện về hội chợ ẩm thực của trường. Nghe và chọn đáp án đúng cho 5 câu hỏi.",
+    "speakers": [
+     {
+      "name": "Mai",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Tom, are you coming to the school food festival on Saturday?"
+     },
+     {
+      "s": 1,
+      "t": "Of course! My class is making spring rolls. We're using my grandmother's recipe."
+     },
+     {
+      "s": 0,
+      "t": "Yum! Did she teach you how to make them?"
+     },
+     {
+      "s": 1,
+      "t": "Yes, she did. She's very patient and kind. I really look up to her."
+     },
+     {
+      "s": 0,
+      "t": "My class is selling mango juice. We need lots of mangoes, so we're going to the local market on Friday."
+     },
+     {
+      "s": 1,
+      "t": "Don't run out of cups! Last year, we had no cups left after only one hour."
+     },
+     {
+      "s": 0,
+      "t": "Thanks for telling me. I'll buy 200 cups, then. Is there going to be any music at the festival?"
+     },
+     {
+      "s": 1,
+      "t": "Yes. The school band is putting on a show at eleven o'clock."
+     },
+     {
+      "s": 0,
+      "t": "Great. And the money from the festival goes to the children's hospital, right?"
+     },
+     {
+      "s": 1,
+      "t": "That's right. So eat a lot and help the children!"
+     }
+    ],
+    "items": [
+     {
+      "q": "What is Tom's class making for the festival?",
+      "options": [
+       "Mango juice",
+       "Spring rolls",
+       "Cakes",
+       "Noodle soup"
+      ],
+      "answer": 1,
+      "explain_vi": "Tom nói: \"My class is making spring rolls.\""
+     },
+     {
+      "q": "Whose recipe is Tom's class using?",
+      "options": [
+       "His mother's",
+       "His teacher's",
+       "His grandmother's",
+       "Mai's"
+      ],
+      "answer": 2,
+      "explain_vi": "Tom nói: \"We're using my grandmother's recipe.\""
+     },
+     {
+      "q": "Where will Mai's class buy the mangoes?",
+      "options": [
+       "At the supermarket",
+       "On the internet",
+       "At school",
+       "At a market near them"
+      ],
+      "answer": 3,
+      "explain_vi": "Mai nói: \"we're going to the local market on Friday\" (local = ở gần, địa phương)."
+     },
+     {
+      "q": "What happened at the festival last year?",
+      "options": [
+       "They didn't have enough cups.",
+       "It rained all day.",
+       "Nobody bought any juice.",
+       "The band didn't come."
+      ],
+      "answer": 0,
+      "explain_vi": "Tom nói: \"Last year, we had no cups left after only one hour.\""
+     },
+     {
+      "q": "Who will get the money from the festival?",
+      "options": [
+       "The school band",
+       "The local market",
+       "A children's hospital",
+       "Tom's class"
+      ],
+      "answer": 2,
+      "explain_vi": "Mai hỏi và Tom xác nhận: tiền \"goes to the children's hospital\"."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe bản tin trên đài phát thanh của trường về Ngày hội nghề nghiệp. Điền vào ghi chú, mỗi chỗ 1 từ.",
+    "script": "Good morning, everyone. This is Nam from the school radio with some news. Next Thursday is our Careers Day. Four visitors will come to talk about their jobs. There will be a doctor, a chef, a journalist and a scientist. The talks are in the school hall and start at nine o'clock. If you want to ask the visitors a question, please write it on a piece of paper. Give it to your class teacher before Wednesday. In the afternoon, you can try some skills yourself, like cooking or taking photos. This is a great chance to think about your future career, so don't miss it. That's all for today. Have a nice day!",
+    "text": "CAREERS DAY\n• Day: next [1]\n• Visitors: a doctor, a chef, a [2] and a scientist\n• Talks: in the school [3]\n• Questions: give them to your class [4]\n• Afternoon: try cooking or taking [5]",
+    "items": [
+     {
+      "answer": "Thursday",
+      "accept": [],
+      "explain_vi": "\"Next Thursday is our Careers Day\"."
+     },
+     {
+      "answer": "journalist",
+      "accept": [],
+      "explain_vi": "\"a doctor, a chef, a journalist and a scientist\"."
+     },
+     {
+      "answer": "hall",
+      "accept": [
+       "the hall"
+      ],
+      "explain_vi": "\"The talks are in the school hall\"."
+     },
+     {
+      "answer": "teacher",
+      "accept": [],
+      "explain_vi": "\"Give it to your class teacher before Wednesday\"."
+     },
+     {
+      "answer": "photos",
+      "accept": [
+       "photographs",
+       "pictures"
+      ],
+      "explain_vi": "\"try some skills yourself, like cooking or taking photos\"."
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Linh phỏng vấn ông Brown, một đầu bếp người Anh ở Hà Nội, để viết bài cho tạp chí của trường. Nghe và chọn đáp án đúng.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Mr Brown",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Thank you for talking to me, Mr Brown. I'm writing an article for our school magazine about people who work in Hanoi."
+     },
+     {
+      "s": 1,
+      "t": "My pleasure, Linh. What would you like to know?"
+     },
+     {
+      "s": 0,
+      "t": "First of all, how long have you lived in Vietnam?"
+     },
+     {
+      "s": 1,
+      "t": "About seven years. Oh, sorry, I mean nine. My son was born here, and he's eight now. We arrived a year before that."
+     },
+     {
+      "s": 0,
+      "t": "And why did you decide to open a restaurant here?"
+     },
+     {
+      "s": 1,
+      "t": "Well, I first came here to teach English. But I spent all my free time eating out and learning about local food. In the end, I realised that cooking was my real ambition."
+     },
+     {
+      "s": 0,
+      "t": "What kind of food do you serve?"
+     },
+     {
+      "s": 1,
+      "t": "Mostly British dishes, but I use Vietnamese ingredients. For example, I make a pie with lemongrass and ginger. Customers say it has a really unusual flavour."
+     },
+     {
+      "s": 0,
+      "t": "That sounds delicious! What's the hardest part of your job?"
+     },
+     {
+      "s": 1,
+      "t": "Definitely the long hours. I often work until midnight. But my colleagues are very supportive, and we all get on well."
+     },
+     {
+      "s": 0,
+      "t": "Finally, what advice would you give students who want to become chefs?"
+     },
+     {
+      "s": 1,
+      "t": "Get as much experience as you can. Help your family in the kitchen, or find a weekend job in a café. Real skills matter more than certificates."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why is Linh talking to Mr Brown?",
+      "options": [
+       "To write something for the school magazine",
+       "To make a video for a school project",
+       "To apply for a job in his restaurant",
+       "To learn how to cook British food"
+      ],
+      "answer": 0,
+      "explain_vi": "Linh: \"I'm writing an article for our school magazine\"."
+     },
+     {
+      "q": "How long has Mr Brown lived in Vietnam?",
+      "options": [
+       "Seven years",
+       "Eight years",
+       "Nine years",
+       "Ten years"
+      ],
+      "answer": 2,
+      "explain_vi": "Ông nói seven rồi sửa: \"I mean nine\". Eight là tuổi của con trai ông."
+     },
+     {
+      "q": "What was Mr Brown's first job in Vietnam?",
+      "options": [
+       "A chef in a hotel",
+       "A journalist",
+       "A tour guide",
+       "An English teacher"
+      ],
+      "answer": 3,
+      "explain_vi": "\"I first came here to teach English.\" Sau đó ông mới chuyển sang nấu ăn."
+     },
+     {
+      "q": "What do customers say about his lemongrass pie?",
+      "options": [
+       "It is too spicy for them.",
+       "It tastes different from other food.",
+       "It is very expensive.",
+       "It is a traditional British dish."
+      ],
+      "answer": 1,
+      "explain_vi": "\"Customers say it has a really unusual flavour\" (unusual = lạ, khác thường)."
+     },
+     {
+      "q": "What advice does Mr Brown give to students?",
+      "options": [
+       "Get a cooking certificate first.",
+       "Study cooking in Britain.",
+       "Get practical experience in a kitchen.",
+       "Read as many recipes as possible."
+      ],
+      "answer": 2,
+      "explain_vi": "\"Get as much experience as you can... Real skills matter more than certificates.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Hướng dẫn viên giới thiệu chuyến thăm làng đèn lồng. Điền ghi chú, mỗi chỗ 1–2 từ hoặc 1 con số. Chú ý chỗ người nói sửa lại.",
+    "script": "Good morning, everyone, and welcome to the Lantern Village. My name is Mai, and I'll be your guide today. People here have made lanterns for more than 200 years, and this tradition is passed down from parents to their children. It's also a local custom to hang a red lantern outside the front door during festivals. First, we'll visit a small workshop where you can see how the lanterns are made. They're made from bamboo and coloured paper. Then, you'll have the chance to make your own lantern and take it home. After that, we'll have lunch at a restaurant by the river. Oh, sorry, I've just remembered. That restaurant is closed today, so we'll eat at the one by the lake instead. After lunch, you can enjoy a short performance of traditional music. Finally, if you'd like to buy a lantern, the small ones cost 30,000 dong each. OK, let's go!",
+    "text": "LANTERN VILLAGE TRIP\n• Lanterns made here for over [1] years\n• Lanterns are made from bamboo and coloured [2]\n• Lunch: at a restaurant by the [3]\n• After lunch: a performance of traditional [4]\n• Price of a small lantern: [5] dong",
+    "items": [
+     {
+      "answer": "200",
+      "accept": [
+       "two hundred"
+      ],
+      "explain_vi": "\"People here have made lanterns for more than 200 years\"."
+     },
+     {
+      "answer": "paper",
+      "accept": [],
+      "explain_vi": "\"They're made from bamboo and coloured paper\"."
+     },
+     {
+      "answer": "lake",
+      "accept": [
+       "the lake"
+      ],
+      "explain_vi": "Nhà hàng bên sông đóng cửa, \"we'll eat at the one by the lake instead\"."
+     },
+     {
+      "answer": "music",
+      "accept": [],
+      "explain_vi": "\"a short performance of traditional music\"."
+     },
+     {
+      "answer": "30,000",
+      "accept": [
+       "30000",
+       "30 000",
+       "thirty thousand"
+      ],
+      "explain_vi": "\"the small ones cost 30,000 dong each\"."
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Linh và Nam bàn kế hoạch mùa hè của Nam: làm ở nhà hàng của chú hay tham gia chương trình phóng viên trẻ. Nghe và chọn đáp án đúng.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "So, Nam, have you decided what to do this summer? Last time we talked, you were going to work at your uncle's restaurant."
+     },
+     {
+      "s": 1,
+      "t": "That was the plan, but something else has come up. The local newspaper has offered me a place on its summer programme for young reporters."
+     },
+     {
+      "s": 0,
+      "t": "Seriously? That's amazing! You've always said you wanted a career in journalism."
+     },
+     {
+      "s": 1,
+      "t": "I know, but there's a catch. It's unpaid, whereas my uncle would pay me quite well. And I promised him I'd help."
+     },
+     {
+      "s": 0,
+      "t": "Hmm. If I were you, I'd talk to him honestly. He's always been so generous and understanding. I'm sure he'd support you."
+     },
+     {
+      "s": 1,
+      "t": "Maybe. But I'd feel terrible letting him down. He never has enough staff in the summer."
+     },
+     {
+      "s": 0,
+      "t": "Couldn't you do both? The newspaper programme can't be full time."
+     },
+     {
+      "s": 1,
+      "t": "Actually, it's only three mornings a week. So I suppose I could work at the restaurant in the evenings."
+     },
+     {
+      "s": 0,
+      "t": "There you go. And think of the experience. Working at a newspaper would look great when you apply to university."
+     },
+     {
+      "s": 1,
+      "t": "True. The editor said I'd be checking whether stories people share online are reliable. Apparently, lots of teenagers believe everything they come across on social media."
+     },
+     {
+      "s": 0,
+      "t": "Well, that's certainly true of my little brother. Last week he believed an advert saying a drink could make you taller!"
+     },
+     {
+      "s": 1,
+      "t": "Ha! OK, I'll ring my uncle tonight and suggest working in the evenings instead."
+     },
+     {
+      "s": 0,
+      "t": "Good plan. I bet he'll be proud of you."
+     }
+    ],
+    "items": [
+     {
+      "q": "What is the main disadvantage of the newspaper programme for Nam?",
+      "options": [
+       "It is a long way from his home.",
+       "It takes up every day of the week.",
+       "He won't earn any money from it.",
+       "His parents don't want him to do it."
+      ],
+      "answer": 2,
+      "explain_vi": "Nam: \"there's a catch. It's unpaid, whereas my uncle would pay me quite well.\""
+     },
+     {
+      "q": "Why does Linh believe Nam's uncle will accept his decision?",
+      "options": [
+       "He is a kind and understanding person.",
+       "He doesn't need any help in the summer.",
+       "He used to work for a newspaper.",
+       "He wants Nam to go to university."
+      ],
+      "answer": 0,
+      "explain_vi": "Linh: \"He's always been so generous and understanding\". Nam lại nói chú luôn thiếu người vào hè."
+     },
+     {
+      "q": "What will Nam's work at the newspaper involve?",
+      "options": [
+       "Writing adverts for local companies",
+       "Taking photos of events",
+       "Interviewing young people",
+       "Checking if online stories can be trusted"
+      ],
+      "answer": 3,
+      "explain_vi": "Biên tập viên nói Nam sẽ \"checking whether stories people share online are reliable\" (reliable = đáng tin)."
+     },
+     {
+      "q": "What does Linh's story about her brother show?",
+      "options": [
+       "Her brother wants to be a journalist.",
+       "Young people often trust things online too easily.",
+       "Some drinks really can help children grow.",
+       "Adverts on social media are usually reliable."
+      ],
+      "answer": 1,
+      "explain_vi": "Câu chuyện minh hoạ ý của Nam: nhiều bạn trẻ \"believe everything they come across on social media\"."
+     },
+     {
+      "q": "What is Nam most likely to do this summer?",
+      "options": [
+       "Work only for his uncle",
+       "Join only the newspaper programme",
+       "Do both, at different times of day",
+       "Look for a better-paid job"
+      ],
+      "answer": 2,
+      "explain_vi": "Nam định học ở báo buổi sáng và \"suggest working in the evenings\" ở nhà hàng."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe chương trình phát thanh về kênh nấu ăn của một bạn gái. Điền ghi chú, mỗi chỗ 1–2 từ hoặc 1 con số. Cẩn thận thông tin gây nhiễu.",
+    "script": "Now on Teen Talk, we're looking at young people who use the internet in creative ways. Mai is sixteen and lives in Hue. Two years ago, she started filming her grandmother cooking traditional dishes, because she was worried that the old family recipes would be forgotten. She originally planned to write them down in a notebook, but she decided that videos would reach a much wider audience. Her first video, which showed how to make sweet soup with lotus seeds, was watched by only 50 people. Today, her channel has more than 80,000 followers, and many of them live outside Vietnam. Mai believes the secret of her success is honesty. Her grandmother sometimes makes mistakes, and Mai never cuts them out, so viewers feel the videos are real. Last year, a large company asked Mai to advertise its instant noodles, but she turned the offer down. She explained that it wouldn't be right to promote food her grandmother would never eat. Instead, Mai now works with local farmers, who supply the fresh ingredients for each video. And when we asked who she looks up to, she didn't hesitate. It's her grandmother, of course.",
+    "text": "TEEN TALK: MAI'S COOKING CHANNEL\n• Mai was afraid the family [1] would be forgotten\n• First video: sweet soup with lotus [2]\n• Followers today: more than [3]\n• Secret of her success: [4]\n• Fresh ingredients come from local [5]",
+    "items": [
+     {
+      "answer": "recipes",
+      "accept": [
+       "recipe"
+      ],
+      "explain_vi": "\"she was worried that the old family recipes would be forgotten\"."
+     },
+     {
+      "answer": "seeds",
+      "accept": [
+       "seed"
+      ],
+      "explain_vi": "\"how to make sweet soup with lotus seeds\"."
+     },
+     {
+      "answer": "80,000",
+      "accept": [
+       "80000",
+       "80 000",
+       "eighty thousand"
+      ],
+      "explain_vi": "50 là số người xem video đầu; hiện kênh có \"more than 80,000 followers\"."
+     },
+     {
+      "answer": "honesty",
+      "accept": [],
+      "explain_vi": "\"Mai believes the secret of her success is honesty.\""
+     },
+     {
+      "answer": "farmers",
+      "accept": [
+       "farmer"
+      ],
+      "explain_vi": "\"Mai now works with local farmers, who supply the fresh ingredients\"."
+     }
+    ]
+   }
+  }
  }
 }

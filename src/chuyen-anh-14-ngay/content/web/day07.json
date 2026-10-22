@@ -607,5 +607,485 @@
    "Next month, I'm going to …",
    "What about you? Write back soon."
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Em nghe Linh và Nam nói về kế hoạch cuối tuần: bài tập, sở thích mới và ngày tái chế. Chọn đáp án đúng.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Nam. What are you doing this weekend?"
+     },
+     {
+      "s": 1,
+      "t": "I have to finish my history assignment. It's about our town, and I haven't started it yet."
+     },
+     {
+      "s": 0,
+      "t": "Oh no! When do you have to hand it in?"
+     },
+     {
+      "s": 1,
+      "t": "On Monday. So I'm going to stay at home all day on Saturday. What about you?"
+     },
+     {
+      "s": 0,
+      "t": "I've just taken up drawing. My first class is on Saturday morning."
+     },
+     {
+      "s": 1,
+      "t": "That's cool. You're really creative, Linh."
+     },
+     {
+      "s": 0,
+      "t": "Thanks! And on Sunday, I'm helping at the recycling day at school. We're collecting old paper and plastic bottles."
+     },
+     {
+      "s": 1,
+      "t": "Can I come too? I've got lots of old newspapers at home. My dad never throws them away."
+     },
+     {
+      "s": 0,
+      "t": "Of course! Come at nine o'clock, and bring the newspapers in a big bag."
+     },
+     {
+      "s": 1,
+      "t": "Great. See you on Sunday, then!"
+     }
+    ],
+    "items": [
+     {
+      "q": "What is Nam's history assignment about?",
+      "options": [
+       "Animals",
+       "Their town",
+       "Recycling",
+       "Famous artists"
+      ],
+      "answer": 1,
+      "explain_vi": "Nam nói: \"It's about our town.\""
+     },
+     {
+      "q": "When does Nam have to hand in his assignment?",
+      "options": [
+       "On Saturday",
+       "On Sunday",
+       "On Friday",
+       "On Monday"
+      ],
+      "answer": 3,
+      "explain_vi": "Nam: \"On Monday.\" Thứ Bảy là ngày cậu ở nhà làm bài."
+     },
+     {
+      "q": "What has Linh just started?",
+      "options": [
+       "Drawing classes",
+       "Swimming lessons",
+       "A history project",
+       "Guitar lessons"
+      ],
+      "answer": 0,
+      "explain_vi": "Linh: \"I've just taken up drawing. My first class is on Saturday morning.\""
+     },
+     {
+      "q": "What will Linh do on Sunday?",
+      "options": [
+       "Visit her grandparents",
+       "Go to a drawing class",
+       "Help at a recycling day",
+       "Stay at home"
+      ],
+      "answer": 2,
+      "explain_vi": "Linh: \"on Sunday, I'm helping at the recycling day at school.\""
+     },
+     {
+      "q": "What will Nam bring on Sunday?",
+      "options": [
+       "Plastic bottles",
+       "Old newspapers",
+       "Old clothes",
+       "Some drawings"
+      ],
+      "answer": 1,
+      "explain_vi": "Nam: \"I've got lots of old newspapers at home.\" Linh dặn mang báo cũ trong túi to."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe cô Green thông báo về các câu lạc bộ mùa hè của trường. Điền một từ hoặc một con số vào mỗi chỗ trống.",
+    "script": "Good morning, everyone. This is Mrs Green with some news about our summer clubs. This summer, the school is starting three new clubs. The photography club meets on Tuesday afternoons in the library. Please bring your own camera or phone. The cooking club is on Thursdays, in the school kitchen. You'll learn to make nutritious food for your family. The third club is the robot club. It meets on Saturday mornings in the computer room. Only 20 students can join, so sign up early! To join a club, write your name on the list outside the teachers' room before Friday. Have a lovely summer!",
+    "text": "SUMMER CLUBS\n• Photography club: Tuesday afternoons in the [1]\n• Bring your own [2] or phone\n• Cooking club: in the school [3]\n• Robot club: only [4] students\n• Sign up: write your name on the list before [5]",
+    "items": [
+     {
+      "answer": "library",
+      "accept": [
+       "the library"
+      ],
+      "explain_vi": "Cô nói: \"The photography club meets on Tuesday afternoons in the library.\""
+     },
+     {
+      "answer": "camera",
+      "accept": [
+       "a camera"
+      ],
+      "explain_vi": "Cô nói: \"Please bring your own camera or phone.\""
+     },
+     {
+      "answer": "kitchen",
+      "accept": [],
+      "explain_vi": "Cô nói: \"The cooking club is on Thursdays, in the school kitchen.\""
+     },
+     {
+      "answer": "20",
+      "accept": [
+       "twenty"
+      ],
+      "explain_vi": "Cô nói: \"Only 20 students can join.\""
+     },
+     {
+      "answer": "Friday",
+      "accept": [],
+      "explain_vi": "Cô nói: \"write your name on the list ... before Friday.\""
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Em nghe Mai và Tom nói về việc ôn thi và điện thoại. Chú ý chỗ người nói đổi ý hoặc sửa lại. Chọn đáp án đúng.",
+    "speakers": [
+     {
+      "name": "Mai",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Tom, you look exhausted. Were you up late again?"
+     },
+     {
+      "s": 1,
+      "t": "Yeah. I was revising for the science test until midnight. Well, not exactly revising. I kept checking my phone."
+     },
+     {
+      "s": 0,
+      "t": "That's the problem, isn't it? It's impossible to concentrate when your phone is right next to you."
+     },
+     {
+      "s": 1,
+      "t": "I know. How do you manage? You always get such good marks."
+     },
+     {
+      "s": 0,
+      "t": "I switch my phone off and leave it in the living room. My mum keeps it until I've finished."
+     },
+     {
+      "s": 1,
+      "t": "Your mum? I'd never ask my mum to do that!"
+     },
+     {
+      "s": 0,
+      "t": "It works, though. I used to study for three hours and remember nothing. Now I study for an hour and a half, but I actually learn more."
+     },
+     {
+      "s": 1,
+      "t": "Hmm. Maybe I should try it. I missed two lessons last week because of my cold, so I really need to catch up."
+     },
+     {
+      "s": 0,
+      "t": "Do you want to revise together? We could go to the library on Thursday after school."
+     },
+     {
+      "s": 1,
+      "t": "Thursday's no good. I've got football practice. What about Wednesday?"
+     },
+     {
+      "s": 0,
+      "t": "Wednesday's fine. Bring your notes from Mr Brown's lessons, and I'll bring mine."
+     },
+     {
+      "s": 1,
+      "t": "Thanks, Mai. You're a lifesaver."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why did Tom go to bed late?",
+      "options": [
+       "He was watching a film.",
+       "He had a late football match.",
+       "He was studying but kept looking at his phone.",
+       "He was helping his mum."
+      ],
+      "answer": 2,
+      "explain_vi": "Tom: \"I was revising... Well, not exactly revising. I kept checking my phone.\""
+     },
+     {
+      "q": "What does Mai do with her phone when she studies?",
+      "options": [
+       "She puts it in her bag.",
+       "She uses it only to check answers.",
+       "She turns the sound off.",
+       "She leaves it with her mum."
+      ],
+      "answer": 3,
+      "explain_vi": "Mai: \"I switch my phone off and leave it in the living room. My mum keeps it.\""
+     },
+     {
+      "q": "What does Mai say about the way she studies now?",
+      "options": [
+       "She studies longer than she used to.",
+       "She studies for a shorter time but learns more.",
+       "She studies for three hours every evening.",
+       "She only studies with her friends."
+      ],
+      "answer": 1,
+      "explain_vi": "\"I used to study for three hours... Now I study for an hour and a half, but I actually learn more.\""
+     },
+     {
+      "q": "Why does Tom need to catch up?",
+      "options": [
+       "He was ill and missed some lessons.",
+       "He failed his last science test.",
+       "He changed schools.",
+       "He spent too much time on football."
+      ],
+      "answer": 0,
+      "explain_vi": "Tom: \"I missed two lessons last week because of my cold.\""
+     },
+     {
+      "q": "When will Mai and Tom revise together?",
+      "options": [
+       "On Thursday",
+       "On Friday",
+       "After football practice",
+       "On Wednesday"
+      ],
+      "answer": 3,
+      "explain_vi": "Mai gợi ý thứ Năm nhưng Tom bận đá bóng; Tom: \"What about Wednesday?\" – Mai: \"Wednesday's fine.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe giới thiệu chương trình hè Summer Challenge. Có một chỗ người nói sửa lại thông tin. Điền 1–2 từ hoặc một con số.",
+    "script": "Hi, everyone. I'm Anna from the City Youth Centre, and I'm here to tell you about our Summer Challenge programme. It's for students aged twelve to fifteen, and it runs for four weeks in July. Every week has a different theme. In week one, you'll explore the city's old streets and learn about their history. In week two, we'll go to the countryside to plant trees and learn how to protect the environment. Week three is our creative week. You'll work in teams to make a short film, using only your phones. And in the final week, we'll have a sports day. Oh, sorry, I need to correct that. The sports day was last year. This year, the final week is a cooking competition. Places are limited to 40 students, so please register soon. You can do it at our office or on our website.",
+    "text": "SUMMER CHALLENGE (July)\n• Week 1: explore the city's old [1]\n• Week 2: plant [2] in the countryside\n• Week 3: make a short [3] with your phone\n• Week 4: a [4] competition\n• Number of places: [5]",
+    "items": [
+     {
+      "answer": "streets",
+      "accept": [
+       "street"
+      ],
+      "explain_vi": "Anna nói: \"you'll explore the city's old streets.\""
+     },
+     {
+      "answer": "trees",
+      "accept": [],
+      "explain_vi": "Anna nói: \"we'll go to the countryside to plant trees.\""
+     },
+     {
+      "answer": "film",
+      "accept": [
+       "movie"
+      ],
+      "explain_vi": "Anna nói: \"make a short film, using only your phones.\""
+     },
+     {
+      "answer": "cooking",
+      "accept": [],
+      "explain_vi": "Ngày hội thể thao là năm ngoái; Anna sửa: \"the final week is a cooking competition.\""
+     },
+     {
+      "answer": "40",
+      "accept": [
+       "forty"
+      ],
+      "explain_vi": "Anna nói: \"Places are limited to 40 students.\""
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Em nghe Anna và Nam nói về việc Nam định rời câu lạc bộ tranh biện. Câu hỏi về ý kiến, thái độ và suy luận.",
+    "speakers": [
+     {
+      "name": "Anna",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Nam, is it true you're dropping out of the debate club? Linh told me this morning."
+     },
+     {
+      "s": 1,
+      "t": "Well, I'm thinking about it, but I haven't made up my mind yet. With the entrance exam coming, I just don't have enough spare time."
+     },
+     {
+      "s": 0,
+      "t": "But you're the most enthusiastic member we've got! You've hardly missed a single meeting since you joined."
+     },
+     {
+      "s": 1,
+      "t": "That's true, and I really enjoy it. But my parents think I should spend every free minute revising."
+     },
+     {
+      "s": 0,
+      "t": "I understand. My parents used to say the same thing. But honestly, the debate club has improved my English more than any textbook. And it teaches you to think quickly and organise your ideas. That's useful in every subject, not just English."
+     },
+     {
+      "s": 1,
+      "t": "I hadn't thought about it that way. Still, two hours every Friday is a lot."
+     },
+     {
+      "s": 0,
+      "t": "What if you came every other week? Mr Brown wouldn't mind, I'm sure. He's let other students do that before."
+     },
+     {
+      "s": 1,
+      "t": "Maybe. Although if I only came half the time, I'd feel I was letting the team down."
+     },
+     {
+      "s": 0,
+      "t": "Look, it's your decision. But giving it up completely seems like such a waste. You've worked so hard for this team."
+     },
+     {
+      "s": 1,
+      "t": "I know. OK, how about this? I'll talk to Mr Brown first and see what he suggests. Then I'll decide."
+     },
+     {
+      "s": 0,
+      "t": "That sounds sensible. And remember, the city competition is in May. It'd be a shame to miss it."
+     },
+     {
+      "s": 1,
+      "t": "Exactly. To be honest, that's the main reason I don't want to leave."
+     }
+    ],
+    "items": [
+     {
+      "q": "At the start of the conversation, what is true about Nam?",
+      "options": [
+       "He has already left the debate club.",
+       "He hasn't decided whether to leave the club.",
+       "His parents have told him to leave immediately.",
+       "Linh has asked him to leave."
+      ],
+      "answer": 1,
+      "explain_vi": "Nam: \"I'm thinking about it, but I haven't made up my mind yet.\" Linh chỉ kể lại tin cho Anna."
+     },
+     {
+      "q": "Why is Nam thinking of leaving the club?",
+      "options": [
+       "He finds the meetings boring.",
+       "He doesn't get on with Mr Brown.",
+       "He needs more time to prepare for an exam.",
+       "His English is not good enough."
+      ],
+      "answer": 2,
+      "explain_vi": "\"With the entrance exam coming, I just don't have enough spare time.\" Cậu vẫn rất thích câu lạc bộ."
+     },
+     {
+      "q": "What does Anna believe about the debate club?",
+      "options": [
+       "It develops skills that are useful in all subjects.",
+       "It is less useful than studying from textbooks.",
+       "It is only suitable for students with very good English.",
+       "It takes up too much of its members' time."
+      ],
+      "answer": 0,
+      "explain_vi": "Anna: \"it teaches you to think quickly and organise your ideas. That's useful in every subject.\""
+     },
+     {
+      "q": "Why is Nam unsure about coming every other week?",
+      "options": [
+       "Mr Brown has never allowed it before.",
+       "He would rather leave the club completely.",
+       "He has other lessons on Fridays.",
+       "He worries he would disappoint his team."
+      ],
+      "answer": 3,
+      "explain_vi": "\"I'd feel I was letting the team down\" = sợ làm đội thất vọng. Thầy Brown từng cho học sinh khác làm vậy."
+     },
+     {
+      "q": "What is Nam's plan at the end of the conversation?",
+      "options": [
+       "To leave the club at once",
+       "To come to the club every other week",
+       "To ask the teacher's advice before deciding",
+       "To ask his parents to talk to Mr Brown"
+      ],
+      "answer": 2,
+      "explain_vi": "Nam: \"I'll talk to Mr Brown first and see what he suggests. Then I'll decide.\" Đi cách tuần chỉ là gợi ý của Anna."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe hướng dẫn viên ở Vườn quốc gia Cúc Phương dặn dò trước chuyến đi bộ. Có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
+    "script": "Good morning, and welcome to Cuc Phuong National Park, the oldest national park in Vietnam. I'm Mai, and I'll be your guide on today's walk. Before we start, a few rules. First, you mustn't leave any rubbish in the forest. Even small things like sweet wrappers can be harmful to animals, so please carry your waste with you until we reach the bins at the visitor centre. Second, the forest is home to hundreds of species of birds, so please keep your voices down. Now, some of you have asked whether we'll see the park's rare monkeys. Unfortunately, they're extremely shy, so you probably won't see them in the wild. However, you can see them up close at the rescue centre. Your printed programme says we'll go there before lunch, but in fact we'll visit it after lunch. As for phones, there's no signal in most of the forest, so you can't rely on online maps. Stay close to the group and follow the red signs, not the yellow ones, which are for the longer trail. Our walk takes about 3 hours, and the path is quite steep in places, so make sure you're wearing proper shoes.",
+    "text": "CUC PHUONG FOREST WALK\n• Carry your rubbish to the bins at the [1]\n• Rare monkeys: see them at the [2]\n• We visit them: [3] lunch\n• Follow the [4] signs\n• Length of walk: about [5] hours",
+    "items": [
+     {
+      "answer": "visitor centre",
+      "accept": [
+       "visitor center"
+      ],
+      "explain_vi": "\"carry your waste with you until we reach the bins at the visitor centre.\""
+     },
+     {
+      "answer": "rescue centre",
+      "accept": [
+       "rescue center"
+      ],
+      "explain_vi": "\"you can see them up close at the rescue centre.\" Ngoài rừng khó thấy vì chúng rất nhút nhát."
+     },
+     {
+      "answer": "after",
+      "accept": [],
+      "explain_vi": "Tờ chương trình ghi \"before lunch\", nhưng \"in fact we'll visit it after lunch.\""
+     },
+     {
+      "answer": "red",
+      "accept": [],
+      "explain_vi": "\"follow the red signs, not the yellow ones\" – biển vàng dành cho đường dài hơn."
+     },
+     {
+      "answer": "3",
+      "accept": [
+       "three"
+      ],
+      "explain_vi": "Mai nói: \"Our walk takes about 3 hours.\""
+     }
+    ]
+   }
+  }
  }
 }

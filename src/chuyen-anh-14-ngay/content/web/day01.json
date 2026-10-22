@@ -594,5 +594,504 @@
    "This week, I am …",
    "At the moment, I am learning …"
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Linh nói chuyện với Tom, bạn mới từ Úc chuyển đến trường. Chọn đáp án đúng cho 5 câu hỏi.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Tom! How do you like our school so far?"
+     },
+     {
+      "s": 1,
+      "t": "Hi Linh. I like it, but I don't know where everything is yet. I'm looking for the library right now."
+     },
+     {
+      "s": 0,
+      "t": "The library is on the third floor, next to the computer room."
+     },
+     {
+      "s": 1,
+      "t": "Thanks. I need a book for my history assignment. Do you often go there?"
+     },
+     {
+      "s": 0,
+      "t": "Yes, I go every Tuesday after school. It's very quiet, so I can concentrate."
+     },
+     {
+      "s": 1,
+      "t": "Great. And what time does school start? I was late this morning!"
+     },
+     {
+      "s": 0,
+      "t": "It starts at seven o'clock. Most students arrive at a quarter to seven."
+     },
+     {
+      "s": 1,
+      "t": "Wow, that's early. My old school in Australia started at nine."
+     },
+     {
+      "s": 0,
+      "t": "Oh, and there's a Vietnamese club for international students on Friday afternoons. It can help you improve your Vietnamese."
+     },
+     {
+      "s": 1,
+      "t": "Perfect! I really want to speak Vietnamese better. I'll go on Friday."
+     }
+    ],
+    "items": [
+     {
+      "q": "What is Tom doing right now?",
+      "options": [
+       "He is doing his history assignment.",
+       "He is looking for the library.",
+       "He is waiting for Linh.",
+       "He is going to the computer room."
+      ],
+      "answer": 1,
+      "explain_vi": "Tom nói: 'I'm looking for the library right now.'"
+     },
+     {
+      "q": "Where is the library?",
+      "options": [
+       "On the second floor",
+       "Next to the canteen",
+       "On the ground floor",
+       "On the third floor"
+      ],
+      "answer": 3,
+      "explain_vi": "Linh nói: 'The library is on the third floor, next to the computer room.'"
+     },
+     {
+      "q": "Why does Linh like going to the library?",
+      "options": [
+       "It is quiet there.",
+       "Her friends go there.",
+       "It has new computers.",
+       "It opens early."
+      ],
+      "answer": 0,
+      "explain_vi": "Linh nói: 'It's very quiet, so I can concentrate.'"
+     },
+     {
+      "q": "What time does school start?",
+      "options": [
+       "At a quarter to seven",
+       "At nine o'clock",
+       "At seven o'clock",
+       "At half past seven"
+      ],
+      "answer": 2,
+      "explain_vi": "Linh nói: 'It starts at seven o'clock.' Quarter to seven là giờ học sinh đến."
+     },
+     {
+      "q": "What will Tom do on Friday?",
+      "options": [
+       "Go to the library",
+       "Go to a Vietnamese club",
+       "Visit his old school",
+       "Do a history test"
+      ],
+      "answer": 1,
+      "explain_vi": "Linh giới thiệu câu lạc bộ tiếng Việt chiều thứ Sáu, Tom nói: 'I'll go on Friday.'"
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe cô Mai thông báo về lớp ôn tập. Điền 1–2 từ hoặc một con số vào mỗi chỗ trống.",
+    "script": "Hello, class. This is Ms Mai, your English teacher. Next week, we are starting extra revision classes for the end of term test. The classes are on Thursday afternoons. They start at half past two and finish at four o'clock. We are meeting in Room 15, on the first floor. Please bring your workbook and a dictionary. In the first class, we are going to practise writing emails. The classes are free, but there are only 20 places. If you want to join, please write your name on the list on my classroom door. Thank you, and see you next week!",
+    "text": "ENGLISH REVISION CLASSES\n• Day: [1] afternoons\n• Place: Room [2]\n• Bring: your workbook and a [3]\n• First class: practise writing [4]\n• Number of places: [5]\n• To join: write your name on the list on the teacher's door",
+    "items": [
+     {
+      "answer": "Thursday",
+      "accept": [
+       "Thursdays",
+       "on Thursday"
+      ],
+      "explain_vi": "Cô nói: 'The classes are on Thursday afternoons.'"
+     },
+     {
+      "answer": "15",
+      "accept": [
+       "fifteen",
+       "room 15"
+      ],
+      "explain_vi": "Cô nói: 'We are meeting in Room 15, on the first floor.'"
+     },
+     {
+      "answer": "dictionary",
+      "accept": [
+       "a dictionary"
+      ],
+      "explain_vi": "Cô nói: 'Please bring your workbook and a dictionary.'"
+     },
+     {
+      "answer": "emails",
+      "accept": [
+       "email",
+       "an email"
+      ],
+      "explain_vi": "Cô nói: 'In the first class, we are going to practise writing emails.'"
+     },
+     {
+      "answer": "20",
+      "accept": [
+       "twenty"
+      ],
+      "explain_vi": "Cô nói: 'there are only 20 places.'"
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nam vừa đi học lại sau một tuần nghỉ ốm. Nghe Nam nói chuyện với Mai về bài vở và chọn đáp án đúng.",
+    "speakers": [
+     {
+      "name": "Mai",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Nam! You're back! Are you feeling better?"
+     },
+     {
+      "s": 1,
+      "t": "Much better, thanks. But I was ill for a whole week, so I really need to catch up. What are we doing in maths at the moment?"
+     },
+     {
+      "s": 0,
+      "t": "We're learning about percentages. Mr Brown gave us an assignment on Monday. It's due on Thursday. Oh, no, sorry, he changed it. It's due on Friday now."
+     },
+     {
+      "s": 1,
+      "t": "Phew, that's good. How many exercises are there?"
+     },
+     {
+      "s": 0,
+      "t": "Twelve, but they're quite short. You can borrow my notes if you like."
+     },
+     {
+      "s": 1,
+      "t": "Thanks, that's really kind. What about English? Does Miss Anna still give us a test every Monday?"
+     },
+     {
+      "s": 0,
+      "t": "Not this month. These days, she's asking us to keep a reading diary instead. You write a few lines about your book every evening."
+     },
+     {
+      "s": 1,
+      "t": "That sounds fun, actually. I love reading."
+     },
+     {
+      "s": 0,
+      "t": "Oh, and the school is starting a free revision class for the end of term exams. It's on Wednesday afternoons."
+     },
+     {
+      "s": 1,
+      "t": "Hmm, I usually have football practice on Wednesdays. Where's the class?"
+     },
+     {
+      "s": 0,
+      "t": "Well, the first one is in the library, but after that, it's in Room 20. Anyway, you could ask your coach if you can miss practice for a few weeks."
+     },
+     {
+      "s": 1,
+      "t": "Good idea. I think revision is more important right now. I'll talk to him after school."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why does Nam need to catch up?",
+      "options": [
+       "He moved from another school.",
+       "He dropped out of a club.",
+       "He missed a week because he was sick.",
+       "He forgot to do his homework."
+      ],
+      "answer": 2,
+      "explain_vi": "Nam nói: 'I was ill for a whole week, so I really need to catch up.'"
+     },
+     {
+      "q": "When must students hand in the maths assignment?",
+      "options": [
+       "On Monday",
+       "On Friday",
+       "On Thursday",
+       "On Wednesday"
+      ],
+      "answer": 1,
+      "explain_vi": "Mai nói Thursday rồi sửa lại: 'It's due on Friday now.' Monday là ngày thầy giao bài."
+     },
+     {
+      "q": "What is Miss Anna asking the class to do this month?",
+      "options": [
+       "Do a test every Monday",
+       "Read a new book every week",
+       "Write about their reading every day",
+       "Borrow books from the library"
+      ],
+      "answer": 2,
+      "explain_vi": "'she's asking us to keep a reading diary instead. You write a few lines about your book every evening.'"
+     },
+     {
+      "q": "Where will most of the revision classes take place?",
+      "options": [
+       "In Room 20",
+       "In the library",
+       "On the football field",
+       "In Mr Brown's classroom"
+      ],
+      "answer": 0,
+      "explain_vi": "'the first one is in the library, but after that, it's in Room 20' → các buổi sau ở phòng 20."
+     },
+     {
+      "q": "What is Nam going to do after school?",
+      "options": [
+       "Borrow Mai's English notes",
+       "Give up football",
+       "Go to the library",
+       "Speak to his football coach"
+      ],
+      "answer": 3,
+      "explain_vi": "Mai gợi ý hỏi huấn luyện viên; Nam nói: 'I'll talk to him after school.'"
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe cô thủ thư thông báo về thư viện trong mùa thi. Điền 1–2 từ hoặc một con số vào mỗi chỗ trống.",
+    "script": "Hello, everyone. This is Ms Lan, the school librarian. The end of term exams are coming, so I'd like to tell you about some changes in the library. First, we have opened a new quiet room where you can revise without any noise. It's on the third floor. Oh, I'm sorry, it's on the fourth floor, above the computer room. Second, students can now borrow five books at a time instead of three, and you can keep them for two weeks. If you don't have a computer at home, you can use one of our laptops. Just ask at the front desk and show your student card. Finally, many of you tell me that you find it hard to concentrate in long lessons. So on Saturday morning, I'm running a free workshop on how to take good notes. It starts at nine o'clock and lasts one hour. Please sign up by Thursday, because there are only thirty seats.",
+    "text": "THE LIBRARY IN EXAM SEASON\n• New quiet room: on the [1] floor\n• Books you can borrow at a time: [2]\n• To use a laptop: ask at the [3] and show your student card\n• Free workshop: how to take good [4]\n• Workshop day: [5] morning\n• Sign up by: Thursday",
+    "items": [
+     {
+      "answer": "fourth",
+      "accept": [
+       "4th",
+       "4"
+      ],
+      "explain_vi": "Cô nói 'third floor' rồi sửa: 'it's on the fourth floor'."
+     },
+     {
+      "answer": "5",
+      "accept": [
+       "five"
+      ],
+      "explain_vi": "'borrow five books at a time instead of three' → 5, không phải 3."
+     },
+     {
+      "answer": "front desk",
+      "accept": [
+       "desk",
+       "the front desk"
+      ],
+      "explain_vi": "'Just ask at the front desk and show your student card.'"
+     },
+     {
+      "answer": "notes",
+      "accept": [
+       "note"
+      ],
+      "explain_vi": "'a free workshop on how to take good notes'."
+     },
+     {
+      "answer": "Saturday",
+      "accept": [
+       "Saturdays"
+      ],
+      "explain_vi": "'So on Saturday morning, I'm running a free workshop'. Thursday là hạn đăng ký."
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Linh nói chuyện với anh họ Nam về việc ôn thi vào lớp 10. Chú ý ý kiến, thái độ của hai người và chọn đáp án đúng.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 1,
+      "t": "Linh, you look exhausted. What's going on?"
+     },
+     {
+      "s": 0,
+      "t": "Oh, it's the entrance exam. Mum wants me to attend an extra class at a learning centre every evening, but honestly, I'm not sure it's a good idea."
+     },
+     {
+      "s": 1,
+      "t": "Why not? Lots of my friends went to those centres, and they did pretty well."
+     },
+     {
+      "s": 0,
+      "t": "Well, the centre follows almost the same curriculum as my school, so I'd just be doing the same exercises twice. And it finishes at nine at night, so I'd have no energy left for my own revision."
+     },
+     {
+      "s": 1,
+      "t": "Fair point. So what are you thinking of doing instead?"
+     },
+     {
+      "s": 0,
+      "t": "I'm considering a study group with three classmates. We'd meet at the library twice a week and test each other."
+     },
+     {
+      "s": 1,
+      "t": "That sounds good in theory, but can you really concentrate with your friends around? When I was your age, our study group spent most of the time chatting."
+     },
+     {
+      "s": 0,
+      "t": "That's exactly what worries Mum. But we've agreed on some rules. Phones stay in our bags, and we only take a short break every forty five minutes."
+     },
+     {
+      "s": 1,
+      "t": "Hmm, rules are easy to make and hard to keep. Still, I suppose it's worth a try. What about the drama club? Are you dropping out?"
+     },
+     {
+      "s": 0,
+      "t": "I was going to, but my teacher persuaded me to stay. She says performing builds confidence, and I'll need plenty of that for the speaking test."
+     },
+     {
+      "s": 1,
+      "t": "She's right, you know. Okay, here's my suggestion. Try the study group for a month. If your practice test results don't improve, then go to the centre."
+     },
+     {
+      "s": 0,
+      "t": "That's fair. Will you help me explain that to Mum?"
+     },
+     {
+      "s": 1,
+      "t": "Of course. I'll talk to her this evening."
+     }
+    ],
+    "items": [
+     {
+      "q": "What does Linh think about the learning centre?",
+      "options": [
+       "It is too expensive for her family.",
+       "It would teach her little that is new and leave her too tired.",
+       "It is better than her school but too far away.",
+       "It would make her give up the drama club."
+      ],
+      "answer": 1,
+      "explain_vi": "Linh nói trung tâm học 'the same curriculum as my school' và kết thúc lúc chín giờ tối nên 'no energy left'."
+     },
+     {
+      "q": "How does Nam first react to the idea of a study group?",
+      "options": [
+       "He doubts that the members will stay focused.",
+       "He thinks it is better than any learning centre.",
+       "He wants to join it himself.",
+       "He says Linh's mum will never agree."
+      ],
+      "answer": 0,
+      "explain_vi": "Nam hỏi 'can you really concentrate…?' và kể nhóm của anh 'spent most of the time chatting' → nghi ngờ."
+     },
+     {
+      "q": "Which rule has the study group agreed on?",
+      "options": [
+       "They meet at someone's house.",
+       "They take a break every half hour.",
+       "Nobody uses a phone during sessions.",
+       "They meet every evening."
+      ],
+      "answer": 2,
+      "explain_vi": "'Phones stay in our bags' → không dùng điện thoại. Nghỉ mỗi 45 phút, gặp hai lần mỗi tuần."
+     },
+     {
+      "q": "Why has Linh decided to stay in the drama club?",
+      "options": [
+       "Her mum wants her to continue.",
+       "She has the main role in a play.",
+       "Her friends are all members.",
+       "It will help her feel confident in the speaking test."
+      ],
+      "answer": 3,
+      "explain_vi": "Cô giáo nói 'performing builds confidence, and I'll need plenty of that for the speaking test'."
+     },
+     {
+      "q": "What does Nam suggest?",
+      "options": [
+       "Going to the centre for a month first",
+       "Trying the study group and judging it by her results",
+       "Joining both the centre and the study group",
+       "Asking her teacher to choose for her"
+      ],
+      "answer": 1,
+      "explain_vi": "'Try the study group for a month. If your practice test results don't improve, then go to the centre.'"
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Cô Hoa giới thiệu chương trình trao đổi học sinh. Bài có nhiều thông tin cũ bị thay thế. Điền 1–2 từ hoặc một con số.",
+    "script": "Good afternoon, everyone. I'm Mrs Hoa, and I'm in charge of our student exchange programme. In previous years, our partner school was in Malaysia, but this year we're working with a school in Singapore for the first time. The visit used to last three weeks, but many parents felt that was too long to miss lessons, so it's now two weeks, in early November. While you're there, you won't be staying in a hotel. Instead, each of you will live with a host family, which is a wonderful way to improve your English and learn about daily life. You'll attend lessons with your host brother or sister, and the curriculum includes subjects we don't offer here, like robotics and debating. Now, we're expecting a lot of interest, but this time there are only 12 places, compared with 15 last year. To apply, you need a letter from your form teacher and a short essay. Some of you have heard that the essay is about your favourite subject. Actually, it isn't. It's about a person who has encouraged you to learn. Applications close at the end of September.",
+    "text": "STUDENT EXCHANGE PROGRAMME\n• Partner school is in: [1]\n• Length of visit: [2] weeks\n• Students will stay with a [3]\n• Places this year: [4]\n• Essay: a person who has [5] you to learn\n• Deadline: end of September",
+    "items": [
+     {
+      "answer": "Singapore",
+      "accept": [],
+      "explain_vi": "Trước đây là Malaysia, 'but this year we're working with a school in Singapore'."
+     },
+     {
+      "answer": "2",
+      "accept": [
+       "two"
+      ],
+      "explain_vi": "'used to last three weeks… so it's now two weeks'."
+     },
+     {
+      "answer": "host family",
+      "accept": [
+       "host families",
+       "a host family",
+       "family"
+      ],
+      "explain_vi": "'you won't be staying in a hotel. Instead, each of you will live with a host family'."
+     },
+     {
+      "answer": "12",
+      "accept": [
+       "twelve"
+      ],
+      "explain_vi": "'only 12 places, compared with 15 last year' → năm nay 12."
+     },
+     {
+      "answer": "encouraged",
+      "accept": [],
+      "explain_vi": "Không phải môn học yêu thích: 'It's about a person who has encouraged you to learn.'"
+     }
+    ]
+   }
+  }
  }
 }

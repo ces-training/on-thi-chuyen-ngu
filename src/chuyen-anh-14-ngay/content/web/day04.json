@@ -549,5 +549,501 @@
    "In the afternoon, I'm meeting …",
    "I think I will feel …"
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Linh và Tom nói về máy tính bảng mới và chiếc điện thoại bị hỏng. Chọn đáp án đúng cho 5 câu hỏi.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Tom. Is that a new tablet?"
+     },
+     {
+      "s": 1,
+      "t": "Yes! It's a birthday present from my grandparents. They gave it to me yesterday."
+     },
+     {
+      "s": 0,
+      "t": "It looks great. What are you going to use it for?"
+     },
+     {
+      "s": 1,
+      "t": "I'm going to read digital books on it. My parents say I can't play games on it on school days."
+     },
+     {
+      "s": 0,
+      "t": "That's a good rule. My phone is broken, so I can't even send messages."
+     },
+     {
+      "s": 1,
+      "t": "Oh no! What happened?"
+     },
+     {
+      "s": 0,
+      "t": "I dropped it on the stairs this morning, and now the screen doesn't work. Mum isn't happy."
+     },
+     {
+      "s": 1,
+      "t": "My uncle has a phone shop near the market. I'm sure he'll fix it for you."
+     },
+     {
+      "s": 0,
+      "t": "Really? How much will it cost?"
+     },
+     {
+      "s": 1,
+      "t": "Maybe 300,000 dong. I'm visiting him on Saturday morning. Do you want to come with me? Bring your phone!"
+     }
+    ],
+    "items": [
+     {
+      "q": "Who gave Tom the tablet?",
+      "options": [
+       "His parents",
+       "His uncle",
+       "His grandparents",
+       "Linh"
+      ],
+      "answer": 2,
+      "explain_vi": "Tom nói: 'It's a birthday present from my grandparents.'"
+     },
+     {
+      "q": "What is Tom going to use the tablet for?",
+      "options": [
+       "Reading digital books",
+       "Playing games on school days",
+       "Sending messages",
+       "Watching films"
+      ],
+      "answer": 0,
+      "explain_vi": "Tom nói: 'I'm going to read digital books on it.'"
+     },
+     {
+      "q": "What is wrong with Linh's phone?",
+      "options": [
+       "It has no battery.",
+       "She lost it on the stairs.",
+       "It is too old.",
+       "The screen doesn't work."
+      ],
+      "answer": 3,
+      "explain_vi": "Linh nói: 'now the screen doesn't work.'"
+     },
+     {
+      "q": "Where is Tom's uncle's shop?",
+      "options": [
+       "Near the school",
+       "Near the market",
+       "Next to Tom's house",
+       "In a shopping centre"
+      ],
+      "answer": 1,
+      "explain_vi": "Tom nói: 'My uncle has a phone shop near the market.'"
+     },
+     {
+      "q": "When is Tom going to visit his uncle?",
+      "options": [
+       "This evening",
+       "On Sunday morning",
+       "On Saturday morning",
+       "After school today"
+      ],
+      "answer": 2,
+      "explain_vi": "Tom nói: 'I'm visiting him on Saturday morning.'"
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe thầy giáo dặn dò cả lớp về máy tính bảng của trường. Điền 1–2 từ hoặc một con số vào mỗi chỗ trống.",
+    "script": "Good morning, class. From next Monday, every student is going to get a school tablet. You can use it in your English and science lessons. Please charge your tablet at home every evening, so it's ready for school. Don't play games on it at school. Your password is your student number, so please don't tell it to anyone. If your tablet stops working, take it to Mr Nam in Room 6. He is there on Tuesdays and Thursdays. At the end of the school year, you have to give the tablet back, so please be careful with it. Each tablet costs 5,000,000 dong. Thank you.",
+    "text": "SCHOOL TABLETS\n• Use in: English and [1] lessons\n• Charge it at home every [2]\n• Password: your student [3]\n• If it stops working: go to Room [4]\n• Mr Nam is there on Tuesdays and [5]",
+    "items": [
+     {
+      "answer": "science",
+      "accept": [],
+      "explain_vi": "'You can use it in your English and science lessons.'"
+     },
+     {
+      "answer": "evening",
+      "accept": [
+       "evenings"
+      ],
+      "explain_vi": "'Please charge your tablet at home every evening'."
+     },
+     {
+      "answer": "number",
+      "accept": [
+       "student number"
+      ],
+      "explain_vi": "'Your password is your student number'."
+     },
+     {
+      "answer": "6",
+      "accept": [
+       "six"
+      ],
+      "explain_vi": "'take it to Mr Nam in Room 6'."
+     },
+     {
+      "answer": "Thursdays",
+      "accept": [
+       "Thursday"
+      ],
+      "explain_vi": "'He is there on Tuesdays and Thursdays.'"
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Mai bàn với bố về việc mua máy tính xách tay. Nghe và chọn đáp án đúng cho 5 câu hỏi.",
+    "speakers": [
+     {
+      "name": "Mai",
+      "voice": "female"
+     },
+     {
+      "name": "Dad",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Dad, can we talk about the laptop? My online English course is starting next month."
+     },
+     {
+      "s": 1,
+      "t": "Sure. Are you still thinking about that expensive one from the shopping centre?"
+     },
+     {
+      "s": 0,
+      "t": "No, I've changed my mind. Anna says a cheaper one is fine for online lessons."
+     },
+     {
+      "s": 1,
+      "t": "She's right. You mostly need a good camera and a fast internet connection."
+     },
+     {
+      "s": 0,
+      "t": "Exactly. I found one online for 9,000,000 dong. Oh, sorry, I mean 8,000,000. The other one I looked at was nine."
+     },
+     {
+      "s": 1,
+      "t": "That's reasonable. But if you buy it online, you can't try it first."
+     },
+     {
+      "s": 0,
+      "t": "True. So I'm going to look at the same model in the shop near our house first."
+     },
+     {
+      "s": 1,
+      "t": "Good idea. Actually, I'm meeting my friend Mr Brown on Sunday. He repairs computers for a living, so I'll ask him to come with us."
+     },
+     {
+      "s": 0,
+      "t": "Brilliant. And Dad, can I use the laptop in my bedroom?"
+     },
+     {
+      "s": 1,
+      "t": "Hmm. I think it's better if you use it in the living room. That way, you won't spend all evening in front of a screen."
+     },
+     {
+      "s": 0,
+      "t": "Okay, that's fair. And I'll switch it off at nine every night, I promise."
+     },
+     {
+      "s": 1,
+      "t": "Deal. Then we'll all go to the shop together on Sunday afternoon."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why does Mai need a laptop?",
+      "options": [
+       "To play games with Anna",
+       "To take an English course online",
+       "To watch films in her bedroom",
+       "To help her dad at work"
+      ],
+      "answer": 1,
+      "explain_vi": "Mai nói: 'My online English course is starting next month.'"
+     },
+     {
+      "q": "How much does the laptop Mai found online cost?",
+      "options": [
+       "8,000,000 dong",
+       "9,000,000 dong",
+       "7,000,000 dong",
+       "10,000,000 dong"
+      ],
+      "answer": 0,
+      "explain_vi": "Mai nói 9 triệu rồi sửa: 'Oh, sorry, I mean 8,000,000.'"
+     },
+     {
+      "q": "What is Mai going to do before buying the laptop?",
+      "options": [
+       "Ask Anna to try it",
+       "Order it from the shopping centre",
+       "Check the same laptop in a local shop",
+       "Read reviews online"
+      ],
+      "answer": 2,
+      "explain_vi": "'I'm going to look at the same model in the shop near our house first.'"
+     },
+     {
+      "q": "Why will Mr Brown be useful?",
+      "options": [
+       "He sells cheap laptops.",
+       "He teaches English online.",
+       "He lives near the shop.",
+       "He knows a lot about computers."
+      ],
+      "answer": 3,
+      "explain_vi": "Bố nói: 'He repairs computers for a living' → ông ấy rành về máy tính."
+     },
+     {
+      "q": "Where will Mai use the laptop?",
+      "options": [
+       "In her bedroom",
+       "In the living room",
+       "At Anna's house",
+       "At school"
+      ],
+      "answer": 1,
+      "explain_vi": "Bố nói: 'it's better if you use it in the living room', Mai đồng ý: 'that's fair'."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe cô Lan giới thiệu ứng dụng mới của thư viện thành phố. Có thông tin bị sửa lại. Điền 1–2 từ hoặc một con số.",
+    "script": "Hello, everyone. I'm Ms Lan from the City Library, and I'm here to tell you about our new library app. With the app, you can borrow digital books on your phone or tablet at any time of day. At the moment, we have about 3,000 digital books, and next month we're adding 1,000 more, most of them for teenagers. To use the app, you need a library card. If you haven't got one yet, it's free for students. Just come to the main desk and bring a photo. You can borrow up to 4 books at the same time. When we first opened the app, you could keep a book for two weeks, but many readers said that wasn't long enough, so now it's three weeks. After that, the book simply disappears from your device. Finally, please remember to update the app regularly, because we're adding new features all the time.",
+    "text": "CITY LIBRARY APP\n• Digital books available now: about [1]\n• Library card: free for students, bring a [2]\n• Books you can borrow at the same time: [3]\n• You can keep a book for: [4] weeks\n• Remember to [5] the app regularly",
+    "items": [
+     {
+      "answer": "3,000",
+      "accept": [
+       "3000",
+       "3.000"
+      ],
+      "explain_vi": "'At the moment, we have about 3,000 digital books'. 1,000 là số sách thêm tháng sau."
+     },
+     {
+      "answer": "photo",
+      "accept": [
+       "a photo",
+       "photograph"
+      ],
+      "explain_vi": "'Just come to the main desk and bring a photo.'"
+     },
+     {
+      "answer": "4",
+      "accept": [
+       "four"
+      ],
+      "explain_vi": "'You can borrow up to 4 books at the same time.'"
+     },
+     {
+      "answer": "3",
+      "accept": [
+       "three"
+      ],
+      "explain_vi": "Trước là hai tuần, 'so now it's three weeks'."
+     },
+     {
+      "answer": "update",
+      "accept": [],
+      "explain_vi": "'please remember to update the app regularly'."
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nam và Anna tranh luận về việc trường sắp cấm điện thoại. Chú ý thái độ, lý do của mỗi người và đề xuất cuối cùng.",
+    "speakers": [
+     {
+      "name": "Anna",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 1,
+      "t": "Have you heard? From next term, the school is going to ban phones completely, even at break time."
+     },
+     {
+      "s": 0,
+      "t": "I know. Honestly, I think it's a good thing."
+     },
+     {
+      "s": 1,
+      "t": "Seriously? I thought you'd be furious. You're on your phone constantly."
+     },
+     {
+      "s": 0,
+      "t": "That's exactly why. I rely on it far too much. Last week, I spent four hours a day looking at screens, and my concentration in class was terrible."
+     },
+     {
+      "s": 1,
+      "t": "Okay, but a total ban seems extreme. What about emergencies? My mum works late, and she needs to be able to contact me."
+     },
+     {
+      "s": 0,
+      "t": "Apparently, parents can still call the school office, and there'll be a phone there that students can use."
+     },
+     {
+      "s": 1,
+      "t": "Hmm, that's not very convenient. And what about lessons? We use our phones to look up words and take photos of the board."
+     },
+     {
+      "s": 0,
+      "t": "Well, the school says it's going to buy a set of laptops for every classroom, so we'll still have access to dictionaries."
+     },
+     {
+      "s": 1,
+      "t": "I'll believe it when I see it. They promised us new computers two years ago, and we're still waiting."
+     },
+     {
+      "s": 0,
+      "t": "Fair point. But even if the laptops never arrive, we managed perfectly well with paper dictionaries in primary school."
+     },
+     {
+      "s": 1,
+      "t": "I suppose so. Actually, what really bothers me is that nobody asked us what we thought."
+     },
+     {
+      "s": 0,
+      "t": "That's true. The students should have had a say. Why don't you raise it at the student council meeting on Thursday?"
+     },
+     {
+      "s": 1,
+      "t": "Good idea. I'm not going to argue against the ban itself, but I'll suggest allowing phones at lunchtime."
+     },
+     {
+      "s": 0,
+      "t": "That sounds like a sensible compromise. I'll back you up."
+     }
+    ],
+    "items": [
+     {
+      "q": "How does Anna feel about the phone ban?",
+      "options": [
+       "She is angry because she uses her phone a lot.",
+       "She welcomes it because she depends on her phone too much.",
+       "She doesn't care either way.",
+       "She agrees with it only for younger students."
+      ],
+      "answer": 1,
+      "explain_vi": "Anna nói 'it's a good thing' vì 'I rely on it far too much'."
+     },
+     {
+      "q": "Why is Nam worried about emergencies?",
+      "options": [
+       "The school office is often closed.",
+       "He often feels ill at school.",
+       "His mother needs to be able to reach him.",
+       "He has to call his mother at lunchtime."
+      ],
+      "answer": 2,
+      "explain_vi": "Nam nói: 'My mum works late, and she needs to be able to contact me.'"
+     },
+     {
+      "q": "What is Nam's attitude towards the promise of new laptops?",
+      "options": [
+       "He doubts it because of a previous broken promise.",
+       "He is excited about using them.",
+       "He thinks paper dictionaries are better.",
+       "He believes they will arrive next term."
+      ],
+      "answer": 0,
+      "explain_vi": "'I'll believe it when I see it. They promised us new computers two years ago, and we're still waiting.'"
+     },
+     {
+      "q": "What bothers Nam most about the ban?",
+      "options": [
+       "Students can't take photos of the board.",
+       "It starts too soon.",
+       "Teachers can still use their phones.",
+       "Students were not consulted."
+      ],
+      "answer": 3,
+      "explain_vi": "'what really bothers me is that nobody asked us what we thought.'"
+     },
+     {
+      "q": "What will Nam propose at the student council meeting?",
+      "options": [
+       "Cancelling the ban completely",
+       "Letting students use phones at lunchtime",
+       "Buying more phones for the school office",
+       "Using phones only in lessons"
+      ],
+      "answer": 1,
+      "explain_vi": "Nam sẽ không phản đối lệnh cấm: 'but I'll suggest allowing phones at lunchtime.'"
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe một kỹ sư trẻ kể về phát minh giúp người cao tuổi. Có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
+    "script": "Hi, everyone. My name is Mai Nguyen, and I'm an engineer. Three years ago, my grandmother fell at home while she was alone, and nobody found her for hours. That's what made me want to invent something to help older people. My first idea was a smart watch, but my grandmother refused to wear it. She said it was too complicated. So instead, I designed a walking stick. It looks completely normal, but inside there's a tiny sensor. If the stick falls suddenly, it sends a message to a family member's phone. At first, it also called the hospital automatically, but that caused too many false alarms, so we removed that feature. We originally hoped the battery would last a month, but in fact it lasts about 10 days, which is still convenient enough for most users. Right now, 600 families rely on the stick, mostly in Hanoi and Da Nang. Next year, we're going to add a small light, because many falls happen at night. My advice to young inventors is simple. Don't start with the technology. Start with a real person and a real problem.",
+    "text": "THE SMART WALKING STICK\n• First idea, rejected by grandmother: a smart [1]\n• If the stick falls, a message goes to a family member's [2]\n• Battery life: about [3] days\n• Families using it now: [4]\n• To be added next year: a small [5]",
+    "items": [
+     {
+      "answer": "watch",
+      "accept": [
+       "smart watch"
+      ],
+      "explain_vi": "'My first idea was a smart watch, but my grandmother refused to wear it.'"
+     },
+     {
+      "answer": "phone",
+      "accept": [],
+      "explain_vi": "Không còn gọi bệnh viện; 'it sends a message to a family member's phone'."
+     },
+     {
+      "answer": "10",
+      "accept": [
+       "ten"
+      ],
+      "explain_vi": "Mong là một tháng 'but in fact it lasts about 10 days'."
+     },
+     {
+      "answer": "600",
+      "accept": [
+       "six hundred"
+      ],
+      "explain_vi": "'Right now, 600 families rely on the stick'."
+     },
+     {
+      "answer": "light",
+      "accept": [
+       "small light"
+      ],
+      "explain_vi": "'Next year, we're going to add a small light, because many falls happen at night.'"
+     }
+    ]
+   }
+  }
  }
 }

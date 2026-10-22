@@ -525,5 +525,500 @@
    "Last weekend, I …",
    "I haven't … yet, but I want to …"
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Mai và Tom nói về ngày hội tái chế ở trường. Chọn đáp án đúng cho 5 câu hỏi.",
+    "speakers": [
+     {
+      "name": "Mai",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 1,
+      "t": "Hi Mai. What have you got in that big bag?"
+     },
+     {
+      "s": 0,
+      "t": "Hi Tom. It's full of plastic bottles. I've collected them for the school recycling day."
+     },
+     {
+      "s": 1,
+      "t": "Wow! How many bottles are there?"
+     },
+     {
+      "s": 0,
+      "t": "About 50. I've already washed them all. My mum helped me last night."
+     },
+     {
+      "s": 1,
+      "t": "When is recycling day?"
+     },
+     {
+      "s": 0,
+      "t": "It's next Friday. Each class brings old paper, cans and plastic bottles."
+     },
+     {
+      "s": 1,
+      "t": "Our class hasn't started collecting yet. We're too busy with exams. Is there a prize?"
+     },
+     {
+      "s": 0,
+      "t": "Yes. The class with the most rubbish wins a trip to Cuc Phuong National Park."
+     },
+     {
+      "s": 1,
+      "t": "Great! I've never been there, but my sister went last year. She saw lots of birds and monkeys. I really want to go."
+     },
+     {
+      "s": 0,
+      "t": "Then tell your classmates today. You still have a week to collect!"
+     }
+    ],
+    "items": [
+     {
+      "q": "What is in Mai's bag?",
+      "options": [
+       "Old paper",
+       "Cans",
+       "Plastic bottles",
+       "Food waste"
+      ],
+      "answer": 2,
+      "explain_vi": "Mai nói: 'It's full of plastic bottles.'"
+     },
+     {
+      "q": "Who helped Mai wash the bottles?",
+      "options": [
+       "Her mum",
+       "Tom",
+       "Her teacher",
+       "Her classmates"
+      ],
+      "answer": 0,
+      "explain_vi": "Mai nói: 'My mum helped me last night.'"
+     },
+     {
+      "q": "When is the recycling day?",
+      "options": [
+       "Today",
+       "Last Friday",
+       "Next Monday",
+       "Next Friday"
+      ],
+      "answer": 3,
+      "explain_vi": "Mai nói: 'It's next Friday.'"
+     },
+     {
+      "q": "What can the winning class get?",
+      "options": [
+       "New bins",
+       "A trip to a national park",
+       "Some plants",
+       "A free lunch"
+      ],
+      "answer": 1,
+      "explain_vi": "'The class with the most rubbish wins a trip to Cuc Phuong National Park.'"
+     },
+     {
+      "q": "What does Mai tell Tom to do?",
+      "options": [
+       "Wash his bottles",
+       "Visit Cuc Phuong this weekend",
+       "Talk to his classmates today",
+       "Help her carry the bag"
+      ],
+      "answer": 2,
+      "explain_vi": "Mai nói: 'Then tell your classmates today.'"
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe hướng dẫn viên nói với các bạn học sinh ở khu bảo tồn thiên nhiên. Điền 1–2 từ hoặc một con số vào mỗi chỗ trống.",
+    "script": "Hello, everyone, and welcome to Green Hill Nature Park. I'm Mr Brown, your guide today. Our park has protected wild animals since 1995. Today we're going to walk for two hours. First, we're going to visit the bird garden. There are more than 40 species of birds there. Then we're going to see the monkeys near the lake. Please don't give food to the animals, because our food is harmful to them. And please don't throw away any rubbish in the park. Use the green bins. Lunch is at twelve o'clock in the picnic area. Have a great day!",
+    "text": "GREEN HILL NATURE PARK\n• Length of walk: [1] hours\n• First stop: the bird [2]\n• Species of birds: more than [3]\n• The monkeys live near the [4]\n• Put rubbish in the [5] bins",
+    "items": [
+     {
+      "answer": "2",
+      "accept": [
+       "two"
+      ],
+      "explain_vi": "'Today we're going to walk for two hours.'"
+     },
+     {
+      "answer": "garden",
+      "accept": [
+       "bird garden"
+      ],
+      "explain_vi": "'First, we're going to visit the bird garden.'"
+     },
+     {
+      "answer": "40",
+      "accept": [
+       "forty"
+      ],
+      "explain_vi": "'There are more than 40 species of birds there.'"
+     },
+     {
+      "answer": "lake",
+      "accept": [
+       "the lake"
+      ],
+      "explain_vi": "'Then we're going to see the monkeys near the lake.'"
+     },
+     {
+      "answer": "green",
+      "accept": [],
+      "explain_vi": "'please don't throw away any rubbish in the park. Use the green bins.'"
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Anna viết bài cho báo trường và phỏng vấn Nam về câu lạc bộ môi trường. Nghe và chọn đáp án đúng.",
+    "speakers": [
+     {
+      "name": "Anna",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Thanks for meeting me, Nam. Can you tell our readers about the Green Team?"
+     },
+     {
+      "s": 1,
+      "t": "Sure. It's a club that I started with two friends in March, so it's about seven months old now."
+     },
+     {
+      "s": 0,
+      "t": "How many members have you got?"
+     },
+     {
+      "s": 1,
+      "t": "At first there were only three of us, but now we have 25. Actually, wait, two more joined yesterday, so it's 27."
+     },
+     {
+      "s": 0,
+      "t": "Impressive! What have you done so far?"
+     },
+     {
+      "s": 1,
+      "t": "Well, we've put recycling bins in every classroom, and we've collected more than 400 kilos of paper."
+     },
+     {
+      "s": 0,
+      "t": "What happens to all that paper?"
+     },
+     {
+      "s": 1,
+      "t": "We sell it to a recycling company, and we use the money to buy plants for the school garden."
+     },
+     {
+      "s": 0,
+      "t": "Have you had any problems?"
+     },
+     {
+      "s": 1,
+      "t": "Yes. In the beginning, lots of students threw food waste into the paper bins. So we made posters to show what goes where. It's much better now."
+     },
+     {
+      "s": 0,
+      "t": "And what's your next plan?"
+     },
+     {
+      "s": 1,
+      "t": "We want to cut down on plastic in the canteen. We've already asked the canteen to stop selling bottled water, and next month every student is getting a free metal bottle."
+     }
+    ],
+    "items": [
+     {
+      "q": "How many members does the Green Team have now?",
+      "options": [
+       "3",
+       "25",
+       "27",
+       "7"
+      ],
+      "answer": 2,
+      "explain_vi": "Nam nói 25 rồi sửa: 'two more joined yesterday, so it's 27.'"
+     },
+     {
+      "q": "What does the club do with the money from the paper?",
+      "options": [
+       "It buys new recycling bins.",
+       "It buys plants for the school.",
+       "It gives the money to the canteen.",
+       "It makes posters."
+      ],
+      "answer": 1,
+      "explain_vi": "'we use the money to buy plants for the school garden'."
+     },
+     {
+      "q": "What problem did the club have at first?",
+      "options": [
+       "Students put food waste in the wrong bins.",
+       "Nobody wanted to join.",
+       "The recycling company didn't pay them.",
+       "They didn't have enough bins."
+      ],
+      "answer": 0,
+      "explain_vi": "'lots of students threw food waste into the paper bins' → bỏ rác thức ăn nhầm thùng."
+     },
+     {
+      "q": "How did the club solve this problem?",
+      "options": [
+       "They took away the paper bins.",
+       "They talked to every class.",
+       "They asked teachers for help.",
+       "They made posters explaining which bin to use."
+      ],
+      "answer": 3,
+      "explain_vi": "'So we made posters to show what goes where.'"
+     },
+     {
+      "q": "What has the club already done about plastic in the canteen?",
+      "options": [
+       "Given every student a metal bottle",
+       "Asked the canteen not to sell water in plastic bottles",
+       "Stopped students bringing plastic bags",
+       "Closed the canteen for a week"
+      ],
+      "answer": 1,
+      "explain_vi": "'We've already asked the canteen to stop selling bottled water'. Bình kim loại là kế hoạch tháng sau."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe cô Hoa thông báo về chuyến đi nhặt rác ở bãi biển. Có thông tin bị thay đổi. Điền 1–2 từ hoặc một con số.",
+    "script": "Good afternoon, students. This is Ms Hoa from the Environment Club with some information about our beach clean up trip to Sam Son. The bus leaves from the school gate at six o'clock in the morning, so please be there by a quarter to six. We're spending the morning collecting plastic and other waste on the beach. Last year, we collected 80 bags of rubbish, and this year we hope to collect even more. Please bring a hat, sun cream and your own water bottle, because we won't be handing out plastic bottles this time. Last week, I said you needed to bring your own gloves, but that has changed. The club has bought gloves for everyone, so you only need to bring a pair of old shoes. Lunch will be at a seafood restaurant near the beach, and it costs 100,000 dong. The trip itself is free. To join, give your name to your class monitor before Wednesday.",
+    "text": "BEACH CLEAN UP TRIP\n• Bus leaves from: the school [1]\n• Bags of rubbish collected last year: [2]\n• Bring: a hat, sun cream and your own [3]\n• You must also bring: a pair of old [4]\n• Cost of lunch: [5] dong",
+    "items": [
+     {
+      "answer": "gate",
+      "accept": [
+       "school gate"
+      ],
+      "explain_vi": "'The bus leaves from the school gate at six o'clock in the morning'."
+     },
+     {
+      "answer": "80",
+      "accept": [
+       "eighty"
+      ],
+      "explain_vi": "'Last year, we collected 80 bags of rubbish'."
+     },
+     {
+      "answer": "water bottle",
+      "accept": [
+       "bottle",
+       "water bottles"
+      ],
+      "explain_vi": "'Please bring a hat, sun cream and your own water bottle'."
+     },
+     {
+      "answer": "shoes",
+      "accept": [],
+      "explain_vi": "Không cần găng tay nữa: 'you only need to bring a pair of old shoes'."
+     },
+     {
+      "answer": "100,000",
+      "accept": [
+       "100000",
+       "100.000"
+      ],
+      "explain_vi": "'Lunch… costs 100,000 dong.' Chuyến đi thì miễn phí."
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Mai và Tom chọn đề tài cho cuộc thi Trường học xanh. Chú ý ý kiến, lý do và việc mỗi người sẽ làm tiếp theo.",
+    "speakers": [
+     {
+      "name": "Mai",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Tom, we need to decide on our project for the Green Schools competition by tomorrow. Have you had any more thoughts?"
+     },
+     {
+      "s": 1,
+      "t": "I have, actually. I know I said tree planting was the obvious choice, but I've changed my mind."
+     },
+     {
+      "s": 0,
+      "t": "Really? Why? Everyone loves planting trees."
+     },
+     {
+      "s": 1,
+      "t": "That's the problem. Almost every school has done it. Last year, nine of the twelve projects were about trees. The judges must be tired of them."
+     },
+     {
+      "s": 0,
+      "t": "Fair enough. So what are you suggesting instead?"
+     },
+     {
+      "s": 1,
+      "t": "A project to reduce plastic waste in our canteen. Every day, it throws away hundreds of plastic boxes."
+     },
+     {
+      "s": 0,
+      "t": "I like the idea, but I'm not convinced the canteen staff will agree. Remember when we asked them to stop using plastic straws? Nothing happened."
+     },
+     {
+      "s": 1,
+      "t": "True, but that was just a request. This time, we'd offer them something. With our budget, we could buy reusable bowls for the first month."
+     },
+     {
+      "s": 0,
+      "t": "That might work. But how would we measure the result? The judges want evidence, not just good intentions."
+     },
+     {
+      "s": 1,
+      "t": "We'd count the plastic boxes in the bins for a week before the project and a week after. If the number drops, that's our evidence."
+     },
+     {
+      "s": 0,
+      "t": "Okay, I'm coming round to it. Although, honestly, I still think trees do more for the climate in the long term."
+     },
+     {
+      "s": 1,
+      "t": "Maybe, but we've only got two months. A tree won't have grown much by then."
+     },
+     {
+      "s": 0,
+      "t": "Ha, that's true. Right, let's go with the canteen. I'll email Mr Brown tonight and ask him to arrange a meeting with the canteen manager."
+     },
+     {
+      "s": 1,
+      "t": "Perfect. And I'll start designing the counting sheet."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why has Tom changed his mind about tree planting?",
+      "options": [
+       "Trees are too expensive to buy.",
+       "The school has no space for trees.",
+       "Too many other schools have chosen it before.",
+       "The judges dislike environmental projects."
+      ],
+      "answer": 2,
+      "explain_vi": "'Almost every school has done it. Last year, nine of the twelve projects were about trees.'"
+     },
+     {
+      "q": "Why is Mai doubtful about the canteen idea at first?",
+      "options": [
+       "The canteen ignored an earlier request from the students.",
+       "She thinks plastic is not a serious problem.",
+       "The canteen manager is very strict.",
+       "She doesn't want to work with Tom."
+      ],
+      "answer": 0,
+      "explain_vi": "'Remember when we asked them to stop using plastic straws? Nothing happened.'"
+     },
+     {
+      "q": "How does Tom plan to persuade the canteen?",
+      "options": [
+       "By complaining to the judges",
+       "By offering them reusable bowls",
+       "By asking students to stop eating there",
+       "By counting their plastic boxes"
+      ],
+      "answer": 1,
+      "explain_vi": "'This time, we'd offer them something… we could buy reusable bowls'. Đếm hộp là để đo kết quả."
+     },
+     {
+      "q": "What is Mai's final opinion?",
+      "options": [
+       "Tree planting is a waste of time.",
+       "The canteen project is too difficult to measure.",
+       "The judges will prefer a tree project.",
+       "The canteen project is practical, but trees help the climate more over time."
+      ],
+      "answer": 3,
+      "explain_vi": "Mai đồng ý chọn căng tin nhưng vẫn nói 'trees do more for the climate in the long term'."
+     },
+     {
+      "q": "What will Mai do next?",
+      "options": [
+       "Design a counting sheet",
+       "Contact a teacher about meeting the canteen manager",
+       "Buy reusable bowls",
+       "Count the plastic boxes in the bins"
+      ],
+      "answer": 1,
+      "explain_vi": "'I'll email Mr Brown tonight and ask him to arrange a meeting with the canteen manager.' Tom làm bảng đếm."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe bài nói của một nhà khoa học về dự án bảo vệ rùa biển. Có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
+    "script": "Good evening, and thank you for coming to tonight's talk. I'm Doctor Anna Brown, and for the past six years, I've worked on a project to protect sea turtles on the islands of Con Dao. Many people think the biggest danger to turtles is fishing nets. Nets are certainly harmful, but in our area, the biggest threat is actually plastic waste, which turtles often mistake for jellyfish. There are seven species of sea turtle in the world, and five of them have been seen in Vietnamese waters, although only the green turtle lays its eggs here regularly. When our project started, rangers counted about 200 nests a year. Last season, that number rose to over 450. Climate change is another worry. The temperature of the sand decides whether baby turtles are male or female, and warmer sand produces more females. To keep a healthy balance, our volunteers move some nests into the shade. We take volunteers between April and October. You don't need any scientific knowledge, but you must be able to swim and be willing to work at night.",
+    "text": "SEA TURTLES OF CON DAO\n• Biggest threat in this area: [1]\n• The only species that regularly lays eggs here: the [2] turtle\n• Nests counted last season: over [3]\n• Warmer sand produces more [4]\n• Volunteers must be able to [5] and work at night",
+    "items": [
+     {
+      "answer": "plastic waste",
+      "accept": [
+       "plastic"
+      ],
+      "explain_vi": "Lưới đánh cá có hại, nhưng 'the biggest threat is actually plastic waste'."
+     },
+     {
+      "answer": "green",
+      "accept": [],
+      "explain_vi": "'only the green turtle lays its eggs here regularly'."
+     },
+     {
+      "answer": "450",
+      "accept": [
+       "four hundred and fifty"
+      ],
+      "explain_vi": "Lúc đầu khoảng 200 tổ; 'Last season, that number rose to over 450.'"
+     },
+     {
+      "answer": "females",
+      "accept": [
+       "female",
+       "female turtles"
+      ],
+      "explain_vi": "'warmer sand produces more females'."
+     },
+     {
+      "answer": "swim",
+      "accept": [],
+      "explain_vi": "Không cần kiến thức khoa học, 'but you must be able to swim'."
+     }
+    ]
+   }
+  }
  }
 }

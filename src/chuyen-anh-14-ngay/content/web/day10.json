@@ -540,5 +540,490 @@
    "A good … needs skills such as …",
    "If I study hard, I will …"
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Nam và Mai nói về nghề nghiệp mơ ước. Chọn đáp án đúng cho mỗi câu hỏi.",
+    "speakers": [
+     {
+      "name": "Nam",
+      "voice": "male"
+     },
+     {
+      "name": "Mai",
+      "voice": "female"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Mai, what do you want to be in the future?"
+     },
+     {
+      "s": 1,
+      "t": "I want to be a vet. I love animals, and I have two cats and a dog at home."
+     },
+     {
+      "s": 0,
+      "t": "That's a great job. But you need to study for a long time, right?"
+     },
+     {
+      "s": 1,
+      "t": "Yes, about five years at university. What about you, Nam?"
+     },
+     {
+      "s": 0,
+      "t": "My ambition is to be a chef. I cook dinner for my family every Sunday."
+     },
+     {
+      "s": 1,
+      "t": "Wow! What's your best dish?"
+     },
+     {
+      "s": 0,
+      "t": "Fried rice with eggs. My dad says it's better than the restaurant's!"
+     },
+     {
+      "s": 1,
+      "t": "If you open a restaurant one day, I'll go there every week."
+     },
+     {
+      "s": 0,
+      "t": "Thanks! If I had enough money, I would open one next to our school."
+     },
+     {
+      "s": 1,
+      "t": "Good idea. Then all the teachers would eat there too!"
+     }
+    ],
+    "items": [
+     {
+      "q": "What does Mai want to be?",
+      "options": [
+       "a doctor",
+       "a teacher",
+       "a chef",
+       "a vet"
+      ],
+      "answer": 3,
+      "explain_vi": "Mai nói: \"I want to be a vet. I love animals.\""
+     },
+     {
+      "q": "What pets does Mai have?",
+      "options": [
+       "two cats and a dog",
+       "two dogs and a cat",
+       "one cat",
+       "three dogs"
+      ],
+      "answer": 0,
+      "explain_vi": "\"I have two cats and a dog at home.\""
+     },
+     {
+      "q": "How long does Mai need to study at university?",
+      "options": [
+       "two years",
+       "four years",
+       "five years",
+       "seven years"
+      ],
+      "answer": 2,
+      "explain_vi": "\"Yes, about five years at university.\""
+     },
+     {
+      "q": "When does Nam cook for his family?",
+      "options": [
+       "every Sunday",
+       "every evening",
+       "every Saturday",
+       "on holidays"
+      ],
+      "answer": 0,
+      "explain_vi": "Nam: \"I cook dinner for my family every Sunday.\""
+     },
+     {
+      "q": "Where would Nam like to open a restaurant?",
+      "options": [
+       "near his house",
+       "next to their school",
+       "in the city centre",
+       "next to Mai's house"
+      ],
+      "answer": 1,
+      "explain_vi": "\"If I had enough money, I would open one next to our school.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe Linh kể về công việc của dì mình. Điền vào mỗi chỗ trống MỘT hoặc HAI từ, hoặc một con số.",
+    "script": "Hi, I'm Linh. Today I'm going to tell you about my aunt's job. She works at the zoo in Hanoi. She is a zookeeper, and she is responsible for the elephants and the monkeys. She gets up very early, at five o'clock, because the animals need their breakfast! My aunt has worked there for 12 years, so she has a lot of experience. She says the most important skill in her job is watching carefully, because animals can't tell you when they are ill. Her job isn't easy, and she works on Saturdays too, but she never wants to change it. If I visit the zoo next month, she will show me the baby elephant.",
+    "text": "MY AUNT'S JOB\n• Job: a [1]\n• Looks after: the elephants and the [2]\n• Has worked there for: [3] years\n• Most important skill: watching [4]\n• Next month: Linh will see the baby [5]",
+    "items": [
+     {
+      "answer": "zookeeper",
+      "accept": [
+       "zoo keeper"
+      ],
+      "explain_vi": "\"She is a zookeeper.\""
+     },
+     {
+      "answer": "monkeys",
+      "accept": [],
+      "explain_vi": "\"She is responsible for the elephants and the monkeys.\""
+     },
+     {
+      "answer": "12",
+      "accept": [
+       "twelve"
+      ],
+      "explain_vi": "\"My aunt has worked there for 12 years.\""
+     },
+     {
+      "answer": "carefully",
+      "accept": [],
+      "explain_vi": "\"The most important skill in her job is watching carefully.\""
+     },
+     {
+      "answer": "elephant",
+      "accept": [],
+      "explain_vi": "\"She will show me the baby elephant.\""
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Linh và Tom nói về một công việc hè mà Tom muốn ứng tuyển. Chọn đáp án đúng cho mỗi câu hỏi.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Tom. You look busy. What are you writing?"
+     },
+     {
+      "s": 1,
+      "t": "An application. The summer camp near the lake is looking for teenage helpers, and I'd like to apply."
+     },
+     {
+      "s": 0,
+      "t": "Oh, the camp for little kids? What would you have to do?"
+     },
+     {
+      "s": 1,
+      "t": "Mostly play games with them and help at lunchtime. They want people who are cheerful and responsible."
+     },
+     {
+      "s": 0,
+      "t": "Well, you're great with your little cousins, so you'd be perfect. Is it paid?"
+     },
+     {
+      "s": 1,
+      "t": "Yes, a bit. They pay 100,000 dong a day. Oh no, sorry, I read it wrong. It's 150,000 for a full day and 100,000 for a morning."
+     },
+     {
+      "s": 0,
+      "t": "Not bad. How many days a week?"
+     },
+     {
+      "s": 1,
+      "t": "Three. Monday, Wednesday and Friday. But if they ask me to work more, I'll probably say yes."
+     },
+     {
+      "s": 0,
+      "t": "Do you need any experience?"
+     },
+     {
+      "s": 1,
+      "t": "Not really, but they want a letter from a teacher. I'm going to ask Mr Brown tomorrow."
+     },
+     {
+      "s": 0,
+      "t": "Good idea. He knows you well. When's the deadline?"
+     },
+     {
+      "s": 1,
+      "t": "This Friday, so I can't wait any longer. If I don't send it by then, I'll lose my chance."
+     }
+    ],
+    "items": [
+     {
+      "q": "What job is Tom applying for?",
+      "options": [
+       "looking after young children at a camp",
+       "working at a cafe near the lake",
+       "teaching English at a language centre",
+       "babysitting his little cousins"
+      ],
+      "answer": 0,
+      "explain_vi": "Trại hè cho trẻ nhỏ cần người giúp: chơi trò chơi với các em và giúp giờ ăn trưa."
+     },
+     {
+      "q": "Why does Linh think Tom would be good at the job?",
+      "options": [
+       "He has worked at a camp before.",
+       "Mr Brown recommended him.",
+       "He gets on well with his young cousins.",
+       "He is good at cooking lunch."
+      ],
+      "answer": 2,
+      "explain_vi": "Linh: \"You're great with your little cousins, so you'd be perfect.\""
+     },
+     {
+      "q": "How much will Tom earn for a full day?",
+      "options": [
+       "50,000 dong",
+       "100,000 dong",
+       "150,000 dong",
+       "250,000 dong"
+      ],
+      "answer": 2,
+      "explain_vi": "Tom đọc nhầm 100,000 rồi sửa: 150,000 cả ngày, 100,000 là buổi sáng."
+     },
+     {
+      "q": "What does Tom need from Mr Brown?",
+      "options": [
+       "advice about the interview",
+       "permission to miss school",
+       "some work experience",
+       "a letter to support his application"
+      ],
+      "answer": 3,
+      "explain_vi": "\"They want a letter from a teacher. I'm going to ask Mr Brown tomorrow.\""
+     },
+     {
+      "q": "What do we learn about the deadline?",
+      "options": [
+       "Tom has already missed it.",
+       "Tom has only a few days left to apply.",
+       "Tom can send the application next week.",
+       "The camp has changed it to Monday."
+      ],
+      "answer": 1,
+      "explain_vi": "Hạn chót là \"this Friday, so I can't wait any longer\"."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe quản lý hiệu sách hướng dẫn các tình nguyện viên mới trong ngày đầu tiên. Điền vào mỗi chỗ trống MỘT hoặc HAI từ, hoặc một con số.",
+    "script": "Good morning, and thank you for joining our team of weekend volunteers at Sunshine Bookshop. Let me explain a few things before we open. First, please always sign in at the front desk when you arrive, not at the back door, even if you come in that way. Today, you'll be responsible for the children's corner on the second floor. You'll help kids find books and tidy the shelves. Your break is at half past twelve. Oh, sorry, I've just checked, and today it's at one o'clock, because we're very busy at lunchtime. Please wear the green T-shirt we gave you, not your school uniform. If you have a problem, ask my colleague Anna, who has worked here for 6 years. She knows where everything is. And remember, if you do well this summer, you'll get a free book every month until the end of the year. Right, any questions? No? Then let's open the doors.",
+    "text": "SUNSHINE BOOKSHOP: WEEKEND VOLUNTEERS\n• Sign in at: the front [1]\n• Work in: the children's corner, [2] floor\n• Wear: a green [3]\n• Problems: ask Anna, who has worked there for [4] years\n• Reward if you do well: a free [5] every month",
+    "items": [
+     {
+      "answer": "desk",
+      "accept": [
+       "front desk"
+      ],
+      "explain_vi": "\"Always sign in at the front desk..., not at the back door.\""
+     },
+     {
+      "answer": "second",
+      "accept": [
+       "2nd"
+      ],
+      "explain_vi": "\"The children's corner on the second floor.\""
+     },
+     {
+      "answer": "T-shirt",
+      "accept": [
+       "t shirt",
+       "tshirt"
+      ],
+      "explain_vi": "\"Please wear the green T-shirt we gave you, not your school uniform.\""
+     },
+     {
+      "answer": "6",
+      "accept": [
+       "six"
+      ],
+      "explain_vi": "\"My colleague Anna, who has worked here for 6 years.\""
+     },
+     {
+      "answer": "book",
+      "accept": [],
+      "explain_vi": "\"You'll get a free book every month until the end of the year.\""
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Nghe Mai và Nam nói về lựa chọn nghề nghiệp của chị họ Nam. Chú ý ý kiến, thái độ và những điều có thể suy ra.",
+    "speakers": [
+     {
+      "name": "Mai",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Nam, didn't your cousin finish university last month? Has she found a job yet?"
+     },
+     {
+      "s": 1,
+      "t": "Actually, she's had two offers. One from a big bank and one from a small animation studio."
+     },
+     {
+      "s": 0,
+      "t": "Wow. Let me guess, she took the bank job. It must pay much better."
+     },
+     {
+      "s": 1,
+      "t": "It does, almost twice as much. But she turned it down. She's starting at the studio on Monday."
+     },
+     {
+      "s": 0,
+      "t": "Really? I'd find it hard to say no to that much money. Were her parents upset?"
+     },
+     {
+      "s": 1,
+      "t": "Her dad was, at first. He kept saying that if she worked at the bank, she'd never have to worry about money. But her mum supported her from the start."
+     },
+     {
+      "s": 0,
+      "t": "So what made her choose the studio?"
+     },
+     {
+      "s": 1,
+      "t": "Well, she's been drawing since she was little, and her ambition has always been to make cartoons. She said that if she spent all day looking at numbers, she'd be bored within a month."
+     },
+     {
+      "s": 0,
+      "t": "I get that. But isn't it a bit risky? Small companies sometimes close down."
+     },
+     {
+      "s": 1,
+      "t": "That's what I said! But she pointed out that she'll learn far more there, because there are only twelve people and everyone does a bit of everything. In a bank, she'd just be one of thousands of employees."
+     },
+     {
+      "s": 0,
+      "t": "That's a fair point. Experience like that could be really useful later in her career."
+     },
+     {
+      "s": 1,
+      "t": "Exactly. And if it doesn't work out, she can always apply to a bank in a year or two."
+     },
+     {
+      "s": 0,
+      "t": "Honestly, I admire her. I'm not sure I'd be that brave. What about you? Would you do the same?"
+     },
+     {
+      "s": 1,
+      "t": "Probably, yes. I'd rather earn less and enjoy what I do."
+     }
+    ],
+    "items": [
+     {
+      "q": "What did Mai guess about the cousin's decision?",
+      "options": [
+       "She had chosen the job with the higher salary.",
+       "She had decided to carry on studying.",
+       "She was still waiting for an offer.",
+       "She had chosen the studio because of her parents."
+      ],
+      "answer": 0,
+      "explain_vi": "Mai đoán: \"she took the bank job. It must pay much better.\" Nhưng thực tế chị ấy từ chối."
+     },
+     {
+      "q": "How did the cousin's parents react to her choice?",
+      "options": [
+       "Both of them were upset.",
+       "Her father disagreed at first, but her mother supported her.",
+       "Her mother was worried, but her father agreed.",
+       "Both of them supported her immediately."
+      ],
+      "answer": 1,
+      "explain_vi": "\"Her dad was [upset], at first... But her mum supported her from the start.\""
+     },
+     {
+      "q": "According to the cousin, what is the main advantage of working at the studio?",
+      "options": [
+       "She will earn more money there.",
+       "The company is safer than a bank.",
+       "She will work with thousands of people.",
+       "She will develop a wider range of skills."
+      ],
+      "answer": 3,
+      "explain_vi": "Studio chỉ có mười hai người, \"everyone does a bit of everything\" nên học được nhiều hơn."
+     },
+     {
+      "q": "What is Mai's attitude towards the cousin by the end of the conversation?",
+      "options": [
+       "She admires her courage.",
+       "She thinks she has made a serious mistake.",
+       "She feels a little jealous of her.",
+       "She is not really interested."
+      ],
+      "answer": 0,
+      "explain_vi": "Lúc đầu Mai thấy rủi ro, nhưng cuối cùng nói: \"I admire her. I'm not sure I'd be that brave.\""
+     },
+     {
+      "q": "What can we learn about Nam?",
+      "options": [
+       "He would prefer a well-paid job, even a boring one.",
+       "He hopes to work at a bank one day.",
+       "He values enjoying his work more than a high salary.",
+       "He plans to join his cousin at the studio."
+      ],
+      "answer": 2,
+      "explain_vi": "Nam: \"I'd rather earn less and enjoy what I do.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Nghe một doanh nhân trẻ kể chuyện lập nghiệp, chú ý thông tin gây nhiễu. Điền vào mỗi chỗ trống MỘT hoặc HAI từ, hoặc một con số.",
+    "script": "Hello, everyone. When your head teacher asked me to talk about my career, I almost turned the invitation down, because I'm only 24. But here's my story. I started my first business when I was 16. Many people think I sold clothes, but I actually made handmade notebooks and sold them to students at my school. At first, I made about twenty a week, and I was responsible for everything, from buying paper to delivering orders on my bike. My biggest mistake was setting my prices too low. I thought cheap notebooks would sell faster, but I ended up working every night and earning almost nothing. Then a colleague of my mum's, who ran a small shop, gave me some great advice. She told me that customers will happily pay more if you explain the story behind your product. So I started adding a little card to every notebook. Today, my company employs fifteen people. If I could give my younger self one piece of advice, it wouldn't be to work harder. It would be to ask for help earlier. Now, does anyone have any questions?",
+    "text": "TALK: FROM SCHOOL BUSINESS TO COMPANY\n• Age when she started her first business: [1]\n• First product: handmade [2]\n• Biggest mistake: her prices were too [3]\n• Useful advice came from a woman who ran a small [4]\n• Advice to her younger self: ask for [5] earlier",
+    "items": [
+     {
+      "answer": "16",
+      "accept": [
+       "sixteen"
+      ],
+      "explain_vi": "\"I started my first business when I was 16.\" 24 là tuổi hiện nay."
+     },
+     {
+      "answer": "notebooks",
+      "accept": [],
+      "explain_vi": "Không phải quần áo: \"I actually made handmade notebooks.\""
+     },
+     {
+      "answer": "low",
+      "accept": [],
+      "explain_vi": "\"My biggest mistake was setting my prices too low.\""
+     },
+     {
+      "answer": "shop",
+      "accept": [],
+      "explain_vi": "\"A colleague of my mum's, who ran a small shop, gave me some great advice.\""
+     },
+     {
+      "answer": "help",
+      "accept": [],
+      "explain_vi": "Không phải làm chăm hơn: \"It would be to ask for help earlier.\""
+     }
+    ]
+   }
+  }
  }
 }

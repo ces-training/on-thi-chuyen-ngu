@@ -479,5 +479,498 @@
    "When we arrived, we …",
    "If you visit …, you should …"
   ]
+ },
+ "listening": {
+  "nen": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Em nghe Tom hỏi Mai về chuyến đi Sa Pa của gia đình Mai. Chọn đáp án đúng cho mỗi câu hỏi.",
+    "speakers": [
+     {
+      "name": "Tom",
+      "voice": "male"
+     },
+     {
+      "name": "Mai",
+      "voice": "female"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Hi Mai! Where were you last week? You weren't at school."
+     },
+     {
+      "s": 1,
+      "t": "Hi Tom. I went on a trip to Sa Pa with my family."
+     },
+     {
+      "s": 0,
+      "t": "Lucky you! How did you get there? By plane?"
+     },
+     {
+      "s": 1,
+      "t": "No, you can't fly to Sa Pa. There's no airport. We went by bus, and the journey took six hours."
+     },
+     {
+      "s": 0,
+      "t": "Six hours! That's a long time. Was it boring?"
+     },
+     {
+      "s": 1,
+      "t": "A bit. But the bus was very comfortable, so I could sleep."
+     },
+     {
+      "s": 0,
+      "t": "So what did you do there?"
+     },
+     {
+      "s": 1,
+      "t": "We explored the villages and walked in the mountains. It was so cold that I had to wear two jackets!"
+     },
+     {
+      "s": 0,
+      "t": "That sounds great. Did you buy any souvenirs?"
+     },
+     {
+      "s": 1,
+      "t": "Yes, I bought this bag for you. Local people make them by hand. Do you like it?"
+     }
+    ],
+    "items": [
+     {
+      "q": "Why wasn't Mai at school last week?",
+      "options": [
+       "She was ill.",
+       "She was on a family trip.",
+       "She moved house.",
+       "She had a sports match."
+      ],
+      "answer": 1,
+      "explain_vi": "Mai nói: \"I went on a trip to Sa Pa with my family.\""
+     },
+     {
+      "q": "How did Mai's family travel to Sa Pa?",
+      "options": [
+       "By plane",
+       "By train",
+       "By bus",
+       "By car"
+      ],
+      "answer": 2,
+      "explain_vi": "Mai: \"There's no airport. We went by bus.\""
+     },
+     {
+      "q": "How long was the journey?",
+      "options": [
+       "Two hours",
+       "Four hours",
+       "Ten hours",
+       "Six hours"
+      ],
+      "answer": 3,
+      "explain_vi": "Mai: \"the journey took six hours.\""
+     },
+     {
+      "q": "Why did Mai wear two jackets?",
+      "options": [
+       "It was very cold.",
+       "It was raining.",
+       "She lost her coat.",
+       "Her mum told her to."
+      ],
+      "answer": 0,
+      "explain_vi": "Mai: \"It was so cold that I had to wear two jackets!\""
+     },
+     {
+      "q": "What did Mai buy for Tom?",
+      "options": [
+       "A hat",
+       "A bag",
+       "A jacket",
+       "A map"
+      ],
+      "answer": 1,
+      "explain_vi": "Mai: \"I bought this bag for you.\""
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe hướng dẫn viên nói trên xe buýt trong chuyến đi Vịnh Hạ Long. Điền một từ hoặc một con số vào mỗi chỗ trống.",
+    "script": "Good morning, everyone. My name is Linh, and I'm your tour guide today. Welcome to our trip to Ha Long Bay. The journey from Hanoi takes about 3 hours. We're going to stop once, at a restaurant, for a short break. When we arrive, we'll get on a boat and explore the bay. We'll also visit a big cave. It's very dark inside, so you should bring a torch. Please stay with the group and don't touch the rocks. At lunchtime, we'll have seafood on the boat. At the end of the day, you can buy souvenirs at the market near the harbour. Have a great day!",
+    "text": "HA LONG BAY TRIP\n• Journey time: about [1] hours\n• Short break at a [2]\n• In the cave: bring a [3]\n• Lunch: [4] on the boat\n• Buy souvenirs at the [5] near the harbour",
+    "items": [
+     {
+      "answer": "3",
+      "accept": [
+       "three"
+      ],
+      "explain_vi": "Linh nói: \"The journey from Hanoi takes about 3 hours.\""
+     },
+     {
+      "answer": "restaurant",
+      "accept": [
+       "a restaurant"
+      ],
+      "explain_vi": "Linh nói: \"We're going to stop once, at a restaurant.\""
+     },
+     {
+      "answer": "torch",
+      "accept": [
+       "a torch"
+      ],
+      "explain_vi": "Linh nói: \"It's very dark inside, so you should bring a torch.\""
+     },
+     {
+      "answer": "seafood",
+      "accept": [],
+      "explain_vi": "Linh nói: \"we'll have seafood on the boat.\""
+     },
+     {
+      "answer": "market",
+      "accept": [
+       "the market"
+      ],
+      "explain_vi": "Linh nói: \"buy souvenirs at the market near the harbour.\""
+     }
+    ]
+   }
+  },
+  "chuan": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Anna, bạn người Úc, hỏi Nam nên đi Hội An bằng gì. Chú ý chỗ Nam nói nhầm rồi sửa. Chọn đáp án đúng.",
+    "speakers": [
+     {
+      "name": "Anna",
+      "voice": "female"
+     },
+     {
+      "name": "Nam",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Nam, can I ask you something? My parents and I want to go to Hoi An next month, but we can't decide how to get there."
+     },
+     {
+      "s": 1,
+      "t": "Well, you could fly to Da Nang. It only takes about an hour and a quarter. Then you have to take a taxi to Hoi An."
+     },
+     {
+      "s": 0,
+      "t": "Flying sounds quick. But my mum hates planes, to be honest."
+     },
+     {
+      "s": 1,
+      "t": "Then the train is a good choice. It's much slower, though. The journey takes about sixteen hours. Sorry, no, I mean seventeen. My uncle took it last year."
+     },
+     {
+      "s": 0,
+      "t": "Seventeen hours! Is it comfortable?"
+     },
+     {
+      "s": 1,
+      "t": "Yes, if you get a sleeper. You have a proper bed, and you can see beautiful beaches from the window."
+     },
+     {
+      "s": 0,
+      "t": "That sounds lovely. Do we have to buy the tickets early?"
+     },
+     {
+      "s": 1,
+      "t": "Definitely. In summer the trains are really crowded, so you should book at least two weeks before you travel. You can do it online."
+     },
+     {
+      "s": 0,
+      "t": "Great. What about the coach? My friend said it's the cheapest way."
+     },
+     {
+      "s": 1,
+      "t": "It is cheap, but I wouldn't take it. The roads are busy, and there are often long delays."
+     },
+     {
+      "s": 0,
+      "t": "OK, I think we'll go by train, then. My dad will love it. Can we buy food on board?"
+     },
+     {
+      "s": 1,
+      "t": "Yes, but it isn't very good. You'd better bring your own snacks."
+     }
+    ],
+    "items": [
+     {
+      "q": "Why doesn't Anna's family want to fly?",
+      "options": [
+       "It is too expensive.",
+       "Her mother doesn't like flying.",
+       "There are no flights in summer.",
+       "The airport is too far from Hoi An."
+      ],
+      "answer": 1,
+      "explain_vi": "Anna: \"my mum hates planes\" = mẹ Anna không thích đi máy bay."
+     },
+     {
+      "q": "How long does the train journey take?",
+      "options": [
+       "Sixteen hours",
+       "An hour and a quarter",
+       "Seventeen hours",
+       "Two weeks"
+      ],
+      "answer": 2,
+      "explain_vi": "Nam nói sixteen rồi sửa: \"Sorry, no, I mean seventeen.\""
+     },
+     {
+      "q": "What does Nam say about the train tickets?",
+      "options": [
+       "Buy them at the station.",
+       "Buy them on the day you travel.",
+       "Ask his uncle for help.",
+       "Book them well before the trip."
+      ],
+      "answer": 3,
+      "explain_vi": "Nam: \"you should book at least two weeks before you travel\" = đặt vé sớm."
+     },
+     {
+      "q": "Why doesn't Nam recommend the coach?",
+      "options": [
+       "It is often late because of traffic.",
+       "It is more expensive than the train.",
+       "It doesn't go to Hoi An.",
+       "It is too crowded in summer."
+      ],
+      "answer": 0,
+      "explain_vi": "\"The roads are busy, and there are often long delays.\" Đông khách vào mùa hè là nói về tàu."
+     },
+     {
+      "q": "What does Nam advise Anna's family to take on the train?",
+      "options": [
+       "A book",
+       "A blanket",
+       "Their own food",
+       "A map"
+      ],
+      "answer": 2,
+      "explain_vi": "Nam: \"You'd better bring your own snacks.\" Đồ ăn trên tàu không ngon."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe thầy Brown thông báo về chuyến đi Singapore của trường. Có một thông tin bị thay đổi. Điền 1–2 từ hoặc một con số.",
+    "script": "Good afternoon, everyone. This is Mr Brown with some important information about next month's school trip to Singapore. We're setting off very early on Monday morning, so please be at the school gate by half past five. The bus to the airport leaves at six o'clock. Everyone must bring their passport, and you have to give a copy of it to your class teacher by this Friday. Oh, sorry, I've just been told that the date has changed. Please give it to her by Wednesday instead. You don't have to bring much money, because all meals are paid for. But you can bring up to 50 dollars for souvenirs. We're staying at a hotel near the Science Centre, so we'll be able to walk there. Finally, the weather is hot and wet, so you should pack an umbrella and light clothes.",
+    "text": "SCHOOL TRIP TO SINGAPORE\n• Meet at the school [1] by half past five\n• Copy of passport to class teacher by [2]\n• Money for souvenirs: up to [3] dollars\n• Hotel is near the [4]\n• Pack: an [5] and light clothes",
+    "items": [
+     {
+      "answer": "gate",
+      "accept": [
+       "school gate"
+      ],
+      "explain_vi": "Thầy nói: \"please be at the school gate by half past five.\""
+     },
+     {
+      "answer": "Wednesday",
+      "accept": [],
+      "explain_vi": "Ban đầu là Friday, rồi thầy sửa: \"Please give it to her by Wednesday instead.\""
+     },
+     {
+      "answer": "50",
+      "accept": [
+       "fifty"
+      ],
+      "explain_vi": "Thầy nói: \"you can bring up to 50 dollars for souvenirs.\""
+     },
+     {
+      "answer": "Science Centre",
+      "accept": [
+       "science center",
+       "the science centre"
+      ],
+      "explain_vi": "Thầy nói: \"a hotel near the Science Centre.\""
+     },
+     {
+      "answer": "umbrella",
+      "accept": [],
+      "explain_vi": "Thầy nói: \"you should pack an umbrella and light clothes.\""
+     }
+    ]
+   }
+  },
+  "nang": {
+   "part1": {
+    "title_vi": "Phần 1 · Hội thoại",
+    "intro_vi": "Em nghe Linh và Tom bàn chọn điểm đến cho chuyến đi của lớp. Câu hỏi về ý kiến, thái độ và suy luận.",
+    "speakers": [
+     {
+      "name": "Linh",
+      "voice": "female"
+     },
+     {
+      "name": "Tom",
+      "voice": "male"
+     }
+    ],
+    "script": [
+     {
+      "s": 0,
+      "t": "Tom, have you got a minute? Our teacher says I have to choose the destination for the class trip by tomorrow, and I'm completely stuck."
+     },
+     {
+      "s": 1,
+      "t": "Sure. What are the options?"
+     },
+     {
+      "s": 0,
+      "t": "Well, it's between Ha Long Bay and Ninh Binh. Most of the class voted for Ha Long, but only because it's the most famous."
+     },
+     {
+      "s": 1,
+      "t": "Hmm. I went there last spring, and honestly, the trip was a bit disappointing. The bay itself is amazing, but it was so crowded that we could hardly move on the boat."
+     },
+     {
+      "s": 0,
+      "t": "That's exactly what I was worried about. And the journey's longer, too. We'd have to set off at five in the morning."
+     },
+     {
+      "s": 1,
+      "t": "Whereas Ninh Binh is only about two hours away, isn't it?"
+     },
+     {
+      "s": 0,
+      "t": "Roughly, yes. And there, we could hire bicycles and explore the villages and rice fields. I think the class would remember that more than another boat ride."
+     },
+     {
+      "s": 1,
+      "t": "I agree, although some people might complain that it's too tiring. Cycling in June isn't exactly relaxing."
+     },
+     {
+      "s": 0,
+      "t": "True. Maybe we could cycle in the morning, when it's cooler, and take a boat trip through the caves in the afternoon."
+     },
+     {
+      "s": 1,
+      "t": "Now that sounds like the best of both worlds. People would still get the boat ride they wanted, without the crowds."
+     },
+     {
+      "s": 0,
+      "t": "Exactly. The only problem is persuading everyone. They were so excited about Ha Long."
+     },
+     {
+      "s": 1,
+      "t": "Just show them some photos of the caves. Once they've seen them, I doubt anyone will argue."
+     },
+     {
+      "s": 0,
+      "t": "Good idea. I'll make a short slideshow tonight and show it to the class tomorrow."
+     },
+     {
+      "s": 1,
+      "t": "And if they still say no, at least you tried."
+     }
+    ],
+    "items": [
+     {
+      "q": "According to Linh, why did most of the class vote for Ha Long Bay?",
+      "options": [
+       "It is closer than Ninh Binh.",
+       "It is the best-known place.",
+       "Tom recommended it.",
+       "It is cheaper than Ninh Binh."
+      ],
+      "answer": 1,
+      "explain_vi": "Linh: \"only because it's the most famous\" = nổi tiếng nhất. Hạ Long thực ra xa hơn."
+     },
+     {
+      "q": "What was Tom's opinion of his trip to Ha Long Bay?",
+      "options": [
+       "He enjoyed every minute of it.",
+       "He found the scenery disappointing.",
+       "He liked the views but not the crowds.",
+       "He thought the boat trip was too expensive."
+      ],
+      "answer": 2,
+      "explain_vi": "\"The bay itself is amazing, but it was so crowded...\" – cảnh đẹp nhưng quá đông."
+     },
+     {
+      "q": "What worry does Tom have about the trip to Ninh Binh?",
+      "options": [
+       "Cycling in the heat might be too tiring.",
+       "The journey is too long.",
+       "The caves are too crowded.",
+       "There are no boat trips there."
+      ],
+      "answer": 0,
+      "explain_vi": "Tom: \"some people might complain that it's too tiring. Cycling in June isn't exactly relaxing.\""
+     },
+     {
+      "q": "Why does Tom like Linh's final plan?",
+      "options": [
+       "It is cheaper than the trip to Ha Long.",
+       "It means no one has to cycle.",
+       "It is shorter than the original plan.",
+       "It gives the class what they wanted, with fewer people around."
+      ],
+      "answer": 3,
+      "explain_vi": "\"the best of both worlds... still get the boat ride they wanted, without the crowds.\""
+     },
+     {
+      "q": "What does Tom believe will happen when the class sees the photos?",
+      "options": [
+       "They will still choose Ha Long.",
+       "They will ask the teacher to decide.",
+       "They will probably agree with Linh.",
+       "They will want to cycle all day."
+      ],
+      "answer": 2,
+      "explain_vi": "Tom: \"Once they've seen them, I doubt anyone will argue\" – chắc sẽ đồng ý với Linh."
+     }
+    ]
+   },
+   "part2": {
+    "title_vi": "Phần 2 · Độc thoại",
+    "intro_vi": "Em nghe hướng dẫn viên giới thiệu tour xe buýt tham quan London. Có nhiều thông tin gây nhiễu. Điền 1–2 từ hoặc một con số.",
+    "script": "Good morning, everyone, and welcome aboard the Riverside Explorer, the sightseeing bus that takes you to London's most famous places. My name is Tom, and I'll be your guide today. Before we set off, here's some useful information. Your ticket is valid for 24 hours, so you can get off at any stop, explore the area, and then catch a later bus. Normally, a bus comes every 15 minutes, but because of roadworks this week, you may have to wait up to 30 minutes, so please be patient. Our first stop is the Tower of London. If you want to go inside, you'd better buy your tickets online, because the queues at the gate can be extremely long. Next, we'll cross the river to the London Eye. Many visitors assume it offers the best view of the city. It's certainly impressive, but it's also very expensive. If you'd rather save your money, the roof garden of the city library gives you an almost equally stunning view, and it's completely free. Finally, please don't leave bags on your seat when you get off. Anything left behind is taken to our office at Victoria Station, not to the police. Enjoy the tour!",
+    "text": "RIVERSIDE EXPLORER BUS TOUR\n• Ticket valid for: [1] hours\n• This week: wait up to [2] minutes for a bus\n• Tower of London: buy tickets [3]\n• Free view: roof garden of the city [4]\n• Lost bags: taken to our office at [5]",
+    "items": [
+     {
+      "answer": "24",
+      "accept": [
+       "twenty-four"
+      ],
+      "explain_vi": "Tom nói: \"Your ticket is valid for 24 hours.\""
+     },
+     {
+      "answer": "30",
+      "accept": [
+       "thirty"
+      ],
+      "explain_vi": "15 phút là bình thường; tuần này \"you may have to wait up to 30 minutes.\""
+     },
+     {
+      "answer": "online",
+      "accept": [],
+      "explain_vi": "Tom: \"you'd better buy your tickets online\" vì xếp hàng ở cổng rất lâu."
+     },
+     {
+      "answer": "library",
+      "accept": [
+       "city library"
+      ],
+      "explain_vi": "\"the roof garden of the city library ... completely free.\" London Eye thì đắt."
+     },
+     {
+      "answer": "Victoria Station",
+      "accept": [
+       "Victoria"
+      ],
+      "explain_vi": "\"taken to our office at Victoria Station, not to the police.\""
+     }
+    ]
+   }
+  }
  }
 }

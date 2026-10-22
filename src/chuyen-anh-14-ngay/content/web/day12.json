@@ -740,10 +740,10 @@
      {
       "q": "What is Mai's group making?",
       "options": [
-       "A robot",
-       "A plant pot",
+       "A robot that can water plants",
+       "A pot for growing plants",
        "A car that uses energy from the sun",
-       "A kite"
+       "A kite that flies in the wind"
       ],
       "answer": 2,
       "explain_vi": "Mai nói: \"a small car that runs on solar power\" (solar power = năng lượng mặt trời)."
@@ -874,7 +874,7 @@
        "New kinds of medicine",
        "A way to make water safer",
        "Better ways to grow rice",
-       "Machines for farmers"
+       "The weather in the countryside"
       ],
       "answer": 1,
       "explain_vi": "Nam nói họ \"do research on clean water\" và làm \"a cheap filter\" (máy lọc) cho các gia đình."
@@ -928,7 +928,7 @@
    "part2": {
     "title_vi": "Phần 2 · Độc thoại",
     "intro_vi": "Em nghe lời thuyết minh ở một bảo tàng khoa học về chiếc lò vi sóng đầu tiên. Điền vào ghi chú, mỗi chỗ 1–2 từ hoặc 1 con số.",
-    "script": "Hello, and welcome to the Hall of Inventions. Some of the greatest breakthroughs in science happened by accident, and the object in front of you is a good example. In 1945, an American engineer called Percy Spencer was carrying out research on radar machines. One day, he noticed that the chocolate bar in his pocket had melted. He was curious, so he did a simple experiment. Many people think he tested an egg first, but in fact, the first food he tried was popcorn, and it popped all over his laboratory! The egg came later, and it exploded. Two years after that, the first microwave oven went on sale. It wasn't small like the ones in our kitchens today. It was almost two metres tall and weighed about 340 kilograms. It was also very expensive, so at first it was mainly bought by restaurants. Now, please walk through to the next room.",
+    "script": "Hello, and welcome to the Hall of Inventions. Some of the greatest breakthroughs in science happened by accident, and the object in front of you is a good example. In 1945, an American engineer called Percy Spencer was carrying out research on radar machines. One day, he noticed that the chocolate bar in his pocket had melted. He was curious, so he did a simple experiment. Some stories say he tested an egg first, but in fact, the first food he tried was popcorn, and it popped all over his laboratory! The egg came later, and it exploded. Two years after that, the first microwave oven went on sale. It wasn't small like the ones in our kitchens today. It was almost two metres tall and weighed about 340 kilograms. It was also very expensive, so at first it was mainly bought by restaurants. Now, please walk through to the next room.",
     "text": "THE FIRST MICROWAVE OVEN\n• Percy Spencer's job: [1]\n• What melted in his pocket: a [2]\n• First food he tested: [3]\n• Weight of the first oven: about [4] kilograms\n• At first, mainly bought by: [5]",
     "items": [
      {
