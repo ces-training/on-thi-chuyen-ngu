@@ -98,7 +98,7 @@ function vSchool(){
   const langs=['Anh','Nga','Phap','Trung','Duc','Nhat','Han'];
   M().innerHTML=`<section class="view">
   <div><p class="eyebrow">Gợi ý trường và lớp chuyên ngữ</p><h2>Cậu có thể thi trường nào?</h2>
-  <p class="lead">Tab này cậu mở cùng bố mẹ nhé.</p><p>Cháu chào cô chú ạ! Cháu là Hùng, Hùng trong "Hùng dũng" chứ không phải "Hùng hổ" đâu ạ. Cháu ước điểm Anh của bạn nhà mình từ bài đầu vào và các buổi đã học, cộng điểm Toán, Văn, rồi tính đúng công thức xét tuyển của từng trường. Đây là gợi ý để cả nhà cùng bàn, chứ không phải lời "phán" đỗ hay trượt, và nó đổi theo từng buổi bạn ấy học ạ.</p></div>
+  <p class="lead">Tab này cậu mở cùng bố mẹ nhé.</p><div class="hung-say">${hungFig('sm')}<p>Cháu chào cô chú ạ! Cháu là Hùng, Hùng trong "Hùng dũng" chứ không phải "Hùng hổ" đâu ạ. Cháu ước điểm Anh của bạn nhà mình từ bài đầu vào và các buổi đã học, cộng điểm Toán, Văn, rồi tính đúng công thức xét tuyển của từng trường. Đây là gợi ý để cả nhà cùng bàn, chứ không phải lời "phán" đỗ hay trượt, và nó đổi theo từng buổi bạn ấy học ạ.</p></div></div>
   <div class="card"><h3>1. Điểm dùng để tính</h3>
    <div class="sgrid">
     <label class="fld">Cậu đang học lớp<select id="sGrade">${[6,7,8,9].map(g=>`<option value="${g}" ${P.grade===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label>

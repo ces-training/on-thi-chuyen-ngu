@@ -194,7 +194,7 @@ function profileCard(o){
   if(P.trend!=null&&P.trend<=-0.08)extra+='<p>3 buổi gần đây khó hơn một chút. Bình thường thôi, bài cũng đang khó dần. Thử đọc lại phần giải thích ở các câu sai trước buổi sau nhé.</p>';
   if(P.habit==='regular')extra+=`<p>Chuỗi học đều: ${P.A.studyDays}/${P.A.span} ngày. Giữ lửa nha!</p>`;
   if(P.habit==='patchy')extra+=`<p>Cậu học ${P.A.studyDays}/${P.A.span} ngày. Mẹo tớ hay dùng: chọn một khung giờ cố định, buổi ngắn 20–35 phút mà đều sẽ "ăn" hơn buổi dài mà ngắt quãng.</p>`;
-  return `<div class="card prof"><p class="eyebrow">Lộ trình đang chỉnh theo cậu</p><h3>${P.pace==='fast'?'Tuyến nhanh':P.pace==='careful'?'Tuyến chậm mà chắc':'Tuyến giữ nhịp'}</h3>${chips}<p>${PACE_TXT[P.pace]}</p>${extra}<p class="small muted">Hồ sơ này cập nhật sau mỗi buổi. Cậu học khác đi thì lộ trình cũng đổi theo.</p></div>`;
+  return `<div class="card prof"><p class="eyebrow">Lộ trình đang chỉnh theo cậu</p><h3>${P.pace==='fast'?'Tuyến nhanh':P.pace==='careful'?'Tuyến chậm mà chắc':'Tuyến giữ nhịp'}</h3>${chips}<div class="hung-say">${hungFig('sm')}<div><p>${PACE_TXT[P.pace]}</p>${extra}</div></div><p class="small muted">Hồ sơ này cập nhật sau mỗi buổi. Cậu học khác đi thì lộ trình cũng đổi theo.</p></div>`;
 }
 function phaseCard(ph,i,R,o,first){
   const G=gramPlan(ph,o.entryH,o.extraCh);const late=ph.e>R.g4;

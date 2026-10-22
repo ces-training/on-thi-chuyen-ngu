@@ -585,6 +585,18 @@ table.copt tr.cur td{font-weight:700;background:var(--agent-tint)}
 .prof .pchips span{background:var(--surface2);border-radius:999px;padding:5px 12px;font-size:.88rem}
 .prof .pchips b{font-family:var(--f-mono);color:var(--agent)}
 .verdict h4{font-size:1rem;margin-top:4px}
+/* ----- Hùng ----- */
+.hung-tag{position:absolute;left:22px;bottom:2px;z-index:2;background:#14303A;color:#fff;font-family:var(--f-hand);font-size:1.05rem;line-height:1;padding:4px 10px 5px;border-radius:6px;transform:rotate(-5deg);box-shadow:2px 3px 0 rgba(10,40,48,.25)}
+.hung-fig{margin:0;display:flex;flex-direction:column;align-items:center;gap:2px;flex:none}
+.hung-fig img{width:96px;height:auto;filter:var(--stk);transform:rotate(-3deg)}
+.hung-fig figcaption{background:#14303A;color:#fff;font-family:var(--f-hand);font-size:1rem;line-height:1;padding:3px 10px 4px;border-radius:6px;transform:rotate(-4deg);margin-top:-14px;position:relative}
+.hung-fig.sm img{width:64px}.hung-fig.sm figcaption{font-size:.9rem;margin-top:-10px}
+.hung-card{display:grid;grid-template-columns:104px minmax(0,1fr);column-gap:16px;align-items:start}
+.hung-card>*:not(.hung-fig){grid-column:2}
+.hung-card>.hung-fig{grid-row:1/span 5}
+.hung-say{display:flex;gap:14px;align-items:flex-start}
+.hung-say>div{min-width:0}
+@media (max-width:480px){.hung-card{grid-template-columns:72px minmax(0,1fr);column-gap:10px}.hung-fig img{width:68px}}
 /* ----- nền khối cắt chéo kiểu tạp chí teen + bố cục rộng, thanh dọc to hơn (22/10/2026) ----- */
 html{background:#4AA3B6 url("../assets/bg/khoi-cat.svg") center/cover no-repeat fixed}
 body{background-color:transparent}
@@ -864,7 +876,10 @@ const MOTTOS=[
  ['boss','Kỳ thi còn xa? Chính vì thế hôm nay chỉ cần 40 phút.'],
  ['dino','Cô không cần cậu hoàn hảo. Cô cần cậu quay lại vào ngày mai.']];
 let MOTTO_I=Math.floor(Date.now()/864e5)%MOTTOS.length;
-function mottoHTML(){return `<img src="${PEEP('sus')}" alt="" class="mt-peep"><div class="mt-body"><p class="mt-t">Thử 14 ngày để xác định khả năng theo lộ trình chuyên ngữ</p></div>`}
+/* Hùng: nhân vật dẫn chuyện của trang (cậu trai mặc hoodie, đeo kính) */
+const HUNG=()=>PEEP('sus');
+function hungFig(sz){return `<figure class="hung-fig ${sz||''}"><img src="${HUNG()}" alt="Hùng"><figcaption>Hùng</figcaption></figure>`}
+function mottoHTML(){return `<img src="${HUNG()}" alt="Hùng" class="mt-peep"><span class="hung-tag">Hùng</span><div class="mt-body"><p class="mt-t">Thử 14 ngày để xác định khả năng theo lộ trình chuyên ngữ</p></div>`}
 function wireMotto(){const b=$('#mtNext');if(b)b.onclick=()=>{MOTTO_I=(MOTTO_I+1)%MOTTOS.length;const box=$('#motto');box.innerHTML=mottoHTML();box.classList.remove('flip');void box.offsetWidth;box.classList.add('flip');wireMotto()}}
 function dashHTML(nd){
   const D=DAYS[nd-1];const qs=questState(nd);const noDiag=!S.diag;let steps=Q_STEPS.filter(s=>qs[s.k]);
@@ -914,7 +929,7 @@ function vStart(){
   M().innerHTML=`<section class="view">
   ${dashHTML(nd)}<div class="dash-after">
   ${loginCard()}
-  <div class="card">
+  <div class="card hung-card">${hungFig()}
     <h3>Tớ là Hùng, còn cậu?</h3>
     <p class="small">Hùng trong "Hùng dũng", chứ không phải Hùng trong "Hùng hổ" nhé. Tớ sẽ đi cùng cậu suốt chặng này. Cho tớ biết tên để tớ gọi cho thân.</p>
     <div class="row"><input type="text" id="nameInput" maxlength="40" placeholder="Ví dụ: Minh Anh" value="${esc(S.name)}" style="max-width:320px"><button class="btn" id="saveName">Lưu tên</button></div>

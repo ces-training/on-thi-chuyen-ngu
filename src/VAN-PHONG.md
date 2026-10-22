@@ -16,6 +16,9 @@ Thỉnh thoảng, tuỳ chỗ, không lặp lại trên cùng một màn hình:
 
 Hiện đang dùng ở: ô "Tớ là Hùng, còn cậu?" ở trang chủ và lời chào cô chú ở tab Chọn trường.
 
+## Hình của Hùng
+Cậu trai mặc hoodie, đeo kính (`assets/peeps/sus.svg`), luôn kèm nhãn tên "Hùng". Trong mã: `hungFig()` và `HUNG()` ở `template.html`. Đang xuất hiện ở ô trên cùng trang chủ, ô giới thiệu tên, khung nhận xét trong hồ sơ học (tab Sau 14 ngày) và lời chào cô chú (tab Chọn trường).
+
 ## Giọng
 - Lời khuyên và nhận xét nói như bạn bè: "Mẹo tớ hay dùng…", "Tớ hay… cậu thử xem", "Tụi mình đi chậm mà chắc". Không giảng giải từ trên xuống.
 - Câu ngắn. Một ý một câu. Đoạn tối đa 3–4 câu.
