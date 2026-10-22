@@ -641,6 +641,42 @@ details.ls-real summary{cursor:pointer}
 .qt .callout svg{width:44px;height:28px;transform:scaleX(-1) rotate(10deg);margin-top:-2px}
 @media (max-width:860px){.dash{grid-template-areas:"head" "motto" "quest" "side" "path" "more"}.motto{padding:12px 54px 12px 96px;min-height:92px}.mt-peep{height:104px}.mt-t{font-size:1.05rem}}
 @media (max-width:420px){.paper{padding:18px 14px}.qt .lbl{font-size:1.12rem}.pdots{gap:8px 5px}.ask{width:124px;height:124px}.ask img{height:118px;left:12px}}
+/* ----- Sau 14 ngày ----- */
+.course h3.sec{font-family:var(--f-display);font-size:1.35rem;margin:6px 0 -6px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:6px 0 14px}
+.kpis div{background:var(--surface2);border-radius:var(--r-ctl);padding:10px 12px;display:flex;flex-direction:column;gap:2px}
+.kpis b{font-family:var(--f-mono);font-size:1.5rem;color:var(--agent);line-height:1.1}
+.kpis span{font-size:.82rem;color:var(--ink-2)}
+.tl{display:grid;grid-template-columns:auto 1fr;gap:6px 10px;align-items:center;margin:4px 0 8px}
+.tl-lab{font-size:.78rem;font-weight:700;color:var(--ink-2);white-space:nowrap}
+.tl-row{position:relative;height:30px;background:var(--surface2);border-radius:8px}
+.tl-seg{position:absolute;top:0;bottom:0;border-radius:7px;border:2px solid var(--ink);display:flex;align-items:center;overflow:hidden;color:#151521}
+.tl-seg span{font-size:.72rem;font-weight:700;padding:0 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tl-seg.s0{background:var(--t-done);border-style:dashed}
+.tl-seg.s4{background:#FFD23F}
+.tl-axis{position:relative;height:18px}
+.tl-tick{position:absolute;top:0;transform:translateX(-50%);font-size:.72rem;color:var(--ink-2);white-space:nowrap}
+.tl-tick::before{content:"";position:absolute;left:50%;top:-62px;height:60px;border-left:1px dashed var(--line-strong)}
+.tl-tick.ex{font-weight:800;color:var(--bad)}
+.tl-tick.ex::before{border-left:2px solid var(--bad)}
+@media (max-width:600px){.tl{grid-template-columns:1fr}.tl-lab{margin-bottom:-4px}.tl-tick::before{display:none}}
+.card.first{border-left:6px solid var(--gold)}
+.ph{padding:0;overflow:hidden}
+.ph>summary,.ph .ph-s{display:flex;align-items:center;gap:12px;padding:14px 16px;list-style:none;font-weight:400}
+.ph>summary::-webkit-details-marker{display:none}
+.ph>summary::after{content:"+";margin-left:auto;font-family:var(--f-mono);font-size:1.3rem;font-weight:700;color:var(--agent)}
+.ph[open]>summary::after{content:"–"}
+.ph .ph-n{flex:none;display:grid;place-items:center;width:52px;height:52px;border-radius:12px;background:var(--pc,var(--surface2));border:2px solid var(--ink);font-family:var(--f-display);font-weight:800;color:#151521}
+.ph.done0 .ph-n{background:var(--t-done);border-style:dashed}
+.ph .ph-t{line-height:1.4}
+.ph .ph-b{padding:0 16px 16px;display:flex;flex-direction:column;gap:8px}
+.ph .ph-b h4{font-size:1rem;margin-top:6px}
+.ph .ph-b ul{margin:0;padding-left:20px;display:grid;gap:4px}
+table.gp td{white-space:normal;vertical-align:top}
+table.gp td:first-child{white-space:nowrap;font-weight:700;width:1%}
+.pill.d14{font-size:.7rem;padding:1px 7px;background:var(--t-done);color:#1D4429}
+table.copt td,table.copt th{white-space:normal}table.copt td:first-child{min-width:7.5em}table.copt .pill{white-space:nowrap;margin-top:3px}
+table.copt tr.cur td{font-weight:700;background:var(--agent-tint)}
 </style>
 
 <header class="top hq">
@@ -656,6 +692,7 @@ details.ls-real summary{cursor:pointer}
       <button role="tab" data-view="days"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>14 ngày</button>
       <button role="tab" data-view="progress"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20v-7M12 20V5M19 20v-10"/></svg>Tiến bộ</button>
       <button role="tab" data-view="plan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 4 6v14l5-2 6 2 5-2V4l-5 2-6-2Zm0 0v14m6-12v14"/></svg>Lộ trình &amp; khả thi</button>
+      <button role="tab" data-view="course"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 21V4m0 1c5-2 9 3 14 0v9c-5 3-9-2-14 0"/></svg>Sau 14 ngày</button>
       <button role="tab" data-view="school"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M10 21v-5h4v5"/></svg>Chọn trường</button>
       <button role="tab" data-view="share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5Z"/></svg>Trao đổi với cô<span class="tb"></span></button>
     </nav>
@@ -720,6 +757,7 @@ const DOOD={
  pen:{c:'y',f:'M30 8l10 10-20 20H10V28z',s:['M29.6 8.6l9.8 9.8-20.6 20.5H9.1v-9.7Z','M25 13.2l9.8 9.8','M9.6 32.5l5.9 5.9']},
  check:{c:'t',f:'M10 26a13 13 0 1 0 26 0 13 13 0 1 0-26 0',s:['M24 9.8c8.3.1 14.6 6.6 14.4 14.6-.2 8.1-6.8 14.3-14.8 14.1-8-.2-14.2-6.8-14-14.8.3-7.9 6.6-14 14.4-13.9Z','M16.5 24.5l5.5 5.5 11-12']},
  hourglass:{c:'y',f:'M14 8h20c0 9-10 12-10 16s10 7 10 16H14c0-9 10-12 10-16S14 17 14 8z',s:['M13.5 8.5c7-.3 14-.3 21 0M13.5 39.5c7 .3 14 .3 21 0','M15.5 8.7c.4 7.3 8.5 10.4 8.5 15.3s-8.1 8-8.5 15.3M32.5 8.7c-.4 7.3-8.5 10.4-8.5 15.3s8.1 8 8.5 15.3']},
+ flag:{c:'y',f:'M13 9c7-3 12 4 23 0v15c-11 4-16-3-23 0z',s:['M12.5 42.5V6.5','M12.8 8.8c7.4-3.2 12.6 3.6 23.6-.4.3 5 .3 10 0 15-11 4-16.2-3-23.6.2','M8.5 42.3c3-.3 6.5-.3 9.5 0']},
  camera:{c:'t',f:'M8 16h32v22H8z',s:['M8.2 38c-.4-7-.4-14 0-21h7.3l3-4.5h11l3 4.5h7.3c.4 7 .4 14 0 21-10.9.4-21.7.4-31.6 0Z','M17 26.5a7 7 0 1 0 14 0 7 7 0 1 0-14 0']}
 };
 function doodle(n,c='',sz=36){const d=DOOD[n];if(!d)return '';
@@ -729,7 +767,7 @@ const DAY_DOOD=['backpack','headphones','leaf','laptop','heart','suitcase','loop
 const em=(n,c='',sz=36)=>EM_DOOD[n]?doodle(EM_DOOD[n],c,sz):`<img src="${IMG}${n}.webp" alt="" class="${c}" width="${sz}" height="${sz}" loading="lazy" decoding="async">`;
 const dayIcon=(d,c,sz)=>doodle(DAY_DOOD[d-1]||'paper',c,sz);
 /* biểu tượng thanh điều hướng: thay bằng nét vẽ tay */
-document.querySelectorAll('#tabs button').forEach(b=>{const m={start:'home',diag:'target',days:'calendar',progress:'chart',plan:'map',school:'school',share:'chat'}[b.dataset.view];const sv=b.querySelector('svg');if(m&&sv)sv.outerHTML=doodle(m,'nv',26)});
+document.querySelectorAll('#tabs button').forEach(b=>{const m={start:'home',diag:'target',days:'calendar',progress:'chart',plan:'map',course:'flag',school:'school',share:'chat'}[b.dataset.view];const sv=b.querySelector('svg');if(m&&sv)sv.outerHTML=doodle(m,'nv',26)});
 DAYS.forEach(d=>(d.web_check||[]).forEach(it=>{ITEM[it.id]=Object.assign({day:d.day},it)}));
 
 /* ---------- levels & hours model ----------
@@ -757,10 +795,14 @@ function levelFromBands(a,b,c){
   if(c<7) return 'B1+';
   return 'B2';
 }
-const MILESTONES=[
-  {date:new Date(2027,4,31),label:'Hết lớp 7',target:'B1',h:375},
-  {date:new Date(2028,4,31),label:'Hết lớp 8',target:'B2',h:550},
-  {date:new Date(2029,5,1),label:'Thi vào 10',target:'C1',h:750}];
+/* mốc theo lớp em đang học (khai ở tab Sau 14 ngày hoặc Chọn trường) */
+const GRADE_TARGET={6:{target:'A2+',h:280},7:{target:'B1',h:375},8:{target:'B2',h:550}};
+function gradeNow(){const g=+((S.school&&S.school.grade)||S.grade);return [6,7,8,9].includes(g)?g:7}
+function setGrade(g){S.school=Object.assign(blankSchool(),S.school||{});S.school.grade=g;S.grade=g}
+function classF(){return 0.8} // 1 giờ học trên lớp ở CES ≈ 0,8 giờ học chuẩn
+function MS(){const g=gradeNow(),ex=examDateFor(g),out=[];
+  for(let k=g;k<=8;k++){const d=new Date(ex.getFullYear()-(9-k),4,31);if(d>Date.now())out.push({date:d,label:'Hết lớp '+k,target:GRADE_TARGET[k].target,h:GRADE_TARGET[k].h})}
+  out.push({date:ex,label:'Thi vào 10',target:'C1',h:750});return out}
 const STUDY_FACTOR=0.85; // nghỉ lễ, ôn thi học kỳ, ốm…
 const CONV=0.6; // 1 giờ tự học/học thêm ≈ 0,6 giờ học chuẩn có hướng dẫn (ước tính thận trọng)
 function weeksUntil(d){return Math.max(0,(d-Date.now())/(7*864e5))}
@@ -826,7 +868,7 @@ function dayStatus(n){const d=S.days[n];if(!d)return'none';if(d.web&&d.paper)ret
 
 /* ---------- views ---------- */
 let VIEW='start', CUR_DAY=null;
-const views={start:vStart,diag:vDiag,days:vDays,progress:vProgress,plan:vPlan,school:vSchool,share:()=>cloudOn()?vShareCloud():vShare()};
+const views={start:vStart,diag:vDiag,days:vDays,progress:vProgress,plan:vPlan,course:vCourse,school:vSchool,share:()=>cloudOn()?vShareCloud():vShare()};
 function go(v,opt){VIEW=v;M().dataset.v=v;if(opt&&opt.day)CUR_DAY=opt.day;document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.view===v?'true':'false'));views[v]();renderHello();try{window.scrollTo({top:0})}catch(e){}}
 document.getElementById('tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(b)go(b.dataset.view)});
 function renderHello(){$('#hello').innerHTML=(S.name?`Chào <strong>${esc(S.name)}</strong>`:'')+(typeof syncLabel==='function'?syncLabel():'')}
@@ -884,7 +926,7 @@ function dashHTML(nd){
   const tiles=steps.map((s,i)=>{const st=qs[s.k];const now=first===s;
     const tag=st.done?'<span class="st">XONG</span>':now?'<span class="st go">LÀM TIẾP</span><span class="callout" aria-hidden="true">đây nè!<svg viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 8c14-2 30 4 38 22"/><path d="M36 28l8 3 2-9"/></svg></span>':st.part?`<span class="st go">${st.txt}</span>`:'';
     return `<button type="button" class="qt${now?' now':''}${st.done?' done':''}" data-card="${s.card}" style="--c:${s.c};--r:${rot[i]}deg"><img src="${PEEP(s.peep)}" alt="" loading="lazy" decoding="async">${tag}<span class="lbl">${i+1} · ${s.label}${st.txt&&!st.done?` <small>${st.txt}</small>`:''}</span></button>`}).join('');
-  const sk=streakDays(),stars=starsTotal(),left=Math.max(0,Math.ceil((MILESTONES[2].date-Date.now())/864e5));
+  const sk=streakDays(),stars=starsTotal(),left=Math.max(0,Math.ceil((examDateFor(gradeNow())-Date.now())/864e5));
   const L=S.diag&&LEVELS.find(l=>l.k===S.diag.level),t=curTrack();
   const doneDays=DAYS.filter(x=>dayStatus(x.day)==='done').length;
   const dots=DAYS.map(x=>{const st=dayStatus(x.day);return `<button type="button" class="pd ${st} ${x.type==='review'?'rev':''} ${x.day===nd?'cur':''}" data-d="${x.day}" aria-label="Buổi ${x.day}: ${esc(x.theme_vi)}${st==='done'?', đã xong':st==='part'?', đang làm dở':''}${x.day===nd?', buổi tiếp theo':''}">${x.day}</button>`}).join('');
@@ -1257,37 +1299,42 @@ function efficiency(A){
   let f=0.55+0.45*acc+0.15*ret+0.1*comp;f=Math.max(0.7,Math.min(1.25,f));
   return {f:Math.round(f*100)/100,from:true,acc,ret,comp};
 }
-function project(entryH,hpw,eff,date){return entryH+hpw*eff*CONV*weeksUntil(date)*STUDY_FACTOR}
-function requiredMin(entryH,targetH,eff,date,dpw){const w=weeksUntil(date)*STUDY_FACTOR;if(w<=0)return Infinity;const hpw=(targetH-entryH)/(eff*CONV*w);return Math.max(0,hpw*60/dpw)}
+function project(entryH,hpw,eff,date){return entryH+(hpw*eff*CONV+(S.plan.cls||0)*classF())*weeksUntil(date)*STUDY_FACTOR}
+function requiredMin(entryH,targetH,eff,date,dpw,cls){const w=weeksUntil(date)*STUDY_FACTOR;if(w<=0)return Infinity;const hpw=((targetH-entryH)/w-(cls==null?(S.plan.cls||0):cls)*classF())/(eff*CONV);return Math.max(0,hpw*60/dpw)}
 function chartSVG(entryH,hpw,eff){
-  const W=720,H=300,pl=58,pr=16,pt=18,pb=40;const t0=Date.now(),t1=MILESTONES[2].date.getTime()+30*864e5;
+  const MSL=MS();const W=720,H=300,pl=58,pr=16,pt=18,pb=40;const t0=Date.now(),t1=MSL[MSL.length-1].date.getTime()+30*864e5;
   const X=t=>pl+(t-t0)/(t1-t0)*(W-pl-pr);const hMax=850,hMin=0;const Y=h=>pt+(1-(Math.min(h,hMax)-hMin)/(hMax-hMin))*(H-pt-pb);
   const bands=[['Dưới A2',0,190],['A2',190,375],['B1',375,550],['B2',550,750],['C1',750,850]];
   let g='';
   bands.forEach((b,i)=>{g+=`<rect x="${pl}" y="${Y(b[2])}" width="${W-pl-pr}" height="${Y(b[1])-Y(b[2])}" fill="${i%2?'var(--surface2)':'var(--surface)'}"/><text x="${pl-8}" y="${(Y(b[1])+Y(b[2]))/2+4}" text-anchor="end" font-size="12" font-weight="600" fill="var(--muted)">${b[0]}</text>`});
-  MILESTONES.forEach(m=>{const x=X(m.date.getTime());g+=`<line x1="${x}" x2="${x}" y1="${pt}" y2="${H-pb}" stroke="var(--line)" stroke-dasharray="4 4"/><text x="${x}" y="${H-pb+16}" text-anchor="middle" font-size="11.5" fill="var(--muted)">${m.label}</text><text x="${x}" y="${H-pb+30}" text-anchor="middle" font-size="11" fill="var(--muted)">${String(m.date.getMonth()+1).padStart(2,'0')}/${m.date.getFullYear()}</text><circle cx="${x}" cy="${Y(m.h)}" r="6" fill="none" stroke="var(--ink)" stroke-width="2"/><text x="${x-9}" y="${Y(m.h)-9}" text-anchor="end" font-size="11" font-weight="700" fill="var(--ink)">cần ${m.target}</text>`});
-  let d='';const N=60;for(let i=0;i<=N;i++){const t=t0+(t1-t0)*i/N;const h=entryH+hpw*eff*CONV*((t-t0)/(7*864e5))*STUDY_FACTOR;d+=(i?'L':'M')+X(t).toFixed(1)+' '+Y(h).toFixed(1)}
+  {const g4=new Date(MSL[MSL.length-1].date.getFullYear(),0,1).getTime();if(g4>t0){const x=X(g4);g+=`<rect x="${x}" y="${pt}" width="${X(MSL[MSL.length-1].date.getTime())-x}" height="${H-pt-pb}" fill="var(--gold-tint)" opacity=".7"/><text x="${x+4}" y="${pt+14}" font-size="11" font-weight="700" fill="var(--gold-ink)">luyện đề</text>`}}
+  MSL.forEach(m=>{const x=X(m.date.getTime());g+=`<line x1="${x}" x2="${x}" y1="${pt}" y2="${H-pb}" stroke="var(--line)" stroke-dasharray="4 4"/><text x="${x}" y="${H-pb+16}" text-anchor="middle" font-size="11.5" fill="var(--muted)">${m.label}</text><text x="${x}" y="${H-pb+30}" text-anchor="middle" font-size="11" fill="var(--muted)">${String(m.date.getMonth()+1).padStart(2,'0')}/${m.date.getFullYear()}</text><circle cx="${x}" cy="${Y(m.h)}" r="6" fill="none" stroke="var(--ink)" stroke-width="2"/><text x="${x-9}" y="${Y(m.h)-9}" text-anchor="end" font-size="11" font-weight="700" fill="var(--ink)">cần ${m.target}</text>`});
+  let d='';const N=60;for(let i=0;i<=N;i++){const t=t0+(t1-t0)*i/N;const h=entryH+(hpw*eff*CONV+(S.plan.cls||0)*classF())*((t-t0)/(7*864e5))*STUDY_FACTOR;d+=(i?'L':'M')+X(t).toFixed(1)+' '+Y(h).toFixed(1)}
   g+=`<path d="${d}" fill="none" stroke="var(--accent)" stroke-width="3.5" stroke-linecap="round"/><circle cx="${X(t0)}" cy="${Y(entryH)}" r="5" fill="var(--accent)"/><text x="${X(t0)+8}" y="${Y(entryH)-8}" font-size="11.5" font-weight="700" fill="var(--accent)">Bây giờ</text>`;
-  MILESTONES.forEach(m=>{const h=project(entryH,hpw,eff,m.date);const ok=h>=m.h;g+=`<circle cx="${X(m.date.getTime())}" cy="${Y(h)}" r="5.5" fill="${ok?'var(--good)':'var(--bad)'}"/>`});
+  MSL.forEach(m=>{const h=project(entryH,hpw,eff,m.date);const ok=h>=m.h;g+=`<circle cx="${X(m.date.getTime())}" cy="${Y(h)}" r="5.5" fill="${ok?'var(--good)':'var(--bad)'}"/>`});
   return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Dự báo trình độ theo thời gian">${g}</svg>`;
 }
 function verdict(entryH,eff,A){
   const dpw=S.plan.dpw, min=S.plan.min;
-  const req=requiredMin(entryH,750,eff.f,MILESTONES[2].date,dpw);
-  const req8=requiredMin(entryH,550,eff.f,MILESTONES[1].date,dpw);
+  const MSL=MS(),G=gradeNow(),lo=G<=7?40:60,hi=G<=7?60:90,cls=S.plan.cls||0;
+  const req=requiredMin(entryH,750,eff.f,MSL[MSL.length-1].date,dpw);
+  const mB2=MSL.find(m=>m.target==='B2');
+  const req8=mB2?requiredMin(entryH,550,eff.f,mB2.date,dpw):0;
   const need=Math.ceil(Math.max(req,req8)/5)*5;
+  const goalTxt=mB2?'đạt B2 cuối lớp 8 và C1 trước kỳ thi':'đạt C1 trước kỳ thi';
+  const clsTxt=cls?` cộng ${String(cls).replace('.',',')} giờ học trên lớp mỗi tuần`:'';
   const notes=[];
   if(A.done.length>=7){
     const acc=pct(A.web);notes.push(`Trong ${A.done.length} buổi đã học, em đúng ${Math.round(acc*100)}% câu kiểm tra web${acc>=0.75?': nền tiếp thu tốt.':acc>=0.55?': ổn, cần ôn kỹ hơn phần sai.':': còn hổng nhiều, nên học chậm và chắc hơn.'}`);
     if(A.retry[1]>=3)notes.push(`Câu từng sai làm lại đúng ${Math.round(100*pct(A.retry))}%: ${pct(A.retry)>=0.6?'trí nhớ dài hạn đang hoạt động tốt.':'cần ôn đều hơn, đừng dồn bài.'}`);
     notes.push(`Em học ${A.studyDays} ngày trong ${A.span} ngày: ${A.studyDays/Math.max(1,A.span)>=0.8?'giữ nhịp rất tốt.':'nhịp học còn ngắt quãng, đây là yếu tố quan trọng nhất cần sửa.'}`);
   }
-  let cls,head,msg;
-  if(need<=45){cls='good';head='Khả thi';msg=`Với điểm xuất phát hiện tại, em cần khoảng ${need} phút/ngày, ${dpw} ngày/tuần để đạt B2 cuối lớp 8 và C1 trước kỳ thi. Mức này vừa sức nếu em giữ đều.`}
-  else if(need<=80){cls='warn';head='Khả thi nếu tăng và giữ nhịp học';msg=`Em cần khoảng ${need} phút/ngày, ${dpw} ngày/tuần trong suốt lớp 7–9. Đây là mức nhiều học sinh đỗ chuyên Anh đã làm, nhưng đòi hỏi kỷ luật và lịch học cố định.`}
-  else{cls='bad';head='Thử thách lớn với lịch học hiện tại';msg=`Để kịp mốc thi, em cần hơn ${need} phút/ngày. Con đường vẫn mở, nhưng nên đặt mốc đánh giá lại sau 3 tháng: nếu lên được một bậc, tiếp tục theo chuyên Anh; nếu chưa, cân nhắc giữ tiếng Anh mạnh để thi lớp chọn hoặc chuyên khác.`}
-  if(min<need&&cls!=='bad')notes.push(`Lịch em đang chọn (${min} phút × ${dpw} ngày) thấp hơn mức cần (${need} phút). Kéo thanh trượt lên để xem đường dự báo thay đổi.`);
-  return {cls,head,msg,notes,need};
+  let vc,head,msg;
+  if(need<=lo){vc='good';head='Khả thi';msg=`Với điểm xuất phát hiện tại, em cần khoảng ${need} phút tự học/ngày, ${dpw} ngày/tuần${clsTxt} để ${goalTxt}. Mức này vừa sức nếu em giữ đều.`}
+  else if(need<=hi){vc='warn';head='Khả thi nếu tăng và giữ nhịp học';msg=`Em cần khoảng ${need} phút tự học/ngày, ${dpw} ngày/tuần${clsTxt} từ nay đến kỳ thi. Đây là mức nhiều học sinh đỗ chuyên Anh đã làm, nhưng đòi hỏi kỷ luật và lịch học cố định.`}
+  else{vc='bad';head='Thử thách lớn với lịch học hiện tại';msg=`Để kịp mốc thi, em cần hơn ${need} phút/ngày. Con đường vẫn mở, nhưng nên đặt mốc đánh giá lại sau 3 tháng: nếu lên được một bậc, tiếp tục theo chuyên Anh; nếu chưa, cân nhắc giữ tiếng Anh mạnh để thi lớp chọn hoặc chuyên khác.`}
+  if(min<need&&vc!=='bad')notes.push(`Lịch em đang chọn (${min} phút × ${dpw} ngày) thấp hơn mức cần (${need} phút). Kéo thanh trượt lên để xem đường dự báo thay đổi.`);
+  return {cls:vc,head,msg,notes,need};
 }
 function vPlan(){
   const A=agg();const eff=efficiency(A);
@@ -1295,15 +1342,17 @@ function vPlan(){
   const entryH=entry?entry.hours:220;
   M().innerHTML=`<section class="view">
   <div><p class="eyebrow">Chỉ tính môn tiếng Anh</p><h2>Lộ trình đến kỳ thi vào 10</h2><p class="lead">Đề chuyên Anh ở Hà Nội dùng từ vựng chủ yếu ở mức B2, câu phân loại ở mức C1. Lộ trình các trung tâm gợi ý: B1 hết lớp 7, B2 hết lớp 8, C1 khi thi.</p></div>
+  <div class="card"><div class="sgrid"><label class="fld">Em đang học lớp<select id="pGrade">${[6,7,8,9].map(g=>`<option value="${g}" ${gradeNow()===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label><label class="fld">Học trên lớp ở CES<select id="pCls">${[[0,'Không (chỉ tự học)'],[1.5,'1,5 giờ/tuần'],[3,'3 giờ/tuần'],[4.5,'4,5 giờ/tuần']].map(([v,n])=>`<option value="${v}" ${(S.plan.cls||0)===v?'selected':''}>${n}</option>`).join('')}</select></label></div>
+  <div class="row"><button class="btn ghost" id="toCourse">Sau 14 ngày em học gì? Xem chương trình theo giai đoạn</button></div></div>
   ${entry?'':'<div class="notice">Em chưa làm bài đầu vào, nên biểu đồ đang giả định điểm xuất phát là A2. Làm bài đầu vào để có dự báo đúng với em.</div>'}
   <div class="card"><h3>Em học bao nhiêu thì được thế nào?</h3>
    <div class="sim">
-     <div class="slider"><label for="minR">Phút học tiếng Anh mỗi ngày (ngoài giờ ở trường, gồm cả học thêm) <output id="minO">${S.plan.min}</output></label><input type="range" id="minR" min="15" max="120" step="5" value="${S.plan.min}"></div>
+     <div class="slider"><label for="minR">Phút tự học tiếng Anh mỗi ngày (ở nhà, ngoài giờ ở trường) <output id="minO">${S.plan.min}</output></label><input type="range" id="minR" min="15" max="120" step="5" value="${S.plan.min}"></div>
      <div class="slider"><label for="dpwR">Số ngày mỗi tuần <output id="dpwO">${S.plan.dpw}</output></label><input type="range" id="dpwR" min="1" max="7" step="1" value="${S.plan.dpw}"></div>
    </div>
    <div class="chart" id="chart"></div>
    <div class="tbl-wrap"><table><thead><tr><th>Mốc</th><th>Cần đạt</th><th>Dự báo của em</th><th></th></tr></thead><tbody id="mTable"></tbody></table></div>
-   <p class="small muted">Cách tính: số giờ học có hướng dẫn tích lũy theo khung Cambridge (A2 khoảng 190 giờ, B1 khoảng 375, B2 khoảng 550, C1 khoảng 750), mỗi giờ tự học hoặc học thêm tính bằng 0,6 giờ học chuẩn, trừ 15% thời gian nghỉ lễ và thi học kỳ${eff.from?`, nhân hệ số hiệu quả ${eff.f} rút từ kết quả 2 tuần của em`:''}. Đây là ước tính để định hướng, không phải cam kết.</p>
+   <p class="small muted">Cách tính: số giờ học có hướng dẫn tích lũy theo khung Cambridge (A2 khoảng 190 giờ, B1 khoảng 375, B2 khoảng 550, C1 khoảng 750), mỗi giờ tự học tính bằng 0,6 giờ học chuẩn, mỗi giờ học trên lớp ở CES tính bằng 0,8 giờ, trừ 15% thời gian nghỉ lễ và thi học kỳ${eff.from?`, nhân hệ số hiệu quả ${eff.f} rút từ kết quả 2 tuần của em`:''}. Đây là ước tính để định hướng, không phải cam kết.</p>
   </div>
   <div id="verdictSlot"></div>
   <div class="card"><h3>Sau 2 tuần này, em sẽ có</h3><ul class="cando">
@@ -1318,13 +1367,16 @@ function vPlan(){
   const draw=()=>{
     const hpw=S.plan.min*S.plan.dpw/60;
     $('#chart').innerHTML=chartSVG(entryH,hpw,eff.f);
-    $('#mTable').innerHTML=MILESTONES.map(m=>{const h=project(entryH,hpw,eff.f,m.date);const L=levelOfHours(h);const ok=h>=m.h;return `<tr><td>${m.label} (${String(m.date.getMonth()+1).padStart(2,'0')}/${m.date.getFullYear()})</td><td>${m.target}</td><td>${L.name}</td><td><span class="pill ${ok?'good':'bad'}">${ok?'Kịp':'Chưa kịp'}</span></td></tr>`}).join('');
+    $('#mTable').innerHTML=MS().map(m=>{const h=project(entryH,hpw,eff.f,m.date);const L=levelOfHours(h);const ok=h>=m.h;return `<tr><td>${m.label} (${String(m.date.getMonth()+1).padStart(2,'0')}/${m.date.getFullYear()})</td><td>${m.target}</td><td>${L.name}</td><td><span class="pill ${ok?'good':'bad'}">${ok?'Kịp':'Chưa kịp'}</span></td></tr>`}).join('');
     const V=verdict(entryH,eff,A);
-    $('#verdictSlot').innerHTML=`<div class="verdict ${V.cls}"><p class="eyebrow">Đánh giá dành cho em và bố mẹ</p><h3>${esc(V.head)}</h3><p>${esc(V.msg)}</p>${V.notes.length?'<ul>'+V.notes.map(n=>'<li>'+esc(n)+'</li>').join('')+'</ul>':''}<p class="small">${entry?`Điểm xuất phát: ${LEVELS.find(l=>l.k===entry.level).name} (bài ${entry===S.final?'sau 2 tuần':'đầu vào'}).`:''} ${A.done.length<7?'Đánh giá sẽ chính xác hơn khi em xong ít nhất 7 buổi.':''}</p></div>`;
+    $('#verdictSlot').innerHTML=`<div class="verdict ${V.cls}"><p class="eyebrow">Đánh giá dành cho em và bố mẹ</p><h3>${esc(V.head)}</h3><p>${esc(V.msg)}</p>${V.notes.length?'<ul>'+V.notes.map(n=>'<li>'+esc(n)+'</li>').join('')+'</ul>':''}<p class="small">Tab Sau 14 ngày tính theo trường em nhắm và dành riêng 5 tháng cuối cho luyện đề, nên số phút ở đó có thể cao hơn ở đây.</p><p class="small">${entry?`Điểm xuất phát: ${LEVELS.find(l=>l.k===entry.level).name} (bài ${entry===S.final?'sau 2 tuần':'đầu vào'}).`:''} ${A.done.length<7?'Đánh giá sẽ chính xác hơn khi em xong ít nhất 7 buổi.':''}</p></div>`;
   };
   draw();
   $('#minR').oninput=e=>{S.plan.min=+e.target.value;$('#minO').textContent=S.plan.min;draw();save()};
   $('#dpwR').oninput=e=>{S.plan.dpw=+e.target.value;$('#dpwO').textContent=S.plan.dpw;draw();save()};
+  $('#pGrade').onchange=e=>{setGrade(+e.target.value);save();draw()};
+  $('#pCls').onchange=e=>{S.plan.cls=+e.target.value;save();draw()};
+  $('#toCourse').onclick=()=>go('course');
 }
 
 /* ===== Game kiểu Wordwall: nối cặp, lật thẻ, xếp chữ, đố nhanh, phân nhóm, xếp câu, đúng hay sai =====
@@ -1860,7 +1912,7 @@ function englishEstimate(mode,grade){
   const h0=entry?entry.hours:220;
   const date=examDateFor(grade);const weeks=Math.max(0,(date-Date.now())/(7*864e5));
   const hpw=S.plan.min*S.plan.dpw/60;
-  const h=mode==='exam'?h0+hpw*eff.f*CONV*weeks*STUDY_FACTOR:h0;
+  const h=mode==='exam'?h0+(hpw*eff.f*CONV+(S.plan.cls||0)*classF())*weeks*STUDY_FACTOR:h0;
   // exam-format practice nudges the estimate a little (±0.3)
   let adj=0;const ex=A.skills&&A.skills.exam, all=A.web;
   if(ex&&ex[1]>=6&&all[1]>=12){adj=Math.max(-0.3,Math.min(0.3,(ex[0]/ex[1]-all[0]/all[1])))}
@@ -1952,7 +2004,7 @@ function vSchool(){
     const I=schoolInputs();const E=I.E;
     const fld=(id,label,val,set,hint)=>`<label class="fld">${label}<input type="number" id="${id}" min="0" max="10" step="0.25" inputmode="decimal" value="${set?val:''}" placeholder="${fmtN(val)}"><span class="hint ${set?'':'sug'}">${hint}</span></label>`;
     $('#sScores').innerHTML=fld('sToan','Điểm Toán (đề chung, thang 10)',I.toan,I.toanSet,I.toanSet?'Điểm bố mẹ nhập':'Đang dùng mốc gợi ý 8 — bố mẹ sửa theo điểm thi thử hoặc học bạ của con')+fld('sVan','Điểm Văn (đề chung, thang 10)',I.van,I.vanSet,I.vanSet?'Điểm bố mẹ nhập':'Đang dùng mốc gợi ý 8 — bố mẹ sửa theo điểm thi thử hoặc học bạ của con');
-    $('#sNote').innerHTML=`Điểm Anh tự tính (${P.mode==='exam'?'dự báo lúc thi tháng 6/'+E.date.getFullYear()+', với lịch '+S.plan.min+' phút × '+S.plan.dpw+' ngày/tuần':'trình độ hiện tại'}): trình độ khoảng <b>${levelOfHours(E.h).name}</b> · Anh chuyên đề Sở khoảng <b>${fmtN(r1(I.achSo))}</b> · Anh chuyên đề Chuyên Ngoại ngữ khoảng <b>${fmtN(r1(I.achCnn))}</b>. Sai số khoảng ±${fmtN(r1(E.sd*1.5))} điểm.`;
+    $('#sNote').innerHTML=`Điểm Anh tự tính (${P.mode==='exam'?'dự báo lúc thi tháng 6/'+E.date.getFullYear()+', với lịch '+S.plan.min+' phút × '+S.plan.dpw+' ngày/tuần'+(S.plan.cls?' cộng '+String(S.plan.cls).replace('.',',')+' giờ học trên lớp':''):'trình độ hiện tại'}): trình độ khoảng <b>${levelOfHours(E.h).name}</b> · Anh chuyên đề Sở khoảng <b>${fmtN(r1(I.achSo))}</b> · Anh chuyên đề Chuyên Ngoại ngữ khoảng <b>${fmtN(r1(I.achCnn))}</b>. Sai số khoảng ±${fmtN(r1(E.sd*1.5))} điểm.`;
     const eng=(id,label,key,auto)=>`<label class="fld">${label}<input type="number" id="${id}" min="0" max="10" step="0.25" value="${P[key]!=null&&P[key]!==''?P[key]:''}" placeholder="${fmtN(r1(auto))}"></label>`;
     if(!$('#sEng').dataset.on){$('#sEng').innerHTML=eng('sAchSo','Anh chuyên (đề Sở)','achSo',E.achSo)+eng('sAcSo','Anh chung (đề Sở)','acSo',Math.min(10,E.achSo+2.5))+eng('sAchCnn','Anh chuyên (đề Chuyên Ngoại ngữ)','achCnn',E.achCnn)+eng('sAcCnn','Anh chung (đề Chuyên Ngoại ngữ)','acCnn',Math.min(9.5,E.achCnn));$('#sEng').dataset.on='1';
       [['sAchSo','achSo'],['sAcSo','acSo'],['sAchCnn','achCnn'],['sAcCnn','acCnn']].forEach(([id,k])=>{$('#'+id).oninput=e=>{P[k]=e.target.value===''?null:+e.target.value;save();drawRows()}})}
@@ -1981,6 +2033,243 @@ function vSchool(){
   $('#sGrade').onchange=e=>{P.grade=+e.target.value;save();$('#sEng').dataset.on='';draw()};
   $('#sMode').onchange=e=>{P.mode=e.target.value;save();$('#sEng').dataset.on='';draw()};
   document.querySelectorAll('.langs input').forEach(c=>c.onchange=()=>{P.langs=['Anh',...[...document.querySelectorAll('.langs input:checked')].map(x=>x.value).filter(v=>v!=='Anh')];save();drawRows()});
+}
+
+/* ----- Sau 14 ngày: toàn bộ chương trình Chuyên Anh lớp 6–9 ở CES, xếp theo thời gian còn lại của từng em -----
+   Chèn vào template.html sau school.js bởi build.py.
+   Dùng: S, save, $, esc, M, agg, efficiency, LEVELS, ENTRY_H, levelOfHours, CONV, STUDY_FACTOR, DAYS, dayStatus,
+         examDateFor, blankSchool, SCORE_MAP, gradeNow, setGrade, classF, go.
+   Nội dung lấy từ "Khung chương trình Chuyên Anh lớp 6–9" (bản 22/10/2026); sửa khung thì sửa các mảng dưới đây. */
+
+/* 41 chủ điểm ngữ pháp theo mốc. d14 = đã gặp trong 14 ngày (buổi số mấy) */
+const GRAM=[
+ ['A2','Hiện tại đơn, hiện tại tiếp diễn, động từ trạng thái',1],
+ ['A2','Quá khứ đơn, quá khứ tiếp diễn; when/while',2],
+ ['A2','Hiện tại hoàn thành (for, since, already, yet, ever)',3],
+ ['A2','Tương lai: will, be going to, hiện tại tiếp diễn',4],
+ ['A2','So sánh hơn, so sánh nhất, as … as',5],
+ ['A2','Danh từ đếm được/không đếm được; some, any, much, many; mạo từ cơ bản',9],
+ ['A2','Động từ khuyết thiếu: can, could, must, have to, should',6],
+ ['A2','Giới từ thời gian, nơi chốn',0],
+ ['A2','Câu điều kiện loại 0 và 1',10],
+ ['A2','Mệnh đề quan hệ cơ bản (who, which, that)',11],
+ ['B1','Hiện tại hoàn thành và quá khứ đơn; hiện tại hoàn thành tiếp diễn',3],
+ ['B1','Quá khứ hoàn thành; used to, would, be/get used to',2],
+ ['B1','Câu điều kiện loại 2; wish với hiện tại',10],
+ ['B1','Bị động ở các thì cơ bản và với động từ khuyết thiếu',8],
+ ['B1','Câu tường thuật: câu kể, câu hỏi, mệnh lệnh',12],
+ ['B1','Mệnh đề quan hệ xác định, không xác định; whose, where, when, why',11],
+ ['B1','Danh động từ và động từ nguyên mẫu; stop, remember, try, regret',13],
+ ['B1','Động từ khuyết thiếu chỉ suy đoán: must, might, can\'t',0],
+ ['B1','So … that, such … that, too, enough; the more … the more',5],
+ ['B1','Từ nối: although, despite, because of, unless, in case',0],
+ ['B1','Câu hỏi đuôi',0],
+ ['B2','Câu điều kiện loại 3 và hỗn hợp; but for, otherwise, provided that',0],
+ ['B2','Wish, if only, would rather, it\'s (high) time',0],
+ ['B2','Bị động nâng cao: It is said that …; have/get sth done',0],
+ ['B2','Động từ tường thuật: accuse of, deny, suggest, apologise for, warn',0],
+ ['B2','Rút gọn mệnh đề quan hệ và mệnh đề trạng ngữ',0],
+ ['B2','Đảo ngữ: never, rarely, not until, hardly … when, no sooner … than',0],
+ ['B2','Câu chẻ: It is … that, What … is',0],
+ ['B2','Giả định cách: suggest/insist that + V nguyên mẫu',0],
+ ['B2','Tương lai hoàn thành, tương lai tiếp diễn',0],
+ ['B2','Động từ khuyết thiếu + have V3: should have, must have, needn\'t have',0],
+ ['B2','Mệnh đề danh ngữ (what, whether, the fact that)',0],
+ ['B2','Mạo từ, lượng từ nâng cao (either, neither, the number of)',0],
+ ['B2','Động từ + giới từ, tính từ + giới từ',0],
+ ['C1','Đảo ngữ câu điều kiện: Should …, Were … to, Had …',0],
+ ['C1','Mệnh đề nhượng bộ: however / no matter how; Tính từ + as + S + be',0],
+ ['C1','Đảo ngữ với so, such, only by/after, under no circumstances, little',0],
+ ['C1','Danh từ hoá (chuyển mệnh đề sang cụm danh từ)',0],
+ ['C1','Cụm giới từ phức: in the event of, on the verge of, with a view to',0],
+ ['C1','Lược bỏ và thay thế (so, not, do so, one)',0],
+ ['C1','Viết lại câu bằng thành ngữ và cụm cố định',0]
+];
+const CLUSTERS=['Giáo dục và tự học','Công nghệ và mạng xã hội','Môi trường','Sức khoẻ và thể thao','Tuổi teen và trưởng thành','Gia đình và các mối quan hệ','Cộng đồng và xã hội','Nghề nghiệp và tương lai','Văn hoá, du lịch, lễ hội','Truyền thông và đọc','Khoa học và phát minh','Cuộc sống hiện đại'];
+/* Ba giai đoạn nâng trình độ. from/to: giờ học chuẩn (thang Cambridge). Giai đoạn 1 bắt đầu từ 0 để nhận cả học sinh dưới A2. */
+const PHASES=[
+ {k:1,name:'Nền tảng',band:'đến B1',from:0,to:375,gate:'B1',c:'#9ED6E2',
+  gram:['A2','B1'],
+  vocab:'khoảng 2.600 từ, 120 cụm động từ, 150 collocation, 30 thành ngữ, 50 cặp từ hay nhầm',
+  tasks:['Hoàn thành câu: phân biệt hai thì, collocation cơ bản','Cấu tạo từ trong câu đơn, đổi 1–2 lần (-tion, -ment, -ness, -able, -ive, -ous; dis-, im-, in-)','Điền từ có gợi ý, đoạn 150–200 từ; điền từ tự do: mạo từ, giới từ, đại từ','Đọc hiểu 300–450 từ, đoán nghĩa từ; nối tiêu đề với đoạn','Nghe 2–3 phút, tốc độ thường','Viết lại câu: bị động, tường thuật, điều kiện loại 1–2, wish','Hội thoại: đề nghị, từ chối lịch sự; phát âm, trọng âm từ 2–3 âm tiết'],
+  writing:'Đoạn văn nêu ý kiến: câu chủ đề, 2–3 lý do, câu kết. 100–150 từ trong 20 phút (bắt đầu từ đoạn 50–70 từ nếu em dưới A2).',
+  how:'Video ngữ pháp cho mỗi chủ điểm mới (nhóm dưới A2 có thêm video giảng tiếng Việt). Game thẻ nhớ, Săn từ 60 giây, Xưởng ghép từ, Ba rổ âm. In: tập bài của chặng, sổ lỗi sai, sổ từ theo họ từ, bảng tra cứu động từ bất quy tắc.'},
+ {k:2,name:'Bắc cầu',band:'B1 → B2',from:375,to:550,gate:'B2',c:'#FFE27A',
+  gram:['B2'],
+  vocab:'khoảng 3.800 từ, 250 cụm động từ, 400 collocation, 120 thành ngữ, 100 cặp từ hay nhầm',
+  tasks:['Hoàn thành câu: cụm động từ, thành ngữ, phương án gần nghĩa','Cấu tạo từ trong đoạn văn 150–200 từ, đổi 2 lần (care → careless → carelessness)','Điền từ đoạn 200–250 từ; điền từ tự do thêm từ nối, trợ động từ, đại từ quan hệ','Đọc hiểu 500–750 từ: suy luận, từ thay thế; nối thông tin với đoạn, tóm tắt dùng từ trong bài','Nghe 3–4 phút, hai người nói, có bẫy','Viết lại câu: đảo ngữ, câu chẻ, điều kiện loại 3, rút gọn mệnh đề','Đồng nghĩa, trái nghĩa bằng cụm động từ, collocation; trọng âm từ 3–4 âm tiết'],
+  writing:'Bài luận 4–5 đoạn (đồng ý/không đồng ý, ưu–nhược, vấn đề–giải pháp), 200–250 từ trong 40 phút. Mỗi bài chấm hai vòng: máy chấm và gợi ý sửa, em viết lại, cô chấm bản viết lại.',
+  how:'Video cách làm từng dạng bài (Cambridge B2 First) và cách viết bài luận. Game Nối cặp tính giờ, Xếp gạch cho viết lại câu (chỉ lần đầu gặp cấu trúc). In: giấy viết luận có ô đếm từ, bài kiểm tra cuối chặng có phiếu trả lời.'},
+ {k:3,name:'Chuyên sâu',band:'B2 → đích',from:550,to:9999,gate:'đích',c:'#BFE6EE',
+  gram:['C1'],
+  vocab:'đến C1: khoảng 5.000 từ, 400 cụm động từ, 700 collocation, 250 thành ngữ, 150 cặp từ hay nhầm',
+  tasks:['Hoàn thành câu: thành ngữ ít gặp, sắc thái từ, collocation hẹp','Cấu tạo từ đổi 3 lần, nghĩa phủ định (unforgettable), cặp dễ nhầm (economic/economical)','Điền từ đoạn 250–300 từ; điền từ tự do có cụm cố định, lược bỏ, đảo ngữ','Đọc 750–900 từ: thái độ tác giả, diễn đạt lại ý; tóm tắt bằng từ diễn đạt lại (dạng mới của đề Sở 2024)','Nghe 4–5 phút, nhiều giọng, có tiếng ồn nền như đề Sở','Viết lại câu với từ cho sẵn, dùng thành ngữ, danh từ hoá','Hội thoại có câu nói gián tiếp, thành ngữ; trọng âm từ học thuật 4+ âm tiết'],
+  writing:'Bài luận có phản biện (nêu và bác ý kiến ngược), ví dụ cụ thể, từ vựng chủ đề. Khoảng 250 từ trong 35 phút, chấm hai vòng như giai đoạn trước.',
+  how:'Video nạp ý và từ ở buổi mở mỗi cụm chủ đề (BBC 6 Minute English, TED-Ed). Game Tăng tốc cho cụm động từ, thành ngữ, từ hay nhầm. Ưu tiên các cụm chủ đề đã ra bài luận Sở và Chuyên Ngoại ngữ.'}
+];
+const EXAM_PHASE={name:'Luyện đề',
+  tasks:['Mỗi tuần 1 đề chuyên Anh Sở trọn bộ (120 phút, có nghe), làm đúng giờ trên giấy, nghe bằng file trên web','Xen kẽ đề Chuyên Ngoại ngữ (90 phút, 60 câu + bài luận) và Chuyên Sư phạm (tự luận, viết đoạn)','Đề chung của Sở 40 câu: bài lấy trọn điểm','Buổi chữa đề: câu sai vào sổ lỗi sai và quay lại theo vòng 1–3–6 buổi','Tuần cuối 2–3 đề'],
+  speed:'Tốc độ cần đạt: 30–40 giây một câu trắc nghiệm ngữ pháp–từ vựng, 12–15 phút một bài đọc dài, 35 phút bài luận 250 từ.',
+  how:'Không dùng game. Đề in có phiếu trả lời giống thật; chụp gửi máy chấm, cô chấm bài luận.'};
+/* Đích theo trường: điểm Anh chuyên cần để có khoảng 80% khả năng đỗ với Toán 8, Văn 8 (khung mục 2), đổi ra giờ học bằng đúng thang của tab Chọn trường */
+const GOALS=[
+ {k:'ams',name:'Amsterdam',score:8.7,kind:'so'},
+ {k:'cva',name:'Chu Văn An',score:7.4,kind:'so'},
+ {k:'nh',name:'Nguyễn Huệ',score:7.1,kind:'so'},
+ {k:'cnn',name:'Chuyên Ngoại ngữ',score:6.7,kind:'cnn'},
+ {k:'st',name:'Sơn Tây',score:5.4,kind:'so'}];
+function hoursFromScore(s,kind){const p=SCORE_MAP[kind];if(s<=p[0][1])return p[0][0]*s/p[0][1];
+  for(let i=1;i<p.length;i++){if(s<=p[i][1]){const a=p[i-1],b=p[i];return a[0]+(b[0]-a[0])*(s-a[1])/(b[1]-a[1])}}return p[p.length-1][0]}
+function goalH(k){const g=GOALS.find(x=>x.k===k)||GOALS[1];return Math.round(hoursFromScore(g.score,g.kind))}
+function lvName(h){const L=levelOfHours(h);const nx=LEVELS[LEVELS.indexOf(L)+1];if(L.k==='preA2')return 'Dưới A2';if(L.k==='C1')return h>=790?'C1+':'C1';const f=(h-L.h)/(nx.h-L.h);return f>0.6?L.name+'–'+nx.name:f>=0.25?L.name+' vững':L.name}
+const CLS_OPTS=[[0,'Chỉ tự học ở nhà với web'],[1.5,'Lớp CES 1,5 giờ/tuần'],[3,'Lớp CES 3 giờ/tuần'],[4.5,'Lớp CES 4,5 giờ/tuần']];
+const fmtD=d=>String(d.getMonth()+1).padStart(2,'0')+'/'+d.getFullYear();
+const WK=7*864e5;
+/* ngưỡng phút tự học mỗi buổi theo lớp (tài liệu Lộ trình cá nhân hoá) và giới hạn gói buổi */
+function zone(min,grade){const lo=grade<=7?40:60,hi=grade<=7?60:90;return min<=lo?'good':min<=hi?'warn':'bad'}
+function packCap(grade){return grade<=7?50:70}
+
+function courseCalc(o){
+  const now=Date.now();
+  const left14=DAYS.filter(d=>dayStatus(d.day)!=='done').length;
+  const start=new Date(now+left14/(o.dpw*STUDY_FACTOR)*WK);
+  const exam=examDateFor(o.grade);const g4=new Date(exam.getFullYear(),0,1);
+  const gain=(o.min*o.dpw/60*CONV*o.eff+o.cls*classF())*STUDY_FACTOR; // giờ học chuẩn mỗi tuần lịch
+  const chW=14/(o.dpw*STUDY_FACTOR); // số tuần lịch cho một chặng 14 buổi
+  const perCh=gain*chW;
+  const phases=[];let t=start.getTime(),h=o.entryH;
+  for(const P of PHASES){const a=Math.max(P.from,h),b=Math.min(P.to,o.targetH);if(b<=a)continue;
+    const need=b-a,w=gain>0?need/gain:Infinity,nCh=gain>0?Math.max(1,Math.ceil(need/perCh)):Infinity;
+    phases.push({P,need,nCh,s:new Date(t),e:new Date(t+w*WK),fromH:a,toH:b});t+=w*WK;h=b}
+  const end=new Date(t);
+  const wTo=d=>Math.max(0,(d-start)/WK);
+  const reqMin=d=>{const w=wTo(d)*STUDY_FACTOR;if(w<=0)return Infinity;const hpw=(o.targetH-o.entryH)/w-o.cls*classF();return Math.max(0,hpw/(CONV*o.eff)*60/o.dpw)};
+  const before=wTo(g4)>=12; // còn ít nhất 3 tháng trước khi luyện đề; nếu không (lớp 9) thì tính đến ngày thi
+  const req=before?reqMin(g4):reqMin(exam);
+  const hExam=o.entryH+gain*wTo(exam);
+  const g4Ch=Math.max(0,Math.floor((exam-Math.max(g4,start))/WK*o.dpw*STUDY_FACTOR/14));
+  const status=o.targetH<=o.entryH?'done':end<=g4?'good':end<=exam?'warn':'bad';
+  return {start,exam,g4,gain,chW,perCh,phases,end,req,before,hExam,g4Ch,status,reqMin,wBefore:wTo(g4)};
+}
+function courseInputs(){
+  S.course=Object.assign({goal:'cva',lv:null},S.course||{});
+  if(S.plan.cls==null)S.plan.cls=0;
+  const A=agg(),eff=efficiency(A);
+  const tested=S.final&&S.final.hours>(S.diag?S.diag.hours:0)?S.final:S.diag;
+  const lv=S.course.lv||(tested&&tested.level)||null;
+  const entryH=lv?(ENTRY_H[lv]!=null?ENTRY_H[lv]:(LEVELS.find(l=>l.k===lv)||{h:220}).h):220;
+  return {grade:gradeNow(),entryH,lv,tested,targetH:goalH(S.course.goal),min:S.plan.min,dpw:S.plan.dpw,cls:S.plan.cls,eff:eff.f,effFrom:eff.from};
+}
+/* chủ điểm ngữ pháp của một giai đoạn, rải đều vào các chặng */
+function gramPlan(ph,entryH){
+  let marks=ph.P.gram.slice();if(ph.P.k===1&&entryH>=190)marks=['B1'];
+  const list=GRAM.map((g,i)=>({n:i+1,m:g[0],t:g[1],d14:g[2]})).filter(g=>marks.includes(g.m));
+  const nCh=Math.min(ph.nCh,999),rows={};
+  list.forEach((g,i)=>{const c=Math.floor(i*nCh/list.length)+1;(rows[c]=rows[c]||[]).push(g)});
+  const out=[];let gapFrom=null;
+  for(let c=1;c<=nCh;c++){if(rows[c]){if(gapFrom){out.push({a:gapFrom,b:c-1});gapFrom=null}out.push({a:c,b:c,items:rows[c]})}else if(!gapFrom)gapFrom=c}
+  if(gapFrom)out.push({a:gapFrom,b:nCh});
+  return {out,reviewA2:ph.P.k===1&&entryH>=190};
+}
+function timelineHTML(R,o){
+  const t0=Date.now(),t1=R.exam.getTime()+20*864e5,X=t=>Math.max(0,Math.min(100,(t-t0)/(t1-t0)*100));
+  const seg=(a,b,cls,label,style='')=>{const l=X(a),w=Math.max(.6,X(b)-l);return `<div class="tl-seg ${cls}" style="left:${l}%;width:${w}%;${style}" title="${esc(label)}"><span>${w>9?esc(label):''}</span></div>`};
+  let row1=seg(t0,R.start.getTime(),'s0','14 ngày');
+  R.phases.forEach(p=>{row1+=seg(p.s.getTime(),Math.min(p.e.getTime(),t1),'sp',`GĐ${p.P.k} ${p.P.name}`,`background:${p.P.c}`)});
+  const row2=seg(Math.max(R.g4.getTime(),t0),R.exam.getTime(),'s4','GĐ4 Luyện đề');
+  let ticks='';const y0=new Date(t0).getFullYear();
+  for(let y=y0;y<=R.exam.getFullYear();y++){const d=new Date(y,8,5).getTime();if(d>t0&&d<t1){const g=o.grade+(y-(new Date(t0).getMonth()>=7?y0+1:y0))+1;ticks+=`<span class="tl-tick" style="left:${X(d)}%">${g<=9?'Lớp '+g:''}</span>`}}
+  ticks+=`<span class="tl-tick ex" style="left:${X(R.exam.getTime())}%">Thi</span>`;
+  return `<div class="tl" role="img" aria-label="Dòng thời gian các giai đoạn từ nay đến kỳ thi ${fmtD(R.exam)}">
+    <div class="tl-lab">Nâng trình độ</div><div class="tl-row">${row1}</div>
+    <div class="tl-lab">Luyện đề</div><div class="tl-row">${row2}</div>
+    <div class="tl-lab"></div><div class="tl-axis">${ticks}</div></div>`;
+}
+function phaseCard(ph,i,R,o,first){
+  const G=gramPlan(ph,o.entryH);const late=ph.e>R.g4;
+  const rows=G.out.map(r=>r.items?`<tr><td>Chặng ${r.a}</td><td>${r.items.map(g=>`${g.n}. ${esc(g.t)}${g.d14?' <span class="pill d14">đã gặp ở buổi '+g.d14+'</span>':''}`).join('<br>')}</td></tr>`:`<tr><td>Chặng ${r.a}${r.b>r.a?'–'+r.b:''}</td><td class="muted">Luyện sâu các chủ điểm đã học bằng viết lại câu, ôn xoắn ốc, mở rộng từ theo 12 cụm chủ đề</td></tr>`).join('');
+  const toName=ph.toH>=o.targetH?lvName(o.targetH):ph.P.gate;
+  return `<details class="card ph" ${first?'open':''} style="--pc:${ph.P.c}">
+   <summary><span class="ph-n">GĐ${ph.P.k}</span><span class="ph-t"><b>${esc(ph.P.name)}</b> · ${esc(ph.fromH===o.entryH&&o.lv?(LEVELS.find(l=>l.k===o.lv)||{name:lvName(ph.fromH)}).name:lvName(ph.fromH))} → ${esc(toName)}<br><span class="small muted">${fmtD(ph.s)} – ${fmtD(ph.e)} · khoảng ${isFinite(ph.nCh)?ph.nCh:'?'} chặng</span></span>${late?'<span class="pill warn">chồng lên luyện đề</span>':''}</summary>
+   <div class="ph-b">
+    <p>Mục tiêu: lên <b>${esc(toName)}</b> và qua bài kiểm tra cửa ra mới sang giai đoạn sau. Chưa qua thì em học thêm một chặng ôn nhắm vào phần còn yếu.</p>
+    <h4>Ngữ pháp mới, rải theo chặng</h4>
+    ${G.reviewA2?'<p class="small muted">10 chủ điểm mốc A2 không học lại thành bài mới; chúng quay lại trong các buổi ôn và bài viết lại câu.</p>':''}
+    <div class="tbl-wrap"><table class="gp"><tbody>${rows}</tbody></table></div>
+    <h4>Từ vựng tích luỹ đến hết giai đoạn</h4><p>${esc(ph.P.vocab)}. Từ được học theo họ từ và theo cụm; mỗi buổi học là một trong 12 cụm chủ đề, nên mỗi chặng em đi hết một vòng 12 cụm với từ khó dần.</p>
+    <h4>Dạng bài thi ở mức này</h4><ul>${ph.P.tasks.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
+    <h4>Viết</h4><p>${esc(ph.P.writing)}</p>
+    <h4>Học bằng gì</h4><p>${esc(ph.P.how)}</p>
+   </div></details>`;
+}
+function vCourse(){
+  const o0=courseInputs();
+  const lvOpts=[['','Theo bài kiểm tra'+(o0.tested?' ('+LEVELS.find(l=>l.k===o0.tested.level).name+')':' (chưa làm, tạm tính A2)')]].concat(LEVELS.filter(l=>l.k!=='C1').map(l=>[l.k,l.name]));
+  M().innerHTML=`<section class="view course">
+  <div><p class="eyebrow">Sau 14 ngày thì học gì?</p><h2>Chương trình Chuyên Anh của em ở CES, từ hôm nay đến kỳ thi vào 10</h2>
+  <p class="lead">14 ngày này là chặng chẩn đoán. Sau đó em đi tiếp các giai đoạn dưới đây. Mỗi giai đoạn gồm nhiều chặng 14 buổi giống hệt bộ em đang học: 12 buổi học và 2 buổi ôn, làm bài trên giấy, kiểm tra trên web.</p></div>
+  <div class="card"><h3>Em khai báo</h3>
+   <div class="sgrid">
+    <label class="fld">Em đang học lớp<select id="cGrade">${[6,7,8,9].map(g=>`<option value="${g}" ${o0.grade===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label>
+    <label class="fld">Trình độ bây giờ<select id="cLv">${lvOpts.map(([k,n])=>`<option value="${k}" ${(S.course.lv||'')===k?'selected':''}>${esc(n)}</option>`).join('')}</select></label>
+    <label class="fld">Trường em nhắm<select id="cGoal">${GOALS.map(g=>`<option value="${g.k}" ${S.course.goal===g.k?'selected':''}>${esc(g.name)} (cần khoảng ${esc(lvName(goalH(g.k)))})</option>`).join('')}</select></label>
+    <label class="fld">Học trên lớp ở CES<select id="cCls">${CLS_OPTS.map(([v,n])=>`<option value="${v}" ${o0.cls===v?'selected':''}>${esc(n)}</option>`).join('')}</select></label>
+   </div>
+   <div class="sim">
+    <div class="slider"><label for="cMin">Phút tự học mỗi buổi (giấy + web) <output id="cMinO">${S.plan.min}</output></label><input type="range" id="cMin" min="15" max="120" step="5" value="${S.plan.min}"></div>
+    <div class="slider"><label for="cDpw">Số buổi mỗi tuần <output id="cDpwO">${S.plan.dpw}</output></label><input type="range" id="cDpw" min="3" max="7" step="1" value="${S.plan.dpw}"></div>
+   </div>
+   <p class="small muted">Hai thanh trượt này dùng chung với tab Lộ trình &amp; khả thi.</p>
+  </div>
+  <div id="cOut"></div>
+  </section>`;
+  const draw=()=>{
+    const o=courseInputs();const R=courseCalc(o);
+    const nAll=R.phases.reduce((t,p)=>t+(isFinite(p.nCh)?p.nCh:0),0);
+    const weeksLeft=Math.round((R.exam-Date.now())/WK);
+    const reqR=Math.ceil(R.req/5)*5,z=zone(reqR,o.grade),cap=packCap(o.grade);
+    const head={done:'Em đã ở mức của trường này',good:'Kịp trước khi luyện đề',warn:'Kịp, nhưng phải học song song với luyện đề',bad:'Chưa kịp với lịch hiện tại'}[R.status];
+    const vcls={done:'good',good:'good',warn:'warn',bad:'bad'}[R.status];
+    let msg;
+    if(R.status==='done')msg=`Trình độ em đã chạm mức cần cho trường này. Em có thể chọn trường cao hơn ở ô "Trường em nhắm", hoặc giữ lịch nhẹ và vào luyện đề sớm.`;
+    else if(R.status==='good')msg=`Với ${o.min} phút × ${o.dpw} buổi/tuần${o.cls?` và ${String(o.cls).replace('.',',')} giờ học trên lớp`:''}, em xong phần nâng trình độ khoảng ${fmtD(R.end)}, trước khi bắt đầu luyện đề (${fmtD(R.g4)}).`;
+    else if(R.status==='warn')msg=`Phần nâng trình độ kéo dài đến khoảng ${fmtD(R.end)}, tức là sang giai đoạn luyện đề. Trong các tháng cuối, mỗi tuần em vừa làm đề vừa học tiếp, nên rất căng.`;
+    else msg=`Với lịch này, đến ngày thi em đạt khoảng ${esc(lvName(R.hExam))}, chưa tới mức ${esc(lvName(o.targetH))} mà trường cần.`;
+    const reqTxt=R.status==='done'?'':isFinite(reqR)?`Để xong phần nâng trình độ ${R.before?'trước khi luyện đề':'trước ngày thi'}, em cần khoảng <b>${reqR} phút tự học mỗi buổi</b>, ${o.dpw} buổi/tuần${o.cls?', cộng giờ học trên lớp':''}. ${z==='good'?'Mức này vừa sức với tuổi của em.':z==='warn'?'Mức này nặng nhưng làm được nếu giữ lịch cố định.':'Mức này quá nặng với tuổi của em.'}${reqR>cap?` Gói buổi dài nhất cho lớp ${o.grade} là ${cap} phút, nên cách hợp lý là thêm giờ học trên lớp hoặc chọn trường có mức cần thấp hơn.`:''}`:'';
+    const opts=CLS_OPTS.map(([c,n])=>{const r=courseCalc(Object.assign({},o,{cls:c}));const m=Math.ceil(r.req/5)*5;const zz=zone(m,o.grade);return `<tr${c===o.cls?' class="cur"':''}><td>${esc(n)}</td><td>${r.status==='done'?'–':isFinite(m)?m+' phút':'không kịp'}<br><span class="pill ${r.status==='done'?'good':zz}">${r.status==='done'?'đã đạt':zz==='good'?'vừa sức':zz==='warn'?'nặng':'quá sức'}</span></td><td>${esc(lvName(r.hExam))}</td></tr>`}).join('');
+    const nd=DAYS.filter(d=>dayStatus(d.day)==='done').length;
+    const first=R.phases[0];
+    const firstBox=first?`<div class="card first"><p class="eyebrow">Chặng đầu tiên sau 14 ngày</p><h3>GĐ${first.P.k} · ${esc(first.P.name)}, bắt đầu khoảng ${R.start.toLocaleDateString('vi-VN')}</h3>
+      <p>${(()=>{const g=gramPlan(first,o.entryH).out.find(r=>r.items);return g?'Ngữ pháp mới: '+g.items.map(x=>esc(x.t)).join('; ')+'.':''})()} Mười hai buổi học đi qua 12 cụm chủ đề: ${CLUSTERS.map(esc).join(', ')}. Buổi 7 và 14 là buổi ôn, buổi 14 là bài kiểm tra cuối chặng.</p>
+      <p class="small muted">Một chặng kéo dài khoảng ${(Math.round(R.chW*2)/2).toLocaleString('vi-VN')} tuần với ${o.dpw} buổi/tuần (đã trừ ngày nghỉ, thi học kỳ).</p></div>`:'';
+    $('#cOut').innerHTML=`
+    <div class="card"><h3>Thời gian của em</h3>
+     <div class="kpis"><div><b>${weeksLeft}</b><span>tuần đến kỳ thi (${R.exam.toLocaleDateString('vi-VN')})</span></div><div><b>${nd}/14</b><span>buổi chẩn đoán đã xong</span></div><div><b>${Math.round(R.wBefore)}</b><span>tuần học trước khi luyện đề (${fmtD(R.g4)})</span></div><div><b>${nAll}+${R.g4Ch}</b><span>chặng nâng trình độ + chặng luyện đề</span></div></div>
+     ${timelineHTML(R,o)}
+     <p class="small muted">Dòng trên: các giai đoạn nâng trình độ theo tốc độ dự kiến của em. Dòng dưới: giai đoạn luyện đề, cố định từ tháng 1 năm lớp 9 đến ngày thi. Mỗi giai đoạn chỉ kết thúc khi em qua bài kiểm tra cửa ra, nên ngày tháng sẽ được tính lại sau mỗi chặng.</p></div>
+    <div class="verdict ${vcls}"><p class="eyebrow">Kết luận cho em và bố mẹ</p><h3>${esc(head)}</h3><p>${msg}</p>${reqTxt?`<p>${reqTxt}</p>`:''}
+     ${R.status!=='done'?`<div class="tbl-wrap"><table class="copt"><thead><tr><th>Cách học</th><th>Phút tự học cần mỗi buổi</th><th>Trình độ lúc thi nếu giữ số phút hiện tại</th></tr></thead><tbody>${opts}</tbody></table></div>`:''}
+     ${o.grade===9?'<p class="small"><b>Lớp 9:</b> thời gian trước luyện đề rất ngắn, nên CES chuyển em sang chương trình rút gọn: luyện đề từ tháng 1, phần ngữ pháp và từ vựng còn thiếu học xen trong các buổi chữa đề. Đích thực tế nhất thường là Chuyên Ngoại ngữ hoặc Nguyễn Huệ.</p>':''}
+     <p class="small">${o.tested?'':'Em chưa làm bài kiểm tra đầu vào nên trang tạm tính em ở A2. '}${o.effFrom?`Tốc độ học của em (hệ số ${String(o.eff).replace('.',',')}) lấy từ các buổi đã làm. `:'Tốc độ học đang tạm tính ở mức trung bình; sau 7 buổi trang sẽ dùng số đo của em. '}Đây là ước tính để định hướng, không phải cam kết.</p></div>
+    ${firstBox}
+    <h3 class="sec">Các giai đoạn em sẽ học</h3>
+    <div class="card ph done0"><div class="ph-s"><span class="ph-n">GĐ0</span><span class="ph-t"><b>Chẩn đoán 14 ngày</b> · em đang ở đây (${nd}/14 buổi)<br><span class="small muted">Đo trình độ, khả năng nhớ, thời gian học và dạng bài em thích. Hết 14 ngày cô gửi hồ sơ và lộ trình đề xuất cho bố mẹ.</span></span></div></div>
+    ${R.phases.map((p,i)=>phaseCard(p,i,R,o,i===0)).join('')||'<div class="card"><p>Em đã đạt mức cần cho trường này, nên không cần giai đoạn nâng trình độ. Em có thể chọn trường cao hơn, hoặc vào luyện đề sớm.</p></div>'}
+    <details class="card ph" style="--pc:#FFD23F"><summary><span class="ph-n">GĐ4</span><span class="ph-t"><b>Luyện đề</b> · ${fmtD(R.g4>R.start?R.g4:R.start)} – ${fmtD(R.exam)}<br><span class="small muted">khoảng ${R.g4Ch} chặng, chung cho mọi học sinh, dù đang ở mức nào</span></span></summary>
+     <div class="ph-b"><ul>${EXAM_PHASE.tasks.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><p>${esc(EXAM_PHASE.speed)}</p><p>${esc(EXAM_PHASE.how)}</p></div></details>
+    <details class="card"><summary>Trang tính thế nào</summary><div class="small">
+     <p>Giờ học chuẩn theo khung Cambridge: A2 khoảng 190 giờ, B1 375, B2 550, C1 750. Mức cần của mỗi trường lấy từ điểm Anh chuyên cần để có khoảng 80% khả năng đỗ khi Toán 8, Văn 8, đổi ra giờ học bằng cùng thang với tab Chọn trường.</p>
+     <p>Mỗi giờ tự học tính bằng 0,6 giờ học chuẩn (nhân hệ số tốc độ của em), mỗi giờ học trên lớp ở CES tính bằng 0,8 giờ; trừ 15% thời gian cho nghỉ lễ, thi học kỳ, ốm.</p>
+     <p>Kết luận xanh khi xong phần nâng trình độ trước tháng 1 năm lớp 9, vàng khi phải học tiếp trong lúc luyện đề, đỏ khi đến ngày thi vẫn chưa tới mức cần. Ngưỡng phút tự học mỗi buổi: lớp 6–7 vừa sức đến 40 phút, nặng đến 60; lớp 8–9 vừa sức đến 60, nặng đến 90.</p>
+     <p>Học sinh vào ở giai đoạn nào thì bắt đầu từ giai đoạn đó, không học lại giai đoạn trước. Em dưới A2 học Giai đoạn 1 từ các chủ điểm mốc A2.</p></div></details>`;
+  };
+  draw();
+  $('#cGrade').onchange=e=>{setGrade(+e.target.value);save();draw()};
+  $('#cLv').onchange=e=>{S.course.lv=e.target.value||null;save();draw()};
+  $('#cGoal').onchange=e=>{S.course.goal=e.target.value;save();draw()};
+  $('#cCls').onchange=e=>{S.plan.cls=+e.target.value;save();draw()};
+  $('#cMin').oninput=e=>{S.plan.min=+e.target.value;$('#cMinO').textContent=S.plan.min;save();draw()};
+  $('#cDpw').oninput=e=>{S.plan.dpw=+e.target.value;$('#cDpwO').textContent=S.plan.dpw;save();draw()};
 }
 
 
@@ -2192,7 +2481,7 @@ function summary(){
   const A=agg();const eff=efficiency(A);const entry=S.diag;
   const days={};for(let i=1;i<=14;i++){const r=S.days[i];if(r){const g=Object.values(r.games||{}),x=Object.values(r.exam||{});days[i]=[r.web?r.web.correct:null,r.web?r.web.total:null,r.paper?r.paper.correct:null,r.paper?r.paper.total:null,r.web?r.web.at:(r.paper?r.paper.at:(g.length?Math.max(...g.map(y=>y.at)):null)),g.reduce((t,y)=>t+(y.stars||0),0),g.length,x.length?x.reduce((t,y)=>t+y.correct,0):null,x.length?x.reduce((t,y)=>t+y.total,0):null,...(()=>{const l=Object.values(r.listen||{});return l.length?[l.reduce((t,y)=>t+y.correct,0),l.reduce((t,y)=>t+y.total,0)]:[null,null]})()]}}
   const wrong=Object.entries(S.queue).map(([id,q])=>[id,q.wrong||1]);
-  return {v:1,n:S.name,d:S.diag&&{t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands},f:S.final&&{t:S.final.total,o:S.final.of,l:S.final.level,b:S.final.bands},days,sk:A.skills,rt:A.retry,mq:A.mastered,q:wrong,p:S.plan,e:eff.f,sd:A.studyDays,sp:A.span,tr:curTrack(),at:Date.now()};
+  return {v:1,n:S.name,d:S.diag&&{t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands},f:S.final&&{t:S.final.total,o:S.final.of,l:S.final.level,b:S.final.bands},days,sk:A.skills,rt:A.retry,mq:A.mastered,q:wrong,p:S.plan,g:gradeNow(),e:eff.f,sd:A.studyDays,sp:A.span,tr:curTrack(),at:Date.now()};
 }
 function vShare(){
   M().innerHTML=`<section class="view">
@@ -2216,7 +2505,7 @@ function reportHTML(o){
   const sk=Object.entries(o.sk||{}).map(([k,v])=>bar(SKILL_VI[k]||k,v[0],v[1])).join('');
   const weak=(o.q||[]).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([id,w])=>{const it=ITEM[id];return it?`<li>Buổi ${it.day} · ${esc(it.q)} <span class="muted">(sai ${w} lần, đáp án: ${esc(answerText(it))})</span></li>`:''}).join('');
   const entryH=o.d?ENTRY_H[o.d.l]:null;
-  let need='';if(entryH){const r=requiredMin(entryH,750,o.e||1,MILESTONES[2].date,(o.p&&o.p.dpw)||6);need=`Ước tính cần khoảng ${Math.ceil(r/5)*5} phút/ngày × ${(o.p&&o.p.dpw)||6} ngày/tuần để đạt C1 trước kỳ thi.`}
+  let need='';if(entryH){const cl=(o.p&&o.p.cls)||0;const r=requiredMin(entryH,750,o.e||1,examDateFor(o.g||7),(o.p&&o.p.dpw)||6,cl);need=`Lớp ${o.g||7}. Ước tính cần khoảng ${Math.ceil(r/5)*5} phút tự học/ngày × ${(o.p&&o.p.dpw)||6} ngày/tuần${cl?' cộng '+String(cl).replace('.',',')+' giờ học trên lớp':''} để đạt C1 trước kỳ thi.`}
   return `<div class="card" style="margin-top:12px"><h3>${esc(o.n||'Học sinh')}</h3>
    <p>Đầu vào: <b>${o.d?o.d.t+'/'+o.d.o+' · '+lv(o.d.l):'chưa làm'}</b> · Sau 2 tuần: <b>${o.f?o.f.t+'/'+o.f.o+' · '+lv(o.f.l):'chưa làm'}</b></p>
    <p class="small">Học ${o.sd||0} ngày trong ${o.sp||0} ngày · Câu từng sai làm lại đúng ${o.rt&&o.rt[1]?Math.round(100*o.rt[0]/o.rt[1])+'%':'—'} · Đã nhớ chắc ${o.mq||0} câu · Hệ số hiệu quả ${o.e||1} · Lịch đang chọn ${o.p?o.p.min+' phút × '+o.p.dpw+' ngày':'—'}</p>

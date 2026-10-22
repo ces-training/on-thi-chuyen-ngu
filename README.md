@@ -29,6 +29,7 @@ Khi `src/chuyen-anh-14-ngay/config.json` chưa có `apiUrl`, trang học sinh v�
 
 - Câu hỏi, đáp án, bài đọc của từng buổi nằm trong `src/chuyen-anh-14-ngay/content/dayNN.json`; bài kiểm tra đầu vào và cuối kỳ nằm trong `tests.json`.
 - Giao diện và cách tính lộ trình nằm trong `src/chuyen-anh-14-ngay/template.html`.
+- Tab "Sau 14 ngày" (chương trình lớp 6–9 theo giai đoạn, xếp theo lớp và thời gian còn lại đến kỳ thi) nằm trong `src/chuyen-anh-14-ngay/course.js`. Danh sách 41 chủ điểm ngữ pháp, dạng bài, chỉ tiêu từ vựng của từng giai đoạn ở đầu tệp này, lấy theo bản khung chương trình 22/10/2026; khi cô duyệt sửa khung thì sửa các mảng `GRAM`, `PHASES`, `EXAM_PHASE`, `GOALS`.
 - Sau khi sửa, chạy `python3 src/chuyen-anh-14-ngay/build.py`. Lệnh này dựng lại `chuyen-anh-14-ngay/index.html`, `co/index.html` và `apps-script/Keys.gs`. Sau đó commit và push.
 - GitHub Pages tự cập nhật trang sau mỗi lần push lên nhánh `main` (thường mất 1–2 phút).
 - Màu, phông chữ và nút bấm dùng chung cho mọi trang nằm trong `src/brand/brand.css`. `build.py` chép tệp này vào trang học sinh, trang của cô, và vào khối giữa `/*BRAND*/ … /*/BRAND*/` của trang chủ và trang tuyển sinh.

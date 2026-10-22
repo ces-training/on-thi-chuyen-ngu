@@ -28,7 +28,7 @@ function englishEstimate(mode,grade){
   const h0=entry?entry.hours:220;
   const date=examDateFor(grade);const weeks=Math.max(0,(date-Date.now())/(7*864e5));
   const hpw=S.plan.min*S.plan.dpw/60;
-  const h=mode==='exam'?h0+hpw*eff.f*CONV*weeks*STUDY_FACTOR:h0;
+  const h=mode==='exam'?h0+(hpw*eff.f*CONV+(S.plan.cls||0)*classF())*weeks*STUDY_FACTOR:h0;
   // exam-format practice nudges the estimate a little (±0.3)
   let adj=0;const ex=A.skills&&A.skills.exam, all=A.web;
   if(ex&&ex[1]>=6&&all[1]>=12){adj=Math.max(-0.3,Math.min(0.3,(ex[0]/ex[1]-all[0]/all[1])))}
@@ -120,7 +120,7 @@ function vSchool(){
     const I=schoolInputs();const E=I.E;
     const fld=(id,label,val,set,hint)=>`<label class="fld">${label}<input type="number" id="${id}" min="0" max="10" step="0.25" inputmode="decimal" value="${set?val:''}" placeholder="${fmtN(val)}"><span class="hint ${set?'':'sug'}">${hint}</span></label>`;
     $('#sScores').innerHTML=fld('sToan','Điểm Toán (đề chung, thang 10)',I.toan,I.toanSet,I.toanSet?'Điểm bố mẹ nhập':'Đang dùng mốc gợi ý 8 — bố mẹ sửa theo điểm thi thử hoặc học bạ của con')+fld('sVan','Điểm Văn (đề chung, thang 10)',I.van,I.vanSet,I.vanSet?'Điểm bố mẹ nhập':'Đang dùng mốc gợi ý 8 — bố mẹ sửa theo điểm thi thử hoặc học bạ của con');
-    $('#sNote').innerHTML=`Điểm Anh tự tính (${P.mode==='exam'?'dự báo lúc thi tháng 6/'+E.date.getFullYear()+', với lịch '+S.plan.min+' phút × '+S.plan.dpw+' ngày/tuần':'trình độ hiện tại'}): trình độ khoảng <b>${levelOfHours(E.h).name}</b> · Anh chuyên đề Sở khoảng <b>${fmtN(r1(I.achSo))}</b> · Anh chuyên đề Chuyên Ngoại ngữ khoảng <b>${fmtN(r1(I.achCnn))}</b>. Sai số khoảng ±${fmtN(r1(E.sd*1.5))} điểm.`;
+    $('#sNote').innerHTML=`Điểm Anh tự tính (${P.mode==='exam'?'dự báo lúc thi tháng 6/'+E.date.getFullYear()+', với lịch '+S.plan.min+' phút × '+S.plan.dpw+' ngày/tuần'+(S.plan.cls?' cộng '+String(S.plan.cls).replace('.',',')+' giờ học trên lớp':''):'trình độ hiện tại'}): trình độ khoảng <b>${levelOfHours(E.h).name}</b> · Anh chuyên đề Sở khoảng <b>${fmtN(r1(I.achSo))}</b> · Anh chuyên đề Chuyên Ngoại ngữ khoảng <b>${fmtN(r1(I.achCnn))}</b>. Sai số khoảng ±${fmtN(r1(E.sd*1.5))} điểm.`;
     const eng=(id,label,key,auto)=>`<label class="fld">${label}<input type="number" id="${id}" min="0" max="10" step="0.25" value="${P[key]!=null&&P[key]!==''?P[key]:''}" placeholder="${fmtN(r1(auto))}"></label>`;
     if(!$('#sEng').dataset.on){$('#sEng').innerHTML=eng('sAchSo','Anh chuyên (đề Sở)','achSo',E.achSo)+eng('sAcSo','Anh chung (đề Sở)','acSo',Math.min(10,E.achSo+2.5))+eng('sAchCnn','Anh chuyên (đề Chuyên Ngoại ngữ)','achCnn',E.achCnn)+eng('sAcCnn','Anh chung (đề Chuyên Ngoại ngữ)','acCnn',Math.min(9.5,E.achCnn));$('#sEng').dataset.on='1';
       [['sAchSo','achSo'],['sAcSo','acSo'],['sAchCnn','achCnn'],['sAcCnn','acCnn']].forEach(([id,k])=>{$('#'+id).oninput=e=>{P[k]=e.target.value===''?null:+e.target.value;save();drawRows()}})}
