@@ -28,70 +28,80 @@
      "q": "It's hard to ______ on my homework when my little brother is watching TV in the same room.",
      "answer": "concentrate",
      "from_day": 1,
-     "tag": "d1v4"
+     "tag": "d1v4",
+     "explain_vi": "Có ==on my homework== và ==watching TV in the same room== → **concentrate on** (tập trung). __Học động từ kèm giới từ: concentrate on, rely on.__"
     },
     {
      "id": "d7R1_2",
      "q": "Ms Hoa asked us to hand in our history ______ by Friday. It's a two-page report about our town.",
      "answer": "assignment",
      "from_day": 1,
-     "tag": "d1v2"
+     "tag": "d1v2",
+     "explain_vi": "==hand in== + ==a two-page report== → bài tập nộp cho cô: **assignment**. __hand in sth nghĩa là nộp bài.__"
     },
     {
      "id": "d7R1_3",
      "q": "What do you like doing in your ______ time? – I usually play badminton with my dad.",
      "answer": "spare",
      "from_day": 2,
-     "tag": "d2v4"
+     "tag": "d2v4",
+     "explain_vi": "Câu hỏi ==What do you like doing in your ... time?== → **spare time** (thời gian rảnh). __Câu trả lời 'play badminton' xác nhận nghĩa này.__"
     },
     {
      "id": "d7R1_4",
      "q": "Nam is very ______ about football; he never misses a match on TV.",
      "answer": "enthusiastic",
      "from_day": 2,
-     "tag": "d2v3"
+     "tag": "d2v3",
+     "explain_vi": "==he never misses a match on TV== → rất hăng hái: **enthusiastic** about. __Sau 'very' cần tính từ.__"
     },
     {
      "id": "d7R1_5",
      "q": "Instead of throwing away old bottles, we can ______ them to make new things.",
      "answer": "recycle",
      "from_day": 3,
-     "tag": "d3v4"
+     "tag": "d3v4",
+     "explain_vi": "==Instead of throwing away old bottles== → tái chế: **recycle**. __Sau 'can' dùng động từ nguyên thể.__"
     },
     {
      "id": "d7R1_6",
      "q": "Many ______ of birds are in danger because people are cutting down the forests where they live.",
      "answer": "species",
      "from_day": 3,
-     "tag": "d3v5"
+     "tag": "d3v5",
+     "explain_vi": "==Many== + chỗ trống + ==of birds== → các loài: **species**. __species số ít và số nhiều viết giống nhau.__"
     },
     {
      "id": "d7R1_7",
      "q": "These days, many students ______ on the Internet to find information for their projects and hardly use library books.",
      "answer": "rely",
      "from_day": 4,
-     "tag": "d4v5"
+     "tag": "d4v5",
+     "explain_vi": "==on the Internet== → **rely on** (dựa vào); chủ ngữ số nhiều nên giữ nguyên rely. __Thấy 'on' sau chỗ trống, nghĩ tới rely on, concentrate on.__"
     },
     {
      "id": "d7R1_8",
      "q": "Online shopping is very ______ because you can buy things without leaving home.",
      "answer": "convenient",
      "from_day": 4,
-     "tag": "d4v8"
+     "tag": "d4v8",
+     "explain_vi": "==without leaving home== → tiện lợi: **convenient**. __Sau 'very' cần tính từ.__"
     },
     {
      "id": "d7R1_9",
      "q": "Fruit and vegetables are very ______, so you should eat some every day.",
      "answer": "nutritious",
      "from_day": 5,
-     "tag": "d5v4"
+     "tag": "d5v4",
+     "explain_vi": "==so you should eat some every day== → bổ dưỡng: **nutritious**. __are very + tính từ.__"
     },
     {
      "id": "d7R1_10",
      "q": "Our final ______ was Đà Nẵng, but we stopped in Huế for one night on the way.",
      "answer": "destination",
      "from_day": 6,
-     "tag": "d6v2"
+     "tag": "d6v2",
+     "explain_vi": "==Our final== + chỗ trống + ==was Đà Nẵng== → nơi đến cuối: **destination**. __Huế chỉ là chỗ dừng giữa đường.__"
     }
    ]
   },
@@ -106,7 +116,8 @@
       "'re playing"
      ],
      "from_day": 1,
-     "tag": "d1g"
+     "tag": "d1g",
+     "explain_vi": "==Look!== → việc đang xảy ra: **are playing** (hiện tại tiếp diễn). __Look!, Listen!, now là dấu hiệu tiếp diễn.__"
     },
     {
      "id": "d7R2_2",
@@ -116,21 +127,24 @@
       "do not understand"
      ],
      "from_day": 1,
-     "tag": "d1g"
+     "tag": "d1g",
+     "explain_vi": "understand là **động từ trạng thái**, không chia tiếp diễn → **don't understand**; ==Can you explain it again== cho thấy đang ở hiện tại. __know, like, understand không thêm -ing.__"
     },
     {
      "id": "d7R2_3",
      "q": "While I ______ (walk) to school this morning, I saw a beautiful rainbow.",
      "answer": "was walking",
      "from_day": 2,
-     "tag": "d2g"
+     "tag": "d2g",
+     "explain_vi": "==While== + việc dài đang diễn ra ==this morning== → **was walking**. __While thường đi với quá khứ tiếp diễn.__"
     },
     {
      "id": "d7R2_4",
      "q": "My dad ______ (collect) stamps when he was a boy, but he stopped many years ago. (Dùng 'used to')",
      "answer": "used to collect",
      "from_day": 2,
-     "tag": "d2g"
+     "tag": "d2g",
+     "explain_vi": "==when he was a boy, but he stopped== → thói quen cũ: **used to collect**. __used to + V nguyên thể.__"
     },
     {
      "id": "d7R2_5",
@@ -140,14 +154,16 @@
       "'ve already finished"
      ],
      "from_day": 3,
-     "tag": "d3g"
+     "tag": "d3g",
+     "explain_vi": "==already== + kết quả ==so I can relax== → **have already finished** (HTHT). __already đứng giữa have và V3.__"
     },
     {
      "id": "d7R2_6",
      "q": "We ______ (go) to Tràng An with our class two years ago.",
      "answer": "went",
      "from_day": 3,
-     "tag": "d3g"
+     "tag": "d3g",
+     "explain_vi": "==two years ago== → **quá khứ đơn: went**. __Có 'ago' thì không dùng hiện tại hoàn thành.__"
     },
     {
      "id": "d7R2_7",
@@ -157,7 +173,8 @@
       "'s going to rain"
      ],
      "from_day": 4,
-     "tag": "d4g"
+     "tag": "d4g",
+     "explain_vi": "==Look at those dark clouds!== → dự đoán có bằng chứng: **is going to rain**. __Có dấu hiệu trước mắt thì dùng be going to, không dùng will.__"
     },
     {
      "id": "d7R2_8",
@@ -169,14 +186,16 @@
       "'m going to meet"
      ],
      "from_day": 4,
-     "tag": "d4g"
+     "tag": "d4g",
+     "explain_vi": "==we arranged it last week== + ==at 3 p.m. tomorrow== → lịch hẹn đã sắp xếp: **am meeting** (hiện tại tiếp diễn chỉ tương lai). __Lịch hẹn cố định với người khác hay dùng hiện tại tiếp diễn.__"
     },
     {
      "id": "d7R2_9",
      "q": "This year's maths test was ______ (easy) than last year's, so most of us got good marks.",
      "answer": "easier",
      "from_day": 5,
-     "tag": "d5g"
+     "tag": "d5g",
+     "explain_vi": "==than last year's== → so sánh hơn; easy → **easier** (đổi y thành i). __Tính từ 2 âm tiết tận cùng -y thì thêm -ier.__"
     },
     {
      "id": "d7R2_10",
@@ -186,7 +205,8 @@
       "do not have to"
      ],
      "from_day": 6,
-     "tag": "d6g"
+     "tag": "d6g",
+     "explain_vi": "==you can wear whatever you like== → không bắt buộc: **don't have to**. __mustn't là cấm, ngược ý câu sau.__"
     }
    ]
   },
@@ -198,42 +218,48 @@
      "q": "Thanks to my teacher's ______, I finally found the courage to join the English speaking contest. (ENCOURAGE)",
      "answer": "encouragement",
      "from_day": 1,
-     "tag": "d1w"
+     "tag": "d1w",
+     "explain_vi": "Sau sở hữu cách ==my teacher's== cần **danh từ**: encourage → **encouragement**. __Đuôi -ment tạo danh từ từ động từ.__"
     },
     {
      "id": "d7R3_2",
      "q": "My brother is so ______; he has lost his phone twice this month. (CARE)",
      "answer": "careless",
      "from_day": 2,
-     "tag": "d2w"
+     "tag": "d2w",
+     "explain_vi": "==he has lost his phone twice this month== → bất cẩn: care → **careless**. __-less nghĩa là thiếu, -ful nghĩa là có.__"
     },
     {
      "id": "d7R3_3",
      "q": "The north of Việt Nam is very ______, so many roads there have sharp bends. (MOUNTAIN)",
      "answer": "mountainous",
      "from_day": 3,
-     "tag": "d3w"
+     "tag": "d3w",
+     "explain_vi": "==many roads there have sharp bends== → nhiều núi: mountain → **mountainous**. __Sau 'very' cần tính từ; đuôi -ous tạo tính từ.__"
     },
     {
      "id": "d7R3_4",
      "q": "The children listened ______ while the teacher read them a story. (QUIET)",
      "answer": "quietly",
      "from_day": 4,
-     "tag": "d4w"
+     "tag": "d4w",
+     "explain_vi": "Bổ nghĩa cho động từ ==listened== → **trạng từ: quietly**. __Động từ + trạng từ đuôi -ly.__"
     },
     {
      "id": "d7R3_5",
      "q": "It is ______ to swim across this river; it's far too wide and the water moves too fast. (POSSIBLE)",
      "answer": "impossible",
      "from_day": 5,
-     "tag": "d5w"
+     "tag": "d5w",
+     "explain_vi": "==it's far too wide and the water moves too fast== → không thể: **impossible**. __possible dùng tiền tố im-.__"
     },
     {
      "id": "d7R3_6",
      "q": "My sister wants to become a ______ and study life in the ocean. (SCIENCE)",
      "answer": "scientist",
      "from_day": 6,
-     "tag": "d6w"
+     "tag": "d6w",
+     "explain_vi": "==a== + người ==study life in the ocean== → **scientist** (nhà khoa học). __Đuôi -ist chỉ người: scientist, cyclist.__"
     }
    ]
   },
@@ -252,7 +278,8 @@
      ],
      "answer": "B",
      "from_day": 1,
-     "tag": "fmt:sentence_completion"
+     "tag": "fmt:sentence_completion",
+     "explain_vi": "Nghỉ ốm ==missed three lessons== nên phải học cho kịp bạn: **B. catch up** with. __drop out là bỏ học, give up là từ bỏ, take up là bắt đầu.__"
     },
     {
      "id": "d7R4_2",
@@ -266,7 +293,8 @@
      ],
      "answer": "D",
      "from_day": 2,
-     "tag": "fmt:synonym"
+     "tag": "fmt:synonym",
+     "explain_vi": "==TOOK UP painting after he retired== → bắt đầu một sở thích: **D. started**. __take up là bắt đầu, give up mới là từ bỏ.__"
     },
     {
      "id": "d7R4_3",
@@ -280,7 +308,8 @@
      ],
      "answer": "C",
      "from_day": 3,
-     "tag": "fmt:antonym"
+     "tag": "fmt:antonym",
+     "explain_vi": "==REDUCE== (giảm) trái nghĩa với **C. increase** (tăng). __lower, cut đồng nghĩa với reduce, là bẫy.__"
     },
     {
      "id": "d7R4_4",
@@ -294,7 +323,8 @@
      ],
      "answer": "A",
      "from_day": 4,
-     "tag": "fmt:dialogue_completion"
+     "tag": "fmt:dialogue_completion",
+     "explain_vi": "Lan rủ ==Shall we go to the cinema on Saturday afternoon?== → từ chối lịch sự kèm lý do: **A. Sorry, I'm visiting my grandparents that day.** __B, D sai thì; C 'No, I didn't' không hợp câu Shall we.__"
     },
     {
      "id": "d7R4_5",
@@ -308,7 +338,8 @@
      ],
      "answer": "C",
      "from_day": 5,
-     "tag": "fmt:sentence_transformation"
+     "tag": "fmt:sentence_transformation",
+     "explain_vi": "==No one in my class runs faster than Huy== → Huy chạy nhanh nhất: **C. Huy is the fastest runner in my class.** __A, B, D đều ngược nghĩa.__"
     },
     {
      "id": "d7R4_6",
@@ -322,7 +353,8 @@
      ],
      "answer": "B",
      "from_day": 6,
-     "tag": "fmt:cloze"
+     "tag": "fmt:cloze",
+     "explain_vi": "Quà cô mang về ==from the countries she has visited== → **B. souvenirs** (quà lưu niệm). __passengers, destinations, journeys không phải thứ mang về làm quà.__"
     }
    ]
   },
@@ -337,7 +369,8 @@
      "q": "Lan used to find it difficult to concentrate at school.",
      "answer": "True",
      "from_day": 1,
-     "tag": "d7r"
+     "tag": "d7r",
+     "explain_vi": "==in the morning she felt too tired to concentrate in class== → trước đây Lan khó tập trung, nên **True**. __'used to' trong câu hỏi khớp với 'When Lan started Year 7'.__"
     },
     {
      "id": "d7E2",
@@ -345,7 +378,8 @@
      "q": "Lan felt confident when she first joined the cycling club.",
      "answer": "False",
      "from_day": 2,
-     "tag": "d7r"
+     "tag": "d7r",
+     "explain_vi": "==although she was nervous at first== → lúc đầu Lan lo lắng, không tự tin → **False**. __nervous ngược nghĩa với confident.__"
     },
     {
      "id": "d7E3",
@@ -353,7 +387,8 @@
      "q": "The cycling club has more than twenty members.",
      "answer": "Not Given",
      "from_day": 2,
-     "tag": "d7r"
+     "tag": "d7r",
+     "explain_vi": "Bài chỉ nói Lan là ==one of its most enthusiastic members==, không nói câu lạc bộ có bao nhiêu người → **Not Given**. __Số liệu không có trong bài thì chọn Not Given.__"
     },
     {
      "id": "d7E4",
@@ -367,7 +402,8 @@
      ],
      "answer": "C",
      "from_day": 6,
-     "tag": "d7r"
+     "tag": "d7r",
+     "explain_vi": "==Last month they explored a village that is famous for its pottery.== → **C. To a village known for its pottery**. __'famous for' được nói lại thành 'known for'.__"
     },
     {
      "id": "d7E5",
@@ -381,7 +417,8 @@
      ],
      "answer": "A",
      "from_day": 3,
-     "tag": "d7r"
+     "tag": "d7r",
+     "explain_vi": "==bikes do not cause air pollution, so now she rides to school every day== → **A. Because bikes don't pollute the air.** __Từ 'so' nối lý do và kết quả.__"
     }
    ]
   },
@@ -420,7 +457,7 @@
     "membership"
    ],
    "answer": 1,
-   "explain_vi": "curriculum = chương trình học (gồm các môn học trong trường).",
+   "explain_vi": "==my favourite subject in the school== + chỗ trống → chương trình các môn học: **curriculum**. __assignment là bài tập, membership là tư cách thành viên, sai nghĩa.__",
    "tag": "d1v1"
   },
   {
@@ -436,7 +473,7 @@
     "worked out"
    ],
    "answer": 0,
-   "explain_vi": "drop out (of) = rời bỏ, bỏ ngang (một đội, khoá học, trường học).",
+   "explain_vi": "==because the training started too early== → bỏ đội: **dropped out** (of). __catch up là đuổi kịp, set off là khởi hành, work out là tập luyện.__",
    "tag": "d1p2"
   },
   {
@@ -449,7 +486,7 @@
    "accept": [
     "rises"
    ],
-   "explain_vi": "Sự thật hiển nhiên → hiện tại đơn; chủ ngữ 'the sun' số ít → rises.",
+   "explain_vi": "==in the east== là sự thật hiển nhiên → **hiện tại đơn: rises** (the sun số ít). __Sự thật khoa học luôn dùng hiện tại đơn.__",
    "tag": "d1g"
   },
   {
@@ -465,7 +502,7 @@
     "collection"
    ],
    "answer": 2,
-   "explain_vi": "membership fee = phí thành viên (để tham gia câu lạc bộ).",
+   "explain_vi": "**membership fee** là phí thành viên; ==for the chess club== là dấu hiệu. __Đây là cụm từ đi liền, nên học cả cụm.__",
    "tag": "d2v8"
   },
   {
@@ -481,7 +518,7 @@
     "have taken"
    ],
    "answer": 1,
-   "explain_vi": "Hành động đang xảy ra (quá khứ tiếp diễn) thì một hành động khác xen vào (quá khứ đơn).",
+   "explain_vi": "==when the phone rang== xen vào → **quá khứ tiếp diễn: was taking**. __Việc dài đang làm dùng was/were + V-ing.__",
    "tag": "d2g"
   },
   {
@@ -494,7 +531,7 @@
    "accept": [
     "useless"
    ],
-   "explain_vi": "Bản đồ cũ, đường đã thay đổi hết → vô dụng: use + less = useless.",
+   "explain_vi": "==most of the roads have changed== → bản đồ vô dụng: use + less → **useless**. __Đuôi -less nghĩa là 'không có'.__",
    "tag": "d2w"
   },
   {
@@ -510,7 +547,7 @@
     "cut down"
    ],
    "answer": 3,
-   "explain_vi": "cut down on = cắt giảm (dùng ít đi).",
+   "explain_vi": "==by taking cloth bags to the market== → dùng ít túi ni-lông: **cut down on** (cắt giảm). __give up, throw away không đi với 'on' theo sau.__",
    "tag": "d3p1"
   },
   {
@@ -526,7 +563,7 @@
     "is living"
    ],
    "answer": 2,
-   "explain_vi": "'since 2020' → hành động bắt đầu trong quá khứ, kéo dài tới nay → hiện tại hoàn thành.",
+   "explain_vi": "==since 2020== → **hiện tại hoàn thành: has lived**. __Thấy since/for + thời gian, nghĩ ngay tới HTHT.__",
    "tag": "d3g"
   },
   {
@@ -539,7 +576,7 @@
    "accept": [
     "protect"
    ],
-   "explain_vi": "protect = bảo vệ; sau 'must' dùng động từ nguyên thể.",
+   "explain_vi": "Sau ==help to== dùng động từ nguyên thể → **protect** (bảo vệ). __Gợi ý chữ 'p' và nghĩa 'bảo vệ' giúp em chắc chắn.__",
    "tag": "d3v2"
   },
   {
@@ -555,7 +592,7 @@
     "access"
    ],
    "answer": 0,
-   "explain_vi": "update = cập nhật (để ứng dụng chạy tốt).",
+   "explain_vi": "==so that they work properly== → cập nhật ứng dụng: **update**. __rely cần 'on'; invent, access sai nghĩa.__",
    "tag": "d4v7"
   },
   {
@@ -571,7 +608,7 @@
     "did"
    ],
    "answer": 1,
-   "explain_vi": "Quyết định / lời đề nghị giúp đỡ ngay lúc nói → will.",
+   "explain_vi": "Quyết định giúp ngay lúc nói sau ==Don't worry== → **will**. __Lời đề nghị bất chợt dùng will, không dùng be going to.__",
    "tag": "d4g"
   },
   {
@@ -584,7 +621,7 @@
    "accept": [
     "slowly"
    ],
-   "explain_vi": "Bổ nghĩa cho động từ 'walked' → cần trạng từ: slow + ly.",
+   "explain_vi": "Bổ nghĩa cho động từ ==walked== → **trạng từ: slowly** (slow + ly). __Sau động từ thường cần trạng từ, không phải tính từ.__",
    "tag": "d4w"
   },
   {
@@ -600,7 +637,7 @@
     "such"
    ],
    "answer": 2,
-   "explain_vi": "tính từ + enough + to V: old enough to ride.",
+   "explain_vi": "==isn't old== + chỗ trống + ==to ride== → **adj + enough + to V**. __too, so, such không đứng sau tính từ.__",
    "tag": "d5g"
   },
   {
@@ -613,7 +650,7 @@
    "accept": [
     "unhealthy"
    ],
-   "explain_vi": "Ngồi trước màn hình cả ngày là thói quen không tốt cho sức khoẻ → un + healthy = unhealthy.",
+   "explain_vi": "Ngồi trước màn hình ==all day== là thói quen xấu → **unhealthy**. __Trước danh từ 'habit' cần tính từ; 'an' gợi ý từ bắt đầu bằng nguyên âm.__",
    "tag": "d5w"
   },
   {
@@ -629,7 +666,7 @@
     "abroad"
    ],
    "answer": 3,
-   "explain_vi": "travel abroad = đi nước ngoài (abroad là trạng từ).",
+   "explain_vi": "==he has been to Japan, Korea and France== → **travel abroad** (đi nước ngoài). __abroad là trạng từ, đứng sau động từ không cần giới từ.__",
    "tag": "d6v7"
   },
   {
@@ -645,7 +682,7 @@
     "visited"
    ],
    "answer": 0,
-   "explain_vi": "look forward to + V-ing ('to' ở đây là giới từ).",
+   "explain_vi": "**look forward to + V-ing**: ==to== ở đây là giới từ → **visiting**. __Đừng nhầm với 'to + V nguyên thể'.__",
    "tag": "d6p2"
   }
  ],

@@ -10,7 +10,8 @@
       "At 9 p.m. yesterday, we were watching TV.",
       "While Dad was cooking, I was reading.",
       "They were waiting for the bus."
-     ]
+     ],
+     "rule_vi": "**Quá khứ tiếp diễn: was/were + V-ing** – việc đang diễn ra tại một lúc trong quá khứ. Dấu hiệu: ==At 9 p.m. yesterday==, ==While==. __Tìm was/were đi với V-ing.__"
     },
     {
      "name": "Present perfect",
@@ -18,7 +19,8 @@
       "I have already finished my project.",
       "She has been abroad twice.",
       "We haven't eaten lunch yet."
-     ]
+     ],
+     "rule_vi": "**Hiện tại hoàn thành: have/has + V3** – trải nghiệm hoặc việc vừa xong. Dấu hiệu: ==already==, ==twice==, ==yet==. __Câu không có mốc thời gian cụ thể trong quá khứ.__"
     },
     {
      "name": "Future (will / be going to / present continuous)",
@@ -26,30 +28,36 @@
       "We're going to visit Hue next summer.",
       "I think robots will do our housework one day.",
       "I'm meeting Lan at 5 p.m. tomorrow."
-     ]
+     ],
+     "rule_vi": "**Tương lai**: be going to (dự định), will (dự đoán), hiện tại tiếp diễn (lịch hẹn). Dấu hiệu: ==next summer==, ==one day==, ==tomorrow==. __Thấy thời gian ở tương lai thì xếp vào nhóm này.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "We were having dinner when the power went off.",
-    "hint_vi": "Quá khứ tiếp diễn + when + quá khứ đơn (buổi 2)"
+    "hint_vi": "Quá khứ tiếp diễn + when + quá khứ đơn (buổi 2)",
+    "why_vi": "**S + was/were + V-ing + when + quá khứ đơn**: ==We were having dinner== when ==the power went off==. __Việc dài đứng trước, việc ngắn xen vào sau when.__"
    },
    {
     "sentence": "Have you ever travelled abroad with your family?",
-    "hint_vi": "Hiện tại hoàn thành với ever (buổi 3)"
+    "hint_vi": "Hiện tại hoàn thành với ever (buổi 3)",
+    "why_vi": "Câu hỏi HTHT: **Have + S + ever + V3?** ==Have you ever travelled abroad==… __ever đứng sau chủ ngữ, trước V3.__"
    },
    {
     "sentence": "I'm going to take up the guitar next month.",
-    "hint_vi": "be going to: dự định có từ trước (buổi 4)"
+    "hint_vi": "be going to: dự định có từ trước (buổi 4)",
+    "why_vi": "**be going to + V**: ==I'm going to take up the guitar==, thời gian ==next month== ở cuối. __take up đi liền nhau, the guitar làm tân ngữ.__"
    },
    {
     "sentence": "It was such a boring film that I fell asleep.",
-    "hint_vi": "such + a + tính từ + danh từ + that (buổi 5)"
+    "hint_vi": "such + a + tính từ + danh từ + that (buổi 5)",
+    "why_vi": "**such + a + adj + N + that**: ==such a boring film that== I fell asleep. __a đứng sau such, trước tính từ.__"
    },
    {
     "sentence": "You don't have to bring your own lunch.",
-    "hint_vi": "don't have to = không cần phải (buổi 6)"
+    "hint_vi": "don't have to = không cần phải (buổi 6)",
+    "why_vi": "**S + don't have to + V**: ==You don't have to bring your own lunch.== __your own đứng trước danh từ lunch.__"
    }
   ],
   "truefalse": [
@@ -57,49 +65,49 @@
     "s": "She is owning two cats and a dog.",
     "ok": false,
     "fix": "She owns two cats and a dog.",
-    "why_vi": "own là động từ trạng thái, không chia -ing (buổi 1)."
+    "why_vi": "Sai. ==is owning== → **owns**: own là động từ trạng thái, không chia -ing. __own, know, like, have (sở hữu) đều không dùng tiếp diễn.__"
    },
    {
     "s": "I was doing my homework when my friend called.",
     "ok": true,
     "fix": "I was doing my homework when my friend called.",
-    "why_vi": "Việc đang diễn ra (was doing) bị việc khác xen vào (called) (buổi 2)."
+    "why_vi": "Đúng. ==was doing== bị ==called== xen vào → **quá khứ tiếp diễn + when + quá khứ đơn**."
    },
    {
     "s": "We have moved to Hanoi in 2019.",
     "ok": false,
     "fix": "We moved to Hanoi in 2019.",
-    "why_vi": "Có mốc thời gian xác định (in 2019) → quá khứ đơn (buổi 3)."
+    "why_vi": "Sai. Có ==in 2019== (mốc thời gian xác định) → **quá khứ đơn: moved**. __HTHT không đi với năm, ago, yesterday.__"
    },
    {
     "s": "I'm sure you will pass the test.",
     "ok": true,
     "fix": "I'm sure you will pass the test.",
-    "why_vi": "Dự đoán theo ý kiến cá nhân (I'm sure) → will + V (buổi 4)."
+    "why_vi": "Đúng. ==I'm sure== là dự đoán theo ý kiến → **will + V**. __I think, I'm sure, probably hay đi với will.__"
    },
    {
     "s": "Hoa is more taller than her sister.",
     "ok": false,
     "fix": "Hoa is taller than her sister.",
-    "why_vi": "Tính từ ngắn chỉ thêm -er, không dùng thêm more (buổi 5)."
+    "why_vi": "Sai. ==more taller== → **taller**: tính từ ngắn chỉ thêm -er. __Không dùng more và -er cùng lúc.__"
    },
    {
     "s": "You mustn't use your phone during the exam.",
     "ok": true,
     "fix": "You mustn't use your phone during the exam.",
-    "why_vi": "mustn't + V = bị cấm (buổi 6)."
+    "why_vi": "Đúng. Cấm dùng điện thoại ==during the exam== → **mustn't + V**."
    },
    {
     "s": "This is the most interesting book I have ever read.",
     "ok": true,
     "fix": "This is the most interesting book I have ever read.",
-    "why_vi": "So sánh nhất của tính từ dài (the most) + hiện tại hoàn thành với ever."
+    "why_vi": "Đúng. ==the most interesting== + ==I have ever read== → **so sánh nhất của tính từ dài + HTHT với ever**."
    },
    {
     "s": "He is enough old to drive a car.",
     "ok": false,
     "fix": "He is old enough to drive a car.",
-    "why_vi": "enough đứng SAU tính từ: old enough to V (buổi 5)."
+    "why_vi": "Sai. ==enough old== → **old enough**: enough đứng SAU tính từ. __Còn với danh từ thì enough đứng trước: enough money.__"
    }
   ]
  },
@@ -121,7 +129,7 @@
       "has concentrated"
      ],
      "answer": 1,
-     "explain_vi": "'at the moment' → hiện tại tiếp diễn (buổi 1)."
+     "explain_vi": "==at the moment== → **hiện tại tiếp diễn: is concentrating**. __at the moment, now, Look! là dấu hiệu tiếp diễn.__"
     },
     {
      "format": "pronunciation",
@@ -133,7 +141,7 @@
       "passenger[[s]]"
      ],
      "answer": 0,
-     "explain_vi": "device tận cùng bằng âm /s/ nên devices đọc /ɪz/; ba từ kia đọc /z/."
+     "explain_vi": "device tận cùng âm /s/ nên **devices** đọc /ɪz/; ==souvenirs, journeys, passengers== đọc /z/. __Âm cuối /s, z, ʃ, tʃ, dʒ/ thì -s/-es đọc /ɪz/.__"
     },
     {
      "format": "stress",
@@ -145,7 +153,7 @@
       "explore"
      ],
      "answer": 3,
-     "explain_vi": "explore /ɪkˈsplɔː/ là động từ, nhấn âm 2; habit, diet, journey là danh từ nhấn âm 1."
+     "explain_vi": "**explore** là động từ, nhấn âm 2: ex-PLORE. ==habit, diet, journey== là danh từ, nhấn âm 1. __Danh từ 2 âm tiết thường nhấn âm 1, động từ thường nhấn âm 2.__"
     },
     {
      "format": "synonym",
@@ -157,7 +165,7 @@
       "booked"
      ],
      "answer": 0,
-     "explain_vi": "delayed (bị hoãn, đến muộn) ≈ held up. 'cancelled' là bị huỷ hẳn, khác nghĩa."
+     "explain_vi": "==DELAYED== (bị chậm, đến muộn) đồng nghĩa với **held up**. __cancelled là bị huỷ hẳn, khác nghĩa.__"
     },
     {
      "format": "antonym",
@@ -169,7 +177,7 @@
       "noisy"
      ],
      "answer": 0,
-     "explain_vi": "crowded (đông đúc) >< empty (vắng). busy, full gần nghĩa với crowded nên là bẫy."
+     "explain_vi": "==CROWDED== (đông đúc) trái nghĩa với **empty** (vắng). __busy, full gần nghĩa với crowded nên là bẫy.__"
     },
     {
      "format": "dialogue_completion",
@@ -181,7 +189,7 @@
       "It doesn't matter."
      ],
      "answer": 0,
-     "explain_vi": "Bạn bị đau đầu → đưa lời khuyên với should (buổi 6)."
+     "explain_vi": "A nói ==I've had a headache all morning== → đưa lời khuyên: **You should lie down for a while.** __Ai than mệt, ốm thì đáp bằng lời khuyên với should.__"
     },
     {
      "format": "dialogue_completion",
@@ -193,7 +201,7 @@
       "I'm going to have a party."
      ],
      "answer": 0,
-     "explain_vi": "Nhận lời mời 'Would you like to…?' → I'd love to. 'Yes, I do' không hợp với câu hỏi Would."
+     "explain_vi": "Lời mời ==Would you like to come...?== → nhận lời: **I'd love to.** __'Yes, I do' trả lời câu Do you…, không hợp câu Would you like.__"
     },
     {
      "format": "closest_meaning",
@@ -205,7 +213,7 @@
       "I have learnt English since five years."
      ],
      "answer": 0,
-     "explain_vi": "started … ago = have + V3 + for + khoảng thời gian (buổi 3). 'since five years' sai."
+     "explain_vi": "==started ... five years ago== → **I have learnt English for five years.** __for + khoảng thời gian; 'since five years' sai.__"
     },
     {
      "format": "closest_meaning",
@@ -217,7 +225,7 @@
       "It was such heavy bag that Lan couldn't carry it."
      ],
      "answer": 0,
-     "explain_vi": "so … that … couldn't = too … for sb to V (buổi 5). Câu cuối thiếu 'a'."
+     "explain_vi": "==so heavy that Lan couldn't carry it== → **too heavy for Lan to carry**. __D thiếu 'a': phải là such a heavy bag.__"
     },
     {
      "format": "sentence_completion",
@@ -229,7 +237,7 @@
       "dropped"
      ],
      "answer": 0,
-     "explain_vi": "give up = từ bỏ thói quen (buổi 2); 'three years ago' → quá khứ đơn gave."
+     "explain_vi": "==three years ago== → quá khứ đơn; **give up** là từ bỏ thói quen → **gave**. __took up là bắt đầu, ngược nghĩa.__"
     }
    ]
   }
@@ -252,7 +260,7 @@
       "has played"
      ],
      "answer": 1,
-     "explain_vi": "'Listen!' cho biết việc đang xảy ra ngay lúc nói → hiện tại tiếp diễn: is playing (buổi 1)."
+     "explain_vi": "==Listen!== → việc đang xảy ra lúc nói: **is playing**. __Listen!, Look! là dấu hiệu hiện tại tiếp diễn.__"
     },
     {
      "format": "pronunciation",
@@ -264,7 +272,7 @@
       "chair[[s]]"
      ],
      "answer": 2,
-     "explain_vi": "book tận cùng bằng âm /k/ (âm vô thanh) nên books đọc /s/. pens, bags, chairs đọc /z/ (buổi 1)."
+     "explain_vi": "book tận cùng âm /k/ (vô thanh) nên **books** đọc /s/; ==pens, bags, chairs== đọc /z/. __Âm cuối vô thanh /p, t, k, f/ thì -s đọc /s/.__"
     },
     {
      "format": "stress",
@@ -276,7 +284,7 @@
       "table"
      ],
      "answer": 1,
-     "explain_vi": "hotel /həʊˈtel/ nhấn âm 2. teacher, happy, table đều nhấn âm 1 (buổi 2)."
+     "explain_vi": "**hotel** nhấn âm 2: ho-TEL. ==teacher, happy, table== đều nhấn âm 1. __Đọc to từng từ để nghe chỗ nhấn mạnh.__"
     },
     {
      "format": "synonym",
@@ -288,7 +296,7 @@
       "shout"
      ],
      "answer": 0,
-     "explain_vi": "relax = thư giãn, nghỉ ngơi ≈ rest. study (học), run (chạy), shout (hét) khác nghĩa hẳn (buổi 2)."
+     "explain_vi": "==RELAX== (thư giãn) gần nghĩa với **rest** (nghỉ ngơi). __study, run, shout khác nghĩa hẳn.__"
     },
     {
      "format": "antonym",
@@ -300,7 +308,7 @@
       "heavy"
      ],
      "answer": 1,
-     "explain_vi": "harmful (có hại) >< harmless (vô hại). dangerous và bad gần nghĩa với harmful nên không phải đáp án (buổi 3)."
+     "explain_vi": "==HARMFUL== (có hại) trái nghĩa với **harmless** (vô hại). __-ful là có, -less là không có; dangerous, bad là bẫy cùng nghĩa.__"
     },
     {
      "format": "dialogue_completion",
@@ -312,7 +320,7 @@
       "Here are your photos."
      ],
      "answer": 2,
-     "explain_vi": "A xin phép chụp ảnh → B trả lời cho phép hay không: Sorry, you can't (không được). Các câu khác không trả lời câu hỏi (buổi 6)."
+     "explain_vi": "A xin phép ==can I take photos in the museum?== → B trả lời không được: **Sorry, you can't. Look at the sign.** __Các câu khác không trả lời câu xin phép.__"
     },
     {
      "format": "dialogue_completion",
@@ -324,7 +332,7 @@
       "Yes, I am."
      ],
      "answer": 0,
-     "explain_vi": "Câu hỏi về dự định cuối tuần này (be going to) → trả lời bằng be going to. 'Yes, I am' không trả lời câu hỏi What (buổi 4)."
+     "explain_vi": "Hỏi dự định ==What are you going to do this weekend?== → **I'm going to visit my grandparents.** __Hỏi bằng thì nào, trả lời bằng thì đó.__"
     },
     {
      "format": "closest_meaning",
@@ -336,7 +344,7 @@
       "My brother and I are the same age."
      ],
      "answer": 2,
-     "explain_vi": "Anh trai lớn tuổi hơn em → em nhỏ tuổi hơn anh: I am younger than my brother (buổi 5)."
+     "explain_vi": "==My brother is older than me== → em nhỏ tuổi hơn anh: **I am younger than my brother.** __Đổi chủ ngữ thì đổi older thành younger.__"
     },
     {
      "format": "closest_meaning",
@@ -348,7 +356,7 @@
       "I have never lived in Hà Nội."
      ],
      "answer": 1,
-     "explain_vi": "Sống ở Hà Nội được 3 năm (đến nay vẫn sống) → chuyển đến Hà Nội cách đây 3 năm: moved … three years ago (buổi 3)."
+     "explain_vi": "==have lived ... for three years== (giờ vẫn sống ở đó) → **I moved to Hà Nội three years ago.** __A sai vì 'lived … ago' nghĩa là giờ không còn sống ở đó.__"
     },
     {
      "format": "sentence_completion",
@@ -360,7 +368,7 @@
       "drop"
      ],
      "answer": 0,
-     "explain_vi": "switch off = tắt (đèn, máy móc). give off, take off, drop off không có nghĩa tắt đèn (buổi 4)."
+     "explain_vi": "**switch off** là tắt (đèn, máy); ==off the lights== là dấu hiệu. __give off, take off, drop off không có nghĩa tắt đèn.__"
     }
    ]
   }
@@ -383,7 +391,7 @@
       "was tasting"
      ],
      "answer": 1,
-     "explain_vi": "taste ở đây là động từ chỉ trạng thái (có vị), không dùng tiếp diễn → tastes. 'is tasting' chỉ dùng khi ai đó đang nếm thử (buổi 1)."
+     "explain_vi": "taste (có vị) là **động từ trạng thái** → **tastes**; dấu hiệu ==delicious==. __'is tasting' chỉ dùng khi ai đó đang nếm thử.__"
     },
     {
      "format": "pronunciation",
@@ -395,7 +403,7 @@
       "laugh[[s]]"
      ],
      "answer": 2,
-     "explain_vi": "breathe tận cùng âm /ð/ (hữu thanh) nên breathes đọc /z/. months, breaths (/θ/), laughs (/f/) đọc /s/ (buổi 1)."
+     "explain_vi": "breathe tận cùng âm /ð/ (hữu thanh) nên **breathes** đọc /z/; ==months, breaths, laughs== tận cùng âm vô thanh nên đọc /s/. __Nghe âm cuối, đừng nhìn chữ: breath /θ/ khác breathe /ð/.__"
     },
     {
      "format": "stress",
@@ -407,7 +415,7 @@
       "pollution"
      ],
      "answer": 0,
-     "explain_vi": "concentrate /ˈkɒnsntreɪt/ nhấn âm 1 (nhưng concentration nhấn âm 3). recycle, assignment, pollution nhấn âm 2."
+     "explain_vi": "**concentrate** nhấn âm 1: CON-cen-trate. ==recycle, assignment, pollution== nhấn âm 2. __Đuôi -tion luôn nhấn âm ngay trước nó: pol-LU-tion.__"
     },
     {
      "format": "synonym",
@@ -419,7 +427,7 @@
       "quit"
      ],
      "answer": 3,
-     "explain_vi": "give up = quit (từ bỏ). put off là hoãn lại, cut down on là giảm bớt, took up là bắt đầu: đều lệch nghĩa (buổi 2)."
+     "explain_vi": "==GAVE UP== (từ bỏ) đồng nghĩa với **quit**. __put off là hoãn, cut down on là giảm bớt, took up là bắt đầu.__"
     },
     {
      "format": "antonym",
@@ -431,7 +439,7 @@
       "talkative"
      ],
      "answer": 1,
-     "explain_vi": "enthusiastic (nhiệt tình, hăng hái) >< indifferent (thờ ơ). eager và energetic gần nghĩa, talkative (nói nhiều) không trái nghĩa (buổi 2)."
+     "explain_vi": "==ENTHUSIASTIC== (nhiệt tình) trái nghĩa với **indifferent** (thờ ơ). __eager, energetic gần nghĩa nên là bẫy.__"
     },
     {
      "format": "dialogue_completion",
@@ -443,7 +451,7 @@
       "That's very kind of you."
      ],
      "answer": 0,
-     "explain_vi": "Đáp lại lời xin lỗi vì vắng mặt → Never mind (không sao đâu). 'Not at all. I'd love to' dùng để nhận lời mời."
+     "explain_vi": "Đáp lại lời xin lỗi ==I'm sorry I couldn't make it== → **Never mind. Maybe next time.** __'Not at all. I'd love to' dùng để nhận lời mời.__"
     },
     {
      "format": "dialogue_completion",
@@ -455,7 +463,7 @@
       "Never mind."
      ],
      "answer": 1,
-     "explain_vi": "Do you mind…? = bạn có phiền không. Đồng ý thì nói Not at all (không phiền). 'Yes, please do' mâu thuẫn: Yes nghĩa là có phiền (buổi 4)."
+     "explain_vi": "==Do you mind if...?== nghĩa là 'bạn có phiền không' → đồng ý thì nói **Not at all. Go ahead.** __'Yes' ở đây nghĩa là có phiền, nên 'Yes, please do' mâu thuẫn.__"
     },
     {
      "format": "closest_meaning",
@@ -467,7 +475,7 @@
       "I haven't been cycling for ages."
      ],
      "answer": 3,
-     "explain_vi": "It's ages since I last + V2 = I haven't + V3 + for ages: đã lâu rồi chưa đi xe đạp (buổi 3)."
+     "explain_vi": "==It's ages since I last went cycling== → **I haven't been cycling for ages.** __It's + thời gian + since + S + last + V2 ↔ S + haven't + V3 + for + thời gian.__"
     },
     {
      "format": "closest_meaning",
@@ -479,7 +487,7 @@
       "Hoa no longer enjoys cooking."
      ],
      "answer": 1,
-     "explain_vi": "Trước đây không thích, giờ rất thích → bây giờ thích nấu ăn hơn trước: more now than she used to (buổi 2 và 5)."
+     "explain_vi": "==didn't use to enjoy cooking, but now she loves it== → **Hoa enjoys cooking more now than she used to.** __C ngược nghĩa vì nói trước đây thích hơn.__"
     },
     {
      "format": "sentence_completion",
@@ -491,7 +499,7 @@
       "did"
      ],
      "answer": 2,
-     "explain_vi": "since + mốc quá khứ → hiện tại hoàn thành; collocation make progress (tiến bộ), không dùng do → has made (buổi 1 và 3)."
+     "explain_vi": "==since he started== → HTHT; cụm **make progress** → **has made**. __Không nói 'do progress'.__"
     }
    ]
   }
@@ -504,13 +512,15 @@
     "id": "d7H1",
     "q": "Many parents worry that their children waste hours on ______ activities such as scrolling through social media. (PRODUCT)",
     "answer": "unproductive",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Trước danh từ ==activities== cần tính từ; lướt mạng xã hội là vô ích: product → productive → **unproductive**. __Từ đổi hai lần: thêm -ive rồi thêm un-.__"
    },
    {
     "id": "d7H2",
     "q": "Our school canteen has switched to paper straws and other ______ friendly products. (ENVIRONMENT)",
     "answer": "environmentally",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Đứng trước tính từ ==friendly== cần **trạng từ**: environment → **environmentally**. __Cụm cố định: environmentally friendly (thân thiện với môi trường).__"
    },
    {
     "id": "d7H3",
@@ -521,7 +531,8 @@
      "seen her since she moved to Australia two years ago",
      "seen her since she moved to Australia",
      "seen my cousin for two years"
-    ]
+    ],
+    "explain_vi": "==I last saw my cousin when...== → **I haven't seen my cousin since she moved to Australia two years ago.** __last + V2 ↔ haven't + V3 + since/for.__"
    },
    {
     "id": "d7H4",
@@ -532,7 +543,8 @@
      "use to be this noisy",
      "use to be as noisy as it is now",
      "use to be so noisy as it is now"
-    ]
+    ],
+    "explain_vi": "==much noisier now than it was in the past== → trước đây không ồn như vậy: **didn't use to be so noisy**. __Sau didn't dùng 'use to', không có -d.__"
    },
    {
     "id": "d7H5",
@@ -543,7 +555,8 @@
      "putting off",
      "giving off"
     ],
-    "answer": "C"
+    "answer": "C",
+    "explain_vi": "**put off** (C) là trì hoãn; ==until the night before the test== là dấu hiệu. __keep + V-ing; setting off là khởi hành, taking off là cất cánh.__"
    },
    {
     "id": "d7H6",
@@ -554,7 +567,8 @@
      "lengthened",
      "increased"
     ],
-    "answer": "B"
+    "answer": "B",
+    "explain_vi": "Cụm cố định **broaden my horizons** (B): mở rộng tầm nhìn; dấu hiệu ==see things from many different points of view==. __enlarge, increase không đi với horizons.__"
    }
   ]
  },
@@ -675,7 +689,7 @@
        "Famous artists"
       ],
       "answer": 1,
-      "explain_vi": "Nam nói: \"It's about our town.\""
+      "explain_vi": "Nam: ==It's about our town.== → **Their town**."
      },
      {
       "q": "When does Nam have to hand in his assignment?",
@@ -686,7 +700,7 @@
        "On Monday"
       ],
       "answer": 3,
-      "explain_vi": "Nam: \"On Monday.\" Thứ Bảy là ngày cậu ở nhà làm bài."
+      "explain_vi": "Nam: ==On Monday.== → **On Monday**. __Thứ Bảy là ngày cậu ở nhà làm bài, không phải ngày nộp.__"
      },
      {
       "q": "What has Linh just started?",
@@ -697,7 +711,7 @@
        "Guitar lessons"
       ],
       "answer": 0,
-      "explain_vi": "Linh: \"I've just taken up drawing. My first class is on Saturday morning.\""
+      "explain_vi": "Linh: ==I've just taken up drawing. My first class is on Saturday morning.== → **Drawing classes**. __take up nghĩa là bắt đầu một sở thích.__"
      },
      {
       "q": "What will Linh do on Sunday?",
@@ -708,7 +722,7 @@
        "Stay at home"
       ],
       "answer": 2,
-      "explain_vi": "Linh: \"on Sunday, I'm helping at the recycling day at school.\""
+      "explain_vi": "Linh: ==on Sunday, I'm helping at the recycling day at school.== → **Help at a recycling day**."
      },
      {
       "q": "What will Nam bring on Sunday?",
@@ -719,7 +733,7 @@
        "Some drawings"
       ],
       "answer": 1,
-      "explain_vi": "Nam: \"I've got lots of old newspapers at home.\" Linh dặn mang báo cũ trong túi to."
+      "explain_vi": "Nam: ==I've got lots of old newspapers at home.== → **Old newspapers**. __Chai nhựa là thứ cả trường thu gom, không phải thứ Nam mang.__"
      }
     ]
    },
@@ -734,31 +748,31 @@
       "accept": [
        "the library"
       ],
-      "explain_vi": "Cô nói: \"The photography club meets on Tuesday afternoons in the library.\""
+      "explain_vi": "Cô nói: ==The photography club meets on Tuesday afternoons in the library.== → **library**."
      },
      {
       "answer": "camera",
       "accept": [
        "a camera"
       ],
-      "explain_vi": "Cô nói: \"Please bring your own camera or phone.\""
+      "explain_vi": "==Please bring your own camera or phone.== → **camera**. __Chữ 'or phone' sau chỗ trống giúp em nhận ra câu cần nghe.__"
      },
      {
       "answer": "kitchen",
       "accept": [],
-      "explain_vi": "Cô nói: \"The cooking club is on Thursdays, in the school kitchen.\""
+      "explain_vi": "==The cooking club is on Thursdays, in the school kitchen.== → **kitchen**."
      },
      {
       "answer": "20",
       "accept": [
        "twenty"
       ],
-      "explain_vi": "Cô nói: \"Only 20 students can join.\""
+      "explain_vi": "==Only 20 students can join, so sign up early!== → **20**."
      },
      {
       "answer": "Friday",
       "accept": [],
-      "explain_vi": "Cô nói: \"write your name on the list ... before Friday.\""
+      "explain_vi": "==write your name on the list outside the teachers' room before Friday== → **Friday**. __Nghe kỹ chữ 'before' trước mốc thời gian.__"
      }
     ]
    }
@@ -837,7 +851,7 @@
        "He was helping his mum."
       ],
       "answer": 2,
-      "explain_vi": "Tom: \"I was revising... Well, not exactly revising. I kept checking my phone.\""
+      "explain_vi": "Tom: ==Well, not exactly revising. I kept checking my phone.== → **He was studying but kept looking at his phone.** __'not exactly' báo hiệu người nói sửa lại ý.__"
      },
      {
       "q": "What does Mai do with her phone when she studies?",
@@ -848,7 +862,7 @@
        "She leaves it with her mum."
       ],
       "answer": 3,
-      "explain_vi": "Mai: \"I switch my phone off and leave it in the living room. My mum keeps it.\""
+      "explain_vi": "Mai: ==I switch my phone off and leave it in the living room. My mum keeps it until I've finished.== → **She leaves it with her mum.**"
      },
      {
       "q": "What does Mai say about the way she studies now?",
@@ -859,7 +873,7 @@
        "She only studies with her friends."
       ],
       "answer": 1,
-      "explain_vi": "\"I used to study for three hours... Now I study for an hour and a half, but I actually learn more.\""
+      "explain_vi": "==Now I study for an hour and a half, but I actually learn more.== → **She studies for a shorter time but learns more.** __So sánh 3 tiếng trước đây với 1 tiếng rưỡi bây giờ.__"
      },
      {
       "q": "Why does Tom need to catch up?",
@@ -870,7 +884,7 @@
        "He spent too much time on football."
       ],
       "answer": 0,
-      "explain_vi": "Tom: \"I missed two lessons last week because of my cold.\""
+      "explain_vi": "Tom: ==I missed two lessons last week because of my cold.== → **He was ill and missed some lessons.** __'cold' ở đây là bị cảm.__"
      },
      {
       "q": "When will Mai and Tom revise together?",
@@ -881,7 +895,7 @@
        "On Wednesday"
       ],
       "answer": 3,
-      "explain_vi": "Mai gợi ý thứ Năm nhưng Tom bận đá bóng; Tom: \"What about Wednesday?\" – Mai: \"Wednesday's fine.\""
+      "explain_vi": "Tom bận thứ Năm nên hỏi ==What about Wednesday?== – Mai: ==Wednesday's fine.== → **On Wednesday**. __Đáp án là ngày cả hai cùng đồng ý.__"
      }
     ]
    },
@@ -896,31 +910,31 @@
       "accept": [
        "street"
       ],
-      "explain_vi": "Anna nói: \"you'll explore the city's old streets.\""
+      "explain_vi": "==In week one, you'll explore the city's old streets== → **streets**."
      },
      {
       "answer": "trees",
       "accept": [],
-      "explain_vi": "Anna nói: \"we'll go to the countryside to plant trees.\""
+      "explain_vi": "==we'll go to the countryside to plant trees== → **trees**."
      },
      {
       "answer": "film",
       "accept": [
        "movie"
       ],
-      "explain_vi": "Anna nói: \"make a short film, using only your phones.\""
+      "explain_vi": "==You'll work in teams to make a short film, using only your phones.== → **film**."
      },
      {
       "answer": "cooking",
       "accept": [],
-      "explain_vi": "Ngày hội thể thao là năm ngoái; Anna sửa: \"the final week is a cooking competition.\""
+      "explain_vi": "Ngày hội thể thao là năm ngoái; Anna sửa: ==This year, the final week is a cooking competition.== → **cooking**. __Nghe 'sorry, I need to correct that' thì chờ thông tin mới.__"
      },
      {
       "answer": "40",
       "accept": [
        "forty"
       ],
-      "explain_vi": "Anna nói: \"Places are limited to 40 students.\""
+      "explain_vi": "==Places are limited to 40 students== → **40**."
      }
     ]
    }
@@ -999,7 +1013,7 @@
        "Linh has asked him to leave."
       ],
       "answer": 1,
-      "explain_vi": "Nam: \"I'm thinking about it, but I haven't made up my mind yet.\" Linh chỉ kể lại tin cho Anna."
+      "explain_vi": "Nam: ==I'm thinking about it, but I haven't made up my mind yet.== → **He hasn't decided whether to leave the club.** __make up one's mind nghĩa là quyết định.__"
      },
      {
       "q": "Why is Nam thinking of leaving the club?",
@@ -1010,7 +1024,7 @@
        "His English is not good enough."
       ],
       "answer": 2,
-      "explain_vi": "\"With the entrance exam coming, I just don't have enough spare time.\" Cậu vẫn rất thích câu lạc bộ."
+      "explain_vi": "==With the entrance exam coming, I just don't have enough spare time.== → **He needs more time to prepare for an exam.** __A sai vì Nam nói cậu rất thích câu lạc bộ.__"
      },
      {
       "q": "What does Anna believe about the debate club?",
@@ -1021,7 +1035,7 @@
        "It takes up too much of its members' time."
       ],
       "answer": 0,
-      "explain_vi": "Anna: \"it teaches you to think quickly and organise your ideas. That's useful in every subject.\""
+      "explain_vi": "Anna: ==it teaches you to think quickly and organise your ideas. That's useful in every subject== → **It develops skills that are useful in all subjects.**"
      },
      {
       "q": "Why is Nam unsure about coming every other week?",
@@ -1032,7 +1046,7 @@
        "He worries he would disappoint his team."
       ],
       "answer": 3,
-      "explain_vi": "\"I'd feel I was letting the team down\" = sợ làm đội thất vọng. Thầy Brown từng cho học sinh khác làm vậy."
+      "explain_vi": "==I'd feel I was letting the team down== → **He worries he would disappoint his team.** __let sb down nghĩa là làm ai thất vọng.__"
      },
      {
       "q": "What is Nam's plan at the end of the conversation?",
@@ -1043,7 +1057,7 @@
        "To ask his parents to talk to Mr Brown"
       ],
       "answer": 2,
-      "explain_vi": "Nam: \"I'll talk to Mr Brown first and see what he suggests. Then I'll decide.\" Đi cách tuần chỉ là gợi ý của Anna."
+      "explain_vi": "Nam: ==I'll talk to Mr Brown first and see what he suggests. Then I'll decide.== → **To ask the teacher's advice before deciding.** __Đi cách tuần chỉ là gợi ý của Anna.__"
      }
     ]
    },
@@ -1058,31 +1072,31 @@
       "accept": [
        "visitor center"
       ],
-      "explain_vi": "\"carry your waste with you until we reach the bins at the visitor centre.\""
+      "explain_vi": "==carry your waste with you until we reach the bins at the visitor centre== → **visitor centre**."
      },
      {
       "answer": "rescue centre",
       "accept": [
        "rescue center"
       ],
-      "explain_vi": "\"you can see them up close at the rescue centre.\" Ngoài rừng khó thấy vì chúng rất nhút nhát."
+      "explain_vi": "==you can see them up close at the rescue centre== → **rescue centre**. __Ngoài rừng khó thấy khỉ vì chúng rất nhút nhát.__"
      },
      {
       "answer": "after",
       "accept": [],
-      "explain_vi": "Tờ chương trình ghi \"before lunch\", nhưng \"in fact we'll visit it after lunch.\""
+      "explain_vi": "Tờ chương trình ghi trước bữa trưa, nhưng ==in fact we'll visit it after lunch== → **after**. __'in fact' báo hiệu thông tin đúng.__"
      },
      {
       "answer": "red",
       "accept": [],
-      "explain_vi": "\"follow the red signs, not the yellow ones\" – biển vàng dành cho đường dài hơn."
+      "explain_vi": "==follow the red signs, not the yellow ones== → **red**. __Biển vàng dành cho đường dài hơn, là bẫy.__"
      },
      {
       "answer": "3",
       "accept": [
        "three"
       ],
-      "explain_vi": "Mai nói: \"Our walk takes about 3 hours.\""
+      "explain_vi": "Mai nói: ==Our walk takes about 3 hours== → **3**."
      }
     ]
    }

@@ -133,8 +133,10 @@ function uploadResultHTML(u){
   if(R.unreadable)return `<div class="notice">Máy không đọc được ảnh bài làm. Em chụp lại rõ hơn, đủ sáng và thẳng trang nhé.</div>`;
   const wrong=items.filter(it=>it.correct!==true),right=items.filter(it=>it.correct===true);
   const msgs=CLOUD.messages.filter(m=>m.uploadId===u.id);
+  const EX={};try{const D=DAYS[u.day-1]||{};const PP=((C.web&&C.web[u.day])||{}).paper_plus;[...Object.values(D.paper||{}),PP||{}].forEach(s=>((s&&s.items)||[]).forEach(x=>{if(x.id&&x.explain_vi)EX[x.id]=x.explain_vi}))}catch(e){}
   const it1=it=>`<li class="ai-item ${it.correct===false?'bad':'unk'}"><div><b>${esc(it.label)}</b> ${esc(it.q)}</div>
      <div class="small">Em viết: <b>${esc(it.read||'—')}</b> · Đáp án: <b>${esc(it.answer)}</b>${it.teacher?' · <span class="pill good">Cô đã xem</span>':''}</div>
+     ${EX[it.id]?`<div class="small kx">${fmtVi(EX[it.id])}</div>`:''}
      ${it.note?`<div class="small">${esc(it.note)}</div>`:''}
      <button class="linkbtn" data-dispute="${esc(it.id)}" data-label="${esc(it.label)}">Con chưa đồng ý</button></li>`;
   const W=R.writing;
