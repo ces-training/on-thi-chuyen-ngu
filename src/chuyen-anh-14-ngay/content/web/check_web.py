@@ -1,6 +1,9 @@
 """Kiểm tra tệp content/web/dayNN.json theo SPEC.md. Chạy: python3 check_web.py day03.json [day04.json ...]"""
 import json, re, sys
 
+def norm_(x):
+    return re.sub(r"[^a-z0-9 ]", "", str(x).lower().replace("-", " "))
+
 def err(f, m):
     print(f"{f}: {m}"); return 1
 
@@ -101,6 +104,34 @@ def check_obj(d, path, full=False):
     pe = d.get("paper_easy")
     if not pe or not pe.get("hints") or not 6 <= len(pe.get("reading_gloss", [])) <= 8 or not 3 <= len(pe.get("writing_starters", [])) <= 4:
         bad += err(path, "paper_easy: cần hints, 6–8 reading_gloss, 3–4 writing_starters")
+    LS = d.get("listening")
+    if not LS: bad += err(path, "thiếu listening")
+    else:
+        lim = {"nen": (120, 160, 90, 120), "chuan": (170, 220, 130, 170), "nang": (230, 290, 170, 210)}
+        for lv, (a1, a2, b1, b2) in lim.items():
+            L = LS.get(lv)
+            if not L: bad += err(path, f"listening.{lv}: thiếu"); continue
+            p1, p2 = L.get("part1", {}), L.get("part2", {})
+            sp = p1.get("speakers", [])
+            if len(sp) != 2: bad += err(path, f"listening.{lv}.part1: cần 2 speakers")
+            sc = p1.get("script", [])
+            wc = sum(len(x.get("t", "").split()) for x in sc)
+            if not (a1 - 15 <= wc <= a2 + 20): bad += err(path, f"listening.{lv}.part1: {wc} từ (cần {a1}–{a2})")
+            if any(x.get("s") not in (0, 1) for x in sc): bad += err(path, f"listening.{lv}.part1: s phải là 0/1")
+            its = p1.get("items", [])
+            if len(its) != 5: bad += err(path, f"listening.{lv}.part1: cần 5 câu")
+            for it in its:
+                if len(it.get("options", [])) != 4 or it.get("answer") not in (0, 1, 2, 3) or not it.get("explain_vi"): bad += err(path, f"listening.{lv}.part1: câu thiếu/sai: {it.get('q')}")
+            w2 = len(p2.get("script", "").split())
+            if not (b1 - 15 <= w2 <= b2 + 20): bad += err(path, f"listening.{lv}.part2: {w2} từ (cần {b1}–{b2})")
+            i2 = p2.get("items", [])
+            if len(i2) != 5: bad += err(path, f"listening.{lv}.part2: cần 5 chỗ trống")
+            for i in range(1, 6):
+                if f"[{i}]" not in p2.get("text", ""): bad += err(path, f"listening.{lv}.part2: text thiếu [{i}]")
+            for it in i2:
+                if not it.get("answer") or len(str(it["answer"]).split()) > 3: bad += err(path, f"listening.{lv}.part2: đáp án sai: {it.get('answer')}")
+                if norm_(it["answer"]) not in norm_(p2.get("script", "")) and not any(norm_(x) in norm_(p2.get("script", "")) for x in it.get("accept", [])):
+                    bad += err(path, f"listening.{lv}.part2: đáp án '{it['answer']}' không có nguyên văn trong script")
     if not bad: print(f"{path}: OK")
     return bad
 

@@ -98,3 +98,38 @@ Học sinh được xếp 1 trong 3 mức theo bài đầu vào: **Nền tảng*
 - `paper_easy` (gợi ý in kèm cho học sinh Nền tảng): `hints` cho từng câu của phần C (cấu tạo từ; buổi ôn: phần R3) nói từ loại cần điền ("danh từ", "tính từ", "trạng từ", "động từ", "danh từ số nhiều"…); `reading_gloss`: 6–8 từ khó trong bài đọc E kèm nghĩa tiếng Việt; `writing_starters`: 3–4 câu mở đầu gợi ý cho bài viết F.
 
 Kiểm tra: `python3 check_web.py dayNN.json` (đã kiểm cả các khoá mới).
+
+## Luyện nghe mỗi buổi (bổ sung 22/10/2026)
+
+Mỗi `dayNN.json` thêm khoá `listening` với 3 bản theo mức. Phần nghe của đề chuyên Anh Sở Hà Nội có 20 câu (hội thoại dài + trắc nghiệm, nối, độc thoại + điền/nối, mức B2–C1, có tiếng ồn nền). Đây là bản rút gọn 10 câu/buổi:
+
+```json
+"listening": {
+  "nen":   {"part1": {…}, "part2": {…}},
+  "chuan": {"part1": {…}, "part2": {…}},
+  "nang":  {"part1": {…}, "part2": {…}}
+}
+```
+
+`part1` — hội thoại hai người, 5 câu trắc nghiệm:
+```json
+{"title_vi": "Phần 1 · Hội thoại", "intro_vi": "…(≤ 30 từ: nghe gì, làm gì)",
+ "speakers": [{"name": "Linh", "voice": "female"}, {"name": "Mark", "voice": "male"}],
+ "script": [{"s": 0, "t": "Hi Mark, …"}, {"s": 1, "t": "…"}],
+ "items": [{"q": "Why is Linh late?", "options": ["…", "…", "…", "…"], "answer": 0, "explain_vi": "…"}]}
+```
+`part2` — độc thoại (thông báo, lời hướng dẫn, bài nói ngắn), điền ghi chú 5 chỗ:
+```json
+{"title_vi": "Phần 2 · Độc thoại", "intro_vi": "…", "script": "…", "text": "SCIENCE MUSEUM TRIP\n• Meet at: the [1]\n• …", "items": [{"answer": "main gate", "accept": ["gate"], "explain_vi": "…"}]}
+```
+
+Quy định:
+- Chủ đề bám chủ đề của buổi; dùng từ vựng và ngữ pháp của buổi một cách tự nhiên. Không trùng nội dung bài nghe sẵn có ở `exam` (buổi 4, 10).
+- Máy đọc bằng giọng đọc của trình duyệt: viết câu rõ ràng, tránh viết tắt, ký hiệu, dấu gạch ngang lạ; số giờ viết bằng chữ ("half past eight"); con số trong đáp án viết bằng chữ số.
+- Độ dài và độ khó:
+  - `nen` (A2): hội thoại 8–10 lượt, tổng 120–160 từ; độc thoại 90–120 từ; câu ngắn, đáp án nói thẳng, ít gây nhiễu; câu hỏi trắc nghiệm hỏi chi tiết rõ ràng.
+  - `chuan` (A2+–B1): hội thoại 10–12 lượt, 170–220 từ; độc thoại 130–170 từ; có 1–2 chỗ gây nhiễu (nói sai rồi sửa).
+  - `nang` (B1+–B2): hội thoại 12–14 lượt, 230–290 từ; độc thoại 170–210 từ; nhiều chỗ gây nhiễu (đổi ý, so sánh hai lựa chọn, thông tin bị bác bỏ), câu hỏi về ý kiến, thái độ, suy luận; từ vựng B2.
+- Trắc nghiệm: 4 phương án, chỉ một đáp án đúng; đáp án đúng không chỉ là từ lặp nguyên văn trong bài (nhất là `chuan`, `nang`). Vị trí đáp án đúng thay đổi giữa các câu.
+- Điền ghi chú: mỗi chỗ 1–2 từ hoặc một con số; đáp án nghe được rõ trong bài; `accept` liệt kê biến thể đúng (số ít/số nhiều nếu cả hai hợp lý, có/không mạo từ).
+- `explain_vi` ≤ 25 từ, chỉ ra câu nào trong bài cho đáp án.

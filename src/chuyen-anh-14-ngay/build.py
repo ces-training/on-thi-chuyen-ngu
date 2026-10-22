@@ -17,7 +17,7 @@ web = {}
 for n in range(1, 15):
     p = here / f"content/web/day{n:02d}.json"
     if p.exists():
-        w = json.load(open(p, encoding="utf-8")); web[n] = {k: w[k] for k in ("grammar_games", "exam", "exam_easy", "exam_plus", "paper_plus") if k in w}
+        w = json.load(open(p, encoding="utf-8")); web[n] = {k: w[k] for k in ("grammar_games", "exam", "exam_easy", "exam_plus", "paper_plus", "listening") if k in w}
 mp = here / "content/web/media.json"
 media = json.load(open(mp, encoding="utf-8")) if mp.exists() else {}
 mv = here / "content/web/media_vi.json"

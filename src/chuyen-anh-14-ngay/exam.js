@@ -73,3 +73,46 @@ function renderExam(box,B,saved,onDone){
     if(window.speechSynthesis)try{speechSynthesis.cancel()}catch(_){}
     onDone&&onDone(r)});
 }
+
+/* ===== Luyện nghe theo khuôn đề Sở: phần 1 hội thoại hai giọng + trắc nghiệm, phần 2 độc thoại + điền ghi chú =====
+   renderListening(box, L, track, onDone): L = {part1, part2}. Máy đọc bằng giọng của trình duyệt; nghe tối đa 2 lần mỗi phần.
+   Mức Nâng cao có tiếng ồn nền nhẹ như đề thật. */
+const LS_RATE={nen:.8,chuan:.92,nang:1};
+function lsVoices(){const all=(window.speechSynthesis&&speechSynthesis.getVoices())||[];const en=all.filter(v=>/^en/i.test(v.lang));
+  const fem=/female|samantha|karen|serena|kate|libby|sonia|hazel|susan|moira|tessa|fiona|victoria|zira|aria|jenny|emma|amy/i,mal=/male|daniel|arthur|george|ryan|thomas|oliver|alex|fred|david|mark|guy|brian|james/i;
+  const gb=en.filter(v=>/en-GB/i.test(v.lang));const pick=(re,pool)=>pool.find(v=>re.test(v.name)&&!(re===fem&&/\bmale\b/i.test(v.name)&&!/female/i.test(v.name)));
+  const f=pick(fem,gb)||pick(fem,en)||gb[0]||en[0]||null;const m=pick(mal,gb.filter(v=>v!==f))||pick(mal,en.filter(v=>v!==f))||en.find(v=>v!==f)||f;return {female:f,male:m,same:!f||f===m}}
+let LS_NOISE=null;
+function lsNoise(on){try{if(!on){if(LS_NOISE){LS_NOISE.src.stop();LS_NOISE=null}return}if(LS_NOISE)return;const ac=G_AC=G_AC||new (window.AudioContext||window.webkitAudioContext)();
+  const len=ac.sampleRate*2,buf=ac.createBuffer(1,len,ac.sampleRate),d=buf.getChannelData(0);let last=0;for(let i=0;i<len;i++){const w=Math.random()*2-1;last=(last+.02*w)/1.02;d[i]=last*3.5}
+  const src=ac.createBufferSource();src.buffer=buf;src.loop=true;const g=ac.createGain();g.gain.value=.05;src.connect(g);g.connect(ac.destination);src.start();LS_NOISE={src}}catch(e){}}
+function lsPlay(lines,track,btn,state,done){const sy=window.speechSynthesis;if(!sy||!window.SpeechSynthesisUtterance){btn.disabled=true;btn.textContent='Máy này không đọc được';return}
+  if(state.plays>=2||state.on)return;sy.cancel();const V=lsVoices();state.plays++;state.on=true;btn.disabled=true;btn.textContent='Đang phát…';if(track==='nang')lsNoise(true);
+  let i=0;const next=()=>{if(i>=lines.length||!btn.isConnected){state.on=false;lsNoise(false);btn.disabled=state.plays>=2;btn.textContent=state.plays>=2?'Đã nghe 2 lần':'▶ Nghe lần 2';done&&done();return}
+    const ln=lines[i++];const u=new SpeechSynthesisUtterance(ln.t);u.lang='en-GB';u.rate=LS_RATE[track]||.92;const v=ln.voice==='male'?V.male:V.female;if(v)u.voice=v;if(V.same)u.pitch=ln.voice==='male'?.75:1.25;
+    u.onend=()=>setTimeout(next,ln.pause||350);u.onerror=()=>setTimeout(next,50);sy.speak(u)};next()}
+function lsSentences(t){return String(t).match(/[^.!?]+[.!?]+["']?|[^.!?]+$/g).map(s=>s.trim()).filter(Boolean)}
+function renderListening(box,L,track,saved,onDone){const p1=L.part1,p2=L.part2;
+  const lines1=p1.script.map(x=>({t:x.t,voice:(p1.speakers[x.s]||{}).voice||'female',pause:420}));const lines2=lsSentences(p2.script).map(t=>({t,voice:'female',pause:250}));
+  const tr=t=>p1.speakers.map(s=>s.name);
+  box.innerHTML=`<p class="small muted">Như đề thật: đọc câu hỏi trước, mỗi phần được nghe 2 lần. ${track==='nang'?'Bản Nâng cao có tiếng ồn nền nhẹ giống phòng thi.':''} Nên đeo tai nghe.</p>
+   <form class="x-form ls-part" data-p="1"><div class="x-intro"><h3>${esc(p1.title_vi||'Phần 1 · Hội thoại')}</h3><p class="small">${esc(p1.intro_vi||'')}</p></div>
+    <div class="x-listen"><button type="button" class="btn ls-play">▶ Nghe lần 1</button><span class="small muted">${p1.speakers.map(s=>esc(s.name)).join(' và ')}</span></div>
+    ${p1.items.map((it,i)=>`<div class="q x-item" data-i="${i}"><div class="qhead"><span class="qnum">${i+1}</span></div><div class="qtext">${esc(it.q)}</div><div class="opts">${G_SHUF([0,1,2,3]).map(j=>`<label class="opt" data-i="${j}"><input type="radio" name="l1_${i}" value="${j}"><span>${esc(it.options[j])}</span></label>`).join('')}</div><div class="fbslot"></div></div>`).join('')}
+    <details class="x-script" hidden><summary>Xem lời bài nghe</summary>${p1.script.map(x=>`<p><b>${esc((p1.speakers[x.s]||{}).name||'')}:</b> ${esc(x.t)}</p>`).join('')}</details>
+    <div class="sticky-submit"><button class="btn hi" type="submit">Chấm phần 1</button><span class="small muted x-msg"></span></div></form>
+   <form class="x-form ls-part" data-p="2"><div class="x-intro"><h3>${esc(p2.title_vi||'Phần 2 · Độc thoại')}</h3><p class="small">${esc(p2.intro_vi||'')}</p></div>
+    <div class="x-listen"><button type="button" class="btn ls-play">▶ Nghe lần 1</button></div>
+    <div class="passage x-text">${esc(p2.text).replace(/\[(\d+)\]/g,(m,k)=>`<span class="x-inwrap"><b>(${k})</b><input class="x-in" data-i="${k-1}" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Chỗ trống ${k}"></span>`)}</div><div class="x-fbs"></div>
+    <details class="x-script" hidden><summary>Xem lời bài nghe</summary><p>${esc(p2.script)}</p></details>
+    <div class="sticky-submit"><button class="btn hi" type="submit">Chấm phần 2</button><span class="small muted x-msg"></span></div></form>`;
+  const [f1,f2]=box.querySelectorAll('form.ls-part');wireOptionHighlight(f1);
+  const st1={plays:0},st2={plays:0};f1.querySelector('.ls-play').onclick=e=>lsPlay(lines1,track,e.target,st1);f2.querySelector('.ls-play').onclick=e=>lsPlay(lines2,track,e.target,st2);
+  const fin=(f,c,t,key)=>{f.dataset.graded='1';f.querySelector('button[type=submit]').disabled=true;f.querySelector('.x-script').hidden=false;try{speechSynthesis.cancel()}catch(_){}lsNoise(false);
+    f.querySelector('.x-msg').innerHTML=`Em đúng <b>${c}/${t}</b>.`;onDone&&onDone(key,{correct:c,total:t})};
+  f1.addEventListener('submit',e=>{e.preventDefault();if(f1.dataset.graded)return;let c=0;p1.items.forEach((it,i)=>{const r=f1.querySelector(`input[name="l1_${i}"]:checked`);const v=r?+r.value:null;const ok=v===it.answer;if(ok)c++;
+      const q=f1.querySelector(`.x-item[data-i="${i}"]`);q.querySelectorAll('.opt').forEach(o=>{const j=+o.dataset.i;o.classList.remove('sel');if(j===it.answer)o.classList.add('right');else if(j===v)o.classList.add('wrong')});q.querySelectorAll('input').forEach(x=>x.disabled=true);
+      q.querySelector('.fbslot').innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Chưa đúng. Đáp án: <b>'+esc(it.options[it.answer])+'</b>'}${it.explain_vi?`<span class="ex">${esc(it.explain_vi)}</span>`:''}</div>`});fin(f1,c,p1.items.length,'p1')});
+  f2.addEventListener('submit',e=>{e.preventDefault();if(f2.dataset.graded)return;let c=0;const fbs=[];p2.items.forEach((it,i)=>{const inp=f2.querySelector(`.x-in[data-i="${i}"]`);const ok=xOk(inp.value,it);if(ok)c++;inp.classList.add(ok?'ok':'bad');inp.disabled=true;
+      fbs.push(`<li class="${ok?'good':'bad'}"><b>(${i+1})</b> ${ok?'✓':'✗ đáp án: <b>'+esc(it.answer)+'</b>'}${it.explain_vi?' – '+esc(it.explain_vi):''}</li>`)});f2.querySelector('.x-fbs').innerHTML=`<ul class="x-fblist">${fbs.join('')}</ul>`;fin(f2,c,p2.items.length,'p2')});
+}

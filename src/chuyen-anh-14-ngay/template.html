@@ -515,7 +515,7 @@ function vStart(){
     <h3>Mỗi buổi em làm theo 5 bước</h3>
     <ol class="steps">
       <li><div><b>Xem video ngữ pháp và chơi 3 game</b> ôn từ mới, cụm động từ và ngữ pháp của buổi (khoảng 15 phút).</div></li>
-      <li><div><b>Làm quen 1–2 dạng bài của đề thi thật</b>, số câu rút gọn, có giải thích (khoảng 10 phút).</div></li>
+      <li><div><b>Làm quen 1–2 dạng bài của đề thi thật và luyện nghe</b> theo khuôn phần nghe đề Sở, số câu rút gọn, có giải thích (khoảng 15 phút).</div></li>
       <li><div><b>Tải bài tập giấy của ngày</b>, in ra và làm trên giấy (khoảng 30 phút).</div></li>
       <li><div><b>Gấp giấy lại, làm Kiểm tra nhanh cuối buổi</b> trên web (khoảng 5 phút). Câu sai sẽ quay lại ở các buổi sau.</div></li>
       <li><div>${cloudOn()?'<b>Chụp bài giấy gửi lên</b>: máy chấm, nhận xét và gửi kết quả cho cô. Câu nào em chưa đồng ý thì nhắn cô.':'<b>Chữa bài giấy</b> bằng đáp án trên web, tích những câu em làm đúng, rồi tự kiểm đoạn viết.'}</div></li>
@@ -591,6 +591,7 @@ function vDays(){
 const pad2=n=>String(n).padStart(2,'0');
 function gPill(n){const g=(S.days[n]||{}).games||{};const k=Object.keys(g).length;const t=gamesForDay(n).length;return `<span class="pill ${k>=t?'good':''}">${k>=t?'✓ ':''}Game ${k}/${t}</span>`}
 function xPill(n){const t=examFor(n).length;if(!t)return '';const x=(S.days[n]||{}).exam||{};const k=Object.keys(x).length;return `<span class="pill ${k>=t?'good':''}">${k>=t?'✓ ':''}Dạng bài thi ${k}/${t}</span>`}
+function lPill(n){const W=(C.web&&C.web[n])||{};if(!W.listening)return '';const l=(S.days[n]||{}).listen||{};const k=Object.keys(l).length;const c=Object.values(l).reduce((t,x)=>t+x.correct,0),t=Object.values(l).reduce((t,x)=>t+x.total,0);return `<span class="pill ${k>=2?'good':''}">${k>=2?'✓ ':''}Nghe ${k?c+'/'+t:'0/2 phần'}</span>`}
 function learnHTML(n){const D=DAYS[n-1];const W=(C.web&&C.web[n])||{};const MD=(C.media&&C.media[n])||{};const games=gamesForDay(n);const ex=examFor(n);const rec=S.days[n]||{};const tr=curTrack();const gs=rec.games||{},xs=rec.exam||{};
   const g=D.grammar;let h='';
   const vids=[];if(MD.video)vids.push(Object.assign({lang:'en'},MD.video));((C.media_vi||{})[n]||[]).forEach(v=>vids.push(Object.assign({lang:'vi'},v)));if(tr==='nen')vids.sort((a,b)=>(a.lang==='vi'?0:1)-(b.lang==='vi'?0:1));
@@ -602,9 +603,12 @@ function learnHTML(n){const D=DAYS[n-1];const W=(C.web&&C.web[n])||{};const MD=(
   learnHTML.vids=vids;learnHTML.vidHTML=vidHTML;
   h+=`<div class="card" id="gameCard"><h3 class="ih">${em('video-game')}Bước 2 · Chơi game ôn từ và ngữ pháp</h3><div class="g-tabs" role="tablist">${games.map((gm,i)=>{const r=gs[gm.key];return `<button type="button" role="tab" class="g-tab" data-g="${i}" aria-selected="${i===0}">${em(G_ICON[gm.type]||'sparkles','',28)}<span class="g-tt"><b>${esc(G_NAME[gm.type])}${gm.isNew?' <i class="g-new">Mới</i>':''}</b><small>${esc(gm.title)}</small></span>${r?gStarHTML(r.stars||0):''}</button>`}).join('')}</div><div class="g-box" id="gameBox"></div></div>`;
   if(ex.length)h+=`<div class="card" id="examCard"><h3 class="ih">${em('bullseye')}Bước 3 · Làm quen dạng bài thi thật</h3><div class="x-tabs">${ex.map((b,i)=>{const r=xs[b.format];return `<button type="button" class="x-tab" data-x="${i}" aria-selected="${i===0}">${esc(X_FMT[b.format]||b.format)}${r?` <span class="pill ${r.correct/r.total>=.6?'good':'warn'}">${r.correct}/${r.total}</span>`:''}</button>`}).join('')}</div><div id="examBox"></div></div>`;
+  const LS=((C.web&&C.web[n])||{}).listening;const ls=LS&&(LS[tr]||LS.chuan);
+  if(ls)h+=`<div class="card" id="lsCard"><h3 class="ih">${em('television')}Bước 4 · Luyện nghe (khuôn phần nghe đề Sở)</h3><div id="lsBox"></div></div>`;
+  learnHTML.ls=ls;
   if(MD.isl&&MD.isl.length)h+=`<div class="card"><h3 class="ih">${em('rocket')}Chơi thêm trên iSLCollective</h3><p class="small muted">Bài tương tác cùng chủ điểm trên trang iSLCollective (mở tab mới, không bắt buộc).</p><ul class="isl">${MD.isl.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> <span class="pill">${x.kind==='video'?'Video tương tác':x.kind==='game'?'Game':'Bài tập online'}</span>${x.note_vi?`<br><span class="small muted">${esc(x.note_vi)}</span>`:''}</li>`).join('')}</ul></div>`;
   const pf=t=>`pdf/buoi-${pad2(n)}${t==='chuan'?'':'-'+t}.pdf`;const others=Object.keys(TRACKS).filter(t=>t!==tr);
-  h+=`<div class="card hi-card" id="pdfCard"><h3 class="ih">${em('memo')}Bước 4 · Làm bài trên giấy</h3><p>In bài tập giấy của buổi ${n} (bản <b>${TRACKS[tr].name}</b>), làm trong khoảng ${D.minutes||30}${tr==='nang'?'–40':''} phút, không mở web trong lúc làm.${tr==='nen'?' Bản này có thêm một trang gợi ý: từ loại cần điền, nghĩa từ khó trong bài đọc và câu mở đầu cho bài viết.':tr==='nang'?' Bản này có thêm phần H. Thử thách nâng cao (6 câu mức B1+–B2).':''}</p><div class="row"><a class="btn hi" href="${pf(tr)}" download="Buoi-${pad2(n)}-${tr}.pdf">⬇ Tải bài tập giấy của ngày</a><a class="btn ghost" href="${pf(tr)}" target="_blank" rel="noopener">Mở xem</a></div><p class="small muted">Bản khác: ${others.map(t=>`<a href="${pf(t)}" target="_blank" rel="noopener">${TRACKS[t].name}</a>`).join(' · ')}</p></div>`;
+  h+=`<div class="card hi-card" id="pdfCard"><h3 class="ih">${em('memo')}Bước 5 · Làm bài trên giấy</h3><p>In bài tập giấy của buổi ${n} (bản <b>${TRACKS[tr].name}</b>), làm trong khoảng ${D.minutes||30}${tr==='nang'?'–40':''} phút, không mở web trong lúc làm.${tr==='nen'?' Bản này có thêm một trang gợi ý: từ loại cần điền, nghĩa từ khó trong bài đọc và câu mở đầu cho bài viết.':tr==='nang'?' Bản này có thêm phần H. Thử thách nâng cao (6 câu mức B1+–B2).':''}</p><div class="row"><a class="btn hi" href="${pf(tr)}" download="Buoi-${pad2(n)}-${tr}.pdf">⬇ Tải bài tập giấy của ngày</a><a class="btn ghost" href="${pf(tr)}" target="_blank" rel="noopener">Mở xem</a></div><p class="small muted">Bản khác: ${others.map(t=>`<a href="${pf(t)}" target="_blank" rel="noopener">${TRACKS[t].name}</a>`).join(' · ')}</p></div>`;
   return h}
 function wireLearn(n){
   const wireYt=()=>{const yt=$('#vidCard .yt-btn');if(yt)yt.onclick=()=>{const id=yt.parentElement.dataset.id;yt.parentElement.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0" title="Video ngữ pháp" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;S.days[n]=Object.assign(S.days[n]||{},{video:Date.now()});save()}};wireYt();
@@ -614,15 +618,17 @@ function wireLearn(n){
     renderGame(gb,gm,r=>{const rec=S.days[n]=S.days[n]||{};rec.games=rec.games||{};const old=rec.games[gm.key]||{plays:0,best:0,stars:0};
       rec.games[gm.key]={type:gm.type,plays:old.plays+1,best:Math.max(old.best,r.score),total:r.total,stars:Math.max(old.stars||0,r.stars),last:r.score,ms:r.ms,at:Date.now()};save();
       const tab=document.querySelector(`#gameCard .g-tab[data-g="${i}"]`);if(tab){const st=tab.querySelector('.g-stars');if(st)st.remove();tab.insertAdjacentHTML('beforeend',gStarHTML(rec.games[gm.key].stars))}
-      const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')})};
+      const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')})};
   $('#gameCard .g-tabs').onclick=e=>{const b=e.target.closest('.g-tab');if(b)openG(+b.dataset.g)};
   if(games.length)openG(0);
   const ex=examFor(n);const xb=$('#examBox');
   if(xb){const openX=i=>{document.querySelectorAll('#examCard .x-tab').forEach(b=>b.setAttribute('aria-selected',+b.dataset.x===i?'true':'false'));const B=ex[i];
       renderExam(xb,B,null,r=>{const rec=S.days[n]=S.days[n]||{};rec.exam=rec.exam||{};rec.exam[B.format]={correct:r.correct,total:r.total,at:Date.now()};save();
         const tab=document.querySelector(`#examCard .x-tab[data-x="${i}"]`);if(tab)tab.innerHTML=esc(X_FMT[B.format]||B.format)+` <span class="pill ${r.correct/r.total>=.6?'good':'warn'}">${r.correct}/${r.total}</span>`;
-        const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')})};
+        const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')})};
     $('#examCard .x-tabs').onclick=e=>{const b=e.target.closest('.x-tab');if(b)openX(+b.dataset.x)};openX(0)}
+  const lb=$('#lsBox');if(lb&&learnHTML.ls)renderListening(lb,learnHTML.ls,curTrack(),null,(key,r)=>{const rec=S.days[n]=S.days[n]||{};rec.listen=rec.listen||{};rec.listen[key]={correct:r.correct,total:r.total,at:Date.now()};save();
+    const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')});
 }
 function renderDay(n){
   const D=DAYS[n-1];const rec=S.days[n]||{};
@@ -631,9 +637,9 @@ function renderDay(n){
   const q=dueQueue(n);
   const stp=dayStatus(n);
   body.innerHTML=`<div class="card"><div class="dayhead">${dayIcon(n,'dh-ic',80)}<div class="dh-t"><p class="eyebrow">Buổi ${String(n).padStart(2,'0')}/14${D.type==='review'?' · Ôn tập':''}</p><h2>${esc(D.theme_vi)}</h2></div>${stp==='done'?'<span class="stamp">Xong</span>':stp==='part'?'<span class="stamp part">Đang làm</span>':''}</div><p class="lead">${esc(D.goal_vi||'')}</p>
-   <div class="row">${gPill(n)}${xPill(n)}${pill(wk,'Kiểm tra cuối buổi')}${pill(pp,'Bài giấy')}</div>${trackBar()}</div>
+   <div class="row">${gPill(n)}${xPill(n)}${lPill(n)}${pill(wk,'Kiểm tra cuối buổi')}${pill(pp,'Bài giấy')}</div>${trackBar()}</div>
    ${learnHTML(n)}
-   <div class="card" id="checkCard"><div class="row" style="justify-content:space-between"><h3 class="ih">${em('brain')}Bước 5 · Kiểm tra nhanh cuối buổi</h3><span class="small muted">${(D.web_check||[]).length+(wk?0:q.length)} câu · gấp tập giấy lại</span></div>
+   <div class="card" id="checkCard"><div class="row" style="justify-content:space-between"><h3 class="ih">${em('brain')}Bước 6 · Kiểm tra nhanh cuối buổi</h3><span class="small muted">${(D.web_check||[]).length+(wk?0:q.length)} câu · gấp tập giấy lại</span></div>
    ${wk?`<p class="score">${wk.correct/wk.total>=0.8?em('party-popper','',40):wk.correct/wk.total>=0.6?em('sparkles','',40):em('flexed-biceps','',40)}<span>Em đúng <b>${wk.correct}/${wk.total}</b> câu.</span></p>`:''}
    <form id="webForm"></form></div>
    <div class="card" id="paperCard"></div>`;
@@ -688,10 +694,10 @@ function renderPaperKey(n,unlocked){
 }
 function renderPaperKeyLocal(n,unlocked,card){
   const D=DAYS[n-1];const rec=S.days[n]||{};
-  if(!unlocked){card.innerHTML=`<h3 class="ih">${em('locked')}Bước 6 · Chữa bài giấy</h3><p class="muted">Đáp án bài giấy sẽ mở sau khi em làm xong Kiểm tra nhanh cuối buổi, để em kiểm tra trí nhớ trước.</p>`;return}
+  if(!unlocked){card.innerHTML=`<h3 class="ih">${em('locked')}Bước 7 · Chữa bài giấy</h3><p class="muted">Đáp án bài giấy sẽ mở sau khi em làm xong Kiểm tra nhanh cuối buổi, để em kiểm tra trí nhớ trước.</p>`;return}
   const PP=((C.web&&C.web[n])||{}).paper_plus;const P=curTrack()==='nang'&&PP?Object.assign({},D.paper,{H_plus:PP}):D.paper;const order=Object.keys(SECTION_NAMES).filter(k=>P[k]);
   const saved=(rec.paper&&rec.paper.ticks)||{};
-  let html=`<div class="row" style="justify-content:space-between"><h3 class="ih">${em('memo')}Bước 6 · Chữa bài giấy</h3>${rec.paper?`<span class="pill good">Đúng ${rec.paper.correct}/${rec.paper.total}</span>`:''}</div><p class="small muted">Đối chiếu từng câu, tích vào câu em làm đúng, rồi bấm Lưu.</p><form id="paperForm" class="key-section">`;
+  let html=`<div class="row" style="justify-content:space-between"><h3 class="ih">${em('memo')}Bước 7 · Chữa bài giấy</h3>${rec.paper?`<span class="pill good">Đúng ${rec.paper.correct}/${rec.paper.total}</span>`:''}</div><p class="small muted">Đối chiếu từng câu, tích vào câu em làm đúng, rồi bấm Lưu.</p><form id="paperForm" class="key-section">`;
   order.forEach(k=>{const sec=P[k];html+=`<h3 style="margin-top:10px;font-size:1.05rem">${SECTION_NAMES[k]}</h3>`;
     (sec.items||[]).forEach(it=>{const id=it.id;html+=`<label class="key-item"><input type="checkbox" name="${esc(id)}" id="pk_${esc(id)}" ${saved[id]?'checked':''}><span><span class="small muted">${esc(id.replace(/^d\d+/,'').replace(/^([A-Z]\d?)_?(\d+)$/,'$1.$2'))}</span> ${esc(it.q)}<br><span class="key-ans">→ ${esc(keyAnswer(it))}</span></span></label>`})});
   const F=P.F_writing;
@@ -865,7 +871,7 @@ async function unpack(code){
 }
 function summary(){
   const A=agg();const eff=efficiency(A);const entry=S.diag;
-  const days={};for(let i=1;i<=14;i++){const r=S.days[i];if(r){const g=Object.values(r.games||{}),x=Object.values(r.exam||{});days[i]=[r.web?r.web.correct:null,r.web?r.web.total:null,r.paper?r.paper.correct:null,r.paper?r.paper.total:null,r.web?r.web.at:(r.paper?r.paper.at:(g.length?Math.max(...g.map(y=>y.at)):null)),g.reduce((t,y)=>t+(y.stars||0),0),g.length,x.length?x.reduce((t,y)=>t+y.correct,0):null,x.length?x.reduce((t,y)=>t+y.total,0):null]}}
+  const days={};for(let i=1;i<=14;i++){const r=S.days[i];if(r){const g=Object.values(r.games||{}),x=Object.values(r.exam||{});days[i]=[r.web?r.web.correct:null,r.web?r.web.total:null,r.paper?r.paper.correct:null,r.paper?r.paper.total:null,r.web?r.web.at:(r.paper?r.paper.at:(g.length?Math.max(...g.map(y=>y.at)):null)),g.reduce((t,y)=>t+(y.stars||0),0),g.length,x.length?x.reduce((t,y)=>t+y.correct,0):null,x.length?x.reduce((t,y)=>t+y.total,0):null,...(()=>{const l=Object.values(r.listen||{});return l.length?[l.reduce((t,y)=>t+y.correct,0),l.reduce((t,y)=>t+y.total,0)]:[null,null]})()]}}
   const wrong=Object.entries(S.queue).map(([id,q])=>[id,q.wrong||1]);
   return {v:1,n:S.name,d:S.diag&&{t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands},f:S.final&&{t:S.final.total,o:S.final.of,l:S.final.level,b:S.final.bands},days,sk:A.skills,rt:A.retry,mq:A.mastered,q:wrong,p:S.plan,e:eff.f,sd:A.studyDays,sp:A.span,tr:curTrack(),at:Date.now()};
 }
