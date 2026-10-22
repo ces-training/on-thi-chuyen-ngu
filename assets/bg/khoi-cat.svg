@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <!-- Nền "khối cắt chéo" kiểu tạp chí teen: mảng xéo, dải trắng, chấm halftone, mép viền nét mực.
+       Cùng bảng màu với trang: xanh ngọc #4AA3B6, xanh đậm #1F6F80, vàng #FFD23F, mực #14303A. -->
+  <defs>
+    <pattern id="dotW" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+      <circle cx="13" cy="13" r="6.5" fill="#ffffff"/>
+    </pattern>
+    <pattern id="dotT" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(-14)">
+      <circle cx="12" cy="12" r="6" fill="#4AA3B6"/>
+    </pattern>
+    <pattern id="dotY" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <circle cx="10" cy="10" r="5" fill="#E9A800"/>
+    </pattern>
+    <pattern id="hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(-24)">
+      <rect width="5" height="14" fill="#ffffff"/>
+    </pattern>
+    <!-- chấm to dần về một góc, như lưới in halftone -->
+    <radialGradient id="fadeTR" cx="1" cy="0" r="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".75" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="fadeBR" cx=".85" cy="1" r=".9"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="fadeTL" cx="0" cy="0" r="1"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <mask id="mTR"><rect width="1600" height="1000" fill="url(#fadeTR)"/></mask>
+    <mask id="mBR"><rect width="1600" height="1000" fill="url(#fadeBR)"/></mask>
+    <mask id="mTL"><rect width="420" height="520" fill="url(#fadeTL)"/></mask>
+  </defs>
+
+  <!-- nền xanh ngọc -->
+  <rect width="1600" height="1000" fill="#4AA3B6"/>
+  <!-- chấm trắng nhạt ở góc trên bên phải -->
+  <rect width="1600" height="1000" fill="url(#dotW)" mask="url(#mTR)"/>
+
+  <!-- mảng xanh sáng chéo giữa -->
+  <path d="M0 360 L1600 40 L1600 210 L0 560 Z" fill="#5DB4C6"/>
+  <path d="M0 360 L1600 40 L1600 210 L0 560 Z" fill="url(#hatch)" opacity=".10"/>
+
+  <!-- mảng xanh đậm lớn phía dưới, cắt chéo -->
+  <path d="M0 700 L1600 330 L1600 1000 L0 1000 Z" fill="#1F6F80"/>
+  <path d="M0 700 L1600 330 L1600 1000 L0 1000 Z" fill="url(#dotT)" mask="url(#mBR)" opacity=".75"/>
+  <!-- dải trắng chạy dọc mép cắt -->
+  <path d="M0 668 L1600 298 L1600 318 L0 690 Z" fill="#ffffff"/>
+  <!-- mép cắt viền nét mực, hơi run tay -->
+  <path d="M-4 701 C420 604 900 493 1604 330" fill="none" stroke="#14303A" stroke-width="5" stroke-linecap="round"/>
+  <path d="M-4 667 C430 568 920 455 1604 297" fill="none" stroke="#14303A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- mảng xanh vừa ở góc dưới bên phải -->
+  <path d="M1600 640 L1600 1000 L1040 1000 Z" fill="#2E8799"/>
+  <path d="M1600 640 L1600 1000 L1040 1000 Z" fill="url(#dotW)" opacity=".18"/>
+  <path d="M1602 638 C1420 760 1240 880 1038 1002" fill="none" stroke="#14303A" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- nêm vàng góc trên bên trái, có chấm halftone vàng đậm -->
+  <path d="M0 0 L360 0 L0 470 Z" fill="#FFD23F"/>
+  <path d="M0 0 L360 0 L0 470 Z" fill="url(#dotY)" mask="url(#mTL)"/>
+  <path d="M362 -4 C250 150 120 320 -4 474" fill="none" stroke="#14303A" stroke-width="5" stroke-linecap="round"/>
+  <!-- dải trắng song song với nêm vàng -->
+  <path d="M392 0 L414 0 L0 540 L0 512 Z" fill="#ffffff"/>
+
+  <!-- miếng vàng nhỏ ở mép dưới bên trái, như mẩu giấy cắt -->
+  <path d="M0 900 L250 840 L230 1000 L0 1000 Z" fill="#FFD23F"/>
+  <path d="M0 900 L250 840 L230 1000 L0 1000 Z" fill="url(#dotY)" opacity=".55"/>
+  <path d="M-4 901 C80 880 170 860 252 838 L232 1004" fill="none" stroke="#14303A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

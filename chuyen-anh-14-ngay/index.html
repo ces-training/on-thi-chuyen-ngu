@@ -681,6 +681,30 @@ table.gp td:first-child{white-space:nowrap;font-weight:700;width:1%}
 .ph.chot .ph-n{background:var(--gold);font-size:.78rem;text-align:center;line-height:1.1}
 table.copt td,table.copt th{white-space:normal}table.copt td:first-child{min-width:7.5em}table.copt .pill{white-space:nowrap;margin-top:3px}
 table.copt tr.cur td{font-weight:700;background:var(--agent-tint)}
+/* ----- nền khối cắt chéo kiểu tạp chí teen + bố cục rộng, thanh dọc to hơn (22/10/2026) ----- */
+html{background:#4AA3B6 url("../assets/bg/khoi-cat.svg") center/cover no-repeat fixed}
+body{background-color:transparent}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){background-image:linear-gradient(rgba(6,20,24,.62),rgba(6,20,24,.62)),url("../assets/bg/khoi-cat.svg")}}
+:root[data-theme="dark"]{background-image:linear-gradient(rgba(6,20,24,.62),rgba(6,20,24,.62)),url("../assets/bg/khoi-cat.svg")}
+.dash-head h1{text-shadow:3px 3px 0 #14303A,0 0 18px rgba(10,40,48,.3)}
+@media (min-width:1100px){
+  header.top{width:184px}
+  header.top .wrap{padding:18px 12px}
+  .logo svg{width:64px;height:64px}
+  .hello{font-size:1rem}
+  nav.tabs{gap:8px}
+  nav.tabs button{font-size:1.02rem;font-weight:700;line-height:1.25;min-height:88px;padding:12px 8px;gap:6px}
+  nav.tabs button svg.dd,nav.tabs button svg{width:40px;height:40px}
+  main.wrap{max-width:1180px;margin-left:max(232px,calc(50% - 590px + 100px));margin-right:24px}
+  main.wrap[data-v="start"]{max-width:1640px;margin-left:max(232px,calc(50% - 820px + 100px));margin-right:24px}
+  .dash{grid-template-columns:minmax(0,1fr) clamp(320px,22vw,380px)}
+}
+@media (min-width:1500px){
+  .qt{height:212px}.qt img{height:238px;bottom:-48px}
+  .qt .lbl{font-size:1.5rem}
+  .collage{min-height:290px}.collage img{height:230px}.collage .c1{height:208px}.collage .c2{height:214px}.collage .c3{height:250px;margin-left:-100px}
+  .ask{width:156px;height:156px}
+}
 </style>
 
 <header class="top hq">
