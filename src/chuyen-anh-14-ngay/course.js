@@ -96,7 +96,7 @@ function courseCalc(o){
   const now=Date.now();
   const left14=DAYS.filter(d=>dayStatus(d.day)!=='done').length;
   const start=new Date(now+left14/(o.dpw*STUDY_FACTOR)*WK);
-  const exam=examDateFor(o.grade);const g4=new Date(exam.getFullYear(),0,1);
+  const exam=examDateFor(o.grade);const g4=chotDate(o.grade); // mốc chốt trường: hết hạn nâng trình độ, từ đây chỉ luyện đề
   const gain=(o.min*o.dpw/60*CONV*o.eff+o.cls*classF())*STUDY_FACTOR; // giờ học chuẩn mỗi tuần lịch
   const chW=14/(o.dpw*STUDY_FACTOR); // số tuần lịch cho một chặng 14 buổi
   const perCh=gain*chW;
@@ -107,12 +107,12 @@ function courseCalc(o){
   const end=new Date(t);
   const wTo=d=>Math.max(0,(d-start)/WK);
   const reqMin=d=>{const w=wTo(d)*STUDY_FACTOR;if(w<=0)return Infinity;const hpw=(o.targetH-o.entryH)/w-o.cls*classF();return Math.max(0,hpw/(CONV*o.eff)*60/o.dpw)};
-  const before=wTo(g4)>=12; // còn ít nhất 3 tháng trước khi luyện đề; nếu không (lớp 9) thì tính đến ngày thi
+  const before=wTo(g4)>=6; // còn ít nhất 6 tuần trước mốc chốt; nếu không (lớp 9 đã sát mốc) thì tính đến ngày thi
   const req=before?reqMin(g4):reqMin(exam);
-  const hExam=o.entryH+gain*wTo(exam);
+  const hExam=o.entryH+gain*wTo(exam),hChot=o.entryH+gain*wTo(before?g4:exam);
   const g4Ch=Math.max(0,Math.floor((exam-Math.max(g4,start))/WK*o.dpw*STUDY_FACTOR/14));
   const status=o.targetH<=o.entryH?'done':end<=g4?'good':end<=exam?'warn':'bad';
-  return {start,exam,g4,gain,chW,perCh,phases,end,req,before,hExam,g4Ch,status,reqMin,wBefore:wTo(g4)};
+  return {start,exam,g4,gain,chW,perCh,phases,end,req,before,hExam,hChot,g4Ch,status,reqMin,wBefore:wTo(g4)};
 }
 function courseInputs(){
   S.course=Object.assign({goal:'cva',lv:null},S.course||{});
@@ -142,6 +142,7 @@ function timelineHTML(R,o){
   const row2=seg(Math.max(R.g4.getTime(),t0),R.exam.getTime(),'s4','GĐ4 Luyện đề');
   let ticks='';const y0=new Date(t0).getFullYear();
   for(let y=y0;y<=R.exam.getFullYear();y++){const d=new Date(y,8,5).getTime();if(d>t0&&d<t1){const g=o.grade+(y-(new Date(t0).getMonth()>=7?y0+1:y0))+1;ticks+=`<span class="tl-tick" style="left:${X(d)}%">${g<=9?'Lớp '+g:''}</span>`}}
+  if(R.g4.getTime()>t0)ticks+=`<span class="tl-tick ch" style="left:${X(R.g4.getTime())}%">Chốt trường</span>`;
   ticks+=`<span class="tl-tick ex" style="left:${X(R.exam.getTime())}%">Thi</span>`;
   return `<div class="tl" role="img" aria-label="Dòng thời gian các giai đoạn từ nay đến kỳ thi ${fmtD(R.exam)}">
     <div class="tl-lab">Nâng trình độ</div><div class="tl-row">${row1}</div>
@@ -152,10 +153,12 @@ function phaseCard(ph,i,R,o,first){
   const G=gramPlan(ph,o.entryH);const late=ph.e>R.g4;
   const rows=G.out.map(r=>r.items?`<tr><td>Chặng ${r.a}</td><td>${r.items.map(g=>`${g.n}. ${esc(g.t)}${g.d14?' <span class="pill d14">đã gặp ở buổi '+g.d14+'</span>':''}`).join('<br>')}</td></tr>`:`<tr><td>Chặng ${r.a}${r.b>r.a?'–'+r.b:''}</td><td class="muted">Luyện sâu các chủ điểm đã học bằng viết lại câu, ôn xoắn ốc, mở rộng từ theo 12 cụm chủ đề</td></tr>`).join('');
   const toName=ph.toH>=o.targetH?lvName(o.targetH):ph.P.gate;
+  const ms=MS().find(m=>m.final?ph.toH>=o.targetH:m.h===ph.toH);
+  const msTxt=ms?(()=>{const ok=ph.e<=ms.date;const gap=Math.round((ph.e-ms.date)/(30.4*864e5));return `<p class="ms"><span class="pill ${ok?'good':'warn'}">${ok?'kịp mốc':'chậm '+gap+' tháng'}</span> Mốc chuẩn của CES: <b>${esc(ms.target)}</b> trước ${ms.date.toLocaleDateString('vi-VN')} (${esc(ms.label.toLowerCase())}). Em dự kiến đạt khoảng ${fmtD(ph.e)}.${ok?'':ms.final?' Như vậy là trông vào bứt phá năm cuối cấp: nên tăng thời gian ngay từ bây giờ.':' Chậm mốc giữa chặng vẫn bù được nếu em kịp mốc chốt trường.'}</p>`})():'';
   return `<details class="card ph" ${first?'open':''} style="--pc:${ph.P.c}">
    <summary><span class="ph-n">GĐ${ph.P.k}</span><span class="ph-t"><b>${esc(ph.P.name)}</b> · ${esc(ph.fromH===o.entryH&&o.lv?(LEVELS.find(l=>l.k===o.lv)||{name:lvName(ph.fromH)}).name:lvName(ph.fromH))} → ${esc(toName)}<br><span class="small muted">${fmtD(ph.s)} – ${fmtD(ph.e)} · khoảng ${isFinite(ph.nCh)?ph.nCh:'?'} chặng</span></span>${late?'<span class="pill warn">chồng lên luyện đề</span>':''}</summary>
    <div class="ph-b">
-    <p>Mục tiêu: lên <b>${esc(toName)}</b> và qua bài kiểm tra cửa ra mới sang giai đoạn sau. Chưa qua thì em học thêm một chặng ôn nhắm vào phần còn yếu.</p>
+    <p>Mục tiêu: lên <b>${esc(toName)}</b> và qua bài kiểm tra cửa ra mới sang giai đoạn sau. Chưa qua thì em học thêm một chặng ôn nhắm vào phần còn yếu.</p>${msTxt}
     <h4>Ngữ pháp mới, rải theo chặng</h4>
     ${G.reviewA2?'<p class="small muted">10 chủ điểm mốc A2 không học lại thành bài mới; chúng quay lại trong các buổi ôn và bài viết lại câu.</p>':''}
     <div class="tbl-wrap"><table class="gp"><tbody>${rows}</tbody></table></div>
@@ -191,15 +194,15 @@ function vCourse(){
     const nAll=R.phases.reduce((t,p)=>t+(isFinite(p.nCh)?p.nCh:0),0);
     const weeksLeft=Math.round((R.exam-Date.now())/WK);
     const reqR=Math.ceil(R.req/5)*5,z=zone(reqR,o.grade),cap=packCap(o.grade);
-    const head={done:'Em đã ở mức của trường này',good:'Kịp trước khi luyện đề',warn:'Kịp, nhưng phải học song song với luyện đề',bad:'Chưa kịp với lịch hiện tại'}[R.status];
+    const head={done:'Em đã ở mức của trường này',good:'Kịp mốc chốt trường',warn:'Chỉ kịp nếu bứt phá ở năm cuối cấp: rủi ro',bad:'Chưa kịp với lịch hiện tại'}[R.status];
     const vcls={done:'good',good:'good',warn:'warn',bad:'bad'}[R.status];
     let msg;
     if(R.status==='done')msg=`Trình độ em đã chạm mức cần cho trường này. Em có thể chọn trường cao hơn ở ô "Trường em nhắm", hoặc giữ lịch nhẹ và vào luyện đề sớm.`;
-    else if(R.status==='good')msg=`Với ${o.min} phút × ${o.dpw} buổi/tuần${o.cls?` và ${String(o.cls).replace('.',',')} giờ học trên lớp`:''}, em xong phần nâng trình độ khoảng ${fmtD(R.end)}, trước khi bắt đầu luyện đề (${fmtD(R.g4)}).`;
-    else if(R.status==='warn')msg=`Phần nâng trình độ kéo dài đến khoảng ${fmtD(R.end)}, tức là sang giai đoạn luyện đề. Trong các tháng cuối, mỗi tuần em vừa làm đề vừa học tiếp, nên rất căng.`;
-    else msg=`Với lịch này, đến ngày thi em đạt khoảng ${esc(lvName(R.hExam))}, chưa tới mức ${esc(lvName(o.targetH))} mà trường cần.`;
-    const reqTxt=R.status==='done'?'':isFinite(reqR)?`Để xong phần nâng trình độ ${R.before?'trước khi luyện đề':'trước ngày thi'}, em cần khoảng <b>${reqR} phút tự học mỗi buổi</b>, ${o.dpw} buổi/tuần${o.cls?', cộng giờ học trên lớp':''}. ${z==='good'?'Mức này vừa sức với tuổi của em.':z==='warn'?'Mức này nặng nhưng làm được nếu giữ lịch cố định.':'Mức này quá nặng với tuổi của em.'}${reqR>cap?` Gói buổi dài nhất cho lớp ${o.grade} là ${cap} phút, nên cách hợp lý là thêm giờ học trên lớp hoặc chọn trường có mức cần thấp hơn.`:''}`:'';
-    const opts=CLS_OPTS.map(([c,n])=>{const r=courseCalc(Object.assign({},o,{cls:c}));const m=Math.ceil(r.req/5)*5;const zz=zone(m,o.grade);return `<tr${c===o.cls?' class="cur"':''}><td>${esc(n)}</td><td>${r.status==='done'?'–':isFinite(m)?m+' phút':'không kịp'}<br><span class="pill ${r.status==='done'?'good':zz}">${r.status==='done'?'đã đạt':zz==='good'?'vừa sức':zz==='warn'?'nặng':'quá sức'}</span></td><td>${esc(lvName(r.hExam))}</td></tr>`}).join('');
+    else if(R.status==='good')msg=`Với ${o.min} phút × ${o.dpw} buổi/tuần${o.cls?` và ${String(o.cls).replace('.',',')} giờ học trên lớp`:''}, em đạt mức cần khoảng ${fmtD(R.end)}, trước mốc chốt trường (${fmtD(R.g4)}). Từ mốc chốt, em đã biết thi trường nào và chỉ còn luyện đề, giữ phong độ, không phải học thêm kiến thức mới trong năm cuối cấp.`;
+    else if(R.status==='warn')msg=`Với lịch này, em chỉ tới mức cần vào khoảng ${fmtD(R.end)}, sau mốc chốt trường (${fmtD(R.g4)}). Như vậy là trông vào bứt phá trong những tháng cuối, đúng lúc em còn thi học kỳ và ôn Toán, Văn. CES khuyên tăng thời gian ngay từ bây giờ, hoặc chọn trường có mức cần thấp hơn.`;
+    else msg=`Với lịch này, đến mốc chốt trường em đạt khoảng ${esc(lvName(R.hChot))}, và đến ngày thi cũng chưa tới mức ${esc(lvName(o.targetH))} mà trường cần.`;
+    const reqTxt=R.status==='done'?'':isFinite(reqR)?`Để đạt mức cần ${R.before?'trước mốc chốt trường':'trước ngày thi'}, em cần khoảng <b>${reqR} phút tự học mỗi buổi</b>, ${o.dpw} buổi/tuần${o.cls?', cộng giờ học trên lớp':''}. ${z==='good'?'Mức này vừa sức với tuổi của em.':z==='warn'?'Mức này nặng nhưng làm được nếu giữ lịch cố định.':'Mức này quá nặng với tuổi của em.'}${reqR>cap?` Gói buổi dài nhất cho lớp ${o.grade} là ${cap} phút, nên cách hợp lý là thêm giờ học trên lớp hoặc chọn trường có mức cần thấp hơn.`:''}`:'';
+    const opts=CLS_OPTS.map(([c,n])=>{const r=courseCalc(Object.assign({},o,{cls:c}));const m=Math.ceil(r.req/5)*5;const zz=zone(m,o.grade);return `<tr${c===o.cls?' class="cur"':''}><td>${esc(n)}</td><td>${r.status==='done'?'–':isFinite(m)?m+' phút':'không kịp'}<br><span class="pill ${r.status==='done'?'good':zz}">${r.status==='done'?'đã đạt':zz==='good'?'vừa sức':zz==='warn'?'nặng':'quá sức'}</span></td><td>${esc(lvName(r.hChot))}</td></tr>`}).join('');
     const nd=DAYS.filter(d=>dayStatus(d.day)==='done').length;
     const first=R.phases[0];
     const firstBox=first?`<div class="card first"><p class="eyebrow">Chặng đầu tiên sau 14 ngày</p><h3>GĐ${first.P.k} · ${esc(first.P.name)}, bắt đầu khoảng ${R.start.toLocaleDateString('vi-VN')}</h3>
@@ -207,23 +210,24 @@ function vCourse(){
       <p class="small muted">Một chặng kéo dài khoảng ${(Math.round(R.chW*2)/2).toLocaleString('vi-VN')} tuần với ${o.dpw} buổi/tuần (đã trừ ngày nghỉ, thi học kỳ).</p></div>`:'';
     $('#cOut').innerHTML=`
     <div class="card"><h3>Thời gian của em</h3>
-     <div class="kpis"><div><b>${weeksLeft}</b><span>tuần đến kỳ thi (${R.exam.toLocaleDateString('vi-VN')})</span></div><div><b>${nd}/14</b><span>buổi chẩn đoán đã xong</span></div><div><b>${Math.round(R.wBefore)}</b><span>tuần học trước khi luyện đề (${fmtD(R.g4)})</span></div><div><b>${nAll}+${R.g4Ch}</b><span>chặng nâng trình độ + chặng luyện đề</span></div></div>
+     <div class="kpis"><div><b>${weeksLeft}</b><span>tuần đến kỳ thi (${R.exam.toLocaleDateString('vi-VN')})</span></div><div><b>${nd}/14</b><span>buổi chẩn đoán đã xong</span></div><div><b>${Math.round(R.wBefore)}</b><span>tuần học trước mốc chốt trường (${fmtD(R.g4)})</span></div><div><b>${nAll}+${R.g4Ch}</b><span>chặng nâng trình độ + chặng luyện đề</span></div></div>
      ${timelineHTML(R,o)}
-     <p class="small muted">Dòng trên: các giai đoạn nâng trình độ theo tốc độ dự kiến của em. Dòng dưới: giai đoạn luyện đề, cố định từ tháng 1 năm lớp 9 đến ngày thi. Mỗi giai đoạn chỉ kết thúc khi em qua bài kiểm tra cửa ra, nên ngày tháng sẽ được tính lại sau mỗi chặng.</p></div>
+     <p class="small muted">Dòng trên: các giai đoạn nâng trình độ theo tốc độ dự kiến của em. Mốc chốt trường cố định ở tháng ${R.g4.getMonth()+1} năm lớp 9, sớm hơn kỳ thi ${CHOT_MONTHS} tháng; dòng dưới là giai đoạn luyện đề từ mốc đó đến ngày thi. Mỗi giai đoạn chỉ kết thúc khi em qua bài kiểm tra cửa ra, nên ngày tháng sẽ được tính lại sau mỗi chặng.</p></div>
     <div class="verdict ${vcls}"><p class="eyebrow">Kết luận cho em và bố mẹ</p><h3>${esc(head)}</h3><p>${msg}</p>${reqTxt?`<p>${reqTxt}</p>`:''}
-     ${R.status!=='done'?`<div class="tbl-wrap"><table class="copt"><thead><tr><th>Cách học</th><th>Phút tự học cần mỗi buổi</th><th>Trình độ lúc thi nếu giữ số phút hiện tại</th></tr></thead><tbody>${opts}</tbody></table></div>`:''}
-     ${o.grade===9?'<p class="small"><b>Lớp 9:</b> thời gian trước luyện đề rất ngắn, nên CES chuyển em sang chương trình rút gọn: luyện đề từ tháng 1, phần ngữ pháp và từ vựng còn thiếu học xen trong các buổi chữa đề. Đích thực tế nhất thường là Chuyên Ngoại ngữ hoặc Nguyễn Huệ.</p>':''}
+     ${R.status!=='done'?`<div class="tbl-wrap"><table class="copt"><thead><tr><th>Cách học</th><th>Phút tự học cần mỗi buổi</th><th>Trình độ ở mốc chốt nếu giữ số phút hiện tại</th></tr></thead><tbody>${opts}</tbody></table></div>`:''}
+     ${o.grade===9?'<p class="small"><b>Lớp 9:</b> mốc chốt trường đã ở rất gần, nên em chốt trường theo trình độ và điểm thi thử hiện tại, rồi vào luyện đề ngay; phần ngữ pháp và từ vựng còn thiếu học xen trong các buổi chữa đề. Đích thực tế nhất thường là Chuyên Ngoại ngữ hoặc Nguyễn Huệ.</p>':''}
      <p class="small">${o.tested?'':'Em chưa làm bài kiểm tra đầu vào nên trang tạm tính em ở A2. '}${o.effFrom?`Tốc độ học của em (hệ số ${String(o.eff).replace('.',',')}) lấy từ các buổi đã làm. `:'Tốc độ học đang tạm tính ở mức trung bình; sau 7 buổi trang sẽ dùng số đo của em. '}Đây là ước tính để định hướng, không phải cam kết.</p></div>
     ${firstBox}
     <h3 class="sec">Các giai đoạn em sẽ học</h3>
     <div class="card ph done0"><div class="ph-s"><span class="ph-n">GĐ0</span><span class="ph-t"><b>Chẩn đoán 14 ngày</b> · em đang ở đây (${nd}/14 buổi)<br><span class="small muted">Đo trình độ, khả năng nhớ, thời gian học và dạng bài em thích. Hết 14 ngày cô gửi hồ sơ và lộ trình đề xuất cho bố mẹ.</span></span></div></div>
     ${R.phases.map((p,i)=>phaseCard(p,i,R,o,i===0)).join('')||'<div class="card"><p>Em đã đạt mức cần cho trường này, nên không cần giai đoạn nâng trình độ. Em có thể chọn trường cao hơn, hoặc vào luyện đề sớm.</p></div>'}
+    <div class="card ph chot"><div class="ph-s"><span class="ph-n">Chốt<br>trường</span><span class="ph-t"><b>Mốc chốt trường</b> · ${R.g4.toLocaleDateString('vi-VN')}, sớm hơn kỳ thi ${CHOT_MONTHS} tháng<br><span class="small muted">Em làm bài thi thử trọn bộ đề Sở và đề Chuyên Ngoại ngữ ở CES. Cô và bố mẹ dùng điểm thi thử, điểm Toán, Văn (tab Chọn trường) để chốt trường và nguyện vọng. Từ đây đích không đổi nữa.</span></span></div></div>
     <details class="card ph" style="--pc:#FFD23F"><summary><span class="ph-n">GĐ4</span><span class="ph-t"><b>Luyện đề</b> · ${fmtD(R.g4>R.start?R.g4:R.start)} – ${fmtD(R.exam)}<br><span class="small muted">khoảng ${R.g4Ch} chặng, chung cho mọi học sinh, dù đang ở mức nào</span></span></summary>
-     <div class="ph-b"><ul>${EXAM_PHASE.tasks.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><p>${esc(EXAM_PHASE.speed)}</p><p>${esc(EXAM_PHASE.how)}</p></div></details>
+     <div class="ph-b"><p>Không học chủ điểm mới. Mỗi tuần nhẹ hơn các giai đoạn trước để em còn sức cho thi học kỳ và Toán, Văn; toàn bộ thời gian tiếng Anh dành cho làm đề, chữa đề và giữ phong độ.</p><ul>${EXAM_PHASE.tasks.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><p>${esc(EXAM_PHASE.speed)}</p><p>${esc(EXAM_PHASE.how)}</p></div></details>
     <details class="card"><summary>Trang tính thế nào</summary><div class="small">
      <p>Giờ học chuẩn theo khung Cambridge: A2 khoảng 190 giờ, B1 375, B2 550, C1 750. Mức cần của mỗi trường lấy từ điểm Anh chuyên cần để có khoảng 80% khả năng đỗ khi Toán 8, Văn 8, đổi ra giờ học bằng cùng thang với tab Chọn trường.</p>
      <p>Mỗi giờ tự học tính bằng 0,6 giờ học chuẩn (nhân hệ số tốc độ của em), mỗi giờ học trên lớp ở CES tính bằng 0,8 giờ; trừ 15% thời gian cho nghỉ lễ, thi học kỳ, ốm.</p>
-     <p>Kết luận xanh khi xong phần nâng trình độ trước tháng 1 năm lớp 9, vàng khi phải học tiếp trong lúc luyện đề, đỏ khi đến ngày thi vẫn chưa tới mức cần. Ngưỡng phút tự học mỗi buổi: lớp 6–7 vừa sức đến 40 phút, nặng đến 60; lớp 8–9 vừa sức đến 60, nặng đến 90.</p>
+     <p>Kết luận xanh khi em đạt mức cần trước mốc chốt trường (sớm hơn kỳ thi ${CHOT_MONTHS} tháng), vàng khi chỉ kịp trước ngày thi (tức là trông vào bứt phá năm cuối cấp), đỏ khi đến ngày thi vẫn chưa tới mức cần. Ngưỡng phút tự học mỗi buổi: lớp 6–7 vừa sức đến 40 phút, nặng đến 60; lớp 8–9 vừa sức đến 60, nặng đến 90.</p>
      <p>Học sinh vào ở giai đoạn nào thì bắt đầu từ giai đoạn đó, không học lại giai đoạn trước. Em dưới A2 học Giai đoạn 1 từ các chủ điểm mốc A2.</p></div></details>`;
   };
   draw();
