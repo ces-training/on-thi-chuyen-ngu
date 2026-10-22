@@ -27,6 +27,9 @@ Khi `src/chuyen-anh-14-ngay/config.json` chưa có `apiUrl`, trang học sinh v�
 
 ## Cách sửa nội dung
 
+- Bản đồ 14 ngày ở trang chủ (`src/chuyen-anh-14-ngay/map.js`): con đường uốn từ gần ra xa với 14 biển buổi học; nền là phong cảnh vẽ chì tô màu nước của 8 nơi (Paris, London, Phú Sĩ, Hạ Long, Giza, New York, Sydney, Taj Mahal), mỗi lần mở trang chọn ngẫu nhiên một cảnh khác lần trước. Thêm cảnh mới: thêm một mục vào `SCENES`.
+- Học theo thứ tự: buổi n mở khi đã có bài đầu vào và đã xong Kiểm tra cuối buổi của buổi n-1 (`dayOpen` trong `template.html`). Chưa làm bài đầu vào thì mỗi lần mở trang hiện popup, thu nhỏ được thành nút ở góc, chỉ mất khi làm xong bài đầu vào.
+
 - Văn phong của trang (xưng "bạn", giọng báo teen, không bao giờ nói "không làm được", lời lẽ đổi theo dữ liệu từng bạn): [src/VAN-PHONG.md](src/VAN-PHONG.md). Lộ trình chỉ hiện chi tiết sau khi có bài đầu vào; hồ sơ học (`learnerProfile` trong `course.js`) chỉnh lộ trình theo độ đúng, độ nhớ, độ đều.
 
 - Câu hỏi, đáp án, bài đọc của từng buổi nằm trong `src/chuyen-anh-14-ngay/content/dayNN.json`; bài kiểm tra đầu vào và cuối kỳ nằm trong `tests.json`.

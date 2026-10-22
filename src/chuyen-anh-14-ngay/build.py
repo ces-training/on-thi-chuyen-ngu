@@ -45,7 +45,7 @@ api = json.dumps(os.environ.get("API_URL_OVERRIDE", cfg.get("apiUrl", "")))
 sj = json.load(open(here / "schools.json", encoding="utf-8"))
 school_js = (here / "school.js").read_text(encoding="utf-8").replace("__SCHOOLS__", json.dumps(sj["options"], ensure_ascii=False)).replace("__EXAMS__", json.dumps(sj["exams"], ensure_ascii=False))
 brand = (repo / "src" / "brand" / "brand.css").read_text(encoding="utf-8")
-body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__COURSE_JS__*/", (here / "course.js").read_text(encoding="utf-8")).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8") + "\n" + (here / "games2.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
+body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__COURSE_JS__*/", (here / "course.js").read_text(encoding="utf-8")).replace("/*__MAP_JS__*/", (here / "map.js").read_text(encoding="utf-8")).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8") + "\n" + (here / "games2.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
 page = (
     "<!doctype html>\n<html lang=\"vi\">\n<head>\n<meta charset=\"utf-8\">\n"
     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"

@@ -606,6 +606,17 @@ body.gated main.wrap,body.gated header.top{filter:blur(5px);pointer-events:none;
 .h-toast img{width:56px;flex:none}.h-toast p{margin:2px 0 8px}.h-toast .btn{padding:6px 14px;min-height:36px}
 .h-x{all:unset;cursor:pointer;position:absolute;top:6px;right:10px;font-size:1.5rem;line-height:1;color:#14303A}
 @media (prefers-reduced-motion:reduce){.gate-card,.gate-pill{animation:none}.h-toast{transition:none}}
+/* ----- bản đồ 14 ngày ----- */
+.pmap{margin-top:10px;border:3px solid #14303A;border-radius:12px;overflow:hidden;box-shadow:4px 5px 0 rgba(10,40,48,.2);background:#FBFAF5}
+.pmap svg{display:block;width:100%;height:auto}
+.msign{cursor:pointer;transition:transform .15s ease-out;transform-box:fill-box;transform-origin:50% 100%}
+.msign:hover,.msign:focus-visible{transform:translateY(-4px)}
+.msign:focus{outline:none}.msign:focus-visible path{stroke:#2638C4}
+.msign.lk{cursor:not-allowed}
+.mp-glow{animation:mpGlow 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes mpGlow{0%,100%{transform:scale(.85);opacity:.25}50%{transform:scale(1.15);opacity:.55}}
+@media (min-width:700px){.path .pdots{display:none}}
+@media (prefers-reduced-motion:reduce){.mp-glow{animation:none}.msign{transition:none}}
 /* ----- Hùng ----- */
 .hung-tag{position:absolute;left:22px;bottom:2px;z-index:2;background:#14303A;color:#fff;font-family:var(--f-hand);font-size:1.05rem;line-height:1;padding:4px 10px 5px;border-radius:6px;transform:rotate(-5deg);box-shadow:2px 3px 0 rgba(10,40,48,.25)}
 .hung-fig{margin:0;display:flex;flex-direction:column;align-items:center;gap:2px;flex:none}
@@ -969,7 +980,7 @@ function dashHTML(nd){
     <div class="collage" aria-hidden="true"><span class="blob"></span><img class="c1" src="${PEEP('mai')}" alt=""><img class="c2" src="${PEEP('tuan')}" alt=""><img class="c3" src="${PEEP('linh')}" alt=""></div>
     <button class="btn hi big" id="dashGo">${noDiag?'Làm bài đầu vào':(doneN?'Học tiếp':'Bắt đầu')+' buổi '+nd}<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
   </section>
-  <section class="paper path" aria-labelledby="pTitle"><h2 id="pTitle">Lộ trình 14 ngày</h2><p class="hand">xong ${doneDays}/14 buổi · vòng nét đứt là buổi ôn tập</p><div class="pdots">${dots}</div></section>
+  <section class="paper path" aria-labelledby="pTitle"><h2 id="pTitle">Lộ trình 14 ngày</h2><p class="hand">xong ${doneDays}/14 buổi · biển ngôi sao là buổi ôn tập · bấm biển để vào buổi học</p><div class="pmap">${mapSVG(nd)}</div><div class="pdots">${dots}</div></section>
   <div class="more">
     <button type="button" class="tile-prog" id="dashProg"><svg class="tp-ic" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 56h50M14 56V38M28 56V26M42 56V32M56 56V14"/><path d="M12 30 26 18l14 8 16-16"/><path d="M48 10h8v8"/></svg><b>Tiến bộ<br>của cậu</b><span class="hand">điểm mạnh, phần cần ôn, lộ trình đến kỳ thi</span></button>
     <button type="button" class="ask" id="dashAsk" aria-label="Hỏi cô"><img src="${PEEP('ha')}" alt=""><span>Hỏi cô</span></button>
@@ -977,7 +988,7 @@ function dashHTML(nd){
   </div>`}
 function wireDash(nd){
   M().querySelectorAll('.qt').forEach(b=>b.onclick=()=>{const id=b.dataset.card;if(!id){go('diag');return}go('days',{day:nd});setTimeout(()=>{const c=document.getElementById(id);if(c)c.scrollIntoView({behavior:'smooth',block:'start'})},80)});
-  M().querySelectorAll('.pd').forEach(b=>b.onclick=()=>go('days',{day:+b.dataset.d}));
+  M().querySelectorAll('.pd').forEach(b=>b.onclick=()=>go('days',{day:+b.dataset.d}));wireMap(M());
   $('#dashGo').onclick=()=>S.diag?go('days',{day:nd}):go('diag');wireMotto();$('#dashProg').onclick=()=>go('progress');$('#dashAsk').onclick=()=>go('share');
 }
 function vStart(){
@@ -1399,6 +1410,7 @@ function vPlan(){
 /*__EXAM_JS__*/
 /*__SCHOOL_JS__*/
 /*__COURSE_JS__*/
+/*__MAP_JS__*/
 
 /*__CLOUD_JS__*/
 
