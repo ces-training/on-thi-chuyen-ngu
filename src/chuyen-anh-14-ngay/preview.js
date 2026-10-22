@@ -174,6 +174,9 @@ views.catalog=vCatalog;
   nav.appendChild(b);
   const br=document.querySelector('.brand span');if(br)br.textContent='Bản xem trước cho giáo viên';
   /* lần đầu mở: dựng tình huống đã chọn */
-  let have=false;try{have=!!localStorage.getItem(KEY)}catch(e){}
-  if(!have){S=pvBuild(PV.sc);saveLocal()}
+  /* ?mo-het: mở hết mọi khoá, dùng học sinh giả lập đã xong 14 buổi và bài đầu ra (đổi bằng &tinh-huong=moi|phac|nhanh|nhip|cham|xong) */
+  const qp=new URLSearchParams(location.search);
+  if(qp.has('mo-het')){const k=qp.get('tinh-huong');PV.open=true;PV.sc=PV_SC.some(x=>x.k===k)?k:'xong';pvSave();S=pvBuild(PV.sc);saveLocal()}
+  else{let have=false;try{have=!!localStorage.getItem(KEY)}catch(e){}
+  if(!have){S=pvBuild(PV.sc);saveLocal()}}
   pvBar()})();
