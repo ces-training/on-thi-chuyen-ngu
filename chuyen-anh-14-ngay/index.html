@@ -938,7 +938,10 @@ let MOTTO_I=Math.floor(Date.now()/864e5)%MOTTOS.length;
 function mottoHTML(){const [pp,t]=MOTTOS[MOTTO_I];return `<img src="${PEEP(pp)}" alt="" class="mt-peep"><div class="mt-body"><p class="mt-k">châm ngôn hôm nay</p><p class="mt-t">${esc(t)}</p></div><button type="button" class="mt-next" id="mtNext" aria-label="Đổi châm ngôn khác"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.5-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.5 4.5L20 16M20 20v-4h-4"/></svg></button>`}
 function wireMotto(){const b=$('#mtNext');if(b)b.onclick=()=>{MOTTO_I=(MOTTO_I+1)%MOTTOS.length;const box=$('#motto');box.innerHTML=mottoHTML();box.classList.remove('flip');void box.offsetWidth;box.classList.add('flip');wireMotto()}}
 function dashHTML(nd){
-  const D=DAYS[nd-1];const qs=questState(nd);const steps=Q_STEPS.filter(s=>qs[s.k]);const doneN=steps.filter(s=>qs[s.k].done).length;
+  const D=DAYS[nd-1];const qs=questState(nd);const noDiag=!S.diag;let steps=Q_STEPS.filter(s=>qs[s.k]);
+  /* chưa làm bài đầu vào: ô đầu tiên của Nhiệm vụ hôm nay là bài đầu vào, cùng bố cục với các ngày sau */
+  if(noDiag){qs.diag={done:false};steps=[{k:'diag',card:'',label:'Bài đầu vào',peep:'boss',c:'#FFD23F'}].concat(steps).slice(0,6)}
+  const doneN=steps.filter(s=>qs[s.k].done).length;
   const first=steps.find(s=>!qs[s.k].done);const rot=[-1.2,.8,-.6,1,-1,.6];
   const tiles=steps.map((s,i)=>{const st=qs[s.k];const now=first===s;
     const tag=st.done?'<span class="st">XONG</span>':now?'<span class="st go">LÀM TIẾP</span><span class="callout" aria-hidden="true">đây nè!<svg viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 8c14-2 30 4 38 22"/><path d="M36 28l8 3 2-9"/></svg></span>':st.part?`<span class="st go">${st.txt}</span>`:'';
@@ -955,16 +958,16 @@ function dashHTML(nd){
   </div>
   <div class="motto" id="motto" aria-live="polite">${mottoHTML()}</div>
   <section class="paper tape quest" aria-labelledby="qTitle">
-    <div class="q-head"><h2 id="qTitle">Nhiệm vụ hôm nay</h2><span class="q-sub">Buổi ${nd} · ${esc(D.theme_vi)}</span>
+    <div class="q-head"><h2 id="qTitle">Nhiệm vụ hôm nay</h2><span class="q-sub">${noDiag?'Việc đầu tiên: bài đầu vào 30 câu (25 phút), rồi vào ':''}Buổi ${nd} · ${esc(D.theme_vi)}</span>
       <span class="q-stars" role="img" aria-label="Đã xong ${doneN} trên ${steps.length} bước">${steps.map((s,i)=>starSVG(i<doneN,i)).join('')}</span></div>
     <div class="q-grid">${tiles}</div>
   </section>
   <section class="paper side" aria-labelledby="lvTitle">
     <p class="hand">${S.name?esc(S.name)+' ơi, mức của em là':'mức học của em'}</p>
-    <p class="lv" id="lvTitle">${TRACKS[t].name}${L?' · '+esc(L.name):''}</p>
-    <p class="small muted">${esc(TRACKS[t].desc)}</p>
+    <p class="lv" id="lvTitle">${noDiag?'Chưa xếp mức':TRACKS[t].name+(L?' · '+esc(L.name):'')}</p>
+    <p class="small muted">${noDiag?'Làm bài đầu vào 30 câu để trang xếp em vào mức Nền tảng, Chuẩn hoặc Nâng cao.':esc(TRACKS[t].desc)}</p>
     <div class="collage" aria-hidden="true"><span class="blob"></span><img class="c1" src="${PEEP('mai')}" alt=""><img class="c2" src="${PEEP('tuan')}" alt=""><img class="c3" src="${PEEP('linh')}" alt=""></div>
-    <button class="btn hi big" id="dashGo">${doneN?'Học tiếp':'Bắt đầu'} buổi ${nd}<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    <button class="btn hi big" id="dashGo">${noDiag?'Làm bài đầu vào':(doneN?'Học tiếp':'Bắt đầu')+' buổi '+nd}<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
   </section>
   <section class="paper path" aria-labelledby="pTitle"><h2 id="pTitle">Lộ trình 14 ngày</h2><p class="hand">xong ${doneDays}/14 buổi · vòng nét đứt là buổi ôn tập</p><div class="pdots">${dots}</div></section>
   <div class="more">
@@ -973,24 +976,14 @@ function dashHTML(nd){
   </div>
   </div>`}
 function wireDash(nd){
-  M().querySelectorAll('.qt').forEach(b=>b.onclick=()=>{const id=b.dataset.card;go('days',{day:nd});setTimeout(()=>{const c=document.getElementById(id);if(c)c.scrollIntoView({behavior:'smooth',block:'start'})},80)});
+  M().querySelectorAll('.qt').forEach(b=>b.onclick=()=>{const id=b.dataset.card;if(!id){go('diag');return}go('days',{day:nd});setTimeout(()=>{const c=document.getElementById(id);if(c)c.scrollIntoView({behavior:'smooth',block:'start'})},80)});
   M().querySelectorAll('.pd').forEach(b=>b.onclick=()=>go('days',{day:+b.dataset.d}));
-  $('#dashGo').onclick=()=>go('days',{day:nd});wireMotto();$('#dashProg').onclick=()=>go('progress');$('#dashAsk').onclick=()=>go('share');
+  $('#dashGo').onclick=()=>S.diag?go('days',{day:nd}):go('diag');wireMotto();$('#dashProg').onclick=()=>go('progress');$('#dashAsk').onclick=()=>go('share');
 }
 function vStart(){
   const nd=nextDay();
   M().innerHTML=`<section class="view">
-  ${S.diag?dashHTML(nd)+'<div class="dash-after">':`<div class="dash-head"><h1>Chuyên Anh 14 ngày</h1></div><div class="card next"><div class="next-ic">${em('bullseye','',96)}</div><div class="next-t"><p class="eyebrow">Việc đầu tiên</p><h2>Làm bài kiểm tra đầu vào</h2><p class="muted">30 câu, khoảng 25 phút, để biết em đang ở đâu trước buổi 1.</p><div class="row"><button class="btn hi" id="goDiag">Làm bài đầu vào (25 phút)</button></div></div></div>
-  <div class="spiral-wrap">
-    ${spiralSVG()}
-    <div class="spiral-legend">
-      <p class="eyebrow">Hành trình 2 tuần</p>
-      <h2>14 buổi, mỗi buổi khoảng 40 phút</h2>
-      <p class="lead">Em học và làm bài trên tập giấy, rồi mở trang này để kiểm tra lại. Câu nào em làm sai sẽ quay lại sau 1, 3 và 6 buổi, như một vòng xoắn, cho đến khi em nhớ chắc.</p>
-      <p class="small muted">Vòng tròn nét đứt là buổi ôn tập (buổi 7 và 14). Màu xanh: xong cả giấy và web. Màu vàng: mới xong một phần.</p>
-    </div>
-  </div>
-`}
+  ${dashHTML(nd)}<div class="dash-after">
   ${loginCard()}
   <div class="card">
     <h3>Tên em là gì?</h3>
@@ -1007,11 +1000,11 @@ function vStart(){
       <li><div>${cloudOn()?'<b>Chụp bài giấy gửi lên</b>: máy chấm, nhận xét và gửi kết quả cho cô. Câu nào em chưa đồng ý thì nhắn cô.':'<b>Chữa bài giấy</b> bằng đáp án trên web, tích những câu em làm đúng, rồi tự kiểm đoạn viết.'}</div></li>
     </ol>
     <div class="row"><button class="btn ghost" id="goPlan">Xem lộ trình đến kỳ thi</button></div>
-  </div>${S.diag?'</div>':''}</section>`;
+  </div></div></section>`;
   $('#saveName').onclick=()=>{S.name=$('#nameInput').value.trim();save();renderHello();$('#saveName').textContent='Đã lưu'};
   const gd=$('#goDiag');if(gd)gd.onclick=()=>go('diag');
   const gy=$('#goDay');if(gy)gy.onclick=()=>go('days',{day:nd});
-  if(S.diag)wireDash(nd);
+  wireDash(nd);
   $('#goPlan').onclick=()=>go('plan');
   wireLogin();
 }
