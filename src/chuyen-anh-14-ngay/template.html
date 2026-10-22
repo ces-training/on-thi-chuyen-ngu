@@ -699,9 +699,9 @@ function levelFromBands(a,b,c){
 function gradeNow(){const g=+((S.school&&S.school.grade)||S.grade);return [6,7,8,9].includes(g)?g:7}
 function setGrade(g){S.school=Object.assign(blankSchool(),S.school||{});S.school.grade=g;S.grade=g}
 function classF(){return 0.8} // 1 giờ học trên lớp ở CES ≈ 0,8 giờ học chuẩn
-/* Mốc chốt: đạt trình độ cần và chốt trường sớm hơn ngày thi CHOT_MONTHS tháng (CES đặt 4–6 tháng),
+/* Mốc chốt: đạt trình độ cần và chốt trường sớm hơn ngày thi CHOT_MONTHS tháng (CES chốt 4 tháng, tức 1/2 năm lớp 9),
    vì năm cuối cấp các em nhiều việc; sau mốc này chỉ luyện đề, không học kiến thức mới. */
-const CHOT_MONTHS=6;
+const CHOT_MONTHS=4;
 function chotDate(g){const e=examDateFor(g);return new Date(e.getFullYear(),e.getMonth()-CHOT_MONTHS,1)}
 function goalNow(){const k=(S.course&&S.course.goal)||'cva';const G=GOALS.find(x=>x.k===k)||GOALS[1];return {k:G.k,h:goalH(G.k),name:G.name}}
 /* mốc chuẩn của CES, tính ngược từ mốc chốt theo mức cần của trường em nhắm:
