@@ -18,8 +18,9 @@ function renderExam(box,B,saved,onDone){
   let body='';
   if(B.passage)body+=`<div class="passage">${esc(B.passage)}</div>`;
   if(kind==='mcq'){
-    body+=items.map((it,i)=>{const q=B.format==='error_id'?xErr(it.q,it.options):esc(it.q).replace(/\n/g,'<br>');
-      return `<div class="q x-item" data-i="${i}"><div class="qhead"><span class="qnum">${i+1}</span>${it.format?`<span class="review-mark">${esc(X_FMT[it.format]||it.format)}</span>`:''}</div><div class="qtext">${q}</div><div class="opts">${perm(it).map(j=>{const o=it.options[j];return `<label class="opt" data-i="${j}"><input type="radio" name="x${i}" value="${j}"><span>${B.format==='pronunciation'?xU(o):B.format==='error_id'?'ABCD'[j]+'. '+esc(o):esc(o)}</span></label>`}).join('')}</div><div class="fbslot"></div></div>`}).join('');
+    body+=items.map((it,i)=>{const fm=it.format||B.format,ph=fm==='pronunciation'||fm==='stress';
+      const q=B.format==='error_id'?xErr(it.q,it.options):xU(it.format?String(it.q).replace(/^\s*\[[^\]]+\]\s*/,''):it.q).replace(/\n/g,'<br>');
+      return `<div class="q x-item" data-i="${i}"><div class="qhead"><span class="qnum">${i+1}</span>${it.format?`<span class="review-mark">${esc(X_FMT[it.format]||it.format)}</span>`:''}</div><div class="qtext">${q}</div><div class="opts${ph?' phon':''}">${perm(it).map(j=>{const o=it.options[j];return `<label class="opt" data-i="${j}"><input type="radio" name="x${i}" value="${j}"><span>${B.format==='error_id'?'ABCD'[j]+'. '+esc(o):xU(o)}</span></label>`}).join('')}</div><div class="fbslot"></div></div>`}).join('');
   }else if(kind==='cloze_mcq'){
     body+=`<div class="passage x-text">${esc(B.text).replace(/\[(\d+)\]/g,(m,n)=>`<b class="x-gap" data-g="${n-1}">(${n}) ____</b>`)}</div>`;
     body+=items.map((it,i)=>`<div class="q x-item" data-i="${i}"><div class="qhead"><span class="qnum">${i+1}</span></div><div class="opts row-opts">${perm(it).map(j=>`<label class="opt" data-i="${j}"><input type="radio" name="x${i}" value="${j}"><span>${esc(it.options[j])}</span></label>`).join('')}</div><div class="fbslot"></div></div>`).join('');
@@ -52,7 +53,7 @@ function renderExam(box,B,saved,onDone){
   const grade=()=>{let correct=0,total=0;const answers={};
     if(kind==='mcq'||kind==='cloze_mcq'){items.forEach((it,i)=>{total++;const r=form.querySelector(`input[name="x${i}"]:checked`);const v=r?+r.value:null;answers[i]=v;const ok=v===it.answer;if(ok)correct++;
       const q=form.querySelector(`.x-item[data-i="${i}"]`);q.querySelectorAll('.opt').forEach(o=>{const j=+o.dataset.i;o.classList.remove('sel');if(j===it.answer)o.classList.add('right');else if(j===v)o.classList.add('wrong')});
-      q.querySelectorAll('input').forEach(x=>x.disabled=true);q.querySelector('.fbslot').innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Chưa đúng. Đáp án: <b>'+(B.format==='pronunciation'?xU(it.options[it.answer]):esc(it.options[it.answer]))+'</b>'}${it.explain_vi?`<span class="ex">${fmtVi(it.explain_vi)}</span>`:''}</div>`})}
+      q.querySelectorAll('input').forEach(x=>x.disabled=true);q.querySelector('.fbslot').innerHTML=`<div class="fb ${ok?'good':'bad'}">${ok?'Đúng rồi!':'Chưa đúng. Đáp án: <b>'+(B.format==='error_id'?esc(it.options[it.answer]):xU(it.options[it.answer]))+'</b>'}${it.explain_vi?`<span class="ex">${fmtVi(it.explain_vi)}</span>`:''}</div>`})}
     else if(kind==='gap_text'){const fbs=[];items.forEach((it,i)=>{total++;const inp=form.querySelector(`.x-in[data-i="${i}"]`);const v=inp.value;answers[i]=v;const ok=xOk(v,it);if(ok)correct++;inp.classList.add(ok?'ok':'bad');inp.disabled=true;
       fbs.push(`<li class="${ok?'good':'bad'}"><b>(${i+1})</b> ${ok?'✓':'✗ đáp án: <b>'+esc(it.answer)+'</b>'}${it.explain_vi?' – '+fmtVi(it.explain_vi):''}</li>`)});
       form.querySelector('.x-fbs').innerHTML=`<ul class="x-fblist">${fbs.join('')}</ul>`;const sc=form.querySelector('.x-script');if(sc)sc.hidden=false}

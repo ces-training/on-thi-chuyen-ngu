@@ -324,6 +324,12 @@ u.tip{text-decoration:underline 2px var(--signal);text-underline-offset:3px}
 .x-seg{text-decoration:underline 2px;text-underline-offset:4px}.x-seg sub{font-size:.7rem;font-weight:800;color:var(--agent);margin-left:1px}
 .qtext u{text-decoration-thickness:2px}.opt u{text-decoration-thickness:2px;text-underline-offset:3px}
 .row-opts{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}
+/* phát âm, trọng âm: 4 từ trên một hàng như đề in (A. rough  B. sum  C. utter  D. union), phần gạch chân rõ */
+.opts.phon{grid-template-columns:repeat(4,minmax(0,1fr))}
+.opts.phon .opt{justify-content:flex-start;padding:10px 12px}
+.opts.phon .opt span{font-size:1.18rem;font-weight:600;letter-spacing:.01em}
+@media (max-width:640px){.opts.phon{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.opt u,.qtext u,.fb u,.pv-opts u{text-decoration:underline;text-decoration-thickness:2.5px;text-underline-offset:4px;font-weight:800}
 .x-gap{color:var(--agent);background:var(--agent-tint);border-radius:6px;padding:0 4px}
 .x-text{line-height:2.1}
 .x-inwrap{white-space:nowrap}.x-in{font:inherit;width:9.5em;max-width:60vw;border:0;border-bottom:2px solid var(--agent);background:var(--agent-tint);border-radius:6px 6px 0 0;padding:2px 6px;margin:0 3px;color:var(--ink)}
@@ -823,7 +829,8 @@ function renderQ(it,idx,opts={}){
   const head=`<div class="qhead"><span class="qnum">${idx}</span>${opts.review?'<span class="review-mark">Ôn lại câu cậu từng sai</span>':''}${it.from_day&&!opts.review?`<span class="review-mark">Ôn xoắn ốc · buổi ${it.from_day}</span>`:''}</div>`;
   let body='';
   if(it.type==='mcq'){
-    body='<div class="opts">'+it.options.map((o,i)=>`<label class="opt" data-i="${i}"><input type="radio" name="${name}" value="${i}"><span>${esc(o)}</span></label>`).join('')+'</div>';
+    const ph=it.format==='pronunciation'||it.format==='stress'||it.options.some(o=>String(o).includes('[['));
+    body='<div class="opts'+(ph?' phon':'')+'">'+it.options.map((o,i)=>`<label class="opt" data-i="${i}"><input type="radio" name="${name}" value="${i}"><span>${xU(o)}</span></label>`).join('')+'</div>';
   }else{
     body=`<input type="text" name="${name}" id="${name}" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Gõ câu trả lời">`;
   }
