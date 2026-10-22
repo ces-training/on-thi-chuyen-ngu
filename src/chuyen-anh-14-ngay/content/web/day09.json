@@ -12,7 +12,8 @@
       "recipes",
       "dishes",
       "spring rolls"
-     ]
+     ],
+     "rule_vi": "Đây là **danh từ đếm được số nhiều** (có -s/-es): ==ingredients==, ==festivals==, ==dishes==… → đi với **many / a few**. __Thấy danh từ có đuôi số nhiều, chọn many hoặc a few.__"
     },
     {
      "name": "much / a little + …",
@@ -22,30 +23,36 @@
       "fish sauce",
       "advice",
       "bread"
-     ]
+     ],
+     "rule_vi": "Đây là **danh từ không đếm được**: ==sugar==, ==information==, ==advice==, ==bread==… → đi với **much / a little**. __information, advice, bread không bao giờ thêm -s.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "How many guests are coming to the festival?",
-    "hint_vi": "How many + danh từ đếm được số nhiều."
+    "hint_vi": "How many + danh từ đếm được số nhiều.",
+    "why_vi": "Câu hỏi số lượng: **How many + danh từ số nhiều + are + chủ ngữ…?** → ==How many guests are coming== to the festival? __Sau How many là danh từ, rồi mới đến động từ.__"
    },
    {
     "sentence": "We only need a little sugar for this recipe.",
-    "hint_vi": "a little + danh từ không đếm được (sugar)."
+    "hint_vi": "a little + danh từ không đếm được (sugar).",
+    "why_vi": "**need + a little + danh từ không đếm được**: We only need ==a little sugar== for this recipe. __only đứng trước động từ thường (need).__"
    },
    {
     "sentence": "My grandma gave me some useful advice about cooking.",
-    "hint_vi": "advice không đếm được → dùng some, không dùng an."
+    "hint_vi": "advice không đếm được → dùng some, không dùng an.",
+    "why_vi": "Trật tự: **some + tính từ + danh từ** → ==some useful advice==, rồi đến ==about cooking==. __advice không đếm được nên dùng some, không dùng an.__"
    },
    {
     "sentence": "There are plenty of local dishes to try in Huế.",
-    "hint_vi": "plenty of dùng được với danh từ đếm được số nhiều."
+    "hint_vi": "plenty of dùng được với danh từ đếm được số nhiều.",
+    "why_vi": "**There are + plenty of + danh từ số nhiều + to V**: ==There are plenty of local dishes to try== in Huế. __to try đứng sau danh từ, nghĩa là 'để thử'.__"
    },
    {
     "sentence": "Very few tourists know about this tiny village.",
-    "hint_vi": "few (không có a) = rất ít, nghĩa tiêu cực."
+    "hint_vi": "few (không có a) = rất ít, nghĩa tiêu cực.",
+    "why_vi": "**Very few + danh từ số nhiều** đứng đầu câu làm chủ ngữ: ==Very few tourists know about== this tiny village. __few không có a nghĩa là rất ít (tiêu cực).__"
    }
   ],
   "truefalse": [
@@ -53,49 +60,49 @@
     "s": "Can you give me an information about the festival?",
     "ok": false,
     "fix": "Can you give me some information about the festival?",
-    "why_vi": "information không đếm được → không dùng an; dùng some."
+    "why_vi": "==information== không đếm được → không dùng an; sửa thành **some information**. __Không bao giờ dùng a/an trước information.__"
    },
    {
     "s": "There are a few bananas in the fridge.",
     "ok": true,
     "fix": "There are a few bananas in the fridge.",
-    "why_vi": "Đúng: bananas đếm được số nhiều → a few."
+    "why_vi": "Đúng: ==bananas== đếm được số nhiều → **a few**. __a few đi với danh từ số nhiều.__"
    },
    {
     "s": "How much eggs do we need for the cake?",
     "ok": false,
     "fix": "How many eggs do we need for the cake?",
-    "why_vi": "eggs đếm được số nhiều → How many, không dùng How much."
+    "why_vi": "==eggs== đếm được số nhiều → **How many**, không dùng How much. __How much chỉ dùng cho danh từ không đếm được.__"
    },
    {
     "s": "The moon looks beautiful during the Mid-Autumn Festival.",
     "ok": true,
     "fix": "The moon looks beautiful during the Mid-Autumn Festival.",
-    "why_vi": "Đúng: chỉ có một mặt trăng → the moon."
+    "why_vi": "Đúng: chỉ có một mặt trăng → **the moon**; dấu hiệu ==The moon looks beautiful==."
    },
    {
     "s": "I'd like a little milk in my tea, please.",
     "ok": true,
     "fix": "I'd like a little milk in my tea, please.",
-    "why_vi": "Đúng: milk không đếm được → a little."
+    "why_vi": "Đúng: ==milk== không đếm được → **a little**. __Đồ uống như milk, water, tea đều không đếm được.__"
    },
    {
     "s": "My mum bought two breads at the bakery.",
     "ok": false,
     "fix": "My mum bought two loaves of bread at the bakery.",
-    "why_vi": "bread không đếm được, không thêm -s; dùng two loaves of bread."
+    "why_vi": "==two breads== sai vì bread không đếm được → **two loaves of bread**. __Muốn đếm, dùng đơn vị: a loaf of bread, a bowl of rice.__"
    },
    {
     "s": "We usually have the breakfast at 6:30.",
     "ok": false,
     "fix": "We usually have breakfast at 6:30.",
-    "why_vi": "Không dùng mạo từ trước tên bữa ăn: have breakfast."
+    "why_vi": "Không dùng mạo từ trước tên bữa ăn → ==have the breakfast== sửa thành **have breakfast**. __have breakfast/lunch/dinner không có the.__"
    },
    {
     "s": "There is plenty of food for everyone at the party.",
     "ok": true,
     "fix": "There is plenty of food for everyone at the party.",
-    "why_vi": "Đúng: plenty of + food (không đếm được) + động từ số ít is."
+    "why_vi": "Đúng: **plenty of + food** (không đếm được) đi với động từ số ít ==is==. __Động từ chia theo danh từ sau plenty of.__"
    }
   ]
  },
@@ -116,7 +123,7 @@
       "forgotten to buy"
      ],
      "answer": 1,
-     "explain_vi": "run out of = hết sạch, tức là đã dùng hết (used up all the)."
+     "explain_vi": "**run out of**: hết sạch → **used up all the** (đã dùng hết); vì thế ==someone has to go to the market==. __bought plenty of là nghĩa ngược lại.__"
     },
     {
      "q": "Phở is one of the most POPULAR dishes in Việt Nam.",
@@ -127,7 +134,7 @@
       "difficult to cook"
      ],
      "answer": 2,
-     "explain_vi": "popular = được nhiều người yêu thích. 'traditional' (truyền thống) là nghĩa khác."
+     "explain_vi": "**popular**: được nhiều người yêu thích → **liked by many people**. __traditional (truyền thống) là nghĩa khác, dễ nhầm.__"
     },
     {
      "q": "My aunt PREPARED a delicious meal for the whole family.",
@@ -138,7 +145,7 @@
       "bought"
      ],
      "answer": 1,
-     "explain_vi": "prepare a meal = chuẩn bị, nấu một bữa ăn, gần nghĩa với make a meal."
+     "explain_vi": "**prepare a meal**: nấu, chuẩn bị bữa ăn, gần nghĩa với **made**; ==for the whole family== là người được nấu cho. __ordered/bought là gọi món, mua, khác nghĩa.__"
     },
     {
      "q": "The flower festival in Đà Lạt ATTRACTS thousands of visitors every year.",
@@ -149,7 +156,7 @@
       "surprises"
      ],
      "answer": 0,
-     "explain_vi": "attract = thu hút; draw (visitors/crowds) cũng có nghĩa thu hút người đến."
+     "explain_vi": "**attract**: thu hút → **draws** (draw visitors: thu hút khách); ==thousands of visitors== là dấu hiệu. __Nhớ: draw a crowd cũng là thu hút đám đông.__"
     },
     {
      "q": "The soup tasted rather BLAND, so I added some fish sauce and pepper.",
@@ -160,7 +167,7 @@
       "without much flavour"
      ],
      "answer": 3,
-     "explain_vi": "bland = nhạt, ít hương vị; vì vậy mới phải thêm nước mắm và tiêu."
+     "explain_vi": "**bland**: nhạt, ít hương vị → **without much flavour**; vì thế mới ==added some fish sauce and pepper==. __Đọc vế sau 'so…' để đoán nghĩa từ in hoa.__"
     }
    ]
   },
@@ -175,24 +182,24 @@
     {
      "answer": "a",
      "accept": [],
-     "explain_vi": "Danh từ đếm được số ít, nhắc lần đầu: a traditional dish."
+     "explain_vi": "**dish** là danh từ đếm được số ít, nhắc lần đầu; 'traditional' bắt đầu bằng phụ âm → **a**. Dấu hiệu ==traditional dish==. __Nhìn âm đầu của từ ngay sau chỗ trống để chọn a hay an.__"
     },
     {
      "answer": "in",
      "accept": [
       "during"
      ],
-     "explain_vi": "Buổi trong ngày đi với in: in the morning."
+     "explain_vi": "Buổi trong ngày đi với **in**: ==the morning== → **in the morning**. __Nhớ: in the morning/afternoon/evening, nhưng at night.__"
     },
     {
      "answer": "many",
      "accept": [],
-     "explain_vi": "ingredients là danh từ đếm được số nhiều → How many."
+     "explain_vi": "==ingredients== đếm được số nhiều → **How many**. __Câu trả lời 'Only four' cũng cho thấy đang đếm số lượng.__"
     },
     {
      "answer": "few",
      "accept": [],
-     "explain_vi": "seconds đếm được số nhiều → a few seconds (vài giây)."
+     "explain_vi": "==seconds== đếm được số nhiều; có sẵn 'a' → **a few seconds** (vài giây). __Đề đã cho 'a' nên chỉ điền few.__"
     },
     {
      "answer": "The",
@@ -201,7 +208,7 @@
       "This",
       "this"
      ],
-     "explain_vi": "Nước chấm đã được nhắc ở câu trước → dùng The sauce (This sauce cũng được)."
+     "explain_vi": "Nước chấm đã được nhắc ở câu trước (==a small bowl of dipping sauce==) → **The sauce**. __Nhắc lại lần 2 dùng the; This cũng được chấp nhận.__"
     }
    ]
   }
@@ -223,7 +230,7 @@
       "very cheap"
      ],
      "answer": 0,
-     "explain_vi": "delicious = rất ngon, giống 'very tasty'. Người nói muốn ăn thêm, nên món ăn phải ngon."
+     "explain_vi": "**delicious**: rất ngon → **very tasty**; người nói muốn ==have some more==. __Đọc câu sau để kiểm tra nghĩa.__"
     },
     {
      "q": "Bánh mì is a FAMOUS dish from Việt Nam.",
@@ -234,7 +241,7 @@
       "small"
      ],
      "answer": 2,
-     "explain_vi": "famous = nổi tiếng, nhiều người biết đến, giống 'well-known'. Các từ còn lại nghĩa khác hẳn: mới, rẻ, nhỏ."
+     "explain_vi": "**famous**: nổi tiếng, nhiều người biết → **well-known**. __Các từ new, cheap, small nghĩa khác hẳn, loại nhanh.__"
     },
     {
      "q": "The lantern festival in our town BEGINS at seven o'clock in the evening.",
@@ -245,7 +252,7 @@
       "closes"
      ],
      "answer": 1,
-     "explain_vi": "begin = bắt đầu, giống 'start'. 'ends', 'stops', 'closes' đều có nghĩa là kết thúc, dừng lại."
+     "explain_vi": "**begin**: bắt đầu → **starts**; dấu hiệu ==at seven o'clock==. __ends, stops, closes đều nghĩa là kết thúc.__"
     },
     {
      "q": "Could you GIVE me the salt, please?",
@@ -256,7 +263,7 @@
       "pass"
      ],
      "answer": 3,
-     "explain_vi": "Trên bàn ăn, nhờ ai đưa giúp đồ gì ta nói 'pass me the salt' = give me the salt (đưa cho tôi lọ muối)."
+     "explain_vi": "Trên bàn ăn, nhờ đưa đồ ta nói **pass me the salt**, nên GIVE gần nghĩa với **pass**. Dấu hiệu ==Could you … me the salt, please?== __Học cả câu nhờ vả này.__"
     },
     {
      "q": "The night market is always BUSY at the weekend.",
@@ -267,7 +274,7 @@
       "clean"
      ],
      "answer": 0,
-     "explain_vi": "Chợ 'busy' = đông người, nhộn nhịp, tức là 'full of people'. 'quiet' (yên tĩnh) là nghĩa ngược lại."
+     "explain_vi": "Chợ ==BUSY at the weekend== là đông người, nhộn nhịp → **full of people**. __quiet (yên tĩnh) là nghĩa ngược lại.__"
     }
    ]
   },
@@ -282,29 +289,29 @@
     {
      "answer": "a",
      "accept": [],
-     "explain_vi": "town là danh từ đếm được số ít, nhắc đến lần đầu, 'small' bắt đầu bằng phụ âm → a small town."
+     "explain_vi": "==small town== đếm được số ít, nhắc lần đầu; 'small' bắt đầu bằng phụ âm → **a**. __Phụ âm dùng a, nguyên âm dùng an.__"
     },
     {
      "answer": "of",
      "accept": [],
-     "explain_vi": "Cụm cố định: a lot of + danh từ (a lot of vegetables = rất nhiều rau)."
+     "explain_vi": "Cụm cố định **a lot of + danh từ** → ==a lot of vegetables==. __Đừng quên 'of' sau a lot.__"
     },
     {
      "answer": "an",
      "accept": [
       "one"
      ],
-     "explain_vi": "apple bắt đầu bằng nguyên âm 'a', là danh từ đếm được số ít, nhắc đến lần đầu → an apple."
+     "explain_vi": "==apple== bắt đầu bằng nguyên âm, đếm được số ít, nhắc lần đầu → **an apple**. __Âm đầu là a, e, i, o, u thì dùng an.__"
     },
     {
      "answer": "much",
      "accept": [],
-     "explain_vi": "money là danh từ không đếm được → How much money (bao nhiêu tiền)."
+     "explain_vi": "==money== không đếm được → **How much money**. __Tiền là không đếm được, dù em đếm được từng tờ.__"
     },
     {
      "answer": "the",
      "accept": [],
-     "explain_vi": "Quả táo này đã được nhắc đến ở câu trước (an apple) → lần sau dùng the apple."
+     "explain_vi": "Quả táo đã nhắc ở câu trước (==an apple==) → lần sau dùng **the apple**. __Nhắc lại lần 2 thì dùng the.__"
     }
    ]
   }
@@ -326,7 +333,7 @@
       "recommended"
      ],
      "answer": 2,
-     "explain_vi": "renowned = nổi tiếng (nghĩa tốt) = celebrated. 'notorious' cũng là nổi tiếng nhưng vì điều xấu – bẫy sắc thái."
+     "explain_vi": "**renowned**: nổi tiếng (nghĩa tốt) → **celebrated**; dấu hiệu ==for its cao lầu==. __notorious cũng là nổi tiếng nhưng vì điều xấu, đây là bẫy.__"
     },
     {
      "q": "Our school canteen serves PLENTY OF fresh vegetables every day.",
@@ -337,7 +344,7 @@
       "a lack of"
      ],
      "answer": 1,
-     "explain_vi": "plenty of = rất nhiều. vegetables đếm được số nhiều → a large number of. 'a great deal of' chỉ đi với danh từ không đếm được."
+     "explain_vi": "**plenty of**: rất nhiều; ==vegetables== đếm được số nhiều → **a large number of**. __a great deal of chỉ đi với danh từ không đếm được.__"
     },
     {
      "q": "After the long walk, the hungry children POLISHED OFF the whole plate of spring rolls in minutes.",
@@ -348,7 +355,7 @@
       "nicely decorated"
      ],
      "answer": 0,
-     "explain_vi": "polish off (food) = ăn sạch thật nhanh. 'carefully cleaned' là bẫy vì 'polish' còn có nghĩa đánh bóng."
+     "explain_vi": "**polish off**: ăn sạch thật nhanh → **quickly finished**; dấu hiệu ==in minutes==. __carefully cleaned là bẫy vì polish còn nghĩa là đánh bóng.__"
     },
     {
      "q": "Tết customs VARY from region to region, so a family meal in Huế may look quite different from one in Hà Nội.",
@@ -359,7 +366,7 @@
       "differ"
      ],
      "answer": 3,
-     "explain_vi": "vary = khác nhau, thay đổi tuỳ nơi = differ. Vế sau 'look quite different' xác nhận nghĩa này."
+     "explain_vi": "**vary**: khác nhau tuỳ nơi → **differ**; vế sau ==look quite different== xác nhận nghĩa. __Đọc vế sau 'so…' để kiểm tra đáp án.__"
     },
     {
      "q": "Many young chefs are trying to PRESERVE the cooking traditions of their grandparents' generation.",
@@ -370,7 +377,7 @@
       "modernise"
      ],
      "answer": 1,
-     "explain_vi": "preserve = gìn giữ, bảo tồn = maintain. 'promote' (quảng bá) gần chủ đề nhưng khác nghĩa; 'abandon' là trái nghĩa."
+     "explain_vi": "**preserve**: gìn giữ, bảo tồn → **maintain**; dấu hiệu ==their grandparents' generation==. __promote (quảng bá) gần chủ đề nhưng khác nghĩa; abandon là trái nghĩa.__"
     }
    ]
   },
@@ -385,27 +392,27 @@
     {
      "answer": "an",
      "accept": [],
-     "explain_vi": "part đếm được số ít, chưa xác định; 'essential' bắt đầu bằng nguyên âm → an essential part."
+     "explain_vi": "**part** đếm được số ít, chưa xác định; ==essential== bắt đầu bằng nguyên âm → **an**. __Chọn a/an theo âm đầu của từ đứng ngay sau.__"
     },
     {
      "answer": "few",
      "accept": [],
-     "explain_vi": "Very few of + danh từ số nhiều = rất ít (phủ định). Vế sau 'most of them simply learned…' cho thấy hầu như không ai được đào tạo."
+     "explain_vi": "**Very few of + danh từ số nhiều**: rất ít (nghĩa phủ định); vế sau ==most of them simply learned…== cho thấy hầu như không ai được đào tạo → **few**. __Very đứng trước nên không dùng 'a few'.__"
     },
     {
      "answer": "deal",
      "accept": [],
-     "explain_vi": "Cụm cố định: a great deal of + danh từ không đếm được (effort) = rất nhiều."
+     "explain_vi": "Cụm cố định **a great deal of + danh từ không đếm được** → ==a great … of effort== → **deal**. __effort không đếm được nên không dùng many.__"
     },
     {
      "answer": "in",
      "accept": [],
-     "explain_vi": "Cụm: lacking in sth = thiếu cái gì. 'by no means lacking in flavour' = không hề thiếu hương vị."
+     "explain_vi": "Cụm **lacking in sth**: thiếu cái gì → ==by no means lacking in flavour== (không hề thiếu hương vị) → **in**. __Học cụm động từ/tính từ kèm giới từ.__"
     },
     {
      "answer": "the",
      "accept": [],
-     "explain_vi": "popularity được xác định bởi 'of street food tours' → the popularity of…"
+     "explain_vi": "popularity được xác định bởi ==of street food tours== → **the popularity of…** __Danh từ có 'of + …' phía sau thường dùng the.__"
     }
    ]
   }
@@ -418,7 +425,8 @@
     "id": "d9H1",
     "q": "The ______ of the new menu surprised the restaurant owners; hardly anyone ordered from it. (POPULAR)",
     "answer": "unpopularity",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Sau ==The== cần **danh từ**; vế ==hardly anyone ordered from it== cho thấy nghĩa phủ định → un- + popular + -ity: **unpopularity**. __Đọc vế sau dấu chấm phẩy để biết cần nghĩa phủ định.__"
    },
    {
     "id": "d9H2",
@@ -426,7 +434,8 @@
     "answer": "creativity",
     "accept": [
      "creativeness"
-    ]
+    ],
+    "explain_vi": "Sau ==the young chef's== cần **danh từ**: create → **creativity** (sự sáng tạo); ==nobody had ever thought of== xác nhận nghĩa. __Họ từ: create, creative, creativity.__"
    },
    {
     "id": "d9H3",
@@ -436,7 +445,8 @@
      "anyone came to the festival because of the rain",
      "anybody came to the festival because of the rain.",
      "anybody came to the festival because of the rain"
-    ]
+    ],
+    "explain_vi": "**Very few people** cùng nghĩa với **Hardly anyone** (hầu như không ai) → ==Hardly anyone came to the festival because of the rain.== __Sau hardly dùng anyone, không dùng nobody.__"
    },
    {
     "id": "d9H4",
@@ -444,7 +454,8 @@
     "answer": "out of sugar.",
     "accept": [
      "out of sugar"
-    ]
+    ],
+    "explain_vi": "==hardly any sugar left== nghĩa là gần hết → **run out of sugar**. __Đừng quên 'of' trước danh từ: run out of + N.__"
    },
    {
     "id": "d9H5",
@@ -455,7 +466,8 @@
      "melt",
      "run"
     ],
-    "answer": "A"
+    "answer": "A",
+    "explain_vi": "Thành ngữ **make my mouth water**: làm em thèm chảy nước miếng → **A. water**; dấu hiệu ==The smell … was so wonderful==. __Thành ngữ phải học thuộc cả cụm.__"
    },
    {
     "id": "d9H6",
@@ -466,7 +478,8 @@
      "given up",
      "taken over"
     ],
-    "answer": "A"
+    "answer": "A",
+    "explain_vi": "**pass down**: truyền lại (từ đời này sang đời khác) → **A**; dấu hiệu ==from generation to generation==. __given up là bỏ, taken over là tiếp quản, không hợp nghĩa.__"
    }
   ]
  },
@@ -585,7 +598,7 @@
        "a birthday cake"
       ],
       "answer": 1,
-      "explain_vi": "Linh nói: \"I'm making spring rolls for the class party tomorrow.\""
+      "explain_vi": "Linh nói: ==\"I'm making spring rolls for the class party tomorrow.\"== → **spring rolls**."
      },
      {
       "q": "What have they run out of?",
@@ -596,7 +609,7 @@
        "eggs"
       ],
       "answer": 3,
-      "explain_vi": "\"We've run out of eggs.\" Thịt (pork) thì còn nhiều, cà rốt còn một ít."
+      "explain_vi": "Linh: ==\"But we've run out of eggs.\"== → **eggs**. __Thịt còn nhiều (plenty of pork), cà rốt còn ít (a few carrots).__"
      },
      {
       "q": "What does Linh say about the fish sauce?",
@@ -607,7 +620,7 @@
        "Tom must bring some from home."
       ],
       "answer": 0,
-      "explain_vi": "\"There isn't much left in the bottle\" = chỉ còn ít."
+      "explain_vi": "Linh: ==\"There isn't much left in the bottle.\"== → **There is only a little left.** __'isn't much left' nghĩa là chỉ còn ít.__"
      },
      {
       "q": "Where will Tom buy the things they need?",
@@ -618,7 +631,7 @@
        "at Linh's grandma's house"
       ],
       "answer": 2,
-      "explain_vi": "Linh nói có chợ nhỏ cuối phố, rẻ hơn siêu thị; Tom đáp \"I'll go there now.\""
+      "explain_vi": "Linh: ==\"there's a small market at the end of the street\"==, Tom đáp ==\"I'll go there now.\"== → **at a small market**. __Siêu thị được nhắc để so sánh, là thông tin nhiễu.__"
      },
      {
       "q": "Whose recipe is it?",
@@ -629,7 +642,7 @@
        "Linh's teacher's"
       ],
       "answer": 1,
-      "explain_vi": "Tom hỏi có phải công thức của mẹ không; Linh đáp: \"No, it's my grandma's.\""
+      "explain_vi": "Tom hỏi có phải của mẹ không, Linh đáp: ==\"No, it's my grandma's.\"== → **Linh's grandma's**. __Nghe 'No' để biết thông tin bị sửa.__"
      }
     ]
    },
@@ -642,21 +655,21 @@
      {
       "answer": "Friday",
       "accept": [],
-      "explain_vi": "\"Next Friday, we are going to celebrate the Mid-Autumn Festival.\""
+      "explain_vi": "==\"Next Friday, we are going to celebrate the Mid-Autumn Festival\"== → **Friday**. __Viết hoa chữ cái đầu các thứ trong tuần.__"
      },
      {
       "answer": "garden",
       "accept": [
        "school garden"
       ],
-      "explain_vi": "\"The party will be in the school garden, not in the hall.\""
+      "explain_vi": "==\"The party will be in the school garden, not in the hall.\"== → **garden**. __Câu có 'not' cho biết đâu là thông tin sai.__"
      },
      {
       "answer": "cup",
       "accept": [
        "a cup"
       ],
-      "explain_vi": "\"Please bring a plate and a cup from home.\""
+      "explain_vi": "==\"Please bring a plate and a cup from home\"== → **cup**."
      },
      {
       "answer": "10,000",
@@ -664,12 +677,12 @@
        "10000",
        "10.000"
       ],
-      "explain_vi": "\"Tickets cost 10,000 dong.\""
+      "explain_vi": "==\"Tickets cost 10,000 dong.\"== → **10,000**. __Viết số bằng chữ số cho nhanh và đúng.__"
      },
      {
       "answer": "local",
       "accept": [],
-      "explain_vi": "\"...lanterns for children in a local village.\""
+      "explain_vi": "==\"lanterns for children in a local village\"== → **local**."
      }
     ]
    }
@@ -748,7 +761,7 @@
        "It closes too early."
       ],
       "answer": 2,
-      "explain_vi": "Anna nói: \"I'd really like to try some local food.\""
+      "explain_vi": "Anna nói: ==\"I'd really like to try some local food.\"== → **She wants to try food that local people eat.** __Cô không chê đắt hay đóng cửa sớm, đừng đoán.__"
      },
      {
       "q": "How much does a bowl at the restaurant cost now?",
@@ -759,7 +772,7 @@
        "60,000 dong"
       ],
       "answer": 2,
-      "explain_vi": "Nam nói 40,000 rồi sửa lại: \"sorry, it's 50,000 now.\""
+      "explain_vi": "Nam nói 40,000 rồi sửa: ==\"Oh wait, sorry, it's 50,000 now.\"== → **50,000 dong**. __Nghe 'sorry' thì lấy thông tin sau.__"
      },
      {
       "q": "Why does Nam want to meet at half past six?",
@@ -770,7 +783,7 @@
        "because the coffee shop closes at seven"
       ],
       "answer": 0,
-      "explain_vi": "Quán mở lúc sáu giờ nhưng \"gets really crowded by seven\", nên hẹn sáu rưỡi để đến trước khi đông."
+      "explain_vi": "Quán mở lúc sáu giờ nhưng ==\"it gets really crowded by seven\"== → hẹn sáu rưỡi để **đến trước khi đông**. __Quán mở lúc 6 giờ, không phải 6 rưỡi, nên loại B.__"
      },
      {
       "q": "What does Nam finally say about Anna's sister?",
@@ -781,7 +794,7 @@
        "There are some dishes without meat for her."
       ],
       "answer": 3,
-      "explain_vi": "Nam đầu tiên nói \"won't have much choice\" rồi sửa: có vài món đậu phụ và rau."
+      "explain_vi": "Nam nói ==\"won't have much choice\"== rồi sửa: ==\"they have a few dishes with tofu and vegetables\"== → **There are some dishes without meat for her.** __Nghe 'Actually, wait' là có sửa thông tin.__"
      },
      {
       "q": "What will they do after dinner?",
@@ -792,7 +805,7 @@
        "try another restaurant"
       ],
       "answer": 1,
-      "explain_vi": "Anna muốn mua cà phê cho mẹ; Nam: \"We can go there after dinner.\""
+      "explain_vi": "Anna muốn mua cà phê cho mẹ; Nam: ==\"We can go there after dinner.\"== → **buy coffee for Anna's mum**."
      }
     ]
    },
@@ -805,31 +818,31 @@
      {
       "answer": "rice cake",
       "accept": [],
-      "explain_vi": "\"...a traditional dish for Tet, a square rice cake.\""
+      "explain_vi": "==\"a traditional dish for Tet, a square rice cake\"== → **rice cake**. __Đề đã có 'square' nên chỉ điền phần còn lại.__"
      },
      {
       "answer": "onions",
       "accept": [],
-      "explain_vi": "\"Each group needs to buy half a kilo of pork and a few onions.\" Không mua gạo vì đã có sẵn."
+      "explain_vi": "==\"each group needs to buy half a kilo of pork and a few onions\"== → **onions**. __Gạo đã có sẵn, không phải mua.__"
      },
      {
       "answer": "string",
       "accept": [
        "the string"
       ],
-      "explain_vi": "Nhiều người nghĩ gói lá khó nhất, \"but actually, tying the string is much more difficult.\""
+      "explain_vi": "Nhiều người nghĩ gói lá khó nhất, ==\"but actually, tying the string is much more difficult\"== → **string**. __Thông tin sau 'but actually' mới là đáp án.__"
      },
      {
       "answer": "10",
       "accept": [
        "ten"
       ],
-      "explain_vi": "\"The cakes have to cook for about 10 hours.\""
+      "explain_vi": "==\"the cakes have to cook for about 10 hours\"== → **10**."
      },
      {
       "answer": "yesterday",
       "accept": [],
-      "explain_vi": "\"Everyone will take home a cake that I cooked yesterday.\""
+      "explain_vi": "==\"everyone will take home a cake that I cooked yesterday\"== → **yesterday**."
      }
     ]
    }
@@ -912,7 +925,7 @@
        "Tom thinks they are too plain."
       ],
       "answer": 0,
-      "explain_vi": "Mai đồng ý bánh hợp chủ đề, nhưng \"they take about ten hours to cook\"."
+      "explain_vi": "Mai thấy bánh hợp chủ đề, nhưng ==\"they take about ten hours to cook\"== → **They need far too much time to prepare.** __'They would, but…' cho thấy lý do thật nằm sau 'but'.__"
      },
      {
       "q": "Why can't they sell fried spring rolls?",
@@ -923,7 +936,7 @@
        "Most students don't like them."
       ],
       "answer": 2,
-      "explain_vi": "\"The school doesn't allow hot oil at the stalls any more.\" Tom nói chúng không phức tạp."
+      "explain_vi": "Mai: ==\"the school doesn't allow hot oil at the stalls any more\"== → **Hot oil is no longer allowed at the stalls.** __'not … any more' tương đương 'no longer'.__"
      },
      {
       "q": "How does Tom first feel about the fresh rolls?",
@@ -934,7 +947,7 @@
        "He thinks they are too expensive."
       ],
       "answer": 1,
-      "explain_vi": "Tom: \"I'm not sure people will find them very exciting. They look a bit plain.\""
+      "explain_vi": "Tom: ==\"I'm not sure people will find them very exciting. They look a bit plain\"== → **He worries they may not attract customers.**"
      },
      {
       "q": "What makes Tom change his mind?",
@@ -945,7 +958,7 @@
        "a sauce made from a family recipe"
       ],
       "answer": 3,
-      "explain_vi": "Mai nhắc đến nước chấm lạc của bà, hương vị tuyệt vời; Tom đáp \"you've convinced me\"."
+      "explain_vi": "Mai nhắc ==\"My grandma's peanut sauce has an amazing flavour\"==, Tom đáp ==\"you've convinced me\"== → **a sauce made from a family recipe**. __Tìm câu đứng ngay trước khi người nói đổi ý.__"
      },
      {
       "q": "Why do they decide to make fewer than two hundred rolls?",
@@ -956,7 +969,7 @@
        "The judges set a limit for each stall."
       ],
       "answer": 2,
-      "explain_vi": "Gian bên cạnh năm ngoái làm 150 cuốn \"and still had plenty left\", nên họ chọn 120."
+      "explain_vi": "==\"the stall next to ours made a hundred and fifty rolls and still had plenty left\"== → **A stall that made a hundred and fifty last year had many left over.** __Câu hỏi Why: tìm lý do, không chỉ tìm con số.__"
      }
     ]
    },
@@ -971,19 +984,19 @@
       "accept": [
        "three"
       ],
-      "explain_vi": "\"I'll be your guide for the next 3 hours.\" Gần 4 tiếng là tour tuần trước."
+      "explain_vi": "==\"I'll be your guide for the next 3 hours.\"== → **3**. __Gần 4 tiếng là tour tuần trước, là thông tin nhiễu.__"
      },
      {
       "answer": "bread",
       "accept": [],
-      "explain_vi": "Hiệu bánh mì lẽ ra là điểm đầu nhưng quá đông, \"so we'll go there at the very end\"."
+      "explain_vi": "Hiệu bánh mì lẽ ra là điểm đầu nhưng quá đông, ==\"so we'll go there at the very end\"== → **bread**. __Last stop là điểm cuối cùng.__"
      },
      {
       "answer": "well",
       "accept": [
        "ancient well"
       ],
-      "explain_vi": "Bí quyết không phải thịt lợn mà là nước \"from an ancient well\"."
+      "explain_vi": "Bí quyết không phải thịt mà là nước ==\"from an ancient well just outside the town\"== → **well**. __'Many visitors believe… but…' báo hiệu thông tin bị sửa.__"
      },
      {
       "answer": "nuts",
@@ -991,12 +1004,12 @@
        "nut",
        "peanuts"
       ],
-      "explain_vi": "\"If you have any allergies, especially to nuts, please tell me now.\""
+      "explain_vi": "==\"If you have any allergies, especially to nuts, please tell me now\"== → **nuts**."
      },
      {
       "answer": "oldest",
       "accept": [],
-      "explain_vi": "\"Wait until the oldest person at the table starts eating before you begin.\""
+      "explain_vi": "==\"wait until the oldest person at the table starts eating\"== → **oldest**. __Điền đúng dạng so sánh nhất như trong bài.__"
      }
     ]
    }

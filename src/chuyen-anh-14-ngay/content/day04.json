@@ -159,37 +159,43 @@
      "id": "d4A1",
      "q": "Smartwatches, tablets and laptops are all electronic ______.",
      "answer": "devices",
-     "tag": "d4v1"
+     "tag": "d4v1",
+     "explain_vi": "Sau tính từ ==electronic== cần danh từ, chủ ngữ nhiều thứ ==are all== → **devices** (thiết bị). __Nhớ thêm -s cho danh từ số nhiều.__"
     },
     {
      "id": "d4A2",
      "q": "Nobody knows exactly who ______ the first kite, but it was more than 2,000 years ago.",
      "answer": "invented",
-     "tag": "d4v2"
+     "tag": "d4v2",
+     "explain_vi": "==more than 2,000 years ago== → quá khứ đơn: invent → **invented** (phát minh). __Thấy ago là chia quá khứ: thêm -ed.__"
     },
     {
      "id": "d4A3",
      "q": "In some mountain villages, children still don't have ______ to the Internet.",
      "answer": "access",
-     "tag": "d4v3"
+     "tag": "d4v3",
+     "explain_vi": "Cụm **have access to** (được tiếp cận): ==don't have== … ==to the Internet== → **access**. __access to + danh từ: access to the Internet, access to clean water.__"
     },
     {
      "id": "d4A4",
      "q": "Some students ______ on calculators too much and forget how to do simple maths in their heads.",
      "answer": "rely",
-     "tag": "d4v5"
+     "tag": "d4v5",
+     "explain_vi": "Cụm **rely on** (phụ thuộc vào): ==on calculators==; chủ ngữ số nhiều, hiện tại đơn → **rely**. __Thấy giới từ on ngay sau chỗ trống, nghĩ tới rely on.__"
     },
     {
      "id": "d4A5",
      "q": "My eyes hurt after I looked at the computer ______ for three hours.",
      "answer": "screen",
-     "tag": "d4v6"
+     "tag": "d4v6",
+     "explain_vi": "==looked at the computer== → **screen** (màn hình). __computer screen, phone screen là cụm hay gặp.__"
     },
     {
      "id": "d4A6",
      "q": "Please ______ the fans when you leave the classroom to save electricity.",
      "answer": "switch off",
-     "tag": "d4p1"
+     "tag": "d4p1",
+     "explain_vi": "==to save electricity== → **switch off** (tắt) quạt. Sau ==Please== dùng V nguyên thể. __switch off và turn off cùng nghĩa.__"
     }
    ]
   },
@@ -203,7 +209,8 @@
      "accept": [
       "'s going to rain"
      ],
-     "tag": "d4g"
+     "tag": "d4g",
+     "explain_vi": "==Look at those black clouds!== là dấu hiệu nhìn thấy → **be going to: is going to rain**. __Dự đoán có bằng chứng trước mắt → be going to, không dùng will.__"
     },
     {
      "id": "d4B2",
@@ -214,7 +221,8 @@
       "are going to watch",
       "'re going to watch"
      ],
-     "tag": "d4g"
+     "tag": "d4g",
+     "explain_vi": "==I've already bought the tickets== và giờ cụ thể ==at 7 p.m. on Saturday== → lịch đã sắp xếp: **are watching**. __Đã mua vé, đặt chỗ → hiện tại tiếp diễn.__"
     },
     {
      "id": "d4B3",
@@ -223,7 +231,8 @@
      "accept": [
       "'ll answer"
      ],
-     "tag": "d4g"
+     "tag": "d4g",
+     "explain_vi": "==Don't get up.== → quyết định ngay lúc nói → **will answer** ('ll answer). __Quyết định tức thì luôn dùng will.__"
     },
     {
      "id": "d4B4",
@@ -234,7 +243,8 @@
       "are going to do",
       "'re going to do"
      ],
-     "tag": "d4g"
+     "tag": "d4g",
+     "explain_vi": "==I think== + ==in the future== → dự đoán theo ý kiến: **will do**. __I think, I'm sure, probably thường đi với will.__"
     },
     {
      "id": "d4B5",
@@ -243,7 +253,8 @@
      "accept": [
       "'m going to learn"
      ],
-     "tag": "d4g"
+     "tag": "d4g",
+     "explain_vi": "==I decided last week== → dự định đã có từ trước: **am going to learn**. __Kế hoạch quyết định từ trước → be going to.__"
     },
     {
      "id": "d4B6",
@@ -252,7 +263,8 @@
      "accept": [
       "will not be"
      ],
-     "tag": "d4g"
+     "tag": "d4g",
+     "explain_vi": "==I promise== → lời hứa dùng **will**; phủ định là **won't be**. __won't là viết tắt của will not.__"
     }
    ]
   },
@@ -263,25 +275,29 @@
      "id": "d4C1",
      "q": "This app helps you find information ______. (QUICK)",
      "answer": "quickly",
-     "tag": "d4w"
+     "tag": "d4w",
+     "explain_vi": "Bổ nghĩa cho động từ ==find== cần **trạng từ**: quick → **quickly**. __Trạng từ cách thức thường đứng sau động từ hoặc tân ngữ.__"
     },
     {
      "id": "d4C2",
      "q": "My grandma learned to use a smartphone quite ______. (EASY)",
      "answer": "easily",
-     "tag": "d4w"
+     "tag": "d4w",
+     "explain_vi": "Bổ nghĩa cho ==learned== cần **trạng từ**: easy → **easily** (y đổi thành i + -ly). __Không viết “easyly”.__"
     },
     {
      "id": "d4C3",
      "q": "The lights in this building switch off ______ when nobody is in the room. (AUTOMATIC)",
      "answer": "automatically",
-     "tag": "d4w"
+     "tag": "d4w",
+     "explain_vi": "Bổ nghĩa cho ==switch off== cần **trạng từ**: automatic → **automatically**. __Tính từ đuôi -ic thêm -ally: -ic → -ically.__"
     },
     {
      "id": "d4C4",
      "q": "You should update your apps ______ to keep your phone safe. (REGULAR)",
      "answer": "regularly",
-     "tag": "d4w"
+     "tag": "d4w",
+     "explain_vi": "Bổ nghĩa cho ==update== cần **trạng từ**: regular → **regularly** (thường xuyên). __Chỉ thêm -ly, giữ nguyên regular.__"
     }
    ]
   },
@@ -299,7 +315,8 @@
       "It's on my desk."
      ],
      "answer": "C",
-     "tag": "fmt:dialogue_completion"
+     "tag": "fmt:dialogue_completion",
+     "explain_vi": "Câu hỏi ==Why…?== → trả lời bằng **Because…: C. Because it's quick and convenient.** __Câu hỏi Wh- không trả lời bằng Yes/No.__"
     },
     {
      "id": "d4D2",
@@ -311,7 +328,8 @@
       "I'm afraid not."
      ],
      "answer": "A",
-     "tag": "fmt:dialogue_completion"
+     "tag": "fmt:dialogue_completion",
+     "explain_vi": "Đáp lời cảm ơn ==Thanks so much for helping me== → **A. It's my pleasure.** __That's a good idea dùng để đáp lời gợi ý, không đáp lời cảm ơn.__"
     },
     {
      "id": "d4D3",
@@ -323,7 +341,8 @@
       "I'm visiting my cousins in Hai Phong."
      ],
      "answer": "D",
-     "tag": "fmt:dialogue_completion"
+     "tag": "fmt:dialogue_completion",
+     "explain_vi": "==What are you doing this weekend?== hỏi kế hoạch → **D. I'm visiting my cousins in Hai Phong.** __“I usually play” là thói quen, “I did” là quá khứ – sai thì.__"
     },
     {
      "id": "d4D4",
@@ -335,7 +354,8 @@
       "Congratulations!"
      ],
      "answer": "B",
-     "tag": "fmt:dialogue_completion"
+     "tag": "fmt:dialogue_completion",
+     "explain_vi": "Câu sau ==Paper books are still very useful.== phản đối ý Phong → **B. I'm not so sure about that.** __Luôn đọc câu đi sau chỗ trống để biết đồng ý hay phản đối.__"
     }
    ]
   },
@@ -349,14 +369,16 @@
      "kind": "tfng",
      "q": "During the challenge, students cannot use any devices at all, even for homework.",
      "answer": "False",
-     "tag": "d4r"
+     "tag": "d4r",
+     "explain_vi": "Bài viết: ==They can still use digital devices for homework, but only for one hour a day.== → vẫn được dùng để làm bài: **False**. __Cẩn thận từ tuyệt đối “any… at all”.__"
     },
     {
      "id": "d4E2",
      "kind": "tfng",
      "q": "Mr Quang got the idea for the challenge from another school.",
      "answer": "Not Given",
-     "tag": "d4r"
+     "tag": "d4r",
+     "explain_vi": "Bài chỉ nói ==The idea came from their form teacher, Mr Quang.==, không nhắc trường khác → **Not Given**. __Không có thông tin để khẳng định hay phủ định thì chọn Not Given.__"
     },
     {
      "id": "d4E3",
@@ -369,7 +391,8 @@
       "seven hours"
      ],
      "answer": "A",
-     "tag": "d4r"
+     "tag": "d4r",
+     "explain_vi": "==on average, more than five hours a day== → **A. more than five hours**. __one hour là thời gian được dùng cho bài tập – bẫy.__"
     },
     {
      "id": "d4E4",
@@ -382,7 +405,8 @@
       "It should last longer than a week."
      ],
      "answer": "B",
-     "tag": "d4r"
+     "tag": "d4r",
+     "explain_vi": "Long nói: ==“I'm sure I'll miss my games… I think I'll survive!”== → khó nhưng làm được: **B**. __survive (vượt qua được) cho thấy Long vẫn tham gia.__"
     }
    ]
   },
@@ -406,7 +430,8 @@
      "q": "Instead of throwing old newspapers away, we should ______ them. (Gợi ý: r______)",
      "answer": "recycle",
      "from_day": 3,
-     "tag": "d3v4"
+     "tag": "d3v4",
+     "explain_vi": "==Instead of throwing old newspapers away== → nên **recycle** (tái chế). Sau ==should== dùng V nguyên thể. __Dùng gợi ý chữ đầu r để đoán từ.__"
     },
     {
      "id": "d4G2",
@@ -416,14 +441,16 @@
       "have not seen"
      ],
      "from_day": 3,
-     "tag": "d3g"
+     "tag": "d3g",
+     "explain_vi": "==since last Tết== → **hiện tại hoàn thành: haven't seen**. __since + mốc thời gian → HTHT (buổi 3).__"
     },
     {
      "id": "d4G3",
      "q": "More than 500 people ______ the school concert last night. (Gợi ý: a______, chia ở quá khứ)",
      "answer": "attended",
      "from_day": 1,
-     "tag": "d1v5"
+     "tag": "d1v5",
+     "explain_vi": "==last night== → quá khứ đơn: attend → **attended** (tham dự). __Gợi ý “chia ở quá khứ” nhắc em thêm -ed.__"
     },
     {
      "id": "d4G4",
@@ -433,7 +460,8 @@
       "'s walking"
      ],
      "from_day": 1,
-     "tag": "d1g"
+     "tag": "d1g",
+     "explain_vi": "==usually== là thói quen, nhưng ==today== là việc tạm thời khác thói quen → **hiện tại tiếp diễn: is walking**. __usually… but today → hiện tại tiếp diễn cho việc hôm nay.__"
     }
    ]
   }
@@ -451,7 +479,7 @@
     "electric"
    ],
    "answer": 2,
-   "explain_vi": "digital photos = ảnh kỹ thuật số.",
+   "explain_vi": "==with their phones instead of using old film cameras== → ảnh chụp bằng điện thoại là ảnh **digital** (kỹ thuật số). __digital photos, digital books, digital devices là các cụm hay gặp.__",
    "tag": "d4v4"
   },
   {
@@ -460,7 +488,7 @@
    "skill": "vocab",
    "q": "My phone asks me to u______ my apps almost every week. (Viết cả từ)",
    "answer": "update",
-   "explain_vi": "update = cập nhật (ứng dụng, phần mềm, thông tin).",
+   "explain_vi": "Chữ đầu ==u== và ==my apps== → **update** (cập nhật ứng dụng, phần mềm). __Điện thoại hay nhắc em “update apps”, rất dễ nhớ.__",
    "tag": "d4v7"
   },
   {
@@ -475,7 +503,7 @@
     "throw away"
    ],
    "answer": 1,
-   "explain_vi": "keep up with = theo kịp, cập nhật kịp (tin tức).",
+   "explain_vi": "==reads the news online every morning== để theo kịp tin tức → **keep up with** (theo kịp, cập nhật). __switch off, take up, throw away không hợp nghĩa với “what is happening”.__",
    "tag": "d4p2"
   },
   {
@@ -490,7 +518,7 @@
     "getting"
    ],
    "answer": 0,
-   "explain_vi": "Quyết định / lời đề nghị ngay lúc nói → will ('ll) + V.",
+   "explain_vi": "==Wait here.== → B quyết định giúp ngay lúc nói → **will ('ll) + V: 'll get**. __Thấy người khác cần giúp và mình đề nghị ngay → nghĩ tới I'll.__",
    "tag": "d4g"
   },
   {
@@ -504,7 +532,7 @@
     "are going to come",
     "'re going to come"
    ],
-   "explain_vi": "Kế hoạch đã sắp xếp (đã chuẩn bị phòng) → hiện tại tiếp diễn.",
+   "explain_vi": "==Mum has already prepared their room== → kế hoạch đã sắp xếp → **hiện tại tiếp diễn: are coming**. __Lịch đã chuẩn bị sẵn + next weekend → am/is/are + V-ing.__",
    "tag": "d4g"
   },
   {
@@ -519,7 +547,7 @@
     "is flying"
    ],
    "answer": 3,
-   "explain_vi": "Đã mua vé = kế hoạch đã sắp xếp → hiện tại tiếp diễn.",
+   "explain_vi": "==has bought her plane ticket== → kế hoạch đã sắp xếp → **hiện tại tiếp diễn: is flying**. __has flown là HTHT, không dùng với tomorrow.__",
    "tag": "d4g"
   },
   {
@@ -534,7 +562,7 @@
     "quieter"
    ],
    "answer": 1,
-   "explain_vi": "Bổ nghĩa cho động từ 'speak' cần trạng từ: quiet → quietly.",
+   "explain_vi": "Bổ nghĩa cho động từ ==speak== cần **trạng từ**: quiet → **quietly**. __quiet là tính từ, quieter là so sánh hơn – đều sai chỗ này.__",
    "tag": "d4w"
   },
   {
@@ -543,7 +571,7 @@
    "skill": "wordform",
    "q": "Hold the baby bird ______. It's very small. (GENTLE)",
    "answer": "gently",
-   "explain_vi": "gentle → gently (-le → -ly). Trạng từ bổ nghĩa cho 'hold'.",
+   "explain_vi": "Bổ nghĩa cho động từ ==Hold== cần **trạng từ**: gentle → **gently** (-le đổi thành -ly). __Không viết “gentlely”.__",
    "tag": "d4w"
   },
   {
@@ -558,7 +586,7 @@
     "You're welcome."
    ],
    "answer": 2,
-   "explain_vi": "Đáp lại lời đề nghị giúp đỡ: 'Yes, I'd love that. Thanks!' / 'Yes, please.'",
+   "explain_vi": "==Would you like me to…?== là lời đề nghị giúp → nhận lời: **Yes, I'd love that. Thanks!** __“No, I wouldn't like.” sai ngữ pháp; You're welcome dùng để đáp lời cảm ơn.__",
    "tag": "fmt:dialogue_completion"
   },
   {
@@ -573,7 +601,7 @@
     "have"
    ],
    "answer": 2,
-   "explain_vi": "Bắt đầu trong quá khứ, vẫn còn đến nay (for ten years, still works) → hiện tại hoàn thành (buổi 3).",
+   "explain_vi": "==for ten years== và ==it still works well== → bắt đầu trong quá khứ, còn đến nay → **hiện tại hoàn thành: have had** (buổi 3). __had là quá khứ đơn, không hợp với việc còn tiếp diễn.__",
    "from_day": 3,
    "tag": "d3g"
   },
@@ -583,7 +611,7 @@
    "skill": "review",
    "q": "I need to r______ for my English test tomorrow, so I can't go out tonight. (Viết cả từ)",
    "answer": "revise",
-   "explain_vi": "revise = ôn bài (buổi 1).",
+   "explain_vi": "==for my English test tomorrow== → **revise** (ôn bài, buổi 1). __Sau need to là động từ nguyên thể.__",
    "from_day": 1,
    "tag": "d1v3"
   },
@@ -599,7 +627,7 @@
     "encouragement"
    ],
    "answer": 3,
-   "explain_vi": "Sau 'your' cần danh từ: encourage → encouragement (đuôi -ment, buổi 1).",
+   "explain_vi": "Sau ==your== cần **danh từ**: encourage → **encouragement** (đuôi -ment, buổi 1). __Sau my/your/his… luôn là danh từ.__",
    "from_day": 1,
    "tag": "d1w"
   }

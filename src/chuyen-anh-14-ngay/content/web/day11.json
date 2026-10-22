@@ -10,7 +10,8 @@
       "the singer ___ won the contest",
       "my aunt, ___ lives in Đà Nẵng",
       "a friend ___ never tells lies"
-     ]
+     ],
+     "rule_vi": "**who** thay cho người (singer, aunt, friend), ngay sau là động từ ==won, lives, tells==. __Danh từ chỉ người + chỗ trống + động từ → who.__"
     },
     {
      "name": "which",
@@ -18,7 +19,8 @@
       "the phone ___ I bought last week",
       "the dog ___ barks every night",
       "a film ___ made everyone cry"
-     ]
+     ],
+     "rule_vi": "**which** thay cho vật hoặc con vật: ==phone, dog, film==. __Con vật cũng dùng which, không dùng who.__"
     },
     {
      "name": "whose",
@@ -26,30 +28,36 @@
       "a girl ___ dad is a pilot",
       "the neighbour ___ cat sleeps in our garden",
       "students ___ projects won prizes"
-     ]
+     ],
+     "rule_vi": "**whose + danh từ** chỉ sở hữu: ==dad, cat, projects== đứng ngay sau chỗ trống. __Sau chỗ trống là danh từ không có mạo từ → whose.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "Nam is the boy whose sister plays for our team.",
-    "hint_vi": "whose + danh từ (chỉ sở hữu)"
+    "hint_vi": "whose + danh từ (chỉ sở hữu)",
+    "why_vi": "**whose** đứng ngay sau ==the boy== và trước danh từ ==sister==: Nam is the boy whose sister plays... __Trật tự: whose + danh từ + động từ.__"
    },
    {
     "sentence": "This is the park where we often play badminton.",
-    "hint_vi": "where thay cho nơi chốn"
+    "hint_vi": "where thay cho nơi chốn",
+    "why_vi": "**where** thay cho ==the park==, sau đó là câu đủ ý: we often play badminton. __Trạng từ often đứng trước động từ thường.__"
    },
    {
     "sentence": "I trust friends who keep their promises.",
-    "hint_vi": "who thay cho người"
+    "hint_vi": "who thay cho người",
+    "why_vi": "**who** đứng ngay sau ==friends== (người) và làm chủ ngữ của keep. __Đặt mệnh đề quan hệ ngay sau danh từ nó bổ nghĩa.__"
    },
    {
     "sentence": "My grandfather, who is very generous, loves helping others.",
-    "hint_vi": "Mệnh đề không xác định nằm giữa hai dấu phẩy"
+    "hint_vi": "Mệnh đề không xác định nằm giữa hai dấu phẩy",
+    "why_vi": "Mệnh đề **who is very generous** nằm giữa hai dấu phẩy, ngay sau ==My grandfather==; động từ chính là loves. __Đừng quên dấu phẩy với mệnh đề không xác định.__"
    },
    {
     "sentence": "The person that I look up to most is my aunt.",
-    "hint_vi": "that trong mệnh đề xác định + look up to"
+    "hint_vi": "that trong mệnh đề xác định + look up to",
+    "why_vi": "Chủ ngữ dài **The person that I look up to most**, sau đó mới đến ==is my aunt==. __look up to giữ nguyên cả cụm, 'most' đứng ngay sau.__"
    }
   ],
   "truefalse": [
@@ -57,49 +65,49 @@
     "s": "Mr Hải, that teaches us PE, is very strict.",
     "ok": false,
     "fix": "Mr Hải, who teaches us PE, is very strict.",
-    "why_vi": "Sau dấu phẩy (mệnh đề không xác định) không dùng that; nói về người thì dùng who."
+    "why_vi": "Sau ==Mr Hải,== (có dấu phẩy) không dùng that; nói về người dùng **who**. __Thấy dấu phẩy thì gạch ngay 'that'.__"
    },
    {
     "s": "The girl who sits behind me always shares her pencils.",
     "ok": true,
     "fix": "The girl who sits behind me always shares her pencils.",
-    "why_vi": "who thay cho người (the girl); mệnh đề xác định nên không có dấu phẩy."
+    "why_vi": "**who** thay cho người ==The girl==; mệnh đề xác định nên không có dấu phẩy → câu đúng. __Mệnh đề xác định cho biết 'bạn gái nào'.__"
    },
    {
     "s": "This is the house which my grandparents live.",
     "ok": false,
     "fix": "This is the house where my grandparents live.",
-    "why_vi": "Sau chỗ trống là câu đủ ý (my grandparents live) và thay cho nơi chốn → where."
+    "why_vi": "Sau chỗ trống là câu đủ ý ==my grandparents live== và thay cho nơi chốn → **where**. __Muốn dùng which thì phải thêm 'in' ở cuối câu.__"
    },
    {
     "s": "I know a boy who father is a pilot.",
     "ok": false,
     "fix": "I know a boy whose father is a pilot.",
-    "why_vi": "'father của cậu bé' là sở hữu → whose + danh từ."
+    "why_vi": "==father== là của cậu bé → sở hữu: **whose father**. __who không đứng trước danh từ để chỉ sở hữu.__"
    },
    {
     "s": "The cake that Lan made was delicious.",
     "ok": true,
     "fix": "The cake that Lan made was delicious.",
-    "why_vi": "that thay cho vật trong mệnh đề xác định (không dấu phẩy) là đúng."
+    "why_vi": "**that** thay cho vật ==The cake== trong mệnh đề xác định (không dấu phẩy) → câu đúng. __Không có dấu phẩy thì that dùng được cho cả người và vật.__"
    },
    {
     "s": "Đà Lạt, which is famous for its flowers, is cool all year round.",
     "ok": true,
     "fix": "Đà Lạt, which is famous for its flowers, is cool all year round.",
-    "why_vi": "which thay cho địa danh làm chủ ngữ (which is famous…), đặt giữa hai dấu phẩy."
+    "why_vi": "**which** thay cho địa danh ==Đà Lạt==, làm chủ ngữ của 'is famous', đặt giữa hai dấu phẩy → câu đúng."
    },
    {
     "s": "The man which helped us was very kind.",
     "ok": false,
     "fix": "The man who helped us was very kind.",
-    "why_vi": "the man là người → who (hoặc that), không dùng which."
+    "why_vi": "==The man== là người → **who** (hoặc that), không dùng which. __which chỉ dùng cho vật, con vật.__"
    },
    {
     "s": "We visited the school where my mum used to teach.",
     "ok": true,
     "fix": "We visited the school where my mum used to teach.",
-    "why_vi": "where thay cho nơi chốn (the school), sau đó là câu đầy đủ."
+    "why_vi": "**where** thay cho nơi chốn ==the school==, sau đó là câu đầy đủ (my mum used to teach) → câu đúng. __used to + V: đã từng.__"
    }
   ]
  },
@@ -120,7 +128,7 @@
       "careful"
      ],
      "answer": 2,
-     "explain_vi": "patient (kiên nhẫn) >< impatient (thiếu kiên nhẫn). 'calm', 'gentle' gần nghĩa, không phải trái nghĩa."
+     "explain_vi": "==PATIENT== (kiên nhẫn) >< **impatient** (thiếu kiên nhẫn). __'calm', 'gentle' gần nghĩa, không phải trái nghĩa.__"
     },
     {
      "q": "All my classmates SUPPORTED my idea for the class trip.",
@@ -131,7 +139,7 @@
       "looked up to"
      ],
      "answer": 1,
-     "explain_vi": "support (ủng hộ) >< oppose (phản đối). 'agreed with' là đồng nghĩa – bẫy!"
+     "explain_vi": "==SUPPORTED== (ủng hộ) >< **opposed** (phản đối). __'agreed with' là đồng nghĩa – bẫy!__"
     },
     {
      "q": "Minh felt CONFIDENT before his speaking test because he had practised a lot.",
@@ -142,7 +150,7 @@
       "ready"
      ],
      "answer": 0,
-     "explain_vi": "confident (tự tin) >< nervous (lo lắng, hồi hộp)."
+     "explain_vi": "==CONFIDENT== (tự tin) >< **nervous** (lo lắng, hồi hộp). Vế ==he had practised a lot== giúp em hiểu nghĩa. __relaxed, ready gần nghĩa với confident.__"
     },
     {
      "q": "Most students TRUST Ms Hoa because she always keeps her promises.",
@@ -153,7 +161,7 @@
       "doubt"
      ],
      "answer": 3,
-     "explain_vi": "trust (tin tưởng) >< doubt (nghi ngờ). 'rely on', 'believe in' gần nghĩa với trust."
+     "explain_vi": "==TRUST== (tin tưởng) >< **doubt** (nghi ngờ). __'rely on', 'believe in' gần nghĩa với trust – đừng chọn nhầm.__"
     },
     {
      "q": "Mai and her best friend ARGUE about small things almost every day.",
@@ -164,7 +172,7 @@
       "complain"
      ],
      "answer": 1,
-     "explain_vi": "argue (cãi nhau) >< agree (đồng ý, nhất trí). 'quarrel', 'disagree' cùng nghĩa với argue."
+     "explain_vi": "==ARGUE== (cãi nhau) >< **agree** (đồng ý). __'quarrel', 'disagree' cùng nghĩa với argue – bẫy.__"
     }
    ]
   },
@@ -184,7 +192,7 @@
       "Mr Tùng, whose his dog barks all night, is our new neighbour."
      ],
      "answer": 0,
-     "explain_vi": "His dog → whose dog (sở hữu). Không thêm 'his' sau whose, không dùng that sau dấu phẩy."
+     "explain_vi": "==His dog== → **whose dog** (sở hữu) → đáp án **A**. __Không thêm 'his' sau whose, không dùng that sau dấu phẩy.__"
     },
     {
      "q": "Đà Nẵng is a beautiful city. I spent my summer holiday there.",
@@ -195,7 +203,7 @@
       "Đà Nẵng, where I spent my summer holiday there, is a beautiful city."
      ],
      "answer": 1,
-     "explain_vi": "there (ở đó) → where. Đã dùng where thì bỏ 'there'; dùng which thì phải có 'in'."
+     "explain_vi": "==there== (ở đó) → **where**; dùng where thì bỏ 'there' → **B**. __A thiếu 'in' (phải là in which); C, D vẫn còn 'there'.__"
     },
     {
      "q": "The girl is very honest. She found my wallet.",
@@ -206,7 +214,7 @@
       "The girl who found my wallet is very honest."
      ],
      "answer": 3,
-     "explain_vi": "She → who, đặt ngay sau 'the girl'. Mệnh đề xác định nên không có dấu phẩy."
+     "explain_vi": "==She== chỉ the girl (người) → **who**, đặt ngay sau 'the girl' → **D**. __A dùng which cho người; B có dấu phẩy với that; C đặt who sai chỗ.__"
     },
     {
      "q": "The film made me cry. I watched it last night.",
@@ -217,7 +225,7 @@
       "The film I watched last night it made me cry."
      ],
      "answer": 2,
-     "explain_vi": "it → which (vật). Đã có which thì bỏ 'it'; who chỉ dùng cho người."
+     "explain_vi": "==it== chỉ the film (vật) → **which**; có which thì bỏ 'it' → **C**. __A, D thừa 'it'; who chỉ dùng cho người.__"
     },
     {
      "q": "Hùng's father is a firefighter. Everyone in our street looks up to him.",
@@ -228,7 +236,7 @@
       "Hùng's father, whose everyone in our street looks up to, is a firefighter."
      ],
      "answer": 1,
-     "explain_vi": "him → who (giới từ 'to' vẫn đứng cuối). Không dùng that sau dấu phẩy, không lặp lại 'him'."
+     "explain_vi": "==him== chỉ Hùng's father (người) → **who**, giới từ 'to' vẫn ở cuối → **B**. __Không dùng that sau dấu phẩy, không lặp lại 'him'.__"
     }
    ]
   }
@@ -250,7 +258,7 @@
       "busy"
      ],
      "answer": 1,
-     "explain_vi": "kind (tốt bụng) >< unkind (không tốt bụng, ác). 'nice' cùng nghĩa với kind – đó là bẫy."
+     "explain_vi": "==KIND== (tốt bụng) >< **unkind** (không tốt bụng). __'nice' cùng nghĩa với kind – bẫy. Thêm un- thường tạo từ trái nghĩa.__"
     },
     {
      "q": "Nam is a LAZY student. He never does his homework.",
@@ -261,7 +269,7 @@
       "funny"
      ],
      "answer": 0,
-     "explain_vi": "lazy (lười biếng) >< hard-working (chăm chỉ)."
+     "explain_vi": "==LAZY== (lười) >< **hard-working** (chăm chỉ). Vế ==He never does his homework== cho thấy Nam lười. __sleepy (buồn ngủ) không phải trái nghĩa.__"
     },
     {
      "q": "Lan always feels HAPPY when she is with her best friends.",
@@ -272,7 +280,7 @@
       "late"
      ],
      "answer": 2,
-     "explain_vi": "happy (vui) >< sad (buồn). 'glad' cũng có nghĩa là vui – cùng nghĩa, không phải trái nghĩa."
+     "explain_vi": "==HAPPY== (vui) >< **sad** (buồn). __'glad' cũng nghĩa là vui – cùng nghĩa, không phải trái nghĩa.__"
     },
     {
      "q": "My little brother is very NOISY when he plays with his friends.",
@@ -283,7 +291,7 @@
       "quiet"
      ],
      "answer": 3,
-     "explain_vi": "noisy (ồn ào) >< quiet (yên lặng). 'loud' (to, ồn) cùng nghĩa với noisy."
+     "explain_vi": "==NOISY== (ồn ào) >< **quiet** (yên lặng). __'loud' (to, ồn) cùng nghĩa với noisy – bẫy.__"
     },
     {
      "q": "Minh is always POLITE to older people.",
@@ -294,7 +302,7 @@
       "rich"
      ],
      "answer": 0,
-     "explain_vi": "polite (lễ phép, lịch sự) >< rude (thô lỗ, vô lễ)."
+     "explain_vi": "==POLITE== (lễ phép) >< **rude** (thô lỗ, vô lễ). __kind gần nghĩa; tall, rich nói về ngoại hình, tiền bạc.__"
     }
    ]
   },
@@ -314,7 +322,7 @@
       "I have a friend who she lives in Đà Lạt."
      ],
      "answer": 2,
-     "explain_vi": "She là người → thay bằng who. Đã có who thì bỏ 'she'. which dùng cho vật, where dùng cho nơi chốn."
+     "explain_vi": "==She== là người → **who**; đã có who thì bỏ 'she' → **C**. __which dùng cho vật, where dùng cho nơi chốn.__"
     },
     {
      "q": "I love the bag. My grandma gave it to me.",
@@ -325,7 +333,7 @@
       "I love the bag where my grandma gave me."
      ],
      "answer": 0,
-     "explain_vi": "it là vật (the bag) → thay bằng which và bỏ 'it'. who chỉ dùng cho người."
+     "explain_vi": "==it== chỉ the bag (vật) → **which**, bỏ 'it' → **A**. __who chỉ dùng cho người; where cho nơi chốn.__"
     },
     {
      "q": "This is the library. I meet my friends there.",
@@ -336,7 +344,7 @@
       "This is the library where I meet my friends."
      ],
      "answer": 3,
-     "explain_vi": "there (ở đó) là nơi chốn → thay bằng where và bỏ 'there'."
+     "explain_vi": "==there== là nơi chốn → **where**, bỏ 'there' → **D**. __C còn thừa 'there'; A thiếu giới từ (phải là in which).__"
     },
     {
      "q": "The man is my uncle. He is wearing a red hat.",
@@ -347,7 +355,7 @@
       "The man who is wearing a red hat he is my uncle."
      ],
      "answer": 1,
-     "explain_vi": "He = the man (người) → who, đặt ngay sau 'the man'. Không thêm 'he' nữa."
+     "explain_vi": "==He== chỉ the man (người) → **who**, đặt ngay sau 'the man' → **B**. __Không thêm 'he' nữa; which dùng cho vật.__"
     },
     {
      "q": "Lan has an uncle. His job is very interesting.",
@@ -358,7 +366,7 @@
       "Lan has an uncle whose his job is very interesting."
      ],
      "answer": 2,
-     "explain_vi": "His job (công việc của chú ấy) là sở hữu → whose job. Không thêm 'his' sau whose."
+     "explain_vi": "==His job== (công việc của chú ấy) là sở hữu → **whose job** → **C**. __Không thêm 'his' sau whose; who không chỉ sở hữu.__"
     }
    ]
   }
@@ -380,7 +388,7 @@
       "close"
      ],
      "answer": 1,
-     "explain_vi": "on good terms (quan hệ tốt) >< at odds (bất hoà, mâu thuẫn). 'on the same wavelength', 'close' gần nghĩa; 'in touch' = giữ liên lạc."
+     "explain_vi": "==ON GOOD TERMS== (quan hệ tốt) >< **at odds** (bất hoà). __'on the same wavelength', 'close' gần nghĩa; 'in touch' là giữ liên lạc.__"
     },
     {
      "q": "Mr Bình is so TIGHT-FISTED that he never even buys his friends a cup of coffee.",
@@ -391,7 +399,7 @@
       "careful"
      ],
      "answer": 2,
-     "explain_vi": "tight-fisted (keo kiệt) >< generous (hào phóng). 'stingy' là từ đồng nghĩa – bẫy."
+     "explain_vi": "==TIGHT-FISTED== (keo kiệt) >< **generous** (hào phóng). Vế ==never even buys his friends a cup of coffee== giải thích nghĩa. __'stingy' là đồng nghĩa – bẫy.__"
     },
     {
      "q": "Hoa is a RELIABLE friend; she has never once let me down.",
@@ -402,7 +410,7 @@
       "untrustworthy"
      ],
      "answer": 3,
-     "explain_vi": "reliable (đáng tin cậy) >< untrustworthy (không đáng tin). 'dependable' đồng nghĩa với reliable."
+     "explain_vi": "==RELIABLE== (đáng tin cậy) >< **untrustworthy** (không đáng tin). __'dependable' đồng nghĩa; un- + tính từ thường cho từ trái nghĩa.__"
     },
     {
      "q": "The new student was rather RESERVED at first, but after a few weeks she was chatting with everyone.",
@@ -413,7 +421,7 @@
       "serious"
      ],
      "answer": 0,
-     "explain_vi": "reserved (kín đáo, ít nói) >< outgoing (cởi mở, hướng ngoại). 'shy' gần nghĩa với reserved."
+     "explain_vi": "==RESERVED== (kín đáo, ít nói) >< **outgoing** (cởi mở). Vế sau ==chatting with everyone== là gợi ý. __'shy' gần nghĩa với reserved – bẫy.__"
     },
     {
      "q": "It's wrong to LOOK DOWN ON people just because they have less money than you.",
@@ -424,7 +432,7 @@
       "get on with"
      ],
      "answer": 1,
-     "explain_vi": "look down on (coi thường) >< look up to (kính trọng). 'despise', 'make fun of' cùng hướng nghĩa coi thường."
+     "explain_vi": "==LOOK DOWN ON== (coi thường) >< **look up to** (kính trọng). __'despise', 'make fun of' cùng hướng nghĩa coi thường – bẫy.__"
     }
    ]
   },
@@ -444,7 +452,7 @@
       "I have three cousins, that all are older than me."
      ],
      "answer": 2,
-     "explain_vi": "all of them → all of whom (sau giới từ 'of' dùng whom). Không dùng who sau giới từ, không dùng that sau dấu phẩy."
+     "explain_vi": "==all of them== → **all of whom** (sau giới từ 'of' dùng whom) → **C**. __Không dùng who sau giới từ, không dùng that sau dấu phẩy.__"
     },
     {
      "q": "Ms Lan is the teacher. I can always turn to her for advice.",
@@ -455,7 +463,7 @@
       "Ms Lan is the teacher to that I can always turn for advice."
      ],
      "answer": 0,
-     "explain_vi": "turn to sb = tìm đến ai để nhờ giúp. Đưa 'to' lên trước: to whom. Không bỏ mất 'to', không lặp 'to', không dùng 'to that'."
+     "explain_vi": "**turn to sb**: tìm đến ai để nhờ giúp. Đưa ==to== lên trước: **to whom** → **A**. __B mất 'to', C lặp 'to', D sai vì không có 'to that'.__"
     },
     {
      "q": "Nam forgot his best friend's birthday. This upset her a lot.",
@@ -466,7 +474,7 @@
       "Nam forgot his best friend's birthday, which upset her a lot."
      ],
      "answer": 3,
-     "explain_vi": "'This' chỉ cả sự việc Nam quên sinh nhật → dùng ', which' thay cho cả mệnh đề trước. Không dùng that/what ở vị trí này."
+     "explain_vi": "==This== chỉ cả việc Nam quên sinh nhật → dùng **, which** thay cho cả mệnh đề trước → **D**. __Không dùng that/what/who sau dấu phẩy ở vị trí này.__"
     },
     {
      "q": "We visited an old family house. Its walls were covered in photos of our ancestors.",
@@ -477,7 +485,7 @@
       "We visited an old family house where its walls were covered in photos of our ancestors."
      ],
      "answer": 1,
-     "explain_vi": "Its walls → whose walls (whose dùng được cho cả vật). Không thêm 'its' sau whose."
+     "explain_vi": "==Its walls== → **whose walls** (whose dùng được cho cả vật) → **B**. __Không thêm 'its' sau whose; which không chỉ sở hữu.__"
     },
     {
      "q": "The village is very peaceful. My grandparents live in it.",
@@ -488,7 +496,7 @@
       "The village in that my grandparents live is very peaceful."
      ],
      "answer": 0,
-     "explain_vi": "live in it → in which (giới từ + which). Thiếu 'in' là sai; không dùng 'in where' hay 'in that'."
+     "explain_vi": "==live in it== → **in which** (giới từ + which) → **A**. __Thiếu 'in' là sai; không có 'in where' hay 'in that'.__"
     }
    ]
   }
@@ -501,13 +509,15 @@
     "id": "d11H1",
     "q": "Most teenagers want more ______ from their parents; they like making their own decisions. (DEPEND)",
     "answer": "independence",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Sau ==more== cần **danh từ**; muốn tự quyết định → **independence** (sự độc lập). __Đổi từ 2 lần: depend → dependence → thêm in- thành independence.__"
    },
    {
     "id": "d11H2",
     "q": "Mai kept checking her watch and tapping her foot ______; her best friend was already half an hour late. (PATIENT)",
     "answer": "impatiently",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Bổ nghĩa cho ==tapping her foot== cần **trạng từ**; bạn đến muộn nên sốt ruột → **impatiently**. __Đọc ngữ cảnh để biết cần nghĩa phủ định (im-).__"
    },
    {
     "id": "d11H3",
@@ -526,7 +536,8 @@
      "who I admire the most is my grandfather.",
      "whom I admire the most is my grandfather.",
      "that I admire the most is my grandfather."
-    ]
+    ],
+    "explain_vi": "==more than anyone else== → so sánh nhất: **The person (who) I admire most is my grandfather.** __Có thể bỏ who/that vì nó làm tân ngữ.__"
    },
    {
     "id": "d11H4",
@@ -534,7 +545,8 @@
     "answer": "whose parents are both doctors, wants to become a nurse.",
     "accept": [
      "whose parents are both doctors, wants to become a nurse"
-    ]
+    ],
+    "explain_vi": "==Her parents== → **whose parents** (sở hữu), đặt giữa hai dấu phẩy: **whose parents are both doctors, wants to become a nurse.** __Động từ chính 'wants' vẫn giữ -s.__"
    },
    {
     "id": "d11H5",
@@ -545,7 +557,8 @@
      "takes over",
      "looks for"
     ],
-    "answer": "A"
+    "answer": "A",
+    "explain_vi": "Lan giống mẹ ==just like her mother== → **A. takes after** (giống người trong gia đình). __looks after là chăm sóc, takes over là tiếp quản, looks for là tìm.__"
    },
    {
     "id": "d11H6",
@@ -556,7 +569,8 @@
      "brothers",
      "friends"
     ],
-    "answer": "A"
+    "answer": "A",
+    "explain_vi": "Thành ngữ **as thick as thieves**: rất thân thiết → **A**. Có ==since primary school== cho thấy hai bạn thân lâu năm. __Thành ngữ phải học nguyên cụm, không đoán theo nghĩa từng từ.__"
    }
   ]
  },
@@ -675,7 +689,7 @@
        "playing with a dog"
       ],
       "answer": 1,
-      "explain_vi": "Anna: \"She's the girl who is holding the cake.\""
+      "explain_vi": "Anna nói ==\"She's the girl who is holding the cake.\"== → **holding the cake**. __Mệnh đề who sau 'the girl' chính là thông tin miêu tả.__"
      },
      {
       "q": "What is Mai like?",
@@ -686,7 +700,7 @@
        "honest"
       ],
       "answer": 2,
-      "explain_vi": "\"She's very generous. She always shares her snacks.\" Funny là Nam."
+      "explain_vi": "==\"She's very generous. She always shares her snacks.\"== → **generous**. __Funny là nói về Nam, không phải Mai – cẩn thận nhầm người.__"
      },
      {
       "q": "Which is true about Nam?",
@@ -697,7 +711,7 @@
        "He is holding the cake."
       ],
       "answer": 0,
-      "explain_vi": "\"He's the boy whose dog is in the photo too.\""
+      "explain_vi": "==\"He's the boy whose dog is in the photo too.\"== → **His dog is in the photo.** __whose dog: con chó của cậu ấy.__"
      },
      {
       "q": "What do Anna and Nam sometimes argue about?",
@@ -708,7 +722,7 @@
        "football"
       ],
       "answer": 3,
-      "explain_vi": "\"We sometimes argue about football! He supports a different team.\""
+      "explain_vi": "==\"We sometimes argue about football!\"== → **football**. __Câu sau 'He supports a different team' giải thích lý do.__"
      },
      {
       "q": "Where was the party?",
@@ -719,7 +733,7 @@
        "in a park"
       ],
       "answer": 1,
-      "explain_vi": "\"At a pizza restaurant near my house.\" Không phải ở nhà Anna."
+      "explain_vi": "==\"At a pizza restaurant near my house.\"== → **at a pizza restaurant**. __'near my house' là gần nhà, không phải ở nhà Anna – bẫy.__"
      }
     ]
    },
@@ -734,33 +748,33 @@
       "accept": [
        "grandpa"
       ],
-      "explain_vi": "\"It's my grandfather, who lives with my family.\""
+      "explain_vi": "==\"It's my grandfather, who lives with my family in Hanoi.\"== → **grandfather**. __Đáp án đến ngay sau cụm 'look up to'.__"
      },
      {
       "answer": "75",
       "accept": [
        "seventy five"
       ],
-      "explain_vi": "\"He is 75 years old.\""
+      "explain_vi": "==\"He is 75 years old.\"== → **75**. __Viết bằng chữ số cho nhanh, đỡ sai chính tả.__"
      },
      {
       "answer": "village",
       "accept": [],
-      "explain_vi": "\"He was a teacher at a village school.\""
+      "explain_vi": "==\"he was a teacher at a village school\"== → **village**. __Chỗ trống đứng trước 'school' nên cần từ bổ nghĩa cho school.__"
      },
      {
       "answer": "park",
       "accept": [
        "the park"
       ],
-      "explain_vi": "\"Goes for a walk in the park, where he meets his old friends.\""
+      "explain_vi": "==\"goes for a walk in the park\"== → **park**. __Ghi chú dùng lại đúng các từ trong bài nghe.__"
      },
      {
       "answer": "maths",
       "accept": [
        "math"
       ],
-      "explain_vi": "\"He helps me with my maths homework.\""
+      "explain_vi": "==\"he helps me with my maths homework\"== → **maths**. __Viết math hay maths đều được.__"
      }
     ]
    }
@@ -839,7 +853,7 @@
        "Anna laughed at her."
       ],
       "answer": 1,
-      "explain_vi": "\"I told her a secret about my older sister, and she told someone else.\""
+      "explain_vi": "Linh: ==\"I told her a secret ... and she told someone else.\"== → **Her friend told someone else her secret.** __Đáp án đúng thường lặp lại hoặc diễn đạt lại lời nói.__"
      },
      {
       "q": "Who did Mai tell?",
@@ -850,7 +864,7 @@
        "just one person"
       ],
       "answer": 3,
-      "explain_vi": "Linh tưởng Mai kể cả lớp, nhưng \"actually she only told Anna\"."
+      "explain_vi": "Linh tưởng Mai kể cả lớp, nhưng ==\"actually she only told Anna\"== → **just one person**. __Cẩn thận chỗ có 'actually' – người nói sửa lại thông tin.__"
      },
      {
       "q": "How has Mai tried to say sorry?",
@@ -861,7 +875,7 @@
        "She asked Nam to help."
       ],
       "answer": 0,
-      "explain_vi": "\"She sent me a long message last night, but I haven't answered it yet.\""
+      "explain_vi": "==\"She sent me a long message last night\"== → **She wrote Linh a message.** __sent a message tương đương wrote a message.__"
      },
      {
       "q": "Why does Nam think Mai may not be completely to blame?",
@@ -872,7 +886,7 @@
        "She was too busy to listen."
       ],
       "answer": 2,
-      "explain_vi": "Nam: \"Maybe she didn't realise it was a secret.\" Linh kể lúc ồn ào giờ ăn trưa."
+      "explain_vi": "Nam: ==\"Maybe she didn't realise it was a secret.\"== → **She might not have known it was a secret.** __realise gần nghĩa với know – nghe từ đồng nghĩa.__"
      },
      {
       "q": "What will Linh do next?",
@@ -883,7 +897,7 @@
        "speak to Mai in person"
       ],
       "answer": 3,
-      "explain_vi": "Nam khuyên nói chuyện trực tiếp; Linh: \"I'll find her in the library.\""
+      "explain_vi": "Nam khuyên nói chuyện trực tiếp; Linh: ==\"I'll find her in the library.\"== → **speak to Mai in person**. __face to face nghĩa là in person.__"
      }
     ]
    },
@@ -898,31 +912,31 @@
       "accept": [
        "eight"
       ],
-      "explain_vi": "\"We're looking for buddies in grade 8, not grade 9.\""
+      "explain_vi": "==\"We're looking for buddies in grade 8, not grade 9\"== → **8**. __Nghe 'not' để loại con số gây nhiễu.__"
      },
      {
       "answer": "sympathetic",
       "accept": [],
-      "explain_vi": "\"Friendly, patient and, most importantly, sympathetic.\""
+      "explain_vi": "==\"friendly, patient and, most importantly, sympathetic\"== → **sympathetic**. __'most important' trong ghi chú khớp với 'most importantly'.__"
      },
      {
       "answer": "twice",
       "accept": [],
-      "explain_vi": "\"Buddies will meet their new friends twice a week.\""
+      "explain_vi": "==\"Buddies will meet their new friends twice a week\"== → **twice**. __Chỗ trống trước 'a week' thường là số lần: once, twice.__"
      },
      {
       "answer": "music",
       "accept": [
        "music room"
       ],
-      "explain_vi": "Thư viện đang sơn, \"the meetings will be in the music room this month\"."
+      "explain_vi": "Thư viện đang sơn nên ==\"the meetings will be in the music room this month\"== → **music**. __'sorry, there's a change' báo hiệu thông tin bị sửa.__"
      },
      {
       "answer": "12",
       "accept": [
        "twelve"
       ],
-      "explain_vi": "\"Write your name on the list on the door of Room 12.\""
+      "explain_vi": "==\"write your name on the list on the door of Room 12\"== → **12**. __Đừng nhầm với grade 8 hay hạn chót Friday.__"
      }
     ]
    }
@@ -1009,7 +1023,7 @@
        "Anna advised him to."
       ],
       "answer": 1,
-      "explain_vi": "Tom: Nam tổ chức chuyến đi năm ngoái \"and everyone gets on well with him\"."
+      "explain_vi": "Tom: Nam ==\"organised the class trip last year, and everyone gets on well with him\"== → **B**: nổi tiếng và từng tổ chức sự kiện. __Câu hỏi có 'at first' – nghe ý định ban đầu của Tom.__"
      },
      {
       "q": "What is Anna's main criticism of Nam?",
@@ -1020,7 +1034,7 @@
        "He made the class trip boring."
       ],
       "answer": 2,
-      "explain_vi": "\"He made every decision himself and never asked for anyone else's opinion.\""
+      "explain_vi": "Anna: ==\"He made every decision himself and never asked for anyone else's opinion.\"== → **He doesn't consider other people's ideas.** __opinion gần nghĩa với ideas.__"
      },
      {
       "q": "What does Anna's story about her grandmother show about Mai?",
@@ -1031,7 +1045,7 @@
        "She is the most popular girl in class."
       ],
       "answer": 0,
-      "explain_vi": "Mai là người duy nhất nhận ra Anna buồn: Mai biết quan tâm, cảm thông."
+      "explain_vi": "==\"she was the only one who noticed I was sad\"== → **She notices how other people feel.** __Câu hỏi suy luận: tìm ý chung mà câu chuyện cho thấy.__"
      },
      {
       "q": "How did some classmates feel when Mai told the teacher about the points?",
@@ -1042,7 +1056,7 @@
        "unhappy with her"
       ],
       "answer": 3,
-      "explain_vi": "Tom: \"some people were really annoyed with her!\" (annoyed = bực mình)."
+      "explain_vi": "Tom: ==\"some people were really annoyed with her!\"== → **unhappy with her**. __annoyed (bực mình) gần nghĩa với unhappy.__"
      },
      {
       "q": "What finally makes Tom decide to vote for Mai?",
@@ -1053,7 +1067,7 @@
        "The teacher recommended Mai."
       ],
       "answer": 1,
-      "explain_vi": "Anna kể Mai sẽ nhận \"if her classmates supported her\"; Tom: \"in that case, she's got my vote\"."
+      "explain_vi": "Mai sẽ nhận ==\"if her classmates supported her\"==; Tom: 'in that case, she's got my vote' → **B**. __'in that case' nối với điều vừa nói ngay trước.__"
      }
     ]
    },
@@ -1068,27 +1082,27 @@
       "accept": [
        "five hundred"
       ],
-      "explain_vi": "\"A recent survey of 500 students in Hanoi.\""
+      "explain_vi": "==\"A recent survey of 500 students in Hanoi\"== → **500**. __'three times a week' là số lần cãi nhau – đừng nhầm.__"
      },
      {
       "answer": "screen time",
       "accept": [],
-      "explain_vi": "Không phải kết quả học tập: \"the most common topic was screen time, followed by housework\"."
+      "explain_vi": "Không phải kết quả học tập: ==\"the most common topic was screen time, followed by housework\"== → **screen time**. __'but in fact' báo hiệu đáp án thật; housework chỉ đứng thứ hai.__"
      },
      {
       "answer": "dinner",
       "accept": [],
-      "explain_vi": "Không phải do bố mẹ nghiêm khắc, mà vì \"ate dinner with their family most evenings\"."
+      "explain_vi": "Không phải do bố mẹ nghiêm khắc, mà vì ==\"ate dinner with their family most evenings\"== → **dinner**. __Bẫy: 'strictest' nghe thấy trước nhưng không phải đáp án.__"
      },
      {
       "answer": "moment",
       "accept": [],
-      "explain_vi": "\"First, choose the right moment.\""
+      "explain_vi": "==\"First, choose the right moment.\"== → **moment**. __'First' báo hiệu lời khuyên số 1.__"
      },
      {
       "answer": "understanding",
       "accept": [],
-      "explain_vi": "\"The aim of a discussion is understanding, not victory.\""
+      "explain_vi": "==\"The aim of a discussion is understanding, not victory.\"== → **understanding**. __Ghi chú có sẵn 'not victory' giúp em biết chỗ cần nghe.__"
      }
     ]
    }

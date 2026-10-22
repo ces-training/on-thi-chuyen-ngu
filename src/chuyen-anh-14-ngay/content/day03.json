@@ -159,37 +159,43 @@
      "id": "d3A1",
      "q": "The smoke from factories and motorbikes causes a lot of air ______.",
      "answer": "pollution",
-     "tag": "d3v1"
+     "tag": "d3v1",
+     "explain_vi": "Sau ==air== cần danh từ: **air pollution** (ô nhiễm không khí). ==The smoke from factories and motorbikes== là nguyên nhân. __Học theo cụm: air pollution, water pollution.__"
     },
     {
      "id": "d3A2",
      "q": "We must ______ the forests because thousands of animals live there.",
      "answer": "protect",
-     "tag": "d3v2"
+     "tag": "d3v2",
+     "explain_vi": "Rừng là nhà của ==thousands of animals== nên phải **protect** (bảo vệ) rừng. Sau ==must== dùng V nguyên thể. __Sau must, can, should luôn là động từ nguyên thể.__"
     },
     {
      "id": "d3A3",
      "q": "Glass bottles can be ______ and made into new bottles.",
      "answer": "recycled",
-     "tag": "d3v4"
+     "tag": "d3v4",
+     "explain_vi": "Có ==can be== (bị động) và ==made into new bottles== → **recycled** (được tái chế). __Nhớ đổi dạng từ: sau “be” trong câu bị động cần V3.__"
     },
     {
      "id": "d3A4",
      "q": "The Saola is one of the rarest animal ______ in the world. Very few people have seen one.",
      "answer": "species",
-     "tag": "d3v5"
+     "tag": "d3v5",
+     "explain_vi": "Sau ==one of the rarest animal== cần danh từ số nhiều → **species** (loài). __species số ít và số nhiều viết giống nhau.__"
     },
     {
      "id": "d3A5",
      "q": "Northern Vietnam has a ______ with four seasons: spring, summer, autumn and winter.",
      "answer": "climate",
-     "tag": "d3v6"
+     "tag": "d3v6",
+     "explain_vi": "==four seasons== nói về thời tiết cả năm → **climate** (khí hậu). __weather là thời tiết từng ngày, climate là khí hậu lâu dài.__"
     },
     {
      "id": "d3A6",
      "q": "Please don't ______ your old clothes. We can give them to children who need them.",
      "answer": "throw away",
-     "tag": "d3p2"
+     "tag": "d3p2",
+     "explain_vi": "==We can give them to children who need them== → đừng **throw away** (vứt đi) quần áo cũ. __Sau don't dùng động từ nguyên thể; throw away hay đi với rác, đồ cũ.__"
     }
    ]
   },
@@ -203,13 +209,15 @@
      "accept": [
       "'ve never seen"
      ],
-     "tag": "d3g"
+     "tag": "d3g",
+     "explain_vi": "Có ==never== và ==in my life== (trải nghiệm từ trước đến giờ) → **hiện tại hoàn thành: have never seen**. __never đứng giữa have và V3; see – saw – seen.__"
     },
     {
      "id": "d3B2",
      "q": "Our class ______ (plant) fifty trees in the school garden last spring.",
      "answer": "planted",
-     "tag": "d3g"
+     "tag": "d3g",
+     "explain_vi": "==last spring== là thời gian xác định trong quá khứ → **quá khứ đơn: planted**. __Thấy last, ago, yesterday, in + năm đã qua → quá khứ đơn.__"
     },
     {
      "id": "d3B3",
@@ -220,13 +228,15 @@
       "has been living",
       "'s been living"
      ],
-     "tag": "d3g"
+     "tag": "d3g",
+     "explain_vi": "==since 2018== → **hiện tại hoàn thành: has lived** (My family số ít nên dùng has). __Thấy since/for + thời gian, nghĩ ngay tới HTHT.__"
     },
     {
      "id": "d3B4",
      "q": "Ten years ago, the river near my house ______ (be) very clean.",
      "answer": "was",
-     "tag": "d3g"
+     "tag": "d3g",
+     "explain_vi": "==Ten years ago== → **quá khứ đơn: was** (the river số ít). __ago luôn đi với quá khứ đơn, không dùng HTHT.__"
     },
     {
      "id": "d3B5",
@@ -235,7 +245,8 @@
      "accept": [
       "have not started"
      ],
-     "tag": "d3g"
+     "tag": "d3g",
+     "explain_vi": "==yet== ở cuối câu phủ định → **hiện tại hoàn thành: haven't started**. __The students số nhiều nên dùng haven't, không dùng hasn't.__"
     },
     {
      "id": "d3B6",
@@ -244,7 +255,8 @@
      "accept": [
       "'ve already sorted"
      ],
-     "tag": "d3g"
+     "tag": "d3g",
+     "explain_vi": "Có ==already== và ==Look!== (kết quả thấy ngay bây giờ) → **hiện tại hoàn thành: have already sorted**. __already đứng giữa have và V3.__"
     }
    ]
   },
@@ -255,25 +267,29 @@
      "id": "d3C1",
      "q": "Plastic in the ocean is a big ______ problem. (ENVIRONMENT)",
      "answer": "environmental",
-     "tag": "d3w"
+     "tag": "d3w",
+     "explain_vi": "Trước danh từ ==problem== cần **tính từ**: environment + -al → **environmental**. __Đuôi -al biến danh từ thành tính từ: nature → natural, nation → national.__"
     },
     {
      "id": "d3C2",
      "q": "Don't eat those mushrooms! Some of them are ______. (POISON)",
      "answer": "poisonous",
-     "tag": "d3w"
+     "tag": "d3w",
+     "explain_vi": "Sau ==are== cần **tính từ**: poison + -ous → **poisonous** (có độc). ==Don't eat those mushrooms!== là lời cảnh báo. __Sau is/are/was/were thường là tính từ.__"
     },
     {
      "id": "d3C3",
      "q": "Forests, rivers and minerals are important ______ resources. (NATURE)",
      "answer": "natural",
-     "tag": "d3w"
+     "tag": "d3w",
+     "explain_vi": "Trước danh từ ==resources== cần **tính từ**: nature → **natural** (bỏ e, thêm -al). __natural resources (tài nguyên thiên nhiên) là cụm hay gặp trong đề.__"
     },
     {
      "id": "d3C4",
      "q": "Ha Long Bay is ______ for its thousands of limestone islands. (FAME)",
      "answer": "famous",
-     "tag": "d3w"
+     "tag": "d3w",
+     "explain_vi": "Có ==is== … ==for its thousands of limestone islands== → cụm **be famous for** (nổi tiếng vì). fame bỏ e, thêm -ous → **famous**. __Đừng viết “fameous”.__"
     }
    ]
   },
@@ -291,7 +307,8 @@
       "collect"
      ],
      "answer": "C",
-     "tag": "fmt:antonym"
+     "tag": "fmt:antonym",
+     "explain_vi": "**reduce** (giảm) >< **increase** (tăng) → đáp án **C**. __lower và cut đều nghĩa là giảm – bẫy đồng nghĩa; collect (thu gom) chỉ khác nghĩa.__"
     },
     {
      "id": "d3D2",
@@ -303,7 +320,8 @@
       "famous"
      ],
      "answer": "A",
-     "tag": "fmt:antonym"
+     "tag": "fmt:antonym",
+     "explain_vi": "**harmful** (có hại) >< **harmless** (vô hại) → đáp án **A**: đổi đuôi -ful thành -less. __dangerous, poisonous gần nghĩa với harmful nên loại.__"
     },
     {
      "id": "d3D3",
@@ -315,7 +333,8 @@
       "clean"
      ],
      "answer": "D",
-     "tag": "fmt:antonym"
+     "tag": "fmt:antonym",
+     "explain_vi": "**polluted** (ô nhiễm) >< **clean** (sạch) → đáp án **D**. __dirty đồng nghĩa với polluted – bẫy quen thuộc; deep, cold chỉ khác nghĩa.__"
     },
     {
      "id": "d3D4",
@@ -327,7 +346,8 @@
       "quick"
      ],
      "answer": "B",
-     "tag": "fmt:antonym"
+     "tag": "fmt:antonym",
+     "explain_vi": "**careful** (cẩn thận) >< **careless** (cẩu thả) → đáp án **B**. __attentive (chú ý) gần nghĩa với careful nên là bẫy.__"
     }
    ]
   },
@@ -341,14 +361,16 @@
      "kind": "tfng",
      "q": "The Green Team had five members when it started.",
      "answer": "True",
-     "tag": "d3r"
+     "tag": "d3r",
+     "explain_vi": "Bài viết: ==five students at Sunflower Secondary School started a club called the Green Team== → lúc đầu có 5 người: **True**. __Thông tin về lúc bắt đầu thường nằm ở đầu bài.__"
     },
     {
      "id": "d3E2",
      "kind": "tfng",
      "q": "The school does not use any plastic now.",
      "answer": "False",
-     "tag": "d3r"
+     "tag": "d3r",
+     "explain_vi": "Bài viết: ==the school has cut down on plastic waste by almost half== → chỉ giảm gần một nửa, vẫn còn dùng nhựa: **False**. __Cẩn thận với từ tuyệt đối như “not any”, “all”, “never”.__"
     },
     {
      "id": "d3E3",
@@ -361,7 +383,8 @@
       "one week"
      ],
      "answer": "A",
-     "tag": "d3r"
+     "tag": "d3r",
+     "explain_vi": "==Volunteers collected 200 kilograms of rubbish in just three hours.== → **A. three hours**. __two years, one month là các mốc khác trong bài, em đọc đúng đoạn nói về hồ.__"
     },
     {
      "id": "d3E4",
@@ -374,7 +397,8 @@
       "grow vegetables on the school roof"
      ],
      "answer": "D",
-     "tag": "d3r"
+     "tag": "d3r",
+     "explain_vi": "==The club's next plan is to grow vegetables on the school roof.== → **D**. __“next plan” khớp với “next” trong câu hỏi; đặt thùng rác là việc đã làm rồi.__"
     }
    ]
   },
@@ -398,28 +422,32 @@
      "q": "My cousin likes to ______ toy cars. He has more than a hundred of them now. (Gợi ý: c______)",
      "answer": "collect",
      "from_day": 2,
-     "tag": "d2v2"
+     "tag": "d2v2",
+     "explain_vi": "==He has more than a hundred of them now== → bạn ấy sưu tầm xe đồ chơi: **collect**. Sau ==likes to== dùng V nguyên thể. __Dùng gợi ý chữ cái đầu c để đoán từ.__"
     },
     {
      "id": "d3G2",
      "q": "While Mum ______ (cook) dinner, I was setting the table.",
      "answer": "was cooking",
      "from_day": 2,
-     "tag": "d2g"
+     "tag": "d2g",
+     "explain_vi": "Có ==While== và ==I was setting== (hai việc đang diễn ra cùng lúc) → **quá khứ tiếp diễn: was cooking**. __While + quá khứ tiếp diễn cho hành động đang diễn ra.__"
     },
     {
      "id": "d3G3",
      "q": "My grandpa is 80 years old, but he still ______ (go) jogging every morning.",
      "answer": "goes",
      "from_day": 1,
-     "tag": "d1g"
+     "tag": "d1g",
+     "explain_vi": "Thói quen ==every morning== → **hiện tại đơn: goes** (he → go thêm -es). __still không làm đổi thì của câu.__"
     },
     {
      "id": "d3G4",
      "q": "Reading books helps us gain ______ about the world. (KNOW)",
      "answer": "knowledge",
      "from_day": 1,
-     "tag": "d1v6"
+     "tag": "d1v6",
+     "explain_vi": "Sau động từ ==gain== cần **danh từ**: know → **knowledge** (kiến thức). __knowledge không đếm được, không thêm -s.__"
     }
    ]
   }
@@ -437,7 +465,7 @@
     "protect"
    ],
    "answer": 2,
-   "explain_vi": "waste = lãng phí. Không để nước chảy là để không lãng phí nước.",
+   "explain_vi": "==Turn off the tap== (khoá vòi) là để không phí nước → **waste** (lãng phí). __Đọc cả câu: “Don't reduce/protect water” nghe vô lý, loại ngay.__",
    "tag": "d3v3"
   },
   {
@@ -446,7 +474,7 @@
    "skill": "vocab",
    "q": "The doctor told my dad to cut ______ on salt and sugar. (Điền 1 từ)",
    "answer": "down",
-   "explain_vi": "cut down on sth = cắt giảm lượng dùng cái gì.",
+   "explain_vi": "Cụm động từ **cut down on** + danh từ: cắt giảm lượng dùng, ở đây là ==salt and sugar==. Đáp án **down**. __Học cả cụm 3 từ cut down on, đừng chỉ nhớ cut down.__",
    "tag": "d3p1"
   },
   {
@@ -461,7 +489,7 @@
     "careful"
    ],
    "answer": 0,
-   "explain_vi": "harmful to sth = có hại cho cái gì.",
+   "explain_vi": "**harmful to** sth: có hại cho cái gì. ==Too much time in the sun without a hat== là điều xấu nên cần nghĩa tiêu cực. __harmless (vô hại) là bẫy ngược nghĩa, nhìn kỹ đuôi -ful/-less.__",
    "tag": "d3v8"
   },
   {
@@ -476,7 +504,7 @@
     "was going"
    ],
    "answer": 1,
-   "explain_vi": "'so far' (cho đến nay) → hiện tại hoàn thành.",
+   "explain_vi": "Có ==so far== (cho đến nay) và ==three times== → **hiện tại hoàn thành: has been**. __“went” là bẫy: quá khứ đơn không đi với so far.__",
    "tag": "d3g"
   },
   {
@@ -485,7 +513,7 @@
    "skill": "grammar",
    "q": "A big tree ______ (fall) down in our street during the storm last night.",
    "answer": "fell",
-   "explain_vi": "'last night' là thời gian xác định trong quá khứ → quá khứ đơn; fall – fell – fallen.",
+   "explain_vi": "==last night== là thời gian xác định trong quá khứ → **quá khứ đơn: fell** (fall – fell – fallen). __fall là động từ bất quy tắc, không viết “falled”.__",
    "tag": "d3g"
   },
   {
@@ -500,7 +528,7 @@
     "since"
    ],
    "answer": 3,
-   "explain_vi": "since + mốc thời gian / mệnh đề (since we were in grade 1).",
+   "explain_vi": "==we were in grade 1== là một mốc thời gian → **since**. for đi với khoảng thời gian; ago dùng cho quá khứ đơn. __since + mốc/mệnh đề, for + khoảng thời gian.__",
    "tag": "d3g"
   },
   {
@@ -515,7 +543,7 @@
     "endanger"
    ],
    "answer": 1,
-   "explain_vi": "Sau 'is' cần tính từ: danger → dangerous.",
+   "explain_vi": "Sau ==is== cần **tính từ**: danger → **dangerous** (nguy hiểm). __dangerously là trạng từ, không đứng sau “is” để miêu tả chủ ngữ.__",
    "tag": "d3w"
   },
   {
@@ -524,7 +552,7 @@
    "skill": "wordform",
    "q": "Thai Nguyen is an ______ city with many big factories. (INDUSTRY)",
    "answer": "industrial",
-   "explain_vi": "Trước danh từ 'city' cần tính từ: industry → industrial (y → i, thêm -al).",
+   "explain_vi": "Sau ==an== và trước danh từ ==city== cần **tính từ**: industry → **industrial** (đổi y thành i, thêm -al). __Mạo từ “an” gợi ý từ bắt đầu bằng nguyên âm.__",
    "tag": "d3w"
   },
   {
@@ -539,7 +567,7 @@
     "special"
    ],
    "answer": 2,
-   "explain_vi": "rare (hiếm) >< common (phổ biến). 'unusual' gần nghĩa với rare nên là bẫy.",
+   "explain_vi": "**rare** (hiếm) >< **common** (phổ biến). __unusual gần nghĩa với rare nên là bẫy; em loại đáp án đồng nghĩa trước.__",
    "tag": "fmt:antonym"
   },
   {
@@ -554,7 +582,7 @@
     "throw away"
    ],
    "answer": 1,
-   "explain_vi": "take up = bắt đầu một sở thích / hoạt động mới (buổi 2).",
+   "explain_vi": "Câu sau ==now he runs 5 km every day== → chú đã bắt đầu chạy: **take up** (bắt đầu một sở thích mới, buổi 2). __give up là ngược lại (từ bỏ), đừng nhầm.__",
    "from_day": 2,
    "tag": "d2p1"
   },
@@ -564,7 +592,7 @@
    "skill": "review",
    "q": "The head teacher made an important ______ about the school trip this morning. (ANNOUNCE)",
    "answer": "announcement",
-   "explain_vi": "Sau 'an important' cần danh từ: announce → announcement (đuôi -ment, buổi 1).",
+   "explain_vi": "Sau ==an important== cần **danh từ**: announce → **announcement** (đuôi -ment, buổi 1). __Thấy a/an + tính từ + chỗ trống, nghĩ ngay tới danh từ.__",
    "from_day": 1,
    "tag": "d1w"
   },
@@ -580,7 +608,7 @@
     "knowing"
    ],
    "answer": 2,
-   "explain_vi": "know là động từ trạng thái, không chia -ing; chủ ngữ 'I' nên dùng 'know' (buổi 1).",
+   "explain_vi": "**know** là động từ trạng thái, không chia -ing; chủ ngữ ==I== nên dùng **know**. __know, like, want, need… thường không dùng ở thì tiếp diễn.__",
    "from_day": 1,
    "tag": "d1g"
   }

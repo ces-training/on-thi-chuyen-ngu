@@ -10,7 +10,8 @@
       "That bag looks heavy. I ___ (carry) it for you.",
       "It's dark in here. I ___ (switch) on the light.",
       "I promise I ___ (not / forget) your birthday."
-     ]
+     ],
+     "rule_vi": "**will + V**: quyết định ngay lúc nói, lời hứa, lời đề nghị giúp. Dấu hiệu: ==I promise==, tình huống vừa xảy ra như ==That bag looks heavy==. __Vừa nghĩ ra việc giúp ngay → will.__"
     },
     {
      "name": "be going to: dự đoán có dấu hiệu trước mắt",
@@ -18,7 +19,8 @@
       "Watch out! You ___ (drop) your new phone!",
       "My battery is at 1%. It ___ (die) soon.",
       "Look! That boy ___ (fall) off his bike."
-     ]
+     ],
+     "rule_vi": "**be going to + V**: dự đoán có dấu hiệu nhìn thấy trước mắt: ==Watch out!==, ==Look!==, ==at 1%==. __Có bằng chứng ngay trước mắt → be going to, không dùng will.__"
     },
     {
      "name": "Hiện tại tiếp diễn: lịch hẹn đã sắp xếp",
@@ -26,30 +28,36 @@
       "I ___ (meet) Lan at the cinema at 7 tonight.",
       "I ___ (see) the dentist at 4 p.m. tomorrow.",
       "Our class ___ (visit) the science museum next Monday."
-     ]
+     ],
+     "rule_vi": "**am/is/are + V-ing**: lịch hẹn đã sắp xếp, có giờ hoặc ngày cụ thể: ==at 7 tonight==, ==at 4 p.m. tomorrow==, ==next Monday==. __Hẹn với người khác, có giờ cụ thể → hiện tại tiếp diễn.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "My sister is going to buy a new digital camera.",
-    "hint_vi": "be going to: dự định đã có từ trước"
+    "hint_vi": "be going to: dự định đã có từ trước",
+    "why_vi": "**S + is going to + V + tân ngữ**: ==is going to buy== a new digital camera. __Tính từ digital đứng trước danh từ camera.__"
    },
    {
     "sentence": "We are visiting the technology fair on Saturday morning.",
-    "hint_vi": "Hiện tại tiếp diễn: lịch hẹn đã sắp xếp"
+    "hint_vi": "Hiện tại tiếp diễn: lịch hẹn đã sắp xếp",
+    "why_vi": "**S + are + V-ing + tân ngữ + thời gian**: ==are visiting== the technology fair ==on Saturday morning==. __Cụm thời gian đặt cuối câu.__"
    },
    {
     "sentence": "I promise I won't use my phone in class.",
-    "hint_vi": "will: lời hứa (phủ định won't)"
+    "hint_vi": "will: lời hứa (phủ định won't)",
+    "why_vi": "**I promise + S + won't + V**: ==I promise I won't use== my phone in class. __Sau won't là V nguyên thể không to.__"
    },
    {
     "sentence": "I think people will rely on robots in the future.",
-    "hint_vi": "will: dự đoán theo ý kiến (I think)"
+    "hint_vi": "will: dự đoán theo ý kiến (I think)",
+    "why_vi": "**I think + S + will + V**: ==will rely on robots==, cụm ==in the future== ở cuối. __rely luôn đi với on.__"
    },
    {
     "sentence": "Wait a minute, I'll fix your headphones for you.",
-    "hint_vi": "will: đề nghị giúp ngay lúc nói"
+    "hint_vi": "will: đề nghị giúp ngay lúc nói",
+    "why_vi": "**Wait a minute, I'll + V + tân ngữ + for you**: ==I'll fix your headphones for you==. __for you đứng cuối câu.__"
    }
   ],
   "truefalse": [
@@ -57,49 +65,49 @@
     "s": "She going to buy a new laptop next week.",
     "ok": false,
     "fix": "She is going to buy a new laptop next week.",
-    "why_vi": "be going to cần có động từ be: she is going to."
+    "why_vi": "**be going to** cần có động từ be: ==She is going to buy==. __Lỗi hay gặp: quên is/am/are trước going to.__"
    },
    {
     "s": "A: My bag is so heavy. B: I'll carry it for you.",
     "ok": true,
     "fix": "A: My bag is so heavy. B: I'll carry it for you.",
-    "why_vi": "Đề nghị giúp ngay lúc nói → will + V."
+    "why_vi": "Đề nghị giúp ngay lúc nói: ==I'll carry it for you== → **will + V** là đúng. __A than phiền, B giúp ngay → I'll.__"
    },
    {
     "s": "I will to call you when I get home.",
     "ok": false,
     "fix": "I will call you when I get home.",
-    "why_vi": "Sau will là động từ nguyên thể không có to."
+    "why_vi": "Sau will là **V nguyên thể không có to**: ==I will call you==. __Không bao giờ viết “will to”.__"
    },
    {
     "s": "We are flying to Phú Quốc on Saturday. Dad has booked the tickets.",
     "ok": true,
     "fix": "We are flying to Phú Quốc on Saturday. Dad has booked the tickets.",
-    "why_vi": "Đã đặt vé = lịch đã sắp xếp → hiện tại tiếp diễn."
+    "why_vi": "==Dad has booked the tickets== → lịch đã sắp xếp → **hiện tại tiếp diễn: are flying** là đúng. __Đã đặt vé, có ngày cụ thể → am/is/are + V-ing.__"
    },
    {
     "s": "Look at that man! He will fall into the lake.",
     "ok": false,
     "fix": "Look at that man! He is going to fall into the lake.",
-    "why_vi": "Có dấu hiệu nhìn thấy trước mắt (Look!) → be going to."
+    "why_vi": "Có dấu hiệu nhìn thấy trước mắt ==Look at that man!== → **be going to: is going to fall**. __Look!, Watch out! → be going to.__"
    },
    {
     "s": "I think computers will become even smaller in the future.",
     "ok": true,
     "fix": "I think computers will become even smaller in the future.",
-    "why_vi": "Dự đoán theo ý kiến cá nhân (I think) → will + V."
+    "why_vi": "==I think== → dự đoán theo ý kiến cá nhân → **will + V** là đúng. __I think, I hope, probably thường đi với will.__"
    },
    {
     "s": "I meet my friends at the computer club tomorrow at 5 p.m.",
     "ok": false,
     "fix": "I'm meeting my friends at the computer club tomorrow at 5 p.m.",
-    "why_vi": "Hẹn cụ thể với bạn, có giờ → hiện tại tiếp diễn, không dùng hiện tại đơn."
+    "why_vi": "Hẹn cụ thể với bạn, có giờ ==tomorrow at 5 p.m.== → **hiện tại tiếp diễn: I'm meeting**. __Không dùng hiện tại đơn cho lịch hẹn cá nhân.__"
    },
    {
     "s": "My cousin is going to study coding next year.",
     "ok": true,
     "fix": "My cousin is going to study coding next year.",
-    "why_vi": "Dự định cho năm sau → be going to + V."
+    "why_vi": "Dự định cho ==next year== → **be going to + V: is going to study** là đúng. __Kế hoạch đã nghĩ từ trước → be going to.__"
    }
   ]
  },
@@ -120,7 +128,7 @@
       "You're welcome."
      ],
      "answer": 0,
-     "explain_vi": "'Do you mind if…?' nghĩa là 'Bạn có phiền không?'. Đồng ý thì đáp 'No / Not at all'. Đáp 'Yes' lại thành 'có, mình thấy phiền'."
+     "explain_vi": "==Do you mind if…?== nghĩa là “Bạn có phiền không?”. Đồng ý thì đáp **Not at all. Go ahead.** __Bẫy: đáp “Yes” lại thành “có, mình thấy phiền”.__"
     },
     {
      "q": "A: Why don't we switch off our phones during dinner tonight?\nB: ______",
@@ -131,7 +139,7 @@
       "Thank you. Same to you."
      ],
      "answer": 2,
-     "explain_vi": "'Why don't we…?' là lời gợi ý, không phải hỏi lý do, nên đáp 'That sounds like a good idea.' Bẫy: 'Because…'."
+     "explain_vi": "==Why don't we…?== là lời gợi ý, không phải hỏi lý do → **That sounds like a good idea.** __Bẫy: “Because…” – đừng trả lời như câu hỏi Why.__"
     },
     {
      "q": "A: Would you like to come to the robot show with us on Sunday?\nB: ______",
@@ -142,7 +150,7 @@
       "I'd love to, but I'm playing in a football match."
      ],
      "answer": 3,
-     "explain_vi": "Từ chối lời mời lịch sự: I'd love to, but + lý do. Lịch đã hẹn nên dùng hiện tại tiếp diễn (I'm playing)."
+     "explain_vi": "Từ chối lời mời ==Would you like to…?== lịch sự: **I'd love to, but + lý do**; lịch đã hẹn nên dùng ==I'm playing==. __“Yes, I would like.” thiếu “to” nên sai.__"
     },
     {
      "q": "A: Do you think we'll have flying cars in twenty years?\nB: ______",
@@ -153,7 +161,7 @@
       "No, I'm not."
      ],
      "answer": 1,
-     "explain_vi": "A hỏi ý kiến về tương lai → đáp bằng ý kiến: 'I hope so, but I'm not sure.' Các câu kia sai thì hoặc sai trợ động từ."
+     "explain_vi": "==Do you think…?== hỏi ý kiến về tương lai → đáp bằng ý kiến: **I hope so, but I'm not sure.** __“Yes, we did” sai thì, “No, I'm not” sai trợ động từ.__"
     },
     {
      "q": "A: Oh no! My laptop has just stopped working, and my essay is on it.\nB: ______",
@@ -164,7 +172,7 @@
       "Yes, it has."
      ],
      "answer": 2,
-     "explain_vi": "A gặp sự cố → B trấn an và đề nghị giúp ngay lúc nói: will ('ll) + V."
+     "explain_vi": "A gặp sự cố ==has just stopped working== → B trấn an và đề nghị giúp: **Don't panic. I'll have a look at it.** __Đề nghị giúp ngay lúc nói → I'll + V.__"
     }
    ]
   },
@@ -180,7 +188,7 @@
     {
      "answer": "library",
      "accept": [],
-     "explain_vi": "Nghe: 'in the school library, not in the sports hall like last year' → library. Sports hall là năm ngoái."
+     "explain_vi": "Nghe: ==“in the school library, not in the sports hall like last year”== → **library**. __Sports hall là địa điểm năm ngoái – bẫy.__"
     },
     {
      "answer": "9",
@@ -189,7 +197,7 @@
       "9:00",
       "nine"
      ],
-     "explain_vi": "Nghe: 'It opens at nine o'clock in the morning' → 9. Half past three là giờ đóng cửa."
+     "explain_vi": "Nghe: ==“It opens at nine o'clock in the morning”== → **9**. __Half past three là giờ đóng cửa, không phải giờ mở.__"
     },
     {
      "answer": "25",
@@ -197,21 +205,21 @@
       "twenty-five",
       "twenty five"
      ],
-     "explain_vi": "Nghe: 'they are going to show 25 robots'. Twelve là số trường, không phải số robot."
+     "explain_vi": "Nghe: ==“they are going to show 25 robots”== → **25**. __twelve là số trường, không phải số robot.__"
     },
     {
      "answer": "student card",
      "accept": [
       "student-card"
      ],
-     "explain_vi": "Nghe: 'you must bring your student card' → student card (2 từ)."
+     "explain_vi": "Nghe: ==“you must bring your student card”== → **student card** (2 từ). __must báo hiệu điều bắt buộc, thường chứa đáp án.__"
     },
     {
      "answer": "tablet",
      "accept": [
       "tablet computer"
      ],
-     "explain_vi": "Nghe: 'The winning team will get a new tablet for their class'. T-shirt là quà cho mọi người tham gia."
+     "explain_vi": "Nghe: ==“The winning team will get a new tablet for their class”== → **tablet**. __T-shirt là quà cho mọi người tham gia, không phải giải thưởng.__"
     }
    ]
   }
@@ -233,7 +241,7 @@
       "I'm fine, thanks."
      ],
      "answer": 1,
-     "explain_vi": "A xin mượn đồ → đồng ý: 'Sure. Here you are.' (Được, của bạn đây). 'Yes, I can' sai vì A hỏi về việc A làm, không hỏi B."
+     "explain_vi": "A xin mượn đồ ==Can I use…?== → đồng ý: **Sure. Here you are.** (Được, của bạn đây). __“Yes, I can” sai vì A hỏi việc A làm, không hỏi B.__"
     },
     {
      "q": "A: What are you going to do this weekend?\nB: ______",
@@ -244,7 +252,7 @@
       "At home, thanks."
      ],
      "answer": 2,
-     "explain_vi": "A hỏi dự định bằng be going to → B đáp bằng be going to. 'I visited' là quá khứ, sai thì; 'Yes, I am' không trả lời câu hỏi What."
+     "explain_vi": "A hỏi dự định ==What are you going to do…?== → đáp bằng be going to: **I'm going to visit my grandparents.** __“I visited” là quá khứ – sai thì.__"
     },
     {
      "q": "A: I've got a new smartwatch for my birthday!\nB: ______",
@@ -255,7 +263,7 @@
       "Wow, that's great!"
      ],
      "answer": 3,
-     "explain_vi": "A khoe tin vui → B vui cùng: 'Wow, that's great!'. Never mind dùng để an ủi; Same to you dùng để chúc lại."
+     "explain_vi": "A khoe tin vui ==I've got a new smartwatch== → **Wow, that's great!** __Never mind dùng để an ủi; Same to you dùng để chúc lại.__"
     },
     {
      "q": "A: Oh no! My phone battery is dead.\nB: ______",
@@ -266,7 +274,7 @@
       "See you later."
      ],
      "answer": 0,
-     "explain_vi": "A gặp chuyện không may → B đề nghị giúp ngay lúc nói: I'll + V (will dùng cho lời đề nghị giúp đỡ)."
+     "explain_vi": "A gặp chuyện ==My phone battery is dead.== → B đề nghị giúp ngay: **Here, I'll lend you my charger.** __Lời đề nghị giúp ngay lúc nói → I'll + V.__"
     },
     {
      "q": "A: Are you free on Sunday?\nB: ______",
@@ -277,7 +285,7 @@
       "No, you aren't."
      ],
      "answer": 1,
-     "explain_vi": "B đã có hẹn nên không rảnh. Lịch hẹn dùng hiện tại tiếp diễn: I'm visiting. 'Yes, I was' sai thì; 'No, you aren't' sai chủ ngữ."
+     "explain_vi": "B đã có hẹn nên không rảnh: **Sorry, I'm visiting my aunt.** Lịch hẹn dùng hiện tại tiếp diễn ==I'm visiting==. __“Yes, I was” sai thì; “No, you aren't” sai chủ ngữ.__"
     }
    ]
   },
@@ -296,7 +304,7 @@
       "Tuesdays",
       "tuesday"
      ],
-     "explain_vi": "Nghe: 'The club meets every Tuesday' → Tuesday."
+     "explain_vi": "Nghe: ==“The club meets every Tuesday”== → **Tuesday**. __Viết hoa chữ cái đầu của thứ trong tuần.__"
     },
     {
      "answer": "4",
@@ -305,28 +313,28 @@
       "4.00",
       "4:00"
      ],
-     "explain_vi": "Nghe: 'It starts at four o'clock in the afternoon' → 4. Half past five là giờ kết thúc."
+     "explain_vi": "Nghe: ==“It starts at four o'clock in the afternoon”== → **4**. __Half past five là giờ kết thúc – bẫy.__"
     },
     {
      "answer": "8",
      "accept": [
       "eight"
      ],
-     "explain_vi": "Nghe: 'We are meeting in Room 8' → 8. Twenty là số máy tính, không phải số phòng."
+     "explain_vi": "Nghe: ==“We are meeting in Room 8”== → **8**. __twenty là số máy tính, không phải số phòng.__"
     },
     {
      "answer": "game",
      "accept": [
       "computer game"
      ],
-     "explain_vi": "Nghe: 'learn how to make a simple game' → game."
+     "explain_vi": "Nghe: ==“learn how to make a simple game”== → **game**. __Phiếu đã có “a simple”, em chỉ điền 1 từ.__"
     },
     {
      "answer": "notebook",
      "accept": [
       "note book"
      ],
-     "explain_vi": "Nghe: 'You need to bring a notebook and a pen'. Không cần mang laptop."
+     "explain_vi": "Nghe: ==“You need to bring a notebook and a pen”== → **notebook**. __Không cần mang laptop – nghe kỹ “You don't need”.__"
     }
    ]
   }
@@ -348,7 +356,7 @@
       "Yes, I'd love to."
      ],
      "answer": 1,
-     "explain_vi": "Would you mind + V-ing là lời nhờ lịch sự. Đáp 'Yes, of course' lại thành 'có, tôi thấy phiền'. Lời đáp hợp: xin lỗi và làm ngay (I'll + V)."
+     "explain_vi": "==Would you mind + V-ing?== là lời nhờ lịch sự → đáp **Sorry, I'll do it right now.** __Bẫy: “Yes, of course” lại thành “có, tôi thấy phiền”.__"
     },
     {
      "q": "A: Your presentation on artificial intelligence was brilliant!\nB: ______",
@@ -359,7 +367,7 @@
       "That's a good idea."
      ],
      "answer": 0,
-     "explain_vi": "Đáp lời khen: cảm ơn và khiêm tốn. You're welcome dùng để đáp lời cảm ơn; tự khen lại mình là thiếu lịch sự."
+     "explain_vi": "Đáp lời khen ==was brilliant!== → cảm ơn và khiêm tốn: **Thanks, but I couldn't have done it without your help.** __You're welcome dùng để đáp lời cảm ơn, không đáp lời khen.__"
     },
     {
      "q": "A: I reckon robots will be teaching us in ten years' time.\nB: ______ Students need real people to inspire them.",
@@ -370,7 +378,7 @@
       "So do I."
      ],
      "answer": 2,
-     "explain_vi": "Câu sau của B phản đối ý A → chọn lời không đồng ý: I doubt it. 'I couldn't agree more' nghĩa là RẤT đồng ý, là bẫy."
+     "explain_vi": "Câu sau ==Students need real people to inspire them.== phản đối ý A → **I doubt it.** __“I couldn't agree more” nghĩa là RẤT đồng ý – bẫy.__"
     },
     {
      "q": "A: Shall I set up the projector for your talk tomorrow?\nB: ______",
@@ -381,7 +389,7 @@
       "I'd love to, but I can't."
      ],
      "answer": 2,
-     "explain_vi": "Shall I…? là lời đề nghị giúp → nhận lời: That would be a great help. 'I'd love to' dùng để nhận lời MỜI, không đáp lời đề nghị giúp."
+     "explain_vi": "==Shall I…?== là lời đề nghị giúp → nhận lời: **That would be a great help, thanks.** __“I'd love to” dùng để nhận lời MỜI, không đáp lời đề nghị giúp.__"
     },
     {
      "q": "A: I'm afraid I can't make it to the coding workshop on Saturday.\nB: ______",
@@ -392,7 +400,7 @@
       "That's a shame. Maybe next time, then."
      ],
      "answer": 3,
-     "explain_vi": "make it = đến được, tham dự được; I'm afraid = rất tiếc. A báo không đến được → B tỏ ý tiếc: That's a shame."
+     "explain_vi": "==I'm afraid I can't make it== nghĩa là rất tiếc không đến được → B tỏ ý tiếc: **That's a shame. Maybe next time, then.** __make it là “đến được”, không phải “làm”.__"
     }
    ]
   },
@@ -410,7 +418,7 @@
      "accept": [
       "club"
      ],
-     "explain_vi": "Nghe: 'We have moved to Thanh Xuan Youth Club'. City Science Centre là địa điểm cũ (no longer held)."
+     "explain_vi": "Nghe: ==“We have moved to Thanh Xuan Youth Club”== → **Club**. __City Science Centre là địa điểm cũ (no longer held) – bẫy.__"
     },
     {
      "answer": "8.15",
@@ -420,19 +428,19 @@
       "quarter past eight",
       "a quarter past eight"
      ],
-     "explain_vi": "Ngày đầu đến sớm 15 phút: a quarter past eight = 8.15. Half past eight (8.30) là giờ bắt đầu các ngày khác – bẫy."
+     "explain_vi": "Ngày đầu đến sớm 15 phút: ==“at a quarter past eight”== → **8.15**. __Half past eight (8.30) là giờ bắt đầu các ngày khác – bẫy.__"
     },
     {
      "answer": "app",
      "accept": [
       "application"
      ],
-     "explain_vi": "Tuần 2: 'designing their own mobile app'. Coding là nội dung tuần 1."
+     "explain_vi": "Tuần 2: ==“in the second week they are designing their own mobile app”== → **app**. __Coding là nội dung tuần 1.__"
     },
     {
      "answer": "museum",
      "accept": [],
-     "explain_vi": "Chuyến thăm nhà máy robot đã bị huỷ; thay vào đó (instead) là 'a technology museum'."
+     "explain_vi": "Nhà máy robot đã bị huỷ; ==“instead we are visiting a technology museum”== → **museum**. __instead báo hiệu thông tin mới thay cho thông tin cũ.__"
     },
     {
      "answer": "2,100,000",
@@ -441,7 +449,7 @@
       "2.100.000",
       "2 100 000"
      ],
-     "explain_vi": "Đăng ký trước cuối tháng 5 chỉ trả 2,100,000; 2,500,000 là giá đầy đủ."
+     "explain_vi": "==“students who register before the end of May will pay only 2,100,000”== → **2,100,000**. __2,500,000 là giá đầy đủ – bẫy.__"
     }
    ]
   }
@@ -454,13 +462,15 @@
     "id": "d4H1",
     "q": "Some apps collect users' personal data ______, without asking for permission. (LEGAL)",
     "answer": "illegally",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Bổ nghĩa cho động từ ==collect== cần **trạng từ**; ==without asking for permission== → trái phép: legal → illegal → **illegally**. __Thêm il- trước từ bắt đầu bằng l, rồi thêm -ly (2 chữ l).__"
    },
    {
     "id": "d4H2",
     "q": "Thanks to its powerful processor, the new laptop runs even the biggest games ______. (EFFORT)",
     "answer": "effortlessly",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Bổ nghĩa cho ==runs== cần **trạng từ**; ==powerful processor== → chạy dễ dàng: effort → effortless → **effortlessly**. __Đổi 2 lần: thêm -less rồi thêm -ly.__"
    },
    {
     "id": "d4H3",
@@ -468,13 +478,15 @@
     "answer": "meeting the IT technician at 3 p.m. tomorrow",
     "accept": [
      "seeing the IT technician at 3 p.m. tomorrow"
-    ]
+    ],
+    "explain_vi": "==I've arranged to meet== là lịch hẹn đã sắp xếp → **hiện tại tiếp diễn: I'm meeting the IT technician at 3 p.m. tomorrow**. __arrange to meet → be meeting.__"
    },
    {
     "id": "d4H4",
     "q": "I'm sure the new app will be popular with teenagers. → The new app is bound ______",
     "answer": "to be popular with teenagers",
-    "accept": []
+    "accept": [],
+    "explain_vi": "**be bound to + V** nghĩa là “chắc chắn sẽ”, thay cho ==I'm sure… will be== → **to be popular with teenagers**. __Sau bound to là V nguyên thể: to be.__"
    },
    {
     "id": "d4H5",
@@ -486,7 +498,8 @@
      "stay"
     ],
     "answer": "A",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Cụm cố định **keep pace with** (theo kịp) → đáp án **A**; ==new gadgets coming out every month== nên khó theo kịp. __catch up with cũng nghĩa là theo kịp nhưng không đi với pace.__"
    },
    {
     "id": "d4H6",
@@ -498,7 +511,8 @@
      "put"
     ],
     "answer": "C",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Cụm động từ **back up** (sao lưu) tệp → đáp án **C**; ==before you update the software== nên cần sao lưu trước. __save up là để dành tiền, không phải sao lưu.__"
    }
   ]
  },
@@ -617,7 +631,7 @@
        "Linh"
       ],
       "answer": 2,
-      "explain_vi": "Tom nói: 'It's a birthday present from my grandparents.'"
+      "explain_vi": "Tom nói: ==“It's a birthday present from my grandparents.”== → **His grandparents**. __Bố mẹ chỉ đặt quy định, không tặng máy – bẫy.__"
      },
      {
       "q": "What is Tom going to use the tablet for?",
@@ -628,7 +642,7 @@
        "Watching films"
       ],
       "answer": 0,
-      "explain_vi": "Tom nói: 'I'm going to read digital books on it.'"
+      "explain_vi": "==“I'm going to read digital books on it.”== → **Reading digital books**. __Chơi game bị cấm vào ngày đi học – bẫy.__"
      },
      {
       "q": "What is wrong with Linh's phone?",
@@ -639,7 +653,7 @@
        "The screen doesn't work."
       ],
       "answer": 3,
-      "explain_vi": "Linh nói: 'now the screen doesn't work.'"
+      "explain_vi": "Linh nói: ==“now the screen doesn't work”== → **The screen doesn't work.** __Linh làm rơi điện thoại trên cầu thang chứ không làm mất.__"
      },
      {
       "q": "Where is Tom's uncle's shop?",
@@ -650,7 +664,7 @@
        "In a shopping centre"
       ],
       "answer": 1,
-      "explain_vi": "Tom nói: 'My uncle has a phone shop near the market.'"
+      "explain_vi": "==“My uncle has a phone shop near the market.”== → **Near the market**. __Nghe từ khoá shop rồi chờ nơi chốn.__"
      },
      {
       "q": "When is Tom going to visit his uncle?",
@@ -661,7 +675,7 @@
        "After school today"
       ],
       "answer": 2,
-      "explain_vi": "Tom nói: 'I'm visiting him on Saturday morning.'"
+      "explain_vi": "==“I'm visiting him on Saturday morning.”== → **On Saturday morning**. __Phân biệt Saturday và Sunday khi nghe.__"
      }
     ]
    },
@@ -674,35 +688,35 @@
      {
       "answer": "science",
       "accept": [],
-      "explain_vi": "'You can use it in your English and science lessons.'"
+      "explain_vi": "==“You can use it in your English and science lessons.”== → **science**. __English đã có trên phiếu, em điền môn còn lại.__"
      },
      {
       "answer": "evening",
       "accept": [
        "evenings"
       ],
-      "explain_vi": "'Please charge your tablet at home every evening'."
+      "explain_vi": "==“Please charge your tablet at home every evening”== → **evening**. __Sau every dùng danh từ số ít.__"
      },
      {
       "answer": "number",
       "accept": [
        "student number"
       ],
-      "explain_vi": "'Your password is your student number'."
+      "explain_vi": "==“Your password is your student number”== → **number**. __Phiếu đã có “student”, em chỉ điền number.__"
      },
      {
       "answer": "6",
       "accept": [
        "six"
       ],
-      "explain_vi": "'take it to Mr Nam in Room 6'."
+      "explain_vi": "==“take it to Mr Nam in Room 6”== → **6**. __Em có thể viết 6 hoặc six.__"
      },
      {
       "answer": "Thursdays",
       "accept": [
        "Thursday"
       ],
-      "explain_vi": "'He is there on Tuesdays and Thursdays.'"
+      "explain_vi": "==“He is there on Tuesdays and Thursdays.”== → **Thursdays**. __Tuesdays đã in sẵn, em điền ngày còn lại.__"
      }
     ]
    }
@@ -781,7 +795,7 @@
        "To help her dad at work"
       ],
       "answer": 1,
-      "explain_vi": "Mai nói: 'My online English course is starting next month.'"
+      "explain_vi": "Mai nói: ==“My online English course is starting next month.”== → **To take an English course online**. __Anna chỉ là người cho lời khuyên – đừng chọn theo tên riêng.__"
      },
      {
       "q": "How much does the laptop Mai found online cost?",
@@ -792,7 +806,7 @@
        "10,000,000 dong"
       ],
       "answer": 0,
-      "explain_vi": "Mai nói 9 triệu rồi sửa: 'Oh, sorry, I mean 8,000,000.'"
+      "explain_vi": "Mai nói 9 triệu rồi sửa: ==“Oh, sorry, I mean 8,000,000.”== → **8,000,000 dong**. __“I mean” báo hiệu thông tin được sửa lại cho đúng.__"
      },
      {
       "q": "What is Mai going to do before buying the laptop?",
@@ -803,7 +817,7 @@
        "Read reviews online"
       ],
       "answer": 2,
-      "explain_vi": "'I'm going to look at the same model in the shop near our house first.'"
+      "explain_vi": "==“I'm going to look at the same model in the shop near our house first.”== → **Check the same laptop in a local shop**. __first báo hiệu việc làm trước khi mua.__"
      },
      {
       "q": "Why will Mr Brown be useful?",
@@ -814,7 +828,7 @@
        "He knows a lot about computers."
       ],
       "answer": 3,
-      "explain_vi": "Bố nói: 'He repairs computers for a living' → ông ấy rành về máy tính."
+      "explain_vi": "Bố nói: ==“He repairs computers for a living”== → **He knows a lot about computers.** __Đáp án diễn đạt lại: sửa máy tính nên rành máy tính.__"
      },
      {
       "q": "Where will Mai use the laptop?",
@@ -825,7 +839,7 @@
        "At school"
       ],
       "answer": 1,
-      "explain_vi": "Bố nói: 'it's better if you use it in the living room', Mai đồng ý: 'that's fair'."
+      "explain_vi": "Bố nói ==“it's better if you use it in the living room”==, Mai đồng ý ==“that's fair”== → **In the living room**. __Mai muốn dùng trong phòng ngủ nhưng bố không đồng ý – bẫy.__"
      }
     ]
    },
@@ -841,7 +855,7 @@
        "3000",
        "3.000"
       ],
-      "explain_vi": "'At the moment, we have about 3,000 digital books'. 1,000 là số sách thêm tháng sau."
+      "explain_vi": "==“At the moment, we have about 3,000 digital books”== → **3,000**. __1,000 là số sách thêm vào tháng sau – bẫy.__"
      },
      {
       "answer": "photo",
@@ -849,26 +863,26 @@
        "a photo",
        "photograph"
       ],
-      "explain_vi": "'Just come to the main desk and bring a photo.'"
+      "explain_vi": "==“Just come to the main desk and bring a photo.”== → **photo**. __Phiếu đã có “a”, em chỉ điền photo.__"
      },
      {
       "answer": "4",
       "accept": [
        "four"
       ],
-      "explain_vi": "'You can borrow up to 4 books at the same time.'"
+      "explain_vi": "==“You can borrow up to 4 books at the same time.”== → **4**. __up to nghĩa là “tối đa”.__"
      },
      {
       "answer": "3",
       "accept": [
        "three"
       ],
-      "explain_vi": "Trước là hai tuần, 'so now it's three weeks'."
+      "explain_vi": "Trước là hai tuần, ==“so now it's three weeks”== → **3**. __now báo hiệu thông tin mới nhất; two weeks là thông tin cũ.__"
      },
      {
       "answer": "update",
       "accept": [],
-      "explain_vi": "'please remember to update the app regularly'."
+      "explain_vi": "==“please remember to update the app regularly”== → **update**. __Sau remember to là động từ nguyên thể.__"
      }
     ]
    }
@@ -955,7 +969,7 @@
        "She agrees with it only for younger students."
       ],
       "answer": 1,
-      "explain_vi": "Anna nói 'it's a good thing' vì 'I rely on it far too much'."
+      "explain_vi": "Anna nói ==“it's a good thing”== vì ==“I rely on it far too much”== → **She welcomes it because she depends on her phone too much.** __rely on được nói lại là depends on.__"
      },
      {
       "q": "Why is Nam worried about emergencies?",
@@ -966,7 +980,7 @@
        "He has to call his mother at lunchtime."
       ],
       "answer": 2,
-      "explain_vi": "Nam nói: 'My mum works late, and she needs to be able to contact me.'"
+      "explain_vi": "Nam nói: ==“My mum works late, and she needs to be able to contact me.”== → **His mother needs to be able to reach him.** __contact me được nói lại là reach him.__"
      },
      {
       "q": "What is Nam's attitude towards the promise of new laptops?",
@@ -977,7 +991,7 @@
        "He believes they will arrive next term."
       ],
       "answer": 0,
-      "explain_vi": "'I'll believe it when I see it. They promised us new computers two years ago, and we're still waiting.'"
+      "explain_vi": "==“I'll believe it when I see it. They promised us new computers two years ago, and we're still waiting.”== → **He doubts it because of a previous broken promise.** __“I'll believe it when I see it” nghĩa là chưa tin.__"
      },
      {
       "q": "What bothers Nam most about the ban?",
@@ -988,7 +1002,7 @@
        "Students were not consulted."
       ],
       "answer": 3,
-      "explain_vi": "'what really bothers me is that nobody asked us what we thought.'"
+      "explain_vi": "==“what really bothers me is that nobody asked us what we thought”== → **Students were not consulted.** __Câu hỏi có “most” → chờ cụm “what really bothers me”.__"
      },
      {
       "q": "What will Nam propose at the student council meeting?",
@@ -999,7 +1013,7 @@
        "Using phones only in lessons"
       ],
       "answer": 1,
-      "explain_vi": "Nam sẽ không phản đối lệnh cấm: 'but I'll suggest allowing phones at lunchtime.'"
+      "explain_vi": "Nam không phản đối lệnh cấm: ==“but I'll suggest allowing phones at lunchtime”== → **Letting students use phones at lunchtime**. __Bẫy: Cancelling the ban – Nam nói “not going to argue against the ban”.__"
      }
     ]
    },
@@ -1014,33 +1028,33 @@
       "accept": [
        "smart watch"
       ],
-      "explain_vi": "'My first idea was a smart watch, but my grandmother refused to wear it.'"
+      "explain_vi": "==“My first idea was a smart watch, but my grandmother refused to wear it.”== → **watch**. __Phiếu đã có “smart”, em chỉ điền watch.__"
      },
      {
       "answer": "phone",
       "accept": [],
-      "explain_vi": "Không còn gọi bệnh viện; 'it sends a message to a family member's phone'."
+      "explain_vi": "==“it sends a message to a family member's phone”== → **phone**. __Gọi bệnh viện là tính năng đã bỏ – bẫy.__"
      },
      {
       "answer": "10",
       "accept": [
        "ten"
       ],
-      "explain_vi": "Mong là một tháng 'but in fact it lasts about 10 days'."
+      "explain_vi": "Mong pin dùng một tháng, ==“but in fact it lasts about 10 days”== → **10**. __in fact báo hiệu con số thật.__"
      },
      {
       "answer": "600",
       "accept": [
        "six hundred"
       ],
-      "explain_vi": "'Right now, 600 families rely on the stick'."
+      "explain_vi": "==“Right now, 600 families rely on the stick”== → **600**. __Right now khớp với “now” trên phiếu.__"
      },
      {
       "answer": "light",
       "accept": [
        "small light"
       ],
-      "explain_vi": "'Next year, we're going to add a small light, because many falls happen at night.'"
+      "explain_vi": "==“Next year, we're going to add a small light”== → **light**. __Phiếu đã có “a small”, em chỉ điền light.__"
      }
     ]
    }

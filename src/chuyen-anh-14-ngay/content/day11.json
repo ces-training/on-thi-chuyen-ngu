@@ -159,37 +159,43 @@
      "id": "d11A1",
      "q": "Linh has a cheerful ______; she can make everyone laugh.",
      "answer": "personality",
-     "tag": "d11v1"
+     "tag": "d11v1",
+     "explain_vi": "Sau ==a cheerful== (mạo từ + tính từ) cần **danh từ** → **personality** (tính cách). __Thấy a/an + tính từ + chỗ trống thì tìm danh từ trong khung.__"
     },
     {
      "id": "d11A2",
      "q": "Be ______ with me – did you eat the last piece of cake?",
      "answer": "honest",
-     "tag": "d11v3"
+     "tag": "d11v3",
+     "explain_vi": "==Be ... with me== rồi hỏi 'có phải em ăn miếng bánh cuối không' → cần nói thật: **honest**. __Be honest with sb: hãy thành thật với ai.__"
     },
     {
      "id": "d11A3",
      "q": "My parents always come to my football matches to ______ me and cheer for my team.",
      "answer": "support",
-     "tag": "d11v4"
+     "tag": "d11v4",
+     "explain_vi": "Sau ==to== cần động từ nguyên thể; bố mẹ đến xem để ==cheer for my team== → **support** (ủng hộ). __to + động từ nguyên thể, không thêm -s.__"
     },
     {
      "id": "d11A4",
      "q": "My brother and I sometimes ______ about who can use the computer first.",
      "answer": "argue",
-     "tag": "d11v5"
+     "tag": "d11v5",
+     "explain_vi": "Chủ ngữ ==My brother and I== số nhiều, thì hiện tại → **argue** (không thêm -s). **argue about sth**: cãi nhau về chuyện gì. __Nhớ chia động từ theo chủ ngữ.__"
     },
     {
      "id": "d11A5",
      "q": "You can ______ Hoa with your secrets; she never tells anyone.",
      "answer": "trust",
-     "tag": "d11v6"
+     "tag": "d11v6",
+     "explain_vi": "Sau ==You can== cần động từ nguyên thể; vì ==she never tells anyone== → **trust** (tin tưởng). __trust sb with sth: tin giao điều gì cho ai.__"
     },
     {
      "id": "d11A6",
      "q": "Students show ______ to their teachers by standing up when they come into the classroom.",
      "answer": "respect",
-     "tag": "d11v8"
+     "tag": "d11v8",
+     "explain_vi": "Sau ==show== cần danh từ; đứng dậy khi thầy cô vào lớp là thể hiện sự kính trọng → **respect**. __Cụm hay gặp: show respect to sb.__"
     }
    ]
   },
@@ -200,7 +206,8 @@
      "id": "d11B1",
      "q": "My grandmother, ______ is eighty years old, still walks to the market every day.",
      "answer": "who",
-     "tag": "d11g"
+     "tag": "d11g",
+     "explain_vi": "==My grandmother,== là người, mệnh đề có dấu phẩy → **who**. __Sau dấu phẩy không dùng that.__"
     },
     {
      "id": "d11B2",
@@ -209,19 +216,22 @@
      "accept": [
       "in which"
      ],
-     "tag": "d11g"
+     "tag": "d11g",
+     "explain_vi": "Thay cho nơi chốn ==the small village==, sau đó là câu đủ ý ==my father grew up== → **where** (hoặc in which). __where có thể thay bằng giới từ + which.__"
     },
     {
      "id": "d11B3",
      "q": "I have a classmate ______ mother is a famous singer.",
      "answer": "whose",
-     "tag": "d11g"
+     "tag": "d11g",
+     "explain_vi": "Ngay sau chỗ trống là danh từ ==mother==: mẹ của bạn ấy → **whose**. __whose + danh từ, không thêm his/her.__"
     },
     {
      "id": "d11B4",
      "q": "Ha Long Bay, ______ has nearly two thousand islands, attracts many visitors every year.",
      "answer": "which",
-     "tag": "d11g"
+     "tag": "d11g",
+     "explain_vi": "==Ha Long Bay,== là địa danh (vật), có dấu phẩy, chỗ trống làm chủ ngữ của 'has' → **which**. __Đừng chọn where: sau chỗ trống câu còn thiếu chủ ngữ.__"
     },
     {
      "id": "d11B5",
@@ -230,7 +240,8 @@
      "accept": [
       "that"
      ],
-     "tag": "d11g"
+     "tag": "d11g",
+     "explain_vi": "==The boy== là người, làm chủ ngữ của 'sits' → **who** (hoặc that). __Không có dấu phẩy thì dùng that cũng đúng.__"
     },
     {
      "id": "d11B6",
@@ -239,7 +250,8 @@
      "accept": [
       "that"
      ],
-     "tag": "d11g"
+     "tag": "d11g",
+     "explain_vi": "==The book== là vật, làm tân ngữ của 'lent' → **which** (hoặc that). __Không có dấu phẩy, em dùng which hay that đều được.__"
     }
    ]
   },
@@ -250,25 +262,29 @@
      "id": "d11C1",
      "q": "Thank you for your ______. I know you waited a long time. (PATIENT)",
      "answer": "patience",
-     "tag": "d11w"
+     "tag": "d11w",
+     "explain_vi": "Sau tính từ sở hữu ==your== cần **danh từ**: patient → **patience**. __Tính từ -ent đổi thành danh từ -ence.__"
     },
     {
      "id": "d11C2",
      "q": "Mai answered the interview questions with great ______. (CONFIDENT)",
      "answer": "confidence",
-     "tag": "d11w"
+     "tag": "d11w",
+     "explain_vi": "Sau ==with great== cần **danh từ**: confident → **confidence**. __Cụm hay gặp: with great care, with great patience.__"
     },
     {
      "id": "d11C3",
      "q": "Can you see any ______ between these two pictures? (DIFFERENT)",
      "answer": "difference",
-     "tag": "d11w"
+     "tag": "d11w",
+     "explain_vi": "Sau ==any== và trước ==between== cần **danh từ**: different → **difference**. __difference between A and B: sự khác nhau giữa A và B.__"
     },
     {
      "id": "d11C4",
      "q": "Good friends are very ______ in our lives. (IMPORTANCE)",
      "answer": "important",
-     "tag": "d11w"
+     "tag": "d11w",
+     "explain_vi": "Sau ==are very== cần **tính từ**: importance → **important**. __very + tính từ; câu này phải đổi ngược -ance thành -ant.__"
     }
    ]
   },
@@ -286,7 +302,8 @@
       "honest"
      ],
      "answer": "B",
-     "tag": "fmt:antonym"
+     "tag": "fmt:antonym",
+     "explain_vi": "==GENEROUS== (hào phóng) >< **B. mean** (keo kiệt). Vế ==shares her snacks== cho biết nghĩa. __'kind' gần nghĩa, 'rich' là giàu – không phải trái nghĩa.__"
     },
     {
      "id": "d11D2",
@@ -298,7 +315,8 @@
       "often quarrel with"
      ],
      "answer": "D",
-     "tag": "fmt:antonym"
+     "tag": "fmt:antonym",
+     "explain_vi": "==GET ON WELL WITH== (hoà hợp) >< **D. often quarrel with** (hay cãi nhau). __'agree with' gần nghĩa – bẫy; look up to, take care of nghĩa khác hẳn.__"
     },
     {
      "id": "d11D3",
@@ -310,7 +328,8 @@
       "supports"
      ],
      "answer": "A",
-     "tag": "fmt:antonym"
+     "tag": "fmt:antonym",
+     "explain_vi": "==RESPECTS== (kính trọng) >< **A. looks down on** (coi thường). __'looks up to', 'admires' là đồng nghĩa – đừng chọn nhầm.__"
     },
     {
      "id": "d11D4",
@@ -322,7 +341,8 @@
       "worried"
      ],
      "answer": "C",
-     "tag": "fmt:antonym"
+     "tag": "fmt:antonym",
+     "explain_vi": "==SYMPATHETIC== (cảm thông, quan tâm) >< **C. uncaring** (thờ ơ). __Tiền tố un- thường tạo từ trái nghĩa; worried, gentle không trái nghĩa.__"
     }
    ]
   },
@@ -337,14 +357,16 @@
      "kind": "tfng",
      "q": "Grandpa and Mr Sáu have similar personalities.",
      "answer": "False",
-     "tag": "d11r"
+     "tag": "d11r",
+     "explain_vi": "Bài viết ==The two men have very different personalities== → tính cách khác nhau, không giống → **False**. __Bài nói ngược với câu hỏi thì chọn False, không phải Not Given.__"
     },
     {
      "id": "d11E2",
      "kind": "tfng",
      "q": "Mr Sáu is younger than the writer's grandfather.",
      "answer": "Not Given",
-     "tag": "d11r"
+     "tag": "d11r",
+     "explain_vi": "Bài chỉ nói ông nội ==who is seventy-five==, không nói tuổi ông Sáu → **Not Given**. __Bài không có thông tin để so sánh thì chọn Not Given.__"
     },
     {
      "id": "d11E3",
@@ -357,7 +379,8 @@
       "He called a doctor."
      ],
      "answer": "B",
-     "tag": "d11r"
+     "tag": "d11r",
+     "explain_vi": "==Grandpa visited him every day, carrying a flask of hot tea== → **B. He visited him every day.** __Thư, bệnh viện, bác sĩ đều không có trong bài.__"
     },
     {
      "id": "d11E4",
@@ -370,7 +393,8 @@
       "since last summer"
      ],
      "answer": "A",
-     "tag": "d11r"
+     "tag": "d11r",
+     "explain_vi": "==a friend whose friendship lasts as long as theirs – more than sixty years== → **A**. __'seventy-five' là tuổi ông, 'a month' là thời gian ông Sáu ốm – bẫy số.__"
     }
    ]
   },
@@ -394,28 +418,32 @@
      "q": "My sister is going to a______ for a job at the new library.",
      "answer": "apply",
      "from_day": 10,
-     "tag": "d10v6"
+     "tag": "d10v6",
+     "explain_vi": "Chữ gợi ý a, sau ==going to== cần động từ nguyên thể: **apply for a job** (nộp đơn xin việc). __Nhớ cụm apply for + công việc.__"
     },
     {
      "id": "d11G2",
      "q": "If I ______ (have) wings, I would fly to school every day.",
      "answer": "had",
      "from_day": 10,
-     "tag": "d10g"
+     "tag": "d10g",
+     "explain_vi": "Có ==I would fly== → câu điều kiện loại 2, mệnh đề if dùng **quá khứ đơn: had**. __Điều không có thật ở hiện tại → loại 2.__"
     },
     {
      "id": "d11G3",
      "q": "While I was tidying my room, I came ______ an old photo of my parents.",
      "answer": "across",
      "from_day": 8,
-     "tag": "d8p2"
+     "tag": "d8p2",
+     "explain_vi": "**come across**: tình cờ thấy. Ngữ cảnh ==While I was tidying my room== → vô tình tìm thấy ảnh cũ → điền **across**. __Học phrasal verb kèm ví dụ để nhớ nghĩa.__"
     },
     {
      "id": "d11G4",
      "q": "The box was ______ heavy for me to carry, so my dad helped me. (too / enough)",
      "answer": "too",
      "from_day": 5,
-     "tag": "d5g"
+     "tag": "d5g",
+     "explain_vi": "Có ==for me to carry== và bố phải giúp → nặng quá không mang nổi: **too + tính từ + for sb + to V** → **too**. __enough đứng sau tính từ (heavy enough), nên không đứng trước heavy được.__"
     }
    ]
   }
@@ -433,7 +461,7 @@
     "generous"
    ],
    "answer": 3,
-   "explain_vi": "'generous' = hào phóng – sẵn sàng cho đi tiền bạc, thời gian.",
+   "explain_vi": "Câu sau ==gave a lot of money to help children== cho thấy chú rất hào phóng → **generous**. __Đọc câu thứ hai để tìm bằng chứng cho tính từ ở câu đầu.__",
    "tag": "d11v2"
   },
   {
@@ -443,7 +471,7 @@
    "q": "I really look ______ to my grandfather. He is wise, kind and hard-working.",
    "answer": "up",
    "accept": [],
-   "explain_vi": "'look up to sb' = kính trọng, ngưỡng mộ ai đó.",
+   "explain_vi": "**look up to sb**: kính trọng, ngưỡng mộ ai → điền **up**. Câu sau ==wise, kind and hard-working== là lý do em kính trọng ông. __Học cả cặp: look up to >< look down on.__",
    "tag": "d11p2"
   },
   {
@@ -458,7 +486,7 @@
     "off"
    ],
    "answer": 0,
-   "explain_vi": "'get on well with sb' = hoà hợp với ai. 'get over' = vượt qua (bệnh, nỗi buồn).",
+   "explain_vi": "Có ==well with your new neighbours== → cụm **get on well with sb** (hoà hợp với ai) → chọn **on**. 'get over' là vượt qua (bệnh, nỗi buồn). __Thấy 'well with' thì nghĩ ngay tới get on.__",
    "tag": "d11p1"
   },
   {
@@ -473,7 +501,7 @@
     "whose"
    ],
    "answer": 2,
-   "explain_vi": "Chỗ trống thay cho địa điểm (the café) và sau đó là một câu đầy đủ (my parents first met) → where.",
+   "explain_vi": "Chỗ trống thay cho nơi chốn ==the café==, sau đó là câu đủ ý ==my parents first met== → **where**. __Sau who/which câu còn thiếu chủ ngữ hoặc tân ngữ; sau where câu đã đủ.__",
    "tag": "d11g"
   },
   {
@@ -488,7 +516,7 @@
     "whose"
    ],
    "answer": 1,
-   "explain_vi": "Mệnh đề có dấu phẩy (không xác định) nói về người → who. Không dùng 'that' sau dấu phẩy.",
+   "explain_vi": "==My English teacher,== là người, mệnh đề có dấu phẩy → **who**. __Sau dấu phẩy không bao giờ dùng that.__",
    "tag": "d11g"
   },
   {
@@ -498,7 +526,7 @@
    "q": "I met a girl ______ dream is to become an astronaut.",
    "answer": "whose",
    "accept": [],
-   "explain_vi": "'whose dream' = ước mơ của cô bé ấy → dùng whose + danh từ để chỉ sở hữu.",
+   "explain_vi": "Ngay sau chỗ trống là danh từ ==dream==: ước mơ của cô bé → **whose + danh từ** chỉ sở hữu. __Sau chỗ trống là danh từ không có mạo từ thì nghĩ tới whose.__",
    "tag": "d11g"
   },
   {
@@ -513,7 +541,7 @@
     "confidence"
    ],
    "answer": 3,
-   "explain_vi": "Sau tính từ sở hữu 'Her' cần danh từ: confident → confidence.",
+   "explain_vi": "Sau tính từ sở hữu ==Her== cần **danh từ**: confident → **confidence**. __Nhớ cặp -ent → -ence: patient/patience, different/difference.__",
    "tag": "d11w"
   },
   {
@@ -523,7 +551,7 @@
    "q": "Learning to play the piano takes a long time, so you have to be ______. (PATIENCE)",
    "answer": "patient",
    "accept": [],
-   "explain_vi": "Sau 'be' cần tính từ: patience (n) → patient (adj) = kiên nhẫn.",
+   "explain_vi": "Sau ==have to be== cần **tính từ**: patience → **patient** (kiên nhẫn). __Đuôi -ence là danh từ, đuôi -ent là tính từ.__",
    "tag": "d11w"
   },
   {
@@ -538,7 +566,7 @@
     "polite"
    ],
    "answer": 2,
-   "explain_vi": "honest (trung thực) >< dishonest (không trung thực). 'truthful' là từ đồng nghĩa – bẫy hay gặp!",
+   "explain_vi": "**honest** (trung thực) >< **dishonest** (không trung thực). Vế ==he never cheats in tests== giúp em hiểu nghĩa từ in hoa. __'truthful' là từ đồng nghĩa – bẫy hay gặp!__",
    "tag": "fmt:antonym"
   },
   {
@@ -554,7 +582,7 @@
     "were"
    ],
    "answer": 3,
-   "explain_vi": "Câu điều kiện loại 2 (lời khuyên): If I were you, I would...",
+   "explain_vi": "Lời khuyên ==I would say sorry== → câu điều kiện loại 2: **If I were you, I would...** __Loại 2 dùng were cho mọi ngôi, kể cả I.__",
    "tag": "d10g"
   },
   {
@@ -570,7 +598,7 @@
     "is printing"
    ],
    "answer": 1,
-   "explain_vi": "Tờ báo không tự in được → câu bị động hiện tại đơn: is + V3 (is printed).",
+   "explain_vi": "Tờ báo không tự in được, lại có ==every morning== → **bị động hiện tại đơn: is printed**. __Chủ ngữ là vật không tự làm được việc thì nghĩ tới bị động.__",
    "tag": "d8g"
   },
   {
@@ -583,7 +611,7 @@
    "accept": [
     "most healthy"
    ],
-   "explain_vi": "So sánh nhất với tính từ ngắn đuôi -y: healthy → the healthiest.",
+   "explain_vi": "Có ==I have ever eaten== → so sánh nhất: healthy → **the healthiest** (most healthy cũng được chấp nhận). __Tính từ đuôi -y: đổi y thành i rồi thêm -est.__",
    "tag": "d5g"
   }
  ],

@@ -12,7 +12,8 @@
       "They haven't cleaned the beach yet.",
       "I have just thrown away the old boxes.",
       "The river has been dirty since 2015."
-     ]
+     ],
+     "rule_vi": "**Hiện tại hoàn thành (have/has + V3)**: việc không nói rõ lúc nào hoặc kéo dài đến nay, dấu hiệu ==so far, ever, yet, just, since==. __Thấy have/has + V3 là xếp vào nhóm này.__"
     },
     {
      "name": "Past simple",
@@ -22,30 +23,36 @@
       "I visited Cuc Phuong two years ago.",
       "When did you start recycling?",
       "Lan picked up rubbish in the park yesterday."
-     ]
+     ],
+     "rule_vi": "**Quá khứ đơn (V2/V-ed, did)**: có thời gian xác định ==last Sunday, in 2020, two years ago, yesterday== hoặc câu hỏi ==When==. __When hỏi thời điểm cụ thể nên dùng quá khứ đơn.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "Have you ever seen a sea turtle?",
-    "hint_vi": "Câu hỏi hiện tại hoàn thành với ever"
+    "hint_vi": "Câu hỏi hiện tại hoàn thành với ever",
+    "why_vi": "Câu hỏi HTHT: **Have + chủ ngữ + ever + V3**: ==Have you ever seen== a sea turtle? __ever đứng ngay sau chủ ngữ, trước V3.__"
    },
    {
     "sentence": "We have used cloth bags since last year.",
-    "hint_vi": "since + mốc thời gian"
+    "hint_vi": "since + mốc thời gian",
+    "why_vi": "**S + have + V3 + tân ngữ + since + mốc**: ==since last year== đứng cuối câu. __Cụm chỉ thời gian thường đặt cuối câu.__"
    },
    {
     "sentence": "The factory closed three years ago because of pollution.",
-    "hint_vi": "… ago → quá khứ đơn"
+    "hint_vi": "… ago → quá khứ đơn",
+    "why_vi": "==three years ago== → **quá khứ đơn: closed**; trật tự **S + V2 + thời gian + because of + danh từ**. __because of + danh từ (pollution), because + mệnh đề.__"
    },
    {
     "sentence": "We haven't recycled our old batteries yet.",
-    "hint_vi": "yet đứng cuối câu phủ định"
+    "hint_vi": "yet đứng cuối câu phủ định",
+    "why_vi": "Phủ định HTHT: **S + haven't + V3 + tân ngữ + yet**, ==yet== đứng cuối câu. __yet dùng trong câu phủ định và câu hỏi.__"
    },
    {
     "sentence": "Many species of frogs have disappeared from this area.",
-    "hint_vi": "Hiện tại hoàn thành: kết quả còn đến bây giờ"
+    "hint_vi": "Hiện tại hoàn thành: kết quả còn đến bây giờ",
+    "why_vi": "Chủ ngữ ==Many species of frogs== + **have disappeared** + nơi chốn (from this area). __Chủ ngữ dài nhưng vẫn số nhiều nên dùng have.__"
    }
   ],
   "truefalse": [
@@ -53,49 +60,49 @@
     "s": "We have cleaned the beach last weekend.",
     "ok": false,
     "fix": "We cleaned the beach last weekend.",
-    "why_vi": "Có thời gian xác định (last weekend) → quá khứ đơn."
+    "why_vi": "Có ==last weekend== (thời gian xác định) → **quá khứ đơn: We cleaned**. __HTHT không đi với last, ago, yesterday.__"
    },
    {
     "s": "The air in Hanoi has become more polluted in recent years.",
     "ok": true,
     "fix": "The air in Hanoi has become more polluted in recent years.",
-    "why_vi": "'in recent years' (những năm gần đây) đi với hiện tại hoàn thành."
+    "why_vi": "==in recent years== (những năm gần đây) → **hiện tại hoàn thành: has become** là đúng. __recently, lately, in recent years thường đi với HTHT.__"
    },
    {
     "s": "My dad has worked at a recycling centre for ten years.",
     "ok": true,
     "fix": "My dad has worked at a recycling centre for ten years.",
-    "why_vi": "for + khoảng thời gian, việc vẫn còn tiếp diễn → hiện tại hoàn thành."
+    "why_vi": "==for ten years== + việc vẫn tiếp diễn → **hiện tại hoàn thành: has worked** là đúng. __for + khoảng thời gian, since + mốc thời gian.__"
    },
    {
     "s": "I have lived here since five years.",
     "ok": false,
     "fix": "I have lived here for five years.",
-    "why_vi": "five years là khoảng thời gian → dùng for, không dùng since."
+    "why_vi": "==five years== là khoảng thời gian → dùng **for five years**, không dùng since. __since chỉ đi với mốc: since 2020, since Monday.__"
    },
    {
     "s": "Have you finished your science poster yet?",
     "ok": true,
     "fix": "Have you finished your science poster yet?",
-    "why_vi": "yet đứng cuối câu hỏi hiện tại hoàn thành."
+    "why_vi": "**yet** đứng cuối câu hỏi HTHT: ==Have you finished … yet?== là đúng. __Trong câu hỏi, yet nghĩa là “đã… chưa”.__"
    },
    {
     "s": "She hasn't already sorted the rubbish.",
     "ok": false,
     "fix": "She hasn't sorted the rubbish yet.",
-    "why_vi": "Câu phủ định dùng yet ở cuối câu, không dùng already."
+    "why_vi": "Câu phủ định dùng **yet ở cuối câu**: ==She hasn't sorted the rubbish yet.== __already dùng trong câu khẳng định, yet dùng trong phủ định và câu hỏi.__"
    },
    {
     "s": "When have you started saving water?",
     "ok": false,
     "fix": "When did you start saving water?",
-    "why_vi": "Câu hỏi với When hỏi thời điểm cụ thể → quá khứ đơn."
+    "why_vi": "==When== hỏi thời điểm cụ thể → **quá khứ đơn: When did you start**. __Không dùng When với hiện tại hoàn thành.__"
    },
    {
     "s": "Look! Someone has thrown rubbish into the lake.",
     "ok": true,
     "fix": "Look! Someone has thrown rubbish into the lake.",
-    "why_vi": "Việc vừa xảy ra, kết quả nhìn thấy ngay bây giờ → hiện tại hoàn thành."
+    "why_vi": "==Look!== cho thấy kết quả nhìn thấy ngay bây giờ → **hiện tại hoàn thành: has thrown** là đúng. __throw – threw – thrown.__"
    }
   ]
  },
@@ -116,7 +123,7 @@
       "break"
      ],
      "answer": 0,
-     "explain_vi": "throw away (vứt đi) >< keep (giữ lại). 'dump' gần nghĩa với throw away nên là bẫy."
+     "explain_vi": "**throw away** (vứt đi) >< **keep** (giữ lại). __dump (vứt bỏ) gần nghĩa với throw away nên là bẫy.__"
     },
     {
      "q": "The flood caused SERIOUS damage to the village.",
@@ -127,7 +134,7 @@
       "natural"
      ],
      "answer": 0,
-     "explain_vi": "serious (nghiêm trọng) >< minor (nhỏ, không đáng kể). heavy, terrible gần nghĩa với serious."
+     "explain_vi": "**serious** (nghiêm trọng) >< **minor** (nhỏ, không đáng kể). __heavy, terrible đều gần nghĩa với serious, loại trước.__"
     },
     {
      "q": "This national park PROTECTS many rare species.",
@@ -138,7 +145,7 @@
       "shelters"
      ],
      "answer": 0,
-     "explain_vi": "protect (bảo vệ) >< destroy (phá huỷ). saves, guards, shelters đều gần nghĩa với protect."
+     "explain_vi": "**protect** (bảo vệ) >< **destroy** (phá huỷ). __saves, guards, shelters đều gần nghĩa với protect – ba cái bẫy.__"
     },
     {
      "q": "The number of tigers in the wild has DECREASED over the last 100 years.",
@@ -149,7 +156,7 @@
       "changed"
      ],
      "answer": 0,
-     "explain_vi": "decrease (giảm) >< rise (tăng). fallen, dropped cùng nghĩa 'giảm' nên là bẫy."
+     "explain_vi": "**decrease** (giảm) >< **rise** (tăng) → **risen**. __fallen, dropped cùng nghĩa “giảm” nên là bẫy.__"
     },
     {
      "q": "This kind of mushroom is HARMLESS, so you can eat it.",
@@ -160,7 +167,7 @@
       "safe"
      ],
      "answer": 0,
-     "explain_vi": "harmless (vô hại) >< poisonous (có độc). 'safe' đồng nghĩa với harmless."
+     "explain_vi": "**harmless** (vô hại) >< **poisonous** (có độc). ==so you can eat it== xác nhận nghĩa “vô hại”. __safe đồng nghĩa với harmless, không phải trái nghĩa.__"
     }
    ]
   },
@@ -176,31 +183,31 @@
      "answer": "famous",
      "accept": [],
      "base": "FAME",
-     "explain_vi": "be famous for = nổi tiếng vì. fame bỏ -e, thêm -ous."
+     "explain_vi": "Có ==was== … ==for its pink lotus flowers== → cụm **be famous for** (nổi tiếng vì). fame bỏ e, thêm -ous → **famous**. __Đừng viết “fameous”.__"
     },
     {
      "answer": "poisonous",
      "accept": [],
      "base": "POISON",
-     "explain_vi": "Sau 'became' cần tính từ: poison + -ous = poisonous (có độc)."
+     "explain_vi": "Sau ==became== cần **tính từ**: poison + -ous → **poisonous** (có độc). __be, become, look, feel thường đi với tính từ.__"
     },
     {
      "answer": "environmental",
      "accept": [],
      "base": "ENVIRONMENT",
-     "explain_vi": "Trước danh từ 'project' cần tính từ: environment + -al. Mạo từ 'an' hợp với từ bắt đầu bằng nguyên âm."
+     "explain_vi": "Sau ==an== và trước danh từ ==project== cần **tính từ**: environment + -al → **environmental**. __“an” báo hiệu từ cần điền bắt đầu bằng nguyên âm.__"
     },
     {
      "answer": "careless",
      "accept": [],
      "base": "CARE",
-     "explain_vi": "Nhắc khách đừng cẩu thả với rác: care + -less = careless (đuôi đã học ở buổi 2)."
+     "explain_vi": "==asked visitors not to be== … with their waste → nhắc khách đừng cẩu thả: care + -less → **careless**. __Để ý chữ “not” để chọn -less hay -ful.__"
     },
     {
      "answer": "national",
      "accept": [],
      "base": "NATION",
-     "explain_vi": "Trước danh từ 'newspaper' cần tính từ: nation + -al = national (toàn quốc)."
+     "explain_vi": "Sau ==a== và trước danh từ ==newspaper== cần **tính từ**: nation + -al → **national** (toàn quốc). __Tính từ đứng trước danh từ mà nó bổ nghĩa.__"
     }
    ]
   }
@@ -222,7 +229,7 @@
       "quiet"
      ],
      "answer": 1,
-     "explain_vi": "clean (sạch) >< dirty (bẩn). Tình nguyện viên đã nhặt hết rác nên bãi biển sạch."
+     "explain_vi": "**clean** (sạch) >< **dirty** (bẩn). ==picked up all the rubbish== cho biết bãi biển sạch. __Dịch từ viết hoa ra tiếng Việt rồi nghĩ từ ngược nghĩa.__"
     },
     {
      "q": "We have planted MANY trees in our school garden.",
@@ -233,7 +240,7 @@
       "old"
      ],
      "answer": 2,
-     "explain_vi": "many (nhiều) >< few (ít). big, green, old không nói về số lượng."
+     "explain_vi": "**many** (nhiều) >< **few** (ít). __big, green, old không nói về số lượng nên loại ngay.__"
     },
     {
      "q": "My street has become very NOISY since the new market opened.",
@@ -244,7 +251,7 @@
       "quiet"
      ],
      "answer": 3,
-     "explain_vi": "noisy (ồn ào) >< quiet (yên tĩnh). busy (đông đúc, nhộn nhịp) gần nghĩa với noisy nên là bẫy."
+     "explain_vi": "**noisy** (ồn ào) >< **quiet** (yên tĩnh). __busy (nhộn nhịp) gần nghĩa với noisy nên là bẫy.__"
     },
     {
      "q": "Please TURN OFF the lights when you leave the classroom.",
@@ -255,7 +262,7 @@
       "clean"
      ],
      "answer": 0,
-     "explain_vi": "turn off (tắt) >< turn on (bật). switch off cùng nghĩa với turn off nên là bẫy."
+     "explain_vi": "**turn off** (tắt) >< **turn on** (bật). __switch off cùng nghĩa với turn off – bẫy đồng nghĩa.__"
     },
     {
      "q": "It was very HOT in Hanoi last summer.",
@@ -266,7 +273,7 @@
       "dry"
      ],
      "answer": 2,
-     "explain_vi": "hot (nóng) >< cold (lạnh). warm (ấm) chỉ là nóng ít hơn, không phải trái nghĩa."
+     "explain_vi": "**hot** (nóng) >< **cold** (lạnh). __warm (ấm) chỉ là nóng ít hơn, không phải trái nghĩa.__"
     }
    ]
   },
@@ -282,31 +289,31 @@
      "answer": "national",
      "accept": [],
      "base": "NATION",
-     "explain_vi": "Trước danh từ 'park' cần tính từ: nation + -al = national. national park = vườn quốc gia."
+     "explain_vi": "Sau ==a big== và trước danh từ ==park== cần **tính từ**: nation + -al → **national**. __national park (vườn quốc gia): học cả cụm.__"
     },
     {
      "answer": "dangerous",
      "accept": [],
      "base": "DANGER",
-     "explain_vi": "Sau 'are' cần tính từ: danger + -ous = dangerous (nguy hiểm). Vì vậy mọi người phải đi trên đường mòn."
+     "explain_vi": "Sau ==are== cần **tính từ**: danger + -ous → **dangerous** (nguy hiểm). ==please stay on the path== cho thấy đây là lời cảnh báo. __Sau is/are/was/were thường là tính từ.__"
     },
     {
      "answer": "careful",
      "accept": [],
      "base": "CARE",
-     "explain_vi": "Sau 'were very' cần tính từ. Không ai chạm vào con vật → cẩn thận: care + -ful = careful."
+     "explain_vi": "Sau ==were very== cần **tính từ**; ==nobody touched the animals== → cẩn thận: care + -ful → **careful**. __Đọc câu quanh chỗ trống để chọn -ful hay -less.__"
     },
     {
      "answer": "environmental",
      "accept": [],
      "base": "ENVIRONMENT",
-     "explain_vi": "Trước danh từ 'problems' cần tính từ: environment + -al = environmental (thuộc về môi trường)."
+     "explain_vi": "Trước danh từ ==problems== cần **tính từ**: environment + -al → **environmental**. __Ví dụ phía sau (forest fires and rubbish) giúp em đoán nghĩa “môi trường”.__"
     },
     {
      "answer": "wonderful",
      "accept": [],
      "base": "WONDER",
-     "explain_vi": "Sau 'a' và trước danh từ 'day' cần tính từ: wonder + -ful = wonderful (tuyệt vời)."
+     "explain_vi": "Sau ==a== và trước danh từ ==day== cần **tính từ**: wonder + -ful → **wonderful** (tuyệt vời). __Mẫu a + tính từ + danh từ rất hay gặp.__"
     }
    ]
   }
@@ -328,7 +335,7 @@
       "severe"
      ],
      "answer": 2,
-     "explain_vi": "strict (nghiêm ngặt) >< lenient (dễ dãi, khoan dung). tough, harsh, severe đều gần nghĩa với strict."
+     "explain_vi": "**strict** (nghiêm ngặt) >< **lenient** (dễ dãi, khoan dung). __tough, harsh, severe đều gần nghĩa với strict – loại cả ba.__"
     },
     {
      "q": "Thanks to last month's clean-up, the lake is FREE FROM plastic waste for the first time in years.",
@@ -339,7 +346,7 @@
       "short of"
      ],
      "answer": 1,
-     "explain_vi": "free from (không có) >< full of (đầy). clear of, rid of cùng nghĩa 'không còn'; short of = thiếu, không phải trái nghĩa."
+     "explain_vi": "**free from** (không có) >< **full of** (đầy). __clear of, rid of cùng nghĩa “không còn”; short of (thiếu) chỉ khác nghĩa.__"
     },
     {
      "q": "The new factory has had a DETRIMENTAL effect on the river near our village.",
@@ -350,7 +357,7 @@
       "beneficial"
      ],
      "answer": 3,
-     "explain_vi": "detrimental (gây hại) >< beneficial (có lợi). damaging, harmful, negative đều đồng nghĩa với detrimental."
+     "explain_vi": "**detrimental** (gây hại) >< **beneficial** (có lợi). __damaging, harmful, negative đều đồng nghĩa với detrimental.__"
     },
     {
      "q": "Our club SET UP a recycling point at the school gate last year.",
@@ -361,7 +368,7 @@
       "built"
      ],
      "answer": 0,
-     "explain_vi": "set up (lập ra) >< close down (đóng cửa, giải thể). started, put up, built đều gần nghĩa với set up."
+     "explain_vi": "**set up** (lập ra) >< **close down** (đóng cửa, giải thể) → **closed down**. __started, put up, built đều gần nghĩa với set up.__"
     },
     {
      "q": "In recent years, fresh water has become SCARCE in some parts of the Mekong Delta.",
@@ -372,7 +379,7 @@
       "precious"
      ],
      "answer": 2,
-     "explain_vi": "scarce (khan hiếm) >< plentiful (dồi dào). rare, limited gần nghĩa; precious (quý giá) không phải trái nghĩa."
+     "explain_vi": "**scarce** (khan hiếm) >< **plentiful** (dồi dào). __rare, limited gần nghĩa; precious (quý giá) chỉ khác nghĩa, không trái nghĩa.__"
     }
    ]
   },
@@ -388,19 +395,19 @@
      "answer": "dramatically",
      "accept": [],
      "base": "DRAMA",
-     "explain_vi": "Bổ nghĩa cho động từ 'has changed' cần trạng từ: drama → dramatic → dramatically (-ic → -ically)."
+     "explain_vi": "Bổ nghĩa cho động từ ==has changed== cần **trạng từ**: drama → dramatic → **dramatically**. __Tính từ đuôi -ic thêm -ally: -ic → -ically.__"
     },
     {
      "answer": "disastrous",
      "accept": [],
      "base": "DISASTER",
-     "explain_vi": "Sau 'has been' cần tính từ: disaster + -ous, bỏ e → disastrous (không viết disasterous)."
+     "explain_vi": "Sau ==has been== cần **tính từ**: disaster + -ous, bỏ e → **disastrous**. __Lỗi hay gặp: viết “disasterous”.__"
     },
     {
      "answer": "environmentally",
      "accept": [],
      "base": "ENVIRONMENT",
-     "explain_vi": "Cụm cố định environmentally friendly (thân thiện với môi trường): trạng từ bổ nghĩa cho tính từ friendly."
+     "explain_vi": "Đứng trước tính từ ==friendly== cần **trạng từ**: **environmentally friendly** (thân thiện với môi trường). __Đây là cụm cố định, em học thuộc cả cụm.__"
     },
     {
      "answer": "numerous",
@@ -408,13 +415,13 @@
       "innumerable"
      ],
      "base": "NUMBER",
-     "explain_vi": "Trước danh từ số nhiều 'clean-ups' cần tính từ: number → numerous (rất nhiều)."
+     "explain_vi": "Trước danh từ số nhiều ==clean-ups== cần **tính từ**: number → **numerous** (rất nhiều). __Chú ý chính tả: numer- + -ous, không có chữ b.__"
     },
     {
      "answer": "ambitious",
      "accept": [],
      "base": "AMBITION",
-     "explain_vi": "Sau 'an' và trước danh từ 'plan' cần tính từ: ambition → ambitious (đầy tham vọng)."
+     "explain_vi": "Sau ==an== và trước danh từ ==plan== cần **tính từ**: ambition → **ambitious** (đầy tham vọng). __Đuôi -tion đổi thành -tious: ambition → ambitious.__"
     }
    ]
   }
@@ -427,13 +434,15 @@
     "id": "d3H1",
     "q": "The ______ of the hills around the village has led to more landslides in the rainy season. (FOREST)",
     "answer": "deforestation",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Sau ==The== và trước ==of== cần **danh từ**: forest → **deforestation** (nạn phá rừng); ==more landslides== cho thấy nghĩa tiêu cực. __Tiền tố de- mang nghĩa “làm mất đi”.__"
    },
    {
     "id": "d3H2",
     "q": "Most of the packaging in this shop is ______, so customers can put it in the blue recycling bins. (CYCLE)",
     "answer": "recyclable",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Sau ==is== cần **tính từ**: cycle → recycle → **recyclable** (có thể tái chế); bằng chứng ==put it in the blue recycling bins==. __Đuôi -able nghĩa là “có thể… được”; recycle bỏ e trước -able.__"
    },
    {
     "id": "d3H3",
@@ -442,7 +451,8 @@
     "accept": [
      "seen a firefly in five years",
      "seen any fireflies for five years"
-    ]
+    ],
+    "explain_vi": "**The last time + V2 + was … ago** → **S + haven't + V3 + for + khoảng thời gian**: ==I haven't seen a firefly for five years==. __Bỏ “ago”, thay bằng “for”.__"
    },
    {
     "id": "d3H4",
@@ -450,7 +460,8 @@
     "answer": "visited a recycling plant before",
     "accept": [
      "been to a recycling plant before"
-    ]
+    ],
+    "explain_vi": "**This is the first time + HTHT** → **S + have never + V3 + before**: ==I have never visited a recycling plant before==. __Nhớ thêm “before” ở cuối câu.__"
    },
    {
     "id": "d3H5",
@@ -462,7 +473,8 @@
      "does"
     ],
     "answer": "C",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Cụm cố định **pose a threat to** (gây ra mối đe doạ cho): ==a serious threat== đi với **poses** → đáp án **C**. __make, take, do không đi với threat; học collocation theo cụm.__"
    },
    {
     "id": "d3H6",
@@ -474,7 +486,8 @@
      "threatening"
     ],
     "answer": "B",
-    "accept": []
+    "accept": [],
+    "explain_vi": "==that lives in the Truong Son mountains== → loài vẫn còn sống nên không phải extinct. Đáp án **B**: **critically endangered** (cực kỳ nguy cấp). __dangerous là “nguy hiểm cho người khác”, không phải “bị đe doạ”.__"
    }
   ]
  },
@@ -593,7 +606,7 @@
        "Food waste"
       ],
       "answer": 2,
-      "explain_vi": "Mai nói: 'It's full of plastic bottles.'"
+      "explain_vi": "Mai nói: ==“It's full of plastic bottles.”== → **Plastic bottles**. __Old paper và cans là thứ các lớp mang tới, không phải đồ trong túi Mai.__"
      },
      {
       "q": "Who helped Mai wash the bottles?",
@@ -604,7 +617,7 @@
        "Her classmates"
       ],
       "answer": 0,
-      "explain_vi": "Mai nói: 'My mum helped me last night.'"
+      "explain_vi": "Mai nói: ==“My mum helped me last night.”== → **Her mum**. __Nghe kỹ động từ helped để biết ai giúp.__"
      },
      {
       "q": "When is the recycling day?",
@@ -615,7 +628,7 @@
        "Next Friday"
       ],
       "answer": 3,
-      "explain_vi": "Mai nói: 'It's next Friday.'"
+      "explain_vi": "==“It's next Friday.”== → **Next Friday**. __Phân biệt next (sắp tới) và last (đã qua).__"
      },
      {
       "q": "What can the winning class get?",
@@ -626,7 +639,7 @@
        "A free lunch"
       ],
       "answer": 1,
-      "explain_vi": "'The class with the most rubbish wins a trip to Cuc Phuong National Park.'"
+      "explain_vi": "==“The class with the most rubbish wins a trip to Cuc Phuong National Park.”== → **A trip to a national park**. __Đáp án thường nói lại theo cách khác: Cuc Phuong National Park thành “a national park”.__"
      },
      {
       "q": "What does Mai tell Tom to do?",
@@ -637,7 +650,7 @@
        "Help her carry the bag"
       ],
       "answer": 2,
-      "explain_vi": "Mai nói: 'Then tell your classmates today.'"
+      "explain_vi": "Mai nói: ==“Then tell your classmates today.”== → **Talk to his classmates today**. __tell your classmates được nói lại là talk to his classmates.__"
      }
     ]
    },
@@ -652,33 +665,33 @@
       "accept": [
        "two"
       ],
-      "explain_vi": "'Today we're going to walk for two hours.'"
+      "explain_vi": "==“Today we're going to walk for two hours.”== → **2**. __Em có thể viết số 2 hoặc chữ two.__"
      },
      {
       "answer": "garden",
       "accept": [
        "bird garden"
       ],
-      "explain_vi": "'First, we're going to visit the bird garden.'"
+      "explain_vi": "==“First, we're going to visit the bird garden.”== → **garden**. __Phiếu đã có chữ bird, em chỉ cần điền garden.__"
      },
      {
       "answer": "40",
       "accept": [
        "forty"
       ],
-      "explain_vi": "'There are more than 40 species of birds there.'"
+      "explain_vi": "==“There are more than 40 species of birds there.”== → **40**. __“more than” đã in sẵn trên phiếu, em chỉ ghi số.__"
      },
      {
       "answer": "lake",
       "accept": [
        "the lake"
       ],
-      "explain_vi": "'Then we're going to see the monkeys near the lake.'"
+      "explain_vi": "==“Then we're going to see the monkeys near the lake.”== → **lake**. __Nghe từ khoá monkeys rồi chờ nơi chốn ngay sau.__"
      },
      {
       "answer": "green",
       "accept": [],
-      "explain_vi": "'please don't throw away any rubbish in the park. Use the green bins.'"
+      "explain_vi": "==“Use the green bins.”== → **green**. __Chỗ trống đứng trước “bins” nên cần một tính từ, ở đây là màu sắc.__"
      }
     ]
    }
@@ -757,7 +770,7 @@
        "7"
       ],
       "answer": 2,
-      "explain_vi": "Nam nói 25 rồi sửa: 'two more joined yesterday, so it's 27.'"
+      "explain_vi": "Nam nói 25 rồi sửa: ==“two more joined yesterday, so it's 27”== → **27**. __Cẩn thận chỗ người nói sửa lại thông tin: đáp án là con số sau cùng.__"
      },
      {
       "q": "What does the club do with the money from the paper?",
@@ -768,7 +781,7 @@
        "It makes posters."
       ],
       "answer": 1,
-      "explain_vi": "'we use the money to buy plants for the school garden'."
+      "explain_vi": "==“we use the money to buy plants for the school garden”== → **It buys plants for the school.** __Thùng rác và áp phích không mua bằng tiền bán giấy.__"
      },
      {
       "q": "What problem did the club have at first?",
@@ -779,7 +792,7 @@
        "They didn't have enough bins."
       ],
       "answer": 0,
-      "explain_vi": "'lots of students threw food waste into the paper bins' → bỏ rác thức ăn nhầm thùng."
+      "explain_vi": "==“lots of students threw food waste into the paper bins”== → **Students put food waste in the wrong bins.** __“into the paper bins” được nói lại là “in the wrong bins”.__"
      },
      {
       "q": "How did the club solve this problem?",
@@ -790,7 +803,7 @@
        "They made posters explaining which bin to use."
       ],
       "answer": 3,
-      "explain_vi": "'So we made posters to show what goes where.'"
+      "explain_vi": "==“So we made posters to show what goes where.”== → **They made posters explaining which bin to use.** __So (vì vậy) báo hiệu cách giải quyết vấn đề.__"
      },
      {
       "q": "What has the club already done about plastic in the canteen?",
@@ -801,7 +814,7 @@
        "Closed the canteen for a week"
       ],
       "answer": 1,
-      "explain_vi": "'We've already asked the canteen to stop selling bottled water'. Bình kim loại là kế hoạch tháng sau."
+      "explain_vi": "==“We've already asked the canteen to stop selling bottled water”== → **Asked the canteen not to sell water in plastic bottles**. Bình kim loại là kế hoạch tháng sau. __Câu hỏi có “already” → chọn việc đã làm.__"
      }
     ]
    },
@@ -816,14 +829,14 @@
       "accept": [
        "school gate"
       ],
-      "explain_vi": "'The bus leaves from the school gate at six o'clock in the morning'."
+      "explain_vi": "==“The bus leaves from the school gate at six o'clock”== → **gate**. __Phiếu đã có “the school”, em chỉ điền gate.__"
      },
      {
       "answer": "80",
       "accept": [
        "eighty"
       ],
-      "explain_vi": "'Last year, we collected 80 bags of rubbish'."
+      "explain_vi": "==“Last year, we collected 80 bags of rubbish”== → **80**. __Từ khoá last year trên phiếu khớp với bài nghe.__"
      },
      {
       "answer": "water bottle",
@@ -831,12 +844,12 @@
        "bottle",
        "water bottles"
       ],
-      "explain_vi": "'Please bring a hat, sun cream and your own water bottle'."
+      "explain_vi": "==“Please bring a hat, sun cream and your own water bottle”== → **water bottle**. __Đáp án là thứ đứng sau “your own”, giống trên phiếu.__"
      },
      {
       "answer": "shoes",
       "accept": [],
-      "explain_vi": "Không cần găng tay nữa: 'you only need to bring a pair of old shoes'."
+      "explain_vi": "Găng tay không cần nữa: ==“you only need to bring a pair of old shoes”== → **shoes**. __Bẫy: gloves là thông tin cũ đã bị thay đổi.__"
      },
      {
       "answer": "100,000",
@@ -844,7 +857,7 @@
        "100000",
        "100.000"
       ],
-      "explain_vi": "'Lunch… costs 100,000 dong.' Chuyến đi thì miễn phí."
+      "explain_vi": "==“Lunch will be at a seafood restaurant… and it costs 100,000 dong.”== → **100,000**. __Chuyến đi thì miễn phí (free), đừng nhầm.__"
      }
     ]
    }
@@ -931,7 +944,7 @@
        "The judges dislike environmental projects."
       ],
       "answer": 2,
-      "explain_vi": "'Almost every school has done it. Last year, nine of the twelve projects were about trees.'"
+      "explain_vi": "Tom nói: ==“Almost every school has done it. Last year, nine of the twelve projects were about trees.”== → **Too many other schools have chosen it before.** __Đáp án diễn đạt lại “almost every school”.__"
      },
      {
       "q": "Why is Mai doubtful about the canteen idea at first?",
@@ -942,7 +955,7 @@
        "She doesn't want to work with Tom."
       ],
       "answer": 0,
-      "explain_vi": "'Remember when we asked them to stop using plastic straws? Nothing happened.'"
+      "explain_vi": "Mai nhắc: ==“Remember when we asked them to stop using plastic straws? Nothing happened.”== → **The canteen ignored an earlier request.** __“Nothing happened” nghĩa là lời đề nghị bị phớt lờ.__"
      },
      {
       "q": "How does Tom plan to persuade the canteen?",
@@ -953,7 +966,7 @@
        "By counting their plastic boxes"
       ],
       "answer": 1,
-      "explain_vi": "'This time, we'd offer them something… we could buy reusable bowls'. Đếm hộp là để đo kết quả."
+      "explain_vi": "==“This time, we'd offer them something… we could buy reusable bowls”== → **By offering them reusable bowls**. __Đếm hộp nhựa là để đo kết quả, không phải để thuyết phục – bẫy.__"
      },
      {
       "q": "What is Mai's final opinion?",
@@ -964,7 +977,7 @@
        "The canteen project is practical, but trees help the climate more over time."
       ],
       "answer": 3,
-      "explain_vi": "Mai đồng ý chọn căng tin nhưng vẫn nói 'trees do more for the climate in the long term'."
+      "explain_vi": "Mai đồng ý chọn căng tin nhưng vẫn nói ==“trees do more for the climate in the long term”== → **The canteen project is practical, but trees help the climate more over time.** __Chú ý từ Although ở cuối.__"
      },
      {
       "q": "What will Mai do next?",
@@ -975,7 +988,7 @@
        "Count the plastic boxes in the bins"
       ],
       "answer": 1,
-      "explain_vi": "'I'll email Mr Brown tonight and ask him to arrange a meeting with the canteen manager.' Tom làm bảng đếm."
+      "explain_vi": "Mai nói: ==“I'll email Mr Brown tonight and ask him to arrange a meeting with the canteen manager.”== → **Contact a teacher**. __Tom mới là người làm bảng đếm (counting sheet) – bẫy.__"
      }
     ]
    },
@@ -990,19 +1003,19 @@
       "accept": [
        "plastic"
       ],
-      "explain_vi": "Lưới đánh cá có hại, nhưng 'the biggest threat is actually plastic waste'."
+      "explain_vi": "Lưới đánh cá có hại, nhưng ==“the biggest threat is actually plastic waste”== → **plastic waste**. __Từ actually thường báo hiệu thông tin đúng sau một ý sai.__"
      },
      {
       "answer": "green",
       "accept": [],
-      "explain_vi": "'only the green turtle lays its eggs here regularly'."
+      "explain_vi": "==“only the green turtle lays its eggs here regularly”== → **green**. __seven và five là số loài, không phải tên loài.__"
      },
      {
       "answer": "450",
       "accept": [
        "four hundred and fifty"
       ],
-      "explain_vi": "Lúc đầu khoảng 200 tổ; 'Last season, that number rose to over 450.'"
+      "explain_vi": "Lúc đầu khoảng 200 tổ; ==“Last season, that number rose to over 450.”== → **450**. __Phiếu hỏi “last season” nên chọn số sau, không chọn 200.__"
      },
      {
       "answer": "females",
@@ -1010,12 +1023,12 @@
        "female",
        "female turtles"
       ],
-      "explain_vi": "'warmer sand produces more females'."
+      "explain_vi": "==“warmer sand produces more females”== → **females**. __Chép đúng dạng số nhiều như trong bài nghe.__"
      },
      {
       "answer": "swim",
       "accept": [],
-      "explain_vi": "Không cần kiến thức khoa học, 'but you must be able to swim'."
+      "explain_vi": "Không cần kiến thức khoa học, ==“but you must be able to swim”== → **swim**. __but báo hiệu điều kiện bắt buộc.__"
      }
     ]
    }

@@ -159,25 +159,29 @@
      "id": "d12A1",
      "q": "In 1928, Alexander Fleming ______ penicillin by accident when he noticed mould growing on a dish.",
      "answer": "discovered",
-     "tag": "d12v2"
+     "tag": "d12v2",
+     "explain_vi": "Có ==In 1928== → quá khứ đơn; Fleming tìm ra penicillin → **discovered**. __Thấy năm trong quá khứ thì chia động từ ở quá khứ.__"
     },
     {
      "id": "d12A2",
      "q": "The police found no ______ that the man had been in the house.",
      "answer": "evidence",
-     "tag": "d12v5"
+     "tag": "d12v5",
+     "explain_vi": "Sau ==found no== cần danh từ; cảnh sát tìm bằng chứng → **evidence**. __evidence không đếm được: no evidence, any evidence.__"
     },
     {
      "id": "d12A3",
      "q": "The scientists work in a modern ______ full of microscopes and computers.",
      "answer": "laboratory",
-     "tag": "d12v6"
+     "tag": "d12v6",
+     "explain_vi": "==full of microscopes and computers== → nơi làm việc của nhà khoa học: **laboratory** (phòng thí nghiệm). __Tìm danh từ chỉ nơi chốn hợp với ngữ cảnh.__"
     },
     {
      "id": "d12A4",
      "q": "Finding a cure for this disease would be a huge ______ in medicine.",
      "answer": "breakthrough",
-     "tag": "d12v7"
+     "tag": "d12v7",
+     "explain_vi": "Sau ==a huge== cần danh từ; tìm ra thuốc chữa bệnh là **breakthrough** (bước đột phá). __Cụm hay gặp: a breakthrough in medicine/science.__"
     },
     {
      "id": "d12A5",
@@ -186,13 +190,15 @@
      "accept": [
       "analyze"
      ],
-     "tag": "d12v8"
+     "tag": "d12v8",
+     "explain_vi": "Sau ==how to== cần động từ nguyên thể; vẽ biểu đồ để hiểu kết quả → **analyse** (phân tích). __Viết analyze (kiểu Mỹ) cũng đúng.__"
     },
     {
      "id": "d12A6",
      "q": "In this ______, we put one plant in the dark and another in the sun to see which grows better.",
      "answer": "experiment",
-     "tag": "d12v1"
+     "tag": "d12v1",
+     "explain_vi": "Sau ==In this== cần danh từ; đặt cây trong tối và ngoài nắng để so sánh → **experiment** (thí nghiệm). __Câu mô tả cách làm và so sánh kết quả thường nói về experiment.__"
     }
    ]
   },
@@ -203,19 +209,22 @@
      "id": "d12B1",
      "q": "'I like science,' said Hoa. → Hoa said that she ______ science.",
      "answer": "liked",
-     "tag": "d12g"
+     "tag": "d12g",
+     "explain_vi": "==said Hoa== ở quá khứ → lùi thì: like → **liked**; I → she. __Hiện tại đơn lùi thành quá khứ đơn.__"
     },
     {
      "id": "d12B2",
      "q": "'We are doing an experiment,' the students said. → The students said that they ______ an experiment.",
      "answer": "were doing",
-     "tag": "d12g"
+     "tag": "d12g",
+     "explain_vi": "Câu gốc ==are doing== → **were doing** (hiện tại tiếp diễn → quá khứ tiếp diễn); we → they. __Chỉ lùi động từ to be, giữ nguyên V-ing.__"
     },
     {
      "id": "d12B3",
      "q": "'I will help you,' Nam said to me. → Nam ______ me that he would help me. (say / tell)",
      "answer": "told",
-     "tag": "d12g"
+     "tag": "d12g",
+     "explain_vi": "Ngay sau chỗ trống có người nghe ==me== → **told**. __tell + người nghe; say không đi thẳng với người nghe.__"
     },
     {
      "id": "d12B4",
@@ -224,7 +233,8 @@
      "accept": [
       "could not"
      ],
-     "tag": "d12g"
+     "tag": "d12g",
+     "explain_vi": "Câu gốc ==can't== → **couldn't**; I → she. __can → could, can't → couldn't.__"
     },
     {
      "id": "d12B5",
@@ -233,7 +243,8 @@
      "accept": [
       "'d finished"
      ],
-     "tag": "d12g"
+     "tag": "d12g",
+     "explain_vi": "Câu gốc ==have finished== (hiện tại hoàn thành) → **had finished** (quá khứ hoàn thành). __have/has + V3 → had + V3.__"
     },
     {
      "id": "d12B6",
@@ -242,7 +253,8 @@
      "accept": [
       "the following day"
      ],
-     "tag": "d12g"
+     "tag": "d12g",
+     "explain_vi": "==tomorrow== trong câu tường thuật đổi thành **the next day** (hoặc the following day). __Nhớ đổi cả trạng từ thời gian: yesterday → the day before.__"
     }
    ]
   },
@@ -253,25 +265,29 @@
      "id": "d12C1",
      "q": "Marie Curie was one of the most famous ______ in history. (SCIENCE)",
      "answer": "scientists",
-     "tag": "d12w"
+     "tag": "d12w",
+     "explain_vi": "Sau ==one of the most famous== cần **danh từ số nhiều** chỉ người: science → **scientists**. __one of the + danh từ số nhiều – đừng quên -s.__"
     },
     {
      "id": "d12C2",
      "q": "The ______ of electricity changed people's lives forever. (DISCOVER)",
      "answer": "discovery",
-     "tag": "d12w"
+     "tag": "d12w",
+     "explain_vi": "Giữa ==The== và ==of== cần **danh từ**: discover → **discovery**. __Hay gặp: the discovery of, the invention of.__"
     },
     {
      "id": "d12C3",
      "q": "Please handle the glass tubes ______; they break easily. (CARE)",
      "answer": "carefully",
-     "tag": "d12w"
+     "tag": "d12w",
+     "explain_vi": "Bổ nghĩa cho động từ ==handle== cần **trạng từ**: care → careful → **carefully**. __Động từ + tân ngữ + chỗ trống → thường là trạng từ đuôi -ly.__"
     },
     {
      "id": "d12C4",
      "q": "The first test was ______, so the team had to start again. (SUCCESS)",
      "answer": "unsuccessful",
-     "tag": "d12w"
+     "tag": "d12w",
+     "explain_vi": "Có ==so the team had to start again== → lần thử đầu thất bại → tính từ phủ định **unsuccessful**. __Đọc cả câu để biết có cần nghĩa phủ định (thêm un-) không.__"
     }
    ]
   },
@@ -289,7 +305,8 @@
       "Dr Hà said I was working in the lab."
      ],
      "answer": "C",
-     "tag": "fmt:sentence_transformation"
+     "tag": "fmt:sentence_transformation",
+     "explain_vi": "==am working== → **was working**; I → she; không có người nghe nên dùng said → **C**. __A sai nghĩa (not), B sai 'told she', D sai đại từ I.__"
     },
     {
      "id": "d12D2",
@@ -301,7 +318,8 @@
       "The experiment carried out the scientists last week."
      ],
      "answer": "A",
-     "tag": "fmt:sentence_transformation"
+     "tag": "fmt:sentence_transformation",
+     "explain_vi": "Câu chủ động quá khứ đơn ==carried out== → bị động **was carried out by** → **A**. __B sai thì (is), C đổi nghĩa, D sai chủ thể.__"
     },
     {
      "id": "d12D3",
@@ -313,7 +331,8 @@
       "Linh didn't like this idea."
      ],
      "answer": "B",
-     "tag": "fmt:sentence_transformation"
+     "tag": "fmt:sentence_transformation",
+     "explain_vi": "==Nobody had thought of this idea before Linh== nghĩa là Linh nghĩ ra đầu tiên → **B. the first person to come up with this idea**. __'Không ai… trước X' tương đương 'X là người đầu tiên'.__"
     },
     {
      "id": "d12D4",
@@ -325,7 +344,8 @@
       "The researchers told us they would publish the results the following month."
      ],
      "answer": "D",
-     "tag": "fmt:sentence_transformation"
+     "tag": "fmt:sentence_transformation",
+     "explain_vi": "==will== → **would**, we → they, next month → **the following month**, có người nghe 'us' nên dùng told → **D**. __A sai 'the month before', B sai 'said us', C sai đại từ we.__"
     }
    ]
   },
@@ -340,14 +360,16 @@
      "kind": "tfng",
      "q": "Thảo collected water samples every Saturday for three months.",
      "answer": "True",
-     "tag": "d12r"
+     "tag": "d12r",
+     "explain_vi": "Bài viết ==every Saturday for three months, Thảo collected small bottles of river water== → **True**. __Bài đổi cách nói (samples, bottles of water) nhưng cùng nghĩa vẫn là True.__"
     },
     {
      "id": "d12E2",
      "kind": "tfng",
      "q": "Thảo's research won a national science prize.",
      "answer": "Not Given",
-     "tag": "d12r"
+     "tag": "d12r",
+     "explain_vi": "Bài chỉ nói ==an officer told her that her work was very useful==, không nhắc giải thưởng nào → **Not Given**. __Không tìm thấy thông tin trong bài thì chọn Not Given, đừng tự suy đoán.__"
     },
     {
      "id": "d12E3",
@@ -360,7 +382,8 @@
       "The market sold too many fish."
      ],
      "answer": "B",
-     "tag": "d12r"
+     "tag": "d12r",
+     "explain_vi": "==the water was much dirtier on days after heavy rain== → **B**. __Thời tiết nóng, chợ bán cá… không có trong bài.__"
     },
     {
      "id": "d12E4",
@@ -373,7 +396,8 @@
       "They cleaned the river every Saturday."
      ],
      "answer": "C",
-     "tag": "d12r"
+     "tag": "d12r",
+     "explain_vi": "==The council has now put new rubbish bins near the market== → **C**. __Câu hỏi có 'after': tìm câu nói việc hội đồng làm sau đó.__"
     }
    ]
   },
@@ -397,28 +421,32 @@
      "q": "Mr Bình is very s______. He always listens when we have problems and tries to understand how we feel.",
      "answer": "sympathetic",
      "from_day": 11,
-     "tag": "d11v7"
+     "tag": "d11v7",
+     "explain_vi": "Chữ gợi ý s, câu sau ==always listens ... tries to understand how we feel== → **sympathetic** (biết cảm thông). __Câu thứ hai thường giải thích nghĩa tính từ ở câu đầu.__"
     },
     {
      "id": "d12G2",
      "q": "The museum ______ we visited last Sunday was full of old cameras. (who / which)",
      "answer": "which",
      "from_day": 11,
-     "tag": "d11g"
+     "tag": "d11g",
+     "explain_vi": "==The museum== là vật → **which**. __who chỉ dùng cho người.__"
     },
     {
      "id": "d12G3",
      "q": "Wearing áo dài on special days is a t______ in Vietnam.",
      "answer": "tradition",
      "from_day": 9,
-     "tag": "d9v1"
+     "tag": "d9v1",
+     "explain_vi": "Sau ==a== cần danh từ, chữ gợi ý t; mặc áo dài ngày lễ là **tradition** (truyền thống). __Danh từ: tradition; tính từ: traditional.__"
     },
     {
      "id": "d12G4",
      "q": "You ______ bring your passport when you travel abroad. It's necessary. (should / have to / can)",
      "answer": "have to",
      "from_day": 6,
-     "tag": "d6g"
+     "tag": "d6g",
+     "explain_vi": "Có ==It's necessary== → bắt buộc → **have to**. __should chỉ là lời khuyên, can là có thể – không đủ mạnh.__"
     }
    ]
   }
@@ -436,7 +464,7 @@
     "evidence"
    ],
    "answer": 1,
-   "explain_vi": "'do research on sth' = nghiên cứu về điều gì. 'research' là danh từ không đếm được.",
+   "explain_vi": "Cụm ==doing ... on== → **do research on sth**: nghiên cứu về điều gì → **research**. __research không đếm được: không nói 'a research'.__",
    "tag": "d12v3"
   },
   {
@@ -446,7 +474,7 @@
    "q": "We need a new idea for our project. Can anyone come up ______ something?",
    "answer": "with",
    "accept": [],
-   "explain_vi": "'come up with sth' = nghĩ ra (ý tưởng, giải pháp). Phải có giới từ 'with'.",
+   "explain_vi": "**come up with sth**: nghĩ ra (ý tưởng, giải pháp) → điền **with**. Câu trước ==We need a new idea== là dấu hiệu. __Đừng quên giới từ with ở cuối cụm.__",
    "tag": "d12p2"
   },
   {
@@ -461,7 +489,7 @@
     "theory"
    ],
    "answer": 3,
-   "explain_vi": "'theory' = học thuyết, lý thuyết (lý thuyết về trọng lực).",
+   "explain_vi": "Cụm ==the ... of gravity== → **theory** (học thuyết): thuyết về trọng lực. __'breakthrough' là bước đột phá, 'evidence' là bằng chứng – không hợp nghĩa.__",
    "tag": "d12v4"
   },
   {
@@ -476,7 +504,7 @@
     "talked"
    ],
    "answer": 0,
-   "explain_vi": "Sau chỗ trống có người nghe 'me' → dùng told (tell + người). 'said' không đi trực tiếp với người.",
+   "explain_vi": "Ngay sau chỗ trống có người nghe ==me== → **told** (tell + người). __said không đi thẳng với người; phải nói said to me.__",
    "tag": "d12g"
   },
   {
@@ -491,7 +519,7 @@
     "has lived"
    ],
    "answer": 2,
-   "explain_vi": "Lùi thì: hiện tại đơn (live) → quá khứ đơn (lived).",
+   "explain_vi": "Có ==Phong said that== → lùi thì: hiện tại đơn live → **quá khứ đơn: lived**. __Động từ tường thuật ở quá khứ thì mệnh đề sau lùi một thì.__",
    "tag": "d12g"
   },
   {
@@ -501,7 +529,7 @@
    "q": "'We will visit the science museum,' they said. → They said that they ______ visit the science museum.",
    "answer": "would",
    "accept": [],
-   "explain_vi": "Lùi thì: will → would.",
+   "explain_vi": "Câu gốc có ==will== → lùi thì thành **would**. __Nhớ cặp: will → would, can → could.__",
    "tag": "d12g"
   },
   {
@@ -516,7 +544,7 @@
     "inventively"
    ],
    "answer": 1,
-   "explain_vi": "Sau 'The' và trước 'of' cần danh từ: invent → invention.",
+   "explain_vi": "Giữa ==The== và ==of== cần **danh từ**: invent → **invention**. __The + chỗ trống + of → gần như chắc chắn là danh từ.__",
    "tag": "d12w"
   },
   {
@@ -526,7 +554,7 @@
    "q": "Can you ______ these instructions? They are too difficult for young children. (SIMPLE)",
    "answer": "simplify",
    "accept": [],
-   "explain_vi": "Sau 'Can you' cần động từ: simple → simplify (làm cho đơn giản hơn).",
+   "explain_vi": "Sau ==Can you== cần **động từ**: simple → **simplify** (làm cho đơn giản hơn). __Đuôi -ify biến tính từ thành động từ.__",
    "tag": "d12w"
   },
   {
@@ -541,7 +569,7 @@
     "Tuấn said he had seen a strange light in the sky."
    ],
    "answer": 3,
-   "explain_vi": "Quá khứ đơn (saw) → quá khứ hoàn thành (had seen); I → he; dùng 'said' (không có người nghe).",
+   "explain_vi": "Câu gốc ==saw== → **had seen**; I → he; không có người nghe nên dùng **said** → đáp án D. __A sai thì, B sai 'told that', C sai đại từ I.__",
    "tag": "fmt:sentence_transformation"
   },
   {
@@ -557,7 +585,7 @@
     "off"
    ],
    "answer": 1,
-   "explain_vi": "'get on (well) with sb' = hoà hợp với ai.",
+   "explain_vi": "Cụm ==well with my cousin== → **get on well with sb** (hoà hợp với ai) → chọn **on**. __Câu ở dạng phủ định vì cô em họ hay thô lỗ.__",
    "tag": "d11p1"
   },
   {
@@ -573,7 +601,7 @@
     "a"
    ],
    "answer": 2,
-   "explain_vi": "'water' là danh từ không đếm được → dùng 'a little' (một ít). 'a few' và 'many' dùng cho danh từ đếm được.",
+   "explain_vi": "==water== là danh từ không đếm được → **a little** (một ít). __a few, many dùng với danh từ đếm được số nhiều; 'a' không đi với water.__",
    "tag": "d9g"
   },
   {
@@ -584,7 +612,7 @@
    "q": "We'll set ______ at 5 a.m. to avoid the traffic.",
    "answer": "off",
    "accept": [],
-   "explain_vi": "'set off' = khởi hành, bắt đầu chuyến đi.",
+   "explain_vi": "**set off**: khởi hành → điền **off**. Có ==at 5 a.m. to avoid the traffic== → đi sớm để tránh tắc đường. __set off thường đi với giờ giấc hoặc chuyến đi.__",
    "tag": "d6p1"
   }
  ],

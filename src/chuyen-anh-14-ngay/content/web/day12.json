@@ -10,7 +10,8 @@
       "'I like chemistry.'",
       "'My brother is a scientist.'",
       "'We don't have any evidence.'"
-     ]
+     ],
+     "rule_vi": "Câu gốc ở hiện tại đơn ==like, is, don't have== → lùi thành **quá khứ đơn**: liked, was, didn't have. __is → was, don't → didn't.__"
     },
     {
      "name": "Past continuous (was doing)",
@@ -18,7 +19,8 @@
       "'I am writing a report.'",
       "'They are carrying out tests.'",
       "'We are waiting for the results.'"
-     ]
+     ],
+     "rule_vi": "Câu gốc có ==am/are + V-ing== (hiện tại tiếp diễn) → **quá khứ tiếp diễn: was/were + V-ing**. __Chỉ đổi am/are thành was/were.__"
     },
     {
      "name": "Past perfect (had done)",
@@ -26,30 +28,36 @@
       "'I have lost my notebook.'",
       "'She discovered a new star.'",
       "'We have finished the experiment.'"
-     ]
+     ],
+     "rule_vi": "Câu gốc ==have lost, discovered, have finished== (hiện tại hoàn thành hoặc quá khứ đơn) → **quá khứ hoàn thành: had + V3**. __Quá khứ đơn cũng lùi thành had + V3.__"
     }
    ]
   },
   "unjumble": [
    {
     "sentence": "She told me that she had finished her homework.",
-    "hint_vi": "tell + người nghe + that; lùi thì sang quá khứ hoàn thành"
+    "hint_vi": "tell + người nghe + that; lùi thì sang quá khứ hoàn thành",
+    "why_vi": "**told + người nghe (me) + that + mệnh đề**; ==had finished== là quá khứ hoàn thành sau khi lùi thì. __told luôn cần người nghe ngay sau.__"
    },
    {
     "sentence": "The scientist said that the results were very surprising.",
-    "hint_vi": "said + that; are → were"
+    "hint_vi": "said + that; are → were",
+    "why_vi": "**said that + mệnh đề**: ==the results were very surprising== (are → were). __Không có người nghe nên dùng said.__"
    },
    {
     "sentence": "Nam told us that he would come up with a plan.",
-    "hint_vi": "will → would; told + us"
+    "hint_vi": "will → would; told + us",
+    "why_vi": "**told us that + mệnh đề**; ==would come up with== (will → would). __Cụm come up with giữ nguyên thứ tự 3 từ.__"
    },
    {
     "sentence": "My teacher said she was proud of our research.",
-    "hint_vi": "said (không có người nghe); có thể bỏ that"
+    "hint_vi": "said (không có người nghe); có thể bỏ that",
+    "why_vi": "**said + mệnh đề** (bỏ that được): ==she was proud of our research==. __proud of sth: tự hào về điều gì.__"
    },
    {
     "sentence": "They said they could not find any evidence.",
-    "hint_vi": "can't → could not"
+    "hint_vi": "can't → could not",
+    "why_vi": "**said + mệnh đề**: ==could not find any evidence== (can't → could not). __not đứng sau could, trước động từ.__"
    }
   ],
   "truefalse": [
@@ -57,49 +65,49 @@
     "s": "Minh said me that he had a new laptop.",
     "ok": false,
     "fix": "Minh told me that he had a new laptop.",
-    "why_vi": "say không đi thẳng với người nghe. Có 'me' thì dùng told me (hoặc said to me)."
+    "why_vi": "Có người nghe ==me== thì không dùng said → **told me** (hoặc said to me). __say không đi thẳng với người nghe.__"
    },
    {
     "s": "The teacher told us that the lab was closed.",
     "ok": true,
     "fix": "The teacher told us that the lab was closed.",
-    "why_vi": "tell + người nghe (us) + that + mệnh đề đã lùi thì (was): đúng."
+    "why_vi": "**tell + người nghe (us) + that** + mệnh đề đã lùi thì ==was closed== → câu đúng."
    },
    {
     "s": "Hoa said that she will visit the museum the following day.",
     "ok": false,
     "fix": "Hoa said that she would visit the museum the following day.",
-    "why_vi": "Câu tường thuật đã lùi thời gian (the following day) nên will → would."
+    "why_vi": "Đã đổi ==the following day== nên động từ cũng phải lùi: will → **would**. __Lùi thì và đổi trạng từ thời gian phải đi cùng nhau.__"
    },
    {
     "s": "Dr Phong said that he had discovered a new kind of plant.",
     "ok": true,
     "fix": "Dr Phong said that he had discovered a new kind of plant.",
-    "why_vi": "Lời gốc dùng quá khứ đơn (discovered) hoặc hiện tại hoàn thành → lùi thành had discovered."
+    "why_vi": "==had discovered== là **quá khứ hoàn thành**, lùi từ discovered hoặc have discovered → câu đúng. __said + quá khứ hoàn thành rất hay gặp.__"
    },
    {
     "s": "My brother told that he was doing an experiment.",
     "ok": false,
     "fix": "My brother said that he was doing an experiment.",
-    "why_vi": "tell phải có người nghe (told me/us…). Không có người nghe thì dùng said."
+    "why_vi": "==told that== thiếu người nghe; không có người nghe thì dùng **said**. __tell luôn cần người nghe: told me, told us.__"
    },
    {
     "s": "They said that they were working in the laboratory then.",
     "ok": true,
     "fix": "They said that they were working in the laboratory then.",
-    "why_vi": "are working → were working; now → then. Câu đúng."
+    "why_vi": "are working → **were working**; now → ==then== → câu đúng. __now trong câu tường thuật đổi thành then.__"
    },
    {
     "s": "'I love physics,' said Nam. → Nam said that I loved physics.",
     "ok": false,
     "fix": "'I love physics,' said Nam. → Nam said that he loved physics.",
-    "why_vi": "Phải đổi đại từ theo người nói: Nam nói 'I' → he."
+    "why_vi": "==that I loved== sai đại từ: Nam nói 'I' thì tường thuật là **he**. __Đổi đại từ theo người nói.__"
    },
    {
     "s": "'I will call you tomorrow,' Linh told me. → Linh told me that she would call me the next day.",
     "ok": true,
     "fix": "'I will call you tomorrow,' Linh told me. → Linh told me that she would call me the next day.",
-    "why_vi": "will → would; I → she; you → me; tomorrow → the next day. Đủ cả 4 thay đổi."
+    "why_vi": "will → **would**; I → she; you → me; ==tomorrow → the next day==. Đủ cả 4 thay đổi → câu đúng. __Đếm đủ 4 thay đổi trước khi chọn.__"
    }
   ]
  },
@@ -118,7 +126,7 @@
      "accept": [
       "he was reading a book about famous inventors"
      ],
-     "explain_vi": "am reading → was reading; I → he. Có thể bỏ 'that'."
+     "explain_vi": "==am reading== → **was reading**; I → he: **that he was reading a book about famous inventors**. __Có thể bỏ 'that'.__"
     },
     {
      "q": "'We will carry out the experiment next week,' the students said.",
@@ -133,7 +141,7 @@
       "that they'd carry out the experiment the next week",
       "they'd carry out the experiment the next week"
      ],
-     "explain_vi": "will → would; we → they; next week → the following week (hoặc the next week)."
+     "explain_vi": "==will== → **would**; we → they; ==next week== → **the following week** (hoặc the next week). __Nhớ đổi cả trạng từ thời gian.__"
     },
     {
      "q": "'I can't come to the science fair,' Ngọc told her teacher.",
@@ -148,7 +156,7 @@
       "she couldn't go to the science fair",
       "she could not go to the science fair"
      ],
-     "explain_vi": "can't → couldn't; I → she. Đã có người nghe (her teacher) nên dùng told."
+     "explain_vi": "==can't== → **couldn't**; I → she. Đã có người nghe ==her teacher== nên dùng told. __tell + người nghe, say không có người nghe.__"
     },
     {
      "q": "'I have analysed the water samples,' said Dr Lan.",
@@ -163,7 +171,7 @@
       "that she'd analyzed the water samples",
       "she'd analyzed the water samples"
      ],
-     "explain_vi": "Hiện tại hoàn thành (have analysed) → quá khứ hoàn thành (had analysed); I → she."
+     "explain_vi": "==have analysed== (hiện tại hoàn thành) → **had analysed** (quá khứ hoàn thành); I → she. __have/has + V3 → had + V3.__"
     },
     {
      "q": "'I found this old coin in my garden yesterday,' Grandpa said to me.",
@@ -178,7 +186,7 @@
       "that he'd found that old coin in his garden the previous day",
       "he'd found that old coin in his garden the previous day"
      ],
-     "explain_vi": "found → had found; I/my → he/his; this → that; yesterday → the day before (the previous day)."
+     "explain_vi": "==found== → **had found**; I/my → he/his; this → that; ==yesterday== → **the day before** (hoặc the previous day). __Có 4 chỗ phải đổi – em kiểm tra từng chỗ.__"
     }
    ]
   },
@@ -199,7 +207,7 @@
       "His grandmother wanted to go to the market more often."
      ],
      "answer": 2,
-     "explain_vi": "Đoạn 1: bà mắt kém, hay va vào bàn, cửa và bị ngã đau đầu gối, nên Đức quyết định giúp bà."
+     "explain_vi": "Đoạn 1: ==she often walked into tables and doors== và bị ngã đau đầu gối → **C**. __Giải thưởng (B) là chuyện xảy ra sau, không phải lý do.__"
     },
     {
      "q": "What was the problem with the first stick?",
@@ -210,7 +218,7 @@
       "It was too expensive to make."
      ],
      "answer": 1,
-     "explain_vi": "Đoạn 2: 'The stick beeped at everything, even at a sleeping cat or a leaf' – kêu cả với vật rất nhỏ."
+     "explain_vi": "==The stick beeped at everything, even at a sleeping cat or a leaf== → **B**: kêu cả với vật rất nhỏ. __A, C, D bài không nhắc.__"
     },
     {
      "q": "What did Đức's teacher tell him when the first experiment failed?",
@@ -221,7 +229,7 @@
       "He needed a bigger laboratory."
      ],
      "answer": 0,
-     "explain_vi": "Câu tường thuật: 'his teacher told him that every inventor made mistakes before a breakthrough'. breakthrough ≈ big success."
+     "explain_vi": "==his teacher told him that every inventor made mistakes before a breakthrough== → **A** (breakthrough ≈ big success). __Câu tường thuật trong bài thường chứa đáp án.__"
     },
     {
      "q": "Why did Đức make the stick vibrate instead of beeping?",
@@ -232,7 +240,7 @@
       "His grandmother felt embarrassed by the noise."
      ],
      "answer": 3,
-     "explain_vi": "Đoạn 3: bà nói tiếng bíp làm bà ngại (embarrassed) khi đi chợ, nên Đức đổi sang rung."
+     "explain_vi": "==the beeping embarrassed her when she went to the market== → **D**: bà ngại vì tiếng ồn. __A sai: bài không nói tiếng bíp quá nhỏ.__"
     },
     {
      "q": "What is the passage mainly about?",
@@ -243,7 +251,7 @@
       "Why sensors are useful in modern life"
      ],
      "answer": 1,
-     "explain_vi": "Cả bài kể về Đức và chiếc gậy cậu sáng chế cho bà. Các đáp án khác chỉ là chi tiết nhỏ hoặc không có trong bài."
+     "explain_vi": "Cả bài kể về Đức và chiếc gậy cậu làm cho ==his grandmother== → **B**. __Câu hỏi ý chính: chọn đáp án bao quát cả bài, không chọn chi tiết nhỏ.__"
     }
    ]
   }
@@ -263,7 +271,7 @@
      "accept": [
       "she liked her science teacher"
      ],
-     "explain_vi": "Hiện tại đơn (like) → quá khứ đơn (liked). I → she, my → her. Có thể bỏ 'that'."
+     "explain_vi": "==like== → **liked**; I → she, my → her: **that she liked her science teacher**. __Có thể bỏ 'that'.__"
     },
     {
      "q": "'I am drawing a rocket,' said Kiên.",
@@ -272,7 +280,7 @@
      "accept": [
       "he was drawing a rocket"
      ],
-     "explain_vi": "Hiện tại tiếp diễn (am drawing) → quá khứ tiếp diễn (was drawing). I → he."
+     "explain_vi": "==am drawing== → **was drawing**; I → he. __Hiện tại tiếp diễn lùi thành quá khứ tiếp diễn.__"
     },
     {
      "q": "'We can see the moon,' the children said.",
@@ -281,7 +289,7 @@
      "accept": [
       "they could see the moon"
      ],
-     "explain_vi": "can → could. We → they (vì người kể không ở trong nhóm các bạn nhỏ)."
+     "explain_vi": "==can== → **could**; we → they. __Đổi đại từ theo người nói: các bạn nhỏ → they.__"
     },
     {
      "q": "'My brother has a new robot,' Lan told me.",
@@ -290,7 +298,7 @@
      "accept": [
       "her brother had a new robot"
      ],
-     "explain_vi": "has → had (lùi thì). My → her (vì Lan là con gái). Đã có người nghe 'me' nên dùng told."
+     "explain_vi": "==has== → **had**; my → her (Lan là con gái). Có người nghe 'me' nên dùng **told**. __has/have lùi thành had.__"
     },
     {
      "q": "'I will help you with your maths,' Dad said to me.",
@@ -301,7 +309,7 @@
       "he would help me with my maths",
       "he'd help me with my maths"
      ],
-     "explain_vi": "will → would. I → he (bố), you → me, your → my. said to me = told me."
+     "explain_vi": "==will== → **would**; I → he, you → me, your → my: **that he would help me with my maths**. __said to me có nghĩa như told me.__"
     }
    ]
   },
@@ -322,7 +330,7 @@
       "He was afraid of the dark."
      ],
      "answer": 2,
-     "explain_vi": "Đoạn 2: 'he never drinks enough water' – Bin không bao giờ uống đủ nước, nên hay đau đầu."
+     "explain_vi": "==he never drinks enough water== → **C**; vì thế Bin hay đau đầu. __Tìm tên Bin trong bài rồi đọc các câu ngay sau.__"
     },
     {
      "q": "What does the bottle do every hour?",
@@ -333,7 +341,7 @@
       "It calls Mai's mother."
      ],
      "answer": 0,
-     "explain_vi": "Đoạn 2: mỗi giờ chiếc chai nói 'It's time to drink some water!' – nhắc Bin uống nước."
+     "explain_vi": "Mỗi giờ chai nói ==\"It's time to drink some water!\"== → **A**: nhắc Bin uống nước. __Từ khoá 'every hour' giúp em tìm đúng câu.__"
     },
     {
      "q": "How did Bin feel about the bottle at first?",
@@ -344,7 +352,7 @@
       "bored"
      ],
      "answer": 1,
-     "explain_vi": "Đoạn 3: 'At first, Bin was scared of the bottle' – lúc đầu Bin sợ chiếc chai, còn giấu nó dưới gầm giường."
+     "explain_vi": "==At first, Bin was scared of the bottle== → **scared**. __Câu hỏi có 'at first' thì tìm 'at first' trong bài.__"
     },
     {
      "q": "What did Mr Nam say about the bottle?",
@@ -355,7 +363,7 @@
       "It was simple but clever."
      ],
      "answer": 3,
-     "explain_vi": "Đoạn 4, câu tường thuật: 'Mr Nam said that it was a simple but clever invention' – đơn giản mà thông minh."
+     "explain_vi": "==Mr Nam said that it was a simple but clever invention== → **D**. __Câu tường thuật 'said that' thường chứa đáp án.__"
     },
     {
      "q": "What is the best title for the passage?",
@@ -366,7 +374,7 @@
       "How to Cook Rice"
      ],
      "answer": 1,
-     "explain_vi": "Cả bài kể về chiếc chai biết nói Mai làm cho em trai. Các tên khác không đúng nội dung bài."
+     "explain_vi": "Cả bài kể về ==a 'talking bottle'== Mai làm cho em trai → **Mai's Talking Bottle**. __Tên bài phải nói được ý chính của cả bài.__"
     }
    ]
   }
@@ -400,7 +408,7 @@
       "they'd discovered the fossils there two weeks before",
       "they'd discovered the fossils there two weeks earlier"
      ],
-     "explain_vi": "discovered → had discovered; we → they; these → those; here → there; ago → before (earlier)."
+     "explain_vi": "==discovered== → **had discovered**; we → they; these → those; here → there; ==ago== → **before** (earlier). __Có 5 chỗ phải đổi – em đếm lại cho đủ.__"
     },
     {
      "q": "'I have been analysing these samples since this morning,' said Dr Thu.",
@@ -423,7 +431,7 @@
       "she'd been analyzing those samples since that morning",
       "she'd been analyzing the samples since that morning"
      ],
-     "explain_vi": "have been analysing → had been analysing; I → she; these → those; this morning → that morning."
+     "explain_vi": "==have been analysing== → **had been analysing**; I → she; these → those; this morning → **that morning**. __this/these luôn đổi thành that/those.__"
     },
     {
      "q": "'You must wear safety glasses in the lab,' the teacher told us.",
@@ -438,7 +446,7 @@
       "we must wear safety glasses in the lab",
       "we must wear safety glasses in the laboratory"
      ],
-     "explain_vi": "must → had to (giữ nguyên must cũng được chấp nhận); you → we vì người nghe là 'us'."
+     "explain_vi": "==must== → **had to** (giữ must cũng được); you → we vì người nghe là 'us'. __Đại từ 'you' đổi theo người nghe.__"
     },
     {
      "q": "'The results of the experiment will be announced tomorrow,' the head teacher said.",
@@ -449,7 +457,7 @@
       "the results of the experiment would be announced the next day",
       "the results of the experiment would be announced the following day"
      ],
-     "explain_vi": "Bị động tương lai will be announced → would be announced; tomorrow → the next day / the following day."
+     "explain_vi": "Bị động tương lai ==will be announced== → **would be announced**; tomorrow → **the next day** (the following day). __Câu bị động vẫn lùi thì như thường.__"
     },
     {
      "q": "'I'm not going to give up until I come up with a solution,' said Nam.",
@@ -468,7 +476,7 @@
       "he was not going to give up until he had come up with a solution",
       "he was not going to give up until he'd come up with a solution"
      ],
-     "explain_vi": "am not going to → was not going to; come → came (hoặc had come); I → he. Mệnh đề sau until cũng phải lùi thì."
+     "explain_vi": "==am not going to== → **was not going to**; come → **came** (hoặc had come); I → he. __Mệnh đề sau until cũng phải lùi thì.__"
     }
    ]
   },
@@ -489,7 +497,7 @@
       "Accidental discoveries are rarely useful."
      ],
      "answer": 1,
-     "explain_vi": "'some of the most useful breakthroughs happened almost by accident' → không phải phát minh nào cũng được lên kế hoạch. A nói quá (most)."
+     "explain_vi": "==some of the most useful breakthroughs happened almost by accident== → **B**: không phải phát minh nào cũng được lên kế hoạch. __A nói quá (most) – cẩn thận từ chỉ mức độ.__"
     },
     {
      "q": "According to the passage, why did it take a long time for microwave ovens to become common in homes?",
@@ -500,7 +508,7 @@
       "Spencer refused to sell his invention."
      ],
      "answer": 2,
-     "explain_vi": "'nearly two metres tall and far too expensive for ordinary families' = quá to và quá đắt (costly). A, D bài không nhắc."
+     "explain_vi": "==nearly two metres tall and far too expensive for ordinary families== → **C** (large and costly). __A, D bài không nhắc.__"
     },
     {
      "q": "What was surprising about the glue that Spencer Silver produced?",
@@ -511,7 +519,7 @@
       "It was invented by his colleague, Art Fry."
      ],
      "answer": 2,
-     "explain_vi": "'so weak that paper ... could be removed easily without leaving a mark' – keo dính nhẹ, gỡ ra không để lại vết. A, B ngược ý bài."
+     "explain_vi": "==so weak that paper stuck with it could be removed easily without leaving a mark== → **C**. __A, B ngược ý bài; D sai vì Art Fry chỉ nghĩ ra cách dùng.__"
     },
     {
      "q": "The word 'dismissing' in the last paragraph is closest in meaning to",
@@ -522,7 +530,7 @@
       "repeating them carefully"
      ],
      "answer": 0,
-     "explain_vi": "dismiss sth as… = gạt bỏ, coi là không đáng quan tâm. Đối lập với 'paid attention to' ngay trước đó."
+     "explain_vi": "**dismiss sth as…**: gạt bỏ, coi là không đáng quan tâm → **A**. Nó đối lập với ==paid attention to== đứng trước 'rather than'. __Dùng từ đối lập trong câu để đoán nghĩa từ mới.__"
     },
     {
      "q": "What is the main point of the last paragraph?",
@@ -533,7 +541,7 @@
       "Inventors succeed when they pay attention to unexpected results."
      ],
      "answer": 3,
-     "explain_vi": "'luck alone is not enough… they paid attention to unexpected results'. A trái ý bài; B bài không nhắc; C ngược thông điệp."
+     "explain_vi": "==luck alone is not enough… they paid attention to unexpected results== → **D**. __A trái ý bài, B không nhắc, C ngược thông điệp.__"
     }
    ]
   }
@@ -546,13 +554,15 @@
     "id": "d12H1",
     "q": "The first results turned out to be ______, so the team had to repeat the whole experiment. (RELY)",
     "answer": "unreliable",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Sau ==turned out to be== cần **tính từ**; phải làm lại thí nghiệm nên kết quả không đáng tin → **unreliable**. __Thêm cả tiền tố un- và hậu tố -able.__"
    },
    {
     "id": "d12H2",
     "q": "So far, the new theory has not been tested ______; it exists only on paper. (EXPERIMENT)",
     "answer": "experimentally",
-    "accept": []
+    "accept": [],
+    "explain_vi": "Bổ nghĩa cho ==has not been tested== cần **trạng từ**: experiment → experimental → **experimentally**. __Tính từ đuôi -al thêm -ly thành trạng từ.__"
    },
    {
     "id": "d12H3",
@@ -562,7 +572,8 @@
      "that they had not found any evidence yet",
      "they hadn't found any evidence yet",
      "they had not found any evidence yet"
-    ]
+    ],
+    "explain_vi": "==haven't found== → **hadn't found**; we → they: **that they hadn't found any evidence yet**. __Có người nghe nên giữ told; yet giữ nguyên.__"
    },
    {
     "id": "d12H4",
@@ -572,7 +583,8 @@
      "come up with a cleverer solution than this one",
      "come up with such a clever solution",
      "come up with such a clever solution before"
-    ]
+    ],
+    "explain_vi": "So sánh nhất ==the cleverest ... ever== → **come up with a cleverer solution than this**. __Nobody + so sánh hơn mang nghĩa giống so sánh nhất.__"
    },
    {
     "id": "d12H5",
@@ -583,7 +595,8 @@
      "took",
      "got"
     ],
-    "answer": "B"
+    "answer": "B",
+    "explain_vi": "Cụm cố định **make a breakthrough**: tạo bước đột phá → **B. made**. Có ==After months of failure== cho thấy cuối cùng đã thành công. __Học các cụm với make: make progress, make a discovery.__"
    },
    {
     "id": "d12H6",
@@ -594,7 +607,8 @@
      "found out",
      "came out"
     ],
-    "answer": "A"
+    "answer": "A",
+    "explain_vi": "**turn out to be**: hoá ra là → **A**. Có ==seemed crazy at first, but in the end== cho thấy kết quả trái với ban đầu. __carry out là tiến hành, find out là phát hiện, come out là ra mắt.__"
    }
   ]
  },
@@ -713,7 +727,7 @@
        "Animals and food"
       ],
       "answer": 1,
-      "explain_vi": "Tom nói: \"My group is doing an experiment with plants and light.\""
+      "explain_vi": "Tom nói ==\"My group is doing an experiment with plants and light.\"== → **Plants and light**. __Xe chạy bằng mặt trời là của nhóm Mai.__"
      },
      {
       "q": "What happened to the plant in the cupboard?",
@@ -724,7 +738,7 @@
        "It became yellow and very small."
       ],
       "answer": 3,
-      "explain_vi": "Tom nói: \"the plant in the cupboard was yellow and very small.\""
+      "explain_vi": "==\"the plant in the cupboard was yellow and very small\"== → **It became yellow and very small.** __Bài nói 'two weeks', không phải 'two days' – bẫy C.__"
      },
      {
       "q": "What did Mr Brown say?",
@@ -735,7 +749,7 @@
        "The group was late with the project."
       ],
       "answer": 0,
-      "explain_vi": "Câu tường thuật: \"Mr Brown said he was very pleased with our work\" (pleased = happy)."
+      "explain_vi": "Tường thuật: ==\"Mr Brown said he was very pleased with our work\"== → **He was happy with the group's work.** __pleased gần nghĩa với happy.__"
      },
      {
       "q": "What is Mai's group making?",
@@ -746,7 +760,7 @@
        "A kite that flies in the wind"
       ],
       "answer": 2,
-      "explain_vi": "Mai nói: \"a small car that runs on solar power\" (solar power = năng lượng mặt trời)."
+      "explain_vi": "Mai: ==\"a small car that runs on solar power\"== → **A car that uses energy from the sun.** __solar power nghĩa là năng lượng mặt trời.__"
      },
      {
       "q": "Where will Mai's group test their invention tomorrow?",
@@ -757,7 +771,7 @@
        "In the playground"
       ],
       "answer": 3,
-      "explain_vi": "Mai nói: \"we're testing it in the playground at lunchtime tomorrow.\""
+      "explain_vi": "==\"we're testing it in the playground at lunchtime tomorrow\"== → **In the playground**. __Nghe kỹ từ chỉ nơi chốn sau 'testing it in'.__"
      }
     ]
    },
@@ -770,7 +784,7 @@
      {
       "answer": "Wednesday",
       "accept": [],
-      "explain_vi": "\"The club meets every Wednesday afternoon\"."
+      "explain_vi": "==\"The club meets every Wednesday afternoon\"== → **Wednesday**. __Viết hoa chữ cái đầu của thứ trong tuần.__"
      },
      {
       "answer": "laboratory",
@@ -778,19 +792,19 @@
        "the laboratory",
        "lab"
       ],
-      "explain_vi": "\"in the school laboratory\"."
+      "explain_vi": "==\"in the school laboratory\"== → **laboratory** (lab cũng được). __'library' xuất hiện sau là nơi ghi tên – bẫy.__"
      },
      {
       "answer": "air",
       "accept": [],
-      "explain_vi": "\"simple experiments with water and air\"."
+      "explain_vi": "==\"simple experiments with water and air\"== → **air**. __Ghi chú có sẵn 'water and', em chỉ cần nghe từ đi sau.__"
      },
      {
       "answer": "notebook",
       "accept": [
        "a notebook"
       ],
-      "explain_vi": "\"please bring a notebook to every meeting\"."
+      "explain_vi": "==\"please bring a notebook to every meeting\"== → **notebook**. __Ghi chú có sẵn 'a' nên chỉ viết notebook.__"
      },
      {
       "answer": "24",
@@ -798,7 +812,7 @@
        "twenty-four",
        "twenty four"
       ],
-      "explain_vi": "\"There are only 24 places\"."
+      "explain_vi": "==\"There are only 24 places\"== → **24**. __Viết bằng chữ số cho nhanh, đỡ sai chính tả.__"
      }
     ]
    }
@@ -877,7 +891,7 @@
        "The weather in the countryside"
       ],
       "answer": 1,
-      "explain_vi": "Nam nói họ \"do research on clean water\" và làm \"a cheap filter\" (máy lọc) cho các gia đình."
+      "explain_vi": "Nam: họ ==\"do research on clean water\"== và làm 'a cheap filter' → **A way to make water safer.** __Đáp án đúng diễn đạt lại ý 'clean water'.__"
      },
      {
       "q": "What did the students pour the muddy water through?",
@@ -888,7 +902,7 @@
        "Sand and stones"
       ],
       "answer": 3,
-      "explain_vi": "Nam nói \"through paper\" rồi sửa lại: \"It was through sand and small stones.\""
+      "explain_vi": "Nam nói 'through paper' rồi sửa: ==\"It was through sand and small stones.\"== → **Sand and stones**. __Cẩn thận chỗ 'sorry, that's wrong' – người nói sửa thông tin.__"
      },
      {
       "q": "What did Doctor Ha say about the water after the experiment?",
@@ -899,7 +913,7 @@
        "It should be tested in another lab."
       ],
       "answer": 0,
-      "explain_vi": "Tường thuật: \"it still wasn't safe to drink. She said we would need to boil it first.\""
+      "explain_vi": "==\"She said we would need to boil it first.\"== → **It had to be boiled before anyone drank it.** __'still wasn't safe to drink' giúp loại phương án B.__"
      },
      {
       "q": "How long has Doctor Ha's team worked on the filter?",
@@ -910,7 +924,7 @@
        "Ten years"
       ],
       "answer": 2,
-      "explain_vi": "\"her team had worked on the filter for three years\". \"A few months ago\" là lúc có bước đột phá."
+      "explain_vi": "==\"her team had worked on the filter for three years\"== → **Three years**. __'a few months ago' là lúc có đột phá – bẫy A.__"
      },
      {
       "q": "When is the chemistry test?",
@@ -921,7 +935,7 @@
        "Next Friday"
       ],
       "answer": 1,
-      "explain_vi": "Anna nói Monday rồi sửa: \"it's on Tuesday, not Monday.\""
+      "explain_vi": "Anna sửa lại: ==\"it's on Tuesday, not Monday\"== → **On Tuesday**. __Thông tin nói sau 'wait' mới là đáp án.__"
      }
     ]
    },
@@ -936,33 +950,33 @@
       "accept": [
        "an engineer"
       ],
-      "explain_vi": "\"an American engineer called Percy Spencer\"."
+      "explain_vi": "==\"an American engineer called Percy Spencer\"== → **engineer**. __Nghe danh từ chỉ nghề đứng trước tên người.__"
      },
      {
       "answer": "chocolate bar",
       "accept": [
        "chocolate"
       ],
-      "explain_vi": "\"the chocolate bar in his pocket had melted\"."
+      "explain_vi": "==\"the chocolate bar in his pocket had melted\"== → **chocolate bar**. __Ghi chú có 'a' nên viết đủ cụm chocolate bar.__"
      },
      {
       "answer": "popcorn",
       "accept": [],
-      "explain_vi": "Nhiều người nghĩ là trứng, \"but in fact, the first food he tried was popcorn\"."
+      "explain_vi": "Nhiều người nghĩ là trứng, ==\"but in fact, the first food he tried was popcorn\"== → **popcorn**. __'but in fact' báo hiệu đáp án thật.__"
      },
      {
       "answer": "340",
       "accept": [
        "three hundred and forty"
       ],
-      "explain_vi": "\"weighed about 340 kilograms\". \"Two metres\" là chiều cao."
+      "explain_vi": "==\"weighed about 340 kilograms\"== → **340**. __'two metres' là chiều cao – bẫy.__"
      },
      {
       "answer": "restaurants",
       "accept": [
        "restaurant"
       ],
-      "explain_vi": "\"at first it was mainly bought by restaurants\"."
+      "explain_vi": "==\"at first it was mainly bought by restaurants\"== → **restaurants**. __'at first' và 'mainly' trong ghi chú khớp với bài nghe.__"
      }
     ]
    }
@@ -1049,7 +1063,7 @@
        "It would take too long to finish."
       ],
       "answer": 1,
-      "explain_vi": "Linh: \"almost every school does that one. The judges must be tired of it\" (quá phổ biến)."
+      "explain_vi": "Linh: ==\"almost every school does that one. The judges must be tired of it\"== → **It is too common to impress the judges.** __Linh khen 'fun' nhưng chê vì quá phổ biến.__"
      },
      {
       "q": "What did Mr Brown say about the microscope?",
@@ -1060,7 +1074,7 @@
        "It was too old to be useful."
       ],
       "answer": 2,
-      "explain_vi": "Tường thuật: \"we could use the one in the school laboratory, as long as he was there with us.\""
+      "explain_vi": "Tường thuật: ==\"we could use the one in the school laboratory, as long as he was there with us\"== → **only if he was present**. __as long as nghĩa là miễn là.__"
      },
      {
       "q": "Why is Ben unsure about collecting samples at first?",
@@ -1071,7 +1085,7 @@
        "He already has regular sports commitments."
       ],
       "answer": 3,
-      "explain_vi": "Ben: \"I've got football training three evenings a week.\""
+      "explain_vi": "Ben: ==\"I've got football training three evenings a week\"== → **He already has regular sports commitments.** __Đáp án diễn đạt lại bằng từ khái quát hơn.__"
      },
      {
       "q": "What is Mr Brown's opinion about unexpected results?",
@@ -1082,7 +1096,7 @@
        "They only happen to beginners."
       ],
       "answer": 0,
-      "explain_vi": "\"a result we didn't expect could be just as interesting as one we did.\""
+      "explain_vi": "==\"a result we didn't expect could be just as interesting as one we did\"== → **They can be as valuable as expected ones.** __just as … as nghĩa là cũng … như.__"
      },
      {
       "q": "What can we understand about Mai?",
@@ -1093,7 +1107,7 @@
        "She will contact Nam tonight."
       ],
       "answer": 2,
-      "explain_vi": "Linh: \"she told me she'd already joined another team.\" Người nhắn tin cho Nam là Ben."
+      "explain_vi": "Linh: ==\"she told me she'd already joined another team\"== → **She is already working with another group.** __Người nhắn tin cho Nam là Ben, không phải Mai – bẫy D.__"
      }
     ]
    },
@@ -1108,26 +1122,26 @@
       "accept": [
        "a third"
       ],
-      "explain_vi": "Linh đoán \"a quarter\" nhưng khi cân thì \"it was almost a third\"."
+      "explain_vi": "Linh đoán 'a quarter' nhưng khi cân thì ==\"it was almost a third\"== → **third**. __Nghe tiếp sau 'but' để lấy con số đúng.__"
      },
      {
       "answer": "coconut fibre",
       "accept": [
        "coconut fiber"
       ],
-      "explain_vi": "Thử lá chuối, rơm, xơ dừa; \"coconut fibre kept the vegetables fresh for the longest\"."
+      "explain_vi": "Thử lá chuối, rơm, xơ dừa; ==\"coconut fibre kept the vegetables fresh for the longest\"== → **coconut fibre**. __Plastic bags bị loại từ đầu – bẫy.__"
      },
      {
       "answer": "5",
       "accept": [
        "five"
       ],
-      "explain_vi": "\"stayed fresh for 5 days, compared with just 2 days without it\"."
+      "explain_vi": "==\"stayed fresh for 5 days, compared with just 2 days without it\"== → **5**. __Số 2 là khi không bọc – bẫy.__"
      },
      {
       "answer": "evidence",
       "accept": [],
-      "explain_vi": "\"how carefully Linh had recorded her evidence\"."
+      "explain_vi": "==\"how carefully Linh had recorded her evidence\"== → **evidence**. __Ghi chú dùng lại 'recorded her', em nghe từ ngay sau.__"
      },
      {
       "answer": "used again",
@@ -1135,7 +1149,7 @@
        "reused",
        "re-used"
       ],
-      "explain_vi": "\"whether the wrappers can be washed and used again\"."
+      "explain_vi": "==\"whether the wrappers can be washed and used again\"== → **used again** (reused cũng được). __Chỗ trống 1–2 từ nên viết 'used again'.__"
      }
     ]
    }
