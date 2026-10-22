@@ -585,6 +585,27 @@ table.copt tr.cur td{font-weight:700;background:var(--agent-tint)}
 .prof .pchips span{background:var(--surface2);border-radius:999px;padding:5px 12px;font-size:.88rem}
 .prof .pchips b{font-family:var(--f-mono);color:var(--agent)}
 .verdict h4{font-size:1rem;margin-top:4px}
+/* ----- khoá buổi, popup bài đầu vào, lời nhắc của Hùng ----- */
+.day.locked{opacity:.55;border-style:dashed;cursor:not-allowed}
+.day.locked::before{content:"";position:absolute;top:-8px;right:-6px;width:20px;height:20px;border-radius:50%;background:var(--ink-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.6' stroke-linecap='round'%3E%3Crect x='6' y='11' width='12' height='9' rx='2'/%3E%3Cpath d='M9 11V8a3 3 0 0 1 6 0v3'/%3E%3C/svg%3E") center/13px no-repeat}
+.pd.lk{opacity:.5;border-style:dashed}
+body.gated main.wrap,body.gated header.top{filter:blur(5px);pointer-events:none;user-select:none}
+.gate{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:16px;background:rgba(10,40,48,.45)}
+.gate[hidden],.gate-pill[hidden]{display:none}
+.gate-card{max-width:560px;width:100%;display:flex;flex-direction:column;gap:12px;animation:gateIn .35s ease-out}
+.gate-top{display:flex;gap:14px;align-items:center}
+.gate-top h2{font-size:1.7rem}
+@keyframes gateIn{from{transform:translateY(24px) rotate(-1deg);opacity:0}to{transform:none;opacity:1}}
+.gate-pill{all:unset;box-sizing:border-box;position:fixed;right:16px;bottom:16px;z-index:40;display:flex;align-items:center;gap:10px;cursor:pointer;background:var(--gold);color:#14303A;border:3px solid #14303A;border-radius:999px;padding:6px 16px 6px 6px;box-shadow:4px 5px 0 rgba(10,40,48,.35);animation:pillPop 2.4s ease-in-out infinite}
+.gate-pill img{width:44px;height:44px;border-radius:50%;background:#fff;object-fit:cover;object-position:top}
+.gate-pill span{display:flex;flex-direction:column;line-height:1.15}.gate-pill b{font-size:.95rem}.gate-pill small{font-size:.78rem}
+.gate-pill:focus-visible{outline:3px solid var(--agent);outline-offset:3px}
+@keyframes pillPop{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.h-toast{position:fixed;left:50%;bottom:20px;z-index:60;width:min(520px,calc(100% - 32px));transform:translate(-50%,140%);transition:transform .3s ease-out;display:flex;gap:12px;align-items:flex-start;background:#FFF3B0;color:#14303A;border:3px solid #14303A;border-radius:14px;padding:12px 40px 12px 12px;box-shadow:5px 6px 0 rgba(10,40,48,.35)}
+.h-toast.on{transform:translate(-50%,0)}
+.h-toast img{width:56px;flex:none}.h-toast p{margin:2px 0 8px}.h-toast .btn{padding:6px 14px;min-height:36px}
+.h-x{all:unset;cursor:pointer;position:absolute;top:6px;right:10px;font-size:1.5rem;line-height:1;color:#14303A}
+@media (prefers-reduced-motion:reduce){.gate-card,.gate-pill{animation:none}.h-toast{transition:none}}
 /* ----- Hùng ----- */
 .hung-tag{position:absolute;left:22px;bottom:2px;z-index:2;background:#14303A;color:#fff;font-family:var(--f-hand);font-size:1.05rem;line-height:1;padding:4px 10px 5px;border-radius:6px;transform:rotate(-5deg);box-shadow:2px 3px 0 rgba(10,40,48,.25)}
 .hung-fig{margin:0;display:flex;flex-direction:column;align-items:center;gap:2px;flex:none}
@@ -664,7 +685,7 @@ function blank(){return {name:'',code:'',student:null,diag:null,final:null,days:
 let S = blank();
 try{const raw=localStorage.getItem(KEY); if(raw){S=Object.assign(blank(),JSON.parse(raw));}}catch(e){}
 function saveLocal(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
-function save(){S.savedAt=Date.now();saveLocal();scheduleSync()}
+function save(){S.savedAt=Date.now();saveLocal();scheduleSync();if(typeof updateGate==='function'&&S.diag)updateGate()}
 
 /* ---------- item index ---------- */
 const ITEM = {};
@@ -827,7 +848,42 @@ function dayStatus(n){const d=S.days[n];if(!d)return'none';if(d.web&&d.paper)ret
 /* ---------- views ---------- */
 let VIEW='start', CUR_DAY=null;
 const views={start:vStart,diag:vDiag,days:vDays,progress:vProgress,plan:vPlan,course:vCourse,school:vSchool,share:()=>cloudOn()?vShareCloud():vShare()};
-function go(v,opt){VIEW=v;M().dataset.v=v;if(opt&&opt.day)CUR_DAY=opt.day;document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.view===v?'true':'false'));views[v]();renderHello();try{window.scrollTo({top:0})}catch(e){}}
+/* ----- học theo thứ tự: buổi n chỉ mở khi đã có bài đầu vào và đã xong Kiểm tra cuối buổi của buổi n-1 ----- */
+function dayOpen(n){if(!S.diag)return false;if(n<=1)return true;const r=S.days[n-1];return !!(r&&r.web)}
+function lastOpenDay(){let k=0;for(let i=1;i<=14;i++){if(dayOpen(i))k=i;else break}return k}
+function lockMsg(n){if(!S.diag)return 'Khoan đã cậu ơi! Tụi mình làm bài đầu vào trước, rồi các buổi học mới mở được.';
+  const k=lastOpenDay();return `Buổi ${n} đang khoá. Tụi mình đi đúng lộ trình nha: xong phần Kiểm tra cuối buổi của buổi ${k} là buổi ${k+1} tự mở.`}
+let TOAST_T=null;
+function hungToast(msg,act){let el=document.getElementById('hToast');if(!el){el=document.createElement('div');el.id='hToast';el.className='h-toast';el.setAttribute('role','status');document.body.appendChild(el)}
+  el.innerHTML=`<img src="${HUNG()}" alt="Hùng"><div><b>Hùng nhắc nè</b><p>${esc(msg)}</p>${act?`<button class="btn hi" type="button" id="hToastGo">${esc(act.label)}</button>`:''}</div><button class="h-x" type="button" aria-label="Đóng">×</button>`;
+  el.classList.add('on');const close=()=>el.classList.remove('on');el.querySelector('.h-x').onclick=close;const g=document.getElementById('hToastGo');if(g)g.onclick=()=>{close();act.go()};
+  clearTimeout(TOAST_T);TOAST_T=setTimeout(close,7000)}
+function lockedDayAct(){return S.diag?{label:'Về buổi '+lastOpenDay(),go:()=>{CUR_DAY=lastOpenDay();go('days',{day:lastOpenDay()})}}:{label:'Làm bài đầu vào',go:()=>go('diag')}}
+/* ----- cửa vào: chưa làm bài đầu vào thì popup che trang; thu nhỏ được thành nút ở góc, không tắt hẳn ----- */
+let GATE_MIN=false;
+function updateGate(){
+  let g=document.getElementById('gate'),pill=document.getElementById('gatePill');
+  if(S.diag){if(g)g.remove();if(pill)pill.remove();document.body.classList.remove('gated');return}
+  if(!g){g=document.createElement('div');g.id='gate';g.className='gate';g.setAttribute('role','dialog');g.setAttribute('aria-modal','true');g.setAttribute('aria-labelledby','gateT');
+    g.innerHTML=`<div class="gate-card paper tape"><div class="gate-top">${hungFig()}<div><p class="eyebrow">Việc đầu tiên</p><h2 id="gateT">Làm bài đầu vào đã nha!</h2></div></div>
+      <p>Tớ là Hùng, Hùng trong "Hùng dũng", chứ không phải Hùng trong "Hùng hổ" nhé. Trước khi đi tiếp, tớ cần biết cậu đang ở level nào: 30 câu, khoảng 25 phút, cứ làm bằng sức mình, câu nào chưa biết thì bỏ qua.</p>
+      <p class="small muted">Làm xong là mở khoá buổi 1, lộ trình riêng của cậu và gợi ý trường. Trước đó cậu vẫn xem được bản đồ lộ trình, nhưng chưa mở được buổi học nào.</p>
+      <div class="row"><button class="btn hi big" type="button" id="gateGo">Làm bài đầu vào (25 phút)</button><button class="btn ghost" type="button" id="gateMin">Thu nhỏ, xem bản đồ trước</button></div></div>`;
+    document.body.appendChild(g);
+    g.querySelector('#gateGo').onclick=()=>go('diag');g.querySelector('#gateMin').onclick=()=>{GATE_MIN=true;updateGate()}}
+  if(!pill){pill=document.createElement('button');pill.id='gatePill';pill.type='button';pill.className='gate-pill';
+    pill.innerHTML=`<img src="${HUNG()}" alt=""><span><b>Bài đầu vào: chưa làm</b><small>Bấm để mở lại</small></span>`;
+    pill.onclick=()=>{GATE_MIN=false;updateGate()};document.body.appendChild(pill)}
+  const onDiag=VIEW==='diag';
+  const open=!GATE_MIN&&!onDiag;
+  g.hidden=!open;pill.hidden=open||onDiag;document.body.classList.toggle('gated',open);
+  if(open){const b=g.querySelector('#gateGo');try{b.focus({preventScroll:true})}catch(e){}}
+}
+function go(v,opt){
+  if(v==='days'){const d=(opt&&opt.day)||CUR_DAY||nextDay();
+    if(!dayOpen(d)&&(S.diag||(opt&&opt.day))){hungToast(lockMsg(d),lockedDayAct());return}}
+  if(v==='diag')GATE_MIN=true;
+  VIEW=v;M().dataset.v=v;if(opt&&opt.day)CUR_DAY=opt.day;document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.view===v?'true':'false'));views[v]();renderHello();updateGate();try{window.scrollTo({top:0})}catch(e){}}
 document.getElementById('tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(b)go(b.dataset.view)});
 function renderHello(){$('#hello').innerHTML=(S.name?`Chào <strong>${esc(S.name)}</strong>`:'')+(typeof syncLabel==='function'?syncLabel():'')}
 const M=()=>$('#main');
@@ -893,7 +949,7 @@ function dashHTML(nd){
   const sk=streakDays(),stars=starsTotal(),left=Math.max(0,Math.ceil((examDateFor(gradeNow())-Date.now())/864e5));
   const L=S.diag&&LEVELS.find(l=>l.k===S.diag.level),t=curTrack();
   const doneDays=DAYS.filter(x=>dayStatus(x.day)==='done').length;
-  const dots=DAYS.map(x=>{const st=dayStatus(x.day);return `<button type="button" class="pd ${st} ${x.type==='review'?'rev':''} ${x.day===nd?'cur':''}" data-d="${x.day}" aria-label="Buổi ${x.day}: ${esc(x.theme_vi)}${st==='done'?', đã xong':st==='part'?', đang làm dở':''}${x.day===nd?', buổi tiếp theo':''}">${x.day}</button>`}).join('');
+  const dots=DAYS.map(x=>{const st=dayStatus(x.day);return `<button type="button" class="pd ${st} ${x.type==='review'?'rev':''} ${x.day===nd&&dayOpen(x.day)?'cur':''} ${dayOpen(x.day)?'':'lk'}" data-d="${x.day}" aria-label="Buổi ${x.day}: ${esc(x.theme_vi)}${st==='done'?', đã xong':st==='part'?', đang làm dở':''}${x.day===nd?', buổi tiếp theo':''}">${x.day}</button>`}).join('');
   return `<div class="dash">
   <div class="dash-head"><h1>Chuyên Anh 14 ngày</h1>
     <span class="chip"><svg viewBox="0 0 24 24" class="flame ${sk?'on':''}" aria-hidden="true"><path d="M12 3c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-9Z" fill="${sk?'#FFD23F':'none'}" stroke="#E2560F" stroke-width="2.2" stroke-linejoin="round"/></svg>${sk?`${sk} ngày học liên tiếp`:'Học hôm nay để bắt đầu chuỗi ngày'}</span>
@@ -1006,10 +1062,11 @@ function dueQueue(day){
   return Object.entries(S.queue).filter(([id,q])=>q.due<=day&&ITEM[id]&&ITEM[id].day<day).sort((a,b)=>a[1].due-b[1].due).slice(0,4).map(([id])=>id);
 }
 function vDays(){
-  const d=CUR_DAY||nextDay();CUR_DAY=d;
-  const strip=DAYS.map(x=>{const st=dayStatus(x.day);return `<button class="day ${st==='done'?'done':st==='part'?'part':''} ${x.type==='review'?'review':''}" data-d="${x.day}" aria-pressed="${x.day===d}">${dayIcon(x.day,'di',34)}<b>${x.day}</b><small>${esc(x.theme_vi)}</small></button>`}).join('');
+  let d=CUR_DAY||nextDay();if(S.diag&&!dayOpen(d))d=Math.max(1,lastOpenDay());CUR_DAY=d;
+  const strip=DAYS.map(x=>{const st=dayStatus(x.day);return `<button class="day ${st==='done'?'done':st==='part'?'part':''} ${x.type==='review'?'review':''} ${dayOpen(x.day)?'':'locked'}" data-d="${x.day}" aria-pressed="${x.day===d&&dayOpen(x.day)}" ${dayOpen(x.day)?'':'aria-disabled="true"'}>${dayIcon(x.day,'di',34)}<b>${x.day}</b><small>${esc(x.theme_vi)}</small></button>`}).join('');
   M().innerHTML=`<section class="view"><div class="days" id="dayStrip">${strip}</div><div id="dayBody"></div></section>`;
-  $('#dayStrip').onclick=e=>{const b=e.target.closest('.day');if(b){CUR_DAY=+b.dataset.d;vDays()}};
+  $('#dayStrip').onclick=e=>{const b=e.target.closest('.day');if(!b)return;const n=+b.dataset.d;if(!dayOpen(n)){hungToast(lockMsg(n),lockedDayAct());return}CUR_DAY=n;vDays()};
+  if(!S.diag){$('#dayBody').innerHTML=`<div class="card lockbox">${doodle('lock','lk',56)}<div><p class="eyebrow">Còn khoá</p><h3>14 buổi đang chờ cậu</h3><p>Cậu xem trước được tên và chủ đề từng buổi ở trên. Làm bài đầu vào xong là buổi 1 mở, sau đó mỗi buổi mở khi cậu xong buổi trước. Đi đúng thứ tự thì vòng ôn xoắn ốc mới chạy chuẩn được.</p><div class="row"><button class="btn hi" id="dDiag">Làm bài đầu vào</button></div></div></div>`;$('#dDiag').onclick=()=>go('diag');return}
   renderDay(d);
 }
 
