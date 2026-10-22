@@ -28,6 +28,14 @@ media_vi = json.load(open(mv, encoding="utf-8")) if mv.exists() else {}
 au = repo / "chuyen-anh-14-ngay" / "audio" / "manifest.json"
 audio = json.load(open(au, encoding="utf-8")) if au.exists() else None
 C = {"days": days, "tests": tests, "web": web, "media": media, "media_vi": media_vi, "media_listen": media_listen}
+# bài nghe thu âm thật (YouTube nhúng) + câu hỏi riêng theo mức: content/web/real_listen_<mức>.json
+real_listen = {}
+for tr in ("nen", "chuan", "nang"):
+    f = here / f"content/web/real_listen_{tr}.json"
+    if f.exists():
+        real_listen[tr] = json.load(open(f, encoding="utf-8"))
+if real_listen:
+    C["real_listen"] = real_listen
 if audio:
     C["audio"] = audio
 blob = json.dumps(C, ensure_ascii=False).replace("</", "<\\/")

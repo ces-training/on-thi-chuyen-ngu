@@ -504,6 +504,23 @@ nav.tabs button[aria-selected="true"] .dd .dd-f.dd-t{fill:#FFD23F}
 .stat .si{color:var(--ink)}
 @media (max-width:520px){.days{gap:10px 6px}.day .di{width:26px;height:26px}.day b{font-size:1.1rem}}
 
+
+/* nghe bản ghi thật */
+.yl{display:flex;flex-direction:column;gap:10px;background:var(--surface2);border-radius:14px;padding:16px}
+.yl-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px}
+.yl-head b{font-family:var(--f-display);font-size:1.15rem}
+.yl-tag{background:var(--gold);color:#3D2E00;font-weight:800;font-size:.7rem;letter-spacing:.06em;padding:2px 8px;border-radius:4px;transform:rotate(-3deg)}
+.yl-stage{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.yl-frame{position:relative;width:min(100%,420px);aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#14303A}
+.yl-frame iframe,.yl-frame #ylPlayer{position:absolute;inset:0;width:100%;height:100%}
+.yl-cover{position:absolute;inset:0;display:grid;place-items:center;background:#1F6F80}
+.yl-ctl{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.yl-q{display:flex;flex-direction:column;gap:14px;margin-top:4px}
+.yl-fb{border-radius:10px;padding:8px 12px;font-size:.94rem}
+.yl-fb.good{background:var(--good-bg)}.yl-fb.bad{background:var(--bad-bg)}
+.yl-q input.ok{border-color:var(--good-edge);background:var(--good-bg)}.yl-q input.bad{border-color:var(--bad);background:var(--bad-bg)}
+.yl .opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+details.ls-real summary{cursor:pointer}
 /* châm ngôn + chú thích vẽ tay */
 .dash{grid-template-areas:"head head" "motto motto" "quest side" "path more"}
 .motto{grid-area:motto;position:relative;display:flex;align-items:center;gap:14px;background:#FFF3B0;color:#14303A;border-radius:4px;padding:12px 56px 12px 112px;min-height:96px;transform:rotate(-.8deg);box-shadow:4px 6px 0 rgba(10,40,48,.22);max-width:760px}
@@ -725,7 +742,7 @@ const Q_STEPS=[
   {k:'check',card:'checkCard',label:'Kiểm tra cuối buổi',peep:'an',c:'#BFE6EE'}];
 function questState(n){const r=S.days[n]||{};const W=(C.web&&C.web[n])||{};
   const g=Object.keys(r.games||{}).length,gt=gamesForDay(n).length,x=Object.keys(r.exam||{}).length,xt=examFor(n).length;
-  const real=((((C.media_listen||{})[n])||{})[curTrack()]||[]).length,lsN=(W.listening?2:0)+(real?1:0),l=Object.keys(r.listen||{}).length;
+  const real=((((C.media_listen||{})[n])||{})[curTrack()]||[]).length,yt=(((C.real_listen||{})[curTrack()])||{})[n],lsN=(W.listening?2:0)+(real||yt?1:0),l=Object.keys(r.listen||{}).length;
   let up=false;try{up=typeof CLOUD!=='undefined'&&!!CLOUD&&(CLOUD.uploads||[]).some(u=>u.day===n)}catch(e){}
   return {vid:{done:!!r.video||g>0},game:{done:gt>0&&g>=gt,part:g>0,txt:`${g}/${gt}`},exam:xt?{done:x>=xt,part:x>0,txt:`${x}/${xt}`}:null,
     ls:lsN?{done:l>=Math.min(2,lsN),part:l>0,txt:`${l}/${Math.min(2,lsN)}`}:null,pdf:{done:!!r.paper||up},check:{done:!!r.web}}}
@@ -894,6 +911,45 @@ function vDays(){
   $('#dayStrip').onclick=e=>{const b=e.target.closest('.day');if(b){CUR_DAY=+b.dataset.d;vDays()}};
   renderDay(d);
 }
+
+/* ----- nghe bản ghi thật trên YouTube: nghe tối đa 2 lần, 5 câu theo format đề Sở, chấm và giải thích ----- */
+let YT_P=null;function ytApi(){if(window.YT&&window.YT.Player)return Promise.resolve(window.YT);if(YT_P)return YT_P;
+  YT_P=new Promise((res,rej)=>{const prev=window.onYouTubeIframeAPIReady;window.onYouTubeIframeAPIReady=()=>{if(prev)try{prev()}catch(e){}res(window.YT)};const sc=document.createElement('script');sc.src='https://www.youtube.com/iframe_api';sc.onerror=()=>{YT_P=null;rej(new Error('yt'))};document.head.appendChild(sc)});return YT_P}
+const normAns=t=>String(t==null?'':t).toLowerCase().replace(/[’']/g,"'").replace(/[^a-z0-9'\s-]/g,' ').replace(/\s+/g,' ').trim();
+function renderYtListen(box,R,saved,onDone){
+  const mmss=x=>Math.floor(x/60)+':'+String(Math.round(x%60)).padStart(2,'0');
+  const len=R.end&&R.end>R.start?R.end-(R.start||0):0;
+  let plays=0,player=null,graded=!!saved;
+  box.innerHTML=`<div class="yl-head"><span class="yl-tag">BẢN GHI THẬT</span><b>${esc(R.title)}</b><span class="small muted">${esc(R.channel||'')} · mức ${esc(R.level||'')}${len?' · khoảng '+mmss(len):''}</span></div>
+   <p>${esc(R.intro_vi||'')}</p>
+   <p class="small muted">Đọc câu hỏi trước, rồi bấm nghe. Em được nghe <b>2 lần</b> như đi thi; chấm xong thì nghe lại thoải mái.</p>
+   <div class="yl-stage"><div class="yl-frame"><div id="ylPlayer"></div><div class="yl-cover"><svg viewBox="0 0 48 48" width="58" height="58" aria-hidden="true"><path d="M8 27h7v12H8zM33 27h7v12h-7z" fill="#FFD23F" transform="translate(2.6 2.6)"/><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 29v-4.2C9.5 16.4 16 9.6 24 9.6s14.5 6.8 14.5 15.2V29"/><path d="M8.2 27.6c2.4-.4 4.8-.3 7.2.2.4 3.8.4 7.6 0 11.4-2.4.4-4.8.4-7.2 0-.4-3.9-.4-7.7 0-11.6Z"/><path d="M32.6 27.8c2.4-.5 4.8-.6 7.2-.2.4 3.9.4 7.7 0 11.6-2.4.4-4.8.4-7.2 0-.4-3.8-.4-7.6 0-11.4Z"/></g></svg></div></div>
+     <div class="yl-ctl"><button type="button" class="btn hi" id="ylPlay">▶ Nghe lần 1</button><span class="small muted" id="ylMsg"></span></div></div>
+   <form class="yl-q" id="ylForm">${R.items.map((it,i)=>`<div class="q" data-i="${i}"><div class="qhead"><span class="qnum">${i+1}</span><span class="qtext">${esc(it.q)}</span></div>
+     ${it.type==='mcq'?`<div class="opts">${it.options.map((o,j)=>[Math.random(),j]).sort((a,b)=>a[0]-b[0]).map(([,j])=>`<label class="opt"><input type="radio" name="yl${i}" value="${j}"><span>${esc(it.options[j])}</span></label>`).join('')}</div>`:`<input type="text" name="yl${i}" autocomplete="off" spellcheck="false" placeholder="Viết 1–2 từ hoặc số em nghe được" style="max-width:340px">`}
+     <div class="yl-fb" hidden></div></div>`).join('')}
+     <div class="row"><button class="btn" type="submit" id="ylSubmit">Chấm bài nghe</button><span class="small muted" id="ylRes"></span></div></form>
+   ${R.transcript_url?`<p class="small muted">Lời thoại và bài gốc: <a href="${esc(R.transcript_url)}" target="_blank" rel="noopener">mở trang nguồn</a>${R.source_url&&R.source_url!==R.transcript_url?` · <a href="${esc(R.source_url)}" target="_blank" rel="noopener">trang video</a>`:''}</p>`:''}`;
+  const btn=box.querySelector('#ylPlay'),msg=box.querySelector('#ylMsg'),form=box.querySelector('#ylForm');
+  const label=()=>{if(graded){btn.textContent='▶ Nghe lại';btn.disabled=false;return}btn.textContent=plays===0?'▶ Nghe lần 1':plays===1?'▶ Nghe lần 2':'Đã nghe 2 lần';btn.disabled=plays>=2};
+  form.addEventListener('change',e=>{const o=e.target.closest('.opt');if(o){o.parentElement.querySelectorAll('.opt').forEach(x=>x.classList.toggle('sel',x.querySelector('input').checked))}});
+  const start=()=>{box.querySelector('.yl-cover').hidden=true;if(player&&player.seekTo){player.seekTo(R.start||0,true);player.playVideo();return}
+    msg.textContent='Đang tải…';ytApi().then(YT=>{player=new YT.Player(box.querySelector('#ylPlayer'),{videoId:R.yt,playerVars:{start:R.start||0,end:R.end||undefined,autoplay:1,controls:graded?1:0,rel:0,modestbranding:1,playsinline:1,disablekb:graded?0:1,cc_load_policy:0},
+      events:{onReady:ev=>{msg.textContent='';ev.target.playVideo()},onStateChange:ev=>{if(ev.data===1){msg.textContent='Đang phát…'}if(ev.data===0){if(!graded){plays++;}msg.textContent=graded?'':plays>=2?'Hết lượt nghe. Làm nốt rồi chấm bài nhé.':'Xong lần 1. Kiểm tra lại đáp án rồi nghe lần 2.';label()}},
+        onError:()=>{msg.innerHTML=`Video không phát được ở đây. <a href="https://www.youtube.com/watch?v=${encodeURIComponent(R.yt)}&t=${R.start||0}s" target="_blank" rel="noopener">Mở trên YouTube</a>`}}})}).catch(()=>{msg.innerHTML=`Không tải được trình phát. <a href="https://www.youtube.com/watch?v=${encodeURIComponent(R.yt)}&t=${R.start||0}s" target="_blank" rel="noopener">Mở trên YouTube</a>`})};
+  btn.onclick=()=>{if(!graded&&plays>=2)return;start()};
+  const show=(ans)=>{let c=0;R.items.forEach((it,i)=>{const q=form.querySelector(`.q[data-i="${i}"]`);const v=ans[i];let ok;
+      if(it.type==='mcq'){ok=+v===it.answer;q.querySelectorAll('.opt').forEach((o,j)=>{const inp=o.querySelector('input');inp.disabled=true;if(+inp.value===+v)inp.checked=true;o.classList.toggle('sel',+inp.value===+v);if(+inp.value===it.answer)o.classList.add('right');else if(+inp.value===+v)o.classList.add('wrong')})}
+      else{const inp=q.querySelector('input');inp.value=v||'';inp.disabled=true;const a=[it.answer].concat(it.accept||[]).map(normAns);ok=a.includes(normAns(v));inp.classList.add(ok?'ok':'bad')}
+      if(ok)c++;const fb=q.querySelector('.yl-fb');fb.hidden=false;fb.className='yl-fb '+(ok?'good':'bad');fb.innerHTML=`<b>${ok?'Đúng rồi.':'Chưa đúng.'}</b> ${it.type==='mcq'?'':`Đáp án: <b>${esc(it.answer)}</b>. `}${fmtVi(it.explain_vi||'')}`});
+    const sb=form.querySelector('#ylSubmit');sb.disabled=true;sb.style.display='none';form.querySelector('#ylRes').innerHTML=`Em đúng <b>${c}/${R.items.length}</b> câu.`;return c};
+  form.onsubmit=e=>{e.preventDefault();if(graded)return;const ans=R.items.map((it,i)=>{if(it.type==='mcq'){const r=form.querySelector(`input[name="yl${i}"]:checked`);return r?+r.value:null}return form.querySelector(`input[name="yl${i}"]`).value.trim()});
+    if(ans.some(a=>a==null||a==='')&&!form.dataset.w){form.dataset.w=1;form.querySelector('#ylRes').textContent='Còn câu trống. Bấm Chấm lần nữa để chấm luôn.';return}
+    graded=true;const c=show(ans);label();msg.textContent='';onDone&&onDone({correct:c,total:R.items.length,answers:ans});
+    if(player&&player.destroy){try{player.destroy()}catch(e){}player=null;box.querySelector('.yl-frame').insertAdjacentHTML('afterbegin','<div id="ylPlayer"></div>');const pl=box.querySelectorAll('#ylPlayer');if(pl.length>1)pl[1].remove();box.querySelector('.yl-cover').hidden=false}};
+  if(saved){show(saved.answers||[]);graded=true}
+  label();
+}
 /* ----- học trên web: video, game, dạng bài thi, iSLCollective, bài giấy PDF ----- */
 const pad2=n=>String(n).padStart(2,'0');
 function gPill(n){const g=(S.days[n]||{}).games||{};const k=Object.keys(g).length;const t=gamesForDay(n).length;return `<span class="pill ${k>=t?'good':''}">${k>=t?'✓ ':''}Game ${k}/${t}</span>`}
@@ -912,11 +968,13 @@ function learnHTML(n){const D=DAYS[n-1];const W=(C.web&&C.web[n])||{};const MD=(
   if(ex.length)h+=`<div class="card" id="examCard"><h3 class="ih">${em('bullseye')}Bước 3 · Làm quen dạng bài thi thật</h3><div class="x-tabs">${ex.map((b,i)=>{const r=xs[b.format];return `<button type="button" class="x-tab" data-x="${i}" aria-selected="${i===0}">${esc(X_FMT[b.format]||b.format)}${r?` <span class="pill ${r.correct/r.total>=.6?'good':'warn'}">${r.correct}/${r.total}</span>`:''}</button>`}).join('')}</div><div id="examBox"></div></div>`;
   const LS=((C.web&&C.web[n])||{}).listening;const ls=LS&&(LS[tr]||LS.chuan);
   const real=(((C.media_listen||{})[n]||{})[tr])||[];const rl=(rec.listen||{}).real;
-  if(ls||real.length)h+=`<div class="card" id="lsCard"><h3 class="ih">${em('television')}Bước 4 · Luyện nghe (khuôn phần nghe đề Sở)</h3>
-    ${real.length?`<div class="ls-real"><h3>🎧 Nghe bài thu âm thật</h3><p class="small muted">Giọng người bản xứ, mức ${esc(real[0].level||'')} theo chuẩn Cambridge, cùng chủ đề với buổi học. Mở ở tab mới, làm bài trên trang đó, rồi ghi lại số câu đúng để cô theo dõi.</p>
+  const RL=(((C.real_listen||{})[tr])||{})[n];learnHTML.rl=RL;
+  if(ls||real.length||RL)h+=`<div class="card" id="lsCard"><h3 class="ih">${em('television')}Bước 4 · Luyện nghe (khuôn phần nghe đề Sở)</h3>
+    ${RL?`<div class="yl" id="ylBox"></div>`:''}
+    ${real.length?`<details class="ls-real"${RL?'':' open'}><summary><b>${RL?'Thêm bài nghe thật ở trang khác':'Nghe bài thu âm thật'}</b></summary><p class="small muted">Giọng người bản xứ, mức ${esc(real[0].level||'')} theo chuẩn Cambridge, cùng chủ đề với buổi học. Mở ở tab mới, làm bài trên trang đó, rồi ghi lại số câu đúng để cô theo dõi.</p>
       <ul class="isl">${real.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> <span class="pill">${esc(x.source||'')}${x.level?' · '+esc(x.level):''}</span>${x.format_vi?` <span class="pill">${esc(x.format_vi)}</span>`:''}${x.note_vi?`<br><span class="small muted">${esc(x.note_vi)}</span>`:''}</li>`).join('')}</ul>
-      <div class="row small">Em đúng <input type="number" min="0" max="99" id="rlC" class="rl-in" value="${rl?rl.correct:''}" aria-label="Số câu đúng"> / <input type="number" min="1" max="99" id="rlT" class="rl-in" value="${rl?rl.total:''}" aria-label="Tổng số câu"> câu <button type="button" class="btn ghost" id="rlSave">Lưu</button><span id="rlMsg" class="muted">${rl?'Đã lưu':''}</span></div></div>`:''}
-    ${ls?`<h3 style="margin-top:6px">🗣 Bài nghe luyện trên trang (máy đọc, chấm ngay)</h3><div id="lsBox"></div>`:''}</div>`;
+      <div class="row small">Em đúng <input type="number" min="0" max="99" id="rlC" class="rl-in" value="${rl?rl.correct:''}" aria-label="Số câu đúng"> / <input type="number" min="1" max="99" id="rlT" class="rl-in" value="${rl?rl.total:''}" aria-label="Tổng số câu"> câu <button type="button" class="btn ghost" id="rlSave">Lưu</button><span id="rlMsg" class="muted">${rl?'Đã lưu':''}</span></div></details>`:''}
+    ${ls?`<h3 style="margin-top:6px">${RL?'Luyện thêm theo đúng 2 dạng nghe của đề Sở (máy đọc, chấm ngay)':'Bài nghe luyện trên trang (máy đọc, chấm ngay)'}</h3><div id="lsBox"></div>`:''}</div>`;
   learnHTML.ls=ls;
   if(MD.isl&&MD.isl.length)h+=`<div class="card"><h3 class="ih">${em('rocket')}Chơi thêm trên iSLCollective</h3><p class="small muted">Bài tương tác cùng chủ điểm trên trang iSLCollective (mở tab mới, không bắt buộc).</p><ul class="isl">${MD.isl.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> <span class="pill">${x.kind==='video'?'Video tương tác':x.kind==='game'?'Game':'Bài tập online'}</span>${x.note_vi?`<br><span class="small muted">${esc(x.note_vi)}</span>`:''}</li>`).join('')}</ul></div>`;
   const pf=t=>`pdf/buoi-${pad2(n)}${t==='chuan'?'':'-'+t}.pdf`;const others=Object.keys(TRACKS).filter(t=>t!==tr);
@@ -940,6 +998,7 @@ function wireLearn(n){
         const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')})};
     $('#examCard .x-tabs').onclick=e=>{const b=e.target.closest('.x-tab');if(b)openX(+b.dataset.x)};openX(0)}
   const rs=$('#rlSave');if(rs)rs.onclick=()=>{const c=parseInt($('#rlC').value,10),t=parseInt($('#rlT').value,10);if(!(t>0)||!(c>=0)||c>t){$('#rlMsg').textContent='Ghi số câu đúng và tổng số câu nhé.';return}const rec=S.days[n]=S.days[n]||{};rec.listen=rec.listen||{};rec.listen.real={correct:c,total:t,at:Date.now()};save();$('#rlMsg').textContent='Đã lưu ✓';const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')};
+  const yb=$('#ylBox');if(yb&&learnHTML.rl)renderYtListen(yb,learnHTML.rl,((S.days[n]||{}).listen||{}).yt,r=>{const rec=S.days[n]=S.days[n]||{};rec.listen=rec.listen||{};rec.listen.yt={correct:r.correct,total:r.total,answers:r.answers,at:Date.now()};save();});
   const lb=$('#lsBox');if(lb&&learnHTML.ls)renderListening(lb,learnHTML.ls,curTrack(),null,(key,r)=>{const rec=S.days[n]=S.days[n]||{};rec.listen=rec.listen||{};rec.listen[key]={correct:r.correct,total:r.total,at:Date.now()};save();
     const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')});
 }
