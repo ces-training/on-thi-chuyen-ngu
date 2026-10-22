@@ -1,0 +1,24 @@
+{
+  "_ghi_chu": "Giọng đọc cho gen_audio.py. Tên giọng là 30 giọng có sẵn của Gemini TTS (Kore, Puck, Leda...). Muốn giọng Anh-Anh thật sự: chạy  python3 tools/gemini/gen_audio.py --list-voices  rồi dán id giọng vào đây; giọng không thuộc 30 giọng có sẵn sẽ được đọc từng lượt lời rồi ghép lại (cùng giá).",
+  "model": "gemini-3.8-flash-tts",
+  "by_name": {
+    "Linh": "Leda",
+    "Mai": "Laomedeia",
+    "Anna": "Autonoe",
+    "Tom": "Puck",
+    "Nam": "Achird",
+    "Ben": "Fenrir",
+    "Grandpa": "Algenib",
+    "Dad": "Charon",
+    "Mr Brown": "Iapetus"
+  },
+  "default": {"female": "Leda", "male": "Puck"},
+  "narrator": {"female": "Erinome", "male": "Iapetus"},
+  "narrator_gender": {"10/nang": "male", "11/nen": "female"},
+  "style": {
+    "nen": "Clear British English exam recording. Speak slowly and clearly, with short pauses between sentences.",
+    "chuan": "Clear British English exam recording at a normal, natural pace.",
+    "nang": "Natural British English at a natural conversational pace, like a real exam recording."
+  },
+  "pause_between_turns": {"nen": 0.5, "chuan": 0.4, "nang": 0.3}
+}
