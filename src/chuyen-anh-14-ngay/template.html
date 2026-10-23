@@ -108,6 +108,10 @@ td,th{white-space:nowrap}
 .thumbs{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.thumbs img{width:84px;height:110px;object-fit:cover;border-radius:8px;border:2px solid var(--line)}
 .ai-res{border:2px solid var(--line);border-radius:12px;padding:14px;margin-top:12px;display:flex;flex-direction:column;gap:8px}
 .ai-res h4{margin:6px 0 0;font-size:1rem;font-family:var(--f-display)}
+.w-box{border-top:2px dashed var(--line);padding-top:10px;display:flex;flex-direction:column;gap:8px}
+.w-box textarea{font:inherit;line-height:1.55;padding:10px;border:2px solid var(--line-strong);border-radius:10px;background:var(--surface)}
+.w-detail{border:2px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px}
+.w-offer.card{margin:0}
 .ai-list{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 .ai-item{border-left:5px solid var(--line-strong);padding:8px 12px;background:var(--surface2);border-radius:8px}
 .ai-item.bad{border-left-color:var(--bad)}.ai-item.unk{border-left-color:var(--t-part-edge)}.ai-item.ok{border-left-color:var(--good-edge)}
@@ -1276,6 +1280,11 @@ function renderPaperKey(n,unlocked){
     return;
   }
   renderPaperKeyLocal(n,unlocked,$('#paperCard'));
+  // chưa có mã học sinh: vẫn thấy chỗ chụp bài, kèm cách lấy mã
+  if(API&&!PREVIEW&&!S.code&&unlocked){const c=$('#paperCard');c.insertAdjacentHTML('afterbegin',`<div class="up-box"><h3 class="ih">${em('camera-with-flash')}Chụp bài giấy để máy chấm</h3>
+    <p class="small">Máy chấm phần trắc nghiệm và điền từ từ ảnh bài làm, giải thích câu sai, rồi chép đoạn viết của cậu thành chữ để cậu kiểm tra trước khi chấm. Để gửi ảnh, cậu cần mã học sinh 6 ký tự cô gửi. Chưa có mã? Bố mẹ gọi hoặc nhắn Zalo 0974.840.845.</p>
+    <div class="row"><button class="btn hi" id="goCode">Nhập mã học sinh để chụp bài</button></div><p class="small muted">Trong lúc chờ, cậu vẫn tự chấm được bằng đáp án bên dưới.</p></div>`);
+    $('#goCode').onclick=()=>{go('start');setTimeout(()=>{const i=$('#codeLogin');if(i){i.scrollIntoView({block:'center'});i.focus()}},200)}}
 }
 function renderPaperKeyLocal(n,unlocked,card){
   const D=DAYS[n-1];const rec=S.days[n]||{};

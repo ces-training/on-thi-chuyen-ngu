@@ -8,7 +8,7 @@ async function api(action,data){
   if(!j.ok){const e=new Error(j.error||'error');e.code=j.error;throw e}
   return j;
 }
-const ERR_VI={bad_code:'Mã học sinh không đúng. Cậu kiểm tra lại mã cô gửi nhé.',image_too_big:'Ảnh quá lớn, cậu chụp lại nhé.',too_many_images:'Mỗi lần gửi tối đa 6 ảnh.',no_images:'Cậu chưa chọn ảnh nào.'};
+const ERR_VI={writing_too_short:'Bài viết hơi ngắn, cậu kiểm tra xem đã chép đủ chưa nhé.',not_paid:'Phần này dành cho bản trả phí.',bad_code:'Mã học sinh không đúng. Cậu kiểm tra lại mã cô gửi nhé.',image_too_big:'Ảnh quá lớn, cậu chụp lại nhé.',too_many_images:'Mỗi lần gửi tối đa 6 ảnh.',no_images:'Cậu chưa chọn ảnh nào.'};
 function errVi(e){return ERR_VI[e&&e.code]||'Chưa kết nối được với máy chủ. Cậu kiểm tra mạng rồi thử lại.'}
 
 /* ---- đồng bộ tiến độ ---- */
@@ -63,11 +63,11 @@ function wireLogin(){
 function confirmInline(btn,txt){if(btn.dataset.sure)return true;btn.dataset.sure='1';btn.textContent=txt;return false}
 
 /* ---- dữ liệu bài giấy và tin nhắn ---- */
-let CLOUD={uploads:[],messages:[],at:0,unseen:0};
+let CLOUD={uploads:[],messages:[],at:0,unseen:0,paid:false,orderPending:false};
 async function loadMy(){
   if(!cloudOn())return CLOUD;
   const r=await api('my',{code:S.code});
-  CLOUD={uploads:r.uploads||[],messages:r.messages||[],at:Date.now(),unseen:(r.messages||[]).filter(m=>m.from==='teacher'&&!m.seenStudent).length+(CLOUD.unseen||0)};
+  CLOUD={uploads:r.uploads||[],messages:r.messages||[],at:Date.now(),paid:!!r.paid,orderPending:!!r.orderPending,unseen:(r.messages||[]).filter(m=>m.from==='teacher'&&!m.seenStudent).length+(CLOUD.unseen||0)};
   // kết quả chấm mới nhất của mỗi buổi điền vào bài giấy
   latestByDay().forEach(u=>applyAiResult(u));
   updateBadge();
@@ -80,7 +80,7 @@ function applyAiResult(u){
   if(prev&&prev.source==='ai'&&prev.uploadId===u.id&&prev.updated===u.updated&&prev.correct===u.score)return;
   const ticks={},by={};
   res.items.forEach(it=>{ticks[it.id]=it.correct===true;const k=(it.section||'').split(' ')[0];by[k]=by[k]||[0,0];by[k][1]++;if(it.correct===true)by[k][0]++});
-  S.days[n]=Object.assign(S.days[n]||{},{paper:{ticks,correct:u.score,total:u.total,by,writing:{},self:(prev&&prev.self)||{},at:Date.parse(u.ts)||Date.now(),source:'ai',uploadId:u.id,updated:u.updated,wscore:res.writing?res.writing.score:null}});
+  S.days[n]=Object.assign(S.days[n]||{},{paper:{ticks,correct:u.score,total:u.total,by,writing:{},self:(prev&&prev.self)||{},at:Date.parse(u.ts)||Date.now(),source:'ai',uploadId:u.id,updated:u.updated,wscore:res.writing&&res.writing.status!=='confirm'?res.writing.score:null}});
   save();
 }
 function updateBadge(){const b=document.querySelector('#tabs button[data-view="share"] .tb');if(!b)return;b.innerHTML=CLOUD.unseen?`<span class="badge">${CLOUD.unseen}</span>`:''}
@@ -96,7 +96,7 @@ function compressImage(file){
 function uploadCardHTML(n){
   const ups=CLOUD.uploads.filter(u=>u.day===n).sort((a,b)=>a.ts<b.ts?1:-1);const last=ups[0];
   return `<div class="up-box"><h3 class="ih">${em('camera-with-flash')}Bước 7 · Chụp bài giấy để được chấm</h3>
-   <p class="small">Chụp rõ từng trang bài làm buổi ${n} (tối đa 6 ảnh), đủ sáng, thẳng trang, không che chữ. Chỉ chụp trang bài làm. Máy sẽ đọc bài, chấm, nhận xét và gửi kết quả cho cô.</p>
+   <p class="small">Chụp rõ từng trang bài làm buổi ${n} (tối đa 6 ảnh), đủ sáng, thẳng trang, không che chữ. Chỉ chụp trang bài làm. Máy chấm phần trắc nghiệm và điền từ, giải thích câu sai, rồi chép đoạn viết của cậu thành chữ để cậu kiểm tra trước khi chấm.</p>
    <div class="row"><label class="btn" for="upFiles">Chọn hoặc chụp ảnh</label><input type="file" id="upFiles" accept="image/*" capture="environment" multiple hidden><button class="btn hi" id="upSend" disabled>Gửi chấm</button><span class="small" id="upMsg"></span></div>
    <div class="thumbs" id="upThumbs"></div>
    ${last?`<div id="upResult">${uploadResultHTML(last)}</div>`:'<div id="upResult"></div>'}
@@ -141,20 +141,70 @@ function uploadResultHTML(u){
      <button class="linkbtn" data-dispute="${esc(it.id)}" data-label="${esc(it.label)}">Mình chưa đồng ý</button></li>`;
   const W=R.writing;
   return `<div class="ai-res" data-up="${esc(u.id)}">
-   <div class="row" style="justify-content:space-between"><h3 style="margin:0">Kết quả chấm</h3><span class="pill good">Đúng ${u.score}/${u.total}${W?` · Bài viết ${W.score}/10`:''}</span></div>
+   <div class="row" style="justify-content:space-between"><h3 style="margin:0">Kết quả chấm</h3><span class="pill good">Đúng ${u.score}/${u.total}${W&&W.status!=='confirm'&&W.score!=null?` · Bài viết ${W.score}/10`:''}</span></div>
    ${R.overall?`<p>${esc(R.overall)}</p>`:''}
    ${u.teacherNote?`<div class="t-note"><b>Cô nhận xét:</b> ${esc(u.teacherNote)}</div>`:''}
-   ${wrong.length?`<h4>Câu cần xem lại (${wrong.length})</h4><ul class="ai-list">${wrong.map(it1).join('')}</ul>`:'<p><b>Cậu làm đúng tất cả các câu. Giỏi lắm!</b></p>'}
-   ${W?`<h4>Bài viết · ${W.score}/10 · ${W.words} từ</h4><div class="grid2"><div><b>Điểm tốt</b><ul>${(W.strengths||[]).map(s=>`<li>${esc(s)}</li>`).join('')}</ul></div><div><b>Cần sửa</b><ul>${(W.improve||[]).map(s=>`<li>${esc(s)}</li>`).join('')}</ul></div></div>`:''}
+   ${W&&W.status==='confirm'?'<div class="notice"><b>Còn một bước:</b> kéo xuống phần Bài viết, kiểm tra bản máy chép rồi bấm xác nhận để được chấm bài viết.</div>':''}
+   ${wrong.length?`<h4>Câu cần xem lại (${wrong.length}) · có giải thích</h4><ul class="ai-list">${wrong.map(it1).join('')}</ul>`:'<p><b>Cậu làm đúng tất cả các câu. Giỏi lắm!</b></p>'}
+   ${W?writingHTML(u,W):''}
    ${right.length?`<details><summary class="small">Xem ${right.length} câu đúng</summary><ul class="ai-list">${right.map(it=>`<li class="ai-item ok"><b>${esc(it.label)}</b> ${esc(it.read||it.answer)}</li>`).join('')}</ul></details>`:''}
    <div class="thread">${msgs.map(msgHTML).join('')}</div>
    <div class="dispute" hidden><textarea rows="3" placeholder="Cậu giải thích vì sao cậu nghĩ mình đúng…"></textarea><div class="row"><button class="btn hi" data-send>Gửi cô</button><button class="btn ghost" data-cancel>Thôi</button><span class="small" data-msg></span></div></div>
    <p class="small muted">Máy chấm có thể đọc nhầm chữ viết tay. Câu nào cậu thấy chấm chưa đúng, bấm "Mình chưa đồng ý" để nhắn cô.</p></div>`;
 }
+/* bài viết: bước xác nhận bản chép → kết quả bản thường → bản trả phí */
+function wc(t){const m=String(t||'').match(/[A-Za-z0-9][A-Za-z0-9'’-]*/g);return m?m.length:0}
+function writingHTML(u,W){
+  if(W.status==='confirm'){
+    return `<div class="w-box" data-wbox><h4>Bài viết · máy đã chép lại, chờ cậu xác nhận</h4>
+     <p class="small">Tớ chép đoạn viết trên giấy của cậu thành chữ như dưới đây. Cậu đọc lại thật kỹ: <b>đây đã là toàn bộ bài cậu viết chưa?</b> Chỗ nào máy đọc nhầm hoặc bỏ sót thì sửa cho <b>giống hệt trên giấy</b>, kể cả lỗi cậu đã viết. Đừng viết thêm hay sửa cho hay hơn nhé: cô sẽ đối chiếu với ảnh bài làm.</p>
+     ${(W.unclear||[]).length?`<p class="small">Máy chưa đọc chắc: ${W.unclear.map(x=>`<span class="pill warn">${esc(x)}</span>`).join(' ')} (chỗ ghi [?] trong bài).</p>`:''}
+     <textarea rows="8" data-wtext style="width:100%">${esc(W.text||W.aiRead||'')}</textarea>
+     <div class="row"><span class="small muted" data-wcount>${wc(W.text||W.aiRead)} từ</span></div>
+     <div class="row"><button class="btn hi" data-wconfirm>Đúng rồi, đây là toàn bộ bài mình viết · chấm giúp mình</button><button class="btn ghost" data-wreset>Trả lại bản máy chép</button><span class="small" data-wmsg></span></div></div>`;
+  }
+  const D=W.detail;
+  return `<div class="w-box" data-wbox><h4>Bài viết · ${W.score}/10 · ${W.words} từ <span class="pill">bản thường</span></h4>
+   ${W.summary?`<p>${esc(W.summary)}</p>`:''}
+   <div class="grid2"><div><b>Điểm tốt</b><ul>${(W.strengths||[]).map(s=>`<li>${esc(s)}</li>`).join('')}</ul></div><div><b>Cần sửa</b><ul>${(W.improve||[]).map(s=>`<li>${esc(s)}</li>`).join('')}</ul></div></div>
+   <details><summary class="small">Xem bài cậu đã xác nhận</summary><div class="passage" style="white-space:pre-wrap;margin-top:8px">${esc(W.text)}</div></details>
+   ${D?detailHTML(D):paidOfferHTML()}</div>`;
+}
+function detailHTML(D){
+  return `<div class="w-detail"><h4>Nhận xét chi tiết theo tiêu chí bài viết đề chuyên · ${D.total}/10 <span class="pill hi">bản trả phí</span></h4>
+   ${D.summary?`<p>${esc(D.summary)}</p>`:''}
+   <div class="tw"><table><tbody>${(D.criteria||[]).map(c=>`<tr><td><b>${esc(c.name)}</b><br><span class="small">${esc(c.comment)}</span>${(c.evidence||[]).length?`<br><span class="small muted">Trong bài: ${c.evidence.map(e=>'“'+esc(e)+'”').join(' · ')}</span>`:''}</td><td class="n"><b>${c.score}</b>/${c.max}</td></tr>`).join('')}</tbody></table></div>
+   ${(D.errors||[]).length?`<h4>Lỗi cần sửa</h4><ul class="ai-list">${D.errors.map(e=>`<li class="ai-item bad"><div><s>${esc(e.quote)}</s> → <b>${esc(e.fix)}</b>${e.type?` <span class="pill">${esc(e.type)}</span>`:''}</div><div class="small">${esc(e.why)}</div></li>`).join('')}</ul>`:''}
+   ${(D.upgrades||[]).length?`<h4>Nâng câu lên mức đề chuyên</h4><ul class="ai-list">${D.upgrades.map(e=>`<li class="ai-item"><div class="small">Cậu viết: ${esc(e.from)}</div><div>Có thể viết: <b>${esc(e.to)}</b></div><div class="small">${esc(e.why)}</div></li>`).join('')}</ul>`:''}
+   ${(D.next||[]).length?`<h4>Bài viết sau, cậu thử</h4><ul>${D.next.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
+   <p class="small muted">Thang 4 tiêu chí do CES đề xuất theo cách chấm bài viết đề chuyên Anh, không phải hướng dẫn chấm chính thức của Sở.</p></div>`;
+}
+function paidOfferHTML(){
+  if(CLOUD.paid)return `<div class="w-offer"><button class="btn hi" data-wdetail>Xem nhận xét chi tiết theo tiêu chí đề chuyên</button><span class="small" data-wmsg></span></div>`;
+  return `<div class="w-offer card"><h4 style="margin-top:0">Muốn biết bài này được mấy điểm nếu chấm như đề chuyên?</h4>
+   <p class="small">Bản trả phí chấm bài viết theo 4 tiêu chí của bài viết đề chuyên Anh (nội dung, bố cục và liên kết, từ vựng, ngữ pháp), chỉ ra từng lỗi kèm cách sửa, và gợi ý nâng câu lên mức đề chuyên. Áp dụng cho mọi bài viết cậu gửi.</p>
+   ${CLOUD.orderPending?'<p class="small"><b>Cậu đã gửi yêu cầu.</b> Cô sẽ liên hệ bố mẹ cậu để hoàn tất. Khi được kích hoạt, nút xem nhận xét chi tiết sẽ hiện ngay ở đây.</p>':'<div class="row"><button class="btn" data-wbuy>Mình muốn mua bản trả phí</button><span class="small" data-wmsg></span></div>'}</div>`;
+}
+function wireWriting(res){
+  const box=res.querySelector('[data-wbox]');if(!box)return;const up=res.dataset.up;const msg=box.querySelector('[data-wmsg]');
+  const redraw=w=>{const u=CLOUD.uploads.find(x=>x.id===up);if(u&&u.result){u.result.writing=w;applyAiResult(u)}const host=res.parentElement;if(host&&u){host.innerHTML=uploadResultHTML(u);wireResult(host)}};
+  const ta=box.querySelector('[data-wtext]');
+  if(ta){const cnt=box.querySelector('[data-wcount]');ta.oninput=()=>{cnt.textContent=wc(ta.value)+' từ'};
+    box.querySelector('[data-wreset]').onclick=()=>{const u=CLOUD.uploads.find(x=>x.id===up);if(u)ta.value=u.result.writing.aiRead||'';ta.oninput()};
+    box.querySelector('[data-wconfirm]').onclick=async e=>{const b=e.target;b.disabled=true;msg.textContent='Đang chấm bài viết… khoảng 10–20 giây.';
+      try{const r=await api('confirm_writing',{code:S.code,uploadId:up,text:ta.value});redraw(r.writing);doSync()}catch(err){msg.textContent=errVi(err);b.disabled=false}}}
+  const d=box.querySelector('[data-wdetail]');
+  if(d)d.onclick=async()=>{d.disabled=true;msg.textContent='Đang chấm theo tiêu chí đề chuyên… khoảng 30 giây.';
+    try{const r=await api('writing_detail',{code:S.code,uploadId:up});redraw(r.writing)}catch(err){if(err.code==='not_paid'){CLOUD.paid=false;redraw(CLOUD.uploads.find(x=>x.id===up).result.writing)}else{msg.textContent=errVi(err);d.disabled=false}}};
+  const buy=box.querySelector('[data-wbuy]');
+  if(buy)buy.onclick=async()=>{buy.disabled=true;msg.textContent='Đang gửi…';
+    try{await api('buy_request',{code:S.code,product:'writing_detail',uploadId:up});CLOUD.orderPending=true;redraw(CLOUD.uploads.find(x=>x.id===up).result.writing)}catch(err){msg.textContent=errVi(err);buy.disabled=false}};
+}
 function msgHTML(m){return `<div class="msg ${m.from==='teacher'?'from-t':'from-s'}"><span class="small muted">${m.from==='teacher'?'Cô':'Cậu'} · ${new Date(m.ts).toLocaleString('vi-VN',{hour:'2-digit',minute:'2-digit',day:'2-digit',month:'2-digit'})}${m.itemId?` · câu ${esc(labelOf(m.itemId))}`:''}</span><div>${esc(m.text)}</div></div>`}
 function labelOf(id){return String(id).replace(/^d\d+/,'').replace(/^([A-Z]\d?)_?(\d+)$/,'$1.$2')}
 function wireResult(box){
   if(!box)return;const res=box.querySelector('.ai-res');if(!res)return;
+  wireWriting(res);
   const dz=res.querySelector('.dispute'),ta=dz.querySelector('textarea');let cur=null;
   res.querySelectorAll('[data-dispute]').forEach(b=>b.onclick=()=>{cur={id:b.dataset.dispute,label:b.dataset.label};dz.hidden=false;ta.value=`Câu ${cur.label}: `;ta.focus()});
   dz.querySelector('[data-cancel]').onclick=()=>{dz.hidden=true;cur=null};

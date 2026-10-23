@@ -38,7 +38,8 @@ Cả quá trình mất khoảng 20 phút. Chỉ cần làm một lần.
 
 Thuộc tính tuỳ chọn:
 
-- `MODEL`: mô hình chấm. Mặc định là `claude-sonnet-5-5`. Nếu muốn rẻ hơn khoảng 20 lần, ghi `claude-haiku-5-5`, nhưng cần thử với chữ viết tay thật trước.
+- `MODEL`: mô hình đọc ảnh bài làm (chấm trắc nghiệm, chép bài viết) và chấm bản trả phí. Mặc định `claude-sonnet-5-5`. Đọc chữ viết tay cần mô hình mạnh, nên giữ mặc định.
+- `MODEL_FREE`: mô hình chấm bài viết bản thường sau khi con xác nhận bản chép. Mặc định `claude-haiku-5-5` (rẻ khoảng 20 lần); muốn nhận xét kỹ hơn thì ghi `claude-sonnet-5-5`.
 
 ## 4. Chạy cài đặt lần đầu (2 phút)
 
@@ -64,6 +65,14 @@ Thuộc tính tuỳ chọn:
 Sau đó chạy `python3 src/chuyen-anh-14-ngay/build.py`, rồi commit và push. Trang học sinh và trang của cô sẽ tự nối với máy chủ.
 
 > "Bất kỳ ai" chỉ có nghĩa là trang web gọi được máy chủ mà không cần đăng nhập Google. Không ai xem được dữ liệu nếu không có mã học sinh (với dữ liệu của con đó) hoặc mã PIN của cô (với toàn bộ).
+
+## Luồng chấm bài giấy (từ 23/10/2026)
+
+1. Con chụp ảnh bài làm. Máy chấm phần trắc nghiệm và điền từ, kèm giải thích câu sai, và **chép đoạn viết thành chữ** (chưa chấm bài viết).
+2. Con đọc bản chép, sửa chỗ máy đọc nhầm cho giống bài trên giấy, rồi bấm xác nhận. Máy chấm bài viết **bản thường**: điểm /10, 2 điểm tốt, 2 điểm cần sửa. Trang của cô hiện cả bản máy chép và bản con xác nhận; con sửa nhiều thì có cờ đỏ để cô đối chiếu với ảnh.
+3. **Bản trả phí**: nhận xét bài viết theo 4 tiêu chí đề chuyên (nội dung 3, bố cục và liên kết 2, từ vựng 2,5, ngữ pháp 2,5), từng lỗi kèm cách sửa, nâng câu. Con chưa trả phí thấy nút "Mình muốn mua bản trả phí": yêu cầu ghi vào trang tính `Yêu cầu mua` và nhắn cho cô. Gia đình thanh toán xong, cô mở hồ sơ con ở trang của cô và bấm **Bật bản trả phí**.
+
+Khi cập nhật mã có thêm trang tính hoặc cột mới, chạy lại hàm `setup` một lần trước khi triển khai phiên bản mới.
 
 ## 6. Dùng hằng ngày
 

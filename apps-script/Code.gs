@@ -8,15 +8,24 @@
  * Script properties cần có:
  *   CLAUDE_API_KEY  — khoá API tạo ở console.anthropic.com
  *   TEACHER_PIN     — mã PIN cô dùng để vào trang theo dõi (ít nhất 6 ký tự)
- *   MODEL           — (tuỳ chọn) mô hình Claude, mặc định claude-sonnet-5-5
+ *   MODEL           — (tuỳ chọn) mô hình đọc ảnh bài làm và chấm bản trả phí, mặc định claude-sonnet-5-5
+ *   MODEL_FREE      — (tuỳ chọn) mô hình chấm bài viết bản thường (không trả phí), mặc định claude-haiku-5-5
+ *
+ * Luồng chấm bài giấy:
+ *   1. Con chụp ảnh → máy chấm phần trắc nghiệm/điền từ (có giải thích câu sai) và CHÉP bài viết thành chữ, chưa chấm bài viết.
+ *   2. Con đọc bản chép, sửa chỗ máy đọc nhầm, bấm xác nhận → máy chấm bài viết bản thường (điểm /10, 2 điểm tốt, 2 điểm cần sửa).
+ *   3. Bản trả phí (cột paid của sheet Học sinh khác rỗng): nhận xét chi tiết theo 4 tiêu chí bài viết đề chuyên.
+ *      Con chưa trả phí bấm "Mình muốn mua" → ghi vào sheet "Yêu cầu mua" và nhắn cho cô.
  */
 
 var SHEETS = {
-  students: { name: 'Học sinh', cols: ['code', 'name', 'grade', 'created', 'lastSeen', 'daysWeb', 'daysPaper', 'webAcc', 'retryAcc', 'mastered', 'eff', 'entryLevel', 'finalLevel', 'planMin', 'planDpw', 'paperAvg', 'stateFileId', 'summary'] },
+  students: { name: 'Học sinh', cols: ['code', 'name', 'grade', 'created', 'lastSeen', 'daysWeb', 'daysPaper', 'webAcc', 'retryAcc', 'mastered', 'eff', 'entryLevel', 'finalLevel', 'planMin', 'planDpw', 'paperAvg', 'stateFileId', 'summary', 'paid'] },
   uploads: { name: 'Bài giấy', cols: ['id', 'ts', 'code', 'day', 'fileIds', 'status', 'score', 'total', 'result', 'teacherNote', 'updated', 'error', 'tries'] },
-  messages: { name: 'Tin nhắn', cols: ['id', 'ts', 'code', 'from', 'uploadId', 'itemId', 'text', 'seenTeacher', 'seenStudent'] }
+  messages: { name: 'Tin nhắn', cols: ['id', 'ts', 'code', 'from', 'uploadId', 'itemId', 'text', 'seenTeacher', 'seenStudent'] },
+  orders: { name: 'Yêu cầu mua', cols: ['id', 'ts', 'code', 'name', 'product', 'status', 'note'] }
 };
 var DEFAULT_MODEL = 'claude-sonnet-5-5';
+var DEFAULT_MODEL_FREE = 'claude-haiku-5-5';
 var MAX_IMAGES = 6;
 var MAX_IMAGE_B64 = 6 * 1024 * 1024;
 
@@ -27,6 +36,7 @@ function setup() {
     var def = SHEETS[k];
     var sh = ss.getSheetByName(def.name) || ss.insertSheet(def.name);
     if (sh.getLastRow() === 0) sh.appendRow(def.cols);
+    else if (sh.getLastColumn() < def.cols.length) sh.getRange(1, 1, 1, def.cols.length).setValues([def.cols]); // thêm cột mới vào sheet cũ
     sh.setFrozenRows(1);
   });
   rootFolder_();
@@ -71,6 +81,8 @@ function route_(q) {
       case 't_override': return tOverride_(q);
       case 't_regrade': return tRegrade_(q.uploadId);
       case 't_image': return tImage_(q.fileId);
+      case 't_paid': return tPaid_(q.code, q.paid);
+      case 't_order': return tOrder_(q.id, q.status);
     }
     throw new Error('unknown_action');
   }
@@ -82,6 +94,9 @@ function route_(q) {
     case 'upload': return upload_(st, q.day, q.images);
     case 'my': return my_(st);
     case 'message': return message_(st, q.uploadId, q.itemId, q.text);
+    case 'confirm_writing': return confirmWriting_(st, q.uploadId, q.text);
+    case 'writing_detail': return writingDetail_(st, q.uploadId);
+    case 'buy_request': return buyRequest_(st, q.product, q.uploadId);
   }
   throw new Error('unknown_action');
 }
@@ -139,7 +154,7 @@ function login_(st) {
   var state = null;
   if (st.stateFileId) { try { state = JSON.parse(DriveApp.getFileById(st.stateFileId).getBlob().getDataAsString()); } catch (e) {} }
   update_('students', st._row, { lastSeen: now_() });
-  return { ok: true, student: { code: st.code, name: st.name, grade: st.grade }, state: state };
+  return { ok: true, student: { code: st.code, name: st.name, grade: st.grade, paid: isPaid_(st) }, state: state };
 }
 
 function sync_(st, state, kpi, sum) {
@@ -201,8 +216,10 @@ function my_(st) {
   var msgs = rows_('messages').filter(function (m) { return m.code === st.code; });
   var outMsgs = msgs.map(msgOut_);
   withLock_(function () { msgs.forEach(function (m) { if (m.from === 'teacher' && !(m.seenStudent === true || m.seenStudent === 'TRUE')) update_('messages', m._row, { seenStudent: true }); }); });
-  return { ok: true, uploads: ups, messages: outMsgs };
+  var pending = rows_('orders').some(function (o) { return o.code === st.code && o.status === 'chờ liên hệ'; });
+  return { ok: true, uploads: ups, messages: outMsgs, paid: isPaid_(st), orderPending: pending };
 }
+function isPaid_(st) { return !!String(st.paid || '').trim(); }
 
 function message_(st, uploadId, itemId, text) {
   text = clip_(String(text || '').trim(), 1500);
@@ -262,7 +279,8 @@ function gradeUpload_(id) {
       var tmap = {};
       old.items.forEach(function (it) { if (it.teacher) tmap[it.id] = it; });
       graded.items.forEach(function (it) { var t = tmap[it.id]; if (t) { it.correct = t.correct; it.note = t.note; it.teacher = true; } });
-      if (old.writing && old.writing.teacher && graded.writing) { graded.writing.score = old.writing.score; graded.writing.teacher = true; }
+      // bài viết con đã xác nhận (và điểm, nhận xét) giữ nguyên khi chấm lại phần trắc nghiệm
+      if (old.writing && old.writing.status === 'graded') graded.writing = old.writing;
       graded.score = graded.items.filter(function (it) { return it.correct === true; }).length;
     }
     update_('uploads', row._row, { status: 'graded', score: graded.score, total: graded.total, result: clip_(JSON.stringify(graded), 48000), updated: now_(), error: '' });
@@ -285,7 +303,7 @@ function keyText_(key) {
     });
   });
   if (key.writing) {
-    lines.push('', '## F · Bài viết', 'Đề: ' + key.writing.task, 'Tối thiểu ' + key.writing.min_words + ' từ.', 'Tiêu chí tự kiểm: ' + key.writing.checklist.join(' / '));
+    lines.push('', '## F · Bài viết (chỉ chép lại, chưa chấm)', 'Đề: ' + key.writing.task);
   }
   return lines.join('\n');
 }
@@ -302,27 +320,28 @@ var SYSTEM_PROMPT = [
   '- Không đọc được hoặc bỏ trống: correct = null, ghi chú "không đọc được" hoặc "bỏ trống".',
   '- Không tự ý cho đúng khi không chắc. Nếu chữ mờ, ghi đúng những gì đọc được vào "read".',
   'Ghi chú (note) bằng tiếng Việt, ngắn (tối đa 25 từ), giải thích vì sao sai và gợi ý cách nhớ; câu đúng để note rỗng.',
-  'Bài viết: chép lại đoạn học sinh viết, đếm số từ, chấm thang 10 theo: đủ ý của đề, đúng ngữ pháp trọng tâm của buổi, dùng từ mới, đủ số từ. Nêu 2 điểm tốt và 2 điểm cần sửa, cụ thể, giọng tôn trọng, khích lệ.',
+  'Câu sai: note phải nói vì sao đáp án đúng là đúng (nghĩa, cấu trúc hoặc dấu hiệu trong câu) và vì sao câu học sinh viết chưa đúng.',
+  'Bài viết (phần F hoặc đoạn viết dài): KHÔNG chấm. Chỉ chép lại NGUYÊN VĂN những gì học sinh viết, giữ đúng cả lỗi chính tả, ngữ pháp, dấu câu và xuống dòng; không sửa, không thêm, không bỏ chữ nào. Từ nào không đọc được thì ghi [?] tại chỗ đó và liệt kê vào "unclear".',
   'Chỉ trả về MỘT đối tượng JSON, không thêm chữ nào khác, theo mẫu:',
-  '{"items":[{"label":"A.1","read":"...","correct":true,"note":""}],"writing":{"read":"...","words":0,"score":0,"strengths":["..."],"improve":["..."]},"overall":"2–3 câu nhận xét chung bằng tiếng Việt","unreadable":false}',
+  '{"items":[{"label":"A.1","read":"...","correct":true,"note":""}],"writing":{"read":"nguyên văn bài viết","unclear":["từ hoặc đoạn không đọc chắc"]},"overall":"2–3 câu nhận xét chung về phần trắc nghiệm, điền từ, bằng tiếng Việt","unreadable":false}',
   'Nếu buổi không có bài viết hoặc học sinh không viết, đặt "writing": null.',
   'Nếu ảnh không phải bài làm, đặt "unreadable": true và "items": [].'
 ].join('\n');
 
 function callClaude_(images, key) {
   var p = PropertiesService.getScriptProperties();
-  var apiKey = p.getProperty('CLAUDE_API_KEY');
+  return claudeJson_(p.getProperty('MODEL') || DEFAULT_MODEL, SYSTEM_PROMPT,
+    images.concat([{ type: 'text', text: keyText_(key) + '\n\nHãy chấm các ảnh bài làm ở trên theo đáp án này và trả về JSON.' }]), 6000);
+}
+
+/* gọi Claude, trả về đối tượng JSON trong câu trả lời */
+function claudeJson_(model, system, content, maxTokens) {
+  var apiKey = String(PropertiesService.getScriptProperties().getProperty('CLAUDE_API_KEY') || '').trim();
   if (!apiKey) throw new Error('Chưa cài CLAUDE_API_KEY');
-  var body = {
-    model: p.getProperty('MODEL') || DEFAULT_MODEL,
-    max_tokens: 6000,
-    system: SYSTEM_PROMPT,
-    messages: [{ role: 'user', content: images.concat([{ type: 'text', text: keyText_(key) + '\n\nHãy chấm các ảnh bài làm ở trên theo đáp án này và trả về JSON.' }]) }]
-  };
   var resp = UrlFetchApp.fetch('https://api.anthropic.com/v1/messages', {
     method: 'post', contentType: 'application/json', muteHttpExceptions: true,
     headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-    payload: JSON.stringify(body)
+    payload: JSON.stringify({ model: model, max_tokens: maxTokens, system: system, messages: [{ role: 'user', content: content }] })
   });
   var code = resp.getResponseCode(), text = resp.getContentText();
   if (code !== 200) throw new Error('Claude API ' + code + ': ' + clip_(text, 300));
@@ -347,10 +366,11 @@ function mergeResult_(key, res) {
         read: clip_(r.read, 300), correct: correct, note: clip_(r.note, 300) });
     });
   });
-  var w = res.writing && typeof res.writing === 'object' ? {
-    read: clip_(res.writing.read, 4000), words: Number(res.writing.words) || 0, score: Math.max(0, Math.min(10, Number(res.writing.score) || 0)),
-    strengths: (res.writing.strengths || []).slice(0, 4).map(function (x) { return clip_(x, 300); }),
-    improve: (res.writing.improve || []).slice(0, 4).map(function (x) { return clip_(x, 300); })
+  var wr = res.writing && typeof res.writing === 'object' ? clip_(String(res.writing.read || '').trim(), 4000) : '';
+  // bài viết: máy chỉ chép lại; con xác nhận hoặc sửa bản chép rồi mới chấm (confirmWriting_)
+  var w = key.writing && wr ? {
+    status: 'confirm', aiRead: wr, text: wr, words: wordCount_(wr),
+    unclear: (res.writing.unclear || []).slice(0, 12).map(function (x) { return clip_(x, 80); }), score: null
   } : null;
   return { items: items, writing: w, overall: clip_(res.overall, 800), unreadable: res.unreadable === true, score: score, total: total, gradedAt: now_() };
 }
@@ -366,15 +386,139 @@ function updatePaperAvg_(code) {
   if (st) update_('students', st._row, { paperAvg: Math.round(avg * 1000) / 1000 });
 }
 
+
+function wordCount_(t) { var m = String(t || '').match(/[A-Za-z0-9][A-Za-z0-9'’-]*/g); return m ? m.length : 0; }
+
+/* độ giống nhau giữa bản máy chép và bản con xác nhận (theo từ), để cô biết con có viết thêm khi sửa không */
+function similarity_(a, b) {
+  var wa = String(a || '').toLowerCase().match(/[a-z0-9']+/g) || [], wb = String(b || '').toLowerCase().match(/[a-z0-9']+/g) || [];
+  if (!wa.length && !wb.length) return 1;
+  var bag = {}; wa.forEach(function (w) { bag[w] = (bag[w] || 0) + 1; });
+  var same = 0; wb.forEach(function (w) { if (bag[w]) { bag[w]--; same++; } });
+  return Math.round(100 * same / Math.max(wa.length, wb.length)) / 100;
+}
+
+function ownUpload_(st, uploadId) {
+  var row = find_('uploads', 'id', uploadId);
+  if (!row || row.code !== st.code) throw new Error('no_upload');
+  var res = parse_(row.result, null);
+  if (!res || !res.writing) throw new Error('no_writing');
+  return { row: row, res: res };
+}
+
+/* bước 2: con xác nhận bài viết (đã sửa chỗ máy đọc nhầm) → chấm bản thường */
+function confirmWriting_(st, uploadId, text) {
+  var u = ownUpload_(st, uploadId), res = u.res, w = res.writing;
+  if (w.status === 'graded' && w.text === String(text || '').trim()) return { ok: true, writing: w };
+  text = clip_(String(text || '').trim(), 4000);
+  if (wordCount_(text) < 5) throw new Error('writing_too_short');
+  var key = keyForStudent_(PAPER_KEYS[String(u.row.day)], st.code);
+  var g = gradeWritingFree_(key.writing, text);
+  w.text = text; w.words = wordCount_(text); w.sim = similarity_(w.aiRead, text); w.confirmedAt = now_();
+  w.status = 'graded'; w.score = g.score; w.strengths = g.strengths; w.improve = g.improve; w.summary = g.summary;
+  delete w.detail; // bài đã đổi thì nhận xét chi tiết cũ không còn đúng
+  withLock_(function () {
+    var row = find_('uploads', 'id', uploadId);
+    update_('uploads', row._row, { result: clip_(JSON.stringify(res), 48000), updated: now_() });
+  });
+  return { ok: true, writing: w };
+}
+
+var FREE_PROMPT = [
+  'Bạn là trợ giảng tiếng Anh, chấm nhanh đoạn viết của học sinh lớp 6–9 ôn thi chuyên Anh.',
+  'Chấm thang 10 theo bốn ý: đủ ý của đề; đúng ngữ pháp trọng tâm của buổi; dùng từ mới của buổi; đủ số từ tối thiểu.',
+  'Nêu đúng 2 điểm tốt và 2 điểm cần sửa, mỗi điểm một câu tiếng Việt cụ thể (trích từ bài khi có thể), giọng như một người bạn lớn tuổi: tôn trọng, khích lệ, không chê bai.',
+  'Chỉ trả về MỘT đối tượng JSON: {"score":0,"strengths":["",""],"improve":["",""],"summary":"1 câu nhận xét chung"}'
+].join('\n');
+
+function gradeWritingFree_(task, text) {
+  var p = PropertiesService.getScriptProperties();
+  var prompt = 'ĐỀ: ' + task.task + '\nTối thiểu ' + task.min_words + ' từ.\nTiêu chí của buổi: ' + (task.checklist || []).join(' / ') +
+    '\n\nBÀI CỦA HỌC SINH (' + wordCount_(text) + ' từ):\n' + text;
+  var r = claudeJson_(p.getProperty('MODEL_FREE') || DEFAULT_MODEL_FREE, FREE_PROMPT, [{ type: 'text', text: prompt }], 1200);
+  return {
+    score: Math.max(0, Math.min(10, Math.round(2 * (Number(r.score) || 0)) / 2)),
+    strengths: (r.strengths || []).slice(0, 3).map(function (x) { return clip_(x, 300); }),
+    improve: (r.improve || []).slice(0, 3).map(function (x) { return clip_(x, 300); }),
+    summary: clip_(r.summary, 400)
+  };
+}
+
+/* bản trả phí: nhận xét theo tiêu chí bài viết đề chuyên */
+var RUBRIC = [
+  { key: 'content', name: 'Nội dung và yêu cầu đề', max: 3, desc: 'trả lời đúng và đủ các ý đề hỏi, ý có phát triển (lý do, ví dụ), đúng dạng bài, đủ độ dài' },
+  { key: 'organisation', name: 'Bố cục và liên kết', max: 2, desc: 'câu chủ đề hoặc mở bài rõ, các ý sắp xếp hợp lý, từ nối đa dạng và dùng đúng, có câu kết' },
+  { key: 'vocabulary', name: 'Từ vựng', max: 2.5, desc: 'từ đa dạng, đúng nghĩa, đúng kết hợp từ (collocation), dùng từ và cụm động từ của chủ đề; chính tả' },
+  { key: 'grammar', name: 'Ngữ pháp', max: 2.5, desc: 'đa dạng cấu trúc (câu ghép, câu phức, mệnh đề quan hệ, câu điều kiện…), độ chính xác của thì, mạo từ, hòa hợp chủ vị; dấu câu' }
+];
+var DETAIL_PROMPT = [
+  'Bạn là giáo viên chấm bài viết tiếng Anh cho học sinh lớp 6–9 ôn thi vào lớp 10 chuyên Anh ở Việt Nam.',
+  'Chấm theo 4 tiêu chí của thang 10 điểm mô phỏng cách chấm bài viết trong đề chuyên Anh (đây là thang CES đề xuất, không phải hướng dẫn chấm chính thức của Sở):',
+  RUBRIC.map(function (c) { return '- ' + c.name + ' (tối đa ' + c.max + ' điểm): ' + c.desc + '.'; }).join('\n'),
+  'Chấm đúng chuẩn đề chuyên nhưng xét theo độ dài và mức của đề buổi này. Điểm mỗi tiêu chí làm tròn 0,25.',
+  'Với mỗi tiêu chí: nhận xét 2–3 câu tiếng Việt, kèm trích dẫn nguyên văn từ bài làm làm bằng chứng.',
+  'Liệt kê tối đa 8 lỗi cụ thể: trích nguyên văn, bản sửa, giải thích ngắn bằng tiếng Việt, loại lỗi (ngữ pháp, từ vựng, chính tả, dấu câu, liên kết).',
+  'Viết lại tối đa 3 câu của học sinh thành câu hay hơn ở mức đề chuyên (giữ ý của học sinh), giải thích vì sao hay hơn.',
+  'Nêu 3 việc nên làm ở bài viết tiếp theo. Giọng tôn trọng, khích lệ, như người bạn lớn tuổi; không chê bai.',
+  'Chỉ trả về MỘT đối tượng JSON:',
+  '{"criteria":[{"key":"content","score":0,"comment":"","evidence":[""]}],"errors":[{"quote":"","fix":"","why":"","type":""}],"upgrades":[{"from":"","to":"","why":""}],"next":["","",""],"summary":"2 câu tổng kết"}'
+].join('\n');
+
+function writingDetail_(st, uploadId) {
+  if (!isPaid_(st)) return { ok: false, error: 'not_paid' };
+  var u = ownUpload_(st, uploadId), res = u.res, w = res.writing;
+  if (w.status !== 'graded') throw new Error('writing_not_confirmed');
+  if (w.detail) return { ok: true, writing: w };
+  var key = keyForStudent_(PAPER_KEYS[String(u.row.day)], st.code);
+  var p = PropertiesService.getScriptProperties();
+  var prompt = 'ĐỀ: ' + key.writing.task + '\nTối thiểu ' + key.writing.min_words + ' từ.\nTrọng tâm của buổi: ' + (key.writing.checklist || []).join(' / ') +
+    '\n\nBÀI CỦA HỌC SINH (' + wordCount_(w.text) + ' từ):\n' + w.text;
+  var r = claudeJson_(p.getProperty('MODEL') || DEFAULT_MODEL, DETAIL_PROMPT, [{ type: 'text', text: prompt }], 4000);
+  var byKey = {}; (r.criteria || []).forEach(function (c) { if (c && c.key) byKey[c.key] = c; });
+  var crit = RUBRIC.map(function (c) {
+    var x = byKey[c.key] || {};
+    return { key: c.key, name: c.name, max: c.max, score: Math.max(0, Math.min(c.max, Math.round(4 * (Number(x.score) || 0)) / 4)),
+      comment: clip_(x.comment, 600), evidence: (x.evidence || []).slice(0, 3).map(function (e) { return clip_(e, 200); }) };
+  });
+  w.detail = {
+    criteria: crit, total: crit.reduce(function (s, c) { return s + c.score; }, 0),
+    errors: (r.errors || []).slice(0, 8).map(function (e) { return { quote: clip_(e.quote, 200), fix: clip_(e.fix, 200), why: clip_(e.why, 300), type: clip_(e.type, 40) }; }),
+    upgrades: (r.upgrades || []).slice(0, 3).map(function (e) { return { from: clip_(e.from, 300), to: clip_(e.to, 300), why: clip_(e.why, 300) }; }),
+    next: (r.next || []).slice(0, 3).map(function (x) { return clip_(x, 300); }),
+    summary: clip_(r.summary, 600), at: now_()
+  };
+  withLock_(function () {
+    var row = find_('uploads', 'id', uploadId);
+    update_('uploads', row._row, { result: clip_(JSON.stringify(res), 48000), updated: now_() });
+  });
+  return { ok: true, writing: w };
+}
+
+/* con bấm "Mình muốn mua bản trả phí" → ghi yêu cầu + nhắn cô */
+function buyRequest_(st, product, uploadId) {
+  product = clip_(String(product || 'writing_detail'), 40);
+  return withLock_(function () {
+    var open = rows_('orders').some(function (o) { return o.code === st.code && o.status === 'chờ liên hệ'; });
+    if (!open) {
+      insert_('orders', { id: uid_('O'), ts: now_(), code: st.code, name: st.name, product: product, status: 'chờ liên hệ', note: uploadId ? 'từ bài giấy ' + uploadId : '' });
+      insert_('messages', { id: uid_('M'), ts: now_(), code: st.code, from: 'student', uploadId: '', itemId: '',
+        text: 'Con muốn mua bản trả phí để xem nhận xét chi tiết bài viết theo tiêu chí đề chuyên. Cô liên hệ bố mẹ con giúp con ạ.', seenTeacher: false, seenStudent: true });
+    }
+    return { ok: true, orderPending: true };
+  });
+}
+
 /* ---------- dành cho cô ---------- */
 function tList_() {
-  var ups = rows_('uploads'), msgs = rows_('messages');
+  var ups = rows_('uploads'), msgs = rows_('messages'), ords = rows_('orders');
   var list = rows_('students').map(function (s) {
     var mine = ups.filter(function (u) { return u.code === s.code; });
     var unread = msgs.filter(function (m) { return m.code === s.code && m.from === 'student' && !(m.seenTeacher === true || m.seenTeacher === 'TRUE'); }).length;
     return { code: s.code, name: s.name, grade: s.grade, created: s.created, lastSeen: s.lastSeen, daysWeb: s.daysWeb, daysPaper: s.daysPaper, webAcc: s.webAcc, retryAcc: s.retryAcc,
       mastered: s.mastered, eff: s.eff, entryLevel: s.entryLevel, finalLevel: s.finalLevel, planMin: s.planMin, planDpw: s.planDpw, paperAvg: s.paperAvg,
-      uploads: mine.length, errors: mine.filter(function (u) { return u.status === 'error'; }).length, unread: unread };
+      uploads: mine.length, errors: mine.filter(function (u) { return u.status === 'error'; }).length, unread: unread,
+      paid: String(s.paid || ''), orderPending: ords.some(function (o) { return o.code === s.code && o.status === 'chờ liên hệ'; }),
+      waitConfirm: mine.filter(function (u) { var r = parse_(u.result, null); return r && r.writing && r.writing.status === 'confirm'; }).length };
   });
   return { ok: true, students: list };
 }
@@ -386,7 +530,8 @@ function tStudent_(code) {
   var msgs = rows_('messages').filter(function (m) { return m.code === st.code; });
   var outMsgs = msgs.map(msgOut_);
   withLock_(function () { msgs.forEach(function (m) { if (m.from === 'student' && !(m.seenTeacher === true || m.seenTeacher === 'TRUE')) update_('messages', m._row, { seenTeacher: true }); }); });
-  return { ok: true, student: { code: st.code, name: st.name, grade: st.grade, created: st.created, lastSeen: st.lastSeen, paperAvg: st.paperAvg }, summary: parse_(st.summary, null), uploads: ups, messages: outMsgs };
+  var ords = rows_('orders').filter(function (o) { return o.code === st.code; }).map(function (o) { return { id: o.id, ts: o.ts, product: o.product, status: o.status }; });
+  return { ok: true, student: { code: st.code, name: st.name, grade: st.grade, created: st.created, lastSeen: st.lastSeen, paperAvg: st.paperAvg, paid: String(st.paid || '') }, summary: parse_(st.summary, null), uploads: ups, messages: outMsgs, orders: ords };
 }
 
 function tAdd_(name, grade) {
@@ -424,6 +569,26 @@ function tOverride_(q) {
     update_('uploads', row._row, { result: clip_(JSON.stringify(res), 48000), score: res.score, teacherNote: q.teacherNote != null ? clip_(q.teacherNote, 1500) : row.teacherNote, updated: now_() });
     updatePaperAvg_(row.code);
     return { ok: true, score: res.score, total: res.total };
+  });
+}
+
+/* cô bật/tắt bản trả phí cho một con (khi gia đình đã thanh toán) */
+function tPaid_(code, paid) {
+  var st = getStudent_(code);
+  if (!st) return { ok: false, error: 'bad_code' };
+  paid = clip_(String(paid || '').trim(), 40);
+  return withLock_(function () {
+    update_('students', st._row, { paid: paid });
+    if (paid) rows_('orders').forEach(function (o) { if (o.code === st.code && o.status === 'chờ liên hệ') update_('orders', o._row, { status: 'đã kích hoạt' }); });
+    return { ok: true, paid: paid };
+  });
+}
+function tOrder_(id, status) {
+  return withLock_(function () {
+    var o = find_('orders', 'id', id);
+    if (!o) throw new Error('no_order');
+    update_('orders', o._row, { status: clip_(status, 40) });
+    return { ok: true };
   });
 }
 
