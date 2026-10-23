@@ -3007,7 +3007,7 @@ function setRegion(slug){if(!REGIONS[slug])return;S.region=slug;S.regionSet=true
   const G=REG().goals||[];if(!G.some(g=>g.k===S.course.goal))S.course.goal=REG().goal_default||(G[0]||{}).k;save();renderBrand();renderRegionBar()}
 /* ô chọn khu vực trên thanh công cụ */
 function renderRegionBar(){let b=document.getElementById('regBar');if(!b){const tb=document.querySelector('header.top .topbar');if(!tb)return;b=document.createElement('label');b.id='regBar';b.className='regbar';tb.appendChild(b)}
-  b.innerHTML=`<span>Khu vực</span><select id="regTop" aria-label="Chọn khu vực thi">${regionOptionsHTML(regionKey())}</select>`;
+  b.innerHTML=`<span>Xem tỉnh, thành khác</span><select id="regTop" aria-label="Xem thông tin thi của tỉnh, thành khác" title="Bấm để chọn tỉnh, thành khác">${regionOptionsHTML(regionKey())}</select>`;
   b.querySelector('select').onchange=e=>{setRegion(e.target.value);GATE_MIN=false;go(VIEW==='diag'?'exam':VIEW)}}
 /* popup lần đầu: hỏi khu vực */
 function regionGate(){if(S.regionSet||PREVIEW)return false;let g=document.getElementById('regGate');if(g)return true;
@@ -3016,7 +3016,7 @@ function regionGate(){if(S.regionSet||PREVIEW)return false;let g=document.getEle
    <p>Tớ là Hùng. Tớ đã gom lịch thi, trường, điểm chuẩn, công thức xét tuyển, đề chuyên Anh và chia sẻ của các anh chị đỗ chuyên ở cả 34 tỉnh, thành. Chọn khu vực để tớ chỉ hiện đúng phần của cậu nhé. Cô chú phụ huynh cũng chọn ở đây ạ.</p>
    <label class="fld"><span class="small muted">Tỉnh, thành (theo địa giới mới từ 1/7/2025)</span><select id="regFirst">${regionOptionsHTML(regionKey())}</select></label>
    <div class="row" style="margin-top:12px"><button class="btn hi big" type="button" id="regGo">Xem thông tin thi</button></div>
-   <p class="small muted">Đổi khu vực lúc nào cũng được, ở ô "Khu vực" trên thanh công cụ.</p></div>`;
+   <p class="small muted">Muốn xem tỉnh, thành khác lúc nào cũng được: bấm ô "Xem tỉnh, thành khác" trên thanh công cụ.</p></div>`;
   document.body.appendChild(g);document.body.classList.add('gated');
   const sel=g.querySelector('#regFirst'),btn=g.querySelector('#regGo');const lab=()=>{btn.textContent='Xem thông tin thi ở '+(REGION_LIST.find(r=>r.slug===sel.value)||{}).name};lab();sel.onchange=lab;
   btn.onclick=()=>{setRegion(sel.value);g.remove();document.body.classList.remove('gated');go('exam')};
@@ -3086,10 +3086,11 @@ function vExam(){const RG=REG();
 }
 views.exam=vExam;
 (function(){const st=document.createElement('style');st.textContent=`
-.regbar{display:flex;flex-direction:column;gap:2px;font-size:.78rem;color:var(--bar-ink-2);min-width:150px}
-.regbar select{font:inherit;font-size:.9rem;font-weight:700;color:var(--ink);background:var(--gold-tint);border:2px solid var(--ink);border-radius:10px;padding:5px 6px;max-width:100%}
+.regbar{display:flex;flex-direction:column;gap:4px;font-size:.95rem;font-weight:700;color:var(--ink);min-width:170px;line-height:1.25}
+.regbar select{font:inherit;font-size:1.08rem;font-weight:800;color:var(--ink);background:var(--gold-tint);border:2.5px solid var(--ink);border-radius:12px;padding:9px 8px;max-width:100%;cursor:pointer;box-shadow:0 3px 0 var(--ink)}
+.regbar select:hover{background:var(--gold)}
 @media (min-width:1100px){.regbar{width:100%;min-width:0;margin-top:6px}.regbar span{text-align:center}}
-@media (max-width:600px){.regbar{min-width:0;max-width:44vw}.regbar span{display:none}}
+@media (max-width:600px){.regbar{min-width:0;max-width:46vw}.regbar span{display:none}.regbar select{font-size:.95rem;padding:6px}}
 .ix .card{margin-top:14px}.ix-tbl{width:100%;font-size:.92rem}.ix-tbl td,.ix-tbl th{vertical-align:top}.ix-tbl td.n,.ix-tbl th.n{text-align:right;white-space:nowrap}
 .ix-tbl td:first-child{min-width:150px}
 .ix-kpis{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 10px}.ix-kpis span{background:var(--agent-tint);border-radius:999px;padding:4px 12px;font-size:.92rem}
