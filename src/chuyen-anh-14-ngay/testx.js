@@ -7,7 +7,7 @@ function txFormats(){const TL=C.test_local||{};if(S.diag&&S.diag.locF)return S.d
   const p=(REG().pack||[]).filter(f=>TX_OBJ.includes(f)&&TL[f]);const out=p.slice(0,2);
   ['open_cloze','key_word','matching_headings'].forEach(f=>{if(out.length<2&&TL[f]&&!out.includes(f))out.push(f)});return out}
 const TX_KEY=k=>k==='diag'?'diagnostic':'final';
-function txDone(kind){const r=S[kind];if(!r)return false;const F=txFormats();return F.every(f=>r.loc&&r.loc[f])&&!!r.wr}
+function txDone(kind){if(!C.test_local)return true;const r=S[kind];if(!r)return false;const F=txFormats();return F.every(f=>r.loc&&r.loc[f])&&!!r.wr}
 
 /* --- phần nghe: một đoạn YouTube, nghe tối đa 2 lần khi làm bài --- */
 function txYtHTML(kind){const R=TESTS[kind].listen_yt;if(!R)return '';
@@ -27,7 +27,7 @@ function txWireYt(form,kind,state){const box=form.querySelector('.t-yt');const R
   label()}
 
 /* --- phần 4, 5: hiện sau khi nộp 45 câu --- */
-function txExtrasHTML(kind){const r=S[kind];if(!r)return '';const F=txFormats();const W=((C.test_local||{}).writing||{})[TX_KEY(kind)];
+function txExtrasHTML(kind){const r=S[kind];if(!r||!C.test_local)return '';const F=txFormats();const W=((C.test_local||{}).writing||{})[TX_KEY(kind)];
   const nLeft=F.filter(f=>!(r.loc&&r.loc[f])).length+(r.wr?0:1);
   return `<div class="card tx-ex" id="txEx"><p class="eyebrow">${kind==='diag'?'Bài đầu vào':'Bài đầu ra'} · phần 4 và 5</p><h3>${nLeft?'Còn 2 phần ngắn để so tiến bộ sau 14 buổi':'Đã xong cả 5 phần'}</h3>
    <p class="small">Hai phần này không dùng để xếp mức. Chúng đo đúng những dạng cậu sẽ luyện trong gói <b>Dạng bài riêng của đề ${esc(REG().name)}</b> và bài viết, để ${kind==='diag'?'sau 14 buổi so với bài đầu ra':'so với lúc làm bài đầu vào'}. Khoảng 20 phút, làm luôn bây giờ hoặc trước buổi 2.</p>
