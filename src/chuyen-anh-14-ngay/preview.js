@@ -149,7 +149,7 @@ function pvDay(n){const D=DAYS[n-1],W=(C.web||{})[n]||{},nn=String(n).padStart(2
   if(W.paper_easy)h+=pvSec('Bài giấy · gợi ý cho mức Nền tảng',pvGen(W.paper_easy));
   if(W.grammar_games)h+=pvSec('Game ngữ pháp',pvGen(W.grammar_games));
   [['exam','Dạng bài thi trên web · mức Chuẩn'],['exam_easy','Dạng bài thi trên web · mức Nền tảng'],['exam_plus','Dạng bài thi trên web · mức Nâng cao']].forEach(([k,t])=>{if(W[k])h+=pvSec(t,pvGen(W[k]))});
-  if(W.listening)h+=pvSec('Bài nghe (lời thoại và câu hỏi)',pvGen(W.listening));
+  {const yl=['nen','chuan','nang'].map(t=>[t,((C.real_listen||{})[t]||{})[n]]).filter(x=>x[1]);if(yl.length)h+=pvSec('Bài nghe bản ghi thật (YouTube) theo mức',yl.map(([t,R])=>`<div class="pv-part"><h4>${esc(pvLabel(t))}: <a href="https://www.youtube.com/watch?v=${encodeURIComponent(R.yt)}&t=${R.start||0}" target="_blank" rel="noopener">${esc(R.title)}</a> (${esc(R.channel||'')}, ${R.start||0}–${R.end||''} giây)</h4>${pvGen(R.items)}</div>`).join(''))}
   return h}
 function pvTestHTML(kind){const T=TESTS[kind];
   return `<div class="card pv-head"><p class="eyebrow">${T.minutes} phút · ${T.items.length} câu</p><h2>${esc(T.title_vi)}</h2></div>`+

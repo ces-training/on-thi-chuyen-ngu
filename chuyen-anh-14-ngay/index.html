@@ -886,7 +886,8 @@ function levelOfHours(h){let L=LEVELS[0];for(const l of LEVELS){if(h>=l.h)L=l}re
 const TRACKS={nen:{name:'Nền tảng',desc:'game chậm hơn, có gợi ý; bài dạng đề mức A2; bài giấy kèm trang gợi ý'},chuan:{name:'Chuẩn',desc:'nội dung A2+–B1 như thiết kế gốc'},nang:{name:'Nâng cao',desc:'game nhanh hơn, ít gợi ý; bài dạng đề mức B1+–B2; bài giấy thêm phần thử thách H'}};
 function trackFromLevel(l){if(!l)return 'chuan';if(l==='preA2'||l==='A2')return 'nen';if(l==='A2+'||l==='B1')return 'chuan';return 'nang'}
 function curTrack(){return S.track||trackFromLevel(S.diag&&S.diag.level)}
-function examFor(n){const W=(C.web&&C.web[n])||{};const t=curTrack();return (t==='nen'&&W.exam_easy&&W.exam_easy.length?W.exam_easy:t==='nang'&&W.exam_plus&&W.exam_plus.length?W.exam_plus:W.exam)||[]}
+/* khối nghe giọng máy đọc (buổi 4, 10) không dùng nữa: phần nghe chỉ dùng bản ghi thật trên YouTube ở Bước 4 */
+function examFor(n){const W=(C.web&&C.web[n])||{};const t=curTrack();return ((t==='nen'&&W.exam_easy&&W.exam_easy.length?W.exam_easy:t==='nang'&&W.exam_plus&&W.exam_plus.length?W.exam_plus:W.exam)||[]).filter(b=>b.format!=='listening')}
 function trackBar(){const t=curTrack();const L=S.diag&&LEVELS.find(l=>l.k===S.diag.level);
   return `<div class="trackbar"><span>Mức của cậu: <b>${TRACKS[t].name}</b>${S.track?' (cậu tự chọn)':L?' (theo bài đầu vào: '+esc(L.name)+')':' (chưa làm bài đầu vào)'}</span><label class="small">Đổi mức <select id="trackSel">${Object.entries(TRACKS).map(([k,v])=>`<option value="${k}" ${k===t?'selected':''}>${v.name}</option>`).join('')}</select></label><span class="small muted">${esc(TRACKS[t].desc)}</span>${trackSuggestHTML()}</div>`}
 function wireTrack(after){const sel=$('#trackSel');if(sel)sel.onchange=()=>{const v=sel.value;S.track=v===trackFromLevel(S.diag&&S.diag.level)?null:v;save();after()};
@@ -1050,10 +1051,10 @@ const Q_STEPS=[
   {k:'check',card:'checkCard',label:'Kiểm tra cuối buổi',peep:'an',c:'#BFE6EE'}];
 function questState(n){const r=S.days[n]||{};const W=(C.web&&C.web[n])||{};
   const g=Object.keys(r.games||{}).length,gt=gamesForDay(n).length,x=Object.keys(r.exam||{}).length,xt=examFor(n).length;
-  const real=((((C.media_listen||{})[n])||{})[curTrack()]||[]).length,yt=(((C.real_listen||{})[curTrack()])||{})[n],lsN=(W.listening?2:0)+(real||yt?1:0),l=Object.keys(r.listen||{}).length;
+  const real=((((C.media_listen||{})[n])||{})[curTrack()]||[]).length,yt=(((C.real_listen||{})[curTrack()])||{})[n],lsN=(yt?1:0),l=(r.listen||{}).yt?1:0;
   let up=false;try{up=typeof CLOUD!=='undefined'&&!!CLOUD&&(CLOUD.uploads||[]).some(u=>u.day===n)}catch(e){}
   return {vid:{done:!!r.video||g>0},game:{done:gt>0&&g>=gt,part:g>0,txt:`${g}/${gt}`},exam:xt?{done:x>=xt,part:x>0,txt:`${x}/${xt}`}:null,loc:(()=>{const L=localFor(n);if(!L.length)return null;const k=L.filter(o=>(r.local||{})[o.key]).length;return {done:k>=L.length,part:k>0,txt:`${k}/${L.length}`}})(),
-    ls:lsN?{done:l>=Math.min(2,lsN),part:l>0,txt:`${l}/${Math.min(2,lsN)}`}:null,pdf:{done:!!r.paper||up},check:{done:!!r.web}}}
+    ls:lsN?{done:l>=1,part:l>0,txt:`${l}/1`}:null,pdf:{done:!!r.paper||up},check:{done:!!r.web}}}
 function streakDays(){const ds=new Set();const add=t=>{if(t)ds.add(new Date(t).toDateString())};
   Object.values(S.days).forEach(r=>{if(!r)return;add(r.video);if(r.web)add(r.web.at);if(r.paper)add(r.paper.at);[r.games,r.exam,r.listen].forEach(o=>Object.values(o||{}).forEach(y=>add(y&&y.at)))});
   /* chuỗi giữ lửa: nghỉ 1 ngày giữa hai buổi không làm đứt chuỗi (học 1–2 ngày một buổi vẫn là đều) */
@@ -1273,7 +1274,7 @@ function renderYtListen(box,R,saved,onDone){
 const pad2=n=>String(n).padStart(2,'0');
 function gPill(n){const g=(S.days[n]||{}).games||{};const k=Object.keys(g).length;const t=gamesForDay(n).length;return `<span class="pill ${k>=t?'good':''}">${k>=t?'✓ ':''}Game ${k}/${t}</span>`}
 function xPill(n){const t=examFor(n).length;if(!t)return '';const x=(S.days[n]||{}).exam||{};const k=Object.keys(x).length;return `<span class="pill ${k>=t?'good':''}">${k>=t?'✓ ':''}Dạng bài thi ${k}/${t}</span>`}
-function lPill(n){const W=(C.web&&C.web[n])||{};if(!W.listening&&!(C.media_listen||{})[n])return '';const l=(S.days[n]||{}).listen||{};const k=Object.keys(l).length;const c=Object.values(l).reduce((t,x)=>t+x.correct,0),t=Object.values(l).reduce((t,x)=>t+x.total,0);return `<span class="pill ${k>=2?'good':''}">${k>=2?'✓ ':''}Nghe ${k?c+'/'+t:'0/2 phần'}</span>`}
+function lPill(n){const yt=(((C.real_listen||{})[curTrack()])||{})[n];if(!yt)return '';const r=((S.days[n]||{}).listen||{}).yt;return `<span class="pill ${r?'good':''}">${r?'✓ Nghe '+r.correct+'/'+r.total:'Nghe: chưa làm'}</span>`}
 function learnHTML(n){const D=DAYS[n-1];const W=(C.web&&C.web[n])||{};const MD=(C.media&&C.media[n])||{};const games=gamesForDay(n);const ex=examFor(n);const rec=S.days[n]||{};const tr=curTrack();const gs=rec.games||{},xs=rec.exam||{};
   const g=D.grammar;let h='';
   const vids=[];if(MD.video)vids.push(Object.assign({lang:'en'},MD.video));((C.media_vi||{})[n]||[]).forEach(v=>vids.push(Object.assign({lang:'vi'},v)));if(tr==='nen')vids.sort((a,b)=>(a.lang==='vi'?0:1)-(b.lang==='vi'?0:1));
@@ -1286,7 +1287,7 @@ function learnHTML(n){const D=DAYS[n-1];const W=(C.web&&C.web[n])||{};const MD=(
   h+=`<div class="card" id="gameCard"><h3 class="ih">${em('video-game')}Bước 2 · Chơi game ôn từ và ngữ pháp</h3><div class="g-tabs" role="tablist">${games.map((gm,i)=>{const r=gs[gm.key];return `<button type="button" role="tab" class="g-tab" data-g="${i}" aria-selected="${i===0}">${em(G_ICON[gm.type]||'sparkles','',28)}<span class="g-tt"><b>${esc(G_NAME[gm.type])}${gm.isNew?' <i class="g-new">Mới</i>':''}</b><small>${esc(gm.title)}</small></span>${r?gStarHTML(r.stars||0):''}</button>`}).join('')}</div><div class="g-box" id="gameBox"></div></div>`;
   if(ex.length)h+=`<div class="card" id="examCard"><h3 class="ih">${em('bullseye')}Bước 3 · Làm quen dạng bài thi thật</h3><div class="x-tabs">${ex.map((b,i)=>{const r=xs[b.format];return `<button type="button" class="x-tab" data-x="${i}" aria-selected="${i===0}">${esc(X_FMT[b.format]||b.format)}${r?` <span class="pill ${r.correct/r.total>=.6?'good':'warn'}">${r.correct}/${r.total}</span>`:''}</button>`}).join('')}</div><div id="examBox"></div></div>`;
   h+=localCardHTML(n);
-  const LS=((C.web&&C.web[n])||{}).listening;const ls=LS&&(LS[tr]||LS.chuan);
+  const ls=null; // bài nghe giọng máy đọc đã bỏ: chất lượng không đạt
   const real=(((C.media_listen||{})[n]||{})[tr])||[];const rl=(rec.listen||{}).real;
   const RL=(((C.real_listen||{})[tr])||{})[n];learnHTML.rl=RL;
   if(ls||real.length||RL)h+=`<div class="card" id="lsCard"><h3 class="ih">${em('television')}Bước 4 · Luyện nghe${REG().no_listen?' (tự chọn)':' (khuôn phần nghe đề Sở)'}</h3>${REG().no_listen?`<p class="ls-opt small">Đề chuyên Anh ${esc(REG().name)} không có phần nghe, nên bước này là <b>tự chọn</b>. Thời gian ít thì cậu dành cho Bước 3+ (dạng bài riêng của đề) trước nhé. Nghe vẫn giúp cậu nhớ từ và cách dùng câu.</p>`:''}
@@ -1319,7 +1320,7 @@ function wireLearn(n){
     $('#examCard .x-tabs').onclick=e=>{const b=e.target.closest('.x-tab');if(b)openX(+b.dataset.x)};openX(0)}
   wireLocal(n,()=>{const rec=S.days[n]||{};const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPackPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')});
   const rs=$('#rlSave');if(rs)rs.onclick=()=>{const c=parseInt($('#rlC').value,10),t=parseInt($('#rlT').value,10);if(!(t>0)||!(c>=0)||c>t){$('#rlMsg').textContent='Ghi số câu đúng và tổng số câu nhé.';return}const rec=S.days[n]=S.days[n]||{};rec.listen=rec.listen||{};rec.listen.real={correct:c,total:t,at:Date.now()};save();$('#rlMsg').textContent='Đã lưu ✓';const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPackPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')};
-  const yb=$('#ylBox');if(yb&&learnHTML.rl)renderYtListen(yb,learnHTML.rl,((S.days[n]||{}).listen||{}).yt,r=>{const rec=S.days[n]=S.days[n]||{};rec.listen=rec.listen||{};rec.listen.yt={correct:r.correct,total:r.total,answers:r.answers,at:Date.now()};save();});
+  const yb=$('#ylBox');if(yb&&learnHTML.rl)renderYtListen(yb,learnHTML.rl,((S.days[n]||{}).listen||{}).yt,r=>{const rec=S.days[n]=S.days[n]||{};rec.listen=rec.listen||{};rec.listen.yt={correct:r.correct,total:r.total,answers:r.answers,at:Date.now()};save();{const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPackPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')}});
   const lb=$('#lsBox');if(lb&&learnHTML.ls)renderListening(lb,learnHTML.ls,curTrack(),null,(key,r)=>{const rec=S.days[n]=S.days[n]||{};rec.listen=rec.listen||{};rec.listen[key]={correct:r.correct,total:r.total,at:Date.now()};save();
     const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPackPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')});
 }
