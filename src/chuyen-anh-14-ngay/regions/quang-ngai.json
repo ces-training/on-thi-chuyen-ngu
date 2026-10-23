@@ -17,13 +17,121 @@
    "ac_add": 2.5,
    "ac_cap": 10,
    "ac_label": "Anh chung (đề chung)",
-   "difficulty": null,
-   "difficulty_evidence": "Chưa tìm được đề chuyên Anh Lê Khiết hoặc Nguyễn Tất Thành. Mô tả chính thức Kon Tum 2024: môn chuyên Tiếng Anh 'trắc nghiệm khách quan kết hợp tự luận', 150 phút (KH 52); Quảng Ngãi 2026: môn chuyên 150 phút (QĐ 931). Chưa rõ có phần nghe. Mức điểm chuẩn Lê Khiết 38–39,4/50 (cao nhất trường nhiều năm) cho thấy thí sinh đỗ đạt ≈ 7,5–8/10 mỗi bài.",
+   "difficulty": "B2",
+   "difficulty_evidence": "Ước từ đề Kon Tum 2025 (springboard.vn): nghe phỏng vấn/bài giảng tốc độ tự nhiên, trắc nghiệm có đảo ngữ, điều kiện phức, thành ngữ; 4 bài đọc dài, học thuật với matching và điền câu; sửa 10 lỗi trong đoạn; essay ≥150 từ chủ đề thời sự. Springboard nhận xét 'khá khó, phù hợp học sinh có năng lực tiếng Anh tốt'. Điểm chuẩn Nguyễn Tất Thành 2025 chỉ 28,3/50 (chuyên ×2) trong khi Lê Khiết 38,65/50 — đề Kon Tum khó so với mặt bằng Kon Tum; năm 2026 chung đề, Lê Khiết 39,4 và Nguyễn Tất Thành 34,65.",
    "minutes": 150,
-   "has_listening": null,
-   "essay_words": null,
-   "sections": [],
-   "sample_links": []
+   "has_listening": true,
+   "essay_words": 150,
+   "sections": [
+    {
+     "format": "listening",
+     "items": 15,
+     "points": 2.0,
+     "note": "I. Listening, 2 part, mỗi part nghe 2 lần: Part 1 nghe phỏng vấn chọn A/B/C (5 câu, 1,0đ); Part 2 nghe bài giảng điền tối đa 3 từ (10 câu, 1,0đ) — theo đề Kon Tum 2025"
+    },
+    {
+     "format": "pronunciation",
+     "items": 4,
+     "points": 0.3,
+     "note": "II. Use of Language Part 1 mở đầu bằng ngữ âm (phát âm + trọng âm, ~8 câu ở đề Kon Tum 2025); điểm gộp với trắc nghiệm từ vựng–ngữ pháp thành 1,5đ"
+    },
+    {
+     "format": "stress",
+     "items": 4,
+     "points": 0.3,
+     "note": "Trọng âm, cùng Part 1 với ngữ âm"
+    },
+    {
+     "format": "sentence_completion",
+     "items": 11,
+     "points": 0.9,
+     "note": "II Part 1 tiếp: trắc nghiệm A–D từ vựng, cụm từ, ngữ pháp (đảo ngữ, điều kiện phức, thành ngữ) — Kon Tum 2025"
+    },
+    {
+     "format": "error_id",
+     "items": 10,
+     "points": 1.0,
+     "note": "II Part 2: tìm và sửa 10 lỗi trong đoạn văn ~17 dòng (phải tự sửa lỗi) — Kon Tum 2025"
+    },
+    {
+     "format": "word_formation",
+     "items": 5,
+     "points": 0.5,
+     "note": "II Part 3: chia dạng từ in hoa cuối câu — Kon Tum 2025"
+    },
+    {
+     "format": "open_cloze",
+     "items": 5,
+     "points": 0.5,
+     "note": "III. Reading Part 1: điền một từ vào đoạn văn (nhiên liệu sinh học từ tảo) — Kon Tum 2025"
+    },
+    {
+     "format": "reading_mcq",
+     "items": 5,
+     "points": 0.5,
+     "note": "III Part 2: đọc hiểu trắc nghiệm A–D — Kon Tum 2025"
+    },
+    {
+     "format": "matching_headings",
+     "items": 10,
+     "points": 1.0,
+     "note": "III Part 3: ghép 10 nhận định với 4 mục A–D của bài báo (mỗi mục dùng nhiều lần) — Kon Tum 2025"
+    },
+    {
+     "format": "gap_text",
+     "items": 5,
+     "points": 1.0,
+     "note": "III Part 4: điền 5 câu bị lược vào bài đọc, 1 câu thừa, có ví dụ mẫu — Kon Tum 2025"
+    },
+    {
+     "format": "transformation",
+     "items": 5,
+     "points": 0.5,
+     "note": "IV. Writing Part 1a: viết lại câu giữ nghĩa — Kon Tum 2025"
+    },
+    {
+     "format": "key_word",
+     "items": 5,
+     "points": 0.5,
+     "note": "IV Part 1b: viết lại câu với từ gợi ý, tối đa 5 từ kể cả từ gợi ý — Kon Tum 2025"
+    },
+    {
+     "format": "essay",
+     "items": 1,
+     "points": 1.0,
+     "note": "IV Part 2: bài luận tối thiểu 150 từ, dạng nêu ý kiến (đề 2025: học sinh có nên dùng AI như ChatGPT làm bài tập về nhà) — Kon Tum 2025"
+    }
+   ],
+   "sample_links": [],
+   "predicted": {
+    "used": true,
+    "basis": "Dự đoán theo đề thật Kon Tum 2025 (Sở GD&ĐT Kon Tum, thi 4/6/2025, THPT chuyên Nguyễn Tất Thành): 150 phút, thang 10 = Nghe 2 + Ngữ pháp–từ vựng 3 + Đọc 3 + Viết 2. Đây là đề duy nhất đọc được trong hai tỉnh cũ. Không tìm được đề chuyên Anh Quảng Ngãi cũ (Lê Khiết) năm nào, cũng không đọc được đề chung 2026 của Sở mới (springboard.vn có liệt kê 'Quảng Ngãi' trong tuyển tập đề chuyên Anh 2026-2027 nhưng chưa có trang riêng). Sở mới đặt tại Quảng Ngãi nên đề 2026 và các năm tới nhiều khả năng do bộ phận ra đề Quảng Ngãi cũ chủ trì — cấu trúc thật có thể khác đề Kon Tum; các điểm gần như chắc chắn: 150 phút (QĐ 931/2026, KH 52 Kon Tum 2024, đề Kon Tum 2025), 'trắc nghiệm khách quan kết hợp tự luận' (KH 52 Kon Tum 2024), có viết lại câu và bài viết tự luận. Phần nghe: chắc với Kon Tum, chưa xác nhận với Quảng Ngãi.",
+    "confidence": "thấp",
+    "speaking": false,
+    "evidence": [
+     {
+      "tinh_cu": "Kon Tum",
+      "truong": "THPT chuyên Nguyễn Tất Thành",
+      "nam": 2025,
+      "url": "https://springboard.vn/de-thi-chuyen-anh-10-kon-tum-2025-2026/",
+      "loai": "đề thật"
+     },
+     {
+      "tinh_cu": "Kon Tum",
+      "truong": "THPT chuyên Nguyễn Tất Thành",
+      "nam": 2024,
+      "url": "https://cdn.thuvienphapluat.vn/uploads/phapluat/2022-2/TVA/KH-52-Tuyen-sinh-24-25-kon-tum.pdf",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Quảng Ngãi",
+      "truong": "THPT chuyên Lê Khiết",
+      "nam": 2026,
+      "url": "https://luatvietnam.vn/giao-duc/quyet-dinh-931-qd-ubnd-quang-ngai-phe-duyet-ke-hoach-tuyen-sinh-lop-10-nam-hoc-2026-2027-430177-d2.html",
+      "loai": "công văn"
+     }
+    ]
+   }
   }
  },
  "formulas": {
@@ -116,13 +224,121 @@
   "ac_add": 2.5,
   "ac_cap": 10,
   "ac_label": "Anh chung (đề chung)",
-  "difficulty": null,
-  "difficulty_evidence": "Chưa tìm được đề chuyên Anh Lê Khiết hoặc Nguyễn Tất Thành. Mô tả chính thức Kon Tum 2024: môn chuyên Tiếng Anh 'trắc nghiệm khách quan kết hợp tự luận', 150 phút (KH 52); Quảng Ngãi 2026: môn chuyên 150 phút (QĐ 931). Chưa rõ có phần nghe. Mức điểm chuẩn Lê Khiết 38–39,4/50 (cao nhất trường nhiều năm) cho thấy thí sinh đỗ đạt ≈ 7,5–8/10 mỗi bài.",
+  "difficulty": "B2",
+  "difficulty_evidence": "Ước từ đề Kon Tum 2025 (springboard.vn): nghe phỏng vấn/bài giảng tốc độ tự nhiên, trắc nghiệm có đảo ngữ, điều kiện phức, thành ngữ; 4 bài đọc dài, học thuật với matching và điền câu; sửa 10 lỗi trong đoạn; essay ≥150 từ chủ đề thời sự. Springboard nhận xét 'khá khó, phù hợp học sinh có năng lực tiếng Anh tốt'. Điểm chuẩn Nguyễn Tất Thành 2025 chỉ 28,3/50 (chuyên ×2) trong khi Lê Khiết 38,65/50 — đề Kon Tum khó so với mặt bằng Kon Tum; năm 2026 chung đề, Lê Khiết 39,4 và Nguyễn Tất Thành 34,65.",
   "minutes": 150,
-  "has_listening": null,
-  "essay_words": null,
-  "sections": [],
-  "sample_links": []
+  "has_listening": true,
+  "essay_words": 150,
+  "sections": [
+   {
+    "format": "listening",
+    "items": 15,
+    "points": 2.0,
+    "note": "I. Listening, 2 part, mỗi part nghe 2 lần: Part 1 nghe phỏng vấn chọn A/B/C (5 câu, 1,0đ); Part 2 nghe bài giảng điền tối đa 3 từ (10 câu, 1,0đ) — theo đề Kon Tum 2025"
+   },
+   {
+    "format": "pronunciation",
+    "items": 4,
+    "points": 0.3,
+    "note": "II. Use of Language Part 1 mở đầu bằng ngữ âm (phát âm + trọng âm, ~8 câu ở đề Kon Tum 2025); điểm gộp với trắc nghiệm từ vựng–ngữ pháp thành 1,5đ"
+   },
+   {
+    "format": "stress",
+    "items": 4,
+    "points": 0.3,
+    "note": "Trọng âm, cùng Part 1 với ngữ âm"
+   },
+   {
+    "format": "sentence_completion",
+    "items": 11,
+    "points": 0.9,
+    "note": "II Part 1 tiếp: trắc nghiệm A–D từ vựng, cụm từ, ngữ pháp (đảo ngữ, điều kiện phức, thành ngữ) — Kon Tum 2025"
+   },
+   {
+    "format": "error_id",
+    "items": 10,
+    "points": 1.0,
+    "note": "II Part 2: tìm và sửa 10 lỗi trong đoạn văn ~17 dòng (phải tự sửa lỗi) — Kon Tum 2025"
+   },
+   {
+    "format": "word_formation",
+    "items": 5,
+    "points": 0.5,
+    "note": "II Part 3: chia dạng từ in hoa cuối câu — Kon Tum 2025"
+   },
+   {
+    "format": "open_cloze",
+    "items": 5,
+    "points": 0.5,
+    "note": "III. Reading Part 1: điền một từ vào đoạn văn (nhiên liệu sinh học từ tảo) — Kon Tum 2025"
+   },
+   {
+    "format": "reading_mcq",
+    "items": 5,
+    "points": 0.5,
+    "note": "III Part 2: đọc hiểu trắc nghiệm A–D — Kon Tum 2025"
+   },
+   {
+    "format": "matching_headings",
+    "items": 10,
+    "points": 1.0,
+    "note": "III Part 3: ghép 10 nhận định với 4 mục A–D của bài báo (mỗi mục dùng nhiều lần) — Kon Tum 2025"
+   },
+   {
+    "format": "gap_text",
+    "items": 5,
+    "points": 1.0,
+    "note": "III Part 4: điền 5 câu bị lược vào bài đọc, 1 câu thừa, có ví dụ mẫu — Kon Tum 2025"
+   },
+   {
+    "format": "transformation",
+    "items": 5,
+    "points": 0.5,
+    "note": "IV. Writing Part 1a: viết lại câu giữ nghĩa — Kon Tum 2025"
+   },
+   {
+    "format": "key_word",
+    "items": 5,
+    "points": 0.5,
+    "note": "IV Part 1b: viết lại câu với từ gợi ý, tối đa 5 từ kể cả từ gợi ý — Kon Tum 2025"
+   },
+   {
+    "format": "essay",
+    "items": 1,
+    "points": 1.0,
+    "note": "IV Part 2: bài luận tối thiểu 150 từ, dạng nêu ý kiến (đề 2025: học sinh có nên dùng AI như ChatGPT làm bài tập về nhà) — Kon Tum 2025"
+   }
+  ],
+  "sample_links": [],
+  "predicted": {
+   "used": true,
+   "basis": "Dự đoán theo đề thật Kon Tum 2025 (Sở GD&ĐT Kon Tum, thi 4/6/2025, THPT chuyên Nguyễn Tất Thành): 150 phút, thang 10 = Nghe 2 + Ngữ pháp–từ vựng 3 + Đọc 3 + Viết 2. Đây là đề duy nhất đọc được trong hai tỉnh cũ. Không tìm được đề chuyên Anh Quảng Ngãi cũ (Lê Khiết) năm nào, cũng không đọc được đề chung 2026 của Sở mới (springboard.vn có liệt kê 'Quảng Ngãi' trong tuyển tập đề chuyên Anh 2026-2027 nhưng chưa có trang riêng). Sở mới đặt tại Quảng Ngãi nên đề 2026 và các năm tới nhiều khả năng do bộ phận ra đề Quảng Ngãi cũ chủ trì — cấu trúc thật có thể khác đề Kon Tum; các điểm gần như chắc chắn: 150 phút (QĐ 931/2026, KH 52 Kon Tum 2024, đề Kon Tum 2025), 'trắc nghiệm khách quan kết hợp tự luận' (KH 52 Kon Tum 2024), có viết lại câu và bài viết tự luận. Phần nghe: chắc với Kon Tum, chưa xác nhận với Quảng Ngãi.",
+   "confidence": "thấp",
+   "speaking": false,
+   "evidence": [
+    {
+     "tinh_cu": "Kon Tum",
+     "truong": "THPT chuyên Nguyễn Tất Thành",
+     "nam": 2025,
+     "url": "https://springboard.vn/de-thi-chuyen-anh-10-kon-tum-2025-2026/",
+     "loai": "đề thật"
+    },
+    {
+     "tinh_cu": "Kon Tum",
+     "truong": "THPT chuyên Nguyễn Tất Thành",
+     "nam": 2024,
+     "url": "https://cdn.thuvienphapluat.vn/uploads/phapluat/2022-2/TVA/KH-52-Tuyen-sinh-24-25-kon-tum.pdf",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Quảng Ngãi",
+     "truong": "THPT chuyên Lê Khiết",
+     "nam": 2026,
+     "url": "https://luatvietnam.vn/giao-duc/quyet-dinh-931-qd-ubnd-quang-ngai-phe-duyet-ke-hoach-tuyen-sinh-lop-10-nam-hoc-2026-2027-430177-d2.html",
+     "loai": "công văn"
+    }
+   ]
+  }
  },
  "exam_2026": {
   "dates": "31/5–2/6/2026 (QĐ 931/QĐ-UBND Quảng Ngãi; tuyensinh247 ghi '30/5 – 1,2/6'). Môn chung: sáng 31/5 Ngữ văn 120' (7h30); chiều 31/5 Toán 120' (14h00); sáng 1/6 Tiếng Anh 90' (7h30); môn chuyên 150' — theo kế hoạch của một trường THPT dẫn KH 721/KH-SGDĐT; ngày thi môn chuyên không ghi rõ trong văn bản đọc được (suy ra 2/6). Điểm thi và điểm chuẩn dự kiến công bố 16/6/2026.",

@@ -92,7 +92,9 @@ def coverage(r):
 def pack_for(r):
     if r.get("slug") == "ha-noi": return PACK_HN
     rows = coverage(r)
-    if not rows: return PACK_DEFAULT
+    if not rows:
+        # chưa rõ khung đề nhưng văn bản sở xác nhận có thi nói (Lào Cai)
+        return PACK_DEFAULT + (["speaking"] if ((r.get("paper") or {}).get("predicted") or {}).get("speaking") else [])
     pri = lambda row: (0 if PACK_OF[row["k"]] == "essay" else 1, -(row["items"] or 0))
     out = []
     for row in sorted([x for x in rows if x["k"] in PACK_OF], key=pri):
@@ -102,7 +104,7 @@ def calc_view(r):
     v = {k: r[k] for k in CALC_KEYS if k in r}
     v["pack"] = pack_for(r)
     pr = (r.get("paper") or {}).get("predicted")
-    if pr: v["pred"] = {"confidence": pr.get("confidence")}
+    if pr and pr.get("used"): v["pred"] = {"confidence": pr.get("confidence")}
     cov = coverage(r)
     if cov: v["cov"] = cov
     hl = (r.get("paper") or {}).get("has_listening")

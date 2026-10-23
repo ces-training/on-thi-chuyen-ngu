@@ -1,0 +1,142 @@
+{
+ "slug": "lang-son",
+ "predicted": {
+  "minutes": 150,
+  "scale": 10,
+  "has_listening": false,
+  "essay_words": null,
+  "sections": [
+   {
+    "format": "pronunciation",
+    "items": 5,
+    "points": null,
+    "note": "Dự đoán theo mẫu chung đề chuyên các tỉnh miền núi phía Bắc không thi nghe (Thái Nguyên, Cao Bằng); đề chung Lạng Sơn 2026 cũng mở đầu bằng ngữ âm"
+   },
+   {
+    "format": "stress",
+    "items": 5,
+    "points": null,
+    "note": "Dự đoán"
+   },
+   {
+    "format": "sentence_completion",
+    "items": 15,
+    "points": null,
+    "note": "Trắc nghiệm ngữ pháp, từ vựng, chức năng giao tiếp; dự đoán"
+   },
+   {
+    "format": "error_id",
+    "items": 5,
+    "points": null,
+    "note": "Dự đoán"
+   },
+   {
+    "format": "word_formation",
+    "items": 10,
+    "points": null,
+    "note": "Đề chung Lạng Sơn 2026 đã có dạng này (4 câu); đề chuyên nhiều khả năng mở rộng"
+   },
+   {
+    "format": "cloze",
+    "items": 10,
+    "points": null,
+    "note": "Đề chung 2026 có cloze 6 câu; dự đoán đề chuyên có"
+   },
+   {
+    "format": "open_cloze",
+    "items": 10,
+    "points": null,
+    "note": "Dự đoán"
+   },
+   {
+    "format": "reading_mcq",
+    "items": 10,
+    "points": null,
+    "note": "Dự đoán"
+   },
+   {
+    "format": "key_word",
+    "items": 5,
+    "points": null,
+    "note": "Dự đoán"
+   },
+   {
+    "format": "transformation",
+    "items": 5,
+    "points": null,
+    "note": "Dự đoán"
+   },
+   {
+    "format": "paragraph_writing",
+    "items": 1,
+    "points": null,
+    "note": "Dự đoán có bài viết ngắn; độ dài chưa rõ"
+   }
+  ],
+  "difficulty": null,
+  "difficulty_evidence": "Chưa đọc được đề chuyên Anh Chu Văn An nào. Chỉ biết: 3 bài chung + 1 bài chuyên; Tiếng Anh chung trắc nghiệm kết hợp tự luận 60 phút (QĐ 389/QĐ-UBND 2026); thời gian môn chuyên do Giám đốc Sở quy định (lượt trước ghi 150 phút); không quy đổi chứng chỉ ngoại ngữ."
+ },
+ "basis": "Dự đoán theo văn bản tỉnh (QĐ 389/QĐ-UBND 2026: 3 bài chung Toán, Văn, Tiếng Anh + 1 bài chuyên; Tiếng Anh chung 60 phút trắc nghiệm kết hợp tự luận) và đề tham khảo Tiếng Anh chung 2026 của Sở (ngữ âm 4, trắc nghiệm 8, word formation 4, cloze 6, đọc hiểu…) vì không tìm được đề chuyên Anh Lạng Sơn năm nào (2019–2026) trên các trang tổng hợp, trang Sở hay báo. Tỉnh không sáp nhập. Dạng bài và số câu trong predicted là mẫu chung vùng miền núi phía Bắc không thi nghe; chỉ dạng word formation, cloze, đọc hiểu có cơ sở gián tiếp từ đề chung.",
+ "confidence": "thấp",
+ "evidence": [
+  {
+   "tinh_cu": "Lạng Sơn",
+   "truong": "THPT Chuyên Chu Văn An",
+   "nam": 2026,
+   "url": "https://luatvietnam.vn/giao-duc/quyet-dinh-389-qd-ubnd-lang-son-2026-phe-duyet-ke-hoach-tuyen-sinh-thpt-nam-hoc-2026-2027-427987-d2.html",
+   "loai": "công văn",
+   "sections_seen": [],
+   "note": "QĐ 389/QĐ-UBND: thí sinh chuyên thi 3 bài chung + 1 bài chuyên; Tiếng Anh chung trắc nghiệm kết hợp tự luận 60 phút; thời gian môn chuyên do Giám đốc Sở quy định; không quy đổi chứng chỉ ngoại ngữ."
+  },
+  {
+   "tinh_cu": "Lạng Sơn",
+   "truong": "Sở Lạng Sơn (Anh chung, không phải đề chuyên)",
+   "nam": 2026,
+   "url": "https://vietjack.com/de-thi-vao-lop-10-mon-tieng-anh/de-minh-hoa-tieng-anh-vao-lop-10-lang-son-nam-2026.jsp",
+   "loai": "đề minh hoạ Anh chung",
+   "sections_seen": [
+    {
+     "format": "pronunciation",
+     "items": 4,
+     "note": "ĐỀ CHUNG (không phải đề chuyên) – đề tham khảo Sở GD&ĐT Lạng Sơn 2026, 60 phút: ngữ âm 4 câu (1,0 đ)"
+    },
+    {
+     "format": "sentence_completion",
+     "items": 8,
+     "note": "Đề chung: 8 câu ngữ pháp/từ vựng/giao tiếp (2,0 đ)"
+    },
+    {
+     "format": "word_formation",
+     "items": 4,
+     "note": "Đề chung: 4 câu (1,0 đ)"
+    },
+    {
+     "format": "cloze",
+     "items": 6,
+     "note": "Đề chung: 6 câu (1,5 đ)"
+    },
+    {
+     "format": "reading_mcq",
+     "items": null,
+     "note": "Đề chung: đọc hiểu (1,5 đ), phần sau bị cắt"
+    }
+   ],
+   "note": "Chỉ là đề chung; dùng để suy dạng bài nền (ngữ âm, word formation, cloze, đọc hiểu) mà đề chuyên có khả năng mở rộng."
+  },
+  {
+   "tinh_cu": "Lạng Sơn",
+   "truong": "THPT Chuyên Chu Văn An",
+   "nam": 2026,
+   "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/thi-vao-lop-10-lang-son-may-mon-20262027-138083585.html",
+   "loai": "công văn",
+   "sections_seen": [],
+   "note": "Xác nhận cấu trúc môn thi; không mô tả đề chuyên."
+  }
+ ],
+ "gaps": [
+  "Không tìm được đề chuyên Anh Chu Văn An Lạng Sơn năm nào (2019–2026), kể cả dạng ảnh; không có bài báo/phân tích đề chuyên.",
+  "Thời gian làm bài môn chuyên 2026 do Sở quy định riêng (chưa đọc được văn bản Sở; lượt trước ghi 150 phút).",
+  "Chưa xác định có nghe hay không, dạng và độ dài bài viết, độ khó.",
+  "Dạng bài, số câu trong predicted là ước lượng theo mẫu vùng; cần thay bằng đề thật khi có."
+ ]
+}

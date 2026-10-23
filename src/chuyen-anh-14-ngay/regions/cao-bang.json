@@ -20,7 +20,43 @@
    "has_listening": null,
    "essay_words": null,
    "sections": [],
-   "sample_links": []
+   "sample_links": [],
+   "predicted": {
+    "used": false,
+    "basis": "Dự đoán theo văn bản của Sở GD&ĐT Cao Bằng và Trường THPT Chuyên Cao Bằng (150 phút, thang 10, hệ số 2, 'kết hợp trắc nghiệm và tự luận', không nhắc phần nghe) vì không tìm được bất kỳ đề chuyên Anh Cao Bằng nào công khai (2021–2026) trên tuyensinh247, hoatieu, vietjack, loigiaihay, thuvienphapluat, springboard, doctailieu, violet, 123docz hay trang trường. Danh sách dạng bài là mẫu chung của đề chuyên các tỉnh miền núi phía Bắc không thi nghe (Thái Nguyên 2026, Phú Thọ); số câu chỉ là ước lượng. Tỉnh không sáp nhập nên không có tỉnh cũ khác để đối chiếu.",
+    "confidence": "thấp",
+    "speaking": false,
+    "evidence": [
+     {
+      "tinh_cu": "Cao Bằng",
+      "truong": "THPT Chuyên Cao Bằng",
+      "nam": 2026,
+      "url": "https://thptchuyencaobang.edu.vn/uploads/news/2026_04/tb-ts-10-chuyen-nam-hoc-26-27.pdf",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Cao Bằng",
+      "truong": "THPT Chuyên Cao Bằng",
+      "nam": 2026,
+      "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/cac-mon-thi-vao-lop-10-20262027-cao-bang-may-mon-138078725.html",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Cao Bằng",
+      "truong": "THPT Chuyên Cao Bằng",
+      "nam": 2022,
+      "url": "https://storage-vnportal.vnpt.vn/cbg-ubnd/sitefolders/sgddt/4974/2022/t4/633.pdf",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Cao Bằng",
+      "truong": "THPT Chuyên Cao Bằng",
+      "nam": 2026,
+      "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/full-dap-an-de-thi-vao-lop-10-tieng-anh-cao-bang-2026-nhu-the-nao-138092458.html",
+      "loai": "bài báo"
+     }
+    ]
+   }
   }
  },
  "formulas": {
@@ -88,7 +124,43 @@
   "has_listening": null,
   "essay_words": null,
   "sections": [],
-  "sample_links": []
+  "sample_links": [],
+  "predicted": {
+   "used": false,
+   "basis": "Dự đoán theo văn bản của Sở GD&ĐT Cao Bằng và Trường THPT Chuyên Cao Bằng (150 phút, thang 10, hệ số 2, 'kết hợp trắc nghiệm và tự luận', không nhắc phần nghe) vì không tìm được bất kỳ đề chuyên Anh Cao Bằng nào công khai (2021–2026) trên tuyensinh247, hoatieu, vietjack, loigiaihay, thuvienphapluat, springboard, doctailieu, violet, 123docz hay trang trường. Danh sách dạng bài là mẫu chung của đề chuyên các tỉnh miền núi phía Bắc không thi nghe (Thái Nguyên 2026, Phú Thọ); số câu chỉ là ước lượng. Tỉnh không sáp nhập nên không có tỉnh cũ khác để đối chiếu.",
+   "confidence": "thấp",
+   "speaking": false,
+   "evidence": [
+    {
+     "tinh_cu": "Cao Bằng",
+     "truong": "THPT Chuyên Cao Bằng",
+     "nam": 2026,
+     "url": "https://thptchuyencaobang.edu.vn/uploads/news/2026_04/tb-ts-10-chuyen-nam-hoc-26-27.pdf",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Cao Bằng",
+     "truong": "THPT Chuyên Cao Bằng",
+     "nam": 2026,
+     "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/cac-mon-thi-vao-lop-10-20262027-cao-bang-may-mon-138078725.html",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Cao Bằng",
+     "truong": "THPT Chuyên Cao Bằng",
+     "nam": 2022,
+     "url": "https://storage-vnportal.vnpt.vn/cbg-ubnd/sitefolders/sgddt/4974/2022/t4/633.pdf",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Cao Bằng",
+     "truong": "THPT Chuyên Cao Bằng",
+     "nam": 2026,
+     "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/full-dap-an-de-thi-vao-lop-10-tieng-anh-cao-bang-2026-nhu-the-nao-138092458.html",
+     "loai": "bài báo"
+    }
+   ]
+  }
  },
  "exam_2026": {
   "dates": "01–04/7/2026 (thông báo của Trường THPT Chuyên Cao Bằng ký 20/4/2026). Xác nhận gián tiếp tháng 7: Sở GD&ĐT công bố điểm thi và điểm chuẩn ngày 12–13/7/2026 (CV 2531/SGDĐT-QLCLCNTT; trường nhận đơn phúc khảo 13–17/7/2026) và Báo Cao Bằng đưa tin '760 lượt thí sinh hoàn thành các môn thi chuyên' đầu tháng 7 – lịch 1–4/6 của FPT Shop là sai. Cùng văn bản trường có chỗ chưa khớp: buổi làm thủ tục 14h00 ngày 01/7 trùng ngày thi Văn; thi tốt nghiệp THPT 2026 ở Cao Bằng là 10–13/6/2026 (CV 1235 Sở GD&ĐT Cao Bằng). Thứ tự: ngày 1 sáng Ngữ văn (120'); ngày 2 sáng Toán (120'), chiều Tiếng Anh chung (60'); ngày 3 chiều môn chuyên buổi 1 (Toán, Ngữ văn, Sinh học – 150'); ngày 4 sáng môn chuyên buổi 2 (Vật lí, Hóa học, Tiếng Anh, Lịch sử – 150').",

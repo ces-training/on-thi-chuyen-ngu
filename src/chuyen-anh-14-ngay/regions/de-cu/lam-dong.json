@@ -1,0 +1,108 @@
+{
+ "slug": "lam-dong",
+ "predicted": {
+  "minutes": 150,
+  "scale": 20,
+  "has_listening": null,
+  "essay_words": null,
+  "sections": [
+   {
+    "format": "sentence_completion",
+    "items": null,
+    "points": null,
+    "note": "Phần trắc nghiệm ngữ pháp – từ vựng (Lâm Đồng cũ: đề chuyên Anh Thăng Long 'kết hợp trắc nghiệm và tự luận'; Đắk Nông cũ 2024: 'môn Tiếng Anh kết hợp trắc nghiệm và tự luận'). Số câu chưa rõ."
+   },
+   {
+    "format": "word_formation",
+    "items": null,
+    "points": null,
+    "note": "Dạng tự luận ngắn thường có trong đề chuyên Anh các tỉnh Tây Nguyên – Nam Trung Bộ; chưa xác nhận bằng đề Lâm Đồng."
+   },
+   {
+    "format": "cloze",
+    "items": null,
+    "points": null,
+    "note": "Đọc điền (trắc nghiệm hoặc điền một từ); chưa xác nhận."
+   },
+   {
+    "format": "reading_mcq",
+    "items": null,
+    "points": null,
+    "note": "Đọc hiểu trắc nghiệm; chưa xác nhận số bài/số câu."
+   },
+   {
+    "format": "transformation",
+    "items": null,
+    "points": null,
+    "note": "Viết lại câu (tự do hoặc với từ cho sẵn) – phần tự luận; chưa xác nhận."
+   },
+   {
+    "format": "essay",
+    "items": null,
+    "points": null,
+    "note": "Bài viết tự luận (đoạn văn hoặc luận) – phần tự luận; độ dài chưa rõ."
+   },
+   {
+    "format": "other",
+    "items": null,
+    "points": null,
+    "note": "Có thể có thi nói (khả năng thấp): chỉ Đắk Nông cũ 2024 có bài nói tiếng Anh 5 phút/thí sinh vào sáng hôm sau (lịch thi trong công văn Sở Đắk Nông 4/2024, không ghi rõ là phần của bài chuyên). Không có bằng chứng Lâm Đồng cũ và Bình Thuận cũ thi nói; kỳ thi chung 2026 (1–4/7/2026) không thấy báo nhắc thi nói → khả năng thấp."
+   }
+  ],
+  "difficulty": null,
+  "difficulty_evidence": "Chưa đọc được đề chuyên Anh của bất kỳ tỉnh cũ nào (Lâm Đồng, Đắk Nông, Bình Thuận) hay đề 2026 của sở mới, nên không ước được CEFR. Gián tiếp: điểm chuẩn chuyên Anh 2026 của 4 trường 33,95–38,45/50 và thủ khoa Trần Hưng Đạo 42,85/50, 'nhiều thí sinh chuyên Anh trên 40 điểm' – thí sinh giỏi đạt điểm cao, đề không quá khó."
+ },
+ "basis": "Không có đề thật hay văn bản cấu trúc đọc được. Dự đoán chỉ dựa trên mô tả gián tiếp: (1) tuyensinh247 mô tả đề chuyên Anh Thăng Long (Lâm Đồng cũ – tỉnh đặt trụ sở sở mới) 'kết hợp trắc nghiệm và tự luận', và Thông báo 116 (2/2025) của Sở Lâm Đồng ghi môn chuyên 150 phút, cấu trúc đề theo Công văn 1763/SGDĐT-GDTrH 10/10/2024 'hướng dẫn cấu trúc đề thi vào lớp 10 chuyên từ năm học 2025-2026' (file .docx, công cụ không đọc được); (2) Công văn hướng dẫn tuyển sinh 4/2024 của Sở Đắk Nông: môn Tiếng Anh 'kết hợp trắc nghiệm và tự luận', chuyên 150 phút, có bài thi nói 5 phút sáng hôm sau; (3) bài luật (luatminhkhue) tóm tắt phương án 2026 của Lâm Đồng: môn chuyên 150 phút 'tự luận hoặc thực hành', điểm xét tuyển = Toán + Văn + Anh + môn chuyên (chuyên hệ số 2 hoặc thang 20). Vì cả hai mô tả cũ đều nói 'trắc nghiệm + tự luận', dự đoán đề gồm trắc nghiệm ngữ pháp/từ vựng/đọc hiểu cộng phần tự luận (word form, viết lại câu, bài viết). Chưa có bằng chứng về phần nghe nên has_listening để null. Thang 20 giữ theo lượt trước (điểm chuẩn /50 = 3 môn chung thang 10 + chuyên 20, tương đương chuyên thang 10 × 2) – cần xác minh.",
+ "confidence": "thấp",
+ "evidence": [
+  {
+   "tinh_cu": "Lâm Đồng",
+   "truong": "THPT chuyên Thăng Long, THPT chuyên Bảo Lộc",
+   "nam": 2025,
+   "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2025/NTKL/07022025/thong-bao-116.pdf",
+   "loai": "công văn",
+   "sections_seen": [
+    {
+     "format": "other",
+     "items": null,
+     "note": "Thông báo tuyển sinh chuyên 2025-2026 của Sở GD&ĐT Lâm Đồng: môn chuyên (gồm Tiếng Anh) 150 phút; 'Cấu trúc đề thi, nội dung đề thi, hình thức làm bài thi: Thực hiện theo Công văn số 1763/SGDĐT-GDTrH ngày 10/10/2024 của Sở GDĐT về việc hướng dẫn cấu trúc đề thi vào lớp 10 chuyên từ năm học 2025 - 2026'. Không mô tả các phần."
+    }
+   ]
+  },
+  {
+   "tinh_cu": "Đắk Nông",
+   "truong": "THPT chuyên Nguyễn Chí Thanh",
+   "nam": 2024,
+   "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/NDBT/cong-van-huong-dan-tuyen-sinh-lop-10-dak-nong-2024.pdf",
+   "loai": "công văn",
+   "sections_seen": [
+    {
+     "format": "other",
+     "items": null,
+     "note": "Công văn hướng dẫn tuyển sinh 2024-2025 của Sở GD&ĐT Đắk Nông: môn chuyên thi chiều 7/6/2024, 150 phút; 'Môn Tiếng Anh kết hợp Trắc nghiệm và Tự luận' (không nêu tỷ lệ); lịch có 'Thi nói' tiếng Anh sáng 8/6/2024, mỗi thí sinh 5 phút (không ghi rõ thuộc bài chuyên hay bài chung); không nhắc phần nghe; cấu trúc theo QĐ 375/QĐ-SGDĐT 6/4/2023 (chưa đọc được)."
+    }
+   ]
+  },
+  {
+   "tinh_cu": "Lâm Đồng (sở mới, gồm Lâm Đồng + Đắk Nông + Bình Thuận)",
+   "truong": "4 trường chuyên: Thăng Long, Bảo Lộc, Trần Hưng Đạo, Nguyễn Chí Thanh",
+   "nam": 2026,
+   "url": "https://baolamdong.vn/ky-thi-tuyen-sinh-lop-10-thpt-chuyen-tinh-lam-dong-dien-ra-nghiem-tuc-dung-quy-che-457957.html",
+   "loai": "bài báo",
+   "sections_seen": [
+    {
+     "format": "other",
+     "items": null,
+     "note": "Kỳ thi chuyên chung của sở mới 1–4/7/2026 tại 6 điểm thi, 4.880 lượt đăng ký môn chuyên; bài không mô tả đề Tiếng Anh chuyên (chỉ nhắc '279 bài thi trắc nghiệm môn Tiếng Anh' phúc khảo, không rõ chung hay chuyên)."
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "Công văn 1763/SGDĐT-GDTrH (10/10/2024) và Thông báo thay đổi cấu trúc một số môn thi chuyên từ 2025-2026 (13/2/2025) của Sở Lâm Đồng vẫn chỉ có dạng .docx trên lamdong.edu.vn, WebFetch trả về dữ liệu nhị phân – đây là nguồn chắc nhất, cần người tải và đọc thủ công.",
+  "Không tìm được đề chuyên Anh nào của Thăng Long/Bảo Lộc (Lâm Đồng cũ), Trần Hưng Đạo (Bình Thuận cũ), Nguyễn Chí Thanh (Đắk Nông cũ) 2021–2025, cũng không có đề chuyên Anh 2026 của sở mới (Springboard liệt kê 'Lâm Đồng' trong tuyển tập 2026 nhưng chưa gắn link).",
+  "Chưa biết đề có phần nghe hay không, có thi nói hay không (chỉ Đắk Nông cũ 2024 có thi nói), số câu, điểm từng phần, độ dài bài viết, thang điểm chính thức (10 hay 20).",
+  "Quyết định 375/QĐ-SGDĐT (Đắk Nông, 6/4/2023) và Công văn 429/SGDĐT-QLCLGD (Bình Thuận, 17/2/2025) có thể chứa cấu trúc đề chuyên của hai tỉnh cũ – chưa đọc được.",
+  "Chưa ước được CEFR."
+ ]
+}

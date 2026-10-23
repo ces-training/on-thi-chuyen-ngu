@@ -20,7 +20,36 @@
    "has_listening": null,
    "essay_words": null,
    "sections": [],
-   "sample_links": []
+   "sample_links": [],
+   "predicted": {
+    "used": false,
+    "basis": "Dự đoán theo văn bản tỉnh (QĐ 389/QĐ-UBND 2026: 3 bài chung Toán, Văn, Tiếng Anh + 1 bài chuyên; Tiếng Anh chung 60 phút trắc nghiệm kết hợp tự luận) và đề tham khảo Tiếng Anh chung 2026 của Sở (ngữ âm 4, trắc nghiệm 8, word formation 4, cloze 6, đọc hiểu…) vì không tìm được đề chuyên Anh Lạng Sơn năm nào (2019–2026) trên các trang tổng hợp, trang Sở hay báo. Tỉnh không sáp nhập. Dạng bài và số câu trong predicted là mẫu chung vùng miền núi phía Bắc không thi nghe; chỉ dạng word formation, cloze, đọc hiểu có cơ sở gián tiếp từ đề chung.",
+    "confidence": "thấp",
+    "speaking": false,
+    "evidence": [
+     {
+      "tinh_cu": "Lạng Sơn",
+      "truong": "THPT Chuyên Chu Văn An",
+      "nam": 2026,
+      "url": "https://luatvietnam.vn/giao-duc/quyet-dinh-389-qd-ubnd-lang-son-2026-phe-duyet-ke-hoach-tuyen-sinh-thpt-nam-hoc-2026-2027-427987-d2.html",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Lạng Sơn",
+      "truong": "Sở Lạng Sơn (Anh chung, không phải đề chuyên)",
+      "nam": 2026,
+      "url": "https://vietjack.com/de-thi-vao-lop-10-mon-tieng-anh/de-minh-hoa-tieng-anh-vao-lop-10-lang-son-nam-2026.jsp",
+      "loai": "đề minh hoạ Anh chung"
+     },
+     {
+      "tinh_cu": "Lạng Sơn",
+      "truong": "THPT Chuyên Chu Văn An",
+      "nam": 2026,
+      "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/thi-vao-lop-10-lang-son-may-mon-20262027-138083585.html",
+      "loai": "công văn"
+     }
+    ]
+   }
   }
  },
  "formulas": {
@@ -89,7 +118,36 @@
   "has_listening": null,
   "essay_words": null,
   "sections": [],
-  "sample_links": []
+  "sample_links": [],
+  "predicted": {
+   "used": false,
+   "basis": "Dự đoán theo văn bản tỉnh (QĐ 389/QĐ-UBND 2026: 3 bài chung Toán, Văn, Tiếng Anh + 1 bài chuyên; Tiếng Anh chung 60 phút trắc nghiệm kết hợp tự luận) và đề tham khảo Tiếng Anh chung 2026 của Sở (ngữ âm 4, trắc nghiệm 8, word formation 4, cloze 6, đọc hiểu…) vì không tìm được đề chuyên Anh Lạng Sơn năm nào (2019–2026) trên các trang tổng hợp, trang Sở hay báo. Tỉnh không sáp nhập. Dạng bài và số câu trong predicted là mẫu chung vùng miền núi phía Bắc không thi nghe; chỉ dạng word formation, cloze, đọc hiểu có cơ sở gián tiếp từ đề chung.",
+   "confidence": "thấp",
+   "speaking": false,
+   "evidence": [
+    {
+     "tinh_cu": "Lạng Sơn",
+     "truong": "THPT Chuyên Chu Văn An",
+     "nam": 2026,
+     "url": "https://luatvietnam.vn/giao-duc/quyet-dinh-389-qd-ubnd-lang-son-2026-phe-duyet-ke-hoach-tuyen-sinh-thpt-nam-hoc-2026-2027-427987-d2.html",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Lạng Sơn",
+     "truong": "Sở Lạng Sơn (Anh chung, không phải đề chuyên)",
+     "nam": 2026,
+     "url": "https://vietjack.com/de-thi-vao-lop-10-mon-tieng-anh/de-minh-hoa-tieng-anh-vao-lop-10-lang-son-nam-2026.jsp",
+     "loai": "đề minh hoạ Anh chung"
+    },
+    {
+     "tinh_cu": "Lạng Sơn",
+     "truong": "THPT Chuyên Chu Văn An",
+     "nam": 2026,
+     "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/thi-vao-lop-10-lang-son-may-mon-20262027-138083585.html",
+     "loai": "công văn"
+    }
+   ]
+  }
  },
  "exam_2026": {
   "dates": "Dự kiến 26–28/5/2026 (QĐ 389/QĐ-UBND). Theo lịch tuyensinh247: 26/5 sáng Ngữ văn, chiều Tiếng Anh; 27/5 sáng Toán; môn chuyên 150 phút. Ngày thi môn chuyên: tuyensinh247 ghi chiều 27/5, còn Báo Đại Đoàn Kết (27/5/2026) ghi chiều 27/5 thí sinh làm thủ tục dự thi môn chuyên – tức thi chuyên khả năng là ngày 28/5.",

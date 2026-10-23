@@ -1,0 +1,61 @@
+{
+  "slug": "ca-mau",
+  "predicted": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": true,
+    "essay_words": null,
+    "sections": [
+      {"format": "listening", "items": null, "points": null, "note": "Chắc chắn có: kế hoạch 2025 và 2026 của Sở Cà Mau ghi 'bài thi chuyên là tự luận, môn thi chuyên Tiếng Anh có thêm phần nghe'. Dạng nghe (điền từ/trả lời ngắn hay trắc nghiệm), số câu, điểm chưa rõ."},
+      {"format": "sentence_completion", "items": null, "points": null, "note": "Phần từ vựng – ngữ pháp. Vì Sở gọi bài chuyên là 'tự luận', phần này có thể là trắc nghiệm viết đáp án ra giấy hoặc điền dạng đúng/giới từ; chưa xác nhận."},
+      {"format": "word_formation", "items": null, "points": null, "note": "Dạng tự luận ngắn phổ biến trong đề chuyên Anh miền Tây (đã thấy ở các sở lân cận có đề); chưa xác nhận bằng đề Cà Mau/Bạc Liêu."},
+      {"format": "open_cloze", "items": null, "points": null, "note": "Đọc điền một từ – dạng tự luận; chưa xác nhận."},
+      {"format": "reading_mcq", "items": null, "points": null, "note": "Đọc hiểu (trắc nghiệm hoặc trả lời câu hỏi); chưa xác nhận."},
+      {"format": "transformation", "items": null, "points": null, "note": "Viết lại câu (tự do/với từ cho sẵn) – phần viết tự luận; chưa xác nhận."},
+      {"format": "essay", "items": null, "points": null, "note": "Bài viết tự luận (đoạn văn hoặc luận) – lượt trước ghi 'phần viết tự luận'; độ dài, dạng chưa rõ."}
+    ],
+    "difficulty": null,
+    "difficulty_evidence": "Chưa đọc được đề chuyên Anh Phan Ngọc Hiển hay chuyên Bạc Liêu năm nào, nên không ước được CEFR. Gián tiếp: điểm chuẩn chuyên Anh Phan Ngọc Hiển 24,3–32,4/50 (2021–2025), năm 2024 trường không tuyển đủ chỉ tiêu do điểm thấp (Thanh Niên) → mức cạnh tranh thấp; không suy ra được độ khó của đề."
+  },
+  "basis": "Không có đề thật hay văn bản cấu trúc chi tiết. Chỉ chắc được khung: kỳ thi chuyên chung 2026 của sở mới (26–28/6/2026, hai điểm thi Phan Ngọc Hiển 712 thí sinh và chuyên Bạc Liêu 557 thí sinh): Tiếng Anh chuyên 150 phút sáng 28/6, thang 10 lẻ 0,25, hệ số 2, 'các bài thi chuyên là tự luận, môn thi chuyên Tiếng Anh có thêm phần nghe' (tuyensinh247 trích kế hoạch 2026 của Sở Cà Mau; Cà Mau cũ là tỉnh đặt trụ sở sở mới và đã dùng mô tả này từ 2025). Các dạng bài còn lại suy từ nghĩa 'tự luận' (thí sinh viết đáp án: word form, điền từ, viết lại câu, bài viết) và từ dạng chung của đề chuyên Anh các tỉnh miền Tây; không có bằng chứng riêng của Cà Mau/Bạc Liêu. Bạc Liêu cũ: không tìm được mô tả hay đề (KH 32/KH-UBND 2025 chỉ có lịch thi dạng ảnh).",
+  "confidence": "thấp",
+  "evidence": [
+    {
+      "tinh_cu": "Cà Mau (sở mới, gồm Cà Mau + Bạc Liêu)",
+      "truong": "THPT chuyên Phan Ngọc Hiển, THPT chuyên Bạc Liêu",
+      "nam": 2026,
+      "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/ca-mau-p30.html",
+      "loai": "phân tích",
+      "sections_seen": [
+        {"format": "listening", "items": null, "note": "Tuyensinh247 trích kế hoạch tuyển sinh 2026-2027 của Sở GD&ĐT Cà Mau: bài thi chuyên tự luận, 'môn thi chuyên Tiếng Anh có thêm phần nghe'; môn chuyên 150 phút; 'Điểm bài thi được cho theo thang điểm từ điểm 0 đến điểm 10', lẻ 0,25; 'hệ số 2 cho các môn thi chuyên'; bài thi phải > 2,0. Tiếng Anh chung 90 phút, 50% trắc nghiệm 50% tự luận. Không mô tả các phần còn lại."}
+      ]
+    },
+    {
+      "tinh_cu": "Cà Mau (sở mới)",
+      "truong": "THPT chuyên Phan Ngọc Hiển, THPT chuyên Bạc Liêu",
+      "nam": 2026,
+      "url": "https://congly.vn/ca-mau-bat-dau-ky-thi-tuyen-sinh-vao-lop-10-thpt-chuyen-527702.html",
+      "loai": "bài báo",
+      "sections_seen": [
+        {"format": "other", "items": null, "note": "Lịch thi 26–28/6/2026: Tiếng Anh chung sáng 27/6 (90 phút); chuyên Tiếng Anh sáng 28/6 (150 phút). 1.269 thí sinh dự thi chuyên toàn tỉnh. Không mô tả đề."}
+      ]
+    },
+    {
+      "tinh_cu": "Cà Mau",
+      "truong": "THPT chuyên Phan Ngọc Hiển",
+      "nam": 2023,
+      "url": "https://cdn.thuvienphapluat.vn/uploads/tintuc/2023/06/07/840_QD-UBND_949489.pdf",
+      "loai": "công văn",
+      "sections_seen": [
+        {"format": "other", "items": null, "note": "KH 1061/KH-SGDĐT 10/4/2023 (Cà Mau cũ): bài chuyên Tiếng Anh 120 phút (thi sáng 10/6/2023), thang 10 lẻ 0,25, hệ số 2; không nêu hình thức, nghe hay cấu trúc. Cho thấy đề chuyên Anh Cà Mau tăng từ 120 lên 150 phút từ 2025."}
+      ]
+    }
+  ],
+  "gaps": [
+    "Không tìm được đề chuyên Anh Phan Ngọc Hiển (Cà Mau cũ) và chuyên Bạc Liêu (Bạc Liêu cũ) năm nào 2021–2025, cũng không có đề 2026 của sở mới (Springboard liệt kê 'Cà Mau' trong tuyển tập đề chính thức 2026 nhưng chưa gắn link; hoatieu/doctailieu/2048.vn/VUS chỉ có đề Tiếng Anh chung; cổng Sở Cà Mau không thấy đăng đề chuyên).",
+    "Chưa biết dạng và số câu phần nghe, điểm từng phần, dạng và độ dài bài viết; chưa rõ 'tự luận' có loại trừ hoàn toàn câu trắc nghiệm không.",
+    "Bạc Liêu cũ: không có mô tả đề chuyên Anh nào (KH 32/KH-UBND 2025 trên thuvienphapluat chỉ có lịch thi dạng ảnh); điểm chuẩn 74,25 năm 2024 cho thấy công thức/thang khác Cà Mau cũ.",
+    "Sở Cà Mau chưa công bố cấu trúc đề chuyên 2027 (tính đến 23/10/2026).",
+    "Chưa ước được CEFR."
+  ]
+}

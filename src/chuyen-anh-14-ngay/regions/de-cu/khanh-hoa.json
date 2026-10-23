@@ -1,0 +1,65 @@
+{
+  "slug": "khanh-hoa",
+  "predicted": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": true,
+    "essay_words": 150,
+    "sections": [
+      {"format": "listening", "items": 20, "points": 2.5, "note": "Theo đề Ninh Thuận cũ 2025: 3 part, mỗi part nghe 2 lần – Part 1 True/False (6 câu, 0,75đ), Part 2 trắc nghiệm A/B/C (6 câu, 0,75đ), Part 3 điền không quá 3 từ và/hoặc một số (8 câu, 1,0đ). Hướng dẫn đọc trong băng."},
+      {"format": "open_cloze", "items": 4, "points": 0.5, "note": "Knowledge of Language Part 1: điền một từ vào chỗ trống."},
+      {"format": "word_formation", "items": 4, "points": 0.5, "note": "Knowledge of Language Part 2: word form."},
+      {"format": "cloze", "items": 12, "points": 1.5, "note": "Knowledge of Language Part 3–4: đọc điền trắc nghiệm A/B/C/D vào một quảng cáo (6 câu, 0,75đ) và một tờ rơi (6 câu, 0,75đ) – kiểu văn bản của Chương trình 2018/Thông tư 30."},
+      {"format": "cloze", "items": 5, "points": 0.625, "note": "Knowledge of Language Part 5: đoạn văn có chỗ trống, phương án A/B/C/D là câu, cụm hoặc mệnh đề (kiểm tra cấu trúc ngữ pháp, liên kết)."},
+      {"format": "reading_mcq", "items": 5, "points": 0.625, "note": "Reading Part 1: bài đọc 4 đoạn, câu hỏi trắc nghiệm (trái nghĩa, chi tiết, paraphrase, xác định đoạn)."},
+      {"format": "reading_mcq", "items": 10, "points": 1.25, "note": "Reading Part 2: bài đọc dài hơn, trắc nghiệm gồm 1 câu chèn câu vào vị trí [I]–[IV] (gap_text), đồng/trái nghĩa, quy chiếu, suy luận, tóm tắt."},
+      {"format": "dialogue_order", "items": 4, "points": 0.5, "note": "Writing Part 1: sắp xếp câu thành đoạn – mỗi câu là một ngữ liệu khác nhau: hội thoại (2 câu), đoạn văn, bức thư."},
+      {"format": "key_word", "items": 4, "points": 0.5, "note": "Writing Part 2: viết lại câu với từ cho sẵn, 3–5 từ."},
+      {"format": "transformation", "items": 4, "points": 0.5, "note": "Writing Part 3: viết lại câu cùng nghĩa."},
+      {"format": "paragraph_writing", "items": 1, "points": 1.0, "note": "Writing Part 4: đoạn văn nêu ý kiến khoảng 150 từ, ít nhất 2 lý do kèm ví dụ (đề 2025 Ninh Thuận: 'Do you think students should have less homework?')."}
+    ],
+    "difficulty": "B1+",
+    "difficulty_evidence": "Ước theo đề Ninh Thuận 2025 đã đọc: dạng bài theo khung đề chung Chương trình 2018 (quảng cáo, tờ rơi, sắp xếp câu) cộng thêm nghe 20 câu, open cloze, word form và đoạn văn 150 từ; không có luận dài, không có sửa lỗi hay nối tiêu đề; bài đọc dài nhất ở mức 10 câu. Khánh Hòa cũ: chưa đọc được đề nên có thể khó hơn. Điểm chuẩn chuyên Anh Lê Quý Đôn Nam Nha Trang 2026 = 47,10/60 (≈7,85/bài) cho thấy đề 2026 vừa sức với thí sinh khá giỏi."
+  },
+  "basis": "Chỉ đọc được một đề thật: đề chính thức chuyên Anh Ninh Thuận cũ 2025 (Sở GD&ĐT Ninh Thuận, khóa 7/6/2025, 120 phút, thang 10, 4 section: Listening 2,5 – Knowledge of Language 3,125 – Reading 1,875 – Writing 2,5). Ninh Thuận không phải tỉnh đặt trụ sở sở mới (sở mới đặt ở Nha Trang, Khánh Hòa cũ), và chưa tìm được đề chuyên Anh Khánh Hòa cũ năm nào hay đề chung 2026 của sở mới, nên dự đoán lấy khung Ninh Thuận 2025 làm nền và điều chỉnh thời gian lên 150 phút theo kỳ thi chung 2026 (môn chuyên chiều 29/5/2026, 150 phút, báo ghi 'hình thức tự luận' – với tiếng Anh hiểu là có phần viết tự luận). Hai điểm gần chắc: có phần nghe (Ninh Thuận cũ đã nghe 20 câu; khối tỉnh miền Trung lân cận như Gia Lai cũng nghe) và có viết lại câu + bài viết. Số câu, điểm từng phần và độ dài bài viết của sở mới có thể khác khung Ninh Thuận.",
+  "confidence": "thấp",
+  "evidence": [
+    {
+      "tinh_cu": "Ninh Thuận",
+      "truong": "THPT chuyên Lê Quý Đôn (Ninh Thuận) – đề do Sở GD&ĐT Ninh Thuận ra",
+      "nam": 2025,
+      "url": "https://springboard.vn/de-thi-chuyen-anh-10-ninh-thuan-2025-2026/",
+      "loai": "đề thật",
+      "sections_seen": [
+        {"format": "listening", "items": 20, "note": "Section 1 Listening 2,5đ: Part 1 câu 1–6 True/False (0,75); Part 2 câu 7–12 MCQ A/B/C (0,75); Part 3 câu 13–20 điền ≤3 từ và/hoặc một số (1,0). Mỗi part nghe 2 lần. Đề 12 trang, 120 phút, 'Đề chính thức', khóa ngày 07/6/2025."},
+        {"format": "open_cloze", "items": 4, "note": "Section 2 Knowledge of Language Part 1 câu 21–24 (0,5)."},
+        {"format": "word_formation", "items": 4, "note": "Part 2 câu 25–28 word form (0,5)."},
+        {"format": "cloze", "items": 6, "note": "Part 3 câu 29–34 điền trắc nghiệm vào quảng cáo (0,75)."},
+        {"format": "cloze", "items": 6, "note": "Part 4 câu 35–40 điền trắc nghiệm vào tờ rơi (0,75)."},
+        {"format": "cloze", "items": 5, "note": "Part 5 câu 41–45 đoạn văn có chỗ trống, phương án là câu/cụm/mệnh đề (0,625)."},
+        {"format": "reading_mcq", "items": 5, "note": "Section 3 Reading Part 1 câu 46–50, bài đọc về thay đổi tâm lý tuổi vị thành niên (0,625)."},
+        {"format": "reading_mcq", "items": 10, "note": "Part 2 câu 51–60, bài đọc về AI trong quản trị điện tử; câu 51 chèn câu vào [I]–[IV] (1,25)."},
+        {"format": "dialogue_order", "items": 4, "note": "Section 4 Writing Part 1 câu 61–64 sắp xếp câu/lời thoại thành đoạn (hội thoại, đoạn văn, thư) (0,5)."},
+        {"format": "key_word", "items": 4, "note": "Part 2 câu 65–68 viết lại câu với từ cho sẵn 3–5 từ (0,5)."},
+        {"format": "transformation", "items": 4, "note": "Part 3 câu 69–72 viết lại câu cùng nghĩa (0,5)."},
+        {"format": "paragraph_writing", "items": 1, "note": "Part 4 đoạn văn khoảng 150 từ nêu ý kiến 'Do you think students should have less homework?', ít nhất 2 lý do (1,0). Không có thi nói."}
+      ]
+    },
+    {
+      "tinh_cu": "Khánh Hòa (sở mới, gồm Khánh Hòa + Ninh Thuận)",
+      "truong": "THPT chuyên Lê Quý Đôn (Nha Trang) và THPT chuyên Lê Quý Đôn (Phan Rang)",
+      "nam": 2026,
+      "url": "https://nhandan.vn/ocop/khanh-hoa-chuan-bi-chu-dao-ky-thi-tuyen-sinh-lop-10-post965086.html",
+      "loai": "bài báo",
+      "sections_seen": [
+        {"format": "other", "items": null, "note": "Chỉ biết: 1.897 thí sinh đăng ký 2 trường chuyên; môn chuyên thi chiều 29/5/2026 'theo hình thức tự luận' (150 phút theo lượt tìm trước – Báo Văn Hóa). Không mô tả đề tiếng Anh chuyên."}
+      ]
+    }
+  ],
+  "gaps": [
+    "Không tìm được đề chuyên Anh Khánh Hòa cũ (Lê Quý Đôn Nha Trang) năm nào 2021–2025 và đề chuyên Anh chung 2026 của sở mới (Springboard liệt kê 'Khánh Hòa' trong tuyển tập 2026 nhưng chưa gắn link; hoatieu/doctailieu/2048.vn/thuvienphapluat chỉ có đề Tiếng Anh chung).",
+    "Sở GD&ĐT Khánh Hòa chưa thấy công bố văn bản cấu trúc đề môn chuyên 2026 hay 2027 (hoatieu có 'đề tham khảo Tiếng Anh 2026-2027' nhưng là đề chung, khóa Pro).",
+    "Chưa rõ đề chuyên Anh 2026 của sở mới có giữ khung 4 section/72 câu kiểu Ninh Thuận hay theo khung Khánh Hòa cũ; thời lượng 150 phút (2026) khác 120 phút của đề Ninh Thuận 2025 nên số câu/độ dài bài viết có thể tăng.",
+    "Mức CEFR B1+ ước từ đề Ninh Thuận, có thể thấp hơn đề của sở mới."
+  ]
+}

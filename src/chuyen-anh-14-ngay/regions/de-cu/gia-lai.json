@@ -1,0 +1,66 @@
+{
+  "slug": "gia-lai",
+  "predicted": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": true,
+    "essay_words": 250,
+    "sections": [
+      {"format": "listening", "items": null, "points": 2.0, "note": "Mục I. LISTENING (2,0 điểm) gồm 2 part: Part 1 nghe chọn đáp án trắc nghiệm (MCQ); Part 2 nghe điền từ/thông tin vào chỗ trống (note-taking). Số câu không ghi trong văn bản."},
+      {"format": "sentence_completion", "items": null, "points": null, "note": "Mục II. LEXICO–GRAMMAR (2,0 điểm cho cả 3 part) – Part 1: trắc nghiệm từ vựng, ngữ pháp."},
+      {"format": "word_formation", "items": null, "points": null, "note": "Mục II – Part 2: word formation theo đoạn văn (điền dạng đúng của từ cho sẵn vào bài đọc)."},
+      {"format": "error_id", "items": null, "points": null, "note": "Mục II – Part 3: tìm và tự sửa lỗi trong một đoạn văn (không phải trắc nghiệm A/B/C/D)."},
+      {"format": "open_cloze", "items": null, "points": null, "note": "Mục III. READING (3,0 điểm cho cả 4 part) – Part 1: điền một từ vào chỗ trống (open cloze)."},
+      {"format": "reading_mcq", "items": null, "points": null, "note": "Mục III – Part 2: đọc hiểu trắc nghiệm."},
+      {"format": "gap_text", "items": null, "points": null, "note": "Mục III – Part 3: điền câu vào chỗ trống trong bài đọc."},
+      {"format": "matching_headings", "items": null, "points": null, "note": "Mục III – Part 4: nối thông tin (matching information)."},
+      {"format": "key_word", "items": null, "points": null, "note": "Mục IV. WRITING (3,0 điểm cho cả 4 part) – Part 1: viết lại câu dùng từ cho sẵn, giới hạn 4–6 từ (dạng FCE key word transformation)."},
+      {"format": "transformation", "items": null, "points": null, "note": "Mục IV – Part 2: viết lại câu sao cho nghĩa không đổi (tự do)."},
+      {"format": "guided_writing", "items": null, "points": null, "note": "Mục IV – Part 3: viết một bức thư (letter); văn bản không ghi độ dài."},
+      {"format": "essay", "items": 1, "points": null, "note": "Mục IV – Part 4: viết bài luận khoảng 250 từ."}
+    ],
+    "difficulty": "B2",
+    "difficulty_evidence": "Ước theo cấu trúc công bố: có nghe note-taking, sửa lỗi trong đoạn văn, open cloze, điền câu vào bài đọc, nối thông tin, key word transformation 4–6 từ (dạng FCE/B2 First), viết thư và luận 250 từ – bộ dạng bài tiêu chuẩn của đề chuyên Anh mức B2. Chưa đọc được đề thật để xác nhận; điểm chuẩn chuyên Anh 2023–2025 của Lê Quý Đôn và Hùng Vương 36–38/50 (thủ khoa 44–45) cho thấy thí sinh đỗ đạt ≈ 7–7,5/10 mỗi bài."
+  },
+  "basis": "Dự đoán theo Thông báo cấu trúc đề thi tuyển sinh lớp 10 năm học 2026-2027 của Sở GD&ĐT Gia Lai (mới) – văn bản 2784/TB-SGDĐT ngày 18/5/2026, đăng trên web THPT chuyên Lê Quý Đôn Gia Lai (Quy Nhơn), căn cứ Thông tư 30/2024/TT-BGDĐT và Kế hoạch 2593/KH-SGDĐT 11/5/2026. Đây là cấu trúc chính thức của kỳ thi chung đầu tiên sau sáp nhập (thi 28/6/2026, môn chuyên 150 phút, thang 10) áp dụng cho cả 3 trường chuyên (Hùng Vương, Lê Quý Đôn, Chu Văn An), nên là căn cứ mạnh nhất cho kỳ thi 2027. Thứ tự và tên 4 mục (Listening 2 – Lexico-Grammar 2 – Reading 3 – Writing 3) khớp với mô tả 'đề Anh chuyên Hùng Vương có thêm phần nghe' của Gia Lai cũ 2024. Văn bản không ghi số câu và điểm từng part, nên items để trống; số câu của từng part cần suy từ đề thật 2026 (Springboard liệt kê 'Đề chuyên Anh Gia Lai 2026' nhưng chưa gắn link).",
+  "confidence": "cao",
+  "evidence": [
+    {
+      "tinh_cu": "Gia Lai (sở mới, gồm Gia Lai + Bình Định)",
+      "truong": "Áp dụng chung 3 trường: THPT chuyên Hùng Vương, THPT chuyên Lê Quý Đôn, THPT chuyên Chu Văn An",
+      "nam": 2026,
+      "url": "https://chuyenlequydongialai.edu.vn/wp-content/uploads/2026/05/2784_TB-SGDDT_18052026.pdf",
+      "loai": "công văn",
+      "sections_seen": [
+        {"format": "listening", "items": null, "note": "I. LISTENING (2,0 điểm): Part 1 Trắc nghiệm nhiều lựa chọn (MCQ); Part 2 Nghe điền từ/thông tin vào chỗ trống (note-taking)."},
+        {"format": "sentence_completion", "items": null, "note": "II. LEXICO–GRAMMAR (2,0 điểm) Part 1: trắc nghiệm từ vựng, ngữ pháp."},
+        {"format": "word_formation", "items": null, "note": "II Part 2: word formation trong đoạn văn."},
+        {"format": "error_id", "items": null, "note": "II Part 3: tìm và sửa lỗi trong đoạn văn."},
+        {"format": "open_cloze", "items": null, "note": "III. READING (3,0 điểm) Part 1: open cloze."},
+        {"format": "reading_mcq", "items": null, "note": "III Part 2: đọc hiểu trắc nghiệm."},
+        {"format": "gap_text", "items": null, "note": "III Part 3: điền câu vào bài đọc."},
+        {"format": "matching_headings", "items": null, "note": "III Part 4: nối thông tin (matching information)."},
+        {"format": "key_word", "items": null, "note": "IV. WRITING (3,0 điểm) Part 1: viết lại câu với từ cho sẵn, giới hạn 4–6 từ."},
+        {"format": "transformation", "items": null, "note": "IV Part 2: viết lại câu cùng nghĩa."},
+        {"format": "guided_writing", "items": null, "note": "IV Part 3: viết thư (letter)."},
+        {"format": "essay", "items": 1, "note": "IV Part 4: bài luận khoảng 250 từ. Thời gian 150 phút, thang 10. Cùng văn bản: Tiếng Anh chung 60 phút, trắc nghiệm 6,0 + tự luận 4,0, không có nghe."}
+      ]
+    },
+    {
+      "tinh_cu": "Gia Lai",
+      "truong": "THPT chuyên Hùng Vương",
+      "nam": 2024,
+      "url": "https://baogialai.com.vn/gia-lai-cong-bo-diem-thi-vao-lop-10-truong-thpt-chuyen-hung-vuong-post281339.html",
+      "loai": "bài báo",
+      "sections_seen": [
+        {"format": "listening", "items": null, "note": "Báo Gia Lai 14/6/2024: 'Đề thi theo hình thức tự luận, riêng môn Tiếng Anh chuyên có thêm phần thi kỹ năng nghe' – xác nhận Gia Lai cũ đã có nghe trước 2026."}
+      ]
+    }
+  ],
+  "gaps": [
+    "Chưa đọc được đề thật chuyên Anh Gia Lai 2026 (Springboard liệt kê trong 'Tuyển tập đề chính thức chuyên Anh 2026' nhưng chưa có link; hoatieu/VUS chỉ có đề Tiếng Anh chung 2026). Vì vậy chưa biết số câu và điểm từng part, độ dài bức thư, chủ đề luận.",
+    "Không tìm được đề chuyên Anh Bình Định cũ (Lê Quý Đôn, Chu Văn An) các năm 2022–2025 và đề chuyên Anh Hùng Vương 2022–2025 trên tuyensinh247, vndoc, hoatieu, doctailieu, springboard (hoatieu 'Bộ đề chuyên Anh toàn quốc 2025-2026' khóa Pro, không xem được mục lục).",
+    "Thông báo 2784/TB-SGDĐT là cấu trúc cho kỳ thi 2026; Sở chưa ban hành cấu trúc 2027 (tính đến 23/10/2026) – cần kiểm tra lại khi có kế hoạch 2027.",
+    "Mức CEFR B2 là ước lượng theo dạng bài, chưa có đề thật hay nhận xét giáo viên để xác nhận."
+  ]
+}

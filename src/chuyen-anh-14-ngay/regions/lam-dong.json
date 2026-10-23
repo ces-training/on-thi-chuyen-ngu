@@ -27,7 +27,36 @@
    "sample_links": [
     "https://lamdong.edu.vn/Files/Eoffices_V3/2024/10/10/06.10.2024. HUONG DAN NOI THI CHUYEN V4.docx",
     "https://lamdong.edu.vn/Files/Eoffices_V3/2025/2/13/Thong bao thay doi cau truc noi dung mot so mon thi tuyen sinh vao lop 10 THPT chuyen tu nam hoc 2025  2026.docx"
-   ]
+   ],
+   "predicted": {
+    "used": false,
+    "basis": "Không có đề thật hay văn bản cấu trúc đọc được. Dự đoán chỉ dựa trên mô tả gián tiếp: (1) tuyensinh247 mô tả đề chuyên Anh Thăng Long (Lâm Đồng cũ – tỉnh đặt trụ sở sở mới) 'kết hợp trắc nghiệm và tự luận', và Thông báo 116 (2/2025) của Sở Lâm Đồng ghi môn chuyên 150 phút, cấu trúc đề theo Công văn 1763/SGDĐT-GDTrH 10/10/2024 'hướng dẫn cấu trúc đề thi vào lớp 10 chuyên từ năm học 2025-2026' (file .docx, công cụ không đọc được); (2) Công văn hướng dẫn tuyển sinh 4/2024 của Sở Đắk Nông: môn Tiếng Anh 'kết hợp trắc nghiệm và tự luận', chuyên 150 phút, có bài thi nói 5 phút sáng hôm sau; (3) bài luật (luatminhkhue) tóm tắt phương án 2026 của Lâm Đồng: môn chuyên 150 phút 'tự luận hoặc thực hành', điểm xét tuyển = Toán + Văn + Anh + môn chuyên (chuyên hệ số 2 hoặc thang 20). Vì cả hai mô tả cũ đều nói 'trắc nghiệm + tự luận', dự đoán đề gồm trắc nghiệm ngữ pháp/từ vựng/đọc hiểu cộng phần tự luận (word form, viết lại câu, bài viết). Chưa có bằng chứng về phần nghe nên has_listening để null. Thang 20 giữ theo lượt trước (điểm chuẩn /50 = 3 môn chung thang 10 + chuyên 20, tương đương chuyên thang 10 × 2) – cần xác minh.",
+    "confidence": "thấp",
+    "speaking": false,
+    "evidence": [
+     {
+      "tinh_cu": "Lâm Đồng",
+      "truong": "THPT chuyên Thăng Long, THPT chuyên Bảo Lộc",
+      "nam": 2025,
+      "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2025/NTKL/07022025/thong-bao-116.pdf",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Đắk Nông",
+      "truong": "THPT chuyên Nguyễn Chí Thanh",
+      "nam": 2024,
+      "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/NDBT/cong-van-huong-dan-tuyen-sinh-lop-10-dak-nong-2024.pdf",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Lâm Đồng (sở mới, gồm Lâm Đồng + Đắk Nông + Bình Thuận)",
+      "truong": "4 trường chuyên: Thăng Long, Bảo Lộc, Trần Hưng Đạo, Nguyễn Chí Thanh",
+      "nam": 2026,
+      "url": "https://baolamdong.vn/ky-thi-tuyen-sinh-lop-10-thpt-chuyen-tinh-lam-dong-dien-ra-nghiem-tuc-dung-quy-che-457957.html",
+      "loai": "bài báo"
+     }
+    ]
+   }
   }
  },
  "formulas": {
@@ -187,7 +216,36 @@
   "sample_links": [
    "https://lamdong.edu.vn/Files/Eoffices_V3/2024/10/10/06.10.2024. HUONG DAN NOI THI CHUYEN V4.docx",
    "https://lamdong.edu.vn/Files/Eoffices_V3/2025/2/13/Thong bao thay doi cau truc noi dung mot so mon thi tuyen sinh vao lop 10 THPT chuyen tu nam hoc 2025  2026.docx"
-  ]
+  ],
+  "predicted": {
+   "used": false,
+   "basis": "Không có đề thật hay văn bản cấu trúc đọc được. Dự đoán chỉ dựa trên mô tả gián tiếp: (1) tuyensinh247 mô tả đề chuyên Anh Thăng Long (Lâm Đồng cũ – tỉnh đặt trụ sở sở mới) 'kết hợp trắc nghiệm và tự luận', và Thông báo 116 (2/2025) của Sở Lâm Đồng ghi môn chuyên 150 phút, cấu trúc đề theo Công văn 1763/SGDĐT-GDTrH 10/10/2024 'hướng dẫn cấu trúc đề thi vào lớp 10 chuyên từ năm học 2025-2026' (file .docx, công cụ không đọc được); (2) Công văn hướng dẫn tuyển sinh 4/2024 của Sở Đắk Nông: môn Tiếng Anh 'kết hợp trắc nghiệm và tự luận', chuyên 150 phút, có bài thi nói 5 phút sáng hôm sau; (3) bài luật (luatminhkhue) tóm tắt phương án 2026 của Lâm Đồng: môn chuyên 150 phút 'tự luận hoặc thực hành', điểm xét tuyển = Toán + Văn + Anh + môn chuyên (chuyên hệ số 2 hoặc thang 20). Vì cả hai mô tả cũ đều nói 'trắc nghiệm + tự luận', dự đoán đề gồm trắc nghiệm ngữ pháp/từ vựng/đọc hiểu cộng phần tự luận (word form, viết lại câu, bài viết). Chưa có bằng chứng về phần nghe nên has_listening để null. Thang 20 giữ theo lượt trước (điểm chuẩn /50 = 3 môn chung thang 10 + chuyên 20, tương đương chuyên thang 10 × 2) – cần xác minh.",
+   "confidence": "thấp",
+   "speaking": false,
+   "evidence": [
+    {
+     "tinh_cu": "Lâm Đồng",
+     "truong": "THPT chuyên Thăng Long, THPT chuyên Bảo Lộc",
+     "nam": 2025,
+     "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2025/NTKL/07022025/thong-bao-116.pdf",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Đắk Nông",
+     "truong": "THPT chuyên Nguyễn Chí Thanh",
+     "nam": 2024,
+     "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/NDBT/cong-van-huong-dan-tuyen-sinh-lop-10-dak-nong-2024.pdf",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Lâm Đồng (sở mới, gồm Lâm Đồng + Đắk Nông + Bình Thuận)",
+     "truong": "4 trường chuyên: Thăng Long, Bảo Lộc, Trần Hưng Đạo, Nguyễn Chí Thanh",
+     "nam": 2026,
+     "url": "https://baolamdong.vn/ky-thi-tuyen-sinh-lop-10-thpt-chuyen-tinh-lam-dong-dien-ra-nghiem-tuc-dung-quy-che-457957.html",
+     "loai": "bài báo"
+    }
+   ]
+  }
  },
  "exam_2026": {
   "dates": "1–4/7/2026. 1/7 sáng: làm thủ tục; 2/7 sáng: Ngữ văn (120 phút); 2/7 chiều: Tiếng Anh chung (60 phút, trắc nghiệm); 3/7 sáng: Toán (90 phút); 3/7 chiều: chuyên Toán, Lý, Hóa, Văn, Tiếng Pháp (150 phút); 4/7 sáng: chuyên Tin, Sinh, Địa, Sử, Tiếng Anh (150 phút). Đăng ký online 25–29/5; chấm 6–15/7; Sở công bố điểm thi 13/7/2026 (sớm hơn kế hoạch 16/7); phúc khảo 14–17/7; xét tuyển 23–24/7; Sở công bố kết quả Trần Hưng Đạo ngày 30/7/2026; xong trước 31/7/2026.",

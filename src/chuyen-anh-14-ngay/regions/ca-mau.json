@@ -38,7 +38,36 @@
    ],
    "sample_links": [
     "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/"
-   ]
+   ],
+   "predicted": {
+    "used": false,
+    "basis": "Không có đề thật hay văn bản cấu trúc chi tiết. Chỉ chắc được khung: kỳ thi chuyên chung 2026 của sở mới (26–28/6/2026, hai điểm thi Phan Ngọc Hiển 712 thí sinh và chuyên Bạc Liêu 557 thí sinh): Tiếng Anh chuyên 150 phút sáng 28/6, thang 10 lẻ 0,25, hệ số 2, 'các bài thi chuyên là tự luận, môn thi chuyên Tiếng Anh có thêm phần nghe' (tuyensinh247 trích kế hoạch 2026 của Sở Cà Mau; Cà Mau cũ là tỉnh đặt trụ sở sở mới và đã dùng mô tả này từ 2025). Các dạng bài còn lại suy từ nghĩa 'tự luận' (thí sinh viết đáp án: word form, điền từ, viết lại câu, bài viết) và từ dạng chung của đề chuyên Anh các tỉnh miền Tây; không có bằng chứng riêng của Cà Mau/Bạc Liêu. Bạc Liêu cũ: không tìm được mô tả hay đề (KH 32/KH-UBND 2025 chỉ có lịch thi dạng ảnh).",
+    "confidence": "thấp",
+    "speaking": false,
+    "evidence": [
+     {
+      "tinh_cu": "Cà Mau (sở mới, gồm Cà Mau + Bạc Liêu)",
+      "truong": "THPT chuyên Phan Ngọc Hiển, THPT chuyên Bạc Liêu",
+      "nam": 2026,
+      "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/ca-mau-p30.html",
+      "loai": "phân tích"
+     },
+     {
+      "tinh_cu": "Cà Mau (sở mới)",
+      "truong": "THPT chuyên Phan Ngọc Hiển, THPT chuyên Bạc Liêu",
+      "nam": 2026,
+      "url": "https://congly.vn/ca-mau-bat-dau-ky-thi-tuyen-sinh-vao-lop-10-thpt-chuyen-527702.html",
+      "loai": "bài báo"
+     },
+     {
+      "tinh_cu": "Cà Mau",
+      "truong": "THPT chuyên Phan Ngọc Hiển",
+      "nam": 2023,
+      "url": "https://cdn.thuvienphapluat.vn/uploads/tintuc/2023/06/07/840_QD-UBND_949489.pdf",
+      "loai": "công văn"
+     }
+    ]
+   }
   }
  },
  "formulas": {
@@ -143,7 +172,36 @@
   ],
   "sample_links": [
    "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/"
-  ]
+  ],
+  "predicted": {
+   "used": false,
+   "basis": "Không có đề thật hay văn bản cấu trúc chi tiết. Chỉ chắc được khung: kỳ thi chuyên chung 2026 của sở mới (26–28/6/2026, hai điểm thi Phan Ngọc Hiển 712 thí sinh và chuyên Bạc Liêu 557 thí sinh): Tiếng Anh chuyên 150 phút sáng 28/6, thang 10 lẻ 0,25, hệ số 2, 'các bài thi chuyên là tự luận, môn thi chuyên Tiếng Anh có thêm phần nghe' (tuyensinh247 trích kế hoạch 2026 của Sở Cà Mau; Cà Mau cũ là tỉnh đặt trụ sở sở mới và đã dùng mô tả này từ 2025). Các dạng bài còn lại suy từ nghĩa 'tự luận' (thí sinh viết đáp án: word form, điền từ, viết lại câu, bài viết) và từ dạng chung của đề chuyên Anh các tỉnh miền Tây; không có bằng chứng riêng của Cà Mau/Bạc Liêu. Bạc Liêu cũ: không tìm được mô tả hay đề (KH 32/KH-UBND 2025 chỉ có lịch thi dạng ảnh).",
+   "confidence": "thấp",
+   "speaking": false,
+   "evidence": [
+    {
+     "tinh_cu": "Cà Mau (sở mới, gồm Cà Mau + Bạc Liêu)",
+     "truong": "THPT chuyên Phan Ngọc Hiển, THPT chuyên Bạc Liêu",
+     "nam": 2026,
+     "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/ca-mau-p30.html",
+     "loai": "phân tích"
+    },
+    {
+     "tinh_cu": "Cà Mau (sở mới)",
+     "truong": "THPT chuyên Phan Ngọc Hiển, THPT chuyên Bạc Liêu",
+     "nam": 2026,
+     "url": "https://congly.vn/ca-mau-bat-dau-ky-thi-tuyen-sinh-vao-lop-10-thpt-chuyen-527702.html",
+     "loai": "bài báo"
+    },
+    {
+     "tinh_cu": "Cà Mau",
+     "truong": "THPT chuyên Phan Ngọc Hiển",
+     "nam": 2023,
+     "url": "https://cdn.thuvienphapluat.vn/uploads/tintuc/2023/06/07/840_QD-UBND_949489.pdf",
+     "loai": "công văn"
+    }
+   ]
+  }
  },
  "exam_2026": {
   "dates": "Nhận hồ sơ chuyên 01–13/6/2026; thi 26–28/6/2026: 26/6 sáng Ngữ văn (120'), chiều Toán (120'); 27/6 sáng Tiếng Anh chung (90'), chiều chuyên Văn, chuyên Toán (150'); 28/6 sáng chuyên Lý, Hóa, Tiếng Anh (150'), chiều chuyên Sinh, Sử, Địa, Tin (150'). Chấm 29/6–04/7; công bố kết quả chuyên 06/7/2026; phúc khảo xong trước 13/7/2026.",

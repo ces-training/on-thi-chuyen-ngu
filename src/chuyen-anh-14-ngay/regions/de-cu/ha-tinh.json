@@ -1,0 +1,52 @@
+{
+  "slug": "ha-tinh",
+  "predicted": {
+    "minutes": 150,
+    "scale": 20,
+    "has_listening": true,
+    "essay_words": 250,
+    "sections": [
+      {"format": "listening", "items": 20, "points": 5.0, "note": "Section I. Listening (5 POINTS), 2–3 part: trắc nghiệm A–D, đúng/sai và điền 1 từ/cụm ngắn vào chỗ trống; đề 2025 nghe về bảo hiểm xe, chuyến đi Pháp, lối sống xanh, triển lãm nghệ thuật (springboard). Số câu ước theo mẫu đề Sở Hà Tĩnh (HSG 12 cùng Sở: 7 MCQ + 8 T/F + 10 điền từ = 25 câu; đề chuyên 10 có thể ít hơn)"},
+      {"format": "sentence_completion", "items": 20, "points": 2.5, "note": "Section II. Grammar and Lexical Items (5 POINTS) Part 1: trắc nghiệm A–D ngữ pháp – từ vựng; đề 2025 có 'were supposed to', mệnh đề rút gọn, subjunctive, đảo ngữ, idiom (face the music, make ends meet) — springboard"},
+      {"format": "word_formation", "items": 10, "points": 1.5, "note": "Section II Part 2: chia dạng từ in hoa trong đoạn văn — theo mẫu đề Sở Hà Tĩnh; số câu ước"},
+      {"format": "other", "items": 10, "points": 1.0, "note": "Section II Part 3 (ước đoán theo mẫu đề Sở): ghép collocation/cụm cố định từ hai cột rồi điền vào câu; có thể thay bằng điền giới từ/phrasal verb"},
+      {"format": "cloze", "items": 10, "points": 1.25, "note": "Section III. Reading (5 POINTS) Part 1: đọc điền trắc nghiệm A–D"},
+      {"format": "open_cloze", "items": 10, "points": 1.25, "note": "Section III Part 2: điền MỘT từ vào chỗ trống"},
+      {"format": "matching_headings", "items": 10, "points": 1.25, "note": "Section III Part 3: nối thông tin/đoạn (đề 2025 có 'bài matching về cycling' — springboard); có thể kèm True/False/Not Given và hoàn thành ghi chú 1 từ theo mẫu đề Sở"},
+      {"format": "reading_mcq", "items": 10, "points": 1.25, "note": "Section III Part 4: đọc hiểu trắc nghiệm A–D; chủ đề 2026: brain rot, trách nhiệm môi trường, báo chí, Social Security, hình tượng ngựa; 2025: tranh hang động tiền sử, giấc ngủ côn trùng, lịch sử thuốc phiện (springboard)"},
+      {"format": "transformation", "items": 5, "points": 1.0, "note": "Section IV. Writing (5 POINTS) Part 1: viết lại câu giữ nghĩa, cho sẵn phần mở đầu"},
+      {"format": "key_word", "items": 5, "points": 1.0, "note": "Section IV Part 2: viết lại câu với từ in hoa cho sẵn, không đổi dạng, giới hạn số từ (3–6 từ ở đề HSG cùng Sở)"},
+      {"format": "essay", "items": 1, "points": 3.0, "note": "Section IV Part 3: essay 'Write about 250 words', dạng agree/disagree có lý do và ví dụ. Đề 2026: 'students should learn not only how to answer questions but also how to question answers' (springboard essay sample số 7). Điểm phần viết ước: viết lại câu 2 + essay 3"}
+    ],
+    "difficulty": "B2+",
+    "difficulty_evidence": "Ước từ mô tả đề 2025 và 2026 trên springboard.vn: từ vựng – ngữ pháp có idiom, subjunctive, đảo ngữ, mệnh đề rút gọn; 4–5 bài đọc chủ đề học thuật/xã hội (brain rot, Social Security, báo chí) với T/F/NG và matching; essay ~250 từ đòi hỏi lập luận phản biện; springboard nhận xét 2026 'không khó hơn về lượng nhưng đòi hỏi xử lý ngôn ngữ chín hơn, đọc lập luận sâu hơn, tư duy phản biện hơn'. Thủ khoa chuyên Anh 2026 (IELTS 8.5) chỉ đạt 8,42/10 môn chuyên — đề khó, điểm 9+ hiếm. Khung đề (4 section × 5 điểm, nghe, word form, T/F/NG, essay 250 từ) trùng khuôn đề HSG 12 của cùng Sở."
+  },
+  "basis": "Dự đoán theo đề thật 2026 của Sở Hà Tĩnh (Hà Tĩnh không sáp nhập, một đề duy nhất): springboard.vn đăng đề chuyên Anh Hà Tĩnh 2026-2027 và xác nhận khung 4 section mỗi section 5 điểm (Listening, Grammar and Lexical Items, Reading, Writing), 'giữ khung đánh giá rất ổn định' so với 2025-2026; essay 2026 yêu cầu khoảng 250 từ. Hướng dẫn Sở 2024 và 2025 xác nhận bài 150 phút 'kết hợp trắc nghiệm với tự luận, trong đó có kỹ năng nghe'. Số câu và dạng từng part chưa đọc được trực tiếp (file PDF đề trên springboard không mở được) nên lấy theo khuôn đề HSG Tiếng Anh 12 của chính Sở Hà Tĩnh 2024-2025 (cùng tên section, cùng 5 điểm/section, cùng dạng bài) có điều chỉnh bớt số câu cho đề lớp 10. Thang 20 điểm quy về 10 khi xét tuyển (thủ khoa 2026 đạt 8,42).",
+  "confidence": "trung bình",
+  "evidence": [
+    {"tinh_cu": "Hà Tĩnh", "truong": "THPT Chuyên Hà Tĩnh", "nam": 2026, "url": "https://springboard.vn/de-thi-chuyen-anh-ha-tinh-2026/", "loai": "phân tích", "sections_seen": [
+      {"format": "listening", "items": null, "note": "Section Listening 5 điểm; có file audio YouTube (https://youtu.be/SP33bQ1yiXU); đề 2025 nghe về bảo hiểm xe, chuyến đi Pháp, lối sống xanh, triển lãm nghệ thuật"},
+      {"format": "sentence_completion", "items": null, "note": "Section Grammar and Lexical Items 5 điểm; đề 2025 kiểm tra were supposed to, reduced clauses, subjunctive, inversion, idiom/collocation"},
+      {"format": "reading_mcq", "items": null, "note": "Section Reading 5 điểm; 2026: brain rot, trách nhiệm môi trường, báo chí, Social Security, hình tượng ngựa; 2025: tranh hang động, giấc ngủ côn trùng, lịch sử thuốc phiện, matching về cycling"},
+      {"format": "essay", "items": 1, "note": "Section Writing 5 điểm; essay về việc học sinh cần biết 'question answers'. Đề PDF/Word trong Google Drive (không mở được)"}
+    ]},
+    {"tinh_cu": "Hà Tĩnh", "truong": "THPT Chuyên Hà Tĩnh", "nam": 2026, "url": "https://springboard.vn/essay-sample-chuyen-anh-so-7/", "loai": "phân tích", "sections_seen": [
+      {"format": "essay", "items": 1, "note": "Đề essay chuyên Anh Hà Tĩnh 2026: 'As part of their study, students should learn not only how to answer questions but also how to question answers' — agree/disagree, lý do và ví dụ, 'Write about 250 words'"}
+    ]},
+    {"tinh_cu": "Hà Tĩnh", "truong": "THPT Chuyên Hà Tĩnh", "nam": 2025, "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2025/TAN/hatinhc.pdf", "loai": "công văn", "sections_seen": [
+      {"format": "other", "items": 0, "note": "Hướng dẫn tổ chức thi 2025: 'Môn Tiếng Anh: Thi theo hình thức kết hợp trắc nghiệm với tự luận, trong đó có kỹ năng nghe', 150 phút, chiều 4/6/2025; nội dung trong CT GDPT 2018 cấp THCS; lớp Pháp/Trung thi bài Tiếng Anh thay thế"}
+    ]},
+    {"tinh_cu": "Hà Tĩnh", "truong": "Sở GD&ĐT Hà Tĩnh (đề HSG 12, cùng khuôn)", "nam": 2025, "url": "https://springboard.vn/de-thi-hsg-tieng-anh-12-ha-tinh-24-25-dap-an-chi-tiet/", "loai": "đề thật", "sections_seen": [
+      {"format": "listening", "items": 25, "note": "Khuôn đề của Sở Hà Tĩnh (HSG 12 2024-2025, 180'): I. Listening 5 điểm — Part 1: 7 MCQ, Part 2: 8 T/F, Part 3: 10 điền 1 từ"},
+      {"format": "sentence_completion", "items": 20, "note": "II. Grammar and Lexical Items 5 điểm — Part 1: 20 MCQ; Part 2: 10 word form trong đoạn; Part 3: 10 ghép collocation"},
+      {"format": "reading_mcq", "items": 40, "note": "III. Reading 5 điểm — Part 1: 10 cloze MCQ; Part 2: 10 open cloze; Part 3: T/F/NG 6 + note completion 4; Part 4: đọc hiểu MCQ"},
+      {"format": "essay", "items": 1, "note": "IV. Writing 5 điểm — 5 transformation, 5 key word (3–6 từ), mô tả biểu đồ ≥150 từ, essay ≥250 từ (phần biểu đồ có thể chỉ ở đề HSG 12, không ở đề chuyên 10)"}
+    ]}
+  ],
+  "gaps": [
+    "Chưa đọc trực tiếp được đề chuyên Anh Hà Tĩnh 2026 hay 2025 (PDF springboard 'Dề-Chuyên-Anh-Hà-Tĩnh-2025-2026.pdf' và thư mục Google Drive 2026 không mở được qua WebFetch) — số câu, điểm từng part là ước theo khuôn đề HSG 12 cùng Sở",
+    "Số lần nghe, dạng từng part nghe của đề chuyên 10 chưa xác nhận",
+    "Chưa rõ Section Writing có phần mô tả biểu đồ như đề HSG 12 hay chỉ viết lại câu + essay",
+    "Chưa có đề 2022–2024 để kiểm tra độ ổn định khung đề"
+  ]
+}

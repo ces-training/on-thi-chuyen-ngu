@@ -15,37 +15,102 @@
    "ac_cap": 10,
    "ac_label": "Anh chung (đề chung)",
    "difficulty": null,
-   "difficulty_evidence": "Quy định 2026: 'Môn tiếng Anh thi kiến thức ngôn ngữ và 3 kỹ năng Nghe hiểu, Đọc hiểu, Viết (theo hình thức trắc nghiệm kết hợp tự luận)', 120 phút. Không tìm thấy đề công khai hay nhận xét độ khó.",
+   "difficulty_evidence": "Chưa đọc được đề. Quy định 2026 (CV 3119/SGDĐT-GDTrH 14/10/2025): Tiếng Anh chuyên thi 'kiến thức ngôn ngữ và 3 kỹ năng Nghe hiểu, Đọc hiểu, Viết' theo hình thức trắc nghiệm kết hợp tự luận, 120 phút, hệ số 2, điểm liệt dưới 2,0. Đề chuyên Tiếng Trung cùng sở có 5 phần (Nghe hiểu, Ngữ âm, Từ vựng-ngữ pháp, Đọc hiểu, Viết) – gợi ý đề Tiếng Anh cũng theo khung tương tự.",
    "minutes": 120,
    "has_listening": true,
    "essay_words": null,
    "sections": [
     {
      "format": "listening",
-     "items": null,
-     "points": null,
-     "note": "Nghe hiểu (theo quy định 2026)"
+     "items": 10,
+     "points": 2.0,
+     "note": "Sở quy định có kỹ năng Nghe hiểu (CV 3119/SGDĐT-GDTrH 14/10/2025). Số câu, dạng nghe (điền từ / trắc nghiệm) và cách phát (loa/đĩa) chưa rõ; số câu và điểm là ước lượng theo mẫu các đề chuyên có nghe (Sơn La, Phú Thọ)"
     },
     {
-     "format": "other",
-     "items": null,
+     "format": "pronunciation",
+     "items": 5,
      "points": null,
-     "note": "Kiến thức ngôn ngữ (ngữ âm/từ vựng/ngữ pháp – không rõ chi tiết)"
+     "note": "Thuộc phần 'Kiến thức ngôn ngữ'; dự đoán"
+    },
+    {
+     "format": "sentence_completion",
+     "items": 15,
+     "points": null,
+     "note": "Kiến thức ngôn ngữ (ngữ pháp, từ vựng); dự đoán"
+    },
+    {
+     "format": "word_formation",
+     "items": 5,
+     "points": null,
+     "note": "Dự đoán"
+    },
+    {
+     "format": "error_id",
+     "items": 5,
+     "points": null,
+     "note": "Dự đoán"
+    },
+    {
+     "format": "cloze",
+     "items": 10,
+     "points": null,
+     "note": "Đọc hiểu – dự đoán"
+    },
+    {
+     "format": "open_cloze",
+     "items": 5,
+     "points": null,
+     "note": "Dự đoán"
     },
     {
      "format": "reading_mcq",
-     "items": null,
+     "items": 10,
      "points": null,
-     "note": "Đọc hiểu – dạng cụ thể chưa rõ"
+     "note": "Sở quy định có kỹ năng Đọc hiểu; dạng cụ thể chưa rõ"
     },
     {
-     "format": "other",
-     "items": null,
+     "format": "key_word",
+     "items": 5,
      "points": null,
-     "note": "Viết – dạng cụ thể và số từ chưa rõ"
+     "note": "Viết – dự đoán"
+    },
+    {
+     "format": "paragraph_writing",
+     "items": 1,
+     "points": null,
+     "note": "Sở quy định có kỹ năng Viết (tự luận); dạng (đoạn văn/thư/luận) và số từ chưa rõ"
     }
    ],
-   "sample_links": []
+   "sample_links": [],
+   "predicted": {
+    "used": true,
+    "basis": "Dự đoán theo công văn 3119/SGDĐT-GDTrH (14/10/2025) của Sở GD&ĐT Điện Biên áp dụng kỳ thi 2026 (qua tuyensinh247): 120 phút, trắc nghiệm kết hợp tự luận, gồm kiến thức ngôn ngữ + Nghe hiểu + Đọc hiểu + Viết; khung 5 phần của đề chuyên Tiếng Trung cùng sở (Nghe, Ngữ âm, Từ vựng-ngữ pháp, Đọc, Viết) củng cố dự đoán thứ tự phần. Không tìm được đề chuyên Anh Điện Biên năm nào (2021–2026) nên số câu, điểm từng phần và dạng nghe/viết chỉ là ước lượng theo mẫu đề chuyên có nghe của tỉnh lân cận (Sơn La). Tỉnh không sáp nhập.",
+    "confidence": "trung bình",
+    "speaking": false,
+    "evidence": [
+     {
+      "tinh_cu": "Điện Biên",
+      "truong": "THPT chuyên Lê Quý Đôn",
+      "nam": 2026,
+      "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/dien-bien-p51.html",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Điện Biên",
+      "truong": "THPT chuyên Lê Quý Đôn",
+      "nam": 2026,
+      "url": "https://thptthanhchan.dienbien.edu.vn/uploads/news/2026_02/4-thong-bao-tuyen-sinh-vao-lop-10-nh-2026-2027-d-24.04.2026_15h40p44_signed.pdf",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Điện Biên",
+      "truong": "THPT chuyên Lê Quý Đôn",
+      "nam": 2026,
+      "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-dien-bien-214837",
+      "loai": "đề thật"
+     }
+    ]
+   }
   }
  },
  "formulas": {
@@ -128,37 +193,102 @@
   "ac_cap": 10,
   "ac_label": "Anh chung (đề chung)",
   "difficulty": null,
-  "difficulty_evidence": "Quy định 2026: 'Môn tiếng Anh thi kiến thức ngôn ngữ và 3 kỹ năng Nghe hiểu, Đọc hiểu, Viết (theo hình thức trắc nghiệm kết hợp tự luận)', 120 phút. Không tìm thấy đề công khai hay nhận xét độ khó.",
+  "difficulty_evidence": "Chưa đọc được đề. Quy định 2026 (CV 3119/SGDĐT-GDTrH 14/10/2025): Tiếng Anh chuyên thi 'kiến thức ngôn ngữ và 3 kỹ năng Nghe hiểu, Đọc hiểu, Viết' theo hình thức trắc nghiệm kết hợp tự luận, 120 phút, hệ số 2, điểm liệt dưới 2,0. Đề chuyên Tiếng Trung cùng sở có 5 phần (Nghe hiểu, Ngữ âm, Từ vựng-ngữ pháp, Đọc hiểu, Viết) – gợi ý đề Tiếng Anh cũng theo khung tương tự.",
   "minutes": 120,
   "has_listening": true,
   "essay_words": null,
   "sections": [
    {
     "format": "listening",
-    "items": null,
-    "points": null,
-    "note": "Nghe hiểu (theo quy định 2026)"
+    "items": 10,
+    "points": 2.0,
+    "note": "Sở quy định có kỹ năng Nghe hiểu (CV 3119/SGDĐT-GDTrH 14/10/2025). Số câu, dạng nghe (điền từ / trắc nghiệm) và cách phát (loa/đĩa) chưa rõ; số câu và điểm là ước lượng theo mẫu các đề chuyên có nghe (Sơn La, Phú Thọ)"
    },
    {
-    "format": "other",
-    "items": null,
+    "format": "pronunciation",
+    "items": 5,
     "points": null,
-    "note": "Kiến thức ngôn ngữ (ngữ âm/từ vựng/ngữ pháp – không rõ chi tiết)"
+    "note": "Thuộc phần 'Kiến thức ngôn ngữ'; dự đoán"
+   },
+   {
+    "format": "sentence_completion",
+    "items": 15,
+    "points": null,
+    "note": "Kiến thức ngôn ngữ (ngữ pháp, từ vựng); dự đoán"
+   },
+   {
+    "format": "word_formation",
+    "items": 5,
+    "points": null,
+    "note": "Dự đoán"
+   },
+   {
+    "format": "error_id",
+    "items": 5,
+    "points": null,
+    "note": "Dự đoán"
+   },
+   {
+    "format": "cloze",
+    "items": 10,
+    "points": null,
+    "note": "Đọc hiểu – dự đoán"
+   },
+   {
+    "format": "open_cloze",
+    "items": 5,
+    "points": null,
+    "note": "Dự đoán"
    },
    {
     "format": "reading_mcq",
-    "items": null,
+    "items": 10,
     "points": null,
-    "note": "Đọc hiểu – dạng cụ thể chưa rõ"
+    "note": "Sở quy định có kỹ năng Đọc hiểu; dạng cụ thể chưa rõ"
    },
    {
-    "format": "other",
-    "items": null,
+    "format": "key_word",
+    "items": 5,
     "points": null,
-    "note": "Viết – dạng cụ thể và số từ chưa rõ"
+    "note": "Viết – dự đoán"
+   },
+   {
+    "format": "paragraph_writing",
+    "items": 1,
+    "points": null,
+    "note": "Sở quy định có kỹ năng Viết (tự luận); dạng (đoạn văn/thư/luận) và số từ chưa rõ"
    }
   ],
-  "sample_links": []
+  "sample_links": [],
+  "predicted": {
+   "used": true,
+   "basis": "Dự đoán theo công văn 3119/SGDĐT-GDTrH (14/10/2025) của Sở GD&ĐT Điện Biên áp dụng kỳ thi 2026 (qua tuyensinh247): 120 phút, trắc nghiệm kết hợp tự luận, gồm kiến thức ngôn ngữ + Nghe hiểu + Đọc hiểu + Viết; khung 5 phần của đề chuyên Tiếng Trung cùng sở (Nghe, Ngữ âm, Từ vựng-ngữ pháp, Đọc, Viết) củng cố dự đoán thứ tự phần. Không tìm được đề chuyên Anh Điện Biên năm nào (2021–2026) nên số câu, điểm từng phần và dạng nghe/viết chỉ là ước lượng theo mẫu đề chuyên có nghe của tỉnh lân cận (Sơn La). Tỉnh không sáp nhập.",
+   "confidence": "trung bình",
+   "speaking": false,
+   "evidence": [
+    {
+     "tinh_cu": "Điện Biên",
+     "truong": "THPT chuyên Lê Quý Đôn",
+     "nam": 2026,
+     "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/dien-bien-p51.html",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Điện Biên",
+     "truong": "THPT chuyên Lê Quý Đôn",
+     "nam": 2026,
+     "url": "https://thptthanhchan.dienbien.edu.vn/uploads/news/2026_02/4-thong-bao-tuyen-sinh-vao-lop-10-nh-2026-2027-d-24.04.2026_15h40p44_signed.pdf",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Điện Biên",
+     "truong": "THPT chuyên Lê Quý Đôn",
+     "nam": 2026,
+     "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-dien-bien-214837",
+     "loai": "đề thật"
+    }
+   ]
+  }
  },
  "exam_2026": {
   "dates": "25–26/5/2026. 25/5: Toán 90' (7h30), Tiếng Anh 60' (9h45), Ngữ văn 120' (14h00). 26/5 sáng (7h30, 120'): môn chuyên Toán, Lý, Hóa, Văn, Tiếng Anh, Tiếng Trung, Tin; 26/5 chiều (14h00, 120'): chuyên Sinh, Sử, Địa.",

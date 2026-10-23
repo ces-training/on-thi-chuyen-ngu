@@ -23,7 +23,43 @@
    "has_listening": null,
    "essay_words": null,
    "sections": [],
-   "sample_links": []
+   "sample_links": [],
+   "predicted": {
+    "used": false,
+    "basis": "Dự đoán theo (1) lịch thi và hướng dẫn của Sở Lào Cai 2023, 2025, 2026: bài viết môn chuyên Tiếng Anh 150 phút kèm buổi thi nói riêng 5'+3' — đây là điểm chắc chắn nhất; (2) Yên Bái cũ (CV 222/2025): bài chuyên Tiếng Anh cũng 150 phút, thang 10, thí sinh lớp Trung được chọn bài Anh hoặc Trung; (3) khung các phần (nghe, từ vựng – ngữ pháp, word form, đọc, viết lại câu, viết luận) lấy theo mẫu chung của đề chuyên các tỉnh lân cận cùng năm 2026 (Sơn La, Lai Châu, Điện Biên, Tuyên Quang trên springboard.vn) vì không tìm được đề thật của Lào Cai lẫn Yên Bái. Từ 2026 hai trường chuyên thi chung một đề của Sở mới; Sở đặt tại Lào Cai nên nếu có khác biệt giữa hai tỉnh cũ thì khả năng cao theo cách ra đề của Chuyên Lào Cai (có thi nói).",
+    "confidence": "thấp",
+    "speaking": true,
+    "evidence": [
+     {
+      "tinh_cu": "Lào Cai",
+      "truong": "THPT Chuyên Lào Cai",
+      "nam": 2023,
+      "url": "https://storage-vnportal.vnpt.vn/lci-ubnd-responsive/2318/Tailieu2022/1_hd_tuyen_sinh_thpt_20230425020230426091024992_signed.pdf",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Lào Cai",
+      "truong": "THPT Chuyên Lào Cai",
+      "nam": 2026,
+      "url": "https://baolaocai.vn/ky-thi-tuyen-sinh-vao-lop-10-se-dien-ra-tu-ngay-27-295-post897367.html",
+      "loai": "bài báo"
+     },
+     {
+      "tinh_cu": "Yên Bái",
+      "truong": "THPT Chuyên Nguyễn Tất Thành",
+      "nam": 2025,
+      "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2025/NNL/06062025/cong-van-222-huong-dan-to-chuc-tuyen-sinh-giao-duc-trung-hoc-2025-2026-tinh-yen-bai.pdf",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Lào Cai",
+      "truong": "THPT Chuyên Lào Cai",
+      "nam": 2025,
+      "url": "https://baolaocai.vn/toa-sang-tri-tue-post648190.html",
+      "loai": "bài báo"
+     }
+    ]
+   }
   }
  },
  "formulas": {
@@ -126,7 +162,43 @@
   "has_listening": null,
   "essay_words": null,
   "sections": [],
-  "sample_links": []
+  "sample_links": [],
+  "predicted": {
+   "used": false,
+   "basis": "Dự đoán theo (1) lịch thi và hướng dẫn của Sở Lào Cai 2023, 2025, 2026: bài viết môn chuyên Tiếng Anh 150 phút kèm buổi thi nói riêng 5'+3' — đây là điểm chắc chắn nhất; (2) Yên Bái cũ (CV 222/2025): bài chuyên Tiếng Anh cũng 150 phút, thang 10, thí sinh lớp Trung được chọn bài Anh hoặc Trung; (3) khung các phần (nghe, từ vựng – ngữ pháp, word form, đọc, viết lại câu, viết luận) lấy theo mẫu chung của đề chuyên các tỉnh lân cận cùng năm 2026 (Sơn La, Lai Châu, Điện Biên, Tuyên Quang trên springboard.vn) vì không tìm được đề thật của Lào Cai lẫn Yên Bái. Từ 2026 hai trường chuyên thi chung một đề của Sở mới; Sở đặt tại Lào Cai nên nếu có khác biệt giữa hai tỉnh cũ thì khả năng cao theo cách ra đề của Chuyên Lào Cai (có thi nói).",
+   "confidence": "thấp",
+   "speaking": true,
+   "evidence": [
+    {
+     "tinh_cu": "Lào Cai",
+     "truong": "THPT Chuyên Lào Cai",
+     "nam": 2023,
+     "url": "https://storage-vnportal.vnpt.vn/lci-ubnd-responsive/2318/Tailieu2022/1_hd_tuyen_sinh_thpt_20230425020230426091024992_signed.pdf",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Lào Cai",
+     "truong": "THPT Chuyên Lào Cai",
+     "nam": 2026,
+     "url": "https://baolaocai.vn/ky-thi-tuyen-sinh-vao-lop-10-se-dien-ra-tu-ngay-27-295-post897367.html",
+     "loai": "bài báo"
+    },
+    {
+     "tinh_cu": "Yên Bái",
+     "truong": "THPT Chuyên Nguyễn Tất Thành",
+     "nam": 2025,
+     "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2025/NNL/06062025/cong-van-222-huong-dan-to-chuc-tuyen-sinh-giao-duc-trung-hoc-2025-2026-tinh-yen-bai.pdf",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Lào Cai",
+     "truong": "THPT Chuyên Lào Cai",
+     "nam": 2025,
+     "url": "https://baolaocai.vn/toa-sang-tri-tue-post648190.html",
+     "loai": "bài báo"
+    }
+   ]
+  }
  },
  "exam_2026": {
   "dates": "27–29/5/2026 (26/5 làm thủ tục). 27/5 sáng Ngữ văn 120'; 27/5 chiều Ngoại ngữ (Tiếng Anh hoặc Tiếng Trung) 60'; 28/5 sáng Toán 90'; 28/5 chiều các môn chuyên (KHTN1/2/3, Tin, LS-ĐL1/2, Tiếng Anh, Tiếng Trung) 150'; 29/5 sáng chuyên Toán, chuyên Ngữ văn 150'. Ngày 29/5 còn có buổi 'thi nói các môn ngoại ngữ' (5' chuẩn bị, 3' trả lời) — năm 2025 Chuyên Lào Cai đã có 'thi nói môn chuyên ngoại ngữ' ngày 6/6 (Báo Lào Cai 5/6/2025), nên khả năng cao phần nói áp dụng cho chuyên Anh/Trung – chưa có văn bản xác nhận cách tính điểm phần nói. Điểm thi công bố 9/6/2026; điểm chuẩn chuyên công bố ~10/6/2026.",

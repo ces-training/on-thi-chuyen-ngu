@@ -1,0 +1,41 @@
+{
+  "slug": "dien-bien",
+  "predicted": {
+    "minutes": 120,
+    "scale": 10,
+    "has_listening": true,
+    "essay_words": null,
+    "sections": [
+      {"format": "listening", "items": 10, "points": 2.0, "note": "Sở quy định có kỹ năng Nghe hiểu (CV 3119/SGDĐT-GDTrH 14/10/2025). Số câu, dạng nghe (điền từ / trắc nghiệm) và cách phát (loa/đĩa) chưa rõ; số câu và điểm là ước lượng theo mẫu các đề chuyên có nghe (Sơn La, Phú Thọ)"},
+      {"format": "pronunciation", "items": 5, "points": null, "note": "Thuộc phần 'Kiến thức ngôn ngữ'; dự đoán"},
+      {"format": "sentence_completion", "items": 15, "points": null, "note": "Kiến thức ngôn ngữ (ngữ pháp, từ vựng); dự đoán"},
+      {"format": "word_formation", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "error_id", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "cloze", "items": 10, "points": null, "note": "Đọc hiểu – dự đoán"},
+      {"format": "open_cloze", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "reading_mcq", "items": 10, "points": null, "note": "Sở quy định có kỹ năng Đọc hiểu; dạng cụ thể chưa rõ"},
+      {"format": "key_word", "items": 5, "points": null, "note": "Viết – dự đoán"},
+      {"format": "paragraph_writing", "items": 1, "points": null, "note": "Sở quy định có kỹ năng Viết (tự luận); dạng (đoạn văn/thư/luận) và số từ chưa rõ"}
+    ],
+    "difficulty": null,
+    "difficulty_evidence": "Chưa đọc được đề. Quy định 2026 (CV 3119/SGDĐT-GDTrH 14/10/2025): Tiếng Anh chuyên thi 'kiến thức ngôn ngữ và 3 kỹ năng Nghe hiểu, Đọc hiểu, Viết' theo hình thức trắc nghiệm kết hợp tự luận, 120 phút, hệ số 2, điểm liệt dưới 2,0. Đề chuyên Tiếng Trung cùng sở có 5 phần (Nghe hiểu, Ngữ âm, Từ vựng-ngữ pháp, Đọc hiểu, Viết) – gợi ý đề Tiếng Anh cũng theo khung tương tự."
+  },
+  "basis": "Dự đoán theo công văn 3119/SGDĐT-GDTrH (14/10/2025) của Sở GD&ĐT Điện Biên áp dụng kỳ thi 2026 (qua tuyensinh247): 120 phút, trắc nghiệm kết hợp tự luận, gồm kiến thức ngôn ngữ + Nghe hiểu + Đọc hiểu + Viết; khung 5 phần của đề chuyên Tiếng Trung cùng sở (Nghe, Ngữ âm, Từ vựng-ngữ pháp, Đọc, Viết) củng cố dự đoán thứ tự phần. Không tìm được đề chuyên Anh Điện Biên năm nào (2021–2026) nên số câu, điểm từng phần và dạng nghe/viết chỉ là ước lượng theo mẫu đề chuyên có nghe của tỉnh lân cận (Sơn La). Tỉnh không sáp nhập.",
+  "confidence": "trung bình",
+  "evidence": [
+    {"tinh_cu": "Điện Biên", "truong": "THPT chuyên Lê Quý Đôn", "nam": 2026, "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/dien-bien-p51.html", "loai": "công văn", "sections_seen": [
+      {"format": "listening", "items": null, "note": "Mô tả cấp sở (CV 3119/SGDĐT-GDTrH 14/10/2025): có kỹ năng Nghe hiểu"},
+      {"format": "other", "items": null, "note": "Kiến thức ngôn ngữ (ngữ âm, từ vựng, ngữ pháp) – không rõ dạng"},
+      {"format": "reading_mcq", "items": null, "note": "Kỹ năng Đọc hiểu – không rõ dạng"},
+      {"format": "other", "items": null, "note": "Kỹ năng Viết (tự luận) – không rõ dạng, số từ"}
+    ], "note": "Trích: 'thi kiến thức ngôn ngữ và 3 kỹ năng Nghe hiểu, Đọc hiểu, Viết (theo hình thức trắc nghiệm kết hợp tự luận)'; '120 phút đối với tất cả các môn chuyên'; 'điểm bài thi môn chuyên tính hệ số 2'. Tiếng Trung chuyên: 5 phần Nghe hiểu, Ngữ âm, Từ vựng-ngữ pháp, Đọc hiểu, Viết."},
+    {"tinh_cu": "Điện Biên", "truong": "THPT chuyên Lê Quý Đôn", "nam": 2026, "url": "https://thptthanhchan.dienbien.edu.vn/uploads/news/2026_02/4-thong-bao-tuyen-sinh-vao-lop-10-nh-2026-2027-d-24.04.2026_15h40p44_signed.pdf", "loai": "công văn", "sections_seen": [], "note": "Thông báo trường THPT thường: Tiếng Anh chung trắc nghiệm 60 phút, thi 25/5/2026; dẫn CV 1338/SGDĐT-GDMNPT về tuyển sinh Lê Quý Đôn (chưa đọc được)."},
+    {"tinh_cu": "Điện Biên", "truong": "THPT chuyên Lê Quý Đôn", "nam": 2026, "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-dien-bien-214837", "loai": "đề thật", "sections_seen": [], "note": "Chỉ có đề Tiếng Anh chung; không có đề chuyên."}
+  ],
+  "gaps": [
+    "Không tìm được đề chuyên Anh Điện Biên năm nào (kể cả 2026) trên các trang tổng hợp, trang Sở (dienbien.edu.vn) hay báo; không có bài phân tích.",
+    "Văn bản gốc CV 3119/SGDĐT-GDTrH và CV 1338/SGDĐT-GDMNPT chưa đọc được – có thể ghi biểu điểm từng kỹ năng.",
+    "Chưa rõ dạng nghe (điền từ/trắc nghiệm, số câu, cách phát), dạng và số từ bài viết, số câu từng phần, độ khó.",
+    "Thời lượng môn chuyên các năm trước 2026 (có phải 150 phút rồi đổi sang 120 không)."
+  ]
+}

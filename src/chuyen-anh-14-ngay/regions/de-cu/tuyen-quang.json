@@ -1,0 +1,40 @@
+{
+  "slug": "tuyen-quang",
+  "predicted": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": false,
+    "essay_words": null,
+    "sections": [
+      {"format": "pronunciation", "items": 5, "points": null, "note": "Dự đoán theo mẫu chung vùng miền núi phía Bắc không thi nghe; không có bằng chứng trực tiếp"},
+      {"format": "stress", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "sentence_completion", "items": 15, "points": null, "note": "Trắc nghiệm ngữ pháp, từ vựng; dự đoán"},
+      {"format": "error_id", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "word_formation", "items": 10, "points": null, "note": "Dự đoán"},
+      {"format": "cloze", "items": 10, "points": null, "note": "Dự đoán"},
+      {"format": "open_cloze", "items": 10, "points": null, "note": "Dự đoán"},
+      {"format": "reading_mcq", "items": 10, "points": null, "note": "Dự đoán"},
+      {"format": "key_word", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "transformation", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "paragraph_writing", "items": 1, "points": null, "note": "Dự đoán có bài viết ngắn vì cả hai tỉnh cũ đều quy định 'tự luận kết hợp trắc nghiệm'; độ dài chưa rõ"}
+    ],
+    "difficulty": null,
+    "difficulty_evidence": "Chưa đọc được đề chuyên Anh Tuyên Quang hay Hà Giang nào. Cả hai tỉnh cũ đều quy định môn chuyên 150 phút, Tiếng Anh chuyên 'tự luận kết hợp trắc nghiệm' (Tuyên Quang 2024 – giaoduc.net.vn; Hà Giang 2024 – KH tuyển sinh Trường THPT Chuyên Hà Giang). Không văn bản nào nhắc phần nghe."
+  },
+  "basis": "Dự đoán theo điểm chung của hai tỉnh cũ: Tuyên Quang 2024 (môn chuyên 150 phút; 'Môn Tiếng Anh chuyên thi tự luận kết hợp trắc nghiệm') và Hà Giang 2024 (bài chuyên 150 phút; 'Hình thức thi: Tự luận, riêng môn Tiếng Anh được kết hợp giữa hình thức tự luận với trắc nghiệm'). Sở mới (trụ sở Tuyên Quang) năm 2026 ra chung đề, thi môn chuyên 27–28/5/2026 (QĐ 555/QĐ-UBND; CV 1133/SGDĐT-QLCL chưa đọc được) nên 150 phút + trắc nghiệm kết hợp tự luận gần như chắc; không thi nghe là suy đoán vì không văn bản nào nhắc. Dạng bài và số câu cụ thể là mẫu chung vùng, chưa có đề thật đối chiếu. Đề thi thử 'chuyên Hà Giang 2020' trên doctailieu là đề do trang tự biên (50 câu trắc nghiệm kiểu đề tốt nghiệp THPT), không dùng để suy cấu trúc.",
+  "confidence": "thấp",
+  "evidence": [
+    {"tinh_cu": "Tuyên Quang", "truong": "THPT Chuyên Tuyên Quang", "nam": 2024, "url": "https://giaoduc.net.vn/tuyen-quang-chot-thoi-gian-thi-vao-lop-10-nam-2024-post242517.gd", "loai": "bài báo", "sections_seen": [], "note": "Trích: 'phải thi thêm môn thứ tư là môn chuyên với thời gian 150 phút'; 'Môn Ngữ Văn không chuyên và các môn chuyên (trừ Tiếng Anh) sẽ thi tự luận'; 'Môn Tiếng Anh chuyên thi tự luận kết hợp trắc nghiệm'. Không nêu cấu trúc."},
+    {"tinh_cu": "Hà Giang", "truong": "THPT Chuyên Hà Giang", "nam": 2024, "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/PPH/word/tuyen-sinh-vao-lop-10.pdf", "loai": "công văn", "sections_seen": [], "note": "KH tuyển sinh lớp 10 năm học 2024-2025 của Trường THPT Chuyên tỉnh Hà Giang (tháng 4/2024): thi 4 bài (Văn, Toán, Tiếng Anh, môn Chuyên); 'bài thi môn Chuyên 150 phút', môn không chuyên 120 phút; 'Hình thức thi: Tự luận, riêng môn Tiếng Anh được kết hợp giữa hình thức tự luận với trắc nghiệm'; môn Chuyên thi sáng 06/6/2024; ĐXT = Toán + Văn + Anh + Chuyên×2; điểm liệt ≤2,0. Không nêu cấu trúc, không nhắc nghe."},
+    {"tinh_cu": "Tuyên Quang", "truong": "THPT Chuyên Tuyên Quang + THPT Chuyên Hà Giang", "nam": 2026, "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/tuyen-quang-p62.html", "loai": "công văn", "sections_seen": [], "note": "Kỳ thi 2026 sở mới: thi thêm 1 môn chuyên, 'mỗi môn thi có 01 đề thi riêng theo chương trình môn học cấp THCS'; thi môn chuyên 27–28/5/2026; không nêu hình thức/thời gian môn chuyên."},
+    {"tinh_cu": "Hà Giang", "truong": "THPT Chuyên Hà Giang", "nam": 2020, "url": "https://doctailieu.com/de-thi-thu-lop-10-mon-anh-chuyen-ha-giang-2020-g1107", "loai": "phân tích", "sections_seen": [], "note": "Đề thi thử do doctailieu tự biên (50 câu trắc nghiệm: tìm lỗi, trái nghĩa, giao tiếp, nối câu, đồng nghĩa, 2 bài đọc, ngữ pháp, ngữ âm, cloze, viết lại trắc nghiệm, trọng âm; không có tự luận). Không phải đề của Sở/trường nên KHÔNG dùng để suy cấu trúc; ghi để khỏi tìm lại."},
+    {"tinh_cu": "Tuyên Quang", "truong": "THPT Chuyên Tuyên Quang", "nam": 2025, "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-tuyen-quang-208945", "loai": "đề thật", "sections_seen": [], "note": "Chỉ có đề Tiếng Anh chung 2021–2025 (dạng ảnh); không có đề chuyên."}
+  ],
+  "gaps": [
+    "Không tìm được đề chuyên Anh Tuyên Quang hay Hà Giang năm nào (2019–2026) ở dạng văn bản hay ảnh; không có bài phân tích; trang trường không tìm thấy.",
+    "CV 1133/SGDĐT-QLCL (08/4/2026) hướng dẫn hình thức thi, cấu trúc đề của sở mới chưa đọc được – nguồn tốt nhất để xác nhận thời gian và cấu trúc 2026.",
+    "Chưa xác định có nghe không (dự đoán không), dạng và độ dài bài viết, độ khó.",
+    "Chưa rõ 2026 hai trường chuyên dùng chung một đề chuyên Anh hay không (QĐ 555 chỉ nói mỗi môn một đề).",
+    "Dạng bài và số câu trong predicted là ước lượng theo mẫu vùng."
+  ]
+}

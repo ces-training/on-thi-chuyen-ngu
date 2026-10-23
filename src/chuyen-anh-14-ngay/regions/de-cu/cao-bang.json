@@ -1,0 +1,38 @@
+{
+  "slug": "cao-bang",
+  "predicted": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": false,
+    "essay_words": null,
+    "sections": [
+      {"format": "pronunciation", "items": 5, "points": null, "note": "Dự đoán theo mẫu chung đề chuyên các tỉnh miền núi phía Bắc (Thái Nguyên, Phú Thọ): ngữ âm + trọng âm mở đầu phần trắc nghiệm"},
+      {"format": "stress", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "sentence_completion", "items": 15, "points": null, "note": "Trắc nghiệm ngữ pháp, từ vựng; dự đoán"},
+      {"format": "error_id", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "word_formation", "items": 10, "points": null, "note": "Phần tự luận; dự đoán"},
+      {"format": "cloze", "items": 10, "points": null, "note": "Dự đoán"},
+      {"format": "open_cloze", "items": 10, "points": null, "note": "Dự đoán"},
+      {"format": "reading_mcq", "items": 10, "points": null, "note": "Dự đoán"},
+      {"format": "key_word", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "transformation", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "paragraph_writing", "items": 1, "points": null, "note": "Dự đoán có một bài viết ngắn (đoạn văn/thư) vì sở ghi 'kết hợp trắc nghiệm + tự luận'; độ dài chưa rõ"}
+    ],
+    "difficulty": null,
+    "difficulty_evidence": "Chưa đọc được đề nào. Chỉ có văn bản sở: môn chuyên 150 phút, Tiếng Anh chuyên kết hợp trắc nghiệm + tự luận, nội dung chương trình THCS (CV 633/SGD&ĐT-QLCLCNTT 2022; CV 228/SGDĐT-QLCLCNTT 22/01/2026; thông báo trường 20/4/2026)."
+  },
+  "basis": "Dự đoán theo văn bản của Sở GD&ĐT Cao Bằng và Trường THPT Chuyên Cao Bằng (150 phút, thang 10, hệ số 2, 'kết hợp trắc nghiệm và tự luận', không nhắc phần nghe) vì không tìm được bất kỳ đề chuyên Anh Cao Bằng nào công khai (2021–2026) trên tuyensinh247, hoatieu, vietjack, loigiaihay, thuvienphapluat, springboard, doctailieu, violet, 123docz hay trang trường. Danh sách dạng bài là mẫu chung của đề chuyên các tỉnh miền núi phía Bắc không thi nghe (Thái Nguyên 2026, Phú Thọ); số câu chỉ là ước lượng. Tỉnh không sáp nhập nên không có tỉnh cũ khác để đối chiếu.",
+  "confidence": "thấp",
+  "evidence": [
+    {"tinh_cu": "Cao Bằng", "truong": "THPT Chuyên Cao Bằng", "nam": 2026, "url": "https://thptchuyencaobang.edu.vn/uploads/news/2026_04/tb-ts-10-chuyen-nam-hoc-26-27.pdf", "loai": "công văn", "sections_seen": [], "note": "Thông báo tuyển sinh 2026-2027: môn chuyên 150 phút; Tiếng Anh chuyên kết hợp trắc nghiệm + tự luận; không nêu cấu trúc, không nhắc phần nghe."},
+    {"tinh_cu": "Cao Bằng", "truong": "THPT Chuyên Cao Bằng", "nam": 2026, "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/cac-mon-thi-vao-lop-10-20262027-cao-bang-may-mon-138078725.html", "loai": "công văn", "sections_seen": [], "note": "CV 228/SGDĐT-QLCLCNTT (22/01/2026): môn chuyên 150 phút, Tiếng Anh chuyên trắc nghiệm kết hợp tự luận; Tiếng Anh chung trắc nghiệm 60 phút."},
+    {"tinh_cu": "Cao Bằng", "truong": "THPT Chuyên Cao Bằng", "nam": 2022, "url": "https://storage-vnportal.vnpt.vn/cbg-ubnd/sitefolders/sgddt/4974/2022/t4/633.pdf", "loai": "công văn", "sections_seen": [], "note": "CV 633/SGD&ĐT-QLCLCNTT 2022: cùng quy định 150 phút, kết hợp trắc nghiệm và tự luận, phạm vi chương trình THCS."},
+    {"tinh_cu": "Cao Bằng", "truong": "THPT Chuyên Cao Bằng", "nam": 2026, "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/full-dap-an-de-thi-vao-lop-10-tieng-anh-cao-bang-2026-nhu-the-nao-138092458.html", "loai": "bài báo", "sections_seen": [], "note": "Chỉ có đề Tiếng Anh chung 2026; không có đề chuyên."}
+  ],
+  "gaps": [
+    "Không tìm được đề chuyên Anh Cao Bằng bất kỳ năm nào (2021–2026) ở dạng văn bản hay ảnh; các trang tổng hợp (hoatieu, vietjack, tuyensinh247, loigiaihay, springboard, doctailieu) chỉ có đề Tiếng Anh chung.",
+    "Chưa xác định có phần nghe hay không (văn bản sở không nhắc; dự đoán không có).",
+    "Chưa biết dạng bài viết (đoạn văn/thư/luận) và số từ.",
+    "Chưa có nhận xét độ khó; các dạng bài và số câu trong predicted chỉ là ước lượng theo mẫu chung của vùng, cần thay bằng đề thật khi có (có thể xin đề từ giáo viên/học sinh Chuyên Cao Bằng)."
+  ]
+}

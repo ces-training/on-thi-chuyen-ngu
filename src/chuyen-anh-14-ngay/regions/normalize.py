@@ -105,10 +105,17 @@ def build_exam(raw, key, label, warnings, slug):
     dc = DECU.get(slug if key == "so" else key)
     if dc and (dc.get("predicted") or {}).get("sections") and len({x.get("format") for x in P.get("sections") or [] if x.get("format") != "other"}) < 3:
         Q = dc["predicted"]
-        for k2 in ("minutes", "has_listening", "essay_words", "difficulty", "difficulty_evidence"):
-            if Q.get(k2) is not None: P[k2] = Q[k2]
-        P["sections"] = Q["sections"]
-        pred = {"basis": dc.get("basis"), "confidence": dc.get("confidence"),
+        # dùng khung dự đoán khi độ tin cậy từ trung bình trở lên, hoặc khi có ít nhất một đề thật của tỉnh cũ đọc được (≥ 4 phần);
+        # độ tin cậy thấp mà chỉ là "mẫu chung vùng" thì không dựng bảng dạng bài, chỉ ghi những gì đã tìm được
+        real = any(e.get("loai") == "đề thật" and len(e.get("sections_seen") or []) >= 4 for e in dc.get("evidence") or [])
+        use = dc.get("confidence") in ("cao", "trung bình") or real
+        if use:
+            for k2 in ("has_listening", "essay_words", "difficulty", "difficulty_evidence"):
+                if Q.get(k2) is not None: P[k2] = Q[k2]
+            P["sections"] = Q["sections"]
+        if Q.get("minutes") and not P.get("minutes"): P["minutes"] = Q["minutes"]
+        pred = {"used": use, "basis": dc.get("basis"), "confidence": dc.get("confidence"),
+                "speaking": any((x.get("note") or "").lower().startswith("thi nói") for x in Q["sections"]),
                 "evidence": [{k3: e.get(k3) for k3 in ("tinh_cu", "truong", "nam", "url", "loai")} for e in dc.get("evidence") or [] if e.get("url")]}
     paper = {"map": tier(P.get("difficulty")), "label": f"đề chuyên Anh {label}", "ac_add": 2.5, "ac_cap": 10,
              "ac_label": "Anh chung (đề chung)", "difficulty": P.get("difficulty"), "difficulty_evidence": P.get("difficulty_evidence"),

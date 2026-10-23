@@ -1,0 +1,43 @@
+{
+  "slug": "chuyen-khoa-hoc-hue",
+  "predicted": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": false,
+    "essay_words": 200,
+    "sections": [
+      {"format": "pronunciation", "items": 3, "points": 0.3, "note": "Ước đoán theo mẫu đề chuyên của các trường chuyên thuộc đại học thi riêng, thi một buổi trên giấy (Chuyên ĐH Vinh, Chuyên ĐHSP): mở đầu bằng ngữ âm"},
+      {"format": "stress", "items": 2, "points": 0.2, "note": "Trọng âm — ước đoán"},
+      {"format": "sentence_completion", "items": 20, "points": 2.0, "note": "Trắc nghiệm ngữ pháp – từ vựng — dạng gần như chắc chắn có"},
+      {"format": "word_formation", "items": 10, "points": 1.0, "note": "Chia dạng từ — ước đoán"},
+      {"format": "error_id", "items": 5, "points": 0.5, "note": "Tìm lỗi sai — ước đoán"},
+      {"format": "cloze", "items": 10, "points": 1.0, "note": "Đọc điền trắc nghiệm — ước đoán"},
+      {"format": "open_cloze", "items": 10, "points": 1.0, "note": "Điền một từ — ước đoán"},
+      {"format": "reading_mcq", "items": 10, "points": 1.0, "note": "Đọc hiểu trắc nghiệm — ước đoán"},
+      {"format": "transformation", "items": 5, "points": 0.5, "note": "Viết lại câu — ước đoán"},
+      {"format": "key_word", "items": 5, "points": 0.5, "note": "Viết lại câu với từ cho sẵn — ước đoán"},
+      {"format": "essay", "items": 1, "points": 2.0, "note": "Bài luận/đoạn văn 150–200 từ — ước đoán"}
+    ],
+    "difficulty": null,
+    "difficulty_evidence": "Không đọc được đề nào. Gián tiếp: điểm chuẩn lớp Anh 30–32/50 (chuyên ×2) thấp hơn chuyên Anh Quốc Học (37–39/50) khoảng 6–7 điểm; lớp Anh 2025–2026 là lớp có điểm chuẩn cao nhất/nhì trường — thí sinh đỗ đạt trung bình ~6/10 mỗi bài, chưa đủ suy ra độ khó đề."
+  },
+  "basis": "Không tìm được đề chuyên Anh (hay đề Tiếng Anh vòng 1) nào của Trường THPT Chuyên Khoa học Huế các năm 2022–2026, cũng không có công văn/thông báo mô tả cấu trúc. Điều chắc chắn: trường thi riêng, không dùng đề Sở Huế — vietjack đăng đề Toán 'vòng 1' và 'vòng 2' năm 2026 của trường, Mực Tím 2026 xác nhận 'điểm mỗi bài thi vòng 1 phải từ 2 điểm trở lên' và công thức Toán + Văn + Anh (hệ số 1) + môn chuyên ×2, không cộng ưu tiên; điểm chuẩn công bố 13/6/2026 (trước Sở Huế một ngày). springboard.vn liệt kê 'Đại học Huế' trong tuyển tập đề chuyên Anh 2026-2027 — nhiều khả năng chính là đề của trường này nhưng chưa có trang riêng để đọc. Vì không có bằng chứng, các phần dự đoán lấy theo mẫu đề một buổi, không nghe, của các trường chuyên thuộc đại học (Chuyên ĐH Vinh, Chuyên ĐHSP Hà Nội) và chỉ nên dùng để chọn bài luyện phổ quát (từ vựng – ngữ pháp, word form, đọc, viết lại câu, viết luận). Thời gian 150' là giả định theo môn chuyên Toán của trường; chưa có văn bản.",
+  "confidence": "thấp",
+  "evidence": [
+    {"tinh_cu": "Thừa Thiên Huế", "truong": "THPT Chuyên Khoa học Huế", "nam": 2026, "url": "https://muctim.tuoitre.vn/da-co-diem-chuan-vao-lop-10-truong-thpt-chuyen-khoa-hoc-hue-cao-nhat-3125-diem-101260613170857065.htm", "loai": "bài báo", "sections_seen": [
+      {"format": "other", "items": 0, "note": "Điểm chuẩn 2026: Văn 31,25; Anh 31; Toán 27; Hóa 27; Sinh 26; Lý 24. Công thức Toán + Văn + Anh (hệ số 1) + chuyên ×2, không cộng ưu tiên; 'điểm mỗi bài thi vòng 1 từ 2 điểm trở lên' — xác nhận có vòng 1 (3 môn chung) và vòng 2 (môn chuyên) do trường tổ chức. Không nói gì về cấu trúc đề chuyên Anh"}
+    ]},
+    {"tinh_cu": "Thừa Thiên Huế", "truong": "THPT Chuyên Khoa học Huế", "nam": 2026, "url": "https://vietjack.com/de-thi-vao-10-mon-toan/de-thi-toan-vao-lop-10-nam-2026-truong-thpt-chuyen-khoa-hoc-hue-v2.jsp", "loai": "đề thật", "sections_seen": [
+      {"format": "other", "items": 0, "note": "Đề Toán 'vòng 2' 2026 của trường (vietjack cũng có 'vòng 1') — chứng tỏ trường tự ra đề riêng hai vòng; không có trang đề Tiếng Anh tương ứng trên vietjack"}
+    ]},
+    {"tinh_cu": "Thừa Thiên Huế", "truong": "THPT Chuyên Khoa học Huế", "nam": 2026, "url": "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/", "loai": "phân tích", "sections_seen": [
+      {"format": "other", "items": 0, "note": "Tuyển tập đề chuyên Anh 2026-2027 của springboard liệt kê mục 'Đại học Huế' tách riêng với 'Thừa Thiên – Huế' — khả năng cao là đề chuyên Anh của Chuyên Khoa học Huế, nhưng trang không có link/nội dung"}
+    ]}
+  ],
+  "gaps": [
+    "Không tìm được đề chuyên Anh hay đề Tiếng Anh vòng 1 của trường năm nào (12 lượt tìm: springboard, vietjack, hoatieu, doctailieu, muctim, husc.edu.vn); toàn bộ sections là ước đoán, không có phần nào được đọc",
+    "Chưa rõ thời gian làm bài, thang điểm, có nghe/nói không",
+    "Chưa có thông báo tuyển sinh chính thức của trường (lịch thi, hình thức đề) cho 2025, 2026",
+    "Cần xác minh mục 'Đại học Huế' trong tuyển tập springboard 2026 có phải đề của trường này không — nếu có, đây là nguồn mạnh nhất cho lượt sau"
+  ]
+}

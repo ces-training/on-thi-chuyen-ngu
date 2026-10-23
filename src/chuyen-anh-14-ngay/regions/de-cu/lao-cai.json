@@ -1,0 +1,47 @@
+{
+  "slug": "lao-cai",
+  "predicted": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": true,
+    "essay_words": null,
+    "sections": [
+      {"format": "listening", "items": 10, "points": 1.5, "note": "Suy đoán: Sở Lào Cai tổ chức thi nói riêng cho ngoại ngữ chuyên và thủ khoa chuyên Anh 2025 nói phải luyện đủ 4 kỹ năng, nên bài viết 150' nhiều khả năng có phần nghe (điền thông tin/trắc nghiệm); số câu và điểm là ước lượng theo mẫu phổ biến của đề chuyên tỉnh miền núi phía Bắc (Sơn La, Lai Châu, Điện Biên 2026 trên springboard)"},
+      {"format": "sentence_completion", "items": 20, "points": 2.0, "note": "Trắc nghiệm ngữ pháp – từ vựng (idiom, collocation, phrasal verb) – dạng gần như chắc chắn có ở mọi đề chuyên tỉnh"},
+      {"format": "word_formation", "items": 10, "points": 1.0, "note": "Chia dạng từ trong câu/đoạn – dạng phổ biến của đề chuyên các tỉnh phía Bắc"},
+      {"format": "error_id", "items": 5, "points": 0.5, "note": "Tìm lỗi sai – ước đoán, có thể thay bằng dạng khác"},
+      {"format": "open_cloze", "items": 10, "points": 1.0, "note": "Điền một từ vào bài đọc"},
+      {"format": "cloze", "items": 10, "points": 1.0, "note": "Đọc điền trắc nghiệm A–D"},
+      {"format": "reading_mcq", "items": 10, "points": 1.0, "note": "Đọc hiểu trắc nghiệm"},
+      {"format": "key_word", "items": 5, "points": 0.5, "note": "Viết lại câu với từ cho sẵn"},
+      {"format": "transformation", "items": 5, "points": 0.5, "note": "Viết lại câu giữ nghĩa"},
+      {"format": "essay", "items": 1, "points": 1.0, "note": "Bài luận/đoạn văn – số từ chưa rõ (ước 150–250 từ)"},
+      {"format": "other", "items": 1, "points": null, "note": "Thi nói ngoại ngữ chuyên tổ chức buổi riêng: 5 phút chuẩn bị, 3 phút trả lời (Hướng dẫn tuyển sinh Lào Cai 2023 ghi 'Thời gian 8 phút (5 phút chuẩn bị, 3 phút nói)'; lịch 2025 ngày 6/6 và lịch 2026 ngày 29/5 đều có buổi thi nói). Cách tính điểm phần nói vào điểm bài chuyên chưa có văn bản"}
+    ],
+    "difficulty": null,
+    "difficulty_evidence": "Chưa đọc được đề nào. Báo Lào Cai 5/6/2025: đề chuyên 'có tính phân hóa, phù hợp thí sinh chuyên'. Thủ khoa chuyên Anh Chuyên Lào Cai 2025 đạt 46,3/50 (3 môn chung + chuyên×2) và thủ khoa chuyên Anh Nguyễn Tất Thành (Yên Bái) 2025 đạt 54,7/60 — gợi ý điểm chuyên của thủ khoa khoảng 8,5–9, tức đề không quá khó so với mặt bằng B2."
+  },
+  "basis": "Dự đoán theo (1) lịch thi và hướng dẫn của Sở Lào Cai 2023, 2025, 2026: bài viết môn chuyên Tiếng Anh 150 phút kèm buổi thi nói riêng 5'+3' — đây là điểm chắc chắn nhất; (2) Yên Bái cũ (CV 222/2025): bài chuyên Tiếng Anh cũng 150 phút, thang 10, thí sinh lớp Trung được chọn bài Anh hoặc Trung; (3) khung các phần (nghe, từ vựng – ngữ pháp, word form, đọc, viết lại câu, viết luận) lấy theo mẫu chung của đề chuyên các tỉnh lân cận cùng năm 2026 (Sơn La, Lai Châu, Điện Biên, Tuyên Quang trên springboard.vn) vì không tìm được đề thật của Lào Cai lẫn Yên Bái. Từ 2026 hai trường chuyên thi chung một đề của Sở mới; Sở đặt tại Lào Cai nên nếu có khác biệt giữa hai tỉnh cũ thì khả năng cao theo cách ra đề của Chuyên Lào Cai (có thi nói).",
+  "confidence": "thấp",
+  "evidence": [
+    {"tinh_cu": "Lào Cai", "truong": "THPT Chuyên Lào Cai", "nam": 2023, "url": "https://storage-vnportal.vnpt.vn/lci-ubnd-responsive/2318/Tailieu2022/1_hd_tuyen_sinh_thpt_20230425020230426091024992_signed.pdf", "loai": "công văn", "sections_seen": [
+      {"format": "other", "items": 1, "note": "Thi nói môn chuyên Ngoại ngữ: 'Thời gian 8 phút (5 phút chuẩn bị, 3 phút nói)', tổ chức cả ngày 4/6/2023; bài viết môn chuyên Tiếng Anh 150 phút chiều 4/6/2023. Thí sinh NV1 chuyên Anh, NV2 chuyên Trung được xét bằng điểm bài chuyên Tiếng Anh. Văn bản không mô tả các phần của đề"}
+    ]},
+    {"tinh_cu": "Lào Cai", "truong": "THPT Chuyên Lào Cai", "nam": 2026, "url": "https://baolaocai.vn/ky-thi-tuyen-sinh-vao-lop-10-se-dien-ra-tu-ngay-27-295-post897367.html", "loai": "bài báo", "sections_seen": [
+      {"format": "other", "items": 1, "note": "Lịch thi 2026 của Sở mới: 28/5 chiều thi môn chuyên Tiếng Anh/Tiếng Trung 150'; 29/5 có buổi 'thi nói các môn ngoại ngữ' (5' chuẩn bị, 3' trả lời) — áp dụng chung cho Chuyên Lào Cai và Chuyên Nguyễn Tất Thành"}
+    ]},
+    {"tinh_cu": "Yên Bái", "truong": "THPT Chuyên Nguyễn Tất Thành", "nam": 2025, "url": "https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2025/NNL/06062025/cong-van-222-huong-dan-to-chuc-tuyen-sinh-giao-duc-trung-hoc-2025-2026-tinh-yen-bai.pdf", "loai": "công văn", "sections_seen": [
+      {"format": "other", "items": 1, "note": "CV 222 Yên Bái 2025: bài chuyên Tiếng Anh thi chiều 3/6/2025, 150 phút, 'điểm bài thi tính theo thang điểm 10'; lớp chuyên Tiếng Trung được chọn bài Anh hoặc Trung. Phần B của văn bản có ma trận/cấu trúc cho chuyên Toán, Lý, Hóa, Sinh nhưng phần đọc được bị cắt trước mục Tiếng Anh (file dài, công cụ chỉ đọc đến trang 29) — không thấy mô tả cấu trúc đề chuyên Anh"}
+    ]},
+    {"tinh_cu": "Lào Cai", "truong": "THPT Chuyên Lào Cai", "nam": 2025, "url": "https://baolaocai.vn/toa-sang-tri-tue-post648190.html", "loai": "bài báo", "sections_seen": [
+      {"format": "other", "items": 0, "note": "Thủ khoa chuyên Anh 2025 (46,3/50) kể luyện đủ 4 kỹ năng, xem phim luyện nghe nói, viết nhiều — gián tiếp cho thấy bài chuyên có nghe, viết và thi nói"}
+    ]}
+  ],
+  "gaps": [
+    "Không tìm được đề chuyên Anh thật của Lào Cai (2022–2026) lẫn Yên Bái (2022–2025) trên baolaocai, hoatieu, tuyensinh247, vndoc, thuvienhoclieu, 123docz, violet; springboard.vn liệt kê 'Lào Cai' trong tuyển tập đề chuyên Anh 2026 nhưng chưa đăng trang riêng, link Drive của tuyển tập không mở được",
+    "Chưa xác nhận bài viết 150' có phần nghe hay không; số câu/điểm từng phần hoàn toàn là ước lượng",
+    "Cách tính điểm thi nói (tỉ trọng trong điểm bài chuyên hay điều kiện) chưa có văn bản",
+    "Số từ bài viết luận chưa rõ",
+    "Phần cấu trúc đề chuyên Tiếng Anh trong CV 222 Yên Bái 2025 (nếu có) nằm sau trang 29, chưa đọc được"
+  ]
+}

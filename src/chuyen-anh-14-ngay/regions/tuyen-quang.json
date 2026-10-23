@@ -19,11 +19,54 @@
    "ac_label": "Anh chung (đề chung)",
    "difficulty": null,
    "difficulty_evidence": "Chưa tìm được đề chuyên Anh Tuyên Quang/Hà Giang hay nhận xét độ khó. QĐ 555/QĐ-UBND chỉ ghi: mỗi môn chuyên có một đề riêng theo chương trình THCS; Sở hướng dẫn hình thức thi, cấu trúc đề (CV 1133/SGDĐT-QLCL – chưa đọc được).",
-   "minutes": null,
+   "minutes": 150,
    "has_listening": null,
    "essay_words": null,
    "sections": [],
-   "sample_links": []
+   "sample_links": [],
+   "predicted": {
+    "used": false,
+    "basis": "Dự đoán theo điểm chung của hai tỉnh cũ: Tuyên Quang 2024 (môn chuyên 150 phút; 'Môn Tiếng Anh chuyên thi tự luận kết hợp trắc nghiệm') và Hà Giang 2024 (bài chuyên 150 phút; 'Hình thức thi: Tự luận, riêng môn Tiếng Anh được kết hợp giữa hình thức tự luận với trắc nghiệm'). Sở mới (trụ sở Tuyên Quang) năm 2026 ra chung đề, thi môn chuyên 27–28/5/2026 (QĐ 555/QĐ-UBND; CV 1133/SGDĐT-QLCL chưa đọc được) nên 150 phút + trắc nghiệm kết hợp tự luận gần như chắc; không thi nghe là suy đoán vì không văn bản nào nhắc. Dạng bài và số câu cụ thể là mẫu chung vùng, chưa có đề thật đối chiếu. Đề thi thử 'chuyên Hà Giang 2020' trên doctailieu là đề do trang tự biên (50 câu trắc nghiệm kiểu đề tốt nghiệp THPT), không dùng để suy cấu trúc.",
+    "confidence": "thấp",
+    "speaking": false,
+    "evidence": [
+     {
+      "tinh_cu": "Tuyên Quang",
+      "truong": "THPT Chuyên Tuyên Quang",
+      "nam": 2024,
+      "url": "https://giaoduc.net.vn/tuyen-quang-chot-thoi-gian-thi-vao-lop-10-nam-2024-post242517.gd",
+      "loai": "bài báo"
+     },
+     {
+      "tinh_cu": "Hà Giang",
+      "truong": "THPT Chuyên Hà Giang",
+      "nam": 2024,
+      "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/PPH/word/tuyen-sinh-vao-lop-10.pdf",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Tuyên Quang",
+      "truong": "THPT Chuyên Tuyên Quang + THPT Chuyên Hà Giang",
+      "nam": 2026,
+      "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/tuyen-quang-p62.html",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Hà Giang",
+      "truong": "THPT Chuyên Hà Giang",
+      "nam": 2020,
+      "url": "https://doctailieu.com/de-thi-thu-lop-10-mon-anh-chuyen-ha-giang-2020-g1107",
+      "loai": "phân tích"
+     },
+     {
+      "tinh_cu": "Tuyên Quang",
+      "truong": "THPT Chuyên Tuyên Quang",
+      "nam": 2025,
+      "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-tuyen-quang-208945",
+      "loai": "đề thật"
+     }
+    ]
+   }
   }
  },
  "formulas": {
@@ -127,11 +170,54 @@
   "ac_label": "Anh chung (đề chung)",
   "difficulty": null,
   "difficulty_evidence": "Chưa tìm được đề chuyên Anh Tuyên Quang/Hà Giang hay nhận xét độ khó. QĐ 555/QĐ-UBND chỉ ghi: mỗi môn chuyên có một đề riêng theo chương trình THCS; Sở hướng dẫn hình thức thi, cấu trúc đề (CV 1133/SGDĐT-QLCL – chưa đọc được).",
-  "minutes": null,
+  "minutes": 150,
   "has_listening": null,
   "essay_words": null,
   "sections": [],
-  "sample_links": []
+  "sample_links": [],
+  "predicted": {
+   "used": false,
+   "basis": "Dự đoán theo điểm chung của hai tỉnh cũ: Tuyên Quang 2024 (môn chuyên 150 phút; 'Môn Tiếng Anh chuyên thi tự luận kết hợp trắc nghiệm') và Hà Giang 2024 (bài chuyên 150 phút; 'Hình thức thi: Tự luận, riêng môn Tiếng Anh được kết hợp giữa hình thức tự luận với trắc nghiệm'). Sở mới (trụ sở Tuyên Quang) năm 2026 ra chung đề, thi môn chuyên 27–28/5/2026 (QĐ 555/QĐ-UBND; CV 1133/SGDĐT-QLCL chưa đọc được) nên 150 phút + trắc nghiệm kết hợp tự luận gần như chắc; không thi nghe là suy đoán vì không văn bản nào nhắc. Dạng bài và số câu cụ thể là mẫu chung vùng, chưa có đề thật đối chiếu. Đề thi thử 'chuyên Hà Giang 2020' trên doctailieu là đề do trang tự biên (50 câu trắc nghiệm kiểu đề tốt nghiệp THPT), không dùng để suy cấu trúc.",
+   "confidence": "thấp",
+   "speaking": false,
+   "evidence": [
+    {
+     "tinh_cu": "Tuyên Quang",
+     "truong": "THPT Chuyên Tuyên Quang",
+     "nam": 2024,
+     "url": "https://giaoduc.net.vn/tuyen-quang-chot-thoi-gian-thi-vao-lop-10-nam-2024-post242517.gd",
+     "loai": "bài báo"
+    },
+    {
+     "tinh_cu": "Hà Giang",
+     "truong": "THPT Chuyên Hà Giang",
+     "nam": 2024,
+     "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/PPH/word/tuyen-sinh-vao-lop-10.pdf",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Tuyên Quang",
+     "truong": "THPT Chuyên Tuyên Quang + THPT Chuyên Hà Giang",
+     "nam": 2026,
+     "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/tuyen-quang-p62.html",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Hà Giang",
+     "truong": "THPT Chuyên Hà Giang",
+     "nam": 2020,
+     "url": "https://doctailieu.com/de-thi-thu-lop-10-mon-anh-chuyen-ha-giang-2020-g1107",
+     "loai": "phân tích"
+    },
+    {
+     "tinh_cu": "Tuyên Quang",
+     "truong": "THPT Chuyên Tuyên Quang",
+     "nam": 2025,
+     "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-tuyen-quang-208945",
+     "loai": "đề thật"
+    }
+   ]
+  }
  },
  "exam_2026": {
   "dates": "27–28/5/2026 (QĐ 555/QĐ-UBND ngày 26/3/2026 của UBND tỉnh Tuyên Quang). Ngày 27/5: sáng Toán (90', 7h30) và Khoa học tự nhiên (90', 10h00), chiều Ngữ văn (120', 14h30) – ba môn chung cho mọi thí sinh; ngày 28/5: môn chuyên (văn bản không ghi buổi/giờ). Kết quả trường chuyên công bố trước 10/7/2026 (CV 1133/SGDĐT-QLCL ngày 08/4/2026).",

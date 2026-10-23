@@ -87,11 +87,40 @@
    "ac_label": "Anh chung (đề chung)",
    "difficulty": null,
    "difficulty_evidence": "Chưa tìm được đề hay nhận xét đề chuyên Anh của trường.",
-   "minutes": null,
+   "minutes": 150,
    "has_listening": null,
    "essay_words": null,
    "sections": [],
-   "sample_links": []
+   "sample_links": [],
+   "predicted": {
+    "used": false,
+    "basis": "Không tìm được đề chuyên Anh (hay đề Tiếng Anh vòng 1) nào của Trường THPT Chuyên Khoa học Huế các năm 2022–2026, cũng không có công văn/thông báo mô tả cấu trúc. Điều chắc chắn: trường thi riêng, không dùng đề Sở Huế — vietjack đăng đề Toán 'vòng 1' và 'vòng 2' năm 2026 của trường, Mực Tím 2026 xác nhận 'điểm mỗi bài thi vòng 1 phải từ 2 điểm trở lên' và công thức Toán + Văn + Anh (hệ số 1) + môn chuyên ×2, không cộng ưu tiên; điểm chuẩn công bố 13/6/2026 (trước Sở Huế một ngày). springboard.vn liệt kê 'Đại học Huế' trong tuyển tập đề chuyên Anh 2026-2027 — nhiều khả năng chính là đề của trường này nhưng chưa có trang riêng để đọc. Vì không có bằng chứng, các phần dự đoán lấy theo mẫu đề một buổi, không nghe, của các trường chuyên thuộc đại học (Chuyên ĐH Vinh, Chuyên ĐHSP Hà Nội) và chỉ nên dùng để chọn bài luyện phổ quát (từ vựng – ngữ pháp, word form, đọc, viết lại câu, viết luận). Thời gian 150' là giả định theo môn chuyên Toán của trường; chưa có văn bản.",
+    "confidence": "thấp",
+    "speaking": false,
+    "evidence": [
+     {
+      "tinh_cu": "Thừa Thiên Huế",
+      "truong": "THPT Chuyên Khoa học Huế",
+      "nam": 2026,
+      "url": "https://muctim.tuoitre.vn/da-co-diem-chuan-vao-lop-10-truong-thpt-chuyen-khoa-hoc-hue-cao-nhat-3125-diem-101260613170857065.htm",
+      "loai": "bài báo"
+     },
+     {
+      "tinh_cu": "Thừa Thiên Huế",
+      "truong": "THPT Chuyên Khoa học Huế",
+      "nam": 2026,
+      "url": "https://vietjack.com/de-thi-vao-10-mon-toan/de-thi-toan-vao-lop-10-nam-2026-truong-thpt-chuyen-khoa-hoc-hue-v2.jsp",
+      "loai": "đề thật"
+     },
+     {
+      "tinh_cu": "Thừa Thiên Huế",
+      "truong": "THPT Chuyên Khoa học Huế",
+      "nam": 2026,
+      "url": "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/",
+      "loai": "phân tích"
+     }
+    ]
+   }
   }
  },
  "formulas": {
@@ -435,11 +464,40 @@
     "ac_label": "Anh chung (đề chung)",
     "difficulty": null,
     "difficulty_evidence": "Chưa tìm được đề hay nhận xét đề chuyên Anh của trường.",
-    "minutes": null,
+    "minutes": 150,
     "has_listening": null,
     "essay_words": null,
     "sections": [],
-    "sample_links": []
+    "sample_links": [],
+    "predicted": {
+     "used": false,
+     "basis": "Không tìm được đề chuyên Anh (hay đề Tiếng Anh vòng 1) nào của Trường THPT Chuyên Khoa học Huế các năm 2022–2026, cũng không có công văn/thông báo mô tả cấu trúc. Điều chắc chắn: trường thi riêng, không dùng đề Sở Huế — vietjack đăng đề Toán 'vòng 1' và 'vòng 2' năm 2026 của trường, Mực Tím 2026 xác nhận 'điểm mỗi bài thi vòng 1 phải từ 2 điểm trở lên' và công thức Toán + Văn + Anh (hệ số 1) + môn chuyên ×2, không cộng ưu tiên; điểm chuẩn công bố 13/6/2026 (trước Sở Huế một ngày). springboard.vn liệt kê 'Đại học Huế' trong tuyển tập đề chuyên Anh 2026-2027 — nhiều khả năng chính là đề của trường này nhưng chưa có trang riêng để đọc. Vì không có bằng chứng, các phần dự đoán lấy theo mẫu đề một buổi, không nghe, của các trường chuyên thuộc đại học (Chuyên ĐH Vinh, Chuyên ĐHSP Hà Nội) và chỉ nên dùng để chọn bài luyện phổ quát (từ vựng – ngữ pháp, word form, đọc, viết lại câu, viết luận). Thời gian 150' là giả định theo môn chuyên Toán của trường; chưa có văn bản.",
+     "confidence": "thấp",
+     "speaking": false,
+     "evidence": [
+      {
+       "tinh_cu": "Thừa Thiên Huế",
+       "truong": "THPT Chuyên Khoa học Huế",
+       "nam": 2026,
+       "url": "https://muctim.tuoitre.vn/da-co-diem-chuan-vao-lop-10-truong-thpt-chuyen-khoa-hoc-hue-cao-nhat-3125-diem-101260613170857065.htm",
+       "loai": "bài báo"
+      },
+      {
+       "tinh_cu": "Thừa Thiên Huế",
+       "truong": "THPT Chuyên Khoa học Huế",
+       "nam": 2026,
+       "url": "https://vietjack.com/de-thi-vao-10-mon-toan/de-thi-toan-vao-lop-10-nam-2026-truong-thpt-chuyen-khoa-hoc-hue-v2.jsp",
+       "loai": "đề thật"
+      },
+      {
+       "tinh_cu": "Thừa Thiên Huế",
+       "truong": "THPT Chuyên Khoa học Huế",
+       "nam": 2026,
+       "url": "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/",
+       "loai": "phân tích"
+      }
+     ]
+    }
    },
    "stories": [],
    "prep_tips": [

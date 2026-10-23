@@ -20,7 +20,43 @@
    "has_listening": null,
    "essay_words": null,
    "sections": [],
-   "sample_links": []
+   "sample_links": [],
+   "predicted": {
+    "used": false,
+    "basis": "Dự đoán theo quy định của Trường THPT chuyên Lê Quý Đôn Lai Châu (thông báo 13/4/2026: môn chuyên 150 phút, tự luận kết hợp trắc nghiệm khách quan, hệ số 2) và kế hoạch UBND tỉnh. Đã xác định có đề thật 2026 (VietJack, 7 trang ảnh + đáp án) nhưng không đọc được nội dung nên chưa ghi được phần nào; dạng bài và số câu trong predicted là mẫu chung của vùng, không phải từ đề. Tỉnh không sáp nhập.",
+    "confidence": "thấp",
+    "speaking": false,
+    "evidence": [
+     {
+      "tinh_cu": "Lai Châu",
+      "truong": "THPT chuyên Lê Quý Đôn",
+      "nam": 2026,
+      "url": "https://vietjack.com/de-thi-vao-lop-10-mon-tieng-anh/de-thi-tieng-anh-chuyen-vao-lop-10-nam-2026-lai-chau.jsp",
+      "loai": "đề thật"
+     },
+     {
+      "tinh_cu": "Lai Châu",
+      "truong": "THPT chuyên Lê Quý Đôn",
+      "nam": 2026,
+      "url": "https://doanket.laichau.gov.vn/upload/103883/fck/adminlaichau25/4_10%20Th%C3%B4ng%20b%C3%A1o%20tuy%E1%BB%83n%20sinh%20v%C3%A0o%20l%E1%BB%9Bp%2010%20THPT%20chuy%C3%AAn%20L%C3%AA%20Qu%C3%BD%20%C4%90%C3%B4n%20n%C4%83m%20h%E1%BB%8Dc%202025-2026.pdf",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Lai Châu",
+      "truong": "THPT chuyên Lê Quý Đôn",
+      "nam": 2026,
+      "url": "https://doanket.laichau.gov.vn/upload/103883/20260408/1-Huong-dan-tuyen-sinh-vao-lop-10-THPT-GDTX-nam-hoc-2026-2027__4__7ba0a.pdf",
+      "loai": "công văn"
+     },
+     {
+      "tinh_cu": "Lai Châu",
+      "truong": "THPT chuyên Lê Quý Đôn",
+      "nam": 2026,
+      "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-lai-chau-208639",
+      "loai": "đề thật"
+     }
+    ]
+   }
   }
  },
  "formulas": {
@@ -91,7 +127,43 @@
   "has_listening": null,
   "essay_words": null,
   "sections": [],
-  "sample_links": []
+  "sample_links": [],
+  "predicted": {
+   "used": false,
+   "basis": "Dự đoán theo quy định của Trường THPT chuyên Lê Quý Đôn Lai Châu (thông báo 13/4/2026: môn chuyên 150 phút, tự luận kết hợp trắc nghiệm khách quan, hệ số 2) và kế hoạch UBND tỉnh. Đã xác định có đề thật 2026 (VietJack, 7 trang ảnh + đáp án) nhưng không đọc được nội dung nên chưa ghi được phần nào; dạng bài và số câu trong predicted là mẫu chung của vùng, không phải từ đề. Tỉnh không sáp nhập.",
+   "confidence": "thấp",
+   "speaking": false,
+   "evidence": [
+    {
+     "tinh_cu": "Lai Châu",
+     "truong": "THPT chuyên Lê Quý Đôn",
+     "nam": 2026,
+     "url": "https://vietjack.com/de-thi-vao-lop-10-mon-tieng-anh/de-thi-tieng-anh-chuyen-vao-lop-10-nam-2026-lai-chau.jsp",
+     "loai": "đề thật"
+    },
+    {
+     "tinh_cu": "Lai Châu",
+     "truong": "THPT chuyên Lê Quý Đôn",
+     "nam": 2026,
+     "url": "https://doanket.laichau.gov.vn/upload/103883/fck/adminlaichau25/4_10%20Th%C3%B4ng%20b%C3%A1o%20tuy%E1%BB%83n%20sinh%20v%C3%A0o%20l%E1%BB%9Bp%2010%20THPT%20chuy%C3%AAn%20L%C3%AA%20Qu%C3%BD%20%C4%90%C3%B4n%20n%C4%83m%20h%E1%BB%8Dc%202025-2026.pdf",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Lai Châu",
+     "truong": "THPT chuyên Lê Quý Đôn",
+     "nam": 2026,
+     "url": "https://doanket.laichau.gov.vn/upload/103883/20260408/1-Huong-dan-tuyen-sinh-vao-lop-10-THPT-GDTX-nam-hoc-2026-2027__4__7ba0a.pdf",
+     "loai": "công văn"
+    },
+    {
+     "tinh_cu": "Lai Châu",
+     "truong": "THPT chuyên Lê Quý Đôn",
+     "nam": 2026,
+     "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-lai-chau-208639",
+     "loai": "đề thật"
+    }
+   ]
+  }
  },
  "exam_2026": {
   "dates": "25–26/5/2026 (24/5 chiều làm thủ tục). Bài chung: 25/5 sáng Ngữ văn 120', 25/5 chiều Tiếng Anh 60' trắc nghiệm, 26/5 sáng Toán 120'. Ngày giờ bài chuyên theo hướng dẫn của Sở (văn bản trường không ghi riêng).",

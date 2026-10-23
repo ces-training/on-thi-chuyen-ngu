@@ -1,0 +1,38 @@
+{
+  "slug": "lai-chau",
+  "predicted": {
+    "minutes": 150,
+    "scale": 10,
+    "has_listening": null,
+    "essay_words": null,
+    "sections": [
+      {"format": "pronunciation", "items": 5, "points": null, "note": "Dự đoán theo mẫu chung vùng miền núi phía Bắc; đề chung Lai Châu các năm mở đầu bằng ngữ âm"},
+      {"format": "stress", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "sentence_completion", "items": 15, "points": null, "note": "Dự đoán"},
+      {"format": "error_id", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "word_formation", "items": 10, "points": null, "note": "Dự đoán"},
+      {"format": "cloze", "items": 10, "points": null, "note": "Dự đoán"},
+      {"format": "open_cloze", "items": 10, "points": null, "note": "Dự đoán"},
+      {"format": "reading_mcq", "items": 10, "points": null, "note": "Dự đoán"},
+      {"format": "key_word", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "transformation", "items": 5, "points": null, "note": "Dự đoán"},
+      {"format": "paragraph_writing", "items": 1, "points": null, "note": "Dự đoán có bài viết ngắn; độ dài chưa rõ"}
+    ],
+    "difficulty": null,
+    "difficulty_evidence": "Đề chuyên Anh Lai Châu 2026 (thi chiều 26/5/2026) có trên VietJack nhưng toàn bộ 7 trang đề + đáp án ở dạng ảnh, không đọc được nội dung bằng công cụ hiện có. Văn bản sở/trường: 'tự luận kết hợp với trắc nghiệm khách quan', 150 phút, thang 10, hệ số 2."
+  },
+  "basis": "Dự đoán theo quy định của Trường THPT chuyên Lê Quý Đôn Lai Châu (thông báo 13/4/2026: môn chuyên 150 phút, tự luận kết hợp trắc nghiệm khách quan, hệ số 2) và kế hoạch UBND tỉnh. Đã xác định có đề thật 2026 (VietJack, 7 trang ảnh + đáp án) nhưng không đọc được nội dung nên chưa ghi được phần nào; dạng bài và số câu trong predicted là mẫu chung của vùng, không phải từ đề. Tỉnh không sáp nhập.",
+  "confidence": "thấp",
+  "evidence": [
+    {"tinh_cu": "Lai Châu", "truong": "THPT chuyên Lê Quý Đôn", "nam": 2026, "url": "https://vietjack.com/de-thi-vao-lop-10-mon-tieng-anh/de-thi-tieng-anh-chuyen-vao-lop-10-nam-2026-lai-chau.jsp", "loai": "đề thật", "sections_seen": [], "note": "Đề Tiếng Anh (chuyên) Lai Châu 2026, thi chiều 26/5/2026; 7 trang đề dạng ảnh PNG (…/images/de-thi-tieng-anh-chuyen-vao-lop-10-nam-2026-lai-chau-1.PNG đến -7.PNG) + ảnh đáp án. Không đọc được chữ trong ảnh nên chưa ghi phần nào. 7 trang cho thấy đề dài, nhiều phần."},
+    {"tinh_cu": "Lai Châu", "truong": "THPT chuyên Lê Quý Đôn", "nam": 2026, "url": "https://doanket.laichau.gov.vn/upload/103883/fck/adminlaichau25/4_10%20Th%C3%B4ng%20b%C3%A1o%20tuy%E1%BB%83n%20sinh%20v%C3%A0o%20l%E1%BB%9Bp%2010%20THPT%20chuy%C3%AAn%20L%C3%AA%20Qu%C3%BD%20%C4%90%C3%B4n%20n%C4%83m%20h%E1%BB%8Dc%202025-2026.pdf", "loai": "công văn", "sections_seen": [], "note": "Thông báo tuyển sinh 2026-2027 (13/4/2026): bài chuyên Tiếng Anh 'tự luận kết hợp với trắc nghiệm khách quan', 150 phút, thang 10, hệ số 2 (đọc ở lượt trước)."},
+    {"tinh_cu": "Lai Châu", "truong": "THPT chuyên Lê Quý Đôn", "nam": 2026, "url": "https://doanket.laichau.gov.vn/upload/103883/20260408/1-Huong-dan-tuyen-sinh-vao-lop-10-THPT-GDTX-nam-hoc-2026-2027__4__7ba0a.pdf", "loai": "công văn", "sections_seen": [], "note": "Hướng dẫn tuyển sinh Sở 2026-2027: không nêu cấu trúc đề, dẫn chiếu QĐ 481/QĐ-UBND 27/3/2026."},
+    {"tinh_cu": "Lai Châu", "truong": "THPT chuyên Lê Quý Đôn", "nam": 2026, "url": "https://hoatieu.vn/dap-an-de-thi-tuyen-sinh-lop-10-mon-anh-lai-chau-208639", "loai": "đề thật", "sections_seen": [], "note": "Chỉ có đề Tiếng Anh chung (60 phút) 2022–2026, không có đề chuyên."}
+  ],
+  "gaps": [
+    "Đề chuyên Anh 2026 có thật trên VietJack nhưng ở dạng ảnh; cần người mở trang và đọc 7 ảnh để ghi cấu trúc (phần, số câu, nghe, bài viết) – đây là việc ưu tiên nhất cho sở này.",
+    "Chưa biết có nghe không, dạng/độ dài bài viết, độ khó.",
+    "Không tìm được đề các năm 2022–2025; không có bài báo/phân tích đề chuyên Anh Lai Châu.",
+    "Dạng bài và số câu trong predicted là ước lượng theo mẫu vùng."
+  ]
+}
