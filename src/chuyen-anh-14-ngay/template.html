@@ -1110,7 +1110,7 @@ function wireTest(kind){
 }
 function vDiag(){
   const r=S.diag;
-  M().innerHTML=`<section class="view"><div><p class="eyebrow">Trước buổi 1</p><h2>Bài kiểm tra đầu vào</h2><p class="lead">45 câu từ dễ đến khó (mức A2, B1, B2), hỏi đúng những gì 14 buổi sẽ dạy: nghe một đoạn video thật, ngữ pháp, từ vựng, đọc hiểu và tự viết câu trả lời. Khoảng 35 phút, nhớ bật loa. Nộp xong còn 2 phần ngắn (dạng đề của sở cậu và một đoạn viết, khoảng 20 phút) để sau 14 buổi so tiến bộ. Cậu làm một mình, không tra từ điển; câu nào không biết thì cứ bỏ qua, như vậy kết quả mới đúng với sức cậu.</p></div>
+  M().innerHTML=`<section class="view"><div><p class="eyebrow">Trước buổi 1</p><h2>Bài kiểm tra đầu vào</h2><p class="lead">45 câu từ dễ đến khó (mức A2, B1, B2)${TESTS.diag.items.some(i=>i.obj)?', hỏi đúng những gì 14 buổi sẽ dạy':''}: nghe${TESTS.diag.listen_yt?' một đoạn video thật':''}, ngữ pháp, từ vựng, đọc hiểu và tự viết câu trả lời. Khoảng 35 phút, nhớ bật loa. Nộp xong còn 2 phần ngắn (dạng đề của sở cậu và một đoạn viết, khoảng 20 phút) để sau 14 buổi so tiến bộ. Cậu làm một mình, không tra từ điển; câu nào không biết thì cứ bỏ qua, như vậy kết quả mới đúng với sức cậu.</p></div>
   ${r?resultCard(r,'Kết quả đầu vào')+txExtrasHTML('diag')+`<div class="row"><button class="btn hi" id="toDays">Bắt đầu buổi 1</button><button class="btn ghost" id="toPlan">Xem lộ trình phù hợp</button></div><details class="card"><summary>Xem lại từng câu</summary>${renderTest('diag')}</details>`:renderTest('diag')}</section>`;
   wireTest('diag');if(r)wireTestExtras('diag',()=>vDiag());
   if(r){$('#toDays').onclick=()=>go('days',{day:nextDay()});$('#toPlan').onclick=()=>go('plan')}
