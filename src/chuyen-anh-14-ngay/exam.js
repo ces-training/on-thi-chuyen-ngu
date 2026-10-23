@@ -81,8 +81,8 @@ function renderExam(box,B,saved,onDone){
   form.addEventListener('submit',e=>{e.preventDefault();if(form.dataset.graded)return;
     if(kind==='order'&&ord.length<B.lines.length){form.querySelector('.x-msg').textContent='Cậu xếp hết các lượt lời rồi mới chấm nhé.';return}
     form.dataset.graded='1';const r=grade();form.querySelector('button[type=submit]').disabled=true;
-    form.querySelector('.x-msg').innerHTML=`Cậu đúng <b>${r.correct}/${r.total}</b>. <button type="button" class="linkbtn x-redo">Làm lại</button>`;
-    form.querySelector('.x-redo').onclick=()=>renderExam(box,B,null,onDone);
+    form.querySelector('.x-msg').innerHTML=`Cậu đúng <b>${r.correct}/${r.total}</b>.`+(B.noRedo?'':` <button type="button" class="linkbtn x-redo">Làm lại</button>`);
+    if(!B.noRedo)form.querySelector('.x-redo').onclick=()=>renderExam(box,B,null,onDone);
     if(window.speechSynthesis)try{speechSynthesis.cancel()}catch(_){}
     onDone&&onDone(r)});
 }

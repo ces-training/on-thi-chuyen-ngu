@@ -39,7 +39,10 @@ function pvBuild(k){
       st.days[i]={web:{ids:items.map(x=>x.id),reviewIds:[],answers:ans,correct,total:items.length,bySkill,at},
         paper:{ticks:{},correct:Math.round(pt*P.acc),total:pt,by:{},writing:{},self:{},at}}}
     if(P.st)st.stats=JSON.parse(JSON.stringify(P.st));
-    if(P.fin){st.final=pvTest('final',P.fin,r)}
+    st.region=keep&&keep.region;st.regionSet=true;
+    const px=(o,acc)=>{const F=txFormats();o.locF=F;o.loc={};F.forEach(f=>{const t=f==='matching_headings'?4:5;o.loc[f]={correct:Math.max(0,Math.min(t,Math.round(t*acc+(r()-.5)))),total:t}});const sc=Math.max(2,Math.min(10,Math.round(10*acc)));o.wr={score:sc,of:10,words:95+Math.round(r()*40),text:'(Bài viết mẫu của kịch bản xem trước)',checks:[]}};
+    px(st.diag,P.acc*0.75);
+    if(P.fin){st.final=pvTest('final',P.fin,r);px(st.final,Math.min(.95,P.acc*0.95))}
   }finally{S=keep}
   return st}
 function pvApply(){S=pvBuild(PV.sc);saveLocal();GATE_MIN=false;CUR_DAY=null;pvSave();go(VIEW==='catalog'?'catalog':'start')}
@@ -151,10 +154,16 @@ function pvDay(n){const D=DAYS[n-1],W=(C.web||{})[n]||{},nn=String(n).padStart(2
   [['exam','Dạng bài thi trên web · mức Chuẩn'],['exam_easy','Dạng bài thi trên web · mức Nền tảng'],['exam_plus','Dạng bài thi trên web · mức Nâng cao']].forEach(([k,t])=>{if(W[k])h+=pvSec(t,pvGen(W[k]))});
   {const yl=['nen','chuan','nang'].map(t=>[t,((C.real_listen||{})[t]||{})[n]]).filter(x=>x[1]);if(yl.length)h+=pvSec('Bài nghe bản ghi thật (YouTube) theo mức',yl.map(([t,R])=>`<div class="pv-part"><h4>${esc(pvLabel(t))}: <a href="https://www.youtube.com/watch?v=${encodeURIComponent(R.yt)}&t=${R.start||0}" target="_blank" rel="noopener">${esc(R.title)}</a> (${esc(R.channel||'')}, ${R.start||0}–${R.end||''} giây)</h4>${pvGen(R.items)}</div>`).join(''))}
   return h}
-function pvTestHTML(kind){const T=TESTS[kind];
-  return `<div class="card pv-head"><p class="eyebrow">${T.minutes} phút · ${T.items.length} câu</p><h2>${esc(T.title_vi)}</h2></div>`+
+function pvTestHTML(kind){const T=TESTS[kind];const Y=T.listen_yt;const TL=C.test_local||{};const K=kind==='diag'?'diagnostic':'final';
+  const byDay={};T.items.forEach(it=>{if(it.day)(byDay[it.day]=byDay[it.day]||[]).push(it.obj||'')});
+  const W=(TL.writing||{})[K];
+  return `<div class="card pv-head"><p class="eyebrow">${T.minutes} phút · ${T.items.length} câu + phần 4–5</p><h2>${esc(T.title_vi)}</h2>
+    <p class="small">Câu gắn với buổi: ${Object.keys(byDay).sort((a,b)=>a-b).map(d=>`B${d}: ${byDay[d].length}`).join(' · ')||'—'}</p></div>`+
+   (Y?pvSec('Phần nghe: bản ghi thật',`<p><a href="https://www.youtube.com/watch?v=${encodeURIComponent(Y.yt)}&t=${Y.start||0}" target="_blank" rel="noopener">${esc(Y.title)}</a> · ${esc(Y.channel||'')} · giây ${Y.start||0}–${Y.end||''}${Y.transcript_url?` · <a href="${esc(Y.transcript_url)}" target="_blank" rel="noopener">lời thoại</a>`:''}</p>`,true):'')+
    pvSec('Bài đọc',(T.passages||[]).map(p=>`<p class="small"><b>${esc(p.id)}</b> · mức ${esc(p.level)}</p><div class="passage pv-pass">${esc(p.text)}</div>`).join(''),true)+
-   ['A2','B1','B2'].map(L=>pvSec(`Câu mức ${L}`,`<ol class="pv-qs">${T.items.filter(i=>i.level===L).map(pvQ).join('')}</ol>`,true)).join('')}
+   ['A2','B1','B2'].map(L=>pvSec(`Câu mức ${L}`,`<ol class="pv-qs">${T.items.filter(i=>i.level===L).map(it=>pvQ(Object.assign({},it,{level:[it.level,it.day?'buổi '+it.day:'',it.obj].filter(Boolean).join(' · ')}))).join('')}</ol>`,true)).join('')+
+   pvSec('Phần 4 · Dạng đề của sở (mỗi sở 2 dạng theo gói riêng)',TX_OBJ.filter(f=>TL[f]).map(f=>`<div class="pv-part"><h4>${esc(LP_NAME[f]||f)}${txFormats().includes(f)?' · '+esc(REG().name)+' dùng':''}</h4>${(TL[f][K].kind==='gap_sent')?`<div class="passage pv-pass">${esc(TL[f][K].text)}</div><ol class="pv-opts" type="A">${TL[f][K].options.map(o=>`<li>${esc(o)}</li>`).join('')}</ol><ol class="pv-qs">${TL[f][K].items.map((it,i)=>`<li class="pv-q"><div class="pv-ans">Chỗ (${i+1}): <b>${LTR[it.answer]}</b></div><div class="pv-ex">${fmtVi(it.explain_vi||'')}</div></li>`).join('')}</ol>`:pvGen(TL[f][K])}</div>`).join(''))+
+   (W?pvSec('Phần 5 · Viết đoạn văn',`<p><b>${esc(W.prompt_en)}</b></p><p class="small">${esc(W.prompt_vi)}</p>${pvGen({rubric:(TL.writing.rubric||[]).map(c=>c.name_vi+': '+(c.levels||[]).join(' | '))})}`):'')}
 function pvPackHTML(){const P=C.local_pack||{};const plan=localPlan();const RG=REG();
   const sched=Object.keys(plan).sort((a,b)=>a-b).map(d=>`<li>Buổi ${d}: ${plan[d].map(x=>esc(LP_NAME[x.f])+' '+(x.i+1)).join(', ')}</li>`).join('');
   const blk=(f,B)=>{if(f==='gap_sent'||B.kind==='gap_sent')return `<div class="passage pv-pass">${esc(B.text)}</div><ol class="pv-opts" type="A">${B.options.map(o=>`<li>${esc(o)}</li>`).join('')}</ol><ol class="pv-qs">${B.items.map((it,i)=>`<li class="pv-q"><div class="pv-ans">Chỗ (${i+1}): <b>${LTR[it.answer]}. ${esc(B.options[it.answer])}</b></div><div class="pv-ex">${fmtVi(it.explain_vi||'')}</div></li>`).join('')}</ol>`;

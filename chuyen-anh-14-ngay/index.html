@@ -1179,7 +1179,7 @@ function renderTest(kind){
   const pmap={};(test.passages||[]).forEach(p=>pmap[p.id]=p);
   let html='';let lastP=null;let n=0;let lastS=null;
   test.items.forEach(it=>{
-    const sec=it.section||'core';if(test.sections&&sec!==lastS){html+=`<div class="t-sec"><b>${esc(test.sections[sec]||'')}</b></div>`;lastS=sec}
+    const sec=it.section||'core';if(test.sections&&sec!==lastS){html+=`<div class="t-sec"><b>${esc(test.sections[sec]||'')}</b></div>`;if(sec==='listen')html+=txYtHTML(kind);lastS=sec}
     if(it.passage&&it.passage!==lastP){const p=pmap[it.passage];html+=`<div class="passage"><span class="eyebrow">Đọc đoạn văn rồi trả lời</span>\n${esc(p.text)}</div>`;lastP=it.passage}
     n++;html+=renderQ(it,n);
   });
@@ -1200,6 +1200,7 @@ function wireTest(kind){
   const form=$('#testForm');wireOptionHighlight(form);
   const test=TESTS[kind];
   const lsState={};const canSpeak=!!(window.speechSynthesis&&window.SpeechSynthesisUtterance);
+  txWireYt(form,kind,lsState);
   form.querySelectorAll('.ls-play').forEach(b=>{const it=test.items.find(x=>x.id===b.dataset.id);lsState[it.id]={plays:0};
     if(S[kind]){b.hidden=true;b.parentElement.querySelector('.ls-txt').hidden=false;return}
     if(!canSpeak){b.hidden=true;const t=b.parentElement.querySelector('.ls-txt');t.hidden=false;t.insertAdjacentHTML('beforebegin','<p class="small muted">Máy này không phát được tiếng, cậu đọc lời thay cho nghe nhé.</p>');return}
@@ -1208,14 +1209,14 @@ function wireTest(kind){
   form.addEventListener('submit',e=>{e.preventDefault();
     const ans={};let blank=0;test.items.forEach(it=>{ans[it.id]=readAnswer(form,it);if(ans[it.id]==null||ans[it.id]==='')blank++});
     if(blank&&!form.dataset.warned){form.dataset.warned='1';$('#testMsg').textContent=`Còn ${blank} câu trống. Bấm Nộp bài lần nữa nếu cậu muốn nộp luôn.`;return}
-    const r=testScore(test,ans);r.answers=ans;r.blank=blank;if(!canSpeak&&test.items.some(x=>x.listen))r.noAudio=true;if(TEST_T0[kind])r.dur=Math.round((Date.now()-TEST_T0[kind])/6e3)/10;S[kind]=r;save();go(kind==='diag'?'diag':'progress');
+    const r=testScore(test,ans);r.answers=ans;r.blank=blank;if((!canSpeak&&test.items.some(x=>x.listen))||lsState.err)r.noAudio=true;if(TEST_T0[kind])r.dur=Math.round((Date.now()-TEST_T0[kind])/6e3)/10;S[kind]=r;save();go(kind==='diag'?'diag':'progress');
   });
 }
 function vDiag(){
   const r=S.diag;
-  M().innerHTML=`<section class="view"><div><p class="eyebrow">Trước buổi 1</p><h2>Bài kiểm tra đầu vào</h2><p class="lead">45 câu từ dễ đến khó (mức A2, B1, B2): nghe, ngữ pháp, từ vựng, đọc hiểu và tự viết câu trả lời. Khoảng 35 phút, nhớ bật loa. Cậu làm một mình, không tra từ điển. Câu nào không biết thì cứ bỏ qua, như vậy kết quả mới đúng với sức cậu.</p></div>
-  ${r?resultCard(r,'Kết quả đầu vào')+`<div class="row"><button class="btn hi" id="toDays">Bắt đầu buổi 1</button><button class="btn ghost" id="toPlan">Xem lộ trình phù hợp</button></div><details class="card"><summary>Xem lại từng câu</summary>${renderTest('diag')}</details>`:renderTest('diag')}</section>`;
-  wireTest('diag');
+  M().innerHTML=`<section class="view"><div><p class="eyebrow">Trước buổi 1</p><h2>Bài kiểm tra đầu vào</h2><p class="lead">45 câu từ dễ đến khó (mức A2, B1, B2), hỏi đúng những gì 14 buổi sẽ dạy: nghe một đoạn video thật, ngữ pháp, từ vựng, đọc hiểu và tự viết câu trả lời. Khoảng 35 phút, nhớ bật loa. Nộp xong còn 2 phần ngắn (dạng đề của sở cậu và một đoạn viết, khoảng 20 phút) để sau 14 buổi so tiến bộ. Cậu làm một mình, không tra từ điển; câu nào không biết thì cứ bỏ qua, như vậy kết quả mới đúng với sức cậu.</p></div>
+  ${r?resultCard(r,'Kết quả đầu vào')+txExtrasHTML('diag')+`<div class="row"><button class="btn hi" id="toDays">Bắt đầu buổi 1</button><button class="btn ghost" id="toPlan">Xem lộ trình phù hợp</button></div><details class="card"><summary>Xem lại từng câu</summary>${renderTest('diag')}</details>`:renderTest('diag')}</section>`;
+  wireTest('diag');if(r)wireTestExtras('diag',()=>vDiag());
   if(r){$('#toDays').onclick=()=>go('days',{day:nextDay()});$('#toPlan').onclick=()=>go('plan')}
 }
 
@@ -1332,12 +1333,13 @@ function renderDay(n){
   const stp=dayStatus(n);
   body.innerHTML=`<div class="card"><div class="dayhead">${dayIcon(n,'dh-ic',80)}<div class="dh-t"><p class="eyebrow">Buổi ${String(n).padStart(2,'0')}/14${D.type==='review'?' · Ôn tập':''}</p><h2>${esc(D.theme_vi)}</h2></div>${stp==='done'?'<span class="stamp">Xong</span>':stp==='part'?'<span class="stamp part">Đang làm</span>':''}</div><p class="lead">${esc(D.goal_vi||'')}</p>
    <div class="row">${gPill(n)}${xPill(n)}${lPackPill(n)}${lPill(n)}${pill(wk,'Kiểm tra cuối buổi')}${pill(pp,'Bài giấy')}</div>${trackBar()}</div>
+   ${S.diag&&!txDone('diag')?`<p class="notice">Cậu còn <b>phần 4–5 của bài đầu vào</b> (dạng đề của sở và đoạn viết, khoảng 20 phút). Làm trước buổi 2 để sau 14 buổi so được tiến bộ. <button class="btn ghost" type="button" id="toDiagX">Làm ngay</button></p>`:''}
    ${learnHTML(n)}
    <div class="card" id="checkCard"><div class="row" style="justify-content:space-between"><h3 class="ih">${em('brain')}Bước 6 · Kiểm tra nhanh cuối buổi</h3><span class="small muted">${(D.web_check||[]).length+(wk?0:q.length)} câu · gấp tập giấy lại</span></div>
    ${wk?`<p class="score">${wk.correct/wk.total>=0.8?em('party-popper','',40):wk.correct/wk.total>=0.6?em('sparkles','',40):em('flexed-biceps','',40)}<span>Cậu đúng <b>${wk.correct}/${wk.total}</b> câu.</span></p>`:''}
    <form id="webForm"></form></div>
    <div class="card" id="paperCard"></div>`;
-  wireLearn(n);wireTrack(()=>renderDay(n));
+  wireLearn(n);wireTrack(()=>renderDay(n));{const b=$('#toDiagX');if(b)b.onclick=()=>go('diag')}
   // web check
   const form=$('#webForm');
   let items, reviewIds;
@@ -1462,8 +1464,9 @@ function vProgress(){
    <div class="card"><h3>Sau 14 buổi cậu làm được gì</h3><p class="small muted">Mỗi dòng sáng lên khi cậu xong buổi đó với ít nhất 60% câu web đúng.</p><ul class="cando">${canDo.map(c=>`<li class="${okDay(c.day)?'ok':''}"><span><span class="small muted">Buổi ${c.day} · </span>${esc(c.t)}</span></li>`).join('')}</ul></div>
    <div class="card"><h3>Chi tiết từng buổi</h3><div class="tbl-wrap"><table><thead><tr><th>Buổi</th><th>Chủ đề</th><th>Web</th><th>Giấy</th><th>Ngày làm</th></tr></thead><tbody>${DAYS.map(d=>{const r=S.days[d.day]||{};return `<tr><td>${d.day}</td><td>${esc(d.theme_vi)}</td><td>${r.web?r.web.correct+'/'+r.web.total:'—'}</td><td>${r.paper?r.paper.correct+'/'+r.paper.total:'—'}</td><td>${r.web?new Date(r.web.at).toLocaleDateString('vi-VN'):'—'}</td></tr>`}).join('')}</tbody></table></div></div>
    <div class="card"><h3>Ôn thêm các câu còn trong vòng</h3><p class="small muted">Những câu cậu từng sai và chưa nhớ chắc. Làm thêm lúc nào cũng được, kể cả sau buổi 14.</p>${A.queue?`<button class="btn" id="extraBtn">Ôn ${Math.min(10,A.queue)} câu ngay</button>`:'<p class="small">Không còn câu nào chờ ôn.</p>'}<form id="extraForm"></form></div>
-   ${fin?'':'<div id="finalSlot"></div>'}
+   ${fin?txExtrasHTML('final'):'<div id="finalSlot"></div>'}
   </section>`;
+  if(fin)wireTestExtras('final',()=>vProgress());
   const xb=$('#extraBtn');if(xb)xb.onclick=()=>{
     const cur=Math.max(1,...Object.keys(S.days).map(Number).filter(n=>S.days[n]&&S.days[n].web));
     const ids=Object.entries(S.queue).filter(([id])=>ITEM[id]).sort((a,b)=>a[1].due-b[1].due).slice(0,10).map(([id])=>id);
@@ -1473,7 +1476,7 @@ function vProgress(){
     f.addEventListener('submit',e=>{e.preventDefault();let c=0;items.forEach(it=>{const v=readAnswer(f,it);const ok=showFeedback(f,it,v);if(ok)c++;updateQueue(it,ok,cur,true)});save();f.querySelector('.sticky-submit').innerHTML=`<span class="pill ${c>=items.length*0.7?'good':'warn'}">Đúng ${c}/${items.length}</span><button class="btn ghost" type="button" id="again">Cập nhật số liệu</button>`;$('#again').onclick=()=>vProgress()});
   };
   const trb=$('#toReport');if(trb)trb.onclick=()=>go('report');
-  const tf=$('#toFinal');if(tf)tf.onclick=()=>{$('#finalSlot').innerHTML=`<div><p class="eyebrow">Sau buổi 14</p><h2>Bài kiểm tra đầu ra</h2><p class="lead">45 câu, cùng cấu trúc và độ khó với bài đầu vào.</p></div>`+renderTest('final');wireTest('final');$('#finalSlot').scrollIntoView({behavior:'smooth'})};
+  const tf=$('#toFinal');if(tf)tf.onclick=()=>{$('#finalSlot').innerHTML=`<div><p class="eyebrow">Sau buổi 14</p><h2>Bài kiểm tra đầu ra</h2><p class="lead">45 câu, cùng cấu trúc, cùng nội dung và độ khó với bài đầu vào (câu khác); nộp xong làm tiếp phần 4–5 như lúc đầu vào. So hai bài là thấy 14 buổi giúp cậu tiến bộ ở đâu.</p></div>`+renderTest('final');wireTest('final');$('#finalSlot').scrollIntoView({behavior:'smooth'})};
 }
 
 /* ----- plan & feasibility ----- */
@@ -2020,8 +2023,8 @@ function renderExam(box,B,saved,onDone){
   form.addEventListener('submit',e=>{e.preventDefault();if(form.dataset.graded)return;
     if(kind==='order'&&ord.length<B.lines.length){form.querySelector('.x-msg').textContent='Cậu xếp hết các lượt lời rồi mới chấm nhé.';return}
     form.dataset.graded='1';const r=grade();form.querySelector('button[type=submit]').disabled=true;
-    form.querySelector('.x-msg').innerHTML=`Cậu đúng <b>${r.correct}/${r.total}</b>. <button type="button" class="linkbtn x-redo">Làm lại</button>`;
-    form.querySelector('.x-redo').onclick=()=>renderExam(box,B,null,onDone);
+    form.querySelector('.x-msg').innerHTML=`Cậu đúng <b>${r.correct}/${r.total}</b>.`+(B.noRedo?'':` <button type="button" class="linkbtn x-redo">Làm lại</button>`);
+    if(!B.noRedo)form.querySelector('.x-redo').onclick=()=>renderExam(box,B,null,onDone);
     if(window.speechSynthesis)try{speechSynthesis.cancel()}catch(_){}
     onDone&&onDone(r)});
 }
@@ -2197,6 +2200,72 @@ function coverageCardHTML(){const RG=REG();const P=C.local_pack||{};
 .lp-clock{font:700 2.6rem/1.1 'JetBrains Mono',monospace}.lp-sp .row{justify-content:center;align-items:center;gap:12px}.lp-play audio{width:100%;max-width:420px}
 .ix-cov td .pill{white-space:nowrap}.ix-cov td.num{text-align:center}
 .ls-opt{margin:4px 0 10px;padding:8px 12px;border-radius:10px;background:#FFF6D6;color:#4a3b00;border:1.5px solid #e9cf6a}
+`;document.head.appendChild(st)})();
+
+/* ===== Bài đầu vào / đầu ra: phần nghe bằng bản ghi thật (YouTube), phần 4 "Dạng đề của sở", phần 5 viết đoạn văn =====
+   Hai bài là hai dạng song song bám nội dung 14 buổi (mỗi câu có obj, day). Phần 4–5 chấm riêng, không dùng để xếp mức:
+   chỉ để so trước và sau 14 buổi. Dạng ở phần 4 lấy theo gói luyện riêng của sở (REG().pack), chốt lúc làm bài đầu vào
+   (S.diag.locF) để bài đầu ra hỏi đúng các dạng đó. Kết quả: S[kind].loc = {fmt:{correct,total}}, S[kind].wr = {score,of,words,text,checks}. */
+const TX_OBJ=['open_cloze','key_word','matching_headings','gap_text','true_false'];
+function txFormats(){const TL=C.test_local||{};if(S.diag&&S.diag.locF)return S.diag.locF.filter(f=>TL[f]);
+  const p=(REG().pack||[]).filter(f=>TX_OBJ.includes(f)&&TL[f]);const out=p.slice(0,2);
+  ['open_cloze','key_word','matching_headings'].forEach(f=>{if(out.length<2&&TL[f]&&!out.includes(f))out.push(f)});return out}
+const TX_KEY=k=>k==='diag'?'diagnostic':'final';
+function txDone(kind){const r=S[kind];if(!r)return false;const F=txFormats();return F.every(f=>r.loc&&r.loc[f])&&!!r.wr}
+
+/* --- phần nghe: một đoạn YouTube, nghe tối đa 2 lần khi làm bài --- */
+function txYtHTML(kind){const R=TESTS[kind].listen_yt;if(!R)return '';
+  return `<div class="t-yt" data-kind="${kind}"><div class="yl-head"><span class="yl-tag">BẢN GHI THẬT</span><b>${esc(R.title)}</b><span class="small muted">${esc(R.channel||'')}</span></div>
+   <p class="small">${esc(R.intro_vi||'')} Đọc 5 câu hỏi bên dưới trước, rồi bấm nghe. Cậu được nghe <b>2 lần</b>.</p>
+   <div class="yl-stage"><div class="yl-frame"><div class="tyt-player"></div><div class="yl-cover"><span style="font-size:2.2rem">🎧</span></div></div>
+   <div class="yl-ctl"><button type="button" class="btn hi tyt-play">▶ Nghe lần 1</button><span class="small muted tyt-msg"></span></div></div></div>`}
+function txWireYt(form,kind,state){const box=form.querySelector('.t-yt');const R=TESTS[kind].listen_yt;if(!box||!R)return;
+  const done=!!S[kind];let plays=0,player=null;const btn=box.querySelector('.tyt-play'),msg=box.querySelector('.tyt-msg');
+  const link=`<a href="https://www.youtube.com/watch?v=${encodeURIComponent(R.yt)}&t=${R.start||0}s" target="_blank" rel="noopener">mở trên YouTube</a>`;
+  const label=()=>{if(done){btn.textContent='▶ Nghe lại';btn.disabled=false;return}btn.textContent=plays===0?'▶ Nghe lần 1':plays===1?'▶ Nghe lần 2':'Đã nghe 2 lần';btn.disabled=plays>=2};
+  btn.onclick=()=>{if(!done&&plays>=2)return;box.querySelector('.yl-cover').hidden=true;
+    if(player&&player.seekTo){player.seekTo(R.start||0,true);player.playVideo();return}
+    msg.textContent='Đang tải…';ytApi().then(YT=>{player=new YT.Player(box.querySelector('.tyt-player'),{videoId:R.yt,playerVars:{start:R.start||0,end:R.end||undefined,autoplay:1,controls:done?1:0,rel:0,modestbranding:1,playsinline:1,disablekb:done?0:1,cc_load_policy:0},
+      events:{onReady:ev=>{msg.textContent='';ev.target.playVideo()},onStateChange:ev=>{if(ev.data===1)msg.textContent='Đang phát…';if(ev.data===0){if(!done)plays++;msg.textContent=done?'':plays>=2?'Hết lượt nghe.':'Xong lần 1. Xem lại đáp án rồi nghe lần 2.';label()}},
+        onError:()=>{state.err=true;msg.innerHTML=`Video không phát được ở đây, cậu ${link} rồi làm tiếp.`}}})}).catch(()=>{state.err=true;msg.innerHTML=`Chưa tải được trình phát, cậu ${link} rồi làm tiếp.`})};
+  label()}
+
+/* --- phần 4, 5: hiện sau khi nộp 45 câu --- */
+function txExtrasHTML(kind){const r=S[kind];if(!r)return '';const F=txFormats();const W=((C.test_local||{}).writing||{})[TX_KEY(kind)];
+  const nLeft=F.filter(f=>!(r.loc&&r.loc[f])).length+(r.wr?0:1);
+  return `<div class="card tx-ex" id="txEx"><p class="eyebrow">${kind==='diag'?'Bài đầu vào':'Bài đầu ra'} · phần 4 và 5</p><h3>${nLeft?'Còn 2 phần ngắn để so tiến bộ sau 14 buổi':'Đã xong cả 5 phần'}</h3>
+   <p class="small">Hai phần này không dùng để xếp mức. Chúng đo đúng những dạng cậu sẽ luyện trong gói <b>Dạng bài riêng của đề ${esc(REG().name)}</b> và bài viết, để ${kind==='diag'?'sau 14 buổi so với bài đầu ra':'so với lúc làm bài đầu vào'}. Khoảng 20 phút, làm luôn bây giờ hoặc trước buổi 2.</p>
+   <h4>Phần 4 · Dạng đề của sở</h4>${F.map((f,i)=>{const v=r.loc&&r.loc[f];return v?`<p class="tx-done">✓ ${esc(LP_NAME[f]||f)}: <b>${v.correct}/${v.total}</b></p>`:`<div class="tx-blk" data-f="${f}"></div>`}).join('')}
+   <h4>Phần 5 · Viết đoạn văn</h4>${r.wr?`<p class="tx-done">✓ Bài viết ${r.wr.words} từ · tự chấm <b>${r.wr.score}/${r.wr.of}</b></p><details class="small"><summary>Xem lại bài viết</summary><p class="tx-txt">${esc(r.wr.text)}</p></details>`:W?txWriteHTML(W):'<p class="muted small">Đang soạn đề.</p>'}</div>`}
+function txWriteHTML(W){const RB=(C.test_local.writing||{}).rubric||[];
+  return `<div class="tx-wr"><p class="lp-prompt"><b>${esc(W.prompt_en)}</b></p><p class="small">${esc(W.prompt_vi)} Viết khoảng ${esc(W.words||'120–150')} từ trong 15 phút, không tra từ điển.</p>
+   <textarea class="lp-ta" rows="9" spellcheck="false" aria-label="Bài viết của cậu"></textarea><div class="row small"><span class="lp-wc pill">0 từ</span><button type="button" class="btn hi tx-wsub">Nộp bài viết</button><span class="muted tx-wmsg"></span></div>
+   <div class="tx-rb" hidden><p class="small"><b>Tự chấm</b> theo bảng dưới đây, thật lòng nhé: cô sẽ xem lại bài của cậu.</p>${RB.map((c,i)=>`<fieldset class="tx-c"><legend>${esc(c.name_vi)}</legend>${(c.levels||[]).map((lv,j)=>`<label class="lp-ck"><input type="radio" name="rb${i}" value="${j}"><span>${esc(lv)}</span></label>`).join('')}</fieldset>`).join('')}
+   <div class="row"><button type="button" class="btn tx-rsave">Lưu điểm tự chấm</button><span class="small muted tx-rmsg"></span></div></div></div>`}
+function wireTestExtras(kind,after){const box=$('#txEx');if(!box)return;const r=S[kind];const F=txFormats();const TL=C.test_local||{};
+  if(kind==='diag'&&!r.locF){r.locF=F;save()}
+  box.querySelectorAll('.tx-blk').forEach(el=>{const f=el.dataset.f;const B=(TL[f]||{})[TX_KEY(kind)];if(!B){el.innerHTML='<p class="muted small">Đang soạn đề.</p>';return}
+    renderExam(el,Object.assign({},B,{local:true,noRedo:true}),null,res=>{r.loc=r.loc||{};r.loc[f]={correct:res.correct,total:res.total,at:Date.now()};save();setTimeout(()=>{const t=box.querySelector('h3');if(t&&txDone(kind))t.textContent='Đã xong cả 5 phần'},0)})});
+  const wr=box.querySelector('.tx-wr');if(!wr)return;const ta=wr.querySelector('.lp-ta'),wc=wr.querySelector('.lp-wc');
+  ta.oninput=()=>{const w=lpWc(ta.value);wc.textContent=w+' từ';wc.className='lp-wc pill '+(w>=100&&w<=170?'good':'')};
+  wr.querySelector('.tx-wsub').onclick=()=>{const w=lpWc(ta.value);if(w<20){wr.querySelector('.tx-wmsg').textContent='Cậu viết thêm rồi nộp nhé (bài này để so tiến bộ, viết được bao nhiêu cứ viết).';return}
+    ta.readOnly=true;wr.querySelector('.tx-wsub').disabled=true;wr.querySelector('.tx-rb').hidden=false;wr.querySelector('.tx-wmsg').textContent=`Đã nộp ${w} từ. Giờ cậu tự chấm.`};
+  wr.querySelector('.tx-rsave').onclick=()=>{const RB=(TL.writing||{}).rubric||[];const ch=RB.map((c,i)=>{const x=wr.querySelector(`input[name="rb${i}"]:checked`);return x?+x.value:null});
+    if(ch.some(x=>x==null)){wr.querySelector('.tx-rmsg').textContent='Chọn mức cho đủ các mục nhé.';return}
+    r.wr={score:ch.reduce((a,b)=>a+b,0),of:RB.length*2,checks:ch,words:lpWc(ta.value),text:ta.value,at:Date.now()};save();after&&after()}}
+
+/* gói gọn phần 4–5 và điểm theo buổi để gửi mã kết quả cho cô */
+function txSum(kind){const r=S[kind];if(!r)return {};return {lc:r.loc||null,lf:r.locF||null,w:r.wr?{s:r.wr.score,of:r.wr.of,n:r.wr.words}:null,bd:r.byDay||txByDay(kind)}}
+/* --- so trước / sau theo từng buổi (mỗi câu của 45 câu gắn với một buổi qua it.day) --- */
+function txByDay(kind){const r=S[kind];if(!r||!r.answers)return null;const out={};
+  TESTS[kind].items.forEach(it=>{if(!it.day)return;const d=it.day;out[d]=out[d]||[0,0];out[d][1]++;if(isCorrect(it,r.answers[it.id]))out[d][0]++});return out}
+
+(function(){const st=document.createElement('style');st.textContent=`
+.t-yt{margin:8px 0 14px;padding:12px;border:2px dashed var(--line,#c9d6d8);border-radius:14px}
+.t-yt .yl-frame .tyt-player,.t-yt .yl-frame iframe{position:absolute;inset:0;width:100%;height:100%}
+.tx-ex h4{margin:16px 0 6px}.tx-done{margin:6px 0;padding:8px 12px;border-radius:10px;background:var(--good-bg,#E3F4EA)}
+.tx-blk{margin:8px 0 14px;padding:10px;border:1.5px solid var(--line,#c9d6d8);border-radius:12px}
+.tx-c{border:none;margin:10px 0;padding:0}.tx-c legend{font-weight:700;margin-bottom:4px}.tx-txt{white-space:pre-wrap}
 `;document.head.appendChild(st)})();
 
 /* ----- Chọn trường (school recommender) -----
@@ -3195,7 +3264,7 @@ function summary(){
   const A=agg();const eff=efficiency(A);const entry=S.diag;
   const days={};for(let i=1;i<=14;i++){const r=S.days[i];if(r){const g=Object.values(r.games||{}),x=Object.values(r.exam||{});days[i]=[r.web?r.web.correct:null,r.web?r.web.total:null,r.paper?r.paper.correct:null,r.paper?r.paper.total:null,r.web?r.web.at:(r.paper?r.paper.at:(g.length?Math.max(...g.map(y=>y.at)):null)),g.reduce((t,y)=>t+(y.stars||0),0),g.length,x.length?x.reduce((t,y)=>t+y.correct,0):null,x.length?x.reduce((t,y)=>t+y.total,0):null,...(()=>{const l=Object.values(r.listen||{});return l.length?[l.reduce((t,y)=>t+y.correct,0),l.reduce((t,y)=>t+y.total,0)]:[null,null]})()]}}
   const wrong=Object.entries(S.queue).map(([id,q])=>[id,q.wrong||1]);
-  return {v:1,n:S.name,d:S.diag&&{t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands,u:S.diag.dur,k:S.diag.blank},f:S.final&&{t:S.final.total,o:S.final.of,l:S.final.level,b:S.final.bands,u:S.final.dur,k:S.final.blank},days,sk:A.skills,rt:A.retry,mq:A.mastered,q:wrong,p:S.plan,g:gradeNow(),gl:goalNow().k,e:eff.f,sd:A.studyDays,sp:A.span,tr:curTrack(),rg:regionKey(),sc:S.school&&{toan:S.school.toan,van:S.school.van,m3:S.school.m3,mode:S.school.mode,langs:S.school.langs,ach:S.school.ach,ac:S.school.ac},cs:S.course,at:Date.now()};
+  return {v:1,n:S.name,d:S.diag&&Object.assign({t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands,u:S.diag.dur,k:S.diag.blank},txSum('diag')),f:S.final&&Object.assign({t:S.final.total,o:S.final.of,l:S.final.level,b:S.final.bands,u:S.final.dur,k:S.final.blank},txSum('final')),days,sk:A.skills,rt:A.retry,mq:A.mastered,q:wrong,p:S.plan,g:gradeNow(),gl:goalNow().k,e:eff.f,sd:A.studyDays,sp:A.span,tr:curTrack(),rg:regionKey(),sc:S.school&&{toan:S.school.toan,van:S.school.van,m3:S.school.m3,mode:S.school.mode,langs:S.school.langs,ach:S.school.ach,ac:S.school.ac},cs:S.course,at:Date.now()};
 }
 function vShare(){
   M().innerHTML=`<section class="view">
@@ -3418,6 +3487,19 @@ const PACE_NAME={fast:'Tuyến nhanh',steady:'Tuyến giữ nhịp',careful:'Tuy
 const SK_RP={listening:'Nghe',cloze:'Điền một từ',transform:'Viết lại câu',vocab:'Từ vựng',grammar:'Ngữ pháp',wordform:'Cấu tạo từ',exam:'Dạng bài thi',reading:'Đọc hiểu',review:'Ôn xoắn ốc',retry:'Câu từng sai làm lại'};
 function rpTestRow(label,r){if(!r)return `<tr><td>${label}</td><td colspan="6" class="muted">Chưa làm</td></tr>`;const p=placement(r);const L=LEVELS.find(l=>l.k===r.level);
   return `<tr><td>${label}</td><td><b>${r.total}/${r.of}</b></td>${['A2','B1','B2'].map(k=>`<td>${r.bands[k][0]}/${r.bands[k][1]}</td>`).join('')}<td><b>${esc(L?L.name:r.level)}</b>${p&&p.lo!==p.hi?`<br><span class="small muted">${esc(p.range)}</span>`:''}</td><td>${p?p.conf:'—'}</td></tr>`}
+/* tiến bộ nhờ 14 buổi: hai bài là hai dạng song song cùng nội dung khoá, nên chênh lệch phản ánh việc học */
+function rpProgress(d,f,A){const bd=k=>{const r=S[k];return r&&(r.byDay||txByDay(k))};const D0=bd('diag'),D1=f?bd('final'):null;
+  const sg=(a,b)=>{const x=b-a;return `<b class="${x>0?'rp-up':x<0?'rp-dn':''}">${x>0?'+':''}${x}</b>`};
+  const rows=[];
+  rows.push(`<tr><td>Phần chung: 45 câu bám nội dung 14 buổi</td><td>${d.total}/${d.of}</td><td>${f?f.total+'/'+f.of:'—'}</td><td>${f?sg(d.total,f.total):'—'}</td></tr>`);
+  const F=d.locF||Object.keys(d.loc||{});F.forEach(k=>{const a=(d.loc||{})[k],b=f&&(f.loc||{})[k];rows.push(`<tr><td>Dạng đề của sở: ${esc(LP_NAME[k]||k)}</td><td>${a?a.correct+'/'+a.total:'chưa làm'}</td><td>${b?b.correct+'/'+b.total:'—'}</td><td>${a&&b?sg(a.correct,b.correct):'—'}</td></tr>`)});
+  rows.push(`<tr><td>Viết đoạn văn (tự chấm, cô xem lại)</td><td>${d.wr?d.wr.score+'/'+d.wr.of:'chưa làm'}</td><td>${f&&f.wr?f.wr.score+'/'+f.wr.of:'—'}</td><td>${d.wr&&f&&f.wr?sg(d.wr.score,f.wr.score):'—'}</td></tr>`);
+  let dayTxt='';if(D0&&D1){const up=[],flat=[];Object.keys(D0).map(Number).sort((a,b)=>a-b).forEach(n=>{const a=D0[n],b=D1[n];if(!b)return;(b[0]>a[0]?up:flat).push(n)});
+    const nm=n=>`buổi ${n} (${esc((DAYS[n-1]||{}).theme_vi||'')})`;
+    dayTxt=`<p><b>Theo từng buổi:</b> ${up.length?`tiến bộ rõ ở ${up.map(nm).join(', ')}`:'chưa thấy buổi nào tăng rõ'}${flat.length?`; chưa tăng ở ${flat.map(nm).join(', ')} — nên ôn lại các buổi này`:''}.</p>`}
+  return `<h4>Tiến bộ nhờ 14 buổi</h4><p class="small muted">Bài đầu vào và đầu ra là hai đề song song: câu khác nhau nhưng cùng hỏi từ vựng, ngữ pháp, dạng đề của từng buổi, cùng độ khó. Phần 4 hỏi đúng các dạng trong gói riêng của đề ${esc(REG().name)}.</p>
+   <div class="tbl-wrap"><table class="rp-tbl"><thead><tr><th>Phần</th><th>Đầu vào</th><th>Đầu ra</th><th>Thay đổi</th></tr></thead><tbody>${rows.join('')}
+   <tr><td>Nắm nội dung từng buổi (kiểm tra cuối buổi)</td><td colspan="3">${pctTxt(pct(A.web))} câu đúng trong ${Object.values(S.days).filter(r=>r&&r.web).length} buổi</td></tr></tbody></table></div>${dayTxt}`}
 function reportBody(){
   const nm=S.name||'Học sinh';const A=agg(),RH=rhythm(A),eff=efficiency(A);
   const o=courseInputs(),P=o.prof,g=o.grade;const d=S.diag,f=S.final;
@@ -3433,6 +3515,7 @@ function reportBody(){
   const s1=`<div class="card rp-sec"><h3>1. Nền tảng tiếng Anh</h3>
    <div class="tbl-wrap"><table class="rp-tbl"><thead><tr><th>Bài</th><th>Đúng</th><th>Câu A2</th><th>Câu B1</th><th>Câu B2</th><th>Ước tính</th><th>Độ chắc</th></tr></thead><tbody>${rpTestRow('Đầu vào',d)}${rpTestRow('Đầu ra',f)}</tbody></table></div>
    ${f?`<p>Sau 14 buổi: ${f.total-d.total>=0?'+':''}${f.total-d.total} câu so với đầu vào${f.hours>d.hours?', lên một mức ước tính':''}.</p>`:''}
+   ${rpProgress(d,f,A)}
    ${sks.length?`<p><b>Theo kỹ năng trên web:</b> ${sks.map(x=>`${x.n} ${Math.round(x.p*100)}%`).join(' · ')}.</p>${sks.length>=2?`<p>Mạnh nhất: <b>${sks[0].n}</b>. Cần thêm thời gian: <b>${sks[sks.length-1].n}</b>.</p>`:''}`:''}
    ${[placement(d),placement(f)].filter(Boolean).flatMap(p=>p.flags).length?`<p class="small muted">Lưu ý khi đọc điểm: ${[...new Set([placement(d),placement(f)].filter(Boolean).flatMap(p=>p.flags))].map(esc).join(' ')}</p>`:''}</div>`;
   /* 2. khả năng học */
@@ -3483,7 +3566,7 @@ views.report=vReport;
 
 /* ----- dựng lại hồ sơ từ mã kết quả (cô dán mã, hoặc mở từ trang theo dõi của cô) ----- */
 function sFromSummary(o){const st=blank();st.name=o.n||'';
-  const t=x=>x&&{total:x.t,of:x.o,level:x.l,bands:x.b,hours:ENTRY_H[x.l]!=null?ENTRY_H[x.l]:220,dur:x.u,blank:x.k,answers:{}};
+  const t=x=>x&&{total:x.t,of:x.o,level:x.l,bands:x.b,hours:ENTRY_H[x.l]!=null?ENTRY_H[x.l]:220,dur:x.u,blank:x.k,answers:{},loc:x.lc||null,locF:x.lf||null,wr:x.w?{score:x.w.s,of:x.w.of,words:x.w.n}:null,byDay:x.bd||null};
   st.diag=t(o.d);st.final=t(o.f);if(o.p)st.plan=Object.assign({min:40,dpw:6,cls:0},o.p);
   st.region=o.rg||'ha-noi';st.school=Object.assign(blankSchool(),o.sc||{},{grade:o.g||7});st.course=Object.assign({goal:o.gl||'cva',lv:null},o.cs||{});
   if(o.tr&&o.d&&o.tr!==trackFromLevel(o.d.l))st.track=o.tr;
@@ -3503,6 +3586,7 @@ function bootReport(){const h=location.hash||'';if(!h.startsWith('#bc='))return 
   return true}
 (function(){const st=document.createElement('style');st.textContent=`
 .rp-head h2{margin:.1em 0}.rp-stage{font-weight:700;border-radius:10px;padding:6px 10px;background:#FFF3B0;color:#14303A;display:inline-block}.rp-stage.chot{background:#D6F2DF}
+.rp-up{color:#1a7f3c}.rp-dn{color:#b3261e}
 .rp-sec{margin-top:12px}.rp-sec h3{margin-top:0}.rp-tbl{width:100%;font-size:.92rem}.rp-tbl td,.rp-tbl th{vertical-align:top}.rp-pick td{background:#FFF7CC}
 .rp-kv{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px}
 .rp-kv li{display:flex;justify-content:space-between;gap:10px;border:2px solid var(--line,#dde);border-radius:10px;padding:8px 12px}.rp-kv b{white-space:nowrap}

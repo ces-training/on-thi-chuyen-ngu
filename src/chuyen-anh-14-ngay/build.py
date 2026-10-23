@@ -28,6 +28,9 @@ media_vi = json.load(open(mv, encoding="utf-8")) if mv.exists() else {}
 au = repo / "chuyen-anh-14-ngay" / "audio" / "manifest.json"
 audio = json.load(open(au, encoding="utf-8")) if au.exists() else None
 C = {"days": days, "tests": tests, "web": web, "media": media, "media_vi": media_vi, "media_listen": media_listen}
+tl = here / "content/test_local.json"
+if tl.exists():
+    C["test_local"] = json.load(open(tl, encoding="utf-8"))
 C["local_pack"] = {k: v for k, v in json.load(open(here / "content/web/local_pack.json", encoding="utf-8")).items() if not k.startswith("_")}
 # bài nghe thu âm thật (YouTube nhúng) + câu hỏi riêng theo mức: content/web/real_listen_<mức>.json
 real_listen = {}
@@ -127,7 +130,7 @@ def app_look(t):
     if "family=Mali" not in t:
         t = t.replace("</head>", FONTS + "\n</head>", 1)
     return t
-body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__COURSE_JS__*/", (here / "course.js").read_text(encoding="utf-8")).replace("/*__MAP_JS__*/", (here / "map.js").read_text(encoding="utf-8")).replace("/*__INFO_JS__*/", (here / "info.js").read_text(encoding="utf-8")).replace("/*__REPORT_JS__*/", (here / "report.js").read_text(encoding="utf-8")).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8") + "\n" + (here / "games2.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("/*__LOCAL_JS__*/", (here / "local.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
+body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__COURSE_JS__*/", (here / "course.js").read_text(encoding="utf-8")).replace("/*__MAP_JS__*/", (here / "map.js").read_text(encoding="utf-8")).replace("/*__INFO_JS__*/", (here / "info.js").read_text(encoding="utf-8")).replace("/*__REPORT_JS__*/", (here / "report.js").read_text(encoding="utf-8")).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8") + "\n" + (here / "games2.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("/*__LOCAL_JS__*/", (here / "local.js").read_text(encoding="utf-8")).replace("/*__TESTX_JS__*/", (here / "testx.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
 page = (
     "<!doctype html>\n<html lang=\"vi\">\n<head>\n<meta charset=\"utf-8\">\n"
     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"

@@ -1075,7 +1075,7 @@ function renderTest(kind){
   const pmap={};(test.passages||[]).forEach(p=>pmap[p.id]=p);
   let html='';let lastP=null;let n=0;let lastS=null;
   test.items.forEach(it=>{
-    const sec=it.section||'core';if(test.sections&&sec!==lastS){html+=`<div class="t-sec"><b>${esc(test.sections[sec]||'')}</b></div>`;lastS=sec}
+    const sec=it.section||'core';if(test.sections&&sec!==lastS){html+=`<div class="t-sec"><b>${esc(test.sections[sec]||'')}</b></div>`;if(sec==='listen')html+=txYtHTML(kind);lastS=sec}
     if(it.passage&&it.passage!==lastP){const p=pmap[it.passage];html+=`<div class="passage"><span class="eyebrow">Đọc đoạn văn rồi trả lời</span>\n${esc(p.text)}</div>`;lastP=it.passage}
     n++;html+=renderQ(it,n);
   });
@@ -1096,6 +1096,7 @@ function wireTest(kind){
   const form=$('#testForm');wireOptionHighlight(form);
   const test=TESTS[kind];
   const lsState={};const canSpeak=!!(window.speechSynthesis&&window.SpeechSynthesisUtterance);
+  txWireYt(form,kind,lsState);
   form.querySelectorAll('.ls-play').forEach(b=>{const it=test.items.find(x=>x.id===b.dataset.id);lsState[it.id]={plays:0};
     if(S[kind]){b.hidden=true;b.parentElement.querySelector('.ls-txt').hidden=false;return}
     if(!canSpeak){b.hidden=true;const t=b.parentElement.querySelector('.ls-txt');t.hidden=false;t.insertAdjacentHTML('beforebegin','<p class="small muted">Máy này không phát được tiếng, cậu đọc lời thay cho nghe nhé.</p>');return}
@@ -1104,14 +1105,14 @@ function wireTest(kind){
   form.addEventListener('submit',e=>{e.preventDefault();
     const ans={};let blank=0;test.items.forEach(it=>{ans[it.id]=readAnswer(form,it);if(ans[it.id]==null||ans[it.id]==='')blank++});
     if(blank&&!form.dataset.warned){form.dataset.warned='1';$('#testMsg').textContent=`Còn ${blank} câu trống. Bấm Nộp bài lần nữa nếu cậu muốn nộp luôn.`;return}
-    const r=testScore(test,ans);r.answers=ans;r.blank=blank;if(!canSpeak&&test.items.some(x=>x.listen))r.noAudio=true;if(TEST_T0[kind])r.dur=Math.round((Date.now()-TEST_T0[kind])/6e3)/10;S[kind]=r;save();go(kind==='diag'?'diag':'progress');
+    const r=testScore(test,ans);r.answers=ans;r.blank=blank;if((!canSpeak&&test.items.some(x=>x.listen))||lsState.err)r.noAudio=true;if(TEST_T0[kind])r.dur=Math.round((Date.now()-TEST_T0[kind])/6e3)/10;S[kind]=r;save();go(kind==='diag'?'diag':'progress');
   });
 }
 function vDiag(){
   const r=S.diag;
-  M().innerHTML=`<section class="view"><div><p class="eyebrow">Trước buổi 1</p><h2>Bài kiểm tra đầu vào</h2><p class="lead">45 câu từ dễ đến khó (mức A2, B1, B2): nghe, ngữ pháp, từ vựng, đọc hiểu và tự viết câu trả lời. Khoảng 35 phút, nhớ bật loa. Cậu làm một mình, không tra từ điển. Câu nào không biết thì cứ bỏ qua, như vậy kết quả mới đúng với sức cậu.</p></div>
-  ${r?resultCard(r,'Kết quả đầu vào')+`<div class="row"><button class="btn hi" id="toDays">Bắt đầu buổi 1</button><button class="btn ghost" id="toPlan">Xem lộ trình phù hợp</button></div><details class="card"><summary>Xem lại từng câu</summary>${renderTest('diag')}</details>`:renderTest('diag')}</section>`;
-  wireTest('diag');
+  M().innerHTML=`<section class="view"><div><p class="eyebrow">Trước buổi 1</p><h2>Bài kiểm tra đầu vào</h2><p class="lead">45 câu từ dễ đến khó (mức A2, B1, B2), hỏi đúng những gì 14 buổi sẽ dạy: nghe một đoạn video thật, ngữ pháp, từ vựng, đọc hiểu và tự viết câu trả lời. Khoảng 35 phút, nhớ bật loa. Nộp xong còn 2 phần ngắn (dạng đề của sở cậu và một đoạn viết, khoảng 20 phút) để sau 14 buổi so tiến bộ. Cậu làm một mình, không tra từ điển; câu nào không biết thì cứ bỏ qua, như vậy kết quả mới đúng với sức cậu.</p></div>
+  ${r?resultCard(r,'Kết quả đầu vào')+txExtrasHTML('diag')+`<div class="row"><button class="btn hi" id="toDays">Bắt đầu buổi 1</button><button class="btn ghost" id="toPlan">Xem lộ trình phù hợp</button></div><details class="card"><summary>Xem lại từng câu</summary>${renderTest('diag')}</details>`:renderTest('diag')}</section>`;
+  wireTest('diag');if(r)wireTestExtras('diag',()=>vDiag());
   if(r){$('#toDays').onclick=()=>go('days',{day:nextDay()});$('#toPlan').onclick=()=>go('plan')}
 }
 
@@ -1228,12 +1229,13 @@ function renderDay(n){
   const stp=dayStatus(n);
   body.innerHTML=`<div class="card"><div class="dayhead">${dayIcon(n,'dh-ic',80)}<div class="dh-t"><p class="eyebrow">Buổi ${String(n).padStart(2,'0')}/14${D.type==='review'?' · Ôn tập':''}</p><h2>${esc(D.theme_vi)}</h2></div>${stp==='done'?'<span class="stamp">Xong</span>':stp==='part'?'<span class="stamp part">Đang làm</span>':''}</div><p class="lead">${esc(D.goal_vi||'')}</p>
    <div class="row">${gPill(n)}${xPill(n)}${lPackPill(n)}${lPill(n)}${pill(wk,'Kiểm tra cuối buổi')}${pill(pp,'Bài giấy')}</div>${trackBar()}</div>
+   ${S.diag&&!txDone('diag')?`<p class="notice">Cậu còn <b>phần 4–5 của bài đầu vào</b> (dạng đề của sở và đoạn viết, khoảng 20 phút). Làm trước buổi 2 để sau 14 buổi so được tiến bộ. <button class="btn ghost" type="button" id="toDiagX">Làm ngay</button></p>`:''}
    ${learnHTML(n)}
    <div class="card" id="checkCard"><div class="row" style="justify-content:space-between"><h3 class="ih">${em('brain')}Bước 6 · Kiểm tra nhanh cuối buổi</h3><span class="small muted">${(D.web_check||[]).length+(wk?0:q.length)} câu · gấp tập giấy lại</span></div>
    ${wk?`<p class="score">${wk.correct/wk.total>=0.8?em('party-popper','',40):wk.correct/wk.total>=0.6?em('sparkles','',40):em('flexed-biceps','',40)}<span>Cậu đúng <b>${wk.correct}/${wk.total}</b> câu.</span></p>`:''}
    <form id="webForm"></form></div>
    <div class="card" id="paperCard"></div>`;
-  wireLearn(n);wireTrack(()=>renderDay(n));
+  wireLearn(n);wireTrack(()=>renderDay(n));{const b=$('#toDiagX');if(b)b.onclick=()=>go('diag')}
   // web check
   const form=$('#webForm');
   let items, reviewIds;
@@ -1358,8 +1360,9 @@ function vProgress(){
    <div class="card"><h3>Sau 14 buổi cậu làm được gì</h3><p class="small muted">Mỗi dòng sáng lên khi cậu xong buổi đó với ít nhất 60% câu web đúng.</p><ul class="cando">${canDo.map(c=>`<li class="${okDay(c.day)?'ok':''}"><span><span class="small muted">Buổi ${c.day} · </span>${esc(c.t)}</span></li>`).join('')}</ul></div>
    <div class="card"><h3>Chi tiết từng buổi</h3><div class="tbl-wrap"><table><thead><tr><th>Buổi</th><th>Chủ đề</th><th>Web</th><th>Giấy</th><th>Ngày làm</th></tr></thead><tbody>${DAYS.map(d=>{const r=S.days[d.day]||{};return `<tr><td>${d.day}</td><td>${esc(d.theme_vi)}</td><td>${r.web?r.web.correct+'/'+r.web.total:'—'}</td><td>${r.paper?r.paper.correct+'/'+r.paper.total:'—'}</td><td>${r.web?new Date(r.web.at).toLocaleDateString('vi-VN'):'—'}</td></tr>`}).join('')}</tbody></table></div></div>
    <div class="card"><h3>Ôn thêm các câu còn trong vòng</h3><p class="small muted">Những câu cậu từng sai và chưa nhớ chắc. Làm thêm lúc nào cũng được, kể cả sau buổi 14.</p>${A.queue?`<button class="btn" id="extraBtn">Ôn ${Math.min(10,A.queue)} câu ngay</button>`:'<p class="small">Không còn câu nào chờ ôn.</p>'}<form id="extraForm"></form></div>
-   ${fin?'':'<div id="finalSlot"></div>'}
+   ${fin?txExtrasHTML('final'):'<div id="finalSlot"></div>'}
   </section>`;
+  if(fin)wireTestExtras('final',()=>vProgress());
   const xb=$('#extraBtn');if(xb)xb.onclick=()=>{
     const cur=Math.max(1,...Object.keys(S.days).map(Number).filter(n=>S.days[n]&&S.days[n].web));
     const ids=Object.entries(S.queue).filter(([id])=>ITEM[id]).sort((a,b)=>a[1].due-b[1].due).slice(0,10).map(([id])=>id);
@@ -1369,7 +1372,7 @@ function vProgress(){
     f.addEventListener('submit',e=>{e.preventDefault();let c=0;items.forEach(it=>{const v=readAnswer(f,it);const ok=showFeedback(f,it,v);if(ok)c++;updateQueue(it,ok,cur,true)});save();f.querySelector('.sticky-submit').innerHTML=`<span class="pill ${c>=items.length*0.7?'good':'warn'}">Đúng ${c}/${items.length}</span><button class="btn ghost" type="button" id="again">Cập nhật số liệu</button>`;$('#again').onclick=()=>vProgress()});
   };
   const trb=$('#toReport');if(trb)trb.onclick=()=>go('report');
-  const tf=$('#toFinal');if(tf)tf.onclick=()=>{$('#finalSlot').innerHTML=`<div><p class="eyebrow">Sau buổi 14</p><h2>Bài kiểm tra đầu ra</h2><p class="lead">45 câu, cùng cấu trúc và độ khó với bài đầu vào.</p></div>`+renderTest('final');wireTest('final');$('#finalSlot').scrollIntoView({behavior:'smooth'})};
+  const tf=$('#toFinal');if(tf)tf.onclick=()=>{$('#finalSlot').innerHTML=`<div><p class="eyebrow">Sau buổi 14</p><h2>Bài kiểm tra đầu ra</h2><p class="lead">45 câu, cùng cấu trúc, cùng nội dung và độ khó với bài đầu vào (câu khác); nộp xong làm tiếp phần 4–5 như lúc đầu vào. So hai bài là thấy 14 buổi giúp cậu tiến bộ ở đâu.</p></div>`+renderTest('final');wireTest('final');$('#finalSlot').scrollIntoView({behavior:'smooth'})};
 }
 
 /* ----- plan & feasibility ----- */
@@ -1467,6 +1470,7 @@ function vPlan(){
 /*__GAMES_JS__*/
 /*__EXAM_JS__*/
 /*__LOCAL_JS__*/
+/*__TESTX_JS__*/
 /*__SCHOOL_JS__*/
 /*__COURSE_JS__*/
 /*__MAP_JS__*/
@@ -1489,7 +1493,7 @@ function summary(){
   const A=agg();const eff=efficiency(A);const entry=S.diag;
   const days={};for(let i=1;i<=14;i++){const r=S.days[i];if(r){const g=Object.values(r.games||{}),x=Object.values(r.exam||{});days[i]=[r.web?r.web.correct:null,r.web?r.web.total:null,r.paper?r.paper.correct:null,r.paper?r.paper.total:null,r.web?r.web.at:(r.paper?r.paper.at:(g.length?Math.max(...g.map(y=>y.at)):null)),g.reduce((t,y)=>t+(y.stars||0),0),g.length,x.length?x.reduce((t,y)=>t+y.correct,0):null,x.length?x.reduce((t,y)=>t+y.total,0):null,...(()=>{const l=Object.values(r.listen||{});return l.length?[l.reduce((t,y)=>t+y.correct,0),l.reduce((t,y)=>t+y.total,0)]:[null,null]})()]}}
   const wrong=Object.entries(S.queue).map(([id,q])=>[id,q.wrong||1]);
-  return {v:1,n:S.name,d:S.diag&&{t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands,u:S.diag.dur,k:S.diag.blank},f:S.final&&{t:S.final.total,o:S.final.of,l:S.final.level,b:S.final.bands,u:S.final.dur,k:S.final.blank},days,sk:A.skills,rt:A.retry,mq:A.mastered,q:wrong,p:S.plan,g:gradeNow(),gl:goalNow().k,e:eff.f,sd:A.studyDays,sp:A.span,tr:curTrack(),rg:regionKey(),sc:S.school&&{toan:S.school.toan,van:S.school.van,m3:S.school.m3,mode:S.school.mode,langs:S.school.langs,ach:S.school.ach,ac:S.school.ac},cs:S.course,at:Date.now()};
+  return {v:1,n:S.name,d:S.diag&&Object.assign({t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands,u:S.diag.dur,k:S.diag.blank},txSum('diag')),f:S.final&&Object.assign({t:S.final.total,o:S.final.of,l:S.final.level,b:S.final.bands,u:S.final.dur,k:S.final.blank},txSum('final')),days,sk:A.skills,rt:A.retry,mq:A.mastered,q:wrong,p:S.plan,g:gradeNow(),gl:goalNow().k,e:eff.f,sd:A.studyDays,sp:A.span,tr:curTrack(),rg:regionKey(),sc:S.school&&{toan:S.school.toan,van:S.school.van,m3:S.school.m3,mode:S.school.mode,langs:S.school.langs,ach:S.school.ach,ac:S.school.ac},cs:S.course,at:Date.now()};
 }
 function vShare(){
   M().innerHTML=`<section class="view">

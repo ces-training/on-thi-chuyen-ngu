@@ -63,6 +63,19 @@ const PACE_NAME={fast:'Tuyến nhanh',steady:'Tuyến giữ nhịp',careful:'Tuy
 const SK_RP={listening:'Nghe',cloze:'Điền một từ',transform:'Viết lại câu',vocab:'Từ vựng',grammar:'Ngữ pháp',wordform:'Cấu tạo từ',exam:'Dạng bài thi',reading:'Đọc hiểu',review:'Ôn xoắn ốc',retry:'Câu từng sai làm lại'};
 function rpTestRow(label,r){if(!r)return `<tr><td>${label}</td><td colspan="6" class="muted">Chưa làm</td></tr>`;const p=placement(r);const L=LEVELS.find(l=>l.k===r.level);
   return `<tr><td>${label}</td><td><b>${r.total}/${r.of}</b></td>${['A2','B1','B2'].map(k=>`<td>${r.bands[k][0]}/${r.bands[k][1]}</td>`).join('')}<td><b>${esc(L?L.name:r.level)}</b>${p&&p.lo!==p.hi?`<br><span class="small muted">${esc(p.range)}</span>`:''}</td><td>${p?p.conf:'—'}</td></tr>`}
+/* tiến bộ nhờ 14 buổi: hai bài là hai dạng song song cùng nội dung khoá, nên chênh lệch phản ánh việc học */
+function rpProgress(d,f,A){const bd=k=>{const r=S[k];return r&&(r.byDay||txByDay(k))};const D0=bd('diag'),D1=f?bd('final'):null;
+  const sg=(a,b)=>{const x=b-a;return `<b class="${x>0?'rp-up':x<0?'rp-dn':''}">${x>0?'+':''}${x}</b>`};
+  const rows=[];
+  rows.push(`<tr><td>Phần chung: 45 câu bám nội dung 14 buổi</td><td>${d.total}/${d.of}</td><td>${f?f.total+'/'+f.of:'—'}</td><td>${f?sg(d.total,f.total):'—'}</td></tr>`);
+  const F=d.locF||Object.keys(d.loc||{});F.forEach(k=>{const a=(d.loc||{})[k],b=f&&(f.loc||{})[k];rows.push(`<tr><td>Dạng đề của sở: ${esc(LP_NAME[k]||k)}</td><td>${a?a.correct+'/'+a.total:'chưa làm'}</td><td>${b?b.correct+'/'+b.total:'—'}</td><td>${a&&b?sg(a.correct,b.correct):'—'}</td></tr>`)});
+  rows.push(`<tr><td>Viết đoạn văn (tự chấm, cô xem lại)</td><td>${d.wr?d.wr.score+'/'+d.wr.of:'chưa làm'}</td><td>${f&&f.wr?f.wr.score+'/'+f.wr.of:'—'}</td><td>${d.wr&&f&&f.wr?sg(d.wr.score,f.wr.score):'—'}</td></tr>`);
+  let dayTxt='';if(D0&&D1){const up=[],flat=[];Object.keys(D0).map(Number).sort((a,b)=>a-b).forEach(n=>{const a=D0[n],b=D1[n];if(!b)return;(b[0]>a[0]?up:flat).push(n)});
+    const nm=n=>`buổi ${n} (${esc((DAYS[n-1]||{}).theme_vi||'')})`;
+    dayTxt=`<p><b>Theo từng buổi:</b> ${up.length?`tiến bộ rõ ở ${up.map(nm).join(', ')}`:'chưa thấy buổi nào tăng rõ'}${flat.length?`; chưa tăng ở ${flat.map(nm).join(', ')} — nên ôn lại các buổi này`:''}.</p>`}
+  return `<h4>Tiến bộ nhờ 14 buổi</h4><p class="small muted">Bài đầu vào và đầu ra là hai đề song song: câu khác nhau nhưng cùng hỏi từ vựng, ngữ pháp, dạng đề của từng buổi, cùng độ khó. Phần 4 hỏi đúng các dạng trong gói riêng của đề ${esc(REG().name)}.</p>
+   <div class="tbl-wrap"><table class="rp-tbl"><thead><tr><th>Phần</th><th>Đầu vào</th><th>Đầu ra</th><th>Thay đổi</th></tr></thead><tbody>${rows.join('')}
+   <tr><td>Nắm nội dung từng buổi (kiểm tra cuối buổi)</td><td colspan="3">${pctTxt(pct(A.web))} câu đúng trong ${Object.values(S.days).filter(r=>r&&r.web).length} buổi</td></tr></tbody></table></div>${dayTxt}`}
 function reportBody(){
   const nm=S.name||'Học sinh';const A=agg(),RH=rhythm(A),eff=efficiency(A);
   const o=courseInputs(),P=o.prof,g=o.grade;const d=S.diag,f=S.final;
@@ -78,6 +91,7 @@ function reportBody(){
   const s1=`<div class="card rp-sec"><h3>1. Nền tảng tiếng Anh</h3>
    <div class="tbl-wrap"><table class="rp-tbl"><thead><tr><th>Bài</th><th>Đúng</th><th>Câu A2</th><th>Câu B1</th><th>Câu B2</th><th>Ước tính</th><th>Độ chắc</th></tr></thead><tbody>${rpTestRow('Đầu vào',d)}${rpTestRow('Đầu ra',f)}</tbody></table></div>
    ${f?`<p>Sau 14 buổi: ${f.total-d.total>=0?'+':''}${f.total-d.total} câu so với đầu vào${f.hours>d.hours?', lên một mức ước tính':''}.</p>`:''}
+   ${rpProgress(d,f,A)}
    ${sks.length?`<p><b>Theo kỹ năng trên web:</b> ${sks.map(x=>`${x.n} ${Math.round(x.p*100)}%`).join(' · ')}.</p>${sks.length>=2?`<p>Mạnh nhất: <b>${sks[0].n}</b>. Cần thêm thời gian: <b>${sks[sks.length-1].n}</b>.</p>`:''}`:''}
    ${[placement(d),placement(f)].filter(Boolean).flatMap(p=>p.flags).length?`<p class="small muted">Lưu ý khi đọc điểm: ${[...new Set([placement(d),placement(f)].filter(Boolean).flatMap(p=>p.flags))].map(esc).join(' ')}</p>`:''}</div>`;
   /* 2. khả năng học */
@@ -128,7 +142,7 @@ views.report=vReport;
 
 /* ----- dựng lại hồ sơ từ mã kết quả (cô dán mã, hoặc mở từ trang theo dõi của cô) ----- */
 function sFromSummary(o){const st=blank();st.name=o.n||'';
-  const t=x=>x&&{total:x.t,of:x.o,level:x.l,bands:x.b,hours:ENTRY_H[x.l]!=null?ENTRY_H[x.l]:220,dur:x.u,blank:x.k,answers:{}};
+  const t=x=>x&&{total:x.t,of:x.o,level:x.l,bands:x.b,hours:ENTRY_H[x.l]!=null?ENTRY_H[x.l]:220,dur:x.u,blank:x.k,answers:{},loc:x.lc||null,locF:x.lf||null,wr:x.w?{score:x.w.s,of:x.w.of,words:x.w.n}:null,byDay:x.bd||null};
   st.diag=t(o.d);st.final=t(o.f);if(o.p)st.plan=Object.assign({min:40,dpw:6,cls:0},o.p);
   st.region=o.rg||'ha-noi';st.school=Object.assign(blankSchool(),o.sc||{},{grade:o.g||7});st.course=Object.assign({goal:o.gl||'cva',lv:null},o.cs||{});
   if(o.tr&&o.d&&o.tr!==trackFromLevel(o.d.l))st.track=o.tr;
@@ -148,6 +162,7 @@ function bootReport(){const h=location.hash||'';if(!h.startsWith('#bc='))return 
   return true}
 (function(){const st=document.createElement('style');st.textContent=`
 .rp-head h2{margin:.1em 0}.rp-stage{font-weight:700;border-radius:10px;padding:6px 10px;background:#FFF3B0;color:#14303A;display:inline-block}.rp-stage.chot{background:#D6F2DF}
+.rp-up{color:#1a7f3c}.rp-dn{color:#b3261e}
 .rp-sec{margin-top:12px}.rp-sec h3{margin-top:0}.rp-tbl{width:100%;font-size:.92rem}.rp-tbl td,.rp-tbl th{vertical-align:top}.rp-pick td{background:#FFF7CC}
 .rp-kv{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px}
 .rp-kv li{display:flex;justify-content:space-between;gap:10px;border:2px solid var(--line,#dde);border-radius:10px;padding:8px 12px}.rp-kv b{white-space:nowrap}
