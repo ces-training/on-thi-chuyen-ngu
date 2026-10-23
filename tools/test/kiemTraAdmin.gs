@@ -23,6 +23,9 @@ function kiemTraAdmin() {
     check('Quản lý KHÔNG tạo được quản lý', call(ql.pin, 'm_staff_add', { name: 'x', role: 'quanly' }).ok === false);
     check('Quản lý KHÔNG khoá được quản lý khác', call(ql.pin, 'm_staff_set', { id: ql2.id, active: false }).ok === false);
     check('Quản lý KHÔNG nâng sale lên quản lý', call(ql.pin, 'm_staff_set', { id: sl.id, role: 'quanly' }).ok === false);
+    check('Gửi lời mời: tài khoản chưa có email thì báo no_email', call(ql.pin, 'm_invite', { id: gv.id }).error === 'no_email');
+    check('Quản lý KHÔNG gửi lời mời thay cho tài khoản quản lý', call(ql.pin, 'm_invite', { id: ql2.id }).ok === false);
+    check('Sale KHÔNG gửi được lời mời', call(sl.pin, 'm_invite', { id: gv.id }).error === 'forbidden');
     check('Quản lý KHÔNG xem được tab Giao tiếp', call(ql.pin, 'm_messages').ok === false);
     var stf = call(ql.pin, 'm_staff');
     check('Danh sách tài khoản: quản lý chỉ sửa được GV/sale', stf.ok && stf.staff.filter(function (x) { return x.id === ql2.id; })[0].canEdit === false && stf.staff.filter(function (x) { return x.id === gv.id; })[0].canEdit === true);

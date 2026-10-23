@@ -142,7 +142,7 @@ var ACT_VI = {
   t_credits: ['Cộng lượt nhận xét chi tiết', 'gói và lượt'], t_paid: ['Bật/tắt gói học', 'gói và lượt'], t_order: ['Đổi trạng thái yêu cầu mua', 'phụ huynh'],
   t_requests: ['Xem phụ huynh đăng ký (có liên hệ)', 'phụ huynh'], t_req_issue: ['Đã thu tiền · cấp mã / cộng lượt', 'gói và lượt'],
   t_req_status: ['Đổi trạng thái phụ huynh đăng ký', 'phụ huynh'], m_overview: ['Xem tổng quan, doanh thu', 'tổng quan'], m_staff: ['Xem danh sách tài khoản', 'tài khoản'],
-  m_staff_add: ['Tạo tài khoản', 'tài khoản'], m_staff_set: ['Sửa tài khoản (khoá, mở, PIN, vai)', 'tài khoản'], m_assign: ['Giao học sinh cho giáo viên', 'học sinh'],
+  m_staff_add: ['Tạo tài khoản', 'tài khoản'], m_invite: ['Gửi lời mời qua email', 'tài khoản'], m_staff_set: ['Sửa tài khoản (khoá, mở, PIN, vai)', 'tài khoản'], m_assign: ['Giao học sinh cho giáo viên', 'học sinh'],
   m_audit: ['Xem nhật ký', 'nhật ký'], m_messages: ['Xem tin nhắn nhân viên gửi học sinh', 'tin nhắn'], pin_sai: ['Đăng nhập bằng PIN sai', 'tài khoản']
 };
 function auditDetail_(a, q, r) {
@@ -157,7 +157,8 @@ function auditDetail_(a, q, r) {
     case 't_override': return q.itemId ? 'câu ' + q.itemId + ' → ' + (q.correct === true ? 'đúng' : q.correct === false ? 'sai' : 'chưa rõ') : q.writingScore != null ? 'điểm bài viết → ' + q.writingScore : q.teacherNote != null ? 'nhận xét: ' + clip_(q.teacherNote, 300) : '';
     case 't_regrade': return 'kết quả mới ' + r.score + '/' + r.total;
     case 't_add': return clip_(q.name, 80) + ' · lớp ' + (q.grade || '') + ' · ' + (Number(q.credits) || 0) + ' lượt → mã ' + r.code;
-    case 'm_staff_add': return clip_(q.name, 80) + ' · ' + (ROLE_VI[q.role] || q.role) + ' → ' + r.id;
+    case 'm_staff_add': return clip_(q.name, 80) + ' · ' + (ROLE_VI[q.role] || q.role) + ' → ' + r.id + (r.mailed ? ' · đã gửi lời mời tới ' + r.email : '');
+    case 'm_invite': return 'gửi lời mời tới ' + r.email;
     case 'm_staff_set': return [q.active != null ? (q.active ? 'mở lại' : 'khoá') : '', q.resetPin ? 'cấp PIN mới' : '', q.role ? 'đổi vai thành ' + (ROLE_VI[q.role] || q.role) : ''].filter(String).join(' · ');
     case 'm_assign': return 'học sinh ' + q.code + ' → ' + (q.teacher || 'bỏ giao');
     case 't_list': case 's_list': return (r.students || []).length + ' học sinh';
@@ -238,7 +239,8 @@ function staffRoute_(a, q, me) {
     case 's_list': return sList_();
     case 'm_overview': return mOverview_();
     case 'm_staff': return mStaff_(me);
-    case 'm_staff_add': return mStaffAdd_(q.name, q.role, q.email, me);
+    case 'm_staff_add': return mStaffAdd_(q.name, q.role, q.email, me, q.invite);
+    case 'm_invite': return mInvite_(q.id, me);
     case 'm_staff_set': return mStaffSet_(q.id, q, me);
     case 'm_messages': return mMessages_();
     case 'm_assign': return mAssign_(q.code, q.teacher);
@@ -258,7 +260,7 @@ function mStaff_(me) {
 }
 /* quản lý chỉ tạo, sửa tài khoản giáo viên và sale; tài khoản quản lý do Admin tạo */
 function canManage_(me, role) { return me.role === 'admin' ? role !== 'admin' : (role === 'giaovien' || role === 'sale'); }
-function mStaffAdd_(name, role, email, me) {
+function mStaffAdd_(name, role, email, me, invite) {
   name = clip_(String(name || '').trim(), 80);
   if (!name) throw new Error('no_name');
   if (!ROLE_VI[role] || role === 'admin') throw new Error('bad_role');
@@ -269,7 +271,45 @@ function mStaffAdd_(name, role, email, me) {
     id = (role === 'giaovien' ? 'GV' : role === 'sale' ? 'SL' : 'QL') + ('0' + n).slice(-2) + Math.floor(Math.random() * 90 + 10);
     insert_('staff', { id: id, name: name, role: role, pinHash: hash_(pin), active: true, created: now_(), email: clip_(email, 120) });
   });
-  return { ok: true, id: id, pin: pin }; // PIN chỉ hiện một lần
+  var mailed = false;
+  var mailError = '';
+  if (invite && isEmail_(email)) { try { sendInvite_({ name: name, role: role, email: String(email).trim() }, me); mailed = true; } catch (e) { mailError = String(e && e.message || e); } }
+  return { ok: true, id: id, pin: pin, mailed: mailed, mailError: mailError, email: mailed ? String(email).trim() : '' }; // PIN chỉ hiện một lần, không gửi qua email
+}
+function isEmail_(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(e || '').trim()); }
+/* Thư mời vào bảng quản trị: chỉ có lời mời và link; mã PIN người tạo gửi riêng (Zalo, trực tiếp), không nằm trong thư */
+var STAFF_URL = 'https://ces-training.github.io/on-thi-chuyen-ngu/quan-ly/';
+var ROLE_JOB = {
+  quanly: 'xem tổng quan và doanh thu, giao học sinh cho giáo viên, xử lý phụ huynh đăng ký, tạo tài khoản giáo viên và sale, xem nhật ký thao tác của giáo viên và sale.',
+  giaovien: 'theo dõi tiến độ, bài làm và ảnh bài giấy của các học sinh được giao cho anh/chị; sửa chấm hoặc cho máy chấm lại; nhắn tin trả lời học sinh.',
+  sale: 'xử lý phụ huynh đăng ký, cấp mã học sinh, cộng lượt nhận xét chi tiết và bật gói học sau khi gia đình đã thanh toán.'
+};
+function sendInvite_(st, me) {
+  var roleVi = ROLE_VI[st.role] || st.role;
+  MailApp.sendEmail({ to: st.email, name: 'Chuyên Anh 14 Ngày', replyTo: teacherEmail_() || undefined,
+    subject: 'Mời anh/chị tham gia Bảng quản trị Chuyên Anh 14 Ngày (' + roleVi + ')',
+    body: [
+      'Chào ' + st.name + ',', '',
+      (me && me.role !== 'admin' ? me.name : 'Ban quản lý chương trình') + ' đã tạo cho anh/chị tài khoản ' + roleVi + ' trên Bảng quản trị của chương trình Chuyên Anh 14 Ngày.', '',
+      'Với vai ' + roleVi + ', anh/chị sẽ ' + (ROLE_JOB[st.role] || ''), '',
+      'Cách đăng nhập:',
+      '1. Mở ' + STAFF_URL,
+      '2. Nhập mã PIN 8 ký tự của anh/chị. Mã PIN được gửi riêng (qua Zalo hoặc trực tiếp), không nằm trong thư này. Nếu chưa nhận được, anh/chị trả lời thư này.', '',
+      'Lưu ý bảo mật:',
+      '- Mỗi người một mã PIN riêng, không chia sẻ cho người khác. Mọi thao tác trên trang đều được ghi lại theo tài khoản.',
+      '- Nếu nghi lộ mã, báo ngay để được cấp mã mới.',
+      '- Trang có thông tin của học sinh và phụ huynh: không chụp màn hình hay chép dữ liệu gửi ra ngoài.', '',
+      'Nếu anh/chị không chờ thư này, xin bỏ qua.', '',
+      'Chuyên Anh 14 Ngày'
+    ].join('\n') });
+}
+function mInvite_(id, me) {
+  var r = find_('staff', 'id', id);
+  if (!r) throw new Error('no_staff');
+  if (me && !canManage_(me, r.role)) throw new Error('forbidden');
+  if (!isEmail_(r.email)) return { ok: false, error: 'no_email' };
+  sendInvite_({ name: r.name, role: r.role, email: String(r.email).trim() }, me);
+  return { ok: true, mailed: true, email: String(r.email).trim() };
 }
 function mStaffSet_(id, q, me) {
   return withLock_(function () {
