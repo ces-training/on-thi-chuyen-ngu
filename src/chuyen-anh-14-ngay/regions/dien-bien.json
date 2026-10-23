@@ -86,6 +86,12 @@
     "used": true,
     "basis": "Dự đoán theo công văn 3119/SGDĐT-GDTrH (14/10/2025) của Sở GD&ĐT Điện Biên áp dụng kỳ thi 2026 (qua tuyensinh247): 120 phút, trắc nghiệm kết hợp tự luận, gồm kiến thức ngôn ngữ + Nghe hiểu + Đọc hiểu + Viết; khung 5 phần của đề chuyên Tiếng Trung cùng sở (Nghe, Ngữ âm, Từ vựng-ngữ pháp, Đọc, Viết) củng cố dự đoán thứ tự phần. Không tìm được đề chuyên Anh Điện Biên năm nào (2021–2026) nên số câu, điểm từng phần và dạng nghe/viết chỉ là ước lượng theo mẫu đề chuyên có nghe của tỉnh lân cận (Sơn La). Tỉnh không sáp nhập.",
     "confidence": "trung bình",
+    "gaps": [
+     "Không tìm được đề chuyên Anh Điện Biên năm nào (kể cả 2026) trên các trang tổng hợp, trang Sở (dienbien.edu.vn) hay báo; không có bài phân tích.",
+     "Văn bản gốc CV 3119/SGDĐT-GDTrH và CV 1338/SGDĐT-GDMNPT chưa đọc được – có thể ghi biểu điểm từng kỹ năng.",
+     "Chưa rõ dạng nghe (điền từ/trắc nghiệm, số câu, cách phát), dạng và số từ bài viết, số câu từng phần, độ khó.",
+     "Thời lượng môn chuyên các năm trước 2026 (có phải 150 phút rồi đổi sang 120 không)."
+    ],
     "speaking": false,
     "evidence": [
      {
@@ -264,6 +270,12 @@
    "used": true,
    "basis": "Dự đoán theo công văn 3119/SGDĐT-GDTrH (14/10/2025) của Sở GD&ĐT Điện Biên áp dụng kỳ thi 2026 (qua tuyensinh247): 120 phút, trắc nghiệm kết hợp tự luận, gồm kiến thức ngôn ngữ + Nghe hiểu + Đọc hiểu + Viết; khung 5 phần của đề chuyên Tiếng Trung cùng sở (Nghe, Ngữ âm, Từ vựng-ngữ pháp, Đọc, Viết) củng cố dự đoán thứ tự phần. Không tìm được đề chuyên Anh Điện Biên năm nào (2021–2026) nên số câu, điểm từng phần và dạng nghe/viết chỉ là ước lượng theo mẫu đề chuyên có nghe của tỉnh lân cận (Sơn La). Tỉnh không sáp nhập.",
    "confidence": "trung bình",
+   "gaps": [
+    "Không tìm được đề chuyên Anh Điện Biên năm nào (kể cả 2026) trên các trang tổng hợp, trang Sở (dienbien.edu.vn) hay báo; không có bài phân tích.",
+    "Văn bản gốc CV 3119/SGDĐT-GDTrH và CV 1338/SGDĐT-GDMNPT chưa đọc được – có thể ghi biểu điểm từng kỹ năng.",
+    "Chưa rõ dạng nghe (điền từ/trắc nghiệm, số câu, cách phát), dạng và số từ bài viết, số câu từng phần, độ khó.",
+    "Thời lượng môn chuyên các năm trước 2026 (có phải 150 phút rồi đổi sang 120 không)."
+   ],
    "speaking": false,
    "evidence": [
     {

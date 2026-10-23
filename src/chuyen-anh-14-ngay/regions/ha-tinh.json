@@ -92,6 +92,12 @@
     "used": true,
     "basis": "Dự đoán theo đề thật 2026 của Sở Hà Tĩnh (Hà Tĩnh không sáp nhập, một đề duy nhất): springboard.vn đăng đề chuyên Anh Hà Tĩnh 2026-2027 và xác nhận khung 4 section mỗi section 5 điểm (Listening, Grammar and Lexical Items, Reading, Writing), 'giữ khung đánh giá rất ổn định' so với 2025-2026; essay 2026 yêu cầu khoảng 250 từ. Hướng dẫn Sở 2024 và 2025 xác nhận bài 150 phút 'kết hợp trắc nghiệm với tự luận, trong đó có kỹ năng nghe'. Số câu và dạng từng part chưa đọc được trực tiếp (file PDF đề trên springboard không mở được) nên lấy theo khuôn đề HSG Tiếng Anh 12 của chính Sở Hà Tĩnh 2024-2025 (cùng tên section, cùng 5 điểm/section, cùng dạng bài) có điều chỉnh bớt số câu cho đề lớp 10. Thang 20 điểm quy về 10 khi xét tuyển (thủ khoa 2026 đạt 8,42).",
     "confidence": "trung bình",
+    "gaps": [
+     "Chưa đọc trực tiếp được đề chuyên Anh Hà Tĩnh 2026 hay 2025 (PDF springboard 'Dề-Chuyên-Anh-Hà-Tĩnh-2025-2026.pdf' và thư mục Google Drive 2026 không mở được qua WebFetch) — số câu, điểm từng part là ước theo khuôn đề HSG 12 cùng Sở",
+     "Số lần nghe, dạng từng part nghe của đề chuyên 10 chưa xác nhận",
+     "Chưa rõ Section Writing có phần mô tả biểu đồ như đề HSG 12 hay chỉ viết lại câu + essay",
+     "Chưa có đề 2022–2024 để kiểm tra độ ổn định khung đề"
+    ],
     "speaking": false,
     "evidence": [
      {
@@ -320,6 +326,12 @@
    "used": true,
    "basis": "Dự đoán theo đề thật 2026 của Sở Hà Tĩnh (Hà Tĩnh không sáp nhập, một đề duy nhất): springboard.vn đăng đề chuyên Anh Hà Tĩnh 2026-2027 và xác nhận khung 4 section mỗi section 5 điểm (Listening, Grammar and Lexical Items, Reading, Writing), 'giữ khung đánh giá rất ổn định' so với 2025-2026; essay 2026 yêu cầu khoảng 250 từ. Hướng dẫn Sở 2024 và 2025 xác nhận bài 150 phút 'kết hợp trắc nghiệm với tự luận, trong đó có kỹ năng nghe'. Số câu và dạng từng part chưa đọc được trực tiếp (file PDF đề trên springboard không mở được) nên lấy theo khuôn đề HSG Tiếng Anh 12 của chính Sở Hà Tĩnh 2024-2025 (cùng tên section, cùng 5 điểm/section, cùng dạng bài) có điều chỉnh bớt số câu cho đề lớp 10. Thang 20 điểm quy về 10 khi xét tuyển (thủ khoa 2026 đạt 8,42).",
    "confidence": "trung bình",
+   "gaps": [
+    "Chưa đọc trực tiếp được đề chuyên Anh Hà Tĩnh 2026 hay 2025 (PDF springboard 'Dề-Chuyên-Anh-Hà-Tĩnh-2025-2026.pdf' và thư mục Google Drive 2026 không mở được qua WebFetch) — số câu, điểm từng part là ước theo khuôn đề HSG 12 cùng Sở",
+    "Số lần nghe, dạng từng part nghe của đề chuyên 10 chưa xác nhận",
+    "Chưa rõ Section Writing có phần mô tả biểu đồ như đề HSG 12 hay chỉ viết lại câu + essay",
+    "Chưa có đề 2022–2024 để kiểm tra độ ổn định khung đề"
+   ],
    "speaking": false,
    "evidence": [
     {

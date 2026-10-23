@@ -28,6 +28,13 @@
     "used": false,
     "basis": "Dự đoán theo điểm chung của hai tỉnh cũ: Tuyên Quang 2024 (môn chuyên 150 phút; 'Môn Tiếng Anh chuyên thi tự luận kết hợp trắc nghiệm') và Hà Giang 2024 (bài chuyên 150 phút; 'Hình thức thi: Tự luận, riêng môn Tiếng Anh được kết hợp giữa hình thức tự luận với trắc nghiệm'). Sở mới (trụ sở Tuyên Quang) năm 2026 ra chung đề, thi môn chuyên 27–28/5/2026 (QĐ 555/QĐ-UBND; CV 1133/SGDĐT-QLCL chưa đọc được) nên 150 phút + trắc nghiệm kết hợp tự luận gần như chắc; không thi nghe là suy đoán vì không văn bản nào nhắc. Dạng bài và số câu cụ thể là mẫu chung vùng, chưa có đề thật đối chiếu. Đề thi thử 'chuyên Hà Giang 2020' trên doctailieu là đề do trang tự biên (50 câu trắc nghiệm kiểu đề tốt nghiệp THPT), không dùng để suy cấu trúc.",
     "confidence": "thấp",
+    "gaps": [
+     "Không tìm được đề chuyên Anh Tuyên Quang hay Hà Giang năm nào (2019–2026) ở dạng văn bản hay ảnh; không có bài phân tích; trang trường không tìm thấy.",
+     "CV 1133/SGDĐT-QLCL (08/4/2026) hướng dẫn hình thức thi, cấu trúc đề của sở mới chưa đọc được – nguồn tốt nhất để xác nhận thời gian và cấu trúc 2026.",
+     "Chưa xác định có nghe không (dự đoán không), dạng và độ dài bài viết, độ khó.",
+     "Chưa rõ 2026 hai trường chuyên dùng chung một đề chuyên Anh hay không (QĐ 555 chỉ nói mỗi môn một đề).",
+     "Dạng bài và số câu trong predicted là ước lượng theo mẫu vùng."
+    ],
     "speaking": false,
     "evidence": [
      {
@@ -179,6 +186,13 @@
    "used": false,
    "basis": "Dự đoán theo điểm chung của hai tỉnh cũ: Tuyên Quang 2024 (môn chuyên 150 phút; 'Môn Tiếng Anh chuyên thi tự luận kết hợp trắc nghiệm') và Hà Giang 2024 (bài chuyên 150 phút; 'Hình thức thi: Tự luận, riêng môn Tiếng Anh được kết hợp giữa hình thức tự luận với trắc nghiệm'). Sở mới (trụ sở Tuyên Quang) năm 2026 ra chung đề, thi môn chuyên 27–28/5/2026 (QĐ 555/QĐ-UBND; CV 1133/SGDĐT-QLCL chưa đọc được) nên 150 phút + trắc nghiệm kết hợp tự luận gần như chắc; không thi nghe là suy đoán vì không văn bản nào nhắc. Dạng bài và số câu cụ thể là mẫu chung vùng, chưa có đề thật đối chiếu. Đề thi thử 'chuyên Hà Giang 2020' trên doctailieu là đề do trang tự biên (50 câu trắc nghiệm kiểu đề tốt nghiệp THPT), không dùng để suy cấu trúc.",
    "confidence": "thấp",
+   "gaps": [
+    "Không tìm được đề chuyên Anh Tuyên Quang hay Hà Giang năm nào (2019–2026) ở dạng văn bản hay ảnh; không có bài phân tích; trang trường không tìm thấy.",
+    "CV 1133/SGDĐT-QLCL (08/4/2026) hướng dẫn hình thức thi, cấu trúc đề của sở mới chưa đọc được – nguồn tốt nhất để xác nhận thời gian và cấu trúc 2026.",
+    "Chưa xác định có nghe không (dự đoán không), dạng và độ dài bài viết, độ khó.",
+    "Chưa rõ 2026 hai trường chuyên dùng chung một đề chuyên Anh hay không (QĐ 555 chỉ nói mỗi môn một đề).",
+    "Dạng bài và số câu trong predicted là ước lượng theo mẫu vùng."
+   ],
    "speaking": false,
    "evidence": [
     {

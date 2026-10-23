@@ -115,6 +115,7 @@ def build_exam(raw, key, label, warnings, slug):
             P["sections"] = Q["sections"]
         if Q.get("minutes") and not P.get("minutes"): P["minutes"] = Q["minutes"]
         pred = {"used": use, "basis": dc.get("basis"), "confidence": dc.get("confidence"),
+                "gaps": dc.get("gaps") or [],
                 "speaking": any((x.get("note") or "").lower().startswith("thi nói") for x in Q["sections"]),
                 "evidence": [{k3: e.get(k3) for k3 in ("tinh_cu", "truong", "nam", "url", "loai")} for e in dc.get("evidence") or [] if e.get("url")]}
     paper = {"map": tier(P.get("difficulty")), "label": f"đề chuyên Anh {label}", "ac_add": 2.5, "ac_cap": 10,

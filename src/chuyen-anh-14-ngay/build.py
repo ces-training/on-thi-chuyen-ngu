@@ -146,10 +146,32 @@ pv = re.sub(r"<title>(.*?)</title>", r"<title>Xem trước cho giáo viên · \1
 (repo / "chuyen-anh-14-ngay" / "xem-truoc.html").write_text(pv, encoding="utf-8")
 print("built", repo / "chuyen-anh-14-ngay" / "xem-truoc.html")
 
+# ---- bảng "Đề dự đoán" cho giáo viên: độ tin cậy, lý do, nguồn (học sinh chỉ thấy nhãn "Đề dự đoán") ----
+def pred_html():
+    from html import escape as E
+    rows = []
+    for slug, r in REG.items():
+        items = [(r.get("name", slug), (r.get("paper") or {}).get("predicted"))] + [(u.get("name"), (u.get("paper") or {}).get("predicted")) for u in r.get("uni") or []]
+        for name, Q in items:
+            if not Q: continue
+            st = "Theo thông báo của sở" if Q.get("used") and Q.get("confidence") == "cao" else "Đề dự đoán" if Q.get("used") else "Chưa có đề, dùng gói chung"
+            src = " · ".join(f'<a href="{E(e["url"])}" target="_blank" rel="noopener">{E(" ".join(str(x) for x in [e.get("loai"), e.get("tinh_cu"), e.get("nam")] if x))}</a>' for e in Q.get("evidence") or [])
+            gaps = "".join(f"<li>{E(g)}</li>" for g in Q.get("gaps") or [])
+            rank = {"cao": 0, "trung bình": 1, "thấp": 2}.get(Q.get("confidence"), 3)
+            rows.append((0 if Q.get("used") else 1, rank, name, f'<tr><td><b>{E(name)}</b><br><span class="pd-st">{st}</span></td><td><b>{E(Q.get("confidence") or "—")}</b></td>'
+                        f'<td>{E(Q.get("basis") or "")}{f"<details><summary>Còn thiếu, cần mở tay</summary><ul>{gaps}</ul></details>" if gaps else ""}</td><td class="pd-src">{src}</td></tr>'))
+    rows.sort(key=lambda x: x[:3])
+    return ('<p>Học sinh và phụ huynh chỉ thấy nhãn <b>"Đề dự đoán"</b> (hoặc "Theo thông báo của sở", "Chưa có đề"). Độ tin cậy và lý do chỉ hiện ở đây.</p>'
+            '<ul class="small"><li><b>cao</b>: văn bản cấu trúc đề hoặc đề chính thức của sở mới.</li><li><b>trung bình</b>: đề, văn bản của chính sở các năm gần, nhưng chưa đọc được đủ số câu từng phần.</li>'
+            '<li><b>thấp</b>: chỉ có đề của một tỉnh cũ (không phải tỉnh đặt trụ sở sở mới) hoặc chỉ có văn bản chung. Khi không có đề thật nào, trang không dựng bảng dạng bài mà dùng gói chung.</li></ul>'
+            '<div class="tbl-wrap"><table class="pd-tbl"><thead><tr><th>Nơi</th><th>Độ tin cậy</th><th>Vì sao</th><th>Nguồn đã đọc</th></tr></thead><tbody>'
+            + "".join(x[3] for x in rows) + '</tbody></table></div>')
+PRED_HTML = pred_html()
+
 # ---- trang của cô ----
 themes = json.dumps([{"day": d["day"], "theme": d.get("theme_vi", "")} for d in days], ensure_ascii=False)
 co_tpl = (here.parent / "co" / "template.html").read_text(encoding="utf-8")
-co = co_tpl.replace("/*__BRAND_CSS__*/", brand).replace("__API_URL__", api).replace("__THEMES__", themes)
+co = co_tpl.replace("<!--__PRED__-->", PRED_HTML).replace("/*__BRAND_CSS__*/", brand).replace("__API_URL__", api).replace("__THEMES__", themes)
 (repo / "co").mkdir(exist_ok=True)
 (repo / "co" / "index.html").write_text(app_look(co), encoding="utf-8")
 print("built", repo / "co" / "index.html")
@@ -219,7 +241,7 @@ def national_html():
     h = markdown.markdown(t, extensions=["tables"])
     return re.sub(r"(https?://[^\s<]+)", r'<a href="\1" target="_blank" rel="noopener">Đọc bài gốc</a>', h).replace("<strong>URL:</strong>", "<strong>Nguồn:</strong>")
 tdata = {"national": national_html(), "list": RLIST, "fmt": FMT, "updated": datetime.date.today().strftime("%d/%m/%Y"),
-         "regions": {k: {kk: v.get(kk) for kk in TINH_KEYS} for k, v in REG.items() if k != "ha-noi"}}
+         "regions": {k: {kk: v.get(kk) for kk in TINH_KEYS} for k, v in REG.items() if k != "ha-noi"}, "pred_html": PRED_HTML}
 # thông tin chi tiết từng sở cho tab "Thông tin thi" của trang học sinh (tải khi cần)
 (repo / "chuyen-anh-14-ngay" / "regions-info.json").write_text(json.dumps(tdata, ensure_ascii=False), encoding="utf-8")
 print("built regions-info.json", len(REG) - 1, "sở có dữ liệu")

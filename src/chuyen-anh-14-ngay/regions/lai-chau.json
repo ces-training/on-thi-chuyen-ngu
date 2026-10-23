@@ -25,6 +25,12 @@
     "used": false,
     "basis": "Dự đoán theo quy định của Trường THPT chuyên Lê Quý Đôn Lai Châu (thông báo 13/4/2026: môn chuyên 150 phút, tự luận kết hợp trắc nghiệm khách quan, hệ số 2) và kế hoạch UBND tỉnh. Đã xác định có đề thật 2026 (VietJack, 7 trang ảnh + đáp án) nhưng không đọc được nội dung nên chưa ghi được phần nào; dạng bài và số câu trong predicted là mẫu chung của vùng, không phải từ đề. Tỉnh không sáp nhập.",
     "confidence": "thấp",
+    "gaps": [
+     "Đề chuyên Anh 2026 có thật trên VietJack nhưng ở dạng ảnh; cần người mở trang và đọc 7 ảnh để ghi cấu trúc (phần, số câu, nghe, bài viết) – đây là việc ưu tiên nhất cho sở này.",
+     "Chưa biết có nghe không, dạng/độ dài bài viết, độ khó.",
+     "Không tìm được đề các năm 2022–2025; không có bài báo/phân tích đề chuyên Anh Lai Châu.",
+     "Dạng bài và số câu trong predicted là ước lượng theo mẫu vùng."
+    ],
     "speaking": false,
     "evidence": [
      {
@@ -132,6 +138,12 @@
    "used": false,
    "basis": "Dự đoán theo quy định của Trường THPT chuyên Lê Quý Đôn Lai Châu (thông báo 13/4/2026: môn chuyên 150 phút, tự luận kết hợp trắc nghiệm khách quan, hệ số 2) và kế hoạch UBND tỉnh. Đã xác định có đề thật 2026 (VietJack, 7 trang ảnh + đáp án) nhưng không đọc được nội dung nên chưa ghi được phần nào; dạng bài và số câu trong predicted là mẫu chung của vùng, không phải từ đề. Tỉnh không sáp nhập.",
    "confidence": "thấp",
+   "gaps": [
+    "Đề chuyên Anh 2026 có thật trên VietJack nhưng ở dạng ảnh; cần người mở trang và đọc 7 ảnh để ghi cấu trúc (phần, số câu, nghe, bài viết) – đây là việc ưu tiên nhất cho sở này.",
+    "Chưa biết có nghe không, dạng/độ dài bài viết, độ khó.",
+    "Không tìm được đề các năm 2022–2025; không có bài báo/phân tích đề chuyên Anh Lai Châu.",
+    "Dạng bài và số câu trong predicted là ước lượng theo mẫu vùng."
+   ],
    "speaking": false,
    "evidence": [
     {

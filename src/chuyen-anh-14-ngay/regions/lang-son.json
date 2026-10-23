@@ -25,6 +25,12 @@
     "used": false,
     "basis": "Dự đoán theo văn bản tỉnh (QĐ 389/QĐ-UBND 2026: 3 bài chung Toán, Văn, Tiếng Anh + 1 bài chuyên; Tiếng Anh chung 60 phút trắc nghiệm kết hợp tự luận) và đề tham khảo Tiếng Anh chung 2026 của Sở (ngữ âm 4, trắc nghiệm 8, word formation 4, cloze 6, đọc hiểu…) vì không tìm được đề chuyên Anh Lạng Sơn năm nào (2019–2026) trên các trang tổng hợp, trang Sở hay báo. Tỉnh không sáp nhập. Dạng bài và số câu trong predicted là mẫu chung vùng miền núi phía Bắc không thi nghe; chỉ dạng word formation, cloze, đọc hiểu có cơ sở gián tiếp từ đề chung.",
     "confidence": "thấp",
+    "gaps": [
+     "Không tìm được đề chuyên Anh Chu Văn An Lạng Sơn năm nào (2019–2026), kể cả dạng ảnh; không có bài báo/phân tích đề chuyên.",
+     "Thời gian làm bài môn chuyên 2026 do Sở quy định riêng (chưa đọc được văn bản Sở; lượt trước ghi 150 phút).",
+     "Chưa xác định có nghe hay không, dạng và độ dài bài viết, độ khó.",
+     "Dạng bài, số câu trong predicted là ước lượng theo mẫu vùng; cần thay bằng đề thật khi có."
+    ],
     "speaking": false,
     "evidence": [
      {
@@ -123,6 +129,12 @@
    "used": false,
    "basis": "Dự đoán theo văn bản tỉnh (QĐ 389/QĐ-UBND 2026: 3 bài chung Toán, Văn, Tiếng Anh + 1 bài chuyên; Tiếng Anh chung 60 phút trắc nghiệm kết hợp tự luận) và đề tham khảo Tiếng Anh chung 2026 của Sở (ngữ âm 4, trắc nghiệm 8, word formation 4, cloze 6, đọc hiểu…) vì không tìm được đề chuyên Anh Lạng Sơn năm nào (2019–2026) trên các trang tổng hợp, trang Sở hay báo. Tỉnh không sáp nhập. Dạng bài và số câu trong predicted là mẫu chung vùng miền núi phía Bắc không thi nghe; chỉ dạng word formation, cloze, đọc hiểu có cơ sở gián tiếp từ đề chung.",
    "confidence": "thấp",
+   "gaps": [
+    "Không tìm được đề chuyên Anh Chu Văn An Lạng Sơn năm nào (2019–2026), kể cả dạng ảnh; không có bài báo/phân tích đề chuyên.",
+    "Thời gian làm bài môn chuyên 2026 do Sở quy định riêng (chưa đọc được văn bản Sở; lượt trước ghi 150 phút).",
+    "Chưa xác định có nghe hay không, dạng và độ dài bài viết, độ khó.",
+    "Dạng bài, số câu trong predicted là ước lượng theo mẫu vùng; cần thay bằng đề thật khi có."
+   ],
    "speaking": false,
    "evidence": [
     {

@@ -38,11 +38,12 @@ function cutTableHTML(schools){
   if(!rows.length)return '<p class="muted">Chưa có dữ liệu trường.</p>';
   return `<div class="tbl-wrap"><table class="ix-tbl"><thead><tr><th>Trường</th><th>Lớp</th>${ys.map(y=>`<th class="n">${y}</th>`).join('')}</tr></thead><tbody>${rows.map(({s,c})=>`<tr><td><b>${esc(s.name)}</b>${s.old_province?`<br><span class="small muted">${esc(s.old_province)}</span>`:''}</td><td>${esc(c.lang)}${c.admit_by_english?'<br><span class="small muted">xét bằng điểm Anh</span>':''}</td>${ys.map(y=>{const v=(c.cut||{})[y],sc=(c.scale||{})[y];return `<td class="n">${v==null?'—':fN(v)+(sc?`<span class="small muted">/${sc}</span>`:'')}</td>`}).join('')}</tr>${c.note?`<tr class="ix-note"><td></td><td colspan="${ys.length+1}"><details><summary class="small">Ghi chú về số liệu</summary><span class="small muted">${esc(c.note)}</span></details></td></tr>`:''}`).join('')}</tbody></table></div><p class="small muted">Điểm chuẩn ghi theo thang của từng năm; năm đổi công thức thì không so trực tiếp được.</p>`}
 const CONF_VI={'cao':'cao','trung bình':'trung bình','thấp':'thấp'};
+/* học sinh, phụ huynh chỉ thấy nhãn; độ tin cậy, lý do và nguồn nằm ở trang của cô và bản xem trước cho giáo viên */
 function predHTML(Q){if(!Q)return '';
-  const head=!Q.used?`<p><b>Chưa có đề chuyên Anh công khai.</b> Tớ đã tìm đề các năm trước (cả của các tỉnh cũ nếu sở mới gộp từ nhiều tỉnh) nhưng chưa đủ để dựng khung đề, nên chưa ghi bảng dạng bài. Dưới đây là những gì đã biết.</p>`
-    :Q.confidence==='cao'?`<p><b>Cấu trúc theo văn bản, đề của sở</b>.</p>`
-    :`<p><b>Cấu trúc dự đoán</b> · độ tin cậy <b>${esc(Q.confidence||'')}</b>. Sở chưa công bố cấu trúc đề chính thức; tớ suy ra từ đề, văn bản các năm trước của sở và các tỉnh cũ nay gộp vào.</p>`;
-  return `<div class="ix-pred">${head}${Q.used&&Q.basis?`<details class="small"><summary>Vì sao tớ suy ra như vậy</summary><p>${esc(Q.basis)}</p></details>`:''}${(Q.evidence||[]).length?`<p class="small"><b>Nguồn đã đọc:</b> ${Q.evidence.map(e=>`<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc([e.loai==='đề thật'?'đề':e.loai,e.truong||e.tinh_cu,e.nam].filter(Boolean).join(' '))}</a>`).join(' · ')}</p>`:''}</div>`}
+  const t=!Q.used?`<b>Chưa có đề chuyên Anh công khai.</b> Sở chưa đăng đề hay cấu trúc đề chuyên Anh; tớ chưa đủ thông tin để dự đoán khung đề.`
+    :Q.confidence==='cao'?`<b>Cấu trúc theo thông báo của sở.</b> Sở chưa đăng đề mẫu.`
+    :`<b>Đề dự đoán.</b> Sở chưa công bố cấu trúc đề chuyên Anh; khung dưới đây tớ dự đoán từ đề các năm trước${(REG().merged_from||[]).length>1?' của các tỉnh cũ nay thuộc sở':''}.`;
+  return `<div class="ix-pred"><p>${t}</p></div>`}
 function paperCardHTML(P,FMT){if(!P)return '';const sec=P.sections||[];
   return predHTML(P.predicted)+`<div class="ix-kpis">${P.minutes?`<span><b>${P.minutes}</b> phút</span>`:''}<span>Nghe: <b>${P.has_listening==null?'—':P.has_listening?'có':'không'}</b></span>${P.essay_words?`<span>Bài viết <b>~${P.essay_words}</b> từ</span>`:''}${P.difficulty?`<span>Độ khó khoảng <b>${esc(P.difficulty)}</b></span>`:''}</div>
    ${P.difficulty_evidence?`<p class="small">${esc(P.difficulty_evidence)}</p>`:''}

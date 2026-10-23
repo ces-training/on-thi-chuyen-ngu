@@ -43,6 +43,13 @@
     "used": false,
     "basis": "Không có đề thật hay văn bản cấu trúc chi tiết. Chỉ chắc được khung: kỳ thi chuyên chung 2026 của sở mới (26–28/6/2026, hai điểm thi Phan Ngọc Hiển 712 thí sinh và chuyên Bạc Liêu 557 thí sinh): Tiếng Anh chuyên 150 phút sáng 28/6, thang 10 lẻ 0,25, hệ số 2, 'các bài thi chuyên là tự luận, môn thi chuyên Tiếng Anh có thêm phần nghe' (tuyensinh247 trích kế hoạch 2026 của Sở Cà Mau; Cà Mau cũ là tỉnh đặt trụ sở sở mới và đã dùng mô tả này từ 2025). Các dạng bài còn lại suy từ nghĩa 'tự luận' (thí sinh viết đáp án: word form, điền từ, viết lại câu, bài viết) và từ dạng chung của đề chuyên Anh các tỉnh miền Tây; không có bằng chứng riêng của Cà Mau/Bạc Liêu. Bạc Liêu cũ: không tìm được mô tả hay đề (KH 32/KH-UBND 2025 chỉ có lịch thi dạng ảnh).",
     "confidence": "thấp",
+    "gaps": [
+     "Không tìm được đề chuyên Anh Phan Ngọc Hiển (Cà Mau cũ) và chuyên Bạc Liêu (Bạc Liêu cũ) năm nào 2021–2025, cũng không có đề 2026 của sở mới (Springboard liệt kê 'Cà Mau' trong tuyển tập đề chính thức 2026 nhưng chưa gắn link; hoatieu/doctailieu/2048.vn/VUS chỉ có đề Tiếng Anh chung; cổng Sở Cà Mau không thấy đăng đề chuyên).",
+     "Chưa biết dạng và số câu phần nghe, điểm từng phần, dạng và độ dài bài viết; chưa rõ 'tự luận' có loại trừ hoàn toàn câu trắc nghiệm không.",
+     "Bạc Liêu cũ: không có mô tả đề chuyên Anh nào (KH 32/KH-UBND 2025 trên thuvienphapluat chỉ có lịch thi dạng ảnh); điểm chuẩn 74,25 năm 2024 cho thấy công thức/thang khác Cà Mau cũ.",
+     "Sở Cà Mau chưa công bố cấu trúc đề chuyên 2027 (tính đến 23/10/2026).",
+     "Chưa ước được CEFR."
+    ],
     "speaking": false,
     "evidence": [
      {
@@ -177,6 +184,13 @@
    "used": false,
    "basis": "Không có đề thật hay văn bản cấu trúc chi tiết. Chỉ chắc được khung: kỳ thi chuyên chung 2026 của sở mới (26–28/6/2026, hai điểm thi Phan Ngọc Hiển 712 thí sinh và chuyên Bạc Liêu 557 thí sinh): Tiếng Anh chuyên 150 phút sáng 28/6, thang 10 lẻ 0,25, hệ số 2, 'các bài thi chuyên là tự luận, môn thi chuyên Tiếng Anh có thêm phần nghe' (tuyensinh247 trích kế hoạch 2026 của Sở Cà Mau; Cà Mau cũ là tỉnh đặt trụ sở sở mới và đã dùng mô tả này từ 2025). Các dạng bài còn lại suy từ nghĩa 'tự luận' (thí sinh viết đáp án: word form, điền từ, viết lại câu, bài viết) và từ dạng chung của đề chuyên Anh các tỉnh miền Tây; không có bằng chứng riêng của Cà Mau/Bạc Liêu. Bạc Liêu cũ: không tìm được mô tả hay đề (KH 32/KH-UBND 2025 chỉ có lịch thi dạng ảnh).",
    "confidence": "thấp",
+   "gaps": [
+    "Không tìm được đề chuyên Anh Phan Ngọc Hiển (Cà Mau cũ) và chuyên Bạc Liêu (Bạc Liêu cũ) năm nào 2021–2025, cũng không có đề 2026 của sở mới (Springboard liệt kê 'Cà Mau' trong tuyển tập đề chính thức 2026 nhưng chưa gắn link; hoatieu/doctailieu/2048.vn/VUS chỉ có đề Tiếng Anh chung; cổng Sở Cà Mau không thấy đăng đề chuyên).",
+    "Chưa biết dạng và số câu phần nghe, điểm từng phần, dạng và độ dài bài viết; chưa rõ 'tự luận' có loại trừ hoàn toàn câu trắc nghiệm không.",
+    "Bạc Liêu cũ: không có mô tả đề chuyên Anh nào (KH 32/KH-UBND 2025 trên thuvienphapluat chỉ có lịch thi dạng ảnh); điểm chuẩn 74,25 năm 2024 cho thấy công thức/thang khác Cà Mau cũ.",
+    "Sở Cà Mau chưa công bố cấu trúc đề chuyên 2027 (tính đến 23/10/2026).",
+    "Chưa ước được CEFR."
+   ],
    "speaking": false,
    "evidence": [
     {

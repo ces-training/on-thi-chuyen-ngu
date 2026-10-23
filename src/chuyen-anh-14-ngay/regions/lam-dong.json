@@ -32,6 +32,13 @@
     "used": false,
     "basis": "Không có đề thật hay văn bản cấu trúc đọc được. Dự đoán chỉ dựa trên mô tả gián tiếp: (1) tuyensinh247 mô tả đề chuyên Anh Thăng Long (Lâm Đồng cũ – tỉnh đặt trụ sở sở mới) 'kết hợp trắc nghiệm và tự luận', và Thông báo 116 (2/2025) của Sở Lâm Đồng ghi môn chuyên 150 phút, cấu trúc đề theo Công văn 1763/SGDĐT-GDTrH 10/10/2024 'hướng dẫn cấu trúc đề thi vào lớp 10 chuyên từ năm học 2025-2026' (file .docx, công cụ không đọc được); (2) Công văn hướng dẫn tuyển sinh 4/2024 của Sở Đắk Nông: môn Tiếng Anh 'kết hợp trắc nghiệm và tự luận', chuyên 150 phút, có bài thi nói 5 phút sáng hôm sau; (3) bài luật (luatminhkhue) tóm tắt phương án 2026 của Lâm Đồng: môn chuyên 150 phút 'tự luận hoặc thực hành', điểm xét tuyển = Toán + Văn + Anh + môn chuyên (chuyên hệ số 2 hoặc thang 20). Vì cả hai mô tả cũ đều nói 'trắc nghiệm + tự luận', dự đoán đề gồm trắc nghiệm ngữ pháp/từ vựng/đọc hiểu cộng phần tự luận (word form, viết lại câu, bài viết). Chưa có bằng chứng về phần nghe nên has_listening để null. Thang 20 giữ theo lượt trước (điểm chuẩn /50 = 3 môn chung thang 10 + chuyên 20, tương đương chuyên thang 10 × 2) – cần xác minh.",
     "confidence": "thấp",
+    "gaps": [
+     "Công văn 1763/SGDĐT-GDTrH (10/10/2024) và Thông báo thay đổi cấu trúc một số môn thi chuyên từ 2025-2026 (13/2/2025) của Sở Lâm Đồng vẫn chỉ có dạng .docx trên lamdong.edu.vn, WebFetch trả về dữ liệu nhị phân – đây là nguồn chắc nhất, cần người tải và đọc thủ công.",
+     "Không tìm được đề chuyên Anh nào của Thăng Long/Bảo Lộc (Lâm Đồng cũ), Trần Hưng Đạo (Bình Thuận cũ), Nguyễn Chí Thanh (Đắk Nông cũ) 2021–2025, cũng không có đề chuyên Anh 2026 của sở mới (Springboard liệt kê 'Lâm Đồng' trong tuyển tập 2026 nhưng chưa gắn link).",
+     "Chưa biết đề có phần nghe hay không, có thi nói hay không (chỉ Đắk Nông cũ 2024 có thi nói), số câu, điểm từng phần, độ dài bài viết, thang điểm chính thức (10 hay 20).",
+     "Quyết định 375/QĐ-SGDĐT (Đắk Nông, 6/4/2023) và Công văn 429/SGDĐT-QLCLGD (Bình Thuận, 17/2/2025) có thể chứa cấu trúc đề chuyên của hai tỉnh cũ – chưa đọc được.",
+     "Chưa ước được CEFR."
+    ],
     "speaking": false,
     "evidence": [
      {
@@ -221,6 +228,13 @@
    "used": false,
    "basis": "Không có đề thật hay văn bản cấu trúc đọc được. Dự đoán chỉ dựa trên mô tả gián tiếp: (1) tuyensinh247 mô tả đề chuyên Anh Thăng Long (Lâm Đồng cũ – tỉnh đặt trụ sở sở mới) 'kết hợp trắc nghiệm và tự luận', và Thông báo 116 (2/2025) của Sở Lâm Đồng ghi môn chuyên 150 phút, cấu trúc đề theo Công văn 1763/SGDĐT-GDTrH 10/10/2024 'hướng dẫn cấu trúc đề thi vào lớp 10 chuyên từ năm học 2025-2026' (file .docx, công cụ không đọc được); (2) Công văn hướng dẫn tuyển sinh 4/2024 của Sở Đắk Nông: môn Tiếng Anh 'kết hợp trắc nghiệm và tự luận', chuyên 150 phút, có bài thi nói 5 phút sáng hôm sau; (3) bài luật (luatminhkhue) tóm tắt phương án 2026 của Lâm Đồng: môn chuyên 150 phút 'tự luận hoặc thực hành', điểm xét tuyển = Toán + Văn + Anh + môn chuyên (chuyên hệ số 2 hoặc thang 20). Vì cả hai mô tả cũ đều nói 'trắc nghiệm + tự luận', dự đoán đề gồm trắc nghiệm ngữ pháp/từ vựng/đọc hiểu cộng phần tự luận (word form, viết lại câu, bài viết). Chưa có bằng chứng về phần nghe nên has_listening để null. Thang 20 giữ theo lượt trước (điểm chuẩn /50 = 3 môn chung thang 10 + chuyên 20, tương đương chuyên thang 10 × 2) – cần xác minh.",
    "confidence": "thấp",
+   "gaps": [
+    "Công văn 1763/SGDĐT-GDTrH (10/10/2024) và Thông báo thay đổi cấu trúc một số môn thi chuyên từ 2025-2026 (13/2/2025) của Sở Lâm Đồng vẫn chỉ có dạng .docx trên lamdong.edu.vn, WebFetch trả về dữ liệu nhị phân – đây là nguồn chắc nhất, cần người tải và đọc thủ công.",
+    "Không tìm được đề chuyên Anh nào của Thăng Long/Bảo Lộc (Lâm Đồng cũ), Trần Hưng Đạo (Bình Thuận cũ), Nguyễn Chí Thanh (Đắk Nông cũ) 2021–2025, cũng không có đề chuyên Anh 2026 của sở mới (Springboard liệt kê 'Lâm Đồng' trong tuyển tập 2026 nhưng chưa gắn link).",
+    "Chưa biết đề có phần nghe hay không, có thi nói hay không (chỉ Đắk Nông cũ 2024 có thi nói), số câu, điểm từng phần, độ dài bài viết, thang điểm chính thức (10 hay 20).",
+    "Quyết định 375/QĐ-SGDĐT (Đắk Nông, 6/4/2023) và Công văn 429/SGDĐT-QLCLGD (Bình Thuận, 17/2/2025) có thể chứa cấu trúc đề chuyên của hai tỉnh cũ – chưa đọc được.",
+    "Chưa ước được CEFR."
+   ],
    "speaking": false,
    "evidence": [
     {

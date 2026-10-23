@@ -44,7 +44,8 @@ function pvBuild(k){
   return st}
 function pvApply(){S=pvBuild(PV.sc);saveLocal();GATE_MIN=false;CUR_DAY=null;pvSave();go(VIEW==='catalog'?'catalog':'start')}
 
-const PV_CSS=`
+const PV_CSS=`.pd-tbl{border-collapse:collapse;width:100%;font-size:.95rem}.pd-tbl th,.pd-tbl td{border-bottom:1px solid var(--line);padding:8px;vertical-align:top;text-align:left}.pd-tbl td:nth-child(3){width:58%;line-height:1.55}.pd-tbl td:nth-child(4){width:22%}.pd-st{font-size:.85rem;color:var(--muted)}.pd-src a{display:inline-block;margin:0 4px 4px 0}
+
 .pv-bar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:10px 16px;background:#14303A;color:#fff;border-top:4px solid #FFD23F;font-size:.92rem;box-shadow:0 -4px 0 rgba(0,0,0,.12)}
 .pv-bar label{display:flex;align-items:center;gap:6px;font-weight:600}
 .pv-bar select{font:inherit;font-size:.9rem;border-radius:8px;border:2px solid #FFD23F;padding:4px 6px;background:#fff;color:#14303A;max-width:62vw}
@@ -160,13 +161,14 @@ function pvPackHTML(){const P=C.local_pack||{};const plan=localPlan();const RG=R
     return pvGen(B)};
   return `<div class="card pv-head"><p class="eyebrow">Gói bù theo đề từng sở</p><h2>Dạng bài riêng của đề ${esc(RG.name)}</h2><p class="small">Đang xem theo khu vực <b>${esc(RG.name)}</b> (đổi khu vực ở thanh trên để xem lịch của sở khác). Dạng được chọn: ${(RG.pack||[]).map(f=>esc(LP_NAME[f])).join(', ')}.</p><ul class="pv-ul small">${sched}</ul></div>`+
    Object.keys(P).map(f=>pvSec(`${esc(LP_NAME[f]||f)} (${P[f].length} bài)${(RG.pack||[]).includes(f)?' · sở này dùng':''}`,P[f].map((B,i)=>`<div class="pv-part"><h4>Bài ${i+1} · ${esc(B.theme||'')}</h4>${blk(f,B)}</div>`).join(''),(RG.pack||[]).includes(f))).join('')}
-function vCatalog(){const tabs=[['diag','Đầu vào']].concat(DAYS.map(d=>['d'+d.day,'B'+d.day])).concat([['final','Đầu ra'],['pack','Dạng riêng theo sở']]);
+function vCatalog(){const tabs=[['diag','Đầu vào']].concat(DAYS.map(d=>['d'+d.day,'B'+d.day])).concat([['final','Đầu ra'],['pack','Dạng riêng theo sở'],['pred','Đề dự đoán']]);
   M().innerHTML=`<section class="pv-cat"><div class="card"><p class="eyebrow">Bản cho giáo viên</p><h2>Toàn bộ nội dung và đáp án</h2>
    <p class="small muted">Mọi câu hỏi trên web, bài giấy, game và bài nghe của từng buổi, kèm đáp án và giải thích đúng như học sinh thấy. Bấm từng mục để mở, hoặc dùng nút In để in hay lưu PDF.</p>
    <div class="pv-chips" role="tablist">${tabs.map(([k,t])=>`<button type="button" class="pv-chip" data-k="${k}" aria-selected="${k===PV_CAT}">${t}${k[0]==='d'&&k!=='diag'?`<small>${esc(DAYS[+k.slice(1)-1].theme_vi)}</small>`:''}</button>`).join('')}</div>
    <div class="row"><button class="btn ghost" type="button" id="pvAll">Mở hết các mục</button><button class="btn ghost" type="button" id="pvPrint">In trang này</button></div></div>
    <div id="pvBody"></div></section>`;
-  const show=()=>{$('#pvBody').innerHTML=PV_CAT==='diag'?pvTestHTML('diag'):PV_CAT==='final'?pvTestHTML('final'):PV_CAT==='pack'?pvPackHTML():pvDay(+PV_CAT.slice(1));
+  const show=()=>{$('#pvBody').innerHTML=PV_CAT==='diag'?pvTestHTML('diag'):PV_CAT==='final'?pvTestHTML('final'):PV_CAT==='pack'?pvPackHTML():PV_CAT==='pred'?'<div class="card" id="pvPred"><p class="muted">Đang tải…</p></div>':pvDay(+PV_CAT.slice(1));
+    if(PV_CAT==='pred')loadInfo().then(D=>{const el=$('#pvPred');if(el)el.innerHTML=`<p class="eyebrow">Chỉ giáo viên thấy</p><h2>Đề dự đoán theo sở: độ tin cậy và lý do</h2>${(D&&D.pred_html)||'<p>Chưa có dữ liệu.</p>'}`});
     document.querySelectorAll('.pv-chip').forEach(b=>b.setAttribute('aria-selected',b.dataset.k===PV_CAT?'true':'false'))};
   M().querySelector('.pv-chips').onclick=e=>{const b=e.target.closest('.pv-chip');if(b){PV_CAT=b.dataset.k;show()}};
   $('#pvAll').onclick=()=>document.querySelectorAll('#pvBody details').forEach(d=>d.open=true);

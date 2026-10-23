@@ -101,6 +101,12 @@
     "used": true,
     "basis": "Dự đoán theo Thông báo cấu trúc đề thi tuyển sinh lớp 10 năm học 2026-2027 của Sở GD&ĐT Gia Lai (mới) – văn bản 2784/TB-SGDĐT ngày 18/5/2026, đăng trên web THPT chuyên Lê Quý Đôn Gia Lai (Quy Nhơn), căn cứ Thông tư 30/2024/TT-BGDĐT và Kế hoạch 2593/KH-SGDĐT 11/5/2026. Đây là cấu trúc chính thức của kỳ thi chung đầu tiên sau sáp nhập (thi 28/6/2026, môn chuyên 150 phút, thang 10) áp dụng cho cả 3 trường chuyên (Hùng Vương, Lê Quý Đôn, Chu Văn An), nên là căn cứ mạnh nhất cho kỳ thi 2027. Thứ tự và tên 4 mục (Listening 2 – Lexico-Grammar 2 – Reading 3 – Writing 3) khớp với mô tả 'đề Anh chuyên Hùng Vương có thêm phần nghe' của Gia Lai cũ 2024. Văn bản không ghi số câu và điểm từng part, nên items để trống; số câu của từng part cần suy từ đề thật 2026 (Springboard liệt kê 'Đề chuyên Anh Gia Lai 2026' nhưng chưa gắn link).",
     "confidence": "cao",
+    "gaps": [
+     "Chưa đọc được đề thật chuyên Anh Gia Lai 2026 (Springboard liệt kê trong 'Tuyển tập đề chính thức chuyên Anh 2026' nhưng chưa có link; hoatieu/VUS chỉ có đề Tiếng Anh chung 2026). Vì vậy chưa biết số câu và điểm từng part, độ dài bức thư, chủ đề luận.",
+     "Không tìm được đề chuyên Anh Bình Định cũ (Lê Quý Đôn, Chu Văn An) các năm 2022–2025 và đề chuyên Anh Hùng Vương 2022–2025 trên tuyensinh247, vndoc, hoatieu, doctailieu, springboard (hoatieu 'Bộ đề chuyên Anh toàn quốc 2025-2026' khóa Pro, không xem được mục lục).",
+     "Thông báo 2784/TB-SGDĐT là cấu trúc cho kỳ thi 2026; Sở chưa ban hành cấu trúc 2027 (tính đến 23/10/2026) – cần kiểm tra lại khi có kế hoạch 2027.",
+     "Mức CEFR B2 là ước lượng theo dạng bài, chưa có đề thật hay nhận xét giáo viên để xác nhận."
+    ],
     "speaking": false,
     "evidence": [
      {
@@ -322,6 +328,12 @@
    "used": true,
    "basis": "Dự đoán theo Thông báo cấu trúc đề thi tuyển sinh lớp 10 năm học 2026-2027 của Sở GD&ĐT Gia Lai (mới) – văn bản 2784/TB-SGDĐT ngày 18/5/2026, đăng trên web THPT chuyên Lê Quý Đôn Gia Lai (Quy Nhơn), căn cứ Thông tư 30/2024/TT-BGDĐT và Kế hoạch 2593/KH-SGDĐT 11/5/2026. Đây là cấu trúc chính thức của kỳ thi chung đầu tiên sau sáp nhập (thi 28/6/2026, môn chuyên 150 phút, thang 10) áp dụng cho cả 3 trường chuyên (Hùng Vương, Lê Quý Đôn, Chu Văn An), nên là căn cứ mạnh nhất cho kỳ thi 2027. Thứ tự và tên 4 mục (Listening 2 – Lexico-Grammar 2 – Reading 3 – Writing 3) khớp với mô tả 'đề Anh chuyên Hùng Vương có thêm phần nghe' của Gia Lai cũ 2024. Văn bản không ghi số câu và điểm từng part, nên items để trống; số câu của từng part cần suy từ đề thật 2026 (Springboard liệt kê 'Đề chuyên Anh Gia Lai 2026' nhưng chưa gắn link).",
    "confidence": "cao",
+   "gaps": [
+    "Chưa đọc được đề thật chuyên Anh Gia Lai 2026 (Springboard liệt kê trong 'Tuyển tập đề chính thức chuyên Anh 2026' nhưng chưa có link; hoatieu/VUS chỉ có đề Tiếng Anh chung 2026). Vì vậy chưa biết số câu và điểm từng part, độ dài bức thư, chủ đề luận.",
+    "Không tìm được đề chuyên Anh Bình Định cũ (Lê Quý Đôn, Chu Văn An) các năm 2022–2025 và đề chuyên Anh Hùng Vương 2022–2025 trên tuyensinh247, vndoc, hoatieu, doctailieu, springboard (hoatieu 'Bộ đề chuyên Anh toàn quốc 2025-2026' khóa Pro, không xem được mục lục).",
+    "Thông báo 2784/TB-SGDĐT là cấu trúc cho kỳ thi 2026; Sở chưa ban hành cấu trúc 2027 (tính đến 23/10/2026) – cần kiểm tra lại khi có kế hoạch 2027.",
+    "Mức CEFR B2 là ước lượng theo dạng bài, chưa có đề thật hay nhận xét giáo viên để xác nhận."
+   ],
    "speaking": false,
    "evidence": [
     {

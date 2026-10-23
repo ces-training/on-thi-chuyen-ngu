@@ -22,7 +22,7 @@ function lpTab(x,v){const t=esc(LP_NAME[x.f]||x.f);if(!v)return t;const self=LP_
   return t+` <span class="pill ${self||v.correct/v.total>=.6?'good':'warn'}">✓${self?(v.checks?' tự chấm '+v.correct+'/'+v.total:' đã nộp'):' '+v.correct+'/'+v.total}</span>`}
 function localIntro(){const RG=REG();if(RG.slug==='ha-noi')return 'Những dạng hay gặp ở đề chuyên Anh Trường THPT Chuyên Ngoại ngữ và nhiều trường chuyên khác, mà đề Sở Hà Nội ít có. Luyện thêm để không bị bất ngờ.';
   if(!RG.cov)return `Sở ${esc(RG.name)} chưa công bố cấu trúc đề chuyên Anh. Tớ chọn những dạng hay gặp nhất trong đề chuyên Anh các tỉnh để cậu không bị bất ngờ.`;
-  if(RG.pred)return `${RG.pred.confidence==='cao'?'Theo văn bản cấu trúc đề của sở':'Theo cấu trúc dự đoán (từ đề, văn bản các năm trước'+(RG.merged_from&&RG.merged_from.length>1?' của các tỉnh cũ':'')+')'}, đề chuyên Anh ${esc(RG.name)} có những dạng này mà khuôn đề Hà Nội ở Bước 3 ít luyện. Mỗi buổi có 1–2 bài, làm sau Bước 3.`;
+  if(RG.pred)return `${RG.pred.confidence==='cao'?'Theo thông báo cấu trúc đề của sở':'Theo đề dự đoán'}, đề chuyên Anh ${esc(RG.name)} có những dạng này mà khuôn đề Hà Nội ở Bước 3 ít luyện. Mỗi buổi có 1–2 bài, làm sau Bước 3.`;
   return `Đề chuyên Anh ${esc(RG.name)} có những dạng này mà khuôn đề Hà Nội ở Bước 3 ít luyện. Mỗi buổi có 1–2 bài, làm sau Bước 3.`}
 function localCardHTML(n){const L=localFor(n);if(!L.length)return '';const r=(S.days[n]||{}).local||{};
   const tabs=L.map((x,i)=>`<button type="button" class="x-tab" data-l="${i}" aria-selected="${i===0}">${lpTab(x,r[x.key])}</button>`).join('');
@@ -95,7 +95,7 @@ function coverageCardHTML(){const RG=REG();const P=C.local_pack||{};
   const rows=RG.cov.map(x=>{const s=ST[x.st]||ST.part;return `<tr><td>${esc(x.label)}</td><td class="num">${x.items||''}</td><td><span class="pill ${s[0]}">${s[1]}</span>${x.why?`<br><span class="small muted">${esc(x.why)}</span>`:''}</td></tr>`}).join('');
   const nP=RG.cov.filter(x=>x.st==='part').length;
   return `<div class="card ix-cov"><h3>Chương trình 14 buổi khớp với đề ${esc(RG.name)} đến đâu?</h3>
-    <p>Tớ so từng phần của đề chuyên Anh ${esc(RG.name)}${RG.pred?(RG.pred.confidence==='cao'?' (theo văn bản cấu trúc đề của sở)':' (cấu trúc dự đoán từ đề, văn bản các năm trước, độ tin cậy '+esc(RG.pred.confidence||'')+')'):''} với những gì cậu sẽ luyện.${nP?` Có ${nP} phần mới luyện một phần: cậu nên làm thêm đề cũ của sở ở dạng đó.`:' Phần nào trong đề cũng có bài luyện tương ứng.'}</p>
+    <p>Tớ so từng phần của đề chuyên Anh ${esc(RG.name)}${RG.pred?(RG.pred.confidence==='cao'?' (theo thông báo cấu trúc đề của sở)':' (đề dự đoán)'):''} với những gì cậu sẽ luyện.${nP?` Có ${nP} phần mới luyện một phần: cậu nên làm thêm đề cũ của sở ở dạng đó.`:' Phần nào trong đề cũng có bài luyện tương ứng.'}</p>
     <div class="tbl-wrap"><table class="ix-tbl"><thead><tr><th>Phần trong đề</th><th>Số câu</th><th>Trong chương trình</th></tr></thead><tbody>${rows}</tbody></table></div>
     ${packLine?`<p><b>Gói dạng bài riêng của đề ${esc(RG.name)}</b> (hiện trong mỗi buổi, ngay sau Bước 3):</p><ul>${packLine}</ul>`:''}
     ${RG.no_listen?`<p class="small">Đề ${esc(RG.name)} không có phần nghe, nên bài nghe trong mỗi buổi là phần tự chọn.</p>`:''}</div>`}

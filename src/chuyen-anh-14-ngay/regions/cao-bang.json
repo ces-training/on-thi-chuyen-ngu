@@ -25,6 +25,12 @@
     "used": false,
     "basis": "Dự đoán theo văn bản của Sở GD&ĐT Cao Bằng và Trường THPT Chuyên Cao Bằng (150 phút, thang 10, hệ số 2, 'kết hợp trắc nghiệm và tự luận', không nhắc phần nghe) vì không tìm được bất kỳ đề chuyên Anh Cao Bằng nào công khai (2021–2026) trên tuyensinh247, hoatieu, vietjack, loigiaihay, thuvienphapluat, springboard, doctailieu, violet, 123docz hay trang trường. Danh sách dạng bài là mẫu chung của đề chuyên các tỉnh miền núi phía Bắc không thi nghe (Thái Nguyên 2026, Phú Thọ); số câu chỉ là ước lượng. Tỉnh không sáp nhập nên không có tỉnh cũ khác để đối chiếu.",
     "confidence": "thấp",
+    "gaps": [
+     "Không tìm được đề chuyên Anh Cao Bằng bất kỳ năm nào (2021–2026) ở dạng văn bản hay ảnh; các trang tổng hợp (hoatieu, vietjack, tuyensinh247, loigiaihay, springboard, doctailieu) chỉ có đề Tiếng Anh chung.",
+     "Chưa xác định có phần nghe hay không (văn bản sở không nhắc; dự đoán không có).",
+     "Chưa biết dạng bài viết (đoạn văn/thư/luận) và số từ.",
+     "Chưa có nhận xét độ khó; các dạng bài và số câu trong predicted chỉ là ước lượng theo mẫu chung của vùng, cần thay bằng đề thật khi có (có thể xin đề từ giáo viên/học sinh Chuyên Cao Bằng)."
+    ],
     "speaking": false,
     "evidence": [
      {
@@ -129,6 +135,12 @@
    "used": false,
    "basis": "Dự đoán theo văn bản của Sở GD&ĐT Cao Bằng và Trường THPT Chuyên Cao Bằng (150 phút, thang 10, hệ số 2, 'kết hợp trắc nghiệm và tự luận', không nhắc phần nghe) vì không tìm được bất kỳ đề chuyên Anh Cao Bằng nào công khai (2021–2026) trên tuyensinh247, hoatieu, vietjack, loigiaihay, thuvienphapluat, springboard, doctailieu, violet, 123docz hay trang trường. Danh sách dạng bài là mẫu chung của đề chuyên các tỉnh miền núi phía Bắc không thi nghe (Thái Nguyên 2026, Phú Thọ); số câu chỉ là ước lượng. Tỉnh không sáp nhập nên không có tỉnh cũ khác để đối chiếu.",
    "confidence": "thấp",
+   "gaps": [
+    "Không tìm được đề chuyên Anh Cao Bằng bất kỳ năm nào (2021–2026) ở dạng văn bản hay ảnh; các trang tổng hợp (hoatieu, vietjack, tuyensinh247, loigiaihay, springboard, doctailieu) chỉ có đề Tiếng Anh chung.",
+    "Chưa xác định có phần nghe hay không (văn bản sở không nhắc; dự đoán không có).",
+    "Chưa biết dạng bài viết (đoạn văn/thư/luận) và số từ.",
+    "Chưa có nhận xét độ khó; các dạng bài và số câu trong predicted chỉ là ước lượng theo mẫu chung của vùng, cần thay bằng đề thật khi có (có thể xin đề từ giáo viên/học sinh Chuyên Cao Bằng)."
+   ],
    "speaking": false,
    "evidence": [
     {

@@ -107,6 +107,12 @@
     "used": true,
     "basis": "Dự đoán theo đề thật Kon Tum 2025 (Sở GD&ĐT Kon Tum, thi 4/6/2025, THPT chuyên Nguyễn Tất Thành): 150 phút, thang 10 = Nghe 2 + Ngữ pháp–từ vựng 3 + Đọc 3 + Viết 2. Đây là đề duy nhất đọc được trong hai tỉnh cũ. Không tìm được đề chuyên Anh Quảng Ngãi cũ (Lê Khiết) năm nào, cũng không đọc được đề chung 2026 của Sở mới (springboard.vn có liệt kê 'Quảng Ngãi' trong tuyển tập đề chuyên Anh 2026-2027 nhưng chưa có trang riêng). Sở mới đặt tại Quảng Ngãi nên đề 2026 và các năm tới nhiều khả năng do bộ phận ra đề Quảng Ngãi cũ chủ trì — cấu trúc thật có thể khác đề Kon Tum; các điểm gần như chắc chắn: 150 phút (QĐ 931/2026, KH 52 Kon Tum 2024, đề Kon Tum 2025), 'trắc nghiệm khách quan kết hợp tự luận' (KH 52 Kon Tum 2024), có viết lại câu và bài viết tự luận. Phần nghe: chắc với Kon Tum, chưa xác nhận với Quảng Ngãi.",
     "confidence": "thấp",
+    "gaps": [
+     "Không tìm được đề chuyên Anh Quảng Ngãi cũ (Lê Khiết) năm nào (doctailieu, hoatieu, 2048.vn chỉ có đề chung 2018–2026); không đọc được đề chung 2026 của Sở mới dù springboard.vn liệt kê có đề 'Quảng Ngãi' 2026-2027",
+     "Chưa xác nhận đề Quảng Ngãi (cũ và mới) có phần nghe — chỉ đề Kon Tum 2025 có nghe",
+     "Hoatieu có mục 'cấu trúc đề thi vào 10 chuyên Quảng Ngãi 2024' nhưng nội dung trong file tải về (Pro), không đọc được",
+     "Chưa có nhận xét báo chí/giáo viên về đề chuyên Anh 2026 của tỉnh mới"
+    ],
     "speaking": false,
     "evidence": [
      {
@@ -314,6 +320,12 @@
    "used": true,
    "basis": "Dự đoán theo đề thật Kon Tum 2025 (Sở GD&ĐT Kon Tum, thi 4/6/2025, THPT chuyên Nguyễn Tất Thành): 150 phút, thang 10 = Nghe 2 + Ngữ pháp–từ vựng 3 + Đọc 3 + Viết 2. Đây là đề duy nhất đọc được trong hai tỉnh cũ. Không tìm được đề chuyên Anh Quảng Ngãi cũ (Lê Khiết) năm nào, cũng không đọc được đề chung 2026 của Sở mới (springboard.vn có liệt kê 'Quảng Ngãi' trong tuyển tập đề chuyên Anh 2026-2027 nhưng chưa có trang riêng). Sở mới đặt tại Quảng Ngãi nên đề 2026 và các năm tới nhiều khả năng do bộ phận ra đề Quảng Ngãi cũ chủ trì — cấu trúc thật có thể khác đề Kon Tum; các điểm gần như chắc chắn: 150 phút (QĐ 931/2026, KH 52 Kon Tum 2024, đề Kon Tum 2025), 'trắc nghiệm khách quan kết hợp tự luận' (KH 52 Kon Tum 2024), có viết lại câu và bài viết tự luận. Phần nghe: chắc với Kon Tum, chưa xác nhận với Quảng Ngãi.",
    "confidence": "thấp",
+   "gaps": [
+    "Không tìm được đề chuyên Anh Quảng Ngãi cũ (Lê Khiết) năm nào (doctailieu, hoatieu, 2048.vn chỉ có đề chung 2018–2026); không đọc được đề chung 2026 của Sở mới dù springboard.vn liệt kê có đề 'Quảng Ngãi' 2026-2027",
+    "Chưa xác nhận đề Quảng Ngãi (cũ và mới) có phần nghe — chỉ đề Kon Tum 2025 có nghe",
+    "Hoatieu có mục 'cấu trúc đề thi vào 10 chuyên Quảng Ngãi 2024' nhưng nội dung trong file tải về (Pro), không đọc được",
+    "Chưa có nhận xét báo chí/giáo viên về đề chuyên Anh 2026 của tỉnh mới"
+   ],
    "speaking": false,
    "evidence": [
     {

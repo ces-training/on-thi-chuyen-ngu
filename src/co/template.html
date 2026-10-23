@@ -42,6 +42,7 @@ tr.click{cursor:pointer}tr.click:hover td{background:var(--agent-tint)}
 .err{color:var(--bad)}
 .code{font-family:var(--f-mono);font-size:1.3rem;font-weight:700;letter-spacing:.08em;background:var(--gold-tint);color:var(--gold-ink);padding:2px 10px;border-radius:8px}
 details summary{cursor:pointer;font-weight:700}
+.pd-tbl{border-collapse:collapse;width:100%;font-size:.95rem}.pd-tbl th,.pd-tbl td{border-bottom:1px solid var(--line,#ddd);padding:8px;vertical-align:top;text-align:left}.pd-tbl td:nth-child(3){width:58%;line-height:1.55}.pd-tbl td:nth-child(4){width:22%}.pd-st{font-size:.85rem;color:var(--muted,#666)}.pd-src a{display:inline-block;margin:0 4px 4px 0}.pd-tbl details summary{font-weight:600;font-size:.9rem}
 </style>
 </head>
 <body>
@@ -53,6 +54,9 @@ details summary{cursor:pointer;font-weight:700}
 </div></header>
 <main>
 <div id="app"></div>
+<details class="card" id="predCard"><summary><h2 style="display:inline">Đề dự đoán theo sở: độ tin cậy và lý do</h2></summary>
+<!--__PRED__-->
+</details>
 </main>
 <script>
 (function(){

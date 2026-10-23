@@ -95,6 +95,12 @@
     "used": true,
     "basis": "Chỉ đọc được một đề thật: đề chính thức chuyên Anh Ninh Thuận cũ 2025 (Sở GD&ĐT Ninh Thuận, khóa 7/6/2025, 120 phút, thang 10, 4 section: Listening 2,5 – Knowledge of Language 3,125 – Reading 1,875 – Writing 2,5). Ninh Thuận không phải tỉnh đặt trụ sở sở mới (sở mới đặt ở Nha Trang, Khánh Hòa cũ), và chưa tìm được đề chuyên Anh Khánh Hòa cũ năm nào hay đề chung 2026 của sở mới, nên dự đoán lấy khung Ninh Thuận 2025 làm nền và điều chỉnh thời gian lên 150 phút theo kỳ thi chung 2026 (môn chuyên chiều 29/5/2026, 150 phút, báo ghi 'hình thức tự luận' – với tiếng Anh hiểu là có phần viết tự luận). Hai điểm gần chắc: có phần nghe (Ninh Thuận cũ đã nghe 20 câu; khối tỉnh miền Trung lân cận như Gia Lai cũng nghe) và có viết lại câu + bài viết. Số câu, điểm từng phần và độ dài bài viết của sở mới có thể khác khung Ninh Thuận.",
     "confidence": "thấp",
+    "gaps": [
+     "Không tìm được đề chuyên Anh Khánh Hòa cũ (Lê Quý Đôn Nha Trang) năm nào 2021–2025 và đề chuyên Anh chung 2026 của sở mới (Springboard liệt kê 'Khánh Hòa' trong tuyển tập 2026 nhưng chưa gắn link; hoatieu/doctailieu/2048.vn/thuvienphapluat chỉ có đề Tiếng Anh chung).",
+     "Sở GD&ĐT Khánh Hòa chưa thấy công bố văn bản cấu trúc đề môn chuyên 2026 hay 2027 (hoatieu có 'đề tham khảo Tiếng Anh 2026-2027' nhưng là đề chung, khóa Pro).",
+     "Chưa rõ đề chuyên Anh 2026 của sở mới có giữ khung 4 section/72 câu kiểu Ninh Thuận hay theo khung Khánh Hòa cũ; thời lượng 150 phút (2026) khác 120 phút của đề Ninh Thuận 2025 nên số câu/độ dài bài viết có thể tăng.",
+     "Mức CEFR B1+ ước từ đề Ninh Thuận, có thể thấp hơn đề của sở mới."
+    ],
     "speaking": false,
     "evidence": [
      {
@@ -268,6 +274,12 @@
    "used": true,
    "basis": "Chỉ đọc được một đề thật: đề chính thức chuyên Anh Ninh Thuận cũ 2025 (Sở GD&ĐT Ninh Thuận, khóa 7/6/2025, 120 phút, thang 10, 4 section: Listening 2,5 – Knowledge of Language 3,125 – Reading 1,875 – Writing 2,5). Ninh Thuận không phải tỉnh đặt trụ sở sở mới (sở mới đặt ở Nha Trang, Khánh Hòa cũ), và chưa tìm được đề chuyên Anh Khánh Hòa cũ năm nào hay đề chung 2026 của sở mới, nên dự đoán lấy khung Ninh Thuận 2025 làm nền và điều chỉnh thời gian lên 150 phút theo kỳ thi chung 2026 (môn chuyên chiều 29/5/2026, 150 phút, báo ghi 'hình thức tự luận' – với tiếng Anh hiểu là có phần viết tự luận). Hai điểm gần chắc: có phần nghe (Ninh Thuận cũ đã nghe 20 câu; khối tỉnh miền Trung lân cận như Gia Lai cũng nghe) và có viết lại câu + bài viết. Số câu, điểm từng phần và độ dài bài viết của sở mới có thể khác khung Ninh Thuận.",
    "confidence": "thấp",
+   "gaps": [
+    "Không tìm được đề chuyên Anh Khánh Hòa cũ (Lê Quý Đôn Nha Trang) năm nào 2021–2025 và đề chuyên Anh chung 2026 của sở mới (Springboard liệt kê 'Khánh Hòa' trong tuyển tập 2026 nhưng chưa gắn link; hoatieu/doctailieu/2048.vn/thuvienphapluat chỉ có đề Tiếng Anh chung).",
+    "Sở GD&ĐT Khánh Hòa chưa thấy công bố văn bản cấu trúc đề môn chuyên 2026 hay 2027 (hoatieu có 'đề tham khảo Tiếng Anh 2026-2027' nhưng là đề chung, khóa Pro).",
+    "Chưa rõ đề chuyên Anh 2026 của sở mới có giữ khung 4 section/72 câu kiểu Ninh Thuận hay theo khung Khánh Hòa cũ; thời lượng 150 phút (2026) khác 120 phút của đề Ninh Thuận 2025 nên số câu/độ dài bài viết có thể tăng.",
+    "Mức CEFR B1+ ước từ đề Ninh Thuận, có thể thấp hơn đề của sở mới."
+   ],
    "speaking": false,
    "evidence": [
     {
