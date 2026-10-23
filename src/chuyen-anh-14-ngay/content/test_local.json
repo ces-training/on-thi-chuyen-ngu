@@ -1,0 +1,532 @@
+{
+ "_note": "Bộ song song cho Bài kiểm tra đầu vào (diagnostic) và đầu ra (final), phần Dạng đề của sở. Cùng khuôn với content/web/local_pack.json (dùng chung renderExam). Hai bộ cùng dạng: cùng điểm ngữ pháp/kỹ năng ở cùng vị trí, khác chủ đề. Phần viết: tự chấm theo rubric 5 mục × 0–2 điểm = 10.",
+ "open_cloze": {
+  "diagnostic": {
+   "format": "open_cloze",
+   "kind": "gap_text",
+   "theme": "Nghệ thuật, trường học",
+   "title_vi": "Điền MỘT từ vào đoạn văn",
+   "intro_vi": "Mỗi chỗ trống điền đúng MỘT từ. Không có lựa chọn cho sẵn.",
+   "tip_vi": "Nhìn hai bên chỗ trống: tính từ trước nó cần giới từ nào, có dấu phẩy thì đại từ quan hệ nào, động từ sau nó ở dạng V3 thì có phải bị động không.",
+   "text": "Two years ago, the walls around Trang's school were grey and boring. Trang, who has always been keen [1] drawing, asked the head teacher whether students could paint them. The head teacher, [2] liked the idea immediately, gave them permission and paid for the paint. A group of twelve students has been working on the project [3] the spring of 2025, and they spend every Friday afternoon on ladders with their brushes. [4] the work is tiring and often messy, nobody wants to give up. Last month, the finished part of the wall [5] shown on local television, and now people from other neighbourhoods come to take photos of it.",
+   "items": [
+    {
+     "answer": "on",
+     "accept": [],
+     "explain_vi": "Cụm cố định **keen on + V-ing**: thích làm gì. __Học tính từ kèm luôn giới từ đi sau nó.__"
+    },
+    {
+     "answer": "who",
+     "accept": [],
+     "explain_vi": "Chỉ người ==The head teacher== và có dấu phẩy hai bên → **who**. __Có dấu phẩy thì không điền that.__"
+    },
+    {
+     "answer": "since",
+     "accept": [],
+     "explain_vi": "==has been working== + mốc thời gian ==the spring of 2025== → **since**. __Khoảng thời gian thì dùng for.__"
+    },
+    {
+     "answer": "Although",
+     "accept": [
+      "Though"
+     ],
+     "explain_vi": "Hai vế trái ý: ==tiring and often messy== nhưng ==nobody wants to give up== → **Although/Though** + mệnh đề."
+    },
+    {
+     "answer": "was",
+     "accept": [],
+     "explain_vi": "Bức tường được chiếu, sau chỗ trống là V3 ==shown== → **bị động: was + V3**. __Chủ ngữ số ít, có Last month nên dùng was.__"
+    }
+   ]
+  },
+  "final": {
+   "format": "open_cloze",
+   "kind": "gap_text",
+   "theme": "Công nghệ, học sinh",
+   "title_vi": "Điền MỘT từ vào đoạn văn",
+   "intro_vi": "Mỗi chỗ trống điền đúng MỘT từ. Không có lựa chọn cho sẵn.",
+   "tip_vi": "Nhìn hai bên chỗ trống: tính từ trước nó cần giới từ nào, có dấu phẩy thì đại từ quan hệ nào, động từ sau nó ở dạng V3 thì có phải bị động không.",
+   "text": "When Khoa first joined his school's robotics club, he knew almost nothing about computers. Now he is proud [1] the small robot that his team has built from old toys and spare parts. Their coach, Ms Hạnh, [2] used to work as an engineer, meets them twice a week after lessons. The team has been preparing for the national competition [3] six months, and they often stay at school until it gets dark. [4] they have had many problems with the robot's arm, they have never thought about giving up. Last week, their design [5] chosen as one of the ten best in the region, and a local newspaper wrote an article about them.",
+   "items": [
+    {
+     "answer": "of",
+     "accept": [],
+     "explain_vi": "Cụm cố định **proud of + danh từ/V-ing**: tự hào về. __Học tính từ kèm luôn giới từ đi sau nó.__"
+    },
+    {
+     "answer": "who",
+     "accept": [],
+     "explain_vi": "Chỉ người ==Ms Hạnh== và có dấu phẩy hai bên → **who**. __Có dấu phẩy thì không điền that.__"
+    },
+    {
+     "answer": "for",
+     "accept": [],
+     "explain_vi": "==has been preparing== + khoảng thời gian ==six months== → **for**. __Mốc thời gian thì dùng since.__"
+    },
+    {
+     "answer": "Although",
+     "accept": [
+      "Though"
+     ],
+     "explain_vi": "Hai vế trái ý: ==many problems== nhưng ==never thought about giving up== → **Although/Though** + mệnh đề."
+    },
+    {
+     "answer": "was",
+     "accept": [],
+     "explain_vi": "Thiết kế được chọn, sau chỗ trống là V3 ==chosen== → **bị động: was + V3**. __Chủ ngữ số ít, có Last week nên dùng was.__"
+    }
+   ]
+  }
+ },
+ "key_word": {
+  "diagnostic": {
+   "format": "key_word",
+   "kind": "transform",
+   "theme": "Hỗn hợp",
+   "title_vi": "Viết lại câu với từ cho sẵn",
+   "intro_vi": "Hoàn thành câu thứ hai sao cho nghĩa giống câu thứ nhất, bắt buộc dùng từ in hoa và KHÔNG đổi từ đó. Viết 2–5 từ (kể cả từ cho sẵn).",
+   "tip_vi": "Trước khi viết, hỏi: câu gốc đang ở thì nào, ai làm hành động? Từ cho sẵn là động từ (PROMISED, OFFERED) thì xem sau nó cần to V hay V-ing.",
+   "items": [
+    {
+     "q": "Someone has broken the window in our classroom.",
+     "word": "BEEN",
+     "start": "The window in our classroom",
+     "end": ".",
+     "answer": "has been broken",
+     "accept": [
+      "has been broken by someone"
+     ],
+     "explain_vi": "Câu gốc ==has broken== → **bị động hiện tại hoàn thành: has been + V3**. __Bỏ by someone vì không rõ ai làm.__"
+    },
+    {
+     "q": "It was such a cold morning that we wore two jumpers.",
+     "word": "SO",
+     "start": "The morning was",
+     "end": "we wore two jumpers.",
+     "answer": "so cold that",
+     "accept": [],
+     "explain_vi": "**such a + adj + N + that** ↔ **so + adj + that**. Sau ==The morning was== chỉ còn tính từ → so cold that."
+    },
+    {
+     "q": "'I'll call you tomorrow,' Lan said to me.",
+     "word": "PROMISED",
+     "start": "Lan",
+     "end": "the next day.",
+     "answer": "promised to call me",
+     "accept": [],
+     "explain_vi": "==I'll call you== là lời hứa → **promise + to V**; you thành **me**. __tomorrow đổi thành the next day đã có sẵn.__"
+    },
+    {
+     "q": "I don't know his phone number, so I can't call him.",
+     "word": "KNEW",
+     "start": "If I",
+     "end": ", I could call him.",
+     "answer": "knew his phone number",
+     "accept": [
+      "knew his number"
+     ],
+     "explain_vi": "Giả định trái với hiện tại → **câu điều kiện loại 2: If + V2, could + V**. ==don't know== thành **knew**."
+    },
+    {
+     "q": "My sister is taller than me.",
+     "word": "AS",
+     "start": "I am",
+     "end": "my sister.",
+     "answer": "not as tall as",
+     "accept": [
+      "not so tall as"
+     ],
+     "explain_vi": "Chị cao hơn tôi, nghĩa là tôi không cao bằng chị → **not as + adj + as**. __Đổi chủ ngữ thì đảo nghĩa so sánh.__"
+    }
+   ]
+  },
+  "final": {
+   "format": "key_word",
+   "kind": "transform",
+   "theme": "Hỗn hợp",
+   "title_vi": "Viết lại câu với từ cho sẵn",
+   "intro_vi": "Hoàn thành câu thứ hai sao cho nghĩa giống câu thứ nhất, bắt buộc dùng từ in hoa và KHÔNG đổi từ đó. Viết 2–5 từ (kể cả từ cho sẵn).",
+   "tip_vi": "Trước khi viết, hỏi: câu gốc đang ở thì nào, ai làm hành động? Từ cho sẵn là động từ (PROMISED, OFFERED) thì xem sau nó cần to V hay V-ing.",
+   "items": [
+    {
+     "q": "They have cancelled the school trip because of the storm.",
+     "word": "BEEN",
+     "start": "The school trip",
+     "end": "because of the storm.",
+     "answer": "has been cancelled",
+     "accept": [
+      "has been canceled",
+      "has been cancelled by them"
+     ],
+     "explain_vi": "Câu gốc ==have cancelled== → **bị động hiện tại hoàn thành: has been + V3**. __Chủ ngữ số ít nên has, bỏ by them.__"
+    },
+    {
+     "q": "It was such an interesting book that I read it twice.",
+     "word": "SO",
+     "start": "The book was",
+     "end": "I read it twice.",
+     "answer": "so interesting that",
+     "accept": [],
+     "explain_vi": "**such a/an + adj + N + that** ↔ **so + adj + that**. Sau ==The book was== chỉ còn tính từ → so interesting that."
+    },
+    {
+     "q": "'I'll help you with your homework,' my brother said to me.",
+     "word": "OFFERED",
+     "start": "My brother",
+     "end": "with my homework.",
+     "answer": "offered to help me",
+     "accept": [],
+     "explain_vi": "==I'll help you== là lời đề nghị giúp → **offer + to V**; you thành **me**. __your homework đổi thành my homework đã có sẵn.__"
+    },
+    {
+     "q": "We don't live near the sea, so we can't go swimming every day.",
+     "word": "LIVED",
+     "start": "If we",
+     "end": ", we could go swimming every day.",
+     "answer": "lived near the sea",
+     "accept": [
+      "lived by the sea",
+      "lived close to the sea"
+     ],
+     "explain_vi": "Giả định trái với hiện tại → **câu điều kiện loại 2: If + V2, could + V**. ==don't live== thành **lived**."
+    },
+    {
+     "q": "This year's exam was easier than last year's.",
+     "word": "AS",
+     "start": "Last year's exam was",
+     "end": "this year's.",
+     "answer": "not as easy as",
+     "accept": [
+      "not so easy as"
+     ],
+     "explain_vi": "Năm nay dễ hơn, nghĩa là năm ngoái không dễ bằng → **not as + adj + as**. __Đổi chủ ngữ thì đảo nghĩa so sánh.__"
+    }
+   ]
+  }
+ },
+ "matching_headings": {
+  "diagnostic": {
+   "format": "matching_headings",
+   "kind": "matching",
+   "theme": "Ẩm thực, gia đình",
+   "title_vi": "Nối tiêu đề với đoạn văn",
+   "intro_vi": "Có 4 đoạn văn và 6 tiêu đề. Chọn tiêu đề phù hợp nhất cho mỗi đoạn; có 2 tiêu đề thừa.",
+   "tip_vi": "Tóm mỗi đoạn bằng một câu tiếng Việt trước khi nhìn tiêu đề. Đoạn nào chắc nhất làm trước, rồi loại dần.",
+   "paragraphs": [
+    "For generations, the evening meal has been the most important moment of the day in many Vietnamese homes. Grandparents, parents and children sat around the same tray of rice, and nobody started eating until the oldest person had picked up their chopsticks.",
+    "Researchers have found that children who often eat with their families tend to choose healthier food, such as vegetables and fish. These meals also give everyone a chance to talk about their day, which helps family members feel closer to one another.",
+    "Sadly, this custom is becoming less common. Parents often work late, teenagers have extra classes in the evening, and when the family does sit down together, many people keep looking at their phones instead of talking.",
+    "The good news is that family meals do not need to happen every day to be useful. Experts suggest choosing two or three evenings a week, turning off the television and asking the children to help prepare one dish."
+   ],
+   "headings": [
+    "A habit that is slowly disappearing",
+    "Good for both health and relationships",
+    "How restaurants are changing their menus",
+    "Small changes that can help",
+    "A tradition with deep roots",
+    "Teaching children to become good cooks"
+   ],
+   "answer": [
+    4,
+    1,
+    0,
+    3
+   ],
+   "explain_vi": "Đoạn 1: ==For generations== → **A tradition with deep roots**. Đoạn 2: món lành mạnh và gần gũi hơn → **Good for both health and relationships**. Đoạn 3: ==less common== → **A habit that is slowly disappearing**. Đoạn 4: vài bữa mỗi tuần → **Small changes that can help**. __Cooks chỉ khớp một chi tiết nhỏ.__"
+  },
+  "final": {
+   "format": "matching_headings",
+   "kind": "matching",
+   "theme": "Môi trường, thành phố",
+   "title_vi": "Nối tiêu đề với đoạn văn",
+   "intro_vi": "Có 4 đoạn văn và 6 tiêu đề. Chọn tiêu đề phù hợp nhất cho mỗi đoạn; có 2 tiêu đề thừa.",
+   "tip_vi": "Tóm mỗi đoạn bằng một câu tiếng Việt trước khi nhìn tiêu đề. Đoạn nào chắc nhất làm trước, rồi loại dần.",
+   "paragraphs": [
+    "Long before air conditioners were invented, people in hot countries planted trees along their streets. In many cities in Asia and Europe, some of the trees that line the oldest roads were planted more than a hundred years ago to give shade to people walking below.",
+    "Today, scientists know that trees do far more than keep the sun off our heads. A street with plenty of trees can be several degrees cooler than one without any. Trees also clean the air, reduce noise from traffic and, according to some studies, even help people feel calmer.",
+    "Unfortunately, city trees are under threat. When roads are widened or new buildings go up, trees are often the first thing to be cut down. Others fall over in storms because their roots have no space to grow under the concrete.",
+    "Ordinary people can do a lot to protect them. In some cities, residents can 'adopt' a tree near their home and water it during dry weeks. Others use free apps to report trees that look sick, so that experts can check them before it is too late."
+   ],
+   "headings": [
+    "How residents can make a difference",
+    "Trees in danger",
+    "The best trees to grow in your garden",
+    "An old answer to the heat",
+    "Benefits beyond shade",
+    "Apps that help families save energy"
+   ],
+   "answer": [
+    3,
+    4,
+    1,
+    0
+   ],
+   "explain_vi": "Đoạn 1: ==Long before air conditioners== → **An old answer to the heat**. Đoạn 2: mát, sạch không khí, bớt ồn → **Benefits beyond shade**. Đoạn 3: ==under threat== → **Trees in danger**. Đoạn 4: nhận chăm cây, báo cây bệnh → **How residents can make a difference**. __Apps chỉ khớp một chi tiết nhỏ.__"
+  }
+ },
+ "gap_text": {
+  "diagnostic": {
+   "format": "gap_text",
+   "kind": "gap_sent",
+   "theme": "Công nghệ, học sinh",
+   "title_vi": "Điền câu vào bài đọc (gapped text)",
+   "intro_vi": "Bài đọc có 5 chỗ trống, mỗi chỗ thiếu MỘT câu. Chọn câu phù hợp trong 6 câu A–F; có 1 câu thừa.",
+   "tip_vi": "Tìm từ ở câu ngay SAU chỗ trống trỏ ngược về câu cần điền: So, Still, It, these, For this reason. Câu đúng phải làm cho những từ đó có nghĩa.",
+   "text": "When Bảo was thirteen, he noticed that his grandfather loved telling stories about the old days, but nobody in the family had time to listen. [1] So he borrowed his mother's phone, bought a cheap microphone and recorded their first conversation at the kitchen table. The result was far from perfect. [2] Still, Bảo uploaded it, and to his surprise, his classmates asked for more. Over the next year, he interviewed a retired bus driver, a woman who had sold flowers in the same market for forty years and a former football coach. [3] Some listeners even send him the names of people he should talk to next. His teachers say the podcast has helped him in several ways. [4] It has also made him much more confident when he speaks in front of the class. However, Bảo admits that the project takes up a lot of his time. [5] For this reason, he now publishes only one episode a month.",
+   "items": [
+    {
+     "answer": 1,
+     "explain_vi": "Sau chỗ trống là ==So he borrowed his mother's phone== → trước đó phải là quyết định của Bảo: **B** (giữ lại những câu chuyện)."
+    },
+    {
+     "answer": 4,
+     "explain_vi": "Trước: ==far from perfect==; sau: ==Still, Bảo uploaded it== → cần câu nói bản ghi kém ở đâu: **E** (tiếng xe, tiếng ấm nước)."
+    },
+    {
+     "answer": 0,
+     "explain_vi": "Sau chỗ trống ==Some listeners even…== → câu trước phải nói về người nghe: **A** (hơn một nghìn người nghe)."
+    },
+    {
+     "answer": 5,
+     "explain_vi": "Trước: ==helped him in several ways==; sau: ==It has ALSO made him== → cần một lợi ích đầu tiên: **F** (biết lắng nghe)."
+    },
+    {
+     "answer": 3,
+     "explain_vi": "Trước: ==takes up a lot of his time==; sau: ==For this reason== → câu nói rõ tốn thời gian: **D**. __C thừa: ông đã ghi âm ngay từ đầu.__"
+    }
+   ],
+   "options": [
+    "Today, more than a thousand people listen to every episode.",
+    "He decided that these stories were too precious to be forgotten.",
+    "His grandfather refused to take part at first.",
+    "Editing a single episode can take him an entire weekend.",
+    "In the background, you can hear motorbikes in the street and a kettle boiling.",
+    "Preparing questions for each guest has taught him to listen carefully."
+   ]
+  },
+  "final": {
+   "format": "gap_text",
+   "kind": "gap_sent",
+   "theme": "Du lịch",
+   "title_vi": "Điền câu vào bài đọc (gapped text)",
+   "intro_vi": "Bài đọc có 5 chỗ trống, mỗi chỗ thiếu MỘT câu. Chọn câu phù hợp trong 6 câu A–F; có 1 câu thừa.",
+   "tip_vi": "Tìm từ ở câu ngay SAU chỗ trống trỏ ngược về câu cần điền: So, Still, It, these, For this reason. Câu đúng phải làm cho những từ đó có nghĩa.",
+   "text": "Last spring, at the age of sixty-eight, Mrs Hoà did something that shocked her whole family: she travelled to Japan on her own. She had dreamed of seeing the cherry blossoms since she was a girl. [1] So, after months of saving, she booked a ten-day trip and started learning a few Japanese phrases. Her first day in Tokyo was not easy. [2] Luckily, a young student noticed that she looked lost and walked with her to the right platform. After that, things went much more smoothly. [3] She now shows these photos to anyone who visits her flat. Mrs Hoà believes that the trip changed her in important ways. [4] It also made her realise that age is not a reason to stop learning. Of course, not every member of her family was pleased. [5] Even so, she is already planning her next adventure: a week in South Korea.",
+   "items": [
+    {
+     "answer": 4,
+     "explain_vi": "Sau chỗ trống là ==So, after months of saving, she booked== → trước đó phải là lý do bà quyết định đi một mình: **E**."
+    },
+    {
+     "answer": 2,
+     "explain_vi": "Trước: ==not easy==; sau: ==she looked lost … the right platform== → cần câu về việc lạc đường: **C** (bản đồ tàu điện)."
+    },
+    {
+     "answer": 5,
+     "explain_vi": "Sau chỗ trống ==these photos== → câu trước phải nhắc tới ảnh: **F** (hơn hai nghìn tấm ảnh)."
+    },
+    {
+     "answer": 0,
+     "explain_vi": "Trước: ==changed her in important ways==; sau: ==It ALSO made her realise== → cần một thay đổi đầu tiên: **A** (dám nói chuyện với người lạ)."
+    },
+    {
+     "answer": 3,
+     "explain_vi": "Trước: ==not every member of her family was pleased==; sau: ==Even so== → cần người trong nhà lo lắng: **D**. __B thừa: không nối được với looked lost hay photos.__"
+    }
+   ],
+   "options": [
+    "Being alone forced her to talk to strangers, which she had always been afraid of.",
+    "Japanese food turned out to be more expensive than she had expected.",
+    "The underground map looked like a bowl of noodles, and she could not read a single sign.",
+    "Her son, in particular, phoned her every evening to check that she was safe.",
+    "She was tired of waiting for someone to go with her.",
+    "She visited five cities and took more than two thousand photos."
+   ]
+  }
+ },
+ "true_false": {
+  "diagnostic": {
+   "format": "true_false",
+   "kind": "mcq",
+   "theme": "Khoa học, động vật",
+   "title_vi": "Đọc hiểu: Đúng, Sai hay Không có thông tin",
+   "intro_vi": "Đọc bài rồi quyết định mỗi câu là True (đúng với bài), False (trái với bài) hay Not Given (bài không nói tới).",
+   "tip_vi": "Với mỗi câu, tìm đúng đoạn trong bài rồi so từng chữ: số lượng (most, only, many), ai làm, vì sao. Bài không nói lý do hay người làm thì chọn Not Given.",
+   "passage": "Clever creatures of the sea\n\nOctopuses are among the most intelligent animals in the ocean, even though they are closely related to snails. An octopus has a large brain, but about two thirds of its nerve cells are found in its eight arms. This means that each arm can, in a way, think for itself: it can touch, taste and react without waiting for instructions from the brain.\n\nOctopuses are also famous for their ability to escape. In 2016, an octopus at an aquarium in New Zealand climbed out of its tank during the night, crossed the floor and slid down a narrow pipe that led to the sea. The staff only realised what had happened the next morning.\n\nIn laboratories, octopuses have learned to open jars to reach the food inside, and some seem to recognise individual people, even squirting water at keepers they do not like. Despite all this, they have very short lives. Most species live for only one or two years, so they have little time to use everything they have learned.",
+   "items": [
+    {
+     "q": "Most of an octopus's nerve cells are not in its brain.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 0,
+     "explain_vi": "==about two thirds of its nerve cells are found in its eight arms== → phần lớn nằm ở tay → **True**."
+    },
+    {
+     "q": "An octopus's arm has to wait for a signal from the brain before it can react.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 1,
+     "explain_vi": "Bài nói ==react without waiting for instructions from the brain== → ngược lại → **False**."
+    },
+    {
+     "q": "The octopus in New Zealand escaped because it was not given enough food.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 2,
+     "explain_vi": "Bài kể cách nó trốn, không nói vì sao → **Not Given**. __Bẫy: food xuất hiện ở đoạn sau, nói về cái lọ.__"
+    },
+    {
+     "q": "Some octopuses appear to be able to tell one person from another.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 0,
+     "explain_vi": "==some seem to recognise individual people== → nhận ra từng người → **True**."
+    },
+    {
+     "q": "Most kinds of octopus live for more than five years.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 1,
+     "explain_vi": "==Most species live for only one or two years== → **False**. __Bài có số liệu thì so đúng con số.__"
+    }
+   ]
+  },
+  "final": {
+   "format": "true_false",
+   "kind": "mcq",
+   "theme": "Nghệ thuật, âm nhạc",
+   "title_vi": "Đọc hiểu: Đúng, Sai hay Không có thông tin",
+   "intro_vi": "Đọc bài rồi quyết định mỗi câu là True (đúng với bài), False (trái với bài) hay Not Given (bài không nói tới).",
+   "tip_vi": "Với mỗi câu, tìm đúng đoạn trong bài rồi so từng chữ: số lượng (most, only, many), ai làm, vì sao. Bài không nói lý do hay người làm thì chọn Not Given.",
+   "passage": "Pianos in public places\n\nWalk through some railway stations in Europe and you might hear something unexpected: a stranger playing the piano. Over the past twenty years, hundreds of old pianos have been placed in stations, parks and shopping centres around the world, often with a simple message painted on them: 'Play me.'\n\nMost of these pianos were given away by families who no longer wanted them. Local artists often decorate them with bright colours before they are put out. Anyone is allowed to play, whether they are a complete beginner or a professional. Some stations have even built a small roof to protect the instrument from the rain.\n\nThe idea has been surprisingly successful. Travellers who would normally rush past each other stop to listen, and sometimes they even sing along. Videos of these moments have been watched millions of times online.\n\nHowever, the pianos do not last for ever. Because they stay outside day and night, most of them go out of tune within a few weeks, and only a few are repaired regularly.",
+   "items": [
+    {
+     "q": "Many public pianos used to belong to families.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 0,
+     "explain_vi": "==Most of these pianos were given away by families== → trước đây là đàn của các gia đình → **True**."
+    },
+    {
+     "q": "Only experienced pianists are allowed to play them.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 1,
+     "explain_vi": "Bài nói ==Anyone is allowed to play … a complete beginner== → ngược lại → **False**."
+    },
+    {
+     "q": "The artists who decorate the pianos are paid by the stations.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 2,
+     "explain_vi": "Bài chỉ nói họ trang trí đàn, không nói ai trả tiền → **Not Given**. __Bẫy: stations có trong bài nhưng nói về mái che.__"
+    },
+    {
+     "q": "People who usually hurry through stations sometimes stop to listen.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 0,
+     "explain_vi": "==Travellers who would normally rush past … stop to listen== → **True**."
+    },
+    {
+     "q": "Most public pianos stay in tune for many months.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 1,
+     "explain_vi": "==most of them go out of tune within a few weeks== → **False**. __So kỹ khoảng thời gian: weeks khác months.__"
+    }
+   ]
+  }
+ },
+ "writing": {
+  "diagnostic": {
+   "theme": "Học sinh, kỳ nghỉ",
+   "prompt_en": "Some people think students should use their summer holidays to take extra classes. Others believe the holidays should be for rest and hobbies. What is your opinion? Write a paragraph of 120–150 words. Give two reasons and at least one example.",
+   "prompt_vi": "Nhiều người nghĩ học sinh nên dùng kỳ nghỉ hè để học thêm. Người khác lại nghĩ kỳ nghỉ là để nghỉ ngơi và làm điều mình thích. Ý kiến của cậu thế nào? Viết một đoạn văn 120–150 từ, nêu hai lý do và ít nhất một ví dụ.",
+   "words": "120–150"
+  },
+  "final": {
+   "theme": "Học sinh, cộng đồng",
+   "prompt_en": "Some people think every student should do volunteer work, for example helping in their neighbourhood or at a local charity. Do you agree or disagree? Write a paragraph of 120–150 words. Give two reasons and at least one example.",
+   "prompt_vi": "Nhiều người nghĩ học sinh nào cũng nên làm tình nguyện, ví dụ giúp đỡ hàng xóm hoặc một tổ chức từ thiện ở địa phương. Cậu đồng ý hay không đồng ý? Viết một đoạn văn 120–150 từ, nêu hai lý do và ít nhất một ví dụ.",
+   "words": "120–150"
+  },
+  "rubric": [
+   {
+    "k": "task",
+    "name_vi": "Đáp ứng đề",
+    "levels": [
+     "0: Lạc đề, hoặc không nói rõ mình đồng ý hay không.",
+     "1: Có ý kiến nhưng chỉ có một lý do, hoặc lý do chung chung, không có ví dụ.",
+     "2: Nêu rõ ý kiến ngay câu đầu, có hai lý do, ít nhất một ví dụ cụ thể (ở trường, ở nhà, một con số)."
+    ]
+   },
+   {
+    "k": "organisation",
+    "name_vi": "Bố cục và liên kết",
+    "levels": [
+     "0: Ý lộn xộn, không có câu mở và câu kết, gần như không có từ nối.",
+     "1: Có câu mở và câu kết nhưng ý còn nhảy cóc; từ nối ít hoặc lặp lại (and, but, so).",
+     "2: Đi đúng trình tự ý kiến → lý do 1 → lý do 2 → kết; từ nối đa dạng, đúng chỗ (Firstly, For example, However, To sum up)."
+    ]
+   },
+   {
+    "k": "vocabulary",
+    "name_vi": "Từ vựng",
+    "levels": [
+     "0: Từ quá đơn giản, lặp nhiều, dùng sai từ khiến người đọc khó hiểu.",
+     "1: Đủ để hiểu; có vài từ hay nhưng còn lặp từ, sai cụm từ hoặc sai chính tả.",
+     "2: Từ đa dạng, đúng chủ đề, có cụm từ tự nhiên (take part in, make friends); hầu như không sai chính tả."
+    ]
+   },
+   {
+    "k": "grammar",
+    "name_vi": "Ngữ pháp",
+    "levels": [
+     "0: Nhiều lỗi cơ bản (chia động từ, thiếu chủ ngữ, sai thì) làm câu khó hiểu.",
+     "1: Chủ yếu là câu đơn; có lỗi nhưng không làm người đọc hiểu sai.",
+     "2: Có cả câu đơn và câu phức (because, if, which, although); chỉ còn vài lỗi nhỏ."
+    ]
+   },
+   {
+    "k": "length",
+    "name_vi": "Độ dài và trình bày",
+    "levels": [
+     "0: Dưới 90 từ hoặc trên 190 từ, hoặc viết thành các gạch đầu dòng.",
+     "1: 90–119 từ hoặc 151–190 từ; hoặc còn lỗi viết hoa, dấu câu.",
+     "2: 120–150 từ, viết thành một đoạn liền mạch, viết hoa và dấu câu đúng."
+    ]
+   }
+  ]
+ }
+}
