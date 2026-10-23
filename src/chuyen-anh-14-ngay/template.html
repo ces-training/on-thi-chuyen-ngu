@@ -1135,6 +1135,7 @@ let YT_P=null;function ytApi(){if(window.YT&&window.YT.Player)return Promise.res
   YT_P=new Promise((res,rej)=>{const prev=window.onYouTubeIframeAPIReady;window.onYouTubeIframeAPIReady=()=>{if(prev)try{prev()}catch(e){}res(window.YT)};const sc=document.createElement('script');sc.src='https://www.youtube.com/iframe_api';sc.onerror=()=>{YT_P=null;rej(new Error('yt'))};document.head.appendChild(sc)});return YT_P}
 const normAns=t=>String(t==null?'':t).toLowerCase().replace(/[’']/g,"'").replace(/[^a-z0-9'\s-]/g,' ').replace(/\s+/g,' ').trim();
 function renderYtListen(box,R,saved,onDone){
+  if(R&&R.paper_pdf!==undefined&&R.exam)return renderCamListen(box,R,saved,onDone);
   const mmss=x=>Math.floor(x/60)+':'+String(Math.round(x%60)).padStart(2,'0');
   const len=R.end&&R.end>R.start?R.end-(R.start||0):0;
   let plays=0,player=null,graded=!!saved;
