@@ -77,6 +77,7 @@ function vExam(){const RG=REG();
       h+=`<div class="card"><h3>Trường và điểm chuẩn lớp chuyên Anh</h3>${cutTableHTML(R.schools_raw||[])}</div>`;
       h+=`<div class="card"><h3>Công thức xét tuyển</h3><p><b>${esc(F.text||'')}</b></p>${F.conditions?`<p class="small">${esc(F.conditions)}</p>`:''}${R.nv_rule?`<p class="small"><b>Nguyện vọng:</b> ${esc(R.nv_rule)}</p>`:''}</div>`;
       h+=`<div class="card"><h3>Đề chuyên Anh</h3>${paperCardHTML(P,FMT)}</div>`;
+      h+=coverageCardHTML();
     }
     h+=`<div class="card"><h3>Thử nhanh 3 câu</h3><p class="small muted">Câu lấy từ buổi 1 của chương trình 14 buổi. Chấm xong có giải thích từng câu.</p>${tasteHTML()}</div>`;
     h+=ctaHTML(RG,best);

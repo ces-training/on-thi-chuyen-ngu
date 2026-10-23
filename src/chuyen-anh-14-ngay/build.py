@@ -28,6 +28,7 @@ media_vi = json.load(open(mv, encoding="utf-8")) if mv.exists() else {}
 au = repo / "chuyen-anh-14-ngay" / "audio" / "manifest.json"
 audio = json.load(open(au, encoding="utf-8")) if au.exists() else None
 C = {"days": days, "tests": tests, "web": web, "media": media, "media_vi": media_vi, "media_listen": media_listen}
+C["local_pack"] = {k: v for k, v in json.load(open(here / "content/web/local_pack.json", encoding="utf-8")).items() if not k.startswith("_")}
 # bài nghe thu âm thật (YouTube nhúng) + câu hỏi riêng theo mức: content/web/real_listen_<mức>.json
 real_listen = {}
 for tr in ("nen", "chuan", "nang"):
@@ -46,8 +47,62 @@ api = json.dumps(os.environ.get("API_URL_OVERRIDE", cfg.get("apiUrl", "")))
 rdir = here / "regions"
 REG = {p.stem: json.load(open(p, encoding="utf-8")) for p in sorted(rdir.glob("*.json")) if not p.name.startswith("_")}
 CALC_KEYS = ["slug", "name", "merged_from", "edition", "exam_md", "papers", "formulas", "m3_label", "exams", "nv2_exam", "nv_rule", "options", "goals", "goal_default", "formula_note"]
+# độ khớp giữa dạng bài trong đề của sở và chương trình 14 buổi (+ gói dạng riêng content/web/local_pack.json)
+FMT_VI = {"sentence_completion": "Trắc nghiệm ngữ pháp, từ vựng", "dialogue_completion": "Hoàn thành hội thoại", "synonym": "Đồng nghĩa", "antonym": "Trái nghĩa",
+  "closest_meaning": "Câu gần nghĩa nhất", "pronunciation": "Phát âm", "stress": "Trọng âm", "cloze": "Đọc điền từ trắc nghiệm", "error_id": "Tìm lỗi sai",
+  "sentence_combining": "Kết hợp câu", "transformation": "Viết lại câu", "open_cloze": "Điền một từ vào đoạn văn", "word_formation": "Cấu tạo từ",
+  "reading_mcq": "Đọc hiểu trắc nghiệm", "matching_headings": "Nối tiêu đề, nối thông tin", "dialogue_order": "Sắp xếp câu, hội thoại", "listening": "Nghe",
+  "key_word": "Viết lại câu với từ cho sẵn", "gap_text": "Điền câu vào bài đọc", "true_false": "Đọc hiểu Đúng/Sai/Không có thông tin",
+  "essay": "Bài luận", "paragraph_writing": "Viết đoạn văn", "guided_writing": "Viết thư, email", "speaking": "Thi nói", "other": "Dạng khác"}
+COV_FULL = {"sentence_completion", "dialogue_completion", "synonym", "antonym", "closest_meaning", "pronunciation", "stress", "cloze", "sentence_combining",
+  "transformation", "word_formation", "reading_mcq", "dialogue_order", "listening"}
+PACK_OF = {"essay": "essay", "paragraph_writing": "essay", "guided_writing": "essay", "gap_text": "gap_text", "true_false": "true_false",
+  "open_cloze": "open_cloze", "key_word": "key_word", "matching_headings": "matching_headings", "speaking": "speaking"}
+PACK_HN = ["essay", "open_cloze", "key_word", "matching_headings"]
+PACK_DEFAULT = ["essay", "open_cloze", "key_word", "gap_text"]
+def sec_kind(x):
+    f, n = x.get("format") or "other", (x.get("note") or "").lower()
+    if f == "other" and re.search(r"speaking|thi nói|nói trực tiếp", n): return "speaking"
+    if f != "listening" and re.search(r"listening|\bnghe\b|bài nói", n): return "listening"
+    return f
+def coverage(r):
+    secs = (r.get("paper") or {}).get("sections") or []
+    if not secs: return None
+    rows, seen = [], {}
+    for x in secs:
+        k = sec_kind(x)
+        if k in seen and k != "other":
+            rows[seen[k]]["items"] = (rows[seen[k]]["items"] or 0) + (x.get("items") or 0) or None; continue
+        n = (x.get("note") or "").lower()
+        if k in COV_FULL: st, why = "full", ""
+        elif k == "error_id": st, why = ("part", "14 buổi luyện tìm lỗi trắc nghiệm; đề sở yêu cầu tự sửa lỗi") if "sửa" in n else ("full", "")
+        elif k in PACK_OF: st, why = "pack", ""
+        else: st, why = "part", "Luyện gián tiếp qua phần ngữ pháp, từ vựng"
+        if k == "paragraph_writing": why = "14 buổi viết đoạn ngắn; gói riêng có bài 150–250 từ"
+        if k == "guided_writing": why = "Luyện qua bài viết trong gói riêng; chưa có bài thư mẫu"
+        if k == "other" and re.search(r"viết|writing", n): why = "Luyện qua bài luận trong gói riêng"
+        lab = FMT_VI.get(k, k)
+        if k == "other":
+            lab = re.split(r"[(:;.,—]", re.sub(r"^[^:]{0,40}:\s*", "", x.get("note") or "") or "Dạng khác")[0].strip()[:48] or "Dạng khác"
+            lab = lab[0].upper() + lab[1:]
+        seen[k] = len(rows); rows.append({"k": k, "label": lab, "items": x.get("items"), "st": st, "why": why})
+    return rows
+def pack_for(r):
+    if r.get("slug") == "ha-noi": return PACK_HN
+    rows = coverage(r)
+    if not rows: return PACK_DEFAULT
+    pri = lambda row: (0 if PACK_OF[row["k"]] == "essay" else 1, -(row["items"] or 0))
+    out = []
+    for row in sorted([x for x in rows if x["k"] in PACK_OF], key=pri):
+        if PACK_OF[row["k"]] not in out: out.append(PACK_OF[row["k"]])
+    return out or PACK_DEFAULT
 def calc_view(r):
     v = {k: r[k] for k in CALC_KEYS if k in r}
+    v["pack"] = pack_for(r)
+    cov = coverage(r)
+    if cov: v["cov"] = cov
+    hl = (r.get("paper") or {}).get("has_listening")
+    if hl is False or (cov and not any(x["k"] == "listening" for x in cov)): v["no_listen"] = True
     v["papers"] = {k: {kk: pv[kk] for kk in ("map", "label", "ac_add", "ac_cap", "ac_label") if kk in pv} for k, pv in r.get("papers", {}).items()}
     if r.get("paper"):
         v["paper"] = {"sections": [{"format": x.get("format"), "items": x.get("items")} for x in r["paper"].get("sections") or []]}
@@ -66,7 +121,7 @@ def app_look(t):
     if "family=Mali" not in t:
         t = t.replace("</head>", FONTS + "\n</head>", 1)
     return t
-body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__COURSE_JS__*/", (here / "course.js").read_text(encoding="utf-8")).replace("/*__MAP_JS__*/", (here / "map.js").read_text(encoding="utf-8")).replace("/*__INFO_JS__*/", (here / "info.js").read_text(encoding="utf-8")).replace("/*__REPORT_JS__*/", (here / "report.js").read_text(encoding="utf-8")).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8") + "\n" + (here / "games2.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
+body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__COURSE_JS__*/", (here / "course.js").read_text(encoding="utf-8")).replace("/*__MAP_JS__*/", (here / "map.js").read_text(encoding="utf-8")).replace("/*__INFO_JS__*/", (here / "info.js").read_text(encoding="utf-8")).replace("/*__REPORT_JS__*/", (here / "report.js").read_text(encoding="utf-8")).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8") + "\n" + (here / "games2.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("/*__LOCAL_JS__*/", (here / "local.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
 page = (
     "<!doctype html>\n<html lang=\"vi\">\n<head>\n<meta charset=\"utf-8\">\n"
     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"

@@ -1,0 +1,937 @@
+{
+ "_note": "Gói dạng bài riêng theo đề từng sở (23/10/2026). Trang chọn dạng theo cấu trúc đề của sở (regions/<slug>.json → paper.sections) và rải vào các buổi 2–13. Mức bài: B1+–B2 (bản Chuẩn). Mỗi khối có cùng định dạng với exam trong content/web/dayNN.json để dùng chung renderExam; riêng essay và speaking có trình hiển thị riêng (local.js).",
+ "gap_text": [
+  {
+   "format": "gap_text",
+   "kind": "gap_sent",
+   "theme": "Môi trường",
+   "title_vi": "Điền câu vào bài đọc (gapped text)",
+   "intro_vi": "Bài đọc có 5 chỗ trống, mỗi chỗ thiếu MỘT câu. Chọn câu phù hợp trong 6 câu A–F; có 1 câu thừa.",
+   "tip_vi": "Đọc câu ngay trước và ngay sau chỗ trống. Câu đúng phải nối được ý cả hai bên: đại từ (this, they, it), từ nối (However, As a result) là manh mối mạnh nhất.",
+   "text": "Five years ago, the small Dutch town of Houten made an unusual decision: cars would no longer be allowed to drive through the town centre. [1] Instead, they now have to use a ring road around the outside of the town. At first, many shop owners were worried. [2] However, the opposite happened. Because the streets became quieter and safer, more families started walking and cycling to the shops. [3] Today, more than half of all trips in the town are made by bike. The decision has also changed the way children grow up. [4] Teachers say that pupils arrive at school more awake and ready to learn. Of course, not everyone is happy. [5] Still, most residents agree that the town is a better place to live than it was before.",
+   "items": [
+    {
+     "answer": 0,
+     "explain_vi": "Câu sau chỗ trống mở đầu bằng ==Instead, they now have to use a ring road== → 'they' là **drivers**, và ring road là đường vòng quanh → **A**."
+    },
+    {
+     "answer": 1,
+     "explain_vi": "Trước: ==shop owners were worried==; sau: ==However, the opposite happened== → cần câu nói chủ cửa hàng sợ điều gì → **B** (ít xe, ít khách)."
+    },
+    {
+     "answer": 2,
+     "explain_vi": "Trước đó nói ==more families started walking and cycling to the shops== → kết quả tốt cho cửa hàng: **C** (doanh số tăng 20%)."
+    },
+    {
+     "answer": 3,
+     "explain_vi": "Trước: ==changed the way children grow up==; sau: ==pupils arrive at school== → câu về trẻ em tự đạp xe đi học: **D**."
+    },
+    {
+     "answer": 4,
+     "explain_vi": "Trước: ==not everyone is happy== → cần một nhóm không vui: **E** (người lớn tuổi khó vào trung tâm). __F là câu thừa: bài không nói gì về sân bay.__"
+    }
+   ],
+   "options": [
+    "Drivers who want to cross the town must go around it.",
+    "They believed that fewer cars would mean fewer customers.",
+    "Some sales even went up by twenty per cent.",
+    "Many of them now ride to school on their own from the age of eight.",
+    "Some older people find it harder to visit the town centre.",
+    "The town also built a new airport for tourists."
+   ]
+  },
+  {
+   "format": "gap_text",
+   "kind": "gap_sent",
+   "theme": "Công nghệ, trường học",
+   "title_vi": "Điền câu vào bài đọc (gapped text)",
+   "intro_vi": "Bài đọc có 5 chỗ trống, mỗi chỗ thiếu MỘT câu. Chọn câu phù hợp trong 6 câu A–F; có 1 câu thừa.",
+   "tip_vi": "Sau khi chọn xong, đọc lại cả đoạn một lượt: câu đúng làm đoạn văn trôi chảy, không lặp ý và không mâu thuẫn.",
+   "text": "When Mai joined a new school in Grade 8, she was the only student in her class who had never learned Korean. [1] Her solution was surprising: she started playing a popular online game with Korean servers. At first, she understood almost nothing in the chat. [2] Slowly, she began to recognise the same phrases again and again, and she wrote them in a notebook. After three months, she could follow most conversations. [3] Researchers are not surprised by stories like Mai's. [4] Games also give players a reason to communicate, which is something textbooks cannot always do. However, experts warn that games are not magic. [5] Mai agrees: she still studies grammar with her teacher twice a week.",
+   "items": [
+    {
+     "answer": 0,
+     "explain_vi": "Trước: Mai là người duy nhất chưa học tiếng Hàn; sau: ==Her solution was surprising== → cần câu nêu vấn đề/quyết tâm của Mai: **A**."
+    },
+    {
+     "answer": 1,
+     "explain_vi": "Trước: ==understood almost nothing==; sau: ==Slowly, she began to recognise== → giai đoạn đầu vất vả: **B** (dịch từng tin nhắn)."
+    },
+    {
+     "answer": 2,
+     "explain_vi": "Trước: Mai theo kịp hội thoại sau 3 tháng → câu nói người khác nhận ra tiến bộ: **C**."
+    },
+    {
+     "answer": 3,
+     "explain_vi": "Trước: ==Researchers are not surprised==; sau: ==Games ALSO give players a reason== → câu trước phải là một lý do khác từ nghiên cứu: **D**."
+    },
+    {
+     "answer": 4,
+     "explain_vi": "Trước: ==games are not magic==; sau: Mai vẫn học ngữ pháp → **E** (thiếu luyện ngữ pháp thì sai mãi). __F thừa.__"
+    }
+   ],
+   "options": [
+    "She was determined to catch up with her classmates quickly.",
+    "She had to use a translation app for every message.",
+    "Her teacher noticed the change before her parents did.",
+    "Studies show that we remember words better when we need them to reach a goal.",
+    "Without grammar practice, players often keep making the same mistakes.",
+    "The game company later closed its Korean servers."
+   ]
+  },
+  {
+   "format": "gap_text",
+   "kind": "gap_sent",
+   "theme": "Ẩm thực, văn hoá",
+   "title_vi": "Điền câu vào bài đọc (gapped text)",
+   "intro_vi": "Bài đọc có 5 chỗ trống, mỗi chỗ thiếu MỘT câu. Chọn câu phù hợp trong 6 câu A–F; có 1 câu thừa.",
+   "tip_vi": "Chú ý từ chỉ thời gian (In the past, Today, Since then) và từ đối lập (But, However): chúng cho biết câu cần điền nói về lúc nào, ý thuận hay ngược.",
+   "text": "For many visitors, the best way to understand a city is through its street food. In Hội An, that food is often cao lầu, a noodle dish found almost nowhere else. [1] Local people say the secret is the water, which traditionally comes from an ancient well in the old town. [2] Since then, families have passed the recipe down from parents to children. [3] Each bowl also contains slices of pork, fresh herbs and crispy pieces of fried dough. But cao lầu is facing a modern problem. [4] Some young cooks have started to experiment with new versions, for example using chicken instead of pork. [5] For now, both kinds of bowl can be found in the town's busy markets.",
+   "items": [
+    {
+     "answer": 0,
+     "explain_vi": "Sau chỗ trống: ==the secret is the water== → câu trước phải nói về điều đặc biệt của món: **A** (sợi mì dai)."
+    },
+    {
+     "answer": 1,
+     "explain_vi": "Sau: ==Since then== → câu trước phải có một mốc thời gian trong quá khứ: **B** (hàng trăm năm trước)."
+    },
+    {
+     "answer": 2,
+     "explain_vi": "Trước: công thức truyền đời; sau: ==Each bowl ALSO contains== → câu về cách làm sợi mì hiện nay: **C**."
+    },
+    {
+     "answer": 3,
+     "explain_vi": "Trước: ==facing a modern problem== → câu nêu vấn đề: **D** (mì công nghiệp vì du lịch)."
+    },
+    {
+     "answer": 4,
+     "explain_vi": "Trước: đầu bếp trẻ thử phiên bản mới → phản ứng của người khác: **E** (đầu bếp lớn tuổi lo mất vị gốc). __F thừa.__"
+    }
+   ],
+   "options": [
+    "What makes it special is the thick, chewy texture of the noodles.",
+    "The dish is said to have been created hundreds of years ago, when the town was a busy port.",
+    "The noodles are still made by hand in only a few kitchens.",
+    "As tourism grows, some restaurants are using cheaper, factory-made noodles.",
+    "Older cooks worry that the original taste might disappear.",
+    "Most tourists prefer to eat in hotel restaurants."
+   ]
+  }
+ ],
+ "true_false": [
+  {
+   "format": "true_false",
+   "kind": "mcq",
+   "theme": "Sức khoẻ",
+   "title_vi": "Đọc hiểu: Đúng, Sai hay Không có thông tin",
+   "intro_vi": "Đọc bài rồi quyết định mỗi câu là True (đúng với bài), False (trái với bài) hay Not Given (bài không nói tới).",
+   "tip_vi": "False là bài nói NGƯỢC lại; Not Given là bài KHÔNG nhắc tới. Đừng dùng hiểu biết của mình để đoán: chỉ dựa vào bài.",
+   "passage": "Why are teenagers always tired?\n\nMany parents complain that their teenage children stay up late and are impossible to wake in the morning. Scientists now believe this is not simply laziness. During puberty, the body starts producing melatonin, the hormone that makes us sleepy, about two hours later than it does in younger children. As a result, most teenagers do not feel tired until around 11 p.m.\n\nThe problem is that school still starts early. In one study in the United States, a school moved its start time from 7.50 to 8.45 a.m. Students slept about 45 minutes longer, and their attendance improved. Teachers also reported that classes were calmer in the morning.\n\nPhones make the situation worse. The blue light from screens can delay melatonin even further. Doctors recommend switching off all devices an hour before bed, although they admit that few teenagers follow this advice.",
+   "items": [
+    {
+     "q": "Scientists think teenagers who stay up late are just being lazy.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 1,
+     "explain_vi": "Bài nói ==Scientists now believe this is NOT simply laziness== → ngược với câu → **False**."
+    },
+    {
+     "q": "Teenagers' bodies make melatonin later than younger children's bodies do.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 0,
+     "explain_vi": "==producing melatonin … about two hours later than … younger children== → **True**."
+    },
+    {
+     "q": "The US school in the study started almost an hour later than before.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 0,
+     "explain_vi": "7.50 → 8.45 là 55 phút, ==gần một tiếng== → **True**."
+    },
+    {
+     "q": "Students' exam results improved after the change.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 2,
+     "explain_vi": "Bài chỉ nói ==attendance improved== và lớp học trật tự hơn, không nhắc điểm thi → **Not Given**. __Bẫy: 'improved' có trong bài nhưng nói về đi học đều.__"
+    },
+    {
+     "q": "Most teenagers switch off their phones an hour before bed.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 1,
+     "explain_vi": "==few teenagers follow this advice== → rất ít em làm vậy → **False**."
+    }
+   ]
+  },
+  {
+   "format": "true_false",
+   "kind": "mcq",
+   "theme": "Khoa học",
+   "title_vi": "Đọc hiểu: Đúng, Sai hay Không có thông tin",
+   "intro_vi": "Đọc bài rồi quyết định mỗi câu là True, False hay Not Given.",
+   "tip_vi": "Gạch chân từ khoá trong câu hỏi (số liệu, tên, thời gian) rồi tìm đúng chỗ đó trong bài. Câu chứa 'all', 'never', 'only' hay là False hoặc Not Given.",
+   "passage": "Reefs that grow back\n\nCoral reefs cover less than one per cent of the ocean floor, yet they are home to about a quarter of all sea creatures. In recent years, warmer seas have caused many corals to lose their colour and die, a process known as bleaching.\n\nIn Indonesia, a team of scientists and local divers has been trying a simple solution. They place small steel frames, shaped like stars, on damaged areas of the seabed and attach living pieces of coral to them. Within four years, one site that had been almost completely dead was covered in coral again. Fish numbers there have returned to normal.\n\nThe method is cheap, and local people can be trained to do it in a few days. However, the scientists stress that it cannot save reefs on its own. If ocean temperatures keep rising, even the new corals will be at risk.",
+   "items": [
+    {
+     "q": "Coral reefs cover a large part of the ocean floor.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 1,
+     "explain_vi": "==less than one per cent of the ocean floor== → phần rất nhỏ → **False**."
+    },
+    {
+     "q": "Bleaching is caused by warmer seas.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 0,
+     "explain_vi": "==warmer seas have caused many corals to lose their colour … known as bleaching== → **True**."
+    },
+    {
+     "q": "The steel frames used in Indonesia are very expensive.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 1,
+     "explain_vi": "==The method is cheap== → **False**."
+    },
+    {
+     "q": "The project was started by the Indonesian government.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 2,
+     "explain_vi": "Bài chỉ nói ==a team of scientists and local divers==, không nói ai khởi xướng hay có chính phủ không → **Not Given**."
+    },
+    {
+     "q": "The scientists believe their method alone can protect reefs in the future.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 1,
+     "explain_vi": "==it cannot save reefs on its own== → **False**."
+    }
+   ]
+  },
+  {
+   "format": "true_false",
+   "kind": "mcq",
+   "theme": "Con người, nghề nghiệp",
+   "title_vi": "Đọc hiểu: Đúng, Sai hay Không có thông tin",
+   "intro_vi": "Đọc bài rồi quyết định mỗi câu là True, False hay Not Given.",
+   "tip_vi": "Câu hỏi thường đi theo thứ tự của bài. Nếu tìm mãi không thấy thông tin cho một câu, nhiều khả năng đó là Not Given.",
+   "passage": "A gap year at home\n\nWhen Lan finished secondary school, she did not go straight to university. Instead, she spent a year working with a charity that teaches swimming to children in her home province. Every year, hundreds of children in the area drown, often in rivers close to their homes.\n\nLan had been a strong swimmer since primary school, but teaching was harder than she expected. Many children were afraid of the water, so she spent the first lessons simply playing games at the edge of the pool. By the end of the year, she had taught more than 120 children to swim.\n\nLan says the experience changed her plans. She had always wanted to study economics, but she has now applied to train as a primary school teacher. Her parents were surprised at first, but they now support her decision.",
+   "items": [
+    {
+     "q": "Lan started university immediately after secondary school.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 1,
+     "explain_vi": "==she did not go straight to university== → **False**."
+    },
+    {
+     "q": "The charity works only in Lan's home province.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 2,
+     "explain_vi": "Bài nói tổ chức dạy bơi ==in her home province==, nhưng không nói có hoạt động ở nơi khác hay không → **Not Given**. __Chữ 'only' là bẫy.__"
+    },
+    {
+     "q": "Lan found teaching easier than she had thought.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 1,
+     "explain_vi": "==teaching was harder than she expected== → **False**."
+    },
+    {
+     "q": "Some children were scared of the water at first.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 0,
+     "explain_vi": "==Many children were afraid of the water== → **True**."
+    },
+    {
+     "q": "Lan's parents still disagree with her new plan.",
+     "options": [
+      "True",
+      "False",
+      "Not Given"
+     ],
+     "answer": 1,
+     "explain_vi": "==they now support her decision== → **False**."
+    }
+   ]
+  }
+ ],
+ "open_cloze": [
+  {
+   "format": "open_cloze",
+   "kind": "gap_text",
+   "theme": "Sở thích",
+   "title_vi": "Điền MỘT từ vào đoạn văn",
+   "intro_vi": "Mỗi chỗ trống điền đúng MỘT từ. Không có lựa chọn cho sẵn.",
+   "tip_vi": "Hỏi: chỗ trống cần loại từ gì? Giới từ đi với động từ/tính từ trước nó (interested IN), mạo từ trước danh từ, đại từ quan hệ (who, which), từ nối (although, because).",
+   "text": "My grandfather has been collecting stamps [1] he was ten years old. He keeps them in more [2] thirty albums, and each one is carefully labelled. What I find amazing is that he knows the story behind almost every stamp. Some come from countries [3] no longer exist, like Yugoslavia. Others were sent [4] him by friends he met while working abroad. [5] he is now eighty, he still visits the post office every week to see if there are any new designs. Last year he gave me one of his albums [6] a birthday present. I was not very interested at first, [7] now I look forward to adding new stamps to it. I think it is one of [8] best presents I have ever received.",
+   "items": [
+    {
+     "answer": "since",
+     "accept": [],
+     "explain_vi": "Hiện tại hoàn thành ==has been collecting== + mốc ==he was ten== → **since**."
+    },
+    {
+     "answer": "than",
+     "accept": [],
+     "explain_vi": "**more than** + số lượng: hơn 30 cuốn."
+    },
+    {
+     "answer": "which",
+     "accept": [
+      "that"
+     ],
+     "explain_vi": "Đại từ quan hệ thay cho ==countries== (vật) làm chủ ngữ → **which/that**."
+    },
+    {
+     "answer": "to",
+     "accept": [],
+     "explain_vi": "**send something to somebody** → were sent **to** him."
+    },
+    {
+     "answer": "Although",
+     "accept": [
+      "Though",
+      "Even though"
+     ],
+     "explain_vi": "Hai vế đối lập: 80 tuổi nhưng vẫn đi bưu điện → **Although**."
+    },
+    {
+     "answer": "as",
+     "accept": [
+      "for"
+     ],
+     "explain_vi": "**as a present**: làm quà (for a present cũng chấp nhận)."
+    },
+    {
+     "answer": "but",
+     "accept": [
+      "yet"
+     ],
+     "explain_vi": "Lúc đầu không thích, giờ thì mong chờ → nối hai ý trái ngược: **but**."
+    },
+    {
+     "answer": "the",
+     "accept": [],
+     "explain_vi": "**one of the + so sánh nhất + danh từ số nhiều**: one of **the** best presents."
+    }
+   ]
+  },
+  {
+   "format": "open_cloze",
+   "kind": "gap_text",
+   "theme": "Môi trường",
+   "title_vi": "Điền MỘT từ vào đoạn văn",
+   "intro_vi": "Mỗi chỗ trống điền đúng MỘT từ. Không có lựa chọn cho sẵn.",
+   "tip_vi": "Sau khi điền, đọc lại cả câu xem đã đúng ngữ pháp chưa: chia động từ, số ít/số nhiều, cụm cố định (take part IN, depend ON).",
+   "text": "Every Sunday morning, a group of students from my school take part [1] a clean-up of the river near our town. The idea came [2] a Grade 9 student called Huy, who was shocked by the amount of plastic he saw while fishing. At first only five people joined him, but news of the project spread quickly [3] social media. Now more [4] fifty volunteers come every week. They collect everything from bottles to old shoes, and [5] month they weigh the rubbish to see how much they have removed. The local council was so impressed that it has [6] the group gloves and bags. Huy says the most important change is not the cleaner river. 'People have started to think twice [7] they throw something away,' he says. 'If everyone did a little, we [8] not need clean-ups at all.'",
+   "items": [
+    {
+     "answer": "in",
+     "accept": [],
+     "explain_vi": "Cụm cố định **take part in**."
+    },
+    {
+     "answer": "from",
+     "accept": [],
+     "explain_vi": "**The idea came from** somebody: ý tưởng đến từ ai."
+    },
+    {
+     "answer": "on",
+     "accept": [
+      "through",
+      "via"
+     ],
+     "explain_vi": "**on social media** (qua mạng xã hội)."
+    },
+    {
+     "answer": "than",
+     "accept": [],
+     "explain_vi": "**more than fifty**."
+    },
+    {
+     "answer": "every",
+     "accept": [
+      "each"
+     ],
+     "explain_vi": "**every month**: hằng tháng (each month cũng được)."
+    },
+    {
+     "answer": "given",
+     "accept": [
+      "sent",
+      "provided",
+      "offered"
+     ],
+     "explain_vi": "**has given** the group gloves and bags: give somebody something; sau has cần V3."
+    },
+    {
+     "answer": "before",
+     "accept": [],
+     "explain_vi": "**think twice before** doing something: cân nhắc trước khi vứt."
+    },
+    {
+     "answer": "would",
+     "accept": [
+      "might",
+      "could"
+     ],
+     "explain_vi": "Câu điều kiện loại 2 ==If everyone did== → **would** not need."
+    }
+   ]
+  },
+  {
+   "format": "open_cloze",
+   "kind": "gap_text",
+   "theme": "Khoa học, phát minh",
+   "title_vi": "Điền MỘT từ vào đoạn văn",
+   "intro_vi": "Mỗi chỗ trống điền đúng MỘT từ. Không có lựa chọn cho sẵn.",
+   "tip_vi": "Câu bị động cần be + V3; câu so sánh cần than/as; trước V-ing hay là giới từ (by, without, instead of).",
+   "text": "The microwave oven was invented almost [1] accident. In 1945, an engineer named Percy Spencer was working on radar equipment [2] he noticed that a chocolate bar in his pocket had melted. Curious, he placed some popcorn near the machine, and it began to pop. Spencer realised that the same waves could be used to heat food much faster [3] a normal oven. The first microwave oven was [4] large that it was nearly two metres tall, and it cost thousands of dollars. It took more than twenty years [5] smaller, cheaper models to appear in people's homes. Today, millions of families use one every day, [6] few people know the story behind it. Spencer himself never became rich from his invention, [7] he received a small payment from his company. He is remembered as a man who succeeded [8] asking a simple question: why did my chocolate melt?",
+   "items": [
+    {
+     "answer": "by",
+     "accept": [],
+     "explain_vi": "**by accident**: tình cờ."
+    },
+    {
+     "answer": "when",
+     "accept": [],
+     "explain_vi": "Đang làm (was working) thì một việc xảy ra → **when** he noticed."
+    },
+    {
+     "answer": "than",
+     "accept": [],
+     "explain_vi": "So sánh hơn ==faster== → **than**."
+    },
+    {
+     "answer": "so",
+     "accept": [],
+     "explain_vi": "Cấu trúc **so + tính từ + that**: to đến mức…"
+    },
+    {
+     "answer": "for",
+     "accept": [],
+     "explain_vi": "**It took … for somebody/something to do**: mất 20 năm để máy nhỏ hơn xuất hiện."
+    },
+    {
+     "answer": "but",
+     "accept": [
+      "yet",
+      "although",
+      "though"
+     ],
+     "explain_vi": "Nhiều nhà dùng nhưng ít người biết chuyện → ý trái ngược: **but**."
+    },
+    {
+     "answer": "although",
+     "accept": [
+      "though",
+      "but"
+     ],
+     "explain_vi": "Không giàu lên dù có nhận một khoản nhỏ → **although**."
+    },
+    {
+     "answer": "by",
+     "accept": [],
+     "explain_vi": "**succeed by doing something**: thành công nhờ việc gì."
+    }
+   ]
+  }
+ ],
+ "key_word": [
+  {
+   "format": "key_word",
+   "kind": "transform",
+   "theme": "Hỗn hợp",
+   "title_vi": "Viết lại câu với từ cho sẵn",
+   "intro_vi": "Hoàn thành câu thứ hai sao cho nghĩa giống câu thứ nhất, bắt buộc dùng từ in hoa và KHÔNG đổi từ đó. Viết 2–5 từ (kể cả từ cho sẵn).",
+   "tip_vi": "Xác định cấu trúc mà từ cho sẵn gợi ra (SUCH → such a … that; UNLESS → if … not; WISH → lùi thì). Viết xong, đếm số từ và đọc lại cả câu.",
+   "items": [
+    {
+     "q": "I haven't seen my cousin for two years.",
+     "word": "SAW",
+     "start": "The last time",
+     "end": "two years ago.",
+     "answer": "I saw my cousin was",
+     "accept": [
+      "i saw my cousin was"
+     ],
+     "explain_vi": "**The last time + S + V2 + was + khoảng thời gian + ago** = chưa làm gì trong bao lâu."
+    },
+    {
+     "q": "The film was so boring that we left early.",
+     "word": "SUCH",
+     "start": "It was",
+     "end": "that we left early.",
+     "answer": "such a boring film",
+     "accept": [],
+     "explain_vi": "**so + adj** ↔ **such a + adj + N**: such a boring film."
+    },
+    {
+     "q": "You won't pass the test if you don't revise.",
+     "word": "UNLESS",
+     "start": "You won't pass the test",
+     "end": ".",
+     "answer": "unless you revise",
+     "accept": [
+      "unless you revise for it"
+     ],
+     "explain_vi": "**unless = if … not** → unless you revise."
+    },
+    {
+     "q": "It's a pity I can't play the guitar.",
+     "word": "WISH",
+     "start": "I",
+     "end": "the guitar.",
+     "answer": "wish I could play",
+     "accept": [
+      "wish i was able to play",
+      "wish i were able to play"
+     ],
+     "explain_vi": "Tiếc ở hiện tại → **wish + quá khứ**: can't → could."
+    },
+    {
+     "q": "'Don't touch the paintings,' the guide said to us.",
+     "word": "TOLD",
+     "start": "The guide",
+     "end": "the paintings.",
+     "answer": "told us not to touch",
+     "accept": [],
+     "explain_vi": "Mệnh lệnh phủ định tường thuật: **tell somebody not to do something**."
+    }
+   ]
+  },
+  {
+   "format": "key_word",
+   "kind": "transform",
+   "theme": "Hỗn hợp",
+   "title_vi": "Viết lại câu với từ cho sẵn",
+   "intro_vi": "Hoàn thành câu thứ hai sao cho nghĩa giống câu thứ nhất, bắt buộc dùng từ in hoa và KHÔNG đổi từ đó. Viết 2–5 từ (kể cả từ cho sẵn).",
+   "tip_vi": "Cụm động từ và thành ngữ hay được hỏi: look forward to, give up, take after, be used to. Nhớ chia đúng thì theo câu gốc.",
+   "items": [
+    {
+     "q": "My brother stopped eating fast food last year.",
+     "word": "GAVE",
+     "start": "My brother",
+     "end": "fast food last year.",
+     "answer": "gave up eating",
+     "accept": [
+      "gave up"
+     ],
+     "explain_vi": "**give up (doing) something**: bỏ hẳn; quá khứ → gave up."
+    },
+    {
+     "q": "Lan looks very similar to her mother.",
+     "word": "AFTER",
+     "start": "Lan",
+     "end": "her mother.",
+     "answer": "takes after",
+     "accept": [
+      "really takes after"
+     ],
+     "explain_vi": "**take after somebody**: giống (bố mẹ, người lớn trong nhà)."
+    },
+    {
+     "q": "It isn't necessary for you to bring food.",
+     "word": "NEED",
+     "start": "You",
+     "end": "food.",
+     "answer": "don't need to bring",
+     "accept": [
+      "do not need to bring",
+      "needn't bring",
+      "need not bring"
+     ],
+     "explain_vi": "**not necessary = don't need to / needn't**."
+    },
+    {
+     "q": "Somebody stole my bike last night.",
+     "word": "WAS",
+     "start": "My bike",
+     "end": "last night.",
+     "answer": "was stolen",
+     "accept": [],
+     "explain_vi": "Bị động quá khứ: **was + V3** → was stolen."
+    },
+    {
+     "q": "Walking in the rain is something I'm not used to.",
+     "word": "ACCUSTOMED",
+     "start": "I'm not",
+     "end": "in the rain.",
+     "answer": "accustomed to walking",
+     "accept": [],
+     "explain_vi": "**be accustomed to + V-ing** = be used to + V-ing."
+    }
+   ]
+  },
+  {
+   "format": "key_word",
+   "kind": "transform",
+   "theme": "Hỗn hợp",
+   "title_vi": "Viết lại câu với từ cho sẵn",
+   "intro_vi": "Hoàn thành câu thứ hai sao cho nghĩa giống câu thứ nhất, bắt buộc dùng từ in hoa và KHÔNG đổi từ đó. Viết 2–5 từ (kể cả từ cho sẵn).",
+   "tip_vi": "Câu so sánh, câu điều kiện và câu đảo ngữ là ba nhóm hay gặp nhất ở mức B2.",
+   "items": [
+    {
+     "q": "Nobody in my class runs faster than Minh.",
+     "word": "FASTEST",
+     "start": "Minh",
+     "end": "in my class.",
+     "answer": "runs the fastest",
+     "accept": [
+      "is the fastest runner",
+      "is the fastest"
+     ],
+     "explain_vi": "Không ai nhanh hơn → **so sánh nhất**: runs the fastest."
+    },
+    {
+     "q": "I didn't study, so I failed the test.",
+     "word": "HAD",
+     "start": "If I",
+     "end": ", I wouldn't have failed the test.",
+     "answer": "had studied",
+     "accept": [],
+     "explain_vi": "Câu điều kiện loại 3: **If + had V3, would have V3**."
+    },
+    {
+     "q": "As soon as I arrived, it started to rain.",
+     "word": "SOONER",
+     "start": "No",
+     "end": "than it started to rain.",
+     "answer": "sooner had I arrived",
+     "accept": [],
+     "explain_vi": "Đảo ngữ **No sooner had + S + V3 + than**."
+    },
+    {
+     "q": "The bag was too heavy for me to carry.",
+     "word": "ENOUGH",
+     "start": "The bag wasn't",
+     "end": "to carry.",
+     "answer": "light enough for me",
+     "accept": [],
+     "explain_vi": "**too heavy** ↔ **not light enough**: tính từ trái nghĩa + enough."
+    },
+    {
+     "q": "It's possible that Nam forgot about the meeting.",
+     "word": "MAY",
+     "start": "Nam",
+     "end": "about the meeting.",
+     "answer": "may have forgotten",
+     "accept": [],
+     "explain_vi": "Phỏng đoán về quá khứ: **may have + V3**."
+    }
+   ]
+  }
+ ],
+ "matching_headings": [
+  {
+   "format": "matching_headings",
+   "kind": "matching",
+   "theme": "Sức khoẻ, thể thao",
+   "title_vi": "Nối tiêu đề với đoạn văn",
+   "intro_vi": "Có 4 đoạn văn và 6 tiêu đề. Chọn tiêu đề phù hợp nhất cho mỗi đoạn; có 2 tiêu đề thừa.",
+   "tip_vi": "Đọc câu đầu và câu cuối mỗi đoạn để nắm ý chính. Loại tiêu đề chỉ khớp một chi tiết nhỏ.",
+   "paragraphs": [
+    "Before the 1960s, very few people ran for fun. Running was something athletes did in competitions, and anyone jogging in the street was likely to be stared at. Everything changed when a coach in New Zealand began encouraging ordinary people to run slowly for their health.",
+    "Doctors now agree that running even twenty minutes a day can lower the risk of heart disease. It also helps the brain: runners often say they think more clearly and sleep better after a run.",
+    "However, running is not risk-free. Beginners often try to do too much too soon, which can lead to painful knee and ankle injuries. Experts recommend starting with a mix of walking and running.",
+    "In Việt Nam, running clubs have become popular in big cities. Many members say the best part is not the exercise itself but the friends they make while training together early in the morning."
+   ],
+   "headings": [
+    "More than just a workout",
+    "From strange hobby to everyday activity",
+    "Why professional runners earn so much",
+    "Good for the heart and the mind",
+    "Start slowly to stay safe",
+    "The best shoes for beginners"
+   ],
+   "answer": [
+    1,
+    3,
+    4,
+    0
+   ],
+   "explain_vi": "Đoạn 1: chạy bộ từ chỗ bị nhìn lạ thành phổ biến → **From strange hobby to everyday activity**. Đoạn 2: tim và não → **Good for the heart and the mind**. Đoạn 3: chấn thương, khuyên bắt đầu từ từ → **Start slowly to stay safe**. Đoạn 4: ==the best part is not the exercise itself but the friends== → **More than just a workout**."
+  },
+  {
+   "format": "matching_headings",
+   "kind": "matching",
+   "theme": "Truyền thông",
+   "title_vi": "Nối tiêu đề với đoạn văn",
+   "intro_vi": "Có 4 đoạn văn và 6 tiêu đề. Chọn tiêu đề phù hợp nhất cho mỗi đoạn; có 2 tiêu đề thừa.",
+   "tip_vi": "Tiêu đề đúng tóm được CẢ đoạn. Cẩn thận với tiêu đề lặp đúng một từ trong đoạn nhưng sai ý.",
+   "paragraphs": [
+    "A recent survey found that more than 70% of teenagers get their news from social media rather than from newspapers or television. Short videos and posts from friends have become the main way young people learn what is happening in the world.",
+    "The problem is that false stories spread faster than true ones. Because shocking headlines get more clicks, some websites invent news simply to make money from advertising.",
+    "Fortunately, there are simple habits that help. Before sharing a story, check who published it, look for the same news on a trusted website, and read beyond the headline.",
+    "Some schools now teach these skills in special lessons. Students practise spotting fake photos and analysing headlines, and teachers report that pupils become much more careful online."
+   ],
+   "headings": [
+    "Learning to question what we read",
+    "A change in where young people find news",
+    "Why newspapers are becoming more popular",
+    "Three checks before you click 'share'",
+    "Lies travel quickly",
+    "The dangers of video games"
+   ],
+   "answer": [
+    1,
+    4,
+    3,
+    0
+   ],
+   "explain_vi": "Đoạn 1: 70% teen đọc tin qua mạng → **A change in where young people find news**. Đoạn 2: ==false stories spread faster== → **Lies travel quickly**. Đoạn 3: ba việc nên làm trước khi chia sẻ → **Three checks before you click 'share'**. Đoạn 4: trường dạy kỹ năng → **Learning to question what we read**."
+  }
+ ],
+ "essay": [
+  {
+   "format": "essay",
+   "theme": "Trường học, công nghệ",
+   "words": "180–250",
+   "prompt_en": "Some people think students should be allowed to use smartphones at school. Others believe phones should be banned. Write an essay of about 200–250 words giving your opinion. Use reasons and examples.",
+   "prompt_vi": "Có người cho rằng học sinh nên được dùng điện thoại ở trường, có người muốn cấm. Viết bài luận khoảng 200–250 từ nêu ý kiến của cậu, có lý do và ví dụ.",
+   "outline_vi": [
+    "Mở bài (2–3 câu): nêu vấn đề bằng lời của mình, rồi nói rõ cậu đồng ý với bên nào (hoặc dung hoà).",
+    "Thân bài 1: lý do thứ nhất + ví dụ cụ thể (ở trường cậu, một con số, một tình huống).",
+    "Thân bài 2: lý do thứ hai + ví dụ. Có thể thêm một câu thừa nhận ý kiến ngược lại rồi phản bác.",
+    "Kết bài (2 câu): nhắc lại quan điểm bằng cách diễn đạt khác, có thể kèm một đề xuất."
+   ],
+   "useful": [
+    "In my opinion, …",
+    "There are two main reasons for this.",
+    "Firstly, … Secondly, …",
+    "For example, …",
+    "Admittedly, … However, …",
+    "As a result, …",
+    "To sum up, …"
+   ],
+   "model": "Nowadays, almost every teenager owns a smartphone, so it is not surprising that schools disagree about whether students should be allowed to use them in class. In my opinion, phones should not be banned completely, but their use should be carefully controlled.\n\nFirstly, smartphones can be valuable learning tools. With a phone, students can look up a new word in seconds, watch a short video that explains a difficult maths problem, or take part in online quizzes. At my school, our English teacher sometimes asks us to record our speaking practice on our phones, which helps us notice our own mistakes.\n\nSecondly, phones help students stay safe. Many of us travel to school alone, and parents feel calmer when they can contact their children quickly. Admittedly, phones can be a serious distraction, and some students spend lessons chatting or playing games. However, this problem can be solved with clear rules, such as keeping phones in bags unless the teacher allows them to be used.\n\nTo sum up, I believe that a total ban would remove more benefits than problems. If schools teach students to use their phones responsibly, these devices can become a help rather than a distraction.",
+   "checklist_vi": [
+    "Có câu nêu rõ quan điểm ngay ở mở bài.",
+    "Mỗi đoạn thân bài có 1 lý do + ít nhất 1 ví dụ cụ thể.",
+    "Dùng từ nối (Firstly, However, As a result, To sum up).",
+    "Đủ 180–250 từ, chia 4 đoạn.",
+    "Soát lỗi: chia động từ, số nhiều, mạo từ, chính tả."
+   ]
+  },
+  {
+   "format": "essay",
+   "theme": "Môi trường",
+   "words": "180–250",
+   "prompt_en": "Many cities have serious problems with traffic and air pollution. What can young people do to help? Write an essay of about 200–250 words.",
+   "prompt_vi": "Nhiều thành phố bị tắc đường và ô nhiễm không khí. Người trẻ có thể làm gì để góp phần cải thiện? Viết bài luận khoảng 200–250 từ.",
+   "outline_vi": [
+    "Mở bài: nêu vấn đề (ví dụ ở thành phố của cậu) và nói rằng người trẻ có thể góp phần bằng 2–3 cách.",
+    "Thân bài 1: cách thứ nhất (đi xe đạp, đi bộ, xe buýt) + lợi ích + ví dụ.",
+    "Thân bài 2: cách thứ hai (lan toả trên mạng xã hội, tham gia hoạt động, tiết kiệm năng lượng ở nhà) + ví dụ.",
+    "Kết bài: tóm lại, nhấn mạnh việc nhỏ nhưng nhiều người cùng làm."
+   ],
+   "useful": [
+    "One effective way to … is to …",
+    "This would not only … but also …",
+    "A good example of this is …",
+    "If more young people …, …",
+    "In conclusion, …"
+   ],
+   "model": "Like many large cities, Hà Nội faces heavy traffic and poor air quality, especially during rush hour. Although these problems seem too big for teenagers to solve, I believe young people can make a real difference in several simple ways.\n\nOne effective way to help is to change how we travel. Instead of asking parents to drive them to school, students who live nearby can walk, cycle or take the bus. This would not only reduce the number of vehicles on the road but also keep students healthier. In my class, a group of friends started cycling together last year, and now almost half of the class does the same.\n\nAnother way is to use social media to spread good habits. Teenagers spend a lot of time online, so short videos about saving energy or planting trees can reach thousands of people quickly. A good example of this is a student campaign in my city that encouraged families to switch off their engines while waiting at traffic lights. Many people joined in because the message was fun and easy to follow.\n\nIn conclusion, young people cannot solve pollution alone, but their choices and ideas can influence others. If every student made one small change, our cities would become cleaner and more pleasant places to live.",
+   "checklist_vi": [
+    "Có ít nhất 2 cách cụ thể, mỗi cách có lợi ích và ví dụ.",
+    "Có ví dụ gần gũi (trường, thành phố của cậu).",
+    "Dùng câu điều kiện hoặc 'not only … but also' ít nhất một lần.",
+    "Đủ 180–250 từ, chia đoạn rõ.",
+    "Soát lỗi chính tả và chia động từ."
+   ]
+  },
+  {
+   "format": "essay",
+   "theme": "Con người, nghề nghiệp",
+   "words": "180–250",
+   "prompt_en": "Some students believe that the most important thing when choosing a future job is a high salary. Do you agree or disagree? Write an essay of about 200–250 words.",
+   "prompt_vi": "Có bạn cho rằng điều quan trọng nhất khi chọn nghề là lương cao. Cậu đồng ý hay không? Viết bài luận khoảng 200–250 từ.",
+   "outline_vi": [
+    "Mở bài: nhắc lại ý kiến trong đề bằng lời khác, nêu quan điểm (đồng ý một phần / không đồng ý).",
+    "Thân bài 1: thừa nhận lương quan trọng (lý do + ví dụ).",
+    "Thân bài 2: điều quan trọng hơn (đam mê, năng lực, giúp ích người khác) + ví dụ.",
+    "Kết bài: nhắc lại quan điểm, có thể đưa lời khuyên cho bạn cùng tuổi."
+   ],
+   "useful": [
+    "It is true that …",
+    "Nevertheless, …",
+    "What matters more is …",
+    "This is because …",
+    "For instance, …",
+    "All things considered, …"
+   ],
+   "model": "Choosing a career is one of the most important decisions in a person's life. Some students believe that salary should be the main factor, but I only partly agree with this view.\n\nIt is true that money matters. A good salary allows people to support their families, pay for housing and save for the future. For instance, my aunt chose to work in banking partly because the income helped her pay for her younger brother's education. Ignoring salary completely would therefore be unrealistic.\n\nNevertheless, what matters more is whether a job suits our interests and abilities. People spend around forty hours a week at work for many years, so a well-paid job that they hate can make them stressed and unhappy. My uncle, for example, left a highly paid office job to become a primary school teacher. He earns less now, but he says he looks forward to going to work every morning. In addition, people who enjoy their work usually become better at it, which can lead to a higher salary in the long run.\n\nAll things considered, I believe salary should be one factor, but not the most important one. Teenagers should first find out what they love and are good at, and then look for a career that combines these with a reasonable income.",
+   "checklist_vi": [
+    "Nêu rõ đồng ý, không đồng ý hay đồng ý một phần.",
+    "Có một đoạn thừa nhận ý kiến bên kia (It is true that …).",
+    "Ví dụ cụ thể về người thật hoặc tình huống thật.",
+    "Đủ 180–250 từ.",
+    "Câu kết không lặp nguyên văn câu mở."
+   ]
+  },
+  {
+   "format": "essay",
+   "theme": "Truyền thông, văn hoá",
+   "words": "150–200",
+   "prompt_en": "Write a paragraph or short essay (about 150–200 words) about a tradition in your family or hometown that you think should be kept. Explain why it is important.",
+   "prompt_vi": "Viết đoạn văn hoặc bài luận ngắn (khoảng 150–200 từ) về một phong tục của gia đình hoặc quê hương mà cậu nghĩ nên giữ gìn, và giải thích vì sao.",
+   "outline_vi": [
+    "Câu chủ đề: giới thiệu phong tục và khẳng định nên giữ.",
+    "Mô tả ngắn: diễn ra khi nào, mọi người làm gì.",
+    "Lý do 1 + ví dụ hoặc cảm xúc của cậu.",
+    "Lý do 2 (gắn kết gia đình, giữ bản sắc, dạy trẻ em điều gì).",
+    "Câu kết: nhắc lại và mong muốn của cậu."
+   ],
+   "useful": [
+    "One tradition that I really value is …",
+    "It usually takes place …",
+    "What I love most about it is …",
+    "Not only does it …, but it also …",
+    "That is why I hope …"
+   ],
+   "model": "One tradition that I really value is my family's habit of making bánh chưng together before Tết. Every year, on the 27th day of the last lunar month, my grandparents, parents, aunts, uncles and cousins gather in my grandmother's house. The adults wash the dong leaves and prepare the sticky rice, green beans and pork, while the children help to fold the leaves and tie the cakes. Then we take turns watching the fire all night while the cakes boil.\n\nI believe this tradition should be kept for two reasons. Firstly, it brings the whole family together. In daily life everyone is busy with work and school, but on this day we talk, laugh and share stories for hours. Secondly, it teaches children about our culture. Through making the cakes, my cousins and I have learned about the legend of Lang Liêu and the meaning of Tết. Not only does the tradition keep our history alive, but it also creates memories that we will remember for ever. That is why I hope my own children will make bánh chưng with me one day.",
+   "checklist_vi": [
+    "Câu đầu nói rõ phong tục là gì và quan điểm của cậu.",
+    "Có phần mô tả cụ thể (thời gian, ai, làm gì).",
+    "Có 2 lý do rõ ràng.",
+    "Đủ 150–200 từ.",
+    "Dùng ít nhất một cấu trúc nâng cao (đảo ngữ Not only, câu bị động…)."
+   ]
+  }
+ ],
+ "speaking": [
+  {
+   "format": "speaking",
+   "theme": "Sở thích",
+   "prep_sec": 60,
+   "talk_sec": 120,
+   "prompt_en": "Talk about a hobby you enjoy. You should say: what the hobby is, when and how you started it, how often you do it, and explain why you enjoy it.",
+   "prompt_vi": "Nói về một sở thích của cậu: đó là gì, bắt đầu khi nào và thế nào, bao lâu làm một lần, và vì sao cậu thích.",
+   "ideas": [
+    "Nêu tên sở thích + một chi tiết gây chú ý.",
+    "Kể ngắn lần đầu bắt đầu (thì quá khứ).",
+    "Tần suất (twice a week, every weekend).",
+    "2 lý do: giúp thư giãn, học được kỹ năng gì, gặp bạn mới."
+   ],
+   "phrases": [
+    "I'd like to talk about …",
+    "I got into it when …",
+    "What I love most about it is …",
+    "It's a great way to …",
+    "That's why …"
+   ],
+   "rubric_vi": [
+    "Nói đủ 4 ý trong đề, không dừng quá 3 giây.",
+    "Dùng đúng thì (quá khứ khi kể chuyện bắt đầu, hiện tại khi nói thói quen).",
+    "Có từ nối và ít nhất 2 từ vựng chủ đề.",
+    "Phát âm rõ đuôi -s, -ed; nói đủ to."
+   ]
+  },
+  {
+   "format": "speaking",
+   "theme": "Trường học",
+   "prep_sec": 60,
+   "talk_sec": 120,
+   "prompt_en": "Some people say students should have less homework. Do you agree? Give your opinion with at least two reasons and an example.",
+   "prompt_vi": "Có ý kiến cho rằng học sinh nên có ít bài tập về nhà hơn. Cậu có đồng ý không? Nêu ý kiến, ít nhất 2 lý do và 1 ví dụ.",
+   "ideas": [
+    "Nêu quan điểm ngay câu đầu.",
+    "Lý do 1 (thời gian nghỉ ngơi, thể thao, gia đình).",
+    "Lý do 2 (chất lượng hơn số lượng / bài tập giúp nhớ lâu).",
+    "Ví dụ từ chính lớp của cậu.",
+    "Câu kết: đề xuất dung hoà."
+   ],
+   "phrases": [
+    "In my view, …",
+    "The main reason is that …",
+    "On top of that, …",
+    "Take my class, for example: …",
+    "So, all in all, …"
+   ],
+   "rubric_vi": [
+    "Có quan điểm rõ và 2 lý do.",
+    "Có ví dụ cụ thể.",
+    "Dùng từ nối mạch lạc.",
+    "Nói tự nhiên, không đọc thuộc lòng."
+   ]
+  },
+  {
+   "format": "speaking",
+   "theme": "Du lịch",
+   "prep_sec": 60,
+   "talk_sec": 120,
+   "prompt_en": "Describe a place in Việt Nam you would like to visit. Say where it is, what you know about it, who you would go with, and why you want to go there.",
+   "prompt_vi": "Tả một nơi ở Việt Nam cậu muốn đến: ở đâu, cậu biết gì về nơi đó, sẽ đi cùng ai, và vì sao muốn đến.",
+   "ideas": [
+    "Tên nơi + vị trí (in the north of …, near …).",
+    "2–3 điều cậu biết (cảnh đẹp, món ăn, lịch sử).",
+    "Đi cùng ai và sẽ làm gì (would + V).",
+    "Lý do muốn đến."
+   ],
+   "phrases": [
+    "The place I'd most like to visit is …",
+    "It's located in …",
+    "I've heard that …",
+    "If I went there, I would …",
+    "The main reason I want to go is …"
+   ],
+   "rubric_vi": [
+    "Đủ 4 ý, có chi tiết cụ thể.",
+    "Dùng câu điều kiện loại 2 hoặc would để nói dự định.",
+    "Có tính từ miêu tả phong phú (breathtaking, peaceful, crowded).",
+    "Nói liền mạch khoảng 1,5–2 phút."
+   ]
+  }
+ ]
+}

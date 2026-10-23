@@ -154,13 +154,19 @@ function pvTestHTML(kind){const T=TESTS[kind];
   return `<div class="card pv-head"><p class="eyebrow">${T.minutes} phút · ${T.items.length} câu</p><h2>${esc(T.title_vi)}</h2></div>`+
    pvSec('Bài đọc',(T.passages||[]).map(p=>`<p class="small"><b>${esc(p.id)}</b> · mức ${esc(p.level)}</p><div class="passage pv-pass">${esc(p.text)}</div>`).join(''),true)+
    ['A2','B1','B2'].map(L=>pvSec(`Câu mức ${L}`,`<ol class="pv-qs">${T.items.filter(i=>i.level===L).map(pvQ).join('')}</ol>`,true)).join('')}
-function vCatalog(){const tabs=[['diag','Đầu vào']].concat(DAYS.map(d=>['d'+d.day,'B'+d.day])).concat([['final','Đầu ra']]);
+function pvPackHTML(){const P=C.local_pack||{};const plan=localPlan();const RG=REG();
+  const sched=Object.keys(plan).sort((a,b)=>a-b).map(d=>`<li>Buổi ${d}: ${plan[d].map(x=>esc(LP_NAME[x.f])+' '+(x.i+1)).join(', ')}</li>`).join('');
+  const blk=(f,B)=>{if(f==='gap_sent'||B.kind==='gap_sent')return `<div class="passage pv-pass">${esc(B.text)}</div><ol class="pv-opts" type="A">${B.options.map(o=>`<li>${esc(o)}</li>`).join('')}</ol><ol class="pv-qs">${B.items.map((it,i)=>`<li class="pv-q"><div class="pv-ans">Chỗ (${i+1}): <b>${LTR[it.answer]}. ${esc(B.options[it.answer])}</b></div><div class="pv-ex">${fmtVi(it.explain_vi||'')}</div></li>`).join('')}</ol>`;
+    return pvGen(B)};
+  return `<div class="card pv-head"><p class="eyebrow">Gói bù theo đề từng sở</p><h2>Dạng bài riêng của đề ${esc(RG.name)}</h2><p class="small">Đang xem theo khu vực <b>${esc(RG.name)}</b> (đổi khu vực ở thanh trên để xem lịch của sở khác). Dạng được chọn: ${(RG.pack||[]).map(f=>esc(LP_NAME[f])).join(', ')}.</p><ul class="pv-ul small">${sched}</ul></div>`+
+   Object.keys(P).map(f=>pvSec(`${esc(LP_NAME[f]||f)} (${P[f].length} bài)${(RG.pack||[]).includes(f)?' · sở này dùng':''}`,P[f].map((B,i)=>`<div class="pv-part"><h4>Bài ${i+1} · ${esc(B.theme||'')}</h4>${blk(f,B)}</div>`).join(''),(RG.pack||[]).includes(f))).join('')}
+function vCatalog(){const tabs=[['diag','Đầu vào']].concat(DAYS.map(d=>['d'+d.day,'B'+d.day])).concat([['final','Đầu ra'],['pack','Dạng riêng theo sở']]);
   M().innerHTML=`<section class="pv-cat"><div class="card"><p class="eyebrow">Bản cho giáo viên</p><h2>Toàn bộ nội dung và đáp án</h2>
    <p class="small muted">Mọi câu hỏi trên web, bài giấy, game và bài nghe của từng buổi, kèm đáp án và giải thích đúng như học sinh thấy. Bấm từng mục để mở, hoặc dùng nút In để in hay lưu PDF.</p>
    <div class="pv-chips" role="tablist">${tabs.map(([k,t])=>`<button type="button" class="pv-chip" data-k="${k}" aria-selected="${k===PV_CAT}">${t}${k[0]==='d'&&k!=='diag'?`<small>${esc(DAYS[+k.slice(1)-1].theme_vi)}</small>`:''}</button>`).join('')}</div>
    <div class="row"><button class="btn ghost" type="button" id="pvAll">Mở hết các mục</button><button class="btn ghost" type="button" id="pvPrint">In trang này</button></div></div>
    <div id="pvBody"></div></section>`;
-  const show=()=>{$('#pvBody').innerHTML=PV_CAT==='diag'?pvTestHTML('diag'):PV_CAT==='final'?pvTestHTML('final'):pvDay(+PV_CAT.slice(1));
+  const show=()=>{$('#pvBody').innerHTML=PV_CAT==='diag'?pvTestHTML('diag'):PV_CAT==='final'?pvTestHTML('final'):PV_CAT==='pack'?pvPackHTML():pvDay(+PV_CAT.slice(1));
     document.querySelectorAll('.pv-chip').forEach(b=>b.setAttribute('aria-selected',b.dataset.k===PV_CAT?'true':'false'))};
   M().querySelector('.pv-chips').onclick=e=>{const b=e.target.closest('.pv-chip');if(b){PV_CAT=b.dataset.k;show()}};
   $('#pvAll').onclick=()=>document.querySelectorAll('#pvBody details').forEach(d=>d.open=true);
