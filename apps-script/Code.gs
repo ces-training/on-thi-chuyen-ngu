@@ -344,7 +344,7 @@ var SYSTEM_PROMPT = [
   'Ghi chú (note) bằng tiếng Việt, ngắn (tối đa 25 từ), giải thích vì sao sai và gợi ý cách nhớ; câu đúng để note rỗng.',
   'Câu sai: note phải nói vì sao đáp án đúng là đúng (nghĩa, cấu trúc hoặc dấu hiệu trong câu) và vì sao câu học sinh viết chưa đúng.',
   'Bài viết (phần F hoặc đoạn viết dài): KHÔNG chấm. Chỉ chép lại NGUYÊN VĂN những gì học sinh viết, giữ đúng cả lỗi chính tả, ngữ pháp, dấu câu và xuống dòng; không sửa, không thêm, không bỏ chữ nào. Từ nào không đọc được thì ghi [?] tại chỗ đó và liệt kê vào "unclear".',
-  'Chỉ trả về MỘT đối tượng JSON, không thêm chữ nào khác, theo mẫu:',
+  'Trả kết quả qua công cụ tra_ket_qua, theo mẫu:',
   '{"items":[{"label":"A.1","read":"...","correct":true,"note":""}],"writing":{"read":"nguyên văn bài viết","unclear":["từ hoặc đoạn không đọc chắc"]},"overall":"2–3 câu nhận xét chung về phần trắc nghiệm, điền từ, bằng tiếng Việt","unreadable":false}',
   'Nếu buổi không có bài viết hoặc học sinh không viết, đặt "writing": null.',
   'Nếu ảnh không phải bài làm, đặt "unreadable": true và "items": [].'
@@ -353,21 +353,27 @@ var SYSTEM_PROMPT = [
 function callClaude_(images, key) {
   var p = PropertiesService.getScriptProperties();
   return claudeJson_(p.getProperty('MODEL') || DEFAULT_MODEL, SYSTEM_PROMPT,
-    images.concat([{ type: 'text', text: keyText_(key) + '\n\nHãy chấm các ảnh bài làm ở trên theo đáp án này và trả về JSON.' }]), 6000);
+    images.concat([{ type: 'text', text: keyText_(key) + '\n\nHãy chấm các ảnh bài làm ở trên theo đáp án này và trả kết quả qua công cụ tra_ket_qua.' }]), 8000, GRADE_SCHEMA);
 }
 
-/* gọi Claude, trả về đối tượng JSON trong câu trả lời */
-function claudeJson_(model, system, content, maxTokens) {
+/* gọi Claude, trả về đối tượng JSON. Có schema thì bắt mô hình trả qua công cụ (tool use) nên kết quả luôn là JSON hợp lệ. */
+function claudeJson_(model, system, content, maxTokens, schema) {
   var apiKey = String(PropertiesService.getScriptProperties().getProperty('CLAUDE_API_KEY') || '').trim();
   if (!apiKey) throw new Error('Chưa cài CLAUDE_API_KEY');
   var resp = UrlFetchApp.fetch('https://api.anthropic.com/v1/messages', {
     method: 'post', contentType: 'application/json', muteHttpExceptions: true,
     headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-    payload: JSON.stringify({ model: model, max_tokens: maxTokens, system: system, messages: [{ role: 'user', content: content }] })
+    payload: JSON.stringify(Object.assign({ model: model, max_tokens: maxTokens, system: system, messages: [{ role: 'user', content: content }] },
+      schema ? { tools: [{ name: 'tra_ket_qua', description: 'Trả kết quả chấm bài', input_schema: schema }], tool_choice: { type: 'tool', name: 'tra_ket_qua' } } : {}))
   });
   var code = resp.getResponseCode(), text = resp.getContentText();
   if (code !== 200) throw new Error('Claude API ' + code + ': ' + clip_(text, 300));
   var data = JSON.parse(text);
+  if (schema) {
+    var tu = (data.content || []).filter(function (c) { return c.type === 'tool_use'; })[0];
+    if (!tu || !tu.input) throw new Error('Claude không trả kết quả theo khuôn');
+    return tu.input;
+  }
   var out = (data.content || []).filter(function (c) { return c.type === 'text'; }).map(function (c) { return c.text; }).join('');
   var a = out.indexOf('{'), b = out.lastIndexOf('}');
   if (a < 0 || b < a) throw new Error('Không đọc được JSON từ Claude');
@@ -450,14 +456,26 @@ var FREE_PROMPT = [
   'Bạn là trợ giảng tiếng Anh, chấm nhanh đoạn viết của học sinh lớp 6–9 ôn thi chuyên Anh.',
   'Chấm thang 10 theo bốn ý: đủ ý của đề; đúng ngữ pháp trọng tâm của buổi; dùng từ mới của buổi; đủ số từ tối thiểu.',
   'Nêu đúng 2 điểm tốt và 2 điểm cần sửa, mỗi điểm một câu tiếng Việt cụ thể (trích từ bài khi có thể), giọng như một người bạn lớn tuổi: tôn trọng, khích lệ, không chê bai.',
-  'Chỉ trả về MỘT đối tượng JSON: {"score":0,"strengths":["",""],"improve":["",""],"summary":"1 câu nhận xét chung"}'
+  'Trả kết quả qua công cụ tra_ket_qua: score (0–10), strengths (2 ý), improve (2 ý), summary (1 câu nhận xét chung).'
 ].join('\n');
+
+var STR = { type: 'string' }, STRS = { type: 'array', items: { type: 'string' } };
+var FREE_SCHEMA = { type: 'object', required: ['score', 'strengths', 'improve', 'summary'],
+  properties: { score: { type: 'number' }, strengths: STRS, improve: STRS, summary: STR } };
+var DETAIL_SCHEMA = { type: 'object', required: ['criteria', 'errors', 'upgrades', 'next', 'summary'], properties: {
+  criteria: { type: 'array', items: { type: 'object', required: ['key', 'score', 'comment', 'evidence'], properties: { key: { type: 'string', enum: ['content', 'organisation', 'vocabulary', 'grammar'] }, score: { type: 'number' }, comment: STR, evidence: STRS } } },
+  errors: { type: 'array', items: { type: 'object', required: ['quote', 'fix', 'why', 'type'], properties: { quote: STR, fix: STR, why: STR, type: STR } } },
+  upgrades: { type: 'array', items: { type: 'object', required: ['from', 'to', 'why'], properties: { from: STR, to: STR, why: STR } } },
+  next: STRS, summary: STR } };
+var GRADE_SCHEMA = { type: 'object', required: ['items', 'overall', 'unreadable'], properties: {
+  items: { type: 'array', items: { type: 'object', required: ['label', 'read', 'correct', 'note'], properties: { label: STR, read: STR, correct: { type: ['boolean', 'null'] }, note: STR } } },
+  writing: { type: ['object', 'null'], properties: { read: STR, unclear: STRS } }, overall: STR, unreadable: { type: 'boolean' } } };
 
 function gradeWritingFree_(task, text) {
   var p = PropertiesService.getScriptProperties();
   var prompt = 'ĐỀ: ' + task.task + '\nTối thiểu ' + task.min_words + ' từ.\nTiêu chí của buổi: ' + (task.checklist || []).join(' / ') +
     '\n\nBÀI CỦA HỌC SINH (' + wordCount_(text) + ' từ):\n' + text;
-  var r = claudeJson_(p.getProperty('MODEL_FREE') || DEFAULT_MODEL_FREE, FREE_PROMPT, [{ type: 'text', text: prompt }], 1200);
+  var r = claudeJson_(p.getProperty('MODEL_FREE') || DEFAULT_MODEL_FREE, FREE_PROMPT, [{ type: 'text', text: prompt }], 1200, FREE_SCHEMA);
   return {
     score: Math.max(0, Math.min(10, Math.round(2 * (Number(r.score) || 0)) / 2)),
     strengths: (r.strengths || []).slice(0, 3).map(function (x) { return clip_(x, 300); }),
@@ -482,8 +500,7 @@ var DETAIL_PROMPT = [
   'Liệt kê tối đa 8 lỗi cụ thể: trích nguyên văn, bản sửa, giải thích ngắn bằng tiếng Việt, loại lỗi (ngữ pháp, từ vựng, chính tả, dấu câu, liên kết).',
   'Viết lại tối đa 3 câu của học sinh thành câu hay hơn ở mức đề chuyên (giữ ý của học sinh), giải thích vì sao hay hơn.',
   'Nêu 3 việc nên làm ở bài viết tiếp theo. Giọng tôn trọng, khích lệ, như người bạn lớn tuổi; không chê bai.',
-  'Chỉ trả về MỘT đối tượng JSON:',
-  '{"criteria":[{"key":"content","score":0,"comment":"","evidence":[""]}],"errors":[{"quote":"","fix":"","why":"","type":""}],"upgrades":[{"from":"","to":"","why":""}],"next":["","",""],"summary":"2 câu tổng kết"}'
+  'Trả kết quả qua công cụ tra_ket_qua: criteria (đủ 4 tiêu chí content, organisation, vocabulary, grammar), errors, upgrades, next (3 ý), summary (2 câu tổng kết).'
 ].join('\n');
 
 function writingDetail_(st, uploadId) {
@@ -495,7 +512,7 @@ function writingDetail_(st, uploadId) {
   var p = PropertiesService.getScriptProperties();
   var prompt = 'ĐỀ: ' + key.writing.task + '\nTối thiểu ' + key.writing.min_words + ' từ.\nTrọng tâm của buổi: ' + (key.writing.checklist || []).join(' / ') +
     '\n\nBÀI CỦA HỌC SINH (' + wordCount_(w.text) + ' từ):\n' + w.text;
-  var r = claudeJson_(p.getProperty('MODEL') || DEFAULT_MODEL, DETAIL_PROMPT, [{ type: 'text', text: prompt }], 4000);
+  var r = claudeJson_(p.getProperty('MODEL') || DEFAULT_MODEL, DETAIL_PROMPT, [{ type: 'text', text: prompt }], 5000, DETAIL_SCHEMA);
   var byKey = {}; (r.criteria || []).forEach(function (c) { if (c && c.key) byKey[c.key] = c; });
   var crit = RUBRIC.map(function (c) {
     var x = byKey[c.key] || {};
