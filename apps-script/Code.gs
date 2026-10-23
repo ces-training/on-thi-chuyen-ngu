@@ -356,28 +356,34 @@ function callClaude_(images, key) {
     images.concat([{ type: 'text', text: keyText_(key) + '\n\nHãy chấm các ảnh bài làm ở trên theo đáp án này và trả về JSON.' }]), 8000);
 }
 
-/* gọi Claude, trả về đối tượng JSON. Có schema thì bắt mô hình trả qua công cụ (tool use) nên kết quả luôn là JSON hợp lệ. */
+/* gọi Claude, trả về đối tượng JSON. Có schema thì yêu cầu mô hình trả qua công cụ (tool use) để kết quả là JSON hợp lệ.
+   Một số mô hình (ví dụ khi bật suy nghĩ mở rộng) không nhận tool_choice bắt buộc: khi đó gửi lại với tool_choice auto,
+   và nếu mô hình vẫn trả chữ thì đọc JSON trong chữ như cũ. */
 function claudeJson_(model, system, content, maxTokens, schema) {
   var apiKey = String(PropertiesService.getScriptProperties().getProperty('CLAUDE_API_KEY') || '').trim();
   if (!apiKey) throw new Error('Chưa cài CLAUDE_API_KEY');
-  var resp = UrlFetchApp.fetch('https://api.anthropic.com/v1/messages', {
-    method: 'post', contentType: 'application/json', muteHttpExceptions: true,
-    headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-    payload: JSON.stringify(Object.assign({ model: model, max_tokens: maxTokens, system: system, messages: [{ role: 'user', content: content }] },
-      schema ? { tools: [{ name: 'tra_ket_qua', description: 'Trả kết quả chấm bài', input_schema: schema }], tool_choice: { type: 'tool', name: 'tra_ket_qua' } } : {}))
-  });
-  var code = resp.getResponseCode(), text = resp.getContentText();
-  if (code !== 200) throw new Error('Claude API ' + code + ': ' + clip_(text, 300));
-  var data = JSON.parse(text);
-  if (schema) {
-    var tu = (data.content || []).filter(function (c) { return c.type === 'tool_use'; })[0];
-    if (!tu || !tu.input) throw new Error('Claude không trả kết quả theo khuôn');
-    return tu.input;
+  var send = function (choice) {
+    var body = { model: model, max_tokens: maxTokens, system: system, messages: [{ role: 'user', content: content }] };
+    if (schema) { body.tools = [{ name: 'tra_ket_qua', description: 'Trả kết quả chấm bài', input_schema: schema }]; body.tool_choice = choice; }
+    var resp = UrlFetchApp.fetch('https://api.anthropic.com/v1/messages', {
+      method: 'post', contentType: 'application/json', muteHttpExceptions: true,
+      headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' }, payload: JSON.stringify(body)
+    });
+    return { code: resp.getResponseCode(), text: resp.getContentText() };
+  };
+  var r = send(schema ? { type: 'tool', name: 'tra_ket_qua' } : null);
+  if (schema && r.code === 400 && /tool_choice/.test(r.text)) {
+    content = content.concat([{ type: 'text', text: 'Trả kết quả bằng cách gọi công cụ tra_ket_qua.' }]);
+    r = send({ type: 'auto' });
   }
+  if (r.code !== 200) throw new Error('Claude API ' + r.code + ': ' + clip_(r.text, 300));
+  var data = JSON.parse(r.text);
+  var tu = (data.content || []).filter(function (c) { return c.type === 'tool_use'; })[0];
+  if (tu && tu.input) return tu.input;
   var out = (data.content || []).filter(function (c) { return c.type === 'text'; }).map(function (c) { return c.text; }).join('');
-  var a = out.indexOf('{'), b = out.lastIndexOf('}');
-  if (a < 0 || b < a) throw new Error('Không đọc được JSON từ Claude');
-  return JSON.parse(out.slice(a, b + 1));
+  var i = out.indexOf('{'), j = out.lastIndexOf('}');
+  if (i < 0 || j < i) throw new Error(schema ? 'Claude không trả kết quả theo khuôn' : 'Không đọc được JSON từ Claude');
+  return JSON.parse(out.slice(i, j + 1));
 }
 
 /* đối chiếu kết quả của mô hình với đáp án; tính điểm ở máy chủ, không tin điểm do mô hình tự cộng */
