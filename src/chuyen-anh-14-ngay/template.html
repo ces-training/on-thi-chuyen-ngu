@@ -414,7 +414,7 @@ main.wrap:not([data-v="start"])::before{content:"";position:absolute;top:-13px;l
   body::before{display:none}
 }
 @media (max-width:1099px){main.wrap:not([data-v="start"]){margin-inline:10px;max-width:none}}
-@media (min-width:940px) and (max-width:1099px){main.wrap:not([data-v="start"]){margin-inline:auto;max-width:900px}}
+@media (min-width:940px) and (max-width:1099px){main.wrap:not([data-v="start"]){margin-inline:16px;max-width:none}}
 /* bảng điều khiển trang chủ */
 .dash{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:28px 26px;grid-template-areas:"head head" "quest side" "path more";padding-top:6px}
 .dash-head{grid-area:head;display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px}
@@ -651,8 +651,8 @@ body{background-color:transparent}
   nav.tabs{gap:8px}
   nav.tabs button{font-size:1.02rem;font-weight:700;line-height:1.25;min-height:88px;padding:12px 8px;gap:6px}
   nav.tabs button svg.dd,nav.tabs button svg{width:40px;height:40px}
-  main.wrap{max-width:1180px;margin-left:max(232px,calc(50% - 590px + 100px));margin-right:24px}
-  main.wrap[data-v="start"]{max-width:1640px;margin-left:max(232px,calc(50% - 820px + 100px));margin-right:24px}
+  main.wrap{max-width:1700px;margin-left:232px;margin-right:24px}
+  main.wrap[data-v="start"]{max-width:1700px;margin-left:232px;margin-right:24px}
   .dash{grid-template-columns:minmax(0,1fr) clamp(320px,22vw,380px)}
 }
 @media (min-width:1500px){
@@ -661,6 +661,12 @@ body{background-color:transparent}
   .collage{min-height:290px}.collage img{height:230px}.collage .c1{height:208px}.collage .c2{height:214px}.collage .c3{height:250px;margin-left:-100px}
   .ask{width:156px;height:156px}
 }
+/* phần thông tin cho phụ huynh đọc: chữ to hơn (23/10/2026) */
+main.wrap:is([data-v="exam"],[data-v="school"],[data-v="course"],[data-v="plan"],[data-v="progress"],[data-v="report"],[data-v="share"]){font-size:1.12rem}
+main.wrap:is([data-v="exam"],[data-v="school"],[data-v="course"],[data-v="plan"],[data-v="progress"],[data-v="report"]) :is(table,th,.small,.ix-kpis span,.pill,.sfacts,dt,dd,summary,li){font-size:max(1rem,.95em)}
+main.wrap:is([data-v="exam"],[data-v="school"],[data-v="course"],[data-v="plan"],[data-v="report"]) .card h3{font-size:1.4rem}
+main.wrap:is([data-v="exam"],[data-v="school"],[data-v="course"],[data-v="plan"],[data-v="report"]) h2{font-size:2.1rem}
+main.wrap[data-v="exam"] .hung-say p,main.wrap[data-v="exam"] .lead{font-size:1.15rem;max-width:none}
 </style>
 
 <header class="top hq">
