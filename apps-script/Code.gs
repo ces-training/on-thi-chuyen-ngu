@@ -17,10 +17,11 @@
  *   3. Bản trả phí (cột paid của sheet Học sinh khác rỗng): nhận xét chi tiết theo 4 tiêu chí bài viết đề chuyên.
  *      Con chưa trả phí bấm "Mình muốn mua" → ghi vào sheet "Yêu cầu mua" và nhắn cho cô.
  *
- * Lượt chấm máy (cột credits của sheet Học sinh): mỗi bài giấy máy chấm xong trừ 1 lượt. Giá công bố: 4.000đ/bài,
- * gói thử 14 bài 50.000đ. Hết lượt thì không gửi ảnh được; bố mẹ điền form xin mã / mua thêm lượt.
- * Form của bố mẹ (action 'request', không cần mã): lưu vào sheet "Phụ huynh đăng ký", ảnh bài (nếu nhờ cô chấm tay)
- * lưu Drive, gửi email cho cô (Script property TEACHER_EMAIL, mặc định email của tài khoản chạy máy chủ).
+ * Máy chấm bản thường (trắc nghiệm có giải thích, chép và chấm bài viết) miễn phí với mọi mã học sinh.
+ * Nhận xét chi tiết theo tiêu chí đề chuyên tính phí: 4.000đ/bài, gói 14 bài 50.000đ. Cột credits của sheet Học sinh
+ * là số lượt chấm chi tiết đã mua; mỗi bài xem nhận xét chi tiết trừ 1 lượt (học sinh có cột paid = gói học thì không trừ).
+ * Form mua lượt của bố mẹ (action 'request', không cần mã): lưu vào sheet "Phụ huynh đăng ký", gửi email cho cô
+ * (Script property TEACHER_EMAIL, mặc định email của tài khoản chạy máy chủ). Cô thu tiền rồi cấp mã / cộng lượt.
  */
 
 var SHEETS = {
@@ -30,11 +31,11 @@ var SHEETS = {
   orders: { name: 'Yêu cầu mua', cols: ['id', 'ts', 'code', 'name', 'product', 'status', 'note'] },
   requests: { name: 'Phụ huynh đăng ký', cols: ['id', 'ts', 'parent', 'phone', 'email', 'child', 'grade', 'region', 'school', 'want', 'pack', 'note', 'fileIds', 'consent', 'status', 'code', 'teacherNote'] }
 };
-var PRICE_PER = 4000, PACKS = { thu14: { n: 14, price: 50000, label: 'Gói thử 14 bài · 50.000đ' }, le: { n: 1, price: 4000, label: 'Chấm lẻ · 4.000đ/bài' } };
+var PRICE_PER = 4000, PACKS = { thu14: { n: 14, price: 50000, label: 'Gói 14 bài · 50.000đ' }, le: { n: 1, price: 4000, label: 'Lẻ · 4.000đ/bài' } };
 /* gói: 'thu14' hoặc 'le:<số bài>' */
 function packInfo_(pack) {
   var m = /^le:(\d{1,3})$/.exec(String(pack || ''));
-  if (m) { var n = Math.max(1, Math.min(200, Number(m[1]))); return { n: n, price: n * PRICE_PER, label: 'Chấm lẻ ' + n + ' bài · ' + (n * PRICE_PER).toLocaleString('vi-VN') + 'đ' }; }
+  if (m) { var n = Math.max(1, Math.min(200, Number(m[1]))); return { n: n, price: n * PRICE_PER, label: 'Lẻ ' + n + ' bài · ' + (n * PRICE_PER).toLocaleString('vi-VN') + 'đ' }; }
   return PACKS.thu14;
 }
 var DEFAULT_MODEL = 'claude-sonnet-5-5';
@@ -209,7 +210,6 @@ function upload_(st, day, images) {
   if (!(day >= 1 && day <= 14)) throw new Error('bad_day');
   if (!images || !images.length) throw new Error('no_images');
   if (images.length > MAX_IMAGES) throw new Error('too_many_images');
-  if (credits_(st) <= 0) return { ok: false, error: 'no_credit' };
   var folder = studentFolder_(st.code), ids = [], stamp = Utilities.formatDate(new Date(), 'Asia/Ho_Chi_Minh', 'yyyyMMdd-HHmmss');
   images.forEach(function (im, i) {
     var data = String(im.data || '');
@@ -305,12 +305,7 @@ function gradeUpload_(id) {
       graded.score = graded.items.filter(function (it) { return it.correct === true; }).length;
     }
     update_('uploads', row._row, { status: 'graded', score: graded.score, total: graded.total, result: clip_(JSON.stringify(graded), 48000), updated: now_(), error: '' });
-    // trừ 1 lượt chấm khi máy chấm được lần đầu (ảnh không đọc được thì không trừ; cô bấm chấm lại thì không trừ thêm)
-    if (!row.charged && !graded.unreadable) withLock_(function () {
-      var st = find_('students', 'code', row.code);
-      if (st) update_('students', st._row, { credits: Math.max(0, credits_(st) - 1) });
-      update_('uploads', row._row, { charged: now_() });
-    });
+
     updatePaperAvg_(row.code);
     return graded;
   } catch (e) {
@@ -492,10 +487,10 @@ var DETAIL_PROMPT = [
 ].join('\n');
 
 function writingDetail_(st, uploadId) {
-  if (!isPaid_(st)) return { ok: false, error: 'not_paid' };
   var u = ownUpload_(st, uploadId), res = u.res, w = res.writing;
   if (w.status !== 'graded') throw new Error('writing_not_confirmed');
-  if (w.detail) return { ok: true, writing: w };
+  if (w.detail) return { ok: true, writing: w, credits: credits_(st) };
+  if (!isPaid_(st) && credits_(st) <= 0) return { ok: false, error: 'no_credit' };
   var key = keyForStudent_(PAPER_KEYS[String(u.row.day)], st.code);
   var p = PropertiesService.getScriptProperties();
   var prompt = 'ĐỀ: ' + key.writing.task + '\nTối thiểu ' + key.writing.min_words + ' từ.\nTrọng tâm của buổi: ' + (key.writing.checklist || []).join(' / ') +
@@ -514,11 +509,13 @@ function writingDetail_(st, uploadId) {
     next: (r.next || []).slice(0, 3).map(function (x) { return clip_(x, 300); }),
     summary: clip_(r.summary, 600), at: now_()
   };
+  var left = credits_(st);
   withLock_(function () {
     var row = find_('uploads', 'id', uploadId);
-    update_('uploads', row._row, { result: clip_(JSON.stringify(res), 48000), updated: now_() });
+    update_('uploads', row._row, { result: clip_(JSON.stringify(res), 48000), updated: now_(), charged: isPaid_(st) ? 'gói học' : now_() });
+    if (!isPaid_(st)) { var fresh = find_('students', 'code', st.code); left = Math.max(0, credits_(fresh) - 1); update_('students', fresh._row, { credits: left }); }
   });
-  return { ok: true, writing: w };
+  return { ok: true, writing: w, credits: left };
 }
 
 /* con bấm "Mình muốn mua bản trả phí" → ghi yêu cầu + nhắn cô */
@@ -547,18 +544,10 @@ function request_(q) {
   if (!parent || !child) throw new Error('missing_name');
   if (!/^[0-9+ ]{9,15}$/.test(phone) && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) throw new Error('missing_contact');
   if (q.consent !== true) throw new Error('need_consent');
-  var want = q.want === 'cham_tay' ? 'cham_tay' : 'ma_may', pack = /^le:\d{1,3}$/.test(String(q.pack)) ? String(q.pack) : 'thu14';
-  var images = (q.images || []).slice(0, MAX_IMAGES), ids = [], id = uid_('R');
-  if (want === 'cham_tay' && images.length) {
-    var root = rootFolder_(), it = root.getFoldersByName('Phụ huynh gửi bài'), folder = it.hasNext() ? it.next() : root.createFolder('Phụ huynh gửi bài');
-    images.forEach(function (im, i) {
-      var data = String(im.data || '');
-      if (data.length > MAX_IMAGE_B64) throw new Error('image_too_big');
-      ids.push(folder.createFile(Utilities.newBlob(Utilities.base64Decode(data), 'image/jpeg', id + '_' + (i + 1) + '.jpg')).getId());
-    });
-  }
+  var pack = /^le:\d{1,3}$/.test(String(q.pack)) ? String(q.pack) : 'thu14', id = uid_('R');
+  var known = getStudent_(q.code);
   var row = { id: id, ts: now_(), parent: parent, phone: phone, email: email, child: child, grade: Number(q.grade) || '', region: clip_(q.region, 60),
-    school: clip_(q.school, 120), want: want, pack: want === 'ma_may' ? pack : '', note: clip_(q.note, 1000), fileIds: ids.join(','), consent: now_(), status: 'mới' };
+    school: clip_(q.school, 120), want: 'chi_tiet', pack: pack, note: clip_(q.note, 1000), fileIds: '', consent: now_(), status: 'mới', code: known ? known.code : '' };
   withLock_(function () { insert_('requests', row); });
   try { mailTeacher_(row); } catch (e) { /* email lỗi thì yêu cầu vẫn nằm trong sheet và trang của cô */ }
   return { ok: true, id: id };
@@ -570,17 +559,16 @@ function teacherEmail_() {
 }
 function mailTeacher_(r) {
   var to = teacherEmail_(); if (!to) return;
-  var what = r.want === 'cham_tay' ? 'Nhờ cô xem bài và nhận xét' : 'Xin mã để máy chấm · ' + packInfo_(r.pack).label;
+  var what = 'Mua lượt nhận xét chi tiết bài viết · ' + packInfo_(r.pack).label;
   var body = [
     'Phụ huynh vừa điền form trên web Chuyên Anh 14 Ngày.', '',
     'Yêu cầu: ' + what,
     'Phụ huynh: ' + r.parent + ' · ĐT/Zalo: ' + (r.phone || '—') + ' · Email: ' + (r.email || '—'),
     'Học sinh: ' + r.child + ' · lớp ' + (r.grade || '—') + ' · ' + (r.region || '') + (r.school ? ' · nhắm ' + r.school : ''),
+    r.code ? 'Con đã có mã: ' + r.code + ' (cấp lượt sẽ cộng vào mã này)' : 'Con chưa có mã (cấp lượt sẽ tạo mã mới)',
     r.note ? 'Lời nhắn: ' + r.note : '',
-    r.fileIds ? 'Ảnh bài làm: ' + r.fileIds.split(',').map(function (f) { return 'https://drive.google.com/file/d/' + f + '/view'; }).join('  ') : '',
     '',
-    r.want === 'cham_tay' ? 'Cô xem ảnh, rồi trả lời phụ huynh qua email hoặc Zalo. Trả lời xong, đánh dấu "đã phản hồi" ở trang của cô.'
-      : 'Cô thu ' + packInfo_(r.pack).price.toLocaleString('vi-VN') + 'đ, rồi vào trang của cô → Phụ huynh đăng ký → "Cấp mã" (máy tạo mã kèm ' + packInfo_(r.pack).n + ' lượt chấm và gửi email cho phụ huynh nếu có email).',
+    'Cô thu ' + packInfo_(r.pack).price.toLocaleString('vi-VN') + 'đ, rồi vào trang của cô → Phụ huynh đăng ký → "Đã thu tiền · cấp lượt" (cộng ' + packInfo_(r.pack).n + ' lượt chấm chi tiết và gửi email mã cho phụ huynh nếu có email).',
     '', 'Trang của cô: https://ces-training.github.io/on-thi-chuyen-ngu/co/'
   ].filter(function (x) { return x !== ''; }).join('\n');
   MailApp.sendEmail({ to: to, subject: '[Chuyên Anh 14 Ngày] ' + what + ' · ' + r.child, body: body, replyTo: r.email || undefined });
@@ -589,7 +577,7 @@ function mailTeacher_(r) {
 function tRequests_() {
   var list = rows_('requests').map(function (r) {
     return { id: r.id, ts: r.ts, parent: r.parent, phone: String(r.phone || ''), email: r.email, child: r.child, grade: r.grade, region: r.region, school: r.school,
-      want: r.want, pack: r.pack, packLabel: r.want === 'ma_may' ? packInfo_(r.pack).label : '', packN: r.want === 'ma_may' ? packInfo_(r.pack).n : 0, note: r.note, fileIds: String(r.fileIds || '').split(',').filter(String), status: r.status, code: r.code, teacherNote: r.teacherNote };
+      want: r.want, pack: r.pack, packLabel: packInfo_(r.pack).label, packN: packInfo_(r.pack).n, note: r.note, fileIds: String(r.fileIds || '').split(',').filter(String), status: r.status, code: r.code, teacherNote: r.teacherNote };
   }).reverse();
   return { ok: true, requests: list, packs: PACKS };
 }
@@ -597,18 +585,18 @@ function tRequests_() {
 function tReqIssue_(id, credits, sendEmail) {
   var r = find_('requests', 'id', id);
   if (!r) throw new Error('no_request');
-  var n = Math.max(0, Number(credits) || (r.want === 'ma_may' ? packInfo_(r.pack).n : 14));
+  var n = Math.max(0, Number(credits) || packInfo_(r.pack).n);
   var code = r.code;
   if (code && getStudent_(code)) tCredits_(code, n);
   else { code = tAdd_(r.child, r.grade, n).code; }
-  withLock_(function () { var x = find_('requests', 'id', id); update_('requests', x._row, { status: 'đã cấp mã', code: code }); });
+  withLock_(function () { var x = find_('requests', 'id', id); update_('requests', x._row, { status: 'đã cấp lượt', code: code }); });
   var mailed = false;
   if (sendEmail && r.email) {
     MailApp.sendEmail({ to: r.email, replyTo: teacherEmail_(),
       subject: 'Mã học sinh của ' + r.child + ' · Chuyên Anh 14 Ngày',
-      body: 'Chào phụ huynh của ' + r.child + ',\n\nMã học sinh của con: ' + code + ' (' + n + ' lượt máy chấm bài giấy).\n' +
+      body: 'Chào phụ huynh của ' + r.child + ',\n\nMã học sinh của con: ' + code + '. CES đã cộng ' + n + ' lượt nhận xét chi tiết bài viết theo tiêu chí đề chuyên.\n' +
         'Con mở https://ces-training.github.io/on-thi-chuyen-ngu/chuyen-anh-14-ngay/ , ở Trang chủ nhập mã vào ô "Nhập mã học sinh cô gửi". ' +
-        'Từ đó con chụp bài giấy ở bước 7 của mỗi buổi để máy chấm; mỗi bài máy chấm xong trừ 1 lượt.\n\nCES – Học viện Đa ngữ Anh–Trung' });
+        'Con chụp bài giấy ở bước 7 của mỗi buổi; máy chấm miễn phí phần trắc nghiệm và đoạn viết. Khi muốn xem nhận xét chi tiết một bài viết, con bấm "Xem nhận xét chi tiết", mỗi bài dùng 1 lượt.\n\nCES – Học viện Đa ngữ Anh–Trung' });
     mailed = true;
   }
   return { ok: true, code: code, credits: n, mailed: mailed };

@@ -1282,8 +1282,8 @@ function renderPaperKey(n,unlocked){
   renderPaperKeyLocal(n,unlocked,$('#paperCard'));
   // chưa có mã học sinh: vẫn thấy chỗ chụp bài, kèm cách lấy mã
   if(API&&!PREVIEW&&!S.code&&unlocked){const c=$('#paperCard');c.insertAdjacentHTML('afterbegin',`<div class="up-box"><h3 class="ih">${em('camera-with-flash')}Chụp bài giấy để máy chấm</h3>
-    <p class="small">Máy chấm phần trắc nghiệm và điền từ từ ảnh bài làm, giải thích câu sai, rồi chép đoạn viết của cậu thành chữ để cậu kiểm tra trước khi chấm. Để gửi ảnh, cậu cần mã học sinh 6 ký tự. Máy chấm 4.000đ mỗi bài; gói thử 14 bài 50.000đ.</p>
-    <div class="row"><button class="btn hi" id="goCode">Mình có mã rồi · nhập mã</button><button class="btn" id="goReq">Bố mẹ điền form xin mã</button></div><p class="small muted">Trong lúc chờ, cậu vẫn tự chấm được bằng đáp án bên dưới.</p></div>`);
+    <p class="small">Máy chấm phần trắc nghiệm và điền từ từ ảnh bài làm, giải thích câu sai, rồi chép đoạn viết của cậu thành chữ để cậu kiểm tra trước khi chấm. Máy chấm bản thường miễn phí; để gửi ảnh, cậu cần mã học sinh 6 ký tự. Nhận xét chi tiết theo tiêu chí đề chuyên: 4.000đ/bài, gói 14 bài 50.000đ (mua kèm mã).</p>
+    <div class="row"><button class="btn hi" id="goCode">Mình có mã rồi · nhập mã</button><button class="btn" id="goReq">Bố mẹ mua lượt chấm chi tiết</button></div><p class="small muted">Trong lúc chờ, cậu vẫn tự chấm được bằng đáp án bên dưới.</p></div>`);
     $('#goReq').onclick=()=>go('xinma');
     $('#goCode').onclick=()=>{go('start');setTimeout(()=>{const i=$('#codeLogin');if(i){i.scrollIntoView({block:'center'});i.focus()}},200)}}
 }
