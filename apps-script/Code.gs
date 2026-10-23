@@ -344,7 +344,7 @@ var SYSTEM_PROMPT = [
   'Ghi chú (note) bằng tiếng Việt, ngắn (tối đa 25 từ), giải thích vì sao sai và gợi ý cách nhớ; câu đúng để note rỗng.',
   'Câu sai: note phải nói vì sao đáp án đúng là đúng (nghĩa, cấu trúc hoặc dấu hiệu trong câu) và vì sao câu học sinh viết chưa đúng.',
   'Bài viết (phần F hoặc đoạn viết dài): KHÔNG chấm. Chỉ chép lại NGUYÊN VĂN những gì học sinh viết, giữ đúng cả lỗi chính tả, ngữ pháp, dấu câu và xuống dòng; không sửa, không thêm, không bỏ chữ nào. Từ nào không đọc được thì ghi [?] tại chỗ đó và liệt kê vào "unclear".',
-  'Trả kết quả qua công cụ tra_ket_qua, theo mẫu:',
+  'Chỉ trả về MỘT đối tượng JSON hợp lệ, không thêm chữ nào khác (trong chuỗi, trích dẫn bằng dấu nháy đơn, không dùng dấu ngoặc kép), theo mẫu:',
   '{"items":[{"label":"A.1","read":"...","correct":true,"note":""}],"writing":{"read":"nguyên văn bài viết","unclear":["từ hoặc đoạn không đọc chắc"]},"overall":"2–3 câu nhận xét chung về phần trắc nghiệm, điền từ, bằng tiếng Việt","unreadable":false}',
   'Nếu buổi không có bài viết hoặc học sinh không viết, đặt "writing": null.',
   'Nếu ảnh không phải bài làm, đặt "unreadable": true và "items": [].'
@@ -353,7 +353,7 @@ var SYSTEM_PROMPT = [
 function callClaude_(images, key) {
   var p = PropertiesService.getScriptProperties();
   return claudeJson_(p.getProperty('MODEL') || DEFAULT_MODEL, SYSTEM_PROMPT,
-    images.concat([{ type: 'text', text: keyText_(key) + '\n\nHãy chấm các ảnh bài làm ở trên theo đáp án này và trả kết quả qua công cụ tra_ket_qua.' }]), 8000, GRADE_SCHEMA);
+    images.concat([{ type: 'text', text: keyText_(key) + '\n\nHãy chấm các ảnh bài làm ở trên theo đáp án này và trả về JSON.' }]), 8000);
 }
 
 /* gọi Claude, trả về đối tượng JSON. Có schema thì bắt mô hình trả qua công cụ (tool use) nên kết quả luôn là JSON hợp lệ. */
@@ -467,9 +467,6 @@ var DETAIL_SCHEMA = { type: 'object', required: ['criteria', 'errors', 'upgrades
   errors: { type: 'array', items: { type: 'object', required: ['quote', 'fix', 'why', 'type'], properties: { quote: STR, fix: STR, why: STR, type: STR } } },
   upgrades: { type: 'array', items: { type: 'object', required: ['from', 'to', 'why'], properties: { from: STR, to: STR, why: STR } } },
   next: STRS, summary: STR } };
-var GRADE_SCHEMA = { type: 'object', required: ['items', 'overall', 'unreadable'], properties: {
-  items: { type: 'array', items: { type: 'object', required: ['label', 'read', 'correct', 'note'], properties: { label: STR, read: STR, correct: { type: ['boolean', 'null'] }, note: STR } } },
-  writing: { type: ['object', 'null'], properties: { read: STR, unclear: STRS } }, overall: STR, unreadable: { type: 'boolean' } } };
 
 function gradeWritingFree_(task, text) {
   var p = PropertiesService.getScriptProperties();
