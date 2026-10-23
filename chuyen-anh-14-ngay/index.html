@@ -3647,7 +3647,12 @@ function bootReport(){const h=location.hash||'';if(!h.startsWith('#bc='))return 
 const QG_URL='https://quangiahoctap.ducanh-2692yb.chatgpt.site/';
 const GD_PRICE={1:790000,2:1190000,3:1590000,4:2190000};
 const vnd=n=>Number(n||0).toLocaleString('vi-VN')+'đ';
-const SALES_ON=()=>!!API&&!PREVIEW;
+/* chỉ bật khi máy chủ đã có phễu bán hàng (hành động prices trả về bảng giá Gói Web); máy chủ cũ thì ẩn hết form để bố mẹ không gặp lỗi */
+let SALES_READY=(()=>{try{return sessionStorage.getItem('ces_sales')==='1'}catch(e){return false}})();
+const SALES_ON=()=>!!API&&!PREVIEW&&SALES_READY;
+if(API&&!PREVIEW&&!SALES_READY)setTimeout(()=>{api('prices').then(r=>{if(r&&r.web){SALES_READY=true;CAPACITY=r.capacity||null;try{sessionStorage.setItem('ces_sales','1')}catch(e){}
+  if(ASK_VIEWS[VIEW]){const sec=M().querySelector('section.view');if(sec&&!sec.querySelector('.sl-ask'))sec.insertAdjacentHTML('beforeend',askCardHTML(VIEW))}
+  else if(['start','goi','report'].includes(VIEW)||(VIEW==='diag'&&S.diag))go(VIEW)}}).catch(()=>{})},0);
 Object.assign(ERR_VI,{missing_phone:'Cô chú để lại số Zalo giúp cháu nhé ạ (9–11 chữ số).',bad_pack:'Cô chú chọn lại gói giúp cháu nhé ạ.'});
 
 /* nguồn khách: lưu một lần ở lần mở đầu tiên (utm_source / utm_medium / utm_campaign, ?ref=mã giới thiệu, trang dẫn tới) */

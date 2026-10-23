@@ -105,7 +105,7 @@ async function api(action,data){const r=await fetch(API,{method:'POST',headers:{
 const when=t=>t?new Date(t).toLocaleString('vi-VN',{hour:'2-digit',minute:'2-digit',day:'2-digit',month:'2-digit'}):'—';
 const vnd=n=>(Number(n)||0).toLocaleString('vi-VN')+'đ';
 const lv=k=>k?({preA2:'Dưới A2'}[k]||k):'—';
-const ERR={bad_pin:'Sai mã PIN.',busy:'Sai PIN quá nhiều lần, thử lại sau 10 phút.',forbidden:'Tài khoản này không có quyền xem phần đó.'};
+const ERR={bad_pin:'Sai mã PIN.',busy:'Sai PIN quá nhiều lần, thử lại sau 10 phút.',forbidden:'Tài khoản này không có quyền xem phần đó.',unknown_action:'Máy chủ chưa cập nhật phiên bản mới có phần này. Cô triển khai phiên bản mới trong Apps Script là dùng được.'};
 const err=e=>ERR[e&&e.code]||'Chưa kết nối được máy chủ.';
 const TABS={admin:[['tong','Tổng quan'],['viec','Việc hôm nay'],['gd','Gia đình'],['don','Đơn gói học'],['hs','Học sinh'],['dk','Mua lượt nhận xét'],['tv','Lịch tư vấn'],['ns','Nhân sự & phân quyền'],['nk','Nhật ký thao tác'],['gt','Giao tiếp với học sinh']],
   quanly:[['tong','Tổng quan'],['viec','Việc hôm nay'],['gd','Gia đình'],['don','Đơn gói học'],['hs','Học sinh'],['dk','Mua lượt nhận xét'],['tv','Lịch tư vấn'],['ns','Nhân sự & phân quyền'],['nk','Nhật ký thao tác']],
