@@ -141,7 +141,52 @@ tr.click{cursor:pointer}tr.click:hover td{background:var(--agent-tint)}
 .err{color:var(--bad)}
 .code{font-family:var(--f-mono);font-size:1.3rem;font-weight:700;letter-spacing:.08em;background:var(--gold-tint);color:var(--gold-ink);padding:2px 10px;border-radius:8px}
 details summary{cursor:pointer;font-weight:700}
+/*APPLOOK*/
+/* ===== Giao diện teen (22/10/2026): cắt dán scrapbook, tông xanh ngọc – trắng – điểm vàng, trung tính =====
+   Nền xanh ngọc có hình vẽ phấn trắng; bài làm nằm trên tờ giấy trắng; người là sticker viền trắng; tiêu đề chữ viết tay (Mali). */
+:root{
+  --teal:#4AA3B6; --teal-deep:#1F6F80; --stk:drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(3px 6px 6px rgba(10,40,48,.28));
+  --paper:#FFFDF7; --grid:#EDF3F3; --surface:#FFFFFF; --surface2:#F0F6F7;
+  --ink:#14303A; --ink-2:#4A5F66; --line:#D5E2E5; --line-strong:#A8BCC2;
+  --agent:#1F7A8C; --agent-deep:#145867; --agent-tint:#E0F1F4; --on-agent:#FFFFFF;
+  --bar:#FFFFFF; --bar-ink:#14303A; --bar-ink-2:#4A5F66; --bar-on:#1F7A8C; --bar-on-ink:#FFFFFF;
+  --gold:#FFD23F; --gold-deep:#D9A90F; --gold-tint:#FFF4C4; --gold-ink:#3D2E00;
+  --f-display:"Mali","Be Vietnam Pro",system-ui,sans-serif;
+  --f-body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-hand:"Patrick Hand","Mali",cursive;
+  --r-card:16px; --shadow:0 6px 0 rgba(10,40,48,.2);
+  --t-done:#C4E8EF; --t-done-edge:#1F7A8C; --t-part:#FFF0B3; --t-part-edge:#D9A90F;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --teal:#123E48; --teal-deep:#0C2C34; --paper:#16262B; --grid:#1B2E34; --surface:#1C3036; --surface2:#24393F;
+  --ink:#ECF3F4; --ink-2:#B3C4C8; --line:#2F474E; --line-strong:#4A666E;
+  --agent:#7CCFE0; --agent-deep:#3E8C9C; --agent-tint:#1D4650; --on-agent:#0B2228;
+  --bar:#1C3036; --bar-ink:#ECF3F4; --bar-ink-2:#B3C4C8; --bar-on:#7CCFE0; --bar-on-ink:#0B2228;
+  --gold-tint:#3A3215; --gold-ink:#FFE7A6; --shadow:0 6px 0 rgba(0,0,0,.35); --t-done:#1D4650; --t-done-edge:#7CCFE0; --t-part:#4D3D0E; --t-part-edge:#E0A200}}
+:root[data-theme="dark"]{
+  --teal:#123E48; --teal-deep:#0C2C34; --paper:#16262B; --grid:#1B2E34; --surface:#1C3036; --surface2:#24393F;
+  --ink:#ECF3F4; --ink-2:#B3C4C8; --line:#2F474E; --line-strong:#4A666E;
+  --agent:#7CCFE0; --agent-deep:#3E8C9C; --agent-tint:#1D4650; --on-agent:#0B2228;
+  --bar:#1C3036; --bar-ink:#ECF3F4; --bar-ink-2:#B3C4C8; --bar-on:#7CCFE0; --bar-on-ink:#0B2228;
+  --gold-tint:#3A3215; --gold-ink:#FFE7A6; --shadow:0 6px 0 rgba(0,0,0,.35); --t-done:#1D4650; --t-done-edge:#7CCFE0; --t-part:#4D3D0E; --t-part-edge:#E0A200}
+
+/* ----- áp cho các trang phụ (Tuyển sinh Hà Nội, trang của cô) để cùng giao diện với trang học sinh ----- */
+html{background:#4AA3B6 url("../assets/bg/khoi-cat.svg") center/cover no-repeat fixed}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){background-image:linear-gradient(rgba(6,20,24,.62),rgba(6,20,24,.62)),url("../assets/bg/khoi-cat.svg")}}
+body{background:transparent!important;background-image:none!important;font-family:var(--f-body);color:var(--ink)}
+h1,h2,h3{font-family:var(--f-display);letter-spacing:0}
+header.hq{background:var(--paper)!important;color:var(--ink)!important;max-width:1180px;margin:16px auto 0;border-radius:18px;box-shadow:6px 8px 0 rgba(10,40,48,.22)}
+header.hq h1,header.hq b{color:var(--ink)!important}
+header.hq p,header.hq span{color:var(--ink-2)!important}
+header.hq a{color:var(--agent)!important}
+main{background-color:var(--paper);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;border-radius:18px;box-shadow:6px 8px 0 rgba(10,40,48,.22);max-width:1180px;margin:22px auto 40px!important;padding:26px 22px 40px!important;position:relative;box-sizing:border-box}
+main::before{content:"";position:absolute;top:-13px;left:calc(50% - 60px);width:120px;height:26px;background:rgba(255,210,63,.8);transform:rotate(-2deg)}
+@media (max-width:1220px){header.hq,main{margin-left:10px!important;margin-right:10px!important}}
+footer{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.4)}footer a{color:#FFF4C4}
+.eyebrow{color:var(--agent);font-family:var(--f-hand)}
+/*/APPLOOK*/
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Mali:wght@600;700&family=Patrick+Hand&family=JetBrains+Mono:wght@500;700&display=swap">
 </head>
 <body>
 <header class="hq"><div class="in">

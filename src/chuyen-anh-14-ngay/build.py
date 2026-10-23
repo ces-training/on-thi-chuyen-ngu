@@ -55,7 +55,18 @@ def calc_view(r):
 RLIST = [dict(r, has=r["slug"] in REG) for r in json.load(open(rdir / "_list.json", encoding="utf-8"))]
 school_js = (here / "school.js").read_text(encoding="utf-8").replace("__REGIONS__", json.dumps({k: calc_view(v) for k, v in REG.items()}, ensure_ascii=False)).replace("__REGION_LIST__", json.dumps(RLIST, ensure_ascii=False))
 brand = (repo / "src" / "brand" / "brand.css").read_text(encoding="utf-8")
-body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__COURSE_JS__*/", (here / "course.js").read_text(encoding="utf-8")).replace("/*__MAP_JS__*/", (here / "map.js").read_text(encoding="utf-8")).replace("/*__REPORT_JS__*/", (here / "report.js").read_text(encoding="utf-8")).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8") + "\n" + (here / "games2.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
+APPLOOK = (here.parent / "brand" / "app-look.css").read_text(encoding="utf-8")
+FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Mali:wght@600;700&family=Patrick+Hand&family=JetBrains+Mono:wght@500;700&display=swap">'
+def app_look(t):
+    """chèn (hoặc làm mới) khối giao diện chung + phông chữ của trang học sinh vào một trang phụ"""
+    if "/*APPLOOK*/" in t:
+        t = re.sub(r"/\*APPLOOK\*/.*?/\*/APPLOOK\*/", lambda m: "/*APPLOOK*/\n" + APPLOOK + "/*/APPLOOK*/", t, flags=re.S)
+    else:
+        t = t.replace("</style>", "/*APPLOOK*/\n" + APPLOOK + "/*/APPLOOK*/\n</style>", 1)
+    if "family=Mali" not in t:
+        t = t.replace("</head>", FONTS + "\n</head>", 1)
+    return t
+body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__COURSE_JS__*/", (here / "course.js").read_text(encoding="utf-8")).replace("/*__MAP_JS__*/", (here / "map.js").read_text(encoding="utf-8")).replace("/*__INFO_JS__*/", (here / "info.js").read_text(encoding="utf-8")).replace("/*__REPORT_JS__*/", (here / "report.js").read_text(encoding="utf-8")).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8") + "\n" + (here / "games2.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
 page = (
     "<!doctype html>\n<html lang=\"vi\">\n<head>\n<meta charset=\"utf-8\">\n"
     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
@@ -79,13 +90,13 @@ themes = json.dumps([{"day": d["day"], "theme": d.get("theme_vi", "")} for d in 
 co_tpl = (here.parent / "co" / "template.html").read_text(encoding="utf-8")
 co = co_tpl.replace("/*__BRAND_CSS__*/", brand).replace("__API_URL__", api).replace("__THEMES__", themes)
 (repo / "co").mkdir(exist_ok=True)
-(repo / "co" / "index.html").write_text(co, encoding="utf-8")
+(repo / "co" / "index.html").write_text(app_look(co), encoding="utf-8")
 print("built", repo / "co" / "index.html")
 
 # ---- trang viết tay (trang chủ, tuyển sinh): làm mới khối CSS dùng chung giữa hai dấu /*BRAND*/ … /*/BRAND*/ ----
-for f in [repo / "index.html", repo / "tuyen-sinh" / "index.html"]:
+for f in [repo / "tuyen-sinh" / "index.html"]:
     t = f.read_text(encoding="utf-8")
-    t2 = re.sub(r"/\*BRAND\*/.*?/\*/BRAND\*/", lambda m: "/*BRAND*/\n" + brand + "/*/BRAND*/", t, flags=re.S)
+    t2 = app_look(re.sub(r"/\*BRAND\*/.*?/\*/BRAND\*/", lambda m: "/*BRAND*/\n" + brand + "/*/BRAND*/", t, flags=re.S))
     if t2 != t:
         f.write_text(t2, encoding="utf-8"); print("brand css ->", f)
 
@@ -148,7 +159,16 @@ def national_html():
     return re.sub(r"(https?://[^\s<]+)", r'<a href="\1" target="_blank" rel="noopener">Đọc bài gốc</a>', h).replace("<strong>URL:</strong>", "<strong>Nguồn:</strong>")
 tdata = {"national": national_html(), "list": RLIST, "fmt": FMT, "updated": datetime.date.today().strftime("%d/%m/%Y"),
          "regions": {k: {kk: v.get(kk) for kk in TINH_KEYS} for k, v in REG.items() if k != "ha-noi"}}
-ttpl = (here.parent / "tinh" / "template.html").read_text(encoding="utf-8")
+# thông tin chi tiết từng sở cho tab "Thông tin thi" của trang học sinh (tải khi cần)
+(repo / "chuyen-anh-14-ngay" / "regions-info.json").write_text(json.dumps(tdata, ensure_ascii=False), encoding="utf-8")
+print("built regions-info.json", len(REG) - 1, "sở có dữ liệu")
+# trang cũ tinh/ và trang chủ: chuyển thẳng vào trang học sinh (mọi thông tin nằm trong tab Thông tin thi, cùng một giao diện)
+REDIR = """<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ôn thi chuyên ngữ</title>
+<style>html{background:#4AA3B6 url("ASSETS/assets/bg/khoi-cat.svg") center/cover no-repeat fixed}body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:system-ui,sans-serif}a{background:#FFD23F;color:#14303A;border:3px solid #14303A;border-radius:12px;padding:12px 18px;font-weight:700;text-decoration:none;box-shadow:4px 5px 0 rgba(10,40,48,.35)}</style>
+<script>(function(){var h=(location.hash||"").slice(1);location.replace("TARGET"+(h&&h!=="kinh-nghiem"?"?so="+encodeURIComponent(h)+"&v=exam":"?v=exam"))})();</script>
+</head><body><a href="TARGET?v=exam">Vào trang Ôn thi chuyên ngữ</a></body></html>
+"""
 (repo / "tinh").mkdir(exist_ok=True)
-(repo / "tinh" / "index.html").write_text(ttpl.replace("/*__BRAND_CSS__*/", brand).replace("__DATA__", json.dumps(tdata, ensure_ascii=False).replace("</", "<\\/")), encoding="utf-8")
-print("built", repo / "tinh" / "index.html", len(REG) - 1, "sở có dữ liệu")
+(repo / "tinh" / "index.html").write_text(REDIR.replace("TARGET", "../chuyen-anh-14-ngay/").replace("ASSETS/", "../"), encoding="utf-8")
+(repo / "index.html").write_text(REDIR.replace("TARGET", "chuyen-anh-14-ngay/").replace("ASSETS/", ""), encoding="utf-8")
+print("built redirects: tinh/, index.html")

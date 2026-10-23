@@ -672,6 +672,7 @@ body{background-color:transparent}
     </div>
     <nav class="tabs" role="tablist" id="tabs">
       <button role="tab" data-view="start"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7v9h-6v-6H9v6H3z"/></svg>Trang chủ</button>
+      <button role="tab" data-view="exam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Thông tin thi</button>
       <button role="tab" data-view="diag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".6" fill="currentColor"/></svg>Đầu vào</button>
       <button role="tab" data-view="days"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>14 ngày</button>
       <button role="tab" data-view="progress"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20v-7M12 20V5M19 20v-10"/></svg>Tiến bộ</button>
@@ -893,6 +894,7 @@ function lockedDayAct(){return S.diag?{label:'Về buổi '+lastOpenDay(),go:()=
 let GATE_MIN=false;
 function updateGate(){
   let g=document.getElementById('gate'),pill=document.getElementById('gatePill');
+  if(document.getElementById('regGate')){if(g)g.hidden=true;if(pill)pill.hidden=true;return}
   if(S.diag||pvOpen()||VIEW==='catalog'){if(g)g.remove();if(pill)pill.remove();document.body.classList.remove('gated');return}
   if(!g){g=document.createElement('div');g.id='gate';g.className='gate';g.setAttribute('role','dialog');g.setAttribute('aria-modal','true');g.setAttribute('aria-labelledby','gateT');
     g.innerHTML=`<div class="gate-card paper tape"><div class="gate-top">${hungFig()}<div><p class="eyebrow">Việc đầu tiên</p><h2 id="gateT">Làm bài đầu vào đã nha!</h2></div></div>
@@ -903,9 +905,10 @@ function updateGate(){
     g.querySelector('#gateGo').onclick=()=>go('diag');g.querySelector('#gateMin').onclick=()=>{GATE_MIN=true;updateGate()}}
   if(!pill){pill=document.createElement('button');pill.id='gatePill';pill.type='button';pill.className='gate-pill';
     pill.innerHTML=`<img src="${HUNG()}" alt=""><span><b>Bài đầu vào: chưa làm</b><small>Bấm để mở lại</small></span>`;
-    pill.onclick=()=>{GATE_MIN=false;updateGate()};document.body.appendChild(pill)}
+    pill.onclick=()=>{if(VIEW==='exam'){go('diag');return}GATE_MIN=false;updateGate()};document.body.appendChild(pill)}
   const onDiag=VIEW==='diag';
-  const open=!GATE_MIN&&!onDiag;
+  /* trang Thông tin thi: không che, chỉ hiện nút nhỏ ở góc (đọc thông tin trước rồi mới mời làm bài) */
+  const open=!GATE_MIN&&!onDiag&&VIEW!=='exam';
   g.hidden=!open;pill.hidden=open||onDiag;document.body.classList.toggle('gated',open);
   if(open){const b=g.querySelector('#gateGo');try{b.focus({preventScroll:true})}catch(e){}}
 }
@@ -1503,13 +1506,17 @@ function reportHTML(o){
    <p class="small muted">Mã tạo lúc ${new Date(o.at).toLocaleString('vi-VN')}.</p></div>`;
 }
 
+/*__INFO_JS__*/
 /*__REPORT_JS__*/
 /*__PREVIEW_JS__*/
 /* ---------- boot ---------- */
 /* ?so=<slug>: mở thẳng bộ ôn của một sở (từ trang Chuyên Anh các tỉnh) */
 try{const qs=new URLSearchParams(location.search).get('so');if(qs&&REGIONS[qs]&&S.region!==qs){S.region=qs;S.course=Object.assign({},S.course||{});if(!goalsList().some(g=>g.k===S.course.goal))S.course.goal=REG().goal_default||goalsList()[0].k;saveLocal()}}catch(e){}
 renderBrand();
-if(!bootReport())go(S.diag?(dayStatus(1)==='none'?'start':'days'):'start');
+renderRegionBar();
+if(!bootReport()){let v0=S.diag?(dayStatus(1)==='none'?'start':'days'):'exam';try{const qv=new URLSearchParams(location.search).get('v');if(qv&&views[qv])v0=qv}catch(e){}
+  if(new URLSearchParams(location.search).get('so')&&REGIONS[new URLSearchParams(location.search).get('so')]){S.regionSet=true;saveLocal()}
+  regionGate();go(v0)}
 if(cloudOn()){loadMy().catch(()=>{});if(!S.syncedAt||(S.savedAt||0)>S.syncedAt)doSync()}
 })();
 </script>

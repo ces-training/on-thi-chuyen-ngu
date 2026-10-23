@@ -11,7 +11,7 @@ function regionExams(){return REG().exams||{}}
 function regionPapers(){return REG().papers||{}}
 function regionPickerHTML(id){const cur=regionKey();
   return `<label class="fld">Cậu thi vào lớp 10 ở<select id="${id}">${REGION_LIST.map(r=>`<option value="${r.slug}" ${r.slug===cur?'selected':''} ${r.has?'':'disabled'}>${esc(r.name)}${r.merged_from&&r.merged_from.length?' ('+esc(r.merged_from.join(', '))+')':''}${r.has?'':' · đang cập nhật'}</option>`).join('')}</select></label>`}
-function wireRegionPicker(id,after){const el=document.getElementById(id);if(!el)return;el.onchange=()=>{S.region=el.value;
+function wireRegionPicker(id,after){const el=document.getElementById(id);if(!el)return;el.onchange=()=>{S.region=el.value;S.regionSet=true;if(typeof renderRegionBar==='function')setTimeout(renderRegionBar);
   const G=REG().goals||[];S.course=Object.assign({},S.course||{});if(!G.some(g=>g.k===S.course.goal))S.course.goal=REG().goal_default||(G[1]||G[0]||{}).k;
   save();renderBrand();after&&after()}}
 function renderBrand(){const b=document.querySelector('.brand span');if(b&&!PREVIEW)b.textContent=`${REG().edition||('Bản '+REG().name)} · lớp 6–9`}
