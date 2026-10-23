@@ -16,14 +16,27 @@
  *   2. Con đọc bản chép, sửa chỗ máy đọc nhầm, bấm xác nhận → máy chấm bài viết bản thường (điểm /10, 2 điểm tốt, 2 điểm cần sửa).
  *   3. Bản trả phí (cột paid của sheet Học sinh khác rỗng): nhận xét chi tiết theo 4 tiêu chí bài viết đề chuyên.
  *      Con chưa trả phí bấm "Mình muốn mua" → ghi vào sheet "Yêu cầu mua" và nhắn cho cô.
+ *
+ * Lượt chấm máy (cột credits của sheet Học sinh): mỗi bài giấy máy chấm xong trừ 1 lượt. Giá công bố: 4.000đ/bài,
+ * gói thử 14 bài 50.000đ. Hết lượt thì không gửi ảnh được; bố mẹ điền form xin mã / mua thêm lượt.
+ * Form của bố mẹ (action 'request', không cần mã): lưu vào sheet "Phụ huynh đăng ký", ảnh bài (nếu nhờ cô chấm tay)
+ * lưu Drive, gửi email cho cô (Script property TEACHER_EMAIL, mặc định email của tài khoản chạy máy chủ).
  */
 
 var SHEETS = {
-  students: { name: 'Học sinh', cols: ['code', 'name', 'grade', 'created', 'lastSeen', 'daysWeb', 'daysPaper', 'webAcc', 'retryAcc', 'mastered', 'eff', 'entryLevel', 'finalLevel', 'planMin', 'planDpw', 'paperAvg', 'stateFileId', 'summary', 'paid'] },
-  uploads: { name: 'Bài giấy', cols: ['id', 'ts', 'code', 'day', 'fileIds', 'status', 'score', 'total', 'result', 'teacherNote', 'updated', 'error', 'tries'] },
+  students: { name: 'Học sinh', cols: ['code', 'name', 'grade', 'created', 'lastSeen', 'daysWeb', 'daysPaper', 'webAcc', 'retryAcc', 'mastered', 'eff', 'entryLevel', 'finalLevel', 'planMin', 'planDpw', 'paperAvg', 'stateFileId', 'summary', 'paid', 'credits'] },
+  uploads: { name: 'Bài giấy', cols: ['id', 'ts', 'code', 'day', 'fileIds', 'status', 'score', 'total', 'result', 'teacherNote', 'updated', 'error', 'tries', 'charged'] },
   messages: { name: 'Tin nhắn', cols: ['id', 'ts', 'code', 'from', 'uploadId', 'itemId', 'text', 'seenTeacher', 'seenStudent'] },
-  orders: { name: 'Yêu cầu mua', cols: ['id', 'ts', 'code', 'name', 'product', 'status', 'note'] }
+  orders: { name: 'Yêu cầu mua', cols: ['id', 'ts', 'code', 'name', 'product', 'status', 'note'] },
+  requests: { name: 'Phụ huynh đăng ký', cols: ['id', 'ts', 'parent', 'phone', 'email', 'child', 'grade', 'region', 'school', 'want', 'pack', 'note', 'fileIds', 'consent', 'status', 'code', 'teacherNote'] }
 };
+var PRICE_PER = 4000, PACKS = { thu14: { n: 14, price: 50000, label: 'Gói thử 14 bài · 50.000đ' }, le: { n: 1, price: 4000, label: 'Chấm lẻ · 4.000đ/bài' } };
+/* gói: 'thu14' hoặc 'le:<số bài>' */
+function packInfo_(pack) {
+  var m = /^le:(\d{1,3})$/.exec(String(pack || ''));
+  if (m) { var n = Math.max(1, Math.min(200, Number(m[1]))); return { n: n, price: n * PRICE_PER, label: 'Chấm lẻ ' + n + ' bài · ' + (n * PRICE_PER).toLocaleString('vi-VN') + 'đ' }; }
+  return PACKS.thu14;
+}
 var DEFAULT_MODEL = 'claude-sonnet-5-5';
 var DEFAULT_MODEL_FREE = 'claude-haiku-5-5';
 var MAX_IMAGES = 6;
@@ -71,12 +84,18 @@ function out_(o) { return ContentService.createTextOutput(JSON.stringify(o)).set
 function route_(q) {
   var a = String(q.action || '');
   if (a === 'ping') return { ok: true };
+  if (a === 'request') return request_(q);
+  if (a === 'prices') return { ok: true, per: PRICE_PER, packs: PACKS };
   if (a.indexOf('t_') === 0) {
     checkPin_(q.pin);
     switch (a) {
       case 't_list': return tList_();
       case 't_student': return tStudent_(q.code);
-      case 't_add': return tAdd_(q.name, q.grade);
+      case 't_add': return tAdd_(q.name, q.grade, q.credits);
+      case 't_credits': return tCredits_(q.code, q.add);
+      case 't_requests': return tRequests_();
+      case 't_req_issue': return tReqIssue_(q.id, q.credits, q.sendEmail);
+      case 't_req_status': return tReqStatus_(q.id, q.status, q.note);
       case 't_reply': return tReply_(q.code, q.uploadId, q.itemId, q.text);
       case 't_override': return tOverride_(q);
       case 't_regrade': return tRegrade_(q.uploadId);
@@ -154,7 +173,7 @@ function login_(st) {
   var state = null;
   if (st.stateFileId) { try { state = JSON.parse(DriveApp.getFileById(st.stateFileId).getBlob().getDataAsString()); } catch (e) {} }
   update_('students', st._row, { lastSeen: now_() });
-  return { ok: true, student: { code: st.code, name: st.name, grade: st.grade, paid: isPaid_(st) }, state: state };
+  return { ok: true, student: { code: st.code, name: st.name, grade: st.grade, paid: isPaid_(st), credits: credits_(st) }, state: state };
 }
 
 function sync_(st, state, kpi, sum) {
@@ -190,6 +209,7 @@ function upload_(st, day, images) {
   if (!(day >= 1 && day <= 14)) throw new Error('bad_day');
   if (!images || !images.length) throw new Error('no_images');
   if (images.length > MAX_IMAGES) throw new Error('too_many_images');
+  if (credits_(st) <= 0) return { ok: false, error: 'no_credit' };
   var folder = studentFolder_(st.code), ids = [], stamp = Utilities.formatDate(new Date(), 'Asia/Ho_Chi_Minh', 'yyyyMMdd-HHmmss');
   images.forEach(function (im, i) {
     var data = String(im.data || '');
@@ -217,8 +237,9 @@ function my_(st) {
   var outMsgs = msgs.map(msgOut_);
   withLock_(function () { msgs.forEach(function (m) { if (m.from === 'teacher' && !(m.seenStudent === true || m.seenStudent === 'TRUE')) update_('messages', m._row, { seenStudent: true }); }); });
   var pending = rows_('orders').some(function (o) { return o.code === st.code && o.status === 'chờ liên hệ'; });
-  return { ok: true, uploads: ups, messages: outMsgs, paid: isPaid_(st), orderPending: pending };
+  return { ok: true, uploads: ups, messages: outMsgs, paid: isPaid_(st), orderPending: pending, credits: credits_(st) };
 }
+function credits_(st) { var n = Number(st.credits); return isNaN(n) || st.credits === '' ? 0 : n; }
 function isPaid_(st) { return !!String(st.paid || '').trim(); }
 
 function message_(st, uploadId, itemId, text) {
@@ -284,6 +305,12 @@ function gradeUpload_(id) {
       graded.score = graded.items.filter(function (it) { return it.correct === true; }).length;
     }
     update_('uploads', row._row, { status: 'graded', score: graded.score, total: graded.total, result: clip_(JSON.stringify(graded), 48000), updated: now_(), error: '' });
+    // trừ 1 lượt chấm khi máy chấm được lần đầu (ảnh không đọc được thì không trừ; cô bấm chấm lại thì không trừ thêm)
+    if (!row.charged && !graded.unreadable) withLock_(function () {
+      var st = find_('students', 'code', row.code);
+      if (st) update_('students', st._row, { credits: Math.max(0, credits_(st) - 1) });
+      update_('uploads', row._row, { charged: now_() });
+    });
     updatePaperAvg_(row.code);
     return graded;
   } catch (e) {
@@ -508,6 +535,104 @@ function buyRequest_(st, product, uploadId) {
   });
 }
 
+
+/* ---------- form của bố mẹ: xin mã, mua lượt chấm, hoặc nhờ cô chấm tay ---------- */
+function request_(q) {
+  if (q.website) return { ok: true }; // ô bẫy chống máy gửi rác
+  var c = CacheService.getScriptCache(), n = Number(c.get('req_count') || 0);
+  if (n > 40) throw new Error('busy'); // tối đa khoảng 40 yêu cầu mỗi giờ
+  c.put('req_count', String(n + 1), 3600);
+  var parent = clip_(String(q.parent || '').trim(), 80), phone = clip_(String(q.phone || '').replace(/[^0-9+ ]/g, '').trim(), 20),
+      email = clip_(String(q.email || '').trim(), 120), child = clip_(String(q.child || '').trim(), 80);
+  if (!parent || !child) throw new Error('missing_name');
+  if (!/^[0-9+ ]{9,15}$/.test(phone) && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) throw new Error('missing_contact');
+  if (q.consent !== true) throw new Error('need_consent');
+  var want = q.want === 'cham_tay' ? 'cham_tay' : 'ma_may', pack = /^le:\d{1,3}$/.test(String(q.pack)) ? String(q.pack) : 'thu14';
+  var images = (q.images || []).slice(0, MAX_IMAGES), ids = [], id = uid_('R');
+  if (want === 'cham_tay' && images.length) {
+    var root = rootFolder_(), it = root.getFoldersByName('Phụ huynh gửi bài'), folder = it.hasNext() ? it.next() : root.createFolder('Phụ huynh gửi bài');
+    images.forEach(function (im, i) {
+      var data = String(im.data || '');
+      if (data.length > MAX_IMAGE_B64) throw new Error('image_too_big');
+      ids.push(folder.createFile(Utilities.newBlob(Utilities.base64Decode(data), 'image/jpeg', id + '_' + (i + 1) + '.jpg')).getId());
+    });
+  }
+  var row = { id: id, ts: now_(), parent: parent, phone: phone, email: email, child: child, grade: Number(q.grade) || '', region: clip_(q.region, 60),
+    school: clip_(q.school, 120), want: want, pack: want === 'ma_may' ? pack : '', note: clip_(q.note, 1000), fileIds: ids.join(','), consent: now_(), status: 'mới' };
+  withLock_(function () { insert_('requests', row); });
+  try { mailTeacher_(row); } catch (e) { /* email lỗi thì yêu cầu vẫn nằm trong sheet và trang của cô */ }
+  return { ok: true, id: id };
+}
+
+function teacherEmail_() {
+  var e = PropertiesService.getScriptProperties().getProperty('TEACHER_EMAIL');
+  return e || Session.getEffectiveUser().getEmail();
+}
+function mailTeacher_(r) {
+  var to = teacherEmail_(); if (!to) return;
+  var what = r.want === 'cham_tay' ? 'Nhờ cô xem bài và nhận xét' : 'Xin mã để máy chấm · ' + packInfo_(r.pack).label;
+  var body = [
+    'Phụ huynh vừa điền form trên web Chuyên Anh 14 Ngày.', '',
+    'Yêu cầu: ' + what,
+    'Phụ huynh: ' + r.parent + ' · ĐT/Zalo: ' + (r.phone || '—') + ' · Email: ' + (r.email || '—'),
+    'Học sinh: ' + r.child + ' · lớp ' + (r.grade || '—') + ' · ' + (r.region || '') + (r.school ? ' · nhắm ' + r.school : ''),
+    r.note ? 'Lời nhắn: ' + r.note : '',
+    r.fileIds ? 'Ảnh bài làm: ' + r.fileIds.split(',').map(function (f) { return 'https://drive.google.com/file/d/' + f + '/view'; }).join('  ') : '',
+    '',
+    r.want === 'cham_tay' ? 'Cô xem ảnh, rồi trả lời phụ huynh qua email hoặc Zalo. Trả lời xong, đánh dấu "đã phản hồi" ở trang của cô.'
+      : 'Cô thu ' + packInfo_(r.pack).price.toLocaleString('vi-VN') + 'đ, rồi vào trang của cô → Phụ huynh đăng ký → "Cấp mã" (máy tạo mã kèm ' + packInfo_(r.pack).n + ' lượt chấm và gửi email cho phụ huynh nếu có email).',
+    '', 'Trang của cô: https://ces-training.github.io/on-thi-chuyen-ngu/co/'
+  ].filter(function (x) { return x !== ''; }).join('\n');
+  MailApp.sendEmail({ to: to, subject: '[Chuyên Anh 14 Ngày] ' + what + ' · ' + r.child, body: body, replyTo: r.email || undefined });
+}
+
+function tRequests_() {
+  var list = rows_('requests').map(function (r) {
+    return { id: r.id, ts: r.ts, parent: r.parent, phone: String(r.phone || ''), email: r.email, child: r.child, grade: r.grade, region: r.region, school: r.school,
+      want: r.want, pack: r.pack, packLabel: r.want === 'ma_may' ? packInfo_(r.pack).label : '', packN: r.want === 'ma_may' ? packInfo_(r.pack).n : 0, note: r.note, fileIds: String(r.fileIds || '').split(',').filter(String), status: r.status, code: r.code, teacherNote: r.teacherNote };
+  }).reverse();
+  return { ok: true, requests: list, packs: PACKS };
+}
+/* cô đã thu tiền → cấp mã kèm số lượt chấm; gửi mã qua email cho phụ huynh nếu có */
+function tReqIssue_(id, credits, sendEmail) {
+  var r = find_('requests', 'id', id);
+  if (!r) throw new Error('no_request');
+  var n = Math.max(0, Number(credits) || (r.want === 'ma_may' ? packInfo_(r.pack).n : 14));
+  var code = r.code;
+  if (code && getStudent_(code)) tCredits_(code, n);
+  else { code = tAdd_(r.child, r.grade, n).code; }
+  withLock_(function () { var x = find_('requests', 'id', id); update_('requests', x._row, { status: 'đã cấp mã', code: code }); });
+  var mailed = false;
+  if (sendEmail && r.email) {
+    MailApp.sendEmail({ to: r.email, replyTo: teacherEmail_(),
+      subject: 'Mã học sinh của ' + r.child + ' · Chuyên Anh 14 Ngày',
+      body: 'Chào phụ huynh của ' + r.child + ',\n\nMã học sinh của con: ' + code + ' (' + n + ' lượt máy chấm bài giấy).\n' +
+        'Con mở https://ces-training.github.io/on-thi-chuyen-ngu/chuyen-anh-14-ngay/ , ở Trang chủ nhập mã vào ô "Nhập mã học sinh cô gửi". ' +
+        'Từ đó con chụp bài giấy ở bước 7 của mỗi buổi để máy chấm; mỗi bài máy chấm xong trừ 1 lượt.\n\nCES – Học viện Đa ngữ Anh–Trung' });
+    mailed = true;
+  }
+  return { ok: true, code: code, credits: n, mailed: mailed };
+}
+function tReqStatus_(id, status, note) {
+  return withLock_(function () {
+    var r = find_('requests', 'id', id);
+    if (!r) throw new Error('no_request');
+    var patch = { status: clip_(status, 40) };
+    if (note != null) patch.teacherNote = clip_(note, 1500);
+    update_('requests', r._row, patch);
+    return { ok: true };
+  });
+}
+function tCredits_(code, add) {
+  var st = getStudent_(code);
+  if (!st) return { ok: false, error: 'bad_code' };
+  return withLock_(function () {
+    var fresh = find_('students', 'code', st.code), n = Math.max(0, credits_(fresh) + (Number(add) || 0));
+    update_('students', fresh._row, { credits: n });
+    return { ok: true, credits: n };
+  });
+}
+
 /* ---------- dành cho cô ---------- */
 function tList_() {
   var ups = rows_('uploads'), msgs = rows_('messages'), ords = rows_('orders');
@@ -517,7 +642,7 @@ function tList_() {
     return { code: s.code, name: s.name, grade: s.grade, created: s.created, lastSeen: s.lastSeen, daysWeb: s.daysWeb, daysPaper: s.daysPaper, webAcc: s.webAcc, retryAcc: s.retryAcc,
       mastered: s.mastered, eff: s.eff, entryLevel: s.entryLevel, finalLevel: s.finalLevel, planMin: s.planMin, planDpw: s.planDpw, paperAvg: s.paperAvg,
       uploads: mine.length, errors: mine.filter(function (u) { return u.status === 'error'; }).length, unread: unread,
-      paid: String(s.paid || ''), orderPending: ords.some(function (o) { return o.code === s.code && o.status === 'chờ liên hệ'; }),
+      paid: String(s.paid || ''), credits: credits_(s), orderPending: ords.some(function (o) { return o.code === s.code && o.status === 'chờ liên hệ'; }),
       waitConfirm: mine.filter(function (u) { var r = parse_(u.result, null); return r && r.writing && r.writing.status === 'confirm'; }).length };
   });
   return { ok: true, students: list };
@@ -531,16 +656,16 @@ function tStudent_(code) {
   var outMsgs = msgs.map(msgOut_);
   withLock_(function () { msgs.forEach(function (m) { if (m.from === 'student' && !(m.seenTeacher === true || m.seenTeacher === 'TRUE')) update_('messages', m._row, { seenTeacher: true }); }); });
   var ords = rows_('orders').filter(function (o) { return o.code === st.code; }).map(function (o) { return { id: o.id, ts: o.ts, product: o.product, status: o.status }; });
-  return { ok: true, student: { code: st.code, name: st.name, grade: st.grade, created: st.created, lastSeen: st.lastSeen, paperAvg: st.paperAvg, paid: String(st.paid || '') }, summary: parse_(st.summary, null), uploads: ups, messages: outMsgs, orders: ords };
+  return { ok: true, student: { code: st.code, name: st.name, grade: st.grade, created: st.created, lastSeen: st.lastSeen, paperAvg: st.paperAvg, paid: String(st.paid || ''), credits: credits_(st) }, summary: parse_(st.summary, null), uploads: ups, messages: outMsgs, orders: ords };
 }
 
-function tAdd_(name, grade) {
+function tAdd_(name, grade, credits) {
   name = clip_(String(name || '').trim(), 80);
   if (!name) throw new Error('no_name');
   return withLock_(function () {
     var abc = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789', code;
     do { code = ''; for (var i = 0; i < 6; i++) code += abc.charAt(Math.floor(Math.random() * abc.length)); } while (find_('students', 'code', code));
-    insert_('students', { code: code, name: name, grade: Number(grade) || '', created: now_() });
+    insert_('students', { code: code, name: name, grade: Number(grade) || '', created: now_(), credits: Math.max(0, Number(credits) || 0) });
     return { ok: true, code: code };
   });
 }
@@ -595,7 +720,8 @@ function tOrder_(id, status) {
 function tRegrade_(uploadId) { var g = gradeUpload_(uploadId); return { ok: true, score: g.score, total: g.total }; }
 
 function tImage_(fileId) {
-  var ok = rows_('uploads').some(function (r) { return String(r.fileIds).split(',').indexOf(String(fileId)) >= 0; });
+  var has = function (r) { return String(r.fileIds || '').split(',').indexOf(String(fileId)) >= 0; };
+  var ok = rows_('uploads').some(has) || rows_('requests').some(has);
   if (!ok) throw new Error('not_found');
   var b = DriveApp.getFileById(fileId).getBlob();
   return { ok: true, mime: b.getContentType() || 'image/jpeg', data: Utilities.base64Encode(b.getBytes()) };

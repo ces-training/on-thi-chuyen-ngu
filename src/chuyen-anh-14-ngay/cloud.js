@@ -8,7 +8,7 @@ async function api(action,data){
   if(!j.ok){const e=new Error(j.error||'error');e.code=j.error;throw e}
   return j;
 }
-const ERR_VI={writing_too_short:'Bài viết hơi ngắn, cậu kiểm tra xem đã chép đủ chưa nhé.',not_paid:'Phần này dành cho bản trả phí.',bad_code:'Mã học sinh không đúng. Cậu kiểm tra lại mã cô gửi nhé.',image_too_big:'Ảnh quá lớn, cậu chụp lại nhé.',too_many_images:'Mỗi lần gửi tối đa 6 ảnh.',no_images:'Cậu chưa chọn ảnh nào.'};
+const ERR_VI={no_credit:'Mã của cậu đã hết lượt máy chấm. Bố mẹ cậu mua thêm lượt ở form xin mã nhé.',missing_name:'Cô chú điền giúp cháu họ tên phụ huynh và tên con nhé.',missing_contact:'Cô chú để lại số điện thoại/Zalo hoặc email để cô liên hệ nhé.',need_consent:'Cô chú tích ô đồng ý ở cuối form giúp cháu nhé.',busy:'Đang có nhiều yêu cầu, cô chú thử lại sau ít phút nhé.',writing_too_short:'Bài viết hơi ngắn, cậu kiểm tra xem đã chép đủ chưa nhé.',not_paid:'Phần này dành cho bản trả phí.',bad_code:'Mã học sinh không đúng. Cậu kiểm tra lại mã cô gửi nhé.',image_too_big:'Ảnh quá lớn, cậu chụp lại nhé.',too_many_images:'Mỗi lần gửi tối đa 6 ảnh.',no_images:'Cậu chưa chọn ảnh nào.'};
 function errVi(e){return ERR_VI[e&&e.code]||'Chưa kết nối được với máy chủ. Cậu kiểm tra mạng rồi thử lại.'}
 
 /* ---- đồng bộ tiến độ ---- */
@@ -42,10 +42,11 @@ setInterval(()=>{if(cloudOn()&&(!S.syncedAt||(S.savedAt||0)>S.syncedAt))doSync()
 function loginCard(){
   if(!API)return '';
   if(S.code)return `<div class="card"><h3>Mã học sinh</h3><p>Cậu đang học với mã <b class="mono">${esc(S.code)}</b>${S.student&&S.student.name?` (${esc(S.student.name)})`:''}. Kết quả tự gửi cho cô sau mỗi lần cậu làm bài. Em học trên máy khác thì nhập lại mã này là tiếp tục được.</p><button class="btn ghost" id="logout">Đổi mã khác</button></div>`;
-  return `<div class="card hi-card"><h3>Nhập mã học sinh cô gửi</h3><p class="small">Mã gồm 6 chữ và số. Có mã thì kết quả tự về với cô, cậu chụp bài giấy để được chấm tự động và nhắn tin được với cô.</p>
+  return `<div class="card hi-card"><h3>Nhập mã học sinh cô gửi</h3><p class="small">Mã gồm 6 chữ và số. Có mã thì kết quả tự về với cô, cậu chụp bài giấy để được chấm tự động và nhắn tin được với cô. <b>Chưa có mã?</b> <a href="#" id="toReq">Bố mẹ cậu điền form xin mã</a>.</p>
    <div class="row"><input type="text" id="codeLogin" maxlength="10" placeholder="Ví dụ: K7M2QX" autocomplete="off" style="max-width:200px;text-transform:uppercase"><button class="btn hi" id="doLogin">Vào học</button><span class="small" id="loginMsg"></span></div></div>`;
 }
 function wireLogin(){
+  const tr=$('#toReq');if(tr)tr.onclick=e=>{e.preventDefault();go('xinma')};
   const b=$('#doLogin');
   if(b)b.onclick=async()=>{
     const code=$('#codeLogin').value.trim().toUpperCase();if(!code){$('#loginMsg').textContent='Cậu nhập mã nhé.';return}
@@ -63,11 +64,11 @@ function wireLogin(){
 function confirmInline(btn,txt){if(btn.dataset.sure)return true;btn.dataset.sure='1';btn.textContent=txt;return false}
 
 /* ---- dữ liệu bài giấy và tin nhắn ---- */
-let CLOUD={uploads:[],messages:[],at:0,unseen:0,paid:false,orderPending:false};
+let CLOUD={uploads:[],messages:[],at:0,unseen:0,paid:false,orderPending:false,credits:null};
 async function loadMy(){
   if(!cloudOn())return CLOUD;
   const r=await api('my',{code:S.code});
-  CLOUD={uploads:r.uploads||[],messages:r.messages||[],at:Date.now(),paid:!!r.paid,orderPending:!!r.orderPending,unseen:(r.messages||[]).filter(m=>m.from==='teacher'&&!m.seenStudent).length+(CLOUD.unseen||0)};
+  CLOUD={uploads:r.uploads||[],messages:r.messages||[],at:Date.now(),paid:!!r.paid,orderPending:!!r.orderPending,credits:r.credits==null?null:Number(r.credits),unseen:(r.messages||[]).filter(m=>m.from==='teacher'&&!m.seenStudent).length+(CLOUD.unseen||0)};
   // kết quả chấm mới nhất của mỗi buổi điền vào bài giấy
   latestByDay().forEach(u=>applyAiResult(u));
   updateBadge();
@@ -97,12 +98,19 @@ function uploadCardHTML(n){
   const ups=CLOUD.uploads.filter(u=>u.day===n).sort((a,b)=>a.ts<b.ts?1:-1);const last=ups[0];
   return `<div class="up-box"><h3 class="ih">${em('camera-with-flash')}Bước 7 · Chụp bài giấy để được chấm</h3>
    <p class="small">Chụp rõ từng trang bài làm buổi ${n} (tối đa 6 ảnh), đủ sáng, thẳng trang, không che chữ. Chỉ chụp trang bài làm. Máy chấm phần trắc nghiệm và điền từ, giải thích câu sai, rồi chép đoạn viết của cậu thành chữ để cậu kiểm tra trước khi chấm.</p>
+   ${creditLine()}
    <div class="row"><label class="btn" for="upFiles">Chọn hoặc chụp ảnh</label><input type="file" id="upFiles" accept="image/*" capture="environment" multiple hidden><button class="btn hi" id="upSend" disabled>Gửi chấm</button><span class="small" id="upMsg"></span></div>
    <div class="thumbs" id="upThumbs"></div>
    ${last?`<div id="upResult">${uploadResultHTML(last)}</div>`:'<div id="upResult"></div>'}
    ${ups.length>1?`<p class="small muted">Cậu đã gửi ${ups.length} lần cho buổi này; trang hiện lần mới nhất.</p>`:''}</div>`;
 }
+function creditLine(){
+  const c=CLOUD.credits;if(c==null)return '';
+  if(c<=0)return `<div class="notice"><b>Mã của cậu đã hết lượt máy chấm.</b> Máy chấm 4.000đ mỗi bài; gói thử 14 bài 50.000đ. <button class="linkbtn" data-buy-credit>Bố mẹ cậu mua thêm lượt ở đây</button>. Trong lúc chờ, cậu tự chấm bằng đáp án bên dưới nhé.</div>`;
+  return `<p class="small">Còn <b>${c}</b> lượt máy chấm. Mỗi bài máy chấm xong trừ 1 lượt; ảnh không đọc được thì không trừ.</p>`;
+}
 function wireUpload(n){
+  document.querySelectorAll('[data-buy-credit]').forEach(b=>b.onclick=()=>go('xinma'));
   let picked=[];
   const inp=$('#upFiles'),send=$('#upSend');if(!inp)return;
   inp.onchange=async()=>{const files=[...inp.files].slice(0,6);$('#upMsg').textContent=files.length?'Đang chuẩn bị ảnh…':'';picked=[];
@@ -113,12 +121,12 @@ function wireUpload(n){
     send.disabled=true;$('#upMsg').textContent='Đang gửi và chấm… thường mất 30–60 giây, cậu đừng tắt trang.';
     try{
       const r=await api('upload',{code:S.code,day:n,images:picked.map(p=>({mime:p.mime,data:p.data}))});
-      CLOUD.uploads.push(r.upload);
+      CLOUD.uploads.push(r.upload);if(CLOUD.credits!=null&&r.upload.status==='graded'&&!(r.upload.result&&r.upload.result.unreadable))CLOUD.credits=Math.max(0,CLOUD.credits-1);
       if(r.upload.status==='graded'){applyAiResult(r.upload);$('#upMsg').textContent='Đã chấm xong.'}
       else{$('#upMsg').textContent='Bài đã gửi. Máy đang chấm, kết quả sẽ hiện ở đây và ở tab Trao đổi với cô sau ít phút.';pollDay(n)}
       $('#upResult').innerHTML=uploadResultHTML(r.upload);wireResult($('#upResult'));picked=[];$('#upThumbs').innerHTML='';
       doSync();
-    }catch(e){$('#upMsg').textContent=errVi(e);send.disabled=false}
+    }catch(e){$('#upMsg').textContent=errVi(e);send.disabled=e.code==='no_credit';if(e.code==='no_credit'){CLOUD.credits=0;$('#upMsg').innerHTML=esc(errVi(e))+' <button class="linkbtn" id="upBuy">Mở form</button>';$('#upBuy').onclick=()=>go('xinma')}}
   };
   wireResult($('#upResult'));
 }
@@ -238,4 +246,62 @@ function vShareCloud(){
     try{await api('message',{code:S.code,text:t});CLOUD.messages.push({from:'student',ts:new Date().toISOString(),text:t,uploadId:'',itemId:''});$('#genMsg').value='';$('#genInfo').textContent='Đã gửi.';draw()}
     catch(e){$('#genInfo').textContent=errVi(e)}};
   wireReset();
+}
+
+/* ---- form của bố mẹ: xin mã máy chấm (có thu phí) hoặc nhờ cô xem bài ---- */
+function vRequest(){
+  const reg=(typeof REGIONS!=='undefined'&&S.region&&REGIONS[S.region])?REGIONS[S.region].name:'';
+  const sent=S.reqSentAt;
+  M().innerHTML=`<section class="view"><div><p class="eyebrow">Dành cho bố mẹ</p><h2>Xin mã chấm bài giấy</h2>
+   <p class="lead">Cháu là Hùng. Cô chú điền form này để nhận mã học sinh cho con, hoặc gửi ảnh bài để cô xem và nhận xét. Số điện thoại và email của cô chú chỉ cô ở CES xem được, không hiện trên trang.</p></div>
+   <div class="card"><h3>Bảng giá máy chấm bài giấy</h3>
+    <div class="tw"><table><tbody>
+     <tr><td><b>Gói thử 14 bài</b><br><span class="small">Đủ cả chặng 14 buổi: chấm trắc nghiệm có giải thích câu sai, chép và chấm đoạn viết</span></td><td class="n"><b>50.000đ</b></td></tr>
+     <tr><td><b>Chấm lẻ</b></td><td class="n"><b>4.000đ</b> / bài</td></tr></tbody></table></div>
+    <p class="small muted">Mỗi bài máy chấm xong mới trừ 1 lượt; ảnh không đọc được thì không trừ. Nhận xét chi tiết bài viết theo tiêu chí đề chuyên thuộc gói học trả phí, cô tư vấn riêng.</p></div>
+   ${sent?`<div class="notice">Cô chú đã gửi form lúc ${new Date(sent).toLocaleString('vi-VN')}. Cô sẽ liên hệ sớm; cô chú không cần gửi lại.</div>`:''}
+   <form class="card" id="reqForm" autocomplete="on">
+    <h3>Cô chú cần gì?</h3>
+    <label class="key-item"><input type="radio" name="want" value="ma_may" checked><span><b>Nhận mã để máy chấm bài</b><br><span class="small">Con chụp bài giấy sau mỗi buổi, máy chấm ngay. Cô liên hệ hướng dẫn chuyển khoản; thanh toán xong cô gửi mã.</span></span></label>
+    <div id="packBox" style="margin:4px 0 10px 28px">
+     <label class="key-item"><input type="radio" name="pack" value="thu14" checked><span>Gói thử 14 bài · <b>50.000đ</b></span></label>
+     <label class="key-item"><input type="radio" name="pack" value="le"><span>Chấm lẻ · 4.000đ/bài · số bài <input type="number" id="rqQty" min="1" max="200" value="5" style="width:70px"> = <b id="rqSum">20.000đ</b></span></label>
+    </div>
+    <label class="key-item"><input type="radio" name="want" value="cham_tay"><span><b>Nhờ cô xem bài và nhận xét</b><br><span class="small">Cô chú gửi ảnh bài làm của con; cô xem và phản hồi qua email hoặc Zalo.</span></span></label>
+    <div id="photoBox" hidden style="margin:4px 0 10px 28px"><div class="row"><label class="btn" for="rqFiles">Chọn ảnh bài làm (tối đa 6)</label><input type="file" id="rqFiles" accept="image/*" multiple hidden><span class="small" id="rqPicked"></span></div><div class="thumbs" id="rqThumbs"></div></div>
+    <h3>Thông tin</h3>
+    <div class="grid2">
+     <label>Họ tên phụ huynh *<br><input id="rqParent" autocomplete="name" style="width:100%"></label>
+     <label>Số điện thoại / Zalo<br><input id="rqPhone" type="tel" autocomplete="tel" style="width:100%"></label>
+     <label>Email (để nhận mã và nhận xét)<br><input id="rqEmail" type="email" autocomplete="email" style="width:100%"></label>
+     <label>Tên gọi của con *<br><input id="rqChild" value="${esc(S.name||'')}" style="width:100%"></label>
+     <label>Lớp<br><select id="rqGrade">${[6,7,8,9].map(g=>`<option value="${g}" ${(+((S.course&&S.course.grade)||7))===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label>
+     <label>Tỉnh, thành nơi con thi<br><input id="rqRegion" value="${esc(reg)}" style="width:100%"></label>
+     <label>Trường con nhắm<br><input id="rqSchool" style="width:100%"></label>
+    </div>
+    <label>Lời nhắn cho cô<br><textarea id="rqNote" rows="3" style="width:100%"></textarea></label>
+    <input type="text" id="rqWeb" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+    <label class="key-item"><input type="checkbox" id="rqConsent"><span class="small">Tôi đồng ý cho CES (Học viện Đa ngữ Anh–Trung) lưu thông tin trên và ảnh bài làm (nếu gửi) để chấm bài, cấp mã và liên hệ tư vấn học tập cho con. Thông tin được giữ đến hết kỳ thi vào lớp 10 của con; tôi có thể yêu cầu sửa hoặc xoá bất cứ lúc nào bằng cách nhắn cô.</span></label>
+    <p class="small muted">* bắt buộc. Cần ít nhất một trong hai: số điện thoại/Zalo hoặc email.</p>
+    <div class="row"><button class="btn hi" type="submit" id="rqSend">Gửi cho cô</button><span class="small" id="rqMsg"></span></div>
+   </form></section>`;
+  let picked=[];
+  const f=$('#reqForm'),qty=()=>Math.max(1,Math.min(200,+$('#rqQty').value||1));
+  const pack=()=>f.querySelector('input[name=pack]:checked').value==='le'?'le:'+qty():'thu14';
+  const want=()=>f.querySelector('input[name=want]:checked').value;
+  const sync=()=>{$('#packBox').hidden=want()!=='ma_may';$('#photoBox').hidden=want()!=='cham_tay';$('#rqSum').textContent=(qty()*4000).toLocaleString('vi-VN')+'đ'};
+  f.querySelectorAll('input[name=want],input[name=pack]').forEach(i=>i.onchange=sync);$('#rqQty').oninput=()=>{f.querySelector('input[name=pack][value=le]').checked=true;sync()};sync();
+  $('#rqFiles').onchange=async()=>{picked=[];for(const x of [...$('#rqFiles').files].slice(0,6)){try{picked.push(await compressImage(x))}catch(e){}}
+    $('#rqThumbs').innerHTML=picked.map(p=>`<img src="${p.preview||''}" alt="Ảnh bài làm">`).join('');$('#rqPicked').textContent=picked.length?picked.length+' ảnh':''};
+  f.onsubmit=async e=>{e.preventDefault();const b=$('#rqSend'),msg=$('#rqMsg');
+    if(!$('#rqConsent').checked){msg.textContent=ERR_VI.need_consent;return}
+    b.disabled=true;msg.textContent='Đang gửi…';
+    try{
+      const w=want();
+      await api('request',{website:$('#rqWeb').value,want:w,pack:pack(),parent:$('#rqParent').value,phone:$('#rqPhone').value,email:$('#rqEmail').value,child:$('#rqChild').value,
+        grade:+$('#rqGrade').value,region:$('#rqRegion').value,school:$('#rqSchool').value,note:$('#rqNote').value,consent:true,images:w==='cham_tay'?picked.map(p=>({mime:p.mime,data:p.data})):[]});
+      S.reqSentAt=Date.now();saveLocal();
+      f.outerHTML=`<div class="card"><h3>Cháu đã gửi cho cô rồi ạ!</h3><p>${w==='ma_may'?'Cô sẽ liên hệ cô chú qua Zalo hoặc email để hướng dẫn chuyển khoản. Thanh toán xong, cô gửi mã học sinh cho con; con nhập mã ở Trang chủ là chụp bài gửi chấm được.':'Cô sẽ xem bài của con và phản hồi qua email hoặc Zalo cô chú để lại.'}</p><button class="btn" id="rqHome">Về trang học</button></div>`;
+      $('#rqHome').onclick=()=>go('start');
+    }catch(err){msg.textContent=ERR_VI[err.code]||errVi(err);b.disabled=false}};
 }

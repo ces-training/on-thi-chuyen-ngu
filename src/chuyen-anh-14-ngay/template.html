@@ -888,7 +888,7 @@ function dayStatus(n){const d=S.days[n];if(!d)return'none';if(d.web&&d.paper)ret
 
 /* ---------- views ---------- */
 let VIEW='start', CUR_DAY=null;
-const views={start:vStart,diag:vDiag,days:vDays,progress:vProgress,plan:vPlan,course:vCourse,school:vSchool,share:()=>cloudOn()?vShareCloud():vShare()};
+const views={start:vStart,diag:vDiag,days:vDays,progress:vProgress,plan:vPlan,course:vCourse,school:vSchool,share:()=>cloudOn()?vShareCloud():vShare(),xinma:()=>API&&!PREVIEW?vRequest():go('start')};
 /* ----- học theo thứ tự: buổi n chỉ mở khi đã có bài đầu vào và đã xong Kiểm tra cuối buổi của buổi n-1 ----- */
 function dayOpen(n){if(pvOpen())return true;if(!S.diag)return false;if(n<=1)return true;const r=S.days[n-1];return !!(r&&r.web)}
 function lastOpenDay(){let k=0;for(let i=1;i<=14;i++){if(dayOpen(i))k=i;else break}return k}
@@ -918,7 +918,7 @@ function updateGate(){
     pill.onclick=()=>{if(VIEW==='exam'){go('diag');return}GATE_MIN=false;updateGate()};document.body.appendChild(pill)}
   const onDiag=VIEW==='diag';
   /* trang Thông tin thi: không che, chỉ hiện nút nhỏ ở góc (đọc thông tin trước rồi mới mời làm bài) */
-  const open=!GATE_MIN&&!onDiag&&VIEW!=='exam';
+  const open=!GATE_MIN&&!onDiag&&VIEW!=='exam'&&VIEW!=='xinma';
   g.hidden=!open;pill.hidden=open||onDiag;document.body.classList.toggle('gated',open);
   if(open){const b=g.querySelector('#gateGo');try{b.focus({preventScroll:true})}catch(e){}}
 }
@@ -1282,8 +1282,9 @@ function renderPaperKey(n,unlocked){
   renderPaperKeyLocal(n,unlocked,$('#paperCard'));
   // chưa có mã học sinh: vẫn thấy chỗ chụp bài, kèm cách lấy mã
   if(API&&!PREVIEW&&!S.code&&unlocked){const c=$('#paperCard');c.insertAdjacentHTML('afterbegin',`<div class="up-box"><h3 class="ih">${em('camera-with-flash')}Chụp bài giấy để máy chấm</h3>
-    <p class="small">Máy chấm phần trắc nghiệm và điền từ từ ảnh bài làm, giải thích câu sai, rồi chép đoạn viết của cậu thành chữ để cậu kiểm tra trước khi chấm. Để gửi ảnh, cậu cần mã học sinh 6 ký tự cô gửi. Chưa có mã? Bố mẹ gọi hoặc nhắn Zalo 0974.840.845.</p>
-    <div class="row"><button class="btn hi" id="goCode">Nhập mã học sinh để chụp bài</button></div><p class="small muted">Trong lúc chờ, cậu vẫn tự chấm được bằng đáp án bên dưới.</p></div>`);
+    <p class="small">Máy chấm phần trắc nghiệm và điền từ từ ảnh bài làm, giải thích câu sai, rồi chép đoạn viết của cậu thành chữ để cậu kiểm tra trước khi chấm. Để gửi ảnh, cậu cần mã học sinh 6 ký tự. Máy chấm 4.000đ mỗi bài; gói thử 14 bài 50.000đ.</p>
+    <div class="row"><button class="btn hi" id="goCode">Mình có mã rồi · nhập mã</button><button class="btn" id="goReq">Bố mẹ điền form xin mã</button></div><p class="small muted">Trong lúc chờ, cậu vẫn tự chấm được bằng đáp án bên dưới.</p></div>`);
+    $('#goReq').onclick=()=>go('xinma');
     $('#goCode').onclick=()=>{go('start');setTimeout(()=>{const i=$('#codeLogin');if(i){i.scrollIntoView({block:'center'});i.focus()}},200)}}
 }
 function renderPaperKeyLocal(n,unlocked,card){
