@@ -59,7 +59,8 @@ COV_FULL = {"sentence_completion", "dialogue_completion", "synonym", "antonym", 
 PACK_OF = {"essay": "essay", "paragraph_writing": "essay", "guided_writing": "essay", "gap_text": "gap_text", "true_false": "true_false",
   "open_cloze": "open_cloze", "key_word": "key_word", "matching_headings": "matching_headings", "speaking": "speaking"}
 PACK_HN = ["essay", "open_cloze", "key_word", "matching_headings"]
-PACK_DEFAULT = ["essay", "open_cloze", "key_word", "gap_text"]
+# sở chưa rõ đề: 4 dạng gặp nhiều nhất trong đề 21 sở đã có cấu trúc (viết 21/21, điền một từ 17, viết lại câu với từ cho sẵn 15, nối tiêu đề 9)
+PACK_DEFAULT = ["essay", "open_cloze", "key_word", "matching_headings"]
 def sec_kind(x):
     f, n = x.get("format") or "other", (x.get("note") or "").lower()
     if f == "other" and re.search(r"speaking|thi nói|nói trực tiếp", n): return "speaking"
@@ -67,7 +68,8 @@ def sec_kind(x):
     return f
 def coverage(r):
     secs = (r.get("paper") or {}).get("sections") or []
-    if not secs: return None
+    # quá ít phần (chỉ biết "có nghe", "có viết") thì coi như chưa rõ cấu trúc
+    if len({x.get("format") for x in secs if x.get("format") != "other"}) < 3: return None
     rows, seen = [], {}
     for x in secs:
         k = sec_kind(x)
@@ -99,6 +101,8 @@ def pack_for(r):
 def calc_view(r):
     v = {k: r[k] for k in CALC_KEYS if k in r}
     v["pack"] = pack_for(r)
+    pr = (r.get("paper") or {}).get("predicted")
+    if pr: v["pred"] = {"confidence": pr.get("confidence")}
     cov = coverage(r)
     if cov: v["cov"] = cov
     hl = (r.get("paper") or {}).get("has_listening")

@@ -15,6 +15,8 @@ RAW = HERE / "raw"
 LIST = {r["slug"]: r for r in json.load(open(HERE / "_list.json", encoding="utf-8"))}
 UNI_HOME = {"ptnk": "tp-ho-chi-minh", "chuyen-dh-vinh": "nghe-an", "chuyen-khoa-hoc-hue": "hue"}
 # sửa tay khi máy đọc công thức sai: slug → {exam_key: {"w": {...}, "max": …, "text": …}}
+# cấu trúc đề suy ra từ đề các năm của tỉnh cũ (regions/de-cu/<slug>.json), dùng khi lượt tìm chính không có cấu trúc
+DECU = {p.stem: json.load(open(p, encoding="utf-8")) for p in sorted((HERE / "de-cu").glob("*.json"))} if (HERE / "de-cu").exists() else {}
 OVERRIDES = json.load(open(HERE / "overrides.json", encoding="utf-8")) if (HERE / "overrides.json").exists() else {}
 TIERS = ["B1", "B1+", "B2", "B2+", "C1"]
 LANG = {"Anh": "Anh", "Pháp": "Phap", "Phap": "Phap", "Trung": "Trung", "Nga": "Nga", "Nhật": "Nhat", "Nhat": "Nhat", "Hàn": "Han", "Han": "Han", "Đức": "Duc", "Duc": "Duc"}
@@ -98,11 +100,21 @@ def build_exam(raw, key, label, warnings, slug):
         warnings.append(f"{slug}/{key}: trọng số {w} (×10 = {10*sum(w.values())}) ≠ max {mx} — cần sửa tay")
     if w["ach"] == 0:
         warnings.append(f"{slug}/{key}: không thấy hệ số môn chuyên — cần sửa tay"); w["ach"] = 2
-    P = raw.get("chuyen_paper") or {}
+    P = dict(raw.get("chuyen_paper") or {})
+    pred = None
+    dc = DECU.get(slug if key == "so" else key)
+    if dc and (dc.get("predicted") or {}).get("sections") and len({x.get("format") for x in P.get("sections") or [] if x.get("format") != "other"}) < 3:
+        Q = dc["predicted"]
+        for k2 in ("minutes", "has_listening", "essay_words", "difficulty", "difficulty_evidence"):
+            if Q.get(k2) is not None: P[k2] = Q[k2]
+        P["sections"] = Q["sections"]
+        pred = {"basis": dc.get("basis"), "confidence": dc.get("confidence"),
+                "evidence": [{k3: e.get(k3) for k3 in ("tinh_cu", "truong", "nam", "url", "loai")} for e in dc.get("evidence") or [] if e.get("url")]}
     paper = {"map": tier(P.get("difficulty")), "label": f"đề chuyên Anh {label}", "ac_add": 2.5, "ac_cap": 10,
              "ac_label": "Anh chung (đề chung)", "difficulty": P.get("difficulty"), "difficulty_evidence": P.get("difficulty_evidence"),
              "minutes": P.get("minutes"), "has_listening": P.get("has_listening"), "essay_words": P.get("essay_words"),
              "sections": P.get("sections") or [], "sample_links": P.get("sample_links") or []}
+    if pred: paper["predicted"] = pred
     formula = {"w": {k: v for k, v in w.items() if v}, "paper": key, "text": (ov or {}).get("text") or F.get("text"), "max": mx}
     return formula, paper, m3
 
