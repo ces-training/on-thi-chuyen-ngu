@@ -74,6 +74,16 @@ Sau đó chạy `python3 src/chuyen-anh-14-ngay/build.py`, rồi commit và push
 
 Khi cập nhật mã có thêm trang tính hoặc cột mới, chạy lại hàm `setup` một lần trước khi triển khai phiên bản mới.
 
+## Bảng quản trị và phân quyền (từ 23/10/2026)
+
+Trang: https://ces-training.github.io/on-thi-chuyen-ngu/quan-ly/
+
+- **Quản lý** đăng nhập bằng mã PIN gốc (`TEACHER_PIN`). Tab: Tổng quan (doanh thu ước tính, phễu đăng ký, phễu học tập, số liệu từng giáo viên và sale), Học sinh (giao giáo viên phụ trách), Phụ huynh đăng ký, Nhân sự & phân quyền, Nhật ký truy cập.
+- Quản lý tạo tài khoản cho **giáo viên** và **sale** ở tab Nhân sự & phân quyền. Mỗi người có mã PIN 8 ký tự riêng, chỉ hiện một lần lúc tạo (máy chủ lưu bản băm). Khoá tài khoản hoặc cấp PIN mới ở cùng tab.
+- **Giáo viên** chỉ thấy học sinh được giao: tiến độ, bài làm, ảnh bài, chấm lại, nhắn tin (mở hồ sơ ở trang `/co/`). Không thấy liên hệ phụ huynh, yêu cầu mua, doanh thu.
+- **Sale** thấy phụ huynh đăng ký, liên hệ, cấp mã, cộng lượt, bật gói học; mỗi học sinh chỉ một dòng tóm tắt học tập, không xem bài làm.
+- Máy chủ kiểm tra quyền ở từng yêu cầu. Mọi lần mở hồ sơ, cấp mã, cộng lượt, sửa điểm… được ghi vào trang tính `Nhật ký truy cập`.
+
 ## 6. Dùng hằng ngày
 
 - **Cấp mã cho học sinh:** vào `…/on-thi-chuyen-ngu/co/`, nhập PIN, gõ tên con ở ô **Thêm học sinh** rồi bấm **Cấp mã**. Máy tạo mã 6 ký tự (ví dụ `K7M2QX`) để cô gửi cho phụ huynh.

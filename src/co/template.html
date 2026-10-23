@@ -43,6 +43,7 @@ tr.click{cursor:pointer}tr.click:hover td{background:var(--agent-tint)}
 .code{font-family:var(--f-mono);font-size:1.3rem;font-weight:700;letter-spacing:.08em;background:var(--gold-tint);color:var(--gold-ink);padding:2px 10px;border-radius:8px}
 details summary{cursor:pointer;font-weight:700}
 .pd-tbl{border-collapse:collapse;width:100%;font-size:.95rem}.pd-tbl th,.pd-tbl td{border-bottom:1px solid var(--line,#ddd);padding:8px;vertical-align:top;text-align:left}.pd-tbl td:nth-child(3){width:58%;line-height:1.55}.pd-tbl td:nth-child(4){width:22%}.pd-st{font-size:.85rem;color:var(--muted,#666)}.pd-src a{display:inline-block;margin:0 4px 4px 0}.pd-tbl details summary{font-weight:600;font-size:.9rem}
+body.role-giaovien .only-mgr{display:none!important}
 </style>
 </head>
 <body>
@@ -50,7 +51,7 @@ details summary{cursor:pointer;font-weight:700}
 <a class="logo" href="../" aria-label="Về trang Ôn thi chuyên ngữ"><img src="../assets/emoji/woman-teacher.webp" alt="" width="52" height="52"></a>
 <div><b>Theo dõi học sinh</b><span>Kết quả web, bài giấy máy chấm và tin nhắn của các con</span></div>
 <a class="back" href="../chuyen-anh-14-ngay/xem-truoc.html">Xem trước nội dung trang</a>
-<a class="back pv2" href="../">Ôn thi chuyên ngữ</a>
+<a class="back pv2" href="../quan-ly/">Bảng quản trị</a>
 </div></header>
 <main>
 <div id="app"></div>
@@ -75,7 +76,7 @@ const theme=d=>(THEMES.find(t=>t.day===Number(d))||{}).theme||'';
 function vLogin(msg){
   if(!API){$('#app').innerHTML='<div class="card"><b>Chưa kết nối máy chủ.</b> Trang này cần địa chỉ Ứng dụng web của Google Apps Script (xem hướng dẫn cài đặt trong README của repo).</div>';return}
   $('#app').innerHTML=`<div class="card"><h2>Đăng nhập</h2><div class="row"><input type="password" id="pin" placeholder="Mã PIN của cô" autocomplete="current-password"><button id="go">Vào</button><span class="err small">${esc(msg||'')}</span></div></div>`;
-  $('#go').onclick=async()=>{PIN=$('#pin').value.trim();try{await api('t_list');try{sessionStorage.setItem('coPin',PIN)}catch(e){}vList()}catch(e){vLogin(e.code==='bad_pin'?'Sai mã PIN.':'Chưa kết nối được máy chủ.')}};
+  $('#go').onclick=async()=>{PIN=$('#pin').value.trim();try{await boot()}catch(e){vLogin(e.code==='bad_pin'?'Sai mã PIN.':'Chưa kết nối được máy chủ.')}};
   $('#pin').onkeydown=e=>{if(e.key==='Enter')$('#go').click()};
 }
 
@@ -83,13 +84,13 @@ async function vList(){
   $('#app').innerHTML='<p class="muted">Đang tải…</p>';
   let r;try{r=await api('t_list')}catch(e){return vLogin(e.code==='bad_pin'?'Sai mã PIN.':'Chưa kết nối được máy chủ.')}
   const st=r.students.slice().sort((a,b)=>(b.unread+b.errors)-(a.unread+a.errors)||String(b.lastSeen).localeCompare(String(a.lastSeen)));
-  $('#app').innerHTML=`<div class="card"><h2>Thêm học sinh</h2><div class="row"><input id="nm" placeholder="Họ tên học sinh" style="min-width:220px"><select id="gr">${[6,7,8,9].map(g=>`<option value="${g}" ${g===7?'selected':''}>Lớp ${g}</option>`).join('')}</select><label class="small">Lượt chấm chi tiết <input id="cr" type="number" min="0" max="500" value="0" style="width:70px"></label><button id="add">Cấp mã</button><span id="addMsg"></span></div><p class="small muted">Máy chấm bản thường miễn phí với mọi mã. Lượt chấm chi tiết (theo tiêu chí đề chuyên) tính 4.000đ/bài, gói 14 bài 50.000đ: chỉ cộng khi gia đình đã thanh toán. Con nhập mã ở Trang chủ.</p></div>
-  <div class="card" id="reqCard"><h2>Phụ huynh đăng ký</h2><p class="muted small">Đang tải…</p></div>
+  $('#app').innerHTML=`<div class="card only-mgr"><h2>Thêm học sinh</h2><div class="row"><input id="nm" placeholder="Họ tên học sinh" style="min-width:220px"><select id="gr">${[6,7,8,9].map(g=>`<option value="${g}" ${g===7?'selected':''}>Lớp ${g}</option>`).join('')}</select><label class="small">Lượt chấm chi tiết <input id="cr" type="number" min="0" max="500" value="0" style="width:70px"></label><button id="add">Cấp mã</button><span id="addMsg"></span></div><p class="small muted">Máy chấm bản thường miễn phí với mọi mã. Lượt chấm chi tiết (theo tiêu chí đề chuyên) tính 4.000đ/bài, gói 14 bài 50.000đ: chỉ cộng khi gia đình đã thanh toán. Con nhập mã ở Trang chủ.</p></div>
+  <div class="card only-mgr" id="reqCard"><h2>Phụ huynh đăng ký</h2><p class="muted small">Đang tải…</p></div>
   <div class="card"><div class="row" style="justify-content:space-between"><h2>Học sinh (${st.length})</h2><button class="ghost" id="rf">Tải lại</button></div>
   <div class="tw"><table><thead><tr><th>Học sinh</th><th>Mã</th><th>Đầu vào → đầu ra</th><th class="n">Buổi web / giấy</th><th class="n">Đúng web</th><th class="n">Nhớ lại</th><th class="n">Bài giấy</th><th class="n">Lượt chi tiết</th><th class="n">Hệ số</th><th>Học gần nhất</th><th>Cần xem</th></tr></thead>
   <tbody>${st.map(s=>`<tr class="click" data-code="${esc(s.code)}"><td><b>${esc(s.name)}</b><br><span class="small muted">Lớp ${esc(s.grade)}</span></td><td class="n">${esc(s.code)}</td><td>${lv(s.entryLevel)} → ${lv(s.finalLevel)}</td><td class="n">${s.daysWeb||0} / ${s.daysPaper||0}</td><td class="n">${pct(s.webAcc)}</td><td class="n">${pct(s.retryAcc)}</td><td class="n">${pct(s.paperAvg)}</td><td class="n">${s.credits}</td><td class="n">${s.eff||'—'}</td><td class="small">${when(s.lastSeen)}</td><td>${s.unread?`<span class="pill warn">${s.unread} tin nhắn</span> `:''}${s.errors?`<span class="pill bad">${s.errors} bài chưa chấm</span> `:''}${s.orderPending?'<span class="pill warn">muốn mua bản trả phí</span> ':''}${s.paid?'<span class="pill good">đã trả phí</span> ':''}${s.waitConfirm?`<span class="pill">${s.waitConfirm} bài viết chờ con xác nhận</span>`:''}</td></tr>`).join('')||'<tr><td colspan="11" class="muted">Chưa có học sinh. Thêm học sinh ở trên.</td></tr>'}</tbody></table></div></div>`;
   $('#rf').onclick=vList;
-  loadReqs();
+  if(ROLE!=='giaovien')loadReqs();
   document.querySelectorAll('tr.click').forEach(tr=>tr.onclick=()=>vStudent(tr.dataset.code));
   $('#add').onclick=async()=>{const name=$('#nm').value.trim();if(!name)return;$('#add').disabled=true;try{const a=await api('t_add',{name,grade:+$('#gr').value,credits:+$('#cr').value||0});$('#addMsg').innerHTML=`Mã của ${esc(name)}: <span class="code">${esc(a.code)}</span>`;setTimeout(vList,4000)}catch(e){$('#addMsg').textContent='Chưa thêm được.'}$('#add').disabled=false};
 }
@@ -128,9 +129,9 @@ async function vStudent(code){
    <div class="kpi"><span class="small muted">Đã nhớ chắc</span><b>${sum.mq||0} câu</b></div><div class="kpi"><span class="small muted">Hệ số tốc độ</span><b>${sum.e||'—'}</b></div><div class="kpi"><span class="small muted">Mức học trên web</span><b>${({nen:'Nền tảng',chuan:'Chuẩn',nang:'Nâng cao'})[sum.tr]||'—'}</b></div><div class="kpi"><span class="small muted">Lịch đang chọn</span><b>${sum.p?sum.p.min+'′ × '+sum.p.dpw:'—'}</b></div><div class="kpi"><span class="small muted">Bài giấy (máy chấm)</span><b>${pct(s.paperAvg)}</b></div></div>
    <h3>Kỹ năng trên web</h3><div class="tw"><table><tbody>${Object.entries(sk).map(([k,v])=>`<tr><td>${esc(SK[k]||k)}</td><td class="n">${v[0]}/${v[1]}</td><td class="n">${v[1]?Math.round(100*v[0]/v[1])+'%':'—'}</td></tr>`).join('')||'<tr><td class="muted">Chưa có dữ liệu.</td></tr>'}</tbody></table></div>
    <h3>Từng buổi</h3><div class="tw"><table><thead><tr><th>Buổi</th><th>Chủ đề</th><th class="n">Game</th><th class="n">Dạng thi</th><th class="n">Nghe</th><th class="n">Kiểm tra cuối buổi</th><th class="n">Giấy</th><th>Ngày</th></tr></thead><tbody>${Object.entries(days).map(([d,v])=>`<tr><td>${d}</td><td>${esc(theme(d))}</td><td class="n">${v[6]?v[6]+' game · '+v[5]+'★':'—'}</td><td class="n">${v[7]!=null?v[7]+'/'+v[8]:'—'}</td><td class="n">${v[9]!=null?v[9]+'/'+v[10]:'—'}</td><td class="n">${v[0]!=null?v[0]+'/'+v[1]:'—'}</td><td class="n">${v[2]!=null?v[2]+'/'+v[3]:'—'}</td><td class="small">${when(v[4])}</td></tr>`).join('')||'<tr><td colspan="8" class="muted">Chưa có buổi nào.</td></tr>'}</tbody></table></div></div>
-  <div class="card"><h2>Lượt nhận xét chi tiết bài viết</h2><p>Còn <b>${s.credits}</b> lượt${s.paid?' · đang có gói học nên không trừ lượt':''}. Giá công bố 4.000đ/bài, gói 14 bài 50.000đ; chỉ cộng lượt khi gia đình đã thanh toán.</p>
+  <div class="card only-mgr"><h2>Lượt nhận xét chi tiết bài viết</h2><p>Còn <b>${s.credits}</b> lượt${s.paid?' · đang có gói học nên không trừ lượt':''}. Giá công bố 4.000đ/bài, gói 14 bài 50.000đ; chỉ cộng lượt khi gia đình đã thanh toán.</p>
    <div class="row"><button class="mini" data-addcr="14">+14 lượt (gói 14 bài)</button><input type="number" id="crN" min="1" max="500" value="5" style="width:70px"><button class="mini ghost" id="crAdd">Cộng số lượt này</button><span class="small" id="crm"></span></div></div>
-  <div class="card"><h2>Gói học (không giới hạn lượt chi tiết)</h2>
+  <div class="card only-mgr"><h2>Gói học (không giới hạn lượt chi tiết)</h2>
    <p class="small">Con mua Gói Web hoặc Quản gia học tập thì xem nhận xét chi tiết mọi bài viết mà không trừ lượt. Bật khi gia đình đã thanh toán gói.</p>
    ${(r.orders||[]).length?`<p class="small">${r.orders.map(o=>`Yêu cầu mua ${when(o.ts)}: <b>${esc(o.status)}</b>`).join('<br>')}</p>`:''}
    <div class="row">${s.paid?`<span class="pill good">Đang dùng: ${esc(s.paid)}</span><button class="ghost mini" id="unpaid">Tắt gói học</button>`:`<select id="paidSel"><option value="Gói Web">Gói Web</option><option value="Quản gia">Quản gia học tập</option></select><button id="setPaid">Bật gói học</button>`}<span class="small" id="pm"></span></div></div>
@@ -183,7 +184,16 @@ function wHTML(W){
 }
 function mHTML(m){return `<div class="msg ${m.from==='teacher'?'t':''}"><span class="small muted">${m.from==='teacher'?'Cô':'Con'} · ${when(m.ts)}${m.itemId?' · câu '+esc(String(m.itemId).replace(/^d\d+/,'').replace(/^([A-Z]\d?)_?(\d+)$/,'$1.$2')):''}</span><div>${esc(m.text)}</div></div>`}
 
-PIN?vList():vLogin();
+/* vai của người đăng nhập: giáo viên chỉ thấy học sinh được giao, sale làm việc ở bảng quản trị */
+let ROLE='quanly';
+async function boot(){
+  const w=await api('t_whoami');ROLE=w.me.role;try{sessionStorage.setItem('coPin',PIN)}catch(e){}
+  document.body.classList.toggle('role-giaovien',ROLE==='giaovien');
+  if(ROLE==='sale'){$('#app').innerHTML='<div class="card"><h2>Trang này dành cho giáo viên</h2><p>Tài khoản sale làm việc ở <a href="../quan-ly/">Bảng quản trị</a>: phụ huynh đăng ký, cấp mã, gói học và lượt.</p></div>';return}
+  const m=/^#hs=([A-Z0-9]+)/.exec(location.hash);if(m){vStudent(decodeURIComponent(m[1]));return}
+  vList();
+}
+PIN?boot().catch(e=>vLogin(e.code==='bad_pin'?'Sai mã PIN.':e.code==='forbidden'?'Tài khoản không có quyền xem học sinh này.':'Chưa kết nối được máy chủ.')):vLogin();
 })();
 </script>
 </body>

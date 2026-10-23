@@ -179,6 +179,12 @@ co = co_tpl.replace("<!--__PRED__-->", PRED_HTML).replace("/*__BRAND_CSS__*/", b
 (repo / "co" / "index.html").write_text(app_look(co), encoding="utf-8")
 print("built", repo / "co" / "index.html")
 
+# ---- bảng quản trị phân quyền (quản lý, giáo viên, sale) ----
+ql = (here.parent / "quan-ly" / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__API_URL__", api)
+(repo / "quan-ly").mkdir(exist_ok=True)
+(repo / "quan-ly" / "index.html").write_text(app_look(ql), encoding="utf-8")
+print("built", repo / "quan-ly" / "index.html")
+
 # ---- trang viết tay (trang chủ, tuyển sinh): làm mới khối CSS dùng chung giữa hai dấu /*BRAND*/ … /*/BRAND*/ ----
 for f in [repo / "tuyen-sinh" / "index.html"]:
     t = f.read_text(encoding="utf-8")

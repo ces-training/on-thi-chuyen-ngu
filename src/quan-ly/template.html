@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quản trị · Ôn thi chuyên ngữ</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/*__BRAND_CSS__*/
+/* Trang của cô: cùng bộ nhận diện nhưng tiết chế hơn; nền trơn, bảng rộng, màu chỉ dùng cho trạng thái. */
+body{font-size:15px;background-image:none}
+.hq .in{max-width:1100px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:12px}
+.hq .in b{font-family:var(--f-display);font-size:1.3rem;font-weight:800;line-height:1.1}
+.hq .in span{display:block;font-size:.84rem;color:var(--bar-ink-2)}
+.hq .in .back.pv2{margin-left:14px}.hq .in .back{margin-left:auto;font-size:.88rem;font-weight:600;color:var(--bar-ink-2)}
+main{max-width:1100px;margin:0 auto;padding:20px 16px 64px}
+h2{font-size:1.3rem;margin:0 0 8px}h3{font-size:1.05rem;margin:14px 0 6px}
+.card{display:block;margin:14px 0;padding:18px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--surface);border:2px solid var(--line-strong);border-radius:var(--r-ctl);padding:8px 10px;min-height:40px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--agent);box-shadow:0 0 0 3px var(--agent-tint)}
+textarea{width:100%}
+button{font:inherit;font-weight:700;border:0;border-radius:var(--r-ctl);padding:8px 16px;min-height:40px;margin-bottom:3px;background:var(--agent);color:var(--on-agent);cursor:pointer;box-shadow:0 3px 0 var(--agent-deep);transition:transform .12s ease-out,box-shadow .12s ease-out}
+button:active{transform:translateY(2px);box-shadow:0 1px 0 var(--agent-deep)}
+button.ghost{background:var(--surface);color:var(--ink);box-shadow:inset 0 0 0 2px var(--line-strong),0 3px 0 var(--line-strong)}
+button.mini{padding:3px 10px;min-height:30px;font-size:.8rem}
+button:disabled{opacity:.5;cursor:default;transform:none}
+.tw{overflow-x:auto}
+th,td{padding:9px 8px;vertical-align:top}
+td.n{font-family:var(--f-mono);text-align:right;white-space:nowrap}
+tr.click{cursor:pointer}tr.click:hover td{background:var(--agent-tint)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.kpi{background:var(--surface2);border-radius:12px;padding:10px 12px}.kpi b{display:block;font-family:var(--f-display);font-size:1.4rem;font-weight:800}
+.item{border-left:5px solid var(--line-strong);padding:7px 11px;margin:6px 0;background:var(--surface2);border-radius:8px}
+.item.bad{border-left-color:var(--bad)}.item.unk{border-left-color:var(--t-part-edge)}.item.ok{border-left-color:var(--good-edge)}
+.imgs{display:flex;flex-wrap:wrap;gap:8px}.imgs img{max-width:100%;width:340px;border-radius:8px;border:2px solid var(--line)}
+.msg{padding:9px 13px;border-radius:14px;background:var(--surface2);margin:6px 0;max-width:80%}
+.msg.t{margin-left:auto;background:var(--gold-tint);color:var(--gold-ink)}
+.err{color:var(--bad)}
+.code{font-family:var(--f-mono);font-size:1.3rem;font-weight:700;letter-spacing:.08em;background:var(--gold-tint);color:var(--gold-ink);padding:2px 10px;border-radius:8px}
+details summary{cursor:pointer;font-weight:700}
+.pd-tbl{border-collapse:collapse;width:100%;font-size:.95rem}.pd-tbl th,.pd-tbl td{border-bottom:1px solid var(--line,#ddd);padding:8px;vertical-align:top;text-align:left}.pd-tbl td:nth-child(3){width:58%;line-height:1.55}.pd-tbl td:nth-child(4){width:22%}.pd-st{font-size:.85rem;color:var(--muted,#666)}.pd-src a{display:inline-block;margin:0 4px 4px 0}.pd-tbl details summary{font-weight:600;font-size:.9rem}
+
+.tabs2{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 4px}
+.tabs2 button{background:var(--surface);color:var(--ink);box-shadow:inset 0 0 0 2px var(--line-strong),0 3px 0 var(--line-strong)}
+.tabs2 button[aria-selected=true]{background:var(--agent);color:var(--on-agent);box-shadow:0 3px 0 var(--agent-deep)}
+.who{margin-left:auto;text-align:right;font-size:.88rem}
+.funnel{display:flex;flex-direction:column;gap:6px;margin:8px 0}
+.funnel .f{display:grid;grid-template-columns:170px 1fr 70px;gap:10px;align-items:center;font-size:.92rem}
+.funnel .bar{height:22px;border-radius:6px;background:var(--agent);min-width:2px}
+.funnel .n{font-family:var(--f-mono);text-align:right}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.78rem;font-weight:700;background:var(--surface2)}
+.pill.good{background:var(--good-tint,#dff3e4)}.pill.warn{background:var(--gold-tint)}.pill.bad{background:#fde2e1}
+.perm td,.perm th{text-align:center}.perm td:first-child,.perm th:first-child{text-align:left}
+.pinbox{font-family:var(--f-mono);font-size:1.4rem;font-weight:700;letter-spacing:.12em;background:var(--gold-tint);color:var(--gold-ink);padding:6px 14px;border-radius:8px;display:inline-block}
+</style>
+</head>
+<body>
+<header class="hq"><div class="in">
+<a class="logo" href="../" aria-label="Về trang Ôn thi chuyên ngữ"><img src="../assets/emoji/woman-teacher.webp" alt="" width="52" height="52"></a>
+<div><b>Quản trị Ôn thi chuyên ngữ</b><span>Mỗi người đăng nhập bằng mã PIN riêng; mỗi vai chỉ thấy phần dữ liệu của mình</span></div>
+<div class="who" id="who"></div>
+</div></header>
+<main>
+<nav class="tabs2" id="tabs" hidden></nav>
+<div id="app"></div>
+</main>
+<script>
+(function(){
+"use strict";
+const API=__API_URL__;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let PIN='';try{PIN=sessionStorage.getItem('coPin')||''}catch(e){}
+let ME=null,TAB='';
+async function api(action,data){const r=await fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(Object.assign({action,pin:PIN},data||{}))});const j=await r.json();if(!j.ok){const e=new Error(j.error||'error');e.code=j.error;throw e}return j}
+const when=t=>t?new Date(t).toLocaleString('vi-VN',{hour:'2-digit',minute:'2-digit',day:'2-digit',month:'2-digit'}):'—';
+const vnd=n=>(Number(n)||0).toLocaleString('vi-VN')+'đ';
+const lv=k=>k?({preA2:'Dưới A2'}[k]||k):'—';
+const ERR={bad_pin:'Sai mã PIN.',busy:'Sai PIN quá nhiều lần, thử lại sau 10 phút.',forbidden:'Tài khoản này không có quyền xem phần đó.'};
+const err=e=>ERR[e&&e.code]||'Chưa kết nối được máy chủ.';
+const TABS={quanly:[['tong','Tổng quan'],['hs','Học sinh'],['dk','Phụ huynh đăng ký'],['ns','Nhân sự & phân quyền'],['nk','Nhật ký truy cập']],
+  giaovien:[['gv','Học sinh của tôi']],sale:[['dk','Phụ huynh đăng ký'],['shs','Học sinh & gói']]};
+const VIEW={tong:vTong,hs:vHs,dk:vDk,ns:vNs,nk:vNk,gv:vGv,shs:vShs};
+
+function vLogin(msg){
+  $('#tabs').hidden=true;$('#who').innerHTML='';
+  if(!API){$('#app').innerHTML='<div class="card">Chưa kết nối máy chủ.</div>';return}
+  $('#app').innerHTML=`<div class="card"><h2>Đăng nhập</h2><p class="small muted">Quản lý dùng mã PIN gốc của máy chủ. Giáo viên và sale dùng mã PIN quản lý cấp ở tab Nhân sự & phân quyền.</p>
+   <div class="row"><input type="password" id="pin" placeholder="Mã PIN" autocomplete="current-password"><button id="go">Vào</button><span class="err small">${esc(msg||'')}</span></div></div>`;
+  $('#go').onclick=async()=>{PIN=$('#pin').value.trim();try{await boot()}catch(e){vLogin(err(e))}};
+  $('#pin').onkeydown=e=>{if(e.key==='Enter')$('#go').click()};
+}
+async function boot(){
+  const r=await api('t_whoami');ME=r.me;ME.roleVi=r.roleVi;try{sessionStorage.setItem('coPin',PIN)}catch(e){}
+  $('#who').innerHTML=`<b style="font-size:1rem">${esc(ME.name)}</b><span>${esc(ME.roleVi)}</span><button class="ghost mini" id="out">Đăng xuất</button>`;
+  $('#out').onclick=()=>{PIN='';try{sessionStorage.removeItem('coPin')}catch(e){}vLogin()};
+  const T=TABS[ME.role]||[];$('#tabs').hidden=false;
+  $('#tabs').innerHTML=T.map(([k,n])=>`<button data-t="${k}">${esc(n)}</button>`).join('');
+  $('#tabs').onclick=e=>{const b=e.target.closest('button');if(b)show(b.dataset.t)};
+  show((location.hash.slice(1)&&T.some(t=>t[0]===location.hash.slice(1)))?location.hash.slice(1):T[0][0]);
+}
+function show(k){TAB=k;history.replaceState(null,'','#'+k);document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.t===k));$('#app').innerHTML='<p class="muted">Đang tải…</p>';VIEW[k]().catch(e=>{$('#app').innerHTML=`<div class="card err">${esc(err(e))}</div>`;if(e.code==='bad_pin')vLogin(err(e))})}
+const kpi=(n,v,sub)=>`<div class="kpi"><span class="small muted">${esc(n)}</span><b>${v}</b>${sub?`<span class="small muted">${esc(sub)}</span>`:''}</div>`;
+const funnel=(rows)=>{const max=Math.max(1,...rows.map(r=>r[1]));return `<div class="funnel">${rows.map(([n,v])=>`<div class="f"><span>${esc(n)}</span><div class="bar" style="width:${Math.round(100*v/max)}%"></div><span class="n">${v}</span></div>`).join('')}</div>`};
+const hoSo=code=>`<a class="mini" href="../co/#hs=${encodeURIComponent(code)}">Mở hồ sơ</a>`;
+
+/* ---------- quản lý: tổng quan ---------- */
+async function vTong(){
+  const r=await api('m_overview');const L=r.learn,S=r.sales,G=r.grading;
+  $('#app').innerHTML=`<div class="card"><h2>Bán hàng</h2><div class="kpis">${kpi('Doanh thu đã thu (ước tính)',vnd(S.revenue),'theo gói đã cấp lượt')}${kpi('Phụ huynh đăng ký',S.requests)}${kpi('Chưa xử lý',S.fresh)}${kpi('Đã cấp lượt',S.issued)}${kpi('Không mua',S.lost)}${kpi('Học sinh có gói học',S.paidStudents)}${kpi('Lượt chi tiết còn lại',S.creditsLeft)}${kpi('Lượt chi tiết đã dùng',S.details)}</div>
+    ${funnel([['Phụ huynh đăng ký',S.requests],['Đã liên hệ hoặc cấp',S.contacted+S.issued],['Đã cấp lượt (đã thu tiền)',S.issued]])}</div>
+   <div class="card"><h2>Học tập</h2><div class="kpis">${kpi('Học sinh có mã',L.students)}${kpi('Học trong 7 ngày',L.active7)}${kpi('Chưa giao giáo viên',L.noTeacher)}${kpi('Bài giấy đã chấm',G.graded+' / '+G.uploads)}${kpi('Bài máy chưa chấm được',G.errors)}</div>
+    ${funnel([['Có mã học sinh',L.students],['Làm bài đầu vào',L.diag],['Xong 7 buổi',L.half],['Xong 14 buổi',L.done14],['Làm bài đầu ra',L.final]])}</div>
+   <div class="grid3"><div class="card"><h2>Giáo viên</h2><div class="tw"><table><thead><tr><th>Tên</th><th class="n">Học sinh</th><th class="n">Học 7 ngày</th><th class="n">Tin chưa đọc</th><th class="n">Bài lỗi</th></tr></thead><tbody>${r.teachers.map(t=>`<tr><td>${esc(t.name)}${t.active?'':' <span class="pill">đã khoá</span>'}</td><td class="n">${t.students}</td><td class="n">${t.active7}</td><td class="n">${t.unread}</td><td class="n">${t.errors}</td></tr>`).join('')||'<tr><td colspan="5" class="muted">Chưa có tài khoản giáo viên.</td></tr>'}</tbody></table></div></div>
+   <div class="card"><h2>Sale</h2><div class="tw"><table><thead><tr><th>Tên</th><th class="n">Đã xử lý</th><th class="n">Cấp lượt</th><th class="n">Doanh thu</th></tr></thead><tbody>${r.salesTeam.map(t=>`<tr><td>${esc(t.name)}${t.active?'':' <span class="pill">đã khoá</span>'}</td><td class="n">${t.handled}</td><td class="n">${t.issued}</td><td class="n">${vnd(t.revenue)}</td></tr>`).join('')||'<tr><td colspan="4" class="muted">Chưa có tài khoản sale.</td></tr>'}</tbody></table></div></div></div>
+   <p class="small muted">Doanh thu tính từ các yêu cầu đã cấp lượt theo bảng giá công khai (4.000đ/bài, gói 14 bài 50.000đ); chưa gồm học phí Gói Web và Quản gia.</p>`;
+}
+
+/* ---------- quản lý: toàn bộ học sinh, giao giáo viên ---------- */
+async function vHs(){
+  const r=await api('t_list');const T=r.teachers||[];
+  const st=r.students.slice().sort((a,b)=>String(b.lastSeen).localeCompare(String(a.lastSeen)));
+  $('#app').innerHTML=`<div class="card"><h2>Thêm học sinh</h2><div class="row"><input id="nm" placeholder="Họ tên học sinh" style="min-width:200px"><select id="gr">${[6,7,8,9].map(g=>`<option value="${g}" ${g===7?'selected':''}>Lớp ${g}</option>`).join('')}</select>
+    <label class="small">Lượt chi tiết <input id="cr" type="number" min="0" max="500" value="0" style="width:70px"></label><select id="tc"><option value="">Chưa giao giáo viên</option>${T.map(t=>`<option value="${esc(t.id)}">${esc(t.name)}</option>`).join('')}</select><button id="add">Cấp mã</button><span id="addMsg"></span></div></div>
+   <div class="card"><h2>Học sinh (${st.length})</h2><div class="tw"><table><thead><tr><th>Học sinh</th><th>Mã</th><th>Đầu vào → ra</th><th class="n">Buổi web/giấy</th><th>Học gần nhất</th><th>Gói</th><th class="n">Lượt</th><th>Giáo viên phụ trách</th><th></th></tr></thead>
+   <tbody>${st.map(s=>`<tr><td><b>${esc(s.name)}</b><br><span class="small muted">Lớp ${esc(s.grade)}</span></td><td class="n">${esc(s.code)}</td><td>${lv(s.entryLevel)} → ${lv(s.finalLevel)}</td><td class="n">${s.daysWeb||0}/${s.daysPaper||0}</td><td class="small">${when(s.lastSeen)}</td><td>${s.paid?`<span class="pill good">${esc(s.paid)}</span>`:'—'}</td><td class="n">${s.credits}</td>
+     <td><select data-as="${esc(s.code)}"><option value="">—</option>${T.map(t=>`<option value="${esc(t.id)}" ${t.id===s.teacher?'selected':''}>${esc(t.name)}</option>`).join('')}</select></td><td>${hoSo(s.code)}</td></tr>`).join('')||'<tr><td colspan="9" class="muted">Chưa có học sinh.</td></tr>'}</tbody></table></div>
+   <p class="small muted">Giáo viên chỉ thấy học sinh được giao ở đây. Đổi ô Giáo viên phụ trách là lưu ngay.</p></div>`;
+  document.querySelectorAll('[data-as]').forEach(sel=>sel.onchange=async()=>{sel.disabled=true;try{await api('m_assign',{code:sel.dataset.as,teacher:sel.value})}catch(e){alertRow(sel,err(e))}sel.disabled=false});
+  $('#add').onclick=async()=>{const name=$('#nm').value.trim();if(!name)return;$('#add').disabled=true;try{const a=await api('t_add',{name,grade:+$('#gr').value,credits:+$('#cr').value||0,teacher:$('#tc').value});$('#addMsg').innerHTML=`Mã của ${esc(name)}: <span class="code">${esc(a.code)}</span>`;setTimeout(()=>show('hs'),4000)}catch(e){$('#addMsg').textContent=err(e)}$('#add').disabled=false};
+}
+function alertRow(el,msg){const s=document.createElement('span');s.className='small err';s.textContent=' '+msg;el.after(s)}
+
+/* ---------- giáo viên: học sinh được giao ---------- */
+async function vGv(){
+  const r=await api('t_list');
+  const pct=x=>x===''||x==null?'—':Math.round(Number(x)*100)+'%';
+  const st=r.students.slice().sort((a,b)=>(b.unread+b.errors+b.waitConfirm)-(a.unread+a.errors+a.waitConfirm)||String(b.lastSeen).localeCompare(String(a.lastSeen)));
+  $('#app').innerHTML=`<div class="card"><h2>Học sinh của tôi (${st.length})</h2><p class="small muted">Chỉ gồm học sinh quản lý giao cho cô. Bấm Mở hồ sơ để xem bài làm, ảnh bài, chấm lại và nhắn tin.</p>
+   <div class="tw"><table><thead><tr><th>Học sinh</th><th>Đầu vào → ra</th><th class="n">Buổi web/giấy</th><th class="n">Đúng web</th><th class="n">Nhớ lại</th><th class="n">Bài giấy</th><th>Học gần nhất</th><th>Cần xem</th><th></th></tr></thead>
+   <tbody>${st.map(s=>`<tr><td><b>${esc(s.name)}</b><br><span class="small muted">Lớp ${esc(s.grade)} · ${esc(s.code)}</span></td><td>${lv(s.entryLevel)} → ${lv(s.finalLevel)}</td><td class="n">${s.daysWeb||0}/${s.daysPaper||0}</td><td class="n">${pct(s.webAcc)}</td><td class="n">${pct(s.retryAcc)}</td><td class="n">${pct(s.paperAvg)}</td><td class="small">${when(s.lastSeen)}</td>
+     <td>${s.unread?`<span class="pill warn">${s.unread} tin nhắn</span> `:''}${s.errors?`<span class="pill bad">${s.errors} bài lỗi</span> `:''}${s.waitConfirm?`<span class="pill">${s.waitConfirm} bài viết chờ con xác nhận</span>`:''}</td><td>${hoSo(s.code)}</td></tr>`).join('')||'<tr><td colspan="9" class="muted">Quản lý chưa giao học sinh nào cho cô.</td></tr>'}</tbody></table></div></div>`;
+}
+
+/* ---------- sale + quản lý: phụ huynh đăng ký ---------- */
+async function vDk(){
+  const r=await api('t_requests');const L=r.requests||[];
+  const open=L.filter(x=>x.status==='mới'||x.status==='đã liên hệ');
+  const row=x=>`<details class="card" data-req="${esc(x.id)}"${x.status==='mới'?' open':''}><summary><b>${esc(x.child)}</b> · lớp ${esc(x.grade)} · ${esc(x.packLabel||'')} · ${when(x.ts)} · <span class="pill ${x.status==='mới'?'warn':x.status==='đã cấp lượt'?'good':''}">${esc(x.status)}</span>${x.code?` · mã <span class="code">${esc(x.code)}</span>`:''}${x.handler?` · ${esc(x.handler)}`:''}</summary>
+    <p class="small">Phụ huynh: <b>${esc(x.parent)}</b> · ĐT/Zalo: ${esc(x.phone||'—')} · Email: ${x.email?`<a href="mailto:${esc(x.email)}">${esc(x.email)}</a>`:'—'}<br>${esc(x.region||'')}${x.school?' · nhắm '+esc(x.school):''}${x.note?`<br>Lời nhắn: ${esc(x.note)}`:''}</p>
+    <textarea rows="2" data-rnote placeholder="Ghi chú (đã gọi, đã thu tiền…)">${esc(x.teacherNote||'')}</textarea>
+    <div class="row"><label class="small">Lượt <input type="number" data-rcr min="1" max="500" value="${x.packN||14}" style="width:70px"></label><button class="mini" data-rissue>${x.code?'Đã thu tiền · cộng lượt':'Đã thu tiền · cấp mã'}</button>${x.email?'<label class="small"><input type="checkbox" data-rmail checked> gửi mã qua email</label>':''}
+     <button class="ghost mini" data-rst="đã liên hệ">Đã liên hệ</button><button class="ghost mini" data-rst="không mua">Không mua</button><span class="small" data-rinfo></span></div></details>`;
+  $('#app').innerHTML=`<div class="card"><h2>Phụ huynh đăng ký (${open.length} đang chờ)</h2><p class="small muted">Từ form mua nhận xét chi tiết trên trang học sinh (4.000đ/bài, gói 14 bài 50.000đ). Chỉ bấm "Đã thu tiền" khi tiền đã về.</p></div>${L.length?L.map(row).join(''):'<p class="muted">Chưa có yêu cầu nào.</p>'}`;
+  document.querySelectorAll('[data-req]').forEach(d=>{const id=d.dataset.req,info=d.querySelector('[data-rinfo]'),note=()=>d.querySelector('[data-rnote]').value;
+    const run=async fn=>{info.textContent='Đang lưu…';try{const x=await fn();info.textContent=x&&x.code?`Mã ${x.code} · thêm ${x.credits} lượt${x.mailed?' · đã gửi email':''}`:'Đã lưu.';setTimeout(()=>show('dk'),2500)}catch(e){info.textContent=err(e)}};
+    d.querySelectorAll('[data-rst]').forEach(b=>b.onclick=()=>run(()=>api('t_req_status',{id,status:b.dataset.rst,note:note()})));
+    const is=d.querySelector('[data-rissue]');is.onclick=()=>{is.disabled=true;run(async()=>{const m=d.querySelector('[data-rmail]');const x=await api('t_req_issue',{id,credits:+d.querySelector('[data-rcr]').value,sendEmail:!!(m&&m.checked)});if(note())await api('t_req_status',{id,status:'đã cấp lượt',note:note()});return x})};
+  });
+}
+
+/* ---------- sale: học sinh, gói, lượt (không có bài làm) ---------- */
+async function vShs(){
+  const r=await api('s_list');const st=r.students.slice().sort((a,b)=>String(b.lastSeen).localeCompare(String(a.lastSeen)));
+  $('#app').innerHTML=`<div class="card"><h2>Cấp mã mới</h2><div class="row"><input id="nm" placeholder="Họ tên học sinh" style="min-width:200px"><select id="gr">${[6,7,8,9].map(g=>`<option value="${g}" ${g===7?'selected':''}>Lớp ${g}</option>`).join('')}</select><label class="small">Lượt chi tiết <input id="cr" type="number" min="0" max="500" value="0" style="width:70px"></label><button id="add">Cấp mã</button><span id="addMsg"></span></div><p class="small muted">Chỉ cộng lượt khi gia đình đã thanh toán. Quản lý giao giáo viên phụ trách sau.</p></div>
+   <div class="card"><h2>Học sinh (${st.length})</h2><p class="small muted">Mỗi con một dòng tóm tắt học tập. Bài làm và nhận xét chuyên môn do giáo viên phụ trách xem.</p><div class="tw"><table><thead><tr><th>Học sinh</th><th>Phụ huynh</th><th>Đầu vào → ra</th><th class="n">Buổi web</th><th>Học gần nhất</th><th>Giáo viên</th><th>Gói học</th><th class="n">Lượt chi tiết</th></tr></thead>
+   <tbody>${st.map(s=>`<tr data-code="${esc(s.code)}"><td><b>${esc(s.name)}</b><br><span class="small muted">Lớp ${esc(s.grade)} · ${esc(s.code)}</span>${s.orderPending?'<br><span class="pill warn">muốn mua</span>':''}</td>
+     <td class="small">${esc(s.parent||'—')}<br>${esc(s.phone||'')}${s.email?`<br><a href="mailto:${esc(s.email)}">${esc(s.email)}</a>`:''}</td><td>${lv(s.entryLevel)} → ${lv(s.finalLevel)}</td><td class="n">${s.daysWeb||0}/14</td><td class="small">${when(s.lastSeen)}</td><td class="small">${esc(s.teacher||'—')}</td>
+     <td>${s.paid?`<span class="pill good">${esc(s.paid)}</span> <button class="ghost mini" data-unpaid>Tắt</button>`:`<select data-pk><option value="Gói Web">Gói Web</option><option value="Quản gia">Quản gia học tập</option></select> <button class="mini" data-paid>Bật</button>`}</td>
+     <td class="n">${s.credits} <button class="mini ghost" data-cr="14">+14</button></td></tr>`).join('')||'<tr><td colspan="8" class="muted">Chưa có học sinh.</td></tr>'}</tbody></table></div></div>`;
+  document.querySelectorAll('tr[data-code]').forEach(tr=>{const code=tr.dataset.code;const go=async fn=>{try{await fn();show('shs')}catch(e){alertRow(tr.lastElementChild,err(e))}};
+    const p=tr.querySelector('[data-paid]');if(p)p.onclick=()=>go(()=>api('t_paid',{code,paid:tr.querySelector('[data-pk]').value}));
+    const u=tr.querySelector('[data-unpaid]');if(u)u.onclick=()=>{if(!u.dataset.sure){u.dataset.sure=1;u.textContent='Chắc chắn?';return}go(()=>api('t_paid',{code,paid:''}))};
+    tr.querySelector('[data-cr]').onclick=()=>go(()=>api('t_credits',{code,add:14}))});
+  $('#add').onclick=async()=>{const name=$('#nm').value.trim();if(!name)return;$('#add').disabled=true;try{const a=await api('t_add',{name,grade:+$('#gr').value,credits:+$('#cr').value||0});$('#addMsg').innerHTML=`Mã của ${esc(name)}: <span class="code">${esc(a.code)}</span>`;setTimeout(()=>show('shs'),4000)}catch(e){$('#addMsg').textContent=err(e)}$('#add').disabled=false};
+}
+
+/* ---------- quản lý: nhân sự và phân quyền ---------- */
+async function vNs(){
+  const r=await api('m_staff');
+  $('#app').innerHTML=`<div class="card"><h2>Thêm tài khoản</h2><div class="row"><input id="sn" placeholder="Họ tên" style="min-width:200px"><select id="sr"><option value="giaovien">Giáo viên</option><option value="sale">Sale</option><option value="quanly">Quản lý</option></select><input id="se" type="email" placeholder="Email (tuỳ chọn)"><button id="sadd">Tạo tài khoản</button></div><div id="pinOut"></div></div>
+   <div class="card"><h2>Tài khoản (${r.staff.length})</h2><div class="tw"><table><thead><tr><th>Tên</th><th>Vai</th><th>Mã</th><th class="n">Học sinh được giao</th><th>Trạng thái</th><th></th></tr></thead><tbody>${r.staff.map(x=>`<tr data-id="${esc(x.id)}"><td><b>${esc(x.name)}</b><br><span class="small muted">${esc(x.email||'')}</span></td><td>${esc(x.roleVi)}</td><td class="n">${esc(x.id)}</td><td class="n">${x.role==='giaovien'?x.students:'—'}</td><td>${x.active?'<span class="pill good">đang dùng</span>':'<span class="pill">đã khoá</span>'}</td>
+     <td><button class="ghost mini" data-act="${x.active?'off':'on'}">${x.active?'Khoá':'Mở lại'}</button> <button class="ghost mini" data-act="pin">Cấp PIN mới</button></td></tr>`).join('')||'<tr><td colspan="6" class="muted">Chưa có tài khoản nào. Tạo tài khoản ở trên.</td></tr>'}</tbody></table></div></div>
+   <div class="card"><h2>Ai thấy gì</h2><div class="tw"><table class="perm"><thead><tr><th>Dữ liệu</th><th>Quản lý</th><th>Giáo viên</th><th>Sale</th></tr></thead><tbody>
+    <tr><td>Số liệu tổng quan, doanh thu, nhật ký truy cập</td><td>✓</td><td>—</td><td>—</td></tr>
+    <tr><td>Tạo tài khoản, giao học sinh cho giáo viên</td><td>✓</td><td>—</td><td>—</td></tr>
+    <tr><td>Bài làm, ảnh bài giấy, chấm lại, nhắn tin với con</td><td>✓ mọi con</td><td>✓ con được giao</td><td>—</td></tr>
+    <tr><td>Tiến độ học chi tiết (từng buổi, kỹ năng, bản đồ lỗi)</td><td>✓</td><td>✓ con được giao</td><td>—</td></tr>
+    <tr><td>Một dòng tóm tắt học tập (đầu vào, số buổi, học gần nhất)</td><td>✓</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Liên hệ phụ huynh, phụ huynh đăng ký, cấp mã, cộng lượt, bật gói</td><td>✓</td><td>—</td><td>✓</td></tr></tbody></table></div>
+    <p class="small muted">Máy chủ kiểm tra quyền ở từng yêu cầu, nên ẩn trên trang chỉ là cho gọn: tài khoản không có quyền gọi thẳng máy chủ cũng bị từ chối. Mã PIN chỉ hiện một lần lúc tạo; máy chủ lưu bản băm, không lưu PIN.</p></div>`;
+  $('#sadd').onclick=async()=>{const name=$('#sn').value.trim();if(!name)return;$('#sadd').disabled=true;try{const a=await api('m_staff_add',{name,role:$('#sr').value,email:$('#se').value});
+    $('#pinOut').innerHTML=`<p>Đã tạo <b>${esc(name)}</b> (${esc(a.id)}). Mã PIN, <b>chỉ hiện một lần</b>, chép gửi riêng cho người này: <span class="pinbox">${esc(a.pin)}</span></p><p class="small">Đăng nhập tại trang này: ${esc(location.href.split('#')[0])}</p><button class="ghost mini" id="pinDone">Đã chép, tải lại danh sách</button>`;
+    $('#pinDone').onclick=()=>show('ns')}catch(e){$('#pinOut').textContent=err(e)}$('#sadd').disabled=false};
+  document.querySelectorAll('tr[data-id]').forEach(tr=>tr.querySelectorAll('[data-act]').forEach(b=>b.onclick=async()=>{const id=tr.dataset.id,act=b.dataset.act;
+    if(act==='pin'&&!b.dataset.sure){b.dataset.sure=1;b.textContent='PIN cũ sẽ hết hiệu lực · bấm lần nữa';return}
+    try{const x=await api('m_staff_set',act==='pin'?{id,resetPin:true}:{id,active:act==='on'});if(x.pin){tr.lastElementChild.innerHTML=`PIN mới: <span class="pinbox">${esc(x.pin)}</span>`}else show('ns')}catch(e){alertRow(b,err(e))}}));
+}
+async function vNk(){
+  const r=await api('m_audit');const V={t_student:'Mở hồ sơ học sinh',t_add:'Cấp mã',t_credits:'Cộng lượt',t_paid:'Bật/tắt gói',t_requests:'Xem phụ huynh đăng ký',t_req_issue:'Cấp lượt theo yêu cầu',t_req_status:'Đổi trạng thái yêu cầu',t_override:'Sửa điểm',t_regrade:'Chấm lại',t_reply:'Nhắn con',s_list:'Xem danh sách học sinh (sale)',m_staff_add:'Tạo tài khoản',m_staff_set:'Sửa tài khoản',m_assign:'Giao học sinh'};
+  $('#app').innerHTML=`<div class="card"><h2>Nhật ký truy cập (300 lượt gần nhất)</h2><div class="tw"><table><thead><tr><th>Lúc</th><th>Ai</th><th>Việc</th><th>Đối tượng</th></tr></thead><tbody>${r.rows.map(x=>`<tr><td class="small">${when(x.ts)}</td><td>${esc(x.who)}</td><td>${esc(V[x.action]||x.action)}</td><td class="n">${esc(x.target)}</td></tr>`).join('')||'<tr><td colspan="4" class="muted">Chưa có.</td></tr>'}</tbody></table></div></div>`;
+}
+
+PIN?boot().catch(e=>vLogin(err(e))):vLogin();
+})();
+</script>
+</body>
+</html>

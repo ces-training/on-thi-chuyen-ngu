@@ -25,11 +25,13 @@
  */
 
 var SHEETS = {
-  students: { name: 'Học sinh', cols: ['code', 'name', 'grade', 'created', 'lastSeen', 'daysWeb', 'daysPaper', 'webAcc', 'retryAcc', 'mastered', 'eff', 'entryLevel', 'finalLevel', 'planMin', 'planDpw', 'paperAvg', 'stateFileId', 'summary', 'paid', 'credits'] },
+  students: { name: 'Học sinh', cols: ['code', 'name', 'grade', 'created', 'lastSeen', 'daysWeb', 'daysPaper', 'webAcc', 'retryAcc', 'mastered', 'eff', 'entryLevel', 'finalLevel', 'planMin', 'planDpw', 'paperAvg', 'stateFileId', 'summary', 'paid', 'credits', 'teacher'] },
   uploads: { name: 'Bài giấy', cols: ['id', 'ts', 'code', 'day', 'fileIds', 'status', 'score', 'total', 'result', 'teacherNote', 'updated', 'error', 'tries', 'charged'] },
   messages: { name: 'Tin nhắn', cols: ['id', 'ts', 'code', 'from', 'uploadId', 'itemId', 'text', 'seenTeacher', 'seenStudent'] },
   orders: { name: 'Yêu cầu mua', cols: ['id', 'ts', 'code', 'name', 'product', 'status', 'note'] },
-  requests: { name: 'Phụ huynh đăng ký', cols: ['id', 'ts', 'parent', 'phone', 'email', 'child', 'grade', 'region', 'school', 'want', 'pack', 'note', 'fileIds', 'consent', 'status', 'code', 'teacherNote'] }
+  staff: { name: 'Nhân sự', cols: ['id', 'name', 'role', 'pinHash', 'active', 'created', 'email'] },
+  audit: { name: 'Nhật ký truy cập', cols: ['ts', 'who', 'role', 'action', 'target'] },
+  requests: { name: 'Phụ huynh đăng ký', cols: ['id', 'ts', 'parent', 'phone', 'email', 'child', 'grade', 'region', 'school', 'want', 'pack', 'note', 'fileIds', 'consent', 'status', 'code', 'teacherNote', 'handler'] }
 };
 var PRICE_PER = 4000, PACKS = { thu14: { n: 14, price: 50000, label: 'Gói 14 bài · 50.000đ' }, le: { n: 1, price: 4000, label: 'Lẻ · 4.000đ/bài' } };
 /* gói: 'thu14' hoặc 'le:<số bài>' */
@@ -87,24 +89,12 @@ function route_(q) {
   if (a === 'ping') return { ok: true };
   if (a === 'request') return request_(q);
   if (a === 'prices') return { ok: true, per: PRICE_PER, packs: PACKS };
-  if (a.indexOf('t_') === 0) {
-    checkPin_(q.pin);
-    switch (a) {
-      case 't_list': return tList_();
-      case 't_student': return tStudent_(q.code);
-      case 't_add': return tAdd_(q.name, q.grade, q.credits);
-      case 't_credits': return tCredits_(q.code, q.add);
-      case 't_requests': return tRequests_();
-      case 't_req_issue': return tReqIssue_(q.id, q.credits, q.sendEmail);
-      case 't_req_status': return tReqStatus_(q.id, q.status, q.note);
-      case 't_reply': return tReply_(q.code, q.uploadId, q.itemId, q.text);
-      case 't_override': return tOverride_(q);
-      case 't_regrade': return tRegrade_(q.uploadId);
-      case 't_image': return tImage_(q.fileId);
-      case 't_paid': return tPaid_(q.code, q.paid);
-      case 't_order': return tOrder_(q.id, q.status);
-    }
-    throw new Error('unknown_action');
+  if (/^(t|s|m)_/.test(a)) {
+    var me = whoIs_(q.pin);
+    if (me.role !== 'quanly' && (ROLE_ACTIONS[me.role] || []).indexOf(a) < 0) return { ok: false, error: 'forbidden' };
+    var res = staffRoute_(a, q, me);
+    if (LOGGED[a]) logAccess_(me, a, q.code || q.id || q.uploadId || q.name || '');
+    return res;
   }
   var st = getStudent_(q.code);
   if (!st) return { ok: false, error: 'bad_code' };
@@ -119,6 +109,161 @@ function route_(q) {
     case 'buy_request': return buyRequest_(st, q.product, q.uploadId);
   }
   throw new Error('unknown_action');
+}
+
+/* ---------- nhân sự và phân quyền ----------
+   Mã PIN trong Script property TEACHER_PIN là tài khoản quản lý gốc (thấy và làm được mọi việc).
+   Quản lý tạo tài khoản cho giáo viên, sale (sheet "Nhân sự", chỉ lưu bản băm của PIN).
+   - giáo viên: chỉ học sinh được giao (cột teacher của sheet Học sinh): tiến độ, bài làm, chấm lại, nhắn tin.
+     Không thấy liên hệ phụ huynh, yêu cầu mua, doanh thu.
+   - sale: phụ huynh đăng ký, liên hệ, cấp mã, cộng lượt, bật gói; mỗi học sinh chỉ một dòng tóm tắt học tập.
+     Không xem bài làm, ảnh bài, tin nhắn.
+   Máy chủ lọc dữ liệu theo vai; trang web chỉ ẩn/hiện cho gọn. */
+var ROLE_ACTIONS = {
+  giaovien: ['t_whoami', 't_list', 't_student', 't_reply', 't_override', 't_regrade', 't_image'],
+  sale: ['t_whoami', 's_list', 't_add', 't_credits', 't_paid', 't_order', 't_requests', 't_req_issue', 't_req_status']
+};
+var ROLE_VI = { quanly: 'Quản lý', giaovien: 'Giáo viên', sale: 'Sale' };
+var LOGGED = { t_student: 1, t_add: 1, t_credits: 1, t_paid: 1, t_requests: 1, t_req_issue: 1, t_req_status: 1, t_override: 1, t_regrade: 1, t_reply: 1,
+  s_list: 1, m_staff_add: 1, m_staff_set: 1, m_assign: 1 };
+var ISSUED = 'đã cấp lượt';
+
+function hash_(s) { return Utilities.base64Encode(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, 'ces-pin:' + s, Utilities.Charset.UTF_8)); }
+function whoIs_(pin) {
+  pin = String(pin || '').trim();
+  var c = CacheService.getScriptCache(), bad = Number(c.get('bad_pin') || 0);
+  if (bad > 30) throw new Error('busy'); // chặn đoán PIN: quá 30 lần sai trong 10 phút
+  var real = PropertiesService.getScriptProperties().getProperty('TEACHER_PIN');
+  if (pin && real && pin === String(real)) return { id: 'QL', name: 'Quản lý', role: 'quanly' };
+  if (pin) {
+    var h = hash_(pin);
+    var st = rows_('staff').filter(function (r) { return String(r.pinHash) === h && (r.active === true || r.active === 'TRUE'); })[0];
+    if (st) return { id: String(st.id), name: String(st.name), role: String(st.role) };
+  }
+  c.put('bad_pin', String(bad + 1), 600);
+  throw new Error('bad_pin');
+}
+function logAccess_(me, action, target) {
+  try { insert_('audit', { ts: now_(), who: me.name + ' (' + me.id + ')', role: me.role, action: action, target: clip_(target, 120) }); } catch (e) {}
+}
+/* giáo viên chỉ đụng tới học sinh được giao */
+function mine_(me, code) {
+  if (me.role !== 'giaovien') return true;
+  var st = getStudent_(code);
+  return !!st && String(st.teacher) === me.id;
+}
+function guard_(me, code) { if (!mine_(me, code)) throw new Error('forbidden'); }
+function uploadCode_(uploadId) { var u = find_('uploads', 'id', uploadId); if (!u) throw new Error('no_upload'); return u.code; }
+
+function staffRoute_(a, q, me) {
+  switch (a) {
+    case 't_whoami': return { ok: true, me: me, roleVi: ROLE_VI[me.role] || me.role };
+    case 't_list': return tList_(me);
+    case 't_student': guard_(me, q.code); return tStudent_(q.code, me);
+    case 't_reply': guard_(me, q.code); return tReply_(q.code, q.uploadId, q.itemId, q.text);
+    case 't_override': guard_(me, uploadCode_(q.uploadId)); return tOverride_(q);
+    case 't_regrade': guard_(me, uploadCode_(q.uploadId)); return tRegrade_(q.uploadId);
+    case 't_image': return tImage_(q.fileId, me);
+    case 't_add': return tAdd_(q.name, q.grade, q.credits, me.role === 'quanly' ? q.teacher : '');
+    case 't_credits': return tCredits_(q.code, q.add);
+    case 't_paid': return tPaid_(q.code, q.paid);
+    case 't_order': return tOrder_(q.id, q.status);
+    case 't_requests': return tRequests_();
+    case 't_req_issue': return tReqIssue_(q.id, q.credits, q.sendEmail, me);
+    case 't_req_status': return tReqStatus_(q.id, q.status, q.note, me);
+    case 's_list': return sList_();
+    case 'm_overview': return mOverview_();
+    case 'm_staff': return mStaff_();
+    case 'm_staff_add': return mStaffAdd_(q.name, q.role, q.email);
+    case 'm_staff_set': return mStaffSet_(q.id, q);
+    case 'm_assign': return mAssign_(q.code, q.teacher);
+    case 'm_audit': return { ok: true, rows: rows_('audit').slice(-300).reverse().map(function (r) { return { ts: r.ts, who: r.who, role: r.role, action: r.action, target: r.target }; }) };
+  }
+  throw new Error('unknown_action');
+}
+
+function newPin_() { var abc = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789', p = ''; for (var i = 0; i < 8; i++) p += abc.charAt(Math.floor(Math.random() * abc.length)); return p; }
+function activeOf_(r) { return r.active === true || r.active === 'TRUE'; }
+function mStaff_() {
+  var studs = rows_('students');
+  return { ok: true, staff: rows_('staff').map(function (r) {
+    return { id: r.id, name: r.name, role: r.role, roleVi: ROLE_VI[r.role] || r.role, active: activeOf_(r), created: r.created, email: r.email,
+      students: studs.filter(function (s) { return String(s.teacher) === String(r.id); }).length };
+  }) };
+}
+function mStaffAdd_(name, role, email) {
+  name = clip_(String(name || '').trim(), 80);
+  if (!name) throw new Error('no_name');
+  if (!ROLE_VI[role]) throw new Error('bad_role');
+  var pin = newPin_(), id;
+  withLock_(function () {
+    var n = rows_('staff').length + 1;
+    id = (role === 'giaovien' ? 'GV' : role === 'sale' ? 'SL' : 'QL') + ('0' + n).slice(-2) + Math.floor(Math.random() * 90 + 10);
+    insert_('staff', { id: id, name: name, role: role, pinHash: hash_(pin), active: true, created: now_(), email: clip_(email, 120) });
+  });
+  return { ok: true, id: id, pin: pin }; // PIN chỉ hiện một lần
+}
+function mStaffSet_(id, q) {
+  return withLock_(function () {
+    var r = find_('staff', 'id', id);
+    if (!r) throw new Error('no_staff');
+    var patch = {}, pin = null;
+    if (q.active != null) patch.active = q.active === true;
+    if (q.role && ROLE_VI[q.role]) patch.role = q.role;
+    if (q.resetPin) { pin = newPin_(); patch.pinHash = hash_(pin); }
+    update_('staff', r._row, patch);
+    return { ok: true, pin: pin };
+  });
+}
+function mAssign_(code, teacher) {
+  var st = getStudent_(code);
+  if (!st) return { ok: false, error: 'bad_code' };
+  teacher = String(teacher || '');
+  if (teacher && !find_('staff', 'id', teacher)) throw new Error('no_staff');
+  withLock_(function () { update_('students', st._row, { teacher: teacher }); });
+  return { ok: true };
+}
+
+/* sale: mỗi học sinh một dòng tóm tắt học tập + liên hệ phụ huynh, không có bài làm */
+function sList_() {
+  var reqs = rows_('requests'), staff = rows_('staff'), ords = rows_('orders');
+  var tName = function (id) { var t = staff.filter(function (x) { return String(x.id) === String(id); })[0]; return t ? t.name : ''; };
+  return { ok: true, students: rows_('students').map(function (s) {
+    var sum = parse_(s.summary, {}) || {}, rq = reqs.filter(function (r) { return r.code === s.code; }).slice(-1)[0];
+    return { code: s.code, name: s.name, grade: s.grade, created: s.created, lastSeen: s.lastSeen, entryLevel: s.entryLevel, finalLevel: s.finalLevel,
+      daysWeb: s.daysWeb, daysPaper: s.daysPaper, studyDays: sum.sd || '', paid: String(s.paid || ''), credits: credits_(s), teacher: tName(s.teacher),
+      orderPending: ords.some(function (o) { return o.code === s.code && o.status === 'chờ liên hệ'; }),
+      parent: rq ? rq.parent : '', phone: rq ? String(rq.phone || '') : '', email: rq ? rq.email : '' };
+  }) };
+}
+
+/* quản lý: số liệu tổng quan */
+function mOverview_() {
+  var studs = rows_('students'), reqs = rows_('requests'), ups = rows_('uploads'), staff = rows_('staff'), msgs = rows_('messages');
+  var wk = Date.now() - 7 * 864e5, active = function (s) { return s.lastSeen && new Date(s.lastSeen).getTime() > wk; };
+  var by = function (st) { return reqs.filter(function (r) { return r.status === st; }).length; };
+  var issued = reqs.filter(function (r) { return r.status === ISSUED; });
+  var money = function (list) { return list.reduce(function (x, r) { return x + packInfo_(r.pack).price; }, 0); };
+  var teachers = staff.filter(function (x) { return x.role === 'giaovien'; }).map(function (t) {
+    var mineS = studs.filter(function (s) { return String(s.teacher) === String(t.id); }), codes = mineS.map(function (s) { return s.code; });
+    return { name: t.name, active: activeOf_(t), students: mineS.length, active7: mineS.filter(active).length,
+      unread: msgs.filter(function (m) { return codes.indexOf(m.code) >= 0 && m.from === 'student' && !(m.seenTeacher === true || m.seenTeacher === 'TRUE'); }).length,
+      errors: ups.filter(function (u) { return codes.indexOf(u.code) >= 0 && u.status === 'error'; }).length };
+  });
+  var sales = staff.filter(function (x) { return x.role === 'sale'; }).map(function (t) {
+    var h = reqs.filter(function (r) { return String(r.handler) === String(t.name); }), done = h.filter(function (r) { return r.status === ISSUED; });
+    return { name: t.name, active: activeOf_(t), handled: h.length, issued: done.length, revenue: money(done) };
+  });
+  return { ok: true,
+    learn: { students: studs.length, diag: studs.filter(function (s) { return s.entryLevel; }).length, active7: studs.filter(active).length,
+      half: studs.filter(function (s) { return Number(s.daysWeb) >= 7; }).length, done14: studs.filter(function (s) { return Number(s.daysWeb) >= 14; }).length,
+      final: studs.filter(function (s) { return s.finalLevel; }).length, noTeacher: studs.filter(function (s) { return !s.teacher; }).length },
+    sales: { requests: reqs.length, fresh: by('mới'), contacted: by('đã liên hệ'), issued: issued.length, lost: by('không mua'), revenue: money(issued),
+      paidStudents: studs.filter(function (s) { return String(s.paid || '').trim(); }).length,
+      creditsLeft: studs.reduce(function (x, s) { return x + credits_(s); }, 0),
+      details: ups.filter(function (u) { return u.charged && u.charged !== 'gói'; }).length },
+    grading: { uploads: ups.length, graded: ups.filter(function (u) { return u.status === 'graded'; }).length, errors: ups.filter(function (u) { return u.status === 'error'; }).length },
+    teachers: teachers, salesTeam: sales };
 }
 
 function checkPin_(pin) {
@@ -602,14 +747,14 @@ function tRequests_() {
   return { ok: true, requests: list, packs: PACKS };
 }
 /* cô đã thu tiền → cấp mã kèm số lượt chấm; gửi mã qua email cho phụ huynh nếu có */
-function tReqIssue_(id, credits, sendEmail) {
+function tReqIssue_(id, credits, sendEmail, me) {
   var r = find_('requests', 'id', id);
   if (!r) throw new Error('no_request');
   var n = Math.max(0, Number(credits) || packInfo_(r.pack).n);
   var code = r.code;
   if (code && getStudent_(code)) tCredits_(code, n);
   else { code = tAdd_(r.child, r.grade, n).code; }
-  withLock_(function () { var x = find_('requests', 'id', id); update_('requests', x._row, { status: 'đã cấp lượt', code: code }); });
+  withLock_(function () { var x = find_('requests', 'id', id); update_('requests', x._row, { status: 'đã cấp lượt', code: code, handler: me ? me.name : '' }); });
   var mailed = false;
   if (sendEmail && r.email) {
     MailApp.sendEmail({ to: r.email, replyTo: teacherEmail_(),
@@ -621,11 +766,12 @@ function tReqIssue_(id, credits, sendEmail) {
   }
   return { ok: true, code: code, credits: n, mailed: mailed };
 }
-function tReqStatus_(id, status, note) {
+function tReqStatus_(id, status, note, me) {
   return withLock_(function () {
     var r = find_('requests', 'id', id);
     if (!r) throw new Error('no_request');
     var patch = { status: clip_(status, 40) };
+    if (me) patch.handler = me.name;
     if (note != null) patch.teacherNote = clip_(note, 1500);
     update_('requests', r._row, patch);
     return { ok: true };
@@ -642,21 +788,24 @@ function tCredits_(code, add) {
 }
 
 /* ---------- dành cho cô ---------- */
-function tList_() {
-  var ups = rows_('uploads'), msgs = rows_('messages'), ords = rows_('orders');
-  var list = rows_('students').map(function (s) {
+function tList_(me) {
+  var ups = rows_('uploads'), msgs = rows_('messages'), ords = rows_('orders'), staff = rows_('staff');
+  var tName = function (id) { var t = staff.filter(function (x) { return String(x.id) === String(id); })[0]; return t ? t.name : ''; };
+  var studs = rows_('students').filter(function (s) { return !me || me.role !== 'giaovien' || String(s.teacher) === me.id; });
+  var list = studs.map(function (s) {
     var mine = ups.filter(function (u) { return u.code === s.code; });
     var unread = msgs.filter(function (m) { return m.code === s.code && m.from === 'student' && !(m.seenTeacher === true || m.seenTeacher === 'TRUE'); }).length;
     return { code: s.code, name: s.name, grade: s.grade, created: s.created, lastSeen: s.lastSeen, daysWeb: s.daysWeb, daysPaper: s.daysPaper, webAcc: s.webAcc, retryAcc: s.retryAcc,
       mastered: s.mastered, eff: s.eff, entryLevel: s.entryLevel, finalLevel: s.finalLevel, planMin: s.planMin, planDpw: s.planDpw, paperAvg: s.paperAvg,
       uploads: mine.length, errors: mine.filter(function (u) { return u.status === 'error'; }).length, unread: unread,
       paid: String(s.paid || ''), credits: credits_(s), orderPending: ords.some(function (o) { return o.code === s.code && o.status === 'chờ liên hệ'; }),
-      waitConfirm: mine.filter(function (u) { var r = parse_(u.result, null); return r && r.writing && r.writing.status === 'confirm'; }).length };
+      waitConfirm: mine.filter(function (u) { var r = parse_(u.result, null); return r && r.writing && r.writing.status === 'confirm'; }).length,
+      teacher: String(s.teacher || ''), teacherName: tName(s.teacher) };
   });
-  return { ok: true, students: list };
+  return { ok: true, students: list, teachers: staff.filter(function (x) { return x.role === 'giaovien' && (x.active === true || x.active === 'TRUE'); }).map(function (x) { return { id: x.id, name: x.name }; }) };
 }
 
-function tStudent_(code) {
+function tStudent_(code, me) {
   var st = getStudent_(code);
   if (!st) return { ok: false, error: 'bad_code' };
   var ups = rows_('uploads').filter(function (r) { return r.code === st.code; }).map(function (r) { var o = uploadOut_(r); o.fileIds = String(r.fileIds).split(',').filter(String); return o; });
@@ -664,16 +813,17 @@ function tStudent_(code) {
   var outMsgs = msgs.map(msgOut_);
   withLock_(function () { msgs.forEach(function (m) { if (m.from === 'student' && !(m.seenTeacher === true || m.seenTeacher === 'TRUE')) update_('messages', m._row, { seenTeacher: true }); }); });
   var ords = rows_('orders').filter(function (o) { return o.code === st.code; }).map(function (o) { return { id: o.id, ts: o.ts, product: o.product, status: o.status }; });
+  if (me && me.role === 'giaovien') ords = []; // giáo viên không xem yêu cầu mua
   return { ok: true, student: { code: st.code, name: st.name, grade: st.grade, created: st.created, lastSeen: st.lastSeen, paperAvg: st.paperAvg, paid: String(st.paid || ''), credits: credits_(st) }, summary: parse_(st.summary, null), uploads: ups, messages: outMsgs, orders: ords };
 }
 
-function tAdd_(name, grade, credits) {
+function tAdd_(name, grade, credits, teacher) {
   name = clip_(String(name || '').trim(), 80);
   if (!name) throw new Error('no_name');
   return withLock_(function () {
     var abc = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789', code;
     do { code = ''; for (var i = 0; i < 6; i++) code += abc.charAt(Math.floor(Math.random() * abc.length)); } while (find_('students', 'code', code));
-    insert_('students', { code: code, name: name, grade: Number(grade) || '', created: now_(), credits: Math.max(0, Number(credits) || 0) });
+    insert_('students', { code: code, name: name, grade: Number(grade) || '', created: now_(), credits: Math.max(0, Number(credits) || 0), teacher: teacher || '' });
     return { ok: true, code: code };
   });
 }
@@ -727,9 +877,10 @@ function tOrder_(id, status) {
 
 function tRegrade_(uploadId) { var g = gradeUpload_(uploadId); return { ok: true, score: g.score, total: g.total }; }
 
-function tImage_(fileId) {
+function tImage_(fileId, me) {
   var has = function (r) { return String(r.fileIds || '').split(',').indexOf(String(fileId)) >= 0; };
-  var ok = rows_('uploads').some(has) || rows_('requests').some(has);
+  var up = rows_('uploads').filter(has)[0];
+  var ok = up ? mine_(me || { role: 'quanly' }, up.code) : (!me || me.role !== 'giaovien') && rows_('requests').some(has);
   if (!ok) throw new Error('not_found');
   var b = DriveApp.getFileById(fileId).getBlob();
   return { ok: true, mime: b.getContentType() || 'image/jpeg', data: Utilities.base64Encode(b.getBytes()) };
