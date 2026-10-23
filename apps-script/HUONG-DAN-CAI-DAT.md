@@ -112,3 +112,14 @@ Mỗi lượt chấm gồm khoảng 3 ảnh đã nén, đáp án và hướng d�
 Đây là ước tính; số thực tế phụ thuộc số ảnh và độ dài bài viết. Xem mức đã dùng ở console.anthropic.com → **Usage**.
 
 Google Apps Script, Sheets và Drive đều miễn phí trong hạn mức của tài khoản Google thường. Mỗi ảnh nén khoảng 300 KB, nên 30 học sinh × 14 buổi × 3 ảnh chỉ chiếm chừng 400 MB.
+
+## Phễu bán hàng (từ 23/10/2026)
+
+- Sau bài đầu vào, trang học sinh mời bố mẹ để lại số Zalo để nhận bản phác lộ trình và khả năng đỗ. Gửi xong là máy tự cấp mã học sinh, tạo một dòng trong sheet **Gia đình** và việc "Gọi chào trong 1 giờ" trong sheet **Việc của sale** (lead đến sau 21:00 có hạn 9:00 sáng hôm sau). Email báo lead mới gửi về `TEACHER_EMAIL` (hoặc tài khoản chạy máy chủ).
+- Điểm lead 0–100 = Phù hợp 30 + Học thử 40 + Ý định 30, tự chấm lại sau mỗi lần con đồng bộ tiến độ. Từ 60 là nóng (sale nhận việc mời tư vấn), 35–59 ấm, dưới 35 nguội. Bố mẹ và con không thấy điểm.
+- Máy tự tạo việc theo mốc: xong buổi 3, xong buổi 7 (báo cáo giữa kỳ), sau bài đầu ra, khi bố mẹ đặt lịch nói chuyện với cô, sau khi cô ghi kết luận tư vấn (gửi đề xuất 24 giờ, nhắc ngày 3 và ngày 7), khi có đơn gói, khi khách Gói Web học thưa hoặc độ đúng thấp, khi đầu ra tăng (mời giới thiệu) và khi gia đình được giới thiệu đã thanh toán (trao thưởng).
+- Trang **Gói học** (`chuyen-anh-14-ngay/?v=goi`): Gói Web theo giai đoạn (790.000đ / 1.190.000đ / 1.590.000đ / 2.190.000đ), Gói Quản gia (học phí đề xuất sau buổi đánh giá). Chưa có SePay nên bố mẹ gửi form; sale nhắn Zalo thu chuyển khoản rồi bấm **Đã thu tiền · kích hoạt** ở tab Đơn gói học.
+- Bảng quản trị: sale có tab Việc hôm nay (tin Zalo soạn sẵn, nút Sao chép · mở Zalo), Gia đình, Đơn gói học; giáo viên có tab Lịch tư vấn để ghi kết luận chuyên môn và gói đề xuất; quản lý thấy thêm khối Phễu gia đình ở Tổng quan.
+- Gắn `?utm_source=...&utm_campaign=...` vào đường dẫn từng bài đăng để đếm lead theo nguồn; đường dẫn giới thiệu có dạng `?ref=MÃHỌCSINH`.
+- Sau khi dán mã mới vào Apps Script, chạy hàm **setup** một lần để tạo 3 sheet mới, rồi triển khai phiên bản mới.
+

@@ -130,7 +130,7 @@ def app_look(t):
     if "family=Mali" not in t:
         t = t.replace("</head>", FONTS + "\n</head>", 1)
     return t
-body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__COURSE_JS__*/", (here / "course.js").read_text(encoding="utf-8")).replace("/*__MAP_JS__*/", (here / "map.js").read_text(encoding="utf-8")).replace("/*__INFO_JS__*/", (here / "info.js").read_text(encoding="utf-8")).replace("/*__REPORT_JS__*/", (here / "report.js").read_text(encoding="utf-8")).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8") + "\n" + (here / "games2.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("/*__LOCAL_JS__*/", (here / "local.js").read_text(encoding="utf-8")).replace("/*__TESTX_JS__*/", (here / "testx.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
+body = (here / "template.html").read_text(encoding="utf-8").replace("/*__BRAND_CSS__*/", brand).replace("__CONTENT__", blob).replace("/*__SCHOOL_JS__*/", school_js).replace("/*__COURSE_JS__*/", (here / "course.js").read_text(encoding="utf-8")).replace("/*__MAP_JS__*/", (here / "map.js").read_text(encoding="utf-8")).replace("/*__INFO_JS__*/", (here / "info.js").read_text(encoding="utf-8")).replace("/*__REPORT_JS__*/", (here / "report.js").read_text(encoding="utf-8")).replace("/*__SALES_JS__*/", (here / "sales.js").read_text(encoding="utf-8")).replace("/*__CLOUD_JS__*/", (here / "cloud.js").read_text(encoding="utf-8")).replace("/*__GAMES_JS__*/", (here / "games.js").read_text(encoding="utf-8") + "\n" + (here / "games2.js").read_text(encoding="utf-8")).replace("/*__EXAM_JS__*/", (here / "exam.js").read_text(encoding="utf-8")).replace("/*__LOCAL_JS__*/", (here / "local.js").read_text(encoding="utf-8")).replace("/*__TESTX_JS__*/", (here / "testx.js").read_text(encoding="utf-8")).replace("__API_URL__", api)
 page = (
     "<!doctype html>\n<html lang=\"vi\">\n<head>\n<meta charset=\"utf-8\">\n"
     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
@@ -257,7 +257,7 @@ print("built regions-info.json", len(REG) - 1, "sở có dữ liệu")
 # trang cũ tinh/ và trang chủ: chuyển thẳng vào trang học sinh (mọi thông tin nằm trong tab Thông tin thi, cùng một giao diện)
 REDIR = """<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ôn thi chuyên ngữ</title>
 <style>html{background:#4AA3B6 url("ASSETS/assets/bg/khoi-cat.svg") center/cover no-repeat fixed}body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:system-ui,sans-serif}a{background:#FFD23F;color:#14303A;border:3px solid #14303A;border-radius:12px;padding:12px 18px;font-weight:700;text-decoration:none;box-shadow:4px 5px 0 rgba(10,40,48,.35)}</style>
-<script>(function(){var h=(location.hash||"").slice(1);location.replace("TARGET"+(h&&h!=="kinh-nghiem"?"?so="+encodeURIComponent(h)+"&v=exam":"?v=exam"))})();</script>
+<script>(function(){var h=(location.hash||"").slice(1);var q=location.search?location.search.slice(1)+"&":"";location.replace("TARGET?"+q+(h&&h!=="kinh-nghiem"?"so="+encodeURIComponent(h)+"&v=exam":"v=exam"))})();</script>
 </head><body><a href="TARGET?v=exam">Vào trang Ôn thi chuyên ngữ</a></body></html>
 """
 (repo / "tinh").mkdir(exist_ok=True)

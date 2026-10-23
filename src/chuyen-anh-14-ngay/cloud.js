@@ -42,7 +42,7 @@ setInterval(()=>{if(cloudOn()&&(!S.syncedAt||(S.savedAt||0)>S.syncedAt))doSync()
 function loginCard(){
   if(!API)return '';
   if(S.code)return `<div class="card"><h3>Mã học sinh</h3><p>Cậu đang học với mã <b class="mono">${esc(S.code)}</b>${S.student&&S.student.name?` (${esc(S.student.name)})`:''}. Kết quả tự gửi cho cô sau mỗi lần cậu làm bài. Em học trên máy khác thì nhập lại mã này là tiếp tục được.</p><button class="btn ghost" id="logout">Đổi mã khác</button></div>`;
-  return `<div class="card hi-card"><h3>Nhập mã học sinh cô gửi</h3><p class="small">Mã gồm 6 chữ và số. Có mã thì kết quả tự về với cô, cậu chụp bài giấy để được chấm tự động và nhắn tin được với cô. <b>Chưa có mã?</b> Mã đi kèm khi bố mẹ cậu <a href="#" id="toReq">mua lượt nhận xét chi tiết bài viết</a>, hoặc do cô ở CES cấp.</p>
+  return `<div class="card hi-card"><h3>Nhập mã học sinh cô gửi</h3><p class="small">Mã gồm 6 chữ và số. Có mã thì kết quả tự về với cô, cậu chụp bài giấy để được chấm tự động và nhắn tin được với cô. <b>Chưa có mã?</b> Làm xong bài đầu vào, bố mẹ cậu để lại số Zalo ở trang kết quả là có mã ngay. Mã cũng đi kèm khi bố mẹ <a href="#" id="toReq">mua lượt nhận xét chi tiết bài viết</a>.</p>
    <div class="row"><input type="text" id="codeLogin" maxlength="10" placeholder="Ví dụ: K7M2QX" autocomplete="off" style="max-width:200px;text-transform:uppercase"><button class="btn hi" id="doLogin">Vào học</button><span class="small" id="loginMsg"></span></div></div>`;
 }
 function wireLogin(){
@@ -174,7 +174,7 @@ function writingHTML(u,W){
 function detailHTML(D){
   return `<div class="w-detail"><h4>Nhận xét chi tiết theo tiêu chí bài viết đề chuyên · ${D.total}/10 <span class="pill hi">bản trả phí</span></h4>
    ${D.summary?`<p>${esc(D.summary)}</p>`:''}
-   <div class="tw"><table><tbody>${(D.criteria||[]).map(c=>`<tr><td><b>${esc(c.name)}</b><br><span class="small">${esc(c.comment)}</span>${(c.evidence||[]).length?`<br><span class="small muted">Trong bài: ${c.evidence.map(e=>'“'+esc(e)+'”').join(' · ')}</span>`:''}</td><td class="n"><b>${c.score}</b>/${c.max}</td></tr>`).join('')}</tbody></table></div>
+   <div class="tbl-wrap"><table><tbody>${(D.criteria||[]).map(c=>`<tr><td><b>${esc(c.name)}</b><br><span class="small">${esc(c.comment)}</span>${(c.evidence||[]).length?`<br><span class="small muted">Trong bài: ${c.evidence.map(e=>'“'+esc(e)+'”').join(' · ')}</span>`:''}</td><td class="n"><b>${c.score}</b>/${c.max}</td></tr>`).join('')}</tbody></table></div>
    ${(D.errors||[]).length?`<h4>Lỗi cần sửa</h4><ul class="ai-list">${D.errors.map(e=>`<li class="ai-item bad"><div><s>${esc(e.quote)}</s> → <b>${esc(e.fix)}</b>${e.type?` <span class="pill">${esc(e.type)}</span>`:''}</div><div class="small">${esc(e.why)}</div></li>`).join('')}</ul>`:''}
    ${(D.upgrades||[]).length?`<h4>Nâng câu lên mức đề chuyên</h4><ul class="ai-list">${D.upgrades.map(e=>`<li class="ai-item"><div class="small">Cậu viết: ${esc(e.from)}</div><div>Có thể viết: <b>${esc(e.to)}</b></div><div class="small">${esc(e.why)}</div></li>`).join('')}</ul>`:''}
    ${(D.next||[]).length?`<h4>Bài viết sau, cậu thử</h4><ul>${D.next.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
@@ -251,7 +251,7 @@ function vRequest(){
    <div class="card"><h3>Nhận xét chi tiết gồm gì?</h3>
     <ul><li>Điểm theo 4 tiêu chí bài viết đề chuyên: nội dung và yêu cầu đề (3), bố cục và liên kết (2), từ vựng (2,5), ngữ pháp (2,5).</li>
      <li>Từng lỗi trong bài, kèm cách sửa và giải thích.</li><li>Gợi ý viết lại câu ở mức đề chuyên, và 3 việc nên làm ở bài sau.</li></ul>
-    <div class="tw"><table><tbody>
+    <div class="tbl-wrap"><table><tbody>
      <tr><td><b>Gói 14 bài</b><br><span class="small">Đủ cho cả chặng 14 buổi</span></td><td class="n"><b>50.000đ</b></td></tr>
      <tr><td><b>Lẻ</b></td><td class="n"><b>4.000đ</b> / bài</td></tr></tbody></table></div>
     <p class="small muted">Mỗi bài viết xem nhận xét chi tiết dùng 1 lượt; xem lại bài đã chấm chi tiết thì không tốn thêm. Thang 4 tiêu chí do CES đề xuất theo cách chấm bài viết đề chuyên Anh, không phải hướng dẫn chấm chính thức của Sở.</p></div>

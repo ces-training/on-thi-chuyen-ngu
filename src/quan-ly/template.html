@@ -107,10 +107,10 @@ const vnd=n=>(Number(n)||0).toLocaleString('vi-VN')+'đ';
 const lv=k=>k?({preA2:'Dưới A2'}[k]||k):'—';
 const ERR={bad_pin:'Sai mã PIN.',busy:'Sai PIN quá nhiều lần, thử lại sau 10 phút.',forbidden:'Tài khoản này không có quyền xem phần đó.'};
 const err=e=>ERR[e&&e.code]||'Chưa kết nối được máy chủ.';
-const TABS={admin:[['tong','Tổng quan'],['hs','Học sinh'],['dk','Phụ huynh đăng ký'],['ns','Nhân sự & phân quyền'],['nk','Nhật ký thao tác'],['gt','Giao tiếp với học sinh']],
-  quanly:[['tong','Tổng quan'],['hs','Học sinh'],['dk','Phụ huynh đăng ký'],['ns','Nhân sự & phân quyền'],['nk','Nhật ký thao tác']],
-  giaovien:[['gv','Học sinh của tôi']],sale:[['dk','Phụ huynh đăng ký'],['shs','Học sinh & gói']]};
-const VIEW={tong:vTong,hs:vHs,dk:vDk,ns:vNs,nk:vNk,gt:vGt,gv:vGv,shs:vShs};
+const TABS={admin:[['tong','Tổng quan'],['viec','Việc hôm nay'],['gd','Gia đình'],['don','Đơn gói học'],['hs','Học sinh'],['dk','Mua lượt nhận xét'],['tv','Lịch tư vấn'],['ns','Nhân sự & phân quyền'],['nk','Nhật ký thao tác'],['gt','Giao tiếp với học sinh']],
+  quanly:[['tong','Tổng quan'],['viec','Việc hôm nay'],['gd','Gia đình'],['don','Đơn gói học'],['hs','Học sinh'],['dk','Mua lượt nhận xét'],['tv','Lịch tư vấn'],['ns','Nhân sự & phân quyền'],['nk','Nhật ký thao tác']],
+  giaovien:[['gv','Học sinh của tôi'],['tv','Lịch tư vấn']],sale:[['viec','Việc hôm nay'],['gd','Gia đình'],['don','Đơn gói học'],['dk','Mua lượt nhận xét'],['shs','Học sinh & gói']]};
+const VIEW={tong:vTong,hs:vHs,dk:vDk,ns:vNs,nk:vNk,gt:vGt,gv:vGv,shs:vShs,viec:vViec,gd:vGd,don:vDon,tv:vTv};
 
 function vLogin(msg){
   $('#tabs').hidden=true;$('#who').innerHTML='';
@@ -136,8 +136,12 @@ const hoSo=code=>`<a class="mini" href="../co/#hs=${encodeURIComponent(code)}">M
 
 /* ---------- quản lý: tổng quan ---------- */
 async function vTong(){
-  const r=await api('m_overview');const L=r.learn,S=r.sales,G=r.grading;
-  $('#app').innerHTML=`<div class="card"><h2>Bán hàng</h2><div class="kpis">${kpi('Doanh thu đã thu (ước tính)',vnd(S.revenue),'theo gói đã cấp lượt')}${kpi('Phụ huynh đăng ký',S.requests)}${kpi('Chưa xử lý',S.fresh)}${kpi('Đã cấp lượt',S.issued)}${kpi('Không mua',S.lost)}${kpi('Học sinh có gói học',S.paidStudents)}${kpi('Lượt chi tiết còn lại',S.creditsLeft)}${kpi('Lượt chi tiết đã dùng',S.details)}</div>
+  const r=await api('m_overview');const L=r.learn,S=r.sales,G=r.grading,FN=r.funnel||{steps:[],speed:{},revenue:{},lanes:{},sources:[],lost:{},capacity:{}};
+  $('#app').innerHTML=`<div class="card"><h2>Phễu gia đình</h2><div class="kpis">${kpi('Doanh thu gói học',vnd((FN.revenue.web||0)+(FN.revenue.qg||0)),'Web '+vnd(FN.revenue.web)+' · Quản gia '+vnd(FN.revenue.qg))}${kpi('Đơn chờ thu tiền',FN.revenue.waiting||0)}${kpi('Gọi chào trong 1 giờ',FN.speed.inTimePct!=null?FN.speed.inTimePct+'%':'—','trung vị '+(FN.speed.median!=null?FN.speed.median+' phút':'—'))}${kpi('Việc sale đang mở',FN.speed.open||0,(FN.speed.overdue||0)+' quá hạn')}${kpi('Làn nóng / ấm / nguội',(FN.lanes.nong||0)+' / '+(FN.lanes.am||0)+' / '+(FN.lanes.nguoi||0))}${kpi('Chỗ Quản gia còn trống',FN.capacity.left!=null?FN.capacity.left+' / '+FN.capacity.total:'—')}</div>
+    ${funnel(FN.steps||[])}
+    <div class="grid3"><div><h3>Theo nguồn</h3><div class="tw"><table><thead><tr><th>Nguồn</th><th class="n">Lead</th><th class="n">Thành khách</th></tr></thead><tbody>${(FN.sources||[]).map(x=>`<tr><td>${esc(x.source)}</td><td class="n">${x.leads}</td><td class="n">${x.buy}</td></tr>`).join('')||'<tr><td colspan="3" class="muted">Chưa có lead.</td></tr>'}</tbody></table></div></div>
+     <div><h3>Lý do không mua</h3>${Object.keys(FN.lost||{}).length?`<ul>${Object.entries(FN.lost).map(([k,v])=>`<li>${esc(k)}: ${v}</li>`).join('')}</ul>`:'<p class="small muted">Chưa có.</p>'}<p class="small muted">Gắn đường dẫn có utm_source (ví dụ ?utm_source=facebook&utm_campaign=thang11) cho từng bài đăng để biết bài nào mang gia đình về.</p></div></div></div>
+   <div class="card"><h2>Mua lượt nhận xét chi tiết</h2><div class="kpis">${kpi('Doanh thu đã thu (ước tính)',vnd(S.revenue),'theo gói đã cấp lượt')}${kpi('Phụ huynh đăng ký',S.requests)}${kpi('Chưa xử lý',S.fresh)}${kpi('Đã cấp lượt',S.issued)}${kpi('Không mua',S.lost)}${kpi('Học sinh có gói học',S.paidStudents)}${kpi('Lượt chi tiết còn lại',S.creditsLeft)}${kpi('Lượt chi tiết đã dùng',S.details)}</div>
     ${funnel([['Phụ huynh đăng ký',S.requests],['Đã liên hệ hoặc cấp',S.contacted+S.issued],['Đã cấp lượt (đã thu tiền)',S.issued]])}</div>
    <div class="card"><h2>Học tập</h2><div class="kpis">${kpi('Học sinh có mã',L.students)}${kpi('Học trong 7 ngày',L.active7)}${kpi('Chưa giao giáo viên',L.noTeacher)}${kpi('Bài giấy đã chấm',G.graded+' / '+G.uploads)}${kpi('Bài máy chưa chấm được',G.errors)}</div>
     ${funnel([['Có mã học sinh',L.students],['Làm bài đầu vào',L.diag],['Xong 7 buổi',L.half],['Xong 14 buổi',L.done14],['Làm bài đầu ra',L.final]])}</div>
@@ -220,7 +224,9 @@ async function vNs(){
     <tr><td>Bài làm, ảnh bài giấy, chấm lại, nhắn tin với con</td><td>✓ mọi con</td><td>✓ mọi con</td><td>✓ con được giao</td><td>—</td></tr>
     <tr><td>Tiến độ học chi tiết (từng buổi, kỹ năng, bản đồ lỗi)</td><td>✓</td><td>✓</td><td>✓ con được giao</td><td>—</td></tr>
     <tr><td>Một dòng tóm tắt học tập (đầu vào, số buổi, học gần nhất)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-    <tr><td>Liên hệ phụ huynh, phụ huynh đăng ký, cấp mã, cộng lượt, bật gói</td><td>✓</td><td>✓</td><td>—</td><td>✓</td></tr></tbody></table></div>
+    <tr><td>Liên hệ phụ huynh, phụ huynh đăng ký, cấp mã, cộng lượt, bật gói</td><td>✓</td><td>✓</td><td>—</td><td>✓</td></tr>
+    <tr><td>Việc hôm nay, gia đình (lead) và điểm lead, đơn gói học, kích hoạt gói</td><td>✓</td><td>✓</td><td>—</td><td>✓</td></tr>
+    <tr><td>Lịch tư vấn, ghi kết luận chuyên môn và gói đề xuất</td><td>✓ mọi buổi</td><td>✓ mọi buổi</td><td>✓ buổi được giao</td><td>—</td></tr></tbody></table></div>
     <p class="small muted">Máy chủ kiểm tra quyền ở từng yêu cầu, nên ẩn trên trang chỉ là cho gọn: tài khoản không có quyền gọi thẳng máy chủ cũng bị từ chối. Mã PIN chỉ hiện một lần lúc tạo; máy chủ lưu bản băm, không lưu PIN. Mọi thao tác của từng tài khoản (kể cả xem, đăng nhập, bị từ chối) đều vào Nhật ký thao tác.</p></div>`;
   $('#sadd').onclick=async()=>{const name=$('#sn').value.trim();if(!name)return;$('#sadd').disabled=true;try{const em=$('#se').value.trim();const a=await api('m_staff_add',{name,role:$('#sr').value,email:em,invite:$('#sinv').checked&&!!em});
     $('#pinOut').innerHTML=`<p>Đã tạo <b>${esc(name)}</b> (${esc(a.id)}). Mã PIN, <b>chỉ hiện một lần</b>, chép gửi riêng cho người này: <span class="pinbox">${esc(a.pin)}</span></p><p class="small">${a.mailError?`<span class="err">Chưa gửi được thư mời (${esc(a.mailError)}). Bấm Gửi lại lời mời ở danh sách bên dưới.</span><br>`:''}${a.mailed?`Đã gửi thư mời tới <b>${esc(a.email)}</b>. Còn mã PIN cô gửi riêng qua Zalo.`:`Đăng nhập tại trang này: ${esc(location.href.split('#')[0])}`}</p><button class="ghost mini" id="pinDone">Đã chép, tải lại danh sách</button>`;
@@ -259,6 +265,84 @@ async function vGt(){
     $('#gn').textContent=L.length+' tin';
     $('#gl').innerHTML=L.map(x=>`<tr><td class="small">${when(x.ts)}</td><td>${x.from==='teacher'?`<b>${esc(x.staff||'Nhân viên (chưa ghi tên)')}</b>`:'<span class="pill">Học sinh</span>'}</td><td>${esc(x.student)}<br><span class="small muted">${esc(x.code)}</span></td><td class="small">${esc(x.uploadId?'bài giấy':'')}${x.itemId?' · câu '+esc(x.itemId):''}</td><td>${esc(x.text)}</td><td>${hoSo(x.code)}</td></tr>`).join('')||'<tr><td colspan="6" class="muted">Chưa có tin nhắn.</td></tr>'};
   $('#gs').onchange=draw;$('#gq').oninput=draw;draw();
+}
+
+/* ========== phễu bán hàng: việc hôm nay, gia đình, đơn gói học, lịch tư vấn ========== */
+const LANE={'nóng':'bad','ấm':'warn','nguội':''};
+const laneP=f=>`<span class="pill ${LANE[f.lane]||''}" title="Phù hợp ${f.parts?f.parts.fit:0}/30 · Học thử ${f.parts?f.parts.trial:0}/40 · Ý định ${f.parts?f.parts.intent:0}/30">${esc(f.lane||'nguội')} · ${f.score||0}</span>`;
+const ago=t=>{if(!t)return '—';const m=Math.round((Date.now()-new Date(t))/6e4);return m<60?m+' phút':m<1440?Math.round(m/60)+' giờ':Math.round(m/1440)+' ngày'};
+const zaloUrl=p=>{p=String(p||'').replace(/[^0-9]/g,'');if(p.startsWith('84'))p='0'+p.slice(2);return 'https://zalo.me/'+p};
+const famLine=f=>f?`<b>${esc(f.child)}</b> · lớp ${esc(f.grade||'—')}${f.school?' · nhắm '+esc(f.school):''} · ${laneP(f)} · <span class="pill">${esc(f.status)}</span><br><span class="small">Phụ huynh: <b>${esc(f.parent||'—')}</b> · Zalo <span class="mono">${esc(f.phone||'—')}</span>${f.email?' · '+esc(f.email):''} · mã <span class="mono">${esc(f.code)}</span> · nguồn ${esc(f.source||'—')}${f.ref?' · giới thiệu bởi '+esc(f.ref):''}</span>${f.learn?`<br><span class="small muted">Đầu vào ${lv(f.learn.entry)} → đầu ra ${lv(f.learn.final)} · ${f.learn.daysWeb}/14 buổi web · học gần nhất ${when(f.learn.lastSeen)}${f.learn.paid?' · <b>'+esc(f.learn.paid)+'</b>':''}</span>`:''}`:'';
+async function copyText(t){try{await navigator.clipboard.writeText(t);return true}catch(e){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();let ok=false;try{ok=document.execCommand('copy')}catch(x){}a.remove();return ok}}
+
+async function vViec(){
+  const r=await api('s_tasks');const C=r.capacity||{},now=Date.now();
+  const T=r.tasks||[],late=T.filter(t=>new Date(t.due)<now);
+  $('#app').innerHTML=`<div class="card"><h2>Việc hôm nay (${T.length})</h2><div class="kpis">${kpi('Quá hạn',late.length,'xếp đầu danh sách')}${kpi('Gọi chào chờ làm',T.filter(t=>t.kind==='chao').length,'cam kết trong 1 giờ')}${kpi('Gia đình nóng chờ mời',T.filter(t=>t.kind==='moiTuVan'||t.kind==='tuvan').length)}${kpi('Đơn chờ thu tiền',T.filter(t=>t.kind==='donGoi').length)}${kpi('Chỗ Quản gia còn trống',C.left!=null?C.left+' / '+C.total:'—','15 học viên × số giáo viên')}</div>
+   <p class="small muted">Ca trực 8:00–21:00 mọi ngày. Tin Zalo đã soạn sẵn: đọc lại, thay [tên] bằng tên mình, sửa nếu cần, bấm <b>Sao chép · mở Zalo</b> rồi dán vào khung chat. Gửi xong bấm <b>Xong</b>.</p></div>
+   ${T.map(t=>{const f=t.fam,od=new Date(t.due)<now;const isTv=t.kind==='tuvan'||t.kind==='moiTuVan';
+    return `<div class="card" data-task="${esc(t.id)}" style="border-left:6px solid ${od?'var(--bad)':'var(--line-strong)'}"><div class="row" style="justify-content:space-between"><b>${esc(t.kindVi)}</b><span class="small ${od?'err':'muted'}">${od?'quá hạn '+ago(t.due):'hạn '+when(t.due)} · tạo ${ago(t.ts)} trước</span></div>
+     <p style="margin:6px 0">${famLine(f)}</p>
+     <textarea rows="5" data-txt>${esc(t.text)}</textarea>
+     <div class="row">${f&&f.phone?`<button class="mini" data-zalo="${esc(f.phone)}">Sao chép · mở Zalo</button>`:''}<button class="ghost mini" data-copy>Chỉ sao chép</button>${f&&ME.role!=='sale'?`<a class="mini" href="../co/#hs=${encodeURIComponent(f.code)}">Hồ sơ học</a>`:''}</div>
+     ${isTv?`<div class="row"><select data-tc><option value="">Chọn giáo viên tư vấn</option>${(r.teachers||[]).map(x=>`<option value="${esc(x.id)}">${esc(x.name)}</option>`).join('')}</select><input data-when placeholder="Giờ hẹn, ví dụ 20:00 thứ 3, 28/10"><span class="small muted">Chọn giáo viên và giờ rồi bấm Xong: gia đình sang "Đã hẹn tư vấn".</span></div>`:''}
+     <div class="row"><label class="small"><input type="checkbox" data-rep${f&&f.replied?' checked':''}> Bố mẹ đã trả lời Zalo</label><button class="mini" data-done>Xong</button><input data-note placeholder="Ghi chú / lý do bỏ qua" style="flex:1;min-width:200px"><button class="ghost mini" data-skip>Bỏ qua</button><span class="small" data-info></span></div></div>`}).join('')||'<div class="card muted">Không còn việc nào. Lead mới đến sẽ hiện ở đây, kèm tin Zalo soạn sẵn.</div>'}`;
+  document.querySelectorAll('[data-task]').forEach(c=>{const id=c.dataset.task,info=c.querySelector('[data-info]'),txt=()=>c.querySelector('[data-txt]').value;
+    const z=c.querySelector('[data-zalo]');if(z)z.onclick=async()=>{await copyText(txt());window.open(zaloUrl(z.dataset.zalo),'_blank','noopener');info.textContent='Đã sao chép tin. Dán vào khung chat Zalo.'};
+    c.querySelector('[data-copy]').onclick=async()=>{info.textContent=(await copyText(txt()))?'Đã sao chép.':'Bôi đen ô tin rồi sao chép giúp nhé.'};
+    const fin=async res=>{const note=c.querySelector('[data-note]').value.trim(),tc=c.querySelector('[data-tc]'),wh=c.querySelector('[data-when]');
+      if(res==='skip'&&!note){info.textContent='Ghi lý do bỏ qua trước đã.';return}
+      const q={id,result:res,note,replied:c.querySelector('[data-rep]').checked};if(tc&&tc.value){q.teacher=tc.value;q.when=wh?wh.value:''}
+      info.textContent='Đang lưu…';try{await api('s_task_done',q);c.style.opacity=.45;info.textContent=res==='skip'?'Đã bỏ qua.':'Xong.';setTimeout(()=>c.remove(),900)}catch(e){info.textContent=err(e)}};
+    c.querySelector('[data-done]').onclick=()=>fin('done');c.querySelector('[data-skip]').onclick=()=>fin('skip')});
+}
+
+async function vGd(){
+  const r=await api('s_families');const F=r.families||[];const ST=r.statuses||[];
+  const cnt=s=>F.filter(f=>f.status===s).length;
+  $('#app').innerHTML=`<div class="card"><h2>Gia đình (${F.length})</h2>
+   <div class="row" style="gap:6px">${ST.map(s=>`<button class="ghost mini" data-fs="${esc(s)}">${esc(s)} · ${cnt(s)}</button>`).join('')}<button class="mini" data-fs="">Tất cả</button></div>
+   <div class="row" style="margin-top:8px"><select id="fl"><option value="">Mọi làn</option><option>nóng</option><option>ấm</option><option>nguội</option></select><input id="fq" placeholder="Tìm tên, số Zalo, mã"><span class="small muted" id="fn"></span></div>
+   <p class="small muted">Điểm lead 0–100 = Phù hợp 30 + Học thử 40 + Ý định 30 (di chuột lên điểm để xem từng phần). Từ 60 là <b>nóng</b>: mời tư vấn với cô. 35–59 <b>ấm</b>: mời tự mua Gói Web, sale nhắn tin. Dưới 35 <b>nguội</b>: chỉ nhận tin theo mốc. Bố mẹ và con không thấy điểm này.</p></div><div id="fg"></div>`;
+  let fs='';const draw=()=>{const l=$('#fl').value,q=$('#fq').value.trim().toLowerCase();
+    const L=F.filter(f=>(!fs||f.status===fs)&&(!l||f.lane===l)&&(!q||(f.child+' '+f.parent+' '+f.phone+' '+f.code).toLowerCase().includes(q)));$('#fn').textContent=L.length+' gia đình';
+    $('#fg').innerHTML=L.map(f=>`<details class="card" data-fid="${esc(f.id)}"><summary>${esc(f.child)} · lớp ${esc(f.grade||'—')} · ${laneP(f)} · <span class="pill">${esc(f.status)}</span> · ${when(f.ts)}${f.teacherName?' · tư vấn: '+esc(f.teacherName)+(f.consultAt?' ('+esc(f.consultAt)+')':''):''}</summary>
+      <p>${famLine(f)}</p>${f.consultNote||f.proposal?`<p class="small"><b>Kết luận tư vấn:</b> ${esc(f.consultNote||'')}${f.proposal?' · <b>Đề xuất:</b> '+esc(f.proposal):''}</p>`:''}
+      <p class="small muted">Lead lúc ${when(f.ts)} · gọi chào ${f.contactAt?'sau '+Math.round((new Date(f.contactAt)-new Date(f.ts))/6e4)+' phút':'chưa'} · ý định: mở tab ${f.intent.tab||0} lần, đặt lịch ${f.intent.book||0}, mở trang gói ${f.intent.pkg||0}${f.reason?' · lý do mất: '+esc(f.reason):''}</p>
+      <textarea rows="2" data-sn placeholder="Ghi chú bán hàng (giáo viên không thấy)">${esc(f.saleNote||'')}</textarea>
+      <div class="row"><select data-st>${ST.map(s=>`<option ${s===f.status?'selected':''}>${esc(s)}</option>`).join('')}</select><select data-rs><option value="">Lý do (khi chọn Mất)</option>${(r.reasons||[]).map(x=>`<option ${x===f.reason?'selected':''}>${esc(x)}</option>`).join('')}</select><button class="mini" data-save>Lưu</button>
+       ${f.status!=='Khách Quản gia'?`<input data-qg type="number" min="0" step="10000" placeholder="Học phí Quản gia đã thu (đ)" style="width:220px"><button class="ghost mini" data-qgo>Kích hoạt Quản gia</button>`:''}${ME.role!=='sale'?`<a class="mini" href="../co/#hs=${encodeURIComponent(f.code)}">Hồ sơ học</a>`:''}<span class="small" data-i></span></div></details>`).join('')||'<p class="muted">Chưa có gia đình nào.</p>';
+    document.querySelectorAll('[data-fid]').forEach(d=>{const id=d.dataset.fid,i=d.querySelector('[data-i]');
+      d.querySelector('[data-save]').onclick=async()=>{const st=d.querySelector('[data-st]').value,rs=d.querySelector('[data-rs]').value;if(st==='Mất'&&!rs){i.textContent='Chọn lý do mất trước đã.';return}
+        i.textContent='Đang lưu…';try{await api('s_family_set',{id,status:st,reason:rs,saleNote:d.querySelector('[data-sn]').value});i.textContent='Đã lưu.';const f=F.find(x=>x.id===id);f.status=st;f.reason=rs}catch(e){i.textContent=err(e)}};
+      const qg=d.querySelector('[data-qgo]');if(qg)qg.onclick=async()=>{const amt=+d.querySelector('[data-qg]').value;if(!amt){i.textContent='Nhập số tiền đã thu.';return}
+        if(!qg.dataset.sure){qg.dataset.sure=1;qg.textContent='Chắc chắn đã thu '+vnd(amt)+'?';return}
+        i.textContent='Đang kích hoạt…';try{await api('s_quangia',{id,amount:amt});i.textContent='Đã kích hoạt Quản gia.';setTimeout(()=>show('gd'),1200)}catch(e){i.textContent=err(e)}}})};
+  document.querySelectorAll('[data-fs]').forEach(b=>b.onclick=()=>{fs=b.dataset.fs;draw()});$('#fl').onchange=draw;$('#fq').oninput=draw;draw();
+}
+
+async function vDon(){
+  const r=await api('s_orders');const O=r.orders||[];
+  $('#app').innerHTML=`<div class="card"><h2>Đơn gói học (${O.filter(o=>o.status==='chờ thu tiền').length} chờ thu tiền)</h2><p class="small muted">Bố mẹ gửi đăng ký Gói Web ở trang Gói học. Sale nhắn Zalo xác nhận ngày bắt đầu, gửi thông tin chuyển khoản. <b>Chỉ bấm "Đã thu tiền" khi tiền đã về</b>: gói được kích hoạt ngay vào mã học sinh. Chia hai lần thì ghi số tiền lần này.</p></div>
+   ${O.map(o=>`<div class="card" data-oid="${esc(o.id)}"><div class="row" style="justify-content:space-between"><b>${esc(o.packName)} · ${vnd(o.price)}</b><span class="pill ${o.status==='đã kích hoạt'?'good':o.status==='huỷ'?'':'warn'}">${esc(o.status)}</span></div>
+     <p class="small">${esc(o.child)} · lớp ${esc(o.grade||'—')} · mã <span class="mono">${esc(o.code)}</span> · Phụ huynh <b>${esc(o.parent)}</b> · Zalo <span class="mono">${esc(o.phone)}</span>${o.email?' · '+esc(o.email):''} · trả ${esc(o.pay)} · ${when(o.ts)}${o.note?'<br>Ghi chú: '+esc(o.note):''}${o.paidAt?`<br>Đã thu ${vnd(o.paidAmt)} lúc ${when(o.paidAt)} · ${esc(o.handler||'')}`:''}</p>
+     ${o.status==='chờ thu tiền'?`<div class="row"><input type="number" data-amt min="0" step="10000" value="${o.pay==='2 lần'?Math.round(o.price/2):o.price}" style="width:170px"><button class="mini" data-paid>Đã thu tiền · kích hoạt</button><button class="ghost mini" data-cancel>Huỷ đơn</button><a class="mini" href="${zaloUrl(o.phone)}" target="_blank" rel="noopener">Mở Zalo</a><span class="small" data-i></span></div>`:''}</div>`).join('')||'<div class="card muted">Chưa có đơn nào.</div>'}`;
+  document.querySelectorAll('[data-oid]').forEach(c=>{const id=c.dataset.oid,i=c.querySelector('[data-i]');const p=c.querySelector('[data-paid]');if(!p)return;
+    p.onclick=async()=>{const amt=+c.querySelector('[data-amt]').value;if(!p.dataset.sure){p.dataset.sure=1;p.textContent='Tiền '+vnd(amt)+' đã về? Bấm lần nữa';return}
+      i.textContent='Đang kích hoạt…';try{const x=await api('s_order_paid',{id,amount:amt});i.textContent='Đã kích hoạt '+(x.paid||'')+' cho mã '+(x.code||'');setTimeout(()=>show('don'),1500)}catch(e){i.textContent=err(e)}};
+    c.querySelector('[data-cancel]').onclick=async()=>{const b=c.querySelector('[data-cancel]');if(!b.dataset.sure){b.dataset.sure=1;b.textContent='Chắc chắn huỷ?';return}
+      try{await api('s_order_status',{id,status:'huỷ'});show('don')}catch(e){i.textContent=err(e)}}});
+}
+
+async function vTv(){
+  const r=await api('t_consults');const L=r.list||[];const PR=['Gói Web GĐ1','Gói Web GĐ2','Gói Web GĐ3','Gói Web GĐ4','Gói Quản gia','Chưa cần gói'];
+  $('#app').innerHTML=`<div class="card"><h2>Lịch tư vấn (${L.filter(x=>x.status==='Đã hẹn tư vấn').length} buổi đã hẹn)</h2><p class="small muted">Sale đặt lịch và gọi xác nhận với bố mẹ. Cô tư vấn 15–20 phút bằng báo cáo 14 buổi (mở Hồ sơ học → Báo cáo), ghi kết luận chuyên môn và gói đề xuất ở đây; <b>không bàn số tiền</b>, sale gửi đề xuất và học phí trong 24 giờ.</p></div>
+   ${L.map(x=>`<div class="card" data-cid="${esc(x.id)}"><div class="row" style="justify-content:space-between"><b>${esc(x.child)} · lớp ${esc(x.grade||'—')}${x.school?' · nhắm '+esc(x.school):''}</b><span class="pill ${x.status==='Đã tư vấn'?'good':'warn'}">${esc(x.status)}${x.consultAt?' · '+esc(x.consultAt):''}</span></div>
+     <p class="small">${x.learn?`Đầu vào ${lv(x.learn.entry)} → đầu ra ${lv(x.learn.final)} · ${x.learn.daysWeb}/14 buổi web · đúng ${x.learn.acc!==''&&x.learn.acc!=null?Math.round(x.learn.acc*100)+'%':'—'}`:''} · <a href="../co/#hs=${encodeURIComponent(x.code)}">Hồ sơ học</a></p>
+     <textarea rows="3" data-cn placeholder="Kết luận chuyên môn: con đang ở đâu, cần gì, vì sao chọn gói này">${esc(x.consultNote||'')}</textarea>
+     <div class="row"><select data-pr>${PR.map(p=>`<option ${p===x.proposal?'selected':''}>${p}</option>`).join('')}</select><button class="mini" data-cs>Lưu kết luận</button><span class="small" data-i></span></div></div>`).join('')||'<div class="card muted">Chưa có lịch tư vấn nào được giao cho cô.</div>'}`;
+  document.querySelectorAll('[data-cid]').forEach(c=>{const i=c.querySelector('[data-i]');c.querySelector('[data-cs]').onclick=async()=>{i.textContent='Đang lưu…';
+    try{await api('t_consult_note',{id:c.dataset.cid,note:c.querySelector('[data-cn]').value,proposal:c.querySelector('[data-pr]').value});i.textContent='Đã lưu. Sale nhận việc gửi đề xuất trong 24 giờ.'}catch(e){i.textContent=err(e)}}});
 }
 
 PIN?boot().catch(e=>vLogin(err(e))):vLogin();

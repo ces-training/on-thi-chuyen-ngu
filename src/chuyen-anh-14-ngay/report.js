@@ -136,8 +136,8 @@ function reportBody(){
 function vReport(){
   M().innerHTML=`<section class="view rp"><div class="row rp-bar"><button class="btn ghost" type="button" id="rpBack">← Tiến bộ</button><button class="btn hi" type="button" id="rpPrint">In / lưu PDF</button></div>
    <div class="hung-say">${hungFig('sm')}<p>Cháu chào cô chú ạ! Đây là báo cáo sau đợt thử 14 buổi: nền tảng tiếng Anh, cách bạn ấy học, khả năng đỗ từng trường và lộ trình nếu theo. Cô chú in hoặc lưu PDF để trao đổi với cô nhé ạ.</p></div>
-   ${S.diag?reportBody():`<div class="card lockbox">${doodle('lock','lk',56)}<div><h3>Báo cáo mở khi có bài đầu vào</h3><p>Làm bài đầu vào xong là có bản sơ bộ; học đủ 14 buổi và làm bài đầu ra là có bản để tư vấn.</p></div></div>`}</section>`;
-  $('#rpBack').onclick=()=>go('progress');$('#rpPrint').onclick=()=>window.print()}
+   ${S.diag?reportBody()+reportCtaHTML():`<div class="card lockbox">${doodle('lock','lk',56)}<div><h3>Báo cáo mở khi có bài đầu vào</h3><p>Làm bài đầu vào xong là có bản sơ bộ; học đủ 14 buổi và làm bài đầu ra là có bản để tư vấn.</p></div></div>`}</section>`;
+  $('#rpBack').onclick=()=>go('progress');$('#rpPrint').onclick=()=>window.print();wireLead(()=>vReport())}
 views.report=vReport;
 
 /* ----- dựng lại hồ sơ từ mã kết quả (cô dán mã, hoặc mở từ trang theo dõi của cô) ----- */

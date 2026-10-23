@@ -88,7 +88,10 @@ function route_(q) {
   var a = String(q.action || '');
   if (a === 'ping') return { ok: true };
   if (a === 'request') return request_(q);
-  if (a === 'prices') return { ok: true, per: PRICE_PER, packs: PACKS };
+  if (a === 'prices') return { ok: true, per: PRICE_PER, packs: PACKS, web: WEB_PACKS, capacity: capacity_() };
+  if (a === 'lead') return lead_(q);
+  if (a === 'consult') return consult_(q);
+  if (a === 'pkg_order') return pkgOrder_(q);
   if (/^(t|s|m)_/.test(a)) {
     var me, tgt = clip_(q.code || q.id || q.uploadId || q.fileId || q.name || '', 120);
     try { me = whoIs_(q.pin); }
@@ -112,6 +115,7 @@ function route_(q) {
     case 'confirm_writing': return confirmWriting_(st, q.uploadId, q.text);
     case 'writing_detail': return writingDetail_(st, q.uploadId);
     case 'buy_request': return buyRequest_(st, q.product, q.uploadId);
+    case 'signal': return signal_(st, q.kind);
   }
   throw new Error('unknown_action');
 }
@@ -125,8 +129,9 @@ function route_(q) {
      Không xem bài làm, ảnh bài, tin nhắn.
    Máy chủ lọc dữ liệu theo vai; trang web chỉ ẩn/hiện cho gọn. */
 var ROLE_ACTIONS = {
-  giaovien: ['t_whoami', 't_list', 't_student', 't_reply', 't_override', 't_regrade', 't_image'],
-  sale: ['t_whoami', 's_list', 't_add', 't_credits', 't_paid', 't_order', 't_requests', 't_req_issue', 't_req_status']
+  giaovien: ['t_whoami', 't_list', 't_student', 't_reply', 't_override', 't_regrade', 't_image', 't_consults', 't_consult_note'],
+  sale: ['t_whoami', 's_list', 't_add', 't_credits', 't_paid', 't_order', 't_requests', 't_req_issue', 't_req_status',
+    's_tasks', 's_task_done', 's_families', 's_family_set', 's_orders', 's_order_paid', 's_order_status', 's_quangia']
 };
 var ROLE_VI = { admin: 'Admin', quanly: 'Quản lý', giaovien: 'Giáo viên', sale: 'Sale' };
 /* Admin = mã PIN gốc (Script property TEACHER_PIN), là chủ tài khoản: làm được mọi việc, tạo và quản lý cả tài khoản quản lý,
@@ -143,7 +148,11 @@ var ACT_VI = {
   t_requests: ['Xem phụ huynh đăng ký (có liên hệ)', 'phụ huynh'], t_req_issue: ['Đã thu tiền · cấp mã / cộng lượt', 'gói và lượt'],
   t_req_status: ['Đổi trạng thái phụ huynh đăng ký', 'phụ huynh'], m_overview: ['Xem tổng quan, doanh thu', 'tổng quan'], m_staff: ['Xem danh sách tài khoản', 'tài khoản'],
   m_staff_add: ['Tạo tài khoản', 'tài khoản'], m_invite: ['Gửi lời mời qua email', 'tài khoản'], m_staff_set: ['Sửa tài khoản (khoá, mở, PIN, vai)', 'tài khoản'], m_assign: ['Giao học sinh cho giáo viên', 'học sinh'],
-  m_audit: ['Xem nhật ký', 'nhật ký'], m_messages: ['Xem tin nhắn nhân viên gửi học sinh', 'tin nhắn'], pin_sai: ['Đăng nhập bằng PIN sai', 'tài khoản']
+  m_audit: ['Xem nhật ký', 'nhật ký'],
+  s_tasks: ['Xem việc hôm nay của sale', 'phụ huynh'], s_task_done: ['Đóng một việc của sale', 'phụ huynh'], s_families: ['Xem danh sách gia đình (lead)', 'phụ huynh'],
+  s_family_set: ['Đổi trạng thái gia đình', 'phụ huynh'], s_orders: ['Xem đơn gói học', 'gói và lượt'], s_order_paid: ['Đã thu tiền · kích hoạt gói', 'gói và lượt'],
+  s_order_status: ['Đổi trạng thái đơn gói học', 'gói và lượt'], s_quangia: ['Kích hoạt Gói Quản gia', 'gói và lượt'],
+  t_consults: ['Xem lịch tư vấn', 'phụ huynh'], t_consult_note: ['Ghi kết luận tư vấn', 'phụ huynh'], m_messages: ['Xem tin nhắn nhân viên gửi học sinh', 'tin nhắn'], pin_sai: ['Đăng nhập bằng PIN sai', 'tài khoản']
 };
 function auditDetail_(a, q, r) {
   r = r || {};
@@ -159,6 +168,14 @@ function auditDetail_(a, q, r) {
     case 't_add': return clip_(q.name, 80) + ' · lớp ' + (q.grade || '') + ' · ' + (Number(q.credits) || 0) + ' lượt → mã ' + r.code;
     case 'm_staff_add': return clip_(q.name, 80) + ' · ' + (ROLE_VI[q.role] || q.role) + ' → ' + r.id + (r.mailed ? ' · đã gửi lời mời tới ' + r.email : '');
     case 'm_invite': return 'gửi lời mời tới ' + r.email;
+    case 's_task_done': return (q.result === 'skip' ? 'bỏ qua' : 'xong') + (q.note ? ' · ' + clip_(q.note, 200) : '') + (q.teacher ? ' · hẹn tư vấn với ' + q.teacher + ' lúc ' + (q.when || '') : '') + (q.replied ? ' · bố mẹ đã trả lời' : '');
+    case 's_family_set': return [q.status ? 'trạng thái: ' + q.status : '', q.reason ? 'lý do: ' + q.reason : '', q.saleNote != null ? 'ghi chú: ' + clip_(q.saleNote, 200) : ''].filter(String).join(' · ');
+    case 's_order_paid': return 'đơn ' + q.id + ' · thu ' + (Number(q.amount) || 0).toLocaleString('vi-VN') + 'đ → ' + (r.paid || '');
+    case 's_order_status': return 'đơn ' + q.id + ' → ' + q.status;
+    case 's_quangia': return 'Quản gia · thu ' + (Number(q.amount) || 0).toLocaleString('vi-VN') + 'đ';
+    case 't_consult_note': return 'đề xuất: ' + q.proposal + (q.note ? ' · ' + clip_(q.note, 200) : '');
+    case 's_tasks': return (r.tasks || []).length + ' việc mở';
+    case 's_families': return (r.families || []).length + ' gia đình';
     case 'm_staff_set': return [q.active != null ? (q.active ? 'mở lại' : 'khoá') : '', q.resetPin ? 'cấp PIN mới' : '', q.role ? 'đổi vai thành ' + (ROLE_VI[q.role] || q.role) : ''].filter(String).join(' · ');
     case 'm_assign': return 'học sinh ' + q.code + ' → ' + (q.teacher || 'bỏ giao');
     case 't_list': case 's_list': return (r.students || []).length + ' học sinh';
@@ -243,6 +260,16 @@ function staffRoute_(a, q, me) {
     case 'm_invite': return mInvite_(q.id, me);
     case 'm_staff_set': return mStaffSet_(q.id, q, me);
     case 'm_messages': return mMessages_();
+    case 's_tasks': return sTasks_(me);
+    case 's_task_done': return sTaskDone_(q, me);
+    case 's_families': return sFamilies_();
+    case 's_family_set': return sFamilySet_(q, me);
+    case 's_orders': return sOrders_();
+    case 's_order_paid': return sOrderPaid_(q, me);
+    case 's_order_status': return sOrderStatus_(q, me);
+    case 's_quangia': return sQuangia_(q, me);
+    case 't_consults': return tConsults_(me);
+    case 't_consult_note': return tConsultNote_(q, me);
     case 'm_assign': return mAssign_(q.code, q.teacher);
     case 'm_audit': return mAudit_(me);
   }
@@ -335,10 +362,10 @@ function mAssign_(code, teacher) {
 
 /* sale: mỗi học sinh một dòng tóm tắt học tập + liên hệ phụ huynh, không có bài làm */
 function sList_() {
-  var reqs = rows_('requests'), staff = rows_('staff'), ords = rows_('orders');
+  var reqs = rows_('requests'), staff = rows_('staff'), ords = rows_('orders'), fams = rows_('families');
   var tName = function (id) { var t = staff.filter(function (x) { return String(x.id) === String(id); })[0]; return t ? t.name : ''; };
   return { ok: true, students: rows_('students').map(function (s) {
-    var sum = parse_(s.summary, {}) || {}, rq = reqs.filter(function (r) { return r.code === s.code; }).slice(-1)[0];
+    var sum = parse_(s.summary, {}) || {}, rq = reqs.filter(function (r) { return r.code === s.code; }).slice(-1)[0] || fams.filter(function (r) { return r.code === s.code; }).slice(-1)[0];
     return { code: s.code, name: s.name, grade: s.grade, created: s.created, lastSeen: s.lastSeen, entryLevel: s.entryLevel, finalLevel: s.finalLevel,
       daysWeb: s.daysWeb, daysPaper: s.daysPaper, studyDays: sum.sd || '', paid: String(s.paid || ''), credits: credits_(s), teacher: tName(s.teacher),
       orderPending: ords.some(function (o) { return o.code === s.code && o.status === 'chờ liên hệ'; }),
@@ -372,7 +399,7 @@ function mOverview_() {
       creditsLeft: studs.reduce(function (x, s) { return x + credits_(s); }, 0),
       details: ups.filter(function (u) { return u.charged && u.charged !== 'gói'; }).length },
     grading: { uploads: ups.length, graded: ups.filter(function (u) { return u.status === 'graded'; }).length, errors: ups.filter(function (u) { return u.status === 'error'; }).length },
-    teachers: teachers, salesTeam: sales };
+    teachers: teachers, salesTeam: sales, funnel: funnel_() };
 }
 
 function checkPin_(pin) {
@@ -428,14 +455,14 @@ function login_(st) {
   var state = null;
   if (st.stateFileId) { try { state = JSON.parse(DriveApp.getFileById(st.stateFileId).getBlob().getDataAsString()); } catch (e) {} }
   update_('students', st._row, { lastSeen: now_() });
-  return { ok: true, student: { code: st.code, name: st.name, grade: st.grade, paid: isPaid_(st), credits: credits_(st) }, state: state };
+  return { ok: true, student: { code: st.code, name: st.name, grade: st.grade, paid: isPaid_(st), credits: credits_(st), family: !!famOf_(st.code) }, state: state };
 }
 
 function sync_(st, state, kpi, sum) {
   if (!state || typeof state !== 'object') throw new Error('no_state');
   var text = JSON.stringify(state);
   if (text.length > 4 * 1024 * 1024) throw new Error('state_too_big');
-  return withLock_(function () {
+  var res = withLock_(function () {
     var fresh = find_('students', 'code', st.code);
     var fileId = fresh.stateFileId, file = null;
     if (fileId) { try { file = DriveApp.getFileById(fileId); } catch (e) { file = null; } }
@@ -451,6 +478,8 @@ function sync_(st, state, kpi, sum) {
     });
     return { ok: true, savedAt: now_() };
   });
+  try { refreshFamily_(st.code); } catch (e) {} // phễu bán hàng: chấm lại điểm lead, tạo việc theo mốc
+  return res;
 }
 function num_(x) { return (x === null || x === undefined || x === '' || isNaN(x)) ? '' : Number(x); }
 
@@ -491,7 +520,7 @@ function my_(st) {
   var outMsgs = msgs.map(msgOut_);
   withLock_(function () { msgs.forEach(function (m) { if (m.from === 'teacher' && !(m.seenStudent === true || m.seenStudent === 'TRUE')) update_('messages', m._row, { seenStudent: true }); }); });
   var pending = rows_('orders').some(function (o) { return o.code === st.code && o.status === 'chờ liên hệ'; });
-  return { ok: true, uploads: ups, messages: outMsgs, paid: isPaid_(st), orderPending: pending, credits: credits_(st) };
+  return { ok: true, uploads: ups, messages: outMsgs, paid: isPaid_(st), paidName: String(st.paid || ''), orderPending: pending, credits: credits_(st), family: !!famOf_(st.code) };
 }
 function credits_(st) { var n = Number(st.credits); return isNaN(n) || st.credits === '' ? 0 : n; }
 function isPaid_(st) { return !!String(st.paid || '').trim(); }
@@ -993,4 +1022,341 @@ function tImage_(fileId, me) {
   if (!ok) throw new Error('not_found');
   var b = DriveApp.getFileById(fileId).getBlob();
   return { ok: true, mime: b.getContentType() || 'image/jpeg', data: Utilities.base64Encode(b.getBytes()) };
+}
+
+/* =====================================================================
+   PHỄU BÁN HÀNG (phương án "hai làn theo điểm lead", chốt 23/10/2026)
+   - Cổng sau bài đầu vào: bố mẹ để lại Zalo → tự cấp mã học sinh, tạo gia đình (lead) và việc "gọi chào trong 1 giờ" cho sale.
+   - Điểm lead 0–100 = Phù hợp 30 + Học thử 40 + Ý định 30; từ 60 là nóng (làn tư vấn với cô), 35–59 ấm, dưới 35 nguội.
+   - Hàng việc của sale: gọi chào, tin buổi 3, buổi 7, sau bài đầu ra, mời tư vấn, gửi đề xuất 24 giờ, nhắc ngày 3/7, đơn gói, nâng gói, giới thiệu.
+   - Đơn Gói Web theo giai đoạn: bố mẹ gửi form, sale nhắn Zalo thu chuyển khoản rồi bấm "Đã thu tiền · kích hoạt" (chưa có SePay).
+   Bố mẹ và con không bao giờ thấy điểm lead.
+   ===================================================================== */
+var FAM_ST = ['Lead mới', 'Đã gọi chào', 'Đang học thử', 'PQL', 'Đã hẹn tư vấn', 'Đã tư vấn', 'Chờ thanh toán', 'Khách Gói Web', 'Khách Quản gia', 'Nuôi dưỡng', 'Mất'];
+var LOST_WHY = ['giá', 'thời gian', 'đã chọn nơi khác', 'con chưa muốn', 'khác'];
+var WEB_PACKS = {
+  gd1: { name: 'Gói Web · GĐ1 Nền tảng (đến B1)', price: 790000 },
+  gd2: { name: 'Gói Web · GĐ2 Bắc cầu B1→B2', price: 1190000 },
+  gd3: { name: 'Gói Web · GĐ3 Chuyên sâu B2→đích', price: 1590000 },
+  gd4: { name: 'Gói Web · GĐ4 Luyện đề', price: 2190000 }
+};
+var QG_PER_TEACHER = 15;
+var TZ = 'Asia/Ho_Chi_Minh';
+var TASK_VI = { chao: 'Gọi chào trong 1 giờ', b3: 'Tin cho bố mẹ: xong buổi 3', b7: 'Báo cáo giữa kỳ (buổi 7) + mời nói chuyện với cô', dauRa: 'Tin sau bài đầu ra',
+  moiTuVan: 'Mời tư vấn (gia đình nóng)', tuvan: 'Bố mẹ muốn nói chuyện với cô: đặt lịch', deXuat: 'Gửi đề xuất trong 24 giờ', nhac3: 'Nhắc đề xuất (ngày 3)', nhac7: 'Nhắc đề xuất (ngày 7)',
+  donGoi: 'Đơn gói học: nhắn Zalo thu tiền', nhacNhip: 'Con học thưa: gợi ý người nhắc nhịp', nangGoi: 'Tín hiệu nâng gói', gioiThieu: 'Mời giới thiệu', thuongGT: 'Trao thưởng giới thiệu', tuvanTrung: 'Lead trùng số điện thoại: kiểm tra' };
+
+SHEETS.families = { name: 'Gia đình', cols: ['id', 'ts', 'code', 'parent', 'phone', 'email', 'child', 'grade', 'region', 'school', 'goal', 'source', 'ref', 'consent', 'status', 'score', 'lane', 'handler', 'teacher', 'contactAt', 'consultAt', 'consultNote', 'proposal', 'saleNote', 'reason', 'brief', 'intent', 'flags', 'updated', 'replied'] };
+SHEETS.tasks = { name: 'Việc của sale', cols: ['id', 'ts', 'famId', 'code', 'kind', 'due', 'status', 'text', 'note', 'doneBy', 'doneAt'] };
+SHEETS.pkgOrders = { name: 'Đơn gói học', cols: ['id', 'ts', 'famId', 'code', 'parent', 'phone', 'email', 'child', 'grade', 'pack', 'price', 'pay', 'status', 'paidAmt', 'handler', 'note', 'paidAt'] };
+
+function phone_(p) { return clip_(String(p || '').replace(/[^0-9+]/g, ''), 15); }
+function okPhone_(p) { return /^\+?[0-9]{9,13}$/.test(p); }
+function famOf_(code) { if (!code) return null; var f = rows_('families').filter(function (r) { return r.code === code; }); return f.length ? f[f.length - 1] : null; }
+function json_(s) { return parse_(s, {}) || {}; }
+function rate_(key, max, secs) {
+  var c = CacheService.getScriptCache(), n = Number(c.get(key) || 0);
+  if (n >= max) throw new Error('busy');
+  c.put(key, String(n + 1), secs);
+}
+/* hạn gọi: trong ca 8:00–21:00 thì +giờ; ngoài ca thì 9:00 sáng hôm sau (lead đến sau 21:00 được gọi trước 9:00) */
+function dueIn_(hours, from) {
+  var d = from ? new Date(from) : new Date(), h = Number(Utilities.formatDate(d, TZ, 'H'));
+  if (h >= 8 && h < 21) return new Date(d.getTime() + hours * 36e5).toISOString();
+  var day = h >= 21 ? new Date(d.getTime() + 864e5) : d;
+  return new Date(Utilities.formatDate(day, TZ, "yyyy-MM-dd'T'09:00:00'+07:00'")).toISOString();
+}
+function addTask_(fam, kind, text, hours) {
+  insert_('tasks', { id: uid_('V'), ts: now_(), famId: fam ? fam.id : '', code: fam ? fam.code : '', kind: kind, due: dueIn_(hours == null ? 24 : hours), status: 'mở', text: clip_(text || '', 3000) });
+}
+function hasTask_(famId, kind) { return rows_('tasks').some(function (t) { return t.famId === famId && t.kind === kind; }); }
+function famPatch_(id, patch) { var f = find_('families', 'id', id); if (!f) throw new Error('no_family'); patch.updated = now_(); update_('families', f._row, patch); return f; }
+function source_(q) { var s = q.src || {}; return clip_([s.src, s.med, s.camp].filter(function (x) { return !!x; }).join(' / ') || 'trực tiếp', 120); }
+function firstName_(n) { n = String(n || '').trim().split(/\s+/); return n[n.length - 1] || ''; }
+
+/* ---------- tin Zalo soạn sẵn cho sale (sale đọc lại, sửa rồi gửi từ Zalo của trung tâm) ---------- */
+function zText_(kind, f, st, extra) {
+  var con = String(f.child || '').trim() || 'con', pp = String(f.parent || '').trim();
+  var ph = /^(anh|chị|cô|chú|bác|bố|mẹ)\s/i.test(pp) ? pp : pp ? 'anh/chị ' + firstName_(pp) : 'anh/chị';
+  var hi = 'Dạ em chào ' + ph + ', em là [tên] ở CES (Học viện Đa ngữ Anh–Trung). ';
+  var web = 'https://ces-training.github.io/on-thi-chuyen-ngu/chuyen-anh-14-ngay/';
+  var sum = st ? json_(st.summary) : {}, lv = st && st.entryLevel ? lvVi_(st.entryLevel) : '';
+  switch (kind) {
+    case 'chao': return hi + 'Bạn ' + con + ' vừa làm xong bài đầu vào Chuyên Anh 14 Ngày' + (lv ? ', trình độ hiện tại khoảng ' + lv : '') + '. Em gửi anh/chị bản phác lộ trình và khả năng đỗ của bạn ấy ạ:\n\n' + (f.brief || '') +
+      '\n\nMã học sinh của bạn ' + con + ': ' + f.code + ' (bạn ấy nhập ở Trang chủ ' + web + ' khi học trên máy khác). Mỗi buổi có bài giấy, bạn chụp ảnh gửi lên là máy chấm miễn phí. ' + (f.school ? 'Em thấy gia đình đang nhắm ' + f.school + '; anh/chị cho em hỏi thêm mong muốn của gia đình để cô tư vấn sát hơn ạ?' : 'Anh/chị cho em hỏi gia đình đang nhắm trường nào và mong bạn ấy đạt mức nào ạ?');
+    case 'b3': return hi + 'Bạn ' + con + ' đã xong 3 buổi đầu. Web đã bắt đầu hiểu cách bạn ấy học' + (sum.tr ? '' : '') + ': ' + (extra || '') + ' Anh/chị nhắc bạn giữ nhịp 1 buổi mỗi 1–2 ngày giúp em nhé ạ.';
+    case 'b7': return hi + 'Bạn ' + con + ' đã đi được nửa chặng (7/14 buổi). ' + (extra || '') + ' Nếu anh/chị muốn nghe cô nhận xét kỹ hơn và hỏi về lộ trình, em đặt lịch 15 phút với cô vào giờ anh/chị tiện ạ.';
+    case 'dauRa': return hi + 'Bạn ' + con + ' đã làm bài đầu ra sau 14 buổi. ' + (extra || '') + ' Bản báo cáo đầy đủ (nền tảng, khả năng học, khả năng đỗ, lộ trình) bạn ấy mở ở tab Tiến bộ → Xem báo cáo. Em đặt lịch 15 phút với cô để cô trao đổi kỹ với anh/chị nhé ạ?';
+    case 'moiTuVan': return hi + 'Bạn ' + con + ' học rất đều trên web' + (extra ? ' (' + extra + ')' : '') + '. Cô muốn mời anh/chị nói chuyện 15–20 phút để cùng xem dữ liệu của bạn ấy và lộ trình tới mốc chốt trường. Anh/chị tiện giờ nào trong tuần này ạ?';
+    case 'deXuat': return hi + 'Sau buổi nói chuyện với cô, em gửi anh/chị đề xuất cho bạn ' + con + ': ' + (extra || '[gói đề xuất]') + '. Anh/chị cần em giải thích thêm phần nào không ạ?';
+    case 'nhac3': case 'nhac7': return hi + 'Em hỏi thăm anh/chị đã xem đề xuất cho bạn ' + con + ' chưa ạ? Nếu gia đình còn băn khoăn về thời gian hay chi phí, anh/chị cứ nói để em tìm cách phù hợp hơn ạ.';
+    case 'donGoi': return hi + 'Em nhận được đăng ký ' + (extra || '') + ' cho bạn ' + con + '. Em gửi anh/chị thông tin chuyển khoản và lịch bắt đầu: [số tài khoản, nội dung chuyển khoản ghi mã ' + (f.code || 'học sinh') + ']. Tiền về là em kích hoạt ngay cho bạn ấy ạ.';
+    case 'nhacNhip': return hi + 'Mấy hôm nay bạn ' + con + ' học hơi thưa' + (extra ? ' (' + extra + ')' : '') + '. Nhiều gia đình chọn thêm một cô quản gia nhắc nhịp và theo sát hằng tuần. Nếu anh/chị muốn, em đặt lịch để cô nói kỹ hơn ạ.';
+    case 'nangGoi': return hi + (extra || '') + ' Cô gợi ý gia đình cân nhắc thêm giờ học có hướng dẫn (quản gia hoặc lớp ở CES) để bạn ' + con + ' kịp mốc chốt trường. Em đặt lịch để cô giải thích cụ thể nhé ạ?';
+    case 'gioiThieu': return hi + 'Chúc mừng bạn ' + con + ': ' + (extra || 'kết quả đầu ra tăng so với đầu vào') + '. Nếu anh/chị biết gia đình nào cũng đang chuẩn bị thi chuyên Anh, anh/chị gửi họ đường dẫn: ' + web + '?ref=' + f.code + ' . Khi gia đình đó bắt đầu học, cả hai bên được tặng thêm một chặng 14 buổi ạ.';
+  }
+  return '';
+}
+function lvVi_(k) { return { preA2: 'dưới A2', A2: 'A2', 'A2+': 'A2+', B1: 'B1', 'B1+': 'B1+', B2: 'B2' }[k] || k; }
+
+/* ---------- điểm lead ---------- */
+function rhythmOk_(sum) {
+  var ts = Object.keys(sum.days || {}).map(function (d) { return Number(sum.days[d][4]) || 0; }).filter(Boolean).sort();
+  if (ts.length < 3) return false;
+  var gaps = []; for (var i = 1; i < ts.length; i++) gaps.push((ts[i] - ts[i - 1]) / 864e5);
+  var mean = gaps.reduce(function (a, b) { return a + b; }, 0) / gaps.length;
+  return mean <= 2.2 && Math.max.apply(null, gaps) <= 5;
+}
+function last3Acc_(sum) {
+  var r = Object.keys(sum.days || {}).map(Number).sort(function (a, b) { return a - b; }).map(function (d) { return sum.days[d]; }).filter(function (x) { return x && x[1]; }).slice(-3);
+  if (r.length < 3) return null;
+  var c = r.reduce(function (a, x) { return a + x[0]; }, 0), t = r.reduce(function (a, x) { return a + x[1]; }, 0);
+  return t ? c / t : null;
+}
+function scoreOf_(f, st) {
+  var sum = st ? json_(st.summary) : {}, it = json_(f.intent), g = Number(f.grade) || Number(sum.g) || 0, parts = {};
+  parts.fit = (g === 7 || g === 8 ? 10 : g === 6 || g === 9 ? 5 : 0) + (String(f.school || '') || f.goal ? 10 : 0) + (f.contactAt ? 10 : 0);
+  var dw = st ? Number(st.daysWeb) || 0 : 0;
+  parts.trial = (st && st.entryLevel ? 5 : 0) + (dw >= 3 ? 10 : 0) + (dw >= 7 ? 10 : 0) + (rhythmOk_(sum) ? 10 : 0) + (st && st.finalLevel ? 5 : 0);
+  parts.intent = ((it.tab || 0) >= 3 ? 10 : 0) + ((it.ask || 0) + (it.book || 0) > 0 ? 10 : 0) + ((it.pkg || 0) > 0 ? 5 : 0) + (f.replied ? 5 : 0);
+  var s = parts.fit + parts.trial + parts.intent;
+  return { score: s, lane: s >= 60 ? 'nóng' : s >= 35 ? 'ấm' : 'nguội', parts: parts };
+}
+var EARLY = ['Lead mới', 'Đã gọi chào', 'Đang học thử'];
+/* gọi sau mỗi lần đồng bộ tiến độ và sau tín hiệu ý định: chấm lại điểm, đổi trạng thái, tạo việc theo mốc */
+function refreshFamily_(code) {
+  var f = famOf_(code); if (!f) return;
+  var st = getStudent_(code), sc = scoreOf_(f, st), fl = json_(f.flags), sum = st ? json_(st.summary) : {}, patch = { score: sc.score, lane: sc.lane };
+  var dw = st ? Number(st.daysWeb) || 0 : 0, acc = last3Acc_(sum), paid = st ? String(st.paid || '') : '';
+  if (f.status === 'Đã gọi chào' && dw >= 1) patch.status = 'Đang học thử';
+  if (dw >= 3 && !fl.b3) { fl.b3 = 1; addTask_(f, 'b3', zText_('b3', f, st, acc != null ? 'đúng khoảng ' + Math.round(acc * 100) + '% câu kiểm tra 3 buổi gần nhất.' : ''), 24); }
+  if (dw >= 7 && !fl.b7) { fl.b7 = 1; addTask_(f, 'b7', zText_('b7', f, st, (sum.sd ? 'Bạn ấy học ' + sum.sd + ' ngày trong ' + (sum.sp || sum.sd) + ' ngày. ' : '') + (st.webAcc !== '' ? 'Đúng khoảng ' + Math.round(Number(st.webAcc) * 100) + '% câu kiểm tra trên web.' : '')), 24); }
+  if (st && st.finalLevel && !fl.dr) { fl.dr = 1; addTask_(f, 'dauRa', zText_('dauRa', f, st, 'Đầu vào ' + lvVi_(st.entryLevel) + ', đầu ra ' + lvVi_(st.finalLevel) + '.'), 24); }
+  if (sc.score >= 60 && !fl.pql && EARLY.indexOf(f.status) >= 0) { fl.pql = 1; patch.status = 'PQL'; addTask_(f, 'moiTuVan', zText_('moiTuVan', f, st, dw ? dw + ' buổi' : ''), 4); }
+  /* khách Gói Web: học thưa hoặc độ đúng thấp → gợi ý thêm người theo sát (tối đa 1 việc mỗi 14 ngày) */
+  if (/^Gói Web/.test(paid) && (!fl.up || Date.now() - fl.up > 14 * 864e5)) {
+    var gapDays = st.lastSeen ? (Date.now() - new Date(st.lastSeen).getTime()) / 864e5 : 0;
+    if (gapDays > 5) { fl.up = Date.now(); addTask_(f, 'nhacNhip', zText_('nhacNhip', f, st, 'nghỉ ' + Math.floor(gapDays) + ' ngày'), 24); }
+    else if (acc != null && acc < 0.5) { fl.up = Date.now(); addTask_(f, 'nangGoi', zText_('nangGoi', f, st, 'Độ đúng 3 buổi gần nhất của bạn ' + f.child + ' khoảng ' + Math.round(acc * 100) + '%.'), 24); }
+  }
+  if (st && st.finalLevel && st.entryLevel && LV_RANK_(st.finalLevel) > LV_RANK_(st.entryLevel) && !fl.gt) { fl.gt = 1; addTask_(f, 'gioiThieu', zText_('gioiThieu', f, st, 'đầu vào ' + lvVi_(st.entryLevel) + ', đầu ra ' + lvVi_(st.finalLevel)), 48); }
+  patch.flags = JSON.stringify(fl);
+  famPatch_(f.id, patch);
+}
+function LV_RANK_(k) { return ['preA2', 'A2', 'A2+', 'B1', 'B1+', 'B2'].indexOf(k); }
+
+/* ---------- công khai: cổng sau bài đầu vào ---------- */
+function lead_(q) {
+  if (q.website) return { ok: true, code: '' };
+  rate_('lead_count', 60, 3600);
+  var parent = clip_(String(q.parent || '').trim(), 80), phone = phone_(q.phone), email = clip_(String(q.email || '').trim(), 120), child = clip_(String(q.child || '').trim(), 80);
+  if (!child) throw new Error('missing_name');
+  if (!okPhone_(phone)) throw new Error('missing_phone');
+  if (q.consent !== true) throw new Error('need_consent');
+  var st = getStudent_(q.code), code;
+  if (st) code = st.code; else code = tAdd_(child, q.grade, 0).code;
+  var old = famOf_(code);
+  if (old) { famPatch_(old.id, { parent: parent || old.parent, phone: phone, email: email || old.email, brief: clip_(q.brief, 4000) || old.brief }); return { ok: true, code: code, again: true }; }
+  var dupPhone = rows_('families').some(function (r) { return String(r.phone) === phone; });
+  var f = { id: uid_('F'), ts: now_(), code: code, parent: parent, phone: phone, email: email, child: child, grade: Number(q.grade) || '', region: clip_(q.region, 60), school: clip_(q.school, 120), goal: clip_(q.goal, 40),
+    source: source_(q), ref: clip_(String(q.ref || '').toUpperCase(), 10), consent: now_(), status: 'Lead mới', brief: clip_(q.brief, 4000), intent: '{}', flags: '{}', updated: now_() };
+  withLock_(function () { insert_('families', f); addTask_(f, 'chao', zText_('chao', f, getStudent_(code)), 1); if (dupPhone) addTask_(f, 'tuvanTrung', 'Số ' + phone + ' đã có trong danh sách gia đình. Kiểm tra xem có phải cùng một nhà (anh chị em, hoặc con làm lại trên máy khác) để gộp.', 24); });
+  try { MailApp.sendEmail({ to: teacherEmail_(), subject: '[Chuyên Anh 14 Ngày] Lead mới · ' + child + ' · gọi chào trong 1 giờ', body: 'Phụ huynh ' + (parent || '') + ' · Zalo ' + phone + '\nHọc sinh: ' + child + ' · lớp ' + (f.grade || '—') + ' · ' + (f.school || '') + '\nMã: ' + code + ' · nguồn: ' + f.source + '\n\nViệc gọi chào đã nằm trong tab Việc hôm nay: ' + STAFF_URL }); } catch (e) {}
+  refreshFamily_(code);
+  return { ok: true, code: code };
+}
+/* công khai: bố mẹ muốn nói chuyện với cô (có mã; chưa có gia đình thì cần số Zalo) */
+function consult_(q) {
+  if (q.website) return { ok: true };
+  rate_('consult_' + String(q.code || q.phone || ''), 5, 3600);
+  var st = getStudent_(q.code), f = st ? famOf_(st.code) : null;
+  if (!f) {
+    var r = lead_({ code: st ? st.code : '', parent: q.parent, phone: q.phone, email: q.email, child: q.child || (st && st.name), grade: q.grade || (st && st.grade), school: q.school, region: q.region, consent: q.consent, src: q.src, ref: q.ref, brief: q.brief });
+    f = famOf_(r.code);
+  }
+  var it = json_(f.intent); it.book = (it.book || 0) + 1;
+  famPatch_(f.id, { intent: JSON.stringify(it) });
+  var txt = 'Bố mẹ bạn ' + f.child + ' muốn nói chuyện với cô' + (q.about ? ' về: ' + clip_(q.about, 200) : '') + '. Giờ tiện nghe máy: ' + (clip_(q.when, 120) || 'chưa ghi') + (q.note ? '. Lời nhắn: ' + clip_(String(q.note).trim().replace(/[.\s]+$/, ''), 500) : '') + '.\nSale gọi xác nhận, chọn giáo viên và giờ ở dòng này.';
+  withLock_(function () { addTask_(f, 'tuvan', txt, 1); });
+  refreshFamily_(f.code);
+  return { ok: true, code: f.code };
+}
+/* có mã: tín hiệu ý định (mở tab Lộ trình, Sau 14 ngày, Chọn trường; bấm Hỏi cô; mở trang gói) */
+function signal_(st, kind) {
+  var map = { tab_plan: 'tab', tab_course: 'tab', tab_school: 'tab', ask: 'ask', pkg: 'pkg' }, k = map[kind];
+  if (!k) return { ok: true };
+  var c = CacheService.getScriptCache(), key = 'sig_' + st.code + '_' + kind;
+  if (c.get(key)) return { ok: true }; c.put(key, '1', 3 * 3600); // mỗi loại tính tối đa một lần mỗi 3 giờ
+  var f = famOf_(st.code); if (!f) return { ok: true };
+  var it = json_(f.intent); it[k] = (it[k] || 0) + 1;
+  famPatch_(f.id, { intent: JSON.stringify(it) });
+  refreshFamily_(st.code);
+  return { ok: true };
+}
+/* công khai: đơn Gói Web theo giai đoạn (thu chuyển khoản qua sale cho tới khi nối SePay) */
+function pkgOrder_(q) {
+  if (q.website) return { ok: true };
+  rate_('order_count', 40, 3600);
+  var P = WEB_PACKS[q.pack]; if (!P) throw new Error('bad_pack');
+  var parent = clip_(String(q.parent || '').trim(), 80), phone = phone_(q.phone), email = clip_(String(q.email || '').trim(), 120), child = clip_(String(q.child || '').trim(), 80);
+  if (!parent || !child) throw new Error('missing_name');
+  if (!okPhone_(phone)) throw new Error('missing_phone');
+  if (q.consent !== true) throw new Error('need_consent');
+  var st = getStudent_(q.code), f = st ? famOf_(st.code) : null;
+  if (!f) { var r = lead_({ code: st ? st.code : '', parent: parent, phone: phone, email: email, child: child, grade: q.grade, school: q.school, region: q.region, consent: true, src: q.src, ref: q.ref, brief: q.brief }); f = famOf_(r.code); }
+  var pay = q.pay === '2' ? '2 lần' : '1 lần', id = uid_('D');
+  withLock_(function () {
+    insert_('pkgOrders', { id: id, ts: now_(), famId: f.id, code: f.code, parent: parent, phone: phone, email: email, child: child, grade: Number(q.grade) || f.grade, pack: q.pack, price: P.price, pay: pay, status: 'chờ thu tiền', note: clip_(q.note, 800) });
+    addTask_(f, 'donGoi', zText_('donGoi', f, null, P.name + ' (' + P.price.toLocaleString('vi-VN') + 'đ, trả ' + pay + ')'), 1);
+  });
+  famPatch_(f.id, { status: 'Chờ thanh toán', parent: parent || f.parent });
+  try { MailApp.sendEmail({ to: teacherEmail_(), subject: '[Chuyên Anh 14 Ngày] Đơn ' + P.name + ' · ' + child, body: 'Phụ huynh ' + parent + ' · Zalo ' + phone + (email ? ' · ' + email : '') + '\nGói: ' + P.name + ' · ' + P.price.toLocaleString('vi-VN') + 'đ · trả ' + pay + '\nMã học sinh: ' + f.code + '\n\nSale nhắn Zalo thu tiền rồi bấm "Đã thu tiền · kích hoạt" ở tab Đơn gói học: ' + STAFF_URL }); } catch (e) {}
+  return { ok: true, id: id, code: f.code, price: P.price };
+}
+/* công khai: số chỗ Quản gia còn trống (hiện trên trang gói) */
+function capacity_() {
+  var t = rows_('staff').filter(function (x) { return x.role === 'giaovien' && activeOf_(x); }).length;
+  var used = rows_('students').filter(function (s) { return /Quản gia/.test(String(s.paid || '')); }).length;
+  return { total: t * QG_PER_TEACHER, used: used, left: Math.max(0, t * QG_PER_TEACHER - used) };
+}
+
+/* ---------- nhân viên ---------- */
+function famOut_(f, studs) {
+  var st = studs.filter(function (s) { return s.code === f.code; })[0], sum = st ? json_(st.summary) : {};
+  return { id: f.id, ts: f.ts, code: f.code, parent: f.parent, phone: String(f.phone || ''), email: f.email, child: f.child, grade: f.grade, region: f.region, school: f.school, source: f.source, ref: f.ref,
+    status: f.status, score: Number(f.score) || 0, lane: f.lane || 'nguội', handler: f.handler, teacher: f.teacher, contactAt: f.contactAt, consultAt: f.consultAt, consultNote: f.consultNote, proposal: f.proposal,
+    saleNote: f.saleNote, reason: f.reason, replied: !!f.replied, intent: json_(f.intent), parts: scoreOf_(f, st).parts,
+    learn: st ? { entry: st.entryLevel, final: st.finalLevel, daysWeb: Number(st.daysWeb) || 0, lastSeen: st.lastSeen, acc: st.webAcc, paid: String(st.paid || ''), sd: sum.sd || 0 } : null };
+}
+function sTasks_(me) {
+  var fams = {}, studs = rows_('students'); rows_('families').forEach(function (f) { fams[f.id] = f; });
+  var open = rows_('tasks').filter(function (t) { return t.status === 'mở'; }).sort(function (a, b) { return String(a.due).localeCompare(String(b.due)); });
+  return { ok: true, capacity: capacity_(), kinds: TASK_VI, teachers: rows_('staff').filter(function (x) { return x.role === 'giaovien' && activeOf_(x); }).map(function (x) { return { id: x.id, name: x.name }; }),
+    tasks: open.map(function (t) { var f = fams[t.famId]; return { id: t.id, ts: t.ts, kind: t.kind, kindVi: TASK_VI[t.kind] || t.kind, due: t.due, text: t.text, fam: f ? famOut_(f, studs) : null }; }) };
+}
+function sTaskDone_(q, me) {
+  return withLock_(function () {
+    var t = find_('tasks', 'id', q.id); if (!t) throw new Error('no_task');
+    if (t.status !== 'mở') return { ok: true, already: true };
+    var res = q.result === 'skip' ? 'bỏ qua' : 'xong';
+    if (res === 'bỏ qua' && !String(q.note || '').trim()) throw new Error('need_reason');
+    update_('tasks', t._row, { status: res, note: clip_(q.note, 800), doneBy: me.name, doneAt: now_() });
+    var f = t.famId ? find_('families', 'id', t.famId) : null, patch = {};
+    if (f) {
+      if (t.kind === 'chao' && res === 'xong') { if (!f.contactAt) patch.contactAt = now_(); if (f.status === 'Lead mới') patch.status = 'Đã gọi chào'; }
+      if (q.replied) patch.replied = true;
+      if (!f.handler) patch.handler = me.name;
+      if (q.teacher && (t.kind === 'tuvan' || t.kind === 'moiTuVan')) {
+        patch.teacher = String(q.teacher); patch.consultAt = clip_(q.when, 60); patch.status = 'Đã hẹn tư vấn';
+        var st = getStudent_(f.code); if (st && !st.teacher) update_('students', st._row, { teacher: String(q.teacher) }); // để giáo viên mở được hồ sơ
+      }
+      if (Object.keys(patch).length) { patch.updated = now_(); update_('families', f._row, patch); }
+    }
+    return { ok: true, status: res };
+  });
+}
+function sFamilies_() {
+  var studs = rows_('students'), staff = rows_('staff'), tn = {}; staff.forEach(function (x) { tn[x.id] = x.name; });
+  return { ok: true, statuses: FAM_ST, reasons: LOST_WHY, capacity: capacity_(),
+    families: rows_('families').map(function (f) { var o = famOut_(f, studs); o.teacherName = tn[f.teacher] || ''; return o; }).reverse() };
+}
+function sFamilySet_(q, me) {
+  return withLock_(function () {
+    var f = find_('families', 'id', q.id); if (!f) throw new Error('no_family');
+    var patch = { handler: f.handler || me.name, updated: now_() };
+    if (q.status) {
+      if (FAM_ST.indexOf(q.status) < 0) throw new Error('bad_status');
+      if (q.status === 'Mất' && LOST_WHY.indexOf(q.reason) < 0) throw new Error('need_reason');
+      patch.status = q.status; if (q.status === 'Mất') patch.reason = q.reason;
+    }
+    if (q.saleNote != null) patch.saleNote = clip_(q.saleNote, 1500);
+    update_('families', f._row, patch);
+    return { ok: true };
+  });
+}
+/* giáo viên: lịch tư vấn của mình (không thấy điểm lead, ghi chú bán hàng, số tiền) */
+function tConsults_(me) {
+  var studs = rows_('students');
+  return { ok: true, list: rows_('families').filter(function (f) { return me.role !== 'giaovien' || String(f.teacher) === me.id; }).filter(function (f) { return f.teacher && ['Đã hẹn tư vấn', 'Đã tư vấn'].indexOf(f.status) >= 0; }).map(function (f) {
+    var st = studs.filter(function (s) { return s.code === f.code; })[0];
+    return { id: f.id, code: f.code, child: f.child, grade: f.grade, school: f.school, status: f.status, consultAt: f.consultAt, consultNote: f.consultNote, proposal: f.proposal,
+      learn: st ? { entry: st.entryLevel, final: st.finalLevel, daysWeb: Number(st.daysWeb) || 0, acc: st.webAcc } : null };
+  }).reverse() };
+}
+function tConsultNote_(q, me) {
+  var pr = ['Gói Web GĐ1', 'Gói Web GĐ2', 'Gói Web GĐ3', 'Gói Web GĐ4', 'Gói Quản gia', 'Chưa cần gói'];
+  if (pr.indexOf(q.proposal) < 0) throw new Error('bad_proposal');
+  var f = find_('families', 'id', q.id); if (!f) throw new Error('no_family');
+  if (me.role === 'giaovien' && String(f.teacher) !== me.id) throw new Error('forbidden');
+  withLock_(function () {
+    var x = find_('families', 'id', q.id);
+    update_('families', x._row, { consultNote: clip_(q.note, 2000), proposal: q.proposal, status: 'Đã tư vấn', updated: now_() });
+    if (q.proposal !== 'Chưa cần gói') {
+      addTask_(x, 'deXuat', zText_('deXuat', x, null, q.proposal), 24);
+      insert_('tasks', { id: uid_('V'), ts: now_(), famId: x.id, code: x.code, kind: 'nhac3', due: new Date(Date.now() + 3 * 864e5).toISOString(), status: 'mở', text: zText_('nhac3', x) });
+      insert_('tasks', { id: uid_('V'), ts: now_(), famId: x.id, code: x.code, kind: 'nhac7', due: new Date(Date.now() + 7 * 864e5).toISOString(), status: 'mở', text: zText_('nhac7', x) });
+    }
+  });
+  return { ok: true };
+}
+function sOrders_() {
+  return { ok: true, packs: WEB_PACKS, orders: rows_('pkgOrders').map(function (o) {
+    return { id: o.id, ts: o.ts, code: o.code, parent: o.parent, phone: String(o.phone || ''), email: o.email, child: o.child, grade: o.grade, pack: o.pack, packName: (WEB_PACKS[o.pack] || {}).name || o.pack,
+      price: Number(o.price) || 0, pay: o.pay, status: o.status, paidAmt: Number(o.paidAmt) || 0, handler: o.handler, note: o.note, paidAt: o.paidAt };
+  }).reverse() };
+}
+/* sale đã nhận tiền → kích hoạt gói cho mã học sinh, chuyển gia đình sang Khách Gói Web; thưởng giới thiệu nếu có */
+function sOrderPaid_(q, me) {
+  var o = find_('pkgOrders', 'id', q.id); if (!o) throw new Error('no_order');
+  if (o.status === 'đã kích hoạt') return { ok: true, already: true };
+  var amt = Math.max(0, Number(q.amount) || Number(o.price) || 0), P = WEB_PACKS[o.pack] || { name: o.pack };
+  tPaid_(o.code, P.name.replace('Gói Web · ', 'Gói Web ').slice(0, 40));
+  withLock_(function () {
+    var x = find_('pkgOrders', 'id', q.id);
+    update_('pkgOrders', x._row, { status: 'đã kích hoạt', paidAmt: amt, handler: me.name, paidAt: now_(), note: q.note != null ? clip_(q.note, 800) : x.note });
+    var f = find_('families', 'id', o.famId);
+    if (f) {
+      update_('families', f._row, { status: /Quản gia/.test(String(f.status)) ? f.status : 'Khách Gói Web', handler: f.handler || me.name, updated: now_() });
+      if (f.ref && getStudent_(f.ref)) {
+        var rf = famOf_(String(f.ref).toUpperCase());
+        insert_('tasks', { id: uid_('V'), ts: now_(), famId: f.id, code: f.code, kind: 'thuongGT', due: dueIn_(24), status: 'mở',
+          text: 'Gia đình bạn ' + f.child + ' (mã ' + f.code + ') đến qua đường dẫn giới thiệu của mã ' + f.ref + (rf ? ' (bạn ' + rf.child + ')' : '') + ' và đã thanh toán. Trao thưởng cho cả hai bên: Gói Web thêm một chặng 14 buổi; Quản gia thêm 2 tuần theo sát. Báo cho hai gia đình qua Zalo.' });
+      }
+    }
+    rows_('tasks').forEach(function (t) { if (t.famId === o.famId && t.kind === 'donGoi' && t.status === 'mở') update_('tasks', t._row, { status: 'xong', doneBy: me.name, doneAt: now_(), note: 'đã thu tiền' }); });
+  });
+  return { ok: true, code: o.code, paid: P.name };
+}
+function sOrderStatus_(q, me) {
+  if (['chờ thu tiền', 'huỷ'].indexOf(q.status) < 0) throw new Error('bad_status');
+  return withLock_(function () { var o = find_('pkgOrders', 'id', q.id); if (!o) throw new Error('no_order'); update_('pkgOrders', o._row, { status: q.status, handler: me.name, note: q.note != null ? clip_(q.note, 800) : o.note }); return { ok: true }; });
+}
+/* sale/quản lý đổi một con sang Quản gia sau khi gia đình đã thanh toán học phí Quản gia (giá theo đề xuất, ghi số tiền) */
+function sQuangia_(q, me) {
+  var f = find_('families', 'id', q.id); if (!f) throw new Error('no_family');
+  var amt = Math.max(0, Number(q.amount) || 0); if (!amt) throw new Error('need_amount');
+  tPaid_(f.code, 'Quản gia');
+  withLock_(function () {
+    insert_('pkgOrders', { id: uid_('D'), ts: now_(), famId: f.id, code: f.code, parent: f.parent, phone: f.phone, email: f.email, child: f.child, grade: f.grade, pack: 'quangia', price: amt, pay: '1 lần', status: 'đã kích hoạt', paidAmt: amt, handler: me.name, note: clip_(q.note, 800), paidAt: now_() });
+    var x = find_('families', 'id', q.id); update_('families', x._row, { status: 'Khách Quản gia', handler: x.handler || me.name, updated: now_() });
+  });
+  return { ok: true };
+}
+/* tổng quan phễu cho quản lý */
+function funnel_() {
+  var fams = rows_('families'), ords = rows_('pkgOrders'), studs = rows_('students'), tasks = rows_('tasks');
+  var by = {}; FAM_ST.forEach(function (s) { by[s] = 0; }); fams.forEach(function (f) { by[f.status] = (by[f.status] || 0) + 1; });
+  var reached = function (list) { return fams.filter(function (f) { return list.indexOf(f.status) >= 0; }).length; };
+  var after = function (i) { return reached(FAM_ST.slice(i, 9)); };
+  var mins = fams.filter(function (f) { return f.contactAt; }).map(function (f) { return (new Date(f.contactAt) - new Date(f.ts)) / 6e4; }).sort(function (a, b) { return a - b; });
+  var chao = tasks.filter(function (t) { return t.kind === 'chao' && t.status !== 'mở'; }), inTime = chao.filter(function (t) { return new Date(t.doneAt) <= new Date(t.due); }).length;
+  var src = {}; fams.forEach(function (f) { var k = f.source || 'trực tiếp'; src[k] = src[k] || { leads: 0, buy: 0 }; src[k].leads++; if (/^Khách/.test(f.status)) src[k].buy++; });
+  var paid = ords.filter(function (o) { return o.status === 'đã kích hoạt'; });
+  var lost = {}; fams.filter(function (f) { return f.status === 'Mất'; }).forEach(function (f) { lost[f.reason || 'khác'] = (lost[f.reason || 'khác'] || 0) + 1; });
+  return { byStatus: by, steps: [['Làm bài đầu vào', studs.filter(function (s) { return s.entryLevel; }).length], ['Để lại Zalo (lead)', fams.length], ['Đã gọi chào trở đi', after(1)], ['Đủ điều kiện tư vấn (PQL) trở đi', after(3)], ['Đã tư vấn trở đi', after(5)], ['Khách (Web hoặc Quản gia)', reached(['Khách Gói Web', 'Khách Quản gia'])]],
+    lanes: { nong: fams.filter(function (f) { return f.lane === 'nóng'; }).length, am: fams.filter(function (f) { return f.lane === 'ấm'; }).length, nguoi: fams.filter(function (f) { return !f.lane || f.lane === 'nguội'; }).length },
+    speed: { median: mins.length ? Math.round(mins[Math.floor(mins.length / 2)]) : null, inTimePct: chao.length ? Math.round(100 * inTime / chao.length) : null, open: tasks.filter(function (t) { return t.status === 'mở'; }).length, overdue: tasks.filter(function (t) { return t.status === 'mở' && new Date(t.due) < new Date(); }).length },
+    revenue: { web: paid.filter(function (o) { return o.pack !== 'quangia'; }).reduce(function (a, o) { return a + (Number(o.paidAmt) || 0); }, 0), qg: paid.filter(function (o) { return o.pack === 'quangia'; }).reduce(function (a, o) { return a + (Number(o.paidAmt) || 0); }, 0), waiting: ords.filter(function (o) { return o.status === 'chờ thu tiền'; }).length },
+    sources: Object.keys(src).map(function (k) { return { source: k, leads: src[k].leads, buy: src[k].buy }; }).sort(function (a, b) { return b.leads - a.leads; }),
+    lost: lost, capacity: capacity_() };
 }
