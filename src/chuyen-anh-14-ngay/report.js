@@ -70,7 +70,7 @@ function rpProgress(d,f,A){const bd=k=>{const r=S[k];return r&&(r.byDay||txByDay
   rows.push(`<tr><td>Phần chung: 45 câu bám nội dung 14 buổi</td><td>${d.total}/${d.of}</td><td>${f?f.total+'/'+f.of:'—'}</td><td>${f?sg(d.total,f.total):'—'}</td></tr>`);
   const F=d.locF||Object.keys(d.loc||{});F.forEach(k=>{const a=(d.loc||{})[k],b=f&&(f.loc||{})[k];rows.push(`<tr><td>Dạng đề của sở: ${esc(LP_NAME[k]||k)}</td><td>${a?a.correct+'/'+a.total:'chưa làm'}</td><td>${b?b.correct+'/'+b.total:'—'}</td><td>${a&&b?sg(a.correct,b.correct):'—'}</td></tr>`)});
   rows.push(`<tr><td>Viết đoạn văn (tự chấm, cô xem lại)</td><td>${d.wr?d.wr.score+'/'+d.wr.of:'chưa làm'}</td><td>${f&&f.wr?f.wr.score+'/'+f.wr.of:'—'}</td><td>${d.wr&&f&&f.wr?sg(d.wr.score,f.wr.score):'—'}</td></tr>`);
-  let dayTxt='';if(D0&&D1&&Object.keys(D0).length){const up=[],flat=[];Object.keys(D0).map(Number).sort((a,b)=>a-b).forEach(n=>{const a=D0[n],b=D1[n];if(!b)return;(b[0]>a[0]?up:flat).push(n)});
+  let dayTxt='';if(d&&f&&(d.tv||1)!==(f.tv||1))dayTxt='<p class="small muted">Bài đầu vào làm bằng đề phiên bản cũ (đo trình độ chung), nên so với bài đầu ra chỉ mang tính tham khảo.</p>';else if(D0&&D1&&Object.keys(D0).length){const up=[],flat=[];Object.keys(D0).map(Number).sort((a,b)=>a-b).forEach(n=>{const a=D0[n],b=D1[n];if(!b)return;(b[0]>a[0]?up:flat).push(n)});
     const nm=n=>`buổi ${n} (${esc((DAYS[n-1]||{}).theme_vi||'')})`;
     dayTxt=`<p><b>Theo từng buổi:</b> ${up.length?`tiến bộ rõ ở ${up.map(nm).join(', ')}`:'chưa thấy buổi nào tăng rõ'}${flat.length?`; chưa tăng ở ${flat.map(nm).join(', ')} — nên ôn lại các buổi này`:''}.</p>`}
   return `<h4>Tiến bộ nhờ 14 buổi</h4><p class="small muted">Bài đầu vào và đầu ra là hai đề song song: câu khác nhau nhưng cùng hỏi từ vựng, ngữ pháp, dạng đề của từng buổi, cùng độ khó. Phần 4 hỏi đúng các dạng trong gói riêng của đề ${esc(REG().name)}.</p>
@@ -142,7 +142,7 @@ views.report=vReport;
 
 /* ----- dựng lại hồ sơ từ mã kết quả (cô dán mã, hoặc mở từ trang theo dõi của cô) ----- */
 function sFromSummary(o){const st=blank();st.name=o.n||'';
-  const t=x=>x&&{total:x.t,of:x.o,level:x.l,bands:x.b,hours:ENTRY_H[x.l]!=null?ENTRY_H[x.l]:220,dur:x.u,blank:x.k,answers:{},loc:x.lc||null,locF:x.lf||null,wr:x.w?{score:x.w.s,of:x.w.of,words:x.w.n}:null,byDay:x.bd||null};
+  const t=x=>x&&{total:x.t,of:x.o,level:x.l,bands:x.b,hours:ENTRY_H[x.l]!=null?ENTRY_H[x.l]:220,dur:x.u,blank:x.k,answers:{},tv:x.tv||1,loc:x.lc||null,locF:x.lf||null,wr:x.w?{score:x.w.s,of:x.w.of,words:x.w.n}:null,byDay:x.bd||null};
   st.diag=t(o.d);st.final=t(o.f);if(o.p)st.plan=Object.assign({min:40,dpw:6,cls:0},o.p);
   st.region=o.rg||'ha-noi';st.school=Object.assign(blankSchool(),o.sc||{},{grade:o.g||7});st.course=Object.assign({goal:o.gl||'cva',lv:null},o.cs||{});
   if(o.tr&&o.d&&o.tr!==trackFromLevel(o.d.l))st.track=o.tr;

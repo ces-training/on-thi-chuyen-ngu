@@ -1067,7 +1067,7 @@ function testScore(test,ans){
     skills[it.skill]=skills[it.skill]||[0,0];skills[it.skill][1]++;if(ok)skills[it.skill][0]++});
   const total=Object.values(bands).reduce((a,b)=>a+b[0],0);
   const lv=levelFromBands(bands.A2[0],bands.B1[0],bands.B2[0],bands.A2[1],bands.B1[1],bands.B2[1]);
-  return {bands,skills,total,of:test.items.length,level:lv,hours:ENTRY_H[lv],at:Date.now()};
+  return {bands,skills,total,of:test.items.length,level:lv,hours:ENTRY_H[lv],at:Date.now(),tv:test.version||1};
 }
 const TEST_T0={};
 function renderTest(kind){
@@ -1101,6 +1101,7 @@ function wireTest(kind){
     if(S[kind]){b.hidden=true;b.parentElement.querySelector('.ls-txt').hidden=false;return}
     if(!canSpeak){b.hidden=true;const t=b.parentElement.querySelector('.ls-txt');t.hidden=false;t.insertAdjacentHTML('beforebegin','<p class="small muted">Máy này không phát được tiếng, cậu đọc lời thay cho nghe nhé.</p>');return}
     b.onclick=()=>xSpeak(it.listen,b,lsState[it.id])});
+  if(S[kind]&&(S[kind].tv||1)!==(test.version||1)){form.innerHTML='<p class="small muted">Cậu làm bài này bằng đề phiên bản cũ nên không hiện lại từng câu được. Điểm và mức vẫn giữ nguyên.</p>';return}
   if(S[kind]){test.items.forEach(it=>{const v=S[kind].answers[it.id];const q=form.querySelector(`.q[data-id="${it.id}"]`);if(it.type==='mcq'&&v!=null){const r=q.querySelector(`input[value="${v}"]`);if(r)r.checked=true}else if(v!=null){q.querySelector('input').value=v}showFeedback(form,it,v)});return}
   form.addEventListener('submit',e=>{e.preventDefault();
     const ans={};let blank=0;test.items.forEach(it=>{ans[it.id]=readAnswer(form,it);if(ans[it.id]==null||ans[it.id]==='')blank++});

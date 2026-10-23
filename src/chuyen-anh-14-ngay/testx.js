@@ -51,9 +51,9 @@ function wireTestExtras(kind,after){const box=$('#txEx');if(!box)return;const r=
     r.wr={score:ch.reduce((a,b)=>a+b,0),of:RB.length*2,checks:ch,words:lpWc(ta.value),text:ta.value,at:Date.now()};save();after&&after()}}
 
 /* gói gọn phần 4–5 và điểm theo buổi để gửi mã kết quả cho cô */
-function txSum(kind){const r=S[kind];if(!r)return {};return {lc:r.loc||null,lf:r.locF||null,w:r.wr?{s:r.wr.score,of:r.wr.of,n:r.wr.words}:null,bd:r.byDay||txByDay(kind)}}
+function txSum(kind){const r=S[kind];if(!r)return {};return {tv:r.tv||1,lc:r.loc||null,lf:r.locF||null,w:r.wr?{s:r.wr.score,of:r.wr.of,n:r.wr.words}:null,bd:r.byDay||txByDay(kind)}}
 /* --- so trước / sau theo từng buổi (mỗi câu của 45 câu gắn với một buổi qua it.day) --- */
-function txByDay(kind){const r=S[kind];if(!r||!r.answers)return null;const out={};
+function txByDay(kind){const r=S[kind];if(!r||!r.answers||(r.tv||1)!==(TESTS[kind].version||1))return null;const out={};
   TESTS[kind].items.forEach(it=>{if(!it.day)return;const d=it.day;out[d]=out[d]||[0,0];out[d][1]++;if(isCorrect(it,r.answers[it.id]))out[d][0]++});return out}
 
 (function(){const st=document.createElement('style');st.textContent=`
