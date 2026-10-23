@@ -83,14 +83,15 @@ const vnd=n=>(Number(n)||0).toLocaleString('vi-VN')+'đ';
 const lv=k=>k?({preA2:'Dưới A2'}[k]||k):'—';
 const ERR={bad_pin:'Sai mã PIN.',busy:'Sai PIN quá nhiều lần, thử lại sau 10 phút.',forbidden:'Tài khoản này không có quyền xem phần đó.'};
 const err=e=>ERR[e&&e.code]||'Chưa kết nối được máy chủ.';
-const TABS={quanly:[['tong','Tổng quan'],['hs','Học sinh'],['dk','Phụ huynh đăng ký'],['ns','Nhân sự & phân quyền'],['nk','Nhật ký truy cập']],
+const TABS={admin:[['tong','Tổng quan'],['hs','Học sinh'],['dk','Phụ huynh đăng ký'],['ns','Nhân sự & phân quyền'],['nk','Nhật ký thao tác'],['gt','Giao tiếp với học sinh']],
+  quanly:[['tong','Tổng quan'],['hs','Học sinh'],['dk','Phụ huynh đăng ký'],['ns','Nhân sự & phân quyền'],['nk','Nhật ký thao tác']],
   giaovien:[['gv','Học sinh của tôi']],sale:[['dk','Phụ huynh đăng ký'],['shs','Học sinh & gói']]};
-const VIEW={tong:vTong,hs:vHs,dk:vDk,ns:vNs,nk:vNk,gv:vGv,shs:vShs};
+const VIEW={tong:vTong,hs:vHs,dk:vDk,ns:vNs,nk:vNk,gt:vGt,gv:vGv,shs:vShs};
 
 function vLogin(msg){
   $('#tabs').hidden=true;$('#who').innerHTML='';
   if(!API){$('#app').innerHTML='<div class="card">Chưa kết nối máy chủ.</div>';return}
-  $('#app').innerHTML=`<div class="card"><h2>Đăng nhập</h2><p class="small muted">Quản lý dùng mã PIN gốc của máy chủ. Giáo viên và sale dùng mã PIN quản lý cấp ở tab Nhân sự & phân quyền.</p>
+  $('#app').innerHTML=`<div class="card"><h2>Đăng nhập</h2><p class="small muted">Admin dùng mã PIN gốc của máy chủ. Quản lý, giáo viên và sale dùng mã PIN được cấp ở tab Nhân sự & phân quyền.</p>
    <div class="row"><input type="password" id="pin" placeholder="Mã PIN" autocomplete="current-password"><button id="go">Vào</button><span class="err small">${esc(msg||'')}</span></div></div>`;
   $('#go').onclick=async()=>{PIN=$('#pin').value.trim();try{await boot()}catch(e){vLogin(err(e))}};
   $('#pin').onkeydown=e=>{if(e.key==='Enter')$('#go').click()};
@@ -183,17 +184,20 @@ async function vShs(){
 /* ---------- quản lý: nhân sự và phân quyền ---------- */
 async function vNs(){
   const r=await api('m_staff');
-  $('#app').innerHTML=`<div class="card"><h2>Thêm tài khoản</h2><div class="row"><input id="sn" placeholder="Họ tên" style="min-width:200px"><select id="sr"><option value="giaovien">Giáo viên</option><option value="sale">Sale</option><option value="quanly">Quản lý</option></select><input id="se" type="email" placeholder="Email (tuỳ chọn)"><button id="sadd">Tạo tài khoản</button></div><div id="pinOut"></div></div>
+  $('#app').innerHTML=`<div class="card"><h2>Thêm tài khoản</h2><div class="row"><input id="sn" placeholder="Họ tên" style="min-width:200px"><select id="sr"><option value="giaovien">Giáo viên</option><option value="sale">Sale</option>${ME.role==='admin'?'<option value="quanly">Quản lý</option>':''}</select><input id="se" type="email" placeholder="Email (tuỳ chọn)"><button id="sadd">Tạo tài khoản</button></div><div id="pinOut"></div>${ME.role==='quanly'?'<p class="small muted">Quản lý tạo và sửa được tài khoản giáo viên, sale. Tài khoản quản lý do Admin tạo.</p>':''}</div>
    <div class="card"><h2>Tài khoản (${r.staff.length})</h2><div class="tw"><table><thead><tr><th>Tên</th><th>Vai</th><th>Mã</th><th class="n">Học sinh được giao</th><th>Trạng thái</th><th></th></tr></thead><tbody>${r.staff.map(x=>`<tr data-id="${esc(x.id)}"><td><b>${esc(x.name)}</b><br><span class="small muted">${esc(x.email||'')}</span></td><td>${esc(x.roleVi)}</td><td class="n">${esc(x.id)}</td><td class="n">${x.role==='giaovien'?x.students:'—'}</td><td>${x.active?'<span class="pill good">đang dùng</span>':'<span class="pill">đã khoá</span>'}</td>
-     <td><button class="ghost mini" data-act="${x.active?'off':'on'}">${x.active?'Khoá':'Mở lại'}</button> <button class="ghost mini" data-act="pin">Cấp PIN mới</button></td></tr>`).join('')||'<tr><td colspan="6" class="muted">Chưa có tài khoản nào. Tạo tài khoản ở trên.</td></tr>'}</tbody></table></div></div>
-   <div class="card"><h2>Ai thấy gì</h2><div class="tw"><table class="perm"><thead><tr><th>Dữ liệu</th><th>Quản lý</th><th>Giáo viên</th><th>Sale</th></tr></thead><tbody>
-    <tr><td>Số liệu tổng quan, doanh thu, nhật ký truy cập</td><td>✓</td><td>—</td><td>—</td></tr>
-    <tr><td>Tạo tài khoản, giao học sinh cho giáo viên</td><td>✓</td><td>—</td><td>—</td></tr>
-    <tr><td>Bài làm, ảnh bài giấy, chấm lại, nhắn tin với con</td><td>✓ mọi con</td><td>✓ con được giao</td><td>—</td></tr>
-    <tr><td>Tiến độ học chi tiết (từng buổi, kỹ năng, bản đồ lỗi)</td><td>✓</td><td>✓ con được giao</td><td>—</td></tr>
-    <tr><td>Một dòng tóm tắt học tập (đầu vào, số buổi, học gần nhất)</td><td>✓</td><td>✓</td><td>✓</td></tr>
-    <tr><td>Liên hệ phụ huynh, phụ huynh đăng ký, cấp mã, cộng lượt, bật gói</td><td>✓</td><td>—</td><td>✓</td></tr></tbody></table></div>
-    <p class="small muted">Máy chủ kiểm tra quyền ở từng yêu cầu, nên ẩn trên trang chỉ là cho gọn: tài khoản không có quyền gọi thẳng máy chủ cũng bị từ chối. Mã PIN chỉ hiện một lần lúc tạo; máy chủ lưu bản băm, không lưu PIN.</p></div>`;
+     <td>${x.canEdit?`<button class="ghost mini" data-act="${x.active?'off':'on'}">${x.active?'Khoá':'Mở lại'}</button> <button class="ghost mini" data-act="pin">Cấp PIN mới</button>`:'<span class="small muted">chỉ Admin sửa</span>'}</td></tr>`).join('')||'<tr><td colspan="6" class="muted">Chưa có tài khoản nào. Tạo tài khoản ở trên.</td></tr>'}</tbody></table></div></div>
+   <div class="card"><h2>Ai thấy gì</h2><div class="tw"><table class="perm"><thead><tr><th>Dữ liệu</th><th>Admin</th><th>Quản lý</th><th>Giáo viên</th><th>Sale</th></tr></thead><tbody>
+    <tr><td>Tạo, khoá, cấp PIN tài khoản quản lý</td><td>✓</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Tạo, khoá, cấp PIN tài khoản giáo viên và sale</td><td>✓</td><td>✓</td><td>—</td><td>—</td></tr>
+    <tr><td>Nhật ký thao tác</td><td>✓ mọi tài khoản, kể cả quản lý</td><td>✓ giáo viên, sale và chính mình</td><td>—</td><td>—</td></tr>
+    <tr><td>Toàn bộ tin nhắn nhân viên gửi học sinh (kèm người gửi)</td><td>✓</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Số liệu tổng quan, doanh thu, giao học sinh cho giáo viên</td><td>✓</td><td>✓</td><td>—</td><td>—</td></tr>
+    <tr><td>Bài làm, ảnh bài giấy, chấm lại, nhắn tin với con</td><td>✓ mọi con</td><td>✓ mọi con</td><td>✓ con được giao</td><td>—</td></tr>
+    <tr><td>Tiến độ học chi tiết (từng buổi, kỹ năng, bản đồ lỗi)</td><td>✓</td><td>✓</td><td>✓ con được giao</td><td>—</td></tr>
+    <tr><td>Một dòng tóm tắt học tập (đầu vào, số buổi, học gần nhất)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Liên hệ phụ huynh, phụ huynh đăng ký, cấp mã, cộng lượt, bật gói</td><td>✓</td><td>✓</td><td>—</td><td>✓</td></tr></tbody></table></div>
+    <p class="small muted">Máy chủ kiểm tra quyền ở từng yêu cầu, nên ẩn trên trang chỉ là cho gọn: tài khoản không có quyền gọi thẳng máy chủ cũng bị từ chối. Mã PIN chỉ hiện một lần lúc tạo; máy chủ lưu bản băm, không lưu PIN. Mọi thao tác của từng tài khoản (kể cả xem, đăng nhập, bị từ chối) đều vào Nhật ký thao tác.</p></div>`;
   $('#sadd').onclick=async()=>{const name=$('#sn').value.trim();if(!name)return;$('#sadd').disabled=true;try{const a=await api('m_staff_add',{name,role:$('#sr').value,email:$('#se').value});
     $('#pinOut').innerHTML=`<p>Đã tạo <b>${esc(name)}</b> (${esc(a.id)}). Mã PIN, <b>chỉ hiện một lần</b>, chép gửi riêng cho người này: <span class="pinbox">${esc(a.pin)}</span></p><p class="small">Đăng nhập tại trang này: ${esc(location.href.split('#')[0])}</p><button class="ghost mini" id="pinDone">Đã chép, tải lại danh sách</button>`;
     $('#pinDone').onclick=()=>show('ns')}catch(e){$('#pinOut').textContent=err(e)}$('#sadd').disabled=false};
@@ -202,8 +206,34 @@ async function vNs(){
     try{const x=await api('m_staff_set',act==='pin'?{id,resetPin:true}:{id,active:act==='on'});if(x.pin){tr.lastElementChild.innerHTML=`PIN mới: <span class="pinbox">${esc(x.pin)}</span>`}else show('ns')}catch(e){alertRow(b,err(e))}}));
 }
 async function vNk(){
-  const r=await api('m_audit');const V={t_student:'Mở hồ sơ học sinh',t_add:'Cấp mã',t_credits:'Cộng lượt',t_paid:'Bật/tắt gói',t_requests:'Xem phụ huynh đăng ký',t_req_issue:'Cấp lượt theo yêu cầu',t_req_status:'Đổi trạng thái yêu cầu',t_override:'Sửa điểm',t_regrade:'Chấm lại',t_reply:'Nhắn con',s_list:'Xem danh sách học sinh (sale)',m_staff_add:'Tạo tài khoản',m_staff_set:'Sửa tài khoản',m_assign:'Giao học sinh'};
-  $('#app').innerHTML=`<div class="card"><h2>Nhật ký truy cập (300 lượt gần nhất)</h2><div class="tw"><table><thead><tr><th>Lúc</th><th>Ai</th><th>Việc</th><th>Đối tượng</th></tr></thead><tbody>${r.rows.map(x=>`<tr><td class="small">${when(x.ts)}</td><td>${esc(x.who)}</td><td>${esc(V[x.action]||x.action)}</td><td class="n">${esc(x.target)}</td></tr>`).join('')||'<tr><td colspan="4" class="muted">Chưa có.</td></tr>'}</tbody></table></div></div>`;
+  const r=await api('m_audit');const R=r.rows||[];
+  const uniq=f=>[...new Set(R.map(f).filter(Boolean))].sort();
+  const opt=(id,label,vals)=>`<select id="${id}"><option value="">${label}</option>${vals.map(v=>`<option>${esc(v)}</option>`).join('')}</select>`;
+  $('#app').innerHTML=`<div class="card"><h2>Từng tài khoản</h2><div class="tw"><table><thead><tr><th>Tài khoản</th><th>Vai</th><th>Đăng nhập gần nhất</th><th>Thao tác gần nhất</th><th class="n">Thao tác 7 ngày</th><th class="n">Bị từ chối</th><th></th></tr></thead><tbody>
+     ${(r.people||[]).map(x=>`<tr><td><b>${esc(x.name)}</b> <span class="small muted">${esc(x.id)}</span>${x.active?'':' <span class="pill">đã khoá</span>'}</td><td>${esc(x.roleVi)}</td><td class="small">${x.lastLogin?when(x.lastLogin):'chưa'}</td><td class="small">${x.lastAction?when(x.lastAction):'—'}</td><td class="n">${x.week}</td><td class="n">${x.denied?`<span class="pill bad">${x.denied}</span>`:0}</td><td><button class="ghost mini" data-pick="${esc(x.id)}">Xem thao tác</button></td></tr>`).join('')||'<tr><td colspan="7" class="muted">Chưa có tài khoản.</td></tr>'}</tbody></table></div>
+     <p class="small muted">${ME.role==='admin'?'Admin thấy thao tác của mọi tài khoản, kể cả quản lý.':'Quản lý thấy thao tác của giáo viên, sale và của chính mình.'} Nhật ký ghi cả việc chỉ xem (mở hồ sơ, xem danh sách, xem liên hệ phụ huynh), đăng nhập, PIN sai và thao tác bị từ chối.</p></div>
+   <div class="card"><h2>Nhật ký thao tác</h2><div class="row">${opt('fw','Mọi người',uniq(x=>x.who))}${opt('fr','Mọi vai',uniq(x=>x.roleVi))}${opt('fk','Mọi loại dữ liệu',uniq(x=>x.kind))}<input id="fq" placeholder="Tìm mã học sinh, nội dung…"><label class="small"><input type="checkbox" id="fv"> ẩn lượt đăng nhập</label><span class="small muted" id="fn"></span></div>
+     <div class="tw"><table><thead><tr><th>Lúc</th><th>Ai</th><th>Loại dữ liệu</th><th>Việc</th><th>Đối tượng</th><th>Chi tiết</th></tr></thead><tbody id="lg"></tbody></table></div></div>`;
+  const draw=()=>{const w=$('#fw').value,ro=$('#fr').value,k=$('#fk').value,q=$('#fq').value.trim().toLowerCase(),nv=$('#fv').checked;
+    const L=R.filter(x=>(!w||x.who===w)&&(!ro||x.roleVi===ro)&&(!k||x.kind===k)&&(!nv||x.action!=='t_whoami')&&(!q||(x.target+' '+x.detail+' '+x.actionVi).toLowerCase().includes(q)));
+    $('#fn').textContent=L.length+' dòng';
+    $('#lg').innerHTML=L.slice(0,500).map(x=>`<tr><td class="small">${when(x.ts)}</td><td>${esc(x.who)}<br><span class="small muted">${esc(x.roleVi)}</span></td><td class="small">${esc(x.kind||'')}</td><td>${esc(x.actionVi)}</td><td class="n">${esc(x.target)}</td><td class="small">${/^BỊ TỪ CHỐI/.test(x.detail)?`<span class="pill bad">${esc(x.detail)}</span>`:esc(x.detail||'')}</td></tr>`).join('')||'<tr><td colspan="6" class="muted">Không có dòng nào.</td></tr>'};
+  ['fw','fr','fk','fv'].forEach(id=>$('#'+id).onchange=draw);$('#fq').oninput=draw;
+  document.querySelectorAll('[data-pick]').forEach(b=>b.onclick=()=>{const m=R.find(x=>x.whoId===b.dataset.pick);if(!m){alertRow(b,'Chưa có thao tác.');return}$('#fw').value=m.who;draw();$('#fw').scrollIntoView({behavior:'smooth'})});
+  draw();
+}
+/* ---------- Admin: mọi tin nhắn nhân viên ↔ học sinh ---------- */
+async function vGt(){
+  const r=await api('m_messages');const R=r.rows||[];
+  const staff=[...new Set(R.filter(x=>x.from==='teacher').map(x=>x.staff||'(trước khi ghi tên người gửi)'))].sort();
+  $('#app').innerHTML=`<div class="card"><h2>Giao tiếp với học sinh</h2><p class="small muted">Mọi tin nhắn giữa nhân viên (quản lý, giáo viên) và học sinh, kèm tên tài khoản gửi. Chỉ Admin xem được tab này.</p>
+     <div class="row"><select id="gs"><option value="">Mọi người gửi</option><option value="__hs">Chỉ học sinh gửi</option>${staff.map(v=>`<option>${esc(v)}</option>`).join('')}</select><input id="gq" placeholder="Tìm tên, mã học sinh, nội dung…"><span class="small muted" id="gn"></span></div>
+     <div class="tw"><table><thead><tr><th>Lúc</th><th>Người gửi</th><th>Học sinh</th><th>Về bài</th><th>Nội dung</th><th></th></tr></thead><tbody id="gl"></tbody></table></div></div>`;
+  const draw=()=>{const f=$('#gs').value,q=$('#gq').value.trim().toLowerCase();
+    const L=R.filter(x=>(!f||(f==='__hs'?x.from!=='teacher':x.from==='teacher'&&(x.staff||'(trước khi ghi tên người gửi)')===f))&&(!q||(x.student+' '+x.code+' '+x.text+' '+x.staff).toLowerCase().includes(q)));
+    $('#gn').textContent=L.length+' tin';
+    $('#gl').innerHTML=L.map(x=>`<tr><td class="small">${when(x.ts)}</td><td>${x.from==='teacher'?`<b>${esc(x.staff||'Nhân viên (chưa ghi tên)')}</b>`:'<span class="pill">Học sinh</span>'}</td><td>${esc(x.student)}<br><span class="small muted">${esc(x.code)}</span></td><td class="small">${esc(x.uploadId?'bài giấy':'')}${x.itemId?' · câu '+esc(x.itemId):''}</td><td>${esc(x.text)}</td><td>${hoSo(x.code)}</td></tr>`).join('')||'<tr><td colspan="6" class="muted">Chưa có tin nhắn.</td></tr>'};
+  $('#gs').onchange=draw;$('#gq').oninput=draw;draw();
 }
 
 PIN?boot().catch(e=>vLogin(err(e))):vLogin();

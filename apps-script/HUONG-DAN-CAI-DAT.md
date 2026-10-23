@@ -78,8 +78,10 @@ Khi cập nhật mã có thêm trang tính hoặc cột mới, chạy lại hàm
 
 Trang: https://ces-training.github.io/on-thi-chuyen-ngu/quan-ly/
 
-- **Quản lý** đăng nhập bằng mã PIN gốc (`TEACHER_PIN`). Tab: Tổng quan (doanh thu ước tính, phễu đăng ký, phễu học tập, số liệu từng giáo viên và sale), Học sinh (giao giáo viên phụ trách), Phụ huynh đăng ký, Nhân sự & phân quyền, Nhật ký truy cập.
-- Quản lý tạo tài khoản cho **giáo viên** và **sale** ở tab Nhân sự & phân quyền. Mỗi người có mã PIN 8 ký tự riêng, chỉ hiện một lần lúc tạo (máy chủ lưu bản băm). Khoá tài khoản hoặc cấp PIN mới ở cùng tab.
+- **Admin** (chủ trang) đăng nhập bằng mã PIN gốc (`TEACHER_PIN`). Admin làm được mọi việc, tạo được tài khoản **quản lý**, xem toàn bộ Nhật ký thao tác (kể cả của quản lý) và tab Giao tiếp với học sinh (mọi tin nhắn nhân viên gửi học sinh, kèm tên người gửi).
+- **Quản lý** dùng PIN Admin cấp. Tab: Tổng quan (doanh thu ước tính, phễu đăng ký, phễu học tập, số liệu từng giáo viên và sale), Học sinh (giao giáo viên phụ trách), Phụ huynh đăng ký, Nhân sự & phân quyền, Nhật ký thao tác (chỉ thấy giáo viên, sale và chính mình).
+- Admin hoặc quản lý tạo tài khoản cho **giáo viên** và **sale** ở tab Nhân sự & phân quyền; chỉ Admin tạo, khoá, cấp PIN cho quản lý. Mỗi người có mã PIN 8 ký tự riêng, chỉ hiện một lần lúc tạo (máy chủ lưu bản băm). Khoá tài khoản hoặc cấp PIN mới ở cùng tab.
+- Mọi thao tác của nhân viên đều vào sheet **Nhật ký truy cập**: ai, vai, lúc nào, loại dữ liệu, việc, đối tượng, chi tiết (ví dụ "cộng 14 lượt, còn 20", nội dung tin nhắn, trạng thái mới). Ghi cả việc chỉ xem, đăng nhập, PIN sai và thao tác bị từ chối.
 - **Giáo viên** chỉ thấy học sinh được giao: tiến độ, bài làm, ảnh bài, chấm lại, nhắn tin (mở hồ sơ ở trang `/co/`). Không thấy liên hệ phụ huynh, yêu cầu mua, doanh thu.
 - **Sale** thấy phụ huynh đăng ký, liên hệ, cấp mã, cộng lượt, bật gói học; mỗi học sinh chỉ một dòng tóm tắt học tập, không xem bài làm.
 - Máy chủ kiểm tra quyền ở từng yêu cầu. Mọi lần mở hồ sơ, cấp mã, cộng lượt, sửa điểm… được ghi vào trang tính `Nhật ký truy cập`.

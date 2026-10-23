@@ -27,10 +27,10 @@
 var SHEETS = {
   students: { name: 'Học sinh', cols: ['code', 'name', 'grade', 'created', 'lastSeen', 'daysWeb', 'daysPaper', 'webAcc', 'retryAcc', 'mastered', 'eff', 'entryLevel', 'finalLevel', 'planMin', 'planDpw', 'paperAvg', 'stateFileId', 'summary', 'paid', 'credits', 'teacher'] },
   uploads: { name: 'Bài giấy', cols: ['id', 'ts', 'code', 'day', 'fileIds', 'status', 'score', 'total', 'result', 'teacherNote', 'updated', 'error', 'tries', 'charged'] },
-  messages: { name: 'Tin nhắn', cols: ['id', 'ts', 'code', 'from', 'uploadId', 'itemId', 'text', 'seenTeacher', 'seenStudent'] },
+  messages: { name: 'Tin nhắn', cols: ['id', 'ts', 'code', 'from', 'uploadId', 'itemId', 'text', 'seenTeacher', 'seenStudent', 'staff'] },
   orders: { name: 'Yêu cầu mua', cols: ['id', 'ts', 'code', 'name', 'product', 'status', 'note'] },
   staff: { name: 'Nhân sự', cols: ['id', 'name', 'role', 'pinHash', 'active', 'created', 'email'] },
-  audit: { name: 'Nhật ký truy cập', cols: ['ts', 'who', 'role', 'action', 'target'] },
+  audit: { name: 'Nhật ký truy cập', cols: ['ts', 'who', 'role', 'action', 'target', 'detail', 'kind', 'whoId'] },
   requests: { name: 'Phụ huynh đăng ký', cols: ['id', 'ts', 'parent', 'phone', 'email', 'child', 'grade', 'region', 'school', 'want', 'pack', 'note', 'fileIds', 'consent', 'status', 'code', 'teacherNote', 'handler'] }
 };
 var PRICE_PER = 4000, PACKS = { thu14: { n: 14, price: 50000, label: 'Gói 14 bài · 50.000đ' }, le: { n: 1, price: 4000, label: 'Lẻ · 4.000đ/bài' } };
@@ -90,10 +90,15 @@ function route_(q) {
   if (a === 'request') return request_(q);
   if (a === 'prices') return { ok: true, per: PRICE_PER, packs: PACKS };
   if (/^(t|s|m)_/.test(a)) {
-    var me = whoIs_(q.pin);
-    if (me.role !== 'quanly' && (ROLE_ACTIONS[me.role] || []).indexOf(a) < 0) return { ok: false, error: 'forbidden' };
-    var res = staffRoute_(a, q, me);
-    if (LOGGED[a]) logAccess_(me, a, q.code || q.id || q.uploadId || q.name || '');
+    var me, tgt = clip_(q.code || q.id || q.uploadId || q.fileId || q.name || '', 120);
+    try { me = whoIs_(q.pin); }
+    catch (e) { if (e.message === 'bad_pin') logAccess_({ id: '?', name: 'Không rõ (PIN sai)', role: '' }, 'pin_sai', '', 'Đăng nhập bằng PIN sai'); throw e; }
+    var allowed = me.role === 'admin' || (me.role === 'quanly' ? ADMIN_ONLY.indexOf(a) < 0 : (ROLE_ACTIONS[me.role] || []).indexOf(a) >= 0);
+    if (!allowed) { logAccess_(me, a, tgt, 'BỊ TỪ CHỐI: tài khoản không có quyền'); return { ok: false, error: 'forbidden' }; }
+    var res;
+    try { res = staffRoute_(a, q, me); }
+    catch (e) { logAccess_(me, a, tgt, 'BỊ TỪ CHỐI / LỖI: ' + (e && e.message)); throw e; }
+    logAccess_(me, a, tgt, res && res.ok === false ? 'BỊ TỪ CHỐI: ' + res.error : auditDetail_(a, q, res));
     return res;
   }
   var st = getStudent_(q.code);
@@ -123,9 +128,43 @@ var ROLE_ACTIONS = {
   giaovien: ['t_whoami', 't_list', 't_student', 't_reply', 't_override', 't_regrade', 't_image'],
   sale: ['t_whoami', 's_list', 't_add', 't_credits', 't_paid', 't_order', 't_requests', 't_req_issue', 't_req_status']
 };
-var ROLE_VI = { quanly: 'Quản lý', giaovien: 'Giáo viên', sale: 'Sale' };
-var LOGGED = { t_student: 1, t_add: 1, t_credits: 1, t_paid: 1, t_requests: 1, t_req_issue: 1, t_req_status: 1, t_override: 1, t_regrade: 1, t_reply: 1,
-  s_list: 1, m_staff_add: 1, m_staff_set: 1, m_assign: 1 };
+var ROLE_VI = { admin: 'Admin', quanly: 'Quản lý', giaovien: 'Giáo viên', sale: 'Sale' };
+/* Admin = mã PIN gốc (Script property TEACHER_PIN), là chủ tài khoản: làm được mọi việc, tạo và quản lý cả tài khoản quản lý,
+   xem toàn bộ nhật ký (kể cả của quản lý) và toàn bộ tin nhắn nhân viên gửi học sinh.
+   Quản lý: mọi việc của trang, trừ phần chỉ dành cho Admin; chỉ tạo và sửa tài khoản giáo viên, sale;
+   nhật ký chỉ thấy thao tác của giáo viên, sale và của chính mình. */
+var ADMIN_ONLY = ['m_messages'];
+/* Mọi thao tác của nhân viên đều ghi nhật ký (kể cả xem, đăng nhập, PIN sai, bị từ chối): tên việc và loại dữ liệu */
+var ACT_VI = {
+  t_whoami: ['Đăng nhập / mở trang', 'tài khoản'], t_list: ['Xem danh sách học sinh', 'học sinh'], s_list: ['Xem danh sách học sinh và liên hệ phụ huynh', 'phụ huynh'],
+  t_student: ['Mở hồ sơ học sinh (bài làm, tin nhắn)', 'bài làm'], t_image: ['Xem ảnh bài làm', 'bài làm'], t_reply: ['Nhắn tin cho học sinh', 'tin nhắn'],
+  t_override: ['Sửa chấm bài giấy', 'bài làm'], t_regrade: ['Chấm lại bài giấy bằng máy', 'bài làm'], t_add: ['Cấp mã học sinh', 'học sinh'],
+  t_credits: ['Cộng lượt nhận xét chi tiết', 'gói và lượt'], t_paid: ['Bật/tắt gói học', 'gói và lượt'], t_order: ['Đổi trạng thái yêu cầu mua', 'phụ huynh'],
+  t_requests: ['Xem phụ huynh đăng ký (có liên hệ)', 'phụ huynh'], t_req_issue: ['Đã thu tiền · cấp mã / cộng lượt', 'gói và lượt'],
+  t_req_status: ['Đổi trạng thái phụ huynh đăng ký', 'phụ huynh'], m_overview: ['Xem tổng quan, doanh thu', 'tổng quan'], m_staff: ['Xem danh sách tài khoản', 'tài khoản'],
+  m_staff_add: ['Tạo tài khoản', 'tài khoản'], m_staff_set: ['Sửa tài khoản (khoá, mở, PIN, vai)', 'tài khoản'], m_assign: ['Giao học sinh cho giáo viên', 'học sinh'],
+  m_audit: ['Xem nhật ký', 'nhật ký'], m_messages: ['Xem tin nhắn nhân viên gửi học sinh', 'tin nhắn'], pin_sai: ['Đăng nhập bằng PIN sai', 'tài khoản']
+};
+function auditDetail_(a, q, r) {
+  r = r || {};
+  switch (a) {
+    case 't_credits': return 'cộng ' + q.add + ' lượt, còn ' + r.credits;
+    case 't_paid': return q.paid ? 'bật gói ' + q.paid : 'tắt gói học';
+    case 't_req_issue': return 'mã ' + r.code + ' · thêm ' + r.credits + ' lượt' + (r.mailed ? ' · đã gửi email cho phụ huynh' : '');
+    case 't_req_status': return 'trạng thái: ' + q.status + (q.note ? ' · ghi chú: ' + clip_(q.note, 300) : '');
+    case 't_order': return 'trạng thái: ' + q.status;
+    case 't_reply': return '“' + clip_(q.text, 400) + '”';
+    case 't_override': return q.itemId ? 'câu ' + q.itemId + ' → ' + (q.correct === true ? 'đúng' : q.correct === false ? 'sai' : 'chưa rõ') : q.writingScore != null ? 'điểm bài viết → ' + q.writingScore : q.teacherNote != null ? 'nhận xét: ' + clip_(q.teacherNote, 300) : '';
+    case 't_regrade': return 'kết quả mới ' + r.score + '/' + r.total;
+    case 't_add': return clip_(q.name, 80) + ' · lớp ' + (q.grade || '') + ' · ' + (Number(q.credits) || 0) + ' lượt → mã ' + r.code;
+    case 'm_staff_add': return clip_(q.name, 80) + ' · ' + (ROLE_VI[q.role] || q.role) + ' → ' + r.id;
+    case 'm_staff_set': return [q.active != null ? (q.active ? 'mở lại' : 'khoá') : '', q.resetPin ? 'cấp PIN mới' : '', q.role ? 'đổi vai thành ' + (ROLE_VI[q.role] || q.role) : ''].filter(String).join(' · ');
+    case 'm_assign': return 'học sinh ' + q.code + ' → ' + (q.teacher || 'bỏ giao');
+    case 't_list': case 's_list': return (r.students || []).length + ' học sinh';
+    case 't_requests': return (r.requests || []).length + ' yêu cầu';
+  }
+  return '';
+}
 var ISSUED = 'đã cấp lượt';
 
 function hash_(s) { return Utilities.base64Encode(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, 'ces-pin:' + s, Utilities.Charset.UTF_8)); }
@@ -134,7 +173,7 @@ function whoIs_(pin) {
   var c = CacheService.getScriptCache(), bad = Number(c.get('bad_pin') || 0);
   if (bad > 30) throw new Error('busy'); // chặn đoán PIN: quá 30 lần sai trong 10 phút
   var real = PropertiesService.getScriptProperties().getProperty('TEACHER_PIN');
-  if (pin && real && pin === String(real)) return { id: 'QL', name: 'Quản lý', role: 'quanly' };
+  if (pin && real && pin === String(real)) return { id: 'ADMIN', name: 'Admin', role: 'admin' };
   if (pin) {
     var h = hash_(pin);
     var st = rows_('staff').filter(function (r) { return String(r.pinHash) === h && (r.active === true || r.active === 'TRUE'); })[0];
@@ -143,8 +182,33 @@ function whoIs_(pin) {
   c.put('bad_pin', String(bad + 1), 600);
   throw new Error('bad_pin');
 }
-function logAccess_(me, action, target) {
-  try { insert_('audit', { ts: now_(), who: me.name + ' (' + me.id + ')', role: me.role, action: action, target: clip_(target, 120) }); } catch (e) {}
+function logAccess_(me, action, target, detail) {
+  try {
+    insert_('audit', { ts: now_(), who: me.name + ' (' + me.id + ')', role: me.role, action: action, target: clip_(target, 120),
+      detail: clip_(detail || '', 600), kind: (ACT_VI[action] || [])[1] || '', whoId: me.id });
+  } catch (e) {}
+}
+/* nhật ký: Admin thấy tất cả; quản lý thấy thao tác của giáo viên, sale và của chính mình */
+function mAudit_(me) {
+  var rows = rows_('audit').filter(function (r) { return me.role === 'admin' || r.role === 'giaovien' || r.role === 'sale' || String(r.whoId) === me.id; });
+  var staff = rows_('staff'), wk = Date.now() - 7 * 864e5;
+  var people = staff.filter(function (x) { return me.role === 'admin' || x.role === 'giaovien' || x.role === 'sale' || String(x.id) === me.id; }).map(function (x) {
+    var mine = rows.filter(function (r) { return String(r.whoId) === String(x.id); });
+    var logins = mine.filter(function (r) { return r.action === 't_whoami'; });
+    return { id: x.id, name: x.name, roleVi: ROLE_VI[x.role] || x.role, active: activeOf_(x), lastLogin: logins.length ? logins[logins.length - 1].ts : '',
+      lastAction: mine.length ? mine[mine.length - 1].ts : '', week: mine.filter(function (r) { return new Date(r.ts).getTime() > wk && r.action !== 't_whoami'; }).length,
+      denied: mine.filter(function (r) { return /^BỊ TỪ CHỐI/.test(String(r.detail)); }).length };
+  });
+  return { ok: true, people: people, rows: rows.slice(-1500).reverse().map(function (r) {
+    return { ts: r.ts, who: r.who, whoId: r.whoId, role: r.role, roleVi: ROLE_VI[r.role] || '', action: r.action, actionVi: (ACT_VI[r.action] || [r.action])[0], kind: r.kind, target: r.target, detail: r.detail };
+  }) };
+}
+/* Admin: mọi tin nhắn giữa nhân viên và học sinh, kèm người gửi */
+function mMessages_() {
+  var studs = {}; rows_('students').forEach(function (s) { studs[s.code] = s.name; });
+  return { ok: true, rows: rows_('messages').slice(-800).reverse().map(function (m) {
+    return { ts: m.ts, code: m.code, student: studs[m.code] || '', from: m.from, staff: m.staff || '', uploadId: m.uploadId || '', itemId: m.itemId || '', text: m.text };
+  }) };
 }
 /* giáo viên chỉ đụng tới học sinh được giao */
 function mine_(me, code) {
@@ -160,11 +224,11 @@ function staffRoute_(a, q, me) {
     case 't_whoami': return { ok: true, me: me, roleVi: ROLE_VI[me.role] || me.role };
     case 't_list': return tList_(me);
     case 't_student': guard_(me, q.code); return tStudent_(q.code, me);
-    case 't_reply': guard_(me, q.code); return tReply_(q.code, q.uploadId, q.itemId, q.text);
+    case 't_reply': guard_(me, q.code); return tReply_(q.code, q.uploadId, q.itemId, q.text, me);
     case 't_override': guard_(me, uploadCode_(q.uploadId)); return tOverride_(q);
     case 't_regrade': guard_(me, uploadCode_(q.uploadId)); return tRegrade_(q.uploadId);
     case 't_image': return tImage_(q.fileId, me);
-    case 't_add': return tAdd_(q.name, q.grade, q.credits, me.role === 'quanly' ? q.teacher : '');
+    case 't_add': return tAdd_(q.name, q.grade, q.credits, (me.role === 'quanly' || me.role === 'admin') ? q.teacher : '');
     case 't_credits': return tCredits_(q.code, q.add);
     case 't_paid': return tPaid_(q.code, q.paid);
     case 't_order': return tOrder_(q.id, q.status);
@@ -173,28 +237,32 @@ function staffRoute_(a, q, me) {
     case 't_req_status': return tReqStatus_(q.id, q.status, q.note, me);
     case 's_list': return sList_();
     case 'm_overview': return mOverview_();
-    case 'm_staff': return mStaff_();
-    case 'm_staff_add': return mStaffAdd_(q.name, q.role, q.email);
-    case 'm_staff_set': return mStaffSet_(q.id, q);
+    case 'm_staff': return mStaff_(me);
+    case 'm_staff_add': return mStaffAdd_(q.name, q.role, q.email, me);
+    case 'm_staff_set': return mStaffSet_(q.id, q, me);
+    case 'm_messages': return mMessages_();
     case 'm_assign': return mAssign_(q.code, q.teacher);
-    case 'm_audit': return { ok: true, rows: rows_('audit').slice(-300).reverse().map(function (r) { return { ts: r.ts, who: r.who, role: r.role, action: r.action, target: r.target }; }) };
+    case 'm_audit': return mAudit_(me);
   }
   throw new Error('unknown_action');
 }
 
 function newPin_() { var abc = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789', p = ''; for (var i = 0; i < 8; i++) p += abc.charAt(Math.floor(Math.random() * abc.length)); return p; }
 function activeOf_(r) { return r.active === true || r.active === 'TRUE'; }
-function mStaff_() {
+function mStaff_(me) {
   var studs = rows_('students');
   return { ok: true, staff: rows_('staff').map(function (r) {
     return { id: r.id, name: r.name, role: r.role, roleVi: ROLE_VI[r.role] || r.role, active: activeOf_(r), created: r.created, email: r.email,
-      students: studs.filter(function (s) { return String(s.teacher) === String(r.id); }).length };
+      students: studs.filter(function (s) { return String(s.teacher) === String(r.id); }).length, canEdit: !me || canManage_(me, r.role) };
   }) };
 }
-function mStaffAdd_(name, role, email) {
+/* quản lý chỉ tạo, sửa tài khoản giáo viên và sale; tài khoản quản lý do Admin tạo */
+function canManage_(me, role) { return me.role === 'admin' ? role !== 'admin' : (role === 'giaovien' || role === 'sale'); }
+function mStaffAdd_(name, role, email, me) {
   name = clip_(String(name || '').trim(), 80);
   if (!name) throw new Error('no_name');
-  if (!ROLE_VI[role]) throw new Error('bad_role');
+  if (!ROLE_VI[role] || role === 'admin') throw new Error('bad_role');
+  if (me && !canManage_(me, role)) throw new Error('forbidden');
   var pin = newPin_(), id;
   withLock_(function () {
     var n = rows_('staff').length + 1;
@@ -203,13 +271,14 @@ function mStaffAdd_(name, role, email) {
   });
   return { ok: true, id: id, pin: pin }; // PIN chỉ hiện một lần
 }
-function mStaffSet_(id, q) {
+function mStaffSet_(id, q, me) {
   return withLock_(function () {
     var r = find_('staff', 'id', id);
     if (!r) throw new Error('no_staff');
+    if (me && (!canManage_(me, r.role) || (q.role && !canManage_(me, q.role)))) throw new Error('forbidden');
     var patch = {}, pin = null;
     if (q.active != null) patch.active = q.active === true;
-    if (q.role && ROLE_VI[q.role]) patch.role = q.role;
+    if (q.role && ROLE_VI[q.role] && q.role !== 'admin') patch.role = q.role;
     if (q.resetPin) { pin = newPin_(); patch.pinHash = hash_(pin); }
     update_('staff', r._row, patch);
     return { ok: true, pin: pin };
@@ -810,7 +879,7 @@ function tStudent_(code, me) {
   if (!st) return { ok: false, error: 'bad_code' };
   var ups = rows_('uploads').filter(function (r) { return r.code === st.code; }).map(function (r) { var o = uploadOut_(r); o.fileIds = String(r.fileIds).split(',').filter(String); return o; });
   var msgs = rows_('messages').filter(function (m) { return m.code === st.code; });
-  var outMsgs = msgs.map(msgOut_);
+  var outMsgs = msgs.map(function (m) { var o = msgOut_(m); o.staff = m.staff || ''; return o; });
   withLock_(function () { msgs.forEach(function (m) { if (m.from === 'student' && !(m.seenTeacher === true || m.seenTeacher === 'TRUE')) update_('messages', m._row, { seenTeacher: true }); }); });
   var ords = rows_('orders').filter(function (o) { return o.code === st.code; }).map(function (o) { return { id: o.id, ts: o.ts, product: o.product, status: o.status }; });
   if (me && me.role === 'giaovien') ords = []; // giáo viên không xem yêu cầu mua
@@ -828,13 +897,13 @@ function tAdd_(name, grade, credits, teacher) {
   });
 }
 
-function tReply_(code, uploadId, itemId, text) {
+function tReply_(code, uploadId, itemId, text, me) {
   var st = getStudent_(code);
   if (!st) return { ok: false, error: 'bad_code' };
   text = clip_(String(text || '').trim(), 2000);
   if (!text) throw new Error('empty');
   var id = uid_('M');
-  withLock_(function () { insert_('messages', { id: id, ts: now_(), code: st.code, from: 'teacher', uploadId: uploadId || '', itemId: itemId || '', text: text, seenTeacher: true, seenStudent: false }); });
+  withLock_(function () { insert_('messages', { id: id, ts: now_(), code: st.code, from: 'teacher', uploadId: uploadId || '', itemId: itemId || '', text: text, seenTeacher: true, seenStudent: false, staff: me ? me.name + ' (' + me.id + ')' : '' }); });
   return { ok: true, id: id };
 }
 

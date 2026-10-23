@@ -182,7 +182,7 @@ function wHTML(W){
    ${D?`<details><summary class="small">Nhận xét chi tiết theo tiêu chí đề chuyên (bản trả phí)</summary><p class="small">${(D.criteria||[]).map(c=>`<b>${esc(c.name)}</b> ${c.score}/${c.max}: ${esc(c.comment)}`).join('<br>')}</p><p class="small">${(D.errors||[]).map(e=>`${esc(e.quote)} → <b>${esc(e.fix)}</b> (${esc(e.why)})`).join('<br>')}</p></details>`:''}
    <div class="row">Điểm viết <input type="number" min="0" max="10" step="0.5" value="${W.score}" data-ws style="width:80px"><button class="mini" data-wsave>Lưu</button></div>`;
 }
-function mHTML(m){return `<div class="msg ${m.from==='teacher'?'t':''}"><span class="small muted">${m.from==='teacher'?'Cô':'Con'} · ${when(m.ts)}${m.itemId?' · câu '+esc(String(m.itemId).replace(/^d\d+/,'').replace(/^([A-Z]\d?)_?(\d+)$/,'$1.$2')):''}</span><div>${esc(m.text)}</div></div>`}
+function mHTML(m){return `<div class="msg ${m.from==='teacher'?'t':''}"><span class="small muted">${m.from==='teacher'?(m.staff?esc(m.staff.replace(/ \([A-Z]+\d*\)$/,'')):'Cô'):'Con'} · ${when(m.ts)}${m.itemId?' · câu '+esc(String(m.itemId).replace(/^d\d+/,'').replace(/^([A-Z]\d?)_?(\d+)$/,'$1.$2')):''}</span><div>${esc(m.text)}</div></div>`}
 
 /* vai của người đăng nhập: giáo viên chỉ thấy học sinh được giao, sale làm việc ở bảng quản trị */
 let ROLE='quanly';
