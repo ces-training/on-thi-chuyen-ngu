@@ -13,52 +13,54 @@
   "items": [
    {
     "type": "gap",
-    "q": "Matt (Mr Jessett) has been a teacher for ______ years.",
+    "q": "Mr Jessett has taught for ______ years.",
     "answer": "seven",
     "accept": [
      "7"
     ],
-    "explain_vi": "Bài nghe: ==\"Mr Jessett to his students, has been a teacher for seven years\"== → **seven (7)**. __Nghe số ngay sau \"for\": for + khoảng thời gian.__"
+    "explain_vi": "==\"has been a teacher for seven years\"== → **seven (7)**. __Nghe số ngay sau \"for\".__"
    },
    {
     "type": "mcq",
-    "q": "Who ran the early schools in Australia?",
+    "q": "Why did Mr Jessett choose to be a teacher?",
     "options": [
-     "the Church",
-     "the government",
-     "parents"
+     "He enjoys being with people.",
+     "He enjoys teaching maths.",
+     "He wanted to go to university."
     ],
     "answer": 0,
-    "explain_vi": "Người dẫn nói ==\"early Aussie schools were all run by the Church\"== → **the Church**. __\"Aussie\" là cách nói thân mật của Australian.__"
+    "explain_vi": "Thầy muốn ==\"a career that was very sociable\"== → **thích ở cùng mọi người**. __Maths, university có nhắc nhưng không phải lí do của thầy.__"
    },
    {
     "type": "gap",
-    "q": "The first public school in Australia opened in ______.",
+    "q": "Australia's first public school opened in ______.",
     "answer": "1849",
     "accept": [
-     "eighteen forty-nine"
+     "eighteen forty-nine",
+     "in 1849"
     ],
-    "explain_vi": "==\"It wasn't until 1849 that the first public school was opened\"== → **1849**. __Năm được đọc thành hai cặp số: eighteen / forty-nine.__"
+    "explain_vi": "==\"It wasn't until 1849 that the first public school was opened\"== → **1849**. __Năm đọc thành hai cặp: eighteen / forty-nine.__"
    },
    {
     "type": "mcq",
-    "q": "Every morning, teachers in the past checked students' ...",
+    "q": "In the past, pupils even had lessons on how to ...",
     "options": [
-     "nails, hair and teeth",
-     "homework and books",
-     "shoes and uniforms"
+     "clean their nails and teeth",
+     "dip their pens into ink",
+     "keep their backs straight"
     ],
-    "answer": 0,
-    "explain_vi": "==\"they would check students' nails, hair and teeth to make sure they were clean\"== → **nails, hair and teeth**. __Hai phương án kia nghe hợp lí nhưng không hề được nhắc tới.__"
+    "answer": 2,
+    "explain_vi": "==\"There were also lessons on how to keep your back straight\"== → **giữ lưng thẳng**. __Móng tay, bút chấm mực có nhắc nhưng không phải là bài học.__"
    },
    {
     "type": "gap",
-    "q": "Up until the 1940s, most kids left school when they were ______.",
-    "answer": "14",
+    "q": "One pupil says lessons don't feel like hard, ______ work.",
+    "answer": "sit-down",
     "accept": [
-     "fourteen"
+     "sit down",
+     "sitdown"
     ],
-    "explain_vi": "==\"up until the 1940s, most kids left school when they were 14\"== → **14**. __Đừng nhầm mốc năm 1940s với tuổi; câu hỏi hỏi tuổi.__"
+    "explain_vi": "==\"not making it feel like really hard, sit-down work\"== → **sit-down**. __Từ cần điền đứng ngay trước \"work\".__"
    }
   ]
  },
@@ -72,57 +74,59 @@
   "transcript_url": "https://learnenglish.britishcouncil.org/free-resources/general/video-zone/why-i-fell-love-irish-dancing",
   "level": "B1",
   "topic_match_vi": "Một cô gái kể về sở thích múa Ireland từ nhỏ, đi học lớp múa và thi đấu: đúng chủ đề sở thích.",
-  "intro_vi": "Cậu sẽ nghe phóng sự BBC News về Morgan Bullock, cô gái Mỹ mê múa Ireland (khoảng 2,5 phút đầu); chú ý tuổi, quê, cách cô bắt đầu và cảm giác của cô ở lớp múa.",
+  "intro_vi": "Cậu sẽ nghe phóng sự BBC News về Morgan Bullock, cô gái Mỹ mê múa Ireland (khoảng 2,5 phút đầu); chú ý nơi cô lần đầu xem múa, cảm nghĩ của cô và phản ứng của mọi người với video của cô.",
   "items": [
    {
     "type": "gap",
-    "q": "Morgan Bullock is ______ years old.",
+    "q": "Morgan first saw Irish dancing at a ______.",
+    "answer": "recital",
+    "accept": [
+     "dance recital"
+    ],
+    "explain_vi": "==\"I saw it for the first time at a recital\"== → **recital** (buổi biểu diễn). __Không phải competition: thi đấu là chuyện sau này.__"
+   },
+   {
+    "type": "gap",
+    "q": "Morgan is ______ years old.",
     "answer": "21",
     "accept": [
      "twenty-one",
      "twenty one"
     ],
-    "explain_vi": "==\"This is 21-year-old Morgan Bullock\"== → **21**. __\"21-year-old\" đứng trước danh từ nên \"year\" không thêm s.__"
-   },
-   {
-    "type": "gap",
-    "q": "She is an Irish dancer from Richmond, ______.",
-    "answer": "Virginia",
-    "accept": [],
-    "explain_vi": "==\"an Irish dancer from Richmond, Virginia\"== → **Virginia**. __Tên riêng: nghe kĩ âm đầu và viết hoa chữ cái đầu.__"
+    "explain_vi": "==\"21-year-old Morgan Bullock\"== → **21**. __Tuổi đứng trước \"-year-old\".__"
    },
    {
     "type": "mcq",
-    "q": "Morgan went viral for her dancing on ...",
+    "q": "Besides going to classes, what did young Morgan do?",
     "options": [
-     "TikTok",
-     "YouTube",
-     "Instagram"
+     "She made dance videos.",
+     "She went to more recitals.",
+     "She entered competitions."
     ],
-    "answer": 0,
-    "explain_vi": "==\"who recently went viral for her dancing on TikTok\"== → **TikTok**. __\"go viral\" = được lan truyền rất nhanh trên mạng.__"
+    "answer": 2,
+    "explain_vi": "==\"attended dance competitions\"== → **đi thi múa**. __Video TikTok là chuyện khi đã lớn; recital là lần đầu xem múa.__"
    },
    {
     "type": "mcq",
-    "q": "When she started Irish dancing, Morgan ...",
+    "q": "How did Morgan feel about being the only one like her in class?",
     "options": [
-     "went to classes a few times a week",
-     "practised alone at home",
-     "danced only at school"
+     "She didn't notice it at all.",
+     "She saw it but didn't mind.",
+     "It made her feel uncomfortable."
     ],
-    "answer": 0,
-    "explain_vi": "==\"She started going to classes a few times a week and attended dance competitions\"== → **went to classes a few times a week**. __Hai phương án còn lại không có trong bài.__"
+    "answer": 1,
+    "explain_vi": "==\"I don't think I ever considered it an issue\"== → **có để ý nhưng không bận tâm**. __Cô có nói \"uncomfortable\" nhưng ở dạng phủ định.__"
    },
    {
     "type": "mcq",
-    "q": "In her dance classes, Morgan was ...",
+    "q": "What did most people think of her TikTok video?",
     "options": [
-     "always the only African-American girl",
-     "one of many African-American dancers",
-     "the youngest dancer"
+     "Most people said it was wrong.",
+     "Very few people watched it.",
+     "Almost everyone loved it."
     ],
-    "answer": 0,
-    "explain_vi": "Morgan nói ==\"I was always the only one in my class\"== → **always the only African-American girl**. __Từ khoá là \"always\" và \"only\".__"
+    "answer": 2,
+    "explain_vi": "==\"the reaction was overwhelmingly positive\"== → **hầu hết đều thích**. __Chỉ \"a few\" chê, đừng nhầm là số đông.__"
    }
   ]
  },
@@ -140,55 +144,55 @@
   "items": [
    {
     "type": "mcq",
-    "q": "Where did the group collect plastic?",
+    "q": "What picture do the bottle caps make on the wall?",
     "options": [
-     "from the street and their estates",
-     "from the beach",
-     "from supermarkets"
+     "a Christmas tree",
+     "a flower",
+     "a dress"
     ],
-    "answer": 0,
-    "explain_vi": "==\"we collected plastic from the street and in our estates for recycling\"== → **from the street and their estates**. __\"plastic drive\" ở đây là đợt đi thu gom nhựa.__"
+    "answer": 1,
+    "explain_vi": "==\"to make a beautiful flower mosaic\"== → **bông hoa**. __Cây thông và váy là các sản phẩm khác trong bài.__"
    },
    {
     "type": "mcq",
-    "q": "What do they use the bottle caps for?",
+    "q": "What is the group making right now?",
     "options": [
-     "a wall mural",
      "earrings",
-     "a Christmas tree"
+     "necklaces",
+     "bracelets"
     ],
-    "answer": 0,
-    "explain_vi": "==\"we use them for projects like this, which is a wall mural\"== → **a wall mural** (tranh tường). __Cây thông Noel làm từ chai nhựa xanh, không phải từ nắp chai.__"
+    "answer": 1,
+    "explain_vi": "==\"And we're making necklaces right now.\"== → **necklaces**. __Earrings, bracelets đã làm xong (\"We've made\").__"
    },
    {
     "type": "gap",
-    "q": "Their jewellery is ______ per cent waste.",
+    "q": "The jewellery is ______ per cent waste.",
     "answer": "95",
     "accept": [
      "ninety-five",
      "ninety five"
     ],
-    "explain_vi": "==\"These jewelleries are 95 per cent waste\"== → **95**. __Với con số, cậu viết bằng chữ số cho nhanh và tránh sai chính tả.__"
+    "explain_vi": "==\"These jewelleries are 95 per cent waste.\"== → **95**. __Không phải 100: phân biệt ninety-five và one hundred.__"
    },
    {
     "type": "gap",
-    "q": "Last Christmas, they made a Christmas tree out of plastic ______.",
-    "answer": "bottles",
+    "q": "For the tree, they passed ______ through holes in the bottles.",
+    "answer": "wire",
     "accept": [
-     "green bottles"
+     "wires"
     ],
-    "explain_vi": "==\"we got green plastic bottles and poked holes in them\"== → **bottles**. __Sau \"out of plastic\" cần danh từ số nhiều.__"
+    "explain_vi": "==\"passed wire through them and wrapped it round the frame\"== → **wire** (dây thép). __Fishing line dùng cho hạt trang sức, không phải cây thông.__"
    },
    {
     "type": "mcq",
-    "q": "Why did they make plastic dresses?",
+    "q": "If people still use single-use plastic, Nicole says they should ...",
     "options": [
-     "to protest against single-use plastics",
-     "to sell them at a market",
-     "to wear at a party"
+     "turn it into art",
+     "pick it up from the ground",
+     "learn to recycle it"
     ],
-    "answer": 0,
-    "explain_vi": "==\"We made plastic dresses to protest against the use of single-use plastics\"== → **to protest against single-use plastics**. __Câu hỏi Why thường có đáp án sau \"to\" hoặc \"because\".__"
+    "answer": 2,
+    "explain_vi": "==\"even if you do use them, learn to recycle them\"== → **tái chế**. __Làm tranh từ nhựa là việc của nhóm, không phải lời khuyên cuối.__"
    }
   ]
  },
@@ -206,55 +210,55 @@
   "items": [
    {
     "type": "gap",
-    "q": "If you look at a screen at least ______ times a day, you're obsessed with technology.",
+    "q": "A warning sign is looking at a screen at least ______ times a day.",
     "answer": "nine",
     "accept": [
      "9"
     ],
-    "explain_vi": "==\"If you look at a screen at least nine times a day\"== → **nine (9)**. __Chú ý \"at least\" = ít nhất.__"
+    "explain_vi": "==\"at least nine times a day\"== → **nine (9)**. __Nghe số ngay sau \"at least\".__"
    },
    {
     "type": "mcq",
-    "q": "Why does Asha love paper books?",
+    "q": "What does Asha say is good about a Kindle?",
     "options": [
-     "She loves their smell.",
-     "They are cheaper.",
-     "They are lighter."
+     "It is easy on your eyes.",
+     "It saves space at home.",
+     "It smells like new books."
     ],
-    "answer": 0,
-    "explain_vi": "==\"I am in love with the smell of new books and old books\"== → **She loves their smell**. __Cô vẫn khen Kindle là phát minh hay, đừng hiểu nhầm ý.__"
+    "answer": 1,
+    "explain_vi": "==\"It saves so much space around your house\"== → **tiết kiệm chỗ**. __Mùi sách mới là điều Asha thích ở sách giấy.__"
    },
    {
     "type": "gap",
-    "q": "It takes Asha ______ minutes to check all her social media.",
+    "q": "Checking all her social media takes Asha ______ minutes.",
     "answer": "35",
     "accept": [
      "thirty-five",
      "thirty five"
     ],
-    "explain_vi": "==\"it's taken me 35 minutes to check through it all\"== → **35**. __thirty (30) nhấn âm đầu, thirteen (13) nhấn âm cuối.__"
+    "explain_vi": "==\"it's taken me 35 minutes to check through it all\"== → **35**. __Phân biệt thirty-five và forty-five.__"
    },
    {
     "type": "mcq",
-    "q": "Which device could Asha cope with breaking?",
+    "q": "Why wouldn't Asha mind if her TV broke?",
     "options": [
-     "her TV",
-     "her phone",
-     "her laptop"
+     "She can watch on other devices.",
+     "She hardly ever turns the TV on.",
+     "She has a portable charger."
     ],
     "answer": 0,
-    "explain_vi": "==\"The only thing I think I could cope with it breaking is probably my TV\"== → **her TV**. __\"cope with\" = chịu đựng được; cô sợ nhất là điện thoại hỏng.__"
+    "explain_vi": "==\"I know I'll have other devices to watch TV on\"== → **xem bằng thiết bị khác**. __Sạc dự phòng có nhắc nhưng nói về điện thoại.__"
    },
    {
     "type": "mcq",
-    "q": "How long was Kim Kardashian's break from social media?",
+    "q": "How did Asha feel when Kim Kardashian took a break?",
     "options": [
-     "three weeks",
-     "three months",
-     "three years"
+     "She actually missed her posts.",
+     "She was glad to have more time.",
+     "She stopped checking social media."
     ],
-    "answer": 1,
-    "explain_vi": "==\"her three-month break off social media\"== → **three months**. __Cả ba phương án đều có \"three\", phải nghe đơn vị thời gian.__"
+    "answer": 0,
+    "explain_vi": "==\"I was actually missing her\"== → **nhớ Kim**. __Chú ý từ \"actually\": Asha thừa nhận điều hơi buồn cười.__"
    }
   ]
  },
@@ -272,50 +276,56 @@
   "items": [
    {
     "type": "gap",
-    "q": "A regular-sized soft drink contains about seven to eight ______ of sugar.",
-    "answer": "teaspoons",
+    "q": "A normal can of fizzy drink has about ______ teaspoons of sugar.",
+    "answer": "seven to eight",
     "accept": [
-     "teaspoon"
+     "7 to 8",
+     "7-8",
+     "seven or eight",
+     "7 or 8",
+     "seven-eight"
     ],
-    "explain_vi": "==\"a regular-sized soft drink contains about seven to eight teaspoons of sugar\"== → **teaspoons** (thìa cà phê). __Sau \"seven to eight\" nhớ dùng danh từ số nhiều.__"
+    "explain_vi": "==\"contains about seven to eight teaspoons of sugar\"== → **seven to eight**. __Con số 4 là của quả táo.__"
    },
    {
     "type": "gap",
-    "q": "One apple contains ______ teaspoons of sugar.",
-    "answer": "four",
+    "q": "______ apples give you as much sugar as one can of fizzy drink.",
+    "answer": "two",
     "accept": [
-     "4"
+     "2"
     ],
-    "explain_vi": "==\"This apple contains four teaspoons of sugar\"== → **four (4)**. __Đừng chọn 7–8: đó là số thìa đường của lon nước ngọt.__"
+    "explain_vi": "==\"have two apples and you've taken in as much sugar\"== → **two (2)**. __Một quả táo có 4 thìa, hai quả gần bằng một lon.__"
    },
    {
     "type": "mcq",
-    "q": "What happens to glucose?",
+    "q": "What does the doctor mean by \"Sugar is sugar\"?",
     "options": [
-     "It goes straight into your bloodstream.",
-     "It is taken to your liver.",
-     "It is always turned into fat."
+     "Fruit sugar acts like sugar in sweets.",
+     "Fruit sugar is better than other sugar.",
+     "Fruit sugar goes to your liver only."
     ],
     "answer": 0,
-    "explain_vi": "==\"glucose, your body's preferred source of energy, which goes straight into your bloodstream\"== → **goes straight into your bloodstream**. __B và C nói về fructose, đừng nhầm hai loại đường.__"
+    "explain_vi": "==\"chemically identical to the sugars you get in junk food\"== → **đường trái cây cũng như đường đồ ngọt**. __Chỉ fructose đi vào gan, không phải mọi loại.__"
    },
    {
     "type": "mcq",
     "q": "Gram for gram, which fruit has LESS sugar?",
     "options": [
-     "bananas",
-     "raspberries",
-     "mangoes"
+     "pomegranates",
+     "cherries",
+     "watermelon"
     ],
-    "answer": 1,
-    "explain_vi": "==\"bananas, cherries, pomegranates, mangoes, grapes and figs all contain more than watermelon, raspberries\"== → **raspberries**. __Quả đứng sau \"more than\" là quả ít đường hơn.__"
+    "answer": 2,
+    "explain_vi": "==\"contain more than watermelon, raspberries, kiwi fruit\"== → **watermelon** ít đường hơn. __Dưa hấu ngọt nhưng nằm ở nhóm ít đường.__"
    },
    {
     "type": "gap",
-    "q": "You should eat most of your fruit ______.",
-    "answer": "whole",
-    "accept": [],
-    "explain_vi": "==\"You should eat most of your fruit whole\"== → **whole** (ăn cả quả). __Còn nước ép, sinh tố thì chỉ nên uống một cốc.__"
+    "q": "Whole fruit stops your body getting sugar in one big ______.",
+    "answer": "hit",
+    "accept": [
+     "hits"
+    ],
+    "explain_vi": "==\"avoids overloading your system with one big hit\"== → **hit** (một lượt dồn dập). __Từ cần điền đứng sau \"one big\".__"
    }
   ]
  },
@@ -333,48 +343,51 @@
   "items": [
    {
     "type": "mcq",
-    "q": "Why is Molly going to Manchester?",
+    "q": "Why did Molly decide to film her trip?",
     "options": [
-     "to visit a friend",
-     "to go to a concert",
-     "for a school trip"
+     "Her friend asked her to film it.",
+     "She thought it would be fun.",
+     "She wanted to show a new café."
     ],
-    "answer": 0,
-    "explain_vi": "==\"this weekend I'm coming to Manchester to visit a friend\"== → **to visit a friend**. __Cấu trúc \"to + động từ\" chỉ mục đích.__"
+    "answer": 1,
+    "explain_vi": "==\"so I thought it would be fun to take you along\"== → **thấy vui**. __Bạn của Molly có nhắc, nhưng là lí do đi Manchester, không phải lí do quay.__"
    },
    {
     "type": "gap",
-    "q": "They had lunch at a café called ______ in the Northern Quarter.",
+    "q": "They had lunch at a café called ______.",
     "answer": "Common",
-    "accept": [],
-    "explain_vi": "==\"We went to a café for lunch called Common, in the Northern Quarter\"== → **Common**. __Tên quán là một từ quen thuộc; nghe ngay sau \"called\".__"
+    "accept": [
+     "common"
+    ],
+    "explain_vi": "==\"We went to a café for lunch called Common\"== → **Common**. __Tên quán đứng ngay sau \"called\".__"
    },
    {
     "type": "gap",
-    "q": "In Castlefield, they visited Castlefield ______.",
+    "q": "In Castlefield, they planned to visit Castlefield ______.",
     "answer": "Gallery",
     "accept": [
+     "gallery",
      "art gallery"
     ],
-    "explain_vi": "==\"we're going to go to, er, Castlefield Gallery\"== → **Gallery**. __Bỏ qua tiếng ngập ngừng \"er\", tập trung vào danh từ phía sau.__"
+    "explain_vi": "==\"we're going to go to, er, Castlefield Gallery\"== → **Gallery**. __\"Going to\" là dự định; Castlefield là tên khu phố.__"
    },
    {
     "type": "mcq",
-    "q": "What was surprising on the second morning?",
+    "q": "What was the weather like on Molly's second day?",
     "options": [
-     "They could eat outside in November.",
-     "It snowed in the city.",
-     "The museum was closed."
+     "sunny",
+     "rainy",
+     "snowy"
     ],
     "answer": 0,
-    "explain_vi": "==\"we were even able to eat outside, which was really nice for November in England\"== → **They could eat outside in November**. __Từ \"even\" báo hiệu một điều bất ngờ.__"
+    "explain_vi": "==\"a lovely sunny day here in Manchester\"== → **sunny**. __Đừng đoán theo tiếng xấu \"mưa\" của Manchester.__"
    },
    {
     "type": "gap",
-    "q": "They went to the People's ______ Museum in central Manchester.",
-    "answer": "History",
+    "q": "The market felt really Christmassy and ______.",
+    "answer": "festive",
     "accept": [],
-    "explain_vi": "==\"visit the People's History Museum in central Manchester\"== → **History**. __Tên riêng nên viết hoa chữ cái đầu.__"
+    "explain_vi": "==\"the atmosphere was really Christmassy and festive\"== → **festive** (rộn ràng ngày lễ). __Từ cần điền đứng sau \"and\".__"
    }
   ]
  },
@@ -392,53 +405,53 @@
   "items": [
    {
     "type": "mcq",
-    "q": "On road signs, which language goes on top?",
+    "q": "How does the Hanko speaker feel about changing the signs?",
     "options": [
-     "the majority language",
-     "the minority language",
-     "always Swedish"
+     "They wouldn't mind at all.",
+     "They see it as a problem.",
+     "Only if the law makes them."
     ],
     "answer": 0,
-    "explain_vi": "==\"majority languages on top and the minority language on the bottom\"== → **the majority language**. __majority = đa số, minority = thiểu số.__"
+    "explain_vi": "==\"We would do it happily.\"== → **sẵn lòng đổi**. __Người nói coi hai thứ tiếng là \"richness\", không phải \"problem\".__"
    },
    {
     "type": "gap",
-    "q": "Swedish speakers are only ______ per cent of Finland's population.",
-    "answer": "5",
-    "accept": [
-     "five"
-    ],
-    "explain_vi": "==\"Swedish speakers are only five per cent of Finland's population\"== → **five (5)**. __Từ \"only\" cho thấy đây là con số nhỏ.__"
-   },
-   {
-    "type": "gap",
-    "q": "Finnish has at least ______ words describing snow.",
+    "q": "One speaker says Finnish has at least ______ words for snow.",
     "answer": "30",
     "accept": [
      "thirty"
     ],
-    "explain_vi": "==\"has at least 30 words describing snow\"== → **30**. __thirty (30) nhấn âm đầu, thirteen (13) nhấn âm cuối.__"
+    "explain_vi": "==\"has at least 30 words describing snow\"== → **30**. __Phân biệt thirty và thirteen.__"
    },
    {
     "type": "gap",
-    "q": "Ekenäs is an ______ per cent Swedish-speaking town in the south.",
+    "q": "Ekenäs is an ______ per cent Swedish-speaking town.",
     "answer": "85",
     "accept": [
      "eighty-five",
      "eighty five"
     ],
-    "explain_vi": "==\"Ekenäs is an 85 per cent Swedish-speaking town in the south\"== → **85**. __Mạo từ \"an\" là gợi ý: số này bắt đầu bằng nguyên âm (eighty).__"
+    "explain_vi": "==\"Ekenäs is an 85 per cent Swedish-speaking town\"== → **85**. __Đừng nhầm với 5% (người nói tiếng Thụy Điển ở Phần Lan).__"
+   },
+   {
+    "type": "gap",
+    "q": "The Finnish couple have lived in Ekenäs for ______ years.",
+    "answer": "two",
+    "accept": [
+     "2"
+    ],
+    "explain_vi": "==\"we have lived here for two years now\"== → **two (2)**. __Nghe số sau \"for\".__"
    },
    {
     "type": "mcq",
-    "q": "What do businesses in Ekenäs do?",
+    "q": "What does one of the couple miss at their parents' place?",
     "options": [
-     "They use both languages and let customers choose.",
-     "They only speak Swedish.",
-     "They only speak Finnish."
+     "speaking Finnish",
+     "hearing Swedish",
+     "their old town"
     ],
-    "answer": 0,
-    "explain_vi": "==\"They say everything in Swedish and Finnish and let you as a customer to choose\"== → **use both languages, customers choose**. __\"Swedish and Finnish\" = cả hai thứ tiếng, nên loại B và C.__"
+    "answer": 1,
+    "explain_vi": "==\"where you don't hear any Swedish, I kind of miss that\"== → **nghe tiếng Thụy Điển**. __Tiếng Phần Lan là tiếng mẹ đẻ của họ.__"
    }
   ]
  },
@@ -452,52 +465,56 @@
   "transcript_url": "https://learnenglishteens.britishcouncil.org/study-break/video-zone/is-social-media-good-for-you",
   "level": "B1",
   "topic_match_vi": "Một bạn 14 tuổi hỏi, phóng viên BBC trả lời về lợi ích của mạng xã hội và cách liên lạc ngày xưa: đúng chủ đề truyền thông và giao tiếp.",
-  "intro_vi": "Cậu sẽ nghe bạn Elena đặt câu hỏi và phóng viên BBC Joe trả lời: mạng xã hội có lợi ích gì; chú ý thông tin về Elena, nghề của Joe và các con số.",
+  "intro_vi": "Cậu sẽ nghe bạn Elena đặt câu hỏi và phóng viên BBC Joe trả lời: mạng xã hội có lợi ích gì; chú ý thông tin về Elena, ví dụ Joe đưa ra và các con số.",
   "items": [
    {
     "type": "gap",
-    "q": "Elena is 14 and comes from Ruse in ______.",
-    "answer": "Bulgaria",
-    "accept": [],
-    "explain_vi": "==\"I'm 14 years old and I'm from Ruse in Bulgaria\"== → **Bulgaria**. __Tên nước phải viết hoa chữ cái đầu.__"
+    "q": "Elena is ______ years old.",
+    "answer": "14",
+    "accept": [
+     "fourteen"
+    ],
+    "explain_vi": "==\"I'm 14 years old\"== → **14**. __Phân biệt fourteen và forty.__"
    },
    {
     "type": "mcq",
-    "q": "What is Joe's job?",
+    "q": "Why does Joe like Elena's question?",
     "options": [
-     "a reporter at the BBC",
-     "a social media app designer",
-     "a school teacher"
+     "It reminds him of the good sides.",
+     "It helps him with his news stories.",
+     "It shows teens worry too much."
     ],
     "answer": 0,
-    "explain_vi": "==\"I'm Cybersecurity Reporter at the BBC\"== → **a reporter at the BBC**. __Nghề thường xuất hiện ngay sau \"I'm\" khi người nói giới thiệu bản thân.__"
+    "explain_vi": "==\"it can remind me of all the good things\"== → **nhắc anh nhớ mặt tốt**. __Công việc của Joe là xem mặt xấu, nên câu hỏi này có ích.__"
    },
    {
     "type": "mcq",
-    "q": "Before social media, if you made plans by phone, ...",
+    "q": "Before social media, what could happen if you changed plans?",
     "options": [
-     "you had to stick to them",
-     "you could easily change them",
-     "you sent a message later"
+     "You couldn't find the meeting place.",
+     "Your friend might wait in the rain.",
+     "You had to pay for another phone call."
     ],
-    "answer": 0,
-    "explain_vi": "==\"if you made plans, you had to stick to them\"== → **you had to stick to them**. __\"stick to\" = giữ đúng; nếu không, bạn cậu phải đứng chờ dưới mưa.__"
+    "answer": 1,
+    "explain_vi": "==\"leave your mate waiting in the rain\"== → **bạn phải đứng chờ dưới mưa**. __\"Mate\" nghĩa là bạn.__"
    },
    {
     "type": "gap",
-    "q": "Social media helped a ______-year-old activist in Sweden to be heard around the world.",
+    "q": "Social media helped a ______-year-old in Sweden be heard worldwide.",
     "answer": "15",
     "accept": [
      "fifteen"
     ],
-    "explain_vi": "==\"amplify the voice of a 15-year-old activist in Sweden\"== → **15**. __fifteen (15) nhấn âm cuối, fifty (50) nhấn âm đầu.__"
+    "explain_vi": "==\"amplify the voice of a 15-year-old activist\"== → **15**. __Phân biệt fifteen và fifty.__"
    },
    {
     "type": "gap",
-    "q": "More than 50 ______ people have become blood donors around the world.",
-    "answer": "million",
-    "accept": [],
-    "explain_vi": "==\"more than 50 million people becoming blood donors around the world\"== → **million**. __Sau con số thường là đơn vị: hundred, thousand, million.__"
+    "q": "More than ______ million people became blood donors.",
+    "answer": "50",
+    "accept": [
+     "fifty"
+    ],
+    "explain_vi": "==\"more than 50 million people becoming blood donors\"== → **50**. __Phân biệt fifty và fifteen.__"
    }
   ]
  },
@@ -515,54 +532,55 @@
   "items": [
    {
     "type": "gap",
-    "q": "Beat ______ eggs to start the omelette centre.",
-    "answer": "three",
+    "q": "The rolls are like an omelette wrapped in a ______.",
+    "answer": "tortilla",
     "accept": [
-     "3"
+     "tortillas",
+     "tortilla wrap"
     ],
-    "explain_vi": "==\"Beat three eggs to start the omelette centre\"== → **three (3)**. __Trong công thức, nghe kĩ con số ngay trước tên nguyên liệu.__"
+    "explain_vi": "==\"wrapped in a tortilla\"== → **tortilla** (bánh mì dẹt). __Từ này còn được nhắc lại: \"tortilla wraps\".__"
    },
    {
     "type": "mcq",
-    "q": "Why does Nadiya use garlic granules?",
+    "q": "What does Nadiya say about dried herbs?",
     "options": [
-     "She sometimes can't be bothered to chop garlic.",
-     "They are healthier.",
-     "Her children prefer them."
+     "She thinks fresh ones are better.",
+     "She loves them, but others don't.",
+     "She only uses them when rushing."
     ],
-    "answer": 0,
-    "explain_vi": "==\"Sometimes I just cannot be bothered to chop garlic\"== → **can't be bothered to chop garlic**: cô ngại băm tỏi. __\"can't be bothered\" = không muốn mất công làm gì.__"
+    "answer": 1,
+    "explain_vi": "==\"I love dried herbs\"==, chúng ==\"gets a bad rep\"== → **cô thích dù bị chê**. __\"Bad rep\" là tiếng xấu.__"
    },
    {
     "type": "mcq",
-    "q": "How is sun-dried tomato paste different from normal tomato paste?",
+    "q": "Which mushrooms can you use?",
     "options": [
-     "It's sweeter.",
-     "It's cheaper.",
-     "It's spicier."
+     "fresh ones only",
+     "any kind at all",
+     "big meaty ones"
     ],
-    "answer": 0,
-    "explain_vi": "==\"this is sun-dried tomato paste, so it's sweeter\"== → **It's sweeter**. __Từ \"so\" dẫn tới đặc điểm cậu cần nghe.__"
+    "answer": 1,
+    "explain_vi": "==\"any type of mushroom\"==, kể cả ==\"the canned stuff or frozen\"== → **loại nào cũng được**. __\"Meaty\" chỉ là lí do cô thích nấm.__"
    },
    {
     "type": "gap",
-    "q": "After just ______ seconds, flip it over.",
-    "answer": "30",
+    "q": "Sun-dried tomato paste is ______, so it adds lots of flavour.",
+    "answer": "sweeter",
     "accept": [
-     "thirty"
+     "sweet"
     ],
-    "explain_vi": "==\"After just 30 seconds, flip it over\"== → **30**. __thirty (30) nhấn âm đầu, thirteen (13) nhấn âm cuối.__"
+    "explain_vi": "==\"so it's sweeter\"== → **sweeter**. __Vị mặn (salty) là của ô liu.__"
    },
    {
     "type": "mcq",
-    "q": "Why does she add black olives?",
+    "q": "After you put the tortilla on top, what should you do?",
     "options": [
-     "for lots of flavour",
-     "for colour",
-     "because they are cheap"
+     "leave it alone",
+     "keep moving it",
+     "add more oil"
     ],
     "answer": 0,
-    "explain_vi": "==\"I want lots of flavour, and black olives are perfect for that\"== → **for lots of flavour**. __\"that\" chỉ lại ý vừa nói trước đó: lots of flavour.__"
+    "explain_vi": "==\"Just don't touch it\"== → **để yên**. __Dầu được cho vào từ trước khi đổ trứng.__"
    }
   ]
  },
@@ -580,54 +598,57 @@
   "items": [
    {
     "type": "mcq",
-    "q": "One investor would only give money if the company was run by ...",
+    "q": "How old was Justine when she looked for investors?",
     "options": [
-     "a 24-year-old man",
-     "an older businesswoman",
-     "a famous mother"
+     "She was 24.",
+     "She was 18.",
+     "She was 30."
     ],
-    "answer": 0,
-    "explain_vi": "==\"And in fact that someone was a 24-year-old man\"== → **a 24-year-old man**, và bà đã từ chối. __Cụm \"in fact\" thường đưa ra thông tin chính xác.__"
+    "answer": 2,
+    "explain_vi": "==\"a 30-year-old mum\"== → **30**. __24 là tuổi người đàn ông nhà đầu tư muốn; 18 là số năm cô làm Mumsnet.__"
    },
    {
     "type": "mcq",
-    "q": "Where did the idea for Mumsnet come from?",
+    "q": "Which tip goes with the story about the holiday?",
     "options": [
-     "a holiday that went wrong",
-     "a school project",
-     "a TV programme"
+     "Make mistakes.",
+     "Find your passion.",
+     "Embrace the chaos."
     ],
     "answer": 0,
-    "explain_vi": "==\"Mumsnet was born out of a mistaken holiday\"== → **a holiday that went wrong**. __Đề hay diễn đạt lại: mistaken holiday = holiday that went wrong.__"
+    "explain_vi": "==\"My second tip is to make mistakes\"== → **Make mistakes**. __Kỳ nghỉ hỏng nghe như \"chaos\", nhưng đó là mẹo thứ tư.__"
    },
    {
     "type": "gap",
-    "q": "It was her first holiday with ______.",
-    "answer": "kids",
+    "q": "Mark Zuckerberg wears the same ______ every day.",
+    "answer": "T-shirt and jeans",
     "accept": [
-     "children",
-     "her kids",
-     "my kids"
+     "t-shirt and jeans",
+     "tshirt and jeans",
+     "t shirt and jeans",
+     "a T-shirt and jeans"
     ],
-    "explain_vi": "==\"It was my first holiday with kids\"== → **kids** (con nhỏ). __kids là cách nói thân mật của children.__"
+    "explain_vi": "==\"wears the same T-shirt and jeans every day\"== → **T-shirt and jeans**. __Nghe đủ cả hai món đồ.__"
    },
    {
     "type": "mcq",
-    "q": "Why does she recommend wearing trainers?",
+    "q": "If it was her first child singing, how would Justine react?",
     "options": [
-     "to fit in exercise without going to the gym",
-     "to look younger",
-     "because they are cheap"
+     "She would cry.",
+     "She would stay home.",
+     "She would laugh."
     ],
     "answer": 0,
-    "explain_vi": "==\"a brilliant way to fit in exercise without going to the gym\"== → **to fit in exercise**. __\"fit in\" = sắp xếp được thời gian để làm việc gì.__"
+    "explain_vi": "Cô nói sẽ ==\"in tears on the pavement\"== → **khóc**. __Con thứ tư thì cô bình tĩnh vì đã \"wiser\".__"
    },
    {
     "type": "gap",
-    "q": "You have to embrace the fact that you cannot be ______.",
-    "answer": "perfect",
-    "accept": [],
-    "explain_vi": "==\"You have to embrace the fact that you cannot be perfect\"== → **perfect**. __Sau \"be\" thường cần một tính từ.__"
+    "q": "Justine has run Mumsnet for ______ years.",
+    "answer": "18",
+    "accept": [
+     "eighteen"
+    ],
+    "explain_vi": "==\"18 years on\"== → **18**. __Phân biệt eighteen và eighty; 30 là tuổi của cô.__"
    }
   ]
  },
@@ -641,57 +662,52 @@
   "transcript_url": "https://learnenglishteens.britishcouncil.org/study-break/video-zone/yusra-mardini-young-refugee",
   "level": "B1",
   "topic_match_vi": "Câu chuyện về một con người: gia đình, chị gái, huấn luyện viên và cộng đồng mới giúp Yusra: gần chủ đề con người và các mối quan hệ.",
-  "intro_vi": "Cậu sẽ nghe Yusra Mardini, vận động viên bơi người Syria, kể hành trình rời quê hương tới nơi ở mới; chú ý người đi cùng, các địa điểm và thời gian.",
+  "intro_vi": "Cậu sẽ nghe Yusra Mardini, vận động viên bơi người Syria, kể hành trình rời quê hương tới nơi ở mới; chú ý cảm xúc của Yusra và những điều cô coi trọng.",
   "items": [
    {
     "type": "gap",
-    "q": "Her coach said she could make it into the ______ one day.",
-    "answer": "Olympics",
+    "q": "Her ______ said she could make it into the Olympics.",
+    "answer": "coach",
     "accept": [
-     "the olympics",
-     "olympic games"
+     "swimming coach"
     ],
-    "explain_vi": "==\"My coach said if I worked hard enough, I could make it into the Olympics one day\"== → **Olympics**. __\"make it into\" = lọt vào, được tham gia.__"
+    "explain_vi": "==\"My coach said if I worked hard enough\"== → **coach** (huấn luyện viên). __Nghe từ đứng ngay sau \"My\".__"
    },
    {
     "type": "gap",
-    "q": "Her parents agreed that her big sister ______ and she could travel to Turkey.",
-    "answer": "Sara",
-    "accept": [
-     "sarah"
-    ],
-    "explain_vi": "==\"my big sister Sara and I could travel to Turkey\"== → **Sara**. __Tên người phải viết hoa; cách viết Sarah cũng được chấp nhận.__"
+    "q": "Yusra says they left because they needed ______.",
+    "answer": "peace",
+    "accept": [],
+    "explain_vi": "==\"We needed peace.\"== → **peace** (hòa bình). __Câu rất ngắn, dễ bỏ lỡ.__"
    },
    {
     "type": "mcq",
-    "q": "Where was the boat going?",
+    "q": "How did Yusra feel after reaching Europe?",
     "options": [
-     "to Greece",
-     "to Germany",
-     "to Turkey"
+     "safe and happy at last",
+     "unsure what to do next",
+     "proud of saving the boat"
     ],
-    "answer": 0,
-    "explain_vi": "==\"In Turkey we boarded a boat to Greece\"== → **to Greece**. __Turkey là nơi xuất phát, Germany là điểm đến cuối cùng.__"
+    "answer": 1,
+    "explain_vi": "==\"We didn't know where to go or what to do\"== → **bối rối**. __Cảm giác an toàn chỉ đến khi tới Đức.__"
    },
    {
     "type": "gap",
-    "q": "For more than three and a half ______, the sisters gave everything they had.",
-    "answer": "hours",
-    "accept": [
-     "hour"
-    ],
-    "explain_vi": "==\"For more than three and a half hours we gave everything we had\"== → **hours**. __\"three and a half\" lớn hơn 1 nên dùng danh từ số nhiều.__"
+    "q": "She didn't win gold, but she won her ______.",
+    "answer": "dignity",
+    "accept": [],
+    "explain_vi": "==\"I won something far more important\"==: ==\"My dignity\"== → **dignity** (phẩm giá). __Tóm ý: điều quan trọng hơn huy chương.__"
    },
    {
     "type": "mcq",
-    "q": "Where is Yusra's new home?",
+    "q": "Yusra is proud to stand up for ...",
     "options": [
-     "Germany",
-     "Greece",
-     "Turkey"
+     "young swimmers around the world",
+     "the people in her new home",
+     "people running from violence"
     ],
-    "answer": 0,
-    "explain_vi": "==\"We finally arrived in our new home, Germany\"== → **Germany**. __\"finally\" báo hiệu điểm đến cuối cùng.__"
+    "answer": 2,
+    "explain_vi": "==\"for all people fleeing violence\"== → **người chạy trốn bạo lực**. __Cộng đồng mới là những người đã giúp cô.__"
    }
   ]
  },
@@ -709,54 +725,55 @@
   "items": [
    {
     "type": "mcq",
-    "q": "What is John Pilley's job?",
+    "q": "How many toys does John pick at random?",
     "options": [
-     "psychology professor",
-     "vet",
-     "dog trainer"
+     "eight",
+     "three",
+     "five"
     ],
     "answer": 0,
-    "explain_vi": "==\"Psychology professor John Pilley was interested in finding out how many words a dog can learn\"== → **psychology professor**. __Nghề thường đứng ngay trước tên người.__"
+    "explain_vi": "==\"John picks eight at random\"== → **eight**. __Ba là số năm luyện tập; năm là số đồ chơi quen trong bài kiểm tra Meow.__"
    },
    {
     "type": "gap",
-    "q": "Chaser has learned 1,022 words in ______ years of intensive training.",
-    "answer": "three",
+    "q": "Chaser knows the names of ______ balls.",
+    "answer": "116",
     "accept": [
-     "3"
+     "one hundred and sixteen",
+     "one hundred sixteen"
     ],
-    "explain_vi": "==\"In three years of intensive training, Chaser has learned an astounding 1,022 words\"== → **three (3)**. __Đừng nhầm với \"seven years ago\" là lúc John tìm thấy Chaser.__"
+    "explain_vi": "==\"That's 116 balls\"== → **116**. __26 là số Frisbee, đừng nhầm.__"
    },
    {
     "type": "gap",
-    "q": "That's 116 balls, 26 ______ and over 800 cloth animals.",
-    "answer": "Frisbees",
+    "q": "John calls the new cat toy ______.",
+    "answer": "Meow",
     "accept": [
-     "frisbee"
+     "meow"
     ],
-    "explain_vi": "==\"That's 116 balls, 26 Frisbees and over 800 cloth animals\"== → **Frisbees** (đĩa ném). __Trong danh sách, mỗi con số đi kèm một danh từ số nhiều.__"
+    "explain_vi": "==\"a cat that John calls Meow\"== → **Meow**. __Tên đồ chơi nghe như tiếng mèo kêu.__"
    },
    {
     "type": "mcq",
-    "q": "Why does John never look at the toys on the mat?",
+    "q": "How does Chaser find Meow?",
     "options": [
-     "so Chaser has to understand his words",
-     "because he can't see them",
-     "so Chaser can rest"
+     "She has seen the cat toy before.",
+     "She watches where John looks.",
+     "She knows the other toys' names."
     ],
-    "answer": 0,
-    "explain_vi": "==\"to pick the right object Chaser has to actually understand what he's saying\"== → **Chaser has to understand his words**. __Từ \"so\" nối nguyên nhân với kết quả.__"
+    "answer": 2,
+    "explain_vi": "==\"by a process of elimination\"== → **loại trừ đồ đã biết tên**. __John không bao giờ nhìn đồ chơi; Meow là đồ mới.__"
    },
    {
     "type": "mcq",
-    "q": "How does Chaser find the new toy called Meow?",
+    "q": "How many tries does Chaser need to learn \"Meow\"?",
     "options": [
-     "by a process of elimination",
-     "by its smell",
-     "John points to it"
+     "three times",
+     "eight times",
+     "only once"
     ],
-    "answer": 0,
-    "explain_vi": "==\"The way to solve the puzzle is by a process of elimination\"== → **by a process of elimination** (loại trừ đồ đã biết). __Cậu cũng dùng cách loại trừ khi làm trắc nghiệm!__"
+    "answer": 2,
+    "explain_vi": "==\"After only one trial\"== → **một lần**. __Ba là số năm luyện tập; tám là số đồ chơi.__"
    }
   ]
  },
@@ -774,50 +791,54 @@
   "items": [
    {
     "type": "mcq",
-    "q": "Why didn't Asha's friend want to see Moana at the cinema?",
+    "q": "Which film did Asha's friend refuse to see at the cinema?",
     "options": [
-     "It would be full of kids, so it was embarrassing.",
-     "The tickets were too expensive.",
-     "The friend had already seen it."
+     "Lilo & Stitch",
+     "Frozen",
+     "Moana"
     ],
-    "answer": 0,
-    "explain_vi": "==\"It's gonna be full of kids and there's gonna be no adults. It's embarrassing.\"== → **full of kids, so embarrassing**. __\"gonna\" là cách nói nhanh của \"going to\".__"
+    "answer": 2,
+    "explain_vi": "==\"I refuse to go to cinemas to watch Moana\"== → **Moana**. __Lilo & Stitch là phim Asha thích số hai.__"
    },
    {
     "type": "mcq",
-    "q": "What did Asha's dad do when he had to go out?",
+    "q": "What does Asha say about her parents?",
     "options": [
-     "He recorded the end of the film.",
-     "He watched it on his phone.",
-     "He asked Asha to tell him the ending."
+     "Only her dad really likes Disney.",
+     "They think Disney is just for kids.",
+     "They both love Disney films."
     ],
-    "answer": 0,
-    "explain_vi": "==\"He would even record the end of the movie if he thought he was gonna miss it\"== → **recorded the end of the film**. __Từ \"even\" cho thấy bố cô rất mê phim Disney.__"
+    "answer": 2,
+    "explain_vi": "Mẹ ==\"secretly loves Disney movies\"==, bố cũng ==\"loved Disney movies\"== → **cả hai đều thích**. __\"Secretly\" vẫn là thích.__"
    },
    {
     "type": "gap",
-    "q": "Her number one film is The ______ King.",
-    "answer": "Lion",
-    "accept": [],
-    "explain_vi": "==\"Number one is definitely Lion King\"== → **Lion**. __Nghe tiếp \"Number two\", \"third\" để không lẫn thứ tự các phim.__"
+    "q": "Asha cried more at The Lion King than at ______.",
+    "answer": "Titanic",
+    "accept": [
+     "titanic"
+    ],
+    "explain_vi": "==\"I probably cried more at The Lion King\"== ... ==\"like Titanic\"== → **Titanic**. __Phim này không phải của Disney.__"
    },
    {
     "type": "mcq",
-    "q": "Asha cried more at The Lion King than at ...",
+    "q": "What does Asha do when she forgets the \"Ohana\" saying?",
     "options": [
-     "Titanic",
-     "Moana",
-     "Mulan"
+     "She looks it up.",
+     "She asks her mum.",
+     "She sings a song."
     ],
     "answer": 0,
-    "explain_vi": "==\"I probably cried more at The Lion King than I did in a movie like Titanic\"== → **Titanic**. __Cấu trúc so sánh: more ... than + đối tượng được so sánh.__"
+    "explain_vi": "==\"without googling it, but I'm gonna cheat\"== → **tra mạng**. __\"Cheat\" ở đây là tra Google.__"
    },
    {
     "type": "gap",
-    "q": "\"Ohana\" means ______.",
-    "answer": "family",
-    "accept": [],
-    "explain_vi": "==\"Ohana means family\"== → **family**. __Bộ phim Lilo and Stitch nói về tình cảm gia đình.__"
+    "q": "Her third favourite film is probably ______.",
+    "answer": "Mulan",
+    "accept": [
+     "mulan"
+    ],
+    "explain_vi": "==\"my third favourite Disney movie would probably be Mulan\"== → **Mulan**. __Cô thích vì muốn được giống nhân vật.__"
    }
   ]
  },
@@ -835,53 +856,54 @@
   "items": [
    {
     "type": "gap",
-    "q": "Marie Curie discovered two new elements: polonium and ______.",
-    "answer": "radium",
-    "accept": [],
-    "explain_vi": "==\"discovering two new elements – polonium and radium\"== → **radium**. __Tên nguyên tố hoá học thường có đuôi \"-ium\".__"
+    "q": "Many people's knowledge of women in ______ ends with Marie Curie.",
+    "answer": "STEM",
+    "accept": [
+     "stem"
+    ],
+    "explain_vi": "==\"many people's knowledge of women in STEM ends there\"== → **STEM** (khoa học, công nghệ, kỹ thuật, toán). __Người nói dùng từ viết tắt.__"
    },
    {
     "type": "mcq",
-    "q": "What did Meitner call the splitting of the atom?",
+    "q": "How long did it take for McClintock's work to be taken seriously?",
     "options": [
-     "nuclear fission",
-     "radiation",
-     "genetics"
+     "about two years",
+     "over 30 years",
+     "about 50 years"
     ],
-    "answer": 0,
-    "explain_vi": "==\"Meitner called this 'nuclear fission'\"== → **nuclear fission** (phân hạch hạt nhân). __Nghe từ ngay sau \"called this\".__"
+    "answer": 1,
+    "explain_vi": "==\"it took over 30 years for her work to be seriously considered\"== → **hơn 30 năm**. __Chú ý \"over\".__"
    },
    {
     "type": "gap",
-    "q": "The real discovery of DNA's double helix was made by Rosalind Franklin in the ______.",
-    "answer": "1950s",
+    "q": "Franklin's ______, Maurice Wilkins, showed her photos to Watson and Crick.",
+    "answer": "colleague",
     "accept": [
-     "fifties",
-     "the 1950s"
+     "colleagues"
     ],
-    "explain_vi": "==\"the real discovery was made by Rosalind Franklin in the 1950s\"== → **1950s**. __\"in the 1950s\" = những năm 1950, nhớ thêm s.__"
+    "explain_vi": "==\"by her colleague Maurice Wilkins\"== → **colleague** (đồng nghiệp). __Từ cần điền đứng ngay trước tên Wilkins.__"
    },
    {
     "type": "mcq",
-    "q": "Who showed Franklin's X-ray photographs to Watson and Crick?",
+    "q": "What does the speaker say about Franklin and the Nobel Prize?",
     "options": [
-     "Maurice Wilkins",
-     "Otto Hahn",
-     "Albert Einstein"
+     "She should have won it alone.",
+     "She would certainly have shared it.",
+     "She might not have been included."
     ],
-    "answer": 0,
-    "explain_vi": "==\"unknowingly shown to Watson and Crick by her colleague Maurice Wilkins\"== → **Maurice Wilkins**. __Otto Hahn làm việc cùng Meitner, không liên quan tới DNA.__"
+    "answer": 2,
+    "explain_vi": "==\"it's unsure if she would have even been included\"== → **chưa chắc có tên bà**. __Người nói không khẳng định điều gì.__"
    },
    {
     "type": "mcq",
-    "q": "Jane Goodall is best known for her work with ...",
+    "q": "What does the speaker ask viewers to do at the end?",
     "options": [
-     "chimpanzees in Tanzania",
-     "corn plants",
-     "radioactive elements"
+     "Tell their science teachers.",
+     "Say who to cover next time.",
+     "Read more about Goodall."
     ],
-    "answer": 0,
-    "explain_vi": "==\"best known for her work with chimpanzees in Tanzania\"== → **chimpanzees in Tanzania**. __Hai phương án kia là công trình của McClintock và Curie.__"
+    "answer": 1,
+    "explain_vi": "==\"let me know who you want to learn about next time\"== → **gợi ý nhà khoa học kế tiếp**. __\"Let me know\" là hãy cho tôi biết.__"
    }
   ]
  }

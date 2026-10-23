@@ -25,28 +25,26 @@
     "level": "A2",
     "skill": "listening",
     "section": "listen",
-    "q": "Before giving her tips, Sophia reminds us of the ______ Rs: Reduce, Reuse and Recycle.",
-    "explain_vi": "==\"I just want to jog your memory about the three Rs\"== → **three (3)**. __Nghe số ngay trước chữ \"Rs\"; \"jog your memory\" = nhắc lại.__",
+    "q": "Sophia suggests choosing ______ fruit and vegetables at the supermarket.",
+    "explain_vi": "==\"choosing loose fruit and vegetables at the supermarket\"== → **loose** (để rời, không bọc). __Ngược với \"packaged in plastic\".__",
     "obj": "listen",
     "type": "text",
-    "answer": "three",
-    "accept": [
-     "3"
-    ]
+    "answer": "loose",
+    "accept": []
    },
    {
     "id": "diag32",
     "level": "A2",
     "skill": "listening",
     "section": "listen",
-    "q": "What does Sophia's family use the big ice cream tubs for?",
-    "explain_vi": "==\"We use them to keep our leftover food and it works perfectly fine\"== → **keeping leftover food**. __\"leftover\" = thức ăn thừa; quần áo được nhắc ở phần recycle.__",
+    "q": "What does Sophia's family use a lot of?",
+    "explain_vi": "==\"In my family, we use a lot of ice cream tubs\"== → **ice cream tubs**, để đựng đồ ăn thừa. __Chai và túi nhựa là lời khuyên chung.__",
     "obj": "listen",
     "type": "mcq",
     "options": [
-     "carrying drinks to school",
-     "storing old clothes",
-     "keeping leftover food"
+     "reusable bottles",
+     "plastic bags",
+     "ice cream tubs"
     ],
     "answer": 2
    },
@@ -55,24 +53,24 @@
     "level": "B1",
     "skill": "listening",
     "section": "listen",
-    "q": "According to Sophia, why is reducing one of the best ways to start?",
-    "explain_vi": "==\"if you don't have waste in the first place, then we don't have the problem of disposing of it\"== → **nothing to dispose of**. __Siêu thị chỉ là ví dụ.__",
+    "q": "What does Sophia suggest before you put things in the rubbish?",
+    "explain_vi": "==\"why don't you see if you can reuse them again?\"== → **reuse**. __\"Recycle\" là chữ R thứ ba, nói sau.__",
     "obj": "listen",
     "type": "mcq",
     "options": [
-     "It is much cheaper than recycling.",
-     "If there is no waste, there is nothing to dispose of.",
-     "Supermarkets no longer sell food in plastic."
+     "See if you can reuse it.",
+     "See if it can be recycled.",
+     "See if someone else wants it."
     ],
-    "answer": 1
+    "answer": 0
    },
    {
     "id": "diag34",
     "level": "B1",
     "skill": "listening",
     "section": "listen",
-    "q": "To reuse things, Sophia keeps the gift bags or ______ she receives and uses them for someone else's present.",
-    "explain_vi": "==\"I usually keep the gift bags or the boxes and reuse them\"== → **boxes**. __Nghe danh từ sau \"or\"; túi nhựa được nói sau đó.__",
+    "q": "When Sophia gives a gift, she reuses the gift bags or ______ she got.",
+    "explain_vi": "==\"I usually keep the gift bags or the boxes and reuse them\"== → **boxes**. __Túi nhựa nói sau, dùng khi đi chợ.__",
     "obj": "listen",
     "type": "text",
     "answer": "boxes",
@@ -87,16 +85,16 @@
     "level": "B2",
     "skill": "listening",
     "section": "listen",
-    "q": "What is Sophia's attitude towards the idea of moving to Mars?",
-    "explain_vi": "==\"no matter what scientists say about moving to Mars – this is our only planet that we get to call home\"== → **no excuse for damaging Earth**. __\"no matter what\" = bác bỏ.__",
+    "q": "What does Sophia mean by giving things 'a second life'?",
+    "explain_vi": "==\"Recycling turns waste products into a new item… it gives them a second life\"== → **made into something new**. __Tặng lại người khác là \"reuse\".__",
     "obj": "listen",
     "type": "mcq",
     "options": [
-     "She thinks it will solve the problem of waste.",
-     "She is excited that scientists may make it possible.",
-     "It is no excuse for damaging Earth, our only home."
+     "They are given to another person.",
+     "They are made into something new.",
+     "They are kept and used at home."
     ],
-    "answer": 2
+    "answer": 1
    },
    {
     "id": "diag01",
@@ -828,7 +826,7 @@
   "listen_yt": {
    "yt": "hX8XTOR-WV8",
    "start": 0,
-   "end": 210,
+   "end": 240,
    "title": "Cutting down on waste",
    "channel": "British Council | LearnEnglish Teens",
    "source_url": "https://learnenglishteens.britishcouncil.org/study-break/youtubers/cutting-down-waste",
@@ -879,13 +877,13 @@
     "skill": "listening",
     "section": "listen",
     "q": "Why did Sophia first start making YouTube videos?",
-    "explain_vi": "==\"I started with YouTube as a way to document my journey from secondary school to university\"== → **journey from school to university**. __Du lịch là lí do chuyển sang blog.__",
+    "explain_vi": "==\"as a way to document my journey from secondary school to university\"== → **her move to university**. __Mẹo viết blog là phần cô định chia sẻ sau.__",
     "obj": "listen",
     "type": "mcq",
     "options": [
-     "to document her journey from school to university",
-     "to share her travels around the world",
-     "to practise speaking Italian"
+     "to film her move to university",
+     "to give tips on writing blogs",
+     "to practise speaking on camera"
     ],
     "answer": 0
    },
@@ -894,31 +892,30 @@
     "level": "B1",
     "skill": "listening",
     "section": "listen",
-    "q": "What is Sophia's first reason for choosing blogging rather than YouTube?",
-    "explain_vi": "==\"number one, it's inexpensive\"== ... ==\"you can sign up usually for free\"== → **costs very little**. __Phần mềm dựng phim là chi phí của YouTube, không phải blog.__",
+    "q": "Why did Sophia move from YouTube to blogging?",
+    "explain_vi": "==\"not just my university experience but also my travels, my thoughts on different topics\"== → **more topics**. __Giấu mặt, kết bạn là lí do cô khuyên người khác.__",
     "obj": "listen",
     "type": "mcq",
     "options": [
-     "Blogging costs very little to start.",
-     "Blogs get more followers than videos.",
-     "Editing software is free for bloggers."
+     "She didn't want to show her face.",
+     "She wanted to cover more topics.",
+     "She wanted to meet new people online."
     ],
-    "answer": 0
+    "answer": 1
    },
    {
     "id": "fin34",
     "level": "B1",
     "skill": "listening",
     "section": "listen",
-    "q": "Blogging also suits people who are camera shy or just want to remain ______.",
-    "explain_vi": "==\"if you are, for example, camera shy or you just want to remain anonymous\"== → **anonymous**. __Nghe tính từ sau \"remain\": không lộ mặt, lộ tên.__",
+    "q": "For a blog, you don't need a camera, a microphone or a ______.",
+    "explain_vi": "==\"you don't have to have a camera… a microphone, a tripod\"== → **tripod** (chân máy). __\"Editing software\" không hợp với \"a\" trước chỗ trống.__",
     "obj": "listen",
     "type": "text",
-    "answer": "anonymous",
+    "answer": "tripod",
     "accept": [
-     "anonymous.",
-     "annonymous",
-     "anonymus"
+     "a tripod",
+     "tripods"
     ]
    },
    {
@@ -926,14 +923,14 @@
     "level": "B2",
     "skill": "listening",
     "section": "listen",
-    "q": "What does Sophia suggest about making YouTube videos compared with blogging?",
-    "explain_vi": "==\"there's a lot of extra costs ... that some people are unaware of\"== ==\"it's less of a commitment\"== → **hidden costs, bigger commitment**. __Cô vẫn làm YouTube, không chê nó.__",
+    "q": "What does Sophia suggest many people don't realise about YouTube?",
+    "explain_vi": "==\"there's a lot of extra costs… that some people are unaware of\"== → **hidden costs**. __Bài không nói dựng phim lâu hay khó có người theo dõi.__",
     "obj": "listen",
     "type": "mcq",
     "options": [
-     "It is a waste of time for teenagers.",
-     "It is only for people who want to be famous.",
-     "It has hidden costs and is a bigger commitment."
+     "It takes a long time to edit.",
+     "It is hard to get followers.",
+     "It has lots of hidden costs."
     ],
     "answer": 2
    },
@@ -1655,7 +1652,7 @@
   "listen_yt": {
    "yt": "1YCOUMOBkVo",
    "start": 0,
-   "end": 210,
+   "end": 240,
    "title": "Four reasons why you should start blogging",
    "channel": "British Council | LearnEnglish Teens",
    "source_url": "https://learnenglishteens.britishcouncil.org/study-break/youtubers/four-reasons-why-you-should-start-blogging",

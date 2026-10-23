@@ -13,55 +13,55 @@
   "items": [
    {
     "type": "mcq",
-    "q": "According to the speakers, myelin is similar to...",
+    "q": "Which studies showed that repeating a movement adds layers of myelin?",
     "options": [
-     "the grey matter that processes information",
-     "insulation on electrical cables",
-     "the memory stored in our muscles"
+     "studies on dancers",
+     "studies on mice",
+     "studies on students"
     ],
     "answer": 1,
-    "explain_vi": "Bài nghe: ==Myelin is similar to insulation on electrical cables== → đáp án **B**. __Grey matter và muscle memory đều được nhắc tới nhưng không phải thứ được so sánh với myelin.__"
+    "explain_vi": "==Some recent studies in mice suggest== lặp lại động tác làm tăng lớp myelin → **studies on mice**. __Dancers và students có trong bài nhưng ở đoạn khác.__"
    },
    {
     "type": "gap",
-    "q": "In one study, researchers observed ______ students studying.",
+    "q": "Researchers watched ______ students while they were studying.",
     "answer": "260",
     "accept": [
      "two hundred and sixty",
      "two hundred sixty"
     ],
-    "explain_vi": "Bài nghe: ==researchers observed 260 students studying== → điền **260**. __Chỗ trống là số thì cậu ghi ngay bằng chữ số khi nghe để khỏi quên.__"
+    "explain_vi": "==researchers observed 260 students studying== → **260**. __Đừng nhầm với 144, số cầu thủ bóng rổ ở cuối bài.__"
    },
    {
     "type": "gap",
-    "q": "On average, the students stayed on task for only ______ minutes at a time.",
+    "q": "On average, the students stayed focused for ______ minutes at a time.",
     "answer": "6",
     "accept": [
      "six"
     ],
-    "explain_vi": "==able to stay on task for only six minutes at a time== → **6**. __Từ only cho thấy người nói nhấn mạnh thời gian tập trung rất ngắn.__"
+    "explain_vi": "==stay on task for only six minutes at a time== → **6**. __Đừng nhầm với 50 to 60: số giờ tập mỗi tuần của người giỏi.__"
    },
    {
     "type": "mcq",
-    "q": "Which was the biggest cause of distraction for the students?",
+    "q": "Why do the speakers say to start slowly?",
     "options": [
-     "Laptops",
-     "Smartphones",
-     "Facebook"
+     "Your focus only lasts a few minutes.",
+     "Slow practice adds the most myelin.",
+     "Wrong repetitions also build habits."
     ],
     "answer": 2,
-    "explain_vi": "==Laptops, smartphones and particularly Facebook== → từ **particularly** chỉ thứ gây xao nhãng nhất: **Facebook**. __Cả ba đều được nhắc, cậu phải bắt từ nhấn mạnh như particularly, especially.__"
+    "explain_vi": "==Coordination is built with repetitions, whether correct or incorrect== → tập sai cũng thành nếp. __Myelin và six minutes có trong bài nhưng không phải lý do.__"
    },
    {
     "type": "mcq",
-    "q": "What did the basketball study show?",
+    "q": "When can practising in your head help, according to the speakers?",
     "options": [
-     "Experienced players who only practised in their heads improved almost as much as those who practised physically",
-     "Physical practice was much more effective than mental practice",
-     "Only beginners improved after mental practice"
+     "once you can already do the movement",
+     "before you try the movement for real",
+     "when you practise in short sessions"
     ],
     "answer": 0,
-    "explain_vi": "Nhóm A tập thật, nhóm B chỉ tập trong đầu, và ==The intermediate and experienced players in both groups had improved by nearly the same amount== → **A**. __B là điều ta hay đoán trước, nhưng bài nghe nói ngược lại.__"
+    "explain_vi": "==once a physical motion has been established, it can be reinforced just by imagining it== → **once you can already do it**. __Short sessions là mẹo khác.__"
    }
   ]
  },
@@ -79,55 +79,54 @@
   "items": [
    {
     "type": "gap",
-    "q": "Playing music is the brain's equivalent of a full-body ______.",
-    "answer": "workout",
+    "q": "Inside a musician's brain, there's a ______ going on.",
+    "answer": "party",
     "accept": [
-     "work-out",
-     "work out"
+     "a party"
     ],
-    "explain_vi": "Bài nghe: ==playing music is the brain's equivalent of a full-body workout== → **workout**. __Sau full-body cần một danh từ; nhớ cụm cố định full-body workout.__"
+    "explain_vi": "==inside their brains, there's a party going on== → **party**. __Đừng điền lot theo thói quen; bài dùng hình ảnh bữa tiệc, pháo hoa.__"
    },
    {
     "type": "mcq",
-    "q": "What is the most obvious difference between listening to music and playing it?",
+    "q": "What is the clearest difference between playing music and listening to it?",
     "options": [
-     "Playing requires a better memory",
-     "Playing requires more attention to detail",
-     "Playing requires fine motor skills"
-    ],
-    "answer": 2,
-    "explain_vi": "==the latter requires fine motor skills== (the latter là playing) → **C**. __Memory và attention to detail xuất hiện ở đoạn sau, khi nói về lợi ích khác.__"
-   },
-   {
-    "type": "mcq",
-    "q": "More activity in the corpus callosum allows messages to...",
-    "options": [
-     "get across the brain faster and through more diverse routes",
-     "be stored with only one tag",
-     "stay in one side of the brain"
+     "Playing needs fine motor skills.",
+     "Playing needs a sense of rhythm.",
+     "Playing uses the auditory cortex."
     ],
     "answer": 0,
-    "explain_vi": "==allowing messages to get across the brain faster and through more diverse routes== → **A**. __B sai vì bài nói mỗi ký ức được gắn nhiều tag (multiple tags).__"
+    "explain_vi": "==the latter requires fine motor skills== (the latter = chơi nhạc) → **fine motor skills**. __Rhythm và auditory cortex đều có cả khi nghe nhạc.__"
+   },
+   {
+    "type": "mcq",
+    "q": "Where might musicians solve problems more creatively?",
+    "options": [
+     "in maths and in language",
+     "in sports and in painting",
+     "in study and social life"
+    ],
+    "answer": 2,
+    "explain_vi": "==in both academic and social settings== → **in study and social life**. __Maths, language và sports, painting được nhắc ở đoạn khác.__"
    },
    {
     "type": "gap",
-    "q": "Executive function includes planning, strategizing and attention to ______.",
-    "answer": "detail",
+    "q": "Executive function includes planning, ______ and attention to detail.",
+    "answer": "strategizing",
     "accept": [
-     "details"
+     "strategising"
     ],
-    "explain_vi": "==planning, strategizing, and attention to detail== → **detail**. __Cụm attention to detail rất hay gặp trong đề, cậu nên học thuộc.__"
+    "explain_vi": "==planning, strategizing, and attention to detail== → **strategizing** (lập chiến lược). __Viết strategising kiểu Anh cũng đúng.__"
    },
    {
     "type": "mcq",
-    "q": "The speaker compares the way musicians store memories to...",
+    "q": "Which memory tag does the speaker mention?",
     "options": [
-     "fireworks going off",
-     "a full-body workout",
-     "a good Internet search engine"
+     "a linguistic tag",
+     "a contextual tag",
+     "a creative tag"
     ],
-    "answer": 2,
-    "explain_vi": "Nhạc công gắn nhiều tag cho mỗi ký ức, ==like a good Internet search engine== → **C**. __Fireworks và workout cũng là phép so sánh trong bài nhưng nói về chuyện khác.__"
+    "answer": 1,
+    "explain_vi": "==an audio tag, and a contextual tag== → **contextual**. __Linguistic và creative nói về hai bán cầu não ở đoạn trước, không phải tag.__"
    }
   ]
  },
@@ -145,56 +144,57 @@
   "items": [
    {
     "type": "mcq",
-    "q": "Where were the plastic bottles 'conceived'?",
+    "q": "How does the speaker tell the bottles' story?",
     "options": [
-     "in a recycling plant",
-     "in a landfill",
-     "in an oil refinery"
+     "as a news report",
+     "as a lab report",
+     "as a hero's tale"
     ],
     "answer": 2,
-    "explain_vi": "==The heroes of our story were conceived in an oil refinery== → **C**. __Recycling plant và landfill là nơi các chai kết thúc hành trình, không phải nơi bắt đầu.__"
+    "explain_vi": "==The heroes of our story were conceived in an oil refinery== → chai được kể như nhân vật: **a hero's tale**. __Bài còn nói their bodies, siblings.__"
    },
    {
     "type": "gap",
-    "q": "It could take bottle number one about ______ years to decompose.",
+    "q": "Bottle one could take about ______ years to break down.",
     "answer": "1,000",
     "accept": [
      "1000",
      "a thousand",
-     "one thousand"
+     "one thousand",
+     "thousand"
     ],
-    "explain_vi": "==It could take our first bottle an agonizing 1,000 years to decompose== → **1,000**. __Gặp số lớn, cậu ghi ngay bằng chữ số.__"
+    "explain_vi": "==an agonizing 1,000 years to decompose== → **1,000**. __Đừng điền 450 theo hiểu biết chung; nghe đúng số người nói.__"
    },
    {
     "type": "mcq",
-    "q": "What is 'leachate'?",
+    "q": "How long is bottle two lost at sea before the vortex pulls it in?",
     "options": [
-     "a harmful liquid formed when rainwater flows through the waste",
-     "the plastic pellets made from oil and gas",
-     "the cloudy plastic soup in the ocean"
+     "for months",
+     "for weeks",
+     "for decades"
     ],
     "answer": 0,
-    "explain_vi": "Nước mưa chảy qua rác và hút các chất tan trong nước, tạo thành ==a harmful stew called leachate== → **A**. __Plastic soup là hình ảnh ở đại dương (chai số hai), cậu đừng nhầm.__"
+    "explain_vi": "==After months lost at sea, it's slowly drawn into a massive vortex== → **for months**. __Decades, years là thời gian phân huỷ, nói về chai số một.__"
    },
    {
     "type": "gap",
-    "q": "Bottle number two ends up in the Great Pacific Garbage ______.",
-    "answer": "Patch",
+    "q": "Lanternfish are eaten by ______, which are eaten by tuna.",
+    "answer": "squid",
     "accept": [
-     "patch"
+     "squids"
     ],
-    "explain_vi": "Bài nghe: ==the Great Pacific Garbage Patch== → **Patch**. __Đây là tên riêng nên các từ đều viết hoa.__"
+    "explain_vi": "==lanternfish, which are eaten by squid, which are eaten by tuna== → **squid** (mực). __Seabirds và tuna cũng có trong chuỗi, nghe đúng thứ tự.__"
    },
    {
     "type": "mcq",
-    "q": "How do toxins from ocean plastic reach humans?",
+    "q": "What happens first to bottle three at the plant?",
     "options": [
-     "through groundwater near landfills",
-     "through fish such as tuna, which people then eat",
-     "through seabirds that get entangled in the plastic"
+     "It is cut into pieces.",
+     "It is squeezed flat.",
+     "It is melted in molds."
     ],
     "answer": 1,
-    "explain_vi": "Chất độc đi ==up the food chain== tới cá ngừ (tuna), ==which are then eaten by us== → **B**. __Groundwater là chuyện ở bãi rác; seabirds bị mắc kẹt chứ không truyền độc cho người.__"
+    "explain_vi": "==A truck brings it to a plant where it's squeezed flat== → **squeezed flat**. __Shredded là bước sau; melted in molds là lúc làm chai mới.__"
    }
   ]
  },
@@ -212,54 +212,54 @@
   "items": [
    {
     "type": "mcq",
-    "q": "How did the speaker feel when she got her daughter's text?",
+    "q": "What did Rebecca's text say?",
     "options": [
-     "It made her nervous before her talk",
-     "It reminded her of her first TED talk",
-     "It was like getting a hug"
+     "Mom, good luck!",
+     "Mom, you will rock.",
+     "Mom, I'm proud of you."
     ],
-    "answer": 2,
-    "explain_vi": "Con gái nhắn 'Mom, you will rock' và bà nói ==It was like getting a hug== → **C**. __TED talk đầu tiên được nhắc ngay sau đó nhưng không phải cảm xúc khi nhận tin nhắn.__"
+    "answer": 1,
+    "explain_vi": "==Her text said, Mom, you will rock.== → **Mom, you will rock**. __Good luck là ý của tin nhắn, nhưng chữ con gái viết là rock.__"
    },
    {
     "type": "gap",
-    "q": "In 1996, when she gave her first TED talk, her daughter Rebecca was ______ years old.",
+    "q": "In 1996, her daughter Rebecca was ______ years old.",
     "answer": "5",
     "accept": [
      "five"
     ],
-    "explain_vi": "==1996, when I gave my first TED talk, Rebecca was five years old== → **5**. __Đừng nhầm với 20, tuổi hiện nay của con gái, được nói ở câu sau.__"
+    "explain_vi": "==Rebecca was five years old and she was sitting right there in the front row== → **5**. __Đừng nhầm với 20, tuổi Rebecca năm 2012.__"
    },
    {
     "type": "gap",
-    "q": "Over the past ______ years, she has studied technologies of mobile communication.",
+    "q": "She has studied mobile communication for ______ years.",
     "answer": "15",
     "accept": [
      "fifteen"
     ],
-    "explain_vi": "==Over the past 15 years, I've studied technologies of mobile communication== → **15**. __Bài có nhiều số (1996, 5, 20, 15), cậu ghi từng số kèm từ khoá.__"
+    "explain_vi": "==Over the past 15 years, I've studied technologies of mobile communication== → **15**. __Không tự tính 1996 đến 2012; nghe đúng số người nói.__"
    },
    {
     "type": "mcq",
-    "q": "According to the speaker, the little devices in our pockets...",
+    "q": "What 'new skill' do people tell her about?",
     "options": [
-     "only change what we do",
-     "change not only what we do but also who we are",
-     "help us make eye contact while we text"
-    ],
-    "answer": 1,
-    "explain_vi": "==they don't only change what we do, they change who we are== → **B**. __A chỉ đúng một nửa; C là 'kỹ năng mới' bà nói với giọng mỉa mai.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What do children complain about?",
-    "options": [
-     "not having their parents' full attention",
-     "not being allowed to text during classes",
-     "not having their own phones"
+     "making eye contact while texting",
+     "texting under the table in class",
+     "doing email in board meetings"
     ],
     "answer": 0,
-    "explain_vi": "Bố mẹ nhắn tin cả lúc ăn sáng, ăn tối nên ==their children complain about not having their parents' full attention== → **A**. __B lấy từ during classes, nhưng câu đó nói về người lớn và sinh viên.__"
+    "explain_vi": "==the important new skill of making eye contact while you're texting== → **eye contact**. __Classes, board meetings là nơi người ta nhắn tin.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What does she notice about the children who complain?",
+    "options": [
+     "They text at dinner, too.",
+     "They sleep with phones, too.",
+     "They ignore each other, too."
+    ],
+    "answer": 2,
+    "explain_vi": "==these same children deny each other their full attention== → **They ignore each other, too**. __Nhắn tin bữa tối là bố mẹ; ngủ cùng điện thoại là Rebecca.__"
    }
   ]
  },
@@ -277,50 +277,50 @@
   "items": [
    {
     "type": "gap",
-    "q": "Exercise can protect your brain from conditions like depression, Alzheimer's disease or ______.",
-    "answer": "dementia",
+    "q": "Moving your body is good right away for your mood and your ______.",
+    "answer": "focus",
     "accept": [],
-    "explain_vi": "==like depression, Alzheimer's disease or dementia== → **dementia** (chứng sa sút trí tuệ). __Với chuỗi liệt kê A, B or C, chỗ trống thường là mục cuối sau or.__"
+    "explain_vi": "==including your mood and your focus== → **focus**. __Nghe từ cuối sau and your; mood được nói trước.__"
    },
    {
     "type": "mcq",
-    "q": "Which part of the brain is right behind your forehead?",
+    "q": "What does the speaker show the audience?",
     "options": [
-     "the hippocampus",
-     "the prefrontal cortex",
-     "the temporal lobe"
+     "a scan of her brain",
+     "a brain cell recording",
+     "a real human brain"
     ],
-    "answer": 1,
-    "explain_vi": "==The first is the prefrontal cortex, right behind your forehead== → **B**. __Hippocampus nằm trong temporal lobe; cả hai được nhắc ngay sau nên dễ gây nhiễu.__"
+    "answer": 2,
+    "explain_vi": "==So here is a real preserved human brain.== → **a real human brain**. __Ghi hoạt động tế bào não là việc bà làm trong phòng thí nghiệm.__"
    },
    {
     "type": "gap",
-    "q": "The prefrontal cortex is critical for decision-making, focus, attention and your ______.",
+    "q": "The prefrontal cortex is key for decision-making, attention and your ______.",
     "answer": "personality",
     "accept": [],
-    "explain_vi": "==decision-making, focus, attention and your personality== → **personality**. __Sau your cần danh từ; nghe kỹ từ cuối của chuỗi liệt kê.__"
+    "explain_vi": "==decision-making, focus, attention and your personality== → **personality**. __Trí nhớ dài hạn là việc của hippocampus, không phải vùng này.__"
    },
    {
     "type": "mcq",
-    "q": "What is the hippocampus important for?",
+    "q": "What was her research about before she changed it?",
     "options": [
-     "making decisions and focusing",
-     "forming and keeping new long-term memories for facts and events",
-     "recording the activity of single brain cells"
+     "how exercise changes the brain",
+     "how lasting memories form",
+     "how the brain makes decisions"
     ],
     "answer": 1,
-    "explain_vi": "Hippocampus giúp ==form and retain new long-term memories for facts and events== → **B**. __A là chức năng của prefrontal cortex; C là việc bà làm trong phòng thí nghiệm.__"
+    "explain_vi": "==your first kiss, or the moment your first child was born== → khoảnh khắc ngắn thành ký ức. __Exercise là hướng bà chuyển sang sau này.__"
    },
    {
     "type": "mcq",
-    "q": "What 'very unusual' thing did she do a few years ago?",
+    "q": "Why was it unusual for her to switch her research?",
     "options": [
-     "She started recording individual brain cells",
-     "She became a professor of neuroscience",
-     "She completely switched her research program"
+     "Her memory work was going well.",
+     "She had just become a professor.",
+     "Her lab had found nothing new."
     ],
-    "answer": 2,
-    "explain_vi": "==I did something very unusual in science== rồi ==I decided to completely switch my research program== → **C**. __A và B là việc bà đã làm từ trước, không phải điều bất thường.__"
+    "answer": 0,
+    "explain_vi": "==I was actually at the height of all the memory work== → **Her memory work was going well**. __Bà đã là full professor từ trước.__"
    }
   ]
  },
@@ -338,54 +338,54 @@
   "items": [
    {
     "type": "gap",
-    "q": "Tourists have damaged famous sites, from the pyramids of Ancient Egypt to Angkor Wat in ______.",
-    "answer": "Cambodia",
+    "q": "The travel agency in the sketch is called Jolly ______.",
+    "answer": "Journey",
     "accept": [
-     "cambodia"
+     "journey"
     ],
-    "explain_vi": "==From the pyramids of Ancient Egypt to Angkor Wat in Cambodia== → **Cambodia**. __Tên nước viết hoa chữ cái đầu; Angkor Wat ở ngay cạnh Việt Nam.__"
+    "explain_vi": "==Welcome to Jolly Journey. How can I help?== → **Journey**. __Tên riêng nên viết hoa chữ cái đầu.__"
    },
    {
     "type": "mcq",
-    "q": "What does the real estate agent say about the rentals?",
+    "q": "How many rentals are holiday rentals, says the real estate agent?",
     "options": [
-     "Most of them are cheap for local workers",
-     "They are only open to tourists in summer",
-     "More than half of them are holiday rentals"
-    ],
-    "answer": 2,
-    "explain_vi": "==More than half of the rentals are holiday rentals== → **C**. __Ngay sau đó bài nói người dân khó thuê nhà, nên A sai.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What problem does overtourism cause for local people in places like Majorca?",
-    "options": [
-     "They have to pay a tourist tax",
-     "It has become really hard for them to buy or rent a house",
-     "Their traditional festivals have been banned"
-    ],
-    "answer": 1,
-    "explain_vi": "==it's become really hard for locals to buy a house or rent== → **B**. __Tourist tax do du khách trả, không phải người dân địa phương.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What is a 'tourist tax'?",
-    "options": [
-     "a small fee paid by travellers when they visit certain holiday destinations",
-     "a limit on the number of visitors to famous sites",
-     "a fine for tourists who damage monuments"
+     "more than half",
+     "about a quarter",
+     "almost all of them"
     ],
     "answer": 0,
-    "explain_vi": "==a small fee paid by travellers when they visit certain holiday destinations== → **A**. __B cũng là một giải pháp trong bài, nhưng đó là giới hạn số khách chứ không phải thuế.__"
+    "explain_vi": "==More than half of the rentals are holiday rentals== → **more than half**. __Hệ quả là giá thuê quá cao với người dân và người lao động.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What does the Majorca resident say is happening to workers?",
+    "options": [
+     "They are giving up old jobs.",
+     "They are leaving the island.",
+     "They are serving only tourists."
+    ],
+    "answer": 1,
+    "explain_vi": "==Workers are being driven off the island.== → **They are leaving the island**. __Bỏ nghề cũ, phục vụ du khách là ý phóng viên nói trước đó.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What will Bali's tourist tax pay for, says the government?",
+    "options": [
+     "cheaper homes for local workers",
+     "repairing damaged monuments",
+     "nature and infrastructure"
+    ],
+    "answer": 2,
+    "explain_vi": "==will go towards conservation and infrastructure== → **nature and infrastructure**. __Nhà ở và di tích là vấn đề trong bài, không phải mục đích của thuế.__"
    },
    {
     "type": "gap",
-    "q": "Visitors to Bali will have to pay $______.",
-    "answer": "15",
+    "q": "Experts say tourists should try to stay for more than just a ______.",
+    "answer": "night",
     "accept": [
-     "fifteen"
+     "one night"
     ],
-    "explain_vi": "==visitors to Bali will have to pay $15== → **15**. __Chú ý ký hiệu tiền và con số đi ngay sau tên địa danh.__"
+    "explain_vi": "==trying to stay for more than just a night== → **night**. __Các lời khuyên khác: tôn trọng văn hoá, đến nơi ít người biết.__"
    }
   ]
  },
@@ -403,52 +403,54 @@
   "items": [
    {
     "type": "gap",
-    "q": "Gabriella's family moves to the US from Peru when she is ______ years old.",
+    "q": "Gabriella's family moves from Peru to the US when she is ______ years old.",
     "answer": "2",
     "accept": [
      "two"
     ],
-    "explain_vi": "==from Peru when she's two-years old== → **2**. __Peru là thông tin gây nhiễu; câu hỏi chỉ cần tuổi.__"
+    "explain_vi": "==from Peru when she's two-years old== → **2**. __Peru và US là thông tin phụ; chỗ trống cần tuổi.__"
    },
    {
     "type": "mcq",
-    "q": "What type of bilingual is Gabriella's teenage brother likely to be?",
+    "q": "Which type of bilingual might Gabriella's teenage brother be?",
     "options": [
+     "a subordinate bilingual",
      "a compound bilingual",
-     "a coordinate bilingual",
-     "a subordinate bilingual"
+     "a coordinate bilingual"
     ],
-    "answer": 1,
-    "explain_vi": "==Her teenage brother, on the other hand, might be a coordinate bilingual== → **B**. __Compound là Gabriella, subordinate là bố mẹ: cậu ghi tên người kèm kiểu song ngữ.__"
+    "answer": 2,
+    "explain_vi": "==Her teenage brother, on the other hand, might be a coordinate bilingual== → **coordinate**. __Compound là Gabriella, subordinate là bố mẹ.__"
    },
    {
     "type": "gap",
-    "q": "Brain imaging shows that the brain's left ______ is more dominant.",
-    "answer": "hemisphere",
-    "accept": [],
-    "explain_vi": "==the brain's left hemisphere is more dominant== → **hemisphere** (bán cầu não). __Khi nói về não, sau left hoặc right thường là hemisphere.__"
+    "q": "Adults who learn a second language show less emotional ______.",
+    "answer": "bias",
+    "accept": [
+     "biases"
+    ],
+    "explain_vi": "==people who learned a second language in adulthood exhibit less emotional bias== → **bias**. __Câu này nói về người học khi đã lớn.__"
    },
    {
     "type": "mcq",
-    "q": "Which benefit of being bilingual is mentioned?",
+    "q": "By how much can bilingualism delay Alzheimer's?",
     "options": [
-     "It can help delay diseases like Alzheimer's and dementia",
-     "It always makes people smarter",
-     "It removes all emotional bias in adults"
+     "up to five years",
+     "up to two years",
+     "up to three years"
     ],
     "answer": 0,
-    "explain_vi": "==can also help delay the onset of diseases, like Alzheimer's and dementia== → **A**. __Cẩn thận với từ tuyệt đối như always, all: bài chỉ nói less emotional bias.__"
+    "explain_vi": "==like Alzheimer's and dementia by as much as five years== → **five years**. __Two là tuổi của Gabriella khi chuyển nhà.__"
    },
    {
     "type": "mcq",
-    "q": "How was bilingualism seen before the 1960s?",
+    "q": "Why did people once think bilingualism slowed children down?",
     "options": [
-     "as a sign of intelligence",
-     "as normal for most children",
-     "as a handicap"
+     "Children mixed up two accents.",
+     "Separating languages took energy.",
+     "Children learned with less emotion."
     ],
-    "answer": 2,
-    "explain_vi": "==Before the 1960s, bilingualism was considered a handicap== → **C**. __Mốc thời gian 1960s cho biết đây là quan điểm cũ, ngày nay đã khác.__"
+    "answer": 1,
+    "explain_vi": "==spend too much energy distinguishing between languages== → **Separating languages took energy**. __Bài nói quan điểm này dựa trên flawed studies.__"
    }
   ]
  },
@@ -466,52 +468,52 @@
   "items": [
    {
     "type": "mcq",
-    "q": "What does the speaker say about the quote 'A lie can travel halfway around the world...'?",
+    "q": "What does the speaker say about outlets like Reuters in the past?",
     "options": [
-     "It was first printed by Reuters",
-     "It comes from a joke article in a medical journal",
-     "Mark Twain may never have said it"
+     "They were the main source of world news",
+     "They were far less common than today",
+     "They collected all their news first-hand"
     ],
-    "answer": 2,
-    "explain_vi": "==There's reason to doubt that Mark Twain ever said this at all== → **C**. __Reuters và tạp chí y khoa có trong bài nhưng thuộc các ví dụ khác.__"
+    "answer": 1,
+    "explain_vi": "==Outlets like Reuters and the Associated Press ... were relatively rare compared to today== → **B**. __Tự thu thập tin và đưa tin toàn cầu là việc của các báo, đài lớn.__"
    },
    {
     "type": "mcq",
-    "q": "In circular reporting, what does publication A do after publication B reprints its false story?",
+    "q": "What was the article in the British Medical Journal about?",
     "options": [
-     "It cites publication B as the source",
-     "It checks the facts with publication B",
-     "It removes the story"
+     "whether vaccines given to children cause autism",
+     "diseases spreading among unvaccinated children",
+     "energy teenagers use playing computer games"
     ],
-    "answer": 0,
-    "explain_vi": "==publication A then cites B as the source== → **A**. __Hãy hình dung vòng tròn: A dẫn B, B lại lấy từ A, nên tin sai trông như đã được kiểm chứng.__"
+    "answer": 2,
+    "explain_vi": "Bài báo đùa tên ==Energy Expenditure in Adolescents Playing New Generation Computer Games== → **C**. __Vắc-xin và bệnh dịch thuộc ví dụ bài báo năm 1998 ngay trước đó.__"
    },
    {
     "type": "gap",
-    "q": "A single pseudoscientific paper published in ______ started an anti-vaccination movement.",
-    "answer": "1998",
-    "accept": [],
-    "explain_vi": "==the 1998 publication of a single pseudoscientific paper== → **1998**. __Năm thường được đọc là nineteen ninety-eight; cậu viết bằng chữ số.__"
-   },
-   {
-    "type": "gap",
-    "q": "The joke article has been referenced in serious science publications over ______ times.",
+    "q": "Science publications have cited the BMJ article over ______ times.",
     "answer": "400",
     "accept": [
      "four hundred"
     ],
-    "explain_vi": "==referenced in serious science publications over 400 times== → **400**. __Over nghĩa là hơn, nhưng chỗ trống chỉ cần con số.__"
+    "explain_vi": "==has been referenced in serious science publications over 400 times== → **400**. __Gặp chỗ trống là số, cậu ghi ngay bằng chữ số khi nghe.__"
+   },
+   {
+    "type": "gap",
+    "q": "Our desire for quick ______ may be stronger than our wish to be sure.",
+    "answer": "answers",
+    "accept": [],
+    "explain_vi": "==our desire for quick answers may overpower the desire to be certain== → **answers**. __Information cũng được nhắc ngay trước, nhưng đi với quick ở câu này là answers.__"
    },
    {
     "type": "mcq",
     "q": "Which piece of advice does the speaker give?",
     "options": [
-     "Trust a fact if many websites repeat it",
-     "Use wiki pages for quick information",
-     "Trace the original source of a report"
+     "look for criticism of claims that seem suspicious",
+     "check if several outlets report the same story",
+     "trust respected journals such as the British Medical Journal"
     ],
-    "answer": 2,
-    "explain_vi": "Lời khuyên cuối bài có ==tracing the original source of a report== → **C**. __A và B chính là nguyên nhân gây ra circular reporting được nói trong bài.__"
+    "answer": 0,
+    "explain_vi": "==searching for criticisms of suspicious information== → **A**. __Nhiều báo cùng đưa một tin sai và bài đùa trên BMJ chính là các bẫy bài vừa kể.__"
    }
   ]
  },
@@ -529,51 +531,48 @@
   "items": [
    {
     "type": "gap",
-    "q": "According to legend, Shennong accidentally poisoned himself ______ times.",
-    "answer": "72",
-    "accept": [
-     "seventy-two",
-     "seventy two"
-    ],
-    "explain_vi": "==the weary divine farmer Shennong accidentally poisoned himself 72 times== → **72**. __Seventy-two dễ nghe nhầm với seventeen, cậu chú ý âm cuối.__"
+    "q": "A leaf drifted into Shennong's ______ and saved his life.",
+    "answer": "mouth",
+    "accept": [],
+    "explain_vi": "Truyền thuyết kể chiếc lá ==drifted into his mouth== và cứu sống ông → **mouth**. __Đừng điền cup theo thói quen: trong bài, lá rơi vào miệng chứ không vào cốc.__"
    },
    {
     "type": "mcq",
-    "q": "According to archaeological evidence, when was tea first cultivated?",
+    "q": "What does the comparison with the Great Pyramids show?",
     "options": [
-     "as early as 6,000 years ago",
-     "about 1,500 years ago",
-     "in the 9th century"
-    ],
-    "answer": 0,
-    "explain_vi": "==tea was first cultivated there as early as 6,000 years ago== → **A**. __1,500 năm trước là lúc trà thành đồ uống; thế kỷ 9 là khi trà sang Nhật.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Who brought the first tea plant to Japan?",
-    "options": [
-     "Dutch traders",
-     "a Japanese monk",
-     "Queen Catherine of Braganza"
+     "Tea first became a drink around that time",
+     "Tea was grown 1,500 years before them",
+     "Shennong found tea around that time"
     ],
     "answer": 1,
-    "explain_vi": "==a Japanese monk brought the first tea plant to Japan== → **B**. __Thương nhân Hà Lan đưa trà sang châu Âu, còn Catherine là quý tộc Bồ Đào Nha lấy vua Anh.__"
+    "explain_vi": "Trà được trồng từ 6.000 năm trước, ==1,500 years before the pharaohs built the Great Pyramids== → **B**. __Con số 1,500 còn xuất hiện lần nữa: trà thành đồ uống 1.500 năm trước.__"
    },
    {
-    "type": "gap",
-    "q": "Tea was one of three essential Chinese export goods, along with porcelain and ______.",
-    "answer": "silk",
-    "accept": [],
-    "explain_vi": "==three essential Chinese export goods, along with porcelain and silk== → **silk**. __Trong chuỗi liệt kê, từ cần điền thường nằm ngay sau and.__"
-   },
-   {
-    "type": "gap",
-    "q": "By 1700, tea in Europe sold for ______ times the price of coffee.",
-    "answer": "10",
-    "accept": [
-     "ten"
+    "type": "mcq",
+    "q": "Before it became a drink, how was tea used?",
+    "options": [
+     "pressed into small cakes for carrying",
+     "mixed as a powder with hot water",
+     "eaten as a vegetable or in porridge"
     ],
-    "explain_vi": "==By 1700, tea in Europe sold for ten times the price of coffee== → **10**. __Đừng nhầm với các năm 1700, 1661 xuất hiện gần đó.__"
+    "answer": 2,
+    "explain_vi": "==It was eaten as a vegetable or cooked with grain porridge== → **C**. __Ép bánh và pha bột với nước nóng (matcha) là những cách uống trà về sau.__"
+   },
+   {
+    "type": "gap",
+    "q": "China had nearly all of the world's tea ______.",
+    "answer": "trees",
+    "accept": [
+     "tree"
+    ],
+    "explain_vi": "Trung Quốc có ==a virtual monopoly on the world's tea trees== → **trees**. __Trade nghe hợp lý nhưng người nói dùng trees: nghe kỹ từ cuối câu.__"
+   },
+   {
+    "type": "gap",
+    "q": "Catherine of Braganza married the English king in ______.",
+    "answer": "1661",
+    "accept": [],
+    "explain_vi": "Catherine ==married King Charles II in 1661== → **1661**. __Gần đó còn có mốc early 1600s khi thương nhân Hà Lan đưa trà sang châu Âu.__"
    }
   ]
  },
@@ -591,50 +590,50 @@
   "items": [
    {
     "type": "gap",
-    "q": "The candle problem was created in ______ by Karl Duncker.",
+    "q": "The candle problem was created in ______.",
     "answer": "1945",
     "accept": [],
-    "explain_vi": "Bài nghe: ==created in 1945== bởi Karl Duncker → **1945**. __Năm thường được nói ngay trước tên người, cậu ghi lại ngay.__"
+    "explain_vi": "Bài toán cây nến ==created in 1945== bởi Karl Duncker → **1945**. __Năm thường đứng ngay trước tên người, cậu ghi bằng chữ số.__"
    },
    {
     "type": "mcq",
-    "q": "What does the speaker say about melting the side of the candle and sticking it to the wall?",
+    "q": "How long do most people need to find the solution?",
     "options": [
-     "It is the solution most people find after 5 to 10 minutes",
-     "It is an awesome idea, but it doesn't work",
-     "It only works if you use the thumbtacks too"
+     "three and a half minutes",
+     "five or ten minutes",
+     "about twenty minutes"
     ],
     "answer": 1,
-    "explain_vi": "Người nói nhận xét ==It's an awesome idea. Doesn't work.== → **B**. __A là câu ngay sau đó, nói về lời giải thật: dùng chiếc hộp đựng đinh.__"
+    "explain_vi": "==after five or ten minutes, most people figure out the solution== → **B**. __Ba phút rưỡi là kết quả thí nghiệm sau; 20 là số đô la tiền thưởng.__"
    },
    {
     "type": "gap",
-    "q": "The solution is to see the box not only as a container for the tacks but also as a ______ for the candle.",
+    "q": "The box can also work as a ______ for the candle.",
     "answer": "platform",
     "accept": [],
-    "explain_vi": "==as a platform for the candle== → **platform**. __Vượt qua functional fixedness nghĩa là nhìn đồ vật với một chức năng mới.__"
+    "explain_vi": "Chiếc hộp không chỉ đựng đinh mà còn là ==a platform for the candle== → **platform**. __Nhìn đồ vật với chức năng mới là cách vượt qua functional fixedness.__"
    },
    {
     "type": "mcq",
-    "q": "Glucksberg told the first group he was timing them in order to...",
+    "q": "What did the fastest person of all win?",
     "options": [
-     "decide who would win 20 dollars",
-     "find the fastest person in the room",
-     "establish norms for how long the problem usually takes"
+     "$20",
+     "$5",
+     "$25"
+    ],
+    "answer": 0,
+    "explain_vi": "==If you're the fastest of everyone ... you get $20== → **A**. __5 đô là thưởng cho nhóm 25% nhanh nhất; 25 là phần trăm, không phải tiền.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What does the result of the experiment suggest?",
+    "options": [
+     "The money helped people be more creative",
+     "The first group simply tried less hard",
+     "The reward made people think less well"
     ],
     "answer": 2,
-    "explain_vi": "Với nhóm thứ nhất: ==I'm going to time you to establish norms== → **C**. __A và B là lời hứa thưởng dành cho nhóm thứ hai.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What was the result for the group that was offered money?",
-    "options": [
-     "They solved the problem three and a half minutes faster",
-     "They took, on average, three and a half minutes longer",
-     "They solved it in the same time as the other group"
-    ],
-    "answer": 1,
-    "explain_vi": "==It took them, on average, three and a half minutes longer== → **B**. __Kết quả ngược với điều ta đoán; nghe rõ longer chứ không phải faster.__"
+    "explain_vi": "Nhóm được hứa thưởng ==took them, on average, three and a half minutes longer== nên tiền thưởng làm họ nghĩ kém đi → **C**. __Kết quả ngược với điều người ta thường tin.__"
    }
   ]
  },
@@ -652,27 +651,25 @@
   "items": [
    {
     "type": "gap",
-    "q": "She went to summer camp for the first time when she was ______ years old.",
-    "answer": "9",
-    "accept": [
-     "nine"
-    ],
-    "explain_vi": "==When I was nine years old I went off to summer camp for the first time== → **9**. __Câu đầu của bài thường chứa đáp án câu đầu tiên, cậu tập trung ngay từ đầu.__"
+    "q": "In her family, reading was the primary ______ activity.",
+    "answer": "group",
+    "accept": [],
+    "explain_vi": "==reading was the primary group activity== → **group**. __Cô nói điều này nghe có vẻ khó gần, nhưng thật ra là một cách khác để gần gũi nhau.__"
    },
    {
     "type": "mcq",
-    "q": "Before camp, what did she imagine it would be like?",
+    "q": "What was camp really like, according to her?",
     "options": [
-     "girls sitting together in a cabin, reading books",
-     "a noisy party with a cheer every day",
-     "a place where everyone learns to be outgoing"
+     "a party, but with no alcohol",
+     "a cabin of girls reading quietly",
+     "a group spelling game every day"
     ],
     "answer": 0,
-    "explain_vi": "==I had a vision of 10 girls sitting in a cabin cozily reading books== → **A**. __B là trại hè trong thực tế, không phải điều cô tưởng tượng.__"
+    "explain_vi": "==it was more like a keg party without any alcohol== → **A**. __Các cô bé đọc sách trong cabin chỉ là điều cô tưởng tượng; bài cổ vũ đánh vần mới là chuyện hằng ngày.__"
    },
    {
     "type": "gap",
-    "q": "The coolest girl in the bunk asked her: 'Why are you being so ______?'",
+    "q": "The coolest girl asked: 'Why are you being so ______?'",
     "answer": "mellow",
     "accept": [],
     "explain_vi": "==Why are you being so mellow?== → **mellow** (trầm lặng), trái nghĩa với rowdy. __Người nói giải thích nghĩa ngay sau đó, cậu nghe tiếp để chắc chắn.__"
@@ -682,22 +679,22 @@
     "q": "The counselor said they should all work very hard to be...",
     "options": [
      "rowdy",
-     "outgoing",
-     "mellow"
+     "social",
+     "outgoing"
     ],
-    "answer": 1,
-    "explain_vi": "Người phụ trách ==said we should all work very hard to be outgoing== → **B**. __Rowdy có trong bài cổ vũ, mellow là lời cô bạn: cả ba từ đều xuất hiện nên phải nghe đúng người nói.__"
+    "answer": 2,
+    "explain_vi": "Người phụ trách ==said we should all work very hard to be outgoing== → **C**. __Rowdy có trong bài cổ vũ, social là lời cô nói về gia đình mình.__"
    },
    {
     "type": "mcq",
-    "q": "What did she do with her books?",
+    "q": "Why did she feel guilty about the books?",
     "options": [
-     "She read them every evening after the cheer",
-     "She gave them to the coolest girl in the bunk",
-     "She put them in their suitcase under her bed for the rest of the summer"
+     "Her mother had packed them for her",
+     "The books seemed to be calling her",
+     "The counselor told her not to read"
     ],
-    "answer": 2,
-    "explain_vi": "==I put them under my bed, and there they stayed for the rest of the summer== → **C**. __Cô còn nói mình thấy có lỗi (guilty) với những cuốn sách.__"
+    "answer": 1,
+    "explain_vi": "Cô thấy sách ==needed me somehow== và đang gọi mình, như bị bỏ rơi → **B**. __Mẹ xếp sách là chi tiết đầu bài, không phải lý do cô thấy có lỗi.__"
    }
   ]
  },
@@ -715,52 +712,50 @@
   "items": [
    {
     "type": "gap",
-    "q": "In ______, a Spanish eye doctor, Jose Ignacio Barraquer Moner, was fed up with glasses.",
+    "q": "In ______, a Spanish eye doctor was tired of glasses.",
     "answer": "1948",
     "accept": [],
-    "explain_vi": "==In 1948, Spanish ophthalmologist Jose Ignacio Barraquer Moner was fed up with glasses== → **1948**. __Câu mở đầu có năm và tên người; cậu ghi năm trước.__"
+    "explain_vi": "==In 1948, Spanish ophthalmologist Jose Ignacio Barraquer Moner was fed up with glasses== → **1948**. __Năm đứng ngay đầu câu mở bài, cậu ghi bằng chữ số.__"
    },
    {
     "type": "mcq",
-    "q": "In people with myopia (short-sightedness), a steep cornea focuses light...",
+    "q": "How did Barraquer first reshape the slice of cornea?",
     "options": [
-     "just short of the retina",
-     "too far beyond the retina",
-     "with two different curvatures"
+     "He shaped it with a flat, wide blade",
+     "He froze it and used a tiny lathe",
+     "He lifted it and used a laser beam"
+    ],
+    "answer": 1,
+    "explain_vi": "Ông nhúng lát giác mạc vào ==liquid nitrogen== rồi gọt bằng ==a miniature lathe== → **B**. __Lưỡi dao phẳng và tia laser là các bước của phẫu thuật ngày nay.__"
+   },
+   {
+    "type": "gap",
+    "q": "As we age, the ______ in the lens slowly make it bigger.",
+    "answer": "proteins",
+    "accept": [
+     "protein"
+    ],
+    "explain_vi": "==As the proteins in the lens age, they slowly increase its size== → **proteins**. __Nghe kỹ chủ ngữ: chính proteins làm thấu kính to dần, tới tuổi ngoài 40 thì khó đổi tiêu điểm.__"
+   },
+   {
+    "type": "mcq",
+    "q": "How do excimer lasers remove tissue from the cornea?",
+    "options": [
+     "They evaporate it without overheating",
+     "They freeze it so it can be cut away",
+     "They lift it off as a thin flap first"
     ],
     "answer": 0,
-    "explain_vi": "==a steep cornea focuses light just short of the retina== → **A**. __B là viễn thị (hyperopia), C là loạn thị (astigmatism): ba tật được nói liền nhau.__"
+    "explain_vi": "Photoablation ==essentially evaporate organic tissue== mà không làm nóng mô xung quanh → **A**. __Làm đông lạnh là cách của Barraquer; lật lớp mỏng là bước chuẩn bị.__"
    },
    {
     "type": "gap",
-    "q": "By an adult's mid-______, the lens is too large to focus well (presbyopia).",
-    "answer": "40s",
-    "accept": [
-     "40's",
-     "forties",
-     "40"
-    ],
-    "explain_vi": "==By an adult's mid-40's, the lens is too large== → **40s**. __Mid-40s nghĩa là khoảng giữa tuổi 40; đây là tật lão thị.__"
-   },
-   {
-    "type": "mcq",
-    "q": "How accurate are excimer lasers?",
-    "options": [
-     "accurate enough to replace glasses in one minute",
-     "accurate enough to make the lens smaller",
-     "accurate enough to etch words into a human hair"
-    ],
-    "answer": 2,
-    "explain_vi": "==These tools are accurate enough to etch words into a human hair== → **C**. __Câu so sánh bằng hình ảnh như vậy rất hay được hỏi trong đề.__"
-   },
-   {
-    "type": "gap",
-    "q": "This process usually takes less than ______ seconds for each eye.",
+    "q": "Sculpting the cornea takes less than ______ seconds per eye.",
     "answer": "30",
     "accept": [
      "thirty"
     ],
-    "explain_vi": "==This process usually takes less than 30 seconds for each eye== → **30**. __Chú ý đơn vị seconds và cụm for each eye.__"
+    "explain_vi": "==This process usually takes less than 30 seconds for each eye== → **30**. __Cậu chú ý đơn vị seconds và cụm for each eye.__"
    }
   ]
  },
@@ -778,52 +773,55 @@
   "items": [
    {
     "type": "gap",
-    "q": "The two salesmen went to Africa to find out if there was any opportunity for selling ______.",
-    "answer": "shoes",
-    "accept": [],
-    "explain_vi": "==any opportunity for selling shoes== → **shoes**. __Từ shoes lặp lại trong cả hai bức điện, cậu có thể kiểm tra lại.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What did the second salesman write?",
-    "options": [
-     "Situation hopeless. They don't wear shoes.",
-     "Glorious opportunity. They don't have any shoes yet.",
-     "Send more shoes to Manchester."
+    "q": "Two shoe salesmen went down to Africa in the ______.",
+    "answer": "1900s",
+    "accept": [
+     "1900's",
+     "nineteen hundreds"
     ],
-    "answer": 1,
-    "explain_vi": "Người thứ hai viết ==Glorious opportunity. They don't have any shoes yet.== → **B**. __A là bức điện của người thứ nhất; nghe thứ tự one of them và the other one.__"
+    "explain_vi": "==two salesmen who went down to Africa in the 1900s== → **1900s**. __Nghe nineteen hundreds thì viết 1900s; Manchester là nơi họ gửi điện tín về.__"
    },
    {
     "type": "mcq",
-    "q": "What usually happens when the child is ten?",
+    "q": "What signs that classical music is dying does he mention?",
+    "options": [
+     "orchestras and record firms closing",
+     "the statistics and trends he shows",
+     "children giving up their piano lessons"
+    ],
+    "answer": 0,
+    "explain_vi": "==all the orchestras that are closing, the record companies that are folding== → **A**. __Ông nói rõ sẽ không đưa số liệu (rather than go into statistics); bỏ học đàn là chuyện cậu bé sau này.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What does he say usually happens when the child is ten?",
     "options": [
      "He gets a new teacher",
-     "He usually gives up",
-     "He becomes passionate about music"
+     "He becomes passionate",
+     "He usually gives up"
     ],
-    "answer": 1,
-    "explain_vi": "==At that point, they usually give up.== → **B**. __A và C là những lý do Zander nêu ra rồi bác bỏ khi nói về cậu bé 11 tuổi.__"
+    "answer": 2,
+    "explain_vi": "==At that point, they usually give up.== → **C**. __Thầy mới và đam mê là những lý do ông nêu cho tuổi 11 rồi bác bỏ.__"
    },
    {
     "type": "gap",
-    "q": "The nine-year-old put an impulse on every ______ notes.",
+    "q": "At nine, the boy put an impulse on every ______ notes.",
     "answer": "4",
     "accept": [
      "four"
     ],
-    "explain_vi": "==The nine-year-old put an impulse on every four notes.== → **4**. __Dãy số tăng dần (1, 2, 4, 8 nốt): cậu ghi bảng nhỏ tuổi kèm số.__"
+    "explain_vi": "==The nine-year-old put an impulse on every four notes.== → **4**. __Dãy tăng dần: mọi nốt, every other note, 4 rồi 8 nốt; cậu ghi tuổi kèm số.__"
    },
    {
     "type": "mcq",
-    "q": "What really changed when the boy was eleven?",
+    "q": "Why does he call it 'one-buttock playing'?",
     "options": [
-     "He got a new teacher",
-     "He became passionate and engaged",
-     "He put just one impulse on the whole phrase"
+     "The music pushes his body to one side",
+     "He puts one impulse on each note",
+     "He sits on the edge of the piano seat"
     ],
-    "answer": 2,
-    "explain_vi": "==What actually happened was the impulses were reduced== và ==one impulse on the whole phrase== → **C**. __Từ actually báo hiệu thông tin thật, gạt bỏ các giả định trước đó.__"
+    "answer": 0,
+    "explain_vi": "==the music pushed me over, which is why I call it one-buttock playing== → **A**. __Ngồi mép ghế là đoán theo chữ; một impulse mỗi nốt là cách chơi của trẻ 7 tuổi.__"
    }
   ]
  },
@@ -841,52 +839,52 @@
   "items": [
    {
     "type": "gap",
-    "q": "Over ______% of people get earworms at least once a week.",
-    "answer": "90",
-    "accept": [
-     "ninety"
-    ],
-    "explain_vi": "==Over 90% of people are plagued by earworms at least once a week== → **90**. __Có hai số liệu liền nhau, cậu ghi kèm từ khoá once a week và several times a day.__"
+    "q": "To explain visual imagery, she asks us to imagine a red ______.",
+    "answer": "wagon",
+    "accept": [],
+    "explain_vi": "Ví dụ hình ảnh: ==close your eyes and imagine a red wagon== → **wagon**. __Ngay sau đó là ví dụ âm thanh (dầu xèo xèo trong chảo), đừng lẫn hai ví dụ.__"
    },
    {
     "type": "mcq",
-    "q": "How many people experience earworms several times a day?",
+    "q": "What does she compare an earworm to?",
     "options": [
-     "about a quarter",
-     "over 90%",
-     "about half"
+     "a pot of water left to boil",
+     "an unwanted house guest",
+     "a pan of oil sizzling"
     ],
-    "answer": 0,
-    "explain_vi": "==about a quarter of people experience them several times a day== → **A**. __90% là số người gặp ít nhất mỗi tuần một lần, không phải nhiều lần mỗi ngày.__"
+    "answer": 1,
+    "explain_vi": "Earworm ==intrudes onto your mental soundscape== như ==an unwanted house guest== → **B**. __Nồi nước chờ sôi và dầu trong chảo là các ví dụ khác ở đoạn trước.__"
    },
    {
     "type": "gap",
-    "q": "Songs tend to get stuck when we listen to them recently and ______.",
-    "answer": "repeatedly",
-    "accept": [],
-    "explain_vi": "==Songs tend to get stuck when we listen to them recently and repeatedly== → **repeatedly**. __And nối với recently, nên chỗ trống cũng là trạng từ đuôi ly.__"
+    "q": "Earworms are usually made up of a tune, rather than ______.",
+    "answer": "harmonies",
+    "accept": [
+     "harmony"
+    ],
+    "explain_vi": "==they're normally made up of a tune, rather than, say, harmonies== → **harmonies**. __Lyrics nghe hợp lý nhưng người nói không dùng từ này; nghe kỹ sau rather than, say.__"
    },
    {
     "type": "mcq",
-    "q": "What does the example from 1876 suggest?",
+    "q": "What was the 1876 short story about?",
     "options": [
-     "Earworms were first caused by the phonograph",
-     "Earworms are a basic psychological phenomenon, not just a result of modern technology",
-     "Only great historical figures had earworms"
+     "the invention of the phonograph",
+     "a song stuck in Shakespeare's head",
+     "a jingle taking over a whole town"
     ],
-    "answer": 1,
-    "explain_vi": "Năm 1876 còn trước khi có máy hát, nên ==earworms seem to be a basic psychological phenomenon== → **B**. __Câu hỏi về ví dụ thường hỏi người nói muốn chứng minh điều gì.__"
+    "answer": 2,
+    "explain_vi": "Mark Twain viết truyện ==imagining a sinister takeover of an entire town by a rhyming jingle== → **C**. __Máy hát ra đời một năm sau; Shakespeare được nhắc ở câu sau.__"
    },
    {
     "type": "mcq",
-    "q": "The speaker says a tune is sort of like...",
+    "q": "Why does she ask about watercolors?",
     "options": [
-     "a watercolor",
-     "a habit",
-     "a recording"
+     "Pictures get stuck in our heads too",
+     "Music is unusual in getting stuck",
+     "Visual images are stronger than sound"
     ],
     "answer": 1,
-    "explain_vi": "==In this way, a tune is sort of like a habit.== → **B**. __Watercolors chỉ xuất hiện trong câu hỏi tu từ, không phải phép so sánh với giai điệu.__"
+    "explain_vi": "Ngoài âm nhạc ==it's hard to think of== hình ảnh xâm nhập nào phổ biến như vậy, nên bà hỏi ==Why don't watercolors get stuck in our heads?== → **B**. __Đây là câu hỏi tu từ.__"
    }
   ]
  }

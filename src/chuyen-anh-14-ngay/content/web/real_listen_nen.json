@@ -9,121 +9,121 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/minecraft-taught-school",
   "level": "A2",
   "topic_match_vi": "Phóng sự về một trường ở Thuỵ Điển dạy bằng Minecraft trong giờ học: đúng chủ đề trường học, môn học.",
-  "intro_vi": "Cậu sẽ nghe phóng sự CBBC về một trường học ở Thuỵ Điển dùng trò chơi Minecraft trong giờ học; hãy chú ý tên nước, các môn học và ý kiến của học sinh.",
+  "intro_vi": "Cậu sẽ nghe phóng sự CBBC về một trường học ở Thuỵ Điển dùng trò chơi Minecraft trong giờ học; hãy chú ý cảm nhận của học sinh, việc các bạn làm trong game và ý kiến của thầy giáo.",
   "items": [
    {
     "type": "mcq",
-    "q": "Where did the game Minecraft start?",
+    "q": "How did one student feel about the Minecraft lessons at first?",
     "options": [
-     "the USA",
-     "Sweden",
-     "England"
+     "It felt kind of boring.",
+     "It felt a bit weird.",
+     "It felt very fun."
     ],
     "answer": 1,
-    "explain_vi": "Phóng viên nói ==\"The game started life here in Sweden\"== → đáp án **Sweden**. __Started life nghĩa là ra đời; cậu nghe tên nước ngay sau cụm này.__"
+    "explain_vi": "Bạn học sinh nói ==\"It felt a bit weird at first\"== → **a bit weird**. __\"Kind of boring\" và \"very fun\" là lời của các bạn khác.__"
    },
    {
     "type": "gap",
-    "q": "Students use Minecraft in science, social studies and ______.",
-    "answer": "maths",
-    "accept": [
-     "math"
-    ],
-    "explain_vi": "Học sinh kể ==\"science, social studies and maths\"== → điền **maths**. __Danh sách thường kết thúc bằng and + từ cuối, cậu chờ nghe từ sau and.__"
+    "q": "Students used Minecraft to solve real-life problems like ______.",
+    "answer": "recycling",
+    "accept": [],
+    "explain_vi": "Phóng viên nói ==\"solve real-life problems like recycling\"== → **recycling** (tái chế). __Nghe từ ngay sau \"like\"; \"city of the future\" là việc khác.__"
    },
    {
     "type": "mcq",
-    "q": "How did one student feel about Minecraft lessons at first?",
+    "q": "What does one student find kind of boring?",
     "options": [
-     "It felt very boring.",
-     "It felt too difficult.",
-     "It felt a bit weird."
+     "designing a city",
+     "drawing pictures",
+     "building houses"
     ],
     "answer": 2,
-    "explain_vi": "Bạn học sinh nói ==\"It felt a bit weird at first\"== → **It felt a bit weird** (hơi lạ). __Từ boring cũng có trong bài nhưng là ý của bạn khác, nói về việc xây nhà.__"
+    "explain_vi": "Bạn ấy nói ==\"I do not enjoy just building houses\"== → **building houses**. __Thiết kế thành phố và vẽ có nhắc, nhưng không bị chê.__"
    },
    {
     "type": "gap",
-    "q": "In Stockholm, students designed a city of the ______.",
-    "answer": "future",
-    "accept": [],
-    "explain_vi": "Bài nghe: ==\"a city of the future\"== → điền **future** (thành phố tương lai). __Để ý cụm cố định of the đứng ngay trước chỗ trống.__"
+    "q": "The teacher says many students are ______ in Minecraft.",
+    "answer": "expert",
+    "accept": [
+     "experts",
+     "an expert"
+    ],
+    "explain_vi": "Thầy giáo nói ==\"The children and the students are expert in Minecraft\"== → **expert** (rất giỏi). __Thầy thừa nhận học sinh giỏi game hơn giáo viên.__"
    },
    {
     "type": "mcq",
-    "q": "What does one student NOT enjoy?",
+    "q": "What does the teacher say teachers have to do?",
     "options": [
-     "building houses",
-     "working with friends",
-     "learning maths"
+     "accept it and focus on the task",
+     "keep video games out of lessons",
+     "learn more about the game first"
     ],
     "answer": 0,
-    "explain_vi": "Bạn ấy nói ==\"I do not enjoy just building houses\"== và thấy việc đó ==\"kind of boring\"== → **building houses**. __Câu hỏi có NOT: cậu tìm câu phủ định do not enjoy.__"
+    "explain_vi": "Thầy nói ==\"you have to accept it and focus what your task is\"== → **accept it**. __\"Stay out of the classroom\" là ý của một số người khác.__"
    }
   ]
  },
  "2": {
   "yt": "n01HtEOA-sA",
   "start": 0,
-  "end": 165,
+  "end": 190,
   "title": "Meet Great Britain's Junior Gymnastics star Scarlett | Newsround",
   "channel": "BBC Newsround",
   "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/meet-great-britains-junior-gymnastics-star-scarlett",
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/meet-great-britains-junior-gymnastics-star-scarlett",
   "level": "A2+",
   "topic_match_vi": "Vận động viên thể dục dụng cụ nhí kể về buổi tập và việc cân bằng giữa tập luyện với học: sở thích, thể thao, thời gian rảnh.",
-  "intro_vi": "Cậu sẽ nghe Scarlett, vận động viên thể dục dụng cụ trẻ của đội tuyển Anh, kể về buổi tập; hãy chú ý việc cô làm đầu tiên, số ngày tập mỗi tuần và điều cô thích nhất.",
+  "intro_vi": "Cậu sẽ nghe Scarlett, vận động viên thể dục dụng cụ trẻ của đội tuyển Anh, kể về việc tập luyện; hãy chú ý điều cô từng sợ, điều cô thích nhất và các vận động viên cô ngưỡng mộ.",
   "items": [
-   {
-    "type": "mcq",
-    "q": "What does Scarlett usually do first at the gym?",
-    "options": [
-     "She practises on the beam.",
-     "She talks to her coach.",
-     "She warms up her muscles."
-    ],
-    "answer": 2,
-    "explain_vi": "Scarlett nói ==\"usually start by warming up my muscles\"== → **khởi động cơ (warm up)**. __Từ start báo hiệu việc làm đầu tiên.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Which apparatus can really hurt her arms?",
-    "options": [
-     "the bars",
-     "the vault",
-     "the floor"
-    ],
-    "answer": 0,
-    "explain_vi": "Bài nghe: ==\"And then on the bars\"== rồi ==\"it really does hurt your arms sometimes\"== → **the bars** (xà). __Nghe tên dụng cụ đứng ngay trước câu nói về cảm giác.__"
-   },
    {
     "type": "mcq",
     "q": "What was Scarlett scared of when she was younger?",
     "options": [
-     "jumping on the vault",
-     "going backwards on the beam",
-     "competing in finals"
+     "going sideways on the vault",
+     "hanging on the bars all day",
+     "going backwards on the beam"
+    ],
+    "answer": 2,
+    "explain_vi": "Scarlett nói ==\"I was always scared to go backwards on the beam\"== → **backwards on the beam**. __Vault và bars có nhắc nhưng không phải nỗi sợ.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What does Scarlett like best about her gym?",
+    "options": [
+     "the coaches and the girls",
+     "the feeling of a new skill",
+     "showing her personality"
+    ],
+    "answer": 0,
+    "explain_vi": "Cô nói ==\"The best bit about the gym is all the coaches and the girls\"== → **coaches and girls**. __Kỹ năng mới làm cô vui, nhưng không phải \"best bit\".__"
+   },
+   {
+    "type": "mcq",
+    "q": "What was one of her proudest moments?",
+    "options": [
+     "her first time competing for GB",
+     "her first beam and floor finals",
+     "her first time at the Olympics"
     ],
     "answer": 1,
-    "explain_vi": "Cô kể ==\"I was always scared to go backwards on the beam when I was younger\"== → **go backwards on the beam**. __Scared to + động từ: cậu nghe hành động ngay sau.__"
+    "explain_vi": "Cô nói ==\"compete in my first-ever beam and floor finals\"== → **beam and floor finals**. __Thi cho đội GB ở giải quốc tế và Olympics chỉ là mơ ước.__"
    },
    {
     "type": "gap",
-    "q": "Scarlett trains at the gym around about ______ days a week.",
-    "answer": "five",
-    "accept": [
-     "5"
-    ],
-    "explain_vi": "Bài nghe: ==\"around about five days a week\"== → điền **five**. __Câu hỏi tần suất: chờ nghe a week và con số đứng trước nó.__"
+    "q": "At the British Championships, she was one of the ______ in her age category.",
+    "answer": "youngest",
+    "accept": [],
+    "explain_vi": "Cô nói ==\"I was one of the youngest in my age category\"== → **youngest** (nhỏ tuổi nhất). __Đuôi -est là so sánh nhất.__"
    },
    {
     "type": "gap",
-    "q": "The best bit about the gym is all the ______ and the girls.",
-    "answer": "coaches",
+    "q": "Georgia-Mae inspires her on the ______.",
+    "answer": "bars",
     "accept": [
-     "the coaches"
+     "bar",
+     "the bars"
     ],
-    "explain_vi": "Scarlett nói ==\"The best bit about the gym is all the coaches and the girls here\"== → **coaches**. __Sau all the cần danh từ số nhiều, nhớ thêm đuôi es.__"
+    "explain_vi": "Cô nói ==\"Georgia-Mae on the bars\"== → **bars** (xà). __Jessica Gadirova là người cô ngưỡng mộ ở floor, đừng nhầm.__"
    }
   ]
  },
@@ -137,58 +137,61 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/plastic-ocean-campaigner",
   "level": "A2",
   "topic_match_vi": "Cậu bé 12 tuổi làm phim kêu gọi bớt dùng nhựa để bảo vệ rùa biển: đúng chủ đề môi trường, rác thải nhựa.",
-  "intro_vi": "Cậu sẽ nghe phóng sự Behind the News (Úc) về Arlian, cậu bé chống rác nhựa; hãy chú ý tuổi của cậu, con số về rác nhựa và lí do rùa biển gặp nguy hiểm.",
+  "intro_vi": "Cậu sẽ nghe phóng sự Behind the News (Úc) về một cậu bé chống rác nhựa đại dương; hãy chú ý điều cậu thấy ở bãi biển, việc cậu làm và lời kêu gọi của cậu.",
   "items": [
    {
     "type": "gap",
-    "q": "Arlian is a ______-year-old boy on a mission.",
+    "q": "Plastic Free Boy is ______ years old.",
     "answer": "12",
     "accept": [
      "twelve"
     ],
-    "explain_vi": "Bài nghe: ==\"a 12-year-old on a mission\"== → điền **12**. __Số tuổi thường đi kèm year-old; viết bằng số cho nhanh.__"
+    "explain_vi": "Phóng viên nói ==\"a 12-year-old on a mission\"== → **12**. __\"8 million tonnes\" là con số khác, nói sau.__"
    },
    {
     "type": "mcq",
     "q": "What did Arlian see at the beach a year ago?",
     "options": [
-     "three sea turtles going back into the sea",
-     "a big whale on the sand",
-     "lots of plastic bottles"
+     "turtles being set free",
+     "plastic bags in the water",
+     "jellyfish on the wet sand"
     ],
     "answer": 0,
-    "explain_vi": "Cậu kể ==\"three sea turtles getting released\"== → **ba con rùa biển được thả về biển**. __Released nghĩa là được thả ra; phương án chai nhựa chỉ là chủ đề chung của bài.__"
+    "explain_vi": "Arlian kể ==\"I saw three sea turtles getting released into the ocean\"== → **turtles being set free**. __Túi nhựa và sứa nói sau, khi giải thích rùa ăn nhầm.__"
    },
    {
     "type": "mcq",
-    "q": "What did his mum say they could do?",
+    "q": "What did Arlian ask his mum?",
     "options": [
-     "write a book about the beach",
-     "make a film about sea turtles",
-     "visit a zoo"
+     "why there was plastic on the beach",
+     "why turtles weren't in the sea yet",
+     "if they could take one home"
     ],
     "answer": 1,
-    "explain_vi": "Mẹ cậu gợi ý ==\"make a film about sea turtles\"== → **làm phim về rùa biển**. __Câu hỏi về lời người khác: chú ý chỗ người nói thuật lại she said.__"
+    "explain_vi": "Arlian hỏi ==\"Why aren't these animals in the ocean already?\"== → **why turtles weren't in the sea**. __Rác nhựa là điều cậu tìm ra sau đó.__"
    },
    {
     "type": "gap",
-    "q": "Every year, more than ______ million tonnes of plastic go into the ocean.",
-    "answer": "8",
+    "q": "Now Arlian has made his own ______ to help.",
+    "answer": "documentary",
     "accept": [
-     "eight"
+     "film",
+     "a documentary",
+     "a film",
+     "documentry"
     ],
-    "explain_vi": "Bài nghe: ==\"more than 8 million tonnes of plastic\"== → **8**. __Đừng nhầm với số 12 là tuổi của Arlian; nghe kĩ số đứng trước million.__"
+    "explain_vi": "Phóng viên nói ==\"now he's made his own documentary to help\"== → **documentary** (phim tài liệu). __Arlian cũng gọi nó là \"a film\".__"
    },
    {
     "type": "mcq",
-    "q": "Why do sea turtles sometimes eat plastic bags?",
+    "q": "What will happen if the ocean isn't clean, says Arlian?",
     "options": [
-     "They like the bright colours.",
-     "They have no other food.",
-     "They think the bags are jellyfish."
+     "Sea turtles will not come back.",
+     "There will be less life on land.",
+     "Our water will not be clean."
     ],
     "answer": 2,
-    "explain_vi": "Bài nghe nói rùa nhầm ==\"plastic bags for jellyfish\"== → **rùa tưởng túi nhựa là sứa**. __Mistake A for B nghĩa là nhầm A là B.__"
+    "explain_vi": "Arlian nói ==\"if this ocean isn't clean… our water will not be clean\"== → **our water will not be clean**. __\"Life on land\" là câu so sánh ngay trước.__"
    }
   ]
  },
@@ -202,58 +205,58 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/robots-cook-clean-chat",
   "level": "A2+",
   "topic_match_vi": "Phóng sự về rô-bốt trên phà, rô-bốt làm việc nhà và cửa hàng rô-bốt: đúng chủ đề công nghệ.",
-  "intro_vi": "Cậu sẽ nghe phóng sự Newsround về các loại rô-bốt mới trên phà, trong nhà và trong cửa hàng; hãy chú ý tên rô-bốt, tên nước và ý kiến của phóng viên.",
+  "intro_vi": "Cậu sẽ nghe phóng sự Newsround về các loại rô-bốt mới trên phà, trong nhà và trong cửa hàng; hãy chú ý việc từng rô-bốt làm và cảm nhận của phóng viên.",
   "items": [
    {
     "type": "mcq",
-    "q": "Where is the robot that helps people on a ferry?",
+    "q": "What is Kai's job on the ferry?",
     "options": [
-     "in China",
-     "in the Netherlands",
-     "in the UK"
+     "making cups of coffee",
+     "cleaning the bathrooms",
+     "showing people around"
     ],
-    "answer": 1,
-    "explain_vi": "Bài nghe: ==\"ferry in the Netherlands\"== → **the Netherlands** (Hà Lan). __China cũng có trong bài nhưng là nơi có rô-bốt làm việc nhà.__"
+    "answer": 2,
+    "explain_vi": "Phóng viên nói ==\"his job is to show people around and to help them\"== → **showing people around**. __Pha cà phê, lau nhà tắm là việc của rô-bốt khác.__"
    },
    {
     "type": "gap",
-    "q": "The ferry robot is named ______.",
-    "answer": "Kai",
+    "q": "They put a ______ on the robot so it seems less weird.",
+    "answer": "jacket",
     "accept": [
-     "kai"
+     "a jacket"
     ],
-    "explain_vi": "Bài nghe: ==\"Named Kai\"== → **Kai**. __Tên riêng ngắn, cậu nghe ngay sau từ named.__"
+    "explain_vi": "Phóng viên đùa ==\"they've clearly just stuck a jacket on it\"== → **jacket** (áo khoác). __Mặc áo cho rô-bốt đỡ \"weird\".__"
    },
    {
     "type": "mcq",
-    "q": "In China, robots help people who hate…",
+    "q": "What does the reporter say about the robots in China?",
     "options": [
-     "school",
-     "sport",
-     "chores"
+     "This is way too weird for me.",
+     "I might need one of these.",
+     "This is just a test for now."
     ],
-    "answer": 2,
-    "explain_vi": "Bài nghe: ==\"who hate chores\"== → **chores** (việc nhà). __Các việc kể tiếp như nấu ăn, là quần áo cũng giúp cậu đoán đúng.__"
+    "answer": 1,
+    "explain_vi": "Phóng viên nói ==\"Maybe I need to get one of these\"== → **muốn có một con**. __\"Too weird\" là về cái đầu biết nói; \"a test\" là về Kai.__"
    },
    {
     "type": "gap",
-    "q": "The owners say this is the first-ever robot ______.",
+    "q": "The owners say it is the first-ever robot ______.",
     "answer": "shop",
     "accept": [
      "store"
     ],
-    "explain_vi": "Bài nghe: ==\"first-ever robot shop\"== → **shop** (cửa hàng). __First-ever nghĩa là đầu tiên từ trước tới nay.__"
+    "explain_vi": "Phóng viên nói ==\"the first-ever robot shop\"== → **shop** (cửa hàng). __Câu sau có \"They don't just sell…\" – sell là bán.__"
    },
    {
     "type": "mcq",
-    "q": "What does the reporter think of the robot head that chats to you?",
+    "q": "Which robot is too weird for the reporter?",
     "options": [
-     "It is too weird.",
-     "It is very cute.",
-     "It is really useful."
+     "the one that chats to you",
+     "the one that gives massages",
+     "the one that makes coffee"
     ],
     "answer": 0,
-    "explain_vi": "Phóng viên nói ==\"is just way too weird for me\"== → **quá kì lạ**. __Way too nhấn mạnh nghĩa quá mức, cho thấy người nói không thích.__"
+    "explain_vi": "Phóng viên nói ==\"a head to chat to you… is just way too weird\"== → **cái đầu biết trò chuyện**. __Rô-bốt mát-xa, pha cà phê chỉ được giới thiệu.__"
    }
   ]
  },
@@ -267,56 +270,60 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/yoga-day",
   "level": "A2",
   "topic_match_vi": "Học sinh tập yoga và chuyên gia nói về lợi ích sức khoẻ: đúng chủ đề sức khoẻ, tập luyện.",
-  "intro_vi": "Cậu sẽ nghe phóng sự Behind the News về Ngày Quốc tế Yoga ở một trường học; hãy chú ý cảm nhận của học sinh, nơi yoga ra đời và năm có ngày yoga.",
+  "intro_vi": "Cậu sẽ nghe phóng sự Behind the News về Ngày Quốc tế Yoga ở một trường học; hãy chú ý cảm nhận của từng bạn, lịch sử của yoga và lời cô giáo.",
   "items": [
    {
     "type": "mcq",
     "q": "How often do most kids at this school do yoga?",
     "options": [
      "every day",
-     "every month",
-     "every week"
-    ],
-    "answer": 2,
-    "explain_vi": "Bài nghe: ==\"most kids do yoga every week\"== → **every week**. __Câu hỏi How often: nghe cụm chỉ tần suất như every week.__"
-   },
-   {
-    "type": "mcq",
-    "q": "How did the first student feel after yoga?",
-    "options": [
-     "relaxed and peaceful",
-     "tired and hungry",
-     "bored and sleepy"
-    ],
-    "answer": 0,
-    "explain_vi": "Bạn ấy nói ==\"really relaxing and peaceful\"== → **thư giãn và bình yên**. __Chọn phương án có nghĩa giống hệt từ trong bài, không chỉ giống một nửa.__"
-   },
-   {
-    "type": "gap",
-    "q": "One student says: think about your ______.",
-    "answer": "breathing",
-    "accept": [
-     "breath"
-    ],
-    "explain_vi": "Bài nghe: ==\"think about your breathing\"== → điền **breathing** (hơi thở). __Sau your cần danh từ; nghe đuôi ing.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Where did yoga start?",
-    "options": [
-     "in China",
-     "in India",
-     "in Japan"
+     "every week",
+     "once a year"
     ],
     "answer": 1,
-    "explain_vi": "Bài nghe: ==\"originated in ancient India\"== → **India**. __Originated in nghĩa là bắt nguồn từ; nghe tên nước ngay sau.__"
+    "explain_vi": "Phóng viên nói ==\"most kids do yoga every week\"== → **every week**. __Nhóm bạn trong bài thì mới tập lần đầu.__"
+   },
+   {
+    "type": "mcq",
+    "q": "Why does one student think yoga is kind of cool?",
+    "options": [
+     "They do lots of poses and steps.",
+     "It takes all their stress away.",
+     "They think about their breathing."
+    ],
+    "answer": 0,
+    "explain_vi": "Bạn ấy nói ==\"kind of cool because we do all these poses and steps\"== → **poses and steps**. __Stress và breathing là lời hai bạn khác.__"
    },
    {
     "type": "gap",
-    "q": "In ______, the UN decided to have a special day for yoga.",
-    "answer": "2015",
+    "q": "Yoga got very popular in Western countries in the ______.",
+    "answer": "1980s",
+    "accept": [
+     "1980's",
+     "1980",
+     "80s",
+     "eighties",
+     "the 1980s"
+    ],
+    "explain_vi": "Phóng viên nói ==\"massive popularity in Western countries in the 1980s\"== → **1980s**. __2015 là năm Liên Hợp Quốc dành riêng một ngày cho yoga.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What does the teacher say a lot of kids are?",
+    "options": [
+     "really in their bodies",
+     "calm and less anxious",
+     "quite disconnected"
+    ],
+    "answer": 2,
+    "explain_vi": "Cô giáo nói ==\"A lot of kids are quite disconnected\"== → **quite disconnected** (mất kết nối). __\"Calm\", \"in their bodies\" là điều yoga giúp đạt được.__"
+   },
+   {
+    "type": "gap",
+    "q": "The reporter might stick to some of the ______ poses for a while.",
+    "answer": "easier",
     "accept": [],
-    "explain_vi": "Bài nghe: ==\"in 2015, the UN decided\"== → **2015**. __Năm này đọc là twenty fifteen; cậu nên luyện nghe cách đọc năm.__"
+    "explain_vi": "Phóng viên nói ==\"I might just stick to some of the easier poses\"== → **easier** (dễ hơn). __Phóng viên tự đùa là mình chưa giỏi.__"
    }
   ]
  },
@@ -330,58 +337,61 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/meet-kids-racing-electric-cars",
   "level": "A2+",
   "topic_match_vi": "Các bạn nhỏ tự lắp và đua xe điện: hàng xóm gần của chủ đề du lịch và đi lại (phương tiện giao thông).",
-  "intro_vi": "Cậu sẽ nghe phóng sự Newsround về các bạn nhỏ tự làm và đua xe điện ở trường đua Rockingham; hãy chú ý các con số: thời gian, số pin và giá tiền.",
+  "intro_vi": "Cậu sẽ nghe phóng sự Newsround về các bạn nhỏ tự làm và đua xe điện ở trường đua Rockingham; hãy chú ý thời gian, giá tiền và cách chiếc xe hoạt động.",
   "items": [
    {
     "type": "mcq",
-    "q": "Where are the children racing?",
+    "q": "When did the team get their car?",
     "options": [
-     "at Rockingham Race Course",
-     "at their school",
-     "in a city street"
+     "about six months ago",
+     "about four months ago",
+     "about two weeks ago"
     ],
     "answer": 0,
-    "explain_vi": "Ngay đầu bài: ==\"Rockingham Race Course\"== → **trường đua Rockingham**. __Thông tin địa điểm thường nằm ở câu mở đầu.__"
+    "explain_vi": "Bạn nhỏ nói ==\"We first got the car about six months ago\"== → **six months**. __\"Four\" là số pin, nói ngay sau.__"
    },
    {
     "type": "gap",
-    "q": "The team got their car about ______ months ago.",
-    "answer": "six",
+    "q": "They have to fix the ______ and put the engines in.",
+    "answer": "tyres",
     "accept": [
-     "6"
+     "tyre",
+     "tires",
+     "tire",
+     "the tyres"
     ],
-    "explain_vi": "Bài nghe: ==\"about six months ago\"== → **six**. __Ago nghĩa là cách đây; con số đứng ngay trước months.__"
+    "explain_vi": "Bạn nhỏ nói ==\"We have to fix the tyres, put in the engines\"== → **tyres** (lốp xe). __Viết kiểu Mỹ \"tires\" cũng được.__"
    },
    {
     "type": "gap",
-    "q": "The car has ______ batteries.",
-    "answer": "four",
+    "q": "Each battery costs about £______.",
+    "answer": "200",
     "accept": [
-     "4"
+     "two hundred"
     ],
-    "explain_vi": "Bài nghe: ==\"four batteries\"== → **four**. __Đừng nhầm với số 200 là giá của mỗi cục pin.__"
+    "explain_vi": "Bạn nhỏ nói ==\"They're about 200 quid each\"== → **200**. __\"Quid\" là cách nói thân mật của \"pound\".__"
    },
    {
     "type": "mcq",
-    "q": "How much does each battery cost?",
+    "q": "Who planned and built the car?",
     "options": [
-     "about £20",
-     "about £200",
-     "about £2,000"
-    ],
-    "answer": 1,
-    "explain_vi": "Bài nghe: ==\"about 200 quid each\"== → **khoảng 200 bảng Anh**. __Quid là cách người Anh nói pound trong văn nói.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Who built the car?",
-    "options": [
-     "their teachers",
-     "a car company",
-     "the children, by themselves"
+     "their science teachers",
+     "a big car company",
+     "the kids on the team"
     ],
     "answer": 2,
-    "explain_vi": "Các bạn nói ==\"We did it all by ourself\"== → **tự các bạn làm**. __By ourselves nghĩa là tự mình làm, không ai giúp.__"
+    "explain_vi": "Các bạn nói ==\"We designed it and, like, planned it all together\"== và ==\"We did it all by ourself\"== → **the kids**."
+   },
+   {
+    "type": "mcq",
+    "q": "What does the button on the steering wheel do?",
+    "options": [
+     "It turns the front wheels.",
+     "It keeps the car moving.",
+     "It spins the big gear."
+    ],
+    "answer": 1,
+    "explain_vi": "Bạn nhỏ nói ==\"that is the one which will keep us moving\"== → **keeps the car moving**. __Động cơ làm quay bánh răng; bánh trước tự quay hướng.__"
    }
   ]
  },
@@ -395,54 +405,57 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/one-million-plastic-pick",
   "level": "A2",
   "topic_match_vi": "Ôn buổi 3 (môi trường: rác nhựa) và buổi 4 (công nghệ: dùng app để ghi lại rác nhặt được).",
-  "intro_vi": "Cậu sẽ nghe Amy và Ali của nhóm Kids Against Plastic kêu gọi nhặt một triệu mẩu rác nhựa; hãy chú ý nơi có rác, điều Amy nói về nhựa và cách ghi lại rác đã nhặt.",
+  "intro_vi": "Cậu sẽ nghe Amy và Ali của nhóm Kids Against Plastic kêu gọi mọi người nhặt rác nhựa; hãy chú ý các con số, lí do hai bạn vẫn hi vọng và cách tham gia.",
   "items": [
    {
     "type": "gap",
-    "q": "Ali wants people to pick up and log a million pieces of plastic ______.",
-    "answer": "litter",
+    "q": "Ali is the chief pick-up ______ at Kids Against Plastic.",
+    "answer": "officer",
     "accept": [],
-    "explain_vi": "Bài nghe: ==\"log a million pieces of plastic litter\"== → **litter** (rác vứt bừa bãi). __Log ở đây nghĩa là ghi lại, đếm lại.__"
+    "explain_vi": "Ali nói ==\"I'm Ali, chief pick-up officer\"== → **officer**. __Amy là \"co-founder\" (người đồng sáng lập).__"
    },
    {
     "type": "mcq",
-    "q": "Where could plastic fill up if we do nothing?",
+    "q": "About one million plastic bags are thrown away…",
     "options": [
-     "schools, shops and homes",
-     "streets, beaches and parks",
-     "rivers, lakes and mountains"
+     "every single day",
+     "every minute",
+     "every year"
     ],
     "answer": 1,
-    "explain_vi": "Ali nói ==\"our streets, beaches and parks\"== → **đường phố, bãi biển, công viên**. __Nghe đủ cả ba địa điểm, đừng chọn khi chỉ trùng một từ.__"
+    "explain_vi": "Ali nói ==\"plastic bags will continue to be thrown away every minute\"== → **every minute**. __\"Each year\" là số chim biển; \"every day\" là lời kêu gọi nhặt rác.__"
    },
    {
     "type": "mcq",
-    "q": "What does Amy say about plastic?",
+    "q": "Why do Amy and Ali stay hopeful?",
     "options": [
-     "It goes away in a year.",
-     "It is good for animals.",
-     "It never goes away."
+     "Less plastic is made each year.",
+     "Many people use the app now.",
+     "People can do lots to help."
     ],
     "answer": 2,
-    "explain_vi": "Amy nói nhựa vỡ nhỏ ra ==\"but never goes away\"== → **không bao giờ biến mất**. __Từ but báo hiệu ý quan trọng ở phía sau.__"
+    "explain_vi": "Ali nói ==\"there are loads of things people can do\"== → **people can do lots**. __Amy nói lượng nhựa sản xuất đang tăng, không giảm.__"
    },
    {
     "type": "gap",
-    "q": "Ali asks us to pick up one piece of plastic every ______.",
-    "answer": "day",
-    "accept": [],
-    "explain_vi": "Bài nghe: ==\"pick up one piece of plastic every day\"== → **day**. __Cụm every + thời gian chỉ thói quen hằng ngày.__"
+    "q": "If you see plastic on the street, beach or ______, pick it up.",
+    "answer": "park",
+    "accept": [
+     "parks",
+     "the park"
+    ],
+    "explain_vi": "Ali nói ==\"on the street, beach or park, please pick it up\"== → **park**. __Danh sách giống câu đầu bài: streets, beaches and parks.__"
    },
    {
     "type": "mcq",
-    "q": "How can you count the litter you pick up?",
+    "q": "Why should you log your litter on the app?",
     "options": [
-     "use the Kids Against Plastic app",
-     "send a letter to Ali",
-     "tell your teacher"
+     "so it adds to Ali's target",
+     "so Amy can collect it later",
+     "so the shops know about it"
     ],
     "answer": 0,
-    "explain_vi": "Bài nghe: ==\"the Kids Against Plastic app\"== → **dùng ứng dụng (app)**. __App là từ vựng công nghệ của buổi 4.__"
+    "explain_vi": "Ali nói ==\"contributes to my target of one million pieces\"== → **adds to Ali's target**. __Log nghĩa là ghi lại.__"
    }
   ]
  },
@@ -460,50 +473,52 @@
   "items": [
    {
     "type": "gap",
-    "q": "Statement 1: Artificial intelligence will make our lives ______.",
-    "answer": "better",
-    "accept": [],
-    "explain_vi": "Người dẫn đọc ==\"Artificial intelligence will make our lives better\"== → **better**. __Sau make our lives thường là một tính từ.__"
+    "q": "The presenter says, \"I've got a few ______ here.\"",
+    "answer": "experts",
+    "accept": [
+     "expert"
+    ],
+    "explain_vi": "Người dẫn nói ==\"I've got a few experts here\"== → **experts**. __Người dẫn gọi các bạn nhỏ là \"chuyên gia\".__"
    },
    {
     "type": "mcq",
-    "q": "Why is one student worried about AI?",
+    "q": "Why is one student not sure about AI?",
     "options": [
-     "It is too expensive.",
-     "It is very slow.",
-     "People might use it to cheat in exams."
+     "People may use it to cheat.",
+     "Apps could help us learn.",
+     "It may get smarter than us."
     ],
     "answer": 2,
-    "explain_vi": "Bạn ấy nói ==\"people might use AI for cheating in exams\"== → **gian lận trong thi cử**. __Cheating nghĩa là gian lận.__"
+    "explain_vi": "Bạn ấy nói ==\"artificial intelligence might be smarter than humans\"== → **smarter than us**. __Gian lận và học tập là ý của hai bạn khác.__"
    },
    {
     "type": "mcq",
-    "q": "Why does another student think AI can help?",
+    "q": "What does one student say about people in the past?",
     "options": [
-     "Apps can help us improve our learning.",
-     "Robots can do our homework.",
-     "Games are more fun now."
+     "They used to be nicer.",
+     "They used to bully more.",
+     "They used to play less."
     ],
     "answer": 0,
-    "explain_vi": "Bài nghe: ==\"apps that could help us improve in our learning\"== → **app giúp học tốt hơn**. __Phương án làm bài tập hộ nghe hợp lí nhưng không có trong bài.__"
+    "explain_vi": "Bạn ấy nói ==\"they used to be nicer before\"== → **nicer before**. __Nghe kĩ: bạn ấy chọn \"agree\" nhưng ý là ngày trước tử tế hơn.__"
    },
    {
     "type": "gap",
-    "q": "Statement 2: People are ______ online than they used to be.",
-    "answer": "kinder",
+    "q": "If players are unfriendly and ______ a lot, one student would disagree.",
+    "answer": "swear",
     "accept": [],
-    "explain_vi": "Người dẫn đọc ==\"People are kinder online than they used to be\"== → **kinder**. __Có than nên cần tính từ so sánh hơn, đuôi er.__"
+    "explain_vi": "Bạn ấy nói ==\"if they're really, like, unfriendly and swear a lot\"== → **swear** (chửi tục). __Bạn này chọn \"I'm not sure\" vì còn tuỳ người chơi.__"
    },
    {
     "type": "mcq",
-    "q": "What happens to one student in online games?",
+    "q": "Statement 3: Changes in technology are making people…",
     "options": [
-     "The student always wins.",
-     "The student gets bullied for no reason.",
-     "The student plays with family."
+     "kinder",
+     "happier",
+     "smarter"
     ],
     "answer": 1,
-    "explain_vi": "Bạn ấy nói ==\"I get bullied for no reason\"== → **bị bắt nạt vô cớ**. __For no reason nghĩa là không có lí do gì.__"
+    "explain_vi": "Người dẫn đọc ==\"Changes in technology are making people happier\"== → **happier**. __\"Kinder\" là nhận định 2; \"smarter\" là ý về AI.__"
    }
   ]
  },
@@ -517,56 +532,56 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/celebrating-holi",
   "level": "A2",
   "topic_match_vi": "Bạn nhỏ giới thiệu đền Hindu, bữa ăn chung và lễ hội Holi: chủ đề ẩm thực và văn hoá (đoạn đầu: đền và bữa ăn).",
-  "intro_vi": "Cậu sẽ nghe một bạn nhỏ giới thiệu ngôi đền Hindu trong ngày lễ Holi; trong đoạn này, chú ý việc phải làm khi vào đền, những thứ có trong đền và bữa ăn.",
+  "intro_vi": "Cậu sẽ nghe một bạn nhỏ giới thiệu ngôi đền Hindu trong ngày lễ Holi; trong đoạn này, chú ý những gì có trong đền, ai được đến đền và việc chuẩn bị cho trò ném màu.",
   "items": [
    {
     "type": "mcq",
-    "q": "What must they do before going into the temple?",
+    "q": "What do Sumedh and his friend touch?",
     "options": [
-     "take their shoes off",
-     "put on old clothes",
-     "wash their hair"
+     "the bottom of the statue",
+     "the carvings of elephants",
+     "the curtain of the shrine"
     ],
     "answer": 0,
-    "explain_vi": "Bạn nhỏ nói ==\"take our shoes off\"== → **cởi giày**. __Take off nghĩa là cởi ra; nghe kĩ đồ vật đi cùng động từ.__"
+    "explain_vi": "Bài nghe: ==\"Sumedh and his friend both touch the bottom of the statue\"== → **bottom of the statue**. __Voi chỉ là hình chạm khắc, nói sau.__"
    },
    {
     "type": "mcq",
-    "q": "What do people do at the temple?",
+    "q": "What does the temple have, just like their home?",
     "options": [
-     "buy toys and sweets",
-     "get together with friends and relatives",
-     "watch films"
+     "incense sticks",
+     "shrines",
+     "elephant carvings"
     ],
     "answer": 1,
-    "explain_vi": "Bài nghe: ==\"get together with friends and relatives\"== → **tụ họp cùng bạn bè, họ hàng**. __Relatives nghĩa là họ hàng.__"
+    "explain_vi": "Bạn nhỏ nói ==\"statues of the gods, and shrines just like we have at home\"== → **shrines** (bàn thờ). __Hương và voi có trong đền nhưng không giống ở nhà.__"
    },
    {
     "type": "gap",
-    "q": "In the temple there are carvings of ______.",
-    "answer": "elephants",
+    "q": "We leave ______ for the gods.",
+    "answer": "presents",
     "accept": [
-     "elephant"
+     "present"
     ],
-    "explain_vi": "Bài nghe: ==\"carvings of elephants\"== → **elephants**. __Sau carvings of là danh từ số nhiều, nhớ chữ s.__"
+    "explain_vi": "Bạn nhỏ nói ==\"We leave presents for the gods\"== → **presents** (lễ vật). __Sau \"leave\" là danh từ số nhiều.__"
    },
    {
     "type": "mcq",
-    "q": "What do the incense sticks give the temple?",
+    "q": "Who can come to the temple, says the boy?",
     "options": [
-     "bright light",
-     "nice music",
-     "a lovely smell"
+     "only friends and relatives",
+     "only people from India",
+     "people of any religion"
     ],
     "answer": 2,
-    "explain_vi": "Bài nghe: ==\"give the temple a lovely smell\"== → **mùi thơm dễ chịu**. __Smell nghĩa là mùi; lovely nghĩa là dễ chịu.__"
+    "explain_vi": "Bạn nhỏ nói ==\"Other religions and other people can come to the temple\"== → **any religion**. __\"Friends and relatives\" là lúc nói về việc cùng thờ cúng.__"
    },
    {
     "type": "gap",
-    "q": "The temple gives everyone a wonderful ______ in the marquee (a big tent).",
-    "answer": "meal",
+    "q": "Now they'd better get changed into their ______ clothes.",
+    "answer": "old",
     "accept": [],
-    "explain_vi": "Bài nghe: ==\"a wonderful meal in the marquee\"== → **meal** (bữa ăn). __Sau tính từ wonderful cần một danh từ.__"
+    "explain_vi": "Bạn nhỏ nói ==\"we'd better get changed into our old clothes now\"== → **old** (cũ). __Mặc đồ cũ vì sắp ném bột màu.__"
    }
   ]
  },
@@ -580,54 +595,56 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/women-male-careers",
   "level": "A2+",
   "topic_match_vi": "Bốn phụ nữ làm lính cứu hoả, đóng tàu ngầm, lái tàu, quản lí xây dựng trả lời câu hỏi của học sinh: đúng chủ đề công việc, nghề nghiệp.",
-  "intro_vi": "Cậu sẽ nghe bốn phụ nữ làm những nghề thường được cho là của nam giới trả lời câu hỏi của học sinh; chú ý tên nghề, số năm làm việc và độ tuổi bắt đầu học nghề.",
+  "intro_vi": "Cậu sẽ nghe bốn phụ nữ làm những nghề thường được cho là của nam giới; chú ý tên nghề, nơi làm việc và con đường vào nghề của từng người.",
   "items": [
    {
     "type": "mcq",
-    "q": "What is Amy's job?",
+    "q": "What is Cassie's job?",
     "options": [
-     "train driver",
-     "firefighter",
-     "engineer"
+     "a submarine builder",
+     "a train driver",
+     "a project manager"
     ],
-    "answer": 1,
-    "explain_vi": "Amy nói ==\"firefighter in North Wales Fire and Rescue Service\"== → **lính cứu hoả**. __Train driver là nghề của Tyra; nghe tên người trước rồi mới chọn nghề.__"
+    "answer": 2,
+    "explain_vi": "Cassie nói ==\"I'm a construction project manager\"== → **project manager**. __Đóng tàu ngầm là Caroline, lái tàu là Tyra.__"
    },
    {
     "type": "mcq",
-    "q": "What does Caroline build?",
+    "q": "What did the children get to do?",
     "options": [
-     "trains",
-     "houses",
-     "submarines"
+     "spend a whole day at their jobs",
+     "ask the women some questions",
+     "try to drive a real train"
     ],
-    "answer": 2,
-    "explain_vi": "Caroline nói ==\"I build submarines\"== → **tàu ngầm**. __Động từ build + vật được làm ra chính là đáp án.__"
+    "answer": 1,
+    "explain_vi": "Bài nghe: ==\"These children got the chance to ask them some questions about their jobs\"== → **ask questions**. __Không ai đi làm cùng hay lái tàu.__"
    },
    {
     "type": "gap",
-    "q": "Tyra is a ______ driver with Northern Rail.",
-    "answer": "train",
+    "q": "Cassie moved to ______ to do her job.",
+    "answer": "Australia",
     "accept": [],
-    "explain_vi": "Bài nghe: ==\"a train driver with Northern Rail\"== → **train**. __Từ Rail (đường sắt) cũng gợi ý đáp án.__"
+    "explain_vi": "Cassie nói ==\"I got the opportunity to move out to Australia\"== → **Australia**. __\"England\" chỉ có trong câu hỏi của học sinh.__"
    },
    {
     "type": "gap",
-    "q": "Cassie has done her job for nearly ______ years.",
-    "answer": "ten",
-    "accept": [
-     "10"
-    ],
-    "explain_vi": "Bài nghe: ==\"nearly ten years now\"== → **ten**. __Nearly nghĩa là gần, gần như.__"
-   },
-   {
-    "type": "gap",
-    "q": "Caroline says you can start at ______ as an apprentice.",
+    "q": "You can start Caroline's job at ______ as an apprentice.",
     "answer": "16",
     "accept": [
      "sixteen"
     ],
-    "explain_vi": "Caroline nói ==\"start at 16 as an apprentice\"== → **16**. __Đừng nhầm sixteen với sixty; trọng âm sixteen rơi vào âm cuối.__"
+    "explain_vi": "Caroline nói ==\"you can start at 16 as an apprentice\"== → **16**. __\"Ten years\" là số năm Cassie đã làm.__"
+   },
+   {
+    "type": "gap",
+    "q": "Before, Tyra worked on the ______, but not as a driver.",
+    "answer": "railway",
+    "accept": [
+     "railways",
+     "railroad",
+     "the railway"
+    ],
+    "explain_vi": "Tyra nói ==\"I worked on the railway before… but not as a train driver\"== → **railway** (ngành đường sắt). __Đừng điền \"train\".__"
    }
   ]
  },
@@ -645,50 +662,52 @@
   "items": [
    {
     "type": "mcq",
-    "q": "What does bullying do, according to the film?",
+    "q": "Which two words describe bullying at the start?",
     "options": [
-     "It hurts people's feelings.",
-     "It makes people stronger.",
-     "It is a fun game."
+     "unfair and unsafe",
+     "unkind and unfair",
+     "unkind and unhappy"
     ],
-    "answer": 0,
-    "explain_vi": "Câu mở đầu: ==\"hurts people's feelings\"== → **làm tổn thương cảm xúc**. __Ý chính thường nằm ngay câu mở đầu.__"
-   },
-   {
-    "type": "gap",
-    "q": "Bullying is unkind. It's ______.",
-    "answer": "unfair",
-    "accept": [],
-    "explain_vi": "Bài nghe: ==\"It's unkind. It's unfair.\"== → **unfair** (bất công). __Hai tính từ cùng tiền tố un mang nghĩa phủ định.__"
+    "answer": 1,
+    "explain_vi": "Bài nghe: ==\"It's unkind. It's unfair.\"== → **unkind and unfair**. __Nghe kĩ phần sau \"un-\": kind, fair.__"
    },
    {
     "type": "gap",
     "q": "If we challenge it, we can ______ it.",
     "answer": "change",
     "accept": [],
-    "explain_vi": "Bài nghe: ==\"If we challenge it, we can change it\"== → **change**. __Sau can là động từ nguyên mẫu.__"
+    "explain_vi": "Bài nghe: ==\"If we challenge it, we can change it\"== → **change**. __Hai từ gần âm: challenge – change.__"
    },
    {
-    "type": "mcq",
-    "q": "We are more powerful as a…",
-    "options": [
-     "family",
-     "class",
-     "team"
+    "type": "gap",
+    "q": "Reach out to parents and ______, friends and teachers.",
+    "answer": "carers",
+    "accept": [
+     "carer"
     ],
-    "answer": 2,
-    "explain_vi": "Bài nghe: ==\"more powerful as a team\"== → **team**. __Nghe cụm as a và danh từ đứng ngay sau.__"
+    "explain_vi": "Bài nghe: ==\"Reach out to parents and carers, friends, teachers\"== → **carers** (người chăm sóc). __Teachers đứng sau, không phải chỗ trống.__"
    },
    {
     "type": "mcq",
-    "q": "Who can you reach out to?",
+    "q": "Which way to reach out does the film say twice?",
     "options": [
-     "parents and carers, friends, teachers",
-     "only the police",
-     "nobody"
+     "checking in",
+     "asking 'Are you OK?'",
+     "respecting everyone"
     ],
     "answer": 0,
-    "explain_vi": "Bài nghe: ==\"parents and carers, friends, teachers\"== → **bố mẹ, người chăm sóc, bạn bè, thầy cô**. __Carers là người chăm sóc cậu.__"
+    "explain_vi": "Bài nghe: ==\"checking in, checking in again\"== → **checking in** (hỏi han). __Các cách khác chỉ nói một lần.__"
+   },
+   {
+    "type": "mcq",
+    "q": "How does the film end?",
+    "options": [
+     "with a phone number",
+     "with a thank-you to teachers",
+     "with a question for you"
+    ],
+    "answer": 2,
+    "explain_vi": "Câu cuối: ==\"How will you reach out today?\"== → **a question**. __Phim kết bằng câu hỏi để cậu tự trả lời.__"
    }
   ]
  },
@@ -702,56 +721,56 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/facts-about-bumblebees",
   "level": "A2",
   "topic_match_vi": "Giải thích khoa học về ong nghệ và sự thụ phấn: chủ đề khoa học (sinh học, thực vật).",
-  "intro_vi": "Cậu sẽ nghe đoạn giới thiệu khoa học ngắn về ong nghệ và sự thụ phấn; chú ý con số, tên các loại quả và từ khoá pollination.",
+  "intro_vi": "Cậu sẽ nghe đoạn giới thiệu khoa học ngắn về ong nghệ và sự thụ phấn; chú ý tên các loại quả, việc con ong làm trên bông hoa và lời khen ở cuối.",
   "items": [
    {
     "type": "gap",
-    "q": "Pollination is very ______.",
-    "answer": "important",
+    "q": "Pollination helps food grow, so we have lots of ______ things to eat.",
+    "answer": "lovely",
     "accept": [],
-    "explain_vi": "Câu đầu: ==\"Pollination is very important\"== → **important**. __Sau very thường là một tính từ.__"
+    "explain_vi": "Bài nghe: ==\"so that we have lots of lovely things to eat\"== → **lovely**. __Nghe tính từ ngay trước \"things\".__"
    },
    {
     "type": "mcq",
-    "q": "How much of our food started as crops pollinated by bees and other insects?",
+    "q": "Which fruit is named in the video?",
     "options": [
-     "one in every ten spoonfuls",
-     "one in every three spoonfuls",
-     "all of it"
+     "strawberries",
+     "raspberries",
+     "blueberries"
+    ],
+    "answer": 2,
+    "explain_vi": "Bài nghe: ==\"tomatoes, aubergines, blueberries and cranberries\"== → **blueberries**. __Strawberries, raspberries không có trong danh sách.__"
+   },
+   {
+    "type": "mcq",
+    "q": "A bee lands on a flower to feed and to…",
+    "options": [
+     "make some honey",
+     "gather pollen",
+     "find new seeds"
     ],
     "answer": 1,
-    "explain_vi": "Bài nghe: ==\"One in every three spoonfuls\"== → **một phần ba**. __Nghe kĩ con số ngay sau one in every.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Which foods rely on bumblebees?",
-    "options": [
-     "tomatoes, aubergines, blueberries and cranberries",
-     "rice, bread and pasta",
-     "milk, cheese and eggs"
-    ],
-    "answer": 0,
-    "explain_vi": "Bài nghe: ==\"tomatoes, aubergines, blueberries and cranberries\"== → **cà chua, cà tím, việt quất**. __Chỉ cây có hoa mới cần ong thụ phấn, nên loại sữa, trứng.__"
+    "explain_vi": "Bài nghe: ==\"to feed and suck up nectar or gather pollen\"== → **gather pollen**. __Bài không nói đến mật ong; hạt có trong quả, nói sau.__"
    },
    {
     "type": "gap",
-    "q": "When a bee lands on a flower, extra pollen sticks to the ______ on its body.",
-    "answer": "hairs",
+    "q": "______ all over the world rely on bumblebees.",
+    "answer": "Farms",
     "accept": [
-     "hair"
+     "farm"
     ],
-    "explain_vi": "Bài nghe: ==\"extra pollen sticks to the hairs\"== → **hairs** (lông). __Sticks to nghĩa là dính vào.__"
+    "explain_vi": "Bài nghe: ==\"Farms all over the world rely on bumblebees\"== → **farms** (trang trại). __Không phải \"farmers\": nghe kĩ âm cuối.__"
    },
    {
     "type": "mcq",
-    "q": "The fruit contains seeds. What can grow from them?",
+    "q": "What does the speaker say about bumblebees at the end?",
     "options": [
-     "honey",
-     "new plants",
-     "pollen"
+     "They are clever.",
+     "They are busy.",
+     "They are important."
     ],
-    "answer": 1,
-    "explain_vi": "Bài nghe: ==\"contains seeds from which new plants can grow\"== → **cây mới**. __Seeds là hạt; hạt lớn lên thành cây.__"
+    "answer": 0,
+    "explain_vi": "Câu cuối: ==\"What clever bumblebees!\"== → **clever**. __\"Busy bee\" là thành ngữ quen, nhưng bài không dùng.__"
    }
   ]
  },
@@ -765,56 +784,54 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/taylor-swift-eras-tour",
   "level": "A2+",
   "topic_match_vi": "Phóng viên nhí và người hâm mộ nói về buổi hoà nhạc của Taylor Swift: đúng chủ đề nghệ thuật, giải trí (âm nhạc).",
-  "intro_vi": "Cậu sẽ nghe phóng viên nhí Cairi của Newsround đi xem buổi hoà nhạc Eras Tour của Taylor Swift; chú ý tên thành phố, nơi cắm trại, album yêu thích và cảm nhận của người hâm mộ.",
+  "intro_vi": "Cậu sẽ nghe phóng viên nhí Cairi của Newsround đi xem buổi hoà nhạc Eras Tour của Taylor Swift; chú ý cách Cairi chuẩn bị, những chiếc vòng tay và khoảnh khắc mỗi người thích nhất.",
   "items": [
    {
     "type": "gap",
-    "q": "Cairi lives in ______.",
-    "answer": "Edinburgh",
-    "accept": [
-     "edinburgh"
-    ],
-    "explain_vi": "Cairi nói ==\"I live in Edinburgh\"== → **Edinburgh**. __Tên thành phố khó viết, cậu nhìn lại tên trong tiêu đề bài để viết đúng.__"
+    "q": "To get ready, Cairi has been ______ outside Murrayfield Stadium.",
+    "answer": "camping",
+    "accept": [],
+    "explain_vi": "Cairi nói ==\"I've been camping outside Murrayfield Stadium\"== → **camping** (cắm trại). __Cô còn nghe album và đổi vòng tay cả ngày.__"
    },
    {
     "type": "mcq",
-    "q": "How did Cairi get ready for the concert?",
+    "q": "Why is the 'Fearless' bracelet one of Cairi's favourites?",
     "options": [
-     "staying in a hotel",
-     "going to school",
-     "camping outside Murrayfield Stadium"
+     "It's her favourite album.",
+     "It has all those beads on it.",
+     "A fan made it just for her."
+    ],
+    "answer": 0,
+    "explain_vi": "Cairi nói ==\"this one's 'Fearless', and my favourite album's 'Fearless'\"== → **her favourite album**. __Chiếc vòng nhiều hạt là chiếc khác.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What was Nina's favourite memory of the tour?",
+    "options": [
+     "the 'Reputation' songs",
+     "the 'Tortured Poets' songs",
+     "the very beginning"
     ],
     "answer": 2,
-    "explain_vi": "Bài nghe: ==\"camping outside Murrayfield Stadium\"== → **cắm trại ngoài sân vận động**. __Camping nghĩa là cắm trại.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What is Cairi's favourite album?",
-    "options": [
-     "Folklore",
-     "Fearless",
-     "Reputation"
-    ],
-    "answer": 1,
-    "explain_vi": "Cairi nói ==\"my favourite album's 'Fearless'\"== → **Fearless**. __Folklore và Reputation cũng có trong bài; nghe kĩ từ favourite.__"
+    "explain_vi": "Nina nói ==\"the very beginning when Tay got revealed\"== → **the beginning**. __Hai album kia là ý của các fan khác.__"
    },
    {
     "type": "gap",
-    "q": "Nina describes the tour in three words: incredible, magical and ______.",
-    "answer": "loud",
+    "q": "One fan's favourite bit was when Taylor played the ______.",
+    "answer": "piano",
     "accept": [],
-    "explain_vi": "Nina nói ==\"Incredible, magical and loud\"== → **loud** (ồn ào, to). __Trong dạng liệt kê, từ cuối đứng sau and.__"
+    "explain_vi": "Fan nói ==\"When Taylor played piano\"== → **piano**. __Bạn ấy thích vì chính mình cũng chơi piano.__"
    },
    {
     "type": "mcq",
-    "q": "What instrument does one fan also play?",
+    "q": "Who else has one fan made bracelets for?",
     "options": [
-     "guitar",
-     "drums",
-     "piano"
+     "her friends at school",
+     "people in care homes",
+     "the Newsround reporters"
     ],
-    "answer": 2,
-    "explain_vi": "Bạn ấy nói ==\"I also play piano\"== → **piano**. __Từ also cho biết bạn ấy cũng chơi giống Taylor Swift.__"
+    "answer": 1,
+    "explain_vi": "Fan nói ==\"I've made some, lots, for care homes too\"== → **care homes** (viện dưỡng lão). __Newsround chỉ là chương trình đang phỏng vấn.__"
    }
   ]
  },
@@ -828,56 +845,60 @@
   "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/roald-dahl-quick-bio",
   "level": "A2",
   "topic_match_vi": "Tiểu sử nhà văn Roald Dahl: ôn buổi 13 (nghệ thuật, văn học), buổi 10 (nghề: phi công, điệp viên) và buổi 11 (con người).",
-  "intro_vi": "Cậu sẽ nghe tiểu sử ngắn của nhà văn Roald Dahl; chú ý năm sinh, các công việc ông làm trước khi viết sách và các con số về sách của ông.",
+  "intro_vi": "Cậu sẽ nghe tiểu sử ngắn của nhà văn Roald Dahl; chú ý tuổi thơ của ông, cuốn sách đầu tiên và các con số về sách của ông.",
   "items": [
    {
     "type": "mcq",
-    "q": "When was Roald Dahl born?",
+    "q": "What does the video say about Roald as a kid?",
     "options": [
-     "1916",
-     "1943",
-     "1960"
+     "He was always writing stories.",
+     "He wasn't known for writing.",
+     "He read lots of books."
     ],
-    "answer": 0,
-    "explain_vi": "Bài nghe: ==\"born on the 13th of September 1916\"== → **1916**. __1943 là năm ra cuốn sách thiếu nhi đầu tiên, đừng nhầm.__"
+    "answer": 1,
+    "explain_vi": "Bài nghe: ==\"As a kid, he wasn't particularly known for his writing!\"== → **not known for writing**. __Ông nổi tiếng nhờ viết về sau.__"
    },
    {
     "type": "mcq",
-    "q": "What job did he do in World War Two?",
+    "q": "What did a chocolate maker do at Roald's school?",
     "options": [
-     "doctor",
-     "teacher",
-     "fighter pilot"
+     "tested new products",
+     "made a new chocolate bar",
+     "gave out free sweets"
+    ],
+    "answer": 0,
+    "explain_vi": "Bài nghe: ==\"a chocolate maker used to taste-test their new products\"== → **tested new products**. __Thanh sô-cô-la mới chỉ là ước mơ của Roald.__"
+   },
+   {
+    "type": "mcq",
+    "q": "What colour was his favourite paper?",
+    "options": [
+     "orange",
+     "purple",
+     "yellow"
     ],
     "answer": 2,
-    "explain_vi": "Bài nghe: ==\"a fighter pilot in World War Two\"== → **phi công chiến đấu**. __Ôn lại từ vựng nghề nghiệp của buổi 10.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Who did he work with as a spy for MI6?",
-    "options": [
-     "Ian Fleming",
-     "Charles Dickens",
-     "Lewis Carroll"
-    ],
-    "answer": 0,
-    "explain_vi": "Bài nghe: ==\"a spy for MI6\"== cùng ==\"Ian Fleming\"== → **Ian Fleming**, tác giả James Bond. __Spy nghĩa là điệp viên.__"
+    "explain_vi": "Bài nghe: ==\"put pencil to his favourite yellow paper\"== → **yellow**. __Nghe tính từ ngay trước \"paper\".__"
    },
    {
     "type": "gap",
-    "q": "His first kids' book came out in ______.",
-    "answer": "1943",
-    "accept": [],
-    "explain_vi": "Bài nghe: ==\"until 1943\"== → **1943**. __Năm này đọc là nineteen forty-three.__"
-   },
-   {
-    "type": "gap",
-    "q": "His books have sold more than ______ million copies.",
-    "answer": "200",
+    "q": "In his first book, the Gremlins cause problems on ______.",
+    "answer": "planes",
     "accept": [
-     "two hundred"
+     "plane",
+     "aeroplanes",
+     "airplanes"
     ],
-    "explain_vi": "Bài nghe: ==\"more than 200 million copies\"== → **200**. __Đừng nhầm với số 16 là số sách thiếu nhi khác của ông.__"
+    "explain_vi": "Bài nghe: ==\"naughty creatures that cause mechanical problems on planes\"== → **planes** (máy bay)."
+   },
+   {
+    "type": "gap",
+    "q": "Dahl went on to write ______ other kids' books.",
+    "answer": "16",
+    "accept": [
+     "sixteen"
+    ],
+    "explain_vi": "Bài nghe: ==\"Dahl went on to write 16 other kids' books\"== → **16**. __200 triệu là số bản sách bán được.__"
    }
   ]
  }
