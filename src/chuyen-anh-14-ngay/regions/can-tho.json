@@ -94,7 +94,8 @@
    "sample_links": [
     "https://tailieudieuky.com/baiviet/document/de-thi-chuyen-anh-vao-thpt-chuyen-ly-tu-trong-can-tho-nam-hoc-2020-2021/",
     "https://tailieudieuky.com/document/id=42069122",
-    "https://springboard.vn/de-thi-chuyen-anh-10-soc-trang-2025-2026/"
+    "https://springboard.vn/de-thi-chuyen-anh-10-soc-trang-2025-2026/",
+    "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/ (tuyển tập 2026 có mục 'Đề chuyên Anh Cần Thơ 2026' nhưng chưa có link bài)"
    ]
   }
  },
@@ -276,7 +277,8 @@
   "sample_links": [
    "https://tailieudieuky.com/baiviet/document/de-thi-chuyen-anh-vao-thpt-chuyen-ly-tu-trong-can-tho-nam-hoc-2020-2021/",
    "https://tailieudieuky.com/document/id=42069122",
-   "https://springboard.vn/de-thi-chuyen-anh-10-soc-trang-2025-2026/"
+   "https://springboard.vn/de-thi-chuyen-anh-10-soc-trang-2025-2026/",
+   "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/ (tuyển tập 2026 có mục 'Đề chuyên Anh Cần Thơ 2026' nhưng chưa có link bài)"
   ]
  },
  "exam_2026": {
@@ -314,6 +316,18 @@
     "Chênh lệch điểm chuẩn giữa 3 trường chuyên gần 9 điểm – cân nhắc chọn trường theo sức"
    ],
    "url": "https://tuoitre.vn/thi-sinh-can-tho-van-hoi-hop-cho-cong-bo-diem-chuan-vao-lop-10-100260715112450803.htm"
+  },
+  {
+   "title": "Cần Thơ: Thí sinh phấn khởi sau ngày thi đầu tiên vào lớp 10 (2022)",
+   "who": "báo",
+   "year": 2022,
+   "school": "Kỳ thi chung TP Cần Thơ (điểm thi THPT Lý Tự Trọng)",
+   "summary": "SGGP ghi nhận ngày thi 7/6/2022 với khoảng 14.000 thí sinh: thí sinh thi tại điểm Lý Tự Trọng nói đề Tiếng Anh chung không quá khó nhưng khoảng 10 câu thuộc kiến thức học kỳ I; tổ trưởng tiếng Anh THCS An Khánh nhận xét đề nằm trong chương trình lớp 9, vừa sức. Bài chỉ nói về bài Ngoại ngữ chung, không nhắc đề chuyên Anh.",
+   "takeaways": [
+    "Ôn trọn cả năm lớp 9, kể cả học kỳ I, cho bài Ngoại ngữ chung 60 phút",
+    "Bài chung vừa sức nên điểm cạnh tranh nằm ở bài chuyên (hệ số 2) và Toán, Văn"
+   ],
+   "url": "https://www.sggp.org.vn/can-tho-thi-sinh-phan-khoi-sau-ngay-thi-dau-tien-vao-lop-10-post639644.html"
   }
  ],
  "prep_tips": [
@@ -331,7 +345,7 @@
   "NTMK (Sóc Trăng): thiếu điểm chuẩn chuyên Anh 2022–2024; Vị Thanh: thiếu 2022, 2023, 2025.",
   "Thiếu số thí sinh đăng ký chuyên Anh 2025, 2026 ở cả 3 trường.",
   "Chưa rõ lớp chuyên Pháp, Trung của Lý Tự Trọng thi bằng đề ngôn ngữ đó hay đề tiếng Anh.",
-  "Không tìm được bài chia sẻ kinh nghiệm cá nhân của học sinh/giáo viên chuyên Anh ở Cần Thơ, Sóc Trăng, Hậu Giang; hai mục stories là tường thuật báo chí."
+  "Không tìm được bài chia sẻ cá nhân của học sinh/giáo viên chuyên Anh ở Cần Thơ, Sóc Trăng, Hậu Giang (hết 7 lượt tìm trong lượt 3); ba mục stories đều là tường thuật báo chí."
  ],
  "sources": [
   {
@@ -417,6 +431,18 @@
   {
    "title": "Hoatieu – Điểm chuẩn lớp 10 Cần Thơ",
    "url": "https://hoatieu.vn/diem-chuan-lop-10-can-tho-208816"
+  },
+  {
+   "title": "SGGP 7/6/2022 – Cần Thơ: Thí sinh phấn khởi sau ngày thi đầu tiên vào lớp 10",
+   "url": "https://www.sggp.org.vn/can-tho-thi-sinh-phan-khoi-sau-ngay-thi-dau-tien-vao-lop-10-post639644.html"
+  },
+  {
+   "title": "Đại biểu Nhân dân 4/6/2026 – Cần Thơ họp báo kỳ thi lớp 10 và tốt nghiệp THPT 2026 (33.304 HS, 91 trường)",
+   "url": "https://daibieunhandan.vn/print/10419270.html"
+  },
+  {
+   "title": "Springboard – Tuyển tập đề chính thức chuyên Anh 2026 (có mục Cần Thơ)",
+   "url": "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/"
   }
  ],
  "formula_raw": {

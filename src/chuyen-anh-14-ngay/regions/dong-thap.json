@@ -17,26 +17,89 @@
    "ac_add": 2.5,
    "ac_cap": 10,
    "ac_label": "Anh chung (đề chung)",
-   "difficulty": null,
-   "difficulty_evidence": "Chưa tìm được đề chuyên Anh Nguyễn Quang Diêu, Nguyễn Đình Chiểu hay Tiền Giang các năm 2022–2026, cũng như nhận xét đề. Chỉ biết hình thức: trắc nghiệm + nghe + luận, 150 phút.",
+   "difficulty": "B2",
+   "difficulty_evidence": "Ước tính từ cấu trúc đề chuyên Anh Đồng Tháp cũ 2025-2026 (Springboard đăng lại, thi 4/6/2025, 150 phút, thang 10: Listening 2,0 – Lexico-grammar 3,0 – Reading 2,0 – Writing 3,0; có note completion kiểu IELTS, matching headings, Yes/No/Not Given, key word transformation tối đa 5 từ và bài luận ≥ 250 từ) – tương đương B2 First/IELTS 5.5–6.5. Không có phần ngữ âm. Chưa có nhận xét của giáo viên/báo. Kế hoạch 23/KH-SGDĐT Đồng Tháp 2025 chỉ ghi đề chuyên Anh 150 phút, 'có phần nghe hiểu', kết hợp tự luận và trắc nghiệm; tuyensinh247 2026 ghi 'trắc nghiệm, nghe và viết luận'. Chưa có đề chuyên Tiền Giang cũ; chưa có đề 2026 của tỉnh mới (Springboard liệt kê 'Đề chuyên Anh Đồng Tháp 2026' trong tuyển tập nhưng chưa đăng link).",
    "minutes": 150,
    "has_listening": true,
-   "essay_words": null,
+   "essay_words": 250,
    "sections": [
     {
      "format": "listening",
+     "items": 5,
+     "points": null,
+     "note": "Đề Đồng Tháp cũ 2025 (thi 4/6/2025, chuyên Nguyễn Quang Diêu): Part 1 note completion về chuyến đi nhà hát, tối đa 2 từ và/hoặc 1 số; tổng Listening 2,0 điểm"
+    },
+    {
+     "format": "listening",
+     "items": 5,
+     "points": null,
+     "note": "Part 2: phỏng vấn radio, trắc nghiệm A–D"
+    },
+    {
+     "format": "sentence_completion",
+     "items": 10,
+     "points": null,
+     "note": "Lexico-grammar A: trắc nghiệm; tổng phần II = 3,0 điểm"
+    },
+    {
+     "format": "error_id",
      "items": null,
      "points": null,
-     "note": "Kế hoạch 2026 nêu đề chuyên Anh gồm trắc nghiệm, nghe và viết luận; chưa có đề cụ thể"
+     "note": "Lexico-grammar B: tìm từ thừa trong đoạn văn"
+    },
+    {
+     "format": "word_formation",
+     "items": 5,
+     "points": null,
+     "note": "Lexico-grammar C: tạo từ từ gợi ý"
+    },
+    {
+     "format": "other",
+     "items": 5,
+     "points": null,
+     "note": "Lexico-grammar D: điền giới từ/tiểu từ"
+    },
+    {
+     "format": "reading_mcq",
+     "items": 10,
+     "points": null,
+     "note": "Reading: 2 bài đọc trắc nghiệm 5 câu mỗi bài (Tweenbots; fast fashion); tổng Reading 2,0 điểm"
+    },
+    {
+     "format": "matching_headings",
+     "items": 5,
+     "points": null,
+     "note": "Reading passage 3 (sinh viên sau 6 tháng ở đại học Anh): chọn tiêu đề cho đoạn A–E"
+    },
+    {
+     "format": "true_false",
+     "items": 5,
+     "points": null,
+     "note": "Reading passage 3: Yes/No/Not Given"
+    },
+    {
+     "format": "transformation",
+     "items": 5,
+     "points": null,
+     "note": "Writing A: viết lại câu; tổng Writing 3,0 điểm"
+    },
+    {
+     "format": "key_word",
+     "items": 5,
+     "points": null,
+     "note": "Writing B: viết lại câu với từ khóa, tối đa 5 từ"
     },
     {
      "format": "essay",
      "items": 1,
      "points": null,
-     "note": "Có bài viết luận; độ dài chưa rõ"
+     "note": "Writing C: bài luận tối thiểu 250 từ (đề 2025: vì sao thanh thiếu niên dành nhiều thời gian cho mạng xã hội hơn hoạt động khác và cách khắc phục)"
     }
    ],
-   "sample_links": []
+   "sample_links": [
+    "https://springboard.vn/de-thi-chuyen-anh-10-dong-thap-2025-2026/ (đề chuyên Anh Đồng Tháp cũ 2025, có đáp án gợi ý)",
+    "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/ (tuyển tập 2026 có mục Đồng Tháp nhưng chưa có link bài)"
+   ]
   }
  },
  "formulas": {
@@ -122,14 +185,16 @@
    "exam": "so",
    "group": "nv",
    "years": [
+    2022,
     2026
    ],
    "cut": [
+    37.51,
     36.2
    ],
    "scale": 50,
    "quota": {},
-   "note": "Nguồn: tuyensinh247. 2026: 36,2, cao nhất chuyên Anh toàn tỉnh mới. Thang 2024 (Tiền Giang cũ) chưa xác minh."
+   "note": "Nguồn: tuyensinh247. 2026: 36,2, cao nhất chuyên Anh toàn tỉnh mới. Thang 2024 (Tiền Giang cũ) chưa xác minh. 2022: 37,51 (Hoatieu, bảng điểm chuẩn chuyên Tiền Giang 2022). 2023: Hoatieu ghi trường có 2 lớp chuyên Anh trong 350 chỉ tiêu chuyên nhưng không ghi điểm."
   }
  ],
  "paper": {
@@ -138,26 +203,89 @@
   "ac_add": 2.5,
   "ac_cap": 10,
   "ac_label": "Anh chung (đề chung)",
-  "difficulty": null,
-  "difficulty_evidence": "Chưa tìm được đề chuyên Anh Nguyễn Quang Diêu, Nguyễn Đình Chiểu hay Tiền Giang các năm 2022–2026, cũng như nhận xét đề. Chỉ biết hình thức: trắc nghiệm + nghe + luận, 150 phút.",
+  "difficulty": "B2",
+  "difficulty_evidence": "Ước tính từ cấu trúc đề chuyên Anh Đồng Tháp cũ 2025-2026 (Springboard đăng lại, thi 4/6/2025, 150 phút, thang 10: Listening 2,0 – Lexico-grammar 3,0 – Reading 2,0 – Writing 3,0; có note completion kiểu IELTS, matching headings, Yes/No/Not Given, key word transformation tối đa 5 từ và bài luận ≥ 250 từ) – tương đương B2 First/IELTS 5.5–6.5. Không có phần ngữ âm. Chưa có nhận xét của giáo viên/báo. Kế hoạch 23/KH-SGDĐT Đồng Tháp 2025 chỉ ghi đề chuyên Anh 150 phút, 'có phần nghe hiểu', kết hợp tự luận và trắc nghiệm; tuyensinh247 2026 ghi 'trắc nghiệm, nghe và viết luận'. Chưa có đề chuyên Tiền Giang cũ; chưa có đề 2026 của tỉnh mới (Springboard liệt kê 'Đề chuyên Anh Đồng Tháp 2026' trong tuyển tập nhưng chưa đăng link).",
   "minutes": 150,
   "has_listening": true,
-  "essay_words": null,
+  "essay_words": 250,
   "sections": [
    {
     "format": "listening",
+    "items": 5,
+    "points": null,
+    "note": "Đề Đồng Tháp cũ 2025 (thi 4/6/2025, chuyên Nguyễn Quang Diêu): Part 1 note completion về chuyến đi nhà hát, tối đa 2 từ và/hoặc 1 số; tổng Listening 2,0 điểm"
+   },
+   {
+    "format": "listening",
+    "items": 5,
+    "points": null,
+    "note": "Part 2: phỏng vấn radio, trắc nghiệm A–D"
+   },
+   {
+    "format": "sentence_completion",
+    "items": 10,
+    "points": null,
+    "note": "Lexico-grammar A: trắc nghiệm; tổng phần II = 3,0 điểm"
+   },
+   {
+    "format": "error_id",
     "items": null,
     "points": null,
-    "note": "Kế hoạch 2026 nêu đề chuyên Anh gồm trắc nghiệm, nghe và viết luận; chưa có đề cụ thể"
+    "note": "Lexico-grammar B: tìm từ thừa trong đoạn văn"
+   },
+   {
+    "format": "word_formation",
+    "items": 5,
+    "points": null,
+    "note": "Lexico-grammar C: tạo từ từ gợi ý"
+   },
+   {
+    "format": "other",
+    "items": 5,
+    "points": null,
+    "note": "Lexico-grammar D: điền giới từ/tiểu từ"
+   },
+   {
+    "format": "reading_mcq",
+    "items": 10,
+    "points": null,
+    "note": "Reading: 2 bài đọc trắc nghiệm 5 câu mỗi bài (Tweenbots; fast fashion); tổng Reading 2,0 điểm"
+   },
+   {
+    "format": "matching_headings",
+    "items": 5,
+    "points": null,
+    "note": "Reading passage 3 (sinh viên sau 6 tháng ở đại học Anh): chọn tiêu đề cho đoạn A–E"
+   },
+   {
+    "format": "true_false",
+    "items": 5,
+    "points": null,
+    "note": "Reading passage 3: Yes/No/Not Given"
+   },
+   {
+    "format": "transformation",
+    "items": 5,
+    "points": null,
+    "note": "Writing A: viết lại câu; tổng Writing 3,0 điểm"
+   },
+   {
+    "format": "key_word",
+    "items": 5,
+    "points": null,
+    "note": "Writing B: viết lại câu với từ khóa, tối đa 5 từ"
    },
    {
     "format": "essay",
     "items": 1,
     "points": null,
-    "note": "Có bài viết luận; độ dài chưa rõ"
+    "note": "Writing C: bài luận tối thiểu 250 từ (đề 2025: vì sao thanh thiếu niên dành nhiều thời gian cho mạng xã hội hơn hoạt động khác và cách khắc phục)"
    }
   ],
-  "sample_links": []
+  "sample_links": [
+   "https://springboard.vn/de-thi-chuyen-anh-10-dong-thap-2025-2026/ (đề chuyên Anh Đồng Tháp cũ 2025, có đáp án gợi ý)",
+   "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/ (tuyển tập 2026 có mục Đồng Tháp nhưng chưa có link bài)"
+  ]
  },
  "exam_2026": {
   "dates": "27/5/2026: Ngữ văn (sáng, 120'), Tiếng Anh và Toán (chiều; Tiếng Anh 60', Toán 90'); 28/5/2026 sáng: môn chuyên 150 phút (bắt đầu 07:25). Kết quả công bố trước 31/7/2026.",
@@ -172,6 +300,8 @@
  "plan_2027": null,
  "stories": [],
  "prep_tips": [
+  "Đề chuyên Anh Đồng Tháp cũ 2025: Lexico-grammar và Writing mỗi phần 3/10 điểm, bài luận tối thiểu 250 từ dạng nêu nguyên nhân – giải pháp; luyện viết luận 250 từ có người chữa và key word transformation ≤ 5 từ (Springboard, đề 2025).",
+  "Phần nghe kiểu IELTS (note completion ≤ 2 từ/1 số, trắc nghiệm phỏng vấn radio) chiếm 2/10; không có ngữ âm (Springboard, đề 2025).",
   "Điều kiện riêng của Đồng Tháp: tổng 3 môn chung (chưa nhân hệ số) phải ≥ 15 – học sinh chuyên Anh phải đạt trung bình ≥ 5 cả Toán và Văn (tuyensinh247 2026).",
   "Đề chuyên Anh có phần nghe và viết luận trong 150 phút – luyện nghe và viết luận đều đặn, không chỉ ngữ pháp trắc nghiệm (tuyensinh247 2026).",
   "Tiếng Anh chung chỉ 60 phút trắc nghiệm, thi cùng buổi chiều với Toán – luyện tốc độ làm bài (tuyensinh247 2026).",
@@ -180,11 +310,11 @@
  "confidence": "low",
  "gaps": [
   "Kế hoạch tuyển sinh 2027 chưa tìm thấy.",
-  "Không có đề chuyên Anh của 3 trường các năm 2022–2026, nên thiếu cấu trúc chi tiết và độ khó.",
-  "Thiếu điểm chuẩn chuyên Anh 2022–2024 của Nguyễn Quang Diêu, Nguyễn Đình Chiểu; 2022, 2023, 2025 của chuyên Tiền Giang. Toàn bộ số điểm hiện có chỉ từ tuyensinh247.",
   "Không rõ năm 2026 cả tỉnh dùng chung đề chuyên Anh hay không.",
   "Thiếu chỉ tiêu chuyên Anh 2026 từng trường và số thí sinh đăng ký.",
-  "Không tìm được bài chia sẻ kinh nghiệm ôn thi chuyên Anh thật ở Đồng Tháp, Tiền Giang."
+  "Mới có đề chuyên Anh Đồng Tháp cũ 2025 (Springboard); chưa có đề chuyên Tiền Giang cũ và đề 2026 của tỉnh mới; chưa có nhận xét độ khó của giáo viên/báo.",
+  "Thiếu điểm chuẩn chuyên Anh 2022–2024 của Nguyễn Quang Diêu, Nguyễn Đình Chiểu; 2023, 2025 của chuyên Tiền Giang (2022: 37,51 theo Hoatieu). Số điểm 2025–2026 chỉ từ tuyensinh247.",
+  "Không tìm được bài chia sẻ của học sinh/giáo viên về ôn thi chuyên Anh ở Đồng Tháp, Tiền Giang (hết 7 lượt tìm kiếm; báo địa phương chỉ đưa tin kỳ thi, không có chân dung thủ khoa chuyên Anh)."
  ],
  "sources": [
   {
@@ -206,6 +336,26 @@
   {
    "title": "Hoatieu – Lịch thi vào 10 năm 2026-2027",
    "url": "https://hoatieu.vn/phap-luat/lich-thi-tuyen-sinh-lop-10-213450"
+  },
+  {
+   "title": "Springboard – Đề chuyên Anh Đồng Tháp 2025-2026 (chuyên Nguyễn Quang Diêu, thi 4/6/2025)",
+   "url": "https://springboard.vn/de-thi-chuyen-anh-10-dong-thap-2025-2026/"
+  },
+  {
+   "title": "Sở GD&ĐT Đồng Tháp – KH 23/KH-SGDĐT tuyển sinh lớp 10 năm 2025 (PDF)",
+   "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/TLV/26-02-2025/23-KH-SGDDT-Dong-Thap.pdf"
+  },
+  {
+   "title": "Giáo dục Việt Nam 1/7/2026 – Đồng Tháp công bố điểm chuẩn lớp 10 năm 2026",
+   "url": "https://giaoduc.net.vn/dong-thap-cong-bo-diem-chuan-lop-10-nam-2026-truong-thpt-nguyen-dinh-chieu-cao-nhat-voi-2560-diem-post261013.gd"
+  },
+  {
+   "title": "Hoatieu – Điểm thi tuyển sinh lớp 10 Tiền Giang 2025 (điểm chuẩn chuyên Tiền Giang 2022)",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-tien-giang-208975"
+  },
+  {
+   "title": "Springboard – Tuyển tập đề chính thức chuyên Anh 2026 (có mục Đồng Tháp)",
+   "url": "https://springboard.vn/tuyen-tap-de-thi-chinh-thuc-chuyen-anh-2026/"
   }
  ],
  "formula_raw": {
@@ -219,7 +369,7 @@
   "max": 50,
   "conditions": "2026: mỗi bài thi ≥ 2,00 và tổng 3 bài không chuyên (chưa nhân hệ số) ≥ 15,00. Xếp hạng khi bằng điểm: điểm môn chuyên → ĐTB môn chuyên lớp 9 → ĐTB các môn lớp 9 → tổng Văn + Toán.",
   "formula_by_year": {
-   "2025": "Đồng Tháp cũ: tổng điểm các môn không chuyên (hệ số 1) + môn chuyên (hệ số 2) (Tuổi Trẻ 28/3/2025).",
+   "2025": "Đồng Tháp cũ (KH 23/KH-SGDĐT 2025): ĐXT = Toán + Ngữ văn + Tiếng Anh (hệ số 1) + môn chuyên × 2; mọi bài thi ≥ 3,0; được thi 1 hoặc 2 môn chuyên, xét môn chuyên 1 trước; bằng điểm xét điểm môn chuyên → ĐTB môn chuyên lớp 9 → ĐTB các môn lớp 9. Chuyên Toán, Anh, Tin không quá 2 lớp, mỗi lớp ≤ 35.",
    "2026": "Trang tuyensinh247 ghi 'tổng ba bài không chuyên + điểm bài chuyên' mà không nêu hệ số; điểm chuẩn 2026 lên tới 40,7 cho thấy vẫn nhân 2 (thang 50) – cần đối chiếu QĐ 238/QĐ-SGDĐT."
   }
  },
@@ -286,16 +436,17 @@
      "quota": {},
      "applicants": {},
      "cut": {
-      "2022": null,
+      "2022": 37.51,
       "2023": null,
       "2024": 34.41,
       "2025": null,
       "2026": 36.2
      },
      "scale": {
-      "2026": 50
+      "2026": 50,
+      "2022": 50
      },
-     "note": "Nguồn: tuyensinh247. 2026: 36,2, cao nhất chuyên Anh toàn tỉnh mới. Thang 2024 (Tiền Giang cũ) chưa xác minh."
+     "note": "Nguồn: tuyensinh247. 2026: 36,2, cao nhất chuyên Anh toàn tỉnh mới. Thang 2024 (Tiền Giang cũ) chưa xác minh. 2022: 37,51 (Hoatieu, bảng điểm chuẩn chuyên Tiền Giang 2022). 2023: Hoatieu ghi trường có 2 lớp chuyên Anh trong 350 chỉ tiêu chuyên nhưng không ghi điểm."
     }
    ]
   }
@@ -304,7 +455,7 @@
   {
    "k": "so-chuyen-tien-giang",
    "name": "chuyên Tiền Giang",
-   "score": 6.5,
+   "score": 6.7,
    "paper": "so",
    "need_tv_more": false
   },

@@ -1,23 +1,36 @@
 {
  "so": "Tây Ninh",
  "slug": "tay-ninh",
- "merged_from": ["Tây Ninh", "Long An"],
+ "merged_from": [
+  "Tây Ninh",
+  "Long An"
+ ],
  "exam_2026": {
   "dates": "Tập trung 14h00 ngày 01/6/2026. 02/6 sáng: Ngữ văn (120 phút); 02/6 chiều: Tiếng Anh chung (60 phút); 03/6 sáng: Toán (120 phút); 03/6 chiều: môn chuyên – Toán, Ngữ văn, Tiếng Anh, Lịch sử, Địa lí 150 phút; Lý, Hóa, Sinh, Tin 120 phút. Giờ làm bài 7h30 (sáng) và 14h00 (chiều). Nộp hồ sơ chuyên 14–17/5/2026 (đăng ký online trên cổng của Sở trước).",
   "organisation": "Sở GD&ĐT Tây Ninh (tỉnh mới) ban hành MỘT kế hoạch tuyển sinh chuyên cho cả 2 trường: THPT chuyên Hoàng Lê Kha (Tây Ninh cũ) và THPT chuyên Trần Văn Giàu (tên mới của THPT chuyên Long An, Long An cũ). Cùng lịch thi, cùng chỉ tiêu 11 lớp/360 HS mỗi trường, cùng công thức. Theo springboard.vn, đề chuyên Anh 2026 (thi 03/6/2026) dùng chung cho cả Hoàng Lê Kha và Trần Văn Giàu; điểm chuẩn mỗi trường công bố riêng. Thí sinh phải tốt nghiệp THCS tại Tây Ninh (mới) hoặc có hộ khẩu Tây Ninh.",
-  "common_subjects": ["Toán", "Ngữ văn", "Tiếng Anh"],
+  "common_subjects": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh"
+  ],
   "notes": "Mỗi trường chuyên: Toán 70 (2 lớp), Lý 35, Hóa 35, Sinh 35, Tin 30, Văn 35, Tiếng Anh 70 (2 lớp), Sử 25, Địa 25 = 360. Ba môn chung thi cùng đề với kỳ thi lớp 10 công lập của tỉnh. Môn chuyên thi tự luận, riêng Tiếng Anh chuyên đánh giá nghe, viết, đọc và kiến thức ngôn ngữ. Trần Văn Giàu 2026 lần đầu mở chuyên Sử, Địa. Năm 2025 (trước sáp nhập): Tây Ninh cũ công bố điểm thi 14/6/2025, điểm chuẩn chậm nhất 28/6/2025; Long An cũ thi 6–7/6/2025, công bố điểm 20/6/2025 (16.600 thí sinh toàn tỉnh)."
  },
  "plan_2027": "Chưa tìm được kế hoạch 2027 của Sở Tây Ninh. Cấp Bộ: dự thảo thông tư (lấy ý kiến khoảng 9/2026) đề xuất thi vào lớp 10 công lập chỉ 2 môn Toán, Ngữ văn; chưa rõ ảnh hưởng tới trường chuyên.",
  "formula": {
   "text": "Điểm xét tuyển lớp chuyên = Toán + Ngữ văn + Tiếng Anh (chung) + Điểm môn chuyên × 2; không cộng điểm ưu tiên, khuyến khích (2026).",
-  "parts": ["Toán", "Ngữ văn", "Tiếng Anh (chung)", "Anh chuyên×2"],
+  "parts": [
+   "Toán",
+   "Ngữ văn",
+   "Tiếng Anh (chung)",
+   "Anh chuyên×2"
+  ],
   "max": 50,
   "conditions": "2026: tốt nghiệp THCS đúng độ tuổi; học lực và rèn luyện cả năm lớp 6–9 từ Khá trở lên; tất cả các bài thi từ 3,5 điểm trở lên; cư trú hoặc học THCS tại Tây Ninh. Trượt chuyên thì dùng điểm 3 môn chung xét NV1–3 trường công lập bình thường, không bị trừ điểm.",
   "formula_by_year": {
    "2023": "Long An cũ (chuyên Long An): Toán + Văn + Tiếng Anh không chuyên (hệ số 1) + Tiếng Anh chuyên × 2; mọi bài thi ≥ 4,0; lớp 9 phải là HS giỏi; cộng ưu tiên chứng chỉ (IELTS 5.5/TOEFL iBT 61: +1,0; IELTS 6.5/TOEFL iBT 80: +2,0) chỉ trong phương án xét tuyển khi giãn cách. Tiếng Anh chuyên 120 phút.",
    "2024-2025": "Tây Ninh cũ (Hoàng Lê Kha): Văn + Toán + Tiếng Anh + chuyên × 2 (+ ưu tiên nếu có) theo acclongan.vn/FPT Shop; thang 50. Long An cũ: chưa tìm được văn bản 2024, 2025 nhưng điểm chuẩn 2024 (36,80 chuyên Anh) cho thấy vẫn thang 50.",
-   "2026": "Toàn tỉnh mới: Toán + Văn + Anh + chuyên × 2, không cộng ưu tiên/khuyến khích, mọi bài ≥ 3,5 (tuyensinh247, Thương hiệu & Công luận)."
+   "2026": "Toàn tỉnh mới: Toán + Văn + Anh + chuyên × 2, không cộng ưu tiên/khuyến khích, mọi bài ≥ 3,5 (tuyensinh247, Thương hiệu & Công luận).",
+   "2023 (Tây Ninh cũ)": "Hướng dẫn tuyển sinh 24/4/2023 của Sở Tây Ninh: ĐXT = Văn + Toán + Anh (hệ số 1) + chuyên × 2; mọi bài > 2,0; hạnh kiểm, học lực THCS từ khá; được đăng ký môn chuyên 1 và 2, trượt cả hai xét lớp nguồn."
   }
  },
  "nv_rule": "2026: bắt buộc 1 nguyện vọng chuyên (một trường, một môn). Thí sinh chuyên Ngữ văn hoặc Tiếng Anh được đăng ký thêm NV2 vào chuyên Lịch sử hoặc Địa lí (nên có điểm chuẩn NV2 ở Sử, Địa); chuyên Toán được NV2 vào Hóa, Lý, Sinh, Tin. Ngoài ra được 3 nguyện vọng trường công lập thường (NV2 cao hơn NV1 ít nhất 1,0 điểm, NV3 cao hơn NV2 ít nhất 1,0). Không có lớp chuyên ngoại ngữ nào khác ngoài Tiếng Anh ở cả hai trường. Long An cũ 2023: 1 NV chuyên + 1 NV lớp không chuyên.",
@@ -27,22 +40,73 @@
   "has_listening": true,
   "essay_words": 250,
   "sections": [
-   {"format": "listening", "items": 20, "points": 2.0, "note": "3 phần: True/False 5 câu (0,5), MCQ 5 câu (0,5), sentence completion tối đa 2 từ 10 câu (1,0) – đề 2026"},
-   {"format": "sentence_completion", "items": 10, "points": 1.0, "note": "Use of English P1: MCQ ngữ pháp, từ vựng, thành ngữ (câu 21–30)"},
-   {"format": "error_id", "items": 5, "points": 0.5, "note": "Tìm và sửa lỗi trong đoạn văn (chủ đề AI)"},
-   {"format": "word_formation", "items": 10, "points": 1.0, "note": "Đoạn văn chủ đề sách"},
-   {"format": "cloze", "items": 8, "points": 0.8, "note": "Reading P1: multiple-choice cloze"},
-   {"format": "open_cloze", "items": 8, "points": 0.8, "note": "Reading P2: one-word cloze"},
-   {"format": "reading_mcq", "items": 6, "points": 0.6, "note": "Reading P3"},
-   {"format": "matching_headings", "items": 8, "points": 0.8, "note": "Reading P4: matching (việc làm bán thời gian)"},
-   {"format": "transformation", "items": 10, "points": 1.0, "note": "Writing P1: viết lại câu"},
-   {"format": "essay", "items": 1, "points": 1.5, "note": "Writing P2: ~250 từ (đề 2026: một ngày không dùng thiết bị thông minh)"}
+   {
+    "format": "listening",
+    "items": 20,
+    "points": 2.0,
+    "note": "3 phần: True/False 5 câu (0,5), MCQ 5 câu (0,5), sentence completion tối đa 2 từ 10 câu (1,0) – đề 2026"
+   },
+   {
+    "format": "sentence_completion",
+    "items": 10,
+    "points": 1.0,
+    "note": "Use of English P1: MCQ ngữ pháp, từ vựng, thành ngữ (câu 21–30)"
+   },
+   {
+    "format": "error_id",
+    "items": 5,
+    "points": 0.5,
+    "note": "Tìm và sửa lỗi trong đoạn văn (chủ đề AI)"
+   },
+   {
+    "format": "word_formation",
+    "items": 10,
+    "points": 1.0,
+    "note": "Đoạn văn chủ đề sách"
+   },
+   {
+    "format": "cloze",
+    "items": 8,
+    "points": 0.8,
+    "note": "Reading P1: multiple-choice cloze"
+   },
+   {
+    "format": "open_cloze",
+    "items": 8,
+    "points": 0.8,
+    "note": "Reading P2: one-word cloze"
+   },
+   {
+    "format": "reading_mcq",
+    "items": 6,
+    "points": 0.6,
+    "note": "Reading P3"
+   },
+   {
+    "format": "matching_headings",
+    "items": 8,
+    "points": 0.8,
+    "note": "Reading P4: matching (việc làm bán thời gian)"
+   },
+   {
+    "format": "transformation",
+    "items": 10,
+    "points": 1.0,
+    "note": "Writing P1: viết lại câu"
+   },
+   {
+    "format": "essay",
+    "items": 1,
+    "points": 1.5,
+    "note": "Writing P2: ~250 từ (đề 2026: một ngày không dùng thiết bị thông minh)"
+   }
   ],
   "difficulty": "B2+",
-  "difficulty_evidence": "Springboard.vn phân tích đề chính thức 2026 (85 câu, 150 phút, 4 khối: Listening 2,0 – Use of English 2,5 – Reading 3,0 – Writing 2,5): 'B2 vững đến B2+, một số câu Use of English và Writing tiệm cận C1'. Không có phần ngữ âm. Kế hoạch tuyển sinh 2026 của Sở cũng ghi đề chuyên Anh đánh giá nghe, viết, đọc và kiến thức ngôn ngữ. Long An cũ (kế hoạch 2023): Tiếng Anh chuyên đánh giá 3 kỹ năng nghe, viết, đọc hiểu + kiến thức ngôn ngữ, 120 phút – tức cả hai tỉnh cũ đều có nghe.",
+  "difficulty_evidence": "Springboard.vn phân tích đề chính thức 2026 (85 câu, 150 phút, 4 khối: Listening 2,0 – Use of English 2,5 – Reading 3,0 – Writing 2,5): 'B2 vững đến B2+, một số câu Use of English và Writing tiệm cận C1'. Không có phần ngữ âm. Kế hoạch tuyển sinh 2026 của Sở cũng ghi đề chuyên Anh đánh giá nghe, viết, đọc và kiến thức ngôn ngữ. Long An cũ (kế hoạch 2023): Tiếng Anh chuyên đánh giá 3 kỹ năng nghe, viết, đọc hiểu + kiến thức ngôn ngữ, 120 phút – tức cả hai tỉnh cũ đều có nghe. Đề Tây Ninh cũ 2025 (Springboard): cùng 4 khối và cùng tỉ lệ điểm với 2026 (Listening 2,0 – Lexico-grammar 2,5 – Reading 3,0 – Writing 2,5), Writing gồm 5 câu viết lại (0,5) và luận ~250 từ (2,0). Hướng dẫn tuyển sinh 2023 của Sở Tây Ninh: Tiếng Anh chuyên thi viết, có phần nghe, 150 phút, hệ số 2, mọi bài > 2,0; được đăng ký 2 môn chuyên.",
   "sample_links": [
    "https://springboard.vn/de-thi-chuyen-anh-tay-ninh-2026/",
-   "https://drive.google.com/drive/folders/1ZcKnBwKZhQdSTAEySjCXCsvPnqtg47J_"
+   "https://drive.google.com/drive/folders/1ZcKnBwKZhQdSTAEySjCXCsvPnqtg47J_",
+   "https://springboard.vn/de-thi-chuyen-anh-10-tay-ninh-2025-2026/ (đề chuyên Anh Tây Ninh cũ 2025, thi 5/6/2025)"
   ]
  },
  "schools": [
@@ -51,7 +115,28 @@
    "old_province": "Tây Ninh",
    "city": "Tây Ninh (cũ)",
    "classes": [
-    {"lang": "Anh", "quota": {"2024": 70, "2026": 70}, "applicants": {}, "cut": {"2020": 25.9, "2022": null, "2023": null, "2024": 32.55, "2025": null, "2026": 34.35}, "scale": {"2020": 50, "2024": 50, "2026": 50}, "note": "NV1. 2026: 34,35 (tuyensinh247, cột 2026). Bảng điểm có chuyên Anh 32,55 (Văn 34,25; Toán 35,25; Lý 37,5; Hóa 32,25; Sinh 32; Tin 32,25; Sử 17; tổng chỉ tiêu 315, 70 chuyên Anh): tuyensinh247 và Hoatieu ghi là năm 2024, còn dienmaycholon, FPT Shop, acclongan.vn ghi là năm 2025 – mâu thuẫn chưa giải quyết, tạm ghi 2024 và để 2025 null. 2020: 25,90 (Hoatieu). Chưa tìm được 2022, 2023."}
+    {
+     "lang": "Anh",
+     "quota": {
+      "2024": 70,
+      "2026": 70
+     },
+     "applicants": {},
+     "cut": {
+      "2020": 25.9,
+      "2022": null,
+      "2023": null,
+      "2024": 32.55,
+      "2025": null,
+      "2026": 34.35
+     },
+     "scale": {
+      "2020": 50,
+      "2024": 50,
+      "2026": 50
+     },
+     "note": "NV1. 2026: 34,35 (tuyensinh247, cột 2026). Bảng điểm có chuyên Anh 32,55 (Văn 34,25; Toán 35,25; Lý 37,5; Hóa 32,25; Sinh 32; Tin 32,25; Sử 17; tổng chỉ tiêu 315, 70 chuyên Anh): tuyensinh247 và Hoatieu ghi là năm 2024, còn dienmaycholon, FPT Shop, acclongan.vn ghi là năm 2025 – mâu thuẫn chưa giải quyết, tạm ghi 2024 và để 2025 null. 2020: 25,90 (Hoatieu). Chưa tìm được 2022, 2023."
+    }
    ]
   },
   {
@@ -59,11 +144,59 @@
    "old_province": "Long An",
    "city": "Tân An (cũ)",
    "classes": [
-    {"lang": "Anh", "quota": {"2023": 60, "2026": 70}, "applicants": {}, "cut": {"2022": 35.8, "2023": null, "2024": 36.8, "2025": null, "2026": 35.55}, "scale": {"2022": 50, "2024": 50, "2026": 50}, "note": "NV1. 2026: 35,55 (dienmaycholon; Toán 39,75; Hóa 38,25; Lý 37,5; Văn 34,75; Sinh 32,5; Tin NV1 33,25/NV2 36; Sử NV1 29,5/NV2 33,25; Địa NV1 25,75/NV2 29,75). 2024: 36,80 (Thư viện Pháp luật, doctailieu; Toán 38,25; Lý 37; Hóa 37; Văn 34,25). 2022: 35,80 (doctailieu, VnDoc; Toán 36; Hóa 37). 2023 chỉ tiêu 60 (2 lớp), điều kiện lớp 9 HS giỏi. Chưa tìm được 2023, 2025."}
+    {
+     "lang": "Anh",
+     "quota": {
+      "2023": 60,
+      "2026": 70
+     },
+     "applicants": {},
+     "cut": {
+      "2022": 35.8,
+      "2023": null,
+      "2024": 36.8,
+      "2025": null,
+      "2026": 35.55
+     },
+     "scale": {
+      "2022": 50,
+      "2024": 50,
+      "2026": 50
+     },
+     "note": "NV1. 2026: 35,55 (dienmaycholon; Toán 39,75; Hóa 38,25; Lý 37,5; Văn 34,75; Sinh 32,5; Tin NV1 33,25/NV2 36; Sử NV1 29,5/NV2 33,25; Địa NV1 25,75/NV2 29,75). 2024: 36,80 (Thư viện Pháp luật, doctailieu; Toán 38,25; Lý 37; Hóa 37; Văn 34,25). 2022: 35,80 (doctailieu, VnDoc; Toán 36; Hóa 37). 2023 chỉ tiêu 60 (2 lớp), điều kiện lớp 9 HS giỏi. Chưa tìm được 2023, 2025."
+    }
    ]
   }
  ],
- "stories": [],
+ "stories": [
+  {
+   "title": "Nam sinh Tây Ninh đạt 3 điểm 10 kỳ thi lớp 10 2026, đỗ cả chuyên tỉnh và PTNK",
+   "who": "học sinh",
+   "year": 2026,
+   "school": "THPT chuyên Tây Ninh (Hoàng Lê Kha / Trần Văn Giàu); Trường Phổ thông Năng khiếu",
+   "summary": "Nguyễn Thiện Nhân (THCS & THPT Hưng Điền B, vùng biên Long An cũ) đạt Toán chuyên 10, Toán 10, Tiếng Anh 10, Văn 9,25 – tổng 49,25/50 ở kỳ thi chuyên Tây Ninh 2026, đồng thời đỗ chuyên Toán PTNK (Toán chuyên 9,5) và chọn học PTNK. Em thi chuyên Toán, không phải chuyên Anh, nhưng đạt 10 Tiếng Anh chung. Em theo đuổi chuyên từ lớp 8 sau khi có nền lớp 6–7, học chủ yếu ở trường cộng học online với một thầy và một trung tâm ở TP.HCM, làm nhiều dạng đề; không ấn định số giờ học mỗi ngày.",
+   "takeaways": [
+    "Bắt đầu ôn chuyên từ lớp 8 trên nền lớp 6–7 vững",
+    "Học sinh ở huyện vẫn có thể học online với thầy/trung tâm ở TP.HCM thay vì lò luyện trực tiếp",
+    "Thi cả chuyên tỉnh (đầu tháng 6) và PTNK (cuối tháng 5): lịch không trùng, tăng cơ hội",
+    "Làm hết bài được giao trước rồi mới tìm thêm; khi gặp bài khó chủ động hỏi thầy và hiểu bản chất thay vì chỉ làm đúng một bài (lời khuyên của thầy Lương Xuân Vinh)"
+   ],
+   "url": "https://tienphong.vn/tuyen-sinh-vao-lop-10-nam-sinh-tay-ninh-dat-3-diem-10-nhung-lai-bat-ngo-voi-diem-van-post1854630.tpo"
+  },
+  {
+   "title": "Đề chuyên Anh Tây Ninh 2025-2026 (Hoàng Lê Kha): luận 250 từ về AI và tư duy độc lập",
+   "who": "giáo viên",
+   "year": 2025,
+   "school": "THPT chuyên Hoàng Lê Kha",
+   "summary": "Trung tâm Springboard đăng lại đề chính thức của Sở Tây Ninh cũ (thi 5/6/2025, 150 phút, 8 trang): Listening 2,0 (A/B/C, điền ≤ 2 từ, đúng/sai), Lexico-grammar 2,5 (trắc nghiệm, sửa 5 lỗi, word formation 10 câu), Reading 3,0 (trắc nghiệm, ghép đoạn, cloze, open cloze), Writing 2,5 (5 câu viết lại + luận ~250 từ về AI và tư duy độc lập của học sinh). So với đề 2026 của tỉnh mới, cấu trúc gần như giữ nguyên, chỉ tăng viết lại câu từ 5 lên 10 câu và đổi luận còn 1,5 điểm.",
+   "takeaways": [
+    "Cấu trúc đề ổn định 2025→2026: Listening 2,0 – Use of English 2,5 – Reading 3,0 – Writing 2,5, không có ngữ âm",
+    "Chủ đề luận hai năm liền đều về công nghệ (AI; một ngày không thiết bị thông minh): chuẩn bị ý và từ vựng chủ đề công nghệ – giáo dục",
+    "Word formation 10 câu = 1 điểm, bằng cả phần nghe điền từ: học hậu tố, tiền tố và dạng phủ định có hệ thống"
+   ],
+   "url": "https://springboard.vn/de-thi-chuyen-anh-10-tay-ninh-2025-2026/"
+  }
+ ],
  "prep_tips": [
   "Đề chuyên Anh 2026 có phần nghe 2,0 điểm (20 câu: True/False, MCQ, điền tối đa 2 từ) – cần luyện nghe điền từ chính xác chính tả (springboard.vn, đề 2026).",
   "Không có phần ngữ âm; trọng tâm là Use of English (MCQ, sửa lỗi, word formation = 2,5 điểm) và Reading (4 bài, 3,0 điểm) – luyện cloze/open cloze và matching (springboard.vn).",
@@ -77,24 +210,78 @@
   "Điểm chuẩn chuyên Anh Hoàng Lê Kha 2022, 2023, 2025 (và năm của bảng 32,55: 2024 hay 2025 – nguồn mâu thuẫn).",
   "Điểm chuẩn chuyên Anh Trần Văn Giàu/chuyên Long An 2023, 2025; số hồ sơ chuyên Anh 2026 của hai trường.",
   "Văn bản gốc kế hoạch 2026 của Sở Tây Ninh (mới có qua tuyensinh247 và báo Thương hiệu & Công luận); ngày công bố điểm chuẩn 2026.",
-  "Cấu trúc đề chuyên Anh Tây Ninh cũ/Long An cũ 2022–2025 (chỉ có mô tả chung 'nghe, viết, đọc, kiến thức ngôn ngữ', Long An 2023 thi 120 phút).",
   "Kế hoạch 2027 của Sở.",
-  "Chưa tìm được chia sẻ/kinh nghiệm thật của học sinh, giáo viên (đã dùng hết lượt tìm kiếm)."
+  "Chưa tìm được chia sẻ của học sinh đỗ chuyên Anh Hoàng Lê Kha/Trần Văn Giàu (hết 7 lượt tìm); stories hiện là thủ khoa chuyên Toán 2026 (Anh chung 10) và phân tích đề 2025.",
+  "Cấu trúc đề chuyên Anh Long An cũ 2022–2025 (120 phút năm 2023) và Tây Ninh cũ 2022–2024; đã có đề Tây Ninh 2025."
  ],
  "sources": [
-  {"title": "Tuyensinh247 – Thông tin tuyển sinh lớp 10 Tây Ninh 2026 (lịch thi, chỉ tiêu, công thức chuyên)", "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/tay-ninh-p17.html"},
-  {"title": "Tuyensinh247 – Điểm chuẩn lớp 10 Tây Ninh (chuyên Hoàng Lê Kha 2026, 2024)", "url": "https://diemthi.tuyensinh247.com/dc-lop10/tay-ninh-p17.html"},
-  {"title": "Thương hiệu & Công luận – Tây Ninh phê duyệt kế hoạch tuyển sinh lớp 10 THPT chuyên 2026-2027", "url": "https://thuonghieucongluan.com.vn/tay-ninh-phe-duyet-ke-hoach-tuye-n-sinh-va-o-lo-p-10-truo-ng-thpt-chuyen-nam-ho-c-2026-2027-a309009.html"},
-  {"title": "Springboard – Đề chuyên Anh Tây Ninh 2026 (cấu trúc, nhận xét độ khó)", "url": "https://springboard.vn/de-thi-chuyen-anh-tay-ninh-2026/"},
-  {"title": "Điện máy Chợ Lớn – Điểm chuẩn lớp 10 Tây Ninh (chuyên Trần Văn Giàu 2026, Hoàng Lê Kha)", "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-tinh-tay-ninh"},
-  {"title": "Hoatieu – Điểm thi tuyển sinh lớp 10 Tây Ninh 2025 (điểm chuẩn chuyên HLK 2024, 2020)", "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-tay-ninh-208930"},
-  {"title": "FPT Shop – Điểm chuẩn lớp 10 Tây Ninh 2025", "url": "https://fptshop.com.vn/tin-tuc/danh-gia/diem-chuan-lop-10-tay-ninh-2025-182638"},
-  {"title": "ACC Long An – Điểm chuẩn trường chuyên Hoàng Lê Kha (bảng 2025-2026, công thức)", "url": "https://acclongan.vn/diem-chuan-truong-chuyen-hoang-le-kha-tay-ninh/"},
-  {"title": "Thư viện Pháp luật – Điểm chuẩn tuyển sinh lớp 10 Long An 2024-2025 (chuyên Long An)", "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/diem-chuan-tuyen-sinh-lop-10-tinh-long-an-nam-hoc-20242025-138028859.html"},
-  {"title": "Doctailieu – Điểm chuẩn lớp 10 Long An (chuyên Long An 2022, 2024)", "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-long-an"},
-  {"title": "VnDoc – Điểm chuẩn lớp 10 Long An (chuyên Long An 2022)", "url": "https://vndoc.com/diem-chuan-lop-10-long-an-236626"},
-  {"title": "THPT Nguyễn Hữu Thọ (Long An) – Kế hoạch tuyển sinh lớp 10 THPT chuyên Long An 2023-2024", "url": "https://thptnguyenhuutho.longan.edu.vn/ke-hoach-tuyen-sinh-vao-lop-10-truong-thpt-chuyen-long-an-nam-hoc-2023-2024.html"},
-  {"title": "Dân trí – Xem điểm thi lớp 10 Long An 2025 (lịch thi 6–7/6/2025)", "url": "https://dantri.com.vn/giao-duc/xem-diem-thi-lop-10-cua-long-an-co-truong-da-cong-bo-diem-chuan-20250620112520293.htm"},
-  {"title": "Thư viện Pháp luật – chủ đề thi vào lớp 10 (đề xuất thi 2 môn, cấp Bộ)", "url": "https://thuvienphapluat.vn/phap-luat/chu-de/thi-vao-lop-10"}
+  {
+   "title": "Tuyensinh247 – Thông tin tuyển sinh lớp 10 Tây Ninh 2026 (lịch thi, chỉ tiêu, công thức chuyên)",
+   "url": "https://diemthi.tuyensinh247.com/tuyen-sinh-lop10/tay-ninh-p17.html"
+  },
+  {
+   "title": "Tuyensinh247 – Điểm chuẩn lớp 10 Tây Ninh (chuyên Hoàng Lê Kha 2026, 2024)",
+   "url": "https://diemthi.tuyensinh247.com/dc-lop10/tay-ninh-p17.html"
+  },
+  {
+   "title": "Thương hiệu & Công luận – Tây Ninh phê duyệt kế hoạch tuyển sinh lớp 10 THPT chuyên 2026-2027",
+   "url": "https://thuonghieucongluan.com.vn/tay-ninh-phe-duyet-ke-hoach-tuye-n-sinh-va-o-lo-p-10-truo-ng-thpt-chuyen-nam-ho-c-2026-2027-a309009.html"
+  },
+  {
+   "title": "Springboard – Đề chuyên Anh Tây Ninh 2026 (cấu trúc, nhận xét độ khó)",
+   "url": "https://springboard.vn/de-thi-chuyen-anh-tay-ninh-2026/"
+  },
+  {
+   "title": "Điện máy Chợ Lớn – Điểm chuẩn lớp 10 Tây Ninh (chuyên Trần Văn Giàu 2026, Hoàng Lê Kha)",
+   "url": "https://dienmaycholon.com/kinh-nghiem-mua-sam/diem-chuan-lop-10-tinh-tay-ninh"
+  },
+  {
+   "title": "Hoatieu – Điểm thi tuyển sinh lớp 10 Tây Ninh 2025 (điểm chuẩn chuyên HLK 2024, 2020)",
+   "url": "https://hoatieu.vn/diem-thi-tuyen-sinh-lop-10-tay-ninh-208930"
+  },
+  {
+   "title": "FPT Shop – Điểm chuẩn lớp 10 Tây Ninh 2025",
+   "url": "https://fptshop.com.vn/tin-tuc/danh-gia/diem-chuan-lop-10-tay-ninh-2025-182638"
+  },
+  {
+   "title": "ACC Long An – Điểm chuẩn trường chuyên Hoàng Lê Kha (bảng 2025-2026, công thức)",
+   "url": "https://acclongan.vn/diem-chuan-truong-chuyen-hoang-le-kha-tay-ninh/"
+  },
+  {
+   "title": "Thư viện Pháp luật – Điểm chuẩn tuyển sinh lớp 10 Long An 2024-2025 (chuyên Long An)",
+   "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/diem-chuan-tuyen-sinh-lop-10-tinh-long-an-nam-hoc-20242025-138028859.html"
+  },
+  {
+   "title": "Doctailieu – Điểm chuẩn lớp 10 Long An (chuyên Long An 2022, 2024)",
+   "url": "https://doctailieu.com/diem-chuan-lop-10-tinh-long-an"
+  },
+  {
+   "title": "VnDoc – Điểm chuẩn lớp 10 Long An (chuyên Long An 2022)",
+   "url": "https://vndoc.com/diem-chuan-lop-10-long-an-236626"
+  },
+  {
+   "title": "THPT Nguyễn Hữu Thọ (Long An) – Kế hoạch tuyển sinh lớp 10 THPT chuyên Long An 2023-2024",
+   "url": "https://thptnguyenhuutho.longan.edu.vn/ke-hoach-tuyen-sinh-vao-lop-10-truong-thpt-chuyen-long-an-nam-hoc-2023-2024.html"
+  },
+  {
+   "title": "Dân trí – Xem điểm thi lớp 10 Long An 2025 (lịch thi 6–7/6/2025)",
+   "url": "https://dantri.com.vn/giao-duc/xem-diem-thi-lop-10-cua-long-an-co-truong-da-cong-bo-diem-chuan-20250620112520293.htm"
+  },
+  {
+   "title": "Thư viện Pháp luật – chủ đề thi vào lớp 10 (đề xuất thi 2 môn, cấp Bộ)",
+   "url": "https://thuvienphapluat.vn/phap-luat/chu-de/thi-vao-lop-10"
+  },
+  {
+   "title": "Tiền Phong 6/2026 – Nam sinh Tây Ninh đạt 3 điểm 10 nhưng bất ngờ với điểm Văn",
+   "url": "https://tienphong.vn/tuyen-sinh-vao-lop-10-nam-sinh-tay-ninh-dat-3-diem-10-nhung-lai-bat-ngo-voi-diem-van-post1854630.tpo"
+  },
+  {
+   "title": "Springboard – Đề chuyên Anh Tây Ninh 2025-2026",
+   "url": "https://springboard.vn/de-thi-chuyen-anh-10-tay-ninh-2025-2026/"
+  },
+  {
+   "title": "Sở GD&ĐT Tây Ninh – Hướng dẫn tuyển sinh lớp 10 năm học 2023-2024 (PDF)",
+   "url": "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/tay-ninh-lop-muoi.pdf"
+  }
  ]
 }

@@ -60,6 +60,7 @@ td.n,th.n{text-align:right;font-family:var(--f-mono);white-space:nowrap}
 ol.src{padding-left:1.4em;font-size:.86rem;word-break:break-word}
 .uni{border-top:2px dashed var(--line);margin-top:12px;padding-top:12px}
 .empty{padding:30px;text-align:center}
+.nat h2{font-size:1.3rem;margin:18px 0 6px}.nat h2:first-child{margin-top:0}.nat h3{font-size:1.05rem;margin:14px 0 4px}.nat ul{margin:0 0 6px;padding-left:1.2em}.nat table{margin:8px 0}
 @media print{nav.side,.top a,.btn{display:none}.wrap{display:block}body{background:#fff}}
 </style>
 </head>
@@ -82,9 +83,9 @@ const VUNG=[['Miền Bắc',['ha-noi','hai-phong','quang-ninh','bac-ninh','hung-
  ['Miền Trung và Tây Nguyên',['thanh-hoa','nghe-an','ha-tinh','quang-tri','hue','da-nang','quang-ngai','gia-lai','dak-lak','khanh-hoa','lam-dong']],
  ['Miền Nam',['tp-ho-chi-minh','dong-nai','tay-ninh','can-tho','vinh-long','dong-thap','an-giang','ca-mau']]];
 const byS=Object.fromEntries(LIST.map(x=>[x.slug,x]));
-let cur=(location.hash||'').slice(1);if(!byS[cur])cur='ha-noi';
+let cur=(location.hash||'').slice(1);if(!byS[cur]&&cur!=='kinh-nghiem')cur='ha-noi';
 function nav(filter){const f=(filter||'').toLowerCase();
-  document.getElementById('list').innerHTML=VUNG.map(([v,ks])=>{const items=ks.map(k=>byS[k]).filter(Boolean).filter(x=>{if(!f)return true;const r=R[x.slug];return (x.name+' '+(x.merged_from||[]).join(' ')+' '+(r?(r.schools_raw||[]).map(s=>s.name).join(' '):'')).toLowerCase().includes(f)});
+  document.getElementById('list').innerHTML=(D.national&&!f?`<h4>Toàn quốc</h4><button type="button" data-s="kinh-nghiem" aria-current="${cur==='kinh-nghiem'}"><span>Kinh nghiệm ôn chuyên Anh</span></button>`:'')+VUNG.map(([v,ks])=>{const items=ks.map(k=>byS[k]).filter(Boolean).filter(x=>{if(!f)return true;const r=R[x.slug];return (x.name+' '+(x.merged_from||[]).join(' ')+' '+(r?(r.schools_raw||[]).map(s=>s.name).join(' '):'')).toLowerCase().includes(f)});
     return items.length?`<h4>${v}</h4>`+items.map(x=>{const r=R[x.slug];return `<button type="button" data-s="${x.slug}" aria-current="${x.slug===cur}"><span>${esc(x.name)}${x.merged_from&&x.merged_from.length?`<br><small>${esc(x.merged_from.slice(1).map(m=>'+ '+m).join(' '))}</small>`:''}</span><span class="dot ${x.slug==='ha-noi'?'high':r?(r.confidence||'medium'):'none'}"></span></button>`}).join(''):''}).join('')||'<p class="small muted">Không tìm thấy.</p>'}
 function cutTable(schools){
   const ys=[...new Set(schools.flatMap(s=>(s.classes||[]).flatMap(c=>Object.keys(c.cut||{}))))].sort();
@@ -101,7 +102,9 @@ function storiesHTML(st){if(!st||!st.length)return '<p class="muted">Chưa tìm 
 function formulaHTML(F,nv){if(!F)return '';
   return `<p><b>${esc(F.text||'')}</b></p>${F.conditions?`<p class="small">${esc(F.conditions)}</p>`:''}${F.formula_by_year&&Object.keys(F.formula_by_year).length?`<details><summary class="small">Công thức từng năm</summary><ul class="small">${Object.entries(F.formula_by_year).map(([y,t])=>`<li><b>${esc(y)}:</b> ${esc(t)}</li>`).join('')}</ul></details>`:''}${nv?`<p class="small"><b>Nguyện vọng:</b> ${esc(nv)}</p>`:''}`}
 function show(slug){cur=slug;history.replaceState(null,'','#'+slug);nav(document.getElementById('q').value);
-  const meta=byS[slug],r=R[slug];const M=document.getElementById('main');
+  const M=document.getElementById('main');
+  if(slug==='kinh-nghiem'){M.innerHTML=`<div class="card"><p class="small muted" style="margin:0">Toàn quốc</p><h2>Kinh nghiệm ôn chuyên Anh</h2><p class="sub">Chia sẻ của thủ khoa, học sinh đỗ, phụ huynh và giáo viên luyện thi, kèm những điểm chung rút ra. Mỗi mục dẫn về bài gốc.</p></div><div class="card nat">${D.national}</div>`;window.scrollTo({top:0});return}
+  const meta=byS[slug],r=R[slug];
   const head=`<div class="card"><p class="small muted" style="margin:0">Sở GD&amp;ĐT</p><h2>${esc(meta.name)}</h2>${meta.merged_from&&meta.merged_from.length?`<p class="sub">Gồm các tỉnh, thành cũ: ${esc(meta.merged_from.join(', '))}</p>`:'<p class="sub">Không sáp nhập</p>'}
    <div class="chips">${r?`<span class="chip ${esc(r.confidence||'medium')}">Độ đầy đủ số liệu: ${({high:'cao',medium:'vừa',low:'thấp'})[r.confidence]||'vừa'}</span>`:''}${r&&r.paper&&r.paper.difficulty?`<span class="chip">Đề chuyên Anh khoảng ${esc(r.paper.difficulty)}</span>`:''}${r&&r.exam_2026&&r.exam_2026.dates?`<span class="chip">Thi 2026: ${esc(String(r.exam_2026.dates).slice(0,40))}${String(r.exam_2026.dates).length>40?'…':''}</span>`:''}</div>
    <div class="row">${slug==='ha-noi'||r?`<a class="btn" href="../chuyen-anh-14-ngay/?so=${slug}">Mở bộ ôn 14 buổi cho ${esc(meta.name)}</a>`:''}${slug==='ha-noi'?'<a class="btn ghost" href="../tuyen-sinh/">Trang tuyển sinh chuyên ngữ Hà Nội</a>':''}</div></div>`;
@@ -121,7 +124,7 @@ function show(slug){cur=slug;history.replaceState(null,'','#'+slug);nav(document
   window.scrollTo({top:0})}
 document.getElementById('list').addEventListener('click',e=>{const b=e.target.closest('button[data-s]');if(b)show(b.dataset.s)});
 document.getElementById('q').addEventListener('input',e=>nav(e.target.value));
-window.addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(byS[h]&&h!==cur)show(h)});
+window.addEventListener('hashchange',()=>{const h=location.hash.slice(1);if((byS[h]||h==='kinh-nghiem')&&h!==cur)show(h)});
 show(cur);
 })();
 </script>

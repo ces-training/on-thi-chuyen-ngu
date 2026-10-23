@@ -127,7 +127,26 @@ FMT = {"listening": "Nghe", "pronunciation": "Phát âm", "stress": "Trọng âm
        "matching_headings": "Nối tiêu đề với đoạn", "dialogue_order": "Sắp xếp hội thoại", "essay": "Viết bài luận", "paragraph_writing": "Viết đoạn văn", "guided_writing": "Viết theo gợi ý",
        "translation": "Dịch", "true_false": "Đúng / Sai", "gap_text": "Điền câu vào đoạn", "other": "Dạng khác"}
 TINH_KEYS = ["exam_2026", "plan_2027", "formula_raw", "nv_rule", "schools_raw", "paper", "prep_tips", "stories", "uni", "gaps", "sources", "confidence"]
-tdata = {"list": RLIST, "fmt": FMT, "updated": datetime.date.today().strftime("%d/%m/%Y"),
+# kinh nghiệm chung toàn quốc: bỏ phần ghi chú nội bộ (nhãn nguồn, mục chỉ có tiêu đề, lỗ hổng)
+import markdown
+def national_html():
+    f = here.parent / "tinh" / "kinh-nghiem-raw.md"
+    if not f.exists():
+        return ""
+    t = f.read_text(encoding="utf-8")
+    t = t[t.index("## A."):] if "## A." in t else t
+    t = t.split("## Lỗ hổng")[0]
+    blocks = re.split(r"(?=^### )", t, flags=re.M)
+    blocks = [b for b in blocks if "chỉ có tiêu đề" not in b]
+    t = "".join(blocks)
+    t = re.sub(r"\s*\[(?:đã mở|file sở|trang HN[^\]]*)\]", "", t)
+    t = re.sub(r"[Tt]heo trang HN,?\s*", "", t).replace("trang HN", "trang Tuyển sinh chuyên ngữ Hà Nội")
+    t = re.sub(r"^### \d+\. ", "### ", t, flags=re.M)
+    t = "\n".join(("|" + "|".join(l.strip().strip("|").split("|")[:2]) + "|") if l.startswith("|") else l for l in t.split("\n"))
+    t = re.sub(r"(\. )([a-zà-ỹđ])", lambda m: m.group(1) + m.group(2).upper(), t)
+    h = markdown.markdown(t, extensions=["tables"])
+    return re.sub(r"(https?://[^\s<]+)", r'<a href="\1" target="_blank" rel="noopener">Đọc bài gốc</a>', h).replace("<strong>URL:</strong>", "<strong>Nguồn:</strong>")
+tdata = {"national": national_html(), "list": RLIST, "fmt": FMT, "updated": datetime.date.today().strftime("%d/%m/%Y"),
          "regions": {k: {kk: v.get(kk) for kk in TINH_KEYS} for k, v in REG.items() if k != "ha-noi"}}
 ttpl = (here.parent / "tinh" / "template.html").read_text(encoding="utf-8")
 (repo / "tinh").mkdir(exist_ok=True)
