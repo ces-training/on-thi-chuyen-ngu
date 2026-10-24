@@ -3802,7 +3802,7 @@ function vGoi(){
    <div class="grid2 sl-two">
     <div class="card"><p class="eyebrow">Tự học với web</p><h3>Gói Web</h3><p class="small">Quyền học trọn một giai đoạn (nhiều chặng 14 buổi) theo lộ trình, máy chấm bài giấy, nhận xét chi tiết bài viết theo tiêu chí đề chuyên, báo cáo tự động hằng tháng. Hùng nhắc nhịp, lộ trình tự đổi tuyến theo kết quả.</p>
      <div class="sl-phs">${ph.map(p=>`<div class="sl-ph ${p.k<start?'sl-past':p.k===start?'sl-here':''}"><div class="sl-ph-t"><b>GĐ${p.k} ${esc(p.name)}</b> <span class="small muted">${esc(p.band)}</span>${p.k===start?' <span class="pill">bạn ấy bắt đầu từ đây</span>':''}<br><span class="small">${esc(p.blurb)}</span>${est(p.k)?`<br><span class="small muted">${esc(est(p.k))}</span>`:''}${p.k<start?'<br><span class="small muted">Bài kiểm tra cho thấy bạn ấy đã qua giai đoạn này.</span>':''}</div><b class="sl-price">${vnd(GD_PRICE[p.k])}</b></div>`).join('')}</div></div>
-    <div class="card"><p class="eyebrow">Có cô theo sát</p><h3>Gói Quản gia học tập</h3><p class="small">Gói Web cộng một cô chịu trách nhiệm cho bạn ấy theo mô hình 3T của CES: <b>tổ chức nguồn lực</b> (web, lớp ở CES, luyện đề, giáo viên nước ngoài khi cần), <b>theo sát cá nhân</b> (xem tiến độ hằng tuần, chấm bài viết, tin Zalo mỗi tuần cho bố mẹ, gọi mỗi tháng), <b>test sớm, điều chỉnh sớm</b> (bài kiểm tra cửa giai đoạn, đổi nội dung hoặc tốc độ ngay khi số liệu đi xuống).</p>
+    <div class="card"><p class="eyebrow">Có cô theo sát</p><h3>Gói Quản gia học tập</h3><p class="small">Gói Web cộng một cô chịu trách nhiệm cho bạn ấy theo mô hình 3T của CES: <b>tổ chức nguồn lực</b> (web, lớp học trực tiếp gần nhà, luyện đề, giáo viên nước ngoài khi cần), <b>theo sát cá nhân</b> (xem tiến độ hằng tuần, chấm bài viết, tin Zalo mỗi tuần cho bố mẹ, gọi mỗi tháng), <b>test sớm, điều chỉnh sớm</b> (bài kiểm tra cửa giai đoạn, đổi nội dung hoặc tốc độ ngay khi số liệu đi xuống).</p>
      <p><b>Học phí:</b> đề xuất rõ ràng sau buổi đánh giá 15–20 phút với cô, theo mục tiêu, thời gian còn lại và nguồn lực cần tổ chức.</p>${cap}
      <div class="row">${askBtn('Đặt 15 phút với cô','Gói Quản gia')}<a class="btn ghost" href="${QG_URL}" target="_blank" rel="noopener">Xem trang Quản gia học tập</a></div></div></div>
    <div class="card"><h3>So sánh hai gói</h3><div class="tbl-wrap"><table><thead><tr><th>Thành phần</th><th>Gói Web</th><th>Gói Quản gia</th></tr></thead><tbody>
@@ -3812,7 +3812,7 @@ function vGoi(){
     <tr><td>Kiểm tra cuối buổi, bài kiểm tra cửa giai đoạn</td><td>Có, máy chấm</td><td>Có, cô xem lại</td></tr>
     <tr><td>Theo sát</td><td>Hùng nhắc nhịp, báo cáo tháng tự động</td><td>Cô theo sát (tối đa 15 học viên), tin tuần cho bố mẹ, gọi mỗi tháng</td></tr>
     <tr><td>Phân tích và điều chỉnh</td><td>Theo quy tắc tự động</td><td>Cô tìm nguyên nhân rồi điều chỉnh</td></tr>
-    <tr><td>Lớp ở CES, giáo viên nước ngoài, trợ giảng, luyện đề</td><td>—</td><td>Tổ chức theo nhu cầu của bạn ấy</td></tr>
+    <tr><td>Lớp học trực tiếp gần nhà, giáo viên nước ngoài, trợ giảng, luyện đề</td><td>—</td><td>Tổ chức theo nhu cầu của bạn ấy</td></tr>
     <tr><td>Đồng hành ngoài giờ</td><td>—</td><td>Có</td></tr>
     <tr><td>Học phí</td><td>Công khai theo giai đoạn</td><td>Đề xuất rõ ràng sau bước đánh giá</td></tr></tbody></table></div></div>
    <div class="card"><h3>Quy tắc đăng ký Gói Web</h3><ul class="small">
