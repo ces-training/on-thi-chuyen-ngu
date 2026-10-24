@@ -925,7 +925,7 @@ function updateGate(){
 }
 function go(v,opt){
   if(v==='days'){const d=(opt&&opt.day)||CUR_DAY||nextDay();
-    if(!dayOpen(d)&&(S.diag||(opt&&opt.day))){hungToast(lockMsg(d),lockedDayAct());return}}
+    if(!dayOpen(d)&&(S.diag||(opt&&opt.day))&&!(S.diag&&CODE_GATE())){hungToast(lockMsg(d),lockedDayAct());return}}
   if(v==='diag')GATE_MIN=true;
   VIEW=v;M().dataset.v=v;if(opt&&opt.day)CUR_DAY=opt.day;document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.view===v?'true':'false'));views[v]();renderHello();updateGate();if({plan:1,course:1,school:1}[v])signal('tab_'+v);try{window.scrollTo({top:0})}catch(e){}}
 document.getElementById('tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(b)go(b.dataset.view)});
@@ -1034,6 +1034,7 @@ function vStart(){
   ${dashHTML(nd)}<div class="dash-after">
   ${loginCard()}
   ${homeSalesHTML()}
+  ${earlyMsgHTML()}
   <div class="card hung-card">${hungFig()}
     <h3>Tớ là Hùng, còn cậu?</h3>
     <p class="small">Hùng trong "Hùng dũng", chứ không phải Hùng trong "Hùng hổ" nhé. Tớ sẽ đi cùng cậu suốt chặng này. Cho tớ biết tên để tớ gọi cho thân.</p>
@@ -1113,7 +1114,7 @@ function wireTest(kind){
 function vDiag(){
   const r=S.diag;
   M().innerHTML=`<section class="view"><div><p class="eyebrow">Trước buổi 1</p><h2>Bài kiểm tra đầu vào</h2><p class="lead">45 câu từ dễ đến khó (mức A2, B1, B2)${TESTS.diag.items.some(i=>i.obj)?', hỏi đúng những gì 14 buổi sẽ dạy':''}: nghe${TESTS.diag.listen_yt?' một đoạn video thật':''}, ngữ pháp, từ vựng, đọc hiểu và tự viết câu trả lời. Khoảng 35 phút, nhớ bật loa. Nộp xong còn 2 phần ngắn (dạng đề của sở cậu và một đoạn viết, khoảng 20 phút) để sau 14 buổi so tiến bộ. Cậu làm một mình, không tra từ điển; câu nào không biết thì cứ bỏ qua, như vậy kết quả mới đúng với sức cậu.</p></div>
-  ${r?resultCard(r,'Kết quả đầu vào')+leadCardHTML()+txExtrasHTML('diag')+`<div class="row"><button class="btn hi" id="toDays">Bắt đầu buổi 1</button><button class="btn ghost" id="toPlan">Xem lộ trình phù hợp</button></div><details class="card"><summary>Xem lại từng câu</summary>${renderTest('diag')}</details>`:renderTest('diag')}</section>`;
+  ${r?resultCard(r,'Kết quả đầu vào')+leadCardHTML()+(SALES_ON()?earlyMsgHTML():'')+txExtrasHTML('diag')+`<div class="row"><button class="btn hi" id="toDays">${CODE_GATE()?'Xem chương trình 14 buổi':'Bắt đầu buổi 1'}</button><button class="btn ghost" id="toPlan">Xem lộ trình phù hợp</button></div><details class="card"><summary>Xem lại từng câu</summary>${renderTest('diag')}</details>`:renderTest('diag')}</section>`;
   wireTest('diag');if(r){wireTestExtras('diag',()=>vDiag());wireLead(()=>vDiag())}
   if(r){$('#toDays').onclick=()=>go('days',{day:nextDay()});$('#toPlan').onclick=()=>go('plan')}
 }
@@ -1123,11 +1124,14 @@ function dueQueue(day){
   return Object.entries(S.queue).filter(([id,q])=>q.due<=day&&ITEM[id]&&ITEM[id].day<day).sort((a,b)=>a[1].due-b[1].due).slice(0,4).map(([id])=>id);
 }
 function vDays(){
-  let d=CUR_DAY||nextDay();if(S.diag&&!dayOpen(d))d=Math.max(1,lastOpenDay());CUR_DAY=d;
+  let d=CUR_DAY||nextDay();if(S.diag&&!dayOpen(d)&&!CODE_GATE())d=Math.max(1,lastOpenDay());CUR_DAY=d;
   const strip=DAYS.map(x=>{const st=dayStatus(x.day);return `<button class="day ${st==='done'?'done':st==='part'?'part':''} ${x.type==='review'?'review':''} ${dayOpen(x.day)?'':'locked'}" data-d="${x.day}" aria-pressed="${x.day===d&&dayOpen(x.day)}" ${dayOpen(x.day)?'':'aria-disabled="true"'}>${dayIcon(x.day,'di',34)}<b>${x.day}</b><small>${esc(x.theme_vi)}</small></button>`}).join('');
   M().innerHTML=`<section class="view"><div class="days" id="dayStrip">${strip}</div><div id="dayBody"></div></section>`;
   $('#dayStrip').onclick=e=>{const b=e.target.closest('.day');if(!b)return;const n=+b.dataset.d;if(!dayOpen(n)){hungToast(lockMsg(n),lockedDayAct());return}CUR_DAY=n;vDays()};
   if(!S.diag&&!pvOpen()){$('#dayBody').innerHTML=`<div class="card lockbox">${doodle('lock','lk',56)}<div><p class="eyebrow">Còn khoá</p><h3>14 buổi đang chờ cậu</h3><p>Cậu xem trước được tên và chủ đề từng buổi ở trên. Làm bài đầu vào xong là buổi 1 mở, sau đó mỗi buổi mở khi cậu xong buổi trước. Đi đúng thứ tự thì vòng ôn xoắn ốc mới chạy chuẩn được.</p><div class="row"><button class="btn hi" id="dDiag">Làm bài đầu vào</button></div></div></div>`;$('#dDiag').onclick=()=>go('diag');return}
+  /* có bài đầu vào nhưng chưa có mã vào lớp: xem trước nội dung từng buổi, bài tập chi tiết mở khi giáo viên cấp mã */
+  if(CODE_GATE()){$('#dayStrip').querySelectorAll('.day').forEach(b=>{b.classList.remove('locked');b.removeAttribute('aria-disabled');b.setAttribute('aria-pressed',String(+b.dataset.d===d))});
+    $('#dayStrip').onclick=e=>{const b=e.target.closest('.day');if(!b)return;CUR_DAY=+b.dataset.d;vDays();openLeadDlg(CUR_DAY)};$('#dayBody').innerHTML=dayDemoHTML(d);return}
   renderDay(d);
 }
 

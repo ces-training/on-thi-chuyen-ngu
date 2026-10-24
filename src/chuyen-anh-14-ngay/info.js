@@ -15,16 +15,18 @@ function renderRegionBar(){let b=document.getElementById('regBar');if(!b){const 
   b.innerHTML=`<span>Xem tỉnh, thành khác</span><select id="regTop" aria-label="Xem thông tin thi của tỉnh, thành khác" title="Bấm để chọn tỉnh, thành khác">${regionOptionsHTML(regionKey())}</select>`;
   b.querySelector('select').onchange=e=>{setRegion(e.target.value);GATE_MIN=false;go(VIEW==='diag'?'exam':VIEW)}}
 /* popup lần đầu: hỏi khu vực */
-function regionGate(){if(S.regionSet||PREVIEW)return false;let g=document.getElementById('regGate');if(g)return true;
+function regionGate(){if((S.regionSet&&S.gradeSet)||PREVIEW)return false;let g=document.getElementById('regGate');if(g)return true;
   g=document.createElement('div');g.id='regGate';g.className='gate';g.setAttribute('role','dialog');g.setAttribute('aria-modal','true');g.setAttribute('aria-labelledby','regT');
-  g.innerHTML=`<div class="gate-card paper tape"><div class="gate-top">${hungFig()}<div><p class="eyebrow">Chào cậu, chào cô chú!</p><h2 id="regT">Cậu đang quan tâm thông tin, tài liệu ôn thi chuyên ngữ ở khu vực nào?</h2></div></div>
-   <p>Tớ là Hùng. Tớ đã gom lịch thi, trường, điểm chuẩn, công thức xét tuyển, đề chuyên Anh và chia sẻ của các anh chị đỗ chuyên ở cả 34 tỉnh, thành. Chọn khu vực để tớ chỉ hiện đúng phần của cậu nhé. Cô chú phụ huynh cũng chọn ở đây ạ.</p>
-   <label class="fld"><span class="small muted">Tỉnh, thành (theo địa giới mới từ 1/7/2025)</span><select id="regFirst">${regionOptionsHTML(regionKey())}</select></label>
+  g.innerHTML=`<div class="gate-card paper tape"><div class="gate-top">${hungFig()}<div><p class="eyebrow">Chào cậu, chào cô chú!</p><h2 id="regT">Cậu quan tâm bộ đề, chương trình ôn thi chuyên ngữ miễn phí của tỉnh, thành nào?</h2></div></div>
+   <p>Tớ là Hùng. Tớ đã gom lịch thi, trường, điểm chuẩn, cấu trúc đề chuyên Anh và chia sẻ của các anh chị đỗ chuyên ở cả 34 tỉnh, thành. Trả lời 2 câu dưới đây để tớ chỉ hiện đúng phần của cậu nhé. Cô chú phụ huynh cũng chọn ở đây ạ.</p>
+   <label class="fld"><span class="small muted">1. Tỉnh, thành (theo địa giới mới từ 1/7/2025)</span><select id="regFirst">${regionOptionsHTML(regionKey())}</select></label>
+   <label class="fld"><span class="small muted">2. Bạn chuẩn bị ôn chuyên ngữ đang học lớp mấy?</span><select id="gradeFirst"><option value="">Chọn lớp</option><option value="5">Lớp 5 trở xuống</option>${[6,7,8,9].map(g=>`<option value="${g}" ${S.gradeSet&&gradeNow()===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label>
    <div class="row" style="margin-top:12px"><button class="btn hi big" type="button" id="regGo">Xem thông tin thi</button></div>
    <p class="small muted">Muốn xem tỉnh, thành khác lúc nào cũng được: bấm ô "Xem tỉnh, thành khác" trên thanh công cụ.</p></div>`;
   document.body.appendChild(g);document.body.classList.add('gated');
-  const sel=g.querySelector('#regFirst'),btn=g.querySelector('#regGo');const lab=()=>{btn.textContent='Xem thông tin thi ở '+(REGION_LIST.find(r=>r.slug===sel.value)||{}).name};lab();sel.onchange=lab;
-  btn.onclick=()=>{setRegion(sel.value);g.remove();document.body.classList.remove('gated');go('exam')};
+  const sel=g.querySelector('#regFirst'),gr=g.querySelector('#gradeFirst'),btn=g.querySelector('#regGo');
+  const lab=()=>{btn.disabled=!gr.value;btn.textContent=gr.value?'Xem thông tin thi ở '+(REGION_LIST.find(r=>r.slug===sel.value)||{}).name:'Chọn lớp để tiếp tục'};lab();sel.onchange=lab;gr.onchange=lab;
+  btn.onclick=()=>{if(!gr.value)return;const gv=+gr.value;S.gradeEarly=gv<6;setGrade(gv<6?6:gv);S.gradeSet=true;setRegion(sel.value);g.remove();document.body.classList.remove('gated');go('exam')};
   try{sel.focus({preventScroll:true})}catch(e){}
   return true}
 
@@ -66,6 +68,7 @@ function ctaHTML(RG,best){
 function vExam(){const RG=REG();
   M().innerHTML=`<section class="view ix"><div><p class="eyebrow">Thông tin thi chuyên Anh</p><h2>${esc(RG.name)}</h2>${RG.merged_from&&RG.merged_from.length?`<p class="lead">Gồm các tỉnh, thành cũ: ${esc(RG.merged_from.join(', '))}.</p>`:''}
    <div class="hung-say">${hungFig('sm')}<p>Đây là những gì tớ gom được về kỳ thi vào lớp 10 chuyên Anh ở ${esc(RG.name)}: lịch thi, trường và điểm chuẩn, công thức, đề, và chia sẻ của các anh chị đã đỗ. Đọc xong, thử 3 câu ở dưới rồi làm bài đầu vào để biết cậu đang ở đâu nhé.</p></div></div>
+   ${earlyMsgHTML()}
    <div id="ixBody"><div class="card"><p class="muted">Đang tải thông tin…</p></div></div></section>`;
   loadInfo().then(D=>{if(VIEW!=='exam'||regionKey()!==RG.slug)return;
     const R=D&&D.regions&&D.regions[RG.slug];const FMT=(D&&D.fmt)||{};

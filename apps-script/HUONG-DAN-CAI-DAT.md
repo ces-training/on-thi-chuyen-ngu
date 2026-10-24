@@ -115,7 +115,8 @@ Google Apps Script, Sheets và Drive đều miễn phí trong hạn mức của 
 
 ## Phễu bán hàng (từ 23/10/2026)
 
-- Sau bài đầu vào, trang học sinh mời bố mẹ để lại số Zalo để nhận bản phác lộ trình và khả năng đỗ. Gửi xong là máy tự cấp mã học sinh, tạo một dòng trong sheet **Gia đình** và việc "Gọi chào trong 1 giờ" trong sheet **Việc của sale** (lead đến sau 21:00 có hạn 9:00 sáng hôm sau). Email báo lead mới gửi về `TEACHER_EMAIL` (hoặc tài khoản chạy máy chủ).
+- Lần đầu mở trang: popup bắt buộc chọn tỉnh, thành và lớp đang học. Trang luôn nhắc ôn sớm từ lớp 6, 7.
+- Sau bài đầu vào (và khi bấm vào bài tập của 14 buổi mà chưa có mã), trang mời bố mẹ để lại tên học sinh, tên bố mẹ, số Zalo. Gửi form **không** mở lớp ngay: máy tạo sẵn mã học sinh cho sale (trang không thấy mã), tạo một dòng trong sheet **Gia đình** và việc "Gọi chào trong 1 giờ" (tin Zalo soạn sẵn có 2 phần: kết quả + mời học thử, và phần gửi mã chỉ gửi sau khi phụ huynh xác nhận nhu cầu) trong sheet **Việc của sale** (lead đến sau 21:00 có hạn 9:00 sáng hôm sau). Email báo lead mới gửi về `TEACHER_EMAIL` (hoặc tài khoản chạy máy chủ).
 - Điểm lead 0–100 = Phù hợp 30 + Học thử 40 + Ý định 30, tự chấm lại sau mỗi lần con đồng bộ tiến độ. Từ 60 là nóng (sale nhận việc mời tư vấn), 35–59 ấm, dưới 35 nguội. Bố mẹ và con không thấy điểm.
 - Máy tự tạo việc theo mốc: xong buổi 3, xong buổi 7 (báo cáo giữa kỳ), sau bài đầu ra, khi bố mẹ đặt lịch nói chuyện với cô, sau khi cô ghi kết luận tư vấn (gửi đề xuất 24 giờ, nhắc ngày 3 và ngày 7), khi có đơn gói, khi khách Gói Web học thưa hoặc độ đúng thấp, khi đầu ra tăng (mời giới thiệu) và khi gia đình được giới thiệu đã thanh toán (trao thưởng).
 - Trang **Gói học** (`chuyen-anh-14-ngay/?v=goi`): Gói Web theo giai đoạn (790.000đ / 1.190.000đ / 1.590.000đ / 2.190.000đ), Gói Quản gia (học phí đề xuất sau buổi đánh giá). Chưa có SePay nên bố mẹ gửi form; sale nhắn Zalo thu chuyển khoản rồi bấm **Đã thu tiền · kích hoạt** ở tab Đơn gói học.

@@ -13,7 +13,7 @@ let SALES_READY=(()=>{try{return sessionStorage.getItem('ces_sales')==='1'}catch
 const SALES_ON=()=>!!API&&!PREVIEW&&SALES_READY;
 if(API&&!PREVIEW&&!SALES_READY)setTimeout(()=>{api('prices').then(r=>{if(r&&r.web){SALES_READY=true;CAPACITY=r.capacity||null;try{sessionStorage.setItem('ces_sales','1')}catch(e){}
   if(ASK_VIEWS[VIEW]){const sec=M().querySelector('section.view');if(sec&&!sec.querySelector('.sl-ask'))sec.insertAdjacentHTML('beforeend',askCardHTML(VIEW))}
-  else if(['start','goi','report'].includes(VIEW)||(VIEW==='diag'&&S.diag))go(VIEW)}}).catch(()=>{})},0);
+  else if(['start','goi','report','days'].includes(VIEW)||(VIEW==='diag'&&S.diag))go(VIEW)}}).catch(()=>{})},0);
 Object.assign(ERR_VI,{missing_phone:'Cô chú để lại số Zalo giúp cháu nhé ạ (9–11 chữ số).',bad_pack:'Cô chú chọn lại gói giúp cháu nhé ạ.'});
 
 /* nguồn khách: lưu một lần ở lần mở đầu tiên (utm_source / utm_medium / utm_campaign, ?ref=mã giới thiệu, trang dẫn tới) */
@@ -50,32 +50,77 @@ function leadBrief(){if(!S.diag)return '';try{
 function localLeadScore(){const A=agg(),g=gradeNow();const dw=Object.values(S.days).filter(r=>r&&r.web).length;
   let s=(g===7||g===8?10:5)+10+(S.diag?5:0)+(dw>=3?10:0)+(dw>=7?10:0)+(S.final?5:0);try{const R=rhythm(A);if(R.state==='regular')s+=10}catch(e){}return s}
 
-/* ----- cổng sau bài đầu vào ----- */
+/* ----- form lấy thông tin phụ huynh (cô chốt 24/10/2026): hiện ở 2 chỗ
+   1) ngay sau kết quả bài đầu vào   2) khi bấm vào bài tập chi tiết của chương trình 14 buổi mà chưa có mã
+   Gửi form KHÔNG cấp mã ngay: sale nhắn Zalo gửi kết quả + chương trình học thử 14 ngày, xác nhận nhu cầu của con rồi mới gửi mã vào lớp. ----- */
 const CONSENT_TXT='Tôi đồng ý cho CES (Học viện Đa ngữ Anh–Trung) lưu thông tin trên để gửi kết quả, cấp mã học sinh và liên hệ tư vấn học tập cho con qua Zalo. Thông tin được giữ đến hết kỳ thi vào lớp 10 của con; tôi có thể yêu cầu sửa hoặc xoá bất cứ lúc nào bằng cách nhắn cô.';
+const CODE_GATE=()=>SALES_ON()&&!S.code&&!pvOpen();
+function leadFieldsHTML(p){return `<div class="grid2"><label>Tên học sinh *<br><input id="${p}Child" value="${esc(S.name||'')}" autocomplete="off" style="width:100%"></label>
+    <label>Tên bố hoặc mẹ *<br><input id="${p}Parent" autocomplete="name" placeholder="Ví dụ: Nguyễn Thị Lan" style="width:100%"></label>
+    <label>Số điện thoại có Zalo *<br><input id="${p}Phone" type="tel" inputmode="tel" autocomplete="tel" style="width:100%"></label></div>
+   <input type="text" id="${p}Web" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+   <label class="key-item"><input type="checkbox" id="${p}Consent"><span class="small">${CONSENT_TXT}</span></label>
+   <div class="row"><button class="btn hi" type="submit" id="${p}Send">Gửi thông tin cho cô</button><span class="small" id="${p}Msg"></span></div>
+   <p class="small muted">Chưa cần chuyển khoản gì. Số Zalo chỉ cô ở CES xem được.</p>`}
+async function submitLead(p){const msg=$('#'+p+'Msg'),b=$('#'+p+'Send');
+  const child=$('#'+p+'Child').value.trim(),parent=$('#'+p+'Parent').value.trim();
+  if(!child||!parent){msg.textContent='Cô chú điền giúp cháu tên học sinh và tên bố hoặc mẹ nhé ạ.';return false}
+  if(!$('#'+p+'Consent').checked){msg.textContent=ERR_VI.need_consent;return false}
+  b.disabled=true;msg.textContent='Đang gửi…';
+  try{const r=await api('lead',Object.assign({website:$('#'+p+'Web').value,code:S.code||'',phone:$('#'+p+'Phone').value,parent,child,grade:gradeNow(),
+      school:(()=>{try{return goalPick(S.course&&S.course.goal).name}catch(e){return ''}})(),goal:(S.course&&S.course.goal)||'',region:(()=>{try{return REG().name}catch(e){return ''}})(),consent:true,brief:leadBrief()},srcPayload()));
+    S.leadAt=Date.now();if(!S.name)S.name=child;if(r.code&&!S.code){S.code=r.code;S.student={code:r.code,name:child,family:true}}else if(S.student)S.student.family=true;
+    save();if(S.code&&typeof doSync==='function')doSync();return true}
+  catch(err){msg.textContent=ERR_VI[err.code]||errVi(err);b.disabled=false;return false}}
+/* ô nhập mã khi bố mẹ đã nhận mã từ cô qua Zalo */
+function codeEntryHTML(p){return `<div class="row"><input type="text" id="${p}Code" maxlength="10" placeholder="Mã cô gửi, ví dụ K7M2QX" autocomplete="off" style="max-width:220px;text-transform:uppercase"><button class="btn hi" type="button" id="${p}Go">Vào lớp</button><span class="small" id="${p}CMsg"></span></div>`}
+function wireCodeEntry(p,after){const b=$('#'+p+'Go');if(!b)return;b.onclick=async()=>{const code=$('#'+p+'Code').value.trim().toUpperCase(),m=$('#'+p+'CMsg');if(!code){m.textContent='Cậu nhập mã nhé.';return}
+  b.disabled=true;m.textContent='Đang kiểm tra mã…';
+  try{const r=await api('login',{code});const srv=r.state;if(srv&&(srv.savedAt||0)>(S.savedAt||0)){const keep={region:S.region,regionSet:S.regionSet,gradeSet:S.gradeSet};S=Object.assign(blank(),srv,keep)}
+    S.code=r.student.code;S.student=r.student;if(!S.name)S.name=r.student.name||'';save();if(typeof doSync==='function')doSync();(after||(()=>go(VIEW)))()}
+  catch(e){m.textContent=errVi(e);b.disabled=false}}}
+const WAIT_TXT=()=>`Cô ở CES sẽ nhắn Zalo cho bố mẹ cậu trong khoảng 1 giờ (8:00–21:00; gửi sau 21:00 thì sáng hôm sau trước 9:00) để gửi kết quả bài đầu vào và chương trình học thử 14 ngày. Trao đổi xong về nhu cầu của cậu, cô gửi <b>mã vào lớp</b>. Nhận được mã thì nhập vào đây:`;
 function leadCardHTML(){
-  if(!SALES_ON()||!S.diag)return '';
-  if(hasFamily())return `<div class="card sl-ok"><h3>Bản phác đã gửi cho bố mẹ</h3><p class="small">Cô ở CES nhắn bố mẹ cậu qua Zalo (8:00–21:00 mỗi ngày). ${S.code?`Mã học sinh của cậu: <b class="mono">${esc(S.code)}</b>, học trên máy khác thì nhập mã này ở Trang chủ.`:''}</p></div>`;
-  return `<form class="card hi-card sl-lead" id="leadForm" autocomplete="on"><div class="sl-head">${hungFig('sm')}<div><p class="eyebrow">Dành cho bố mẹ</p><h3>Nhận bản phác lộ trình và khả năng đỗ qua Zalo</h3>
-   <p class="small">Cháu là Hùng ạ. Trình độ của bạn nhà mình đã hiện ở trên. Cô chú để lại số Zalo, cô ở CES gửi bản phác lộ trình đến mốc chốt trường và khả năng đỗ từng trường của bạn ấy trong khoảng 1 giờ (8:00–21:00), kèm mã học sinh để máy chấm bài giấy miễn phí.</p></div></div>
-   <div class="grid2"><label>Số Zalo của bố hoặc mẹ *<br><input id="ldPhone" type="tel" inputmode="tel" autocomplete="tel" style="width:100%"></label>
-    <label>Cô chú xưng hô là<br><input id="ldParent" autocomplete="name" placeholder="Ví dụ: chị Lan, anh Tuấn" style="width:100%"></label>
-    <label>Tên gọi của con *<br><input id="ldChild" value="${esc(S.name||'')}" style="width:100%"></label>
-    <label>Trường con nhắm<br><input id="ldSchool" value="${esc((()=>{try{return goalPick(S.course&&S.course.goal).name}catch(e){return ''}})())}" style="width:100%"></label></div>
-   <input type="text" id="ldWeb" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
-   <label class="key-item"><input type="checkbox" id="ldConsent"><span class="small">${CONSENT_TXT}</span></label>
-   <div class="row"><button class="btn hi" type="submit" id="ldSend">Gửi bản phác qua Zalo cho tôi</button><span class="small" id="ldMsg"></span></div>
-   <p class="small muted">Chưa cần chuyển khoản gì. 14 buổi chẩn đoán vẫn miễn phí. Số Zalo chỉ cô ở CES xem được.</p></form>`}
-function wireLead(after){const f=$('#leadForm');if(!f)return;
-  f.onsubmit=async e=>{e.preventDefault();const b=$('#ldSend'),msg=$('#ldMsg');
-    if(!$('#ldConsent').checked){msg.textContent=ERR_VI.need_consent;return}
-    b.disabled=true;msg.textContent='Đang gửi…';
-    try{const child=$('#ldChild').value.trim();
-      const r=await api('lead',Object.assign({website:$('#ldWeb').value,code:S.code||'',phone:$('#ldPhone').value,parent:$('#ldParent').value,child,grade:gradeNow(),school:$('#ldSchool').value,
-        goal:(S.course&&S.course.goal)||'',region:(()=>{try{return REG().name}catch(e){return ''}})(),consent:true,brief:leadBrief()},srcPayload()));
-      S.leadAt=Date.now();if(child&&!S.name)S.name=child;
-      if(r.code&&!S.code){S.code=r.code;S.student={code:r.code,name:child,family:true}}else if(S.student)S.student.family=true;
-      save();if(typeof doSync==='function')doSync();(after||(()=>go(VIEW)))()}
-    catch(err){msg.textContent=ERR_VI[err.code]||errVi(err);b.disabled=false}}}
+  if(!SALES_ON()||!S.diag||S.code)return '';
+  if(hasFamily())return `<div class="card hi-card sl-ok"><h3>Cô đã nhận thông tin của bố mẹ cậu</h3><p class="small">${WAIT_TXT()}</p>${codeEntryHTML('dc')}</div>`;
+  return `<form class="card hi-card sl-lead" id="leadForm" autocomplete="on"><div class="sl-head">${hungFig('sm')}<div><p class="eyebrow">Dành cho bố mẹ</p><h3>Nhận kết quả bài đầu vào và chương trình học thử 14 ngày</h3>
+   <p class="small">Cháu là Hùng ạ. Cô chú để lại thông tin, cô ở CES nhắn Zalo gửi kết quả bài đầu vào, bản phác lộ trình và chương trình học thử 14 ngày, để cả nhà cùng xem con đường chuyên ngữ có phù hợp với bạn nhà mình không ạ.</p></div></div>
+   ${leadFieldsHTML('ld')}</form>`}
+function wireLead(after){const done=after||(()=>go(VIEW));wireCodeEntry('dc',done);const f=$('#leadForm');if(!f)return;f.onsubmit=async e=>{e.preventDefault();if(await submitLead('ld'))done()}}
+/* cửa sổ khi bấm vào bài tập chi tiết của 14 buổi mà chưa có mã */
+function openLeadDlg(n){
+  let d=document.getElementById('leadDlg');if(d)d.remove();
+  d=document.createElement('div');d.id='leadDlg';d.className='gate';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');
+  const head=`<div class="gate-top">${hungFig()}<div><p class="eyebrow">${n?'Buổi '+n+' · ':''}Học thử 14 ngày</p><h2>${hasFamily()?'Nhập mã vào lớp':'Để cô cấp mã vào lớp'}</h2></div></div>`;
+  d.innerHTML=hasFamily()?`<div class="gate-card paper tape">${head}<p class="small">${WAIT_TXT()}</p>${codeEntryHTML('lc')}<div class="row"><button class="btn ghost" type="button" id="lmX">Xem tiếp nội dung</button></div></div>`
+    :`<form class="gate-card paper tape" id="lmForm">${head}<p class="small">Bài tập chi tiết (video, game, bài dạng đề, bài giấy có máy chấm, kiểm tra cuối buổi) mở khi có mã vào lớp. Cô chú để lại thông tin, giáo viên ở CES liên hệ qua Zalo, trao đổi nhu cầu của bạn nhà mình rồi cấp mã ạ.</p>${leadFieldsHTML('lm')}<div class="row"><button class="btn ghost" type="button" id="lmX">Xem tiếp nội dung</button></div></form>`;
+  document.body.appendChild(d);
+  const close=()=>d.remove();$('#lmX').onclick=close;d.addEventListener('click',e=>{if(e.target===d)close()});
+  wireCodeEntry('lc',()=>{close();CUR_DAY=null;go('days',{day:nextDay()})});
+  const f=$('#lmForm');if(f)f.onsubmit=async e=>{e.preventDefault();if(await submitLead('lm')){close();openLeadDlg(n)}};
+  try{(hasFamily()?$('#lcCode'):$('#lmChild')).focus()}catch(e){}
+}
+/* xem trước nội dung một buổi khi chưa có mã: chủ đề, mục tiêu, từ, cụm động từ, ngữ pháp, sẽ làm được gì; bài tập khoá */
+function dayDemoHTML(n){const D=DAYS[n-1];
+  const vb=(D.vocab||[]).map(v=>`<li><b>${esc(v.word)}</b> <span class="small muted">${esc(v.pos||'')}</span> · ${esc(v.meaning_vi||'')}</li>`).join('');
+  const ph=(D.phrasal||[]).map(v=>`<li><b>${esc(v.phrase)}</b> · ${esc(v.meaning_vi||'')}</li>`).join('');
+  const cd=(D.can_do_vi||[]).map(x=>`<li>${esc(x)}</li>`).join('');
+  return `<div class="card"><div class="dayhead">${dayIcon(n,'dh-ic',80)}<div class="dh-t"><p class="eyebrow">Buổi ${String(n).padStart(2,'0')}/14${D.type==='review'?' · Ôn tập':''} · xem trước</p><h2>${esc(D.theme_vi)}</h2></div></div>
+    <p>${esc(D.goal_vi||'')}</p>
+    ${D.grammar?`<p><b>Ngữ pháp:</b> ${esc(D.grammar.title||'')}</p>`:''}
+    ${vb?`<div class="grid2"><div><h3>8 từ mới</h3><ul class="small">${vb}</ul></div>${ph?`<div><h3>Cụm động từ</h3><ul class="small">${ph}</ul></div>`:''}</div>`:''}
+    ${cd?`<h3>Học xong buổi này cậu sẽ</h3><ul class="small">${cd}</ul>`:''}</div>
+   <div class="card lockbox">${doodle('lock','lk',56)}<div><p class="eyebrow">Bài tập chi tiết</p><h3>Mở khi có mã vào lớp</h3>
+    <p class="small">Mỗi buổi khoảng 40 phút: video ngữ pháp, 3 game ôn từ, bài dạng đề thi và luyện nghe, bài giấy in ra làm (chụp ảnh gửi lên là máy chấm), kiểm tra nhanh cuối buổi. ${hasFamily()?'Cô đã nhận thông tin của bố mẹ cậu; nhận được mã thì nhập ở đây.':'Bố mẹ cậu điền thông tin, giáo viên ở CES liên hệ qua Zalo để cấp mã.'}</p>
+    <div class="row"><button class="btn hi" type="button" data-leaddlg="${n}">${hasFamily()?'Nhập mã vào lớp':'Điền thông tin để cô cấp mã'}</button></div></div></div>`}
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-leaddlg]');if(b){e.preventDefault();openLeadDlg(+b.dataset.leaddlg||0)}});
+
+/* ----- thông điệp xuyên suốt: ôn từ sớm (lớp 6, 7) để lớp 8, 9 khỏi chạy nước rút ----- */
+function earlyMsgHTML(){const g=gradeNow(),early=S.gradeEarly;
+  const head=early||g<=6?'Cậu đang ở thời điểm đẹp nhất để bắt đầu':g===7?'Lớp 7: bắt đầu bây giờ là vừa đẹp':g===8?'Lớp 8: bắt đầu đều từ hôm nay':'Lớp 9: chặng nước rút, đi cho đúng hướng';
+  const kid=early||g<=7?'Mỗi ngày 30–40 phút từ lớp 6, 7 là đủ để xây nền chắc. Lên lớp 9 cậu chỉ còn luyện đề, khỏi phải chạy nước rút.':g===8?'Còn hơn một năm học, mỗi ngày đều đặn một buổi là cậu có nền B1–B2 trước mốc chốt trường, sang lớp 9 nhẹ đầu hơn nhiều.':'Bài đầu vào cho tớ biết nền của cậu đang ở đâu, để dồn sức đúng chỗ trong những tháng còn lại.';
+  return `<div class="card sl-early"><div class="sl-head">${hungFig('sm')}<div><p class="eyebrow">Ôn sớm, đỡ chạy nước rút</p><h3>${esc(head)}</h3><p class="small">${esc(kid)}</p>
+    <p class="small muted"><b>Dành cho bố mẹ:</b> đề chuyên ngữ đòi nền từ vựng, ngữ pháp tích luỹ nhiều năm. Ôn từ lớp 6, 7 thì lớp 8, 9 đỡ phải chạy nước rút; với bạn nền tảng còn mỏng, chỉ nước rút trong năm lớp 9 thường ít cơ hội đỗ lớp chuyên ngữ. Bài kiểm tra đầu vào giúp cả nhà biết con đường chuyên ngữ có phù hợp với con không, và nên bắt đầu từ đâu.</p></div></div></div>`}
 
 /* ----- đặt 15 phút với cô (cửa sổ nhỏ, dùng chung mọi nơi) ----- */
 function askBtn(label,about,cls){return `<button type="button" class="btn ${cls||'hi'}" data-askco="${esc(about||'')}">${esc(label||'Đặt 15 phút với cô')}</button>`}
@@ -119,14 +164,15 @@ try{new MutationObserver(()=>{if(!SALES_ON()||!ASK_VIEWS[VIEW])return;const sec=
 function homeSalesHTML(){
   if(!SALES_ON()||!S.diag)return '';
   const dw=Object.values(S.days).filter(r=>r&&r.web).length;let h='';
-  if(!hasFamily())h+=`<div class="card hi-card"><h3>Gửi bản phác lộ trình cho bố mẹ</h3><p class="small">Bố mẹ cậu để lại số Zalo là cô gửi bản phác lộ trình và khả năng đỗ của cậu, kèm mã học sinh để máy chấm bài giấy miễn phí.</p><button class="btn hi" type="button" id="toLead">Mở form cho bố mẹ</button></div>`;
+  if(!S.code)h+=hasFamily()?`<div class="card hi-card"><h3>Chờ mã vào lớp từ cô</h3><p class="small">${WAIT_TXT()}</p>${codeEntryHTML('hc')}</div>`
+    :`<div class="card hi-card"><h3>Nhận kết quả và chương trình học thử 14 ngày</h3><p class="small">Bố mẹ cậu để lại tên và số Zalo, cô ở CES gửi kết quả bài đầu vào và chương trình học thử 14 ngày, rồi cấp mã vào lớp.</p><button class="btn hi" type="button" id="toLead">Mở form cho bố mẹ</button></div>`;
   const book=localLeadScore()>=60;
   if(S.final||dw>=14)h+=`<div class="card"><h3>Xong 14 buổi rồi!</h3><p class="small">Báo cáo thử 14 buổi đã đủ để cô tư vấn: nền tảng, khả năng học, khả năng đỗ và lộ trình nếu theo. Bố mẹ cậu đặt 15 phút với cô, hoặc xem luôn gói học hợp với cậu.</p>
      <div class="row">${book?askBtn('Đặt 15 phút với cô','báo cáo 14 buổi'):'<button type="button" class="btn hi" data-gogoi="1">Xem gói hợp với cậu</button>'}${book?'<button type="button" class="btn ghost" data-gogoi="1">Xem gói hợp với cậu</button>':askBtn('Đặt 15 phút với cô','báo cáo 14 buổi','ghost')}<button class="btn ghost" type="button" data-gorep="1">Xem báo cáo</button></div></div>`;
   else if(dw>=7)h+=`<div class="card"><h3>Báo cáo giữa kỳ: cậu đã đi nửa chặng</h3><p class="small">7/14 buổi rồi. Báo cáo đã có độ đúng, độ nhớ và nhịp học thật của cậu. Bố mẹ muốn nghe cô nhận xét thì đặt 15 phút nói chuyện với cô.</p>
      <div class="row"><button class="btn hi" type="button" data-gorep="1">Xem báo cáo giữa kỳ</button>${askBtn('Đặt 15 phút với cô','báo cáo giữa kỳ','ghost')}</div></div>`;
   h+=referralHTML();return h}
-function wireHomeSales(){const t=$('#toLead');if(t)t.onclick=()=>go('diag');wireReferral()}
+function wireHomeSales(){const t=$('#toLead');if(t)t.onclick=()=>go('diag');wireCodeEntry('hc',()=>go('start'));wireReferral()}
 
 /* ----- giới thiệu: chỉ hiện khi đầu ra tăng, cần con và bố mẹ đồng ý chia sẻ; không ghi họ tên đầy đủ ----- */
 function referralHTML(){if(!S.code||!S.final||!S.diag||S.final.total<=S.diag.total)return '';

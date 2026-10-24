@@ -89,7 +89,7 @@ function route_(q) {
   if (a === 'ping') return { ok: true };
   if (a === 'request') return request_(q);
   if (a === 'prices') return { ok: true, per: PRICE_PER, packs: PACKS, web: WEB_PACKS, capacity: capacity_() };
-  if (a === 'lead') return lead_(q);
+  if (a === 'lead') { q.needParent = true; var lr = lead_(q); delete lr._code; return lr; }
   if (a === 'consult') return consult_(q);
   if (a === 'pkg_order') return pkgOrder_(q);
   if (/^(t|s|m)_/.test(a)) {
@@ -1082,8 +1082,10 @@ function zText_(kind, f, st, extra) {
   var web = 'https://ces-training.github.io/on-thi-chuyen-ngu/chuyen-anh-14-ngay/';
   var sum = st ? json_(st.summary) : {}, lv = st && st.entryLevel ? lvVi_(st.entryLevel) : '';
   switch (kind) {
-    case 'chao': return hi + 'Bạn ' + con + ' vừa làm xong bài đầu vào Chuyên Anh 14 Ngày' + (lv ? ', trình độ hiện tại khoảng ' + lv : '') + '. Em gửi anh/chị bản phác lộ trình và khả năng đỗ của bạn ấy ạ:\n\n' + (f.brief || '') +
-      '\n\nMã học sinh của bạn ' + con + ': ' + f.code + ' (bạn ấy nhập ở Trang chủ ' + web + ' khi học trên máy khác). Mỗi buổi có bài giấy, bạn chụp ảnh gửi lên là máy chấm miễn phí. ' + (f.school ? 'Em thấy gia đình đang nhắm ' + f.school + '; anh/chị cho em hỏi thêm mong muốn của gia đình để cô tư vấn sát hơn ạ?' : 'Anh/chị cho em hỏi gia đình đang nhắm trường nào và mong bạn ấy đạt mức nào ạ?');
+    case 'chao': return hi + 'Bạn ' + con + ' vừa làm xong bài kiểm tra đầu vào Chuyên Anh' + (lv ? ', trình độ hiện tại khoảng ' + lv : '') + '. Em gửi anh/chị kết quả và bản phác lộ trình của bạn ấy ạ:\n\n' + (f.brief || '') +
+      '\n\nĐể biết con đường chuyên ngữ có hợp với bạn ' + con + ' không, CES mời bạn học thử 14 buổi (mỗi buổi khoảng 40 phút: video, game, bài dạng đề, bài giấy có máy chấm, cuối đợt có báo cáo năng lực và khả năng đỗ). ' +
+      (f.school ? 'Em thấy gia đình đang nhắm ' + f.school + '. ' : '') + 'Anh/chị cho em hỏi gia đình mong bạn ấy đạt mục tiêu gì, và bạn ấy có thời gian học mỗi ngày khoảng bao lâu ạ?' +
+      '\n\n----- [GỬI SAU KHI PHỤ HUYNH XÁC NHẬN MUỐN HỌC THỬ] -----\nDạ em gửi mã vào lớp học thử của bạn ' + con + ': ' + f.code + '. Bạn ấy mở ' + web + ' , ở Trang chủ nhập mã vào ô "Nhập mã học sinh cô gửi" là vào được 14 buổi. Kết quả bài đầu vào đã làm trên máy đó được giữ nguyên ạ.';
     case 'b3': return hi + 'Bạn ' + con + ' đã xong 3 buổi đầu. Web đã bắt đầu hiểu cách bạn ấy học' + (sum.tr ? '' : '') + ': ' + (extra || '') + ' Anh/chị nhắc bạn giữ nhịp 1 buổi mỗi 1–2 ngày giúp em nhé ạ.';
     case 'b7': return hi + 'Bạn ' + con + ' đã đi được nửa chặng (7/14 buổi). ' + (extra || '') + ' Nếu anh/chị muốn nghe cô nhận xét kỹ hơn và hỏi về lộ trình, em đặt lịch 15 phút với cô vào giờ anh/chị tiện ạ.';
     case 'dauRa': return hi + 'Bạn ' + con + ' đã làm bài đầu ra sau 14 buổi. ' + (extra || '') + ' Bản báo cáo đầy đủ (nền tảng, khả năng học, khả năng đỗ, lộ trình) bạn ấy mở ở tab Tiến bộ → Xem báo cáo. Em đặt lịch 15 phút với cô để cô trao đổi kỹ với anh/chị nhé ạ?';
@@ -1150,20 +1152,21 @@ function lead_(q) {
   if (q.website) return { ok: true, code: '' };
   rate_('lead_count', 60, 3600);
   var parent = clip_(String(q.parent || '').trim(), 80), phone = phone_(q.phone), email = clip_(String(q.email || '').trim(), 120), child = clip_(String(q.child || '').trim(), 80);
-  if (!child) throw new Error('missing_name');
+  if (!child || (q.needParent && !parent)) throw new Error('missing_name');
   if (!okPhone_(phone)) throw new Error('missing_phone');
   if (q.consent !== true) throw new Error('need_consent');
-  var st = getStudent_(q.code), code;
+  /* mã học sinh được tạo sẵn cho sale, nhưng KHÔNG trả về trang: sale xác nhận nhu cầu với phụ huynh rồi mới gửi mã qua Zalo (cô chốt 24/10/2026) */
+  var st = getStudent_(q.code), code, known = !!st;
   if (st) code = st.code; else code = tAdd_(child, q.grade, 0).code;
   var old = famOf_(code);
-  if (old) { famPatch_(old.id, { parent: parent || old.parent, phone: phone, email: email || old.email, brief: clip_(q.brief, 4000) || old.brief }); return { ok: true, code: code, again: true }; }
+  if (old) { famPatch_(old.id, { parent: parent || old.parent, phone: phone, email: email || old.email, brief: clip_(q.brief, 4000) || old.brief }); return { ok: true, code: known ? code : '', _code: code, again: true }; }
   var dupPhone = rows_('families').some(function (r) { return String(r.phone) === phone; });
   var f = { id: uid_('F'), ts: now_(), code: code, parent: parent, phone: phone, email: email, child: child, grade: Number(q.grade) || '', region: clip_(q.region, 60), school: clip_(q.school, 120), goal: clip_(q.goal, 40),
     source: source_(q), ref: clip_(String(q.ref || '').toUpperCase(), 10), consent: now_(), status: 'Lead mới', brief: clip_(q.brief, 4000), intent: '{}', flags: '{}', updated: now_() };
   withLock_(function () { insert_('families', f); addTask_(f, 'chao', zText_('chao', f, getStudent_(code)), 1); if (dupPhone) addTask_(f, 'tuvanTrung', 'Số ' + phone + ' đã có trong danh sách gia đình. Kiểm tra xem có phải cùng một nhà (anh chị em, hoặc con làm lại trên máy khác) để gộp.', 24); });
   try { MailApp.sendEmail({ to: teacherEmail_(), subject: '[Chuyên Anh 14 Ngày] Lead mới · ' + child + ' · gọi chào trong 1 giờ', body: 'Phụ huynh ' + (parent || '') + ' · Zalo ' + phone + '\nHọc sinh: ' + child + ' · lớp ' + (f.grade || '—') + ' · ' + (f.school || '') + '\nMã: ' + code + ' · nguồn: ' + f.source + '\n\nViệc gọi chào đã nằm trong tab Việc hôm nay: ' + STAFF_URL }); } catch (e) {}
   refreshFamily_(code);
-  return { ok: true, code: code };
+  return { ok: true, code: known ? code : '', _code: code };
 }
 /* công khai: bố mẹ muốn nói chuyện với cô (có mã; chưa có gia đình thì cần số Zalo) */
 function consult_(q) {
@@ -1172,14 +1175,14 @@ function consult_(q) {
   var st = getStudent_(q.code), f = st ? famOf_(st.code) : null;
   if (!f) {
     var r = lead_({ code: st ? st.code : '', parent: q.parent, phone: q.phone, email: q.email, child: q.child || (st && st.name), grade: q.grade || (st && st.grade), school: q.school, region: q.region, consent: q.consent, src: q.src, ref: q.ref, brief: q.brief });
-    f = famOf_(r.code);
+    f = famOf_(r._code);
   }
   var it = json_(f.intent); it.book = (it.book || 0) + 1;
   famPatch_(f.id, { intent: JSON.stringify(it) });
   var txt = 'Bố mẹ bạn ' + f.child + ' muốn nói chuyện với cô' + (q.about ? ' về: ' + clip_(q.about, 200) : '') + '. Giờ tiện nghe máy: ' + (clip_(q.when, 120) || 'chưa ghi') + (q.note ? '. Lời nhắn: ' + clip_(String(q.note).trim().replace(/[.\s]+$/, ''), 500) : '') + '.\nSale gọi xác nhận, chọn giáo viên và giờ ở dòng này.';
   withLock_(function () { addTask_(f, 'tuvan', txt, 1); });
   refreshFamily_(f.code);
-  return { ok: true, code: f.code };
+  return { ok: true, code: st ? f.code : '' };
 }
 /* có mã: tín hiệu ý định (mở tab Lộ trình, Sau 14 ngày, Chọn trường; bấm Hỏi cô; mở trang gói) */
 function signal_(st, kind) {
@@ -1203,7 +1206,7 @@ function pkgOrder_(q) {
   if (!okPhone_(phone)) throw new Error('missing_phone');
   if (q.consent !== true) throw new Error('need_consent');
   var st = getStudent_(q.code), f = st ? famOf_(st.code) : null;
-  if (!f) { var r = lead_({ code: st ? st.code : '', parent: parent, phone: phone, email: email, child: child, grade: q.grade, school: q.school, region: q.region, consent: true, src: q.src, ref: q.ref, brief: q.brief }); f = famOf_(r.code); }
+  if (!f) { var r = lead_({ code: st ? st.code : '', parent: parent, phone: phone, email: email, child: child, grade: q.grade, school: q.school, region: q.region, consent: true, src: q.src, ref: q.ref, brief: q.brief }); f = famOf_(r._code); }
   var pay = q.pay === '2' ? '2 lần' : '1 lần', id = uid_('D');
   withLock_(function () {
     insert_('pkgOrders', { id: id, ts: now_(), famId: f.id, code: f.code, parent: parent, phone: phone, email: email, child: child, grade: Number(q.grade) || f.grade, pack: q.pack, price: P.price, pay: pay, status: 'chờ thu tiền', note: clip_(q.note, 800) });
@@ -1211,7 +1214,7 @@ function pkgOrder_(q) {
   });
   famPatch_(f.id, { status: 'Chờ thanh toán', parent: parent || f.parent });
   try { MailApp.sendEmail({ to: teacherEmail_(), subject: '[Chuyên Anh 14 Ngày] Đơn ' + P.name + ' · ' + child, body: 'Phụ huynh ' + parent + ' · Zalo ' + phone + (email ? ' · ' + email : '') + '\nGói: ' + P.name + ' · ' + P.price.toLocaleString('vi-VN') + 'đ · trả ' + pay + '\nMã học sinh: ' + f.code + '\n\nSale nhắn Zalo thu tiền rồi bấm "Đã thu tiền · kích hoạt" ở tab Đơn gói học: ' + STAFF_URL }); } catch (e) {}
-  return { ok: true, id: id, code: f.code, price: P.price };
+  return { ok: true, id: id, code: st ? f.code : '', price: P.price };
 }
 /* công khai: số chỗ Quản gia còn trống (hiện trên trang gói) */
 function capacity_() {
