@@ -9,7 +9,8 @@ function kiemTraPheu() {
   try {
     var sl = call({ action: 'm_staff_add', pin: ROOT, name: 'Sale thử phễu', role: 'sale' });
     var r = call({ action: 'lead', phone: '0900000001', parent: 'chị Thử', child: 'HS thử phễu', grade: 7, consent: true, brief: 'bản phác thử', src: { src: 'kiem-tra' } });
-    check('Lead tạo mã học sinh', r.ok && !!r.code);
+    check('Lead không trả mã cho trang (sale gửi sau)', r.ok && r.code === '' && r._code === undefined);
+    r.code = rows_('families').slice(-1)[0].code; check('Mã tạo sẵn cho sale', !!r.code);
     var T = call({ action: 's_tasks', pin: sl.pin });
     var chao = (T.tasks || []).filter(function (t) { return t.kind === 'chao' && t.fam && t.fam.code === r.code; })[0];
     check('Sale có việc gọi chào kèm tin Zalo', !!chao && /bản phác thử/.test(chao.text));
