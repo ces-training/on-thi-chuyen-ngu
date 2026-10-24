@@ -184,7 +184,7 @@ function vGoi(){
    ${pkgFormHTML(start)}
    <div class="card"><h3>Cô chú hay hỏi</h3>
     <details><summary><b>Quản gia khác gia sư 1–1 thế nào?</b></summary><p class="small">Gia sư là một người dạy. Quản gia là cả vòng đánh giá, lộ trình, theo sát, kiểm tra và điều chỉnh, có một cô chịu trách nhiệm cho kết quả của bạn ấy.</p></details>
-    <details><summary><b>Học trực tiếp hay trực tuyến?</b></summary><p class="small">Gói Web học trực tuyến, làm bài giấy ở nhà. Quản gia kết hợp trực tiếp ở CES, trực tuyến và hỗ trợ ngoài giờ.</p></details>
+    <details><summary><b>Học trực tiếp hay trực tuyến?</b></summary><p class="small">Gói Web học trực tuyến, làm bài giấy ở nhà. Quản gia kết hợp học trực tiếp tại địa điểm gần nhà của bạn ấy nhất, học trực tuyến và hỗ trợ ngoài giờ.</p></details>
     <details><summary><b>Học phí Quản gia tính thế nào?</b></summary><p class="small">Theo mục tiêu, thời gian còn lại đến mốc chốt trường và nguồn lực cần tổ chức. Cô đề xuất rõ ràng sau buổi đánh giá 15–20 phút.</p></details>
     <details><summary><b>Có cam kết đỗ không?</b></summary><p class="small">CES cam kết minh bạch mục tiêu, theo sát, đo lường và chủ động điều chỉnh; không cam kết đỗ. Mọi dự báo trên web là ước lượng để định hướng.</p></details>
     <details><summary><b>Nếu bạn ấy chưa tiến bộ như dự kiến?</b></summary><p class="small">Hệ thống tìm nguyên nhân trước (nhịp học, chủ điểm sai lặp lại, dạng bài yếu), rồi đổi nội dung, tốc độ hoặc nguồn lực. Với Gói Web, quy tắc tự động gợi ý; với Quản gia, cô phân tích và gọi bố mẹ.</p></details>
