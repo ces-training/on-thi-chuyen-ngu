@@ -711,6 +711,12 @@ body.gated main.wrap,body.gated header.top{filter:blur(5px);pointer-events:none;
 .gate-card{max-width:560px;width:100%;display:flex;flex-direction:column;gap:12px;animation:gateIn .35s ease-out}
 .gate-top{display:flex;gap:14px;align-items:center}
 .gate-top h2{font-size:1.7rem}
+/* cửa sổ dài hơn màn hình (điện thoại, trình duyệt trong Zalo/Facebook): cuộn được bên trong để tới nút gửi */
+.gate{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.gate-card{max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+@media (max-width:640px){.gate{padding:10px;place-items:start center}.gate-card{max-height:calc(100vh - 20px);max-height:calc(100dvh - 20px);padding:16px 16px 20px;gap:10px}
+ .gate-top{gap:10px}.gate-top .hung-fig img{width:52px;height:auto}.gate-top .hung-fig figcaption{font-size:.7rem}.gate-top h2{font-size:1.3rem;line-height:1.2}
+ .gate-card p,.gate-card .small{font-size:.95rem}.gate-card .grid2{grid-template-columns:1fr;gap:8px}}
 @keyframes gateIn{from{transform:translateY(24px) rotate(-1deg);opacity:0}to{transform:none;opacity:1}}
 .gate-pill{all:unset;box-sizing:border-box;position:fixed;right:16px;bottom:16px;z-index:40;display:flex;align-items:center;gap:10px;cursor:pointer;background:var(--gold);color:#14303A;border:3px solid #14303A;border-radius:999px;padding:6px 16px 6px 6px;box-shadow:4px 5px 0 rgba(10,40,48,.35);animation:pillPop 2.4s ease-in-out infinite}
 .gate-pill img{width:44px;height:44px;border-radius:50%;background:#fff;object-fit:cover;object-position:top}
