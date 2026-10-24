@@ -55,6 +55,7 @@ function localLeadScore(){const A=agg(),g=gradeNow();const dw=Object.values(S.da
    Gửi form KHÔNG cấp mã ngay: sale nhắn Zalo gửi kết quả + chương trình học thử 14 ngày, xác nhận nhu cầu của con rồi mới gửi mã vào lớp. ----- */
 const CONSENT_TXT='Tôi đồng ý cho CES (Học viện Đa ngữ Anh–Trung) lưu thông tin trên để gửi kết quả, cấp mã học sinh và liên hệ tư vấn học tập cho con qua Zalo. Thông tin được giữ đến hết kỳ thi vào lớp 10 của con; tôi có thể yêu cầu sửa hoặc xoá bất cứ lúc nào bằng cách nhắn cô.';
 const CODE_GATE=()=>SALES_ON()&&!S.code&&!pvOpen();
+const FREE14='Chương trình học thử 14 ngày được CES tặng miễn phí, chỉnh theo kết quả bài kiểm tra đầu vào. Dù kết quả thế nào, bạn nhà mình cũng có lộ trình phù hợp.';
 function leadFieldsHTML(p){return `<div class="grid2"><label>Tên học sinh *<br><input id="${p}Child" value="${esc(S.name||'')}" autocomplete="off" style="width:100%"></label>
     <label>Tên bố hoặc mẹ *<br><input id="${p}Parent" autocomplete="name" placeholder="Ví dụ: Nguyễn Thị Lan" style="width:100%"></label>
     <label>Số điện thoại có Zalo *<br><input id="${p}Phone" type="tel" inputmode="tel" autocomplete="tel" style="width:100%"></label></div>
@@ -68,7 +69,8 @@ async function submitLead(p){const msg=$('#'+p+'Msg'),b=$('#'+p+'Send');
   if(!$('#'+p+'Consent').checked){msg.textContent=ERR_VI.need_consent;return false}
   b.disabled=true;msg.textContent='Đang gửi…';
   try{const r=await api('lead',Object.assign({website:$('#'+p+'Web').value,code:S.code||'',phone:$('#'+p+'Phone').value,parent,child,grade:gradeNow(),
-      school:(()=>{try{return goalPick(S.course&&S.course.goal).name}catch(e){return ''}})(),goal:(S.course&&S.course.goal)||'',region:(()=>{try{return REG().name}catch(e){return ''}})(),consent:true,brief:leadBrief()},srcPayload()));
+      school:(()=>{try{return goalPick(S.course&&S.course.goal).name}catch(e){return ''}})(),goal:(S.course&&S.course.goal)||'',region:(()=>{try{return REG().name}catch(e){return ''}})(),consent:true,brief:leadBrief(),
+      famId:S.remindId||'',diag:S.diag?{t:S.diag.total,o:S.diag.of,l:S.diag.level,b:S.diag.bands,u:S.diag.dur}:null},srcPayload()));
     S.leadAt=Date.now();if(!S.name)S.name=child;if(r.code&&!S.code){S.code=r.code;S.student={code:r.code,name:child,family:true}}else if(S.student)S.student.family=true;
     save();if(S.code&&typeof doSync==='function')doSync();return true}
   catch(err){msg.textContent=ERR_VI[err.code]||errVi(err);b.disabled=false;return false}}
@@ -84,7 +86,8 @@ function leadCardHTML(){
   if(!SALES_ON()||!S.diag||S.code)return '';
   if(hasFamily())return `<div class="card hi-card sl-ok"><h3>Cô đã nhận thông tin của bố mẹ cậu</h3><p class="small">${WAIT_TXT()}</p>${codeEntryHTML('dc')}</div>`;
   return `<form class="card hi-card sl-lead" id="leadForm" autocomplete="on"><div class="sl-head">${hungFig('sm')}<div><p class="eyebrow">Dành cho bố mẹ</p><h3>Nhận kết quả bài đầu vào và chương trình học thử 14 ngày</h3>
-   <p class="small">Cháu là Hùng ạ. Cô chú để lại thông tin, cô ở CES nhắn Zalo gửi kết quả bài đầu vào, bản phác lộ trình và chương trình học thử 14 ngày, để cả nhà cùng xem con đường chuyên ngữ có phù hợp với bạn nhà mình không ạ.</p></div></div>
+   <p class="small">Cháu là Hùng ạ. Cô chú để lại thông tin, cô ở CES nhắn Zalo gửi kết quả bài đầu vào, bản phác lộ trình và chương trình học thử 14 ngày, để cả nhà cùng xem con đường chuyên ngữ có phù hợp với bạn nhà mình không ạ.</p>
+   <p class="small"><b>${FREE14}</b></p></div></div>
    ${leadFieldsHTML('ld')}</form>`}
 function wireLead(after){const done=after||(()=>go(VIEW));wireCodeEntry('dc',done);const f=$('#leadForm');if(!f)return;f.onsubmit=async e=>{e.preventDefault();if(await submitLead('ld'))done()}}
 /* cửa sổ khi bấm vào bài tập chi tiết của 14 buổi mà chưa có mã */
@@ -290,3 +293,44 @@ function reportCtaHTML(){if(!SALES_ON())return '';const book=localLeadScore()>=6
   const a=askBtn('Đặt 15 phút với cô','báo cáo 14 buổi',book?'hi':'ghost'),b=`<button type="button" class="btn ${book?'ghost':'hi'}" data-gogoi="1">Xem gói hợp với cậu</button>`;
   return `<div class="sl-noprint">${hasFamily()?'':leadCardHTML()}<div class="card"><h3>Bước tiếp theo</h3><p class="small">Cô chú muốn nghe cô giải thích báo cáo này, hoặc xem cách học tiếp sau 14 buổi?</p><div class="row">${book?a+b:b+a}</div></div></div>`}
 (function(){const st=document.createElement('style');st.textContent='@media print{.sl-noprint,.sl-ask{display:none!important}}';document.head.appendChild(st)})();
+
+/* ----- popup theo thời gian đọc (cô chốt 24/10/2026) -----
+   khoảng 1 phút: mời làm bài kiểm tra đầu vào (có "Để sau")
+   khoảng 2 phút: mời bố mẹ để lại Zalo hoặc email để trang gửi bài kiểm tra đầu vào và nhắc nếu quên
+   Chỉ tính lúc trang đang mở trên màn hình; không bật khi con đang làm bài hay đang có cửa sổ khác. */
+let READ_S=(()=>{try{return +sessionStorage.getItem('ces_read')||0}catch(e){return 0}})();
+const ssGet=k=>{try{return sessionStorage.getItem(k)}catch(e){return null}},ssSet=k=>{try{sessionStorage.setItem(k,'1')}catch(e){}};
+const lsAgo=k=>{try{return Date.now()-(+localStorage.getItem(k)||0)}catch(e){return 1e15}};
+function dlgOpen(){const g=document.getElementById('gate');return !!document.querySelector('#regGate,#askDlg,#leadDlg,#invDlg,#remDlg')||!!(g&&!g.hidden)}
+setInterval(()=>{if(PREVIEW||document.visibilityState!=='visible')return;READ_S+=5;try{sessionStorage.setItem('ces_read',READ_S)}catch(e){}
+  if(dlgOpen()||VIEW==='diag'||S.diag)return;
+  if(READ_S>=60&&!ssGet('ces_inv')&&lsAgo('ces_inv_skip')>864e5){ssSet('ces_inv');openDiagInvite();return}
+  if(READ_S>=120&&SALES_ON()&&!S.code&&!S.leadAt&&!S.remindAt&&!ssGet('ces_rem')&&lsAgo('ces_rem_skip')>3*864e5){ssSet('ces_rem');openRemind()}},5000);
+function popupShell(id,eyebrow,title,body){let d=document.getElementById(id);if(d)d.remove();d=document.createElement('div');d.id=id;d.className='gate';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');
+  d.innerHTML=`<div class="gate-card paper tape"><div class="gate-top">${hungFig()}<div><p class="eyebrow">${eyebrow}</p><h2>${title}</h2></div></div>${body}</div>`;document.body.appendChild(d);d.addEventListener('click',e=>{if(e.target===d)d.remove()});return d}
+function openDiagInvite(){const d=popupShell('invDlg','Thử sức một chút nhé','Cậu đang ở level nào rồi?',
+  `<p>Tớ là Hùng. Cậu đọc được một lúc rồi đó! Làm thử bài kiểm tra đầu vào: 45 câu, khoảng 35 phút (có 5 câu nghe, nhớ bật loa), câu nào chưa biết cứ bỏ qua.</p>
+   <p class="small">${FREE14}</p>
+   <div class="row"><button class="btn hi big" type="button" id="invGo">Làm bài đầu vào</button><button class="btn ghost" type="button" id="invX">Để sau</button></div>`);
+  $('#invGo').onclick=()=>{d.remove();go('diag')};$('#invX').onclick=()=>{try{localStorage.setItem('ces_inv_skip',Date.now())}catch(e){}d.remove()}}
+function openRemind(){
+  const d=popupShell('remDlg','Dành cho bố mẹ','Cô chú muốn nhận bài kiểm tra đầu vào cho con?',
+  `<form id="remForm" autocomplete="on"><p class="small">Cháu là Hùng ạ. Cô chú để lại số Zalo hoặc email, cháu gửi đường dẫn bài kiểm tra đầu vào cho bạn nhà mình, và nhắc lại nếu cô chú bận quên ạ.</p>
+   <p class="small"><b>Sau bài kiểm tra, CES tặng miễn phí chương trình học thử 14 ngày</b> để đánh giá xem con có phù hợp theo đuổi lộ trình chuyên ngữ không. Chương trình được chỉnh theo kết quả bài đầu vào; dù kết quả thế nào, con cũng có lộ trình phù hợp.</p>
+   <div class="grid2"><label>Số điện thoại có Zalo<br><input id="rmPhone" type="tel" inputmode="tel" autocomplete="tel" style="width:100%"></label>
+    <label>hoặc Email<br><input id="rmEmail" type="email" autocomplete="email" style="width:100%"></label>
+    <label>Tên gọi của con (không bắt buộc)<br><input id="rmChild" value="${esc(S.name||'')}" style="width:100%"></label>
+    <label>Con đang học<br><select id="rmGrade">${[6,7,8,9].map(g=>`<option value="${g}" ${gradeNow()===g?'selected':''}>Lớp ${g}</option>`).join('')}</select></label></div>
+   <input type="text" id="rmWeb" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+   <label class="key-item"><input type="checkbox" id="rmConsent"><span class="small">${CONSENT_TXT}</span></label>
+   <div class="row"><button class="btn hi" type="submit" id="rmSend">Gửi cho tôi</button><button class="btn ghost" type="button" id="rmX">Để sau</button><span class="small" id="rmMsg"></span></div></form>`);
+  $('#rmX').onclick=()=>{try{localStorage.setItem('ces_rem_skip',Date.now())}catch(e){}d.remove()};
+  $('#remForm').onsubmit=async e=>{e.preventDefault();const m=$('#rmMsg'),b=$('#rmSend'),ph=$('#rmPhone').value.trim(),em=$('#rmEmail').value.trim();
+    if(!ph&&!em){m.textContent=ERR_VI.missing_contact;return}if(!$('#rmConsent').checked){m.textContent=ERR_VI.need_consent;return}
+    b.disabled=true;m.textContent='Đang gửi…';
+    try{const r=await api('remind',Object.assign({website:$('#rmWeb').value,phone:ph,email:em,child:$('#rmChild').value,grade:+$('#rmGrade').value,region:(()=>{try{return REG().name}catch(x){return ''}})(),consent:true},srcPayload()));
+      S.remindAt=Date.now();S.remindId=r.id||'';if(!S.name&&$('#rmChild').value.trim())S.name=$('#rmChild').value.trim();save();
+      d.querySelector('.gate-card').innerHTML=`<div class="gate-top">${hungFig()}<div><p class="eyebrow">Đã gửi</p><h2>Cháu cảm ơn cô chú ạ!</h2></div></div><p>${em?'Cháu đã gửi đường dẫn bài kiểm tra đầu vào vào email của cô chú. ':''}${ph?'Cô ở CES sẽ nhắn Zalo cho cô chú (8:00–21:00). ':''}Bạn nhà mình làm bài ngay bây giờ cũng được ạ.</p><div class="row"><button class="btn hi" type="button" id="rmGo">Làm bài đầu vào</button><button class="btn ghost" type="button" id="rmOk">Đóng</button></div>`;
+      $('#rmGo').onclick=()=>{d.remove();go('diag')};$('#rmOk').onclick=()=>d.remove()}
+    catch(err){m.textContent=ERR_VI[err.code]||errVi(err);b.disabled=false}};
+}

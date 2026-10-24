@@ -123,4 +123,6 @@ Google Apps Script, Sheets và Drive đều miễn phí trong hạn mức của 
 - Bảng quản trị: sale có tab Việc hôm nay (tin Zalo soạn sẵn, nút Sao chép · mở Zalo), Gia đình, Đơn gói học; giáo viên có tab Lịch tư vấn để ghi kết luận chuyên môn và gói đề xuất; quản lý thấy thêm khối Phễu gia đình ở Tổng quan.
 - Gắn `?utm_source=...&utm_campaign=...` vào đường dẫn từng bài đăng để đếm lead theo nguồn; đường dẫn giới thiệu có dạng `?ref=MÃHỌCSINH`.
 - Sau khi dán mã mới vào Apps Script, chạy hàm **setup** một lần để tạo 3 sheet mới, rồi triển khai phiên bản mới.
+- Đọc trang khoảng 1 phút: popup mời làm bài đầu vào (có nút Để sau). Khoảng 2 phút: popup mời bố mẹ để lại Zalo hoặc email; máy gửi ngay email có đường dẫn bài kiểm tra (nếu có email), sale nhận việc nhắn link qua Zalo (nếu có số), và tự nhắc lại sau 2 ngày, 5 ngày nếu con chưa gửi form sau bài đầu vào.
+- Mỗi lần phụ huynh gửi form xin vào học thử 14 ngày, email báo (kèm kết quả bài đầu vào và bản phác lộ trình) gửi tới `ADMIN_EMAIL` (Script property, nếu đặt; không đặt thì là email trung tâm) và email của mọi tài khoản Quản lý đang dùng.
 
