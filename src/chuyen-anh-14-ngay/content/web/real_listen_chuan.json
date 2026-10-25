@@ -1,752 +1,1005 @@
 {
  "1": {
-  "exam": "B1 Preliminary for Schools",
+  "exam": "B1 Preliminary",
   "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "1 · câu 1–4",
-  "topic_vi": "Đời sống hằng ngày: tiệc nướng, chấn thương, bảo tàng, tin tức, trò chơi, kỳ nghỉ",
-  "instructions_vi": "Nghe 4 đoạn ngắn; mỗi câu chọn tranh đúng A, B hoặc C (tranh ở đề gốc).",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168143-cambridge-english-preliminary-for-schools-teachers-handbook.pdf",
-  "paper_page": 47,
-  "paper_hint": "Part 1 ở trang in số 47 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697391-b1-preliminary-for-schools-listening-sample-1-answer-key.pdf",
-  "yt": "Bsm3cD1cE7U",
-  "yt_title": "Cambridge B1 Preliminary for Schools Listening Sample Test 2020 with Answers",
-  "yt_channel": "Gav's World | Science & Learning for Kids",
-  "start": 50,
-  "end": 393,
+  "test": "Test 1",
+  "part": "1",
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "7 đoạn ngắn: đi lại, nhà nghỉ, gọi món, thể thao, sách, cuối tuần, điện thoại",
+  "instructions_vi": "Nhìn 3 tranh của mỗi câu trên video, chọn A, B hoặc C (câu 1–7).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "mlDzH8lGHfQ",
+  "yt_title": "B1 Preliminary (PET) Listening Test 1 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 5,
+  "end": 624,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
     "n": 1,
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==I could pick some up on my way over== (xúc xích) → **A**. __Mẹo: burger Anna đã làm sẵn; gà thì 'có nhiều rồi'.__",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==the underground… it'd be faster than a taxi== → **B** (tàu điện ngầm). __Mẹo: taxi hợp khi nhiều hành lý nhưng anh chỉ có túi nhẹ; xe buýt đi đường vòng.__"
    },
    {
     "n": 2,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==something a bit more serious in my ankle… the pain still hasn't gone== → **B** (mắt cá). __Mẹo: vai và đầu đau rồi hết.__",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==our beds didn't have mosquito nets so we got bitten almost every night== → **A** (muỗi). __Mẹo: chuột đã được xử lý; khỉ thì bạn ấy \"didn't mind\".__"
    },
    {
     "n": 3,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==paintings of rock stars… We'll visit that at the end of the tour== → **C**. __Mẹo: phòng trang sức cổ và xe đua cũ được xem trước.__",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==I'll have what I always have, of course== – bạn nói anh lúc nào cũng gọi cá → **A**. __Mẹo: pizza là món của bạn nữ; cà ri thì nghe nói cay quá.__"
    },
    {
     "n": 4,
     "type": "mcq",
+    "choices": 3,
     "answer": 2,
-    "explain_vi": "==They succeeded in catching it when it stopped to eat some grass== (bên sông) → **C**. __Mẹo: lề đường và trung tâm mua sắm là chỗ ngựa vằn đi qua.__",
-    "choices": 3
-   }
-  ]
- },
- "2": {
-  "exam": "B1 Preliminary for Schools",
-  "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "1 · câu 5–7",
-  "topic_vi": "Đời sống hằng ngày: tiệc nướng, chấn thương, bảo tàng, tin tức, trò chơi, kỳ nghỉ",
-  "instructions_vi": "Nghe 3 đoạn ngắn; mỗi câu chọn tranh đúng A, B hoặc C (tranh ở đề gốc).",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168143-cambridge-english-preliminary-for-schools-teachers-handbook.pdf",
-  "paper_page": 47,
-  "paper_hint": "Part 1 ở trang in số 47 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697391-b1-preliminary-for-schools-listening-sample-1-answer-key.pdf",
-  "yt": "Bsm3cD1cE7U",
-  "yt_title": "Cambridge B1 Preliminary for Schools Listening Sample Test 2020 with Answers",
-  "yt_channel": "Gav's World | Science & Learning for Kids",
-  "start": 393,
-  "end": 635,
-  "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
-  "items": [
+    "explain_vi": "==I wouldn't mind giving badminton a go== → **C** (cầu lông). __Mẹo: golf quá đắt; tennis thì cần quá khoẻ.__"
+   },
    {
     "n": 5,
     "type": "mcq",
+    "choices": 3,
     "answer": 2,
-    "explain_vi": "==I said I'd rather go to the science museum… I got what I wanted== → **C**. __Mẹo: bể bơi có cuộc thi, phim đã chiếu mất.__",
-    "choices": 3
+    "explain_vi": "==this one's set at sea, a guy who crosses the Pacific Ocean on his own== → **C**. __Mẹo: phi công là các cuốn khác; phi hành gia là cuốn sắp ra.__"
    },
    {
     "n": 6,
     "type": "mcq",
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==There's a great range of moves== → **A**. __Mẹo: trò kia 'nhanh thấy nhàm'; trò đồ ăn ảo 'sức hút có hạn'.__",
-    "choices": 3
+    "explain_vi": "==There's a new art exhibition on at the museum, definitely worth seeing== → **A**. __Mẹo: đi biển có thể gặp bão; rạp phim không có gì hay.__"
    },
    {
     "n": 7,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==I was able to try windsurfing too== → **C**. __Mẹo: thuyền buồm đã học năm ngoái; trượt nước đã chơi từ trước.__",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==for an amazing 599 pounds the most up-to-date smartphone is now available== → **B**. __Mẹo: 699 là giá từ thứ Hai; 499 là mẫu năm ngoái.__"
    }
   ]
  },
- "3": {
-  "exam": "B1 Preliminary for Schools",
+ "2": {
+  "exam": "B1 Preliminary",
   "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "2 · câu 8–10",
-  "topic_vi": "Bạn bè trò chuyện: khu cắm trại, bài tập về nhà, leo núi, học guitar, sách, buổi hòa nhạc",
-  "instructions_vi": "Nghe 3 đoạn hội thoại ngắn; mỗi câu chọn A, B hoặc C về ý kiến, cảm xúc.",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168143-cambridge-english-preliminary-for-schools-teachers-handbook.pdf",
-  "paper_page": 48,
-  "paper_hint": "Part 2 ở trang in số 48 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697391-b1-preliminary-for-schools-listening-sample-1-answer-key.pdf",
-  "yt": "Bsm3cD1cE7U",
-  "yt_title": "Cambridge B1 Preliminary for Schools Listening Sample Test 2020 with Answers",
-  "yt_channel": "Gav's World | Science & Learning for Kids",
-  "start": 653,
-  "end": 918,
+  "test": "Test 1",
+  "part": "2",
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "6 cuộc hội thoại: quà tặng, kỳ nghỉ, buổi tập, vở kịch, nhạc phim, tin tức",
+  "instructions_vi": "Đọc câu hỏi trên video, nghe 6 cuộc hội thoại, chọn A, B hoặc C (câu 8–13).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "mlDzH8lGHfQ",
+  "yt_title": "B1 Preliminary (PET) Listening Test 1 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 631,
+  "end": 1180,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
     "n": 8,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==in other camps you don't get that sort of crowd== → **B**. __Mẹo: bãi biển do bạn nữ nhắc, bạn nam bảo 'bể bơi là đủ'; không nói hoạt động miễn phí.__",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==it weighs so much, can you imagine us trying to take it on the bus== → **A**. __Mẹo: cửa hàng chỉ \"đắt hơn\", không phải hết hàng hay khó đến.__"
    },
    {
     "n": 9,
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==it would make it less boring, having a few laughs== → **A**. __Mẹo: cần tập trung thì 'nên học một mình' (B sai); làm nhanh gấp đôi (C sai).__",
-    "choices": 3
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==wouldn't it be better if you flew?== → **C** (đi phương tiện khác). __Mẹo: chuyến đi dài hơn (a fortnight) là ý của cô, không phải lời khuyên.__"
    },
    {
     "n": 10,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==I'm looking forward to having another try, though== → **C**. __Mẹo: hài lòng là khi leo tường trong nhà; ngoài trời 'đáng sợ hơn nhiều'.__",
-    "choices": 3
-   }
-  ]
- },
- "4": {
-  "exam": "B1 Preliminary for Schools",
-  "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "2 · câu 11–13",
-  "topic_vi": "Bạn bè trò chuyện: khu cắm trại, bài tập về nhà, leo núi, học guitar, sách, buổi hòa nhạc",
-  "instructions_vi": "Nghe 3 đoạn hội thoại ngắn; mỗi câu chọn A, B hoặc C về ý kiến, cảm xúc.",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168143-cambridge-english-preliminary-for-schools-teachers-handbook.pdf",
-  "paper_page": 48,
-  "paper_hint": "Part 2 ở trang in số 48 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697391-b1-preliminary-for-schools-listening-sample-1-answer-key.pdf",
-  "yt": "Bsm3cD1cE7U",
-  "yt_title": "Cambridge B1 Preliminary for Schools Listening Sample Test 2020 with Answers",
-  "yt_channel": "Gav's World | Science & Learning for Kids",
-  "start": 918,
-  "end": 1191,
-  "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
-  "items": [
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==my doctor told me to take things easy== → **A**. __Mẹo: cảm đã khỏi (over now); mổ chân là thứ Sáu tới, chưa mổ.__"
+   },
    {
     "n": 11,
     "type": "mcq",
+    "choices": 3,
     "answer": 2,
-    "explain_vi": "==you ought to pay attention to the really top players== → **C**. __Mẹo: 'không thể tập nhiều hơn' (A sai); bạn nữ khuyên chỉ chơi một dòng nhạc (B sai).__",
-    "choices": 3
+    "explain_vi": "==I expected the performances to be a lot better== → **C**. __Mẹo: nửa sau kém hơn (A sai); trang phục thì \"brilliant\" (B sai).__"
    },
    {
     "n": 12,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==Alan's personality seems really true to life== (bạn nam đồng ý) → **B**. __Mẹo: bạn nữ thấy đoạn giữa chậm (A sai) và đoán được kết (C sai).__",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==the music's definitely popular with a much wider range of people== → **A**. __Mẹo: \"as good as the film\" là bằng, không phải hơn (C).__"
    },
    {
     "n": 13,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==more than I'd normally be willing to pay== → **C**. __Mẹo: 'Don't blame the organisers' (A sai); bạn nam chê không hát bài hit (B sai).__",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==I make sure I do it every morning before anything else== – \"So do I\" → **A**. __Mẹo: bạn kia thích báo giấy (B); bạn ấy lại thích đọc về người nổi tiếng (C).__"
    }
   ]
  },
- "5": {
-  "exam": "B1 Preliminary for Schools",
+ "3": {
+  "exam": "B1 Preliminary",
   "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "test": "Test 1",
   "part": "3",
-  "topic_vi": "Phil Lamb kể về công việc dẫn bản tin truyền hình",
-  "instructions_vi": "Nghe Phil Lamb nói về nghề dẫn bản tin; điền 1–2 từ vào 6 chỗ trống (câu 14–19).",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168143-cambridge-english-preliminary-for-schools-teachers-handbook.pdf",
-  "paper_page": 49,
-  "paper_hint": "Part 3 ở trang in số 49 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697391-b1-preliminary-for-schools-listening-sample-1-answer-key.pdf",
-  "yt": "Bsm3cD1cE7U",
-  "yt_title": "Cambridge B1 Preliminary for Schools Listening Sample Test 2020 with Answers",
-  "yt_channel": "Gav's World | Science & Learning for Kids",
-  "start": 1203,
-  "end": 1487,
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "Hướng dẫn viên giới thiệu chuyến đi bộ ở vùng quê",
+  "instructions_vi": "Nhìn tờ ghi chú trên video, điền một hoặc hai từ, một số, ngày hoặc giờ (câu 14–19).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "mlDzH8lGHfQ",
+  "yt_title": "B1 Preliminary (PET) Listening Test 1 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 1189,
+  "end": 1484,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
     "n": 14,
     "type": "gap",
-    "answer": "radio",
-    "explain_vi": "==first in radio in my home city== → **radio**. __Mẹo: làm nhà báo cho tạp chí là việc sau đó.__",
+    "answer": "5",
     "accept": [
-     "radio",
-     "local radio"
-    ]
+     "five",
+     "5 hours",
+     "five hours"
+    ],
+    "explain_vi": "==one of which takes four hours and the other five; we'll be taking the longer one== → **5**. __Mẹo: 4 giờ là tuyến ngắn; \"by around two\" là giờ đến nơi.__"
    },
    {
     "n": 15,
     "type": "gap",
-    "answer": "newspapers",
-    "explain_vi": "==I get the newspapers and go through each one carefully== → **newspapers**. __Mẹo: họp với biên tập viên là bước sau.__",
+    "answer": "bikes",
     "accept": [
-     "newspapers",
-     "newspaper",
-     "papers",
-     "paper",
-     "news papers"
-    ]
+     "bike",
+     "bicycles",
+     "bicycle"
+    ],
+    "explain_vi": "==please look out for bikes though== → **bikes**. __Mẹo: trời khô nên bậc thang không trơn; tuyến tránh đường ô tô.__"
    },
    {
     "n": 16,
     "type": "gap",
-    "answer": "jacket",
-    "explain_vi": "==choosing the right jacket to put on!== → **jacket**. __Mẹo: quần và giày thì 'không cần lo' vì ngồi sau bàn.__",
+    "answer": "lake",
     "accept": [
-     "jacket",
-     "jackets"
-    ]
+     "the lake"
+    ],
+    "explain_vi": "==I've picked a great place to eat by the lake== → **lake**. __Mẹo: quán cà phê đóng cửa sửa chữa; thác nước chỉ nghỉ ngắn chụp ảnh.__"
    },
    {
     "n": 17,
     "type": "gap",
-    "answer": "people",
-    "explain_vi": "==it's names of people which I sometimes find a real challenge== → **people**. __Mẹo: tên thành phố, quốc gia không phải điểm khó nhất.__",
+    "answer": "butterflies",
     "accept": [
-     "people"
-    ]
+     "butterfly"
+    ],
+    "explain_vi": "==there are lots of butterflies at this time of year== → **butterflies**. __Mẹo: ếch thì trốn suốt ban ngày.__"
    },
    {
     "n": 18,
     "type": "gap",
-    "answer": "business",
-    "explain_vi": "==I really enjoy business== → **business**. __Mẹo: chính trị, thời trang là đề tài đồng nghiệp thích.__",
+    "answer": "castle",
     "accept": [
-     "business"
-    ]
+     "the castle"
+    ],
+    "explain_vi": "==There is a castle though, it's not very big but it is interesting== → **castle**. __Mẹo: không có cửa hàng lưu niệm.__"
    },
    {
     "n": 19,
     "type": "gap",
-    "answer": "producer",
-    "explain_vi": "==I always dreamt of becoming a producer== → **producer**. __Mẹo: diễn viên chỉ là điều người khác bảo anh hợp.__",
+    "answer": "bus",
     "accept": [
-     "producer",
-     "a producer"
-    ]
+     "the bus"
+    ],
+    "explain_vi": "==There's a bus service although you may have to wait a while== → **bus**. __Mẹo: ga tàu đã đóng nhiều năm; taxi không chạy xa thế.__"
    }
   ]
  },
- "6": {
-  "exam": "B1 Preliminary for Schools",
+ "4": {
+  "exam": "B1 Preliminary",
   "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "test": "Test 1",
   "part": "4",
-  "topic_vi": "Phỏng vấn ca sĩ trẻ Mandy, từng làm DJ",
-  "instructions_vi": "Nghe phỏng vấn ca sĩ Mandy; chọn A, B hoặc C cho 6 câu (20–25) về sự nghiệp, cảm xúc, dự định.",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168143-cambridge-english-preliminary-for-schools-teachers-handbook.pdf",
-  "paper_page": 49,
-  "paper_hint": "Part 4 ở trang in số 49 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697391-b1-preliminary-for-schools-listening-sample-1-answer-key.pdf",
-  "yt": "Bsm3cD1cE7U",
-  "yt_title": "Cambridge B1 Preliminary for Schools Listening Sample Test 2020 with Answers",
-  "yt_channel": "Gav's World | Science & Learning for Kids",
-  "start": 1499,
-  "end": 1865,
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "Phỏng vấn nhà thơ trẻ Laura Dickson",
+  "instructions_vi": "Đọc câu hỏi trên video (có 45 giây đọc trước), nghe phỏng vấn, chọn A, B hoặc C (câu 20–25).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "mlDzH8lGHfQ",
+  "yt_title": "B1 Preliminary (PET) Listening Test 1 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 1493,
+  "end": 1844,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
     "n": 20,
     "type": "mcq",
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==As soon as I had enough, I bought what I needed== → **A**. __Mẹo: học y tá một năm nhưng không nói bị mất việc; ra trường thì chưa làm DJ ngay.__",
-    "choices": 3
+    "explain_vi": "==there were always lots of poetry books on the shelves around the house; I used to spend hours looking at them== → **A**. __Mẹo: bố thích văn học nhưng không dạy cô (C); trường thì cô thấy cần dạy thêm (B).__"
    },
    {
     "n": 21,
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==I was very lucky, really== → **A**. __Mẹo: bốn năm là thời gian làm DJ, không phải luyện hát; tự sáng tác không phải khởi đầu.__",
-    "choices": 3
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==found out I'd come first. That's when I knew I wanted to do this full time== → **C**. __Mẹo: cô học lớp báo chí, không phải lớp thơ; người dạy là nhà báo.__"
    },
    {
     "n": 22,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==a girl who is never really happy with her life== → **C**. __Mẹo: 'nor are my friends' chỉ nói bạn cô không như vậy.__",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==in this one though I focus on connections with the people I'm close to== → **B**. __Mẹo: kiến trúc là sách trước; biến đổi khí hậu chỉ là ý định ban đầu.__"
    },
    {
     "n": 23,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==I'm very proud of it== → **B**. __Mẹo: 'hy vọng công chúng mua' chưa phải chắc chắn (A sai); chưa thu xong là bình thường.__",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==I think they took more skill to write than many modern ones do== → **A**. __Mẹo: từ ngữ khác nhưng cô không nói khó hiểu (B).__"
    },
    {
     "n": 24,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==has words that mean something to me== → **C**. __Mẹo: cô cũng thích nhạc nhảy và ca sĩ nữ, nhưng không phải lý do chính.__",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==the other teachers have a lot more experience than me and are happy to share their ideas== → **B**. __Mẹo: cô không chắc sinh viên học được bao nhiêu (A); đã được báo trước khối lượng việc (C).__"
    },
    {
     "n": 25,
     "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I'm hoping to turn some of my previous work into songs== → **C**. __Mẹo: cô chỉ được mời đọc thơ ở lễ hội (A); không muốn ngừng viết (B).__"
+   }
+  ]
+ },
+ "5": {
+  "exam": "B1 Preliminary",
+  "level": "B1",
+  "test": "Test 2",
+  "part": "1",
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "7 đoạn ngắn: ví bị mất, buổi nói chuyện thiên nhiên, bữa trưa, triển lãm, việc làm, đi họp, thể thao mùa đông",
+  "instructions_vi": "Nhìn 3 tranh của mỗi câu trên video, chọn A, B hoặc C (câu 1–7).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "BxiXa_4Bmm8",
+  "yt_title": "B1 Preliminary (PET) Listening Test 2 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 4,
+  "end": 583,
+  "max_plays": 1,
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
+  "items": [
+   {
+    "n": 1,
+    "type": "mcq",
+    "choices": 3,
     "answer": 1,
-    "explain_vi": "==I'd really like to own a night club one day== → **B**. __Mẹo: học guitar thì 'quá bận chưa nghĩ tới'; truyền hình, hòa nhạc là việc đang làm.__",
-    "choices": 3
+    "explain_vi": "==I went to sit in the waiting room, I remember putting my wallet down== → **B** (phòng chờ). __Mẹo: ở cửa hàng anh vẫn còn ví; lên tàu là sau đó.__"
+   },
+   {
+    "n": 2,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==wild flowers in parks and gardens== → **B**. __Mẹo: sông là buổi trước; rừng mưa là tháng sau.__"
+   },
+   {
+    "n": 3,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==In that case I'll go for my usual choice== – bạn ấy thường ăn salad → **A**. __Mẹo: súp là món của người kia; bánh mì kẹp chỉ là phân vân.__"
+   },
+   {
+    "n": 4,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==according to what I heard on the radio== → **C**. __Mẹo: trang web và áp phích đều không nhắc tới triển lãm.__"
+   },
+   {
+    "n": 5,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==they only needed a security guard for the shop, so he was given that job== → **A**. __Mẹo: bán hàng là việc anh muốn, không được nhận.__"
+   },
+   {
+    "n": 6,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==it'll be quicker to rush home and get my own car== → **A**. __Mẹo: tàu bị huỷ; hàng chờ taxi quá dài.__"
+   },
+   {
+    "n": 7,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==ice hockey too… it's too fast though and I gave it up in the end== → **B**. __Mẹo: trượt tuyết ván thì \"hard to stop\"; trượt tuyết thì \"can't get enough\".__"
+   }
+  ]
+ },
+ "6": {
+  "exam": "B1 Preliminary",
+  "level": "B1",
+  "test": "Test 2",
+  "part": "2",
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "6 cuộc hội thoại: mua xe đạp, khoá tiếng Wales, cuối tuần, nhà hàng, gặp lại bạn cũ, cuộc họp",
+  "instructions_vi": "Đọc câu hỏi trên video, nghe 6 cuộc hội thoại, chọn A, B hoặc C (câu 8–13).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "BxiXa_4Bmm8",
+  "yt_title": "B1 Preliminary (PET) Listening Test 2 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 588,
+  "end": 1178,
+  "max_plays": 1,
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
+  "items": [
+   {
+    "n": 8,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==talking to my brother who's a professional cyclist== → **C**. __Mẹo: trên mạng thì \"too much information\"; cửa hàng hay ép mua.__"
+   },
+   {
+    "n": 9,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==if she spoke more slowly I'd understand a lot more== → **A**. __Mẹo: ngữ pháp \"isn't too bad\"; buổi học chỉ một tiếng, ngắn chứ không dài.__"
+   },
+   {
+    "n": 10,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==we just sat on the sofa watching TV… something I really needed to do== → **C**. __Mẹo: chợ mới thì mưa suốt; các con bị ho.__"
+   },
+   {
+    "n": 11,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==everything seemed to either be out of a tin or frozen== – \"you're absolutely right\" → **A**. __Mẹo: giá rẻ rồi; phục vụ chậm chỉ một người gặp.__"
+   },
+   {
+    "n": 12,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==I see you have to wear glasses now== → **B**. __Mẹo: anh đã cạo râu (A sai); áo khoác vẫn là cái cũ (C sai).__"
+   },
+   {
+    "n": 13,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I've heard we're going to carry on as planned… I can't believe that== → **C**. __Mẹo: cô tin bài thuyết trình sẽ được thích (B); cô bực vì máy tính, không phải vì họp (A).__"
    }
   ]
  },
  "7": {
-  "exam": "B1 Preliminary for Schools",
+  "exam": "B1 Preliminary",
   "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "1 · câu 1–4",
-  "topic_vi": "Đời sống hằng ngày: tiệc nướng, chấn thương, bảo tàng, tin tức, trò chơi, kỳ nghỉ",
-  "instructions_vi": "Nghe 4 đoạn ngắn; mỗi câu chọn tranh đúng A, B hoặc C (tranh ở đề gốc).",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168143-cambridge-english-preliminary-for-schools-teachers-handbook.pdf",
-  "paper_page": 47,
-  "paper_hint": "Part 1 ở trang in số 47 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697391-b1-preliminary-for-schools-listening-sample-1-answer-key.pdf",
-  "yt": "Bsm3cD1cE7U",
-  "yt_title": "Cambridge B1 Preliminary for Schools Listening Sample Test 2020 with Answers",
-  "yt_channel": "Gav's World | Science & Learning for Kids",
-  "start": 50,
-  "end": 393,
+  "test": "Test 2",
+  "part": "3",
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "Thông tin cho học viên khoá học hát một tuần",
+  "instructions_vi": "Nhìn tờ ghi chú trên video, điền một hoặc hai từ, một số, ngày hoặc giờ (câu 14–19).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "BxiXa_4Bmm8",
+  "yt_title": "B1 Preliminary (PET) Listening Test 2 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 1186,
+  "end": 1489,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
-    "n": 1,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==I could pick some up on my way over== (xúc xích) → **A**. __Mẹo: burger Anna đã làm sẵn; gà thì 'có nhiều rồi'.__",
-    "choices": 3
+    "n": 14,
+    "type": "gap",
+    "answer": "Brockley",
+    "accept": [
+     "brockley"
+    ],
+    "explain_vi": "==her surname spelt B-R-O-C-K-L-E-Y== → **Brockley**. __Mẹo: Robert Park là thầy dạy jazz.__"
    },
    {
-    "n": 2,
-    "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==something a bit more serious in my ankle… the pain still hasn't gone== → **B** (mắt cá). __Mẹo: vai và đầu đau rồi hết.__",
-    "choices": 3
+    "n": 15,
+    "type": "gap",
+    "answer": "8.30",
+    "accept": [
+     "8:30",
+     "830",
+     "half past eight",
+     "eight thirty",
+     "8.30 pm",
+     "8:30 pm"
+    ],
+    "explain_vi": "==It'll begin at half past eight== → **8.30**. __Mẹo: 8 giờ là giờ mở cửa nhà hát.__"
    },
    {
-    "n": 3,
-    "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==paintings of rock stars… We'll visit that at the end of the tour== → **C**. __Mẹo: phòng trang sức cổ và xe đua cũ được xem trước.__",
-    "choices": 3
+    "n": 16,
+    "type": "gap",
+    "answer": "blue",
+    "accept": [
+     "blue t-shirts",
+     "blue t-shirt"
+    ],
+    "explain_vi": "==T-shirts are fine but we ask that they're blue== → **blue**. __Mẹo: đen là màu truyền thống nhưng \"a bit dark\".__"
    },
    {
-    "n": 4,
-    "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==They succeeded in catching it when it stopped to eat some grass== (bên sông) → **C**. __Mẹo: lề đường và trung tâm mua sắm là chỗ ngựa vằn đi qua.__",
-    "choices": 3
+    "n": 17,
+    "type": "gap",
+    "answer": "receptionist",
+    "accept": [
+     "the receptionist",
+     "reception"
+    ],
+    "explain_vi": "==a map… which you can get from the receptionist== → **receptionist**. __Mẹo: thầy cô và bảo vệ chỉ để hỏi đường.__"
+   },
+   {
+    "n": 18,
+    "type": "gap",
+    "answer": "hall",
+    "accept": [
+     "the hall"
+    ],
+    "explain_vi": "==take your sandwiches or whatever to the hall== → **hall**. __Mẹo: không có quán cà phê; bếp thì không có chỗ ngồi.__"
+   },
+   {
+    "n": 19,
+    "type": "gap",
+    "answer": "3",
+    "accept": [
+     "three",
+     "3.00",
+     "£3"
+    ],
+    "explain_vi": "==it's cheaper to pay daily, which is three pounds== → **3**. __Mẹo: 20 bảng là vé tháng.__"
    }
-  ],
-  "review_of": 1,
-  "intro_vi": "Buổi ôn: làm lại đúng phần của buổi 1, không xem lại đáp án cũ. So điểm hai lần để thấy tai mình đã quen dạng bài hơn chưa."
+  ]
  },
  "8": {
   "exam": "B1 Preliminary",
   "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "1 · câu 1–4",
-  "topic_vi": "Đời sống hằng ngày: mua sắm, chuyến bay, hoạt động cuối tuần, bánh, khuyến mãi, TV",
-  "instructions_vi": "Nghe 4 đoạn ngắn; mỗi câu chọn tranh đúng A, B hoặc C (tranh ở đề gốc).",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168150-b1-preliminary-teachers-handbook.pdf",
-  "paper_page": 47,
-  "paper_hint": "Part 1 ở trang in số 47 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697387-b1-preliminary-listening-sample-1-answer-key.pdf",
-  "yt": "p2ryoTIUA0Y",
-  "yt_title": "b1 2020 listening test audio SAMPLE",
-  "yt_channel": "Amr Hassan ESL",
-  "start": 28,
-  "end": 353,
+  "test": "Test 2",
+  "part": "4",
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "Phỏng vấn thợ cắt tóc Mickey Diaz",
+  "instructions_vi": "Đọc câu hỏi trên video (có 45 giây đọc trước), nghe phỏng vấn, chọn A, B hoặc C (câu 20–25).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "BxiXa_4Bmm8",
+  "yt_title": "B1 Preliminary (PET) Listening Test 2 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 1496,
+  "end": 1856,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
-    "n": 1,
+    "n": 20,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==I'd prefer to have a lamp on my desk, so that's what I got today== → **B** (đèn bàn). __Mẹo: gối đang giảm giá nhưng không mua; giá sách để tuần sau.__",
-    "choices": 3
-   },
-   {
-    "n": 2,
-    "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==wait for the runway to be cleared of snow== → **B** (tuyết). __Mẹo: mưa ở thành phố và gió lúc hạ cánh không làm máy bay trễ.__",
-    "choices": 3
-   },
-   {
-    "n": 3,
-    "type": "mcq",
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==join one of the group rides through the forest== → **A**. __Mẹo: học thuyền buồm và đua xe là dự định cũ/lần trước.__",
-    "choices": 3
+    "explain_vi": "==a friend said I could help in his hairdresser shop, so I did and I ended up staying== → **A**. __Mẹo: bố mẹ làm nghề này nhưng anh định làm việc khác (B).__"
    },
    {
-    "n": 4,
+    "n": 21,
     "type": "mcq",
+    "choices": 3,
     "answer": 2,
-    "explain_vi": "==I think I'll have the same as you== → **C**. __Mẹo: bánh dâu chỉ định thử; bánh chanh là đoán món của bạn.__",
-    "choices": 3
+    "explain_vi": "==it's best if we mix things up: do a few women's cuts, a few men's, some colour== → **C**. __Mẹo: anh luôn dành thời gian nghỉ (A); ở muộn \"that's fine with me\" (B).__"
+   },
+   {
+    "n": 22,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==I really enjoy exchanging news with the people who come back regularly== → **B**. __Mẹo: anh không thích phải sáng tạo kiểu mới (A, C).__"
+   },
+   {
+    "n": 23,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==health and safety courses, which I find extremely dull== → **A**. __Mẹo: khách thô lỗ không làm anh bận tâm; chia sẻ kiến thức thì anh không ngại.__"
+   },
+   {
+    "n": 24,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I usually feel there's something I could do better, so I'm always trying to improve== → **C**. __Mẹo: anh không nói lo khách bực (A).__"
+   },
+   {
+    "n": 25,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==a lot of people make the mistake of thinking they've learned all there is to learn== → **B**. __Mẹo: anh nói lương \"can actually be quite good\" (C sai).__"
    }
   ]
  },
  "9": {
   "exam": "B1 Preliminary",
   "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "1 · câu 5–7",
-  "topic_vi": "Đời sống hằng ngày: mua sắm, chuyến bay, hoạt động cuối tuần, bánh, khuyến mãi, TV",
-  "instructions_vi": "Nghe 3 đoạn ngắn; mỗi câu chọn tranh đúng A, B hoặc C (tranh ở đề gốc).",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168150-b1-preliminary-teachers-handbook.pdf",
-  "paper_page": 47,
-  "paper_hint": "Part 1 ở trang in số 47 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697387-b1-preliminary-listening-sample-1-answer-key.pdf",
-  "yt": "p2ryoTIUA0Y",
-  "yt_title": "b1 2020 listening test audio SAMPLE",
-  "yt_channel": "Amr Hassan ESL",
-  "start": 353,
-  "end": 594,
+  "test": "Test 3",
+  "part": "1",
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "7 đoạn ngắn: thợ lắp cửa, bữa tiệc, thời tiết, bệnh viện, quà sinh nhật, đổi áo, cảnh sát giao thông",
+  "instructions_vi": "Nhìn 3 tranh của mỗi câu trên video, chọn A, B hoặc C (câu 1–7).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "octfz4PZ2L4",
+  "yt_title": "B1 Preliminary (PET) Listening Test 3 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 0,
+  "end": 506,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
+   {
+    "n": 1,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==so I can come and fit them on Tuesday== → **B**. __Mẹo: thứ Hai nên bỏ vì cửa có thể về muộn; thứ Năm chỉ là việc của khách khác bị huỷ.__"
+   },
+   {
+    "n": 2,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==Still, I had a nice dance, that was fun== → **C**. __Mẹo: đồ ăn không ngon; nhạc to quá nên không nói chuyện được.__"
+   },
+   {
+    "n": 3,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==we'll be waking up to clear blue skies with lots of sunshine== → **B**. __Mẹo: mưa gió là đêm nay; mưa rào là buổi tối mai.__"
+   },
+   {
+    "n": 4,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==a tour with a nurse who will show you around the hospital at 1.30== → **C**. __Mẹo: 1 giờ là bài nói của bác sĩ; 12.30 là đăng ký.__"
+   },
    {
     "n": 5,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==a total of at least £19.99 and we will reward you== → **B** (£19.99). __Mẹo: £29.99 là giá món khác; sáu chai nước ép là ưu đãi khác.__",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==you could buy me some driving lessons, but I don't think I'm ready yet== → **A** (không học lái xe). __Mẹo: tiền do ông cho, váy do mẹ mua: đều là quà bạn ấy nhận.__"
    },
    {
     "n": 6,
     "type": "mcq",
+    "choices": 3,
     "answer": 1,
-    "explain_vi": "==We did, and it was worth the wait== → **B**. __Mẹo: rạp phim không đi được; phòng tranh là chuyến mấy tuần trước.__",
-    "choices": 3
+    "explain_vi": "==see if you've got something else in a medium== → **B** (cỡ vừa). __Mẹo: người bán gợi ý cỡ lớn nhưng anh không lấy.__"
    },
    {
     "n": 7,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==Before that, however, you can watch Lucas Wilson preparing… Polish dishes== → **C** (nấu ăn). __Mẹo: Come Dancing và Quiz Challenge chiếu sau.__",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==officers are looking out for drivers using their mobile phones== → **A**. __Mẹo: dây an toàn và chạy quá tốc độ là đợt kiểm tra trước.__"
    }
   ]
  },
  "10": {
   "exam": "B1 Preliminary",
   "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "2 · câu 8–10",
-  "topic_vi": "Bạn bè trò chuyện: cửa hàng quần áo, trang web ban nhạc, giải vẽ, bạn cùng phòng, bóng đá, tennis",
-  "instructions_vi": "Nghe 3 đoạn hội thoại ngắn; mỗi câu chọn A, B hoặc C về ý kiến, cảm xúc, lý do.",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168150-b1-preliminary-teachers-handbook.pdf",
-  "paper_page": 48,
-  "paper_hint": "Part 2 ở trang in số 48 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697387-b1-preliminary-listening-sample-1-answer-key.pdf",
-  "yt": "p2ryoTIUA0Y",
-  "yt_title": "b1 2020 listening test audio SAMPLE",
-  "yt_channel": "Amr Hassan ESL",
-  "start": 594,
-  "end": 877,
+  "test": "Test 3",
+  "part": "2",
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "6 cuộc hội thoại: bộ phim, bạn cùng nhà, kỳ nghỉ, đón người thân ở sân bay, ra ga tàu, máy tính mới",
+  "instructions_vi": "Đọc câu hỏi trên video, nghe 6 cuộc hội thoại, chọn A, B hoặc C (câu 8–13).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "octfz4PZ2L4",
+  "yt_title": "B1 Preliminary (PET) Listening Test 3 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 511,
+  "end": 1012,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
     "n": 8,
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==the assistants were nice – telling me whether things suited me or not== → **A**. __Mẹo: đồ mốt nhất 'đã hết' (B sai); 'không đắt' khác với đang giảm giá (C sai).__",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==this is his first attempt at a film like this, he's mainly worked on TV programmes== → **B**. __Mẹo: \"anyone would like it whatever their age\" loại A; phim chưa từng chiếu TV (C).__"
    },
    {
     "n": 9,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==It wouldn't let me pay… They should just make it simpler== → **B**. __Mẹo: tin mới đăng gần như mỗi ngày (A sai); thành viên đã trả lời fan (C sai).__",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==you should ask him to find somewhere else to live== – \"I think you're right\" → **A**. __Mẹo: để giấy nhắc là ý của Steve, không phải của hai bạn.__"
    },
    {
     "n": 10,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==I can't get the time off work== → **C**. __Mẹo: cô thấy giải thưởng là 'cơ hội tuyệt' (A sai); tranh 'không phải bức đẹp nhất' (B sai).__",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==they've promised to introduce me to their friends, so I don't think that will be a problem== → **B**. __Mẹo: cô đặt kịp trước khi tăng giá (A); cô thích đi bộ dài (C).__"
+   },
+   {
+    "n": 11,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==I've decided I'm going to wear something colourful instead== → **B**. __Mẹo: biển tên bị bỏ vì ai cũng cầm; email là để báo trước cho chị họ.__"
+   },
+   {
+    "n": 12,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==they take ages at that time in the morning and I'm worried we'll be late== → **A**. __Mẹo: taxi đắt hơn nhưng vẫn chọn (B sai); lo trễ tàu chứ tàu không trễ (C).__"
+   },
+   {
+    "n": 13,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==I stopped taking the old one to work in the end as it was so heavy== → **A** (anh có mang đi làm một thời gian). __Mẹo: máy cũ \"wasn't that slow\" (B).__"
    }
   ]
  },
  "11": {
   "exam": "B1 Preliminary",
   "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "2 · câu 11–13",
-  "topic_vi": "Bạn bè trò chuyện: cửa hàng quần áo, trang web ban nhạc, giải vẽ, bạn cùng phòng, bóng đá, tennis",
-  "instructions_vi": "Nghe 3 đoạn hội thoại ngắn; mỗi câu chọn A, B hoặc C về ý kiến, cảm xúc, lý do.",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168150-b1-preliminary-teachers-handbook.pdf",
-  "paper_page": 48,
-  "paper_hint": "Part 2 ở trang in số 48 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697387-b1-preliminary-listening-sample-1-answer-key.pdf",
-  "yt": "p2ryoTIUA0Y",
-  "yt_title": "b1 2020 listening test audio SAMPLE",
-  "yt_channel": "Amr Hassan ESL",
-  "start": 877,
-  "end": 1118,
+  "test": "Test 3",
+  "part": "3",
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "Người dẫn chương trình Erica nói cách bảo vệ môi trường",
+  "instructions_vi": "Nhìn tờ ghi chú trên video, điền một hoặc hai từ, một số, ngày hoặc giờ (câu 14–19).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "octfz4PZ2L4",
+  "yt_title": "B1 Preliminary (PET) Listening Test 3 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 1017,
+  "end": 1317,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
-    "n": 11,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==the way she never picks anything up that bothers me== → **A**. __Mẹo: bạn cùng phòng ít nói (B sai); nhạc giúp cô tập trung (C sai).__",
-    "choices": 3
+    "n": 14,
+    "type": "gap",
+    "answer": "shopping",
+    "accept": [
+     "shoppers",
+     "going shopping"
+    ],
+    "explain_vi": "==as people who go shopping we have a lot of power… we can always shop somewhere else== → **shopping**."
    },
    {
-    "n": 12,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==they just don't believe enough in their own ability== → **A**. __Mẹo: thiếu người vì chấn thương mà 'không tệ lắm' (B sai); đội đang tập chăm hơn (C sai).__",
-    "choices": 3
+    "n": 15,
+    "type": "gap",
+    "answer": "plastic bags",
+    "accept": [
+     "plastic bag",
+     "bags",
+     "old plastic bags"
+    ],
+    "explain_vi": "==any plastic bags you have at home, don't throw them away… use them then== → **plastic bags**."
    },
    {
-    "n": 13,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==I must improve my fitness first… Can I come with you?== → **A**. __Mẹo: khó tìm giờ tập chung (B sai); chỉ nói một giải sắp tới (C sai).__",
-    "choices": 3
+    "n": 16,
+    "type": "gap",
+    "answer": "charity shops",
+    "accept": [
+     "charity shop",
+     "a charity shop",
+     "charities"
+    ],
+    "explain_vi": "==there are always charity shops, which are very happy to help you recycle== → **charity shops**."
+   },
+   {
+    "n": 17,
+    "type": "gap",
+    "answer": "environmental",
+    "accept": [
+     "local environmental",
+     "environment"
+    ],
+    "explain_vi": "==find out what some of the local environmental problems are and see how you can help== → **environmental**. __Mẹo: \"pollution\" là chủ đề chung, câu điền đứng trước \"problems\".__"
+   },
+   {
+    "n": 18,
+    "type": "gap",
+    "answer": "rivers",
+    "accept": [
+     "river",
+     "local rivers"
+    ],
+    "explain_vi": "==help to clear the rubbish from local rivers== → **rivers**."
+   },
+   {
+    "n": 19,
+    "type": "gap",
+    "answer": "neighbour",
+    "accept": [
+     "neighbor",
+     "neighbours",
+     "neighbors"
+    ],
+    "explain_vi": "==if you work in the same area as your neighbour, try car sharing== → **neighbour**."
    }
   ]
  },
  "12": {
   "exam": "B1 Preliminary",
   "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "3",
-  "topic_vi": "Người dẫn chương trình Anita kể về kỳ nghỉ ở Cuba",
-  "instructions_vi": "Nghe Anita kể về kỳ nghỉ ở Cuba; điền 1–2 từ vào 6 chỗ trống (câu 14–19).",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168150-b1-preliminary-teachers-handbook.pdf",
-  "paper_page": 49,
-  "paper_hint": "Part 3 ở trang in số 49 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697387-b1-preliminary-listening-sample-1-answer-key.pdf",
-  "yt": "p2ryoTIUA0Y",
-  "yt_title": "b1 2020 listening test audio SAMPLE",
-  "yt_channel": "Amr Hassan ESL",
-  "start": 1130,
-  "end": 1413,
+  "test": "Test 3",
+  "part": "4",
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "Phỏng vấn Sally Wainwright về lớp học hát",
+  "instructions_vi": "Đọc câu hỏi trên video (có 45 giây đọc trước), nghe phỏng vấn, chọn A, B hoặc C (câu 20–25).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "octfz4PZ2L4",
+  "yt_title": "B1 Preliminary (PET) Listening Test 3 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 1322,
+  "end": 1722,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
-    "n": 14,
-    "type": "gap",
-    "answer": "waterfall",
-    "explain_vi": "==a fantastic waterfall that everyone stopped to admire== → **waterfall**. __Mẹo: khu rừng mưa là phần Anita thích nhất, không phải nơi đông người nhất.__",
-    "accept": [
-     "waterfall",
-     "waterfalls",
-     "fantastic waterfall",
-     "a waterfall",
-     "the waterfall"
-    ]
+    "n": 20,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==singing classes were something I'd always wanted to try but never had the confidence to start== → **C**. __Mẹo: lớp vẽ thì \"okay\", người cô ghét là lớp thể dục (B).__"
    },
    {
-    "n": 15,
-    "type": "gap",
-    "answer": "sharks",
-    "explain_vi": "==special electronic arm-bands to keep off any sharks!== → **sharks**. __Mẹo: chuyến bơi cùng cá heo; vòng tay để tránh cá mập.__",
-    "accept": [
-     "sharks",
-     "shark",
-     "the sharks"
-    ]
+    "n": 21,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I wanted to be able to do the same without feeling silly== → **C**. __Mẹo: mẹ hát hay nhưng không bảo cô (B); chồng không khuyên (A).__"
    },
    {
-    "n": 16,
-    "type": "gap",
-    "answer": "horse",
-    "explain_vi": "==crossing a range of hills by horse== → **horse**. __Mẹo: xe máy làm ngựa hoảng, Anita không ngồi xe máy.__",
-    "accept": [
-     "horse",
-     "horses",
-     "a horse",
-     "her horse",
-     "the horse"
-    ]
+    "n": 22,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==you didn't need to prove how good your voice was… that was the best bit== → **B**. __Mẹo: cả nhóm luôn hát chung, không hát một mình (C).__"
    },
    {
-    "n": 17,
-    "type": "gap",
-    "answer": "musical",
-    "explain_vi": "==We went to a theatre to see a musical== → **musical**. __Mẹo: 'not a serious play' nên đừng ghi play.__",
-    "accept": [
-     "musical",
-     "musical show",
-     "musical play",
-     "a musical"
-    ]
+    "n": 23,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==one of the organisers… she gave me the confidence to give it a try== → **B**. __Mẹo: suýt quay xe về vì lo, xe không hỏng (A); cô tự chọn đứng phía sau (C).__"
    },
    {
-    "n": 18,
-    "type": "gap",
-    "answer": "sugar",
-    "explain_vi": "==in the end we went to a farm that produces sugar== → **sugar**. __Mẹo: cà phê là điều cô tưởng sẽ được xem.__",
-    "accept": [
-     "sugar"
-    ]
+    "n": 24,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==now I join in with the kids when there's a good song on the radio== → **A**. __Mẹo: mới đạt \"one of the goals\" (B); chưa từng hát một mình (C).__"
    },
    {
-    "n": 19,
-    "type": "gap",
-    "answer": "rings",
-    "explain_vi": "==bought a few rings to take back as presents== → **rings**. __Mẹo: thắt lưng da chỉ được khen đẹp.__",
-    "accept": [
-     "rings",
-     "ring",
-     "some rings"
-    ]
+    "n": 25,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I do know I always go home in a good mood== → **C**. __Mẹo: chuyện lợi ích sức khoẻ cô nói \"I'm not sure about all that\" (A, B).__"
    }
   ]
  },
  "13": {
   "exam": "B1 Preliminary",
   "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "4",
-  "topic_vi": "Phỏng vấn nhà vô địch bơi lội, huấn luyện viên Vicky Prince",
-  "instructions_vi": "Nghe phỏng vấn Vicky Prince; chọn A, B hoặc C cho 6 câu (20–25) về lý do, cảm xúc, ý kiến.",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168150-b1-preliminary-teachers-handbook.pdf",
-  "paper_page": 49,
-  "paper_hint": "Part 4 ở trang in số 49 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697387-b1-preliminary-listening-sample-1-answer-key.pdf",
-  "yt": "p2ryoTIUA0Y",
-  "yt_title": "b1 2020 listening test audio SAMPLE",
-  "yt_channel": "Amr Hassan ESL",
-  "start": 1426,
-  "end": 1816,
+  "test": "Test 4",
+  "part": "2",
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "6 cuộc hội thoại: buổi múa, cuốn sách, trận bóng, đi nha sĩ, bữa tối, quà sinh nhật",
+  "instructions_vi": "Đọc câu hỏi trên video, nghe 6 cuộc hội thoại, chọn A, B hoặc C (câu 8–13).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "WGKLncFBX8w",
+  "yt_title": "B1 Preliminary (PET) Listening Test 4 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 550,
+  "end": 1078,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
-    "n": 20,
+    "n": 8,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==my teacher persuaded me to go in for competitions== → **C**. __Mẹo: vào câu lạc bộ 'sau này'; bố mẹ không bơi giỏi.__",
-    "choices": 3
-   },
-   {
-    "n": 21,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==I did exercises in the school gym to build my strength== → **A**. __Mẹo: vẫn ăn sáng trên xe (B sai); chiều lại quay về bể (C sai).__",
-    "choices": 3
-   },
-   {
-    "n": 22,
-    "type": "mcq",
+    "choices": 3,
     "answer": 1,
-    "explain_vi": "==Much harder was losing two of the friends I'd known== → **B**. __Mẹo: lỡ dã ngoại, tiệc có nhắc nhưng không khó bằng.__",
-    "choices": 3
+    "explain_vi": "==I'm not sure we have anyone in the group who's strong enough to take charge== → **B**. __Mẹo: còn 3 buổi học là đủ (A); không ai nói thiếu người (C).__"
    },
    {
-    "n": 23,
+    "n": 9,
     "type": "mcq",
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==the crowd were more interested in the other swimmers== → **A**. __Mẹo: 'tập chăm như mọi khi' (B sai); bất ngờ khi cầm cúp (C sai).__",
-    "choices": 3
+    "explain_vi": "==I read it from cover to cover in one day== → **A**. __Mẹo: cuốn này phức tạp hơn các cuốn trước (B ngược); anh gợi ý đọc sách cũ của cùng tác giả (C).__"
    },
    {
-    "n": 24,
+    "n": 10,
     "type": "mcq",
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==I've both won and lost in competitions, and recovered from that== → **A**. __Mẹo: 'không chỉ là kỹ thuật' (B sai); bằng là của cô (C sai).__",
-    "choices": 3
+    "explain_vi": "==a bigger crowd than normal for such an important match== → **A**. __Mẹo: mua vé \"wasn't difficult at all\"; người làm ở phòng vé là bạn anh.__"
    },
    {
-    "n": 25,
+    "n": 11,
     "type": "mcq",
+    "choices": 3,
     "answer": 2,
-    "explain_vi": "==you do get to see some wonderful places== → **C**. __Mẹo: giữ thể lực 'không phải lý do chính'; bơi biển 'không toàn vui'.__",
-    "choices": 3
+    "explain_vi": "==I thought it would be better to see my usual one, she's gentle== → **C**. __Mẹo: có lịch buổi sáng nhưng với nha sĩ khác (B); cô muốn sớm hơn chứ không phải giờ quá sớm (A).__"
+   },
+   {
+    "n": 12,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I'd rather have something that isn't too hot and spicy== → **C**. __Mẹo: mì Ý đã ăn ba ngày liền; gọi đồ ăn ngoài là \"for a change\" (B).__"
+   },
+   {
+    "n": 13,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==I know she's free on Friday== → **B**. __Mẹo: chỉ là không biết cô ấy thích sách gì (A); họ định làm bất ngờ (C).__"
    }
   ]
  },
  "14": {
   "exam": "B1 Preliminary",
   "level": "B1",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "1 · câu 1–4",
-  "topic_vi": "Đời sống hằng ngày: mua sắm, chuyến bay, hoạt động cuối tuần, bánh, khuyến mãi, TV",
-  "instructions_vi": "Nghe 4 đoạn ngắn; mỗi câu chọn tranh đúng A, B hoặc C (tranh ở đề gốc).",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/168150-b1-preliminary-teachers-handbook.pdf",
-  "paper_page": 47,
-  "paper_hint": "Part 1 ở trang in số 47 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/697387-b1-preliminary-listening-sample-1-answer-key.pdf",
-  "yt": "p2ryoTIUA0Y",
-  "yt_title": "b1 2020 listening test audio SAMPLE",
-  "yt_channel": "Amr Hassan ESL",
-  "start": 28,
-  "end": 353,
+  "test": "Test 4",
+  "part": "4",
+  "tag": "DẠNG ĐỀ PET",
+  "on_screen": true,
+  "topic_vi": "Phỏng vấn Maggie Taylor về niềm yêu thích tỏi",
+  "instructions_vi": "Đọc câu hỏi trên video (có 45 giây đọc trước), nghe phỏng vấn, chọn A, B hoặc C (câu 20–25).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "WGKLncFBX8w",
+  "yt_title": "B1 Preliminary (PET) Listening Test 4 with answers (new format)",
+  "yt_channel": "vPET - Crack B1 Preliminary English Test",
+  "start": 1399,
+  "end": 1802,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/That is the end of part …\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Đề luyện tập dạng B1 Preliminary (từ 2020) của kênh vPET; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
-    "n": 1,
+    "n": 20,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==I'd prefer to have a lamp on my desk, so that's what I got today== → **B** (đèn bàn). __Mẹo: gối đang giảm giá nhưng không mua; giá sách để tuần sau.__",
-    "choices": 3
-   },
-   {
-    "n": 2,
-    "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==wait for the runway to be cleared of snow== → **B** (tuyết). __Mẹo: mưa ở thành phố và gió lúc hạ cánh không làm máy bay trễ.__",
-    "choices": 3
-   },
-   {
-    "n": 3,
-    "type": "mcq",
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==join one of the group rides through the forest== → **A**. __Mẹo: học thuyền buồm và đua xe là dự định cũ/lần trước.__",
-    "choices": 3
+    "explain_vi": "==when I went to university I started seeing other students cooking with it for the first time== → **A**. __Mẹo: thế hệ trước không dùng tỏi chứ không phải ghét (C).__"
    },
    {
-    "n": 4,
+    "n": 21,
     "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==because it's used all over the world I've learned to cook some interesting dishes== → **B**. __Mẹo: cô học qua sách nấu ăn, không phải khoá học (A).__"
+   },
+   {
+    "n": 22,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==it has a very long history of being used as a medicine== → **B**. __Mẹo: chữa cảm thì \"I'm not sure about that\"; bệnh da chỉ là nghe nói.__"
+   },
+   {
+    "n": 23,
+    "type": "mcq",
+    "choices": 3,
     "answer": 2,
-    "explain_vi": "==I think I'll have the same as you== → **C**. __Mẹo: bánh dâu chỉ định thử; bánh chanh là đoán món của bạn.__",
-    "choices": 3
+    "explain_vi": "==It used to be difficult to find the right type, but these days it's quite easy== → **C**. __Mẹo: tỏi siêu thị không hợp vườn Anh (A).__"
+   },
+   {
+    "n": 24,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==I didn't do very well to start with== → **A**. __Mẹo: tỏi đào lên vào tháng Bảy khi còn xanh (C sai).__"
+   },
+   {
+    "n": 25,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==they're afraid it will make their breath smell== → **B**. __Mẹo: \"I can't say my family like it\" loại A.__"
    }
-  ],
-  "review_of": 8,
-  "intro_vi": "Buổi ôn: làm lại đúng phần của buổi 8, không xem lại đáp án cũ. So điểm hai lần để thấy tai mình đã quen dạng bài hơn chưa."
+  ]
  }
 }

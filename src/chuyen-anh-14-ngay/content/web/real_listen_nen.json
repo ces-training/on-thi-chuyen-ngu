@@ -2,864 +2,907 @@
  "1": {
   "exam": "A2 Flyers",
   "level": "A2",
-  "test": "Sample Papers 2018 Volume 1 (Test 1)",
+  "test": "Flyers 1 (Authentic Examination Papers) · Test 1",
   "part": "2",
-  "topic_vi": "Câu lạc bộ Thiên văn (Space Club) ở trường",
-  "instructions_vi": "Nghe cô giáo kể về Câu lạc bộ Thiên văn, viết một từ hoặc tên vào mỗi chỗ trống (1–5).",
-  "paper_pdf": "https://www.cambridgeenglish.org/fr/Images/flyers-sample-papers-2018-vol1.pdf",
-  "paper_page": 63,
-  "paper_hint": "Part 2 ở trang in số 63 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/fr/Images/flyers-sample-papers-2018-vol1.pdf#page=69",
-  "yt": "FTXQbVrkIAs",
-  "yt_title": "Flyers SAMPLE TESTS Volume 1 - Listening Test 1",
-  "yt_channel": "Lớp Học Thầy Mol",
-  "start": 291,
-  "end": 490,
+  "tag": "ĐỀ FLYERS",
+  "on_screen": true,
+  "topic_vi": "Sarah hỏi ông về sân bay nơi ông làm việc",
+  "instructions_vi": "Nhìn tờ ghi chú trên video, nghe và viết một từ, tên hoặc số vào mỗi chỗ (câu 1–5).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "eNSseVkM2ks",
+  "yt_title": "Flyers 1 - Listening Test 1 - Authentic Examination Papers | ABC Thủ Thừa",
+  "yt_channel": "ABC Thu Thua English Center",
+  "start": 350,
+  "end": 556,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/listen to part … again\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Bộ sách Cambridge Flyers 1 Authentic Examination Papers (đề thật của Cambridge), video của trung tâm ABC Thủ Thừa.",
   "items": [
    {
     "n": 1,
     "type": "gap",
-    "answer": "stars",
-    "explain_vi": "==they can learn about the stars== → **stars**. __Mẹo:__ kết bạn mới (make new friends) chỉ là lợi ích phụ.",
+    "answer": "Cledon",
     "accept": [
-     "stars",
-     "the stars",
-     "star"
-    ]
+     "cledon",
+     "cleydon"
+    ],
+    "explain_vi": "==How do you spell that? C-L-E-D-O-N== → **Cledon**. __Mẹo: tên riêng luôn được đánh vần, nghe từng chữ cái.__"
    },
    {
     "n": 2,
     "type": "gap",
-    "answer": "moon",
-    "explain_vi": "==They look at the moon when there are no clouds== → **moon**. __Mẹo:__ stars là đáp án câu 1, không dùng lại.",
+    "answer": "320",
     "accept": [
-     "moon",
-     "the moon"
-    ]
+     "three hundred and twenty",
+     "three hundred twenty"
+    ],
+    "explain_vi": "==Is it more than 200? Oh yes, I read that it's 320== → **320**. __Mẹo: 200 chỉ là số Sarah đoán.__"
    },
    {
     "n": 3,
     "type": "gap",
-    "answer": "torch",
-    "explain_vi": "==it's a good idea to bring a torch== → **torch**. __Mẹo:__ hỏi giấy bút thì cô trả lời không cần.",
+    "answer": "film stars",
     "accept": [
-     "torch",
-     "a torch",
-     "flashlight"
-    ]
+     "film star",
+     "filmstars",
+     "film-stars",
+     "movie stars"
+    ],
+    "explain_vi": "==No, but I often see film stars== → **film stars**. __Mẹo: ngôi sao nhạc pop thì ông chưa thấy.__"
    },
    {
     "n": 4,
     "type": "gap",
-    "answer": "DVDs",
-    "explain_vi": "==the club has some very interesting DVDs== → **DVD(s)**. __Mẹo:__ chương trình TV bị phủ định (No).",
+    "answer": "pancakes",
     "accept": [
-     "dvds",
-     "dvd",
-     "dvd's"
-    ]
+     "pancake"
+    ],
+    "explain_vi": "==the pancakes there are brilliant== → **pancakes**."
    },
    {
     "n": 5,
     "type": "gap",
-    "answer": "Bailey",
-    "explain_vi": "Tên được đánh vần B-A-I-L-E-Y → **Bailey**. __Mẹo:__ Michael là tên học sinh đang hỏi, không phải người đến nói chuyện.",
+    "answer": "flags",
     "accept": [
-     "bailey",
-     "mr bailey"
-    ]
+     "flag"
+    ],
+    "explain_vi": "==It's got lots of flags outside== → **flags**."
    }
   ]
  },
  "2": {
   "exam": "A2 Flyers",
   "level": "A2",
-  "test": "Sample Papers 2018 Volume 1 (Test 1)",
+  "test": "Flyers 1 (Authentic Examination Papers) · Test 1",
   "part": "3",
-  "topic_vi": "Chú Robert kể mua các đồ vật ở đâu",
-  "instructions_vi": "Nghe chú Robert kể, mỗi đồ vật (trống, thiên nga, quạt, sô-cô-la, găng tay) nối với nơi mua, chọn chữ A–H.",
-  "paper_pdf": "https://www.cambridgeenglish.org/fr/Images/flyers-sample-papers-2018-vol1.pdf",
-  "paper_page": 65,
-  "paper_hint": "Part 3 ở trang in số 65 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/fr/Images/flyers-sample-papers-2018-vol1.pdf#page=69",
-  "yt": "FTXQbVrkIAs",
-  "yt_title": "Flyers SAMPLE TESTS Volume 1 - Listening Test 1",
-  "yt_channel": "Lớp Học Thầy Mol",
-  "start": 511,
-  "end": 795,
+  "tag": "ĐỀ FLYERS",
+  "on_screen": true,
+  "topic_vi": "Bà của Harry kể bà chụp ảnh từng người ở đâu",
+  "instructions_vi": "Nhìn tranh trên video, nối mỗi người (câu 1–5) với nơi bà chụp ảnh, chọn chữ A–H.",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "eNSseVkM2ks",
+  "yt_title": "Flyers 1 - Listening Test 1 - Authentic Examination Papers | ABC Thủ Thừa",
+  "yt_channel": "ABC Thu Thua English Center",
+  "start": 560,
+  "end": 924,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/listen to part … again\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Bộ sách Cambridge Flyers 1 Authentic Examination Papers (đề thật của Cambridge), video của trung tâm ABC Thủ Thừa.",
   "items": [
    {
     "n": 1,
+    "label": "Lucy",
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "Trống: ==at the airport, I found a shop that sold drums== → **B (sân bay)**. __Mẹo:__ nhà hát chỉ là nơi chú nghe nhạc.",
     "choices": 8,
-    "label": "drums"
+    "answer": 7,
+    "explain_vi": "Lucy: ==she slept in a tent while she worked on that farm== → **H** (nông trại)."
    },
    {
     "n": 2,
+    "label": "Jane",
     "type": "mcq",
-    "answer": 6,
-    "explain_vi": "Thiên nga: ==a little store there full of interesting things== → **G (cửa hàng nhỏ)**. __Mẹo:__ cuộc họp ở thị trấn chỉ là lý do chú đến đó.",
     "choices": 8,
-    "label": "swan"
+    "answer": 2,
+    "explain_vi": "Jane: ==at the office where she began her new job== → **C**. __Mẹo: Harry đoán thư viện nhưng bà nói \"No, actually\".__"
    },
    {
     "n": 3,
+    "label": "William",
     "type": "mcq",
-    "answer": 7,
-    "explain_vi": "Quạt: ==When I was working in a castle== → **H (lâu đài)**. __Mẹo:__ chú định tặng bà, không phải mua cho bà.",
     "choices": 8,
-    "label": "fan"
+    "answer": 4,
+    "explain_vi": "William: ==I took this at the old castle near here== → **E**. __Mẹo: đi bộ qua cánh đồng chỉ là chuyện thường làm.__"
    },
    {
     "n": 4,
+    "label": "Oliver",
     "type": "mcq",
-    "answer": 5,
-    "explain_vi": "Sô-cô-la: ==from the hotel where I stayed last night== → **F (khách sạn)**. __Mẹo:__ quán cà phê ở London được nhắc nhưng không mua ở đó.",
     "choices": 8,
-    "label": "chocolates"
+    "answer": 5,
+    "explain_vi": "Oliver: ==he was in the forest here== → **F**. __Mẹo: ba lô để đi núi, nhưng ảnh chụp trong rừng.__"
    },
    {
     "n": 5,
+    "label": "Sophia",
     "type": "mcq",
-    "answer": 3,
-    "explain_vi": "Găng tay: ==I got them when I had to visit a factory== → **D (nhà máy)**. __Mẹo:__ được tặng khi ra về, vẫn ở nhà máy.",
     "choices": 8,
-    "label": "gloves"
+    "answer": 6,
+    "explain_vi": "Sophia: ==I took this one at the restaurant== → **G**. __Mẹo: đội bóng chuyền của Sophia, nhưng ảnh chụp lúc ăn tối.__"
    }
   ]
  },
  "3": {
   "exam": "A2 Flyers",
   "level": "A2",
-  "test": "Sample Papers 2018 Volume 1 (Test 1)",
+  "test": "Flyers 1 (Authentic Examination Papers) · Test 1",
   "part": "4",
-  "topic_vi": "Jack hỏi bà về công việc mới ở bảo tàng",
-  "instructions_vi": "Nghe Jack nói chuyện với bà, mỗi câu (1–5) chọn tranh đúng A, B hoặc C.",
-  "paper_pdf": "https://www.cambridgeenglish.org/fr/Images/flyers-sample-papers-2018-vol1.pdf",
-  "paper_page": 67,
-  "paper_hint": "Part 4 ở trang in số 67 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/fr/Images/flyers-sample-papers-2018-vol1.pdf#page=69",
-  "yt": "FTXQbVrkIAs",
-  "yt_title": "Flyers SAMPLE TESTS Volume 1 - Listening Test 1",
-  "yt_channel": "Lớp Học Thầy Mol",
-  "start": 814,
-  "end": 1234,
+  "tag": "ĐỀ FLYERS",
+  "on_screen": true,
+  "topic_vi": "Helen kể với bố về câu lạc bộ của mình",
+  "instructions_vi": "Nhìn 3 tranh của mỗi câu trên video, chọn A, B hoặc C (câu 1–5).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "eNSseVkM2ks",
+  "yt_title": "Flyers 1 - Listening Test 1 - Authentic Examination Papers | ABC Thủ Thừa",
+  "yt_channel": "ABC Thu Thua English Center",
+  "start": 928,
+  "end": 1240,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/listen to part … again\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Bộ sách Cambridge Flyers 1 Authentic Examination Papers (đề thật của Cambridge), video của trung tâm ABC Thủ Thừa.",
   "items": [
    {
     "n": 1,
     "type": "mcq",
+    "choices": 3,
     "answer": 2,
-    "explain_vi": "==No, it's the one in the park== → **C (bảo tàng trong công viên)**. __Mẹo:__ cạnh trường và đối diện bệnh viện đều bị gạt.",
-    "choices": 3
+    "explain_vi": "==I play the drums, but Dad, I'm terrible== → **C** (trống). __Mẹo: guitar và piano là của người khác.__"
    },
    {
     "n": 2,
     "type": "mcq",
+    "choices": 3,
     "answer": 1,
-    "explain_vi": "==I like finding out about different things most of all== → **B (tìm hiểu đồ vật)**. __Mẹo:__ vẽ và cầm đồ lên được hỏi nhưng không phải thích nhất.",
-    "choices": 3
+    "explain_vi": "==everyone has to take some chocolate== → **B**. __Mẹo: bột và bơ thì câu lạc bộ có rồi.__"
    },
    {
     "n": 3,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==a boat that sailed all round the world== → **B (con thuyền)**. __Mẹo:__ hỏi khủng long thì bà nói không có.",
-    "choices": 3
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==it's going to be a firefighter== → **C**. __Mẹo: phi công bận quá; cầu thủ bóng đá đã đến lần trước.__"
    },
    {
     "n": 4,
     "type": "mcq",
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==show children who visit the museum interesting things== → **A (giới thiệu cho trẻ em)**. __Mẹo:__ bán đồ ăn là điều bà từng muốn làm.",
-    "choices": 3
+    "explain_vi": "==the best one was about dolphins== → **A**. __Mẹo: phim khủng long không hay, phim bướm chán nhất.__"
    },
    {
     "n": 5,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==I'll take the train. That's the best way== → **C (tàu hỏa)**. __Mẹo:__ xe buýt quá chậm, taxi quá đắt.",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==it's going to be a skiing holiday== → **B**. __Mẹo: đi thuyền buồm là kế hoạch của gia đình; tennis là trại hè.__"
    }
   ]
  },
  "4": {
   "exam": "A2 Flyers",
   "level": "A2",
-  "test": "Sample Papers 2018 Volume 2 (Test 2)",
+  "test": "Flyers 1 (Authentic Examination Papers) · Test 2",
   "part": "2",
-  "topic_vi": "Gia đình chuyển đến ngôi nhà mới",
-  "instructions_vi": "Nghe cuộc trò chuyện về ngôi nhà mới, viết một từ (hoặc tên đánh vần) vào mỗi chỗ trống (1–5). Video đọc một lần, cậu được bấm nghe 2 lần như đề thật.",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/563753-cambridge-english-young-learners-sample-papers-2018-volume-2.pdf",
-  "paper_page": 64,
-  "paper_hint": "Part 2 ở trang in số 64 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/563753-cambridge-english-young-learners-sample-papers-2018-volume-2.pdf (marking key tr.70)",
-  "yt": "fcseJaESOsk",
-  "yt_title": "Flyers SAMPLE TESTS Volume 2 - Listening Test 2",
-  "yt_channel": "Lớp Học Thầy Mol",
-  "start": 201,
-  "end": 353,
-  "max_plays": 2,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "tag": "ĐỀ FLYERS",
+  "on_screen": true,
+  "topic_vi": "Cô Green kể về tờ báo mới của trường",
+  "instructions_vi": "Nhìn tờ ghi chú trên video, nghe và viết một từ, tên hoặc số vào mỗi chỗ (câu 1–5).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "kgZRkFnZBGg",
+  "yt_title": "Flyers 1 - Listening Test 2 - Authentic Examination Papers | ABC Thủ Thừa",
+  "yt_channel": "ABC Thu Thua English Center",
+  "start": 305,
+  "end": 521,
+  "max_plays": 1,
+  "timing_verified": "Mốc giây: câu \"Part …/listen to part … again\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Bộ sách Cambridge Flyers 1 Authentic Examination Papers (đề thật của Cambridge), video của trung tâm ABC Thủ Thừa.",
   "items": [
    {
     "n": 1,
     "type": "gap",
-    "answer": "Princes",
-    "explain_vi": "Tên phố được đánh vần ==It's P-R-I-N-C-E-S== → **Princes**. __Mẹo:__ chép đúng từng chữ cái nghe được, không thêm dấu nháy.",
+    "answer": "Pegasus",
     "accept": [
-     "princes",
-     "princes street"
-    ]
+     "pegasus"
+    ],
+    "explain_vi": "==It's going to be Pegasus. Is that P-E-G-A-S-U-S?== → **Pegasus**."
    },
    {
     "n": 2,
     "type": "gap",
-    "answer": "library",
-    "explain_vi": "==No, it isn't. It's near the library== → **library**. __Mẹo:__ ga tàu được bố hỏi trước nhưng bị phủ định.",
+    "answer": "basketball",
     "accept": [
-     "library",
-     "the library"
-    ]
+     "basket ball"
+    ],
+    "explain_vi": "==something about the basketball competition at the school== → **basketball**."
    },
    {
     "n": 3,
     "type": "gap",
-    "answer": "downstairs",
-    "explain_vi": "==a big one upstairs and a smaller one downstairs== → **downstairs**. __Mẹo:__ upstairs là phòng tắm lớn.",
-    "accept": [
-     "downstairs"
-    ]
+    "answer": "famous",
+    "accept": [],
+    "explain_vi": "==one of the student journalists is going to talk to someone famous== → **famous**. __Mẹo: ca sĩ chỉ là bạn nhỏ đoán.__"
    },
    {
     "n": 4,
     "type": "gap",
-    "answer": "swing",
-    "explain_vi": "==No, Dad. There's a swing in it== → **swing**. __Mẹo:__ bể bơi được hỏi trước nhưng không có.",
+    "answer": "3.45",
     "accept": [
-     "swing",
-     "a swing"
-    ]
+     "3:45",
+     "345",
+     "quarter to four",
+     "three forty-five"
+    ],
+    "explain_vi": "==It's at 3.30. Sorry, no, that's too early. It'll be at 3.45== → **3.45**. __Mẹo: cô sửa lại giờ, nghe đến hết câu.__"
    },
    {
     "n": 5,
     "type": "gap",
-    "answer": "basement",
-    "explain_vi": "==It's in the basement== → **basement**. __Mẹo:__ đừng nhầm với downstairs của câu 3.",
+    "answer": "stories",
     "accept": [
-     "basement",
-     "the basement"
-    ]
+     "story",
+     "funny stories"
+    ],
+    "explain_vi": "==No, I'd like you to think of some funny stories== → **stories**. __Mẹo: tranh vui thì cô bảo không cần.__"
    }
   ]
  },
  "5": {
   "exam": "A2 Flyers",
   "level": "A2",
-  "test": "Sample Papers 2018 Volume 2 (Test 2)",
+  "test": "Flyers 1 (Authentic Examination Papers) · Test 2",
   "part": "3",
-  "topic_vi": "Mỗi người trong lớp vẽ đã vẽ bức tranh nào",
-  "instructions_vi": "Nghe cuộc trò chuyện, mỗi người (1–5) nối với bức tranh họ vẽ, chọn chữ A–H. Video đọc một lần, cậu được bấm nghe 2 lần như đề thật.",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/563753-cambridge-english-young-learners-sample-papers-2018-volume-2.pdf",
-  "paper_page": 65,
-  "paper_hint": "Part 3 ở trang in số 65 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/563753-cambridge-english-young-learners-sample-papers-2018-volume-2.pdf (marking key tr.70)",
-  "yt": "fcseJaESOsk",
-  "yt_title": "Flyers SAMPLE TESTS Volume 2 - Listening Test 2",
-  "yt_channel": "Lớp Học Thầy Mol",
-  "start": 353,
-  "end": 570,
-  "max_plays": 2,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "tag": "ĐỀ FLYERS",
+  "on_screen": true,
+  "topic_vi": "Mỗi người trong nhà Helen đi đâu cuối tuần",
+  "instructions_vi": "Nhìn tranh trên video, nối mỗi người (câu 1–5) với nơi họ đã đến, chọn chữ A–H.",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "kgZRkFnZBGg",
+  "yt_title": "Flyers 1 - Listening Test 2 - Authentic Examination Papers | ABC Thủ Thừa",
+  "yt_channel": "ABC Thu Thua English Center",
+  "start": 525,
+  "end": 871,
+  "max_plays": 1,
+  "timing_verified": "Mốc giây: câu \"Part …/listen to part … again\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Bộ sách Cambridge Flyers 1 Authentic Examination Papers (đề thật của Cambridge), video của trung tâm ABC Thủ Thừa.",
   "items": [
    {
     "n": 1,
+    "label": "Helen",
     "type": "mcq",
-    "answer": 7,
-    "explain_vi": "Bà Cook: ==I like this picture of the old castle== → **H**. __Mẹo:__ chuyện trời mưa, khách sạn chỉ là nơi vẽ xong, không phải chủ đề.",
     "choices": 8,
-    "label": "Mrs Cook"
+    "answer": 3,
+    "explain_vi": "Helen: ==I took some books back to the library== → **D**. __Mẹo: bệnh viện là nơi cô định đi tối nay.__"
    },
    {
     "n": 2,
+    "label": "Jim",
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "Bà West: ==The fields look lovely in the summer sun== → **C**. __Mẹo:__ tranh không có nhà, không có phố; trông như chỗ picnic.",
     "choices": 8,
-    "label": "Mrs West"
+    "answer": 2,
+    "explain_vi": "Jim: ==did he go to the market? Yes, he likes looking for unusual old things== → **C**. __Mẹo: mô hình máy bay là món anh mua, không phải sân bay.__"
    },
    {
     "n": 3,
+    "label": "Lucy",
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "Cô Richards: tranh ==A Day at the Races==, lần đầu vẽ ngựa → **A**. __Mẹo:__ nghe tên tranh để suy ra chủ đề.",
     "choices": 8,
-    "label": "Miss Richards"
+    "answer": 7,
+    "explain_vi": "Lucy: ==a factory where they make chocolate== → **H**."
    },
    {
     "n": 4,
+    "label": "Oliver",
     "type": "mcq",
-    "answer": 3,
-    "explain_vi": "Ông Bridges: ==But snow isn't easy to paint== → **D** (tuyết, trẻ em vui chơi). __Mẹo:__ chú ý chi tiết trẻ em để chọn đúng tranh tuyết.",
     "choices": 8,
-    "label": "Mr Bridges"
+    "answer": 0,
+    "explain_vi": "Oliver: ==did they go to the airport? Yes, they did== → **A**."
    },
    {
     "n": 5,
+    "label": "Jane",
     "type": "mcq",
-    "answer": 4,
-    "explain_vi": "Bà Hill: ==Who's the person in the lake?== – đó là chồng bà → **E**. __Mẹo:__ tranh trái cây (B) là ví dụ của ông Green.",
     "choices": 8,
-    "label": "Mrs Hill"
+    "answer": 6,
+    "explain_vi": "Jane: ==she went to a restaurant for noodles== → **G**. __Mẹo: muốn đi nhà hát nhưng hết vé.__"
    }
   ]
  },
  "6": {
   "exam": "A2 Flyers",
   "level": "A2",
-  "test": "Sample Papers 2018 Volume 2 (Test 2)",
+  "test": "Flyers 1 (Authentic Examination Papers) · Test 2",
   "part": "4",
-  "topic_vi": "Frank và mẹ chuẩn bị đi nghỉ",
-  "instructions_vi": "Nghe Frank và mẹ chuẩn bị đi nghỉ, mỗi câu (1–5) chọn tranh đúng A, B hoặc C. Video đọc một lần, cậu được bấm nghe 2 lần như đề thật.",
-  "paper_pdf": "https://www.cambridgeenglish.org/Images/563753-cambridge-english-young-learners-sample-papers-2018-volume-2.pdf",
-  "paper_page": 67,
-  "paper_hint": "Part 4 ở trang in số 67 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/Images/563753-cambridge-english-young-learners-sample-papers-2018-volume-2.pdf (marking key tr.70)",
-  "yt": "fcseJaESOsk",
-  "yt_title": "Flyers SAMPLE TESTS Volume 2 - Listening Test 2",
-  "yt_channel": "Lớp Học Thầy Mol",
-  "start": 570,
-  "end": 790,
-  "max_plays": 2,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "tag": "ĐỀ FLYERS",
+  "on_screen": true,
+  "topic_vi": "Harry và mẹ chuẩn bị đi nghỉ",
+  "instructions_vi": "Nhìn 3 tranh của mỗi câu trên video, chọn A, B hoặc C (câu 1–5).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "kgZRkFnZBGg",
+  "yt_title": "Flyers 1 - Listening Test 2 - Authentic Examination Papers | ABC Thủ Thừa",
+  "yt_channel": "ABC Thu Thua English Center",
+  "start": 874,
+  "end": 1308,
+  "max_plays": 1,
+  "timing_verified": "Mốc giây: câu \"Part …/listen to part … again\" trên bảng lời thoại YouTube. Đáp án: video không in đáp án, em giải từng câu từ lời thoại và đề hiện trên video.",
+  "source_note": "Bộ sách Cambridge Flyers 1 Authentic Examination Papers (đề thật của Cambridge), video của trung tâm ABC Thủ Thừa.",
   "items": [
    {
     "n": 1,
     "type": "mcq",
+    "choices": 3,
     "answer": 2,
-    "explain_vi": "==I want to take that black one== → **C (áo đen)**. __Mẹo:__ áo kẻ sọc bị chê ==too small now==.",
-    "choices": 3
+    "explain_vi": "==don't forget your new toothbrush== → **C**. __Mẹo: không cần áo khoác; giày patin thì nặng quá.__"
    },
    {
     "n": 2,
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==here they are – on the desk, next to this book!== → **A (trên bàn học)**. __Mẹo:__ cái giá trong phòng là chỗ mẹ đoán sai.",
-    "choices": 3
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==my diary should always be with my comics under my desk== → **C**. __Mẹo: ban công là chỗ Harry đoán sai.__"
    },
    {
     "n": 3,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==meet Dad at the airport at 1.30. No later.== → **C (1 giờ 30)**. __Mẹo:__ 12 giờ là lúc taxi đến nhà.",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==Is it the caves? Yes== → **A**. __Mẹo: sở thú chỉ \"could go\"; bảo tàng thì Harry không muốn.__"
    },
    {
     "n": 4,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==her son, Michael, is going to do it== → **C (Michael)**. __Mẹo:__ ông (Grandpa) được hỏi tới nhưng không trông thú cưng.",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==we filmed that funny monkey outside the hotel== → **B**. __Mẹo: con bạch tuộc thì không có máy quay; lạc đà là chuyến đi năm nay.__"
    },
    {
     "n": 5,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==We can have it on the plane== → **B (trên máy bay)**. __Mẹo:__ mua đồ ăn ở sân bay bị gạt vì còn quá sớm.",
-    "choices": 3
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I'll go and get one from the bookshop== (bản đồ) → **C**. __Mẹo: pizza có sẵn trong tủ lạnh, thuốc của bà đã mua.__"
    }
   ]
  },
  "7": {
-  "exam": "A2 Key for Schools",
+  "exam": "A2 Key",
   "level": "A2",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "test": "Practice Test 1",
   "part": "1",
-  "topic_vi": "5 đoạn hội thoại ngắn đời thường (tiệc, lớp vẽ, công viên trượt ván, vé xem phim, đón ở sân bay)",
-  "instructions_vi": "Nghe 5 đoạn hội thoại ngắn, mỗi câu chọn tranh đúng A, B hoặc C.",
-  "paper_pdf": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf",
-  "paper_page": 31,
-  "paper_hint": "Part 1 ở trang in số 30 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf#page=36",
-  "yt": "is4TaYG3Ou0",
-  "yt_title": "a2 key for schools listening sample test",
-  "yt_channel": "Filomena Prattichizzo",
-  "start": 32,
-  "end": 348,
+  "tag": "DẠNG ĐỀ KET",
+  "on_screen": true,
+  "topic_vi": "5 đoạn ngắn: giá cà phê, ảnh người thân, va li, việc đang làm, ngày tiệc",
+  "instructions_vi": "Nhìn 3 tranh của mỗi câu trên video, chọn A, B hoặc C (câu 1–5).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "TC1vKpPQF8Q",
+  "yt_title": "A2 (KET) Listening Practice test (1) with Answer Key",
+  "yt_channel": "Sayar Kyaw",
+  "start": 3,
+  "end": 338,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Listening part …\" trên bảng lời thoại YouTube; đoạn đáp án ở cuối video bị cắt bỏ. Đáp án: em giải từ lời thoại và đề trên video, đối chiếu phần đáp án của video.",
+  "source_note": "Đề luyện tập A2 Key của kênh Sayar Kyaw: audio đề KET dạng cũ, câu hỏi soạn lại theo dạng đề từ 2020; kênh không ghi sách nguồn.",
   "items": [
    {
     "n": 1,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==so I have a lot of homework to do== → **C (làm bài tập)**. __Mẹo:__ bữa tiệc có nhắc nhưng Julia nói ==I'd love to, but I can't==.",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==a small cup of coffee costs $1.75 and a larger one $2.45== → **B**. __Mẹo: $4.20 là tiền hai cốc.__"
    },
    {
     "n": 2,
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==It starts at three, doesn't it?== → **A (3 giờ)**. __Mẹo:__ 2 giờ 30 là giờ hiện tại, 3 giờ 30 là giờ lớp kết thúc.",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==your cousin, the boy in the T-shirt and jeans== → **B**. __Mẹo: quần short là của anh trai, mũ là của Steve.__"
    },
    {
     "n": 3,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==I'm playing in the school basketball team on that day== → **C (chơi bóng rổ)**. __Mẹo:__ công viên trượt ván, đi xe đạp là kế hoạch của bạn kia.",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==mine's much bigger than that, and it's square, not round== → **B**. __Mẹo: va li tròn nhỏ là của người khác.__"
    },
    {
     "n": 4,
     "type": "mcq",
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==All tickets tonight are four pounds thirty== → **A (£4.30)**. __Mẹo:__ £5.80 là giá thường ngày; £7.60 là số tiền cô bé mang theo.",
-    "choices": 3
+    "explain_vi": "==she's finishing her homework at the moment== → **A**. __Mẹo: tennis là chiều nay; đạp xe là sau bữa tối.__"
    },
    {
     "n": 5,
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==My parents will be at work, but my older sister will== → **A (chị gái)**. __Mẹo:__ bố mẹ bận làm; ông chỉ được ghé thăm trên đường về.",
-    "choices": 3
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==it's on Sunday this time== → **C**. __Mẹo: thứ Bảy bạn phải trông em; thứ Sáu là tháng trước.__"
    }
   ]
  },
  "8": {
-  "exam": "A2 Key for Schools",
+  "exam": "A2 Key",
   "level": "A2",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "test": "Practice Test 1",
   "part": "2",
-  "topic_vi": "Thông báo về chuyến cắm trại của trường",
-  "instructions_vi": "Nghe thầy giáo thông báo về chuyến cắm trại, điền một từ, số, ngày hoặc giờ vào mỗi chỗ trống (6–10).",
-  "paper_pdf": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf",
-  "paper_page": 32,
-  "paper_hint": "Part 2 ở trang in số 31 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf#page=36",
-  "yt": "is4TaYG3Ou0",
-  "yt_title": "a2 key for schools listening sample test",
-  "yt_channel": "Filomena Prattichizzo",
-  "start": 360,
-  "end": 587,
+  "tag": "DẠNG ĐỀ KET",
+  "on_screen": true,
+  "topic_vi": "Tin nhắn thông báo khu âm nhạc mới của thư viện",
+  "instructions_vi": "Nhìn tờ ghi chú trên video, viết một từ, một số, ngày hoặc giờ vào mỗi chỗ (câu 6–10).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "TC1vKpPQF8Q",
+  "yt_title": "A2 (KET) Listening Practice test (1) with Answer Key",
+  "yt_channel": "Sayar Kyaw",
+  "start": 338,
+  "end": 515,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Listening part …\" trên bảng lời thoại YouTube; đoạn đáp án ở cuối video bị cắt bỏ. Đáp án: em giải từ lời thoại và đề trên video, đối chiếu phần đáp án của video.",
+  "source_note": "Đề luyện tập A2 Key của kênh Sayar Kyaw: audio đề KET dạng cũ, câu hỏi soạn lại theo dạng đề từ 2020; kênh không ghi sách nguồn.",
   "items": [
    {
     "n": 6,
     "type": "gap",
-    "answer": "Fairford",
-    "explain_vi": "==Her name is Mrs Fairford== → **Fairford**. __Mẹo:__ tên được đánh vần F-A-I-R-F-O-R-D; viết đúng từng chữ cái.",
+    "answer": "July",
     "accept": [
-     "fairford",
-     "mrs fairford"
-    ]
+     "july",
+     "10th July",
+     "10 July"
+    ],
+    "explain_vi": "==next month, that's July, not June, the 10th== → **July**. __Mẹo: \"not June\" là bẫy.__"
    },
    {
     "n": 7,
     "type": "gap",
-    "answer": "Friday",
-    "explain_vi": "==we're returning on Friday instead of Thursday== → **Friday**. __Mẹo:__ Thursday là ngày cũ đã bị đổi.",
+    "answer": "King",
     "accept": [
-     "friday",
-     "fri"
-    ]
+     "king",
+     "King Street",
+     "king's"
+    ],
+    "explain_vi": "==at the end of King Street, right next to the town park== → **King**."
    },
    {
     "n": 8,
     "type": "gap",
-    "answer": "7.30",
-    "explain_vi": "==get to school for half past seven on Tuesday== → **7.30**. __Mẹo:__ 7.45 (quarter to eight) là giờ xe xuất phát.",
+    "answer": "third",
     "accept": [
-     "7.30",
-     "7:30",
-     "730",
-     "half past seven",
-     "seven thirty"
-    ]
+     "3rd",
+     "3",
+     "three"
+    ],
+    "explain_vi": "==on the third floor, one floor up from our very popular DVD library== → **third**."
    },
    {
     "n": 9,
     "type": "gap",
-    "answer": "train",
-    "explain_vi": "==we're going to go by train for a change== → **train**. __Mẹo:__ coach (xe khách) là cách đi thường ngày, lần này không dùng.",
+    "answer": "10.30",
     "accept": [
-     "train",
-     "by train",
-     "the train"
-    ]
+     "10:30",
+     "1030",
+     "half past ten",
+     "ten thirty",
+     "10.30 pm",
+     "10:30 pm"
+    ],
+    "explain_vi": "==from 10 in the morning to half 10 at night== → **10.30**. __Mẹo: \"half ten\" = 10 giờ 30.__"
    },
    {
     "n": 10,
     "type": "gap",
-    "answer": "boots",
-    "explain_vi": "==don't bring trainers because your feet will get wet== → **(walking) boots**. __Mẹo:__ trainers (giày thể thao) bị dặn không mang.",
+    "answer": "3",
     "accept": [
-     "boots",
-     "walking boots"
-    ]
+     "three",
+     "£3",
+     "3 pounds"
+    ],
+    "explain_vi": "==it will only cost you £3== → **3**. __Mẹo: 6 là số đĩa CD được mượn.__"
    }
   ]
  },
  "9": {
-  "exam": "A2 Key for Schools",
+  "exam": "A2 Key",
   "level": "A2",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "test": "Practice Test 1",
   "part": "3",
-  "topic_vi": "Annie kể với Tony về bộ phim bạn ấy vừa xem",
-  "instructions_vi": "Nghe Annie nói chuyện với Tony về một bộ phim, chọn A, B hoặc C cho câu 11–15.",
-  "paper_pdf": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf",
-  "paper_page": 32,
-  "paper_hint": "Part 3 ở trang in số 31 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf#page=36",
-  "yt": "is4TaYG3Ou0",
-  "yt_title": "a2 key for schools listening sample test",
-  "yt_channel": "Filomena Prattichizzo",
-  "start": 599,
-  "end": 858,
+  "tag": "DẠNG ĐỀ KET",
+  "on_screen": true,
+  "topic_vi": "Richard rủ Sam đá trận bóng",
+  "instructions_vi": "Đọc câu hỏi trên video, nghe cuộc hội thoại, chọn A, B hoặc C (câu 11–15).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "TC1vKpPQF8Q",
+  "yt_title": "A2 (KET) Listening Practice test (1) with Answer Key",
+  "yt_channel": "Sayar Kyaw",
+  "start": 515,
+  "end": 725,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Listening part …\" trên bảng lời thoại YouTube; đoạn đáp án ở cuối video bị cắt bỏ. Đáp án: em giải từ lời thoại và đề trên video, đối chiếu phần đáp án của video.",
+  "source_note": "Đề luyện tập A2 Key của kênh Sayar Kyaw: audio đề KET dạng cũ, câu hỏi soạn lại theo dạng đề từ 2020; kênh không ghi sách nguồn.",
   "items": [
    {
     "n": 11,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==I went to the cinema for the 3.15 show== → **B (3 giờ 15)**. __Mẹo:__ 5 giờ 30 là lúc phim kết thúc; trước đó Annie đi mua sắm.",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==Actually it's on Friday after school== → **A**. __Mẹo: Sam nghĩ là thứ Bảy; Chủ nhật thì khó.__"
    },
    {
     "n": 12,
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==It's the story of a top basketball player== → **A (một ngôi sao thể thao)**. __Mẹo:__ không nói về động vật hay lịch sử.",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==it's the one down by the river== → **B**. __Mẹo: Castle School không đối diện lâu đài; Sam đoán gần ga nhưng sai.__"
    },
    {
     "n": 13,
     "type": "mcq",
+    "choices": 3,
     "answer": 2,
-    "explain_vi": "==it's a shame there are no really good actors in it== → **C (cần diễn viên giỏi hơn)**. __Mẹo:__ Annie không chê phim dài hay chán.",
-    "choices": 3
+    "explain_vi": "==some of the teachers are going to drive us there== → **C**. __Mẹo: không đủ người để thuê xe khách.__"
    },
    {
     "n": 14,
     "type": "mcq",
+    "choices": 3,
     "answer": 1,
-    "explain_vi": "==the reason I love it is because it all really happened== → **B (chuyện có thật)**. __Mẹo:__ Annie nói phim ==isn't funny== và không có gì ly kỳ.",
-    "choices": 3
+    "explain_vi": "==Have you got any white shorts?… I can give you some== → **B**. __Mẹo: thường mặc xanh nhưng đội kia mặc màu đó.__"
    },
    {
     "n": 15,
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==it's best to see films on a big cinema screen== → **A (ở rạp)**. __Mẹo:__ xem trên laptop là thói quen (usually), không phải điều Annie thích hơn.",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==the Polish students have a good team, but not as good as the Spanish team== → **B**."
    }
   ]
  },
  "10": {
-  "exam": "A2 Key for Schools",
+  "exam": "A2 Key",
   "level": "A2",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "5",
-  "topic_vi": "Julia và mẹ nói về buổi trình diễn thời trang ở trường",
-  "instructions_vi": "Nghe Julia nói với mẹ, nối mỗi người (21–25) với việc họ giúp (A–H).",
-  "paper_pdf": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf",
-  "paper_page": 33,
-  "paper_hint": "Part 5 ở trang in số 32 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf#page=36",
-  "yt": "is4TaYG3Ou0",
-  "yt_title": "a2 key for schools listening sample test",
-  "yt_channel": "Filomena Prattichizzo",
-  "start": 1306,
-  "end": 1499,
+  "test": "Practice Test 1",
+  "part": "4",
+  "tag": "DẠNG ĐỀ KET",
+  "on_screen": true,
+  "topic_vi": "5 đoạn nói ngắn: cuối tuần, lớp học, bánh, chuyến cắm trại, chương trình TV",
+  "instructions_vi": "Đọc câu hỏi trên video, nghe 5 đoạn, chọn A, B hoặc C (câu 16–20).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "TC1vKpPQF8Q",
+  "yt_title": "A2 (KET) Listening Practice test (1) with Answer Key",
+  "yt_channel": "Sayar Kyaw",
+  "start": 725,
+  "end": 1175,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Listening part …\" trên bảng lời thoại YouTube; đoạn đáp án ở cuối video bị cắt bỏ. Đáp án: em giải từ lời thoại và đề trên video, đối chiếu phần đáp án của video.",
+  "source_note": "Đề luyện tập A2 Key của kênh Sayar Kyaw: audio đề KET dạng cũ, câu hỏi soạn lại theo dạng đề từ 2020; kênh không ghi sách nguồn.",
   "items": [
    {
-    "n": 21,
+    "n": 16,
     "type": "mcq",
-    "answer": 4,
-    "explain_vi": "Anton: ==he's finding CDs to play in the show== → **E (âm nhạc)**. __Mẹo:__ đèn (lights) cô giáo nói không cần.",
-    "choices": 8
-   },
-   {
-    "n": 22,
-    "type": "mcq",
-    "answer": 5,
-    "explain_vi": "Emma: ==she wants to take some pictures with her new camera== → **F (ảnh)**. __Mẹo:__ năm ngoái Emma lo nhạc.",
-    "choices": 8
-   },
-   {
-    "n": 23,
-    "type": "mcq",
-    "answer": 6,
-    "explain_vi": "Karl: ==he's drawing some posters== → **G (áp phích)**. __Mẹo:__ Karl chụp ảnh giỏi nhưng lần này không chụp.",
-    "choices": 8
-   },
-   {
-    "n": 24,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "Sarah: ==She's deciding what everyone will wear== → **A (quần áo)**. __Mẹo:__ bán vé (tickets) là việc của Sarah lần trước.",
-    "choices": 8
-   },
-   {
-    "n": 25,
-    "type": "mcq",
+    "choices": 3,
     "answer": 1,
-    "explain_vi": "George: ==George is going to get some snacks== → **B (đồ ăn)**. __Mẹo:__ snacks = food.",
-    "choices": 8
+    "explain_vi": "==It's Fred's birthday on Saturday, are you going to his party? Oh yes, I am== → **B**. __Mẹo: không kịp đi xem phim; đi mua sắm là buổi chiều.__"
+   },
+   {
+    "n": 17,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==you can learn by reading each other's stories and asking questions== → **A**. __Mẹo: \"don't hurry\" loại B.__"
+   },
+   {
+    "n": 18,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==it's got chocolate in it. Oh dear, your cousin can't eat that== → **C**. __Mẹo: rau quả thì không làm cô ấy mệt (A).__"
+   },
+   {
+    "n": 19,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==help make sandwiches, that's for all of us to take… for our lunch== → **C**. __Mẹo: rửa bát là bữa tối; bữa sáng do thầy cô bàn với chủ trại.__"
+   },
+   {
+    "n": 20,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==my mum and I laughed a lot during the show== → **C**. __Mẹo: tên hay là ý người bạn; ảnh đẹp là phim tài liệu.__"
    }
   ]
  },
  "11": {
   "exam": "A2 Key",
   "level": "A2",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "1",
-  "topic_vi": "5 đoạn hội thoại ngắn (hẹn gặp, gọi lại, ngày tiệc, thời tiết, giá quần short)",
-  "instructions_vi": "Nghe 5 đoạn hội thoại ngắn, mỗi câu chọn tranh đúng A, B hoặc C.",
-  "paper_pdf": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf",
-  "paper_page": 31,
-  "paper_hint": "Part 1 ở trang in số 30 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf#page=36",
-  "yt": "tzfd76Deiu4",
-  "yt_title": "LISTENING • CAMBRIDGE A2 KEY 2020 • SAMPLE TEST 1",
-  "yt_channel": "LEARNING ENGLISH",
-  "start": 30,
-  "end": 341,
+  "test": "Practice Test 1",
+  "part": "5",
+  "tag": "DẠNG ĐỀ KET",
+  "on_screen": true,
+  "topic_vi": "Angela kể với mẹ các bạn muốn làm nghề gì",
+  "instructions_vi": "Đọc danh sách nghề A–H trên video, nối mỗi bạn (câu 21–25) với nghề bạn ấy muốn làm.",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "TC1vKpPQF8Q",
+  "yt_title": "A2 (KET) Listening Practice test (1) with Answer Key",
+  "yt_channel": "Sayar Kyaw",
+  "start": 1175,
+  "end": 1352,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Listening part …\" trên bảng lời thoại YouTube; đoạn đáp án ở cuối video bị cắt bỏ. Đáp án: em giải từ lời thoại và đề trên video, đối chiếu phần đáp án của video.",
+  "source_note": "Đề luyện tập A2 Key của kênh Sayar Kyaw: audio đề KET dạng cũ, câu hỏi soạn lại theo dạng đề từ 2020; kênh không ghi sách nguồn.",
   "items": [
    {
-    "n": 1,
+    "n": 21,
+    "label": "Beth",
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "Alex ở bảo tàng: ==Why don't you come and meet me here?== → **A**. __Mẹo:__ quán cà phê là chỗ Claire đang ăn bánh, không phải chỗ gặp.",
-    "choices": 3
+    "choices": 8,
+    "answer": 3,
+    "explain_vi": "Beth: ==she wants to study medicine at university== → **D** (bác sĩ)."
    },
    {
-    "n": 2,
+    "n": 22,
+    "label": "Kit",
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==Call at half past before he goes for lunch== → **C (12 giờ 30)**. __Mẹo:__ 10 giờ 15 và 12 giờ đều bị gạt vì vướng khách, vướng họp.",
-    "choices": 3
+    "choices": 8,
+    "answer": 6,
+    "explain_vi": "Kit: ==he wants to be a pilot now== → **G**. __Mẹo: thợ xây là nghề cậu ấy muốn trước đây.__"
    },
    {
-    "n": 3,
+    "n": 23,
+    "label": "Laila",
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "Ngày 25 được đề nghị, cô đáp ==Let's make it then== → **C (25/7)**. __Mẹo:__ ngày 18 cô làm muộn, ngày 11 đã có vé nhà hát.",
-    "choices": 3
+    "choices": 8,
+    "answer": 5,
+    "explain_vi": "Laila: ==she wants to write for a newspaper== → **F** (nhà báo). __Mẹo: diễn viên chỉ là lời mẹ gợi ý.__"
    },
    {
-    "n": 4,
+    "n": 24,
+    "label": "Robert",
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==It was so sunny and hot!== → **A (nắng nóng)**. __Mẹo:__ mưa chỉ là dự báo trên tivi, thực tế không mưa.",
-    "choices": 3
+    "choices": 8,
+    "answer": 4,
+    "explain_vi": "Robert: ==plan how to build bridges== → **E** (kỹ sư)."
    },
    {
-    "n": 5,
+    "n": 25,
+    "label": "Helen",
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==Everything on that shelf is five pounds== → **A (£5)**. __Mẹo:__ £15 là giá áo, £20 là tổng tiền.",
-    "choices": 3
+    "choices": 8,
+    "answer": 7,
+    "explain_vi": "Helen: ==she wants to teach young children in school== → **H**. __Mẹo: vẽ giỏi nhưng không muốn làm hoạ sĩ.__"
    }
   ]
  },
  "12": {
   "exam": "A2 Key",
   "level": "A2",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "test": "Practice Test 2",
   "part": "2",
-  "topic_vi": "Việc làm hè cho sinh viên ở công ty Sunshine Holidays",
-  "instructions_vi": "Nghe thầy giáo nói về việc làm hè, điền một từ, số, ngày hoặc giờ vào mỗi chỗ trống (6–10).",
-  "paper_pdf": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf",
-  "paper_page": 32,
-  "paper_hint": "Part 2 ở trang in số 31 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf#page=36",
-  "yt": "tzfd76Deiu4",
-  "yt_title": "LISTENING • CAMBRIDGE A2 KEY 2020 • SAMPLE TEST 1",
-  "yt_channel": "LEARNING ENGLISH",
-  "start": 353,
-  "end": 562,
+  "tag": "DẠNG ĐỀ KET",
+  "on_screen": true,
+  "topic_vi": "Thông báo về buổi trình diễn thời trang",
+  "instructions_vi": "Nhìn tờ ghi chú trên video, viết một từ, một số, ngày hoặc giờ vào mỗi chỗ (câu 6–10).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "RRR64-fDkUE",
+  "yt_title": "A2 (KET) Listening Practice test (2) with Answer key",
+  "yt_channel": "Sayar Kyaw",
+  "start": 344,
+  "end": 546,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Listening part …\" trên bảng lời thoại YouTube; đoạn đáp án ở cuối video bị cắt bỏ. Đáp án: em giải từ lời thoại và đề trên video, đối chiếu phần đáp án của video.",
+  "source_note": "Đề luyện tập A2 Key của kênh Sayar Kyaw: audio đề KET dạng cũ, câu hỏi soạn lại theo dạng đề từ 2020; kênh không ghi sách nguồn.",
   "items": [
    {
     "n": 6,
     "type": "gap",
-    "answer": "August",
-    "explain_vi": "==must be free from then until August the twentieth== → **August**. __Mẹo:__ September là lúc sinh viên đi du lịch sau khi làm xong.",
+    "answer": "History",
     "accept": [
-     "august",
-     "aug"
-    ]
+     "history"
+    ],
+    "explain_vi": "==the show will be at the History Centre… behind the town hall== → **History**."
    },
    {
     "n": 7,
     "type": "gap",
-    "answer": "19",
-    "explain_vi": "==to work there you have to be nineteen== → **19**. __Mẹo:__ 10–15 tuổi là tuổi của trẻ con ở trại.",
+    "answer": "August",
     "accept": [
-     "19",
-     "nineteen"
-    ]
+     "august",
+     "1st August"
+    ],
+    "explain_vi": "==The show is in July. Oh sorry… I mean the show will be on the 1st of August== → **August**. __Mẹo: người nói sửa lại, July là bẫy.__"
    },
    {
     "n": 8,
     "type": "gap",
-    "answer": "drive",
-    "explain_vi": "==they only want people who can drive== → **drive**. __Mẹo:__ không cần giỏi thể thao hay ngoại ngữ.",
+    "answer": "shoes",
     "accept": [
-     "drive",
-     "driving"
-    ]
+     "shoe"
+    ],
+    "explain_vi": "==in the second half of the show, shoes that are fashionable and comfortable== → **shoes**."
    },
    {
     "n": 9,
     "type": "gap",
-    "answer": "65",
-    "explain_vi": "==Each week you'll get sixty-five pounds== → **65**. __Mẹo:__ 500 là số tiền có thể tiết kiệm cả mùa, không phải mỗi tuần.",
+    "answer": "6",
     "accept": [
-     "65",
-     "sixty-five",
-     "sixty five",
-     "£65"
-    ]
+     "six",
+     "£6"
+    ],
+    "explain_vi": "==tickets are only £6 instead of the normal price of £9== → **6**. __Mẹo: 9 là giá thường.__"
    },
    {
     "n": 10,
     "type": "gap",
-    "answer": "photo",
-    "explain_vi": "==send it with a photo to Sunshine Holidays== → **photo(graph)**. __Mẹo:__ gửi kèm thư; key chấp nhận photo/photograph, số ít hoặc nhiều.",
+    "answer": "catalogue",
     "accept": [
-     "photo",
-     "photos",
-     "photograph",
-     "photographs"
-    ]
+     "catalog",
+     "catalogues",
+     "catalogs",
+     "a catalogue",
+     "a catalog"
+    ],
+    "explain_vi": "==the clothes… won't be on sale that day, but you will be able to buy a catalogue== → **catalogue**."
    }
   ]
  },
  "13": {
   "exam": "A2 Key",
   "level": "A2",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "test": "Practice Test 2",
   "part": "3",
-  "topic_vi": "Robert rủ Laura đi chơi cuối tuần ở Dublin",
-  "instructions_vi": "Nghe Robert nói với Laura về chuyến đi Dublin, chọn A, B hoặc C cho câu 11–15.",
-  "paper_pdf": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf",
-  "paper_page": 32,
-  "paper_hint": "Part 3 ở trang in số 31 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf#page=36",
-  "yt": "tzfd76Deiu4",
-  "yt_title": "LISTENING • CAMBRIDGE A2 KEY 2020 • SAMPLE TEST 1",
-  "yt_channel": "LEARNING ENGLISH",
-  "start": 575,
-  "end": 805,
+  "tag": "DẠNG ĐỀ KET",
+  "on_screen": true,
+  "topic_vi": "Tessa và Robert bàn về dự án âm nhạc",
+  "instructions_vi": "Đọc câu hỏi trên video, nghe cuộc hội thoại, chọn A, B hoặc C (câu 11–15).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "RRR64-fDkUE",
+  "yt_title": "A2 (KET) Listening Practice test (2) with Answer key",
+  "yt_channel": "Sayar Kyaw",
+  "start": 546,
+  "end": 739,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Listening part …\" trên bảng lời thoại YouTube; đoạn đáp án ở cuối video bị cắt bỏ. Đáp án: em giải từ lời thoại và đề trên video, đối chiếu phần đáp án của video.",
+  "source_note": "Đề luyện tập A2 Key của kênh Sayar Kyaw: audio đề KET dạng cũ, câu hỏi soạn lại theo dạng đề từ 2020; kênh không ghi sách nguồn.",
   "items": [
    {
     "n": 11,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==there'll be four of us from my office== → **B (đồng nghiệp)**. __Mẹo:__ anh em họ bận thi đấu quần vợt nên không đi.",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==but it's about African music, remember== → **A**. __Mẹo: nhạc Úc là cái mẹ thích; rap Mỹ là cái Robert thích.__"
    },
    {
     "n": 12,
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==visitors can rent rooms in the university== → **A (trường đại học)**. __Mẹo:__ nhà nghỉ (guest-house) đã kín chỗ.",
-    "choices": 3
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I heard something on the radio and made some notes== → **C**. __Mẹo: chưa đọc sách nào; CD mới chỉ định mua.__"
    },
    {
     "n": 13,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==But you'll need a coat! It often rains.== → **C (áo khoác)**. __Mẹo:__ máy ảnh chỉ được hỏi thăm, không phải điều phải nhớ mang.",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==on the last day of the month, just before the holidays start== → **A**."
    },
    {
     "n": 14,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==all the beautiful buildings== → **B (tòa nhà đẹp)**. __Mẹo:__ cửa hàng bị chê lúc nào cũng đông người.",
-    "choices": 3
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==tomorrow's better, I've got other homework tonight== → **C**. __Mẹo: chiều nay là đề nghị bị từ chối.__"
    },
    {
     "n": 15,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==I always have lots of fish – it's fantastic== → **B (đồ ăn)**. __Mẹo:__ lễ hội âm nhạc ==won't be on== (không diễn ra).",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==drums are more exciting, so let's write about those== → **A**. __Mẹo: guitar và piano cổ điển cũng được nhắc nhưng không hay bằng.__"
    }
   ]
  },
  "14": {
   "exam": "A2 Key",
   "level": "A2",
-  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
-  "part": "5",
-  "topic_vi": "Simon và Maria bàn ai mang món gì đến tiệc sinh nhật",
-  "instructions_vi": "Nghe Simon nói với Maria, nối mỗi người (21–25) với món ăn họ mang (A–H).",
-  "paper_pdf": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf",
-  "paper_page": 33,
-  "paper_hint": "Part 5 ở trang in số 32 (số ở chân trang)",
-  "key_url": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf#page=36",
-  "yt": "tzfd76Deiu4",
-  "yt_title": "LISTENING • CAMBRIDGE A2 KEY 2020 • SAMPLE TEST 1",
-  "yt_channel": "LEARNING ENGLISH",
-  "start": 1217,
-  "end": 1403,
+  "test": "Practice Test 2",
+  "part": "4",
+  "tag": "DẠNG ĐỀ KET",
+  "on_screen": true,
+  "topic_vi": "5 đoạn nói ngắn: album nhạc, máy bay hạ cánh, cuối tuần, sở thú, quà tặng",
+  "instructions_vi": "Đọc câu hỏi trên video, nghe 5 đoạn, chọn A, B hoặc C (câu 16–20).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "RRR64-fDkUE",
+  "yt_title": "A2 (KET) Listening Practice test (2) with Answer key",
+  "yt_channel": "Sayar Kyaw",
+  "start": 739,
+  "end": 1156,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Listening part …\" trên bảng lời thoại YouTube; đoạn đáp án ở cuối video bị cắt bỏ. Đáp án: em giải từ lời thoại và đề trên video, đối chiếu phần đáp án của video.",
+  "source_note": "Đề luyện tập A2 Key của kênh Sayar Kyaw: audio đề KET dạng cũ, câu hỏi soạn lại theo dạng đề từ 2020; kênh không ghi sách nguồn.",
   "items": [
    {
-    "n": 21,
+    "n": 16,
     "type": "mcq",
-    "answer": 5,
-    "explain_vi": "==Barbara's going to bring some oranges and grapes== → **F (trái cây)**. __Mẹo:__ cam, nho = fruit.",
-    "choices": 8
-   },
-   {
-    "n": 22,
-    "type": "mcq",
+    "choices": 3,
     "answer": 2,
-    "explain_vi": "Simon định mang ==bread and cheese== nhưng bánh mì đã có người mang → **C (phô mai)**. __Mẹo:__ bread bị gạt.",
-    "choices": 8
+    "explain_vi": "==I prefer the songs on their last album== – \"their last album was brilliant\" → **C**. __Mẹo: tay guitar viết bài của album trước (B).__"
    },
    {
-    "n": 23,
+    "n": 17,
     "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==all the gates are full, so you need to wait for a bus to the airport building== → **B**. __Mẹo: hộ chiếu và hành lý chỉ là thông tin thêm.__"
+   },
+   {
+    "n": 18,
+    "type": "mcq",
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==Anita's bringing that== (bánh mì) → **A (bánh mì)**. __Mẹo:__ Anita muốn mang kem nhưng trời quá lạnh.",
-    "choices": 8
+    "explain_vi": "==I fell over a lot… getting down the hill was harder than playing a whole football match== → **A** (trượt tuyết). __Mẹo: bóng đá chỉ để so sánh; trung tâm thể thao là nơi sắp đến.__"
    },
    {
-    "n": 24,
+    "n": 19,
     "type": "mcq",
-    "answer": 3,
-    "explain_vi": "==I chose chicken because it's more popular than fish== → **D (gà)**. __Mẹo:__ cá chỉ là lựa chọn bị loại.",
-    "choices": 8
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==I want some of our younger visitors to help me give the penguins the fish== → **B**. __Mẹo: không cho chim cánh cụt ăn burger.__"
    },
    {
-    "n": 25,
+    "n": 20,
     "type": "mcq",
-    "answer": 7,
-    "explain_vi": "Michael ==make a big bowl of sliced tomatoes and onions== → **H (salad)**. __Mẹo:__ không nghe từ 'salad'; cà chua, hành thái lát = salad.",
-    "choices": 8
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==she wants a dark one. Yes, that looks perfect== → **B**. __Mẹo: nước hoa đắt; cái túi cỡ nhỏ là chuyện khác.__"
    }
   ]
  }

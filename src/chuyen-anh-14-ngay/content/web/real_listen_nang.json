@@ -1,926 +1,1173 @@
 {
  "1": {
-  "exam": "B2 First for Schools",
+  "exam": "B2 First",
   "level": "B2",
-  "test": "Sample Test 1",
-  "part": "1 · câu 1–4",
-  "topic_vi": "Đoạn ngắn: ca sĩ, cửa hàng quần áo, nông trại, buổi hoà nhạc",
-  "instructions_vi": "Nghe 4 đoạn ngắn độc lập (câu 1–4), mỗi đoạn chọn A, B hoặc C.",
-  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-for-Schools-Listening.pdf",
-  "paper_page": 2,
-  "paper_hint": "Part 1 ở trang 2 của file PDF",
-  "key_url": "https://www.cambridgeenglish.org/Images/697496-b2-first-for-school-listening-sample-1-answer-key.pdf",
-  "yt": "0zfD4C1wnR4",
-  "yt_title": "Listening B2, FCE for schools, Sample 2015, Part 1",
-  "yt_channel": "Minming ĐẠT",
-  "start": 0,
-  "end": 336,
+  "test": "Test 1",
+  "part": "1",
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "8 tình huống ngắn: album nhạc, đặt xe, truyện tranh, quần vợt, chủ website, thời trang, graffiti, biên kịch",
+  "instructions_vi": "Đọc 8 câu hỏi trên video, mỗi đoạn nghe chọn A, B hoặc C (câu 1–8).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "tau0QlBH9n4",
+  "yt_title": "Full B2 First (FCE) Listening Test 1 with Answers",
+  "yt_channel": "Viet FCE",
+  "start": 4,
+  "end": 700,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
     "n": 1,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==my father used to watch a lot of old movies and I sat with him== → **B** (được tiếp xúc âm nhạc từ nhỏ). __mẹo__: A sai vì anh nói ==my dad never suggested it==.",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==deeply personal introspective lyrics that stay with you long after the songs are over== → **A**. __Mẹo: \"well produced\" chỉ là nhận xét chung, cái anh thích nhất là lời bài hát.__"
    },
    {
     "n": 2,
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==The assistants are friendly and they really know about fashion== → **A** (nhân viên nhiệt tình). __mẹo__: nhạc (B) là điều chính cô gái thích, không phải điều bạn cô sẽ thích.",
-    "choices": 3
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==can't we just invite them to come and play the match here next week instead?== → **C**. __Mẹo: cô không muốn xin lỗi (A); \"nobody's accusing me\" (B).__"
    },
    {
     "n": 3,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==you can come along and experience it for yourself this weekend== → **C** (quảng bá Ngày hội nông trại). __mẹo__: câu ==not an easy life== chỉ là chuyện bên lề (A).",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==each picture is cleverly framed… your eyes move between the speech bubbles== → **A** (truyện tranh). __Mẹo: tranh và đồ hoạ đẹp nhưng có bóng thoại, không phải album ảnh.__"
    },
    {
     "n": 4,
     "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==if we're going to stand a chance of winning the tournament, because that is our aim== – \"I'm not denying that\" → **A**. __Mẹo: sợ tập quá sức chỉ là ý một người (B).__"
+   },
+   {
+    "n": 5,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==one in particular told me he didn't think I'd ever make much of myself== → **C** (chứng minh người khác sai). __Mẹo: bố mẹ không hề ép (A); anh chưa bao giờ nghi ngờ khả năng mình (B).__"
+   },
+   {
+    "n": 6,
+    "type": "mcq",
+    "choices": 3,
     "answer": 1,
-    "explain_vi": "==how awful it would be to make a mistake with your mum and dad there!== → **B** (sợ diễn trước gia đình). __mẹo__: bài tập thì ==I'm getting my head round it== nên A sai.",
-    "choices": 3
+    "explain_vi": "==there's a piece here about Bryanboy… can I have that page to photocopy?== → **B** (bài trên tạp chí). __Mẹo: Bryanboy viết blog, nhưng hai bạn đang đọc một trang báo in.__"
+   },
+   {
+    "n": 7,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==it's a shame that people still get into trouble for doing it== – \"it should be allowed\" → **C**. __Mẹo: họ khen nó \"much more artistic\" (A, B sai).__"
+   },
+   {
+    "n": 8,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==getting a part in a soap opera or a job at the studio is a really good way in== → **B**. __Mẹo: đạo diễn thường đã biết họ muốn gì (A); xem nhiều phim chỉ là ý phụ (C).__"
    }
   ]
  },
  "2": {
-  "exam": "B2 First for Schools",
+  "exam": "B2 First",
   "level": "B2",
-  "test": "Sample Test 1",
-  "part": "1 · câu 5–8",
-  "topic_vi": "Đoạn ngắn: CLB bóng đá, báo tuổi teen, leo núi, dự án môi trường",
-  "instructions_vi": "Nghe 4 đoạn ngắn độc lập (câu 5–8), mỗi đoạn chọn A, B hoặc C.",
-  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-for-Schools-Listening.pdf",
-  "paper_page": 3,
-  "paper_hint": "Part 1 ở trang 3 của file PDF",
-  "key_url": "https://www.cambridgeenglish.org/Images/697496-b2-first-for-school-listening-sample-1-answer-key.pdf",
-  "yt": "0zfD4C1wnR4",
-  "yt_title": "Listening B2, FCE for schools, Sample 2015, Part 1",
-  "yt_channel": "Minming ĐẠT",
-  "start": 336,
-  "end": 684,
-  "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
-  "items": [
-   {
-    "n": 5,
-    "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==The new manager of the club...== ==has banned the players from eating meat== → **C**. __mẹo__: chuyên gia y tế chỉ đồng tình (==a view shared by==), không đề xuất (A).",
-    "choices": 3
-   },
-   {
-    "n": 6,
-    "type": "mcq",
-    "answer": 2,
-    "explain_vi": "Bạn trai: ==a good way to find out what's going on in the world==; bạn gái: ==I do follow it== → **C**. __mẹo__: viết bài (B) bị gạt: ==Not a talent of mine==.",
-    "choices": 3
-   },
-   {
-    "n": 7,
-    "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==my legs were aching so much I couldn't appreciate it fully== → **B** (đau mỏi). __mẹo__: cảnh đẹp (C) được nhắc nhưng cậu không tận hưởng được.",
-    "choices": 3
-   },
-   {
-    "n": 8,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==I'd like you to keep thinking about things we can do to maintain the garden== → **A** (khuyến khích tiếp tục tham gia). __mẹo__: ==repeat in the future== chỉ là mong muốn, không phải dự án mới (C).",
-    "choices": 3
-   }
-  ]
- },
- "3": {
-  "exam": "B2 First for Schools",
-  "level": "B2",
-  "test": "Sample Test 1",
+  "test": "Test 1",
   "part": "2",
-  "topic_vi": "Chim hải âu cổ rụt (puffin) ở Iceland",
-  "instructions_vi": "Nghe Duncan kể chuyến nghiên cứu chim puffin; điền một từ hoặc cụm ngắn vào câu 9–18.",
-  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-for-Schools-Listening.pdf",
-  "paper_page": 4,
-  "paper_hint": "Part 2 ở trang 4 của file PDF",
-  "key_url": "https://www.cambridgeenglish.org/Images/697496-b2-first-for-school-listening-sample-1-answer-key.pdf",
-  "yt": "M-m86SMRHvw",
-  "yt_title": "Listening B2, FCE for schools, Sample 2015, Part 2",
-  "yt_channel": "Minming ĐẠT",
-  "start": 0,
-  "end": 550,
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "Đầu bếp chay Angela Newell kể về nghề",
+  "instructions_vi": "Đọc các câu trên video, điền một từ hoặc cụm ngắn nghe được (câu 9–18).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "tau0QlBH9n4",
+  "yt_title": "Full B2 First (FCE) Listening Test 1 with Answers",
+  "yt_channel": "Viet FCE",
+  "start": 708,
+  "end": 1189,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
     "n": 9,
     "type": "gap",
-    "answer": "funny",
-    "explain_vi": "==makes them look really funny on dry land== → **funny**. __mẹo__: ==a large colourful beak== là đặc điểm, không phải từ tả vẻ ngoài trên cạn.",
+    "answer": "apple pie",
     "accept": [
-     "funny"
-    ]
+     "an apple pie",
+     "apple pies"
+    ],
+    "explain_vi": "==I realised I had talent when I made an apple pie one day== → **apple pie**. __Mẹo: brownies và mì Ý là món cô làm trước đó.__"
    },
    {
     "n": 10,
     "type": "gap",
-    "answer": "feet",
-    "explain_vi": "Chân: ==they use them to alter their direction in the air!== → **feet**. __mẹo__: cánh (wings) dùng để bơi dưới nước, không phải đổi hướng khi bay.",
+    "answer": "childcare",
     "accept": [
-     "feet",
-     "their feet"
-    ]
+     "child care",
+     "child-care"
+    ],
+    "explain_vi": "==also had classes in childcare== → **childcare**. __Mẹo: khoá học không có quản lý khách sạn.__"
    },
    {
     "n": 11,
     "type": "gap",
-    "answer": "holes",
-    "explain_vi": "==They dig holes, so their nests are very well protected.== → **holes**. __mẹo__: ==cliff top ledges== là điều Duncan tưởng, đã bị bác bỏ.",
+    "answer": "nanny",
     "accept": [
-     "holes"
-    ]
+     "children's nanny",
+     "childrens nanny",
+     "a nanny",
+     "a children's nanny"
+    ],
+    "explain_vi": "==get a job as a children's nanny== → **nanny**. __Mẹo: \"I wasn't an English teacher\".__"
    },
    {
     "n": 12,
     "type": "gap",
-    "answer": "cow",
-    "explain_vi": "Chim lớn kêu ==sounding like a cow== → **cow**. __mẹo__: ==a duck or a goose== là tiếng chim non, không phải chim trưởng thành.",
+    "answer": "six months",
     "accept": [
-     "cow",
-     "a cow"
-    ]
+     "6 months",
+     "six month"
+    ],
+    "explain_vi": "==I was only intending to stay two months but it turned into six== → **six months**."
    },
    {
     "n": 13,
     "type": "gap",
-    "answer": "hunger",
-    "explain_vi": "==it's hunger rather than loneliness that makes young puffins fly== → **hunger / being hungry**. __mẹo__: loneliness bị phủ định bằng ==rather than==.",
+    "answer": "golf course",
     "accept": [
-     "hunger",
-     "being hungry"
-    ]
+     "golf-course",
+     "a golf course"
+    ],
+    "explain_vi": "==the job I finally got was on a golf course, not in a smart city centre hotel== → **golf course**."
    },
    {
     "n": 14,
     "type": "gap",
-    "answer": "stars",
-    "explain_vi": "==puffins instinctively use the stars for navigation== → **stars**. __mẹo__: đèn thành phố (lights) là thứ đánh lừa chim, không phải thứ chúng dựa vào.",
+    "answer": "Indian",
     "accept": [
-     "stars",
-     "the stars"
-    ]
+     "indian"
+    ],
+    "explain_vi": "==Indian food was always my personal favourite, even more than French food== → **Indian**."
    },
    {
     "n": 15,
     "type": "gap",
-    "answer": "gardens",
-    "explain_vi": "==But gardens present more of a threat.== → **gardens**. __mẹo__: đường phố (roads) được nhắc trước nhưng ==cars aren't so much of a problem==.",
+    "answer": "fashion model",
     "accept": [
-     "gardens",
-     "the gardens",
-     "dark gardens",
-     "the dark gardens",
-     "dark gardens with lurking cats",
-     "the dark gardens with lurking cats",
-     "gardens with lurking cats"
-    ]
+     "model",
+     "a fashion model"
+    ],
+    "explain_vi": "==a private chef at the home of a well-known fashion model== → **fashion model**. __Mẹo: chồng cô ấy là nhà báo.__"
    },
    {
     "n": 16,
     "type": "gap",
-    "answer": "umbrella",
-    "explain_vi": "==putting a young puffin in an upturned umbrella, which made me laugh!== → **umbrella**. __mẹo__: hộp giày (shoe boxes) là cách thông thường, không gây cười.",
+    "answer": "Green Leaves",
     "accept": [
-     "umbrella",
-     "upturned umbrella"
-    ]
+     "green leaves"
+    ],
+    "explain_vi": "==my friend came up with Green Leaves== → **Green Leaves**. __Mẹo: Whole Earth, Grass Roots là tên bị loại.__"
    },
    {
     "n": 17,
     "type": "gap",
-    "answer": "museum",
-    "explain_vi": "==they get taken to the local museum== → **museum**. __mẹo__: ==a sort of puffin hotel== chỉ là cách gọi vui, không điền hotel.",
+    "answer": "service",
     "accept": [
-     "museum",
-     "local museum"
-    ]
+     "the service"
+    ],
+    "explain_vi": "==not for the food… but for the quality of the service== → **service**."
    },
    {
     "n": 18,
     "type": "gap",
-    "answer": "mouse mat",
-    "explain_vi": "==I've got a puffin mouse-mat too, that's really cute== → **mouse mat**. __mẹo__: áo phông, mũ lưỡi trai được nhắc để so sánh, không phải món cậu thích.",
+    "answer": "website",
     "accept": [
-     "mouse mat",
-     "mouse-mat",
-     "mousemat",
-     "puffin mouse mat",
-     "puffin mouse-mat"
-    ]
+     "web site",
+     "a website"
+    ],
+    "explain_vi": "==I'm also setting up a website soon== → **website**. __Mẹo: chương trình TV cô còn đang suy nghĩ; sách nấu ăn đã ra.__"
    }
   ]
  },
- "4": {
-  "exam": "B2 First for Schools",
+ "3": {
+  "exam": "B2 First",
   "level": "B2",
-  "test": "Sample Test 1",
+  "test": "Test 1",
   "part": "3",
-  "topic_vi": "Năm bạn trẻ nói về nhiếp ảnh",
-  "instructions_vi": "Nghe 5 người nói về nhiếp ảnh; chọn cho mỗi người (câu 19–23) một ý A–H, có 3 ý thừa.",
-  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-for-Schools-Listening.pdf",
-  "paper_page": 6,
-  "paper_hint": "Part 3 ở trang 6 của file PDF",
-  "key_url": "https://www.cambridgeenglish.org/Images/697496-b2-first-for-school-listening-sample-1-answer-key.pdf",
-  "yt": "57jO-GAyVhE",
-  "yt_title": "Listening B2, FCE for schools, Sample 2015, Part 3",
-  "yt_channel": "Minming ĐẠT",
-  "start": 0,
-  "end": 491,
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "Năm người nhận xét về một khách sạn",
+  "instructions_vi": "Đọc ý A–H trên video, chọn ý đúng cho mỗi người nói (câu 19–23), có 3 ý thừa.",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "tau0QlBH9n4",
+  "yt_title": "Full B2 First (FCE) Listening Test 1 with Answers",
+  "yt_channel": "Viet FCE",
+  "start": 1200,
+  "end": 1623,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
     "n": 19,
     "type": "mcq",
-    "answer": 4,
-    "explain_vi": "Người 1: ==it motivates me to get out there, do different things== → **E** (đi nơi mới). __mẹo__: ==I might even do it for a career== chỉ là có thể, không phải mục tiêu (D).",
-    "choices": 8
-   },
-   {
-    "n": 20,
-    "type": "mcq",
-    "answer": 2,
-    "explain_vi": "Người 2: ==a way of freezing a moment in time with just one click== → **C** (lưu giữ kỷ niệm). __mẹo__: ==becoming a real expert== là lời người khác, bạn ấy không bận tâm (D sai).",
-    "choices": 8
-   },
-   {
-    "n": 21,
-    "type": "mcq",
-    "answer": 7,
-    "explain_vi": "Người 3: ==I actually feel more sure of myself== khi cầm máy → **H** (tự tin hơn). __mẹo__: ý ==truly original== nói về người khác, không phải F.",
-    "choices": 8
-   },
-   {
-    "n": 22,
-    "type": "mcq",
+    "choices": 8,
     "answer": 5,
-    "explain_vi": "Người 4: ==using my imagination to create something unique== → **F** (ý tưởng nghệ thuật độc đáo). __mẹo__: ==I'm no great perfectionist== loại D.",
-    "choices": 8
-   },
-   {
-    "n": 23,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "Người 5: ==I get pleasure out of solving puzzles... experimenting to see how it all works== (phần mềm) → **A**. __mẹo__: ==I can't say I'm some expert== loại D.",
-    "choices": 8
-   }
-  ]
- },
- "5": {
-  "exam": "B2 First for Schools",
-  "level": "B2",
-  "test": "Sample Test 1",
-  "part": "4",
-  "topic_vi": "Phóng viên nhí ở đài phát thanh địa phương",
-  "instructions_vi": "Nghe phỏng vấn Luke về làm phóng viên đài phát thanh; chọn A, B hoặc C cho câu 24–30.",
-  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-for-Schools-Listening.pdf",
-  "paper_page": 7,
-  "paper_hint": "Part 4 ở trang 7 của file PDF",
-  "key_url": "https://www.cambridgeenglish.org/Images/697496-b2-first-for-school-listening-sample-1-answer-key.pdf",
-  "yt": "lMy8L5BXojI",
-  "yt_title": "Listening B2, FCE for schools, Sample 2015, Part 4",
-  "yt_channel": "Minming ĐẠT",
-  "start": 0,
-  "end": 927,
-  "max_plays": 1,
-  "timing_verified": "video chỉ chứa đúng Part này; đáp án in trong mô tả video trùng 100% key chính thức (24/10/2026)",
-  "items": [
-   {
-    "n": 24,
-    "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==making us see that everyone has a story that's worth telling== → **C**. __mẹo__: ==Some of us might go on to work at a radio station== chỉ là khả năng, không phải mục đích (A).",
-    "choices": 3
-   },
-   {
-    "n": 25,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==The weird thing was having to practise being natural and relaxed.== → **A** (cách nói). __mẹo__: kịch bản (B) không cần: ==rather than write a script==.",
-    "choices": 3
-   },
-   {
-    "n": 26,
-    "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==it meant I'd be the centre of attention for a few days== → **C** (ngại bị chú ý). __mẹo__: thầy cô ==seemed quite keen== nên A sai.",
-    "choices": 3
-   },
-   {
-    "n": 27,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==people often opened up and revealed much more than I'd expected== → **A** (cởi mở). __mẹo__: bạn bè lại ==go all self-conscious==, trái với B.",
-    "choices": 3
-   },
-   {
-    "n": 28,
-    "type": "mcq",
-    "answer": 2,
-    "explain_vi": "==Everything you record has to be carefully edited.== → **C** (hiểu việc biên tập là cần). __mẹo__: chuyện câu ngớ ngẩn không phát sóng không phải nỗi lo (A).",
-    "choices": 3
-   },
-   {
-    "n": 29,
-    "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==I had to be a journalist, a producer and an engineer all at the same time== → **B**. __mẹo__: ==I never complained== nên không có gì để hối tiếc (A).",
-    "choices": 3
-   },
-   {
-    "n": 30,
-    "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==you have to be creative and pay attention to the words you use== → **B**. __mẹo__: cảm giác ==talking directly to you== không có nghĩa phải gặp thính giả (A).",
-    "choices": 3
-   }
-  ]
- },
- "6": {
-  "exam": "B2 First for Schools",
-  "level": "B2",
-  "test": "Sample Test 2",
-  "part": "1 · câu 1–4",
-  "topic_vi": "Đoạn ngắn: lớp vẽ truyện tranh, khảo sát bướm, đi bộ từ thiện, bài thuyết trình",
-  "instructions_vi": "Nghe 4 đoạn ngắn độc lập (câu 1–4), mỗi đoạn chọn A, B hoặc C.",
-  "paper_pdf": "https://languageadvisor.net/wp-content/uploads/2021/06/First-for-Schools-2015-Listening-sample-paper-2.pdf",
-  "paper_page": 2,
-  "paper_hint": "Part 1 ở trang 2 của file PDF",
-  "key_url": "https://www.cambridgefoundation.jp/pdf/ceq/b2fs/First%20for%20Schools%202015%20Answer%20key%20sample%20paper%202.pdf",
-  "yt": "lD2Tjzx21LM",
-  "yt_title": "Listening B2, FCE for schools, Sample 2015 2, Part 1",
-  "yt_channel": "Minming ĐẠT",
-  "start": 0,
-  "end": 393,
-  "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
-  "items": [
-   {
-    "n": 1,
-    "type": "mcq",
-    "choices": 3,
-    "answer": 0,
-    "explain_vi": "==I make it seem so straightforward== → **A**. __Mẹo: \"regardless of experience\" nghe giống B, nhưng thầy nói ai cũng học được; luyện thêm là việc cậu tự làm (C).__"
-   },
-   {
-    "n": 2,
-    "type": "mcq",
-    "choices": 3,
-    "answer": 1,
-    "explain_vi": "==the tricky bit's relating the name to the one that's in front of you== → **B**. __Mẹo: bướm \"aren't hard to find\" (A); tên lạ nhưng bạn ấy đã nhớ gần hết (C).__"
-   },
-   {
-    "n": 3,
-    "type": "mcq",
-    "choices": 3,
-    "answer": 0,
-    "explain_vi": "==I would have preferred not to have been the one in the spotlight== → **A**. __Mẹo: chân đau \"but it was worth it\" (B); mưa to là chuyện năm ngoái (C).__"
-   },
-   {
-    "n": 4,
-    "type": "mcq",
-    "choices": 3,
-    "answer": 2,
-    "explain_vi": "==for this class presentation I'd say just pick the subject that you know most about== → **C**. __Mẹo: cô nói không cần research (A); bài về nhà ít chỉ là hệ quả (B).__"
-   }
-  ]
- },
- "7": {
-  "exam": "B2 First for Schools",
-  "level": "B2",
-  "test": "Sample Test 2",
-  "part": "1 · câu 5–8",
-  "topic_vi": "Đoạn ngắn: cuộc thi thiết kế game, làm thơ, sách về cầu thủ, vườn thú",
-  "instructions_vi": "Nghe 4 đoạn ngắn độc lập (câu 5–8), mỗi đoạn chọn A, B hoặc C.",
-  "paper_pdf": "https://languageadvisor.net/wp-content/uploads/2021/06/First-for-Schools-2015-Listening-sample-paper-2.pdf",
-  "paper_page": 3,
-  "paper_hint": "Part 1 ở trang 3 của file PDF",
-  "key_url": "https://www.cambridgefoundation.jp/pdf/ceq/b2fs/First%20for%20Schools%202015%20Answer%20key%20sample%20paper%202.pdf",
-  "yt": "lD2Tjzx21LM",
-  "yt_title": "Listening B2, FCE for schools, Sample 2015 2, Part 1",
-  "yt_channel": "Minming ĐẠT",
-  "start": 393,
-  "end": 769,
-  "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
-  "items": [
-   {
-    "n": 5,
-    "type": "mcq",
-    "choices": 3,
-    "answer": 1,
-    "explain_vi": "==I'll definitely have a closer look at the competition rules== → **B**. __Mẹo: 11–16 tuổi là hợp nên A sai; bạn ấy chưa chắc mình đủ giỏi nên C sai.__"
-   },
-   {
-    "n": 6,
-    "type": "mcq",
-    "choices": 3,
-    "answer": 2,
-    "explain_vi": "==choosing something from this collection… all by people your own age== → **C**. __Mẹo: đọc thơ cổ điển (A) và tìm trên mạng (B) chỉ là ý cô hỏi lớp.__"
-   },
-   {
-    "n": 7,
-    "type": "mcq",
-    "choices": 3,
-    "answer": 0,
-    "explain_vi": "==I had no idea he'd had such a tough childhood== – \"me neither\" → **A**. __Mẹo: B bị bác vì người khác viết hộ; cuối cùng hai bạn tin lời trong sách là thật (C sai).__"
-   },
-   {
-    "n": 8,
-    "type": "mcq",
-    "choices": 3,
-    "answer": 1,
-    "explain_vi": "==there are thought to be only about 400 left== → **B**. __Mẹo: con non chưa có tên nhưng không mời đặt tên (A); \"problems\" chỉ nhắc khi giới thiệu trang web (C).__"
-   }
-  ]
- },
- "8": {
-  "exam": "B2 First for Schools",
-  "level": "B2",
-  "test": "Sample Test 2",
-  "part": "3",
-  "topic_vi": "Năm bạn trẻ nói về sở thích",
-  "instructions_vi": "Nghe 5 bạn nói về sở thích; chọn cho mỗi người (câu 19–23) điều bạn ấy thích nhất trong A–H, có 3 ý thừa.",
-  "paper_pdf": "https://languageadvisor.net/wp-content/uploads/2021/06/First-for-Schools-2015-Listening-sample-paper-2.pdf",
-  "paper_page": 5,
-  "paper_hint": "Part 3 ở trang 5 của file PDF",
-  "key_url": "https://www.cambridgefoundation.jp/pdf/ceq/b2fs/First%20for%20Schools%202015%20Answer%20key%20sample%20paper%202.pdf",
-  "yt": "9v1jsZ6AUVM",
-  "yt_title": "Listening B2, FCE for schools, Sample 2015 2, Part 3",
-  "yt_channel": "Minming ĐẠT",
-  "start": 0,
-  "end": 484,
-  "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
-  "items": [
-   {
-    "n": 19,
-    "type": "mcq",
-    "choices": 8,
-    "answer": 2,
-    "explain_vi": "Người 1: ==you can make up your own tricks on it== → **C** (được sáng tạo). __Mẹo: có nhắc thi đấu (D) nhưng chỉ \"good fun\".__"
+    "explain_vi": "Người 1: ==some of the people they had working there seemed a bit out of their depth== → **F**. __Mẹo: muốn ở gần trung tâm hơn chỉ là ý phụ (H).__"
    },
    {
     "n": 20,
     "type": "mcq",
     "choices": 8,
     "answer": 7,
-    "explain_vi": "Người 2: ==aimed at people like me… who just like to enjoy themselves== → **H**. __Mẹo: có kết bạn (B), còn đi thi thì \"not counting on it\" (D).__"
+    "explain_vi": "Người 2: ==it was handy to be near the centre… just wander down== → **H**. __Mẹo: vườn \"weren't anything special\" (C).__"
    },
    {
     "n": 21,
     "type": "mcq",
     "choices": 8,
     "answer": 3,
-    "explain_vi": "Người 3: ==put our photos in competitions – that's what makes it really worthwhile== → **D**. __Mẹo: \"isn't as challenging\" nên loại A.__"
+    "explain_vi": "Người 3: ==some other things were shut all week, like the gym and the swimming pool== → **D**."
    },
    {
     "n": 22,
     "type": "mcq",
     "choices": 8,
-    "answer": 5,
-    "explain_vi": "Người 4: ==I get a real buzz from seeing the look on their faces== → **F**. __Mẹo: không tự sáng tác (C); ngại đi thi (D).__"
+    "answer": 1,
+    "explain_vi": "Người 4: ==there didn't seem to be any couples with young kids… I don't think that's who it's designed for== → **B**. __Mẹo: đồ ăn \"wasn't particularly adventurous\" (E).__"
    },
    {
     "n": 23,
     "type": "mcq",
     "choices": 8,
-    "answer": 0,
-    "explain_vi": "Người 5: ==I do find some recipes demanding but that's the fun of it== → **A**. __Mẹo: thi nấu (D) chỉ là hoạt động trên lớp.__"
+    "answer": 2,
+    "explain_vi": "Người 5: ==we spent hours wandering around in the gardens, which were so peaceful== → **C**. __Mẹo: người này đi công tác nhiều, nhưng không nói hợp với dân kinh doanh (G).__"
    }
   ]
  },
- "9": {
-  "exam": "B2 First for Schools",
+ "4": {
+  "exam": "B2 First",
   "level": "B2",
-  "test": "Sample Test 2",
+  "test": "Test 1",
   "part": "4",
-  "topic_vi": "Phỏng vấn vận động viên bơi Helen Gibson",
-  "instructions_vi": "Nghe phỏng vấn Helen Gibson; chọn A, B hoặc C cho câu 24–30.",
-  "paper_pdf": "https://languageadvisor.net/wp-content/uploads/2021/06/First-for-Schools-2015-Listening-sample-paper-2.pdf",
-  "paper_page": 6,
-  "paper_hint": "Part 4 ở trang 6 của file PDF",
-  "key_url": "https://www.cambridgefoundation.jp/pdf/ceq/b2fs/First%20for%20Schools%202015%20Answer%20key%20sample%20paper%202.pdf",
-  "yt": "4VrWl9uNCUA",
-  "yt_title": "Listening B2, FCE for schools, Sample 2015 2, Part 4",
-  "yt_channel": "Minming ĐẠT",
-  "start": 0,
-  "end": 860,
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "Phỏng vấn rapper Joey Small về vai diễn điện ảnh đầu tiên",
+  "instructions_vi": "Đọc câu hỏi trên video, nghe phỏng vấn, chọn A, B hoặc C (câu 24–30).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "tau0QlBH9n4",
+  "yt_title": "Full B2 First (FCE) Listening Test 1 with Answers",
+  "yt_channel": "Viet FCE",
+  "start": 1625,
+  "end": 2069,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
     "n": 24,
     "type": "mcq",
     "choices": 3,
-    "answer": 2,
-    "explain_vi": "==he and Mum convinced me to have some swimming coaching== → **C**. __Mẹo: anh trai làm cô ngại bơi lúc đầu (A); cô không chán chạy bộ (B).__"
+    "answer": 1,
+    "explain_vi": "==the toughest part was just getting used to the routine on set== → **B**."
    },
    {
     "n": 25,
     "type": "mcq",
     "choices": 3,
     "answer": 0,
-    "explain_vi": "==things aren't worth doing if you're not passionate about them… it was down to me== → **A**. __Mẹo: câu lạc bộ, hồ bơi gần nhà (B, C) chỉ là may mắn phụ.__"
+    "explain_vi": "==I was a little more advanced than the other guys, so could pull off some of the moves a bit sooner== → **A**."
    },
    {
     "n": 26,
     "type": "mcq",
     "choices": 3,
-    "answer": 1,
-    "explain_vi": "==I had some amazing coaches… I'm grateful to them for that== → **B**. __Mẹo: cô \"never got behind\" việc học (A); ít gặp bạn nhưng \"cool with that\" (C).__"
+    "answer": 2,
+    "explain_vi": "==they made all the difference, and you had to do what they said== (các huấn luyện viên diễn xuất) → **C**."
    },
    {
     "n": 27,
     "type": "mcq",
     "choices": 3,
-    "answer": 2,
-    "explain_vi": "==I always do the same series of stretches== → **C**. __Mẹo: cô ra cạnh hồ từ sớm (A); không nghĩ tới đối thủ (B).__"
+    "answer": 0,
+    "explain_vi": "==I listened to Laurel, 'cos she knows what she's doing== → **A**."
    },
    {
     "n": 28,
     "type": "mcq",
     "choices": 3,
     "answer": 2,
-    "explain_vi": "==I can concentrate on that 100%== → **C**. __Mẹo: báo viết sai về mình là mặt trái (A); được đi nhiều nhưng không thích sống trong vali (B).__"
+    "explain_vi": "==you got to use your ears – listen to the words as you say them== → **C**."
    },
    {
     "n": 29,
     "type": "mcq",
     "choices": 3,
+    "answer": 1,
+    "explain_vi": "==loss of privacy's the price you pay, I don't have a problem with that== → **B**."
+   },
+   {
+    "n": 30,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I'm only nineteen, so I'm not closing any doors yet== → **C**. __Mẹo: anh có nói muốn đóng thêm phim nhưng \"not counting on it\" (A).__"
+   }
+  ]
+ },
+ "5": {
+  "exam": "B2 First",
+  "level": "B2",
+  "test": "Test 2",
+  "part": "1",
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "8 tình huống ngắn: kỳ nghỉ, nhà văn, kính mắt, đầu bếp nhí, rạp phim, doanh nhân, phòng thu, thể dục",
+  "instructions_vi": "Đọc 8 câu hỏi trên video, mỗi đoạn nghe chọn A, B hoặc C (câu 1–8).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "pdEyCvK6iH8",
+  "yt_title": "Full B2 First (FCE) Listening Test 2 with answers",
+  "yt_channel": "Viet FCE",
+  "start": 6,
+  "end": 716,
+  "max_plays": 1,
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
+  "items": [
+   {
+    "n": 1,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==the weather's never that great, which meant that I got really rather bored== – mưa làm hỏng mọi kế hoạch → **B**. __Mẹo: anh mặc kệ cậu em cáu kỉnh (A).__"
+   },
+   {
+    "n": 2,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==calculating in advance what will happen when X meets Y for the first time== → **C**. __Mẹo: bà nói truyện \"true to life\" chứ không khẳng định chuyện có thật.__"
+   },
+   {
+    "n": 3,
+    "type": "mcq",
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==there's nothing worse than competing in front of a home crowd== → **A**. __Mẹo: cô ít chấn thương (C); thua thì có chuyên gia tâm lý giúp (B).__"
+    "explain_vi": "==I don't think we need to change your prescription== – người phụ nữ là bác sĩ mắt, cậu bé là bệnh nhân → **A**."
+   },
+   {
+    "n": 4,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==those early pizzas usually tasted great, but one time my dad cracked a tooth on the crust== → **C**. __Mẹo: công thức là cô tìm, không phải tự nghĩ (A).__"
+   },
+   {
+    "n": 5,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==the man who checks them on the door== – cô làm rơi vé, phải mua cái khác → **B**. __Mẹo: cô chỉ tìm ô trong túi (C).__"
+   },
+   {
+    "n": 6,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==they do take it out of me… I really do lots of preparation== → **B**. __Mẹo: \"it's not that I don't like them\" loại A.__"
+   },
+   {
+    "n": 7,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==we actually saw a song being recorded, which made the biggest impression on me== → **A**. __Mẹo: phần kỹ thuật \"didn't mean much to me\" (B).__"
+   },
+   {
+    "n": 8,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I make space for it, and I think everybody owes themselves at least that long each day== → **C**. __Mẹo: cô đi bộ với mẹ chỉ \"sometimes\" (B).__"
+   }
+  ]
+ },
+ "6": {
+  "exam": "B2 First",
+  "level": "B2",
+  "test": "Test 2",
+  "part": "2",
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "Lance Arbury nói về công việc ở sở thú",
+  "instructions_vi": "Đọc các câu trên video, điền một từ hoặc cụm ngắn nghe được (câu 9–18).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "pdEyCvK6iH8",
+  "yt_title": "Full B2 First (FCE) Listening Test 2 with answers",
+  "yt_channel": "Viet FCE",
+  "start": 716,
+  "end": 1144,
+  "max_plays": 1,
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
+  "items": [
+   {
+    "n": 9,
+    "type": "gap",
+    "answer": "large mammal",
+    "accept": [
+     "large-mammal",
+     "large mammals"
+    ],
+    "explain_vi": "==I'm officially called the large mammal keeper== → **large mammal**."
+   },
+   {
+    "n": 10,
+    "type": "gap",
+    "answer": "zoo biology",
+    "accept": [
+     "biology"
+    ],
+    "explain_vi": "==the subject I studied is known as zoo biology== → **zoo biology**. __Mẹo: anh không học thú y.__"
+   },
+   {
+    "n": 11,
+    "type": "gap",
+    "answer": "snakes",
+    "accept": [
+     "snake"
+    ],
+    "explain_vi": "==I got an internship looking after snakes== → **snakes**."
+   },
+   {
+    "n": 12,
+    "type": "gap",
+    "answer": "meeting",
+    "accept": [
+     "briefing meeting",
+     "briefing"
+    ],
+    "explain_vi": "==a typical day for me begins with a briefing meeting== → **meeting**."
+   },
+   {
+    "n": 13,
+    "type": "gap",
+    "answer": "breakfast",
+    "accept": [
+     "breakfasts"
+    ],
+    "explain_vi": "==I like to be the one to give them breakfast; for me that is the best part of the day== → **breakfast**."
+   },
+   {
+    "n": 14,
+    "type": "gap",
+    "answer": "family",
+    "accept": [
+     "family members"
+    ],
+    "explain_vi": "==for me they are more like family than friends== → **family**."
+   },
+   {
+    "n": 15,
+    "type": "gap",
+    "answer": "observant",
+    "accept": [
+     "very observant"
+    ],
+    "explain_vi": "==you also need to be observant== → **observant**."
+   },
+   {
+    "n": 16,
+    "type": "gap",
+    "answer": "aggressive",
+    "accept": [
+     "agressive"
+    ],
+    "explain_vi": "==rhinos have a reputation for being aggressive, but this is not generally true== → **aggressive**."
+   },
+   {
+    "n": 17,
+    "type": "gap",
+    "answer": "Career Discovery Day",
+    "accept": [
+     "career discovery day",
+     "career discovery"
+    ],
+    "explain_vi": "==the zoo is holding what's known as a Career Discovery Day== → **Career Discovery Day**."
+   },
+   {
+    "n": 18,
+    "type": "gap",
+    "answer": "register online",
+    "accept": [
+     "register",
+     "register on-line"
+    ],
+    "explain_vi": "==be sure to register online if you're interested== → **register online**."
+   }
+  ]
+ },
+ "7": {
+  "exam": "B2 First",
+  "level": "B2",
+  "test": "Test 2",
+  "part": "3",
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "Năm học sinh nói về cách học hiệu quả",
+  "instructions_vi": "Đọc lời khuyên A–H trên video, chọn lời khuyên của mỗi người nói (câu 19–23), có 3 ý thừa.",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "pdEyCvK6iH8",
+  "yt_title": "Full B2 First (FCE) Listening Test 2 with answers",
+  "yt_channel": "Viet FCE",
+  "start": 1151,
+  "end": 1551,
+  "max_plays": 1,
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
+  "items": [
+   {
+    "n": 19,
+    "type": "mcq",
+    "choices": 8,
+    "answer": 0,
+    "explain_vi": "Người 1: ==try saying you'll do some studying together== → **A**."
+   },
+   {
+    "n": 20,
+    "type": "mcq",
+    "choices": 8,
+    "answer": 3,
+    "explain_vi": "Người 2: ==food really doesn't help, so I try now to study when I'm feeling a bit hungry== → **D**."
+   },
+   {
+    "n": 21,
+    "type": "mcq",
+    "choices": 8,
+    "answer": 5,
+    "explain_vi": "Người 3: ==if you take this step-by-step approach, you can keep going much longer== → **F**. __Mẹo: \"approach\" dễ làm cậu chọn H.__"
+   },
+   {
+    "n": 22,
+    "type": "mcq",
+    "choices": 8,
+    "answer": 1,
+    "explain_vi": "Người 4: ==I have a good, solid chair and my desk is at the right height== → **B**."
+   },
+   {
+    "n": 23,
+    "type": "mcq",
+    "choices": 8,
+    "answer": 2,
+    "explain_vi": "Người 5: ==your favourite band playing in the background can help with this== → **C**."
+   }
+  ]
+ },
+ "8": {
+  "exam": "B2 First",
+  "level": "B2",
+  "test": "Test 2",
+  "part": "4",
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "Phỏng vấn Jason Phipps của ban nhạc Well Kept Secret",
+  "instructions_vi": "Đọc câu hỏi trên video, nghe phỏng vấn, chọn A, B hoặc C (câu 24–30).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "pdEyCvK6iH8",
+  "yt_title": "Full B2 First (FCE) Listening Test 2 with answers",
+  "yt_channel": "Viet FCE",
+  "start": 1551,
+  "end": 1988,
+  "max_plays": 1,
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
+  "items": [
+   {
+    "n": 24,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==we jokingly referred to it with the words 'well kept secret'== → **C**."
+   },
+   {
+    "n": 25,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==the music was going in a new direction, so it seemed the right moment for a new name too== → **A**."
+   },
+   {
+    "n": 26,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==we just made the sort of music we felt like making… it's much easier to be creative that way== → **C**."
+   },
+   {
+    "n": 27,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==we all have our parts in writing, and that works well== → **B**."
+   },
+   {
+    "n": 28,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==we generally begin with the title and then start building from that simple concept== → **A**. __Mẹo: giai điệu \"is important\" nhưng không phải điểm khởi đầu (B).__"
+   },
+   {
+    "n": 29,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==some songs take a while and some get done really quickly; it varies== → **C**."
    },
    {
     "n": 30,
     "type": "mcq",
     "choices": 3,
     "answer": 1,
-    "explain_vi": "==only you know what you're really capable of== → **B**. __Mẹo: \"can't be true for everybody\" loại A; bỏ học là chuyện riêng cô, không khuyên (C).__"
+    "explain_vi": "==we practise a lot before we play live== → **B**."
+   }
+  ]
+ },
+ "9": {
+  "exam": "B2 First",
+  "level": "B2",
+  "test": "Test 3",
+  "part": "1",
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "8 tình huống ngắn: phòng tập, du lịch, dạy đi xe đạp, tin nhắn công việc, hoạ sĩ, máy tính, buổi hoà nhạc, website",
+  "instructions_vi": "Đọc 8 câu hỏi trên video, mỗi đoạn nghe chọn A, B hoặc C (câu 1–8).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "ltzIdfVMnew",
+  "yt_title": "Full FCE Listening Test 3 with answers",
+  "yt_channel": "Viet FCE",
+  "start": 5,
+  "end": 703,
+  "max_plays": 1,
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
+  "items": [
+   {
+    "n": 1,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==it's all the latest stuff and the best stuff on the market== → **C**. __Mẹo: lớp nhóm \"aren't really my thing\" (A); bạn Sarah chỉ hay khuyên (B).__"
+   },
+   {
+    "n": 2,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==we can see a rise in short breaks to capital cities== → **A**. __Mẹo: biển thì \"static\" (B); chi phí trượt tuyết tăng nên khách bỏ đi (C).__"
+   },
+   {
+    "n": 3,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==they worry about looking silly or stupid== → **B**. __Mẹo: trẻ em mới là \"rather serious\" (A).__"
+   },
+   {
+    "n": 4,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==can you get back to me… and clarify why the meeting might be put off== → **C**. __Mẹo: cô không xin lỗi, cũng không báo mình vắng mặt.__"
+   },
+   {
+    "n": 5,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==to translate them into paintings… ideas for compositions that I then realise on canvas== → **B** (hoạ sĩ). __Mẹo: xem phim, đọc thơ chỉ là cách lấy ý tưởng.__"
+   },
+   {
+    "n": 6,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==you should take this one back and give me the more up-to-date model== → **B**. __Mẹo: cô sẵn sàng trả thêm tiền, không đòi hoàn tiền (A).__"
+   },
+   {
+    "n": 7,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==I didn't think the support bands were up to much== – \"No, same old stuff\" → **A**. __Mẹo: rạp hát thì một người chê, một người khen (C).__"
+   },
+   {
+    "n": 8,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I thought I was going to find something a bit more engaging== → **C**. __Mẹo: nhiều trang thiết kế đẹp (B sai).__"
    }
   ]
  },
  "10": {
   "exam": "B2 First",
   "level": "B2",
-  "test": "Sample Test 1",
-  "part": "1 · câu 1–4",
-  "topic_vi": "Đoạn ngắn: lời nhắn, trung tâm thể thao nước, tay vợt, nhà thơ",
-  "instructions_vi": "Nghe 4 đoạn ngắn độc lập (câu 1–4), mỗi đoạn chọn A, B hoặc C.",
-  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-Listening.pdf",
-  "paper_page": 2,
-  "paper_hint": "Part 1 ở trang 2 của file PDF",
-  "key_url": "https://www.cambridgeenglish.org/Images/697492-b2-first-listening-sample-1-answer-key.pdf",
-  "yt": "ot8Smj3p_bg",
-  "yt_title": "Cambridge B2 First Certificate Listening Sample Test 1 - I",
-  "yt_channel": "Cambridge spell book",
-  "start": 38,
-  "end": 391,
+  "test": "Test 3",
+  "part": "2",
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "Erica kể về khoá học trang điểm",
+  "instructions_vi": "Đọc các câu trên video, điền một từ hoặc cụm ngắn nghe được (câu 9–18).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "ltzIdfVMnew",
+  "yt_title": "Full FCE Listening Test 3 with answers",
+  "yt_channel": "Viet FCE",
+  "start": 703,
+  "end": 1252,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
-    "n": 1,
-    "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==I wondered if you wanted to come away for the weekend.== → **B** (mời đi chơi). __mẹo__: ngày giờ ==October 9== chỉ là thông tin kèm, không phải xác nhận lịch (A).",
-    "choices": 3
+    "n": 9,
+    "type": "gap",
+    "answer": "beauty studies",
+    "accept": [
+     "beauty study"
+    ],
+    "explain_vi": "==beauty studies, which I went for because it seemed to give the basics== → **beauty studies**. __Mẹo: làm tóc và làm móng là các lựa chọn bị bỏ.__"
    },
    {
-    "n": 2,
-    "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==I wish they'd had water games for the under fives.== → **B** (nên có trò cho trẻ nhỏ). __mẹo__: an toàn (A) đã tốt: ==Nobody's allowed in the water without a life-jacket==.",
-    "choices": 3
+    "n": 10,
+    "type": "gap",
+    "answer": "purple",
+    "accept": [],
+    "explain_vi": "==our usual school uniforms… given that mine's actually purple== → **purple**."
    },
    {
-    "n": 3,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==the ones I have a problem with are those who assume it's all about partying== → **A**. __mẹo__: hỏi về tiền (==the financial side==) không làm cô khó chịu nhất (B).",
-    "choices": 3
+    "n": 11,
+    "type": "gap",
+    "answer": "hairspray",
+    "accept": [
+     "hair spray",
+     "hair-spray"
+    ],
+    "explain_vi": "==on day one we kicked off with hairspray== → **hairspray**."
    },
    {
-    "n": 4,
-    "type": "mcq",
-    "answer": 2,
-    "explain_vi": "Trẻ em ==need and want the same range of subjects that older people do== → **C** (thơ hợp mọi lứa tuổi). __mẹo__: việc đến trường (A) chỉ là bối cảnh.",
-    "choices": 3
+    "n": 12,
+    "type": "gap",
+    "answer": "chemistry",
+    "accept": [],
+    "explain_vi": "==our chemistry teacher came and told everyone about what's really in shampoo== → **chemistry**."
+   },
+   {
+    "n": 13,
+    "type": "gap",
+    "answer": "marketing",
+    "accept": [],
+    "explain_vi": "==my dad's in marketing, I guess that's the department I'd rather end up in== → **marketing**. __Mẹo: cô \"not that good at sciences\".__"
+   },
+   {
+    "n": 14,
+    "type": "gap",
+    "answer": "costume design",
+    "accept": [
+     "costume",
+     "costumes"
+    ],
+    "explain_vi": "==Steve did one in costume design but didn't have the patience for it== → **costume design**."
+   },
+   {
+    "n": 15,
+    "type": "gap",
+    "answer": "lipstick",
+    "accept": [
+     "lipsticks"
+    ],
+    "explain_vi": "==Steve used her lipstick== → **lipstick**."
+   },
+   {
+    "n": 16,
+    "type": "gap",
+    "answer": "lighting",
+    "accept": [],
+    "explain_vi": "==we both learnt a lot from the one on lighting== → **lighting**."
+   },
+   {
+    "n": 17,
+    "type": "gap",
+    "answer": "fashion",
+    "accept": [],
+    "explain_vi": "==he'd be more interested in going into fashion== → **fashion**."
+   },
+   {
+    "n": 18,
+    "type": "gap",
+    "answer": "advertising agency",
+    "accept": [
+     "advertising agent",
+     "an advertising agency"
+    ],
+    "explain_vi": "==also to a local advertising agency, and it's them that's taking us both on== → **advertising agency**."
    }
   ]
  },
  "11": {
   "exam": "B2 First",
   "level": "B2",
-  "test": "Sample Test 1",
-  "part": "1 · câu 5–8",
-  "topic_vi": "Đoạn ngắn: phim tài liệu, trận khúc côn cầu, nhà hàng, bản tin",
-  "instructions_vi": "Nghe 4 đoạn ngắn độc lập (câu 5–8), mỗi đoạn chọn A, B hoặc C.",
-  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-Listening.pdf",
-  "paper_page": 3,
-  "paper_hint": "Part 1 ở trang 3 của file PDF",
-  "key_url": "https://www.cambridgeenglish.org/Images/697492-b2-first-listening-sample-1-answer-key.pdf",
-  "yt": "ot8Smj3p_bg",
-  "yt_title": "Cambridge B2 First Certificate Listening Sample Test 1 - I",
-  "yt_channel": "Cambridge spell book",
-  "start": 391,
-  "end": 714,
+  "test": "Test 3",
+  "part": "3",
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "Năm người kể lời khuyên họ đã nhận",
+  "instructions_vi": "Đọc ý A–H trên video, chọn việc mỗi người được khuyên làm (câu 19–23), có 3 ý thừa.",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "ltzIdfVMnew",
+  "yt_title": "Full FCE Listening Test 3 with answers",
+  "yt_channel": "Viet FCE",
+  "start": 1252,
+  "end": 1700,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
-    "n": 5,
+    "n": 19,
     "type": "mcq",
+    "choices": 8,
+    "answer": 3,
+    "explain_vi": "Người 1: ==he made me see it was better to get out and see something of the world== → **D** (đổi kế hoạch)."
+   },
+   {
+    "n": 20,
+    "type": "mcq",
+    "choices": 8,
+    "answer": 1,
+    "explain_vi": "Người 2: ==I wasn't going to agree, but my mom said I should, so I went== → **B** (nhận lời)."
+   },
+   {
+    "n": 21,
+    "type": "mcq",
+    "choices": 8,
+    "answer": 5,
+    "explain_vi": "Người 3: ==my friend Diana said I should accept that it just looked stupid== → **F** (nhận mình sai)."
+   },
+   {
+    "n": 22,
+    "type": "mcq",
+    "choices": 8,
     "answer": 2,
-    "explain_vi": "==It was a bit short on facts though, wasn't it.== → **C** (thiếu thông tin). __mẹo__: ==hard to feel cheerful== nói về cuộc sống nơi đó, không phải chương trình buồn (B).",
-    "choices": 3
+    "explain_vi": "Người 4: ==make a list of everyone… and then to ask them all to my room for a party== → **C** (mời)."
    },
    {
-    "n": 6,
+    "n": 23,
     "type": "mcq",
+    "choices": 8,
     "answer": 0,
-    "explain_vi": "==I wouldn't have missed it for the world.== → **A** (vui vì được trải nghiệm). __mẹo__: ==I wish I'd brought my thicker coat== cho thấy cô KHÔNG mặc đủ ấm (B sai).",
-    "choices": 3
-   },
-   {
-    "n": 7,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==And so visually appealing on the plate.== → **A** (cách trình bày món). __mẹo__: không khí sôi động (B) chỉ một người khen.",
-    "choices": 3
-   },
-   {
-    "n": 8,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==there has been major disruption to rail services this morning== → **A** (tin giao thông). __mẹo__: tuyết, bão tuyết là nguyên nhân, không phải dự báo thời tiết (B).",
-    "choices": 3
+    "explain_vi": "Người 5: ==just go and say you are sorry== → **A** (xin lỗi). __Mẹo: \"admit a mistake\" (F) gần nghĩa nhưng đã dùng cho người 3.__"
    }
   ]
  },
  "12": {
   "exam": "B2 First",
   "level": "B2",
-  "test": "Sample Test 1",
-  "part": "2",
-  "topic_vi": "Gấu mắt kính (spectacled bear)",
-  "instructions_vi": "Nghe Angela nói về loài gấu mắt kính; điền một từ hoặc cụm ngắn vào câu 9–18.",
-  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-Listening.pdf",
-  "paper_page": 4,
-  "paper_hint": "Part 2 ở trang 4 của file PDF",
-  "key_url": "https://www.cambridgeenglish.org/Images/697492-b2-first-listening-sample-1-answer-key.pdf",
-  "yt": "ot8Smj3p_bg",
-  "yt_title": "Cambridge B2 First Certificate Listening Sample Test 1 - I",
-  "yt_channel": "Cambridge spell book",
-  "start": 714,
-  "end": 1304,
+  "test": "Test 3",
+  "part": "4",
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "Phỏng vấn Steffi Smeeton về chuyến đạp xe theo nhóm",
+  "instructions_vi": "Đọc câu hỏi trên video, nghe phỏng vấn, chọn A, B hoặc C (câu 24–30).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "ltzIdfVMnew",
+  "yt_title": "Full FCE Listening Test 3 with answers",
+  "yt_channel": "Viet FCE",
+  "start": 1700,
+  "end": 2178,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
-    "n": 9,
-    "type": "gap",
-    "answer": "name",
-    "explain_vi": "==I thought it was such a great name!== → **name**. __mẹo__: điều làm Angela chú ý đầu tiên là cái tên, không phải ngoại hình.",
-    "accept": [
-     "name",
-     "great name",
-     "a great name"
-    ]
+    "n": 24,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==It sounded just the sort of fun thing I was looking for== → **C**."
    },
    {
-    "n": 10,
-    "type": "gap",
-    "answer": "chest",
-    "explain_vi": "==they can extend as far as the bear's cheeks or even chest== → **chest**. __mẹo__: mắt và má đã có sẵn trong câu hỏi, phải điền chỗ còn lại.",
-    "accept": [
-     "chest"
-    ]
+    "n": 25,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==I was thinking it might become more important in my life in some way== → **A**."
    },
    {
-    "n": 11,
-    "type": "gap",
-    "answer": "northern",
-    "explain_vi": "==in northern parts of Argentina and eastern Panama== → **northern**. __mẹo__: eastern đi với Panama, không phải Argentina.",
-    "accept": [
-     "northern"
-    ]
+    "n": 26,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==he still felt enthusiastic, and even suggested he might join me== → **B**."
    },
    {
-    "n": 12,
-    "type": "gap",
-    "answer": "forests",
-    "explain_vi": "==They are most commonly found in forests, though.== → **forests**. __mẹo__: sa mạc, núi cao là nơi có thể gặp, không phải thường gặp.",
-    "accept": [
-     "forests"
-    ]
+    "n": 27,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==a couple of them had obviously done that sort of thing before== → **C**."
    },
    {
-    "n": 13,
-    "type": "gap",
-    "answer": "winter",
-    "explain_vi": "==they don't sleep all through the winter as many other types of bear do== → **winter**. __mẹo__: khác biệt là không ngủ đông.",
-    "accept": [
-     "winter",
-     "the winter"
-    ]
+    "n": 28,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==several people were taking photos… and agreed to email those to everyone== → **B**."
    },
    {
-    "n": 14,
-    "type": "gap",
-    "answer": "humans",
-    "explain_vi": "==what I find really sad is the fact that humans destroy their habitat== → **humans**. __mẹo__: sư tử núi, báo đốm là kẻ thù tự nhiên, không làm cô buồn.",
-    "accept": [
-     "humans",
-     "human",
-     "the humans",
-     "some humans",
-     "the human",
-     "some human"
-    ]
+    "n": 29,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==maybe that'll carry over into the rest of life too== (bớt vội vàng) → **C**."
    },
    {
-    "n": 15,
-    "type": "gap",
-    "answer": "berries",
-    "explain_vi": "==their normal diet is tree bark and berries== → **berries**. __mẹo__: mật ong chỉ ăn ==On rare occasions==.",
-    "accept": [
-     "berries"
-    ]
-   },
-   {
-    "n": 16,
-    "type": "gap",
-    "answer": "platform",
-    "explain_vi": "==they make a platform – why?== → **platform**. __mẹo__: chi tiết ngồi trên cây nhiều ngày dẫn tới đáp án.",
-    "accept": [
-     "platform",
-     "a platform",
-     "the platform"
-    ]
-   },
-   {
-    "n": 17,
-    "type": "gap",
-    "answer": "mice",
-    "explain_vi": "==they like small mice best if they can get them!== → **mice**. __mẹo__: chim, côn trùng cũng ăn nhưng không thích bằng.",
-    "accept": [
-     "mice",
-     "small mice",
-     "little mice"
-    ]
-   },
-   {
-    "n": 18,
-    "type": "gap",
-    "answer": "diary",
-    "explain_vi": "==has published a very funny diary of his time there== → **diary**. __mẹo__: ==funny== khớp với amusing trong câu hỏi.",
-    "accept": [
-     "diary",
-     "funny diary",
-     "a diary",
-     "a funny diary"
-    ]
+    "n": 30,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==but first I have to go on a ten-kilometre running race== → **A**. __Mẹo: bay và đi thuyền là các việc sau đó.__"
    }
   ]
  },
  "13": {
   "exam": "B2 First",
   "level": "B2",
-  "test": "Sample Test 1",
-  "part": "3",
-  "topic_vi": "Năm người kể chuyến thăm một thành phố",
-  "instructions_vi": "Nghe 5 người kể về chuyến thăm thành phố; chọn điều mỗi người thích nhất (câu 19–23) trong A–H, có 3 ý thừa.",
-  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-Listening.pdf",
-  "paper_page": 5,
-  "paper_hint": "Part 3 ở trang 5 của file PDF",
-  "key_url": "https://www.cambridgeenglish.org/Images/697492-b2-first-listening-sample-1-answer-key.pdf",
-  "yt": "EmPLTJzixxQ",
-  "yt_title": "Cambridge B2 First Certificate Listening Sample Test 1 - II",
-  "yt_channel": "Cambridge spell book",
-  "start": 0,
-  "end": 470,
+  "test": "Test 4",
+  "part": "2",
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "Carly kể về nghề nhảy đường phố",
+  "instructions_vi": "Đọc các câu trên video, điền một từ hoặc cụm ngắn nghe được (câu 9–18).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "vqklUShe2jk",
+  "yt_title": "Full FCE Listening Test 4 with answers",
+  "yt_channel": "Viet FCE",
+  "start": 715,
+  "end": 1238,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
-    "n": 19,
-    "type": "mcq",
-    "answer": 6,
-    "explain_vi": "Người 1: ==We were spoilt for choice.== (nhiều hoạt động giải trí) → **G**. __mẹo__: ==shops and markets== được nhắc trước nhưng không phải điều thích nhất (C).",
-    "choices": 8
+    "n": 9,
+    "type": "gap",
+    "answer": "gymnastics",
+    "accept": [
+     "gymnastic"
+    ],
+    "explain_vi": "==I did a bit of gymnastics at school, that was useful== → **gymnastics**. __Mẹo: nhà nghèo nên không học được lớp múa.__"
    },
    {
-    "n": 20,
-    "type": "mcq",
-    "answer": 1,
-    "explain_vi": "Người 2: ==impressed by the forests and mountains around the city== → **B**. __mẹo__: ==too lazy to go to the famous markets== loại C.",
-    "choices": 8
+    "n": 10,
+    "type": "gap",
+    "answer": "culture",
+    "accept": [
+     "my culture"
+    ],
+    "explain_vi": "==you could say that it was my culture, that's what I always tell people== → **culture**."
    },
    {
-    "n": 21,
-    "type": "mcq",
-    "answer": 0,
-    "explain_vi": "Người 3: ==I was really impressed that they were always on time== (xe công cộng) → **A**. __mẹo__: ==didn't really understand the city plan== loại E.",
-    "choices": 8
+    "n": 11,
+    "type": "gap",
+    "answer": "windmill",
+    "accept": [
+     "a windmill",
+     "the windmill"
+    ],
+    "explain_vi": "==I saw my brother do a move called a windmill== → **windmill**."
    },
    {
-    "n": 22,
-    "type": "mcq",
-    "answer": 7,
-    "explain_vi": "Người 4: nơi ở ==they were all excellent== → **H**. __mẹo__: ==old traditional farms converted into guest houses== nói về chỗ ở, không phải kiến trúc (D).",
-    "choices": 8
+    "n": 12,
+    "type": "gap",
+    "answer": "4",
+    "accept": [
+     "four"
+    ],
+    "explain_vi": "==I teach anything from four upwards== → **4**. __Mẹo: 65 tuổi là học viên lớn tuổi nhất.__"
    },
    {
-    "n": 23,
-    "type": "mcq",
-    "answer": 5,
-    "explain_vi": "Người 5: ==some people were even prepared to walk with us to show us the way== → **F**. __mẹo__: ==we got lost several times== loại E.",
-    "choices": 8
+    "n": 13,
+    "type": "gap",
+    "answer": "Footsteps",
+    "accept": [
+     "footsteps",
+     "footstep"
+    ],
+    "explain_vi": "==I have my own performing arts school which is called Footsteps== → **Footsteps**."
+   },
+   {
+    "n": 14,
+    "type": "gap",
+    "answer": "frustrating",
+    "accept": [],
+    "explain_vi": "==sometimes can get a little bit frustrating== → **frustrating**."
+   },
+   {
+    "n": 15,
+    "type": "gap",
+    "answer": "government",
+    "accept": [
+     "the government"
+    ],
+    "explain_vi": "==the government is now taking notice== → **government**."
+   },
+   {
+    "n": 16,
+    "type": "gap",
+    "answer": "cool",
+    "accept": [],
+    "explain_vi": "==something that seemed to be quite a cool thing to do, and that's where street dance comes in== → **cool**."
+   },
+   {
+    "n": 17,
+    "type": "gap",
+    "answer": "discipline",
+    "accept": [
+     "discipline and ambition",
+     "ambition"
+    ],
+    "explain_vi": "==you must have discipline and ambition to become a professional== → **discipline** (và ambition). __Mẹo: chỗ trống thứ hai sau \"and\" là ambition, gõ một trong hai đều được.__"
+   },
+   {
+    "n": 18,
+    "type": "gap",
+    "answer": "Internet",
+    "accept": [
+     "internet",
+     "an internet search",
+     "the internet"
+    ],
+    "explain_vi": "==an internet search should get some results== → **Internet**."
    }
   ]
  },
  "14": {
   "exam": "B2 First",
   "level": "B2",
-  "test": "Sample Test 1",
+  "test": "Test 4",
   "part": "4",
-  "topic_vi": "Nghề làm ở phòng tranh thương mại",
-  "instructions_vi": "Nghe phỏng vấn Rachel về công việc ở phòng tranh; chọn A, B hoặc C cho câu 24–30.",
-  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-Listening.pdf",
-  "paper_page": 6,
-  "paper_hint": "Part 4 ở trang 6 của file PDF",
-  "key_url": "https://www.cambridgeenglish.org/Images/697492-b2-first-listening-sample-1-answer-key.pdf",
-  "yt": "EmPLTJzixxQ",
-  "yt_title": "Cambridge B2 First Certificate Listening Sample Test 1 - II",
-  "yt_channel": "Cambridge spell book",
-  "start": 470,
-  "end": 1051,
+  "tag": "DẠNG ĐỀ FCE",
+  "on_screen": true,
+  "topic_vi": "Phỏng vấn Sally Gartree, người tổ chức lễ hội âm nhạc Ixford",
+  "instructions_vi": "Đọc câu hỏi trên video, nghe phỏng vấn, chọn A, B hoặc C (câu 24–30).",
+  "paper_pdf": "",
+  "paper_page": null,
+  "paper_hint": "",
+  "key_url": "",
+  "yt": "vqklUShe2jk",
+  "yt_title": "Full FCE Listening Test 4 with answers",
+  "yt_channel": "Viet FCE",
+  "start": 1652,
+  "end": 2148,
   "max_plays": 1,
-  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+  "timing_verified": "Mốc giây: câu \"Part …/end of part …\" trên bảng lời thoại YouTube; đoạn chữa đáp án ở cuối video bị cắt bỏ. Đáp án: theo phần chữa ở cuối video (có trích lời thoại), em đối chiếu lại với lời thoại.",
+  "source_note": "Đề luyện tập dạng B2 First của kênh Viet FCE; kênh không ghi sách nguồn, nên đúng dạng đề nhưng chưa chắc là đề Cambridge.",
   "items": [
    {
     "n": 24,
     "type": "mcq",
+    "choices": 3,
     "answer": 2,
-    "explain_vi": "==it does describe the majority of what I do== → **C**. __mẹo__: ==you can practically invent your job title== là nói chung, không phải chức danh làm cô quan trọng hơn (A).",
-    "choices": 3
+    "explain_vi": "==I went absolutely every year after that; I was asking to join the team of organisers eight years ago== → **C**."
    },
    {
     "n": 25,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==they're not of the required standard== → **B** (chất lượng chưa đạt). __mẹo__: chủ đề (A) chỉ đôi khi là lý do.",
-    "choices": 3
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==fitted into just one field… That's been the biggest change== → **A**."
    },
    {
     "n": 26,
     "type": "mcq",
-    "answer": 2,
-    "explain_vi": "Thư từ chối ==explaining why we can't show their work== rồi họ gọi cãi: ==very hard to deal with== → **C**. __mẹo__: không bán được (A) không phải vấn đề chính.",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==more and more stalls appearing selling exotic foods… that's what a lot of the crowd have come for== → **B**."
    },
    {
     "n": 27,
     "type": "mcq",
-    "answer": 0,
-    "explain_vi": "==I try to find out what has influenced them== → **A** (thông tin nền về nghệ sĩ). __mẹo__: khách gọi đặt mua (B) là hệ quả, không phải mục đích.",
-    "choices": 3
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==It's the company that really makes it for me – everyone just seems so calm== → **B**."
    },
    {
     "n": 28,
     "type": "mcq",
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==There are systems in place to deal with routine jobs== → **A** (việc giấy tờ có người lo). __mẹo__: ==I can cope without an assistant== loại B.",
-    "choices": 3
+    "explain_vi": "==we could persuade more people to leave their cars at home, because congestion's a real headache== → **A**."
    },
    {
     "n": 29,
     "type": "mcq",
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==I phone round companies, explain what we do== → **A** (chủ động liên hệ). __mẹo__: khách gọi sau khi có catalogue không phải việc chính của cô (B).",
-    "choices": 3
+    "explain_vi": "==I think a lot of them feel that way about the festival== → **A**."
    },
    {
     "n": 30,
     "type": "mcq",
-    "answer": 1,
-    "explain_vi": "==The really rewarding thing for me is that you never know how a day is going to go.== → **B**. __mẹo__: người dễ mến, được ở cạnh tranh (A, C) chỉ là điểm cộng phụ.",
-    "choices": 3
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I personally wouldn't be in favour of expanding things further== → **C**. __Mẹo: có người muốn kéo dài thành bốn ngày, nhưng không phải Sally (A).__"
    }
   ]
  }
