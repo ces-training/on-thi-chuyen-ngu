@@ -79,22 +79,26 @@ function renderCamListen(box,R,saved,onDone){
    <p>${esc(R.instructions_vi||'')} ${MP===1?'Đoạn nghe đã có sẵn 2 lần đọc như đề thật, nên cậu chỉ bấm nghe <b>1 lượt</b> và nghe liền tới hết.':'Cậu được nghe <b>2 lần</b>.'}</p>
    ${pdf?`<p><a class="btn ghost" href="${esc(pdf)}" target="_blank" rel="noopener">📄 Mở đề gốc (PDF)</a> <span class="small muted">${R.paper_hint?esc(R.paper_hint)+'. ':''}Đọc câu hỏi ở đề gốc trước khi nghe, rồi chọn hoặc gõ đáp án vào ô bên dưới theo đúng số câu.</span></p>`:''}
    ${OS?'<p class="small"><b>Đề nằm ngay trong video:</b> bấm nghe là câu hỏi và tranh hiện ra, cậu vừa xem đề vừa nghe rồi chọn hoặc gõ đáp án ở dưới.</p>':''}
-   <div class="yl-stage">${useYt?`<div class="yl-frame${OS?' yl-big':''}"><div class="cam-player"></div><div class="yl-cover"><span style="font-size:2.2rem">🎧</span></div></div>`:`<audio class="cam-audio" preload="none" src="${esc(R.audio_mp3||'')}"></audio>`}
-     <div class="yl-ctl"><button type="button" class="btn hi cam-play">▶ Nghe lần 1</button>${OS?'<button type="button" class="btn ghost cam-fs" style="display:none">⛶ Phóng to đề</button>':''}<span class="small muted cam-msg"></span></div></div>
+   <div class="cam-body"><div class="yl-stage">${useYt?`<div class="yl-frame${OS?' yl-big':''}"><div class="cam-player"></div><div class="yl-cover"><span style="font-size:2.2rem">🎧</span></div></div>`:`<audio class="cam-audio" preload="none" src="${esc(R.audio_mp3||'')}"></audio>`}
+     <div class="yl-ctl"><button type="button" class="btn hi cam-play">▶ Nghe lần 1</button>${OS?'<button type="button" class="btn ghost cam-fs">⛶ Làm bài toàn màn hình</button>':''}<span class="small muted cam-msg"></span></div></div>
    <form class="cam-form">${R.items.map((it,i)=>`<div class="q cam-q" data-i="${i}"><div class="qhead"><span class="qnum">${it.n}</span><span class="small muted">Câu ${it.n} ${OS?'trên video':'trong đề gốc'}${it.label?' · '+esc(it.label):''}</span></div>
      ${it.type==='mcq'?`<div class="opts cam-opts">${Array.from({length:it.choices||3},(_,j)=>`<label class="opt"><input type="radio" name="cm${i}" value="${j}"><span><b>${L[j]}</b></span></label>`).join('')}</div>`:`<input type="text" name="cm${i}" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Gõ từ hoặc số cậu nghe được">`}
      <div class="yl-fb" hidden></div></div>`).join('')}
-     <div class="row"><button class="btn" type="submit">Chấm bài nghe</button><span class="small muted cam-res"></span></div></form>
+     <div class="row"><button class="btn" type="submit">Chấm bài nghe</button><span class="small muted cam-res"></span></div></form></div>
    <p class="small muted">${OS?`Video của kênh ${esc(R.yt_channel||'')} trên YouTube, trang chỉ nhúng để luyện nghe.`:'Đề, audio và đáp án: © Cambridge University Press & Assessment (đề mẫu công khai). Trang chỉ dẫn link tới đề gốc.'}</p>`;
   const btn=box.querySelector('.cam-play'),msg=box.querySelector('.cam-msg'),form=box.querySelector('.cam-form');
+  const fsb=box.querySelector('.cam-fs');
+  const focusOff=()=>{box.classList.remove('cam-focus');document.body.style.overflow='';if(fsb)fsb.textContent='⛶ Làm bài toàn màn hình';try{if(document.fullscreenElement===box)document.exitFullscreen()}catch(e){}};
+  if(fsb){fsb.onclick=()=>{if(box.classList.contains('cam-focus')){focusOff();return}box.classList.add('cam-focus');document.body.style.overflow='hidden';fsb.textContent='✕ Thu nhỏ lại';try{if(box.requestFullscreen)box.requestFullscreen().catch(()=>{})}catch(e){}};
+    document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&box.classList.contains('cam-focus'))focusOff()})}
   const label=()=>{if(graded){btn.textContent='▶ Nghe lại';btn.disabled=false;return}btn.textContent=MP===1?(plays?'Đã nghe xong':'▶ Bắt đầu nghe'):plays===0?'▶ Nghe lần 1':plays===1?'▶ Nghe lần 2':'Đã nghe 2 lần';btn.disabled=plays>=MP};
   const ended=()=>{if(!graded)plays++;msg.textContent=graded?'':plays>=MP?'Hết lượt nghe. Làm nốt rồi chấm bài nhé.':'Xong lần 1. Xem lại đáp án rồi nghe lần 2.';label()};
   const link=R.yt?`<a href="https://www.youtube.com/watch?v=${encodeURIComponent(R.yt)}&t=${R.start||0}s" target="_blank" rel="noopener">mở trên YouTube</a>`:`<a href="${esc(R.audio_mp3||'')}" target="_blank" rel="noopener">mở file nghe</a>`;
   btn.onclick=()=>{if(!graded&&plays>=MP)return;
     if(!useYt){const au=box.querySelector('.cam-audio');au.onended=ended;au.onerror=()=>{msg.innerHTML=`Chưa phát được, cậu ${link}.`};try{au.currentTime=0}catch(e){}au.play().then(()=>{msg.textContent='Đang phát…'}).catch(()=>{msg.innerHTML=`Chưa phát được, cậu ${link}.`});return}
     box.querySelector('.yl-cover').hidden=true;if(player&&player.seekTo){player.seekTo(R.start||0,true);player.playVideo();return}
-    msg.textContent='Đang tải…';ytApi().then(YT=>{player=new YT.Player(box.querySelector('.cam-player'),{videoId:R.yt,playerVars:{start:R.start||0,end:R.end||undefined,autoplay:1,controls:graded?1:0,rel:0,modestbranding:1,playsinline:1,disablekb:graded?0:1,cc_load_policy:0},
-      events:{onReady:ev=>{msg.textContent='';ev.target.playVideo();const fs=box.querySelector('.cam-fs'),fr=box.querySelector('.yl-frame iframe');if(fs&&fr&&fr.requestFullscreen){fs.style.display='';fs.onclick=()=>{try{fr.requestFullscreen()}catch(e){}}}},onStateChange:ev=>{if(ev.data===1)msg.textContent='Đang phát…';if(ev.data===0)ended()},onError:()=>{msg.innerHTML=`Video không phát được ở đây, cậu ${link}.`}}})}).catch(()=>{msg.innerHTML=`Chưa tải được trình phát, cậu ${link}.`})};
+    msg.textContent='Đang tải…';ytApi().then(YT=>{player=new YT.Player(box.querySelector('.cam-player'),{videoId:R.yt,playerVars:{start:R.start||0,end:R.end||undefined,autoplay:1,controls:graded?1:0,rel:0,modestbranding:1,playsinline:1,disablekb:graded?0:1,cc_load_policy:0,iv_load_policy:3,fs:0},
+      events:{onReady:ev=>{msg.textContent='';ev.target.playVideo()},onStateChange:ev=>{if(ev.data===1){msg.textContent='Đang phát…';noCC(ev.target)}if(ev.data===0)ended()},onError:()=>{msg.innerHTML=`Video không phát được ở đây, cậu ${link}.`}}})}).catch(()=>{msg.innerHTML=`Chưa tải được trình phát, cậu ${link}.`})};
   form.addEventListener('change',e=>{const o=e.target.closest('.opt');if(o)o.parentElement.querySelectorAll('.opt').forEach(x=>x.classList.toggle('sel',x.querySelector('input').checked))});
   const show=ans=>{let c=0;R.items.forEach((it,i)=>{const q=form.querySelector(`.cam-q[data-i="${i}"]`);const v=ans[i];let ok;
       if(it.type==='mcq'){ok=+v===it.answer;q.querySelectorAll('.opt').forEach(o=>{const inp=o.querySelector('input');inp.disabled=true;if(v!=null&&+inp.value===+v)inp.checked=true;o.classList.toggle('sel',v!=null&&+inp.value===+v);if(+inp.value===it.answer)o.classList.add('right');else if(v!=null&&+inp.value===+v)o.classList.add('wrong')})}
@@ -106,4 +110,11 @@ function renderCamListen(box,R,saved,onDone){
     graded=true;const c=show(ans);label();msg.textContent='';onDone&&onDone({correct:c,total:R.items.length,answers:ans})};
   if(saved){show(saved.answers||[]);graded=true}
   label()}
-(function(){const st=document.createElement('style');st.textContent=`.cam-form{display:flex;flex-direction:column;gap:10px;margin-top:8px}.cam-opts{display:flex;gap:10px;flex-wrap:wrap}.cam-opts .opt{min-width:64px;justify-content:center}.cam-q input[type=text]{max-width:280px}.yl-frame.yl-big{width:100%;max-width:880px}`;document.head.appendChild(st)})();
+function noCC(p){try{p.unloadModule('captions')}catch(e){}try{p.unloadModule('cc')}catch(e){}try{p.setOption('captions','track',{})}catch(e){}}
+(function(){const st=document.createElement('style');st.textContent=`.yl-big .yl-cover[hidden]{display:none}
+.cam-focus{position:fixed;inset:0;z-index:3000;margin:0;border-radius:0;overflow:auto;padding:12px 16px;background:var(--surface,#fff)}
+.cam-focus>p{display:none}.cam-focus .cam-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,360px);gap:18px;align-items:start}
+.cam-focus .yl-stage{position:sticky;top:0}.cam-focus .yl-frame.yl-big{max-width:none}
+.cam-focus .cam-form{max-height:calc(100vh - 110px);overflow:auto;margin-top:0;padding-right:6px}
+@media (max-width:760px){.cam-focus .cam-body{grid-template-columns:1fr}.cam-focus .yl-stage{z-index:2;background:var(--surface,#fff);padding:12px 0 6px;top:-12px}.cam-focus .cam-form{max-height:none}.cam-focus .yl-ctl{flex-direction:row;flex-wrap:wrap;align-items:center}.cam-focus .yl-ctl .btn{min-height:40px;padding:6px 12px}}
+.cam-form{display:flex;flex-direction:column;gap:10px;margin-top:8px}.cam-opts{display:flex;gap:10px;flex-wrap:wrap}.cam-opts .opt{min-width:64px;justify-content:center}.cam-q input[type=text]{max-width:280px}.yl-frame.yl-big{width:100%;max-width:880px}`;document.head.appendChild(st)})();
