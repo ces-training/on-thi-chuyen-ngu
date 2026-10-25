@@ -1,904 +1,865 @@
 {
  "1": {
-  "yt": "xwkYnggCwB8",
-  "start": 0,
-  "end": 180,
-  "title": "Minecraft Taught In School?!!",
-  "channel": "CBBC",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/minecraft-taught-school",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/minecraft-taught-school",
+  "exam": "A2 Flyers",
   "level": "A2",
-  "topic_match_vi": "Phóng sự về một trường ở Thuỵ Điển dạy bằng Minecraft trong giờ học: đúng chủ đề trường học, môn học.",
-  "intro_vi": "Cậu sẽ nghe phóng sự CBBC về một trường học ở Thuỵ Điển dùng trò chơi Minecraft trong giờ học; hãy chú ý cảm nhận của học sinh, việc các bạn làm trong game và ý kiến của thầy giáo.",
+  "test": "Sample Papers 2018 Volume 1 (Test 1)",
+  "part": "2",
+  "topic_vi": "Câu lạc bộ Thiên văn (Space Club) ở trường",
+  "instructions_vi": "Nghe cô giáo kể về Câu lạc bộ Thiên văn, viết một từ hoặc tên vào mỗi chỗ trống (1–5).",
+  "paper_pdf": "https://www.cambridgeenglish.org/fr/Images/flyers-sample-papers-2018-vol1.pdf",
+  "paper_page": 63,
+  "paper_hint": "Part 2 ở trang in số 63 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/fr/Images/flyers-sample-papers-2018-vol1.pdf#page=69",
+  "yt": "FTXQbVrkIAs",
+  "yt_title": "Flyers SAMPLE TESTS Volume 1 - Listening Test 1",
+  "yt_channel": "Lớp Học Thầy Mol",
+  "start": 291,
+  "end": 490,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "mcq",
-    "q": "How did one student feel about the Minecraft lessons at first?",
-    "options": [
-     "It felt kind of boring.",
-     "It felt a bit weird.",
-     "It felt very fun."
-    ],
-    "answer": 1,
-    "explain_vi": "Bạn học sinh nói ==\"It felt a bit weird at first\"== → **a bit weird**. __\"Kind of boring\" và \"very fun\" là lời của các bạn khác.__"
-   },
-   {
+    "n": 1,
     "type": "gap",
-    "q": "Students used Minecraft to solve real-life problems like ______.",
-    "answer": "recycling",
-    "accept": [],
-    "explain_vi": "Phóng viên nói ==\"solve real-life problems like recycling\"== → **recycling** (tái chế). __Nghe từ ngay sau \"like\"; \"city of the future\" là việc khác.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What does one student find kind of boring?",
-    "options": [
-     "designing a city",
-     "drawing pictures",
-     "building houses"
-    ],
-    "answer": 2,
-    "explain_vi": "Bạn ấy nói ==\"I do not enjoy just building houses\"== → **building houses**. __Thiết kế thành phố và vẽ có nhắc, nhưng không bị chê.__"
-   },
-   {
-    "type": "gap",
-    "q": "The teacher says many students are ______ in Minecraft.",
-    "answer": "expert",
+    "answer": "stars",
+    "explain_vi": "==they can learn about the stars== → **stars**. __Mẹo:__ kết bạn mới (make new friends) chỉ là lợi ích phụ.",
     "accept": [
-     "experts",
-     "an expert"
-    ],
-    "explain_vi": "Thầy giáo nói ==\"The children and the students are expert in Minecraft\"== → **expert** (rất giỏi). __Thầy thừa nhận học sinh giỏi game hơn giáo viên.__"
+     "stars",
+     "the stars",
+     "star"
+    ]
    },
    {
-    "type": "mcq",
-    "q": "What does the teacher say teachers have to do?",
-    "options": [
-     "accept it and focus on the task",
-     "keep video games out of lessons",
-     "learn more about the game first"
-    ],
-    "answer": 0,
-    "explain_vi": "Thầy nói ==\"you have to accept it and focus what your task is\"== → **accept it**. __\"Stay out of the classroom\" là ý của một số người khác.__"
+    "n": 2,
+    "type": "gap",
+    "answer": "moon",
+    "explain_vi": "==They look at the moon when there are no clouds== → **moon**. __Mẹo:__ stars là đáp án câu 1, không dùng lại.",
+    "accept": [
+     "moon",
+     "the moon"
+    ]
+   },
+   {
+    "n": 3,
+    "type": "gap",
+    "answer": "torch",
+    "explain_vi": "==it's a good idea to bring a torch== → **torch**. __Mẹo:__ hỏi giấy bút thì cô trả lời không cần.",
+    "accept": [
+     "torch",
+     "a torch",
+     "flashlight"
+    ]
+   },
+   {
+    "n": 4,
+    "type": "gap",
+    "answer": "DVDs",
+    "explain_vi": "==the club has some very interesting DVDs== → **DVD(s)**. __Mẹo:__ chương trình TV bị phủ định (No).",
+    "accept": [
+     "dvds",
+     "dvd",
+     "dvd's"
+    ]
+   },
+   {
+    "n": 5,
+    "type": "gap",
+    "answer": "Bailey",
+    "explain_vi": "Tên được đánh vần B-A-I-L-E-Y → **Bailey**. __Mẹo:__ Michael là tên học sinh đang hỏi, không phải người đến nói chuyện.",
+    "accept": [
+     "bailey",
+     "mr bailey"
+    ]
    }
   ]
  },
  "2": {
-  "yt": "n01HtEOA-sA",
-  "start": 0,
-  "end": 190,
-  "title": "Meet Great Britain's Junior Gymnastics star Scarlett | Newsround",
-  "channel": "BBC Newsround",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/meet-great-britains-junior-gymnastics-star-scarlett",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/meet-great-britains-junior-gymnastics-star-scarlett",
-  "level": "A2+",
-  "topic_match_vi": "Vận động viên thể dục dụng cụ nhí kể về buổi tập và việc cân bằng giữa tập luyện với học: sở thích, thể thao, thời gian rảnh.",
-  "intro_vi": "Cậu sẽ nghe Scarlett, vận động viên thể dục dụng cụ trẻ của đội tuyển Anh, kể về việc tập luyện; hãy chú ý điều cô từng sợ, điều cô thích nhất và các vận động viên cô ngưỡng mộ.",
+  "exam": "A2 Flyers",
+  "level": "A2",
+  "test": "Sample Papers 2018 Volume 1 (Test 1)",
+  "part": "3",
+  "topic_vi": "Chú Robert kể mua các đồ vật ở đâu",
+  "instructions_vi": "Nghe chú Robert kể, mỗi đồ vật (trống, thiên nga, quạt, sô-cô-la, găng tay) nối với nơi mua, chọn chữ A–H.",
+  "paper_pdf": "https://www.cambridgeenglish.org/fr/Images/flyers-sample-papers-2018-vol1.pdf",
+  "paper_page": 65,
+  "paper_hint": "Part 3 ở trang in số 65 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/fr/Images/flyers-sample-papers-2018-vol1.pdf#page=69",
+  "yt": "FTXQbVrkIAs",
+  "yt_title": "Flyers SAMPLE TESTS Volume 1 - Listening Test 1",
+  "yt_channel": "Lớp Học Thầy Mol",
+  "start": 511,
+  "end": 795,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 1,
     "type": "mcq",
-    "q": "What was Scarlett scared of when she was younger?",
-    "options": [
-     "going sideways on the vault",
-     "hanging on the bars all day",
-     "going backwards on the beam"
-    ],
-    "answer": 2,
-    "explain_vi": "Scarlett nói ==\"I was always scared to go backwards on the beam\"== → **backwards on the beam**. __Vault và bars có nhắc nhưng không phải nỗi sợ.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What does Scarlett like best about her gym?",
-    "options": [
-     "the coaches and the girls",
-     "the feeling of a new skill",
-     "showing her personality"
-    ],
-    "answer": 0,
-    "explain_vi": "Cô nói ==\"The best bit about the gym is all the coaches and the girls\"== → **coaches and girls**. __Kỹ năng mới làm cô vui, nhưng không phải \"best bit\".__"
-   },
-   {
-    "type": "mcq",
-    "q": "What was one of her proudest moments?",
-    "options": [
-     "her first time competing for GB",
-     "her first beam and floor finals",
-     "her first time at the Olympics"
-    ],
     "answer": 1,
-    "explain_vi": "Cô nói ==\"compete in my first-ever beam and floor finals\"== → **beam and floor finals**. __Thi cho đội GB ở giải quốc tế và Olympics chỉ là mơ ước.__"
+    "explain_vi": "Trống: ==at the airport, I found a shop that sold drums== → **B (sân bay)**. __Mẹo:__ nhà hát chỉ là nơi chú nghe nhạc.",
+    "choices": 8,
+    "label": "drums"
    },
    {
-    "type": "gap",
-    "q": "At the British Championships, she was one of the ______ in her age category.",
-    "answer": "youngest",
-    "accept": [],
-    "explain_vi": "Cô nói ==\"I was one of the youngest in my age category\"== → **youngest** (nhỏ tuổi nhất). __Đuôi -est là so sánh nhất.__"
+    "n": 2,
+    "type": "mcq",
+    "answer": 6,
+    "explain_vi": "Thiên nga: ==a little store there full of interesting things== → **G (cửa hàng nhỏ)**. __Mẹo:__ cuộc họp ở thị trấn chỉ là lý do chú đến đó.",
+    "choices": 8,
+    "label": "swan"
    },
    {
-    "type": "gap",
-    "q": "Georgia-Mae inspires her on the ______.",
-    "answer": "bars",
-    "accept": [
-     "bar",
-     "the bars"
-    ],
-    "explain_vi": "Cô nói ==\"Georgia-Mae on the bars\"== → **bars** (xà). __Jessica Gadirova là người cô ngưỡng mộ ở floor, đừng nhầm.__"
+    "n": 3,
+    "type": "mcq",
+    "answer": 7,
+    "explain_vi": "Quạt: ==When I was working in a castle== → **H (lâu đài)**. __Mẹo:__ chú định tặng bà, không phải mua cho bà.",
+    "choices": 8,
+    "label": "fan"
+   },
+   {
+    "n": 4,
+    "type": "mcq",
+    "answer": 5,
+    "explain_vi": "Sô-cô-la: ==from the hotel where I stayed last night== → **F (khách sạn)**. __Mẹo:__ quán cà phê ở London được nhắc nhưng không mua ở đó.",
+    "choices": 8,
+    "label": "chocolates"
+   },
+   {
+    "n": 5,
+    "type": "mcq",
+    "answer": 3,
+    "explain_vi": "Găng tay: ==I got them when I had to visit a factory== → **D (nhà máy)**. __Mẹo:__ được tặng khi ra về, vẫn ở nhà máy.",
+    "choices": 8,
+    "label": "gloves"
    }
   ]
  },
  "3": {
-  "yt": "0xmyLYK8wT4",
-  "start": 0,
-  "end": 165,
-  "title": "Plastic Ocean Campaigner - Behind the News",
-  "channel": "Behind the News",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/plastic-ocean-campaigner",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/plastic-ocean-campaigner",
+  "exam": "A2 Flyers",
   "level": "A2",
-  "topic_match_vi": "Cậu bé 12 tuổi làm phim kêu gọi bớt dùng nhựa để bảo vệ rùa biển: đúng chủ đề môi trường, rác thải nhựa.",
-  "intro_vi": "Cậu sẽ nghe phóng sự Behind the News (Úc) về một cậu bé chống rác nhựa đại dương; hãy chú ý điều cậu thấy ở bãi biển, việc cậu làm và lời kêu gọi của cậu.",
+  "test": "Sample Papers 2018 Volume 1 (Test 1)",
+  "part": "4",
+  "topic_vi": "Jack hỏi bà về công việc mới ở bảo tàng",
+  "instructions_vi": "Nghe Jack nói chuyện với bà, mỗi câu (1–5) chọn tranh đúng A, B hoặc C.",
+  "paper_pdf": "https://www.cambridgeenglish.org/fr/Images/flyers-sample-papers-2018-vol1.pdf",
+  "paper_page": 67,
+  "paper_hint": "Part 4 ở trang in số 67 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/fr/Images/flyers-sample-papers-2018-vol1.pdf#page=69",
+  "yt": "FTXQbVrkIAs",
+  "yt_title": "Flyers SAMPLE TESTS Volume 1 - Listening Test 1",
+  "yt_channel": "Lớp Học Thầy Mol",
+  "start": 814,
+  "end": 1234,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "gap",
-    "q": "Plastic Free Boy is ______ years old.",
-    "answer": "12",
-    "accept": [
-     "twelve"
-    ],
-    "explain_vi": "Phóng viên nói ==\"a 12-year-old on a mission\"== → **12**. __\"8 million tonnes\" là con số khác, nói sau.__"
-   },
-   {
+    "n": 1,
     "type": "mcq",
-    "q": "What did Arlian see at the beach a year ago?",
-    "options": [
-     "turtles being set free",
-     "plastic bags in the water",
-     "jellyfish on the wet sand"
-    ],
-    "answer": 0,
-    "explain_vi": "Arlian kể ==\"I saw three sea turtles getting released into the ocean\"== → **turtles being set free**. __Túi nhựa và sứa nói sau, khi giải thích rùa ăn nhầm.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What did Arlian ask his mum?",
-    "options": [
-     "why there was plastic on the beach",
-     "why turtles weren't in the sea yet",
-     "if they could take one home"
-    ],
-    "answer": 1,
-    "explain_vi": "Arlian hỏi ==\"Why aren't these animals in the ocean already?\"== → **why turtles weren't in the sea**. __Rác nhựa là điều cậu tìm ra sau đó.__"
-   },
-   {
-    "type": "gap",
-    "q": "Now Arlian has made his own ______ to help.",
-    "answer": "documentary",
-    "accept": [
-     "film",
-     "a documentary",
-     "a film",
-     "documentry"
-    ],
-    "explain_vi": "Phóng viên nói ==\"now he's made his own documentary to help\"== → **documentary** (phim tài liệu). __Arlian cũng gọi nó là \"a film\".__"
-   },
-   {
-    "type": "mcq",
-    "q": "What will happen if the ocean isn't clean, says Arlian?",
-    "options": [
-     "Sea turtles will not come back.",
-     "There will be less life on land.",
-     "Our water will not be clean."
-    ],
     "answer": 2,
-    "explain_vi": "Arlian nói ==\"if this ocean isn't clean… our water will not be clean\"== → **our water will not be clean**. __\"Life on land\" là câu so sánh ngay trước.__"
+    "explain_vi": "==No, it's the one in the park== → **C (bảo tàng trong công viên)**. __Mẹo:__ cạnh trường và đối diện bệnh viện đều bị gạt.",
+    "choices": 3
+   },
+   {
+    "n": 2,
+    "type": "mcq",
+    "answer": 1,
+    "explain_vi": "==I like finding out about different things most of all== → **B (tìm hiểu đồ vật)**. __Mẹo:__ vẽ và cầm đồ lên được hỏi nhưng không phải thích nhất.",
+    "choices": 3
+   },
+   {
+    "n": 3,
+    "type": "mcq",
+    "answer": 1,
+    "explain_vi": "==a boat that sailed all round the world== → **B (con thuyền)**. __Mẹo:__ hỏi khủng long thì bà nói không có.",
+    "choices": 3
+   },
+   {
+    "n": 4,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==show children who visit the museum interesting things== → **A (giới thiệu cho trẻ em)**. __Mẹo:__ bán đồ ăn là điều bà từng muốn làm.",
+    "choices": 3
+   },
+   {
+    "n": 5,
+    "type": "mcq",
+    "answer": 2,
+    "explain_vi": "==I'll take the train. That's the best way== → **C (tàu hỏa)**. __Mẹo:__ xe buýt quá chậm, taxi quá đắt.",
+    "choices": 3
    }
   ]
  },
  "4": {
-  "yt": "HeTPuCDRaag",
-  "start": 0,
-  "end": 170,
-  "title": "Robots That Cook, Clean & Chat?! | Future Tech on Ferries, in Homes & Shops | Newsround",
-  "channel": "BBC Newsround",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/robots-cook-clean-chat",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/robots-cook-clean-chat",
-  "level": "A2+",
-  "topic_match_vi": "Phóng sự về rô-bốt trên phà, rô-bốt làm việc nhà và cửa hàng rô-bốt: đúng chủ đề công nghệ.",
-  "intro_vi": "Cậu sẽ nghe phóng sự Newsround về các loại rô-bốt mới trên phà, trong nhà và trong cửa hàng; hãy chú ý việc từng rô-bốt làm và cảm nhận của phóng viên.",
+  "exam": "A2 Flyers",
+  "level": "A2",
+  "test": "Sample Papers 2018 Volume 2 (Test 2)",
+  "part": "2",
+  "topic_vi": "Gia đình chuyển đến ngôi nhà mới",
+  "instructions_vi": "Nghe cuộc trò chuyện về ngôi nhà mới, viết một từ (hoặc tên đánh vần) vào mỗi chỗ trống (1–5). Video đọc một lần, cậu được bấm nghe 2 lần như đề thật.",
+  "paper_pdf": "https://www.cambridgeenglish.org/Images/563753-cambridge-english-young-learners-sample-papers-2018-volume-2.pdf",
+  "paper_page": 64,
+  "paper_hint": "Part 2 ở trang in số 64 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/Images/563753-cambridge-english-young-learners-sample-papers-2018-volume-2.pdf (marking key tr.70)",
+  "yt": "fcseJaESOsk",
+  "yt_title": "Flyers SAMPLE TESTS Volume 2 - Listening Test 2",
+  "yt_channel": "Lớp Học Thầy Mol",
+  "start": 201,
+  "end": 353,
+  "max_plays": 2,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "mcq",
-    "q": "What is Kai's job on the ferry?",
-    "options": [
-     "making cups of coffee",
-     "cleaning the bathrooms",
-     "showing people around"
-    ],
-    "answer": 2,
-    "explain_vi": "Phóng viên nói ==\"his job is to show people around and to help them\"== → **showing people around**. __Pha cà phê, lau nhà tắm là việc của rô-bốt khác.__"
-   },
-   {
+    "n": 1,
     "type": "gap",
-    "q": "They put a ______ on the robot so it seems less weird.",
-    "answer": "jacket",
+    "answer": "Princes",
+    "explain_vi": "Tên phố được đánh vần ==It's P-R-I-N-C-E-S== → **Princes**. __Mẹo:__ chép đúng từng chữ cái nghe được, không thêm dấu nháy.",
     "accept": [
-     "a jacket"
-    ],
-    "explain_vi": "Phóng viên đùa ==\"they've clearly just stuck a jacket on it\"== → **jacket** (áo khoác). __Mặc áo cho rô-bốt đỡ \"weird\".__"
+     "princes",
+     "princes street"
+    ]
    },
    {
-    "type": "mcq",
-    "q": "What does the reporter say about the robots in China?",
-    "options": [
-     "This is way too weird for me.",
-     "I might need one of these.",
-     "This is just a test for now."
-    ],
-    "answer": 1,
-    "explain_vi": "Phóng viên nói ==\"Maybe I need to get one of these\"== → **muốn có một con**. __\"Too weird\" là về cái đầu biết nói; \"a test\" là về Kai.__"
-   },
-   {
+    "n": 2,
     "type": "gap",
-    "q": "The owners say it is the first-ever robot ______.",
-    "answer": "shop",
+    "answer": "library",
+    "explain_vi": "==No, it isn't. It's near the library== → **library**. __Mẹo:__ ga tàu được bố hỏi trước nhưng bị phủ định.",
     "accept": [
-     "store"
-    ],
-    "explain_vi": "Phóng viên nói ==\"the first-ever robot shop\"== → **shop** (cửa hàng). __Câu sau có \"They don't just sell…\" – sell là bán.__"
+     "library",
+     "the library"
+    ]
    },
    {
-    "type": "mcq",
-    "q": "Which robot is too weird for the reporter?",
-    "options": [
-     "the one that chats to you",
-     "the one that gives massages",
-     "the one that makes coffee"
-    ],
-    "answer": 0,
-    "explain_vi": "Phóng viên nói ==\"a head to chat to you… is just way too weird\"== → **cái đầu biết trò chuyện**. __Rô-bốt mát-xa, pha cà phê chỉ được giới thiệu.__"
+    "n": 3,
+    "type": "gap",
+    "answer": "downstairs",
+    "explain_vi": "==a big one upstairs and a smaller one downstairs== → **downstairs**. __Mẹo:__ upstairs là phòng tắm lớn.",
+    "accept": [
+     "downstairs"
+    ]
+   },
+   {
+    "n": 4,
+    "type": "gap",
+    "answer": "swing",
+    "explain_vi": "==No, Dad. There's a swing in it== → **swing**. __Mẹo:__ bể bơi được hỏi trước nhưng không có.",
+    "accept": [
+     "swing",
+     "a swing"
+    ]
+   },
+   {
+    "n": 5,
+    "type": "gap",
+    "answer": "basement",
+    "explain_vi": "==It's in the basement== → **basement**. __Mẹo:__ đừng nhầm với downstairs của câu 3.",
+    "accept": [
+     "basement",
+     "the basement"
+    ]
    }
   ]
  },
  "5": {
-  "yt": "Pq9aYjqyyY8",
-  "start": 0,
-  "end": 150,
-  "title": "Yoga Day - Behind the News",
-  "channel": "Behind the News",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/yoga-day",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/yoga-day",
+  "exam": "A2 Flyers",
   "level": "A2",
-  "topic_match_vi": "Học sinh tập yoga và chuyên gia nói về lợi ích sức khoẻ: đúng chủ đề sức khoẻ, tập luyện.",
-  "intro_vi": "Cậu sẽ nghe phóng sự Behind the News về Ngày Quốc tế Yoga ở một trường học; hãy chú ý cảm nhận của từng bạn, lịch sử của yoga và lời cô giáo.",
+  "test": "Sample Papers 2018 Volume 2 (Test 2)",
+  "part": "3",
+  "topic_vi": "Mỗi người trong lớp vẽ đã vẽ bức tranh nào",
+  "instructions_vi": "Nghe cuộc trò chuyện, mỗi người (1–5) nối với bức tranh họ vẽ, chọn chữ A–H. Video đọc một lần, cậu được bấm nghe 2 lần như đề thật.",
+  "paper_pdf": "https://www.cambridgeenglish.org/Images/563753-cambridge-english-young-learners-sample-papers-2018-volume-2.pdf",
+  "paper_page": 65,
+  "paper_hint": "Part 3 ở trang in số 65 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/Images/563753-cambridge-english-young-learners-sample-papers-2018-volume-2.pdf (marking key tr.70)",
+  "yt": "fcseJaESOsk",
+  "yt_title": "Flyers SAMPLE TESTS Volume 2 - Listening Test 2",
+  "yt_channel": "Lớp Học Thầy Mol",
+  "start": 353,
+  "end": 570,
+  "max_plays": 2,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 1,
     "type": "mcq",
-    "q": "How often do most kids at this school do yoga?",
-    "options": [
-     "every day",
-     "every week",
-     "once a year"
-    ],
-    "answer": 1,
-    "explain_vi": "Phóng viên nói ==\"most kids do yoga every week\"== → **every week**. __Nhóm bạn trong bài thì mới tập lần đầu.__"
+    "answer": 7,
+    "explain_vi": "Bà Cook: ==I like this picture of the old castle== → **H**. __Mẹo:__ chuyện trời mưa, khách sạn chỉ là nơi vẽ xong, không phải chủ đề.",
+    "choices": 8,
+    "label": "Mrs Cook"
    },
    {
+    "n": 2,
     "type": "mcq",
-    "q": "Why does one student think yoga is kind of cool?",
-    "options": [
-     "They do lots of poses and steps.",
-     "It takes all their stress away.",
-     "They think about their breathing."
-    ],
-    "answer": 0,
-    "explain_vi": "Bạn ấy nói ==\"kind of cool because we do all these poses and steps\"== → **poses and steps**. __Stress và breathing là lời hai bạn khác.__"
-   },
-   {
-    "type": "gap",
-    "q": "Yoga got very popular in Western countries in the ______.",
-    "answer": "1980s",
-    "accept": [
-     "1980's",
-     "1980",
-     "80s",
-     "eighties",
-     "the 1980s"
-    ],
-    "explain_vi": "Phóng viên nói ==\"massive popularity in Western countries in the 1980s\"== → **1980s**. __2015 là năm Liên Hợp Quốc dành riêng một ngày cho yoga.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What does the teacher say a lot of kids are?",
-    "options": [
-     "really in their bodies",
-     "calm and less anxious",
-     "quite disconnected"
-    ],
     "answer": 2,
-    "explain_vi": "Cô giáo nói ==\"A lot of kids are quite disconnected\"== → **quite disconnected** (mất kết nối). __\"Calm\", \"in their bodies\" là điều yoga giúp đạt được.__"
+    "explain_vi": "Bà West: ==The fields look lovely in the summer sun== → **C**. __Mẹo:__ tranh không có nhà, không có phố; trông như chỗ picnic.",
+    "choices": 8,
+    "label": "Mrs West"
    },
    {
-    "type": "gap",
-    "q": "The reporter might stick to some of the ______ poses for a while.",
-    "answer": "easier",
-    "accept": [],
-    "explain_vi": "Phóng viên nói ==\"I might just stick to some of the easier poses\"== → **easier** (dễ hơn). __Phóng viên tự đùa là mình chưa giỏi.__"
+    "n": 3,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "Cô Richards: tranh ==A Day at the Races==, lần đầu vẽ ngựa → **A**. __Mẹo:__ nghe tên tranh để suy ra chủ đề.",
+    "choices": 8,
+    "label": "Miss Richards"
+   },
+   {
+    "n": 4,
+    "type": "mcq",
+    "answer": 3,
+    "explain_vi": "Ông Bridges: ==But snow isn't easy to paint== → **D** (tuyết, trẻ em vui chơi). __Mẹo:__ chú ý chi tiết trẻ em để chọn đúng tranh tuyết.",
+    "choices": 8,
+    "label": "Mr Bridges"
+   },
+   {
+    "n": 5,
+    "type": "mcq",
+    "answer": 4,
+    "explain_vi": "Bà Hill: ==Who's the person in the lake?== – đó là chồng bà → **E**. __Mẹo:__ tranh trái cây (B) là ví dụ của ông Green.",
+    "choices": 8,
+    "label": "Mrs Hill"
    }
   ]
  },
  "6": {
-  "yt": "brGtv7KLDwM",
-  "start": 0,
-  "end": 120,
-  "title": "Meet the kids racing electric cars at Rockingham | Newsround",
-  "channel": "BBC Newsround",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/meet-kids-racing-electric-cars",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/meet-kids-racing-electric-cars",
-  "level": "A2+",
-  "topic_match_vi": "Các bạn nhỏ tự lắp và đua xe điện: hàng xóm gần của chủ đề du lịch và đi lại (phương tiện giao thông).",
-  "intro_vi": "Cậu sẽ nghe phóng sự Newsround về các bạn nhỏ tự làm và đua xe điện ở trường đua Rockingham; hãy chú ý thời gian, giá tiền và cách chiếc xe hoạt động.",
+  "exam": "A2 Flyers",
+  "level": "A2",
+  "test": "Sample Papers 2018 Volume 2 (Test 2)",
+  "part": "4",
+  "topic_vi": "Frank và mẹ chuẩn bị đi nghỉ",
+  "instructions_vi": "Nghe Frank và mẹ chuẩn bị đi nghỉ, mỗi câu (1–5) chọn tranh đúng A, B hoặc C. Video đọc một lần, cậu được bấm nghe 2 lần như đề thật.",
+  "paper_pdf": "https://www.cambridgeenglish.org/Images/563753-cambridge-english-young-learners-sample-papers-2018-volume-2.pdf",
+  "paper_page": 67,
+  "paper_hint": "Part 4 ở trang in số 67 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/Images/563753-cambridge-english-young-learners-sample-papers-2018-volume-2.pdf (marking key tr.70)",
+  "yt": "fcseJaESOsk",
+  "yt_title": "Flyers SAMPLE TESTS Volume 2 - Listening Test 2",
+  "yt_channel": "Lớp Học Thầy Mol",
+  "start": 570,
+  "end": 790,
+  "max_plays": 2,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 1,
     "type": "mcq",
-    "q": "When did the team get their car?",
-    "options": [
-     "about six months ago",
-     "about four months ago",
-     "about two weeks ago"
-    ],
-    "answer": 0,
-    "explain_vi": "Bạn nhỏ nói ==\"We first got the car about six months ago\"== → **six months**. __\"Four\" là số pin, nói ngay sau.__"
-   },
-   {
-    "type": "gap",
-    "q": "They have to fix the ______ and put the engines in.",
-    "answer": "tyres",
-    "accept": [
-     "tyre",
-     "tires",
-     "tire",
-     "the tyres"
-    ],
-    "explain_vi": "Bạn nhỏ nói ==\"We have to fix the tyres, put in the engines\"== → **tyres** (lốp xe). __Viết kiểu Mỹ \"tires\" cũng được.__"
-   },
-   {
-    "type": "gap",
-    "q": "Each battery costs about £______.",
-    "answer": "200",
-    "accept": [
-     "two hundred"
-    ],
-    "explain_vi": "Bạn nhỏ nói ==\"They're about 200 quid each\"== → **200**. __\"Quid\" là cách nói thân mật của \"pound\".__"
-   },
-   {
-    "type": "mcq",
-    "q": "Who planned and built the car?",
-    "options": [
-     "their science teachers",
-     "a big car company",
-     "the kids on the team"
-    ],
     "answer": 2,
-    "explain_vi": "Các bạn nói ==\"We designed it and, like, planned it all together\"== và ==\"We did it all by ourself\"== → **the kids**."
+    "explain_vi": "==I want to take that black one== → **C (áo đen)**. __Mẹo:__ áo kẻ sọc bị chê ==too small now==.",
+    "choices": 3
    },
    {
+    "n": 2,
     "type": "mcq",
-    "q": "What does the button on the steering wheel do?",
-    "options": [
-     "It turns the front wheels.",
-     "It keeps the car moving.",
-     "It spins the big gear."
-    ],
+    "answer": 0,
+    "explain_vi": "==here they are – on the desk, next to this book!== → **A (trên bàn học)**. __Mẹo:__ cái giá trong phòng là chỗ mẹ đoán sai.",
+    "choices": 3
+   },
+   {
+    "n": 3,
+    "type": "mcq",
+    "answer": 2,
+    "explain_vi": "==meet Dad at the airport at 1.30. No later.== → **C (1 giờ 30)**. __Mẹo:__ 12 giờ là lúc taxi đến nhà.",
+    "choices": 3
+   },
+   {
+    "n": 4,
+    "type": "mcq",
+    "answer": 2,
+    "explain_vi": "==her son, Michael, is going to do it== → **C (Michael)**. __Mẹo:__ ông (Grandpa) được hỏi tới nhưng không trông thú cưng.",
+    "choices": 3
+   },
+   {
+    "n": 5,
+    "type": "mcq",
     "answer": 1,
-    "explain_vi": "Bạn nhỏ nói ==\"that is the one which will keep us moving\"== → **keeps the car moving**. __Động cơ làm quay bánh răng; bánh trước tự quay hướng.__"
+    "explain_vi": "==We can have it on the plane== → **B (trên máy bay)**. __Mẹo:__ mua đồ ăn ở sân bay bị gạt vì còn quá sớm.",
+    "choices": 3
    }
   ]
  },
  "7": {
-  "yt": "CRRX-PBeCU4",
-  "start": 0,
-  "end": 170,
-  "title": "1millionpickupcampaignvideo",
-  "channel": "Be Plastic Clever",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/one-million-plastic-pick",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/one-million-plastic-pick",
+  "exam": "A2 Key for Schools",
   "level": "A2",
-  "topic_match_vi": "Ôn buổi 3 (môi trường: rác nhựa) và buổi 4 (công nghệ: dùng app để ghi lại rác nhặt được).",
-  "intro_vi": "Cậu sẽ nghe Amy và Ali của nhóm Kids Against Plastic kêu gọi mọi người nhặt rác nhựa; hãy chú ý các con số, lí do hai bạn vẫn hi vọng và cách tham gia.",
+  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "part": "1",
+  "topic_vi": "5 đoạn hội thoại ngắn đời thường (tiệc, lớp vẽ, công viên trượt ván, vé xem phim, đón ở sân bay)",
+  "instructions_vi": "Nghe 5 đoạn hội thoại ngắn, mỗi câu chọn tranh đúng A, B hoặc C.",
+  "paper_pdf": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf",
+  "paper_page": 31,
+  "paper_hint": "Part 1 ở trang in số 30 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf#page=36",
+  "yt": "is4TaYG3Ou0",
+  "yt_title": "a2 key for schools listening sample test",
+  "yt_channel": "Filomena Prattichizzo",
+  "start": 32,
+  "end": 348,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "gap",
-    "q": "Ali is the chief pick-up ______ at Kids Against Plastic.",
-    "answer": "officer",
-    "accept": [],
-    "explain_vi": "Ali nói ==\"I'm Ali, chief pick-up officer\"== → **officer**. __Amy là \"co-founder\" (người đồng sáng lập).__"
-   },
-   {
+    "n": 1,
     "type": "mcq",
-    "q": "About one million plastic bags are thrown away…",
-    "options": [
-     "every single day",
-     "every minute",
-     "every year"
-    ],
-    "answer": 1,
-    "explain_vi": "Ali nói ==\"plastic bags will continue to be thrown away every minute\"== → **every minute**. __\"Each year\" là số chim biển; \"every day\" là lời kêu gọi nhặt rác.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Why do Amy and Ali stay hopeful?",
-    "options": [
-     "Less plastic is made each year.",
-     "Many people use the app now.",
-     "People can do lots to help."
-    ],
     "answer": 2,
-    "explain_vi": "Ali nói ==\"there are loads of things people can do\"== → **people can do lots**. __Amy nói lượng nhựa sản xuất đang tăng, không giảm.__"
+    "explain_vi": "==so I have a lot of homework to do== → **C (làm bài tập)**. __Mẹo:__ bữa tiệc có nhắc nhưng Julia nói ==I'd love to, but I can't==.",
+    "choices": 3
    },
    {
-    "type": "gap",
-    "q": "If you see plastic on the street, beach or ______, pick it up.",
-    "answer": "park",
-    "accept": [
-     "parks",
-     "the park"
-    ],
-    "explain_vi": "Ali nói ==\"on the street, beach or park, please pick it up\"== → **park**. __Danh sách giống câu đầu bài: streets, beaches and parks.__"
-   },
-   {
+    "n": 2,
     "type": "mcq",
-    "q": "Why should you log your litter on the app?",
-    "options": [
-     "so it adds to Ali's target",
-     "so Amy can collect it later",
-     "so the shops know about it"
-    ],
     "answer": 0,
-    "explain_vi": "Ali nói ==\"contributes to my target of one million pieces\"== → **adds to Ali's target**. __Log nghĩa là ghi lại.__"
+    "explain_vi": "==It starts at three, doesn't it?== → **A (3 giờ)**. __Mẹo:__ 2 giờ 30 là giờ hiện tại, 3 giờ 30 là giờ lớp kết thúc.",
+    "choices": 3
+   },
+   {
+    "n": 3,
+    "type": "mcq",
+    "answer": 2,
+    "explain_vi": "==I'm playing in the school basketball team on that day== → **C (chơi bóng rổ)**. __Mẹo:__ công viên trượt ván, đi xe đạp là kế hoạch của bạn kia.",
+    "choices": 3
+   },
+   {
+    "n": 4,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==All tickets tonight are four pounds thirty== → **A (£4.30)**. __Mẹo:__ £5.80 là giá thường ngày; £7.60 là số tiền cô bé mang theo.",
+    "choices": 3
+   },
+   {
+    "n": 5,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==My parents will be at work, but my older sister will== → **A (chị gái)**. __Mẹo:__ bố mẹ bận làm; ông chỉ được ghé thăm trên đường về.",
+    "choices": 3
    }
   ]
  },
  "8": {
-  "yt": "hNzqAWiDaCY",
-  "start": 0,
-  "end": 160,
-  "title": "Safer Internet Day 2024 - Key Stage 2 Film",
-  "channel": "UK Safer Internet Centre",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/safer-internet-day-positive-change-online",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/safer-internet-day-positive-change-online",
-  "level": "A2+",
-  "topic_match_vi": "Học sinh tranh luận về trí tuệ nhân tạo, cách mọi người cư xử trên mạng: chủ đề truyền thông, giao tiếp trực tuyến.",
-  "intro_vi": "Cậu sẽ nghe các bạn học sinh Anh nói về cuộc sống trên mạng trong Ngày Internet An toàn; chú ý câu nhận định người dẫn đọc ra và lí do mỗi bạn đồng ý hay không.",
+  "exam": "A2 Key for Schools",
+  "level": "A2",
+  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "part": "2",
+  "topic_vi": "Thông báo về chuyến cắm trại của trường",
+  "instructions_vi": "Nghe thầy giáo thông báo về chuyến cắm trại, điền một từ, số, ngày hoặc giờ vào mỗi chỗ trống (6–10).",
+  "paper_pdf": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf",
+  "paper_page": 32,
+  "paper_hint": "Part 2 ở trang in số 31 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf#page=36",
+  "yt": "is4TaYG3Ou0",
+  "yt_title": "a2 key for schools listening sample test",
+  "yt_channel": "Filomena Prattichizzo",
+  "start": 360,
+  "end": 587,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 6,
     "type": "gap",
-    "q": "The presenter says, \"I've got a few ______ here.\"",
-    "answer": "experts",
+    "answer": "Fairford",
+    "explain_vi": "==Her name is Mrs Fairford== → **Fairford**. __Mẹo:__ tên được đánh vần F-A-I-R-F-O-R-D; viết đúng từng chữ cái.",
     "accept": [
-     "expert"
-    ],
-    "explain_vi": "Người dẫn nói ==\"I've got a few experts here\"== → **experts**. __Người dẫn gọi các bạn nhỏ là \"chuyên gia\".__"
+     "fairford",
+     "mrs fairford"
+    ]
    },
    {
-    "type": "mcq",
-    "q": "Why is one student not sure about AI?",
-    "options": [
-     "People may use it to cheat.",
-     "Apps could help us learn.",
-     "It may get smarter than us."
-    ],
-    "answer": 2,
-    "explain_vi": "Bạn ấy nói ==\"artificial intelligence might be smarter than humans\"== → **smarter than us**. __Gian lận và học tập là ý của hai bạn khác.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What does one student say about people in the past?",
-    "options": [
-     "They used to be nicer.",
-     "They used to bully more.",
-     "They used to play less."
-    ],
-    "answer": 0,
-    "explain_vi": "Bạn ấy nói ==\"they used to be nicer before\"== → **nicer before**. __Nghe kĩ: bạn ấy chọn \"agree\" nhưng ý là ngày trước tử tế hơn.__"
-   },
-   {
+    "n": 7,
     "type": "gap",
-    "q": "If players are unfriendly and ______ a lot, one student would disagree.",
-    "answer": "swear",
-    "accept": [],
-    "explain_vi": "Bạn ấy nói ==\"if they're really, like, unfriendly and swear a lot\"== → **swear** (chửi tục). __Bạn này chọn \"I'm not sure\" vì còn tuỳ người chơi.__"
+    "answer": "Friday",
+    "explain_vi": "==we're returning on Friday instead of Thursday== → **Friday**. __Mẹo:__ Thursday là ngày cũ đã bị đổi.",
+    "accept": [
+     "friday",
+     "fri"
+    ]
    },
    {
-    "type": "mcq",
-    "q": "Statement 3: Changes in technology are making people…",
-    "options": [
-     "kinder",
-     "happier",
-     "smarter"
-    ],
-    "answer": 1,
-    "explain_vi": "Người dẫn đọc ==\"Changes in technology are making people happier\"== → **happier**. __\"Kinder\" là nhận định 2; \"smarter\" là ý về AI.__"
+    "n": 8,
+    "type": "gap",
+    "answer": "7.30",
+    "explain_vi": "==get to school for half past seven on Tuesday== → **7.30**. __Mẹo:__ 7.45 (quarter to eight) là giờ xe xuất phát.",
+    "accept": [
+     "7.30",
+     "7:30",
+     "730",
+     "half past seven",
+     "seven thirty"
+    ]
+   },
+   {
+    "n": 9,
+    "type": "gap",
+    "answer": "train",
+    "explain_vi": "==we're going to go by train for a change== → **train**. __Mẹo:__ coach (xe khách) là cách đi thường ngày, lần này không dùng.",
+    "accept": [
+     "train",
+     "by train",
+     "the train"
+    ]
+   },
+   {
+    "n": 10,
+    "type": "gap",
+    "answer": "boots",
+    "explain_vi": "==don't bring trainers because your feet will get wet== → **(walking) boots**. __Mẹo:__ trainers (giày thể thao) bị dặn không mang.",
+    "accept": [
+     "boots",
+     "walking boots"
+    ]
    }
   ]
  },
  "9": {
-  "yt": "wTfYhG2mOSA",
-  "start": 0,
-  "end": 170,
-  "title": "CBeebies: Celebrating Holi - Let's Celebrate",
-  "channel": "CBeebies",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/celebrating-holi",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/celebrating-holi",
+  "exam": "A2 Key for Schools",
   "level": "A2",
-  "topic_match_vi": "Bạn nhỏ giới thiệu đền Hindu, bữa ăn chung và lễ hội Holi: chủ đề ẩm thực và văn hoá (đoạn đầu: đền và bữa ăn).",
-  "intro_vi": "Cậu sẽ nghe một bạn nhỏ giới thiệu ngôi đền Hindu trong ngày lễ Holi; trong đoạn này, chú ý những gì có trong đền, ai được đến đền và việc chuẩn bị cho trò ném màu.",
+  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "part": "3",
+  "topic_vi": "Annie kể với Tony về bộ phim bạn ấy vừa xem",
+  "instructions_vi": "Nghe Annie nói chuyện với Tony về một bộ phim, chọn A, B hoặc C cho câu 11–15.",
+  "paper_pdf": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf",
+  "paper_page": 32,
+  "paper_hint": "Part 3 ở trang in số 31 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf#page=36",
+  "yt": "is4TaYG3Ou0",
+  "yt_title": "a2 key for schools listening sample test",
+  "yt_channel": "Filomena Prattichizzo",
+  "start": 599,
+  "end": 858,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 11,
     "type": "mcq",
-    "q": "What do Sumedh and his friend touch?",
-    "options": [
-     "the bottom of the statue",
-     "the carvings of elephants",
-     "the curtain of the shrine"
-    ],
-    "answer": 0,
-    "explain_vi": "Bài nghe: ==\"Sumedh and his friend both touch the bottom of the statue\"== → **bottom of the statue**. __Voi chỉ là hình chạm khắc, nói sau.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What does the temple have, just like their home?",
-    "options": [
-     "incense sticks",
-     "shrines",
-     "elephant carvings"
-    ],
     "answer": 1,
-    "explain_vi": "Bạn nhỏ nói ==\"statues of the gods, and shrines just like we have at home\"== → **shrines** (bàn thờ). __Hương và voi có trong đền nhưng không giống ở nhà.__"
+    "explain_vi": "==I went to the cinema for the 3.15 show== → **B (3 giờ 15)**. __Mẹo:__ 5 giờ 30 là lúc phim kết thúc; trước đó Annie đi mua sắm.",
+    "choices": 3
    },
    {
-    "type": "gap",
-    "q": "We leave ______ for the gods.",
-    "answer": "presents",
-    "accept": [
-     "present"
-    ],
-    "explain_vi": "Bạn nhỏ nói ==\"We leave presents for the gods\"== → **presents** (lễ vật). __Sau \"leave\" là danh từ số nhiều.__"
-   },
-   {
+    "n": 12,
     "type": "mcq",
-    "q": "Who can come to the temple, says the boy?",
-    "options": [
-     "only friends and relatives",
-     "only people from India",
-     "people of any religion"
-    ],
-    "answer": 2,
-    "explain_vi": "Bạn nhỏ nói ==\"Other religions and other people can come to the temple\"== → **any religion**. __\"Friends and relatives\" là lúc nói về việc cùng thờ cúng.__"
+    "answer": 0,
+    "explain_vi": "==It's the story of a top basketball player== → **A (một ngôi sao thể thao)**. __Mẹo:__ không nói về động vật hay lịch sử.",
+    "choices": 3
    },
    {
-    "type": "gap",
-    "q": "Now they'd better get changed into their ______ clothes.",
-    "answer": "old",
-    "accept": [],
-    "explain_vi": "Bạn nhỏ nói ==\"we'd better get changed into our old clothes now\"== → **old** (cũ). __Mặc đồ cũ vì sắp ném bột màu.__"
+    "n": 13,
+    "type": "mcq",
+    "answer": 2,
+    "explain_vi": "==it's a shame there are no really good actors in it== → **C (cần diễn viên giỏi hơn)**. __Mẹo:__ Annie không chê phim dài hay chán.",
+    "choices": 3
+   },
+   {
+    "n": 14,
+    "type": "mcq",
+    "answer": 1,
+    "explain_vi": "==the reason I love it is because it all really happened== → **B (chuyện có thật)**. __Mẹo:__ Annie nói phim ==isn't funny== và không có gì ly kỳ.",
+    "choices": 3
+   },
+   {
+    "n": 15,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==it's best to see films on a big cinema screen== → **A (ở rạp)**. __Mẹo:__ xem trên laptop là thói quen (usually), không phải điều Annie thích hơn.",
+    "choices": 3
    }
   ]
  },
  "10": {
-  "yt": "SCpgbsBytyk",
-  "start": 0,
-  "end": 160,
-  "title": "Women in 'Male' Careers | International Women's Day | Newsround",
-  "channel": "BBC Newsround",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/women-male-careers",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/women-male-careers",
-  "level": "A2+",
-  "topic_match_vi": "Bốn phụ nữ làm lính cứu hoả, đóng tàu ngầm, lái tàu, quản lí xây dựng trả lời câu hỏi của học sinh: đúng chủ đề công việc, nghề nghiệp.",
-  "intro_vi": "Cậu sẽ nghe bốn phụ nữ làm những nghề thường được cho là của nam giới; chú ý tên nghề, nơi làm việc và con đường vào nghề của từng người.",
+  "exam": "A2 Key for Schools",
+  "level": "A2",
+  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "part": "5",
+  "topic_vi": "Julia và mẹ nói về buổi trình diễn thời trang ở trường",
+  "instructions_vi": "Nghe Julia nói với mẹ, nối mỗi người (21–25) với việc họ giúp (A–H).",
+  "paper_pdf": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf",
+  "paper_page": 33,
+  "paper_hint": "Part 5 ở trang in số 32 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf#page=36",
+  "yt": "is4TaYG3Ou0",
+  "yt_title": "a2 key for schools listening sample test",
+  "yt_channel": "Filomena Prattichizzo",
+  "start": 1306,
+  "end": 1499,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 21,
     "type": "mcq",
-    "q": "What is Cassie's job?",
-    "options": [
-     "a submarine builder",
-     "a train driver",
-     "a project manager"
-    ],
-    "answer": 2,
-    "explain_vi": "Cassie nói ==\"I'm a construction project manager\"== → **project manager**. __Đóng tàu ngầm là Caroline, lái tàu là Tyra.__"
+    "answer": 4,
+    "explain_vi": "Anton: ==he's finding CDs to play in the show== → **E (âm nhạc)**. __Mẹo:__ đèn (lights) cô giáo nói không cần.",
+    "choices": 8
    },
    {
+    "n": 22,
     "type": "mcq",
-    "q": "What did the children get to do?",
-    "options": [
-     "spend a whole day at their jobs",
-     "ask the women some questions",
-     "try to drive a real train"
-    ],
+    "answer": 5,
+    "explain_vi": "Emma: ==she wants to take some pictures with her new camera== → **F (ảnh)**. __Mẹo:__ năm ngoái Emma lo nhạc.",
+    "choices": 8
+   },
+   {
+    "n": 23,
+    "type": "mcq",
+    "answer": 6,
+    "explain_vi": "Karl: ==he's drawing some posters== → **G (áp phích)**. __Mẹo:__ Karl chụp ảnh giỏi nhưng lần này không chụp.",
+    "choices": 8
+   },
+   {
+    "n": 24,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "Sarah: ==She's deciding what everyone will wear== → **A (quần áo)**. __Mẹo:__ bán vé (tickets) là việc của Sarah lần trước.",
+    "choices": 8
+   },
+   {
+    "n": 25,
+    "type": "mcq",
     "answer": 1,
-    "explain_vi": "Bài nghe: ==\"These children got the chance to ask them some questions about their jobs\"== → **ask questions**. __Không ai đi làm cùng hay lái tàu.__"
-   },
-   {
-    "type": "gap",
-    "q": "Cassie moved to ______ to do her job.",
-    "answer": "Australia",
-    "accept": [],
-    "explain_vi": "Cassie nói ==\"I got the opportunity to move out to Australia\"== → **Australia**. __\"England\" chỉ có trong câu hỏi của học sinh.__"
-   },
-   {
-    "type": "gap",
-    "q": "You can start Caroline's job at ______ as an apprentice.",
-    "answer": "16",
-    "accept": [
-     "sixteen"
-    ],
-    "explain_vi": "Caroline nói ==\"you can start at 16 as an apprentice\"== → **16**. __\"Ten years\" là số năm Cassie đã làm.__"
-   },
-   {
-    "type": "gap",
-    "q": "Before, Tyra worked on the ______, but not as a driver.",
-    "answer": "railway",
-    "accept": [
-     "railways",
-     "railroad",
-     "the railway"
-    ],
-    "explain_vi": "Tyra nói ==\"I worked on the railway before… but not as a train driver\"== → **railway** (ngành đường sắt). __Đừng điền \"train\".__"
+    "explain_vi": "George: ==George is going to get some snacks== → **B (đồ ăn)**. __Mẹo:__ snacks = food.",
+    "choices": 8
    }
   ]
  },
  "11": {
-  "yt": "aMfgZRdVbdw",
-  "start": 0,
-  "end": 150,
-  "title": "Anti-Bullying Week 2022: Reach Out - official Primary School film",
-  "channel": "Anti-Bullying Alliance",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/reach-out",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/reach-out",
+  "exam": "A2 Key",
   "level": "A2",
-  "topic_match_vi": "Phim ngắn về chống bắt nạt, giúp đỡ và tìm người tin cậy: chủ đề con người và các mối quan hệ (bạn bè, gia đình, thầy cô).",
-  "intro_vi": "Cậu sẽ nghe đoạn phim của tổ chức Anti-Bullying Alliance về chống bắt nạt và giúp đỡ bạn bè; chú ý những câu ngắn nói bắt nạt là gì và cậu có thể tìm ai để giúp.",
+  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "part": "1",
+  "topic_vi": "5 đoạn hội thoại ngắn (hẹn gặp, gọi lại, ngày tiệc, thời tiết, giá quần short)",
+  "instructions_vi": "Nghe 5 đoạn hội thoại ngắn, mỗi câu chọn tranh đúng A, B hoặc C.",
+  "paper_pdf": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf",
+  "paper_page": 31,
+  "paper_hint": "Part 1 ở trang in số 30 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf#page=36",
+  "yt": "tzfd76Deiu4",
+  "yt_title": "LISTENING • CAMBRIDGE A2 KEY 2020 • SAMPLE TEST 1",
+  "yt_channel": "LEARNING ENGLISH",
+  "start": 30,
+  "end": 341,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 1,
     "type": "mcq",
-    "q": "Which two words describe bullying at the start?",
-    "options": [
-     "unfair and unsafe",
-     "unkind and unfair",
-     "unkind and unhappy"
-    ],
-    "answer": 1,
-    "explain_vi": "Bài nghe: ==\"It's unkind. It's unfair.\"== → **unkind and unfair**. __Nghe kĩ phần sau \"un-\": kind, fair.__"
-   },
-   {
-    "type": "gap",
-    "q": "If we challenge it, we can ______ it.",
-    "answer": "change",
-    "accept": [],
-    "explain_vi": "Bài nghe: ==\"If we challenge it, we can change it\"== → **change**. __Hai từ gần âm: challenge – change.__"
-   },
-   {
-    "type": "gap",
-    "q": "Reach out to parents and ______, friends and teachers.",
-    "answer": "carers",
-    "accept": [
-     "carer"
-    ],
-    "explain_vi": "Bài nghe: ==\"Reach out to parents and carers, friends, teachers\"== → **carers** (người chăm sóc). __Teachers đứng sau, không phải chỗ trống.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Which way to reach out does the film say twice?",
-    "options": [
-     "checking in",
-     "asking 'Are you OK?'",
-     "respecting everyone"
-    ],
     "answer": 0,
-    "explain_vi": "Bài nghe: ==\"checking in, checking in again\"== → **checking in** (hỏi han). __Các cách khác chỉ nói một lần.__"
+    "explain_vi": "Alex ở bảo tàng: ==Why don't you come and meet me here?== → **A**. __Mẹo:__ quán cà phê là chỗ Claire đang ăn bánh, không phải chỗ gặp.",
+    "choices": 3
    },
    {
+    "n": 2,
     "type": "mcq",
-    "q": "How does the film end?",
-    "options": [
-     "with a phone number",
-     "with a thank-you to teachers",
-     "with a question for you"
-    ],
     "answer": 2,
-    "explain_vi": "Câu cuối: ==\"How will you reach out today?\"== → **a question**. __Phim kết bằng câu hỏi để cậu tự trả lời.__"
+    "explain_vi": "==Call at half past before he goes for lunch== → **C (12 giờ 30)**. __Mẹo:__ 10 giờ 15 và 12 giờ đều bị gạt vì vướng khách, vướng họp.",
+    "choices": 3
+   },
+   {
+    "n": 3,
+    "type": "mcq",
+    "answer": 2,
+    "explain_vi": "Ngày 25 được đề nghị, cô đáp ==Let's make it then== → **C (25/7)**. __Mẹo:__ ngày 18 cô làm muộn, ngày 11 đã có vé nhà hát.",
+    "choices": 3
+   },
+   {
+    "n": 4,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==It was so sunny and hot!== → **A (nắng nóng)**. __Mẹo:__ mưa chỉ là dự báo trên tivi, thực tế không mưa.",
+    "choices": 3
+   },
+   {
+    "n": 5,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==Everything on that shelf is five pounds== → **A (£5)**. __Mẹo:__ £15 là giá áo, £20 là tổng tiền.",
+    "choices": 3
    }
   ]
  },
  "12": {
-  "yt": "OxDEO1cVyqg",
-  "start": 0,
-  "end": 120,
-  "title": "Facts about Bumblebees | Ferne & Rory's Teeny Tiny Creatures | CBeebies",
-  "channel": "CBeebies",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/facts-about-bumblebees",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/facts-about-bumblebees",
+  "exam": "A2 Key",
   "level": "A2",
-  "topic_match_vi": "Giải thích khoa học về ong nghệ và sự thụ phấn: chủ đề khoa học (sinh học, thực vật).",
-  "intro_vi": "Cậu sẽ nghe đoạn giới thiệu khoa học ngắn về ong nghệ và sự thụ phấn; chú ý tên các loại quả, việc con ong làm trên bông hoa và lời khen ở cuối.",
+  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "part": "2",
+  "topic_vi": "Việc làm hè cho sinh viên ở công ty Sunshine Holidays",
+  "instructions_vi": "Nghe thầy giáo nói về việc làm hè, điền một từ, số, ngày hoặc giờ vào mỗi chỗ trống (6–10).",
+  "paper_pdf": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf",
+  "paper_page": 32,
+  "paper_hint": "Part 2 ở trang in số 31 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf#page=36",
+  "yt": "tzfd76Deiu4",
+  "yt_title": "LISTENING • CAMBRIDGE A2 KEY 2020 • SAMPLE TEST 1",
+  "yt_channel": "LEARNING ENGLISH",
+  "start": 353,
+  "end": 562,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 6,
     "type": "gap",
-    "q": "Pollination helps food grow, so we have lots of ______ things to eat.",
-    "answer": "lovely",
-    "accept": [],
-    "explain_vi": "Bài nghe: ==\"so that we have lots of lovely things to eat\"== → **lovely**. __Nghe tính từ ngay trước \"things\".__"
-   },
-   {
-    "type": "mcq",
-    "q": "Which fruit is named in the video?",
-    "options": [
-     "strawberries",
-     "raspberries",
-     "blueberries"
-    ],
-    "answer": 2,
-    "explain_vi": "Bài nghe: ==\"tomatoes, aubergines, blueberries and cranberries\"== → **blueberries**. __Strawberries, raspberries không có trong danh sách.__"
-   },
-   {
-    "type": "mcq",
-    "q": "A bee lands on a flower to feed and to…",
-    "options": [
-     "make some honey",
-     "gather pollen",
-     "find new seeds"
-    ],
-    "answer": 1,
-    "explain_vi": "Bài nghe: ==\"to feed and suck up nectar or gather pollen\"== → **gather pollen**. __Bài không nói đến mật ong; hạt có trong quả, nói sau.__"
-   },
-   {
-    "type": "gap",
-    "q": "______ all over the world rely on bumblebees.",
-    "answer": "Farms",
+    "answer": "August",
+    "explain_vi": "==must be free from then until August the twentieth== → **August**. __Mẹo:__ September là lúc sinh viên đi du lịch sau khi làm xong.",
     "accept": [
-     "farm"
-    ],
-    "explain_vi": "Bài nghe: ==\"Farms all over the world rely on bumblebees\"== → **farms** (trang trại). __Không phải \"farmers\": nghe kĩ âm cuối.__"
+     "august",
+     "aug"
+    ]
    },
    {
-    "type": "mcq",
-    "q": "What does the speaker say about bumblebees at the end?",
-    "options": [
-     "They are clever.",
-     "They are busy.",
-     "They are important."
-    ],
-    "answer": 0,
-    "explain_vi": "Câu cuối: ==\"What clever bumblebees!\"== → **clever**. __\"Busy bee\" là thành ngữ quen, nhưng bài không dùng.__"
+    "n": 7,
+    "type": "gap",
+    "answer": "19",
+    "explain_vi": "==to work there you have to be nineteen== → **19**. __Mẹo:__ 10–15 tuổi là tuổi của trẻ con ở trại.",
+    "accept": [
+     "19",
+     "nineteen"
+    ]
+   },
+   {
+    "n": 8,
+    "type": "gap",
+    "answer": "drive",
+    "explain_vi": "==they only want people who can drive== → **drive**. __Mẹo:__ không cần giỏi thể thao hay ngoại ngữ.",
+    "accept": [
+     "drive",
+     "driving"
+    ]
+   },
+   {
+    "n": 9,
+    "type": "gap",
+    "answer": "65",
+    "explain_vi": "==Each week you'll get sixty-five pounds== → **65**. __Mẹo:__ 500 là số tiền có thể tiết kiệm cả mùa, không phải mỗi tuần.",
+    "accept": [
+     "65",
+     "sixty-five",
+     "sixty five",
+     "£65"
+    ]
+   },
+   {
+    "n": 10,
+    "type": "gap",
+    "answer": "photo",
+    "explain_vi": "==send it with a photo to Sunshine Holidays== → **photo(graph)**. __Mẹo:__ gửi kèm thư; key chấp nhận photo/photograph, số ít hoặc nhiều.",
+    "accept": [
+     "photo",
+     "photos",
+     "photograph",
+     "photographs"
+    ]
    }
   ]
  },
  "13": {
-  "yt": "u55oYqG9VVY",
-  "start": 0,
-  "end": 180,
-  "title": "Taylor Swift Eras Tour: Swifties react to 'amazing' Eras Tour concert in Edinburgh | Newsround",
-  "channel": "BBC Newsround",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/taylor-swift-eras-tour",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/taylor-swift-eras-tour",
-  "level": "A2+",
-  "topic_match_vi": "Phóng viên nhí và người hâm mộ nói về buổi hoà nhạc của Taylor Swift: đúng chủ đề nghệ thuật, giải trí (âm nhạc).",
-  "intro_vi": "Cậu sẽ nghe phóng viên nhí Cairi của Newsround đi xem buổi hoà nhạc Eras Tour của Taylor Swift; chú ý cách Cairi chuẩn bị, những chiếc vòng tay và khoảnh khắc mỗi người thích nhất.",
+  "exam": "A2 Key",
+  "level": "A2",
+  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "part": "3",
+  "topic_vi": "Robert rủ Laura đi chơi cuối tuần ở Dublin",
+  "instructions_vi": "Nghe Robert nói với Laura về chuyến đi Dublin, chọn A, B hoặc C cho câu 11–15.",
+  "paper_pdf": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf",
+  "paper_page": 32,
+  "paper_hint": "Part 3 ở trang in số 31 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf#page=36",
+  "yt": "tzfd76Deiu4",
+  "yt_title": "LISTENING • CAMBRIDGE A2 KEY 2020 • SAMPLE TEST 1",
+  "yt_channel": "LEARNING ENGLISH",
+  "start": 575,
+  "end": 805,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "gap",
-    "q": "To get ready, Cairi has been ______ outside Murrayfield Stadium.",
-    "answer": "camping",
-    "accept": [],
-    "explain_vi": "Cairi nói ==\"I've been camping outside Murrayfield Stadium\"== → **camping** (cắm trại). __Cô còn nghe album và đổi vòng tay cả ngày.__"
-   },
-   {
+    "n": 11,
     "type": "mcq",
-    "q": "Why is the 'Fearless' bracelet one of Cairi's favourites?",
-    "options": [
-     "It's her favourite album.",
-     "It has all those beads on it.",
-     "A fan made it just for her."
-    ],
-    "answer": 0,
-    "explain_vi": "Cairi nói ==\"this one's 'Fearless', and my favourite album's 'Fearless'\"== → **her favourite album**. __Chiếc vòng nhiều hạt là chiếc khác.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What was Nina's favourite memory of the tour?",
-    "options": [
-     "the 'Reputation' songs",
-     "the 'Tortured Poets' songs",
-     "the very beginning"
-    ],
-    "answer": 2,
-    "explain_vi": "Nina nói ==\"the very beginning when Tay got revealed\"== → **the beginning**. __Hai album kia là ý của các fan khác.__"
-   },
-   {
-    "type": "gap",
-    "q": "One fan's favourite bit was when Taylor played the ______.",
-    "answer": "piano",
-    "accept": [],
-    "explain_vi": "Fan nói ==\"When Taylor played piano\"== → **piano**. __Bạn ấy thích vì chính mình cũng chơi piano.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Who else has one fan made bracelets for?",
-    "options": [
-     "her friends at school",
-     "people in care homes",
-     "the Newsround reporters"
-    ],
     "answer": 1,
-    "explain_vi": "Fan nói ==\"I've made some, lots, for care homes too\"== → **care homes** (viện dưỡng lão). __Newsround chỉ là chương trình đang phỏng vấn.__"
+    "explain_vi": "==there'll be four of us from my office== → **B (đồng nghiệp)**. __Mẹo:__ anh em họ bận thi đấu quần vợt nên không đi.",
+    "choices": 3
+   },
+   {
+    "n": 12,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==visitors can rent rooms in the university== → **A (trường đại học)**. __Mẹo:__ nhà nghỉ (guest-house) đã kín chỗ.",
+    "choices": 3
+   },
+   {
+    "n": 13,
+    "type": "mcq",
+    "answer": 2,
+    "explain_vi": "==But you'll need a coat! It often rains.== → **C (áo khoác)**. __Mẹo:__ máy ảnh chỉ được hỏi thăm, không phải điều phải nhớ mang.",
+    "choices": 3
+   },
+   {
+    "n": 14,
+    "type": "mcq",
+    "answer": 1,
+    "explain_vi": "==all the beautiful buildings== → **B (tòa nhà đẹp)**. __Mẹo:__ cửa hàng bị chê lúc nào cũng đông người.",
+    "choices": 3
+   },
+   {
+    "n": 15,
+    "type": "mcq",
+    "answer": 1,
+    "explain_vi": "==I always have lots of fish – it's fantastic== → **B (đồ ăn)**. __Mẹo:__ lễ hội âm nhạc ==won't be on== (không diễn ra).",
+    "choices": 3
    }
   ]
  },
  "14": {
-  "yt": "qcOj8PsRx60",
-  "start": 0,
-  "end": 90,
-  "title": "Roald Dahl quick bio - Behind the News",
-  "channel": "Behind the News",
-  "source_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/roald-dahl-quick-bio",
-  "transcript_url": "https://learnenglishkids.britishcouncil.org/listen-watch/video-zone/roald-dahl-quick-bio",
+  "exam": "A2 Key",
   "level": "A2",
-  "topic_match_vi": "Tiểu sử nhà văn Roald Dahl: ôn buổi 13 (nghệ thuật, văn học), buổi 10 (nghề: phi công, điệp viên) và buổi 11 (con người).",
-  "intro_vi": "Cậu sẽ nghe tiểu sử ngắn của nhà văn Roald Dahl; chú ý tuổi thơ của ông, cuốn sách đầu tiên và các con số về sách của ông.",
+  "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+  "part": "5",
+  "topic_vi": "Simon và Maria bàn ai mang món gì đến tiệc sinh nhật",
+  "instructions_vi": "Nghe Simon nói với Maria, nối mỗi người (21–25) với món ăn họ mang (A–H).",
+  "paper_pdf": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf",
+  "paper_page": 33,
+  "paper_hint": "Part 5 ở trang in số 32 (số ở chân trang)",
+  "key_url": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf#page=36",
+  "yt": "tzfd76Deiu4",
+  "yt_title": "LISTENING • CAMBRIDGE A2 KEY 2020 • SAMPLE TEST 1",
+  "yt_channel": "LEARNING ENGLISH",
+  "start": 1217,
+  "end": 1403,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 21,
     "type": "mcq",
-    "q": "What does the video say about Roald as a kid?",
-    "options": [
-     "He was always writing stories.",
-     "He wasn't known for writing.",
-     "He read lots of books."
-    ],
-    "answer": 1,
-    "explain_vi": "Bài nghe: ==\"As a kid, he wasn't particularly known for his writing!\"== → **not known for writing**. __Ông nổi tiếng nhờ viết về sau.__"
+    "answer": 5,
+    "explain_vi": "==Barbara's going to bring some oranges and grapes== → **F (trái cây)**. __Mẹo:__ cam, nho = fruit.",
+    "choices": 8
    },
    {
+    "n": 22,
     "type": "mcq",
-    "q": "What did a chocolate maker do at Roald's school?",
-    "options": [
-     "tested new products",
-     "made a new chocolate bar",
-     "gave out free sweets"
-    ],
-    "answer": 0,
-    "explain_vi": "Bài nghe: ==\"a chocolate maker used to taste-test their new products\"== → **tested new products**. __Thanh sô-cô-la mới chỉ là ước mơ của Roald.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What colour was his favourite paper?",
-    "options": [
-     "orange",
-     "purple",
-     "yellow"
-    ],
     "answer": 2,
-    "explain_vi": "Bài nghe: ==\"put pencil to his favourite yellow paper\"== → **yellow**. __Nghe tính từ ngay trước \"paper\".__"
+    "explain_vi": "Simon định mang ==bread and cheese== nhưng bánh mì đã có người mang → **C (phô mai)**. __Mẹo:__ bread bị gạt.",
+    "choices": 8
    },
    {
-    "type": "gap",
-    "q": "In his first book, the Gremlins cause problems on ______.",
-    "answer": "planes",
-    "accept": [
-     "plane",
-     "aeroplanes",
-     "airplanes"
-    ],
-    "explain_vi": "Bài nghe: ==\"naughty creatures that cause mechanical problems on planes\"== → **planes** (máy bay)."
+    "n": 23,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==Anita's bringing that== (bánh mì) → **A (bánh mì)**. __Mẹo:__ Anita muốn mang kem nhưng trời quá lạnh.",
+    "choices": 8
    },
    {
-    "type": "gap",
-    "q": "Dahl went on to write ______ other kids' books.",
-    "answer": "16",
-    "accept": [
-     "sixteen"
-    ],
-    "explain_vi": "Bài nghe: ==\"Dahl went on to write 16 other kids' books\"== → **16**. __200 triệu là số bản sách bán được.__"
+    "n": 24,
+    "type": "mcq",
+    "answer": 3,
+    "explain_vi": "==I chose chicken because it's more popular than fish== → **D (gà)**. __Mẹo:__ cá chỉ là lựa chọn bị loại.",
+    "choices": 8
+   },
+   {
+    "n": 25,
+    "type": "mcq",
+    "answer": 7,
+    "explain_vi": "Michael ==make a big bowl of sliced tomatoes and onions== → **H (salad)**. __Mẹo:__ không nghe từ 'salad'; cà chua, hành thái lát = salad.",
+    "choices": 8
    }
   ]
  }

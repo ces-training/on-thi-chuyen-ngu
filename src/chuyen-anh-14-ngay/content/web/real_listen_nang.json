@@ -1,890 +1,926 @@
 {
  "1": {
-  "yt": "f2O6mQkFiiw",
-  "start": 30,
-  "end": 270,
-  "title": "How to practice effectively...for just about anything - Annie Bosler and Don Greene",
-  "channel": "TED-Ed",
-  "source_url": "https://ed.ted.com/lessons/how-to-practice-effectively-for-just-about-anything-annie-bosler-and-don-greene",
-  "transcript_url": "https://podcasts.happyscribe.com/ted-talks-daily/how-to-practice-effectively-a6654186-9870-45d0-ae5a-3fb0b7194865",
+  "exam": "B2 First for Schools",
   "level": "B2",
-  "topic_match_vi": "Đúng chủ đề học tập: cách luyện tập và tập trung khi học, có số liệu nghiên cứu về học sinh, sinh viên.",
-  "intro_vi": "Cậu sẽ nghe bài TED-Ed về cách luyện tập hiệu quả; chú ý các con số (số sinh viên, số phút tập trung) và kết quả của các nghiên cứu.",
+  "test": "Sample Test 1",
+  "part": "1 · câu 1–4",
+  "topic_vi": "Đoạn ngắn: ca sĩ, cửa hàng quần áo, nông trại, buổi hoà nhạc",
+  "instructions_vi": "Nghe 4 đoạn ngắn độc lập (câu 1–4), mỗi đoạn chọn A, B hoặc C.",
+  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-for-Schools-Listening.pdf",
+  "paper_page": 2,
+  "paper_hint": "Part 1 ở trang 2 của file PDF",
+  "key_url": "https://www.cambridgeenglish.org/Images/697496-b2-first-for-school-listening-sample-1-answer-key.pdf",
+  "yt": "0zfD4C1wnR4",
+  "yt_title": "Listening B2, FCE for schools, Sample 2015, Part 1",
+  "yt_channel": "Minming ĐẠT",
+  "start": 0,
+  "end": 336,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 1,
     "type": "mcq",
-    "q": "Which studies showed that repeating a movement adds layers of myelin?",
-    "options": [
-     "studies on dancers",
-     "studies on mice",
-     "studies on students"
-    ],
     "answer": 1,
-    "explain_vi": "==Some recent studies in mice suggest== lặp lại động tác làm tăng lớp myelin → **studies on mice**. __Dancers và students có trong bài nhưng ở đoạn khác.__"
+    "explain_vi": "==my father used to watch a lot of old movies and I sat with him== → **B** (được tiếp xúc âm nhạc từ nhỏ). __mẹo__: A sai vì anh nói ==my dad never suggested it==.",
+    "choices": 3
    },
    {
-    "type": "gap",
-    "q": "Researchers watched ______ students while they were studying.",
-    "answer": "260",
-    "accept": [
-     "two hundred and sixty",
-     "two hundred sixty"
-    ],
-    "explain_vi": "==researchers observed 260 students studying== → **260**. __Đừng nhầm với 144, số cầu thủ bóng rổ ở cuối bài.__"
-   },
-   {
-    "type": "gap",
-    "q": "On average, the students stayed focused for ______ minutes at a time.",
-    "answer": "6",
-    "accept": [
-     "six"
-    ],
-    "explain_vi": "==stay on task for only six minutes at a time== → **6**. __Đừng nhầm với 50 to 60: số giờ tập mỗi tuần của người giỏi.__"
-   },
-   {
+    "n": 2,
     "type": "mcq",
-    "q": "Why do the speakers say to start slowly?",
-    "options": [
-     "Your focus only lasts a few minutes.",
-     "Slow practice adds the most myelin.",
-     "Wrong repetitions also build habits."
-    ],
-    "answer": 2,
-    "explain_vi": "==Coordination is built with repetitions, whether correct or incorrect== → tập sai cũng thành nếp. __Myelin và six minutes có trong bài nhưng không phải lý do.__"
-   },
-   {
-    "type": "mcq",
-    "q": "When can practising in your head help, according to the speakers?",
-    "options": [
-     "once you can already do the movement",
-     "before you try the movement for real",
-     "when you practise in short sessions"
-    ],
     "answer": 0,
-    "explain_vi": "==once a physical motion has been established, it can be reinforced just by imagining it== → **once you can already do it**. __Short sessions là mẹo khác.__"
+    "explain_vi": "==The assistants are friendly and they really know about fashion== → **A** (nhân viên nhiệt tình). __mẹo__: nhạc (B) là điều chính cô gái thích, không phải điều bạn cô sẽ thích.",
+    "choices": 3
+   },
+   {
+    "n": 3,
+    "type": "mcq",
+    "answer": 2,
+    "explain_vi": "==you can come along and experience it for yourself this weekend== → **C** (quảng bá Ngày hội nông trại). __mẹo__: câu ==not an easy life== chỉ là chuyện bên lề (A).",
+    "choices": 3
+   },
+   {
+    "n": 4,
+    "type": "mcq",
+    "answer": 1,
+    "explain_vi": "==how awful it would be to make a mistake with your mum and dad there!== → **B** (sợ diễn trước gia đình). __mẹo__: bài tập thì ==I'm getting my head round it== nên A sai.",
+    "choices": 3
    }
   ]
  },
  "2": {
-  "yt": "R0JKCYZ8hng",
-  "start": 0,
-  "end": 235,
-  "title": "How playing an instrument benefits your brain - Anita Collins",
-  "channel": "TED-Ed",
-  "source_url": "https://www.ted.com/talks/anita_collins_how_playing_an_instrument_benefits_your_brain",
-  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/905658/how-playing-an-instrument-benefits-yo-8734375/",
+  "exam": "B2 First for Schools",
   "level": "B2",
-  "topic_match_vi": "Sở thích chơi nhạc cụ và lợi ích của nó với não bộ.",
-  "intro_vi": "Cậu sẽ nghe bài TED-Ed giải thích vì sao chơi nhạc cụ tốt cho não; chú ý các phép so sánh và những kỹ năng não được rèn luyện.",
+  "test": "Sample Test 1",
+  "part": "1 · câu 5–8",
+  "topic_vi": "Đoạn ngắn: CLB bóng đá, báo tuổi teen, leo núi, dự án môi trường",
+  "instructions_vi": "Nghe 4 đoạn ngắn độc lập (câu 5–8), mỗi đoạn chọn A, B hoặc C.",
+  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-for-Schools-Listening.pdf",
+  "paper_page": 3,
+  "paper_hint": "Part 1 ở trang 3 của file PDF",
+  "key_url": "https://www.cambridgeenglish.org/Images/697496-b2-first-for-school-listening-sample-1-answer-key.pdf",
+  "yt": "0zfD4C1wnR4",
+  "yt_title": "Listening B2, FCE for schools, Sample 2015, Part 1",
+  "yt_channel": "Minming ĐẠT",
+  "start": 336,
+  "end": 684,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "gap",
-    "q": "Inside a musician's brain, there's a ______ going on.",
-    "answer": "party",
-    "accept": [
-     "a party"
-    ],
-    "explain_vi": "==inside their brains, there's a party going on== → **party**. __Đừng điền lot theo thói quen; bài dùng hình ảnh bữa tiệc, pháo hoa.__"
-   },
-   {
+    "n": 5,
     "type": "mcq",
-    "q": "What is the clearest difference between playing music and listening to it?",
-    "options": [
-     "Playing needs fine motor skills.",
-     "Playing needs a sense of rhythm.",
-     "Playing uses the auditory cortex."
-    ],
-    "answer": 0,
-    "explain_vi": "==the latter requires fine motor skills== (the latter = chơi nhạc) → **fine motor skills**. __Rhythm và auditory cortex đều có cả khi nghe nhạc.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Where might musicians solve problems more creatively?",
-    "options": [
-     "in maths and in language",
-     "in sports and in painting",
-     "in study and social life"
-    ],
     "answer": 2,
-    "explain_vi": "==in both academic and social settings== → **in study and social life**. __Maths, language và sports, painting được nhắc ở đoạn khác.__"
+    "explain_vi": "==The new manager of the club...== ==has banned the players from eating meat== → **C**. __mẹo__: chuyên gia y tế chỉ đồng tình (==a view shared by==), không đề xuất (A).",
+    "choices": 3
    },
    {
-    "type": "gap",
-    "q": "Executive function includes planning, ______ and attention to detail.",
-    "answer": "strategizing",
-    "accept": [
-     "strategising"
-    ],
-    "explain_vi": "==planning, strategizing, and attention to detail== → **strategizing** (lập chiến lược). __Viết strategising kiểu Anh cũng đúng.__"
-   },
-   {
+    "n": 6,
     "type": "mcq",
-    "q": "Which memory tag does the speaker mention?",
-    "options": [
-     "a linguistic tag",
-     "a contextual tag",
-     "a creative tag"
-    ],
+    "answer": 2,
+    "explain_vi": "Bạn trai: ==a good way to find out what's going on in the world==; bạn gái: ==I do follow it== → **C**. __mẹo__: viết bài (B) bị gạt: ==Not a talent of mine==.",
+    "choices": 3
+   },
+   {
+    "n": 7,
+    "type": "mcq",
     "answer": 1,
-    "explain_vi": "==an audio tag, and a contextual tag== → **contextual**. __Linguistic và creative nói về hai bán cầu não ở đoạn trước, không phải tag.__"
+    "explain_vi": "==my legs were aching so much I couldn't appreciate it fully== → **B** (đau mỏi). __mẹo__: cảnh đẹp (C) được nhắc nhưng cậu không tận hưởng được.",
+    "choices": 3
+   },
+   {
+    "n": 8,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==I'd like you to keep thinking about things we can do to maintain the garden== → **A** (khuyến khích tiếp tục tham gia). __mẹo__: ==repeat in the future== chỉ là mong muốn, không phải dự án mới (C).",
+    "choices": 3
    }
   ]
  },
  "3": {
-  "yt": "_6xlNyWPpB8",
-  "start": 0,
-  "end": 220,
-  "title": "What really happens to the plastic you throw away - Emma Bryce",
-  "channel": "TED-Ed",
-  "source_url": "https://www.ted.com/talks/emma_bryce_what_really_happens_to_the_plastic_you_throw_away",
-  "transcript_url": "https://www.ted.com/podcasts/ted-climate-what-happens-to-the-plastic-you-throw-away-transcript",
+  "exam": "B2 First for Schools",
   "level": "B2",
-  "topic_match_vi": "Đúng chủ đề môi trường: rác thải nhựa, bãi rác, ô nhiễm đại dương và tái chế.",
-  "intro_vi": "Cậu sẽ nghe câu chuyện về ba chai nhựa với ba số phận khác nhau; chú ý con số, tên địa điểm và điều xảy ra với từng chai.",
+  "test": "Sample Test 1",
+  "part": "2",
+  "topic_vi": "Chim hải âu cổ rụt (puffin) ở Iceland",
+  "instructions_vi": "Nghe Duncan kể chuyến nghiên cứu chim puffin; điền một từ hoặc cụm ngắn vào câu 9–18.",
+  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-for-Schools-Listening.pdf",
+  "paper_page": 4,
+  "paper_hint": "Part 2 ở trang 4 của file PDF",
+  "key_url": "https://www.cambridgeenglish.org/Images/697496-b2-first-for-school-listening-sample-1-answer-key.pdf",
+  "yt": "M-m86SMRHvw",
+  "yt_title": "Listening B2, FCE for schools, Sample 2015, Part 2",
+  "yt_channel": "Minming ĐẠT",
+  "start": 0,
+  "end": 550,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "mcq",
-    "q": "How does the speaker tell the bottles' story?",
-    "options": [
-     "as a news report",
-     "as a lab report",
-     "as a hero's tale"
-    ],
-    "answer": 2,
-    "explain_vi": "==The heroes of our story were conceived in an oil refinery== → chai được kể như nhân vật: **a hero's tale**. __Bài còn nói their bodies, siblings.__"
-   },
-   {
+    "n": 9,
     "type": "gap",
-    "q": "Bottle one could take about ______ years to break down.",
-    "answer": "1,000",
+    "answer": "funny",
+    "explain_vi": "==makes them look really funny on dry land== → **funny**. __mẹo__: ==a large colourful beak== là đặc điểm, không phải từ tả vẻ ngoài trên cạn.",
     "accept": [
-     "1000",
-     "a thousand",
-     "one thousand",
-     "thousand"
-    ],
-    "explain_vi": "==an agonizing 1,000 years to decompose== → **1,000**. __Đừng điền 450 theo hiểu biết chung; nghe đúng số người nói.__"
+     "funny"
+    ]
    },
    {
-    "type": "mcq",
-    "q": "How long is bottle two lost at sea before the vortex pulls it in?",
-    "options": [
-     "for months",
-     "for weeks",
-     "for decades"
-    ],
-    "answer": 0,
-    "explain_vi": "==After months lost at sea, it's slowly drawn into a massive vortex== → **for months**. __Decades, years là thời gian phân huỷ, nói về chai số một.__"
-   },
-   {
+    "n": 10,
     "type": "gap",
-    "q": "Lanternfish are eaten by ______, which are eaten by tuna.",
-    "answer": "squid",
+    "answer": "feet",
+    "explain_vi": "Chân: ==they use them to alter their direction in the air!== → **feet**. __mẹo__: cánh (wings) dùng để bơi dưới nước, không phải đổi hướng khi bay.",
     "accept": [
-     "squids"
-    ],
-    "explain_vi": "==lanternfish, which are eaten by squid, which are eaten by tuna== → **squid** (mực). __Seabirds và tuna cũng có trong chuỗi, nghe đúng thứ tự.__"
+     "feet",
+     "their feet"
+    ]
    },
    {
-    "type": "mcq",
-    "q": "What happens first to bottle three at the plant?",
-    "options": [
-     "It is cut into pieces.",
-     "It is squeezed flat.",
-     "It is melted in molds."
-    ],
-    "answer": 1,
-    "explain_vi": "==A truck brings it to a plant where it's squeezed flat== → **squeezed flat**. __Shredded là bước sau; melted in molds là lúc làm chai mới.__"
+    "n": 11,
+    "type": "gap",
+    "answer": "holes",
+    "explain_vi": "==They dig holes, so their nests are very well protected.== → **holes**. __mẹo__: ==cliff top ledges== là điều Duncan tưởng, đã bị bác bỏ.",
+    "accept": [
+     "holes"
+    ]
+   },
+   {
+    "n": 12,
+    "type": "gap",
+    "answer": "cow",
+    "explain_vi": "Chim lớn kêu ==sounding like a cow== → **cow**. __mẹo__: ==a duck or a goose== là tiếng chim non, không phải chim trưởng thành.",
+    "accept": [
+     "cow",
+     "a cow"
+    ]
+   },
+   {
+    "n": 13,
+    "type": "gap",
+    "answer": "hunger",
+    "explain_vi": "==it's hunger rather than loneliness that makes young puffins fly== → **hunger / being hungry**. __mẹo__: loneliness bị phủ định bằng ==rather than==.",
+    "accept": [
+     "hunger",
+     "being hungry"
+    ]
+   },
+   {
+    "n": 14,
+    "type": "gap",
+    "answer": "stars",
+    "explain_vi": "==puffins instinctively use the stars for navigation== → **stars**. __mẹo__: đèn thành phố (lights) là thứ đánh lừa chim, không phải thứ chúng dựa vào.",
+    "accept": [
+     "stars",
+     "the stars"
+    ]
+   },
+   {
+    "n": 15,
+    "type": "gap",
+    "answer": "gardens",
+    "explain_vi": "==But gardens present more of a threat.== → **gardens**. __mẹo__: đường phố (roads) được nhắc trước nhưng ==cars aren't so much of a problem==.",
+    "accept": [
+     "gardens",
+     "the gardens",
+     "dark gardens",
+     "the dark gardens",
+     "dark gardens with lurking cats",
+     "the dark gardens with lurking cats",
+     "gardens with lurking cats"
+    ]
+   },
+   {
+    "n": 16,
+    "type": "gap",
+    "answer": "umbrella",
+    "explain_vi": "==putting a young puffin in an upturned umbrella, which made me laugh!== → **umbrella**. __mẹo__: hộp giày (shoe boxes) là cách thông thường, không gây cười.",
+    "accept": [
+     "umbrella",
+     "upturned umbrella"
+    ]
+   },
+   {
+    "n": 17,
+    "type": "gap",
+    "answer": "museum",
+    "explain_vi": "==they get taken to the local museum== → **museum**. __mẹo__: ==a sort of puffin hotel== chỉ là cách gọi vui, không điền hotel.",
+    "accept": [
+     "museum",
+     "local museum"
+    ]
+   },
+   {
+    "n": 18,
+    "type": "gap",
+    "answer": "mouse mat",
+    "explain_vi": "==I've got a puffin mouse-mat too, that's really cute== → **mouse mat**. __mẹo__: áo phông, mũ lưỡi trai được nhắc để so sánh, không phải món cậu thích.",
+    "accept": [
+     "mouse mat",
+     "mouse-mat",
+     "mousemat",
+     "puffin mouse mat",
+     "puffin mouse-mat"
+    ]
    }
   ]
  },
  "4": {
-  "yt": "t7Xr3AsBEK4",
-  "start": 10,
-  "end": 250,
-  "title": "Connected, but alone? | Sherry Turkle",
-  "channel": "TED",
-  "source_url": "https://www.ted.com/talks/sherry_turkle_alone_together",
-  "transcript_url": "https://podcasts.happyscribe.com/happy-scribe-s-favorites/connected-but-alone-sherry-turkle-2d8e081a-67d5-4cac-8384-4f99e65ef0f0",
-  "level": "B2-C1",
-  "topic_match_vi": "Công nghệ: điện thoại di động thay đổi cách con người giao tiếp và tập trung (phần mở đầu bài TED).",
-  "intro_vi": "Cậu sẽ nghe phần mở đầu bài TED của nhà tâm lý học Sherry Turkle về điện thoại di động; chú ý các con số, ví dụ về cách mọi người dùng điện thoại và cảm xúc của bà.",
+  "exam": "B2 First for Schools",
+  "level": "B2",
+  "test": "Sample Test 1",
+  "part": "3",
+  "topic_vi": "Năm bạn trẻ nói về nhiếp ảnh",
+  "instructions_vi": "Nghe 5 người nói về nhiếp ảnh; chọn cho mỗi người (câu 19–23) một ý A–H, có 3 ý thừa.",
+  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-for-Schools-Listening.pdf",
+  "paper_page": 6,
+  "paper_hint": "Part 3 ở trang 6 của file PDF",
+  "key_url": "https://www.cambridgeenglish.org/Images/697496-b2-first-for-school-listening-sample-1-answer-key.pdf",
+  "yt": "57jO-GAyVhE",
+  "yt_title": "Listening B2, FCE for schools, Sample 2015, Part 3",
+  "yt_channel": "Minming ĐẠT",
+  "start": 0,
+  "end": 491,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 19,
     "type": "mcq",
-    "q": "What did Rebecca's text say?",
-    "options": [
-     "Mom, good luck!",
-     "Mom, you will rock.",
-     "Mom, I'm proud of you."
-    ],
-    "answer": 1,
-    "explain_vi": "==Her text said, Mom, you will rock.== → **Mom, you will rock**. __Good luck là ý của tin nhắn, nhưng chữ con gái viết là rock.__"
+    "answer": 4,
+    "explain_vi": "Người 1: ==it motivates me to get out there, do different things== → **E** (đi nơi mới). __mẹo__: ==I might even do it for a career== chỉ là có thể, không phải mục tiêu (D).",
+    "choices": 8
    },
    {
-    "type": "gap",
-    "q": "In 1996, her daughter Rebecca was ______ years old.",
-    "answer": "5",
-    "accept": [
-     "five"
-    ],
-    "explain_vi": "==Rebecca was five years old and she was sitting right there in the front row== → **5**. __Đừng nhầm với 20, tuổi Rebecca năm 2012.__"
-   },
-   {
-    "type": "gap",
-    "q": "She has studied mobile communication for ______ years.",
-    "answer": "15",
-    "accept": [
-     "fifteen"
-    ],
-    "explain_vi": "==Over the past 15 years, I've studied technologies of mobile communication== → **15**. __Không tự tính 1996 đến 2012; nghe đúng số người nói.__"
-   },
-   {
+    "n": 20,
     "type": "mcq",
-    "q": "What 'new skill' do people tell her about?",
-    "options": [
-     "making eye contact while texting",
-     "texting under the table in class",
-     "doing email in board meetings"
-    ],
-    "answer": 0,
-    "explain_vi": "==the important new skill of making eye contact while you're texting== → **eye contact**. __Classes, board meetings là nơi người ta nhắn tin.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What does she notice about the children who complain?",
-    "options": [
-     "They text at dinner, too.",
-     "They sleep with phones, too.",
-     "They ignore each other, too."
-    ],
     "answer": 2,
-    "explain_vi": "==these same children deny each other their full attention== → **They ignore each other, too**. __Nhắn tin bữa tối là bố mẹ; ngủ cùng điện thoại là Rebecca.__"
+    "explain_vi": "Người 2: ==a way of freezing a moment in time with just one click== → **C** (lưu giữ kỷ niệm). __mẹo__: ==becoming a real expert== là lời người khác, bạn ấy không bận tâm (D sai).",
+    "choices": 8
+   },
+   {
+    "n": 21,
+    "type": "mcq",
+    "answer": 7,
+    "explain_vi": "Người 3: ==I actually feel more sure of myself== khi cầm máy → **H** (tự tin hơn). __mẹo__: ý ==truly original== nói về người khác, không phải F.",
+    "choices": 8
+   },
+   {
+    "n": 22,
+    "type": "mcq",
+    "answer": 5,
+    "explain_vi": "Người 4: ==using my imagination to create something unique== → **F** (ý tưởng nghệ thuật độc đáo). __mẹo__: ==I'm no great perfectionist== loại D.",
+    "choices": 8
+   },
+   {
+    "n": 23,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "Người 5: ==I get pleasure out of solving puzzles... experimenting to see how it all works== (phần mềm) → **A**. __mẹo__: ==I can't say I'm some expert== loại D.",
+    "choices": 8
    }
   ]
  },
  "5": {
-  "yt": "BHY0FxzoKZE",
+  "exam": "B2 First for Schools",
+  "level": "B2",
+  "test": "Sample Test 1",
+  "part": "4",
+  "topic_vi": "Phóng viên nhí ở đài phát thanh địa phương",
+  "instructions_vi": "Nghe phỏng vấn Luke về làm phóng viên đài phát thanh; chọn A, B hoặc C cho câu 24–30.",
+  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-for-Schools-Listening.pdf",
+  "paper_page": 7,
+  "paper_hint": "Part 4 ở trang 7 của file PDF",
+  "key_url": "https://www.cambridgeenglish.org/Images/697496-b2-first-for-school-listening-sample-1-answer-key.pdf",
+  "yt": "lMy8L5BXojI",
+  "yt_title": "Listening B2, FCE for schools, Sample 2015, Part 4",
+  "yt_channel": "Minming ĐẠT",
   "start": 0,
-  "end": 240,
-  "title": "The Brain-Changing Benefits of Exercise | Wendy Suzuki | TED",
-  "channel": "TED",
-  "source_url": "https://www.ted.com/talks/wendy_suzuki_the_brain_changing_benefits_of_exercise",
-  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/758146/the-brain-changing-benefits-of-exerci-5841002/",
-  "level": "B2-C1",
-  "topic_match_vi": "Sức khoẻ: vận động thể chất có lợi cho não bộ (phần mở đầu bài TED).",
-  "intro_vi": "Cậu sẽ nghe phần mở đầu bài TED của nhà thần kinh học Wendy Suzuki về lợi ích của vận động với não; chú ý tên các vùng não và chức năng của chúng.",
+  "end": 927,
+  "max_plays": 1,
+  "timing_verified": "video chỉ chứa đúng Part này; đáp án in trong mô tả video trùng 100% key chính thức (24/10/2026)",
   "items": [
    {
-    "type": "gap",
-    "q": "Moving your body is good right away for your mood and your ______.",
-    "answer": "focus",
-    "accept": [],
-    "explain_vi": "==including your mood and your focus== → **focus**. __Nghe từ cuối sau and your; mood được nói trước.__"
-   },
-   {
+    "n": 24,
     "type": "mcq",
-    "q": "What does the speaker show the audience?",
-    "options": [
-     "a scan of her brain",
-     "a brain cell recording",
-     "a real human brain"
-    ],
     "answer": 2,
-    "explain_vi": "==So here is a real preserved human brain.== → **a real human brain**. __Ghi hoạt động tế bào não là việc bà làm trong phòng thí nghiệm.__"
+    "explain_vi": "==making us see that everyone has a story that's worth telling== → **C**. __mẹo__: ==Some of us might go on to work at a radio station== chỉ là khả năng, không phải mục đích (A).",
+    "choices": 3
    },
    {
-    "type": "gap",
-    "q": "The prefrontal cortex is key for decision-making, attention and your ______.",
-    "answer": "personality",
-    "accept": [],
-    "explain_vi": "==decision-making, focus, attention and your personality== → **personality**. __Trí nhớ dài hạn là việc của hippocampus, không phải vùng này.__"
-   },
-   {
+    "n": 25,
     "type": "mcq",
-    "q": "What was her research about before she changed it?",
-    "options": [
-     "how exercise changes the brain",
-     "how lasting memories form",
-     "how the brain makes decisions"
-    ],
-    "answer": 1,
-    "explain_vi": "==your first kiss, or the moment your first child was born== → khoảnh khắc ngắn thành ký ức. __Exercise là hướng bà chuyển sang sau này.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Why was it unusual for her to switch her research?",
-    "options": [
-     "Her memory work was going well.",
-     "She had just become a professor.",
-     "Her lab had found nothing new."
-    ],
     "answer": 0,
-    "explain_vi": "==I was actually at the height of all the memory work== → **Her memory work was going well**. __Bà đã là full professor từ trước.__"
+    "explain_vi": "==The weird thing was having to practise being natural and relaxed.== → **A** (cách nói). __mẹo__: kịch bản (B) không cần: ==rather than write a script==.",
+    "choices": 3
+   },
+   {
+    "n": 26,
+    "type": "mcq",
+    "answer": 2,
+    "explain_vi": "==it meant I'd be the centre of attention for a few days== → **C** (ngại bị chú ý). __mẹo__: thầy cô ==seemed quite keen== nên A sai.",
+    "choices": 3
+   },
+   {
+    "n": 27,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==people often opened up and revealed much more than I'd expected== → **A** (cởi mở). __mẹo__: bạn bè lại ==go all self-conscious==, trái với B.",
+    "choices": 3
+   },
+   {
+    "n": 28,
+    "type": "mcq",
+    "answer": 2,
+    "explain_vi": "==Everything you record has to be carefully edited.== → **C** (hiểu việc biên tập là cần). __mẹo__: chuyện câu ngớ ngẩn không phát sóng không phải nỗi lo (A).",
+    "choices": 3
+   },
+   {
+    "n": 29,
+    "type": "mcq",
+    "answer": 1,
+    "explain_vi": "==I had to be a journalist, a producer and an engineer all at the same time== → **B**. __mẹo__: ==I never complained== nên không có gì để hối tiếc (A).",
+    "choices": 3
+   },
+   {
+    "n": 30,
+    "type": "mcq",
+    "answer": 1,
+    "explain_vi": "==you have to be creative and pay attention to the words you use== → **B**. __mẹo__: cảm giác ==talking directly to you== không có nghĩa phải gặp thính giả (A).",
+    "choices": 3
    }
   ]
  },
  "6": {
-  "yt": "gRvmFkkNwYk",
-  "start": 0,
-  "end": 235,
-  "title": "Tackling Overtourism - Behind the News",
-  "channel": "Behind the News",
-  "source_url": "https://learnenglishteens.britishcouncil.org/study-break/video-zone/tackling-overtourism",
-  "transcript_url": "https://learnenglishteens.britishcouncil.org/study-break/video-zone/tackling-overtourism",
+  "exam": "B2 First for Schools",
   "level": "B2",
-  "topic_match_vi": "Du lịch: tác hại của du lịch quá tải và các giải pháp (thuế du khách, giới hạn khách); có hội thoại tiểu phẩm và lời phóng viên.",
-  "intro_vi": "Cậu sẽ nghe bản tin Behind the News (Úc) có tiểu phẩm ở đại lý du lịch về tình trạng du lịch quá tải; chú ý tên địa danh, con số và các giải pháp được nêu.",
+  "test": "Sample Test 2",
+  "part": "1 · câu 1–4",
+  "topic_vi": "Đoạn ngắn: lớp vẽ truyện tranh, khảo sát bướm, đi bộ từ thiện, bài thuyết trình",
+  "instructions_vi": "Nghe 4 đoạn ngắn độc lập (câu 1–4), mỗi đoạn chọn A, B hoặc C.",
+  "paper_pdf": "https://languageadvisor.net/wp-content/uploads/2021/06/First-for-Schools-2015-Listening-sample-paper-2.pdf",
+  "paper_page": 2,
+  "paper_hint": "Part 1 ở trang 2 của file PDF",
+  "key_url": "https://www.cambridgefoundation.jp/pdf/ceq/b2fs/First%20for%20Schools%202015%20Answer%20key%20sample%20paper%202.pdf",
+  "yt": "lD2Tjzx21LM",
+  "yt_title": "Listening B2, FCE for schools, Sample 2015 2, Part 1",
+  "yt_channel": "Minming ĐẠT",
+  "start": 0,
+  "end": 393,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "gap",
-    "q": "The travel agency in the sketch is called Jolly ______.",
-    "answer": "Journey",
-    "accept": [
-     "journey"
-    ],
-    "explain_vi": "==Welcome to Jolly Journey. How can I help?== → **Journey**. __Tên riêng nên viết hoa chữ cái đầu.__"
-   },
-   {
+    "n": 1,
     "type": "mcq",
-    "q": "How many rentals are holiday rentals, says the real estate agent?",
-    "options": [
-     "more than half",
-     "about a quarter",
-     "almost all of them"
-    ],
+    "choices": 3,
     "answer": 0,
-    "explain_vi": "==More than half of the rentals are holiday rentals== → **more than half**. __Hệ quả là giá thuê quá cao với người dân và người lao động.__"
+    "explain_vi": "==I make it seem so straightforward== → **A**. __Mẹo: \"regardless of experience\" nghe giống B, nhưng thầy nói ai cũng học được; luyện thêm là việc cậu tự làm (C).__"
    },
    {
+    "n": 2,
     "type": "mcq",
-    "q": "What does the Majorca resident say is happening to workers?",
-    "options": [
-     "They are giving up old jobs.",
-     "They are leaving the island.",
-     "They are serving only tourists."
-    ],
+    "choices": 3,
     "answer": 1,
-    "explain_vi": "==Workers are being driven off the island.== → **They are leaving the island**. __Bỏ nghề cũ, phục vụ du khách là ý phóng viên nói trước đó.__"
+    "explain_vi": "==the tricky bit's relating the name to the one that's in front of you== → **B**. __Mẹo: bướm \"aren't hard to find\" (A); tên lạ nhưng bạn ấy đã nhớ gần hết (C).__"
    },
    {
+    "n": 3,
     "type": "mcq",
-    "q": "What will Bali's tourist tax pay for, says the government?",
-    "options": [
-     "cheaper homes for local workers",
-     "repairing damaged monuments",
-     "nature and infrastructure"
-    ],
-    "answer": 2,
-    "explain_vi": "==will go towards conservation and infrastructure== → **nature and infrastructure**. __Nhà ở và di tích là vấn đề trong bài, không phải mục đích của thuế.__"
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==I would have preferred not to have been the one in the spotlight== → **A**. __Mẹo: chân đau \"but it was worth it\" (B); mưa to là chuyện năm ngoái (C).__"
    },
    {
-    "type": "gap",
-    "q": "Experts say tourists should try to stay for more than just a ______.",
-    "answer": "night",
-    "accept": [
-     "one night"
-    ],
-    "explain_vi": "==trying to stay for more than just a night== → **night**. __Các lời khuyên khác: tôn trọng văn hoá, đến nơi ít người biết.__"
+    "n": 4,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==for this class presentation I'd say just pick the subject that you know most about== → **C**. __Mẹo: cô nói không cần research (A); bài về nhà ít chỉ là hệ quả (B).__"
    }
   ]
  },
  "7": {
-  "yt": "MMmOLN5zBLY",
-  "start": 0,
-  "end": 240,
-  "title": "The benefits of a bilingual brain - Mia Nacamulli",
-  "channel": "TED-Ed",
-  "source_url": "https://www.ted.com/talks/mia_nacamulli_the_benefits_of_a_bilingual_brain",
-  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/807611/the-benefits-of-a-bilingual-brain-mia-6326576/",
+  "exam": "B2 First for Schools",
   "level": "B2",
-  "topic_match_vi": "Ôn buổi 1 (học tập): học ngoại ngữ và lợi ích của việc biết hai ngôn ngữ, rất gần với học sinh ôn chuyên Anh.",
-  "intro_vi": "Cậu sẽ nghe bài TED-Ed về lợi ích của bộ não song ngữ; chú ý ba kiểu người song ngữ trong gia đình Gabriella và những thay đổi trong não.",
+  "test": "Sample Test 2",
+  "part": "1 · câu 5–8",
+  "topic_vi": "Đoạn ngắn: cuộc thi thiết kế game, làm thơ, sách về cầu thủ, vườn thú",
+  "instructions_vi": "Nghe 4 đoạn ngắn độc lập (câu 5–8), mỗi đoạn chọn A, B hoặc C.",
+  "paper_pdf": "https://languageadvisor.net/wp-content/uploads/2021/06/First-for-Schools-2015-Listening-sample-paper-2.pdf",
+  "paper_page": 3,
+  "paper_hint": "Part 1 ở trang 3 của file PDF",
+  "key_url": "https://www.cambridgefoundation.jp/pdf/ceq/b2fs/First%20for%20Schools%202015%20Answer%20key%20sample%20paper%202.pdf",
+  "yt": "lD2Tjzx21LM",
+  "yt_title": "Listening B2, FCE for schools, Sample 2015 2, Part 1",
+  "yt_channel": "Minming ĐẠT",
+  "start": 393,
+  "end": 769,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "gap",
-    "q": "Gabriella's family moves from Peru to the US when she is ______ years old.",
-    "answer": "2",
-    "accept": [
-     "two"
-    ],
-    "explain_vi": "==from Peru when she's two-years old== → **2**. __Peru và US là thông tin phụ; chỗ trống cần tuổi.__"
-   },
-   {
+    "n": 5,
     "type": "mcq",
-    "q": "Which type of bilingual might Gabriella's teenage brother be?",
-    "options": [
-     "a subordinate bilingual",
-     "a compound bilingual",
-     "a coordinate bilingual"
-    ],
-    "answer": 2,
-    "explain_vi": "==Her teenage brother, on the other hand, might be a coordinate bilingual== → **coordinate**. __Compound là Gabriella, subordinate là bố mẹ.__"
-   },
-   {
-    "type": "gap",
-    "q": "Adults who learn a second language show less emotional ______.",
-    "answer": "bias",
-    "accept": [
-     "biases"
-    ],
-    "explain_vi": "==people who learned a second language in adulthood exhibit less emotional bias== → **bias**. __Câu này nói về người học khi đã lớn.__"
-   },
-   {
-    "type": "mcq",
-    "q": "By how much can bilingualism delay Alzheimer's?",
-    "options": [
-     "up to five years",
-     "up to two years",
-     "up to three years"
-    ],
-    "answer": 0,
-    "explain_vi": "==like Alzheimer's and dementia by as much as five years== → **five years**. __Two là tuổi của Gabriella khi chuyển nhà.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Why did people once think bilingualism slowed children down?",
-    "options": [
-     "Children mixed up two accents.",
-     "Separating languages took energy.",
-     "Children learned with less emotion."
-    ],
+    "choices": 3,
     "answer": 1,
-    "explain_vi": "==spend too much energy distinguishing between languages== → **Separating languages took energy**. __Bài nói quan điểm này dựa trên flawed studies.__"
+    "explain_vi": "==I'll definitely have a closer look at the competition rules== → **B**. __Mẹo: 11–16 tuổi là hợp nên A sai; bạn ấy chưa chắc mình đủ giỏi nên C sai.__"
+   },
+   {
+    "n": 6,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==choosing something from this collection… all by people your own age== → **C**. __Mẹo: đọc thơ cổ điển (A) và tìm trên mạng (B) chỉ là ý cô hỏi lớp.__"
+   },
+   {
+    "n": 7,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==I had no idea he'd had such a tough childhood== – \"me neither\" → **A**. __Mẹo: B bị bác vì người khác viết hộ; cuối cùng hai bạn tin lời trong sách là thật (C sai).__"
+   },
+   {
+    "n": 8,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==there are thought to be only about 400 left== → **B**. __Mẹo: con non chưa có tên nhưng không mời đặt tên (A); \"problems\" chỉ nhắc khi giới thiệu trang web (C).__"
    }
   ]
  },
  "8": {
-  "yt": "cSKGa_7XJkg",
-  "start": 0,
-  "end": 225,
-  "title": "How false news can spread - Noah Tavlin",
-  "channel": "TED-Ed",
-  "source_url": "https://milunesco.unaoc.org/mil-resources/how-false-news-can-spread",
-  "transcript_url": "https://www.lingq.com/tr/online-ingilizce-%C3%B6%C4%9Fren/courses/561494/how-false-news-can-spread-noah-tavlin-3476936/",
+  "exam": "B2 First for Schools",
   "level": "B2",
-  "topic_match_vi": "Đúng chủ đề truyền thông: tin giả lan truyền qua báo chí, wiki và mạng; lời khuyên kiểm tra nguồn tin.",
-  "intro_vi": "Cậu sẽ nghe bài TED-Ed về cách tin giả lan truyền qua hiện tượng 'circular reporting'; chú ý các ví dụ, năm và con số trong bài.",
+  "test": "Sample Test 2",
+  "part": "3",
+  "topic_vi": "Năm bạn trẻ nói về sở thích",
+  "instructions_vi": "Nghe 5 bạn nói về sở thích; chọn cho mỗi người (câu 19–23) điều bạn ấy thích nhất trong A–H, có 3 ý thừa.",
+  "paper_pdf": "https://languageadvisor.net/wp-content/uploads/2021/06/First-for-Schools-2015-Listening-sample-paper-2.pdf",
+  "paper_page": 5,
+  "paper_hint": "Part 3 ở trang 5 của file PDF",
+  "key_url": "https://www.cambridgefoundation.jp/pdf/ceq/b2fs/First%20for%20Schools%202015%20Answer%20key%20sample%20paper%202.pdf",
+  "yt": "9v1jsZ6AUVM",
+  "yt_title": "Listening B2, FCE for schools, Sample 2015 2, Part 3",
+  "yt_channel": "Minming ĐẠT",
+  "start": 0,
+  "end": 484,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 19,
     "type": "mcq",
-    "q": "What does the speaker say about outlets like Reuters in the past?",
-    "options": [
-     "They were the main source of world news",
-     "They were far less common than today",
-     "They collected all their news first-hand"
-    ],
-    "answer": 1,
-    "explain_vi": "==Outlets like Reuters and the Associated Press ... were relatively rare compared to today== → **B**. __Tự thu thập tin và đưa tin toàn cầu là việc của các báo, đài lớn.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What was the article in the British Medical Journal about?",
-    "options": [
-     "whether vaccines given to children cause autism",
-     "diseases spreading among unvaccinated children",
-     "energy teenagers use playing computer games"
-    ],
+    "choices": 8,
     "answer": 2,
-    "explain_vi": "Bài báo đùa tên ==Energy Expenditure in Adolescents Playing New Generation Computer Games== → **C**. __Vắc-xin và bệnh dịch thuộc ví dụ bài báo năm 1998 ngay trước đó.__"
+    "explain_vi": "Người 1: ==you can make up your own tricks on it== → **C** (được sáng tạo). __Mẹo: có nhắc thi đấu (D) nhưng chỉ \"good fun\".__"
    },
    {
-    "type": "gap",
-    "q": "Science publications have cited the BMJ article over ______ times.",
-    "answer": "400",
-    "accept": [
-     "four hundred"
-    ],
-    "explain_vi": "==has been referenced in serious science publications over 400 times== → **400**. __Gặp chỗ trống là số, cậu ghi ngay bằng chữ số khi nghe.__"
-   },
-   {
-    "type": "gap",
-    "q": "Our desire for quick ______ may be stronger than our wish to be sure.",
-    "answer": "answers",
-    "accept": [],
-    "explain_vi": "==our desire for quick answers may overpower the desire to be certain== → **answers**. __Information cũng được nhắc ngay trước, nhưng đi với quick ở câu này là answers.__"
-   },
-   {
+    "n": 20,
     "type": "mcq",
-    "q": "Which piece of advice does the speaker give?",
-    "options": [
-     "look for criticism of claims that seem suspicious",
-     "check if several outlets report the same story",
-     "trust respected journals such as the British Medical Journal"
-    ],
+    "choices": 8,
+    "answer": 7,
+    "explain_vi": "Người 2: ==aimed at people like me… who just like to enjoy themselves== → **H**. __Mẹo: có kết bạn (B), còn đi thi thì \"not counting on it\" (D).__"
+   },
+   {
+    "n": 21,
+    "type": "mcq",
+    "choices": 8,
+    "answer": 3,
+    "explain_vi": "Người 3: ==put our photos in competitions – that's what makes it really worthwhile== → **D**. __Mẹo: \"isn't as challenging\" nên loại A.__"
+   },
+   {
+    "n": 22,
+    "type": "mcq",
+    "choices": 8,
+    "answer": 5,
+    "explain_vi": "Người 4: ==I get a real buzz from seeing the look on their faces== → **F**. __Mẹo: không tự sáng tác (C); ngại đi thi (D).__"
+   },
+   {
+    "n": 23,
+    "type": "mcq",
+    "choices": 8,
     "answer": 0,
-    "explain_vi": "==searching for criticisms of suspicious information== → **A**. __Nhiều báo cùng đưa một tin sai và bài đùa trên BMJ chính là các bẫy bài vừa kể.__"
+    "explain_vi": "Người 5: ==I do find some recipes demanding but that's the fun of it== → **A**. __Mẹo: thi nấu (D) chỉ là hoạt động trên lớp.__"
    }
   ]
  },
  "9": {
-  "yt": "LaLvVc1sS20",
-  "start": 0,
-  "end": 185,
-  "title": "The history of tea - Shunan Teng",
-  "channel": "TED-Ed",
-  "source_url": "https://www.ted.com/talks/shunan_teng_the_history_of_tea",
-  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/289211/the-history-of-tea-shunan-teng-1085597/",
+  "exam": "B2 First for Schools",
   "level": "B2",
-  "topic_match_vi": "Ẩm thực và văn hoá: lịch sử trà và văn hoá uống trà ở Trung Quốc, Nhật Bản, châu Âu.",
-  "intro_vi": "Cậu sẽ nghe bài TED-Ed về lịch sử của trà từ Trung Quốc tới Nhật Bản và châu Âu; chú ý các năm, con số, tên người và tên nước.",
+  "test": "Sample Test 2",
+  "part": "4",
+  "topic_vi": "Phỏng vấn vận động viên bơi Helen Gibson",
+  "instructions_vi": "Nghe phỏng vấn Helen Gibson; chọn A, B hoặc C cho câu 24–30.",
+  "paper_pdf": "https://languageadvisor.net/wp-content/uploads/2021/06/First-for-Schools-2015-Listening-sample-paper-2.pdf",
+  "paper_page": 6,
+  "paper_hint": "Part 4 ở trang 6 của file PDF",
+  "key_url": "https://www.cambridgefoundation.jp/pdf/ceq/b2fs/First%20for%20Schools%202015%20Answer%20key%20sample%20paper%202.pdf",
+  "yt": "4VrWl9uNCUA",
+  "yt_title": "Listening B2, FCE for schools, Sample 2015 2, Part 4",
+  "yt_channel": "Minming ĐẠT",
+  "start": 0,
+  "end": 860,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "gap",
-    "q": "A leaf drifted into Shennong's ______ and saved his life.",
-    "answer": "mouth",
-    "accept": [],
-    "explain_vi": "Truyền thuyết kể chiếc lá ==drifted into his mouth== và cứu sống ông → **mouth**. __Đừng điền cup theo thói quen: trong bài, lá rơi vào miệng chứ không vào cốc.__"
-   },
-   {
+    "n": 24,
     "type": "mcq",
-    "q": "What does the comparison with the Great Pyramids show?",
-    "options": [
-     "Tea first became a drink around that time",
-     "Tea was grown 1,500 years before them",
-     "Shennong found tea around that time"
-    ],
-    "answer": 1,
-    "explain_vi": "Trà được trồng từ 6.000 năm trước, ==1,500 years before the pharaohs built the Great Pyramids== → **B**. __Con số 1,500 còn xuất hiện lần nữa: trà thành đồ uống 1.500 năm trước.__"
-   },
-   {
-    "type": "mcq",
-    "q": "Before it became a drink, how was tea used?",
-    "options": [
-     "pressed into small cakes for carrying",
-     "mixed as a powder with hot water",
-     "eaten as a vegetable or in porridge"
-    ],
+    "choices": 3,
     "answer": 2,
-    "explain_vi": "==It was eaten as a vegetable or cooked with grain porridge== → **C**. __Ép bánh và pha bột với nước nóng (matcha) là những cách uống trà về sau.__"
+    "explain_vi": "==he and Mum convinced me to have some swimming coaching== → **C**. __Mẹo: anh trai làm cô ngại bơi lúc đầu (A); cô không chán chạy bộ (B).__"
    },
    {
-    "type": "gap",
-    "q": "China had nearly all of the world's tea ______.",
-    "answer": "trees",
-    "accept": [
-     "tree"
-    ],
-    "explain_vi": "Trung Quốc có ==a virtual monopoly on the world's tea trees== → **trees**. __Trade nghe hợp lý nhưng người nói dùng trees: nghe kỹ từ cuối câu.__"
+    "n": 25,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==things aren't worth doing if you're not passionate about them… it was down to me== → **A**. __Mẹo: câu lạc bộ, hồ bơi gần nhà (B, C) chỉ là may mắn phụ.__"
    },
    {
-    "type": "gap",
-    "q": "Catherine of Braganza married the English king in ______.",
-    "answer": "1661",
-    "accept": [],
-    "explain_vi": "Catherine ==married King Charles II in 1661== → **1661**. __Gần đó còn có mốc early 1600s khi thương nhân Hà Lan đưa trà sang châu Âu.__"
+    "n": 26,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==I had some amazing coaches… I'm grateful to them for that== → **B**. __Mẹo: cô \"never got behind\" việc học (A); ít gặp bạn nhưng \"cool with that\" (C).__"
+   },
+   {
+    "n": 27,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I always do the same series of stretches== → **C**. __Mẹo: cô ra cạnh hồ từ sớm (A); không nghĩ tới đối thủ (B).__"
+   },
+   {
+    "n": 28,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 2,
+    "explain_vi": "==I can concentrate on that 100%== → **C**. __Mẹo: báo viết sai về mình là mặt trái (A); được đi nhiều nhưng không thích sống trong vali (B).__"
+   },
+   {
+    "n": 29,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 0,
+    "explain_vi": "==there's nothing worse than competing in front of a home crowd== → **A**. __Mẹo: cô ít chấn thương (C); thua thì có chuyên gia tâm lý giúp (B).__"
+   },
+   {
+    "n": 30,
+    "type": "mcq",
+    "choices": 3,
+    "answer": 1,
+    "explain_vi": "==only you know what you're really capable of== → **B**. __Mẹo: \"can't be true for everybody\" loại A; bỏ học là chuyện riêng cô, không khuyên (C).__"
    }
   ]
  },
  "10": {
-  "yt": "rrkrvAUbU9Y",
-  "start": 85,
-  "end": 260,
-  "title": "The puzzle of motivation | Dan Pink | TED",
-  "channel": "TED",
-  "source_url": "https://www.youtube.com/watch?v=rrkrvAUbU9Y",
-  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/110040/dan-pink-the-puzzle-of-motivation-288977/",
-  "level": "B2-C1",
-  "topic_match_vi": "Công việc: động lực và tiền thưởng trong công việc, qua 'bài toán cây nến' và một thí nghiệm nổi tiếng.",
-  "intro_vi": "Cậu sẽ nghe Dan Pink kể về 'bài toán cây nến' và một thí nghiệm về tiền thưởng; chú ý năm, cách giải bài toán và kết quả bất ngờ.",
+  "exam": "B2 First",
+  "level": "B2",
+  "test": "Sample Test 1",
+  "part": "1 · câu 1–4",
+  "topic_vi": "Đoạn ngắn: lời nhắn, trung tâm thể thao nước, tay vợt, nhà thơ",
+  "instructions_vi": "Nghe 4 đoạn ngắn độc lập (câu 1–4), mỗi đoạn chọn A, B hoặc C.",
+  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-Listening.pdf",
+  "paper_page": 2,
+  "paper_hint": "Part 1 ở trang 2 của file PDF",
+  "key_url": "https://www.cambridgeenglish.org/Images/697492-b2-first-listening-sample-1-answer-key.pdf",
+  "yt": "ot8Smj3p_bg",
+  "yt_title": "Cambridge B2 First Certificate Listening Sample Test 1 - I",
+  "yt_channel": "Cambridge spell book",
+  "start": 38,
+  "end": 391,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "gap",
-    "q": "The candle problem was created in ______.",
-    "answer": "1945",
-    "accept": [],
-    "explain_vi": "Bài toán cây nến ==created in 1945== bởi Karl Duncker → **1945**. __Năm thường đứng ngay trước tên người, cậu ghi bằng chữ số.__"
-   },
-   {
+    "n": 1,
     "type": "mcq",
-    "q": "How long do most people need to find the solution?",
-    "options": [
-     "three and a half minutes",
-     "five or ten minutes",
-     "about twenty minutes"
-    ],
     "answer": 1,
-    "explain_vi": "==after five or ten minutes, most people figure out the solution== → **B**. __Ba phút rưỡi là kết quả thí nghiệm sau; 20 là số đô la tiền thưởng.__"
+    "explain_vi": "==I wondered if you wanted to come away for the weekend.== → **B** (mời đi chơi). __mẹo__: ngày giờ ==October 9== chỉ là thông tin kèm, không phải xác nhận lịch (A).",
+    "choices": 3
    },
    {
-    "type": "gap",
-    "q": "The box can also work as a ______ for the candle.",
-    "answer": "platform",
-    "accept": [],
-    "explain_vi": "Chiếc hộp không chỉ đựng đinh mà còn là ==a platform for the candle== → **platform**. __Nhìn đồ vật với chức năng mới là cách vượt qua functional fixedness.__"
-   },
-   {
+    "n": 2,
     "type": "mcq",
-    "q": "What did the fastest person of all win?",
-    "options": [
-     "$20",
-     "$5",
-     "$25"
-    ],
+    "answer": 1,
+    "explain_vi": "==I wish they'd had water games for the under fives.== → **B** (nên có trò cho trẻ nhỏ). __mẹo__: an toàn (A) đã tốt: ==Nobody's allowed in the water without a life-jacket==.",
+    "choices": 3
+   },
+   {
+    "n": 3,
+    "type": "mcq",
     "answer": 0,
-    "explain_vi": "==If you're the fastest of everyone ... you get $20== → **A**. __5 đô là thưởng cho nhóm 25% nhanh nhất; 25 là phần trăm, không phải tiền.__"
+    "explain_vi": "==the ones I have a problem with are those who assume it's all about partying== → **A**. __mẹo__: hỏi về tiền (==the financial side==) không làm cô khó chịu nhất (B).",
+    "choices": 3
    },
    {
+    "n": 4,
     "type": "mcq",
-    "q": "What does the result of the experiment suggest?",
-    "options": [
-     "The money helped people be more creative",
-     "The first group simply tried less hard",
-     "The reward made people think less well"
-    ],
     "answer": 2,
-    "explain_vi": "Nhóm được hứa thưởng ==took them, on average, three and a half minutes longer== nên tiền thưởng làm họ nghĩ kém đi → **C**. __Kết quả ngược với điều người ta thường tin.__"
+    "explain_vi": "Trẻ em ==need and want the same range of subjects that older people do== → **C** (thơ hợp mọi lứa tuổi). __mẹo__: việc đến trường (A) chỉ là bối cảnh.",
+    "choices": 3
    }
   ]
  },
  "11": {
-  "yt": "c0KYU2j0TM4",
-  "start": 0,
-  "end": 215,
-  "title": "The power of introverts | Susan Cain | TED",
-  "channel": "TED",
-  "source_url": "https://www.youtube.com/watch?v=c0KYU2j0TM4",
-  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/58847/susan-cain-the-power-of-introverts-226855/",
+  "exam": "B2 First",
   "level": "B2",
-  "topic_match_vi": "Con người và các mối quan hệ: tính cách hướng nội, áp lực phải hoà đồng với bạn bè (câu chuyện trại hè ở đầu bài TED).",
-  "intro_vi": "Cậu sẽ nghe Susan Cain kể chuyện lần đầu đi trại hè khi còn nhỏ; chú ý điều cô tưởng tượng, điều thực sự xảy ra và lời khuyên của người phụ trách trại.",
+  "test": "Sample Test 1",
+  "part": "1 · câu 5–8",
+  "topic_vi": "Đoạn ngắn: phim tài liệu, trận khúc côn cầu, nhà hàng, bản tin",
+  "instructions_vi": "Nghe 4 đoạn ngắn độc lập (câu 5–8), mỗi đoạn chọn A, B hoặc C.",
+  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-Listening.pdf",
+  "paper_page": 3,
+  "paper_hint": "Part 1 ở trang 3 của file PDF",
+  "key_url": "https://www.cambridgeenglish.org/Images/697492-b2-first-listening-sample-1-answer-key.pdf",
+  "yt": "ot8Smj3p_bg",
+  "yt_title": "Cambridge B2 First Certificate Listening Sample Test 1 - I",
+  "yt_channel": "Cambridge spell book",
+  "start": 391,
+  "end": 714,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "gap",
-    "q": "In her family, reading was the primary ______ activity.",
-    "answer": "group",
-    "accept": [],
-    "explain_vi": "==reading was the primary group activity== → **group**. __Cô nói điều này nghe có vẻ khó gần, nhưng thật ra là một cách khác để gần gũi nhau.__"
-   },
-   {
+    "n": 5,
     "type": "mcq",
-    "q": "What was camp really like, according to her?",
-    "options": [
-     "a party, but with no alcohol",
-     "a cabin of girls reading quietly",
-     "a group spelling game every day"
-    ],
-    "answer": 0,
-    "explain_vi": "==it was more like a keg party without any alcohol== → **A**. __Các cô bé đọc sách trong cabin chỉ là điều cô tưởng tượng; bài cổ vũ đánh vần mới là chuyện hằng ngày.__"
-   },
-   {
-    "type": "gap",
-    "q": "The coolest girl asked: 'Why are you being so ______?'",
-    "answer": "mellow",
-    "accept": [],
-    "explain_vi": "==Why are you being so mellow?== → **mellow** (trầm lặng), trái nghĩa với rowdy. __Người nói giải thích nghĩa ngay sau đó, cậu nghe tiếp để chắc chắn.__"
-   },
-   {
-    "type": "mcq",
-    "q": "The counselor said they should all work very hard to be...",
-    "options": [
-     "rowdy",
-     "social",
-     "outgoing"
-    ],
     "answer": 2,
-    "explain_vi": "Người phụ trách ==said we should all work very hard to be outgoing== → **C**. __Rowdy có trong bài cổ vũ, social là lời cô nói về gia đình mình.__"
+    "explain_vi": "==It was a bit short on facts though, wasn't it.== → **C** (thiếu thông tin). __mẹo__: ==hard to feel cheerful== nói về cuộc sống nơi đó, không phải chương trình buồn (B).",
+    "choices": 3
    },
    {
+    "n": 6,
     "type": "mcq",
-    "q": "Why did she feel guilty about the books?",
-    "options": [
-     "Her mother had packed them for her",
-     "The books seemed to be calling her",
-     "The counselor told her not to read"
-    ],
-    "answer": 1,
-    "explain_vi": "Cô thấy sách ==needed me somehow== và đang gọi mình, như bị bỏ rơi → **B**. __Mẹ xếp sách là chi tiết đầu bài, không phải lý do cô thấy có lỗi.__"
+    "answer": 0,
+    "explain_vi": "==I wouldn't have missed it for the world.== → **A** (vui vì được trải nghiệm). __mẹo__: ==I wish I'd brought my thicker coat== cho thấy cô KHÔNG mặc đủ ấm (B sai).",
+    "choices": 3
+   },
+   {
+    "n": 7,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==And so visually appealing on the plate.== → **A** (cách trình bày món). __mẹo__: không khí sôi động (B) chỉ một người khen.",
+    "choices": 3
+   },
+   {
+    "n": 8,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==there has been major disruption to rail services this morning== → **A** (tin giao thông). __mẹo__: tuyết, bão tuyết là nguyên nhân, không phải dự báo thời tiết (B).",
+    "choices": 3
    }
   ]
  },
  "12": {
-  "yt": "XPDVmBg5DeE",
-  "start": 0,
-  "end": 235,
-  "title": "How does laser eye surgery work? - Dan Reinstein",
-  "channel": "TED-Ed",
-  "source_url": "https://www.ted.com/talks/dan_reinstein_how_does_laser_eye_surgery_work",
-  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/561494/how-does-laser-eye-surgery-work-dan-r-3389935/",
-  "level": "B2-C1",
-  "topic_match_vi": "Khoa học và phát minh: lịch sử và nguyên lý của phát minh phẫu thuật mắt bằng laser.",
-  "intro_vi": "Cậu sẽ nghe bài TED-Ed về phát minh phẫu thuật mắt bằng laser; chú ý năm, tên các tật khúc xạ và cách tia laser hoạt động.",
+  "exam": "B2 First",
+  "level": "B2",
+  "test": "Sample Test 1",
+  "part": "2",
+  "topic_vi": "Gấu mắt kính (spectacled bear)",
+  "instructions_vi": "Nghe Angela nói về loài gấu mắt kính; điền một từ hoặc cụm ngắn vào câu 9–18.",
+  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-Listening.pdf",
+  "paper_page": 4,
+  "paper_hint": "Part 2 ở trang 4 của file PDF",
+  "key_url": "https://www.cambridgeenglish.org/Images/697492-b2-first-listening-sample-1-answer-key.pdf",
+  "yt": "ot8Smj3p_bg",
+  "yt_title": "Cambridge B2 First Certificate Listening Sample Test 1 - I",
+  "yt_channel": "Cambridge spell book",
+  "start": 714,
+  "end": 1304,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
+    "n": 9,
     "type": "gap",
-    "q": "In ______, a Spanish eye doctor was tired of glasses.",
-    "answer": "1948",
-    "accept": [],
-    "explain_vi": "==In 1948, Spanish ophthalmologist Jose Ignacio Barraquer Moner was fed up with glasses== → **1948**. __Năm đứng ngay đầu câu mở bài, cậu ghi bằng chữ số.__"
-   },
-   {
-    "type": "mcq",
-    "q": "How did Barraquer first reshape the slice of cornea?",
-    "options": [
-     "He shaped it with a flat, wide blade",
-     "He froze it and used a tiny lathe",
-     "He lifted it and used a laser beam"
-    ],
-    "answer": 1,
-    "explain_vi": "Ông nhúng lát giác mạc vào ==liquid nitrogen== rồi gọt bằng ==a miniature lathe== → **B**. __Lưỡi dao phẳng và tia laser là các bước của phẫu thuật ngày nay.__"
-   },
-   {
-    "type": "gap",
-    "q": "As we age, the ______ in the lens slowly make it bigger.",
-    "answer": "proteins",
+    "answer": "name",
+    "explain_vi": "==I thought it was such a great name!== → **name**. __mẹo__: điều làm Angela chú ý đầu tiên là cái tên, không phải ngoại hình.",
     "accept": [
-     "protein"
-    ],
-    "explain_vi": "==As the proteins in the lens age, they slowly increase its size== → **proteins**. __Nghe kỹ chủ ngữ: chính proteins làm thấu kính to dần, tới tuổi ngoài 40 thì khó đổi tiêu điểm.__"
+     "name",
+     "great name",
+     "a great name"
+    ]
    },
    {
-    "type": "mcq",
-    "q": "How do excimer lasers remove tissue from the cornea?",
-    "options": [
-     "They evaporate it without overheating",
-     "They freeze it so it can be cut away",
-     "They lift it off as a thin flap first"
-    ],
-    "answer": 0,
-    "explain_vi": "Photoablation ==essentially evaporate organic tissue== mà không làm nóng mô xung quanh → **A**. __Làm đông lạnh là cách của Barraquer; lật lớp mỏng là bước chuẩn bị.__"
-   },
-   {
+    "n": 10,
     "type": "gap",
-    "q": "Sculpting the cornea takes less than ______ seconds per eye.",
-    "answer": "30",
+    "answer": "chest",
+    "explain_vi": "==they can extend as far as the bear's cheeks or even chest== → **chest**. __mẹo__: mắt và má đã có sẵn trong câu hỏi, phải điền chỗ còn lại.",
     "accept": [
-     "thirty"
-    ],
-    "explain_vi": "==This process usually takes less than 30 seconds for each eye== → **30**. __Cậu chú ý đơn vị seconds và cụm for each eye.__"
+     "chest"
+    ]
+   },
+   {
+    "n": 11,
+    "type": "gap",
+    "answer": "northern",
+    "explain_vi": "==in northern parts of Argentina and eastern Panama== → **northern**. __mẹo__: eastern đi với Panama, không phải Argentina.",
+    "accept": [
+     "northern"
+    ]
+   },
+   {
+    "n": 12,
+    "type": "gap",
+    "answer": "forests",
+    "explain_vi": "==They are most commonly found in forests, though.== → **forests**. __mẹo__: sa mạc, núi cao là nơi có thể gặp, không phải thường gặp.",
+    "accept": [
+     "forests"
+    ]
+   },
+   {
+    "n": 13,
+    "type": "gap",
+    "answer": "winter",
+    "explain_vi": "==they don't sleep all through the winter as many other types of bear do== → **winter**. __mẹo__: khác biệt là không ngủ đông.",
+    "accept": [
+     "winter",
+     "the winter"
+    ]
+   },
+   {
+    "n": 14,
+    "type": "gap",
+    "answer": "humans",
+    "explain_vi": "==what I find really sad is the fact that humans destroy their habitat== → **humans**. __mẹo__: sư tử núi, báo đốm là kẻ thù tự nhiên, không làm cô buồn.",
+    "accept": [
+     "humans",
+     "human",
+     "the humans",
+     "some humans",
+     "the human",
+     "some human"
+    ]
+   },
+   {
+    "n": 15,
+    "type": "gap",
+    "answer": "berries",
+    "explain_vi": "==their normal diet is tree bark and berries== → **berries**. __mẹo__: mật ong chỉ ăn ==On rare occasions==.",
+    "accept": [
+     "berries"
+    ]
+   },
+   {
+    "n": 16,
+    "type": "gap",
+    "answer": "platform",
+    "explain_vi": "==they make a platform – why?== → **platform**. __mẹo__: chi tiết ngồi trên cây nhiều ngày dẫn tới đáp án.",
+    "accept": [
+     "platform",
+     "a platform",
+     "the platform"
+    ]
+   },
+   {
+    "n": 17,
+    "type": "gap",
+    "answer": "mice",
+    "explain_vi": "==they like small mice best if they can get them!== → **mice**. __mẹo__: chim, côn trùng cũng ăn nhưng không thích bằng.",
+    "accept": [
+     "mice",
+     "small mice",
+     "little mice"
+    ]
+   },
+   {
+    "n": 18,
+    "type": "gap",
+    "answer": "diary",
+    "explain_vi": "==has published a very funny diary of his time there== → **diary**. __mẹo__: ==funny== khớp với amusing trong câu hỏi.",
+    "accept": [
+     "diary",
+     "funny diary",
+     "a diary",
+     "a funny diary"
+    ]
    }
   ]
  },
  "13": {
-  "yt": "r9LCwI5iErE",
-  "start": 0,
-  "end": 215,
-  "title": "The transformative power of classical music | Benjamin Zander | TED",
-  "channel": "TED",
-  "source_url": "https://www.ted.com/talks/benjamin_zander_the_transformative_power_of_classical_music",
-  "transcript_url": "https://www.benjaminzander.org/uploads/2020/07/TED_-The-transformative-power-of-classical-music-Transcript.pdf",
+  "exam": "B2 First",
   "level": "B2",
-  "topic_match_vi": "Nghệ thuật: nhạc trưởng nói về nhạc cổ điển và minh hoạ bằng đàn piano cách một cậu bé tiến bộ khi học đàn.",
-  "intro_vi": "Cậu sẽ nghe nhạc trưởng Benjamin Zander kể chuyện hai người bán giày rồi chơi piano minh hoạ một cậu bé học đàn qua từng năm; chú ý chi tiết câu chuyện và điều thực sự thay đổi.",
+  "test": "Sample Test 1",
+  "part": "3",
+  "topic_vi": "Năm người kể chuyến thăm một thành phố",
+  "instructions_vi": "Nghe 5 người kể về chuyến thăm thành phố; chọn điều mỗi người thích nhất (câu 19–23) trong A–H, có 3 ý thừa.",
+  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-Listening.pdf",
+  "paper_page": 5,
+  "paper_hint": "Part 3 ở trang 5 của file PDF",
+  "key_url": "https://www.cambridgeenglish.org/Images/697492-b2-first-listening-sample-1-answer-key.pdf",
+  "yt": "EmPLTJzixxQ",
+  "yt_title": "Cambridge B2 First Certificate Listening Sample Test 1 - II",
+  "yt_channel": "Cambridge spell book",
+  "start": 0,
+  "end": 470,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "gap",
-    "q": "Two shoe salesmen went down to Africa in the ______.",
-    "answer": "1900s",
-    "accept": [
-     "1900's",
-     "nineteen hundreds"
-    ],
-    "explain_vi": "==two salesmen who went down to Africa in the 1900s== → **1900s**. __Nghe nineteen hundreds thì viết 1900s; Manchester là nơi họ gửi điện tín về.__"
+    "n": 19,
+    "type": "mcq",
+    "answer": 6,
+    "explain_vi": "Người 1: ==We were spoilt for choice.== (nhiều hoạt động giải trí) → **G**. __mẹo__: ==shops and markets== được nhắc trước nhưng không phải điều thích nhất (C).",
+    "choices": 8
    },
    {
+    "n": 20,
     "type": "mcq",
-    "q": "What signs that classical music is dying does he mention?",
-    "options": [
-     "orchestras and record firms closing",
-     "the statistics and trends he shows",
-     "children giving up their piano lessons"
-    ],
+    "answer": 1,
+    "explain_vi": "Người 2: ==impressed by the forests and mountains around the city== → **B**. __mẹo__: ==too lazy to go to the famous markets== loại C.",
+    "choices": 8
+   },
+   {
+    "n": 21,
+    "type": "mcq",
     "answer": 0,
-    "explain_vi": "==all the orchestras that are closing, the record companies that are folding== → **A**. __Ông nói rõ sẽ không đưa số liệu (rather than go into statistics); bỏ học đàn là chuyện cậu bé sau này.__"
+    "explain_vi": "Người 3: ==I was really impressed that they were always on time== (xe công cộng) → **A**. __mẹo__: ==didn't really understand the city plan== loại E.",
+    "choices": 8
    },
    {
+    "n": 22,
     "type": "mcq",
-    "q": "What does he say usually happens when the child is ten?",
-    "options": [
-     "He gets a new teacher",
-     "He becomes passionate",
-     "He usually gives up"
-    ],
-    "answer": 2,
-    "explain_vi": "==At that point, they usually give up.== → **C**. __Thầy mới và đam mê là những lý do ông nêu cho tuổi 11 rồi bác bỏ.__"
+    "answer": 7,
+    "explain_vi": "Người 4: nơi ở ==they were all excellent== → **H**. __mẹo__: ==old traditional farms converted into guest houses== nói về chỗ ở, không phải kiến trúc (D).",
+    "choices": 8
    },
    {
-    "type": "gap",
-    "q": "At nine, the boy put an impulse on every ______ notes.",
-    "answer": "4",
-    "accept": [
-     "four"
-    ],
-    "explain_vi": "==The nine-year-old put an impulse on every four notes.== → **4**. __Dãy tăng dần: mọi nốt, every other note, 4 rồi 8 nốt; cậu ghi tuổi kèm số.__"
-   },
-   {
+    "n": 23,
     "type": "mcq",
-    "q": "Why does he call it 'one-buttock playing'?",
-    "options": [
-     "The music pushes his body to one side",
-     "He puts one impulse on each note",
-     "He sits on the edge of the piano seat"
-    ],
-    "answer": 0,
-    "explain_vi": "==the music pushed me over, which is why I call it one-buttock playing== → **A**. __Ngồi mép ghế là đoán theo chữ; một impulse mỗi nốt là cách chơi của trẻ 7 tuổi.__"
+    "answer": 5,
+    "explain_vi": "Người 5: ==some people were even prepared to walk with us to show us the way== → **F**. __mẹo__: ==we got lost several times== loại E.",
+    "choices": 8
    }
   ]
  },
  "14": {
-  "yt": "3NE_OoO-N54",
-  "start": 0,
-  "end": 235,
-  "title": "Earworms: Those songs that get stuck in your head - Elizabeth Hellmuth Margulis",
-  "channel": "TED-Ed",
-  "source_url": "https://www.ted.com/talks/elizabeth_margulis_earworms_those_songs_that_get_stuck_in_your_head",
-  "transcript_url": "https://www.lingq.com/en/learn-english-online/courses/561494/earworms-those-songs-that-get-stuck-i-3389992/",
+  "exam": "B2 First",
   "level": "B2",
-  "topic_match_vi": "Ôn buổi 12–13: khoa học về âm nhạc (bài hát cứ lặp lại trong đầu), có nhắc tới công nghệ ghi âm và phát minh máy hát.",
-  "intro_vi": "Cậu sẽ nghe bài TED-Ed về 'earworm', những giai điệu cứ lặp lại trong đầu; chú ý số liệu, nguyên nhân và phép so sánh của người nói.",
+  "test": "Sample Test 1",
+  "part": "4",
+  "topic_vi": "Nghề làm ở phòng tranh thương mại",
+  "instructions_vi": "Nghe phỏng vấn Rachel về công việc ở phòng tranh; chọn A, B hoặc C cho câu 24–30.",
+  "paper_pdf": "https://realenglishservices.com/wp-content/uploads/2022/08/B2-First-Listening.pdf",
+  "paper_page": 6,
+  "paper_hint": "Part 4 ở trang 6 của file PDF",
+  "key_url": "https://www.cambridgeenglish.org/Images/697492-b2-first-listening-sample-1-answer-key.pdf",
+  "yt": "EmPLTJzixxQ",
+  "yt_title": "Cambridge B2 First Certificate Listening Sample Test 1 - II",
+  "yt_channel": "Cambridge spell book",
+  "start": 470,
+  "end": 1051,
+  "max_plays": 1,
+  "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
   "items": [
    {
-    "type": "gap",
-    "q": "To explain visual imagery, she asks us to imagine a red ______.",
-    "answer": "wagon",
-    "accept": [],
-    "explain_vi": "Ví dụ hình ảnh: ==close your eyes and imagine a red wagon== → **wagon**. __Ngay sau đó là ví dụ âm thanh (dầu xèo xèo trong chảo), đừng lẫn hai ví dụ.__"
-   },
-   {
+    "n": 24,
     "type": "mcq",
-    "q": "What does she compare an earworm to?",
-    "options": [
-     "a pot of water left to boil",
-     "an unwanted house guest",
-     "a pan of oil sizzling"
-    ],
-    "answer": 1,
-    "explain_vi": "Earworm ==intrudes onto your mental soundscape== như ==an unwanted house guest== → **B**. __Nồi nước chờ sôi và dầu trong chảo là các ví dụ khác ở đoạn trước.__"
-   },
-   {
-    "type": "gap",
-    "q": "Earworms are usually made up of a tune, rather than ______.",
-    "answer": "harmonies",
-    "accept": [
-     "harmony"
-    ],
-    "explain_vi": "==they're normally made up of a tune, rather than, say, harmonies== → **harmonies**. __Lyrics nghe hợp lý nhưng người nói không dùng từ này; nghe kỹ sau rather than, say.__"
-   },
-   {
-    "type": "mcq",
-    "q": "What was the 1876 short story about?",
-    "options": [
-     "the invention of the phonograph",
-     "a song stuck in Shakespeare's head",
-     "a jingle taking over a whole town"
-    ],
     "answer": 2,
-    "explain_vi": "Mark Twain viết truyện ==imagining a sinister takeover of an entire town by a rhyming jingle== → **C**. __Máy hát ra đời một năm sau; Shakespeare được nhắc ở câu sau.__"
+    "explain_vi": "==it does describe the majority of what I do== → **C**. __mẹo__: ==you can practically invent your job title== là nói chung, không phải chức danh làm cô quan trọng hơn (A).",
+    "choices": 3
    },
    {
+    "n": 25,
     "type": "mcq",
-    "q": "Why does she ask about watercolors?",
-    "options": [
-     "Pictures get stuck in our heads too",
-     "Music is unusual in getting stuck",
-     "Visual images are stronger than sound"
-    ],
     "answer": 1,
-    "explain_vi": "Ngoài âm nhạc ==it's hard to think of== hình ảnh xâm nhập nào phổ biến như vậy, nên bà hỏi ==Why don't watercolors get stuck in our heads?== → **B**. __Đây là câu hỏi tu từ.__"
+    "explain_vi": "==they're not of the required standard== → **B** (chất lượng chưa đạt). __mẹo__: chủ đề (A) chỉ đôi khi là lý do.",
+    "choices": 3
+   },
+   {
+    "n": 26,
+    "type": "mcq",
+    "answer": 2,
+    "explain_vi": "Thư từ chối ==explaining why we can't show their work== rồi họ gọi cãi: ==very hard to deal with== → **C**. __mẹo__: không bán được (A) không phải vấn đề chính.",
+    "choices": 3
+   },
+   {
+    "n": 27,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==I try to find out what has influenced them== → **A** (thông tin nền về nghệ sĩ). __mẹo__: khách gọi đặt mua (B) là hệ quả, không phải mục đích.",
+    "choices": 3
+   },
+   {
+    "n": 28,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==There are systems in place to deal with routine jobs== → **A** (việc giấy tờ có người lo). __mẹo__: ==I can cope without an assistant== loại B.",
+    "choices": 3
+   },
+   {
+    "n": 29,
+    "type": "mcq",
+    "answer": 0,
+    "explain_vi": "==I phone round companies, explain what we do== → **A** (chủ động liên hệ). __mẹo__: khách gọi sau khi có catalogue không phải việc chính của cô (B).",
+    "choices": 3
+   },
+   {
+    "n": 30,
+    "type": "mcq",
+    "answer": 1,
+    "explain_vi": "==The really rewarding thing for me is that you never know how a day is going to go.== → **B**. __mẹo__: người dễ mến, được ở cạnh tranh (A, C) chỉ là điểm cộng phụ.",
+    "choices": 3
    }
   ]
  }

@@ -11,18 +11,21 @@ function txDone(kind){if(!C.test_local)return true;const r=S[kind];if(!r)return 
 
 /* --- phần nghe: một đoạn YouTube, nghe tối đa 2 lần khi làm bài --- */
 function txYtHTML(kind){const R=TESTS[kind].listen_yt;if(!R)return '';
-  return `<div class="t-yt" data-kind="${kind}"><div class="yl-head"><span class="yl-tag">BẢN GHI THẬT</span><b>${esc(R.title)}</b><span class="small muted">${esc(R.channel||'')}</span></div>
-   <p class="small">${esc(R.intro_vi||'')} Đọc 5 câu hỏi bên dưới trước, rồi bấm nghe. Cậu được nghe <b>2 lần</b>.</p>
+  const MP=R.max_plays||2;const pdf=R.paper_pdf?`${R.paper_pdf}${R.paper_page?'#page='+R.paper_page:''}`:'';
+  return `<div class="t-yt" data-kind="${kind}"><div class="yl-head"><span class="yl-tag">${R.exam?'ĐỀ MẪU CAMBRIDGE':'BẢN GHI THẬT'}</span><b>${R.exam?esc(R.exam+' · '+R.test+' · Part '+R.part):esc(R.title)}</b><span class="small muted">${R.exam?'mức '+esc(R.level||''):esc(R.channel||'')}</span></div>
+   <p class="small">${esc(R.intro_vi||'')} ${MP===1?'Đoạn nghe đã có sẵn 2 lần đọc như đề thật: bấm nghe <b>1 lượt</b> liền tới hết.':'Đọc 5 câu hỏi bên dưới trước, rồi bấm nghe. Cậu được nghe <b>2 lần</b>.'}</p>
+   ${pdf?`<p><a class="btn ghost" href="${esc(pdf)}" target="_blank" rel="noopener">📄 Mở đề gốc (PDF)</a> <span class="small muted">${R.paper_hint?esc(R.paper_hint)+'.':''}</span></p>`:''}
    <div class="yl-stage"><div class="yl-frame"><div class="tyt-player"></div><div class="yl-cover"><span style="font-size:2.2rem">🎧</span></div></div>
    <div class="yl-ctl"><button type="button" class="btn hi tyt-play">▶ Nghe lần 1</button><span class="small muted tyt-msg"></span></div></div></div>`}
 function txWireYt(form,kind,state){const box=form.querySelector('.t-yt');const R=TESTS[kind].listen_yt;if(!box||!R)return;
   const done=!!S[kind];let plays=0,player=null;const btn=box.querySelector('.tyt-play'),msg=box.querySelector('.tyt-msg');
   const link=`<a href="https://www.youtube.com/watch?v=${encodeURIComponent(R.yt)}&t=${R.start||0}s" target="_blank" rel="noopener">mở trên YouTube</a>`;
-  const label=()=>{if(done){btn.textContent='▶ Nghe lại';btn.disabled=false;return}btn.textContent=plays===0?'▶ Nghe lần 1':plays===1?'▶ Nghe lần 2':'Đã nghe 2 lần';btn.disabled=plays>=2};
-  btn.onclick=()=>{if(!done&&plays>=2)return;box.querySelector('.yl-cover').hidden=true;
+  const MP=R.max_plays||2;
+  const label=()=>{if(done){btn.textContent='▶ Nghe lại';btn.disabled=false;return}btn.textContent=MP===1?(plays?'Đã nghe xong':'▶ Bắt đầu nghe'):plays===0?'▶ Nghe lần 1':plays===1?'▶ Nghe lần 2':'Đã nghe 2 lần';btn.disabled=plays>=MP};
+  btn.onclick=()=>{if(!done&&plays>=MP)return;box.querySelector('.yl-cover').hidden=true;
     if(player&&player.seekTo){player.seekTo(R.start||0,true);player.playVideo();return}
     msg.textContent='Đang tải…';ytApi().then(YT=>{player=new YT.Player(box.querySelector('.tyt-player'),{videoId:R.yt,playerVars:{start:R.start||0,end:R.end||undefined,autoplay:1,controls:done?1:0,rel:0,modestbranding:1,playsinline:1,disablekb:done?0:1,cc_load_policy:0},
-      events:{onReady:ev=>{msg.textContent='';ev.target.playVideo()},onStateChange:ev=>{if(ev.data===1)msg.textContent='Đang phát…';if(ev.data===0){if(!done)plays++;msg.textContent=done?'':plays>=2?'Hết lượt nghe.':'Xong lần 1. Xem lại đáp án rồi nghe lần 2.';label()}},
+      events:{onReady:ev=>{msg.textContent='';ev.target.playVideo()},onStateChange:ev=>{if(ev.data===1)msg.textContent='Đang phát…';if(ev.data===0){if(!done)plays++;msg.textContent=done?'':plays>=MP?'Hết lượt nghe.':'Xong lần 1. Xem lại đáp án rồi nghe lần 2.';label()}},
         onError:()=>{state.err=true;msg.innerHTML=`Video không phát được ở đây, cậu ${link} rồi làm tiếp.`}}})}).catch(()=>{state.err=true;msg.innerHTML=`Chưa tải được trình phát, cậu ${link} rồi làm tiếp.`})};
   label()}
 
@@ -70,21 +73,23 @@ function txByDay(kind){const r=S[kind];if(!r||!r.answers||(r.tv||1)!==(TESTS[kin
 function renderCamListen(box,R,saved,onDone){
   const L='ABCDEFGH';const pdf=R.paper_pdf?`${R.paper_pdf}${R.paper_page?'#page='+R.paper_page:''}`:'';
   const useYt=!!R.yt;let plays=0,player=null,graded=!!saved;
-  box.innerHTML=`<div class="yl-head"><span class="yl-tag">ĐỀ MẪU CAMBRIDGE</span><b>${esc(R.exam)} · ${esc(R.test)} · Part ${R.part}</b><span class="small muted">mức ${esc(R.level||'')}${R.topic_vi?' · '+esc(R.topic_vi):''}</span></div>
-   <p>${esc(R.instructions_vi||'')}</p>
-   ${pdf?`<p><a class="btn ghost" href="${esc(pdf)}" target="_blank" rel="noopener">📄 Mở đề gốc (PDF${R.paper_page?', trang '+R.paper_page:''})</a> <span class="small muted">Đọc câu hỏi ở đề gốc, rồi chọn hoặc gõ đáp án vào ô bên dưới theo đúng số câu.</span></p>`:''}
+  const MP=R.max_plays||2;
+  box.innerHTML=`<div class="yl-head"><span class="yl-tag">ĐỀ MẪU CAMBRIDGE</span><b>${esc(R.exam)} · ${esc(R.test)} · Part ${esc(String(R.part))}</b><span class="small muted">mức ${esc(R.level||'')}${R.topic_vi?' · '+esc(R.topic_vi):''}</span></div>
+   ${R.intro_vi?`<p class="notice small">${esc(R.intro_vi)}</p>`:''}
+   <p>${esc(R.instructions_vi||'')} ${MP===1?'Đoạn nghe đã có sẵn 2 lần đọc như đề thật, nên cậu chỉ bấm nghe <b>1 lượt</b> và nghe liền tới hết.':'Cậu được nghe <b>2 lần</b>.'}</p>
+   ${pdf?`<p><a class="btn ghost" href="${esc(pdf)}" target="_blank" rel="noopener">📄 Mở đề gốc (PDF)</a> <span class="small muted">${R.paper_hint?esc(R.paper_hint)+'. ':''}Đọc câu hỏi ở đề gốc trước khi nghe, rồi chọn hoặc gõ đáp án vào ô bên dưới theo đúng số câu.</span></p>`:''}
    <div class="yl-stage">${useYt?`<div class="yl-frame"><div class="cam-player"></div><div class="yl-cover"><span style="font-size:2.2rem">🎧</span></div></div>`:`<audio class="cam-audio" preload="none" src="${esc(R.audio_mp3||'')}"></audio>`}
      <div class="yl-ctl"><button type="button" class="btn hi cam-play">▶ Nghe lần 1</button><span class="small muted cam-msg"></span></div></div>
-   <form class="cam-form">${R.items.map((it,i)=>`<div class="q cam-q" data-i="${i}"><div class="qhead"><span class="qnum">${it.n}</span><span class="small muted">Câu ${it.n} trong đề gốc</span></div>
+   <form class="cam-form">${R.items.map((it,i)=>`<div class="q cam-q" data-i="${i}"><div class="qhead"><span class="qnum">${it.n}</span><span class="small muted">Câu ${it.n} trong đề gốc${it.label?' · '+esc(it.label):''}</span></div>
      ${it.type==='mcq'?`<div class="opts cam-opts">${Array.from({length:it.choices||3},(_,j)=>`<label class="opt"><input type="radio" name="cm${i}" value="${j}"><span><b>${L[j]}</b></span></label>`).join('')}</div>`:`<input type="text" name="cm${i}" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Gõ từ hoặc số cậu nghe được">`}
      <div class="yl-fb" hidden></div></div>`).join('')}
      <div class="row"><button class="btn" type="submit">Chấm bài nghe</button><span class="small muted cam-res"></span></div></form>
    <p class="small muted">Đề, audio và đáp án: © Cambridge University Press & Assessment (đề mẫu công khai). Trang chỉ dẫn link tới đề gốc.</p>`;
   const btn=box.querySelector('.cam-play'),msg=box.querySelector('.cam-msg'),form=box.querySelector('.cam-form');
-  const label=()=>{if(graded){btn.textContent='▶ Nghe lại';btn.disabled=false;return}btn.textContent=plays===0?'▶ Nghe lần 1':plays===1?'▶ Nghe lần 2':'Đã nghe 2 lần';btn.disabled=plays>=2};
-  const ended=()=>{if(!graded)plays++;msg.textContent=graded?'':plays>=2?'Hết lượt nghe. Làm nốt rồi chấm bài nhé.':'Xong lần 1. Xem lại đáp án rồi nghe lần 2.';label()};
+  const label=()=>{if(graded){btn.textContent='▶ Nghe lại';btn.disabled=false;return}btn.textContent=MP===1?(plays?'Đã nghe xong':'▶ Bắt đầu nghe'):plays===0?'▶ Nghe lần 1':plays===1?'▶ Nghe lần 2':'Đã nghe 2 lần';btn.disabled=plays>=MP};
+  const ended=()=>{if(!graded)plays++;msg.textContent=graded?'':plays>=MP?'Hết lượt nghe. Làm nốt rồi chấm bài nhé.':'Xong lần 1. Xem lại đáp án rồi nghe lần 2.';label()};
   const link=R.yt?`<a href="https://www.youtube.com/watch?v=${encodeURIComponent(R.yt)}&t=${R.start||0}s" target="_blank" rel="noopener">mở trên YouTube</a>`:`<a href="${esc(R.audio_mp3||'')}" target="_blank" rel="noopener">mở file nghe</a>`;
-  btn.onclick=()=>{if(!graded&&plays>=2)return;
+  btn.onclick=()=>{if(!graded&&plays>=MP)return;
     if(!useYt){const au=box.querySelector('.cam-audio');au.onended=ended;au.onerror=()=>{msg.innerHTML=`Chưa phát được, cậu ${link}.`};try{au.currentTime=0}catch(e){}au.play().then(()=>{msg.textContent='Đang phát…'}).catch(()=>{msg.innerHTML=`Chưa phát được, cậu ${link}.`});return}
     box.querySelector('.yl-cover').hidden=true;if(player&&player.seekTo){player.seekTo(R.start||0,true);player.playVideo();return}
     msg.textContent='Đang tải…';ytApi().then(YT=>{player=new YT.Player(box.querySelector('.cam-player'),{videoId:R.yt,playerVars:{start:R.start||0,end:R.end||undefined,autoplay:1,controls:graded?1:0,rel:0,modestbranding:1,playsinline:1,disablekb:graded?0:1,cc_load_policy:0},
@@ -94,7 +99,7 @@ function renderCamListen(box,R,saved,onDone){
       if(it.type==='mcq'){ok=+v===it.answer;q.querySelectorAll('.opt').forEach(o=>{const inp=o.querySelector('input');inp.disabled=true;if(v!=null&&+inp.value===+v)inp.checked=true;o.classList.toggle('sel',v!=null&&+inp.value===+v);if(+inp.value===it.answer)o.classList.add('right');else if(v!=null&&+inp.value===+v)o.classList.add('wrong')})}
       else{const inp=q.querySelector('input');inp.value=v||'';inp.disabled=true;ok=[it.answer].concat(it.accept||[]).map(normAns).includes(normAns(v));inp.classList.add(ok?'ok':'bad')}
       if(ok)c++;const fb=q.querySelector('.yl-fb');fb.hidden=false;fb.className='yl-fb '+(ok?'good':'bad');fb.innerHTML=`<b>${ok?'Đúng rồi.':'Chưa đúng.'}</b> Đáp án: <b>${it.type==='mcq'?L[it.answer]:esc(it.answer)}</b>. ${fmtVi(it.explain_vi||'')}`});
-    const sb=form.querySelector('button[type=submit]');sb.style.display='none';form.querySelector('.cam-res').innerHTML=`Cậu đúng <b>${c}/${R.items.length}</b> câu.`;return c};
+    const sb=form.querySelector('button[type=submit]');sb.style.display='none';form.querySelector('.cam-res').innerHTML=`Cậu đúng <b>${c}/${R.items.length}</b> câu.${R.key_url?` <a href="${esc(R.key_url)}" target="_blank" rel="noopener">Đáp án gốc của Cambridge</a>`:''}`;return c};
   form.onsubmit=e=>{e.preventDefault();if(graded)return;const ans=R.items.map((it,i)=>{if(it.type==='mcq'){const r=form.querySelector(`input[name="cm${i}"]:checked`);return r?+r.value:null}return form.querySelector(`input[name="cm${i}"]`).value.trim()});
     if(ans.some(a=>a==null||a==='')&&!form.dataset.w){form.dataset.w=1;form.querySelector('.cam-res').textContent='Còn câu trống. Bấm Chấm lần nữa để chấm luôn.';return}
     graded=true;const c=show(ans);label();msg.textContent='';onDone&&onDone({correct:c,total:R.items.length,answers:ans})};

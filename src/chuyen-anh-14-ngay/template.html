@@ -953,7 +953,7 @@ const Q_STEPS=[
   {k:'check',card:'checkCard',label:'Kiểm tra cuối buổi',peep:'an',c:'#BFE6EE'}];
 function questState(n){const r=S.days[n]||{};const W=(C.web&&C.web[n])||{};
   const g=Object.keys(r.games||{}).length,gt=gamesForDay(n).length,x=Object.keys(r.exam||{}).length,xt=examFor(n).length;
-  const real=((((C.media_listen||{})[n])||{})[curTrack()]||[]).length,yt=(((C.real_listen||{})[curTrack()])||{})[n],lsN=(yt?1:0),l=(r.listen||{}).yt?1:0;
+  const real=((((C.media_listen||{})[n])||{})[curTrack()]||[]).length,yt=(((C.real_listen||{})[curTrack()])||{})[n],lsN=(yt?1:0),l=ylSaved(n,yt)?1:0;
   let up=false;try{up=typeof CLOUD!=='undefined'&&!!CLOUD&&(CLOUD.uploads||[]).some(u=>u.day===n)}catch(e){}
   return {vid:{done:!!r.video||g>0},game:{done:gt>0&&g>=gt,part:g>0,txt:`${g}/${gt}`},exam:xt?{done:x>=xt,part:x>0,txt:`${x}/${xt}`}:null,loc:(()=>{const L=localFor(n);if(!L.length)return null;const k=L.filter(o=>(r.local||{})[o.key]).length;return {done:k>=L.length,part:k>0,txt:`${k}/${L.length}`}})(),
     ls:lsN?{done:l>=1,part:l>0,txt:`${l}/1`}:null,pdf:{done:!!r.paper||up},check:{done:!!r.web}}}
@@ -1119,7 +1119,7 @@ function wireTest(kind){
 }
 function vDiag(){
   const r=S.diag;
-  M().innerHTML=`<section class="view"><div><p class="eyebrow">Trước buổi 1</p><h2>Bài kiểm tra đầu vào</h2><p class="lead">45 câu từ dễ đến khó (mức A2, B1, B2)${TESTS.diag.items.some(i=>i.obj)?', hỏi đúng những gì 14 buổi sẽ dạy':''}: nghe${TESTS.diag.listen_yt?' một đoạn video thật':''}, ngữ pháp, từ vựng, đọc hiểu và tự viết câu trả lời. Khoảng 35 phút, nhớ bật loa. Nộp xong còn 2 phần ngắn (dạng đề của sở cậu và một đoạn viết, khoảng 20 phút) để sau 14 buổi so tiến bộ. Cậu làm một mình, không tra từ điển; câu nào không biết thì cứ bỏ qua, như vậy kết quả mới đúng với sức cậu.</p></div>
+  M().innerHTML=`<section class="view"><div><p class="eyebrow">Trước buổi 1</p><h2>Bài kiểm tra đầu vào</h2><p class="lead">45 câu từ dễ đến khó (mức A2, B1, B2)${TESTS.diag.items.some(i=>i.obj)?', hỏi đúng những gì 14 buổi sẽ dạy':''}: nghe${TESTS.diag.listen_yt?(TESTS.diag.listen_yt.exam?' một phần đề mẫu Cambridge':' một đoạn video thật'):''}, ngữ pháp, từ vựng, đọc hiểu và tự viết câu trả lời. Khoảng 35 phút, nhớ bật loa. Nộp xong còn 2 phần ngắn (dạng đề của sở cậu và một đoạn viết, khoảng 20 phút) để sau 14 buổi so tiến bộ. Cậu làm một mình, không tra từ điển; câu nào không biết thì cứ bỏ qua, như vậy kết quả mới đúng với sức cậu.</p></div>
   ${r?resultCard(r,'Kết quả đầu vào')+leadCardHTML()+(SALES_ON()?earlyMsgHTML():'')+txExtrasHTML('diag')+`<div class="row"><button class="btn hi" id="toDays">${CODE_GATE()?'Xem chương trình 14 buổi':'Bắt đầu buổi 1'}</button><button class="btn ghost" id="toPlan">Xem lộ trình phù hợp</button></div><details class="card"><summary>Xem lại từng câu</summary>${renderTest('diag')}</details>`:renderTest('diag')}</section>`;
   wireTest('diag');if(r){wireTestExtras('diag',()=>vDiag());wireLead(()=>vDiag())}
   if(r){$('#toDays').onclick=()=>go('days',{day:nextDay()});$('#toPlan').onclick=()=>go('plan')}
@@ -1141,7 +1141,7 @@ function vDays(){
   renderDay(d);
 }
 
-/* ----- nghe bản ghi thật trên YouTube: nghe tối đa 2 lần, 5 câu theo format đề Sở, chấm và giải thích ----- */
+/* ----- nghe: đề mẫu Cambridge trên YouTube (renderCamListen trong testx.js); khuôn cũ giữ lại cho dữ liệu dạng cũ ----- */
 let YT_P=null;function ytApi(){if(window.YT&&window.YT.Player)return Promise.resolve(window.YT);if(YT_P)return YT_P;
   YT_P=new Promise((res,rej)=>{const prev=window.onYouTubeIframeAPIReady;window.onYouTubeIframeAPIReady=()=>{if(prev)try{prev()}catch(e){}res(window.YT)};const sc=document.createElement('script');sc.src='https://www.youtube.com/iframe_api';sc.onerror=()=>{YT_P=null;rej(new Error('yt'))};document.head.appendChild(sc)});return YT_P}
 const normAns=t=>String(t==null?'':t).toLowerCase().replace(/[’']/g,"'").replace(/[^a-z0-9'\s-]/g,' ').replace(/\s+/g,' ').trim();
@@ -1184,7 +1184,9 @@ function renderYtListen(box,R,saved,onDone){
 const pad2=n=>String(n).padStart(2,'0');
 function gPill(n){const g=(S.days[n]||{}).games||{};const k=Object.keys(g).length;const t=gamesForDay(n).length;return `<span class="pill ${k>=t?'good':''}">${k>=t?'✓ ':''}Game ${k}/${t}</span>`}
 function xPill(n){const t=examFor(n).length;if(!t)return '';const x=(S.days[n]||{}).exam||{};const k=Object.keys(x).length;return `<span class="pill ${k>=t?'good':''}">${k>=t?'✓ ':''}Dạng bài thi ${k}/${t}</span>`}
-function lPill(n){const yt=(((C.real_listen||{})[curTrack()])||{})[n];if(!yt)return '';const r=((S.days[n]||{}).listen||{}).yt;return `<span class="pill ${r?'good':''}">${r?'✓ Nghe '+r.correct+'/'+r.total:'Nghe: chưa làm'}</span>`}
+function ylKey(R){return R?R.yt+':'+(R.start||0)+':'+(R.items||[]).length:''}
+function ylSaved(n,R){const r=((S.days[n]||{}).listen||{}).yt;return r&&r.k===ylKey(R)?r:null}
+function lPill(n){const yt=(((C.real_listen||{})[curTrack()])||{})[n];if(!yt)return '';const r=ylSaved(n,yt);return `<span class="pill ${r?'good':''}">${r?'✓ Nghe '+r.correct+'/'+r.total:'Nghe: chưa làm'}</span>`}
 function learnHTML(n){const D=DAYS[n-1];const W=(C.web&&C.web[n])||{};const MD=(C.media&&C.media[n])||{};const games=gamesForDay(n);const ex=examFor(n);const rec=S.days[n]||{};const tr=curTrack();const gs=rec.games||{},xs=rec.exam||{};
   const g=D.grammar;let h='';
   const vids=[];if(MD.video)vids.push(Object.assign({lang:'en'},MD.video));((C.media_vi||{})[n]||[]).forEach(v=>vids.push(Object.assign({lang:'vi'},v)));if(tr==='nen')vids.sort((a,b)=>(a.lang==='vi'?0:1)-(b.lang==='vi'?0:1));
@@ -1200,7 +1202,7 @@ function learnHTML(n){const D=DAYS[n-1];const W=(C.web&&C.web[n])||{};const MD=(
   const ls=null; // bài nghe giọng máy đọc đã bỏ: chất lượng không đạt
   const real=(((C.media_listen||{})[n]||{})[tr])||[];const rl=(rec.listen||{}).real;
   const RL=(((C.real_listen||{})[tr])||{})[n];learnHTML.rl=RL;
-  if(ls||real.length||RL)h+=`<div class="card" id="lsCard"><h3 class="ih">${em('television')}Bước 4 · Luyện nghe${REG().no_listen?' (tự chọn)':' (khuôn phần nghe đề Sở)'}</h3>${REG().no_listen?`<p class="ls-opt small">Đề chuyên Anh ${esc(REG().name)} không có phần nghe, nên bước này là <b>tự chọn</b>. Thời gian ít thì cậu dành cho Bước 3+ (dạng bài riêng của đề) trước nhé. Nghe vẫn giúp cậu nhớ từ và cách dùng câu.</p>`:''}
+  if(ls||real.length||RL)h+=`<div class="card" id="lsCard"><h3 class="ih">${em('television')}Bước 4 · Luyện nghe đề mẫu Cambridge${REG().no_listen?' (tự chọn)':''}</h3>${REG().no_listen?`<p class="ls-opt small">Đề chuyên Anh ${esc(REG().name)} không có phần nghe, nên bước này là <b>tự chọn</b>. Thời gian ít thì cậu dành cho Bước 3+ (dạng bài riêng của đề) trước nhé. Nghe vẫn giúp cậu nhớ từ và cách dùng câu.</p>`:''}
     ${RL?`<div class="yl" id="ylBox"></div>`:''}
     ${real.length?`<details class="ls-real"${RL?'':' open'}><summary><b>${RL?'Thêm bài nghe thật ở trang khác':'Nghe bài thu âm thật'}</b></summary><p class="small muted">Giọng người bản xứ, mức ${esc(real[0].level||'')} theo chuẩn Cambridge, cùng chủ đề với buổi học. Mở ở tab mới, làm bài trên trang đó, rồi ghi lại số câu đúng để cô theo dõi.</p>
       <ul class="isl">${real.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> <span class="pill">${esc(x.source||'')}${x.level?' · '+esc(x.level):''}</span>${x.format_vi?` <span class="pill">${esc(x.format_vi)}</span>`:''}${x.note_vi?`<br><span class="small muted">${esc(x.note_vi)}</span>`:''}</li>`).join('')}</ul>
@@ -1230,7 +1232,7 @@ function wireLearn(n){
     $('#examCard .x-tabs').onclick=e=>{const b=e.target.closest('.x-tab');if(b)openX(+b.dataset.x)};openX(0)}
   wireLocal(n,()=>{const rec=S.days[n]||{};const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPackPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')});
   const rs=$('#rlSave');if(rs)rs.onclick=()=>{const c=parseInt($('#rlC').value,10),t=parseInt($('#rlT').value,10);if(!(t>0)||!(c>=0)||c>t){$('#rlMsg').textContent='Ghi số câu đúng và tổng số câu nhé.';return}const rec=S.days[n]=S.days[n]||{};rec.listen=rec.listen||{};rec.listen.real={correct:c,total:t,at:Date.now()};save();$('#rlMsg').textContent='Đã lưu ✓';const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPackPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')};
-  const yb=$('#ylBox');if(yb&&learnHTML.rl)renderYtListen(yb,learnHTML.rl,((S.days[n]||{}).listen||{}).yt,r=>{const rec=S.days[n]=S.days[n]||{};rec.listen=rec.listen||{};rec.listen.yt={correct:r.correct,total:r.total,answers:r.answers,at:Date.now()};save();{const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPackPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')}});
+  const yb=$('#ylBox');if(yb&&learnHTML.rl)renderYtListen(yb,learnHTML.rl,ylSaved(n,learnHTML.rl),r=>{const rec=S.days[n]=S.days[n]||{};rec.listen=rec.listen||{};rec.listen.yt={correct:r.correct,total:r.total,answers:r.answers,at:Date.now(),k:ylKey(learnHTML.rl)};save();{const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPackPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')}});
   const lb=$('#lsBox');if(lb&&learnHTML.ls)renderListening(lb,learnHTML.ls,curTrack(),null,(key,r)=>{const rec=S.days[n]=S.days[n]||{};rec.listen=rec.listen||{};rec.listen[key]={correct:r.correct,total:r.total,at:Date.now()};save();
     const ps=document.querySelector('#dayBody .card .row');if(ps)ps.innerHTML=gPill(n)+xPill(n)+lPackPill(n)+lPill(n)+pill(rec.web,'Kiểm tra cuối buổi')+pill(rec.paper,'Bài giấy')});
 }

@@ -25,74 +25,78 @@
     "level": "A2",
     "skill": "listening",
     "section": "listen",
-    "q": "Sophia suggests choosing ______ fruit and vegetables at the supermarket.",
-    "explain_vi": "==\"choosing loose fruit and vegetables at the supermarket\"== → **loose** (để rời, không bọc). __Ngược với \"packaged in plastic\".__",
+    "q": "Câu 16 trong đề gốc",
+    "explain_vi": "==other classes ... can't do their work if you shout at one another== → **B (bớt ồn)**. __Mẹo:__ cô không giục làm nhanh hay bảo giúp nhau.",
     "obj": "listen",
-    "type": "text",
-    "answer": "loose",
-    "accept": []
+    "type": "mcq",
+    "options": [
+     "A",
+     "B",
+     "C"
+    ],
+    "answer": 1
    },
    {
     "id": "diag32",
     "level": "A2",
     "skill": "listening",
     "section": "listen",
-    "q": "What does Sophia's family use a lot of?",
-    "explain_vi": "==\"In my family, we use a lot of ice cream tubs\"== → **ice cream tubs**, để đựng đồ ăn thừa. __Chai và túi nhựa là lời khuyên chung.__",
+    "q": "Câu 17 trong đề gốc",
+    "explain_vi": "==We've done so much exercise today!== → **C (chơi thể thao)**. __Mẹo:__ ăn pizza, nghe nhạc là việc sắp làm, chưa làm.",
     "obj": "listen",
     "type": "mcq",
     "options": [
-     "reusable bottles",
-     "plastic bags",
-     "ice cream tubs"
+     "A",
+     "B",
+     "C"
     ],
     "answer": 2
    },
    {
     "id": "diag33",
-    "level": "B1",
+    "level": "A2",
     "skill": "listening",
     "section": "listen",
-    "q": "What does Sophia suggest before you put things in the rubbish?",
-    "explain_vi": "==\"why don't you see if you can reuse them again?\"== → **reuse**. __\"Recycle\" là chữ R thứ ba, nói sau.__",
+    "q": "Câu 18 trong đề gốc",
+    "explain_vi": "==exercise two on page six, not page sixteen!== → **B (làm nhầm bài)**. __Mẹo:__ Sarah không làm sai nhiều hay quên bài.",
     "obj": "listen",
     "type": "mcq",
     "options": [
-     "See if you can reuse it.",
-     "See if it can be recycled.",
-     "See if someone else wants it."
+     "A",
+     "B",
+     "C"
+    ],
+    "answer": 1
+   },
+   {
+    "id": "diag34",
+    "level": "A2",
+    "skill": "listening",
+    "section": "listen",
+    "q": "Câu 19 trong đề gốc",
+    "explain_vi": "==the only one in the shop that was big enough== → **A (kích cỡ vừa)**. __Mẹo:__ màu không như Lara muốn, giá thì đắt.",
+    "obj": "listen",
+    "type": "mcq",
+    "options": [
+     "A",
+     "B",
+     "C"
     ],
     "answer": 0
    },
    {
-    "id": "diag34",
-    "level": "B1",
-    "skill": "listening",
-    "section": "listen",
-    "q": "When Sophia gives a gift, she reuses the gift bags or ______ she got.",
-    "explain_vi": "==\"I usually keep the gift bags or the boxes and reuse them\"== → **boxes**. __Túi nhựa nói sau, dùng khi đi chợ.__",
-    "obj": "listen",
-    "type": "text",
-    "answer": "boxes",
-    "accept": [
-     "box",
-     "the boxes",
-     "gift boxes"
-    ]
-   },
-   {
     "id": "diag35",
-    "level": "B2",
+    "level": "A2",
     "skill": "listening",
     "section": "listen",
-    "q": "What does Sophia mean by giving things 'a second life'?",
-    "explain_vi": "==\"Recycling turns waste products into a new item… it gives them a second life\"== → **made into something new**. __Tặng lại người khác là \"reuse\".__",
+    "q": "Câu 20 trong đề gốc",
+    "explain_vi": "==take an umbrella because it's just starting to rain== → **B (trời mưa)**. __Mẹo:__ trời ấm hơn hôm qua nên không lạnh.",
     "obj": "listen",
     "type": "mcq",
     "options": [
-     "They are given to another person.",
-     "They are made into something new.",
-     "They are kept and used at home."
+     "A",
+     "B",
+     "C"
     ],
     "answer": 1
    },
@@ -819,22 +823,29 @@
    }
   ],
   "sections": {
-   "listen": "Phần 1 · Nghe một đoạn video thật (bản ghi trên YouTube, tối đa 2 lần), rồi trả lời 5 câu.",
+   "listen": "Phần 1 · Nghe phần 4 của một đề mẫu Cambridge A2 Key (đoạn nghe đã có sẵn 2 lần đọc), mở đề gốc để đọc câu hỏi rồi chọn A, B hoặc C.",
    "core": "Phần 2 · Ngữ pháp, từ vựng và đọc hiểu. Chọn đáp án đúng; câu cấu tạo từ thì gõ từ.",
    "write": "Phần 3 · Tự viết câu trả lời: điền một từ, viết dạng đúng của từ in hoa, viết lại câu sao cho nghĩa không đổi. Câu nào không biết thì cứ bỏ trống."
   },
   "listen_yt": {
-   "yt": "hX8XTOR-WV8",
-   "start": 0,
-   "end": 240,
-   "title": "Cutting down on waste",
-   "channel": "British Council | LearnEnglish Teens",
-   "source_url": "https://learnenglishteens.britishcouncil.org/study-break/youtubers/cutting-down-waste",
-   "transcript_url": "https://learnenglishteens.britishcouncil.org/sites/teens/files/cutting_down_on_waste_-_transcript.pdf",
-   "level": "B1",
-   "intro_vi": "Cậu sẽ nghe YouTuber Sophia nói về cách giảm rác thải theo ba chữ R. Chú ý con số, ví dụ trong gia đình cô và lí do cô đưa ra cho từng cách."
+   "yt": "is4TaYG3Ou0",
+   "start": 871,
+   "end": 1294,
+   "title": "a2 key for schools listening sample test",
+   "channel": "Filomena Prattichizzo",
+   "level": "A2",
+   "exam": "A2 Key for Schools",
+   "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+   "part": "4",
+   "paper_pdf": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf",
+   "paper_page": 33,
+   "paper_hint": "Part 4 ở trang in số 32 (số ở chân trang)",
+   "key_url": "https://www.cambridgeenglish.org/images/504506-a2-key-for-schools-handbook-2020.pdf#page=36",
+   "max_plays": 1,
+   "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+   "intro_vi": "Phần 4 của đề mẫu A2 Key for Schools (Cambridge): 5 đoạn nói ngắn, câu 16–20. Mở đề gốc để đọc câu hỏi, rồi chọn A, B hoặc C ở dưới."
   },
-  "version": 2
+  "version": 3
  },
  "final": {
   "title_vi": "Bài kiểm tra đầu ra",
@@ -862,77 +873,80 @@
     "level": "A2",
     "skill": "listening",
     "section": "listen",
-    "q": "Sophia started writing her own blog when she was ______ years old.",
-    "explain_vi": "==\"I started to write my own blog when I was 16 years old, and now I am 22\"== → **16 (sixteen)**. __16 là lúc bắt đầu, 22 là hiện tại.__",
+    "q": "Câu 16 trong đề gốc",
+    "explain_vi": "==I'll be able to get to college in ten minutes now== → **A (xe nhanh)**. __Mẹo:__ cô trả khá nhiều tiền nên không phải vì rẻ.",
     "obj": "listen",
-    "type": "text",
-    "answer": "16",
-    "accept": [
-     "sixteen"
-    ]
+    "type": "mcq",
+    "options": [
+     "A",
+     "B",
+     "C"
+    ],
+    "answer": 0
    },
    {
     "id": "fin32",
     "level": "A2",
     "skill": "listening",
     "section": "listen",
-    "q": "Why did Sophia first start making YouTube videos?",
-    "explain_vi": "==\"as a way to document my journey from secondary school to university\"== → **her move to university**. __Mẹo viết blog là phần cô định chia sẻ sau.__",
+    "q": "Câu 17 trong đề gốc",
+    "explain_vi": "==We're learning about mountains and rivers== → **B (địa lý)**. __Mẹo:__ anh thích khoa học hồi đi học nhưng sẽ ít cần đến.",
     "obj": "listen",
     "type": "mcq",
     "options": [
-     "to film her move to university",
-     "to give tips on writing blogs",
-     "to practise speaking on camera"
-    ],
-    "answer": 0
-   },
-   {
-    "id": "fin33",
-    "level": "B1",
-    "skill": "listening",
-    "section": "listen",
-    "q": "Why did Sophia move from YouTube to blogging?",
-    "explain_vi": "==\"not just my university experience but also my travels, my thoughts on different topics\"== → **more topics**. __Giấu mặt, kết bạn là lí do cô khuyên người khác.__",
-    "obj": "listen",
-    "type": "mcq",
-    "options": [
-     "She didn't want to show her face.",
-     "She wanted to cover more topics.",
-     "She wanted to meet new people online."
+     "A",
+     "B",
+     "C"
     ],
     "answer": 1
    },
    {
-    "id": "fin34",
-    "level": "B1",
+    "id": "fin33",
+    "level": "A2",
     "skill": "listening",
     "section": "listen",
-    "q": "For a blog, you don't need a camera, a microphone or a ______.",
-    "explain_vi": "==\"you don't have to have a camera… a microphone, a tripod\"== → **tripod** (chân máy). __\"Editing software\" không hợp với \"a\" trước chỗ trống.__",
-    "obj": "listen",
-    "type": "text",
-    "answer": "tripod",
-    "accept": [
-     "a tripod",
-     "tripods"
-    ]
-   },
-   {
-    "id": "fin35",
-    "level": "B2",
-    "skill": "listening",
-    "section": "listen",
-    "q": "What does Sophia suggest many people don't realise about YouTube?",
-    "explain_vi": "==\"there's a lot of extra costs… that some people are unaware of\"== → **hidden costs**. __Bài không nói dựng phim lâu hay khó có người theo dõi.__",
+    "q": "Câu 18 trong đề gốc",
+    "explain_vi": "==Their lessons were over for the day== → **C (sân chơi trường học)**. __Mẹo:__ trẻ chạy nhảy nhanh dễ khiến nghĩ tới sân vận động.",
     "obj": "listen",
     "type": "mcq",
     "options": [
-     "It takes a long time to edit.",
-     "It is hard to get followers.",
-     "It has lots of hidden costs."
+     "A",
+     "B",
+     "C"
     ],
     "answer": 2
+   },
+   {
+    "id": "fin34",
+    "level": "A2",
+    "skill": "listening",
+    "section": "listen",
+    "q": "Câu 19 trong đề gốc",
+    "explain_vi": "==It probably fell out of my bag== → **B (mất ví)**: không mua được vé, phải mượn tiền. __Mẹo:__ lịch khám mắt dễ gợi nhầm C (kính vỡ).",
+    "obj": "listen",
+    "type": "mcq",
+    "options": [
+     "A",
+     "B",
+     "C"
+    ],
+    "answer": 1
+   },
+   {
+    "id": "fin35",
+    "level": "A2",
+    "skill": "listening",
+    "section": "listen",
+    "q": "Câu 20 trong đề gốc",
+    "explain_vi": "==I wanted something green, and this is so comfortable!== → **A (quần áo)**. __Mẹo:__ trò chơi cờ bàn là việc làm sau đó.",
+    "obj": "listen",
+    "type": "mcq",
+    "options": [
+     "A",
+     "B",
+     "C"
+    ],
+    "answer": 0
    },
    {
     "id": "fin01",
@@ -1645,21 +1659,28 @@
    }
   ],
   "sections": {
-   "listen": "Phần 1 · Nghe một đoạn video thật (bản ghi trên YouTube, tối đa 2 lần), rồi trả lời 5 câu.",
+   "listen": "Phần 1 · Nghe phần 4 của một đề mẫu Cambridge A2 Key (đoạn nghe đã có sẵn 2 lần đọc), mở đề gốc để đọc câu hỏi rồi chọn A, B hoặc C.",
    "core": "Phần 2 · Ngữ pháp, từ vựng và đọc hiểu. Chọn đáp án đúng; câu cấu tạo từ thì gõ từ.",
    "write": "Phần 3 · Tự viết câu trả lời: điền một từ, viết dạng đúng của từ in hoa, viết lại câu sao cho nghĩa không đổi. Câu nào không biết thì cứ bỏ trống."
   },
   "listen_yt": {
-   "yt": "1YCOUMOBkVo",
-   "start": 0,
-   "end": 240,
-   "title": "Four reasons why you should start blogging",
-   "channel": "British Council | LearnEnglish Teens",
-   "source_url": "https://learnenglishteens.britishcouncil.org/study-break/youtubers/four-reasons-why-you-should-start-blogging",
-   "transcript_url": "https://learnenglishteens.britishcouncil.org/sites/teens/files/four_reasons_why_you_should_start_blogging_-_transcript.pdf",
-   "level": "B1",
-   "intro_vi": "Cậu sẽ nghe YouTuber Sophia giải thích vì sao nên viết blog. Chú ý các con số về tuổi, lí do cô bắt đầu làm YouTube và cô so sánh blog với YouTube ra sao."
+   "yt": "tzfd76Deiu4",
+   "start": 818,
+   "end": 1205,
+   "title": "LISTENING • CAMBRIDGE A2 KEY 2020 • SAMPLE TEST 1",
+   "channel": "LEARNING ENGLISH",
+   "level": "A2",
+   "exam": "A2 Key",
+   "test": "Sample Test 1 (sổ tay giáo viên 2020)",
+   "part": "4",
+   "paper_pdf": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf",
+   "paper_page": 33,
+   "paper_hint": "Part 4 ở trang in số 32 (số ở chân trang)",
+   "key_url": "https://www.cambridgeenglish.org/images/504505-a2-key-handbook-2020.pdf#page=36",
+   "max_plays": 1,
+   "timing_verified": "đã đối chiếu mốc \"Part …/end of part\" và câu trong lời thoại gốc trên bảng lời thoại YouTube (24/10/2026)",
+   "intro_vi": "Phần 4 của đề mẫu A2 Key (Cambridge): 5 đoạn nói ngắn, câu 16–20. Mở đề gốc để đọc câu hỏi, rồi chọn A, B hoặc C ở dưới."
   },
-  "version": 2
+  "version": 3
  }
 }
