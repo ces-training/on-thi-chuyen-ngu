@@ -1550,6 +1550,7 @@ function reportHTML(o){
 /*__REPORT_JS__*/
 /*__SALES_JS__*/
 /*__PREVIEW_JS__*/
+/*__INTRO_JS__*/
 /* ---------- boot ---------- */
 /* ?so=<slug>: mở thẳng bộ ôn của một sở (từ trang Chuyên Anh các tỉnh) */
 try{const qs=new URLSearchParams(location.search).get('so');if(qs&&REGIONS[qs]&&S.region!==qs){S.region=qs;S.course=Object.assign({},S.course||{});if(!goalsList().some(g=>g.k===S.course.goal))S.course.goal=REG().goal_default||goalsList()[0].k;saveLocal()}}catch(e){}
@@ -1557,7 +1558,7 @@ renderBrand();
 renderRegionBar();
 if(!bootReport()){let v0=S.diag?(dayStatus(1)==='none'?'start':'days'):'exam';try{const qv=new URLSearchParams(location.search).get('v');if(qv&&views[qv])v0=qv}catch(e){}
   if(new URLSearchParams(location.search).get('so')&&REGIONS[new URLSearchParams(location.search).get('so')]){S.regionSet=true;saveLocal()}
-  regionGate();go(v0)}
+  regionGate();go(v0);introBoot(!PREVIEW&&!ivSeen())}
 if(cloudOn()){loadMy().catch(()=>{});if(!S.syncedAt||(S.savedAt||0)>S.syncedAt)doSync()}
 })();
 </script>
